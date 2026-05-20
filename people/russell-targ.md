@@ -48,11 +48,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### CIA Engagement and Contracts at SRI
 
 > Following is a summary of work carried out under Field Measurements Contract No. 1471(S)73, Tasks 1, 2, and 3. Tasks 1 and 2 cover a two-week field measurement program (14-28 August 1972) with consultant Ingo Swann; Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller.
 
@@ -61,80 +57,6 @@ _No direct observations documented._
 | Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
 | Location | p. 2, ¶ Section A Introduction |
-
-> Because of the history of charlatanism in this area, one of our basic operating assumptions has to be that we cannot exclude the possibility that a subject will hoax if given an opportunity. To handle this, we consider it important to design experiments a) which are totally under the design and control of the experimenter rather than the subject, and b) which are considered in their basic design to be cheatproof.
-
-| Field | Value |
-|---|---|
-| Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
-| Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
-| Location | p. 3, ¶ Section C Protocol #1 |
-
-> The data gathered to date with the aid of consultants Swann and Geller point to the existence of an as yet unidentified mode of extraordinary human functioning. Efforts to explain the phenomena either within the framework of conventional concepts or by exposure of outright fraud have both met with failure at this point.
-
-| Field | Value |
-|---|---|
-| Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
-| Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
-| Location | p. 16, ¶ Section IV Summary |
-
-> The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ OBJECTIVE |
-
-> As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ EXPERIMENTAL PROGRAM |
-
-> In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶4 |
-
-> These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 27, ¶4 |
-
-> WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
-
-| Field | Value |
-|---|---|
-| Attributed to | Abstract of Targ and Puthoff, 'Information transmission under conditions of sensory shielding', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025, 1974-10-18 |
-| Source | [archived source](../sources/news/nature-1974-targ-puthoff-information-transmission-abstract.html) |
-| Location | ¶1 |
-
-> From these experiments we conclude that:
->
-> A channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality.
-
-| Field | Value |
-|---|---|
-| Attributed to | Dr. Harold E. Puthoff and Russell Targ co-authored "Information transmission under conditions of sensory shielding", Nature 251, 602-607, 18 October 1974 [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror CIA-RDP96-00787R000100220001-8), 1974-10-18 |
-| Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 13, ¶ conclusion |
-
-> Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
-
-| Field | Value |
-|---|---|
-| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8) |
-| Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶1 |
 
 > In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in tum, contacted personnel from the Office of Research and Development (ORO) and OTS. An ORO Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
 
@@ -160,6 +82,102 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 15, ¶1 |
 
+### SRI Experimental Methodology and Controls
+
+> Because of the history of charlatanism in this area, one of our basic operating assumptions has to be that we cannot exclude the possibility that a subject will hoax if given an opportunity. To handle this, we consider it important to design experiments a) which are totally under the design and control of the experimenter rather than the subject, and b) which are considered in their basic design to be cheatproof.
+
+| Field | Value |
+|---|---|
+| Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
+| Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
+| Location | p. 3, ¶ Section C Protocol #1 |
+
+> The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 1, ¶ OBJECTIVE |
+
+> In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 3, ¶4 |
+
+### 1973 SRI Subject-Experiment Findings
+
+> The data gathered to date with the aid of consultants Swann and Geller point to the existence of an as yet unidentified mode of extraordinary human functioning. Efforts to explain the phenomena either within the framework of conventional concepts or by exposure of outright fraud have both met with failure at this point.
+
+| Field | Value |
+|---|---|
+| Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
+| Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
+| Location | p. 16, ¶ Section IV Summary |
+
+> As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 1, ¶ EXPERIMENTAL PROGRAM |
+
+> These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 27, ¶4 |
+
+### Nature 1974 Sensory-Shielding Findings
+
+> WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
+
+| Field | Value |
+|---|---|
+| Attributed to | Abstract of Targ and Puthoff, 'Information transmission under conditions of sensory shielding', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025, 1974-10-18 |
+| Source | [archived source](../sources/news/nature-1974-targ-puthoff-information-transmission-abstract.html) |
+| Location | ¶1 |
+
+> From these experiments we conclude that:
+>
+> A channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality.
+
+| Field | Value |
+|---|---|
+| Attributed to | Dr. Harold E. Puthoff and Russell Targ co-authored "Information transmission under conditions of sensory shielding", Nature 251, 602-607, 18 October 1974 [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror CIA-RDP96-00787R000100220001-8), 1974-10-18 |
+| Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
+| Location | p. 13, ¶ conclusion |
+
+### SRI Psychic-Research Cofounder Role
+
+> Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
+
+| Field | Value |
+|---|---|
+| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8) |
+| Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
+| Location | p. 8, ¶1 |
+
+> Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-attestation on Russell Targ's ESP Research website (espresearch.com homepage), undated |
+| Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
+| Location | ¶2 |
+
+**Also attested:**
+
+- International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶1
+
+### CIA-DIA Funding of the SRI Remote-Viewing Program
+
 > In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
 
 | Field | Value |
@@ -175,6 +193,8 @@ _No direct observations documented._
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
 | Location | p. 10, ¶3 |
+
+### SRI Program Scope and Evaluation
 
 > During 1974 and early 1975 a number of controlled experiments were conducted to see if various types of target material could be successfully described with remote viewing. The results reported by Puthoff and Targ (1975) indicated success with a wide range of material, from "technical" targets like a Xerox machine to natural settings, like a swimming pool.
 
@@ -192,13 +212,7 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
 | Location | p. 3-14, ¶1 |
 
-> Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-attestation on Russell Targ's ESP Research website (espresearch.com homepage), undated |
-| Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
-| Location | ¶2 |
+### Lockheed Martin Laser Career
 
 > Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
 
@@ -208,6 +222,12 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
 | Location | ¶2 |
 
+**Also attested:**
+
+- International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶4
+
+### Book Catalogue
+
 > He most recently authored Third Eye Spies: A Guide to Remote Viewing and Transformation of Consciousness and Do You See What I See? Memoirs of a Blind Biker: Lasers and Love, ESP and the CIA, and the Meaning of Life. He is co-author of Mind Reach: Scientists Look at Psychic Abilities; The Mind Race: Understanding and Using Psychic Abilities; Miracles of Mind: Remote Viewing and Spiritual Healing; The Heart of the Mind: How to Experience God Without Belief; and The End of Suffering: Fearless Living in Troubled Times.He is also an editor, publisher, songwriter, producer, teacher, and more.
 
 | Field | Value |
@@ -216,13 +236,11 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
 | Location | ¶2 |
 
-> Russell Targ is a physicist and author, a pioneer in the development of the laser and laser applications, and a cofounder of the Stanford Research Institute (SRI) investigation of psychic abilities in the 1970s and 1980s. SRI is a research and development think tank in Menlo Park, California. Called remote viewing, his work in the psychic area has been published in Nature, The Proceedings of the Institute of Electronic and Electrical Engineers (IEEE), and the Proceedings of the American Association the Advancement of Science (AAAS).
+**Also attested:**
 
-| Field | Value |
-|---|---|
-| Attributed to | International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703) |
-| Source | [archived source](../sources/news/irva-targ-russell-wayback-20250123.html) |
-| Location | ¶1 |
+- International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶3
+
+### Education and Soviet Academy Engagement
 
 > Targ has a bachelor’s degree in physics from Queens College and did graduate work in physics at Columbia University. He has received two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications. In 1983 and 1984 he accepted invitations to present remote-viewing demonstrations and to address the USSR Academy of Science on this research.
 
@@ -231,22 +249,6 @@ _No direct observations documented._
 | Attributed to | International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703) |
 | Source | [archived source](../sources/news/irva-targ-russell-wayback-20250123.html) |
 | Location | ¶2 |
-
-> He is author or co-author of nine books dealing with the scientific investigation of psychic abilities and Buddhist approaches to the transformation of consciousness, including Mind Reach: Scientists Look at Psychic Ability (with E. Harold Puthoff, 1977, 2005); Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (with Jane Katra, 1998); and Limitless Mind: A Guide to Remote Viewing and Transformation of Consciousness (2004). He also wrote an autobiography, Do You See What I See: Memoirs of a Blind Biker, in 2008. His current book is The Reality of ESP: A Physicist’s Proof of Psychic Abilities.
-
-| Field | Value |
-|---|---|
-| Attributed to | International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703) |
-| Source | [archived source](../sources/news/irva-targ-russell-wayback-20250123.html) |
-| Location | ¶3 |
-
-> As a senior staff scientist at Lockheed Missiles and Space Company, Targ developed airborne laser systems for the detection of windshear and air turbulence. Having retired in 1997, he now writes books on psychic research and teaches remote viewing worldwide.
-
-| Field | Value |
-|---|---|
-| Attributed to | International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703) |
-| Source | [archived source](../sources/news/irva-targ-russell-wayback-20250123.html) |
-| Location | ¶4 |
 
 ---
 

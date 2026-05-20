@@ -55,6 +55,8 @@ credibility_notes: 'Targ''s ESP Research site (his own publication) names him as
 
 quotes:
 - id: q1
+  claim_group: "SRI Psychic-Research Cofounder Role"
+  corroborated_by: [q5]
   added_date: '2026-05-14'
   text: |
     Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
@@ -66,6 +68,8 @@ quotes:
   significance: 'Targ''s own self-attestation of three roles: laser pioneer, Stanford Research Institute psychic-abilities investigation cofounder, and active period 1970s-1980s. Primary-source anchor for Targ''s SRI Stargate-precursor cofounder role (the 1974 Nature paper provides peer-reviewed corroboration via the Targ + Puthoff byline).'
 
 - id: q2
+  claim_group: "Lockheed Martin Laser Career"
+  corroborated_by: [q8]
   added_date: '2026-05-14'
   text: |
     Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
@@ -77,6 +81,7 @@ quotes:
   significance: 'Targ''s own self-attestation of his Lockheed Martin career outcome (retirement as senior staff scientist) and characterization of his Lockheed-era work (laser technology for peaceful applications). Independent peer-reviewed corroboration of the Lockheed Martin role from the 1991 and 1996 Applied Optics author affiliations; the retirement date itself is not attested in archived sources.'
 
 - id: q3
+  claim_group: "Nature 1974 Sensory-Shielding Findings"
   added_date: '2026-05-14'
   text: |
     WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
@@ -89,6 +94,8 @@ quotes:
   significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Targ''s Stanford Research Institute cofounder role (the role Targ self-attests on his ESP Research site). The paper''s author affiliation places Targ at the Electronics and Bioengineering Laboratory, SRI, Menlo Park as of the 11 March 1974 manuscript receipt date.'
 
 - id: q4
+  claim_group: "Book Catalogue"
+  corroborated_by: [q7]
   added_date: '2026-05-15'
   text: |
     He most recently authored Third Eye Spies: A Guide to Remote Viewing and Transformation of Consciousness and Do You See What I See? Memoirs of a Blind Biker: Lasers and Love, ESP and the CIA, and the Meaning of Life. He is co-author of Mind Reach: Scientists Look at Psychic Abilities; The Mind Race: Understanding and Using Psychic Abilities; Miracles of Mind: Remote Viewing and Spiritual Healing; The Heart of the Mind: How to Experience God Without Belief; and The End of Suffering: Fearless Living in Troubled Times.He is also an editor, publisher, songwriter, producer, teacher, and more.
@@ -100,6 +107,7 @@ quotes:
   significance: 'Targ''s own self-attestation of his authored and co-authored book catalogue (two recent solo / lead-authored works and five co-authored works), and his broader self-described roles beyond physicist and author (editor, publisher, songwriter, producer, teacher). Primary-source anchor for the book catalogue; specific publication years are not attested on the espresearch homepage.'
 
 - id: q5
+  claim_group: "SRI Psychic-Research Cofounder Role"
   added_date: '2026-05-15'
   text: |
     Russell Targ is a physicist and author, a pioneer in the development of the laser and laser applications, and a cofounder of the Stanford Research Institute (SRI) investigation of psychic abilities in the 1970s and 1980s. SRI is a research and development think tank in Menlo Park, California. Called remote viewing, his work in the psychic area has been published in Nature, The Proceedings of the Institute of Electronic and Electrical Engineers (IEEE), and the Proceedings of the American Association the Advancement of Science (AAAS).
@@ -108,11 +116,10 @@ quotes:
     location: '¶1'
   context: 'International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703)'
   observation_type: relayed
-  corroborated_by:
-  - q1
   significance: 'Third-party (IRVA) biographical attestation corroborating Targ''s espresearch.com self-attestation (q1) of laser-pioneer + SRI psychic-abilities cofounder role, and adding new primary-source-attested facts: (a) the SRI work was published in Nature, IEEE Proceedings, and AAAS Proceedings — the Nature 1974 paper (q3) is one of those publications; (b) explicit framing of the SRI work as ''remote viewing''.'
 
 - id: q6
+  claim_group: "Education and Soviet Academy Engagement"
   added_date: '2026-05-15'
   text: |
     Targ has a bachelor’s degree in physics from Queens College and did graduate work in physics at Columbia University. He has received two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications. In 1983 and 1984 he accepted invitations to present remote-viewing demonstrations and to address the USSR Academy of Science on this research.
@@ -124,6 +131,7 @@ quotes:
   significance: 'IRVA bio attests Targ''s educational background (Queens College BS Physics + Columbia University graduate work in physics), two NASA awards for laser inventions, and a specific Cold-War-era engagement with the USSR Academy of Science (1983 and 1984 remote-viewing demonstrations). None of these facts are attested on the espresearch.com homepage.'
 
 - id: q7
+  claim_group: "Book Catalogue"
   added_date: '2026-05-15'
   text: |
     He is author or co-author of nine books dealing with the scientific investigation of psychic abilities and Buddhist approaches to the transformation of consciousness, including Mind Reach: Scientists Look at Psychic Ability (with E. Harold Puthoff, 1977, 2005); Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (with Jane Katra, 1998); and Limitless Mind: A Guide to Remote Viewing and Transformation of Consciousness (2004). He also wrote an autobiography, Do You See What I See: Memoirs of a Blind Biker, in 2008. His current book is The Reality of ESP: A Physicist’s Proof of Psychic Abilities.
@@ -132,11 +140,10 @@ quotes:
     location: '¶3'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  corroborated_by:
-  - q4
   significance: 'IRVA bio adds publication-year and co-author detail to the book catalogue Targ self-attests on espresearch.com (q4). Specific corroboration: Mind Reach co-author E. Harold Puthoff, 1977 (reprint 2005); Miracles of Mind co-author Jane Katra, 1998; Limitless Mind 2004; Do You See What I See (autobiography) 2008. Specific divergence: IRVA lists Mind Reach co-author as ''E. Harold Puthoff'' while the 1974 Nature paper byline (q3) uses ''HAROLD PUTHOFF'' — same person, formal vs middle-initial style. Mind Reach''s subtitle differs slightly between sources (espresearch q4: ''Scientists Look at Psychic Abilities''; IRVA q7: ''Scientists Look at Psychic Ability'' — singular vs plural ''Ability'').'
 
 - id: q8
+  claim_group: "Lockheed Martin Laser Career"
   added_date: '2026-05-15'
   text: |
     As a senior staff scientist at Lockheed Missiles and Space Company, Targ developed airborne laser systems for the detection of windshear and air turbulence. Having retired in 1997, he now writes books on psychic research and teaches remote viewing worldwide.
@@ -145,11 +152,10 @@ quotes:
     location: '¶4'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  corroborated_by:
-  - q2
   significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation (q2) of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter). Supersedes rumor r3 (1997 retirement was previously not-primary-source-established); r3 deleted on this audit pass.'
 
 - id: q9
+  claim_group: "SRI Psychic-Research Cofounder Role"
   added_date: '2026-05-15'
   text: |
     Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
@@ -162,6 +168,7 @@ quotes:
   significance: 'Foundational CIA primary-source attestation of Targ as one of the two laser physicists (alongside Harold E. Puthoff) who re-awakened CIA research in parapsychology. Kress, a CIA Operations Officer in the Office of Technical Service (OTS), characterizes Targ as the experimentalist counterpart to Puthoff''s theoretician role and attests Targ''s long-standing avocational interest in parapsychology. Corroborates Targ''s espresearch.com self-attestation (q1) and the IRVA bio (q5) of the SRI cofounder role from CIA''s own institutional record. Source carries OCR-scan artifacts (Adobe Acrobat Paper Capture Plug-in): "lasqr" for "laser"; "parapsv- chology" for "parapsychology" (PDF line-wrap rendering); "scientir''ic" for "scientific" — preserved as-source per OCR-scan discipline; see naming_quirks nq2-nq4 and the rendered Source-Form Notes section.'
 
 - id: q10
+  claim_group: "CIA Engagement and Contracts at SRI"
   added_date: '2026-05-15'
   text: |
     In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in tum, contacted personnel from the Office of Research and Development (ORO) and OTS. An ORO Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
@@ -174,6 +181,7 @@ quotes:
   significance: 'CIA primary-source attestation of the specific April 1972 Targ-CIA Office of Scientific Intelligence meeting that initiated CIA''s engagement with the SRI parapsychology investigation, and of Targ as having "recently joined the Stanford Research Institute (SRI)" as of that meeting. The 1972 SRI-join attestation tightens the earlier bracketing on affiliation a1 (period_start 1974 from Nature paper byline) and program_involvement p1 (period_start 1970 from espresearch decade window) to April 1972. The Kress paper also names the CIA sub-offices that managed the Targ contracts: Office of Scientific Intelligence (OSI), Office of Research and Development (ORD; OCR-rendered "ORO" in the Kress paper), and Office of Technical Service (OTS). Source carries OCR artifacts: "tum" for "turn"; "ORO" for "ORD" (recurring, two instances in this passage) — preserved as-source per OCR-scan discipline; see naming_quirks nq5, nq7.'
 
 - id: q11
+  claim_group: "CIA Engagement and Contracts at SRI"
   added_date: '2026-05-15'
   text: |
     The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORO representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 19i2.
@@ -186,6 +194,7 @@ quotes:
   significance: 'CIA primary-source attestation of the first formal CIA contract with Targ and Puthoff at SRI: a $874 OTS project-officer contract in August 1972 for a demonstration with the previously-described magnetometer subject. This is the inception of the CIA-funded SRI parapsychology investigation; subsequent expansion (Kress footnote 4: OTS Contract 8473, 1 October 1972 $50,000 expanded effort; February 1974 joint OTS/ORD program) flowed from this initial $874 demonstration contract. Source carries OCR artifacts: "ORO" for "ORD"; "19i2" for "1972" — preserved as-source; see naming_quirks nq5, nq6.'
 
 - id: q12
+  claim_group: "CIA Engagement and Contracts at SRI"
   added_date: '2026-05-15'
   text: |
     During November of 1976, Director George Bush became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI about their work in parapsychology. Mr. Bush requested and received a briefing on CIA's investigations into parapsychology.
@@ -198,6 +207,7 @@ quotes:
   significance: 'CIA primary-source attestation that Targ was still actively engaged with the SRI parapsychology investigation as of November 1976, and that the SRI work had drawn sufficient attention from the Soviet intelligence community to prompt DCI George Bush to request a briefing on CIA''s parapsychology investigations. Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976) — Targ remained at SRI at least four years after the April 1972 join attested by q10.'
 
 - id: q13
+  claim_group: "CIA-DIA Funding of the SRI Remote-Viewing Program"
   added_date: '2026-05-15'
   text: |
     In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
@@ -210,6 +220,7 @@ quotes:
   significance: 'DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI for continuing that research. Quote scope is bounded to page 10 of the source (the page-10/11 break interrupts the source''s continuation about 1975 funding discontinuation and subsequent DIA funding — that sequence is described in credibility_notes and in program_involvement p1 / p4 notes per the same Stargate Overview Section III).'
 
 - id: q14
+  claim_group: "CIA-DIA Funding of the SRI Remote-Viewing Program"
   added_date: '2026-05-15'
   text: |
     The effort at SRI was discontinued in 1990. However, as a result of Congressional direction in FY 1991 for DIA, new research in this area was established with the Systems Applications International Corporation (SAIC), in Menlo Park, CA.
@@ -222,6 +233,7 @@ quotes:
   significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park. Anchors the outer bound of the SRI program window: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" in the KEY US RESEARCH EFFORTS table. Targ''s individual SRI-tenure end is not attested by this source — only the program''s end at SRI.'
 
 - id: q15
+  claim_group: "SRI Program Scope and Evaluation"
   added_date: '2026-05-15'
   text: |
     During 1974 and early 1975 a number of controlled experiments were conducted to see if various types of target material could be successfully described with remote viewing. The results reported by Puthoff and Targ (1975) indicated success with a wide range of material, from "technical" targets like a Xerox machine to natural settings, like a swimming pool.
@@ -234,6 +246,7 @@ quotes:
   significance: 'Independent government-commissioned evaluation (AIR, prepared at CIA''s request at the end of the Stargate Project) describes the 1974-1975 SRI controlled experiments and the results reported by Puthoff and Targ (1975) — the foundational SRI internal report co-authored by Targ. The AIR bibliography (p. 3-30) lists the cited reference as "Puthoff, Harold E. and Russell Targ (1975). ''Perceptual Augmentation Techniques: Part Two—Research Report,'' Stanford Research Institute Final Report, Dec. 1, 1975."'
 
 - id: q16
+  claim_group: "SRI Program Scope and Evaluation"
   added_date: '2026-05-15'
   text: |
     In 1988 an analysis was made of all of the experiments conducted at SRI from 1973 until that time (May et al, 1988). The analysis was based on all 154 experiments conducted during that era, consisting of over 26,000 individual trials. Of those, almost 20,000 were of the forced choice type and just over a thousand were laboratory remote viewings. There were a total of 227 subjects in all experiments.
@@ -246,6 +259,7 @@ quotes:
   significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Targ as SRI cofounder is the institutional context for this program; the 1973 start anchors the time-frame from CIA / SRI internal documentation.'
 
 - id: q17
+  claim_group: "SRI Experimental Methodology and Controls"
   added_date: '2026-05-16'
   text: |
     The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
@@ -258,6 +272,7 @@ quotes:
   significance: 'Targ-authored objective statement framing the Aug 4-11, 1973 SRI Geller eight-day session as a verification exercise under carefully controlled conditions — Targ''s own framing of the methodological intent at the start of his sole-authored cover memo to CIA.'
 
 - id: q18
+  claim_group: "1973 SRI Subject-Experiment Findings"
   added_date: '2026-05-16'
   text: |
     As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
@@ -270,6 +285,7 @@ quotes:
   significance: 'Targ-authored "convincing and unambiguous manner" conclusion — the load-bearing primary-source statement that downstream Geller-biography accounts (and the urigeller.com biography page) invoke as the SRI / CIA endorsement of Geller. Targ is the sole author of this cover memo, so this is Targ''s own primary-source conclusion on the Aug 1973 SRI experiments.'
 
 - id: q19
+  claim_group: "SRI Experimental Methodology and Controls"
   added_date: '2026-05-16'
   text: |
     In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
@@ -282,6 +298,7 @@ quotes:
   significance: 'Targ-authored protocol-controls attestation — the one-way intercom, sensory-leakage examination, and no-defect framing that Targ documents at the procedural-rigor end of the Aug 1973 SRI Geller report. Counterweight to subsequent skeptical critiques (Maddox 1974 editorial, Randi accounts) that the SRI protocols admitted sensory cueing.'
 
 - id: q20
+  claim_group: "1973 SRI Subject-Experiment Findings"
   added_date: '2026-05-16'
   text: |
     These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
@@ -294,6 +311,7 @@ quotes:
   significance: 'Targ-authored mechanism-hypothesis framing — Targ explicitly identifies two competing mechanisms (clairvoyance vs telepathy) that the Aug 1973 computer-stored-target experiments cannot distinguish. Important methodological framing: Targ acknowledges the experiments do not adjudicate between mechanisms even when they appear to demonstrate perceptual ability.'
 
 - id: q21
+  claim_group: "CIA Engagement and Contracts at SRI"
   added_date: '2026-05-16'
   text: |
     Following is a summary of work carried out under Field Measurements Contract No. 1471(S)73, Tasks 1, 2, and 3. Tasks 1 and 2 cover a two-week field measurement program (14-28 August 1972) with consultant Ingo Swann; Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller.
@@ -306,6 +324,7 @@ quotes:
   significance: 'Targ-co-authored Section A introduction enumerating the contract 1471(S)73 tasks Targ co-conducted: Tasks 1+2 with Ingo Swann (two-week field measurement program, 14-28 August 1972); Task 3 with Uri Geller (nine-day field measurement program within December 1, 1972 to January 15, 1973). Primary-source attestation of Targ''s involvement with both Swann and Geller as CIA-contract SRI consultants during the foundational 1972 / late-1972 window.'
 
 - id: q22
+  claim_group: "SRI Experimental Methodology and Controls"
   added_date: '2026-05-16'
   text: |
     Because of the history of charlatanism in this area, one of our basic operating assumptions has to be that we cannot exclude the possibility that a subject will hoax if given an opportunity. To handle this, we consider it important to design experiments a) which are totally under the design and control of the experimenter rather than the subject, and b) which are considered in their basic design to be cheatproof.
@@ -318,6 +337,7 @@ quotes:
   significance: 'Targ-co-authored statement of the hoax-exclusion methodological stance — the contemporaneous Puthoff-Targ acknowledgment that a subject will hoax if given an opportunity, and their corresponding experimenter-control-and-cheatproof-design principle. Important Targ-co-authored counterweight to subsequent skeptical critiques framing the SRI protocols as naive.'
 
 - id: q23
+  claim_group: "1973 SRI Subject-Experiment Findings"
   added_date: '2026-05-16'
   text: |
     The data gathered to date with the aid of consultants Swann and Geller point to the existence of an as yet unidentified mode of extraordinary human functioning. Efforts to explain the phenomena either within the framework of conventional concepts or by exposure of outright fraud have both met with failure at this point.
@@ -330,6 +350,7 @@ quotes:
   significance: 'Targ-co-authored Section IV Summary conclusion on Tasks 1-3 data (Swann + Geller): "extraordinary human functioning" framing + acknowledgment that fraud-exposure efforts have also failed. Contemporaneous-to-the-engagement Targ statement contrasting with Targ''s 2007 retrospective ("six weeks in 1973") — see F.SRI finding-node candidate in meta/topic/research-queue.md for the duration-divergence analysis.'
 
 - id: q24
+  claim_group: "Nature 1974 Sensory-Shielding Findings"
   added_date: '2026-05-16'
   text: |
     From these experiments we conclude that:

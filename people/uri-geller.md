@@ -58,90 +58,7 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 
 ## Statements
 
-### Direct Observations
-
-> a cylinder with noise coming out of it
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶ Saturday-August-4-firecracker |
-
-> drops of water coming out of the picture
-
-| Field | Value |
-|---|---|
-| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the grapes experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
-| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶ Saturday-August-4-grapes |
-
-> I was as surprised as anybody else to open the 4 May 1987 issue of US News & World Report and read the following on the ‘Washington Whispers’ page:
-
-| Field | Value |
-|---|---|
-| Attributed to | About index page, Mind Over Missile? teaser block (first-person Geller voice introducing the linked sub-page), 1987-05-04 |
-| Source | [archived source](../sources/news/urigeller-com-about-uri-20260516.html) |
-| Location | ¶ Mind Over Missile? teaser |
-
-> from which agents would go to Damascus, Jordan, Egypt, all of those countries. When I was 12 or 13, I confronted one of the agents. His name was Yoav Shaham. I told him: 'You're a spy, Yoav!' I felt it. He freaked out. He told me never to dare say that again.
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ Mossad-safe-house |
-
-> But what I didn't know was that he had spoken with intelligence chiefs Meir Amit and Aharon Yariv about me. Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on.
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ Mossad-safe-house+2 |
-
-> I can tell you that the FBI asked me to convince Russian diplomats to defect. They made whole parties in Long Island, I mingled there, I beamed my mind,
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ FBI-defection |
-
-> I act upon it if necessary, because I'm still in touch with various government agencies that might need my help
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ daily-routine |
-
-> When the first spoon bent and broke in my hand, I knew I could turn this into an act, something that could make me money so I could stop my mother from working. And then I discovered that I could also do telepathy, I could read minds, move the needle of a compass, sprout seeds in the palm of my hands.
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ first-spoon |
-
-> I bent a spoon, but it wasn't bent enough for Carson, and he kind of sneered and mocked. And that was it, I was humiliated for 22 minutes. I sat there sweating, and the only thought that went through my mind was: Uri Geller, you are destroyed. I was ready to pack up the next morning and head back to Tel Aviv.
-
-| Field | Value |
-|---|---|
-| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
-| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
-| Location | ¶ Carson-humiliation |
-
-> He first became aware of his unusual powers when he was about five. One day, during a meal, his spoon curled up in his hand and broke, although he had applied no physical pressure to it. His parents were somewhat shocked and Uri did not mention the incident to anyone else at that time. He developed these powers in school by demonstrating them to pupils. His mother thought he inherited them from Sigmund Freud.
-
-| Field | Value |
-|---|---|
-| Attributed to | Uri Geller's biography page on urigeller.com, ¶3, c. 1951 |
-| Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
-| Location | ¶3 |
-
-
-### Other Statements
+### Childhood And Origin Of Powers
 
 > Uri Geller was born in Israel on December 20, 1946. His parents were of Hungarian and Austrian descent, and he is distantly related on his mother’s side to Sigmund Freud. At the age of four he had a mysterious encounter with a sphere of light while in a garden near his house. A retired Israeli air force officer, who was an eyewitness to this encounter, validated this mystifying event decades later.
 
@@ -151,6 +68,22 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
 | Location | ¶2 |
 
+> When the first spoon bent and broke in my hand, I knew I could turn this into an act, something that could make me money so I could stop my mother from working. And then I discovered that I could also do telepathy, I could read minds, move the needle of a compass, sprout seeds in the palm of my hands.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ first-spoon |
+
+_Direct observation._
+
+**Also attested:**
+
+- Uri Geller's biography page on urigeller.com, ¶3; c. 1951; [archived source](../sources/news/urigeller-com-biography-20260516.html); ¶3
+
+### Israeli Fame And Golda Meir Endorsement
+
 > In 1969 he began to demonstrate his powers of telepathy and psychokinesis to small audiences. By the end of 1971, he was a household name throughout Israel, thanks to his numerous stage appearances. He was given a huge boost by the then Prime Minister, Golda Meir when asked on a national radio programme what she predicted for the future of Israel, she replied, “Don’t ask me – ask Uri Geller!”
 
 | Field | Value |
@@ -159,6 +92,28 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
 | Location | ¶7 |
 
+### SRI Experiments And Nature Publication
+
+> a cylinder with noise coming out of it
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 3, ¶ Saturday-August-4-firecracker |
+
+_Direct observation._
+
+> drops of water coming out of the picture
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the grapes experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 3, ¶ Saturday-August-4-grapes |
+
+_Direct observation._
+
 > The world’s most prestigious scientific magazine, Nature, published a paper on Uri’s work at the Stanford Research Institute in the U.S.A – a unique endorsement, and an irrefutable proof that his skills are genuine. His work with the FBI and the CIA has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty.
 
 | Field | Value |
@@ -166,6 +121,48 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Attributed to | Uri Geller's biography page on urigeller.com, ¶9, 1974 |
 | Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
 | Location | ¶9 |
+
+### US Intelligence And National-Security Work
+
+> I was as surprised as anybody else to open the 4 May 1987 issue of US News & World Report and read the following on the ‘Washington Whispers’ page:
+
+| Field | Value |
+|---|---|
+| Attributed to | About index page, Mind Over Missile? teaser block (first-person Geller voice introducing the linked sub-page), 1987-05-04 |
+| Source | [archived source](../sources/news/urigeller-com-about-uri-20260516.html) |
+| Location | ¶ Mind Over Missile? teaser |
+
+_Direct observation._
+
+> I can tell you that the FBI asked me to convince Russian diplomats to defect. They made whole parties in Long Island, I mingled there, I beamed my mind,
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ FBI-defection |
+
+_Direct observation._
+
+> I act upon it if necessary, because I'm still in touch with various government agencies that might need my help
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ daily-routine |
+
+_Direct observation._
+
+> Uri also addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington. For decades this aspect of his career was too confidential and controversial to discuss.
+
+| Field | Value |
+|---|---|
+| Attributed to | Uri Geller's biography page on urigeller.com, ¶10 |
+| Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
+| Location | ¶10 |
+
+### Self-Characterization And Mindpower Philosophy
 
 > I believe it represents a deep wisdom that we all inherit form our forebears and which, once harnessed, can effectively give every one of us much greater knowledge and insight into out lives. I believe that with such awareness comes healthier minds and bodies. Some of us learn how to tap into this energy earlier than others; some come upon it through trial and error. Others cannot explain it but trust it totally. Its power is formidable and this frightens those who have not yet reached the point of understanding the potency of such an invisible force.
 
@@ -183,14 +180,6 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
 | Location | ¶ opening-acknowledgment |
 
-> In 2017 the CIA released a large volume of previously top secret data, including documents and memos about the tests that were performed on Uri Geller.
-
-| Field | Value |
-|---|---|
-| Attributed to | Uri Geller's biography page on urigeller.com, ¶31, 2017 |
-| Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
-| Location | ¶31 |
-
 > Uri Geller is one of the world’s most investigated and celebrated mystifiers. Famous around the globe for his mind-bending abilities, he has led a unique life shrouded in debate, controversy and mystery. He is also related to Sigmund Freud.
 
 | Field | Value |
@@ -199,13 +188,49 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
 | Location | ¶1 |
 
-> Uri also addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington. For decades this aspect of his career was too confidential and controversial to discuss.
+### Israeli-Intelligence Recruitment
+
+> from which agents would go to Damascus, Jordan, Egypt, all of those countries. When I was 12 or 13, I confronted one of the agents. His name was Yoav Shaham. I told him: 'You're a spy, Yoav!' I felt it. He freaked out. He told me never to dare say that again.
 
 | Field | Value |
 |---|---|
-| Attributed to | Uri Geller's biography page on urigeller.com, ¶10 |
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Mossad-safe-house |
+
+_Direct observation._
+
+> But what I didn't know was that he had spoken with intelligence chiefs Meir Amit and Aharon Yariv about me. Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Mossad-safe-house+2 |
+
+_Direct observation._
+
+### Johnny Carson Appearance
+
+> I bent a spoon, but it wasn't bent enough for Carson, and he kind of sneered and mocked. And that was it, I was humiliated for 22 minutes. I sat there sweating, and the only thought that went through my mind was: Uri Geller, you are destroyed. I was ready to pack up the next morning and head back to Tel Aviv.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Carson-humiliation |
+
+_Direct observation._
+
+### CIA Declassification
+
+> In 2017 the CIA released a large volume of previously top secret data, including documents and memos about the tests that were performed on Uri Geller.
+
+| Field | Value |
+|---|---|
+| Attributed to | Uri Geller's biography page on urigeller.com, ¶31, 2017 |
 | Source | [archived source](../sources/news/urigeller-com-biography-20260516.html) |
-| Location | ¶10 |
+| Location | ¶31 |
 
 > The CIA concluded that Uri “demonstrated his paranormal perception ability in a convincing and unambiguous manner.” Click here for more information.
 

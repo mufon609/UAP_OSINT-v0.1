@@ -69,11 +69,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### AARO Selection and Appointment
 
 > Is that the real reason, Kirkpatrick countered, "or am I the only one stupid enough to say, 'yes?'"
 
@@ -91,6 +87,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
 | Location | p. 1, ¶2 |
 
+### New-Start Organizations Career Framing
+
 > The USSPACECOM Intelligence Enterprise was the fifth organization he has been the IC lead for establishment.
 
 | Field | Value |
@@ -99,13 +97,38 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
 | Location | p. 1, ¶6 |
 
-> I have -- in the research I've been doing, I've not heard, seen or heard of anything at this time that would support that.
+> He served as either the IC or DoD lead in establishing six "new-start" organizations including the USSPACECOM Intelligence Enterprise and AARO.
 
 | Field | Value |
 |---|---|
-| Attributed to | Kirkpatrick reply at the USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, 2022-12-16 |
-| Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | ¶ Kirkpatrick reply to alien-visitation Q |
+| Attributed to | WestExec Advisors firm biography, 2024 |
+| Source | [archived source](../sources/news/westexec-kirkpatrick-bio.html) |
+| Location | ¶ Sean served in a variety of high-profile and no-fail roles |
+
+### No Evidence of Aliens or Recovered Technology
+
+> I should also state clearly for the record that in our research AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.
+
+| Field | Value |
+|---|---|
+| Attributed to | Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing, 2023-04-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
+| Location | p. 13-14 |
+
+**Also attested:**
+
+- Kirkpatrick reply at the USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO; 2022-12-16; [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html); ¶ Kirkpatrick reply to alien-visitation Q
+- National Capital Area Skeptics Arlington VA event 'AARO; a Duality in Mission Regarding UAPs', host NCAS president Scott Snell; 2026-04-09; [archived source](../sources/transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md); [11:34]
+
+> AARO has yet to find any credible evidence to support the allegations of any reverse engineering program for non-human technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage, 2023-07-28 |
+| Source | [archived source](../sources/news/fortune-kirkpatrick-linkedin-insulting-20230729.html) |
+| Location | Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023 |
+
+### Loeb Parent-Craft Manuscript
 
 > an artificial interstellar object could potentially be a parent craft that releases many small probes
 
@@ -115,13 +138,7 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/loeb-kirkpatrick-physical-constraints-uap-20230307.pdf) |
 | Location | ¶ section 5 |
 
-> I should also state clearly for the record that in our research AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.
-
-| Field | Value |
-|---|---|
-| Attributed to | Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing, 2023-04-19 |
-| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 13-14 |
+### AARO Mission, Structure and Authorities
 
 > In other words, AARO's mission is to turn UAP into SEP, somebody else's problem.
 
@@ -139,6 +156,16 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 9-37 |
 
+> There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
+
+| Field | Value |
+|---|---|
+| Attributed to | SASC Q&A with Senators Rosen and Gillibrand, 2023-04-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
+| Location | p. 31 |
+
+### UAP Caseload and Morphology
+
 > So as of this week we are tracking over -- a total of 650 cases.
 
 | Field | Value |
@@ -154,22 +181,6 @@ _No direct observations documented._
 | Attributed to | SASC chart presentation following oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 16 |
-
-> There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
-
-| Field | Value |
-|---|---|
-| Attributed to | SASC Q&A with Senators Rosen and Gillibrand, 2023-04-19 |
-| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 31 |
-
-> In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
-
-| Field | Value |
-|---|---|
-| Attributed to | SASC Q&A on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
-| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 42 |
 
 > all over the world and we see these in making very interesting apparent maneuvers
 
@@ -187,6 +198,22 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/rev-nasa-uap-public-meeting-transcript-20230531.html) |
 | Location | ¶ Kirkpatrick remarks |
 
+### Extraordinary Claims and Scientific Method
+
+> In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
+
+| Field | Value |
+|---|---|
+| Attributed to | SASC Q&A on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
+| Location | p. 42 |
+
+**Also attested:**
+
+- Scientific American op-ed 'Here's What I Learned as the U.S. Government's UFO Hunter'; 2024-01-19; [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html); ¶1
+
+### Mellon Signal Exchange
+
 > All of that is both absurd and false.
 
 | Field | Value |
@@ -203,13 +230,7 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Location | p. 9, ¶14 |
 
-> AARO has yet to find any credible evidence to support the allegations of any reverse engineering program for non-human technology.
-
-| Field | Value |
-|---|---|
-| Attributed to | Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage, 2023-07-28 |
-| Source | [archived source](../sources/news/fortune-kirkpatrick-linkedin-insulting-20230729.html) |
-| Location | Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023 |
+### Departure and Self-Assessment
 
 > served the American people with honesty and integrity, tackling an incredibly difficult mission to explain the unknown
 
@@ -227,42 +248,6 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/politico-magazine-kirkpatrick-are-aliens-real-20231112.html) |
 | Location | ¶ exit interview quote |
 
-> He served as either the IC or DoD lead in establishing six "new-start" organizations including the USSPACECOM Intelligence Enterprise and AARO.
-
-| Field | Value |
-|---|---|
-| Attributed to | WestExec Advisors firm biography, 2024 |
-| Source | [archived source](../sources/news/westexec-kirkpatrick-bio.html) |
-| Location | ¶ Sean served in a variety of high-profile and no-fail roles |
-
-> self-licking ice cream cone
-
-_Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html); ¶ Bergen interview transcript_
-
-> core group of people that have influenced him, have told him this information
-
-| Field | Value |
-|---|---|
-| Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
-| Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
-| Location | ¶ Bergen interview transcript |
-
-> misinterpreted things that people have said, or he may have just fallen to the influence of what these folks have been telling him
-
-| Field | Value |
-|---|---|
-| Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
-| Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
-| Location | ¶ Bergen interview transcript |
-
-> Carl Sagan popularized the maxim that "extraordinary claims require extraordinary evidence." This advice should not be optional for policy makers.
-
-| Field | Value |
-|---|---|
-| Attributed to | Scientific American op-ed 'Here's What I Learned as the U.S. Government's UFO Hunter', 2024-01-19 |
-| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
-| Location | ¶1 |
-
 > As director of the Department of Defense's All-Domain Anomaly Resolution Office (AARO), charged by Congress in 2022 to help bring science-based clarity and resolution to the long-standing mystery surrounding credible observations of unidentified anomalous phenomena (UAP), also known as UFOs, I experienced this erosion up close and personal. And it was one factor in my decision to step down from my position last December.
 
 | Field | Value |
@@ -270,6 +255,12 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶2 |
+
+### Whistleblower Community Discourse
+
+> self-licking ice cream cone
+
+_Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html); ¶ Bergen interview transcript_
 
 > After painstakingly assembling a team of highly talented and motivated personnel and working with them to develop a rational, systematic and science-based strategy to investigate these phenomena, our efforts were ultimately overwhelmed by sensational but unsupported claims that ignored contradictory evidence yet captured the attention of policy makers and the public, driving legislative battles and dominating the public narrative.
 
@@ -295,6 +286,42 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶5 |
 
+> Little else titillates and piques the national interest like unidentified flying objects and space aliens.
+
+| Field | Value |
+|---|---|
+| Attributed to | Scientific American op-ed 'We Need to Investigate UFOs—But Without the Distraction of Conspiracy Theories', 2024-03-06 |
+| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-we-need-to-investigate-ufos-20240306.html) |
+| Location | ¶1 |
+
+> That is not to say that the drone sightings are any less of a concern, but fortunately, we can address them without the contagion of the UFO community and the conspiracies associated with it.
+
+| Field | Value |
+|---|---|
+| Attributed to | Scientific American op-ed 'The U.S. Drone Panic Mirrors UFO Overreactions', 2024-12-27 |
+| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-drone-panic-mirrors-ufo-overreactions-20241227.html) |
+| Location | ¶ analysis |
+
+### Grusch Characterization
+
+> core group of people that have influenced him, have told him this information
+
+| Field | Value |
+|---|---|
+| Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
+| Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
+| Location | ¶ Bergen interview transcript |
+
+> misinterpreted things that people have said, or he may have just fallen to the influence of what these folks have been telling him
+
+| Field | Value |
+|---|---|
+| Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
+| Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
+| Location | ¶ Bergen interview transcript |
+
+### AATIP, Bigelow, and Skinwalker Origins
+
 > this narrative has been simmering for years and is largely an outgrowth of a former program at the DOD's Defense Intelligence Agency (DIA) called the Advanced Aerospace Threat Identification Program (AATIP), which was heavily influenced by a group of individuals associated with businessman and longtime ufologist Robert Bigelow, founder of Bigelow Aerospace.
 
 | Field | Value |
@@ -310,6 +337,8 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶7 |
+
+### Historical Record Report Volume 1
 
 > One of my last acts before retiring was to sign AARO's Historical Record Report Volume 1, which is currently being prepared for delivery to Congress and the public.
 
@@ -327,22 +356,6 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶9 |
 
-> As of the time of my departure, none, let me repeat, none of the conspiracy-minded "whistleblowers" in the public eye had elected to come to AARO to provide their "evidence" and statement for the record despite numerous invitations.
-
-| Field | Value |
-|---|---|
-| Attributed to | Scientific American op-ed, 2024-01-19 |
-| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
-| Location | ¶12 |
-
-> Little else titillates and piques the national interest like unidentified flying objects and space aliens.
-
-| Field | Value |
-|---|---|
-| Attributed to | Scientific American op-ed 'We Need to Investigate UFOs—But Without the Distraction of Conspiracy Theories', 2024-03-06 |
-| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-we-need-to-investigate-ufos-20240306.html) |
-| Location | ¶1 |
-
 > BLUF: Both briefs were well attended and went well. Dr. Kirkpatrick attended
 > the first brief and the majority of the second brief.
 
@@ -352,6 +365,18 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Doc 6, Wirkkala 2024-03-06 10:21 |
 
+### Whistleblowers Declined AARO Engagement
+
+> As of the time of my departure, none, let me repeat, none of the conspiracy-minded "whistleblowers" in the public eye had elected to come to AARO to provide their "evidence" and statement for the record despite numerous invitations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Scientific American op-ed, 2024-01-19 |
+| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
+| Location | ¶12 |
+
+### Nonlinear Solutions Consulting
+
 > advisory group that provides strategic scientific and intelligence consulting services, with a focus on emerging science and technology trends, to clients in both the defense and intelligence communities
 
 | Field | Value |
@@ -359,6 +384,8 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Attributed to | Progress, Potential, and Possibilities podcast (host Ira Pastor), 2024-04-23 |
 | Source | [archived source](../sources/news/buzzsprout-pastor-kirkpatrick-nonlinear-solutions-20240423.html) |
 | Location | ¶ podcast description |
+
+### 2018 Skinwalker Ranch Briefing and Pre-AARO Involvement
 
 > no, I attended a briefing at the request of Senate Armed Services Committee on what was at that time associated with the AATIP/AAWSAP research that was going on as an independent outside reviewer, and I gave them my opinions at that time
 
@@ -376,6 +403,8 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html) |
 | Location | ¶ "While being interviewed by New York Post reporter-turned-UFO-debunker Steven Greenstreet on May 8" |
 
+### UAP Disclosure Act Revisions
+
 > we convinced Congress last year not to go down that road
 
 | Field | Value |
@@ -383,6 +412,8 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Attributed to | Marik von Rennenkampff interview, cited in Douglas Johnson Mirador analysis, 2024-07-17 |
 | Source | [archived source](../sources/news/douglas-johnson-uapda-pentagon-rewrite-20240724.html) |
 | Location | ¶ Kirkpatrick interview quotes |
+
+### Space Domain Awareness Papers
 
 > The exponential growth of space capabilities across the commercial, national security, and civil sectors is driving economic, military, intelligence, and scientific advances.
 
@@ -392,14 +423,6 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/news/nssa-shelton-kirkpatrick-sda-20241105.pdf) |
 | Location | ¶1 bullet |
 
-> That is not to say that the drone sightings are any less of a concern, but fortunately, we can address them without the contagion of the UFO community and the conspiracies associated with it.
-
-| Field | Value |
-|---|---|
-| Attributed to | Scientific American op-ed 'The U.S. Drone Panic Mirrors UFO Overreactions', 2024-12-27 |
-| Source | [archived source](../sources/news/scientificamerican-kirkpatrick-drone-panic-mirrors-ufo-overreactions-20241227.html) |
-| Location | ¶ analysis |
-
 > U.S. national security space forces played an indispensable role in the planning for and conduct of Operation Midnight Hammer.
 
 | Field | Value |
@@ -407,14 +430,6 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Attributed to | NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer', 2025-06-26 |
 | Source | [archived source](../sources/news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf) |
 | Location | ¶3 |
-
-> [11:34] I'll just cut to the chase, there is no alien technology.
-
-| Field | Value |
-|---|---|
-| Attributed to | National Capital Area Skeptics Arlington VA event 'AARO; a Duality in Mission Regarding UAPs', host NCAS president Scott Snell, 2026-04-09 |
-| Source | [archived source](../sources/transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md) |
-| Location | [11:34] |
 
 ---
 

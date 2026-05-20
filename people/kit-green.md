@@ -49,34 +49,7 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 
 ## Statements
 
-### Direct Observations
-
-> we had pretty much all of the story from a forensic point of view. We had the body, the thing in the body that he was hit with — the pellet — and the stuff from the pellet. We knew that the material used to kill him, ricin, had been under development by a foreign service linked to the incident. We also knew that he had been a target of assassination attempts in the past. The story of him being a target was very well known. So we had information on the means, motive, and the opportunity.
-
-| Field | Value |
-|---|---|
-| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person attestation on the forensic completeness of the 1978 Georgi Markov investigation |
-| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
-| Location | ¶3 (Green direct quote) |
-
-> Typically, when someone dies who is involved in an intelligence issue or national policy issue, you have a lot of paranoia , gossip, and rumor, but very little information.
-
-| Field | Value |
-|---|---|
-| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person methodological attestation on intelligence-death investigations |
-| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
-| Location | ¶4 (Green direct quote) |
-
-> Most people who say that a foreign power is conspiring to kill them are scatterbrained and delusional
-
-| Field | Value |
-|---|---|
-| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person attestation contrasting Markov's credibility with the typical foreign-power-conspiracy claimant |
-| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
-| Location | ¶6 (Green direct quote) |
-
-
-### Other Statements
+### CIA Remote Viewing Program
 
 > H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
 
@@ -94,6 +67,8 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 10, footnote |
 
+### CIA Career and Tenure
+
 > Christopher C. Green, Chair, is the assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China. He is also a clinical fellow in neuroimaging/MRI in the Department of Diagnostic Radiology and the Department of Psychiatry and Behavioral Neurosciences of the SOM and the Detroit Medical Center (DMC). His medical specialties are brain imaging, forensic medicine and toxicology, and neurophysiology, and his personal medical practice is in the differential diagnoses of neurodegenerative disease. He has served and continues to serve on many government advisory groups and private sector corporate boards of directors. Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC. From 1985 through 2004 he was executive director, Global Technology Policy, and chief technology officer for General Motors’ Asia-Pacific Operations. His career at General Motors included positions as head, Biomedical Sciences Research, and executive director, General Motors Research Laboratory for Materials and Environmental Sciences. His distinguished career with the CIA extended from 1969 to 1985 as a senior division analyst and assistant national intelligence officer for science and technology. His Ph.D. is from the University of Colorado Medical School in neurophysiology, and his M.D. is from the Autonomous City University in El Paso, Texas/Monterey, Mexico, with honors. He also holds the National Intelligence Medal and is a fellow in the American Academy of Forensic Sciences. Dr. Green is a current member of the National Research Council’s Standing Committee on Technology Insight—Gauge, Evaluate, and Review (TIGER).
 
 | Field | Value |
@@ -101,6 +76,20 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 | Attributed to | National Research Council Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades, 'Emerging Cognitive Neuroscience and Related Technologies' (Washington, DC: National Academies Press, 2008), Appendix A: Biographical Sketches of Committee Members — Christopher C. Green (Chair) entry |
 | Source | [archived source](../sources/government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html) |
 | Location | Appendix A, Christopher C. Green entry |
+
+**Also attested:**
+
+- International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, ¶2 — career narrative covering CIA 1969 onward and General Motors 1985 onward; [archived source](../sources/news/irva-kit-green-wayback-20241212.html); ¶2 of biographical text
+
+> The investigation into the assassination of Bulgarian dissident Georgi Markov, murdered with a poison-filled pellet shot into his leg (possibly with a converted “umbrella gun”) at a bus stop in Britain in 1978, was the most unusual and significant case that medical doctor and forensic specialist Christopher C. Green participated in during his twenty year career as an investigative officer with the Central Intelligence Agency.
+
+| Field | Value |
+|---|---|
+| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview page on pbs.org dated June 3, 2014 — narrator-authored header on Green's CIA forensic role in the 1978 Markov investigation. The page date may not be the original broadcast date. |
+| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
+| Location | Episode header narration |
+
+### Post-CIA Academic and Medical Career
 
 > Christopher (Kit) Green, M.D., Ph.D. is an Assistant Dean (Asia Pacific) of the Wayne State School of Medicine in Detroit, Michigan. He holds clinical appointments as Professor in the Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences of the Harper University Hospital, Detroit Medical Center. He is also Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science, of the Chinese Academy of Sciences. He maintains an active clinical private medical practice in forensic medicine and neuroimaging, neurogenomics, and neurotoxicology. Kit’s specialty includes the determination of morbidity and mortality of neurological and psychiatric disease due to unsuspected etiology. 20% of his medical practice is pro bono related to the forensic investigation and diagnosis of patients injured by anomalous events.
 
@@ -110,14 +99,6 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 | Source | [archived source](../sources/news/irva-kit-green-wayback-20241212.html) |
 | Location | ¶1 of biographical text |
 
-> His career began with the US Federal Government in 1969 as a Senior Division Analyst for neurosciences at the Central Intelligence Agency. In the mid-’70s he was the first analyst and program manager for Remote Viewing research. He became a Branch Chief, Deputy Division Director, and Assistant National Intelligence Officer for Science and Technology. He joined General Motors Corporation in 1985 as head of Life, Materials and Environmental Sciences, and later became Executive Director of Technology Intelligence, and Chief Technology Officer for GM Asia Pacific Operations.
-
-| Field | Value |
-|---|---|
-| Attributed to | International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, ¶2 — career narrative covering CIA 1969 onward and General Motors 1985 onward |
-| Source | [archived source](../sources/news/irva-kit-green-wayback-20241212.html) |
-| Location | ¶2 of biographical text |
-
 > Kit returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002. Since 1985 he continuously has also served on over a dozen Federal science boards and positions, including as Chair of the Board on Army Science and Technology, and as a founder of the National Academy of Sciences/ National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER).
 
 | Field | Value |
@@ -125,6 +106,8 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 | Attributed to | International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, ¶3 — narrative of his post-1985 federal advisory roles and 2002 Wayne State return to medicine |
 | Source | [archived source](../sources/news/irva-kit-green-wayback-20241212.html) |
 | Location | ¶3 of biographical text |
+
+### Skinwalker Ranch and AAWSAP
 
 > Though Fugal’s pursuit of breakthroughs in advanced physics was not a success, there was a silver lining. Several scientists who were brought in to consult on the project, namely Dr. Hal Puthoff and Dr. Christopher Green, were also involved in Bigelow’s DIA project. They became friends. Even after the project was shut down in 2014, Fugal stayed in touch with these scientists.
 
@@ -134,13 +117,37 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 | Source | [archived source](../sources/news/vice-fugal-skinwalker-owner-20200310.html) |
 | Location | ¶49 (Fugal/Skinwalker section) |
 
-> The investigation into the assassination of Bulgarian dissident Georgi Markov, murdered with a poison-filled pellet shot into his leg (possibly with a converted “umbrella gun”) at a bus stop in Britain in 1978, was the most unusual and significant case that medical doctor and forensic specialist Christopher C. Green participated in during his twenty year career as an investigative officer with the Central Intelligence Agency.
+### Markov Forensic Investigation
+
+> we had pretty much all of the story from a forensic point of view. We had the body, the thing in the body that he was hit with — the pellet — and the stuff from the pellet. We knew that the material used to kill him, ricin, had been under development by a foreign service linked to the incident. We also knew that he had been a target of assassination attempts in the past. The story of him being a target was very well known. So we had information on the means, motive, and the opportunity.
 
 | Field | Value |
 |---|---|
-| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview page on pbs.org dated June 3, 2014 — narrator-authored header on Green's CIA forensic role in the 1978 Markov investigation. The page date may not be the original broadcast date. |
+| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person attestation on the forensic completeness of the 1978 Georgi Markov investigation |
 | Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
-| Location | Episode header narration |
+| Location | ¶3 (Green direct quote) |
+
+_Direct observation._
+
+> Typically, when someone dies who is involved in an intelligence issue or national policy issue, you have a lot of paranoia , gossip, and rumor, but very little information.
+
+| Field | Value |
+|---|---|
+| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person methodological attestation on intelligence-death investigations |
+| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
+| Location | ¶4 (Green direct quote) |
+
+_Direct observation._
+
+> Most people who say that a foreign power is conspiring to kill them are scatterbrained and delusional
+
+| Field | Value |
+|---|---|
+| Attributed to | PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassin', interview with Christopher C. Green — Green first-person attestation contrasting Markov's credibility with the typical foreign-power-conspiracy claimant |
+| Source | [archived source](../sources/news/pbs-umbrella-assassin-green-interview-20260517.html) |
+| Location | ¶6 (Green direct quote) |
+
+_Direct observation._
 
 ---
 

@@ -80,11 +80,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### Defense Intelligence Enterprise Posture
 
 > Chairman Gallego, Ranking Member Kelly, and distinguished members of the
 > Subcommittee, it is a privilege to testify on the current posture of the Defense Intelligence and
@@ -147,6 +143,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
 | Location | p. 3, ¶6 |
 
+### UAP Terminology and Scope
+
 > Thank you. Good afternoon. I'm Ronald Moultrie, the Under Secretary of Defense for Intelligence and Security. It's a pleasure to be here today to provide an update on the department's efforts to address unidentified anomalous phenomena, or UAP. In May of this year, I appeared before Congress for the first open hearing on UAP in 50 years. In my testimony, I underscored that the Department of Defense takes UAP reports seriously. You may have caught that I just said unidentified anomalous phenomena, whereas in the past the department has used the term unidentified aerial phenomena. This new terminology expands the scope of UAP to include submerged and trans-medium objects.  Unidentified phenomena in all domains, whether in the air, ground, sea or space, pose potential threats to personnel security and operations security, and they require our urgent attention.
 
 | Field | Value |
@@ -154,6 +152,16 @@ _No direct observations documented._
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
 | Location | ¶2 |
+
+> So, in my organization, which is the intelligence and security organization, we are responsible for the comprehensive security of all elements within the Department of Defense.  So that is our personnel, which is foremost in our minds, our platforms, our --our systems, our bases, our installations, and our -- our activities, whether they occur in any domain.  And we operate in all domains today. So, we operate under the surface of the water, we operate on land, we operate in the air, of course, we operate in space. Anything that appears within the proximity of our activities that is anomalous, something that we can't identify, we have the responsibility to resolve what that is, and to report that back to our commanders, to our operators, to ensure that they are safe.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
+| Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
+| Location | ¶37 |
+
+### No Evidence of Alien Origin
 
 > At this time, the answer's no, we have nothing. We're committed -- and I have to say this because I -- I talked with the Secretary and I talked with the Deputy Secretary about this, about openness and objectivity, and transparency that we have committed to -- to the Congress, the American people, to you in the press corps. We have not seen anything that would -- but we -- we're certainly very early on -- that would lead us to believe that any of the objects that we have seen are of alien origin, if you will.  If we are -- if we find something like that, we will look at it and analyze it and take the appropriate actions.
 
@@ -171,13 +179,7 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
 | Location | ¶85 |
 
-> So, in my organization, which is the intelligence and security organization, we are responsible for the comprehensive security of all elements within the Department of Defense.  So that is our personnel, which is foremost in our minds, our platforms, our --our systems, our bases, our installations, and our -- our activities, whether they occur in any domain.  And we operate in all domains today. So, we operate under the surface of the water, we operate on land, we operate in the air, of course, we operate in space. Anything that appears within the proximity of our activities that is anomalous, something that we can't identify, we have the responsibility to resolve what that is, and to report that back to our commanders, to our operators, to ensure that they are safe.
-
-| Field | Value |
-|---|---|
-| Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
-| Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | ¶37 |
+### UAP Threat Framing
 
 > Any unauthorized system in our airspace we deem as a threat to safety. So, that can be one of our systems or one of our relatives -- it's any system that is not authorized or platform not authorized to be in a domain that is restricted, we consider that to be a potential threat to the safety of our personnel or to our platforms.
 
@@ -186,6 +188,8 @@ _No direct observations documented._
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
 | Location | ¶73 |
+
+### Post-Government Roles
 
 > LeoLabs has already established itself as a trusted leader in the Space Domain Awareness field and is well positioned to support a wide array of U.S. defense, Allied, and commercial requirements
 

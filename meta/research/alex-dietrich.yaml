@@ -207,6 +207,7 @@ relationships:
     location: "lines 449-451"
 quotes:
 - id: q1
+  claim_group: "Decision To Speak Publicly"
   added_date: '2026-04-21'
   text: |-
     I never wanted to be on national TV, no offense.
@@ -218,6 +219,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's framing of her reluctance to speak publicly — establishes she was not seeking media attention."
 - id: q2
+  claim_group: "Decision To Speak Publicly"
   added_date: '2026-04-21'
   text: |-
     Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
@@ -229,6 +231,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's stated rationale for going public: duty-based, on-the-clock observation, and the event was unclassified."
 - id: q3
+  claim_group: "Object Could Not Be Identified"
   added_date: '2026-04-21'
   text: |-
     So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
@@ -240,6 +243,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "First-hand account of Dietrich's real-time cognitive attempt to categorize the object as conventional before its disappearance defeated that framing."
 - id: q4
+  claim_group: "Decision To Speak Publicly"
   added_date: '2026-04-21'
   text: |-
     You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
@@ -251,6 +255,8 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich explicitly acknowledges she would not have reported the encounter solo due to its 'crazy' character — speaks to the stigma that suppresses UAP reporting."
 - id: q5
+  claim_group: "Object Could Not Be Identified"
+  corroborated_by: [q9]
   added_date: '2026-04-21'
   text: |-
     "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
@@ -262,6 +268,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's own framing of why the encounter was 'unsettling' — inability to classify the object against known categories."
 - id: q6
+  claim_group: "Tic Tac Flight Behavior"
   added_date: '2026-04-21'
   text: |-
     "No predictable movement, no predictable trajectory,"
@@ -273,6 +280,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's direct observational characterization of the object's motion profile — lack of predictable kinematics."
 - id: q7
+  claim_group: "Emotional Response During The Encounter"
   added_date: '2026-04-21'
   text: |-
     "I felt the vulnerability of not having anything to defend ourselves,"
@@ -284,6 +292,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's direct account of her emotional response during the encounter: vulnerability from being unarmed."
 - id: q8
+  claim_group: "Emotional Response During The Encounter"
   added_date: '2026-04-21'
   text: |-
     "And then I felt confused when it disappeared."
@@ -295,6 +304,7 @@ quotes:
   statement_date: '2021-05-16'
   significance: "Dietrich's direct account of confusion at the object's disappearance."
 - id: q9
+  claim_group: "Object Could Not Be Identified"
   added_date: '2026-04-21'
   text: |-
     My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
@@ -306,6 +316,8 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's own first-person prose framing of the Nimitz encounter in her self-authored Debrief op-ed."
 - id: q10
+  claim_group: "Tic Tac Appearance"
+  corroborated_by: [q15]
   added_date: '2026-04-21'
   text: |-
     We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
@@ -317,6 +329,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's own written morphological description of the Tic Tac and statement that it outmaneuvered the F/A-18Fs with ease."
 - id: q11
+  claim_group: "Stance On UAP"
   added_date: '2026-04-21'
   text: |-
     Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
@@ -328,6 +341,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's most distilled public position on UAP: affirms reality, hedges on adversary and extraterrestrial hypotheses, unequivocal on continued investigation."
 - id: q12
+  claim_group: "UAP Advocacy And Method"
   added_date: '2026-04-21'
   text: |-
     The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
@@ -339,6 +353,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's stated method: multi-party partnership + systematic data collection + analytical rigor as the antidote to ridicule and stigma around UAP reporting."
 - id: q13
+  claim_group: "UAP Advocacy And Method"
   added_date: '2026-04-21'
   text: |-
     Be vigilant. Stay curious. Look up. We have barely tasted the sky.
@@ -350,6 +365,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Closing aphorism Dietrich uses publicly across appearances; signature sign-off."
 - id: q14
+  claim_group: "Tic Tac Flight Behavior"
   added_date: '2026-04-21'
   text: |-
     appeared to respond in a way we didn't recognize
@@ -361,6 +377,7 @@ quotes:
   statement_date: '2022-11-14'
   significance: "Dietrich's characterization of the Tic Tac's flight behavior as outside recognized categories."
 - id: q15
+  claim_group: "Tic Tac Appearance"
   added_date: '2026-04-21'
   text: |-
     didn't appear to have any flight control surfaces or means of propulsion
@@ -372,6 +389,7 @@ quotes:
   statement_date: '2022-11-14'
   significance: "Dietrich's morphological description of the Tic Tac — no flight-control surfaces, no visible propulsion."
 - id: q16
+  claim_group: "Junior Rank And Deference To Fravor"
   added_date: '2026-04-21'
   text: |-
     [10:03] I was a lieutenant Junior grade I wasn't even a full Lieutenant at the time uh that that happened
@@ -383,6 +401,7 @@ quotes:
   statement_date: '2023'
   significance: "Self-attestation of her November 2004 rank as lieutenant junior grade (LTjg). First of three attestations in this source."
 - id: q17
+  claim_group: "Junior Rank And Deference To Fravor"
   added_date: '2026-04-21'
   text: |-
     [1:00:48] again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant you know so I had had very little um uh rank or authority or anything
@@ -394,6 +413,7 @@ quotes:
   statement_date: '2023'
   significance: "Second LTjg attestation in this source; explains why she did not pursue independent follow-up on the encounter."
 - id: q18
+  claim_group: "Junior Rank And Deference To Fravor"
   added_date: '2026-04-21'
   text: |-
     [1:01:51] and I was a lieutenant JG it wasn't my place to um investigate or follow up or follow through in that way
@@ -405,6 +425,7 @@ quotes:
   statement_date: '2023'
   significance: "Third LTjg attestation in this source; institutional chain-of-custody framing."
 - id: q19
+  claim_group: "Pentagon And ONI Contact"
   added_date: '2026-04-21'
   text: |-
     [5:19] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
@@ -416,6 +437,7 @@ quotes:
   statement_date: '2023'
   significance: "Dietrich identifies the Office of Naval Intelligence as the entity that reopened contact with her several years after the encounter."
 - id: q20
+  claim_group: "Seeing The Object: Acquisition And Duration"
   added_date: '2026-04-21'
   text: |-
     [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
@@ -427,6 +449,7 @@ quotes:
   statement_date: '2023'
   significance: "First-person account of how Dietrich acquired visual on the Tic Tac via the disturbed water as anchor point. Auto-caption typo 'turning water' preserved."
 - id: q21
+  claim_group: "FLIR Footage And Subsequent Sortie"
   added_date: '2026-04-21'
   text: |-
     [56:34] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
@@ -438,6 +461,7 @@ quotes:
   statement_date: '2023'
   significance: "Dietrich attests she personally viewed the original FLIR tape aboard Nimitz shortly after the encounter; resolution was 'much clearer' than the public release. Auto-caption 'Fleer' for FLIR preserved."
 - id: q22
+  claim_group: "Enigma Labs First Advisor"
   added_date: '2026-04-21'
   text: |-
     they asked me to be their first advisor uh so it's a unpaid role
@@ -449,6 +473,7 @@ quotes:
   statement_date: '2023'
   significance: "Dietrich self-identifies as Enigma Labs' 'first advisor' in an unpaid role."
 - id: q23
+  claim_group: "NASA Independent Study Attendance"
   added_date: '2026-04-21'
   text: |-
     [19:30] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
@@ -460,6 +485,7 @@ quotes:
   statement_date: '2023'
   significance: "Dietrich confirms attendance at the first NASA UAP Independent Study Team meeting."
 - id: q24
+  claim_group: "Naval Career And Background"
   added_date: '2026-04-21'
   text: |-
     [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
@@ -471,6 +497,7 @@ quotes:
   statement_date: '2025-02-20'
   significance: "Dietrich's own biographical summary: ROTC commission in 2001, first flight on 9/11, strike fighter pipeline, F-18 Super Hornets off USS Nimitz, VFA-41. Auto-caption typos 'ROC' (for ROTC) and 'Nimttz' preserved."
 - id: q25
+  claim_group: "Tic Tac Flight Behavior"
   added_date: '2026-04-21'
   text: |-
     [15:24] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
@@ -482,6 +509,7 @@ quotes:
   statement_date: '2025-02-20'
   significance: "Dietrich's direct first-person observation of the Tic Tac's kinematic behavior — 'didn't follow our laws of physics.'"
 - id: q26
+  claim_group: "Stance On UAP"
   added_date: '2026-04-21'
   text: |-
     [18:07] I maintain an aggressively neutral uh stance. So, by definition for me, UFO or UAP is unidentified. That's what the U stands
@@ -493,6 +521,7 @@ quotes:
   statement_date: '2025-02-20'
   significance: "Dietrich's characterization of her epistemic stance — 'aggressively neutral' — and literal reading of the U in UFO/UAP."
 - id: q27
+  claim_group: "2017 Pentagon Report Leak"
   added_date: '2026-04-21'
   text: |-
     [45:48] 2017 article came about and um there was a Pentagon report that again wasn't classified because we don't know what we saw that day, but included our names and information. And so, it was released, posted on the internet somehow, and we
@@ -504,6 +533,7 @@ quotes:
   statement_date: '2025-02-20'
   significance: "Dietrich describes the 2017 leak of the Pentagon report that named her flight crew — she uses the word 'doxed.'"
 - id: q28
+  claim_group: "Seeing The Object: Acquisition And Duration"
   added_date: '2026-04-21'
   text: |-
     [58:40] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
@@ -515,6 +545,7 @@ quotes:
   statement_date: '2025-02-20'
   significance: "Dietrich's first-person time accounting: her own visual was 10-12 seconds while more senior aviators' visual was several minutes. Explains the duration discrepancy between her and Fravor's accounts."
 - id: q29
+  claim_group: "No Classification Or Secrecy Pressure"
   added_date: '2026-04-21'
   text: |-
     [30:38] I I had a UAP encounter and I was never told to be quiet about it it was never classified we were never required to sign an NDA um there were never Men In Black that came and took tapes or you know removed data or anything like that so um I haven't had that experience and I don't know of anybody else who has
@@ -526,6 +557,7 @@ quotes:
   statement_date: '2024-01-05'
   significance: "Dietrich's explicit denial she experienced classification pressure, NDA requirements, or 'Men In Black' data confiscation after the Nimitz encounter."
 - id: q30
+  claim_group: "Naval Career And Background"
   added_date: '2026-04-21'
   text: |-
     [2:17] so I recently retired and moved to Boulder after serving 20 years in the Navy. The first 10 years was operational as a pilot and then deploying as an engineer. And then the last 10 years, I was living the charmed life of an academic, teaching at the Naval Academy in Annapolis, and then the consortium of schools in DC.
@@ -537,6 +569,7 @@ quotes:
   statement_date: '2023-08-31'
   significance: "Dietrich's own summary of her 20-year Navy career structure: 10 years operational pilot/deployed engineer, 10 years academic. Post-retirement move to Boulder."
 - id: q31
+  claim_group: "Naval Career And Background"
   added_date: '2026-04-21'
   text: |-
     [11:00] I just joined the squadron in July of 2004. So having just come out of flight school, just out of the-- I had just done the midair refueling syllabus. I had just done my carrier qual in that particular aircraft. So I really felt and really was new. I still had my FNG named Patch.
@@ -548,6 +581,7 @@ quotes:
   statement_date: '2023-08-31'
   significance: "Dietrich dates her VFA-41 squadron join to July 2004 — four months before the Nov 14, 2004 encounter — and confirms she still had her FNG name patch."
 - id: q32
+  claim_group: "Naval Career And Background"
   added_date: '2026-04-21'
   text: |-
     I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
@@ -559,6 +593,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich's biographical self-attestation: NROTC scholarship at George Washington University, May 2001 commissioning."
 - id: q33
+  claim_group: "Junior Rank And Deference To Fravor"
   added_date: '2026-04-21'
   text: |-
     When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
@@ -570,6 +605,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich's first-person account of her immediate post-flight reaction and her deference to Fravor as commanding officer."
 - id: q34
+  claim_group: "Pentagon And ONI Contact"
   added_date: '2026-04-21'
   text: |-
     this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
@@ -581,6 +617,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich's self-attestation that a Pentagon UAP-investigation team contacted her — she assumes it was AATIP."
 - id: q35
+  claim_group: "Pentagon And ONI Contact"
   added_date: '2026-04-21'
   text: |-
     So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
@@ -592,6 +629,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich dates the start of Pentagon contact to about 2009 and describes the 'one-way flow' pattern. Most evidentiarily distinctive passage on her institutional engagement chronology."
 - id: q36
+  claim_group: "Family Lineage"
   added_date: '2026-04-21'
   text: |-
     But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
@@ -603,6 +641,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich attests Roman Starzl (science-fiction pioneer) as her great-grandfather."
 - id: q37
+  claim_group: "Family Lineage"
   added_date: '2026-04-21'
   text: |-
     Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
@@ -614,6 +653,7 @@ quotes:
   statement_date: '2021-06-16'
   significance: "Dietrich attests Thomas Starzl (organ-transplantation pioneer) as her grandfather's brother."
 - id: q38
+  claim_group: "Flight Crew Composition"
   added_date: '2026-04-21'
   text: |-
     [9:20] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
@@ -625,6 +665,7 @@ quotes:
   statement_date: '2024-11-09'
   significance: "Dietrich's 2024 re-attestation of her Nov 2004 rank (LTjg) and flight crew composition: Fravor lead with senior lieutenant WSO; Dietrich wingman with lieutenant commander WSO (department head). Auto-caption 'fraver' preserved."
 - id: q39
+  claim_group: "Tic Tac Appearance"
   added_date: '2026-04-21'
   text: |-
     [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
@@ -636,6 +677,8 @@ quotes:
   statement_date: '2024-11-09'
   significance: "Dietrich's direct observation of Tic Tac physical characteristics: 30-40 feet long, smooth, matte white, no windows / flight control surfaces / visible propulsion."
 - id: q40
+  claim_group: "Tic Tac Flight Behavior"
+  corroborated_by: [q14, q25]
   added_date: '2026-04-21'
   text: |-
     [13:41] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
@@ -647,6 +690,7 @@ quotes:
   statement_date: '2024-11-09'
   significance: "Dietrich's first-person observation of Tic Tac kinematic behavior — 'didn't adhere to our understanding of physics and gravity.'"
 - id: q41
+  claim_group: "UAP Advocacy And Method"
   added_date: '2026-04-22'
   text: |-
     These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
@@ -658,6 +702,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's framing of UAP as a longstanding domain awareness gap on three fronts — her core thesis frame used across subsequent interviews."
 - id: q42
+  claim_group: "Naval Career And Background"
   added_date: '2026-04-22'
   text: |-
     She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
@@ -669,6 +714,7 @@ quotes:
   statement_date: '2023-02-17'
   significance: "Dietrich's own bio summary in her self-authored Debrief op-ed byline — the primary source for her career totals (flight hours, carrier-arrested landings) and combat awards (Combat Air Medal for 206 missions across OIF and OEF; Bronze Star for the 2010 Afghanistan deployment)."
 - id: q43
+  claim_group: "FLIR Footage And Subsequent Sortie"
   added_date: '2026-04-23'
   text: |-
     [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered

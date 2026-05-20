@@ -46,11 +46,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### UAPTF Personnel and Structure
 
 > The Unidentified Aerial Phenomena Task Force (UAPTF) was and is (until the follow-on Department of Defense [DOD] organization is fully operational) a partnership across federal and DOD agencies, with a variety of organizations providing personnel as required. Dr. Taylor was a government employee assigned to the U.S. Army Space and Missile Defense Command (SMDC). SMDC provided Dr. Taylor on a time-limited basis as part of a larger number of contributing organizations across the DOD, the Intelligence Community (IC), and other parts of the federal government to assist with the stand-up of the UAPTF and its reporting requirements. It was not a full time assignment; he remained an employee of SMDC. In early 2021, following consultations with the UAPTF, SMDC worked to clarify and de-conflict assigned tasks, responsibilities, and outside activities to balance mission priorities.
 >
@@ -61,6 +57,8 @@ _No direct observations documented._
 | Attributed to | Pentagon Public Affairs written statement to The Black Vault, A1 response, June 29, 2022, 2022-06-29 |
 | Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
 | Location | A1 response to Q1 — Dr. Travis Taylor as UAP Task Force chief scientist |
+
+### AARO Leadership Transitions
 
 > Good afternoon, I'm Sue Gough. I will be --from Defense Press Operations. I will be your moderator today. We are here to talk about the All-domain Anomaly Resolution Office, which as most of you know, is the office that replaced the former Navy-led UAPTF. We have with us here today, Under Secretary of Defense for Intelligence and Security Ronald Moultrie, and Dr. Sean Kirkpatrick, the director of AARO. And with that, I will turn it over to Mr. Moultrie.
 
@@ -78,6 +76,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/defensescoop-kirkpatrick-departure-20231130.html) |
 | Location | DefenseScoop article body, opening Gough quote |
 
+### AARO Press Engagement Posture
+
 > Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group. Note, should we have an on-record engagement this week, we will post the transcript once it is available.  With that, I will be sure keep you in mind for any upcoming opportunities to engage with AARO going forward.
 >
 > Regarding an interview request, Acting Director Phillips does not have any availability for interviews at this time.  We will keep you in mind for future opportunities.
@@ -88,6 +88,16 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Doc 1, Gough 2024-03-05 21:51 |
 
+> We have nothing to announce at this time.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop article by Brandi Vincent, February 25, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | DefenseScoop article body, Gough press-silence paragraph |
+
+### AARO Historical Record Report
+
 > Question 2 - I'm working on the press release today.  Do you want DNI/ODNI mentioned?  Unlike the annual UAP report, the legislation calls for AARO producing the report - but Dir, AARO reports to PDDNI, too, so wanted to check.
 
 | Field | Value |
@@ -95,6 +105,16 @@ _No direct observations documented._
 | Attributed to | FOIA case 24-F-0894 release, Document 4 (Rollout update? — ODNI omission decision), Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM, 2024-03-05 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Doc 4, Gough 2024-03-05 12:51 |
+
+> The department is committed to releasing a second volume of its Historical Record Report, to include AARO's findings on reports of potential pranks and inauthentic materials,
+
+| Field | Value |
+|---|---|
+| Attributed to | Wall Street Journal piece on Pentagon disinformation in UFO mythology by Joel Schectman and Aruna Viswanatha, June 6, 2025 (carried by tovima.com), 2025-06-06 |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | WSJ article body, Gough on-record commitment to AARO Historical Record Report Volume II |
+
+### AARO sUAS Portfolio Scope
 
 > Flagging for you in case you haven't heard.  We do not want to see sUAS added to AARO's portfolio!
 
@@ -114,6 +134,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Doc 6, Gough 2024-03-07 09:40 |
 
+### AARO Operational Status and Caseload
+
 > AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission,
 
 | Field | Value |
@@ -122,14 +144,6 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/defensescoop-aaro-foc-briefing-20241205.html) |
 | Location | DefenseScoop article body, opening attribution paragraph for AARO Full Operational Capability |
 
-> The department is committed to releasing a second volume of its Historical Record Report, to include AARO's findings on reports of potential pranks and inauthentic materials,
-
-| Field | Value |
-|---|---|
-| Attributed to | Wall Street Journal piece on Pentagon disinformation in UFO mythology by Joel Schectman and Aruna Viswanatha, June 6, 2025 (carried by tovima.com), 2025-06-06 |
-| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
-| Location | WSJ article body, Gough on-record commitment to AARO Historical Record Report Volume II |
-
 > AARO has been examining over 2,000 UAP cases.
 
 | Field | Value |
@@ -137,14 +151,6 @@ _No direct observations documented._
 | Attributed to | DefenseScoop article by Brandi Vincent, February 25, 2026, in response to questions about AARO publication blackout and forthcoming Trump UAP-disclosure executive order, 2026-02-25 |
 | Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
 | Location | DefenseScoop article body, Gough caseload paragraph |
-
-> We have nothing to announce at this time.
-
-| Field | Value |
-|---|---|
-| Attributed to | DefenseScoop article by Brandi Vincent, February 25, 2026, 2026-02-25 |
-| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
-| Location | DefenseScoop article body, Gough press-silence paragraph |
 
 ---
 

@@ -619,6 +619,7 @@ relationships:
 quotes:
 
 - id: q1
+  claim_group: "Self-Characterization And Mindpower Philosophy"
   added_date: '2026-05-16'
   observation_type: relayed
   text: 'Uri Geller is one of the world’s most investigated and celebrated mystifiers. Famous around the globe for his mind-bending abilities, he has led a unique life shrouded in debate, controversy and mystery. He is also related to Sigmund Freud.'
@@ -629,6 +630,7 @@ quotes:
   context: Lead paragraph of Uri Geller's biography page on urigeller.com (his own publishing presence)
 
 - id: q2
+  claim_group: "Childhood And Origin Of Powers"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '1946-12-20'
@@ -640,6 +642,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶2
 
 - id: q3
+  claim_group: "Childhood And Origin Of Powers"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: c. 1951
@@ -651,6 +654,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶3
 
 - id: q4
+  claim_group: "Israeli Fame And Golda Meir Endorsement"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '1971'
@@ -662,6 +666,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶7
 
 - id: q5
+  claim_group: "SRI Experiments And Nature Publication"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '1974'
@@ -673,6 +678,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶9
 
 - id: q6
+  claim_group: "US Intelligence And National-Security Work"
   added_date: '2026-05-16'
   observation_type: relayed
   text: 'Uri also addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington. For decades this aspect of his career was too confidential and controversial to discuss.'
@@ -683,6 +689,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶10
 
 - id: q7
+  claim_group: "US Intelligence And National-Security Work"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '1987-05-04'
@@ -694,6 +701,7 @@ quotes:
   context: 'About index page, Mind Over Missile? teaser block (first-person Geller voice introducing the linked sub-page)'
 
 - id: q8
+  claim_group: "Self-Characterization And Mindpower Philosophy"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '1999'
@@ -705,6 +713,7 @@ quotes:
   context: 'Brendan Burton article "Uri Geller – UFOs, metal-bending and the PSI war" (November 24, 2007) ¶25 — transcription of Geller''s Mind Medicine (Element Books, 1999)'
 
 - id: q9
+  claim_group: "CIA Declassification"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '2017'
@@ -716,6 +725,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶31
 
 - id: q10
+  claim_group: "CIA Declassification"
   added_date: '2026-05-16'
   observation_type: relayed
   text: 'The CIA concluded that Uri “demonstrated his paranormal perception ability in a convincing and unambiguous manner.” Click here for more information.'
@@ -726,6 +736,7 @@ quotes:
   context: Uri Geller's biography page on urigeller.com, ¶32 — biography page's quotation of the declassified CIA verdict
 
 - id: q11
+  claim_group: "Israeli-Intelligence Recruitment"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -737,6 +748,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q12
+  claim_group: "Israeli-Intelligence Recruitment"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -748,6 +760,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q13
+  claim_group: "US Intelligence And National-Security Work"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -759,6 +772,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q14
+  claim_group: "Self-Characterization And Mindpower Philosophy"
   added_date: '2026-05-16'
   observation_type: relayed
   statement_date: '2015'
@@ -770,6 +784,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q15
+  claim_group: "US Intelligence And National-Security Work"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -781,6 +796,8 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q16
+  claim_group: "Childhood And Origin Of Powers"
+  corroborated_by: [q3]
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -792,6 +809,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q17
+  claim_group: "Johnny Carson Appearance"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '2015'
@@ -803,6 +821,7 @@ quotes:
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q18
+  claim_group: "SRI Experiments And Nature Publication"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '1973-08-04'
@@ -814,6 +833,7 @@ quotes:
   context: 'R. Targ ([`/people/russell-targ`]) transcription of Geller''s verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`]'
 
 - id: q19
+  claim_group: "SRI Experiments And Nature Publication"
   added_date: '2026-05-16'
   observation_type: direct
   statement_date: '1973-08-04'

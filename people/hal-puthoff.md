@@ -55,11 +55,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### SRI Parapsychology Research
 
 > WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
 
@@ -68,6 +64,8 @@ _No direct observations documented._
 | Attributed to | Abstract of Targ and Puthoff, 'Information transmission under conditions of sensory shielding', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025, 1974-10-18 |
 | Source | [archived source](../sources/news/nature-1974-targ-puthoff-information-transmission-abstract.html) |
 | Location | ¶1 |
+
+### Vacuum and Metric Engineering
 
 > A theme that has come to the fore in advanced planning for long-range space exploration in the future is the concept that empty space itself (the quantum vacuum, or spacetime metric) might be engineered to provide energy/thrust for future space vehicles. Although far reaching, such a proposal is solidly grounded in modern physical theory, and therefore the possibility that matter/vacuum interactions might be engineered for spaceflight applications is not a priori ruled out (Reference 1). Given the current development of mainstream theoretical physics on such topics as warp drives and traversable wormholes that provides for such vacuum engineering possibilities (References 2-6), provided in this paper is a broad perspective of the physics and consequences of the engineering of the spacetime metric.
 
@@ -93,6 +91,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
 | Location | p. 12, ¶1 |
 
+### UAP Material Analysis
+
 > We’re sort of in the position of what would happen if you gave Leonardo da Vinci a garage-door opener,
 
 | Field | Value |
@@ -108,6 +108,8 @@ _No direct observations documented._
 | Attributed to | To The Stars Academy of Arts & Science homepage, snapshot 2022-01-20 (Wayback Machine). Attribution on the page: 'Dr. Hal Puthoff, Co-Founder of TTSA'. The quote appears in the ADAM Research Project / Material Science Research section describing TTSA's materials-analysis research stance. |
 | Source | [archived source](../sources/news/tothestarsacademy-home-20220120.html) |
 | Location | ¶ in ADAM Research Project / Material Science Research section |
+
+### Professional Career and Background
 
 > Harold (Hal) Puthoff, PhD, is President, CEO and Chairman of the Board of EarthTech International, Inc., and Director of the Institute for Advanced Studies at Austin. Earning his PhD from Stanford University in 1967 as a theoretical and experimental physicist specializing in lasers, his present research activities range from theoretical studies concerning fundamental electrodynamics, gravitation, and the quantum vacuum to laboratory studies of innovative approaches to energy generation and space propulsion.
 

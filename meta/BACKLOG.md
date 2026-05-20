@@ -58,9 +58,11 @@ what remains is A2's own staged implementation (see the A2 entry).
 - **Tier 1 — A4** (per-phase validator dispatch): **shipped** (A2
   increment 3) — central phase map + `--phase` on validate.py /
   validate-research.py.
-- **Tier 2 — A2** (the decomposition itself): in progress — increments
-  1–3 done (A3, agent docs, A4); increments 4–5 (Marker+Manager, then
-  Scout/Meta-linker/Builder as real agent invocations) remain.
+- **Tier 2 — A2** (the decomposition itself): all five increments
+  shipped — A3 (1), agent docs (2), A4 `--phase` (3), Marker+Manager
+  prompts (4), Scout/Meta-linker/Builder prompts (5). The pipeline is
+  complete as launchable prompts + per-phase validation; what remains is
+  operational — C41 (first live run) and C42 (phase-map validation).
 
 ---
 
@@ -213,8 +215,8 @@ re-driven by re-running that agent (never by editing the node body).
 **Blocked by:** none. The A2 decomposition is **complete as a launchable,
 documented pipeline** (all five agents + A3 quote shape + `--phase`
 per-stage validation). What remains is operational, not structural:
-exercise it on the next user-directed node build, and migrate the
-remaining 14 person nodes to `claim_group` one per session.
+exercise it on the next user-directed node build (C41). All 15 person
+nodes are now migrated to `claim_group` (C40 — done 2026-05-20).
 
 ---
 
@@ -258,10 +260,10 @@ person Statements section rule (`meta/schema.yaml` + `section_rules.py`).
 Grusch: 165 quotes → 26 claim groups, 19 cross-source duplicates
 collapsed to pointers.
 
-**Remaining (incremental, one node per session):** migrate the other
-14 person nodes to `claim_group`. They render unchanged until migrated —
-a person artifact with no `claim_group` renders the legacy flat
-Direct/Other split (the fallback is the backward-compat guarantee).
+**Migration complete (2026-05-20):** all 15 person nodes are migrated to
+`claim_group` (C40, done). The renderer's flat-fallback path stays for
+any future person node that hasn't yet been grouped — a person artifact
+with no `claim_group` renders the legacy Direct/Other split unchanged.
 
 **Blocks:** A2 — RESOLVED. The Manager agent's contract (how it
 organizes quotes into the node) now has a concrete shape to target.
@@ -324,31 +326,6 @@ sit on the end page).
 **Blocks:** none.
 **Blocked by:** none (residual needs the original rendering / a
 convention call on appendix + chapter page forms).
-
-### C40 — Migrate the remaining person nodes to `claim_group`
-
-A3 (claim-group quote organization) shipped 2026-05-20 with the machinery
-+ Grusch as the proof. The other person nodes still render the legacy
-flat `## Statements → Direct / Other` stream (the renderer's
-backward-compatible fallback when no quote carries `claim_group`).
-Migrate them a few per session: launch the Manager
-(`prompts/agent-manager.md`) to cluster a node's existing quotes into
-`claim_group`s and wire `corroborated_by` cross-source de-dup pointers,
-apply by field-only insertion (never touch quote `text` / `source`),
-regenerate, validate. Eyewitness nodes are safe (the grouped renderer
-marks first-hand observations inline since `1f3669a`).
-
-**Progress (15 person nodes):** done (4) — `david-grusch`,
-`david-fravor`, `luis-elizondo`, `james-ryder` (the latter three migrated
-via the Manager subagent per `prompts/agent-manager.md` — first real
-exercise of that prompt on existing nodes; `david-fravor` confirmed the
-inline `_Direct observation._` marker renders on a real eyewitness).
-Remaining (11): alex-dietrich, hal-puthoff, james-lacatski, karl-nell,
-kit-green, ronald-moultrie, russell-targ, ryan-graves, sean-kirkpatrick,
-sue-gough, uri-geller.
-
-**Blocks:** none.
-**Blocked by:** none (A3 machinery shipped).
 
 ### C41 — Exercise the A2 pipeline end-to-end on a real node build
 

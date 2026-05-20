@@ -312,6 +312,7 @@ credibility_notes: 'Lacatski is named in the Puthoff vacuum metric engineering r
   In WEAPONIZED PART 2 Lacatski did not deny being read in to a legacy UAP program before AAWSAP — "I can''t speak to that. The only other clearance I had was a Q clearance at deal." He said the 2004 Tic Tac is "not" US technology and "not that I am aware of" Lockheed Martin technology from 2004. He described his own man in black sighting on a Union Station express train during Kona Blue — a man in black on a full blank page with the words "Join us." He said "I know nothing about that right now" on Jeremy''s recovered bodies. He said Kona Blue is "much more than going and getting what some have described as 60 year old parts" — he knows "what the exchange parameters were and what was promised on all sides."'
 quotes:
 - id: q1
+  claim_group: "AAWSAP Creation, Funding, and Lifecycle"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -323,6 +324,7 @@ quotes:
   significance: First-person attestation that Lacatski co-created AAWSAP at DIA with Senator Reid — $22M, 5-year capability, completed in 2 years
   context: Lacatski in WEAPONIZED EP 38 with George Knapp and Jeremy Corbell, responding to Corbell''s opening request to outline the AAWSAP / AATIP difference
 - id: q2
+  claim_group: "AAWSAP Creation, Funding, and Lifecycle"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -334,6 +336,7 @@ quotes:
   significance: Lacatski''s account of the Statement-of-Objectives RFP method DIA used to award AAWSAP to Bigelow''s BAASS — "Bob Bigelow''s bass created specifically" for DIA
   context: Lacatski in WEAPONIZED EP 38 describing how AAWSAP''s contract was structured at DIA
 - id: q3
+  claim_group: "AATIP Name and AAWSAP Distinction"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -345,6 +348,7 @@ quotes:
   significance: Lacatski''s account of why the AATIP name was created — security-protective alternate naming after someone in Congress put secret on the AAWSAP program name in the funding notification
   context: Lacatski in WEAPONIZED EP 38 responding to Corbell on the AATIP / AAWSAP press confusion
 - id: q4
+  claim_group: "AATIP Name and AAWSAP Distinction"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -356,6 +360,7 @@ quotes:
   significance: Lacatski''s attestation of his 2016 retirement and the structural separation between AAWSAP (his) and AATIP (Elizondo''s) — Lacatski "was not prived" because AATIP was spun up as he was preparing to retire
   context: Lacatski in WEAPONIZED EP 38 explaining his lack of direct involvement with AATIP and his retirement date
 - id: q5
+  claim_group: "2011 Capitol Craft-of-Unknown-Origin Statement"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -367,6 +372,7 @@ quotes:
   significance: Direct on-record affirmation by Lacatski that he was officially permitted to make the craft-of-unknown-origin statement in the 2011 Capitol meeting — separate from the truth of the underlying claim; sworn-statement-adjacent
   context: Lacatski in WEAPONIZED EP 38 confirming the 2011 Capitol meeting passage from chapter 9 of "Inside the US Government Covert UFO Program"
 - id: q6
+  claim_group: "AAWSAP Compartmentation and Security"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -378,6 +384,7 @@ quotes:
   significance: Lacatski''s security framing — adversary monitoring of AAWSAP ("Assam" auto-caption); possible adversary employees in the contractor space; the standing security frame on what he can say
   context: Lacatski in WEAPONIZED EP 38 explaining why he cannot answer further questions about the craft beyond the book wording
 - id: q7
+  claim_group: "AAWSAP Research Products and Corpus"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -389,6 +396,7 @@ quotes:
   significance: Lacatski''s attestation about the 38 AAWSAP Defense Intelligence Reference Documents — topics solicited from Air Force intelligence, CIA, Naval intelligence, Ground Intelligence; "completely legitimate" and "pretty close to state-of-the-art"
   context: Lacatski in WEAPONIZED EP 38 explaining the inter-agency origin of the DIRD topic list
 - id: q8
+  claim_group: "Position on David Grusch"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -400,6 +408,7 @@ quotes:
   significance: Lacatski''s on-record position on David Grusch — "credible" and "reasonable" on Grusch''s underlying claims about reverse engineering and biologicals; but Lacatski never witnessed illegal activities ("only paramount security procedures")
   context: Lacatski in WEAPONIZED EP 38 responding to George Knapp''s question about David Grusch
 - id: q9
+  claim_group: "2011 Capitol Craft-of-Unknown-Origin Statement"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -411,6 +420,8 @@ quotes:
   significance: Lacatski''s "can''t answer that" non-answer when asked whether he personally saw the craft of unknown origin — "I could say no and it still not be the truth"
   context: Lacatski in WEAPONIZED EP 38 declining to answer Corbell on whether he personally saw the craft
 - id: q10
+  claim_group: "AAWSAP Compartmentation and Security"
+  corroborated_by: [q17]
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -422,6 +433,7 @@ quotes:
   significance: Lacatski''s closed-stovepipe attestation — only the director of analysis, his office chief, and the division chief knew about AAWSAP at DIA
   context: Lacatski in WEAPONIZED EP 38 emphasizing the closed-program structure of AAWSAP within DIA
 - id: q11
+  claim_group: "AAWSAP Creation, Funding, and Lifecycle"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -433,6 +445,7 @@ quotes:
   significance: Lacatski''s timeline clarification — AAWSAP funding stopped September 2010; 90-day no-cost extension through December 2010; the 2011 Capitol meeting occurred after AAWSAP officially terminated
   context: Lacatski in WEAPONIZED EP 38 responding to George Knapp''s question about AAWSAP-team contact with "keepers of the secrets"
 - id: q12
+  claim_group: "Disclosure Stance"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -444,6 +457,7 @@ quotes:
   significance: Lacatski''s direct on-record position — "am I a disclosure Advocate the answer is no"; the difference between him and disclosure advocate is security
   context: Lacatski in WEAPONIZED EP 38 responding to Corbell pressing on UAP transparency and disclosure advocacy
 - id: q13
+  claim_group: "Disclosure Stance"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -455,6 +469,7 @@ quotes:
   significance: Lacatski''s media discipline self-attestation — "I''m not going out there interviewing with everybody to say what I really feel"
   context: Lacatski in WEAPONIZED EP 38 responding to Corbell on disclosure advocacy
 - id: q14
+  claim_group: "Disclosure Stance"
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   observation_type: relayed
@@ -466,6 +481,8 @@ quotes:
   significance: Lacatski''s closing position — he affirms the book content but refuses to extend in spoken interview ("I''m not speaking at all I''m not going beyond what it was what you read from the book")
   context: Lacatski in WEAPONIZED EP 38 responding to Corbell''s closing recap of the 2011 Capitol craft-of-unknown-origin passage
 - id: q15
+  claim_group: "AAWSAP Creation, Funding, and Lifecycle"
+  corroborated_by: [q2]
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   observation_type: relayed
@@ -477,6 +494,7 @@ quotes:
   significance: Lacatski''s 2021 attestation rebutting DoD spokesperson framing that AAWSAP "had nothing to do with UFOs" — the Statement of Objectives RFP method made the contract content non-obvious without the underlying BAASS proposal
   context: Lacatski in 2021 Mystery Wire book-launch interview with George Knapp and Colm Kelleher, responding to Knapp''s question about DoD spokesperson statements
 - id: q16
+  claim_group: "AATIP Name and AAWSAP Distinction"
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   observation_type: relayed
@@ -488,6 +506,7 @@ quotes:
   significance: Lacatski''s 2021 AAWSAP-vs-AATIP distinction — AAWSAP at DIA had $22M / main contract / subcontracts / massive database; AATIP at Pentagon zero funded / no contract / specific military encounters with film
   context: Lacatski in 2021 Mystery Wire book-launch interview responding to Knapp on the AAWSAP / AATIP distinction
 - id: q17
+  claim_group: "AAWSAP Compartmentation and Security"
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   observation_type: relayed
@@ -499,6 +518,7 @@ quotes:
   significance: Lacatski''s 2021 security-posture attestation — AAWSAP was "not an official SAP but a closed program"; within his own office only leadership knew the contract was being run
   context: Lacatski in 2021 Mystery Wire book-launch interview explaining the AAWSAP / AATIP press mix-up as a consequence of compartmentation
 - id: q18
+  claim_group: "Kona Blue Program"
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   observation_type: relayed
@@ -510,6 +530,7 @@ quotes:
   significance: Lacatski''s first direct on-record self-attestation as creator and DIA program manager of both AAWSAP and Kona Blue (KBP) — the load-bearing Kona Blue lineage statement
   context: Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1
 - id: q19
+  claim_group: "Counterintelligence and Disinformation"
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   observation_type: relayed
@@ -521,6 +542,7 @@ quotes:
   significance: Lacatski''s first-person assertion that deliberately false documents about AAWSAP and Kona Blue have been created and are currently in government files; he says he reported some of this to the DOD/DOW Inspector General''s Office
   context: Lacatski continuing his prepared statement in WEAPONIZED PART 1 on disinformation against AAWSAP / Kona Blue
 - id: q20
+  claim_group: "Counterintelligence and Disinformation"
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   observation_type: relayed
@@ -532,6 +554,7 @@ quotes:
   significance: 'Lacatski''s direct framing in his prepared statement — only believe AATIP and Kona Blue information directly from the four books or from Lacatski / Kelleher; characterizes the disclosure-era public record as "a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons"'
   context: Lacatski reading the near-conclusion of his prepared statement in WEAPONIZED PART 1
 - id: q21
+  claim_group: "Kona Blue Program"
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   observation_type: relayed
@@ -543,6 +566,7 @@ quotes:
   significance: 'Lacatski''s structural framing — Kona Blue is both "a compartment" and "a program" and "much more than" either; he can answer "directly" only at this level of detail'
   context: Lacatski in WEAPONIZED PART 1 explaining why he should not use past tense for Kona Blue
 - id: q22
+  claim_group: "Kona Blue Program"
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   observation_type: relayed
@@ -554,6 +578,7 @@ quotes:
   significance: 'Lacatski''s direct contradiction of the public narrative that Kona Blue was killed at DHS — "The program was not killed. You can''t kill Kona Blue" — and his statement that he plans a fifth book on Kona Blue from his perspective'
   context: Lacatski in WEAPONIZED PART 1 responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative
 - id: q23
+  claim_group: "Pre-AAWSAP Legacy Program Question"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -565,6 +590,7 @@ quotes:
   significance: 'Lacatski''s non-denial in WEAPONIZED PART 2 of pre-AAWSAP legacy UAP program involvement — "I can''t speak to that." Documents Lacatski''s only other attested clearance as "a Q clearance at deal" (the auto-caption rendering of DOE — the Q clearance is the DOE counterpart to a Top Secret clearance)'
   context: Lacatski in WEAPONIZED PART 2 responding to Corbell's question whether he was read into a legacy UAP program before AAWSAP
 - id: q24
+  claim_group: "Craft, Bodies, and Origins"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -576,6 +602,7 @@ quotes:
   significance: 'Lacatski''s direct response that the 2004 Tic Tac is not US technology — "No, it''s not. I don''t know that officially, but" — the counterfactual: if it had been US technology, it would be implemented on aircraft 21 years later, and it is not'
   context: Lacatski in WEAPONIZED PART 2 responding to George's 21st-anniversary framing of the 2004 Tic Tac
 - id: q25
+  claim_group: "Man in Black Sighting"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -587,6 +614,7 @@ quotes:
   significance: 'Lacatski''s first-person attestation of his own "man in black sighting" — placed "during Kona Blue, not during Oset" (post-AAWSAP); framed as a "strange event" he says "no way anyone could pull this off as a counterintelligence operation"; not a sighting of a person'
   context: Lacatski in WEAPONIZED PART 2 introducing the MIB sighting story (immediately followed by the description in q26)
 - id: q26
+  claim_group: "Man in Black Sighting"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -598,6 +626,7 @@ quotes:
   significance: Lacatski''s first-person description of the MIB image presented to him on a Union Station express train during Kona Blue — a man in black on a full blank page with the words "Join us"
   context: Lacatski in WEAPONIZED PART 2 describing his MIB sighting on the train
 - id: q27
+  claim_group: "Craft, Bodies, and Origins"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -609,6 +638,7 @@ quotes:
   significance: Lacatski''s direct first-person attestation that he knows "nothing about that right now" on recovered bodies / biologics — distinguishes his own knowledge from the biologics-recovery framing Corbell uses
   context: Lacatski in WEAPONIZED PART 2 responding to Corbell's framing of recovered bodies
 - id: q28
+  claim_group: "Kona Blue Program"
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   observation_type: relayed
@@ -620,6 +650,7 @@ quotes:
   significance: 'Lacatski''s clarification that Kona Blue is "much more than going and getting what some have described as 60 year old parts" — direct rebuttal of public framings that Kona Blue was about acquiring legacy crash-debris material. Lacatski says he knows "what the exchange parameters were" and "what was promised on all sides" — exchange-parameters framing implies a multi-party transaction structure for Kona Blue'
   context: Lacatski in WEAPONIZED PART 2 explaining what his "full human capabilities" statement referred to — "in Kona Blue aspects"
 - id: q29
+  claim_group: "AAWSAP Research Products and Corpus"
   added_date: '2026-05-18'
   statement_date: '2026-04-06'
   observation_type: relayed
@@ -631,6 +662,7 @@ quotes:
   significance: Lacatski's first-person quantification of the AAWSAP analyst-document corpus he reduced for book authoring — 30,000 pages of analyst photos, information, logs, sightings, and investigations
   context: 8 News Now / KLAS-TV / Mystery Wire segment 'Craft of unknown origin subject of secret study' (transcript [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]), published 2026-04-06; Lacatski on-camera with narrator George Knapp ([`/people/george-knapp`])
 - id: q30
+  claim_group: "Counterintelligence and Disinformation"
   added_date: '2026-05-18'
   statement_date: '2026-04-06'
   observation_type: relayed
@@ -642,6 +674,7 @@ quotes:
   significance: Lacatski's first-person attestation that AAWSAP "never had a leak" — directly on-record contradiction of public framings that the program leaked
   context: 8 News Now segment 2026-04-06; Lacatski responding to Knapp narrator framing that AAWSAP bosses knew the paranormal-umbrella scope from the beginning and were concerned about leaks
 - id: q31
+  claim_group: "Paranormal Scope and Phenomena"
   added_date: '2026-05-18'
   statement_date: '2026-04-06'
   observation_type: relayed
@@ -653,6 +686,7 @@ quotes:
   significance: Lacatski's first-person canonical 2026 framing of the AAWSAP purpose — "look into is there something really there, especially in the paranormal umbrella" — with definitive "absolutely yes" answer
   context: 8 News Now segment 2026-04-06; Lacatski summarizing the AAWSAP investigative purpose in the Future Visions book launch press cycle
 - id: q32
+  claim_group: "Craft, Bodies, and Origins"
   added_date: '2026-05-18'
   statement_date: '2026-04-06'
   observation_type: relayed
@@ -664,6 +698,7 @@ quotes:
   significance: Lacatski's first-person framing that even confirmed craft and bodies don't answer the larger questions — where they're from, why they're here, what their plan is. Distinguishes Lacatski's evidentiary posture from public Congressional framing that focuses on legacy-program crashed-craft and alien-bodies allegations.
   context: 8 News Now segment 2026-04-06; Lacatski responding to Knapp narrator framing about Congressional focus on crashed-UFOs and alien-bodies legacy-program allegations
 - id: q33
+  claim_group: "DIA Background and AAWSAP Origins"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -675,6 +710,7 @@ quotes:
   significance: Lacatski's first-person origin story of his AAWSAP involvement — the moment he discovered an "alternate group" at DIA was working on Skinwalker Ranch. Earliest-known attestation of how Lacatski first learned about the parallel DIA UAP work that would become AAWSAP. The "alternate group" framing implies a structural-organizational predicate Lacatski entered into, not initiated.
   context: WEAPONIZED EP 114 'Future Visions' interview (transcript [`/transcripts/weaponized-114-lacatski-future-visions-2026`]) for Lacatski''s fourth book Future Visions ([`/documents/lacatski-future-visions-2026`]), 2026-04-08; Lacatski responding to Corbell question about his DIA background pre-AAWSAP
 - id: q34
+  claim_group: "DIA Background and AAWSAP Origins"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -686,6 +722,7 @@ quotes:
   significance: Lacatski's first-person attestation of Jay Stratton's role at DIA — head of the air-threats team ("air team"), possibly on assignment from ONI ([`/organizations/oni`]). Lacatski heads the parallel missile-threats team. Structural DIA-team detail not in prior transcripts.
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties"
 - id: q35
+  claim_group: "Disclosure Stance"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -697,6 +734,7 @@ quotes:
   significance: Lacatski's canonical "wide open" 2026 framing — the four books opened the door but the government won't carry the ball on disclosure; readers must do their own research. Most-cited Lacatski quote in the EP 114 press cycle.
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp on whether something further beyond the four books needs to be released
 - id: q36
+  claim_group: "Recovered Materials, Transfers, and Facilities"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -708,6 +746,7 @@ quotes:
   significance: Lacatski's first-person attestation that he visited the Pax River facility while it was under construction — "I've been there. Yes, I've seen the facility, but it was uh just built."
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell question about Pax River — Corbell sets up the question by noting Rep. Tim Burchett ([`/people/tim-burchett`]) has been visiting facilities historically said to hold non-human intelligence craft, including Pax River
 - id: q37
+  claim_group: "Paranormal Scope and Phenomena"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -719,6 +758,7 @@ quotes:
   significance: Lacatski's first-person Kona Blue-era attestation of a human-levitation incident at Skinwalker Ranch, by "a reliable person" — distinct from prior attestations of levitating objects. Time-bracketed to the Kona Blue period (post-AAWSAP).
   context: WEAPONIZED EP 114 2026-04-08; Lacatski on Skinwalker Ranch communication experiments and time anomalies during Kona Blue period
 - id: q38
+  claim_group: "AATIP Name and AAWSAP Distinction"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -730,6 +770,7 @@ quotes:
   significance: Lacatski's first-person clarification of the AATIP name's origin — created for use in Reid's first material-transfer attempt letter, then resurfaced in the 2017 NYT article. Disambiguates AATIP (named for the letter; not a sustained program at DIA in the AAWSAP era) from AAWSAP (the actual DIA contract).
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp question about how to describe what AATIP was
 - id: q39
+  claim_group: "Recovered Materials, Transfers, and Facilities"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -741,6 +782,7 @@ quotes:
   significance: Lacatski's first-person clarification of what the Reid letter sought — a list of recovered materials. The list had "disappeared" from the exact location they were given and "couldn't be gone by any normal means."
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp / Corbell question about what the Reid letter was actually about
 - id: q40
+  claim_group: "Recovered Materials, Transfers, and Facilities"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed
@@ -752,6 +794,7 @@ quotes:
   significance: Lacatski's first-person attestation that the Kona Blue material-transfer DHS rejection was the "third attempt" — and that DHS's actual focus during the rejection was NOT recovered technology but something Lacatski "can't tell you right now." Extends the Kona Blue / material-transfer narrative beyond prior attestations.
   context: WEAPONIZED EP 114 2026-04-08; Lacatski on the conclusion of Kona Blue at DHS
 - id: q41
+  claim_group: "Counterintelligence and Disinformation"
   added_date: '2026-05-18'
   statement_date: '2026-04-08'
   observation_type: relayed

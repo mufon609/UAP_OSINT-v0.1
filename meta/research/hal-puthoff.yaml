@@ -88,6 +88,7 @@ credibility_notes: 'Puthoff''s professional record is documented across primary 
 
 quotes:
 - id: q1
+  claim_group: "SRI Parapsychology Research"
   added_date: '2026-05-16'
   text: |
     WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
@@ -100,6 +101,7 @@ quotes:
   significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Puthoff''s Stanford Research Institute affiliation at the Electronics and Bioengineering Laboratory in 1974, and for the published peer-reviewed primary-source attestation of the SRI parapsychology research the CIA was sponsoring at the time. Substantively the subject''s own research and therefore registered as a Puthoff Statement per the conventions on co-authored academic publications.'
 
 - id: q2
+  claim_group: "UAP Material Analysis"
   added_date: '2026-05-16'
   text: |
     We’re sort of in the position of what would happen if you gave Leonardo da Vinci a garage-door opener,
@@ -112,6 +114,7 @@ quotes:
   significance: 'Foundational disclosure-era statement framing AATIP material analysis as a knowledge-asymmetry problem (the implicit framing: the materials may carry advanced technology whose function the recipient lacks the conceptual vocabulary to recognize). Quoted in the same NYT article that publicly named Luis Elizondo as the AATIP director and identified Puthoff, Elizondo, and Christopher K. Mellon as principals in the new commercial venture To the Stars Academy of Arts and Science.'
 
 - id: q3
+  claim_group: "UAP Material Analysis"
   added_date: '2026-05-16'
   text: |
     We have a chance at making progress, because we will follow where the data leads us.
@@ -124,6 +127,7 @@ quotes:
   significance: 'TTSA homepage self-attestation framing the ADAM Research Project''s investigative stance — empirical (follow the data) rather than hypothesis-driven. Anchors Puthoff''s continuing TTSA co-founder role as of the 2022-01-20 snapshot, alongside the May 2, 2022 SEC Form 1-K Part II attestation that he had recently moved from the Board of Directors to the Advisory Board.'
 
 - id: q4
+  claim_group: "Vacuum and Metric Engineering"
   added_date: '2026-05-16'
   text: |
     A theme that has come to the fore in advanced planning for long-range space exploration in the future is the concept that empty space itself (the quantum vacuum, or spacetime metric) might be engineered to provide energy/thrust for future space vehicles. Although far reaching, such a proposal is solidly grounded in modern physical theory, and therefore the possibility that matter/vacuum interactions might be engineered for spaceflight applications is not a priori ruled out (Reference 1). Given the current development of mainstream theoretical physics on such topics as warp drives and traversable wormholes that provides for such vacuum engineering possibilities (References 2-6), provided in this paper is a broad perspective of the physics and consequences of the engineering of the spacetime metric.
@@ -136,6 +140,7 @@ quotes:
   significance: 'Thesis statement of the DIA-commissioned DIRD authored by Puthoff. First-paragraph framing of the paper''s subject matter — vacuum/spacetime-metric engineering as a candidate technical basis for long-range space exploration, grounded in mainstream physical theory and not a priori ruled out for spaceflight applications. The author and Defense Intelligence Agency program affiliation establish the AAWSAP technical-substrate context for the framing.'
 
 - id: q5
+  claim_group: "Vacuum and Metric Engineering"
   added_date: '2026-05-16'
   text: |
     This paper has considered the possibility—even likelihood—that future developments with regard to advanced aerospace technologies will trend in the direction of manipulating the underlying spacetime structure of the vacuum of space itself by processes that can be called vacuum engineering or metric engineering. Far from being simply a fanciful concept, a significant literature exists in peer-reviewed, Tier 1 physics publications in which the topic is explored in detail.
@@ -148,6 +153,7 @@ quotes:
   significance: 'Puthoff''s authorial Discussion-section restatement of the DIRD thesis — possibility-even-likelihood framing of vacuum/metric engineering as the trend direction for advanced aerospace technologies, with peer-reviewed Tier 1 physics literature cited as the conceptual substrate. The framing is stronger than the Preface opening (q4): Discussion characterizes the trajectory as ''possibility—even likelihood'', not merely ''not a priori ruled out''.'
 
 - id: q6
+  claim_group: "Vacuum and Metric Engineering"
   added_date: '2026-05-16'
   text: |
     Despite the challenges, sample calculations as presented herein indicate the direction of potentially useful trends derivable on the basis of the application of GR principles as embodied in a metric engineering approach, with the results constrained only by what is achievable practically in an engineering sense. The latter is, however, a daunting constraint. At this point in the consideration of such nascent concepts, given our present level of technological evolution, it is premature to even guess about an optimum strategy, let alone attempt to form a critical path for the engineering development of such technologies. Nonetheless, only through rigorous inquiry into such concepts can one hope to arrive at a proper assessment of the possibilities inherent in the evolution of advanced spaceflight technologies.
@@ -160,6 +166,7 @@ quotes:
   significance: 'Methodological conclusion of the DIRD. Puthoff explicitly characterizes the engineering implementability of vacuum/metric engineering as ''premature'' to even guess about a critical path for development at the technological evolution level of 2010, while arguing that ''only through rigorous inquiry'' can the possibilities be properly assessed. The hedge frames the DIRD as a basic-research substrate document for the AAWSAP program, not an implementation roadmap.'
 
 - id: q7
+  claim_group: "Professional Career and Background"
   added_date: '2026-05-16'
   text: |
     Harold (Hal) Puthoff, PhD, is President, CEO and Chairman of the Board of EarthTech International, Inc., and Director of the Institute for Advanced Studies at Austin. Earning his PhD from Stanford University in 1967 as a theoretical and experimental physicist specializing in lasers, his present research activities range from theoretical studies concerning fundamental electrodynamics, gravitation, and the quantum vacuum to laboratory studies of innovative approaches to energy generation and space propulsion.
@@ -172,6 +179,7 @@ quotes:
   significance: 'EarthTech institutional self-attestation of Puthoff''s present positions (President, CEO and Chairman of the Board of EarthTech; Director of IASA), his Stanford PhD specialization (theoretical and experimental physicist specializing in lasers), and the current scope of his research activities — fundamental electrodynamics, gravitation, and the quantum vacuum bridging into energy generation and space propulsion. Chairman of the Board title is new on the artifact (prior SEC and TTSA sources attested President and CEO only).'
 
 - id: q8
+  claim_group: "Professional Career and Background"
   added_date: '2026-05-16'
   text: |
     With a professional background spanning decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International, Dr. Puthoff has a publication stream in Tier-1 physics journals on electron-beam devices, lasers, quantum vacuum energy physics, general relativity models and space propulsion, is co-author of a graduate-level textbook Fundamentals of Quantum Electronics published in English, French, Russian and Chinese, and has patents issued in the laser, communications and energy fields. Dr. Puthoff regularly serves various foundations, corporations, NASA, and the DoD and intelligence communities as advisor on leading-edge technologies and future technology trends, and his awards and honors include a DoD Certificate of Commendation from NSA for his work on high-speed opto-electronic computers.
@@ -184,6 +192,7 @@ quotes:
   significance: 'EarthTech institutional self-attestation of Puthoff''s pre-1985 career institutions (General Electric, Sperry, NSA, Stanford, SRI International) and post-1985 advisory roles (foundations, corporations, NASA, DoD, intelligence communities). The Fundamentals of Quantum Electronics textbook (English / French / Russian / Chinese translations) and the DoD Certificate of Commendation from NSA for high-speed opto-electronic computers work are both new on the artifact, as is the publication-stream taxonomy (electron-beam devices / lasers / quantum vacuum energy / general relativity / space propulsion).'
 
 - id: q9
+  claim_group: "Professional Career and Background"
   added_date: '2026-05-16'
   text: |
     Dr. Puthoff is a member of several professional organizations, including AFIO (Assoc. of Former Intelligence Officers), is listed in such biographical reference works as Who’s Who in the World, and has been designated a Fetzer Fellow (1991) and a Fellow of the British Interplanetary Society (2012).

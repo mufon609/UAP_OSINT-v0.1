@@ -61,106 +61,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 ## Statements
 
-### Direct Observations
-
-> So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
-
-| Field | Value |
-|---|---|
-| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter |
-| Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Location | ¶53 |
-
-> "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
-
-| Field | Value |
-|---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
-| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | ¶5 |
-
-> "No predictable movement, no predictable trajectory,"
-
-| Field | Value |
-|---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
-| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | ¶9 |
-
-> "I felt the vulnerability of not having anything to defend ourselves,"
-
-| Field | Value |
-|---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
-| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | ¶13 |
-
-> "And then I felt confused when it disappeared."
-
-| Field | Value |
-|---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
-| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | ¶13 |
-
-> When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
-
-| Field | Value |
-|---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
-| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 3, ¶4 |
-
-> [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
-
-| Field | Value |
-|---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [59:18] |
-
-> [56:34] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
-
-| Field | Value |
-|---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [56:34] |
-
-> [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
-
-| Field | Value |
-|---|---|
-| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
-| Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Location | [11:22] |
-
-> [13:41] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
-
-| Field | Value |
-|---|---|
-| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
-| Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Location | [13:41] |
-
-> [15:24] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
-
-| Field | Value |
-|---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
-| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [15:24] |
-
-> [58:40] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
-
-| Field | Value |
-|---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20) |
-| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [58:40] |
-
-
-### Other Statements
+### Decision To Speak Publicly
 
 > I never wanted to be on national TV, no offense.
 
@@ -186,61 +87,92 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
 | Location | ¶58 |
 
-> I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
+### Object Could Not Be Identified
+
+> So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
+
+| Field | Value |
+|---|---|
+| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter |
+| Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
+| Location | ¶53 |
+
+_Direct observation._
+
+> "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
+
+| Field | Value |
+|---|---|
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
+| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
+| Location | ¶5 |
+
+_Direct observation._
+
+**Also attested:**
+
+- Self-authored op-ed in The Debrief, 2023-02-17; 2023-02-17; [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html); ¶7
+
+### Tic Tac Flight Behavior
+
+> "No predictable movement, no predictable trajectory,"
+
+| Field | Value |
+|---|---|
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
+| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
+| Location | ¶9 |
+
+_Direct observation._
+
+> [13:41] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
+
+| Field | Value |
+|---|---|
+| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
+| Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
+| Location | [13:41] |
+
+_Direct observation._
+
+**Also attested:**
+
+- Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14; 2022-11-14; [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html); ¶4
+- Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20); 2025-02-20; [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md); [15:24]
+
+### Emotional Response During The Encounter
+
+> "I felt the vulnerability of not having anything to defend ourselves,"
+
+| Field | Value |
+|---|---|
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
+| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
+| Location | ¶13 |
+
+_Direct observation._
+
+> "And then I felt confused when it disappeared."
+
+| Field | Value |
+|---|---|
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
+| Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
+| Location | ¶13 |
+
+_Direct observation._
+
+### Junior Rank And Deference To Fravor
+
+> When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
 
 | Field | Value |
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 2, ¶1 |
+| Location | p. 3, ¶4 |
 
-> this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
-
-| Field | Value |
-|---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
-| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 4, ¶2 |
-
-> So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
-
-| Field | Value |
-|---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
-| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 4, ¶3 |
-
-> But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
-
-| Field | Value |
-|---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
-| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 5, ¶1 |
-
-> Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
-
-| Field | Value |
-|---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
-| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | p. 5, ¶3 |
-
-> appeared to respond in a way we didn't recognize
-
-| Field | Value |
-|---|---|
-| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
-| Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Location | ¶4 |
-
-> didn't appear to have any flight control surfaces or means of propulsion
-
-| Field | Value |
-|---|---|
-| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
-| Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Location | ¶4 |
+_Direct observation._
 
 > [10:03] I was a lieutenant Junior grade I wasn't even a full Lieutenant at the time uh that that happened
 
@@ -266,6 +198,24 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Location | [1:01:51] |
 
+### Pentagon And ONI Contact
+
+> this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
+
+| Field | Value |
+|---|---|
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
+| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
+| Location | p. 4, ¶2 |
+
+> So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
+
+| Field | Value |
+|---|---|
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
+| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
+| Location | p. 4, ¶3 |
+
 > [5:19] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
 
 | Field | Value |
@@ -274,77 +224,15 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Location | [5:19] |
 
-> they asked me to be their first advisor uh so it's a unpaid role
+### Naval Career And Background
+
+> I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [27:08] |
-
-> [19:30] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
-
-| Field | Value |
-|---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [19:30] |
-
-> [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
-
-| Field | Value |
-|---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [55:28] |
-
-> My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶7 |
-
-> We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶7 |
-
-> Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶9 |
-
-> The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶16 |
-
-> Be vigilant. Stay curious. Look up. We have barely tasted the sky.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶17 |
-
-> These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
-| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | ¶3 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
+| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
+| Location | p. 2, ¶1 |
 
 > She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
 
@@ -370,6 +258,164 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/merged-podcast-014-dietrich-2023-downloaded.md) |
 | Location | [11:00] |
 
+> [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
+
+| Field | Value |
+|---|---|
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
+| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
+| Location | [12:07] |
+
+### Family Lineage
+
+> But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
+
+| Field | Value |
+|---|---|
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
+| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
+| Location | p. 5, ¶1 |
+
+> Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
+
+| Field | Value |
+|---|---|
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
+| Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
+| Location | p. 5, ¶3 |
+
+### Tic Tac Appearance
+
+> We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Location | ¶7 |
+
+**Also attested:**
+
+- Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14; 2022-11-14; [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html); ¶4
+
+> [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
+
+| Field | Value |
+|---|---|
+| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
+| Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
+| Location | [11:22] |
+
+_Direct observation._
+
+### Seeing The Object: Acquisition And Duration
+
+> [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [59:18] |
+
+_Direct observation._
+
+> [58:40] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
+
+| Field | Value |
+|---|---|
+| Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20) |
+| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
+| Location | [58:40] |
+
+_Direct observation._
+
+### FLIR Footage And Subsequent Sortie
+
+> [56:34] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [56:34] |
+
+_Direct observation._
+
+> [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [55:28] |
+
+### Enigma Labs First Advisor
+
+> they asked me to be their first advisor uh so it's a unpaid role
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [27:08] |
+
+### NASA Independent Study Attendance
+
+> [19:30] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [19:30] |
+
+### Stance On UAP
+
+> Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Location | ¶9 |
+
+> [18:07] I maintain an aggressively neutral uh stance. So, by definition for me, UFO or UAP is unidentified. That's what the U stands
+
+| Field | Value |
+|---|---|
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
+| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
+| Location | [18:07] |
+
+### UAP Advocacy And Method
+
+> The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Location | ¶16 |
+
+> Be vigilant. Stay curious. Look up. We have barely tasted the sky.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Location | ¶17 |
+
+> These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Location | ¶3 |
+
+### No Classification Or Secrecy Pressure
+
 > [30:38] I I had a UAP encounter and I was never told to be quiet about it it was never classified we were never required to sign an NDA um there were never Men In Black that came and took tapes or you know removed data or anything like that so um I haven't had that experience and I don't know of anybody else who has
 
 | Field | Value |
@@ -377,6 +423,8 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Attributed to | Calling All Beings podcast Ep. 104 (published 2024-01-05) |
 | Source | [archived source](../sources/transcripts/calling-all-beings-104-dietrich-2024-downloaded.md) |
 | Location | [30:38] |
+
+### Flight Crew Composition
 
 > [9:20] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
 
@@ -386,21 +434,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
 | Location | [9:20] |
 
-> [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
-
-| Field | Value |
-|---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
-| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [12:07] |
-
-> [18:07] I maintain an aggressively neutral uh stance. So, by definition for me, UFO or UAP is unidentified. That's what the U stands
-
-| Field | Value |
-|---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
-| Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [18:07] |
+### 2017 Pentagon Report Leak
 
 > [45:48] 2017 article came about and um there was a Pentagon report that again wasn't classified because we don't know what we saw that day, but included our names and information. And so, it was released, posted on the internet somehow, and we
 

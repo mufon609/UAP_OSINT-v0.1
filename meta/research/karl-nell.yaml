@@ -39,6 +39,7 @@ credibility_notes: 'The Debrief article by Leslie Kean and Ralph Blumenthal of J
 
 quotes:
 - id: q1
+  claim_group: "Endorsement of the Grusch Disclosure"
   added_date: '2026-05-18'
   text: |
     His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the past eighty years focused on reverse engineering technologies of unknown origin is fundamentally correct, as is the indisputable realization that at least some of these technologies of unknown origin derive from non-human intelligence,
@@ -51,6 +52,8 @@ quotes:
   significance: 'Nell''s substantive on-record attestation supporting the core factual claim of the Grusch disclosure — that a decades-long sub-rosa arms race for reverse engineering technologies of unknown origin exists, and that at least some such technologies derive from non-human intelligence. This is the strongest institutional-peer endorsement of the Grusch evidentiary thesis in the archived disclosure-era record; cited as vc2 in the Grusch artifact Vouching Chain.'
 
 - id: q2
+  claim_group: "Career and UAP Task Force Role"
+  corroborated_by: [q7]
   added_date: '2026-05-18'
   text: |
     His last active-duty assignment was as Army director
@@ -66,6 +69,7 @@ quotes:
   significance: 'Self-authored Sol Foundation policy paper About the Author passage anchoring three current career attestations: last active-duty assignment as Army director supporting the UAP Task Force; aerospace-industry positions at Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC; current CEO role at StarDustX Materials, Inc. The hyphenated form "multimillion-dol-lar" is a PDF page-break artifact preserved verbatim per the verbatim-quote check. Earlier Army roles in the same paragraph (moderniza-tion advisor to the Vice Chief of Staff, AFRICOM deputy chief of staff, 336th Expeditionary MI Brigade commander, C/J-2 Iraq) interleave with a PDF dropped-cap and page-break artifact and are captured in background prose rather than in this quote.'
 
 - id: q3
+  claim_group: "Witness Credibility and National Security"
   added_date: '2026-05-18'
   text: |
     The public must now entertain the possibili-ty that three independent witnesses who held highly sensitive positions in the US military and
@@ -82,6 +86,7 @@ quotes:
   significance: 'Nell''s three-option framing of the David Fravor ([`/people/david-fravor`]) / Ryan Graves ([`/people/ryan-graves`]) / David Grusch ([`/people/david-grusch`]) July 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]) testimony — willful perjury, shared psychosis, or factual relation — published in the Sol Foundation policy paper. The framing positions the national-security stake as independent of which option is true, narrowing the inferential space available to the reader. Hyphenated "possibili-ty" is a PDF page-break artifact preserved verbatim.'
 
 - id: q4
+  claim_group: "UAP Disclosure Act and Review Board"
   added_date: '2026-05-18'
   text: |
     The UAP Disclosure Act would create an independent Review Board of nine distinguished
@@ -99,6 +104,7 @@ quotes:
   significance: 'Nell''s authoritative description of the UAP Disclosure Act Review Board — nine members at uppermost professional tiers, Presidential nomination and Senate confirmation, centralized record assessment, transparency / national-security / international-cooperation mandate. The structural mechanism Nell advocates for in the white paper and previously articulated in his 2023 Sol Symposium remarks on the Schumer Amendment.'
 
 - id: q5
+  claim_group: "UAP Disclosure Act and Review Board"
   added_date: '2026-05-18'
   text: |
     The Disclosure Act reverses this decision (which possibly violated the Federal
@@ -114,6 +120,7 @@ quotes:
   significance: 'Nell''s articulation of the eminent domain provision in the UAP Disclosure Act — directing the executive branch to invoke eminent domain over technology and materials lacking prosaic attribution or known means of human manufacture. The provision (per Nell) was driven by whistleblower testimony that nonhuman-origin material was transferred to private aerospace companies possibly in violation of Federal Acquisition Regulations.'
 
 - id: q6
+  claim_group: "UAP Disclosure Act and Review Board"
   added_date: '2026-05-18'
   text: |
     middle-management level in this formerly recalcitrant department, is inadequate and ill-suit-ed to addressing the national strategic objectives for which the Review Board was conceived.
@@ -128,6 +135,7 @@ quotes:
   significance: 'Nell''s Sol Foundation policy paper characterization of AARO ([`/organizations/aaro`]) as middle-management-level and inadequate to the national strategic objectives — and his framing of AARO and the Review Board as complementary rather than competitive. The full passage opens at the foot of page 17 ("Even if one believes that current Department of Defense efforts are effective, its AARO, designed to function at a") and continues across the page break to page 18 starting at "middle-management level" — this quote captures the page-18 portion. Hyphenated "ill-suit-ed" is a PDF page-break artifact preserved verbatim.'
 
 - id: q7
+  claim_group: "Career and UAP Task Force Role"
   added_date: '2026-05-18'
   text: |
     [00:01:46] The opportunity to come in and advise uh Army uh Futures command the largest reorganization in the Army Reserve uh since uh since really 1973 on how the Army could be more effective and uh my last assignment uh was involved with the UAP task force which maybe is the most
@@ -140,6 +148,7 @@ quotes:
   significance: 'Nell''s on-record self-attestation of his UAP Task Force role as his "last assignment", spoken at SALT iConnections NY May 2024. The framing places the UAP Task Force in succession to his role advising Army Futures Command. The auto-caption ortho­graphy is preserved verbatim per repository discipline for transcript-provenance auto-caption.'
 
 - id: q8
+  claim_group: "Non-Human Intelligence Reality"
   added_date: '2026-05-18'
   text: |
     [00:02:05] Aopo uh for this discussion and so Carl here's here's the million-dollar question do you believe that a higher form of non-human intelligence has visited this planet right so non-human intelligence exists non-human intelligence has been interacting with Humanity this interaction is not new and
@@ -152,6 +161,7 @@ quotes:
   significance: 'Nell''s direct on-record assertion that non-human intelligence exists, has been interacting with humanity, and that this interaction is ongoing. The single most-cited public NHI position by Nell. Spoken in a financial-industry conference venue (SALT iConnections NY), not a classified or congressional setting. The auto-caption preserves the interviewer''s mid-segment question framing and the start of Nell''s answer.'
 
 - id: q9
+  claim_group: "Non-Human Intelligence Reality"
   added_date: '2026-05-18'
   text: |
     [00:02:28] It's been ongoing and there are unelected people in the government that are aware of that and and so Carl that is quite a bold statement um I'm wondering and I'm curious how confident are you that that is true there's zero doubt and and Carl what evidence have you seen what was the moment where you
@@ -164,6 +174,7 @@ quotes:
   significance: 'Nell''s "zero doubt" attestation. The single most-quoted Nell phrase from SALT 2024 in subsequent press coverage. Attests Nell''s subjective confidence in his preceding claim that non-human intelligence exists and has been interacting with humanity. Auto-caption preserves the interleaved question-and-answer structure.'
 
 - id: q10
+  claim_group: "Controlled Disclosure and Legislative Strategy"
   added_date: '2026-05-18'
   text: |
     [00:00:30] Thank you thank you very much it's really a pleasure and an honor to be here and uh just the sincerest thanks to Gary and Peter and Saul for for putting this together and it's really a combination of I think Decades of work of all the people in the audience and
@@ -176,6 +187,7 @@ quotes:
   significance: 'Opening of Nell''s Sol Symposium talk. Anchors the date, venue, and Nell''s acknowledgement of Sol co-founders Garry Nolan and Peter Skafish. Naming-quirk preservation: "Gary"/"Saul" are auto-caption artifacts.'
 
 - id: q11
+  claim_group: "Controlled Disclosure and Legislative Strategy"
   added_date: '2026-05-18'
   text: |
     [00:08:42] Door nonpublic but the other point about this which is very mature and very gratifying and again I think links to what Diana was saying about this sort of collaboration and emergent way of working the legislative branch is not making themselves the antagonist of the Executive Branch the legislation
@@ -188,6 +200,7 @@ quotes:
   significance: 'Nell''s framing of the Schumer Amendment as positioning the legislative and executive branches as jointly underinformed about the UAP topic, rather than as adversaries. The framing is consistent with the Sol Foundation white paper''s Review Board mandate but expressed here in extempore form.'
 
 - id: q12
+  claim_group: "Controlled Disclosure and Legislative Strategy"
   added_date: '2026-05-18'
   text: |
     [00:23:47] Discussion where all the information is just dumped out there by an adversary or uh non-human intelligence to create societal disruption all right so this is an important important slide because if we want uh to facilitate this board doing its work then uh the barriers that

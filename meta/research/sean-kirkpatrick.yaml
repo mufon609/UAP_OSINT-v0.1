@@ -1091,6 +1091,7 @@ timeline:
     location: '[11:34]'
 quotes:
 - id: q1
+  claim_group: "AARO Selection and Appointment"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-07-20'
@@ -1103,6 +1104,7 @@ quotes:
   significance: AARO bio lead — establishes the 'asked by USD(I&S)' selection narrative + 'Dr. K' alias used by AARO staff
   context: Official Department of Defense biography released at AARO establishment
 - id: q2
+  claim_group: "New-Start Organizations Career Framing"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-07-20'
@@ -1115,6 +1117,7 @@ quotes:
   significance: First public articulation of the 'new-start organizations' career framing — five before AARO; AARO is the sixth
   context: Official Department of Defense biography released at AARO establishment
 - id: q3
+  claim_group: "New-Start Organizations Career Framing"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024'
@@ -1127,6 +1130,8 @@ quotes:
   significance: WestExec post-government biography confirms the six-new-start-organizations career framing with AARO as the sixth
   context: WestExec Advisors firm biography
 - id: q4
+  claim_group: "No Evidence of Aliens or Recovered Technology"
+  corroborated_by: [q29, q39]
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1139,6 +1144,7 @@ quotes:
   significance: The most-cited single line from Kirkpatrick's tenure. The institutional NHI-avoidance script preserved nearly verbatim by his successor Jon Kosloski
   context: Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing
 - id: q5
+  claim_group: "AARO Mission, Structure and Authorities"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1151,6 +1157,7 @@ quotes:
   significance: Kirkpatrick's rhetorical framing of AARO's mission as a hand-off operation
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q6
+  claim_group: "AARO Mission, Structure and Authorities"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1163,6 +1170,7 @@ quotes:
   significance: Kirkpatrick's description of AARO's structure including a strategic communications function as one of four functional areas
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q7
+  claim_group: "UAP Caseload and Morphology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1175,6 +1183,7 @@ quotes:
   significance: AARO case-load count at the time of the April 19 2023 hearing
   context: SASC Q&A with Senator Gillibrand
 - id: q8
+  claim_group: "UAP Caseload and Morphology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1187,6 +1196,7 @@ quotes:
   significance: Kirkpatrick's public morphology breakdown — about 52 percent of UAP reports are round or spheres
   context: SASC chart presentation following oral statement
 - id: q9
+  claim_group: "AARO Mission, Structure and Authorities"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1199,6 +1209,8 @@ quotes:
   significance: Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities
   context: SASC Q&A with Senators Rosen and Gillibrand
 - id: q10
+  claim_group: "Extraordinary Claims and Scientific Method"
+  corroborated_by: [q11]
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-04-19'
@@ -1211,6 +1223,7 @@ quotes:
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation from extraordinary evidence to extraordinary science
   context: SASC Q&A on academic community collaboration and the NASA UAP independent study
 - id: q11
+  claim_group: "Extraordinary Claims and Scientific Method"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1223,6 +1236,7 @@ quotes:
   significance: Op-ed lead — Kirkpatrick re-uses the Sagan framing as the policy-discipline anchor for his post-government published voice
   context: Scientific American op-ed 'Here's What I Learned as the U.S. Government's UFO Hunter'
 - id: q12
+  claim_group: "Departure and Self-Assessment"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1235,6 +1249,7 @@ quotes:
   significance: Kirkpatrick links his retirement decision to the public-discourse environment around UAP — a self-attributed motivation
   context: Scientific American op-ed
 - id: q13
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1247,6 +1262,7 @@ quotes:
   significance: Kirkpatrick's framing of AARO's institutional environment and the legislative-battles context
   context: Scientific American op-ed
 - id: q14
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1259,6 +1275,7 @@ quotes:
   significance: Kirkpatrick's most-quoted dismissive framing of the UAP-whistleblower public discourse — 'tall tales, fabrication and secondhand or thirdhand retellings'
   context: Scientific American op-ed
 - id: q15
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1271,6 +1288,7 @@ quotes:
   significance: 'Kirkpatrick characterizes the UAP whistleblower community as ''a small group of interconnected believers and others with possibly less than honest intentions'' — recurring framing across his post-government voice'
   context: Scientific American op-ed
 - id: q16
+  claim_group: "AATIP, Bigelow, and Skinwalker Origins"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1283,6 +1301,7 @@ quotes:
   significance: Kirkpatrick's institutional explanation of UAP-disclosure narratives as an AATIP/Bigelow outgrowth
   context: Scientific American op-ed
 - id: q17
+  claim_group: "AATIP, Bigelow, and Skinwalker Origins"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1295,6 +1314,7 @@ quotes:
   significance: Kirkpatrick's characterization of DIA's institutional finding regarding AATIP-era Skinwalker Ranch research expenditures
   context: Scientific American op-ed
 - id: q18
+  claim_group: "Historical Record Report Volume 1"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1307,6 +1327,7 @@ quotes:
   significance: Kirkpatrick on his pre-retirement signing of HRR Volume 1; the report was publicly released March 8 2024 under his successor
   context: Scientific American op-ed
 - id: q19
+  claim_group: "Historical Record Report Volume 1"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1319,6 +1340,7 @@ quotes:
   significance: Kirkpatrick's framing of UAP cover-up allegations as inadvertent or unauthorized disclosures of legitimate U.S. programs
   context: Scientific American op-ed
 - id: q20
+  claim_group: "Whistleblowers Declined AARO Engagement"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-01-19'
@@ -1331,6 +1353,7 @@ quotes:
   significance: Kirkpatrick's characterization of the AARO-whistleblower interface as failed-on-the-whistleblower-side
   context: Scientific American op-ed
 - id: q21
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-03-06'
@@ -1343,6 +1366,7 @@ quotes:
   significance: Lead of Kirkpatrick's March 6 2024 op-ed published two days before AARO HRR Volume 1 public release
   context: Scientific American op-ed 'We Need to Investigate UFOs—But Without the Distraction of Conspiracy Theories'
 - id: q22
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-12-27'
@@ -1355,6 +1379,7 @@ quotes:
   significance: Kirkpatrick distinguishes drone-panic response from UAP discourse via the framing of 'the contagion of the UFO community'
   context: Scientific American op-ed 'The U.S. Drone Panic Mirrors UFO Overreactions'
 - id: q23
+  claim_group: "Whistleblower Community Discourse"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024'
@@ -1367,6 +1392,7 @@ quotes:
   significance: Kirkpatrick's framing of UAP-disclosure advocacy as a closed-loop self-perpetuating system; Pentagon terminology applied to the public UAP-disclosure community
   context: Audible podcast In the Room with Peter Bergen Episode 38, 2024
 - id: q24
+  claim_group: "Grusch Characterization"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024'
@@ -1379,6 +1405,7 @@ quotes:
   significance: Kirkpatrick's framing of the David Grusch information-source environment as a closed core group
   context: Audible podcast In the Room with Peter Bergen Episode 38, 2024
 - id: q25
+  claim_group: "Grusch Characterization"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024'
@@ -1391,6 +1418,7 @@ quotes:
   significance: Kirkpatrick's specific characterization of David Grusch's information-receipt as misinterpretation or influence
   context: Audible podcast In the Room with Peter Bergen Episode 38, 2024
 - id: q26
+  claim_group: "Nonlinear Solutions Consulting"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-04-23'
@@ -1403,6 +1431,7 @@ quotes:
   significance: Kirkpatrick's own self-description of Nonlinear Solutions LLC's clientele and scope
   context: Progress, Potential, and Possibilities podcast (host Ira Pastor)
 - id: q27
+  claim_group: "UAP Caseload and Morphology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-05-31'
@@ -1415,6 +1444,7 @@ quotes:
   significance: Kirkpatrick acknowledged at NASA UAP IST public meeting that observations of similar UAP morphologies are recorded all over the world
   context: NASA UAP Independent Study Team first public meeting opening remarks
 - id: q28
+  claim_group: "UAP Caseload and Morphology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-05-31'
@@ -1427,6 +1457,7 @@ quotes:
   significance: Kirkpatrick references the Middle East MQ-9 spherical-object case as a public example
   context: NASA UAP Independent Study Team first public meeting opening remarks
 - id: q29
+  claim_group: "No Evidence of Aliens or Recovered Technology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -1439,6 +1470,7 @@ quotes:
   significance: Kirkpatrick's own concise response to the alien-visitation question following USD(I&S) Moultrie's longer 'holdings to date' negation. Original v1 of this entry quoted Moultrie's words ('holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that') misattributed to Kirkpatrick AND with the leading negation 'I have not seen anything in those' stripped (audit 2.2 — corrected 2026-04-29).
   context: Kirkpatrick reply at the USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO
 - id: q30
+  claim_group: "Departure and Self-Assessment"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-11-12'
@@ -1451,6 +1483,7 @@ quotes:
   significance: Kirkpatrick's departure framing — institutional accomplishment self-assessment
   context: Politico Magazine long-form interview 'Are Aliens Real? We Asked the Pentagon's Outgoing UFO Chief.'
 - id: q31
+  claim_group: "UAP Disclosure Act Revisions"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-07-17'
@@ -1463,6 +1496,7 @@ quotes:
   significance: Kirkpatrick's July 2024 institutional-defense credit-claim regarding the OUSD(I&S) November 2023 UAP Disclosure Act rewrite. Per the same source, Kirkpatrick separately confirmed in email that the institutional defense was not directed by the White House, EOP, NSC, or any higher authority — locating the institutional defense within OUSD(I&S) on its own institutional account
   context: Marik von Rennenkampff interview, cited in Douglas Johnson Mirador analysis
 - id: q32
+  claim_group: "Departure and Self-Assessment"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-11-08'
@@ -1475,6 +1509,7 @@ quotes:
   significance: Deputy Secretary of Defense Hicks's formal departure-statement characterization of Kirkpatrick's AARO service
   context: DoD departure statement by Deputy Secretary Kathleen Hicks
 - id: q33
+  claim_group: "Loeb Parent-Craft Manuscript"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-03-07'
@@ -1487,6 +1522,7 @@ quotes:
   significance: Co-authored manuscript with Loeb considering hypothetical extraterrestrial-probe-from-parent-craft scenarios — the framing notable for posture-shift vs Kirkpatrick's later 'no credible evidence' SASC testimony 6 weeks later
   context: Co-authored draft manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena'
 - id: q34
+  claim_group: "Space Domain Awareness Papers"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-11-05'
@@ -1499,6 +1535,7 @@ quotes:
   significance: Lead bullet of NSSA Moorman Center paper co-authored with Gen. (Ret.) William L. Shelton
   context: NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue'
 - id: q35
+  claim_group: "Space Domain Awareness Papers"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2025-06-26'
@@ -1511,6 +1548,7 @@ quotes:
   significance: NSSA Moorman Center paper opening framing — written four to five days after the U.S. military strike on Iranian nuclear facilities
   context: NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer'
 - id: q36
+  claim_group: "Mellon Signal Exchange"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-06-13'
@@ -1523,6 +1561,7 @@ quotes:
   significance: Kirkpatrick's verbatim characterization of Mellon's framing of the Grusch matter during the June 11-13 2023 Signal exchange released under FOIA 24-F-0266 — first surfaces Kirkpatrick's contemporaneous private posture toward both Mellon and the Grusch claims, complementing his post-July-2023 LinkedIn-and-Politico public characterization of the Grusch hearing as 'insulting'
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis)
 - id: q37
+  claim_group: "Mellon Signal Exchange"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2023-06-13'
@@ -1535,6 +1574,7 @@ quotes:
   significance: Kirkpatrick's self-described AARO role as 'defending and adjudicating' — his own contemporaneous framing of the AARO posture, surfaced via the FOIA 24-F-0266 release; previously paraphrased on this node only in Credibility Notes prose, restored here to Statements per the statements-only convention
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO
 - id: q38
+  claim_group: "AARO Selection and Appointment"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022'
@@ -1547,6 +1587,7 @@ quotes:
   significance: Kirkpatrick's recounted reaction (rendered third-person in the WSJ piece) to the AARO directorship offer in mid-2022 — first published account of his on-call response, included in the WSJ Vol II preview interviews
   context: WSJ Vol II preview interview, recounted in 'The Pentagon Disinformation That Fueled America''s UFO Mythology' (Joel Schectman + Aruna Viswanatha, 2025-06-06)
 - id: q39
+  claim_group: "No Evidence of Aliens or Recovered Technology"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2026-04-09'
@@ -1559,6 +1600,7 @@ quotes:
   significance: Kirkpatrick's most direct restatement of the no-aliens / no-legacy-program conclusion at his April 9 2026 NCAS reappearance — first public talk after roughly two years of relative silence following his March 2024 op-eds
   context: National Capital Area Skeptics Arlington VA event 'AARO; a Duality in Mission Regarding UAPs', host NCAS president Scott Snell
 - id: q40
+  claim_group: "2018 Skinwalker Ranch Briefing and Pre-AARO Involvement"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-05-08'
@@ -1571,6 +1613,7 @@ quotes:
   significance: Kirkpatrick's verbatim response to journalist Steven Greenstreet's question about the April 19 2018 SSCI/SASC Skinwalker briefing — frames himself as 'an independent outside reviewer'. Brandon Fugal's May 9 2024 X post photograph and the DoD's June 22 2024 written confirmation to Liberation Times that Kirkpatrick attended the briefing both contradict the 'outside reviewer' framing (audit 3.4 — the photograph shows Kirkpatrick at the head of the table while Fugal's team presented; Fugal's account states Kirkpatrick told attendees they 'already know' the reality of the UFO phenomenon).
   context: Greenstreet split-screen interview, transcribed in the June 12 2024 Unknown Country article
 - id: q41
+  claim_group: "2018 Skinwalker Ranch Briefing and Pre-AARO Involvement"
   added_date: '2026-05-01'
   observation_type: relayed
   statement_date: '2024-05-08'
@@ -1581,6 +1624,7 @@ quotes:
   significance: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission (q40) that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
   context: Greenstreet interview May 8 2024, paraphrased with embedded verbatim phrases in Unknown Country article June 12 2024 — Kirkpatrick denying pre-AARO UAP duties
 - id: q42
+  claim_group: "Historical Record Report Volume 1"
   added_date: '2026-05-01'
   observation_type: relayed
   statement_date: '2024-03-06'
@@ -1593,6 +1637,7 @@ quotes:
   significance: 'FOIA 24-F-0894 documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
   context: 'Wirkkala read-out summary in FOIA 24-F-0894 documenting Kirkpatrick co-presenting two AARO Historical Record Report briefings on Capitol Hill three months after his December 1, 2023 official AARO departure'
 - id: q43
+  claim_group: "No Evidence of Aliens or Recovered Technology"
   added_date: '2026-05-02'
   observation_type: relayed
   statement_date: '2023-07-28'

@@ -49,11 +49,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### Endorsement of the Grusch Disclosure
 
 > His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the past eighty years focused on reverse engineering technologies of unknown origin is fundamentally correct, as is the indisputable realization that at least some of these technologies of unknown origin derive from non-human intelligence,
 
@@ -62,6 +58,8 @@ _No direct observations documented._
 | Attributed to | The Debrief, 'Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin' by Leslie Kean and Ralph Blumenthal, June 5, 2023; Nell quoted in his capacity as the retired Army Colonel who worked with Grusch on the UAP Task Force, 2023-06-05 |
 | Source | [archived source](../sources/news/thedebrief-grusch-2023.html) |
 | Location | ¶ beginning "His assertion concerning the existence of a terrestrial arms race" |
+
+### Controlled Disclosure and Legislative Strategy
 
 > [00:00:30] Thank you thank you very much it's really a pleasure and an honor to be here and uh just the sincerest thanks to Gary and Peter and Saul for for putting this together and it's really a combination of I think Decades of work of all the people in the audience and
 
@@ -87,13 +85,24 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/nell-sol-foundation-2023-downloaded.md) |
 | Location | [23:47] |
 
-> [00:01:46] The opportunity to come in and advise uh Army uh Futures command the largest reorganization in the Army Reserve uh since uh since really 1973 on how the Army could be more effective and uh my last assignment uh was involved with the UAP task force which maybe is the most
+### Career and UAP Task Force Role
+
+> His last active-duty assignment was as Army director
+> supporting the UAP Task Force. An executive in the aerospace industry, he has held positions
+> with Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC, among others. He
+> currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dol-lar VC-backed startup focused on metamaterial analysis and design.
 
 | Field | Value |
 |---|---|
-| Attributed to | SALT iConnections NY, May 21, 2024; Nell's opening biographical remarks summarizing his Army career immediately before disclosing his UAP Task Force assignment, 2024-05-21 |
-| Source | [archived source](../sources/transcripts/nell-salt-2024-downloaded.md) |
-| Location | [01:46] |
+| Attributed to | Sol Foundation policy paper 'The UFO Enigma: A Call for US Government Disclosure', Vol. 2 No. 2 Spring 2025, About the Author section. Self-authored institutional bio, 2025-05-12 |
+| Source | [archived source](../sources/government/solfoundation-ufo-enigma-nell-2025.pdf) |
+| Location | p. 19, About the Author |
+
+**Also attested:**
+
+- SALT iConnections NY, May 21, 2024; Nell's opening biographical remarks summarizing his Army career immediately before disclosing his UAP Task Force assignment; 2024-05-21; [archived source](../sources/transcripts/nell-salt-2024-downloaded.md); [01:46]
+
+### Non-Human Intelligence Reality
 
 > [00:02:05] Aopo uh for this discussion and so Carl here's here's the million-dollar question do you believe that a higher form of non-human intelligence has visited this planet right so non-human intelligence exists non-human intelligence has been interacting with Humanity this interaction is not new and
 
@@ -111,16 +120,7 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/nell-salt-2024-downloaded.md) |
 | Location | [02:28] |
 
-> His last active-duty assignment was as Army director
-> supporting the UAP Task Force. An executive in the aerospace industry, he has held positions
-> with Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC, among others. He
-> currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dol-lar VC-backed startup focused on metamaterial analysis and design.
-
-| Field | Value |
-|---|---|
-| Attributed to | Sol Foundation policy paper 'The UFO Enigma: A Call for US Government Disclosure', Vol. 2 No. 2 Spring 2025, About the Author section. Self-authored institutional bio, 2025-05-12 |
-| Source | [archived source](../sources/government/solfoundation-ufo-enigma-nell-2025.pdf) |
-| Location | p. 19, About the Author |
+### Witness Credibility and National Security
 
 > The public must now entertain the possibili-ty that three independent witnesses who held highly sensitive positions in the US military and
 >        performed distinguished national service are either willfully prevaricating under penalty of
@@ -133,6 +133,8 @@ _No direct observations documented._
 | Attributed to | Sol Foundation policy paper, Section 2 The UAP Disclosure Act; passage discussing the July 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]) testimony by Naval aviators David Fravor ([`/people/david-fravor`]) and Ryan Graves ([`/people/ryan-graves`]) and NGA whistleblower David Grusch, 2025-05-12 |
 | Source | [archived source](../sources/government/solfoundation-ufo-enigma-nell-2025.pdf) |
 | Location | p. 7, ¶3 |
+
+### UAP Disclosure Act and Review Board
 
 > The UAP Disclosure Act would create an independent Review Board of nine distinguished
 >        citizens at the uppermost tiers of their professions to serve as that control group. Nominated

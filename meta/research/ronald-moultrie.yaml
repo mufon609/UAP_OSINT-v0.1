@@ -718,6 +718,7 @@ timeline:
     location: ¶ board appointments + biographical paragraph
 quotes:
 - id: q1
+  claim_group: "Defense Intelligence Enterprise Posture"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-03-17'
@@ -732,6 +733,7 @@ quotes:
   significance: HASC ISO opening — establishes the posture-hearing framing and addresses the subcommittee leadership directly
   context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
 - id: q2
+  claim_group: "Defense Intelligence Enterprise Posture"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-03-17'
@@ -745,6 +747,7 @@ quotes:
   significance: HASC ISO mission statement — Moultrie's self-description of the USD(I&S) integration mandate
   context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
 - id: q3
+  claim_group: "Defense Intelligence Enterprise Posture"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-03-17'
@@ -763,6 +766,7 @@ quotes:
   significance: HASC ISO 'Big Plays' framework — Moultrie's stated four-priority structure for the OUSD(I&S) program of work
   context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
 - id: q4
+  claim_group: "Defense Intelligence Enterprise Posture"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-03-17'
@@ -776,6 +780,7 @@ quotes:
   significance: HASC ISO budget framing — Moultrie cites $23.3B MIP figure for Military Intelligence Program FY22 within $715B defense budget
   context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
 - id: q5
+  claim_group: "Defense Intelligence Enterprise Posture"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-03-17'
@@ -794,6 +799,7 @@ quotes:
   significance: HASC ISO governance commitment — Moultrie cites GAO May 2021 report and outlines OUSD(I&S) oversight remediation steps
   context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
 - id: q6
+  claim_group: "UAP Terminology and Scope"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -805,6 +811,7 @@ quotes:
   significance: AARO Media Roundtable opening — Moultrie introduces the 'unidentified anomalous phenomena' terminology shift expanding UAP scope to submerged and trans-medium objects, and references his May 17 2022 HPSCI testimony as the first open UAP hearing in 50 years
   context: Joint USD(I&S)–AARO Director media roundtable
 - id: q7
+  claim_group: "No Evidence of Alien Origin"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -816,6 +823,7 @@ quotes:
   significance: AARO Media Roundtable alien-origin denial — Moultrie's foundational on-record DoD denial of alien origin for UAP-observed objects, citing personal communications with the Secretary and Deputy Secretary about openness, objectivity, and transparency
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q8
+  claim_group: "No Evidence of Alien Origin"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -827,6 +835,7 @@ quotes:
   significance: AARO Media Roundtable 'holdings' boundary — Moultrie establishes the 'holdings I have seen' rhetorical boundary that limits AARO claims to documents and memos rather than physical artifacts; references compartmented programs, predecessor organizations, and pre-DoD legacy entities; this boundary persists as institutional posture across subsequent AARO leadership
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A on alien visitation
 - id: q9
+  claim_group: "UAP Terminology and Scope"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -838,6 +847,7 @@ quotes:
   significance: AARO Media Roundtable scope statement — Moultrie's articulation of the 'all-domain' framing covering air, ground, sea, and space, anchoring AARO's mandate in the OUSD(I&S) institutional security mission
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q10
+  claim_group: "UAP Threat Framing"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2022-12-16'
@@ -849,6 +859,7 @@ quotes:
   significance: AARO Media Roundtable threat-framing — Moultrie's safety-of-personnel framing under which any unauthorized system in restricted airspace constitutes a potential threat regardless of origin or characterization
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q11
+  claim_group: "Post-Government Roles"
   added_date: '2026-04-29'
   observation_type: relayed
   statement_date: '2024-12-03'
@@ -860,6 +871,7 @@ quotes:
   significance: LeoLabs Board appointment quote — Moultrie's public statement on accepting the Outside Director role nine months after his February 29 2024 USD(I&S) departure
   context: LeoLabs press release announcing Moultrie's Board of Directors appointment
 - id: q12
+  claim_group: "Post-Government Roles"
   added_date: '2026-04-29'
   observation_type: relayed
   text: |
@@ -870,6 +882,7 @@ quotes:
   significance: INSA bio summary — Moultrie's post-government public-bio framing of his USD(I&S) tenure ($30B portfolio + 225,000 personnel)
   context: Intelligence and National Security Alliance public profile page (post-government)
 - id: q13
+  claim_group: "Post-Government Roles"
   added_date: '2026-04-29'
   observation_type: relayed
   text: |

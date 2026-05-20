@@ -41,6 +41,7 @@ credibility_notes: 'Green holds the National Intelligence Medal and is a Fellow 
 quotes:
 
 - id: q1
+  claim_group: "CIA Remote Viewing Program"
   added_date: '2026-05-17'
   text: |
     H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
@@ -53,6 +54,7 @@ quotes:
   significance: 'CIA primary-source attestation of K. Green at OSI as the recipient of Puthoff''s June 17, 1972 letter from Stanford Research Institute — the earliest archived attestation of Green''s OSI role in the SRI-CIA parapsychology engagement. Source carries OCR artifact "''1:7," for "17," — preserved as-source; see naming_quirks nq1.'
 
 - id: q2
+  claim_group: "CIA Remote Viewing Program"
   added_date: '2026-05-17'
   text: |
     T 1(. Green; LSD/OSI; Memorandum for the Rerord; Subject: Verification of Remote Viewing
@@ -65,6 +67,7 @@ quotes:
   significance: 'CIA primary-source attestation of K. Green at LSD/OSI (Life Sciences Division of OSI) as the author of a 9 November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at Stanford Research Institute. Combined with q1, places Green at OSI in the SRI-CIA parapsychology engagement from at least June 1972 through November 1973. Source carries OCR artifacts: "T 1(." for "K." (line wrap collapsed onto preceding line in extract), "Rerord" for "Record"; preserved as-source — see naming_quirks nq2, nq3.'
 
 - id: q3
+  claim_group: "Post-CIA Academic and Medical Career"
   added_date: '2026-05-17'
   text: |
     Christopher (Kit) Green, M.D., Ph.D. is an Assistant Dean (Asia Pacific) of the Wayne State School of Medicine in Detroit, Michigan. He holds clinical appointments as Professor in the Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences of the Harper University Hospital, Detroit Medical Center. He is also Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science, of the Chinese Academy of Sciences. He maintains an active clinical private medical practice in forensic medicine and neuroimaging, neurogenomics, and neurotoxicology. Kit’s specialty includes the determination of morbidity and mortality of neurological and psychiatric disease due to unsuspected etiology. 20% of his medical practice is pro bono related to the forensic investigation and diagnosis of patients injured by anomalous events.
@@ -76,6 +79,7 @@ quotes:
   significance: 'IRVA self-curated biographical attestation of Green''s current academic positions, clinical appointments, medical specialties, and the pro bono "forensic investigation and diagnosis of patients injured by anomalous events" practice — the latter the only attested anchor to anomalous-phenomena clinical work in the archived corpus.'
 
 - id: q4
+  claim_group: "CIA Career and Tenure"
   added_date: '2026-05-17'
   text: |
     His career began with the US Federal Government in 1969 as a Senior Division Analyst for neurosciences at the Central Intelligence Agency. In the mid-’70s he was the first analyst and program manager for Remote Viewing research. He became a Branch Chief, Deputy Division Director, and Assistant National Intelligence Officer for Science and Technology. He joined General Motors Corporation in 1985 as head of Life, Materials and Environmental Sciences, and later became Executive Director of Technology Intelligence, and Chief Technology Officer for GM Asia Pacific Operations.
@@ -87,6 +91,8 @@ quotes:
   significance: 'IRVA self-curated biographical attestation of Green''s CIA career progression: 1969 Senior Division Analyst for neurosciences, mid-1970s first analyst and program manager for Remote Viewing research, Branch Chief, Deputy Division Director, Assistant National Intelligence Officer for Science and Technology. The "first analyst and program manager for Remote Viewing research" framing is self-attested on the IRVA member-organization page; no independent CIA primary source in the archived corpus separately confirms the "first" characterization (Kress 1977 q1 and q2 attest Green at OSI at the program''s 1972-1973 inception but do not characterize him as "first" program manager).'
 
 - id: q5
+  claim_group: "CIA Career and Tenure"
+  corroborated_by: [q4]
   added_date: '2026-05-17'
   text: |
     Christopher C. Green, Chair, is the assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China. He is also a clinical fellow in neuroimaging/MRI in the Department of Diagnostic Radiology and the Department of Psychiatry and Behavioral Neurosciences of the SOM and the Detroit Medical Center (DMC). His medical specialties are brain imaging, forensic medicine and toxicology, and neurophysiology, and his personal medical practice is in the differential diagnoses of neurodegenerative disease. He has served and continues to serve on many government advisory groups and private sector corporate boards of directors. Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC. From 1985 through 2004 he was executive director, Global Technology Policy, and chief technology officer for General Motors’ Asia-Pacific Operations. His career at General Motors included positions as head, Biomedical Sciences Research, and executive director, General Motors Research Laboratory for Materials and Environmental Sciences. His distinguished career with the CIA extended from 1969 to 1985 as a senior division analyst and assistant national intelligence officer for science and technology. His Ph.D. is from the University of Colorado Medical School in neurophysiology, and his M.D. is from the Autonomous City University in El Paso, Texas/Monterey, Mexico, with honors. He also holds the National Intelligence Medal and is a fellow in the American Academy of Forensic Sciences. Dr. Green is a current member of the National Research Council’s Standing Committee on Technology Insight—Gauge, Evaluate, and Review (TIGER).
@@ -99,6 +105,7 @@ quotes:
   significance: 'NRC committee biographical sketch of Christopher C. Green as the committee''s Chair, attesting CIA career 1969-1985, General Motors 1985-2004 (slight differing chronology from IRVA which attests Wayne State faculty membership 2002 onward — the two attestations are consistent if Green transitioned from GM to Wayne State during the 2002-2004 overlap), Ph.D. neurophysiology University of Colorado Medical School, M.D. Autonomous City University El Paso Texas / Monterey Mexico, and his TIGER standing-committee membership. NRC source carries institutional weight comparable to a government-document attestation; the bio was authored under NRC editorial review.'
 
 - id: q6
+  claim_group: "Post-CIA Academic and Medical Career"
   added_date: '2026-05-17'
   text: |
     Kit returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002. Since 1985 he continuously has also served on over a dozen Federal science boards and positions, including as Chair of the Board on Army Science and Technology, and as a founder of the National Academy of Sciences/ National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER).
@@ -110,6 +117,7 @@ quotes:
   significance: 'IRVA biographical attestation that Green returned to full-time medicine and joined Wayne State faculty in 2002 and that since 1985 he has continuously served on over a dozen Federal science boards, including Chair of the Board on Army Science and Technology and founder of the NRC TIGER standing committee. Anchors his Wayne State tenure start at 2002.'
 
 - id: q7
+  claim_group: "Skinwalker Ranch and AAWSAP"
   added_date: '2026-05-17'
   text: |
     Though Fugal’s pursuit of breakthroughs in advanced physics was not a success, there was a silver lining. Several scientists who were brought in to consult on the project, namely Dr. Hal Puthoff and Dr. Christopher Green, were also involved in Bigelow’s DIA project. They became friends. Even after the project was shut down in 2014, Fugal stayed in touch with these scientists.
@@ -121,6 +129,7 @@ quotes:
   significance: 'Vice attestation that Christopher Green was brought in alongside Hal Puthoff to consult on Brandon Fugal''s post-2016 Skinwalker Ranch project, and that Green and Puthoff were "also involved in Bigelow''s DIA project" (the Advanced Aerospace Weapon System Applications Program / AAWSAP). Friendships with Fugal post-shutdown attested. The specific scope of Green''s AAWSAP involvement is not detailed in this article beyond the consultancy framing.'
 
 - id: q8
+  claim_group: "CIA Career and Tenure"
   added_date: '2026-05-17'
   text: |
     The investigation into the assassination of Bulgarian dissident Georgi Markov, murdered with a poison-filled pellet shot into his leg (possibly with a converted “umbrella gun”) at a bus stop in Britain in 1978, was the most unusual and significant case that medical doctor and forensic specialist Christopher C. Green participated in during his twenty year career as an investigative officer with the Central Intelligence Agency.
@@ -132,6 +141,7 @@ quotes:
   significance: 'PBS narrator attestation that Green had "a twenty year career as an investigative officer with the Central Intelligence Agency" — a longer span than the 1969-1985 (16-year) duration the NCBI bio (q5) attests. The two attestations differ on duration and are preserved separately; the longer span may reflect Green''s continued consulting role with the CIA after his 1985 GM departure per the PBS narrator''s separate attestation that "he still serves as a consultant" with the CIA. Anchors his public CIA-identity disclosure to the PBS broadcast (2014 publication date on the interview page; the source episode aired earlier).'
 
 - id: q9
+  claim_group: "Markov Forensic Investigation"
   added_date: '2026-05-17'
   text: |
     we had pretty much all of the story from a forensic point of view. We had the body, the thing in the body that he was hit with — the pellet — and the stuff from the pellet. We knew that the material used to kill him, ricin, had been under development by a foreign service linked to the incident. We also knew that he had been a target of assassination attempts in the past. The story of him being a target was very well known. So we had information on the means, motive, and the opportunity.
@@ -143,6 +153,7 @@ quotes:
   significance: 'Green first-person attestation on the forensic shape of the Markov investigation: complete body, pellet, ricin chain, foreign-service linkage, and prior assassination-attempt history. Green identifies the CIA-side forensic case as the most complete he encountered in his career.'
 
 - id: q10
+  claim_group: "Markov Forensic Investigation"
   added_date: '2026-05-17'
   text: |
     Typically, when someone dies who is involved in an intelligence issue or national policy issue, you have a lot of paranoia , gossip, and rumor, but very little information.
@@ -154,6 +165,7 @@ quotes:
   significance: 'Green first-person attestation on the typical epistemic shape of intelligence-related death investigations — paranoia, gossip, and rumor with little information. Speaks to his methodological framing of forensic intelligence work.'
 
 - id: q11
+  claim_group: "Markov Forensic Investigation"
   added_date: '2026-05-17'
   text: |
     Most people who say that a foreign power is conspiring to kill them are scatterbrained and delusional
