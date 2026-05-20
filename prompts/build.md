@@ -458,31 +458,32 @@ per-entry synthesis content notes: `ownership_timeline.note`,
 significant word in a scoped prose field that doesn't appear in the
 referenced primary-source text.
 
-**Validator behavior — impartial reporter.** The check surfaces every
-unmatched token as a warning. The validator makes no classification
-about whether an unmatched token is "legitimate synthesis" or "real
-drift" — that's the contributor's call per field. Errors fire only
-at 100% vocabulary divergence (complete mismatch — prose shares no
-significant words with the source it claims to draw on), a
-mathematical floor on pure fabrication. Below 100%, the validator
-reports without judgment.
+**Validator behavior — error per ungrounded token.** The check
+surfaces every unmatched significant token as an ERROR (commit-
+blocking). Token-level presence/absence is a mathematical floor:
+synthesis prose carries no licence to introduce vocabulary the cited
+sources don't attest, applied uniformly across every scoped field and
+node type. There is no warn tier and no "below threshold" tolerance —
+an ungrounded token is a defect, resolved by the contributor, not a
+per-case judgment the validator defers.
 
-**Contributor policy — resolve every warning structurally** (per
-durable memory `feedback_prose_drift_warnings_must_resolve.md`). Each
-warning requires real resolution, not synthesis-acceptance:
+**Contributor policy — resolve every flagged token structurally** (per
+durable memory `feedback_prose_drift_warnings_must_resolve.md`). The
+gate is an error, so each flagged token must be resolved before the
+artifact passes — not synthesis-acceptance:
 
 - **Free-prose synthesis fields** (`description`, `background`,
-  `top_relevance`, `credibility_notes`) — zero warnings is the target.
-  Resolve each unmatched token by either (a) rewriting to use source
-  vocabulary exactly, or (b) capturing the source-vs-prose variance
-  as structured evidentiary data (naming_quirks, rumors, a timeline
-  entry, a new quote). Rationalizing warnings as "legitimate synthesis
-  vocabulary" defeats the check.
+  `top_relevance`, `credibility_notes`) — zero ungrounded tokens, a
+  hard gate. Resolve each unmatched token by either (a) rewriting to
+  use source vocabulary exactly, or (b) capturing the source-vs-prose
+  variance as structured evidentiary data (naming_quirks, rumors, a
+  timeline entry, a new quote). Rationalizing a flagged token as
+  "legitimate synthesis vocabulary" is exactly what the error blocks.
 - **Per-entry synthesis content notes** — `ownership_timeline.note`,
   `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
   `media_versioning.note`, and `vouching_chain.attestation`. These
   are multi-sentence narrative / analytical prose about an event /
-  transaction / role / derivation; zero warnings is the target, same
+  transaction / role / derivation; zero ungrounded tokens, same
   resolution paths as free-prose fields.
 - **Structural labels + cross-reference descriptor notes** are NOT
   scanned by the prose-drift check. This includes role titles, short relationship
@@ -494,7 +495,7 @@ warning requires real resolution, not synthesis-acceptance:
   source labels and meta-descriptors. Fabrication in these cells is
   caught by Phase III semantic review, not the prose-drift check.
 
-Common categories of warnings and how they resolve:
+Common categories of flagged tokens and how they resolve:
 
 - **Word-form variants** (source "prepare" vs prose "preparing";
   source "flown" vs prose "flying") → rewrite to source morphology
@@ -527,9 +528,9 @@ Common categories of warnings and how they resolve:
   the prose-drift check only; verbatim-quote text still needs to
   match the source character byte-for-byte.
 
-For every warning, ask: *does this unmatched token introduce a fact
-or premise the source doesn't attest?* If yes, the prose field needs
-tightening. If no — the resolution is still to rewrite to source
+For every flagged token, ask: *does this unmatched token introduce a
+fact or premise the source doesn't attest?* If yes, the prose field
+needs tightening. If no — the resolution is still to rewrite to source
 vocabulary on free-prose fields (or document the variance
 structurally).
 

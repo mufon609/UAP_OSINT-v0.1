@@ -405,7 +405,7 @@ def main():
     parser.add_argument(
         "--verbose", action="store_true",
         help="Print full structured payload (e.g., the complete unmatched-"
-             "token list on prose-drift warnings) inline below each issue. "
+             "token list on prose-drift errors) inline below each issue. "
              "Default keeps the truncated terminal-friendly preview.")
     args = parser.parse_args()
 

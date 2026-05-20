@@ -600,16 +600,16 @@ quote is verbatim-clean.
 
 `validate-research.py`'s prose-drift check verifies
 that significant words in these prose fields appear in the referenced
-primary-source text. The check is an impartial reporter — it flags
-every unmatched token as a warning without classifying whether the
-drift is "legitimate synthesis" or "real drift". The contributor
-reviews each warning and asks: *does this unmatched token introduce
-a fact or premise the source doesn't attest?* Errors fire only at
-100% vocabulary divergence (complete mismatch — prose shares no
-significant words with the source it claims to draw on), a
-mathematical floor on pure fabrication rather than a stylistic
-threshold. Below 100%, the validator makes no judgment; careful
-contributor review is the quality gate.
+primary-source text. Every unmatched token is an ERROR (commit-
+blocking): synthesis prose carries no licence to introduce vocabulary
+the cited sources don't attest, so token-level presence/absence is a
+mathematical floor applied uniformly to every scoped field and node
+type. The contributor resolves each flagged token by asking — *does
+this token introduce a fact or premise the source doesn't attest?* —
+and then either rewriting to source vocabulary or relocating the
+variance to a structured evidentiary field (below). There is no warn
+tier and no "below threshold" tolerance: an ungrounded token in
+synthesis prose is a defect, not a per-case judgment.
 
 The contributor review also asks a second question: *does the prose
 read as natural English?* Iterating against `check-vocab.py` until
@@ -630,10 +630,11 @@ reference descriptor notes (`corroboration_items.note`,
 on those surfaces; fabrication there is Phase III semantic-review
 territory.
 
-**Zero warnings on scoped fields is the target.** Acknowledging a
-warning as "legitimate synthesis vocabulary" and leaving it in place
-defeats the check — converts an evidentiary precision tool into a
-stylistic nag. Every warning drives to one of two outcomes:
+**Zero ungrounded tokens on scoped fields — a hard gate, not a
+target.** Calling a flagged token "legitimate synthesis vocabulary"
+and leaving it in place is exactly the rationalization the error
+blocks; an evidentiary precision tool is not a stylistic nag. Every
+flagged token drives to one of two outcomes:
 
 - The prose is rewritten to use source vocabulary exactly, OR
 - The source-vs-prose variance is captured as structured evidentiary
@@ -641,7 +642,7 @@ stylistic nag. Every warning drives to one of two outcomes:
   row, a `quotes[]` entry — pick the surface that carries the
   variance's evidentiary meaning).
 
-**Resolution paths for common warning shapes:**
+**Resolution paths for common error shapes:**
 
 1. **Word-form variant** (`preparing` vs source `prepare`,
    `staying` vs source `stay`, `flying` vs source `flown`):
@@ -692,10 +693,15 @@ stylistic nag. Every warning drives to one of two outcomes:
    column entry, structural descriptor) that shouldn't appear in
    free prose anyway.
 
-A warning remaining on a clean artifact after this review is a
-deliberate, documented decision — recorded in the relevant
-`naming_quirks` note, `rumors` entry, or the commit message — not
-an unwritten "contributor reviewed and accepted" assumption.
+There is no "documented residual" exemption: a flagged token cannot
+remain on the artifact. It is resolved at the root — reworded, or
+relocated to a structured evidentiary field whose own source
+attribution carries the variance (a `naming_quirks` entry for a
+source-form vs canonical-form name, a `rumors[]` entry for an
+uncorroborated claim, and so on). A token that is absent only because
+of an extraction artifact (e.g. an HTML element-boundary
+concatenation) is fixed at the extraction layer, never accepted as a
+standing error. See BACKLOG C33.
 
 ### Density is source-driven
 
@@ -856,24 +862,28 @@ pragmatism is the failure mode this rule exists to prevent.
 
 Favored shapes:
 
-- **Impartial reporting.** Warn on each signal; let the contributor
-  judge per-case.
-- **Mathematical floors.** 100% divergence, 0% match, presence /
-  absence — these are observations, not judgments. The prose-drift
-  check's error threshold lives at 100% vocabulary divergence (no
-  shared significant tokens with source) precisely because that's
-  a mathematical floor on pure fabrication, not a stylistic
-  threshold.
-- **Single uniform rules across field types.** When a rule fires
-  differently on different fields, the validator has implicitly
-  categorized the fields; that categorization IS the bias.
+- **Presence/absence floors.** 100% divergence, 0% match, a token
+  present-or-absent in source — these are observations, not stylistic
+  judgments. The prose-drift check errors on per-token presence /
+  absence: every significant token must appear in the referenced
+  source, and any that doesn't is a defect — the purest uniform floor,
+  binary and per token, with no aggregate percentage in between.
+- **Single uniform rules across field types — including severity.**
+  When a rule fires differently on different fields, the validator has
+  implicitly categorized the fields; that categorization IS the bias.
+  This extends to severity: a signal that is definitionally a defect
+  (an ungrounded token in synthesis prose) is an ERROR on every scoped
+  field and node type — not a warning on some and an error on others.
+  Warn level remains appropriate only where the signal is a genuine
+  per-case judgment the contributor must weigh, not a defect.
 
 Disfavored shapes:
 
 - Differentiated thresholds calibrated from "expected noise levels"
   observed in specific fields.
-- Error cutoffs based on percentage thresholds below 100% — those
-  are stylistic judgments.
+- Aggregate percentage cutoffs ("tolerate up to N% unmatched") — those
+  smuggle a stylistic tolerance in as a number; the grounding floor is
+  per-token presence/absence, not a percentage.
 - Code or doc language like "synthesis-heavy fields tolerate higher
   unmatched rates" — that's the categorization, made explicit.
 
@@ -883,9 +893,9 @@ reduction technique to "fields we expect to be synthesis-heavy"
 reintroduces the category judgment in a different layer.
 
 This is the validator-side discipline. The contributor-side
-discipline (resolve every warning structurally, don't rationalize
-them away) lives in "Prose-drift discipline on synthesis surfaces"
-above. The two pair: impartial signal → rigorous response.
+discipline (resolve every flagged token structurally, don't
+rationalize it away) lives in "Prose-drift discipline on synthesis
+surfaces" above. The two pair: uniform gate → rigorous resolution.
 
 ---
 

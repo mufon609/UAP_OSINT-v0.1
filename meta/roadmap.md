@@ -74,6 +74,31 @@ End state: cross-references are carried solely by `[`/path`]` body
 wraps (broken-link registry + Associated Nodes); no contributor-prose
 entity layer remains.
 
+### C37 — Uniform error-level grounding gate for synthesis prose  ✅ SHIPPED 2026-05-20
+
+Resolved the prose-drift severity asymmetry C37 flagged: person
+synthesis prose (`background` / `top_relevance` / `credibility_notes`)
+was checked only at WARN level, while document `## Description` prose
+got `description_token_drift` at ERROR level — same grounding-drift
+class, different severity by node type. Collapsed it to a single
+severity — **Error** — per ungrounded token, uniform across all types:
+
+- `prose_drift` flipped from warn-then-error-at-100% to **error per
+  unmatched token** (`scripts/checks/prose_drift.py`); covers every
+  scoped synthesis field on all eight content types.
+- `description_token_drift` kept as a separate algorithm at the same
+  severity — the two are deliberately distinct (all-content-words vs.
+  proper-noun / designator / number extraction), per the docstring's
+  no-merge caution.
+- `meta/conventions.md` rewritten to match ("Prose-drift discipline" +
+  "Validator design — impartial reporting"): a hard per-token error
+  gate, no warn tier, no documented-residual exemption.
+  `prompts/build.md` + `prompts/audit.md` swept.
+
+End state: an ungrounded token in synthesis prose is a commit-blocking
+defect on every node type. The corpus was at 0 prose-drift warnings at
+flip time, so the change shipped with 0 new errors. BACKLOG C37 retired.
+
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
 Blocked on: multiple artifacts with overlapping evidentiary claims.

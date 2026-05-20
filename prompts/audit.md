@@ -64,15 +64,16 @@ trigger an anti-bot challenge that fuzzy-timestamp URLs bypass.
 3. **Prose-drift check** — for all artifact types (document, person,
    event, transcript, media, organization, location, finding,
    investigation), re-run `validate-research.py {artifact}` and work
-   through the prose-drift warning set. Under the durable policy
+   through the prose-drift error set. Under the durable policy
    (`feedback_prose_drift_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
      `top_relevance`, `credibility_notes`) and **per-entry synthesis
      content notes** (`ownership_timeline.note`,
      `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
      `media_versioning.note`, `vouching_chain.attestation`) — zero
-     warnings is the target. Each unmatched token either resolves to
-     source-matched prose OR gets captured as structured evidentiary
+     ungrounded tokens, a hard error gate. Each unmatched token either
+     resolves to source-matched prose OR gets captured as structured
+     evidentiary
      data (naming quirk, rumor, timeline entry, or a new quote).
    - **Structural labels + cross-reference descriptor notes** are not
      scanned by the prose-drift check. Role titles, short relationship

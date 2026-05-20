@@ -426,7 +426,7 @@ extracted text but shouldn't gate verbatim verification)?
 
 **2026-05-20 — second presentation-noise class found and fixed at the
 extraction layer (HTML element-boundary concatenation).** While driving
-`meta/research/luis-elizondo.yaml` to zero prose-drift warnings, the NYT
+`meta/research/luis-elizondo.yaml` to zero prose-drift findings, the NYT
 2017 source surfaced the token `KEANDEC`: the byline surname "Leslie
 Kean" (`<span>`) glued to the dateline "Dec. 16, 2017" (`<time>`) because
 `clean_html_for_text` empty-stripped `<time>` — it sat in
@@ -512,68 +512,3 @@ truth.
 
 **Blocks:** none.
 **Blocked by:** none.
-
-### C37 — Person synthesis prose has no error-level drift gate
-
-The two drift checks split coverage unevenly across node types, and
-the heaviest-synthesis type lands on the lighter side.
-
-- **Description-bearing nodes** (document / organization / event /
-  transcript / media / location / finding) carry a `## Description`
-  section checked by `scripts/checks/description_token_drift.py`:
-  **ERROR per unmatched token**, with dedicated extraction of
-  proper nouns, hyphen/slash designators (`VFA-41`, `F/A-18F`),
-  numbers, and double-quoted strings, grounded against source text +
-  `context_extrinsic` + `document_intrinsic` + `naming_quirks[].canonical`.
-- **Person nodes** carry no `## Description` (by design — `background`
-  / `top_relevance` / `credibility_notes` are the synthesis surface).
-  Those three fields are checked only by `scripts/checks/prose_drift.py`:
-  **WARN per unmatched token** (ERROR only at 100% vocabulary
-  divergence), with the lowercase content-word tokenizer (no
-  dedicated designator / quoted-string handling), grounded against
-  `primary_sources[]` text only.
-
-The result is an inversion of rigor. Person synthesis prose is the
-largest free-prose surface in the repo — `REFACTOR/CLAUDE.md` names it
-the cause of the one-new-person-node-per-session rule — yet a
-fabricated name, date, or unit designator in a person's Background is
-a warning a contributor may pass over, while the same fabrication in a
-document's Description is a commit block.
-
-**Open question.** Should person synthesis prose get an error-level
-proper-noun / designator / number / quoted-string drift gate
-equivalent to `description_token_drift`, and if so what is its
-grounding pool? The two checks are deliberately separate algorithms
-(the `description_token_drift` docstring warns against dedup
-refactors), so this is an *extension* question — either generalize the
-error-level check to a person-scoped section set, or add a person-prose
-sibling check — not a merge.
-
-**Surfaces an investigation has to walk:**
-
-- `scripts/checks/description_token_drift.py` — the error-level
-  algorithm + grounding pool; whether it generalizes beyond the
-  `## Description` H2 or wants a person-scoped sibling.
-- `scripts/checks/prose_drift.py` — the current person-prose check;
-  whether it stays warn-level for lowercase content words while a new
-  check handles the proper-noun classes, or whether severity is
-  reconsidered.
-- `meta/schema.yaml` person `prose_drift_fields`
-  (`background` / `top_relevance` / `credibility_notes`) — the
-  surfaces in scope.
-- `meta/conventions.md` "Validator design — impartial reporting" — any
-  new error-level gate must hold the mathematical-floor discipline
-  (no category-tuned thresholds).
-- Grounding-pool composition: whether person prose should ground
-  against `document_intrinsic` identity facts + `naming_quirks[].canonical`
-  (as `description_token_drift` does) so legitimate canonical-form names
-  don't false-positive.
-
-**Note (orthogonal).** `entities_referenced` has been retired, so
-entity names no longer feed any drift gate. Person nodes still render
-no `## Description`, so they still have no error-level drift gate. If
-C37 adds one, its grounding pool is C37's to define — named entities
-remain `[`/path`]` body wraps regardless.
-
-**Blocks:** none.
-**Blocked by:** none. (Independent of the A2 chain.)

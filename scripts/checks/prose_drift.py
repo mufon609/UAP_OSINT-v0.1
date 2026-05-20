@@ -5,14 +5,16 @@ primary-source text. Tokenizes each prose field into significant
 words (lowercase, ≥3 chars, non-stopword) and verifies each token
 appears in the referenced source(s).
 
-Impartial reporter — surfaces drift; the contributor judges each
-case:
-  - WARN on every unmatched significant token (any field, any count).
-  - ERROR only when 100% of a field's significant tokens are absent
-    from source. 100% divergence is a mathematical observation (no
-    shared vocabulary with the source the field claims to draw on),
-    not a stylistic threshold. Below 100%, no classification — just
-    report.
+Grounding gate — every significant token in synthesis prose must
+appear in the referenced primary-source text:
+  - ERROR on every unmatched significant token (any field, any count).
+    Token-level presence/absence is a mathematical floor: synthesis
+    prose carries no licence to introduce vocabulary the cited sources
+    don't attest. Resolution is to rewrite to source vocabulary or
+    relocate the variance to a structured evidentiary field
+    (naming_quirks, rumors, timeline, quotes) — never a standing
+    residual. See conventions.md "Prose-drift discipline on synthesis
+    surfaces".
 
 Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
 (``description``, ``background``, ``top_relevance``, ``credibility_notes``)
@@ -108,11 +110,14 @@ def _drift_scope(schema, target_type):
     return top_level, per_entry
 
 
-def _judge_drift(rel, location, prose_tokens, unmatched):
-    """Impartial drift reporter. Warns on every unmatched significant
-    token; errors only when 100% of the field's significant tokens are
-    absent from source (complete vocabulary divergence — mathematical,
-    not stylistic). Below 100%, no classification — contributor reviews.
+def _judge_drift(rel, location, unmatched):
+    """Grounding gate. Every significant token absent from the referenced
+    source is an ERROR — synthesis prose may not introduce vocabulary the
+    cited sources don't attest. Token-level presence/absence is the
+    mathematical floor (applied uniformly across every scoped field and
+    node type). No warn tier and no standing residual: each flagged token
+    is resolved by rewriting to source vocabulary or relocating the
+    variance to a structured evidentiary field.
     """
     if not unmatched:
         return
@@ -120,24 +125,14 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
     preview = ", ".join(full_tokens[:8])
     if len(unmatched) > 8:
         preview += f", … (+{len(unmatched) - 8} more — pass --verbose for full list)"
-    if prose_tokens and len(unmatched) == len(prose_tokens):
-        yield Issue(
-            rel, "error",
-            f"{location}: 100% of significant tokens "
-            f"({len(unmatched)}/{len(prose_tokens)}) absent from source "
-            f"— prose has no shared vocabulary with the source it claims "
-            f"to draw on. Unmatched: {preview}",
-            check_name=CHECK_NAME,
-            tokens=full_tokens,
-        )
-    else:
-        yield Issue(
-            rel, "warn",
-            f"{location}: {len(unmatched)} significant token(s) not in "
-            f"source (prose-drift check — contributor review): {preview}",
-            check_name=CHECK_NAME,
-            tokens=full_tokens,
-        )
+    yield Issue(
+        rel, "error",
+        f"{location}: {len(unmatched)} significant token(s) not in source "
+        f"(prose-drift — rewrite to source vocabulary or relocate the "
+        f"variance to a structured field): {preview}",
+        check_name=CHECK_NAME,
+        tokens=full_tokens,
+    )
 
 
 def check(ctx):
@@ -175,7 +170,7 @@ def check(ctx):
         if not prose_tokens:
             continue
         unmatched = prose_tokens - top_level_pool
-        yield from _judge_drift(ctx.rel, field, prose_tokens, unmatched)
+        yield from _judge_drift(ctx.rel, field, unmatched)
 
     for list_key, entry_field in entry_fields:
         for i, entry in enumerate(entries(ctx.data, list_key)):
@@ -189,5 +184,5 @@ def check(ctx):
             yield from _judge_drift(
                 ctx.rel,
                 f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
-                prose_tokens, unmatched,
+                unmatched,
             )
