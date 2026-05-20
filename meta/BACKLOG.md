@@ -78,9 +78,6 @@ settled; implementation co-lands with A2):**
 
 - **C30** — source-prep orchestrator (fully retired; can ship as
   interim orchestrator if A2 stays roadmap-scoped)
-- **C5** — auto-generate per-type section list in prompts/build.md
-  (retired if A2 replaces the monolithic narrative with per-agent
-  prompts)
 - **C31** — preflight discipline audit (reduced; manual-invocation
   case stays for tools called outside the agent chain)
 - **C32** — research-scaffold placeholder shape (narrows to
@@ -451,49 +448,6 @@ separate touch.
 Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
-
-### C5 — Auto-generate the per-type section list in `prompts/build.md`
-
-`prompts/build.md` Phase II Step 1 enumerates the per-type rendered
-section list (~148 lines, `prompts/build.md:594-741`) as `## SectionName
-— from artifact_field` entries — Identity, Background, `{topic_display_name}`
-Relevance, Affiliations, Statements, Timeline, Relationships,
-Corroboration, Credibility Notes, Associated Nodes for person/eyewitness,
-and so on across every type + archetype/kind. This duplicates information
-that already lives in two places:
-
-- `meta/schema.yaml::types.{T}.required_sections` (and per-archetype /
-  per-kind sub-blocks) — the canonical section list
-- `scripts/build/renderers/{T}.py` — the canonical section → artifact-
-  field dispatch
-
-The duplication means the prompt drifts whenever a section is added or
-renamed at the source-of-truth layers. It also still carries the literal
-"UAP Relevance" / "UAP-Scope Activity" examples — accurate documentation
-of *this instance's* rendered output, but a fork would need to edit the
-prompt as a separate step from `prompts/fork-init.md`'s `display_name`
-swap.
-
-Fix shape: wrap the per-type section enumeration in `<!-- BUILD-SPEC-START -->`
-/ `<!-- BUILD-SPEC-END -->` markers (analogous to CLAUDE.md's build-state
-auto-block), and add a generator that walks schema's `required_sections`
-+ per-renderer source-field mapping and emits the enumeration. The
-generator routes section names through `topic_substitute()` so the
-prompt's example headers always reflect the current `display_name`.
-Add `build-md-spec.py --check` as a new pre-commit gate (parallel to
-`build-state.py --check`).
-
-The narrative + discipline portions of `prompts/build.md` stay hand-
-written. Only the dispatch-table enumeration auto-generates.
-
-Reduces duplication between governance docs and source-of-truth
-layers (schema / artifact). Not strictly correctness-required as a
-one-time fix, but closes the documentation-drift surface for forks
-and schema evolution.
-
-**A2 effect:** retired in full when A2 replaces the monolithic
-`prompts/build.md` narrative with per-agent prompts. Until A2
-ships, this remains a tractable standalone fix.
 
 ### C30 — Source-prep orchestrator: single command for the full caption + video chain
 

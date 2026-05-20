@@ -729,6 +729,47 @@ This:
      Node Link`. Heterogeneous `entity_path` (people / organizations
      / events / media / adjacent locations / findings).
 
+   **Finding nodes:**
+   - `## Pattern Statement` — from `pattern_statement` prose field
+     (the multi-source pattern the finding documents)
+   - `## Description` — from `description`
+   - `## Evidence` — from `evidence[]` (verbatim attestations from
+     constituent sources, with per-row attestation_tier in the
+     verification block; sorted chronologically)
+   - `## What the Record Establishes` — from `establishes[]`
+     (numbered list of conclusions the convergent evidence supports)
+   - `## What the Record Doesn't Establish` — from `does_not_establish[]`
+     (numbered list of related claims the evidence does NOT support;
+     the negative-space discipline)
+   - **Conditional, populated artifact content only:**
+     `## Apparent Contradictions` (from `contradictions[]`, requires
+     quote attribution); `## Timeline` (from `timeline[]`,
+     chronological); `## Source-Form Notes` (from `naming_quirks[]`
+     with `resolution: preserve-as-sic-in-quotes`)
+
+   **Investigation nodes:**
+   - `## Question` — from frontmatter `question` (mirrored as
+     section body; the open question the investigation pursues)
+   - `## Description` — from `description`
+   - `## Hypotheses` — from `hypotheses[]` (enumerated hypotheses
+     under evaluation, with per-hypothesis status verdict)
+   - `## Cited Findings` — from `cited_findings[]` (findings the
+     investigation builds on; backlinks to the finding layer)
+   - `## Hypothesis Evaluation` — from `hypothesis_evaluation[]`,
+     with one H3 subsection per hypothesis; each subsection carries
+     a non-empty `sources[]` rollup naming the findings or entity-
+     node facts the contributor drew on (enforced by
+     `investigation_hypothesis_citation`)
+   - `## Open Questions` — from `open_questions[]` (sub-questions
+     surfaced by the investigation; future-work surface)
+   - `## Best-Current Answer` — from `best_current_answer` prose
+     field (the investigation's current evidentiary standing on the
+     framing question)
+   - **Conditional:** `## Counter-Evidence` (from `counter_evidence[]`
+     when populated); `## Closure Path` (required when frontmatter
+     `status == paused`, from `closure_path` prose);
+     `## Resolution History` (from `resolution_history[]` when populated)
+
    **All renderer-supported types** close with:
    - `## Primary-Source Contradictions` — **conditional, person /
      event / organization / location only.** Emits when the artifact
@@ -738,6 +779,14 @@ This:
      `Primary-source refutation:` line (from `note`). Omitted when
      no disputed rumors exist or the node type doesn't carry rumors
      (document / transcript / media).
+   - `## Public-Record Claims Without Primary Source` —
+     **conditional, person / event / organization / location only.**
+     Parallel surface to Primary-Source Contradictions: emits when
+     the artifact has any `rumors[]` entry with `status:
+     not-primary-source-established`. Reader-visible surface for
+     widely-circulated claims the repository has not yet sourced
+     (the absence-of-primary-source case, distinct from the
+     active-refutation case).
    - `## Associated Nodes` — placeholder; filled by `associate.py`
      (auto-generated from body `[`/path`]` links)
 
