@@ -225,36 +225,6 @@ entities_referenced:
   context_summary: 'Naval aviator and UAP eyewitness; referenced by Nell as one of three witnesses whose July 2023 House hearing testimony grounds the national-security stake'
   references:
   - quote_id: q3
-- id: e4
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Garry Nolan'
-  wrap_path: /people/garry-nolan
-  context_summary: 'Sol Foundation co-founder; thanked by Nell in opening of Sol Symposium remarks (auto-caption "Gary")'
-  references:
-  - quote_id: q10
-- id: e5
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Peter Skafish'
-  wrap_path: /people/peter-skafish
-  context_summary: 'Sol Foundation co-founder; thanked by Nell in opening of Sol Symposium remarks'
-  references:
-  - quote_id: q10
-- id: e6
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Leslie Kean'
-  wrap_path: /people/leslie-kean
-  context_summary: 'Co-author of The Debrief article (June 5, 2023) that carries Nell''s two voucher quotes about Grusch'
-  references: []
-- id: e7
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Ralph Blumenthal'
-  wrap_path: /people/ralph-blumenthal
-  context_summary: 'Co-author of The Debrief article (June 5, 2023) that carries Nell''s two voucher quotes about Grusch'
-  references: []
 - id: e10
   added_date: '2026-05-18'
   entity_type: person
@@ -269,15 +239,6 @@ entities_referenced:
   wrap_path: /people/mike-rounds
   context_summary: 'Co-sponsor of the UAP Disclosure Act with Schumer; named in Nell''s 2025 Sol Foundation white paper'
   references: []
-- id: e17
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'UAP Task Force'
-  wrap_path: /organizations/uaptf
-  context_summary: 'The Unidentified Aerial Phenomena Task Force; Nell''s last active-duty assignment 2021–2022 (Army director / Army liaison)'
-  references:
-  - quote_id: q2
-  - quote_id: q7
 - id: e18
   added_date: '2026-05-18'
   entity_type: organization
@@ -286,13 +247,6 @@ entities_referenced:
   context_summary: 'Publisher of Nell''s May 2025 policy paper "The UFO Enigma"; venue of Nell''s November 2023 Symposium remarks; co-founded by Garry Nolan and Peter Skafish'
   references:
   - quote_id: q10
-- id: e19
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'The Debrief'
-  wrap_path: /organizations/the-debrief
-  context_summary: 'Publisher of the Kean / Blumenthal June 5, 2023 article that carries Nell''s two voucher quotes about Grusch'
-  references: []
 - id: e20
   added_date: '2026-05-18'
   entity_type: organization
@@ -310,14 +264,6 @@ entities_referenced:
   references:
   - quote_id: q2
   - quote_id: q7
-- id: e22
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'United States Africa Command'
-  wrap_path: /organizations/africom
-  context_summary: 'AFRICOM; Nell served as deputy chief of staff per Sol Foundation white paper About the Author'
-  references:
-  - quote_id: q2
 - id: e23
   added_date: '2026-05-18'
   entity_type: organization
@@ -342,14 +288,6 @@ entities_referenced:
   context_summary: 'Industry employer of Nell per Sol Foundation white paper About the Author (Northrop Grumman TASC); SALT 2024 names "northr grman"'
   references:
   - quote_id: q2
-- id: e26
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'All-Domain Anomaly Resolution Office'
-  wrap_path: /organizations/aaro
-  context_summary: 'AARO; characterized by Nell in his Sol Foundation white paper as middle-management-level and inadequate to the strategic objectives for which the Review Board was conceived'
-  references:
-  - quote_id: q6
 - id: e27
   added_date: '2026-05-18'
   entity_type: document
@@ -359,18 +297,6 @@ entities_referenced:
   references:
   - quote_id: q4
   - quote_id: q5
-- id: e28
-  added_date: '2026-05-18'
-  entity_type: document
-  name: 'The UFO Enigma: A Call for US Government Disclosure'
-  wrap_path: /documents/solfoundation-ufo-enigma-nell-2025
-  context_summary: 'Nell''s Sol Foundation policy paper, Vol. 2 No. 2 Spring 2025; canonical published statement of Nell''s policy framework'
-  references:
-  - quote_id: q2
-  - quote_id: q3
-  - quote_id: q4
-  - quote_id: q5
-  - quote_id: q6
 - id: e29
   added_date: '2026-05-18'
   entity_type: event

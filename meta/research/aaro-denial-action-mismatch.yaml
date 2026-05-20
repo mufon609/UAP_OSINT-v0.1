@@ -75,50 +75,6 @@ quotes:
   attestation_tier: dopsr-cleared
   attestor_path: /people/luis-elizondo
 
-entities_referenced:
-
-- id: e1
-  added_date: '2026-05-13'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-
-- id: e2
-  added_date: '2026-05-13'
-  entity_type: organization
-  name: Lockheed Martin
-  wrap_path: /organizations/lockheed-martin
-
-- id: e3
-  added_date: '2026-05-13'
-  entity_type: organization
-  name: Bigelow Aerospace
-  wrap_path: /organizations/bigelow-aerospace
-
-- id: e4
-  added_date: '2026-05-13'
-  entity_type: person
-  name: Luis Elizondo
-  wrap_path: /people/luis-elizondo
-
-- id: e5
-  added_date: '2026-05-13'
-  entity_type: person
-  name: Eric Burlison
-  wrap_path: /people/eric-burlison
-
-- id: e6
-  added_date: '2026-05-13'
-  entity_type: document
-  name: AARO Historical Record Report Volume I (2024-03-08)
-  wrap_path: /documents/aaro-historical-record-report-vol-i
-
-- id: e7
-  added_date: '2026-05-13'
-  entity_type: document
-  name: Elizondo QFR Response to Burlison (2024-12-19)
-  wrap_path: /documents/elizondo-qfr-burlison-20241219
-
 naming_quirks: []
 
 establishes:

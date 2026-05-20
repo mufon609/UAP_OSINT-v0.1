@@ -885,48 +885,18 @@ corroboration_items:
   observed_event_ref: /events/2004-nimitz-encounter
   note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on the aircraft has two conflicting attestations between Dietrich and Underwood; see Credibility Notes for the source-priority resolution.
 entities_referenced:
-- id: e1
-  added_date: '2026-04-21'
-  entity_type: person
-  name: David Fravor
-  wrap_path: /people/david-fravor
-  context_summary: Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing.
 - id: e2
   added_date: '2026-04-21'
   entity_type: person
   name: Chad Underwood
   wrap_path: /people/chad-underwood
   context_summary: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast, placing him in the back seat with another pilot. Underwood's own 2019 NYMag interview describes him as the pilot of the sortie; per source-priority hierarchy (first-person about own role > witness recollection), Underwood's account outranks Dietrich's. Full resolution belongs on the future Underwood node.
-- id: e3
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: Dietrich's branch of service; she was commissioned in May 2001 and retired in 2020.
-- id: e4
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: VFA-41 Black Aces
-  wrap_path: /organizations/vfa-41
-  context_summary: Strike Fighter Squadron 41; Dietrich joined in July 2004 fresh out of flight school and was on Fravor's wing during the November 2004 Nimitz encounter.
-- id: e5
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: USS Nimitz
-  wrap_path: /organizations/uss-nimitz
-  context_summary: Aircraft carrier from which Dietrich's F/A-18F launched on November 14, 2004.
 - id: e6
   added_date: '2026-04-21'
   entity_type: organization
   name: USS Princeton
   wrap_path: /organizations/uss-princeton
   context_summary: Aegis-equipped cruiser providing radar control during the encounter; reacquired the object after it disappeared from visual.
-- id: e7
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: Office of Naval Intelligence
-  wrap_path: /organizations/oni
-  context_summary: First Pentagon entity to contact Dietrich about the encounter (per her account on When It Mattered podcast); contact began about 2009.
 - id: e8
   added_date: '2026-04-21'
   entity_type: organization
@@ -939,12 +909,6 @@ entities_referenced:
   name: AARO (All-domain Anomaly Resolution Office)
   wrap_path: /organizations/aaro
   context_summary: Current Pentagon UAP office; Dietrich references the AATIP-to-AARO transition as the institutional evolution of her Pentagon points of contact.
-- id: e10
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: NASA UAP Independent Study Team
-  wrap_path: /organizations/nasa
-  context_summary: Dietrich attended the first meeting of the NASA UAP Independent Study Team (per Sprague podcast).
 - id: e11
   added_date: '2026-04-21'
   entity_type: organization
@@ -963,30 +927,12 @@ entities_referenced:
   name: Syracuse University
   wrap_path: /organizations/syracuse-university
   context_summary: Dietrich's current institutional affiliation as Interim Chief Human Resources Officer.
-- id: e14
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: University of Colorado Boulder
-  wrap_path: /organizations/cu-boulder
-  context_summary: Dietrich joined CU Boulder College of Engineering faculty in 2022 as adjunct, appointed Scholar in Residence in the Engineering Management Program in 2023.
-- id: e15
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: U.S. Naval Academy
-  wrap_path: /organizations/usna
-  context_summary: Dietrich served as Military Professor in the Department of Leadership, Ethics and Law as part of her post-Navy academic career.
 - id: e16
   added_date: '2026-04-21'
   entity_type: organization
   name: George Washington University
   wrap_path: /organizations/gwu
   context_summary: Dietrich's alma mater (NROTC scholarship; B.S. Civil Engineering; later MBA from GW School of Business); she also served as Assistant Professor of Naval Science there post-Navy.
-- id: e17
-  added_date: '2026-04-21'
-  entity_type: organization
-  name: The Debrief
-  wrap_path: /organizations/the-debrief
-  context_summary: Outlet that published Dietrich's self-authored 2023-02-17 op-ed on UAP cooperation.
 - id: e18
   added_date: '2026-04-21'
   entity_type: organization
@@ -999,18 +945,6 @@ entities_referenced:
   name: Wings for Val
   wrap_path: /organizations/wings-for-val
   context_summary: Foundation supporting women in aviation; Dietrich advocates for it (per Debrief op-ed byline and Enigma Labs announcement).
-- id: e20
-  added_date: '2026-04-21'
-  entity_type: event
-  name: 2004 USS Nimitz Tic Tac UAP encounter
-  wrap_path: /events/2004-nimitz-encounter
-  context_summary: The November 14, 2004 encounter Dietrich personally observed from the second F/A-18F of the two-ship flight.
-- id: e21
-  added_date: '2026-04-21'
-  entity_type: media
-  name: FLIR1 video
-  wrap_path: /media/flir1-video
-  context_summary: Targeting-pod video captured by a subsequent F/A-18F sortie that day; Dietrich personally viewed the original tape aboard Nimitz.
 - id: e22
   added_date: '2026-04-22'
   entity_type: document
@@ -1029,24 +963,12 @@ entities_referenced:
   name: Bill Whitaker
   wrap_path: /people/bill-whitaker
   context_summary: CBS 60 Minutes correspondent who interviewed Dietrich (and Fravor) for the May 16, 2021 broadcast.
-- id: e25
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: When It Mattered podcast
-  wrap_path: /organizations/when-it-mattered
-  context_summary: Podcast hosted by Chitra Ragavan; Episode 55 (published 2021-06-16) was Dietrich's first dedicated long-form interview after the 60 Minutes broadcast.
 - id: e26
   added_date: '2026-04-22'
   entity_type: person
   name: Chitra Ragavan
   wrap_path: /people/chitra-ragavan
   context_summary: Host of the When It Mattered podcast; interviewed Dietrich for Episode 55 in June 2021.
-- id: e27
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Somewhere in the Skies podcast
-  wrap_path: /organizations/somewhere-in-the-skies
-  context_summary: Podcast hosted by Ryan Sprague; Dietrich appeared for a long-form 2023 recording (published as a YouTube replay 2024-11-26).
 - id: e28
   added_date: '2026-04-22'
   entity_type: person
@@ -1077,60 +999,18 @@ entities_referenced:
   name: American Veterans Center
   wrap_path: /organizations/american-veterans-center
   context_summary: "Organization that recorded a 2024-11-09 interview with Dietrich titled 'UFOs and The Military: A Combat Pilot's Experience' (published 2025-03-18)."
-- id: e33
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Tom Gibbs
-  wrap_path: /people/tom-gibbs
-  context_summary: Interviewer for the American Veterans Center 2024 Dietrich interview.
 - id: e34
   added_date: '2026-04-22'
   entity_type: organization
   name: Linda Hall Library
   wrap_path: /organizations/linda-hall-library
   context_summary: Research library that hosted the 'UAP in a Scientific Context' panel (recorded 2025-02-20) on which Dietrich sat as a panelist.
-- id: e35
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Nadia Drake
-  wrap_path: /people/nadia-drake
-  context_summary: Moderator of the 2025-02-20 Linda Hall Library 'UAP in a Scientific Context' panel where Dietrich was a panelist.
-- id: e36
-  added_date: '2026-04-22'
-  entity_type: transcript
-  name: CBS 60 Minutes broadcast transcript (2021-05-16)
-  wrap_path: /transcripts/cbs-60min-uap-2021
-  context_summary: Verbatim transcript node for the CBS 60 Minutes broadcast in which Dietrich first spoke publicly about the Nimitz encounter.
-- id: e37
-  added_date: '2026-04-22'
-  entity_type: transcript
-  name: When It Mattered Ep. 55 transcript (2021-06-16)
-  wrap_path: /transcripts/when-it-mattered-55-dietrich-2021
-  context_summary: Verbatim transcript node for Dietrich's first dedicated long-form interview after 60 Minutes (Chitra Ragavan's When It Mattered podcast).
 - id: e38
   added_date: '2026-04-22'
   entity_type: transcript
   name: Somewhere in the Skies transcript (Dietrich, 2023)
   wrap_path: /transcripts/somewhere-in-the-skies-dietrich-2023
   context_summary: Verbatim transcript node for Ryan Sprague's Dietrich interview (recorded 2023, YouTube replay 2024-11-26). Longest single Dietrich interview surveyed and the source for her triple LTjg-rank self-attestation.
-- id: e39
-  added_date: '2026-04-22'
-  entity_type: transcript
-  name: Calling All Beings Ep. 104 transcript (2024-01-05)
-  wrap_path: /transcripts/calling-all-beings-104-dietrich-2024
-  context_summary: Verbatim transcript node for the Calling All Beings Dietrich interview.
-- id: e40
-  added_date: '2026-04-22'
-  entity_type: transcript
-  name: Merged Podcast EP014 transcript (2023-08-31)
-  wrap_path: /transcripts/merged-podcast-014-dietrich-2023
-  context_summary: Verbatim transcript node for the Merged Podcast Dietrich interview with Ryan Graves.
-- id: e41
-  added_date: '2026-04-22'
-  entity_type: transcript
-  name: American Veterans Center Dietrich interview transcript (2024-11-09)
-  wrap_path: /transcripts/american-veterans-center-dietrich-2024
-  context_summary: Verbatim transcript node for the American Veterans Center Dietrich interview with Tom Gibbs.
 - id: e42
   added_date: '2026-04-22'
   entity_type: transcript

@@ -160,15 +160,6 @@ entities_referenced:
   - quote_id: q5
   - quote_id: q6
   - quote_id: q11
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Americans for Safe Aerospace
-  wrap_path: /organizations/americans-for-safe-aerospace
-  context_summary: Organization Graves founded — center of support, research, and public education for aircrew impacted by UAP encounters; nearly 5,000 members; more than 30 UAP witnesses.
-  references:
-  - quote_id: q7
-  - quote_id: q12
 - id: e5
   added_date: '2026-04-20'
   entity_type: organization
@@ -177,15 +168,6 @@ entities_referenced:
   context_summary: Professional aerospace organization where Graves chairs the UAP Integration & Outreach Committee; volunteer team of almost 80 PhDs and aerospace engineers dedicated to the science around this issue.
   references:
   - quote_id: q7
-- id: e6
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Tim Gallaudet
-  wrap_path: /people/tim-gallaudet
-  context_summary: Rear Admiral, former head of NOAA and Oceanographer of the Navy; one of the advisors at Americans for Safe Aerospace; received 2015 classified SIPRNET email with GO-FAST UAP video re near mid-air collisions off Virginia Beach.
-  references:
-  - quote_id: q8
-  - quote_id: q9
 - id: e7
   added_date: '2026-04-20'
   entity_type: organization

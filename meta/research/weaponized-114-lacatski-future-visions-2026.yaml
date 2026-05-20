@@ -296,12 +296,6 @@ entities_referenced:
   name: George Knapp
   wrap_path: /people/george-knapp
   context_summary: KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; Lacatski book co-author
-- id: e3
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Jeremy Corbell
-  wrap_path: /people/jeremy-corbell
-  context_summary: WEAPONIZED co-host with Knapp; primary in-studio questioner; presses on Pax River and the Tic Tac question
 - id: e4
   added_date: '2026-05-17'
   entity_type: person
@@ -368,12 +362,6 @@ entities_referenced:
   name: David Grusch
   wrap_path: /people/david-grusch
   context_summary: Referenced in passing in EP 114 alongside other disclosure-era named witnesses
-- id: e15
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: AAWSAP — Advanced Aerospace Weapon System Applications Program
-  wrap_path: /organizations/aawsap
-  context_summary: 'The DIA UFO program Lacatski directed; EP 114 narration uses "AATIP" / "ASAP" / "A SAP" for the program — see naming_quirks'
 - id: e16
   added_date: '2026-05-17'
   entity_type: organization
@@ -392,12 +380,6 @@ entities_referenced:
   name: Bigelow Aerospace
   wrap_path: /organizations/bigelow-aerospace
   context_summary: Named explicitly in EP 114 by Lacatski as a "small contractor" alongside BAASS
-- id: e19
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: Kona Blue Program (KBP)
-  wrap_path: /organizations/kona-blue
-  context_summary: 'EP 114 refinement: "Kona Blue was first put into Skinwalkers in the Pentagon as a future program ... matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I''m saying is it was incomplete. Omission." Lacatski says "that''s what needs to be done now with Kona Blue. We need to move ahead"'
 - id: e20
   added_date: '2026-05-17'
   entity_type: organization
@@ -422,12 +404,6 @@ entities_referenced:
   name: Office of Naval Intelligence (ONI)
   wrap_path: /organizations/oni
   context_summary: 'Named by Lacatski in EP 114 in his uncertainty about Stratton''s DIA-vs-ONI status: "I don''t know if he was on assignment to DIA from ONI or if he was a DIA employee at the time"'
-- id: e24
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: WEAPONIZED Podcast
-  wrap_path: /organizations/weaponized-podcast
-  context_summary: George Knapp + Jeremy Corbell's podcast; venue for this EP 114 interview
 - id: e25
   added_date: '2026-05-17'
   entity_type: organization

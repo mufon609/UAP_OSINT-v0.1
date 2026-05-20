@@ -880,66 +880,18 @@ quotes:
   significance: UMD School of Public Policy bio — current public listing of post-government board affiliations (Nightwing, LeoLabs, National Cryptologic Foundation) and PIAB/IOB end-of-service date (January 2025)
   context: University of Maryland School of Public Policy faculty profile page (post-government)
 entities_referenced:
-- id: e1
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security
-  wrap_path: /organizations/ousd-is
-  context_summary: The OUSD(I&S) office Moultrie led as Under Secretary June 1 2021 — February 29 2024
-- id: e2
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Cabinet department over which Moultrie's office had authority for intelligence and security matters
 - id: e3
   added_date: '2026-04-29'
   entity_type: organization
   name: National Security Agency
   wrap_path: /organizations/nsa
   context_summary: NSA — Moultrie's pre-USD(I&S) institutional home; retired as NSA's Director of Operations in 2015
-- id: e4
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Central Intelligence Agency
-  wrap_path: /organizations/cia
-  context_summary: CIA — earlier National Intelligence Community role; senior Senior Intelligence Service member at Directorate of Science & Technology
-- id: e5
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Defense Intelligence Agency
-  wrap_path: /organizations/dia
-  context_summary: One of the agencies under USD(I&S) authority
-- id: e6
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Reconnaissance Office
-  wrap_path: /organizations/nro
-  context_summary: One of the agencies under USD(I&S) authority
-- id: e7
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Office of the Director of National Intelligence
-  wrap_path: /organizations/odni
-  context_summary: ODNI — Moultrie was dual-hatted as Director of Defense Intelligence reporting to the DNI
 - id: e8
   added_date: '2026-04-29'
   entity_type: organization
   name: U.S. Air Force
   wrap_path: /organizations/us-air-force
   context_summary: Active-duty service branch — Moultrie served as a Russian linguist; received Defense Meritorious Service Medal and U.S. Air Force Meritorious Service Medal
-- id: e9
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: Department of the Navy — Moultrie served as Senior Advisor to the Secretary of the Navy in the Comprehensive Cybersecurity Review
-- id: e10
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-  context_summary: Office Moultrie established under USD(I&S) authority on July 20 2022; selected Sean Kirkpatrick as inaugural Director
 - id: e11
   added_date: '2026-04-29'
   entity_type: organization
@@ -952,48 +904,6 @@ entities_referenced:
   name: Oceanus Security Strategies, LLC
   wrap_path: /organizations/oceanus-security-strategies
   context_summary: Pre-government President & Founder role (Nov 2015 — May 2021); listed in OGE Form 278e Schedule D row 1
-- id: e13
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: LeoLabs
-  wrap_path: /organizations/leolabs
-  context_summary: Post-government Board of Directors Outside Director role since December 3, 2024
-- id: e14
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Nightwing
-  wrap_path: /organizations/nightwing
-  context_summary: Post-government Board affiliation per UMD bio
-- id: e15
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Cryptologic Foundation
-  wrap_path: /organizations/national-cryptologic-foundation
-  context_summary: Post-government Board Member affiliation (current)
-- id: e16
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Ron Moultrie Consulting, LLC
-  wrap_path: /organizations/ron-moultrie-consulting
-  context_summary: Post-government consultancy where Moultrie is President/Owner
-- id: e17
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: President's Intelligence Advisory Board
-  wrap_path: /organizations/piab
-  context_summary: Appointed Board Member; service ended January 2025
-- id: e18
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: President's Intelligence Oversight Board
-  wrap_path: /organizations/iob
-  context_summary: Appointed Board Member; service ended January 2025
-- id: e19
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: UMD School of Public Policy
-  wrap_path: /organizations/umd-school-of-public-policy
-  context_summary: Distinguished Senior Fellow, Executive Programs (post-government)
 - id: e20
   added_date: '2026-04-29'
   entity_type: organization
@@ -1018,60 +928,12 @@ entities_referenced:
   name: C5 Capital
   wrap_path: /organizations/c5-capital
   context_summary: Pre-government Strategic Partner (Jan 2017 — present per 2018 LinkedIn)
-- id: e24
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: G2K Labs
-  wrap_path: /organizations/g2k-labs
-  context_summary: Pre-government Board Member; recorded as G2X Labs Inc Chairman of the Board on 2018 LinkedIn
-- id: e25
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Altamira Technologies Corporation
-  wrap_path: /organizations/altamira-technologies-corporation
-  context_summary: Pre-government Board Member ending May 2021 (per OGE Form 278e Schedule D)
 - id: e26
   added_date: '2026-04-29'
   entity_type: organization
   name: Resolute Consulting LLC
   wrap_path: /organizations/resolute-consulting
   context_summary: Pre-government Cyber Security Advisory Board (May 2018 — present per 2018 LinkedIn)
-- id: e27
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: Selected by Moultrie as inaugural AARO Director; co-host of December 16 2022 AARO Media Roundtable
-- id: e28
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Kathleen Hicks
-  wrap_path: /people/kathleen-hicks
-  context_summary: Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her rather than through Moultrie's office
-- id: e29
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Lloyd Austin
-  wrap_path: /people/lloyd-austin
-  context_summary: Secretary of Defense across most of Moultrie's USD(I&S) tenure; Moultrie was the principal advisor to the Secretary on intelligence and security matters
-- id: e30
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Joseph D. Kernan
-  wrap_path: /people/joseph-kernan
-  context_summary: Predecessor as Under Secretary of Defense for Intelligence and Security
-- id: e31
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Bradley Hansell
-  wrap_path: /people/bradley-hansell
-  context_summary: Successor as Under Secretary of Defense for Intelligence and Security
-- id: e32
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Sue Gough
-  wrap_path: /people/sue-gough
-  context_summary: Department of Defense spokesperson; moderator of the December 16 2022 joint AARO media roundtable
 - id: e33
   added_date: '2026-04-29'
   entity_type: person
@@ -1084,36 +946,6 @@ entities_referenced:
   name: Scott Berrier
   wrap_path: /people/scott-berrier
   context_summary: DIA Director; co-witness alongside Moultrie at the March 17 2022 HASC ISO posture hearing
-- id: e35
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Ruben Gallego
-  wrap_path: /people/ruben-gallego
-  context_summary: Chairman of the HASC Subcommittee on Intelligence and Special Operations at the March 17 2022 hearing
-- id: e36
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Trent Kelly
-  wrap_path: /people/trent-kelly
-  context_summary: Ranking Member of the HASC Subcommittee on Intelligence and Special Operations at the March 17 2022 hearing
-- id: e37
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Tony Frazier
-  wrap_path: /people/tony-frazier
-  context_summary: LeoLabs CEO who welcomed Moultrie to the LeoLabs Board on December 3, 2024
-- id: e38
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Defense Counterintelligence and Security Agency
-  wrap_path: /organizations/dcsa
-  context_summary: Agency under USD(I&S) authority
-- id: e39
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Geospatial-Intelligence Agency
-  wrap_path: /organizations/nga
-  context_summary: Agency under USD(I&S) authority
 - id: e40
   added_date: '2026-04-29'
   entity_type: organization
@@ -1126,36 +958,12 @@ entities_referenced:
   name: National Intelligence University
   wrap_path: /organizations/national-intelligence-university
   context_summary: MS in Strategic Intelligence (graduate alma mater); previously known as Defense Intelligence College
-- id: e42
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Defense Language Institute
-  wrap_path: /organizations/defense-language-institute
-  context_summary: Russian Language degree (Monterey); inducted into the Defense Language Institute's Hall of Fame
-- id: e43
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Harvard Kennedy School
-  wrap_path: /organizations/harvard-kennedy-school
-  context_summary: Senior Executive studies (post-graduate)
-- id: e44
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: BlueVoyant
-  wrap_path: /organizations/bluevoyant
-  context_summary: Cybersecurity firm; Moultrie named Vice Chairman of the Advisory Board June 2021 (concurrent with USD/I&S confirmation)
 - id: e45
   added_date: '2026-04-30'
   entity_type: organization
   name: Mitre
   wrap_path: /organizations/mitre
   context_summary: Federally-funded R&D corporation; Moultrie listed as Senior Adviser per June 2021 ExecutiveBiz BlueVoyant article
-- id: e46
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Pallas
-  wrap_path: /organizations/pallas
-  context_summary: Moultrie listed as Senior Adviser per June 2021 ExecutiveBiz BlueVoyant article
 - id: e47
   added_date: '2026-05-02'
   entity_type: person

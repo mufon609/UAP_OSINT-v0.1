@@ -535,108 +535,18 @@ quotes:
     context: 'IPMO PWS Section 5.4 contractor task description, FOIA 23-F-0906 release'
     statement_date: '2022-04-25'
 entities_referenced:
-  - id: e1
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Office of the Under Secretary of Defense for Intelligence and Security'
-    wrap_path: /organizations/ousd-is
-    context_summary: 'Sancorp''s primary contracting counterparty across the AARO, IPMO, CIT, and Counterintelligence Analytical contracts. Per EO 14347 (Sept 5, 2025) renamed Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).'
-  - id: e2
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'All-domain Anomaly Resolution Office'
-    wrap_path: /organizations/aaro
-    context_summary: 'OUSD(I&S) office that Sancorp services under contracts HQ003422C0094 (initial 2022) and HQ003424C0096 (follow-on 2024). FOIA case 23-F-1114 released the contract Performance Work Statement.'
-  - id: e3
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Influence and Perception Management Office'
-    wrap_path: /organizations/ipmo
-    context_summary: 'OUSD(I&S) office established March 1, 2022 per Notre Dame memo. Sancorp services it under contracts HQ003422C0064 (2022), HQ003423C0061 (2023), HQ003424C0046 (2024).'
-  - id: e4
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Washington Headquarters Services'
-    wrap_path: /organizations/whs
-    context_summary: 'DoD subtier agency that issues most of Sancorp''s OUSD(I&S) contracts on behalf of the office. WHS Acquisition Directorate is the FOIA-authority for Sancorp contract records.'
   - id: e5
     added_date: '2026-04-30'
     entity_type: organization
     name: 'Department of Defense'
     wrap_path: /organizations/dod
     context_summary: 'Top-tier awarding agency. Renamed Department of War (DoW) under EO 14347, September 5, 2025.'
-  - id: e6
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Office of the Secretary of Defense'
-    wrap_path: /organizations/osd
-    context_summary: 'Parent organization of WHS and OUSD(I&S) per Sancorp PWS provenance.'
-  - id: e7
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Intelligence and National Security Alliance'
-    wrap_path: /organizations/insa
-    context_summary: 'Trade association Sancorp joined March 2021 (Insider Threat Subcommittee participant). INSA''s 2022 Naming Convention paper credits OUSD(I&S) as developer of counter-insider-threat doctrine.'
-  - id: e8
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Premier Enterprise Solutions, LLC'
-    wrap_path: /organizations/premier-enterprise-solutions
-    context_summary: 'Vendor that won the OUSD(I&S) Executive Directorate (EXDIR) call order under RFQ HQ003424R0178 — Sancorp''s GAO B-422985 protest of this award was denied. Upper Marlboro MD-based small business.'
-  - id: e9
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Arlo Solutions, LLC'
-    wrap_path: /organizations/arlo-solutions
-    context_summary: 'Vendor that won the OUSD(I&S) Sensitive Activities and Special Programs (SASP) Directorate call order under RFQ HQ003424R0178 — Sancorp''s GAO protest was denied. Washington DC-based small business.'
-  - id: e10
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'OUSD(I&S) Executive Directorate'
-    wrap_path: /organizations/ousd-is-exdir
-    context_summary: 'OUSD(I&S) sub-unit identified by name in GAO B-422985 decision as the customer of Call Order 1 awarded to Premier.'
-  - id: e11
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'OUSD(I&S) Sensitive Activities and Special Programs Directorate'
-    wrap_path: /organizations/ousd-is-sasp
-    context_summary: 'OUSD(I&S) sub-unit identified by name in GAO B-422985 decision as the customer of Call Order 2 awarded to Arlo Solutions.'
   - id: e12
     added_date: '2026-04-30'
     entity_type: organization
     name: 'United States Southern Command'
     wrap_path: /organizations/ussouthcom
     context_summary: 'Combatant Command — customer of Sancorp''s W912CL25CA005 Support to Special Technical Operations (MILDEC scope) contract signed June 30, 2025.'
-  - id: e13
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Missile Defense Agency'
-    wrap_path: /organizations/mda
-    context_summary: 'Awarding agency for Sancorp''s Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) initial task order HQ085926FG471 (signed 2025-12-19).'
-  - id: e14
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Office of the Assistant Secretary of Defense for Science and Technology'
-    wrap_path: /organizations/oasd-st
-    context_summary: 'Customer for Sancorp''s parent IDIQ HQ003425A0001 ("Technical, Analytical, Administrative, and Professional Program Support Services"). Sancorp self-announced the award in June 2025.'
-  - id: e15
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Chief Digital and Artificial Intelligence Office'
-    wrap_path: /organizations/cdao
-    context_summary: 'DoD office that contracts Sancorp under W519TC23F0545 for Algorithmic Warfare and Public Affairs support.'
-  - id: e16
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs'
-    wrap_path: /organizations/oasd-hdha
-    context_summary: 'Customer of Sancorp''s HQ003424F0411 LABOR task order ($11.2M) — also services OASD Nuclear and Countering WMD per Sancorp Past Performance.'
-  - id: e17
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'General Services Administration'
-    wrap_path: /organizations/gsa
-    context_summary: 'GSA awarded Sancorp the Multiple Award Schedule (July 2022), 8(A) STARS III (47QTCB22D0104), and OASIS+ vehicles in 2025.'
   - id: e18
     added_date: '2026-04-30'
     entity_type: organization
@@ -667,24 +577,6 @@ entities_referenced:
     name: 'INSA Insider Threat Program Naming Convention paper (September 2022)'
     wrap_path: /documents/insa-naming-convention-2022
     context_summary: 'Trade-association white paper credited to INSA''s Insider Threat Subcommittee. Source for the OUSD(I&S) attribution of counter-insider-threat doctrine.'
-  - id: e29
-    added_date: '2026-04-30'
-    entity_type: person
-    name: 'Jacqueline G. Verrine'
-    wrap_path: /people/jacqueline-verrine
-    context_summary: 'Contracting Officer for AARO contract HQ003422C0094 — signed the contract September 1, 2022. Team Lead/Contracting Officer in Technical Analysis Branch (TAB) of Enterprise Office Secretary of Defense (EOSD) within WHS Acquisition Directorate.'
-  - id: e30
-    added_date: '2026-04-30'
-    entity_type: person
-    name: 'Rainie Wells'
-    wrap_path: /people/rainie-wells
-    context_summary: 'Contract Specialist on AARO contract HQ003422C0094 — Phone 202-913-5746, email rainie.wells.civ@mail.mil. Listed as Section 7 information contact on the contract solicitation form.'
-  - id: e31
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'WHS Acquisition Directorate'
-    wrap_path: /organizations/whs-acquisition-directorate
-    context_summary: 'Sub-unit of Washington Headquarters Services that issues OUSD(I&S) prime contracts. DODAAC HQ0034 (Issue By + Admin). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.'
   - id: e32
     added_date: '2026-04-30'
     entity_type: organization
@@ -697,18 +589,6 @@ entities_referenced:
     name: 'Defense Contract Audit Agency'
     wrap_path: /organizations/dcaa
     context_summary: 'DCAA Auditor DODAAC HAA47 — designated as Defense Contract Audit Agency entry for LH and T&M CLINs on the AARO contract.'
-  - id: e34
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Small Business Administration Richmond District Office'
-    wrap_path: /organizations/sba-richmond-district-office
-    context_summary: 'Cognizant SBA district office for the Sancorp AARO contract per Section 8(a) Direct Award clause (DFARS 252.219-7009). Address: 400 N 8th Street, Suite 1150, Richmond, VA 23219.'
-  - id: e36
-    added_date: '2026-04-30'
-    entity_type: organization
-    name: 'Department of the Army'
-    wrap_path: /organizations/department-of-the-army
-    context_summary: 'Awarding agency on Sancorp contracts W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations) and W519TC23F0545 (CDAO Algorithmic Warfare and Public Affairs).'
   - id: e37
     added_date: '2026-04-30'
     entity_type: organization

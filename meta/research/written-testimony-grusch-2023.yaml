@@ -169,58 +169,16 @@ quotes:
   significance: Closing terminology — "Non-Human Reverse Engineering Programs" naming; "ontological (earth-shattering) shock" framing
   context: closing statement
 entities_referenced:
-- id: e1
-  added_date: '2026-04-20'
-  entity_type: person
-  name: David Charles Grusch
-  wrap_path: /people/david-grusch
-  context_summary: Author of this written testimony; intelligence officer for 14 years in the US Air Force (Major) and National Geospatial-Intelligence Agency (GS-15); UAPTF member 2019-2021; PPD-19 Urgent Concern whistleblower
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: US Air Force (USAF)
-  wrap_path: /organizations/us-air-force
-  context_summary: Grusch's military service branch; rank of Major; NRO reservist capacity was within the USAF
 - id: e3
   added_date: '2026-04-20'
   entity_type: organization
   name: National Geospatial-Intelligence Agency (NGA)
   wrap_path: /organizations/nga
   context_summary: Grusch's civilian agency 2021-2023 at the GS-15 level; he describes himself as his agency's co-lead in UAP and trans-medium object analysis
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: UAP Task Force (UAPTF)
-  wrap_path: /organizations/uaptf
-  context_summary: Grusch was a member from 2019-2021 in his NRO reservist capacity; UAPTF director tasked him in 2019 to identify all relevant SAPs/CAPs
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: All-Domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: Named alongside UAPTF as a body to which Grusch reported in his UAP analysis role
 - id: e6
   added_date: '2026-04-20'
   entity_type: document
   name: PPD-19
   wrap_path: /documents/ppd-19
   context_summary: Presidential Policy Directive-19; the whistleblower-protection mechanism under which Grusch filed an Urgent Concern with the ICIG
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Intelligence Community Inspector General (ICIG)
-  wrap_path: /organizations/icig
-  context_summary: Recipient of Grusch's PPD-19 Urgent Concern filing
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: National Reconnaissance Office (NRO)
-  wrap_path: /organizations/nro
-  context_summary: Grusch's reservist capacity; he served in the NRO Operations Center on the director's briefing staff coordinating the Presidential Daily Brief
-- id: e9
-  added_date: '2026-04-20'
-  entity_type: event
-  name: July 26, 2023 House Oversight UAP hearing
-  wrap_path: /events/2023-07-26-house-uap-hearing
-  context_summary: The hearing for which this written testimony was submitted
 naming_quirks: []

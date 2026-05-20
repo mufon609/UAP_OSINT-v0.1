@@ -212,31 +212,6 @@ entities_referenced:
   wrap_path: '/people/eric-davis'
   context_summary: 'Dr. Eric Davis co-authored with Puthoff the September 27, 2024 memorandum submitted to the TTSA Board of Directors counter-analyzing the ORNL Magnesium-Zinc-Bismuth (Art''s Parts) material report; the TTSA 2025-02-28 press-and-news post characterizes the Puthoff/Davis analysis as having clarified aspects of the ORNL report. Davis appears on the SAFIRE Project science review team as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff (Director, IASA). The 2010-03-29 DIA AAWSA DIRD authored by Puthoff cites Davis''s prior work three times: as co-editor (with M. G. Millis) of Frontiers of Propulsion Science (AIAA Press, 2009; Reference 1, the comprehensive-introduction citation Puthoff returns to in both Preface and Discussion footnotes); as co-author with Puthoff and Maccone of ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483 (2005); Reference 19); and as sole author of Chapter 15: ''Faster-than-Light Approaches in General Relativity'' in that same Frontiers of Propulsion Science compendium (Reference 22 of the DIRD, the cited authority for warp-drive and wormhole technology feasibility constraints). The 2010-04-06 Davis-authored AAWSA Program DIRD ''Concepts for Extracting Energy From the Quantum Vacuum'' (DIA-08-1004-007) names H. E. Puthoff (EarthTech) first among the colleagues credited for technical contributions to that report — second documented Davis-Puthoff AAWSA-DIRD collaboration beyond Puthoff''s own DIRD #15. New unbuilt stub.'
 
-- id: e3
-  added_date: '2026-05-16'
-  entity_type: person
-  name: 'Luis Elizondo'
-  wrap_path: '/people/luis-elizondo'
-  context_summary: 'Per the 2017-12-16 NYT article, Elizondo led the Advanced Aerospace Threat Identification Program until October 2017 and joined Puthoff and Mellon in the new commercial venture To the Stars Academy of Arts and Science. The 2018-07-26 TTSA ADAM Research Project announcement names Puthoff as ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program''. New unbuilt stub.'
-  references:
-  - quote_id: q2
-
-- id: e4
-  added_date: '2026-05-16'
-  entity_type: person
-  name: 'Christopher K. Mellon'
-  wrap_path: '/people/christopher-mellon'
-  context_summary: 'Per the 2017-12-16 NYT article, Christopher K. Mellon was a deputy assistant secretary of defense for intelligence and joined Puthoff and Elizondo in the new commercial venture To the Stars Academy of Arts and Science. New unbuilt stub.'
-  references:
-  - quote_id: q2
-
-- id: e5
-  added_date: '2026-05-16'
-  entity_type: person
-  name: 'Kenneth A. Kress'
-  wrap_path: '/people/kenneth-kress'
-  context_summary: 'CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972. Author of the 1977 Studies in Intelligence paper ''Parapsychology in Intelligence: A Personal Review and Conclusions'' (declassified 2011, CIA-RDP88G01116R000600690003-8) — the foundational CIA-side primary-source attestation of the Targ + Puthoff SRI parapsychology investigation. New unbuilt stub.'
-
 - id: e6
   added_date: '2026-05-16'
   entity_type: person
@@ -251,22 +226,6 @@ entities_referenced:
   wrap_path: '/people/tom-delonge'
   context_summary: 'TTSA Co-founder, Chairman of the Board, and (per the TTSA homepage snapshots) Interim CEO. Per the TTSA SEC Form 1-A Part II (2017-07-10), DeLonge is the principal investor; Puthoff is named alongside DeLonge and James Semivan as TTSA board members and Class B Common Stock holders (Gravity Holdings LLC, JimSemI LLC, and Harold Puthoff per the Form 1-A). New unbuilt stub.'
 
-- id: e8
-  added_date: '2026-05-16'
-  entity_type: person
-  name: 'Jim Semivan'
-  wrap_path: '/people/jim-semivan'
-  context_summary: 'TTSA Co-founder, Board Member, and VP Operations per the TTSA homepage snapshots and SEC filings. 25 years as Operations Officer for the CIA Directorate of Operations per the TTSA 2018 bio. Named alongside Puthoff and DeLonge as TTSA founding board / stockholder per the SEC Form 1-A Part II (2017-07-10). New unbuilt stub.'
-
-- id: e9
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Stanford Research Institute (SRI International)'
-  wrap_path: '/organizations/stanford-research-institute'
-  context_summary: 'Per the 1974 Nature paper byline, Puthoff''s author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1977 Kress paper, Targ and Puthoff conducted the CIA-sponsored parapsychology investigation at SRI from 1972 onward. Per the 1993 DIA STAR GATE Project Overview, the SRI program at Menlo Park ran from 1970 to 1990 and was headed by Dr. H. Puthoff. Per the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff''s career included research at SRI International before he became President of EarthTech in 1985.'
-  references:
-  - quote_id: q1
-
 - id: e10
   added_date: '2026-05-16'
   entity_type: organization
@@ -274,65 +233,12 @@ entities_referenced:
   wrap_path: '/organizations/earthtech-international'
   context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff has served as President and CEO of EarthTech International, Inc. since 1985. Per the 2018-07-26 TTSA ADAM Research Project announcement, TTS Academy established a contract with EarthTech International — based in Austin, Texas — to evaluate the properties of the materials collected by the ADAM Research Project under Puthoff''s leadership. The 2010-03-29 DIA AAWSA Defense Intelligence Reference Document DIA-08-1003-015 (authored by Puthoff) lists his author affiliation as ''EarthTech International, Inc., 11855 Research Blvd., Austin, Texas 78759'' — primary-source attestation that EarthTech is the institutional vehicle through which Puthoff produced the AAWSAP DIRD. New unbuilt stub.'
 
-- id: e11
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Institute for Advanced Studies at Austin (IASA)'
-  wrap_path: '/organizations/institute-for-advanced-studies-at-austin'
-  context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff has served as Director of the Institute for Advanced Studies at Austin (IASA) since 1985. Per the SAFIRE Project team snapshot, IASA is the institutional home of Puthoff (Director) and Eric W. Davis (Chief Science Officer) on the SAFIRE science review team. New unbuilt stub.'
-
-- id: e12
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'To The Stars Academy of Arts & Science (TTSA)'
-  wrap_path: '/organizations/ttsa'
-  context_summary: 'Puthoff is a co-founder of TTSA and served as Vice President Science and Technology and as a member of the Board of Directors from 2017 (per the SEC Form 1-A Part II preliminary offering circular dated 2017-07-10) until he moved to the Advisory Board (per the May 2, 2022 SEC Form 1-K Part II filing). The April 17, 2025 SEC Form 1-K Part II filing records the September 27, 2024 Puthoff/Davis memorandum to the Board of Directors on the ORNL Art''s Parts material analysis.'
-  references:
-  - quote_id: q3
-
-- id: e13
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Central Intelligence Agency (CIA)'
-  wrap_path: '/organizations/cia'
-  context_summary: 'Per the 1977 Kress paper, the CIA Office of Technical Service contracted with Targ and Puthoff at SRI in August 1972 ($874 demonstration contract) and subsequently funded the expanded $50,000 effort (OTS Contract 8473, 1 October 1972) and the February 1974 jointly funded ORD and OTS program. Per the 2017-12-16 NYT article, Puthoff had earlier conducted research on extrasensory perception for the C.I.A. New unbuilt stub.'
-
 - id: e14
   added_date: '2026-05-16'
   entity_type: organization
   name: 'Defense Intelligence Agency (DIA)'
   wrap_path: '/organizations/dia'
   context_summary: 'Per the 1993 DIA Directorate for Scientific and Technical Intelligence ''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL, CIA-RDP96-00789R002800180001-2), DIA was the continuing funding source for the SRI International remote-viewing research after CIA funding was discontinued in 1975, and the SRI program was discontinued in 1990. The 2010-03-29 Defense Intelligence Reference Document DIA-08-1003-015 ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' was prepared by DIA''s Acquisition Support Division (DWO-3), Defense Warning Office, Directorate for Analysis, and authored by Puthoff under the Defense Warning Office''s Advanced Aerospace Weapon System Applications (AAWSA) Program (AAWSA Program Manager: James T. Lacatski, D.Eng.) — primary-source attestation of the DIA institutional commissioning relationship with Puthoff during the AAWSAP era. New unbuilt stub.'
-
-- id: e15
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Advanced Aerospace Threat Identification Program (AATIP)'
-  wrap_path: '/organizations/aatip'
-  context_summary: 'Per the 2018-07-26 TTSA blog post announcing the ADAM Research Project, Puthoff is ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program (Advanced Aerospace Threat Identification Program)''. Per the 2017-12-16 NYT article, Puthoff was a contractor for the program. New unbuilt stub.'
-  references:
-  - quote_id: q2
-
-- id: e16
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'National Security Agency (NSA)'
-  wrap_path: '/organizations/nsa'
-  context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), the National Security Agency is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
-
-- id: e17
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Stanford University'
-  wrap_path: '/organizations/stanford-university'
-  context_summary: 'Per the TTSA homepage snapshot 2018-01-08, Puthoff earned his Ph.D. from Stanford University in 1967. The same source lists Stanford University among the institutions of his more-than-five-decades research career. New unbuilt stub.'
-
-- id: e18
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'SAFIRE Project'
-  wrap_path: '/organizations/safire-project'
-  context_summary: 'Per the SAFIRE Project team snapshot, the SAFIRE science review team includes ''Harold Puthoff, PhD — Director, Institute for Advanced Studies at Austin'' alongside Dr. James Ryder (Chairman, International Science Foundation), Eric W. Davis (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). The same page renders Puthoff in a tag-list typo as ''Hal Putoff''.'
 
 - id: e19
   added_date: '2026-05-16'
@@ -355,15 +261,6 @@ entities_referenced:
   wrap_path: '/organizations/american-institutes-for-research'
   context_summary: 'Per the 1995 American Institutes for Research evaluation ''An Evaluation of Remote Viewing: Research and Applications'' (Michael D. Mumford, Andrew M. Rose, David A. Goslin; 29 September 1995), AIR conducted the independent end-of-program review of the Stargate Project at CIA''s request. The evaluation cites Puthoff, Harold E. and Russell Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report. New unbuilt stub.'
 
-- id: e22
-  added_date: '2026-05-16'
-  entity_type: document
-  name: 'Targ and Puthoff (1974) Nature paper'
-  wrap_path: '/documents/nature-1974-targ-puthoff-information-transmission'
-  context_summary: 'Targ, R. & Puthoff, H. (1974). ''Information transmission under conditions of sensory shielding.'' Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0. Author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Foundational peer-reviewed primary-source attestation of the Targ + Puthoff SRI investigation. New unbuilt stub.'
-  references:
-  - quote_id: q1
-
 - id: e23
   added_date: '2026-05-16'
   entity_type: document
@@ -382,37 +279,12 @@ entities_referenced:
   references:
   - quote_id: q3
 
-- id: e25
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'General Electric'
-  wrap_path: '/organizations/general-electric'
-  context_summary: 'Per the TTSA page (January 8, 2018) and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), General Electric is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
-
-- id: e26
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: 'Sperry'
-  wrap_path: '/organizations/sperry'
-  context_summary: 'Per the TTSA page (January 8, 2018) and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Sperry is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
-
 - id: e27
   added_date: '2026-05-16'
   entity_type: document
   name: 'Puthoff (2010) DIA AAWSA DIRD — Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'
   wrap_path: '/documents/dia-advancedspacepropulsion-puthoff-dird-2010'
   context_summary: 'Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'', dated 29 March 2010 (ICOD 1 December 2009; U//FOUO; 12-page body plus front matter). Author: H.E. Puthoff, Ph.D., EarthTech International, Inc., 11855 Research Blvd., Austin, Texas 78759. Prepared by the Acquisition Support Division (DWO-3), Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency. One in a series of advanced technology reports produced in FY 2009 under the Defense Warning Office''s Advanced Aerospace Weapon System Applications (AAWSA) Program; AAWSA Program Manager James T. Lacatski, D.Eng. Subject matter: a general-relativity-for-engineers, metric-tensor-coefficient analysis of vacuum/spacetime engineering as a candidate basis for advanced aerospace craft, with worked examples covering time alteration, spatial alteration, superluminal velocity, refractive-index effects, effective-mass alteration, and gravity/antigravity/propulsion effects (including Alcubierre warp-drive metric structure). Foundational primary-source attestation of Puthoff''s direct authorship contribution to the AAWSAP DIRD substrate. New unbuilt stub.'
-  references:
-  - quote_id: q4
-  - quote_id: q5
-  - quote_id: q6
-
-- id: e28
-  added_date: '2026-05-16'
-  entity_type: person
-  name: 'James T. Lacatski'
-  wrap_path: '/people/james-lacatski'
-  context_summary: 'Per the 2010-03-29 DIA AAWSA Defense Intelligence Reference Document DIA-08-1003-015 (authored by Puthoff): ''Comments or questions pertaining to this document should be addressed to James T. Lacatski, D.Eng., AAWSA Program Manager, Defense Intelligence Agency, ATTN: CLAR/DWO-3, Bldg 6000, Washington, DC 20340-5100.'' AAWSA Program Manager named on the DIRD attribution page. New unbuilt stub.'
   references:
   - quote_id: q4
   - quote_id: q5

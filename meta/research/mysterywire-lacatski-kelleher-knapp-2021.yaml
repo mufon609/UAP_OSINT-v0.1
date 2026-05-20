@@ -185,24 +185,12 @@ quotes:
   significance: Kelleher's closing role-summary — Lacatski "driving force in Washington D.C.", Kelleher "day-to-day manager in Las Vegas" — codifies the two-author program-leadership division for the AAWSAP/BAASS operation. Statement BY Kelleher ABOUT Lacatski's program function; book co-authorship attestation in source.
   context: Kelleher's closing comment on the book's coverage of the AAWSAP/BAASS program
 entities_referenced:
-- id: e1
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Dr. James Lacatski
-  wrap_path: /people/james-lacatski
-  context_summary: Former AAWSAP director at DIA; first guest in the interview; primary speaker on the AAWSAP / AATIP distinction, the closed-program security posture, and the DoD pre-publication review of "Skinwalkers at the Pentagon"
 - id: e2
   added_date: '2026-05-17'
   entity_type: person
   name: Dr. Colm Kelleher
   wrap_path: /people/colm-kelleher
   context_summary: Former BAASS program manager; second guest in the interview; co-author of "Skinwalkers at the Pentagon"; describes BAASS team composition, the 24-month contract execution, and one medical-injury case example
-- id: e3
-  added_date: '2026-05-17'
-  entity_type: person
-  name: George Knapp
-  wrap_path: /people/george-knapp
-  context_summary: KLAS-TV / 8 News Now / Mystery Wire investigative reporter; book co-author with Lacatski and Kelleher; host of this interview
 - id: e4
   added_date: '2026-05-17'
   entity_type: person

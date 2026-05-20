@@ -94,12 +94,6 @@ quotes:
   statement_date: '2026-03-06'
 
 entities_referenced:
-- id: e1
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Christopher Sharp'
-  wrap_path: /people/christopher-sharp
-  context_summary: 'Author of the article — "Written by Christopher Sharp -6 March 2026" byline.'
 - id: e2
   added_date: '2026-05-18'
   entity_type: organization
@@ -130,12 +124,6 @@ entities_referenced:
   name: 'Steny Hoyer'
   wrap_path: /people/steny-hoyer
   context_summary: 'Named in the Elizondo QFR Q7 quotation as the then-Representative at whose request the ~$10 million Pax River hangar funding was allocated; quoted from a Matt Laslo interview responding to a question about the appropriation with "Well, it''s a private — public partner... I don''t remember the specifics."'
-- id: e7
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Matt Laslo'
-  wrap_path: /people/matt-laslo
-  context_summary: 'Journalist who, prior to the Liberation Times article, interviewed Hoyer about the $10 million Pax River hangar appropriation. Sharp reproduces the Laslo-Hoyer exchange verbatim in the article.'
 - id: e8
   added_date: '2026-05-18'
   entity_type: organization
@@ -154,11 +142,4 @@ entities_referenced:
   name: 'Central Intelligence Agency'
   wrap_path: /organizations/cia
   context_summary: 'Named as the original custodian of the alleged machinery and the agency that blocked the alleged transfer. "The alleged transfer was blocked by the CIA, the original custodian of the machinery, which is understood to have been recovered since the 1950s."'
-- id: e11
-  added_date: '2026-05-18'
-  entity_type: location
-  name: 'Naval Air Station Patuxent River'
-  wrap_path: /locations/patuxent-river-nas
-  context_summary: 'Site of Burlison''s reported visit — "Naval Air Station Patuxent River (Pax River) in Maryland."'
-
 naming_quirks: []

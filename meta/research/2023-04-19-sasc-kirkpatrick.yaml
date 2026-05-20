@@ -557,12 +557,6 @@ quotes:
   significance: Senator Gillibrand offers her office as a clearinghouse for the audience-member-presented material; structurally significant for the safe disclosure portal discussion (Kirkpatrick's submitted website was still under review at the time)
   context: Senator Gillibrand response to audience members
 entities_referenced:
-- id: e1
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Sean M. Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: Open-session witness; Director of AARO at the time of the hearing
 - id: e2
   added_date: '2026-04-28'
   entity_type: person
@@ -575,12 +569,6 @@ entities_referenced:
   name: Joni Ernst
   wrap_path: /people/joni-ernst
   context_summary: Ranking Member of the Subcommittee on Emerging Threats and Capabilities; questioned Kirkpatrick on China/Russia advanced technology and interagency redundancy avoidance
-- id: e4
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Jacky Rosen
-  wrap_path: /people/jacky-rosen
-  context_summary: Senator (Nevada); Subcommittee member; questioned Kirkpatrick on NORTHCOM, NORAD, SPACECOM coordination, aviation safety, and authorities
 - id: e5
   added_date: '2026-04-28'
   entity_type: person
@@ -605,12 +593,6 @@ entities_referenced:
   name: Harry Reid
   wrap_path: /people/harry-reid
   context_summary: Late long-serving Majority Leader; cited in Gillibrand's opening as the senator who set in motion the activities reported in late 2017 media
-- id: e9
-  added_date: '2026-04-28'
-  entity_type: person
-  name: David Spergel
-  wrap_path: /people/david-spergel
-  context_summary: Chair of the NASA UAP independent study team; first audience-member speaker referenced presenting a book to Spergel
 - id: e10
   added_date: '2026-04-28'
   entity_type: person
@@ -683,18 +665,6 @@ entities_referenced:
   name: Department of Energy
   wrap_path: /organizations/doe
   context_summary: Referenced by Kirkpatrick as a partner agency providing personnel and resources to AARO
-- id: e22
-  added_date: '2026-04-28'
-  entity_type: event
-  name: 2023-04-19 SASC AARO Hearing
-  wrap_path: /events/2023-04-19-sasc-aaro-hearing
-  context_summary: The hearing this transcript records the open session of
-- id: e23
-  added_date: '2026-04-28'
-  entity_type: document
-  name: Sean Kirkpatrick — Statement for the Record, 2023-04-19 SASC AARO Hearing
-  wrap_path: /documents/written-testimony-kirkpatrick-2023
-  context_summary: Kirkpatrick's pre-hearing written statement filed for the record, companion to this oral testimony
 naming_quirks:
 - id: nq1
   added_date: '2026-04-28'

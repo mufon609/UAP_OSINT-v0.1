@@ -200,30 +200,6 @@ entities_referenced:
   name: Robert Bigelow
   wrap_path: /people/robert-bigelow
   context_summary: Las Vegas real estate magnate; 1996-2016 owner; founder of NIDS (1995), Bigelow Aerospace, and BAASS (the AAWSAP contractor)
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Brandon Fugal
-  wrap_path: /people/brandon-fugal
-  context_summary: Utah real estate mogul; current owner since 2016 via Adamantium Real Estate LLC
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Terry Sherman
-  wrap_path: /people/terry-sherman
-  context_summary: 1994-1996 owner; caretaker under Bigelow 1996-ongoing per Deseret News October 1996
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Gwen Sherman
-  wrap_path: /people/gwen-sherman
-  context_summary: 1994-1996 co-owner with husband Terry Sherman
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Garth Myers
-  wrap_path: /people/garth-myers
-  context_summary: Younger brother of Kenneth John Myers; Myers-era witness who denies any paranormal activity during family ownership 1933-1994
 - id: e6
   added_date: '2026-04-20'
   entity_type: person
@@ -236,72 +212,30 @@ entities_referenced:
   name: George Knapp
   wrap_path: /people/george-knapp
   context_summary: Investigative journalist; co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021)
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: person
-  name: James Lacatski
-  wrap_path: /people/james-lacatski
-  context_summary: AAWSAP program manager at DIA; co-author of Skinwalkers at the Pentagon (2021)
-- id: e9
-  added_date: '2026-04-20'
-  entity_type: person
-  name: John B. Alexander
-  wrap_path: /people/john-alexander
-  context_summary: Former director of non-lethal weapons testing at Los Alamos; NIDS scientist per Deseret News October 1996
 - id: e10
   added_date: '2026-04-20'
   entity_type: person
   name: Michael Shellenberger
   wrap_path: /people/michael-shellenberger
   context_summary: Journalist-founder of Public; provided 2024 House Oversight sworn testimony that references Skinwalker Ranch extensively
-- id: e11
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: NIDS
-  wrap_path: /organizations/nids
-  context_summary: National Institute for Discovery Science; Bigelow-founded 1995, operated 1996-2004; conducted the first institutional research program at the ranch
-- id: e12
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: BAASS
-  wrap_path: /organizations/baass
-  context_summary: Bigelow Aerospace Advanced Space Studies; the DIA AAWSAP contractor (contract HHM402-08-C-0072)
 - id: e13
   added_date: '2026-04-20'
   entity_type: organization
   name: AAWSAP
   wrap_path: /organizations/aawsap
   context_summary: Advanced Aerospace Weapon System Applications Program; 2008-2012 DIA-funded program contracted to BAASS; included UAP research at Skinwalker Ranch
-- id: e14
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Bigelow Aerospace
-  wrap_path: /organizations/bigelow-aerospace
-  context_summary: Robert Bigelow's aerospace company; parent of BAASS per AAWSAP contract
 - id: e15
   added_date: '2026-04-20'
   entity_type: organization
   name: Adamantium Real Estate LLC
   wrap_path: /organizations/adamantium-real-estate
   context_summary: Delaware LLC headquartered in Salt Lake City (6440 S Millrock Dr Ste 500); Fugal's shell entity holding all 7 Uintah County ranch parcels
-- id: e16
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Defense Intelligence Agency
-  wrap_path: /organizations/dia
-  context_summary: Contracting agency for the 2008 AAWSAP contract awarded to BAASS
 - id: e17
   added_date: '2026-04-20'
   entity_type: document
   name: Hunt for the Skinwalker (2005)
   wrap_path: /documents/hunt-for-the-skinwalker-2005
   context_summary: Kelleher and Knapp's 2005 book documenting NIDS-era investigation (1996-2004); pseudonyms 'Tom and Ellen Gorman' used for Terry and Gwen Sherman throughout
-- id: e18
-  added_date: '2026-04-20'
-  entity_type: document
-  name: Skinwalkers at the Pentagon (2021)
-  wrap_path: /documents/skinwalkers-at-the-pentagon-2021
-  context_summary: Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional UAP research including Skinwalker Ranch work
 - id: e19
   added_date: '2026-04-20'
   entity_type: document

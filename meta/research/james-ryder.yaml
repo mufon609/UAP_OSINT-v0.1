@@ -316,18 +316,6 @@ entities_referenced:
     name: 'Lockheed Martin Corporation'
     wrap_path: '/organizations/lockheed-martin'
     context_summary: 'Parent corporation; Ryder served 38 years across multiple management and technical positions before retiring as Vice President of the Space Systems Company subsidiary in February 2011 (per IVS leadership page).'
-  - id: e2
-    added_date: '2026-05-06'
-    entity_type: organization
-    name: 'Lockheed Martin Space Systems Company'
-    wrap_path: '/organizations/lockheed-martin-space-systems-company'
-    context_summary: 'Subsidiary of Lockheed Martin Corporation; Ryder served as Vice President from May 2005 until his retirement in February 2011, leading the Advanced Technology Center for both the subsidiary and the parent corporation (per IVS leadership page).'
-  - id: e3
-    added_date: '2026-05-06'
-    entity_type: organization
-    name: 'Institute for Venture Science'
-    wrap_path: '/organizations/institute-for-venture-science'
-    context_summary: 'Per IVS leadership page, Ryder serves as Chairman of the Board of the Institute for Venture Science.'
   - id: e4
     added_date: '2026-05-06'
     entity_type: organization
@@ -340,12 +328,6 @@ entities_referenced:
     name: 'University of Illinois'
     wrap_path: '/organizations/university-of-illinois'
     context_summary: 'Ryder''s alma mater; per IVS leadership page he holds a PhD in theoretical and applied mechanics, an MS in engineering mechanics, and a BS in theoretical and applied mechanics from the University of Illinois.'
-  - id: e6
-    added_date: '2026-05-06'
-    entity_type: organization
-    name: 'AAWSAP'
-    wrap_path: '/organizations/aawsap'
-    context_summary: 'Defense Intelligence Agency program funded by a $22M congressional appropriation championed by Senator Harry Reid. Per the SD004 page-1 author Q&A and Liberation Times reporter Christopher Sharp (2025-03-27), Ryder allegedly proposed a UAP material divestment plan to AAWSAP leadership; the proposed transfer was blocked at the CIA Directorate of Science & Technology level.'
   - id: e7
     added_date: '2026-05-06'
     entity_type: organization
@@ -358,12 +340,6 @@ entities_referenced:
     name: 'CIA Directorate of Science and Technology'
     wrap_path: '/organizations/cia-ds-and-t'
     context_summary: 'Per SD004 page-1 author Q&A and Liberation Times Christopher Sharp (2025-03-27), the original government custodian of the materials Ryder allegedly proposed transferring; the proposed Technology Transfer Agreement was disapproved at a meeting with then-DS&T head Glenn Gaffney.'
-  - id: e9
-    added_date: '2026-05-06'
-    entity_type: organization
-    name: 'House Committee on Oversight and Accountability'
-    wrap_path: '/organizations/house-oversight'
-    context_summary: 'Hosted the September 9, 2025 hearing "Restoring Public Trust through UAP Transparency and Whistleblower Protection" at which George Knapp, under sworn testimony, named Ryder at Lockheed in response to a question naming "specific gatekeepers within the root cell of the UAP SAP Federation".'
   - id: e10
     added_date: '2026-05-06'
     entity_type: person
@@ -388,36 +364,12 @@ entities_referenced:
     name: 'Christopher Sharp'
     wrap_path: '/people/christopher-sharp'
     context_summary: 'London-based founder and editor-in-chief of Liberation Times; senior contributing journalist at the Daily Mail. The named accredited UAP-press reporter who has covered the Ryder / Lockheed Martin / Glenn Gaffney narrative across multiple Liberation Times articles since November 2023.'
-  - id: e15
-    added_date: '2026-05-06'
-    entity_type: person
-    name: 'Robert Cardillo'
-    wrap_path: '/people/robert-cardillo'
-    context_summary: 'Per Christopher Sharp, Liberation Times (2025-03-27): "the final authority to block the transfer ultimately rested with Robert Cardillo, who at the time served as the Deputy Director of National Intelligence for Intelligence Integration."'
-  - id: e16
-    added_date: '2026-05-06'
-    entity_type: person
-    name: 'William Lynn'
-    wrap_path: '/people/william-lynn-iii'
-    context_summary: 'Per Christopher Sharp, Liberation Times (2025-03-27): the effort to gain Special Access Program status for AAWSAP "was ultimately blocked by Deputy Secretary of Defense, William Lynn, due to pressure from individuals within the intelligence community."'
-  - id: e19
-    added_date: '2026-05-06'
-    entity_type: person
-    name: 'Lee Blackburn'
-    wrap_path: '/people/lee-blackburn'
-    context_summary: 'Companion presenter alongside Ryder at the Lucis Trust Arcane School Conference London 2017; gave "The Rending of the Veils, Part 2: The Violet Force and Health" paired with Ryder''s Part 1.'
   - id: e20
     added_date: '2026-05-06'
     entity_type: document
     name: 'SD004 — submitted document, 2024-11-13 House Oversight UAP hearing'
     wrap_path: '/documents/docs-house-gov-hhrg-118-go12-20241113-sd004'
     context_summary: 'Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (no embedded text layer). Page 1 is an unsigned three-question Q&A DOPSR-cleared 2023-09-06; the author is identified by name as Dr. James Lacatski (former Director of AAWSAP) under sworn testimony in Luis Elizondo''s December 19, 2024 House Oversight Question-for-the-Record response (entity e25), which independently quotes the same DOPSR-cleared text verbatim and references it as Attachment 2 of Elizondo''s QFR.'
-  - id: e22
-    added_date: '2026-05-06'
-    entity_type: document
-    name: 'Liberation Times — Christopher Sharp (2025-03-27)'
-    wrap_path: '/documents/liberationtimes-burlison-grusch-recruitment-20250327'
-    context_summary: 'Liberation Times article by Christopher Sharp dated March 27, 2025; primary published-record reporting that recapitulates the Ryder / Lockheed Martin / Glenn Gaffney / Robert Cardillo / William Lynn narrative and documents Lockheed Martin''s repeated refusal to deny the underlying allegations.'
   - id: e23
     added_date: '2026-05-07'
     entity_type: person
@@ -430,12 +382,6 @@ entities_referenced:
     name: 'Hal Puthoff'
     wrap_path: '/people/hal-puthoff'
     context_summary: 'Physicist; Director of Institute for Advanced Studies at Austin (per SAFIRE Project team page); SRI Stargate co-founder with Russell Targ (1972); co-author of the 1974 Nature ''Information transmission under conditions of sensory shielding'' paper. Listed on the SAFIRE Project Science Review Team alongside Ryder, Eric W. Davis, and William A. Gardner (primary attestation: safireproject.com/about-us/team.html). Per investigator review of Lucis Trust 2015 ''Soul Is Light'' (YouTube DUgMd8ic2ig) and 2018 ''Garment of God'' (YouTube R9Yn0hgbVA0), Ryder names Puthoff on camera as ''my friend Dr. Puthoff'' (2015) and ''good buddy'' (2018); quote-population pending caption pull.'
-  - id: e25
-    added_date: '2026-05-07'
-    entity_type: person
-    name: 'Eric W. Davis'
-    wrap_path: '/people/eric-davis'
-    context_summary: 'Chief Science Officer, Institute for Advanced Studies at Austin (per SAFIRE Project team page). Listed on the SAFIRE Project Science Review Team alongside Ryder, Hal Puthoff, and William A. Gardner (primary attestation: safireproject.com/about-us/team.html).'
   - id: e26
     added_date: '2026-05-07'
     entity_type: person
@@ -466,12 +412,6 @@ entities_referenced:
     name: 'James Lacatski'
     wrap_path: '/people/james-lacatski'
     context_summary: 'Former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP) at the Defense Intelligence Agency. Identified by name under oath in Luis Elizondo''s December 19, 2024 QFR Q1 response as the author of the DOPSR-cleared (Sep 6, 2023) statement that names Ryder as the Lockheed Martin Space Systems Vice President who proposed the UAP material divestment plan to AAWSAP leadership. Resolves the prior secondary-attribution-only chain (NewParadigmInstitute / UAP-press) to sworn primary attestation by Elizondo. Co-author of ''Skinwalkers at the Pentagon'' (2021) and ''Inside the U.S. Government Covert UFO Program: Initial Revelations'' (2023).'
-  - id: e31
-    added_date: '2026-05-07'
-    entity_type: organization
-    name: 'International Science Foundation (ISF)'
-    wrap_path: '/organizations/international-science-foundation'
-    context_summary: 'Per William A. Gardner''s first-person biography, Ryder founded the International Science Foundation and served as Chairman of the Board until his death in May 2018, when ISF closed. ISF was the funder of the SAFIRE Project (commercial successor: Aureon Energy Ltd.) per the SAFIRE team page institutional self-attestation and Gardner footnote 1.'
   - id: e32
     added_date: '2026-05-07'
     entity_type: organization
@@ -580,12 +520,6 @@ entities_referenced:
     name: 'Ask a Pol UAP — Matt Laslo / Hoyer interview (2025-10-22)'
     wrap_path: '/documents/askapoluaps-laslo-hoyer-20251022'
     context_summary: 'Matt Laslo (Ask a Pol UAP) interview with former House Majority Leader Steny Hoyer at the Capitol Visitors Center, conducted October 16, 2025, published October 22, 2025. Hoyer questioned about the $10 million Pax River hangar appropriation in the FY2011 MILCON bill (Laslo framed it as "for Lockheed Martin"); Hoyer self-corrected from "private" to "public partner" and did not deny the appropriation. Direct responses captured: "I don''t remember the specifics" / "It may well be. Let me check on it, though" / "No. I''m not. I''m sort of a human intelligence person" (the last in response to a separate NHI question).'
-  - id: e50
-    added_date: '2026-05-09'
-    entity_type: document
-    name: 'Lockheed Martin IBEX-Lo press release (February 17, 2005)'
-    wrap_path: '/documents/lm-ibex-lo-press-release-20050217'
-    context_summary: 'Lockheed Martin Corporation press release, February 17, 2005, "Lockheed Martin to Develop Sensor for Interstellar Boundary Explorer Mission". Announces that the Lockheed Martin Advanced Technology Center will lead development of the IBEX-Lo sensor for NASA''s Small Explorer mission; the Southwest Research Institute (SwRI) awarded the contract to the ATC; Stephen A. Fuselier named lead investigator, Eric Hertzberg named lead engineer, both members of the ATC''s Space Physics Department; overall project under SwRI''s Dr. Dave McComas as Principal Investigator. Independent institutional corroboration of Ryder''s 2015 Lucis Trust talk attestation that IBEX "was built in my lab"; the contract was awarded to the ATC three months before Ryder''s May 2005 promotion to LMSSC Vice President and head of the ATC.'
   - id: e51
     added_date: '2026-05-09'
     entity_type: document
@@ -610,12 +544,6 @@ entities_referenced:
     name: 'Targ et al. — Coherent lidar airborne wind sensor II (Applied Optics 1996)'
     wrap_path: '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996'
     context_summary: 'Targ, R.; Steakley, B.C.; Hawley, J.G.; Ames, L.L., et al., "Coherent lidar airborne wind sensor II: flight-test results at 2 and 10 µm", Applied Optics vol. 35 (36), pp. 7117-7127, 20 December 1996 (DOI 10.1364/AO.35.007117). Russell Targ author byline lists his affiliation as "Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191" — same physical address as the 1991 LMSC byline. Documents the LMSC to Lockheed Martin ATC institutional continuity at one site across the 1995 Lockheed Martin merger. Co-authors include LM ATC staff (Forney, Swanson, Stone, Otto, Zarifis), NASA Langley (Brockman, Calloway, Robinson), and MIT Lincoln Lab (Klein). Abstract page open access; full text paywalled.'
-  - id: e55
-    added_date: '2026-05-13'
-    entity_type: document
-    name: 'Liberation Times — Christopher Sharp "Witnesses Announced for Landmark UFO Congressional Hearing" (2024-11-08)'
-    wrap_path: '/documents/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108'
-    context_summary: 'Liberation Times article by Christopher Sharp dated November 8, 2024 — five days before the November 13, 2024 House Oversight UAP hearing where SD004 was entered into the record. First archived public source on this record to name Ryder. Cites unnamed sources alleging the material transfer was blocked by then-CIA Director of Science and Technology Glenn Gaffney; describes those involved including Ryder as "feeling threatened due to the harshness of exchanges with CIA officials". Names DIA AAWSAP / Bigelow Aerospace facilities as the recipient — the variant later contradicted by Sharp''s March 27, 2025 X post (DHS variant).'
   - id: e56
     added_date: '2026-05-13'
     entity_type: document

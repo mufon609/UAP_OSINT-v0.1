@@ -188,18 +188,6 @@ quotes:
   significance: 'The closing synthesis — Ryder bridges ancient deva and fairy iconography (narrow eyes, slightly angled, narrow chin; 30,000-40,000 years old + Roman times) with modern Graham Hancock-style ayahuasca-induced visions in South America and contemporary "grey alien" archetypes. The Vallée Magonia thesis applied to the canonical grey-alien iconography. Closing question — "what are we really dealing with when we see these kinds of things?" — is the talk''s thesis question.'
   context: Closing slide of Ryder's talk before the meditation break — three drawings (an artist of devas/fairies, a Hancock-ayahuasca participant, a lifelong deva researcher) compared.
 entities_referenced:
-- id: e1
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Dr. James T. Ryder
-  wrap_path: /people/james-ryder
-  context_summary: 'Speaker — retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Centre; Chairman of the Board for the International Science Foundation and the Institute for Venture Science; presenting "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena."'
-- id: e2
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Lawrence
-  wrap_path: /people/lawrence-lucis-trust-moderator
-  context_summary: Lucis Trust Arcane School Conference moderator — opens the talk, introduces the speaker, frames the theosophical premise, and steers the conversational sections. First name only attested in the source.
 - id: e3
   added_date: '2026-05-17'
   entity_type: person

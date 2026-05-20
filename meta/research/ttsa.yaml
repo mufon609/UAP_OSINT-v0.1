@@ -508,138 +508,42 @@ quotes:
   context: 'SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022'
   statement_date: '2022-05-02'
 entities_referenced:
-- id: e1
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Tom DeLonge
-  wrap_path: /people/tom-delonge
-  context_summary: Founder, President, and interim CEO of TTSA; principal investor; author of the 2016 Podesta email about McCasland.
-- id: e2
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Harold E. Puthoff
-  wrap_path: /people/hal-puthoff
-  context_summary: Co-founder and VP Science and Technology of TTSA; President of EarthTech International; ADAM Research Project lead.
-- id: e3
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Jim Semivan
-  wrap_path: /people/jim-semivan
-  context_summary: Co-founder and VP Operations of TTSA; retired CIA Senior Intelligence Service officer (Directorate of Operations).
 - id: e4
   added_date: '2026-04-22'
   entity_type: person
   name: Luis Elizondo
   wrap_path: /people/luis-elizondo
   context_summary: Former Pentagon intelligence official who ran the Advanced Aerospace Threat Identification Program (AATIP); joined TTSA as Director of Global Security and Special Programs in October 2017; named as TTSA Principal Investigator on the 2019 Army CRADA.
-- id: e5
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Steve Justice
-  wrap_path: /people/steve-justice
-  context_summary: Aerospace Division Director of TTSA; former Program Director for Advanced Systems at Lockheed Martin Skunk Works.
-- id: e6
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Christopher Mellon
-  wrap_path: /people/christopher-mellon
-  context_summary: TTSA National Security Affairs Advisor and Advisory Board member; former Deputy Assistant Secretary of Defense for Intelligence; former Staff Director of Senate Select Committee on Intelligence.
-- id: e7
-  added_date: '2026-04-22'
-  entity_type: person
-  name: William N. McCasland
-  wrap_path: /people/william-mccasland
-  context_summary: Retired U.S. Air Force Lieutenant General; named in DeLonge's 2016 Podesta email as having "helped assemble my advisory team"; described as former commander of the Air Force Research Laboratory at Wright-Patterson AFB.
-- id: e8
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Joseph Cannon
-  wrap_path: /people/joseph-cannon
-  context_summary: Principal Investigator (Government side) on CRADA 19-15 between TTSA and the U.S. Army CCDC Ground Vehicle Systems Center; identified as "Dr. Joseph Cannon of U.S. Army Futures Command" in TTSA's 2019 press release.
 - id: e9
   added_date: '2026-04-22'
   entity_type: person
   name: Garry Nolan
   wrap_path: /people/garry-nolan
   context_summary: Advisory Board member per the 2017 SEC filing; professor in Microbiology and Immunology at Stanford University.
-- id: e10
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Colm Kelleher
-  wrap_path: /people/colm-kelleher
-  context_summary: Advisory Board member per the 2017 SEC filing.
-- id: e11
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Kari DeLonge
-  wrap_path: /people/kari-delonge
-  context_summary: Chief Marketing and Product Officer at TTSA subsidiary TTS; sister of Tom DeLonge.
 - id: e12
   added_date: '2026-04-22'
   entity_type: person
   name: Helene Cooper
   wrap_path: /people/helene-cooper
   context_summary: "New York Times reporter — co-author of the December 16, 2017 article \"Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program.\""
-- id: e13
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Ralph Blumenthal
-  wrap_path: /people/ralph-blumenthal
-  context_summary: New York Times co-author of the 2017-12-16 Pentagon UAP program article.
-- id: e14
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Leslie Kean
-  wrap_path: /people/leslie-kean
-  context_summary: New York Times co-author of the 2017-12-16 Pentagon UAP program article.
 - id: e15
   added_date: '2026-04-22'
   entity_type: person
   name: John Podesta
   wrap_path: /people/john-podesta
   context_summary: Hillary Clinton's 2016 campaign chair; recipient of the 2016-01-25 DeLonge email about McCasland (WikiLeaks Podesta emails #3099).
-- id: e16
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: To The Stars, Inc.
-  wrap_path: /organizations/to-the-stars-inc
-  context_summary: TTSA's wholly-owned subsidiary; pre-existing DeLonge-affiliated entertainment business acquired during TTSA's 2017 formation; operates TTSA's Entertainment Division.
 - id: e17
   added_date: '2026-04-22'
   entity_type: organization
   name: U.S. Army Combat Capabilities Development Command (CCDC) Ground Vehicle Systems Center
   wrap_path: /organizations/ccdc-ground-vehicle-systems-center
   context_summary: TTSA's counterparty on CRADA 19-15; located in Warren, Michigan; formerly TARDEC, renamed to DEVCOM Ground Vehicle Systems Center in 2019.
-- id: e18
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: U.S. Army
-  wrap_path: /organizations/us-army
-  context_summary: Parent service of CCDC / DEVCOM Ground Vehicle Systems Center; conducted in-house analysis of the TTSA specimen under the CRADA prior to AARO acquisition per AARO HRR Vol I.
-- id: e19
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: DoD office established 2022; acquired the TTSA material specimen from a private UAP investigating organization and the U.S. Army; contracted ORNL in 2022 for independent characterization.
 - id: e20
   added_date: '2026-04-22'
   entity_type: organization
   name: Oak Ridge National Laboratory (ORNL)
   wrap_path: /organizations/ornl
   context_summary: DOE national laboratory contracted by AARO in 2022 to assess the TTSA-origin material specimen; published the April 2024 Synopsis concluding the material is terrestrial in origin.
-- id: e21
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Office of the Secretary of Defense (OSD)
-  wrap_path: /organizations/osd
-  context_summary: Named in CRADA 19-15 Article C.2 as an Other Participant with the role of sharing historical reports of findings and origin of the TTSA-possessed materiel solutions.
-- id: e22
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Advanced Aerospace Threat Identification Program (AATIP)
-  wrap_path: /organizations/aatip
-  context_summary: Pentagon program Elizondo ran from 2009 to 2017; mentioned in the NYT 2017-12-16 disclosure as the program Elizondo left to join TTSA.
 - id: e23
   added_date: '2026-04-22'
   entity_type: organization
@@ -652,18 +556,6 @@ entities_referenced:
   name: Bigelow Aerospace
   wrap_path: /organizations/bigelow-aerospace
   context_summary: Las Vegas-based aerospace company named in the 2017 NYT article as the Pentagon program's unofficial contractor — the AATIP/AAWSAP-era material custodian that preceded TTSA as the public face of the program's legacy.
-- id: e25
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Central Intelligence Agency (CIA)
-  wrap_path: /organizations/cia
-  context_summary: Semivan's pre-TTSA employer; he retired from the CIA's Directorate of Operations after 25 years as an operations officer.
-- id: e26
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Lockheed Martin Skunk Works
-  wrap_path: /organizations/lockheed-martin-skunk-works
-  context_summary: Justice's pre-TTSA employer; he served as Program Director for Advanced Systems.
 - id: e27
   added_date: '2026-04-22'
   entity_type: organization
@@ -676,18 +568,6 @@ entities_referenced:
   name: NYT 'Glowing Auras and Black Money' 2017-12-16
   wrap_path: /documents/nyt-glowing-auras-pentagon-ufo-2017
   context_summary: The Cooper/Blumenthal/Kean New York Times article that publicly disclosed AATIP and framed TTSA as Elizondo's post-Pentagon venture.
-- id: e29
-  added_date: '2026-04-22'
-  entity_type: document
-  name: SEC Form 1-A Part II (TTSA 2017 Reg A+ offering)
-  wrap_path: /documents/sec-ttsa-1a-partii-2017
-  context_summary: TTSA's preliminary offering circular, CIK 1710274, dated July 10, 2017; primary corporate-registration document.
-- id: e30
-  added_date: '2026-04-22'
-  entity_type: document
-  name: CRADA 19-15 (Novel & Emerging Technology Exploitation)
-  wrap_path: /documents/army-ttsa-crada-19-15-nete-2019
-  context_summary: Cooperative Research and Development Agreement between TTSA and the U.S. Army CCDC Ground Vehicle Systems Center, effective 2019-10-01.
 - id: e31
   added_date: '2026-04-22'
   entity_type: document
@@ -712,30 +592,12 @@ entities_referenced:
   name: Encinitas, California
   wrap_path: /locations/encinitas-california
   context_summary: City on the southern California coast; TTSA headquarters located at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA 92024.
-- id: e35
-  added_date: '2026-04-22'
-  entity_type: event
-  name: TTSA public launch, October 11, 2017
-  wrap_path: /events/ttsa-launch-2017-10-11
-  context_summary: TTSA's public launch event, held October 11, 2017, accompanied the initial Regulation A+ offering qualification and introduced the principals publicly.
 - id: e37
   added_date: '2026-04-22'
   entity_type: person
   name: Eric Davis
   wrap_path: /people/eric-davis
   context_summary: TTSA-affiliated scientist; co-author with Harold E. Puthoff of the September 2024 analysis memorandum to the TTSA Board of Directors regarding the ORNL Materials report.
-- id: e38
-  added_date: '2026-04-22'
-  entity_type: person
-  name: Stan Spry
-  wrap_path: /people/stan-spry
-  context_summary: TTSA Director (Board member) per the 2024 1-K; rebranded Cartel Pictures as Evoke Entertainment LLC after Cartel's December 2024 dissolution.
-- id: e39
-  added_date: '2026-04-22'
-  entity_type: person
-  name: J. Christopher Mizer
-  wrap_path: /people/j-christopher-mizer
-  context_summary: TTSA Director (Board member) since May 14, 2019 per the 2024 1-K.
 - id: e40
   added_date: '2026-04-22'
   entity_type: document
@@ -748,30 +610,12 @@ entities_referenced:
   name: TTS Analysis on ORNL Report (Puthoff/Davis memorandum publication)
   wrap_path: /documents/ttsa-puthoff-davis-ornl-analysis-memo-2025
   context_summary: TTSA blog post published 2025-02-28 containing the Puthoff/Davis counter-memorandum submitted to the TTSA Board of Directors on 2024-09-27 in response to ORNL's April 2024 terrestrial-origin finding.
-- id: e42
-  added_date: '2026-04-22'
-  entity_type: document
-  name: SEC Form 253(g)(2) Supplement — TTSA Regulation A termination
-  wrap_path: /documents/sec-ttsa-253g2-reg-a-termination-2021
-  context_summary: SEC Form 253(g)(2) Supplement to Offering Circular dated September 17, 2021, File No. 024-11243. Terminates TTSA's Regulation A+ offering effective September 18, 2021. Ends the 2017-2021 crowdfunding capital-raising chapter.
 - id: e43
   added_date: '2026-04-22'
   entity_type: document
   name: SEC Form 1-K Annual Report for FY2021 (To The Stars Inc.)
   wrap_path: /documents/sec-ttsa-1k-2021
   context_summary: SEC Form 1-K filed 2022-05-02 covering fiscal year ended December 31, 2021; first annual report filed under the post-rename corporate name "To The Stars Inc."; documents the February 2021 strategic reorganization, the December 24 2020 Binding Term Sheet with DeLonge, the June 1 2021 Amendment (784,970 shares to Gravity Holdings), the April 1 2021 office lease termination, the November 30 2021 corporate name amendment, and the four Reg A offerings history.
-- id: e44
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Love Movie LLC
-  wrap_path: /organizations/love-movie-llc
-  context_summary: TTSA-formed LLC sold to Tom DeLonge for $525,000 total consideration under the December 24, 2020 Binding Term Sheet; held the AvA Licensing Agreement intellectual property.
-- id: e45
-  added_date: '2026-04-22'
-  entity_type: organization
-  name: Gravity Holdings LLC
-  wrap_path: /organizations/gravity-holdings-llc
-  context_summary: DeLonge Family Trust sole-member LLC; received 784,970 TTSA shares at $1.20/share under the June 1, 2021 Binding Term Sheet Amendment; per the 2024 Form 1-K holds 52.16% of TTSA Class A Common Stock outstanding.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-22'

@@ -334,53 +334,18 @@ entities_referenced:
   references:
   - quote_id: q3
   - quote_id: q5
-- id: e3
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Bruce Mainwaring
-  wrap_path: /people/bruce-mainwaring
-  context_summary: 'Father of Scott Mainwaring; supported the SAFIRE Project through the Mainwaring Archive Foundation. Per the SAFIRE team page, devoted fan of the Electric Universe idea for half a century with lifelong work in applied electrical sciences.'
-  references:
-  - quote_id: q3
-  - quote_id: q5
-- id: e4
-  added_date: '2026-05-07'
-  entity_type: person
-  name: David Talbott
-  wrap_path: /people/david-talbott
-  context_summary: 'Per the SAFIRE team page, recognized in Monty Childs'' SAFIRE concept a real and empircal [sic] method for testing the Electric Sun model, and invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference. Initiator and co-producer of the annual Electric Universe Conferences.'
-  references:
-  - quote_id: q7
 - id: e5
   added_date: '2026-05-07'
   entity_type: person
   name: Wal Thornhill
   wrap_path: /people/wal-thornhill
   context_summary: 'Per the SAFIRE Project historical and team pages, "arguably the world''s leading authority on the Electric Sun model"; presents the key factors that define the new model and helps propose and clarify SAFIRE experiments. Listed on the consulting team.'
-- id: e6
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Donald Scott
-  wrap_path: /people/donald-scott
-  context_summary: 'Listed on SAFIRE consulting team. Per the SAFIRE team page, "a key player in the EU Group, offers a lifetime of experience with both traditional and now bleeding-edge electrical concepts." SAFIRE Project historical page:has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics.'
 - id: e7
   added_date: '2026-05-07'
   entity_type: person
   name: Jano Onderco
   wrap_path: /people/jan-onderco
   context_summary: 'Listed on SAFIRE core team as Monty''s right-hand man in the lab, responsible for all data acquisition. Aureon Energy team page:since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. Master''s in Technical Cybernetics and Controlling from Slovak Technical University.'
-- id: e8
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Jason Lickver
-  wrap_path: /people/jason-lickver
-  context_summary: 'Listed on SAFIRE core team as engineer who helps analyze and troubleshoot Monty''s design blueprints and collaborates with construction of the SAFIRE apparatus itself. Aureon Energy team page:has been a driving force behind the SAFIRE Team since 2014, serving as the Senior Design Engineer on SAFIRE II and III.'
-- id: e9
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Leighton Macmillan
-  wrap_path: /people/leighton-macmillan
-  context_summary: 'Listed on SAFIRE core team. Per the SAFIRE team page, "plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average ''out of the box'' science project."'
 - id: e10
   added_date: '2026-05-07'
   entity_type: person
@@ -398,12 +363,6 @@ entities_referenced:
   references:
   - quote_id: q16
   - quote_id: q18
-- id: e12
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Lowell Morgan
-  wrap_path: /people/lowell-morgan
-  context_summary: 'Listed on SAFIRE core team. Per the SAFIRE team page, "brings a lifetime of experience in plasma physics, both theoretical and applied; he is also extremely skilled at writing peer reviewable papers in this field."'
 - id: e13
   added_date: '2026-05-07'
   entity_type: person
@@ -412,49 +371,6 @@ entities_referenced:
   context_summary: 'Listed on the SAFIRE Project Science Review Team as Chairman, International Science Foundation. Dr. William A. Gardner''s biography, founded the International Science Foundation; ISF closed at Ryder''s death in May 2018. The IVS Ryder also chaired was founded by Professor Gerald Pollack of the University of Washington. Also listed on the SAFIRE consulting team — "with a wealth of exerpience [sic] in the aerospace industry, points out the latest discoveries in space that were not anticipated."'
   references:
   - quote_id: q14
-- id: e14
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Hal Puthoff
-  wrap_path: /people/hal-puthoff
-  context_summary: 'Listed on the SAFIRE Project Science Review Team as Harold Puthoff PhD, Director, Institute for Advanced Studies at Austin. E-Cat World March 8 2020 article:named to Aureon Energy''s Science Advisory Board at the company''s website launch.'
-  references:
-  - quote_id: q18
-- id: e15
-  added_date: '2026-05-07'
-  entity_type: person
-  name: Eric W. Davis
-  wrap_path: /people/eric-davis
-  context_summary: 'Listed on the SAFIRE Project Science Review Team as Eric W. Davis Ph.D., Chief Science Officer, Institute for Advanced Studies at Austin, Austin, TX.'
-- id: e16
-  added_date: '2026-05-07'
-  entity_type: person
-  name: William A. Gardner
-  wrap_path: /people/william-gardner
-  context_summary: 'Listed on the SAFIRE Project Science Review Team as Professor Emeritus, University of California. Per his own first-person biography on cyclostationarity.com, began a five-year collaboration with Ryder in 2013; provided voluntary support for SAFIRE through electromagnetic modeling of laboratory-confined/controlled plasma. Footnote 1 of his biography is the named-source primary attestation of Ryder''s May 2018 death and ISF closure.'
-  references:
-  - quote_id: q14
-- id: e19
-  added_date: '2026-05-07'
-  entity_type: organization
-  name: Aurtas International, Inc.
-  wrap_path: /organizations/aurtas-international
-  context_summary: 'Aureon Energy team page:Aureon Energy''s predecessor company; Childs''s prior corporate vehicle. Jan Onderco''s Aureon biography:located in Mississauga, Ontario; SAFIRE project ran at Aurtas International from at least 2014.'
-  references:
-  - quote_id: q15
-- id: e20
-  added_date: '2026-05-07'
-  entity_type: organization
-  name: Aureon Energy Ltd.
-  wrap_path: /organizations/aureon-energy
-  context_summary: 'Commercial successor to the SAFIRE Project research line. Aureon Energy history page:headquartered in Midland, Ontario, Canada; SAFIRE I in lab 2013, SAFIRE II in lab 2019. E-Cat World March 8 2020 article:website launched at https://aureon.ca on March 8, 2020. Childs is Chairman & Founder.'
-  references:
-  - quote_id: q5
-  - quote_id: q6
-  - quote_id: q13
-  - quote_id: q15
-  - quote_id: q17
-  - quote_id: q18
 - id: e21
   added_date: '2026-05-07'
   entity_type: organization
@@ -464,26 +380,12 @@ entities_referenced:
   references:
   - quote_id: q6
   - quote_id: q14
-- id: e22
-  added_date: '2026-05-07'
-  entity_type: organization
-  name: Mainwaring Archive Foundation
-  wrap_path: /organizations/mainwaring-archive-foundation
-  context_summary: 'SAFIRE Project genesis page:Bruce and Scott Mainwaring decided to support the project through the Mainwaring Archive Foundation. Per the SAFIRE team page, foundation-partner block lists Bruce Mainwaring and Scott Mainwaring.'
-  references:
-  - quote_id: q3
 - id: e23
   added_date: '2026-05-07'
   entity_type: organization
   name: Institute for Advanced Studies at Austin
   wrap_path: /organizations/institute-for-advanced-studies-at-austin
   context_summary: 'SAFIRE Project corporate team page:Hal Puthoff is Director of Institute for Advanced Studies at Austin and Eric W. Davis is Chief Science Officer of Institute for Advanced Studies at Austin (Austin, TX). The two SAFIRE Science Review Team members share the IASA institutional anchor.'
-- id: e25
-  added_date: '2026-05-07'
-  entity_type: organization
-  name: Hathaway Consulting Services
-  wrap_path: /organizations/hathaway-consulting-services
-  context_summary: 'Listed on the SAFIRE Project Science Review Team and as a corporate consultant on the team page.'
 - id: e30
   added_date: '2026-05-07'
   entity_type: organization

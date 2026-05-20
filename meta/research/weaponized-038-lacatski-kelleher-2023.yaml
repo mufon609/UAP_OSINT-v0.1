@@ -259,18 +259,6 @@ quotes:
   significance: Corbell's closing recap of the centerpiece craft-of-unknown-origin passage from the book and Lacatski's direct response — "you see I'm not speaking at all I'm not going beyond what it was what you read from the book." Lacatski's structural position; he affirms the book's content as written but refuses to extend or speak beyond it in spoken interview. Critical for parsing Lacatski's evidentiary footprint — the book is the on-record statement; the interview only affirms what the book already states.
   context: Corbell's closing summary of the interview's centerpiece and what it implies; Lacatski's final response on going beyond the book wording
 entities_referenced:
-- id: e1
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Dr. James Lacatski
-  wrap_path: /people/james-lacatski
-  context_summary: Former AAWSAP director at DIA (per his own attestation); first guest in the interview; subject of the centerpiece craft-of-unknown-origin passage from the book's chapter 9
-- id: e2
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Dr. Colm Kelleher
-  wrap_path: /people/colm-kelleher
-  context_summary: Former BAASS program manager; co-author of the book; second guest
 - id: e3
   added_date: '2026-05-17'
   entity_type: person
@@ -325,12 +313,6 @@ entities_referenced:
   name: AATIP — Advanced Aerospace Threat Identification Program
   wrap_path: /organizations/aatip
   context_summary: Pentagon program whose name Lacatski did not create but consented to as a security-protective alternate naming; auto-caption renders as "atip" / "a tip"
-- id: e12
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: BAASS — Bigelow Aerospace Advanced Space Studies
-  wrap_path: /organizations/baass
-  context_summary: Bigelow subsidiary that executed AAWSAP for DIA; "created specifically" for DIA's needs per Lacatski; auto-caption renders as "bass"
 - id: e13
   added_date: '2026-05-17'
   entity_type: organization
@@ -343,12 +325,6 @@ entities_referenced:
   name: Defense Intelligence Agency (DIA)
   wrap_path: /organizations/dia
   context_summary: AAWSAP's home agency; Lacatski's employer through retirement in 2016; defense warning office within DIA was the funding recipient
-- id: e15
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: Department of Defense (DoD)
-  wrap_path: /organizations/dod
-  context_summary: Lacatski distinguishes Pentagon (DOD) where AATIP operated from DIA where AAWSAP operated
 - id: e16
   added_date: '2026-05-17'
   entity_type: organization
@@ -361,12 +337,6 @@ entities_referenced:
   name: All-Domain Anomaly Resolution Office (AARO)
   wrap_path: /organizations/aaro
   context_summary: Current DoD UAP office; referenced by Lacatski in discussing what work AARO has yet to do
-- id: e18
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: WEAPONIZED Podcast
-  wrap_path: /organizations/weaponized-podcast
-  context_summary: George Knapp + Jeremy Corbell's podcast; venue for this interview
 - id: e19
   added_date: '2026-05-17'
   entity_type: document

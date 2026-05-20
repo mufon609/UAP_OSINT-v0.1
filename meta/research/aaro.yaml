@@ -1433,88 +1433,6 @@ timeline:
     path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
     location: 'WSJ article body, F-117 disinformation and Yankee Blue findings sections'
 entities_referenced:
-- id: e1
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Timothy Phillips
-  wrap_path: /people/tim-phillips
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Jon T. Kosloski
-  wrap_path: /people/jonathan-kosloski
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Department of Defense (DoD)
-  wrap_path: /organizations/dod
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Office of the Director of National Intelligence (ODNI)
-  wrap_path: /organizations/odni
-- id: e6
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: National Security Agency (NSA)
-  wrap_path: /organizations/nsa
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Unidentified Aerial Phenomena Task Force (UAPTF)
-  wrap_path: /organizations/uaptf
-- id: e9
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Airborne Object Identification and Management Synchronization Group (AOIMSG)
-  wrap_path: /organizations/aoimsg
-- id: e10
-  added_date: '2026-04-20'
-  entity_type: document
-  name: AARO Historical Record Report Volume I
-  wrap_path: /documents/aaro-historical-record-report-vol-i
-- id: e11
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security
-  wrap_path: /organizations/ousd-is
-- id: e12
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Sancorp Consulting, LLC
-  wrap_path: /organizations/sancorp-consulting
-- id: e13
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Washington Headquarters Services
-  wrap_path: /organizations/whs
-- id: e14
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Director of Administration and Management
-  wrap_path: /organizations/da-m
-- id: e15
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: AARO Executive Council
-  wrap_path: /organizations/aaroexec
-  context_summary: 'AAROEXEC — renamed from AOIMEXEC by the Hicks AARO establishment memorandum; provides oversight and direction to AARO per the memorandum.'
-- id: e16
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: Georgia Tech Research Institute
-  wrap_path: /organizations/gtri
-  context_summary: 'Georgia Tech Research Institute (GTRI) — developer of the GREMLIN sensor architecture per AARO FY24 Consolidated Annual Report on UAP. GREMLIN deployed in 1Q FY 2025 to support pattern-of-life analysis at a site of national security.'
 - id: e17
   added_date: '2026-05-01'
   entity_type: person
@@ -1527,18 +1445,6 @@ entities_referenced:
   name: Christopher Mellon
   wrap_path: /people/christopher-mellon
   context_summary: 'Former Deputy Assistant Secretary of Defense for Intelligence; author of the April 12, 2024 Debrief essay "The Pentagon''s New UAP Report is Seriously Flawed" — the primary-source rebuttal of AARO HRR Vol I (q75) — characterizing it as "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service". The same passage is also quoted secondhand in Shellenberger''s November 13, 2024 House Oversight written testimony.'
-- id: e19
-  added_date: '2026-05-01'
-  entity_type: person
-  name: Tim Gallaudet
-  wrap_path: /people/tim-gallaudet
-  context_summary: 'Former NOAA Administrator and Navy Rear Admiral; witness at the November 13, 2024 House Oversight hearing. Written testimony describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff.'
-- id: e20
-  added_date: '2026-05-01'
-  entity_type: person
-  name: Anna Paulina Luna
-  wrap_path: /people/anna-paulina-luna
-  context_summary: 'U.S. Representative (R-Fla.) and Chairwoman of the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets. Authored the March 31, 2026 letter to Secretary of War Hegseth requesting 46 UAP video files held by AARO/Department of War.'
 - id: e21
   added_date: '2026-05-01'
   entity_type: organization
@@ -1557,12 +1463,6 @@ entities_referenced:
   name: Nancy Mace
   wrap_path: /people/nancy-mace
   context_summary: 'U.S. Representative (R-S.C.) and Chair of the House Oversight Subcommittee on Cybersecurity, Information Technology, and Government Innovation. Co-chaired (with Glenn Grothman) the November 13, 2024 joint subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth"; opening statement framed the hearing as receiving allegations of UAP-related misinformation and disinformation by government officials.'
-- id: e24
-  added_date: '2026-05-01'
-  entity_type: person
-  name: Glenn Grothman
-  wrap_path: /people/glenn-grothman
-  context_summary: 'U.S. Representative (R-Wis.) and Chair of the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. Co-chaired the November 13, 2024 joint subcommittee hearing on UAP. Requested the December 6, 2024 closed-door briefing with AARO Director Kosloski on the FY 2024 Annual Report.'
 - id: e25
   added_date: '2026-05-01'
   entity_type: person
@@ -1623,24 +1523,12 @@ entities_referenced:
   name: Aruna Viswanatha
   wrap_path: /people/aruna-viswanatha
   context_summary: 'Wall Street Journal staff reporter; co-author with Joel Schectman of the June 6, 2025 WSJ article "The Pentagon Disinformation That Fueled America''s UFO Mythology" previewing AARO Volume II findings drawn from extensive interviews with Kirkpatrick.'
-- id: e35
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Influence and Perception Management Office
-  wrap_path: /organizations/ipmo
-  context_summary: OUSD(I&S) sub-office established March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. Sister office to AARO under the same OUSD(I&S) parent administrative authority; both offices hold prime contracts with Sancorp Consulting (HQ003422C0064 IPMO PWS dated April 25, 2022; HQ003422C0094 AARO contract signed September 1, 2022) issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurements.
 - id: e36
   added_date: '2026-05-02'
   entity_type: organization
   name: Defense Military Deception Program Office
   wrap_path: /organizations/dmdpo
   context_summary: OUSD(I&S) sub-office providing governance, oversight, and operational implementation of military deception planning and execution capabilities across the DoD. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
-- id: e37
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: OSD Red Team
-  wrap_path: /organizations/osd-red-team
-  context_summary: OUSD(I&S) sub-office serving as the SECDEF's and DEPSECDEF's red team. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
 - id: e38
   added_date: '2026-05-02'
   entity_type: organization
@@ -1683,36 +1571,6 @@ entities_referenced:
   name: Becky Zimmerman
   wrap_path: /people/becky-zimmerman
   context_summary: Performing the Duties of (PTDO) Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs (HD&HA); briefed 14 senators on the December 2023 Joint Base Langley-Eustis drone incursions on March 6, 2024 alongside RADM Spedero (Joint Staff) and Maj Gen Sherman (USAF) per FOIA 24-F-0894 Bodian read-out.
-- id: e45
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Lane A. Bodian
-  wrap_path: /people/lane-bodian
-  context_summary: Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs (OASD/LA). Authored the March 6, 2024 1:28 PM read-out summary of the SASC member briefing on the December 2023 JBLE drone incursions per FOIA 24-F-0894 — the read-out that documents Sen. Gillibrand's "animated response" on AARO sUAS cataloging.
-- id: e46
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Heather King
-  wrap_path: /people/heather-king
-  context_summary: Senior Executive Service, immediate Secretary of Defense office. Author of the March 6, 2024 10:19 AM email to OSD/PA (Christopher Meagher, Waibel) flagging that "the Deputy" (Hicks) had connected the Joint Base Langley-Eustis Breaking Defense story to the AARO HRR Vol I rollout per FOIA 24-F-0894 — direct documentation that the Deputy SecDef office linked the JBLE drone story to the AARO HRR rollout on the day of the rollout briefings.
-- id: e47
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Christopher Meagher
-  wrap_path: /people/christopher-meagher
-  context_summary: Senior Executive Service, Office of the Assistant Secretary of Defense for Public Affairs (OSD/PA). Recipient of Heather King's March 6, 2024 10:19 AM email connecting the JBLE Breaking Defense story to the AARO HRR Vol I rollout per FOIA 24-F-0894.
-- id: e48
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Rheanne E. Wirkkala
-  wrap_path: /people/rheanne-wirkkala
-  context_summary: HON OSD OASD/LA — Assistant Secretary of Defense for Legislative Affairs office. Authored the March 6, 2024 11:51 AM read-out summary documenting two AARO classified Hill briefings (Compartmented Annex 1300-1400; TS//SCI 1400-1530) on the Historical Record Report — including that Acting Director Phillips and a third (b)(6)-redacted presenter were joined in both sessions by Dr. Sean Kirkpatrick three months after his December 1, 2023 official AARO departure (FOIA 24-F-0894).
-- id: e49
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Avril Haines
-  wrap_path: /people/avril-haines
-  context_summary: Director of National Intelligence (January 2021 – January 2025). Per Christopher Mellon's April 12, 2024 Debrief essay (q72), Haines and her Office did not sign off on AARO HRR Vol I — the first AARO report submitted to Congress without DNI sign-off. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (q40), establishing two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
 - id: e50
   added_date: '2026-05-03'
   entity_type: document
@@ -1725,12 +1583,6 @@ entities_referenced:
   name: BlackVault FOIA 24-F-0894 release — AARO HRR Vol I rollout coordination emails
   wrap_path: /documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails
   context_summary: Department of Defense FOIA case 24-F-0894 (released August 26, 2025; 14 pages; cover letter signed by Pamela Andrews, Chief, FOIA, OSD/JS) covering OASD/PA records on the AARO Historical Record Report Volume I rollout (Feb 1 – Mar 7, 2024 email range). Sourced as `government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf`. Carries the Gough/ODNI exchange agreeing to omit ODNI from the public rollout, the King/Meagher Deputy-SecDef-office Langley-rollout-link email, the Bodian SASC briefing read-out (Gillibrand "animated response"), the Wirkkala AARO Hill-briefings read-out, and the Gough/Kozik portfolio exchange — all quoted across q40–q47.
-- id: e52
-  added_date: '2026-05-03'
-  entity_type: document
-  name: AARO FY 2024 Consolidated Annual Report on UAP (November 14, 2024)
-  wrap_path: /documents/aaro-fy24-consolidated-annual-report-uap-2024
-  context_summary: AARO's annual report under the Section 1683 statutory reporting requirement, dated November 14, 2024. Sourced as `government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf`. Documents 757 UAP reports for the May 1 2023 – June 1 2024 reporting period, 49 case resolutions, 21 cases meriting further analysis, and the GREMLIN prototype sensor system (Georgia Tech Research Institute).
 - id: e53
   added_date: '2026-05-03'
   entity_type: document
@@ -1743,12 +1595,6 @@ entities_referenced:
   name: WSJ — "The Pentagon Disinformation That Fueled America's UFO Mythology" (Schectman + Viswanatha, June 6, 2025)
   wrap_path: /documents/wsj-pentagon-disinformation-ufo-mythology-2025
   context_summary: Wall Street Journal article by Joel Schectman and Aruna Viswanatha previewing AARO Volume II findings drawn from extensive interviews with Kirkpatrick. Sourced as `news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html`. Documents the F-117 Area-51 doctored-photos finding (1980s Air Force colonel; confessed to AARO investigators in 2023) and the "Yankee Blue" induction-briefing-ritual finding.
-- id: e55
-  added_date: '2026-05-03'
-  entity_type: document
-  name: Luna letter to Hegseth requesting 46 UAP video files (March 31, 2026)
-  wrap_path: /documents/oversight-house-uap-request-letter-luna-2026
-  context_summary: House Oversight and Government Reform Task Force on the Declassification of Federal Secrets letter, signed by Chairwoman Anna Paulina Luna (R-Fla.), to Secretary of War Pete Hegseth requesting delivery of 46 UAP video files "as soon as possible but no later than April 14, 2026". Sourced as `government/oversight-house-gov-uap-request-letter-luna-20260331.pdf`. Letter finds AARO responses "less than adequate" and cites whistleblowers on "additional video records of potential UAP sightings". The April 14 deadline passed without delivery (per NBC News April 18, 2026 reporting).
 - id: e56
   added_date: '2026-05-03'
   entity_type: person
@@ -1767,12 +1613,6 @@ entities_referenced:
   name: Luis Elizondo
   wrap_path: /people/luis-elizondo
   context_summary: 'Former director of the Advanced Aerospace Threat Identification Program (AATIP)-era Pentagon UAP effort; author of "Imminent" (2024). Witness at the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing on UAP — written testimony sourced as `government/oversight-house-gov-elizondo-written-testimony-20241113.pdf`.'
-- id: e59
-  added_date: '2026-05-03'
-  entity_type: person
-  name: James Comer
-  wrap_path: /people/james-comer
-  context_summary: 'U.S. Representative (R-Ky.) and Chairman of the House Committee on Oversight and Government Reform. Per NewsNation reporting on April 16, 2026, Luna stated she is prepared to work with Comer to exercise the committee''s subpoena authority if institutional resistance to her March 31, 2026 46-video request continues.'
 - id: e60
   added_date: '2026-05-03'
   entity_type: organization
@@ -1809,12 +1649,6 @@ entities_referenced:
   name: Defense Intelligence Agency
   wrap_path: /organizations/dia
   context_summary: 'Per AARO Historical Record Report Volume I, DIA managed the AAWSAP/AATIP program (cancelled by DIA in 2012). After cancellation, the AAWSAP/AATIP cohort proposed to the Department of Homeland Security a new version under a Special Access Program — the proposed KONA BLUE program AARO''s HRR Vol I documents. DIA is also referenced extensively across the AARO node''s broader documentary corpus (DIA contract status briefings, FOIA responses, DIRD technical reports — many archived in `sources/government/`).'
-- id: e66
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: Department of Homeland Security
-  wrap_path: /organizations/dhs
-  context_summary: 'Per AARO Historical Record Report Volume I, DHS leadership rejected the proposed KONA BLUE Prospective Special Access Program for lacking merit. AARO HRR Vol I''s finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS." The KONA BLUE proposal had been brought to AARO''s attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics".'
 - id: e67
   added_date: '2026-05-03'
   entity_type: person

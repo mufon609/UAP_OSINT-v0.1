@@ -701,12 +701,6 @@ entities_referenced:
   name: U.S. Navy
   wrap_path: /organizations/us-navy
   context_summary: Fravor's service branch; parent organization of VFA-41, Carrier Airwing 11, USS Nimitz, USS Princeton; Fravor flew for 18 years in the Navy
-- id: e3
-  added_date: '2026-04-19'
-  entity_type: organization
-  name: Strike Fighter Squadron 41 (VFA-41)
-  wrap_path: /organizations/vfa-41
-  context_summary: '"world-famous Black Aces" — Navy F-18F squadron Fravor commanded in 2004'
 - id: e4
   added_date: '2026-04-19'
   entity_type: organization
@@ -725,24 +719,12 @@ entities_referenced:
   name: USS Princeton
   wrap_path: /organizations/uss-princeton
   context_summary: Ticonderoga-class guided-missile cruiser controlling the 2 V 2 training exercise; tracking the objects for 2 weeks prior; named as controller in q2 and q31, as tracking platform in q33
-- id: e7
-  added_date: '2026-04-19'
-  entity_type: person
-  name: Jay Stratton
-  wrap_path: /people/jay-stratton
-  context_summary: Contacted Fravor in 2009 to investigate the encounter; described as part of the ATIP program in the Pentagon led by Lue Elizondo (q9)
 - id: e8
   added_date: '2026-04-19'
   entity_type: person
   name: Luis Elizondo
   wrap_path: /people/luis-elizondo
   context_summary: Named as leader of the ATIP program in the Pentagon (q9); contacted Fravor directly in 2016 (q11); left the Pentagon in protest and co-founded TTSA (q12). Source uses "Lue" in q9 and q12 (alias-of-record per naming_quirks)
-- id: e9
-  added_date: '2026-04-19'
-  entity_type: person
-  name: Alex Dietrich
-  wrap_path: /people/alex-dietrich
-  context_summary: The other pilot in Fravor's flight; contacted Fravor years after the encounter to ask if he had been contacted about the incident (q10)
 - id: e10
   added_date: '2026-04-19'
   entity_type: person

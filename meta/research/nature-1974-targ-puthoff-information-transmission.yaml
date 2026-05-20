@@ -193,12 +193,6 @@ entities_referenced:
   name: Harold E. Puthoff
   wrap_path: /people/hal-puthoff
   context_summary: Lead co-author of the Nature paper; named in the author byline as Dr. Harold E. Puthoff
-- id: e2
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Russell Targ
-  wrap_path: /people/russell-targ
-  context_summary: Co-author of the Nature paper; named in the author byline as Russell Targ
 - id: e3
   added_date: '2026-05-16'
   entity_type: person
@@ -211,16 +205,4 @@ entities_referenced:
   name: Pat Price
   wrap_path: /people/pat-price
   context_summary: Subject of the second study in the Nature paper — double-blind experiments measuring ability to describe remote outdoor scenes many miles from his physical location
-- id: e5
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Edgar D. Mitchell
-  wrap_path: /people/edgar-mitchell
-  context_summary: Acknowledged in the paper as Dr. Edgar D. Mitchell of the Institute of Noetic Sciences
-- id: e6
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: Stanford Research Institute
-  wrap_path: /organizations/stanford-research-institute
-  context_summary: Institutional letterhead of the paper — STANFORD RESEARCH INSTITUTE, Menlo Park, California 94025; the experiments were carried out in SRI's facility for EEG research and SRI's Engineering Building
 naming_quirks: []

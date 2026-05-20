@@ -283,12 +283,6 @@ quotes:
   significance: Kirkpatrick projects AARO success forward to a whole-of-government capability — military personnel resolving UAP first, then the entire United States Government including civilian agencies; explicit civilian-agencies extension framing absent from oral version
   context: Statement for the Record — forward projection of AARO success path
 entities_referenced:
-- id: e1
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: Author of the Statement for the Record; Director of AARO at the time of submission
 - id: e2
   added_date: '2026-04-28'
   entity_type: person
@@ -301,12 +295,6 @@ entities_referenced:
   name: Joni Ernst
   wrap_path: /people/joni-ernst
   context_summary: Ranking Member of the Subcommittee; addressed in the opening salutation
-- id: e4
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: All-Domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: The DOD office Kirkpatrick directs and that the Statement for the Record describes
 - id: e5
   added_date: '2026-04-28'
   entity_type: organization
@@ -325,18 +313,6 @@ entities_referenced:
   name: Department of Energy
   wrap_path: /organizations/doe
   context_summary: Referenced by Kirkpatrick as a partner agency in AARO's interagency partnerships
-- id: e8
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: Senate Committee on Armed Services
-  wrap_path: /organizations/sasc
-  context_summary: Parent committee of the Subcommittee on Emerging Threats and Capabilities; the committee to which the Statement for the Record was submitted
-- id: e9
-  added_date: '2026-04-28'
-  entity_type: event
-  name: 2023-04-19 SASC AARO Hearing
-  wrap_path: /events/2023-04-19-sasc-aaro-hearing
-  context_summary: The hearing to which this Statement for the Record was submitted
 - id: e10
   added_date: '2026-04-28'
   entity_type: transcript

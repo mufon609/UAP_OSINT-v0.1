@@ -440,14 +440,6 @@ entities_referenced:
   - quote_id: q1
   - quote_id: q19
   - quote_id: q28
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Navy Fighter Attack Squadron 11
-  wrap_path: /organizations/vfa-11
-  context_summary: Graves's 2014 squadron (the Red Rippers); where the Warning Area W-72 encounter occurred after radar-system upgrades began detecting unknown objects operating in their airspace.
-  references:
-  - quote_id: q6
 - id: e4
   added_date: '2026-04-20'
   entity_type: organization
@@ -456,16 +448,6 @@ entities_referenced:
   context_summary: Graves's 2014 base of assignment in Virginia Beach; home of VFA-11 the Red Rippers.
   references:
   - quote_id: q6
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Americans for Safe Aerospace
-  wrap_path: /organizations/americans-for-safe-aerospace
-  context_summary: Organization founded by Graves as a haven for UAP witnesses previously unspoken due to the absence of a safe intake process; more than 30 witnesses have come forward and almost 5,000 Americans have joined; safeaerospace.org.
-  references:
-  - quote_id: q10
-  - quote_id: q16
-  - quote_id: q22
 - id: e6
   added_date: '2026-04-20'
   entity_type: organization
@@ -499,22 +481,6 @@ entities_referenced:
   context_summary: Boeing contractors operating near one of the launch facilities at Vandenberg Air Force Base in 2003 are the witnesses to the 100-yard red square sighting Graves recounts.
   references:
   - quote_id: q22
-- id: e10
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: American Institute of Aeronautics and Astronautics
-  wrap_path: /organizations/aiaa
-  context_summary: Graves's disclosed collaboration partner on a UAP integration committee to integrate engineering prowess into the problem.
-  references:
-  - quote_id: q26
-- id: e11
-  added_date: '2026-04-20'
-  entity_type: document
-  name: New York Times 2017 UAP disclosure article
-  wrap_path: /documents/2017-nyt-tic-tac
-  context_summary: Graves recognized the voices and video from the 2017 New York Times article because he had seen it when it was taken and when it was debriefed.
-  references:
-  - quote_id: q20
 - id: e12
   added_date: '2026-04-20'
   entity_type: media

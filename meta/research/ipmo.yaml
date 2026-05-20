@@ -253,12 +253,6 @@ quotes:
   context: 'SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center'
   statement_date: '2024-05-09'
 entities_referenced:
-- id: e1
-  added_date: '2026-05-02'
-  entity_type: person
-  name: James A. Holly
-  wrap_path: /people/james-holly
-  context_summary: 'First Acting Director of IPMO from establishment (March 1, 2022); signed Notre Dame memo May 27, 2022 as Acting Director; delivered NSI Speaker Series IPMO 101 talk October 3, 2023.'
 - id: e2
   added_date: '2026-05-02'
   entity_type: person
@@ -271,48 +265,6 @@ entities_referenced:
   name: Deitra Trotter
   wrap_path: /people/deitra-trotter
   context_summary: 'COL; co-author (with HON Ronald S. Moultrie) of NSI 23-S-3438 IPMO 101 slides per PDF metadata. Specific institutional role within IPMO or OUSD(I&S) not attested at primary-source level beyond the slide authorship.'
-- id: e4
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security
-  wrap_path: /organizations/ousd-is
-  context_summary: 'IPMO''s parent organization. Per IPMO PWS §1.2, USD(I&S) is supported by DDI(C&SP), who is supported by the Director of IPMO for influence and perception management matters.'
-- id: e5
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: 'IPMO is a DoD office. Establishment per direction from the Secretary of Defense.'
-- id: e6
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-  context_summary: 'Sister office under OUSD(I&S), established four months after IPMO (July 15, 2022 vs March 1, 2022). Both share the same parent and the same prime contractor (Sancorp Consulting).'
-- id: e7
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Defense Military Deception Program Office
-  wrap_path: /organizations/dmdpo
-  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5; provides governance, oversight, and operational implementation of military deception planning and execution capabilities.'
-- id: e8
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: OSD Red Team
-  wrap_path: /organizations/osd-red-team
-  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
-- id: e9
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Strategy Coordination Program Office
-  wrap_path: /organizations/scpo
-  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
-- id: e10
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Counterproliferation of Weapons of Mass Destruction Office
-  wrap_path: /organizations/cp-wmd
-  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
 - id: e11
   added_date: '2026-05-02'
   entity_type: organization
@@ -331,24 +283,6 @@ entities_referenced:
   name: Sancorp Consulting, LLC
   wrap_path: /organizations/sancorp-consulting
   context_summary: 'Prime contractor providing IPMO Support Services under three sequential 8(a) sole-source contracts (HQ003422C0064 from June 2022; HQ003423C0061 from May 2023; HQ003424C0046 from May 2024) awarded by Washington Headquarters Services Acquisition Directorate. Same vendor simultaneously holds AARO Support Services contracts.'
-- id: e14
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Washington Headquarters Services
-  wrap_path: /organizations/whs
-  context_summary: 'Acquisition Directorate at WHS issues IPMO''s prime contracts as 8(a) sole-source procurements.'
-- id: e15
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: Premier Enterprise Solutions, LLC
-  wrap_path: /organizations/premier-enterprise-solutions
-  context_summary: 'Named in the SAMDaily / fbodaily.com archive of the WHS HQ003423C0061 award notice prose description as if Premier had been awarded an IPMO contract. Confirmed clerical error: USAspending HQ003423C0061 record (Sancorp UEI GRYKNJ8BGFC8) and the SAMDaily structured awardee field both attest Sancorp as the actual awardee. See r2.'
-- id: e16
-  added_date: '2026-05-03'
-  entity_type: person
-  name: Daniel Kimmage
-  wrap_path: /people/daniel-kimmage
-  context_summary: 'Principal Deputy Coordinator of the State Department Global Engagement Center (GEC) as of the May 9, 2024 SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel where Kimmage co-paneled with IPMO Acting Director James Holly. Defense One reporting (May 24, 2024) is the publicly accessible attestation of the panel content. Note Defense One uses the surname spelling "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources; see nq3.'
 - id: e17
   added_date: '2026-05-03'
   entity_type: organization

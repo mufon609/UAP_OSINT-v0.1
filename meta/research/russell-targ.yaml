@@ -344,15 +344,6 @@ quotes:
   significance: 'Targ-co-authored formal conclusion of the 1974 Nature paper — the public-record "a channel exists" framing of the SRI parapsychology investigation that downstream Geller-bio accounts invoke as the Nature endorsement. Complements existing q3 (Nature paper abstract from the news/HTML source) by adding the conclusion from the CIA-mirrored full text now archived as a primary source.'
 
 entities_referenced:
-- id: e1
-  added_date: '2026-05-14'
-  entity_type: person
-  name: 'Hal Puthoff'
-  wrap_path: '/people/hal-puthoff'
-  context_summary: 'Targ and Puthoff are co-authors of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0); affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per Targ''s ESP Research site, Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities; the 1974 Nature paper byline corroborates Puthoff''s coterminous SRI Electronics and Bioengineering Laboratory affiliation, but the ''cofounder'' designation for Puthoff derives from Targ''s self-attestation that he was ''cofounder'' (implying a co-), not directly from the byline.'
-  references:
-  - quote_id: q3
-
 - id: e2
   added_date: '2026-05-14'
   entity_type: person
@@ -369,29 +360,6 @@ entities_referenced:
   references:
   - quote_id: q1
   - quote_id: q3
-
-- id: e4
-  added_date: '2026-05-14'
-  entity_type: organization
-  name: 'Lockheed Martin'
-  wrap_path: '/organizations/lockheed-martin'
-  context_summary: 'Per Targ''s ESP Research site, Targ retired from Lockheed Martin as a senior staff scientist. The 1996 Applied Optics paper byline places Targ at the Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191 — the post-1995 corporate parent of the 1991 Lockheed Missiles & Space Company affiliation at the same address. Lockheed Martin is unbuilt in this repository.'
-  references:
-  - quote_id: q2
-
-- id: e5
-  added_date: '2026-05-14'
-  entity_type: organization
-  name: 'Lockheed Missiles & Space Company'
-  wrap_path: '/organizations/lockheed-missiles-and-space-company'
-  context_summary: 'Per the 1991 Applied Optics paper byline, Targ is at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA — the pre-1995 corporate identity at the same Palo Alto address later carried by Advanced Technology Center, Lockheed Martin. New unbuilt stub introduced by this Targ artifact.'
-
-- id: e6
-  added_date: '2026-05-14'
-  entity_type: document
-  name: 'Coherent lidar airborne windshear sensor: performance evaluation (Applied Optics 1991)'
-  wrap_path: '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991'
-  context_summary: 'Targ, Kavaya, Huffaker, and Bowles, Applied Optics 30 (15), 2013–2026, 20 May 1991, DOI 10.1364/AO.30.002013. Targ author affiliation: Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA. Already a referenced stub from /people/james-ryder.'
 
 - id: e7
   added_date: '2026-05-14'
@@ -514,20 +482,6 @@ entities_referenced:
   context_summary: 'SAIC at Menlo Park, CA was the FY 1991 Congressionally-directed successor venue for the federally-sponsored remote viewing research after the SRI effort was discontinued in 1990 (per the 1993 DIA STAR GATE Project Overview, q14). DIA negotiated the external SAIC contract for basic and applied research; the STAR GATE umbrella program continued at SAIC under DIA executive agency. New unbuilt stub introduced by this audit pass.'
   references:
   - quote_id: q14
-
-- id: e20
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Uri Geller
-  wrap_path: /people/uri-geller
-  context_summary: 'Test subject in the SRI parapsychology investigation Targ co-conducted. Named in Task 3 of the Feb 1973 contract 1471(S)73 progress report (q21); subject of the Aug 1973 SRI Geller report Targ sole-authored (q17-q20); named as the first-study subject in the 1974 Nature paper Targ co-authored (q24 context).'
-
-- id: e21
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Pat Price
-  wrap_path: /people/pat-price
-  context_summary: 'Second-study subject in the 1974 Nature paper Targ co-authored — double-blind experiments measuring Price''s ability to describe remote outdoor scenes many miles from his physical location. New unbuilt stub.'
 
 - id: e22
   added_date: '2026-05-16'

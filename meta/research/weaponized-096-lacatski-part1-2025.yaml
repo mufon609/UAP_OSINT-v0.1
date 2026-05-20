@@ -267,18 +267,6 @@ entities_referenced:
   name: Dr. James Lacatski
   wrap_path: /people/james-lacatski
   context_summary: Solo guest in this episode; reads from a prepared opening statement and answers questions throughout
-- id: e2
-  added_date: '2026-05-17'
-  entity_type: person
-  name: George Knapp
-  wrap_path: /people/george-knapp
-  context_summary: WEAPONIZED co-host; investigative reporter; Lacatski's book co-author
-- id: e3
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Jeremy Corbell
-  wrap_path: /people/jeremy-corbell
-  context_summary: WEAPONIZED co-host with Knapp; primary in-studio questioner of Lacatski
 - id: e4
   added_date: '2026-05-17'
   entity_type: person
@@ -315,36 +303,18 @@ entities_referenced:
   name: AAWSAP — Advanced Aerospace Weapon System Applications Program
   wrap_path: /organizations/aawsap
   context_summary: 'The DIA UFO investigation program Lacatski directed; rendered "AASAP" / "AOSAP" in auto-caption — see naming_quirks'
-- id: e10
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: AATIP — Advanced Aerospace Threat Identification Program
-  wrap_path: /organizations/aatip
-  context_summary: 'Pentagon program separate from AAWSAP; Lacatski says the Pentagon publicly states AATIP "was not a UFO program. They''ve changed their tune"'
 - id: e11
   added_date: '2026-05-17'
   entity_type: organization
   name: BAASS — Bigelow Aerospace Advanced Space Studies
   wrap_path: /organizations/baass
   context_summary: 'Bigelow contractor that executed AAWSAP; rendered "Bass" in auto-caption; Lacatski says BAASS "was up to speed so fast"'
-- id: e12
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: Kona Blue Program (KBP)
-  wrap_path: /organizations/kona-blue
-  context_summary: The follow-on program to AAWSAP per Lacatski's PART 1 self-attestation — he was the DIA program manager. Both a compartment and a program; Lacatski says he should not use past tense for Kona Blue
 - id: e13
   added_date: '2026-05-17'
   entity_type: organization
   name: Defense Intelligence Agency (DIA)
   wrap_path: /organizations/dia
   context_summary: AAWSAP's home agency at DIA; Lacatski's employer; the records were assembled "only from official government files at DIA"
-- id: e14
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: Department of Defense (DoD)
-  wrap_path: /organizations/dod
-  context_summary: 'Lacatski says the four books were "approved for release by the Department of Defense or War"; Pentagon "states that AATIP really AATIP was not a UFO program"'
 - id: e15
   added_date: '2026-05-17'
   entity_type: organization
@@ -357,18 +327,6 @@ entities_referenced:
   name: All-Domain Anomaly Resolution Office (AARO)
   wrap_path: /organizations/aaro
   context_summary: Current DoD UAP office; subject of Lacatski's most pointed critique in PART 1 — Lacatski has refused two AARO meeting requests and characterizes AARO as a "disinformation campaign" steering the public conversation
-- id: e17
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: WEAPONIZED Podcast
-  wrap_path: /organizations/weaponized-podcast
-  context_summary: George Knapp + Jeremy Corbell's podcast; venue for this PART 1 interview
-- id: e18
-  added_date: '2026-05-17'
-  entity_type: document
-  name: Skinwalkers at the Pentagon (2021)
-  wrap_path: /documents/skinwalkers-at-the-pentagon-2021
-  context_summary: 'Book #1 in the Lacatski / Kelleher / Knapp series; Lacatski says Kelleher "wrote it in the rear portions of Skinwalkers at the Pentagon" — suggested private money for Kona Blue'
 - id: e19
   added_date: '2026-05-17'
   entity_type: document

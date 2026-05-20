@@ -163,12 +163,6 @@ quotes:
   context: 'OUSD(I&S) markup of S. 2226 Division G §9005(e) — transmission shall→should weakening'
   statement_date: '2023-11'
 entities_referenced:
-- id: e1
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security
-  wrap_path: /organizations/ousd-is
-  context_summary: 'Authorial body of the November 2023 markup. Per the cover page "Reviewed by" line, OUSD(I&S) is the reviewing office; the Department position urges adoption of the proposed revisions.'
 - id: e2
   added_date: '2026-05-02'
   entity_type: organization
@@ -193,12 +187,6 @@ entities_referenced:
   name: Marik von Rennenkampff
   wrap_path: /people/marik-von-rennenkampff
   context_summary: 'Journalist who interviewed Kirkpatrick on July 17, 2024 about the OUSD(I&S) UAPDA opposition. Interview is the primary on-record attestation that AARO/OUSD(I&S) opposition shaped the FY24 NDAA outcome.'
-- id: e6
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: National Archives and Records Administration
-  wrap_path: /organizations/nara
-  context_summary: 'Per the cover page "DoD Position", the markup was prepared "After conferring with NARA/ISOO" (NARA Information Security Oversight Office). NARA is the framework''s designated record repository for the UAP Records Collection per §9004.'
 - id: e7
   added_date: '2026-05-02'
   entity_type: organization
@@ -211,12 +199,6 @@ entities_referenced:
   name: Douglas Johnson Ghost analysis (July 24, 2024)
   wrap_path: /news/douglas-johnson-uapda-pentagon-rewrite-20240724
   context_summary: 'Public release vehicle for the 33-page markup PDF. Provides the contextual framing — submission timing (November 2023), congressional negotiators target, FY24 NDAA outcome (Subtitle C §§1841-1843), and Kirkpatrick verbatim admission.'
-- id: e9
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Office of the Director of National Intelligence
-  wrap_path: /organizations/odni
-  context_summary: 'Statutory disclosure-coordination counterpart per the original Schumer-Rounds text (agencies serve Review Board AND ODNI). The OUSD(I&S) markup at §9005(c)(2)(H) inserts "via the All-domain Anomaly Resolution Office" so transmissions to ODNI route through AARO.'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-02'

@@ -290,19 +290,6 @@ quotes:
     ARLENE WUBE & LONYE FORD". First primary-source attestation in the corpus of both founders by name.
   statement_date: '2021-08-30'
 entities_referenced:
-- id: e1
-  entity_type: organization
-  name: Sancorp Consulting, LLC
-  wrap_path: /organizations/sancorp-consulting
-  context_summary: Adjacent OUSD(I&S) contractor; protested Arlo's win of HQ003425F0104 SASP Call Order in B-422985.4 / B-422985.5; lost the protest. Holds independent prime contracts at other OUSD(I&S)
-    directorates (AARO, IPMO) which were not part of HQ003424R0178 and remain Sancorp's.
-  references:
-  - quote_id: q1
-  - quote_id: q4
-  - quote_id: q5
-  - quote_id: q6
-  - quote_id: q7
-  added_date: '2026-05-03'
 - id: e2
   entity_type: organization
   name: Premier Enterprise Solutions, LLC
@@ -338,59 +325,12 @@ entities_referenced:
   - quote_id: q13
   - quote_id: q15
   added_date: '2026-05-03'
-- id: e5
-  entity_type: organization
-  name: Washington Headquarters Services
-  wrap_path: /organizations/whs
-  context_summary: DoD contracting agency that issued RFQ HQ003424R0178 and the resulting BPAs/call orders; awarding agency for nearly all of Arlo's OUSD(I&S) prime contracts.
-  references:
-  - quote_id: q1
-  - quote_id: q2
-  - quote_id: q4
-  added_date: '2026-05-03'
-- id: e6
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Parent of WHS and OUSD(I&S); per Arlo's post-2025 marketing the alternative form Department of War (DoW) is used.
-  references:
-  - quote_id: q1
-  - quote_id: q9
-  - quote_id: q11
-  added_date: '2026-05-03'
 - id: e7
   entity_type: organization
   name: AARO (All-domain Anomaly Resolution Office)
   wrap_path: /organizations/aaro
   context_summary: OUSD(I&S) sub-directorate where Sancorp holds independent prime contracts (HQ003422C0094 / HQ003424C0096) — not part of HQ003424R0178; Arlo did not take over Sancorp's AARO contracts.
   references: []
-  added_date: '2026-05-03'
-- id: e8
-  entity_type: organization
-  name: IPMO (Influence and Perception Management Office)
-  wrap_path: /organizations/ipmo
-  context_summary: OUSD(I&S) sub-directorate where Sancorp holds independent prime contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) — not part of HQ003424R0178. Arlo's recruitment page advertises
-    Influence, Deception, and Perception Management Activities Staff Officer positions using the IPMO mission language but no Arlo-IPMO contract is attested in the primary-source corpus (see r1).
-  references:
-  - quote_id: q13
-  added_date: '2026-05-03'
-- id: e9
-  entity_type: organization
-  name: General Services Administration
-  wrap_path: /organizations/gsa
-  context_summary: Sponsor agency for Arlo's GSA Multiple Award Schedule (MAS) contract 47QTCA21D003B, GSA OASIS+ contracts, and GSA 8(a) Stars III contract 47QTCB21D0051; the RFQ HQ003424R0178 was issued
-    under the GSA Federal Supply Schedule.
-  references:
-  - quote_id: q2
-  added_date: '2026-05-03'
-- id: e10
-  entity_type: person
-  name: Lonye Ford
-  wrap_path: /people/lonye-ford
-  context_summary: Co-founder of Arlo Solutions (per 2021 Company Overview); CEO of Arlo Solutions (per 2026-03-16 SASP press release).
-  references:
-  - quote_id: q9
-  - quote_id: q17
   added_date: '2026-05-03'
 - id: e11
   entity_type: person
@@ -399,13 +339,6 @@ entities_referenced:
   context_summary: Co-founder of Arlo Solutions (per 2021 Company Overview FOUNDERS line); current role at Arlo unattested in the retrieved primary-source corpus.
   references:
   - quote_id: q17
-  added_date: '2026-05-03'
-- id: e12
-  entity_type: person
-  name: Christina Pryka
-  wrap_path: /people/christina-pryka
-  context_summary: Arlo media contact named in both the SASP press release and the CL&S press release.
-  references: []
   added_date: '2026-05-03'
 naming_quirks:
 - id: nq1

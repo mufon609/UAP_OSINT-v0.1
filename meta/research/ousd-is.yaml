@@ -1028,198 +1028,36 @@ timeline:
     path: government/dodig-2026-047-redacted-secure.pdf
     location: 'p. 1, header and ¶1'
 entities_referenced:
-- id: e1
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Parent department; OUSD(I&S) is a DoD component established by NDAA FY2003 § 901 and codified at 10 U.S.C. § 137.
-- id: e2
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Office of the Director of National Intelligence
-  wrap_path: /organizations/odni
-  context_summary: Per DoDD 5143.01 § 3.c, USD(I&S) serves as Director of Defense Intelligence and primary SecDef representative to ODNI.
-- id: e3
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Defense Intelligence Agency
-  wrap_path: /organizations/dia
-  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
-- id: e4
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: National Geospatial-Intelligence Agency
-  wrap_path: /organizations/nga
-  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
-- id: e5
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: National Security Agency / Central Security Service
-  wrap_path: /organizations/nsa
-  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
-- id: e6
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: National Reconnaissance Office
-  wrap_path: /organizations/nro
-  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
-- id: e7
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Defense Counterintelligence and Security Agency
-  wrap_path: /organizations/dcsa
-  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
-- id: e8
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-  context_summary: Subordinate office established at USD(I&S) direction per Hicks memo July 15, 2022.
-- id: e9
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Influence and Perception Management Office
-  wrap_path: /organizations/ipmo
-  context_summary: Subordinate office established March 1, 2022 per direction from SecDef and USD(I&S).
-- id: e10
-  added_date: '2026-04-30'
-  entity_type: organization
-  name: Sancorp Consulting, LLC
-  wrap_path: /organizations/sancorp-consulting
-  context_summary: Prime contractor providing support services to OUSD(I&S) subordinate offices including AARO and IPMO.
 - id: e11
   added_date: '2026-04-30'
   entity_type: person
   name: James R. Clapper Jr.
   wrap_path: /people/james-clapper
   context_summary: Under Secretary of Defense for Intelligence 2007-04-15 to 2010-06-05; signed November 17, 2009 SAP-rejection memorandum to Deputy Secretary of Defense.
-- id: e12
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Michael G. Vickers
-  wrap_path: /people/michael-vickers
-  context_summary: Under Secretary of Defense for Intelligence 2011-2015; submitted Advance Policy Questions to Senate Armed Services Committee February 15, 2011.
 - id: e13
   added_date: '2026-04-30'
   entity_type: person
   name: Marcel J. Lettre II
   wrap_path: /people/marcel-lettre
   context_summary: Under Secretary of Defense for Intelligence 2015-2017; testified at Senate Armed Services Committee encryption-policy hearing September 13, 2016.
-- id: e14
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Joseph D. Kernan
-  wrap_path: /people/joseph-kernan
-  context_summary: Under Secretary of Defense for Intelligence and Security 2017-12-01 to 2020-11-10.
-- id: e15
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Ronald S. Moultrie
-  wrap_path: /people/ronald-moultrie
-  context_summary: Under Secretary of Defense for Intelligence and Security 2021-06-01 to 2024-02-29; named Sean Kirkpatrick as inaugural director of AARO.
 - id: e16
   added_date: '2026-04-30'
   entity_type: person
   name: Bradley D. Hansell
   wrap_path: /people/bradley-hansell
   context_summary: Under Secretary of War for Intelligence and Security from 2024 (post-EO-14347 institutional bio uses Department of War branding).
-- id: e17
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Kathleen Hicks
-  wrap_path: /people/kathleen-hicks
-  context_summary: Deputy Secretary of Defense who issued the July 15, 2022 memorandum directing USD(I&S) to establish AARO.
 - id: e18
   added_date: '2026-04-30'
   entity_type: person
   name: James A. Holly
   wrap_path: /people/james-holly
   context_summary: Acting Director of the Influence and Perception Management Office; signatory of the May 27, 2022 Notre Dame National Security Innovation Course memo attesting IPMO establishment.
-- id: e19
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Ezra Cohen-Watnick
-  wrap_path: /people/ezra-cohen-watnick
-  context_summary: Acting Under Secretary of Defense for Intelligence and Security from November 10, 2020 (Kernan resignation) through January 20, 2021 (administration transition).
-- id: e20
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Stephen A. Cambone
-  wrap_path: /people/stephen-cambone
-  context_summary: First Under Secretary of Defense for Intelligence; Senate-confirmed March 7, 2003; resigned December 31, 2006.
-- id: e21
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Todd Lowery
-  wrap_path: /people/todd-lowery
-  context_summary: Acting Under Secretary of Defense for Intelligence January 2017 - June 2017 per CRS report IF10523.
-- id: e22
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Kari Bingen
-  wrap_path: /people/kari-bingen
-  context_summary: Acting Under Secretary of Defense for Intelligence June 2017 - December 2017 per CRS report IF10523.
-- id: e23
-  added_date: '2026-04-30'
-  entity_type: person
-  name: David M. Taylor
-  wrap_path: /people/david-m-taylor
-  context_summary: Acting Under Secretary of Defense for Intelligence and Security January 2021 - June 2021 per CRS report IF10523.
-- id: e24
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Milancy D. Harris
-  wrap_path: /people/milancy-harris
-  context_summary: Acting Under Secretary of Defense for Intelligence and Security March 2024 - January 2025 per CRS report IF10523.
-- id: e25
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Dustin Gard-Weiss
-  wrap_path: /people/dustin-gard-weiss
-  context_summary: Acting Under Secretary of Defense for Intelligence and Security January 2025 - July 2025 per CRS report IF10523.
-- id: e26
-  added_date: '2026-04-30'
-  entity_type: person
-  name: Justin P. Overbaugh
-  wrap_path: /people/justin-overbaugh
-  context_summary: Deputy Under Secretary of War for Intelligence and Security per the 2025 official DUSWIS biography on ousdi.defense.gov.
-- id: e27
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: Defense Military Deception Program Office
-  wrap_path: /organizations/dmdpo
-  context_summary: 'OUSD(I&S) sub-office providing governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD per FY 2026 OSD OP-5 budget submission.'
-- id: e28
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: OSD Red Team
-  wrap_path: /organizations/osd-red-team
-  context_summary: 'OUSD(I&S) sub-office serving as the SECDEF''s and DEPSECDEF''s red team, providing adversary-centric insights to inform strategic-level DoD activities per FY 2026 OSD OP-5 budget submission.'
-- id: e29
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: Strategy Coordination Program Office
-  wrap_path: /organizations/scpo
-  context_summary: 'OUSD(I&S) sub-office performing critical analyses and assessments for military, technical, and scientific programs through strategy coordination cells per FY 2026 OSD OP-5 budget submission.'
-- id: e30
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: Counterproliferation of Weapons of Mass Destruction Office
-  wrap_path: /organizations/cp-wmd
-  context_summary: 'OUSD(I&S) sub-office serving as senior advisor to the USD(I&S) for understanding biothreat/biotechnology and WMD threats per FY 2026 OSD OP-5 budget submission.'
 - id: e31
   added_date: '2026-05-01'
   entity_type: organization
   name: Advanced Intelligence Capabilities
   wrap_path: /organizations/aic
   context_summary: 'OUSD(I&S) sub-office name first used in the FY 2025 OSD OP-5 budget submission (released March 2024). AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence and synchronizes efforts to detect, identify, and attribute objects of interest. Mission language is substantively identical to AARO''s mission language per the Hicks establishment memorandum and to AARO''s codified statutory carveout at 50 U.S.C. § 3373. The repository preserves both AARO and AIC as distinct primary-source attestations and does not adjudicate whether AIC is an umbrella budget category, a quiet rebrand, or a successor program.'
-- id: e32
-  added_date: '2026-05-01'
-  entity_type: organization
-  name: Law Enforcement Oversight and Compliance Directorate
-  wrap_path: /organizations/le-oversight-compliance-directorate
-  context_summary: 'OUSD(I&S) sub-office serving as the senior advisor to the USD(I&S) for law enforcement policy, established to implement direction in the Deputy Secretary of Defense memo dated April 21, 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement.'
 - id: e33
   added_date: '2026-05-02'
   entity_type: organization

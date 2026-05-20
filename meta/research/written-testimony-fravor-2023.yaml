@@ -211,24 +211,12 @@ quotes:
   significance: Training-suspension fact — the intercept did not occur during training; training was suspended for real-world tasking upon launch check-in with Princeton
   context: post-launch context
 entities_referenced:
-- id: e1
-  added_date: '2026-04-17'
-  entity_type: person
-  name: David Fravor
-  wrap_path: /people/david-fravor
-  context_summary: Author of this written testimony; retired U.S. Navy Commander; commanding officer of VFA-41 in November 2004
 - id: e2
   added_date: '2026-04-17'
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
   context_summary: Fravor's service branch; parent organization of VFA-41, USS Nimitz, USS Princeton, Carrier Airwing Eleven
-- id: e3
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: Strike Fighter Squadron Forty-One (VFA-41)
-  wrap_path: /organizations/vfa-41
-  context_summary: '"World Famous Black Aces" — Navy F/A-18F squadron Fravor commanded in November 2004'
 - id: e4
   added_date: '2026-04-17'
   entity_type: organization
@@ -247,12 +235,6 @@ entities_referenced:
   name: USS Princeton (CG-59)
   wrap_path: /organizations/uss-princeton
   context_summary: Ticonderoga-class guided-missile cruiser controlling the 2 V 2 training exercise and tracking the UAP on Aegis SPY 1 radar
-- id: e7
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: VMFA-232
-  wrap_path: /organizations/vmfa-232
-  context_summary: U.S. Marine F/A-18 squadron flying Red Air in the 2 V 2 training exercise
 - id: e8
   added_date: '2026-04-17'
   entity_type: person
@@ -271,30 +253,6 @@ entities_referenced:
   name: Department of Defense (DOD)
   wrap_path: /organizations/dod
   context_summary: Organizational home of the program Fravor names "ATIP"
-- id: e11
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Alex Dietrich
-  wrap_path: /people/alex-dietrich
-  context_summary: The other pilot in Fravor's flight; per Fravor, invited to the Pentagon multiple times to discuss the event and view other UAP videos
-- id: e12
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Tom DeLonge
-  wrap_path: /people/tom-delonge
-  context_summary: Co-founder of To The Stars Academy, per Fravor's account
-- id: e13
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Christopher Mellon
-  wrap_path: /people/christopher-mellon
-  context_summary: Co-founder of To The Stars Academy, per Fravor's account
-- id: e14
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Steve Justice
-  wrap_path: /people/steve-justice
-  context_summary: Co-founder of To The Stars Academy, per Fravor's account
 - id: e15
   added_date: '2026-04-17'
   entity_type: organization
@@ -325,12 +283,6 @@ entities_referenced:
   name: 2004 USS Nimitz UAP encounter
   wrap_path: /events/2004-nimitz-encounter
   context_summary: The November 2004 encounter this statement narrates
-- id: e20
-  added_date: '2026-04-17'
-  entity_type: event
-  name: July 26, 2023 House Oversight UAP hearing
-  wrap_path: /events/2023-07-26-house-uap-hearing
-  context_summary: The hearing for which this written testimony was submitted for the record
 naming_quirks:
 - id: nq1
   added_date: '2026-04-17'

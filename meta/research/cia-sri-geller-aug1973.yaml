@@ -182,12 +182,6 @@ entities_referenced:
   name: Russell Targ
   wrap_path: /people/russell-targ
   context_summary: 'Cover-memo author; the page header ''August 13, 1973  R. Targ'' identifies him as the document''s author; primary SRI experimenter (Sunday August 5 narrative ''Targ, who was with the drawing'')'
-- id: e3
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Hal Puthoff
-  wrap_path: /people/hal-puthoff
-  context_summary: 'Co-experimenter at SRI (Sunday August 5 narrative ''Puthoff, who was with Geller'')'
 - id: e4
   added_date: '2026-05-16'
   entity_type: organization

@@ -282,24 +282,6 @@ quotes:
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation to require not only extraordinary evidence but extraordinary science as the standard for AARO conclusions
   context: Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study
 entities_referenced:
-- id: e1
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Sean M. Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: Sole open-session witness; Director of AARO at the time of the hearing
-- id: e2
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Kirsten E. Gillibrand
-  wrap_path: /people/kirsten-gillibrand
-  context_summary: Chairwoman of the Subcommittee on Emerging Threats and Capabilities; presiding officer
-- id: e3
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Joni Ernst
-  wrap_path: /people/joni-ernst
-  context_summary: Ranking Member of the Subcommittee on Emerging Threats and Capabilities
 - id: e4
   added_date: '2026-04-28'
   entity_type: person
@@ -336,24 +318,12 @@ entities_referenced:
   name: David Spergel
   wrap_path: /people/david-spergel
   context_summary: Chair of the NASA UAP independent study team; an audience member at the close of the hearing referenced presenting a book to Spergel
-- id: e10
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: All-Domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: The DOD office whose mission, activities, oversight, and budget the hearing was held to receive testimony on
 - id: e11
   added_date: '2026-04-28'
   entity_type: organization
   name: Unidentified Aerial Phenomena Task Force (UAPTF)
   wrap_path: /organizations/uaptf
   context_summary: Predecessor office to AARO; referenced in Senator Ernst's opening as the Navy-led task force that AARO evolved from
-- id: e12
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: Senate Committee on Armed Services
-  wrap_path: /organizations/sasc
-  context_summary: Parent committee of the Subcommittee on Emerging Threats and Capabilities; this hearing was held by that subcommittee
 - id: e13
   added_date: '2026-04-28'
   entity_type: organization

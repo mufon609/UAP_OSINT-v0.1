@@ -166,18 +166,6 @@ quotes:
   significance: 'Section 2(g) — 60-day permanent-renaming recommendation: proposed legislative and executive actions required to permanently change the Department of Defense to the Department of War. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.'
   statement_date: '2025-09-05'
 entities_referenced:
-- id: e1
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: 'Department of Defense'
-  wrap_path: /organizations/dod
-  context_summary: 'Subject of the Order''s rename. Statutory name of the Department under existing law; per Section 2(e) statutory references remain controlling until changed subsequently by the law. Section 2(b) authorizes the Department of Defense to be referred to as the Department of War in non-statutory contexts.'
-- id: e2
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: 'Office of the Secretary of Defense'
-  wrap_path: /organizations/osd
-  context_summary: 'Section 2(b) authorizes the Office of the Secretary of Defense to be referred to as the Office of the Secretary of War in non-statutory contexts (official correspondence, public communications, ceremonial contexts, executive-branch documents).'
 - id: e3
   added_date: '2026-05-03'
   entity_type: organization

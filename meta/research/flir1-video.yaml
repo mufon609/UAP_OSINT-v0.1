@@ -93,12 +93,6 @@ entities_referenced:
   name: Alex Dietrich
   wrap_path: /people/alex-dietrich
   context_summary: Other pilot in Fravor's flight during the November 2004 encounter per Fravor's 2023 testimony; present at the close-approach portion of the encounter the video postdates
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: event
-  name: 2004 USS Nimitz UAP encounter
-  wrap_path: /events/2004-nimitz-encounter
-  context_summary: The November 2004 encounter the video documents
 - id: e8
   added_date: '2026-04-20'
   entity_type: document

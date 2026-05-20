@@ -1603,60 +1603,18 @@ quotes:
   significance: 'Verbatim Kirkpatrick LinkedIn statement (July 28, 2023, in personal capacity) issued two days after David Grusch''s House Oversight testimony. The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
   context: 'Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage'
 entities_referenced:
-- id: e1
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-  context_summary: The DoD office Kirkpatrick directed July 20 2022 — December 1 2023
-- id: e2
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: University of Georgia
-  wrap_path: /organizations/uga
-  context_summary: BS 1991 + PhD 1995 + currently Adjunct Assistant Professor of Physics
 - id: e3
   added_date: '2026-04-29'
   entity_type: organization
   name: U.S. Naval Research Laboratory
   wrap_path: /organizations/us-navy
   context_summary: NRC Fellow 1996-1997
-- id: e4
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: U.S. Air Force
-  wrap_path: /organizations/us-air-force
-  context_summary: Air Force Research Laboratory research physicist 1997-2003; built Ultrafast Laser Physics Lab
-- id: e5
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Reconnaissance Office
-  wrap_path: /organizations/nro
-  context_summary: Program manager 2003-2005 (CIA-assigned)
-- id: e6
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Central Intelligence Agency
-  wrap_path: /organizations/cia
-  context_summary: Staff scientist Directorate of Science and Technology 2005-2007
 - id: e7
   added_date: '2026-04-29'
   entity_type: organization
   name: Defense Intelligence Agency
   wrap_path: /organizations/dia
   context_summary: Three documented tenures (2007-2010 joint CIA-DIA program office; 2012-2016 DIO/S&TI; 2021-2022 MSIC Chief Scientist)
-- id: e8
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: U.S. Strategic Command
-  wrap_path: /organizations/usstratcom
-  context_summary: Deputy Director of Intelligence 2016-2017
-- id: e9
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Security Council
-  wrap_path: /organizations/nsc
-  context_summary: Director, National Security Strategy 2017-2018
 - id: e10
   added_date: '2026-04-29'
   entity_type: organization
@@ -1669,174 +1627,30 @@ entities_referenced:
   name: Department of Defense
   wrap_path: /organizations/dod
   context_summary: Space Control Portfolio Manager OSD 2010-2012; AARO is OUSD(I&S)-anchored
-- id: e12
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security
-  wrap_path: /organizations/ousd-is
-  context_summary: AARO's parent office at establishment; reporting chain transitioned in late July 2023
 - id: e13
   added_date: '2026-04-29'
   entity_type: organization
   name: Oak Ridge National Laboratory
   wrap_path: /organizations/ornl
   context_summary: Kirkpatrick's post-AARO institutional affiliation; per FIA-24-0036 his internal title is Chief Operating Officer for the National Security Sciences Directorate
-- id: e14
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: WestExec Advisors
-  wrap_path: /organizations/westexec-advisors
-  context_summary: Senior Advisor since May 9 2024
 - id: e15
   added_date: '2026-04-29'
   entity_type: organization
   name: 'Elara Nova: The Space Consultancy'
   wrap_path: /organizations/elara-nova-the-space-consultancy
   context_summary: Partner since 2023; partner photograph uploaded to /2023/10/ directory
-- id: e16
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Nonlinear Solutions LLC
-  wrap_path: /organizations/nonlinear-solutions
-  context_summary: Sole-member NC LLC registered October 16 2023; Kirkpatrick is Owner / CEO
-- id: e17
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: National Security Space Association — Moorman Center for Space Studies
-  wrap_path: /organizations/nssa-moorman-center
-  context_summary: Member of Board of Advisors; co-author of multiple Moorman Center Occasional Papers
-- id: e18
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Ronald Moultrie
-  wrap_path: /people/ronald-moultrie
-  context_summary: USD(I&S) who selected Kirkpatrick to stand up AARO; AAROEXEC chair across most of Kirkpatrick's directorship
-- id: e19
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Kathleen Hicks
-  wrap_path: /people/kathleen-hicks
-  context_summary: Deputy Secretary of Defense; took direct AARO oversight late July 2023; issued November 8 2023 formal departure statement for Kirkpatrick
-- id: e20
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Kirsten Gillibrand
-  wrap_path: /people/kirsten-gillibrand
-  context_summary: SASC ETC Subcommittee Chair at Kirkpatrick's April 19 2023 sole-witness oversight testimony
-- id: e21
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Joni Ernst
-  wrap_path: /people/joni-ernst
-  context_summary: SASC ETC Subcommittee Ranking Member
-- id: e22
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Tim Phillips
-  wrap_path: /people/tim-phillips
-  context_summary: AARO Acting Director succeeding Kirkpatrick December 1 2023 — August 26 2024
-- id: e23
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Jonathan Kosloski
-  wrap_path: /people/jonathan-kosloski
-  context_summary: Permanent successor as AARO Director from August 26 2024
-- id: e24
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Glen VanHerck
-  wrap_path: /people/glen-vanherck
-  context_summary: NORTHCOM commander; Kirkpatrick met with him at NORTHCOM weeks before April 19 2023 SASC hearing
-- id: e25
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Avi Loeb
-  wrap_path: /people/avi-loeb
-  context_summary: Co-author with Kirkpatrick of March 7 2023 manuscript 'Physical Constraints on Unidentified Aerial Phenomena'
 - id: e26
   added_date: '2026-04-29'
   entity_type: person
   name: Christopher Mellon
   wrap_path: /people/christopher-mellon
   context_summary: Former DASD(I); June 2023 Signal interlocutor (FOIA 24-F-0266); Kirkpatrick described his role to Mellon as 'defending and adjudicating'
-- id: e27
-  added_date: '2026-04-29'
-  entity_type: person
-  name: William L. 'Willie' Shelton
-  wrap_path: /people/willie-shelton
-  context_summary: Co-author of November 5 2024 NSSA Moorman Center paper; both serve on NSSA Board of Advisors
-- id: e28
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Chris Williams
-  wrap_path: /people/chris-williams
-  context_summary: Chair of NSSA Moorman Center for Space Studies; co-author of June 26 2025 Operation Midnight Hammer paper
-- id: e29
-  added_date: '2026-04-29'
-  entity_type: person
-  name: John Shaw
-  wrap_path: /people/john-shaw
-  context_summary: Lt. Gen. (Ret.); former Deputy Commander U.S. Space Command; co-author of October 31 2024 CSIS Space-in-Focus commentary
-- id: e30
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Peter Bergen
-  wrap_path: /people/peter-bergen
-  context_summary: Audible podcast host who interviewed Kirkpatrick (Episode 38, 2024)
-- id: e31
-  added_date: '2026-04-29'
-  entity_type: person
-  name: David Grusch
-  wrap_path: /people/david-grusch
-  context_summary: UAP whistleblower; Kirkpatrick characterized in Bergen interview as having a 'core group of people' who 'influenced him' and may have led him to 'misinterpret' or 'fall to the influence' of others
-- id: e32
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Jacky Rosen
-  wrap_path: /people/jacky-rosen
-  context_summary: SASC ETC Subcommittee member at Kirkpatrick's April 19 2023 testimony
-- id: e33
-  added_date: '2026-04-29'
-  entity_type: event
-  name: April 19 2023 SASC AARO Hearing
-  wrap_path: /events/2023-04-19-sasc-aaro-hearing
-  context_summary: Kirkpatrick's sole-witness oversight testimony before the SASC Subcommittee on Emerging Threats and Capabilities
-- id: e34
-  added_date: '2026-04-29'
-  entity_type: transcript
-  name: Sean Kirkpatrick — Oral Testimony, 2023-04-19 SASC AARO Hearing
-  wrap_path: /transcripts/2023-04-19-sasc-kirkpatrick
-  context_summary: Verbatim record of Kirkpatrick's open-session sworn-style oral testimony
-- id: e35
-  added_date: '2026-04-29'
-  entity_type: document
-  name: Sean Kirkpatrick — Statement for the Record, 2023-04-19 SASC AARO Hearing
-  wrap_path: /documents/written-testimony-kirkpatrick-2023
-  context_summary: Kirkpatrick's pre-hearing written statement
-- id: e36
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Unidentified Aerial Phenomena Task Force
-  wrap_path: /organizations/uaptf
-  context_summary: AARO predecessor office (Navy-led)
-- id: e37
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Sue Gough
-  wrap_path: /people/sue-gough
-  context_summary: Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last-day date to DefenseScoop
 - id: e38
   added_date: '2026-04-29'
   entity_type: person
   name: Dustin M. Slaughter
   wrap_path: /people/dustin-slaughter
   context_summary: The UAP Register publisher; appellant in DOE FIA-24-0036 decision that surfaced Kirkpatrick's COO/NSSD title and classified DOE-IN access at ORNL
-- id: e39
-  added_date: '2026-04-29'
-  entity_type: person
-  name: David W. Abba
-  wrap_path: /people/david-abba
-  context_summary: Maj. Gen.; Director of DoD SAPCO; signed the March 8 2023 memorandum confirming AARO's authority to receive UAP-related information across SAPs and notwithstanding NDAs (FOIA 24-F-0266)
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'

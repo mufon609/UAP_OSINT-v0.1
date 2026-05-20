@@ -157,54 +157,12 @@ quotes:
   observation_type: relayed
   statement_date: '2026-02-25'
 entities_referenced:
-- id: e1
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: 'Gough''s employer; she is a civilian Public Affairs spokesperson assigned to Defense Press Operations within OSD(PA).'
-- id: e2
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: 'The DoD office whose Public Affairs portfolio Gough holds at OSD(PA) from June 2022 through February 2026.'
 - id: e3
   added_date: '2026-05-06'
   entity_type: organization
   name: Unidentified Aerial Phenomena Task Force (UAPTF)
   wrap_path: /organizations/uaptf
   context_summary: 'AARO''s predecessor; Gough''s June 29, 2022 Public Affairs statement names former ONI senior civilian John Stratton as UAPTF lead and informally referred to Dr. Travis Taylor as chief scientist.'
-- id: e4
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: Office of Naval Intelligence
-  wrap_path: /organizations/oni
-  context_summary: 'Stratton''s prior senior civilian role per Gough''s June 29, 2022 statement to The Black Vault.'
-- id: e5
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: Office of the Director of National Intelligence (ODNI)
-  wrap_path: /organizations/odni
-  context_summary: 'Public Affairs counterpart to OSD(PA) in the March 5, 2024 AARO Historical Record Report Volume I rollout email exchange agreeing to omit any ODNI mention from the public press release.'
-- id: e6
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
-  wrap_path: /organizations/ousd-is
-  context_summary: 'AARO''s parent component; David Kozik (Director of Congressional Activities, OUSD(I&S)) was Gough''s counterpart in the March 6-7, 2024 AARO sUAS portfolio email exchange.'
-- id: e7
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: U.S. Army Space and Missile Defense Command (SMDC)
-  wrap_path: /organizations/u-s-army-smdc
-  context_summary: 'Dr. Travis Taylor''s parent organization per Gough''s June 29, 2022 statement; SMDC provided Taylor on a time-limited basis to the UAPTF and in early 2021 worked to clarify and de-conflict his assigned tasks, responsibilities, and outside activities.'
-- id: e8
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: 'Source 1 (December 16, 2022 AARO roundtable) refers to UAPTF as the Navy-led predecessor of AARO.'
 - id: e9
   added_date: '2026-05-06'
   entity_type: organization
@@ -217,18 +175,6 @@ entities_referenced:
   name: DefenseScoop
   wrap_path: /organizations/defensescoop
   context_summary: 'Recipient of multiple on-record Gough quotes — Kirkpatrick last-day (November 30, 2023), AARO Full Operational Capability (December 5, 2024), and AARO 2,000+ caseload (February 25, 2026).'
-- id: e11
-  added_date: '2026-05-06'
-  entity_type: organization
-  name: tovima.com
-  wrap_path: /organizations/tovima
-  context_summary: 'Carried the June 6, 2025 Wall Street Journal piece on Pentagon disinformation in UFO mythology that quotes Gough on the AARO Historical Record Report Volume II commitment.'
-- id: e12
-  added_date: '2026-05-06'
-  entity_type: person
-  name: John Stratton
-  wrap_path: /people/jay-stratton
-  context_summary: 'Named by Gough''s June 29, 2022 statement as the UAPTF lead — former Office of Naval Intelligence senior civilian — at the time of Dr. Travis Taylor''s initial work with the Task Force.'
 - id: e13
   added_date: '2026-05-06'
   entity_type: person
@@ -241,18 +187,6 @@ entities_referenced:
   name: Scott Bray
   wrap_path: /people/scott-bray
   context_summary: 'Director Bray; Gough''s A3 response says the UAPTF stands by the conclusions presented by Director Bray in his briefing — referring to the May 17, 2022 HPSCI UAP hearing.'
-- id: e15
-  added_date: '2026-05-06'
-  entity_type: person
-  name: Ronald Moultrie
-  wrap_path: /people/ronald-moultrie
-  context_summary: 'Under Secretary of Defense for Intelligence and Security; co-host with Sean Kirkpatrick of the December 16, 2022 joint AARO media roundtable that Gough moderated as STAFF.'
-- id: e16
-  added_date: '2026-05-06'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: 'AARO''s first Director (December 2022 – December 1, 2023); Gough confirmed his last-day date and characterized the leadership transition in her November 30, 2023 statements to DefenseScoop.'
 - id: e17
   added_date: '2026-05-06'
   entity_type: person
@@ -265,12 +199,6 @@ entities_referenced:
   name: Jon Kosloski
   wrap_path: /people/jonathan-kosloski
   context_summary: 'AARO Director from August 2024; AARO''s Full Operational Capability (Oct. 1, 2024) declared on his watch and confirmed by Gough to DefenseScoop on December 5, 2024.'
-- id: e19
-  added_date: '2026-05-06'
-  entity_type: person
-  name: David Kozik
-  wrap_path: /people/david-kozik
-  context_summary: 'Director of Congressional Activities, OUSD(I&S); recipient of Gough''s March 6, 2024 Importance: High email stating OSD(PA) does not want to see sUAS added to AARO''s portfolio.'
 - id: e20
   added_date: '2026-05-06'
   entity_type: person

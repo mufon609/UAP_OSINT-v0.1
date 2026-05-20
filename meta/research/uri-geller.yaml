@@ -826,15 +826,6 @@ quotes:
 
 entities_referenced:
 
-- id: e1
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: Stanford Research Institute
-  wrap_path: /organizations/stanford-research-institute
-  context_summary: 'Subject of a scientific study there starting December 1972; six weeks in 1973 per Russell Targ verbatim quote in Brendan Burton article. Already built.'
-  references:
-  - quote_id: q5
-
 - id: e2
   added_date: '2026-05-16'
   entity_type: organization
@@ -929,20 +920,6 @@ entities_referenced:
   name: Andrija Puharich
   wrap_path: /people/andrija-puharich
   context_summary: 'Introducer / sponsor under whose wing Uri was flown to the USA and introduced to Edgar Mitchell, Hal Puthoff, and Russell Targ per Brendan Burton ¶5. New unbuilt stub.'
-
-- id: e14
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Hal Puthoff
-  wrap_path: /people/hal-puthoff
-  context_summary: 'SRI co-investigator; Puthoff verbatim quote per Brendan Burton ¶12 — "Our publications make our statement, and our personal feelings are congruent with what we''ve published." Source-form "Puthof" preserved per nq1. Already built.'
-
-- id: e15
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Russell Targ
-  wrap_path: /people/russell-targ
-  context_summary: 'SRI co-investigator and primary-witness attestor of Uri''s SRI tenure per Brendan Burton ¶7 — "Uri was at our laboratory at SRI for six weeks in 1973." Source-form "Russel" preserved per nq2. Already built.'
 
 - id: e16
   added_date: '2026-05-16'

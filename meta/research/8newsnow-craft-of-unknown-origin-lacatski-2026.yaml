@@ -142,18 +142,6 @@ entities_referenced:
   name: Dr. James Lacatski
   wrap_path: /people/james-lacatski
   context_summary: Direct on-camera interview subject; speaks throughout the segment; surname renders canonically (no auto-caption typos for his name in this transcript)
-- id: e2
-  added_date: '2026-05-17'
-  entity_type: person
-  name: George Knapp
-  wrap_path: /people/george-knapp
-  context_summary: 8 News Now chief investigator; narrator-host of the segment; book co-author with Lacatski and Kelleher
-- id: e3
-  added_date: '2026-05-17'
-  entity_type: person
-  name: Dr. Colm Kelleher
-  wrap_path: /people/colm-kelleher
-  context_summary: 'Named by George in the closing as co-author on two of Lacatski''s four books: "I was co-author on two of those along with Dr. Colm Kelleher"'
 - id: e4
   added_date: '2026-05-17'
   entity_type: person
@@ -202,12 +190,6 @@ entities_referenced:
   name: Kona Blue Program (KBP)
   wrap_path: /organizations/kona-blue
   context_summary: 'Not named directly in the segment, but George''s closing reference to "another program that grew out of AATIP" — verified as Kona Blue per Lacatski''s WEAPONIZED PART 1 and PART 2 self-attestations'
-- id: e12
-  added_date: '2026-05-17'
-  entity_type: document
-  name: 'Future Visions (2026) — fourth Lacatski book'
-  wrap_path: /documents/future-visions-2026
-  context_summary: 'Lacatski''s fourth and final book on AAWSAP per George''s segment closing: "This is Dr. Lacatski''s fourth and final book based on the AATIP files." Contains "many new details about dramatic UFO incidents and cases, weird events at Skinwalker Ranch and similar locations, and hints about another program that grew out of AATIP"'
 - id: e13
   added_date: '2026-05-17'
   entity_type: document

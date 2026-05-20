@@ -517,16 +517,6 @@ entities_referenced:
   context_summary: Primary witness; identifies himself by name in the opening statement and refers to himself throughout the Q&A.
   references:
   - quote_id: q1
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: U.S. Air Force
-  wrap_path: /organizations/us-air-force
-  context_summary: Grusch served in the U.S. Air Force at the rank of Major across active-duty, Air National Guard, and Reserve assignments.
-  references:
-  - quote_id: q1
-  - quote_id: q6
-  - quote_id: q36
 - id: e3
   added_date: '2026-04-20'
   entity_type: organization
@@ -568,26 +558,6 @@ entities_referenced:
   references:
   - quote_id: q20
   - quote_id: q28
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: document
-  name: PPD-19 (Presidential Policy Directive 19)
-  wrap_path: /documents/ppd-19
-  context_summary: Grusch filed a PPD-19 urgent concern with the intelligence community inspector general in May 2022; cited as the standard whistleblower routing mechanism to intel committees.
-  references:
-  - quote_id: q3
-  - quote_id: q40
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Intelligence Community Inspector General
-  wrap_path: /organizations/icig
-  context_summary: Recipient of Grusch's May 2022 PPD-19 filing; locations of US Government UAP possession provided here; firsthand-knowledge individuals filed protected disclosures to ICIG.
-  references:
-  - quote_id: q3
-  - quote_id: q12
-  - quote_id: q14
-  - quote_id: q40
 - id: e9
   added_date: '2026-04-20'
   entity_type: organization
@@ -597,14 +567,6 @@ entities_referenced:
   references:
   - quote_id: q6
   - quote_id: q7
-- id: e10
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Context for space and aerospace compartmented programs Grusch was briefed to a preponderance of.
-  references:
-  - quote_id: q23
 - id: e11
   added_date: '2026-04-20'
   entity_type: document
@@ -661,22 +623,6 @@ entities_referenced:
   context_summary: Cited by Grusch for the 2013 declassification of specific provisions of the 1971 nuclear war risk reduction agreement, including red-line flash message traffic.
   references:
   - quote_id: q41
-- id: e18
-  added_date: '2026-04-20'
-  entity_type: document
-  name: Federal Acquisition Regulations
-  wrap_path: /documents/federal-acquisition-regulations
-  context_summary: Cited by Grusch as the legal framework for potential white-collar-crime violations he has concerns about, based on interviews conducted under his official duties.
-  references:
-  - quote_id: q42
-- id: e19
-  added_date: '2026-04-20'
-  entity_type: document
-  name: UAP Task Force 2019 Security Classification Guide
-  wrap_path: /documents/uap-scg-2019
-  context_summary: Grusch discloses under oath that he helped author the UAP SCG with the UAPTF Director; cross-links to the FOIA'd SCG already archived on /organizations/uaptf.
-  references:
-  - quote_id: q33
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'

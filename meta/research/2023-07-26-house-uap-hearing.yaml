@@ -430,30 +430,12 @@ quotes:
   significance: Ranking Minority Member Garcia's framing of the hearing as unusually bipartisan
   context: Garcia closing remarks
 entities_referenced:
-- id: e1
-  added_date: '2026-04-20'
-  entity_type: person
-  name: David Fravor
-  wrap_path: /people/david-fravor
-  context_summary: Witness sworn at this hearing; retired U.S. Navy Commander; one of three witnesses on the panel
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Ryan Graves
-  wrap_path: /people/ryan-graves
-  context_summary: Witness sworn at this hearing; Executive Director of Americans for Safe Aerospace; former U.S. Navy F-18 pilot
 - id: e3
   added_date: '2026-04-20'
   entity_type: person
   name: David Grusch
   wrap_path: /people/david-grusch
   context_summary: Witness sworn at this hearing; former NRO Representative to the UAP Task Force; PPD-19 urgent concern filer
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Glenn Grothman
-  wrap_path: /people/glenn-grothman
-  context_summary: Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs; presiding officer
 - id: e5
   added_date: '2026-04-20'
   entity_type: person
@@ -466,12 +448,6 @@ entities_referenced:
   name: Jamie Raskin
   wrap_path: /people/jamie-raskin
   context_summary: Ranking Minority Member of the full Committee on Oversight and Accountability; made the bipartisan whistleblower-protection statement
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: person
-  name: James Comer
-  wrap_path: /people/james-comer
-  context_summary: Chairman of the full Committee on Oversight and Accountability; yielded his 5 minutes to Burchett
 - id: e8
   added_date: '2026-04-20'
   entity_type: person
@@ -490,54 +466,12 @@ entities_referenced:
   name: George Knapp
   wrap_path: /people/george-knapp
   context_summary: Investigative journalist; statement for the record entered by Representative Burchett (not a witness)
-- id: e11
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Jeremy Corbell
-  wrap_path: /people/jeremy-corbell
-  context_summary: Documentarian; report "The UAP Puzzle" entered into the record by Representative Burchett (not a witness)
 - id: e12
   added_date: '2026-04-20'
   entity_type: document
   name: Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
   wrap_path: /documents/dird-puthoff-vacuum-metric-engineering-2010
   context_summary: Defense Intelligence Reference Document by Hal Puthoff; entered into the record by Representative Burchett
-- id: e13
-  added_date: '2026-04-20'
-  entity_type: document
-  name: David Fravor — Written Testimony
-  wrap_path: /documents/written-testimony-fravor-2023
-  context_summary: Fravor's prepared written statement submitted for the record
-- id: e14
-  added_date: '2026-04-20'
-  entity_type: document
-  name: Ryan Graves — Written Testimony
-  wrap_path: /documents/written-testimony-graves-2023
-  context_summary: Graves's prepared written statement submitted for the record
-- id: e15
-  added_date: '2026-04-20'
-  entity_type: document
-  name: David Grusch — Written Testimony
-  wrap_path: /documents/written-testimony-grusch-2023
-  context_summary: Grusch's prepared written statement submitted for the record
-- id: e16
-  added_date: '2026-04-20'
-  entity_type: transcript
-  name: David Fravor — Oral Testimony
-  wrap_path: /transcripts/2023-07-26-house-fravor
-  context_summary: Verbatim record of Fravor's sworn oral testimony at this hearing
-- id: e17
-  added_date: '2026-04-20'
-  entity_type: transcript
-  name: Ryan Graves — Oral Testimony
-  wrap_path: /transcripts/2023-07-26-house-graves
-  context_summary: Verbatim record of Graves's sworn oral testimony at this hearing
-- id: e18
-  added_date: '2026-04-20'
-  entity_type: transcript
-  name: David Grusch — Oral Testimony
-  wrap_path: /transcripts/2023-07-26-house-grusch
-  context_summary: Verbatim record of Grusch's sworn oral testimony at this hearing
 - id: e19
   added_date: '2026-04-20'
   entity_type: event

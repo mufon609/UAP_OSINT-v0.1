@@ -149,24 +149,12 @@ entities_referenced:
   name: Tal Kra-Oz
   wrap_path: /people/tal-kra-oz
   context_summary: 'Article author — Israeli writer based in Tel Aviv; byline ''Tal Kra-Oz'' on the Tablet Magazine piece'
-- id: e3
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Aharon Yariv
-  wrap_path: /people/aharon-yariv
-  context_summary: 'Aman chief (IDF Military Intelligence, 1964-1972); per Geller''s account in the article, summoned Geller to a meeting in Tel Aviv after Yoav Shaham''s death'
 - id: e4
   added_date: '2026-05-16'
   entity_type: person
   name: Meir Amit
   wrap_path: /people/meir-amit
   context_summary: 'Mossad director (1963-1968); per Geller''s account, was spoken to by Yoav Shaham about Geller before Shaham''s death'
-- id: e5
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Yoav Shaham
-  wrap_path: /people/yoav-shaham
-  context_summary: 'Mossad agent at the Cyprus bed-and-breakfast Geller''s stepfather ran; per Geller''s account, gave Geller a courier job at age 12 or 13 and was later killed in the West Bank as a commander in the paratroopers'
 - id: e6
   added_date: '2026-05-16'
   entity_type: person
@@ -185,12 +173,6 @@ entities_referenced:
   name: Stanford Research Institute
   wrap_path: /organizations/stanford-research-institute
   context_summary: SRI conducted the 1970s tests of Geller mentioned in the article; the article reports those tests were sponsored by the CIA
-- id: e9
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: Mossad
-  wrap_path: /organizations/mossad
-  context_summary: 'Israeli intelligence service; per Geller''s account, his stepfather''s Cyprus bed-and-breakfast was a Mossad safe house from which agents would go to Damascus, Jordan, Egypt'
 - id: e10
   added_date: '2026-05-16'
   entity_type: organization

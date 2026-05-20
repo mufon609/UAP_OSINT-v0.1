@@ -94,12 +94,6 @@ entities_referenced:
   name: 'Steny Hoyer'
   wrap_path: /people/steny-hoyer
   context_summary: 'Issuing official — Congressman Steny H. Hoyer (MD-5), 5th congressional district of Maryland. The press release announces the FY2011 MILCON line items including the Atlantic Test Range Addition that Hoyer requested.'
-- id: e2
-  added_date: '2026-05-18'
-  entity_type: location
-  name: 'Naval Air Station Patuxent River'
-  wrap_path: /locations/patuxent-river-nas
-  context_summary: 'Site of the Atlantic Test Range Addition ($10,160,000), the BAMS Test and Evaluation Facility ($42,211,000), and the Tactical UAS Facility ($5,500,000) line items announced in the press release.'
 - id: e3
   added_date: '2026-05-18'
   entity_type: organization

@@ -225,6 +225,20 @@ every boundary):**
   full deletion, so it's a regression guard, not a question.
   **Rollback:** `git restore meta/research/`.
 
+  **Landed.** Threshold **≥2** (contributor-chosen): kept 655, deleted
+  599 redundant entries across 56 artifacts; 7 artifacts emptied (key
+  removed entirely — optional after A1.3:
+  `2004-nimitz-encounter`, `david-fravor`, the 4 findings, the
+  `lockheed-martin-uap-materials` investigation). Surgical text-level
+  removal via `scripts/build/migrate-a1-delete.py` (dry-run-first; each
+  edit self-checked for re-parse + id-set match) — the diff is
+  deletion-only (0 lines added, 3,645 removed), so kept entries are
+  byte-identical and `references[]` is preserved (113 → 113).
+  Regression guard green: `validate.py`, `validate-research.py`
+  (0 errors), `review-coverage.py` `description_token_drift` = 0 errors
+  (matches the pre-migration baseline), `build-state --check` all pass.
+  Remaining: A1.5 (de-tune the five attractors + retire BACKLOG A1).
+
 - **A1.5 — De-tune population attractors + convention rewrite.**
   Re-tune every pipeline surface that drives "register one entry
   per entity" so the now-optional, clutter-pruned field stops

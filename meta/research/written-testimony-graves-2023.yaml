@@ -254,60 +254,24 @@ quotes:
   significance: PRC spy balloon context; NORAD filter recalibration; 3 UAP shot down as civilian-traffic threat
   context: declassification argument
 entities_referenced:
-- id: e1
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Ryan Graves
-  wrap_path: /people/ryan-graves
-  context_summary: Author of this written testimony; former U.S. Navy F-18 pilot; founder of Americans for Safe Aerospace; AIAA UAP Integration & Outreach Committee Chair
 - id: e2
   added_date: '2026-04-17'
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
   context_summary: Graves''s service branch (joined 2009); parent of VFA-11; operational context for his Virginia Beach / W-72 encounters
-- id: e3
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: Americans for Safe Aerospace
-  wrap_path: /organizations/americans-for-safe-aerospace
-  context_summary: Organization Graves founded as center of support / research / public education for aircrew impacted by UAP encounters; ~5,000 members; 30+ UAP witnesses working with it
 - id: e4
   added_date: '2026-04-17'
   entity_type: organization
   name: American Institute of Aeronautics and Astronautics (AIAA)
   wrap_path: /organizations/aiaa
   context_summary: Professional society where Graves chairs the UAP Integration & Outreach Committee (~80 PhDs and aerospace engineers volunteer team)
-- id: e5
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: VFA-11
-  wrap_path: /organizations/vfa-11
-  context_summary: Navy Fighter/Attack Squadron of F/A-18F Super Hornets; Graves''s 2014 assignment near Virginia Beach
 - id: e6
   added_date: '2026-04-17'
   entity_type: person
   name: Tim Gallaudet
   wrap_path: /people/tim-gallaudet
   context_summary: Rear Admiral; former head of NOAA; former Oceanographer of the Navy; ASA advisor; relay source for the 2015 SIPRNET email and the Fleet Forces Command account
-- id: e7
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: National Oceanic and Atmospheric Administration (NOAA)
-  wrap_path: /organizations/noaa
-  context_summary: Gallaudet's former agency (former head)
-- id: e8
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: UAP Task Force (UAPTF)
-  wrap_path: /organizations/uaptf
-  context_summary: DOD task force that reported in 2021 on 11 near misses with UAP
-- id: e9
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: Federal Aviation Administration (FAA)
-  wrap_path: /organizations/faa
-  context_summary: Issued April 2022 alert on a commercial aircraft over West Virginia with double attitude / autopilot failure while flying under a UAP
 - id: e10
   added_date: '2026-04-17'
   entity_type: person
@@ -320,12 +284,6 @@ entities_referenced:
   name: All-domain Anomaly Resolution Office (AARO)
   wrap_path: /organizations/aaro
   context_summary: DOD office directed by Kirkpatrick; Graves relays its authority-scope, instrumentation, and eyewitness-credibility positions
-- id: e12
-  added_date: '2026-04-17'
-  entity_type: event
-  name: July 26, 2023 House Oversight UAP hearing
-  wrap_path: /events/2023-07-26-house-uap-hearing
-  context_summary: The hearing for which this written testimony was submitted for the record
 naming_quirks:
 - id: nq1
   added_date: '2026-04-17'

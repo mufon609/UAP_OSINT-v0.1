@@ -282,12 +282,6 @@ entities_referenced:
   name: Dr. James Lacatski
   wrap_path: /people/james-lacatski
   context_summary: Solo guest in PART 2; continues the PART 1 conversation on Kona Blue and the recovered craft; describes his own MIB sighting during Kona Blue and his Q clearance at deal (DOE)
-- id: e2
-  added_date: '2026-05-17'
-  entity_type: person
-  name: George Knapp
-  wrap_path: /people/george-knapp
-  context_summary: WEAPONIZED co-host; Lacatski book co-author; frames the race-for-technology question via Senator Reid
 - id: e3
   added_date: '2026-05-17'
   entity_type: person
@@ -354,12 +348,6 @@ entities_referenced:
   name: Kona Blue Program (KBP)
   wrap_path: /organizations/kona-blue
   context_summary: 'PART 2 refinement on Kona Blue — "a compartment reputed to be for recovered technology" AND a separate "program" first described in Skinwalkers at the Pentagon via the private-investment-of-money structure. Lacatski says Kona Blue is "much more than going and getting what some have described as 60 year old parts"'
-- id: e14
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: Defense Intelligence Agency (DIA)
-  wrap_path: /organizations/dia
-  context_summary: AAWSAP's home agency
 - id: e15
   added_date: '2026-05-17'
   entity_type: organization
@@ -378,12 +366,6 @@ entities_referenced:
   name: Lockheed Martin
   wrap_path: /organizations/lockheed-martin
   context_summary: 'Subject of the PART 2 Tic Tac question — Jeremy presses "the tic tac is not Loheed Martin"; Lacatski says "not that I''m aware of"'
-- id: e18
-  added_date: '2026-05-17'
-  entity_type: organization
-  name: WEAPONIZED Podcast
-  wrap_path: /organizations/weaponized-podcast
-  context_summary: George Knapp + Jeremy Corbell's podcast; venue for this PART 2 interview
 - id: e19
   added_date: '2026-05-17'
   entity_type: document
@@ -402,12 +384,6 @@ entities_referenced:
   name: Skinwalker Ranch
   wrap_path: /locations/skinwalker-ranch
   context_summary: 'Lacatski''s prior ranch experience referenced; he says his own encounters following the ranch visit have been "mild" with "a neutrality to it"'
-- id: e22
-  added_date: '2026-05-17'
-  entity_type: transcript
-  name: WEAPONIZED PART 1 (2025-11-05)
-  wrap_path: /transcripts/weaponized-096-lacatski-part1-2025
-  context_summary: The PART 1 transcript this PART 2 continues from
 naming_quirks:
 - id: nq1
   added_date: '2026-05-17'

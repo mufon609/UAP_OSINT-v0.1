@@ -88,44 +88,6 @@ quotes:
   attestation_tier: secondary-source
   attestor_path: /people/christopher-sharp
 
-entities_referenced:
-
-- id: e1
-  added_date: '2026-05-13'
-  entity_type: organization
-  name: Lockheed Martin
-  wrap_path: /organizations/lockheed-martin
-
-- id: e2
-  added_date: '2026-05-13'
-  entity_type: organization
-  name: Liberation Times
-  wrap_path: /organizations/liberation-times
-
-- id: e3
-  added_date: '2026-05-13'
-  entity_type: person
-  name: Christopher Sharp
-  wrap_path: /people/christopher-sharp
-
-- id: e4
-  added_date: '2026-05-13'
-  entity_type: person
-  name: James T. Ryder
-  wrap_path: /people/james-ryder
-
-- id: e6
-  added_date: '2026-05-13'
-  entity_type: document
-  name: Liberation Times — Witnesses Announced (2024-11-08)
-  wrap_path: /documents/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108
-
-- id: e7
-  added_date: '2026-05-13'
-  entity_type: document
-  name: Liberation Times — Congressman Recruits Grusch (2025-03-27)
-  wrap_path: /documents/liberationtimes-burlison-grusch-recruitment-20250327
-
 naming_quirks: []
 
 establishes:
