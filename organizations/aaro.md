@@ -768,7 +768,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 5, Notable AARO Partnerships |
+| Location | p. 12, Notable AARO Partnerships |
 
 ---
 

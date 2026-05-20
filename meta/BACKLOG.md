@@ -376,24 +376,42 @@ C work doesn't risk half-baked implementations.
 
 ### C35 — Verify page-anchored location refs are accurate
 
-**Investigation (accuracy check — not a convention change).** Every
-quote in `meta/research/*.yaml` carries a `source.location` the
-renderer surfaces so a reader can navigate to the quoted passage.
-~507 of these are page-anchored (`p. N, ¶M` or `p. N`), almost all
-from PDF / paginated-HTML sources. The verbatim-quote check confirms
-the quote TEXT appears somewhere in the source — it does NOT confirm
-the location ref points to the right place. The open question: are
-the page-anchored refs accurate, or have some drifted (wrong page,
-off-by-one paragraph, stale after a re-extraction)?
+**Swept 2026-05-20.** All 502 PDF-sourced page-anchored
+`source.location` refs across `meta/research/*.yaml` were checked
+against their archived source: locate the quote in the `pdftotext`
+extract, map its `\f`-delimited physical page to the document's PRINTED
+page number, compare to the stated `p. N`. Finding: refs anchor to the
+**printed document page number** (confirmed — e.g. 203 sit at a constant
+front-matter offset where the printed footer/header digit equals the
+stated page), and they are accurate corpus-wide. Four errors found and
+corrected:
 
-**What to do.** Sweep (or sample) the page-anchored locations and
-check each against its archived source — does following the ref land
-on the quoted passage? Report (and correct) any inaccurate refs. The
-page-anchored convention stays; the goal is confirming the refs are
-correct. `scripts/tools/normalize-locations.py` (the read-only
-diagnostic that flags extraction-version-dependent refs) is the
-natural starting point; the source files in `sources/` are the ground
-truth.
+- `ryan-graves` q12 / `2023-07-26-house-graves` q22: `p. 9-24` → `p. 24`
+  (over-range; the Vandenberg quote sits solely on printed p. 24).
+- `aaro` q35: `p. 5` → `p. 12` (the GTRI/GREMLIN sentence is on printed
+  p. 12, not 5).
+- `uaptf` q18 + relationship or9: `p.2` → `p.4`.
+- `uaptf` q6: `p.3` → `p.2`.
+
+**Residual (3 refs) — page component not mechanically verifiable; the
+§/¶ anchor is authoritative and keeps each navigable:**
+
+- `pentagon-uapda-revisions-2023-11` q4 (`p. 5, §9003(13)`) and q11
+  (`p. 25, §9010(a)`): the redlined-bill draft carries no page numbers
+  in its text layer, so `pdftotext` physical pages don't map to the
+  contributor's page frame. Content verified present at the cited
+  sections.
+- `stanford-research-institute` q13 (`p. 22`): the CIA "SRI Studies in
+  Remote Viewing" page is marked `B-2` (appendix numbering); whether
+  `p. 22` (compilation-sequential) or `p. B-2` is the right form needs a
+  convention call.
+
+**Learnings for any future sweep / tooling:** an `N-M` page can be a
+chapter-page form (`3-12` = ch. 3 p. 12 — `stanford-research-institute`
+q21, confirmed correct), not always a range; appendix pages use the
+`B-2` form; range refs must be parsed as `[start, end]` (the quote may
+sit on the end page).
 
 **Blocks:** none.
-**Blocked by:** none.
+**Blocked by:** none (residual needs the original rendering / a
+convention call on appendix + chapter page forms).

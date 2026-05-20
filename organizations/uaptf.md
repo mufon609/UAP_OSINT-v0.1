@@ -155,7 +155,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020, 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | p.3, Roles and Responsibilities |
+| Location | p.2, Roles and Responsibilities |
 
 ---
 
@@ -167,7 +167,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "EXCOMs" for "EXCOM's"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | UAPTF Charter, p.2, UAP Task Force Director responsibilities section |
+| Location | UAPTF Charter, p.4, UAP Task Force Director responsibilities section |
 
 ---
 

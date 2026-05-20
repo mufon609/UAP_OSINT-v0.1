@@ -144,7 +144,7 @@ quotes:
   text: Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.3, Roles and Responsibilities
+    location: p.2, Roles and Responsibilities
   significance: UAPTF Charter — Director of the Naval Intelligence Activity designates UAPTF leadership
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020
   statement_date: '2020-09-01'
@@ -267,7 +267,7 @@ quotes:
     Provide periodic updates, via the chain of command, to the UAP Executive Steering Committee (EXCOM), and to the committee's designated representatives. to support the EXCOMs oversight mission.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: UAPTF Charter, p.2, UAP Task Force Director responsibilities section
+    location: UAPTF Charter, p.4, UAP Task Force Director responsibilities section
   significance: UAPTF Charter — UAP Executive Steering Committee (EXCOM) as senior oversight body above UAPTF
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "EXCOMs" for "EXCOM's")
   statement_date: '2020-09-01'
@@ -394,7 +394,7 @@ org_relationships:
   relationship_type: other
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: UAPTF Charter, p.2, UAP Task Force Director responsibilities section
+    location: UAPTF Charter, p.4, UAP Task Force Director responsibilities section
   note: UAP Executive Steering Committee (EXCOM) — senior oversight body sitting above UAPTF in the reporting chain, primary-source-attested by the UAPTF Charter (see q18). The Charter specifies UAPTF provides periodic updates via chain-of-command to EXCOM to support the EXCOM's oversight mission. Distinct from the USD(I&S) cognizant-authority relationship (or6) and the Navy lead-department relationship (or5) — EXCOM sits at the UAP-specific governance layer.
 timeline:
 - id: t1

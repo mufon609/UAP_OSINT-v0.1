@@ -348,7 +348,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 | Speaker | Ryan Graves ([`/people/ryan-graves`]) |
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 9-24 |
+| Location | p. 24 |
 
 ---
 
