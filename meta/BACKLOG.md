@@ -424,6 +424,27 @@ and "source presentation noise" (the page footers, fonts, glyph
 substitutions, layout artifacts that mechanically appear in
 extracted text but shouldn't gate verbatim verification)?
 
+**2026-05-20 — second presentation-noise class found and fixed at the
+extraction layer (HTML element-boundary concatenation).** While driving
+`meta/research/luis-elizondo.yaml` to zero prose-drift warnings, the NYT
+2017 source surfaced the token `KEANDEC`: the byline surname "Leslie
+Kean" (`<span>`) glued to the dateline "Dec. 16, 2017" (`<time>`) because
+`clean_html_for_text` empty-stripped `<time>` — it sat in
+`_HTML_INLINE_TAGS` alongside true mid-word formatters. Standalone-datum
+phrasing elements (`time`, `data`, `meter`, `progress`, `output`,
+`picture`) carry a discrete datum, never a mid-word continuation, so
+empty-stripping concatenates them onto adjacent text. Fix: moved those
+six out of `_HTML_INLINE_TAGS` so they hit the whitespace branch
+(word-boundary preserved). This is the HTML analog of the
+`extract_source_text` candidate below — presentation noise removed once
+at the extraction layer, so all three consumers (verbatim-quote,
+prose-drift, description-drift) benefit with no per-check change.
+Full 58-node re-validation clean (no verbatim-quote regressions;
+broken-link registry unchanged at 510). It settles the "actual question"
+above for the HTML case — the extraction layer is the right home — and
+narrows C33 to the remaining PDF page-footer-digit mode, which keeps the
+entry open.
+
 Candidate resolutions (for the one remaining failure mode,
 page-footer digits):
 

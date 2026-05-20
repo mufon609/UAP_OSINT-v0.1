@@ -248,10 +248,18 @@ def manifest_format(rel_path):
 # to the intended word. Block-level and unknown tags are replaced with
 # whitespace to preserve word boundaries across paragraph / heading / list
 # breaks.
+#
+# Only true text-formatting inline elements belong here. Standalone-datum
+# phrasing elements — `time` (datelines/timestamps), `data`, `meter`,
+# `progress`, `output`, `picture` — are deliberately EXCLUDED: their content
+# is a discrete datum, never a mid-word continuation, and HTML routinely sets
+# them flush against adjacent text (e.g. a byline `<span>` immediately
+# followed by a dateline `<time>`). Empty-stripping them concatenates the two
+# ("LESLIE KEAN" + "DEC. 16, 2017" -> "KEANDEC"); the whitespace branch keeps
+# the word boundary. See BACKLOG C33 (source-presentation-noise normalization).
 _HTML_INLINE_TAGS = (
     r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
-    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
-    r"progress|output|picture|tt|font"
+    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|tt|font"
 )
 
 
