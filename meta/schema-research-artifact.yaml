@@ -507,9 +507,13 @@ entry_lifecycle_fields:
   #
   # Lifecycle fields are not rendered (artifact-only). They drive
   # the validator's entry-shape checks and the per-entry versioning
-  # graph but never appear in the rendered node body — Superseded By
-  # / Contradicted By annotations surface through the renderer's
-  # per-section logic, not as raw field values.
+  # graph; no renderer reads `id`, `added_date`, `superseded_by`,
+  # `contradicted_by`, or `corroborated_by`. Versioning annotations
+  # the conventions.md "Versioning" section describes are recorded
+  # in the artifact for posterity and for cross-artifact pointer
+  # resolution, but they do not currently surface to readers —
+  # potential reader-visible follow-on, but out of scope for these
+  # fields' present role.
 
 # Per-section entry shapes (each inherits lifecycle fields above):
 

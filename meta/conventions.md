@@ -1264,10 +1264,11 @@ the corresponding `timeline[].event` text):
 The validator's `stub_linking` check enforces the
 registered→linked direction (every `entities_referenced[].wrap_path`
 appears as a body wrap). The inverse (named in prose but not
-registered) is contributor discipline — the `coverage-suggest.py`
-diagnostic flags capitalized terms in body prose that aren't in
-`entities_referenced[]`, but contributor judgment decides what's
-load-bearing vs. incidental.
+registered) is contributor discipline — no mechanical enforcement
+catches a missed venue/host/transcript registration. The
+`coverage-suggest.py` diagnostic is the adjacent gap check (source
+content not reflected in the artifact); contributor judgment
+decides what's load-bearing vs. incidental for both directions.
 
 ---
 

@@ -126,12 +126,13 @@ not direct edits to the node body. Pattern:
    different gets a new entry + pointer.
 3. Regenerate the node (renderer-supported types):
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`
-4. **Reader-visibility check** — grep the regenerated node for the
-   changed content to confirm the fix actually surfaces in the
-   rendered surface. Mechanical validators verify structure; they
-   don't verify that an artifact edit produced a reader-visible
-   change. Artifact-only fields (`entities_referenced[]` and lifecycle
-   fields `id` / `added_date` per `meta/schema-research-artifact.yaml`)
+4. **Reader-visibility check** — grep the regenerated node body for
+   the changed content to confirm the fix actually surfaces to
+   readers. Mechanical validators verify structure; they don't
+   verify that an artifact edit produced a reader-visible change.
+   Artifact-only fields (`entities_referenced[]` and the lifecycle
+   fields `id` / `added_date` / `superseded_by` / `contradicted_by`
+   / `corroborated_by` per `meta/schema-research-artifact.yaml`)
    never render — edits to those land only in the artifact, not in
    the body. If the audit goal required a reader-visible change, the
    grep must hit; if it doesn't, the edit was to an artifact-only
