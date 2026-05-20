@@ -252,43 +252,6 @@ quotes:
   significance: 'Holly''s self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO''s interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official''s surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see nq3).'
   context: 'SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center'
   statement_date: '2024-05-09'
-entities_referenced:
-- id: e2
-  added_date: '2026-05-02'
-  entity_type: person
-  name: Ronald S. Moultrie
-  wrap_path: /people/ronald-moultrie
-  context_summary: 'Under Secretary of Defense for Intelligence and Security (June 1, 2021 – February 29, 2024) — IPMO''s parent-organization head during establishment and early operations. Co-author (with COL Deitra Trotter) of NSI 23-S-3438 IPMO 101 slides per PDF metadata.'
-- id: e3
-  added_date: '2026-05-02'
-  entity_type: person
-  name: Deitra Trotter
-  wrap_path: /people/deitra-trotter
-  context_summary: 'COL; co-author (with HON Ronald S. Moultrie) of NSI 23-S-3438 IPMO 101 slides per PDF metadata. Specific institutional role within IPMO or OUSD(I&S) not attested at primary-source level beyond the slide authorship.'
-- id: e11
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Advanced Intelligence Capabilities
-  wrap_path: /organizations/aic
-  context_summary: 'OUSD(I&S) sub-office first appearing in FY 2025 OSD OP-5 with mission language and statutory reporting line identical to AARO''s NDAA FY23 § 1683 carveout — apparent budget-document rebrand of AARO; documented as a separate node pending resolution.'
-- id: e12
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Law Enforcement Oversight and Compliance Directorate
-  wrap_path: /organizations/le-oversight-compliance-directorate
-  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5; established per the Deputy Secretary of Defense memo dated April 21, 2023 designating OUSD(I&S) as Principal Staff Assistant for Law Enforcement.'
-- id: e13
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Sancorp Consulting, LLC
-  wrap_path: /organizations/sancorp-consulting
-  context_summary: 'Prime contractor providing IPMO Support Services under three sequential 8(a) sole-source contracts (HQ003422C0064 from June 2022; HQ003423C0061 from May 2023; HQ003424C0046 from May 2024) awarded by Washington Headquarters Services Acquisition Directorate. Same vendor simultaneously holds AARO Support Services contracts.'
-- id: e17
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: State Department Global Engagement Center
-  wrap_path: /organizations/state-dept-gec
-  context_summary: 'State Department office that co-paneled with IPMO at the SOF Week 2024 OIE Symposium (May 9, 2024) — documents IPMO''s interagency reach beyond DoD. GEC''s authorization expired December 23, 2024 and the office closed; per public reporting, GEC was reorganized as the State Department Counter Foreign Information and Manipulation and Interference Office.'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-02'

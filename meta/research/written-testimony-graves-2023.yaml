@@ -253,37 +253,6 @@ quotes:
     location: ¶29
   significance: PRC spy balloon context; NORAD filter recalibration; 3 UAP shot down as civilian-traffic threat
   context: declassification argument
-entities_referenced:
-- id: e2
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: Graves''s service branch (joined 2009); parent of VFA-11; operational context for his Virginia Beach / W-72 encounters
-- id: e4
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: American Institute of Aeronautics and Astronautics (AIAA)
-  wrap_path: /organizations/aiaa
-  context_summary: Professional society where Graves chairs the UAP Integration & Outreach Committee (~80 PhDs and aerospace engineers volunteer team)
-- id: e6
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Tim Gallaudet
-  wrap_path: /people/tim-gallaudet
-  context_summary: Rear Admiral; former head of NOAA; former Oceanographer of the Navy; ASA advisor; relay source for the 2015 SIPRNET email and the Fleet Forces Command account
-- id: e10
-  added_date: '2026-04-17'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: Director of AARO at time of statement; Graves relays his NASA IST, Congressional testimony, and post-NASA-IST interview statements
-- id: e11
-  added_date: '2026-04-17'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office (AARO)
-  wrap_path: /organizations/aaro
-  context_summary: DOD office directed by Kirkpatrick; Graves relays its authority-scope, instrumentation, and eyewitness-credibility positions
 naming_quirks:
 - id: nq1
   added_date: '2026-04-17'

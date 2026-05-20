@@ -186,23 +186,4 @@ quotes:
     location: 'p. 13, ¶ acknowledgements'
   significance: 'Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).'
   statement_date: '1974-10'
-entities_referenced:
-- id: e1
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Harold E. Puthoff
-  wrap_path: /people/hal-puthoff
-  context_summary: Lead co-author of the Nature paper; named in the author byline as Dr. Harold E. Puthoff
-- id: e3
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Uri Geller
-  wrap_path: /people/uri-geller
-  context_summary: 'Subject of the first study in the Nature paper — picture-drawing experiments in the SRI shielded room and Engineering Building Faraday cage (13 numbered experiments)'
-- id: e4
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Pat Price
-  wrap_path: /people/pat-price
-  context_summary: Subject of the second study in the Nature paper — double-blind experiments measuring ability to describe remote outdoor scenes many miles from his physical location
 naming_quirks: []

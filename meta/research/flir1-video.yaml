@@ -56,54 +56,5 @@ context_extrinsic:
     entity: UAP_OSINT-v0.1 repository
     verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes: []
-entities_referenced:
-- id: e1
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: Source of the three "unclassified Navy videos" per the DoD 2020 press release; service branch of Fravor's squadron
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Authorizing body of the April 27, 2020 declassified release per the archived DoD press release
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: USS Nimitz
-  wrap_path: /organizations/uss-nimitz
-  context_summary: Carrier that launched the F/A-18F flight during the November 2004 encounter the video captures
-- id: e4
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: To the Stars Academy (TTSA)
-  wrap_path: /organizations/ttsa
-  context_summary: Per Fravor's 2023 testimony, TTSA's disclosure chain corresponds to the 2017 unauthorized release DoD 2020 press release acknowledges
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: person
-  name: David Fravor
-  wrap_path: /people/david-fravor
-  context_summary: Retired U.S. Navy Commander whose 2023 sworn testimony attests the video's capture context, the follow-on crew, the targeting-pod path after APG-73 jamming, and the first-name identification of the crew member ("Chad")
-- id: e6
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Alex Dietrich
-  wrap_path: /people/alex-dietrich
-  context_summary: Other pilot in Fravor's flight during the November 2004 encounter per Fravor's 2023 testimony; present at the close-approach portion of the encounter the video postdates
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: document
-  name: David Fravor — 2023 Written Testimony
-  wrap_path: /documents/written-testimony-fravor-2023
-  context_summary: Primary-source attestation of the video's capture context and the 90-second approximate duration characterization (q14)
-- id: e9
-  added_date: '2026-04-20'
-  entity_type: transcript
-  name: David Fravor — 2023 Oral Testimony
-  wrap_path: /transcripts/2023-07-26-house-fravor
-  context_summary: Primary-source attestation of the follow-on crew member name "Chad" (q34), the APG-73 jamming mechanics (q24), and the passive targeting-pod path to the video
 naming_quirks: []
 media_versioning: []

@@ -207,56 +207,6 @@ quotes:
   significance: 'Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in q3 / q7 names the program as the destination context but not as the funding source for the transfer itself.'
   statement_date: '2024-12-19'
 
-entities_referenced:
-- id: e1
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Luis Elizondo'
-  wrap_path: /people/luis-elizondo
-  context_summary: 'Author and signatory of the QFR response. Self-identifies as "the senior ranking person of the Advanced Aerospace Threat Identification Program (AATIP)" within DoD.'
-- id: e2
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Eric Burlison'
-  wrap_path: /people/eric-burlison
-  context_summary: 'House Oversight Committee Representative; submitted the 11-question QFR via December 9, 2024 cover letter following the November 13, 2024 joint subcommittee hearing.'
-- id: e6
-  added_date: '2026-05-18'
-  entity_type: person
-  name: 'Christopher Sharp'
-  wrap_path: /people/christopher-sharp
-  context_summary: 'Named in Q6 question as the journalist whose claim regarding the Bigelow / Lockheed / CIA transfer-block allegation the QFR was responding to.'
-- id: e7
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'AATIP — Advanced Aerospace Threat Identification Program'
-  wrap_path: /organizations/aatip
-  context_summary: 'Elizondo''s former DoD program. Named throughout the QFR as the context within which Elizondo "engaged senior executives at DoD Defense aerospace companies who claimed they possessed recovered ''exotic material''" (Q1) and as the funding envelope addressed in Q11.'
-- id: e9
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'Lockheed Martin'
-  wrap_path: /organizations/lockheed-martin
-  context_summary: 'Named in Q1 (Lacatski''s embedded statement names Ryder as Lockheed Martin Space Systems Vice President), Q6 (transfer from Lockheed Martin to Bigelow Aerospace), and Q7 (transfer from Lockheed Martin). The QFR places Lockheed Martin as the alleged original custodian.'
-- id: e10
-  added_date: '2026-05-18'
-  entity_type: organization
-  name: 'Bigelow Aerospace'
-  wrap_path: /organizations/bigelow-aerospace
-  context_summary: 'Named in Q1, Q6, and Q7 as the intended new custodian of the transferred materials. Q1''s embedded Lacatski quote names "Bigelow Aerospace facilities in Las Vegas"; Q7 confirms "specific facilities were identified to enable Bigelow Aerospace to acquire and securely store recovered UAP materials".'
-- id: e13
-  added_date: '2026-05-18'
-  entity_type: location
-  name: 'Naval Air Station Patuxent River'
-  wrap_path: /locations/patuxent-river-nas
-  context_summary: 'Named in Q7 as the site of the newly built SAP-F hangar identified to receive the proposed Lockheed-to-Bigelow transfer; Elizondo states he has visited this facility.'
-- id: e14
-  added_date: '2026-05-18'
-  entity_type: event
-  name: '2024-11-13 House Oversight UAP hearing'
-  wrap_path: /events/2024-11-13-house-oversight-uap-hearing
-  context_summary: 'November 13, 2024 joint subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth" at which Elizondo testified. The QFR is the formal post-hearing response to Burlison''s December 9, 2024 questions.'
-
 naming_quirks:
 - id: nq1
   added_date: '2026-05-18'

@@ -429,54 +429,5 @@ quotes:
     location: "p. 49"
   significance: Ranking Minority Member Garcia's framing of the hearing as unusually bipartisan
   context: Garcia closing remarks
-entities_referenced:
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: person
-  name: David Grusch
-  wrap_path: /people/david-grusch
-  context_summary: Witness sworn at this hearing; former NRO Representative to the UAP Task Force; PPD-19 urgent concern filer
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Robert Garcia
-  wrap_path: /people/robert-garcia
-  context_summary: Ranking Minority Member of the Subcommittee; closed the hearing with the "most bipartisan conversation" framing
-- id: e6
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Jamie Raskin
-  wrap_path: /people/jamie-raskin
-  context_summary: Ranking Minority Member of the full Committee on Oversight and Accountability; made the bipartisan whistleblower-protection statement
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Tim Burchett
-  wrap_path: /people/tim-burchett
-  context_summary: Representative (Tennessee); co-led the effort to secure the hearing; entered 3 documents into the record (Knapp statement, Corbell report, DIRD on vacuum engineering)
-- id: e9
-  added_date: '2026-04-20'
-  entity_type: person
-  name: Anna Paulina Luna
-  wrap_path: /people/anna-paulina-luna
-  context_summary: Representative (Florida); co-led the effort to secure the hearing
-- id: e10
-  added_date: '2026-04-20'
-  entity_type: person
-  name: George Knapp
-  wrap_path: /people/george-knapp
-  context_summary: Investigative journalist; statement for the record entered by Representative Burchett (not a witness)
-- id: e12
-  added_date: '2026-04-20'
-  entity_type: document
-  name: Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
-  wrap_path: /documents/dird-puthoff-vacuum-metric-engineering-2010
-  context_summary: Defense Intelligence Reference Document by Hal Puthoff; entered into the record by Representative Burchett
-- id: e19
-  added_date: '2026-04-20'
-  entity_type: event
-  name: 2004 USS Nimitz UAP encounter
-  wrap_path: /events/2004-nimitz-encounter
-  context_summary: The encounter Fravor testified about at this hearing; cross-referenced from his oral and written testimony
 naming_quirks: []
 rumors: []

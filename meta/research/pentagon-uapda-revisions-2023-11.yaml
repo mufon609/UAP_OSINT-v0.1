@@ -162,43 +162,6 @@ quotes:
   significance: '§9005(e) Transmission requirement — track-changes weakening of the agency-head transmission obligation to the National Archives. "shall" struck through, "should" inserted in the head of the provision applying to "Each head of a Government office". The original Schumer-Rounds text required ("shall") agency heads to transmit unidentified anomalous phenomena records to the Archivist; the OUSD(I&S) markup demotes the obligation to advisory ("should"). Same shall→should weakening pattern as §9010(a) eminent domain (q11) — both lower the imperative on disclosure-pipeline transmission.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9005(e) — transmission shall→should weakening'
   statement_date: '2023-11'
-entities_referenced:
-- id: e2
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: All-domain Anomaly Resolution Office
-  wrap_path: /organizations/aaro
-  context_summary: 'Substituted throughout the markup for "Review Board" — AARO becomes the gatekeeper for disclosure decisions in the rewritten framework, with substitutions visible at §9005(b)(1), §9005(c)(2)(H), §9010(b), and elsewhere.'
-- id: e3
-  added_date: '2026-05-02'
-  entity_type: person
-  name: Sean Kirkpatrick
-  wrap_path: /people/sean-kirkpatrick
-  context_summary: 'AARO Director through December 1, 2023, during the period this markup was submitted. Per Douglas Johnson''s July 2024 Ghost analysis citing his July 17, 2024 von Rennenkampff interview, Kirkpatrick said of these revisions "we convinced Congress last year not to go down that road"; he separately confirmed by email to Johnson that no White House, EOP, or NSC pressure shaped the position.'
-- id: e4
-  added_date: '2026-05-02'
-  entity_type: person
-  name: Douglas Johnson
-  wrap_path: /people/douglas-johnson
-  context_summary: 'Independent journalist who released the 33-page markup PDF via Ghost on July 24, 2024 with accompanying analysis. The release made the OUSD(I&S) submission public for the first time.'
-- id: e5
-  added_date: '2026-05-02'
-  entity_type: person
-  name: Marik von Rennenkampff
-  wrap_path: /people/marik-von-rennenkampff
-  context_summary: 'Journalist who interviewed Kirkpatrick on July 17, 2024 about the OUSD(I&S) UAPDA opposition. Interview is the primary on-record attestation that AARO/OUSD(I&S) opposition shaped the FY24 NDAA outcome.'
-- id: e7
-  added_date: '2026-05-02'
-  entity_type: organization
-  name: Information Security Oversight Office
-  wrap_path: /organizations/isoo
-  context_summary: 'Per the cover page "DoD Position", the markup was prepared "After conferring with NARA/ISOO". ISOO is the NARA component overseeing the executive-branch classification system per Executive Order 13526; the markup''s §9006(3) Senior Agency Official withdrawal authority cites E.O. 13526 as its operating framework.'
-- id: e8
-  added_date: '2026-05-02'
-  entity_type: document
-  name: Douglas Johnson Ghost analysis (July 24, 2024)
-  wrap_path: /news/douglas-johnson-uapda-pentagon-rewrite-20240724
-  context_summary: 'Public release vehicle for the 33-page markup PDF. Provides the contextual framing — submission timing (November 2023), congressional negotiators target, FY24 NDAA outcome (Subtitle C §§1841-1843), and Kirkpatrick verbatim admission.'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-02'

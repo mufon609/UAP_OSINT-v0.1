@@ -2362,25 +2362,6 @@ vouching_chain:
   evidentiary_basis: on-record
   confidence: medium
   note: Reporter paraphrase, no verbatim Rubio fragment. Rubio declined to endorse the substantive claims but affirmed no motive-to-lie — a narrower form of credibility attestation than Nell or Burlison's statements.
-entities_referenced:
-- entity_type: person
-  name: Kathleen Hicks
-  wrap_path: /people/kathleen-hicks
-  context_summary: Deputy Secretary of Defense; took direct AARO oversight in late July 2023 (within days of Grusch's July 26 testimony), repositioning AARO Director Kirkpatrick to report directly to her per 50 U.S.C. § 3373
-  id: e55
-  added_date: '2026-05-02'
-- entity_type: person
-  name: Ronald Moultrie
-  wrap_path: /people/ronald-moultrie
-  context_summary: Under Secretary of Defense for Intelligence and Security through February 29, 2024; cognizant USD(I&S) at AARO's establishment; OUSD(I&S) operational reporting relationship over AARO ended in late July 2023 with the Hicks transition
-  id: e56
-  added_date: '2026-05-02'
-- entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
-  wrap_path: /organizations/ousd-is
-  context_summary: AARO's parent office during Grusch's UAPTF/AARO-reporting tenure; lost direct AARO operational reporting line in late July 2023 (administrative cognizance retained)
-  id: e57
-  added_date: '2026-05-02'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-24'

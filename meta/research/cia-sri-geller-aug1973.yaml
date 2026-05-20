@@ -169,23 +169,4 @@ quotes:
     location: 'p. 27, ¶4'
   significance: Mechanism-hypothesis framing — Targ identifies two competing mechanisms (clairvoyance vs telepathy) the computer-storage experiments cannot distinguish
   statement_date: '1973-08-13'
-entities_referenced:
-- id: e1
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Uri Geller
-  wrap_path: /people/uri-geller
-  context_summary: Test subject in the eight-day SRI experimental period August 4-11, 1973
-- id: e2
-  added_date: '2026-05-16'
-  entity_type: person
-  name: Russell Targ
-  wrap_path: /people/russell-targ
-  context_summary: 'Cover-memo author; the page header ''August 13, 1973  R. Targ'' identifies him as the document''s author; primary SRI experimenter (Sunday August 5 narrative ''Targ, who was with the drawing'')'
-- id: e4
-  added_date: '2026-05-16'
-  entity_type: organization
-  name: Stanford Research Institute
-  wrap_path: /organizations/stanford-research-institute
-  context_summary: SRI hosted the experimental sessions across two divisions — Life Sciences Division (shielded room used for EEG research; August 4-8) and the Engineering building (computer facilities; August 9-11)
 naming_quirks: []

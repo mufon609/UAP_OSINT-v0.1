@@ -289,57 +289,6 @@ quotes:
   significance: Arlo's 2021 Company Overview lists DUNS 079302981 (legacy; superseded by UEI JSRCFJVJM874 per USAspending), CAGE Code 72UJ9, NAICS codes 541611/541512/541613/541690/561210, and names "FOUNDERS
     ARLENE WUBE & LONYE FORD". First primary-source attestation in the corpus of both founders by name.
   statement_date: '2021-08-30'
-entities_referenced:
-- id: e2
-  entity_type: organization
-  name: Premier Enterprise Solutions, LLC
-  wrap_path: /organizations/premier-enterprise-solutions
-  context_summary: Co-vendor in the OUSD(I&S) contractor cluster; awarded EXDIR Call Order 1 (HQ003425A0004 / HQ003425F-series) in the post-reevaluation award round; co-protester with Arlo of the September
-    2024 initial awards.
-  references:
-  - quote_id: q1
-  - quote_id: q4
-  - quote_id: q5
-  added_date: '2026-05-03'
-- id: e3
-  entity_type: organization
-  name: Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions
-  wrap_path: /organizations/comprehensive-approach-solutions
-  context_summary: Initial September 2024 EXDIR Call Order 1 awardee under HQ003424R0178 — displaced when WHS took corrective action and reevaluated; final EXDIR award went to Premier.
-  references:
-  - quote_id: q4
-  added_date: '2026-05-03'
-- id: e4
-  entity_type: organization
-  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
-  wrap_path: /organizations/ousd-is
-  context_summary: Primary federal customer for nearly all of Arlo's WHS-issued prime contracts since 2019, including the HQ003425A0004 BPA Enterprise contract and HQ003425F0104 SASP Call Order. Arlo's
-    post-2025 marketing renders this entity as Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
-  references:
-  - quote_id: q2
-  - quote_id: q3
-  - quote_id: q8
-  - quote_id: q10
-  - quote_id: q11
-  - quote_id: q12
-  - quote_id: q13
-  - quote_id: q15
-  added_date: '2026-05-03'
-- id: e7
-  entity_type: organization
-  name: AARO (All-domain Anomaly Resolution Office)
-  wrap_path: /organizations/aaro
-  context_summary: OUSD(I&S) sub-directorate where Sancorp holds independent prime contracts (HQ003422C0094 / HQ003424C0096) — not part of HQ003424R0178; Arlo did not take over Sancorp's AARO contracts.
-  references: []
-  added_date: '2026-05-03'
-- id: e11
-  entity_type: person
-  name: Arlene Wube
-  wrap_path: /people/arlene-wube
-  context_summary: Co-founder of Arlo Solutions (per 2021 Company Overview FOUNDERS line); current role at Arlo unattested in the retrieved primary-source corpus.
-  references:
-  - quote_id: q17
-  added_date: '2026-05-03'
 naming_quirks:
 - id: nq1
   observed: VA T4NG2

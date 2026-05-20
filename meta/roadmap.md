@@ -160,6 +160,17 @@ phase one session, validator clean at every boundary):**
   `entities_referenced` from all artifacts (full version of the A1.4
   removal). Body wraps untouched → broken-link registry unchanged.
   **Rollback:** `git restore meta/research/`.
+
+  **Landed.** `entities_referenced` removed from all 51 artifacts (655
+  entries) via `scripts/build/migrate-c38-drop.py` (dry-run-first;
+  per-edit self-check: re-parse + key absent). Field now absent
+  corpus-wide. Deletion-only diff (0 lines added, 4,457 removed); 0
+  rendered node-body files changed; broken-link registry unchanged
+  (510). Regression guard green: `validate.py`, `validate-research.py`
+  (0 errors), `review-coverage.py` `description_token_drift` = 0 errors
+  (full deletion gate-safe, as A1.1 verified), `build-state --check`.
+  The field's machinery (checks, schema def, name-grounding) still
+  present and now no-ops on the empty corpus → retired in C38.4.
 - **C38.4 — Retire the field machinery.** Remove the `entity_entry`
   schema def + invariants line; delete `scripts/checks/entities_referenced.py`
   and `scripts/checks/stub_linking.py` + their dispatch in

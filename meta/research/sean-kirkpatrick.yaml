@@ -1602,55 +1602,6 @@ quotes:
     location: 'Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023'
   significance: 'Verbatim Kirkpatrick LinkedIn statement (July 28, 2023, in personal capacity) issued two days after David Grusch''s House Oversight testimony. The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
   context: 'Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage'
-entities_referenced:
-- id: e3
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: U.S. Naval Research Laboratory
-  wrap_path: /organizations/us-navy
-  context_summary: NRC Fellow 1996-1997
-- id: e7
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Defense Intelligence Agency
-  wrap_path: /organizations/dia
-  context_summary: Three documented tenures (2007-2010 joint CIA-DIA program office; 2012-2016 DIO/S&TI; 2021-2022 MSIC Chief Scientist)
-- id: e10
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: U.S. Space Command
-  wrap_path: /organizations/usspacecom
-  context_summary: Deputy Director of Intelligence and DNI Representative 2019-2021; led establishment of USSPACECOM Intelligence Enterprise (the fifth IC new-start org Kirkpatrick led)
-- id: e11
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: Space Control Portfolio Manager OSD 2010-2012; AARO is OUSD(I&S)-anchored
-- id: e13
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: Oak Ridge National Laboratory
-  wrap_path: /organizations/ornl
-  context_summary: Kirkpatrick's post-AARO institutional affiliation; per FIA-24-0036 his internal title is Chief Operating Officer for the National Security Sciences Directorate
-- id: e15
-  added_date: '2026-04-29'
-  entity_type: organization
-  name: 'Elara Nova: The Space Consultancy'
-  wrap_path: /organizations/elara-nova-the-space-consultancy
-  context_summary: Partner since 2023; partner photograph uploaded to /2023/10/ directory
-- id: e26
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Christopher Mellon
-  wrap_path: /people/christopher-mellon
-  context_summary: Former DASD(I); June 2023 Signal interlocutor (FOIA 24-F-0266); Kirkpatrick described his role to Mellon as 'defending and adjudicating'
-- id: e38
-  added_date: '2026-04-29'
-  entity_type: person
-  name: Dustin M. Slaughter
-  wrap_path: /people/dustin-slaughter
-  context_summary: The UAP Register publisher; appellant in DOE FIA-24-0036 decision that surfaced Kirkpatrick's COO/NSSD title and classified DOE-IN access at ORNL
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'

@@ -168,17 +168,4 @@ quotes:
     location: Closing ¶18
   significance: Closing terminology — "Non-Human Reverse Engineering Programs" naming; "ontological (earth-shattering) shock" framing
   context: closing statement
-entities_referenced:
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: National Geospatial-Intelligence Agency (NGA)
-  wrap_path: /organizations/nga
-  context_summary: Grusch's civilian agency 2021-2023 at the GS-15 level; he describes himself as his agency's co-lead in UAP and trans-medium object analysis
-- id: e6
-  added_date: '2026-04-20'
-  entity_type: document
-  name: PPD-19
-  wrap_path: /documents/ppd-19
-  context_summary: Presidential Policy Directive-19; the whistleblower-protection mechanism under which Grusch filed an Urgent Concern with the ICIG
 naming_quirks: []

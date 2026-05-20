@@ -138,52 +138,6 @@ quotes:
   context: sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Anna Paulina Luna
   observation_type: relayed
   statement_date: '2023-07-26'
-entities_referenced:
-- id: e2
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: U.S. Navy
-  wrap_path: /organizations/us-navy
-  context_summary: Graves's service of record — decade-plus as an F-18 pilot including two combat deployments.
-  references:
-  - quote_id: q1
-  - quote_id: q3
-- id: e3
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: Navy Fighter/Attack Squadron 11
-  wrap_path: /organizations/vfa-11
-  context_summary: Graves's 2014 squadron at Virginia Beach; radar upgrade detection + infrared corroboration of UAP; W-72 encounter; open-secret culture of UAP sightings among aircrew.
-  references:
-  - quote_id: q3
-  - quote_id: q4
-  - quote_id: q5
-  - quote_id: q6
-  - quote_id: q11
-- id: e5
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: American Institute of Aeronautics and Astronautics
-  wrap_path: /organizations/aiaa
-  context_summary: Professional aerospace organization where Graves chairs the UAP Integration & Outreach Committee; volunteer team of almost 80 PhDs and aerospace engineers dedicated to the science around this issue.
-  references:
-  - quote_id: q7
-- id: e7
-  added_date: '2026-04-20'
-  entity_type: organization
-  name: National Oceanic and Atmospheric Administration
-  wrap_path: /organizations/noaa
-  context_summary: Gallaudet was formerly its head; mentioned as context for his service record when Graves introduces him as an ASA advisor.
-  references:
-  - quote_id: q8
-- id: e8
-  added_date: '2026-04-20'
-  entity_type: media
-  name: GO-FAST UAP video
-  wrap_path: /media/go-fast
-  context_summary: Navy F/A-18 UAP video attached to Gallaudet's 2015 classified SIPRNET "Urgent safety of flight issue" email; one of the now-famous DoD UAP videos.
-  references:
-  - quote_id: q9
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'

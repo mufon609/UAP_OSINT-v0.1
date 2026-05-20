@@ -165,29 +165,4 @@ quotes:
     location: 'Section 2 (Implementation) subsection (g) (lines 93-100 of the extracted source)'
   significance: 'Section 2(g) — 60-day permanent-renaming recommendation: proposed legislative and executive actions required to permanently change the Department of Defense to the Department of War. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.'
   statement_date: '2025-09-05'
-entities_referenced:
-- id: e3
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: 'United States Department of War (1789-1947)'
-  wrap_path: /organizations/department-of-war-historical
-  context_summary: 'Historical predecessor entity referenced in Section 1 (Purpose): "On August 7, 1789, 236 years ago, President George Washington signed into law a bill establishing the United States Department of War to oversee the operation and maintenance of military and naval affairs." The original Department of War was renamed in 1947; this Order authorizes the use of "Department of War" as a secondary title for the present-day Department of Defense.'
-- id: e4
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: 'Office of Management and Budget'
-  wrap_path: /organizations/omb
-  context_summary: 'Section 3(a)(ii) carve-out: "the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals" are not to be impaired by this Order.'
-- id: e5
-  added_date: '2026-05-03'
-  entity_type: person
-  name: 'George Washington'
-  wrap_path: /people/george-washington
-  context_summary: 'Historical reference in Section 1 (Purpose): cited as the President who signed the August 7, 1789 bill establishing the original United States Department of War, 236 years prior to this Order.'
-- id: e6
-  added_date: '2026-05-03'
-  entity_type: organization
-  name: 'Department of the Navy'
-  wrap_path: /organizations/department-of-the-navy
-  context_summary: 'Historical reference in Section 1 (Purpose): paired with the Department of War as the institutional vehicle through which the United States "won the War of 1812, World War I, and World War II."'
 naming_quirks: []

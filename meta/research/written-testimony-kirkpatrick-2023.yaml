@@ -282,41 +282,4 @@ quotes:
     location: "p. 2"
   significance: Kirkpatrick projects AARO success forward to a whole-of-government capability — military personnel resolving UAP first, then the entire United States Government including civilian agencies; explicit civilian-agencies extension framing absent from oral version
   context: Statement for the Record — forward projection of AARO success path
-entities_referenced:
-- id: e2
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Kirsten E. Gillibrand
-  wrap_path: /people/kirsten-gillibrand
-  context_summary: Chairwoman of the Subcommittee on Emerging Threats and Capabilities; addressed in the opening salutation
-- id: e3
-  added_date: '2026-04-28'
-  entity_type: person
-  name: Joni Ernst
-  wrap_path: /people/joni-ernst
-  context_summary: Ranking Member of the Subcommittee; addressed in the opening salutation
-- id: e5
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: Department of Defense
-  wrap_path: /organizations/dod
-  context_summary: AARO's parent department; the department whose efforts to address UAP Kirkpatrick is testifying on
-- id: e6
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: National Aeronautics and Space Administration
-  wrap_path: /organizations/nasa
-  context_summary: Referenced as AARO's interagency partner — the agency AARO would work with if a future UAP encounter required reporting an extraterrestrial-origin finding
-- id: e7
-  added_date: '2026-04-28'
-  entity_type: organization
-  name: Department of Energy
-  wrap_path: /organizations/doe
-  context_summary: Referenced by Kirkpatrick as a partner agency in AARO's interagency partnerships
-- id: e10
-  added_date: '2026-04-28'
-  entity_type: transcript
-  name: Sean Kirkpatrick — Oral Testimony, 2023-04-19 SASC AARO Hearing
-  wrap_path: /transcripts/2023-04-19-sasc-kirkpatrick
-  context_summary: Companion oral testimony — the open-session stenographic record of Kirkpatrick's testimony at the same hearing; written and oral are independent primary records of the same event
 naming_quirks: []
