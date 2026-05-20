@@ -197,6 +197,11 @@ def _render_statements_grouped(artifact, quotes):
             lines += [f"### {key}", ""]
         for p in primaries:
             lines.append(_render_statement_block(p, artifact))
+            # The flat layout conveys observation_type via its Direct/Other
+            # section split; the claim-group layout has no such split, so
+            # mark first-hand observations inline to preserve the signal.
+            if p.get("observation_type") == "direct":
+                lines += ["", "_Direct observation._"]
             ptrs = sort_by_date(
                 [by_id[c] for c in (p.get("corroborated_by") or []) if c in by_id],
                 "statement_date",

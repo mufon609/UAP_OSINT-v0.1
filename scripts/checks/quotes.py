@@ -76,6 +76,13 @@ def check(ctx):
         q.get("id"): q.get("claim_group")
         for q in quotes if isinstance(q, dict) and q.get("id")
     }
+    # Quotes pointed at by some other quote's corroborated_by — these
+    # render as compact pointers, not full blocks. Used to forbid
+    # corroboration chains (a pointer that itself carries corroborated_by).
+    pointer_ids = {
+        cid for q in quotes if isinstance(q, dict)
+        for cid in (q.get("corroborated_by") or [])
+    }
 
     for i, q in enumerate(quotes):
         if not isinstance(q, dict):
@@ -222,6 +229,19 @@ def check(ctx):
                         f"claim_group",
                         check_name=CHECK_NAME,
                     )
+            # No corroboration chains: a quote pointed at by another's
+            # corroborated_by is a pointer (renders as a source link, not a
+            # full block), so it must not itself carry corroborated_by —
+            # those nested pointers would never render.
+            if q.get("corroborated_by") and q.get("id") in pointer_ids:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): is itself a corroboration "
+                    f"pointer (listed in another quote's corroborated_by) yet "
+                    f"carries its own corroborated_by — chains don't render. "
+                    f"Point every same-claim quote at one primary instead.",
+                    check_name=CHECK_NAME,
+                )
 
         # attestation_tier — optional finding-scoped field. Validate
         # enum membership when present. Warn when set on non-finding
