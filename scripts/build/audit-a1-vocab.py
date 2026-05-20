@@ -4,7 +4,13 @@
 Classifies every ``entities_referenced[]`` entry across
 ``meta/research/*.yaml`` into the three A1 migration buckets and
 quantifies the TRUE ``description_token_drift`` vocab risk of deleting
-each redundant entry — the safety property phase A1.4 must preserve.
+each redundant entry — the safety property phase A1.4 must hold.
+
+NOTE (2026-05-19): this audit's headline finding RETIRED roadmap phase
+A1.2 (vocab preservation). Bucket (c) is empty corpus-wide → no
+``naming_quirks`` preservation pass is needed before deletion. The
+bucket scheme below is kept as the audit's classification output; (c)
+being empty is the result, not a TODO. See ``meta/roadmap.md`` "A1".
 
 Buckets (per ``meta/roadmap.md`` "A1", phase A1.1):
 
@@ -15,10 +21,11 @@ Buckets (per ``meta/roadmap.md`` "A1", phase A1.1):
                         removes no grounding from any live
                         ``description_token_drift`` token.
   (c) DELETE-migrate  — redundant AND the entry's ``name`` is the SOLE
-                        grounding for a token in the node's
-                        ``## Description`` section; phase A1.2 must
-                        migrate the name into ``naming_quirks[]`` before
-                        phase A1.4 deletes the entry.
+                        grounding for a token in a node where the gate
+                        is LIVE (``## Description`` + ``source_text``).
+                        Confirmed empty corpus-wide by this audit, which
+                        is why A1.2 was retired. Were it ever non-empty,
+                        those names would need migrating before deletion.
 
 Why gate-accuracy matters. ``description_token_drift`` is the only
 consumer that grounds vocabulary on ``entities_referenced[].name``, and

@@ -94,13 +94,26 @@ and per-consumer dependency walk live in the BACKLOG entry and the
 2026-05-19 investigation report. This roadmap block is the
 **execution plan**.
 
-**Direction (approved 2026-05-19):** retire mandatory registration
-with **vocab-preservation migration**. The naive "delete first"
-path silently breaks `description_token_drift.py` on artifacts
-where trivial entries carry unique entity names not present in body
-prose or `naming_quirks[]` (sample: karl-nell loses 32 entity-name
-tokens; corpus-wide estimate 300–400). The migration must preserve
-those names in `naming_quirks` **before** any deletion.
+**Direction (re-scoped 2026-05-19 after A1.1).** Retire mandatory
+registration; redundant entries delete directly. The
+vocab-preservation migration originally approved (preserve entity
+names into `naming_quirks` before deletion) was **retired** — the
+A1.1 audit verified end-to-end against the live gate that deleting
+every `entities_referenced[]` entry corpus-wide adds **zero** new
+`description_token_drift` errors (ACTIVE gate risk = 0). The
+karl-nell "300–400 tokens lost" projection measured vocab-pool
+shrinkage, not gate failures; the gate fires only on
+`## Description` + `source_text` nodes, and no live Description
+token grounds solely on an entity name. See the A1.1 landed-note
+below for the full reasoning.
+
+**Deletion count is a contributor-review dial, not a fixed number.**
+The BACKLOG's "~173 preserve / ~1,081 delete" projection does not
+match the audit: at substantive-threshold ≥1 token the split is
+885 preserve / 369 delete. The threshold (how much unique
+`context_summary` synthesis an entry must carry to be kept) is a
+judgment A1.4 must settle with contributor review — `audit-a1-vocab.py
+--substantive-threshold N` is the dial.
 
 **Phase ordering (each phase = one fresh session, validator clean at
 every boundary):**
@@ -140,14 +153,18 @@ every boundary):**
   other ungrounded tokens, so preserving the 13 names would not make it
   gate-clean regardless.
 
-- **A1.2 — Vocab preservation.** Write
-  `scripts/build/migrate-a1-vocab.py`: consumes the A1.1 report
-  and adds `naming_quirks[]` entries for every unique-to-entry name
-  in the "delete after vocab migration" bucket. Contributor reviews
-  per-artifact diffs before applying. Validator must pass — the
-  `description_token_drift` gate should now have equivalent
-  vocabulary coverage as it does today, despite the entries not
-  yet being deleted. **Rollback:** `git restore meta/research/`.
+- **A1.2 — Vocab preservation.** **RETIRED 2026-05-19 after A1.1.**
+  Premise contradicted: A1.1 verified ACTIVE `description_token_drift`
+  risk = 0, so no `naming_quirks` preservation pass is needed before
+  deletion. No `migrate-a1-vocab.py` will be written. The bucket-(c)
+  "delete-migrate" worklist the audit produces is confirmed empty
+  corpus-wide. (One LATENT case — 13 entity names in the
+  `lockheed-martin-uap-materials` investigation — is moot: the gate
+  is skipped there for empty `source_text`, and 49 other Description
+  tokens are ungrounded anyway, so preserving the names wouldn't make
+  the node gate-clean even if a source were later added. Left alone;
+  it's a pre-existing investigation-node grounding gap, not an A1
+  concern.)
 
 - **A1.3 — Schema relax.** Update
   `meta/schema-research-artifact.yaml`: move `entities_referenced`
@@ -156,12 +173,16 @@ every boundary):**
   permissive). **Rollback:** revert the schema file.
 
 - **A1.4 — Corpus deletion.** Write
-  `scripts/build/migrate-a1-delete.py`: consumes the A1.1 report
-  and deletes redundant entries from each artifact. Preserves
-  auto-populated `references[]` pointers on retained entries.
-  Validator must pass — critically, `description_token_drift`
-  must report zero new failures (the A1.2 preservation is what
-  makes this safe). **Rollback:** `git restore meta/research/`.
+  `scripts/build/migrate-a1-delete.py`: consumes the A1.1 audit
+  (`audit-a1-vocab.py`) and deletes the redundant (delete-no-risk)
+  entries from each artifact at the contributor-chosen substantive
+  threshold. Preserves auto-populated `references[]` pointers on
+  retained entries. Settle the threshold first (see Direction —
+  885/369 at ≥1; review the per-artifact reports before committing
+  to a count). Validator must pass; `description_token_drift` must
+  report zero new failures — A1.1 already verified this holds for
+  full deletion, so it's a regression guard, not a question.
+  **Rollback:** `git restore meta/research/`.
 
 - **A1.5 — Convention rewrite.** Update `meta/conventions.md`
   "Cross-reference contract for interview-derived testimony"
@@ -172,7 +193,7 @@ every boundary):**
   commit. **Rollback:** revert the file.
 
 - **A1.6 — Verification.** Confirm `stub_linking.py` scope correctly
-  shrunk to the retained ~173 entries; confirm `coverage-suggest.py`
+  shrunk to the retained entries; confirm `coverage-suggest.py`
   output is noisier but still actionable; confirm
   `link_resolution.py` and the broken-link registry unchanged.
   No code changes expected; logs the post-migration baseline for
@@ -181,9 +202,9 @@ every boundary):**
 **Cross-references:**
 - Blocks: none.
 - Touches: `meta/schema-research-artifact.yaml`, `meta/conventions.md`,
-  58 research artifacts (~1,081 entry deletions, ~300–400
-  `naming_quirks` additions), no renderers (entities_referenced
-  is artifact-only).
+  research artifacts (deletion count = contributor-chosen threshold;
+  369 at ≥1 token), **no** `naming_quirks` additions (A1.2 retired),
+  no renderers (entities_referenced is artifact-only).
 - Orthogonal to C35 — different files, different decisions; can
   proceed in parallel sessions.
 
