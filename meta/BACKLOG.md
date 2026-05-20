@@ -727,6 +727,13 @@ remain `[`/path`]` body wraps regardless.
 
 ### C38 — Permanent disposition of the optional `entities_referenced[]` residual
 
+**PROMOTED 2026-05-20 → `meta/roadmap.md` "C38" (Drop + relocate;
+phases C38.1–C38.5). Direction chosen: drop the field entirely,
+relocating the genuinely load-bearing `context_summary` synthesis into
+existing rendered surfaces first; the rest is accepted as dropped.**
+This entry stays as the analysis-of-record (the options + rationale
+below) until phase C38.5 retires it.
+
 A1 (shipped 2026-05-20) made `entities_referenced[]` optional and
 deleted the redundant entries, leaving **655 curated entries across 51
 of 58 artifacts**. The question A1 deferred: what is the *permanent*

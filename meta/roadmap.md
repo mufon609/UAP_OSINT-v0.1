@@ -114,6 +114,60 @@ an optional, inconsistently-populated field (51/58 artifacts). Its
 permanent disposition — render / relocate / bless as agent metadata /
 drop — is unresolved.
 
+### C38 — Drop `entities_referenced[]`; relocate load-bearing context_summaries  ⏳ PENDING
+
+Promoted from `meta/BACKLOG.md` C38 on 2026-05-20. Follow-on to the
+shipped A1: resolves the residual 655 optional, unrendered,
+currently-unconsumed entries. **Direction chosen:** drop the field
+entirely, relocating the genuinely load-bearing `context_summary`
+synthesis into existing rendered surfaces first; the rest is accepted
+as dropped (it duplicates the body or has no rendered home). The
+BACKLOG C38 entry holds the options + rationale.
+
+**Phase ordering (relocate before drop before retire-machinery; each
+phase one session, validator clean at every boundary):**
+
+- **C38.1 — Triage audit (read-only).** Classify each of the 655
+  entries: RELOCATE (`context_summary` carries reader-value synthesis
+  not already rendered AND the entity has a rendered home on the
+  artifact — affiliation / relationship / timeline / key-personnel /
+  quote), with a proposed target surface; vs DROP (near-clutter,
+  already-covered, or no rendered home → synthesis accepted as lost).
+  Emit a per-artifact review report to `/tmp/`. No changes. Sizes the
+  relocation; the later phases firm up / may merge based on the count.
+  **Rollback:** delete the script.
+- **C38.2 — Relocation (contributor-reviewed).** Fold each RELOCATE
+  entry's synthesis into its target rendered surface (`timeline[].note`,
+  `relationship[].note`, `affiliation[].note`, `credibility_notes`,
+  `quote.context`). Editorial; the relocated prose is
+  prose-drift-checked. Contributor reviews per-artifact diffs.
+  **Rollback:** `git restore meta/research/`.
+- **C38.3 — Drop the field from the corpus.** Surgically remove
+  `entities_referenced` from all artifacts (full version of the A1.4
+  removal). Body wraps untouched → broken-link registry unchanged.
+  **Rollback:** `git restore meta/research/`.
+- **C38.4 — Retire the field machinery.** Remove the `entity_entry`
+  schema def + invariants line; delete `scripts/checks/entities_referenced.py`
+  and `scripts/checks/stub_linking.py` + their dispatch in
+  `validate-research.py` / `review-coverage.py`; drop the
+  `entities_referenced.name` grounding from `description_token_drift.py`;
+  clean `coverage-suggest.py` (pooling + sections list),
+  `research-scaffold.py` (`--explain` mapping), `extract-source.py`
+  hint, `prompts/build.md` Step 7, and `conventions.md`
+  "Cross-reference contract" (becomes body-wraps-only); retire
+  `audit-a1-vocab.py` + `migrate-a1-delete.py`. help-check +
+  validators clean. **Rollback:** revert the files.
+- **C38.5 — Verification + retire C38.** Confirm broken-link registry
+  unchanged, all gates green, no dangling `entities_referenced`
+  references; retire the BACKLOG C38 entry; finalize roadmap.
+
+**Cross-references:**
+- Blocks: none. Follow-on to A1 (shipped).
+- Touches: 51 research artifacts (relocation + 655-entry deletion),
+  `meta/schema-research-artifact.yaml`, `meta/conventions.md`,
+  `prompts/build.md`, several `scripts/checks/` + `scripts/build/` +
+  `scripts/tools/` files.
+
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
 Blocked on: multiple artifacts with overlapping evidentiary claims.
