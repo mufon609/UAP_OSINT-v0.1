@@ -105,10 +105,11 @@ scripts/
                             modules; keeps mechanical lockstep across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains 9 gates:
+  pre-commit.sh             canonical all-gates health check (chains 11 gates:
                             help-check / test_stopwords / smoke / build/validate.py /
                             build/validate-research.py / build/review-coverage.py /
-                            build/build-state.py --check / file-size-check /
+                            build/build-state.py --check / build/build-md-spec.py /
+                            build/renderer-coverage.py / file-size-check /
                             cookies-check)
   help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
@@ -227,10 +228,11 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 9 gates: help-check / test_stopwords / smoke /
+This chains 11 gates: help-check / test_stopwords / smoke /
 `validate.py` / `validate-research.py` / `review-coverage.py` /
-`build-state.py --check` / `file-size-check` / `cookies-check`. Then
-pick work from `meta/topic/research-queue.md`.
+`build-state.py --check` / `build-md-spec.py` / `renderer-coverage.py` /
+`file-size-check` / `cookies-check`. Then pick work from
+`meta/topic/research-queue.md`.
 
 ---
 

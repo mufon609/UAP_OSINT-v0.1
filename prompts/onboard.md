@@ -37,7 +37,7 @@ Then run the health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-All ten gates must be green:
+All eleven gates must be green:
 - `help-check` — every `scripts/{build,tools}/*.py --help` exits clean
 - `test_stopwords` — STOPWORDS shape + content-word regression test
 - `smoke` — fixture scaffolds validate cleanly
@@ -52,6 +52,8 @@ All ten gates must be green:
 - `scripts/build/build-state.py --check` — CLAUDE.md build-state block in sync
 - `scripts/build/build-md-spec.py` — `build.md`'s per-type section spec
   stays in sync with `meta/schema.yaml`
+- `scripts/build/renderer-coverage.py` — every schema-required section is
+  renderer-producible (schema sections ⊆ renderer `EMITS`)
 - `file-size-check` — git-tracked files within GitHub thresholds
   (warn 50MB / error 100MB; per `meta/sources-access.md` "Large
   primary-source files (>100MB)")

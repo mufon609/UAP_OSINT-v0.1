@@ -23,6 +23,19 @@ from ._universal import (
     render_source_form_notes,
 )
 
+# Renderer-coverage contract — canonical H2 section titles render_body_media
+# can emit. Media Versioning is conditional on derivation_of. Checked against
+# schema-required sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Media Summary",
+    "Description",
+    "Media Versioning",       # conditional on derivation_of
+    "Key Passages",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 def render_title_media(artifact):
     """H1 title for media nodes. Prefers context_extrinsic.display_title,

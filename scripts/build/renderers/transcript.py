@@ -24,6 +24,19 @@ from ._universal import (
     render_source_form_notes,
 )
 
+# Renderer-coverage contract — canonical H2 section titles
+# render_body_transcript can emit (both kinds emit the same set). Checked
+# against schema-required sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Publication Record",
+    "Summary",
+    "Speakers",
+    "Key Passages",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 def render_title_transcript(artifact):
     """H1 title for transcript nodes. Prefers context_extrinsic.display_title,

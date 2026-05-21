@@ -24,6 +24,25 @@ from ._universal import (
     render_description,
 )
 
+# Renderer-coverage contract — canonical H2 section titles
+# render_body_investigation can emit. Counter-Evidence / Closure Path /
+# Resolution History are conditional (Closure Path required when status ==
+# paused; the other two auto-suppress when empty). Checked against
+# schema-required sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Question",
+    "Description",
+    "Hypotheses",
+    "Cited Findings",
+    "Hypothesis Evaluation",
+    "Open Questions",
+    "Best-Current Answer",
+    "Counter-Evidence",      # conditional
+    "Closure Path",          # conditional / required when status == paused
+    "Resolution History",    # conditional
+    "Associated Nodes",
+})
+
 
 def render_title_investigation(artifact):
     """H1 title for investigation nodes. ``document_intrinsic.full_name``

@@ -23,10 +23,15 @@
 #                                              + optional_sections + conditionally
 #                                              required + universal-conditional
 #                                              section names
-#   9. scripts/tests/file-size-check.sh      — git-tracked files within
+#   9. python3 scripts/build/renderer-coverage.py
+#                                            — every schema-required section is
+#                                              renderer-producible (schema
+#                                              required/optional/conditional
+#                                              sections ⊆ renderer EMITS)
+#  10. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
-#  10. scripts/tests/cookies-check.sh        — no tracked file contains
+#  11. scripts/tests/cookies-check.sh        — no tracked file contains
 #                                              Netscape cookies content or
 #                                              Google session cookies in
 #                                              Netscape-shape rows (defensive
@@ -104,6 +109,7 @@ steps=(
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
     $'build-md-spec.py\tpython3 scripts/build/build-md-spec.py --quiet'
+    $'renderer-coverage.py\tpython3 scripts/build/renderer-coverage.py --quiet'
     $'file-size-check\tbash scripts/tests/file-size-check.sh'
     $'cookies-check\tbash scripts/tests/cookies-check.sh'
 )

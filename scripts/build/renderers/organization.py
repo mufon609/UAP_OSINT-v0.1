@@ -27,6 +27,25 @@ from ._universal import (
     render_timeline,
 )
 
+# Renderer-coverage contract — canonical H2 section titles
+# render_body_organization can emit (across all three kinds). Primary
+# Contracts is gov-contractor-only. Checked against schema-required sections
+# by renderer-coverage.py.
+EMITS = frozenset({
+    "Overview",
+    "Description",
+    "Key Personnel",
+    "Key Passages",
+    "Primary Contracts",      # gov-contractor kind only
+    "Timeline",
+    "Relationships",
+    "Primary-Source Contradictions",
+    "Public-Record Claims Without Primary Source",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 # Row-label mapping for Overview fact-table rows. Keyed by
 # document_intrinsic field name; value is the display label for the

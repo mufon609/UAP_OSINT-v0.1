@@ -25,6 +25,23 @@ from ._universal import (
     render_source_form_notes,
 )
 
+# Renderer-coverage contract — canonical H2 section titles render_body_finding
+# can emit. Apparent Contradictions / Timeline / Source-Form Notes / Preserved
+# Disagreements are conditional (auto-suppressed when their artifact content is
+# empty). Checked against schema-required sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Pattern Statement",
+    "Description",
+    "Evidence",
+    "What the Record Establishes",
+    "What the Record Doesn't Establish",
+    "Apparent Contradictions",   # conditional
+    "Timeline",                  # conditional
+    "Source-Form Notes",         # conditional
+    "Preserved Disagreements",   # conditional
+    "Associated Nodes",
+})
+
 
 def render_title_finding(artifact):
     """H1 title for finding nodes. ``document_intrinsic.full_name``

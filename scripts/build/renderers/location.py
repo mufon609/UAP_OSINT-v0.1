@@ -26,6 +26,24 @@ from ._universal import (
     render_source_form_notes,
 )
 
+# Renderer-coverage contract — canonical H2 section titles render_body_location
+# can emit. The Scope Activity heading keeps its raw {topic_display_name}
+# placeholder so it matches schema's raw form. Checked against schema-required
+# sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Overview",
+    "Description",
+    "Ownership Timeline",
+    "{topic_display_name}-Scope Activity",
+    "Key Passages",
+    "Relationships",
+    "Primary-Source Contradictions",
+    "Public-Record Claims Without Primary Source",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 # Row-label mapping for Overview fact-table rows.
 _LOCATION_OVERVIEW_LABELS = {

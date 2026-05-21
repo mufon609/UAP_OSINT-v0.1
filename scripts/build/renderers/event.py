@@ -26,6 +26,25 @@ from ._universal import (
     render_timeline,
 )
 
+# Renderer-coverage contract — canonical H2 section titles render_body_event
+# can emit (across both kinds). Hearings emit Key Testimony + Witnesses &
+# Testimony; encounters emit Corroboration. Checked against schema-required
+# sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Event Summary",
+    "Description",
+    "Participants",
+    "Timeline",
+    "Key Testimony",          # hearing kind
+    "Witnesses & Testimony",  # hearing kind
+    "Corroboration",          # encounter kind
+    "Primary-Source Contradictions",
+    "Public-Record Claims Without Primary Source",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 # Participant capacity → sub-section header used in hearing Participants.
 # Encounter Participants uses the flat Confirmed/Flagged table instead.

@@ -33,6 +33,31 @@ from ._universal import (
     render_timeline,
 )
 
+# Renderer-coverage contract — canonical H2 section titles render_body_person
+# can emit (across all four archetypes). The Relevance heading keeps its raw
+# {topic_display_name} placeholder so it matches schema's raw form. Checked
+# against schema-required sections by renderer-coverage.py.
+EMITS = frozenset({
+    "Identity",
+    "Background",
+    "{topic_display_name} Relevance",
+    "Affiliations",
+    "Statements",
+    "Timeline",
+    "Relationships",
+    "Corroboration",          # eyewitness archetype
+    "Claim Inventory",        # whistleblower archetype
+    "Program Involvement",    # institutional-actor archetype
+    "Publication Record",     # reporter archetype
+    "Credibility Notes",
+    "Vouching Chain",         # whistleblower-only
+    "Primary-Source Contradictions",
+    "Public-Record Claims Without Primary Source",
+    "Source-Form Notes",
+    "Preserved Disagreements",
+    "Associated Nodes",
+})
+
 
 def _person_display_name(artifact, slug_hint=None):
     dm = artifact.get("document_intrinsic") or {}
