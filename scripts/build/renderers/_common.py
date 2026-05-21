@@ -185,16 +185,19 @@ def _compose_attributed_to(ctx, date):
     """Compose the Attributed-to value from a quote's context + statement_date.
 
     Appends the date as a trailing segment unless it already appears in the
-    context (dedup). A trailing sentence period on the context is dropped
-    before the append, so the date reads as a clean continuation rather than
-    producing `…Acting Director"., 2024-05`."""
-    ctx = ctx or ""
+    context (dedup). When the context ends in terminal punctuation, the date
+    is separated by a space — the punctuation already closes the clause — so
+    a credential or quoted phrase keeps its period intact
+    (`…D.Eng. 2010-03-29`, `…Acting Director". 2022-05-27`). Otherwise the date
+    joins as an appositive with a comma (`…in Tampa, 2024-05`)."""
+    ctx = (ctx or "").rstrip()
     date = date or ""
     if not date or date in ctx:
         return ctx
     if not ctx:
         return date
-    return f"{ctx.rstrip('.')}, {date}"
+    sep = " " if ctx.endswith((".", "?", "!")) else ", "
+    return f"{ctx}{sep}{date}"
 
 
 def _render_attribution_block(quote, artifact):

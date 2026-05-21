@@ -918,7 +918,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 | Field | Value |
 |---|---|
-| Attributed to | DefenseScoop article ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing'' by Brandi Vincent, December 5, 2024. Quote attributed to DOD spokesperson Sue Gough, 2024-12-05 |
+| Attributed to | DefenseScoop article ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing'' by Brandi Vincent, December 5, 2024. Quote attributed to DOD spokesperson Sue Gough. 2024-12-05 |
 | Source | [archived source](../sources/news/defensescoop-aaro-foc-briefing-20241205.html) |
 | Location | DefenseScoop article body |
 
@@ -982,7 +982,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 | Field | Value |
 |---|---|
-| Attributed to | Trump TRUTH Social post, posted February 19, 2026 8:13 PM EST. Status ID 116100300268316472. Original URL: truthsocial.com/@realDonaldTrump/116100300268316472. Archived via Trump's Truth (trumpstruth.org), an independent archive of Trump's TRUTH Social posts, 2026-02-19 |
+| Attributed to | Trump TRUTH Social post, posted February 19, 2026 8:13 PM EST. Status ID 116100300268316472. Original URL: truthsocial.com/@realDonaldTrump/116100300268316472. Archived via Trump's Truth (trumpstruth.org), an independent archive of Trump's TRUTH Social posts. 2026-02-19 |
 | Source | [archived source](../sources/social/trumpstruth-statuses-36826-uap-disclosure-20260219.html) |
 | Location | Original Post body, status ID 116100300268316472 |
 
