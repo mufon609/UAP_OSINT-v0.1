@@ -26,6 +26,38 @@ The repository does not adjudicate between conflicting primary sources.
 It documents what each source says and links to both. The reader draws
 their own conclusions from the preserved evidence.
 
+The repository **preserves**; it records what each source says verbatim
+and does not clean, correct, or improve it. Source-form artifacts — OCR
+errors, the document's own typos, garbled-but-legible scan regions — are
+preserved as-is and flagged (`naming_quirks` / sic), never silently
+fixed. Recovering the human-visible text of a garbled scan is
+preservation; deleting or altering it is not.
+
+---
+
+## Relevance can be relational
+
+An entity earns a node when it has a primary-source-documented connection
+to the investigation's subject — and that connection may live in the
+entity's *relationships* rather than in its own sources. An entity can be
+load-bearing through documented ties — a shared parent organization, a
+shared contractor, a sister-office / predecessor / successor
+relationship, a named association in another party's record — even when
+the entity's own primary sources never mention the subject at all. When
+that is the case, the node captures two things: (1) the connecting
+relationship(s), each attested by the source that establishes it — the
+load-bearing core; and (2) enough basic, source-grounded context about
+the entity for the connection to be legible, without sprawling into
+detail unrelated to the investigation. The connection is documented
+strictly to what the sources support, never beyond; any inference about
+*why* it matters stays in the synthesis layer (findings / investigations)
+and with the reader.
+
+Corollary: an entity's relevance often cannot be judged from its own
+source in isolation — it is judged against the connected record. The
+build topology applies this at investigation time (see
+`prompts/topology.md` — "Load-bearing-ness is judged in context").
+
 ---
 
 ## Structure reflects evidence type
@@ -227,6 +259,56 @@ adjacent to the source. The validator's `extraction_type: ocr-scan`
 or `extraction-lossy` flag tells `extract_source_text` to prefer the
 sibling over the underlying PDF text layer. The sibling itself is a
 manifest entry (matching the parent PDF entry).
+
+**Sibling-production method standard.** The four paths above are
+interchangeable on fidelity, but they are NOT interchangeable on
+*uniformity*: the VLM path is subject to the model provider's
+*generative* content filter, which false-positives on legitimate
+dual-use technical content (observed: some AAWSAP DIRDs on exotic
+propulsion / energy physics block mid-transcription). That is a tooling
+limitation, NOT a signal about a source's relevance — the content is in
+scope. A dedicated OCR engine does text *recognition*, not generation,
+so it is filter-immune and uniformly applicable. The standard method
+ladder for every OCR-scan / extraction-lossy sibling:
+
+1. **Default — VLM page-image read** (path 3): highest fidelity on
+   degraded scans (contextual glyph restoration, equation/table
+   handling). Use whenever it completes.
+2. **Filter fallback — a dedicated OCR engine** (path 2), filter-immune:
+   **Tesseract 5** (`sudo apt install tesseract-ocr`; rasterize with the
+   already-present `pdftoppm`) as the free/local default, or a **cloud
+   Document-OCR API** (Google Document AI / Azure Document Intelligence)
+   for higher fidelity on math / Greek / layout. The chosen engine is a
+   project dependency for completing the OCR-scan corpus.
+3. **Manual transcription** (path 4): last resort for short documents an
+   engine mangles.
+
+**Fidelity discipline for OCR-engine output — preserve, don't strip or
+fix.** An OCR engine renders body prose reliably but mangles regions
+that are hard to recognize mechanically yet legible to a human
+(struck-through classification banners, equations, Greek / subscripts,
+degraded figure labels, third-party distribution inserts). Do NOT delete
+or mechanically "correct" these — deleting loses information a human can
+read off the source image, and altering the document's own words erases
+the source-form record. The sibling stays faithful and complete: the
+engine's clean prose stands; regions it garbles are left in place (a
+human reads the source image if such a region later becomes
+quote-bearing); the document's own typos are preserved sic. Any
+source-form artifact that surfaces in an authored quote is carried
+verbatim into `quote.text` and logged as a `naming_quirks` entry
+(`preserve-as-sic-in-quotes`) — that mechanism, not editing the sibling,
+is how artifacts are handled, identically to every other OCR-scan
+source. Draw verbatim quotes from the clean prose.
+
+**Provenance + verification are mandatory regardless of method.** Record
+the production method (VLM / Tesseract / cloud-OCR / manual) in the
+sibling's manifest note. Verify before canonical: an independent agent
+session for VLM / clean output; **contributor (human) page-by-page
+review for OCR-engine output** (the path-2 reviewer — also the robust
+choice when an independent-agent verifier would itself hit the content
+filter on the source's images). The recorded method keeps per-sibling
+fidelity transparent and lets the method improve over time without
+re-litigation.
 
 **Silent-sibling lookup.** `extract_source_text` finds a `.txt`
 sibling by *path stem*, not by manifest registration. A

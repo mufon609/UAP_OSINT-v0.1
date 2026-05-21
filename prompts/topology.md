@@ -88,6 +88,16 @@ because a URL-only investigator violates source-read-first. The 2/3 split
 > boundary. The 2↔3 split moves *who downloads the bytes*, not *whether
 > they were read before a quote is trusted*.
 
+**Load-bearing-ness is judged in context, not in isolation.** An entity's
+relevance frequently lives in its relationships rather than in its own
+source (see `meta/conventions.md` — "Relevance can be relational"), so the
+inclusion decision is made against the source content **and** the
+connected-node context: the nodes that link to and from the subject, plus
+the topic relevance. The Internal Investigator assembles this context (the
+`linked_nodes` set + topic-relevance framing) and passes it forward in the
+handoff; downstream agents judge load-bearing-ness against it. No agent
+judges relevance from a source in isolation.
+
 `prompts/web-claude-investigator.md` is an optional upstream lead
 generator feeding role 2 — a candidate list, never an inclusion decision.
 

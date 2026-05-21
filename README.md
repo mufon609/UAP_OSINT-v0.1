@@ -15,8 +15,10 @@ investigation grounded in primary sources.
   source site dies
 - Contradictions are preserved, not reconciled — the repository
   documents what each side says and links to both
-- Source data is never overwritten; updates are added alongside
-  originals with `Superseded By` or `Contradicted By` pointers
+- Source data is never overwritten — or silently cleaned: the repository
+  records sources verbatim, preserving their artifacts (OCR errors, typos)
+  and flagging them rather than correcting them. Updates are added
+  alongside originals with `Superseded By` or `Contradicted By` pointers
 - Evidentiary categories (eyewitness, whistleblower, institutional-actor,
   reporter; gov, gov-contractor, private; hearing, encounter;
   gov-doc, non-gov-doc) are separated structurally so a reader sees the
