@@ -92,7 +92,7 @@ can read clean while artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (12)
+### Documents (13)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -108,6 +108,7 @@ can read clean while artifact-level warnings stand.
 | `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-grusch-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-kirkpatrick-2023` | primary-source-confirmed | gov-doc |
+| `/documents/wsj-pentagon-disinformation-ufo-mythology-2025` | primary-source-confirmed | non-gov-doc |
 
 ### Transcripts (11)
 

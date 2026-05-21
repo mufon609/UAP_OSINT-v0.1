@@ -1,0 +1,207 @@
+---
+id: documents/wsj-pentagon-disinformation-ufo-mythology-2025
+type: document
+schema_version: 1
+status: primary-source-confirmed
+kind: non-gov-doc
+doc_form: article
+created: 2026-05-21
+---
+
+# The Wall Street Journal — 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Joel Schectman & Aruna Viswanatha, June 6, 2025)
+
+## Document Summary
+
+| Field | Value |
+|---|---|
+| Title | The Pentagon Disinformation That Fueled America's UFO Mythology |
+| Authored Date (per document) | 2025-06-06 |
+| Author (per document) | Joel Schectman; Aruna Viswanatha |
+| Classification | published |
+| Format | HTML |
+| Primary Source URL | https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e |
+| Local Archive | [sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+
+---
+
+## Description
+
+Wall Street Journal investigation by Joel Schectman ([`/people/joel-schectman`]) and Aruna Viswanatha ([`/people/aruna-viswanatha`]); the full text is reported at tovima.com ([`/organizations/tovima`]). The All-domain Anomaly Resolution Office ([`/organizations/aaro`]), set up under Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) to review the historical record back to 1945, found that the Pentagon itself had sometimes fabricated evidence of alien technology and allowed rumors to fester to cover up real secret-weapons programs. The account is based on interviews with two dozen current and former U.S. officials, scientists and military contractors involved in the inquiry, as well as thousands of pages of documents, recordings, emails and text messages.
+
+The investigation documents a series of discoveries. In the 1980s an Air Force colonel visited a bar near Area 51 and gave the owner doctored photos of what might be flying saucers — a ruse to protect testing of the F-117 stealth fighter; the now-retired officer confessed the disinformation to the Pentagon investigators in 2023. For decades, certain new commanders of the Air Force's most classified programs were handed, as part of their induction briefings, a piece of paper with a photo of what looked like a flying saucer described as an antigravity maneuvering vehicle, and were told the program they were joining, dubbed Yankee Blue, was an effort to reverse-engineer the technology on the craft; many never learned it was fake. Kirkpatrick found the practice had begun decades before and appeared to continue still, and the defense secretary's office sent a memo out across the service in the spring of 2023 ordering the practice to stop immediately. After that 2023 discovery, Kirkpatrick's deputy briefed director of national intelligence Avril Haines. The account also describes the 1967 Robert Salas episode in a Montana missile bunker, which Kirkpatrick's team dug into and discovered a terrestrial explanation for — an Air Force electromagnetic pulse generator test.
+
+In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`]) acknowledged that AARO had uncovered evidence of fake classified program materials relating to extraterrestrials and had briefed lawmakers and intelligence officials; she said the department didn’t include that information in its report last year because the investigation wasn’t completed, but expects to provide it in another report scheduled for later this year, and that the department is committed to releasing a second volume of its Historical Record Report to include AARO's findings on reports of potential pranks and inauthentic materials.
+
+---
+
+## Key Passages
+
+### Article headline as published in The Wall Street Journal
+
+> The Pentagon Disinformation That Fueled America's UFO Mythology
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ headline |
+
+---
+
+### Article subtitle / standfirst as published
+
+> U.S. military fabricated evidence of alien technology and allowed rumors to fester to cover up real secret-weapons programs
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ subtitle |
+
+---
+
+### The Area 51 / F-117 finding — an Air Force colonel gave a bar owner doctored flying-saucer photos in the 1980s as a ruse to protect F-117 stealth-fighter testing; the now-retired officer confessed to AARO investigators in 2023
+
+> The congressionally ordered probe took investigators back to the 1980s, when an Air Force colonel visited a bar near Area 51, a top-secret site in the Nevada desert. He gave the owner photos of what might be flying saucers. The photos went up on the walls, and into the local lore went the idea that the U.S. military was secretly testing recovered alien technology. But the colonel was on a mission—of disinformation. The photos were doctored, the now-retired officer confessed to the Pentagon investigators in 2023. The whole exercise was a ruse to protect what was really going on at Area 51: The Air Force was using the site to develop top-secret stealth fighters, viewed as a critical edge against the Soviet Union. Military leaders were worried that the programs might get exposed if locals somehow glimpsed a test flight of, say, the F-117 stealth fighter, an aircraft that truly did look out of this world. Better that they believe it came from Andromeda.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ The congressionally ordered probe |
+
+---
+
+### The article's central thesis — the 2024 public report left out that the Pentagon itself sometimes deliberately spread disinformation targeting its own citizens, while embedded-secret-program opacity bred the myths
+
+> In fact, a Wall Street Journal investigation reveals, the report itself amounted to a coverup—but not in the way the UFO conspiracy industry would have people believe. The public disclosure left out the truth behind some of the foundational myths about UFOs: The Pentagon itself sometimes deliberately fanned the flames, in what amounted to the U.S. government targeting its own citizens with disinformation. At the same time, the very nature of Pentagon operations—an opaque bureaucracy that kept secret programs embedded within secret programs, cloaked in cover stories—created fertile ground for the myths to spread.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ In fact, a Wall Street Journal investigation reveals |
+
+---
+
+### The article's stated evidentiary basis — interviews with two dozen current and former officials, scientists and contractors, plus thousands of pages of documents, recordings, emails and text messages
+
+> This account is based on interviews with two dozen current and former U.S. officials, scientists and military contractors involved in the inquiry, as well as thousands of pages of documents, recordings, emails and text messages.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ This account is based on interviews |
+
+---
+
+### Kirkpatrick's account of how he came to head AARO — the 2022 recruitment call from a Pentagon deputy undersecretary while he was chief scientist at the Missile and Space Intelligence Center, Redstone Arsenal
+
+> Sean Kirkpatrick, a precise, bespectacled scientist who once spent years studying vibrations in laser crystals, was nearing retirement from government service when he received the call that would change his life. By 2022 he had ascended to chief scientist at the Missile and Space Intelligence Center at the Redstone Arsenal near Huntsville, Ala. As he sat at his desk at 6:30 one morning, drinking coffee and skimming through intelligence reports that had come in overnight, his Tandberg desk phone—essentially a classified version of FaceTime—rang. It was a deputy undersecretary from the Pentagon, who was putting on a tie as he told Kirkpatrick about a new office Congress ordered the department to set up to examine unidentified anomalous phenomena. “The undersecretary and I put together a shortlist of who could do it, and you’re at the top,” the official relayed, adding that they had settled on Kirkpatrick because he both had a scientific background and had built a half-dozen organizations within the intelligence community. Is that the real reason, Kirkpatrick countered, “or am I the only one stupid enough to say, ‘yes?’” In short order, Kirkpatrick had the All-domain Anomaly Resolution Office up and running. Just the latest in an alphabet soup of special government projects set up to study UFOs stretching back more than half a century, AARO, as it is known, operated out of an unmarked office near the Pentagon, with a few dozen staffers and a classified budget.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ Sean Kirkpatrick, a precise, bespectacled scientist |
+
+---
+
+### The Yankee Blue finding — a decades-long induction-briefing ritual in which new commanders of the Air Force's most classified programs were handed a fake flying-saucer / antigravity-maneuvering-vehicle reverse-engineering story; many never learned it was fake
+
+> It turned out the witnesses had been victims of a bizarre hazing ritual. For decades, certain new commanders of the Air Force’s most classified programs, as part of their induction briefings, would be handed a piece of paper with a photo of what looked like a flying saucer. The craft was described as an antigravity maneuvering vehicle. The officers were told that the program they were joining, dubbed Yankee Blue, was part of an effort to reverse-engineer the technology on the craft. They were told never to mention it again. Many never learned it was fake.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ It turned out the witnesses had been victims |
+
+---
+
+### The Yankee Blue stop-memo — Kirkpatrick found the practice had begun decades before and appeared to continue still; the defense secretary's office sent a stop memo across the service in spring 2023
+
+> Kirkpatrick found the practice had begun decades before, and appeared to continue still. The defense secretary’s office sent a memo out across the service in the spring of 2023 ordering the practice to stop immediately, but the damage was done.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ Kirkpatrick found the practice had begun |
+
+---
+
+### The Haines briefing — after the 2023 Yankee Blue discovery, Kirkpatrick's deputy briefed DNI Avril Haines; the official told her it went on for decades, involved hundreds and hundreds of people who signed NDAs and thought it was real
+
+> After that 2023 discovery, Kirkpatrick’s deputy briefed President Joe Biden’s director of national intelligence, Avril Haines , who was stunned. Could this be the basis for the persistent belief that the U.S. has an alien program that we’ve concealed from the American people? Haines wanted to know, according to people familiar with the matter. How extensive was it? she asked. The official responded: “Ma’am, we know it went on for decades. We are talking about hundreds and hundreds of people. These men signed NDAs. They thought it was real.“
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ After that 2023 discovery |
+
+---
+
+### Sue Gough on-record — DoD acknowledged AARO uncovered evidence of fake classified program materials relating to extraterrestrials and briefed lawmakers and intelligence officials; the finding was omitted from the prior report because the investigation was not completed
+
+> In a statement, a Defense Department spokeswoman acknowledged that AARO had uncovered evidence of fake classified program materials relating to extraterrestrials, and had briefed lawmakers and intelligence officials. The spokeswoman, Sue Gough, said the department didn’t include that information in its report last year because the investigation wasn’t completed, but expects to provide it in another report scheduled for later this year.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ In a statement, a Defense Department spokeswoman |
+
+---
+
+### Sue Gough's direct quote committing the Department of Defense to a second volume of the Historical Record Report covering AARO's findings on reports of potential pranks and inauthentic materials
+
+> “The department is committed to releasing a second volume of its Historical Record Report, to include AARO’s findings on reports of potential pranks and inauthentic materials,” Gough said.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ The department is committed to releasing a second volume |
+
+---
+
+### The 1967 Robert Salas Montana missile-silo episode as recounted to AARO investigators — a glowing reddish-orange oval over the front gate while all 10 nuclear missiles were disabled
+
+> In 1967, Robert Salas, now 84, was an Air Force captain sitting in a walk-in closet-sized bunker, manning the controls of 10 nuclear missiles in Montana. He was prepared to launch apocalyptic strikes should Soviet Russia ever attack first, and got a call around 8 p.m. one night from the guard station above. A glowing reddish-orange oval was hovering over the front gate, Salas told Kirkpatrick’s investigators. The guards had their rifles drawn, pointed at the oval object appearing to float above the gate. A horn sounded in the bunker, signaling a problem with the control system: All 10 missiles were disabled.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ In 1967, Robert Salas |
+
+---
+
+### The terrestrial explanation Kirkpatrick's team found for the Montana missile-silo events — an Air Force electromagnetic-pulse-generator test on a portable platform 60 feet above the facility, glowing orange and disabling the guidance systems
+
+> Kirkpatrick’s team dug into the story and discovered a terrestrial explanation. The barriers of concrete and steel surrounding America’s nuclear missiles were thick enough to give them a chance if hit first by a Soviet strike. But scientists at the time feared the intense storm of electromagnetic waves generated by a nuclear detonation might render the hardware needed to launch a counterstrike unusable. To test this vulnerability, the Air Force developed an exotic electromagnetic generator that simulated this pulse of disruptive energy without the need to detonate a nuclear weapon. When activated, this device, placed on a portable platform 60 feet above the facility, would gather power until it glowed, sometimes with a blinding orange light. It would then fire a burst of energy that could resemble lightning. The electromagnetic pulses snaked down cables connected to the bunker where launch commanders like Salas sat, disrupting the guidance systems, disabling the weapons and haunting the men to this day.
+
+| Field | Value |
+|---|---|
+| Attributed to | Joel Schectman & Aruna Viswanatha, 'The Pentagon Disinformation That Fueled America's UFO Mythology', The Wall Street Journal, June 6, 2025 (carried by tovima.com) |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ Kirkpatrick’s team dug into the story |
+
+---
+
+## Associated Nodes
+
+### People
+
+- [`/people/aruna-viswanatha`]
+- [`/people/joel-schectman`]
+- [`/people/sean-kirkpatrick`]
+- [`/people/sue-gough`]
+
+### Organizations
+
+- [`/organizations/aaro`]
+- [`/organizations/tovima`]
