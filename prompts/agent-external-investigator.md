@@ -23,10 +23,14 @@ load-bearing READ is yours.
 ## What you do
 
 1. For each gap, find candidate primary sources; fetch and **read** each.
-   Fetch with Bash + `curl` (not WebFetch) for `web.archive.org` and
-   known-403 sites — WebFetch refuses archive.org and is 403'd where `curl`
-   succeeds; a WebFetch failure there is a tool limit, **not** a dead
-   source (see `meta/sources-access.md`, which is curl-based throughout).
+   **Never conclude a source is unreachable from a WebFetch failure alone.**
+   WebFetch refuses `web.archive.org` outright and is 403'd by sites that
+   Bash + `curl` reach fine, so a WebFetch refusal/403 is a tool limit, not a
+   dead source. On any fetch failure, retry with `curl` (and check Wayback
+   via the CDX recipes in `meta/sources-access.md`) before judging a source
+   gone — and use `curl` directly for `web.archive.org` and gov sites. A
+   "blocked" / "no-snapshot" negative is only real once `curl` + Wayback have
+   also failed.
 2. Confirm load-bearing; capture the exact deep URL + suggested
    `sources/`-relative path + format + primary/secondary tier. A missing
    Wayback snapshot is **not** a rejection reason — if the live URL is

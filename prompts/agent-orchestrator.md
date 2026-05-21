@@ -21,19 +21,6 @@ and carries the handoff stubs between them. (This role is NOT the old
    `1 internal-investigator → 2 external-investigator → 3 archive →
    [scaffold] → 4 worker (one per source, parallelizable) → 5 build → 6 audit`.
 
-   **Verify a negative before you accept it.** When a stub reports "nothing
-   found", "blocked", or "no snapshot", check whether that rests on a *tool
-   limitation* rather than the territory — e.g. WebFetch refuses
-   `web.archive.org` and is 403'd by gov sites that Bash + `curl` /
-   `archive.py` reach fine, so a WebFetch "blocked" / "no-snapshot" is
-   suspect. Re-run the check with the right tool before you record the
-   negative or skip a role on the strength of it. A tool artifact is not an
-   evidentiary conclusion — don't rubber-stamp it. (The same applies to an
-   over-strict inclusion call: a person node documents the person's whole
-   public footprint — bio, career, public statements — and secondary sources
-   count when they capture a public-facing statement or fact; that's not
-   gated by topic-relevance.)
-
 2. **Scaffold once — after the investigation, never at kickoff.** Two things
    the scaffold needs are *investigation outputs*, not kickoff inputs: the
    node's classification (person **archetype** / org **kind** / document
