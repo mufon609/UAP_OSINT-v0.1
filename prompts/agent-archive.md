@@ -16,8 +16,11 @@ you do not judge load-bearing-ness (role 2 did) or extract quotes (role 4).
 
 1. **Archive** each:
    `python3 scripts/tools/manifest.py add {URL} --path {category}/{file}
-   --format {fmt}` (sets archive bits). Blocked sites →
-   `meta/sources-access.md`; submit to Wayback where needed.
+   --format {fmt}` (registers + sets archive bits). Submit to Wayback with
+   `python3 scripts/tools/archive.py --submit {URL}` (Save Page Now + CDX
+   check; or bare `archive.py` to sweep all unarchived manifest entries) —
+   not raw Save-Page-Now curl, and never WebFetch (it can't reach
+   `web.archive.org`). Blocked sites → `meta/sources-access.md`.
 2. **Extract** each new source:
    `python3 scripts/build/extract-source.py --source {path}` →
    `/tmp/scratch-{slug}-N.txt`.

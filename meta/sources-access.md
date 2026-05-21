@@ -18,7 +18,10 @@ dni.gov) that `curl` reaches fine. A WebFetch failure on these is a tool
 blind spot, **not** a blocked source — fall back to `curl` / the repo
 scripts before concluding a source is unreachable. (Verified: `curl`
 resolves the fuzzy-timestamp Wayback form and the CDX API where WebFetch
-cannot.)
+cannot.) To *submit* a live URL to Wayback, use
+`scripts/tools/archive.py --submit {URL}` (Save Page Now + CDX); `manifest.py
+add` sets the archive bits when registering. Raw `curl` CDX is for ad-hoc
+snapshot *lookups* on candidates not yet in the manifest.
 
 When a source is blocked and no workaround exists, register it in the
 manifest with status `403-blocked`, `402-blocked`, or `pending` and add

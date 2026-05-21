@@ -109,6 +109,27 @@ false-positives on legitimate notes and misses real cases.
 **Blocks:** none.
 **Blocked by:** a user decision on the field's purpose.
 
+### A3 — No durable home for "record exhausted / leads read-and-rejected" search state
+
+When an external-investigation pass (role 2) finds nothing additive, the
+result — the queries run, the leads read-and-rejected, the confirmed
+negatives (e.g. "no public departure date for Holly as of the search date") —
+lives only in the ephemeral `/tmp/handoff-{slug}-external-investigator.yaml`
+(`evaluated_and_rejected[]`). A later session re-runs the same fruitless
+sweep. There is no persistent, drift-safe home for negative search state:
+`rumors[]` is for circulating claims, not search exhaustion; a `.note` is
+prose-drift-checked and overlaps the open A2 note-field question; the
+research-queue's "Externally blocked" is for items awaiting an external
+event, not exhausted ones.
+
+Decide where (if anywhere) negative search-state persists — a per-node
+research-log surface, a research-queue "searched / exhausted" section, or
+nothing (accept cheap re-sweeps). Couples with A2.
+
+**Blocks:** none.
+**Blocked by:** the A2 note-field decision + a user call on whether negative
+search-state is worth persisting.
+
 ---
 
 ## B. Parallel batch (renderer pass)
