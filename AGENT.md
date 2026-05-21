@@ -40,15 +40,17 @@ If you're doing anything related to this instance's topic, read
 
 ## How to use this repo — route by task
 
-| Your task | Read these, in order |
+| Your task | How |
 |---|---|
+| Start a session here | run `/onboard` |
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
-| Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → `prompts/build.md` |
-| Build a new node | `CLAUDE.md` → `prompts/build.md` (one *new* node per session) |
-| Audit an existing node | `CLAUDE.md` → `prompts/audit.md` |
-| Verify a transcript verbatim | `prompts/verify-transcript.md` |
-| Run an archival sweep | `prompts/archive-sweep.md` |
-| Fork this toolkit for a different topic | delete `meta/topic/` → restart with your own `meta/topic/overview.md` |
+| Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → run `/build` |
+| Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline; `prompts/build.md` is the single-session fallback). One *new* person/org node per session. |
+| Audit an existing node | run `/audit {type}/{slug}` |
+| Verify a transcript verbatim | run `/verify-transcript {type}/{slug}` |
+| Audit quote relevance | run `/quote-relevance-audit meta/research/{slug}.yaml` |
+| Run an archival sweep | run `/archive-sweep` |
+| Fork this toolkit for a different topic | run `/fork-init` (deletes `meta/topic/` + content, keeps the `.claude/` toolkit) |
 
 ---
 

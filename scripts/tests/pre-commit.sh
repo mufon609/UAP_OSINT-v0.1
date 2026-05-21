@@ -28,10 +28,20 @@
 #                                              renderer-producible (schema
 #                                              required/optional/conditional
 #                                              sections ⊆ renderer EMITS)
-#  10. scripts/tests/file-size-check.sh      — git-tracked files within
+#  10. python3 scripts/build/phase_routing_parity.py
+#                                            — every --phase token in prompts/
+#                                              + .claude/ is valid per
+#                                              scripts/checks/_phases.py, and
+#                                              every canonical phase is
+#                                              documented in topology.md
+#  11. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
+#                                              valid frontmatter, hard-code no
+#                                              topic token (fork-portable), and
+#                                              settings.json parses
+#  12. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
-#  11. scripts/tests/cookies-check.sh        — no tracked file contains
+#  13. scripts/tests/cookies-check.sh        — no tracked file contains
 #                                              Netscape cookies content or
 #                                              Google session cookies in
 #                                              Netscape-shape rows (defensive
@@ -110,6 +120,8 @@ steps=(
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
     $'build-md-spec.py\tpython3 scripts/build/build-md-spec.py --quiet'
     $'renderer-coverage.py\tpython3 scripts/build/renderer-coverage.py --quiet'
+    $'phase-routing-parity\tpython3 scripts/build/phase_routing_parity.py --quiet'
+    $'skills-check\tbash scripts/tests/skills-check.sh'
     $'file-size-check\tbash scripts/tests/file-size-check.sh'
     $'cookies-check\tbash scripts/tests/cookies-check.sh'
 )

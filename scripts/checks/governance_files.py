@@ -186,7 +186,7 @@ def _check_governance_doc_frontmatter(rel, text, compatible_with, schema_block):
                     f"required topic-config field {field!r} (topic + "
                     f"display_name drive schema-field-rename + renderer "
                     f"section-header substitution; see "
-                    f"prompts/fork-init.md)",
+                    f"the /fork-init skill)",
                     check_name=CHECK_NAME)
 
 
@@ -196,7 +196,7 @@ def check(ctx):
     aware regex path; everything else uses standard YAML parsing.
     Also verifies meta/topic/overview.md exists — every toolkit
     instance must declare its topic scope there (see
-    prompts/fork-init.md)."""
+    the /fork-init skill)."""
     # Direct schema-config access; KeyError surfaces if the schema's
     # `schema:` block or its required nested keys are missing. Schema
     # is foundational toolkit contract — silent fallbacks would mask

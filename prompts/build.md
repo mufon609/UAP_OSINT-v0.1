@@ -9,8 +9,9 @@ investigation nodes carry lighter synthesis surfaces (most of their
 body is verbatim source via Key Passages) and may be scaffolded in
 batches within a single session. The rule limits *new node
 construction* — it does not restrict editing, auditing, or rebuilding
-existing nodes; for those tasks see `prompts/audit.md` and the
-per-task prompts in `prompts/`.
+existing nodes; for those tasks use the `/audit` skill and the other
+workflow skills (`/verify-transcript`, `/quote-relevance-audit`,
+`/archive-sweep`).
 
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
@@ -931,16 +932,18 @@ roles below generalize.
 
 ## The multi-agent pipeline
 
-The Phase I → II → III build above decomposes into a multi-agent pipeline
-for instant per-agent feedback. The roles (Orchestrator · Internal /
-External Investigator · Archive · Worker · Build + Error Agent · Audit),
-the per-agent `--phase` check bundles, the handoff-stub schemas, the
-orchestration branches, and the script-ownership split all live in
-`prompts/topology.md`. Each role has a paste-ready launch prompt at
-`prompts/agent-{orchestrator,internal-investigator,external-investigator,
-archive,worker,build,error}.md`; role 6 is `prompts/audit.md`. The bounded
-tasks above (extract-quotes / naming-quirks / rumors) are the single-session
-seeds the Worker and Build roles generalize.
+This Phase I → II → III build is the single-session **fallback**. The
+**default** path decomposes it into a multi-agent pipeline driven by the
+`/build` skill — the orchestrator, on the main thread — which dispatches the
+role subagents in `.claude/agents/` (internal-investigator · external-
+investigator · archive · worker · builder · auditor). The role-decomposition
+rationale, the per-role `--phase` check bundles, the orchestration branches,
+and the dissolved roles (Orchestrator → the skill; Error → `route_failure.py`)
+are documented in `prompts/topology.md`; the shared contract (handoff-stub
+schemas, phase vocabulary, source-read-first, fix-the-data) is preloaded into
+every role from `.claude/skills/build-protocol/`. The bounded tasks above
+(extract-quotes / naming-quirks / rumors) are the single-session seeds the
+Worker and Builder roles generalize.
 
 ---
 

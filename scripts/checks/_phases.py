@@ -147,6 +147,37 @@ CHECK_PHASE = {
     "finding_source_in_entity_node": "render",  # needs the global cross-artifact index
 }
 
+# One-line description of what each phase validates. Formalizes the
+# docstring prose above so a single source feeds both the human-readable
+# vocabulary (``--list-phases``, the build-protocol skill injection) and
+# this module — nothing restates it in prose elsewhere.
+PHASE_DESC = {
+    "preflight": "parse / structure / version — always-on, runs in every phase",
+    "archive": "manifest integrity + primary_sources + doc_form_archival_status",
+    "extract": "verbatim quotes / speakers — the one quote boundary",
+    "organize": "free-prose synthesis entry-shape",
+    "link": "cross-reference surfaces + naming_quirks / rumors / prose_drift",
+    "render": "render-time node structure + the cross-layer checks (coverage / boundary / description-drift)",
+}
+
+# phase -> the role that owns a fix when a check in that phase fails. The
+# value is the subagent role name (``.claude/agents/{role}.md``) the
+# orchestrator re-enters; ``route_failure`` reads this so the dissolved
+# Error-agent routing stays derived from here, not restated. ``preflight``
+# is owned by whichever role last wrote the artifact (no fixed owner).
+# ``render`` failures are rebuilt by the builder, but a cross-layer
+# (coverage / boundary) failure may signal an upstream gap — route_failure
+# flags that. The auditor runs the full unflagged pass; it owns no single
+# phase.
+PHASE_ROLE = {
+    "preflight": None,
+    "archive": "archive",
+    "extract": "worker",
+    "organize": "builder",
+    "link": "builder",
+    "render": "builder",
+}
+
 
 def canonical_phase(requested_phase):
     """Resolve a CLI ``--phase`` value to its canonical name.
@@ -164,6 +195,13 @@ def phase_of(check_name):
     return CHECK_PHASE.get(check_name, "render")
 
 
+def role_of(check_name):
+    """Subagent role that owns the fix for a failing ``check_name`` (via
+    its phase). ``None`` for preflight (owned by the last writer). The
+    fix target is always the artifact data, never the rendered node body."""
+    return PHASE_ROLE.get(phase_of(check_name))
+
+
 def in_scope(check_name, requested_phase):
     """Whether a check should run for the requested ``--phase``.
 
@@ -176,3 +214,71 @@ def in_scope(check_name, requested_phase):
         return True
     p = phase_of(check_name)
     return p == "preflight" or p == canonical_phase(requested_phase)
+
+
+def _main(argv=None):
+    """Read-only inspector for the phase routing map.
+
+    Pure read-out of the constants above — no validation logic. Exists so
+    the phase vocabulary has one queryable surface: the build-protocol
+    skill injects ``--list-phases`` (so the contract every subagent reads
+    is generated here, never transcribed), and ``route_failure`` /
+    ``phase_routing_parity`` consume the same data.
+    """
+    import argparse
+    import json
+
+    ap = argparse.ArgumentParser(
+        description="Inspect the build-phase routing map (read-only; the "
+        "single source of truth for --phase scoping and check->phase->role "
+        "routing). No side effects.",
+    )
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument(
+        "--list-phases", action="store_true",
+        help="list the canonical phases (+ preflight) with owning role and description",
+    )
+    g.add_argument(
+        "--check-phase", metavar="CHECK_NAME",
+        help="print the phase (and owning role) for one check name",
+    )
+    g.add_argument(
+        "--list-choices", action="store_true",
+        help="list every value the --phase flag accepts (canonical + aliases + preflight)",
+    )
+    ap.add_argument("--json", action="store_true", help="emit JSON")
+    args = ap.parse_args(argv)
+
+    if args.list_choices:
+        if args.json:
+            print(json.dumps(list(PHASE_CHOICES)))
+        else:
+            print(" ".join(PHASE_CHOICES))
+        return 0
+
+    if args.check_phase:
+        phase = phase_of(args.check_phase)
+        role = role_of(args.check_phase)
+        if args.json:
+            print(json.dumps({"check": args.check_phase, "phase": phase, "owning_role": role}))
+        else:
+            print(f"{args.check_phase}\t{phase}\t{role or '(last writer)'}")
+        return 0
+
+    # --list-phases
+    ordered = ("preflight",) + PHASES
+    if args.json:
+        print(json.dumps([
+            {"phase": p, "owning_role": PHASE_ROLE.get(p), "validates": PHASE_DESC.get(p)}
+            for p in ordered
+        ]))
+    else:
+        for p in ordered:
+            role = PHASE_ROLE.get(p)
+            owner = "always-on" if p == "preflight" else f"owned by: {role}"
+            print(f"  {p:<9} {owner:<18} {PHASE_DESC.get(p, '')}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(_main())

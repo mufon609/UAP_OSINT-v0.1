@@ -35,6 +35,7 @@ python3 scripts/build/validate.py            # node structure + verbatim quotes
 python3 scripts/build/validate-research.py    # artifact structure + prose-drift
 python3 scripts/build/review-coverage.py --all  # cross-layer coverage/boundary/description-drift
 python3 scripts/build/build-state.py --check  # this file's build-state block
+bash scripts/tests/pre-commit.sh             # full 13-gate chain; ALSO the blocking commit hook (un-bypassable by --no-verify)
 ```
 
 Exit 0 on all = repo healthy. Any errors → fix first. Don't stop at
@@ -217,6 +218,7 @@ landing rules.
 | `validate-research.py` | Research-artifact structural validation |
 | `associate.py` | Regenerate `## Associated Nodes` sections from body links |
 | `build-state.py` | Refresh this file's build-state block |
+| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `topology.md` |
 
 ### Tools — `scripts/tools/`
 
@@ -229,6 +231,7 @@ landing rules.
 | `normalize-locations.py` | Diagnostic for quote `source.location` refs — surfaces deprecated `lines N-M` forms with actual line ranges and canonical-form proposals (read-only) |
 | `check-vocab.py` | Pre-flight vocabulary check for prose-drift discipline — pools an artifact's primary-source significant tokens (shares `lib/_common.py`'s prose-drift tokenizer with `validate-research.py`) and reports per-input-token presence. Contributor convenience for drafting `description` / `background` / `top_relevance` / `credibility_notes` / synthesis-content `.note` fields against source vocabulary. |
 | `coverage-suggest.py` | Source-coverage audit aid — for each primary source on an artifact, surfaces (a) substantive source paragraphs that no quote references and (b) capitalized terms that appear in the source but nowhere in the artifact. Forward-direction complement of the verbatim-quote check; flags likely under-extraction candidates. Read-only; contributor judges what's load-bearing vs. boilerplate. Useful at audit time on already-built nodes. |
+| `route_failure.py` | Route a failing validator check to the role that owns its data fix (check → phase → role, via `scripts/checks/_phases.py`). The dissolved Error agent — consumed by the `/build` orchestrator loop; the fix target is always artifact data, never the node body. |
 | `download-video.py` | Canonical video archival for the speaker-identification pipeline. yt-dlp wrapper with `--cookies-from-browser firefox` (in-memory; no cookies file ever touches disk), JS-challenge solver via `--remote-components ejs:github`, 480p mp4 default. Lands at `sources/video/{slug}.mp4`, registers via `manifest.py add`. Slugs auto-lowercased on input to tolerate uppercase YouTube IDs. |
 | `extract-frames.py` | ffmpeg-based frame extraction for speaker identification. Four modes: `anchor` (8 frames spread across video duration at 5%/15%/25%/35%/50%/65%/80%/95% — overridable with `--timestamps`), `burst` (N frames over T seconds at named timestamps, tiled contact-sheet output), `sweep` (periodic bursts across a range), `transcript` (burst at each `[MM:SS]` tick of a transcript file). Always writes `index.md` for the output directory. |
 | `detect-faces.py` | OpenCV Haar-cascade face detection + perceptual-hash dedup + persistent identity-baseline log under `sources/photo-identity-log/`. Three subcommands: `detect` (process frames → 256×256 jpg crops with pHash dedup), `register` (promote a labeled crop to `baselines/{identity}/ref_NN.jpg` + manifest entry), `prune` (remove crops in `crops/` that pHash-match no baseline). The accumulating baseline set makes who-is-who mechanically resolvable across the corpus. |
@@ -241,14 +244,16 @@ Full video-pipeline walk-through: see `scripts/tools/VIDEO-PIPELINE.md`
 for the five-step workflow (download → optional diarize → extract
 frames → detect faces → stitch).
 
-Full build walk-through: paste `prompts/onboard.md` into a fresh session.
-**The default build path is the multi-agent topology** — `prompts/topology.md`
-(roles, `--phase` check bundles, handoff stubs) driven via the
-`prompts/agent-*.md` role prompts, with you as Orchestrator running the node
-through the Worker / Build / Audit roles. `prompts/build.md` is the
-single-session fallback and the source of the Phase I → II → III mechanics
-each role applies — reach for it only when a build genuinely shouldn't be
-decomposed into agents.
+Session start + build walk-through: run `/onboard`. **The default build path is
+the `/build` skill** — the orchestrator runs on the main thread and dispatches
+the role subagents in `.claude/agents/` (internal-investigator · external-
+investigator · archive · worker · builder · auditor); the shared contract is
+preloaded from `.claude/skills/build-protocol/`. `prompts/topology.md` is the
+design rationale for that decomposition, and `prompts/build.md` is the
+single-session fallback + the source of the Phase I → II → III mechanics each
+role applies — reach for it only when a build genuinely shouldn't be decomposed
+into agents. Standalone workflows are skills too: `/audit`, `/verify-transcript`,
+`/quote-relevance-audit`, `/archive-sweep`, `/fork-init`.
 
 Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:
 

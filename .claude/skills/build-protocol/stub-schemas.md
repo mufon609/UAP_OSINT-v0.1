@@ -1,0 +1,110 @@
+# Handoff-stub schemas
+
+One stub per role. Each role reads only its own. A stub is carried as the
+subagent's return value (the orchestrator reads it) and also written to
+`/tmp/handoff-{slug}-{role}.yaml` for inspection. Every example value is a
+placeholder — keep this file topic-neutral.
+
+```yaml
+# /tmp/handoff-{slug}-internal-investigator.yaml
+agent: internal-investigator
+slug: {slug}
+target: {type}/{slug}
+linked_nodes: [/{type}/{related-a}, /{type}/{related-b}]   # the context downstream roles judge relevance against
+reusable_sources:
+  - path: {category}/{file}.pdf
+    scratch: /tmp/scratch-{slug}-1.txt
+    covers: ["{claim-group label}"]
+topic_relevance: "<one line: how the subject connects to the topic via linked_nodes>"
+gaps: ["{what the record is missing}"]
+all_internal: false            # true => orchestrator skips external + archive
+validator_findings: []
+```
+
+```yaml
+# /tmp/handoff-{slug}-external-investigator.yaml
+agent: external-investigator
+slug: {slug}
+consumed_gaps: ["{gap this fills}"]
+queued_sources:                # may be empty — an exhausted record is a valid result
+  - url: https://{host}/.../{document}.pdf
+    suggested_path: {category}/{file}.pdf
+    format: pdf
+    tier: primary              # primary | secondary-lead-only
+    confirming_span: "<a verbatim excerpt copied from the fetched body>"   # REQUIRED — proves the read; the next role re-checks it against disk
+    span_location: "<page / paragraph / timestamp anchor of the span>"
+    rationale: <one line: why load-bearing, judged against linked_nodes>
+unfilled_gaps: []
+validator_findings: []
+```
+A queued source with no `confirming_span` is rejected — a bare
+"I read it" boolean is not accepted (the read must be re-checkable).
+
+```yaml
+# /tmp/handoff-{slug}-archive.yaml
+agent: archive
+slug: {slug}
+archived:
+  - url: https://{host}/.../{document}.pdf
+    path: {category}/{file}.pdf
+    archive_status: archived   # or pending + wayback_date
+    scratch: /tmp/scratch-{slug}-2.txt
+primary_sources_registered: [{category}/{file}.pdf]
+validator_findings: []         # validate.py --phase archive
+```
+
+```yaml
+# /tmp/handoff-{slug}-worker-{kind}-{N}.yaml
+# The worker EMITS this fragment; it does NOT merge into the shared
+# artifact. The orchestrator serializes the merge of all worker fragments,
+# then runs the extract-phase check once on the merged result.
+agent: worker
+worker_kind: pdf               # pdf | html | caption | foia
+slug: {slug}
+source: {category}/{file}.pdf
+inputs_consumed: [/tmp/scratch-{slug}-2.txt]
+outputs_produced:
+  quotes:                       # verbatim spans BY the subject; legitimately [] for an about-the-subject / institutional source
+    - text: "<verbatim span copied from scratch, never typed from memory>"
+      location: "<source-shape anchor>"
+  claim_groups_proposed: ["{claim-group label}"]
+  cross_ref_candidates:
+    - entity: /{type}/{related}
+      kind: relationship
+      span: "<location anchor>"
+  background_material:          # the quotes: [] case — facts ABOUT the subject for the builder's prose
+    - fact: "{fact}"
+      source_phrasing: "<exact words from source — prose-drift grounding>"
+      location: "<location anchor>"
+validator_findings: []         # validate-research.py --phase extract, on the merged artifact
+```
+
+```yaml
+# /tmp/handoff-{slug}-builder.yaml
+agent: builder
+slug: {slug}
+node: {type}/{slug}.md
+inputs_consumed:
+  worker_fragments: [/tmp/handoff-{slug}-worker-pdf-1.yaml]
+  linked_nodes: [/{type}/{related-a}]   # REQUIRED — relevance is judged against this, not the source alone
+claim_groups: [{label: "{claim-group label}", primaries: [q1], pointers: [q2], n_sources: 2}]
+tested_before_build: true      # organize + link were clean before render
+result: pass                   # or fail
+routed: []                     # route_failure.py output when result: fail
+validator_findings: []
+```
+
+```yaml
+# /tmp/handoff-{slug}-auditor.yaml
+agent: auditor
+slug: {slug}
+node: {type}/{slug}.md
+health: pass
+adjacent_needs_update:
+  - node: /{type}/{related}
+    reason: "<a new source attests something this adjacent node should carry>"
+    material_in_hand: /tmp/scratch-{slug}-2.txt
+    skip_external: true        # external skipped — material already archived
+propagation_loop: [/{type}/{related}]
+validator_findings: []
+```

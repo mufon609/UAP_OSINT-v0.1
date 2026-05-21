@@ -1,5 +1,9 @@
 __pycache__/
-.claude/
+
+# .claude/ is the committed toolkit (skills, subagents, hooks, settings.json) —
+# version-controlled so the team shares it and it survives a topic fork. Only
+# the per-machine local overrides (settings.local.json) are ignored.
+.claude/settings.local.json
 
 # Video primary sources — kept locally per manifest entries (URL + sha256)
 # but excluded from git remote due to file-size limits. Already-tracked

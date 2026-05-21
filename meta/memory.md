@@ -30,7 +30,8 @@ home when one emerges.
 - Evidentiary discipline or structural rules → `meta/conventions.md`.
 - Schema-level field semantics → `meta/schema.yaml` and
   `meta/schema-research-artifact.yaml` comments.
-- Paste-ready session prompts → `prompts/`.
+- Session workflows → `.claude/skills/` (invokable as `/build`, `/onboard`,
+  `/audit`, …); build design rationale + fallback → `prompts/`.
 - Per-script behavior → that script's docstring.
 - Past-work narrative, dated incidents, BACKLOG IDs, commit hashes
   → git log only.

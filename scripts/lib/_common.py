@@ -304,7 +304,7 @@ def load_topic():
     ``{topic, display_name}``. Cached per-process. Errors loudly on
     missing file or required fields — overview.md is required and
     validated by ``governance_files``; fork bootstrap goes through
-    ``prompts/fork-init.md``.
+    ``the /fork-init skill``.
     """
     global _topic_config_cache
     if _topic_config_cache is not None:
@@ -314,7 +314,7 @@ def load_topic():
         raise FileNotFoundError(
             f"meta/topic/overview.md is required for topic-config but is "
             f"missing at {_OVERVIEW_PATH}. If bootstrapping a fresh fork "
-            f"target, run prompts/fork-init.md to generate it."
+            f"target, run the /fork-init skill to generate it."
         )
 
     text = _OVERVIEW_PATH.read_text()
@@ -330,7 +330,7 @@ def load_topic():
                 f"meta/topic/overview.md frontmatter missing required "
                 f"field {field!r}. The two topic-config fields (topic + "
                 f"display_name) drive schema-field-rename + renderer "
-                f"section-header substitution. See prompts/fork-init.md."
+                f"section-header substitution. See the /fork-init skill."
             )
 
     _topic_config_cache = {

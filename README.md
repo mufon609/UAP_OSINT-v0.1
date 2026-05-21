@@ -135,7 +135,19 @@ people/ organizations/ documents/ events/ transcripts/
 media/ locations/ findings/ investigations/
                             content nodes (human-readable narrative)
 
-prompts/                    paste-ready session prompts — see prompts/README.md for the index
+.claude/
+  skills/                   invokable workflows — /build, /onboard, /audit,
+                            /verify-transcript, /quote-relevance-audit,
+                            /archive-sweep, /fork-init — plus the build-protocol
+                            contract preloaded into the role subagents
+  agents/                   the six build role subagents (internal-investigator,
+                            external-investigator, archive, worker, builder, auditor)
+  hooks/                    PreToolUse guards — commit gate (runs pre-commit.sh),
+                            node-body-edit block, one-new-synthesis-node cap
+  settings.json             hook wiring (committed; topic-neutral)
+
+prompts/                    design docs (topology.md, build.md) + Claude-Web
+                            briefs — see prompts/README.md for the index
 ```
 
 **Forking for a different topic.** Delete `meta/topic/`,
@@ -147,12 +159,12 @@ directories themselves); empty `sources/manifest.yaml`. Create your own
 fields drive every UI surface that names the subject (rendered
 section headers like `## {topic_display_name} Relevance`, archiver
 User-Agent, etc.); the toolkit reads them via
-`load_topic()`. See `prompts/fork-init.md` for the bootstrap walk-
-through. Everything not deleted by the steps above — the rest of
+`load_topic()`. Run `/fork-init` for the bootstrap walk-through.
+Everything not deleted by the steps above — the rest of
 `meta/` (schema, conventions, memory, templates, …), all of
-`scripts/` and `prompts/`, and root-level governance (`CLAUDE.md`,
-`AGENT.md`, this `README.md`) — is topic-neutral toolkit and
-survives the fork.
+`scripts/` and `prompts/`, the `.claude/` skills + subagents + hooks +
+`settings.json`, and root-level governance (`CLAUDE.md`, `AGENT.md`,
+this `README.md`) — is topic-neutral toolkit and survives the fork.
 
 ---
 
@@ -212,12 +224,13 @@ omitted when empty.
 
 ### New contributor
 
-Paste `prompts/onboard.md` into a fresh Claude Code session. It reads
-the governance docs, runs the validator, and shows current state.
+Run `/onboard`. It reads the governance docs, runs the health check, and
+shows current state.
 
 If you'd rather read directly, start with `meta/conventions.md` (the
 evidentiary standard) and `meta/schema.yaml` (the structural spec),
-then paste `prompts/build.md` when you're ready to build a node.
+then run `/build` when you're ready to build a node (`prompts/build.md`
+is the single-session fallback).
 
 ### Returning contributor
 
@@ -228,11 +241,13 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 11 gates: help-check / test_stopwords / smoke /
+This chains 13 gates: help-check / test_stopwords / smoke /
 `validate.py` / `validate-research.py` / `review-coverage.py` /
 `build-state.py --check` / `build-md-spec.py` / `renderer-coverage.py` /
-`file-size-check` / `cookies-check`. Then pick work from
-`meta/topic/research-queue.md`.
+`phase-routing-parity` / `skills-check` / `file-size-check` /
+`cookies-check`. The same chain runs as a blocking `PreToolUse` hook the
+moment you `git commit` (un-bypassable by `--no-verify`). Then pick work
+from `meta/topic/research-queue.md`.
 
 ---
 
