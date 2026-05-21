@@ -46,11 +46,7 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 ### NIA's UAP Security Classification Guide names the Office of Naval Intelligence, UAP Task Force as the subject of its classification authority — four months before the Department of Defense's public announcement of UAPTF's establishment
 
-> 1. (U) Purpose: This classification guide is issued for the purpose of identifYing specific topics
-> of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon
-> (UAP) Task Force that meet the standards and criteria for classification and protection in
-> accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as
-> amended, and its implementing directives.
+> 1. (U) Purpose: This classification guide is issued for the purpose of identifYing specific topics of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force that meet the standards and criteria for classification and protection in accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as amended, and its implementing directives.
 
 | Field | Value |
 |---|---|
@@ -62,11 +58,7 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 ### Senate Select Committee on Intelligence on-record acknowledgment of "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" in the FY2021 Intelligence Authorization Act accompanying report
 
-> The Committee supports the efforts of the Unidentified Aerial
-> Phenomenon Task Force at the Office of Naval Intelligence to
-> standardize collection and reporting on unidentified aerial phe-
-> nomenon, any links they have to adversarial foreign governments,
-> and the threat they pose to U.S. military assets and installations.
+> The Committee supports the efforts of the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence to standardize collection and reporting on unidentified aerial phe- nomenon, any links they have to adversarial foreign governments, and the threat they pose to U.S. military assets and installations.
 
 | Field | Value |
 |---|---|
@@ -91,9 +83,7 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 ### ODNI's Preliminary Assessment cites the Senate's directive that its analysis include data and intelligence reporting held by ONI — naming ONI as a UAP-data holder distinct from UAPTF
 
 > The Senate Report specifically requested that the report include:
->        1. A detailed analysis of UAP data and intelligence reporting collected or held by the
->           Office of Naval Intelligence, including data and intelligence reporting held by the
->           UAPTF;
+> 1. A detailed analysis of UAP data and intelligence reporting collected or held by the Office of Naval Intelligence, including data and intelligence reporting held by the UAPTF;
 
 | Field | Value |
 |---|---|

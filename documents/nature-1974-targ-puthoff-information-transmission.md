@@ -42,8 +42,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Paper title — verbatim
 
-> INFORMATION TRANSMISSION UNDER CONDITIONS OF
-> SENSORY SHIELDING
+> INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING
 
 | Field | Value |
 |---|---|
@@ -95,9 +94,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### First-of-three studies — Geller experiments framing — primary Nature-paper attestation that names Geller as the subject of the foundational SRI parapsychology experiments
 
-> First, we conducted experiments with Mr. Uri Geller in which we examined
-> his ability, while located in an electrically shielded room, to reproduce target
-> pictures drawn by experimenters located at remote locations.
+> First, we conducted experiments with Mr. Uri Geller in which we examined his ability, while located in an electrically shielded room, to reproduce target pictures drawn by experimenters located at remote locations.
 
 | Field | Value |
 |---|---|
@@ -109,8 +106,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Second-of-three studies — Pat Price experiments framing — primary Nature-paper attestation that names Pat Price as a second SRI subject (alongside Geller) in the foundational paper
 
-> Second, we con-ducted double-blind experiments with Mr. Pat Price, in which we measured his
-> ability to describe remote outdoor scenes many miles from his physical location.
+> Second, we con-ducted double-blind experiments with Mr. Pat Price, in which we measured his ability to describe remote outdoor scenes many miles from his physical location.
 
 | Field | Value |
 |---|---|
@@ -122,8 +118,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Shielded-room protocol description for Geller experiments 1-10 — same facility as the August 1973 CIA-RDP79-00999A000300030027-0 SRI report
 
-> To prevent sensory cueing of the target information, Experiments 1 through
-> 10 were carried out using a shielded room in SRI's facility for EEG research.
+> To prevent sensory cueing of the target information, Experiments 1 through 10 were carried out using a shielded room in SRI's facility for EEG research.
 
 | Field | Value |
 |---|---|
@@ -135,8 +130,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Engineering Building protocol for Geller experiments 11-13 — corresponds to the August 9-10 1973 sessions in the CIA Aug 1973 SRI report
 
-> Experiments 11 through 13 were carried out in SRI's Engineering Building,
-> to make use of the computer facilities available there.
+> Experiments 11 through 13 were carried out in SRI's Engineering Building, to make use of the computer facilities available there.
 
 | Field | Value |
 |---|---|
@@ -148,8 +142,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Paper's formal conclusion sentence — the 'channel exists' framing — the load-bearing claim that downstream Geller-bio invocations cite as the Nature-paper endorsement
 
-> A channel exists whereby information about a remote location can be obtained
-> by means of an as yet unidentified perceptual modality.
+> A channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality.
 
 | Field | Value |
 |---|---|
@@ -161,10 +154,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Paper's closing methodological framing — paranormal phenomena can be scientifically conducted; call for replication
 
-> Our observation of the phenomena leads us to conclude that experiments in
-> the area of so-called paranormal phenomena can be scientifically conducted, and
-> it is our hope that other laboratories will initiate additional research to attempt
-> to replicate these findings.
+> Our observation of the phenomena leads us to conclude that experiments in the area of so-called paranormal phenomena can be scientifically conducted, and it is our hope that other laboratories will initiate additional research to attempt to replicate these findings.
 
 | Field | Value |
 |---|---|
@@ -176,8 +166,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ### Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).
 
-> This research was sponsored by The Foundation for Parasensory Investiga-tion, New York City. We thank Mrs. Judith Skutch, Dr. Edgar D. Mitchell of the
-> Institute of Noetic Sciences
+> This research was sponsored by The Foundation for Parasensory Investiga-tion, New York City. We thank Mrs. Judith Skutch, Dr. Edgar D. Mitchell of the Institute of Noetic Sciences
 
 | Field | Value |
 |---|---|

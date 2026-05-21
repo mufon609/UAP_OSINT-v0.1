@@ -410,6 +410,16 @@ Each node type renders a filtered view of the same universal primitive:
   its subject — sorted by `statement_date` (see "Key Passages
   ordering" below).
 
+Every quote surface above renders its blockquote through one shared helper
+(`renderers/_common.py::_render_blockquote`) that **reflows soft-wrap
+newlines** — quote text copied verbatim from a YAML `|` literal block keeps
+the source's physical ~80-col line-wrapping, which the helper rejoins into one
+`> ` line per paragraph at display time, preserving blank-line paragraph
+breaks and list-item structure. So a contributor may author quote text as a
+`|` block (fidelity to the source's layout) without producing a blockquote
+broken mid-sentence; verification is unaffected (the verbatim-quote check
+normalizes whitespace).
+
 ### Transcript quotes carry structural speaker attribution
 
 On a transcript artifact, the speaker of each quote is a structural

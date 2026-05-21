@@ -74,11 +74,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### Primary-source attestation of the 2011 antecedent — Childs's photovoltaic-research observations of solar behavior contradicting the standard model, the personal precursor to the 2012 Electric Universe Conference proposal that initiated the SAFIRE PROJECT.
 
-> In 2011 engineer Montgomery Childs was researching
-> photovoltaic energy production systems when he noticed
-> that aspects of the Sun’s behavior appeared to contradict
-> expected behavior predicted by the standard model of
-> solar physics.
+> In 2011 engineer Montgomery Childs was researching photovoltaic energy production systems when he noticed that aspects of the Sun’s behavior appeared to contradict expected behavior predicted by the standard model of solar physics.
 
 | Field | Value |
 |---|---|
@@ -318,9 +314,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### Primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment"). Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
 
-> The Stellar Atmospheric Function in Regulation
-> Experiment (SAFIRE) was initiated. Its objective
-> was to test the Electric Sun model.
+> The Stellar Atmospheric Function in Regulation Experiment (SAFIRE) was initiated. Its objective was to test the Electric Sun model.
 
 | Field | Value |
 |---|---|
@@ -332,9 +326,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
 
-> Funding for an initial test was promised by the
-> Mainwaring Archive Foundation, to be administered
-> by the International Science Foundation.
+> Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation.
 
 | Field | Value |
 |---|---|
@@ -346,9 +338,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### SAFIRE Phase II reactor primary dimensions — stainless-steel cylinder four feet in diameter and seven feet long. Self-attested in the Phase Two report.
 
-> The central feature of the experimental apparatus is
-> a stainless-steel cylinder four feet in diameter and
-> seven feet long.
+> The central feature of the experimental apparatus is a stainless-steel cylinder four feet in diameter and seven feet long.
 
 | Field | Value |
 |---|---|
@@ -360,9 +350,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### SAFIRE Phase II power supply specification — 200 kW DC. Self-attested in the Phase Two report.
 
-> A power supply capable of producing 200kW of clean,
-> continuous, direct current and voltage was constructed
-> for the project.
+> A power supply capable of producing 200kW of clean, continuous, direct current and voltage was constructed for the project.
 
 | Field | Value |
 |---|---|

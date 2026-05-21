@@ -8,6 +8,7 @@ emit on both kinds.
 
 from ._common import (
     SECTION_SEP,
+    _render_blockquote,
     _source_path,
     sort_by_id,
 )
@@ -95,8 +96,7 @@ def render_key_passages(artifact):
         if isinstance(q.get("source"), dict):
             loc = q["source"].get("location") or ""
         lines = [f"### {h3}", ""]
-        for qline in text.split("\n"):
-            lines.append(f"> {qline}" if qline else ">")
+        lines.append(_render_blockquote(text))
         lines.append("")
         lines.append("| Field | Value |")
         lines.append("|---|---|")

@@ -40,9 +40,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Constitutional preamble — vests authority in the President under the Constitution and the laws of the United States. Standard Executive Order opening.
 
-> By the authority vested in me as President by the
-> Constitution and the laws of the United States of
-> America, it is hereby ordered:
+> By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:
 
 | Field | Value |
 |---|---|
@@ -54,11 +52,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 1 (Purpose) pivot sentence — asserts the rename rationale: "peace through strength" via "ability and willingness to fight and win wars." Federal Register typography (LaTeX-style ``...') preserved verbatim.
 
-> The name ``Department of War,'' more than the current
-> ``Department of Defense,'' ensures peace through
-> strength, as it demonstrates our ability and
-> willingness to fight and win wars on behalf of our
-> Nation at a moment's notice, not just to defend.
+> The name ``Department of War,'' more than the current ``Department of Defense,'' ensures peace through strength, as it demonstrates our ability and willingness to fight and win wars on behalf of our Nation at a moment's notice, not just to defend.
 
 | Field | Value |
 |---|---|
@@ -70,12 +64,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(a) — operative authorization of the secondary title "Secretary of War" for the Secretary of Defense, scoped to official correspondence, public communications, ceremonial contexts, and non-statutory executive-branch documents.
 
-> Sec. 2. Implementation. (a) The Secretary of Defense is
-> authorized the use of this additional secondary title--
-> the Secretary of War--and may be recognized by that
-> title in official correspondence, public
-> communications, ceremonial contexts, and non-statutory
-> documents within the executive branch.
+> Sec. 2. Implementation. (a) The Secretary of Defense is authorized the use of this additional secondary title-- the Secretary of War--and may be recognized by that title in official correspondence, public communications, ceremonial contexts, and non-statutory documents within the executive branch.
 
 | Field | Value |
 |---|---|
@@ -87,11 +76,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(b) — institutional secondary title authorization extending 2(a) to the Department of Defense and the Office of the Secretary of Defense as Department of War / Office of the Secretary of War. Source for the "Department of War" / "OUSW" institutional branding.
 
-> (b) The Department of Defense and the Office of
-> the Secretary of Defense may be referred to as the
-> Department of War and the Office of the Secretary of
-> War, respectively, in the contexts described in
-> subsection (a) of this section.
+> (b) The Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War, respectively, in the contexts described in subsection (a) of this section.
 
 | Field | Value |
 |---|---|
@@ -103,12 +88,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(c) — extends the secondary title authorization to subordinate officials, with "Deputy Secretary of War" and "Under Secretary of War" as illustrative corresponding titles. Authorizes the OUSW(I&S) form (Office of the Under Secretary of War for Intelligence and Security) used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 corporate marketing.
 
-> (c) The provisions of this section shall also
-> apply, as appropriate, to subordinate officials within
-> the Department of Defense, who may use corresponding
-> secondary titles such as Deputy Secretary of War or
-> Under Secretary of War in the contexts described in
-> subsection (a) of this section.
+> (c) The provisions of this section shall also apply, as appropriate, to subordinate officials within the Department of Defense, who may use corresponding secondary titles such as Deputy Secretary of War or Under Secretary of War in the contexts described in subsection (a) of this section.
 
 | Field | Value |
 |---|---|
@@ -120,10 +100,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(e) — statutory-controlling clause. Establishes that the secondary title authorization in 2(a)-(d) does not change the statutory name of the Department; statutory references remain "Department of Defense" / "Secretary of Defense" until changed by an act of Congress. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.
 
-> (e) Statutory references to the Department of
-> Defense, Secretary of Defense, and subordinate officers
-> and components shall remain controlling until changed
-> subsequently by the law.
+> (e) Statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
 
 | Field | Value |
 |---|---|
@@ -135,13 +112,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(f) — 30-day notification requirement. The Secretary of War (per 2(a)) submits a notification to the President, through the Assistant to the President for National Security Affairs, listing any office, executive department or agency, component, or command that begins using the secondary Department of War designation. Notification is for transmittal to Congress.
 
-> (f) Within 30 days of the date of this order, the
-> Secretary of War shall submit to the President, through
-> the Assistant to the President for National Security
-> Affairs, a notification for transmittal to the Congress
-> of any office, executive department or agency,
-> component, or command that begins using a secondary
-> Department of War designation.
+> (f) Within 30 days of the date of this order, the Secretary of War shall submit to the President, through the Assistant to the President for National Security Affairs, a notification for transmittal to the Congress of any office, executive department or agency, component, or command that begins using a secondary Department of War designation.
 
 | Field | Value |
 |---|---|
@@ -153,14 +124,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ### Section 2(g) — 60-day permanent-renaming recommendation: proposed legislative and executive actions required to permanently change the Department of Defense to the Department of War. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.
 
-> (g) Within 60 days of the date of this order, the
-> Secretary of War shall submit to the President, through
-> the Assistant to the President for National Security
-> Affairs, a recommendation on the actions required to
-> permanently change the name of the Department of
-> Defense to the Department of War. This recommendation
-> shall include the proposed legislative and executive
-> actions necessary to accomplish this renaming.
+> (g) Within 60 days of the date of this order, the Secretary of War shall submit to the President, through the Assistant to the President for National Security Affairs, a recommendation on the actions required to permanently change the name of the Department of Defense to the Department of War. This recommendation shall include the proposed legislative and executive actions necessary to accomplish this renaming.
 
 | Field | Value |
 |---|---|

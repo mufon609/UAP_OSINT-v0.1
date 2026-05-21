@@ -55,12 +55,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 ### IPMO Establishment and Influence Mandate
 
-> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
-> Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
-> Management Office (IPMO) was established. Among other things, the IPMO is tasked with
-> the development of broad thematic messaging guidance and specific strategies for the
-> execution of DoD activities designed to influence foreign defense-related decision-makers to
-> behave in a manner beneficial to U.S. interests.
+> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
 
 | Field | Value |
 |---|---|
@@ -68,10 +63,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 | Source | [archived source](../sources/government/notre-dame-ipmo-memo-20220527.pdf) |
 | Location | ¶1 |
 
-> My staff and I look forward to discussing these concepts and answering any questions
-> students may have. Please note that IPMO personnel participating in any events associated
-> with this course are expressing their personal thoughts, opinions, and observations, which do
-> not necessarily represent the official positions of the DoD.
+> My staff and I look forward to discussing these concepts and answering any questions students may have. Please note that IPMO personnel participating in any events associated with this course are expressing their personal thoughts, opinions, and observations, which do not necessarily represent the official positions of the DoD.
 
 | Field | Value |
 |---|---|

@@ -56,12 +56,7 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ### Earliest primary-source attestation in the corpus of Arlo's 2014 founding date and SBA 8(a) certified small-business framing. The Company Overview's "trusted advisors of agency leaders" phrasing is the seed of the marketing voice that Arlo's later press releases and corporate web pages expand on (the "data protectors / information confidantes / cybersecurity experts" three-archetype framing appears in those later sources, not in this 2021 Overview).
 
-> Founded in 2014, Arlo Solutions (Arlo) is an SBA 8(a) certified
-> small business based in Washington, DC. We are the trusted
-> advisors of agency leaders, providing innovative solutions that
-> simplify complex data challenges. Committed to quality,
-> accountability, and trust, we share our expertise to forward the
-> work of the defense and intelligence communities.
+> Founded in 2014, Arlo Solutions (Arlo) is an SBA 8(a) certified small business based in Washington, DC. We are the trusted advisors of agency leaders, providing innovative solutions that simplify complex data challenges. Committed to quality, accountability, and trust, we share our expertise to forward the work of the defense and intelligence communities.
 
 | Field | Value |
 |---|---|
@@ -73,16 +68,7 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ### Arlo's 2021 Company Overview lists DUNS 079302981 (legacy; superseded by UEI JSRCFJVJM874 per USAspending), CAGE Code 72UJ9, NAICS codes 541611/541512/541613/541690/561210, and names "FOUNDERS ARLENE WUBE & LONYE FORD". First primary-source attestation in the corpus of both founders by name.
 
-> DUNS NUMBER 079302981                               Prime​
-> CAGE CODE 72UJ9                                     GSA IT Professional Services SIN 54151S​
->                                                     GSA Professional Management SIN 541611​
-> NAICS CODES                                         GSA Temporary Staffing SIN 561320SBSA​
-> 541611 Administrative & Management Consulting ​     GSA 8(a) Stars III​
-> 541512 Computer Systems Design Services​            SBA 8(a) Business Development Program​            FOUNDERS ARLENE WUBE & LONYE FORD​
-> 541613 Marketing Consulting Services​               Subcontractor​
-> 541690 Other Scientific & Technical Consulting​     CDM Analytical & Technical Services​
-> 561210 Facilities Support Services                  SITE III Solutions for IT Enterprise​
->                                                     VECTOR Transformation & Operational Readiness ​
+> DUNS NUMBER 079302981                               Prime​ CAGE CODE 72UJ9                                     GSA IT Professional Services SIN 54151S​ GSA Professional Management SIN 541611​ NAICS CODES                                         GSA Temporary Staffing SIN 561320SBSA​ 541611 Administrative & Management Consulting ​     GSA 8(a) Stars III​ 541512 Computer Systems Design Services​            SBA 8(a) Business Development Program​            FOUNDERS ARLENE WUBE & LONYE FORD​ 541613 Marketing Consulting Services​               Subcontractor​ 541690 Other Scientific & Technical Consulting​     CDM Analytical & Technical Services​ 561210 Facilities Support Services                  SITE III Solutions for IT Enterprise​ VECTOR Transformation & Operational Readiness ​
 
 | Field | Value |
 |---|---|
@@ -118,8 +104,7 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ### Arlo's own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo's page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract. T4NG2 is a separate VA IT vehicle (Transformation Twenty-One Total Technology Next Generation 2). Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under Arlo's UEI JSRCFJVJM874. The heading-vs-body mismatch on Arlo's page is most likely a CMS template-reuse error — the same contract-vehicles HTML carries a `VA-T4NG2-Logo-300x300-2.png` image at URL path `/wp-content/uploads/2024/10/`, which under WordPress's `YYYY/MM/` upload-folder convention places the asset upload in October 2024 — suggesting prior T4NG2 marketing intent (subcontractor positioning or aspirational bid material) before the page entry was re-purposed for the OUSD(I&S) BPA win in February 2025.
 
-> Technical, Administrative and Professional Support Services to OUSDI&S Enterprise BPA.
-> The objective of this effort is to obtain specialized and sensitive Technical, Administrative, and Professional Services to assist OUSD(I&S) in performance of its oversight mission and responsibilities. Task areas include Professional Services; Policy, Technical and Analytical Expertise; Consulting Services; Information Technology Support; Facilities Support; Administrative Support; Physical, Personnel and Operations Security Services; Human Resources Support; Resource Management Support; and Training Support.
+> Technical, Administrative and Professional Support Services to OUSDI&S Enterprise BPA. The objective of this effort is to obtain specialized and sensitive Technical, Administrative, and Professional Services to assist OUSD(I&S) in performance of its oversight mission and responsibilities. Task areas include Professional Services; Policy, Technical and Analytical Expertise; Consulting Services; Information Technology Support; Facilities Support; Administrative Support; Physical, Personnel and Operations Security Services; Human Resources Support; Resource Management Support; and Training Support.
 
 | Field | Value |
 |---|---|

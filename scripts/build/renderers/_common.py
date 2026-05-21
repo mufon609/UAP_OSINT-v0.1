@@ -251,6 +251,54 @@ def _render_attribution_block(quote, artifact):
     return "\n".join(rows)
 
 
+# List-marker line-starts that begin a new logical line (kept as their own
+# blockquote line); any other non-blank line is soft-wrap and joins with a
+# space. Covers the markers the corpus's quotes actually use — bullets
+# (•/‣/·/▪/◦), en/em-dash bullets, and "1." / "1)" / "(1)" numbering.
+_LIST_MARKER_RE = re.compile(r"^\s*([•‣·▪◦]|[-–—]\s|\d+[.)]\s|\(\d+\)\s)")
+
+
+def _reflow_quote_text(text):
+    """Collapse a quote's extraction soft-wrap newlines to spaces, preserving
+    blank-line paragraph breaks and list-item line structure.
+
+    Quote text copied verbatim from a YAML ``|`` literal block keeps the
+    source's physical line-wrapping (PDF/HTML wrap at ~80 cols), which would
+    otherwise render one ``> `` per wrapped line — a blockquote broken
+    mid-sentence. This rejoins soft-wrapped prose into one line per paragraph
+    while keeping intentional structure: a blank line stays a paragraph break,
+    and a line that opens a list item (or its indented continuation) stays its
+    own line. Verification is unaffected (the verbatim-quote check normalizes
+    whitespace; this only changes display)."""
+    out, current = [], ""
+    for raw in (text or "").rstrip("\n").split("\n"):
+        if raw.strip() == "":
+            if current:
+                out.append(current)
+                current = ""
+            out.append("")  # paragraph break
+        elif current == "" or _LIST_MARKER_RE.match(raw):
+            if current:
+                out.append(current)
+            current = raw.strip()
+        else:
+            current += " " + raw.strip()
+    if current:
+        out.append(current)
+    while out and out[-1] == "":
+        out.pop()
+    return "\n".join(out)
+
+
+def _render_blockquote(text):
+    """Render quote text as a Markdown blockquote, reflowing soft-wrap
+    newlines via ``_reflow_quote_text``. The single shared helper for every
+    quote surface (person Statements, Key Passages, Key Testimony) so the
+    blockquote form is consistent and not re-implemented per renderer."""
+    reflowed = _reflow_quote_text(text)
+    return "\n".join(f"> {ln}" if ln else ">" for ln in reflowed.split("\n"))
+
+
 def _render_statement_block(quote, artifact):
     """Render a single block-quote + verification block pair.
 
@@ -262,12 +310,10 @@ def _render_statement_block(quote, artifact):
     text = (quote.get("text") or "").rstrip("\n")
     if len(text.strip()) < _COMPACT_STATEMENT_CHAR_THRESHOLD:
         return _render_compact_statement_block(quote, text)
-    lines = []
-    for qline in text.split("\n"):
-        lines.append(f"> {qline}" if qline else ">")
-    lines.append("")
-    lines.append(_render_attribution_block(quote, artifact))
-    return "\n".join(lines)
+    return (
+        _render_blockquote(text) + "\n\n"
+        + _render_attribution_block(quote, artifact)
+    )
 
 
 def _render_compact_statement_block(quote, text):
@@ -285,7 +331,7 @@ def _render_compact_statement_block(quote, text):
     parts = [p for p in [attributed_to, src_link, loc] if p]
     attr_line = "; ".join(parts)
 
-    quote_line = f"> {text}" if text else ">"
+    quote_line = _render_blockquote(text)
     if attr_line:
         # Blank line breaks the blockquote — attribution renders as a
         # separate italicized paragraph so the reader sees the quote

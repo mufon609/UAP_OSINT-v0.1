@@ -342,8 +342,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### SRI's own first-party attestation that Steven Walker joined SRI's board (page listing date January 18, 2024). The Walker addition is institutionally significant for the UAP-research corpus — Walker's page bio names "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director", both load-bearing entities (Targ's Lockheed retirement; DARPA's ARPANET / AAWSAP / IPMO contract chains).
 
-> January 18, 2024
-> Steven Walker
+> January 18, 2024 Steven Walker
 
 | Field | Value |
 |---|---|
@@ -355,9 +354,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### Substantive financial-health attestation: SRI's FY2024 independent audit identified a going-concern flag — substantial doubt about the organization's ability to meet financial obligations and continue operating. ProPublica sources this from the Federal Audit Clearinghouse-deposited audit accompanying the FY2024 Form 990 (filed November 12, 2025). First-time financial-stress attestation in the archived corpus.
 
-> An independent audit commissioned by this organization for the fiscal year ending Dec. 2024 identified:
-> Going concern flag
-> Audit identified substantial doubt about this organization’s ability to meet its financial obligations and continue operating for the foreseeable future.
+> An independent audit commissioned by this organization for the fiscal year ending Dec. 2024 identified: Going concern flag Audit identified substantial doubt about this organization’s ability to meet its financial obligations and continue operating for the foreseeable future.
 
 | Field | Value |
 |---|---|
@@ -369,12 +366,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### IRS-sourced attestation of SRI International FY2024 institutional scale: revenue $437.9M, expenses $433.2M, net income $4.8M. Anchors current-scale claims at field-precise granularity (the sri.com About page q2 attests only headcount, patents, and spin-offs; this is the first dollar-figure attestation in the archived corpus).
 
-> Revenue
-> $437,926,151
-> Expenses
-> $433,169,251
-> Net Income
-> $4,756,900
+> Revenue $437,926,151 Expenses $433,169,251 Net Income $4,756,900
 
 | Field | Value |
 |---|---|
@@ -386,12 +378,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The cause of the going-concern flag (q25) is not attested in the archived sources — the balance-sheet numbers alone do not establish it.
 
-> Total Assets
-> $409,624,782
-> Total Liabilities
-> $231,589,878
-> Net Assets
-> $178,034,904
+> Total Assets $409,624,782 Total Liabilities $231,589,878 Net Assets $178,034,904
 
 | Field | Value |
 |---|---|
@@ -511,9 +498,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### SRI's first-party attestation of three institutional-scale metrics — 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Anchors the description's reference to these figures (previously sourced to the page in token-pool only).
 
-> 13,000+ Patents filed
-> 50+ Spin-off companies
-> 500+ R&D projects per year
+> 13,000+ Patents filed 50+ Spin-off companies 500+ R&D projects per year
 
 | Field | Value |
 |---|---|

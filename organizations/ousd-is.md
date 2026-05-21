@@ -104,8 +104,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### USD(I) Clapper recommends against establishing a Special Access Program for AAWSAP/AATIP — primary-source attestation of Clapper-as-USD(I) decision authority
 
-> Based on the recommendation from DIA and my staffs review of the technical
-> reports, I recommend against establishing a Special Access Program at this time.
+> Based on the recommendation from DIA and my staffs review of the technical reports, I recommend against establishing a Special Access Program at this time.
 >
 > James R. Clapper Jr.
 
@@ -119,13 +118,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Vickers nominee response — USD(I) duties as principal intelligence advisor exercising authority/direction/control over DoD intelligence organizations
 
-> The USD(I)’s primary responsibility is to support the Secretary of Defense in discharging
-> his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C.
-> This includes: serving as the principal intelligence advisor to the Secretary of Defense;
-> exercising authority, direction, and control on behalf of the Secretary of Defense over all
-> intelligence organizations within the Department of Defense; ensuring that intelligence
-> organizations in the Department of Defense are manned, organized, trained, and equipped
-> to support the missions of the Department;
+> The USD(I)’s primary responsibility is to support the Secretary of Defense in discharging his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C. This includes: serving as the principal intelligence advisor to the Secretary of Defense; exercising authority, direction, and control on behalf of the Secretary of Defense over all intelligence organizations within the Department of Defense; ensuring that intelligence organizations in the Department of Defense are manned, organized, trained, and equipped to support the missions of the Department;
 
 | Field | Value |
 |---|---|
@@ -221,9 +214,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### NDAA FY2020 Section 1621 rename-statute heading
 
-> SEC. 1621. REDESIGNATION OF UNDER SECRETARY OF DEFENSE FOR
-> INTELLIGENCE AS UNDER SECRETARY OF DEFENSE FOR
-> INTELLIGENCE AND SECURITY.
+> SEC. 1621. REDESIGNATION OF UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AS UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY.
 
 | Field | Value |
 |---|---|
@@ -235,8 +226,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Operative redesignation clause; rename effective on enactment date December 20, 2019
 
-> (1) IN GENERAL.—The Under Secretary of Defense for Intelligence is hereby redesignated as the Under Secretary of
-> Defense for Intelligence and Security.
+> (1) IN GENERAL.—The Under Secretary of Defense for Intelligence is hereby redesignated as the Under Secretary of Defense for Intelligence and Security.
 
 | Field | Value |
 |---|---|
@@ -248,10 +238,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Charter language — Principal Staff Assistant role and assigned-responsibilities scope
 
-> 3. RESPONSIBILITIES AND FUNCTIONS. The USD(I&S) is the Principal Staff Assistant
-> (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence
-> (CI), Security, sensitive activities, and other intelligence-related matters (referred to in this
-> directive as “assigned responsibilities” or “Defense Intelligence, CI, and Security”).
+> 3. RESPONSIBILITIES AND FUNCTIONS. The USD(I&S) is the Principal Staff Assistant (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence (CI), Security, sensitive activities, and other intelligence-related matters (referred to in this directive as “assigned responsibilities” or “Defense Intelligence, CI, and Security”).
 
 | Field | Value |
 |---|---|
@@ -263,11 +250,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Components enumeration — DIA, NGA, NSA/CSS, NRO, DCSA under USD(I&S) authority/direction/control
 
-> capacity, the USD(I&S) exercises SecDef authority, direction, and control over, and oversees the
-> activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence
-> Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National
-> Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency; and
-> exercises planning, policy, and strategic oversight for all associated policy, plans, and programs.
+> capacity, the USD(I&S) exercises SecDef authority, direction, and control over, and oversees the activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency; and exercises planning, policy, and strategic oversight for all associated policy, plans, and programs.
 
 | Field | Value |
 |---|---|
@@ -279,11 +262,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Director of Defense Intelligence dual-hat role; primary SecDef representative to ODNI
 
-> Serves as Director of Defense Intelligence and principal advisor to the DNI on Defense
-> Intelligence matters, in accordance with the SecDef and DNI Memorandum of Agreement
-> (Reference (k)), and as the primary SecDef representative to the Office of the DNI (ODNI) and
-> all other Intelligence Community (IC) elements regarding the responsibilities and functions
-> prescribed in this directive.
+> Serves as Director of Defense Intelligence and principal advisor to the DNI on Defense Intelligence matters, in accordance with the SecDef and DNI Memorandum of Agreement (Reference (k)), and as the primary SecDef representative to the Office of the DNI (ODNI) and all other Intelligence Community (IC) elements regarding the responsibilities and functions prescribed in this directive.
 
 | Field | Value |
 |---|---|
@@ -343,11 +322,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### GAO finding — OUSD(I&S) governance bodies not operating as intended; unclear roles/responsibilities; one mission area body had not met for several years
 
-> We observed several oversight challenges within our case studies and
->                             interviews with OUSD(I&S) officials due in part to this lack of clarity
->                             around expectations, including: governance bodies not operating as
->                             intended; insufficient guidance; and unclear roles, responsibilities, and
->                             authorities.
+> We observed several oversight challenges within our case studies and interviews with OUSD(I&S) officials due in part to this lack of clarity around expectations, including: governance bodies not operating as intended; insufficient guidance; and unclear roles, responsibilities, and authorities.
 
 | Field | Value |
 |---|---|
@@ -371,12 +346,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### IPMO established March 1, 2022 by direction from SecDef and USD(I&S); attestation that OUSD(I&S) directs subordinate-office establishment
 
-> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
->  Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
->  Management Office (IPMO) was established. Among other things, the IPMO is tasked with
->  the development of broad thematic messaging guidance and specific strategies for the
->  execution of DoD activities designed to influence foreign defense-related decision-makers to
->  behave in a manner beneficial to U.S. interests.
+> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
 
 | Field | Value |
 |---|---|
@@ -388,8 +358,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Deputy Secretary of Defense Hicks directs USD(I&S) to establish AARO; OUSD(I&S) is the cognizant directing authority for AARO establishment
 
-> •   I direct the USD(I&S) to establish the AARO, in coordination with the Director of
->     Administration and Management.
+> •   I direct the USD(I&S) to establish the AARO, in coordination with the Director of Administration and Management.
 
 | Field | Value |
 |---|---|
@@ -464,9 +433,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### FY 2026 OSD OP-5 — April 21, 2023 LE PSA designation memo (+18 FTE OUSD(I&S) justification)
 
-> Increase of +18 FTEs and associated funding provides OUSD(I&S) support to implement direction contained
-> within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal
-> Staff Assistant for Law Enforcement.
+> Increase of +18 FTEs and associated funding provides OUSD(I&S) support to implement direction contained within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement.
 
 | Field | Value |
 |---|---|
@@ -526,8 +493,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Institutional attestation that the office now branded USW (Intelligence & Security) was established 2002
 
-> USW (Intelligence & Security)
-> EST. 2002
+> USW (Intelligence & Security) EST. 2002
 
 | Field | Value |
 |---|---|
@@ -541,8 +507,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 > MEMOR ANDUM FOR UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY
 >
-> SUBJECT: Management Advisory : DoD Policy and Training on Dissemination Controls for
->               Controlled Unclassified Information (CUI) (Report No. DODIG-2026-047)
+> SUBJECT: Management Advisory : DoD Policy and Training on Dissemination Controls for Controlled Unclassified Information (CUI) (Report No. DODIG-2026-047)
 
 | Field | Value |
 |---|---|
@@ -554,10 +519,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Direct attestation that DoDI 5200.48 (CUI program) is issued by OUSD(I&S) and establishes DoD-wide CUI program requirements
 
-> DoD Instruction (DoDI) 5200.48, "Controlled Unclassified Information (CUI)," issued by
-> the Office of the Under Secretary of Defense for Intelligence and Security (OUSD[I&S]),
-> establishes DoD program requirements for designating, marking, handling, and decontrolling
-> CUl.
+> DoD Instruction (DoDI) 5200.48, "Controlled Unclassified Information (CUI)," issued by the Office of the Under Secretary of Defense for Intelligence and Security (OUSD[I&S]), establishes DoD program requirements for designating, marking, handling, and decontrolling CUl.
 
 | Field | Value |
 |---|---|

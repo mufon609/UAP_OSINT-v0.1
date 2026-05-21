@@ -53,10 +53,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives (q7).
 
-> The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and
-> perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate
-> competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related
-> activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
+> The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
 | Field | Value |
 |---|---|
@@ -80,9 +77,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2023 OSD OP-5 sub-office summary bullet for IPMO — frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet (q16); replaced in FY 2025 by the new "center of gravity" framing (q13) that persists into FY 2026 (q8). Anchors the pre-pivot mission-summary framing.
 
-> The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating,
-> coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the
-> current strategic environment of great power competition.
+> The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
 | Field | Value |
 |---|---|
@@ -118,12 +113,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### Holly Notre Dame memo establishment paragraph — primary public attestation of IPMO's March 1, 2022 establishment by SecDef and USD(I&S) direction, signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.
 
-> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
-> Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
-> Management Office (IPMO) was established. Among other things, the IPMO is tasked with
-> the development of broad thematic messaging guidance and specific strategies for the
-> execution of DoD activities designed to influence foreign defense-related decision-makers to
-> behave in a manner beneficial to U.S. interests.
+> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
 
 | Field | Value |
 |---|---|
@@ -135,10 +125,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO's presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead — corroborates entity e11's AARO→AIC budget-document rebrand observation. Anchors the cluster-membership chronology relevant to the description's "AARO ... established four months after IPMO under the same parent" framing.
 
-> All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal
-> departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training
-> areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and
-> national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
+> All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
 
 | Field | Value |
 |---|---|
@@ -150,9 +137,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2024 OSD OP-5 sub-office summary bullet for IPMO — verbatim identical to FY 2023 (q12). Provides direct FY 2024 source attestation for the chronology claim made in q12 significance ("Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet"). Replaced in FY 2025 by the new "center of gravity" framing (q13).
 
-> The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating,
-> coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the
-> current strategic environment of great power competition.
+> The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
 | Field | Value |
 |---|---|
@@ -215,9 +200,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2025 OSD OP-5 — first appearance of the "center of gravity" mission-summary framing for IPMO. Distinct from FY 2026 (q8) by syntax ("is the" vs "which is the") and country reference ("America's defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.
 
-> The Influence and Perception Management Office (IPMO) is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and
-> intelligence entities to behave in ways that benefit America's defense-related strategic interests. IPMO integrates, matures, and operationalizes
-> oversight, governance, and execution of cross-cutting influence activities.
+> The Influence and Perception Management Office (IPMO) is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit America's defense-related strategic interests. IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities.
 
 | Field | Value |
 |---|---|
@@ -229,10 +212,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2025 OSD OP-5 — first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO. Distinct from earlier future-tense framing in FY 2023 (q10); FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into FY 2026 (q9).
 
-> The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception
-> management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence
-> strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in
-> policy, oversight, governance, and integration related to influence and perception management matters.
+> The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
 | Field | Value |
 |---|---|
@@ -256,12 +236,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.
 
-> The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately
-> influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO
-> integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO's
-> activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support
-> to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate
-> conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
+> The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO's activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
 | Field | Value |
 |---|---|
@@ -273,10 +248,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### FY 2026 OSD OP-5 detailed IPMO mission description — present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop"). Confirms IPMO operating posture has stabilized.
 
-> The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and
-> perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates
-> competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related
-> activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
+> The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
 | Field | Value |
 |---|---|

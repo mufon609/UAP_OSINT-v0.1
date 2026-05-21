@@ -150,8 +150,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Hicks AARO establishment memo (July 15, 2022) — directive to the USD(I&S) to establish AARO, in coordination with the Director of Administration and Management.
 
-> I direct the USD(I&S) to establish the AARO, in coordination with the Director of
-> Administration and Management.
+> I direct the USD(I&S) to establish the AARO, in coordination with the Director of Administration and Management.
 
 | Field | Value |
 |---|---|
@@ -163,8 +162,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Hicks memo establishes AAROEXEC (AARO Executive Council) as the renamed successor to AOIMEXEC, providing oversight and direction to AARO
 
-> The AOIMEXEC is renamed the AARO Executive Council (AAROEXEC). The
-> mission of the AAROEXEC will be to provide oversight and direction to the AARO.
+> The AOIMEXEC is renamed the AARO Executive Council (AAROEXEC). The mission of the AAROEXEC will be to provide oversight and direction to the AARO.
 
 | Field | Value |
 |---|---|
@@ -188,10 +186,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO contract HQ003422C0094 PWS Section 5.4 task header — Congressional Affairs, Public Affairs, and FOIA Support Services.
 
-> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
-> SuppOI1 Services in accordance with Section 5.4 of the Performance Work
-> Statement (PWS), the attached documents and all other requirements listed in this
-> document.
+> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA SuppOI1 Services in accordance with Section 5.4 of the Performance Work Statement (PWS), the attached documents and all other requirements listed in this document.
 
 | Field | Value |
 |---|---|
@@ -215,12 +210,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject "Award: HQ003422C0094_AARO".
 
-> From:        Verrine, Jacqueline G CIV WHS AD (USA)
-> Sent:        Thursday, September 1, 2022 5:16 PM
-> To:          (b)(6)
-> Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA
-> Subject:     Award: HQ003422C0094_AARO
-> Attachments: B02 HQ003422C0094_AARO.pdf
+> From:        Verrine, Jacqueline G CIV WHS AD (USA) Sent:        Thursday, September 1, 2022 5:16 PM To:          (b)(6) Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA Subject:     Award: HQ003422C0094_AARO Attachments: B02 HQ003422C0094_AARO.pdf
 
 | Field | Value |
 |---|---|
@@ -232,12 +222,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO contract HQ003422C0094 PWS Section G Routing Data Table — DoDAAC HQ0208 designated as Inspect By, Service Approver, and Service Acceptor.
 
-> Inspect By DoDAAC: HQ0208
-> Ship To Code: N/A
-> Ship From Code: N/A
-> Mark For Code: N/A
-> Service Approver (DoDAAC): HQ0208
-> Service Acceptor (DoDAAC): HQ0208
+> Inspect By DoDAAC: HQ0208 Ship To Code: N/A Ship From Code: N/A Mark For Code: N/A Service Approver (DoDAAC): HQ0208 Service Acceptor (DoDAAC): HQ0208
 
 | Field | Value |
 |---|---|
@@ -321,10 +306,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### FY 2025 OSD OP-5 budget submission (released March 11, 2024) is the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)" — narrows the budget-document rename window to between FY24 OP-5 (March 20, 2023) and FY25 OP-5 (March 11, 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.
 
-> Advanced Intelligence Capabilities (AIC) synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect,
->             identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of
->             interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security. This includes anomalous, unidentified
->             space, airborne, submerged, and transmedium objects.
+> Advanced Intelligence Capabilities (AIC) synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
 
 | Field | Value |
 |---|---|
@@ -384,9 +366,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Lane A. Bodian (Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs) summary of the SASC member briefing on the December 2023 JBLE drone incursions, given by PTDO ASD Becky Zimmerman (HD&HA), RADM Spedero (Joint Staff), and Maj Gen Sherman (USAF). Documents Sen. Gillibrand's on-the-record position — "sUAS should be catalogued by AARO" — that Gough and Kozik subsequently contested in their March 6-7 2024 internal exchange. The 14 senators in attendance included Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly.
 
-> There was an animated response by Sen. Gillibrand to a comment by Ms. Zimmerman regarding there not being
->            a DoD-wide database for cataloging UAS incursions. Sen. Gillibrand believes sUAS should be catalogued by
->            AARO. Ms. Zimmerman briefly mentioned stand-up of the SIG C-UXS during this exchange.
+> There was an animated response by Sen. Gillibrand to a comment by Ms. Zimmerman regarding there not being a DoD-wide database for cataloging UAS incursions. Sen. Gillibrand believes sUAS should be catalogued by AARO. Ms. Zimmerman briefly mentioned stand-up of the SIG C-UXS during this exchange.
 
 | Field | Value |
 |---|---|
@@ -398,13 +378,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Heather King (SES, immediate Secretary of Defense office) email on March 6, 2024 — the Deputy Secretary of Defense (Hicks) office's direct staff connected the Joint Base Langley-Eustis December 2023 drone incursion story (Breaking Defense reporting) to the AARO Historical Record Report Vol I rollout in DoD's own internal correspondence on the day of the rollout briefings. King requested a readout of the AARO Hill engagements.
 
-> Following up from Unders a bit ago - the Deputy asked us to flag for you
-> that the Langley topic re: Breaking Defense may be connected to the AARO
-> rollout that occurred this week. Understand there were hill briefings on
-> UAP led by Tim Phillips (Acting Director of AARO). Now that those hill
-> briefings have occurred, there may be more individuals who are tracking
-> Langley. She asked that we flag for you all and that you get a readout of
-> those hill engagements.
+> Following up from Unders a bit ago - the Deputy asked us to flag for you that the Langley topic re: Breaking Defense may be connected to the AARO rollout that occurred this week. Understand there were hill briefings on UAP led by Tim Phillips (Acting Director of AARO). Now that those hill briefings have occurred, there may be more individuals who are tracking Langley. She asked that we flag for you all and that you get a readout of those hill engagements.
 
 | Field | Value |
 |---|---|
@@ -428,9 +402,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Hill staff at the AARO HRR Compartmented Annex briefing (1300-1400, March 6, 2024) explicitly asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" — committee-staff request to AARO at the SCI level for narrative-shaping work product, attested in DoD legislative-affairs correspondence.
 
-> At the end of the session, staff asked for
->   perspectives and recommendations for countering inaccurate or misleading
->   narratives related to UAP based on the review.
+> At the end of the session, staff asked for perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review.
 
 | Field | Value |
 |---|---|
@@ -478,11 +450,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### HRR Vol I documents Kona Blue — proposed DHS UAP recovery and reverse-engineering Special Access Program. AARO's framing identifies it as proposed by the AAWSAP/AATIP cohort after DIA cancelled their program in 2012; never approved by DHS
 
-> KONA BLUE was brought to AARO’s attention by interviewees who claimed that it was
-> a sensitive DHS compartment to cover up the retrieval and exploitation of “non-human
-> biologics.”114 KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program,
-> which was funded through a special appropriation and executed by its primary contractor, a
-> private sector organization.
+> KONA BLUE was brought to AARO’s attention by interviewees who claimed that it was a sensitive DHS compartment to cover up the retrieval and exploitation of “non-human biologics.”114 KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program, which was funded through a special appropriation and executed by its primary contractor, a private sector organization.
 
 | Field | Value |
 |---|---|
@@ -494,12 +462,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### HRR Vol I — Kona Blue scope (UAP investigations + paranormal research + reverse-engineering of "any recovered off-world spacecraft they hoped to acquire") and DHS rejection ("eventually rejected by DHS leadership for lacking merit")
 
-> This proposal, codenamed KONA
-> BLUE, would restart UAP investigations, paranormal research (including alleged “human
-> consciousness anomalies”) and reverse-engineer any recovered off-world spacecraft that they
-> hoped to acquire. This proposal gained some initial traction at DHS to the point where a
-> Prospective Special Access Program (PSAP) was officially requested to stand up this program,
-> but it was eventually rejected by DHS leadership for lacking merit.
+> This proposal, codenamed KONA BLUE, would restart UAP investigations, paranormal research (including alleged “human consciousness anomalies”) and reverse-engineer any recovered off-world spacecraft that they hoped to acquire. This proposal gained some initial traction at DHS to the point where a Prospective Special Access Program (PSAP) was officially requested to stand up this program, but it was eventually rejected by DHS leadership for lacking merit.
 
 | Field | Value |
 |---|---|
@@ -511,11 +474,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### HRR Vol I — AARO's load-bearing finding that the Kona Blue proposal rested on an unverified assumption (no extraterrestrial craft or bodies were ever collected); the SAP was never approved or stood up
 
-> It is critical to note that no extraterrestrial craft or bodies were ever collected—this
-> material was only assumed to exist by KONA BLUE advocates and its anticipated contract
-> performers. This was the same assumption made by those same individuals involved with the
-> AAWSAP/AATIP program. The SAP was never approved or stood up, and no data or material
-> was transferred to DHS.
+> It is critical to note that no extraterrestrial craft or bodies were ever collected—this material was only assumed to exist by KONA BLUE advocates and its anticipated contract performers. This was the same assumption made by those same individuals involved with the AAWSAP/AATIP program. The SAP was never approved or stood up, and no data or material was transferred to DHS.
 
 | Field | Value |
 |---|---|
@@ -539,13 +498,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### HRR Vol I quotes Section 6802(j) of NDAA FY 2023 verbatim — 540-day statutory deadline for the Historical Record Report. The IAA FY 2023 was enacted as part of P.L. 117-263 (NDAA FY2023) on December 23, 2022, making the Section 6802(j) deadline approximately mid-June 2024.
 
-> This HR2 is provided by DoD in response to a requirement established in the National
-> Defense Authorization Act (NDAA) for FY 2023, Section 6802(j), which states: “Not later than
-> 540 days after the date of the enactment of the Intelligence Authorization Act for Fiscal Year
-> 2023, the Director of the Office shall submit to the congressional defense committees, the
-> congressional intelligence committees and the congressional leadership a written report detailing
-> the historical record of the United States Government relating to unidentified anomalous
-> phenomena.”
+> This HR2 is provided by DoD in response to a requirement established in the National Defense Authorization Act (NDAA) for FY 2023, Section 6802(j), which states: “Not later than 540 days after the date of the enactment of the Intelligence Authorization Act for Fiscal Year 2023, the Director of the Office shall submit to the congressional defense committees, the congressional intelligence committees and the congressional leadership a written report detailing the historical record of the United States Government relating to unidentified anomalous phenomena.”
 
 | Field | Value |
 |---|---|
@@ -629,9 +582,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Shellenberger written testimony — disclosure-side critique characterization of HRR Vol I as "riddled with factual errors and poor referencing, including to Wikipedia"; representative public-record critique posture opposing AARO's historical analysis.
 
-> But critics say that AARO’s 63-page history of the US government’s
-> investigation into UAPs since the end of World War II was riddled with factual errors
-> and poor referencing, including to Wikipedia.
+> But critics say that AARO’s 63-page history of the US government’s investigation into UAPs since the end of World War II was riddled with factual errors and poor referencing, including to Wikipedia.
 
 | Field | Value |
 |---|---|
@@ -643,10 +594,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Shellenberger written testimony — Christopher Mellon (former DASD(I)) rebuttal of HRR Vol I, "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service"; substantive disclosure-side critique attributed to a former DoD official.
 
-> Christopher Mellon, a former Deputy Assistant Secretary of Defense, wrote a
-> lengthy rebuttal, concluding, “this is the most error-ridden and unsatisfactory
-> government report I can recall reading during or after decades of government
-> service.”
+> Christopher Mellon, a former Deputy Assistant Secretary of Defense, wrote a lengthy rebuttal, concluding, “this is the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service.”
 
 | Field | Value |
 |---|---|
@@ -658,10 +606,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Gallaudet written testimony — calls for AARO to explain "inaccuracies and incompleteness" of HRR Vol I and questions whether AARO is failing its Congressional mandate or conducting "disinformation"; recommended Congressional action.
 
-> AARO needs to explain the inaccuracies and incompleteness31 of AARO’s first
-> historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its
-> Congressional mandate, and (b) under what authority AARO has conducted this and other
-> examples of disinformation.
+> AARO needs to explain the inaccuracies and incompleteness31 of AARO’s first historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its Congressional mandate, and (b) under what authority AARO has conducted this and other examples of disinformation.
 
 | Field | Value |
 |---|---|
@@ -673,12 +618,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Gallaudet first-person account of an "hours-long influence operation" by then-acting AARO director and senior staff intended to convince him of the validity of HRR Vol I, question well-known UAP reports including the USS Nimitz tic-tac encounter, and disparage former government authorities. Most concrete public-record disclosure-side critique attestation against AARO institutional conduct.
 
-> I say this as a first-hand witness to such disinformation. During a meeting with the then
-> acting AARO director and his senior staff earlier this year, I was the object of an hours-long
-> influence operation which attempted to convince me of the validity of the severely flawed
-> historical records report, question well known UAP reports such as the U.S.S. Nimitz “tic tac”
-> encounter, and disparage several former government authorities who have published and
-> spoken publicly about their knowledge of U.S. government UAP programs.
+> I say this as a first-hand witness to such disinformation. During a meeting with the then acting AARO director and his senior staff earlier this year, I was the object of an hours-long influence operation which attempted to convince me of the validity of the severely flawed historical records report, question well known UAP reports such as the U.S.S. Nimitz “tic tac” encounter, and disparage several former government authorities who have published and spoken publicly about their knowledge of U.S. government UAP programs.
 
 | Field | Value |
 |---|---|
@@ -870,9 +810,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO's official slide-deck attestation of the Mt. Etna 2018 case finding — "approximately 170 kilometers from the volcano" — at moderate confidence. CONTRADICTS Kosloski's oral testimony in the SASC stenographic transcript ("170 meters away from the plume"). Both are primary sources from the same hearing day; the slide deck was prepared the night before the hearing (created Nov 18, 2024 5:24 PM EST).
 
-> Findings: AARO, in coordination with IC and S&T partners, assesses with
-> moderate confidence that the object was a balloon drifting with the wind
-> approximately 170 kilometers from the volcano.
+> Findings: AARO, in coordination with IC and S&T partners, assesses with moderate confidence that the object was a balloon drifting with the wind approximately 170 kilometers from the volcano.
 
 | Field | Value |
 |---|---|
@@ -884,10 +822,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO Puerto Rico Object finding — "high confidence" assessment that the UAP did not demonstrate any anomalous speeds or flight characteristics; two distinct objects, motion-parallax explanation for high-speed perception, traveled at wind speed (3.6 m/s) over land in a straight line, descending to ~200 meters.
 
-> Findings: AARO, in coordination with Intelligence Community (IC) and
-> Science and Technology (S&T) partners assess with high confidence that
-> the UAP did not demonstrate any anomalous speeds or flight
-> characteristics.
+> Findings: AARO, in coordination with Intelligence Community (IC) and Science and Technology (S&T) partners assess with high confidence that the UAP did not demonstrate any anomalous speeds or flight characteristics.
 
 | Field | Value |
 |---|---|
@@ -899,10 +834,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### AARO GO FAST finding — "high confidence" assessment of UAP altitude (~13,000 feet ASL) and velocity (~45 mph / 39 knots) with 60-knot winds at altitude; UAP did not demonstrate anomalous speeds or flight characteristics.
 
-> Findings: Following in-depth computational analysis of Navy aircraft’s
-> flight characteristics and sensor readings, AARO, in coordination with
-> S&T partners, assesses with high confidence the UAP did not
-> demonstrate any anomalous speeds or flight characteristics.
+> Findings: Following in-depth computational analysis of Navy aircraft’s flight characteristics and sensor readings, AARO, in coordination with S&T partners, assesses with high confidence the UAP did not demonstrate any anomalous speeds or flight characteristics.
 
 | Field | Value |
 |---|---|
@@ -926,10 +858,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### FY 2026 Office of the Secretary of Defense Budget Estimates — program description for Advanced Intelligence Capabilities (AIC), reporting to the DEPSECDEF and the Principal Deputy Director of National Intelligence.
 
-> Advanced Intelligence Capabilities (AIC), which reports directly to the DEPSECDEF and the Principal Deputy Director of National
-> Intelligence and synchronizes efforts across the Department and with other Federal departments and agencies to detect, identify, and
-> attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas
-> of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security.
+> Advanced Intelligence Capabilities (AIC), which reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence and synchronizes efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security.
 
 | Field | Value |
 |---|---|
@@ -965,8 +894,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### FOIA 24-F-0894 cover letter (August 26, 2025) attesting five Initial Denial Authorities signed off on the 14-page release — Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.
 
-> The personnel listed below, in their capacity as an Initial Denial Authority, have
-> determined that the pages contained information exempt from mandatory public release.
+> The personnel listed below, in their capacity as an Initial Denial Authority, have determined that the pages contained information exempt from mandatory public release.
 
 | Field | Value |
 |---|---|
@@ -1100,8 +1028,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Specific request and enumerated April 14, 2026 deadline for delivery of 46 UAP video files held by the Department of War / AARO.
 
-> To assist the Task Force in its investigation of UAPs we request the following videos be
-> delivered as soon as possible but no later than April 14, 2026:
+> To assist the Task Force in its investigation of UAPs we request the following videos be delivered as soon as possible but no later than April 14, 2026:
 
 | Field | Value |
 |---|---|

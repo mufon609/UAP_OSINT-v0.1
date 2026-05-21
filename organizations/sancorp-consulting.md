@@ -73,10 +73,7 @@ _No personnel attested in primary sources to date._
 
 ### OSD OP-5 FY 2023 budget — IPMO program description: senior advisor to USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters.
 
-> The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and
-> perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate
-> competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related
-> activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
+> The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
 | Field | Value |
 |---|---|
@@ -112,12 +109,7 @@ _No personnel attested in primary sources to date._
 
 ### IPMO Notre Dame memo, signed by James A. Holly, Acting Director, May 27, 2022 — documents IPMO's March 1, 2022 establishment by direction from SecDef and USD(I&S), and IPMO's tasking with thematic messaging guidance and influence strategies.
 
-> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
->            Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
->            Management Office (IPMO) was established. Among other things, the IPMO is tasked with
->            the development of broad thematic messaging guidance and specific strategies for the
->            execution of DoD activities designed to influence foreign defense-related decision-makers to
->            behave in a manner beneficial to U.S. interests.
+> On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
 
 | Field | Value |
 |---|---|
@@ -147,9 +139,7 @@ _No personnel attested in primary sources to date._
 > 5. DATE ISSUED: 07 Jul 2022
 > 6. REQUISITION/PURCHASE NO.: HQ0642268484-0001
 >
-> 7. ISSUED BY: WHS - ACQUISITION DIRECTORATE, 4800 MARK CENTER DRIVE, SUITE 09F09,
->    ALEXANDRIA VA 22350-0002
->    CODE: HQ0034
+> 7. ISSUED BY: WHS - ACQUISITION DIRECTORATE, 4800 MARK CENTER DRIVE, SUITE 09F09, ALEXANDRIA VA 22350-0002 CODE: HQ0034
 
 | Field | Value |
 |---|---|
@@ -161,10 +151,7 @@ _No personnel attested in primary sources to date._
 
 ### INSA September 2022 Naming Convention paper, p. 4 Counter-Insider Threat section — credits OUSD(I&S) as the developer of counter-insider-threat doctrine.
 
-> Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and
-> Security (OUSDI&S). Like counterterrorism, “counter-insider threat” supports the philosophy that programs need
-> an operational approach in execution and are not simply “policies and governance.” Several DoD organizations
-> have adopted this approach; however, no policy exists which dictates naming conventions for Programs.
+> Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S). Like counterterrorism, “counter-insider threat” supports the philosophy that programs need an operational approach in execution and are not simply “policies and governance.” Several DoD organizations have adopted this approach; however, no policy exists which dictates naming conventions for Programs.
 
 | Field | Value |
 |---|---|
@@ -176,9 +163,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract HQ003422C0094 Section 5.2 task header — Executive Administrative Support Services.
 
-> The contractor shall provide Executive Administrative Support Services in
-> accordance with Sect ion 5.2 of the Performance Work Statement (PWS). the
-> anached documents and all other requirements listed in this document.
+> The contractor shall provide Executive Administrative Support Services in accordance with Sect ion 5.2 of the Performance Work Statement (PWS). the anached documents and all other requirements listed in this document.
 
 | Field | Value |
 |---|---|
@@ -190,9 +175,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract HQ003422C0094 Section 5.3 task header — Strategy, Plans, and Policy Support Services.
 
-> The contractor shall provide Strategy , Plans. and Policy Support Services in
-> accordance with Section 5.3 of the Performance Work Statement (PWS). the
-> attached documents and all other requirements listed in this document.
+> The contractor shall provide Strategy , Plans. and Policy Support Services in accordance with Section 5.3 of the Performance Work Statement (PWS). the attached documents and all other requirements listed in this document.
 
 | Field | Value |
 |---|---|
@@ -204,10 +187,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract HQ003422C0094 Section 5.4 task header — Congressional Affairs, Public Affairs, and FOIA Support Services.
 
-> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
-> SuppOI1 Services in accordance with Section 5.4 of the Performance Work
-> Statement (PWS), the attached documents and all other requirements listed in this
-> document.
+> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA SuppOI1 Services in accordance with Section 5.4 of the Performance Work Statement (PWS), the attached documents and all other requirements listed in this document.
 
 | Field | Value |
 |---|---|
@@ -219,9 +199,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract HQ003422C0094 Section 5.5 task header — Data Architecture Support Services.
 
-> The contractor shall provide Data Architecture Support Services in accordance
-> with Section 5.5 of the Performance Work Statement (PWS). the attached
-> documents and all other requirements listed in thi s document.
+> The contractor shall provide Data Architecture Support Services in accordance with Section 5.5 of the Performance Work Statement (PWS). the attached documents and all other requirements listed in thi s document.
 
 | Field | Value |
 |---|---|
@@ -233,10 +211,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract HQ003422C0094 Section 5.6 task header — Planning, Programming, Budgeting and Executive Support Services.
 
-> The contractor shall provide Plann ing, Programming, Budgeting and Executi ve
-> SuppOI1 Services in accordance with Section 5.6 of the Performance Work
-> Statement (PWS), the attached documents and all other requirements listed in this
-> document.
+> The contractor shall provide Plann ing, Programming, Budgeting and Executi ve SuppOI1 Services in accordance with Section 5.6 of the Performance Work Statement (PWS), the attached documents and all other requirements listed in this document.
 
 | Field | Value |
 |---|---|
@@ -252,10 +227,7 @@ _No personnel attested in primary sources to date._
 >
 > Exhibit/Attachment Table of Contents
 >
-> DOCUMENT TYPE   DESCRIPTION                       PAGES   DATE
-> Attachment 1    Performance Work Statement        28      11-JUL-2022
-> Attachment 2    NDA OCI                           5       21-JUN-2022
-> Attachment 3    Form DD 254                       11      21-JUN-2022
+> DOCUMENT TYPE   DESCRIPTION                       PAGES   DATE Attachment 1    Performance Work Statement        28      11-JUL-2022 Attachment 2    NDA OCI                           5       21-JUN-2022 Attachment 3    Form DD 254                       11      21-JUN-2022
 
 | Field | Value |
 |---|---|
@@ -269,16 +241,9 @@ _No personnel attested in primary sources to date._
 
 > 252.219-7009     SECTION 8(A) DIRECT AWARD (OCT 2018)
 >
-> (a)  This contract is issued as a direct award between the contracting office and the 8(a)
-> Contractor pursuant to the Partnership Agreement between the Small Business Administration (SBA)
-> and the Department of Defense.  Accordingly, the SBA, even if not identified in Section A of this contract,
-> is the prime contractor and retains responsibility for 8(a) certification, for 8(a) eligibility determinations
-> and related issues, and for providing counseling and assistance to the 8(a) Contractor under the 8(a) Program.
-> The cognizant SBA district office is:
+> (a)  This contract is issued as a direct award between the contracting office and the 8(a) Contractor pursuant to the Partnership Agreement between the Small Business Administration (SBA) and the Department of Defense.  Accordingly, the SBA, even if not identified in Section A of this contract, is the prime contractor and retains responsibility for 8(a) certification, for 8(a) eligibility determinations and related issues, and for providing counseling and assistance to the 8(a) Contractor under the 8(a) Program. The cognizant SBA district office is:
 >
->                       Richmond District Office
->                       400 N 8th Street, Suite 1150
->                       Richmond, VA 23219
+> Richmond District Office 400 N 8th Street, Suite 1150 Richmond, VA 23219
 
 | Field | Value |
 |---|---|
@@ -290,14 +255,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract-award notification email signature block (September 1, 2022) — identifies Jacqueline Verrine as Team Lead/Contracting Officer in Technical Analysis Branch (TAB), Enterprise Office Secretary of Defense (EOSD), Washington Headquarters Services (WHS), Acquisition Directorate (AD).
 
-> Jacqueline Verrine
-> Team Lead/Contracting Officer
-> Technical Analysis Branch (TAB)
-> Enterprise Office Secretary of Defense (EOSD)
-> Washington Headquarters Services (WHS)
-> Acquisition Directorate (AD)
-> Phone: 571.344.2931
-> Email: jacqueline.g.verrine.civ@mail.mil
+> Jacqueline Verrine Team Lead/Contracting Officer Technical Analysis Branch (TAB) Enterprise Office Secretary of Defense (EOSD) Washington Headquarters Services (WHS) Acquisition Directorate (AD) Phone: 571.344.2931 Email: jacqueline.g.verrine.civ@mail.mil
 
 | Field | Value |
 |---|---|
@@ -309,12 +267,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject Award: HQ003422C0094_AARO.
 
-> From:        Verrine, Jacqueline G CIV WHS AD (USA)
-> Sent:        Thursday, September 1, 2022 5:16 PM
-> To:          (b)(6)
-> Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA
-> Subject:     Award: HQ003422C0094_AARO
-> Attachments: B02 HQ003422C0094_AARO.pdf
+> From:        Verrine, Jacqueline G CIV WHS AD (USA) Sent:        Thursday, September 1, 2022 5:16 PM To:          (b)(6) Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA Subject:     Award: HQ003422C0094_AARO Attachments: B02 HQ003422C0094_AARO.pdf
 
 | Field | Value |
 |---|---|
@@ -326,12 +279,7 @@ _No personnel attested in primary sources to date._
 
 ### AARO contract SF 33 Block 15A NAME AND ADDRESS OF OFFEROR — Code 7NZQ9, address 3235 Valley Ln, Falls Church VA 22044-1740. Block 15B telephone 404-840-9330. Block 15A second line is (b)(6)-redacted.
 
-> 15A. NAME AND ADDRESS OF OFFEROR:
->    CODE: 7NZQ9
->    SANCORP CONSULTING
->    (b)(6)
->    3235 VALLEY LN
->    FALLS CHURCH VA 22044-1740
+> 15A. NAME AND ADDRESS OF OFFEROR: CODE: 7NZQ9 SANCORP CONSULTING (b)(6) 3235 VALLEY LN FALLS CHURCH VA 22044-1740
 >
 > 15B. TELEPHONE NO.: 404-840-9330
 
@@ -345,13 +293,7 @@ _No personnel attested in primary sources to date._
 
 ### FOIA 23-F-1114 cover letter, signed by Stephanie L. Carr, Chief, FOID, on September 11, 2023 — documents WHS Acquisition Directorate as the records-holder, identifies 125 responsive pages, and cites the (b)(5) deliberative-process exemption for 11 entirely-withheld pages.
 
-> The Washington Headquarters Services, Acquisition Directorate, a component of the
-> Office of the Secretary of Defense, conducted a search of their records systems and located 125
-> pages determined to be responsive to your request. Ms. Paulette Creighton, Division Director,
-> Enterprise Acquisition Policy & Strategic Initiatives, in her capacity as an Initial Denial
-> Authority (IDA), has also determined that the responsive records contain information exempt
-> from public release, including 11 pages withheld in their entirety pursuant to 5 U.S.C. § 552
-> (b)(5), inter- and intra- agency memoranda which are deliberative in nature
+> The Washington Headquarters Services, Acquisition Directorate, a component of the Office of the Secretary of Defense, conducted a search of their records systems and located 125 pages determined to be responsive to your request. Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives, in her capacity as an Initial Denial Authority (IDA), has also determined that the responsive records contain information exempt from public release, including 11 pages withheld in their entirety pursuant to 5 U.S.C. § 552 (b)(5), inter- and intra- agency memoranda which are deliberative in nature
 
 | Field | Value |
 |---|---|
@@ -375,12 +317,7 @@ _No personnel attested in primary sources to date._
 
 ### OSD OP-5 FY 2026 budget — IPMO program description: OUSD(I&S) center of gravity for influence activities; activities include thematic influence guidance, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
-> The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately
-> influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO
-> integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO’s
-> activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support
-> to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate
-> conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
+> The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO’s activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
 | Field | Value |
 |---|---|
@@ -454,10 +391,7 @@ _No personnel attested in primary sources to date._
 
 ### EO 14347 Section 2(e) — statutory references to Department of Defense, Secretary of Defense, and subordinate officers remain controlling until changed by law.
 
-> (e) Statutory references to the Department of
-> Defense, Secretary of Defense, and subordinate officers
-> and components shall remain controlling until changed
-> subsequently by the law.
+> (e) Statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
 
 | Field | Value |
 |---|---|
@@ -469,12 +403,7 @@ _No personnel attested in primary sources to date._
 
 ### EO 14347 Section 2(a) — authorizes the Secretary of Defense to use the additional secondary title Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents.
 
-> Sec. 2. Implementation. (a) The Secretary of Defense is
->           authorized the use of this additional secondary title--
->           the Secretary of War--and may be recognized by that
->           title in official correspondence, public
->           communications, ceremonial contexts, and non-statutory
->           documents within the executive branch.
+> Sec. 2. Implementation. (a) The Secretary of Defense is authorized the use of this additional secondary title-- the Secretary of War--and may be recognized by that title in official correspondence, public communications, ceremonial contexts, and non-statutory documents within the executive branch.
 
 | Field | Value |
 |---|---|
@@ -486,11 +415,7 @@ _No personnel attested in primary sources to date._
 
 ### EO 14347 Section 2(b) — authorizes the Department of Defense and the Office of the Secretary of Defense to be referred to as the Department of War and the Office of the Secretary of War in the contexts described in Sec. 2(a) (official correspondence, public communications, ceremonial contexts, non-statutory documents).
 
-> (b) The Department of Defense and the Office of
->           the Secretary of Defense may be referred to as the
->           Department of War and the Office of the Secretary of
->           War, respectively, in the contexts described in
->           subsection (a) of this section.
+> (b) The Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War, respectively, in the contexts described in subsection (a) of this section.
 
 | Field | Value |
 |---|---|
@@ -514,10 +439,9 @@ _No personnel attested in primary sources to date._
 
 ### HigherGov Sancorp Consulting profile — Unique Entity Identifier GRYKNJ8BGFC8, CAGE Code 7NZQ9, Falls Church VA headquarters, primary registered NAICS 541990 (All Other Professional, Scientific, and Technical Services).
 
-> (UEI GRYKNJ8BGFC8, CAGE 7NZQ9)
->                  is headquartered in Falls Church VA.
+> (UEI GRYKNJ8BGFC8, CAGE 7NZQ9) is headquartered in Falls Church VA.
 >
->                  Its primary registered NAICS is 541990 All Other Professional, Scientific, and Technical Services.
+> Its primary registered NAICS is 541990 All Other Professional, Scientific, and Technical Services.
 
 | Field | Value |
 |---|---|
@@ -532,18 +456,18 @@ _No personnel attested in primary sources to date._
 > SBA 8(a) Certification
 >
 >
->             Graduated (Aug. 26, 2017 - March 11, 2026)
+> Graduated (Aug. 26, 2017 - March 11, 2026)
 >
 >
 >
 >
->               Other   SBA Certifications
+> Other   SBA Certifications
 >
 >
 >
->               Service Disabled Veteran Owned Small Business
+> Service Disabled Veteran Owned Small Business
 >
->               Veteran Owned Business
+> Veteran Owned Business
 
 | Field | Value |
 |---|---|

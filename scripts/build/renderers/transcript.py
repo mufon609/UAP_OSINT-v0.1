@@ -11,6 +11,7 @@ import sys
 
 from ._common import (
     SECTION_SEP,
+    _render_blockquote,
     _escape_table_cell,
     _render_attribution_block,
     _wrap_path,
@@ -153,8 +154,7 @@ def render_transcript_key_passages(artifact):
         h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
         lines = [f"### {h3}", ""]
-        for qline in text.split("\n"):
-            lines.append(f"> {qline}" if qline else ">")
+        lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))
         blocks.append("\n".join(lines))

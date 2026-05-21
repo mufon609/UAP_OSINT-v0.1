@@ -87,10 +87,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ### Career and UAP Task Force Role
 
-> His last active-duty assignment was as Army director
-> supporting the UAP Task Force. An executive in the aerospace industry, he has held positions
-> with Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC, among others. He
-> currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dol-lar VC-backed startup focused on metamaterial analysis and design.
+> His last active-duty assignment was as Army director supporting the UAP Task Force. An executive in the aerospace industry, he has held positions with Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC, among others. He currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dol-lar VC-backed startup focused on metamaterial analysis and design.
 
 | Field | Value |
 |---|---|
@@ -122,11 +119,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ### Witness Credibility and National Security
 
-> The public must now entertain the possibili-ty that three independent witnesses who held highly sensitive positions in the US military and
->        performed distinguished national service are either willfully prevaricating under penalty of
->        perjury, suffering from an undiagnosed and shared psychosis, or actually relating the facts as
->        they understand them. Regardless of which alternative is true, the national security interests
->        of the United States are unequivocally at stake.
+> The public must now entertain the possibili-ty that three independent witnesses who held highly sensitive positions in the US military and performed distinguished national service are either willfully prevaricating under penalty of perjury, suffering from an undiagnosed and shared psychosis, or actually relating the facts as they understand them. Regardless of which alternative is true, the national security interests of the United States are unequivocally at stake.
 
 | Field | Value |
 |---|---|
@@ -136,12 +129,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ### UAP Disclosure Act and Review Board
 
-> The UAP Disclosure Act would create an independent Review Board of nine distinguished
->        citizens at the uppermost tiers of their professions to serve as that control group. Nominated
->        by the President and confirmed by the Senate, the Board would have the responsibility of
->        centralizing and assessing all extant government information concerning UFOs, with the
->        intent of creating public transparency, assessing the defense and national security issues raised
->        by the objects, and setting the agenda for international cooperation.
+> The UAP Disclosure Act would create an independent Review Board of nine distinguished citizens at the uppermost tiers of their professions to serve as that control group. Nominated by the President and confirmed by the Senate, the Board would have the responsibility of centralizing and assessing all extant government information concerning UFOs, with the intent of creating public transparency, assessing the defense and national security issues raised by the objects, and setting the agenda for international cooperation.
 
 | Field | Value |
 |---|---|
@@ -149,10 +137,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 | Source | [archived source](../sources/government/solfoundation-ufo-enigma-nell-2025.pdf) |
 | Location | p. 4, Executive Summary, ¶3 |
 
-> The Disclosure Act reverses this decision (which possibly violated the Federal
->        Acquisition Regulation) by directing the executive branch to invoke eminent domain over any
->        and all technology and materials that “incorporate science and technology that lack prosaic
->        attribution or known means of human manufacture.”
+> The Disclosure Act reverses this decision (which possibly violated the Federal Acquisition Regulation) by directing the executive branch to invoke eminent domain over any and all technology and materials that “incorporate science and technology that lack prosaic attribution or known means of human manufacture.”
 
 | Field | Value |
 |---|---|
@@ -160,9 +145,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 | Source | [archived source](../sources/government/solfoundation-ufo-enigma-nell-2025.pdf) |
 | Location | p. 15, ¶2 |
 
-> middle-management level in this formerly recalcitrant department, is inadequate and ill-suit-ed to addressing the national strategic objectives for which the Review Board was conceived.
-> Therefore, AARO and the Review Board are neither competitive nor redundant, but are in
-> fact complementary.
+> middle-management level in this formerly recalcitrant department, is inadequate and ill-suit-ed to addressing the national strategic objectives for which the Review Board was conceived. Therefore, AARO and the Review Board are neither competitive nor redundant, but are in fact complementary.
 
 | Field | Value |
 |---|---|

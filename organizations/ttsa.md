@@ -221,7 +221,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 ### CRADA 19-15 — OSD's contractual role sharing historical reports on origin of TTSA materiel (evidentiary link to AATIP-era records)
 
 > The other contributors for this effort are:
->    1) The Office of the Secretary of Defense (OSD) can share historical reports of findings and origin of materiel solutions in the possession of the Collaborator,
+> 1) The Office of the Secretary of Defense (OSD) can share historical reports of findings and origin of materiel solutions in the possession of the Collaborator,
 
 | Field | Value |
 |---|---|
@@ -245,9 +245,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ### Primary-source designation of Ben Soave as U.S. Government-side Principal Investigator on the TTSA CRADA, affiliated with Ground Vehicle Survivability and Protection at CCDC Ground Vehicle Systems Center.
 
-> PRINCIPAL INVESTIGATOR:
->      Ben Soave
->      Ground Vehicle Survivability and Protection (GVSP)
+> PRINCIPAL INVESTIGATOR: Ben Soave Ground Vehicle Survivability and Protection (GVSP)
 
 | Field | Value |
 |---|---|

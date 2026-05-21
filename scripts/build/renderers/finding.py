@@ -14,6 +14,7 @@ no entity-node references in the directional contract (enforced by
 
 from ._common import (
     SECTION_SEP,
+    _render_blockquote,
     _wrap_path,
     sort_by_date,
 )
@@ -72,8 +73,7 @@ def render_finding_evidence(artifact):
         h3 = q.get("significance") or "Attestation"
         text = (q.get("text") or "").rstrip("\n")
         lines = [f"### {h3}", ""]
-        for qline in text.split("\n"):
-            lines.append(f"> {qline}" if qline else ">")
+        lines.append(_render_blockquote(text))
         lines.append("")
 
         # Verification block, extended with Tier + Attestor rows

@@ -82,10 +82,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 
 ### Defense Intelligence Enterprise Posture
 
-> Chairman Gallego, Ranking Member Kelly, and distinguished members of the
-> Subcommittee, it is a privilege to testify on the current posture of the Defense Intelligence and
-> Security Enterprise in addressing the threats facing the United States of America, its allies, and
-> partners.
+> Chairman Gallego, Ranking Member Kelly, and distinguished members of the Subcommittee, it is a privilege to testify on the current posture of the Defense Intelligence and Security Enterprise in addressing the threats facing the United States of America, its allies, and partners.
 
 | Field | Value |
 |---|---|
@@ -93,9 +90,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
 | Location | p. 1, ¶3 |
 
-> As the Under Secretary of Defense for Intelligence and Security, I am committed to
-> strengthening and leveraging an integrated partnership between the Department of Defense and
-> the Intelligence Community for the defense of our nation.
+> As the Under Secretary of Defense for Intelligence and Security, I am committed to strengthening and leveraging an integrated partnership between the Department of Defense and the Intelligence Community for the defense of our nation.
 
 | Field | Value |
 |---|---|
@@ -103,14 +98,11 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
 | Location | p. 1, ¶6 |
 
-> Through our four "Big Plays," we will optimize our efforts, deliver meaningful outcomes,
-> and maintain our Nation's strategic advantage. These Big Plays are:
->          •   Providing an information and decision advantage to our leaders and warfighters;
->          •   Operationalizing our partnerships within the Department, the interagency, and our
->              allies and partners;
->          •   Elevating security awareness and counterintelligence across the Department; and,
->          •   Identifying, recruiting, training, and retaining a workforce capable of supporting the
->              Department's I&S requirements.
+> Through our four "Big Plays," we will optimize our efforts, deliver meaningful outcomes, and maintain our Nation's strategic advantage. These Big Plays are:
+> •   Providing an information and decision advantage to our leaders and warfighters;
+> •   Operationalizing our partnerships within the Department, the interagency, and our allies and partners;
+> •   Elevating security awareness and counterintelligence across the Department; and,
+> •   Identifying, recruiting, training, and retaining a workforce capable of supporting the Department's I&S requirements.
 
 | Field | Value |
 |---|---|
@@ -118,9 +110,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
 | Location | p. 2, ¶3 |
 
-> Last year, the President's $715 billion-dollar defense budget request included $23.3 billion
-> for MIP. We believe that the resources requested in this year's budget will provide another
-> opportunity to ensure our nation's strategic advantage.
+> Last year, the President's $715 billion-dollar defense budget request included $23.3 billion for MIP. We believe that the resources requested in this year's budget will provide another opportunity to ensure our nation's strategic advantage.
 
 | Field | Value |
 |---|---|
@@ -128,14 +118,10 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
 | Location | p. 2, ¶7 |
 
-> Consistent with the recommendations of the Government Accountability Office in its May
-> 2021 report regarding OUSD(I&S) oversight, we are taking the following actions to clarify and
-> update our Enterprise governance and oversight frameworks:
->          •   Revising policy and strategic guidance to establish clear expectations for oversight;
->          •   Codifying management roles and responsibilities to enable effective governance at
->              the component level;
->          •   Developing and incorporating a process to track and oversee enterprise performance
->              and enhance accountability; and
+> Consistent with the recommendations of the Government Accountability Office in its May 2021 report regarding OUSD(I&S) oversight, we are taking the following actions to clarify and update our Enterprise governance and oversight frameworks:
+> •   Revising policy and strategic guidance to establish clear expectations for oversight;
+> •   Codifying management roles and responsibilities to enable effective governance at the component level;
+> •   Developing and incorporating a process to track and oversee enterprise performance and enhance accountability; and
 
 | Field | Value |
 |---|---|

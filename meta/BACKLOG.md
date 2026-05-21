@@ -115,46 +115,6 @@ false-positives on legitimate notes and misses real cases.
 
 Renderer-touching items that batch into a single polish pass.
 
-### B1 — Quote blockquotes render broken at source line-wrapping (multi-line `>`)
-
-Quotes authored as YAML `|` literal blocks preserve the source's physical
-line-wrapping (PDF/HTML extraction wraps at ~80 cols), and the statement
-renderer (`_render_statement_block`, `renderers/_common.py`) splits quote
-text on every `\n` and prefixes each with `> ` — so a prose quote renders as
-a blockquote broken mid-sentence at the wrap points (`> …and Under` /
-`> …and Perception` / `> …tasked with`). Pervasive: 617 `|`-block quotes
-across ~39 artifacts; 20 rendered nodes carry multi-line blockquotes (sancorp
-110, aaro 77, elizondo-qfr 70, luis-elizondo 51, ousd-is 45, ipmo 31, …).
-
-Why no check caught it: the quote-text checks normalize whitespace by design
-(`verbatim_quotes` + `coverage` collapse newlines before comparing — they're
-line-structure-blind), the `boundary` check compares the node to a fresh
-render so a consistent-but-ugly output passes, and there is no blockquote
-format-structure check. The single-line-quote convention exists only for
-caption sources (`conventions.md` "Caption-tick timestamps") and was never
-generalized to PDF/HTML prose quotes; the `ronald-moultrie` template uses
-`|` blocks, so the pattern propagated.
-
-Non-bandaid fix — all four parts:
-1. **Renderer reflow.** `_render_statement_block` reflows intra-paragraph
-   soft-wrap newlines to one `> ` line (space-join) while PRESERVING
-   intentional structure — blank-line-separated paragraphs stay separate
-   blockquote paragraphs; bulleted/indented list lines stay broken (e.g.
-   ronald-moultrie q3 "Big Plays"). Needs a wrap-vs-structure heuristic + tests
-   so structured quotes aren't flattened.
-2. **Convention.** Generalize the single-line / no-`|`-for-prose rule from
-   captions to all prose quotes; state that extraction line-wrapping is
-   collapsed at render.
-3. **A check** to close the gap so it can't regress — flag a rendered
-   blockquote that breaks mid-sentence (or quote text carrying mid-prose
-   soft-wrap newlines). Mirrors the existing `yaml_colon_space` format-hygiene
-   check. This is the direct remedy for "no check caught it."
-4. **Corpus rebuild.** Renderer-touching → rebuild all quote-bearing nodes
-   (the boundary check forces it); the diff reflows ~617 quotes across 20
-   nodes.
-
-Surfaced by the james-holly node review.
-
 ### B2 — `''` escaping artifacts leak into rendered label / attribution cells
 
 A YAML scalar that is **unquoted** but contains a doubled apostrophe

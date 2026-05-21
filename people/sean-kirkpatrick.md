@@ -356,8 +356,7 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶9 |
 
-> BLUF: Both briefs were well attended and went well. Dr. Kirkpatrick attended
-> the first brief and the majority of the second brief.
+> BLUF: Both briefs were well attended and went well. Dr. Kirkpatrick attended the first brief and the majority of the second brief.
 
 | Field | Value |
 |---|---|

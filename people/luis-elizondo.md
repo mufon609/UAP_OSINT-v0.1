@@ -79,14 +79,7 @@ _Direct observation._
 
 ### AATIP Role & Recruitment
 
-> [3:52] uh I got
-> [3:54] there in 2008 uh it was probably early
-> [3:57] 2009 is when I was approached by two
-> [3:59] individuals who came to me and they said
-> [4:02] look um we'd like to consider you for
-> [4:04] for for a program that we're we're part
-> [4:07] of um it's a very nuanced program very
-> [4:10] secretive program
+> [3:52] uh I got [3:54] there in 2008 uh it was probably early [3:57] 2009 is when I was approached by two [3:59] individuals who came to me and they said [4:02] look um we'd like to consider you for [4:04] for for a program that we're we're part [4:07] of um it's a very nuanced program very [4:10] secretive program
 
 | Field | Value |
 |---|---|
@@ -96,17 +89,7 @@ _Direct observation._
 
 _Direct observation._
 
-> [5:53] but
-> [5:55] I went there and I went up to the to the
-> [5:57] top floor uh I think it was the top
-> [5:59] floor almost the top floor and I met for
-> [6:02] the first time a gentleman named James
-> [6:04] latky Dr James latsky PhD and this guy
-> [6:08] was the epitome of a rocket scientist um
-> [6:11] and when I say the epitome I mean he was
-> [6:13] probably and there's no exaggeration the
-> [6:15] number one rocket scientist in the US
-> [6:17] government
+> [5:53] but [5:55] I went there and I went up to the to the [5:57] top floor uh I think it was the top [5:59] floor almost the top floor and I met for [6:02] the first time a gentleman named James [6:04] latky Dr James latsky PhD and this guy [6:08] was the epitome of a rocket scientist um [6:11] and when I say the epitome I mean he was [6:13] probably and there's no exaggeration the [6:15] number one rocket scientist in the US [6:17] government
 
 | Field | Value |
 |---|---|
@@ -116,13 +99,7 @@ _Direct observation._
 
 _Direct observation._
 
-> Yes. I served as the senior ranking person of the Advanced Aerospace Threat
-> Identification Program ("AATIP") within the Department of Defense ("DoD"). AATIP
-> investigated unidentified anomalous phenomena ("UAP"). AATIP engaged senior
-> executives at DoD Defense aerospace companies who claimed they possessed recovered
-> "exotic material" not made by any U.S. or foreign source. Because these executives
-> indicated that they could no longer glean additional insight from such material, they initially
-> agreed to allow AATIP/AAWSAP to take custody of the material.
+> Yes. I served as the senior ranking person of the Advanced Aerospace Threat Identification Program ("AATIP") within the Department of Defense ("DoD"). AATIP investigated unidentified anomalous phenomena ("UAP"). AATIP engaged senior executives at DoD Defense aerospace companies who claimed they possessed recovered "exotic material" not made by any U.S. or foreign source. Because these executives indicated that they could no longer glean additional insight from such material, they initially agreed to allow AATIP/AAWSAP to take custody of the material.
 
 | Field | Value |
 |---|---|
@@ -136,11 +113,7 @@ _Direct observation._
 
 ### Personal Disposition Toward UFOs
 
-> [7:18] I've never been a UFO guy you know people come up
-> [7:21] like oh you're that UFO guy I'm really
-> [7:23] not I I was never really into science
-> [7:25] fiction as a kid um I wasn't into the
-> [7:28] Star Trek or the Star Wars
+> [7:18] I've never been a UFO guy you know people come up [7:21] like oh you're that UFO guy I'm really [7:23] not I I was never really into science [7:25] fiction as a kid um I wasn't into the [7:28] Star Trek or the Star Wars
 
 | Field | Value |
 |---|---|
@@ -152,8 +125,7 @@ _Direct observation._
 
 ### Recovered Non-Human Material
 
-> Yes. The U.S. Government (or a defense contractor) has in its possession exotic
-> materials of nonhuman origin.
+> Yes. The U.S. Government (or a defense contractor) has in its possession exotic materials of nonhuman origin.
 
 | Field | Value |
 |---|---|
@@ -161,9 +133,7 @@ _Direct observation._
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q2, ¶1 |
 
-> (a) Yes. I am aware of several incidents where the U.S. military and certain Defense
-> Contract companies recovered craft/vehicles of non-human origin. In some cases, biological
-> specimens were recovered from such crashes.
+> (a) Yes. I am aware of several incidents where the U.S. military and certain Defense Contract companies recovered craft/vehicles of non-human origin. In some cases, biological specimens were recovered from such crashes.
 
 | Field | Value |
 |---|---|
@@ -173,11 +143,7 @@ _Direct observation._
 
 ### 2004 White House Disclosure Decision
 
-> Several key scientists associated with both AAWSAP and AATIP were part of a
-> conversation, sponsored by the White House in approximately 2004, to determine if the U.S.
-> public was prepared for the acknowledgement of UAP by the U.S. Government. After
-> approximately one week of deliberations, the decision was made that the U.S. Government
-> should not disclose any UAP-related information to the public.
+> Several key scientists associated with both AAWSAP and AATIP were part of a conversation, sponsored by the White House in approximately 2004, to determine if the U.S. public was prepared for the acknowledgement of UAP by the U.S. Government. After approximately one week of deliberations, the decision was made that the U.S. Government should not disclose any UAP-related information to the public.
 
 | Field | Value |
 |---|---|
@@ -187,8 +153,7 @@ _Direct observation._
 
 ### Lockheed-Bigelow Transfer & PAX River Hangar
 
-> Yes. The CIA opposed the transfer of materials of advanced, non-human origin
-> from Lockheed Martin to Bigelow Aerospace.
+> Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace.
 
 | Field | Value |
 |---|---|
@@ -196,14 +161,7 @@ _Direct observation._
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q6, ¶1 |
 
-> Yes. I can confirm that specific facilities were identified to enable Bigelow
-> Aerospace to acquire and securely store recovered UAP materials as the new custodian,
-> following their transfer from Lockheed Martin. These facilities included locations in the Las
-> Vegas area and a newly built hangar at the Patuxent River Naval Air Station (“PAX”).
-> Specifically, the PAX River hangar was designed to facilitate the transfer of future materials
-> via air and river. The hangar was purpose-built to meet the requirements of a Special Access
-> Program Facility (“SAP-F”) and was capable of accommodating materials at any
-> classification level. I was informed that funding for the hangar, approximately $10 million,
+> Yes. I can confirm that specific facilities were identified to enable Bigelow Aerospace to acquire and securely store recovered UAP materials as the new custodian, following their transfer from Lockheed Martin. These facilities included locations in the Las Vegas area and a newly built hangar at the Patuxent River Naval Air Station (“PAX”). Specifically, the PAX River hangar was designed to facilitate the transfer of future materials via air and river. The hangar was purpose-built to meet the requirements of a Special Access Program Facility (“SAP-F”) and was capable of accommodating materials at any classification level. I was informed that funding for the hangar, approximately $10 million,
 
 | Field | Value |
 |---|---|
@@ -211,8 +169,7 @@ _Direct observation._
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (first half — pre-page-break) |
 
-> was allocated at the request of then-Representative Steny Hoyer. I have visited this facility;
-> however, as it was a new construction at the time, no materials had yet been transferred.
+> was allocated at the request of then-Representative Steny Hoyer. I have visited this facility; however, as it was a new construction at the time, no materials had yet been transferred.
 
 | Field | Value |
 |---|---|
@@ -224,10 +181,7 @@ _Direct observation._
 
 ### CIA & Air Force Obstruction
 
-> Yes, and similar obstructionist efforts were also made by the U.S. Air Force.
-> There seemed to be passive resistance from certain elements within the Central Intelligence
-> Agency and a more active campaign by specific factions within the U.S. Air Force to
-> suppress inquiries and investigations into the UAP topic
+> Yes, and similar obstructionist efforts were also made by the U.S. Air Force. There seemed to be passive resistance from certain elements within the Central Intelligence Agency and a more active campaign by specific factions within the U.S. Air Force to suppress inquiries and investigations into the UAP topic
 
 | Field | Value |
 |---|---|
@@ -237,12 +191,7 @@ _Direct observation._
 
 ### Retaliation Against UAP Advocates
 
-> Yes. Many of my former colleagues and I have faced retaliation for our public
-> advocacy for UAP transparency. This has included efforts to suspend or revoke our security
-> clearances, as well as direct threats to our safety and that of our families. Some elements
-> within the DoD and the Intelligence Community ("IC") have engaged in what can only be
-> described as 'administrative terrorism' to deter individuals with security clearances from
-> raising this issue.
+> Yes. Many of my former colleagues and I have faced retaliation for our public advocacy for UAP transparency. This has included efforts to suspend or revoke our security clearances, as well as direct threats to our safety and that of our families. Some elements within the DoD and the Intelligence Community ("IC") have engaged in what can only be described as 'administrative terrorism' to deter individuals with security clearances from raising this issue.
 
 | Field | Value |
 |---|---|
