@@ -45,7 +45,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/james-holly`] | Acting Director | 2022-03 – 2023-10 | government/notre-dame-ipmo-memo-20220527.pdf | First Acting Director of IPMO from establishment per the Notre Dame memorandum signed by James A. Holly on May 27, 2022. |
+| [`/people/james-holly`] | Acting Director | 2022-03 – 2024-05 | government/notre-dame-ipmo-memo-20220527.pdf | First Acting Director of IPMO from establishment per the Notre Dame memorandum signed by James A. Holly on May 27, 2022. Per Defense One, Holly leads the office at the SOF Week 2024 panel. |
 
 ---
 
