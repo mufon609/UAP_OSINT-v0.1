@@ -810,6 +810,15 @@
     archived_date: '2026-05-16'
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
     note: 'AAWSAP DIRD Black Vault #24 — ''Concepts for Extracting Energy From the Quantum Vacuum'', DIA-08-1004-007, ICOD 1 December 2009, dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. Author: Dr. Eric W. Davis, EarthTech International (per DIA January 2018 SASC letter naming the AAWSAP DIRD authors). The Acknowledgements section names 13 technical and useful-input contributors including H. E. Puthoff (EarthTech, Int''l) — primary-source attestation that Puthoff was an acknowledged technical contributor to a second AAWSAP DIRD beyond his own authored DIRD #15. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata: ''Adobe Acrobat 9.55 Paper Capture Plug-in'' — OCR''d document; per-quote OCR artifacts preserved as naming_quirks entries on consuming artifacts per meta/conventions.md OCR-scan source-form discipline.'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-24-quantum-vacuum-energy-extraction-2010.txt
+    archived_date: '2026-05-21'
+    note: 'Clean-text sibling of the OCR-scanned AAWSAP DIRD #24 PDF (paired entry; same path stem; parent flagged extraction_type=ocr-scan). Produced 2026-05-21 via Tesseract 5 LSTM local OCR (pdftoppm 300dpi page rasters) — the VLM page-image path was content-filter-blocked for this source, so a non-generative OCR engine was used per meta/conventions.md sibling-production method standard. Tesseract prose is clean and quotable; equations and struck-through classification banners render garbled but are never quoted. The quoted regions were image-verified by the orchestrator against the source pages (PDF p.3 title/admin-note + PDF p.48 / printed p.41 Acknowledgements): 7 OCR extraction artifacts (FOIA-marker brace/pipe slips; Acknowledgements bracket slips incl. ''M. [bison''->''M. Ibison'') recovered to human-visible text. Unquoted regions, equations, and banners remain Tesseract-raw per the preserve-don''t-strip fidelity discipline.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_25-DIRD_An_Introduction_to_the_Statistical_Drake_Equation.pdf
   status: archived
   artifacts:
