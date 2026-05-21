@@ -27,21 +27,9 @@ created: 2026-04-20
 
 ## Description
 
-One of three unclassified Navy ([`/organizations/us-navy`]) videos the Department of Defense ([`/organizations/dod`]) authorized for release on April 27, 2020. Taken in November 2004. Had been circulating in the public domain after unauthorized releases in 2007 and 2017. The aerial phenomena observed in the videos remain characterized as unidentified. Released at the Naval Air Systems Command FOIA Reading Room.
+One of three unclassified Navy ([`/organizations/us-navy`]) videos the Department of Defense ([`/organizations/dod`]) authorized for release on April 27, 2020. Taken in November 2004, it had been circulating in the public domain after unauthorized releases in 2007 and 2017. The aerial phenomena observed in the videos remain characterized as unidentified. Released at the Naval Air Systems Command FOIA Reading Room.
 
 [`/events/2004-nimitz-encounter`] [`/organizations/uss-nimitz`] [`/organizations/ttsa`] [`/people/david-fravor`] [`/people/alex-dietrich`] [`/documents/written-testimony-fravor-2023`] [`/transcripts/2023-07-26-house-fravor`]
-
----
-
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Captured by F/A-18F targeting pod during 2004 USS Nimitz UAP encounter | 2004-11 | U.S. Navy (per David Fravor's 2023 written testimony ¶7; the crew that captured the video launched after Fravor's flight returned to the Nimitz) | ⏳ Pending — capture attested by Fravor; specific crew member named orally as "Chad" (oral q34); see research_gap rg4 |
-| MP4 container encoded; first unauthorized release into public domain (per DoD 2020 statement acknowledging "unauthorized releases in 2007") | 2007-09-18 | Unknown — specific venue of 2007 circulation not identified in archived primary sources; see research_gap rg3 | ✅ Confirmed — mvhd version 0 creation_time parsed from sources/video/1 - FLIR.mp4 (sha256 eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170); DoD 2020 press release acknowledges 2007 unauthorized release |
-| Second unauthorized release — video circulated alongside To the Stars Academy ([`/organizations/ttsa`]) / New York Times December 2017 reporting | 2017-12 | To the Stars Academy distribution chain per David Fravor's 2023 testimony | ⏳ Pending — "unauthorized releases in 2017" acknowledged by DoD; TTSA's specific role in that release is attested by Fravor testimony but not by an independent primary source archived in this repository |
-| Authorized declassified release by Department of Defense via Naval Air Systems Command FOIA Reading Room | 2020-04-27 | Department of Defense ([`/organizations/dod`]) | ✅ Confirmed — archived DoD press release (government/defense-gov-dod-uap-video-release-20200427.html); file retrieved from https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4 |
-| Archived locally | 2026-04-20 | UAP_OSINT-v0.1 repository | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 
 ---
 

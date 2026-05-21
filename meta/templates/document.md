@@ -52,19 +52,6 @@ archival_status: {{archival_status}}
 
 ---
 
-<!-- KIND: gov-doc -->
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-|  |  |  |  |
-
-<!-- Custody chain. Each transfer row has a Verified field; mark ✅ only
-     when the transfer mechanism is documented in a linked primary source. -->
-
----
-<!-- /KIND -->
-
 <!-- Author info for document nodes lives in document_intrinsic.authors_per_document
      on the research artifact and renders as the Author row in Document Summary.
      No separate Authors section needed. Applies to all document kinds

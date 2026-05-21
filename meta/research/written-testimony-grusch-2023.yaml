@@ -42,19 +42,6 @@ context_extrinsic:
   hearing_date: July 26, 2023
   primary_source_url: https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf
   quote_attribution: David Grusch, written testimony, submitted July 26, 2023
-  provenance:
-  - step: Statement authored
-    date: '2023-07-23'
-    entity: David Charles Grusch
-    verified: '✅ Confirmed — PDF metadata CreationDate: Sun Jul 23 14:41:22 2023 EDT; document body in first person identifies author as ''David Charles Grusch''. PDF Author metadata field ''gscie'' is a staffer/office identifier, not a content-author attribution — see research_gap rg4.'
-  - step: Submitted to Committee
-    date: '2023-07-26'
-    entity: House Oversight Subcommittee on National Security, the Border, and Foreign Affairs
-    verified: ✅ Confirmed — hosted at oversight.house.gov
-  - step: Archived locally
-    date: '2026-04-17'
-    entity: UAP_OSINT-v0.1 repository
-    verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes:
 - id: q1
   added_date: '2026-04-20'

@@ -161,11 +161,6 @@ Fields used by `build-from-research.py` when rendering document nodes
 - `primary_source_url` — original upstream URL
 - `quote_attribution` — string used as each Key Passage's
   "Attributed to" field (typically `"{Speaker}, {occasion}, {date}"`)
-- `provenance` — list of custody-chain steps; each step is a dict with
-  `step`, `date`, `entity`, `verified` keys. Rendered as the
-  Provenance table (gov-doc nodes only). **`date` values use ISO
-  format (`YYYY-MM-DD`)** — the renderer passes them through verbatim;
-  ISO keeps provenance sortable and unambiguous across documents.
 
 ### Step 5. Populate `description` (and other free-prose fields)
 
@@ -581,7 +576,6 @@ This:
    - `## Document Summary` — from `document_intrinsic` +
      `context_extrinsic` + `primary_sources[0]`
    - `## Description` — from `description`
-   - `## Provenance` (gov-doc only) — from `context_extrinsic.provenance`
    - `## Key Passages` — from `quotes` (verification block per quote).
      Document nodes' sole evidentiary layer — no `## What This
      Establishes` table (see `meta/conventions.md` "Three-layer
@@ -658,7 +652,6 @@ This:
      either alone otherwise — typical for video / audio / photo
      respectively). Empty values skipped.
    - `## Description` — from `description`
-   - `## Provenance` — from `context_extrinsic.provenance`
    - `## Media Versioning` — conditional; emits when artifact has
      entries OR frontmatter has `derivation_of` set. From
      `media_versioning[]` (Aspect / Parent / This / Source / Note).

@@ -15,7 +15,6 @@ from ._universal import (
     render_associated_nodes,
     render_description,
     render_preserved_disagreements,
-    render_provenance,
     render_source_form_notes,
 )
 
@@ -124,8 +123,6 @@ def render_body_document(artifact, node_kind):
         render_document_summary(artifact),
         render_description(artifact),
     ]
-    if node_kind == "gov-doc":
-        sections.append(render_provenance(artifact))
     sections.extend([
         render_key_passages(artifact),
         render_source_form_notes(artifact),

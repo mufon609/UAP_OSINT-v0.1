@@ -36,17 +36,6 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Signed at THE WHITE HOUSE | 2025-09-05 | The President of the United States | ✅ Confirmed — internal_date "September 5, 2025" printed in EO header; signature block "THE WHITE HOUSE, September 5, 2025." |
-| Filed with the Federal Register | 2025-09-09 | Office of the Federal Register | ✅ Confirmed — "[FR Doc. 2025-17508 Filed 9-9-25; 11:15 am]" printed at end of EO body |
-| Published in the Federal Register Volume 90, Number 173 (Wednesday, September 10, 2025), pages 43893-43894 | 2025-09-10 | Government Publishing Office | ✅ Confirmed — "Federal Register / Vol. 90, No. 173 / Wednesday, September 10, 2025 / Presidential Documents" header printed on document |
-| Archived locally | 2026-04-30 | sources/government/eo-14347-restoring-department-of-war-20250910.txt | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Constitutional preamble — vests authority in the President under the Constitution and the laws of the United States. Standard Executive Order opening.

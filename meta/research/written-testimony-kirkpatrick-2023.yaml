@@ -44,23 +44,6 @@ context_extrinsic:
   quote_attribution: Sean Kirkpatrick, written testimony, submitted April 19, 2023
   event_node: /events/2023-04-19-sasc-aaro-hearing
   companion_oral_transcript: /transcripts/2023-04-19-sasc-kirkpatrick
-  provenance:
-  - step: Statement drafted in Word
-    date: '2023-04-18'
-    entity: 'Kieran-Kaufman, Shana (CTR OSD OUSD Intel)'
-    verified: '✅ Confirmed — PDF metadata Author: "Kieran-Kaufman, Shana  CTR OSD OUSD Intel"; Producer: Microsoft Word for Microsoft 365; CreationDate Tue Apr 18 18:28:12 2023 EDT — contractor inside OUSD(I&S) drafted the document the day before the hearing'
-  - step: Submitted to Subcommittee
-    date: '2023-04-19'
-    entity: Senate Armed Services Subcommittee on Emerging Threats and Capabilities
-    verified: ✅ Confirmed — hosted at armed-services.senate.gov
-  - step: Archived locally
-    date: '2026-04-28'
-    entity: Repository contributor
-    verified: '✅ Confirmed — sources/manifest.yaml entry path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf'
-  - step: SHA256 verified
-    date: '2026-04-28'
-    entity: scripts/tools/manifest.py verify-checksums
-    verified: ✅ Confirmed — SHA256 fcf53c2d6c97042e943302a6050486f43102de6fe235ae7f5d38da1bbbe7a7c7 matches archived file
 quotes:
 - id: q1
   added_date: '2026-04-28'

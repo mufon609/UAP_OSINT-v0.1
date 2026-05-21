@@ -39,19 +39,6 @@ context_extrinsic:
   hearing_date: July 26, 2023
   primary_source_url: https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-GravesR-20230726.pdf
   quote_attribution: Ryan Graves, written testimony, submitted July 26, 2023
-  provenance:
-  - step: Posted to committee site
-    date: '2023-07-25'
-    entity: House Oversight Subcommittee on National Security, the Border, and Foreign Affairs
-    verified: ✅ Confirmed — docs.house.gov hearing-event page (116282) records the Witness Statement PDF as 'Added 07/25/2023 at 02:21 PM'
-  - step: Submitted to hearing record
-    date: '2023-07-26'
-    entity: House Oversight Subcommittee on National Security, the Border, and Foreign Affairs
-    verified: ✅ Confirmed — hearing held 2023-07-26; document listed on committee repository
-  - step: Archived locally
-    date: '2026-04-17'
-    entity: UAP_OSINT-v0.1 repository
-    verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes:
 - id: q1
   added_date: '2026-04-17'

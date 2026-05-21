@@ -39,23 +39,6 @@ context_extrinsic:
   signed_date: 'September 5, 2025'
   signed_at: 'THE WHITE HOUSE'
   quote_attribution: 'Executive Order 14347 of September 5, 2025 (90 FR 43893-43894)'
-  provenance:
-    - step: 'Signed at THE WHITE HOUSE'
-      date: '2025-09-05'
-      entity: 'The President of the United States'
-      verified: '✅ Confirmed — internal_date "September 5, 2025" printed in EO header; signature block "THE WHITE HOUSE, September 5, 2025."'
-    - step: 'Filed with the Federal Register'
-      date: '2025-09-09'
-      entity: 'Office of the Federal Register'
-      verified: '✅ Confirmed — "[FR Doc. 2025-17508 Filed 9-9-25; 11:15 am]" printed at end of EO body'
-    - step: 'Published in the Federal Register Volume 90, Number 173 (Wednesday, September 10, 2025), pages 43893-43894'
-      date: '2025-09-10'
-      entity: 'Government Publishing Office'
-      verified: '✅ Confirmed — "Federal Register / Vol. 90, No. 173 / Wednesday, September 10, 2025 / Presidential Documents" header printed on document'
-    - step: 'Archived locally'
-      date: '2026-04-30'
-      entity: 'sources/government/eo-14347-restoring-department-of-war-20250910.txt'
-      verified: '✅ Confirmed — SHA256 verified via sources/manifest.yaml'
 quotes:
 - id: q1
   added_date: '2026-05-03'

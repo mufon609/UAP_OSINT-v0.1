@@ -38,16 +38,6 @@ Grusch's Closing Statement: a conviction to expose what Grusch viewed as a grave
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Statement authored | 2023-07-23 | David Charles Grusch | ✅ Confirmed — PDF metadata CreationDate: Sun Jul 23 14:41:22 2023 EDT; document body in first person identifies author as 'David Charles Grusch'. PDF Author metadata field 'gscie' is a staffer/office identifier, not a content-author attribution — see research_gap rg4. |
-| Submitted to Committee | 2023-07-26 | House Oversight Subcommittee on National Security, the Border, and Foreign Affairs | ✅ Confirmed — hosted at oversight.house.gov |
-| Archived locally | 2026-04-17 | UAP_OSINT-v0.1 repository | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Opening — identity, rank, agencies, service span

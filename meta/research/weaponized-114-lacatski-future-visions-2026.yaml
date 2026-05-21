@@ -54,7 +54,6 @@ context_extrinsic:
   topic: 'Promotional interview for Lacatski''s fourth and final book Future Visions (2026)'
   primary_source_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
   transcript_provenance: auto-caption
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   quote_attribution: 'Dr. James Lacatski, WEAPONIZED Episode 114 with George Knapp and Jeremy Corbell, April 8, 2026'
 speakers:
 - id: s1

@@ -18,7 +18,6 @@ source_medium: youtube
 | Host(s) / Interviewer(s) | George Knapp + Jeremy Corbell |
 | Source Medium | youtube |
 | Source URL | https://www.youtube.com/watch?v=rW02-PuPMJ8 |
-| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 
 ---
 

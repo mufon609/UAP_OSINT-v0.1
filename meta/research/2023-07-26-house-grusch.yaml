@@ -46,7 +46,6 @@ context_extrinsic:
   witness: David Grusch
   oath_status: sworn
   primary_source_url: https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   event_node: /events/2023-07-26-house-uap-hearing
   companion_written_testimony: /documents/written-testimony-grusch-2023
   quote_attribution: David Grusch, sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023

@@ -52,7 +52,6 @@ context_extrinsic:
   witness: Sean Kirkpatrick
   oath_status: unknown
   primary_source_url: https://www.armed-services.senate.gov/download/transcript-4-19-2023
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   event_node: /events/2023-04-19-sasc-aaro-hearing
   companion_written_testimony: /documents/written-testimony-kirkpatrick-2023
   quote_attribution: Sean Kirkpatrick, oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO hearing, April 19, 2023

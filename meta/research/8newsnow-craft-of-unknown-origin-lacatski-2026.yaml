@@ -38,7 +38,6 @@ context_extrinsic:
   topic: 'Promotional news segment for Lacatski''s fourth book "Future Visions"'
   primary_source_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
   transcript_provenance: auto-caption
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   quote_attribution: 'Dr. James Lacatski, 8 News Now / KLAS-TV news segment by George Knapp, April 6, 2026'
 speakers:
 - id: s1

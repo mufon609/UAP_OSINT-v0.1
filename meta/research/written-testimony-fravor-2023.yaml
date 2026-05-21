@@ -36,19 +36,6 @@ context_extrinsic:
   hearing_date: July 26, 2023
   primary_source_url: https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf
   quote_attribution: David Fravor, written testimony, submitted July 26, 2023
-  provenance:
-  - step: Statement authored
-    date: '2023-07-25'
-    entity: David Fravor
-    verified: '✅ Confirmed — PDF metadata CreationDate: Tue Jul 25 14:16:09 2023 EDT; author field ''DMF DMF'' (initials match David M. Fravor)'
-  - step: Submitted to Committee
-    date: '2023-07-26'
-    entity: House Oversight Subcommittee on National Security, the Border, and Foreign Affairs
-    verified: ✅ Confirmed — hosted at oversight.house.gov
-  - step: Archived locally
-    date: '2026-04-17'
-    entity: UAP_OSINT-v0.1 repository
-    verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes:
 - id: q1
   added_date: '2026-04-17'

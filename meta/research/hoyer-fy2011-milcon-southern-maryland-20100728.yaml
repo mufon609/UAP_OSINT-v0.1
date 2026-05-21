@@ -22,19 +22,6 @@ context_extrinsic:
   display_title: 'Hoyer FY2011 MILCON Southern Maryland Press Release (July 28, 2010)'
   primary_source_url: 'https://hoyer.house.gov/content/hoyer-announces-investments-southern-maryland-military-facilities'
   quote_attribution: 'Congressman Steny H. Hoyer (MD-5) press release, July 28, 2010, "Hoyer Announces Investments in Southern Maryland Military Facilities"'
-  provenance:
-    - step: 'Issued by Congressman Steny H. Hoyer (MD-5) congressional office, Washington, DC'
-      date: '2010-07-28'
-      entity: 'Congressman Steny H. Hoyer (MD-5)'
-      verified: '✅ Confirmed — internal_date "July 28, 2010" printed in press release header'
-    - step: 'Hosted on hoyer.house.gov'
-      date: '2010-07-28'
-      entity: 'Hoyer congressional office'
-      verified: '✅ Confirmed — hoyer.house.gov canonical URL'
-    - step: 'Archived locally'
-      date: '2026-05-07'
-      entity: 'sources/government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html'
-      verified: '✅ Confirmed — SHA256 verified via sources/manifest.yaml'
 
 description: 'Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of July 28, 2010 announced Military Construction projects in the Fiscal Year 2011 Military Construction and Veterans Affairs Appropriations Act approved today by the House. Funding will go to the Naval Air Station, Patuxent River ([`/locations/patuxent-river-nas`]) and the Naval Surface Warfare Center, Indian Head, Maryland. The Atlantic Test Range Addition at Naval Air Station, Patuxent River — $10,160,000 — was included in this bill at Hoyer''s request. Funding will be used to construct an addition to the existing Atlantic Test Range, the only Naval Test and Evaluation Range on the East Coast, to house new control rooms for Unmanned Air Vehicles, intelligence data acquisition laboratory spaces, as well as Sensitive Compartmented Information Facility areas. The additional three projects were included in the President''s Budget and strongly supported by Hoyer: Agile Chemical Facility at the Naval Surface Warfare Center, Indian Head ($34,238,000); BAMS Test and Evaluation Facility at Patuxent River ($42,211,000); and Tactical UAS Facility at Patuxent River ($5,500,000) — an Unmanned Aerial System Training Facility for the Army National Guard at Webster Field.
 

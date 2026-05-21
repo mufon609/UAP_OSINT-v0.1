@@ -42,7 +42,6 @@ context_extrinsic:
   topic: 'Promotional interview for "Inside the US Government Covert UFO Program: Initial Revelations" (Lacatski / Kelleher / Knapp, 2023)'
   primary_source_url: https://www.youtube.com/watch?v=ow7FqiegixQ
   transcript_provenance: auto-caption
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   quote_attribution: 'Dr. James Lacatski (and Dr. Colm Kelleher), WEAPONIZED Episode 38 with George Knapp and Jeremy Corbell, October 16, 2023'
 speakers:
 - id: s1

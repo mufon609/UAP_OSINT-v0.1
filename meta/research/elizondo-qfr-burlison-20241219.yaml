@@ -23,23 +23,6 @@ context_extrinsic:
   hearing_date: '2024-11-13'
   primary_source_url: 'https://douglasjohnson.ghost.io/content/files/2025/02/House-Oversight-QFR-Elizondo--Dec.-2024-.pdf'
   quote_attribution: 'Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024'
-  provenance:
-    - step: 'QFR letter signed by subcommittee chairs Nancy Mace and Glenn Grothman, transmitting Burlison''s questions to Elizondo'
-      date: '2024-12-09'
-      entity: 'House Committee on Oversight and Accountability — Subcommittee on Cybersecurity, Information Technology, and Government Innovation; Subcommittee on National Security, the Border, and Foreign Affairs'
-      verified: '✅ Confirmed — cover letter dated December 9, 2024 printed in document'
-    - step: 'Elizondo signs and submits response by Federal Express and electronic mail'
-      date: '2024-12-19'
-      entity: 'Luis D. Elizondo, P.O. Box 337, Buffalo, WY 82834'
-      verified: '✅ Confirmed — internal_date "December 19, 2024" printed in response header; signature block "Luis D. Elizondo" at end of response'
-    - step: 'Hosted on Douglas Johnson''s ghost.io blog CDN as public mirror'
-      date: '2025-02'
-      entity: 'Douglas Johnson'
-      verified: '✅ Confirmed — docs.house.gov canonical path /meetings/GO/GO12/20241113/117721/HHRG-118-GO12-QFR-ElizondoL.pdf returns 404; the Douglas Johnson mirror is the public-record route per sources/manifest.yaml note'
-    - step: 'Archived locally'
-      date: '2026-05-07'
-      entity: 'sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf'
-      verified: '✅ Confirmed — SHA256 verified via sources/manifest.yaml'
 
 description: 'Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to Rep. Eric Burlison ([`/people/eric-burlison`]) dated December 19, 2024, following the November 13, 2024 joint subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth" before the House Committee on Oversight and Accountability ([`/events/2024-11-13-house-oversight-uap-hearing`]). Elizondo responses to 11 questions are presented at the UNCLASSIFIED level. Question 1: Yes — possession by U.S. government or defense contractors of recovered material. The response reads in part a DOPSR cleared statement by Dr. James Lacatski ([`/people/james-lacatski`]) — former Director of AAWSAP ([`/organizations/aawsap`]) — that identified Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]). Question 6: Yes — the CIA ([`/organizations/cia`]) opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace ([`/organizations/bigelow-aerospace`]). Question 7: a newly built hangar at the Patuxent River Naval Air Station ([`/locations/patuxent-river-nas`]) — purpose-built to meet the requirements of a Special Access Program Facility — with approximately $10 million funding allocated at the request of then-Representative Steny Hoyer ([`/people/steny-hoyer`]); Elizondo has visited this facility. Question 11: the $22 million funding AAWSAP / AATIP ([`/organizations/aatip`]) was directed to programmatic needs including thirty-seven Defense Intelligence Reference Documents.
 

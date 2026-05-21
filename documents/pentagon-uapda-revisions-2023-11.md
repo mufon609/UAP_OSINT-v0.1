@@ -33,19 +33,6 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Markup prepared by OUSD(I&S) after conferring with NARA/ISOO | 2023-11 | Office of the Under Secretary of Defense for Intelligence and Security | ✅ Confirmed — cover page "Reviewed by" attribution line names OUSD(I&S); "DoD Position" statement confirms NARA/ISOO consultation (q3 verbatim) |
-| Submitted to congressional negotiators during end-stage FY 2024 NDAA negotiations | 2023-11 | Office of the Under Secretary of Defense for Intelligence and Security | ✅ Confirmed — Douglas Johnson Ghost analysis (July 24, 2024) cites the late-November 2023 transmission to Capitol Hill negotiators based on file-data forensics on the OUSD(I&S) document |
-| Public Law 118-31 enacted; OUSD(I&S) markup language largely incorporated into final FY 2024 NDAA UAP-related provisions | 2023-12-22 | U.S. Congress / White House signature | ✅ Confirmed — public law record. Per Douglas Johnson Ghost analysis, "the final enacted language reflected the Department's basic viewpoint on major points, although not on every detail" |
-| Sean Kirkpatrick acknowledges authenticity by email to Douglas Johnson — "the document does represent many of the objections I tried to articulate to Marik [von Rennenkampff, in the July 17, 2024 interview]" | 2024-07-23 | Sean Kirkpatrick | ✅ Confirmed — verbatim email quoted by Douglas Johnson in his July 24, 2024 Ghost analysis |
-| First public release of the 33-page markup PDF via Douglas Johnson Ghost analysis (10:00 AM EDT) | 2024-07-24 | Douglas Johnson | ✅ Confirmed — Ghost article published at douglasjohnson.ghost.io archived at news/douglas-johnson-uapda-pentagon-rewrite-20240724.html |
-| Local archive at government/pentagon-uapda-proposed-revisions-202311.pdf with sha256 integrity verification per sources/manifest.yaml | 2026-04-28 | Repository archival pipeline | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Document title — establishes the markup as OUSD(I&S) "Informal views" on Division G of S. 2226 (the FY24 NDAA Senate bill which carried the Schumer-Rounds UAPDA as Division G). The "informal views" framing positions the document as an executive-branch review submitted to congressional negotiators, not a formal legislative response.

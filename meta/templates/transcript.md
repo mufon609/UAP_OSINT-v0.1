@@ -46,7 +46,6 @@ derived_from: {{derived_from}}
 | Witness |  |
 | Oath Status |  |
 | Transcript URL |  |
-| Transcript Verified |  |
 | Event Node |  |
 | Companion Written Testimony |  |
 <!-- /KIND -->
@@ -60,7 +59,6 @@ derived_from: {{derived_from}}
 | Source Medium |  |
 | Underlying Media Node |  |
 | Source URL |  |
-| Transcript Verified |  |
 | Citation Style |  |
 <!-- /KIND -->
 

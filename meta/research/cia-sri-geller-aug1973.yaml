@@ -26,31 +26,6 @@ context_extrinsic:
   display_title: 'CIA SRI Geller Experiments — August 4-11, 1973 (CIA-RDP79-00999A000300030027-0)'
   primary_source_url: https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000300030027-0.pdf
   quote_attribution: 'R. Targ, ''EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973'', CIA-RDP79-00999A000300030027-0, August 13, 1973'
-  provenance:
-  - step: Experiments conducted at SRI
-    date: '1973-08-04'
-    entity: SRI Life Sciences Division (Aug 4-8) + SRI Engineering building computer facilities (Aug 9-11), Menlo Park, California
-    verified: ✅ Confirmed — document attests an eight-day experimental period August 4-11, 1973
-  - step: Cover memo authored
-    date: '1973-08-13'
-    entity: R. Targ
-    verified: ✅ Confirmed — document page header carries 'August 13, 1973  R. Targ' on each text page (pp. 3, 8, 16, 27)
-  - step: Approved for release
-    date: '2003-03-28'
-    entity: Central Intelligence Agency
-    verified: '✅ Confirmed — release marking ''Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0'' on every page'
-  - step: Scanned to TIF / Image Container PDF
-    date: '2016-06-24'
-    entity: CIA Reading Room (Adobe Acrobat 15.16 Image Conversion Plug-in)
-    verified: '✅ Confirmed — PDF metadata Title CIA-RDP79-00999A000300030027-0.TIF; CreationDate Fri Jun 24 13:44:27 2016 EDT'
-  - step: Mirrored to Internet Archive (stargatefiles collection)
-    date: '2016-06-25'
-    entity: Michael Best / That 1 Archive (per stargatefiles collection metadata)
-    verified: '✅ Confirmed — archive.org item CIA-RDP79-00999A000300030027-0 publicdate 2016-06-25T05:46:58Z'
-  - step: Archived locally
-    date: '2026-05-16'
-    entity: UAP_OSINT REFACTOR repository
-    verified: ✅ Confirmed — sha256 verified via sources/manifest.yaml (parent PDF + .txt clean-text sibling registered)
 description: 'Records of picture drawing experiments performed with Uri Geller ([`/people/uri-geller`]) at SRI ([`/organizations/stanford-research-institute`]) over the eight days August 4 through August 11, 1973. Text pages are dated August 13, 1973 with R. Targ ([`/people/russell-targ`]). Approved For Release 2003/03/28.
 
 

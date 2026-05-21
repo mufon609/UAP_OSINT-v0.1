@@ -17,7 +17,6 @@ source_medium: youtube
 | Program / Show / Venue | 8 News Now / KLAS-TV / Mystery Wire (Las Vegas) |
 | Source Medium | youtube |
 | Source URL | https://www.youtube.com/watch?v=MiUDl_9v6Ag |
-| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 
 ---
 

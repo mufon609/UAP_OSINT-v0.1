@@ -32,7 +32,6 @@ context_extrinsic:
   topic: Book launch promotional interview for "Skinwalkers at the Pentagon" (October 2021)
   primary_source_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
   transcript_provenance: auto-caption
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   quote_attribution: 'Dr. James Lacatski (and Dr. Colm Kelleher), Mystery Wire / 8 News Now (KLAS-TV Las Vegas) book-launch interview with George Knapp, October 12, 2021'
 speakers:
 - id: s1

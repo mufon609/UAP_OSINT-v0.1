@@ -59,19 +59,6 @@ corpus: {{corpus}}
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-|  |  |  |  |
-
-<!-- Custody chain from capture to archive. Each transfer row has a
-     Verified field; mark ✅ only when the transfer mechanism is
-     documented in a linked primary source. Especially load-bearing for
-     leaked or declassified media. -->
-
----
-
 <!-- MEDIA-VERSIONING: required when derivation_of is set in frontmatter.
      Each row is one per-aspect difference between the parent media
      node and this derivative. Omit the section entirely when this is

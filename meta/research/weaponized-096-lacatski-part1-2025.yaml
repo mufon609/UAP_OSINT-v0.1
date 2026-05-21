@@ -42,7 +42,6 @@ context_extrinsic:
   topic: 'Lacatski solo interview — Kona Blue, AARO disinformation framing, and the recovered craft hull breach'
   primary_source_url: https://www.youtube.com/watch?v=Qu8pudJk_-A
   transcript_provenance: auto-caption
-  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
   quote_attribution: 'Dr. James Lacatski, WEAPONIZED (PART 1) with George Knapp and Jeremy Corbell, November 5, 2025'
 speakers:
 - id: s1

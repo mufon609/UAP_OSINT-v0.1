@@ -27,35 +27,6 @@ context_extrinsic:
   display_title: 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING — Puthoff & Targ, Nature 251, 602-607 (October 1974); CIA mirror CIA-RDP96-00787R000100220001-8'
   primary_source_url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100220001-8.pdf
   quote_attribution: 'Dr. Harold E. Puthoff and Russell Targ, ''INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING'', Nature 251, 602-607 (October 1974)'
-  provenance:
-  - step: SRI research conducted (Geller experiments)
-    date: '1973-08-04'
-    entity: Stanford Research Institute, Menlo Park, California
-    verified: ✅ Confirmed — paper attests the Geller experiments at SRI's facility for EEG research and the SRI Engineering Building, in the date range August 1973 per related CIA-RDP79-00999A000300030027-0
-  - step: Submitted as SRI preprint
-    date: '1974'
-    entity: Harold E. Puthoff & Russell Targ, Stanford Research Institute
-    verified: '✅ Confirmed — title page reads ''STANFORD RESEARCH INSTITUTE, Menlo Park, California 94025'' as the institutional letterhead; ''Published in NATURE Magazine, October, 1974'' on the title page'
-  - step: Published in Nature Magazine
-    date: '1974-10'
-    entity: Nature (Macmillan Journals, London)
-    verified: '✅ Confirmed — title page ''Published in NATURE Magazine, October, 1974''; canonical citation Nature 251, 602-607, 18 October 1974'
-  - step: Approved for release by CIA
-    date: '2001-03-07'
-    entity: Central Intelligence Agency
-    verified: '✅ Confirmed — release marking ''Approved For Release 2001/03/07 : CIA-RDP96-00787R0001 00220001 -8'' on every page'
-  - step: Scanned to TIF / Image Container PDF
-    date: '2016-06-24'
-    entity: CIA Reading Room (Adobe Acrobat 15.16 Image Conversion Plug-in)
-    verified: '✅ Confirmed — PDF metadata Title CIA-RDP96-00787R000100220001-8.TIF; CreationDate Fri Jun 24 13:55:50 2016 EDT'
-  - step: Mirrored to Internet Archive (stargatefiles collection)
-    date: '2016-06-25'
-    entity: Michael Best / That 1 Archive
-    verified: '✅ Confirmed — archive.org item CIA-RDP96-00787R000100220001-8'
-  - step: Archived locally
-    date: '2026-05-16'
-    entity: UAP_OSINT REFACTOR repository
-    verified: ✅ Confirmed — sha256 verified via sources/manifest.yaml
 description: 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING by Dr. Harold E. Puthoff ([`/people/hal-puthoff`]) and Russell Targ ([`/people/russell-targ`]), Stanford Research Institute ([`/organizations/stanford-research-institute`]), Menlo Park, California 94025. Published in NATURE Magazine, October, 1974. Approved For Release 2001/03/07.
 
 

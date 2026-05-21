@@ -18,7 +18,6 @@ source_medium: vimeo
 | Host(s) / Interviewer(s) | Lawrence (Lucis Trust moderator) |
 | Source Medium | vimeo |
 | Source URL | https://vimeo.com/222366976/0c171ef640 |
-| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 
 ---
 

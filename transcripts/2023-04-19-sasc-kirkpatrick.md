@@ -21,7 +21,6 @@ created: 2026-04-28
 | Witness | Sean Kirkpatrick |
 | Oath Status | unknown |
 | Transcript URL | https://www.armed-services.senate.gov/download/transcript-4-19-2023 |
-| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 | Event Node | [`/events/2023-04-19-sasc-aaro-hearing`] |
 | Companion Written Testimony | [`/documents/written-testimony-kirkpatrick-2023`] |
 

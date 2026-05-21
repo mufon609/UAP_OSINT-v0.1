@@ -71,7 +71,6 @@ def render_transcript_publication_record(artifact, kind, fm):
         row("Witness",            ctx.get("witness"))
         row("Oath Status",        ctx.get("oath_status"))
         row("Transcript URL",     ctx.get("primary_source_url"))
-        row("Transcript Verified", ctx.get("transcript_verified"))
         row("Event Node",         _wrap_path(ctx.get("event_node")))
         # Companion Written Testimony. Hearing transcripts and their
         # companion written testimony are independent primary records
@@ -95,7 +94,6 @@ def render_transcript_publication_record(artifact, kind, fm):
             else:
                 row("Underlying Source", _wrap_path(derived_from))
         row("Source URL",         ctx.get("primary_source_url"))
-        row("Transcript Verified", ctx.get("transcript_verified"))
         row("Citation Style",     ctx.get("citation_style"))
 
     if not rows_emitted:

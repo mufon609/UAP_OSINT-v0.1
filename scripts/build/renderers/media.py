@@ -19,7 +19,6 @@ from ._universal import (
     render_associated_nodes,
     render_description,
     render_preserved_disagreements,
-    render_provenance,
     render_source_form_notes,
 )
 
@@ -197,7 +196,6 @@ def render_body_media(artifact, kind, fm):
     sections = [
         render_media_summary(artifact, kind),
         render_description(artifact),
-        render_provenance(artifact),
     ]
     mv_section = render_media_versioning(artifact, fm)
     if mv_section:

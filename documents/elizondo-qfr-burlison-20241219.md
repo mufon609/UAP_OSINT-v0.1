@@ -31,17 +31,6 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| QFR letter signed by subcommittee chairs Nancy Mace and Glenn Grothman, transmitting Burlison's questions to Elizondo | 2024-12-09 | House Committee on Oversight and Accountability — Subcommittee on Cybersecurity, Information Technology, and Government Innovation; Subcommittee on National Security, the Border, and Foreign Affairs | ✅ Confirmed — cover letter dated December 9, 2024 printed in document |
-| Elizondo signs and submits response by Federal Express and electronic mail | 2024-12-19 | Luis D. Elizondo, P.O. Box 337, Buffalo, WY 82834 | ✅ Confirmed — internal_date "December 19, 2024" printed in response header; signature block "Luis D. Elizondo" at end of response |
-| Hosted on Douglas Johnson's ghost.io blog CDN as public mirror | 2025-02 | Douglas Johnson | ✅ Confirmed — docs.house.gov canonical path /meetings/GO/GO12/20241113/117721/HHRG-118-GO12-QFR-ElizondoL.pdf returns 404; the Douglas Johnson mirror is the public-record route per sources/manifest.yaml note |
-| Archived locally | 2026-05-07 | sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Opening of Elizondo's response letter — establishes the document as Elizondo's response to the November 13, 2024 hearing QFR posed by Rep. Eric Burlison on December 9, 2024. UNCLASSIFIED-level responses; Attachment 1 is the eleven-question response.

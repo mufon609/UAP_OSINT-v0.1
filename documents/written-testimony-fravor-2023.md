@@ -34,16 +34,6 @@ In closing: the 2009 contact from Jay Stratton ([`/people/jay-stratton`]) on the
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Statement authored | 2023-07-25 | David Fravor | ✅ Confirmed — PDF metadata CreationDate: Tue Jul 25 14:16:09 2023 EDT; author field 'DMF DMF' (initials match David M. Fravor) |
-| Submitted to Committee | 2023-07-26 | House Oversight Subcommittee on National Security, the Border, and Foreign Affairs | ✅ Confirmed — hosted at oversight.house.gov |
-| Archived locally | 2026-04-17 | UAP_OSINT-v0.1 repository | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Opening — identity and rank

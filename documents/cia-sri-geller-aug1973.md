@@ -34,19 +34,6 @@ Page 1 records that 'as a result of Geller's success in this experimental period
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Experiments conducted at SRI | 1973-08-04 | SRI Life Sciences Division (Aug 4-8) + SRI Engineering building computer facilities (Aug 9-11), Menlo Park, California | ✅ Confirmed — document attests an eight-day experimental period August 4-11, 1973 |
-| Cover memo authored | 1973-08-13 | R. Targ | ✅ Confirmed — document page header carries 'August 13, 1973  R. Targ' on each text page (pp. 3, 8, 16, 27) |
-| Approved for release | 2003-03-28 | Central Intelligence Agency | ✅ Confirmed — release marking 'Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0' on every page |
-| Scanned to TIF / Image Container PDF | 2016-06-24 | CIA Reading Room (Adobe Acrobat 15.16 Image Conversion Plug-in) | ✅ Confirmed — PDF metadata Title CIA-RDP79-00999A000300030027-0.TIF; CreationDate Fri Jun 24 13:44:27 2016 EDT |
-| Mirrored to Internet Archive (stargatefiles collection) | 2016-06-25 | Michael Best / That 1 Archive (per stargatefiles collection metadata) | ✅ Confirmed — archive.org item CIA-RDP79-00999A000300030027-0 publicdate 2016-06-25T05:46:58Z |
-| Archived locally | 2026-05-16 | UAP_OSINT REFACTOR repository | ✅ Confirmed — sha256 verified via sources/manifest.yaml (parent PDF + .txt clean-text sibling registered) |
-
----
-
 ## Key Passages
 
 ### Document title — verbatim internal-title attestation

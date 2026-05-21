@@ -33,11 +33,6 @@ their type-specific sections.
   - ``render_corroboration``             — eyewitness persons + encounter
                                            events share a single
                                            Corroboration shape.
-  - ``render_provenance``                 — document (gov-doc) + media
-                                           share a single Provenance
-                                           shape (custody chain table
-                                           from ``context_extrinsic
-                                           .provenance``).
 """
 
 from ._common import _escape_table_cell, _wrap_path, sort_by_date
@@ -265,29 +260,6 @@ def render_timeline(artifact):
             f"{e.get('category') or ''} | "
             f"{(e.get('source') or {}).get('path') or ''} | "
             f"{_wrap_path(e.get('node_link'))} |"
-        )
-    return "\n".join(lines) + "\n"
-
-
-def render_provenance(artifact):
-    """Custody-chain table from ``context_extrinsic.provenance``. Emits
-    on document (gov-doc) and media nodes — both attest a chain of
-    custody for their primary source. Columns: Step | Date | Entity |
-    Verified."""
-    ctx = artifact.get("context_extrinsic") or {}
-    prov = ctx.get("provenance")
-    lines = ["## Provenance", ""]
-    if not isinstance(prov, list) or not prov:
-        lines.append("<!-- TODO: populate `context_extrinsic.provenance` in the research artifact -->")
-        return "\n".join(lines) + "\n"
-    lines.append("| Step | Date | Entity | Verified |")
-    lines.append("|---|---|---|---|")
-    for step in prov:
-        if not isinstance(step, dict):
-            continue
-        lines.append(
-            f"| {step.get('step', '')} | {step.get('date', '')} | "
-            f"{step.get('entity', '')} | {step.get('verified', '')} |"
         )
     return "\n".join(lines) + "\n"
 

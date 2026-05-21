@@ -29,16 +29,6 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Issued by Congressman Steny H. Hoyer (MD-5) congressional office, Washington, DC | 2010-07-28 | Congressman Steny H. Hoyer (MD-5) | ✅ Confirmed — internal_date "July 28, 2010" printed in press release header |
-| Hosted on hoyer.house.gov | 2010-07-28 | Hoyer congressional office | ✅ Confirmed — hoyer.house.gov canonical URL |
-| Archived locally | 2026-05-07 | sources/government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Opening sentence — anchors the press release as Hoyer's public announcement of FY2011 Military Construction and Veterans Affairs Appropriations Act passage by the House on July 28, 2010, with the four Southern Maryland line items that follow.

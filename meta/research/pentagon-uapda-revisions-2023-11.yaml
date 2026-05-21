@@ -28,31 +28,6 @@ context_extrinsic:
   display_title: 'Pentagon UAPDA Revisions — November 2023 OUSD(I&S) Markup of S. 2226 Division G'
   doc_form_descriptor: line-by-line review of Senate-passed legislation
   quote_attribution: 'OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023'
-  provenance:
-  - step: Markup prepared by OUSD(I&S) after conferring with NARA/ISOO
-    date: '2023-11'
-    entity: Office of the Under Secretary of Defense for Intelligence and Security
-    verified: '✅ Confirmed — cover page "Reviewed by" attribution line names OUSD(I&S); "DoD Position" statement confirms NARA/ISOO consultation (q3 verbatim)'
-  - step: Submitted to congressional negotiators during end-stage FY 2024 NDAA negotiations
-    date: '2023-11'
-    entity: Office of the Under Secretary of Defense for Intelligence and Security
-    verified: '✅ Confirmed — Douglas Johnson Ghost analysis (July 24, 2024) cites the late-November 2023 transmission to Capitol Hill negotiators based on file-data forensics on the OUSD(I&S) document'
-  - step: Public Law 118-31 enacted; OUSD(I&S) markup language largely incorporated into final FY 2024 NDAA UAP-related provisions
-    date: '2023-12-22'
-    entity: U.S. Congress / White House signature
-    verified: '✅ Confirmed — public law record. Per Douglas Johnson Ghost analysis, "the final enacted language reflected the Department''s basic viewpoint on major points, although not on every detail"'
-  - step: Sean Kirkpatrick acknowledges authenticity by email to Douglas Johnson — "the document does represent many of the objections I tried to articulate to Marik [von Rennenkampff, in the July 17, 2024 interview]"
-    date: '2024-07-23'
-    entity: Sean Kirkpatrick
-    verified: '✅ Confirmed — verbatim email quoted by Douglas Johnson in his July 24, 2024 Ghost analysis'
-  - step: First public release of the 33-page markup PDF via Douglas Johnson Ghost analysis (10:00 AM EDT)
-    date: '2024-07-24'
-    entity: Douglas Johnson
-    verified: '✅ Confirmed — Ghost article published at douglasjohnson.ghost.io archived at news/douglas-johnson-uapda-pentagon-rewrite-20240724.html'
-  - step: Local archive at government/pentagon-uapda-proposed-revisions-202311.pdf with sha256 integrity verification per sources/manifest.yaml
-    date: '2026-04-28'
-    entity: Repository archival pipeline
-    verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes:
 - id: q1
   added_date: '2026-05-02'

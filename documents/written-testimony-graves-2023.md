@@ -38,16 +38,6 @@ Graves's conclusion: credible reports from both military and commercial aircrew 
 
 ---
 
-## Provenance
-
-| Step | Date | Entity | Verified |
-|---|---|---|---|
-| Posted to committee site | 2023-07-25 | House Oversight Subcommittee on National Security, the Border, and Foreign Affairs | ✅ Confirmed — docs.house.gov hearing-event page (116282) records the Witness Statement PDF as 'Added 07/25/2023 at 02:21 PM' |
-| Submitted to hearing record | 2023-07-26 | House Oversight Subcommittee on National Security, the Border, and Foreign Affairs | ✅ Confirmed — hearing held 2023-07-26; document listed on committee repository |
-| Archived locally | 2026-04-17 | UAP_OSINT-v0.1 repository | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
-
----
-
 ## Key Passages
 
 ### Opening — identity, callsign FOBS, service duration, two named deployments

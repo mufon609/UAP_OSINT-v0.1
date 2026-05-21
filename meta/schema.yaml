@@ -264,7 +264,6 @@ types:
         required_sections:
           - Document Summary
           - Description
-          - Provenance
           - Key Passages
           - Associated Nodes
       non-gov-doc:
@@ -297,7 +296,6 @@ types:
       - other
     section_rules:
       Key Passages: {requires_quote_attribution: true}
-      Provenance: {chronological: true}
 
   # --- EVENT --------------------------------------------------------------
   # Events are venues / incidents — they don't speak. Witness statements
@@ -431,7 +429,6 @@ types:
     required_sections:
       - Media Summary
       - Description
-      - Provenance
       - Key Passages
       - Associated Nodes
     # Media Versioning is conditionally required (per below) when
@@ -441,7 +438,6 @@ types:
     conditionally_required:
       "Media Versioning": "derivation_of is set"
     section_rules:
-      Provenance: {chronological: true}
       Key Passages:
         requires_quote_attribution: true
         # Key Passages on media capture verbatim speech (audio/video) or

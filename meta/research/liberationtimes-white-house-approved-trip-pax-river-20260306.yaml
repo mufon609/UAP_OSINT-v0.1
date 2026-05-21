@@ -19,19 +19,6 @@ context_extrinsic:
   display_title: 'Liberation Times — White House-Approved Trip to Pax River (March 6, 2026)'
   primary_source_url: 'https://www.liberationtimes.com/home/white-house-approved-trip-allegedly-took-congressman-to-maryland-base-to-examine-suspected-ufo-facility'
   quote_attribution: 'Christopher Sharp, Liberation Times, March 6, 2026'
-  provenance:
-    - step: 'Written by Christopher Sharp and published at Liberation Times'
-      date: '2026-03-06'
-      entity: 'Christopher Sharp, Liberation Times'
-      verified: '✅ Confirmed — "Written by Christopher Sharp -6 March 2026" byline printed in article'
-    - step: 'Update appended at same URL'
-      date: '2026-03-12'
-      entity: 'Christopher Sharp, Liberation Times'
-      verified: '✅ Confirmed — "Update -12 March 2026" subhead printed in article body'
-    - step: 'Archived locally'
-      date: '2026-05-07'
-      entity: 'sources/news/liberationtimes-white-house-approved-trip-pax-river-20260306.html'
-      verified: '✅ Confirmed — SHA256 verified via sources/manifest.yaml'
 
 description: 'Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organizations/liberation-times`]) on March 6, 2026 — Representative Eric Burlison ([`/people/eric-burlison`]), a key congressional Unidentified Anomalous Phenomena advocate, visited Naval Air Station Patuxent River ([`/locations/patuxent-river-nas`]) in Maryland last month on a White House-approved trip. Two sources told Liberation Times that Burlison visited a hangar that Lue Elizondo ([`/people/luis-elizondo`]), the former head of the Pentagon''s Advanced Aerospace Threat Identification Program, alleged in writing to Congress was built to accommodate the proposed transfer to Bigelow Aerospace ([`/organizations/bigelow-aerospace`]); Liberation Times understands that Burlison was able to verify the hangar exists, but that it remains empty. The alleged transfer was blocked by the CIA ([`/organizations/cia`]), the original custodian of the machinery, which is understood to have been recovered since the 1950s. One source told Liberation Times the visit confirmed long-held suspicions the facility was built for a specific purpose that had not materialised. Update -12 March 2026: Three separate sources familiar with the trip said the hangar visited by Burlison was not the one allegedly built to facilitate the proposed transfer of materials, and Burlison did not see a runway built specifically for Bigelow. UAP-related materials, including an exotic vehicle of unknown origin, may be stored within different facilities within Pax River. Burlison stated on The Resilient Show that there was enough evidence of infrastructure on the property; Steny Hoyer ([`/people/steny-hoyer`]) speaking with Matt Laslo ([`/people/matt-laslo`]) added he did not remember the specifics of the $10 million hangar.
 

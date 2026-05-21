@@ -22,7 +22,6 @@ created: 2026-04-19
 | Witness | David Fravor |
 | Oath Status | sworn |
 | Transcript URL | https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf |
-| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
 | Event Node | [`/events/2023-07-26-house-uap-hearing`] |
 | Companion Written Testimony | [`/documents/written-testimony-fravor-2023`] |
 
