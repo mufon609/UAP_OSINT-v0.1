@@ -594,6 +594,204 @@
     archived_date: '2026-04-20'
     path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
     note: 'Michael Shellenberger written testimony for 2024-11-13 House Oversight + Cybersecurity/IT hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Contains detailed timeline referencing Skinwalker Ranch, BAASS/AAWSAP, Bigelow 2007 DIA letter, and Fugal 2022 purchase narrative. 214 pages.'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_01_Metallic_Glasses_for_Aerospace_Applications.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-01-metallic-glasses-20091214.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #1 — ''Metallic Glasses'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 14 December 2009, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 31 pages. DIA attachment #22 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. T. Hufnagel, Johns Hopkins University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_02-DIRD_Aerospace_Applications_of_Programmable_Matter.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-02-programmable-matter-20091214.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #2 — ''Aerospace Applications of Programmable Matter'', DIA-08-0911-016, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 14 December 2009, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 21 pages. DIA attachment #23 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. McCarthy, Programmable Matter Corporation (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_03-DIRD_Pulsed_High-Power_Microwave_Source_Technology.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-03-pulsed-hpm-20100128.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #3 — ''Pulsed High-Power Microwave Technology'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 28 January 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 38 pages. DIA attachment #3 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. James Wells, JW Enterprises (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_04_DIRD_Biomaterials.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-04-biomaterials-20100107.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #4 — ''Biomaterials'', DIA-08-0912-006, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 7 January 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #17 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Bruce Towe, University of Arizona (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_05_Materials_for_Advanced_Aerospace_Platforms.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #5 — ''Materials for Advanced Aerospace Platforms'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 12 January 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 28 pages. DIA attachment #21 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. J. Williams, Ohio State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_06-DIRD_Space_Access-Where_Weve_Been_and_Where_We_Could_Go.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-06-bv-space-access-20100308.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #6 — ''Space Access'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 8 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 57 pages. DIA attachment #4 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. P. Czysz, HyperTech (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #7 — ''Invisibility Cloaking'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 30 pages. DIA attachment #7 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Ulf Leonhardt, University of St. Andrews (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_08-DIRD_Positron_Aerospace_Propulsion.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-08-positron-aerospace-propulsion-20100302.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #8 — ''Positron Aerospace Propulsion'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 36 pages. DIA attachment #13 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Gerald Smith, Positronics Research (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_09-DIRD_Inertial_Electrostatic_Confinement_Fusion.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-09-iec-fusion-20100310.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #9 — ''Inertial Electrostatic Confinement Fusion'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 10 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 73 pages. DIA attachment #1 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Miley, University of Illinois (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_10_Metallic_Spintronics.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #10 — ''Metallic Spintronics'', DIA-08-1003-011, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 28 pages. DIA attachment #24 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. M. Tsoi, University of Texas - Austin (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_11-DIRD_Advanced_Nuclear_Propulsion_for_Manned_Deep_Space_Missions.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #11 — ''Advanced Nuclear Propulsion for Manned Deep Space Missions'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 11 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 38 pages. DIA attachment #2 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. F. Winterberg, University of Nevada – Reno (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_12-DIRD_Technological_Approaches_to_Controlling_External_Devices.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-12-bci-controlling-external-devices-20100323.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #12 — ''Technological Approaches to Controlling External Devices in the Absence of Limb-Operated Interfaces'', DIA-08-1003-012, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 37 pages. DIA attachment #20 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_13-DIRD_Warp_Drive_Dark_energy_and_the_Manipulation_of_Extra_Dimensions.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #13 — ''Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 34 pages. DIA attachment #19 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Obousy, Obousy Consultants (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_14-DIRD_The_Role_of_Superconductors_in_Gravity_Research.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-14-superconductors-gravity-20100323.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #14 — ''Role of Superconductors in Gravity Research'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 17 pages. DIA attachment #10 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Hathaway, Hathaway Consulting (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_16-DIRD_The_Space_Communication_Implications_of_Quantum_Entanglement_and_Nonlocality.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #16 — ''Space-Communication Implications of Quantum Entanglement and Nonlocality'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #25 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. J. Cramer, University of Washington (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_17-DIRD_Maverick_Inventor_Versus_Corporate_Inventor-Where_Will_the_Next_major_Innovations_Arise.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-17-maverick-inventor-20100330.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #17 — ''Maverick Inventor Versus Corporate Inventor'', DIA-08-1003-017, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 20 pages. DIA attachment #16 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Hathaway, Hathaway Consulting (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_18-DIRD_Traversible_Wormholes_Stargates_and_Negative_Energy.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-18-traversable-wormholes-20100406.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #18 — ''Traversable Wormholes, Stargates, and Negative Energy'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 43 pages. DIA attachment #8 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Eric Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com; the mirror filename misspells the title as ''Traversible''). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_19-DIRD_Antigravity_for_Aerospace_Applications.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-19-antigravity-aerospace-20100330.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #19 — ''Antigravity for Aerospace Applications'', DIA-08-1003-018, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 45 pages. DIA attachment #11 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Eric Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_20-DIRD_Biosensors_and_BioMEMS-A_Survey_of_the_Present_Field.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-20-biosensors-biomems-20100331.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #20 — ''BioSensors and BioMEMS'', DIA-08-1003-020, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 31 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 46 pages. DIA attachment #6 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Bruce Towe, University of Arizona (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_21-DIRD_High-Frequency_Gravitational_Wave_Communications.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #21 — ''High-Frequency Gravitational Wave Communications'', DIA-08-1004-005, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. DIA attachment #9 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Robert Baker, GravWave (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_22_Metamaterials_for_Aerospace_Applications.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-22-metamaterials-aerospace-20100406.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #22 — ''Metamaterials for Aerospace Applications'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 28 pages. DIA attachment #18 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. G. Shvets, University of Texas – Austin (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). This is the Black Vault rendering (PDF producer ''Adobe Acrobat 9.55 Paper Capture Plug-in''); a separate dia.mil-sourced OCR rendering of the same DIRD is registered at government/dird-22-metamaterials-aerospace-diamil-20100406.pdf. OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_23-DIRD_State_of_the_Art_and_Evolution_of_High-Energy_Laser_Weapons.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-23-laser-weapons-20100331.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #23 — ''State of the Art and Evolution of High Energy Laser Weapons (U//FOUO version)'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 31 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 32 pages. DIA attachment #38 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi); this is the U//FOUO version — DIA attachment #37 is a SECRET//NOFORN version of the same report, withheld and not in the repo. Author: J. Albertine, Directed Technologies (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf
   status: archived
   archive_status: 1
@@ -603,6 +801,195 @@
     archived_date: '2026-05-16'
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
     note: 'AAWSAP DIRD Black Vault #24 — ''Concepts for Extracting Energy From the Quantum Vacuum'', DIA-08-1004-007, ICOD 1 December 2009, dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. Author: Dr. Eric W. Davis, EarthTech International (per DIA January 2018 SASC letter naming the AAWSAP DIRD authors). The Acknowledgements section names 13 technical and useful-input contributors including H. E. Puthoff (EarthTech, Int''l) — primary-source attestation that Puthoff was an acknowledged technical contributor to a second AAWSAP DIRD beyond his own authored DIRD #15. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata: ''Adobe Acrobat 9.55 Paper Capture Plug-in'' — OCR''d document; per-quote OCR artifacts preserved as naming_quirks entries on consuming artifacts per meta/conventions.md OCR-scan source-form discipline.'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_25-DIRD_An_Introduction_to_the_Statistical_Drake_Equation.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-25-statistical-drake-equation-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #25 — ''An Introduction to the Statistical Drake Equation'', ICOD 1 December 2009 (confirmed page 1; series ''Acquisition Threat Support''), dated 11 March 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 56 pages. DIA attachment #15 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Claudio Maccone, International Academy of Astronautics (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_26-DIRD_Anomalous_Acute_and_Subacute_Field_Effects_on_Human_Biological_Tissues.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #26 — ''Field Effects on Biological Tissues'' (DIA-letter title; the document title page reads ''Anomalous Acute and Subacute Field Effects on Human Biological Tissues''), ICOD 1 December 2009 (confirmed page 1; series ''Acquisition Threat Support''), dated 11 March 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 39 pages. DIA attachment #12 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Kit Green, Wayne State University (per that DIA list); cross-ref /people/kit-green. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_27-DIRD_Laser_Lightcraft_Nanosatellites.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #27 — ''Laser Lightcraft Nanosatellites'', DIA-08-1011-001, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 78 pages. DIA attachment #31 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. E. Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_28-DIRD_Cockpits_in_the_Era_of_Breakthrough_Flight.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-28-cockpits-breakthrough-flight-20101101.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #28 — ''Cockpits in the Era of Breakthrough Flight'', DIA-08-1011-002, ICOD 8 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. DIA attachment #27 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. G. Millis, Tau Zero (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_29-DIRD_Negative_mass_Propulsion.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-29-negative-mass-propulsion-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #29 — ''Negative Mass Propulsion'', DIA-08-1101-023, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 3 January 2011 (confirmed page 1; note the filename''s ''-2010'' is the corpus-year label, the document is dated January 2011), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 44 pages. DIA attachment #36 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. F. Winterberg, University of Nevada – Reno (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_30-DIRD_Aneutronic_Fusion_Propulsion.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #30 — ''Aneutronic Fusion Propulsion I'', DIA-08-1011-003, ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 50 pages. DIA attachment #26 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. V. Teofilo, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_31-DIRD_Detection_and_High_Resolution_Tracking_of_Vehicles_at_Hypersonic_Velocities.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-31-hypersonic-detection-tracking-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #31 — ''Detection and High Resolution Tracking of Vehicles at Hypersonic Velocities'', DIA-08-1012-001, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 20 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 47 pages. DIA attachment #29 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. Culbreth, University of Nevada – Las Vegas (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_32-DIRD_Ultracapacitators_as_Energy_and_Power_Storage_Devices.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #32 — ''Ultracapacitors as Energy and Power Storage Devices'', DIA-08-1011-005 (recovered from page-1 image read; pdftotext did not surface it), ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 35 pages. DIA attachment #35 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. J. Golightly, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com); the mirror filename misspells ''Ultracapacitators''. PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_33-DIRD_MHD_Air_Breathing_Propulsion_and_Power_for_Aerospace_Applications.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-33-mhd-air-breathing-propulsion-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #33 — ''Magnetohydrodynamics (MHD) Air Breathing Propulsion and Power for Aerospace Applications'', DIA-08-1011-006 (recovered from page-1 image read; pdftotext did not surface it), ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 21 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #32 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. S. Macheret, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_34-DIRD_Cognitive_Limits_on_Simultaneous_Control_of_Multiple_Unmanned_Spacecraft.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-34-cognitive-limits-unmanned-spacecraft-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #34 — ''Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft'', DIA-08-1101-001 (recovered from page-1 image read; pdftotext did not surface it), ICOD 8 September 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 15 December 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 31 pages. DIA attachment #28 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_35-DIRD_Quantum_Computing_and_Utilizing_Organic_Molecules_in_Automation_Technology.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #35 — ''Quantum Computing and Utilizing Organic Molecules in Automation Technology'', DIA-08-1102-005 (recovered from page-1 image read; pdftotext did not surface it), ICOD 10 December 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 10 December 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 55 pages. DIA attachment #33 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_36-DIRD_Quantum_Tomography_of_Negative_Energy_States_in_the_Vacuum.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-36-quantum-tomography-negative-energy-20110111.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #36 — ''Quantum Tomography of Negative Energy States in the Vacuum'', DIA-08-1102-007, ICOD per page 1 (verify at sibling production; this is a ''Defense Futures''-series DIRD dated January 2011, so the 1 December 2009 cutoff of the original batch does NOT apply — the later DIRDs carry mid-2010/late-2010 ICODs), dated 11 January 2011 (per filename), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 52 pages. DIA attachment #34 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. E. Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_37-DIRD_Aneutronic_Fusion_Propulsion_II.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #37 — ''Aneutronic Fusion Propulsion II'' (DIA-letter title; the document title page reads ''Aneutronic Fusion Propulsion''), DIA-08-1011-004, ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 37 pages. DIA attachment #30 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. Culbreth, University of Nevada – Las Vegas (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/20090624_Reid_to_DEPSECDEF_ref_AAITP_in_SAP.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/reid-letter-to-depsecdef-sap-request-20090624.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — letter from Senator Harry Reid to Deputy Secretary of Defense William J. Lynn III, dated 24 June 2009, requesting the Advanced Aerospace Threat Identification Program (AATIP / AAWSAP) be placed under 'Restricted Special Access Protection'. 5 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename 20090624_Reid_to_DEPSECDEF_ref_AAITP_in_SAP.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DR_Reid_Brief_May09.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-reid-brief-may2009.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA briefing prepared for the Senator Reid meeting, May 2009. 12 pages. Pure image scan (no text layer present), so a clean-text .txt sibling derived from page images is required for any verbatim-quote derivation per meta/conventions.md OCR-scan discipline. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename DR_Reid_Brief_May09.pdf).
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DR_Reid_Mtg_Jan09.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-reid-mtg-talking-paper-u-326-09-20090102.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA talking paper U-326-09 for the Senator Reid meeting, dated 2 January 2009. 2 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename DR_Reid_Mtg_Jan09.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DR_Reid_Mtg_May09.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-reid-mtg-talking-paper-u-973-09-20090504.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA talking paper U-973-09 for the Senator Reid meeting, dated 4 May 2009. 3 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename DR_Reid_Mtg_May09.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DR_Reid_Mtg_Nov09.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-reid-mtg-readahead-20091119.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA read-ahead / talking paper for the Senator Reid meeting, dated 19 November 2009. 4 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename DR_Reid_Mtg_Nov09.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/FOIA-00269-2018.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-foia-00269-2018-response-20230626.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA FOIA response, request FOIA-00269-2018, response dated 26 June 2023. 9 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename FOIA-00269-2018.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/FOIA-00349-2018.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-foia-00349-2018-response-20221013.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — DIA FOIA response, request FOIA-00349-2018, response dated 13 October 2022. 25 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename FOIA-00349-2018.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/SOW_Aerospace.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aawsap-sow-solicitation-hhm402-08-r-0211-20080818.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — Statement of Work / original bid solicitation for the Advanced Aerospace Weapon System Applications Program, DIA solicitation HHM402-08-R-0211, posted 18 August 2008. 8 pages. The sole bid was Bigelow Aerospace Advanced Space Studies (BAASS). Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename SOW_Aerospace.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/navy/DON-2021-003140.pdf
   status: archived
   archive_status: 3
@@ -3361,6 +3748,25 @@
     archived_date: '2026-04-20'
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     note: Black Vault June 29, 2022 article carrying Pentagon Public Affairs statement from DoD spokesperson Susan Gough. Gough names 'former Office of Naval Intelligence senior civilian John Stratton' as UAPTF lead and confirms Dr. Travis Taylor was informally designated UAPTF 'chief scientist' via SMDC assignment. Strongest on-record DoD attribution naming the UAPTF leader.
+- url: https://www.theblackvault.com/documentarchive/the-advanced-aerospace-weapon-system-applications-program-aawsap-documentation/
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dird-22-metamaterials-aerospace-diamil-20100406.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP DIRD Black Vault #22 (dia.mil rendering) — ''Metamaterials for Aerospace Applications'', DIA-08-1004-006, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 27 pages. DIA attachment #18 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. G. Shvets, University of Texas – Austin (per that DIA list). This is the dia.mil FOIA-reading-room OCR rendering of the same DIRD (PDF producer ''Adobe Acrobat Standard 2017 17 Paper Capture Plug-in''), distinct from the Black Vault rendering registered at government/dird-22-metamaterials-aerospace-20100406.pdf. Documented dia.mil origin is the FOIA Electronic Reading Room FileId/161870 (https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/161870/), but that dia.mil URL returns HTTP 403 to non-interactive clients (edge bot-block) and could not be verified to return 200 — direct-PDF URL unverified; URL recorded here is the known-good Black Vault AAWSAP landing page. OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  - format: pdf
+    path: government/fas-org-aatip-list-20210808.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: AAWSAP support document — the DIA Congressional Relations Division letter U-18-0001/OCC1, dated 9 January 2018, signed Christine Kapnisi, to SASC Chairman John McCain and Ranking Member Jack Reed, with enclosure '(U) List of Attachments' naming the 38 AATIP/AAWSAP Defense Intelligence Reference Documents (titles + authors). 7 pages. This is the authoritative title/author/attachment-number reference for the DIRD corpus (see also the transcription at meta/topic or /tmp working notes). Canonical origin is the Federation of American Scientists Intelligence Resource Program (https://irp.fas.org/dia/aatip-list.pdf), but that direct-PDF URL returns HTTP 202 with an empty body to non-interactive clients (Cloudflare bot-challenge) and could not be verified to return 200; this letter is not mirrored on The Black Vault. direct-PDF URL unverified — URL recorded here is the known-good Black Vault AAWSAP landing page. PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
+  - format: pdf
+    path: government/dia-mil-reid-aatip-letter-2009.pdf
+    archived_date: '2026-05-21'
+    extraction_type: ocr-scan
+    note: 'AAWSAP support document — Under Secretary of Defense for Intelligence memorandum, James R. Clapper Jr., ''MEMORANDUM FOR THE DEPUTY SECRETARY OF DEFENSE, SUBJECT: Senator Harry Reid''s Request to Put the Advanced Aerospace Threat and Identification Program (AATIP) under Special Access Protection'' (2009; recommends AGAINST establishing a SAP, with Tabs A/B/C). 18 pages. NOTE: despite the on-disk filename ''reid-aatip-letter'', this is the Clapper/OUSD(I) memo RESPONDING to Reid''s 24 June 2009 request — it is not Reid''s own letter (that is the separate reid-letter-to-depsecdef-sap-request-20090624.pdf). Documented origin is the dia.mil FOIA Electronic Reading Room FileId/170015 (https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170015/), but that dia.mil URL returns HTTP 403 to non-interactive clients (edge bot-block) and could not be verified to return 200; the Black Vault''s related OUSDI_IM_on_AATIP_Final.pdf is a different 3-page file, not this 18-page packet. direct-PDF URL unverified — URL recorded here is the known-good Black Vault AAWSAP landing page. PDF producer metadata ''AINSLIB.OCR'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
 - url: https://www.theblackvault.com/documentarchive/the-ufo-whistleblower-congress-and-classified-briefings-new-dod-oig-emails-and-what-they-reveal/
   status: archived
   archive_status: 3
@@ -3626,7 +4032,7 @@
   status: 402-blocked
   archive_status: 2
   wayback_date: '2026-05-06'
-  note: 'Canonical Wall Street Journal URL for ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha (June 6, 2025). Paywalled. Wayback CDX does carry statuscode:200 captures (earliest 20250607010740), but each is a paywall stub — only the ~2-minute lede (through the Area 51 bar paragraph) renders before the "Copyright © 2025 Dow Jones" cutoff; the article body (Yankee Blue, Gough''s on-record statements, Salas) is fetched client-side behind the paywall and is absent from every snapshot, confirmed this session. Full article text is preserved via the tovima.com WSJ-syndication entry directly above (news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html); registered here so the canonical wsj.com URL is in the source-of-record index even though the byte-faithful local archive lives under the tovima syndication path.'
+  note: Canonical Wall Street Journal URL for 'The Pentagon Disinformation That Fueled America's UFO Mythology' by Joel Schectman and Aruna Viswanatha (June 6, 2025). Paywalled. Wayback CDX does carry statuscode:200 captures (earliest 20250607010740), but each is a paywall stub — only the ~2-minute lede (through the Area 51 bar paragraph) renders before the "Copyright © 2025 Dow Jones" cutoff; the article body (Yankee Blue, Gough's on-record statements, Salas) is fetched client-side behind the paywall and is absent from every snapshot, confirmed this session. Full article text is preserved via the tovima.com WSJ-syndication entry directly above (news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html); registered here so the canonical wsj.com URL is in the source-of-record index even though the byte-faithful local archive lives under the tovima syndication path.
   artifacts: []
 - url: https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-new-legislation-to-declassify-government-records-related-to-ufos-and-unidentified-anomalous-phenomena_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa/
   status: archived
