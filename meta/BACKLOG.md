@@ -76,6 +76,39 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
+### A2 — Decide whether the per-entry `.note` field stays, is redefined, or is removed
+
+`.note` (on `key_personnel`, `affiliations`, `relationships`,
+`program_involvement`, `contracts`, `ownership_timeline`, …) is classified as
+**synthesis** — `meta/conventions.md` lists it among "per-entry
+synthesis-content notes" and the prose-drift check scans it; facts live
+elsewhere (structured columns + verbatim `quotes[]`). But the field has no
+*positive* definition of its job — only a vocabulary constraint (sourced
+tokens) — so it drifts into the two things it must not be: restating the
+row's own columns (duplication), or stating a new fact (which belongs in a
+column or a quote with its own source). The james-holly / ipmo build
+surfaced both modes.
+
+Open question for the user — does the field earn its place? Three directions:
+- **Keep + define positively** — note = per-entry interpretive residue
+  (caveat / source-limitation / disambiguation / sequencing) the columns and
+  quotes structurally can't carry; empty by default. (A first, negative-framed
+  cut of this discipline is already in `conventions.md` / `agent-build.md` /
+  `audit.md` — "don't restate columns, don't duplicate the Timeline".)
+- **Narrow** — restrict notes to one enumerated purpose (e.g. source-quality
+  caveats only); everything else moves to columns / quotes.
+- **Remove** — drop the field; force all content into structured columns +
+  verbatim quotes.
+
+Resolution couples: audit what existing `.note` fields actually carry across
+the corpus → pick a direction → update `conventions.md` (+ schema field
+comments, + the renderers if removed) → rebuild affected nodes. No mechanical
+redundancy check — redundancy here is semantic; a token-overlap scan both
+false-positives on legitimate notes and misses real cases.
+
+**Blocks:** none.
+**Blocked by:** a user decision on the field's purpose.
+
 ---
 
 ## B. Parallel batch (renderer pass)
