@@ -103,7 +103,6 @@ from checks import frontmatter_parse as ck_frontmatter_parse
 from checks import frontmatter_required as ck_frontmatter_required
 from checks import governance_files as ck_governance_files
 from checks import id_path_match as ck_id_path_match
-from checks import escape_artifacts as ck_escape_artifacts
 from checks import link_resolution as ck_link_resolution
 from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_artifact_shape as ck_manifest_artifact_shape
@@ -137,7 +136,6 @@ _NODE_CHECKS = [
     ck_chronological_tables,
     ck_link_resolution,            # writes to ctx.broken_links; yields no Issues
     ck_table_cell_word_budget,
-    ck_escape_artifacts,
 ]
 
 

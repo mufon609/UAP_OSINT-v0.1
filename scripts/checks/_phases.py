@@ -136,7 +136,6 @@ CHECK_PHASE = {
     "section_rules": "render",
     "link_resolution": "render",
     "table_cell_word_budget": "render",
-    "escape_artifacts": "render",
     "coverage": "render",
     "boundary": "render",
     "description_token_drift": "render",

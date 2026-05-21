@@ -89,7 +89,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 ### Object Could Not Be Identified
 
-> So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
+> So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just…
 
 | Field | Value |
 |---|---|

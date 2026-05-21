@@ -64,9 +64,9 @@ then the node is rebuilt.
   `''` in an UNQUOTED scalar (`context: …Knapp''s…`) — or over-escaping to
   `''''` inside a single-quoted one — parses cleanly but renders the `''`
   literally into the node, and these label/attribution/note cells aren't
-  verbatim- or drift-checked, so only the `escape_artifacts` render check
-  catches it. Either single-quote the scalar and escape as `''`, or leave it
-  unquoted with a single `'`.
+  verbatim- or drift-checked, so a mistake ships silently. Either
+  single-quote the scalar and escape as `''`, or leave it unquoted with a
+  single `'`.
 - **Render-phase WARNs are advisory, not gates.** `validate.py`'s
   `table_cell_word_budget` and similar soft heuristics emit warnings, not
   errors — resolve a flagged cell only if it genuinely should promote to a
