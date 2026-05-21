@@ -27,7 +27,7 @@ WEAPONIZED episode 38 with "dr james latsky" ([`/people/james-lacatski`]) and "d
 
 latsky said the program was "basically created between myself and Senator Reed" ([`/people/harry-reid`]) at the defense intelligence agency ([`/organizations/dia`]) — a $22 million program; first year $10 million and second year $12 million; completed objectives in two years rather than the available five. The request for proposal said "this is what we wanted achieved how would you do it" rather than telling the bidder what to do. Bob bigelow ([`/people/robert-bigelow`]) bass ([`/organizations/baass`]) was "created specifically" to address DIA needs. The program operated very similar to a sap — the director of analysis, his office chief, and the division chief knew about the program; no one else did.
 
-latsky said the atip ([`/organizations/aatip`]) name was created because someone in congress put secret on the program name in the funding notification and he did not want to get crossways with security. He said "i believe that who we called axel rod or perhaps luel isad or perhaps some of their cohorts" came up with atip. "lou handled that i was not prived because it was mainly spun up as i was getting ready to retire." latsky said he retired in 2016. The 38 defense intelligence reference documents ([`/documents/dird-01-metallic-glasses-2009`]) were solicited from air force intelligence, cia, naval intelligence, and ground intelligence; the topics they chose "were completely legitimate at the time" and are "pretty close to state-of-the-art."
+latsky said the atip ([`/organizations/aatip`]) name was created because someone in congress put secret on the program name in the funding notification and he did not want to get crossways with security. He said "i believe that who we called axel rod or perhaps luel isad or perhaps some of their cohorts" came up with atip. "lou handled that i was not prived because it was mainly spun up as i was getting ready to retire." latsky said he retired in 2016. The 38 defense intelligence reference documents ([`/documents/dird-01-metallic-glasses`]) were solicited from air force intelligence, cia, naval intelligence, and ground intelligence; the topics they chose "were completely legitimate at the time" and are "pretty close to state-of-the-art."
 
 corbell read from chapter 9 of the book — at the conclusion of a 2011 meeting in the capitol building with a us senator and an agency under secretary, latsky (the only one of the books authors present) posed a question that the united states was in possession of a craft of unknown origin and had successfully gained access to its interior; this craft had a streamlined configuration suitable for aerodynamic flight but no intakes, exhaust, wings, or control surfaces; in fact it appeared not to have an engine, fuel tanks, or fuel. latsky said "the wording that you read is correct" and "yes you i was allowed to tell you" — but said he would not go beyond the wording.
 
@@ -319,7 +319,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### Documents
 
-- [`/documents/dird-01-metallic-glasses-2009`]
+- [`/documents/dird-01-metallic-glasses`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
 

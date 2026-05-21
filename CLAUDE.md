@@ -92,11 +92,12 @@ can read clean while artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (14)
+### Documents (15)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/documents/cia-sri-geller-aug1973` | primary-source-confirmed | gov-doc |
+| `/documents/dird-01-metallic-glasses` | primary-source-confirmed | gov-doc |
 | `/documents/dird-15-advanced-space-propulsion` | primary-source-confirmed | gov-doc |
 | `/documents/elizondo-qfr-burlison-20241219` | primary-source-confirmed | gov-doc |
 | `/documents/eo-14347-restoring-department-of-war` | primary-source-confirmed | gov-doc |
@@ -272,6 +273,9 @@ redirect to the nearest snapshot and serve directly.
 - Not a place for speculation or secondary-source summaries
 - Not advocacy for any conclusion
 - Not a debunking resource
+- Not a place that cleans or corrects sources — primary-source artifacts
+  (OCR errors, typos, garbled-but-legible scan regions) are preserved
+  verbatim and flagged, never silently fixed
 - Does not adjudicate between conflicting primary sources — documents
   both, flags the disagreement, lets the reader judge
 
