@@ -377,12 +377,10 @@ key_personnel:
   person_path: /people/james-holly
   role: 'Acting Director'
   period_start: '2022-03'
-  period_end: '2024-05'
   leadership_class: director
   source:
     path: government/notre-dame-ipmo-memo-20220527.pdf
     location: 'Memo signature block; signed by James A. Holly, Acting Director, May 27, 2022'
-  note: 'First Acting Director of IPMO from establishment per the Notre Dame memorandum signed by James A. Holly on May 27, 2022. Per Defense One, Holly leads the office at the SOF Week 2024 panel.'
 org_relationships:
 - id: or1
   added_date: '2026-05-02'

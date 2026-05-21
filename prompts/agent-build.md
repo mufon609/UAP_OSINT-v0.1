@@ -30,7 +30,13 @@ then the node is rebuilt.
    `python3 scripts/build/validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize worker cross-ref candidates into
    `relationships` / `affiliations` / `timeline` / … with canonical
-   `[`/path`]` links; populate `naming_quirks` + `rumors`. →
+   `[`/path`]` links; populate `naming_quirks` + `rumors`. Keep each
+   entry's optional `.note` to context the row's own columns and the node's
+   other sections (Timeline / Key Passages / Description) don't already
+   carry — never restate Role / Period / Source or repeat a Timeline fact;
+   an empty note is correct when there's no residue (see `meta/conventions.md`
+   "Per-entry notes"). The prose-drift check verifies a note is *sourced*,
+   not that it's *non-redundant* — that judgment is yours. →
    `python3 scripts/build/validate-research.py --phase link meta/research/{slug}.yaml`
 3. **Render** — only if 1–2 are clean:
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

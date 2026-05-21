@@ -114,6 +114,10 @@ trigger an anti-bot challenge that fuzzy-timestamp URLs bypass.
      `period_end` capped at an old talk date when a newer cited source shows
      the role continuing) — this **skips role 4 too**: it's a pure
      Build-Agent (role 5) artifact edit + rebuild, no extraction needed.
+     Correct the structured field itself (extend or open the `period_end`);
+     do NOT narrate the update in a `.note` — the new fact is typically
+     already in the node's Timeline / Key Passages, so a note would just
+     duplicate it (see `meta/conventions.md` "Per-entry notes").
 
    Either shape **skips the External Investigator (role 2)** — no new URL,
    no new bytes. List each adjacent node + which shape. See

@@ -780,6 +780,28 @@ the description's reference to the contract's establishment has no
 structured-surface counterpart for the contract's closure, and the
 layered-precision principle breaks for that class of contracts.
 
+### Per-entry notes — context the columns don't already carry
+
+Structured entries (`key_personnel`, `affiliations`, `relationships`,
+`program_involvement`, `contracts`, …) render as table rows whose columns
+(Role / Period / Source / …) are the authoritative surface for that entry's
+field data. The entry's optional `note` is for context those columns — and
+the node's other sections (Timeline, Key Passages, Description) — do NOT
+already carry: a credibility caveat, a sequencing nuance, a source
+limitation, a disambiguation. A note must not restate the row's own Role /
+Period / Source, and must not repeat a fact the Timeline or Key Passages
+already attest. If the note adds nothing the structured surfaces don't,
+**leave it empty** — a blank Note cell is normal.
+
+This is the layered-precision discipline above, applied per entry: columns
+and dedicated sections carry the facts; the note adds only the residue. The
+prose-drift check confirms a note's tokens are *sourced*, not that they're
+*non-redundant* — non-duplication is an authoring judgment, not a mechanical
+gate, so the discipline lives here. When new material would update an entry
+(e.g. a role that continued past the last-known date), **correct the
+structured field** — extend or open the `period_end`, add a Timeline row —
+rather than narrating the update in a note.
+
 ### Quote location refs: source-anchored, not extraction-anchored
 
 Each quote in a research artifact carries a `source.location` field —
