@@ -413,12 +413,12 @@ timeline:
 - id: t16
   added_date: '2026-05-16'
   date: '2010-03-29'
-  event: 'Puthoff publishes [`/documents/dia-advancedspacepropulsion-puthoff-dird-2010`] — Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' — under the DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]); Program Manager James T. Lacatski ([`/people/james-lacatski`]), D.Eng. Author affiliation: EarthTech International ([`/organizations/earthtech-international`]), Austin, Texas.'
+  event: 'Puthoff publishes [`/documents/dird-15-advanced-space-propulsion`] — Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' — under the DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]); Program Manager James T. Lacatski ([`/people/james-lacatski`]), D.Eng. Author affiliation: EarthTech International ([`/organizations/earthtech-international`]), Austin, Texas.'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: 'p. i'
   category: publication
-  node_link: '/documents/dia-advancedspacepropulsion-puthoff-dird-2010'
+  node_link: '/documents/dird-15-advanced-space-propulsion'
 
 - id: t17
   added_date: '2026-05-16'

@@ -132,7 +132,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 | Position | Counterpart | Source | Note |
 |---|---|---|---|
-| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski's own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-096-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment 'AATIP' framing diverges from Lacatski's own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources. |
+| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski's own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-096-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-15-advanced-space-propulsion`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment 'AATIP' framing diverges from Lacatski's own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources. |
 
 ---
 
@@ -157,7 +157,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Documents
 
-- [`/documents/dird-puthoff-vacuum-metric-engineering-2010`]
+- [`/documents/dird-15-advanced-space-propulsion`]
 - [`/documents/future-visions-2026`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
 
