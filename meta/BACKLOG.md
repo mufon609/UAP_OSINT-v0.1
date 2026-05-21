@@ -151,9 +151,100 @@ document — the 18-page packet on disk here is distinct.)
 
 `dird-22-…-diamil-…` (dia.mil FileId/161870 → 403), `fas-org-aatip-list-20210808.pdf`
 (irp.fas.org/dia/aatip-list.pdf → 202 empty, Cloudflare), and
-`dia-mil-reid-aatip-letter-2009.pdf` (dia.mil FileId/170015 → 403) are
-registered with the Black Vault AAWSAP landing page as the URL plus
-"direct-PDF URL unverified" in the note, because their canonical hosts
-bot-block both curl and WebFetch. Revisit via the Wayback fuzzy-timestamp
-pull (per `meta/sources-access.md`) or a manual browser save to record
-verified direct URLs.
+`dia-mil-reid-aatip-letter-2009.pdf` (dia.mil FileId/170015 → 403) are now
+registered under their canonical-origin URLs (provenance-correct, per the
+manifest-shape split), but those origins are bot-blocked and could not be
+verified to return 200. Revisit via the Wayback fuzzy-timestamp pull (per
+`meta/sources-access.md`) or a manual browser save to record verified /
+Wayback-archived copies.
+
+### C4 — No check that a type's required sections are renderer-producible
+
+The corpus-addendum feature (now removed) exposed a class gap:
+`scripts/checks/required_sections.py` can demand a section that the
+type's renderer cannot emit, and nothing flags the contradiction — the
+validator requires it, the build can't produce it, and the mismatch is
+invisible until traced by hand. Add a "renderer-coverage" check: for each
+type / kind, assert every required section is one its renderer actually
+emits (cross-check `schema.yaml` required_sections against the renderer's
+section list). Preventive — closes the gap that let the orphaned corpus
+requirement sit in the repo undetected.
+
+### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
+
+The prose-drift gate is correct and the resulting nodes are worth the
+energy — but source-grounding a synthesis `description` took 3–6 rewrite
+passes per node this session (`check-vocab.py` pre-flight roughly halves
+it). Two rough edges: token-passing can yield stilted non-English ("is
+acknowledging by") that no grammar check catches; and contributors burn
+passes guessing source morphology. This is CRITICAL repo discipline —
+any streamlining must NOT relax the zero-ungrounded-token floor.
+Candidate directions that preserve the floor: tighter `check-vocab.py`
+integration into the authoring loop, a morphology-aware suggestion
+surface (source has `gives`, not `give`), or surfacing the source token
+pool inline. Implement extremely carefully; the gate's rigor is the point.
+
+### C6 — prose-drift grounds `description` against source text only, not `document_intrinsic` / `naming_quirks` (handle carefully)
+
+The Phase-I prose-drift check grounds `description` tokens against the
+primary-source TEXT only — it does not credit `document_intrinsic` values
+or `naming_quirks.canonical`. Consequence (seen on `dird-01`): describing
+a fact that lives only in structured metadata — e.g. a FOIA redaction,
+whose vocabulary (`redacted`, `withheld`, `exemption`) is absent from the
+source prose — is impossible in the description, and must be surfaced via
+Key Passages + `naming_quirks` instead. This may be intended (description
+= strictly source-grounded synthesis); decide deliberately whether the
+check should credit canonical-form `naming_quirks` / `document_intrinsic`
+vocabulary. Same check family as C5; handle with the same care.
+
+### C7 — Codify the document-build patterns this session demonstrated but never wrote down
+
+Three patterns were worked out across the DIRD pilot but live only in the
+built nodes, not in `prompts/build.md`'s document-build guidance — so the
+next session re-derives or gets them wrong:
+
+- **Canonical DIRD slug convention** — `dird-{BlackVault#}-{short-title}`
+  (no date); reconcile inbound stub refs to it.
+- **Redacted-author + external-attribution pattern** — when a document
+  FOIA-redacts its own author, preserve that redaction as the document's
+  own fact (`authors_per_document: ['[redacted per FOIA (b)(6)]']`) AND
+  capture the external attribution (e.g. the DIA→Congress list's named
+  author) as a SEPARATE sourced Key Passage + `naming_quirks`; never
+  inject the external author into `authors_per_document`.
+- **Document-node load-bearing capture** — wrap-link the author, the
+  acknowledged / cited load-bearing entities (correct canonical stubs),
+  and catch notable cross-topic quotes (named programs / people / orgs,
+  e.g. Project Paperclip). The general "Relevance can be relational"
+  principle is in `conventions.md`; its document-build application is not.
+
+Plus the cross-cutting rule that prevents the exemplar-mirroring bug
+class: **a node's facts and links are confirmed against ITS OWN source,
+never copied from another node — exemplars provide structure/shape only.**
+(The `dird-01` build copied `dird-15`'s DIA→AARO mislink by mirroring the
+exemplar.) Codify in `prompts/build.md` and reinforce in the worker /
+build agent prompts.
+
+### C8 — Phase-I prose-drift and Phase-III description-drift treat adjacent punctuation differently
+
+On `dird-15`, a comma fused inside a closing quote (`apparent "cloaking,"`)
+PASSED the Phase-I prose-drift check (the bare token appears in the source
+elsewhere) but FAILED the Phase-III description-drift check (which
+tokenizes the rendered section and caught the fused punctuation). Two
+checks in the same family with different adjacent-punctuation exposure —
+a contributor can clear one and trip the other on the same text.
+Reconcile their tokenization (shared adjacency handling) so the same text
+passes/fails both consistently. Same check family as C5/C6.
+
+### C9 — verbatim-quote check doesn't normalize page-footer/header boilerplate
+
+On `dird-15` (q12/q13), a Discussion passage spanning a printed-page
+boundary carries the page footnote + page number + classification
+footer/header wedged mid-sentence; that boilerplate isn't in the quote,
+so a single verbatim quote across the boundary fails the verbatim-quote
+check, forcing a split into two adjacent Key Passages. `normalize_for_compare`
+already strips `[MM:SS]` caption timestamps but does NOT strip recognized
+page-footer/header/page-number boilerplate. Consider normalizing
+recognized page boilerplate in the verbatim check (carefully — it must
+not mask real mismatches), or document the split-at-page-boundary
+expectation prominently. Recurs on every page-spanning quote in paginated
+sources.
