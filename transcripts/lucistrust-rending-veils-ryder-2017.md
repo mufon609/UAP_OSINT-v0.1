@@ -64,7 +64,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Lawrence |
-| Attributed to | Moderator (Lawrence) framing the talk''s theosophical premise before handing off to Ryder. 2017-06-10 |
+| Attributed to | Moderator (Lawrence) framing the talk's theosophical premise before handing off to Ryder. 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [03:26]–[03:47] |
 

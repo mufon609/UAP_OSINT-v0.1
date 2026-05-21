@@ -56,19 +56,19 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in 2021 Mystery Wire book-launch interview with George Knapp and Colm Kelleher, responding to Knapp''s question about DoD spokesperson statements, 2021-10-12 |
+| Attributed to | Lacatski in 2021 Mystery Wire book-launch interview with George Knapp and Colm Kelleher, responding to Knapp's question about DoD spokesperson statements, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [0:39]–[1:23] |
 
 **Also attested:**
 
-- Lacatski in WEAPONIZED EP 38 describing how AAWSAP''s contract was structured at DIA; 2023-10-16; [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md); [3:19]–[3:52]
+- Lacatski in WEAPONIZED EP 38 describing how AAWSAP's contract was structured at DIA; 2023-10-16; [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md); [3:19]–[3:52]
 
 > [1:51] well the advanced Aerospace weapon system applications program was uh uh basically created between myself and Senator Reed at the defense intelligence agency uh it was a $22 million program uh it had the capability of going five years we completed our objectives in two years
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in WEAPONIZED EP 38 with George Knapp and Jeremy Corbell, responding to Corbell''s opening request to outline the AAWSAP / AATIP difference, 2023-10-16 |
+| Attributed to | Lacatski in WEAPONIZED EP 38 with George Knapp and Jeremy Corbell, responding to Corbell's opening request to outline the AAWSAP / AATIP difference, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:51]–[2:21] |
 
@@ -76,7 +76,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in WEAPONIZED EP 38 responding to George Knapp''s question about AAWSAP-team contact with "keepers of the secrets", 2023-10-16 |
+| Attributed to | Lacatski in WEAPONIZED EP 38 responding to George Knapp's question about AAWSAP-team contact with "keepers of the secrets", 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [51:59]–[52:32] |
 
@@ -178,7 +178,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in WEAPONIZED EP 38 responding to George Knapp''s question about David Grusch, 2023-10-16 |
+| Attributed to | Lacatski in WEAPONIZED EP 38 responding to George Knapp's question about David Grusch, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [31:44]–[32:25] |
 
@@ -204,7 +204,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | Lacatski in WEAPONIZED EP 38 responding to Corbell''s closing recap of the 2011 Capitol craft-of-unknown-origin passage, 2023-10-16 |
+| Attributed to | Lacatski in WEAPONIZED EP 38 responding to Corbell's closing recap of the 2011 Capitol craft-of-unknown-origin passage, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:46:30]–[1:46:40] |
 
@@ -362,7 +362,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | WEAPONIZED EP 114 'Future Visions' interview (transcript [`/transcripts/weaponized-114-lacatski-future-visions-2026`]) for Lacatski''s fourth book Future Visions ([`/documents/lacatski-future-visions-2026`]), 2026-04-08; Lacatski responding to Corbell question about his DIA background pre-AAWSAP |
+| Attributed to | WEAPONIZED EP 114 'Future Visions' interview (transcript [`/transcripts/weaponized-114-lacatski-future-visions-2026`]) for Lacatski's fourth book Future Visions ([`/documents/lacatski-future-visions-2026`]), 2026-04-08; Lacatski responding to Corbell question about his DIA background pre-AAWSAP |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [06:32]–[07:03] |
 
@@ -406,18 +406,18 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
-| 2008-09 | AAWSAP funded — Lacatski''s self-attested start of the program he co-created with Senator Reed at DIA | program | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
-| 2010-03-29 | Puthoff''s AAWSAP DIRD on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — Lacatski named "AAWSA Program Manager" on the Administrative Note (page 1) | publication | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf | [`/documents/dird-puthoff-vacuum-metric-engineering-2010`] |
+| 2008-09 | AAWSAP funded — Lacatski's self-attested start of the program he co-created with Senator Reed at DIA | program | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
+| 2010-03-29 | Puthoff's AAWSAP DIRD on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — Lacatski named "AAWSA Program Manager" on the Administrative Note (page 1) | publication | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf | [`/documents/dird-puthoff-vacuum-metric-engineering-2010`] |
 | 2010-09 | AAWSAP funding ended — Lacatski says in WEAPONIZED EP 38 "o assap was officially sort of stopped in terms of funding being received in September of 2010" | program | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
 | 2010-12 | AAWSAP 90-day no-cost extension ended — per Lacatski in WEAPONIZED EP 38, "by December member of 2010 we had a 90-day no cost extension and at that stage the program was over" | program | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
 | 2011 | 2011 Capitol building meeting — Lacatski posed a question to a US senator and an agency under secretary that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior (per chapter 9 of the 2023 book; Lacatski affirms in WEAPONIZED EP 38) | incident | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
-| 2016 | Lacatski''s retirement from DIA — self-attested in WEAPONIZED EP 38 ("I retired in 2016") | role | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
+| 2016 | Lacatski's retirement from DIA — self-attested in WEAPONIZED EP 38 ("I retired in 2016") | role | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |  |
 | 2021-10 | "Skinwalkers at the Pentagon" published — Lacatski / Kelleher / Knapp; passed a 14-month DoD pre-publication review per Lacatski in the 2021 Mystery Wire interview | publication | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | [`/documents/skinwalkers-at-the-pentagon-2021`] |
-| 2021-10-12 | Mystery Wire book-launch interview with George Knapp and Colm Kelleher — Lacatski''s earliest on-record primary-source media in this repository | testimony | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] |
-| 2023-09-06 | DOPSR clearance of Lacatski''s statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder as the proposer of a UAP material divestment plan to AAWSAP leadership (later entered into the 2024-11-13 House Oversight UAP hearing record as SD004 page 1) | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
+| 2021-10-12 | Mystery Wire book-launch interview with George Knapp and Colm Kelleher — Lacatski's earliest on-record primary-source media in this repository | testimony | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] |
+| 2023-09-06 | DOPSR clearance of Lacatski's statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder as the proposer of a UAP material divestment plan to AAWSAP leadership (later entered into the 2024-11-13 House Oversight UAP hearing record as SD004 page 1) | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
 | 2023-10-16 | WEAPONIZED Episode 38 with George Knapp and Jeremy Corbell — foundational on-record Lacatski interview discussing AAWSAP creation, AATIP name origin, the 2011 Capitol building "craft of unknown origin" passage, and his disclosure stance | testimony | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | [`/transcripts/weaponized-038-lacatski-kelleher-2023`] |
 | 2024 | "Inside the US Government Covert UFO Program: New Insights" — third Lacatski / Kelleher / Knapp book (PART 1 lists it among "those books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program, Initial Revelations, the new book New Insights") | publication | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |  |
-| 2024-12-19 | Luis Elizondo''s sworn Question for the Record response to Rep. Eric Burlison''s December 9, 2024 QFR letter names Lacatski as the former Director of AAWSAP and the author of the DOPSR-cleared SD004 page-1 statement | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | [`/documents/elizondo-qfr-burlison-20241219`] |
+| 2024-12-19 | Luis Elizondo's sworn Question for the Record response to Rep. Eric Burlison's December 9, 2024 QFR letter names Lacatski as the former Director of AAWSAP and the author of the DOPSR-cleared SD004 page-1 statement | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | [`/documents/elizondo-qfr-burlison-20241219`] |
 | 2025-11-05 | WEAPONIZED PART 1 broadcast — Lacatski self-attests as creator and DIA program manager of the follow-on Kona Blue program, KBP; AARO disinformation framing; recovered craft hull breach restated | testimony | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | [`/transcripts/weaponized-096-lacatski-part1-2025`] |
 | 2025-11-11 | WEAPONIZED PART 2 broadcast — Lacatski says Tic Tac is not US technology, describes own MIB sighting during Kona Blue, says Kona Blue is "much more than going and getting what some have described as 60 year old parts" | testimony | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | [`/transcripts/weaponized-097-lacatski-part2-2025`] |
 
@@ -429,16 +429,16 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Person | Relationship | Note |
 |---|---|---|
-| [`/people/colm-kelleher`] | Co-author of two books ("Skinwalkers at the Pentagon" 2021, "Inside the US Government Covert UFO Program" 2023); BAASS program manager — Lacatski''s primary contractor counterparty during AAWSAP execution | Per Corbell''s opening WEAPONIZED EP 38 ("Dr James latsky Dr colum kellerer ... talking about the UFO programs and their new book"); Kelleher also appears as co-interviewee in the 2021 Mystery Wire book launch. |
+| [`/people/colm-kelleher`] | Co-author of two books ("Skinwalkers at the Pentagon" 2021, "Inside the US Government Covert UFO Program" 2023); BAASS program manager — Lacatski's primary contractor counterparty during AAWSAP execution | Per Corbell's opening WEAPONIZED EP 38 ("Dr James latsky Dr colum kellerer ... talking about the UFO programs and their new book"); Kelleher also appears as co-interviewee in the 2021 Mystery Wire book launch. |
 | [`/people/george-knapp`] | Co-author of both Lacatski books; KLAS-TV / Mystery Wire / 8 News Now investigative reporter; WEAPONIZED co-host (with Jeremy Corbell) | Knapp is the interviewer in the 2021 Mystery Wire book launch and the co-host in WEAPONIZED EP 38. |
-| [`/people/harry-reid`] | Co-creator of AAWSAP per Lacatski''s WEAPONIZED EP 38 attestation — "basically created between myself and Senator Reed at the defense intelligence agency" | Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA. |
-| [`/people/robert-bigelow`] | Founder of Bigelow Aerospace and BAASS — the contractor that executed AAWSAP under DIA''s contract; Lacatski says BAASS was "created specifically" to address DIA needs | Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts. |
-| [`/people/luis-elizondo`] | AATIP-era counterpart at the Pentagon; "Lou handled" AATIP after Lacatski was preparing to retire in 2016 per WEAPONIZED EP 38; Elizondo''s December 2024 sworn QFR ([`/documents/elizondo-qfr-burlison-20241219`]) attests Lacatski as the former AAWSAP director | Lacatski names Elizondo as "Lou" in EP 38; Elizondo''s QFR Q1 names Lacatski as former AAWSAP director with explicit attribution of the DOPSR-cleared SD004 page-1 statement. |
+| [`/people/harry-reid`] | Co-creator of AAWSAP per Lacatski's WEAPONIZED EP 38 attestation — "basically created between myself and Senator Reed at the defense intelligence agency" | Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA. |
+| [`/people/robert-bigelow`] | Founder of Bigelow Aerospace and BAASS — the contractor that executed AAWSAP under DIA's contract; Lacatski says BAASS was "created specifically" to address DIA needs | Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts. |
+| [`/people/luis-elizondo`] | AATIP-era counterpart at the Pentagon; "Lou handled" AATIP after Lacatski was preparing to retire in 2016 per WEAPONIZED EP 38; Elizondo's December 2024 sworn QFR ([`/documents/elizondo-qfr-burlison-20241219`]) attests Lacatski as the former AAWSAP director | Lacatski names Elizondo as "Lou" in EP 38; Elizondo's QFR Q1 names Lacatski as former AAWSAP director with explicit attribution of the DOPSR-cleared SD004 page-1 statement. |
 | [`/people/jeremy-corbell`] | WEAPONIZED Podcast co-host (with George Knapp); primary in-studio interviewer of Lacatski in WEAPONIZED EP 38 | Corbell self-introduces at the start of WEAPONIZED EP 38. |
-| [`/people/david-grusch`] | Whistleblower whose claims Lacatski has publicly characterized as "credible" and "reasonable" while saying he never witnessed what he would consider illegal activities; Lacatski does not "concur" with Grusch on the alleged illegality framing but agrees Grusch''s underlying claims are "reasonable" | Lacatski''s on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch''s underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. |
-| [`/people/hal-puthoff`] | Author of AAWSAP DIRD #5 on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — produced under Lacatski''s AAWSA Program Management at DIA in FY 2009 | Puthoff''s 29 March 2010 DIRD names Lacatski as AAWSA Program Manager; documents the program-manager-to-DIRD-author relationship for one of the 38 AAWSAP DIRDs. |
+| [`/people/david-grusch`] | Whistleblower whose claims Lacatski has publicly characterized as "credible" and "reasonable" while saying he never witnessed what he would consider illegal activities; Lacatski does not "concur" with Grusch on the alleged illegality framing but agrees Grusch's underlying claims are "reasonable" | Lacatski's on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch's underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. |
+| [`/people/hal-puthoff`] | Author of AAWSAP DIRD #5 on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — produced under Lacatski's AAWSA Program Management at DIA in FY 2009 | Puthoff's 29 March 2010 DIRD names Lacatski as AAWSA Program Manager; documents the program-manager-to-DIRD-author relationship for one of the 38 AAWSAP DIRDs. |
 | [`/people/dylan-borland`] | Named by Lacatski in WEAPONIZED PART 2 ([`/transcripts/weaponized-097-lacatski-part2-2025`]) alongside David Grusch as having said the same thing about compartment-read-in requirements blocking Congress testimony | Lacatski's PART 2 attestation: "Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements." |
-| [`/people/tara-otoole`] | Met with Lacatski on the Kona Blue process per Corbell's framing in WEAPONIZED PART 1 — Lacatski says she is "staying away from it" and that he could not discuss her perspective further because "we have to also talk about DHS interests" | Lacatski declined to share Tara O''Toole''s view on the Kona Blue process; documents her as a Kona-Blue-relevant figure he met with at DHS. |
+| [`/people/tara-otoole`] | Met with Lacatski on the Kona Blue process per Corbell's framing in WEAPONIZED PART 1 — Lacatski says she is "staying away from it" and that he could not discuss her perspective further because "we have to also talk about DHS interests" | Lacatski declined to share Tara O'Toole's view on the Kona Blue process; documents her as a Kona-Blue-relevant figure he met with at DHS. |
 
 ---
 
@@ -478,16 +478,16 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption rendering of Lacatski''s surname in WEAPONIZED EP 38. See the EP 38 transcript artifact''s naming_quirks for full location list. |
-| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption rendering of Lacatski''s surname in the 2021 Mystery Wire interview. See the Mystery Wire transcript artifact''s naming_quirks for full location list. |
-| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption alternate rendering of Lacatski''s surname in the 2021 Mystery Wire interview when spoken by Kelleher. |
-| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption rendering of Lacatski''s surname in Knapp''s closing address ("dr caskey jim"). |
-| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of Lacatski''s surname in Corbell''s closing recap address ("Dr lat" / "Dr laty"). |
-| Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Senator Harry Reid" as "Senator Reed" in Lacatski''s AAWSAP creation attestation. |
-| Dothraki | DOPSR | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of "DOPSR" (Defense Office of Prepublication and Security Review) as "Dothraki" in Corbell''s question about how Lacatski''s book revelations were authorized. |
-| Burleson | Burlison | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of Rep. Eric Burlison''s surname as "Burleson" in Lacatski''s reference to a Burlison statement about Lacatski''s book sufficiency. |
-| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of Lacatski''s surname in EP 114 — capitalized variant "Lakatski" (distinct from EP 38''s "latsky" / Mystery Wire 2021''s "lakatsky"). |
-| Bass | BAASS | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of BAASS (Bigelow Aerospace Advanced Space Studies) as "Bass" in Lacatski''s reflection on what Bass did right ("We didn''t fail at all on the research that Bass did"). |
+| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption rendering of Lacatski's surname in WEAPONIZED EP 38. See the EP 38 transcript artifact's naming_quirks for full location list. |
+| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption rendering of Lacatski's surname in the 2021 Mystery Wire interview. See the Mystery Wire transcript artifact's naming_quirks for full location list. |
+| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption alternate rendering of Lacatski's surname in the 2021 Mystery Wire interview when spoken by Kelleher. |
+| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption rendering of Lacatski's surname in Knapp's closing address ("dr caskey jim"). |
+| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of Lacatski's surname in Corbell's closing recap address ("Dr lat" / "Dr laty"). |
+| Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Senator Harry Reid" as "Senator Reed" in Lacatski's AAWSAP creation attestation. |
+| Dothraki | DOPSR | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of "DOPSR" (Defense Office of Prepublication and Security Review) as "Dothraki" in Corbell's question about how Lacatski's book revelations were authorized. |
+| Burleson | Burlison | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of Rep. Eric Burlison's surname as "Burleson" in Lacatski's reference to a Burlison statement about Lacatski's book sufficiency. |
+| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of Lacatski's surname in EP 114 — capitalized variant "Lakatski" (distinct from EP 38's "latsky" / Mystery Wire 2021's "lakatsky"). |
+| Bass | BAASS | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of BAASS (Bigelow Aerospace Advanced Space Studies) as "Bass" in Lacatski's reflection on what Bass did right ("We didn't fail at all on the research that Bass did"). |
 
 ---
 
@@ -497,7 +497,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 | Position | Counterpart | Source | Note |
 |---|---|---|---|
-| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | Both new 2026 sources have George Knapp''s narration using "AATIP" to refer to the program Lacatski directed at DIA — but the program Lacatski directed was AAWSAP, not AATIP. Lacatski himself clarifies the AATIP-name history in q38 ("AATIP was the name was created um for use in the Senator Reid''s letter for our first attempt for material transfer ... It came and went. The next time I really saw AATIP was uh uh uh in the in the the New York Times article"). The Knapp / 8 News Now / EP 114 narrator framing conflates the two; Lacatski''s direct quotes consistently use "AAWSAP" / "A SAP" (auto-caption for AAWSAP). Resolution `disputed` because the divergence is between two primary-source attestations of the same fact (program name), not a typo to harmonize. |
+| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | Both new 2026 sources have George Knapp's narration using "AATIP" to refer to the program Lacatski directed at DIA — but the program Lacatski directed was AAWSAP, not AATIP. Lacatski himself clarifies the AATIP-name history in q38 ("AATIP was the name was created um for use in the Senator Reid's letter for our first attempt for material transfer ... It came and went. The next time I really saw AATIP was uh uh uh in the in the the New York Times article"). The Knapp / 8 News Now / EP 114 narrator framing conflates the two; Lacatski's direct quotes consistently use "AAWSAP" / "A SAP" (auto-caption for AAWSAP). Resolution `disputed` because the divergence is between two primary-source attestations of the same fact (program name), not a typo to harmonize. |
 
 ---
 

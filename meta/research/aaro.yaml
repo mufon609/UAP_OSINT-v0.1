@@ -669,7 +669,7 @@ quotes:
     path: news/defensescoop-aaro-foc-briefing-20241205.html
     location: DefenseScoop article body
   significance: 'DOD attestation of AARO''s Full Operational Capability declaration, dated Oct. 1, 2024 — the start of FY 2025. Public disclosure made on December 5, 2024 by DefenseScoop ahead of Director Kosloski''s December 6, 2024 closed-door briefing with the House Oversight and Accountability Committee.'
-  context: DefenseScoop article ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing'' by Brandi Vincent, December 5, 2024. Quote attributed to DOD spokesperson Sue Gough.
+  context: DefenseScoop article 'AARO functioning at full operational capability as lawmakers prep for classified UAP briefing' by Brandi Vincent, December 5, 2024. Quote attributed to DOD spokesperson Sue Gough.
   statement_date: '2024-12-05'
 - id: q44
   added_date: '2026-05-01'
@@ -1129,7 +1129,7 @@ org_relationships:
   source:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'AARO contract HQ003422C0094 SF 33 Block 7 issuing office, p. 1'
-  note: Washington Headquarters Services Acquisition Directorate (DODAAC HQ0034) is the contracting subtier agency that issues AARO''s support-services contracts on behalf of OUSD(I&S). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA. Pay Official DODAAC HQ0768 (WHS Financial Management Directorate).
+  note: Washington Headquarters Services Acquisition Directorate (DODAAC HQ0034) is the contracting subtier agency that issues AARO's support-services contracts on behalf of OUSD(I&S). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA. Pay Official DODAAC HQ0768 (WHS Financial Management Directorate).
 - id: or8
   added_date: '2026-05-01'
   organization_path: /organizations/aaroexec

@@ -59,6 +59,14 @@ then the node is rebuilt.
   `role` value with `: ` in it (common in slide-title refs like
   `IPMO: What We Do`, often inherited verbatim from a worker's `span`)
   breaks YAML parsing at the organize gate. Wrap such scalars in quotes.
+- **Single-quote any artifact scalar containing an apostrophe.** In YAML an
+  apostrophe is escaped as `''` only *inside* a single-quoted scalar. Writing
+  `''` in an UNQUOTED scalar (`context: …Knapp''s…`) — or over-escaping to
+  `''''` inside a single-quoted one — parses cleanly but renders the `''`
+  literally into the node, and these label/attribution/note cells aren't
+  verbatim- or drift-checked, so only the `escape_artifacts` render check
+  catches it. Either single-quote the scalar and escape as `''`, or leave it
+  unquoted with a single `'`.
 - **Render-phase WARNs are advisory, not gates.** `validate.py`'s
   `table_cell_word_budget` and similar soft heuristics emit warnings, not
   errors — resolve a flagged cell only if it genuinely should promote to a

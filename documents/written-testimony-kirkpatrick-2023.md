@@ -257,7 +257,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 
 ---
 
-### Kirkpatrick frames AARO''s national-security stakes — though still a young office, the spotlight on UAP underscores the importance of its work; characterizes Congress as a critical partner across DoD, IC, DOE, civil, scientific, and industrial leadership
+### Kirkpatrick frames AARO's national-security stakes — though still a young office, the spotlight on UAP underscores the importance of its work; characterizes Congress as a critical partner across DoD, IC, DOE, civil, scientific, and industrial leadership
 
 > We are grateful for sustained congressional engagement on this issue, which paved the way for DoD's establishment of the All-domain Anomaly Resolution Office in July of last year. Though AARO is still a young office, the spotlight on UAP in recent months underscores the importance of its work and the need for UAP to be taken seriously as a matter of national security. All leadership that I've had the pleasure of working with, whether DoD, IC, DOE, Civil, Scientific or Industrial, view Congress as a critical partner in this endeavor.
 

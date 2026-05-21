@@ -75,7 +75,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | WSJ Vol II preview interview, recounted in 'The Pentagon Disinformation That Fueled America''s UFO Mythology' (Joel Schectman + Aruna Viswanatha, 2025-06-06), 2022 |
+| Attributed to | WSJ Vol II preview interview, recounted in 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Joel Schectman + Aruna Viswanatha, 2025-06-06), 2022 |
 | Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
 | Location | ¶ 'Stupid enough' section |
 

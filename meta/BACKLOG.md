@@ -115,33 +115,7 @@ false-positives on legitimate notes and misses real cases.
 
 Renderer-touching items that batch into a single polish pass.
 
-### B2 — `''` escaping artifacts leak into rendered label / attribution cells
-
-A YAML scalar that is **unquoted** but contains a doubled apostrophe
-(`America''s`, `AARO''s`) — or a title wrapped in `''…''` — renders the `''`
-literally in the node body, because the parser only collapses `''`→`'` inside
-a *single-quoted* scalar. This hits structural-label / attribution / note
-fields (`significance`, `context`, `.note`, key_personnel / contract notes)
-which are **neither verbatim-quote-checked nor prose-drift-scanned** — so the
-defect passes validate.py + validate-research.py + review-coverage.py green,
-and only a manual read catches it. Surfaced when the WSJ document-node build
-leaked `article''s` into an H3 (fixed in that node); a corpus grep finds
-existing instances in `people/sean-kirkpatrick` (L78), `organizations/aaro`
-(L921, L1182), and ~6 other nodes.
-
-Nuance: `''` **inside** a `>` blockquote can be legitimate source-verbatim
-quote text (e.g. `transcripts/2023-07-26-house-fravor` L146 — stenographic
-quote marks), so the fix must scope to `''` *outside* blockquote lines.
-
-Fix (batches with B1 — renderer / format-hygiene pass):
-1. **A check** (NodeContext, mirrors `yaml_colon_space`) flagging `''` on a
-   rendered body's non-blockquote lines — a clean presence/absence floor
-   there (a literal `''` in a label/attribution cell is always an escaping
-   bug). Closes the "no check caught it" gap.
-2. **Corpus cleanup** — triage each existing `''`: fix the unquoted-scalar
-   escaping in the artifact + rebuild; leave source-verbatim blockquote `''`.
-
-Surfaced by the WSJ document-node build.
+_(none)_
 
 ---
 

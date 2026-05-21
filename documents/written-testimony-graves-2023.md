@@ -316,7 +316,7 @@ Graves's conclusion: credible reports from both military and commercial aircrew 
 
 ---
 
-### Classification since 2021 — full GIMBAL video and Graves''s squadron radar data withheld
+### Classification since 2021 — full GIMBAL video and Graves's squadron radar data withheld
 
 > My understanding is that all UAP videos since 2021 are classified Secret or above, which prevents the American people and even some Members of Congress from seeing UAP videos like the full GIMBAL video and radar data recorded by my squadron.
 
