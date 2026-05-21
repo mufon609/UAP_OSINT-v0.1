@@ -9,8 +9,16 @@ created: 2026-04-17
 
 Site-specific workarounds for primary sources that block standard
 automated retrieval. Only sites with confirmed access problems are
-listed here. If a source isn't here, assume standard `curl` or WebFetch
-works.
+listed here. If a source isn't here, assume standard `curl` (Bash) works.
+
+**Tool note — `curl`, not WebFetch, for Wayback + blocked sites.** Every
+recipe below is `curl`-based for a reason: WebFetch refuses
+`web.archive.org` outright and is 403'd by some sites (defense.gov,
+dni.gov) that `curl` reaches fine. A WebFetch failure on these is a tool
+blind spot, **not** a blocked source — fall back to `curl` / the repo
+scripts before concluding a source is unreachable. (Verified: `curl`
+resolves the fuzzy-timestamp Wayback form and the CDX API where WebFetch
+cannot.)
 
 When a source is blocked and no workaround exists, register it in the
 manifest with status `403-blocked`, `402-blocked`, or `pending` and add

@@ -23,10 +23,17 @@ load-bearing READ is yours.
 ## What you do
 
 1. For each gap, find candidate primary sources; fetch and **read** each.
+   Fetch with Bash + `curl` (not WebFetch) for `web.archive.org` and
+   known-403 sites — WebFetch refuses archive.org and is 403'd where `curl`
+   succeeds; a WebFetch failure there is a tool limit, **not** a dead
+   source (see `meta/sources-access.md`, which is curl-based throughout).
 2. Confirm load-bearing; capture the exact deep URL + suggested
    `sources/`-relative path + format + primary/secondary tier.
-3. Note access constraints (paywall / blocked → `meta/sources-access.md`).
-4. Report honest `unfilled_gaps[]` — don't pad the queue.
+3. Note access constraints (paywall / hard-blocked → `meta/sources-access.md`).
+4. Report honest `unfilled_gaps[]` — don't pad the queue. **An empty queue
+   is a valid, complete deliverable** when the record is exhausted; record
+   leads you read-and-rejected (with a one-line reason) in an
+   `evaluated_and_rejected[]` block so a later session doesn't re-chase them.
 
 ## Output — `/tmp/handoff-{slug}-external-investigator.yaml`
 
