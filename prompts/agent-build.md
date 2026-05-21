@@ -26,7 +26,13 @@ then the node is rebuilt.
    source vocabulary and let the header + linked nodes carry the framing.
    Don't write the topic name to assert a connection the sources don't state:
    the prose-drift check will reject the token, and asserting it would
-   fabricate a source claim. →
+   fabricate a source claim. **Document `description` provenance trap:** a
+   document's `description` is prose-drift-checked against the source *body*,
+   which never describes its own publication date / outlet / paywall — so
+   keep that provenance in the structured Document Summary fields
+   (`document_intrinsic.internal_date`, `context_extrinsic.primary_source_url`,
+   the manifest note) and describe the document's *content* in source
+   vocabulary; don't fight the drift check to cram provenance into the prose. →
    `python3 scripts/build/validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize worker cross-ref candidates into
    `relationships` / `affiliations` / `timeline` / … with canonical
