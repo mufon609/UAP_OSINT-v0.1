@@ -66,12 +66,11 @@ artifact; the builder rebuilds. The fix target is always artifact data.
 
 ## Handoff stubs
 
-Each role's output is carried two ways: as the subagent's **return value**
-(the transport the orchestrator reads) and persisted to
-`/tmp/handoff-{slug}-{role}.yaml` (an audit trail / crash-resume aid, never
-committed — the manifest + artifact + git are the source of truth). Emit
-your role's stub per the schema in
-[stub-schemas.md](stub-schemas.md); read only the one for your role.
+Your output is your **return value**: return your role's stub (per the schema
+in [stub-schemas.md](stub-schemas.md)) as your final message. That return value
+is the handoff the orchestrator reads to drive the next role — you write no file
+for it. The durable record is the manifest + artifact + git. Read only the stub
+schema for your own role.
 
 ## Orchestration branches
 

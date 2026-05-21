@@ -1,7 +1,11 @@
 ---
 name: archive-sweep
 description: Run an archival health pass — verify every cited URL is archived locally, recover dead URLs from Wayback, and submit missing entries to the Wayback Machine. Use at the end of a session that added sources, or as a periodic standalone health check.
-allowed-tools: Read, Bash(python3 scripts/tools/manifest.py *), Bash(python3 scripts/tools/archive.py *), Bash(curl *)
+allowed-tools:
+  - Read
+  - Bash(python3 scripts/tools/manifest.py *)
+  - Bash(python3 scripts/tools/archive.py *)
+  - Bash(curl *)
 ---
 
 # Archive sweep

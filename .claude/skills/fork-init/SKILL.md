@@ -2,7 +2,14 @@
 name: fork-init
 description: Bootstrap a fresh fork of this toolkit for a different topic — wipe the content layer, regenerate the topic-identity files, and confirm the empty corpus is healthy. Destructive; user-invoked only.
 disable-model-invocation: true
-allowed-tools: Read, Write, Edit, Bash(rm *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/build-state.py *), Bash(bash scripts/tests/pre-commit.sh)
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash(rm *)
+  - Bash(python3 scripts/build/validate.py *)
+  - Bash(python3 scripts/build/build-state.py *)
+  - Bash(bash scripts/tests/pre-commit.sh)
 ---
 
 # Fork-init

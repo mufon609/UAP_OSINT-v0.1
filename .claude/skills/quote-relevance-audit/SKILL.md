@@ -2,7 +2,12 @@
 name: quote-relevance-audit
 description: Audit a node's quotes[] for load-bearing relevance to the node's subject — the content-relevance layer the verbatim and prose-drift checks don't cover (does each quote advance the subject, or is it really about another entity?). Report before applying. Use on quote-heavy nodes.
 argument-hint: meta/research/{slug}.yaml
-allowed-tools: Read, Edit, Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/review-coverage.py *)
+allowed-tools:
+  - Read
+  - Edit
+  - Bash(python3 scripts/build/build-from-research.py *)
+  - Bash(python3 scripts/build/validate-research.py *)
+  - Bash(python3 scripts/build/review-coverage.py *)
 ---
 
 # Quote-relevance audit

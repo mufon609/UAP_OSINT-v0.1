@@ -40,5 +40,4 @@ optional Claude-Web leads — candidates only, never decisions).
    rejected-sources list — a later session re-checks freely, and a buried
    "rejected" lead is how good info gets lost.
 
-Emit the external-investigator stub as your return value and to
-`/tmp/handoff-{slug}-external-investigator.yaml`.
+Return the external-investigator stub as your final message.

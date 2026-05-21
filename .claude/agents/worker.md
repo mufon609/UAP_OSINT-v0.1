@@ -58,7 +58,6 @@ naming the metadata field, never a `quotes[]` entry.
    builder can write source-grounded prose (prose-drift tokenizes against this)
    without re-reading the source.
 
-Emit the worker stub (build-protocol → stub-schemas.md) as your return value
-and to `/tmp/handoff-{slug}-worker-{kind}-{N}.yaml`. You do not merge or
-validate — the builder serializes the merge of all fragments and runs the
-extract-phase check once.
+Return the worker stub (build-protocol → stub-schemas.md) as your final
+message. You do not merge or validate — the builder serializes the merge of
+all fragments and runs the extract-phase check once.

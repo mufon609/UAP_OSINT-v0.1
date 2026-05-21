@@ -54,5 +54,4 @@ evidentiary basis; hand-edit the node body; or silence the verbatim / prose-
 drift checks by calling real drift "legitimate synthesis" — source-match it,
 capture the variance structurally, or remove the unconfirmable quote.
 
-Emit the auditor stub as your return value and to
-`/tmp/handoff-{slug}-auditor.yaml`.
+Return the auditor stub as your final message.

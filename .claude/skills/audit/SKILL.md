@@ -2,7 +2,19 @@
 name: audit
 description: Audit an existing node for evidentiary integrity, verbatim/prose-drift correctness, contradiction markers, coverage, and cross-node consistency, then apply approved fixes. Use to audit or health-check a built node on its own.
 argument-hint: {type}/{slug}
-allowed-tools: Read, Grep, Glob, Edit, Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/associate.py *), Bash(python3 scripts/tools/coverage-suggest.py *), Bash(python3 scripts/tools/route_failure.py *)
+allowed-tools:
+  - Agent(auditor)
+  - Read
+  - Grep
+  - Glob
+  - Edit
+  - Bash(python3 scripts/build/build-from-research.py *)
+  - Bash(python3 scripts/build/validate.py *)
+  - Bash(python3 scripts/build/validate-research.py *)
+  - Bash(python3 scripts/build/review-coverage.py *)
+  - Bash(python3 scripts/build/associate.py *)
+  - Bash(python3 scripts/tools/coverage-suggest.py *)
+  - Bash(python3 scripts/tools/route_failure.py *)
 ---
 
 # Audit a node

@@ -1,12 +1,11 @@
 # Handoff-stub schemas
 
-One stub per role. Each role reads only its own. A stub is carried as the
-subagent's return value (the orchestrator reads it) and also written to
-`/tmp/handoff-{slug}-{role}.yaml` for inspection. Every example value is a
-placeholder — keep this file topic-neutral.
+One stub per role. Each role reads only its own. A stub is a role's **return
+value** — the final message it returns to the orchestrator (no file is
+written). Every example value is a placeholder — keep this file topic-neutral.
 
 ```yaml
-# /tmp/handoff-{slug}-internal-investigator.yaml
+# internal-investigator — returned stub
 agent: internal-investigator
 slug: {slug}
 target: {type}/{slug}
@@ -22,7 +21,7 @@ validator_findings: []
 ```
 
 ```yaml
-# /tmp/handoff-{slug}-external-investigator.yaml
+# external-investigator — returned stub
 agent: external-investigator
 slug: {slug}
 consumed_gaps: ["{gap this fills}"]
@@ -41,7 +40,7 @@ A queued source with no `confirming_span` is rejected — a bare
 "I read it" boolean is not accepted (the read must be re-checkable).
 
 ```yaml
-# /tmp/handoff-{slug}-archive.yaml
+# archive — returned stub
 agent: archive
 slug: {slug}
 archived:
@@ -54,7 +53,7 @@ validator_findings: []         # validate.py --phase archive
 ```
 
 ```yaml
-# /tmp/handoff-{slug}-worker-{kind}-{N}.yaml
+# worker — returned stub (one per source)
 # The worker EMITS this fragment; it does NOT merge into the shared
 # artifact. The orchestrator serializes the merge of all worker fragments,
 # then runs the extract-phase check once on the merged result.
@@ -80,12 +79,12 @@ validator_findings: []         # validate-research.py --phase extract, on the me
 ```
 
 ```yaml
-# /tmp/handoff-{slug}-builder.yaml
+# builder — returned stub
 agent: builder
 slug: {slug}
 node: {type}/{slug}.md
 inputs_consumed:
-  worker_fragments: [/tmp/handoff-{slug}-worker-pdf-1.yaml]
+  worker_fragments: [<each worker's returned stub>]
   linked_nodes: [/{type}/{related-a}]   # REQUIRED — relevance is judged against this, not the source alone
 claim_groups: [{label: "{claim-group label}", primaries: [q1], pointers: [q2], n_sources: 2}]
 tested_before_build: true      # organize + link were clean before render
@@ -95,7 +94,7 @@ validator_findings: []
 ```
 
 ```yaml
-# /tmp/handoff-{slug}-auditor.yaml
+# auditor — returned stub
 agent: auditor
 slug: {slug}
 node: {type}/{slug}.md

@@ -1,7 +1,11 @@
 ---
 name: onboard
 description: Orient to this primary-source investigation repository at the start of a session — read the governing docs, confirm the health check is green, and report current build state. Use when starting work here for the first time in a session.
-allowed-tools: Read, Grep, Glob, Bash(python3 scripts/build/build-state.py *)
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash(python3 scripts/build/build-state.py *)
 ---
 
 # Onboard

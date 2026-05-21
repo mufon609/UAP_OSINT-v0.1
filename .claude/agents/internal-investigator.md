@@ -29,5 +29,5 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
    is missing, set `all_internal: true` (the orchestrator then skips the
    External Investigator + Archive and goes straight to the Worker).
 
-Emit the internal-investigator stub (build-protocol → stub-schemas.md) as
-your return value and to `/tmp/handoff-{slug}-internal-investigator.yaml`.
+Return the internal-investigator stub (build-protocol → stub-schemas.md) as
+your final message — the orchestrator reads it to drive the next role.

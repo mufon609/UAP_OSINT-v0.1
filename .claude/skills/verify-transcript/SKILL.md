@@ -2,7 +2,12 @@
 name: verify-transcript
 description: Verify the quotes on a transcript node against the archived primary source (PDF, transcript file, or video caption) word-for-word, fix or remove any that don't match, and confirm speaker attribution. Use to verify a transcript or quote-heavy node.
 argument-hint: {type}/{slug}
-allowed-tools: Read, Edit, Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/build-from-research.py *)
+allowed-tools:
+  - Read
+  - Edit
+  - Bash(python3 scripts/build/validate.py *)
+  - Bash(python3 scripts/build/validate-research.py *)
+  - Bash(python3 scripts/build/build-from-research.py *)
 ---
 
 # Verify transcript

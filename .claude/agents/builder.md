@@ -69,5 +69,4 @@ mistake ships silently). **Render-phase WARNs are advisory, not gates** — a
 clean render carrying warnings is a pass; "fix the data" applies to ERRORS and
 real defects, not to every advisory.
 
-Emit the builder stub as your return value and to
-`/tmp/handoff-{slug}-builder.yaml`. Hand off to the auditor.
+Return the builder stub as your final message. Hand off to the auditor.

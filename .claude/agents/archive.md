@@ -33,5 +33,5 @@ call) after you finish, before the Worker runs.
 After: confirm manifest health with
 `python3 scripts/build/validate.py --phase archive` (the artifact doesn't
 exist yet; the orchestrator's post-scaffold `validate-research.py --phase
-archive` validates `primary_sources`). Emit the archive stub as your return
-value and to `/tmp/handoff-{slug}-archive.yaml`.
+archive` validates `primary_sources`). Return the archive stub as your final
+message.
