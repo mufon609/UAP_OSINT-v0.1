@@ -169,12 +169,16 @@ slug: {slug}
 source: government/file.pdf
 inputs_consumed: [/tmp/scratch-{slug}-2.txt]
 outputs_produced:
-  candidates: 7
+  candidates: 7                 # quotes[] candidates; legitimately 0 for an about-the-subject / institutional source
   claim_groups_proposed: ["Crash-Retrieval Program"]
   cross_ref_candidates:
     - entity: /people/jane-doe
       kind: relationship
       span: "p. 4, ¶2"
+  background_material:          # about-the-subject sources (the quotes: [] case): facts for the Build Agent's prose
+    - fact: "first Acting Director of the IPMO"
+      source_phrasing: "<exact words from source — prose-drift grounding>"
+      location: "¶ Biography"
 validator_findings: []         # validate-research.py --phase extract
 ```
 ```yaml

@@ -1284,6 +1284,24 @@ rendered body. `coverage-suggest.py` flags source content not
 reflected in the node; contributor judgment decides what is
 load-bearing vs. incidental.
 
+### Cross-reference paths to unbuilt nodes — use a stub, never null
+
+A structured cross-reference path field — `affiliations[].organization_path`,
+`relationships[].person_path`, a program / event path, any `[`/path`]` the
+renderer wraps — takes the canonical `/{type}/{slug}` path **even when that
+node doesn't exist yet**. A stub path is the correct value, not `null` and
+not a blank: the renderer wraps it as a navigable `[`/path`]`, which joins
+the broken-link registry (the Priority Build Queue) and the auto-generated
+`## Associated Nodes` index. A `null` / blank path renders an empty cell
+that surfaces in neither — the attested affiliation or relationship then
+never becomes a build candidate and isn't navigable, dropping a real
+cross-reference on the floor. For example, an institutional actor's prior
+`U.S. Army` / `U.S. Joint Special Operations Command` service takes
+`/organizations/us-army` / `/organizations/jsoc` even with no such node
+built — exactly as `ronald-moultrie`'s affiliations carry
+`/organizations/us-air-force`, `/organizations/cia`, and others ahead of
+their nodes. Same body-wrap-is-load-bearing mechanism as above.
+
 ---
 
 ## Primary sources and archival

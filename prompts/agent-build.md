@@ -35,6 +35,19 @@ then the node is rebuilt.
 4. Any failure → hand to the Error Agent (`prompts/agent-error.md`); apply
    its data fix; rebuild.
 
+## Authoring notes
+
+- **Quote any artifact scalar containing a colon-space.** A `location` /
+  `role` value with `: ` in it (common in slide-title refs like
+  `IPMO: What We Do`, often inherited verbatim from a worker's `span`)
+  breaks YAML parsing at the organize gate. Wrap such scalars in quotes.
+- **Render-phase WARNs are advisory, not gates.** `validate.py`'s
+  `table_cell_word_budget` and similar soft heuristics emit warnings, not
+  errors — resolve a flagged cell only if it genuinely should promote to a
+  subsection or trim duplicated prose; a clean render carrying warnings is a
+  pass. The "fix the data" rule applies to ERRORS and real defects, not to
+  every advisory warning.
+
 ## Output — `/tmp/handoff-{slug}-build.yaml`
 
 Schema in `prompts/topology.md`. `/tmp` only; never committed.

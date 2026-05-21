@@ -47,6 +47,7 @@ from lib._common import (
     content_node_types,
     content_type_dirs,
     format_from_path,
+    iter_artifacts,
     load_manifest,
     load_schema,
     normalize_source_rel_path,
@@ -129,8 +130,16 @@ def build_primary_sources_list(source_paths, manifest):
     truth — so scaffolded artifacts cannot diverge from the manifest at
     creation. Falls back to extension-based inference only when the
     path is absent from the manifest (which will trigger a validator
-    error anyway)."""
-    manifest_by_path = {e["path"]: e for e in manifest if e.get("path")}
+    error anyway).
+
+    Manifest paths live on each URL entry's nested ``artifacts`` list,
+    not at the entry top level — flatten via ``iter_artifacts`` (the
+    same shape every validator uses) so the lookup actually matches."""
+    manifest_by_path = {
+        a["path"]: a
+        for _, a in iter_artifacts(manifest)
+        if a.get("path")
+    }
     entries = []
     for path in source_paths:
         manifest_entry = manifest_by_path.get(path)
@@ -395,13 +404,14 @@ def main():
         print(f"     (writes /tmp/scratch-{slug}-N.txt — one per primary source)")
     else:
         print(f"     (add sources to primary_sources in {rel}, or re-scaffold with --sources)")
-    print(f"  2. Fill in document_intrinsic and context_extrinsic from the extracted text")
-    print(f"  3. Write `description` (1-3 paragraphs) — renders as the node's Description section")
-    print(f"  4. Populate quotes (verbatim passages with location refs)")
-    print(f"  5. Populate naming_quirks")
-    if "rumors" in artifact:
-        print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
-    print(f"  7. Validate: python3 scripts/build/validate-research.py {rel}")
+    print(f"  2. Populate the artifact's content sections from the extracted text.")
+    print(f"     The per-type field set — document_intrinsic / context_extrinsic, the")
+    print(f"     synthesis prose fields, quotes, and any type-conditional sections — is")
+    print(f"     documented in prompts/build.md Phase I (and `research-scaffold.py")
+    print(f"     --explain FIELD` prints any list field's entry shape). Source-read-first:")
+    print(f"     every quote copied verbatim from the scratch files; density is")
+    print(f"     source-driven — no count targets (see meta/conventions.md).")
+    print(f"  3. Validate: python3 scripts/build/validate-research.py {rel}")
 
 
 if __name__ == "__main__":

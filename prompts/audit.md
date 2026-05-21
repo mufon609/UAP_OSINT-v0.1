@@ -105,13 +105,25 @@ trigger an anti-bot challenge that fuzzy-timestamp URLs bypass.
    cite the same source.
 9. **Adjacent-node propagation (the tightening loop)** — when this audit
    follows a build that added new source material, compare the adjacent /
-   linked nodes against that material: does any already-built node now
-   have a primary source it should cite but doesn't? List each. Because
-   the material is already archived and extracted, that update **skips
-   the External Investigator (role 2)** — re-enter the build at the Worker
-   (role 4) on the in-hand scratch for the adjacent node, then the Build
-   Agent (role 5), then re-audit. See `prompts/topology.md`
-   "Orchestration + branches".
+   linked nodes against that material. Two shapes:
+   - (a) **the adjacent node lacks a now-archived source it should cite** —
+     re-enter at the Worker (role 4) to extract the relevant spans from the
+     in-hand scratch, then the Build Agent (role 5), then re-audit.
+   - (b) **the adjacent node already cites the source but carries a stale
+     derived field that a later same-source fact contradicts** (e.g. a
+     `period_end` capped at an old talk date when a newer cited source shows
+     the role continuing) — this **skips role 4 too**: it's a pure
+     Build-Agent (role 5) artifact edit + rebuild, no extraction needed.
+
+   Either shape **skips the External Investigator (role 2)** — no new URL,
+   no new bytes. List each adjacent node + which shape. See
+   `prompts/topology.md` "Orchestration + branches".
+
+   **When run as role 6** of the topology (after an Orchestrator-driven
+   build), this audit is **recommend-only**: emit `adjacent_needs_update[]`
+   in the handoff stub and let the Orchestrator decide whether to enter the
+   loop. When run **standalone** (auditing an existing node on its own), the
+   same session applies the fixes per "Applying corrections" below.
 
 For nodes carrying significant quote material (transcripts, hearing
 events, podcast-heavy person nodes), follow this prompt with
