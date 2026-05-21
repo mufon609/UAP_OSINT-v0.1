@@ -83,6 +83,7 @@ CHECK_PHASE = {
     # extract (role 4) — verbatim quote extraction (the one quote boundary)
     "quotes": "extract",
     "verbatim_quotes": "extract",
+    "document_quote_source": "extract",
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
 

@@ -205,12 +205,18 @@ next session re-derives or gets them wrong:
 
 - **Canonical DIRD slug convention** — `dird-{BlackVault#}-{short-title}`
   (no date); reconcile inbound stub refs to it.
-- **Redacted-author + external-attribution pattern** — when a document
-  FOIA-redacts its own author, preserve that redaction as the document's
-  own fact (`authors_per_document: ['[redacted per FOIA (b)(6)]']`) AND
-  capture the external attribution (e.g. the DIA→Congress list's named
-  author) as a SEPARATE sourced Key Passage + `naming_quirks`; never
-  inject the external author into `authors_per_document`.
+- **Redacted-author pattern** — when a document FOIA-redacts its own
+  author, preserve that redaction as the document's own fact
+  (`authors_per_document: ['[redacted per FOIA (b)(6)]']`) and STOP. Do
+  NOT inject the author from an external source. Where the author is
+  attested elsewhere (e.g. the DIA→Congress products list), that
+  attestation lives on the *attesting* document's OWN node — build that
+  node and link to it. NEVER embed the attesting document's content as a
+  Key Passage on the redacted document's node: a node's Key Passages come
+  only from that node's own source (now enforced by the
+  `document_quote_source` check). Embedding a foreign-source quote made a
+  rendered DIRD node cite itself for words it doesn't contain — a
+  fabrication-class error caught only by manual review.
 - **Document-node load-bearing capture** — wrap-link the author, the
   acknowledged / cited load-bearing entities (correct canonical stubs),
   and catch notable cross-topic quotes (named programs / people / orgs,

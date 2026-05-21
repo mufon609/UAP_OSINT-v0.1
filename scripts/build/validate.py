@@ -99,6 +99,7 @@ from checks._phases import PHASE_CHOICES, in_scope
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
+from checks import document_quote_source as ck_document_quote_source
 from checks import frontmatter_parse as ck_frontmatter_parse
 from checks import frontmatter_required as ck_frontmatter_required
 from checks import governance_files as ck_governance_files
@@ -130,6 +131,7 @@ _NODE_CHECKS = [
     ck_id_path_match,
     ck_status_archetype_kind,
     ck_doc_form_archival_status,
+    ck_document_quote_source,      # extract phase — document Source-link == validated source
     ck_conditionally_required,
     ck_required_sections,
     ck_section_rules,
