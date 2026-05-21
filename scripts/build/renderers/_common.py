@@ -181,6 +181,22 @@ def _source_path(artifact):
 # media / organization / location / finding)
 # ============================================================================
 
+def _compose_attributed_to(ctx, date):
+    """Compose the Attributed-to value from a quote's context + statement_date.
+
+    Appends the date as a trailing segment unless it already appears in the
+    context (dedup). A trailing sentence period on the context is dropped
+    before the append, so the date reads as a clean continuation rather than
+    producing `…Acting Director"., 2024-05`."""
+    ctx = ctx or ""
+    date = date or ""
+    if not date or date in ctx:
+        return ctx
+    if not ctx:
+        return date
+    return f"{ctx.rstrip('.')}, {date}"
+
+
 def _render_attribution_block(quote, artifact):
     """Render the attribution table for a quote — Speaker / Attributed-to /
     Source / Location. When ``quote.speaker_id`` is set (transcript
@@ -193,13 +209,9 @@ def _render_attribution_block(quote, artifact):
     underlying source is a precondition for inclusion (enforced
     artifact-side by the verbatim-quote check), not a rendered claim.
     See meta/conventions.md."""
-    ctx = quote.get("context") or ""
-    date = quote.get("statement_date") or ""
-    if date and date in ctx:
-        attributed_to = ctx
-    else:
-        attributed_to_parts = [p for p in [ctx, date] if p]
-        attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
+    attributed_to = _compose_attributed_to(
+        quote.get("context"), quote.get("statement_date")
+    )
     src = quote.get("source") or {}
     src_path = src.get("path") or ""
     src_link = f"[archived source](../sources/{src_path})" if src_path else ""
@@ -259,13 +271,9 @@ def _render_compact_statement_block(quote, text):
     """One-line blockquote + italicized attribution continuation for
     sub-threshold quotes. Preserves Attributed-to / Source / Location
     inline without the 3-4-row verification table."""
-    ctx = quote.get("context") or ""
-    date = quote.get("statement_date") or ""
-    if date and date in ctx:
-        attributed_to = ctx
-    else:
-        attributed_to_parts = [p for p in [ctx, date] if p]
-        attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
+    attributed_to = _compose_attributed_to(
+        quote.get("context"), quote.get("statement_date")
+    )
     src = quote.get("source") or {}
     src_path = src.get("path") or ""
     src_link = f"[archived source](../sources/{src_path})" if src_path else ""

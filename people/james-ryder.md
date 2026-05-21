@@ -75,7 +75,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?' (London, May 2015; YouTube DUgMd8ic2ig)., 2015-05 |
+| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?' (London, May 2015; YouTube DUgMd8ic2ig), 2015-05 |
 | Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
 | Location | [39:00] |
 
@@ -83,7 +83,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?', referencing the May 2015 Nature publication on the matter halo around the Andromeda galaxy and the spacecraft instrumentation behind that observation., 2015-05 |
+| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?', referencing the May 2015 Nature publication on the matter halo around the Andromeda galaxy and the spacecraft instrumentation behind that observation, 2015-05 |
 | Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
 | Location | [31:33] |
 
@@ -93,7 +93,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', discussing alternative gravity theories. The 'second one' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as 'my good buddy' (line 39:12)., 2018-04-28 |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', discussing alternative gravity theories. The 'second one' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as 'my good buddy' (line 39:12), 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [39:24] |
 
@@ -107,7 +107,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?', section on consciousness research and government psychic-research history. Auto-caption renders 'telepathy' as 'leprosy'., 2015-05 |
+| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?', section on consciousness research and government psychic-research history. Auto-caption renders 'telepathy' as 'leprosy', 2015-05 |
 | Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
 | Location | [1:02:05] |
 
@@ -115,7 +115,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', section on Cold War ESP and psychic research funding history., 2018-04-28 |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', section on Cold War ESP and psychic research funding history, 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [20:50] |
 
@@ -125,7 +125,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust Arcane School Conference London talk 'The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena' ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence ([`/people/lawrence-lucis-trust-moderator`]) opening question about whether there is a rise in unexplained phenomena., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust Arcane School Conference London talk 'The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena' ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence ([`/people/lawrence-lucis-trust-moderator`]) opening question about whether there is a rise in unexplained phenomena, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [05:47]–[06:36] |
 
@@ -133,7 +133,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) summarising the UFO phenomenon by citing Jacques Vallee ([`/people/jacques-vallee`])., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) summarising the UFO phenomenon by citing Jacques Vallee ([`/people/jacques-vallee`]), 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [50:46]–[51:36] |
 
@@ -143,7 +143,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust Arcane School Conference London talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), explicating the talk title and framing the central question., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust Arcane School Conference London talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), explicating the talk title and framing the central question, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [06:50]–[07:42] |
 
@@ -151,7 +151,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [11:01]–[11:29] |
 
@@ -159,7 +159,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), closing slide before the meditation break — three drawings (an artist of devas/fairies, a Graham Hancock ([`/people/graham-hancock`])-ayahuasca participant, a lifelong deva researcher) compared., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), closing slide before the meditation break — three drawings (an artist of devas/fairies, a Graham Hancock ([`/people/graham-hancock`])-ayahuasca participant, a lifelong deva researcher) compared, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [60:00]–[60:57] |
 
@@ -169,7 +169,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [50:00]–[50:44] |
 
@@ -177,7 +177,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), continuing the discussion of the Russian and American jets incident at [53:28] where US fighters and Russian fighters chased the same object from different directions., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), continuing the discussion of the Russian and American jets incident at [53:28] where US fighters and Russian fighters chased the same object from different directions, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [54:08]–[54:14] |
 
@@ -197,7 +197,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe'., 2018-04-28 |
+| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe', 2018-04-28 |
 | Source | [archived source](../sources/news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html) |
 | Location | ¶5 |
 
@@ -205,7 +205,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe'., 2018-04-28 |
+| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe', 2018-04-28 |
 | Source | [archived source](../sources/news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html) |
 | Location | ¶7 |
 
@@ -213,7 +213,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe'. This is the closing sentence of the published excerpt, delivered approximately one month before Ryder's death., 2018-04-28 |
+| Attributed to | Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk 'The Garment of God', published in a Lucis Trust Bi annual letter under the title 'Science is our meditation on the nature of the universe'. This is the closing sentence of the published excerpt, delivered approximately one month before Ryder's death, 2018-04-28 |
 | Source | [archived source](../sources/news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html) |
 | Location | ¶11 |
 
@@ -223,7 +223,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God: Esoterically and Scientifically' (April 28-29, 2018), section on telepathy and remote viewing research history., 2018-04-28 |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God: Esoterically and Scientifically' (April 28-29, 2018), section on telepathy and remote viewing research history, 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [1:08:10] |
 
@@ -231,7 +231,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God: Esoterically and Scientifically' (April 28-29, 2018), introducing his reference list which includes the 'ESP Wars: East and West' book., 2018-04-28 |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God: Esoterically and Scientifically' (April 28-29, 2018), introducing his reference list which includes the 'ESP Wars: East and West' book, 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [54:57] |
 
@@ -239,7 +239,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', clarifying the assembly date of the 'ESP Wars' book., 2018-04-28 |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', clarifying the assembly date of the 'ESP Wars' book, 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [55:50] |
 

@@ -118,7 +118,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 | Field | Value |
 |---|---|
-| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8., 1972-06-17 |
+| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8, 1972-06-17 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 8, footnote |
 

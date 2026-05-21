@@ -55,7 +55,7 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 
 | Field | Value |
 |---|---|
-| Attributed to | NYT December 16, 2017; quoted excerpt from Elizondo's resignation letter dated October 4, 2017 addressed to Defense Secretary Jim Mattis., 2017-10-04 |
+| Attributed to | NYT December 16, 2017; quoted excerpt from Elizondo's resignation letter dated October 4, 2017 addressed to Defense Secretary Jim Mattis, 2017-10-04 |
 | Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
 | Location | ¶ beginning "But Mr. Elizondo said the only thing that had ended" |
 
@@ -65,7 +65,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | NYT December 16, 2017; NYT-reported quotation from Elizondo's October 4, 2017 resignation letter to Defense Secretary Jim Mattis., 2017-10-04 |
+| Attributed to | NYT December 16, 2017; NYT-reported quotation from Elizondo's October 4, 2017 resignation letter to Defense Secretary Jim Mattis, 2017-10-04 |
 | Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
 | Location | ¶ beginning "Mr. Elizondo, in his resignation letter of Oct. 4" |
 
@@ -73,7 +73,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | NYT December 16, 2017; Elizondo on-record statement to Cooper/Blumenthal/Kean characterizing the post-2012 funding-vs-program continuity question and his October 2017 resignation rationale., 2017-12-16 |
+| Attributed to | NYT December 16, 2017; Elizondo on-record statement to Cooper/Blumenthal/Kean characterizing the post-2012 funding-vs-program continuity question and his October 2017 resignation rationale, 2017-12-16 |
 | Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
 | Location | ¶ beginning "But Mr. Elizondo said the only thing that had ended" |
 
@@ -90,7 +90,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his 2009 recruitment into the AATIP-era program by two unnamed individuals., 2024-08-23 |
+| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his 2009 recruitment into the AATIP-era program by two unnamed individuals, 2024-08-23 |
 | Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
 | Location | [3:52] |
 
@@ -110,7 +110,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his first meeting with Dr. James Lacatski ([`/people/james-lacatski`]) at an unnamed DC-area facility shortly after his 2009 recruitment., 2024-08-23 |
+| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his first meeting with Dr. James Lacatski ([`/people/james-lacatski`]) at an unnamed DC-area facility shortly after his 2009 recruitment, 2024-08-23 |
 | Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
 | Location | [5:53] |
 
@@ -126,7 +126,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn Question-for-the-Record response to Rep. Eric Burlison, December 19, 2024; submitted under penalty of 18 U.S.C. § 1001 following the November 13, 2024 House Oversight hearing., 2024-12-19 |
+| Attributed to | Sworn Question-for-the-Record response to Rep. Eric Burlison, December 19, 2024; submitted under penalty of 18 U.S.C. § 1001 following the November 13, 2024 House Oversight hearing, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q1, ¶1 |
 
@@ -144,7 +144,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his pre-AATIP disposition toward the UFO topic., 2024-08-23 |
+| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his pre-AATIP disposition toward the UFO topic, 2024-08-23 |
 | Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
 | Location | [7:18] |
 
@@ -157,7 +157,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q2 asking whether U.S. military or defense contractors employ exotic materials of non-human or non-terrestrial origin., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q2 asking whether U.S. military or defense contractors employ exotic materials of non-human or non-terrestrial origin, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q2, ¶1 |
 
@@ -167,7 +167,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q4(a) asking whether the U.S. military or defense contractors have recovered craft of non-human origin and whether non-human entities were associated with these craft., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q4(a) asking whether the U.S. military or defense contractors have recovered craft of non-human origin and whether non-human entities were associated with these craft, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q4(a), ¶1 |
 
@@ -181,7 +181,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; appended to the Q4 (recovered craft / biological specimens) response., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; appended to the Q4 (recovered craft / biological specimens) response, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q4, closing paragraph |
 
@@ -192,7 +192,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q6 asking about the journalist Christopher Sharp claim regarding Bigelow Aerospace, Lockheed Martin, and CIA blocking of materials transfer., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q6 asking about the journalist Christopher Sharp claim regarding Bigelow Aerospace, Lockheed Martin, and CIA blocking of materials transfer, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q6, ¶1 |
 
@@ -207,7 +207,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo's time at AATIP. First half of Q7 response (the response splits across a PDF page break; second half captured in q16)., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo's time at AATIP. First half of Q7 response (the response splits across a PDF page break; second half captured in q16), 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (first half — pre-page-break) |
 
@@ -216,7 +216,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (second half — post-page-break) |
 
@@ -231,7 +231,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q9 asking about CIA efforts to block UAP-related materials or information transfer during Elizondo's tenure at AATIP., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q9 asking about CIA efforts to block UAP-related materials or information transfer during Elizondo's tenure at AATIP, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q9, ¶1 |
 
@@ -246,7 +246,7 @@ _Direct observation._
 
 | Field | Value |
 |---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q10 asking whether the CIA or other government agencies are actively working to conceal UAP-related information from the public., 2024-12-19 |
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q10 asking whether the CIA or other government agencies are actively working to conceal UAP-related information from the public, 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q10, ¶1 |
 

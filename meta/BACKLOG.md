@@ -82,17 +82,7 @@ surfacing of top-level prose drift proves annoying.
 
 Renderer-touching items that batch into a single polish pass.
 
-### B1 — Statements "Attributed to": strip trailing punctuation before appending the date
-
-The person renderer's statement-block builder composes the Attributed-to
-cell as `{context}, {statement_date}` (it already skips the date when the
-context contains it). When `context` ends in punctuation — a period, or a
-closing quote-plus-period — the result reads awkwardly:
-`…Acting Director"., 2022-05-27`. Strip a trailing `.` / `"` / `."` before
-appending the date, or render the date as its own segment. Renderer-touching:
-the change shifts every person node's body, so it must batch with a
-corpus-wide person-node rebuild (the boundary check compares each committed
-body against a fresh dry-run render). Surfaced by the james-holly build.
+_(none)_
 
 ---
 

@@ -51,7 +51,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Lawrence |
-| Attributed to | Opening of the Lucis Trust Arcane School Conference London 2017 session; the moderator (Lawrence) introduces the speaker and the talk topic., 2017-06-10 |
+| Attributed to | Opening of the Lucis Trust Arcane School Conference London 2017 session; the moderator (Lawrence) introduces the speaker and the talk topic, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [00:00]–[00:21] |
 
@@ -64,7 +64,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Lawrence |
-| Attributed to | Moderator (Lawrence) framing the talk''s theosophical premise before handing off to Ryder., 2017-06-10 |
+| Attributed to | Moderator (Lawrence) framing the talk''s theosophical premise before handing off to Ryder, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [03:26]–[03:47] |
 
@@ -77,7 +77,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder responding to the moderator's question about whether there is a rise in unexplained phenomena., 2017-06-10 |
+| Attributed to | Ryder responding to the moderator's question about whether there is a rise in unexplained phenomena, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [05:47]–[06:36] |
 
@@ -90,7 +90,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder explaining the rending-of-the-veils thesis after the moderator's framing., 2017-06-10 |
+| Attributed to | Ryder explaining the rending-of-the-veils thesis after the moderator's framing, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [06:50]–[07:42] |
 
@@ -103,7 +103,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old., 2017-06-10 |
+| Attributed to | Ryder narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [11:01]–[11:29] |
 
@@ -116,7 +116,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Moderator (Lawrence) framing crop circles as devic activity and asking Ryder to evaluate; the conversation has moved through earthquake lights and electromagnetic vortices., 2017-06-10 |
+| Attributed to | Moderator (Lawrence) framing crop circles as devic activity and asking Ryder to evaluate; the conversation has moved through earthquake lights and electromagnetic vortices, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [35:55]–[36:40] |
 
@@ -129,7 +129,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Moderator framing Ryder's prior orb-observation attestation in Alice Bailey terms., 2017-06-10 |
+| Attributed to | Moderator framing Ryder's prior orb-observation attestation in Alice Bailey terms, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [39:18]–[39:34] |
 
@@ -142,7 +142,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense., 2017-06-10 |
+| Attributed to | Ryder presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [50:00]–[50:44] |
 
@@ -155,7 +155,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder summarising the UFO phenomenon by citing Jacques Vallée., 2017-06-10 |
+| Attributed to | Ryder summarising the UFO phenomenon by citing Jacques Vallée, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [50:46]–[51:36] |
 
@@ -168,7 +168,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder discussing a Russian-American jet encounter with a UAP that disappeared on approach., 2017-06-10 |
+| Attributed to | Ryder discussing a Russian-American jet encounter with a UAP that disappeared on approach, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [53:28]–[54:14] |
 
@@ -181,7 +181,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Moderator and Ryder discussing the recently-discovered upper-atmosphere sprites / dwarves; Ryder confirms the discovery context., 2017-06-10 |
+| Attributed to | Moderator and Ryder discussing the recently-discovered upper-atmosphere sprites / dwarves; Ryder confirms the discovery context, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [54:21]–[54:46] |
 
@@ -194,7 +194,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Closing slide of Ryder's talk before the meditation break — three drawings (an artist of devas/fairies, a Hancock-ayahuasca participant, a lifelong deva researcher) compared., 2017-06-10 |
+| Attributed to | Closing slide of Ryder's talk before the meditation break — three drawings (an artist of devas/fairies, a Hancock-ayahuasca participant, a lifelong deva researcher) compared, 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [60:00]–[60:57] |
 

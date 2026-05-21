@@ -71,7 +71,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 
 | Field | Value |
 |---|---|
-| Attributed to | Preface and Introduction opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015, 'Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering' (29 March 2010; ICOD 1 December 2009; U//FOUO). Author: H.E. Puthoff, EarthTech International, Austin, Texas. DIA AAWSA Program Manager: James T. Lacatski, D.Eng., 2010-03-29 |
+| Attributed to | Preface and Introduction opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015, 'Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering' (29 March 2010; ICOD 1 December 2009; U//FOUO). Author: H.E. Puthoff, EarthTech International, Austin, Texas. DIA AAWSA Program Manager: James T. Lacatski, D.Eng, 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
 | Location | p. iii, ¶1 |
 

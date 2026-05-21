@@ -75,7 +75,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 | Field | Value |
 |---|---|
-| Attributed to | Closing paragraph of the Holly-authored memo, immediately above the digital signature block "James A. Holly / Acting Director"., 2022-05-27 |
+| Attributed to | Closing paragraph of the Holly-authored memo, immediately above the digital signature block "James A. Holly / Acting Director", 2022-05-27 |
 | Source | [archived source](../sources/government/notre-dame-ipmo-memo-20220527.pdf) |
 | Location | ¶4 |
 
@@ -85,7 +85,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 | Field | Value |
 |---|---|
-| Attributed to | Opening characterization of the panel's "unanimous verdict" on the U.S. influence enterprise vs. China and Russia, at the SOF Week conference in Tampa. The Defense One article attributes the line directly to "James Holly, who leads the defense secretary's year-old Influence and Perception Management Office"., 2024-05 |
+| Attributed to | Opening characterization of the panel's "unanimous verdict" on the U.S. influence enterprise vs. China and Russia, at the SOF Week conference in Tampa. The Defense One article attributes the line directly to "James Holly, who leads the defense secretary's year-old Influence and Perception Management Office", 2024-05 |
 | Source | [archived source](../sources/news/defense-one-sof-week-oie-panel-20240524.html) |
 | Location | ¶ I think the state of this enterprise is weak |
 
@@ -93,7 +93,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 | Field | Value |
 |---|---|
-| Attributed to | Article frames the quote with "influence warfare needs centralization and a leader with the sufficient authority to be taken seriously, not just by the Department of Defense but also the White House." Editorial bracket insertions ([information operations activity], [Military Information Support Operations]) and the … ellipsis are preserved verbatim from the source., 2024-05 |
+| Attributed to | Article frames the quote with "influence warfare needs centralization and a leader with the sufficient authority to be taken seriously, not just by the Department of Defense but also the White House." Editorial bracket insertions ([information operations activity], [Military Information Support Operations]) and the … ellipsis are preserved verbatim from the source, 2024-05 |
 | Source | [archived source](../sources/news/defense-one-sof-week-oie-panel-20240524.html) |
 | Location | ¶ All of this [information operations activity] occurs at the two-star level |
 

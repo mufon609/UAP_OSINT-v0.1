@@ -65,7 +65,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 | Field | Value |
 |---|---|
-| Attributed to | Sol Foundation Inaugural Symposium, Stanford University, November 17–18, 2023; Nell's opening acknowledgments. "Gary" is auto-caption for Garry Nolan; "Peter" is Peter Skafish; "Saul" is auto-caption for Sol Foundation., 2023-11-18 |
+| Attributed to | Sol Foundation Inaugural Symposium, Stanford University, November 17–18, 2023; Nell's opening acknowledgments. "Gary" is auto-caption for Garry Nolan; "Peter" is Peter Skafish; "Saul" is auto-caption for Sol Foundation, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/nell-sol-foundation-2023-downloaded.md) |
 | Location | [00:30] |
 
@@ -108,7 +108,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 | Field | Value |
 |---|---|
-| Attributed to | SALT iConnections NY, May 21, 2024; interviewer asks Nell whether he believes a higher form of non-human intelligence has visited the planet. Nell's answer begins mid-segment., 2024-05-21 |
+| Attributed to | SALT iConnections NY, May 21, 2024; interviewer asks Nell whether he believes a higher form of non-human intelligence has visited the planet. Nell's answer begins mid-segment, 2024-05-21 |
 | Source | [archived source](../sources/transcripts/nell-salt-2024-downloaded.md) |
 | Location | [02:05] |
 
