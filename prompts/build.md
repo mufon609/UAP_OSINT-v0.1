@@ -225,7 +225,7 @@ the absent word entirely. Source-vocabulary discipline applies
 token-by-token; English-grammar discipline applies to the rendered
 prose. When the two collide, restructure the sentence.
 
-### Step 6. Populate `quotes` (bounded agent task T2)
+### Step 6. Populate `quotes` (bounded agent task: extract-quotes)
 
 **Person artifacts — speaker-attribution rule.** `quotes[]` on a
 person artifact carries statements *by* the subject — first-person
@@ -240,7 +240,7 @@ own artifact and on the subject's structured cross-reference surfaces
 the full bright-line guidance, including the co-authored-publications
 borderline cases.
 
-**Agent task T2:**
+**Agent task — extract-quotes:**
 - **Input:** extracted plaintext scratch file(s)
 - **Output:** YAML fragment of `quotes:` entries, each with:
   - `id` (q1, q2, q3, …)
@@ -370,9 +370,9 @@ entity-registration step: write the wrap where the entity is named.
 - Don't self-wrap the artifact's own subject — its identity is carried
   by the node body (Identity / Overview), not by a wrap to itself.
 
-### Step 8. Populate `naming_quirks` (bounded agent task T4)
+### Step 8. Populate `naming_quirks` (bounded agent task: naming-quirks)
 
-**Agent task T4:**
+**Agent task — naming-quirks:**
 - **Input:** extracted plaintext + populated `quotes`
 - **Output:** YAML fragment of `naming_quirks:` — one entry per
   observed spelling/naming oddity that differs from canonical form.
@@ -393,13 +393,13 @@ entity-registration step: write the wrap where the entity is named.
   resolution should be `preserve-as-sic-in-quotes` so rendered node
   prose knows to use canonical form outside the quote.
 
-### Step 9. Populate `rumors` (bounded agent task T5, conditional)
+### Step 9. Populate `rumors` (bounded agent task: rumors, conditional)
 
 **Only when target node type is `person`, `organization`, `event`, or
 `location`.** Document nodes, transcripts, media, and findings do not
 carry a rumors section.
 
-**Agent task T5:**
+**Agent task — rumors:**
 - **Input:** everything populated so far + knowledge of
   widely-circulating claims about the entity
 - **Output:** YAML fragment of `rumors:` — widely-reported claims that
@@ -924,11 +924,11 @@ Each task has clear I/O and can be run as a focused agent invocation:
 
 | Task | Input | Output |
 |---|---|---|
-| T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
-| T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
-| T5 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
+| extract-quotes | Plaintext | YAML `quotes:` fragment |
+| naming-quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
+| rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
 
-Tasks are **composable** (later tasks can use T2's output). They are
+Tasks are **composable** (later tasks can use extract-quotes' output). They are
 **validated by humans** before being merged into the research artifact.
 They are **bounded** — each task produces a specific YAML fragment, not
 free-form content. They are the single-session seeds the multi-agent
@@ -946,8 +946,8 @@ orchestration branches, and the script-ownership split all live in
 `prompts/topology.md`. Each role has a paste-ready launch prompt at
 `prompts/agent-{orchestrator,internal-investigator,external-investigator,
 archive,worker,build,error}.md`; role 6 is `prompts/audit.md`. The bounded
-tasks T2/T4/T5 above are the single-session seeds the Worker and Build
-roles generalize.
+tasks above (extract-quotes / naming-quirks / rumors) are the single-session
+seeds the Worker and Build roles generalize.
 
 ---
 
