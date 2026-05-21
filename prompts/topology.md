@@ -146,9 +146,6 @@ queued_sources:                # may be empty — an exhausted record is a valid
     tier: primary              # primary | secondary-lead-only
     read_confirmed: true       # content was read, not URL-only
     rationale: <one line: why load-bearing>
-evaluated_and_rejected:        # leads read and excluded — so a later session doesn't re-chase
-  - url: https://example.com/secondary-rehash
-    reason: <one line: secondary-only / non-additive / not-archivable>
 unfilled_gaps: []
 validator_findings: []
 ```

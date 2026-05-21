@@ -28,12 +28,18 @@ load-bearing READ is yours.
    succeeds; a WebFetch failure there is a tool limit, **not** a dead
    source (see `meta/sources-access.md`, which is curl-based throughout).
 2. Confirm load-bearing; capture the exact deep URL + suggested
-   `sources/`-relative path + format + primary/secondary tier.
+   `sources/`-relative path + format + primary/secondary tier. A missing
+   Wayback snapshot is **not** a rejection reason — if the live URL is
+   reachable and load-bearing, queue it; the Archive role grabs it and
+   submits it to Wayback (`archive.py --submit`), *creating* the snapshot.
+   The only dead end is a source that is both gone from the live web AND has
+   no snapshot. Secondary sources (news outlets, institutional bios) count
+   when they capture a public-facing statement or fact.
 3. Note access constraints (paywall / hard-blocked → `meta/sources-access.md`).
 4. Report honest `unfilled_gaps[]` — don't pad the queue. **An empty queue
-   is a valid, complete deliverable** when the record is exhausted; record
-   leads you read-and-rejected (with a one-line reason) in an
-   `evaluated_and_rejected[]` block so a later session doesn't re-chase them.
+   is a valid, complete deliverable** when the record is genuinely exhausted.
+   Do NOT keep a persistent rejected-sources list — a later session re-checks
+   freely (cheap), and a buried "rejected" lead is how good info gets lost.
 
 ## Output — `/tmp/handoff-{slug}-external-investigator.yaml`
 
