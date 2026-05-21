@@ -18,12 +18,14 @@ you do not judge load-bearing-ness (role 2 did) or extract quotes (role 4).
    `python3 scripts/tools/manifest.py add {URL} --path {category}/{file}
    --format {fmt}` (sets archive bits). Blocked sites →
    `meta/sources-access.md`; submit to Wayback where needed.
-2. **Register** on the artifact:
-   `python3 scripts/build/research-scaffold.py --target {type}/{slug}
-   --sources {path1,path2,…}` (idempotent; appends to `primary_sources[]`).
-3. **Extract** each new source:
+2. **Extract** each new source:
    `python3 scripts/build/extract-source.py --source {path}` →
    `/tmp/scratch-{slug}-N.txt`.
+
+You do **not** scaffold the artifact. Report your archived paths in the
+stub; the Orchestrator scaffolds once (role 1's reused sources + yours, in
+a single `research-scaffold --sources` call) after you finish, before the
+Worker runs.
 
 ## Output — `/tmp/handoff-{slug}-archive.yaml`
 
@@ -32,7 +34,7 @@ Schema in `prompts/topology.md` (`archived[]`,
 
 ## After you finish
 
-Confirm manifest health:
-`python3 scripts/build/validate.py --phase archive` and
-`python3 scripts/build/validate-research.py --phase archive meta/research/{slug}.yaml`.
-Hand the scratch files to the Worker (one invocation per source).
+Confirm manifest health: `python3 scripts/build/validate.py --phase archive`
+(the artifact doesn't exist yet — the Orchestrator's post-scaffold
+`validate-research.py --phase archive` validates `primary_sources`). Hand
+the archived paths + scratch files back to the Orchestrator.

@@ -47,6 +47,7 @@ from lib._common import (  # noqa: E402
     WAYBACK_URL_RE,
     content_dirs,
     format_from_path,
+    is_gitignored,
     iter_artifacts,
     load_manifest,
     normalize_source_rel_path,
@@ -267,18 +268,26 @@ def cmd_summary(args):
 
 
 def cmd_verify_paths(args):
+    """Confirm every archived artifact's file exists on disk. A missing
+    git-TRACKED file is real breakage (exit 1); a missing git-IGNORED file
+    (the large sources/video/ media kept out of the remote) is
+    expected-absent on a fresh clone — reported, but not a failure."""
     entries = load_manifest()
-    missing = []
+    missing = []           # git-tracked, absent — real breakage
+    expected_absent = []   # git-ignored media, absent — expected on a clone
     for entry, artifact in iter_artifacts(entries):
         path = artifact.get("path")
-        if path:
-            full = SOURCES_DIR / path
-            if not full.exists():
-                missing.append((entry["url"], path))
+        if not path or (SOURCES_DIR / path).exists():
+            continue
+        bucket = expected_absent if is_gitignored(f"sources/{path}") else missing
+        bucket.append((entry["url"], path))
     for url, path in missing:
         print(f"  MISSING  sources/{path}")
         print(f"           (for {url})")
-    print(f"\n{len(missing)} archived artifacts with missing local files")
+    if expected_absent:
+        print(f"\n{len(expected_absent)} git-ignored media absent locally "
+              f"(expected on a fresh clone; recover via source URL / Wayback)")
+    print(f"\n{len(missing)} git-tracked artifacts with missing local files")
     sys.exit(1 if missing else 0)
 
 

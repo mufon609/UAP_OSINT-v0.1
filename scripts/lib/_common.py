@@ -14,6 +14,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
+from functools import lru_cache
 from pathlib import Path
 
 import yaml
@@ -624,8 +625,8 @@ def format_from_path(path):
 
 def compute_sha256(file_path):
     """Stream-compute SHA256 of a file. Returns hex digest or None on
-    read error. Shared between manifest.py (CLI archival) and the
-    manifest_checksums validator check."""
+    read error. Used by the photo-identity baseline pipeline
+    (detect-faces.py) to fingerprint baseline crops."""
     try:
         h = hashlib.sha256()
         with open(file_path, "rb") as f:
@@ -634,6 +635,34 @@ def compute_sha256(file_path):
         return h.hexdigest()
     except OSError:
         return None
+
+
+@lru_cache(maxsize=None)
+def is_gitignored(rel_to_repo):
+    """True if ``rel_to_repo`` (e.g. 'sources/video/x.mp4') is git-ignored.
+
+    Uses ``git check-ignore -q`` — which classifies a path string whether
+    or not the file exists on disk (exit 0 = ignored, 1 = not ignored,
+    128 = error / not a repo). Falls back to a ``sources/video/`` prefix
+    heuristic when git is unavailable (tarball checkout) so the exemption
+    still holds. Cached: the same paths recur across a run.
+
+    The large primary-source media (``sources/video/``) is deliberately
+    kept out of the git remote per ``.gitignore`` (file-size limits), so a
+    missing git-ignored file is expected-absent on a fresh clone, not a
+    broken manifest path. Source content is recoverable from the manifest
+    URL + Wayback. Shared by manifest.py verify-paths and the
+    manifest_files_present validator check."""
+    try:
+        proc = subprocess.run(
+            ["git", "check-ignore", "-q", rel_to_repo],
+            cwd=REPO_ROOT, capture_output=True,
+        )
+        if proc.returncode in (0, 1):
+            return proc.returncode == 0
+    except OSError:
+        pass
+    return rel_to_repo.startswith("sources/video/")
 
 
 # Content-node types the renderer (build-from-research.py) and the

@@ -19,36 +19,11 @@ all manifest checks. Verification of source content is the reader's, via
 the entry's URL + Wayback snapshot.
 """
 
-import subprocess
-from functools import lru_cache
-
 from checks import Issue
-from lib._common import REPO_ROOT, SOURCES_DIR, iter_artifacts
+from lib._common import SOURCES_DIR, is_gitignored, iter_artifacts
 
 
 CHECK_NAME = "manifest_files_present"
-
-
-@lru_cache(maxsize=None)
-def _is_gitignored(rel_to_repo):
-    """True if ``rel_to_repo`` (e.g. 'sources/video/x.mp4') is git-ignored.
-
-    Uses ``git check-ignore -q`` — which classifies a path string whether
-    or not the file exists on disk, exactly the missing-file case here
-    (exit 0 = ignored, 1 = not ignored, 128 = error / not a repo). Falls
-    back to a ``sources/video/`` prefix heuristic when git is unavailable
-    (tarball checkout) so the exemption still holds. Cached: the same
-    paths recur across a validator run."""
-    try:
-        proc = subprocess.run(
-            ["git", "check-ignore", "-q", rel_to_repo],
-            cwd=REPO_ROOT, capture_output=True,
-        )
-        if proc.returncode in (0, 1):
-            return proc.returncode == 0
-    except OSError:
-        pass
-    return rel_to_repo.startswith("sources/video/")
 
 
 def check(ctx):
@@ -63,7 +38,7 @@ def check(ctx):
         if full.exists():
             continue
         rel = f"sources/{path}"
-        if _is_gitignored(rel):
+        if is_gitignored(rel):
             # Expected-absent on a fresh clone (git-ignored large media).
             # Record out-of-band; not an Issue. Recoverable from the
             # source URL / Wayback per the manifest entry.

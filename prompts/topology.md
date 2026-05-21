@@ -16,8 +16,8 @@ Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 
 | # | Role | Reads sources? | Produces | Feedback phase |
 |---|---|---|---|---|
-| 0 | **Orchestrator** | no | sequencing + the chain of handoff stubs | — (preflight on the scaffold) |
-| 1 | **Internal Investigator** | archived only | reuse survey (`reusable_sources[]`, `gaps[]`) | — (preflight + manifest tools) |
+| 0 | **Orchestrator** | no | sequencing + handoff stubs + the single post-investigation scaffold | `archive` (after the scaffold) |
+| 1 | **Internal Investigator** | archived only | reuse survey (`reusable_sources[]`, `gaps[]`) + classification | — (manifest tools; no artifact yet) |
 | 2 | **External Investigator** | yes (candidate content) | confirmed deep-URL queue | — (`manifest.py add --dry-run` per lead) |
 | 3 | **Archive** | yes (downloads bytes) | manifest entries + `primary_sources[]` + scratch | `archive` |
 | 4 | **Worker** (`worker_kind`) | yes (one source) | `quotes[]` + advisory `claim_group` + cross-ref candidates | `extract` |
@@ -97,9 +97,10 @@ generator feeding role 2 — a candidate list, never an inclusion decision.
 
 | role | runs | writes into the stub's `validator_findings` |
 |---|---|---|
-| 1 Internal Investigator | `manifest.py verify-paths` on the reuse set + `validate-research.py --phase preflight` | manifest health of the sources it plans to reuse |
+| 1 Internal Investigator | `manifest.py verify-paths` on the reuse set | manifest health of the reuse set (no artifact exists yet) |
 | 2 External Investigator | `manifest.py add --dry-run` per lead | malformed / colliding leads, caught before handoff |
-| 3 Archive | `validate.py --phase archive` + `validate-research.py --phase archive {artifact}` | manifest family + `primary_sources` shape |
+| 3 Archive | `validate.py --phase archive` (manifest health) | manifest family — no artifact until the post-Archive scaffold |
+| 0 Orchestrator — scaffold | `validate-research.py --phase archive {artifact}` | the scaffold parses + `primary_sources` registered correctly (the artifact's first validation) |
 | 4 Worker | `validate-research.py --phase extract {artifact}` | the verbatim-quote boundary (all worker kinds share it) |
 | 5 Build, organize | `validate-research.py --phase organize {artifact}` | synthesis entry-shape |
 | 5 Build, link | `validate-research.py --phase link {artifact}` | cross-refs + naming_quirks + rumors + prose-drift |
@@ -258,10 +259,9 @@ check fails, the Error Agent maps `check_name` → its phase (via
 
 | script | owner |
 |---|---|
-| `new.py` | role 0 at kickoff — creates the node `.md` from the template (before `research-scaffold.py`, which requires the node) |
+| `new.py` + `research-scaffold.py` | role 0, **once, after roles 1–3** settle the classification + source set (NOT at kickoff): `new.py` creates the node `.md`, then `research-scaffold.py --sources {all paths}` writes the artifact. `research-scaffold` writes fresh and cannot append, so every source goes in this one call. |
 | `manifest.py add` | role 3 (roles 1/6 only read the manifest) |
 | `extract-source.py` | role 1 (existing sources) + role 3 (new sources) — each source extracted once |
-| `research-scaffold.py` | role 0 at kickoff (after `new.py`; empty artifact shell, no `--sources`); role 3 registers sources later |
 | `build-from-research.py` (+ auto `associate.py` + `validate.py`) | role 5 |
 | `review-coverage.py` | role 5 (gate) + role 6 (audit) |
 | `associate.py` | auto via `build-from-research.py`; standalone only at role 6 after a propagation edit |

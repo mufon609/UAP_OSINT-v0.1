@@ -15,23 +15,31 @@ and carries the handoff stubs between them. (This role is NOT the old
 
 ## What you do
 
-1. **Scaffold the node, then its artifact.** Create the node `.md` from
-   the template (archetype / kind / form come from the user's scope):
-   `python3 scripts/build/new.py {type} --slug {slug} [--archetype|--kind|--form …] --name "…"`.
-   Then scaffold the empty research artifact:
-   `python3 scripts/build/research-scaffold.py --target {type}/{slug}`
-   (no `--sources` yet — the Archive agent registers them after archival;
-   `research-scaffold.py` requires the node to exist, hence `new.py` first).
-   Confirm the artifact parses:
-   `python3 scripts/build/validate-research.py --phase preflight meta/research/{slug}.yaml`.
-2. **Launch the agents in order**, reading each
-   `/tmp/handoff-{slug}-{agent}.yaml` before launching the next and passing
-   its `outputs_produced` as the next agent's `inputs_consumed`:
+1. **Sequence the agents**, reading each `/tmp/handoff-{slug}-{agent}.yaml`
+   before launching the next and passing its `outputs_produced` as the next
+   agent's `inputs_consumed`:
    `1 internal-investigator → 2 external-investigator → 3 archive →
-   4 worker (one per source, parallelizable) → 5 build → 6 audit`.
+   [scaffold] → 4 worker (one per source, parallelizable) → 5 build → 6 audit`.
+
+2. **Scaffold once — after the investigation, never at kickoff.** Two things
+   the scaffold needs are *investigation outputs*, not kickoff inputs: the
+   node's classification (person **archetype** / org **kind** / document
+   **form** — determined by roles 1–2) and the confirmed **source set**
+   (role 1 reuse + role 3 archival). So scaffold only after roles 1–3 settle
+   both, in a single pass:
+   `python3 scripts/build/new.py {type} --slug {slug} --{archetype|kind|form} … --name "…"`
+   (classification from the investigation), then
+   `python3 scripts/build/research-scaffold.py --target {type}/{slug} --sources {all confirmed paths}`.
+   Register **every** source in this one call — `research-scaffold` writes the
+   artifact fresh and errors on an existing one (no incremental "add a
+   source later"). Validate the scaffold:
+   `python3 scripts/build/validate-research.py --phase archive meta/research/{slug}.yaml`
+   (preflight parse/structure + `primary_sources` registered correctly).
+
 3. **Take the documented branches:**
    - **all-internal:** role 1 sets `all_internal: true` / `gaps: []` → skip
-     roles 2 and 3; jump to role 4 on the reused scratch files.
+     roles 2 and 3; scaffold from role 1's classification + reused sources,
+     then jump to role 4.
    - **tightening loop:** role 6 flags `adjacent_needs_update[]` with
      `skip_external: true` → re-enter at role 4 for that node (material
      already archived), then 5 → 6 until no adjacent node flags.
@@ -46,7 +54,7 @@ scope: <one line from the user>
 plan: [internal-investigator, external-investigator, archive, worker, build, audit]
 branch_decisions: []     # e.g. "skip external+archive: all sources internal"
 stubs_seen: []
-validator_findings: []   # validate-research.py --phase preflight on the scaffold
+validator_findings: []   # validate-research.py --phase archive on the scaffold
 ```
 
 `/tmp` only; never committed (the manifest + artifact are the source of truth).

@@ -51,9 +51,12 @@ _PHASE_ALIASES = {
     "builder": "render",
 }
 
-# Everything the ``--phase`` flag accepts: the canonical names plus the
-# back-compat aliases.
-PHASE_CHOICES = PHASES + tuple(_PHASE_ALIASES)
+# Everything the ``--phase`` flag accepts: the canonical names, the
+# back-compat aliases, and ``preflight`` (parse/structure-only — runs just
+# the always-on checks, e.g. to confirm a freshly scaffolded artifact
+# parses before any content exists). ``in_scope`` already routes
+# ``preflight`` to the preflight checks alone.
+PHASE_CHOICES = ("preflight",) + PHASES + tuple(_PHASE_ALIASES)
 
 # check CHECK_NAME -> phase whose output it validates.
 CHECK_PHASE = {
