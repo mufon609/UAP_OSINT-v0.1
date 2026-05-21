@@ -262,13 +262,16 @@ manifest entry (matching the parent PDF entry).
 
 **Sibling-production method standard.** The four paths above are
 interchangeable on fidelity, but they are NOT interchangeable on
-*uniformity*: the VLM path is subject to the model provider's
-*generative* content filter, which false-positives on legitimate
-dual-use technical content (observed: some AAWSAP DIRDs on exotic
-propulsion / energy physics block mid-transcription). That is a tooling
-limitation, NOT a signal about a source's relevance — the content is in
-scope. A dedicated OCR engine does text *recognition*, not generation,
-so it is filter-immune and uniformly applicable. The standard method
+*uniformity*: the VLM (vision-language model) path runs through the
+model provider's *generative* content-safety filter — a platform-level
+guardrail on the model's output, entirely separate from this
+repository's topic scope and editorial rules. It can fire unpredictably
+mid-transcription, and its trigger is opaque: in practice it has blocked
+one source while transcribing another of comparable subject matter
+cleanly, so it does NOT track topic scope or any clean content category,
+and is never a signal about a source's relevance. A dedicated OCR engine
+does text *recognition*, not generation, so it is filter-immune and
+uniformly applicable. The standard method
 ladder for every OCR-scan / extraction-lossy sibling:
 
 1. **Default — VLM page-image read** (path 3): highest fidelity on
