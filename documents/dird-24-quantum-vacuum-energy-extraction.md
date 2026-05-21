@@ -26,7 +26,7 @@ created: 2026-05-21
 
 ## Description
 
-Concepts for Extracting Energy From the Quantum Vacuum. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-007; UNCLASSIFIED appears on every page. On the page where the Prepared by and Author appear, the document gives (b)(3):10 USC 424 and Defense Intelligence Agency ([`/organizations/dia`]) and, on the Author line, (b)(6). An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document's own Author line is withheld under FOIA exemption (b)(6), but the DIA list of all products produced under the AATIP contract, transmitted to Congress (JAN 09 2018), gives attachment 14 as Concepts for Extracting Energy from the Quantum Vacuum, Dr. Eric Davis ([`/people/eric-davis`]), EarthTech International ([`/organizations/earthtech-international`]).
+Concepts for Extracting Energy From the Quantum Vacuum. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-007; UNCLASSIFIED appears on every page. On the page where the Prepared by and Author appear, the document gives (b)(3):10 USC 424 and Defense Intelligence Agency ([`/organizations/dia`]) and, on the Author line, (b)(6). An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager.
 
 The Summary characterized the vacuum of space as filled with electromagnetic waves, random in phase and amplitude, referred to as the electromagnetic quantum vacuum, the lowest energy state of otherwise empty space; integrated over all frequency modes up to the Planck frequency it represents an energy density far in excess of any other known energy source, even if only an infinitesimal fraction is accessible. This zero-point field (ZPF) energy is responsible for well-known physical effects such as the Lamb shift, spontaneous atomic emission, low-temperature van der Waals forces, and the Casimir effect. Rather than eliminate the ZPF energy from the equations, the paper, exploring the possibility that it is a real energy, considers that it can be tapped as a source of power or harnessed to generate a propulsive force for space travel — the notion of exchanging energy with the quantum vacuum is the focus of the paper. The breakthrough desired in space travel is to eliminate the need to carry propellant at all, that is, to generate a propulsive force without carrying and ejecting propellant.
 
@@ -154,25 +154,10 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 
 ---
 
-### ### External authorship attribution — the DIA list of products produced under the AATIP contract, transmitted to Congress, names the author of DIRD #24
-
-DIRD #24's own title-page Author line is FOIA-redacted under exemption (b)(6); the document attributes the work only to the Defense Intelligence Agency. The DIA list of all products produced under the AATIP contract, transmitted to Congress under cover of a 9 January 2018 letter, attributes attachment 14, Concepts for Extracting Energy from the Quantum Vacuum, to Dr. Eric Davis, EarthTech International — the external attestation of the author whose identity the source document itself withholds.
-
-> 14. *Concepts for Extracting Energy from the Quantum Vacuum*, Dr. Eric Davis, EarthTech International (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
-
-| Field | Value |
-|---|---|
-| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
-| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 6, attachment 14 (DIA list of AATIP products transmitted to Congress) |
-
----
-
 ## Associated Nodes
 
 ### People
 
-- [`/people/eric-davis`]
 - [`/people/hal-puthoff`]
 
 ### Organizations

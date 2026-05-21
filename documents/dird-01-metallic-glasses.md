@@ -26,7 +26,7 @@ created: 2026-05-21
 
 ## Description
 
-Metallic Glasses: Status and Prospects for Aerospace Applications. The Defense Intelligence Reference Document is 14 December 2009, with an ICOD of 1 December 2009 and control number DIA-08-0911-012; UNCLASSIFIED//FOR OFFICIAL USE ONLY appears on every page. On page ii, where the Prepared by and Author appear, the document gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document's own Author is withheld under FOIA exemption (b)(6), but the DIA list of all products produced under the AATIP contract, transmitted to Congress (JAN 09 2018), gives attachment 22 as Metallic Glasses, Dr. T. Hufnagel, John Hopkins Univ. ([`/organizations/johns-hopkins-university`]).
+Metallic Glasses: Status and Prospects for Aerospace Applications. The Defense Intelligence Reference Document is 14 December 2009, with an ICOD of 1 December 2009 and control number DIA-08-0911-012; UNCLASSIFIED//FOR OFFICIAL USE ONLY appears on every page. On page ii, where the Prepared by and Author appear, the document gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager.
 
 The Summary characterized metallic glasses as materials that combine some of the advantageous mechanical properties of metals — strength, stiffness, and in some cases toughness — with the processing flexibility usually associated with thermoplastic polymers. The absence of crystalline defects allows them to be much stronger than conventional alloys but also means they have near-zero tensile ductility and poor fatigue resistance. In structural applications metallic glasses are most likely to be useful as composites consisting of ductile crystalline dendrites in a metallic glass matrix; these dendritic composites sacrifice some strength but can have exceptionally high fracture toughness and good fatigue resistance and could replace high-strength steels in certain load-limited structural components in aerospace vehicles where space is limited. Because they are true glasses, thermoplastic forming near the glass transition temperature affords tremendous flexibility in processing — components can be formed in a single step (for example, by injection molding) in complex geometries, metallic glass foams can be made with relative ease, and the lack of a crystalline grain structure allows nanoscale features to be formed with high fidelity, which may make them useful in micro-electromechanical systems (MEMS) applications.
 
@@ -248,20 +248,6 @@ The document also discussed the significant limitations for aerospace applicatio
 
 ---
 
-### ### External authorship attribution — the DIA list of products produced under the AATIP contract, transmitted to Congress, names the author of DIRD #01
-
-DIRD #01's own title-page Author line is FOIA-redacted under exemption (b)(6); the document attributes the work only to the Defense Intelligence Agency. The DIA list of all products produced under the AATIP contract, transmitted to Congress under cover of a 9 January 2018 letter, attributes attachment 22, Metallic Glasses, to Dr. T. Hufnagel, John Hopkins Univ. — the external attestation of the author whose identity the source document itself withholds.
-
-> 22. *Metallic Glasses*, Dr. T. Hufnagel, John Hopkins Univ. (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
-
-| Field | Value |
-|---|---|
-| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
-| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 6, attachment 22 (DIA list of AATIP products transmitted to Congress) |
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
@@ -270,7 +256,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|---|
 | [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-01-metallic-glasses-20091214.pdf | The document's Author line is withheld under FOIA exemption (b)(6) (personal-privacy). The exemption marker is preserved verbatim in quote q2; canonical prose reflects the redaction rather than injecting any external attribution. |
 | [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-01-metallic-glasses-20091214.pdf | The Prepared-by organizational line, an embedded office designation in the Administrative Note, and the AAWSA Program Manager address line are withheld under FOIA exemption (b)(3) invoking 10 USC 424 (DIA organizational/personnel protection). Markers preserved verbatim in quotes q2 and q3. |
-| John Hopkins Univ. | Johns Hopkins University | government/fas-org-aatip-list-20210808.pdf | DIA list of AATIP products transmitted to Congress omits the 's' in Johns; the institution is Johns Hopkins University. Source form preserved verbatim in quote q18. |
 
 ---
 
@@ -279,4 +264,3 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Organizations
 
 - [`/organizations/dia`]
-- [`/organizations/johns-hopkins-university`]
