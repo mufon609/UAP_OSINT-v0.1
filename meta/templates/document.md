@@ -6,10 +6,6 @@ status: {{status}}
 kind: {{kind}}
 doc_form: {{doc_form}}
 created: {{today}}
-<!-- CORPUS: uncomment and set if this document belongs to a corpus-specific
-     addendum (e.g., aawsap-dird). The addendum adds required sections.
-corpus: {{corpus}}
--->
 <!-- ARCHIVAL_STATUS: REQUIRED when doc_form is `book`; optional for
      `article` and other non-gov-doc forms. Valid values: full-text-archived,
      excerpts-only, not-archived.
@@ -63,10 +59,6 @@ archival_status: {{archival_status}}
      verbatim source passages in Key Passages. See meta/conventions.md
      "Statements as the universal evidentiary primitive" for the
      repo-wide statements-only discipline. -->
-
-<!-- CORPUS-ADDENDUM-INSERT: Additional sections required by the corpus
-     addendum (e.g., Review Status for aawsap-dird) are inserted here by
-     the scaffolder when `corpus:` is set in frontmatter. -->
 
 ## Key Passages
 

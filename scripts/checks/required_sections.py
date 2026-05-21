@@ -1,17 +1,13 @@
 """required-sections check — per-node NodeContext check.
 
 Verifies every section listed in the type_spec (after archetype/kind
-routing and corpus-addendum merge) appears as an H2 heading in the
-node body. Match is exact title or title prefix followed by ``" ("``
+routing) appears as an H2 heading in the node body. Match is exact
+title or title prefix followed by ``" ("``
 or ``" —"`` so qualified renames satisfy the requirement (a required
 ``Overview`` matches ``## Overview (deprecated)``,
 ``## Identity — Aliases``). The over-permissive shape doesn't open a
 loophole: the boundary check catches structural divergence between
 artifact and rendered node.
-
-Corpus addenda (``meta/topic/addenda/{name}.md``) contribute additional
-required sections via their "Additional required sections" block when
-a node's frontmatter sets ``corpus``.
 
 Layering: when archetype or kind is null or absent, this check falls
 through to the top-level required_sections — ``status_archetype_kind``
@@ -23,35 +19,11 @@ drift (a per-archetype/kind block missing ``required_sections``)
 surfaces as a loud KeyError.
 """
 
-import re
-from pathlib import Path
-
 from checks import Issue
 from lib._common import topic_substitute
 
 
 CHECK_NAME = "required_sections"
-
-
-_REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-_ADDENDA_DIR = _REPO_ROOT / "meta" / "topic" / "addenda"
-
-
-def _load_addendum_sections(corpus):
-    """Parse an addendum file for required sections."""
-    path = _ADDENDA_DIR / f"{corpus}.md"
-    if not path.exists():
-        return []
-    text = path.read_text()
-    # Look for "## Additional required sections" block; then `## SectionName`
-    m = re.search(
-        r"##\s+Additional required sections\s*\n(.*?)(?=\n---|\n##\s|\Z)",
-        text, re.DOTALL,
-    )
-    if not m:
-        return []
-    block = m.group(1)
-    return re.findall(r"`##\s+([^`]+)`", block)
 
 
 def _compute_required_sections(fm, type_spec):
@@ -95,9 +67,6 @@ def _compute_required_sections(fm, type_spec):
     else:
         # location / finding — top-level required_sections, no kinds.
         sections = list(type_spec["required_sections"])
-    corpus = fm.get("corpus")
-    if corpus:
-        sections.extend(_load_addendum_sections(corpus))
     # Substitute {topic_display_name} placeholders before returning so
     # the validator matches the rendered H2 headers (which the renderer
     # composes via load_topic() at render time). Schema stays topic-

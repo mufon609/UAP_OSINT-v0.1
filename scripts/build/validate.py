@@ -8,7 +8,7 @@ Checks:
 
   id-path-match — id frontmatter matches file path
 
-  Required sections — per type + kind/archetype (+ corpus addendum)
+  Required sections — per type + kind/archetype
 
   Confirmed/Flagged split — subsection splits (Flagged omitted when empty)
 

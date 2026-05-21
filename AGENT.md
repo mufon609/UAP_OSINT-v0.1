@@ -60,7 +60,6 @@ If you're doing anything related to this instance's topic, read
 | Epistemic standard (why the rules exist) | `meta/conventions.md` |
 | Contributor working knowledge (cross-cutting behavioral patterns) | `meta/memory.md` |
 | Node templates (one per type) | `meta/templates/` |
-| Corpus-specific addenda (this topic) | `meta/topic/addenda/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
 | Site-specific archival workarounds (incl. Wayback fuzzy-timestamp pull for recovering 404'd sources) | `meta/sources-access.md` |
 | Validator audit trail (auto-appended) | `meta/toolkit-notes/issue-log.yaml` |
@@ -102,7 +101,7 @@ If you're doing anything related to this instance's topic, read
 | Path pattern | Type | Format |
 |---|---|---|
 | `AGENT.md`, `CLAUDE.md`, `README.md` | Governance / entry points | Markdown |
-| `meta/*.md`, `meta/topic/*.md`, `meta/topic/addenda/*.md` | Governance / reference | Markdown with YAML frontmatter |
+| `meta/*.md`, `meta/topic/*.md` | Governance / reference | Markdown with YAML frontmatter |
 | `meta/schema.yaml` | Machine-readable spec | YAML |
 | `meta/templates/*.md` | Node scaffolding templates | Markdown with placeholder tokens |
 | `{type}/*.md` (people, organizations, ...) | Content nodes | Markdown with YAML frontmatter |

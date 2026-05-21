@@ -1558,8 +1558,8 @@ their character:
   Consumed mechanically by `scripts/build/new.py`; rarely read directly
   by contributors except when a new node type is being added.
 - **`meta/topic/`**: topic-specific governance — the priority
-  research queue, topic overview, corpus-specific addenda, in-
-  progress contributor working notes.
+  research queue, topic overview, in-progress contributor working
+  notes.
 - **`meta/research/`**: YAML research artifacts backing each content
   node — the structured fact layer. One artifact per content node
   (`meta/research/{slug}.yaml`); `target_node` declares the pointer

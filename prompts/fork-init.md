@@ -53,7 +53,7 @@ confirmed.
 Wipe content layer (preserves directory structure):
 
 ```
-rm -rf meta/research/* meta/topic/working-notes/* meta/topic/addenda/*
+rm -rf meta/research/* meta/topic/working-notes/*
 rm -f  meta/topic/overview.md meta/topic/research-queue.md
 rm -rf people/* organizations/* documents/* events/* transcripts/* media/* locations/* findings/* investigations/*
 rm -rf sources/*/

@@ -78,7 +78,6 @@ The principal primary-source collections this instance draws from:
 
 1. **AAWSAP DIRD set** — 37 FOIA-released U/FOUO Defense Intelligence
    Reference Documents from the 2008–2012 DIA-managed AAWSAP program.
-   Corpus addendum: `meta/topic/addenda/aawsap-dird.md`.
 2. **Congressional hearings on UAP** — HPSCI (2022), SASC (2023,
    2024), House Oversight (2023, 2024, 2025). Each hearing produces
    an event node, per-witness written-testimony document nodes, and

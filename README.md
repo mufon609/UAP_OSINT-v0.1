@@ -56,7 +56,6 @@ meta/
   topic/                    THIS INSTANCE'S topic-specific content
     overview.md             topic statement, scope, corpora
     research-queue.md       priority investigation queue
-    addenda/                corpus-specific rules (e.g., aawsap-dird)
     working-notes/          in-progress synthesis docs awaiting integration into content nodes
   toolkit-notes/            toolkit lessons-learned (topic-neutral)
 

@@ -241,8 +241,7 @@ types:
       per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, doc_form, created]
-      optional: [corpus, archival_status]
-      # corpus: e.g., "aawsap-dird" — loads meta/addenda/{corpus}.md
+      optional: [archival_status]
       # archival_status: applies to non-gov-doc doc_forms where the full
       #   text may not be archived locally. Required when doc_form is
       #   `book`; optional for `article` and other non-gov-doc forms.
@@ -412,7 +411,7 @@ types:
         - [media_versioning, note]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
-      optional: [corpus, derivation_of]
+      optional: [derivation_of]
       # derivation_of: path to a parent media node when this media is an
       #   edited, cropped, re-encoded, or metadata-scrubbed derivative
       #   (e.g., DoD's official Gimbal release vs. a longer leaked
@@ -600,7 +599,7 @@ types:
 
   # --- META ---------------------------------------------------------------
   meta:
-    description: "Governing documents (conventions.md, topic/research-queue.md, addenda, toolkit-notes) — no enforced node structure"
+    description: "Governing documents (conventions.md, topic/research-queue.md, toolkit-notes) — no enforced node structure"
     frontmatter:
       required: [id, type, schema_version, created]
 
@@ -802,18 +801,3 @@ photo_identity_manifest_entry:
   # added_date: YYYY-MM-DD when the baseline was registered.
   # source_video_url: optional original URL for cross-reference.
   # note: optional contributor context (pose, lighting, framing notes).
-
-# ---------------------------------------------------------------------------
-# Addenda
-# ---------------------------------------------------------------------------
-
-addenda:
-  # Corpus-specific addenda live at meta/topic/addenda/{name}.md and are
-  # referenced from node frontmatter via the `corpus:` field on document
-  # nodes. Addenda may declare additional required sections and additional
-  # required frontmatter fields. Validator merges addendum rules with the
-  # base type's rules.
-  resolution: "Nodes with `corpus: X` in frontmatter inherit rules from meta/topic/addenda/X.md"
-  # Addenda are topic-specific by definition. They live under meta/topic/
-  # so they are deleted cleanly when the toolkit is forked to a different
-  # topic. See meta/topic/overview.md for the topic scope of this instance.

@@ -6,7 +6,6 @@ Examples:
   new.py person --archetype eyewitness --slug chad-underwood --name "Chad Underwood"
   new.py organization --kind gov --slug aaro --name "AARO"
   new.py document --kind gov-doc --form testimony --slug written-testimony-fravor-2023
-  new.py document --kind gov-doc --form technical-report --slug dird-01-metallic-glasses --corpus aawsap-dird
   new.py document --kind non-gov-doc --form article --slug 2017-nyt-tic-tac
   new.py document --kind non-gov-doc --form book --archival-status excerpts-only --slug skinwalkers-at-the-pentagon-2021
   new.py transcript --kind hearing --slug 2023-07-26-house-fravor
@@ -18,7 +17,7 @@ Examples:
   new.py finding --slug lockheed-martin-non-denial-pattern
   new.py investigation --slug lockheed-martin-uap-materials --question "Does Lockheed Martin own/house UAP material?"
 
-Reads meta/schema.yaml + meta/templates/{type}.md + optionally meta/topic/addenda/{corpus}.md.
+Reads meta/schema.yaml + meta/templates/{type}.md.
 Writes to {type_dir}/{slug}.md.
 """
 
@@ -41,7 +40,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import REPO_ROOT, content_type_dirs, load_schema, load_topic
 
 TEMPLATES_DIR = REPO_ROOT / "meta" / "templates"
-ADDENDA_DIR = REPO_ROOT / "meta" / "topic" / "addenda"
 
 # Schema-derived ``{type: dirname}`` mapping. Bound at import time
 # from the cached schema; treat as a frozen view (do not mutate).
@@ -93,36 +91,6 @@ def filter_conditional_blocks(text, markers):
     return text
 
 
-def insert_addendum(text, corpus):
-    """Replace <!-- CORPUS-ADDENDUM-INSERT --> with a header for the addendum."""
-    if not corpus:
-        # Remove the marker line entirely
-        return re.sub(
-            r"<!-- CORPUS-ADDENDUM-INSERT:[^>]*-->\n?",
-            "",
-            text,
-        )
-    # For now, insert a scaffold header referencing the addendum file.
-    # The contributor fills in the content per meta/topic/addenda/{corpus}.md rules.
-    addendum_path = ADDENDA_DIR / f"{corpus}.md"
-    if not addendum_path.exists():
-        sys.exit(f"ERROR: Addendum not found: {addendum_path}")
-    # Parse addendum for additional-required-sections list
-    addendum_text = addendum_path.read_text()
-    section_names = re.findall(
-        r"###?\s+`##\s+([^`]+)`",
-        addendum_text,
-    )
-    insert = ""
-    for sec in section_names:
-        insert += f"\n## {sec}\n\n<!-- Per meta/topic/addenda/{corpus}.md rules. -->\n\n---\n"
-    return re.sub(
-        r"<!-- CORPUS-ADDENDUM-INSERT:[^>]*-->\n?",
-        insert,
-        text,
-    )
-
-
 def clean_blank_lines(text):
     return re.sub(r"\n{3,}", "\n\n", text)
 
@@ -144,7 +112,6 @@ def main():
     parser.add_argument("--source-medium", help="Transcript source_medium (free-text; e.g., youtube, podcast, broadcast)")
     parser.add_argument("--derived-from", help="Transcript derived_from: path to underlying media/document node")
     parser.add_argument("--question", help="Open question (investigation nodes — frontmatter `question` field)")
-    parser.add_argument("--corpus", help="Corpus addendum (e.g., aawsap-dird)")
     parser.add_argument("--force", action="store_true", help="Overwrite existing")
     args = parser.parse_args()
 
@@ -228,7 +195,6 @@ def main():
         "derivation_of": args.derivation_of or "",
         "source_medium": args.source_medium or "",
         "derived_from": args.derived_from or "",
-        "corpus": args.corpus or "",
         "parent_slug": (args.derivation_of.rsplit("/", 1)[-1] if args.derivation_of else ""),
         "question": (args.question or "").replace("'", "''"),
     }
@@ -251,10 +217,6 @@ def main():
     if args.type == "media":
         markers["DERIVATIVE"] = "yes" if args.derivation_of else "no"
     text = filter_conditional_blocks(text, markers)
-
-    # Handle corpus addendum insertion
-    if args.type == "document":
-        text = insert_addendum(text, args.corpus)
 
     # Clean up runs of blank lines from removed blocks
     text = clean_blank_lines(text)
@@ -281,9 +243,6 @@ def main():
             flags=re.DOTALL,
         )
 
-    text = apply_optional_frontmatter(
-        text, "CORPUS", f"corpus: {args.corpus}" if args.corpus else None
-    )
     # Document: archival_status — required when doc_form=book (already
     # validated above); optional for other non-gov-doc forms.
     text = apply_optional_frontmatter(

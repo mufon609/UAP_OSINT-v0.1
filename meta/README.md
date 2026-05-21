@@ -25,7 +25,7 @@ or scripts (`/scripts/`).
 | `templates/` | Scaffolding templates per node type — consumed by `scripts/build/new.py` |
 | `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build/build-from-research.py`; fork-deletes |
 | `toolkit-notes/` | Reserved for backward-looking lessons (why a rule exists; what was tried before). Currently empty. |
-| `topic/` | Topic-specific governance — priority research queue, topic overview, corpus addenda, in-progress working notes; fork-deletes when toolkit is forked to a different investigation |
+| `topic/` | Topic-specific governance — priority research queue, topic overview, in-progress working notes; fork-deletes when toolkit is forked to a different investigation |
 
 ## Root vs subdirs
 

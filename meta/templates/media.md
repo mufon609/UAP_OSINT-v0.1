@@ -10,10 +10,6 @@ created: {{today}}
      When set, the Media Versioning section below is required.
 derivation_of: media/{{parent_slug}}
 -->
-<!-- CORPUS: uncomment and set if this media belongs to a corpus-specific
-     addendum. The addendum adds required sections.
-corpus: {{corpus}}
--->
 ---
 
 # {{display_name}}
