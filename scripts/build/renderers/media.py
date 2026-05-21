@@ -11,7 +11,6 @@ set; canonical / original media omit the section entirely.
 from ._common import (
     SECTION_SEP,
     _escape_table_cell,
-    _manifest_sha256_for,
     _render_attribution_block,
     _source_path,
     sort_by_id,
@@ -42,8 +41,8 @@ def render_title_media(artifact):
 
 def render_media_summary(artifact, kind):
     """Media Summary table — kind-agnostic row emission from
-    document_intrinsic + context_extrinsic + primary_sources + manifest
-    sha256 lookup. Field conventions documented in
+    document_intrinsic + context_extrinsic + primary_sources. Field
+    conventions documented in
     schema-research-artifact.yaml's required_keys section
     (document_intrinsic field comment, media subsection). Rows with empty values are
     skipped — the Summary adapts to what the source and contributor
@@ -95,10 +94,6 @@ def render_media_summary(artifact, kind):
     row("File Size", dm.get("file_size"))
     row("Camera / Device", dm.get("camera_device"))
     row("EXIF / Container Metadata", dm.get("embedded_metadata"))
-    if path:
-        sha = _manifest_sha256_for(path)
-        if sha:
-            row("SHA256", sha)
     row("Primary Source URL", ctx.get("primary_source_url"))
     if path:
         row("Local Archive", f"[sources/{path}](../sources/{path})")

@@ -633,7 +633,7 @@ types:
 #   - url, status, archive_status, wayback_date, wayback_skip, note
 #
 # Artifact-level fields (apply to one archived rendering):
-#   - format, path, sha256, archived_date, extraction_type,
+#   - format, path, archived_date, extraction_type,
 #     transcript_provenance
 
 manifest_entry:
@@ -660,7 +660,7 @@ manifest_entry:
   # Contributors don't hand-maintain this field; the scripts do.
 
 artifact_entry:
-  required: [format, path, sha256, archived_date]
+  required: [format, path, archived_date]
   optional: [extraction_type, transcript_provenance, note]
   format_values: [pdf, html, txt, audio, image, video, transcript]
   extraction_type_values: [text-native, ocr-scan, extraction-lossy]
@@ -694,7 +694,7 @@ artifact_entry:
   # prefers a same-stem `.txt` sibling over pdftotext output when the field
   # is set to any non-text-native value. The sibling is a contributor-
   # produced clean transcription, visually verified against the source, with
-  # its own manifest entry + sha256 for integrity tracking.
+  # its own manifest entry.
   # The field is ingestion-pipeline metadata, not reader-visible. Its purpose
   # is to drive heavier extraction handling (text-layer pull, modern OCR,
   # VLM on page images, or visual verification against the original) before
@@ -760,15 +760,12 @@ artifact_entry:
   # ocr-scan-with-clean-extract exception in meta/conventions.md).
   # See meta/conventions.md "Transcript provenance and audit discipline"
   # for the full discipline.
-  # `sha256` detects local file corruption, accidental overwrite, and silent
-  # substitution. Computed at archive-time by manifest.py add; re-verified
-  # by manifest.py verify-checksums.
   # `wayback_skip: true` (URL-level) marks entries where Wayback archival
   # is not applicable — synthetic deep-link URLs that require session
   # state (e.g., the Uintah County parcel portal deep-links) and therefore
   # won't resolve cleanly at web-archive time. archive.py skips these
-  # permanently; the local archive + sha256 remain the integrity
-  # guarantee for such entries.
+  # permanently; the local archive + source URL remain the record for
+  # such entries.
   # `note` may appear at either level. URL-level notes describe the
   # source itself (publication context, access restrictions, broader
   # provenance); artifact-level notes describe the specific archived

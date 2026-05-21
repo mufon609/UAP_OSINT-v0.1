@@ -43,7 +43,6 @@ corpus: {{corpus}}
 | File Size |  |
 | Camera / Device |  |
 | EXIF / Container Metadata |  |
-| SHA256 |  |
 | Primary Source URL |  |
 | Local Archive |  |
 

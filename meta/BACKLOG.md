@@ -304,8 +304,8 @@ home: `prompts/topology.md` (inc-2).
    content, reads candidate CONTENT to confirm load-bearing (not URL-only),
    queues exact deep URLs for archiving. ≈ A2 Scout's investigator half +
    `prompts/web-claude-investigator.md` as upstream leads.
-3. **Archive** — archives the queued sources (`manifest.py add` → sha256 +
-   Wayback), extracts new sources, keeps the manifest healthy. ≈ A2 Scout's
+3. **Archive** — archives the queued sources (`manifest.py add` + Wayback),
+   extracts new sources, keeps the manifest healthy. ≈ A2 Scout's
    verifier/archival half.
 4. **Worker** — grabs verbatim quotes + advisory `claim_group` + cross-ref
    candidates; one generic prompt parameterized by `worker_kind`

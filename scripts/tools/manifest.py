@@ -5,7 +5,7 @@ Manage sources/manifest.yaml — the source-archival index.
 Manifest shape: each entry is one URL with zero or more archived
 artifacts (renderings). URL-level fields (status, archive_status,
 wayback_date, wayback_skip, note) describe the source; artifact-level
-fields (format, path, sha256, archived_date, extraction_type,
+fields (format, path, archived_date, extraction_type,
 transcript_provenance, note) describe each rendering. See
 meta/schema.yaml manifest_entry / artifact_entry for the canonical
 spec.
@@ -19,7 +19,6 @@ Commands:
   manifest.py missing                  # URLs cited in nodes not in manifest
   manifest.py summary                  # counts by status / format
   manifest.py verify-paths             # check every artifact path exists
-  manifest.py verify-checksums         # re-compute sha256 of every artifact
 """
 
 import argparse
@@ -46,7 +45,6 @@ from lib._common import (  # noqa: E402
     REPO_ROOT,
     SOURCES_DIR,
     WAYBACK_URL_RE,
-    compute_sha256,
     content_dirs,
     format_from_path,
     iter_artifacts,
@@ -159,14 +157,7 @@ def cmd_add(args):
             "archived_date": date.today().isoformat(),
         }
         full_path = SOURCES_DIR / path
-        if full_path.exists():
-            sha = compute_sha256(full_path)
-            if sha:
-                artifact["sha256"] = sha
-            else:
-                print(f"WARNING: Could not compute sha256 for {full_path}",
-                      file=sys.stderr)
-        else:
+        if not full_path.exists():
             print(f"WARNING: path does not exist (archival incomplete): "
                   f"sources/{path}", file=sys.stderr)
         if args.extraction_type:
@@ -199,15 +190,11 @@ def cmd_add(args):
     if created_url_entry and appended_artifact:
         print(f"✓ Added: {args.url}")
         print(f"  artifact: sources/{path}  format: {appended_artifact['format']!r}")
-        if appended_artifact.get("sha256"):
-            print(f"  sha256: {appended_artifact['sha256']}")
     elif created_url_entry:
         print(f"✓ Added (no artifact): {args.url}")
     elif appended_artifact:
         print(f"✓ Appended artifact to existing URL: {args.url}")
         print(f"  artifact: sources/{path}  format: {appended_artifact['format']!r}")
-        if appended_artifact.get("sha256"):
-            print(f"  sha256: {appended_artifact['sha256']}")
     print(f"  archive_status: {entry['archive_status']}")
     if entry.get("wayback_date"):
         print(f"  wayback_date:   {entry['wayback_date']}")
@@ -295,57 +282,6 @@ def cmd_verify_paths(args):
     sys.exit(1 if missing else 0)
 
 
-def cmd_verify_checksums(args):
-    """Re-compute sha256 for every archived artifact; compare against
-    stored value. Flags silent file corruption, substitution, or
-    overwrite."""
-    entries = load_manifest()
-    missing_files = []  # (url, path)
-    mismatches = []     # (url, path, stored, current)
-    backfilled = 0      # artifacts where we populated a missing sha256
-
-    for entry, artifact in iter_artifacts(entries):
-        path = artifact.get("path")
-        if not path:
-            continue
-        full = SOURCES_DIR / path
-        if not full.exists():
-            missing_files.append((entry["url"], path))
-            continue
-        current = compute_sha256(full)
-        stored = artifact.get("sha256")
-        if stored is None:
-            artifact["sha256"] = current
-            backfilled += 1
-        elif stored != current:
-            mismatches.append((entry["url"], path, stored[:12], current[:12]))
-
-    if backfilled:
-        save_manifest(entries)
-        print(f"Backfilled sha256 for {backfilled} artifacts without a prior checksum.")
-        print("(Future runs will verify these; manual re-archive if any of these "
-              "files was already corrupt at backfill time.)\n")
-
-    if missing_files:
-        print(f"\n{len(missing_files)} archived artifacts have missing local files:")
-        for url, path in missing_files:
-            print(f"  MISSING  sources/{path}")
-
-    if mismatches:
-        print(f"\n{len(mismatches)} CHECKSUM MISMATCHES (possible corruption or substitution):")
-        for url, path, stored, current in mismatches:
-            print(f"  MISMATCH  sources/{path}")
-            print(f"            stored  : {stored}...")
-            print(f"            current : {current}...")
-            print(f"            url     : {url}")
-
-    if not missing_files and not mismatches:
-        n_artifacts = sum(1 for _ in iter_artifacts(entries))
-        print(f"✓ All {n_artifacts} archived artifacts verified.")
-
-    sys.exit(1 if (missing_files or mismatches) else 0)
-
-
 COMMANDS = {
     "add": cmd_add,
     "status": cmd_status,
@@ -355,7 +291,6 @@ COMMANDS = {
     "missing": cmd_missing,
     "summary": cmd_summary,
     "verify-paths": cmd_verify_paths,
-    "verify-checksums": cmd_verify_checksums,
 }
 
 
@@ -409,7 +344,6 @@ def main():
     subparsers.add_parser("missing")
     subparsers.add_parser("summary")
     subparsers.add_parser("verify-paths")
-    subparsers.add_parser("verify-checksums")
 
     args = parser.parse_args()
     COMMANDS[args.command](args)

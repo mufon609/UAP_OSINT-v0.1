@@ -92,8 +92,8 @@ class BaseContext:
     Manifest is exposed two ways: ``manifest_paths`` (the set of paths
     cited in artifacts; primary use case is path-existence checks) and
     ``manifest_entries`` (the full list of entries; needed by the
-    manifest-integrity checks that examine sha256, status, archive
-    bits, extraction_type).
+    manifest-integrity checks that examine status, archive bits,
+    extraction_type).
 
     ``broken_links`` is the out-of-band metadata channel. Link-resolution
     writes to it; orchestrator reads it for the registry print. NOT an

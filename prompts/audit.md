@@ -39,7 +39,7 @@ This is a recoverable audit-blocker, not a dead end — see
 `meta/sources-access.md` "Wayback Machine fetch — fuzzy-timestamp
 URLs bypass anti-bot challenge". Use the fuzzy-timestamp pull
 workflow there to retrieve the snapshot, save it locally, update the
-manifest entry to `status: archived` with path + sha256, and add the
+manifest entry to `status: archived` with path, and add the
 source to the artifact's `primary_sources[]`. Quotes derived from
 the recovered source then pass the verbatim-quote check normally.
 

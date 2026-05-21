@@ -8,13 +8,10 @@ created: '2026-05-19'
 primary_sources:
 - path: transcripts/jre-2194-elizondo-2024-downloaded.md
   format: transcript
-  sha256_at_extraction: 97b4fb010811141483ef64b3c15752ff8fcaab5b73b8b77cfe06d32814ed048e
 - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   format: pdf
-  sha256_at_extraction: 70a015557b2ccdf20d8e8c86f4688a373ae9d6a0e86817561fde318bf2b984ec
 - path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
   format: html
-  sha256_at_extraction: c9a95b5dcba3a7cbdfd97099c6621738a0fae7bd0c6068781b62dbfb41260760
 
 document_intrinsic:
   full_name: 'Luis D. Elizondo'

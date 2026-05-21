@@ -25,14 +25,12 @@ Checks:
 
   Finding cross-ref consistency — entities listed must link back
 
-  Manifest-checksum check — for every archived entry in
-  sources/manifest.yaml, recompute SHA256 and compare to stored value.
-  Errors on: file missing on disk (git-tracked paths), missing sha256
-  field when required, checksum mismatch (silent corruption /
-  substitution). A missing file whose path is git-IGNORED (the large
-  media kept out of the remote, e.g. sources/video/) is expected-absent
-  on a fresh clone — recorded in the Missing-Local-Sources registry
-  (out-of-band, like broken links; not an error). Run once per validator
+  Manifest file-presence check — for every archived entry in
+  sources/manifest.yaml, confirm the file exists on disk. Errors on a
+  missing git-tracked file. A missing file whose path is git-IGNORED (the
+  large media kept out of the remote, e.g. sources/video/) is
+  expected-absent on a fresh clone — recorded in the Missing-Local-Sources
+  registry (out-of-band, like broken links; not an error). Run once per validator
   invocation, before the per-node checks.
 
   Governance-frontmatter check — every .md file under meta/ must carry
@@ -108,7 +106,7 @@ from checks import id_path_match as ck_id_path_match
 from checks import link_resolution as ck_link_resolution
 from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_artifact_shape as ck_manifest_artifact_shape
-from checks import manifest_checksums as ck_manifest_checksums
+from checks import manifest_files_present as ck_manifest_files_present
 from checks import manifest_extraction_type as ck_manifest_extraction_type
 from checks import manifest_parse as ck_manifest_parse
 from checks import manifest_value_enums as ck_manifest_value_enums
@@ -304,14 +302,13 @@ def main():
         manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
         all_issues.extend(manifest_parse_issues)
         if not any(i.fatal for i in manifest_parse_issues):
-            # Manifest-integrity family — content-byte integrity (sha256),
-            # closed enums (status / format / extraction_type / archive_status),
-            # and the C29 artifact-shape invariants (URL uniqueness, artifact-
-            # path uniqueness, status / artifacts alignment). A checksum
-            # mismatch means downstream quote verifications may be validating
-            # against altered source material; a shape violation means the
-            # URL ↔ artifacts model is silently drifting from schema.
-            all_issues.extend(ck_manifest_checksums.check(base_ctx))
+            # Manifest-integrity family — file presence (archived files
+            # exist on disk; git-ignored media exempted), closed enums
+            # (status / format / extraction_type / archive_status), and the
+            # artifact-shape invariants (URL uniqueness, artifact-path
+            # uniqueness, status / artifacts alignment). A shape violation
+            # means the URL ↔ artifacts model is silently drifting from schema.
+            all_issues.extend(ck_manifest_files_present.check(base_ctx))
             all_issues.extend(ck_manifest_archive_status.check(base_ctx))
             all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
             all_issues.extend(ck_manifest_value_enums.check(base_ctx))
@@ -349,7 +346,7 @@ def main():
     # are backlog signal, not violations, so they never appear as Issues.
     broken_links = base_ctx.broken_links
     # missing_sources: git-ignored archived artifacts absent on disk,
-    # populated by ck_manifest_checksums against base_ctx in the main
+    # populated by ck_manifest_files_present against base_ctx in the main
     # process (before the per-node fork), so no worker merge is needed.
     # Same out-of-band treatment as broken_links — expected-absent on a
     # fresh clone, not an error.

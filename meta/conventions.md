@@ -226,8 +226,7 @@ For all four paths, the canonical sibling lands at `<same-stem>.txt`
 adjacent to the source. The validator's `extraction_type: ocr-scan`
 or `extraction-lossy` flag tells `extract_source_text` to prefer the
 sibling over the underlying PDF text layer. The sibling itself is a
-manifest entry (with its own sha256 — integrity backstop matching the
-parent PDF entry's).
+manifest entry (matching the parent PDF entry).
 
 **Silent-sibling lookup.** `extract_source_text` finds a `.txt`
 sibling by *path stem*, not by manifest registration. A
@@ -237,8 +236,8 @@ entry has `extraction_type: ocr-scan` or `extraction-lossy`,
 regardless of whether the sibling itself has a manifest entry. The
 discipline: file and manifest entry are created together. A
 sibling-on-disk-but-not-in-manifest is a silent dependency —
-quote-verification depends on a file pre-commit has no sha256
-integrity guarantee for, and deleting the file (e.g., as "orphan
+quote-verification depends on a file the manifest doesn't record,
+and deleting the file (e.g., as "orphan
 cleanup") silently breaks the build by reverting extract output to
 the PDF's unusable text layer. Register the sibling at the moment of
 creation, and treat the manifest-paths verifier (`scripts/tools/manifest.py
@@ -354,7 +353,7 @@ the canonical original. Audit handling mirrors `ocr-scan`:
   ocr-scan `.txt` sibling for auto-caption sources where systemic
   drift is observed. The sibling is a contributor transcription of
   the audio (or a human-corrected version of the caption file)
-  with its own manifest entry + sha256; the `transcript_provenance`
+  with its own manifest entry; the `transcript_provenance`
   value moves from `auto-caption` to `human-corrected-caption` once
   the correction step is documented.
 
@@ -1323,7 +1322,6 @@ Artifact-level fields describe one archived rendering:
 
 - `format` — `pdf` | `html` | `txt` | `audio` | `image` | `video` | `transcript`
 - `path` — relative path under `sources/`
-- `sha256` — content-integrity checksum
 - `archived_date` — date this rendering was downloaded
 - `extraction_type` — `text-native` | `ocr-scan` | `extraction-lossy`
   (applies to PDF; drives same-stem `.txt` sibling preference)
@@ -1437,7 +1435,7 @@ tier that matches who invokes them and what role they play:
   hint, not a uniform function name.
 - **`/scripts/checks/`**: per-check modules — every named validator
   check (verbatim-quote, prose-drift, chronological-ordering,
-  manifest-checksums, iff-section, etc.) lives at
+  manifest-files-present, iff-section, etc.) lives at
   `scripts/checks/{check_name}.py`. The three validators under
   `scripts/build/` are thin orchestrators that import + dispatch
   these via explicit step lists. Contributors don't usually invoke

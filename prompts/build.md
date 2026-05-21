@@ -651,8 +651,8 @@ This:
 
    **Media nodes:**
    - `## Media Summary` — fact table from `document_intrinsic` +
-     `context_extrinsic` + `primary_sources[0]` + manifest sha256
-     lookup. Row list is inline in `render_media_summary` — see the
+     `context_extrinsic` + `primary_sources[0]`. Row list is inline in
+     `render_media_summary` — see the
      function for exact labels and order. The Duration/Dimensions row
      label adapts to what's populated (combined when both present,
      either alone otherwise — typical for video / audio / photo

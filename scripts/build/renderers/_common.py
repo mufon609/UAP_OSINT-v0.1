@@ -177,37 +177,6 @@ def _source_path(artifact):
 
 
 # ============================================================================
-# Manifest sha256 lookup (cached)
-# ============================================================================
-
-_manifest_sha256_cache = None
-
-
-def _manifest_sha256_for(path):
-    """Look up the sha256 for a given source path from sources/manifest.yaml.
-    Loaded once per build, cached. Returns empty string when the path is
-    missing from the manifest or has no sha256 field (e.g., pending /
-    blocked sources). Walks the URL → artifacts nesting (C29 schema)."""
-    global _manifest_sha256_cache
-    if _manifest_sha256_cache is None:
-        manifest_path = REPO_ROOT / "sources" / "manifest.yaml"
-        if not manifest_path.exists():
-            _manifest_sha256_cache = {}
-        else:
-            try:
-                with open(manifest_path) as f:
-                    entries = strict_yaml_load(f) or []
-                _manifest_sha256_cache = {
-                    a.get("path"): a.get("sha256")
-                    for _, a in iter_artifacts(entries)
-                    if a.get("path") and a.get("sha256")
-                }
-            except (yaml.YAMLError, OSError):
-                _manifest_sha256_cache = {}
-    return _manifest_sha256_cache.get(path, "") or ""
-
-
-# ============================================================================
 # Statement block renderers (used by person / event / transcript /
 # media / organization / location / finding)
 # ============================================================================

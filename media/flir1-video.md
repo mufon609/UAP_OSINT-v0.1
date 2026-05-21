@@ -20,7 +20,6 @@ created: 2026-04-20
 | Format | MP4 (ISO 14496-14) |
 | File Size | 5,619,302 bytes (≈5.4 MB) |
 | EXIF / Container Metadata | Minimal — no udta (user data) atom, no QuickTime metadata tags (©day / ©nam / ©cpy / ©too). mvhd version 0 with create_time == modify_time == 2007-09-18T10:18:36Z.  |
-| SHA256 | eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170 |
 | Primary Source URL | https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4 |
 | Local Archive | [sources/video/1 - FLIR.mp4](../sources/video/1 - FLIR.mp4) |
 

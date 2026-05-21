@@ -164,7 +164,7 @@ broader convention or BACKLOG entry.
   this on scoped fields.
 - **Stub-linking / coverage / boundary / description-drift** —
   `review-coverage.py` covers all four.
-- **Source archival integrity** — `manifest_checksums` check + the
+- **Source archival integrity** — `manifest_files_present` check + the
   general `audit.md` prompt cover this.
 
 This audit is exclusively the **content-relevance** layer that

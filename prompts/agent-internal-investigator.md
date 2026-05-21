@@ -22,7 +22,7 @@ web, extract quotes, or build.
    `python3 scripts/build/extract-source.py --source {path}` →
    `/tmp/scratch-{slug}-N.txt` (ready for the Worker).
 3. **Confirm the reuse set is intact:**
-   `python3 scripts/tools/manifest.py verify-paths` + `verify-checksums`.
+   `python3 scripts/tools/manifest.py verify-paths`.
 4. **Name the gaps** — load-bearing topics NOT covered internally — for the
    External Investigator. If nothing is missing, set `all_internal: true`.
 

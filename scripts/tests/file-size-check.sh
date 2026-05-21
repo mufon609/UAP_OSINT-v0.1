@@ -5,7 +5,7 @@
 #
 # Per `meta/sources-access.md` "Large primary-source files (>100MB)",
 # oversized primary sources are kept locally and registered in
-# `sources/manifest.yaml` with URL + sha256, but excluded from the git
+# `sources/manifest.yaml` with its URL, but excluded from the git
 # remote via `.gitignore`. This gate confirms no oversized file slipped
 # past that discipline before a push attempt forces a costly history
 # rewrite.
@@ -66,7 +66,7 @@ if [ ${#errors[@]} -gt 0 ]; then
     echo
     echo "  Recovery: per meta/sources-access.md \"Large primary-source"
     echo "  files (>100MB)\", oversized primary sources stay local and"
-    echo "  register in sources/manifest.yaml (URL + sha256) but are"
+    echo "  register in sources/manifest.yaml (URL) but are"
     echo "  excluded from git via .gitignore. To remove a file from the"
     echo "  git index without deleting the local copy:"
     echo "    git rm --cached <path>"

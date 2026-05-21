@@ -77,8 +77,7 @@ required_keys:
   #                (renders as `## Media Summary` table rows, paired
   #                with context_extrinsic fields `display_title`,
   #                `release_date`, `primary_source_url` and the
-  #                primary_sources[0].path / manifest sha256 for
-  #                Local Archive / SHA256)
+  #                primary_sources[0].path for Local Archive)
   #     event, transcript: use event_intrinsic / context_extrinsic
   #                respectively for their kind-specific metadata;
   #                document_intrinsic remains an optional metadata
@@ -469,15 +468,8 @@ conditional_keys:
 # Primary-source list entries
 primary_sources_entry:
   required: [path, format]
-  optional: [pdf_metadata, sha256_at_extraction]
+  optional: [pdf_metadata]
   # path: relative to sources/, must appear in sources/manifest.yaml
-  # sha256_at_extraction: captured SHA256 at extraction time (optional
-  #   audit trail; separate from manifest's live sha256 field).
-  #   Populated by scripts/build/research-scaffold.py at scaffold time
-  #   when the source file is on disk; verified by the
-  #   manifest_checksum_at_extraction check (errors on mismatch with
-  #   the manifest's live sha256, catching source-byte changes between
-  #   extraction and commit-time validation).
 
 # --- Entry shapes per top-level list section ---
 

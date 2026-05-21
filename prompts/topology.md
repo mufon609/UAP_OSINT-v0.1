@@ -97,7 +97,7 @@ generator feeding role 2 — a candidate list, never an inclusion decision.
 
 | role | runs | writes into the stub's `validator_findings` |
 |---|---|---|
-| 1 Internal Investigator | `manifest.py verify-paths` / `verify-checksums` on the reuse set + `validate-research.py --phase preflight` | manifest health of the sources it plans to reuse |
+| 1 Internal Investigator | `manifest.py verify-paths` on the reuse set + `validate-research.py --phase preflight` | manifest health of the sources it plans to reuse |
 | 2 External Investigator | `manifest.py add --dry-run` per lead | malformed / colliding leads, caught before handoff |
 | 3 Archive | `validate.py --phase archive` + `validate-research.py --phase archive {artifact}` | manifest family + `primary_sources` shape |
 | 4 Worker | `validate-research.py --phase extract {artifact}` | the verbatim-quote boundary (all worker kinds share it) |
@@ -155,7 +155,6 @@ slug: {slug}
 archived:
   - url: https://oversight.house.gov/.../document.pdf
     path: government/file.pdf
-    sha256: <hex>
     archive_status: archived   # or pending + wayback_date
     scratch: /tmp/scratch-{slug}-2.txt
 primary_sources_registered: [government/file.pdf]

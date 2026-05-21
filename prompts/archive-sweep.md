@@ -44,7 +44,7 @@ Steps:
         "https://web.archive.org/web/{year}/{original_url}"
    ```
    Then promote the manifest entry to `status: archived` with path +
-   sha256 + `archive_status: 3` (both local and Wayback). Don't skip
+   `archive_status: 3` (both local and Wayback). Don't skip
    pending entries as "unrecoverable" before trying the
    fuzzy-timestamp pull — exact-timestamp URLs trigger an anti-bot
    challenge that fuzzy-timestamp URLs bypass.

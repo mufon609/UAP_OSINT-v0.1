@@ -165,11 +165,10 @@ def entity_type_dirs():
 def iter_artifacts(entries):
     """Yield ``(entry, artifact)`` pairs across every URL entry's
     ``artifacts`` list. Centralizes the nested-iteration pattern that
-    every manifest consumer needs after the C29 schema change. The
+    every manifest consumer needs for the URL → artifacts nesting. The
     entry carries URL-level state (url, status, archive_status,
     wayback_date); the artifact carries per-rendering fields (path,
-    format, sha256, archived_date, extraction_type,
-    transcript_provenance, note).
+    format, archived_date, extraction_type, transcript_provenance, note).
     """
     for entry in entries:
         if not isinstance(entry, dict):

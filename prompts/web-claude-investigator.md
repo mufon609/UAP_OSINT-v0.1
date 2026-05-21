@@ -10,7 +10,7 @@ Your one job: **find primary sources with exact, verifiable URLs.**
 
 **Claude CLI does (not your problem):**
 - Scaffolds and builds nodes from templates
-- Downloads sources to local archive, computes checksums, manages the manifest
+- Downloads sources to local archive, manages the manifest
 - Submits to Wayback Machine
 - Validates structure and verbatim quotes
 - Cross-references existing nodes

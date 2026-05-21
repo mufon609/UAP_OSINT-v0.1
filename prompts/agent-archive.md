@@ -16,7 +16,7 @@ you do not judge load-bearing-ness (role 2 did) or extract quotes (role 4).
 
 1. **Archive** each:
    `python3 scripts/tools/manifest.py add {URL} --path {category}/{file}
-   --format {fmt}` (sets sha256 + archive bits). Blocked sites →
+   --format {fmt}` (sets archive bits). Blocked sites →
    `meta/sources-access.md`; submit to Wayback where needed.
 2. **Register** on the artifact:
    `python3 scripts/build/research-scaffold.py --target {type}/{slug}

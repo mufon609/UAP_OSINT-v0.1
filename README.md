@@ -77,7 +77,7 @@ scripts/
     associate.py            auto-generate Associated Nodes sections
     build-state.py          refresh CLAUDE.md build state
   tools/                    standalone utilities + diagnostics
-    manifest.py             manifest CLI (add, verify-paths, verify-checksums, …)
+    manifest.py             manifest CLI (add, verify-paths, …)
     archive.py              Wayback Machine submission
     transcribe.py           YouTube caption download (auto-fallback to yt-dlp; --cookies - reads from stdin)
     extract-firefox-cookies.py  Firefox cookies → stdout (memory-only; pipe into transcribe.py --cookies -)
@@ -120,7 +120,7 @@ scripts/tests/
                             (defensive backstop to .gitignore patterns)
 
 sources/
-  manifest.yaml             source-archival index (YAML; sha256-checksummed)
+  manifest.yaml             source-archival index (YAML)
   government/               government primary sources (PDFs, HTML)
   news/                     news article HTML snapshots (news articles
                             are stored here as source material; content

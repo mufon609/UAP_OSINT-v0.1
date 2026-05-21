@@ -20,9 +20,8 @@ When all automated retrieval routes fail (direct curl 403/402/523,
 Wayback SPN failure, no useful CDX coverage), **manual browser save**
 preserves the source-read-first bar: open the URL in a browser, save
 the rendered page, register in `sources/manifest.yaml` via
-`manifest.py add` (sets sha256 + archive_status). Local archive +
-sha256 carry the integrity guarantee even when Wayback insurance is
-unavailable.
+`manifest.py add` (sets archive_status). The local archive + source
+URL carry the record even when Wayback insurance is unavailable.
 
 ---
 
@@ -457,10 +456,9 @@ false errors.
     fi
   done
   ```
-  Then update SHA256 in manifest via `manifest.py` (or hand-edit).
 
 Surfaced: Grusch rebuild (2026-04-22) — 5 Wayback-fetched HTMLs arrived
-gzipped; decompressed post-hoc with checksum update.
+gzipped; decompressed post-hoc.
 
 ## Wayback Machine fetch — fuzzy-timestamp URLs bypass anti-bot challenge
 
@@ -497,7 +495,7 @@ AND the original URL needs to be archived locally. Without a Wayback
 snapshot, fall back to manual browser save.
 
 **Manifest update after pull:** set `status: archived`, add `path` +
-`sha256` + `archived_date`, set `archive_status: 3` (both bits — local
+`archived_date`, set `archive_status: 3` (both bits — local
 and Wayback). The note field should explain that the local archive
 is a Wayback-recovered snapshot and reference the snapshot timestamp
 embedded in the page's `__wm.wombat` call.
@@ -523,22 +521,10 @@ that strips the file from history before re-pushing.
 **What works:**
 
 - **Local archive + manifest registration only.** The local file in
-  `sources/<category>/<filename>` is the integrity guarantee per
-  `meta/conventions.md`; the manifest entry records the source URL
-  and sha256, so anyone cloning the repo can re-download from the
-  source URL. The file itself is never committed to the git remote.
-
-  **sha256 reproducibility — read this before relying on it.** Re-download
-  reproduces the recorded sha256 *only for byte-identical static sources*
-  (PDFs, HTML, images, audio fetched verbatim). It does **not** reproduce
-  for **transcoded video**: `download-video.py` runs yt-dlp + an ffmpeg
-  merge whose container/muxing/codec output is not byte-stable across
-  yt-dlp/ffmpeg versions, available formats, or even runs — a re-download
-  yields different bytes and a different hash. For video the recorded
-  sha256 attests to the *originally-archived local copy* (a same-file
-  corruption tripwire), not to regenerability. Consequently the recorded
-  hash cannot gate a fresh clone of a video, and re-archiving the new
-  bytes is not durable (the next clone mismatches again).
+  `sources/<category>/<filename>` is the working copy; the manifest
+  entry records the source URL, so anyone cloning the repo can
+  re-download from it. The file itself is never committed to the git
+  remote.
 
 - **Add the source category directory (or a specific file pattern
   within it) to `.gitignore`** so future primary sources of the same
@@ -548,8 +534,7 @@ that strips the file from history before re-pushing.
 
   ```
   # Video primary sources — kept locally per manifest entries
-  # (URL + sha256) but excluded from git remote due to file-size
-  # limits.
+  # (URL) but excluded from git remote due to file-size limits.
   sources/video/
   ```
 
@@ -560,8 +545,8 @@ that strips the file from history before re-pushing.
   the first oversized primary source lands.
 
 **Fresh clone — what's absent and how to recover it.** A clone does not
-carry the git-ignored media (only the manifest URL + sha256 do). This is
-expected, not breakage: `validate.py`'s manifest-checksum check does
+carry the git-ignored media (only the manifest URL does). This is
+expected, not breakage: `validate.py`'s manifest file-presence check does
 **not** error on a git-ignored archived file that is missing on disk — it
 records it in the **Missing-Local-Sources registry** (an out-of-band
 report, like the broken-link registry; never an Issue, never affects the
@@ -574,9 +559,7 @@ to run the speaker-identification pipeline): re-fetch from the source URL
 manifest entry carries the bits (`archive_status` 2/3, `wayback_date`).
 There is deliberately no bulk re-download tool — git covers tracked files
 and the manifest URL + Wayback cover the rest, so a bespoke restore script
-would be redundant. A *present* git-ignored file is still checksum-verified
-on every run; only absence is exempt (transcoded video can't reproduce its
-hash — see the sha256 note above).
+would be redundant. The check verifies presence, not content.
 
 **Recovery if a large file was committed before the gate caught it:**
 
@@ -594,8 +577,8 @@ hash — see the sha256 note above).
 push the actual content to a separate LFS store. It's a viable path
 for repos that genuinely need versioning of large binaries. This
 toolkit instead treats large primary sources as content-addressable
-through their source URL + sha256 — the file is regeneratable from
-the URL, and integrity is checked at extraction time. LFS adds
+through their source URL — the file is regeneratable from the URL.
+LFS adds
 infrastructure dependencies without solving a problem the manifest
 doesn't already solve.
 

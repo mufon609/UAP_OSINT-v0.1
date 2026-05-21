@@ -91,7 +91,7 @@ _common.load_manifest_paths = lambda: {
 # corpus ``validate.py`` pre-commit gate covers them.
 
 from checks import (
-    manifest_checksums,
+    manifest_files_present,
     manifest_archive_status,
     manifest_extraction_type,
     manifest_value_enums,
@@ -102,7 +102,7 @@ def _noop_check(ctx):
     return iter([])
 
 for _check_mod in (
-    manifest_checksums,
+    manifest_files_present,
     manifest_archive_status,
     manifest_extraction_type,
     manifest_value_enums,

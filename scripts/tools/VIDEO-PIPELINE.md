@@ -91,7 +91,7 @@ Output:
 - `sources/video/{slug}.mp4` — the downloaded file (~300-500 MB for 1-3 hour
   videos at 480p)
 - `sources/manifest.yaml` — new entry registered via `manifest.py add` with
-  format: video, sha256, archive bits
+  format: video, archive bits
 
 Idempotent. Re-running with the same `--slug` skips the download if the file
 already exists; still re-runs the manifest registration (which is itself

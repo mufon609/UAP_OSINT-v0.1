@@ -30,11 +30,10 @@ Wraps yt-dlp with the known-good invocation discovered the hard way:
 
 Output lands at ``sources/video/{slug}.mp4``. After download:
 
-  1. Compute sha256 of the resulting file.
-  2. Register in sources/manifest.yaml via the existing manifest.py add CLI
+  1. Register in sources/manifest.yaml via the existing manifest.py add CLI
      (so the same add-discipline applies — archive_status bits, wayback
      submission downstream, etc.).
-  3. Print extract-frames invocation as the natural next step.
+  2. Print extract-frames invocation as the natural next step.
 
 Idempotent: if sources/video/{slug}.mp4 already exists, skips the download.
 If the URL is already in sources/manifest.yaml, manifest.py add handles
@@ -202,7 +201,7 @@ def main() -> None:
         print(f"Downloaded: {out_path}  ({size_mb:.1f} MB)")
 
     # Manifest registration via manifest.py add — shells out so the existing
-    # add-discipline (sha256, archive_status bits, etc.) applies uniformly.
+    # add-discipline (archive_status bits, etc.) applies uniformly.
     if not args.skip_manifest:
         rel_path = out_path.relative_to(SOURCES_DIR)
         add_cmd = [
