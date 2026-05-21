@@ -20,7 +20,13 @@ then the node is rebuilt.
    interview > podcast; tie-break earliest `statement_date`). Write the
    free-prose fields (`description` / `background` / `top_relevance` /
    `credibility_notes`, per type); run `scripts/tools/check-vocab.py` while
-   drafting. →
+   drafting. **The topic-token trap:** `top_relevance` renders under the
+   `{topic} Relevance` header (e.g. "UAP Relevance"), but the topic word
+   itself is frequently absent from the sources — describe the relevance in
+   source vocabulary and let the header + linked nodes carry the framing.
+   Don't write the topic name to assert a connection the sources don't state:
+   the prose-drift check will reject the token, and asserting it would
+   fabricate a source claim. →
    `python3 scripts/build/validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize worker cross-ref candidates into
    `relationships` / `affiliations` / `timeline` / … with canonical
