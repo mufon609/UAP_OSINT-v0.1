@@ -7,8 +7,8 @@ copy the relevant prompt into a fresh Claude Code session.
 |---|---|
 | `onboard.md` | First-time session or any fresh session start |
 | `fork-init.md` | Bootstrap the toolkit for a different topic (run once on a fresh fork) |
-| `build.md` | Build a new node (Phase I → II → III) |
-| `topology.md` | Build topology — the canonical map of roles, `--phase` check bundles, handoff stubs, and orchestration that the agent prompts below share |
+| `build.md` | Build a new node, single-session (Phase I → II → III) — the **fallback** path + the per-phase mechanics each agent role applies |
+| `topology.md` | **The default build path.** Build topology — the canonical map of roles, `--phase` check bundles, handoff stubs, and orchestration that the agent prompts below share |
 | `agent-orchestrator.md` | Orchestrator (role 0) — sequence the build, scaffold, pass the handoff stubs; takes the user's scope/target |
 | `agent-internal-investigator.md` | Internal Investigator (role 1) — survey in-repo nodes/sources the build can reuse; name the gaps |
 | `agent-external-investigator.md` | External Investigator (role 2) — find + read missing load-bearing content; queue exact deep URLs for archiving |

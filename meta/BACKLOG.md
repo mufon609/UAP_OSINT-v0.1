@@ -49,29 +49,32 @@ lines so the dependency graph is visible inline.
 
 Items with ordering or coupling constraints.
 
-### A1 — Exercise the build pipeline end-to-end on a real node build
+### A1 — Exercise the pipeline paths the first whole run didn't hit
 
-The seven-role build pipeline (`prompts/topology.md`: Orchestrator →
-Internal/External Investigator → Archive → Worker → Build + Error →
-Audit) is complete as launchable prompts + per-phase validation, but has
-never been run *whole* on one node — each stage has only been validated
-piecewise, never the chain. The first run is a **user-directed** build
-(per `CLAUDE.md`, target + scope come from the user; sources must be real
-+ archived — not a fabricated target).
+The seven-role pipeline (`prompts/topology.md`) has now been run *whole* on
+one real node build — a user-directed, all-internal institutional-actor
+build: Orchestrator → Internal Investigator → Worker (×N) → Build → Audit,
+with handoff stubs captured and friction tightened in place. Three paths
+were NOT exercised by that run and remain unverified end-to-end:
 
-Launch each role in order with a human checkpoint + `--phase` validation
-between stages, capture the `/tmp/handoff-{slug}-*.yaml` stubs, exercise
-the worker variants + the tightening loop + Error-Agent routing, and
-confirm each `--phase X` fires exactly the checks reading the state role
-X produced. Compare the run against `prompts/topology.md`: tighten
-friction in place where cheap, file a new BACKLOG entry where not.
+- the **External Investigator (role 2) + Archive (role 3)** roles — skipped
+  by the all-internal branch (every source was already archived). Needs a
+  build with a genuine external-source gap.
+- the **`caption` and `foia` worker kinds** — only `pdf` + `html` were hit.
+- **Error-Agent routing** — no validator failure needed routing on the clean
+  run.
+
+Drive a build that forces these paths (a target with an external-source
+gap + a caption/FOIA source); confirm each `--phase X` fires exactly the
+checks reading role X's state; tighten friction in place where cheap, file a
+new entry where not.
 
 **Deferred follow-on:** split `prose_drift` into `prose_drift_toplevel`
 (organize phase) + `prose_drift_notes` (link phase) only if one-phase-late
-surfacing of top-level prose drift proves annoying in the live run.
+surfacing of top-level prose drift proves annoying.
 
 **Blocks:** none.
-**Blocked by:** a user-directed build target.
+**Blocked by:** a user-directed build with an external-source gap.
 
 ---
 
@@ -79,7 +82,17 @@ surfacing of top-level prose drift proves annoying in the live run.
 
 Renderer-touching items that batch into a single polish pass.
 
-_(none)_
+### B1 — Statements "Attributed to": strip trailing punctuation before appending the date
+
+The person renderer's statement-block builder composes the Attributed-to
+cell as `{context}, {statement_date}` (it already skips the date when the
+context contains it). When `context` ends in punctuation — a period, or a
+closing quote-plus-period — the result reads awkwardly:
+`…Acting Director"., 2022-05-27`. Strip a trailing `.` / `"` / `."` before
+appending the date, or render the date as its own segment. Renderer-touching:
+the change shifts every person node's body, so it must batch with a
+corpus-wide person-node rebuild (the boundary check compares each committed
+body against a fresh dry-run render). Surfaced by the james-holly build.
 
 ---
 

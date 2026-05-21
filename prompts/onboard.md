@@ -69,3 +69,8 @@ Then:
 4. Ask the user what to build or what task to run.
 
 Do not begin scaffolding nodes without explicit direction from the user.
+
+When the user directs a build, run it through the multi-agent topology
+(`prompts/topology.md`) as Orchestrator — that's the default build path here;
+`prompts/build.md` is the single-session fallback. Don't hand-author the
+artifact in the main thread when the topology applies.

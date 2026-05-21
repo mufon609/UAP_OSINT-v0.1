@@ -236,8 +236,14 @@ Full video-pipeline walk-through: see `scripts/tools/VIDEO-PIPELINE.md`
 for the five-step workflow (download → optional diarize → extract
 frames → detect faces → stitch).
 
-Full build walk-through: paste `prompts/onboard.md` into a fresh
-session, then `prompts/build.md` for the Phase I → II → III procedure.
+Full build walk-through: paste `prompts/onboard.md` into a fresh session.
+**The default build path is the multi-agent topology** — `prompts/topology.md`
+(roles, `--phase` check bundles, handoff stubs) driven via the
+`prompts/agent-*.md` role prompts, with you as Orchestrator running the node
+through the Worker / Build / Audit roles. `prompts/build.md` is the
+single-session fallback and the source of the Phase I → II → III mechanics
+each role applies — reach for it only when a build genuinely shouldn't be
+decomposed into agents.
 
 Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:
 
