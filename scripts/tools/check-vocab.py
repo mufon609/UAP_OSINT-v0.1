@@ -8,7 +8,7 @@ canonical tokenizer + extraction layer from `scripts/lib/_common.py`
 script output reflects what the validator would see byte-for-byte.
 
 Use case: drafting `description` / `background` / `top_relevance` /
-`credibility_notes` prose (or per-entry synthesis content notes:
+`credibility_notes` prose (or per-entry residue notes:
 `ownership_timeline.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). Per
 `meta/conventions.md` "Prose-drift discipline on synthesis surfaces",

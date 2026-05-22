@@ -662,15 +662,16 @@ written-testimony nodes. What a hearing "established" is the verbatim
 record those linked nodes carry; the event node navigates to them
 rather than paraphrasing.
 
-### Synthesis prose is labeled and drift-checked
+### Contributor prose is labeled and drift-checked
 
-Contributor-synthesis prose is limited to labeled synthesis surfaces
-(`description`, `background`, `top_relevance`, `credibility_notes`)
-and per-entry synthesis-content notes (`ownership_timeline.note`,
-`key_personnel.note`, `vouching_chain.attestation`, etc.).
-the prose-drift check tokenizes each of these against the
-primary-source text and warns on every unmatched significant token
-(errors at 100% vocabulary divergence).
+Contributor prose sits on two kinds of surface: labeled synthesis
+fields (`description`, `background`, `top_relevance`, `credibility_notes`)
+and per-entry residue `.note` fields (`ownership_timeline.note`,
+`key_personnel.note`, `vouching_chain.attestation`, etc.) — residue,
+not synthesis (see "Per-entry notes"). The prose-drift check tokenizes
+both against the primary-source text and warns on every unmatched
+significant token (errors at 100% vocabulary divergence): even residue
+must use source vocabulary.
 
 ### News articles and books
 
@@ -684,13 +685,14 @@ document.
 Nodes carry contributor-prose surfaces that sit alongside the verbatim
 `quotes[]` content: per-node `description` / `background` /
 `top_relevance` / `credibility_notes` paragraphs, and per-entry
-synthesis content notes (`ownership_timeline.note`,
+residue `.note` fields (`ownership_timeline.note`,
 `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
-`media_versioning.note`, `vouching_chain.attestation`). These are
-labeled synthesis — they exist to frame the evidentiary content — but
-contributor prose introduces a real failure mode: unstated premises,
-paraphrase drift, and content widening even when every referenced
-quote is verbatim-clean.
+`media_versioning.note`, `vouching_chain.attestation`). The free-prose
+fields are labeled synthesis that frames the evidentiary content; the
+`.note` fields carry only residue the columns don't (see "Per-entry
+notes"). Either way it is contributor prose, and contributor prose
+introduces a real failure mode: unstated premises, paraphrase drift,
+and content widening even when every referenced quote is verbatim-clean.
 
 `validate-research.py`'s prose-drift check verifies
 that significant words in these prose fields appear in the referenced
@@ -715,8 +717,8 @@ Source-vocabulary discipline applies token-by-token; English-grammar
 discipline applies to the rendered prose. When the two collide,
 restructure the sentence — don't ship the broken phrasing.
 
-The prose-drift check is explicitly scoped to synthesis prose (free-
-prose fields and synthesis-content notes). Compact label cells (role
+The prose-drift check is explicitly scoped to contributor prose (free-
+prose synthesis fields and per-entry residue notes). Compact label cells (role
 titles, short relationship descriptors, `timeline[].event`) and cross-
 reference descriptor notes (`corroboration_items.note`,
 `witnesses_testimony.note`, `org_relationships.note`,
@@ -809,7 +811,7 @@ This applies uniformly to two surfaces:
   `org_relationships`, `contracts`, `media_versioning`, and any
   other entry-list section the schema defines.
 - **Free-prose fields.** `description`, `background`, `top_relevance`,
-  `credibility_notes`, and synthesis-content `.note` fields.
+  `credibility_notes`, and per-entry residue `.note` fields.
 
 Contributors populate each surface with what archived primary sources
 support — no more, no less. The source produces the count. If a

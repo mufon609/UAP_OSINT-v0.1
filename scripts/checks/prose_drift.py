@@ -16,9 +16,9 @@ appear in the referenced primary-source text:
     residual. See conventions.md "Prose-drift discipline on synthesis
     surfaces".
 
-Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
+Scope is CONTRIBUTOR PROSE: top-level free-prose synthesis fields
 (``description``, ``background``, ``top_relevance``, ``credibility_notes``)
-and per-entry synthesis content notes (``ownership_timeline.note``,
+and per-entry residue notes (``ownership_timeline.note``,
 ``top_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
 ``media_versioning.note``, ``vouching_chain.attestation``,
 ``contradictions.note``). Applied to renderer-supported types EXCEPT

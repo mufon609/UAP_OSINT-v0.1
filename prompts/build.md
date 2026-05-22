@@ -503,10 +503,10 @@ quotes), OR rewrite without the `#`, OR use a YAML literal block (`|`)
 if the content already spans multiple lines.
 
 **Prose-drift check warnings — review before leaving Phase I.**
-The validator runs a token-drift check across contributor-synthesis
-prose fields on every renderer-supported type (top-level free prose:
+The validator runs a token-drift check across contributor-prose
+fields on every renderer-supported type (top-level free prose:
 `description`, `background`, `top_relevance`, `credibility_notes`;
-per-entry synthesis content notes: `ownership_timeline.note`,
+per-entry residue notes: `ownership_timeline.note`,
 `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). See
 `PROSE_FIELDS_BY_TYPE` / `PROSE_ENTRY_FIELDS_BY_TYPE` in
@@ -535,12 +535,15 @@ artifact passes — not synthesis-acceptance:
   variance as structured evidentiary data (naming_quirks, rumors, a
   timeline entry, a new quote). Rationalizing a flagged token as
   "legitimate synthesis vocabulary" is exactly what the error blocks.
-- **Per-entry synthesis content notes** — `ownership_timeline.note`,
+- **Per-entry residue notes** — `ownership_timeline.note`,
   `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
   `media_versioning.note`, and `vouching_chain.attestation`. These
-  are multi-sentence narrative / analytical prose about an event /
-  transaction / role / derivation; zero ungrounded tokens, same
-  resolution paths as free-prose fields.
+  carry only residue the row's columns don't (a credibility caveat,
+  sequencing nuance, source limitation, disambiguation) — never a
+  fact-store or a synthesis surface; see conventions.md "Per-entry
+  notes". They are still drift-checked because even residue must use
+  source vocabulary: zero ungrounded tokens, same resolution paths as
+  the free-prose fields.
 - **Structural labels + cross-reference descriptor notes** are NOT
   scanned by the prose-drift check. This includes role titles, short relationship
   descriptors, `timeline[].event`, `use_status`, `activity`, and the
