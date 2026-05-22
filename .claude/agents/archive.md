@@ -24,7 +24,13 @@ orchestrator directly, in the tightening loop).
    Blocked sites → `meta/sources-access.md`.
 2. **Extract** each new source:
    `python3 scripts/build/extract-source.py --source {path}` →
-   `/tmp/scratch-{slug}-N.txt`.
+   `/tmp/scratch-{slug}-N.txt`. If you flag a source `extraction_type:
+   ocr-scan` / `extraction-lossy`, that scratch is **corrupt** and is not
+   worker-ready: its canonical text is a verified `.txt` sibling, produced by
+   the orchestrator's sibling-readiness step (`/build` step 4b — VLM read +
+   independent verification + paired manifest entry), not by you. You register
+   the sibling's manifest entry when handed one, but you do not produce or
+   verify it.
 
 You do **not** scaffold the artifact — the orchestrator scaffolds once
 (role 1's reused sources + yours, in a single `research-scaffold --sources`

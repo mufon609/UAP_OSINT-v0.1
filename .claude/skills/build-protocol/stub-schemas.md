@@ -14,9 +14,13 @@ reusable_sources:
   - path: {category}/{file}.pdf
     scratch: /tmp/scratch-{slug}-1.txt
     covers: ["{claim-group label}"]
+    extraction_type: text-native   # text-native | ocr-scan | extraction-lossy (from manifest)
 topic_relevance: "<one line: how the subject connects to the topic via linked_nodes>"
 gaps: ["{what the record is missing}"]
-all_internal: false            # true => orchestrator skips external + archive
+blocking_prep: []              # source-prep prerequisites the orchestrator must clear before the Worker
+                               # (NOT gaps, NOT Worker tasks). e.g. an ocr-scan reused source whose
+                               # verified .txt sibling does not yet exist -> /build step 4b must produce it.
+all_internal: false            # true => orchestrator skips external + archive (NOT source-prep / 4b)
 validator_findings: []
 ```
 

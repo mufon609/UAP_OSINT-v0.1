@@ -22,12 +22,25 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
    against this context, not the source alone (build-protocol → source-read-first).
 2. **Re-extract reusable sources** already archived:
    `python3 scripts/build/extract-source.py --source {path}` →
-   `/tmp/scratch-{slug}-N.txt`.
+   `/tmp/scratch-{slug}-N.txt`. For a source flagged `extraction_type:
+   ocr-scan` / `extraction-lossy` (manifest), this raw extract is **corrupt**
+   and serves only as a survey aid (reading the document's intrinsic facts) —
+   it is NOT the text quotes get derived from. The canonical clean scratch
+   comes later from the orchestrator's sibling-readiness step (the verified
+   `.txt` sibling). Do not present a corrupt extract as quotable source text.
 3. **Confirm the reuse set is intact:**
    `python3 scripts/tools/manifest.py verify-paths`.
 4. **Name the gaps** — load-bearing topics not covered internally. If nothing
    is missing, set `all_internal: true` (the orchestrator then skips the
    External Investigator + Archive and goes straight to the Worker).
+   - **`blocking_prep` ≠ a gap.** A reused source flagged `ocr-scan` /
+     `extraction-lossy` that lacks a verified `.txt` sibling is **not** a Worker
+     gap and not an external-sourcing gap — the Worker cannot produce it (it has
+     no Write tool). Record it as a `blocking_prep` item: the orchestrator's
+     sibling-readiness step (`/build` step 4b) must produce + independently
+     verify + register the sibling before the Worker. `all_internal` can stay
+     `true` (no external fetch); `blocking_prep` is about source-prep, not
+     sourcing.
 
 Return the internal-investigator stub (build-protocol → stub-schemas.md) as
 your final message — the orchestrator reads it to drive the next role.

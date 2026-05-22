@@ -36,6 +36,19 @@ relevance often lives in its relationships, not its own source. The
 must be **threaded forward** to every downstream role; no role judges
 relevance from a source alone.
 
+**OCR-scanned sources need a verified sibling before the Worker.** A primary
+source flagged `extraction_type: ocr-scan` / `extraction-lossy` (manifest) is
+**not worker-ready**: its `pdftotext` layer is corrupt, so quotes pulled from it
+would be garbage or fail the verbatim gate. Its canonical text is a same-stem
+`.txt` sibling, produced by VLM page-image read and **independently verified by
+a different agent** — the producer cannot self-verify a hallucination, which is
+invisible to its author (`meta/conventions.md` "Producing the `.txt` sibling").
+Producing + verifying + registering the sibling is the **orchestrator's
+sibling-readiness step** (`/build` step 4b), run before the Worker — never the
+Worker's job: the Worker has no Write tool and emits a fragment, not a file.
+This keeps source-read-first honest for scanned documents instead of letting a
+corrupt extract masquerade as source text.
+
 ## Build phases
 
 The phase vocabulary is generated from the routing source of truth
