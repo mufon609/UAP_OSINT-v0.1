@@ -161,7 +161,7 @@ def cmd_add(args):
         artifact = {
             "format": args.format or format_from_path(path) or "html",
             "path": path,
-            "archived_date": date.today().isoformat(),
+            "archived_date": args.archived_date or date.today().isoformat(),
         }
         full_path = SOURCES_DIR / path
         if not full_path.exists():
@@ -297,8 +297,88 @@ def cmd_verify_paths(args):
     sys.exit(1 if missing else 0)
 
 
+def cmd_edit(args):
+    """Correct a registered artifact in place — target it by ``--path`` and
+    set one or more fields. The CLI surface for fixing a mis-registered entry
+    without a hand-edit to the manifest YAML (which the build rules discourage).
+
+    - ``--new-path`` renames the registered path (rename the file on disk
+      first; uniqueness-checked, warns if the new path is absent on disk).
+    - ``--note`` rewrites the artifact's note; ``--format`` /
+      ``--extraction-type`` / ``--transcript-provenance`` / ``--archived-date``
+      set those fields.
+
+    Only the fields you pass change; everything else is left as-is. Errors if
+    the path matches no registered artifact, or if ``--new-path`` collides with
+    an already-registered path.
+    """
+    entries = load_manifest()
+    target_rel = normalize_source_rel_path(args.path)
+
+    found = None
+    for entry in entries:
+        for artifact in entry.get("artifacts") or []:
+            if artifact.get("path") == target_rel:
+                found = (entry, artifact)
+                break
+        if found:
+            break
+    if not found:
+        print(f"ERROR: no registered artifact with path: sources/{target_rel}",
+              file=sys.stderr)
+        sys.exit(1)
+    entry, artifact = found
+
+    changes = []  # (field, old, new)
+    if args.new_path:
+        new_rel = normalize_source_rel_path(args.new_path)
+        if new_rel != target_rel:
+            for e in entries:
+                for a in e.get("artifacts") or []:
+                    if a.get("path") == new_rel:
+                        print(f"ERROR: target path already registered under "
+                              f"{e.get('url')}: sources/{new_rel}",
+                              file=sys.stderr)
+                        sys.exit(1)
+            if not (SOURCES_DIR / new_rel).exists():
+                print(f"WARNING: new path does not exist on disk (rename the "
+                      f"file first): sources/{new_rel}", file=sys.stderr)
+            changes.append(("path", target_rel, new_rel))
+
+    for field in ("format", "extraction_type", "transcript_provenance",
+                  "archived_date", "note"):
+        val = getattr(args, field)
+        if val is not None:
+            changes.append((field, artifact.get(field), val))
+
+    if not changes:
+        print("Nothing to change — pass at least one of --new-path / --note / "
+              "--format / --extraction-type / --transcript-provenance / "
+              "--archived-date.", file=sys.stderr)
+        sys.exit(1)
+
+    if args.dry_run:
+        print(f"[dry-run] would edit artifact sources/{target_rel} "
+              f"(URL: {entry.get('url')}):")
+        for field, old, new in changes:
+            print(f"[dry-run]   {field}: {old!r} -> {new!r}")
+        print("[dry-run] manifest not written")
+        return
+
+    for field, _old, new in changes:
+        artifact[field] = new
+    save_manifest(entries)
+
+    final_path = next((n for f, _o, n in changes if f == "path"), target_rel)
+    print(f"✓ Edited artifact: sources/{final_path} (URL: {entry.get('url')})")
+    for field, old, new in changes:
+        print(f"  {field}: {old!r} -> {new!r}")
+
+
 COMMANDS = {
     "add": cmd_add,
+    "edit": cmd_edit,
+    "set": cmd_edit,
     "status": cmd_status,
     "pending": cmd_pending,
     "usage": cmd_usage,
@@ -340,12 +420,40 @@ def main():
         help="Mark the URL entry as ineligible for Wayback submission "
              "(synthetic deep-link URLs that won't resolve at archive time)")
     p.add_argument(
+        "--archived-date",
+        help="Archival date (YYYY-MM-DD) for the artifact; defaults to today. "
+             "Use when the file was downloaded in a prior session so "
+             "archived_date isn't conflated with the registration date.")
+    p.add_argument(
         "--dry-run",
         action="store_true",
         help="Validate the add (URL / path / format / path-uniqueness) and "
              "report what would change, without writing the manifest. Lets the "
              "External Investigator self-check a lead before the Archive agent "
              "commits it.")
+
+    p = subparsers.add_parser(
+        "edit", aliases=["set"],
+        help="correct a registered artifact in place (target by --path); set a "
+             "field, rewrite the note, or --new-path to rename the registered path")
+    p.add_argument("--path", required=True,
+                   help="path of the registered artifact to edit "
+                        "(paths are unique across the manifest)")
+    p.add_argument("--new-path",
+                   help="rename the registered path (rename the file on disk first)")
+    p.add_argument("--note", help="rewrite the artifact's note")
+    p.add_argument("--format")
+    p.add_argument(
+        "--extraction-type",
+        choices=["text-native", "ocr-scan", "extraction-lossy"])
+    p.add_argument(
+        "--transcript-provenance",
+        choices=["stenographic", "published-transcript",
+                 "human-corrected-caption", "auto-caption", "unknown"])
+    p.add_argument("--archived-date",
+                   help="set the artifact's archived_date (YYYY-MM-DD)")
+    p.add_argument("--dry-run", action="store_true",
+                   help="report what would change without writing the manifest")
 
     p = subparsers.add_parser("status")
     p.add_argument("url")

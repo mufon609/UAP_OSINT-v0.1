@@ -123,35 +123,11 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — `manifest.py` has no update/remove path and no structured-metadata flags
-
-`manifest.py` only `add` mutates the YAML; correcting a registered
-entry's note (or any field) has no CLI surface, forcing a hand-`Edit`
-(which the build rules otherwise discourage). Also: no `--archived-date`
-flag — `add` auto-stamps today, conflating archival-date with
-registration-date for files that were downloaded in a prior session;
-and no `--classification` / `--date` / `--pages` structured flags (all
-such metadata goes into the freeform `--note`). Add an `edit`/`set`
-subcommand (target an artifact by path; set a field or rewrite the note)
-plus an `--archived-date` flag. Surfaced during the AAWSAP DIRD bulk
-registration (36 entries; one note needed a post-add hand-fix).
-
-### C2 — `dia-mil-reid-aatip-letter-2009.pdf` is misnamed
-
-Page-1 read shows the file is the James R. Clapper Jr. / OUSD(I)
-memorandum to the Deputy Secretary of Defense recommending against a
-Special Access Program for AATIP — i.e. the memo *responding to* Reid,
-not Reid's own letter (that is `reid-letter-to-depsecdef-sap-request-20090624.pdf`).
-Rename the file + update its manifest path/note so a future builder
-doesn't mis-cite it as Reid's letter. (A separate 3-page
-`OUSDI_IM_on_AATIP_Final.pdf` on The Black Vault is a DIFFERENT, shorter
-document — the 18-page packet on disk here is distinct.)
-
 ### C3 — Three AAWSAP source URLs recorded as landing-page fallback
 
 `dird-22-…-diamil-…` (dia.mil FileId/161870 → 403), `fas-org-aatip-list-20210808.pdf`
 (irp.fas.org/dia/aatip-list.pdf → 202 empty, Cloudflare), and
-`dia-mil-reid-aatip-letter-2009.pdf` (dia.mil FileId/170015 → 403) are now
+`clapper-usdi-aatip-sap-recommendation-2009.pdf` (dia.mil FileId/170015 → 403) are now
 registered under their canonical-origin URLs (provenance-correct, per the
 manifest-shape split), but those origins are bot-blocked and could not be
 verified to return 200. Revisit via the Wayback fuzzy-timestamp pull (per
