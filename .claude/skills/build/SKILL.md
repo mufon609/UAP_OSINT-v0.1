@@ -64,9 +64,12 @@ build before doing anything.
    `meta/conventions.md` "Producing the `.txt` sibling". This is the
    orchestrator's responsibility, **never the Worker's** (the Worker has no
    Write tool). It runs **regardless of the all-internal branch** — all-internal
-   skips new-bytes sourcing (external + archive), not source-prep. If the
-   sibling is missing and producing/registering it is outside the tools granted
-   here, **HALT and report the exact remedy to the user** rather than handing
+   skips new-bytes sourcing (external + archive), not source-prep. If a
+   sibling is missing, the remedy is the **`/prepare-ocr-sibling`** skill — it
+   produces the sibling (VLM page-image read), independently verifies it (a
+   different agent — the producer can't self-verify), and registers the paired
+   entry. Run it (or, if you can't dispatch a skill from here, **HALT** and
+   direct the user to run `/prepare-ocr-sibling {source-path}`) before handing
    the Worker a corrupt extract. Once every ocr-scan source has a verified
    sibling, the canonical scratch comes from `extract-source.py --artifact`
    (it prefers the sibling). Text-native sources need no sibling.

@@ -185,24 +185,3 @@ recognized page boilerplate in the verbatim check (carefully — it must
 not mask real mismatches), or document the split-at-page-boundary
 expectation prominently. Recurs on every page-spanning quote in paginated
 sources.
-
-### C10 — OCR-scan sibling production has no autonomous owner in `/build` (currently detect-and-halt)
-
-`/build` step 4b now *recognizes* that an `ocr-scan` / `extraction-lossy`
-source needs a verified `.txt` sibling before the Worker, and the
-internal-investigator flags it as `blocking_prep` — but producing it
-(VLM page-image read → write the sibling) + the mandated independent
-verification + the paired manifest registration is not wired as an
-autonomous orchestrator sub-step, because that would require the build
-skill to own a Write-to-`sources/` producer + `manifest.py` + a
-verifier agent. Decide the owner: (a) declare those tools on the `/build`
-orchestrator and dispatch a producer + an independent verifier inline;
-(b) a dedicated standalone source-prep skill (mirrors `/verify-transcript`,
-the existing standalone-prep pattern) that `/build` directs to; or (c)
-keep detect-and-halt and treat sibling production as a manual pre-build
-contributor step. Whatever the choice, the independent-verification rule
-(`meta/conventions.md` "Producing the `.txt` sibling": producer ≠ verifier)
-must remain non-negotiable. Note: option (a) widens the orchestrator's
-allow-list — a deliberate permission decision for the maintainer, not a
-silent change. Surfaced building the first OCR-scan DIRD (dird-03); affects
-every OCR-scan source (the DIRD corpus is OCR-scan).
