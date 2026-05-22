@@ -169,9 +169,9 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 | Field | Value |
 |---|---|
-| Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Intelli_gence" for "Intelligence"), 2020-09-01 |
+| Attributed to | NIA Director cross-service outreach memorandum to the Army G-2, dated 23 September 2020 (OCR preserves "Intelli_gence" for "Intelligence"), 2020-09-23 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | p.3, NIA Director cross-service outreach memorandum |
+| Location | UAPTF Charter package, NIA Director cross-service outreach memorandum |
 
 ---
 

@@ -307,10 +307,10 @@ quotes:
     The Naval Intelli_gence Activity (NIA) has been directed to lead the UAP TF.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.3, NIA Director cross-service outreach memorandum
+    location: UAPTF Charter package, NIA Director cross-service outreach memorandum
   significance: UAPTF Charter package — NIA directed to lead the UAP Task Force (chartering authority distinct from ONI operating location)
-  context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Intelli_gence" for "Intelligence")
-  statement_date: '2020-09-01'
+  context: NIA Director cross-service outreach memorandum to the Army G-2, dated 23 September 2020 (OCR preserves "Intelli_gence" for "Intelligence")
+  statement_date: '2020-09-23'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'

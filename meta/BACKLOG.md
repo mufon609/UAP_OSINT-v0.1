@@ -119,6 +119,35 @@ Note: the conservative noise count is **12**, not the first audit's ~41 — the
 rest carry discrete facts or real caveats (quote-promotion / residue), so a
 blanket "delete the notes" pass would lose content. Per-entry judgment required.
 
+**Audit-surfaced per-node debt (running log — appended per phase; resolved
+items struck as the sweep clears them):**
+
+_Phase-B verification of the shipped nodes (10 orgs + skinwalker + partial
+people) surfaced:_
+- **safire** — `key_personnel` kp2/kp3/kp5/kp6 carry Aureon-team-page bio facts
+  as paraphrase; the ISF + Mainwaring `org_relationships` notes embed an inline
+  verbatim funding quote. → promote to `quotes[]`, trim notes (org batch).
+- **ousd-is** — Vickers / Lowery / Bingen / Kernan / Cohen-Watnick succession
+  dates belong in `key_personnel` period columns (structured, not quotes); the
+  Clapper note duplicates a fact already on the node → delete; the Cambone note
+  is partly in-source (promote) and partly from DoD release 1221-06 (cite that
+  source) (org batch).
+- **arlo** — `org_relationships` Sancorp note narrates the SASP protest sequence,
+  but every step is already in the Description + Timeline → delete-redundant
+  (NOT a finding: a chronology of single-source facts produces no emergent
+  reading-together information).
+- **ipmo** — `org_relationships` AARO note carries a dangling `entity e11`
+  cross-reference (no `entities` section exists on this artifact) + AARO→AIC
+  rebrand narration → fix the broken ref; assess the rebrand clause
+  (delete-redundant vs. route) in the org batch.
+- **aaro** — `blackvault-sancorp-23-f-1114-aaro-pws.pdf` SF-33 issuing-office
+  block + PWS task-area enumeration are OCR-corrupt with no clean-text sibling,
+  so they are NOT promotable to verbatim quotes. Blocked on `/prepare-ocr-sibling`
+  (no autonomous owner). Stays residue; defer past this effort.
+- _Resolved this effort:_ uaptf q22 — `location` "p.3" + `context` + `statement_date`
+  had misattributed the passage to the Charter (Sept 1); it is the NIA
+  cross-service outreach memorandum (23 Sep 2020). Corrected + re-rendered.
+
 **Blocks:** none.
 **Blocked by:** nothing — execution.
 
