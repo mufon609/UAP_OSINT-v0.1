@@ -175,6 +175,18 @@ _Still open:_
   and verify the sponsorship basis. (Person-node program/affiliation/relationship
   notes are not prose-drift-gated, which is how the unlisted-source references
   went unflagged.)
+- **research-queue reference reconciliation** (the queue was emptied "for a fresh
+  start" in `32bf5c6`, but several artifacts still cite specific now-deleted entries).
+  The deferred-finding pointers (F.SRI on russell-targ + uri-geller; F.X on arlo) and
+  the Cluster-F archival pointer were fixed in this effort. Still dangling: (a) the
+  "known start, unknown end (but not ongoing)" pending-convention citation on
+  `hal-puthoff` (×2) + `russell-targ` (×2) — decide where that convention question
+  lives (conventions.md decision or a BACKLOG item) and drop the dead
+  `research-queue.md` citation; (b) the `lockheed-martin-uap-materials` investigation's
+  `what_would_resolve` reference to research-queue.md "Externally blocked" (FOIA appeal
+  24-F-0266) — and the "The Record" daily-log archival need (uri-geller r1) — both are
+  external-blocked source-acquisition items that want a tracking home (the BACKLOG
+  external-event section).
 
 **Blocks:** none.
 **Blocked by:** nothing — execution.

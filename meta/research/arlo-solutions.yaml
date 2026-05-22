@@ -357,7 +357,6 @@ rumors:
     / HQ003423C0061 / HQ003424C0046.
   status: not-primary-source-established
   observed_sources:
-  - meta/topic/research-queue.md F.X finding-node candidate writeup, citing the now-retired meta/topic/working-notes/uap-disclosure-architecture-handoff.md
   - Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
   note: Investigated 2026-05-03. No primary source attests an Arlo-IPMO contract. Arlo's federal contract record (USAspending UEI JSRCFJVJM874, top 50 awards) names OUSD(I&S) sub-directorates SASP, EXDIR,
     and CL&S as customer offices but does not name IPMO. The Influence/Deception/Perception position descriptions on Arlo's recruitment page list OUSD(I&S) generally as the customer office; the work most

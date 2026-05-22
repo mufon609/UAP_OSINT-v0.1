@@ -350,7 +350,7 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 ### "Arlo Solutions has a direct contract with the Influence and Perception Management Office (IPMO) — i.e., Arlo is an IPMO contractor in the same way Sancorp is the IPMO contractor under HQ003422C0064 / HQ003423C0061 / HQ003424C0046."
 
-**Circulates in:** meta/topic/research-queue.md F.X finding-node candidate writeup, citing the now-retired meta/topic/working-notes/uap-disclosure-architecture-handoff.md; Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
+**Circulates in:** Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
 
 **Investigator note:** Investigated 2026-05-03. No primary source attests an Arlo-IPMO contract. Arlo's federal contract record (USAspending UEI JSRCFJVJM874, top 50 awards) names OUSD(I&S) sub-directorates SASP, EXDIR, and CL&S as customer offices but does not name IPMO. The Influence/Deception/Perception position descriptions on Arlo's recruitment page list OUSD(I&S) generally as the customer office; the work most likely bills under SASP scope under HQ003425F0104 (which has scope overlap with IPMO mission areas including "designated compartmented programs" management) but that is inference, not primary-source attestation. Graduate to a quote entry if a USAspending or FOIA-released contract record names IPMO as Arlo's customer office.
 
