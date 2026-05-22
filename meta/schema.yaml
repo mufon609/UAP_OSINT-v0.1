@@ -82,8 +82,6 @@ types:
       top_level: [background, top_relevance, credibility_notes]
       per_entry:
         - [vouching_chain, attestation]
-        - [relationships, summary]
-        - [corroboration_items, summary]
     frontmatter:
       required: [id, type, schema_version, status, archetype, created]
       optional: [authored_works]  # list of /documents/... paths (doc_form: book)
@@ -187,7 +185,6 @@ types:
       per_entry:
         - [key_personnel, note]
         - [contracts, note]
-        - [org_relationships, summary]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
     kinds:
@@ -315,8 +312,7 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry:
-        - [corroboration_items, summary]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
     kinds:
@@ -462,7 +458,6 @@ types:
       per_entry:
         - [ownership_timeline, note]
         - [top_scope_activity, note]
-        - [location_relationships, summary]
     frontmatter:
       required: [id, type, schema_version, status, created]
     required_sections:
