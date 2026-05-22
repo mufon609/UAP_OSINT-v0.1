@@ -53,6 +53,17 @@ organization, location, finding, and investigation.
    original entry and add the new one alongside. Edit history itself
    lives in git log / git diff, not in the artifact.
 
+5. **Exemplars give shape, never facts.** When you mirror a built node
+   as a structural model (a sibling document, an archetype peer), copy
+   only its *shape* — section set, field layout, quote-density feel.
+   Every fact, every cross-reference link, and every quote in the new
+   node is confirmed against THIS node's OWN source, never carried over
+   from the exemplar. A DIRD build once inherited a sibling's wrong
+   DIA→AARO link by mirroring it — a fact copied, not confirmed. Copying
+   a fact or link from an exemplar is a fabrication-class error: the
+   exemplar may be wrong, and the gate that catches it is your re-read
+   of the source, not the exemplar's apparent authority.
+
 ---
 
 ## Prerequisites
@@ -78,6 +89,14 @@ If any prerequisite is unmet, stop and fix before proceeding.
 ## Phase I — Investigation workflow
 
 ### Step 1. Scaffold the research artifact (if not yet scaffolded)
+
+**Slug convention for a serially-released document corpus.** When a node
+belongs to a numbered set of released documents (e.g. the FOIA-released
+AAWSAP DIRDs), slug it `{corpus}-{release#}-{short-title}` with NO date
+(`dird-03-pulsed-hpm`, not `dird-…-20100128`): siblings then sort and
+cross-reference by release number, and inbound stub references reconcile
+to that one form. The date lives in `internal_date` / the manifest, not
+the slug.
 
 ```
 python3 scripts/build/research-scaffold.py --target {type}/{slug} \
@@ -146,6 +165,22 @@ These are **only things readable from the document's own content**.
 PDF metadata from Step 2 (author/date from pdfinfo) can inform
 `document_intrinsic` but PDF metadata is often set by authoring-software
 boilerplate — verify against document content when using.
+
+**Redacted author — preserve, don't substitute.** When a document
+FOIA-redacts its own author, the redaction *is* the document's stated
+authorship fact: record it verbatim
+(`authors_per_document: ['[redacted per FOIA (b)(6)]']`) and stop. Do
+NOT fill `authors_per_document` from an external source. Where the author
+is attested elsewhere (e.g. a DIA→Congress products list naming the
+contractor/author), that attestation is a fact of the *attesting*
+document — it lives on the attesting document's OWN node, which you build
+and cross-reference; it never becomes this document's
+`authors_per_document`, its `description` prose, or a Key Passage here. A
+node's Key Passages come only from that node's own source (enforced by the
+`document_quote_source` check) — embedding the attesting document's words
+here would make the rendered node cite itself for text it does not
+contain, a fabrication-class error. (The redacted DIRD author surfaces as
+a forward-ref cross-reference + a `naming_quirks` note, not as prose.)
 
 ### Step 4. Populate `context_extrinsic`
 
@@ -365,6 +400,16 @@ entity-registration step: write the wrap where the entity is named.
   typo (the typo goes into `naming_quirks`, not the wrap).
 - Don't self-wrap the artifact's own subject — its identity is carried
   by the node body (Identity / Overview), not by a wrap to itself.
+
+**Document-node load-bearing capture.** Relevance is relational
+(`meta/conventions.md`) — for a document node specifically, wrap-link:
+the author (or, for a redacted author, the external attestor — see Step
+3); every load-bearing entity the document acknowledges or cites (correct
+canonical stub, don't invent one); and notable cross-topic named entities
+— programs / people / orgs (e.g. a "Project Paperclip" mention) — even
+when tangential to the document's subject, since those are the threads a
+later investigator follows. Each wrap is confirmed against THIS
+document's own text (Hard rule 5), never carried from a sibling exemplar.
 
 ### Step 8. Populate `naming_quirks` (bounded agent task: naming-quirks)
 

@@ -161,39 +161,6 @@ Key Passages + `naming_quirks` instead. This may be intended (description
 check should credit canonical-form `naming_quirks` / `document_intrinsic`
 vocabulary. Same check family as C5; handle with the same care.
 
-### C7 — Codify the document-build patterns this session demonstrated but never wrote down
-
-Three patterns were worked out across the DIRD pilot but live only in the
-built nodes, not in `prompts/build.md`'s document-build guidance — so the
-next session re-derives or gets them wrong:
-
-- **Canonical DIRD slug convention** — `dird-{BlackVault#}-{short-title}`
-  (no date); reconcile inbound stub refs to it.
-- **Redacted-author pattern** — when a document FOIA-redacts its own
-  author, preserve that redaction as the document's own fact
-  (`authors_per_document: ['[redacted per FOIA (b)(6)]']`) and STOP. Do
-  NOT inject the author from an external source. Where the author is
-  attested elsewhere (e.g. the DIA→Congress products list), that
-  attestation lives on the *attesting* document's OWN node — build that
-  node and link to it. NEVER embed the attesting document's content as a
-  Key Passage on the redacted document's node: a node's Key Passages come
-  only from that node's own source (now enforced by the
-  `document_quote_source` check). Embedding a foreign-source quote made a
-  rendered DIRD node cite itself for words it doesn't contain — a
-  fabrication-class error caught only by manual review.
-- **Document-node load-bearing capture** — wrap-link the author, the
-  acknowledged / cited load-bearing entities (correct canonical stubs),
-  and catch notable cross-topic quotes (named programs / people / orgs,
-  e.g. Project Paperclip). The general "Relevance can be relational"
-  principle is in `conventions.md`; its document-build application is not.
-
-Plus the cross-cutting rule that prevents the exemplar-mirroring bug
-class: **a node's facts and links are confirmed against ITS OWN source,
-never copied from another node — exemplars provide structure/shape only.**
-(The `dird-01` build copied `dird-15`'s DIA→AARO mislink by mirroring the
-exemplar.) Codify in `prompts/build.md` and reinforce in the worker /
-build agent prompts.
-
 ### C8 — Phase-I prose-drift and Phase-III description-drift treat adjacent punctuation differently
 
 On `dird-15`, a comma fused inside a closing quote (`apparent "cloaking,"`)

@@ -49,6 +49,15 @@ Worker's job: the Worker has no Write tool and emits a fragment, not a file.
 This keeps source-read-first honest for scanned documents instead of letting a
 corrupt extract masquerade as source text.
 
+**Exemplars give shape, not facts.** A built node handed to you as a structural
+model (a sibling document, an archetype peer) supplies SHAPE only — section set,
+field layout, quote-density feel. Every fact, every cross-reference link, and
+every quote is confirmed against THIS node's own source, never carried over from
+the exemplar. Copying a fact or link from an exemplar is a fabrication-class
+error (a build once inherited a sibling's wrong cross-link by mirroring it);
+the exemplar may be wrong, and the gate that catches it is your re-read of the
+source, not the exemplar's apparent authority.
+
 ## Build phases
 
 The phase vocabulary is generated from the routing source of truth
