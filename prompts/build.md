@@ -400,6 +400,15 @@ entity-registration step: write the wrap where the entity is named.
   typo (the typo goes into `naming_quirks`, not the wrap).
 - Don't self-wrap the artifact's own subject — its identity is carried
   by the node body (Identity / Overview), not by a wrap to itself.
+- **Labeling a wrap.** The display phrase is plain prose; only the path
+  is wrapped. Write the phrase, then the wrap — bare (`Lockheed Martin
+  [`/organizations/lockheed-martin`]`) or parenthetical (`a series of
+  AAWSA Program reports ([`/documents/dia-aatip-products-list-2018`])`).
+  **Never** put the phrase in markdown-link brackets:
+  `[phrase]([`/path`])` is a broken link — the wrap is a code-span, which
+  markdown cannot use as a link destination, so it renders as a
+  highlighted code span instead of a link. The `[`...`]` belongs around
+  the path alone, never around the label.
 
 **Document-node load-bearing capture.** Relevance is relational
 (`meta/conventions.md`) — for a document node specifically, wrap-link:
