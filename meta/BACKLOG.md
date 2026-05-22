@@ -105,15 +105,21 @@ DoDD-5143.01 subsidiary boilerplate ×5, a karl-nell cross-pointer); closed the
 `funder` / `fund-administrator` enum gap (safire ISF + Mainwaring rows are now
 structured, not `partner`+note-workaround); narrowed the `note` definition.
 
-**DEFERRED (the bulk — per-entry, source-reading, not mechanical):**
-- Promote the ~191 fact-notes (Q + C) to verbatim `quotes[]` entries (with
-  `source.location`) and structured columns / enum values — this is where
-  "solid facts, not synthesis" is actually won; ~43% of the Q notes already
-  have the verbatim text inline.
-- Route the ~13 cross-source pattern notes to finding / investigation nodes
-  (F.SRI and the open `lockheed-martin-uap-materials` investigation are already
-  on the books to receive several).
-- The ~64 residue notes already conform — no change.
+**Note-residue sweep — DONE (Phase C, this effort).** All 16 person nodes, the 10
+organization nodes, and skinwalker were swept to the residue-only end-state, each
+batch gated by an independent fresh-context audit. The "~191 fact-notes" estimate
+resolved mostly to no-ops rather than promotions: under the person-node voice gate a
+fact ABOUT the subject is not quote-eligible (it lives in a structured row), and most
+own-voice facts were already quoted — so the person batches yielded ~zero new quotes
+and reduced to noise-deletion + internal-id-bookkeeping removal + a few unsourced-claim
+removals. The genuine promotions were on org nodes (safire / ousd-is / arlo, plus the
+earlier shipped 10). The residue notes conform.
+
+**Still DEFERRED:**
+- Route the ~13 cross-source pattern notes to finding / investigation nodes (F.SRI and
+  the open `lockheed-martin-uap-materials` investigation are on the books to receive
+  several). The entity-node quotes these will cite now exist post-sweep, so the
+  finding-source-in-entity-node gate is satisfiable.
 
 Note: the conservative noise count is **12**, not the first audit's ~41 — the
 rest carry discrete facts or real caveats (quote-promotion / residue), so a
@@ -135,10 +141,15 @@ _Still open:_
   block + PWS task-area enumeration are OCR-corrupt with no clean-text sibling,
   so they are NOT promotable to verbatim quotes. Blocked on `/prepare-ocr-sibling`
   (no autonomous owner). Stays residue; defer past this effort.
-- **people-node bulk** — Phase C people batches in progress (hal-puthoff,
-  russell-targ, kit-green, uri-geller, james-lacatski, karl-nell, ronald-moultrie
-  swept). Remaining: david-grusch, james-ryder, david-fravor, ryan-graves,
-  james-holly, luis-elizondo, sean-kirkpatrick, sue-gough, alex-dietrich.
+- **deprecated `lines N-M` source.location forms** (pre-existing, surfaced in the
+  people sweep): ~12 artifacts still use the deprecated extraction-anchored `lines N-M`
+  location form instead of the canonical source-anchored form (`p. N, ¶M` /
+  `[MM:SS]` / section descriptor) — mostly the older event / transcript / Nimitz-
+  eyewitness nodes (e.g. `2004-nimitz-encounter`, the 2023 hearing transcripts,
+  `david-fravor`, `david-grusch`, `sean-kirkpatrick`). Run the `normalize-locations.py`
+  diagnostic + a contributor pass to canonicalize. Also tighten the imprecise
+  `alex-dietrich` Debrief `line 66` refs (a1/a10/a11 point at a `<script>` tag; content
+  is at lines 96/1275).
 - **ronald-moultrie a29 BlueVoyant structured-field mis-dating** (pre-existing,
   surfaced in the people sweep): the affiliation row's `period_start`/`period_end`
   (`2021-06`), role text ("appointment announced June 2021"), and timeline `t25`
