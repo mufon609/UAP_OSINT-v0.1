@@ -76,38 +76,55 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Decide whether the per-entry `.note` field stays, is redefined, or is removed
+### A2 — Migrate the per-entry `.note` field to the `summary` / `note` split (stage 2+)
 
-`.note` (on `key_personnel`, `affiliations`, `relationships`,
-`program_involvement`, `contracts`, `ownership_timeline`, …) is classified as
-**synthesis** — `meta/conventions.md` lists it among "per-entry
-synthesis-content notes" and the prose-drift check scans it; facts live
-elsewhere (structured columns + verbatim `quotes[]`). But the field has no
-*positive* definition of its job — only a vocabulary constraint (sourced
-tokens) — so it drifts into the two things it must not be: restating the
-row's own columns (duplication), or stating a new fact (which belongs in a
-column or a quote with its own source). The james-holly / ipmo build
-surfaced both modes.
+DECIDED (keep + structural refactor). A corpus audit of all 323 per-entry notes
+found **0% opinion/rumor/clutter** and **~79% irreplaceable** — removal was off
+the table. The field silently does TWO jobs: (A, ~37%) genuine *residue*
+(caveat / source-limitation / disambiguation / dating-anchoring) in column-rich
+sections, and (B, ~42%) *primary descriptive content* in bare-ref sections
+(`org_relationships`, `corroboration_items`, `relationships`) whose columns are
+only `path` + enum. The remaining ~21% is drift with a structured home:
+~8% misplaced-fact (D — flight hours, award counts, the Clapper AATIP-SAP memo,
+purchase prices; belong in Timeline rows / quotes / columns; also a
+contradiction-check blind spot), ~9% redundant source-attestation (E), ~4%
+column-duplication (C).
 
-Open question for the user — does the field earn its place? Three directions:
-- **Keep + define positively** — note = per-entry interpretive residue
-  (caveat / source-limitation / disambiguation / sequencing) the columns and
-  quotes structurally can't carry; empty by default. (A first, negative-framed
-  cut of this discipline is already in `conventions.md` / `agent-build.md` /
-  `audit.md` — "don't restate columns, don't duplicate the Timeline".)
-- **Narrow** — restrict notes to one enumerated purpose (e.g. source-quality
-  caveats only); everything else moves to columns / quotes.
-- **Remove** — drop the field; force all content into structured columns +
-  verbatim quotes.
+End-state: a per-entry `summary` field carries the B descriptive content;
+`note` narrows to residue-only (A), empty by default.
 
-Resolution couples: audit what existing `.note` fields actually carry across
-the corpus → pick a direction → update `conventions.md` (+ schema field
-comments, + the renderers if removed) → rebuild affected nodes. No mechanical
-redundancy check — redundancy here is semantic; a token-overlap scan both
-false-positives on legitimate notes and misses real cases.
+**Stage 1 — DONE** (committed): `summary` declared optional on the
+`relationship` / `corroboration` / `org_relationship` / `location_relationship`
+entry shapes; registered in `prose_drift_fields` for person / organization /
+event / location (so it is source-grounded like every synthesis surface);
+`summary` table columns exempted from the cell word-budget (it carries prose,
+like `note`). Additive — no node bodies changed.
+
+**Stage 2 — REMAINING (the migration; per-entry, careful):**
+- Per bare-ref section, point its renderer's descriptive column at `summary`
+  (the corroboration renderer already shows `note` as "What It Confirms" — a
+  proven churn-free pattern: render `summary or note`, then rename the B-notes
+  `note:`→`summary:` block-scoped, body output unchanged).
+- For each B-note, after renaming, prose-drift now checks it → **re-ground to
+  source vocabulary** (the C5 "3–6 passes" cost — a corroboration trial showed
+  ~50% of even the cleanest section's entries had ungrounded synthesis tokens).
+- **B-vs-A separation per entry** (blanket rename is unsafe): some "note"s mix
+  descriptive content (→summary) with a residue tail (→stays note) — e.g.
+  alex-dietrich corroboration c4's "two conflicting attestations … source-
+  priority" is an A caveat, not B.
+- Migrate the ~26 D facts to Timeline rows / quotes / columns; delete the
+  ~43 C/E; drop `note` in `ownership_timeline` + `top_scope_activity`
+  (100% fact-dump). Rebuild affected nodes; `pre-commit.sh` green per section.
+
+**Stage 3:** rewrite `conventions.md` ~878 ("Per-entry notes") from the current
+section-blind definition to the clean split — `summary` = descriptive content
+for bare-ref sections; `note` = residue-only, empty by default.
+
+This is a focused per-entry source-reading effort (≈105 B re-groundings +
+26 D relocations), not a mechanical pass — best done in a dedicated session.
 
 **Blocks:** none.
-**Blocked by:** a user decision on the field's purpose.
+**Blocked by:** nothing (stage 1 shipped; stage 2+ is execution).
 
 ---
 
