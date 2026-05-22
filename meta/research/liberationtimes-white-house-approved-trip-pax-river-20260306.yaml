@@ -59,7 +59,7 @@ quotes:
   source:
     path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
     location: 'article body, "Update -12 March 2026" block'
-  significance: 'March 12, 2026 update — three separate sources familiar with the trip cast doubt on key elements of the March 6 account: the hangar visited by Burlison was NOT the one allegedly built to facilitate the proposed transfer of materials, and Burlison did not see a runway built specifically for Bigelow. The broader allegation that UAP-related materials, including an exotic vehicle of unknown origin, may be stored within different facilities within Pax River remains on the record. Foundational source for the c2 contradiction in the pax-river-scif-fiscal-triangulation finding.'
+  significance: 'March 12, 2026 update — three separate sources familiar with the trip cast doubt on key elements of the March 6 account: the hangar visited by Burlison was NOT the one allegedly built to facilitate the proposed transfer of materials, and Burlison did not see a runway built specifically for Bigelow. The broader allegation that UAP-related materials, including an exotic vehicle of unknown origin, may be stored within different facilities within Pax River remains on the record.'
   statement_date: '2026-03-12'
 - id: q5
   added_date: '2026-05-18'
@@ -77,7 +77,7 @@ quotes:
   source:
     path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
     location: 'article body, Elizondo QFR Q7 quotation + Laslo-Hoyer exchange'
-  significance: 'Sharp''s reproduction of Elizondo''s QFR Q7 funding sentence verbatim (preserves "approximately $10 million" and the Hoyer-requested attribution), paired with Matt Laslo''s ([`/people/matt-laslo`]) prior interview asking Hoyer about the $10 million hangar at Pax River and Hoyer''s "private — public partner" response indicating he did not remember the specifics. Source for q2b on the pax-river-scif-fiscal-triangulation finding (the Elizondo QFR sentence as Liberation Times reproduces it) and source for Hoyer''s on-record non-recollection of the specific appropriation purpose.'
+  significance: 'Sharp''s reproduction of Elizondo''s QFR Q7 funding sentence verbatim (preserves "approximately $10 million" and the Hoyer-requested attribution), paired with Matt Laslo''s ([`/people/matt-laslo`]) prior interview asking Hoyer about the $10 million hangar at Pax River and Hoyer''s "private — public partner" response indicating he did not remember the specifics.'
   statement_date: '2026-03-06'
 
 naming_quirks: []
