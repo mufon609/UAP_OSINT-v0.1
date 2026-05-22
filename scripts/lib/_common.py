@@ -478,6 +478,40 @@ def load_source_to_artifacts_index():
     return dict(index)
 
 
+def load_synthesis_slugs():
+    """Return ``{'finding': frozenset(slugs), 'investigation': frozenset(slugs)}``
+    — the slugs of every finding / investigation node, parsed from research
+    artifacts' ``target_node`` (``findings/<slug>`` / ``investigations/<slug>``).
+
+    Mirrors ``load_source_to_artifacts_index()`` (one sequential pass over
+    ``meta/research/*.yaml`` at orchestrator entry, exposed via
+    ``BaseContext.synthesis_slugs``). Consumed by the directional checks to
+    catch a *bare-slug* prose reference to a finding / investigation node
+    ("the <slug> finding") — the violation the ``/findings/`` //
+    ``/investigations/`` path needles miss.
+    """
+    slugs = {"finding": set(), "investigation": set()}
+    if not RESEARCH_DIR.is_dir():
+        return {k: frozenset(v) for k, v in slugs.items()}
+    for path in sorted(RESEARCH_DIR.glob("*.yaml")):
+        try:
+            with open(path) as f:
+                data = strict_yaml_load(f)
+        except (yaml.YAMLError, OSError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        target_node = data.get("target_node") or ""
+        if not isinstance(target_node, str) or "/" not in target_node:
+            continue
+        type_dir, _, slug = target_node.partition("/")
+        if type_dir == "findings" and slug:
+            slugs["finding"].add(slug)
+        elif type_dir == "investigations" and slug:
+            slugs["investigation"].add(slug)
+    return {k: frozenset(v) for k, v in slugs.items()}
+
+
 def normalize_source_rel_path(arg_path):
     """Normalize a contributor-supplied source path to manifest-canonical
     form (relative to ``sources/``). Accepts both ``news/foo.html``

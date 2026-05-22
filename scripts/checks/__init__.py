@@ -122,12 +122,18 @@ class BaseContext:
 
     def __init__(self, schema, manifest_paths=None, manifest_entries=None,
                  broken_links=None, source_to_artifacts=None,
-                 missing_sources=None):
+                 synthesis_slugs=None, missing_sources=None):
         self.schema = schema
         self.manifest_paths = manifest_paths if manifest_paths is not None else set()
         self.manifest_entries = manifest_entries if manifest_entries is not None else []
         self.broken_links = broken_links if broken_links is not None else defaultdict(set)
         self.source_to_artifacts = source_to_artifacts if source_to_artifacts is not None else {}
+        # Slugs of every finding / investigation node, keyed by layer
+        # ({"finding": frozenset, "investigation": frozenset}). Built once at
+        # orchestrator entry by load_synthesis_slugs(); consumed by the
+        # directional checks to catch bare-slug prose references the
+        # /findings/ // /investigations/ path needles miss.
+        self.synthesis_slugs = synthesis_slugs if synthesis_slugs is not None else {"finding": frozenset(), "investigation": frozenset()}
         # Out-of-band registry, populated by manifest_checksums for
         # git-ignored archived artifacts missing on disk (expected-absent
         # on a fresh clone). Keyed sources/<path> → source URL. Only the
@@ -168,6 +174,7 @@ class NodeContext(BaseContext):
             manifest_entries=base.manifest_entries,
             broken_links=base.broken_links,
             source_to_artifacts=base.source_to_artifacts,
+            synthesis_slugs=base.synthesis_slugs,
         )
         self.path = path
         self.rel = rel
@@ -225,6 +232,7 @@ class ResearchContext(BaseContext):
             manifest_entries=base.manifest_entries,
             broken_links=base.broken_links,
             source_to_artifacts=base.source_to_artifacts,
+            synthesis_slugs=base.synthesis_slugs,
         )
         self.path = path
         self.rel = rel

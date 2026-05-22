@@ -78,6 +78,7 @@ from lib._common import (
     load_manifest_paths,
     load_schema,
     load_source_to_artifacts_index,
+    load_synthesis_slugs,
     resolve_cli_path,
 )
 
@@ -430,9 +431,11 @@ def main():
     schema = load_schema()
     manifest_paths = load_manifest_paths()
     source_to_artifacts = load_source_to_artifacts_index()
+    synthesis_slugs = load_synthesis_slugs()
     base_ctx = BaseContext(
         schema=schema, manifest_paths=manifest_paths,
         source_to_artifacts=source_to_artifacts,
+        synthesis_slugs=synthesis_slugs,
     )
 
     if args.path:
