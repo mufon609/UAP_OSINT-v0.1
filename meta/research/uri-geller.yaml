@@ -164,7 +164,7 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: Self-attestation only. No primary-source corroboration archived. The biography itself states "For decades this aspect of his career was too confidential and controversial to discuss" (¶10).
+  note: 'Verbatim in q5 (¶9). Residue: self-attestation only — no primary-source corroboration archived. The biography itself states "For decades this aspect of his career was too confidential and controversial to discuss" (¶10).'
 
 - id: pi3
   added_date: '2026-05-16'
@@ -175,7 +175,7 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶10"
-  note: Self-attestation only. The about-uri page's "Mind Over Missile?" teaser (¶ teaser block) attests this thread via the 4 May 1987 US News & World Report "Washington Whispers" item that named Senator Claiborne Pell ([`/people/claiborne-pell`]) as the convener; the underlying USNWR primary source is not archived in this repository.
+  note: Verbatim in q6 (¶10). Residue, self-attestation only. The about-uri page's "Mind Over Missile?" teaser (¶ teaser block) attests this thread via the 4 May 1987 US News & World Report "Washington Whispers" item that named Senator Claiborne Pell ([`/people/claiborne-pell`]) as the convener; the underlying USNWR primary source is not archived in this repository.
 
 timeline:
 
@@ -413,7 +413,7 @@ relationships:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶2, ¶3"
-  note: 'The distant Sigmund Freud lineage claim is attested only on Geller''s own biography page — both at ¶2 ("he is distantly related on his mother''s side to Sigmund Freud") and ¶3 ("His mother thought he inherited them from Sigmund Freud") — and at ¶13 ("He counts Sigmund Freud among his forebears"). No external genealogical record corroborating the lineage is archived in this repository; the lineage is a Geller-bio self-attestation that has been repeated downstream as fact in tertiary sources (Wikipedia''s Geller entry, biographer profiles, popular accounts). See credibility_notes Freud-flag paragraph and the per-quote attestation-class Pending Convention Question in meta/topic/research-queue.md (the schema-level fix would let q2 and q3 render "Attestation class: self-attestation on subject''s own publication" automatically; until then, the flag lives in credibility_notes).'
+  note: 'Lineage verbatim in q2 (¶2) and q3 (¶3); biography ¶13 additionally states "He counts Sigmund Freud among his forebears." Residue: the lineage is attested only on Geller''s own biography page — no external genealogical record corroborating it is archived in this repository — yet it has been repeated downstream as fact in tertiary sources (Wikipedia''s Geller entry, biographer profiles, popular accounts). See credibility_notes Freud-flag paragraph and the per-quote attestation-class Pending Convention Question in meta/topic/research-queue.md (the schema-level fix would let q2 and q3 render "Attestation class: self-attestation on subject''s own publication" automatically; until then, the flag lives in credibility_notes).'
 
 - id: r2
   added_date: '2026-05-16'

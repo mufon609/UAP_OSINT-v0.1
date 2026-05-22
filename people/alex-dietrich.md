@@ -44,7 +44,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 | Organization | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html | Per her self-authored Debrief op-ed: F/A-18 pilot from 2001-2020; logged more than 1,250 flight hours and 375 carrier-arrested landings; awarded a Bronze Star and a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom and Operation Enduring Freedom. |
+| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html | Service-period dates (2001-2020) per her self-authored Debrief op-ed byline; the flight-hour, carrier-landing, and combat-award totals attested in that same byline are quoted verbatim at q42. |
 | [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
 | [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html | Dietrich self-attests squadron-join in July 2004 on the Merged Podcast. The Enigma Labs announcement attests Navy service 2001 until 2014 and names VFA-41 as her squadron during the 2004 Nimitz encounter, but no archived primary source in this pool pins the VFA-41 end date specifically. |
 | [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html | Joined CU Boulder College of Engineering faculty in 2022 as an adjunct instructor in the Engineering Leadership Program. |

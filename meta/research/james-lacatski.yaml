@@ -76,7 +76,7 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[1:53]'
-  note: Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA.
+  note: Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA — self-voice attestation verbatim in q1.
 - id: r4
   added_date: '2026-05-17'
   person_path: /people/robert-bigelow
@@ -84,7 +84,7 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[3:19]'
-  note: Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts.
+  note: Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts — Lacatski's self-voice "created specifically ... to address our needs" attestation is verbatim in q2.
 - id: r5
   added_date: '2026-05-17'
   person_path: /people/luis-elizondo
@@ -108,7 +108,7 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[31:44]–[32:25]'
-  note: Lacatski's on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch's underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed.
+  note: Lacatski's on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch's underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. Self-voice attestation verbatim in q8.
 - id: r8
   added_date: '2026-05-17'
   person_path: /people/hal-puthoff
@@ -124,7 +124,7 @@ relationships:
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[20:53]'
-  note: 'Lacatski''s PART 2 attestation: "Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements."'
+  note: Lacatski names Borland alongside David Grusch (auto-caption "Grush") in WEAPONIZED PART 2 as having made the same point about compartment-read-in requirements blocking Congressional testimony — self-voice attestation verbatim in q42.
 - id: r10
   added_date: '2026-05-17'
   person_path: /people/tara-otoole
@@ -132,7 +132,7 @@ relationships:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[26:03]–[26:30]'
-  note: Lacatski declined to share Tara O'Toole's view on the Kona Blue process; documents her as a Kona-Blue-relevant figure he met with at DHS.
+  note: The Kona-Blue meeting framing ("you met with her," "she's staying away from it") is attested by the WEAPONIZED PART 1 interviewer, not by Lacatski. Lacatski's own-voice contribution is the decline to discuss her perspective — "we have to also talk about DHS interests" (verbatim in q43).
 program_involvement:
 - id: pi1
   added_date: '2026-05-17'
@@ -805,6 +805,30 @@ quotes:
     location: '[1:23:43]–[1:24:07]'
   significance: Lacatski's 2026 first-person framing of the current disclosure landscape — Congress and the president "being led down the wrong path" by falsehoods. On-record at a higher temperature than prior interviews.
   context: WEAPONIZED EP 114 2026-04-08; Lacatski to Corbell on whether the four books are the closest the public will get to disclosure
+- id: q42
+  claim_group: "Disclosure Stance"
+  added_date: '2026-05-22'
+  statement_date: '2025-11-11'
+  observation_type: relayed
+  text: |
+    [20:50] >> Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements, which is a very difficult thing.
+  source:
+    path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
+    location: '[20:50]–[21:02]'
+  significance: Lacatski names David Grusch (auto-caption "Grush") and Dylan Borland as having made the same point — that the compartment-read-in requirement blocks Congressional testimony — and his own view that "Congress needs to be able to hear those statements"
+  context: Lacatski in WEAPONIZED PART 2 responding to the interviewer's framing that read-in requirements prevent witnesses from talking to Congress
+- id: q43
+  claim_group: "Kona Blue Program"
+  added_date: '2026-05-22'
+  statement_date: '2025-11-05'
+  observation_type: relayed
+  text: |
+    [26:30] I can't talk about that because we have to also talk about DHS interests.
+  source:
+    path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
+    location: '[26:30]–[26:32]'
+  significance: Lacatski's own-voice decline to discuss Dr. Tara O'Toole's perspective on the Kona Blue process — citing DHS interests as the reason he cannot answer; the meeting framing in the question is the interviewer's, but the DHS-interests decline is Lacatski's own
+  context: Lacatski in WEAPONIZED PART 1 responding to the interviewer's question about what value Dr. Tara O'Toole saw in approving the Kona Blue process to go forward
 naming_quirks:
 - id: nq1
   added_date: '2026-05-17'

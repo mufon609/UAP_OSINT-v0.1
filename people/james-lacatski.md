@@ -208,6 +208,14 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:46:30]–[1:46:40] |
 
+> [20:50] >> Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements, which is a very difficult thing.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to the interviewer's framing that read-in requirements prevent witnesses from talking to Congress, 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
+| Location | [20:50]–[21:02] |
+
 > [30:14] We've just opened up the door by saying, "Hey, this is real. You need to do your research, your due diligence. If you expect the the government to to carry the ball on this, I wouldn't. Uh but uh that uh it's wide open.
 
 | Field | Value |
@@ -241,6 +249,14 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 | Attributed to | Lacatski in WEAPONIZED PART 1 responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [25:11]–[25:45] |
+
+> [26:30] I can't talk about that because we have to also talk about DHS interests.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 1 responding to the interviewer's question about what value Dr. Tara O'Toole saw in approving the Kona Blue process to go forward, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
+| Location | [26:30]–[26:32] |
 
 > [1:10:17] >> you're not going to be yet. We need to define what is in Kona blue. And let me tell you, it's much more than going and getting what some have described as 60 year old parts. No, it's much more than that. And and I'm I I can say I know what the exchange parameters were and I know what was promised on all sides. And I mean there was also the the money side.
 
@@ -431,14 +447,14 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 |---|---|---|
 | [`/people/colm-kelleher`] | Co-author of two books ("Skinwalkers at the Pentagon" 2021, "Inside the US Government Covert UFO Program" 2023); BAASS program manager — Lacatski's primary contractor counterparty during AAWSAP execution | Per Corbell's opening WEAPONIZED EP 38 ("Dr James latsky Dr colum kellerer ... talking about the UFO programs and their new book"); Kelleher also appears as co-interviewee in the 2021 Mystery Wire book launch. |
 | [`/people/george-knapp`] | Co-author of both Lacatski books; KLAS-TV / Mystery Wire / 8 News Now investigative reporter; WEAPONIZED co-host (with Jeremy Corbell) | Knapp is the interviewer in the 2021 Mystery Wire book launch and the co-host in WEAPONIZED EP 38. |
-| [`/people/harry-reid`] | Co-creator of AAWSAP per Lacatski's WEAPONIZED EP 38 attestation — "basically created between myself and Senator Reed at the defense intelligence agency" | Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA. |
-| [`/people/robert-bigelow`] | Founder of Bigelow Aerospace and BAASS — the contractor that executed AAWSAP under DIA's contract; Lacatski says BAASS was "created specifically" to address DIA needs | Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts. |
+| [`/people/harry-reid`] | Co-creator of AAWSAP per Lacatski's WEAPONIZED EP 38 attestation — "basically created between myself and Senator Reed at the defense intelligence agency" | Lacatski names Reid (auto-caption "Reed") as the co-creator of the program at DIA — self-voice attestation verbatim in q1. |
+| [`/people/robert-bigelow`] | Founder of Bigelow Aerospace and BAASS — the contractor that executed AAWSAP under DIA's contract; Lacatski says BAASS was "created specifically" to address DIA needs | Bigelow (rendered "Bob Bigelow's bass" in auto-caption) is the contractor counterparty across both Lacatski transcripts — Lacatski's self-voice "created specifically ... to address our needs" attestation is verbatim in q2. |
 | [`/people/luis-elizondo`] | AATIP-era counterpart at the Pentagon; "Lou handled" AATIP after Lacatski was preparing to retire in 2016 per WEAPONIZED EP 38; Elizondo's December 2024 sworn QFR ([`/documents/elizondo-qfr-burlison-20241219`]) attests Lacatski as the former AAWSAP director | Lacatski names Elizondo as "Lou" in EP 38; Elizondo's QFR Q1 names Lacatski as former AAWSAP director with explicit attribution of the DOPSR-cleared SD004 page-1 statement. |
 | [`/people/jeremy-corbell`] | WEAPONIZED Podcast co-host (with George Knapp); primary in-studio interviewer of Lacatski in WEAPONIZED EP 38 | Corbell self-introduces at the start of WEAPONIZED EP 38. |
-| [`/people/david-grusch`] | Whistleblower whose claims Lacatski has publicly characterized as "credible" and "reasonable" while saying he never witnessed what he would consider illegal activities; Lacatski does not "concur" with Grusch on the alleged illegality framing but agrees Grusch's underlying claims are "reasonable" | Lacatski's on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch's underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. |
+| [`/people/david-grusch`] | Whistleblower whose claims Lacatski has publicly characterized as "credible" and "reasonable" while saying he never witnessed what he would consider illegal activities; Lacatski does not "concur" with Grusch on the alleged illegality framing but agrees Grusch's underlying claims are "reasonable" | Lacatski's on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch's underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. Self-voice attestation verbatim in q8. |
 | [`/people/hal-puthoff`] | Author of AAWSAP DIRD #5 on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — produced under Lacatski's AAWSA Program Management at DIA in FY 2009 | Puthoff's 29 March 2010 DIRD names Lacatski as AAWSA Program Manager; documents the program-manager-to-DIRD-author relationship for one of the 38 AAWSAP DIRDs. |
-| [`/people/dylan-borland`] | Named by Lacatski in WEAPONIZED PART 2 ([`/transcripts/weaponized-097-lacatski-part2-2025`]) alongside David Grusch as having said the same thing about compartment-read-in requirements blocking Congress testimony | Lacatski's PART 2 attestation: "Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements." |
-| [`/people/tara-otoole`] | Met with Lacatski on the Kona Blue process per Corbell's framing in WEAPONIZED PART 1 — Lacatski says she is "staying away from it" and that he could not discuss her perspective further because "we have to also talk about DHS interests" | Lacatski declined to share Tara O'Toole's view on the Kona Blue process; documents her as a Kona-Blue-relevant figure he met with at DHS. |
+| [`/people/dylan-borland`] | Named by Lacatski in WEAPONIZED PART 2 ([`/transcripts/weaponized-097-lacatski-part2-2025`]) alongside David Grusch as having said the same thing about compartment-read-in requirements blocking Congress testimony | Lacatski names Borland alongside David Grusch (auto-caption "Grush") in WEAPONIZED PART 2 as having made the same point about compartment-read-in requirements blocking Congressional testimony — self-voice attestation verbatim in q42. |
+| [`/people/tara-otoole`] | Met with Lacatski on the Kona Blue process per Corbell's framing in WEAPONIZED PART 1 — Lacatski says she is "staying away from it" and that he could not discuss her perspective further because "we have to also talk about DHS interests" | The Kona-Blue meeting framing ("you met with her," "she's staying away from it") is attested by the WEAPONIZED PART 1 interviewer, not by Lacatski. Lacatski's own-voice contribution is the decline to discuss her perspective — "we have to also talk about DHS interests" (verbatim in q43). |
 
 ---
 
