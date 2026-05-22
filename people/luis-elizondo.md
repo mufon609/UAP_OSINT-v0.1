@@ -265,9 +265,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| latky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski" in JRE #2194 transcript. The caption alternates between "latky" and "latsky" within the same passage at [6:02]–[6:04]. Both forms preserved verbatim in quote q14 per the transcript-provenance auto-caption discipline; canonical reference at [`/people/james-lacatski`]. |
-| latsky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski" in JRE #2194 transcript at [6:04]. See companion entry nq1 for the "latky" rendering at [6:02]. |
-| langly | Langley | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Langley" (referring to the CIA Langley headquarters in Northern Virginia) in JRE #2194 at [2:26]. Not currently quoted in this artifact; logged for future-quote discipline. |
+| latky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski". The caption alternates between "latky" and "latsky" within the same JRE #2194 passage; both forms are preserved verbatim per the transcript-provenance auto-caption discipline. |
+| latsky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski" — the second of the two forms the caption produces for the surname in the same JRE #2194 passage. |
+| langly | Langley | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Langley" — the CIA Langley headquarters in Northern Virginia. |
 
 ---
 
