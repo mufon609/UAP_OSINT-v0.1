@@ -196,15 +196,6 @@ _Still open:_
   clause, the same internal-id bookkeeping dropped from the person/org nodes. A uniform
   rephrase pass (keep the source-form explanation, drop the qN clause) would make the
   residue-only standard consistent corpus-wide; not a quality problem, just consistency.
-- **directional-check same-tier completeness** (the tier model's last unenforced edge). The
-  checks now catch T2→T3/T4 and T3→T4 in both path *and* bare-slug forms
-  (`entity_no_finding_or_investigation_refs` + `finding_no_investigation_refs`, slug-aware via
-  `ctx.synthesis_slugs`). The same-tier prohibitions — T3→T3 (a finding referencing another
-  finding) and T4→T4 (an investigation referencing another investigation) — are documented in
-  the tier matrix but not yet mechanically enforced (no current violations). Closing them needs
-  the node's own slug excluded from the match set, and likely a renamed/extended finding check
-  plus a new investigation-side check; do it when a same-tier violation actually appears or in
-  a dedicated checks pass.
 
 **Blocks:** none.
 **Blocked by:** nothing — execution.

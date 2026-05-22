@@ -12,8 +12,8 @@ anywhere. The bare-slug case catches a prose reference that carries no path.
 Each match yields an error with the field path where the reference was found.
 
 (This check is the finding→investigation half of the tier contract; the
-finding→finding same-tier prohibition is not yet mechanically enforced — see
-meta/BACKLOG.md.)
+finding→finding same-tier prohibition is enforced by the sibling
+``finding_no_finding_refs`` check.)
 
 No-ops on non-finding artifacts.
 """

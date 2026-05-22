@@ -1251,11 +1251,15 @@ Two consequences are worth stating outright:
 
 A reference *up* a tier — an entity node naming a finding, a finding naming
 an investigation — inverts the flow and is a defect **even in prose, even
-when the target exists**. The `entity_no_finding_or_investigation_refs` and
-`finding_no_investigation_refs` checks catch the path forms (`/findings/…`,
-`/investigations/…`); a bare-slug prose reference ("the {slug} finding") is
-the same violation and is an authoring-discipline responsibility until a
-check covers it.
+when the target exists**: a bare-slug prose mention ("the {slug} finding")
+is the same violation as a `/findings/…` path. Four checks enforce the
+contract directionally, each catching both the path form and the bare-slug
+form (via the finding/investigation node-slug index, `ctx.synthesis_slugs`):
+`entity_no_finding_or_investigation_refs` (Tier 2 → 3/4),
+`finding_no_investigation_refs` (Tier 3 → 4), `finding_no_finding_refs`
+(Tier 3 → 3, same-tier), and `investigation_no_investigation_refs`
+(Tier 4 → 4, same-tier). The same-tier checks exclude the node's own slug,
+so a self-reference in `id` / `target_node` is not a violation.
 
 ### Entity nodes — facts
 

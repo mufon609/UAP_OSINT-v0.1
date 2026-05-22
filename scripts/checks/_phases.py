@@ -122,7 +122,9 @@ CHECK_PHASE = {
     "closure_path": "link",
     "resolution_history": "link",
     "finding_no_investigation_refs": "link",
+    "finding_no_finding_refs": "link",
     "entity_no_finding_or_investigation_refs": "link",
+    "investigation_no_investigation_refs": "link",
     "investigation_hypothesis_citation": "link",
     "investigation_closure_path_when_paused": "link",
 
