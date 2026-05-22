@@ -158,18 +158,6 @@ verified to return 200. Revisit via the Wayback fuzzy-timestamp pull (per
 `meta/sources-access.md`) or a manual browser save to record verified /
 Wayback-archived copies.
 
-### C4 — No check that a type's required sections are renderer-producible
-
-The corpus-addendum feature (now removed) exposed a class gap:
-`scripts/checks/required_sections.py` can demand a section that the
-type's renderer cannot emit, and nothing flags the contradiction — the
-validator requires it, the build can't produce it, and the mismatch is
-invisible until traced by hand. Add a "renderer-coverage" check: for each
-type / kind, assert every required section is one its renderer actually
-emits (cross-check `schema.yaml` required_sections against the renderer's
-section list). Preventive — closes the gap that let the orphaned corpus
-requirement sit in the repo undetected.
-
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 
 The prose-drift gate is correct and the resulting nodes are worth the
