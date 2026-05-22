@@ -123,6 +123,18 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
+### USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046); see timeline t4/t5/t8 and org_relationship or10. Sister aaro node carries the parallel "AARO SUPPORT SERVICES" description-field quote (aaro q13).
+
+> "description":"IPMO SUPPORT SERVICES"
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending.gov award record for DoD/WHS contract HQ003422C0064 to Sancorp Consulting, LLC, 2022-06-09 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0064.txt) |
+| Location | USAspending API record — description field (contract HQ003422C0064) |
+
+---
+
 ### FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO's presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead — corroborates entity e11's AARO→AIC budget-document rebrand observation. Anchors the cluster-membership chronology relevant to the description's "AARO ... established four months after IPMO under the same parent" framing.
 
 > All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
@@ -289,7 +301,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | [`/organizations/cp-wmd`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
 | [`/organizations/aic`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
 | [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt | Prime contractor across three sequential IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) via WHS Acquisition Directorate as 8(a) sole-source procurements. See Sancorp node for full contract detail. |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt | Contractor across three IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) — see q18 for the HQ003422C0064 description / recipient / 8(A) Sole Source / Washington Headquarters Services fields, and timeline t4/t5/t8 for the per-contract amounts and periods of performance. See Sancorp node for full contract detail. |
 | [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |  |
 
 ---

@@ -252,6 +252,16 @@ quotes:
   significance: 'Holly''s self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO''s interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official''s surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see nq3).'
   context: 'SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center'
   statement_date: '2024-05-09'
+- id: q18
+  added_date: '2026-05-22'
+  text: |-
+    "description":"IPMO SUPPORT SERVICES"
+  source:
+    path: government/usaspending-hq003422c0064.txt
+    location: 'USAspending API record — description field (contract HQ003422C0064)'
+  significance: 'USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046); see timeline t4/t5/t8 and org_relationship or10. Sister aaro node carries the parallel "AARO SUPPORT SERVICES" description-field quote (aaro q13).'
+  context: 'USAspending.gov award record for DoD/WHS contract HQ003422C0064 to Sancorp Consulting, LLC'
+  statement_date: '2022-06-09'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-02'
@@ -453,7 +463,7 @@ org_relationships:
   source:
     path: government/usaspending-hq003422c0064.txt
     location: '"recipient_name" field — SANCORP CONSULTING, LLC'
-  note: 'Prime contractor across three sequential IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) via WHS Acquisition Directorate as 8(a) sole-source procurements. See Sancorp node for full contract detail.'
+  note: 'Contractor across three IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) — see q18 for the HQ003422C0064 description / recipient / 8(A) Sole Source / Washington Headquarters Services fields, and timeline t4/t5/t8 for the per-contract amounts and periods of performance. See Sancorp node for full contract detail.'
 - id: or11
   added_date: '2026-05-02'
   organization_path: /organizations/whs

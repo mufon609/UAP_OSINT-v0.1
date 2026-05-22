@@ -174,7 +174,7 @@ key_personnel:
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD Spokesperson Susan Gough
-  note: Per the Department of Defense Spokesperson Susan Gough written statement to The Black Vault dated June 29, 2022, Stratton was "former Office of Naval Intelligence senior civilian" at the time he was leading UAPTF; the date of his ONI role is not directly stated in the primary sources cited for this organization
+  note: Stratton is named "former Office of Naval Intelligence senior civilian" verbatim in q5; the date of his ONI role is not directly stated in the primary sources cited for this organization
 org_relationships:
 - id: or1
   added_date: '2026-05-05'
@@ -183,7 +183,7 @@ org_relationships:
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
     location: p. 2, ¶1 (Purpose)
-  note: UAP Task Force operating subject per the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020); the Senate Select Committee on Intelligence subsequently names "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" in Senate Report 116-233 (June 17, 2020)
+  note: UAP Task Force is the operating subject named alongside ONI in the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020, q1) and in Senate Report 116-233 (June 17, 2020, q4), which the Senate Select Committee on Intelligence frames as "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence"
 - id: or2
   added_date: '2026-05-05'
   organization_path: /organizations/us-navy
@@ -191,7 +191,7 @@ org_relationships:
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p. 2, Scope and Assumptions
-  note: ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies, attesting ONI as a Navy component
+  note: ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies (q2) — distinct from the "Navy" entry preceding it — attesting ONI as a Navy component
 - id: or3
   added_date: '2026-05-05'
   organization_path: /organizations/odni
@@ -199,4 +199,4 @@ org_relationships:
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p. 2, Scope and Assumptions
-  note: Director of National Intelligence drafted the June 25, 2021 Preliminary Assessment with input from Navy/ONI; ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence
+  note: The June 25, 2021 Preliminary Assessment was drafted with input from Navy/ONI (q2); ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence (q3)
