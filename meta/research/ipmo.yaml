@@ -239,7 +239,7 @@ quotes:
   source:
     path: government/osd-op5-fy24-20260501.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, AARO bullet (complete bullet passage; does not span a page break)'
-  significance: 'FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO''s presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead — corroborates entity e11''s AARO→AIC budget-document rebrand observation. Anchors the cluster-membership chronology relevant to the description''s "AARO ... established four months after IPMO under the same parent" framing.'
+  significance: 'FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO''s presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead. Anchors the cluster-membership chronology relevant to the description''s "AARO ... established four months after IPMO under the same parent" framing.'
   context: 'OSD OP-5 FY 2024 budget submission, OUSD(I&S) program section, AARO sub-office bullet'
   statement_date: '2023'
 - id: q17
@@ -413,7 +413,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy24-20260501.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, AARO bullet (q15)'
-  note: 'Sister sub-office under OUSD(I&S) per the FY 2024 OSD OP-5 sub-office cluster (q15); AARO established four months after IPMO (July 15, 2022 vs March 1, 2022). Both share Sancorp Consulting as prime contractor. By FY 2026 the AARO bullet is no longer in this OUSD(I&S) cluster; near-identical operational language appears under Advanced Intelligence Capabilities (AIC) instead — apparent budget-document rebrand per entity e11.'
 - id: or4
   added_date: '2026-05-02'
   organization_path: /organizations/dmdpo
@@ -463,7 +462,6 @@ org_relationships:
   source:
     path: government/usaspending-hq003422c0064.txt
     location: '"recipient_name" field — SANCORP CONSULTING, LLC'
-  note: 'Contractor across three IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) — see q18 for the HQ003422C0064 description / recipient / 8(A) Sole Source / Washington Headquarters Services fields, and timeline t4/t5/t8 for the per-contract amounts and periods of performance. See Sancorp node for full contract detail.'
 - id: or11
   added_date: '2026-05-02'
   organization_path: /organizations/whs

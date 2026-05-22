@@ -270,6 +270,18 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ---
 
+### Arlo's own Contract Vehicles & Schedules page attests four GSA OASIS+ GWAC contract numbers held by Arlo across four socioeconomic set-aside pools — SDVOSB 47QRCA24DV270, WOSB 47QRCA24DW239, Small Business 47QRCA25DSA74, and 8(a) 47QRCA25DA370 — under the "GSA OASIS+ 8(a), Small Business, WOSB, and SDVOSB" block, sponsored by the General Services Administration. The page gives no period of performance for the OASIS+ vehicles.
+
+> Contract Type: GWAC Contract Numbers: SDVOSB: 47QRCA24DV270 WOSB: 47QRCA24DW239 SB: 47QRCA25DSA74 8(a): 47QRCA25DA370
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-03 |
+| Source | [archived source](../sources/news/arlo-contract-vehicles-20260503.html) |
+| Location | Contract Vehicles & Schedules — GSA OASIS+ block |
+
+---
+
 ## Primary Contracts
 
 | Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source | Note |
@@ -277,7 +289,7 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 | HQ003419C0172 | WHS | 2019-09-25 – 2024-04-29 | $4,027,742.99 | [`/organizations/ousd-is`] | Personnel Security Policy Support | government/usaspending-arlo-search.json |  |
 | HQ003420C0104 | WHS | 2020-06-19 – 2025-07-27 | $3,419,667.82 | [`/organizations/ousd-is`] | Business Operations and Support Services | government/usaspending-arlo-search.json |  |
 | 47QTCA21D003B | GSA | 2020-12-15 – 2025-12-14 | GWAC vehicle (per-task-order value) |  | GSA Multiple Award Schedule (MAS) — vehicle Arlo holds; parent IDV for HQ003422F0271, HQ003423F0356, and HQ003424F0190 OUSD(I&S) task orders | news/arlo-contract-vehicles-20260503.html |  |
-| 47QTCB21D0051 | GSA | 2021-07-02 – 2026-07-01 | GWAC vehicle (fixed price, time and materials, labor-hour, hybrid; per-task-order value) |  | GSA 8(a) STARS III GWAC — vehicle Arlo holds for IT solutions task orders | news/arlo-contract-vehicles-20260503.html | GSA 8(a) STARS III GWAC held by Arlo; small business set-aside vehicle for customized IT solutions across federal agencies. |
+| 47QTCB21D0051 | GSA | 2021-07-02 – 2026-07-01 | GWAC vehicle (fixed price, time and materials, labor-hour, hybrid; per-task-order value) |  | GSA 8(a) STARS III GWAC — vehicle Arlo holds for IT solutions task orders | news/arlo-contract-vehicles-20260503.html |  |
 | HQ003421C0078 | WHS | 2021-08-27 – 2022-06-29 | $3,144,219.46 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement & Security Policy, Administrative, and Technical Support Services | government/usaspending-arlo-search.json |  |
 | HQ003421C0090 | WHS | 2021-09-16 – 2026-09-22 | $4,065,931.45 | [`/organizations/ousd-is`] | Admin Support Services | government/usaspending-arlo-search.json |  |
 | HQ003422F0271 | WHS (under GSA MAS 47QTCA21D003B) | 2022-06-29 – 2026-04-28 | $19,237,545.98 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement, Security Policy, Administrative and Technical Support Services | government/usaspending-arlo-search.json |  |
@@ -322,13 +334,13 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 | Organization | Relationship | Source | Note |
 |---|---|---|---|
-| [`/organizations/whs`] | contracting-agency | government/gao-b-422985-wayback-20250708.html | WHS is the contracting agency that issued RFQ HQ003424R0178 (per q1, q2) and the resulting BPAs and call orders to Arlo (HQ003425A0004 BPA; HQ003425F0104 SASP Call Order); also the awarding agency for nearly all of Arlo's OUSD(I&S) prime contracts since 2019 (per the Timeline rows). |
-| [`/organizations/ousd-is`] | other | government/usaspending-arlo-bpa-hq003425a0004.json | OUSD(I&S) is Arlo's primary federal customer office. The BPA HQ003425A0004 names the Under Secretary of Defense for Intelligence & Security Enterprise as the customer per q15; individual call orders are scoped to OUSD(I&S) sub-directorates (HQ003425F0104 = SASP) per q3. |
-| [`/organizations/dod`] | other | government/gao-b-422985-wayback-20250708.html | Department of Defense is the parent of WHS and OUSD(I&S); the GAO decision names the Department of Defense as solicitor of RFQ HQ003424R0178 per q1. Arlo's post-2025 marketing uses the alternative form Department of War (DoW) — see nq4. |
-| [`/organizations/sancorp-consulting`] | other | government/gao-b-422985-wayback-20250708.html | Adjacent OUSD(I&S) contractor and direct competitor on RFQ HQ003424R0178 — Sancorp the September 2024 initial SASP awardee, Arlo protested, reevaluation awarded SASP to Arlo, Sancorp protested the reevaluation, GAO denied (EXDIR) and dismissed (SASP) per q4, q5, q6, q7. Sancorp's separate prime contracts at other OUSD(I&S) directorates (AARO, IPMO) are independent and remain Sancorp's. |
-| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Co-vendor in the OUSD(I&S) contractor cluster; co-protester with Arlo of the September 2024 initial awards per q4; Premier won EXDIR Call Order 1 in the reevaluation while Arlo won SASP Call Order 2 per q5. Schema enum "partner" denotes a joint-venture or teaming partnership; no such contracting relationship between Arlo and Premier is attested in the primary-source corpus, so this relationship is recorded as "other" with the co-protester / co-awardee structure described here. |
-| [`/organizations/comprehensive-approach-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Initial September 2024 EXDIR Call Order 1 awardee per q4 (displaced when WHS took corrective action and reevaluated); not retained as an awardee in the reevaluation. |
-| [`/organizations/gsa`] | contracting-agency | news/arlo-contract-vehicles-20260503.html | GSA sponsors Arlo's GSA Multiple Award Schedule (MAS) contract 47QTCA21D003B, GSA OASIS+ contracts (47QRCA24DV270 SDVOSB; 47QRCA24DW239 WOSB; 47QRCA25DSA74 SB; 47QRCA25DA370 8(a)), and GSA 8(a) STARS III contract 47QTCB21D0051 (GSA sponsorship attested per q18). The RFQ HQ003424R0178 was issued under the GSA Federal Supply Schedule Professional Services BPA framework per q2. |
+| [`/organizations/whs`] | contracting-agency | government/gao-b-422985-wayback-20250708.html | This single relationship row stands for both instrument types WHS awards to Arlo — the RFQ HQ003424R0178 BPA/call-order chain and the standalone OUSD(I&S) prime contracts since 2019 (both enumerated in the Primary Contracts table). |
+| [`/organizations/ousd-is`] | other | government/usaspending-arlo-bpa-hq003425a0004.json | The customer relationship is recorded at two levels — the BPA names OUSD(I&S) Enterprise broadly, while individual call orders narrow to specific OUSD(I&S) sub-directorates (e.g. HQ003425F0104 to SASP). |
+| [`/organizations/dod`] | other | government/gao-b-422985-wayback-20250708.html | Recorded as the parent department above WHS and OUSD(I&S); Arlo's post-2025 marketing renders this department as Department of War (DoW) rather than the procurement record's Department of Defense — see the Source-Form Note for the dual-naming disposition. |
+| [`/organizations/sancorp-consulting`] | other | government/gao-b-422985-wayback-20250708.html | Recorded as "other" because the relationship is adversarial-competitive (the displaced SASP incumbent / protester whose reevaluation challenge Arlo intervened against), not a teaming or supplier relationship the schema enum names; the protest chronology is carried in the Description and Timeline. |
+| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Recorded as "other" rather than "partner" because the schema's "partner" denotes a joint-venture or teaming partnership; the Arlo–Premier relationship attested in the corpus is co-protester / parallel-call-order-awardee (carried in the Description and Timeline), not any teaming partnership. |
+| [`/organizations/comprehensive-approach-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Appears in Arlo's record only as the displaced initial September 2024 EXDIR Call Order 1 awardee; whether it remained among the four BPA vendors after the reevaluation is not stated in the public GAO decision (so this is not a "lost-the-recompete" relationship, only a displaced-initial-call-order one). |
+| [`/organizations/gsa`] | contracting-agency | news/arlo-contract-vehicles-20260503.html | GSA's role here is vehicle-sponsor, not customer — it sponsors the GWAC/MAS schedules Arlo holds (the MAS and 8(a) STARS III vehicles appear in the Primary Contracts table; the four OASIS+ pool vehicles, for which the source attests no period of performance, are carried as a quote), and the OUSD(I&S) RFQ HQ003424R0178 was placed under the GSA Federal Supply Schedule framework rather than awarded by GSA itself. |
 
 ---
 
