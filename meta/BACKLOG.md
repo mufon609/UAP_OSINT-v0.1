@@ -135,9 +135,22 @@ _Still open:_
   block + PWS task-area enumeration are OCR-corrupt with no clean-text sibling,
   so they are NOT promotable to verbatim quotes. Blocked on `/prepare-ocr-sibling`
   (no autonomous owner). Stays residue; defer past this effort.
-- **people-node bulk** — the unswept people artifacts (hal-puthoff, russell-targ,
-  kit-green, david-grusch, james-ryder, + the partially-trimmed people) carry the
-  remainder of the ~191-note promotion work; Phase C people batches.
+- **people-node bulk** — Phase C people batches in progress (hal-puthoff,
+  russell-targ, kit-green, uri-geller swept). Remaining: david-grusch,
+  james-ryder, david-fravor, ryan-graves, james-holly, luis-elizondo,
+  sean-kirkpatrick, sue-gough + the partially-trimmed karl-nell / alex-dietrich /
+  james-lacatski / ronald-moultrie.
+- **uri-geller sourcing reconciliation** (pre-existing, surfaced in the people
+  sweep — NOT batch-introduced): the `program_involvement` "CIA-sponsored SRI
+  investigation" row cites a contract 1471(S)73 progress report and the 1974
+  Nature paper that are referenced in timeline/relationships but absent from
+  `primary_sources`; and the explicit CIA-funding statement ("CIA funded research
+  and development activities at SRI ~1972-1977", CIA-RDP96-00791R000100030062-7)
+  lives only in an image-only TIF scan with no text layer — not verbatim-citable
+  until `/prepare-ocr-sibling` produces a clean sibling. Reconcile the source list
+  and verify the sponsorship basis. (Person-node program/affiliation/relationship
+  notes are not prose-drift-gated, which is how the unlisted-source references
+  went unflagged.)
 
 **Blocks:** none.
 **Blocked by:** nothing — execution.

@@ -79,7 +79,7 @@ affiliations:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: 'p. 1, ¶ title'
-  note: 'Title page of the Aug 1973 CIA report attests Geller as test subject — "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973" (R. Targ cover memo dated August 13, 1973). The earlier engagement is attested by the CIA-RDP96-00787R000100180001-3 contract 1471(S)73 progress report (Section A, page 2): "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller"; Section III, page 11 describes the program as "The experiments conducted with Geller in November-December, 1972"; Figure 5, page 21 dates a sample picture-drawing experiment 12/7/72. The Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] names "Mr. Uri Geller" in the studies overview as the first-study subject of the SRI experiments published in October 1974. Burton article (¶5 "In December 1972 he allowed himself to become the subject of a scientific study"; Targ verbatim ¶7 "Uri was at our laboratory at SRI for six weeks in 1973") remains a supporting third-party attestation but is no longer the load-bearing source — the CIA primary docs supersede it for the SRI subject status. Total documented Geller SRI engagement per the primary record is approximately 17 days (9 days late 1972 + 8 days Aug 1973); Targ''s 2007 recollection of "six weeks in 1973" exceeds the contemporaneous record by approximately four weeks and assigns the engagement entirely to 1973 despite the bulk per contract progress being in November-December 1972; see r1 and the F.SRI finding-node candidate in meta/topic/research-queue.md.'
+  note: 'The CIA primary docs are load-bearing for the SRI subject status; the Burton article (Targ''s "six weeks in 1973" recollection) is a supporting third-party attestation only. The discrepancy between Targ''s recollection and the contemporaneous CIA record is carried at rumor r1.'
 
 - id: a3
   added_date: '2026-05-16'
@@ -88,7 +88,7 @@ affiliations:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: Self-attestation. The 2017 CIA Reading Room release of declassified Stargate-era documents is a real event (referenced in biography ¶31); the specific CIA documents carrying the "convincing and unambiguous" verdict are not currently archived in this repository.
+  note: Self-attestation. The specific CIA documents carrying the "convincing and unambiguous" verdict are not currently archived in this repository.
 
 - id: a4
   added_date: '2026-05-16'
@@ -138,7 +138,7 @@ affiliations:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶35"
-  note: 'Museum opening date not attested in the archived urigeller.com sources for this node; biography ¶35 attests only the current operating state ("Uri lives in Old Jaffa and runs the Uri Geller Museum"). Period_start intentionally left blank pending archival of a primary source attesting the opening date. External secondary sources (Wikipedia, urigellermuseum.com, JNS November 2021 coverage) place the museum opening in 2021 — see rumor r4. The prior anchoring of period_start to Geller''s 2016 return-to-Israel was contributor speculation conflating two distinct events; that anchor was removed during the 2026-05-16 web-audit review.'
+  note: 'Opening date not attested in the archived sources (biography ¶35 attests only the current operating state); period_start left blank pending a primary source. Secondary-source 2021 opening date carried at rumor r4.'
 
 program_involvement:
 
@@ -153,7 +153,7 @@ program_involvement:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: 'p. 1, ¶ title'
-  note: 'Geller''s CIA-sponsored SRI subject status is now attested directly by three archived CIA primary sources naming him by name. (1) The Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) — title page "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", R. Targ cover memo dated August 13, 1973 — records the eight-day Geller picture-drawing session with the load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner". (2) The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) records on page 2 Section A "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller" and on page 11 Section III "The experiments conducted with Geller in November-December, 1972" — the earlier nine-day SRI engagement window. (3) The Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror RDP96-00787R000100220001-8) names "Mr. Uri Geller" in the studies overview as the first-study subject. The CIA-sponsorship link is institutionally confirmed by the 1995 CIA Public Affairs Q&A (CIA-RDP96-00791R000100030062-7) — "CIA funded research and development activities at Stanford Research Institute (SRI) during about 1972 to about 1977". Confidence upgraded medium → high and evidentiary_basis on-record → primary-source on the strength of these multi-source archived attestations naming Geller directly. Total documented Geller SRI engagement per the primary record is approximately 17 days (9 days late 1972 + 8 days Aug 1973).'
+  note: 'Subject status rests on three archived CIA primary sources naming Geller directly — the Aug 1973 SRI report (timeline t23), the contract 1471(S)73 progress report (timeline t22), and the Nature paper (timeline t24, relationship r21) — which is what carries the primary-source basis and high confidence in the columns above.'
 
 - id: pi2
   added_date: '2026-05-16'
@@ -164,7 +164,7 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: 'Verbatim in q5 (¶9). Residue: self-attestation only — no primary-source corroboration archived. The biography itself states "For decades this aspect of his career was too confidential and controversial to discuss" (¶10).'
+  note: 'Self-attestation only — no primary-source corroboration archived.'
 
 - id: pi3
   added_date: '2026-05-16'
@@ -175,7 +175,7 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶10"
-  note: Verbatim in q6 (¶10). Residue, self-attestation only. The about-uri page's "Mind Over Missile?" teaser (¶ teaser block) attests this thread via the 4 May 1987 US News & World Report "Washington Whispers" item that named Senator Claiborne Pell ([`/people/claiborne-pell`]) as the convener; the underlying USNWR primary source is not archived in this repository.
+  note: Self-attestation only. The 1987 US News & World Report "Washington Whispers" item that anchors this thread (timeline t12, quote q7) is itself unarchived — known only through Geller's about-uri teaser.
 
 timeline:
 
@@ -413,7 +413,7 @@ relationships:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶2, ¶3"
-  note: 'Lineage verbatim in q2 (¶2) and q3 (¶3); biography ¶13 additionally states "He counts Sigmund Freud among his forebears." Residue: the lineage is attested only on Geller''s own biography page — no external genealogical record corroborating it is archived in this repository — yet it has been repeated downstream as fact in tertiary sources (Wikipedia''s Geller entry, biographer profiles, popular accounts). See credibility_notes Freud-flag paragraph and the per-quote attestation-class Pending Convention Question in meta/topic/research-queue.md (the schema-level fix would let q2 and q3 render "Attestation class: self-attestation on subject''s own publication" automatically; until then, the flag lives in credibility_notes).'
+  note: 'The lineage is attested only on Geller''s own biography page — no external genealogical record corroborating it is archived in this repository — yet it has been repeated downstream as fact in tertiary sources. See the credibility_notes Freud-flag paragraph.'
 
 - id: r2
   added_date: '2026-05-16'
@@ -430,7 +430,6 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶5"
-  note: Per Brendan Burton, Puharich had been working previously with Dr Vinod, drawing together 'channelled' information on the principles of 'The Nine' and was a pivotal figure in the 'contactee' movement.
 
 - id: r4
   added_date: '2026-05-16'
@@ -439,7 +438,7 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶5, ¶12"
-  note: Source-form "Puthof" preserved as-source per naming_quirks nq1. Hal Puthoff is built at /people/hal-puthoff and does not currently carry a Geller cross-reference; building this Geller node creates the bidirectional anchor.
+  note: The Burton article spells the name "Puthof" (single f); the canonical Puthoff is recorded in the Source-Form Notes.
 
 - id: r5
   added_date: '2026-05-16'
@@ -448,7 +447,7 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶5, ¶7, ¶9"
-  note: Source-form "Russel" preserved as-source per naming_quirks nq2. Russell Targ is built at /people/russell-targ and does not currently carry a Geller cross-reference; building this Geller node creates the bidirectional anchor. Full Targ verbatim quote captured in credibility_notes and top_relevance.
+  note: The Burton article's narrator prose spells the name "Russel" (single l); the canonical Russell Targ is recorded in the Source-Form Notes.
 
 - id: r6
   added_date: '2026-05-16'
@@ -563,7 +562,7 @@ relationships:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶17"
-  note: 'Source-rot: the biography page ¶17 wording "Michael Jackson''s latest albums" preserves a phrasing from before Michael Jackson''s death on June 25, 2009. Invincible (released October 30, 2001) was Michael Jackson''s then-most-recent studio album at the time the biography page was written; with MJ''s death in 2009, Invincible became MJ''s last released studio album. Geller''s involvement as illustrator on the Invincible album is independently corroborated outside this repository (Discogs credit, Wikipedia MJ-Invincible album page), but the "latest" wording is source-rot and should not be propagated as a current-tense claim by readers of this node. See credibility_notes MJ-rot-flag paragraph and the source-rot annotation Pending Convention Question in meta/topic/research-queue.md (the schema-level fix would add a `resolution: source-rot` naming_quirks enum value with a `rot_context` field; until then, the flag lives in this note and in credibility_notes).'
+  note: 'Source-rot: the biography page ¶17 wording "Michael Jackson''s latest albums" predates Michael Jackson''s death in 2009 — Invincible (2001) was his then-most-recent album and became his last. The "latest" wording should not be read as a current-tense claim. See the credibility_notes MJ-rot-flag paragraph.'
 
 - id: r20
   added_date: '2026-05-16'
@@ -934,7 +933,7 @@ naming_quirks:
   location: "¶16 (Brendan Burton article narrator prose)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Brendan Burton typo (missing "h"). The canonical form Wernher Magnus Maximilian Freiherr von Braun is used by Wikipedia and by Geller''s own site elsewhere — the standalone urigeller.com piece "Dr Wernher von Braun & Life After Death" (linked from the scientific-paranormal index, not in the archived source set for this node) uses the canonical spelling. The Burton article is the only one-off "Werner" in the archived corpus for this node; Geller-site house style is "Wernher". Source-form preserved in the Burton-attested quote; canonical slug `/people/wernher-von-braun` used for the cross-reference wrap per Category 3 of the source-form-preservation discipline.'
+  note: 'Brendan Burton typo (missing "h"). The Burton article is the only one-off "Werner" in the archived corpus for this node; the canonical Wernher von Braun is the Geller-site house style elsewhere. Source-form preserved in the Burton-attested quote; canonical slug `/people/wernher-von-braun` used for the cross-reference wrap.'
 
 - id: nq11
   added_date: '2026-05-16'
@@ -943,7 +942,7 @@ naming_quirks:
   location: "¶2 (biography page; in re Geller's December 20, 1946 birthplace attestation)"
   source_path: news/urigeller-com-biography-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Geographic-anachronism source-form variant. Geller''s biography page attests his birthplace as "Israel" on December 20, 1946. The State of Israel was declared on May 14, 1948 — 17 months after Geller''s birth — and what is now Tel Aviv was, at the time of his birth, part of the British Mandate of Palestine (1920-1948). Modern usage of "Israel" can refer to either the State of Israel (post-1948) or the Land of Israel (the territory, ahistorical); the biography uses it in the second sense. Wikipedia, Haaretz, and IMDb biographical entries on Geller all qualify the birthplace as Tel Aviv-within-Palestine; only Geller''s own biography page elides the distinction. Source-form preserved as-source in quotes q2 and timeline t1 per the source-priority hierarchy (subject''s own framing for a fact about himself). The resolution preserve-as-sic-in-quotes is the closest existing fit in the naming_quirks enum but does not perfectly capture the geographic-vs-temporal anachronism shape — see meta/topic/research-queue.md Pending Convention Questions for the broader naming_quirks resolution-enum extension question (potential `geographic-anachronism` resolution category).'
+  note: 'Geographic-anachronism source-form variant. Geller''s biography page attests his birthplace as "Israel" on December 20, 1946. The State of Israel was declared on May 14, 1948 — 17 months after Geller''s birth — and what is now Tel Aviv was, at the time of his birth, part of the British Mandate of Palestine (1920-1948); the biography uses "Israel" in the territorial sense. Source-form preserved as-source in quotes q2 and timeline t1 per the source-priority hierarchy (subject''s own framing for a fact about himself).'
 
 rumors:
 

@@ -10,6 +10,8 @@ primary_sources:
   format: html
 - path: news/irva-targ-russell-wayback-20250123.html
   format: html
+- path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
+  format: html
 - path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
   format: html
 - path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
@@ -49,7 +51,7 @@ credibility_notes: 'Targ''s ESP Research site (his own publication) names him as
   The 1977 CIA Studies in Intelligence paper by Kenneth A. Kress ([`/people/kenneth-kress`]) — declassified 2011 (CIA-RDP88G01116R000600690003-8) — names Targ and Puthoff as the two laser physicists who re-awakened CIA ([`/organizations/cia`]) research in parapsychology, documents Targ''s April 1972 meeting with the Office of Scientific Intelligence, places Targ as having recently joined the Stanford Research Institute in 1972, and describes the August 1972 Office of Technical Service contract with Targ and Puthoff at SRI ($874 for a few days of work with the magnetometer subject) followed by the February 1974 jointly funded ORD and OTS program. The Kress paper also describes the November 1976 briefing of Director George Bush on CIA''s investigations into parapsychology after he became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI. The 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview describes the SRI International program at Menlo Park from 1970 to 1990 with CIA funding to SRI for continuing remote viewing research discontinued in 1975 and subsequent funding provided by DIA, the SRI effort discontinued in 1990, and Systems Applications International Corporation ([`/organizations/saic`]) at Menlo Park established under the FY 1991 Defense Authorization Act. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviews the 1973-1988 SRI experiments (154 experiments, over 26,000 individual trials, 227 subjects per May et al. 1988) and includes Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute Final Report.
 
 
-  Targ''s later retrospective comment in the Burton article — "Uri was at our laboratory at SRI for six weeks in 1973" — differs from Targ''s concurrent CIA records of the SRI Geller sessions: the 22 February 1973 contract progress report Targ authored with Puthoff records a nine-day Geller field measurement program in November-December 1972, and the 13 August 1973 SRI Geller report Targ sole authored records an eight day session 4-11 August 1973 — approximately 17 days documented across both periods, not six weeks.
+  Targ''s 2007 retrospective comment in the Brendan Burton piece on urigeller.com — "Uri was at our laboratory at SRI for six weeks in 1973" — differs from Targ''s concurrent CIA records of the SRI Geller sessions: the 22 February 1973 contract progress report Targ authored with Puthoff records a nine-day Geller field measurement program in November-December 1972, and the 13 August 1973 SRI Geller report Targ sole authored records an eight day session 4-11 August 1973 — approximately 17 days documented across both periods, not six weeks.
 
   '
 
@@ -382,6 +384,19 @@ quotes:
   statement_date: '1991-05-20'
   significance: 'Peer-reviewed primary-source author-affiliation byline placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, as of the 1991 Applied Optics paper — the earliest archived primary attestation of Targ at the Palo Alto Lockheed site and the period_start anchor for affiliation a2 and program_involvement p2. Independent of Targ''s espresearch.com self-attestation (q2) and the IRVA bio (q8): an in-paper byline in Targ''s own published voice, corroborating the Lockheed senior-staff-scientist career outcome those biographical sources describe.'
 
+- id: q26
+  claim_group: "Geller SRI Tenure — Retrospective Account"
+  added_date: '2026-05-22'
+  text: |
+    Uri was at our laboratory at SRI for six weeks in 1973. He showed remarkable ESP perceptual ability to describe and draw hidden pictures. He was by no means the best person to visit our lab and carry out this type of remote viewing, but he was certainly better than the average bear in this capability. He did not bend any metal under acceptably controlled conditions, but I have since that time seen and done paranormal bending under excellent conditions.
+  source:
+    path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
+    location: 'Targ comment quotation, following the "I asked Russel Targ to comment on his experiences resulting from the SRI experiments" lead-in'
+  context: 'Russell Targ quotation in the November 24, 2007 Brendan Burton piece ''Uri Geller – UFOs, metal-bending and the PSI war'' on urigeller.com; the ¶7 lead-in reads "I asked Russel Targ to comment on his experiences resulting from the SRI experiments" (Burton''s prose uses the single-l typo "Russel")'
+  observation_type: relayed
+  statement_date: '2007-11-24'
+  significance: 'Targ''s own retrospective characterization of Geller''s SRI tenure, given in 2007 — the "six weeks in 1973" recollection that exceeds Targ''s contemporaneous CIA-archived records of the same engagement (a nine-day Geller field measurement program in late 1972 per the Feb 1973 contract progress report and an eight-day session 4-11 August 1973 per the Aug 1973 SRI Geller report Targ sole-authored — roughly 17 documented days). The recollection-versus-record divergence is the load-bearing contradiction the Credibility Notes carry and the F.SRI finding-node candidate (meta/topic/research-queue.md) is staged to analyze. The same statement also records Targ''s retrospective metal-bending position: Geller bent no metal under acceptably controlled conditions at SRI.'
+
 naming_quirks:
 - id: nq1
   added_date: '2026-05-15'
@@ -390,7 +405,7 @@ naming_quirks:
   location: '¶3'
   source_path: news/irva-targ-russell-wayback-20250123.html
   resolution: disputed
-  note: 'The IRVA speaker bio (q7) renders Mind Reach''s subtitle in singular form (''Scientists Look at Psychic Ability''), while Targ''s own espresearch.com homepage (q4) renders the same book''s subtitle in plural form (''Scientists Look at Psychic Abilities''). Both are primary attestations by parties close to the source. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): subject''s own words rank above third-party. The plural form (espresearch.com) is treated as canonical per Targ-self-attestation precedence; the IRVA-attested singular form is preserved as-source in the q7 quote text and flagged here as ''disputed'' so future contributors evaluating the book entity name can see the divergence. Note that ''Psychic Abilities'' (plural) also matches the typical published edition cover.'
+  note: 'The IRVA speaker bio renders Mind Reach''s subtitle in singular form (''Scientists Look at Psychic Ability''), while Targ''s own espresearch.com homepage renders the same book''s subtitle in plural form (''Scientists Look at Psychic Abilities''). Both are primary attestations by parties close to the source. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): the subject''s own words rank above third-party, so the plural espresearch.com form is treated as canonical; the IRVA singular form is preserved as-source in the quoted bio text and flagged here as ''disputed'' so future contributors evaluating the book entity name can see the divergence. The plural form also matches the typical published edition cover.'
 
 - id: nq2
   added_date: '2026-05-15'
@@ -399,7 +414,7 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads "Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff" where the canonical form is "Two laser physicists". The OCR engine read "e" as "q" — common typewritten-font OCR misread. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline.'
+  note: 'OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads "Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff" where the canonical form is "Two laser physicists". The OCR engine read "e" as "q" — common typewritten-font OCR misread. Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline.'
 
 - id: nq3
   added_date: '2026-05-15'
@@ -408,7 +423,7 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The PDF renders the word "parapsychology" with a typewritten-font OCR misread "v" for "y" yielding "parapsvchology", further fragmented by PDF end-of-line word-wrap into "parapsv-" / "chology" across two source lines. The source extract preserves the hyphen-and-newline; pdftotext output and the verbatim-quote check normalize the newline to a space, yielding "parapsv- chology" as the comparison form. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline. The clean form "parapsychology" appears elsewhere in the same Kress paper (e.g., q9 second sentence: "observations of parapsychology"), confirming the misread is artifact-localized rather than systematic.'
+  note: 'OCR-scan artifact in the Kress 1977 paper. The PDF renders the word "parapsychology" with a typewritten-font OCR misread "v" for "y" yielding "parapsvchology", further fragmented by PDF end-of-line word-wrap into "parapsv-" / "chology" across two source lines. The source extract preserves the hyphen-and-newline; pdftotext output and the verbatim-quote check normalize the newline to a space, yielding "parapsv- chology" as the comparison form. Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline. The clean form "parapsychology" appears elsewhere in the same Kress paper (e.g., "observations of parapsychology"), confirming the misread is artifact-localized rather than systematic.'
 
 - id: nq4
   added_date: '2026-05-15'
@@ -417,7 +432,7 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "fi" ligature as "r''i" (apostrophe-i sequence) yielding "scientir''ic" where the canonical form is "scientific". Common typewritten-font OCR misread on f-i ligatures. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline.'
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "fi" ligature as "r''i" (apostrophe-i sequence) yielding "scientir''ic" where the canonical form is "scientific". Common typewritten-font OCR misread on f-i ligatures. Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline.'
 
 - id: nq5
   added_date: '2026-05-15'
@@ -426,7 +441,7 @@ naming_quirks:
   location: 'p. 8, ¶2-4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine consistently reads CIA Office of Research and Development abbreviation "ORD" as "ORO" — typewritten-font OCR misread of cursive "D" as "O". The source paper expands the abbreviation explicitly in q10: "Office of Research and Development (ORO)" — the parenthetical expansion confirms the misread (the official name is "Office of Research and Development" — abbreviation must be "ORD"). The artifact appears recurringly across the Kress paper (multiple instances in q10 and q11). Preserved verbatim in q10 and q11 quote text per OCR-scan source-form-preservation discipline.'
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine consistently reads CIA Office of Research and Development abbreviation "ORD" as "ORO" — typewritten-font OCR misread of cursive "D" as "O". The source paper expands the abbreviation explicitly as "Office of Research and Development (ORO)" — the parenthetical expansion confirms the misread (the official name is "Office of Research and Development", so the abbreviation must be "ORD"). The artifact appears recurringly across the Kress paper. Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline.'
 
 - id: nq6
   added_date: '2026-05-15'
@@ -435,7 +450,7 @@ naming_quirks:
   location: 'p. 8, ¶4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "7" as "i" in the year "1972" yielding "19i2" — typewritten-font OCR misread on the digit-7 glyph. The clean form "1972" appears elsewhere in the same Kress paper (e.g., q10 first sentence: "In April of 1972"), confirming the misread is artifact-localized. Preserved verbatim in q11 quote text per OCR-scan source-form-preservation discipline.'
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "7" as "i" in the year "1972" yielding "19i2" — typewritten-font OCR misread on the digit-7 glyph. The clean form "1972" appears elsewhere in the same Kress paper (e.g., "In April of 1972"), confirming the misread is artifact-localized. Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline.'
 
 - id: nq7
   added_date: '2026-05-15'
@@ -444,7 +459,7 @@ naming_quirks:
   location: 'p. 8, ¶2'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q10 quote text per OCR-scan source-form-preservation discipline.'
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in the quoted text per OCR-scan source-form-preservation discipline.'
 
 - id: nq8
   added_date: '2026-05-15'
@@ -453,7 +468,7 @@ naming_quirks:
   location: '¶3'
   source_path: news/irva-targ-russell-wayback-20250123.html
   resolution: disputed
-  note: 'The IRVA speaker bio (q7) lists the Mind Reach co-author as ''E. Harold Puthoff'' (initial-then-middle-name form), while two other archived primary sources attest different forms: the 1974 Nature paper byline (q3) renders the name as ''HAROLD PUTHOFF'' (no middle initial), and the 1977 Kress paper (q9) renders it as ''Dr. Harold E. Puthoff'' (first-name-middle-initial form). The repository canonical /people/hal-puthoff slug uses the informal short form by which Puthoff is widely identified. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): the subject (Puthoff) has not self-attested in this Targ artifact''s archived sources, so primary documentary attestation falls to the Nature paper byline (subject''s own peer-reviewed publication) and the Kress paper (CIA-side institutional record) — both of which use first-name-middle-initial form. Preserved as-source in q7 quote text per source-form preservation discipline; flagged here as ''disputed'' so future contributors evaluating the Mind Reach book co-author byline can see the divergence.'
+  note: 'The IRVA speaker bio lists the Mind Reach co-author as ''E. Harold Puthoff'' (initial-then-middle-name form), while two other archived primary sources attest different forms: the 1974 Nature paper byline renders the name as ''HAROLD PUTHOFF'' (no middle initial), and the 1977 Kress paper renders it as ''Dr. Harold E. Puthoff'' (first-name-middle-initial form). The repository canonical /people/hal-puthoff slug uses the informal short form by which Puthoff is widely identified. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): the subject (Puthoff) has not self-attested in this Targ artifact''s archived sources, so primary documentary attestation falls to the Nature paper byline (the subject''s own peer-reviewed publication) and the Kress paper (CIA-side institutional record) — both of which use the first-name-middle-initial form. Preserved as-source in the quoted bio text per source-form preservation discipline; flagged here as ''disputed'' so future contributors evaluating the Mind Reach book co-author byline can see the divergence.'
 
 rumors:
 - id: r1
@@ -472,8 +487,8 @@ rumors:
   observed_sources:
   - 'Wikipedia (Russell Targ article)'
   - 'IRVA speaker biography page (currently 404)'
-  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (cited in espresearch.com q4 but the book itself is not archived in this repository)'
-  note: 'Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as ''a pioneer in the development of the laser'' (q1) but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.'
+  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (named in the espresearch.com book catalogue but the book itself is not archived in this repository)'
+  note: 'Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as ''a pioneer in the development of the laser'' but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.'
 
 timeline:
 - id: t1
@@ -666,7 +681,7 @@ affiliations:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation tenure. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) co-authored by H.E. Puthoff and Russell Targ attests Targ at the Senior Research Physicist title level at SRI — page 1 byline: "Dr. H.E. Puthoff / Mr. Russell Targ / Senior Research Physicist / Electronics and Bioengineering Laboratory" — the earliest primary-source attestation placing Targ at this title at SRI (the singular "Senior Research Physicist" line below both names is ambiguous: typewriter convention permits either the shared-title-for-both-prepared-by-authors read or the title-immediately-below-Targ''s-name read; either way, Targ is at the title level as of 22 February 1973). The 1974 Nature paper byline cites the lab but not any title. The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure. Program Involvement p1 mirrors the same open-ended representation; the bare period_start + prose hedge is the working stop-gap per meta/topic/research-queue.md "known start, unknown end (but not ongoing)" pending convention question.'
+  note: 'The Senior Research Physicist title rests on the page-1 byline of the 22 February 1973 contract 1471(S)73 progress report, which stacks "Dr. H.E. Puthoff / Mr. Russell Targ / Senior Research Physicist / Electronics and Bioengineering Laboratory"; the single title line below both names is ambiguous — typewriter convention permits either a shared title for both prepared-by authors or a title immediately below Targ''s name — but either reading places Targ at that title as of 22 February 1973. The Nature paper byline cites the laboratory but no title. period_end intentionally absent — no archived primary source attests a specific Targ-SRI departure date; the 1991 Applied Optics byline at Lockheed Missiles & Space Company is the outer bound on his SRI tenure. Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), the bare period_start plus prose hedge is the working stop-gap pattern.'
 
 - id: a2
   added_date: '2026-05-14'
@@ -677,7 +692,7 @@ affiliations:
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: 'p. 1'
-  note: 'period_start 1991 is the earliest archived primary-source attestation of Targ at LMSC (1991 Applied Optics paper byline). period_end set at 1995 (the year the Lockheed Martin merger renamed the entity); see a3 for the post-1995 Lockheed Martin Advanced Technology Center role at the same Palo Alto address.'
+  note: 'period_end set at 1995, the year the Lockheed Martin merger renamed the entity; the post-1995 Lockheed Martin Advanced Technology Center role at the same Palo Alto address is carried as a separate row.'
 
 - id: a3
   added_date: '2026-05-14'
@@ -688,7 +703,7 @@ affiliations:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶4'
-  note: 'period_start 1996 is the earliest archived primary-source attestation of Targ at the post-1995 Lockheed Martin entity at the 3251 Hanover Street Palo Alto site (1996 Applied Optics paper byline). period_end 1997 anchors on the IRVA speaker bio (q8): ''Having retired in 1997''. The IRVA bio uses the pre-1995 corporate name ''Lockheed Missiles and Space Company'' in its prose even when describing the late-career period; the corporate-name transition at the same Palo Alto site is reflected here by a2 (LMSC 1991-1995) + a3 (Lockheed Martin 1996-1997). Targ''s espresearch.com self-attestation (q2) reports retirement as a senior staff scientist but does not name the year.'
+  note: 'The IRVA speaker bio uses the pre-1995 corporate name ''Lockheed Missiles and Space Company'' in its prose even when describing the late-career period; the corporate-name transition at the same Palo Alto site is split across the two Lockheed rows (Lockheed Missiles & Space Company 1991-1995, Lockheed Martin 1996-1997). Targ''s espresearch.com self-attestation reports retirement as a senior staff scientist but does not name the year.'
 
 - id: a4
   added_date: '2026-05-15'
@@ -697,7 +712,7 @@ affiliations:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶2'
-  note: 'Per the IRVA speaker bio (q6), Targ holds a bachelor''s degree in physics from Queens College. period_start / period_end intentionally absent — IRVA does not attest specific enrollment / graduation years.'
+  note: 'period_start / period_end intentionally absent — the IRVA speaker bio attests no specific enrollment or graduation years.'
 
 - id: a5
   added_date: '2026-05-15'
@@ -706,7 +721,7 @@ affiliations:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶2'
-  note: 'Per the IRVA speaker bio (q6), Targ did graduate work in physics at Columbia University after his Queens College BS Physics. period_start / period_end intentionally absent — IRVA does not attest specific enrollment / completion years and does not state whether a graduate degree was conferred.'
+  note: 'period_start / period_end intentionally absent — the IRVA speaker bio attests no specific enrollment or completion years and does not state whether a graduate degree was conferred.'
 
 relationships:
 - id: r1
@@ -716,7 +731,7 @@ relationships:
   source:
     path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
     location: '¶3'
-  note: 'Targ and Puthoff co-authored ''Information transmission under conditions of sensory shielding'' (Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0); shared affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Targ''s ESP Research site identifies Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities'' (1970s and 1980s); the 1974 Nature paper byline corroborates Puthoff''s coterminous SRI Electronics and Bioengineering Laboratory affiliation. The ''cofounder'' designation for Puthoff derives from Targ''s self-attestation that he was ''cofounder'' (implying a co-), not directly from the Nature byline.'
+  note: 'The co-founder designation for Puthoff derives from Targ''s ESP Research site self-attestation that he was himself a ''cofounder'' (implying a co-), not directly from the Nature byline, which attests only the shared Electronics and Bioengineering Laboratory affiliation.'
 
 - id: r2
   added_date: '2026-05-14'
@@ -725,7 +740,7 @@ relationships:
   source:
     path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
     location: '[1:08:10]'
-  note: 'James Ryder''s 2018 Lucis Trust Garment of God talk attests on camera at [1:08:10] ''dr targ who''s worked for me for years'' and at [55:28] credits Targ with ''a lot of input'' on the ESP Wars: East and West book project assembled during Ryder''s Lockheed Martin Space Systems Company vice president era. Source is YouTube auto-caption (transcript_provenance: auto-caption); ''dr targ'' renders verbatim, the canonical form ''Dr. Targ'' is preserved for prose elsewhere via [`/people/russell-targ`] backtick-bracket wrapping.'
+  note: 'The source is a YouTube auto-caption (transcript_provenance: auto-caption), which renders the spoken ''Dr. Targ'' as the lowercased, unpunctuated ''dr targ''; the canonical form is preserved for prose elsewhere via the backtick-bracket node reference.'
 
 - id: r3
   added_date: '2026-05-15'
@@ -734,7 +749,7 @@ relationships:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶3'
-  note: 'Targ and Katra co-authored Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (1998) per IRVA q7. Targ''s own espresearch.com homepage (q4) also lists Miracles of Mind as one of his co-authored works (without naming the co-author). Parallel evidentiary pattern to the Puthoff relationship (r1: 1974 Nature paper co-author). Katra is currently an unbuilt stub.'
+  note: 'Targ''s own espresearch.com homepage lists Miracles of Mind among his co-authored works but does not name the co-author; the Katra co-authorship rests on the IRVA speaker bio. Katra is currently an unbuilt stub.'
 
 - id: r4
   added_date: '2026-05-15'
@@ -743,7 +758,7 @@ relationships:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶1-4'
-  note: 'Kress was CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972 (per the Kress 1977 paper, q9-q11). Kress''s direct contact with Targ was institutional rather than personal — managing CIA contracts with Targ and Puthoff at SRI, and authoring the 1977 first-person Studies in Intelligence review that is the foundational CIA-side primary-source attestation of Targ''s 1972 SRI join, the April 1972 OSI meeting, the August 1972 $874 OTS demonstration contract, and the November 1976 DCI Bush briefing. Parallels the Ryder relationship (r2) in framing as an institutional/professional connection rather than personal. Kress is currently an unbuilt stub.'
+  note: 'Kress''s direct contact with Targ was institutional rather than personal — managing CIA contracts with Targ and Puthoff at SRI and authoring the 1977 first-person Studies in Intelligence review that is the foundational CIA-side attestation of the engagement. Kress is currently an unbuilt stub.'
 
 - id: r5
   added_date: '2026-05-16'
@@ -752,7 +767,7 @@ relationships:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: 'p. 1, ¶ title'
-  note: 'Targ-Geller experimenter-subject relationship is anchored across three primary sources: the Feb 1973 contract progress report (q21) for the Task 3 nine-day program; the Aug 1973 SRI Geller report (q17-q20) Targ sole-authored for the Aug 4-11 1973 eight-day session; the 1974 Nature paper (q24) for the public-record summation. Targ''s Sunday August 5 1973 role attested verbatim in the Aug 1973 report: "Puthoff, who was with Geller, called Targ, who was with the drawing".'
+  note: 'In the August 5, 1973 picture-drawing session, Targ was stationed with the target drawing while Puthoff was with Geller in the shielded room (Aug 1973 SRI report) — Targ''s specific experimenter role within the session the relationship summarizes.'
 
 - id: r6
   added_date: '2026-05-16'
@@ -761,7 +776,7 @@ relationships:
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
     location: 'p. 2, ¶ studies-overview'
-  note: 'Targ-Price experimenter-subject relationship surfaces primarily through the 1974 Nature paper Targ co-authored. Pat Price was the SRI parapsychology investigation''s "third sensitive subject" per the 1977 Kress paper''s narrative ordering (Swann first, second subject unattested by name in Kress, Price third); the Nature paper makes the Price-as-subject attestation explicit. Pat Price is currently an unbuilt stub.'
+  note: 'The 1977 Kress paper introduces Price as "a third sensitive subject" at SRI; the Nature paper Targ co-authored makes the Price-as-subject attestation explicit. Pat Price is currently an unbuilt stub.'
 
 - id: r7
   added_date: '2026-05-16'
@@ -770,7 +785,7 @@ relationships:
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
     location: 'p. 2, Section A'
-  note: 'Targ-Swann experimenter-subject relationship anchored by the Feb 1973 contract progress report (q21). Swann is named as the program-initiating "magnetometer subject" per the 1977 Kress paper (q9) and the Kress paper''s broader narrative; the contract progress report adds the Aug 14-28 1972 Tasks 1+2 specific dates that the Kress paper does not enumerate. Ingo Swann is currently an unbuilt stub.'
+  note: 'The Feb 1973 contract progress report names Swann with the shielded-magnetometer demonstration ("In this work using a shielded magnetometer, Mr. Swann apparently demonstrated an ability") and enumerates the Aug 14-28 1972 Tasks 1+2 dates; the 1977 Kress paper describes the program-initiating magnetometer demonstration but does not name the man. Ingo Swann is currently an unbuilt stub.'
 
 program_involvement:
 - id: p1
@@ -783,7 +798,7 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) — co-authored by Puthoff and Targ — provides a second primary-source attestation of Targ''s active SRI program involvement at the "Senior Research Physicist" title; Section A page 2 attests Tasks 1 and 2 (a two-week Ingo Swann field measurement program 14-28 August 1972) and Task 3 (a nine-day Uri Geller ([`/people/uri-geller`]) field measurement program within the 1 December 1972 to 15 January 1973 contract window) as the early-1973-documented sub-programs Targ co-conducted. period_end intentionally absent (mirroring affiliation a1) — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested ''1970s and 1980s'' decade window does not pin a year-precise departure. The 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on individual tenure; the 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988). Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
+  note: 'period_end intentionally absent — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested ''1970s and 1980s'' decade window does not pin a year-precise departure. The 1991 Applied Optics byline at Lockheed Missiles & Space Company is the outer bound on individual tenure; the 1990 SRI-program discontinuation attested by the 1993 DIA STAR GATE Project Overview is the program-level outer bound, distinct from Targ''s individual tenure. Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), the bare period_start plus prose hedge is the working stop-gap pattern.'
 
 - id: p2
   added_date: '2026-05-14'
@@ -796,7 +811,7 @@ program_involvement:
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: 'p. 1'
-  note: 'period_start 1991 anchors on the 1991 Applied Optics paper byline (q25) placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto — the earliest archived peer-reviewed attestation at the Palo Alto Lockheed site (Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ ''worked for me for years''; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the ''years'' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997).'
+  note: 'period_start 1991 anchors on the earliest archived peer-reviewed byline at the Palo Alto Lockheed site (the post-merger Lockheed Martin Advanced Technology Center occupies the same 3251 Hanover Street address); period_end 1997 anchors on the IRVA bio retirement attestation. James Ryder''s 2018 Lucis Trust talk attests that Targ ''worked for me for years'' but does not date the start or end of that working relationship, so it is consistent with — but does not directly anchor — the 1991-1997 window.'
 
 - id: p3
   added_date: '2026-05-15'
@@ -809,7 +824,7 @@ program_involvement:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶2'
-  note: 'Per the IRVA speaker bio (q6), Targ accepted invitations to present remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and in 1984. Cold-War-era engagement between U.S. and Soviet psychic-research communities; the IRVA bio does not name specific Soviet counterparts.'
+  note: 'The IRVA speaker bio does not name specific Soviet counterparts for the 1983 and 1984 demonstrations.'
 
 - id: p4
   added_date: '2026-05-15'
@@ -822,6 +837,6 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
-  note: 'period_start 1972-08 anchors on the $874 OTS demonstration contract (q11). period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview (q13): "Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA". Targ''s broader SRI cofounder role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper. Three additional CIA primary sources archived in the 2026-05-16 archival sweep further attest Targ as author or co-author of the program''s working documents: (a) the contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) co-authored by Puthoff and Targ — the working-document side of the August 1972 OTS demonstration contract that became Task 3 with Geller; (b) the Nature 1974 paper [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror RDP96-00787R000100220001-8) co-authored by Puthoff and Targ — the public-record summation of the CIA-funded Geller and Pat Price ([`/people/pat-price`]) experiments; (c) the Aug 1973 SRI Geller report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) — Targ sole-authored cover memo dated August 13, 1973 summarizing the Aug 4-11, 1973 eight-day Geller picture-drawing session with the load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner". The three documents anchor Targ as the principal experimenter recording the program''s public-record claims. Targ''s 2007 retrospective comment in the Brendan Burton article on urigeller.com — "Uri was at our laboratory at SRI for six weeks in 1973" — exceeds the contemporaneous Targ-authored records by approximately four weeks (~17 days documented in total: 9 days late 1972 per contract progress (q21) + 8 days Aug 1973 per Targ-sole-authored Aug 1973 SRI report (q17-q20) vs 6 weeks recalled in 2007). The recollection-versus-record divergence is documented as the F.SRI finding-node candidate in meta/topic/research-queue.md.'
+  note: 'period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview, which attests that funding was discontinued in 1975 and subsequent SRI remote-viewing funding was provided by DIA. This entry isolates the CIA-funded sub-program; Targ''s broader SRI cofounder role, which continued beyond the CIA-sponsorship window, is carried as the umbrella SRI program-involvement entry.'
 
 
