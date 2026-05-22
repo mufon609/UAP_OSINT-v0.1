@@ -455,6 +455,53 @@ quotes:
     location: '¶ on SAFIRE / IVS voluntary support'
   significance: Named-collaborator (Gardner) attestation of his own voluntary contribution to SAFIRE — electromagnetic modeling of laboratory-confined/controlled plasma, funded by the International Science Foundation.
   context: 'Dr. William A. Gardner''s biography page on cyclostationarity.com'
+- id: q42
+  added_date: '2026-05-22'
+  text: |
+    Since 2014, Jan has been contributing to the SAFIRE project at Aurtas International in Mississauga, where he designed and developed SCADA systems and data transformation engines for physics research.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: 'Jan Onderco bio ¶'
+  significance: Aureon Energy's self-attestation of Jan Onderco's SAFIRE tenure and contribution — since 2014, at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. Establishes the 2014 start and the SCADA/data-engine specialization.
+  context: 'Aureon Energy corporate team page, Jan Onderco senior-scientist bio'
+  statement_date: '2014'
+- id: q43
+  added_date: '2026-05-22'
+  text: |
+    In addition to his expertise in automation and energy management, Jason has been a driving force behind the SAFIRE Team since 2014, serving as the Senior Design Engineer on SAFIRE II and III while spearheading advancements in design engineering for the project.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: 'Jason Lickver bio ¶'
+  significance: Aureon Energy's self-attestation that Jason Lickver has been a driving force behind the SAFIRE Team since 2014 and served as Senior Design Engineer on SAFIRE II and III. Establishes the 2014 start and the SAFIRE II/III design-engineer role.
+  context: 'Aureon Energy corporate team page, Jason Lickver VP-engineering bio'
+  statement_date: '2014'
+- id: q44
+  added_date: '2026-05-22'
+  text: |
+    As Aureon’s Chief Science Officer on the SAFIRE Project, Dr. Clarage focuses on optimizing the design of experiments for electric plasma discharges and correlating the scientific results with insights from solar and planetary physics. He holds a Ph.D. in physics from Brandeis University.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: 'Michael Clarage bio ¶'
+  significance: Aureon Energy's self-attestation of Michael Clarage's role and credential — Chief Science Officer on the SAFIRE Project, Ph.D. in physics from Brandeis University.
+  context: 'Aureon Energy corporate team page, Dr. Michael Clarage chief-science-officer bio'
+- id: q45
+  added_date: '2026-05-22'
+  text: |
+    Dr. Anderson holds 4 patents and has authored 18 peer-reviewed publications and over 40 government technical reports and proceedings. He is a member of the IEEE and NDIA and holds a Ph.D. in Physical Chemistry from Northeastern University.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: 'Paul Anderson bio ¶'
+  significance: Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements q16 (Anderson's DoD lead-scientist role on the same page).
+  context: 'Aureon Energy corporate team page, Dr. Paul Anderson VP-experiments bio'
+- id: q46
+  added_date: '2026-05-22'
+  text: |
+    Dr. Don Scott has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics.
+  source:
+    path: news/safireproject-historical-snapshot.html
+    location: 'Dr. Don Scott bio (electric sun pioneers section)'
+  significance: SAFIRE Project historical-page attestation of consulting-team member Donald Scott's standing — a long history of refining the Electric Sun Model in on-the-ground empirical electrical theory and plasma electrodynamics.
+  context: 'SAFIRE Project historical page, electric-sun-pioneers section, Dr. Don Scott bio'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-07'
@@ -463,7 +510,7 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html ¶17 (David Talbott bio)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project corporate team page renders "empirical" as "empircal" in David Talbott''s consulting-team bio — typo at the source. Canonical form: empirical. Preserved verbatim in q7 quote text.'
+  note: 'SAFIRE Project corporate team page renders "empirical" as "empircal" in David Talbott''s consulting-team bio — typo at the source. Canonical form: empirical. Preserved verbatim per source-form discipline.'
 - id: nq2
   added_date: '2026-05-07'
   observed: exerpience
@@ -487,7 +534,7 @@ naming_quirks:
   location: 'sources/news/safireproject-phase-three-snapshot.html ¶7 (stated discoveries)'
   source_path: news/safireproject-phase-three-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project Phase Three page renders "atmosphere" as "atmoshere" in the project''s stated counter-thermonuclear-model finding ("The core of SAFIRE is cooler than its surrounding atmoshere"). Canonical form: atmosphere. Preserved verbatim in q10 quote text.'
+  note: 'SAFIRE Project Phase Three page renders "atmosphere" as "atmoshere" in the project''s stated counter-thermonuclear-model finding ("The core of SAFIRE is cooler than its surrounding atmoshere"). Canonical form: atmosphere. Preserved verbatim per source-form discipline.'
 - id: nq5
   added_date: '2026-05-07'
   observed: photoshpere
@@ -495,7 +542,7 @@ naming_quirks:
   location: 'sources/news/safireproject-phase-three-snapshot.html ¶7'
   source_path: news/safireproject-phase-three-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project Phase Three page renders "photosphere" as "photoshpere" in the electron-density comparison statement. Canonical form: photosphere. Preserved verbatim in q10 quote text.'
+  note: 'SAFIRE Project Phase Three page renders "photosphere" as "photoshpere" in the electron-density comparison statement. Canonical form: photosphere. Preserved verbatim per source-form discipline.'
 - id: nq6
   added_date: '2026-05-07'
   observed: succesfully
@@ -503,7 +550,7 @@ naming_quirks:
   location: 'sources/news/safireproject-commercialization-snapshot.html ¶3'
   source_path: news/safireproject-commercialization-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project commercialization page renders "successfully" as "succesfully" in the project''s research-to-commercial transition statement. Canonical form: successfully. Preserved verbatim in q12 quote text.'
+  note: 'SAFIRE Project commercialization page renders "successfully" as "succesfully" in the project''s research-to-commercial transition statement. Canonical form: successfully. Preserved verbatim per source-form discipline.'
 - id: nq7
   added_date: '2026-05-07'
   observed: John Hopkins University
@@ -636,7 +683,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶3'
-  note: 'SAFIRE Project corporate team page:Childs is the Founder of AUREON ENERGY, Ltd. and the principal scientist and chief engineer of the SAFIRE PROJECT. Aureon Energy team page:also chairman and founder of predecessor company Aurtas International, Inc., where he is the creator, chief scientist, and program leader of the SAFIRE Project.'
 - id: kp2
   added_date: '2026-05-07'
   person_path: /people/jan-onderco
@@ -646,7 +692,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶4'
-  note: 'Aureon Energy team page: since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research.'
 - id: kp3
   added_date: '2026-05-07'
   person_path: /people/jason-lickver
@@ -656,7 +701,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶8'
-  note: 'Aureon Energy team page: has been a driving force behind the SAFIRE Team since 2014; Senior Design Engineer on SAFIRE II and III.'
 - id: kp4
   added_date: '2026-05-07'
   person_path: /people/leighton-macmillan
@@ -673,7 +717,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶9'
-  note: 'Aureon Energy team page: Aureon''s Chief Science Officer; Ph.D. in physics from Brandeis University.'
 - id: kp6
   added_date: '2026-05-07'
   person_path: /people/paul-anderson
@@ -682,7 +725,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶10'
-  note: 'Aureon Energy team page: Aureon''s VP Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist; 4 patents; Ph.D. in Physical Chemistry from Northeastern University.'
 - id: kp7
   added_date: '2026-05-07'
   person_path: /people/lowell-morgan
@@ -707,7 +749,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶6'
-  note: 'SAFIRE Project historical page: has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics.'
 - id: kp10
   added_date: '2026-05-07'
   person_path: /people/david-talbott
@@ -742,7 +783,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶18 (Science Review Team block)'
-  note: 'period_end is May 2018, the date of Ryder''s death, when the International Science Foundation closed down.'
 - id: kp14
   added_date: '2026-05-07'
   person_path: /people/hal-puthoff
@@ -751,7 +791,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶18'
-  note: 'The E-Cat World March 8 2020 article names a member of Aureon Energy''s Science Advisory Board at the website launch.'
 - id: kp15
   added_date: '2026-05-07'
   person_path: /people/eric-davis
@@ -785,7 +824,6 @@ org_relationships:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: '¶2'
-  note: 'Aureon Energy team page:Aurtas International, Inc. is Aureon Energy''s predecessor company; Childs is chairman and founder of both. Jan Onderco''s Aureon biography:Aurtas International is in Mississauga; SAFIRE project ran at Aurtas International from at least 2014.'
 - id: or2
   added_date: '2026-05-07'
   organization_path: /organizations/aureon-energy
@@ -793,7 +831,6 @@ org_relationships:
   source:
     path: news/safireproject-commercialization-snapshot.html
     location: '¶4'
-  note: 'Post-2018-2019 commercial successor vehicle for the SAFIRE Project research line, headquartered in Midland, Ontario, Canada per the Aureon Energy history page; website launched at https://aureon.ca on March 8, 2020 per E-Cat World (q13, q17).'
 - id: or3
   added_date: '2026-05-07'
   organization_path: /organizations/international-science-foundation
@@ -801,7 +838,6 @@ org_relationships:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶15'
-  note: 'ISF role: fund administrator per the SAFIRE PROJECT Genesis report p. 9 (q20). The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. ISF funded SAFIRE for several years and closed at Ryder''s death in May 2018 per Gardner''s biography (q14).'
 - id: or4
   added_date: '2026-05-07'
   organization_path: /organizations/mainwaring-archive-foundation
@@ -809,7 +845,6 @@ org_relationships:
   source:
     path: news/safireproject-genesis-snapshot.html
     location: '¶7'
-  note: 'Mainwaring Archive Foundation role: funder per the SAFIRE PROJECT Genesis report p. 9 (q20). Bruce and Scott Mainwaring decided to support the project through the Mainwaring Archive Foundation (q3). The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation.'
 - id: or5
   added_date: '2026-05-07'
   organization_path: /organizations/hathaway-consulting-services
