@@ -187,6 +187,15 @@ _Still open:_
   24-F-0266) — and the "The Record" daily-log archival need (uri-geller r1) — both are
   external-blocked source-acquisition items that want a tracking home (the BACKLOG
   external-event section).
+- **untouched-type naming_quirks id-clause uniformity** (low priority, cosmetic). Phase E
+  confirmed the document / event / transcript / media / finding / investigation nodes carry
+  NO fact-store or synthesis notes — every per-entry note there is already residue
+  (auto-caption quirks, OCR/typo source-form preservation, FOIA-redaction explanations,
+  oath-status + location caveats, contradiction-analysis). The only residual is that some
+  document + transcript `naming_quirks` notes still trail a "preserved verbatim in qN"
+  clause, the same internal-id bookkeeping dropped from the person/org nodes. A uniform
+  rephrase pass (keep the source-form explanation, drop the qN clause) would make the
+  residue-only standard consistent corpus-wide; not a quality problem, just consistency.
 
 **Blocks:** none.
 **Blocked by:** nothing — execution.
