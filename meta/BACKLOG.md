@@ -76,55 +76,51 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Migrate the per-entry `.note` field to the `summary` / `note` split (stage 2+)
+### A2 — Promote per-entry fact-notes to verbatim quotes / columns; route patterns to findings
 
-DECIDED (keep + structural refactor). A corpus audit of all 323 per-entry notes
-found **0% opinion/rumor/clutter** and **~79% irreplaceable** — removal was off
-the table. The field silently does TWO jobs: (A, ~37%) genuine *residue*
-(caveat / source-limitation / disambiguation / dating-anchoring) in column-rich
-sections, and (B, ~42%) *primary descriptive content* in bare-ref sections
-(`org_relationships`, `corroboration_items`, `relationships`) whose columns are
-only `path` + enum. The remaining ~21% is drift with a structured home:
-~8% misplaced-fact (D — flight hours, award counts, the Clapper AATIP-SAP memo,
-purchase prices; belong in Timeline rows / quotes / columns; also a
-contradiction-check blind spot), ~9% redundant source-attestation (E), ~4%
-column-duplication (C).
+DECIDED. Two corpus audits of all 323 per-entry notes settled this. The first
+framed it residue-vs-descriptive and proposed a new `summary` synthesis field;
+the second, run through a fact / synthesis / noise lens, overturned that — the
+field is **0% clutter**, but its content is mostly **facts stored as
+paraphrase**, not synthesis needing a home:
+- **~59% FACT** — Q (~56%) → a verbatim `quote` + source.location; C (~3%) → a
+  column / enum value. ~43% of the Q notes already carry the verbatim source
+  text inline.
+- **~13% NOISE** → delete (column-restatement, redundant attestation, boilerplate).
+- **~20% RESIDUE** → the legitimate `note` (source-limitation / dating-anchoring
+  / disambiguation).
+- **~8% SYNTHESIS** — only ~4% entity-local; the rest are cross-source *patterns*
+  that belong on finding / investigation nodes. A per-entry synthesis field was
+  REJECTED — it would entrench synthesis; `description` / `background` and the
+  finding layer already carry it.
 
-End-state: a per-entry `summary` field carries the B descriptive content;
-`note` narrows to residue-only (A), empty by default.
+End-state: facts → quotes/columns; noise → deleted; patterns → findings;
+`note` = residue-only (its narrowed positive definition now lives in
+`conventions.md` "Per-entry notes" — "residue, never a fact-store or synthesis
+surface").
 
-**Stage 1 — DONE** (committed): `summary` declared optional on the
-`relationship` / `corroboration` / `org_relationship` / `location_relationship`
-entry shapes; registered in `prose_drift_fields` for person / organization /
-event / location (so it is source-grounded like every synthesis surface);
-`summary` table columns exempted from the cell word-budget (it carries prose,
-like `note`). Additive — no node bodies changed.
+**DONE this session:** reverted the provisional `summary` declaration; deleted
+12 verified-noise notes (arlo / ttsa key_personnel column-restatements, ousd-is
+DoDD-5143.01 subsidiary boilerplate ×5, a karl-nell cross-pointer); closed the
+`funder` / `fund-administrator` enum gap (safire ISF + Mainwaring rows are now
+structured, not `partner`+note-workaround); narrowed the `note` definition.
 
-**Stage 2 — REMAINING (the migration; per-entry, careful):**
-- Per bare-ref section, point its renderer's descriptive column at `summary`
-  (the corroboration renderer already shows `note` as "What It Confirms" — a
-  proven churn-free pattern: render `summary or note`, then rename the B-notes
-  `note:`→`summary:` block-scoped, body output unchanged).
-- For each B-note, after renaming, prose-drift now checks it → **re-ground to
-  source vocabulary** (the C5 "3–6 passes" cost — a corroboration trial showed
-  ~50% of even the cleanest section's entries had ungrounded synthesis tokens).
-- **B-vs-A separation per entry** (blanket rename is unsafe): some "note"s mix
-  descriptive content (→summary) with a residue tail (→stays note) — e.g.
-  alex-dietrich corroboration c4's "two conflicting attestations … source-
-  priority" is an A caveat, not B.
-- Migrate the ~26 D facts to Timeline rows / quotes / columns; delete the
-  ~43 C/E; drop `note` in `ownership_timeline` + `top_scope_activity`
-  (100% fact-dump). Rebuild affected nodes; `pre-commit.sh` green per section.
+**DEFERRED (the bulk — per-entry, source-reading, not mechanical):**
+- Promote the ~191 fact-notes (Q + C) to verbatim `quotes[]` entries (with
+  `source.location`) and structured columns / enum values — this is where
+  "solid facts, not synthesis" is actually won; ~43% of the Q notes already
+  have the verbatim text inline.
+- Route the ~13 cross-source pattern notes to finding / investigation nodes
+  (F.SRI and the open `lockheed-martin-uap-materials` investigation are already
+  on the books to receive several).
+- The ~64 residue notes already conform — no change.
 
-**Stage 3:** rewrite `conventions.md` ~878 ("Per-entry notes") from the current
-section-blind definition to the clean split — `summary` = descriptive content
-for bare-ref sections; `note` = residue-only, empty by default.
-
-This is a focused per-entry source-reading effort (≈105 B re-groundings +
-26 D relocations), not a mechanical pass — best done in a dedicated session.
+Note: the conservative noise count is **12**, not the first audit's ~41 — the
+rest carry discrete facts or real caveats (quote-promotion / residue), so a
+blanket "delete the notes" pass would lose content. Per-entry judgment required.
 
 **Blocks:** none.
-**Blocked by:** nothing (stage 1 shipped; stage 2+ is execution).
+**Blocked by:** nothing — execution.
 
 ---
 

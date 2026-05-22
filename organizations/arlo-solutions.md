@@ -40,15 +40,15 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/lonye-ford`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf | Lonye Ford named in the FOUNDERS line of the August 2021 Company Overview. |
-| [`/people/arlene-wube`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf | Arlene Wube named in the FOUNDERS line of the August 2021 Company Overview as one of the founders of Arlo Solutions. |
-| [`/people/lonye-ford`] | CEO | 2026-03-16 | news/arlo-press-85m-sasp-20260503.html | Lonye Ford named CEO of Arlo Solutions in the March 16, 2026 SASP press statement. |
+| [`/people/lonye-ford`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf |  |
+| [`/people/arlene-wube`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf |  |
+| [`/people/lonye-ford`] | CEO | 2026-03-16 | news/arlo-press-85m-sasp-20260503.html |  |
 
 #### Staff
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/christina-pryka`] | Media Contact | 2024-04-18 | news/arlo-press-cls-vetting-20260503.html | Christina Pryka listed as Arlo's media contact for media requests. |
+| [`/people/christina-pryka`] | Media Contact | 2024-04-18 | news/arlo-press-cls-vetting-20260503.html |  |
 
 ---
 

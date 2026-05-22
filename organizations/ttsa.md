@@ -66,8 +66,8 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
 | [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html | Former Deputy Assistant Secretary of Defense for Intelligence; former Staff Director of Senate Select Committee on Intelligence. The fiscal year 2021 Form 1-K (April 2022) described Mellon as "former chairman of the scientific advisory board" — role changed from "National Security Affairs Advisor" in the 2018 TTSA website to chairman of the scientific advisory board by the time of his departure. Not listed on the current Advisory Board as of the April 2022 1-K filing. |
-| [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html | Listed as an Advisory Board member in the 2017 SEC Form 1-A filing. |
-| [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html | Advisory Board member per the 2017 SEC filing. |
+| [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
+| [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
 | [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html | Puthoff moved from the Board of Directors to the Advisory Board by early 2022; confirmed in the fiscal year 2021 Form 1-K filed April 30 2022. EarthTech International and Institute for Advanced Studies at Austin positions continue since 1985. |
 
 ---

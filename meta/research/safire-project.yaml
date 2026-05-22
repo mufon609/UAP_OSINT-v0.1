@@ -658,19 +658,19 @@ org_relationships:
 - id: or3
   added_date: '2026-05-07'
   organization_path: /organizations/international-science-foundation
-  relationship_type: partner
+  relationship_type: fund-administrator
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶15'
-  note: 'ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund administrator. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. Per Dr. William A. Gardner''s biography footnote 1, ISF "funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018." Schema relationship_type "partner" used because the closed enum does not include "fund-administrator"; the funder/administrator distinction is preserved here in the note.'
+  note: 'ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund administrator. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. Per Dr. William A. Gardner''s biography footnote 1, ISF "funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018."'
 - id: or4
   added_date: '2026-05-07'
   organization_path: /organizations/mainwaring-archive-foundation
-  relationship_type: partner
+  relationship_type: funder
   source:
     path: news/safireproject-genesis-snapshot.html
     location: '¶7'
-  note: 'Mainwaring Archive Foundation role per the SAFIRE PROJECT Genesis report (p. 9): funder. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." Per the SAFIRE Project genesis page, Bruce and Scott Mainwaring "decided to support the project through the Mainwaring Archive Foundation." The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation. Schema relationship_type "partner" used because the closed enum does not include "funder"; the funder/administrator distinction is preserved here in the note.'
+  note: 'Mainwaring Archive Foundation role per the SAFIRE PROJECT Genesis report (p. 9): funder. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." Per the SAFIRE Project genesis page, Bruce and Scott Mainwaring "decided to support the project through the Mainwaring Archive Foundation." The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation.'
 - id: or5
   added_date: '2026-05-07'
   organization_path: /organizations/hathaway-consulting-services

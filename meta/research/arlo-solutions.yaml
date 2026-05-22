@@ -516,7 +516,6 @@ key_personnel:
   source:
     path: news/arlo-company-overview-2021-08.pdf
     location: p. 4 — Profile FOUNDERS line ("FOUNDERS ARLENE WUBE & LONYE FORD")
-  note: Lonye Ford named in the FOUNDERS line of the August 2021 Company Overview.
 - id: kp1b
   added_date: '2026-05-03'
   person_path: /people/lonye-ford
@@ -526,7 +525,6 @@ key_personnel:
   source:
     path: news/arlo-press-85m-sasp-20260503.html
     location: Press release CEO quote ¶
-  note: Lonye Ford named CEO of Arlo Solutions in the March 16, 2026 SASP press statement.
 - id: kp2
   added_date: '2026-05-03'
   person_path: /people/arlene-wube
@@ -536,7 +534,6 @@ key_personnel:
   source:
     path: news/arlo-company-overview-2021-08.pdf
     location: p. 4 — Profile FOUNDERS line ("FOUNDERS ARLENE WUBE & LONYE FORD")
-  note: Arlene Wube named in the FOUNDERS line of the August 2021 Company Overview as one of the founders of Arlo Solutions.
 - id: kp3
   added_date: '2026-05-03'
   person_path: /people/christina-pryka
@@ -546,7 +543,6 @@ key_personnel:
     path: news/arlo-press-cls-vetting-20260503.html
     location: 'Press release Media Contact line ("For more information or media requests, contact: Christina Pryka")'
   leadership_class: staff
-  note: Christina Pryka listed as Arlo's media contact for media requests.
 org_relationships:
 - id: or1
   added_date: '2026-05-03'

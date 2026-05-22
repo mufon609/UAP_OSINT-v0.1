@@ -693,7 +693,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3 RESPONSIBILITIES AND FUNCTIONS, components paragraph'
-  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the Defense Intelligence Agency.
 - id: or3
   added_date: '2026-04-30'
   organization_path: /organizations/nga
@@ -701,7 +700,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3, components paragraph'
-  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Geospatial-Intelligence Agency.
 - id: or4
   added_date: '2026-04-30'
   organization_path: /organizations/nsa
@@ -709,7 +707,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3, components paragraph'
-  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Security Agency/Central Security Service.
 - id: or5
   added_date: '2026-04-30'
   organization_path: /organizations/nro
@@ -717,7 +714,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3, components paragraph'
-  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Reconnaissance Office.
 - id: or6
   added_date: '2026-04-30'
   organization_path: /organizations/dcsa
@@ -725,7 +721,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3, components paragraph'
-  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the Defense Counterintelligence and Security Agency.
 - id: or7
   added_date: '2026-04-30'
   organization_path: /organizations/aaro

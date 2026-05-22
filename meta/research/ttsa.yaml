@@ -981,7 +981,6 @@ key_personnel:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 33
-  note: Listed as an Advisory Board member in the 2017 SEC Form 1-A filing.
 - id: kp8
   added_date: '2026-04-22'
   person_path: /people/colm-kelleher
@@ -991,7 +990,6 @@ key_personnel:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 33
-  note: Advisory Board member per the 2017 SEC filing.
 - id: kp9
   added_date: '2026-04-22'
   person_path: /people/kari-delonge

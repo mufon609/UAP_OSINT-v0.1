@@ -842,6 +842,8 @@ org_relationship_entry:
     - successor
     - contractor
     - contracting-agency
+    - funder
+    - fund-administrator
     - partner
     - other
   # organization_path: /organizations/... path of the other org

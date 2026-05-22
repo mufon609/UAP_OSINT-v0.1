@@ -362,7 +362,6 @@ relationships:
   source:
     path: transcripts/nell-sol-foundation-2023-downloaded.md
     location: '[00:30]'
-  note: 'See r2 — co-thanked by Nell with Nolan as Sol Foundation co-founder in the Symposium opening.'
 
 naming_quirks:
 - id: nq1

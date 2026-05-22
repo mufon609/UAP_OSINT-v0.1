@@ -897,6 +897,19 @@ gate, so the discipline lives here. When new material would update an entry
 structured field** — extend or open the `period_end`, add a Timeline row —
 rather than narrating the update in a note.
 
+**`note` is residue — never a fact-store or a synthesis surface.** A discrete
+fact the source attests — a date, an action, a named role, a citation, an
+observation — belongs in a verbatim `quote` (with its `source.location`) or a
+structured column, *never* paraphrased into a note. A characterization
+synthesized across several sources is node-level synthesis: it lives in
+`description`, or — if it is a cross-source *pattern* — on a finding /
+investigation node (the entity layer carries facts, not patterns; see the
+three-layer architecture). There is no per-entry synthesis field, by design;
+adding one would just relocate the synthesis we minimize. After the facts go
+to quotes/columns and the patterns go to findings, what remains in a `note` is
+only the residue above, and most entries need none. A note that restates a
+column, or narrates a fact a quote should carry, is **noise** — delete it.
+
 ### Quote location refs: source-anchored, not extraction-anchored
 
 Each quote in a research artifact carries a `source.location` field —

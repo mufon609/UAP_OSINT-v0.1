@@ -176,7 +176,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 |---|---|---|
 | [`/people/david-grusch`] | UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch's disclosure | Per The Debrief article (Kean and Blumenthal, June 5, 2023), Nell was the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The article carries two Nell attestations about Grusch — the "beyond reproach" character vouching and the substantive "fundamentally correct" / "non-human intelligence" attestation. See [`/people/david-grusch`] Vouching Chain rows vc1 and vc2 for the canonical placement of the voucher pair. |
 | [`/people/garry-nolan`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks | Nell's Sol Foundation Symposium opening remarks thank "Gary and Peter and Saul for for putting this together" — "Gary" is the auto-caption rendering of Garry Nolan, "Peter" is Peter Skafish, and "Saul" is the auto-caption rendering of Sol Foundation. Nolan and Skafish are the co-founders Nell collaborated with on the symposium organization and on the subsequent policy-paper series. |
-| [`/people/peter-skafish`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks | See r2 — co-thanked by Nell with Nolan as Sol Foundation co-founder in the Symposium opening. |
+| [`/people/peter-skafish`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks |  |
 
 ---
 
