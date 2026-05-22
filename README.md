@@ -38,6 +38,37 @@ See `meta/conventions.md` for the full philosophy.
 
 ---
 
+## Core invariants
+
+Three rules are foundational — every node, contributor, and agent upholds
+them. Full detail in `meta/conventions.md`.
+
+1. **Four-tier directional linking.** References run *downward* a tier, never
+   up; the only same-tier links are entity ↔ entity.
+
+   | Tier | Node types | May reference | Never references |
+   |---|---|---|---|
+   | 1 — Sources | files under `sources/` | — | anything |
+   | 2 — Entity | person, organization, document, event, transcript, media, location | sources + other entity nodes (laterally) | findings, investigations |
+   | 3 — Findings | finding | sources + entity nodes | other findings, investigations |
+   | 4 — Investigations | investigation | sources + entity nodes + findings | other investigations |
+
+   Entity ↔ entity lateral links are the navigational fabric (`## Associated
+   Nodes`); the synthesis tiers never cross-link at their own level; nothing
+   points up at an investigation.
+
+2. **No unfinished work in a node.** Every quote rests on a verified, archived
+   primary source — extracted and matched character-for-character in the
+   session it was added. A quote with no confirmed source never enters a node.
+
+3. **Working notes are a report, not a residue.** An agent's analysis and
+   findings are delivered to the user (or returned as a build handoff), never
+   persisted into node bodies, code comments, or stray files. Git and
+   `meta/BACKLOG.md` own history; deferred work goes to the BACKLOG, not a
+   comment.
+
+---
+
 ## Repository layout
 
 ```

@@ -58,6 +58,27 @@ error (a build once inherited a sibling's wrong cross-link by mirroring it);
 the exemplar may be wrong, and the gate that catches it is your re-read of the
 source, not the exemplar's apparent authority.
 
+## Tier linking contract — references run downward (check before you link)
+
+Four tiers; a node references only *lower* tiers, never a greater one. The
+sole same-tier exception is entity ↔ entity (the navigational fabric).
+
+- **Tier 1 — sources** (`sources/`): referenced *by* nodes; references nothing.
+- **Tier 2 — entity** (person / organization / document / event / transcript /
+  media / location): reference sources + other entity nodes; **never** a
+  finding or investigation.
+- **Tier 3 — findings**: reference sources + entity nodes; **never** another
+  finding or an investigation.
+- **Tier 4 — investigations**: reference findings + entity nodes + sources;
+  **never** another investigation. Nothing references an investigation.
+
+A reference *up* a tier — or a finding/investigation referencing its own tier —
+is a defect **even in prose**, not only as a `/findings/` or `/investigations/`
+path link (a bare-slug mention like "the {slug} finding" inside an entity node
+is the same violation). When you add or carry a cross-reference, check its
+direction before emitting it. Full matrix: `meta/conventions.md` "Tier model
+and linking contract".
+
 ## Build phases
 
 The phase vocabulary is generated from the routing source of truth

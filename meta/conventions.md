@@ -1217,9 +1217,45 @@ secondary-source-only entries.
 
 ## Three-layer evidentiary architecture
 
-The repository carries three distinct evidentiary layers. Each has a
-different role; the layers' boundaries are load-bearing for the
-discipline.
+The repository carries three distinct evidentiary node layers sitting on
+the source substrate. Each has a different role; the boundaries are
+load-bearing for the discipline.
+
+### Tier model and linking contract
+
+Counting the source substrate, the architecture is **four tiers**.
+References run **downward** — a node may reference a *lower* tier, never a
+*greater* one — with exactly one same-tier exception (entity ↔ entity). This
+is the directional contract: facts flow up to synthesis; synthesis never
+flows back into the fact substrate.
+
+| Tier | Node types | May reference | Must NOT reference |
+|---|---|---|---|
+| **1 — Sources** | archived files under `sources/` | — (the evidentiary floor; it is referenced *by* nodes and references nothing) | anything |
+| **2 — Entity** | person · organization · document · event · transcript · media · location | Tier 1 (sources) **and Tier 2 (other entity nodes, laterally)** | Tier 3 (findings), Tier 4 (investigations) |
+| **3 — Findings** | finding | Tier 1 (sources) + Tier 2 (entity nodes) | Tier 3 (other findings), Tier 4 (investigations) |
+| **4 — Investigations** | investigation | Tier 1 + Tier 2 + Tier 3 (findings) | Tier 4 (other investigations) |
+
+Two consequences are worth stating outright:
+
+- **Same-tier links exist only at Tier 2.** Entity nodes cross-reference
+  each other — Affiliations → org, Speakers → person, Participants → person,
+  transcript `derived_from` → event — and that lateral web is the navigational
+  fabric (`## Associated Nodes`). The synthesis tiers do not cross-link at
+  their own level: a finding never references another finding (it stays
+  cluster-neutral, citable from multiple investigations), and an investigation
+  never references another investigation.
+- **Nothing references a Tier-4 investigation.** It is the top of the
+  iceberg — discoverable from the priority queue and inter-node paths, never
+  by a lower tier pointing up at it.
+
+A reference *up* a tier — an entity node naming a finding, a finding naming
+an investigation — inverts the flow and is a defect **even in prose, even
+when the target exists**. The `entity_no_finding_or_investigation_refs` and
+`finding_no_investigation_refs` checks catch the path forms (`/findings/…`,
+`/investigations/…`); a bare-slug prose reference ("the {slug} finding") is
+the same violation and is an authoring-discipline responsibility until a
+check covers it.
 
 ### Entity nodes — facts
 
