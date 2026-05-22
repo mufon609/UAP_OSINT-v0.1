@@ -215,7 +215,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| ‘‘FOBS’’ | "FOBS" | government/docs-house-gov-graves-written-testimony-20230726.pdf | pdftotext rendered the original double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single) in both the written testimony PDF and the stenographic transcript PDF. The canonical display form for a Navy callsign is in straight double quotes. Preserved verbatim in q1 (written testimony) and in the transcript node's q1 (matching the same artifact on both sources). |
+| ‘‘FOBS’’ | "FOBS" | government/docs-house-gov-graves-written-testimony-20230726.pdf | pdftotext rendered the original double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single) in both the written testimony PDF and the stenographic transcript PDF. The canonical display form for a Navy callsign is in straight double quotes. |
 
 ---
 

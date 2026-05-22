@@ -284,7 +284,7 @@ naming_quirks:
   location: line 79
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source spells the TTSA co-founder's surname as "Delonge"; canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node). Quote text preserves the source spelling verbatim.
+  note: Canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node).
 - id: nq2
   added_date: '2026-04-23'
   observed: Leslie Keane
@@ -292,5 +292,5 @@ naming_quirks:
   location: line 81
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source spells the NYT journalist's surname as "Keane"; canonical form is "Leslie Kean" (matches her own byline on the December 2017 NYT articles and on her Debrief-era work). Quote text (q10) preserves the source spelling verbatim.
+  note: Canonical form "Leslie Kean" matches her own byline on the December 2017 NYT articles and on her Debrief-era work.
 rumors: []

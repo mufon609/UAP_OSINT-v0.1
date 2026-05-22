@@ -2429,7 +2429,6 @@ vouching_chain:
     location: paragraph beginning "Karl E. Nell, a recently retired Army Colonel"
   evidentiary_basis: primary-source
   confidence: high
-  note: Nell is the direct institutional peer — Army liaison to the UAP Task Force 2021-2022, worked alongside Grusch on the Task Force. "Beyond reproach" is the canonical short-form attestation.
 - id: vc2
   added_date: '2026-04-22'
   voucher_path: /people/karl-nell
@@ -2441,7 +2440,6 @@ vouching_chain:
     location: paragraph beginning '"His assertion concerning the existence of a terrestrial arms race"'
   evidentiary_basis: primary-source
   confidence: high
-  note: Nell's substantive attestation — goes beyond character vouching to affirm the core factual claim (reverse engineering program; non-human intelligence origin).
 - id: vc3
   added_date: '2026-04-22'
   voucher_path: /people/tim-burchett
@@ -2453,7 +2451,7 @@ vouching_chain:
     location: body-content paragraph beginning '"I think it went really well"'
   evidentiary_basis: on-record
   confidence: high
-  note: Burchett co-chaired the hearing that received Grusch's sworn testimony. Quote addresses all three witnesses collectively (Grusch, Fravor, Graves) — "real, credible information" and "genuine and honest testimonies" apply to Grusch as a named panelist.
+  note: The statement addresses all three hearing witnesses collectively (Grusch, Fravor, Graves) rather than naming Grusch — "real, credible information" and "genuine and honest testimonies" apply to him as one of the panelists.
 - id: vc4
   added_date: '2026-04-22'
   voucher_path: /people/tim-burchett
@@ -2489,7 +2487,6 @@ vouching_chain:
     location: evo-press-release body paragraph beginning '"The American people deserve answers"'
   evidentiary_basis: on-record
   confidence: high
-  note: Issued at the moment of hiring Grusch as Special Advisor to the Task Force on the Declassification of Federal Secrets — institutional ratification from a sitting member of Congress. Frames Grusch's testimony as "critical information" and his expertise as "vital."
 - id: vc7
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2501,7 +2498,7 @@ vouching_chain:
     location: paragraph beginning "Rubio told NewsNation on Monday"
   evidentiary_basis: on-record
   confidence: high
-  note: Rubio was SSCI Vice Chair at the time — institutional standing to speak to what the committee has received. Paraphrase by NewsNation reporter rather than direct Rubio quote; the quoted fragment "high positions in our government" is verbatim Rubio.
+  note: NewsNation reporter paraphrase rather than a direct Rubio quote; only the fragment "high positions in our government" is verbatim Rubio.
 - id: vc8
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2513,7 +2510,7 @@ vouching_chain:
     location: paragraph beginning '"There are people that have come forward"'
   evidentiary_basis: on-record
   confidence: high
-  note: Rubio confirms multiple whistleblowers beyond Grusch have come to SSCI — corroborates the "not the only one" claim central to Grusch's public framing. Ellipsis is in the NewsNation source.
+  note: The ellipsis is in the NewsNation source, not editorial.
 - id: vc9
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2525,7 +2522,7 @@ vouching_chain:
     location: paragraph beginning "Rubio said that some of the officials"
   evidentiary_basis: on-record
   confidence: high
-  note: Reporter paraphrase with the verbatim phrase "high clearances" in quotes. Attests that Grusch-parallel whistleblowers hold clearances, elevating the credibility of the broader corroboration pool.
+  note: NewsNation reporter paraphrase; only the phrase "high clearances" is verbatim Rubio.
 - id: vc10
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2537,7 +2534,7 @@ vouching_chain:
     location: paragraph beginning "Rubio did not comment"
   evidentiary_basis: on-record
   confidence: medium
-  note: Reporter paraphrase, no verbatim Rubio fragment. Rubio declined to endorse the substantive claims but affirmed no motive-to-lie — a narrower form of credibility attestation than Nell or Burlison's statements.
+  note: NewsNation reporter paraphrase carrying no verbatim Rubio fragment — basis for the medium confidence rating.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-24'
@@ -2578,5 +2575,5 @@ naming_quirks:
   location: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
   source_path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption typo of "Kirkpatrick" as "Kurpatre" on the NewsNation Coulthart interview transcript (q25 context "I know Dr. Sean Kurpatre. I've known him for"). Grusch is referring to Dr. Sean Kirkpatrick, then-Director of AARO.
+  note: YouTube auto-caption typo of "Kirkpatrick" as "Kurpatre" on the NewsNation Coulthart interview transcript ("I know Dr. Sean Kurpatre. I've known him for about 8 years"). Grusch is referring to Dr. Sean Kirkpatrick, then-Director of AARO.
 rumors: []

@@ -196,8 +196,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| Delonge | DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source spells the TTSA co-founder's surname as "Delonge"; canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node). Quote text preserves the source spelling verbatim. |
-| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source spells the NYT journalist's surname as "Keane"; canonical form is "Leslie Kean" (matches her own byline on the December 2017 NYT articles and on her Debrief-era work). Quote text (q10) preserves the source spelling verbatim. |
+| Delonge | DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node). |
+| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Canonical form "Leslie Kean" matches her own byline on the December 2017 NYT articles and on her Debrief-era work. |
 
 ---
 
