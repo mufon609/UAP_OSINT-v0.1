@@ -136,10 +136,23 @@ _Still open:_
   so they are NOT promotable to verbatim quotes. Blocked on `/prepare-ocr-sibling`
   (no autonomous owner). Stays residue; defer past this effort.
 - **people-node bulk** — Phase C people batches in progress (hal-puthoff,
-  russell-targ, kit-green, uri-geller swept). Remaining: david-grusch,
-  james-ryder, david-fravor, ryan-graves, james-holly, luis-elizondo,
-  sean-kirkpatrick, sue-gough + the partially-trimmed karl-nell / alex-dietrich /
-  james-lacatski / ronald-moultrie.
+  russell-targ, kit-green, uri-geller, james-lacatski, karl-nell, ronald-moultrie
+  swept). Remaining: david-grusch, james-ryder, david-fravor, ryan-graves,
+  james-holly, luis-elizondo, sean-kirkpatrick, sue-gough, alex-dietrich.
+- **ronald-moultrie a29 BlueVoyant structured-field mis-dating** (pre-existing,
+  surfaced in the people sweep): the affiliation row's `period_start`/`period_end`
+  (`2021-06`), role text ("appointment announced June 2021"), and timeline `t25`
+  contradict the cited source `executivebiz-bluevoyant-moultrie-advisory-board-202106.html`,
+  whose `datePublished` is `2020-09-02` (the `2021-06` traces to the source's
+  `dateModified` 2021-06-22 + the manifest filename suffix). Re-verify the role
+  title + dates against the source and re-date; the drift may also touch the
+  a-Mitre / a-Pallas rows if they rest on the same source. (The note carrying the
+  same mis-dating was deleted in the people sweep; the structured fields remain.)
+- **ronald-moultrie a11 C5 source re-pull** (archive-sweep): the cited
+  `mondovisione-c5-partners-moultrie-nsa-20170306.html` is a JS-shell / cookie-wall
+  capture with no extractable body (it backs the "March 2017 Strategic Partner"
+  fact + timeline `t21`); the Businesswire half (Chairman, C5 US, Dec 2017) is
+  verified. Re-pull a usable capture.
 - **uri-geller sourcing reconciliation** (pre-existing, surfaced in the people
   sweep — NOT batch-introduced): the `program_involvement` "CIA-sponsored SRI
   investigation" row cites a contract 1471(S)73 progress report and the 1974

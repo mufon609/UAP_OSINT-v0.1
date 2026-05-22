@@ -38,12 +38,12 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 | Organization | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/organizations/uaptf`] | Army director / Army liaison for the UAP Task Force | 2021 – 2022 | news/thedebrief-grusch-2023.html | Per The Debrief article (Kean and Blumenthal, June 5, 2023), Nell was the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Sol Foundation white paper About the Author attests the same period in different language — "Army director supporting the UAP Task Force" — corroborating the role with a slight role-label variation between "liaison" (Debrief) and "Army director" (Nell's self-authored bio). |
-| [`/organizations/sol-foundation`] | author (Policy Papers, Vol. 2 No. 2, Spring 2025) | 2023 | government/solfoundation-ufo-enigma-nell-2025.pdf | Sol Foundation policy-paper author; the Sol Foundation published his policy paper "The UFO Enigma" as Vol. 2 No. 2 of its Policy Papers in Spring 2025 (timeline t6). Period start 2023 anchored to the Inaugural Symposium appearance at Stanford on November 17–18, 2023 (transcript [`/transcripts/nell-sol-foundation-2023`]; Nell's own remarks quoted verbatim at q10–q12); end open. |
-| [`/organizations/stardustx-materials`] | Chief Executive Officer |  | government/solfoundation-ufo-enigma-nell-2025.pdf | The CEO-at-StarDustX self-attestation is quoted verbatim from the same About the Author passage at q2. Start date not attested in source. |
-| [`/organizations/bell-laboratories`] | engineer (industry employee) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Per the Sol Foundation white paper About the Author, Nell held positions at Bell Laboratories among other industry employers. SALT 2024 talk attests Nell was at Bell Labs during "the tri vesture" (auto-caption for the AT&T trivestiture) — historically the 1996 AT&T trivestiture creating Lucent Technologies, NCR, and the residual AT&T. Period start / end not attested directly. |
-| [`/organizations/lockheed-martin`] | industry employee |  | government/solfoundation-ufo-enigma-nell-2025.pdf | The aerospace-industry employers (Bell Laboratories, Lockheed Martin, Northrop Grumman TASC) are quoted verbatim from the About the Author passage at q2. SALT 2024 talk additionally attests Nell worked at "locki missiles in space" (auto-caption for Lockheed Missiles & Space) after leaving Bell Labs. Period start / end not attested directly. |
-| [`/organizations/northrop-grumman`] | industry employee (Northrop Grumman TASC) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Per the Sol Foundation white paper About the Author, Nell held positions at Northrop Grumman TASC. SALT 2024 talk attests Nell worked at "northr grman" (auto-caption for Northrop Grumman). Period start / end not attested directly. |
+| [`/organizations/uaptf`] | Army director / Army liaison for the UAP Task Force | 2021 – 2022 | news/thedebrief-grusch-2023.html | Role-label variance between sources: "liaison" (The Debrief, reporter framing) versus "Army director supporting the UAP Task Force" (Nell's self-authored Sol Foundation About the Author bio). |
+| [`/organizations/sol-foundation`] | author (Policy Papers, Vol. 2 No. 2, Spring 2025) | 2023 | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start 2023 anchored to the Inaugural Symposium appearance at Stanford on November 17–18, 2023, predating the 2025 policy-paper publication that sources this row; end open. |
+| [`/organizations/stardustx-materials`] | Chief Executive Officer |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Start date not attested in source. |
+| [`/organizations/bell-laboratories`] | engineer (industry employee) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
+| [`/organizations/lockheed-martin`] | industry employee |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
+| [`/organizations/northrop-grumman`] | industry employee (Northrop Grumman TASC) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
 
 ---
 
@@ -174,8 +174,8 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 | Person | Relationship | Note |
 |---|---|---|
-| [`/people/david-grusch`] | UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch's disclosure | Per The Debrief article (Kean and Blumenthal, June 5, 2023), Nell was the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The article carries two Nell attestations about Grusch — the "beyond reproach" character vouching and the substantive "fundamentally correct" / "non-human intelligence" attestation. See [`/people/david-grusch`] Vouching Chain rows vc1 and vc2 for the canonical placement of the voucher pair. |
-| [`/people/garry-nolan`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks | Nell's Sol Foundation Symposium opening thanks to "Gary and Peter and Saul for for putting this together" are quoted verbatim at q10 — "Gary" is the auto-caption rendering of Garry Nolan (nq2), "Peter" is Peter Skafish, and "Saul" is the auto-caption rendering of Sol Foundation (nq1). Nolan and Skafish are the co-founders Nell collaborated with on the symposium organization and on the subsequent policy-paper series. |
+| [`/people/david-grusch`] | UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch's disclosure |  |
+| [`/people/garry-nolan`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks | The "Gary" Nell thanks in the q10 opening is the auto-caption rendering of Garry Nolan (nq2); alongside "Peter" (Peter Skafish) these are the Sol co-founders Nell collaborated with on the symposium and the policy-paper series. |
 | [`/people/peter-skafish`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks |  |
 
 ---
@@ -184,7 +184,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 | Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
 |---|---|---|---|---|---|---|
-| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | high | news/thedebrief-grusch-2023.html | The Debrief article (Kean and Blumenthal, June 5, 2023) states Nell was the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Sol Foundation policy paper About the Author (Spring 2025), authored by Nell, states the same period in different language — Army director supporting the UAP Task Force. Two-source corroboration with a role-label variance: liaison (reporter framing) versus Army director (self-attested bio). |
+| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | high | news/thedebrief-grusch-2023.html | Two-source corroboration with a role-label variance: liaison (The Debrief, reporter framing) versus Army director supporting the UAP Task Force (Nell's self-authored Sol Foundation bio). |
 
 ---
 
@@ -216,16 +216,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | truck Schumer | Chuck Schumer | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Chuck Schumer" as "truck Schumer". Auto-caption artifact; preserve in quotes. |
 | marubio | Marco Rubio | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Marco Rubio" as "marubio". Auto-caption artifact; preserve in quotes. |
 | rri Patterson Air Force Base | Wright-Patterson Air Force Base | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Wright-Patterson Air Force Base" as "rri Patterson Air Force Base". Auto-caption artifact; preserve in quotes. |
-
----
-
-## Preserved Disagreements
-
-Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
-
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| Eric Klein | Eric Cline | transcripts/nell-salt-2024-downloaded.md | Auto-caption rendering of "Eric Cline" (historian, author of "1177 BC: The Year Civilization Collapsed") as "Eric Klein". Nell also attributes Cline to "Princeton University" in the same passage; Eric Cline is actually a professor at George Washington University. The caption preserves a name typo that overlaps with Nell's separate institutional misattribution; resolution flagged as disputed pending further attestation. |
+| Eric Klein | Eric Cline | transcripts/nell-salt-2024-downloaded.md | Auto-caption rendering of "Eric Cline" (historian, author of "1177 BC: The Year Civilization Collapsed") as "Eric Klein". In the same passage Nell attributes the author to "Princeton University"; that institutional attribution is Nell's on-record statement, preserved as spoken and not adjudicated here. |
+| tri vesture | trivestiture | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "trivestiture" as "tri vesture" in Nell's SALT 2024 account of his time at Bell Labs. Auto-caption artifact; preserve in quotes. |
+| locki missiles in space | Lockheed Missiles & Space | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Lockheed Missiles & Space" as "locki missiles in space" in Nell's SALT 2024 employer account. Auto-caption artifact; preserve in quotes. |
+| northr grman | Northrop Grumman | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Northrop Grumman" as "northr grman" in Nell's SALT 2024 employer account. Auto-caption artifact; preserve in quotes. |
 
 ---
 

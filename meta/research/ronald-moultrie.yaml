@@ -134,7 +134,7 @@ affiliations:
   source:
     path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
     location: page 2/5 Experience section
-  note: Self-attested verbatim on Moultrie's contemporaneous LinkedIn profile (see quote q14). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members.
+  note: The role's sole attestation is Moultrie's own contemporaneous LinkedIn profile (quote q14); it is absent from his current public biographies.
 - id: a8
   added_date: '2026-04-29'
   organization_path: /organizations/itc-global-advisors
@@ -165,7 +165,6 @@ affiliations:
   organization_path: /organizations/c5-capital
   role: Strategic Partner (March 2017 announcement) — elevated to Chairman, C5 US by December 2017 (per Businesswire IISS Manama Dialogue panel listing)
   period_start: '2017-01'
-  note: The March 6 2017 mondovisione announcement names Moultrie as "Strategic Partner" of C5 Partners. The December 12 2017 Businesswire press release on the C5 Capital partnership with the International Institute for Strategic Studies lists Moultrie's role as "Chairman, C5 US" on the IISS Manama Dialogue panel — primary attestation of the role escalation within nine months of joining (audit § 5.2).
   source:
     path: news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html
     location: ¶ panelists list
@@ -317,7 +316,6 @@ affiliations:
   role: Vice Chairman, Advisory Board — appointment announced June 2021 during the USD(I&S) nomination period (per the ExecutiveBiz article 'BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board')
   period_start: '2021-06'
   period_end: '2021-06'
-  note: Appointment announced shortly before Moultrie was sworn in as USD(I&S) on June 1 2021; the role was effectively concurrent with the start of his government service and would have been disclosed on his entry-level OGE filing. Audit § 5.5 source.
   source:
     path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
     location: ¶ board appointment
