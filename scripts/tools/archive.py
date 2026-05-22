@@ -135,19 +135,35 @@ def cmd_submit_one(url):
         print("  URL is already a Wayback snapshot — submitting it would archive")
         print("  the Wayback viewer, not the original content.")
         sys.exit(1)
+
+    entries = load_manifest()
+    entry = next((e for e in entries if e.get("url") == url), None)
+
+    # CDX-first. An existing 200 capture in Wayback IS the archival record —
+    # prefer it over a fresh Save Page Now. A fresh submit of a bot-blocked
+    # origin (403 / Cloudflare) captures the block page, not the source, and
+    # would mis-record that as the archived copy; the historical 200 capture
+    # is the real content. Only submit fresh when no 200 snapshot exists.
+    wb_date, state = check_wayback(url)
+    if state == "found":
+        print(f"Existing Wayback snapshot: {url}")
+        print(f"  most recent 200 capture: {wb_date}")
+        if entry is None:
+            print("  WARNING: URL not in manifest — nothing to update.")
+            sys.exit(0)
+        entry["wayback_date"] = wb_date
+        entry["archive_status"] = entry.get("archive_status", 0) | 2
+        save_manifest(entries)
+        print(f"  Manifest updated: wayback_date={wb_date}, archive_status |= 2")
+        sys.exit(0)
+
+    # No 200 snapshot (or CDX unknown) — attempt a fresh Save Page Now.
     print(f"Submitting: {url}")
     ok, result = submit_wayback(url)
     if not ok:
         print(f"  FAILED: {result}")
         sys.exit(1)
     print(f"  OK: {result}")
-
-    # On a successful single-URL submit, update the manifest entry
-    # the same way the no-args sweep does — without this, a contributor
-    # running --submit URL after registering a new source would be
-    # left with archive_status: 1 (local only) and no wayback_date.
-    entries = load_manifest()
-    entry = next((e for e in entries if e.get("url") == url), None)
     if entry is None:
         print(f"  WARNING: URL not in manifest — submission succeeded but no")
         print(f"  entry to update. Add via `manifest.py add` to track the")

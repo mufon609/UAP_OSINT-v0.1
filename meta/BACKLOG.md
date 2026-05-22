@@ -123,17 +123,6 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C3 — Three AAWSAP source URLs recorded as landing-page fallback
-
-`dird-22-…-diamil-…` (dia.mil FileId/161870 → 403), `fas-org-aatip-list-20210808.pdf`
-(irp.fas.org/dia/aatip-list.pdf → 202 empty, Cloudflare), and
-`clapper-usdi-aatip-sap-recommendation-2009.pdf` (dia.mil FileId/170015 → 403) are now
-registered under their canonical-origin URLs (provenance-correct, per the
-manifest-shape split), but those origins are bot-blocked and could not be
-verified to return 200. Revisit via the Wayback fuzzy-timestamp pull (per
-`meta/sources-access.md`) or a manual browser save to record verified /
-Wayback-archived copies.
-
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 
 The prose-drift gate is correct and the resulting nodes are worth the
