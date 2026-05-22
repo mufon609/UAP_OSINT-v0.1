@@ -657,7 +657,9 @@ timeline_entry:
 
 corroboration_entry:
   required: [observer_path, observation_type, source]
-  optional: [observed_event_ref, note]
+  optional: [observed_event_ref, note, summary]
+  # summary: the corroborating observation — what this observer/instrument
+  #   confirms (synthesis, prose-drift-checked). note: residue only.
   observation_type_values:
     - testimonial
     - instrumented
@@ -723,7 +725,9 @@ affiliation_entry:
 
 relationship_entry:
   required: [person_path, relationship, source]
-  optional: [flagged, note]
+  optional: [flagged, note, summary]
+  # summary: descriptive content of the relationship — what it is (synthesis,
+  #   prose-drift-checked). note: residue only (caveat / limitation / disambiguation).
   # person_path: /people/... path
   # relationship: short description (flying partner, disclosure
   #   collaborator, advisor, superior, colleague, source, etc.)
@@ -834,7 +838,9 @@ contract_entry:
 
 org_relationship_entry:
   required: [organization_path, relationship_type, source]
-  optional: [flagged, note]
+  optional: [flagged, note, summary]
+  # summary: descriptive content of the relationship — what it is (synthesis,
+  #   prose-drift-checked). note: residue only (caveat / limitation / disambiguation).
   relationship_type_values:
     - parent
     - subsidiary
@@ -902,7 +908,9 @@ top_scope_activity_entry:
 
 location_relationship_entry:
   required: [entity_path, relationship, source]
-  optional: [flagged, note]
+  optional: [flagged, note, summary]
+  # summary: descriptive content of the relationship — what it is (synthesis,
+  #   prose-drift-checked). note: residue only (caveat / limitation / disambiguation).
   # entity_path: any /type/slug wrap_path — person, organization,
   #   document, event, transcript, media, location, or finding. This
   #   is the only relationship_entry shape in the schema that allows

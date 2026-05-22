@@ -64,15 +64,17 @@ def _table_cell_overages(section_text, budget):
             # table starting without intervening prose). Re-evaluate.
             pass
         # Decide whether this row is a header. Heuristic: if any cell name
-        # in this row case-insensitively equals 'note' AND every cell is a
-        # short non-prose label, treat as header. Conservative: just check
-        # for 'Note' cell.
-        if any(c.strip().lower() == "note" for c in cells):
+        # in this row case-insensitively equals a prose-column label
+        # ('note' or 'summary'), treat as header. Both carry descriptive
+        # prose (1+ sentences) and are exempt from the cell word budget —
+        # note is per-entry residue, summary is the entry's descriptive
+        # content; both legitimately exceed the short-label budget.
+        if any(c.strip().lower() in ("note", "summary") for c in cells):
             note_columns = {i for i, c in enumerate(cells)
-                            if c.strip().lower() == "note"}
+                            if c.strip().lower() in ("note", "summary")}
             pending_header = True
             continue
-        # Data row — apply word budget to non-Note columns
+        # Data row — apply word budget to non-prose columns
         for i, cell in enumerate(cells):
             if i in note_columns:
                 continue
