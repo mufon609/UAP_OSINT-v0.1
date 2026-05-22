@@ -46,27 +46,27 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/jan-onderco`] | Core team member; data acquisition, equipment continuity, computer interfacing | 2014 | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:Monty's right-hand man in the lab, responsible for all data acquisition. Aureon Energy team page:since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. |
-| [`/people/jason-lickver`] | Core team engineer; Senior Design Engineer on SAFIRE II and III (per Aureon team page) | 2014 | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:engineer who helps to analyze and troubleshoot Monty's design blueprints, then collaborates with the construction of the SAFIRE apparatus itself. Aureon Energy team page:has been a driving force behind the SAFIRE Team since 2014. |
-| [`/people/leighton-macmillan`] | Core team multi-disciplinary engineer / mechanical assembly / documentation |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:"plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average 'out of the box' science project." |
-| [`/people/michael-clarage`] | Core team data analyst (Ph.D); Chief Science Officer at Aureon Energy |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:collates, analyzes, and compares the data acquired from the experiments with the latest data from official sources such as NASA; the Solar & Heliospheric Observatory; the Solar Dynamics Observatory; the Voyager probes; and the Rosetta sensors. Aureon Energy team page:Aureon's Chief Science Officer; Ph.D. in physics from Brandeis University. |
-| [`/people/paul-anderson`] | Core team chemist (Ph.D); VP Experiments at Aureon Energy |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:a chemist by training who works with high energy reactions, manages and oversees the Design of Experiments, chemical studies, and statistical analysis and modeling. Aureon Energy team page:Aureon's VP Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist; 4 patents; Ph.D. in Physical Chemistry from Northeastern University. |
-| [`/people/lowell-morgan`] | Core team plasma physicist |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:brings a lifetime of experience in plasma physics, both theoretical and applied; extremely skilled at writing peer reviewable papers in this field. |
-| [`/people/ben-ged-low`] | Core team Cinematography, Optics, Video Capture |  | news/safireproject-project-report.pdf | SAFIRE PROJECT Project Report: "Ben Ged Low / Cinematography, Optics, Video Capture". Also named in the SAFIRE corporate team page group photo with other team members. |
+| [`/people/jan-onderco`] | Core team member; data acquisition, equipment continuity, computer interfacing | 2014 | news/safireproject-team-snapshot.html | Aureon Energy team page: since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. |
+| [`/people/jason-lickver`] | Core team engineer; Senior Design Engineer on SAFIRE II and III (per Aureon team page) | 2014 | news/safireproject-team-snapshot.html | Aureon Energy team page: has been a driving force behind the SAFIRE Team since 2014; Senior Design Engineer on SAFIRE II and III. |
+| [`/people/leighton-macmillan`] | Core team multi-disciplinary engineer / mechanical assembly / documentation |  | news/safireproject-team-snapshot.html |  |
+| [`/people/michael-clarage`] | Core team data analyst (Ph.D); Chief Science Officer at Aureon Energy |  | news/safireproject-team-snapshot.html | Aureon Energy team page: Aureon's Chief Science Officer; Ph.D. in physics from Brandeis University. |
+| [`/people/paul-anderson`] | Core team chemist (Ph.D); VP Experiments at Aureon Energy |  | news/safireproject-team-snapshot.html | Aureon Energy team page: Aureon's VP Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist; 4 patents; Ph.D. in Physical Chemistry from Northeastern University. |
+| [`/people/lowell-morgan`] | Core team plasma physicist |  | news/safireproject-team-snapshot.html |  |
+| [`/people/ben-ged-low`] | Core team Cinematography, Optics, Video Capture |  | news/safireproject-project-report.pdf | Also named in the SAFIRE corporate team page group photo with other team members. |
 
 #### Advisors
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/wal-thornhill`] | Consulting team member; Electric Sun model researcher |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:presents the key factors that define the new model, then helps to propose and clarify experiments that could be undertaken by SAFIRE to affirm or refute the model. |
-| [`/people/donald-scott`] | Consulting team member; Electric Universe Group |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:offers a lifetime of experience with both traditional and now bleeding-edge electrical concepts. SAFIRE Project historical page:has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics. |
-| [`/people/david-talbott`] | Consulting team; initiator and co-producer of the Electric Universe Conferences; invited Childs to the 2012 EU Conference |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page: Talbott "recognized in Monty Childs' SAFIRE concept a real and empircal method for testing the Electric Sun model, and so invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference." |
-| [`/people/bruce-mainwaring`] | Consulting team; supporter through Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page: Bruce Mainwaring "has been a devoted fan of the Electric Universe idea for half a century or more, years before it had even acquired a name. His lifelong work in the field of applied electrical sciences has given him a profound insight into the pragmatic nature of the Electric Sun model." Named under foundation partners with the Mainwaring Archive Foundation on the same team page. |
-| [`/people/scott-mainwaring`] | Consulting team; financing through the Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page: Scott Mainwaring "was one of the few at the 2012 EU Conference who understood exactly where Monty Childs was coming from. Like David Talbott he immediately recognized a plausible way to test the Electric Universe hypothesis. Scott plays an essential role in the ongoing process – financing the work through the Mainwaring Archive Foundation, consulting regularly with Monty, and even volunteering hands-on assistance in the building of the main Phase 2 apparatus." |
-| [`/people/james-ryder`] | Science Review Team — Chairman, International Science Foundation; also listed on the consulting team | – 2018-05 | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page lists "Dr. James Ryder  Chairman, International Science Foundation" under science review team. Period_end is May 2018, the date of Ryder's death — Dr. William A. Gardner's biography: "1 The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder's, death in May 2018." |
-| [`/people/hal-puthoff`] | Science Review Team — Director, Institute for Advanced Studies at Austin; Aureon Energy Science Advisory Board member |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:listed on the science review team as "Harold Puthoff, PhD, Director, Institute for Advanced Studies at Austin". E-Cat World March 8 2020 article:named to Aureon Energy's Science Advisory Board at the website launch. |
-| [`/people/eric-davis`] | Science Review Team — Chief Science Officer, Institute for Advanced Studies at Austin |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page:listed on the science review team as "Eric W. Davis, Ph.D., Chief Science Officer, Institute for Advanced Studies at Austin, Austin, TX". |
-| [`/people/william-gardner`] | Science Review Team — Professor Emeritus, University of California; voluntary electromagnetic-modeling support |  | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page lists "William A. Gardner  Professor Emeritus, University of California" under science review team. Gardner's biography: provided "voluntary support of the SAFIRE Project, funded by International Science Foundation (ISF)" through "electromagnetic modeling of laboratory-confined/controlled plasma". |
+| [`/people/wal-thornhill`] | Consulting team member; Electric Sun model researcher |  | news/safireproject-team-snapshot.html |  |
+| [`/people/donald-scott`] | Consulting team member; Electric Universe Group |  | news/safireproject-team-snapshot.html | SAFIRE Project historical page: has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics. |
+| [`/people/david-talbott`] | Consulting team; initiator and co-producer of the Electric Universe Conferences; invited Childs to the 2012 EU Conference |  | news/safireproject-team-snapshot.html |  |
+| [`/people/bruce-mainwaring`] | Consulting team; supporter through Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html | Named under foundation partners with the Mainwaring Archive Foundation on the SAFIRE Project team page. |
+| [`/people/scott-mainwaring`] | Consulting team; financing through the Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html |  |
+| [`/people/james-ryder`] | Science Review Team — Chairman, International Science Foundation; also listed on the consulting team | – 2018-05 | news/safireproject-team-snapshot.html | period_end is May 2018, the date of Ryder's death, when the International Science Foundation closed down. |
+| [`/people/hal-puthoff`] | Science Review Team — Director, Institute for Advanced Studies at Austin; Aureon Energy Science Advisory Board member |  | news/safireproject-team-snapshot.html | The E-Cat World March 8 2020 article names a member of Aureon Energy's Science Advisory Board at the website launch. |
+| [`/people/eric-davis`] | Science Review Team — Chief Science Officer, Institute for Advanced Studies at Austin |  | news/safireproject-team-snapshot.html |  |
+| [`/people/william-gardner`] | Science Review Team — Professor Emeritus, University of California; voluntary electromagnetic-modeling support |  | news/safireproject-team-snapshot.html |  |
 
 ---
 
@@ -153,6 +153,18 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 | Attributed to | SAFIRE Project corporate team page, 2012 |
 | Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
 | Location | ¶17 |
+
+---
+
+### Consulting-team role of Scott Mainwaring per the SAFIRE Project's own team page — financing the work through the Mainwaring Archive Foundation and hands-on assistance on the Phase 2 apparatus.
+
+> SCOTT MAINWARING was one of the few at the 2012 EU Conference who understood exactly where Monty Childs was coming from. Like David Talbott he immediately recognized a plausible way to test the Electric Universe hypothesis. Scott plays an essential role in the ongoing process – financing the work through the Mainwaring Archive Foundation, consulting regularly with Monty, and even volunteering hands-on assistance in the building of the main Phase 2 apparatus.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, consulting team listing, 2012 |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶13 |
 
 ---
 
@@ -372,6 +384,186 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
+### Core-team role of Jano Onderco per the SAFIRE Project's own team page — data acquisition, equipment continuity, computer interfacing.
+
+> JANO ONDERCO is Monty's right-hand man in the lab, assisting with equipment continuity, computer interfacing, and responsible for all data acquisition.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶4 |
+
+---
+
+### Core-team engineering role of Jason Lickver per the SAFIRE Project's own team page — analysis/troubleshooting of design blueprints and construction of the SAFIRE apparatus.
+
+> JASON LICKVER, engineer, helps to analyze and troubleshoot Monty's design blueprints, then collaborates with the construction of the SAFIRE apparatus itself.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶8 |
+
+---
+
+### Multi-disciplinary core-team role of Leighton MacMillan per the SAFIRE Project's own team page. Verbatim preserves source spelling "millright".
+
+> LEIGHTON MACMILLAN: plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average 'out of the box' science project.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶7 |
+
+---
+
+### Core-team data-analyst role of Michael Clarage per the SAFIRE Project's own team page — comparison of experiment data against NASA and observatory sources.
+
+> MICHAEL CLARAGE, Ph.D, collates, analyzes, and compares the data acquired from the experiments with the latest data from official sources such as NASA; the Solar & Heliospheric Observatory; the Solar Dynamics Observatory; the Voyager probes; and the Rosetta sensors.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶9 |
+
+---
+
+### Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role (q16).
+
+> PAUL ANDERSON, Ph.D, a chemist by training who works with high energy reactions, manages and oversees the Design of Experiments, chemical studies, and statistical analysis and modeling.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶10 |
+
+---
+
+### Core-team plasma-physicist role of Lowell Morgan per the SAFIRE Project's own team page.
+
+> LOWELL MORGAN brings a lifetime of experience in plasma physics, both theoretical and applied; he is also extremely skilled at writing peer reviewable papers in this field.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, core team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶11 |
+
+---
+
+### Consulting-team role of Wal Thornhill per the SAFIRE Project's own team page — Electric Sun model researcher who frames the model and proposes/clarifies experiments.
+
+> WAL THORNHILL, arguably the world’s leading authority on the Electric Sun model, presents the key factors that define the new model, then helps to propose and clarify experiments that could be undertaken by SAFIRE to affirm or refute the model.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, consulting team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶5 |
+
+---
+
+### Consulting-team role of Donald Scott per the SAFIRE Project's own team page — Electric Universe Group member contributing electrical-concept experience.
+
+> DONALD SCOTT, a key player in the EU Group, offers a lifetime of experience with both traditional and now bleeding-edge electrical concepts.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, consulting team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶6 |
+
+---
+
+### Consulting-team role and Electric-Universe background of Bruce Mainwaring per the SAFIRE Project's own team page; supporter through the Mainwaring Archive Foundation.
+
+> BRUCE MAINWARING has been a devoted fan of the Electric Universe idea for half a century or more, years before it had even acquired a name. His lifelong work in the field of applied electrical sciences has given him a profound insight into the pragmatic nature of the Electric Sun model.
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, consulting team listing |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶12 |
+
+---
+
+### Science Review Team listing of Dr. James Ryder per the SAFIRE Project's own team page — Chairman, International Science Foundation.
+
+> Dr. James Ryder  Chairman, International Science Foundation
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, science review team block |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶18 (Science Review Team block) |
+
+---
+
+### Science Review Team listing of Harold Puthoff per the SAFIRE Project's own team page — Director, Institute for Advanced Studies at Austin.
+
+> Harold Puthoff, PhD  Director, Institute for Advanced Studies at Austin
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, science review team block |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶18 (Science Review Team block) |
+
+---
+
+### Science Review Team listing of Eric W. Davis per the SAFIRE Project's own team page — Chief Science Officer, Institute for Advanced Studies at Austin.
+
+> Eric W. Davis, Ph.D.  Chief Science Officer, Institute for Advanced Studies at Austin, Austin, TX
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, science review team block |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶18 (Science Review Team block) |
+
+---
+
+### Science Review Team listing of William A. Gardner per the SAFIRE Project's own team page — Professor Emeritus, University of California.
+
+> William A. Gardner  Professor Emeritus, University of California
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE Project corporate team page, science review team block |
+| Source | [archived source](../sources/news/safireproject-team-snapshot.html) |
+| Location | ¶18 (Science Review Team block) |
+
+---
+
+### Core-team role of Ben Ged Low per the SAFIRE PROJECT Project Report team listing — Cinematography, Optics, Video Capture.
+
+> Ben Ged Low Cinematography, Optics, Video Capture
+
+| Field | Value |
+|---|---|
+| Attributed to | SAFIRE PROJECT Project Report, team listing page |
+| Source | [archived source](../sources/news/safireproject-project-report.pdf) |
+| Location | p. 69 (THE SAFIRE PROJECT Team listing) |
+
+---
+
+### Named-collaborator (Gardner) attestation of his own voluntary contribution to SAFIRE — electromagnetic modeling of laboratory-confined/controlled plasma, funded by the International Science Foundation.
+
+> electromagnetic modeling of laboratory-confined/controlled plasma in voluntary support of the SAFIRE Project, funded by International Science Foundation (ISF)
+
+| Field | Value |
+|---|---|
+| Attributed to | Dr. William A. Gardner's biography page on cyclostationarity.com |
+| Source | [archived source](../sources/news/cyclostationarity-gardner-biography-snapshot.html) |
+| Location | ¶ on SAFIRE / IVS voluntary support |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -398,9 +590,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 | Organization | Relationship | Source | Note |
 |---|---|---|---|
 | [`/organizations/aurtas-international`] | predecessor | news/aureonenergy-team-snapshot.html | Aureon Energy team page:Aurtas International, Inc. is Aureon Energy's predecessor company; Childs is chairman and founder of both. Jan Onderco's Aureon biography:Aurtas International is in Mississauga; SAFIRE project ran at Aurtas International from at least 2014. |
-| [`/organizations/aureon-energy`] | successor | news/safireproject-commercialization-snapshot.html | SAFIRE Project commercialization page:"The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd." Aureon Energy is the post-2018-2019 commercial vehicle for the SAFIRE Project research line, headquartered in Midland, Ontario, Canada per the Aureon Energy history page; website launched at https://aureon.ca on March 8, 2020 per E-Cat World. |
-| [`/organizations/international-science-foundation`] | fund-administrator | news/safireproject-team-snapshot.html | ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund administrator. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. Per Dr. William A. Gardner's biography footnote 1, ISF "funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder's, death in May 2018." |
-| [`/organizations/mainwaring-archive-foundation`] | funder | news/safireproject-genesis-snapshot.html | Mainwaring Archive Foundation role per the SAFIRE PROJECT Genesis report (p. 9): funder. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." Per the SAFIRE Project genesis page, Bruce and Scott Mainwaring "decided to support the project through the Mainwaring Archive Foundation." The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation. |
+| [`/organizations/aureon-energy`] | successor | news/safireproject-commercialization-snapshot.html | Post-2018-2019 commercial successor vehicle for the SAFIRE Project research line, headquartered in Midland, Ontario, Canada per the Aureon Energy history page; website launched at https://aureon.ca on March 8, 2020 per E-Cat World (q13, q17). |
+| [`/organizations/international-science-foundation`] | fund-administrator | news/safireproject-team-snapshot.html | ISF role: fund administrator per the SAFIRE PROJECT Genesis report p. 9 (q20). The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. ISF funded SAFIRE for several years and closed at Ryder's death in May 2018 per Gardner's biography (q14). |
+| [`/organizations/mainwaring-archive-foundation`] | funder | news/safireproject-genesis-snapshot.html | Mainwaring Archive Foundation role: funder per the SAFIRE PROJECT Genesis report p. 9 (q20). Bruce and Scott Mainwaring decided to support the project through the Mainwaring Archive Foundation (q3). The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation. |
 | [`/organizations/hathaway-consulting-services`] | other | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page lists Hathaway Consulting Services on the science review team alongside Ryder, Puthoff, Davis, and Gardner, and also separately under corporate consultants. Schema relationship_type "other" used because the closed enum does not include "consulting" or "science-review-team-member"; specific role preserved here in the note. |
 
 ---

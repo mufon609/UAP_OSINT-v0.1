@@ -47,32 +47,32 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/stephen-cambone`] | Under Secretary of Defense for Intelligence | 2003-03-07 – 2006-12-31 | government/defense-gov-cambone-usdi-bio-200709.html | First Under Secretary of Defense for Intelligence. Per the defenselink.mil biography, "Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003." Per the December 1, 2006 DoD news release No. 1221-06, Cambone will resign from the Department on December 31, 2006. Prior roles include Director, Program Analysis and Evaluation in the Office of the Secretary of Defense (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002). |
-| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html | Clapper was sworn in as Under Secretary of Defense for Intelligence by Secretary of Defense Robert M. Gates during a private ceremony in the Pentagon on April 13, 2007. His tenure ended on or about August 5, 2010 when he was sworn in as Director of National Intelligence following Senate confirmation the same day. Clapper signed the November 17, 2009 memorandum to the Deputy Secretary of Defense recommending against a Special Access Program for the Advanced Aerospace Threat and Identification Program managed by DIA. |
+| [`/people/stephen-cambone`] | Under Secretary of Defense for Intelligence | 2003-03-07 – 2006-12-31 | government/defense-gov-cambone-usdi-bio-200709.html | Prior roles include Director, Program Analysis and Evaluation in the Office of the Secretary of Defense (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002). Per the December 1, 2006 DoD news release No. 1221-06, Cambone will resign from the Department on December 31, 2006. |
+| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html | Clapper's tenure ended on or about August 5, 2010 when he was sworn in as Director of National Intelligence following Senate confirmation the same day. Clapper signed the November 17, 2009 memorandum to the Deputy Secretary of Defense recommending against a Special Access Program for the Advanced Aerospace Threat and Identification Program managed by DIA. |
 | [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011-03 – 2015-04 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, Vickers held the USD(I) office March 2011 - April 2015. Vickers responded to Senate Armed Services Committee Advance Policy Questions on February 15, 2011 as USD(I) nominee. Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict. |
-| [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf | Lettre attested as Under Secretary of Defense for Intelligence on September 13, 2016 in his Senate Armed Services Committee Statement for the Record on encryption policy. |
+| [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf |  |
 | [`/people/todd-lowery`] | Acting Under Secretary of Defense for Intelligence | 2017-01 – 2017-06 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, Todd Lowery held the Acting USD(I) role January 2017 - June 2017, bridging Lettre's January 2017 departure to Bingen's June 2017 acting role. |
 | [`/people/kari-bingen`] | Acting Under Secretary of Defense for Intelligence | 2017-06 – 2017-12 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, Kari Bingen held the Acting USD(I) role June 2017 - December 2017, bridging Lowery's June 2017 acting role to Kernan's December 2017 confirmation. |
 | [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence | 2017-12-01 – 2019-12-19 | government/pl-116-92-ndaa-fy2020.pdf | Kernan was sworn in as Under Secretary of Defense for Intelligence on December 1, 2017. His title remained USD(I) through the date the redesignation statute (P.L. 116-92 § 1621) took effect on enactment, December 20, 2019. |
 | [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2019-12-20 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html | Following the December 20, 2019 redesignation per P.L. 116-92 § 1621, Kernan held the USD(I&S) title through his November 10, 2020 letter of resignation. Ezra Cohen-Watnick was named Acting Under Secretary the same day. |
 | [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-01-20 | government/defense-gov-personnel-changes-pentagon-20201110.html | Named the new Acting Under Secretary of Defense for Intelligence and Security on November 10, 2020 effective the date Kernan submitted his letter of resignation. Cohen-Watnick was concurrently the Acting Assistant Secretary of Defense for Special Operation and Low-Intensity Conflict. |
 | [`/people/david-m-taylor`] | Acting Under Secretary of Defense for Intelligence and Security | 2021-01-20 – 2021-06-01 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, David M. Taylor held the Acting USD(I&S) role January 2021 - June 2021, bridging Cohen-Watnick's January 2021 acting departure to Moultrie's June 2021 confirmation. |
-| [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html | Moultrie was sworn in June 1, 2021 and retired in February 2024. He served as the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters and exercised authority, direction, and control on behalf of the Secretary of Defense over all intelligence and security organizations within the Department of Defense. |
+| [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html | Moultrie exercised authority, direction, and control on behalf of the Secretary of Defense over all intelligence and security organizations within the Department of Defense, including NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services, and was dual-hatted as the Director of Defense Intelligence in ODNI. His 36+ year career included serving as NSA's Director of Operations until his 2015 retirement, a senior member of the Central Intelligence Agency Senior Intelligence Service in the Directorate of Science & Technology, and a Senior Executive Officer serving the DNI before he rejoined NSA. |
 | [`/people/milancy-harris`] | Acting Under Secretary of Defense for Intelligence and Security | 2024-03 – 2025-01 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, Milancy D. Harris held the Acting USD(I&S) role March 2024 - January 2025, bridging Moultrie's February 2024 retirement to Gard-Weiss's January 2025 acting role. |
 | [`/people/dustin-gard-weiss`] | Acting Under Secretary of Defense for Intelligence and Security | 2025-01 – 2025-07-25 | government/crs-if10523-defense-primer-usdis.html | Per CRS report IF10523, Dustin Gard-Weiss held the Acting USD(I&S) role January 2025 - July 2025, bridging Harris's acting tenure to Hansell's July 25, 2025 confirmation. |
-| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf | Per the 2025 official biography hosted on ousdi.defense.gov, Mr. Hansell was sworn into the Under Secretary position on July 25, 2025. He serves as the principal advisor to the Secretary of War on intelligence, counterintelligence, and security matters and exercises authority, direction, and control over all intelligence and security organizations in the Department of War, including the nine DoW components that are members of the Intelligence Community. He also serves as Director of Defense Intelligence and the principal advisor to the Director of National Intelligence on Defense Intelligence matters. |
+| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf | Per the 2025 official biography hosted on ousdi.defense.gov, Hansell serves as the principal advisor to the Secretary of War on intelligence, counterintelligence, and security matters and exercises authority, direction, and control over all intelligence and security organizations in the Department of War, including the nine DoW components that are members of the Intelligence Community. He also serves as Director of Defense Intelligence and the principal advisor to the Director of National Intelligence on Defense Intelligence matters. |
 
 #### Deputy Leadership
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/justin-overbaugh`] | Deputy Under Secretary of War for Intelligence and Security | 2025 | government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf | Per the 2025 official biography hosted on ousdi.defense.gov, Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security, overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations. Former U.S. Army Officer (reconnaissance unit Afghanistan and Iraq, HUMINT collection, strategic counterintelligence operations). |
+| [`/people/justin-overbaugh`] | Deputy Under Secretary of War for Intelligence and Security | 2025 | government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf | Per the 2025 official biography hosted on ousdi.defense.gov, Overbaugh's role includes overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations. A former U.S. Army Officer, he led a reconnaissance unit in Afghanistan and Iraq, conducted Human Intelligence collection, and oversaw strategic counterintelligence operations. |
 
 #### Staff
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/david-kozik`] | Director Congressional Activities, Office of the Under Secretary of Defense Intelligence | 2017-12-27 | government/dvids-kozik-portrait-page-20260501.html | David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence; per the DVIDS official portrait, Army portrait studio at the Pentagon in Arlington, Virginia, Dec. 27, 2017. |
+| [`/people/david-kozik`] | Director Congressional Activities, Office of the Under Secretary of Defense Intelligence | 2017-12-27 | government/dvids-kozik-portrait-page-20260501.html |  |
 
 ---
 
@@ -87,6 +87,30 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | Attributed to | P.L. 107-314 Title IX Subtitle A, 2002-12-02 |
 | Source | [archived source](../sources/government/pl-107-314-ndaa-fy2003.pdf) |
 | Location | Title IX Subtitle A, Section 901 heading (p. 116 STAT. 2618) |
+
+---
+
+### First confirmed Under Secretary of Defense for Intelligence — Senate confirmation date March 7, 2003
+
+> Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003.
+
+| Field | Value |
+|---|---|
+| Attributed to | defenselink.mil biography of Dr. Stephen A. Cambone, USD(I), 2006-01-13 |
+| Source | [archived source](../sources/government/defense-gov-cambone-usdi-bio-200709.html) |
+| Location | defenselink.mil bio of Dr. Stephen A. Cambone, last updated January 13, 2006 |
+
+---
+
+### James R. Clapper sworn in as USD(I) by SecDef Robert M. Gates during a private Pentagon ceremony on April 13, 2007
+
+> Retired U.S. Air Force Lt. Gen. James R. Clapper (left) is sworn-in as under secretary of defense for intelligence by Secretary of Defense Robert M. Gates (right) during a private ceremony in the Pentagon on April 13, 2007.
+
+| Field | Value |
+|---|---|
+| Attributed to | war.gov photo gallery caption for Clapper swearing-in, 2007-04-13 |
+| Source | [archived source](../sources/government/wargov-clapper-sworn-in-photo-20070413.html) |
+| Location | war.gov photo gallery caption for VIRIN 193973-E-CAZ91-588 |
 
 ---
 
@@ -137,6 +161,18 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | Attributed to | Senate Armed Services Committee encryption-policy hearing, September 13 2016, 2016-09-13 |
 | Source | [archived source](../sources/government/asc-lettre-usdi-testimony-20160913.pdf) |
 | Location | Statement for the Record header, p. 1 |
+
+---
+
+### David A. Kozik attested as Director Congressional Activities, Office of the Under Secretary of Defense Intelligence (December 27, 2017)
+
+> David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence, poses for his official portrait in the Army portrait studio at the Pentagon in Arlington, Virginia,Dec. 27, 2017.
+
+| Field | Value |
+|---|---|
+| Attributed to | DVIDS official portrait record for Mr. David A. Kozik, 2017-12-27 |
+| Source | [archived source](../sources/government/dvids-kozik-portrait-page-20260501.html) |
+| Location | DVIDS image-record page for portrait VIRIN 4064972 (December 27, 2017) |
 
 ---
 
@@ -344,6 +380,18 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
+### Ronald S. Moultrie sworn in as USD(I&S) June 1, 2021, principal advisor to the Secretary of Defense; retired February 2024
+
+> The Honorable Ronald S. Moultrie was sworn in as Under Secretary of Defense for Intelligence & Security (USDI&S) on June 1, 2021.  In this role, he served as the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters. He retired in February 2024.
+
+| Field | Value |
+|---|---|
+| Attributed to | Ronald S. Moultrie official biography on war.gov, 2021-06-01 |
+| Source | [archived source](../sources/government/wargov-moultrie-biography.html) |
+| Location | Ronald S. Moultrie biography on war.gov |
+
+---
+
 ### IPMO established March 1, 2022 by direction from SecDef and USD(I&S); attestation that OUSD(I&S) directs subordinate-office establishment
 
 > On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
@@ -440,6 +488,90 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | Attributed to | OSD OP-5 FY 2026, OUSD(I&S) Compensation and Benefits FTE-increase justification narrative, 2025 |
 | Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
 | Location | OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item, +$4,334 thousand, +18 FTEs |
+
+---
+
+### Justin Overbaugh serves as Deputy Under Secretary of War for Intelligence and Security, supporting the Under Secretary across intelligence, counterintelligence, and security matters
+
+> Honorable Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025 official biography hosted on ousdi.defense.gov |
+| Source | [archived source](../sources/government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf) |
+| Location | p. 1, ¶1 of biographical text |
+
+---
+
+### FY 2026 OSD OP-5 — OSD Red Team sub-office bullet under the OUSD(I&S) operating budget
+
+> The OSD Red Team, which serves as the SECDEF's and DEPSECDEF's red team by providing insights on adversaries' highest-level perspectives and potential actions to inform strategic-level DoD activities.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, OUSD(I&S) program section, OSD Red Team bullet |
+
+---
+
+### FY 2026 OSD OP-5 — Strategy Coordination Program Office (SCPO) sub-office bullet under the OUSD(I&S) operating budget
+
+> The Strategy Coordination Program Office (SCPO), which performs critical analyses and assessments for a variety of military, technical, and scientific programs, issues, and topics.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, OUSD(I&S) program section, SCPO bullet |
+
+---
+
+### FY 2026 OSD OP-5 — Counterproliferation of Weapons of Mass Destruction (CP/WMD) Office sub-office bullet under the OUSD(I&S) operating budget
+
+> The Counterproliferation of Weapons of Mass Destruction (CP/WMD) Office, which serves as the senior advisor to the USD(I&S) for understanding threats from biothreat/biotechnology and WMD.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, OUSD(I&S) program section, CP/WMD bullet |
+
+---
+
+### FY 2026 OSD OP-5 — Advanced Intelligence Capabilities (AIC) sub-office bullet; reports directly to DEPSECDEF and PDDNI, mission language tracking the NDAA FY23 § 1683 AARO carveout (anomalous/unidentified transmedium objects)
+
+> Advanced Intelligence Capabilities (AIC), which reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence and synchronizes efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, OUSD(I&S) program section, AIC bullet |
+
+---
+
+### FY 2026 OSD OP-5 — Law Enforcement Oversight and Compliance Directorate sub-office bullet under the OUSD(I&S) operating budget
+
+> The Law Enforcement Oversight and Compliance Directorate, which serves as the senior advisor to the USD(I&S) for law enforcement policy and provides oversight of the law enforcement community.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, OUSD(I&S) program section, Law Enforcement Oversight and Compliance Directorate bullet |
+
+---
+
+### Bradley D. Hansell sworn into the Under Secretary position on July 25, 2025 per the official 2025 USDIS biography
+
+> Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025 official biography hosted on ousdi.defense.gov, 2025-07-25 |
+| Source | [archived source](../sources/government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf) |
+| Location | p. 1, ¶1 of biographical text |
 
 ---
 
@@ -573,17 +705,17 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | [`/organizations/nsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
 | [`/organizations/nro`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
 | [`/organizations/dcsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/aaro`] | subsidiary | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Deputy Secretary of Defense Hicks directed the USD(I&S) to establish the All-domain Anomaly Resolution Office on July 15, 2022 in coordination with the Director of Administration and Management. AARO was the cognizant subordinate office established under USD(I&S) direction. Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373. Pair with or15 (AIC); the FY 2025 and FY 2026 OSD OP-5 budget submissions name the same-mission OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" while AARO continues to operate publicly under its own name (aaro.mil active, FOIA org chart still lists AARO). The structural relationship between AARO and AIC at primary-source level is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO); description prose carries the analysis. |
-| [`/organizations/ipmo`] | subsidiary | government/notre-dame-ipmo-memo-20220527.pdf | The Influence and Perception Management Office was established March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. |
-| [`/organizations/odni`] | partner | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf | Per DoDD 5143.01, USD(I&S) serves as Director of Defense Intelligence and as the primary SecDef representative to the Office of the Director of National Intelligence and all other Intelligence Community elements. |
+| [`/organizations/aaro`] | subsidiary | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Deputy Secretary of Defense Hicks directed the USD(I&S) to establish AARO (q18). AARO was the cognizant subordinate office established under USD(I&S) direction. Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373. Pair with or15 (AIC); the FY 2025 and FY 2026 OSD OP-5 budget submissions name the same-mission OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" while AARO continues to operate publicly under its own name (aaro.mil active, FOIA org chart still lists AARO). The structural relationship between AARO and AIC at primary-source level is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO); description prose carries the analysis. |
+| [`/organizations/ipmo`] | subsidiary | government/notre-dame-ipmo-memo-20220527.pdf | Established March 1, 2022 per direction from the Secretary of Defense and the USD(I&S) (q19). |
+| [`/organizations/odni`] | partner | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf | Per DoDD 5143.01, USD(I&S) serves as Director of Defense Intelligence and as the primary SecDef representative to ODNI and all other Intelligence Community elements (q12). |
 | [`/organizations/sancorp-consulting`] | contractor | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Sancorp Consulting LLC is a prime contractor providing support services across multiple OUSD(I&S) subordinate offices including AARO and IPMO. |
-| [`/organizations/dmdpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Defense Military Deception Program Office. Per FY 2026 OSD OP-5, DMDPO provides governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD. Listed as a funded sub-office under the OUSD(I&S) operating budget alongside OSD Red Team, IPMO, SCPO, CP/WMD Office, AIC, and the Law Enforcement Oversight and Compliance Directorate. |
-| [`/organizations/osd-red-team`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | OSD Red Team. Per FY 2026 OSD OP-5, serves as the SECDEF's and DEPSECDEF's red team, providing adversary-centric insights to inform strategic-level DoD activities. Listed as a funded sub-office under the OUSD(I&S) operating budget. |
-| [`/organizations/scpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Strategy Coordination Program Office. Per FY 2026 OSD OP-5, performs critical analyses and assessments for military, technical, and scientific programs through strategy coordination cells. Listed as a funded sub-office under the OUSD(I&S) operating budget. |
-| [`/organizations/cp-wmd`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Counterproliferation of Weapons of Mass Destruction Office. Per FY 2026 OSD OP-5, serves as the senior advisor to the USD(I&S) for understanding threats from biothreat/biotechnology and WMD. Listed as a funded sub-office under the OUSD(I&S) operating budget. |
-| [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence — the literal NDAA FY23 § 1683 statutory carveout language unique to AARO. The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)"; the FY 2025 OSD OP-5 (March 11, 2024 release) was the first to substitute "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language; FY 2026 OSD OP-5 retains AIC. No public DoD announcement of an AARO renaming has been issued; aaro.mil website remains active under the AARO name. Pair with or7 (AARO, per Hicks establishment memorandum); structural relationship between the two is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO) and is currently described as separate subsidiaries until a primary-source resolution surfaces. |
-| [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Law Enforcement Oversight and Compliance Directorate. Per FY 2026 OSD OP-5, the Directorate serves as the senior advisor to the USD(I&S) for law enforcement policy, supported by an additional 18 FTEs and \$4,334 thousand in associated OUSD(I&S) Compensation and Benefits funding to implement direction contained within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement. Stand-up tense shift between FY 2025 OSD OP-5 (March 2024, future tense) and FY 2026 OSD OP-5 (June 2025, present tense) attests operational status was achieved sometime between March 2024 and June 2025, well after the original 90-day deadline (~July 20, 2023). |
-| [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf | Counter-Adversary Defense Industry (C-ADI) program. First publicly named in FY 2025 OSD OP-5 (released March 2024) as an OUSD(I&S) sub-office between SCPO and CP/WMD. In FY 2026 OSD OP-5 (released June 2025), C-ADI moved out of the sub-office bullet list and into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)" — administrative reorganization, not disestablishment. Establishment instrument not retrieved at primary-source level (FOIA-able to OUSD(I&S) Front Office for an establishment memo dated between March 2023 (FY24 OP-5 release) and March 2024 (FY25 OP-5 release)). |
+| [`/organizations/dmdpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Defense Military Deception Program Office. Per FY 2026 OSD OP-5, DMDPO provides governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD (q32). Listed as a funded sub-office under the OUSD(I&S) operating budget alongside OSD Red Team (q44), IPMO, SCPO (q45), CP/WMD Office (q46), AIC (q47), and the Law Enforcement Oversight and Compliance Directorate (q48). |
+| [`/organizations/osd-red-team`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | OSD Red Team. Per FY 2026 OSD OP-5, serves as the SECDEF's and DEPSECDEF's red team, providing adversary-centric insights to inform strategic-level DoD activities (q44). Listed as a funded sub-office under the OUSD(I&S) operating budget. |
+| [`/organizations/scpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Strategy Coordination Program Office. Per FY 2026 OSD OP-5, performs critical analyses and assessments for military, technical, and scientific programs through strategy coordination cells (q45). Listed as a funded sub-office under the OUSD(I&S) operating budget. |
+| [`/organizations/cp-wmd`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Counterproliferation of Weapons of Mass Destruction Office. Per FY 2026 OSD OP-5, serves as the senior advisor to the USD(I&S) for understanding threats from biothreat/biotechnology and WMD (q46). Listed as a funded sub-office under the OUSD(I&S) operating budget. |
+| [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence — the literal NDAA FY23 § 1683 statutory carveout language unique to AARO (q47). The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)"; the FY 2025 OSD OP-5 (March 11, 2024 release) was the first to substitute "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language; FY 2026 OSD OP-5 retains AIC. No public DoD announcement of an AARO renaming has been issued; aaro.mil website remains active under the AARO name. Pair with or7 (AARO, per Hicks establishment memorandum); structural relationship between the two is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO) and is currently described as separate subsidiaries until a primary-source resolution surfaces. |
+| [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Law Enforcement Oversight and Compliance Directorate. Per FY 2026 OSD OP-5, the Directorate serves as the senior advisor to the USD(I&S) for law enforcement policy (q48), supported by an additional 18 FTEs and \$4,334 thousand in associated OUSD(I&S) Compensation and Benefits funding to implement direction contained within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement (q33). Stand-up tense shift between FY 2025 OSD OP-5 (March 2024, future tense) and FY 2026 OSD OP-5 (June 2025, present tense) attests operational status was achieved sometime between March 2024 and June 2025, well after the original 90-day deadline (~July 20, 2023). |
+| [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf | Counter-Adversary Defense Industry (C-ADI) program. First publicly named in FY 2025 OSD OP-5 (released March 2024) as an OUSD(I&S) sub-office between SCPO and CP/WMD (q35). In FY 2026 OSD OP-5 (released June 2025), C-ADI moved out of the sub-office bullet list and into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)" — administrative reorganization, not disestablishment. Establishment instrument not retrieved at primary-source level (FOIA-able to OUSD(I&S) Front Office for an establishment memo dated between March 2023 (FY24 OP-5 release) and March 2024 (FY25 OP-5 release)). |
 
 ---
 

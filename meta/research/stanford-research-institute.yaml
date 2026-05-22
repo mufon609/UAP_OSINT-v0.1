@@ -505,6 +505,86 @@ quotes:
   context: 'Sol Foundation ''People'' page for Jacques Vallée ([`/people/jacques-vallee`]) — thesolfoundation.org/people/jacques-vallee-3/, retrieved 2026-05-17. Page-attributed Sol role: Emeritus Advisor.'
   significance: 'Sol Foundation institutional attestation of Jacques Vallée as a staff engineer at SRI''s Augmentation Research Center (ARC) under Douglas Engelbart, working on the ARPANET network information center. Identifies Vallée''s SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ (q7–q10) — same parent institution, different division. Sol page does not attest specific years of Vallée''s ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol''s descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division''s historical name. Preserved verbatim per source-form-preservation discipline; see naming_quirks nq15.'
 
+- id: q38
+  added_date: '2026-05-22'
+  text: |
+    Hella Hammid was a brilliant and cultivated woman, and a distinguished photographer for LIFE magazine and many other US and international publications.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
+  context: 'Russell Targ, IRVA 2009 talk abstract "A Tribute to Hella Hammid: The First Woman Remote Viewer, Part 2" (archived on the IRVA speaker biography page)'
+  significance: 'Targ first-person attestation of Hella Hammid''s pre-SRI profession — a distinguished LIFE magazine photographer — establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure is attested in q18. Complements q18 (the CIA-requested control-subject role) with the photographer descriptor that q18 does not carry.'
+
+- id: q39
+  added_date: '2026-05-22'
+  text: |
+    1968: Charles A. Anderson becomes SRI's president.
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Anderson presidency)'
+  statement_date: '1968'
+  significance: 'SRI''s own first-party attestation of Charles A. Anderson''s 1968 elevation to the SRI presidency, from the 2004-era SRI history page. Anchors key_personnel kp14 and timeline tl1b. Succeeded by William F. Miller in 1979 (q40). Specific within-1968 date not attested.'
+
+- id: q40
+  added_date: '2026-05-22'
+  text: |
+    1979: William F. Miller becomes SRI's president.
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1979 entry (Miller presidency)'
+  statement_date: '1979'
+  significance: 'SRI''s own first-party attestation of William F. Miller''s 1979 elevation to the SRI presidency, succeeding Charles A. Anderson (q39), from the 2004-era SRI history page. Anchors key_personnel kp15 and timeline tl9b. Specific within-1979 date not attested.'
+
+- id: q41
+  added_date: '2026-05-22'
+  text: |
+    Ellen Ochoa (Board Member Start 2/1/23)
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2023'
+  statement_date: '2023-02-01'
+  significance: 'IRS-sourced (via ProPublica) attestation of Ellen Ochoa''s SRI board membership with a February 1, 2023 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors key_personnel kp9.'
+
+- id: q42
+  added_date: '2026-05-22'
+  text: |
+    Ellen Pawlikowski (Board Member)
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+  statement_date: '2025-11-12'
+  significance: 'IRS-sourced (via ProPublica) attestation of Ellen Pawlikowski as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp10; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.'
+
+- id: q43
+  added_date: '2026-05-22'
+  text: |
+    John J Young Jr (Board Member)
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+  statement_date: '2025-11-12'
+  significance: 'IRS-sourced (via ProPublica) attestation of John J. Young Jr. as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp11; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.'
+
+- id: q44
+  added_date: '2026-05-22'
+  text: |
+    John Mcintire (Chief Legal Officer)
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+  statement_date: '2025-11-12'
+  significance: 'IRS-sourced (via ProPublica) attestation of John P. McIntire as SRI Chief Legal Officer, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp12. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.'
+
+- id: q45
+  added_date: '2026-05-22'
+  text: |
+    Suresh Sunderrajan (Chief Financial Officer From 1/19/24)
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+  statement_date: '2024-01-19'
+  significance: 'IRS-sourced (via ProPublica) attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors key_personnel kp13.'
+
 naming_quirks:
 
 - id: nq1
@@ -1024,7 +1104,6 @@ key_personnel:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2002 talk abstract'
-  note: 'Per Targ IRVA 2002 talk abstract: "in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory" at SRI.'
 
 - id: kp6
   added_date: '2026-05-15'
@@ -1047,7 +1126,6 @@ key_personnel:
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
-  note: 'Per Targ IRVA 2009 Hella Hammid tribute talk abstract, Hammid was a LIFE magazine photographer brought into the SRI remote-viewing program in 1974 as a "control" subject our sponsors from the CIA wanted to supplement Pat Price and Ingo Swann. In her ten years with the program, she became our most reliable viewer.'
 
 - id: kp8
   added_date: '2026-05-15'
@@ -1068,7 +1146,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2023'
-  note: 'Ellen Ochoa is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2023 with the listing "Board Member Start 2/1/23" — the source listing for Ochoa''s board start date. Ochoa is listed as Board Member in the section for fiscal year ending Dec. 2024.'
+  note: 'Ochoa is also listed as a Board Member in the ProPublica section for the fiscal year ending Dec. 2024.'
 
 - id: kp10
   added_date: '2026-05-15'
@@ -1078,7 +1156,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'Ellen Pawlikowski is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023 and Dec. 2022 — the ProPublica page renders SRI International''s IRS Form 990 filings. The specific Pawlikowski board start date is not stated on the ProPublica page.'
+  note: 'Pawlikowski is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023 and Dec. 2022. The specific board start date is not stated on the ProPublica page.'
 
 - id: kp11
   added_date: '2026-05-15'
@@ -1088,7 +1166,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'John J. Young Jr. is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021 — the ProPublica page renders SRI International''s IRS Form 990 filings. The specific Young board start date is not stated on the ProPublica page.'
+  note: 'Young is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. The specific board start date is not stated on the ProPublica page.'
 
 - id: kp12
   added_date: '2026-05-15'
@@ -1098,7 +1176,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'John P. McIntire is named Chief Legal Officer in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years — the ProPublica page renders SRI International''s IRS Form 990 filings. The ProPublica page renders the name as "John Mcintire" in the section for fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — minor middle initial variation across IRS Form 990 filings. The specific McIntire role start date is not stated on the ProPublica page.'
+  note: 'McIntire is also listed as Chief Legal Officer in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years. The ProPublica page renders the name as "John Mcintire" for the fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — a minor variation in the name form across the IRS Form 990 filings. The specific role start date is not stated on the ProPublica page.'
 
 - id: kp13
   added_date: '2026-05-15'
@@ -1109,7 +1187,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'Suresh Sunderrajan is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 with the listing "Chief Financial Officer From 1/19/24" — the source listing for Sunderrajan''s CFO start date. The same source lists Sunderrajan in the section for fiscal year ending Dec. 2023 as "President, Commercialization" — the prior role recorded before the transition to CFO.'
+  note: 'ProPublica lists Sunderrajan as "President, Commercialization" in the section for the fiscal year ending Dec. 2023 — the prior role recorded before the transition to Chief Financial Officer.'
 
 - id: kp14
   added_date: '2026-05-15'
@@ -1120,7 +1198,6 @@ key_personnel:
   source:
     path: news/sri-com-about-history-1960s-wayback-2004.html
     location: '1968 entry (Anderson presidency)'
-  note: 'Charles A. Anderson becomes SRI''s president in 1968. Succeeded by William F. Miller in 1979.'
 
 - id: kp15
   added_date: '2026-05-15'
@@ -1131,7 +1208,6 @@ key_personnel:
   source:
     path: news/sri-com-about-history-1970s-wayback-2004.html
     location: '1979 entry (Miller presidency)'
-  note: '1979: William F. Miller becomes SRI''s president. Succeeded Charles A. Anderson, who became SRI''s president in 1968.'
 
 - id: kp16
   added_date: '2026-05-15'
@@ -1142,7 +1218,6 @@ key_personnel:
   source:
     path: news/sri-com-about-history-1960s-wayback-2004.html
     location: '1968 entry (Engelbart demo)'
-  note: 'Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco in 1968.'
 
 - id: kp17
   added_date: '2026-05-15'
@@ -1153,7 +1228,7 @@ key_personnel:
   source:
     path: news/sri-com-board-of-directors-20260515.html
     location: 'Board of Directors section, Steven Walker entry'
-  note: 'Steven Walker joined the SRI Board of Directors per the Our People page listing date January 18, 2024. The page names Walker as "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director". A separate Walker start date for the SRI board role is not stated on the page.'
+  note: 'The period_start follows the Our People page listing date; a separate start date for the board director role is not stated on the page.'
 
 org_relationships:
 

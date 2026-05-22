@@ -45,30 +45,30 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2022 | government/sec-ttsa-1a-partii-20170710.html | President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA) since 1985. Per the fiscal year 2021 Form 1-K filed April 30 2022, Puthoff had recently left his position on the Company's board of directors to serve on the Advisory Board — dated to early 2022 by this language. |
-| [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html | Retired from the Central Intelligence Agency's Directorate of Operations after 25 years as an operations officer; member of the Senior Intelligence Service. |
-| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html | Former Lockheed Martin Skunk Works Program Director for Advanced Systems. The February 2021 strategic reorganization (per fiscal year 2021 Form 1-K) reduced the science and tech initiatives and retired the science and technology division of which Justice's Aerospace Division was part; Justice is not listed on the current Directors table as of the April 2022 fiscal year 2021 1-K filing. |
-| [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 – 2022 | government/sec-ttsa-1a-partii-20170710.html | Founder of the company and principal investor; President of TTS subsidiary since 2015. Title changed during the 2020 and 2021 corporate restructuring — by the fiscal year 2021 Form 1-K filed April 2022 the role changed from "Founder, President, and interim CEO" (2017 1-A) to "Founder, Chairman of the Board and Interim Chief Executive Officer"; the President title moved to Kari DeLonge of the TTSM subsidiary. |
-| [`/people/j-christopher-mizer`] | Director | 2019-05-14 | government/sec-ttsa-1k-partii-20220502.html | Appointed to indefinite term of office on May 14, 2019 per the fiscal year 2021 1-K. Director as of the fiscal year 2024 1-K (April 2025) filing. Affiliated with Vivaris Capital. |
-| [`/people/stan-spry`] | Director | 2021-06-14 | government/sec-ttsa-1k-partii-20220502.html | Appointed to indefinite term of office on June 14, 2021 per the fiscal year 2021 1-K. Director as of the fiscal year 2024 1-K (April 2025) filing. Founded Cartel Pictures (terminated December 2024) and renamed it Evoke Entertainment LLC; the fiscal year 2021 1-K documents TTSA's March 24, 2021 co-production agreement with Cartel Pictures. |
-| [`/people/tom-delonge`] | Founder, Chairman of the Board, and interim Chief Executive Officer | 2022 | government/sec-ttsa-1k-partii-20220502.html | Title change confirmed by the fiscal year 2021 Form 1-K (April 2022); role subsequently confirmed in the fiscal year 2024 Form 1-K (April 2025). "Interim" has appeared in the CEO title across all eight years of the Company's operation. |
+| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2022 | government/sec-ttsa-1a-partii-20170710.html |  |
+| [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
+| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |  |
+| [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 – 2022 | government/sec-ttsa-1a-partii-20170710.html | The 1-A names DeLonge the company's principal investor and key man. |
+| [`/people/j-christopher-mizer`] | Director | 2019-05-14 | government/sec-ttsa-1k-partii-20220502.html |  |
+| [`/people/stan-spry`] | Director | 2021-06-14 | government/sec-ttsa-1k-partii-20220502.html |  |
+| [`/people/tom-delonge`] | Founder, Chairman of the Board, and interim Chief Executive Officer | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
 
 #### Staff
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2022 | government/sec-ttsa-1a-partii-20170710.html | Chief Marketing and Product Officer for company's subsidiary TTS; sister of Tom DeLonge; has served in this position since the company's inception in 2011. By the fiscal year 2021 Form 1-K filed April 30 2022 she is listed as Chief Content Officer of the parent company and President of TTSM, showing that the prior Chief Marketing and Product Officer role at TTS ended no later than early 2022. |
-| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 – 2021 | news/tothestarsacademy-home-20180108.html | Career intelligence officer whose experience includes working with the U.S. Army, the Department of Defense, the National Counterintelligence Executive, and the Director of National Intelligence; ran a sensitive aerospace threat identification program focusing on unidentified aerial technologies. The fiscal year 2021 Form 1-K (April 2022) described Elizondo as "former company employee" — confirming departure by early 2022. A more specific date (reportedly December 20, 2020 Coast to Coast AM announcement) is not in the sources this artifact has cited. |
-| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2022 | government/sec-ttsa-1k-partii-20220502.html | Current role — Chief Content Officer at the parent Company plus President of the TTSM subsidiary (To The Stars Media Inc.). Role confirmed in both the fiscal year 2021 1-K (April 2022) and fiscal year 2024 1-K (April 2025) filings; the 2022 start reflects the earliest source that states the new title in this artifact. |
+| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2022 | government/sec-ttsa-1a-partii-20170710.html | Kari DeLonge is the sister of Tom DeLonge. |
+| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 – 2021 | news/tothestarsacademy-home-20180108.html | The cited filings record no specific departure date, describing Elizondo only as a former company employee. |
+| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
 
 #### Advisors
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html | Former Deputy Assistant Secretary of Defense for Intelligence; former Staff Director of Senate Select Committee on Intelligence. The fiscal year 2021 Form 1-K (April 2022) described Mellon as "former chairman of the scientific advisory board" — role changed from "National Security Affairs Advisor" in the 2018 TTSA website to chairman of the scientific advisory board by the time of his departure. Not listed on the current Advisory Board as of the April 2022 1-K filing. |
+| [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |  |
 | [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
 | [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
-| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html | Puthoff moved from the Board of Directors to the Advisory Board by early 2022; confirmed in the fiscal year 2021 Form 1-K filed April 30 2022. EarthTech International and Institute for Advanced Studies at Austin positions continue since 1985. |
+| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
 
 ---
 
@@ -146,6 +146,30 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
+### 2017 1-A — Kari DeLonge as Chief Marketing and Product Officer of the TTS subsidiary, a role held since the company's inception in 2011.
+
+> Kari DeLonge is the Chief Marketing and Product Officer for company's subsidiary TTS.  She has served in this position since the company's inception in 2011.
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
+| Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
+| Location | p. 32, 'Directors, Executive Officers and Significant Employees' — Kari DeLonge bio |
+
+---
+
+### 2017 1-A — To The Stars, Inc. became TTSA's wholly-owned subsidiary on June 1, 2017 via Contribution Agreement, in exchange for 55,000,000 shares of Class A Common Stock.
+
+> On June 1, 2017, TTS AAS entered into a Contribution Agreement with Gravity Holdings, LLC in which Gravity Holdings, LLC contributed all of its shares of To The Stars, Inc. to TTS AAS in exchange for 55,000,000 shares of TTS AAS Class A Common Stock.
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
+| Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
+| Location | p. 28, Contribution Agreement passage |
+
+---
+
 ### NYT's framing of Bigelow Aerospace as the Pentagon program's contractor — context for TTSA's positioning as a successor commercial vehicle for former-program personnel.
 
 > Most of the money went to an aerospace research company run by a billionaire entrepreneur and longtime friend of Mr. Reid's, Robert Bigelow, who is currently working with NASA to produce expandable craft for humans to use in space.
@@ -167,6 +191,42 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 | Attributed to | TTSA homepage snapshot, January 8, 2018 (carries December 16, 2017 press release on Elizondo joining), 2017-12-16 |
 | Source | [archived source](../sources/news/tothestarsacademy-home-20180108.html) |
 | Location | TTSA homepage news section, Dec 16 2017 press release |
+
+---
+
+### TTSA's own bio of Elizondo as Director of Global Security & Special Programs — prior service across the U.S. Army, DoD, National Counterintelligence Executive, and DNI, and the "sensitive aerospace threat identification program focusing on unidentified aerial technologies" he ran for nearly a decade.
+
+> Luis Elizondo is a career intelligence officer whose experience includes working with the U.S. Army, the Department of Defense, the National Counterintelligence Executive, and the Director of National Intelligence. As a former Special Agent In-Charge, Luis conducted and supervised highly sensitive espionage and terrorism investigations around the world. As an intelligence Case Officer, he ran clandestine source operations throughout Latin America and the Middle East. Most recently, Luis managed the security for certain sensitive portfolios for the US Government as the Director for the National Programs Special Management Staff. For nearly the last decade, Luis also ran a sensitive aerospace threat identification program focusing on unidentified aerial technologies.
+
+| Field | Value |
+|---|---|
+| Attributed to | TTSA homepage snapshot, January 8, 2018 (Team section), 2017-12-16 |
+| Source | [archived source](../sources/news/tothestarsacademy-home-20180108.html) |
+| Location | TTSA 2018 homepage Team section, Luis Elizondo bio |
+
+---
+
+### TTSA's bio of Aerospace Division Director Steve Justice — recently retired Program Director for Advanced Systems at Lockheed Martin Advanced Development Programs (Skunk Works) after 31 years.
+
+> After 31 years, Stephen is the recently retired Program Director for Advanced Systems from Lockheed Martin Advanced Development Programs – better known as the “Skunk Works”.
+
+| Field | Value |
+|---|---|
+| Attributed to | TTSA homepage snapshot, January 8, 2018 (Team section), 2017-12-16 |
+| Source | [archived source](../sources/news/tothestarsacademy-home-20180108.html) |
+| Location | TTSA 2018 homepage Team section, Steve Justice bio |
+
+---
+
+### TTSA's bio of National Security Affairs Advisor Chris Mellon — Deputy Assistant Secretary of Defense for Intelligence under Clinton and Bush, and Minority Staff Director of the Senate Select Committee on Intelligence.
+
+> He served 20 years in the federal government, including as the Deputy Assistant Secretary of Defense for Intelligence in the Clinton and Bush Administrations. In addition, he’s worked many years on Capitol Hill including as the Minority Staff Director of the Senate Select Committee on Intelligence.
+
+| Field | Value |
+|---|---|
+| Attributed to | TTSA homepage snapshot, January 8, 2018 (Team section), 2017-12-16 |
+| Source | [archived source](../sources/news/tothestarsacademy-home-20180108.html) |
+| Location | TTSA 2018 homepage Team section, Chris Mellon bio |
 
 ---
 
@@ -252,6 +312,18 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
 | Location | CRADA 19-15, CRADA Administrators (Government) section |
+
+---
+
+### CRADA 19-15 — the contracting agency's mailing address, U.S. Army CCDC Ground Vehicle Systems Center, Warren, Michigan. OCR artifact preserved verbatim ('Ml' for 'MI').
+
+> CCDC Ground Vehicle Systems Center 6501 E. 11 Mile Road, MS 221 Warren, Ml 48397-5000
+
+| Field | Value |
+|---|---|
+| Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
+| Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
+| Location | CRADA 19-15, CRADA Administrators (Government) section, mailing address block |
 
 ---
 
@@ -408,6 +480,42 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
 | Location | SEC 1-K FY2021, Exchange Listing Advisory Agreement reversion clause |
+
+---
+
+### TTSA FY2021 1-K — DeLonge's title shifted from "Founder, President, and interim CEO" (2017 1-A) to Founder, Chairman of the Board and interim CEO by April 2022.
+
+> Thomas DeLonge is the founder, Chairman of the Board and interim CEO of the Company.
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Location | SEC 1-K FY2021, Directors, Executive Officers and Significant Employees — Thomas DeLonge bio |
+
+---
+
+### TTSA FY2021 1-K — director J. Christopher Mizer is a co-founder of Vivaris Capital; the directors table records his appointment to indefinite term of office on May 14, 2019.
+
+> J. Christopher Mizer, who sits on the Company's board of directors, is a co-founder of Vivaris.
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Location | SEC 1-K FY2021, Note — Vivaris Capital Payment Agreement |
+
+---
+
+### TTSA FY2021 1-K — Stan Spry, founder and CEO of Cartel Entertainment and Cartel Pictures, appointed a Director on June 14, 2021.
+
+> On June 14, 2021, the Company appointed Stan Spry, the founder and CEO of Cartel Entertainment and Cartel Pictures, as a Director of the Company.
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Location | SEC 1-K FY2021, Item 1 Business — Spry appointment |
 
 ---
 
@@ -603,6 +711,18 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
+### TTSA FY2024 1-K — Gravity Holdings LLC holds 8,655,835 shares (52.16% of Class A Common Stock outstanding), the company's majority shareholder.
+
+> Class A Common Stock Gravity Holdings LLC (3) 8,655,835 shares(4) N/A 52.16 %
+
+| Field | Value |
+|---|---|
+| Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Location | SEC 1-K FY2024, Security Ownership of Management and Certain Securityholders table |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -652,13 +772,13 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 | Organization | Relationship | Source | Note |
 |---|---|---|---|
-| [`/organizations/to-the-stars-inc`] | subsidiary | government/sec-ttsa-1a-partii-20170710.html | To The Stars, Inc. became TTSA's wholly-owned subsidiary on June 1, 2017 via Contribution Agreement in exchange for 55,000,000 shares of Class A Common Stock. |
-| [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf | Contracting agency on CRADA 19-15 (Novel & Emerging Technology Exploitation), effective 2019-10-01; located at 6501 E. 11 Mile Road, Warren MI 48397-5000. |
-| [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf | Office of the Secretary of Defense named in CRADA 19-15 as an Other Participant with the contractual role of sharing historical reports on origin of TTSA's materiel solutions. |
-| [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf | AARO acquired the TTSA specimen from a private UAP investigating organization and the U.S. Army per AARO HRR Vol I; AARO subsequently contracted ORNL in 2022 for independent characterization. |
+| [`/organizations/to-the-stars-inc`] | subsidiary | government/sec-ttsa-1a-partii-20170710.html | Wholly-owned subsidiary acquired via the June 1, 2017 Contribution Agreement (q52). |
+| [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf | Contracting agency on CRADA 19-15, Warren MI (address at q53). |
+| [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf | Named in CRADA 19-15 as an Other Participant that can share historical reports on the origin of TTSA's materiel (q14). |
+| [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf | Acquired the specimen from a private UAP investigating organization and the U.S. Army (q15), then contracted ORNL in 2022 for independent characterization (q19). |
 | [`/organizations/earthtech-international`] | other | government/sec-ttsa-1a-partii-20170710.html | Shared-principal relationship through co-founder Harold E. Puthoff, who has been President and CEO of EarthTech International, Inc. since 1985 while serving as TTSA VP Science and Technology. Not an arms-length partnership — Puthoff founded and runs both entities. |
-| [`/organizations/gravity-holdings-llc`] | other | government/sec-ttsa-1k-partii-20250417.html | Majority shareholder — Gravity Holdings LLC (whose sole member is the DeLonge Family Trust) holds 52.16% of Class A Common Stock outstanding per the fiscal year 2024 Form 1-K filed April 17 2025. The June 1 2021 Binding Term Sheet Amendment issued 784,970 shares at $1.20 per share to DeLonge to be held by Gravity Holdings LLC, consolidating the ownership concentration. |
-| [`/organizations/love-movie-llc`] | subsidiary | government/sec-ttsa-1k-partii-20220502.html | Former wholly-owned subsidiary, sold to Tom DeLonge on December 24 2020 under the Binding Term Sheet for $525,000 ($125,000 cash plus $400,000 forgiveness of unpaid Minimum Royalty Guarantees under the AvA Licensing Agreement). The sale also terminated the AvA Licensing Agreement. |
+| [`/organizations/gravity-holdings-llc`] | other | government/sec-ttsa-1k-partii-20250417.html | Majority shareholder at 52.16% of Class A Common Stock (q54); the June 1, 2021 Binding Term Sheet Amendment routed DeLonge's 784,970 shares to Gravity Holdings (q41), concentrating ownership. |
+| [`/organizations/love-movie-llc`] | subsidiary | government/sec-ttsa-1k-partii-20220502.html | Former wholly-owned subsidiary, sold to DeLonge under the December 24, 2020 Binding Term Sheet, which also terminated the AvA Licensing Agreement (q40). |
 
 ---
 

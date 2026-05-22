@@ -37,28 +37,28 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html | Charles A. Anderson becomes SRI's president in 1968. Succeeded by William F. Miller in 1979. |
-| [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html | 1979: William F. Miller becomes SRI's president. Succeeded Charles A. Anderson, who became SRI's president in 1968. |
-| [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html | Ellen Ochoa is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2023 with the listing "Board Member Start 2/1/23" — the source listing for Ochoa's board start date. Ochoa is listed as Board Member in the section for fiscal year ending Dec. 2024. |
-| [`/people/steven-walker`] | Board Member (page listing 2024-01-18); Vice President and Chief Technology Officer Lockheed Martin (retired) and former DARPA director | 2024-01-18 | news/sri-com-board-of-directors-20260515.html | Steven Walker joined the SRI Board of Directors per the Our People page listing date January 18, 2024. The page names Walker as "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director". A separate Walker start date for the SRI board role is not stated on the page. |
+| [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |  |
+| [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html |  |
+| [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html | Ochoa is also listed as a Board Member in the ProPublica section for the fiscal year ending Dec. 2024. |
+| [`/people/steven-walker`] | Board Member (page listing 2024-01-18); Vice President and Chief Technology Officer Lockheed Martin (retired) and former DARPA director | 2024-01-18 | news/sri-com-board-of-directors-20260515.html | The period_start follows the Our People page listing date; a separate start date for the board director role is not stated on the page. |
 | [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html | David Parekh is named Chief Executive Officer, SRI on the Our People page with a listing date of December 2, 2021 (in both the Executive Team and Board of Directors sections). A specific Parekh start date for the CEO role is not stated on either sri.com page. |
 | [`/people/david-motley`] | Board Chair |  | news/propublica-sri-international-941160950-20260515.html | David Motley is named Board Chair in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 ($110,000 listed compensation). The same source lists Motley as Board Member in the sections for fiscal years ending Dec. 2023 and earlier, with $67,500 and lower listed compensation — the role transition to Board Chair occurred between the Dec. 2023 and Dec. 2024 reporting periods; the specific transition date is not stated on the ProPublica page. |
-| [`/people/ellen-pawlikowski`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | Ellen Pawlikowski is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source's sections for fiscal years ending Dec. 2023 and Dec. 2022 — the ProPublica page renders SRI International's IRS Form 990 filings. The specific Pawlikowski board start date is not stated on the ProPublica page. |
-| [`/people/john-j-young-jr`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | John J. Young Jr. is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source's sections for fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021 — the ProPublica page renders SRI International's IRS Form 990 filings. The specific Young board start date is not stated on the ProPublica page. |
+| [`/people/ellen-pawlikowski`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | Pawlikowski is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023 and Dec. 2022. The specific board start date is not stated on the ProPublica page. |
+| [`/people/john-j-young-jr`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | Young is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. The specific board start date is not stated on the ProPublica page. |
 
 #### Other Named Personnel
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/people/douglas-engelbart`] | Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference | 1968 | news/sri-com-about-history-1960s-wayback-2004.html | Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco in 1968. |
+| [`/people/douglas-engelbart`] | Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |  |
 | [`/people/hal-puthoff`] | Cofounder of the SRI investigation of psychic abilities (with Russell Targ); program head per DIA STAR GATE Project Overview | 1972 – 1990 | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the cofounder period recorded in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years"; the SRI program was discontinued in 1990. The period_start/period_end fields follow the broader cofounder period per Targ's ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics. |
-| [`/people/ingo-swann`] | Foundational SRI remote-viewing subject (1972); New York artist and psychic | 1972 | news/irva-targ-russell-wayback-20250123.html | Per Targ IRVA 2002 talk abstract: "in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory" at SRI. |
+| [`/people/ingo-swann`] | Foundational SRI remote-viewing subject (1972); New York artist and psychic | 1972 | news/irva-targ-russell-wayback-20250123.html |  |
 | [`/people/russell-targ`] | Cofounder of the SRI investigation of psychic abilities (with Harold E. Puthoff) | 1972-04 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Targ had recently joined the Stanford Research Institute (SRI) as of the April 1972 meeting with CIA personnel from the Office of Scientific Intelligence. Targ is cofounder of the Stanford Research Institute investigation of psychic abilities in the 1970s and 1980s. |
 | [`/people/pat-price`] | Foundational SRI remote-viewing subject (1973); retired police commissioner | 1973 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, Pat Price was the third sensitive subject at SRI; per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner" who "showed us how to do this with great reliability and accuracy". |
-| [`/people/hella-hammid`] | SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer | 1974 – 1984 | news/irva-targ-russell-wayback-20250123.html | Per Targ IRVA 2009 Hella Hammid tribute talk abstract, Hammid was a LIFE magazine photographer brought into the SRI remote-viewing program in 1974 as a "control" subject our sponsors from the CIA wanted to supplement Pat Price and Ingo Swann. In her ten years with the program, she became our most reliable viewer. |
+| [`/people/hella-hammid`] | SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer | 1974 – 1984 | news/irva-targ-russell-wayback-20250123.html |  |
 | [`/people/edwin-may`] | Researcher in the SRI program (mid-1970s onward); led 1988 internal SRI analysis of 1973-1988 experiments | 1975 – 1990 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time. period_start '1975' is a single year within the mid 1970s the source says; a specific year is not stated. |
-| [`/people/suresh-sunderrajan`] | Chief Financial Officer (previously President, Commercialization) | 2024-01-19 | news/propublica-sri-international-941160950-20260515.html | Suresh Sunderrajan is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 with the listing "Chief Financial Officer From 1/19/24" — the source listing for Sunderrajan's CFO start date. The same source lists Sunderrajan in the section for fiscal year ending Dec. 2023 as "President, Commercialization" — the prior role recorded before the transition to CFO. |
-| [`/people/john-mcintire`] | Chief Legal Officer |  | news/propublica-sri-international-941160950-20260515.html | John P. McIntire is named Chief Legal Officer in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source's sections for fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years — the ProPublica page renders SRI International's IRS Form 990 filings. The ProPublica page renders the name as "John Mcintire" in the section for fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — minor middle initial variation across IRS Form 990 filings. The specific McIntire role start date is not stated on the ProPublica page. |
+| [`/people/suresh-sunderrajan`] | Chief Financial Officer (previously President, Commercialization) | 2024-01-19 | news/propublica-sri-international-941160950-20260515.html | ProPublica lists Sunderrajan as "President, Commercialization" in the section for the fiscal year ending Dec. 2023 — the prior role recorded before the transition to Chief Financial Officer. |
+| [`/people/john-mcintire`] | Chief Legal Officer |  | news/propublica-sri-international-941160950-20260515.html | McIntire is also listed as Chief Legal Officer in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years. The ProPublica page renders the name as "John Mcintire" for the fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — a minor variation in the name form across the IRS Form 990 filings. The specific role start date is not stated on the ProPublica page. |
 
 ---
 
@@ -85,6 +85,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | Attributed to | SRI International's 2004-era 'History of SRI International, 1960s' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004, 1968 |
 | Source | [archived source](../sources/news/sri-com-about-history-1960s-wayback-2004.html) |
 | Location | 1968 entry (Engelbart) |
+
+---
+
+### SRI's own first-party attestation of Charles A. Anderson's 1968 elevation to the SRI presidency, from the 2004-era SRI history page. Anchors key_personnel kp14 and timeline tl1b. Succeeded by William F. Miller in 1979 (q40). Specific within-1968 date not attested.
+
+> 1968: Charles A. Anderson becomes SRI's president.
+
+| Field | Value |
+|---|---|
+| Attributed to | 1968 |
+| Source | [archived source](../sources/news/sri-com-about-history-1960s-wayback-2004.html) |
+| Location | 1968 entry (Anderson presidency) |
 
 ---
 
@@ -232,6 +244,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
+### SRI's own first-party attestation of William F. Miller's 1979 elevation to the SRI presidency, succeeding Charles A. Anderson (q39), from the 2004-era SRI history page. Anchors key_personnel kp15 and timeline tl9b. Specific within-1979 date not attested.
+
+> 1979: William F. Miller becomes SRI's president.
+
+| Field | Value |
+|---|---|
+| Attributed to | 1979 |
+| Source | [archived source](../sources/news/sri-com-about-history-1970s-wayback-2004.html) |
+| Location | 1979 entry (Miller presidency) |
+
+---
+
 ### DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI. Source-form artifact: the hyphenated form "SRI-International" appears here (DIA's own document) where the canonical form is "SRI International" — preserved as-source; see naming_quirks nq8.
 
 > In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
@@ -340,6 +364,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
+### IRS-sourced (via ProPublica) attestation of Ellen Ochoa's SRI board membership with a February 1, 2023 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors key_personnel kp9.
+
+> Ellen Ochoa (Board Member Start 2/1/23)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-02-01 |
+| Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
+| Location | Compensation, Key Employees and Officers, FY2023 |
+
+---
+
 ### SRI's own first-party attestation that Steven Walker joined SRI's board (page listing date January 18, 2024). The Walker addition is institutionally significant for the UAP-research corpus — Walker's page bio names "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director", both load-bearing entities (Targ's Lockheed retirement; DARPA's ARPANET / AAWSAP / IPMO contract chains).
 
 > January 18, 2024 Steven Walker
@@ -349,6 +385,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | Attributed to | SRI International 'Our People' page (sri.com/board-of-directors/), retrieved 2026-05-15 — current Board of Directors listing, 2024-01-18 |
 | Source | [archived source](../sources/news/sri-com-board-of-directors-20260515.html) |
 | Location | Board of Directors section, Steven Walker entry |
+
+---
+
+### IRS-sourced (via ProPublica) attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors key_personnel kp13.
+
+> Suresh Sunderrajan (Chief Financial Officer From 1/19/24)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-01-19 |
+| Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
+| Location | Compensation, Key Employees and Officers, FY2024 |
 
 ---
 
@@ -385,6 +433,42 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | Attributed to | ProPublica Nonprofit Explorer extracted financial data for SRI International FY2024 (per Form 990 filed November 12, 2025), 2025-11-12 |
 | Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
 | Location | Fiscal Year Ending Dec. 2024, Assets/Debt |
+
+---
+
+### IRS-sourced (via ProPublica) attestation of Ellen Pawlikowski as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp10; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.
+
+> Ellen Pawlikowski (Board Member)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-11-12 |
+| Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
+| Location | Compensation, Key Employees and Officers, FY2024 |
+
+---
+
+### IRS-sourced (via ProPublica) attestation of John J. Young Jr. as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp11; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.
+
+> John J Young Jr (Board Member)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-11-12 |
+| Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
+| Location | Compensation, Key Employees and Officers, FY2024 |
+
+---
+
+### IRS-sourced (via ProPublica) attestation of John P. McIntire as SRI Chief Legal Officer, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors key_personnel kp12. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.
+
+> John Mcintire (Chief Legal Officer)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-11-12 |
+| Source | [archived source](../sources/news/propublica-sri-international-941160950-20260515.html) |
+| Location | Compensation, Key Employees and Officers, FY2024 |
 
 ---
 
@@ -529,6 +613,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | Attributed to | Sol Foundation 'People' page for Jacques Vallée ([`/people/jacques-vallee`]) — thesolfoundation.org/people/jacques-vallee-3/, retrieved 2026-05-17. Page-attributed Sol role: Emeritus Advisor. |
 | Source | [archived source](../sources/government/solfoundation-vallee-people-page-20260517.html) |
 | Location | ¶2 |
+
+---
+
+### Targ first-person attestation of Hella Hammid's pre-SRI profession — a distinguished LIFE magazine photographer — establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure is attested in q18. Complements q18 (the CIA-requested control-subject role) with the photographer descriptor that q18 does not carry.
+
+> Hella Hammid was a brilliant and cultivated woman, and a distinguished photographer for LIFE magazine and many other US and international publications.
+
+| Field | Value |
+|---|---|
+| Attributed to | Russell Targ, IRVA 2009 talk abstract "A Tribute to Hella Hammid: The First Woman Remote Viewer, Part 2" (archived on the IRVA speaker biography page) |
+| Source | [archived source](../sources/news/irva-targ-russell-wayback-20250123.html) |
+| Location | Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract |
 
 ---
 

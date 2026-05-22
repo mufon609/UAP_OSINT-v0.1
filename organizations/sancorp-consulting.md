@@ -47,6 +47,42 @@ _No personnel attested in primary sources to date._
 
 ## Key Passages
 
+### USAspending HQ003419C0159 description field — Strengthening Insider Threat Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,127,203.20, date_signed 2019-09-20, solicitation HQ003419R0183.
+
+> STRENGTHENING INSIDER THREAT SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2019-09-20 |
+| Source | [archived source](../sources/government/usaspending-hq003419c0159.txt) |
+| Location | "description" field, CONT_AWD_HQ003419C0159_9700_-NONE-_-NONE- |
+
+---
+
+### USAspending HQ003420C0066 description field — Artificial Intelligence Engineering & Computer Support Services (source elides the space around "&"). Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,880,863.65, date_signed 2020-03-31, solicitation HQ003420R0138.
+
+> ARTIFICIAL INTELLIGENCE ENGINEERING&COMPUTER SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2020-03-31 |
+| Source | [archived source](../sources/government/usaspending-hq003420c0066.txt) |
+| Location | "description" field, CONT_AWD_HQ003420C0066_9700_-NONE-_-NONE- |
+
+---
+
+### USAspending HQ003420C0167 description field — Analytic Studies Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $1,504,844.80, date_signed 2020-09-25, solicitation HQ003420R0377.
+
+> ANALYTIC STUDIES SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2020-09-25 |
+| Source | [archived source](../sources/government/usaspending-hq003420c0167.txt) |
+| Location | "description" field, CONT_AWD_HQ003420C0167_9700_-NONE-_-NONE- |
+
+---
+
 ### Sancorp Company News, March 2021 entry — INSA membership announcement and Insider Threat Subcommittee participation.
 
 > March 2021 - SANCORP Joins the Intelligence and National Security Alliance (INSA). INSA is a nonpartisan, nonprofit trade association for driving public-private partnerships to advance intelligence and national security priorities with more than 150 industry corporate partners and hundreds of individuals. Team SANCORP is participating in various groups including the Insider Threat Subcommittee.
@@ -128,6 +164,18 @@ _No personnel attested in primary sources to date._
 | Attributed to | 2022-06 |
 | Source | [archived source](../sources/news/sancorp-careers-20260430.html) |
 | Location | Company News page, June 2022 entry |
+
+---
+
+### USAspending HQ003422C0064 description field — IPMO Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,026,577.70, date_signed 2022-06-09, solicitation HQ003422R0164.
+
+> IPMO SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-06-09 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0064.txt) |
+| Location | "description" field, CONT_AWD_HQ003422C0064_9700_-NONE-_-NONE- |
 
 ---
 
@@ -291,6 +339,30 @@ _No personnel attested in primary sources to date._
 
 ---
 
+### USAspending HQ003422C0094 description field — AARO Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,061,786.51, date_signed 2022-09-01, solicitation HQ003422R0192.
+
+> AARO SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0094.txt) |
+| Location | "description" field, CONT_AWD_HQ003422C0094_9700_-NONE-_-NONE- |
+
+---
+
+### USAspending HQ003422C0094 awarding_agency object — toptier Department of Defense (code 097), subtier Washington Headquarters Services (code 97F5, abbreviation WHS). Documentary basis for OUSD(I&S) as primary contracting counterparty via the WHS subtier (or1) and for WHS as the issuing subtier agency (or4). The same WHS subtier issues the AARO, IPMO, CIT, and Counterintelligence Analytical prime contracts.
+
+> "toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0094.txt) |
+| Location | "awarding_agency" object — toptier_agency / subtier_agency, CONT_AWD_HQ003422C0094_9700_-NONE-_-NONE- |
+
+---
+
 ### FOIA 23-F-1114 cover letter, signed by Stephanie L. Carr, Chief, FOID, on September 11, 2023 — documents WHS Acquisition Directorate as the records-holder, identifies 125 responsive pages, and cites the (b)(5) deliberative-process exemption for 11 entirely-withheld pages.
 
 > The Washington Headquarters Services, Acquisition Directorate, a component of the Office of the Secretary of Defense, conducted a search of their records systems and located 125 pages determined to be responsive to your request. Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives, in her capacity as an Initial Denial Authority (IDA), has also determined that the responsive records contain information exempt from public release, including 11 pages withheld in their entirety pursuant to 5 U.S.C. § 552 (b)(5), inter- and intra- agency memoranda which are deliberative in nature
@@ -300,6 +372,42 @@ _No personnel attested in primary sources to date._
 | Attributed to | 2023-09-11 |
 | Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
 | Location | p. 1, ¶3 (cover letter dated September 11, 2023) |
+
+---
+
+### USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (AI Talent 2.0 BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).
+
+> THE PURPOSE OF THIS ACTION IS FULFILL CDAO'S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLIC AFFAIRS SUPPORT. THIS TASK ORDER PROVIDES TECHNICAL WRITER AND GRAPHIC DESIGNER SUPPORT FOR THE CDAO.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-09-25 |
+| Source | [archived source](../sources/government/usaspending-w519tc23f0545.txt) |
+| Location | "description" field, CONT_AWD_W519TC23F0545_9700_W519TC23G0042_9700 |
+
+---
+
+### USAspending HQ003424F0411 description field — "LABOR" (the only scope text the record carries). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $11,214,090.66, date_signed 2024-07-23, solicitation HQ003424Q0020. Per Sancorp Past Performance the customers are OASD Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction (or10 basis).
+
+> LABOR
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-07-23 |
+| Source | [archived source](../sources/government/usaspending-hq003424f0411.txt) |
+| Location | "description" field, CONT_AWD_HQ003424F0411_9700_47QRAA22D00C4_4732 |
+
+---
+
+### USAspending HQ003424C0096 description field — Exec. Admin, Ops, Policy & PPBE Sppt Svc (AARO follow-on). Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,471,829.40, date_signed 2024-08-23, solicitation HQ003424R0324.
+
+> EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-08-23 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096.txt) |
+| Location | "description" field, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- |
 
 ---
 
@@ -315,6 +423,18 @@ _No personnel attested in primary sources to date._
 
 ---
 
+### USAspending HQ003424A0023 description field — Technical, Administrative and Professional Support Services to OUSD(I&S) Enterprise. Type BPA (IDV vehicle, $0 obligation; obligation flows through call orders), awarding subtier Washington Headquarters Services, date_signed 2024-09-18.
+
+> TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD)(I&S) ENTERPRISE
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-18 |
+| Source | [archived source](../sources/government/usaspending-hq003424a0023.txt) |
+| Location | "description" field, CONT_IDV_HQ003424A0023_9700 |
+
+---
+
 ### OSD OP-5 FY 2026 budget — IPMO program description: OUSD(I&S) center of gravity for influence activities; activities include thematic influence guidance, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO’s activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
@@ -324,6 +444,18 @@ _No personnel attested in primary sources to date._
 | Attributed to | 2025 |
 | Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
 | Location | OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, IPMO program description |
+
+---
+
+### USAspending HQ003425A0001 description field — Technical, Analytical, Administrative, and Professional Program Support Services. Type BPA (IDV vehicle, $0 obligation), awarding subtier Washington Headquarters Services, date_signed 2025-02-14. Parent IDV for task order HQ003425FE388; customer-org basis for the OASD(S&T) relationship (or9).
+
+> TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-02-14 |
+| Source | [archived source](../sources/government/usaspending-hq003425a0001.txt) |
+| Location | "description" field, CONT_IDV_HQ003425A0001_9700 |
 
 ---
 
@@ -425,6 +557,54 @@ _No personnel attested in primary sources to date._
 
 ---
 
+### USAspending HQ003425FE388 description field — Policy, Operations, Analytic and Business Operations (POABO) Support Services to Counterintelligence, Law Enforcement and Security (CLS). Type BPA CALL, awarding subtier Washington Headquarters Services, parent IDV HQ003425A0001, total_obligation $3,746,273.44, date_signed 2025-09-11, solicitation HQ003425QE111. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Intelligence and Security (see q32).
+
+> THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE POLICY, OPERATIONS, ANALYTIC AND BUSINESS OPERATIONS (POABO) SUPPORT SERVICES TO THE COUNTERINTELLIGENCE, LAW ENFORCEMENT AND SECURITY (CLS).
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-11 |
+| Source | [archived source](../sources/government/usaspending-hq003425fe388.txt) |
+| Location | "description" field, CONT_AWD_HQ003425FE388_9700_HQ003425A0001_9700 |
+
+---
+
+### USAspending HQ003425FE405 description field — Office Management and Executive Support Services (OMESS) to the Office of the Under Secretary of Defense for Policy (OUSD(P)). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $8,410,282.72, date_signed 2025-09-30. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy (see q26).
+
+> THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE OFFICE MANAGEMENT AND EXECUTIVE SUPPORT SERVICES (OMESS) TO THE OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR POLICY (OUSD(P)).
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-30 |
+| Source | [archived source](../sources/government/usaspending-hq003425fe405.txt) |
+| Location | "description" field, CONT_AWD_HQ003425FE405_9700_47QRAA22D00C4_4732 |
+
+---
+
+### USAspending HQ085926FG471 description field — Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order. Type DELIVERY ORDER, awarding subtier Missile Defense Agency, parent IDV HQ085926DG304, total_obligation $500.00, date_signed 2025-12-19, solicitation HQ085925RE001.
+
+> SCALABLE HOMELAND INNOVATIVE ENTERPRISE LAYERED DEFENSE (SHIELD) INITIAL ORDER.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-12-19 |
+| Source | [archived source](../sources/government/usaspending-hq085926fg471.txt) |
+| Location | "description" field, CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700 |
+
+---
+
+### USAspending HQ085926FG471 awarding_agency object — toptier Department of Defense (code 097), subtier Missile Defense Agency (code 97JC, abbreviation MDA). Documentary basis for MDA as the awarding subtier / customer of the SHIELD initial order (or7).
+
+> "toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Missile Defense Agency","code":"97JC","abbreviation":"MDA"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-12-19 |
+| Source | [archived source](../sources/government/usaspending-hq085926fg471.txt) |
+| Location | "awarding_agency" object — toptier_agency / subtier_agency, CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700 |
+
+---
+
 ### Sancorp Past Performance — HQ003425FE405 contract listing identifies the customer as Office of the Under Secretary of War for Policy.
 
 > Office of the Under Secretary of War for Policy, Office Management & Executive Support Services (Prime Contract) HQ003425FE405
@@ -494,22 +674,22 @@ _No personnel attested in primary sources to date._
 | Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source | Note |
 |---|---|---|---|---|---|---|---|
 | HQ003418C0123 | Washington Headquarters Services | 2018-09-27 – 2020-09-27 | $2,399,395 | [`/organizations/ousd-is`] | CI Metrics Study Support | government/usaspending-hq003418c0123.txt | Sancorp's first OUSD(I&S) prime contract on USAspending. Predecessor to the INSA Insider Threat Subcommittee participation Sancorp announced in March 2021 and to the IPMO Support Services contract awarded in 2022. |
-| HQ003419C0159 | Washington Headquarters Services | 2019-09-20 – 2022-07-18 | $4,127,203.20 | [`/organizations/ousd-is`] | Strengthening Insider Threat Support Services | government/usaspending-hq003419c0159.txt | OUSD(I&S) Counter-Insider Threat Program Office support, signed in 2019. INSA's September 2022 Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states 'Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S).' |
-| HQ003420C0066 | Washington Headquarters Services | 2020-03-31 – 2021-03-31 | $3,880,864 | [`/organizations/ousd-is`] | Artificial Intelligence Engineering and Computer Support Services | government/usaspending-hq003420c0066.txt | Sancorp Past Performance lists Joint Artificial Intelligence Center BOA and BPA awards. This contract is the OUSD(I&S) AI Engineering and Computer Support award. |
+| HQ003419C0159 | Washington Headquarters Services | 2019-09-20 – 2022-07-18 | $4,127,203.20 | [`/organizations/ousd-is`] | Strengthening Insider Threat Support Services | government/usaspending-hq003419c0159.txt | OUSD(I&S) Counter-Insider Threat Program Office support. INSA's September 2022 Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security. |
+| HQ003420C0066 | Washington Headquarters Services | 2020-03-31 – 2021-03-31 | $3,880,864 | [`/organizations/ousd-is`] | Artificial Intelligence Engineering and Computer Support Services | government/usaspending-hq003420c0066.txt | OUSD(I&S) award. Sancorp Past Performance separately lists Joint Artificial Intelligence Center BOA and BPA awards. |
 | HQ003420C0167 | Washington Headquarters Services | 2020-09-25 – 2021-11-27 | $1,504,844.80 | [`/organizations/ousd-is`] | Counterintelligence Analytic Studies Support Services | government/usaspending-hq003420c0167.txt | OUSD(I&S) Counterintelligence Analytical Support per Sancorp Past Performance. |
-| HQ003422C0064 | Washington Headquarters Services | 2022-06-09 – 2023-06-09 | $3,026,577.70 | [`/organizations/ipmo`] | IPMO Support Services | government/usaspending-hq003422c0064.txt | Sancorp Company News states that 'SANCORP was awarded a contract to provide professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO) at the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)).' Awarded three months after the IPMO was established per the Notre Dame memo ([`/documents/ipmo-notre-dame-memo-2022`]) signed by James A. Holly ([`/people/james-holly`]), Acting Director. |
-| HQ003422C0094 | Washington Headquarters Services | 2022-08-22 – 2024-08-31 | $4,061,786.51 | [`/organizations/aaro`] | AARO Support Services | government/usaspending-hq003422c0094.txt | Period of performance start date August 22, 2022; date signed September 1, 2022 per the FOIA 23-F-0905 SF 33 award notification email. AARO Performance Work Statement released via FOIA case 23-F-1114 to The Black Vault: 125 pages determined to be responsive, 11 pages withheld in their entirety per (b)(5), and portions of the remaining 114 pages exempt from release under (b)(4) and (b)(6). Eight task areas covering Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. Sancorp also won the IPMO Support Services contract HQ003422C0064 awarded three months earlier — both contracts placed inside two related OUSD(I&S) offices. |
+| HQ003422C0064 | Washington Headquarters Services | 2022-06-09 – 2023-06-09 | $3,026,577.70 | [`/organizations/ipmo`] | IPMO Support Services | government/usaspending-hq003422c0064.txt | Awarded three months after the IPMO was established per the Notre Dame memo ([`/documents/ipmo-notre-dame-memo-2022`]) signed by James A. Holly ([`/people/james-holly`]), Acting Director. |
+| HQ003422C0094 | Washington Headquarters Services | 2022-08-22 – 2024-08-31 | $4,061,786.51 | [`/organizations/aaro`] | AARO Support Services | government/usaspending-hq003422c0094.txt | Period of performance start date August 22, 2022; date signed September 1, 2022 per the FOIA 23-F-0905 SF 33 award notification email. AARO Performance Work Statement released via FOIA case 23-F-1114 to The Black Vault: 125 pages determined to be responsive, 11 pages withheld in their entirety per (b)(5), and portions of the remaining 114 pages exempt from release under (b)(4) and (b)(6). Sancorp also won the IPMO Support Services contract HQ003422C0064 awarded three months earlier — both contracts placed inside two related OUSD(I&S) offices. |
 | HQ003423C0061 | Washington Headquarters Services | 2023-05-25 – 2024-06-09 | $3,021,082 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services | government/usaspending-hq003423c0061.txt | IPMO continuation contract following expiration of HQ003422C0064. Sancorp's Past Performance lists this contract's solicitation number HQ003422R0164 rather than the awarded contract number. |
 | W519TC23F0545 | Department of the Army | 2023-09-25 – 2025-09-27 | $1,592,695 | [`/organizations/cdao`] | CDAO Algorithmic Warfare and Public Affairs | government/usaspending-w519tc23f0545.txt | Chief Digital and Artificial Intelligence Office task order under the AI Talent 2.0 Basic Ordering Agreement. |
 | HQ003424C0046 | Washington Headquarters Services | 2024-05-31 – 2026-05-27 | $5,751,921 | [`/organizations/ipmo`] | Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services | government/usaspending-hq003424c0046.txt | IPMO continuation contract — third in the chain (HQ003422C0064 → HQ003423C0061 → this). |
 | HQ003424F0411 | Washington Headquarters Services | 2024-07-23 – 2026-12-31 | $11,214,091 | [`/organizations/oasd-hdha`] | OASD HD&HA / OASD Nuclear and Countering WMD support (description: LABOR) | government/usaspending-hq003424f0411.txt | Per Sancorp Past Performance the customers are Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction. |
-| HQ003424C0096 | Washington Headquarters Services | 2024-08-23 – 2026-01-31 | $3,471,829.40 | [`/organizations/aaro`] | AARO follow-on — Exec. Admin, Ops, Policy and PPBE Support Services | government/usaspending-hq003424c0096.txt | AARO follow-on contract continuing the scope of HQ003422C0094. Description language uses the AARO PWS task area words (Executive Administrative, Operations, Policy, PPBE). |
+| HQ003424C0096 | Washington Headquarters Services | 2024-08-23 – 2026-01-31 | $3,471,829.40 | [`/organizations/aaro`] | AARO follow-on — Exec. Admin, Ops, Policy and PPBE Support Services | government/usaspending-hq003424c0096.txt | AARO follow-on contract continuing the scope of HQ003422C0094. |
 | HQ003424A0023 | Washington Headquarters Services | 2024-09-18 – 2029-09-18 | $0 (IDIQ vehicle) | [`/organizations/ousd-is`] | Technical, Administrative and Professional Support Services to OUSD (parent IDIQ) | government/usaspending-hq003424a0023.txt | Indefinite-delivery vehicle for Office of the Under Secretary of War for Intelligence and Security work; obligation is through call orders. |
 | HQ003425A0001 | Washington Headquarters Services | 2025-02-14 – 2030-02-14 | $0 (IDIQ vehicle) | [`/organizations/oasd-st`] | Technical, Analytical, Administrative, and Professional Program Support Services (parent IDIQ) | government/usaspending-hq003425a0001.txt | Office of the Assistant Secretary of Defense for Science and Technology IDIQ. HQ003425FE388 is a task order issued under this parent. |
-| W912CL25CA005 | Department of the Army (on behalf of USSOUTHCOM) | 2025-06-30 – 2026-03-15 | $271,848 | [`/organizations/ussouthcom`] | USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning) | government/usaspending-w912cl25ca005.txt | USAspending description of the contract scope: 'USSOUTHCOM SHALL PROVIDE SERVICES TO SPECIAL TECHNICAL OPERATIONS (STO) INCLUDING SUPPORT TO SPECIAL ACCESS PROGRAMS (SAP), ALTERNATIVE AND COMPENSATORY CONTROL MEASURES, MILITARY DECEPTION (MILDEC) AND INTELLIGENCE PLANNING AND ACTIVITIES.' Awarded by Department of the Army on behalf of USSOUTHCOM. 8(A) Sole Source with 1 offer received — same procurement method as the AARO contract HQ003422C0094. |
-| HQ003425FE388 | Washington Headquarters Services | 2025-09-11 – 2026-09-13 | $3,746,273.44 | [`/organizations/ousd-is`] | CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support | government/usaspending-hq003425fe388.txt | Sancorp Past Performance lists this contract's customer as Office of the Under Secretary of War for Intelligence and Security. USAspending description identifies the customer as Counterintelligence, Law Enforcement and Security (CL&S). |
+| W912CL25CA005 | Department of the Army (on behalf of USSOUTHCOM) | 2025-06-30 – 2026-03-15 | $271,848 | [`/organizations/ussouthcom`] | USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning) | government/usaspending-w912cl25ca005.txt | Awarded by Department of the Army on behalf of USSOUTHCOM. 8(A) Sole Source with 1 offer received — same procurement method as the AARO contract HQ003422C0094. |
+| HQ003425FE388 | Washington Headquarters Services | 2025-09-11 – 2026-09-13 | $3,746,273.44 | [`/organizations/ousd-is`] | CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support | government/usaspending-hq003425fe388.txt | Sancorp Past Performance lists this contract's customer as Office of the Under Secretary of War for Intelligence and Security; the USAspending description names the customer as Counterintelligence, Law Enforcement and Security (CLS). |
 | HQ003425FE405 | Washington Headquarters Services | 2025-09-30 – 2030-06-15 | $8,410,283 | [`/organizations/ousd-is`] | Office of the Under Secretary of Defense for Policy (OUSD(P)) — Office Management and Executive Support Services (OMESS) | government/usaspending-hq003425fe405.txt | Customer is the Office of the Under Secretary of War for Policy per Sancorp Past Performance. |
-| HQ085926FG471 | Missile Defense Agency | 2025-12-19 – 2035-12-28 | $500 | [`/organizations/mda`] | Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order | government/usaspending-hq085926fg471.txt | MDA SHIELD initial task order. Sancorp Featured News January 2026 reports the SHIELD IDIQ award. |
+| HQ085926FG471 | Missile Defense Agency | 2025-12-19 – 2035-12-28 | $500 | [`/organizations/mda`] | Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order | government/usaspending-hq085926fg471.txt | Sancorp Featured News January 2026 reports the SHIELD IDIQ award. |
 
 ---
 
@@ -557,19 +737,19 @@ _No personnel attested in primary sources to date._
 
 | Organization | Relationship | Source | Note |
 |---|---|---|---|
-| [`/organizations/ousd-is`] | contracting-agency | government/usaspending-hq003422c0094.txt | Primary contracting counterparty across the AARO, IPMO, CIT, and Counterintelligence Analytical contracts. Renamed OUSW(I&S) under EO 14347 (September 5, 2025). |
-| [`/organizations/aaro`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Sancorp services AARO under contracts HQ003422C0094 (initial) and HQ003424C0096 (follow-on). The PWS Section 5.4 task area for Congressional Affairs, Public Affairs, and FOIA Support places Sancorp inside AARO's public-communications and information-disclosure surface. |
-| [`/organizations/ipmo`] | contracting-agency | news/sancorp-careers-20260430.html | Sancorp services IPMO under a continuation chain — HQ003422C0064 (2022), HQ003423C0061 (2023), HQ003424C0046 (2024). The IPMO is the OUSD(I&S) center of gravity for "deliberate conceal and selective reveal of strategic defense capabilities" per the FY26 OSD OP-5 budget. |
-| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0094.txt | Subtier contracting agency — issues most of Sancorp's OUSD(I&S) prime contracts on behalf of the office. |
-| [`/organizations/insa`] | partner | news/sancorp-careers-20260430.html | Trade-association membership since March 2021; Insider Threat Subcommittee participation. INSA's September 2022 Naming Convention paper credits OUSD(I&S) as developer of counter-insider-threat doctrine — Sancorp's 2018 OUSD(I&S) CI Metrics contract and 2019 Counter-Insider Threat contract align operationally with that doctrinal framework. |
-| [`/organizations/ussouthcom`] | contracting-agency | government/usaspending-w912cl25ca005.txt | Customer of W912CL25CA005 Support to Special Technical Operations contract — explicit MILDEC scope per primary source. |
-| [`/organizations/mda`] | contracting-agency | government/usaspending-hq085926fg471.txt | Customer of MDA SHIELD initial order HQ085926FG471 (December 2025). |
-| [`/organizations/cdao`] | contracting-agency | government/usaspending-w519tc23f0545.txt | Customer of W519TC23F0545 Algorithmic Warfare and Public Affairs task order under AI Talent 2.0 BOA. |
-| [`/organizations/oasd-st`] | contracting-agency | government/usaspending-hq003425a0001.txt | Customer of HQ003425A0001 parent IDIQ for Technical, Analytical, Administrative, and Professional Program Support Services. |
-| [`/organizations/oasd-hdha`] | contracting-agency | government/usaspending-hq003424f0411.txt | Customer of HQ003424F0411 task order — also services OASD Nuclear and Countering Weapons of Mass Destruction per Sancorp Past Performance. |
-| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Competitor — won OUSD(I&S) Executive Directorate (EXDIR) Call Order 1 under RFQ HQ003424R0178 over Sancorp. |
-| [`/organizations/arlo-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Competitor — won OUSD(I&S) Sensitive Activities and Special Programs (SASP) Directorate Call Order 2 under RFQ HQ003424R0178 over Sancorp. |
-| [`/organizations/gsa`] | contracting-agency | news/sancorp-update-202508-wayback-20251208.html | GSA-issued contract vehicles include Multiple Award Schedule (July 2022), 8(A) STARS III (47QTCB22D0104, 2022), and OASIS+ 8(a) (47QRCA25DA398, August 2025). |
+| [`/organizations/ousd-is`] | contracting-agency | government/usaspending-hq003422c0094.txt | Primary contracting counterparty across the AARO, IPMO, CIT, and Counterintelligence Analytical contracts, reached via the Washington Headquarters Services subtier (q50). Renamed OUSW(I&S) under EO 14347 (September 5, 2025). |
+| [`/organizations/aaro`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Sancorp services AARO under contracts HQ003422C0094 (initial) and HQ003424C0096 (follow-on). The PWS Section 5.4 Congressional Affairs, Public Affairs, and FOIA Support task area (q4) places Sancorp inside AARO's public-communications and information-disclosure surface. |
+| [`/organizations/ipmo`] | contracting-agency | news/sancorp-careers-20260430.html | Sancorp services IPMO under a continuation chain — HQ003422C0064 (2022), HQ003423C0061 (2023), HQ003424C0046 (2024); the IPMO award is attested in Sancorp Company News (q11). The IPMO is the OUSD(I&S) center of gravity for deliberate conceal and selective reveal of strategic defense capabilities per the FY26 OSD OP-5 budget (q15). |
+| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0094.txt | Subtier contracting agency (q50) — issues most of Sancorp's OUSD(I&S) prime contracts on behalf of the office. |
+| [`/organizations/insa`] | partner | news/sancorp-careers-20260430.html | Trade-association membership since March 2021; Insider Threat Subcommittee participation (q9). INSA's September 2022 Naming Convention paper credits OUSD(I&S) as developer of counter-insider-threat doctrine (q8) — Sancorp's 2018 OUSD(I&S) CI Metrics contract and 2019 Counter-Insider Threat contract align operationally with that doctrinal framework. |
+| [`/organizations/ussouthcom`] | contracting-agency | government/usaspending-w912cl25ca005.txt | Customer of W912CL25CA005 Support to Special Technical Operations contract — explicit MILDEC scope per the USAspending description (q13). |
+| [`/organizations/mda`] | contracting-agency | government/usaspending-hq085926fg471.txt | Customer of MDA SHIELD initial order HQ085926FG471 (December 2025); MDA is the awarding subtier per the USAspending record (q51). |
+| [`/organizations/cdao`] | contracting-agency | government/usaspending-w519tc23f0545.txt | Customer of W519TC23F0545 Algorithmic Warfare and Public Affairs task order under AI Talent 2.0 BOA; CDAO scope per the USAspending description (q42). |
+| [`/organizations/oasd-st`] | contracting-agency | government/usaspending-hq003425a0001.txt | Customer of the HQ003425A0001 parent IDIQ for Technical, Analytical, Administrative, and Professional Program Support Services (q46). |
+| [`/organizations/oasd-hdha`] | contracting-agency | government/usaspending-hq003424f0411.txt | Customer of the HQ003424F0411 task order (q43, USAspending description "LABOR") — also services OASD Nuclear and Countering Weapons of Mass Destruction per Sancorp Past Performance. |
+| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Competitor — won OUSD(I&S) Executive Directorate (EXDIR) Call Order 1 under RFQ HQ003424R0178 over Sancorp (q23, q24). |
+| [`/organizations/arlo-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Competitor — won OUSD(I&S) Sensitive Activities and Special Programs (SASP) Directorate Call Order 2 under RFQ HQ003424R0178 over Sancorp (q23, q24). |
+| [`/organizations/gsa`] | contracting-agency | news/sancorp-update-202508-wayback-20251208.html | GSA-issued contract vehicles include Multiple Award Schedule (July 2022), 8(A) STARS III (47QTCB22D0104, 2022), and OASIS+ 8(a) (47QRCA25DA398, August 2025; award announced in Sancorp Featured News, q12). |
 
 ---
 
