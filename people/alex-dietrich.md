@@ -44,15 +44,15 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 | Organization | Role | Period | Source | Note |
 |---|---|---|---|---|
-| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html | Service-period dates (2001-2020) per her self-authored Debrief op-ed byline; the flight-hour, carrier-landing, and combat-award totals attested in that same byline are quoted verbatim at q42. |
+| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |  |
 | [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
-| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html | Dietrich self-attests squadron-join in July 2004 on the Merged Podcast. The Enigma Labs announcement attests Navy service 2001 until 2014 and names VFA-41 as her squadron during the 2004 Nimitz encounter, but no archived primary source in this pool pins the VFA-41 end date specifically. |
-| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html | Joined CU Boulder College of Engineering faculty in 2022 as an adjunct instructor in the Engineering Leadership Program. |
-| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html | Self-attested as 'first advisor' in unpaid role on the Somewhere in the Skies podcast; Enigma Labs announcement dated 2022-11-14, the 19th anniversary of the Nimitz encounter. |
-| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html | Appointed Scholar in Residence to the Engineering Management Program in 2023 — a separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program. |
-| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html | Earliest known Wayback snapshot showing Dietrich on the safeaerospace.org personnel grid is 2023-06-02; she was originally listed under the heading 'Aircrew Leadership Council' which was later renamed 'Advisors'. |
+| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html | No archived primary source in this pool pins the VFA-41 end date specifically, so the period is left open. |
+| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |  |
+| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |  |
+| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html | A separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program (the two CU Boulder rows are distinct programs, not a continuation). |
+| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |  |
 | [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |  |
-| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html | Post-Navy faculty role at her alma mater; consortium teaching included Georgetown, George Washington, Howard, and Catholic Universities per Syracuse and CU Boulder bios. |
+| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |  |
 | [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |  |
 | [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
 | [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
@@ -531,7 +531,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Fleer | FLIR | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'FLIR' (Forward-Looking Infrared) in Sprague podcast. |
 | ROC | NROTC | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md | YouTube auto-caption transcription error for 'NROTC' (Naval Reserve Officers Training Corps) in Linda Hall panel. |
 | turning water | roiling water / churning water | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage. |
-| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md | YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path. |
+| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md | YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). |
 
 ---
 

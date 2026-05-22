@@ -99,7 +99,6 @@ affiliations:
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
     location: "line 66"
-  note: "Service-period dates (2001-2020) per her self-authored Debrief op-ed byline; the flight-hour, carrier-landing, and combat-award totals attested in that same byline are quoted verbatim at q42."
 - id: a2
   added_date: '2026-04-21'
   organization_path: /organizations/vfa-41
@@ -108,7 +107,7 @@ affiliations:
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
     location: "line 15"
-  note: Dietrich self-attests squadron-join in July 2004 on the Merged Podcast. The Enigma Labs announcement attests Navy service 2001 until 2014 and names VFA-41 as her squadron during the 2004 Nimitz encounter, but no archived primary source in this pool pins the VFA-41 end date specifically.
+  note: No archived primary source in this pool pins the VFA-41 end date specifically, so the period is left open.
 - id: a3
   added_date: '2026-04-21'
   organization_path: /organizations/uss-nimitz
@@ -132,7 +131,6 @@ affiliations:
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
     location: "line 15"
-  note: Post-Navy faculty role at her alma mater; consortium teaching included Georgetown, George Washington, Howard, and Catholic Universities per Syracuse and CU Boulder bios.
 - id: a6
   added_date: '2026-04-21'
   organization_path: /organizations/cu-boulder
@@ -141,7 +139,6 @@ affiliations:
   source:
     path: news/cu-boulder-emp-dietrich-bio.html
     location: "line 1"
-  note: Joined CU Boulder College of Engineering faculty in 2022 as an adjunct instructor in the Engineering Leadership Program.
 - id: a6b
   added_date: '2026-04-23'
   organization_path: /organizations/cu-boulder
@@ -150,7 +147,7 @@ affiliations:
   source:
     path: news/cu-boulder-emp-dietrich-bio.html
     location: "line 1"
-  note: Appointed Scholar in Residence to the Engineering Management Program in 2023 — a separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program.
+  note: A separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program (the two CU Boulder rows are distinct programs, not a continuation).
 - id: a7
   added_date: '2026-04-21'
   organization_path: /organizations/syracuse-university
@@ -166,7 +163,6 @@ affiliations:
   source:
     path: government/safeaerospace-home-20230602.html
     location: "Advisors card grid"
-  note: Earliest known Wayback snapshot showing Dietrich on the safeaerospace.org personnel grid is 2023-06-02; she was originally listed under the heading 'Aircrew Leadership Council' which was later renamed 'Advisors'.
 - id: a9
   added_date: '2026-04-21'
   organization_path: /organizations/enigma-labs
@@ -175,7 +171,6 @@ affiliations:
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
     location: "line 15"
-  note: Self-attested as 'first advisor' in unpaid role on the Somewhere in the Skies podcast; Enigma Labs announcement dated 2022-11-14, the 19th anniversary of the Nimitz encounter.
 - id: a10
   added_date: '2026-04-21'
   organization_path: /organizations/legacy-flight-academy
@@ -1010,7 +1005,7 @@ naming_quirks:
   location: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   source_path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path.
+  note: YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver").
 rumors:
 - id: rm1
   added_date: '2026-04-21'

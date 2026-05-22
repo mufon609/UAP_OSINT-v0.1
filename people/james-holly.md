@@ -46,7 +46,7 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 |---|---|---|---|---|
 | [`/organizations/ipmo`] | First Acting Director; leads a staff to oversee the development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
 | [`/organizations/ousd-is`] | IPMO Acting Director within the Office of the Under Secretary of Defense for Intelligence and Security; identified at the NSI Speaker Series with the affiliation "OUSD (I&S)" | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
-| [`/organizations/jsoc`] | Director of Special Programs for the U.S. Joint Special Operations Command (JSOC) |  | news/nsi-speaker-series-ipmo-holly-20250401.html | Prior role, per the NSI biography. |
+| [`/organizations/jsoc`] | Director of Special Programs for the U.S. Joint Special Operations Command (JSOC) |  | news/nsi-speaker-series-ipmo-holly-20250401.html | Prior role. |
 | [`/organizations/us-army`] | U.S. Army veteran |  | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
 
 ---

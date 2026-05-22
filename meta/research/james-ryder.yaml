@@ -346,7 +346,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [39:00]'
     source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''IBEX'' (Interstellar Boundary Explorer, NASA Small Explorer mission). Ryder spells it out moments later as ''internet boundary explorer'' (auto-caption mishears ''interstellar'' as ''internet''); preserved verbatim in q4. Canonical: IBEX.'
+    note: 'YouTube auto-caption rendering of ''IBEX'' (Interstellar Boundary Explorer, NASA Small Explorer mission). Ryder spells it out moments later as ''internet boundary explorer'' (auto-caption mishears ''interstellar'' as ''internet''). Canonical: IBEX.'
   - id: nq3
     added_date: '2026-05-07'
     observed: 'leprosy'
@@ -354,7 +354,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [1:02:05]'
     source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption mishearing of ''telepathy'' as ''leprosy'' in q7. The surrounding context (''governments have looked into leprosy to use it for the purposes of invading other people in a secret way'') and the broader transcript section (the prior chunk: ''we''ve already talked a little bit about telepathy does telepathy work yes and no doubt about it'') make the canonical form unambiguous.'
+    note: 'YouTube auto-caption mishearing of ''telepathy'' as ''leprosy''. The surrounding context (''governments have looked into leprosy to use it for the purposes of invading other people in a secret way'') and the broader transcript section (the prior chunk: ''we''ve already talked a little bit about telepathy does telepathy work yes and no doubt about it'') make the canonical form unambiguous.'
   - id: nq4
     added_date: '2026-05-07'
     observed: 'put off'
@@ -362,7 +362,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [59:05]; sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [39:24]'
     source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in q6 (2015 talk: ''dr put off'') and q11 (2018 talk: ''dr hal put off as a physicist in austin''). Canonical: Hal Puthoff, Director of Institute for Advanced Studies at Austin (per SAFIRE Project team page).'
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in both Lucis Trust talks — the 2015 ''Soul Is Light'' talk (''dr put off'') and the 2018 ''Garment of God'' talk (''dr hal put off as a physicist in austin''). Canonical: Hal Puthoff, Director of Institute for Advanced Studies at Austin (per SAFIRE Project team page).'
   - id: nq5
     added_date: '2026-05-07'
     observed: 'pothos'
@@ -370,7 +370,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [1:08:10]'
     source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''pothos'' in q8 (2018 talk: ''dr pothos one dr targ''). Different auto-caption variant from nq4 ''put off''. Canonical: Hal Puthoff.'
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''pothos'' in the 2018 ''Garment of God'' talk (''dr pothos one dr targ''). A different auto-caption variant from the ''put off'' rendering elsewhere in the same talks. Canonical: Hal Puthoff.'
   - id: nq6
     added_date: '2026-05-07'
     observed: 'thought of'
@@ -378,7 +378,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [55:36]'
     source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''thought of'' in q9 (2018 talk: ''doctor thought of did i get to say this''). The phrase ''doctor thought of'' is a real English phrase, but in context Ryder is naming Puthoff as a contributor to the ''ESP Wars'' book project. Most subtle auto-caption variant of the three Puthoff renderings on this artifact (nq4, nq5, nq6).'
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''thought of'' in the 2018 ''Garment of God'' talk (''doctor thought of did i get to say this''). The phrase ''doctor thought of'' is a real English phrase, but in context Ryder is naming Puthoff as a contributor to the ''ESP Wars'' book project. The most subtle of the auto-caption Puthoff renderings, alongside ''put off'' and ''pothos''.'
   - id: nq7
     added_date: '2026-05-07'
     observed: 'wall thornhill'
@@ -386,15 +386,7 @@ naming_quirks:
     location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [39:12]'
     source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Wal Thornhill'' as ''wall thornhill'' in the source surrounding q11. Canonical: Wal Thornhill, Electric Universe model proponent referenced in the same passage.'
-  - id: nq8
-    added_date: '2026-05-13'
-    observed: 'put off'
-    canonical: 'Puthoff'
-    location: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
-    source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
-    resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in q11 (2018 Lucis Trust talk: ''dr hal put off as a physicist''). A fourth auto-caption variant of Puthoff on this same source — see also nq4 (''pothos''), nq5 (per james-ryder.yaml nq5), and nq6 (''thought of'').'
+    note: 'YouTube auto-caption rendering of ''Wal Thornhill'' as ''wall thornhill'' in the 2018 ''Garment of God'' talk at [39:12] (''the first one a theory up there is by wall thornhill''). Canonical: Wal Thornhill, Electric Universe model proponent referenced in the same passage.'
 rumors: []
 timeline:
   - id: t1
