@@ -63,10 +63,14 @@
 #     mv scripts/tests/pre-commit.sh scripts/tests/pre-commit     # git looks for `pre-commit`, no extension
 #     chmod +x scripts/tests/pre-commit
 #
-# To skip the hook on a single commit (e.g., WIP) — only when you're
-# certain the commit isn't production-ready:
+# To skip the OPTIONAL git symlink on a single commit (e.g., WIP) — only
+# when you're certain the commit isn't production-ready:
 #
 #     git commit --no-verify
+#
+# --no-verify skips ONLY this git symlink. The Claude Code PreToolUse
+# commit-gate hook (.claude/hooks/block_commit_if_red.sh) re-runs this same
+# chain at the tool boundary and is NOT bypassable by --no-verify.
 #
 # ─── Why this isn't auto-installed ──────────────────────────────────────
 #
@@ -148,8 +152,9 @@ echo
 if [ "$fail_count" -gt 0 ]; then
     echo "FAILED — $fail_count step(s) did not pass. Commit blocked."
     echo
-    echo "Fix the failures and re-run, or use --no-verify to bypass (not"
-    echo "recommended unless you know the specific failure is expected)."
+    echo "Fix the failures and re-run. (git --no-verify skips only the"
+    echo "optional .git/hooks symlink — NOT the Claude Code PreToolUse"
+    echo "commit-gate hook, which re-runs this chain un-bypassably.)"
     exit 1
 fi
 

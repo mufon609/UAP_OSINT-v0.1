@@ -386,9 +386,15 @@ def load_manifest():
 
 
 def save_manifest(entries):
-    """Write entries back to sources/manifest.yaml. Sorts by URL for
-    stable diffs; uses ``allow_unicode=True`` + ``width=9999`` so unicode
-    characters survive and YAML doesn't fold long values into multi-line
+    """Write entries back to sources/manifest.yaml in their current order.
+
+    Does NOT globally re-sort. Re-sorting on every write churned unrelated
+    entries — a one-entry add produced a multi-entry diff whenever the file
+    had drifted from sorted order. ``manifest.py`` ``cmd_add`` instead inserts
+    a new URL at its URL-sorted position (the only operation that adds an
+    entry), so the canonical URL order is maintained with a single-entry diff
+    and existing entries never move. ``allow_unicode=True`` + ``width=9999``
+    keep unicode intact and stop YAML folding long values into multi-line
     blocks.
 
     Atomic write: serialize to a same-directory temp file then
@@ -396,7 +402,6 @@ def save_manifest(entries):
     leaves the previous manifest intact; the rename is atomic on POSIX
     so concurrent readers never see a half-written file.
     """
-    entries.sort(key=lambda e: e.get("url", ""))
     MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
     tmp = MANIFEST_PATH.with_suffix(MANIFEST_PATH.suffix + ".tmp")
     try:

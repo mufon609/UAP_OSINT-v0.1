@@ -30,6 +30,20 @@ mechanical — the separation *is* the enforcement:
 | `builder` | the synthesis / prose-drift surface; edits only the artifact, never the node body; serializes the worker-fragment merge |
 | `auditor` | a fresh-context cold re-read — the independent verifier the producing role can't be |
 
+**Mechanical enforcement vs. role discipline (verified).** Whole-tool
+*absence* from a role's `tools:` binds hard — the Worker genuinely has no
+Write/Bash; the investigators have no WebFetch/WebSearch. But **per-command
+scoping inside `tools:` is advisory** in the current Claude Code environment: a
+role carrying any `Bash(...)` entry effectively gets full Bash, so the
+"no manifest-write" / "no web-via-curl" lines above rest on **role discipline**,
+not a hard gate (empirically, roles asked to cross those lines could). The
+mechanical floor is therefore *not* the per-command `tools:` scoping but: (1)
+committed `settings.json` `permissions.deny` rules, which **do** bind for
+subagents and hot-reload; and (2) the disk-truth gate (verbatim + prose-drift)
+enforced un-bypassably at the commit boundary. Nothing commits red, so a rogue
+web-pull or manifest-write cannot yield a passing quote — the gate re-derives
+truth from disk regardless of which role touched what.
+
 Two former roles **dissolved**: the Orchestrator (a control loop, now the
 `/build` skill) and the Error agent (a `check → phase → role` lookup, now
 `scripts/tools/route_failure.py` driven by `scripts/checks/_phases.py`).
@@ -66,10 +80,18 @@ surfaces + prose-drift), `render` (render-time structure + cross-layer checks).
 ## Fix the data, never the node body — now enforced, not just stated
 
 The node body is regenerated from the artifact; a hand-edit to a node body is
-blocked by a `PreToolUse` hook (`.claude/hooks/block_node_body_edit.sh`). When a
-check fails, `route_failure.py` maps it to the owning role and the fix target is
-always artifact data. Two more hooks back the discipline: a `git commit` runs
-the full pre-commit chain and blocks on any red gate (un-bypassable by
+blocked two ways. The mechanical gate is a committed `settings.json`
+`permissions.deny` rule on the node-type directories — it binds for the main
+thread *and* subagents (the `builder` is the one role holding `Edit`), and the
+renderer is unaffected because it writes the body via Python file I/O, not the
+Edit/Write tool. A `PreToolUse` hook (`.claude/hooks/block_node_body_edit.sh`)
+is the main-thread backstop, carrying the fix-pointing message. (The hook alone
+is insufficient: a `settings.json` `PreToolUse` hook does **not** fire for a
+*subagent's* tool call, so the deny rule is what actually gates the builder.)
+When a check fails, `route_failure.py` maps it to the owning role and the fix
+target is always artifact data. Two more hooks back the discipline — and these
+gate main-thread actions, so the hook mechanism is sufficient: a `git commit`
+runs the full pre-commit chain and blocks on any red gate (un-bypassable by
 `--no-verify`), and scaffolding a second uncommitted new person/organization
 node is blocked (the one-new-synthesis-node-per-session rule).
 
@@ -77,6 +99,5 @@ node is blocked (the one-new-synthesis-node-per-session rule).
 
 Each role returns its stub (schema in
 `.claude/skills/build-protocol/stub-schemas.md`) as its value to the
-orchestrator, and also writes it to `/tmp/handoff-{slug}-{role}.yaml` as an
-audit trail. `/tmp` is never committed — the manifest, artifact, and git remain
-the source of truth.
+orchestrator — the return value *is* the handoff; no file is written for it.
+The manifest, artifact, and git remain the durable source of truth.

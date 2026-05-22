@@ -139,7 +139,13 @@ def cmd_add(args):
             # to the artifact below.
             entry["note"] = args.note
         entry["artifacts"] = []
-        entries.append(entry)
+        # Insert at the URL-sorted position so the write touches only this new
+        # entry. save_manifest no longer globally re-sorts (that churned
+        # unrelated entries on every write); a sorted manifest stays sorted,
+        # and a drifted one still gets a clean single-entry diff.
+        pos = next((i for i, e in enumerate(entries)
+                    if e.get("url", "") > args.url), len(entries))
+        entries.insert(pos, entry)
         created_url_entry = True
     else:
         created_url_entry = False

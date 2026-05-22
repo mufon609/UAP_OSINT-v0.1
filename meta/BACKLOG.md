@@ -255,19 +255,7 @@ not mask real mismatches), or document the split-at-page-boundary
 expectation prominently. Recurs on every page-spanning quote in paginated
 sources.
 
-### C10 — `manifest.py add` reorders unrelated entries (diff churn)
-
-A single `manifest.py add` rewrites the YAML such that unrelated existing
-entries move (observed: a one-entry add produced a 36-insertion /
-27-deletion diff, reordering ~3 unrelated entries hundreds of lines away).
-No data is lost — it is a serialization/round-trip ordering effect — but it
-produces noisy diffs and gratuitous merge-conflict surface, and obscures
-what a given add actually changed in review. Make the add append/insert
-deterministically (stable ordering; touch only the new entry) so the diff
-is one entry. Surfaced twice this session (a boundary-probe add and a
-clean-text-sibling registration).
-
-### C11 — OCR-scan sibling production has no autonomous owner in `/build` (currently detect-and-halt)
+### C10 — OCR-scan sibling production has no autonomous owner in `/build` (currently detect-and-halt)
 
 `/build` step 4b now *recognizes* that an `ocr-scan` / `extraction-lossy`
 source needs a verified `.txt` sibling before the Worker, and the
@@ -287,37 +275,3 @@ must remain non-negotiable. Note: option (a) widens the orchestrator's
 allow-list — a deliberate permission decision for the maintainer, not a
 silent change. Surfaced building the first OCR-scan DIRD (dird-03); affects
 every OCR-scan source (the DIRD corpus is OCR-scan).
-
-### C12 — Subagent per-command tool/Bash scoping is advisory in this environment; only tool-absence + `permissions.deny` bind
-
-Empirically (this session): a subagent's scoped `Bash(<cmd> *)` entries in
-its `tools:` allowlist do NOT restrict it to those commands — `ls`,
-`git status`, `curl`, and a real `manifest.py add` (no `--dry-run`) all ran
-from roles whose `tools:` scoping should have blocked them. What DOES bind:
-(1) whole-tool **absence** from `tools:` (e.g. the Worker has no Write/Bash —
-confirmed unavailable), and (2) `permissions.deny` rules in committed
-`settings.json` (confirmed to block a subagent's Edit on a denied directory,
-and hot-reloads). The node-body-edit boundary was therefore re-secured with a
-`permissions.deny` block (committed `settings.json`) rather than relying on
-per-subagent `Edit`/`tools` scoping or the settings.json PreToolUse hook
-(which does not fire for subagent tool calls). Residual: the
-`external-investigator` "dry-run-only manifest" and `internal-investigator`
-"no curl/web-via-Bash" boundaries cannot be made mechanical per-role
-(`deny` is global; a "dry-run vs real `add`" distinction isn't prefix-
-expressible) — they rest on role discipline + the disk-truth verbatim/prose-
-drift gate at the commit boundary (the non-negotiable floor: nothing commits
-red; a rogue curl / manifest-add cannot yield a passing quote). Decide whether
-to run the pipeline in a stricter permission mode so `tools:` scoping binds,
-or to formalize this deny-rule + disk-truth-gate model as the toolkit's
-documented security posture. Keep any such doc topic-neutral.
-
-### C13 — `pre-commit.sh` footer advertises a `--no-verify` bypass the PreToolUse hook makes ineffective
-
-`scripts/tests/pre-commit.sh`'s failure footer says to "use `--no-verify` to
-bypass (not recommended …)". That is true only of the optional git
-`.git/hooks` symlink; the `block_commit_if_red.sh` PreToolUse(Bash) hook
-runs regardless of `--no-verify` and blocks the commit anyway (verified).
-A contributor following the footer would try `--no-verify`, still be blocked,
-and get no explanation. Reword the footer to note the PreToolUse hook is the
-un-bypassable floor (or distinguish the two mechanisms). Messaging only —
-no gate behavior change.
