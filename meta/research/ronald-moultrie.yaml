@@ -134,7 +134,7 @@ affiliations:
   source:
     path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
     location: page 2/5 Experience section
-  note: Battelle Advisory Board membership attested only by Moultrie's contemporaneous LinkedIn profile (printed June 27 2018, screenshot distributed by Christopher Sharp via X). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members.
+  note: Self-attested verbatim on Moultrie's contemporaneous LinkedIn profile (see quote q14). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members.
 - id: a8
   added_date: '2026-04-29'
   organization_path: /organizations/itc-global-advisors
@@ -892,6 +892,20 @@ quotes:
     location: "¶2"
   significance: UMD School of Public Policy bio — current public listing of post-government board affiliations (Nightwing, LeoLabs, National Cryptologic Foundation) and PIAB/IOB end-of-service date (January 2025)
   context: University of Maryland School of Public Policy faculty profile page (post-government)
+- id: q14
+  claim_group: "Pre-Government Affiliations"
+  added_date: '2026-05-22'
+  observation_type: relayed
+  statement_date: '2018-06-27'
+  text: |
+    Advisory Board Member
+    Battelle
+    Jul 2016 – Apr 2018 · 1 yr 10 mos
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+  significance: Moultrie's own contemporaneous LinkedIn profile self-attests his Battelle Advisory Board membership (Jul 2016 – Apr 2018); this is the sole primary attestation of the role, which is absent from all current public Moultrie biographies
+  context: LinkedIn profile printout dated June 27 2018 (screenshot distributed by Christopher Sharp via X)
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'

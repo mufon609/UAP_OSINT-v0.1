@@ -48,7 +48,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 | [`/organizations/oceanus-security-strategies`] | President & Founder | 2015-11 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
 | [`/organizations/g2k-labs`] | Board Member (also recorded as G2X Labs Inc, Chairman of the Board, in 2018 LinkedIn profile) | 2016 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
 | [`/organizations/the-better-angels-society`] | Board Member | 2016-06 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
-| [`/organizations/battelle-memorial-institute`] | Advisory Board Member | 2016-07 – 2018-04 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg | Battelle Advisory Board membership attested only by Moultrie's contemporaneous LinkedIn profile (printed June 27 2018, screenshot distributed by Christopher Sharp via X). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members. |
+| [`/organizations/battelle-memorial-institute`] | Advisory Board Member | 2016-07 – 2018-04 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg | Self-attested verbatim on Moultrie's contemporaneous LinkedIn profile (see quote q14). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members. |
 | [`/organizations/itc-global-advisors`] | Senior Advisor | 2016-07 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | [`/organizations/riwi-corp`] | Senior Advisor | 2017-01 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | [`/organizations/c5-capital`] | Strategic Partner (March 2017 announcement) — elevated to Chairman, C5 US by December 2017 (per Businesswire IISS Manama Dialogue panel listing) | 2017-01 | news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html | The March 6 2017 mondovisione announcement names Moultrie as "Strategic Partner" of C5 Partners. The December 12 2017 Businesswire press release on the C5 Capital partnership with the International Institute for Strategic Studies lists Moultrie's role as "Chairman, C5 US" on the IISS Manama Dialogue panel — primary attestation of the role escalation within nine months of joining (audit § 5.2). |
@@ -79,6 +79,16 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 ---
 
 ## Statements
+
+### Pre-Government Affiliations
+
+> Advisory Board Member Battelle Jul 2016 – Apr 2018 · 1 yr 10 mos
+
+| Field | Value |
+|---|---|
+| Attributed to | LinkedIn profile printout dated June 27 2018 (screenshot distributed by Christopher Sharp via X), 2018-06-27 |
+| Source | [archived source](../sources/social/sharp-x-moultrie-linkedin-printout-20180627.jpeg) |
+| Location | page 2/5 Experience section |
 
 ### Defense Intelligence Enterprise Posture
 

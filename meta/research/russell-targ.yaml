@@ -364,6 +364,24 @@ quotes:
   statement_date: '1974-10-18'
   significance: 'Targ-co-authored formal conclusion of the 1974 Nature paper — the public-record "a channel exists" framing of the SRI parapsychology investigation that downstream Geller-bio accounts invoke as the Nature endorsement. Complements existing q3 (Nature paper abstract from the news/HTML source) by adding the conclusion from the CIA-mirrored full text now archived as a primary source.'
 
+- id: q25
+  claim_group: "Lockheed Martin Laser Career"
+  added_date: '2026-05-22'
+  text: |
+    Russell Targ,1
+    Michael J. Kavaya,3
+    R. Milton Huffaker,3
+    and Roland L. Bowles2
+
+    1Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+    location: 'p. 1'
+  context: 'Author affiliation byline of Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, ''Coherent lidar airborne windshear sensor: performance evaluation'', Applied Optics 30 (15), 2013–2026 (1991), DOI 10.1364/AO.30.002013'
+  observation_type: relayed
+  statement_date: '1991-05-20'
+  significance: 'Peer-reviewed primary-source author-affiliation byline placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, as of the 1991 Applied Optics paper — the earliest archived primary attestation of Targ at the Palo Alto Lockheed site and the period_start anchor for affiliation a2 and program_involvement p2. Independent of Targ''s espresearch.com self-attestation (q2) and the IRVA bio (q8): an in-paper byline in Targ''s own published voice, corroborating the Lockheed senior-staff-scientist career outcome those biographical sources describe.'
+
 naming_quirks:
 - id: nq1
   added_date: '2026-05-15'
@@ -778,7 +796,7 @@ program_involvement:
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: 'p. 1'
-  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ ''worked for me for years''; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the ''years'' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997).'
+  note: 'period_start 1991 anchors on the 1991 Applied Optics paper byline (q25) placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto — the earliest archived peer-reviewed attestation at the Palo Alto Lockheed site (Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ ''worked for me for years''; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the ''years'' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997).'
 
 - id: p3
   added_date: '2026-05-15'

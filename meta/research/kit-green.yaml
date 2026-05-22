@@ -340,7 +340,7 @@ program_involvement:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶2'
-  note: 'Per IRVA biographical text (q4): "In the mid-’70s he was the first analyst and program manager for Remote Viewing research." Self-attested on Green''s IRVA member-organization page; the "first" characterization is not separately confirmed by Kress 1977 (which attests Green at OSI in 1972-1973 letter-recipient and memorandum-author roles, q1 and q2, but does not characterize him as "first" program manager). Confidence: medium — the role is anchored in archived Kress 1977 primary attestations of his OSI engagement at the program''s inception, but the "first" framing rests on self-attestation alone.'
+  note: 'The "first analyst and program manager for Remote Viewing research" framing is self-attested by Green in his own IRVA member-organization speaker bio (q4). The "first" characterization is not separately confirmed by Kress 1977 (which attests Green at OSI in 1972-1973 letter-recipient and memorandum-author roles, q1 and q2, but does not characterize him as "first" program manager). Confidence: medium — the role is anchored in archived Kress 1977 primary attestations of his OSI engagement at the program''s inception, but the "first" framing rests on self-attestation alone.'
 
 - id: pi3
   added_date: '2026-05-17'
@@ -411,7 +411,7 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: 'IRVA ([`/organizations/irva`]) (q6): "Kit returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002." Current role as Assistant Dean (Asia Pacific) attested by IRVA (q3) and NCBI (q5). The NCBI 2008 bio (q5) attests that "Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC" — a prior Wayne State role that preceded the current Assistant Dean position; the specific date of role transition is not attested in the archived sources. Active affiliation as of the IRVA Wayback snapshot date 2024-12-12.'
+  note: 'Faculty start year 2002 and current Assistant Dean (Asia Pacific) role attested by IRVA in Green''s own speaker bio (q6, q3) and NCBI (q5). The NCBI 2008 bio (q5) attests that "Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC" — a prior Wayne State role that preceded the current Assistant Dean position; the specific date of role transition is not attested in the archived sources. Active affiliation as of the IRVA Wayback snapshot date 2024-12-12.'
 
 - id: a4
   added_date: '2026-05-17'
@@ -422,7 +422,7 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: 'IRVA (q6): "Since 1985 he continuously has also served on over a dozen Federal science boards and positions, including as Chair of the Board on Army Science and Technology, and as a founder of the National Academy of Sciences/ National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER)." Lifetime National Associate election dated January 2012 per IRVA (q6 closing sentence).'
+  note: 'The post-1985 federal-board service, Chair of the Board on Army Science and Technology, and NRC TIGER standing-committee founder role are attested by IRVA in Green''s own speaker bio (q6). Lifetime National Associate election dated January 2012 per IRVA (q6 closing sentence).'
 
 - id: a5
   added_date: '2026-05-17'
@@ -432,7 +432,7 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶1'
-  note: 'IRVA (q3): "He is also Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science, of the Chinese Academy of Sciences." Concurrent with his Wayne State role (a3). Specific period start and end dates are not attested in the archived sources.'
+  note: 'The Chinese Academy of Sciences professorship at the Institute of Biophysics / Laboratory of Brain and Cognitive Science is attested by IRVA in Green''s own speaker bio (q3). Concurrent with his Wayne State role (a3). Specific period start and end dates are not attested in the archived sources.'
 
 - id: a6
   added_date: '2026-05-17'
@@ -442,7 +442,7 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: 'IRVA (q6): "He recently was Chair, of the Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters." The Panel reports to both the USA(ORS) and the ASD(CBN). Specific period start and end dates are not attested in the archived sources; "recently" in q6 dates the role to a window before the IRVA page''s last edit date 2021-07-21 per its schema.org metadata.'
+  note: 'The Independent Science Panel chairship for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters is attested by IRVA in Green''s own speaker bio (q6). The Panel reports to both the USA(ORS) and the ASD(CBN). Specific period start and end dates are not attested in the archived sources; "recently" in q6 dates the role to a window before the IRVA page''s last edit date 2021-07-21 per its schema.org metadata.'
 
 relationships:
 

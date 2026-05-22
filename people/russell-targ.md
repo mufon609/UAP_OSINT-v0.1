@@ -176,6 +176,30 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 
 - International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶1
 
+### Lockheed Martin Laser Career
+
+> Russell Targ,1 Michael J. Kavaya,3 R. Milton Huffaker,3 and Roland L. Bowles2
+>
+> 1Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA
+
+| Field | Value |
+|---|---|
+| Attributed to | Author affiliation byline of Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, 'Coherent lidar airborne windshear sensor: performance evaluation', Applied Optics 30 (15), 2013–2026 (1991), DOI 10.1364/AO.30.002013, 1991-05-20 |
+| Source | [archived source](../sources/news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html) |
+| Location | p. 1 |
+
+> Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-attestation on Russell Targ's ESP Research website (espresearch.com homepage), undated |
+| Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
+| Location | ¶2 |
+
+**Also attested:**
+
+- International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶4
+
 ### CIA-DIA Funding of the SRI Remote-Viewing Program
 
 > In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
@@ -211,20 +235,6 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
 | Location | p. 3-14, ¶1 |
-
-### Lockheed Martin Laser Career
-
-> Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
-
-| Field | Value |
-|---|---|
-| Attributed to | Self-attestation on Russell Targ's ESP Research website (espresearch.com homepage), undated |
-| Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
-| Location | ¶2 |
-
-**Also attested:**
-
-- International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703); [archived source](../sources/news/irva-targ-russell-wayback-20250123.html); ¶4
 
 ### Book Catalogue
 
@@ -301,7 +311,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 | Stanford Research Institute investigation into psychic abilities | Cofounder (per Targ's ESP Research site self-attestation); co-author of the 1974 Nature paper and the 1975 Stanford Research Institute Final Report "Perceptual Augmentation Techniques: Part Two — Research Report" that anchor the program's peer-reviewed and SRI-internal primary-source record | 1972 | primary-source | high | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Targ's own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) — co-authored by Puthoff and Targ — provides a second primary-source attestation of Targ's active SRI program involvement at the "Senior Research Physicist" title; Section A page 2 attests Tasks 1 and 2 (a two-week Ingo Swann field measurement program 14-28 August 1972) and Task 3 (a nine-day Uri Geller ([`/people/uri-geller`]) field measurement program within the 1 December 1972 to 15 January 1973 contract window) as the early-1973-documented sub-programs Targ co-conducted. period_end intentionally absent (mirroring affiliation a1) — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested '1970s and 1980s' decade window does not pin a year-precise departure. The 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on individual tenure; the 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ's individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988). Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern. |
 | CIA-sponsored SRI parapsychology investigation (OTS / ORD) | Co-investigator with Harold E. Puthoff under successive CIA Office of Technical Service ([`/organizations/cia`]) contracts at SRI ([`/organizations/stanford-research-institute`]): August 1972 $874 demonstration contract; 1 October 1972 OTS Contract 8473 ($50,000 expanded effort); 1 February 1974 jointly funded ORD and OTS program. Project Officer (CIA-side) was Kenneth A. Kress ([`/people/kenneth-kress`]) per the 1977 Kress paper. | 1972-08 – 1975 | primary-source | high | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | period_start 1972-08 anchors on the $874 OTS demonstration contract (q11). period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview (q13): "Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA". Targ's broader SRI cofounder role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper. Three additional CIA primary sources archived in the 2026-05-16 archival sweep further attest Targ as author or co-author of the program's working documents: (a) the contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) co-authored by Puthoff and Targ — the working-document side of the August 1972 OTS demonstration contract that became Task 3 with Geller; (b) the Nature 1974 paper [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror RDP96-00787R000100220001-8) co-authored by Puthoff and Targ — the public-record summation of the CIA-funded Geller and Pat Price ([`/people/pat-price`]) experiments; (c) the Aug 1973 SRI Geller report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) — Targ sole-authored cover memo dated August 13, 1973 summarizing the Aug 4-11, 1973 eight-day Geller picture-drawing session with the load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner". The three documents anchor Targ as the principal experimenter recording the program's public-record claims. Targ's 2007 retrospective comment in the Brendan Burton article on urigeller.com — "Uri was at our laboratory at SRI for six weeks in 1973" — exceeds the contemporaneous Targ-authored records by approximately four weeks (~17 days documented in total: 9 days late 1972 per contract progress (q21) + 8 days Aug 1973 per Targ-sole-authored Aug 1973 SRI report (q17-q20) vs 6 weeks recalled in 2007). The recollection-versus-record divergence is documented as the F.SRI finding-node candidate in meta/topic/research-queue.md. |
 | USSR Academy of Sciences remote-viewing demonstrations | Invited presenter — addressed the USSR Academy of Sciences on the SRI remote-viewing research, presenting demonstrations of the technique | 1983 – 1984 | primary-source | high | news/irva-targ-russell-wayback-20250123.html | Per the IRVA speaker bio (q6), Targ accepted invitations to present remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and in 1984. Cold-War-era engagement between U.S. and Soviet psychic-research communities; the IRVA bio does not name specific Soviet counterparts. |
-| Lockheed Martin laser technology research (Lockheed Missiles & Space Company / Advanced Technology Center) | Senior staff scientist (per Targ's ESP Research site self-attestation, the 1991 and 1996 Applied Optics author affiliations, and the IRVA speaker bio): developed airborne laser systems for the detection of windshear and air turbulence | 1991 – 1997 | primary-source | high | news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html | period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 'Having retired in 1997'. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ 'worked for me for years'; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the 'years' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997). |
+| Lockheed Martin laser technology research (Lockheed Missiles & Space Company / Advanced Technology Center) | Senior staff scientist (per Targ's ESP Research site self-attestation, the 1991 and 1996 Applied Optics author affiliations, and the IRVA speaker bio): developed airborne laser systems for the detection of windshear and air turbulence | 1991 – 1997 | primary-source | high | news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html | period_start 1991 anchors on the 1991 Applied Optics paper byline (q25) placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto — the earliest archived peer-reviewed attestation at the Palo Alto Lockheed site (Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 'Having retired in 1997'. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ 'worked for me for years'; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the 'years' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997). |
 
 ---
 
