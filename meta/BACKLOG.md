@@ -51,18 +51,22 @@ Items with ordering or coupling constraints.
 
 ### A1 — Exercise the pipeline paths the first whole run didn't hit
 
-The seven-role pipeline (`prompts/topology.md`) has now been run *whole* on
-one real node build — a user-directed, all-internal institutional-actor
-build: Orchestrator → Internal Investigator → Worker (×N) → Build → Audit,
-with handoff stubs captured and friction tightened in place. Three paths
-were NOT exercised by that run and remain unverified end-to-end:
+The seven-role pipeline (`prompts/topology.md`) has been run *whole* on one
+real node build — a user-directed, all-internal institutional-actor build:
+Internal Investigator → Worker (×N) → Build → Audit, with handoff stubs
+captured and friction tightened in place. The **External Investigator
+(role 2) and Archive (role 3)** roles have since been exercised standalone on
+an existing node — a source-recovery that re-pulled a dead JavaScript-shell
+capture from a Wayback snapshot (External Investigator confirmed the snapshot
+and captured verbatim spans; Archive re-pulled the file and refreshed the
+manifest). Both behaved per contract. Paths still unverified end-to-end:
 
-- the **External Investigator (role 2) + Archive (role 3)** roles — skipped
-  by the all-internal branch (every source was already archived). Needs a
-  build with a genuine external-source gap.
-- the **`caption` and `foia` worker kinds** — only `pdf` + `html` were hit.
-- **Error-Agent routing** — no validator failure needed routing on the clean
-  run.
+- **role 2 + role 3 integrated inside a full `/build`** with a genuine
+  external-source gap — so far they have run standalone, not as the
+  external-gap branch of a fresh orchestration.
+- the **`caption` and `foia` worker kinds** — only `pdf` + `html` have been hit.
+- **error routing** (`route_failure.py`) — no validator failure has needed
+  routing on a clean run.
 
 Drive a build that forces these paths (a target with an external-source
 gap + a caption/FOIA source); confirm each `--phase X` fires exactly the
@@ -75,101 +79,6 @@ surfacing of top-level prose drift proves annoying.
 
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
-
-### A3 — Recover the facts removed when the `.note` field was eliminated
-
-The per-entry `.note` field — an unchecked, reader-facing catch-all that had
-accumulated fact-store paraphrase, opinion, future-work pointers, cross-node
-bookkeeping, and duplicates — was **eliminated repo-wide**: stripped from every
-research artifact (≈640 notes across 50 files), removed from the schema and the
-prose-drift scope, dropped from the renderers, and retired from `conventions.md`.
-The corroboration "what it confirms" content (the one note that was load-bearing,
-not residue) was preserved under a new `confirms` field; `naming_quirks`
-structured mappings and `vouching_chain.attestation` survive. This item tracks
-what removal left to recover, plus the non-note data debt the audit surfaced.
-
-**Load-bearing facts removed from notes — re-investigate and promote to verbatim
-quotes (with `source.location`):**
-- **SRI remote-viewing program lineage** (was narrated in
-  stanford-research-institute or4/or5, carried in no quote): per the 1993 DIA
-  STAR GATE Project Overview — CIA funding discontinued 1975, subsequent funding
-  by DIA; an HQDA/INSCOM small unit established late 1970s, transferred to DIA in
-  1986 as the SUN STREAK Special Access Program; FY1991 Congressional direction
-  established successor research at SAIC, Menlo Park. Plus the 9 November 1973
-  K. Green (CIA OSI/LSD) "Verification of Remote Viewing" Memorandum for the
-  Record (Kress 1977 footnote, ~source line 410). Promote the load-bearing
-  pieces to quotes on SRI.
-- **DoDD 5143.01 authority basis** (was ousd-is or1): "pursuant to the authority
-  vested in the Secretary of Defense (SecDef) by sections 113 and 137 of Title
-  10, United States Code" — verbatim-promotable (DoDD 5143.01, ~l.17-18).
-- **hal-puthoff TTSA / AATIP attestations narrated into relationship/program
-  notes**: the 2017-12-16 NYT TTSA-venture sentence; the TTSA SEC Form 1-A
-  stock-grant sentence (Gravity Holdings, LLC / JimSemI, LLC / Harold Puthoff);
-  the 2018 TTSA ADAM "former Senior Advisor and Subcontractor to … AATIP" line.
-  Promote whichever are load-bearing to quotes; otherwise they stay out.
-- **sancorp facts that survive nowhere else once their restatement-notes are
-  gone**: JAIC DRAID BOA + AI-Eng BPA (c3); the GSA vehicles MAS (July 2022),
-  8(a) STARS III GWAC, OASIS+ #47QRCA25DA398 (or13) as `contracts[]` rows;
-  `number_of_offers_received: 1` (c14) as a column; the MDA SHIELD IDIQ award
-  (q49 / USAspending). Note: c17's citation to a non-existent "Sancorp Featured
-  News January 2026" was deleted, so the SHIELD award needs a real archived
-  source; and the strings stripped as unattested this pass — STARS III
-  "47QTCB22D0104" and the "AI Talent 2.0" BOA label — must be re-verified before
-  any reuse (neither appears in any archived source).
-- **aaro PWS facts** on `blackvault-sancorp-23-f-1114-aaro-pws.pdf` (SF-33
-  issuing-office block + task-area enumeration) are OCR-corrupt with no
-  clean-text sibling — not promotable to quotes until `/prepare-ocr-sibling`
-  produces one.
-
-**Future-work (was narrated inside rendered notes; the node is not its home):**
-- Archive the Puthoff–Targ "The Record" SRI daily log → resolves the
-  five-week-vs-nine-day Geller SRI-engagement discrepancy (uri-geller rumor r1).
-- Archive a primary source for the Uri Geller Museum opening date → graduate
-  uri-geller rumor r4 to a quote and populate affiliations a9 `period_start`
-  (currently secondary-only "2021").
-- Decide where the "known start, unknown end (but not ongoing)" period
-  convention lives (a conventions.md decision) — hal-puthoff a2/p1 (and
-  russell-targ) cited a now-emptied research-queue.md entry for it; the dead
-  citation was stripped.
-
-**Finding to create — AARO → AIC budget rebrand:** FY2024 OSD OP-5 named AARO;
-FY2025 OP-5 was the first to substitute "AIC"; FY2026 retains AIC; no public DoD
-announcement of an AARO renaming, and aaro.mil remains active. This
-multi-budget-year cross-source pattern was narrated in ousd-is entity notes
-or7/or15 (the entity layer must not carry patterns) — route it to a new finding
-citing the OP-5 sources directly.
-
-**Non-note data debt surfaced by the audit (pre-existing; not note-related):**
-- **deprecated `lines N-M` source.location forms** — ~12 artifacts still use the
-  extraction-anchored `lines N-M` form instead of the source-anchored form
-  (`p. N, ¶M` / `[MM:SS]` / section descriptor): mostly older event / transcript
-  / Nimitz-eyewitness nodes (`2004-nimitz-encounter`, the 2023 hearing
-  transcripts, `david-fravor`, `david-grusch`, `sean-kirkpatrick`). Run
-  `normalize-locations.py` + a contributor pass. Also tighten alex-dietrich's
-  imprecise Debrief `line 66` refs (a1/a10/a11 point at a `<script>` tag; content
-  is at lines 96/1275).
-- **ronald-moultrie a29 BlueVoyant mis-dating** — the affiliation row's
-  `period_start`/`period_end` (`2021-06`), role text, and timeline `t25`
-  contradict the cited source (`datePublished` 2020-09-02; `2021-06` traces to
-  `dateModified` + the manifest filename suffix). Re-verify + re-date; may also
-  touch the a-Mitre / a-Pallas rows if they rest on the same source.
-- **ronald-moultrie a11 C5 source re-pull** — the cited
-  `mondovisione-c5-partners-moultrie-nsa-20170306.html` is a JS-shell / cookie-
-  wall capture with no extractable body (backs the "March 2017 Strategic Partner"
-  fact + timeline `t21`). Re-pull a usable capture.
-- **uri-geller sourcing reconciliation** — the `program_involvement`
-  "CIA-sponsored SRI investigation" row references a contract 1471(S)73 progress
-  report and the 1974 Nature paper absent from `primary_sources`; the explicit
-  CIA-funding statement (CIA-RDP96-00791R000100030062-7) lives only in an
-  image-only TIF with no text layer (needs `/prepare-ocr-sibling`). Reconcile the
-  source list and verify the sponsorship basis.
-- **research-queue / lockheed-investigation reference reconciliation** — the
-  `lockheed-martin-uap-materials` investigation's `what_would_resolve` cites
-  research-queue.md "Externally blocked" (FOIA appeal 24-F-0266); give that
-  external-blocked acquisition item a tracking home.
-
-**Blocks:** none.
-**Blocked by:** nothing — execution.
 
 ---
 
@@ -184,6 +93,34 @@ _(none)_
 ## C. Anytime (no dependencies)
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
+
+### C1 — Notation convention for "known start, unknown end (but not ongoing)" periods
+
+Structured `period_*` fields (affiliations, contracts, program-involvement)
+have no agreed way to express a period whose start is attested but whose end
+is known to have occurred yet is undated — distinct from an ongoing role,
+which also renders as an open end. Decide the convention (a sentinel
+`period_end`, a structured flag, or a role-text annotation) and document it in
+`meta/conventions.md`; today contributors fall back to an open end plus a
+free-text caveat, which conflates "ended, date unknown" with "ongoing."
+Surfaced when the dead research-queue entry that hal-puthoff (a2/p1) and
+russell-targ cited for this was stripped. The inverse case (unknown start,
+attested active-by year) currently uses the active-by year as `period_start`
+with a role-text caveat (e.g. ronald-moultrie a30/a31) — fold both into one ruling.
+
+### C2 — No orchestration path for augmenting/maintaining an existing node
+
+`/build` scaffolds a *fresh* node (`research-scaffold.py` writes fresh, cannot
+append), so the orchestrator fits new builds only. The common maintenance case
+— add a recovered quote, re-source a dead citation, correct a data field on an
+*existing* node — has no orchestrator: the role agents (external-investigator →
+archive → worker → builder → auditor) each operate fine on an existing artifact,
+but the contributor must sequence them by hand and judge ad hoc which roles even
+apply (a pure data-correctness fix needs neither worker nor builder; a re-source
+needs archive + worker but no scaffold). Consider a lean `/augment` skill (or a
+`/build --augment` mode) that runs the applicable subset against an existing
+artifact without re-scaffolding, and document the manual sequence in
+`prompts/build.md` / `topology.md` meanwhile.
 
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 

@@ -34,13 +34,22 @@ Two backlogs live here, distinguished by origin:
 
 ## Queue
 
-_Empty._
-
 | Item | Source | Found In | Priority | Status |
 |---|---|---|---|---|
+| Puthoff–Targ "The Record" SRI daily log | SRI-internal daily log (location/archival TBD) — resolves the five-week-vs-eight-day SRI-tenure chronology | [`/people/uri-geller`] rumor r1 | Low | Pending |
+| Uri Geller Museum opening-date primary source | Old Jaffa museum opening date (currently secondary-only "2021") — would graduate rumor r4 and populate affiliation a9 `period_start` | [`/people/uri-geller`] rumor r4 / affiliation a9 | Low | Pending |
+| AARO→AIC budget-rebrand finding (Tier-3 finding-build; deferred — do not build without direction) | FY2024/2025/2026 OSD OP-5 submissions (archived): FY2024 named AARO, FY2025 first substituted "AIC", FY2026 retains it; no public DoD renaming announcement and aaro.mil remains active | note-residue audit (ousd-is entity layer must not carry the multi-year pattern) | Medium | Pending |
 
 ---
 
 ## Priority Build Queue
 
 _Empty._
+
+---
+
+## Externally blocked
+
+Items waiting on an external event the repo can't drive (FOIA resolution, registry access, third-party publication) — the topic-specific home for such items, per `meta/BACKLOG.md`.
+
+- **FOIA 24-F-0266 (BlackVault appeal)** — release of the redacted portion of Christopher Mellon's June 11–13, 2023 Signal-message reply to Sean Kirkpatrick (the visible portions frame Grusch's allegations as "warrant[ing] investigation"). Resolves the open question on [`/investigations/lockheed-martin-uap-materials`]. Status: Blocked — pending BlackVault FOIA appeal resolution.
