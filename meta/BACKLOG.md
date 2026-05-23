@@ -149,17 +149,6 @@ Key Passages + `naming_quirks` instead. This may be intended (description
 check should credit canonical-form `naming_quirks` / `document_intrinsic`
 vocabulary. Same check family as C5; handle with the same care.
 
-### C8 — Phase-I prose-drift and Phase-III description-drift treat adjacent punctuation differently
-
-On `dird-15`, a comma fused inside a closing quote (`apparent "cloaking,"`)
-PASSED the Phase-I prose-drift check (the bare token appears in the source
-elsewhere) but FAILED the Phase-III description-drift check (which
-tokenizes the rendered section and caught the fused punctuation). Two
-checks in the same family with different adjacent-punctuation exposure —
-a contributor can clear one and trip the other on the same text.
-Reconcile their tokenization (shared adjacency handling) so the same text
-passes/fails both consistently. Same check family as C5/C6.
-
 ### C9 — verbatim-quote check doesn't normalize page-footer/header boilerplate
 
 On `dird-15` (q12/q13), a Discussion passage spanning a printed-page

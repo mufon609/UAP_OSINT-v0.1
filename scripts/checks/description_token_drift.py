@@ -128,8 +128,16 @@ def _extract_description_drift_tokens(text):
         tokens.add(word)
 
     # Double-quoted strings — content inside "..." must match verbatim.
+    # Strip leading/trailing whitespace and sentence punctuation: an
+    # American-style comma/period pulled inside a closing quote
+    # (`apparent "cloaking,"`) is presentation, not quoted content.
+    # Keeping it diverged from the prose-drift tokenizer in
+    # lib._common (which excludes adjacent punctuation), so the same
+    # span could clear validate-research.py's prose-drift check yet
+    # trip this one. Edge-only strip leaves internal punctuation of a
+    # multi-word quoted phrase intact.
     for m in re.finditer(r'"([^"]+)"', text):
-        q = m.group(1).strip()
+        q = re.sub(r"^[\s,.;:!?]+|[\s,.;:!?]+$", "", m.group(1))
         if q:
             tokens.add(q)
 
