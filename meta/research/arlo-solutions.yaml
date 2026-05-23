@@ -322,7 +322,6 @@ naming_quirks:
   location: Contract Vehicles & Schedules page — heading above the HQ003425A0004 entry
   source_path: news/arlo-contract-vehicles-20260503.html
   resolution: use-canonical
-  note: 'Arlo''s own Contract Vehicles & Schedules page renders the heading "VA T4NG2" above the HQ003425A0004 contract entry, but the description body and contract number confirm the entry is the OUSD(I&S) Enterprise BPA, not a VA contract. Disposition (investigated 2026-05-03): Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under UEI JSRCFJVJM874 (top 50 awards). The same contract-vehicles HTML carries a `/wp-content/uploads/2024/10/VA-T4NG2-Logo-300x300-2.png` asset URL (line 1090); under WordPress''s `YYYY/MM/` upload-folder convention this places the logo upload in October 2024, indicating prior T4NG2 marketing intent (likely subcontractor-team positioning or aspirational bid material that did not result in a prime award). Most parsimonious explanation for the heading-vs-body mismatch: CMS template-reuse error after the OUSD(I&S) BPA HQ003425A0004 win in February 2025, where Arlo overwrote the body text but did not update the heading or replace the logo.'
   added_date: '2026-05-03'
 - id: nq2
   observed: Intelligent & Security
@@ -330,7 +329,6 @@ naming_quirks:
   location: GAO B-422985 BACKGROUND ¶1 — RFQ basics paragraph
   source_path: government/gao-b-422985-wayback-20250708.html
   resolution: preserve-as-sic-in-quotes
-  note: GAO source contains "Intelligent & Security" where the standard form is "Intelligence & Security" — single-instance source typo, preserved verbatim in q2.
   added_date: '2026-05-03'
 - id: nq3
   observed: OUSW(I&S)
@@ -338,9 +336,6 @@ naming_quirks:
   location: Arlo SASP press release dateline + lede; Arlo recruitment page Influence/Deception/Perception position descriptions
   source_path: news/arlo-press-85m-sasp-20260503.html
   resolution: preserve-as-sic-in-quotes
-  note: Arlo's post-2025 corporate marketing uses the alternative form OUSW(I&S) (Office of the Under Secretary of War for Intelligence and Security) where USAspending and the GAO B-422985 decision use
-    OUSD(I&S). Reflects the post-EO-14347 DoD/DoW dual-naming pattern documented in Sancorp's record. Preserve source form verbatim in quotes from Arlo marketing; canonical OUSD(I&S) form applies in description
-    prose.
   added_date: '2026-05-03'
 - id: nq4
   observed: Department of War
@@ -348,7 +343,6 @@ naming_quirks:
   location: Arlo SASP press release Lonye Ford CEO quote ("DoW leadership"); SASP press release context paragraph ("Department of War (DoW) leaders")
   source_path: news/arlo-press-85m-sasp-20260503.html
   resolution: preserve-as-sic-in-quotes
-  note: Arlo's post-2025 corporate marketing uses Department of War (DoW) where USAspending and the GAO record use Department of Defense (DoD). Same post-EO-14347 dual-naming pattern as nq3.
   added_date: '2026-05-03'
 rumors:
 - id: r1
@@ -358,10 +352,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
-  note: Investigated 2026-05-03. No primary source attests an Arlo-IPMO contract. Arlo's federal contract record (USAspending UEI JSRCFJVJM874, top 50 awards) names OUSD(I&S) sub-directorates SASP, EXDIR,
-    and CL&S as customer offices but does not name IPMO. The Influence/Deception/Perception position descriptions on Arlo's recruitment page list OUSD(I&S) generally as the customer office; the work most
-    likely bills under SASP scope under HQ003425F0104 (which has scope overlap with IPMO mission areas including "designated compartmented programs" management) but that is inference, not primary-source
-    attestation. Graduate to a quote entry if a USAspending or FOIA-released contract record names IPMO as Arlo's customer office.
 - id: r2
   added_date: '2026-05-03'
   claim: Sancorp's resigned SASP staff officer key personnel ("X" in the GAO B-422985 decision) joined Arlo Solutions in February 2025 — i.e., Arlo poached the Sancorp incumbent who would have filled the SASP staff officer SME IV role, materially weakening Sancorp's protest position.
@@ -370,7 +360,6 @@ rumors:
   - GAO B-422985.4 / B-422985.5 decision (June 11, 2025) names Arlo as the intervenor whose request for dismissal cited X's resignation and new employment
   - Arlo's recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV positions — same level/role X had at Sancorp
   - Arlo's Greenhouse job board carries an "OUSW(I&S) SASP Incumbent" category placeholder, suggesting incumbent-staff-transfer mechanics
-  note: 'Investigated 2026-05-03. No primary source establishes an X→Arlo lateral move. Two converging structural signals point to a non-Arlo employer: (1) Arlo''s intervenor brief (per GAO source line 1559) names X''s new employer as "another company" — third-party phrasing; a self-referencing employer would normally be named directly. (2) X''s new role per Arlo''s brief is "Operations Officer/Research Analyst" — title does not match Arlo''s Greenhouse job-board taxonomy of Staff Officer SME I-IV roles tagged by mission area. The "Operations Officer/Research Analyst" hybrid title is more consistent with a specialized analytical firm or government direct-hire position. X is anonymized to a single letter in the GAO source by deliberate agency choice; identification via authenticated LinkedIn scraping was declined on Terms-of-Service / privacy / repository-discipline grounds. The protest narrative stands as documented regardless of X''s identity — the SASP-key-personnel-unavailability mechanic is the load-bearing fact, not X''s subsequent employer. Graduate to a quote entry if a primary source (FOIA-released GAO exhibit, federal-court filing, or named hire announcement) attests the X→Arlo claim.'
 timeline:
 - date: '2014'
   event: Arlo Solutions founded as a small business in Washington, DC by Arlene Wube ([`/people/arlene-wube`]) and Lonye Ford ([`/people/lonye-ford`]).
@@ -576,7 +565,6 @@ org_relationships:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: BACKGROUND section, ¶1 (RFQ basics)
-  note: This single relationship row stands for both instrument types WHS awards to Arlo — the RFQ HQ003424R0178 BPA/call-order chain and the standalone OUSD(I&S) prime contracts since 2019 (both enumerated in the Primary Contracts table).
 - id: or2
   added_date: '2026-05-03'
   organization_path: /organizations/ousd-is
@@ -584,7 +572,6 @@ org_relationships:
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     location: USAspending API record — description field
-  note: The customer relationship is recorded at two levels — the BPA names OUSD(I&S) Enterprise broadly, while individual call orders narrow to specific OUSD(I&S) sub-directorates (e.g. HQ003425F0104 to SASP).
 - id: or3
   added_date: '2026-05-03'
   organization_path: /organizations/dod
@@ -592,7 +579,6 @@ org_relationships:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: BACKGROUND section, ¶1 (RFQ basics — names Department of Defense as solicitor)
-  note: Recorded as the parent department above WHS and OUSD(I&S); Arlo's post-2025 marketing renders this department as Department of War (DoW) rather than the procurement record's Department of Defense — see the Source-Form Note for the dual-naming disposition.
 - id: or4
   added_date: '2026-05-03'
   organization_path: /organizations/sancorp-consulting
@@ -600,7 +586,6 @@ org_relationships:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: Decision opening paragraph + DISCUSSION section
-  note: Recorded as "other" because the relationship is adversarial-competitive (the displaced SASP incumbent / protester whose reevaluation challenge Arlo intervened against), not a teaming or supplier relationship the schema enum names; the protest chronology is carried in the Description and Timeline.
 - id: or5
   added_date: '2026-05-03'
   organization_path: /organizations/premier-enterprise-solutions
@@ -608,7 +593,6 @@ org_relationships:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: Decision opening paragraph + BACKGROUND section
-  note: Recorded as "other" rather than "partner" because the schema's "partner" denotes a joint-venture or teaming partnership; the Arlo–Premier relationship attested in the corpus is co-protester / parallel-call-order-awardee (carried in the Description and Timeline), not any teaming partnership.
 - id: or6
   added_date: '2026-05-03'
   organization_path: /organizations/comprehensive-approach-solutions
@@ -616,7 +600,6 @@ org_relationships:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: BACKGROUND section, ¶4 (initial September 2024 EXDIR awardee)
-  note: Appears in Arlo's record only as the displaced initial September 2024 EXDIR Call Order 1 awardee; whether it remained among the four BPA vendors after the reevaluation is not stated in the public GAO decision (so this is not a "lost-the-recompete" relationship, only a displaced-initial-call-order one).
 - id: or7
   added_date: '2026-05-03'
   organization_path: /organizations/gsa
@@ -624,7 +607,6 @@ org_relationships:
   source:
     path: news/arlo-contract-vehicles-20260503.html
     location: Contract Vehicles & Schedules — GSA MAS / OASIS+ / 8(a) Stars III blocks
-  note: GSA's role here is vehicle-sponsor, not customer — it sponsors the GWAC/MAS schedules Arlo holds (the MAS and 8(a) STARS III vehicles appear in the Primary Contracts table; the four OASIS+ pool vehicles, for which the source attests no period of performance, are carried as a quote), and the OUSD(I&S) RFQ HQ003424R0178 was placed under the GSA Federal Supply Schedule framework rather than awarded by GSA itself.
 contracts:
 - id: c1
   added_date: '2026-05-03'

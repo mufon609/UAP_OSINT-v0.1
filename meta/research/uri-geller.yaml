@@ -79,7 +79,6 @@ affiliations:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: 'p. 1, ¶ title'
-  note: 'The CIA primary docs are load-bearing for the SRI subject status; the Burton article (Targ''s "six weeks in 1973" recollection) is a supporting third-party attestation only. The discrepancy between Targ''s recollection and the contemporaneous CIA record is carried at rumor r1.'
 
 - id: a3
   added_date: '2026-05-16'
@@ -88,7 +87,6 @@ affiliations:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: Self-attestation. The specific CIA documents carrying the "convincing and unambiguous" verdict are not currently archived in this repository.
 
 - id: a4
   added_date: '2026-05-16'
@@ -97,7 +95,6 @@ affiliations:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: Self-attestation. No FBI primary-source corroboration archived in this repository.
 
 - id: a5
   added_date: '2026-05-16'
@@ -138,7 +135,6 @@ affiliations:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶35"
-  note: 'Opening date not attested in the archived sources (biography ¶35 attests only the current operating state); period_start left blank pending a primary source. Secondary-source 2021 opening date carried at rumor r4.'
 
 program_involvement:
 
@@ -153,7 +149,6 @@ program_involvement:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: 'p. 1, ¶ title'
-  note: 'Subject status rests on three archived CIA primary sources naming Geller directly — the Aug 1973 SRI report (timeline t23), the contract 1471(S)73 progress report (timeline t22), and the Nature paper (timeline t24, relationship r21) — which is what carries the primary-source basis and high confidence in the columns above.'
 
 - id: pi2
   added_date: '2026-05-16'
@@ -164,7 +159,6 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  note: 'Self-attestation only — no primary-source corroboration archived.'
 
 - id: pi3
   added_date: '2026-05-16'
@@ -175,7 +169,6 @@ program_involvement:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶10"
-  note: Self-attestation only. The 1987 US News & World Report "Washington Whispers" item that anchors this thread (timeline t12, quote q7) is itself unarchived — known only through Geller's about-uri teaser.
 
 timeline:
 
@@ -413,7 +406,6 @@ relationships:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶2, ¶3"
-  note: 'The lineage is attested only on Geller''s own biography page — no external genealogical record corroborating it is archived in this repository — yet it has been repeated downstream as fact in tertiary sources. See the credibility_notes Freud-flag paragraph.'
 
 - id: r2
   added_date: '2026-05-16'
@@ -438,7 +430,6 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶5, ¶12"
-  note: The Burton article spells the name "Puthof" (single f); the canonical Puthoff is recorded in the Source-Form Notes.
 
 - id: r5
   added_date: '2026-05-16'
@@ -447,7 +438,6 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶5, ¶7, ¶9"
-  note: The Burton article's narrator prose spells the name "Russel" (single l); the canonical Russell Targ is recorded in the Source-Form Notes.
 
 - id: r6
   added_date: '2026-05-16'
@@ -488,7 +478,6 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶15, ¶16, ¶17, ¶ Sources"
-  note: Sarfatti's full verbatim quote on PK / signal-nonlocality + the Brasil 1985 / Amazon-UFO anecdote is in the Burton source extract; not registered as a Statements quote on this Geller artifact because Sarfatti's statements are about himself / about PK physics rather than directly about Uri.
 
 - id: r11
   added_date: '2026-05-16'
@@ -497,7 +486,6 @@ relationships:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶19, ¶20, ¶21, ¶22, ¶ Sources"
-  note: Byrd's verbatim observations of Geller (telepathy, mending broken watches and clocks, sprouting seeds; NITINOL alteration with electron micrograph / density / photographic / microscopic analytical tests) are in the Burton source extract; not registered as a separate Statements quote on this Geller artifact because the speaker is Byrd, not Geller. Byrd's own person artifact (when built) would carry the verbatim observations.
 
 - id: r12
   added_date: '2026-05-16'
@@ -562,7 +550,6 @@ relationships:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶17"
-  note: 'Source-rot: the biography page ¶17 wording "Michael Jackson''s latest albums" predates Michael Jackson''s death in 2009 — Invincible (2001) was his then-most-recent album and became his last. The "latest" wording should not be read as a current-tense claim. See the credibility_notes MJ-rot-flag paragraph.'
 
 - id: r20
   added_date: '2026-05-16'
@@ -587,7 +574,6 @@ relationships:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Mossad-safe-house
-  note: Geller-self-claim primary attestation only. Tablet author Tal Kra-Oz notes Geller's recollections of private conversations are often impossible to confirm.
 
 - id: r23
   added_date: '2026-05-16'
@@ -596,7 +582,6 @@ relationships:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Mossad-safe-house+2
-  note: Geller-self-claim primary attestation only.
 
 - id: r24
   added_date: '2026-05-16'
@@ -605,7 +590,6 @@ relationships:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Mossad-safe-house+2
-  note: Geller-self-claim primary attestation only.
 
 - id: r25
   added_date: '2026-05-16'
@@ -852,7 +836,6 @@ naming_quirks:
   location: "¶5 (Brendan Burton article)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: Brendan Burton typo (single 'f' instead of double); canonical Puthoff is attested across the same article in Burton's intro at ¶11 ("Hal Puthoff says of the SRI experiments") and in the Sources list at the end. One-instance typo, not alias-of-record.
 
 - id: nq2
   added_date: '2026-05-16'
@@ -861,7 +844,6 @@ naming_quirks:
   location: "¶5, ¶6 (Brendan Burton article narrator prose)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: Brendan Burton typo (single 'l' instead of double). The Burton article uses 'Russel' twice in narrator prose (¶5 introducing the SRI visit; ¶6 introducing the Targ-quote interview); the Sources list at the end of the article uses canonical 'Russell Targ'. Recurring two-instance typo within narrator prose; Sources-list canonical-form attestation rules typo (not alias-of-record).
 
 - id: nq3
   added_date: '2026-05-16'
@@ -870,7 +852,6 @@ naming_quirks:
   location: "¶15 (Brendan Burton article — Sarfatti intro)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Brendan Burton typo. Original sentence: "The ability to ‘bend’ metals by ‘mindpower’ is known as ‘psychokenesis’ ( PK)." Canonical "psychokinesis" is attested elsewhere in the same article and across the biography page.'
 
 - id: nq4
   added_date: '2026-05-16'
@@ -879,7 +860,6 @@ naming_quirks:
   location: "¶16 (Brendan Burton article — Sarfatti intro)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Brendan Burton typo dropped the "n". Original sentence: "Sarfatti has some intriguing insight as a witness to the ‘bending’ pheomena."'
 
 - id: nq5
   added_date: '2026-05-16'
@@ -888,7 +868,6 @@ naming_quirks:
   location: "¶17 (Brendan Burton article — Sarfatti quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'UK-spelling variant of "Brazil" preserved as-source in Jack Sarfatti''s verbatim quote per the source-priority hierarchy (witness''s own words). Original: "I have seen things ( PK) in my trip to Brasil in 1985 shown to me by a General in the Brasilian Army".'
 
 - id: nq6
   added_date: '2026-05-16'
@@ -897,7 +876,6 @@ naming_quirks:
   location: "¶17 (Brendan Burton article — Sarfatti quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'UK-spelling adjective form of "Brazilian" preserved as-source. Pairs with nq5.'
 
 - id: nq7
   added_date: '2026-05-16'
@@ -906,7 +884,6 @@ naming_quirks:
   location: "¶21 (Brendan Burton article — Byrd verbatim quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Eldon Byrd verbatim quote as transcribed by Brendan Burton. Original: "rather than the soft statisical pablum (baby food) of parapsychology". One-character omission ("t" dropped); preserved as-source.'
 
 - id: nq8
   added_date: '2026-05-16'
@@ -915,7 +892,6 @@ naming_quirks:
   location: "¶25 (Brendan Burton article — Geller Mind Medicine 1999 book quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Burton transcription of Geller''s book Mind Medicine (1999) — likely transcription typo ("form" for "from"). Preserved as-source in q8 quote text.'
 
 - id: nq9
   added_date: '2026-05-16'
@@ -924,7 +900,6 @@ naming_quirks:
   location: "¶25 (Brendan Burton article — Geller Mind Medicine 1999 book quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Burton transcription of Geller''s book Mind Medicine (1999) — likely transcription typo ("out" for "our"). Preserved as-source in q8 quote text.'
 
 - id: nq10
   added_date: '2026-05-16'
@@ -933,7 +908,6 @@ naming_quirks:
   location: "¶16 (Brendan Burton article narrator prose)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Brendan Burton typo (missing "h"). The Burton article is the only one-off "Werner" in the archived corpus for this node; the canonical Wernher von Braun is the Geller-site house style elsewhere. Source-form preserved in the Burton-attested quote; canonical slug `/people/wernher-von-braun` used for the cross-reference wrap.'
 
 - id: nq11
   added_date: '2026-05-16'
@@ -942,7 +916,6 @@ naming_quirks:
   location: "¶2 (biography page; in re Geller's December 20, 1946 birthplace attestation)"
   source_path: news/urigeller-com-biography-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Geographic-anachronism source-form variant. Geller''s biography page attests his birthplace as "Israel" on December 20, 1946. The State of Israel was declared on May 14, 1948 — 17 months after Geller''s birth — and what is now Tel Aviv was, at the time of his birth, part of the British Mandate of Palestine (1920-1948); the biography uses "Israel" in the territorial sense. Source-form preserved as-source in quotes q2 and timeline t1 per the source-priority hierarchy (subject''s own framing for a fact about himself).'
 
 rumors:
 
@@ -955,7 +928,6 @@ rumors:
   - Puthoff-Targ SRI film narration (published with consent of the SRI researchers; surfaces the late-1972 visit predating the film's March 1973 Columbia University screening)
   - urigeller.com/project-stargate-the-cias-human-experiments-with-mind-control/ (third-party syndicated article on Geller's site; not in the archived source set for this node; carries the "eight days in August 1973" framing)
   - Multiple public-record secondary sources (Wikipedia, Project Stargate biographies, Geller's own books)
-  note: 'Status: partially resolved with substantial correction as of the 2026-05-16 archival sweep and the same-day Phase-3 investigation pass on the SRI engagement-duration question. The Aug 1973 CIA SRI report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) confirms the eight-day Aug 4-11 1973 SRI window verbatim. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) confirms the earlier window with a critical correction: Section A page 2 attests "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller", and Section III page 11 describes "The experiments conducted with Geller in November-December, 1972" — that is, nine days, not the five weeks Web''s research audit attributed to Puthoff-Targ''s SRI-internal "The Record" daily log. Total documented Geller SRI engagement per the primary record is therefore approximately 17 days (9 days late 1972 + 8 days Aug 1973), not the six weeks Targ recalled in 2007 nor the ~6 weeks the late-1972 plus Aug-1973 windows total would suggest if late 1972 were itself a multi-week visit. The "five-week period in late 1972" framing attributed to "The Record" is directly contradicted by the contract progress report; either "The Record" itself disagrees with the contract progress report (which would be its own finding) or Web''s attribution to "The Record" is a secondary-source error. Closure of the inter-source discrepancy requires archival of "The Record" daily log. Targ''s 2007 recollection of "six weeks in 1973" exceeds the documented total by approximately four weeks and assigns the engagement entirely to 1973 despite the bulk per contract progress being in November-December 1972. Affiliation a2 and program_involvement pi1 are anchored on the Aug 1973 CIA primary source per Phase 1 of this 2026-05-16 audit pass and were updated with the November-December 1972 / nine-day framing in the Phase 3 investigation; Burton ¶5/¶7 demoted to supporting third-party attestations.'
 
 - id: r2
   added_date: '2026-05-16'
@@ -963,7 +935,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - urigeller.com/uri-gellers-biography/ ¶2 (the claim itself, attested by Geller's biography)
-  note: 'The claim is attested by Geller''s own biography as a self-account (registered as q2). The retired Israeli air force officer who allegedly validated the event is not named, no validation document is cited, and no primary record of the officer''s attestation is archived in this repository. The age-four encounter itself is captured in q2 as Geller''s self-attestation; the third-party-validation portion is the unattested element here.'
 
 - id: r4
   added_date: '2026-05-16'
@@ -974,5 +945,4 @@ rumors:
   - urigellermuseum.com (the museum's own website)
   - JNS (Jewish News Syndicate) November 2021 coverage of the museum opening
   - Jewish Virtual Library
-  note: 'The archived urigeller.com biography page ¶35 attests only that "Uri lives in Old Jaffa and runs the Uri Geller Museum" — no opening date is given in any of the three archived primary sources for this node. The 2021 opening date is widely attested in external secondary sources but no primary source has been archived in this repository. When a primary source naming the museum opening date is archived (the museum''s own website, a JNS-published interview, a municipal record, or similar), graduate this rumor to a quotes[] entry and populate affiliations a9 period_start. Recorded here to prevent future contributor sessions from re-introducing the conflated 2016 return-to-Israel anchor that this entry replaces (the prior period_start: 2016 was removed during the 2026-05-16 web-audit review; see a9 note).'
 

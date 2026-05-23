@@ -2,7 +2,7 @@
 
 Person-to-person relationships. Present on person artifacts. Each
 entry: required {person_path, relationship, source}, optional
-{flagged, note}. ``person_path`` must point to a /people/... path;
+{flagged}. ``person_path`` must point to a /people/... path;
 ``relationship`` is free-text (heterogeneous human relationship
 vocabulary that a closed enum can't capture — "flying partner",
 "disclosure collaborator", "advisor", "superior", "colleague",

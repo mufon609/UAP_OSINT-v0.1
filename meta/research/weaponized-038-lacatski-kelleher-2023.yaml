@@ -52,7 +52,6 @@ speakers:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[0:38]'
-  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher.
 - id: s2
   added_date: '2026-05-17'
   name: Jeremy Corbell
@@ -61,7 +60,6 @@ speakers:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[0:43]'
-  note: WEAPONIZED co-host with George Knapp.
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -70,7 +68,6 @@ speakers:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[1:51]'
-  note: Former AAWSAP director at DIA; co-author of the book under discussion. Auto-caption renders his surname variously as "latsky" / "laty" — see naming_quirks.
 - id: s4
   added_date: '2026-05-17'
   name: Dr. Colm Kelleher
@@ -79,7 +76,6 @@ speakers:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[24:13]'
-  note: Former BAASS program manager; co-author of the book. Auto-caption renders his first name as "colum" / "Callum" and his last name as "kellerer" — see naming_quirks.
 quotes:
 - id: q1
   speaker_id: s3
@@ -265,7 +261,6 @@ naming_quirks:
   location: '[1:01], [1:16], [4:04], [14:51], [15:01], [24:08], [1:45:32]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" phonetically as "latsky" throughout the interview. Preserved as it appears in the caption file.
 - id: nq2
   added_date: '2026-05-17'
   observed: laty
@@ -273,7 +268,6 @@ naming_quirks:
   location: '[1:45:32], [1:46:03]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "Lacatski" as "laty" in Corbell's closing recap address ("Dr lat" / "Dr laty"). Preserved as it appears.
 - id: nq3
   added_date: '2026-05-17'
   observed: kellerer
@@ -281,7 +275,6 @@ naming_quirks:
   location: '[1:01], [4:46]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Kelleher" as "kellerer" in Corbell's opening and follow-up references. Preserved as it appears.
 - id: nq4
   added_date: '2026-05-17'
   observed: colum
@@ -289,7 +282,6 @@ naming_quirks:
   location: '[1:01], [1:20], [24:13]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders Colm Kelleher's first name as "colum" throughout. Preserved as it appears.
 - id: nq5
   added_date: '2026-05-17'
   observed: Callum
@@ -297,7 +289,6 @@ naming_quirks:
   location: '[34:10]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of Colm Kelleher's first name as "Callum" in Lacatski's reference to a question "asked to Callum." Preserved as it appears.
 - id: nq6
   added_date: '2026-05-17'
   observed: naap
@@ -305,7 +296,6 @@ naming_quirks:
   location: '[4:46]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Knapp" as "naap" in Corbell's reference to "George naap" early in the interview. Preserved as it appears.
 - id: nq7
   added_date: '2026-05-17'
   observed: knap
@@ -313,7 +303,6 @@ naming_quirks:
   location: '[0:38], [0:59]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "Knapp" as "knap" — the self-introduction tag at the start of the episode ("my name is George knap"). Preserved as it appears.
 - id: nq8
   added_date: '2026-05-17'
   observed: oap
@@ -321,7 +310,6 @@ naming_quirks:
   location: '[1:20], [1:24], [1:26], [51:59], [52:41]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AAWSAP" as "oap" / "the oap program" in Corbell's framing question and Lacatski's timeline discussion. Preserved as it appears.
 - id: nq9
   added_date: '2026-05-17'
   observed: ossap
@@ -329,7 +317,6 @@ naming_quirks:
   location: '[52:11]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "ossap" / "o assap" in Lacatski's post-program timeline discussion. Preserved as it appears.
 - id: nq10
   added_date: '2026-05-17'
   observed: assap
@@ -337,7 +324,6 @@ naming_quirks:
   location: '[7:00], [22:04], [47:03], [50:35], [51:30]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "AAWSAP" as "assap" throughout. Preserved as it appears.
 - id: nq11
   added_date: '2026-05-17'
   observed: asap
@@ -345,7 +331,6 @@ naming_quirks:
   location: '[22:04], [22:36], [23:08], [1:48:23]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "asap" — overlaps with the English word "as soon as possible" but in context refers to AAWSAP. Preserved as it appears.
 - id: nq12
   added_date: '2026-05-17'
   observed: asep
@@ -353,7 +338,6 @@ naming_quirks:
   location: '[4:26]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "asep" in Corbell's recap "it was called asep Advanced Aerospace weapon system applications program." Preserved as it appears.
 - id: nq13
   added_date: '2026-05-17'
   observed: Assam
@@ -361,7 +345,6 @@ naming_quirks:
   location: '[17:41]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of "AAWSAP" as "Assam" (a state in India) in Lacatski's discussion of adversary monitoring. Preserved as it appears.
 - id: nq14
   added_date: '2026-05-17'
   observed: atip
@@ -369,7 +352,6 @@ naming_quirks:
   location: '[1:27], [5:36], [6:55], [7:32]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AATIP" as "atip" (single A). Preserved as it appears.
 - id: nq15
   added_date: '2026-05-17'
   observed: a tip
@@ -377,7 +359,6 @@ naming_quirks:
   location: '[5:36], [22:00]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AATIP" as the two-word "a tip." Preserved as it appears.
 - id: nq16
   added_date: '2026-05-17'
   observed: bass
@@ -385,7 +366,6 @@ naming_quirks:
   location: '[3:19], [51:26]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "BAASS" as "bass" in Lacatski's references to Bigelow's program-execution subsidiary. Preserved as it appears.
 - id: nq17
   added_date: '2026-05-17'
   observed: Reed
@@ -393,7 +373,6 @@ naming_quirks:
   location: '[1:53]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Senator Reid" (Harry Reid) as "Senator Reed" — Reed and Reid are different US senators (Jack Reed of Rhode Island vs Harry Reid of Nevada); the AAWSAP founding senator is Harry Reid, not Jack Reed. Auto-caption is phonetically ambiguous; preserved as it appears.
 - id: nq18
   added_date: '2026-05-17'
   observed: alzando
@@ -401,7 +380,6 @@ naming_quirks:
   location: '[1:36]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Elizondo" as "alzando" in Corbell's opening reference to "Lou alzando" — Luis Elizondo. Preserved as it appears.
 - id: nq19
   added_date: '2026-05-17'
   observed: luel isad
@@ -409,7 +387,6 @@ naming_quirks:
   location: '[6:43]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lue Elizondo" as the merged "luel isad" in Lacatski's identification of who he believes created the AATIP name. The "isad" component is a phonetic merger of "Elizondo"; context (with "Axel Rod" — possibly a codename — and "their cohorts") supports the canonical identification. Preserved as it appears.
 - id: nq20
   added_date: '2026-05-17'
   observed: Gia
@@ -417,7 +394,6 @@ naming_quirks:
   location: '[17:46]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "DIA" as "Gia" in Lacatski's reference to adversary employees "hopefully not in Gia but in the contractor part." Preserved as it appears.
 - id: nq21
   added_date: '2026-05-17'
   observed: grush
@@ -425,7 +401,6 @@ naming_quirks:
   location: '[33:45]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Grusch" (David Grusch) as "grush" in Corbell's reference to "the big big question with David grush." Preserved as it appears.
 - id: nq22
   added_date: '2026-05-17'
   observed: Capital Hill
@@ -433,4 +408,3 @@ naming_quirks:
   location: '[33:50]'
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Capitol Hill" as "Capital Hill" in Corbell's framing question about the 2011 meeting. Preserved as it appears.

@@ -594,7 +594,6 @@ naming_quirks:
   location: 'multiple'
   source_path: news/sri-international-about-20260515.html
   resolution: use-canonical
-  note: 'The institution was founded in 1946 as "Stanford Research Institute" (per sri.com About q2 and Timeline q3) and is now "SRI International" (per the sri.com page footer "© 2026 SRI INTERNATIONAL" and the Schema.org Organization block on the timeline page). The specific date of the rebrand from "Stanford Research Institute" to "SRI International" is NOT attested by archived primary sources. The two forms are observable across the corpus: pre-1990 government documents (1974 Nature paper q6; 1977 Kress paper q7-q10) use "Stanford Research Institute" or "SRI"; the 1993 DIA STAR GATE Project Overview (q11, q13) uses "SRI International" and "SRI-International"; the 1995 AIR evaluation alternates between "Stanford Research Institute, later known as SRI International" (line 763 of extracted text) and "what was then the Stanford Research Institute, now called SRI International" (line 818). Canonical form for prose use is "SRI International"; the pre-rename form "Stanford Research Institute" is preserved verbatim in quoted text. The repo slug stays /organizations/stanford-research-institute to match the existing wrap_path references in built nodes (russell-targ, james-ryder).'
 
 - id: nq2
   added_date: '2026-05-15'
@@ -603,7 +602,6 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads "Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff" where the canonical form is "Two laser physicists". The OCR engine read "e" as "q" — common typewritten-font OCR misread. Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq3
   added_date: '2026-05-15'
@@ -612,7 +610,6 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The PDF renders "parapsychology" with a typewritten-font OCR misread "v" for "y" yielding "parapsvchology", further fragmented by PDF end-of-line word-wrap into "parapsv-" / "chology" across two source lines. The pdftotext output and the verbatim-quote check normalize the newline to a space, yielding "parapsv- chology" as the comparison form. Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq4
   added_date: '2026-05-15'
@@ -621,7 +618,6 @@ naming_quirks:
   location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "fi" ligature as "r''i" (apostrophe-i sequence) yielding "scientir''ic" where the canonical form is "scientific". Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq5
   added_date: '2026-05-15'
@@ -630,7 +626,6 @@ naming_quirks:
   location: 'p. 8, ¶2-4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine consistently reads CIA Office of Research and Development abbreviation "ORD" as "ORO" — typewritten-font OCR misread of "D" as "O". The source paper expands the abbreviation explicitly in q8: "Office of Research and Development (ORO)" — the parenthetical expansion confirms the misread. Recurring across q8 and q9. Preserved verbatim per OCR-scan source-form-preservation discipline.'
 
 - id: nq6
   added_date: '2026-05-15'
@@ -639,7 +634,6 @@ naming_quirks:
   location: 'p. 8, ¶4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "7" as "i" in the year "1972" yielding "19i2" — typewritten-font OCR misread on the digit-7 glyph. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq7
   added_date: '2026-05-15'
@@ -648,7 +642,6 @@ naming_quirks:
   location: 'p. 8, ¶2'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q8 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq8
   added_date: '2026-05-15'
@@ -657,7 +650,6 @@ naming_quirks:
   location: 'p. 10, ¶1'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA''s own document varies: Figure 1 of the same document uses "SRI INTERNATIONAL" without the q11 hyphenation (see q12c for the verbatim Figure 1 row attestation; the Figure 1 row carries a separate pdftotext-default-extraction artifact recorded as nq13). Preserved verbatim in q11 quote text.'
 
 - id: nq9
   added_date: '2026-05-15'
@@ -666,7 +658,6 @@ naming_quirks:
   location: 'p. 9, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "v" as "~" (tilde) in "available" yielding "a~ailable" — typewritten-font OCR misread on the lowercase v glyph. Preserved verbatim in q16 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq10
   added_date: '2026-05-15'
@@ -675,7 +666,6 @@ naming_quirks:
   location: 'p. 3-14, ¶2'
   source_path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^20" as the digit 10 with a superscript 20; pdftotext flattens this to baseline "1020" without preserving the superscript relationship. Preserved verbatim in q22 quote text. The same phenomenon affects "10^-20" → "10-20" in the next clause of q22 (see nq11).'
 
 - id: nq11
   added_date: '2026-05-15'
@@ -684,7 +674,6 @@ naming_quirks:
   location: 'p. 3-14, ¶2'
   source_path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^-20" as the digit 10 with a superscript -20; pdftotext flattens this to baseline "10-20" without preserving the superscript relationship. Preserved verbatim in q22 quote text. Companion to nq10 ("1020" for "10^20") in the same passage.'
 
 - id: nq12
   added_date: '2026-05-15'
@@ -693,7 +682,6 @@ naming_quirks:
   location: 'p. 10, ¶3 (also p. 7 — multi-occurrence)'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The 1993 DIA STAR GATE Project Overview names the SAIC contractor as "Systems Applications International Corporation" in multiple passages (p. 7 and p. 10 ¶3) — a documented writing error in the DIA document. The canonical company name is "Science Applications International Corporation", attested in this artifact''s corpus by the 1995 AIR Evaluation (scratch lines 764, 824, 1295 — "government sponsored research conducted at Stanford Research Institute, later known as SRI International, and at Science Applications International Corporation, known as SAIC"). Preserved verbatim in q12 quote text per source-form-preservation discipline. Companion to nq8 (DIA''s "SRI-International" hyphenated form) — both errors in the same DIA document.'
 
 - id: nq13
   added_date: '2026-05-15'
@@ -702,7 +690,6 @@ naming_quirks:
   location: 'Figure 1 (KEY US RESEARCH EFFORTS table), p. 7'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'pdftotext-default extraction artifact in the DIA STAR GATE Project Overview Figure 1 table. The source PDF page 7 visually renders each Figure 1 row as date-range, multi-space column gap, two typewriter hyphens, a single space, then the lab name and location (verified against the rendered PDF page image). Default pdftotext extraction collapses the multi-space column gap AND the single space between the two hyphens and SRI, producing "--SRI" with no intervening space — the verbatim form preserved in q12c. The two hyphens in the source are literal hyphen characters (not an em-dash), consistent with the 1993 source''s typewriter format. Preserved verbatim in q12c per source-form-preservation discipline. The same extraction-artifact phenomenon affects every other Figure 1 row but only the SRI row is preserved as a quote in q12c.'
 
 - id: nq14
   added_date: '2026-05-17'
@@ -711,7 +698,6 @@ naming_quirks:
   location: 'p. 8, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (Puthoff''s letter date in q36) as "''1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17. Preserved verbatim in q36 quote text per OCR-scan source-form-preservation discipline.'
 
 - id: nq15
   added_date: '2026-05-17'
@@ -720,7 +706,6 @@ naming_quirks:
   location: '¶2'
   source_path: government/solfoundation-vallee-people-page-20260517.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Sol Foundation''s "People" bio page for Jacques Vallée writes "Stanford Research Institute’s International Augmentation Research Center" in q37 — the historical name of Doug Engelbart''s SRI division is "Augmentation Research Center" (ARC), not "International Augmentation Research Center". "International" appears to be Sol''s descriptive insertion, likely conflating with the post-1977 SRI rebrand "SRI International". Preserved verbatim in q37 per source-form-preservation discipline.'
 
 timeline:
 
@@ -1058,7 +1043,6 @@ key_personnel:
   source:
     path: news/sri-international-about-20260515.html
     location: '¶3'
-  note: 'David Parekh is named Chief Executive Officer, SRI on the Our People page with a listing date of December 2, 2021 (in both the Executive Team and Board of Directors sections). A specific Parekh start date for the CEO role is not stated on either sri.com page.'
 
 - id: kp2
   added_date: '2026-05-15'
@@ -1069,7 +1053,6 @@ key_personnel:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ had recently joined the Stanford Research Institute (SRI) as of the April 1972 meeting with CIA personnel from the Office of Scientific Intelligence. Targ is cofounder of the Stanford Research Institute investigation of psychic abilities in the 1970s and 1980s.'
 
 - id: kp3
   added_date: '2026-05-15'
@@ -1081,7 +1064,6 @@ key_personnel:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 22, ¶1'
-  note: 'The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the cofounder period recorded in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years"; the SRI program was discontinued in 1990. The period_start/period_end fields follow the broader cofounder period per Targ''s ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics.'
 
 - id: kp4
   added_date: '2026-05-15'
@@ -1093,7 +1075,6 @@ key_personnel:
   source:
     path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
     location: 'p. 3-2'
-  note: 'Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time. period_start ''1975'' is a single year within the mid 1970s the source says; a specific year is not stated.'
 
 - id: kp5
   added_date: '2026-05-15'
@@ -1114,7 +1095,6 @@ key_personnel:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 9, ¶1'
-  note: 'Per Kress 1977, Pat Price was the third sensitive subject at SRI; per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner" who "showed us how to do this with great reliability and accuracy".'
 
 - id: kp7
   added_date: '2026-05-15'
@@ -1135,7 +1115,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'David Motley is named Board Chair in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 ($110,000 listed compensation). The same source lists Motley as Board Member in the sections for fiscal years ending Dec. 2023 and earlier, with $67,500 and lower listed compensation — the role transition to Board Chair occurred between the Dec. 2023 and Dec. 2024 reporting periods; the specific transition date is not stated on the ProPublica page.'
 
 - id: kp9
   added_date: '2026-05-15'
@@ -1146,7 +1125,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2023'
-  note: 'Ochoa is also listed as a Board Member in the ProPublica section for the fiscal year ending Dec. 2024.'
 
 - id: kp10
   added_date: '2026-05-15'
@@ -1156,7 +1134,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'Pawlikowski is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023 and Dec. 2022. The specific board start date is not stated on the ProPublica page.'
 
 - id: kp11
   added_date: '2026-05-15'
@@ -1166,7 +1143,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'Young is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. The specific board start date is not stated on the ProPublica page.'
 
 - id: kp12
   added_date: '2026-05-15'
@@ -1176,7 +1152,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'McIntire is also listed as Chief Legal Officer in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years. The ProPublica page renders the name as "John Mcintire" for the fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — a minor variation in the name form across the IRS Form 990 filings. The specific role start date is not stated on the ProPublica page.'
 
 - id: kp13
   added_date: '2026-05-15'
@@ -1187,7 +1162,6 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'ProPublica lists Sunderrajan as "President, Commercialization" in the section for the fiscal year ending Dec. 2023 — the prior role recorded before the transition to Chief Financial Officer.'
 
 - id: kp14
   added_date: '2026-05-15'
@@ -1228,7 +1202,6 @@ key_personnel:
   source:
     path: news/sri-com-board-of-directors-20260515.html
     location: 'Board of Directors section, Steven Walker entry'
-  note: 'The period_start follows the Our People page listing date; a separate start date for the board director role is not stated on the page.'
 
 org_relationships:
 
@@ -1239,7 +1212,6 @@ org_relationships:
   source:
     path: news/sri-international-timeline-of-innovation-20260515.html
     location: '¶2'
-  note: 'Stanford University founded SRI as the Stanford Research Institute in 1946 (q3); SRI became independent from Stanford in 1970 (q2, q3). Specific circumstances of the 1970 severance are not attested by the archived sri.com sources.'
 
 - id: or2
   added_date: '2026-05-15'
@@ -1248,7 +1220,6 @@ org_relationships:
   source:
     path: news/sri-international-about-20260515.html
     location: '¶4'
-  note: 'SRI acquired Sarnoff Corp. (formerly RCA Labs) in 1987 per q2 and q3. Sarnoff Corp. was originally a research arm of RCA; the corporate-history details of the Sarnoff acquisition are not attested by archived sources.'
 
 - id: or3
   added_date: '2026-05-15'
@@ -1257,7 +1228,6 @@ org_relationships:
   source:
     path: news/sri-international-timeline-of-innovation-20260515.html
     location: '¶2'
-  note: 'In 2023 SRI received the Palo Alto Research Center (PARC) "as a donation" per q3. Donating party not attested in the archived sri.com sources (PARC was a subsidiary of Xerox prior to the donation per public record but Xerox is not named on the sri.com pages).'
 
 - id: or4
   added_date: '2026-05-15'
@@ -1266,7 +1236,6 @@ org_relationships:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
-  note: 'Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972; the named CIA OSI officer at program inception was K. Green ([`/people/kit-green`]) — recipient of Puthoff''s June 1972 letter from SRI per q36, and (per p. 10 footnote of the same Kress paper) author of a 9 November 1973 Memorandum for the Record at LSD/OSI on Verification of Remote Viewing Experiments at Stanford Research Institute. Per the 1993 DIA STAR GATE Project Overview (q12b), CIA funding to SRI was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA''s service support elements with occasional support from various R&D organizations.'
 
 - id: or5
   added_date: '2026-05-15'
@@ -1275,7 +1244,6 @@ org_relationships:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 10, ¶3'
-  note: 'Per the 1993 DIA STAR GATE Project Overview (q12b), subsequent funding for RV investigation at SRI was provided by DIA and some of DIA''s service support elements with occasional support from various R&D organizations after CIA funding was discontinued in 1975. The same source attests that in the late 1970s HQDA/INSCOM established a small unit for "development of a community capability" in RV; that unit was transferred to DIA in 1986 as the SUN STREAK Special Access Program. FY 1991 Congressional direction for DIA established the successor research at SAIC.'
 
 - id: or6
   added_date: '2026-05-15'
@@ -1284,7 +1252,6 @@ org_relationships:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 10, ¶3'
-  note: 'Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Science Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI. The DIA source writes "Systems Applications International Corporation" — the company''s canonical name is "Science Applications International Corporation" per the 1995 AIR Evaluation in this artifact''s corpus; the DIA-source error is recorded as naming_quirk nq12 and preserved verbatim in q12.'
 
 rumors: []
 

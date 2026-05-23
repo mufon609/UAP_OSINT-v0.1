@@ -145,4 +145,3 @@ naming_quirks:
   location: 'p. 4, §9003(11) "deceased non human intelligence" (extracted-text artifact)'
   source_path: government/pentagon-uapda-proposed-revisions-202311.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'pdftotext extraction renders "non-human intelligence" as "non human intelligence" (without hyphen) at one occurrence (§9003(11) "deceased non human intelligence that pre dates the date of the enactment of this Act"). The §9003(13) full NHI definition uses the hyphenated form "non-human intelligence" verbatim. Preserve both source forms as they appear in extraction.'

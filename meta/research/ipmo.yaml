@@ -270,7 +270,6 @@ naming_quirks:
   location: 'IPMO PWS §1.3 section header'
   source_path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR artifact in PWS section header (extraction_type: ocr-scan per manifest); body text of §1.3 reads cleanly. Quote q7 cites the body text only and is unaffected by this header artifact.'
 - id: nq2
   added_date: '2026-05-02'
   observed: 'HOLLY.JAMES.ANTHONY.1231235051598'
@@ -278,7 +277,6 @@ naming_quirks:
   location: 'Notre Dame memo digital signature block'
   source_path: government/notre-dame-ipmo-memo-20220527.pdf
   resolution: use-canonical
-  note: 'PKI digital-signature block in Notre Dame memo reveals Holly''s full middle name "Anthony"; commonly attested short form "James A. Holly" appears in printed signature on same page. Person-node should record full name as "James Anthony Holly" per the digital signature; short form "James A. Holly" is commonly used in-source and across the corpus.'
 - id: nq3
   added_date: '2026-05-03'
   observed: 'Kimmidge'
@@ -286,7 +284,6 @@ naming_quirks:
   location: 'Defense One article (May 24, 2024) text — Kimmidge appears five times verbatim'
   source_path: news/defense-one-sof-week-oie-panel-20240524.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Defense One spells Daniel Kimmage''s surname "Kimmidge" verbatim throughout the article. Canonical spelling "Kimmage" attested by State Department official sources (state.gov/people/daniel-kimmage), Daniel K. Inouye Asia-Pacific Center for Security Studies, govexec.com, and Washington Institute. Quote q17 preserves Defense One''s "Kimmidge" spelling within its surrounding text where it appears. Cross-reference to /people/daniel-kimmage uses canonical form.'
 rumors:
 - id: r1
   added_date: '2026-05-02'
@@ -297,14 +294,12 @@ rumors:
     - 'Webb (MintPress News, June 29, 2023)'
     - 'Klarenberg (multiple outlets, 2023)'
     - 'Wikipedia "Influence and Perception Management Office" article'
-  note: 'No primary source — including Holly''s Notre Dame memo, the IPMO PWS, the NSI 23-S-3438 IPMO 101 slides, the NSI Speaker Series page, and OSD OP-5 FY 2023 / FY 2024 / FY 2025 / FY 2026 — names a predecessor office. Holly''s NSI Speaker Series talk references a "two-decade institutional debate among military and civilian leaders" about consolidating influence-related governance, but does not name OSI or any other named predecessor at primary-source level. Claims that IPMO is a successor to OSI (Office of Strategic Influence, 2001-2002) or to subsequent Strategic Communication coordinator roles are journalistic / historiographic, not documented institutional succession. Recorded here per fabrication-prevention discipline so a future contributor does not unconsciously recirculate the lineage claim into node prose.'
 - id: r2
   added_date: '2026-05-03'
   claim: 'Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) was awarded the WHS contract HQ003423C0061 (Sancorp IPMO follow-on, signed May 25, 2023) to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO.'
   status: primary-source-disputed
   observed_sources:
     - 'SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (May 27, 2023) — description prose names Premier Enterprise Solutions, LLC as the awardee'
-  note: 'USAspending HQ003423C0061 record (already in IPMO primary_sources) attests Sancorp Consulting, LLC (recipient_uei GRYKNJ8BGFC8) as the actual awardee, $3,021,082.38 obligated, signed 2023-05-25. The same SAMDaily / fbodaily.com archive page''s structured awardee field also lists Sancorp Consulting LLC — the prose description naming Premier is a clerical error inconsistent with the page''s own structured field. Sancorp''s IPMO follow-on chain (HQ003422C0064, HQ003423C0061, HQ003424C0046) is consistently attested across USAspending records, Sancorp''s own Past Performance page, and Sancorp''s Company News. Premier Enterprise Solutions, LLC has no documented IPMO contract; Premier''s OUSD(I&S) work is at EXDIR per GAO B-422985 (2025).'
 timeline:
 - id: t1
   added_date: '2026-05-02'

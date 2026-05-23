@@ -222,7 +222,6 @@ affiliations:
   source:
     path: news/thedebrief-grusch-2023.html
     location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
-  note: 'Role-label variance between sources: "liaison" (The Debrief, reporter framing) versus "Army director supporting the UAP Task Force" (Nell''s self-authored Sol Foundation About the Author bio).'
 - id: a3
   added_date: '2026-05-18'
   organization_path: /organizations/stardustx-materials
@@ -232,7 +231,6 @@ affiliations:
   source:
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
     location: 'p. 19, About the Author'
-  note: 'Start date not attested in source.'
 - id: a4
   added_date: '2026-05-18'
   organization_path: /organizations/bell-laboratories
@@ -242,7 +240,6 @@ affiliations:
   source:
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
     location: 'p. 19, About the Author'
-  note: 'Period start / end not attested directly.'
 - id: a5
   added_date: '2026-05-18'
   organization_path: /organizations/lockheed-martin
@@ -252,7 +249,6 @@ affiliations:
   source:
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
     location: 'p. 19, About the Author'
-  note: 'Period start / end not attested directly.'
 - id: a6
   added_date: '2026-05-18'
   organization_path: /organizations/northrop-grumman
@@ -262,7 +258,6 @@ affiliations:
   source:
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
     location: 'p. 19, About the Author'
-  note: 'Period start / end not attested directly.'
 - id: a7
   added_date: '2026-05-18'
   organization_path: /organizations/sol-foundation
@@ -272,7 +267,6 @@ affiliations:
   source:
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
     location: 'p. 19, About the Author'
-  note: 'Period start 2023 anchored to the Inaugural Symposium appearance at Stanford on November 17–18, 2023, predating the 2025 policy-paper publication that sources this row; end open.'
 
 program_involvement:
 - id: pi1
@@ -286,7 +280,6 @@ program_involvement:
   source:
     path: news/thedebrief-grusch-2023.html
     location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
-  note: 'Two-source corroboration with a role-label variance: liaison (The Debrief, reporter framing) versus Army director supporting the UAP Task Force (Nell''s self-authored Sol Foundation bio).'
 
 timeline:
 - id: t1
@@ -346,7 +339,6 @@ relationships:
   source:
     path: news/thedebrief-grusch-2023.html
     location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
-  note: ''
 - id: r2
   added_date: '2026-05-18'
   person_path: /people/garry-nolan
@@ -354,7 +346,6 @@ relationships:
   source:
     path: transcripts/nell-sol-foundation-2023-downloaded.md
     location: '[00:30]'
-  note: 'The "Gary" Nell thanks in the q10 opening is the auto-caption rendering of Garry Nolan (nq2); alongside "Peter" (Peter Skafish) these are the Sol co-founders Nell collaborated with on the symposium and the policy-paper series.'
 - id: r3
   added_date: '2026-05-18'
   person_path: /people/peter-skafish
@@ -371,7 +362,6 @@ naming_quirks:
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, multiple lines'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Sol" (Sol Foundation) as "Saul". Auto-caption artifact; preserve in quotes.'
 - id: nq2
   added_date: '2026-05-18'
   observed: 'Gary'
@@ -379,7 +369,6 @@ naming_quirks:
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, multiple lines'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Garry Nolan" with first-name spelling "Gary". Auto-caption artifact; preserve in quotes.'
 - id: nq3
   added_date: '2026-05-18'
   observed: 'Lou alzando'
@@ -387,7 +376,6 @@ naming_quirks:
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Luis Elizondo" as "Lou alzando" in Sol Symposium transcript. Auto-caption artifact; preserve in quotes.'
 - id: nq4
   added_date: '2026-05-18'
   observed: 'L Alando'
@@ -395,7 +383,6 @@ naming_quirks:
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:12:13]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'Second auto-caption rendering of "Luis Elizondo" as "L Alando" in same transcript. Distinct from "Lou alzando" because the caption mishears the name differently at a different point in the talk.'
 - id: nq5
   added_date: '2026-05-18'
   observed: 'Chris melon'
@@ -403,7 +390,6 @@ naming_quirks:
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Chris Mellon" with lowercase second-name "melon". Auto-caption artifact; preserve in quotes.'
 - id: nq6
   added_date: '2026-05-18'
   observed: 'Carl'
@@ -411,7 +397,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, multiple lines'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'SALT 2024 interviewer addresses Nell as "Carl" rather than "Karl". Auto-caption artifact preserving the interviewer''s spoken address; preserve in quotes.'
 - id: nq7
   added_date: '2026-05-18'
   observed: 'Paul helier'
@@ -419,7 +404,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Paul Hellyer" as "Paul helier". Auto-caption artifact; preserve in quotes.'
 - id: nq8
   added_date: '2026-05-18'
   observed: 'ham Eed'
@@ -427,7 +411,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of former Israel space-directorate head Haim Eshed as "ham Eed". Auto-caption artifact; preserve in quotes.'
 - id: nq9
   added_date: '2026-05-18'
   observed: 'Lou Alzando'
@@ -435,7 +418,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Luis Elizondo" as "Lou Alzando" in the SALT 2024 talk. Third distinct auto-caption rendering of the same canonical name across the two transcripts (alongside "Lou alzando" and "L Alando" in Sol Symposium).'
 - id: nq10
   added_date: '2026-05-18'
   observed: 'truck Schumer'
@@ -443,7 +425,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Chuck Schumer" as "truck Schumer". Auto-caption artifact; preserve in quotes.'
 - id: nq11
   added_date: '2026-05-18'
   observed: 'marubio'
@@ -451,7 +432,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Marco Rubio" as "marubio". Auto-caption artifact; preserve in quotes.'
 - id: nq12
   added_date: '2026-05-18'
   observed: 'rri Patterson Air Force Base'
@@ -459,7 +439,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:17]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Wright-Patterson Air Force Base" as "rri Patterson Air Force Base". Auto-caption artifact; preserve in quotes.'
 - id: nq13
   added_date: '2026-05-18'
   observed: 'Eric Klein'
@@ -467,7 +446,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:10:04]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'Auto-caption rendering of "Eric Cline" (historian, author of "1177 BC: The Year Civilization Collapsed") as "Eric Klein". In the same passage Nell attributes the author to "Princeton University"; that institutional attribution is Nell''s on-record statement, preserved as spoken and not adjudicated here.'
 - id: nq14
   added_date: '2026-05-22'
   observed: 'tri vesture'
@@ -475,7 +453,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "trivestiture" as "tri vesture" in Nell''s SALT 2024 account of his time at Bell Labs. Auto-caption artifact; preserve in quotes.'
 - id: nq15
   added_date: '2026-05-22'
   observed: 'locki missiles in space'
@@ -483,7 +460,6 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Lockheed Missiles & Space" as "locki missiles in space" in Nell''s SALT 2024 employer account. Auto-caption artifact; preserve in quotes.'
 - id: nq16
   added_date: '2026-05-22'
   observed: 'northr grman'
@@ -491,6 +467,5 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Northrop Grumman" as "northr grman" in Nell''s SALT 2024 employer account. Auto-caption artifact; preserve in quotes.'
 
 rumors: []

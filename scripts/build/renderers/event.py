@@ -134,13 +134,12 @@ def render_event_summary(artifact, kind):
 
 def _participant_row(e):
     """Render one participant row. Cells: participant (wrap_path), role,
-    source.path, note."""
+    source.path."""
     p = _wrap_path(e.get("participant_path"))
     return (
         f"| {p} | "
         f"{e.get('role') or ''} | "
-        f"{(e.get('source') or {}).get('path') or ''} | "
-        f"{_escape_table_cell(e.get('note'))} |"
+        f"{(e.get('source') or {}).get('path') or ''} |"
     )
 
 
@@ -151,17 +150,17 @@ def render_participants_encounter(artifact):
     flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
 
     lines = ["## Participants", "", "### Confirmed", "",
-             "| Participant | Role | Source | Note |",
-             "|---|---|---|---|"]
+             "| Participant | Role | Source |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(_participant_row(e))
     else:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source | Note |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -184,27 +183,27 @@ def render_participants_hearing(artifact):
         lines.append("")
         lines.append(f"#### {subheader}")
         lines.append("")
-        lines.append("| Participant | Role | Source | Note |")
-        lines.append("|---|---|---|---|")
+        lines.append("| Participant | Role | Source |")
+        lines.append("|---|---|---|")
         if subsection_entries:
             for e in subsection_entries:
                 lines.append(_participant_row(e))
         else:
-            lines.append("|  |  |  |  |")
+            lines.append("|  |  |")
 
     known = set(_HEARING_CAPACITY_ORDER)
     other_confirmed = [e for e in confirmed if e.get("capacity") not in known]
     if other_confirmed:
         lines += ["", "#### Other", "",
-                  "| Participant | Role | Source | Note |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in other_confirmed:
             lines.append(_participant_row(e))
 
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source | Note |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -233,17 +232,16 @@ def render_witnesses_testimony(artifact):
     nodes."""
     items = [e for e in (artifact.get("witnesses_testimony") or []) if isinstance(e, dict)]
     lines = ["## Witnesses & Testimony", "",
-             "| Witness | Oath Status | Transcript | Written Testimony | Note |",
-             "|---|---|---|---|---|"]
+             "| Witness | Oath Status | Transcript | Written Testimony |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
     for e in items:
         lines.append(
             f"| {_wrap_path(e.get('witness_path'))} | "
             f"{e.get('oath_status') or ''} | "
             f"{_wrap_path(e.get('transcript_node'))} | "
-            f"{_wrap_path(e.get('written_testimony_node'))} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{_wrap_path(e.get('written_testimony_node'))} |"
         )
     return "\n".join(lines) + "\n"
 

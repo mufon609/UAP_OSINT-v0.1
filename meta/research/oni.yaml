@@ -111,7 +111,6 @@ naming_quirks:
   location: p. 2, ¶1 (Purpose)
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Optical character extraction artifact in the BlackVault FOIA-released SCG PDF (Adobe Acrobat Paper Capture extraction); preserved in q1 verbatim as it appears in the extract
 - id: nq2
   added_date: '2026-05-05'
   observed: ONn
@@ -119,7 +118,6 @@ naming_quirks:
   location: p. 2, Section 1 Identifying Data, PR field
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Optical character extraction artifact in the SCG PDF — closing parenthesis after "ONI" rendered as "n" in the text layer; not registered in any quote (the PR-field line is not used as a verbatim quote)
 - id: nq3
   added_date: '2026-05-05'
   observed: Naval intelligence
@@ -127,7 +125,6 @@ naming_quirks:
   location: '[5:32]'
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription lower-cases "intelligence" in Dietrich's spoken phrase "Office of Naval Intelligence"; preserved in q6 verbatim
 rumors: []
 timeline:
 - id: t1
@@ -174,7 +171,6 @@ key_personnel:
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD Spokesperson Susan Gough
-  note: Stratton is named "former Office of Naval Intelligence senior civilian" verbatim in q5; the date of his ONI role is not directly stated in the primary sources cited for this organization
 org_relationships:
 - id: or1
   added_date: '2026-05-05'
@@ -183,7 +179,6 @@ org_relationships:
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
     location: p. 2, ¶1 (Purpose)
-  note: UAP Task Force is the operating subject named alongside ONI in the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020, q1) and in Senate Report 116-233 (June 17, 2020, q4), which the Senate Select Committee on Intelligence frames as "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence"
 - id: or2
   added_date: '2026-05-05'
   organization_path: /organizations/us-navy
@@ -191,7 +186,6 @@ org_relationships:
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p. 2, Scope and Assumptions
-  note: ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies (q2) — distinct from the "Navy" entry preceding it — attesting ONI as a Navy component
 - id: or3
   added_date: '2026-05-05'
   organization_path: /organizations/odni
@@ -199,4 +193,3 @@ org_relationships:
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p. 2, Scope and Assumptions
-  note: The June 25, 2021 Preliminary Assessment was drafted with input from Navy/ONI (q2); ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence (q3)

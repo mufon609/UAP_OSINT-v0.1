@@ -198,7 +198,6 @@ naming_quirks:
   location: 'p. ii, Author line'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The document''s Author line is withheld under FOIA exemption (b)(6) (personal-privacy). The exemption marker is preserved verbatim in quote q2; canonical prose reflects the redaction rather than injecting any external attribution.'
 - id: nq2
   added_date: '2026-05-21'
   observed: '[(b)(3):10 USC 424]'
@@ -206,4 +205,3 @@ naming_quirks:
   location: 'p. ii, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The Prepared-by organizational line, an embedded office designation in the Administrative Note, and the AAWSA Program Manager address line are withheld under FOIA exemption (b)(3) invoking 10 USC 424 (DIA organizational/personnel protection). Markers preserved verbatim in quotes q2 and q3.'

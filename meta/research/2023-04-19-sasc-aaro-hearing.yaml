@@ -55,7 +55,6 @@ participants:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 99-110, 435-447 (witness intro and statement)
-  note: Kirkpatrick was the sole open-session witness; no swearing-in is recorded in the open-session transcript, so oath status is unknown — see witnesses_testimony entry wt1.
 - id: p2
   added_date: '2026-04-28'
   participant_path: /people/kirsten-gillibrand
@@ -90,7 +89,6 @@ witnesses_testimony:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 99-110, 435-1170
-  note: 'The open-session stenographic transcript records no swearing-in moment; SASC oversight hearings vary in whether the chair administers an oath, and any swearing-in for the closed session that preceded the open session is not in the open record. Kirkpatrick''s pre-hearing Statement for the Record was filed as written testimony (PDF metadata creation 2023-04-18 18:28 EDT).'
 timeline:
 - id: t1
   added_date: '2026-04-28'
@@ -289,7 +287,6 @@ naming_quirks:
   location: stenographic transcript lines 1982, 1985, 2113 (Kirkpatrick Q&A)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Alderson Court Reporting stenographer rendered the spoken acronym "USD(I&S)" (Under Secretary of Defense for Intelligence and Security) phonetically as "USDINS" throughout the open-session transcript. Kirkpatrick's pre-hearing written Statement for the Record uses the canonical "USD(I&S)" form. Preserved as it appears in the stenographic transcript.
 - id: nq2
   added_date: '2026-04-28'
   observed: 'Mr. Kirkpatrick'
@@ -297,5 +294,4 @@ naming_quirks:
   location: stenographic transcript throughout (e.g., lines 439, 1194, 1665)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Senate stenographic convention applies "Mr." / "Ms." prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as "Dr. Kirkpatrick"; the speaker-tag prefix "Mr. Kirkpatrick:" is the stenographer's rendering convention.
 rumors: []

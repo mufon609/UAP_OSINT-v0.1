@@ -622,7 +622,6 @@ naming_quirks:
   location: throughout SEC 1-A filing as an internal abbreviation
   source_path: government/sec-ttsa-1a-partii-20170710.html
   resolution: preserve-as-sic-in-quotes
-  note: SEC filing uses 'TTS AAS' as an internal shorthand for the parent company to distinguish from the TTS subsidiary. Public-facing name is 'To The Stars Academy of Arts and Science Inc.' or 'TTSA'.
 - id: nq2
   added_date: '2026-04-22'
   observed: Lue Elizondo
@@ -630,7 +629,6 @@ naming_quirks:
   location: TTSA 2018 homepage and multiple TTSA self-published materials
   source_path: news/tothestarsacademy-home-20180108.html
   resolution: preserve-as-sic-in-quotes
-  note: TTSA routinely uses 'Lue Elizondo' as an informal form; canonical full name per his own public biography is 'Luis Elizondo'.
 - id: nq3
   added_date: '2026-04-22'
   observed: metamateiiais
@@ -638,7 +636,6 @@ naming_quirks:
   location: CRADA 19-15, Section II Article A
   source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF. Correct form 'metamaterials' appears elsewhere in the same document.
 - id: nq4
   added_date: '2026-04-22'
   observed: struefural metamateriais
@@ -646,7 +643,6 @@ naming_quirks:
   location: CRADA 19-15, Article D.1
   source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF.
 - id: nq5
   added_date: '2026-04-22'
   observed: = VP of Operations Jim Semivan
@@ -654,7 +650,6 @@ naming_quirks:
   location: TTSA 2018 homepage, Dec 16 2017 press release
   source_path: news/tothestarsacademy-home-20180108.html
   resolution: preserve-as-sic-in-quotes
-  note: Typographical artifact in TTSA's own press release text ('=' where conjunction 'and' was likely intended).
 - id: nq6
   added_date: '2026-04-22'
   observed: JimSem1, LLC
@@ -662,7 +657,6 @@ naming_quirks:
   location: SEC 1-A filing, directors section
   source_path: government/sec-ttsa-1a-partii-20170710.html
   resolution: use-canonical
-  note: Semivan's consulting firm name; distinguished from 'JimSemI, LLC' which appears in the stock-issuance section of the same filing. Both forms occur in the same document.
 - id: nq7
   added_date: '2026-04-22'
   observed: 215 South Coast Hwy 101, Ste. U-38
@@ -670,7 +664,6 @@ naming_quirks:
   location: CRADA 19-15 document, Collaborator address block (Elizondo mailing address)
   source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
   resolution: preserve-as-sic-in-quotes
-  note: TTSA's SEC 1-A registers the corporate HQ as 1051 S. Coast Hwy 101 Suite B; the CRADA document records Elizondo's TTSA mailing address as 215 South Coast Hwy 101 Suite U-38 (and 315 South Coast Hwy 101 Suite U-38 in a second occurrence with OCR variance). Suite U-38 and Suite B are different suites at the same Encinitas address complex — TTSA appears to have operated from multiple suites simultaneously during 2017-2019. Address variance is not contradiction; both forms are source-attested.
 rumors:
 - id: r1
   added_date: '2026-04-22'
@@ -680,8 +673,6 @@ rumors:
   - DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified)
   - Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024)
   - Public discourse around the TTSA-DEVCOM CRADA material
-  note: |
-    AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository. TTSA's own counter-analysis — the Puthoff/Davis memorandum submitted to the TTSA Board on September 27, 2024 and published February 28, 2025 — concurs that the analysis 'did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin' while qualifying that it 'did not absolutely rule it out either.' TTSA's published corporate position therefore does not endorse the 1947-extraterrestrial claim. The FY2021 Form 1-K (April 2022) additionally describes TTSA's science and technology division — including A.D.A.M. — as 'now retired', documenting the company's own disclosure that the material-analysis research framework ended with the February 2021 strategic reorganization.
 - id: r2
   added_date: '2026-04-22'
   claim: Retired Lt. Gen. William N. McCasland personally facilitated TTSA's founding-era advisory team and had insider knowledge of recovered UAP material at Wright-Patterson Air Force Base.
@@ -689,8 +680,6 @@ rumors:
   observed_sources:
   - DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails #3099)
   - Public discourse about the TTSA-McCasland relationship
-  note: |
-    The sole primary-source attestation of McCasland's advisory-team role is DeLonge's own 2016 email to Podesta. McCasland has not publicly confirmed or denied the claim, and no independent primary-source documentation of his TTSA involvement is archived in this repository. The Podesta email itself is primary-source-authentic (SPF/DMARC/DKIM validated in the raw source), but it documents DeLonge's claim about McCasland, not McCasland's own statements.
 timeline:
 - id: tl1
   category: founding
@@ -1004,7 +993,6 @@ key_personnel:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 31
-  note: The 1-A names DeLonge the company's principal investor and key man.
 - id: kp1b
   added_date: '2026-04-22'
   person_path: /people/tom-delonge
@@ -1052,7 +1040,6 @@ key_personnel:
   source:
     path: news/tothestarsacademy-home-20180108.html
     location: TTSA 2018 homepage Team section
-  note: The cited filings record no specific departure date, describing Elizondo only as a former company employee.
 - id: kp5
   added_date: '2026-04-22'
   person_path: /people/steve-justice
@@ -1101,7 +1088,6 @@ key_personnel:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 32
-  note: Kari DeLonge is the sister of Tom DeLonge.
 - id: kp9b
   added_date: '2026-04-22'
   person_path: /people/kari-delonge
@@ -1137,7 +1123,6 @@ org_relationships:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 7 and p. 28
-  note: Wholly-owned subsidiary acquired via the June 1, 2017 Contribution Agreement (q52).
 - id: or2
   added_date: '2026-04-22'
   organization_path: /organizations/ccdc-ground-vehicle-systems-center
@@ -1145,7 +1130,6 @@ org_relationships:
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: Cover page
-  note: Contracting agency on CRADA 19-15, Warren MI (address at q53).
 - id: or3
   added_date: '2026-04-22'
   organization_path: /organizations/osd
@@ -1153,7 +1137,6 @@ org_relationships:
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: Article C.2, Other Participants
-  note: Named in CRADA 19-15 as an Other Participant that can share historical reports on the origin of TTSA's materiel (q14).
 - id: or4
   added_date: '2026-04-22'
   organization_path: /organizations/aaro
@@ -1161,7 +1144,6 @@ org_relationships:
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: Executive Summary findings section
-  note: Acquired the specimen from a private UAP investigating organization and the U.S. Army (q15), then contracted ORNL in 2022 for independent characterization (q19).
 - id: or5
   added_date: '2026-04-22'
   organization_path: /organizations/earthtech-international
@@ -1169,7 +1151,6 @@ org_relationships:
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 32
-  note: Shared-principal relationship through co-founder Harold E. Puthoff, who has been President and CEO of EarthTech International, Inc. since 1985 while serving as TTSA VP Science and Technology. Not an arms-length partnership — Puthoff founded and runs both entities.
 - id: or6
   added_date: '2026-04-23'
   organization_path: /organizations/gravity-holdings-llc
@@ -1177,7 +1158,6 @@ org_relationships:
   source:
     path: government/sec-ttsa-1k-partii-20250417.html
     location: SEC 1-K FY2024, Directors/Officers section, DeLonge bio and share ownership tables
-  note: Majority shareholder at 52.16% of Class A Common Stock (q54); the June 1, 2021 Binding Term Sheet Amendment routed DeLonge's 784,970 shares to Gravity Holdings (q41), concentrating ownership.
 - id: or7
   added_date: '2026-04-23'
   organization_path: /organizations/love-movie-llc
@@ -1185,4 +1165,3 @@ org_relationships:
   source:
     path: government/sec-ttsa-1k-partii-20220502.html
     location: SEC 1-K FY2021, Related Party Transactions — Binding Term Sheet
-  note: Former wholly-owned subsidiary, sold to DeLonge under the December 24, 2020 Binding Term Sheet, which also terminated the AvA Licensing Agreement (q40).

@@ -515,7 +515,6 @@ naming_quirks:
   location: line 1826
   source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: pdftotext appears to have rendered a fraction glyph (likely ½) as the double-dagger character (U+2021). Preserved verbatim in q31. The substantive claim is that Grusch spent approximately 11.5 hours with the House and Senate intel committees.
 - id: nq2
   added_date: '2026-04-20'
   observed: News Nation
@@ -523,7 +522,6 @@ naming_quirks:
   location: line 1838, 1574, 2319, 2573
   source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Grusch refers to the outlet as "News Nation" (two words) in multiple exchanges; the cable channel's canonical brand is "NewsNation" (one word). Preserved verbatim where quoted (q38); the network's canonical form goes into the wrap_path and entity name.
 speakers:
 - id: s1
   added_date: '2026-04-20'
@@ -533,7 +531,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 724
-  note: Primary subject of this transcript; former intelligence officer, NRO Representative to the UAP Task Force; testified under oath on a multi-decade UAP crash retrieval and reverse engineering program allegation.
 - id: s2
   added_date: '2026-04-20'
   name: David Fravor
@@ -542,7 +539,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 796
-  note: Retired U.S. Navy Commander; 2004 commanding officer of Strike Fighter Squadron 41; testified under oath on the 2004 Nimitz Tic Tac encounter.
 - id: s3
   added_date: '2026-04-20'
   name: Ryan Graves
@@ -551,7 +547,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 640
-  note: Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach encounters.
 - id: s4
   added_date: '2026-04-20'
   name: Glenn Grothman
@@ -559,7 +554,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 79
-  note: Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin).
 - id: s5
   added_date: '2026-04-20'
   name: Robert Garcia
@@ -567,7 +561,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 80
-  note: Ranking Minority Member of the Subcommittee (California).
 - id: s6
   added_date: '2026-04-20'
   name: Tim Burchett
@@ -575,7 +568,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 250
-  note: Representative (Tennessee); led the effort to secure the hearing; questioned Grusch on retaliation, SAP oversight evasion, corporate involvement, and whistleblower routing.
 - id: s7
   added_date: '2026-04-20'
   name: Anna Paulina Luna
@@ -583,7 +575,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 331
-  note: Representative (Florida); co-led the effort to secure the hearing; questioned Grusch on Kirkpatrick contact, NHI adversary claims, FAR violations, and the 1971 nuclear arms treaty.
 - id: s8
   added_date: '2026-04-20'
   name: Jared Moskowitz
@@ -591,7 +582,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 538
-  note: Representative (Florida); questioned Grusch on unsanctioned programs, 10 USC §119, Gang of 8 notification, funding mechanisms, IR&D, and NGA satellite imagery.
 - id: s9
   added_date: '2026-04-20'
   name: Jamie Raskin
@@ -599,7 +589,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1274
-  note: Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned Grusch on post-disclosure retaliation and the "administrative terrorism" characterization.
 - id: s10
   added_date: '2026-04-20'
   name: Virginia Foxx
@@ -607,7 +596,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1579
-  note: Representative (North Carolina); elicited Grusch's sworn contradiction of AARO Director Kirkpatrick's "no credible evidence" public statement.
 - id: s11
   added_date: '2026-04-20'
   name: Maxwell Frost
@@ -615,7 +603,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1634
-  note: Representative (Florida); questioned Graves and Fravor on NASA and commercial aviation collaboration; did not directly question Grusch.
 - id: s12
   added_date: '2026-04-20'
   name: James Comer
@@ -623,7 +610,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1732
-  note: Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett.
 - id: s13
   added_date: '2026-04-20'
   name: Matt Gaetz
@@ -631,7 +617,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1785
-  note: Representative (Florida); waived on to the Subcommittee; questioned Grusch on above-top-secret classification and cited EO 13526.
 - id: s14
   added_date: '2026-04-20'
   name: Alexandria Ocasio-Cortez
@@ -639,7 +624,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1848
-  note: Representative (New York); waived on to the Subcommittee; questioned Grusch on defense contractor interactions, IR&D disclosure requirements, and PPR notification methods.
 - id: s15
   added_date: '2026-04-20'
   name: Andy Biggs
@@ -647,7 +631,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 1948
-  note: Representative (Arizona); questioned Grusch on the UAP Task Force 2019 Security Classification Guide (eliciting Grusch's co-authorship disclosure) and declassification practices.
 - id: s16
   added_date: '2026-04-20'
   name: Eric Burlison
@@ -655,7 +638,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 2054
-  note: Representative (Missouri); waived on to the Subcommittee; questioned Grusch on harm claims, personal witness with wife, and multidimensional/holographic-principle framework.
 - id: s17
   added_date: '2026-04-20'
   name: Nancy Mace
@@ -663,7 +645,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 2238
-  note: Representative (South Carolina); elicited Grusch's sworn affirmatives on nonhuman biologics and active U.S. Government disinformation campaign.
 - id: s18
   added_date: '2026-04-20'
   name: Nick Langworthy
@@ -671,7 +652,6 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 2347
-  note: Representative (New York); waived on to the Subcommittee mid-hearing (line 2050); questioned Fravor only on the 2004 Nimitz encounter details.
 - id: s19
   added_date: '2026-04-20'
   name: Andrew Ogles
@@ -679,4 +659,3 @@ speakers:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 2453
-  note: Representative (Tennessee); waived on to the Subcommittee; questioned Grusch on reconnaissance, vulnerability testing, existential threat assessment, and Department of Energy involvement.

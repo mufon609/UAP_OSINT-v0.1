@@ -112,10 +112,10 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| $22M | $22M | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf | SD004's own page-1 text uses "$22M" (with dollar sign). Elizondo's QFR Q1 indented quotation of the same Lacatski statement uses "22M" (no dollar sign). Both forms are source-attested; preserved verbatim in q2 (SD004 form) and q4 (QFR-quoted form) per source-read-first discipline. |
-| Bigelow Aerospace Facilities | Bigelow Aerospace facilities | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf | SD004 capitalises "Facilities" (Bigelow Aerospace Facilities). Elizondo's QFR Q1 quotation uses lowercase "facilities" (Bigelow Aerospace facilities). Both forms preserved verbatim in q2 (SD004 capitalization) and q4 (QFR lowercase) per source-read-first discipline. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| $22M | $22M | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
+| Bigelow Aerospace Facilities | Bigelow Aerospace facilities | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
 
 ---
 

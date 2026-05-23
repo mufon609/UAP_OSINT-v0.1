@@ -49,7 +49,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 114-116, 615-617, 621-625 (panel listing, witness intro, oath)
-  note: Fravor testified under oath; his oral statement and Q&A responses appear at lines 796-2762 of the transcript; his companion written testimony is filed separately.
 - id: p2
   added_date: '2026-04-20'
   participant_path: /people/ryan-graves
@@ -58,7 +57,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 109-110, 608-610, 621-625 (panel listing, witness intro, oath)
-  note: Graves testified under oath; oral statement at lines 640-721; companion written testimony filed separately.
 - id: p3
   added_date: '2026-04-20'
   participant_path: /people/david-grusch
@@ -67,7 +65,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 111-113, 612-614, 621-625 (panel listing, witness intro, oath)
-  note: Grusch testified under oath; oral statement at lines 724-792; his PPD-19 urgent concern filing is referenced in his testimony.
 - id: p4
   added_date: '2026-04-20'
   participant_path: /people/glenn-grothman
@@ -204,7 +201,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 80, 158-160
-  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 - id: p21
   added_date: '2026-04-20'
   participant_path: /people/pete-sessions
@@ -213,7 +209,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 83, 158-160
-  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 - id: p22
   added_date: '2026-04-20'
   participant_path: /people/jake-laturner
@@ -222,7 +217,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 86, 158-160
-  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 - id: p23
   added_date: '2026-04-20'
   participant_path: /people/kelly-armstrong
@@ -231,7 +225,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 88, 158-160
-  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 - id: p24
   added_date: '2026-04-20'
   participant_path: /people/scott-perry
@@ -240,7 +233,6 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 89, 158-160
-  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 witnesses_testimony:
 - id: wt1
   added_date: '2026-04-20'
@@ -251,7 +243,6 @@ witnesses_testimony:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 621-625
-  note: Fravor was sworn with Graves and Grusch; his oral statement appears in the hearing record; his written testimony was submitted for the record.
 - id: wt2
   added_date: '2026-04-20'
   witness_path: /people/ryan-graves
@@ -261,7 +252,6 @@ witnesses_testimony:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 621-625
-  note: Graves was sworn with Fravor and Grusch; his oral statement appears in the hearing record; his written testimony was submitted for the record.
 - id: wt3
   added_date: '2026-04-20'
   witness_path: /people/david-grusch
@@ -271,7 +261,6 @@ witnesses_testimony:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 621-625
-  note: Grusch was sworn with Fravor and Graves; his oral statement appears in the hearing record; his written testimony was submitted for the record.
 timeline:
 - id: t1
   added_date: '2026-04-20'

@@ -2,7 +2,7 @@
 
 Present on location artifacts. Chronological ownership-transition
 record. Each entry: required {period_start, owner, use_status,
-source}, optional {period_end, owner_path, note}.
+source}, optional {period_end, owner_path}.
 
 Layered date discipline:
 

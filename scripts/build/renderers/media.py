@@ -147,8 +147,8 @@ def render_media_versioning(artifact, fm):
              "media node and this derivative. Aspect enum: duration / "
              "encoding / metadata / content / provenance / other. -->",
              "",
-             "| Aspect | Parent | This | Source | Note |",
-             "|---|---|---|---|---|"]
+             "| Aspect | Parent | This | Source |",
+             "|---|---|---|---|"]
     for e in items:
         aspect = _escape_table_cell(e.get("aspect"))
         parent = _escape_table_cell(e.get("parent_form"))
@@ -163,8 +163,7 @@ def render_media_versioning(artifact, fm):
         else:
             src_cell = ""
         src_cell = _escape_table_cell(src_cell)
-        note = _escape_table_cell(e.get("note"))
-        lines.append(f"| {aspect} | {parent} | {this_v} | {src_cell} | {note} |")
+        lines.append(f"| {aspect} | {parent} | {this_v} | {src_cell} |")
     return "\n".join(lines) + "\n"
 
 

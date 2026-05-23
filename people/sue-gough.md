@@ -38,9 +38,9 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/dod`] | Civilian Public Affairs spokesperson, Defense Press Operations, Office of the Secretary of Defense Public Affairs (OSD(PA)), with the AARO portfolio | 2022-06 | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/dod`] | Civilian Public Affairs spokesperson, Defense Press Operations, Office of the Secretary of Defense Public Affairs (OSD(PA)), with the AARO portfolio | 2022-06 | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
 
 ---
 
@@ -176,21 +176,21 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/sean-kirkpatrick`] | Public Affairs spokesperson covering Kirkpatrick during his AARO directorship; moderated his December 16, 2022 joint AARO media roundtable and confirmed his December 1, 2023 last-day date to DefenseScoop on November 30, 2023. |  |
-| [`/people/ronald-moultrie`] | Moderated Moultrie's December 16, 2022 joint AARO media roundtable with Kirkpatrick at the Pentagon (STAFF moderator role). |  |
-| [`/people/tim-phillips`] | Public Affairs spokesperson covering Phillips during his AARO Acting Director tenure; coordinated the small-group invite-only press posture for the March 8, 2024 AARO Historical Record Report Volume I briefing and declined further press engagement with Phillips per the FOIA 24-F-0894 standardized email response. |  |
-| [`/people/jonathan-kosloski`] | Public Affairs spokesperson covering Kosloski during his AARO directorship; provided the on-record AARO Full Operational Capability declaration on December 5, 2024 and the AARO 2,000+ caseload statement on February 25, 2026. |  |
-| [`/people/david-kozik`] | OSD(PA) counterpart to Kozik (OUSD(I&S) Director of Congressional Activities) on AARO Hill-facing scope; March 6-7, 2024 email exchange on AARO sUAS portfolio in FOIA 24-F-0894. |  |
+| Person | Relationship |
+|---|---|
+| [`/people/sean-kirkpatrick`] | Public Affairs spokesperson covering Kirkpatrick during his AARO directorship; moderated his December 16, 2022 joint AARO media roundtable and confirmed his December 1, 2023 last-day date to DefenseScoop on November 30, 2023. |
+| [`/people/ronald-moultrie`] | Moderated Moultrie's December 16, 2022 joint AARO media roundtable with Kirkpatrick at the Pentagon (STAFF moderator role). |
+| [`/people/tim-phillips`] | Public Affairs spokesperson covering Phillips during his AARO Acting Director tenure; coordinated the small-group invite-only press posture for the March 8, 2024 AARO Historical Record Report Volume I briefing and declined further press engagement with Phillips per the FOIA 24-F-0894 standardized email response. |
+| [`/people/jonathan-kosloski`] | Public Affairs spokesperson covering Kosloski during his AARO directorship; provided the on-record AARO Full Operational Capability declaration on December 5, 2024 and the AARO 2,000+ caseload statement on February 25, 2026. |
+| [`/people/david-kozik`] | OSD(PA) counterpart to Kozik (OUSD(I&S) Director of Congressional Activities) on AARO Hill-facing scope; March 6-7, 2024 email exchange on AARO sUAS portfolio in FOIA 24-F-0894. |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
 
 ---
 
@@ -211,8 +211,6 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 ### "The Sue Gough who serves as Department of Defense Public Affairs spokesperson with the AARO portfolio is the same Susan I. Gough who authored the April 7, 2003 U.S. Army War College Strategy Research Project paper "The Evolution of Strategic Influence" on perception management and strategic communication doctrine."
 
 **Circulates in:** UAP-disclosure online discussion linking Gough's 2003 USAWC perception-management paper to her later DoD/AARO UAP spokesperson role
-
-**Investigator note:** Middle initial differs in the two attestations — FOIA case 24-F-0894 email signatures use "L" (Gough, Susan L (Sue)), and the 2003 USAWC paper byline uses "I" (Susan I. Gough). No archived primary source bridges the two identities. The conflation rests on online inference, not on primary-source attestation.
 
 ---
 

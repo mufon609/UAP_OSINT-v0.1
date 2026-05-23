@@ -133,17 +133,16 @@ def render_transcript_speakers(artifact):
     as `## Key Passages`."""
     items = sort_by_id([s for s in (artifact.get("speakers") or []) if isinstance(s, dict)])
     lines = ["## Speakers", "",
-             "| Name | Role | Node Link | Note |",
-             "|---|---|---|---|"]
+             "| Name | Role | Node Link |",
+             "|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
         return "\n".join(lines) + "\n"
     for s in items:
         lines.append(
             f"| {_escape_table_cell(s.get('name'))} | "
             f"{_escape_table_cell(s.get('role'))} | "
-            f"{_wrap_path(s.get('node_link'))} | "
-            f"{_escape_table_cell(s.get('note'))} |"
+            f"{_wrap_path(s.get('node_link'))} |"
         )
     return "\n".join(lines) + "\n"
 

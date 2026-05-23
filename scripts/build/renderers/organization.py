@@ -176,14 +176,13 @@ def render_org_overview(artifact, kind):
 
 def _org_key_personnel_row(e):
     """Render a single Key Personnel row — person wrap + role + period
-    + source.path + note (parallels the person affiliations row shape)."""
+    + source.path (parallels the person affiliations row shape)."""
     person = _wrap_path(e.get("person_path"))
     return (
         f"| {person} | "
         f"{e.get('role') or ''} | "
         f"{_format_period(e)} | "
-        f"{(e.get('source') or {}).get('path') or ''} | "
-        f"{_escape_table_cell(e.get('note'))} |"
+        f"{(e.get('source') or {}).get('path') or ''} |"
     )
 
 
@@ -217,8 +216,8 @@ def render_org_key_personnel(artifact):
             out += [
                 f"{h4_level} {_LEADERSHIP_CLASS_HEADING[cls]}",
                 "",
-                "| Name | Role | Period | Source | Note |",
-                "|---|---|---|---|---|",
+                "| Name | Role | Period | Source |",
+                "|---|---|---|---|",
             ]
             for e in buckets[cls]:
                 out.append(_org_key_personnel_row(e))
@@ -278,10 +277,10 @@ def render_org_primary_contracts(artifact):
     items = sort_by_date(items, "period_start")
 
     lines = ["## Primary Contracts", "",
-             "| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source | Note |",
-             "|---|---|---|---|---|---|---|---|"]
+             "| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |",
+             "|---|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |  |")
         return "\n".join(lines) + "\n"
 
     deliverable_blocks = []
@@ -294,8 +293,7 @@ def render_org_primary_contracts(artifact):
             f"{e.get('value') or ''} | "
             f"{counterparty} | "
             f"{e.get('subject') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
         deliverables = e.get("deliverables") or []
         if deliverables:
@@ -325,22 +323,21 @@ def render_org_relationships(artifact):
         return (
             f"| {org} | "
             f"{e.get('relationship_type') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Organization | Relationship | Source | Note |",
-             "|---|---|---|---|"]
+             "| Organization | Relationship | Source |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Relationship | Source | Note |",
-                  "|---|---|---|---|"]
+                  "| Organization | Relationship | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"

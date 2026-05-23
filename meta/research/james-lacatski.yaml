@@ -51,7 +51,6 @@ affiliations:
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: p. 1, Administrative Note
-  note: 'Period_end is Lacatski''s self-attested 2016 retirement, not a DIRD-attested AAWSA Program Manager end date. Period_start is left open: Lacatski self-attests he came from "the contractor world" in the first half of his career prior to DIA, but no source dates the DIA tenure start.'
 relationships:
 - id: r1
   added_date: '2026-05-17'
@@ -60,7 +59,6 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[1:01]'
-  note: ''
 - id: r2
   added_date: '2026-05-17'
   person_path: /people/george-knapp
@@ -68,7 +66,6 @@ relationships:
   source:
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
     location: '[0:03]'
-  note: ''
 - id: r3
   added_date: '2026-05-17'
   person_path: /people/harry-reid
@@ -76,7 +73,6 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[1:53]'
-  note: EP 38 auto-caption renders "Reid" as "Reed" (see nq6).
 - id: r4
   added_date: '2026-05-17'
   person_path: /people/robert-bigelow
@@ -84,7 +80,6 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[3:19]'
-  note: EP 38 auto-caption renders "Bigelow's BAASS" as "Bob Bigelow's bass."
 - id: r5
   added_date: '2026-05-17'
   person_path: /people/luis-elizondo
@@ -92,7 +87,6 @@ relationships:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: p. 2, Q1 response
-  note: ''
 - id: r6
   added_date: '2026-05-17'
   person_path: /people/jeremy-corbell
@@ -100,7 +94,6 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[0:43]'
-  note: ''
 - id: r7
   added_date: '2026-05-17'
   person_path: /people/david-grusch
@@ -108,7 +101,6 @@ relationships:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[31:44]–[32:25]'
-  note: ''
 - id: r8
   added_date: '2026-05-17'
   person_path: /people/hal-puthoff
@@ -116,7 +108,6 @@ relationships:
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: p. 1, Administrative Note
-  note: ''
 - id: r9
   added_date: '2026-05-17'
   person_path: /people/dylan-borland
@@ -124,7 +115,6 @@ relationships:
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[20:53]'
-  note: PART 2 auto-caption renders "Grusch" as "Grush."
 - id: r10
   added_date: '2026-05-17'
   person_path: /people/tara-otoole
@@ -132,7 +122,6 @@ relationships:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[26:03]–[26:30]'
-  note: The Kona-Blue meeting framing ("you met with her," "she's staying away from it") is the WEAPONIZED PART 1 interviewer's, not Lacatski's; Lacatski's own voice is only the decline to discuss her perspective.
 program_involvement:
 - id: pi1
   added_date: '2026-05-17'
@@ -145,7 +134,6 @@ program_involvement:
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: p. 1, Administrative Note
-  note: 'period_end is Lacatski''s 2016 DIA retirement, not the program''s lifecycle: AAWSAP funding stopped September 2010 and the 90-day no-cost extension ran out December 2010 (see Timeline), but Lacatski stayed at DIA per his account through 2016.'
 - id: pi2
   added_date: '2026-05-17'
   program: Kona Blue Program (KBP) ([`/organizations/kona-blue`])
@@ -155,7 +143,6 @@ program_involvement:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[2:00]–[2:22]'
-  note: 'Confidence is medium because Kona Blue rests on Lacatski''s self-attestation alone — there is no third-party corroboration on the order of the Puthoff DIRD page-1 mention or the Elizondo QFR that anchor the AAWSAP attribution. Period dates not attested in source.'
 - id: pi3
   added_date: '2026-05-17'
   program: SD004 Page-1 DOPSR-Cleared Statement (entered into 2024-11-13 House Oversight UAP hearing record)
@@ -166,7 +153,6 @@ program_involvement:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: p. 2, Q1 response
-  note: 'Authorship is attested only at one remove — by Elizondo''s sworn QFR Q1, not by Lacatski directly. DOPSR clearance attests authorization to publish; the underlying Lockheed Martin / Ryder factual claim is not adjudicated by DOPSR.'
 timeline:
 - id: t1
   added_date: '2026-05-17'
@@ -836,7 +822,6 @@ naming_quirks:
   location: WEAPONIZED EP 38 (2023-10-16) — multiple occurrences in auto-caption
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of Lacatski's surname in WEAPONIZED EP 38. See the EP 38 transcript artifact's naming_quirks for full location list.
 - id: nq2
   added_date: '2026-05-17'
   observed: lakatsky
@@ -844,7 +829,6 @@ naming_quirks:
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of Lacatski's surname in the 2021 Mystery Wire interview. See the Mystery Wire transcript artifact's naming_quirks for full location list.
 - id: nq3
   added_date: '2026-05-17'
   observed: lykotsky
@@ -852,7 +836,6 @@ naming_quirks:
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of Lacatski's surname in the 2021 Mystery Wire interview when spoken by Kelleher.
 - id: nq4
   added_date: '2026-05-17'
   observed: caskey
@@ -860,7 +843,6 @@ naming_quirks:
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of Lacatski's surname in Knapp's closing address ("dr caskey jim").
 - id: nq5
   added_date: '2026-05-17'
   observed: laty
@@ -868,7 +850,6 @@ naming_quirks:
   location: WEAPONIZED EP 38 closing recap — auto-caption
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of Lacatski's surname in Corbell's closing recap address ("Dr lat" / "Dr laty").
 - id: nq6
   added_date: '2026-05-17'
   observed: Reed
@@ -876,7 +857,6 @@ naming_quirks:
   location: WEAPONIZED EP 38 [1:53] — auto-caption
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Senator Harry Reid" as "Senator Reed" in Lacatski's AAWSAP creation attestation.
 - id: nq7
   added_date: '2026-05-18'
   observed: AATIP
@@ -884,7 +864,6 @@ naming_quirks:
   location: 8 News Now segment 2026-04-06 (narrator George Knapp throughout) and WEAPONIZED EP 114 (Knapp narration repeatedly)
   source_path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   resolution: disputed
-  note: Both new 2026 sources have George Knapp's narration using "AATIP" to refer to the program Lacatski directed at DIA — but the program Lacatski directed was AAWSAP, not AATIP, and Lacatski's own quotes consistently use "AAWSAP" / "A SAP" (auto-caption for AAWSAP) and separately clarify the AATIP-name history (q38). Resolution `disputed` because the divergence is between two primary-source attestations of the same fact (program name), not a typo to harmonize.
 - id: nq8
   added_date: '2026-05-18'
   observed: Dothraki
@@ -892,7 +871,6 @@ naming_quirks:
   location: WEAPONIZED EP 114 [1:11:57] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of "DOPSR" (Defense Office of Prepublication and Security Review) as "Dothraki" in Corbell's question about how Lacatski's book revelations were authorized.
 - id: nq9
   added_date: '2026-05-18'
   observed: Burleson
@@ -900,7 +878,6 @@ naming_quirks:
   location: WEAPONIZED EP 114 [1:14:06] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of Rep. Eric Burlison's surname as "Burleson" in Lacatski's reference to a Burlison statement about Lacatski's book sufficiency.
 - id: nq10
   added_date: '2026-05-18'
   observed: Lakatski
@@ -908,7 +885,6 @@ naming_quirks:
   location: WEAPONIZED EP 114 multiple occurrences in auto-caption (e.g., [56:38], [1:36:05])
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of Lacatski's surname in EP 114 — capitalized variant "Lakatski" (distinct from EP 38's "latsky" / Mystery Wire 2021's "lakatsky").
 - id: nq11
   added_date: '2026-05-18'
   observed: Bass
@@ -916,5 +892,4 @@ naming_quirks:
   location: WEAPONIZED EP 114 [1:29:42] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering of BAASS (Bigelow Aerospace Advanced Space Studies) as "Bass" in Lacatski's reflection on what Bass did right ("We didn't fail at all on the research that Bass did").
 rumors: []

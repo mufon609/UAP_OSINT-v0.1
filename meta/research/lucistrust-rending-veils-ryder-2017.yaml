@@ -43,7 +43,6 @@ speakers:
   source:
     path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
     location: '[00:00]'
-  note: 'Lucis Trust ([`/organizations/lucis-trust`]) Arcane School ([`/organizations/lucis-trust-arcane-school`]) Conference moderator; first name only given in the transcript. Introduces the talk topic, frames the speaker as "either a Druid from Glastonbury or a Lockheed guy," and steers the conversational sections. Last name not attested in this source. Paired in the conference programme with Dr. Lee Blackburn''s ([`/people/lee-blackburn`]) "Part 2: The Violet Force and Health".'
 - id: s2
   added_date: '2026-05-17'
   name: Dr. James T. Ryder
@@ -52,7 +51,6 @@ speakers:
   source:
     path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
     location: '[04:05]'
-  note: Retired Vice President of Lockheed Martin Space Systems Company ([`/organizations/lockheed-martin-space-systems-company`]) and former head of the Advanced Technology Centre. Chairman of the Board for the International Science Foundation and the Institute for Venture Science at the time of the talk.
 quotes:
 - id: q1
   speaker_id: s1
@@ -194,7 +192,6 @@ naming_quirks:
   location: '[36:05], [36:20], [39:30], [47:34], [54:36]'
   source_path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
   resolution: preserve-as-sic-in-quotes
-  note: Whisper renders the theosophical term "devas" (Alice Bailey / Ageless Wisdom nature-spirit intelligences) inconsistently — five occurrences correctly rendered as "devas" ([00:11], [07:36], [60:07], [60:31], [60:44]) and five as "divas" (the more common English word; phonetically similar). The Bailey-tradition canonical form is "devas." Preserved verbatim per source-read-first discipline.
 - id: nq2
   added_date: '2026-05-17'
   observed: Vail
@@ -202,4 +199,3 @@ naming_quirks:
   location: '[06:36], [06:41], [06:50]'
   source_path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
   resolution: preserve-as-sic-in-quotes
-  note: Ryder pronounces "Veil" in a way whisper renders as "Vail" (an alternate spelling that does exist but is not the talk title's canonical form). The talk's published title is "The Rending of the Veils" (per the Lucis Trust conference page); the transcript's "Vail" rendering is preserved verbatim where it appears.

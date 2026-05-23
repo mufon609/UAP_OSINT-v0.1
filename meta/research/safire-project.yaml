@@ -510,7 +510,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html ¶17 (David Talbott bio)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project corporate team page renders "empirical" as "empircal" in David Talbott''s consulting-team bio — typo at the source. Canonical form: empirical. Preserved verbatim per source-form discipline.'
 - id: nq2
   added_date: '2026-05-07'
   observed: exerpience
@@ -518,7 +517,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html ¶16 (Jim Ryder consulting bio)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project corporate team page renders "experience" as "exerpience" in Jim Ryder''s consulting-team bio — typo at the source. Canonical form: experience. Preserved verbatim where the bio text appears in source extracts.'
 - id: nq3
   added_date: '2026-05-07'
   observed: scientfic
@@ -526,7 +524,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html ¶14 (consulting team description)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project corporate team page renders "scientific" as "scientfic" in the consulting team description — typo at the source. Canonical form: scientific.'
 - id: nq4
   added_date: '2026-05-07'
   observed: atmoshere
@@ -534,7 +531,6 @@ naming_quirks:
   location: 'sources/news/safireproject-phase-three-snapshot.html ¶7 (stated discoveries)'
   source_path: news/safireproject-phase-three-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project Phase Three page renders "atmosphere" as "atmoshere" in the project''s stated counter-thermonuclear-model finding ("The core of SAFIRE is cooler than its surrounding atmoshere"). Canonical form: atmosphere. Preserved verbatim per source-form discipline.'
 - id: nq5
   added_date: '2026-05-07'
   observed: photoshpere
@@ -542,7 +538,6 @@ naming_quirks:
   location: 'sources/news/safireproject-phase-three-snapshot.html ¶7'
   source_path: news/safireproject-phase-three-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project Phase Three page renders "photosphere" as "photoshpere" in the electron-density comparison statement. Canonical form: photosphere. Preserved verbatim per source-form discipline.'
 - id: nq6
   added_date: '2026-05-07'
   observed: succesfully
@@ -550,7 +545,6 @@ naming_quirks:
   location: 'sources/news/safireproject-commercialization-snapshot.html ¶3'
   source_path: news/safireproject-commercialization-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project commercialization page renders "successfully" as "succesfully" in the project''s research-to-commercial transition statement. Canonical form: successfully. Preserved verbatim per source-form discipline.'
 - id: nq7
   added_date: '2026-05-07'
   observed: John Hopkins University
@@ -558,7 +552,6 @@ naming_quirks:
   location: 'sources/news/safireproject-genesis-snapshot.html (planning session photo caption)'
   source_path: news/safireproject-genesis-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project genesis page renders "Johns Hopkins" as "John Hopkins" in the planning session photo caption ("Michael Clarage, Montgomery Childs, Wal Thornhill, Paul Anderson; planning session at John Hopkins University."). Canonical form: Johns Hopkins University.'
 - id: nq8
   added_date: '2026-05-07'
   observed: Hal Putoff
@@ -566,7 +559,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html (group photo caption identifying photo subjects)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project team page group-photo caption renders "Puthoff" as "Putoff" alongside other subject identifications. Canonical form: Hal Puthoff. Same person who appears correctly as "Harold Puthoff, PhD" in the Science Review Team listing on the same page.'
 - id: nq9
   added_date: '2026-05-07'
   observed: Monty
@@ -574,7 +566,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html (multiple paragraphs); sources/news/safireproject-genesis-snapshot.html'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-  note: 'SAFIRE Project pages frequently use the informal short form "Monty" for Montgomery Childs (e.g., "Monty''s right-hand man", "Scott introduced Monty''s proposal"). Alias-of-record — not a typo; Monty is the project-internal informal address form used across multiple paragraphs.'
 rumors: []
 timeline:
 - id: t12
@@ -765,7 +756,6 @@ key_personnel:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶12'
-  note: 'Named under foundation partners with the Mainwaring Archive Foundation on the SAFIRE Project team page.'
 - id: kp12
   added_date: '2026-05-07'
   person_path: /people/scott-mainwaring
@@ -815,7 +805,6 @@ key_personnel:
   source:
     path: news/safireproject-project-report.pdf
     location: 'p. 69 (THE SAFIRE PROJECT Team listing)'
-  note: 'Also named in the SAFIRE corporate team page group photo with other team members.'
 org_relationships:
 - id: or1
   added_date: '2026-05-07'
@@ -852,4 +841,3 @@ org_relationships:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶18 (science review team) and ¶21 (corporate consultants)'
-  note: 'SAFIRE Project corporate team page lists Hathaway Consulting Services on the science review team alongside Ryder, Puthoff, Davis, and Gardner, and also separately under corporate consultants. Schema relationship_type "other" used because the closed enum does not include "consulting" or "science-review-team-member"; specific role preserved here in the note.'

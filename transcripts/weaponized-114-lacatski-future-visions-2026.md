@@ -49,11 +49,11 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] | KLAS-TV / 8 News Now / Mystery Wire chief investigator; WEAPONIZED co-host; book co-author with Lacatski. |
-| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] | WEAPONIZED co-host with George Knapp; primary in-studio questioner of Lacatski. |
-| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director and Kona Blue lead at DIA. Surname renders canonically as "Lacatski" through most of the transcript; one variant "Lakatski" registered in naming_quirks. |
+| Name | Role | Node Link |
+|---|---|---|
+| George Knapp | Co-Host | [`/people/george-knapp`] |
+| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
 
 ---
 
@@ -297,13 +297,13 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| ASAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of "AAWSAP" as "ASAP" in Lacatski's references; same pattern as earlier transcripts. |
-| A SAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption two-word rendering of "AAWSAP" as "A SAP" in Lacatski's "everything from A SAP and Kona Blue" attestation. |
-| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of "Lacatski" as "Lakatski" in one Corbell address ("Lakatski, you're like building an institutional argument"). |
-| skiff | SCIF | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption phonetic rendering of "SCIF" (Sensitive Compartmented Information Facility) as "skiff" in Corbell's paraphrase of the Lacatski-DHS 2011 briefing from the Future Visions book. |
-| Lacy | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption short-form rendering of "Lacatski" as "Lacy" — same variant that appeared in PART 2. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| ASAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| A SAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| skiff | SCIF | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| Lacy | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
 
 ---
 
@@ -311,9 +311,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| AATIP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | WEAPONIZED EP 114 narration consistently uses "AATIP" for the program Lacatski directed at DIA — same as the 8 News Now news segment ([`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]). Per Lacatski's own attestations in WEAPONIZED EP 38, Mystery Wire 2021, WEAPONIZED PART 1, and the Puthoff DIRD attribution, the program he directed was AAWSAP. The WEAPONIZED EP 114 framing diverges from Lacatski's own self-attestations; preserved with resolution `disputed`. |
+| Position | Counterpart | Source |
+|---|---|---|
+| AATIP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
 
 ---
 
@@ -358,7 +358,6 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Transcripts
 
-- [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]
 - [`/transcripts/weaponized-096-lacatski-part1-2025`]
 - [`/transcripts/weaponized-097-lacatski-part2-2025`]
 

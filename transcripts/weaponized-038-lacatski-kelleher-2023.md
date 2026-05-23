@@ -41,12 +41,12 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] | KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher. |
-| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] | WEAPONIZED co-host with George Knapp. |
-| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director at DIA; co-author of the book under discussion. Auto-caption renders his surname variously as "latsky" / "laty" — see naming_quirks. |
-| Dr. Colm Kelleher | Guest | [`/people/colm-kelleher`] | Former BAASS program manager; co-author of the book. Auto-caption renders his first name as "colum" / "Callum" and his last name as "kellerer" — see naming_quirks. |
+| Name | Role | Node Link |
+|---|---|---|
+| George Knapp | Co-Host | [`/people/george-knapp`] |
+| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
+| Dr. Colm Kelleher | Guest | [`/people/colm-kelleher`] |
 
 ---
 
@@ -264,30 +264,30 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Lacatski" phonetically as "latsky" throughout the interview. Preserved as it appears in the caption file. |
-| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of "Lacatski" as "laty" in Corbell's closing recap address ("Dr lat" / "Dr laty"). Preserved as it appears. |
-| kellerer | Kelleher | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Kelleher" as "kellerer" in Corbell's opening and follow-up references. Preserved as it appears. |
-| colum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "colum" throughout. Preserved as it appears. |
-| Callum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of Colm Kelleher's first name as "Callum" in Lacatski's reference to a question "asked to Callum." Preserved as it appears. |
-| naap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Knapp" as "naap" in Corbell's reference to "George naap" early in the interview. Preserved as it appears. |
-| knap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of "Knapp" as "knap" — the self-introduction tag at the start of the episode ("my name is George knap"). Preserved as it appears. |
-| oap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "AAWSAP" as "oap" / "the oap program" in Corbell's framing question and Lacatski's timeline discussion. Preserved as it appears. |
-| ossap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "ossap" / "o assap" in Lacatski's post-program timeline discussion. Preserved as it appears. |
-| assap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of "AAWSAP" as "assap" throughout. Preserved as it appears. |
-| asap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "asap" — overlaps with the English word "as soon as possible" but in context refers to AAWSAP. Preserved as it appears. |
-| asep | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "asep" in Corbell's recap "it was called asep Advanced Aerospace weapon system applications program." Preserved as it appears. |
-| Assam | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption rendering of "AAWSAP" as "Assam" (a state in India) in Lacatski's discussion of adversary monitoring. Preserved as it appears. |
-| atip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "AATIP" as "atip" (single A). Preserved as it appears. |
-| a tip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "AATIP" as the two-word "a tip." Preserved as it appears. |
-| bass | BAASS | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "BAASS" as "bass" in Lacatski's references to Bigelow's program-execution subsidiary. Preserved as it appears. |
-| Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Senator Reid" (Harry Reid) as "Senator Reed" — Reed and Reid are different US senators (Jack Reed of Rhode Island vs Harry Reid of Nevada); the AAWSAP founding senator is Harry Reid, not Jack Reed. Auto-caption is phonetically ambiguous; preserved as it appears. |
-| alzando | Elizondo | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Elizondo" as "alzando" in Corbell's opening reference to "Lou alzando" — Luis Elizondo. Preserved as it appears. |
-| luel isad | Lue Elizondo | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Lue Elizondo" as the merged "luel isad" in Lacatski's identification of who he believes created the AATIP name. The "isad" component is a phonetic merger of "Elizondo"; context (with "Axel Rod" — possibly a codename — and "their cohorts") supports the canonical identification. Preserved as it appears. |
-| Gia | DIA | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "DIA" as "Gia" in Lacatski's reference to adversary employees "hopefully not in Gia but in the contractor part." Preserved as it appears. |
-| grush | Grusch | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Grusch" (David Grusch) as "grush" in Corbell's reference to "the big big question with David grush." Preserved as it appears. |
-| Capital Hill | Capitol Hill | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Capitol Hill" as "Capital Hill" in Corbell's framing question about the 2011 meeting. Preserved as it appears. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| kellerer | Kelleher | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| colum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Callum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| naap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| knap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| oap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| ossap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| assap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| asap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| asep | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Assam | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| atip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| a tip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| bass | BAASS | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| alzando | Elizondo | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| luel isad | Lue Elizondo | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Gia | DIA | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| grush | Grusch | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Capital Hill | Capitol Hill | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 
 ---
 

@@ -182,9 +182,7 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry:
-        - [key_personnel, note]
-        - [contracts, note]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
     kinds:
@@ -407,8 +405,7 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry:
-        - [media_versioning, note]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
       optional: [derivation_of]
@@ -455,9 +452,7 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry:
-        - [ownership_timeline, note]
-        - [top_scope_activity, note]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, created]
     required_sections:
@@ -503,8 +498,7 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry:
-        - [contradictions, note]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, created, updated]
       optional: [superseded_by]

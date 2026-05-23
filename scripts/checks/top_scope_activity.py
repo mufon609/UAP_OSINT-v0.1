@@ -9,7 +9,7 @@ shape only; the distinction is contributor judgment at authoring
 time.
 
 Each entry: required {period_start, activity, source}, optional
-{period_end, actor_paths (list), note}. ``actor_paths`` (when set)
+{period_end, actor_paths (list)}. ``actor_paths`` (when set)
 is a list of repo "/" paths — same shape as ``contracts.deliverables``.
 
 Topic-neutral by design: the schema field key is ``top_scope_activity``,

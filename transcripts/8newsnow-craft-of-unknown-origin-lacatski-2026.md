@@ -38,11 +38,11 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| George Knapp | Host / Investigative Reporter | [`/people/george-knapp`] | KLAS-TV / 8 News Now Las Vegas chief investigator; primary narrator-anchor of the segment; book co-author with Lacatski. |
-| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director at DIA; speaks directly on-camera with Knapp; surname renders canonically as "Lacatski" in this segment. |
-| Anchor | Studio Anchor (closing) |  | Unnamed studio anchor closing the segment ("Does it get more interesting than a George Knapp report?"); anonymized in the transcript. |
+| Name | Role | Node Link |
+|---|---|---|
+| George Knapp | Host / Investigative Reporter | [`/people/george-knapp`] |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
+| Anchor | Studio Anchor (closing) |  |
 
 ---
 
@@ -130,9 +130,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski's own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-096-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-15-advanced-space-propulsion`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment 'AATIP' framing diverges from Lacatski's own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources. |
+| Position | Counterpart | Source |
+|---|---|---|
+| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md |
 
 ---
 
@@ -157,14 +157,11 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Documents
 
-- [`/documents/dird-15-advanced-space-propulsion`]
 - [`/documents/future-visions-2026`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
 
 ### Transcripts
 
-- [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]
-- [`/transcripts/weaponized-038-lacatski-kelleher-2023`]
 - [`/transcripts/weaponized-096-lacatski-part1-2025`]
 - [`/transcripts/weaponized-097-lacatski-part2-2025`]
 - [`/transcripts/weaponized-114-lacatski-future-visions-2026`]

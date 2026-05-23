@@ -1,7 +1,7 @@
 """participants check — type-conditional research-artifact check.
 
 Present on event artifacts (both kinds). Each entry: required
-{participant_path, capacity, source}, optional {role, flagged, note}.
+{participant_path, capacity, source}, optional {role, flagged}.
 
 ``capacity`` drives sub-section routing in the hearing renderer's
 Participants section — witness-eyewitness → "Eyewitness Testimony",

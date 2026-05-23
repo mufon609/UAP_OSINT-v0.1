@@ -34,11 +34,11 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| George Knapp | Host / Interviewer | [`/people/george-knapp`] | KLAS-TV / 8 News Now Las Vegas investigative reporter; Mystery Wire founder; co-author with Lacatski and Kelleher of "Skinwalkers at the Pentagon" (October 2021); interviewer throughout this segment. |
-| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director at DIA; co-author of "Skinwalkers at the Pentagon"; primary subject of the interview. Auto-caption renders his surname as "lakatsky" / "lykotsky" / "caskey" — see naming_quirks. |
-| Dr. Colm Kelleher | Guest | [`/people/colm-kelleher`] | Former BAASS program manager; co-author of "Skinwalkers at the Pentagon"; second guest in the interview. Auto-caption renders his first name as "collin" / "column" — see naming_quirks. |
+| Name | Role | Node Link |
+|---|---|---|
+| George Knapp | Host / Interviewer | [`/people/george-knapp`] |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
+| Dr. Colm Kelleher | Guest | [`/people/colm-kelleher`] |
 
 ---
 
@@ -191,22 +191,22 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "Lacatski" phonetically as "lakatsky" in the opening Knapp address. Preserved as it appears in the caption file. |
-| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption alternate rendering of "Lacatski" when spoken by Kelleher — "lykotsky" replaces the initial L-a- with L-y- and renders the final -ski as -tsky. Preserved as it appears. |
-| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption third variant of "Lacatski" — "caskey" when Knapp addresses Lacatski before the DoD review question ("dr caskey jim"). Preserved as it appears. |
-| collin | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name phonetically as "collin" in Knapp's turn-of-speaker address. Preserved as it appears. |
-| column | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption second rendering of Colm Kelleher's first name as "column" in Knapp's closing turn-of-speaker address ("column you're excited to it"). Preserved as it appears. |
-| allsap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "AAWSAP" as "allsap" in Knapp's framing question. AAWSAP = Advanced Aerospace Weapon System Applications Program. Preserved as it appears. |
-| ossap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "AAWSAP" as "ossap" in multiple Kelleher turns. Preserved as it appears. |
-| asap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "asap" in multiple Lacatski + Kelleher turns. Preserved as it appears. |
-| osap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "osap" in the AAWSAP/AATIP distinction turn. Preserved as it appears. |
-| atip | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "AATIP" as "atip" (single A). AATIP = Advanced Aerospace Threat Identification Program. Preserved as it appears. |
-| atep | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption alternate rendering of "AATIP" as "atep" in Knapp's clarification question and Lacatski's response. Preserved as it appears. |
-| bass | BAASS | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "BAASS" as "bass" in Knapp's turn-of-speaker question to Kelleher. BAASS = Bigelow Aerospace Advanced Space Studies. Preserved as it appears. |
-| aflacy | AFOSI | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption mid-passage variant — the canonical form "afosi" appears earlier in the same Kelleher turn ([6:04]), then the variant "aflacy" appears at [6:19]. AFOSI = Air Force Office of Special Investigations. Preserved as it appears. |
-| tick | Tic Tac | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption renders "Tic Tac" as "tick" in Kelleher's closing comment about the book covering "the genesis of tick investigation." Preserved as it appears. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| collin | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| column | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| allsap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| ossap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| asap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| osap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| atip | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| atep | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| bass | BAASS | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| aflacy | AFOSI | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| tick | Tic Tac | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 
 ---
 

@@ -1,7 +1,7 @@
 """publication-record check — archetype-conditional research-artifact check.
 
 Present on reporter person artifacts. Each entry: required
-{publication, outlet, date, source}, optional {node_link, beat, note}.
+{publication, outlet, date, source}, optional {node_link, beat}.
 
 Shape-only: no enums. publication / outlet / date are all free-text
 source-attested fields — the entry defers vocabulary to the

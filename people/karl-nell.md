@@ -36,14 +36,14 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/uaptf`] | Army director / Army liaison for the UAP Task Force | 2021 – 2022 | news/thedebrief-grusch-2023.html | Role-label variance between sources: "liaison" (The Debrief, reporter framing) versus "Army director supporting the UAP Task Force" (Nell's self-authored Sol Foundation About the Author bio). |
-| [`/organizations/sol-foundation`] | author (Policy Papers, Vol. 2 No. 2, Spring 2025) | 2023 | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start 2023 anchored to the Inaugural Symposium appearance at Stanford on November 17–18, 2023, predating the 2025 policy-paper publication that sources this row; end open. |
-| [`/organizations/stardustx-materials`] | Chief Executive Officer |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Start date not attested in source. |
-| [`/organizations/bell-laboratories`] | engineer (industry employee) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
-| [`/organizations/lockheed-martin`] | industry employee |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
-| [`/organizations/northrop-grumman`] | industry employee (Northrop Grumman TASC) |  | government/solfoundation-ufo-enigma-nell-2025.pdf | Period start / end not attested directly. |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/uaptf`] | Army director / Army liaison for the UAP Task Force | 2021 – 2022 | news/thedebrief-grusch-2023.html |
+| [`/organizations/sol-foundation`] | author (Policy Papers, Vol. 2 No. 2, Spring 2025) | 2023 | government/solfoundation-ufo-enigma-nell-2025.pdf |
+| [`/organizations/stardustx-materials`] | Chief Executive Officer |  | government/solfoundation-ufo-enigma-nell-2025.pdf |
+| [`/organizations/bell-laboratories`] | engineer (industry employee) |  | government/solfoundation-ufo-enigma-nell-2025.pdf |
+| [`/organizations/lockheed-martin`] | industry employee |  | government/solfoundation-ufo-enigma-nell-2025.pdf |
+| [`/organizations/northrop-grumman`] | industry employee (Northrop Grumman TASC) |  | government/solfoundation-ufo-enigma-nell-2025.pdf |
 
 ---
 
@@ -172,19 +172,19 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/david-grusch`] | UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch's disclosure |  |
-| [`/people/garry-nolan`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks | The "Gary" Nell thanks in the q10 opening is the auto-caption rendering of Garry Nolan (nq2); alongside "Peter" (Peter Skafish) these are the Sol co-founders Nell collaborated with on the symposium and the policy-paper series. |
-| [`/people/peter-skafish`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks |  |
+| Person | Relationship |
+|---|---|
+| [`/people/david-grusch`] | UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch's disclosure |
+| [`/people/garry-nolan`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks |
+| [`/people/peter-skafish`] | Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | high | news/thedebrief-grusch-2023.html | Two-source corroboration with a role-label variance: liaison (The Debrief, reporter framing) versus Army director supporting the UAP Task Force (Nell's self-authored Sol Foundation bio). |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | high | news/thedebrief-grusch-2023.html |
 
 ---
 
@@ -202,24 +202,24 @@ Nell is the author of the Sol Foundation policy paper "The UFO Enigma" (Spring 2
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Saul | Sol | transcripts/nell-sol-foundation-2023-downloaded.md | YouTube auto-caption rendering of "Sol" (Sol Foundation) as "Saul". Auto-caption artifact; preserve in quotes. |
-| Gary | Garry | transcripts/nell-sol-foundation-2023-downloaded.md | YouTube auto-caption rendering of "Garry Nolan" with first-name spelling "Gary". Auto-caption artifact; preserve in quotes. |
-| Lou alzando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md | YouTube auto-caption rendering of "Luis Elizondo" as "Lou alzando" in Sol Symposium transcript. Auto-caption artifact; preserve in quotes. |
-| L Alando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md | Second auto-caption rendering of "Luis Elizondo" as "L Alando" in same transcript. Distinct from "Lou alzando" because the caption mishears the name differently at a different point in the talk. |
-| Chris melon | Chris Mellon | transcripts/nell-sol-foundation-2023-downloaded.md | YouTube auto-caption rendering of "Chris Mellon" with lowercase second-name "melon". Auto-caption artifact; preserve in quotes. |
-| Carl | Karl | transcripts/nell-salt-2024-downloaded.md | SALT 2024 interviewer addresses Nell as "Carl" rather than "Karl". Auto-caption artifact preserving the interviewer's spoken address; preserve in quotes. |
-| Paul helier | Paul Hellyer | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Paul Hellyer" as "Paul helier". Auto-caption artifact; preserve in quotes. |
-| ham Eed | Haim Eshed | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of former Israel space-directorate head Haim Eshed as "ham Eed". Auto-caption artifact; preserve in quotes. |
-| Lou Alzando | Luis Elizondo | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Luis Elizondo" as "Lou Alzando" in the SALT 2024 talk. Third distinct auto-caption rendering of the same canonical name across the two transcripts (alongside "Lou alzando" and "L Alando" in Sol Symposium). |
-| truck Schumer | Chuck Schumer | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Chuck Schumer" as "truck Schumer". Auto-caption artifact; preserve in quotes. |
-| marubio | Marco Rubio | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Marco Rubio" as "marubio". Auto-caption artifact; preserve in quotes. |
-| rri Patterson Air Force Base | Wright-Patterson Air Force Base | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Wright-Patterson Air Force Base" as "rri Patterson Air Force Base". Auto-caption artifact; preserve in quotes. |
-| Eric Klein | Eric Cline | transcripts/nell-salt-2024-downloaded.md | Auto-caption rendering of "Eric Cline" (historian, author of "1177 BC: The Year Civilization Collapsed") as "Eric Klein". In the same passage Nell attributes the author to "Princeton University"; that institutional attribution is Nell's on-record statement, preserved as spoken and not adjudicated here. |
-| tri vesture | trivestiture | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "trivestiture" as "tri vesture" in Nell's SALT 2024 account of his time at Bell Labs. Auto-caption artifact; preserve in quotes. |
-| locki missiles in space | Lockheed Missiles & Space | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Lockheed Missiles & Space" as "locki missiles in space" in Nell's SALT 2024 employer account. Auto-caption artifact; preserve in quotes. |
-| northr grman | Northrop Grumman | transcripts/nell-salt-2024-downloaded.md | YouTube auto-caption rendering of "Northrop Grumman" as "northr grman" in Nell's SALT 2024 employer account. Auto-caption artifact; preserve in quotes. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Saul | Sol | transcripts/nell-sol-foundation-2023-downloaded.md |
+| Gary | Garry | transcripts/nell-sol-foundation-2023-downloaded.md |
+| Lou alzando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md |
+| L Alando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md |
+| Chris melon | Chris Mellon | transcripts/nell-sol-foundation-2023-downloaded.md |
+| Carl | Karl | transcripts/nell-salt-2024-downloaded.md |
+| Paul helier | Paul Hellyer | transcripts/nell-salt-2024-downloaded.md |
+| ham Eed | Haim Eshed | transcripts/nell-salt-2024-downloaded.md |
+| Lou Alzando | Luis Elizondo | transcripts/nell-salt-2024-downloaded.md |
+| truck Schumer | Chuck Schumer | transcripts/nell-salt-2024-downloaded.md |
+| marubio | Marco Rubio | transcripts/nell-salt-2024-downloaded.md |
+| rri Patterson Air Force Base | Wright-Patterson Air Force Base | transcripts/nell-salt-2024-downloaded.md |
+| Eric Klein | Eric Cline | transcripts/nell-salt-2024-downloaded.md |
+| tri vesture | trivestiture | transcripts/nell-salt-2024-downloaded.md |
+| locki missiles in space | Lockheed Missiles & Space | transcripts/nell-salt-2024-downloaded.md |
+| northr grman | Northrop Grumman | transcripts/nell-salt-2024-downloaded.md |
 
 ---
 

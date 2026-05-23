@@ -252,10 +252,10 @@ The document also discussed the significant limitations for aerospace applicatio
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-01-metallic-glasses-20091214.pdf | The document's Author line is withheld under FOIA exemption (b)(6) (personal-privacy). The exemption marker is preserved verbatim in quote q2; canonical prose reflects the redaction rather than injecting any external attribution. |
-| [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-01-metallic-glasses-20091214.pdf | The Prepared-by organizational line, an embedded office designation in the Administrative Note, and the AAWSA Program Manager address line are withheld under FOIA exemption (b)(3) invoking 10 USC 424 (DIA organizational/personnel protection). Markers preserved verbatim in quotes q2 and q3. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-01-metallic-glasses-20091214.pdf |
+| [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-01-metallic-glasses-20091214.pdf |
 
 ---
 

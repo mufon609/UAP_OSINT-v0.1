@@ -38,12 +38,12 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/odni`] | civilian intelligence official; integration role between national intelligence and state/local/tribal law enforcement post-9/11 | 2008 | transcripts/jre-2194-elizondo-2024-downloaded.md |  |
-| [`/organizations/dod`] | civilian intelligence official; AATIP Counter Intelligence / Security lead, later senior ranking person | 2008 – 2017-10 | news/nyt-glowing-auras-pentagon-ufo-20171216.html |  |
-| [`/organizations/aatip`] | Counter Intelligence and security lead (per JRE #2194 self-attestation); later senior ranking person of the program (per QFR Q1) | 2009 – 2017-10 | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
-| [`/organizations/ttsa`] | co-founder / public figure; joined alongside Hal Puthoff and Christopher Mellon per NYT 2017 | 2017 | news/nyt-glowing-auras-pentagon-ufo-20171216.html |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/odni`] | civilian intelligence official; integration role between national intelligence and state/local/tribal law enforcement post-9/11 | 2008 | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| [`/organizations/dod`] | civilian intelligence official; AATIP Counter Intelligence / Security lead, later senior ranking person | 2008 – 2017-10 | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
+| [`/organizations/aatip`] | Counter Intelligence and security lead (per JRE #2194 self-attestation); later senior ranking person of the program (per QFR Q1) | 2009 – 2017-10 | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| [`/organizations/ttsa`] | co-founder / public figure; joined alongside Hal Puthoff and Christopher Mellon per NYT 2017 | 2017 | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
 
 ---
 
@@ -223,27 +223,27 @@ _Direct observation._
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/james-lacatski`] | recruited Elizondo into the AATIP-era program in early 2009 (per JRE #2194 self-attestation); author of the DOPSR-cleared September 6, 2023 statement cited in Elizondo's QFR Q1 response |  |
-| [`/people/hal-puthoff`] | TTSA co-founder / colleague per NYT December 16, 2017 |  |
-| [`/people/christopher-mellon`] | TTSA co-founder / colleague per NYT December 16, 2017 |  |
-| [`/people/harry-reid`] | AATIP funding origin per NYT 2017; Reid was Senate Majority Leader who initially funded the program at $22M from late 2008 through 2011 |  |
-| [`/people/robert-bigelow`] | Bigelow Aerospace was the contract recipient of AATIP funding per NYT 2017; Bigelow Aerospace was identified in Elizondo's QFR Q7 as planned custodian of UAP materials transferred from Lockheed Martin |  |
-| [`/people/eric-burlison`] | House Oversight subcommittee member who submitted the Dec 9, 2024 Question-for-the-Record letter following the November 13, 2024 hearing; Elizondo's December 19, 2024 sworn QFR responses were addressed to Burlison via the subcommittee chairs |  |
-| [`/people/steny-hoyer`] | Then-Representative who allocated approximately $10 million for the Patuxent River Naval Air Station SAP-F hangar per Elizondo's QFR Q7 response |  |
+| Person | Relationship |
+|---|---|
+| [`/people/james-lacatski`] | recruited Elizondo into the AATIP-era program in early 2009 (per JRE #2194 self-attestation); author of the DOPSR-cleared September 6, 2023 statement cited in Elizondo's QFR Q1 response |
+| [`/people/hal-puthoff`] | TTSA co-founder / colleague per NYT December 16, 2017 |
+| [`/people/christopher-mellon`] | TTSA co-founder / colleague per NYT December 16, 2017 |
+| [`/people/harry-reid`] | AATIP funding origin per NYT 2017; Reid was Senate Majority Leader who initially funded the program at $22M from late 2008 through 2011 |
+| [`/people/robert-bigelow`] | Bigelow Aerospace was the contract recipient of AATIP funding per NYT 2017; Bigelow Aerospace was identified in Elizondo's QFR Q7 as planned custodian of UAP materials transferred from Lockheed Martin |
+| [`/people/eric-burlison`] | House Oversight subcommittee member who submitted the Dec 9, 2024 Question-for-the-Record letter following the November 13, 2024 hearing; Elizondo's December 19, 2024 sworn QFR responses were addressed to Burlison via the subcommittee chairs |
+| [`/people/steny-hoyer`] | Then-Representative who allocated approximately $10 million for the Patuxent River Naval Air Station SAP-F hangar per Elizondo's QFR Q7 response |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| Director of National Intelligence integration role (pre-AATIP) | civilian intelligence official; integration of national-level intelligence into state/local/tribal law enforcement post-9/11 | 2008 – 2009 | self-attested | medium | transcripts/jre-2194-elizondo-2024-downloaded.md |  |
-| [`/organizations/aatip`] | senior ranking person (per QFR Q1 self-attestation); Counter Intelligence and security lead at recruitment per JRE #2194 | 2009 – 2017-10 | sworn-testimony | high | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
-| [`/organizations/aatip`] | led the Pentagon UAP investigation effort until October 2017 (per NYT 2017 third-party reporting) | 2009 – 2017-10 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |  |
-| [`/organizations/aawsap`] | institutional adjacency to AAWSAP via overlapping AATIP context; per QFR Q1, AAWSAP/AATIP custody-of-material question was a joint matter; per QFR Q11, $22M figure described as the AAWSAP/AATIP funding | 2009 – 2017-10 | sworn-testimony | medium | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
-| [`/organizations/ttsa`] | post-resignation co-founder / public-figure association per NYT December 16, 2017 | 2017 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |  |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| Director of National Intelligence integration role (pre-AATIP) | civilian intelligence official; integration of national-level intelligence into state/local/tribal law enforcement post-9/11 | 2008 – 2009 | self-attested | medium | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| [`/organizations/aatip`] | senior ranking person (per QFR Q1 self-attestation); Counter Intelligence and security lead at recruitment per JRE #2194 | 2009 – 2017-10 | sworn-testimony | high | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| [`/organizations/aatip`] | led the Pentagon UAP investigation effort until October 2017 (per NYT 2017 third-party reporting) | 2009 – 2017-10 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
+| [`/organizations/aawsap`] | institutional adjacency to AAWSAP via overlapping AATIP context; per QFR Q1, AAWSAP/AATIP custody-of-material question was a joint matter; per QFR Q11, $22M figure described as the AAWSAP/AATIP funding | 2009 – 2017-10 | sworn-testimony | medium | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| [`/organizations/ttsa`] | post-resignation co-founder / public-figure association per NYT December 16, 2017 | 2017 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
 
 ---
 
@@ -263,11 +263,11 @@ This source material shows no commercial UAP connection for Elizondo other than 
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| latky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski". The caption alternates between "latky" and "latsky" within the same JRE #2194 passage; both forms are preserved verbatim per the transcript-provenance auto-caption discipline. |
-| latsky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Lacatski" — the second of the two forms the caption produces for the surname in the same JRE #2194 passage. |
-| langly | Langley | transcripts/jre-2194-elizondo-2024-downloaded.md | YouTube auto-caption rendering of "Langley" — the CIA Langley headquarters in Northern Virginia. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| latky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| latsky | Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| langly | Langley | transcripts/jre-2194-elizondo-2024-downloaded.md |
 
 ---
 

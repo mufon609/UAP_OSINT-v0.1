@@ -97,8 +97,8 @@ CHECK_PHASE = {
     "does_not_establish": "organize",
 
     # link (role 5) — cross-reference surfaces + structured entries.
-    # prose_drift lives here (not organize): it scans per-entry synthesis
-    # .note/.attestation fields on link-phase entries as well as the
+    # prose_drift lives here (not organize): it scans the per-entry
+    # synthesis .attestation field on link-phase entries as well as the
     # organize-phase top-level prose, so the LATEST input phase is link.
     "prose_drift": "link",
     "timeline": "link",

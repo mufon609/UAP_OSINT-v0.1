@@ -4,7 +4,7 @@ Present on gov-contractor organization artifacts (the kind whose
 existence IS a government contract). Each entry: required
 {contract_number, contracting_agency, period_start, source},
 optional {period_end, primary_counterparty_path, subject, value,
-deliverables, note}. ``deliverables`` (when set) is a list of
+deliverables}. ``deliverables`` (when set) is a list of
 ``/documents/...`` paths the contract produced.
 
 The contract entry shape is the heaviest in the entry-list family

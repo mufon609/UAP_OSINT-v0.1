@@ -176,7 +176,7 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /people/alex-dietrich
   observation_type: testimonial
-  note: Other F/A-18F pilot in Fravor's flight; also lost visual when the object rapidly accelerated and disappeared
+  confirms: 'Other F/A-18F pilot in Fravor''s flight; also lost visual when the object rapidly accelerated and disappeared'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 49-50, 71-74
@@ -184,7 +184,7 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /organizations/uss-princeton
   observation_type: instrumented
-  note: Aegis combat system had been observing these objects for the previous 2 weeks; object reappeared on the Aegis SPY 1 radar at the CAP point roughly 60 miles east
+  confirms: 'Aegis combat system had been observing these objects for the previous 2 weeks; object reappeared on the Aegis SPY 1 radar at the CAP point roughly 60 miles east'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 28-31, 50-53
@@ -192,7 +192,7 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /media/flir1-video
   observation_type: documentary
-  note: Approximately 90 second targeting pod video; one of Fravor's crews getting ready to launch took it; released by the USG in 2017
+  confirms: 'Approximately 90 second targeting pod video; one of Fravor''s crews getting ready to launch took it; released by the USG in 2017'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 57-62
@@ -204,15 +204,6 @@ naming_quirks:
   location: lines 68, 78
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'Source renders Luis Elizondo''s first name as "Lue" — TWO instances in sworn congressional testimony (lines 68 and 78), not one. The 2-instance pattern is evidentiary: "Lue" is Fravor''s alias-of-record for Elizondo in this submission, not a typo. When the Elizondo person node is built, this should surface as a `document_intrinsic.aliases: ["Lue"]` entry on that node, attributed to the Fravor-testimony source.
-
-
-    Resolution handling on this artifact: source form preserved in prose ("Lue Elizondo" in the description and in the relevant timeline cell) rather than substituted with canonical "Luis". Wrap paths to `[`/people/luis-elizondo`]` use the canonical slug so cross-references still resolve; display text in prose uses source form. The schema resolution enum (`preserve-as-sic-in-quotes`) nominally assumes quote-block contexts — on this encounter-event artifact there are no quote blocks, so the spirit of the rule is extended: preserve source form wherever it is the evidentiary referent of record.
-
-
-    Fravor''s person artifact (i1) does not track this quirk for the same source — an inconsistency to resolve when that artifact is next audited.
-
-    '
 rumors:
 - id: r1
   added_date: '2026-04-19'
@@ -221,18 +212,15 @@ rumors:
   observed_sources:
   - New York Magazine interview with Chad Underwood (2019)
   - Multiple secondary-source accounts
-  note: Fravor's 2023 written testimony says only "one of my crews who were getting ready to launch" — no name given. Widely reported in secondary coverage as Chad Underwood.
 - id: r2
   added_date: '2026-04-19'
   claim: The encounter took place off the coast of Southern California
   status: not-primary-source-established
   observed_sources:
   - Multiple secondary-source accounts
-  note: Fravor's 2023 written testimony places the encounter "at sea" with the CAP point "roughly 40 miles South of the ship" — no geographic region is named in this source.
 - id: r3
   added_date: '2026-04-19'
   claim: The encounter occurred on November 14, 2004
   status: not-primary-source-established
   observed_sources:
   - Multiple secondary-source accounts
-  note: Fravor's 2023 written testimony gives only "Nov 2004" and "at sea for roughly 2 weeks" from the Early November start — consistent with mid-November but not specifying a date.

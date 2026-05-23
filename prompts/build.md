@@ -265,8 +265,8 @@ subject-relevant content, self-attestations on the subject's own
 publications. Statements *about* the subject (a reporter narrating, a
 voucher attesting, a supervisor describing) belong on the speaker's
 own artifact and on the subject's structured cross-reference surfaces
-(`relationships[].note`, `program_involvement[].note`,
-`affiliations[].note`, `timeline[]` rows). See `meta/conventions.md`
+(`relationships[]`, `program_involvement[]`, `affiliations[]`,
+`timeline[]` rows). See `meta/conventions.md`
 "Statements speaker-attribution — quotes BY the person, not ABOUT" for
 the full bright-line guidance, including the co-authored-publications
 borderline cases.
@@ -506,9 +506,7 @@ if the content already spans multiple lines.
 The validator runs a token-drift check across contributor-prose
 fields on every renderer-supported type (top-level free prose:
 `description`, `background`, `top_relevance`, `credibility_notes`;
-per-entry residue notes: `ownership_timeline.note`,
-`top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
-`media_versioning.note`, `vouching_chain.attestation`). See
+plus the whistleblower `vouching_chain.attestation`). See
 `PROSE_FIELDS_BY_TYPE` / `PROSE_ENTRY_FIELDS_BY_TYPE` in
 `validate-research.py` for the per-type scope. It flags every
 significant word in a scoped prose field that doesn't appear in the
@@ -535,30 +533,22 @@ artifact passes — not synthesis-acceptance:
   variance as structured evidentiary data (naming_quirks, rumors, a
   timeline entry, a new quote). Rationalizing a flagged token as
   "legitimate synthesis vocabulary" is exactly what the error blocks.
-- **Per-entry residue notes** — `ownership_timeline.note`,
-  `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
-  `media_versioning.note`, and `vouching_chain.attestation`. These
-  carry only residue the row's columns don't (a credibility caveat,
-  sequencing nuance, source limitation, disambiguation) — never a
-  fact-store or a synthesis surface; see conventions.md "Per-entry
-  notes". They are still drift-checked because even residue must use
-  source vocabulary: zero ungrounded tokens, same resolution paths as
-  the free-prose fields.
-- **Structural labels + cross-reference descriptor notes** are NOT
-  scanned by the prose-drift check. This includes role titles, short relationship
+- **`vouching_chain.attestation`** — the whistleblower voucher's
+  statement. Drift-checked like the free-prose fields: zero ungrounded
+  tokens, same resolution paths.
+- **Structural label / descriptor cells** are NOT scanned by the
+  prose-drift check. This includes role titles, short relationship
   descriptors, `timeline[].event`, `use_status`, `activity`, and the
-  `.note` fields on cross-reference entries (`corroboration_items`,
-  `witnesses_testimony`, `org_relationships`,
-  `location_relationships`) that describe *why/how a cross-reference
-  exists*. Token-matching is a poor instrument for compact multi-
-  source labels and meta-descriptors. Fabrication in these cells is
-  caught by Phase III semantic review, not the prose-drift check.
+  corroboration `confirms` cell. Token-matching is a poor instrument
+  for compact multi-source labels and meta-descriptors. Fabrication in
+  these cells is caught by Phase III semantic review, not the prose-
+  drift check.
 
 Common categories of flagged tokens and how they resolve:
 
 - **Word-form variants** (source "prepare" vs prose "preparing";
   source "flown" vs prose "flying") → rewrite to source morphology
-  on in-scope fields (free-prose + `.note`).
+  on the in-scope free-prose fields.
 - **Repo-conventional naming** (source "Statement" vs prose "written
   testimony"; source "took" vs prose "captured") → rewrite to source
   vocabulary on free-prose fields. Repo filename conventions

@@ -185,7 +185,6 @@ naming_quirks:
   location: 'p. 8, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (the date of Puthoff''s letter to Green at OSI) as "''1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17, preserved verbatim per OCR-scan source-form-preservation discipline.'
 
 - id: nq2
   added_date: '2026-05-17'
@@ -194,7 +193,6 @@ naming_quirks:
   location: 'p. 10, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "K." (initial of "K. Green") as "T 1(." — typewritten-font misread of capital K as the "T 1(" character cluster, with the closing period dropped, preserved verbatim per OCR-scan source-form-preservation discipline. The source line continues across a line wrap in the extract.'
 
 - id: nq3
   added_date: '2026-05-17'
@@ -203,7 +201,6 @@ naming_quirks:
   location: 'p. 10, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "c" as "r" in the word "Record" yielding "Rerord" — typewritten-font OCR misread of the lowercase c glyph, preserved verbatim per OCR-scan source-form-preservation discipline.'
 
 - id: nq4
   added_date: '2026-05-17'
@@ -212,7 +209,6 @@ naming_quirks:
   location: 'NCBI bio, Christopher C. Green entry'
   source_path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
   resolution: preserve-as-sic-in-quotes
-  note: 'The 2008 NCBI bio writes "assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China" — the Wayne State School of Medicine is headquartered in Detroit, Michigan (per the IRVA bio); the "in Beijing, China" qualifier reflects Green''s Asia Pacific assistant dean role being based in Beijing, not a relocation of the school itself. The IRVA bio writes "Wayne State School of Medicine in Detroit, Michigan" without the Beijing qualifier. The two attestations are consistent — Wayne State SOM is in Detroit and Green''s Asia Pacific role operates from Beijing — but the NCBI phrasing reads as if Wayne State itself is in Beijing.'
 
 timeline:
 
@@ -328,7 +324,6 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8 and p. 10 footnotes'
-  note: 'Period end of 1973-11-09 reflects the last archived Kress 1977 attestation date, not a known role end; Green''s continuing role beyond that date is attested only at narrative level by the IRVA bio ("first analyst and program manager for Remote Viewing research"), with no archived primary source pinpointing a Green-at-OSI date later than 1973-11-09.'
 
 - id: pi2
   added_date: '2026-05-17'
@@ -340,7 +335,6 @@ program_involvement:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶2'
-  note: 'The "first" characterization rests on self-attestation alone: it is Green''s own framing in his IRVA member-organization speaker bio, and is not separately confirmed by Kress 1977, which attests his 1972-1973 OSI letter-recipient and memorandum-author roles but does not characterize him as "first" program manager.'
 
 - id: pi3
   added_date: '2026-05-17'
@@ -351,7 +345,6 @@ program_involvement:
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
-  note: 'Vice 2020 places Green as a participant in AAWSAP — Robert Bigelow''s DIA-funded program — but does not detail his specific role, contracted scope, or AAWSAP tenure; nothing further anchors the role in the archived corpus.'
 
 - id: pi5
   added_date: '2026-05-17'
@@ -362,7 +355,6 @@ program_involvement:
   source:
     path: news/pbs-umbrella-assassin-green-interview-20260517.html
     location: '¶4 (narrator-authored)'
-  note: 'This CIA-work scope is reported by the PBS Umbrella Assassin interview page narrator, not stated by Green in the first person — the role rests on narrator attribution rather than a Green self-attestation.'
 
 - id: pi4
   added_date: '2026-05-17'
@@ -374,7 +366,6 @@ program_involvement:
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
-  note: 'Vice attests the project was "shut down in 2014," but the chronological context of Fugal''s 2016 purchase suggests that shutdown refers to Bigelow''s AAWSAP-era project rather than the Fugal-era project. The specific scope of Green''s Fugal-Skinwalker consultancy is not detailed beyond the consultancy framing.'
 
 affiliations:
 
@@ -388,7 +379,6 @@ affiliations:
   source:
     path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
     location: 'Appendix A, Christopher C. Green entry'
-  note: 'The 1969-1985 period is the NCBI-attested figure; the PBS narrator separately attests a "twenty year career" as CIA investigative officer (a longer span), which the PBS-attested continuing post-1985 consultancy may account for. The divergence is preserved at quote level rather than resolved into a single affiliation period.'
 
 - id: a2
   added_date: '2026-05-17'
@@ -400,7 +390,6 @@ affiliations:
   source:
     path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
     location: 'Appendix A, Christopher C. Green entry'
-  note: 'IRVA and NCBI give differing role titles for this tenure; the variations are preserved at quote level rather than reconciled into one title. The 1985-2004 GM tenure overlaps the Wayne State faculty role beginning 2002 — overlapping employment is the corpus-attested shape, not a contradiction.'
 
 - id: a3
   added_date: '2026-05-17'
@@ -411,7 +400,6 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: 'The date of transition from the prior "executive director for emergent technology research" role to the current Assistant Dean position is not attested in the archived sources. The open period reflects the affiliation being active as of the IRVA Wayback snapshot date 2024-12-12.'
 
 - id: a4
   added_date: '2026-05-17'
@@ -422,7 +410,6 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: ''
 
 - id: a5
   added_date: '2026-05-17'
@@ -432,7 +419,6 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶1'
-  note: 'Concurrent with the Wayne State professorship — the two appointments are held jointly, not in sequence. Specific period start and end dates are not attested in the archived sources.'
 
 - id: a6
   added_date: '2026-05-17'
@@ -442,7 +428,6 @@ affiliations:
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
-  note: 'Specific period start and end dates are not attested in the archived sources; the IRVA bio dates the role only as "recently," placing it in a window before the IRVA page''s last-edit date of 2021-07-21 per its schema.org metadata.'
 
 relationships:
 
@@ -454,7 +439,6 @@ relationships:
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
-  note: ''
 
 - id: rel2
   added_date: '2026-05-17'
@@ -464,7 +448,6 @@ relationships:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8 footnote (q1) + p. 10 footnote (q2) + p. 8 ¶2 body narrative'
-  note: 'Sequencing: per the Kress 1977 body narrative, Targ''s April 1972 meeting with CIA OSI personnel preceded the June 17, 1972 Puthoff-to-Green letter — establishing Green at OSI as the CIA-side counterpart for the Targ-Puthoff SRI investigation from the program''s inception.'
 
 - id: rel3
   added_date: '2026-05-17'
@@ -474,7 +457,6 @@ relationships:
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
-  note: 'The specific Green role, contracted scope, and tenure within AAWSAP are not detailed in the archived corpus beyond Vice''s attestation that he was "involved in Bigelow''s DIA project."'
 
 - id: rel4
   added_date: '2026-05-17'
@@ -484,6 +466,5 @@ relationships:
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
-  note: ''
 
 rumors: []

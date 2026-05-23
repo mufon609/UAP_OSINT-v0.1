@@ -5,8 +5,6 @@ Each entry requires lifecycle fields (id, added_date) + `question`
 (the specific question on which sources within this finding diverge)
 + `positions` (list of objects with shape
 `{evidence_id, position}`, ≥2 entries to constitute a contradiction).
-`note` is optional contributor synthesis (prose-drift-checked
-against the convergent source set).
 
 Each position's evidence_id must reference an existing quote id in
 this artifact's quotes[] (cross-reference resolution).

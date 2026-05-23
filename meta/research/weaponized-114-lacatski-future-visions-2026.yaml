@@ -64,7 +64,6 @@ speakers:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[0:07]'
-  note: KLAS-TV / 8 News Now / Mystery Wire chief investigator; WEAPONIZED co-host; book co-author with Lacatski.
 - id: s2
   added_date: '2026-05-17'
   name: Jeremy Corbell
@@ -73,7 +72,6 @@ speakers:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[0:13]'
-  note: WEAPONIZED co-host with George Knapp; primary in-studio questioner of Lacatski.
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -82,7 +80,6 @@ speakers:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[2:10]'
-  note: Former AAWSAP director and Kona Blue lead at DIA. Surname renders canonically as "Lacatski" through most of the transcript; one variant "Lakatski" registered in naming_quirks.
 quotes:
 - id: q1
   speaker_id: s3
@@ -290,7 +287,6 @@ naming_quirks:
   location: '[1:07], [1:25], [17:11], [19:00], [59:18]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: disputed
-  note: 'WEAPONIZED EP 114 narration consistently uses "AATIP" for the program Lacatski directed at DIA — same as the 8 News Now news segment ([`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]). Per Lacatski''s own attestations in WEAPONIZED EP 38, Mystery Wire 2021, WEAPONIZED PART 1, and the Puthoff DIRD attribution, the program he directed was AAWSAP. The WEAPONIZED EP 114 framing diverges from Lacatski''s own self-attestations; preserved with resolution `disputed`.'
 - id: nq2
   added_date: '2026-05-17'
   observed: ASAP
@@ -298,7 +294,6 @@ naming_quirks:
   location: '[29:46], [49:48]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "AAWSAP" as "ASAP" in Lacatski's references; same pattern as earlier transcripts.
 - id: nq3
   added_date: '2026-05-17'
   observed: A SAP
@@ -306,7 +301,6 @@ naming_quirks:
   location: '[29:46]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption two-word rendering of "AAWSAP" as "A SAP" in Lacatski's "everything from A SAP and Kona Blue" attestation.
 - id: nq4
   added_date: '2026-05-17'
   observed: Lakatski
@@ -314,7 +308,6 @@ naming_quirks:
   location: '[19:48]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "Lacatski" as "Lakatski" in one Corbell address ("Lakatski, you're like building an institutional argument").
 - id: nq5
   added_date: '2026-05-17'
   observed: skiff
@@ -322,7 +315,6 @@ naming_quirks:
   location: '[1:39:51]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption phonetic rendering of "SCIF" (Sensitive Compartmented Information Facility) as "skiff" in Corbell's paraphrase of the Lacatski-DHS 2011 briefing from the Future Visions book.
 - id: nq6
   added_date: '2026-05-17'
   observed: Lacy
@@ -330,4 +322,3 @@ naming_quirks:
   location: '[16:36]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption short-form rendering of "Lacatski" as "Lacy" — same variant that appeared in PART 2.

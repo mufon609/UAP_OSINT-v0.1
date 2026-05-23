@@ -175,10 +175,10 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| 22M | $22M | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | Elizondo's Q1 response quotes Lacatski's SD004 page-1 statement verbatim with "22M" (no dollar sign), while SD004 page 1 itself reads "$22M" (with dollar sign). The QFR-quoted form drops the dollar sign; both forms are source-attested on different documents and preserved verbatim in their respective node Key Passages per source-read-first discipline. |
-| AASAP | AAWSAP | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | Burlison's Q11 question text uses "AASAP" (with [sic.] annotation in Elizondo's verbatim quotation of the question). Likely typo for AAWSAP; Burlison's original question carries the typo and Elizondo preserves it with [sic.] in his response. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| 22M | $22M | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| AASAP | AAWSAP | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
 
 ---
 

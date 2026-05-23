@@ -159,7 +159,6 @@ naming_quirks:
   location: written testimony line 8; transcript line 648
   source_path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: pdftotext rendered the original double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single) in both the written testimony PDF and the stenographic transcript PDF. The canonical display form for a Navy callsign is in straight double quotes.
 rumors: []
 timeline:
 - id: t1
@@ -280,31 +279,31 @@ corroboration_items:
   added_date: '2026-04-20'
   observer_path: /organizations/vfa-11
   observation_type: testimonial
+  confirms: 'Graves''s VFA-11 squadron aircrew witnessed advanced UAP on a regular basis — open secret, common occurrence, part of daily briefs'
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
     location: line 50
-  note: Graves's VFA-11 squadron aircrew witnessed advanced UAP on a regular basis — open secret, common occurrence, part of daily briefs
 - id: c2
   added_date: '2026-04-20'
   observer_path: /organizations/vfa-11
   observation_type: instrumented
+  confirms: 'Upon an upgrade to VFA-11 radar system, the squadron began to detect unknown objects; radar tracks corroborated with infrared sensors, confirming their physical presence'
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
     location: line 46
-  note: Upon an upgrade to VFA-11 radar system, the squadron began to detect unknown objects; radar tracks corroborated with infrared sensors, confirming their physical presence
 - id: c3
   added_date: '2026-04-20'
   observer_path: /people/tim-gallaudet
   observation_type: documentary
+  confirms: 'Rear Admiral Tim Gallaudet received a 2015 classified SIPRNET email — "Urgent safety of flight issue" — with the now famous GO-FAST UAP video from a Navy F/A-18; the email was later removed from his system and his deputy''s'
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
     location: line 76
-  note: Rear Admiral Tim Gallaudet received a 2015 classified SIPRNET email — "Urgent safety of flight issue" — with the now famous GO-FAST UAP video from a Navy F/A-18; the email was later removed from his system and his deputy's
 - id: c4
   added_date: '2026-04-20'
   observer_path: /organizations/americans-for-safe-aerospace
   observation_type: testimonial
+  confirms: 'Americans for Safe Aerospace has become a haven for more than 30 UAP witnesses who were previously unspoken due to the absence of a safe intake process'
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
     location: line 98
-  note: Americans for Safe Aerospace has become a haven for more than 30 UAP witnesses who were previously unspoken due to the absence of a safe intake process

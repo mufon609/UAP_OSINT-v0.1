@@ -61,7 +61,6 @@ affiliations:
   source:
     path: news/nsi-speaker-series-ipmo-holly-20250401.html
     location: '¶ "Biography: Mr. James Holly is the first Acting Director"'
-  note: Prior role.
 - id: a4
   added_date: '2026-05-20'
   organization_path: /organizations/us-army
@@ -88,7 +87,6 @@ relationships:
   source:
     path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
     location: PDF metadata (Author field) — "COL Deitra Trotter;HON Ronald S. Moultrie"; see manifest note
-  note: COL Deitra Trotter is the slides' co-author alongside Moultrie; no canonical node exists for Trotter. The authorship attestation is in the PDF Author metadata surfaced into the manifest note for government/nsi-23-s-3438-ipmo-101-slides-202310.pdf, not in the slide body text.
 timeline:
 - id: t1
   added_date: '2026-05-20'

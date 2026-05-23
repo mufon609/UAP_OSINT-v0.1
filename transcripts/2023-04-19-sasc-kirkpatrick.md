@@ -42,14 +42,14 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| Sean Kirkpatrick | Witness | [`/people/sean-kirkpatrick`] | Director, All-domain Anomaly Resolution Office at the time of the hearing; sole open-session witness; oath status unknown — see context_extrinsic. |
-| Kirsten E. Gillibrand | Subcommittee Chair | [`/people/kirsten-gillibrand`] | Chairwoman of the Subcommittee on Emerging Threats and Capabilities (New York); presiding. |
-| Joni Ernst | Subcommittee Ranking Member | [`/people/joni-ernst`] | Ranking Member of the Subcommittee (Iowa). |
-| Senator Rosen | Subcommittee Member | [`/people/jacky-rosen`] | Senator from Nevada; Subcommittee member; transcript labels her speaker tag as "Senator Rosen" without first name. |
-| Audience Member | Audience speaker (anonymized in transcript) |  | The transcript labels two distinct audience speakers as "Audience Member" without further identification: a Marine veteran from Ohio (drove 600 miles, mentioned David Spergel and Neil deGrasse Tyson, presented a book) and a resident from Albuquerque, New Mexico (described UAP over Sandia Labs and Kirtland Air Force Base; stated propulsion-field theories about the craft observed). A third briefer "Same here" comment from a separate audience member is also recorded. |
-| Staff | Subcommittee staff |  | Anonymous Subcommittee staff member; one brief response in the closing exchange about handling of materials presented by the audience. |
+| Name | Role | Node Link |
+|---|---|---|
+| Sean Kirkpatrick | Witness | [`/people/sean-kirkpatrick`] |
+| Kirsten E. Gillibrand | Subcommittee Chair | [`/people/kirsten-gillibrand`] |
+| Joni Ernst | Subcommittee Ranking Member | [`/people/joni-ernst`] |
+| Senator Rosen | Subcommittee Member | [`/people/jacky-rosen`] |
+| Audience Member | Audience speaker (anonymized in transcript) |  |
+| Staff | Subcommittee staff |  |
 
 ---
 
@@ -540,11 +540,11 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| USDINS | USD(I&S) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Alderson Court Reporting stenographer rendered the spoken acronym "USD(I&S)" (Under Secretary of Defense for Intelligence and Security) phonetically as "USDINS" throughout the open-session transcript. Kirkpatrick's pre-hearing written Statement for the Record uses written-out forms instead. Preserved as it appears in the stenographic transcript. |
-| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Senate stenographic convention applies "Mr." / "Ms." prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as "Dr. Kirkpatrick"; the speaker-tag prefix "Mr. Kirkpatrick:" is the stenographer's rendering convention. |
-| Kirkland Air Force Base | Kirtland Air Force Base | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Audience member referenced "Sandia Labs and Kirkland Air Force Base"; the canonical name is Kirtland Air Force Base (Albuquerque, New Mexico). The stenographer captured the audience speaker's pronunciation phonetically. Preserved as it appears in the transcript. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| USDINS | USD(I&S) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
+| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
+| Kirkland Air Force Base | Kirtland Air Force Base | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 
 ---
 

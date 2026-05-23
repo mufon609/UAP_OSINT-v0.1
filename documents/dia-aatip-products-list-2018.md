@@ -184,12 +184,12 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| John Hopkins Univ. | Johns Hopkins University | government/fas-org-aatip-list-20210808.pdf | Source drops the terminal "s" — "John Hopkins" for "Johns Hopkins". Preserved verbatim in the List of Attachments quote. |
-| Univ. Of Illinois | University of Illinois | government/fas-org-aatip-list-20210808.pdf | Source capitalizes "Of" mid-phrase ("Univ. Of Illinois"); also recurs at att.30 ("Univ. Of Nevada"). Preserved verbatim. |
-| Univ. Of Nevada – Las Vegas | University of Nevada, Las Vegas | government/fas-org-aatip-list-20210808.pdf | Source capitalizes "Of" mid-phrase ("Univ. Of Nevada") at att.30, where att.29 (same author/institution) uses lowercase "of". Preserved verbatim. |
-| Dr. R.Genik | Dr. R. Genik | government/fas-org-aatip-list-20210808.pdf | Source omits the space after the initial ("R.Genik") at att.28, where att.20 and att.33 (same author) render "R. Genik" with the space. Preserved verbatim. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| John Hopkins Univ. | Johns Hopkins University | government/fas-org-aatip-list-20210808.pdf |
+| Univ. Of Illinois | University of Illinois | government/fas-org-aatip-list-20210808.pdf |
+| Univ. Of Nevada – Las Vegas | University of Nevada, Las Vegas | government/fas-org-aatip-list-20210808.pdf |
+| Dr. R.Genik | Dr. R. Genik | government/fas-org-aatip-list-20210808.pdf |
 
 ---
 

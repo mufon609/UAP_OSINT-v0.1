@@ -677,7 +677,6 @@ naming_quirks:
     location: 'Sancorp self-published pages and announcements (homepage, Company News, Featured News)'
     source_path: news/sancorp-careers-20260430.html
     resolution: preserve-as-sic-in-quotes
-    note: 'Sancorp uses all-caps SANCORP in its own branded text. The SAM.gov / HigherGov capability description uses mixed-case "SanCorp Consulting, LLC". The canonical legal name per USAspending is "SANCORP CONSULTING, LLC". Preserve as-written in verbatim quotes.'
   - id: nq2
     added_date: '2026-04-30'
     observed: 'OUSDI&S'
@@ -685,7 +684,6 @@ naming_quirks:
     location: 'INSA Naming Convention paper, p. 4 COUNTER-INSIDER THREAT section'
     source_path: news/insa-naming-convention-20220900.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'INSA paper writes "OUSDI&S" without parentheses around (I&S). The canonical DoD form is "OUSD(I&S)" — the abbreviation expands to Office of the Under Secretary of Defense for Intelligence and Security.'
   - id: nq3
     added_date: '2026-04-30'
     observed: 'Sect ion'
@@ -693,7 +691,6 @@ naming_quirks:
     location: 'AARO PWS, Section 5.2 task header'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact in the FOIA-released scanned PDF — space inserted mid-word.'
   - id: nq4
     added_date: '2026-04-30'
     observed: 'SuppOI1'
@@ -701,7 +698,6 @@ naming_quirks:
     location: 'AARO PWS, Sections 5.4, 5.6 task headers'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact — "rt" mis-recognized as "OI1" in the FOIA-released scanned PDF.'
   - id: nq5
     added_date: '2026-04-30'
     observed: 'anached'
@@ -709,7 +705,6 @@ naming_quirks:
     location: 'AARO PWS, multiple Section 5.x task headers'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact — "tt" mis-recognized as "n" in the FOIA-released scanned PDF.'
   - id: nq6
     added_date: '2026-04-30'
     observed: 'thi s'
@@ -717,7 +712,6 @@ naming_quirks:
     location: 'AARO PWS, Section 5.5 task header'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact — space inserted mid-word in the FOIA-released scanned PDF.'
   - id: nq7
     added_date: '2026-04-30'
     observed: 'Plann ing'
@@ -725,7 +719,6 @@ naming_quirks:
     location: 'AARO PWS, Section 5.6 task header'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact — space inserted mid-word.'
   - id: nq8
     added_date: '2026-04-30'
     observed: 'Executi ve'
@@ -733,7 +726,6 @@ naming_quirks:
     location: 'AARO PWS, Section 5.6 task header'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'OCR artifact — space inserted mid-word.'
   - id: nq9
     added_date: '2026-04-30'
     observed: 'artifical intelligence'
@@ -741,7 +733,6 @@ naming_quirks:
     location: 'HigherGov SAM.gov-derived capability description — SanCorp Consulting capabilities paragraph'
     source_path: news/highergov-sancorp-profile-20260430.html
     resolution: preserve-as-sic-in-quotes
-    note: 'Typo in Sancorp''s SAM.gov-registered capability statement (likely Kimberly Liedig-authored per the FOIA-context capability PDF metadata) — preserved as-written in source.'
   - id: nq10
     added_date: '2026-04-30'
     observed: 'SanCorp'
@@ -749,7 +740,6 @@ naming_quirks:
     location: 'HigherGov capability description first sentence'
     source_path: news/highergov-sancorp-profile-20260430.html
     resolution: preserve-as-sic-in-quotes
-    note: 'SAM.gov-registered capability description writes "SanCorp" with internal capital C, distinct from the all-caps "SANCORP" branding on Sancorp''s own website and the legal name "Sancorp Consulting, LLC".'
   - id: nq11
     added_date: '2026-04-30'
     observed: 'Identitiy'
@@ -757,7 +747,6 @@ naming_quirks:
     location: 'Sancorp navigation menu — CAPABILITIES heading'
     source_path: news/sancorp-careers-20260430.html
     resolution: preserve-as-sic-in-quotes
-    note: 'Typo in Sancorp''s site navigation — appears across multiple Sancorp pages.'
   - id: nq12
     added_date: '2026-04-30'
     observed: '(b)(4)'
@@ -765,7 +754,6 @@ naming_quirks:
     location: 'AARO contract HQ003422C0094 (FOIA 23-F-0905 doc-1 release) — multiple Section B Labor Schedule rate / quantity / amount cells; Section G Accounting and Appropriation amounts; Section G allotment-schedule amounts'
     source_path: government/foia-23-f-0905-doc-1-released.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'FOIA exemption marker for trade-secrets / commercial-confidential withholdings under 5 U.S.C. § 552(b)(4). Preserved verbatim in transcribed quotes; the marker indicates a redaction box rather than visible content. The Final Response cover letter (foia-23-f-0905-final-grant-in-part.pdf) cites (b)(4) as one of the two partial-release exemption bases applied across the 114 partially-redacted pages.'
   - id: nq13
     added_date: '2026-04-30'
     observed: '(b)(6)'
@@ -773,7 +761,6 @@ naming_quirks:
     location: 'AARO contract HQ003422C0094 (FOIA 23-F-0905 doc-1 release) — Section B Block 15A Sancorp office line beneath company name; Section F ship-to addresses; Section G Technical POC / COR field; doc_2 email To-line recipient'
     source_path: government/foia-23-f-0905-doc-1-released.pdf
     resolution: preserve-as-sic-in-quotes
-    note: 'FOIA exemption marker for personal-privacy withholdings under 5 U.S.C. § 552(b)(6). Preserved verbatim in transcribed quotes; the marker indicates a redaction box rather than visible content. Per the Final Response cover letter, (b)(6) was applied to portions of the 114 partially-redacted pages.'
 rumors: []
 timeline:
   - id: t1
@@ -1038,7 +1025,6 @@ contracts:
     source:
       path: government/usaspending-hq003418c0123.txt
       location: '"description" field, CONT_AWD_HQ003418C0123_9700_-NONE-_-NONE-'
-    note: 'Sancorp''s first OUSD(I&S) prime contract on USAspending. Predecessor to the INSA Insider Threat Subcommittee participation Sancorp announced in March 2021 and to the IPMO Support Services contract awarded in 2022.'
   - id: c2
     added_date: '2026-04-30'
     contract_number: HQ003419C0159
@@ -1051,7 +1037,6 @@ contracts:
     source:
       path: government/usaspending-hq003419c0159.txt
       location: '"description" field'
-    note: 'OUSD(I&S) Counter-Insider Threat Program Office support. INSA''s September 2022 Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security.'
   - id: c3
     added_date: '2026-04-30'
     contract_number: HQ003420C0066
@@ -1064,7 +1049,6 @@ contracts:
     source:
       path: government/usaspending-hq003420c0066.txt
       location: '"description" field'
-    note: 'OUSD(I&S) award. Sancorp Past Performance separately lists Joint Artificial Intelligence Center BOA and BPA awards.'
   - id: c4
     added_date: '2026-04-30'
     contract_number: HQ003420C0167
@@ -1077,7 +1061,6 @@ contracts:
     source:
       path: government/usaspending-hq003420c0167.txt
       location: '"description" field'
-    note: 'OUSD(I&S) Counterintelligence Analytical Support per Sancorp Past Performance.'
   - id: c5
     added_date: '2026-04-30'
     contract_number: HQ003422C0064
@@ -1090,7 +1073,6 @@ contracts:
     source:
       path: government/usaspending-hq003422c0064.txt
       location: '"description" field'
-    note: 'Awarded three months after the IPMO was established per the Notre Dame memo ([`/documents/ipmo-notre-dame-memo-2022`]) signed by James A. Holly ([`/people/james-holly`]), Acting Director.'
   - id: c6
     added_date: '2026-04-30'
     contract_number: HQ003422C0094
@@ -1103,7 +1085,6 @@ contracts:
     source:
       path: government/usaspending-hq003422c0094.txt
       location: '"description" field; solicitation HQ003422R0192; 8(A) Sole Source per latest_transaction_contract_data'
-    note: 'Period of performance start date August 22, 2022; date signed September 1, 2022 per the FOIA 23-F-0905 SF 33 award notification email. AARO Performance Work Statement released via FOIA case 23-F-1114 to The Black Vault: 125 pages determined to be responsive, 11 pages withheld in their entirety per (b)(5), and portions of the remaining 114 pages exempt from release under (b)(4) and (b)(6). Sancorp also won the IPMO Support Services contract HQ003422C0064 awarded three months earlier — both contracts placed inside two related OUSD(I&S) offices.'
   - id: c7
     added_date: '2026-04-30'
     contract_number: HQ003423C0061
@@ -1116,7 +1097,6 @@ contracts:
     source:
       path: government/usaspending-hq003423c0061.txt
       location: '"description" field'
-    note: 'IPMO continuation contract following expiration of HQ003422C0064. Sancorp''s Past Performance lists this contract''s solicitation number HQ003422R0164 rather than the awarded contract number.'
   - id: c8
     added_date: '2026-04-30'
     contract_number: W519TC23F0545
@@ -1129,7 +1109,6 @@ contracts:
     source:
       path: government/usaspending-w519tc23f0545.txt
       location: '"description" field; parent IDV W519TC23G0042 (AI Talent 2.0 BOA)'
-    note: 'Chief Digital and Artificial Intelligence Office task order under the AI Talent 2.0 Basic Ordering Agreement.'
   - id: c9
     added_date: '2026-04-30'
     contract_number: HQ003424C0046
@@ -1142,7 +1121,6 @@ contracts:
     source:
       path: government/usaspending-hq003424c0046.txt
       location: '"description" field'
-    note: 'IPMO continuation contract — third in the chain (HQ003422C0064 → HQ003423C0061 → this).'
   - id: c10
     added_date: '2026-04-30'
     contract_number: HQ003424F0411
@@ -1155,7 +1133,6 @@ contracts:
     source:
       path: government/usaspending-hq003424f0411.txt
       location: '"description" field; parent IDV 47QRAA22D00C4 (GSA OASIS-style vehicle)'
-    note: 'Per Sancorp Past Performance the customers are Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.'
   - id: c11
     added_date: '2026-04-30'
     contract_number: HQ003424C0096
@@ -1168,7 +1145,6 @@ contracts:
     source:
       path: government/usaspending-hq003424c0096.txt
       location: '"description" field'
-    note: 'AARO follow-on contract continuing the scope of HQ003422C0094.'
   - id: c12
     added_date: '2026-04-30'
     contract_number: HQ003424A0023
@@ -1181,7 +1157,6 @@ contracts:
     source:
       path: government/usaspending-hq003424a0023.txt
       location: '"description" field, IDV'
-    note: 'Indefinite-delivery vehicle for Office of the Under Secretary of War for Intelligence and Security work; obligation is through call orders.'
   - id: c13
     added_date: '2026-04-30'
     contract_number: HQ003425A0001
@@ -1194,7 +1169,6 @@ contracts:
     source:
       path: government/usaspending-hq003425a0001.txt
       location: '"description" field, IDV'
-    note: 'Office of the Assistant Secretary of Defense for Science and Technology IDIQ. HQ003425FE388 is a task order issued under this parent.'
   - id: c14
     added_date: '2026-04-30'
     contract_number: W912CL25CA005
@@ -1207,7 +1181,6 @@ contracts:
     source:
       path: government/usaspending-w912cl25ca005.txt
       location: '"description" field; PSC R410, NAICS 541611, 8(A) Sole Source'
-    note: 'Awarded by Department of the Army on behalf of USSOUTHCOM. 8(A) Sole Source with 1 offer received — same procurement method as the AARO contract HQ003422C0094.'
   - id: c15
     added_date: '2026-04-30'
     contract_number: HQ003425FE388
@@ -1220,7 +1193,6 @@ contracts:
     source:
       path: government/usaspending-hq003425fe388.txt
       location: '"description" field; task order under parent IDV HQ003425A0001'
-    note: 'Sancorp Past Performance lists this contract''s customer as Office of the Under Secretary of War for Intelligence and Security; the USAspending description names the customer as Counterintelligence, Law Enforcement and Security (CLS).'
   - id: c16
     added_date: '2026-04-30'
     contract_number: HQ003425FE405
@@ -1233,7 +1205,6 @@ contracts:
     source:
       path: government/usaspending-hq003425fe405.txt
       location: '"description" field; task order under parent 47QRAA22D00C4'
-    note: 'Customer is the Office of the Under Secretary of War for Policy per Sancorp Past Performance.'
   - id: c17
     added_date: '2026-04-30'
     contract_number: HQ085926FG471
@@ -1246,7 +1217,6 @@ contracts:
     source:
       path: government/usaspending-hq085926fg471.txt
       location: '"description" field; task order under parent IDV HQ085926DG304'
-    note: 'Sancorp Featured News January 2026 reports the SHIELD IDIQ award.'
 org_relationships:
   - id: or1
     added_date: '2026-04-30'
@@ -1255,7 +1225,6 @@ org_relationships:
     source:
       path: government/usaspending-hq003422c0094.txt
       location: '"awarding_agency" field; subtier "Washington Headquarters Services"'
-    note: 'Primary contracting counterparty across the AARO, IPMO, CIT, and Counterintelligence Analytical contracts, reached via the Washington Headquarters Services subtier (q50). Renamed OUSW(I&S) under EO 14347 (September 5, 2025).'
   - id: or2
     added_date: '2026-04-30'
     organization_path: /organizations/aaro
@@ -1263,7 +1232,6 @@ org_relationships:
     source:
       path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
       location: 'AARO contract HQ003422C0094 PWS cover page'
-    note: 'Sancorp services AARO under contracts HQ003422C0094 (initial) and HQ003424C0096 (follow-on). The PWS Section 5.4 Congressional Affairs, Public Affairs, and FOIA Support task area (q4) places Sancorp inside AARO''s public-communications and information-disclosure surface.'
   - id: or3
     added_date: '2026-04-30'
     organization_path: /organizations/ipmo
@@ -1271,7 +1239,6 @@ org_relationships:
     source:
       path: news/sancorp-careers-20260430.html
       location: 'Company News page, June 2022 entry'
-    note: 'Sancorp services IPMO under a continuation chain — HQ003422C0064 (2022), HQ003423C0061 (2023), HQ003424C0046 (2024); the IPMO award is attested in Sancorp Company News (q11). The IPMO is the OUSD(I&S) center of gravity for deliberate conceal and selective reveal of strategic defense capabilities per the FY26 OSD OP-5 budget (q15).'
   - id: or4
     added_date: '2026-04-30'
     organization_path: /organizations/whs
@@ -1279,7 +1246,6 @@ org_relationships:
     source:
       path: government/usaspending-hq003422c0094.txt
       location: '"awarding_agency.subtier_agency.name" field'
-    note: 'Subtier contracting agency (q50) — issues most of Sancorp''s OUSD(I&S) prime contracts on behalf of the office.'
   - id: or5
     added_date: '2026-04-30'
     organization_path: /organizations/insa
@@ -1287,7 +1253,6 @@ org_relationships:
     source:
       path: news/sancorp-careers-20260430.html
       location: 'Company News page, March 2021 entry'
-    note: 'Trade-association membership since March 2021; Insider Threat Subcommittee participation (q9). INSA''s September 2022 Naming Convention paper credits OUSD(I&S) as developer of counter-insider-threat doctrine (q8) — Sancorp''s 2018 OUSD(I&S) CI Metrics contract and 2019 Counter-Insider Threat contract align operationally with that doctrinal framework.'
   - id: or6
     added_date: '2026-04-30'
     organization_path: /organizations/ussouthcom
@@ -1295,7 +1260,6 @@ org_relationships:
     source:
       path: government/usaspending-w912cl25ca005.txt
       location: '"description" field'
-    note: 'Customer of W912CL25CA005 Support to Special Technical Operations contract — explicit MILDEC scope per the USAspending description (q13).'
   - id: or7
     added_date: '2026-04-30'
     organization_path: /organizations/mda
@@ -1303,7 +1267,6 @@ org_relationships:
     source:
       path: government/usaspending-hq085926fg471.txt
       location: '"awarding_agency.subtier_agency.name" field'
-    note: 'Customer of MDA SHIELD initial order HQ085926FG471 (December 2025); MDA is the awarding subtier per the USAspending record (q51).'
   - id: or8
     added_date: '2026-04-30'
     organization_path: /organizations/cdao
@@ -1311,7 +1274,6 @@ org_relationships:
     source:
       path: government/usaspending-w519tc23f0545.txt
       location: '"description" field'
-    note: 'Customer of W519TC23F0545 Algorithmic Warfare and Public Affairs task order under AI Talent 2.0 BOA; CDAO scope per the USAspending description (q42).'
   - id: or9
     added_date: '2026-04-30'
     organization_path: /organizations/oasd-st
@@ -1319,7 +1281,6 @@ org_relationships:
     source:
       path: government/usaspending-hq003425a0001.txt
       location: '"description" field, IDV'
-    note: 'Customer of the HQ003425A0001 parent IDIQ for Technical, Analytical, Administrative, and Professional Program Support Services (q46).'
   - id: or10
     added_date: '2026-04-30'
     organization_path: /organizations/oasd-hdha
@@ -1327,7 +1288,6 @@ org_relationships:
     source:
       path: government/usaspending-hq003424f0411.txt
       location: '"description" field'
-    note: 'Customer of the HQ003424F0411 task order (q43, USAspending description "LABOR") — also services OASD Nuclear and Countering Weapons of Mass Destruction per Sancorp Past Performance.'
   - id: or11
     added_date: '2026-04-30'
     organization_path: /organizations/premier-enterprise-solutions
@@ -1335,7 +1295,6 @@ org_relationships:
     source:
       path: government/gao-b-422985-wayback-20250708.html
       location: 'GAO B-422985 decision body'
-    note: 'Competitor — won OUSD(I&S) Executive Directorate (EXDIR) Call Order 1 under RFQ HQ003424R0178 over Sancorp (q23, q24).'
   - id: or12
     added_date: '2026-04-30'
     organization_path: /organizations/arlo-solutions
@@ -1343,7 +1302,6 @@ org_relationships:
     source:
       path: government/gao-b-422985-wayback-20250708.html
       location: 'GAO B-422985 decision body'
-    note: 'Competitor — won OUSD(I&S) Sensitive Activities and Special Programs (SASP) Directorate Call Order 2 under RFQ HQ003424R0178 over Sancorp (q23, q24).'
   - id: or13
     added_date: '2026-04-30'
     organization_path: /organizations/gsa
@@ -1351,4 +1309,3 @@ org_relationships:
     source:
       path: news/sancorp-update-202508-wayback-20251208.html
       location: 'August 2025 Featured News'
-    note: 'GSA-issued contract vehicles include Multiple Award Schedule (July 2022), 8(A) STARS III (47QTCB22D0104, 2022), and OASIS+ 8(a) (47QRCA25DA398, August 2025; award announced in Sancorp Featured News, q12).'

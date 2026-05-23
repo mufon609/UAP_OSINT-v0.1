@@ -36,12 +36,12 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/vfa-41`] | Commanding Officer | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/carrier-airwing-eleven`] | VFA-41 squadron attached to CVW-11 at time of the 2004 Nimitz encounter | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/uss-nimitz`] | Stationed onboard as VFA-41 Commanding Officer during the 2004 Nimitz encounter | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/us-navy`] | Commander (retired) |  | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/vfa-41`] | Commanding Officer | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/carrier-airwing-eleven`] | VFA-41 squadron attached to CVW-11 at time of the 2004 Nimitz encounter | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/uss-nimitz`] | Stationed onboard as VFA-41 Commanding Officer during the 2004 Nimitz encounter | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/us-navy`] | Commander (retired) |  | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 
@@ -166,11 +166,11 @@ _Direct observation._
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/alex-dietrich`] | Wingman and co-observer; other F/A-18F pilot in Fravor's 2-plane flight during the 2004 Nimitz encounter |  |
-| [`/people/jay-stratton`] | Contacted Fravor in 2009 to investigate the 2004 encounter as part of the ATIP program |  |
-| [`/people/luis-elizondo`] | Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich |  |
+| Person | Relationship |
+|---|---|
+| [`/people/alex-dietrich`] | Wingman and co-observer; other F/A-18F pilot in Fravor's 2-plane flight during the 2004 Nimitz encounter |
+| [`/people/jay-stratton`] | Contacted Fravor in 2009 to investigate the 2004 encounter as part of the ATIP program |
+| [`/people/luis-elizondo`] | Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich |
 
 ---
 
@@ -194,10 +194,10 @@ Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Delonge | DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node). |
-| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Canonical form "Leslie Kean" matches her own byline on the December 2017 NYT articles and on her Debrief-era work. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Delonge | DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 

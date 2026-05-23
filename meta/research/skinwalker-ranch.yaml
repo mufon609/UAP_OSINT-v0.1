@@ -255,7 +255,6 @@ naming_quirks:
   location: Deseret News October 1996 article body
   source_path: news/aliendave-nids-ranch-mirror-19961020.html
   resolution: use-canonical
-  note: Primary-source Uintah County assessor records (2026) show 480.19 acres across 7 parcels totaling the ranch. Modern secondary sources (Wikipedia, history.co.uk, Vice 2020) repeat 512 acres — see rumor r1. The 1996 contemporaneous Deseret reporting of 480-acre is more accurate and matches the 2026 parcel-record sum.
 - id: nq2
   added_date: '2026-04-20'
   observed: Tom and Ellen Gorman
@@ -263,7 +262,6 @@ naming_quirks:
   location: Hunt for the Skinwalker (2005) book throughout
   source_path: news/aliendave-nids-ranch-mirror-19961020.html
   resolution: use-canonical
-  note: Kelleher and Knapp's 2005 book used pseudonyms 'Tom and Ellen Gorman' for the 1994-1996 owners. The actual names Terry and Gwen Sherman are documented in contemporaneous Deseret News reporting (1996). When quoting from Hunt for the Skinwalker directly in future node iterations, preserve the 'Gorman' form in-quote per preserve-as-sic-in-quotes pattern.
 - id: nq3
   added_date: '2026-04-20'
   observed: Sherman ranch
@@ -271,7 +269,6 @@ naming_quirks:
   location: Deseret News 1996-1997 articles throughout
   source_path: news/aliendave-nids-ranch-mirror-19961020.html
   resolution: preserve-as-sic-in-quotes
-  note: Pre-2005 primary sources (Deseret News 1996-1997) consistently call the property 'the Sherman ranch' or 'the former Sherman ranch'. The 'Skinwalker Ranch' naming entered public record via Kelleher and Knapp's 2005 book and became canonical post-2005. Both names apply to the same property; historical-primary-source quotes preserve the contemporaneous naming.
 - id: nq4
   added_date: '2026-04-20'
   observed: Kenneth Myers
@@ -279,7 +276,6 @@ naming_quirks:
   location: Frank Warren 2020 article
   source_path: news/theufochronicles-myers-family-20200412.html
   resolution: use-canonical
-  note: Frank Warren's 2020 piece uses the full 'Kenneth John Myers' form while most sources use 'Kenneth Myers'. Preserve source form in quotes, use canonical elsewhere.
 rumors:
 - id: r1
   added_date: '2026-04-20'
@@ -290,7 +286,6 @@ rumors:
   - history.co.uk
   - Vice 2020
   - most post-2005 news sources
-  note: Primary-source Uintah County assessor records (2026) show 480.19 acres across 7 parcels. The 1996 contemporaneous Deseret reporting of 480-acre is consistent with the 2026 parcel record. Modern 512-acre figure is repeated across secondary sources but contradicted by primary assessor data.
 - id: r2
   added_date: '2026-04-20'
   claim: A bulletproof wolf-like creature was shot on the ranch during the Sherman era
@@ -298,7 +293,6 @@ rumors:
   observed_sources:
   - Hunt for the Skinwalker (2005) popular lore
   - various paranormal-genre retellings
-  note: Widely-circulated claim from the Sherman-era post-NDA period; not documented in the contemporaneous 1996 Deseret News reporting. Represents popular-lore content that Hunt for the Skinwalker (2005) introduced; primary-source backing unknown.
 - id: r3
   added_date: '2026-04-20'
   claim: The ranch is the site of interdimensional portals / gateways
@@ -306,7 +300,6 @@ rumors:
   observed_sources:
   - Gary Hart statements quoted in Deseret News October 1996
   - NIDS-era and post-NIDS paranormal-genre coverage
-  note: The 1996 Deseret article quotes UFO researcher Gary Hart speculating about 'interdimensional doorway' — a researcher-speculation claim rather than a primary-source-established fact. The claim persists in popular discourse without direct primary-source backing.
 - id: r4
   added_date: '2026-04-20'
   claim: The Skinwalker cryptid creature has been observed on the property
@@ -314,7 +307,6 @@ rumors:
   observed_sources:
   - Hunt for the Skinwalker (2005)
   - The Secret of Skinwalker Ranch (History Channel, 2020-)
-  note: The name 'Skinwalker Ranch' derives from Navajo/Ute skinwalker legends, but neither tribal affiliation has made on-record statements about the ranch. The cryptid observation claims are post-2005 lore without contemporaneous primary-source documentation.
 ownership_timeline:
 - id: ot1
   added_date: '2026-04-20'
@@ -334,7 +326,6 @@ ownership_timeline:
   source:
     path: news/deseret-frequent-fliers-19960630.html
     location: Zack Van Eyck article June 30, 1996
-  note: Terry and Gwen Sherman purchased the 480-acre ranch approximately three months after Edith Myers died. Their accounts of anomalous activity between 1994 and 1996 became the foundation for the ranch's notoriety following the Sherman family going public with the Deseret News in July 1996.
 - id: ot3
   added_date: '2026-04-20'
   period_start: 1996-09

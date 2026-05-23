@@ -107,7 +107,6 @@ affiliations:
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
     location: "line 15"
-  note: No archived primary source in this pool pins the VFA-41 end date specifically, so the period is left open.
 - id: a3
   added_date: '2026-04-21'
   organization_path: /organizations/uss-nimitz
@@ -147,7 +146,6 @@ affiliations:
   source:
     path: news/cu-boulder-emp-dietrich-bio.html
     location: "line 1"
-  note: A separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program (the two CU Boulder rows are distinct programs, not a continuation).
 - id: a7
   added_date: '2026-04-21'
   organization_path: /organizations/syracuse-university
@@ -893,38 +891,38 @@ corroboration_items:
   added_date: '2026-04-21'
   observer_path: /people/david-fravor
   observation_type: testimonial
+  confirms: 'Flight lead in the lead F/A-18F of the same two-ship flight; observed the same Tic Tac object and named Dietrich as ''the other pilot in my flight'' in his House Oversight written testimony.'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: "line 71"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Flight lead in the lead F/A-18F of the same two-ship flight; observed the same Tic Tac object and named Dietrich as 'the other pilot in my flight' in his House Oversight written testimony.
 - id: c2
   added_date: '2026-04-21'
   observer_path: /organizations/uss-princeton
   observation_type: instrumented
+  confirms: 'Aegis SPY-1 radar on USS Princeton reacquired the object 60 miles East at the CAP point seconds after it disappeared from visual.'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: "line 51"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Aegis SPY-1 radar on USS Princeton reacquired the object 60 miles East at the CAP point seconds after it disappeared from visual.
 - id: c3
   added_date: '2026-04-21'
   observer_path: /media/flir1-video
   observation_type: documentary
+  confirms: 'Subsequent F/A-18F sortie launched after Dietrich and Fravor''s flight returned captured targeting-pod video of an object Fravor and Dietrich believed was the same Tic Tac.'
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: "line 57"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Subsequent F/A-18F sortie launched after Dietrich and Fravor's flight returned captured targeting-pod video of an object Fravor and Dietrich believed was the same Tic Tac.
 - id: c4
   added_date: '2026-04-23'
   observer_path: /people/chad-underwood
   observation_type: testimonial
+  confirms: 'On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on the aircraft has two conflicting attestations between Dietrich and Underwood; see Credibility Notes for the source-priority resolution.'
   source:
     path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
     location: "lines 449-451"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on the aircraft has two conflicting attestations between Dietrich and Underwood; see Credibility Notes for the source-priority resolution.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-21'
@@ -933,7 +931,6 @@ naming_quirks:
   location: "line 1092"
   source_path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
   resolution: preserve-as-sic-in-quotes
-  note: Single instance in the CBS broadcast narrator text ('As Deitrich circled above'). Not Dietrich's own writing — a CBS transcription typo.
 - id: nq2
   added_date: '2026-04-21'
   observed: fraver
@@ -941,7 +938,6 @@ naming_quirks:
   location: "lines 351-352, 473"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'Fravor' across multiple Sprague podcast lines; also appears in American Veterans Center transcript line 209. Preserve in quotes; use canonical Fravor in prose.
 - id: nq3
   added_date: '2026-04-21'
   observed: prinston
@@ -949,7 +945,6 @@ naming_quirks:
   location: "line 497"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'Princeton' (the USS Princeton).
 - id: nq4
   added_date: '2026-04-21'
   observed: nits
@@ -957,7 +952,6 @@ naming_quirks:
   location: "lines 41-42, 52"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'Nimitz' across multiple Sprague podcast lines.
 - id: nq5
   added_date: '2026-04-21'
   observed: Nimttz
@@ -965,7 +959,6 @@ naming_quirks:
   location: "line 320"
   source_path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'Nimitz' in Linda Hall panel.
 - id: nq6
   added_date: '2026-04-21'
   observed: Fleer
@@ -973,7 +966,6 @@ naming_quirks:
   location: "lines 459, 461"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'FLIR' (Forward-Looking Infrared) in Sprague podcast.
 - id: nq7
   added_date: '2026-04-21'
   observed: ROC
@@ -981,7 +973,6 @@ naming_quirks:
   location: "line 312"
   source_path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'NROTC' (Naval Reserve Officers Training Corps) in Linda Hall panel.
 - id: nq8
   added_date: '2026-04-21'
   observed: turning water
@@ -989,7 +980,6 @@ naming_quirks:
   location: "line 479"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage.
 - id: nq9
   added_date: '2026-04-23'
   observed: Chad and the back seat
@@ -997,7 +987,6 @@ naming_quirks:
   location: "line 449"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: disputed
-  note: "Primary-source disagreement on Chad Underwood's position on the subsequent F/A-18F sortie that captured the FLIR1 video. Dietrich's YouTube-caption transcript of the Sprague podcast reads 'with Chad and the back seat and uh and his Pilot' — the caption is noisy and the phrase may be a transcription artifact of 'Chad in the back seat'; either reading supports Dietrich's claim that Chad was the WSO with an unnamed pilot. NYMag 2019 (sources/news/nymag-underwood-2019.html) frames Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' in its headline and describes him as the pilot of that sortie throughout. Per the source-priority hierarchy (subject's own words > witness recollection about that subject), Underwood's own first-person NYMag account outranks Dietrich's recollection for this positional fact. Both attestations retained; the future /people/chad-underwood node build resolves in Underwood's favor."
 - id: nq10
   added_date: '2026-05-13'
   observed: fraver
@@ -1005,7 +994,6 @@ naming_quirks:
   location: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   source_path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver").
 rumors:
 - id: rm1
   added_date: '2026-04-21'
@@ -1013,4 +1001,3 @@ rumors:
   status: not-primary-source-established
   observed_sources:
     - Multiple secondary UAP-community sources name Slaight as Dietrich's backseater; Slaight briefly co-appeared with Fravor on a Jesse Watters Fox segment in 2017-2018 but has been largely silent since.
-  note: Dietrich does NOT name her WSO in any of the 19 primary sources surveyed. In the American Veterans Center 2024 interview she refers to her backseater only by rank ('I had a department head a lieutenant commander in my back seat'). The Slaight identification is widely circulated but lacks Dietrich-direct or Slaight-direct primary-source attestation in the current source pool.

@@ -5,13 +5,13 @@ the person witnessed) OR encounter event artifacts (observers of
 this encounter).
 
 Each entry: required {observer_path, observation_type, source},
-optional {observed_event_ref, note}.
+optional {observed_event_ref, confirms}.
 
 Cross-reference surface, NOT a statement surface — per
 ``meta/conventions.md``, archetype-specific sections (Corroboration
 / Claim Inventory / Program Involvement / Publication Record) are
-cross-reference / metadata surfaces. The ``.note`` field describes
-*why* the cross-reference exists (e.g., "Other F/A-18F pilot in
+cross-reference / metadata surfaces. The ``confirms`` field describes
+*what* the corroboration confirms (e.g., "Other F/A-18F pilot in
 Fravor's 2-plane flight; testimony confirms wingman also lost
 visual at intercept") and is out of prose-drift scope — the
 descriptor isn't anchored to a single source.

@@ -42,7 +42,6 @@ speakers:
   source:
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
     location: '[0:03]'
-  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; Mystery Wire founder; co-author with Lacatski and Kelleher of "Skinwalkers at the Pentagon" (October 2021); interviewer throughout this segment.
 - id: s2
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -51,7 +50,6 @@ speakers:
   source:
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
     location: '[0:39]'
-  note: Former AAWSAP director at DIA; co-author of "Skinwalkers at the Pentagon"; primary subject of the interview. Auto-caption renders his surname as "lakatsky" / "lykotsky" / "caskey" — see naming_quirks.
 - id: s3
   added_date: '2026-05-17'
   name: Dr. Colm Kelleher
@@ -60,7 +58,6 @@ speakers:
   source:
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
     location: '[4:26]'
-  note: Former BAASS program manager; co-author of "Skinwalkers at the Pentagon"; second guest in the interview. Auto-caption renders his first name as "collin" / "column" — see naming_quirks.
 quotes:
 - id: q1
   speaker_id: s2
@@ -191,7 +188,6 @@ naming_quirks:
   location: '[0:03]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" phonetically as "lakatsky" in the opening Knapp address. Preserved as it appears in the caption file.
 - id: nq2
   added_date: '2026-05-17'
   observed: lykotsky
@@ -199,7 +195,6 @@ naming_quirks:
   location: '[7:36], [15:56]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "Lacatski" when spoken by Kelleher — "lykotsky" replaces the initial L-a- with L-y- and renders the final -ski as -tsky. Preserved as it appears.
 - id: nq3
   added_date: '2026-05-17'
   observed: caskey
@@ -207,7 +202,6 @@ naming_quirks:
   location: '[13:13]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption third variant of "Lacatski" — "caskey" when Knapp addresses Lacatski before the DoD review question ("dr caskey jim"). Preserved as it appears.
 - id: nq4
   added_date: '2026-05-17'
   observed: collin
@@ -215,7 +209,6 @@ naming_quirks:
   location: '[4:09]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders Colm Kelleher's first name phonetically as "collin" in Knapp's turn-of-speaker address. Preserved as it appears.
 - id: nq5
   added_date: '2026-05-17'
   observed: column
@@ -223,7 +216,6 @@ naming_quirks:
   location: '[12:25]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption second rendering of Colm Kelleher's first name as "column" in Knapp's closing turn-of-speaker address ("column you're excited to it"). Preserved as it appears.
 - id: nq6
   added_date: '2026-05-17'
   observed: allsap
@@ -231,7 +223,6 @@ naming_quirks:
   location: '[0:28]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AAWSAP" as "allsap" in Knapp's framing question. AAWSAP = Advanced Aerospace Weapon System Applications Program. Preserved as it appears.
 - id: nq7
   added_date: '2026-05-17'
   observed: ossap
@@ -239,7 +230,6 @@ naming_quirks:
   location: '[5:08], [5:34], [15:56], [16:35]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AAWSAP" as "ossap" in multiple Kelleher turns. Preserved as it appears.
 - id: nq8
   added_date: '2026-05-17'
   observed: asap
@@ -247,7 +237,6 @@ naming_quirks:
   location: '[2:26], [2:43], [4:14], [4:31]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "asap" in multiple Lacatski + Kelleher turns. Preserved as it appears.
 - id: nq9
   added_date: '2026-05-17'
   observed: osap
@@ -255,7 +244,6 @@ naming_quirks:
   location: '[2:34]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "osap" in the AAWSAP/AATIP distinction turn. Preserved as it appears.
 - id: nq10
   added_date: '2026-05-17'
   observed: atip
@@ -263,7 +251,6 @@ naming_quirks:
   location: '[2:24], [2:39], [3:02]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AATIP" as "atip" (single A). AATIP = Advanced Aerospace Threat Identification Program. Preserved as it appears.
 - id: nq11
   added_date: '2026-05-17'
   observed: atep
@@ -271,7 +258,6 @@ naming_quirks:
   location: '[2:14], [2:36]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption alternate rendering of "AATIP" as "atep" in Knapp's clarification question and Lacatski's response. Preserved as it appears.
 - id: nq12
   added_date: '2026-05-17'
   observed: bass
@@ -279,7 +265,6 @@ naming_quirks:
   location: '[4:11]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "BAASS" as "bass" in Knapp's turn-of-speaker question to Kelleher. BAASS = Bigelow Aerospace Advanced Space Studies. Preserved as it appears.
 - id: nq13
   added_date: '2026-05-17'
   observed: aflacy
@@ -287,7 +272,6 @@ naming_quirks:
   location: '[6:19]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption mid-passage variant — the canonical form "afosi" appears earlier in the same Kelleher turn ([6:04]), then the variant "aflacy" appears at [6:19]. AFOSI = Air Force Office of Special Investigations. Preserved as it appears.
 - id: nq14
   added_date: '2026-05-17'
   observed: tick
@@ -295,4 +279,3 @@ naming_quirks:
   location: '[16:25]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Tic Tac" as "tick" in Kelleher's closing comment about the book covering "the genesis of tick investigation." Preserved as it appears.

@@ -198,7 +198,6 @@ naming_quirks:
   location: 'p. 1, Q1 response — embedded Lacatski quotation'
   source_path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'Elizondo''s Q1 response quotes Lacatski''s SD004 page-1 statement verbatim with "22M" (no dollar sign), while SD004 page 1 itself reads "$22M" (with dollar sign). The QFR-quoted form drops the dollar sign; both forms are source-attested on different documents and preserved verbatim in their respective node Key Passages per source-read-first discipline.'
 - id: nq2
   added_date: '2026-05-18'
   observed: 'AASAP'
@@ -206,5 +205,4 @@ naming_quirks:
   location: 'p. 2, Q11 verbatim quotation of Burlison''s question'
   source_path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'Burlison''s Q11 question text uses "AASAP" (with [sic.] annotation in Elizondo''s verbatim quotation of the question). Likely typo for AAWSAP; Burlison''s original question carries the typo and Elizondo preserves it with [sic.] in his response.'
 

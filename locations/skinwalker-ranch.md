@@ -46,22 +46,22 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ## Ownership Timeline
 
-| Period | Owner | Use / Status | Source | Note |
-|---|---|---|---|---|
-| 1933 – 1994 | Kenneth and Edith Myers | cattle ranch | news/theufochronicles-myers-family-20200412.html |  |
-| 1994 – 1996-09 | Terry and Gwen Sherman | cattle ranch | news/deseret-frequent-fliers-19960630.html | Terry and Gwen Sherman purchased the 480-acre ranch approximately three months after Edith Myers died. Their accounts of anomalous activity between 1994 and 1996 became the foundation for the ranch's notoriety following the Sherman family going public with the Deseret News in July 1996. |
-| 1996-09 – 2016 | Robert Bigelow | ranch used as research site; National Institute for Discovery Science research | news/aliendave-nids-ranch-mirror-19961020.html |  |
-| 2016-04 | Brandon Fugal [`/people/brandon-fugal`] | Fugal-era research operations via Adamantium Real Estate LLC | news/vice-fugal-skinwalker-owner-20200310.html |  |
+| Period | Owner | Use / Status | Source |
+|---|---|---|---|
+| 1933 – 1994 | Kenneth and Edith Myers | cattle ranch | news/theufochronicles-myers-family-20200412.html |
+| 1994 – 1996-09 | Terry and Gwen Sherman | cattle ranch | news/deseret-frequent-fliers-19960630.html |
+| 1996-09 – 2016 | Robert Bigelow | ranch used as research site; National Institute for Discovery Science research | news/aliendave-nids-ranch-mirror-19961020.html |
+| 2016-04 | Brandon Fugal [`/people/brandon-fugal`] | Fugal-era research operations via Adamantium Real Estate LLC | news/vice-fugal-skinwalker-owner-20200310.html |
 
 ---
 
 ## UAP-Scope Activity
 
-| Period | Activity | Source | Note |
-|---|---|---|---|
-| 1996 – 2004 | National Institute for Discovery Science research — [`/organizations/nids`]; [`/people/robert-bigelow`]; [`/people/john-alexander`] | news/aliendave-nids-ranch-mirror-19961020.html |  |
-| 2008 – 2012 | BAASS/AAWSAP Defense Intelligence Agency contract research — [`/organizations/baass`]; [`/organizations/aawsap`]; [`/organizations/dia`]; [`/people/colm-kelleher`]; [`/people/james-lacatski`] | government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf |  |
-| 2016 | Fugal-era research operations — [`/people/brandon-fugal`]; [`/organizations/adamantium-real-estate`] | news/vice-fugal-skinwalker-owner-20200310.html |  |
+| Period | Activity | Source |
+|---|---|---|
+| 1996 – 2004 | National Institute for Discovery Science research — [`/organizations/nids`]; [`/people/robert-bigelow`]; [`/people/john-alexander`] | news/aliendave-nids-ranch-mirror-19961020.html |
+| 2008 – 2012 | BAASS/AAWSAP Defense Intelligence Agency contract research — [`/organizations/baass`]; [`/organizations/aawsap`]; [`/organizations/dia`]; [`/people/colm-kelleher`]; [`/people/james-lacatski`] | government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf |
+| 2016 | Fugal-era research operations — [`/people/brandon-fugal`]; [`/organizations/adamantium-real-estate`] | news/vice-fugal-skinwalker-owner-20200310.html |
 
 ---
 
@@ -330,26 +330,26 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ### Confirmed
 
-| Entity | Relationship | Note |
-|---|---|---|
-| [`/people/robert-bigelow`] | owner 1996-2016; founder of NIDS (1995); founder of Bigelow Aerospace and BAASS (2008 AAWSAP contractor) |  |
-| [`/people/brandon-fugal`] | current owner since 2016 via Adamantium Real Estate LLC |  |
-| [`/people/terry-sherman`] | owner 1994-1996 with wife Gwen; caretaker under Bigelow employment post-1996 per nondisclosure agreement |  |
-| [`/people/garth-myers`] | brother of Kenneth John Myers; Myers-era witness who denies paranormal activity 1933-1994 |  |
-| [`/organizations/nids`] | first institutional research operator 1996-2004; Bigelow-founded 1995 |  |
-| [`/organizations/baass`] | AAWSAP contractor 2008-2012; conducted institutional research at the ranch as part of the DIA-contracted work |  |
-| [`/organizations/aawsap`] | program funding BAASS research at the ranch 2008-2012 |  |
-| [`/organizations/bigelow-aerospace`] | parent company of BAASS; Robert Bigelow's aerospace firm |  |
-| [`/organizations/adamantium-real-estate`] | Fugal's Delaware LLC holding entity for all 7 Uintah County ranch parcels since 2016 |  |
-| [`/organizations/dia`] | contracting agency for the 2008 AAWSAP contract that funded BAASS research at the ranch |  |
-| [`/documents/hunt-for-the-skinwalker-2005`] | Kelleher and Knapp book documenting NIDS-era investigation at the ranch; introduced the 'Skinwalker Ranch' naming to public record |  |
-| [`/documents/skinwalkers-at-the-pentagon-2021`] | Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional research at the ranch |  |
-| [`/people/gwen-sherman`] | co-owner 1994-1996 with husband Terry Sherman |  |
-| [`/people/george-knapp`] | co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021) |  |
-| [`/people/michael-shellenberger`] | author of 2024 House Oversight written testimony that cites the ranch |  |
-| [`/documents/written-testimony-shellenberger-2024`] | House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline |  |
-| [`/people/kenneth-myers`] | owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994 |  |
-| [`/people/edith-myers`] | co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994 |  |
+| Entity | Relationship |
+|---|---|
+| [`/people/robert-bigelow`] | owner 1996-2016; founder of NIDS (1995); founder of Bigelow Aerospace and BAASS (2008 AAWSAP contractor) |
+| [`/people/brandon-fugal`] | current owner since 2016 via Adamantium Real Estate LLC |
+| [`/people/terry-sherman`] | owner 1994-1996 with wife Gwen; caretaker under Bigelow employment post-1996 per nondisclosure agreement |
+| [`/people/garth-myers`] | brother of Kenneth John Myers; Myers-era witness who denies paranormal activity 1933-1994 |
+| [`/organizations/nids`] | first institutional research operator 1996-2004; Bigelow-founded 1995 |
+| [`/organizations/baass`] | AAWSAP contractor 2008-2012; conducted institutional research at the ranch as part of the DIA-contracted work |
+| [`/organizations/aawsap`] | program funding BAASS research at the ranch 2008-2012 |
+| [`/organizations/bigelow-aerospace`] | parent company of BAASS; Robert Bigelow's aerospace firm |
+| [`/organizations/adamantium-real-estate`] | Fugal's Delaware LLC holding entity for all 7 Uintah County ranch parcels since 2016 |
+| [`/organizations/dia`] | contracting agency for the 2008 AAWSAP contract that funded BAASS research at the ranch |
+| [`/documents/hunt-for-the-skinwalker-2005`] | Kelleher and Knapp book documenting NIDS-era investigation at the ranch; introduced the 'Skinwalker Ranch' naming to public record |
+| [`/documents/skinwalkers-at-the-pentagon-2021`] | Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional research at the ranch |
+| [`/people/gwen-sherman`] | co-owner 1994-1996 with husband Terry Sherman |
+| [`/people/george-knapp`] | co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021) |
+| [`/people/michael-shellenberger`] | author of 2024 House Oversight written testimony that cites the ranch |
+| [`/documents/written-testimony-shellenberger-2024`] | House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline |
+| [`/people/kenneth-myers`] | owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994 |
+| [`/people/edith-myers`] | co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994 |
 
 ---
 
@@ -361,8 +361,6 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 **Circulates in:** Wikipedia; history.co.uk; Vice 2020; most post-2005 news sources
 
-**Primary-source refutation:** Primary-source Uintah County assessor records (2026) show 480.19 acres across 7 parcels. The 1996 contemporaneous Deseret reporting of 480-acre is consistent with the 2026 parcel record. Modern 512-acre figure is repeated across secondary sources but contradicted by primary assessor data.
-
 ---
 
 ## Public-Record Claims Without Primary Source
@@ -373,19 +371,13 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** Hunt for the Skinwalker (2005) popular lore; various paranormal-genre retellings
 
-**Investigator note:** Widely-circulated claim from the Sherman-era post-NDA period; not documented in the contemporaneous 1996 Deseret News reporting. Represents popular-lore content that Hunt for the Skinwalker (2005) introduced; primary-source backing unknown.
-
 ### "The ranch is the site of interdimensional portals / gateways"
 
 **Circulates in:** Gary Hart statements quoted in Deseret News October 1996; NIDS-era and post-NIDS paranormal-genre coverage
 
-**Investigator note:** The 1996 Deseret article quotes UFO researcher Gary Hart speculating about 'interdimensional doorway' — a researcher-speculation claim rather than a primary-source-established fact. The claim persists in popular discourse without direct primary-source backing.
-
 ### "The Skinwalker cryptid creature has been observed on the property"
 
 **Circulates in:** Hunt for the Skinwalker (2005); The Secret of Skinwalker Ranch (History Channel, 2020-)
-
-**Investigator note:** The name 'Skinwalker Ranch' derives from Navajo/Ute skinwalker legends, but neither tribal affiliation has made on-record statements about the ranch. The cryptid observation claims are post-2005 lore without contemporaneous primary-source documentation.
 
 ---
 
@@ -393,9 +385,9 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Sherman ranch | Skinwalker Ranch | news/aliendave-nids-ranch-mirror-19961020.html | Pre-2005 primary sources (Deseret News 1996-1997) consistently call the property 'the Sherman ranch' or 'the former Sherman ranch'. The 'Skinwalker Ranch' naming entered public record via Kelleher and Knapp's 2005 book and became canonical post-2005. Both names apply to the same property; historical-primary-source quotes preserve the contemporaneous naming. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Sherman ranch | Skinwalker Ranch | news/aliendave-nids-ranch-mirror-19961020.html |
 
 ---
 

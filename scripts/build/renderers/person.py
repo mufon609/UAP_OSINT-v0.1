@@ -124,22 +124,21 @@ def render_affiliations(artifact):
             f"| {org} | "
             f"{e.get('role') or ''} | "
             f"{_format_period(e)} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
 
     lines = ["## Affiliations", "", "### Confirmed", "",
-             "| Organization | Role | Period | Source | Note |",
-             "|---|---|---|---|---|"]
+             "| Organization | Role | Period | Source |",
+             "|---|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(render_row(e))
     else:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Role | Period | Source | Note |",
-                  "|---|---|---|---|---|"]
+                  "| Organization | Role | Period | Source |",
+                  "|---|---|---|---|"]
         for e in flagged:
             lines.append(render_row(e))
     return "\n".join(lines) + "\n"
@@ -252,22 +251,21 @@ def render_relationships(artifact):
         person = _wrap_path(e.get("person_path"))
         return (
             f"| {person} | "
-            f"{e.get('relationship') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{e.get('relationship') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Person | Relationship | Note |",
-             "|---|---|---|"]
+             "| Person | Relationship |",
+             "|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Person | Relationship | Note |",
-                  "|---|---|---|"]
+                  "| Person | Relationship |",
+                  "|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"
@@ -303,10 +301,10 @@ def render_program_involvement(artifact):
         fallback_key="period_end",
     )
     lines = ["## Program Involvement", "",
-             "| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |",
-             "|---|---|---|---|---|---|---|"]
+             "| Program | Role | Period | Evidentiary Basis | Confidence | Source |",
+             "|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -319,8 +317,7 @@ def render_program_involvement(artifact):
             f"{period} | "
             f"{e.get('evidentiary_basis') or ''} | "
             f"{e.get('confidence') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -331,10 +328,10 @@ def render_publication_record(artifact):
         "date",
     )
     lines = ["## Publication Record", "",
-             "| Date | Publication | Outlet | Beat / Role | Source | Node Link | Note |",
-             "|---|---|---|---|---|---|---|"]
+             "| Date | Publication | Outlet | Beat / Role | Source | Node Link |",
+             "|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |")
     for e in items:
         outlet = e.get("outlet") or ""
         outlet_cell = _wrap_path(outlet) if outlet.startswith("/") else outlet
@@ -344,8 +341,7 @@ def render_publication_record(artifact):
             f"{outlet_cell} | "
             f"{e.get('beat') or ''} | "
             f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_wrap_path(e.get('node_link'))} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{_wrap_path(e.get('node_link'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -368,10 +364,10 @@ def render_archetype_section(artifact, archetype):
 def render_vouching_chain(artifact):
     items = artifact.get("vouching_chain") or []
     lines = ["## Vouching Chain", "",
-             "| Name | Credentials | Statement | Source | Note |",
-             "|---|---|---|---|---|"]
+             "| Name | Credentials | Statement | Source |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -383,8 +379,7 @@ def render_vouching_chain(artifact):
             f"| {voucher} | "
             f"{e.get('evidentiary_basis') or ''} | "
             f"{attestation} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 

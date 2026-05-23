@@ -34,15 +34,15 @@ As the flight turned back towards the CAP point, the air controller let them kno
 
 ### Confirmed
 
-| Participant | Role | Source | Note |
-|---|---|---|---|
-| [`/people/david-fravor`] | Flight lead; F/A-18F pilot; Commanding Officer of Strike Fighter Squadron Forty-One | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/people/alex-dietrich`] | F/A-18F pilot; Fravor's wingman | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/uss-princeton`] | Aegis combat system radar control; CG-59 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/uss-nimitz`] | Carrier from which Fravor's flight launched; CVN-68 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/vfa-41`] | Fravor's squadron; Strike Fighter Squadron Forty-One, Black Aces | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/vmfa-232`] | Marine F/A-18 squadron; Red Air was being flown by them | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
-| [`/organizations/carrier-airwing-eleven`] | Strike Fighter Squadron Forty-One was attached to this airwing | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| Participant | Role | Source |
+|---|---|---|
+| [`/people/david-fravor`] | Flight lead; F/A-18F pilot; Commanding Officer of Strike Fighter Squadron Forty-One | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/people/alex-dietrich`] | F/A-18F pilot; Fravor's wingman | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/uss-princeton`] | Aegis combat system radar control; CG-59 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/uss-nimitz`] | Carrier from which Fravor's flight launched; CVN-68 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/vfa-41`] | Fravor's squadron; Strike Fighter Squadron Forty-One, Black Aces | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/vmfa-232`] | Marine F/A-18 squadron; Red Air was being flown by them | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/carrier-airwing-eleven`] | Strike Fighter Squadron Forty-One was attached to this airwing | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 
@@ -80,19 +80,13 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** New York Magazine interview with Chad Underwood (2019); Multiple secondary-source accounts
 
-**Investigator note:** Fravor's 2023 written testimony says only "one of my crews who were getting ready to launch" — no name given. Widely reported in secondary coverage as Chad Underwood.
-
 ### "The encounter took place off the coast of Southern California"
 
 **Circulates in:** Multiple secondary-source accounts
 
-**Investigator note:** Fravor's 2023 written testimony places the encounter "at sea" with the CAP point "roughly 40 miles South of the ship" — no geographic region is named in this source.
-
 ### "The encounter occurred on November 14, 2004"
 
 **Circulates in:** Multiple secondary-source accounts
-
-**Investigator note:** Fravor's 2023 written testimony gives only "Nov 2004" and "at sea for roughly 2 weeks" from the Early November start — consistent with mid-November but not specifying a date.
 
 ---
 
@@ -100,9 +94,9 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Lue | Luis | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source renders Luis Elizondo's first name as "Lue" — TWO instances in sworn congressional testimony (lines 68 and 78), not one. The 2-instance pattern is evidentiary: "Lue" is Fravor's alias-of-record for Elizondo in this submission, not a typo. When the Elizondo person node is built, this should surface as a `document_intrinsic.aliases: ["Lue"]` entry on that node, attributed to the Fravor-testimony source.  Resolution handling on this artifact: source form preserved in prose ("Lue Elizondo" in the description and in the relevant timeline cell) rather than substituted with canonical "Luis". Wrap paths to `[`/people/luis-elizondo`]` use the canonical slug so cross-references still resolve; display text in prose uses source form. The schema resolution enum (`preserve-as-sic-in-quotes`) nominally assumes quote-block contexts — on this encounter-event artifact there are no quote blocks, so the spirit of the rule is extended: preserve source form wherever it is the evidentiary referent of record.  Fravor's person artifact (i1) does not track this quirk for the same source — an inconsistency to resolve when that artifact is next audited.  |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Lue | Luis | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 

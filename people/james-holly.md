@@ -42,12 +42,12 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/ipmo`] | First Acting Director; leads a staff to oversee the development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
-| [`/organizations/ousd-is`] | IPMO Acting Director within the Office of the Under Secretary of Defense for Intelligence and Security; identified at the NSI Speaker Series with the affiliation "OUSD (I&S)" | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
-| [`/organizations/jsoc`] | Director of Special Programs for the U.S. Joint Special Operations Command (JSOC) |  | news/nsi-speaker-series-ipmo-holly-20250401.html | Prior role. |
-| [`/organizations/us-army`] | U.S. Army veteran |  | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/ipmo`] | First Acting Director; leads a staff to oversee the development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |
+| [`/organizations/ousd-is`] | IPMO Acting Director within the Office of the Under Secretary of Defense for Intelligence and Security; identified at the NSI Speaker Series with the affiliation "OUSD (I&S)" | 2022-03 | news/nsi-speaker-series-ipmo-holly-20250401.html |
+| [`/organizations/jsoc`] | Director of Special Programs for the U.S. Joint Special Operations Command (JSOC) |  | news/nsi-speaker-series-ipmo-holly-20250401.html |
+| [`/organizations/us-army`] | U.S. Army veteran |  | news/nsi-speaker-series-ipmo-holly-20250401.html |
 
 ---
 
@@ -105,17 +105,17 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/ronald-moultrie`] | Moultrie was Under Secretary of Defense for Intelligence and Security when the IPMO 101 slides Holly presented were cleared for open publication (Sep 27, 2023); the slide deck is attributed to COL Deitra Trotter and HON Ronald S. Moultrie. IPMO sits within Moultrie's OUSD(I&S) office. | COL Deitra Trotter is the slides' co-author alongside Moultrie; no canonical node exists for Trotter. The authorship attestation is in the PDF Author metadata surfaced into the manifest note for government/nsi-23-s-3438-ipmo-101-slides-202310.pdf, not in the slide body text. |
+| Person | Relationship |
+|---|---|
+| [`/people/ronald-moultrie`] | Moultrie was Under Secretary of Defense for Intelligence and Security when the IPMO 101 slides Holly presented were cleared for open publication (Sep 27, 2023); the slide deck is attributed to COL Deitra Trotter and HON Ronald S. Moultrie. IPMO sits within Moultrie's OUSD(I&S) office. |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| Influence and Perception Management Office (IPMO) directorship | First Acting Director; leads a staff overseeing development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | primary-source | high | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |  |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| Influence and Perception Management Office (IPMO) directorship | First Acting Director; leads a staff overseeing development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | primary-source | high | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |
 
 ---
 

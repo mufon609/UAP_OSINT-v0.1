@@ -248,7 +248,6 @@ naming_quirks:
   location: ¶2
   source_path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: '"FOBS" is Graves''s callsign, presented in curly quotes in the source. Retain verbatim in quoted passages; use canonical "Ryan Graves" in claim prose.'
 - id: nq2
   added_date: '2026-04-17'
   observed: F-18
@@ -256,4 +255,3 @@ naming_quirks:
   location: ¶2
   source_path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source uses the shorter "F-18" in its identity paragraph (¶2) but the more precise "F/A-18F Super Hornets" in ¶7 when describing the airframe. Not a typo — shorthand in identity context.

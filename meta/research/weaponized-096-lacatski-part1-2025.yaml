@@ -52,7 +52,6 @@ speakers:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[1:29]'
-  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher.
 - id: s2
   added_date: '2026-05-17'
   name: Jeremy Corbell
@@ -61,7 +60,6 @@ speakers:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[0:48]'
-  note: WEAPONIZED co-host with George Knapp; primary in-studio questioner.
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -70,7 +68,6 @@ speakers:
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[0:12]'
-  note: Former AAWSAP director at DIA; Kona Blue lead per his own self-attestation in this transcript. The auto-caption renders his surname correctly through most of this episode (Lacatski / Dr. Lacatski); one variant "Dr. Kitaski" registered in naming_quirks.
 quotes:
 - id: q1
   speaker_id: s3
@@ -267,7 +264,6 @@ naming_quirks:
   location: '[0:02], [0:15], [2:03], [4:48], [9:00], etc.'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AAWSAP" as "AASAP" throughout PART 1. Preserved as it appears.
 - id: nq2
   added_date: '2026-05-17'
   observed: AOSAP
@@ -275,7 +271,6 @@ naming_quirks:
   location: '[56:15], [56:21]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "AOSAP" in the closing Corbell question about achieving levitating craft. Preserved as it appears.
 - id: nq3
   added_date: '2026-05-17'
   observed: Bass
@@ -283,7 +278,6 @@ naming_quirks:
   location: '[31:08]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "BAASS" as "Bass" in Lacatski's statement that "Bass was up to speed so fast." Preserved as it appears.
 - id: nq4
   added_date: '2026-05-17'
   observed: Column
@@ -291,7 +285,6 @@ naming_quirks:
   location: '[24:05]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders Colm Kelleher's first name as "Column" in Lacatski's reference to Kelleher having written about private money "in the rear portions of Skinwalkers at the Pentagon." Preserved as it appears.
 - id: nq5
   added_date: '2026-05-17'
   observed: Kitaski
@@ -299,7 +292,6 @@ naming_quirks:
   location: '[44:22]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "Lacatski" as "Kitaski" in Corbell's reference to "Dr. Kitaski, get in trouble" about the books-vs-Congress framing. Preserved as it appears.
 - id: nq6
   added_date: '2026-05-17'
   observed: Arrow
@@ -307,7 +299,6 @@ naming_quirks:
   location: '[20:23], [20:31], [20:42], [26:50], etc.'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AARO" as "Arrow" in multiple Corbell turns about AARO's role and behavior. Preserved as it appears.
 - id: nq7
   added_date: '2026-05-17'
   observed: Tar O'Toole
@@ -315,7 +306,6 @@ naming_quirks:
   location: '[26:03]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Tara O'Toole" as "Tar O'Toole" in Corbell's question about Lacatski's meeting with her. Preserved as it appears.
 - id: nq8
   added_date: '2026-05-17'
   observed: Walker
@@ -323,4 +313,3 @@ naming_quirks:
   location: '[39:17]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Skinwalker" as "Walker" / "books, Walker" in Corbell's vampire-and-Skinwalker remark. Preserved as it appears.

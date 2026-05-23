@@ -1,7 +1,7 @@
 """speakers check — type-conditional research-artifact check.
 
 Present on every transcript artifact (both kinds). Each entry:
-required {name, source}, optional {role, node_link, note}.
+required {name, source}, optional {role, node_link}.
 
 Cross-reference surface, NOT a statement surface — speakers names
 the participants in the transcript record; their actual statements

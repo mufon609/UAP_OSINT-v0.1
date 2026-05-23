@@ -1,7 +1,7 @@
 """location-relationships check — type-conditional research-artifact check.
 
 Present on location artifacts. Each entry: required {entity_path,
-relationship, source}, optional {flagged, note}.
+relationship, source}, optional {flagged}.
 
 Heterogeneous target types — this is the only ``relationship_entry``
 shape in the schema that allows ANY entity type as the target

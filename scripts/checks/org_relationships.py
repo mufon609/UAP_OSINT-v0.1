@@ -2,7 +2,7 @@
 
 Org-to-org structured relationships. Present on organization artifacts.
 Each entry: required {organization_path, relationship_type, source},
-optional {flagged, note}.
+optional {flagged}.
 
 CLOSED relationship_type enum {parent, subsidiary, predecessor,
 successor, contractor, contracting-agency, partner, other} — same

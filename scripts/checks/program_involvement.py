@@ -2,7 +2,7 @@
 
 Present on institutional-actor person artifacts. Each entry: required
 {program, role, evidentiary_basis, confidence, source}, optional
-{period_start, period_end, note}.
+{period_start, period_end}.
 
 Closed enums shared with ``vouching_chain`` (the toolkit's common
 evidentiary-quality classification, applied wherever a credibility-

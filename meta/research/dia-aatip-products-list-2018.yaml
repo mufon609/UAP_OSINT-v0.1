@@ -165,7 +165,6 @@ naming_quirks:
   location: 'p. 6, List of Attachments att.22'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source drops the terminal "s" — "John Hopkins" for "Johns Hopkins". Preserved verbatim in the List of Attachments quote.
 - id: nq2
   added_date: '2026-05-21'
   observed: Univ. Of Illinois
@@ -173,7 +172,6 @@ naming_quirks:
   location: 'p. 5, List of Attachments att.1'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source capitalizes "Of" mid-phrase ("Univ. Of Illinois"); also recurs at att.30 ("Univ. Of Nevada"). Preserved verbatim.
 - id: nq3
   added_date: '2026-05-21'
   observed: Univ. Of Nevada – Las Vegas
@@ -181,7 +179,6 @@ naming_quirks:
   location: 'p. 7, List of Attachments att.30'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source capitalizes "Of" mid-phrase ("Univ. Of Nevada") at att.30, where att.29 (same author/institution) uses lowercase "of". Preserved verbatim.
 - id: nq4
   added_date: '2026-05-21'
   observed: Dr. R.Genik
@@ -189,4 +186,3 @@ naming_quirks:
   location: 'p. 7, List of Attachments att.28'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source omits the space after the initial ("R.Genik") at att.28, where att.20 and att.33 (same author) render "R. Genik" with the space. Preserved verbatim.

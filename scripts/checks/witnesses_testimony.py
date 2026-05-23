@@ -8,7 +8,7 @@ the verbatim record carried by the linked nodes, so the event navigates
 to them rather than paraphrasing.
 
 Each entry: required {witness_path, oath_status, source}, optional
-{transcript_node, written_testimony_node, note}.
+{transcript_node, written_testimony_node}.
 
 The schema gate is the canonical AND-conjunction case for
 ``required_when_any_of``:

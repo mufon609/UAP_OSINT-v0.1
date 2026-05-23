@@ -88,15 +88,14 @@ def render_source_form_notes(artifact):
         "first discipline; the canonical form is recorded here for "
         "navigation.",
         "",
-        "| Source Form | Canonical | Source | Note |",
-        "|---|---|---|---|",
+        "| Source Form | Canonical | Source |",
+        "|---|---|---|",
     ]
     for q in preserved:
         observed = _escape_table_cell(q.get("observed"))
         canonical = _escape_table_cell(q.get("canonical"))
         source_path = _escape_table_cell(q.get("source_path"))
-        note = _escape_table_cell(q.get("note"))
-        lines.append(f"| {observed} | {canonical} | {source_path} | {note} |")
+        lines.append(f"| {observed} | {canonical} | {source_path} |")
     return "\n".join(lines) + "\n"
 
 
@@ -122,15 +121,14 @@ def render_preserved_disagreements(artifact):
         "forms of the same fact. The repository does not adjudicate; "
         "both positions stay on the record.",
         "",
-        "| Position | Counterpart | Source | Note |",
-        "|---|---|---|---|",
+        "| Position | Counterpart | Source |",
+        "|---|---|---|",
     ]
     for q in disputed:
         observed = _escape_table_cell(q.get("observed"))
         canonical = _escape_table_cell(q.get("canonical"))
         source_path = _escape_table_cell(q.get("source_path"))
-        note = _escape_table_cell(q.get("note"))
-        lines.append(f"| {observed} | {canonical} | {source_path} | {note} |")
+        lines.append(f"| {observed} | {canonical} | {source_path} |")
     return "\n".join(lines) + "\n"
 
 
@@ -176,10 +174,6 @@ def render_primary_source_contradictions(artifact):
             else:
                 obs_str = str(obs)
             parts.append(f"**Circulates in:** {obs_str}")
-            parts.append("")
-        note = (r.get("note") or "").strip()
-        if note:
-            parts.append(f"**Primary-source refutation:** {note}")
             parts.append("")
     return "\n".join(parts).rstrip() + "\n"
 
@@ -234,10 +228,6 @@ def render_public_record_claims(artifact):
                 obs_str = str(obs)
             parts.append(f"**Circulates in:** {obs_str}")
             parts.append("")
-        note = (r.get("note") or "").strip()
-        if note:
-            parts.append(f"**Investigator note:** {note}")
-            parts.append("")
     return "\n".join(parts).rstrip() + "\n"
 
 
@@ -282,7 +272,7 @@ def render_corroboration(artifact):
         lines.append(
             f"| {_wrap_path(e.get('observer_path'))} | "
             f"{e.get('observation_type') or ''} | "
-            f"{e.get('note') or ''} | "
+            f"{e.get('confirms') or ''} | "
             f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"

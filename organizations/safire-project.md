@@ -38,35 +38,35 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/montgomery-childs`] | Founder, principal scientist, and chief engineer of the SAFIRE PROJECT | 2012 | news/safireproject-team-snapshot.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/montgomery-childs`] | Founder, principal scientist, and chief engineer of the SAFIRE PROJECT | 2012 | news/safireproject-team-snapshot.html |
 
 #### Staff
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/jan-onderco`] | Core team member; data acquisition, equipment continuity, computer interfacing | 2014 | news/safireproject-team-snapshot.html |  |
-| [`/people/jason-lickver`] | Core team engineer; Senior Design Engineer on SAFIRE II and III (per Aureon team page) | 2014 | news/safireproject-team-snapshot.html |  |
-| [`/people/leighton-macmillan`] | Core team multi-disciplinary engineer / mechanical assembly / documentation |  | news/safireproject-team-snapshot.html |  |
-| [`/people/michael-clarage`] | Core team data analyst (Ph.D); Chief Science Officer at Aureon Energy |  | news/safireproject-team-snapshot.html |  |
-| [`/people/paul-anderson`] | Core team chemist (Ph.D); VP Experiments at Aureon Energy |  | news/safireproject-team-snapshot.html |  |
-| [`/people/lowell-morgan`] | Core team plasma physicist |  | news/safireproject-team-snapshot.html |  |
-| [`/people/ben-ged-low`] | Core team Cinematography, Optics, Video Capture |  | news/safireproject-project-report.pdf | Also named in the SAFIRE corporate team page group photo with other team members. |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/jan-onderco`] | Core team member; data acquisition, equipment continuity, computer interfacing | 2014 | news/safireproject-team-snapshot.html |
+| [`/people/jason-lickver`] | Core team engineer; Senior Design Engineer on SAFIRE II and III (per Aureon team page) | 2014 | news/safireproject-team-snapshot.html |
+| [`/people/leighton-macmillan`] | Core team multi-disciplinary engineer / mechanical assembly / documentation |  | news/safireproject-team-snapshot.html |
+| [`/people/michael-clarage`] | Core team data analyst (Ph.D); Chief Science Officer at Aureon Energy |  | news/safireproject-team-snapshot.html |
+| [`/people/paul-anderson`] | Core team chemist (Ph.D); VP Experiments at Aureon Energy |  | news/safireproject-team-snapshot.html |
+| [`/people/lowell-morgan`] | Core team plasma physicist |  | news/safireproject-team-snapshot.html |
+| [`/people/ben-ged-low`] | Core team Cinematography, Optics, Video Capture |  | news/safireproject-project-report.pdf |
 
 #### Advisors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/wal-thornhill`] | Consulting team member; Electric Sun model researcher |  | news/safireproject-team-snapshot.html |  |
-| [`/people/donald-scott`] | Consulting team member; Electric Universe Group |  | news/safireproject-team-snapshot.html |  |
-| [`/people/david-talbott`] | Consulting team; initiator and co-producer of the Electric Universe Conferences; invited Childs to the 2012 EU Conference |  | news/safireproject-team-snapshot.html |  |
-| [`/people/bruce-mainwaring`] | Consulting team; supporter through Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html | Named under foundation partners with the Mainwaring Archive Foundation on the SAFIRE Project team page. |
-| [`/people/scott-mainwaring`] | Consulting team; financing through the Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html |  |
-| [`/people/james-ryder`] | Science Review Team — Chairman, International Science Foundation; also listed on the consulting team | – 2018-05 | news/safireproject-team-snapshot.html |  |
-| [`/people/hal-puthoff`] | Science Review Team — Director, Institute for Advanced Studies at Austin; Aureon Energy Science Advisory Board member |  | news/safireproject-team-snapshot.html |  |
-| [`/people/eric-davis`] | Science Review Team — Chief Science Officer, Institute for Advanced Studies at Austin |  | news/safireproject-team-snapshot.html |  |
-| [`/people/william-gardner`] | Science Review Team — Professor Emeritus, University of California; voluntary electromagnetic-modeling support |  | news/safireproject-team-snapshot.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/wal-thornhill`] | Consulting team member; Electric Sun model researcher |  | news/safireproject-team-snapshot.html |
+| [`/people/donald-scott`] | Consulting team member; Electric Universe Group |  | news/safireproject-team-snapshot.html |
+| [`/people/david-talbott`] | Consulting team; initiator and co-producer of the Electric Universe Conferences; invited Childs to the 2012 EU Conference |  | news/safireproject-team-snapshot.html |
+| [`/people/bruce-mainwaring`] | Consulting team; supporter through Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html |
+| [`/people/scott-mainwaring`] | Consulting team; financing through the Mainwaring Archive Foundation |  | news/safireproject-team-snapshot.html |
+| [`/people/james-ryder`] | Science Review Team — Chairman, International Science Foundation; also listed on the consulting team | – 2018-05 | news/safireproject-team-snapshot.html |
+| [`/people/hal-puthoff`] | Science Review Team — Director, Institute for Advanced Studies at Austin; Aureon Energy Science Advisory Board member |  | news/safireproject-team-snapshot.html |
+| [`/people/eric-davis`] | Science Review Team — Chief Science Officer, Institute for Advanced Studies at Austin |  | news/safireproject-team-snapshot.html |
+| [`/people/william-gardner`] | Science Review Team — Professor Emeritus, University of California; voluntary electromagnetic-modeling support |  | news/safireproject-team-snapshot.html |
 
 ---
 
@@ -647,13 +647,13 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/aurtas-international`] | predecessor | news/aureonenergy-team-snapshot.html |  |
-| [`/organizations/aureon-energy`] | successor | news/safireproject-commercialization-snapshot.html |  |
-| [`/organizations/international-science-foundation`] | fund-administrator | news/safireproject-team-snapshot.html |  |
-| [`/organizations/mainwaring-archive-foundation`] | funder | news/safireproject-genesis-snapshot.html |  |
-| [`/organizations/hathaway-consulting-services`] | other | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page lists Hathaway Consulting Services on the science review team alongside Ryder, Puthoff, Davis, and Gardner, and also separately under corporate consultants. Schema relationship_type "other" used because the closed enum does not include "consulting" or "science-review-team-member"; specific role preserved here in the note. |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/aurtas-international`] | predecessor | news/aureonenergy-team-snapshot.html |
+| [`/organizations/aureon-energy`] | successor | news/safireproject-commercialization-snapshot.html |
+| [`/organizations/international-science-foundation`] | fund-administrator | news/safireproject-team-snapshot.html |
+| [`/organizations/mainwaring-archive-foundation`] | funder | news/safireproject-genesis-snapshot.html |
+| [`/organizations/hathaway-consulting-services`] | other | news/safireproject-team-snapshot.html |
 
 ---
 
@@ -661,17 +661,17 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| empircal | empirical | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page renders "empirical" as "empircal" in David Talbott's consulting-team bio — typo at the source. Canonical form: empirical. Preserved verbatim per source-form discipline. |
-| exerpience | experience | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page renders "experience" as "exerpience" in Jim Ryder's consulting-team bio — typo at the source. Canonical form: experience. Preserved verbatim where the bio text appears in source extracts. |
-| scientfic | scientific | news/safireproject-team-snapshot.html | SAFIRE Project corporate team page renders "scientific" as "scientfic" in the consulting team description — typo at the source. Canonical form: scientific. |
-| atmoshere | atmosphere | news/safireproject-phase-three-snapshot.html | SAFIRE Project Phase Three page renders "atmosphere" as "atmoshere" in the project's stated counter-thermonuclear-model finding ("The core of SAFIRE is cooler than its surrounding atmoshere"). Canonical form: atmosphere. Preserved verbatim per source-form discipline. |
-| photoshpere | photosphere | news/safireproject-phase-three-snapshot.html | SAFIRE Project Phase Three page renders "photosphere" as "photoshpere" in the electron-density comparison statement. Canonical form: photosphere. Preserved verbatim per source-form discipline. |
-| succesfully | successfully | news/safireproject-commercialization-snapshot.html | SAFIRE Project commercialization page renders "successfully" as "succesfully" in the project's research-to-commercial transition statement. Canonical form: successfully. Preserved verbatim per source-form discipline. |
-| John Hopkins University | Johns Hopkins University | news/safireproject-genesis-snapshot.html | SAFIRE Project genesis page renders "Johns Hopkins" as "John Hopkins" in the planning session photo caption ("Michael Clarage, Montgomery Childs, Wal Thornhill, Paul Anderson; planning session at John Hopkins University."). Canonical form: Johns Hopkins University. |
-| Hal Putoff | Hal Puthoff | news/safireproject-team-snapshot.html | SAFIRE Project team page group-photo caption renders "Puthoff" as "Putoff" alongside other subject identifications. Canonical form: Hal Puthoff. Same person who appears correctly as "Harold Puthoff, PhD" in the Science Review Team listing on the same page. |
-| Monty | Montgomery Childs | news/safireproject-team-snapshot.html | SAFIRE Project pages frequently use the informal short form "Monty" for Montgomery Childs (e.g., "Monty's right-hand man", "Scott introduced Monty's proposal"). Alias-of-record — not a typo; Monty is the project-internal informal address form used across multiple paragraphs. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| empircal | empirical | news/safireproject-team-snapshot.html |
+| exerpience | experience | news/safireproject-team-snapshot.html |
+| scientfic | scientific | news/safireproject-team-snapshot.html |
+| atmoshere | atmosphere | news/safireproject-phase-three-snapshot.html |
+| photoshpere | photosphere | news/safireproject-phase-three-snapshot.html |
+| succesfully | successfully | news/safireproject-commercialization-snapshot.html |
+| John Hopkins University | Johns Hopkins University | news/safireproject-genesis-snapshot.html |
+| Hal Putoff | Hal Puthoff | news/safireproject-team-snapshot.html |
+| Monty | Montgomery Childs | news/safireproject-team-snapshot.html |
 
 ---
 

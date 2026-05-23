@@ -175,7 +175,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - 'UAP-disclosure online discussion linking Gough''s 2003 USAWC perception-management paper to her later DoD/AARO UAP spokesperson role'
-  note: 'Middle initial differs in the two attestations — FOIA case 24-F-0894 email signatures use "L" (Gough, Susan L (Sue)), and the 2003 USAWC paper byline uses "I" (Susan I. Gough). No archived primary source bridges the two identities. The conflation rests on online inference, not on primary-source attestation.'
 timeline:
 - id: t1
   added_date: '2026-05-06'
@@ -276,7 +275,6 @@ program_involvement:
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
     location: 'Sue Gough email signature in FOIA case 24-F-0894 — Defense Press Operations, OSD(PA); on-record AARO statements across June 2022 through February 2026'
-  note: ''
 background: 'Sue Gough is a civilian Department of Defense ([`/organizations/dod`]) spokesperson assigned to Defense Press Operations within the Office of the Secretary of Defense Public Affairs (OSD(PA)). Pentagon emails identify her as Gough, Susan L (Sue) CIV OSD PA (USA). Within OSD(PA) she is the principal Public Affairs contact for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]), providing on-record statements about AARO, its predecessor the UAP Task Force ([`/organizations/uaptf`]), and related Department of Defense matters.
 
 

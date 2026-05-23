@@ -280,11 +280,11 @@ In closing: the 2009 contact from Jay Stratton ([`/people/jay-stratton`]) on the
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source consistently misspells the journalist's surname with a trailing 'e'. Use canonical form in prose outside quoted passages. |
-| Tom Delonge | Tom DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source uses lowercase 'l' in DeLonge. Canonical form has internal capital. |
-| U.S Navy | U.S. Navy | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source drops the period after 'S'. Minor typographical quirk; use canonical form outside quoted passages. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Leslie Keane | Leslie Kean | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| Tom Delonge | Tom DeLonge | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| U.S Navy | U.S. Navy | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 
@@ -292,9 +292,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| ATIP (Anomalous Threat Identification Program) | AATIP (Advanced Aerospace Threat Identification Program) | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | Source names the program "ATIP (Anomalous Threat Identification Program)" — inconsistent with the widely-cited "AATIP (Advanced Aerospace Threat Identification Program)". Whether this is Fravor's drafting choice, an alternate abbreviation, or a distinct entity is not resolved by this document. See research_gap rg2. |
+| Position | Counterpart | Source |
+|---|---|---|
+| ATIP (Anomalous Threat Identification Program) | AATIP (Advanced Aerospace Threat Identification Program) | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 

@@ -67,7 +67,6 @@ speakers:
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[2:43]'
-  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher.
 - id: s2
   added_date: '2026-05-17'
   name: Jeremy Corbell
@@ -76,7 +75,6 @@ speakers:
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[1:04]'
-  note: WEAPONIZED co-host with George Knapp; primary in-studio questioner of Lacatski.
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -85,7 +83,6 @@ speakers:
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[0:06]'
-  note: Former AAWSAP director and Kona Blue lead at DIA. Auto-caption variants in this transcript include "Latsky" / "Lacy" / "Lowsky" / "Lasksky" — see naming_quirks.
 quotes:
 - id: q1
   speaker_id: s3
@@ -282,7 +279,6 @@ naming_quirks:
   location: '[0:06], [1:02]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" as "Latsky" in the opening intro voice-over and the part-two recap.
 - id: nq2
   added_date: '2026-05-17'
   observed: Lacy
@@ -290,7 +286,6 @@ naming_quirks:
   location: '[2:43]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" as "Lacy" in George Knapp's turn-of-speaker address ("Jim uh Lacy").
 - id: nq3
   added_date: '2026-05-17'
   observed: Lowsky
@@ -298,7 +293,6 @@ naming_quirks:
   location: '[25:00]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" as "Lowsky" in the Yankee-Blue discussion ("Dr. Lowsky have been duped about the UFO reality").
 - id: nq4
   added_date: '2026-05-17'
   observed: Lasksky
@@ -306,7 +300,6 @@ naming_quirks:
   location: '[1:14:22]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lacatski" as "Lasksky" in George's closing sign-off ("Dr. James Lasksky, thanks for joining us").
 - id: nq5
   added_date: '2026-05-17'
   observed: Latsky
@@ -314,7 +307,6 @@ naming_quirks:
   location: '[1:10:57]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders Lacatski's name "Jim Latsky's counter measures" — the "counter measures" framing of his structural information control.
 - id: nq6
   added_date: '2026-05-17'
   observed: OAP
@@ -322,7 +314,6 @@ naming_quirks:
   location: '[0:48], [3:11], [6:53], [7:18], [19:48], [20:11], etc.'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "AAWSAP" as "OAP" throughout PART 2.
 - id: nq7
   added_date: '2026-05-17'
   observed: OSAP
@@ -330,7 +321,6 @@ naming_quirks:
   location: '[7:17], [21:09], [48:12]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption variant of "AAWSAP" as "OSAP" in PART 2.
 - id: nq8
   added_date: '2026-05-17'
   observed: Osap
@@ -338,7 +328,6 @@ naming_quirks:
   location: '[48:14]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption mixed-case variant "Osap" in Lacatski's PART 2 narration about the MIB sighting timing.
 - id: nq9
   added_date: '2026-05-17'
   observed: Oset
@@ -346,7 +335,6 @@ naming_quirks:
   location: '[48:06]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption rendering "Oset" in Lacatski's PART 2 attestation that the MIB sighting was "during Kona Blue, not during Oset" — distinguishing post-AAWSAP timing.
 - id: nq10
   added_date: '2026-05-17'
   observed: Loheed
@@ -354,7 +342,6 @@ naming_quirks:
   location: '[37:03], [37:05]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Lockheed Martin" as "Loheed Martin" in Jeremy's Tic Tac question.
 - id: nq11
   added_date: '2026-05-17'
   observed: Bigalow
@@ -362,7 +349,6 @@ naming_quirks:
   location: '[39:23]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Bob Bigelow" as "Bob Bigalow" in Lacatski's closing reflection on the four-year decision-to-write-the-book.
 - id: nq12
   added_date: '2026-05-17'
   observed: column
@@ -370,7 +356,6 @@ naming_quirks:
   location: '[39:19]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders Colm Kelleher's first name as "column" in Lacatski's closing reflection.
 - id: nq13
   added_date: '2026-05-17'
   observed: Reed
@@ -378,7 +363,6 @@ naming_quirks:
   location: '[1:03:38]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "Harry Reid" as "Senator Reid" / "Senator Reed" — the AAWSAP-founding senator is Harry Reid.
 - id: nq14
   added_date: '2026-05-17'
   observed: Grush
@@ -386,7 +370,6 @@ naming_quirks:
   location: '[20:52]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "David Grusch" as "David Grush" in Lacatski's PART 2 listing of compartment-read-in-blocked witnesses.
 - id: nq15
   added_date: '2026-05-17'
   observed: DOSAR
@@ -394,7 +377,6 @@ naming_quirks:
   location: '[7:31]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "DOPSR" as "DOSAR" in Jeremy's question about the pre-publication review process.
 - id: nq16
   added_date: '2026-05-17'
   observed: deal
@@ -402,4 +384,3 @@ naming_quirks:
   location: '[20:01]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption renders "DOE" (Department of Energy) as "deal" in Lacatski's PART 2 attestation about his Q clearance — Q clearance is the DOE counterpart to a Top Secret clearance, so the canonical agency is DOE.

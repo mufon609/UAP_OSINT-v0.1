@@ -42,20 +42,20 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |  |
-| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
-| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html | No archived primary source in this pool pins the VFA-41 end date specifically, so the period is left open. |
-| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |  |
-| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |  |
-| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html | A separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program (the two CU Boulder rows are distinct programs, not a continuation). |
-| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |  |
-| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |  |
-| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |  |
-| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |  |
-| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
-| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |
+| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
+| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |
+| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |
+| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
+| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
 
 ---
 
@@ -477,10 +477,10 @@ _Direct observation._
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |  |
-| [`/people/chad-underwood`] | On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object — position on that aircraft has conflicting attestations (Dietrich's Sprague-podcast recollection places him as WSO; Underwood's own 2019 NYMag interview describes him as the pilot, which outranks Dietrich's recollection per the source-priority hierarchy) |  |
+| Person | Relationship |
+|---|---|
+| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |
+| [`/people/chad-underwood`] | On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object — position on that aircraft has conflicting attestations (Dietrich's Sprague-podcast recollection places him as WSO; Underwood's own 2019 NYMag interview describes him as the pilot, which outranks Dietrich's recollection per the source-priority hierarchy) |
 
 ---
 
@@ -513,25 +513,23 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** Multiple secondary UAP-community sources name Slaight as Dietrich's backseater; Slaight briefly co-appeared with Fravor on a Jesse Watters Fox segment in 2017-2018 but has been largely silent since.
 
-**Investigator note:** Dietrich does NOT name her WSO in any of the 19 primary sources surveyed. In the American Veterans Center 2024 interview she refers to her backseater only by rank ('I had a department head a lieutenant commander in my back seat'). The Slaight identification is widely circulated but lacks Dietrich-direct or Slaight-direct primary-source attestation in the current source pool.
-
 ---
 
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Deitrich | Dietrich | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html | Single instance in the CBS broadcast narrator text ('As Deitrich circled above'). Not Dietrich's own writing — a CBS transcription typo. |
-| fraver | Fravor | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'Fravor' across multiple Sprague podcast lines; also appears in American Veterans Center transcript line 209. Preserve in quotes; use canonical Fravor in prose. |
-| prinston | Princeton | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'Princeton' (the USS Princeton). |
-| nits | Nimitz | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'Nimitz' across multiple Sprague podcast lines. |
-| Nimttz | Nimitz | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md | YouTube auto-caption transcription error for 'Nimitz' in Linda Hall panel. |
-| Fleer | FLIR | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'FLIR' (Forward-Looking Infrared) in Sprague podcast. |
-| ROC | NROTC | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md | YouTube auto-caption transcription error for 'NROTC' (Naval Reserve Officers Training Corps) in Linda Hall panel. |
-| turning water | roiling water / churning water | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage. |
-| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md | YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Deitrich | Dietrich | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
+| fraver | Fravor | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| prinston | Princeton | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| nits | Nimitz | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| Nimttz | Nimitz | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |
+| Fleer | FLIR | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| ROC | NROTC | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |
+| turning water | roiling water / churning water | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md |
 
 ---
 
@@ -539,9 +537,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| Chad and the back seat | Chad Underwood (primary-source disagreement — position unresolved) | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | Primary-source disagreement on Chad Underwood's position on the subsequent F/A-18F sortie that captured the FLIR1 video. Dietrich's YouTube-caption transcript of the Sprague podcast reads 'with Chad and the back seat and uh and his Pilot' — the caption is noisy and the phrase may be a transcription artifact of 'Chad in the back seat'; either reading supports Dietrich's claim that Chad was the WSO with an unnamed pilot. NYMag 2019 (sources/news/nymag-underwood-2019.html) frames Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' in its headline and describes him as the pilot of that sortie throughout. Per the source-priority hierarchy (subject's own words > witness recollection about that subject), Underwood's own first-person NYMag account outranks Dietrich's recollection for this positional fact. Both attestations retained; the future /people/chad-underwood node build resolves in Underwood's favor. |
+| Position | Counterpart | Source |
+|---|---|---|
+| Chad and the back seat | Chad Underwood (primary-source disagreement — position unresolved) | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 
 ---
 

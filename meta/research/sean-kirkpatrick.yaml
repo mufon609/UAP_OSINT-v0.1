@@ -243,7 +243,6 @@ affiliations:
   role: Special assignment to the Principal Deputy Director of National Intelligence — IC lead supporting the JICSpOC at Schriever AFB; renamed NSDC April 2017. Concurrent with the DIO/S&TI role
   period_start: '2014'
   period_end: '2016'
-  note: The DoD bio places this assignment near the end of his DIO/S&TI tenure (2012-2016), the basis for the period_start being earlier than the row's own dates would otherwise suggest.
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 28-30
@@ -418,7 +417,6 @@ program_involvement:
   source:
     path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
     location: p. 1-3
-  note: Per FIA-24-0036, Kirkpatrick has classified DOE-IN (Office of Intelligence and Counterintelligence) network access at ORNL and maintains electronic file directories at ORNL specifically for files created for the Office of the Secretary of Defense.
 - id: pi8
   added_date: '2026-04-29'
   program: NSSA Moorman Center for Space Studies
@@ -1653,7 +1651,6 @@ naming_quirks:
   location: stenographic transcript throughout (e.g., speaker tags at SASC transcript lines 439, 1194, 1665)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Senate stenographic convention applies 'Mr.' / 'Ms.' prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as 'Dr. Kirkpatrick'; the speaker-tag prefix 'Mr. Kirkpatrick:' is the stenographer's rendering convention.
 rumors: []
 credibility_notes: 'This section documents specific patterns in the public record concerning (a) affiliations after AARO with unusual documentation patterns, (b) conduct while in office, (c) the November 2023 UAPDA legislative revisions and Kirkpatrick''s later characterization of them, (d) statements about prior UAP involvement that are in tension with the documented record, and (e) the timing relationship between Sancorp''s Insider Threat work for OUSD(I&S) and Kirkpatrick''s April 19 2023 SASC testimony asking for counterintelligence authority. Several events sit within a narrow window during the final months of his AARO tenure — the February 28 2023 Reveal Systems patent continuation, the October 16 2023 Nonlinear Solutions LLC registration, the November 2023 OUSD(I&S) UAPDA revisions, the November 8 2023 departure announcement, the December 1 2023 last day, and the December 2023 ORNL appointment — and are presented together below for chronological visibility. Full detail is in the Affiliations, Program Involvement, Timeline, and Relationships sections.
 

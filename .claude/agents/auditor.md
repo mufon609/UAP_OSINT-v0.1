@@ -24,7 +24,7 @@ Audit goals:
    quotes for right-but-imprecise location refs (the substring check won't
    catch that).
 3. **Prose-drift** — re-run `validate-research.py`; the free-prose synthesis
-   fields + per-entry residue notes are a zero-ungrounded-token hard gate.
+   fields + `vouching_chain.attestation` are a zero-ungrounded-token hard gate.
    Each unmatched token resolves to source-matched prose OR is captured as
    structured evidentiary data (naming quirk, rumor, timeline entry, quote).
 4. **Contradiction markers** — `❌ Contradiction` where positions contradict

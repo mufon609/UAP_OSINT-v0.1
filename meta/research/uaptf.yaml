@@ -41,7 +41,6 @@ primary_sources:
     serial: Ser NW20S0068
     signed_date: '2020-09-01'
     foia_case: DON-NAVY-2021-003140
-    note: Heavily redacted; signed by Director, Naval Intelligence Activity
 - path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
   format: pdf
   pdf_metadata:
@@ -321,7 +320,6 @@ key_personnel:
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD spokesperson Susan Gough
-  note: Role attested by the Gough DoD Public Affairs statement (the strongest government source); Americans for Safe Aerospace advisors page supports it ("Ex Director, UAP Task Force"). Exact start date is not given in the cited sources. The 2021 end reflects the "was leading" language in the Gough statement (June 29, 2022).
 - id: kp2
   added_date: '2026-04-20'
   person_path: /people/travis-taylor
@@ -330,7 +328,6 @@ key_personnel:
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD spokesperson Susan Gough
-  note: SMDC government employee provided to UAPTF on a time-limited basis; "chief scientist" designation was informal.
 - id: kp3
   added_date: '2026-04-20'
   person_path: /people/david-grusch
@@ -341,7 +338,6 @@ key_personnel:
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶8
-  note: Membership 2019-2021 in his NRO reservist capacity. The 2019 start comes before the formal August 4, 2020 establishment by approximately one year, supporting an informal task force or ONI UAP cell operating before 2020 that was later formally named UAPTF; the April 16, 2020 UAP Security Classification Guide also comes before the public August 2020 establishment.
 - id: kp4
   added_date: '2026-04-22'
   person_path: /people/karl-nell
@@ -352,7 +348,6 @@ key_personnel:
   source:
     path: news/thedebrief-grusch-2023.html
     location: The Debrief article, June 5, 2023, body
-  note: Army liaison for the UAP Task Force from 2021 to 2022 per The Debrief. The Army liaison role is separate from the director role under Stratton at the Navy.
 org_relationships:
 - id: or1
   added_date: '2026-04-20'
@@ -361,7 +356,6 @@ org_relationships:
   source:
     path: government/defense-gov-aoimsg-establishment-20211123.html
     location: article body ¶1
-  note: AOIMSG established November 23, 2021 as the successor to the U.S. Navy's Unidentified Aerial Phenomena Task Force per DoD press release
 - id: or2
   added_date: '2026-04-20'
   organization_path: /organizations/aaro
@@ -369,7 +363,6 @@ org_relationships:
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: p.1
-  note: AARO is the downstream successor in the chain — UAPTF → AOIMSG (Nov 2021) → AARO (Jul 15, 2022 per AARO HRR, public announcement Jul 20, 2022). AARO HRR Volume I characterizes AOIMSG as the direct successor that was renamed to AARO under the FY2022 NDAA before achieving initial operating capability. Secretary of the Navy directed to disestablish UAPTF and transfer data, analysis, or other relevant material to AARO. The primary-direct-successor relationship to UAPTF is or1 (AOIMSG); this entry captures the downstream succession chain terminus.
 - id: or3
   added_date: '2026-04-20'
   organization_path: /organizations/odni
@@ -377,7 +370,6 @@ org_relationships:
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p.3
-  note: ODNI National Intelligence Manager for Aviation co-drafted the June 2021 Preliminary Assessment with UAPTF (q8).
 - id: or4
   added_date: '2026-04-22'
   organization_path: /organizations/nia
@@ -385,7 +377,6 @@ org_relationships:
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
     location: p.1 / p.3 Charter
-  note: NIA directed to lead the Task Force (q22) and designates Task Force leadership (q6) per the September 1, 2020 Charter. Distinct from ONI, which served as operating location.
 - id: or5
   added_date: '2026-04-22'
   organization_path: /organizations/us-navy
@@ -393,7 +384,6 @@ org_relationships:
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
     location: article body ¶1
-  note: Department of the Navy lead department per the DoD press release (q1); Navy sat above NIA in the chain of command.
 - id: or6
   added_date: '2026-04-22'
   organization_path: /organizations/osd
@@ -401,7 +391,6 @@ org_relationships:
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
     location: article body ¶1
-  note: USD(I&S), an OSD component, was the cognizant authority over UAPTF per the DoD press release (q1); also named in the ODNI Preliminary Assessment contributor list (q8).
 - id: or7
   added_date: '2026-04-22'
   organization_path: /organizations/oni
@@ -409,7 +398,6 @@ org_relationships:
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
     location: Purpose, p.1
-  note: The UAP Security Classification Guide names the "Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its scope subject (q3). ONI served as operating host; NIA served as chartering authority.
 - id: or8
   added_date: '2026-04-22'
   organization_path: /organizations/aatip
@@ -417,7 +405,6 @@ org_relationships:
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: AARO HRR Volume I, Section IV predecessor-succession chain
-  note: AARO HRR Volume I (March 2024) officially catalogs the predecessor-succession chain as AAWSAP/AATIP (2009-2012) → UAPTF (August 2020 - November 2021) → AOIMSG/AOIMEXEC (November 2021 - June 2022) → AARO (Established July 15, 2022). AARO's published record refers to "AARO and its predecessor organizations" framing.
 - id: or9
   added_date: '2026-04-22'
   organization_path: /organizations/uap-excom
@@ -425,7 +412,6 @@ org_relationships:
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
     location: UAPTF Charter, p.4, UAP Task Force Director responsibilities section
-  note: UAP Executive Steering Committee (EXCOM) — senior oversight body sitting above UAPTF in the reporting chain, primary-source-attested by the UAPTF Charter (q18). Distinct from the USD(I&S) cognizant-authority relationship (or6) and the Navy lead-department relationship (or5) — EXCOM sits at the UAP-specific governance layer.
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -526,7 +512,6 @@ naming_quirks:
   location: Gough DoD PA statement (Q1 answer)
   source_path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
   resolution: preserve-as-sic-in-quotes
-  note: The DoD Public Affairs statement uses Stratton's legal first name "John"; the canonical form used in secondary sources (memoir announcement, podcast appearances, Americans for Safe Aerospace advisor listing) is the nickname "Jay". Both forms are source-attested; quoted passages preserve the "John" form verbatim.
 - id: nq2
   added_date: '2026-04-20'
   observed: Unidentified Aerial Phenomena
@@ -534,7 +519,6 @@ naming_quirks:
   location: UAPTF name across all primary sources
   source_path: government/defense-gov-uaptf-establishment-20200814.html
   resolution: use-canonical
-  note: UAPTF era uses "Unidentified Aerial Phenomena" (plural); later AARO-era documents use "Unidentified Anomalous Phenomena". The terminology shift tracks with the AARO scope expansion to include space, submerged, and transmedium objects per the Hicks memorandum. UAPTF's own naming remains "Unidentified Aerial Phenomena Task Force" in all of its primary sources.
 - id: nq3
   added_date: '2026-04-22'
   observed: identifYing
@@ -542,7 +526,6 @@ naming_quirks:
   location: UAP Security Classification Guide (ID# 04-030), p.1 Purpose statement
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the FOIA-released text-extraction of the UAP Security Classification Guide — the "Y" is capitalized mid-word ("identifYing" instead of "identifying"). Parallels the "chaner" / "Unidenlified" OCR artifacts preserved in the UAPTF Charter quotes. Key Passage q3 preserves the as-scanned form.
 - id: nq4
   added_date: '2026-04-22'
   observed: NGA (duplicated in the contributor list)
@@ -550,7 +533,6 @@ naming_quirks:
   location: ODNI Preliminary Assessment, p.3 SCOPE AND ASSUMPTIONS, contributor list
   source_path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
   resolution: preserve-as-sic-in-quotes
-  note: The ODNI Preliminary Assessment's cross-agency contributor list as published contains a duplicate "NGA" entry (once between NRO and NSA, once between NOAA and ODNI/NIM-Emerging and Disruptive Technology). Preserved verbatim in Key Passage q8 as the primary source-attested form rather than deduplicated.
 - id: nq5
   added_date: '2026-05-22'
   observed: Intelli_gence
@@ -558,7 +540,6 @@ naming_quirks:
   location: UAPTF Charter package, NIA Director cross-service outreach memorandum
   source_path: government/blackvault-uaptf-charter-foia-20250422.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the FOIA-released text-extraction of the NIA cross-service outreach memorandum — an underscore appears mid-word ("Intelli_gence" instead of "Intelligence"). Parallels the "chaner" / "Unidenlified" OCR artifacts preserved in the UAPTF Charter quotes. Key Passage q22 preserves the as-scanned form.
 rumors:
 - id: r1
   added_date: '2026-04-20'
@@ -567,7 +548,6 @@ rumors:
   observed_sources:
   - Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization)
   - SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
-  note: Widely attested across secondary sources but not in the primary sources this artifact has cited. Logged here while the primary-source gap remains open.
 - id: r2
   added_date: '2026-04-20'
   claim: UAPTF was deliberately under-resourced and denied access to pre-existing compartmented UAP programs within the U.S. Government
@@ -575,4 +555,3 @@ rumors:
   observed_sources:
   - Grusch sworn testimony at 2023-07-26 House Oversight hearing (archived as /documents/written-testimony-grusch-2023) claims denial of access to a "multi-decade UAP crash retrieval and reverse engineering program"
   - Widely circulating in UAP-related public discourse
-  note: The allegation is a cross-node analytical finding rather than a UAPTF-internal record. UAPTF's own primary sources do not substantiate or refute the scope-constraint framing

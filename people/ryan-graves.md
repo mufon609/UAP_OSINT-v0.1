@@ -36,12 +36,12 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/us-navy`] | Former F-18 pilot | 2009 | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
-| [`/organizations/vfa-11`] | F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers | 2014 | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
-| [`/organizations/americans-for-safe-aerospace`] | founded the organization |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
-| [`/organizations/aiaa`] | Chair of the UAP Integration & Outreach Committee |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-navy`] | Former F-18 pilot | 2009 | government/docs-house-gov-graves-written-testimony-20230726.pdf |
+| [`/organizations/vfa-11`] | F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers | 2014 | government/congress-gov-house-hearing-transcript-20230726.pdf |
+| [`/organizations/americans-for-safe-aerospace`] | founded the organization |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |
+| [`/organizations/aiaa`] | Chair of the UAP Integration & Outreach Committee |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |
 
 ---
 
@@ -184,11 +184,11 @@ _Direct observation._
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/david-fravor`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |  |
-| [`/people/david-grusch`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |  |
-| [`/people/tim-gallaudet`] | one of the advisors at Americans for Safe Aerospace; former head of National Oceanic and Atmospheric Administration and Oceanographer of the Navy; Gallaudet received a 2015 classified SIPRNET email about UAP near mid-air collisions in the operating area where Graves's encounters occurred |  |
+| Person | Relationship |
+|---|---|
+| [`/people/david-fravor`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |
+| [`/people/david-grusch`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |
+| [`/people/tim-gallaudet`] | one of the advisors at Americans for Safe Aerospace; former head of National Oceanic and Atmospheric Administration and Oceanographer of the Navy; Gallaudet received a 2015 classified SIPRNET email about UAP near mid-air collisions in the operating area where Graves's encounters occurred |
 
 ---
 
@@ -213,9 +213,9 @@ Graves's testimony is under oath before the House Oversight Subcommittee on Nati
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| ‘‘FOBS’’ | "FOBS" | government/docs-house-gov-graves-written-testimony-20230726.pdf | pdftotext rendered the original double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single) in both the written testimony PDF and the stenographic transcript PDF. The canonical display form for a Navy callsign is in straight double quotes. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| ‘‘FOBS’’ | "FOBS" | government/docs-house-gov-graves-written-testimony-20230726.pdf |
 
 ---
 

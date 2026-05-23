@@ -334,11 +334,11 @@ The paper discussed the critical technologies required to build a working HPM so
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-03-pulsed-hpm-20100128.pdf | The document's Author line is withheld under FOIA exemption (b)(6) (personal-privacy). The exemption marker is preserved verbatim in quote q2; canonical prose reflects the redaction rather than injecting the external products-list attribution as the document's self-stated author. |
-| [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-03-pulsed-hpm-20100128.pdf | The Prepared-by organizational line, embedded office designations in the Administrative Note, and the AAWSA Program Manager address line are withheld under FOIA exemption (b)(3) invoking 10 USC 424 (DIA organizational/personnel protection). Markers preserved verbatim in quotes q2 and q3, including the combined [(b)(3):10 USC 424;(b)(6)] form. |
-| Commanche | Comanche | government/dird-03-pulsed-hpm-20100128.pdf | The document spells the helicopter "Commanche" (quote q8); the correct proper name is "Comanche". Preserved verbatim in the quote per source-read-first discipline. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-03-pulsed-hpm-20100128.pdf |
+| [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-03-pulsed-hpm-20100128.pdf |
+| Commanche | Comanche | government/dird-03-pulsed-hpm-20100128.pdf |
 
 ---
 
@@ -346,22 +346,17 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| Pulsed High-Power Microwave Source Technology | Pulsed High-Power Microwave Technology (AAWSAP products-list short form) | government/dird-03-pulsed-hpm-20100128.pdf | The document's own internal title carries the word "Source" (quote q1); the DIA AAWSAP products list ([`/documents/dia-aatip-products-list-2018`]) records the same report under the shortened title "Pulsed High-Power Microwave Technology", dropping "Source", and attributes it externally to Dr. James Wells ([`/people/james-wells`]) of JW Enterprises ([`/organizations/jw-enterprises`]). The internal title is recorded verbatim and the document's own Author line is redacted (b)(6); the products-list short form and external attribution are flagged here for navigation, not asserted as the document's self-stated author. |
+| Position | Counterpart | Source |
+|---|---|---|
+| Pulsed High-Power Microwave Source Technology | Pulsed High-Power Microwave Technology (AAWSAP products-list short form) | government/dird-03-pulsed-hpm-20100128.pdf |
 
 ---
 
 ## Associated Nodes
 
-### People
-
-- [`/people/james-wells`]
-
 ### Organizations
 
 - [`/organizations/dia`]
-- [`/organizations/jw-enterprises`]
 
 ### Documents
 

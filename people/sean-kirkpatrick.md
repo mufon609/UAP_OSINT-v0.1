@@ -42,28 +42,28 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/us-navy`] | National Research Council Fellow at U.S. Naval Research Laboratory investigating novel solid-state lasers | 1996 – 1997 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/us-air-force`] | Research physicist at Air Force Research Laboratory; built Ultrafast Laser Physics Lab | 1997 – 2003 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/nro`] | Program manager (CIA-assigned) | 2003 – 2005 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/cia`] | Staff scientist, Directorate of Science and Technology (S&T converted to CIA in 2005) | 2005 – 2007 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/dia`] | Chief Technology Officer in joint CIA-DIA program office, later Division Chief as DIA officer | 2007 – 2010 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/dod`] | Space Control Portfolio Manager, Office of the Deputy Assistant Secretary of Defense, Space and Intelligence (Office of the Secretary of Defense) | 2010 – 2012 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/dia`] | Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI); appointed to Defense Intelligence Senior Executive Service in 2012 | 2012 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/odni`] | Special assignment to the Principal Deputy Director of National Intelligence — IC lead supporting the JICSpOC at Schriever AFB; renamed NSDC April 2017. Concurrent with the DIO/S&TI role | 2014 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf | The DoD bio places this assignment near the end of his DIO/S&TI tenure (2012-2016), the basis for the period_start being earlier than the row's own dates would otherwise suggest. |
-| [`/organizations/usstratcom`] | Deputy Director of Intelligence | 2016 – 2017 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/nsc`] | Director, National Security Strategy | 2017 – 2018 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/usstratcom`] | Senior Intelligence Advisor to the Commander, Air Force Space Command and to the Commander, Joint Forces Space Component Command (USSTRATCOM) — double-hatted billet charged by the DNI and the CDR/JFSCC to design the intelligence enterprise that became the USSPACECOM Intelligence Enterprise upon USSPACECOM re-establishment August 29 2019 | 2018-08 – 2019-08 | government/afcea-kirkpatrick-usspacecom-bio.pdf |  |
-| [`/organizations/usspacecom`] | Deputy Director of Intelligence and DNI Representative; stood up the USSPACECOM Intelligence Enterprise (the fifth organization Kirkpatrick was IC lead for establishment) | 2019 – 2021 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/dia`] | Chief Scientist, Missile and Space Intelligence Center (MSIC), Huntsville AL | 2021 – 2022 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/organizations/aaro`] | Director (inaugural; sixth IC/DoD new-start organization Kirkpatrick led establishment of) | 2022-07-20 – 2023-12-01 | government/defense-gov-kirkpatrick-departure-20231120.html |  |
-| [`/organizations/elara-nova-the-space-consultancy`] | Partner | 2023-10 | news/elara-nova-kirkpatrick-bio.html |  |
-| [`/organizations/nonlinear-solutions`] | Owner / CEO; sole-member LLC registered in North Carolina October 16 2023 | 2023-10-16 | news/buzzsprout-pastor-kirkpatrick-nonlinear-solutions-20240423.html |  |
-| [`/organizations/ornl`] | ORNL Chief Operating Officer for the National Security Sciences Directorate per UT-Battelle FOIA memorandum referenced in DOE FIA-24-0036; multiple public-facing title variants documented (see Credibility Notes) | 2023-12 | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |  |
-| [`/organizations/nssa-moorman-center`] | Member, Board of Advisors of the National Security Space Association | 2024 | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |  |
-| [`/organizations/westexec-advisors`] | Senior Advisor | 2024-05-09 | news/westexec-kavandi-kirkpatrick-announcement-20240509.html |  |
-| [`/organizations/uga`] | B.S. Physics (1991); Ph.D. Physics (1995); currently Adjunct Assistant Professor of Physics |  | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-navy`] | National Research Council Fellow at U.S. Naval Research Laboratory investigating novel solid-state lasers | 1996 – 1997 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/us-air-force`] | Research physicist at Air Force Research Laboratory; built Ultrafast Laser Physics Lab | 1997 – 2003 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/nro`] | Program manager (CIA-assigned) | 2003 – 2005 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/cia`] | Staff scientist, Directorate of Science and Technology (S&T converted to CIA in 2005) | 2005 – 2007 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/dia`] | Chief Technology Officer in joint CIA-DIA program office, later Division Chief as DIA officer | 2007 – 2010 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/dod`] | Space Control Portfolio Manager, Office of the Deputy Assistant Secretary of Defense, Space and Intelligence (Office of the Secretary of Defense) | 2010 – 2012 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/dia`] | Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI); appointed to Defense Intelligence Senior Executive Service in 2012 | 2012 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/odni`] | Special assignment to the Principal Deputy Director of National Intelligence — IC lead supporting the JICSpOC at Schriever AFB; renamed NSDC April 2017. Concurrent with the DIO/S&TI role | 2014 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/usstratcom`] | Deputy Director of Intelligence | 2016 – 2017 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/nsc`] | Director, National Security Strategy | 2017 – 2018 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/usstratcom`] | Senior Intelligence Advisor to the Commander, Air Force Space Command and to the Commander, Joint Forces Space Component Command (USSTRATCOM) — double-hatted billet charged by the DNI and the CDR/JFSCC to design the intelligence enterprise that became the USSPACECOM Intelligence Enterprise upon USSPACECOM re-establishment August 29 2019 | 2018-08 – 2019-08 | government/afcea-kirkpatrick-usspacecom-bio.pdf |
+| [`/organizations/usspacecom`] | Deputy Director of Intelligence and DNI Representative; stood up the USSPACECOM Intelligence Enterprise (the fifth organization Kirkpatrick was IC lead for establishment) | 2019 – 2021 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/dia`] | Chief Scientist, Missile and Space Intelligence Center (MSIC), Huntsville AL | 2021 – 2022 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/aaro`] | Director (inaugural; sixth IC/DoD new-start organization Kirkpatrick led establishment of) | 2022-07-20 – 2023-12-01 | government/defense-gov-kirkpatrick-departure-20231120.html |
+| [`/organizations/elara-nova-the-space-consultancy`] | Partner | 2023-10 | news/elara-nova-kirkpatrick-bio.html |
+| [`/organizations/nonlinear-solutions`] | Owner / CEO; sole-member LLC registered in North Carolina October 16 2023 | 2023-10-16 | news/buzzsprout-pastor-kirkpatrick-nonlinear-solutions-20240423.html |
+| [`/organizations/ornl`] | ORNL Chief Operating Officer for the National Security Sciences Directorate per UT-Battelle FOIA memorandum referenced in DOE FIA-24-0036; multiple public-facing title variants documented (see Credibility Notes) | 2023-12 | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |
+| [`/organizations/nssa-moorman-center`] | Member, Board of Advisors of the National Security Space Association | 2024 | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |
+| [`/organizations/westexec-advisors`] | Senior Advisor | 2024-05-09 | news/westexec-kavandi-kirkpatrick-announcement-20240509.html |
+| [`/organizations/uga`] | B.S. Physics (1991); Ph.D. Physics (1995); currently Adjunct Assistant Professor of Physics |  | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 
 ---
 
@@ -509,41 +509,41 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/ronald-moultrie`] | Selected Kirkpatrick to stand up and lead AARO; co-host of the December 16 2022 AARO media roundtable; AAROEXEC chair as USD(I&S) across most of Kirkpatrick's directorship |  |
-| [`/people/kathleen-hicks`] | Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her; issued November 8 2023 formal departure statement |  |
-| [`/people/kirsten-gillibrand`] | Chair of the SASC Subcommittee on Emerging Threats and Capabilities; presided over Kirkpatrick's April 19 2023 sole-witness oversight testimony |  |
-| [`/people/joni-ernst`] | Ranking Member of the SASC Subcommittee on Emerging Threats and Capabilities at Kirkpatrick's April 19 2023 testimony |  |
-| [`/people/jacky-rosen`] | SASC subcommittee member at Kirkpatrick's April 19 2023 testimony |  |
-| [`/people/tim-phillips`] | AARO Acting Director after Kirkpatrick (December 1 2023 — August 26 2024) |  |
-| [`/people/jonathan-kosloski`] | Permanent successor as AARO Director from August 26 2024 |  |
-| [`/people/glen-vanherck`] | NORTHCOM commander Kirkpatrick met with at NORTHCOM weeks before the April 19 2023 SASC hearing on UAP coordination |  |
-| [`/people/avi-loeb`] | Co-author of March 7 2023 manuscript 'Physical Constraints on Unidentified Aerial Phenomena' considering hypothetical extraterrestrial probe scenarios |  |
-| [`/people/willie-shelton`] | Co-author of November 5 2024 NSSA Moorman Center paper 'Space Domain Awareness as a Foundational National Security Issue'; both serve on NSSA Board of Advisors |  |
-| [`/people/chris-williams`] | Co-author of June 26 2025 NSSA Moorman Center paper 'National Security Space Contributions to Operation Midnight Hammer'; Williams chairs the NSSA Moorman Center for Space Studies |  |
-| [`/people/john-shaw`] | Co-author of October 31 2024 CSIS Space-in-Focus commentary 'Future Space Domain Awareness Needs for National Security Space'; former Deputy Commander of U.S. Space Command (USSPACECOM-era working relationship) |  |
-| [`/people/peter-bergen`] | Bergen interviewed Kirkpatrick for In the Room with Peter Bergen Episode 38 (2024) — the conversation in which Kirkpatrick used the self-licking ice cream cone framing for UAP-disclosure advocacy |  |
-| [`/people/christopher-mellon`] | Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released April 18 2024 under FOIA 24-F-0266); see Statements q36 and q37 for verbatim Kirkpatrick lines from the exchange |  |
-| [`/people/david-grusch`] | UAP whistleblower whose July 26 2023 House Oversight testimony immediately preceded Hicks's late-July 2023 transition of AARO oversight to her direct supervision; Kirkpatrick's July 28 2023 LinkedIn post called the Grusch hearing 'insulting' to AARO officers |  |
-| [`/people/sue-gough`] | Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last day at AARO to DefenseScoop ('Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office') |  |
-| [`/people/dustin-slaughter`] | Appellant in DOE Office of Hearings and Appeals decision FIA-24-0036 (July 17 2024); the decision documents Kirkpatrick's internal ORNL title (Chief Operating Officer for the National Security Sciences Directorate) and classified DOE-IN network access via UT-Battelle FOIA Coordinator memorandum |  |
-| [`/people/david-abba`] | Maj. Gen.; Director of DoD Special Access Program Central Office (DoD SAPCO); signed the March 8 2023 memorandum confirming AARO's authority to receive and handle UAP-related information across SAPs and notwithstanding nondisclosure agreements (FOIA 24-F-0266) |  |
+| Person | Relationship |
+|---|---|
+| [`/people/ronald-moultrie`] | Selected Kirkpatrick to stand up and lead AARO; co-host of the December 16 2022 AARO media roundtable; AAROEXEC chair as USD(I&S) across most of Kirkpatrick's directorship |
+| [`/people/kathleen-hicks`] | Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her; issued November 8 2023 formal departure statement |
+| [`/people/kirsten-gillibrand`] | Chair of the SASC Subcommittee on Emerging Threats and Capabilities; presided over Kirkpatrick's April 19 2023 sole-witness oversight testimony |
+| [`/people/joni-ernst`] | Ranking Member of the SASC Subcommittee on Emerging Threats and Capabilities at Kirkpatrick's April 19 2023 testimony |
+| [`/people/jacky-rosen`] | SASC subcommittee member at Kirkpatrick's April 19 2023 testimony |
+| [`/people/tim-phillips`] | AARO Acting Director after Kirkpatrick (December 1 2023 — August 26 2024) |
+| [`/people/jonathan-kosloski`] | Permanent successor as AARO Director from August 26 2024 |
+| [`/people/glen-vanherck`] | NORTHCOM commander Kirkpatrick met with at NORTHCOM weeks before the April 19 2023 SASC hearing on UAP coordination |
+| [`/people/avi-loeb`] | Co-author of March 7 2023 manuscript 'Physical Constraints on Unidentified Aerial Phenomena' considering hypothetical extraterrestrial probe scenarios |
+| [`/people/willie-shelton`] | Co-author of November 5 2024 NSSA Moorman Center paper 'Space Domain Awareness as a Foundational National Security Issue'; both serve on NSSA Board of Advisors |
+| [`/people/chris-williams`] | Co-author of June 26 2025 NSSA Moorman Center paper 'National Security Space Contributions to Operation Midnight Hammer'; Williams chairs the NSSA Moorman Center for Space Studies |
+| [`/people/john-shaw`] | Co-author of October 31 2024 CSIS Space-in-Focus commentary 'Future Space Domain Awareness Needs for National Security Space'; former Deputy Commander of U.S. Space Command (USSPACECOM-era working relationship) |
+| [`/people/peter-bergen`] | Bergen interviewed Kirkpatrick for In the Room with Peter Bergen Episode 38 (2024) — the conversation in which Kirkpatrick used the self-licking ice cream cone framing for UAP-disclosure advocacy |
+| [`/people/christopher-mellon`] | Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released April 18 2024 under FOIA 24-F-0266); see Statements q36 and q37 for verbatim Kirkpatrick lines from the exchange |
+| [`/people/david-grusch`] | UAP whistleblower whose July 26 2023 House Oversight testimony immediately preceded Hicks's late-July 2023 transition of AARO oversight to her direct supervision; Kirkpatrick's July 28 2023 LinkedIn post called the Grusch hearing 'insulting' to AARO officers |
+| [`/people/sue-gough`] | Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last day at AARO to DefenseScoop ('Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office') |
+| [`/people/dustin-slaughter`] | Appellant in DOE Office of Hearings and Appeals decision FIA-24-0036 (July 17 2024); the decision documents Kirkpatrick's internal ORNL title (Chief Operating Officer for the National Security Sciences Directorate) and classified DOE-IN network access via UT-Battelle FOIA Coordinator memorandum |
+| [`/people/david-abba`] | Maj. Gen.; Director of DoD Special Access Program Central Office (DoD SAPCO); signed the March 8 2023 memorandum confirming AARO's authority to receive and handle UAP-related information across SAPs and notwithstanding nondisclosure agreements (FOIA 24-F-0266) |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI) | Department of Defense's counterpart to the National Intelligence Manager for Science and Technology | 2012 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| Joint Interagency Combined Space Operations Center (now National Space Defense Center) | Special assignment to Principal Deputy Director of National Intelligence leading IC support | 2015 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| U.S. Strategic Command (Deputy Director of Intelligence) | Deputy Director of Intelligence | 2016 – 2017 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| National Security Council | Director, National Security Strategy | 2017 – 2018 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| USSPACECOM Intelligence Enterprise | Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led) | 2019 – 2021 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| All-domain Anomaly Resolution Office (AARO) | Inaugural Director | 2022-07-20 – 2023-12-01 | primary-source | high | government/defense-gov-kirkpatrick-departure-20231120.html |  |
-| ORNL National Security Sciences Directorate | Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs | 2023-12 | primary-source | high | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf | Per FIA-24-0036, Kirkpatrick has classified DOE-IN (Office of Intelligence and Counterintelligence) network access at ORNL and maintains electronic file directories at ORNL specifically for files created for the Office of the Secretary of Defense. |
-| NSSA Moorman Center for Space Studies | Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers | 2024 | primary-source | high | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |  |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI) | Department of Defense's counterpart to the National Intelligence Manager for Science and Technology | 2012 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| Joint Interagency Combined Space Operations Center (now National Space Defense Center) | Special assignment to Principal Deputy Director of National Intelligence leading IC support | 2015 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| U.S. Strategic Command (Deputy Director of Intelligence) | Deputy Director of Intelligence | 2016 – 2017 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| National Security Council | Director, National Security Strategy | 2017 – 2018 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| USSPACECOM Intelligence Enterprise | Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led) | 2019 – 2021 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| All-domain Anomaly Resolution Office (AARO) | Inaugural Director | 2022-07-20 – 2023-12-01 | primary-source | high | government/defense-gov-kirkpatrick-departure-20231120.html |
+| ORNL National Security Sciences Directorate | Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs | 2023-12 | primary-source | high | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |
+| NSSA Moorman Center for Space Studies | Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers | 2024 | primary-source | high | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |
 
 ---
 
@@ -573,9 +573,9 @@ Group E — Sancorp Insider Threat contract preceded Kirkpatrick's request for c
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Senate stenographic convention applies 'Mr.' / 'Ms.' prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as 'Dr. Kirkpatrick'; the speaker-tag prefix 'Mr. Kirkpatrick:' is the stenographer's rendering convention. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 
 ---
 

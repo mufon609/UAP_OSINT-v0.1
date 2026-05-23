@@ -18,20 +18,16 @@ appear in the referenced primary-source text:
 
 Scope is CONTRIBUTOR PROSE: top-level free-prose synthesis fields
 (``description``, ``background``, ``top_relevance``, ``credibility_notes``)
-and per-entry residue notes (``ownership_timeline.note``,
-``top_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
-``media_versioning.note``, ``vouching_chain.attestation``,
-``contradictions.note``). Applied to renderer-supported types EXCEPT
-investigation — see below. See ``meta/conventions.md`` "Prose-drift
-discipline on synthesis surfaces" for the principle of record before
-proposing any field-specific threshold tuning.
+and the per-entry ``vouching_chain.attestation``. Applied to
+renderer-supported types EXCEPT investigation — see below. See
+``meta/conventions.md`` "Prose-drift discipline on synthesis surfaces"
+for the principle of record before proposing any field-specific
+threshold tuning.
 
-OUT of scope: compact label cells (role titles, short relationship
-descriptors, ``timeline[].event``, ``use_status``, ``activity``,
-``contracts.subject``, ``publication_record.beat``) and cross-reference
-descriptor notes (``corroboration_items.note``,
-``witnesses_testimony.note``, ``org_relationships.note``,
-``location_relationships.note``). Token-match misfires on label cells
+OUT of scope: compact label / descriptor cells (role titles, short
+relationship descriptors, ``timeline[].event``, ``use_status``,
+``activity``, ``contracts.subject``, ``publication_record.beat``, the
+corroboration ``confirms`` cell). Token-match misfires on label cells
 and meta-descriptors; fabrication in those cells is semantic-review
 territory.
 
@@ -47,14 +43,12 @@ prose and defeat the layer. The ``investigation_hypothesis_citation``
 check enforces non-empty Sources rollups in lieu of token-match drift
 on those surfaces.
 
-Per-entry fields pool against the top-level union (∪ primary_sources)
-rather than each entry's own ``source.path``. Synthesis-content notes
-legitimately draw vocabulary from cross-source synthesis (a voucher's
-claim referenced across multiple attestation venues; a contract
-described from both the contract itself and external reporting);
-per-entry pooling would over-fire on that legitimate case. The union
-pool still surfaces fabrication — vocabulary attested by NO cited
-source still produces unmatched tokens.
+The per-entry ``vouching_chain.attestation`` pools against the top-level
+union (∪ primary_sources) rather than each entry's own ``source.path``.
+A voucher's claim is legitimately referenced across multiple attestation
+venues, so per-entry pooling would over-fire; the union pool still
+surfaces fabrication — vocabulary attested by NO cited source still
+produces unmatched tokens.
 """
 
 from checks import Issue

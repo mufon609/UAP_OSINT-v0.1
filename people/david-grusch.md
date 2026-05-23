@@ -36,17 +36,17 @@ From 2019 to 2021, in his [`/organizations/nro`] reservist capacity, Grusch was 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 – 2023-05 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | Period_end 2023-05 sourced from the bio ([`/documents/grusch-bio-2023`]) as the end of Grusch's last specific USAF Reserve billet (USAFA Key Employee Augmentee, April 2022 – May 2023). The testimony's "14 years" framing (2023-07-26) is a rounded duration — from 2009-06 to 2023-05 is 13y 11m. Oral testimony additionally mentions "active-duty Air National Guard" service not itemised in the bio's role list, which may account for the slight rounding. |
-| [`/organizations/apus`] | Adjunct Professor, School of Security and Global Studies | 2014-07 – 2016-12 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/blue-sky-innovators`] | Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA) | 2016-03 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/nro`] | Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | 2016-04 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/uaptf`] | Member (in his NRO reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |  |
-| [`/organizations/nga`] | Senior GEOINT Capabilities Requirements Officer (GS-15, Colonel Equiv.) | 2021-11 – 2023-04 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/318-cyber-operations-group`] | IMA to the Commander, Detachment 3, Nellis AFB (USAF Reserve O-4/Maj in O-5/Lt Col Billet) | 2021-11 – 2022-04 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/us-air-force-academy`] | Key Employee Augmentee (USAF Reserve, O-4/Maj) | 2022-04 – 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
-| [`/organizations/sol-foundation`] | Chief Operating Officer (COO) | 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |  |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 – 2023-05 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/organizations/apus`] | Adjunct Professor, School of Security and Global Studies | 2014-07 – 2016-12 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/blue-sky-innovators`] | Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA) | 2016-03 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/nro`] | Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | 2016-04 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/uaptf`] | Member (in his NRO reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/organizations/nga`] | Senior GEOINT Capabilities Requirements Officer (GS-15, Colonel Equiv.) | 2021-11 – 2023-04 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/318-cyber-operations-group`] | IMA to the Commander, Detachment 3, Nellis AFB (USAF Reserve O-4/Maj in O-5/Lt Col Billet) | 2021-11 – 2022-04 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/us-air-force-academy`] | Key Employee Augmentee (USAF Reserve, O-4/Maj) | 2022-04 – 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/sol-foundation`] | Chief Operating Officer (COO) | 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |
 
 ---
 
@@ -1348,16 +1348,16 @@ _Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/jay-stratton`] | Former UAP Task Force director who tasked Grusch (2019) to identify all Special Access Programs / Controlled Access Programs needed to satisfy the UAPTF congressionally mandated mission |  |
-| [`/people/karl-nell`] | Sol Foundation co-founder peer and UAP Task Force colleague (2021-2022); Army liaison to UAPTF who worked alongside Grusch and publicly vouched for his credibility |  |
-| [`/people/ross-coulthart`] | Investigative journalist who conducted Grusch's first on-camera disclosure interview (NewsNation Reality Check, 2023-06-11) and has remained his primary journalist channel since |  |
-| [`/people/ralph-blumenthal`] | Co-author (with Leslie Kean) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure |  |
-| [`/people/leslie-kean`] | Co-author (with Ralph Blumenthal) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure |  |
-| [`/people/eric-burlison`] | U.S. Representative (R-MO) who hired Grusch as Special Advisor to the House Task Force on Declassification of Federal Secrets on 2025-03-27 |  |
-| [`/people/tim-burchett`] | U.S. Representative (R-TN), House Oversight UAP Subcommittee member who presided over Grusch's 2023-07-26 sworn testimony and has publicly defended Grusch against discrediting attempts |  |
-| [`/people/jesse-michels`] | Long-form UAP journalist who produced the American Alchemy / Yes Theory "72 hrs With Grusch" documentary (~October 2023) |  |
+| Person | Relationship |
+|---|---|
+| [`/people/jay-stratton`] | Former UAP Task Force director who tasked Grusch (2019) to identify all Special Access Programs / Controlled Access Programs needed to satisfy the UAPTF congressionally mandated mission |
+| [`/people/karl-nell`] | Sol Foundation co-founder peer and UAP Task Force colleague (2021-2022); Army liaison to UAPTF who worked alongside Grusch and publicly vouched for his credibility |
+| [`/people/ross-coulthart`] | Investigative journalist who conducted Grusch's first on-camera disclosure interview (NewsNation Reality Check, 2023-06-11) and has remained his primary journalist channel since |
+| [`/people/ralph-blumenthal`] | Co-author (with Leslie Kean) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure |
+| [`/people/leslie-kean`] | Co-author (with Ralph Blumenthal) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure |
+| [`/people/eric-burlison`] | U.S. Representative (R-MO) who hired Grusch as Special Advisor to the House Task Force on Declassification of Federal Secrets on 2025-03-27 |
+| [`/people/tim-burchett`] | U.S. Representative (R-TN), House Oversight UAP Subcommittee member who presided over Grusch's 2023-07-26 sworn testimony and has publicly defended Grusch against discrediting attempts |
+| [`/people/jesse-michels`] | Long-form UAP journalist who produced the American Alchemy / Yes Theory "72 hrs With Grusch" documentary (~October 2023) |
 
 ---
 
@@ -1446,18 +1446,18 @@ Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) re
 
 ## Vouching Chain
 
-| Name | Credentials | Statement | Source | Note |
-|---|---|---|---|---|
-| [`/people/karl-nell`] | primary-source | Karl E. Nell, a recently retired Army Colonel and current aerospace executive who was the Army's … | news/thedebrief-grusch-2023.html |  |
-| [`/people/karl-nell`] | primary-source | "His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the pa… | news/thedebrief-grusch-2023.html |  |
-| [`/people/tim-burchett`] | on-record | "I think it went really well," said Rep. Burchett. "We had great witnesses come in with real, cre… | government/burchett-house-gov-post-hearing-statement-20230726.html | The statement addresses all three hearing witnesses collectively (Grusch, Fravor, Graves) rather than naming Grusch — "real, credible information" and "genuine and honest testimonies" apply to him as one of the panelists. |
-| [`/people/tim-burchett`] | on-record | "It doesn’t matter," Rep. Tim Burchett, R-Tenn., said of the story. "What matters is the fact tha… | news/newsnation-burchett-sickening-grusch-202308.html | Burchett responding to Ken Klippenstein's publication of Grusch's mental-health records — defending Grusch's service and framing the leak as stigmatization rather than substantive rebuttal. |
-| [`/people/tim-burchett`] | on-record | "This man served his country," Burchett said. "Dadgummit, we’ve got to do better than this. I’m s… | news/newsnation-burchett-sickening-grusch-202308.html | Burchett on NewsNation's Cuomo program — described himself as "sickened" by the discrediting attempt against Grusch. Character-level attestation rather than claim-substantive. |
-| [`/people/eric-burlison`] | on-record | "The American people deserve answers about UAPs," said Rep. Burlison. "David Grusch has risked hi… | government/burlison-house-gov-grusch-advisor-20250327.html |  |
-| [`/people/marco-rubio`] | on-record | Rubio told NewsNation on Monday that he has heard from firsthand witnesses in "high positions in … | news/newsnation-rubio-not-the-only-one-202306.html | NewsNation reporter paraphrase rather than a direct Rubio quote; only the fragment "high positions in our government" is verbatim Rubio. |
-| [`/people/marco-rubio`] | on-record | "There are people that have come forward to share information with our committee over the last co… | news/newsnation-rubio-not-the-only-one-202306.html | The ellipsis is in the NewsNation source, not editorial. |
-| [`/people/marco-rubio`] | on-record | Rubio said that some of the officials with similar claims to Grusch are public figures with "high… | news/newsnation-rubio-not-the-only-one-202306.html | NewsNation reporter paraphrase; only the phrase "high clearances" is verbatim Rubio. |
-| [`/people/marco-rubio`] | on-record | Rubio did not comment on if he thinks the claims are credible, but he said he doesn’t see a reaso… | news/newsnation-rubio-not-the-only-one-202306.html | NewsNation reporter paraphrase carrying no verbatim Rubio fragment — basis for the medium confidence rating. |
+| Name | Credentials | Statement | Source |
+|---|---|---|---|
+| [`/people/karl-nell`] | primary-source | Karl E. Nell, a recently retired Army Colonel and current aerospace executive who was the Army's … | news/thedebrief-grusch-2023.html |
+| [`/people/karl-nell`] | primary-source | "His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the pa… | news/thedebrief-grusch-2023.html |
+| [`/people/tim-burchett`] | on-record | "I think it went really well," said Rep. Burchett. "We had great witnesses come in with real, cre… | government/burchett-house-gov-post-hearing-statement-20230726.html |
+| [`/people/tim-burchett`] | on-record | "It doesn’t matter," Rep. Tim Burchett, R-Tenn., said of the story. "What matters is the fact tha… | news/newsnation-burchett-sickening-grusch-202308.html |
+| [`/people/tim-burchett`] | on-record | "This man served his country," Burchett said. "Dadgummit, we’ve got to do better than this. I’m s… | news/newsnation-burchett-sickening-grusch-202308.html |
+| [`/people/eric-burlison`] | on-record | "The American people deserve answers about UAPs," said Rep. Burlison. "David Grusch has risked hi… | government/burlison-house-gov-grusch-advisor-20250327.html |
+| [`/people/marco-rubio`] | on-record | Rubio told NewsNation on Monday that he has heard from firsthand witnesses in "high positions in … | news/newsnation-rubio-not-the-only-one-202306.html |
+| [`/people/marco-rubio`] | on-record | "There are people that have come forward to share information with our committee over the last co… | news/newsnation-rubio-not-the-only-one-202306.html |
+| [`/people/marco-rubio`] | on-record | Rubio said that some of the officials with similar claims to Grusch are public figures with "high… | news/newsnation-rubio-not-the-only-one-202306.html |
+| [`/people/marco-rubio`] | on-record | Rubio did not comment on if he thinks the claims are credible, but he said he doesn’t see a reaso… | news/newsnation-rubio-not-the-only-one-202306.html |
 
 ---
 
@@ -1465,13 +1465,13 @@ Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) re
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Bigalow Aerospace | Bigelow Aerospace | transcripts/jre-2065-grusch-2023-downloaded.md | YouTube auto-caption typo of "Bigelow" as "Bigalow" on the Joe Rogan Experience transcript. Appears consistently throughout the JRE transcript whenever Grusch discusses the AAWSAP-era funding. Preserve the source form in quote.text; use canonical "Bigelow Aerospace" only via wrap_path linking. |
-| lockie Martin | Lockheed Martin | transcripts/jre-2065-grusch-2023-downloaded.md | YouTube auto-caption typo of "Lockheed" as "lockie" on the Joe Rogan Experience transcript. Appears throughout the JRE segment where Grusch discusses Lockheed Martin as a custodian of retrieved material. |
-| Jim laty | Jim Lacatski | transcripts/jre-2065-grusch-2023-downloaded.md | YouTube auto-caption typo of "Lacatski" as "laty" on the Joe Rogan Experience transcript. Grusch refers to AAWSAP program lead James Lacatski (retired DIA officer, PhD in engineering, co-author of Skinwalkers at the Pentagon). Preserve the source form in quote.text and credibility-notes prose; use canonical "James Lacatski" only via wrap_path linking. |
-| Lou alzando | Lue Elizondo | transcripts/jre-2065-grusch-2023-downloaded.md | YouTube auto-caption typo of "Lue Elizondo" as "Lou alzando" on the Joe Rogan Experience transcript. The variant "Lou Alando" also appears once at line 70. Grusch references former AATIP director Luis Elizondo; the canonical hearing-testimony form is "Lue Elizondo" (Grusch hearing transcript p. 787, "the leader of the ATIP program in the Pentagon led by Lue Elizondo"). Preserve the JRE source form in quote.text; canonical "Lue Elizondo" appears in the sworn-testimony rendering. |
-| Kurpatre | Kirkpatrick | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | YouTube auto-caption typo of "Kirkpatrick" as "Kurpatre" on the NewsNation Coulthart interview transcript ("I know Dr. Sean Kurpatre. I've known him for about 8 years"). Grusch is referring to Dr. Sean Kirkpatrick, then-Director of AARO. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Bigalow Aerospace | Bigelow Aerospace | transcripts/jre-2065-grusch-2023-downloaded.md |
+| lockie Martin | Lockheed Martin | transcripts/jre-2065-grusch-2023-downloaded.md |
+| Jim laty | Jim Lacatski | transcripts/jre-2065-grusch-2023-downloaded.md |
+| Lou alzando | Lue Elizondo | transcripts/jre-2065-grusch-2023-downloaded.md |
+| Kurpatre | Kirkpatrick | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |
 
 ---
 

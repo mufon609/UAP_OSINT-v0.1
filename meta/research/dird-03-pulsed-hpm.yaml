@@ -262,7 +262,6 @@ naming_quirks:
   location: 'p. ii, ¶ title vs. AAWSAP products list entry 3'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: disputed
-  note: 'The document''s own internal title carries the word "Source" (quote q1); the DIA AAWSAP products list ([`/documents/dia-aatip-products-list-2018`]) records the same report under the shortened title "Pulsed High-Power Microwave Technology", dropping "Source", and attributes it externally to Dr. James Wells ([`/people/james-wells`]) of JW Enterprises ([`/organizations/jw-enterprises`]). The internal title is recorded verbatim and the document''s own Author line is redacted (b)(6); the products-list short form and external attribution are flagged here for navigation, not asserted as the document''s self-stated author.'
 - id: nq2
   added_date: '2026-05-21'
   observed: '[(b)(6)]'
@@ -270,7 +269,6 @@ naming_quirks:
   location: 'p. ii, Author line'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The document''s Author line is withheld under FOIA exemption (b)(6) (personal-privacy). The exemption marker is preserved verbatim in quote q2; canonical prose reflects the redaction rather than injecting the external products-list attribution as the document''s self-stated author.'
 - id: nq3
   added_date: '2026-05-21'
   observed: '[(b)(3):10 USC 424]'
@@ -278,7 +276,6 @@ naming_quirks:
   location: 'p. ii, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The Prepared-by organizational line, embedded office designations in the Administrative Note, and the AAWSA Program Manager address line are withheld under FOIA exemption (b)(3) invoking 10 USC 424 (DIA organizational/personnel protection). Markers preserved verbatim in quotes q2 and q3, including the combined [(b)(3):10 USC 424;(b)(6)] form.'
 - id: nq4
   added_date: '2026-05-21'
   observed: Commanche
@@ -286,4 +283,3 @@ naming_quirks:
   location: 'p. vii, ¶1 (Summary)'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The document spells the helicopter "Commanche" (quote q8); the correct proper name is "Comanche". Preserved verbatim in the quote per source-read-first discipline.'

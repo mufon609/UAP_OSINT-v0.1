@@ -47,9 +47,7 @@ In order, with a check after each (build-protocol → run
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize worker cross-ref candidates into `relationships` /
    `affiliations` / `timeline` / … with canonical `[`/path`]` links; populate
-   `naming_quirks` + `rumors`. Keep each entry's optional `.note` to context
-   the row's residue only — never restate Role / Period / Source or repeat a
-   Timeline fact; an empty note is correct when there's no residue. →
+   `naming_quirks` + `rumors`. →
    `validate-research.py --phase link meta/research/{slug}.yaml`
 3. **Render** — only if 1–2 are clean:
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

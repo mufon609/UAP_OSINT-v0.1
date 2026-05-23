@@ -134,7 +134,6 @@ affiliations:
   source:
     path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
     location: page 2/5 Experience section
-  note: The role's sole attestation is Moultrie's own contemporaneous LinkedIn profile (quote q14); it is absent from his current public biographies.
 - id: a8
   added_date: '2026-04-29'
   organization_path: /organizations/itc-global-advisors
@@ -912,7 +911,6 @@ naming_quirks:
   location: Sharp tweet image page 1/5 bio summary section
   source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
   resolution: use-canonical
-  note: The June 2018 LinkedIn bio refers to Moultrie's master's-degree institution as the 'Defense Intelligence College' — the institution's earlier name. War.gov and Wikipedia use the current canonical name 'National Intelligence University'. Defense Intelligence College was renamed Joint Military Intelligence College and ultimately National Defense Intelligence College / National Intelligence University.
 - id: nq2
   added_date: '2026-04-29'
   observed: NSA's Director of Operations
@@ -920,7 +918,6 @@ naming_quirks:
   location: war.gov bio ¶ Prior to becoming Under Secretary
   source_path: government/wargov-moultrie-biography.html
   resolution: use-canonical
-  note: War.gov bio says Moultrie 'retired from the DoD in 2015, as NSA's Director of Operations'. Wikipedia says he 'eventually served as the director of the National Security Operations Center'. The Sharp tweet (LinkedIn) records '2010 – 2015 · 5 yrs' as 'Director & Deputy Director of Signals Intelligence'. Three different titles for the same NSA tenure period in three different sources; war.gov is the post-government canonical. Treat all three as variant descriptions of senior NSA leadership 2010-2015 rather than separate roles.
 - id: nq3
   added_date: '2026-04-29'
   observed: G2X Labs Inc
@@ -928,7 +925,6 @@ naming_quirks:
   location: Sharp tweet image page 1/5 Experience section
   source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
   resolution: use-canonical
-  note: The June 2018 LinkedIn lists 'G2X Labs Inc' (Chairman of the Board); the May 2022 OGE Form 278e Schedule D row 4 lists 'G2K Labs' (Board Member). Likely the same Chantilly, VA company with name evolution between 2018 and 2022. The OGE filing is the canonical post-government attestation; preserve the source-form 'G2X Labs Inc' on the LinkedIn-attested entry but use 'G2K Labs' as the canonical wrap.
 - id: nq4
   added_date: '2026-04-29'
   observed: Better Angel Society Inc (THE)
@@ -936,7 +932,6 @@ naming_quirks:
   location: Sharp tweet image page 2/5 Experience section
   source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
   resolution: use-canonical
-  note: The 2018 LinkedIn lists 'Better Angel Society Inc (THE)' (singular 'Angel'); the May 2022 OGE 278e Schedule D row 2 lists 'The Better Angels Society' (plural). Same organization. Preserve the source form on the LinkedIn-attested entry.
 rumors:
 - id: rm1
   added_date: '2026-04-29'
@@ -945,7 +940,6 @@ rumors:
   observed_sources:
   - IBTimes UK "Gerb" piece (January 2026)
   - X / Twitter UAP-disclosure discussion threads
-  note: Working notes (April 28-29 2026 architecture handoff) classify the 'removed from official biography' framing as factually accurate but lacking conspiratorial significance — Battelle is absent from war.gov, INSA, UMD, LeoLabs, Wikipedia, Inside Biden's Basement, and ExecutiveBiz biographical content, but the same omission applies systematically to all of Moultrie's 2015-2018 advisory roles, not Battelle alone. The Battelle Memorial Institute Form 990 filings for FY ending September 30 2019 and FY ending September 30 2021 confirm Moultrie was not on the Board of Directors during those years; Form 990 Part VII Section A does not require listing Advisory Board members per IRS instructions. OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing — the Battelle Advisory Board role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment and would not be required disclosure on his entry-level OGE filing. Preserve as fabrication-prevention record so future contributors don't recirculate the conspiratorial framing without examining the disclosure-window context.
 credibility_notes: 'Moultrie was the Under Secretary at AARO''s establishment, named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as first Director, and the AARO Executive Council reported to him through July 2023.
 
 

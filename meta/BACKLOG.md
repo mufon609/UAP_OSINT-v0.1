@@ -76,126 +76,97 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Promote per-entry fact-notes to verbatim quotes / columns; route patterns to findings
+### A3 — Recover the facts removed when the `.note` field was eliminated
 
-DECIDED. Two corpus audits of all 323 per-entry notes settled this. The first
-framed it residue-vs-descriptive and proposed a new `summary` synthesis field;
-the second, run through a fact / synthesis / noise lens, overturned that — the
-field is **0% clutter**, but its content is mostly **facts stored as
-paraphrase**, not synthesis needing a home:
-- **~59% FACT** — Q (~56%) → a verbatim `quote` + source.location; C (~3%) → a
-  column / enum value. ~43% of the Q notes already carry the verbatim source
-  text inline.
-- **~13% NOISE** → delete (column-restatement, redundant attestation, boilerplate).
-- **~20% RESIDUE** → the legitimate `note` (source-limitation / dating-anchoring
-  / disambiguation).
-- **~8% SYNTHESIS** — only ~4% entity-local; the rest are cross-source *patterns*
-  that belong on finding / investigation nodes. A per-entry synthesis field was
-  REJECTED — it would entrench synthesis; `description` / `background` and the
-  finding layer already carry it.
+The per-entry `.note` field — an unchecked, reader-facing catch-all that had
+accumulated fact-store paraphrase, opinion, future-work pointers, cross-node
+bookkeeping, and duplicates — was **eliminated repo-wide**: stripped from every
+research artifact (≈640 notes across 50 files), removed from the schema and the
+prose-drift scope, dropped from the renderers, and retired from `conventions.md`.
+The corroboration "what it confirms" content (the one note that was load-bearing,
+not residue) was preserved under a new `confirms` field; `naming_quirks`
+structured mappings and `vouching_chain.attestation` survive. This item tracks
+what removal left to recover, plus the non-note data debt the audit surfaced.
 
-End-state: facts → quotes/columns; noise → deleted; patterns → findings;
-`note` = residue-only (its narrowed positive definition now lives in
-`conventions.md` "Per-entry notes" — "residue, never a fact-store or synthesis
-surface").
+**Load-bearing facts removed from notes — re-investigate and promote to verbatim
+quotes (with `source.location`):**
+- **SRI remote-viewing program lineage** (was narrated in
+  stanford-research-institute or4/or5, carried in no quote): per the 1993 DIA
+  STAR GATE Project Overview — CIA funding discontinued 1975, subsequent funding
+  by DIA; an HQDA/INSCOM small unit established late 1970s, transferred to DIA in
+  1986 as the SUN STREAK Special Access Program; FY1991 Congressional direction
+  established successor research at SAIC, Menlo Park. Plus the 9 November 1973
+  K. Green (CIA OSI/LSD) "Verification of Remote Viewing" Memorandum for the
+  Record (Kress 1977 footnote, ~source line 410). Promote the load-bearing
+  pieces to quotes on SRI.
+- **DoDD 5143.01 authority basis** (was ousd-is or1): "pursuant to the authority
+  vested in the Secretary of Defense (SecDef) by sections 113 and 137 of Title
+  10, United States Code" — verbatim-promotable (DoDD 5143.01, ~l.17-18).
+- **hal-puthoff TTSA / AATIP attestations narrated into relationship/program
+  notes**: the 2017-12-16 NYT TTSA-venture sentence; the TTSA SEC Form 1-A
+  stock-grant sentence (Gravity Holdings, LLC / JimSemI, LLC / Harold Puthoff);
+  the 2018 TTSA ADAM "former Senior Advisor and Subcontractor to … AATIP" line.
+  Promote whichever are load-bearing to quotes; otherwise they stay out.
+- **sancorp facts that survive nowhere else once their restatement-notes are
+  gone**: JAIC DRAID BOA + AI-Eng BPA (c3); the GSA vehicles MAS (July 2022),
+  8(a) STARS III GWAC, OASIS+ #47QRCA25DA398 (or13) as `contracts[]` rows;
+  `number_of_offers_received: 1` (c14) as a column; the MDA SHIELD IDIQ award
+  (q49 / USAspending). Note: c17's citation to a non-existent "Sancorp Featured
+  News January 2026" was deleted, so the SHIELD award needs a real archived
+  source; and the strings stripped as unattested this pass — STARS III
+  "47QTCB22D0104" and the "AI Talent 2.0" BOA label — must be re-verified before
+  any reuse (neither appears in any archived source).
+- **aaro PWS facts** on `blackvault-sancorp-23-f-1114-aaro-pws.pdf` (SF-33
+  issuing-office block + task-area enumeration) are OCR-corrupt with no
+  clean-text sibling — not promotable to quotes until `/prepare-ocr-sibling`
+  produces one.
 
-**DONE this session:** reverted the provisional `summary` declaration; deleted
-12 verified-noise notes (arlo / ttsa key_personnel column-restatements, ousd-is
-DoDD-5143.01 subsidiary boilerplate ×5, a karl-nell cross-pointer); closed the
-`funder` / `fund-administrator` enum gap (safire ISF + Mainwaring rows are now
-structured, not `partner`+note-workaround); narrowed the `note` definition.
+**Future-work (was narrated inside rendered notes; the node is not its home):**
+- Archive the Puthoff–Targ "The Record" SRI daily log → resolves the
+  five-week-vs-nine-day Geller SRI-engagement discrepancy (uri-geller rumor r1).
+- Archive a primary source for the Uri Geller Museum opening date → graduate
+  uri-geller rumor r4 to a quote and populate affiliations a9 `period_start`
+  (currently secondary-only "2021").
+- Decide where the "known start, unknown end (but not ongoing)" period
+  convention lives (a conventions.md decision) — hal-puthoff a2/p1 (and
+  russell-targ) cited a now-emptied research-queue.md entry for it; the dead
+  citation was stripped.
 
-**Note-residue sweep — DONE (Phase C, this effort).** All 16 person nodes, the 10
-organization nodes, and skinwalker were swept to the residue-only end-state, each
-batch gated by an independent fresh-context audit. The "~191 fact-notes" estimate
-resolved mostly to no-ops rather than promotions: under the person-node voice gate a
-fact ABOUT the subject is not quote-eligible (it lives in a structured row), and most
-own-voice facts were already quoted — so the person batches yielded ~zero new quotes
-and reduced to noise-deletion + internal-id-bookkeeping removal + a few unsourced-claim
-removals. The genuine promotions were on org nodes (safire / ousd-is / arlo, plus the
-earlier shipped 10). The residue notes conform.
+**Finding to create — AARO → AIC budget rebrand:** FY2024 OSD OP-5 named AARO;
+FY2025 OP-5 was the first to substitute "AIC"; FY2026 retains AIC; no public DoD
+announcement of an AARO renaming, and aaro.mil remains active. This
+multi-budget-year cross-source pattern was narrated in ousd-is entity notes
+or7/or15 (the entity layer must not carry patterns) — route it to a new finding
+citing the OP-5 sources directly.
 
-**Still DEFERRED:**
-- Route the ~13 cross-source pattern notes to finding / investigation nodes (F.SRI and
-  the open `lockheed-martin-uap-materials` investigation are on the books to receive
-  several). The entity-node quotes these will cite now exist post-sweep, so the
-  finding-source-in-entity-node gate is satisfiable.
-
-Note: the conservative noise count is **12**, not the first audit's ~41 — the
-rest carry discrete facts or real caveats (quote-promotion / residue), so a
-blanket "delete the notes" pass would lose content. Per-entry judgment required.
-
-**Audit-surfaced per-node debt (running log — appended per phase; cleared
-items removed as the sweep resolves them, the commit diff being the record):**
-
-_Phase-C org batch cleared the safire / ousd-is / arlo / ipmo note debt
-(promotions + delete-redundant sweeps, each gated by an independent fresh-context
-audit). Two regressions were caught at the gate, not in the final state: ousd-is's
-two "belongs on a stub person node" deletions (Cambone prior-roles, Overbaugh
-career) were restored as quotes q50/q51; arlo's four GSA OASIS+ contract numbers,
-which survived nowhere else, were promoted to q19 rather than deleted. The uaptf
-q22 provenance error (Charter p.3 → 23 Sep 2020 NIA outreach memo) was also fixed._
-
-_Still open:_
-- **aaro** — `blackvault-sancorp-23-f-1114-aaro-pws.pdf` SF-33 issuing-office
-  block + PWS task-area enumeration are OCR-corrupt with no clean-text sibling,
-  so they are NOT promotable to verbatim quotes. Blocked on `/prepare-ocr-sibling`
-  (no autonomous owner). Stays residue; defer past this effort.
-- **deprecated `lines N-M` source.location forms** (pre-existing, surfaced in the
-  people sweep): ~12 artifacts still use the deprecated extraction-anchored `lines N-M`
-  location form instead of the canonical source-anchored form (`p. N, ¶M` /
-  `[MM:SS]` / section descriptor) — mostly the older event / transcript / Nimitz-
-  eyewitness nodes (e.g. `2004-nimitz-encounter`, the 2023 hearing transcripts,
-  `david-fravor`, `david-grusch`, `sean-kirkpatrick`). Run the `normalize-locations.py`
-  diagnostic + a contributor pass to canonicalize. Also tighten the imprecise
-  `alex-dietrich` Debrief `line 66` refs (a1/a10/a11 point at a `<script>` tag; content
+**Non-note data debt surfaced by the audit (pre-existing; not note-related):**
+- **deprecated `lines N-M` source.location forms** — ~12 artifacts still use the
+  extraction-anchored `lines N-M` form instead of the source-anchored form
+  (`p. N, ¶M` / `[MM:SS]` / section descriptor): mostly older event / transcript
+  / Nimitz-eyewitness nodes (`2004-nimitz-encounter`, the 2023 hearing
+  transcripts, `david-fravor`, `david-grusch`, `sean-kirkpatrick`). Run
+  `normalize-locations.py` + a contributor pass. Also tighten alex-dietrich's
+  imprecise Debrief `line 66` refs (a1/a10/a11 point at a `<script>` tag; content
   is at lines 96/1275).
-- **ronald-moultrie a29 BlueVoyant structured-field mis-dating** (pre-existing,
-  surfaced in the people sweep): the affiliation row's `period_start`/`period_end`
-  (`2021-06`), role text ("appointment announced June 2021"), and timeline `t25`
-  contradict the cited source `executivebiz-bluevoyant-moultrie-advisory-board-202106.html`,
-  whose `datePublished` is `2020-09-02` (the `2021-06` traces to the source's
-  `dateModified` 2021-06-22 + the manifest filename suffix). Re-verify the role
-  title + dates against the source and re-date; the drift may also touch the
-  a-Mitre / a-Pallas rows if they rest on the same source. (The note carrying the
-  same mis-dating was deleted in the people sweep; the structured fields remain.)
-- **ronald-moultrie a11 C5 source re-pull** (archive-sweep): the cited
-  `mondovisione-c5-partners-moultrie-nsa-20170306.html` is a JS-shell / cookie-wall
-  capture with no extractable body (it backs the "March 2017 Strategic Partner"
-  fact + timeline `t21`); the Businesswire half (Chairman, C5 US, Dec 2017) is
-  verified. Re-pull a usable capture.
-- **uri-geller sourcing reconciliation** (pre-existing, surfaced in the people
-  sweep — NOT batch-introduced): the `program_involvement` "CIA-sponsored SRI
-  investigation" row cites a contract 1471(S)73 progress report and the 1974
-  Nature paper that are referenced in timeline/relationships but absent from
-  `primary_sources`; and the explicit CIA-funding statement ("CIA funded research
-  and development activities at SRI ~1972-1977", CIA-RDP96-00791R000100030062-7)
-  lives only in an image-only TIF scan with no text layer — not verbatim-citable
-  until `/prepare-ocr-sibling` produces a clean sibling. Reconcile the source list
-  and verify the sponsorship basis. (Person-node program/affiliation/relationship
-  notes are not prose-drift-gated, which is how the unlisted-source references
-  went unflagged.)
-- **research-queue reference reconciliation** (the queue was emptied "for a fresh
-  start" in `32bf5c6`, but several artifacts still cite specific now-deleted entries).
-  The deferred-finding pointers (F.SRI on russell-targ + uri-geller; F.X on arlo) and
-  the Cluster-F archival pointer were fixed in this effort. Still dangling: (a) the
-  "known start, unknown end (but not ongoing)" pending-convention citation on
-  `hal-puthoff` (×2) + `russell-targ` (×2) — decide where that convention question
-  lives (conventions.md decision or a BACKLOG item) and drop the dead
-  `research-queue.md` citation; (b) the `lockheed-martin-uap-materials` investigation's
-  `what_would_resolve` reference to research-queue.md "Externally blocked" (FOIA appeal
-  24-F-0266) — and the "The Record" daily-log archival need (uri-geller r1) — both are
-  external-blocked source-acquisition items that want a tracking home (the BACKLOG
-  external-event section).
-- **untouched-type naming_quirks id-clause uniformity** (low priority, cosmetic). Phase E
-  confirmed the document / event / transcript / media / finding / investigation nodes carry
-  NO fact-store or synthesis notes — every per-entry note there is already residue
-  (auto-caption quirks, OCR/typo source-form preservation, FOIA-redaction explanations,
-  oath-status + location caveats, contradiction-analysis). The only residual is that some
-  document + transcript `naming_quirks` notes still trail a "preserved verbatim in qN"
-  clause, the same internal-id bookkeeping dropped from the person/org nodes. A uniform
-  rephrase pass (keep the source-form explanation, drop the qN clause) would make the
-  residue-only standard consistent corpus-wide; not a quality problem, just consistency.
+- **ronald-moultrie a29 BlueVoyant mis-dating** — the affiliation row's
+  `period_start`/`period_end` (`2021-06`), role text, and timeline `t25`
+  contradict the cited source (`datePublished` 2020-09-02; `2021-06` traces to
+  `dateModified` + the manifest filename suffix). Re-verify + re-date; may also
+  touch the a-Mitre / a-Pallas rows if they rest on the same source.
+- **ronald-moultrie a11 C5 source re-pull** — the cited
+  `mondovisione-c5-partners-moultrie-nsa-20170306.html` is a JS-shell / cookie-
+  wall capture with no extractable body (backs the "March 2017 Strategic Partner"
+  fact + timeline `t21`). Re-pull a usable capture.
+- **uri-geller sourcing reconciliation** — the `program_involvement`
+  "CIA-sponsored SRI investigation" row references a contract 1471(S)73 progress
+  report and the 1974 Nature paper absent from `primary_sources`; the explicit
+  CIA-funding statement (CIA-RDP96-00791R000100030062-7) lives only in an
+  image-only TIF with no text layer (needs `/prepare-ocr-sibling`). Reconcile the
+  source list and verify the sponsorship basis.
+- **research-queue / lockheed-investigation reference reconciliation** — the
+  `lockheed-martin-uap-materials` investigation's `what_would_resolve` cites
+  research-queue.md "Externally blocked" (FOIA appeal 24-F-0266); give that
+  external-blocked acquisition item a tracking home.
 
 **Blocks:** none.
 **Blocked by:** nothing — execution.

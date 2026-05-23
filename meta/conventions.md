@@ -554,8 +554,8 @@ A person artifact's `quotes[]` section carries verbatim statements *by*
 the subject — the speaker is the node's subject. Quotes by other
 parties about the subject do not belong in Statements; they belong on
 the speaker's own artifact and on the subject's structured cross-
-reference surfaces (`affiliations[].note`, `relationships[].note`,
-`program_involvement[].note`, `timeline[]` rows) with the speaker's
+reference surfaces (`affiliations[]`, `relationships[]`,
+`program_involvement[]`, `timeline[]` rows) with the speaker's
 source cited.
 
 The bright lines:
@@ -581,8 +581,8 @@ The bright lines:
   written in third person — the subject is the publisher.
 - **Quotes by others about the subject.** A reporter narrating, a
   voucher attesting, a supervisor describing the subject. *Not*
-  Statements. Capture via `relationships[].note`, `program_involvement[].note`,
-  `affiliations[].note`, or `timeline[]` on the subject's artifact,
+  Statements. Capture via a `relationships[]`, `program_involvement[]`,
+  `affiliations[]`, or `timeline[]` row on the subject's artifact,
   citing the third party's source. If the speaker has their own
   artifact, the same quote belongs in that speaker's `quotes[]`.
 
@@ -664,14 +664,12 @@ rather than paraphrasing.
 
 ### Contributor prose is labeled and drift-checked
 
-Contributor prose sits on two kinds of surface: labeled synthesis
-fields (`description`, `background`, `top_relevance`, `credibility_notes`)
-and per-entry residue `.note` fields (`ownership_timeline.note`,
-`key_personnel.note`, `vouching_chain.attestation`, etc.) — residue,
-not synthesis (see "Per-entry notes"). The prose-drift check tokenizes
-both against the primary-source text and warns on every unmatched
-significant token (errors at 100% vocabulary divergence): even residue
-must use source vocabulary.
+Contributor prose sits on labeled synthesis fields (`description`,
+`background`, `top_relevance`, `credibility_notes`) plus the
+whistleblower `vouching_chain.attestation`. The prose-drift check
+tokenizes each against the primary-source text and errors on every
+unmatched significant token: synthesis prose must use source
+vocabulary.
 
 ### News articles and books
 
@@ -684,15 +682,11 @@ document.
 
 Nodes carry contributor-prose surfaces that sit alongside the verbatim
 `quotes[]` content: per-node `description` / `background` /
-`top_relevance` / `credibility_notes` paragraphs, and per-entry
-residue `.note` fields (`ownership_timeline.note`,
-`top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
-`media_versioning.note`, `vouching_chain.attestation`). The free-prose
-fields are labeled synthesis that frames the evidentiary content; the
-`.note` fields carry only residue the columns don't (see "Per-entry
-notes"). Either way it is contributor prose, and contributor prose
-introduces a real failure mode: unstated premises, paraphrase drift,
-and content widening even when every referenced quote is verbatim-clean.
+`top_relevance` / `credibility_notes` paragraphs, and the whistleblower
+`vouching_chain.attestation`. These are labeled synthesis that frames
+the evidentiary content, and contributor prose introduces a real
+failure mode: unstated premises, paraphrase drift, and content widening
+even when every referenced quote is verbatim-clean.
 
 `validate-research.py`'s prose-drift check verifies
 that significant words in these prose fields appear in the referenced
@@ -717,14 +711,11 @@ Source-vocabulary discipline applies token-by-token; English-grammar
 discipline applies to the rendered prose. When the two collide,
 restructure the sentence — don't ship the broken phrasing.
 
-The prose-drift check is explicitly scoped to contributor prose (free-
-prose synthesis fields and per-entry residue notes). Compact label cells (role
-titles, short relationship descriptors, `timeline[].event`) and cross-
-reference descriptor notes (`corroboration_items.note`,
-`witnesses_testimony.note`, `org_relationships.note`,
-`location_relationships.note`) are out of scope — token-match misfires
-on those surfaces; fabrication there is Phase III semantic-review
-territory.
+The prose-drift check is explicitly scoped to contributor synthesis
+prose. Compact label / descriptor cells (role titles, short
+relationship descriptors, `timeline[].event`, the corroboration
+`confirms` cell) are out of scope — token-match misfires on those
+surfaces; fabrication there is Phase III semantic-review territory.
 
 **Zero ungrounded tokens on scoped fields — a hard gate, not a
 target.** Calling a flagged token "legitimate synthesis vocabulary"
@@ -811,7 +802,7 @@ This applies uniformly to two surfaces:
   `org_relationships`, `contracts`, `media_versioning`, and any
   other entry-list section the schema defines.
 - **Free-prose fields.** `description`, `background`, `top_relevance`,
-  `credibility_notes`, and per-entry residue `.note` fields.
+  and `credibility_notes`.
 
 Contributors populate each surface with what archived primary sources
 support — no more, no less. The source produces the count. If a
@@ -876,41 +867,6 @@ when the prose layer doesn't explicitly call out the end. Otherwise
 the description's reference to the contract's establishment has no
 structured-surface counterpart for the contract's closure, and the
 layered-precision principle breaks for that class of contracts.
-
-### Per-entry notes — context the columns don't already carry
-
-Structured entries (`key_personnel`, `affiliations`, `relationships`,
-`program_involvement`, `contracts`, …) render as table rows whose columns
-(Role / Period / Source / …) are the authoritative surface for that entry's
-field data. The entry's optional `note` is for context those columns — and
-the node's other sections (Timeline, Key Passages, Description) — do NOT
-already carry: a credibility caveat, a sequencing nuance, a source
-limitation, a disambiguation. A note must not restate the row's own Role /
-Period / Source, and must not repeat a fact the Timeline or Key Passages
-already attest. If the note adds nothing the structured surfaces don't,
-**leave it empty** — a blank Note cell is normal.
-
-This is the layered-precision discipline above, applied per entry: columns
-and dedicated sections carry the facts; the note adds only the residue. The
-prose-drift check confirms a note's tokens are *sourced*, not that they're
-*non-redundant* — non-duplication is an authoring judgment, not a mechanical
-gate, so the discipline lives here. When new material would update an entry
-(e.g. a role that continued past the last-known date), **correct the
-structured field** — extend or open the `period_end`, add a Timeline row —
-rather than narrating the update in a note.
-
-**`note` is residue — never a fact-store or a synthesis surface.** A discrete
-fact the source attests — a date, an action, a named role, a citation, an
-observation — belongs in a verbatim `quote` (with its `source.location`) or a
-structured column, *never* paraphrased into a note. A characterization
-synthesized across several sources is node-level synthesis: it lives in
-`description`, or — if it is a cross-source *pattern* — on a finding /
-investigation node (the entity layer carries facts, not patterns; see the
-three-layer architecture). There is no per-entry synthesis field, by design;
-adding one would just relocate the synthesis we minimize. After the facts go
-to quotes/columns and the patterns go to findings, what remains in a `note` is
-only the residue above, and most entries need none. A note that restates a
-column, or narrates a fact a quote should carry, is **noise** — delete it.
 
 ### Quote location refs: source-anchored, not extraction-anchored
 

@@ -205,7 +205,6 @@ naming_quirks:
   location: ¶10
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source consistently misspells the journalist's surname with a trailing 'e'. Use canonical form in prose outside quoted passages.
 - id: nq2
   added_date: '2026-04-17'
   observed: Tom Delonge
@@ -213,7 +212,6 @@ naming_quirks:
   location: ¶10
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source uses lowercase 'l' in DeLonge. Canonical form has internal capital.
 - id: nq3
   added_date: '2026-04-17'
   observed: ATIP (Anomalous Threat Identification Program)
@@ -221,7 +219,6 @@ naming_quirks:
   location: ¶8
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: disputed
-  note: Source names the program "ATIP (Anomalous Threat Identification Program)" — inconsistent with the widely-cited "AATIP (Advanced Aerospace Threat Identification Program)". Whether this is Fravor's drafting choice, an alternate abbreviation, or a distinct entity is not resolved by this document. See research_gap rg2.
 - id: nq4
   added_date: '2026-04-17'
   observed: U.S Navy
@@ -229,4 +226,3 @@ naming_quirks:
   location: ¶2
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Source drops the period after 'S'. Minor typographical quirk; use canonical form outside quoted passages.

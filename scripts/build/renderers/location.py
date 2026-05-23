@@ -125,10 +125,10 @@ def render_ownership_timeline(artifact):
         "period_start",
     )
     lines = ["## Ownership Timeline", "",
-             "| Period | Owner | Use / Status | Source | Note |",
-             "|---|---|---|---|---|"]
+             "| Period | Owner | Use / Status | Source |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
         return "\n".join(lines) + "\n"
     for e in items:
         period = _format_period(e)
@@ -143,8 +143,7 @@ def render_ownership_timeline(artifact):
             f"| {period} | "
             f"{owner_cell} | "
             f"{e.get('use_status') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -162,10 +161,10 @@ def render_top_scope_activity(artifact):
     )
     display_name = load_topic()["display_name"]
     lines = [f"## {display_name}-Scope Activity", "",
-             "| Period | Activity | Source | Note |",
-             "|---|---|---|---|"]
+             "| Period | Activity | Source |",
+             "|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
         return "\n".join(lines) + "\n"
     for e in items:
         period = _format_period(e)
@@ -179,8 +178,7 @@ def render_top_scope_activity(artifact):
         lines.append(
             f"| {period} | "
             f"{activity_cell} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -221,22 +219,21 @@ def render_location_relationships(artifact):
         ep = _wrap_path(e.get("entity_path"))
         return (
             f"| {ep} | "
-            f"{e.get('relationship') or ''} | "
-            f"{_escape_table_cell(e.get('note'))} |"
+            f"{e.get('relationship') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Entity | Relationship | Note |",
-             "|---|---|---|"]
+             "| Entity | Relationship |",
+             "|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Entity | Relationship | Note |",
-                  "|---|---|---|"]
+                  "| Entity | Relationship |",
+                  "|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"

@@ -84,7 +84,6 @@ naming_quirks:
   location: SD004 page 1 Q&A content
   source_path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'SD004''s own page-1 text uses "$22M" (with dollar sign). Elizondo''s QFR Q1 indented quotation of the same Lacatski statement uses "22M" (no dollar sign). Both forms are source-attested; preserved verbatim in q2 (SD004 form) and q4 (QFR-quoted form) per source-read-first discipline.'
 
 - id: nq2
   added_date: '2026-05-13'
@@ -93,7 +92,6 @@ naming_quirks:
   location: SD004 page 1 Q&A content
   source_path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'SD004 capitalises "Facilities" (Bigelow Aerospace Facilities). Elizondo''s QFR Q1 quotation uses lowercase "facilities" (Bigelow Aerospace facilities). Both forms preserved verbatim in q2 (SD004 capitalization) and q4 (QFR lowercase) per source-read-first discipline.'
 
 establishes:
 

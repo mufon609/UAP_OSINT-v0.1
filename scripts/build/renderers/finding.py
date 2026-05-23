@@ -178,10 +178,6 @@ def render_finding_contradictions(artifact):
                 eid = p.get("evidence_id") or ""
                 pos = (p.get("position") or "").replace("|", "\\|")
                 lines.append(f"| `{eid}` | {pos} |")
-        note = (c.get("note") or "").strip()
-        if note:
-            lines.append("")
-            lines.append(note)
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 

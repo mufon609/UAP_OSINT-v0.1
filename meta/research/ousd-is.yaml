@@ -654,7 +654,6 @@ key_personnel:
   source:
     path: government/defense-gov-cambone-usdi-bio-200709.html
     location: defenselink.mil bio of Dr. Stephen A. Cambone, last updated January 13, 2006
-  note: The Source column's biography (last updated January 2006) carries the March 7, 2003 confirmation but not the later departure; the December 31, 2006 end date rests on the separate DoD resignation release No. 1221-06.
 - id: kp1
   added_date: '2026-04-30'
   person_path: /people/james-clapper
@@ -665,7 +664,6 @@ key_personnel:
   source:
     path: government/wargov-clapper-sworn-in-photo-20070413.html
     location: war.gov photo gallery caption for VIRIN 193973-E-CAZ91-588
-  note: ''
 - id: kp2
   added_date: '2026-04-30'
   person_path: /people/michael-vickers
@@ -676,7 +674,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict.
 - id: kp3
   added_date: '2026-04-30'
   person_path: /people/marcel-lettre
@@ -697,7 +694,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: ''
 - id: kp3b
   added_date: '2026-04-30'
   person_path: /people/kari-bingen
@@ -708,7 +704,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: ''
 - id: kp4
   added_date: '2026-04-30'
   person_path: /people/joseph-kernan
@@ -719,7 +714,6 @@ key_personnel:
   source:
     path: government/pl-116-92-ndaa-fy2020.pdf
     location: 'Title XVI Subtitle B § 1621 — redesignation effective on enactment, December 20, 2019'
-  note: ''
 - id: kp4a
   added_date: '2026-04-30'
   person_path: /people/joseph-kernan
@@ -730,7 +724,6 @@ key_personnel:
   source:
     path: government/defense-gov-personnel-changes-pentagon-20201110.html
     location: 'DoD release, November 10, 2020'
-  note: ''
 - id: kp4b
   added_date: '2026-04-30'
   person_path: /people/ezra-cohen-watnick
@@ -741,7 +734,6 @@ key_personnel:
   source:
     path: government/defense-gov-personnel-changes-pentagon-20201110.html
     location: 'DoD release November 10 2020'
-  note: ''
 - id: kp4c
   added_date: '2026-04-30'
   person_path: /people/david-m-taylor
@@ -752,7 +744,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: ''
 - id: kp5
   added_date: '2026-04-30'
   person_path: /people/ronald-moultrie
@@ -763,7 +754,6 @@ key_personnel:
   source:
     path: government/wargov-moultrie-biography.html
     location: 'Ronald S. Moultrie biography on war.gov'
-  note: ''
 - id: kp5a
   added_date: '2026-04-30'
   person_path: /people/milancy-harris
@@ -774,7 +764,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: ''
 - id: kp5b
   added_date: '2026-04-30'
   person_path: /people/dustin-gard-weiss
@@ -785,7 +774,6 @@ key_personnel:
   source:
     path: government/crs-if10523-defense-primer-usdis.html
     location: CRS report IF10523 successor list
-  note: ''
 - id: kp6
   added_date: '2026-04-30'
   person_path: /people/bradley-hansell
@@ -795,7 +783,6 @@ key_personnel:
   source:
     path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
     location: 'p. 1, ¶1 of biographical text'
-  note: ''
 - id: kp7
   added_date: '2026-04-30'
   person_path: /people/justin-overbaugh
@@ -805,7 +792,6 @@ key_personnel:
   source:
     path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
     location: 'p. 1, ¶1 of biographical text'
-  note: ''
 - id: kp8
   added_date: '2026-05-02'
   person_path: /people/david-kozik
@@ -823,7 +809,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 1 PURPOSE — issued under the authority vested in the Secretary of Defense'
-  note: DoDD 5143.01 is issued under SecDef authority pursuant to 10 U.S.C. §§ 113 and 137.
 - id: or2
   added_date: '2026-04-30'
   organization_path: /organizations/dia
@@ -866,7 +851,6 @@ org_relationships:
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: 'Hicks AARO establishment memo, p. 1, ¶3 third bullet'
-  note: Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373. Pair with or15 (AIC); the FY 2025 and FY 2026 OSD OP-5 budget submissions name the same-mission OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" while AARO continues to operate publicly under its own name (aaro.mil active, FOIA org chart still lists AARO). The structural relationship between AARO and AIC at primary-source level is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO); description prose carries the analysis.
 - id: or8
   added_date: '2026-04-30'
   organization_path: /organizations/ipmo
@@ -874,7 +858,6 @@ org_relationships:
   source:
     path: government/notre-dame-ipmo-memo-20220527.pdf
     location: 'p. 1, ¶1'
-  note: ''
 - id: or9
   added_date: '2026-04-30'
   organization_path: /organizations/odni
@@ -882,7 +865,6 @@ org_relationships:
   source:
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     location: 'DoDD 5143.01 § 3.c'
-  note: ''
 - id: or10
   added_date: '2026-04-30'
   organization_path: /organizations/sancorp-consulting
@@ -890,7 +872,6 @@ org_relationships:
   source:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'AARO contract HQ003422C0094 PWS Section 5'
-  note: Sancorp Consulting LLC is a prime contractor providing support services across multiple OUSD(I&S) subordinate offices including AARO and IPMO.
 - id: or11
   added_date: '2026-05-01'
   organization_path: /organizations/dmdpo
@@ -898,7 +879,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, DMDPO bullet
-  note: ''
 - id: or12
   added_date: '2026-05-01'
   organization_path: /organizations/osd-red-team
@@ -906,7 +886,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, OSD Red Team bullet
-  note: ''
 - id: or13
   added_date: '2026-05-01'
   organization_path: /organizations/scpo
@@ -914,7 +893,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, SCPO bullet
-  note: ''
 - id: or14
   added_date: '2026-05-01'
   organization_path: /organizations/cp-wmd
@@ -922,7 +900,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, CP/WMD bullet
-  note: ''
 - id: or15
   added_date: '2026-05-01'
   organization_path: /organizations/aic
@@ -930,7 +907,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, AIC bullet
-  note: AIC's FY 2026 OSD OP-5 mission language ("reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence") is the literal NDAA FY23 § 1683 statutory carveout unique to AARO. The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)"; the FY 2025 OSD OP-5 (March 11, 2024 release) was the first to substitute "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language; FY 2026 OSD OP-5 retains AIC. No public DoD announcement of an AARO renaming has been issued; aaro.mil website remains active under the AARO name. Pair with or7 (AARO, per Hicks establishment memorandum); structural relationship between the two is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO) and is currently described as separate subsidiaries until a primary-source resolution surfaces.
 - id: or16
   added_date: '2026-05-01'
   organization_path: /organizations/le-oversight-compliance-directorate
@@ -938,7 +914,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, Law Enforcement Oversight and Compliance Directorate bullet
-  note: 'Stand-up tense shift between FY 2025 OSD OP-5 (March 2024, future tense, "will lead, coordinate, and integrate") and FY 2026 OSD OP-5 (June 2025, present tense, "leads, coordinates, and integrates") attests operational status was achieved sometime between March 2024 and June 2025, well after the original 90-day deadline (~July 20, 2023).'
 - id: or17
   added_date: '2026-05-02'
   organization_path: /organizations/c-adi
@@ -946,7 +921,6 @@ org_relationships:
   source:
     path: government/osd-op5-fy25-20260501.pdf
     location: OSD OP-5 FY 2025, OUSD(I&S) program section, C-ADI bullet
-  note: 'Between FY 2025 OSD OP-5 (released March 2024, where C-ADI sat in the sub-office bullet list between SCPO and CP/WMD) and FY 2026 OSD OP-5 (released June 2025), C-ADI moved into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)" — administrative reorganization, not disestablishment. Establishment instrument not retrieved at primary-source level (FOIA-able to OUSD(I&S) Front Office for an establishment memo dated between March 2023 (FY24 OP-5 release) and March 2024 (FY25 OP-5 release)).'
 timeline:
 - id: t1
   added_date: '2026-04-30'
@@ -1168,7 +1142,6 @@ naming_quirks:
   location: 'historical references prior to NDAA FY2020 § 1621 (December 20, 2019)'
   source_path: government/pl-116-92-ndaa-fy2020.pdf
   resolution: preserve-as-sic-in-quotes
-  note: The position was formally titled "Under Secretary of Defense for Intelligence" (USD(I)) from establishment in 2002 through December 19, 2019. Section 1621 of P.L. 116-92 redesignated the position effective on enactment (December 20, 2019). Pre-rename primary sources (Clapper SAP packet, Vickers nomination, Lettre testimony) attest the USD(I) form. Use the contemporaneous form when quoting and the canonical USD(I&S) form for current references.
 - id: nq2
   added_date: '2026-04-30'
   observed: USW (Intelligence & Security)
@@ -1176,7 +1149,6 @@ naming_quirks:
   location: war.gov Office of the Secretary of War organizational structure listing
   source_path: government/wargov-office-of-secretary-of-war.html
   resolution: preserve-as-sic-in-quotes
-  note: Per EO 14347 Section 2(c), subordinate officials may use corresponding secondary titles such as Under Secretary of War in non-statutory contexts. The war.gov institutional listing uses USW (Intelligence & Security); statutory references per 10 U.S.C. § 137 retain the USD(I&S) form per EO 14347 Section 2(e).
 - id: nq3
   added_date: '2026-04-30'
   observed: AAITP
@@ -1184,7 +1156,6 @@ naming_quirks:
   location: Clapper SAP packet, throughout
   source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
   resolution: preserve-as-sic-in-quotes
-  note: The November 17, 2009 Clapper memorandum is an OCR-scan source (Acrobat 9.55 Paper Capture Plug-in) where "AATIP" extracted as "AAITP" — character-cluster transposition typical of OCR errors. The memorandum also writes the longer-form name "Advanced Aerospace Threat and Identification Program" — also "Identification" rather than "Identification" suggests the underlying name is correctly Advanced Aerospace Threat Identification Program. Preserved in verbatim quotes; canonical form used outside quotes.
 - id: nq4
   added_date: '2026-04-30'
   observed: AA WSAP
@@ -1192,7 +1163,6 @@ naming_quirks:
   location: Clapper SAP packet, throughout
   source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR-scan source has unintended whitespace inside the AAWSAP acronym (AA WSAP). Preserved in verbatim quotes.
 - id: nq5
   added_date: '2026-04-30'
   observed: 'DEfENSE PENTAGON'
@@ -1200,7 +1170,6 @@ naming_quirks:
   location: Clapper SAP packet letterhead
   source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR-scan letterhead extraction of "DEFENSE PENTAGON" produced the lowercase-f variant "DEfENSE". Preserved in verbatim letterhead quote.
 - id: nq6
   added_date: '2026-04-30'
   observed: ovember
@@ -1208,7 +1177,6 @@ naming_quirks:
   location: Hicks AARO establishment memorandum, throughout
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR-scan dropped the leading "N" from "November" in multiple places (e.g., "ovember 23, 2021"). Preserved in verbatim quotes if the affected passage is excerpted.
 - id: nq7
   added_date: '2026-04-30'
   observed: fulfi lled
@@ -1216,7 +1184,6 @@ naming_quirks:
   location: Hicks AARO establishment memorandum
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR-scan inserted whitespace inside "fulfilled" (rendered as "fulfi lled"). Preserved when excerpted in the AARO mission-statement quote.
 - id: nq8
   added_date: '2026-04-30'
   observed: CUl
@@ -1224,5 +1191,4 @@ naming_quirks:
   location: DODIG-2026-047 management advisory body
   source_path: government/dodig-2026-047-redacted-secure.pdf
   resolution: preserve-as-sic-in-quotes
-  note: OCR-extraction of CUI (Controlled Unclassified Information) acronym occasionally renders the trailing "I" as lowercase "l" (CUl). Preserved in verbatim quotes.
 rumors: []

@@ -36,9 +36,9 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 #### Other Named Personnel
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/jay-stratton`] | Senior civilian |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html | Stratton is named "former Office of Naval Intelligence senior civilian" verbatim in q5; the date of his ONI role is not directly stated in the primary sources cited for this organization |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/jay-stratton`] | Senior civilian |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |
 
 ---
 
@@ -133,11 +133,11 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/uaptf`] | other | government/blackvault-uap-security-classification-guide-20200416.pdf | UAP Task Force is the operating subject named alongside ONI in the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020, q1) and in Senate Report 116-233 (June 17, 2020, q4), which the Senate Select Committee on Intelligence frames as "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" |
-| [`/organizations/us-navy`] | parent | government/dni-gov-odni-preliminary-assessment-20210625.pdf | ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies (q2) — distinct from the "Navy" entry preceding it — attesting ONI as a Navy component |
-| [`/organizations/odni`] | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf | The June 25, 2021 Preliminary Assessment was drafted with input from Navy/ONI (q2); ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence (q3) |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/uaptf`] | other | government/blackvault-uap-security-classification-guide-20200416.pdf |
+| [`/organizations/us-navy`] | parent | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
+| [`/organizations/odni`] | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
 
 ---
 
@@ -145,11 +145,11 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| identifYing | identifying | government/blackvault-uap-security-classification-guide-20200416.pdf | Optical character extraction artifact in the BlackVault FOIA-released SCG PDF (Adobe Acrobat Paper Capture extraction); preserved in q1 verbatim as it appears in the extract |
-| ONn | ONI) | government/blackvault-uap-security-classification-guide-20200416.pdf | Optical character extraction artifact in the SCG PDF — closing parenthesis after "ONI" rendered as "n" in the text layer; not registered in any quote (the PR-field line is not used as a verbatim quote) |
-| Naval intelligence | Naval Intelligence | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription lower-cases "intelligence" in Dietrich's spoken phrase "Office of Naval Intelligence"; preserved in q6 verbatim |
+| Source Form | Canonical | Source |
+|---|---|---|
+| identifYing | identifying | government/blackvault-uap-security-classification-guide-20200416.pdf |
+| ONn | ONI) | government/blackvault-uap-security-classification-guide-20200416.pdf |
+| Naval intelligence | Naval Intelligence | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 
 ---
 

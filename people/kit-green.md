@@ -36,14 +36,14 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/organizations/cia`] | Senior Division Analyst for neurosciences; later Branch Chief; Deputy Division Director; Assistant National Intelligence Officer for Science and Technology | 1969 – 1985 | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html | The 1969-1985 period is the NCBI-attested figure; the PBS narrator separately attests a "twenty year career" as CIA investigative officer (a longer span), which the PBS-attested continuing post-1985 consultancy may account for. The divergence is preserved at quote level rather than resolved into a single affiliation period. |
-| [`/organizations/general-motors`] | Head of Life, Materials and Environmental Sciences / Biomedical Sciences Research; Executive Director Technology Intelligence / Global Technology Policy / Materials and Environmental Sciences Lab; Chief Technology Officer GM Asia Pacific Operations | 1985 – 2004 | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html | IRVA and NCBI give differing role titles for this tenure; the variations are preserved at quote level rather than reconciled into one title. The 1985-2004 GM tenure overlaps the Wayne State faculty role beginning 2002 — overlapping employment is the corpus-attested shape, not a contradiction. |
-| [`/organizations/national-academies`] | Founder of NRC Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER); Chair of 2008 Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research; Chair of the Board on Army Science and Technology; Lifetime National Associate | 1985 | news/irva-kit-green-wayback-20241212.html |  |
-| [`/organizations/wayne-state-school-of-medicine`] | Faculty member; Professor in Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences; later Assistant Dean (Asia Pacific) — preceded by executive director for emergent technology research for the SOM/DMC per NCBI (q5) | 2002 | news/irva-kit-green-wayback-20241212.html | The date of transition from the prior "executive director for emergent technology research" role to the current Assistant Dean position is not attested in the archived sources. The open period reflects the affiliation being active as of the IRVA Wayback snapshot date 2024-12-12. |
-| [`/organizations/chinese-academy-of-sciences`] | Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science |  | news/irva-kit-green-wayback-20241212.html | Concurrent with the Wayne State professorship — the two appointments are held jointly, not in sequence. Specific period start and end dates are not attested in the archived sources. |
-| [`/organizations/us-army`] | Chair, Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters |  | news/irva-kit-green-wayback-20241212.html | Specific period start and end dates are not attested in the archived sources; the IRVA bio dates the role only as "recently," placing it in a window before the IRVA page's last-edit date of 2021-07-21 per its schema.org metadata. |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/cia`] | Senior Division Analyst for neurosciences; later Branch Chief; Deputy Division Director; Assistant National Intelligence Officer for Science and Technology | 1969 – 1985 | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html |
+| [`/organizations/general-motors`] | Head of Life, Materials and Environmental Sciences / Biomedical Sciences Research; Executive Director Technology Intelligence / Global Technology Policy / Materials and Environmental Sciences Lab; Chief Technology Officer GM Asia Pacific Operations | 1985 – 2004 | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html |
+| [`/organizations/national-academies`] | Founder of NRC Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER); Chair of 2008 Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research; Chair of the Board on Army Science and Technology; Lifetime National Associate | 1985 | news/irva-kit-green-wayback-20241212.html |
+| [`/organizations/wayne-state-school-of-medicine`] | Faculty member; Professor in Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences; later Assistant Dean (Asia Pacific) — preceded by executive director for emergent technology research for the SOM/DMC per NCBI (q5) | 2002 | news/irva-kit-green-wayback-20241212.html |
+| [`/organizations/chinese-academy-of-sciences`] | Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science |  | news/irva-kit-green-wayback-20241212.html |
+| [`/organizations/us-army`] | Chair, Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters |  | news/irva-kit-green-wayback-20241212.html |
 
 ---
 
@@ -173,24 +173,24 @@ _Direct observation._
 
 ### Confirmed
 
-| Person | Relationship | Note |
-|---|---|---|
-| [`/people/hal-puthoff`] | CIA OSI program officer (Green) and SRI parapsychology cofounder (Puthoff) at the 1972-1973 SRI-CIA engagement inception; later co-consultants on Bigelow AAWSAP and Fugal Skinwalker projects |  |
-| [`/people/russell-targ`] | CIA OSI program officer (Green) and SRI parapsychology cofounder (Targ) at the 1972-1973 SRI-CIA engagement inception | Sequencing: per the Kress 1977 body narrative, Targ's April 1972 meeting with CIA OSI personnel preceded the June 17, 1972 Puthoff-to-Green letter — establishing Green at OSI as the CIA-side counterpart for the Targ-Puthoff SRI investigation from the program's inception. |
-| [`/people/robert-bigelow`] | Bigelow's AAWSAP DIA-funded project participant per Vice 2020 (q7) | The specific Green role, contracted scope, and tenure within AAWSAP are not detailed in the archived corpus beyond Vice's attestation that he was "involved in Bigelow's DIA project." |
-| [`/people/brandon-fugal`] | Scientific consultant on Fugal's post-2016 Skinwalker Ranch project; Fugal-Green friendship attested post-shutdown |  |
+| Person | Relationship |
+|---|---|
+| [`/people/hal-puthoff`] | CIA OSI program officer (Green) and SRI parapsychology cofounder (Puthoff) at the 1972-1973 SRI-CIA engagement inception; later co-consultants on Bigelow AAWSAP and Fugal Skinwalker projects |
+| [`/people/russell-targ`] | CIA OSI program officer (Green) and SRI parapsychology cofounder (Targ) at the 1972-1973 SRI-CIA engagement inception |
+| [`/people/robert-bigelow`] | Bigelow's AAWSAP DIA-funded project participant per Vice 2020 (q7) |
+| [`/people/brandon-fugal`] | Scientific consultant on Fugal's post-2016 Skinwalker Ranch project; Fugal-Green friendship attested post-shutdown |
 
 ---
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
-|---|---|---|---|---|---|---|
-| CIA Remote Viewing research program | First analyst and program manager (IRVA self-attested) | 1972 | self-attested | medium | news/irva-kit-green-wayback-20241212.html | The "first" characterization rests on self-attestation alone: it is Green's own framing in his IRVA member-organization speaker bio, and is not separately confirmed by Kress 1977, which attests his 1972-1973 OSI letter-recipient and memorandum-author roles but does not characterize him as "first" program manager. |
-| CIA SRI parapsychology investigation (precursor program to Stargate) | OSI / LSD-OSI program officer at the SRI-CIA engagement inception | 1972-06-17 – 1973-11-09 | primary-source | high | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Period end of 1973-11-09 reflects the last archived Kress 1977 attestation date, not a known role end; Green's continuing role beyond that date is attested only at narrative level by the IRVA bio ("first analyst and program manager for Remote Viewing research"), with no archived primary source pinpointing a Green-at-OSI date later than 1973-11-09. |
-| Fugal-era Skinwalker Ranch project (post-2016) | Scientific consultant | 2016 | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html | Vice attests the project was "shut down in 2014," but the chronological context of Fugal's 2016 purchase suggests that shutdown refers to Bigelow's AAWSAP-era project rather than the Fugal-era project. The specific scope of Green's Fugal-Skinwalker consultancy is not detailed beyond the consultancy framing. |
-| AAWSAP (Advanced Aerospace Weapon System Applications Program) | Scientific consultant (Vice-attested) |  | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html | Vice 2020 places Green as a participant in AAWSAP — Robert Bigelow's DIA-funded program — but does not detail his specific role, contracted scope, or AAWSAP tenure; nothing further anchors the role in the archived corpus. |
-| CIA biological terrorism and chemical warfare intelligence | CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances |  | on-record | medium | news/pbs-umbrella-assassin-green-interview-20260517.html | This CIA-work scope is reported by the PBS Umbrella Assassin interview page narrator, not stated by Green in the first person — the role rests on narrator attribution rather than a Green self-attestation. |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+| CIA Remote Viewing research program | First analyst and program manager (IRVA self-attested) | 1972 | self-attested | medium | news/irva-kit-green-wayback-20241212.html |
+| CIA SRI parapsychology investigation (precursor program to Stargate) | OSI / LSD-OSI program officer at the SRI-CIA engagement inception | 1972-06-17 – 1973-11-09 | primary-source | high | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| Fugal-era Skinwalker Ranch project (post-2016) | Scientific consultant | 2016 | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html |
+| AAWSAP (Advanced Aerospace Weapon System Applications Program) | Scientific consultant (Vice-attested) |  | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html |
+| CIA biological terrorism and chemical warfare intelligence | CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances |  | on-record | medium | news/pbs-umbrella-assassin-green-interview-20260517.html |
 
 ---
 
@@ -204,12 +204,12 @@ Green holds the National Intelligence Medal and is a Fellow in the American Acad
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (the date of Puthoff's letter to Green at OSI) as "'1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17, preserved verbatim per OCR-scan source-form-preservation discipline. |
-| T 1(. | K. | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "K." (initial of "K. Green") as "T 1(." — typewritten-font misread of capital K as the "T 1(" character cluster, with the closing period dropped, preserved verbatim per OCR-scan source-form-preservation discipline. The source line continues across a line wrap in the extract. |
-| Rerord | Record | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "c" as "r" in the word "Record" yielding "Rerord" — typewritten-font OCR misread of the lowercase c glyph, preserved verbatim per OCR-scan source-form-preservation discipline. |
-| Wayne State School of Medicine (SOM) in Beijing, China | Wayne State School of Medicine (Detroit) — Beijing/Asia-Pacific program | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html | The 2008 NCBI bio writes "assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China" — the Wayne State School of Medicine is headquartered in Detroit, Michigan (per the IRVA bio); the "in Beijing, China" qualifier reflects Green's Asia Pacific assistant dean role being based in Beijing, not a relocation of the school itself. The IRVA bio writes "Wayne State School of Medicine in Detroit, Michigan" without the Beijing qualifier. The two attestations are consistent — Wayne State SOM is in Detroit and Green's Asia Pacific role operates from Beijing — but the NCBI phrasing reads as if Wayne State itself is in Beijing. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| T 1(. | K. | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| Rerord | Record | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| Wayne State School of Medicine (SOM) in Beijing, China | Wayne State School of Medicine (Detroit) — Beijing/Asia-Pacific program | government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html |
 
 ---
 

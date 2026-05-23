@@ -35,30 +35,30 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |  |
-| [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html |  |
-| [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html | Ochoa is also listed as a Board Member in the ProPublica section for the fiscal year ending Dec. 2024. |
-| [`/people/steven-walker`] | Board Member (page listing 2024-01-18); Vice President and Chief Technology Officer Lockheed Martin (retired) and former DARPA director | 2024-01-18 | news/sri-com-board-of-directors-20260515.html | The period_start follows the Our People page listing date; a separate start date for the board director role is not stated on the page. |
-| [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html | David Parekh is named Chief Executive Officer, SRI on the Our People page with a listing date of December 2, 2021 (in both the Executive Team and Board of Directors sections). A specific Parekh start date for the CEO role is not stated on either sri.com page. |
-| [`/people/david-motley`] | Board Chair |  | news/propublica-sri-international-941160950-20260515.html | David Motley is named Board Chair in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 ($110,000 listed compensation). The same source lists Motley as Board Member in the sections for fiscal years ending Dec. 2023 and earlier, with $67,500 and lower listed compensation — the role transition to Board Chair occurred between the Dec. 2023 and Dec. 2024 reporting periods; the specific transition date is not stated on the ProPublica page. |
-| [`/people/ellen-pawlikowski`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | Pawlikowski is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023 and Dec. 2022. The specific board start date is not stated on the ProPublica page. |
-| [`/people/john-j-young-jr`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html | Young is also listed as a Board Member in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. The specific board start date is not stated on the ProPublica page. |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |
+| [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html |
+| [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html |
+| [`/people/steven-walker`] | Board Member (page listing 2024-01-18); Vice President and Chief Technology Officer Lockheed Martin (retired) and former DARPA director | 2024-01-18 | news/sri-com-board-of-directors-20260515.html |
+| [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html |
+| [`/people/david-motley`] | Board Chair |  | news/propublica-sri-international-941160950-20260515.html |
+| [`/people/ellen-pawlikowski`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html |
+| [`/people/john-j-young-jr`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html |
 
 #### Other Named Personnel
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/douglas-engelbart`] | Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |  |
-| [`/people/hal-puthoff`] | Cofounder of the SRI investigation of psychic abilities (with Russell Targ); program head per DIA STAR GATE Project Overview | 1972 – 1990 | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the cofounder period recorded in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years"; the SRI program was discontinued in 1990. The period_start/period_end fields follow the broader cofounder period per Targ's ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics. |
-| [`/people/ingo-swann`] | Foundational SRI remote-viewing subject (1972); New York artist and psychic | 1972 | news/irva-targ-russell-wayback-20250123.html |  |
-| [`/people/russell-targ`] | Cofounder of the SRI investigation of psychic abilities (with Harold E. Puthoff) | 1972-04 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Targ had recently joined the Stanford Research Institute (SRI) as of the April 1972 meeting with CIA personnel from the Office of Scientific Intelligence. Targ is cofounder of the Stanford Research Institute investigation of psychic abilities in the 1970s and 1980s. |
-| [`/people/pat-price`] | Foundational SRI remote-viewing subject (1973); retired police commissioner | 1973 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, Pat Price was the third sensitive subject at SRI; per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner" who "showed us how to do this with great reliability and accuracy". |
-| [`/people/hella-hammid`] | SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer | 1974 – 1984 | news/irva-targ-russell-wayback-20250123.html |  |
-| [`/people/edwin-may`] | Researcher in the SRI program (mid-1970s onward); led 1988 internal SRI analysis of 1973-1988 experiments | 1975 – 1990 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time. period_start '1975' is a single year within the mid 1970s the source says; a specific year is not stated. |
-| [`/people/suresh-sunderrajan`] | Chief Financial Officer (previously President, Commercialization) | 2024-01-19 | news/propublica-sri-international-941160950-20260515.html | ProPublica lists Sunderrajan as "President, Commercialization" in the section for the fiscal year ending Dec. 2023 — the prior role recorded before the transition to Chief Financial Officer. |
-| [`/people/john-mcintire`] | Chief Legal Officer |  | news/propublica-sri-international-941160950-20260515.html | McIntire is also listed as Chief Legal Officer in the ProPublica sections for the fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years. The ProPublica page renders the name as "John Mcintire" for the fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — a minor variation in the name form across the IRS Form 990 filings. The specific role start date is not stated on the ProPublica page. |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/douglas-engelbart`] | Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference | 1968 | news/sri-com-about-history-1960s-wayback-2004.html |
+| [`/people/hal-puthoff`] | Cofounder of the SRI investigation of psychic abilities (with Russell Targ); program head per DIA STAR GATE Project Overview | 1972 – 1990 | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| [`/people/ingo-swann`] | Foundational SRI remote-viewing subject (1972); New York artist and psychic | 1972 | news/irva-targ-russell-wayback-20250123.html |
+| [`/people/russell-targ`] | Cofounder of the SRI investigation of psychic abilities (with Harold E. Puthoff) | 1972-04 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| [`/people/pat-price`] | Foundational SRI remote-viewing subject (1973); retired police commissioner | 1973 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| [`/people/hella-hammid`] | SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer | 1974 – 1984 | news/irva-targ-russell-wayback-20250123.html |
+| [`/people/edwin-may`] | Researcher in the SRI program (mid-1970s onward); led 1988 internal SRI analysis of 1973-1988 experiments | 1975 – 1990 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |
+| [`/people/suresh-sunderrajan`] | Chief Financial Officer (previously President, Commercialization) | 2024-01-19 | news/propublica-sri-international-941160950-20260515.html |
+| [`/people/john-mcintire`] | Chief Legal Officer |  | news/propublica-sri-international-941160950-20260515.html |
 
 ---
 
@@ -675,14 +675,14 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/stanford-university`] | parent | news/sri-international-timeline-of-innovation-20260515.html | Stanford University founded SRI as the Stanford Research Institute in 1946 (q3); SRI became independent from Stanford in 1970 (q2, q3). Specific circumstances of the 1970 severance are not attested by the archived sri.com sources. |
-| [`/organizations/sarnoff-corp`] | subsidiary | news/sri-international-about-20260515.html | SRI acquired Sarnoff Corp. (formerly RCA Labs) in 1987 per q2 and q3. Sarnoff Corp. was originally a research arm of RCA; the corporate-history details of the Sarnoff acquisition are not attested by archived sources. |
-| [`/organizations/parc`] | subsidiary | news/sri-international-timeline-of-innovation-20260515.html | In 2023 SRI received the Palo Alto Research Center (PARC) "as a donation" per q3. Donating party not attested in the archived sri.com sources (PARC was a subsidiary of Xerox prior to the donation per public record but Xerox is not named on the sri.com pages). |
-| [`/organizations/cia`] | contracting-agency | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972; the named CIA OSI officer at program inception was K. Green ([`/people/kit-green`]) — recipient of Puthoff's June 1972 letter from SRI per q36, and (per p. 10 footnote of the same Kress paper) author of a 9 November 1973 Memorandum for the Record at LSD/OSI on Verification of Remote Viewing Experiments at Stanford Research Institute. Per the 1993 DIA STAR GATE Project Overview (q12b), CIA funding to SRI was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements with occasional support from various R&D organizations. |
-| [`/organizations/dia`] | contracting-agency | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | Per the 1993 DIA STAR GATE Project Overview (q12b), subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements with occasional support from various R&D organizations after CIA funding was discontinued in 1975. The same source attests that in the late 1970s HQDA/INSCOM established a small unit for "development of a community capability" in RV; that unit was transferred to DIA in 1986 as the SUN STREAK Special Access Program. FY 1991 Congressional direction for DIA established the successor research at SAIC. |
-| [`/organizations/saic`] | successor | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Science Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI. The DIA source writes "Systems Applications International Corporation" — the company's canonical name is "Science Applications International Corporation" per the 1995 AIR Evaluation in this artifact's corpus; the DIA-source error is recorded as naming_quirk nq12 and preserved verbatim in q12. |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/stanford-university`] | parent | news/sri-international-timeline-of-innovation-20260515.html |
+| [`/organizations/sarnoff-corp`] | subsidiary | news/sri-international-about-20260515.html |
+| [`/organizations/parc`] | subsidiary | news/sri-international-timeline-of-innovation-20260515.html |
+| [`/organizations/cia`] | contracting-agency | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| [`/organizations/dia`] | contracting-agency | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| [`/organizations/saic`] | successor | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
 
 ---
 
@@ -690,22 +690,22 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| lasqr | laser | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads "Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff" where the canonical form is "Two laser physicists". The OCR engine read "e" as "q" — common typewritten-font OCR misread. Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline. |
-| parapsv- chology | parapsychology | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The PDF renders "parapsychology" with a typewritten-font OCR misread "v" for "y" yielding "parapsvchology", further fragmented by PDF end-of-line word-wrap into "parapsv-" / "chology" across two source lines. The pdftotext output and the verbatim-quote check normalize the newline to a space, yielding "parapsv- chology" as the comparison form. Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline. |
-| scientir'ic | scientific | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "fi" ligature as "r'i" (apostrophe-i sequence) yielding "scientir'ic" where the canonical form is "scientific". Preserved verbatim in q7 quote text per OCR-scan source-form-preservation discipline. |
-| ORO | ORD | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine consistently reads CIA Office of Research and Development abbreviation "ORD" as "ORO" — typewritten-font OCR misread of "D" as "O". The source paper expands the abbreviation explicitly in q8: "Office of Research and Development (ORO)" — the parenthetical expansion confirms the misread. Recurring across q8 and q9. Preserved verbatim per OCR-scan source-form-preservation discipline. |
-| 19i2 | 1972 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "7" as "i" in the year "1972" yielding "19i2" — typewritten-font OCR misread on the digit-7 glyph. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline. |
-| tum | turn | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q8 quote text per OCR-scan source-form-preservation discipline. |
-| SRI-International | SRI International | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA's own document varies: Figure 1 of the same document uses "SRI INTERNATIONAL" without the q11 hyphenation (see q12c for the verbatim Figure 1 row attestation; the Figure 1 row carries a separate pdftotext-default-extraction artifact recorded as nq13). Preserved verbatim in q11 quote text. |
-| a~ailable | available | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "v" as "~" (tilde) in "available" yielding "a~ailable" — typewritten-font OCR misread on the lowercase v glyph. Preserved verbatim in q16 quote text per OCR-scan source-form-preservation discipline. |
-| 1020 | 10^20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^20" as the digit 10 with a superscript 20; pdftotext flattens this to baseline "1020" without preserving the superscript relationship. Preserved verbatim in q22 quote text. The same phenomenon affects "10^-20" → "10-20" in the next clause of q22 (see nq11). |
-| 10-20 | 10^-20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^-20" as the digit 10 with a superscript -20; pdftotext flattens this to baseline "10-20" without preserving the superscript relationship. Preserved verbatim in q22 quote text. Companion to nq10 ("1020" for "10^20") in the same passage. |
-| Systems Applications International Corporation | Science Applications International Corporation | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The 1993 DIA STAR GATE Project Overview names the SAIC contractor as "Systems Applications International Corporation" in multiple passages (p. 7 and p. 10 ¶3) — a documented writing error in the DIA document. The canonical company name is "Science Applications International Corporation", attested in this artifact's corpus by the 1995 AIR Evaluation (scratch lines 764, 824, 1295 — "government sponsored research conducted at Stanford Research Institute, later known as SRI International, and at Science Applications International Corporation, known as SAIC"). Preserved verbatim in q12 quote text per source-form-preservation discipline. Companion to nq8 (DIA's "SRI-International" hyphenated form) — both errors in the same DIA document. |
-| --SRI | -- SRI | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | pdftotext-default extraction artifact in the DIA STAR GATE Project Overview Figure 1 table. The source PDF page 7 visually renders each Figure 1 row as date-range, multi-space column gap, two typewriter hyphens, a single space, then the lab name and location (verified against the rendered PDF page image). Default pdftotext extraction collapses the multi-space column gap AND the single space between the two hyphens and SRI, producing "--SRI" with no intervening space — the verbatim form preserved in q12c. The two hyphens in the source are literal hyphen characters (not an em-dash), consistent with the 1993 source's typewriter format. Preserved verbatim in q12c per source-form-preservation discipline. The same extraction-artifact phenomenon affects every other Figure 1 row but only the SRI row is preserved as a quote in q12c. |
-| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (Puthoff's letter date in q36) as "'1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17. Preserved verbatim in q36 quote text per OCR-scan source-form-preservation discipline. |
-| International Augmentation Research Center | Augmentation Research Center | government/solfoundation-vallee-people-page-20260517.html | Sol Foundation's "People" bio page for Jacques Vallée writes "Stanford Research Institute’s International Augmentation Research Center" in q37 — the historical name of Doug Engelbart's SRI division is "Augmentation Research Center" (ARC), not "International Augmentation Research Center". "International" appears to be Sol's descriptive insertion, likely conflating with the post-1977 SRI rebrand "SRI International". Preserved verbatim in q37 per source-form-preservation discipline. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| lasqr | laser | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| parapsv- chology | parapsychology | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| scientir'ic | scientific | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| ORO | ORD | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| 19i2 | 1972 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| tum | turn | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| SRI-International | SRI International | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| a~ailable | available | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| 1020 | 10^20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |
+| 10-20 | 10^-20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |
+| Systems Applications International Corporation | Science Applications International Corporation | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| --SRI | -- SRI | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| International Augmentation Research Center | Augmentation Research Center | government/solfoundation-vallee-people-page-20260517.html |
 
 ---
 
@@ -729,7 +729,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/john-j-young-jr`]
 - [`/people/john-mcintire`]
 - [`/people/kenneth-kress`]
-- [`/people/kit-green`]
 - [`/people/pat-price`]
 - [`/people/raymond-hyman`]
 - [`/people/russell-targ`]

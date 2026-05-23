@@ -41,11 +41,11 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] | KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher. |
-| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] | WEAPONIZED co-host with George Knapp; primary in-studio questioner. |
-| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director at DIA; Kona Blue lead per his own self-attestation in this transcript. The auto-caption renders his surname correctly through most of this episode (Lacatski / Dr. Lacatski); one variant "Dr. Kitaski" registered in naming_quirks. |
+| Name | Role | Node Link |
+|---|---|---|
+| George Knapp | Co-Host | [`/people/george-knapp`] |
+| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
 
 ---
 
@@ -276,16 +276,16 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| AASAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AAWSAP" as "AASAP" throughout PART 1. Preserved as it appears. |
-| AOSAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "AOSAP" in the closing Corbell question about achieving levitating craft. Preserved as it appears. |
-| Bass | BAASS | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "BAASS" as "Bass" in Lacatski's statement that "Bass was up to speed so fast." Preserved as it appears. |
-| Column | Colm | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "Column" in Lacatski's reference to Kelleher having written about private money "in the rear portions of Skinwalkers at the Pentagon." Preserved as it appears. |
-| Kitaski | Lacatski | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "Lacatski" as "Kitaski" in Corbell's reference to "Dr. Kitaski, get in trouble" about the books-vs-Congress framing. Preserved as it appears. |
-| Arrow | AARO | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AARO" as "Arrow" in multiple Corbell turns about AARO's role and behavior. Preserved as it appears. |
-| Tar O'Toole | Tara O'Toole | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Tara O'Toole" as "Tar O'Toole" in Corbell's question about Lacatski's meeting with her. Preserved as it appears. |
-| Walker | Skinwalker | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Skinwalker" as "Walker" / "books, Walker" in Corbell's vampire-and-Skinwalker remark. Preserved as it appears. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| AASAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| AOSAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Bass | BAASS | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Column | Colm | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Kitaski | Lacatski | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Arrow | AARO | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Tar O'Toole | Tara O'Toole | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Walker | Skinwalker | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 
 ---
 

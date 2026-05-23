@@ -46,17 +46,17 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 
 #### Witnesses — Institutional Testimony
 
-| Participant | Role | Source | Note |
-|---|---|---|---|
-| [`/people/sean-kirkpatrick`] | Witness — Director, All-domain Anomaly Resolution Office (sole witness in the open session) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Kirkpatrick was the sole open-session witness; no swearing-in is recorded in the open-session transcript, so oath status is unknown — see witnesses_testimony entry wt1. |
+| Participant | Role | Source |
+|---|---|---|
+| [`/people/sean-kirkpatrick`] | Witness — Director, All-domain Anomaly Resolution Office (sole witness in the open session) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 
 #### Committee Members
 
-| Participant | Role | Source | Note |
-|---|---|---|---|
-| [`/people/kirsten-gillibrand`] | Chairwoman, Subcommittee on Emerging Threats and Capabilities (New York); presiding | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |  |
-| [`/people/joni-ernst`] | Ranking Member, Subcommittee on Emerging Threats and Capabilities (Iowa) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |  |
-| [`/people/jacky-rosen`] | Senator (Nevada); Subcommittee member | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |  |
+| Participant | Role | Source |
+|---|---|---|
+| [`/people/kirsten-gillibrand`] | Chairwoman, Subcommittee on Emerging Threats and Capabilities (New York); presiding | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
+| [`/people/joni-ernst`] | Ranking Member, Subcommittee on Emerging Threats and Capabilities (Iowa) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
+| [`/people/jacky-rosen`] | Senator (Nevada); Subcommittee member | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 
 ---
 
@@ -177,9 +177,9 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 
 ## Witnesses & Testimony
 
-| Witness | Oath Status | Transcript | Written Testimony | Note |
-|---|---|---|---|---|
-| [`/people/sean-kirkpatrick`] | unknown | [`/transcripts/2023-04-19-sasc-kirkpatrick`] | [`/documents/written-testimony-kirkpatrick-2023`] | The open-session stenographic transcript records no swearing-in moment; SASC oversight hearings vary in whether the chair administers an oath, and any swearing-in for the closed session that preceded the open session is not in the open record. Kirkpatrick's pre-hearing Statement for the Record was filed as written testimony (PDF metadata creation 2023-04-18 18:28 EDT). |
+| Witness | Oath Status | Transcript | Written Testimony |
+|---|---|---|---|
+| [`/people/sean-kirkpatrick`] | unknown | [`/transcripts/2023-04-19-sasc-kirkpatrick`] | [`/documents/written-testimony-kirkpatrick-2023`] |
 
 ---
 
@@ -187,10 +187,10 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| USDINS | USD(I&S) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Alderson Court Reporting stenographer rendered the spoken acronym "USD(I&S)" (Under Secretary of Defense for Intelligence and Security) phonetically as "USDINS" throughout the open-session transcript. Kirkpatrick's pre-hearing written Statement for the Record uses the canonical "USD(I&S)" form. Preserved as it appears in the stenographic transcript. |
-| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | Senate stenographic convention applies "Mr." / "Ms." prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as "Dr. Kirkpatrick"; the speaker-tag prefix "Mr. Kirkpatrick:" is the stenographer's rendering convention. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| USDINS | USD(I&S) | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
+| Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 
 ---
 

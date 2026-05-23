@@ -43,9 +43,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/james-holly`] | Acting Director | 2022-03 | government/notre-dame-ipmo-memo-20220527.pdf |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/james-holly`] | Acting Director | 2022-03 | government/notre-dame-ipmo-memo-20220527.pdf |
 
 ---
 
@@ -290,19 +290,19 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/ousd-is`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |  |
-| [`/organizations/dod`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |  |
-| [`/organizations/aaro`] | partner | government/osd-op5-fy24-20260501.pdf |  |
-| [`/organizations/dmdpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/osd-red-team`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/scpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/cp-wmd`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/aic`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt |  |
-| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |  |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/ousd-is`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |
+| [`/organizations/dod`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |
+| [`/organizations/aaro`] | partner | government/osd-op5-fy24-20260501.pdf |
+| [`/organizations/dmdpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/osd-red-team`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/scpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/cp-wmd`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/aic`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt |
+| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |
 
 ---
 
@@ -314,8 +314,6 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 **Circulates in:** SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (May 27, 2023) — description prose names Premier Enterprise Solutions, LLC as the awardee
 
-**Primary-source refutation:** USAspending HQ003423C0061 record (already in IPMO primary_sources) attests Sancorp Consulting, LLC (recipient_uei GRYKNJ8BGFC8) as the actual awardee, $3,021,082.38 obligated, signed 2023-05-25. The same SAMDaily / fbodaily.com archive page's structured awardee field also lists Sancorp Consulting LLC — the prose description naming Premier is a clerical error inconsistent with the page's own structured field. Sancorp's IPMO follow-on chain (HQ003422C0064, HQ003423C0061, HQ003424C0046) is consistently attested across USAspending records, Sancorp's own Past Performance page, and Sancorp's Company News. Premier Enterprise Solutions, LLC has no documented IPMO contract; Premier's OUSD(I&S) work is at EXDIR per GAO B-422985 (2025).
-
 ---
 
 ## Public-Record Claims Without Primary Source
@@ -326,18 +324,16 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** Klippenstein (The Intercept, May 17, 2023) — "Inside The Pentagon's New Perception Management Office"; Webb (MintPress News, June 29, 2023); Klarenberg (multiple outlets, 2023); Wikipedia "Influence and Perception Management Office" article
 
-**Investigator note:** No primary source — including Holly's Notre Dame memo, the IPMO PWS, the NSI 23-S-3438 IPMO 101 slides, the NSI Speaker Series page, and OSD OP-5 FY 2023 / FY 2024 / FY 2025 / FY 2026 — names a predecessor office. Holly's NSI Speaker Series talk references a "two-decade institutional debate among military and civilian leaders" about consolidating influence-related governance, but does not name OSI or any other named predecessor at primary-source level. Claims that IPMO is a successor to OSI (Office of Strategic Influence, 2001-2002) or to subsequent Strategic Communication coordinator roles are journalistic / historiographic, not documented institutional succession. Recorded here per fabrication-prevention discipline so a future contributor does not unconsciously recirculate the lineage claim into node prose.
-
 ---
 
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Obiectives | Objectives | government/foia-23-f-0906-sancorp-ipmo-pws.pdf | OCR artifact in PWS section header (extraction_type: ocr-scan per manifest); body text of §1.3 reads cleanly. Quote q7 cites the body text only and is unaffected by this header artifact. |
-| Kimmidge | Kimmage | news/defense-one-sof-week-oie-panel-20240524.html | Defense One spells Daniel Kimmage's surname "Kimmidge" verbatim throughout the article. Canonical spelling "Kimmage" attested by State Department official sources (state.gov/people/daniel-kimmage), Daniel K. Inouye Asia-Pacific Center for Security Studies, govexec.com, and Washington Institute. Quote q17 preserves Defense One's "Kimmidge" spelling within its surrounding text where it appears. Cross-reference to /people/daniel-kimmage uses canonical form. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Obiectives | Objectives | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |
+| Kimmidge | Kimmage | news/defense-one-sof-week-oie-panel-20240524.html |
 
 ---
 

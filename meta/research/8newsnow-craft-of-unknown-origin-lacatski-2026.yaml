@@ -48,7 +48,6 @@ speakers:
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[0:16]'
-  note: KLAS-TV / 8 News Now Las Vegas chief investigator; primary narrator-anchor of the segment; book co-author with Lacatski.
 - id: s2
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -57,7 +56,6 @@ speakers:
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[0:53]'
-  note: Former AAWSAP director at DIA; speaks directly on-camera with Knapp; surname renders canonically as "Lacatski" in this segment.
 - id: s3
   added_date: '2026-05-17'
   name: Anchor
@@ -66,7 +64,6 @@ speakers:
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[5:08]'
-  note: 'Unnamed studio anchor closing the segment ("Does it get more interesting than a George Knapp report?"); anonymized in the transcript.'
 quotes:
 - id: q1
   speaker_id: s2
@@ -142,4 +139,3 @@ naming_quirks:
   location: '[0:38], [0:46], [1:36], [1:42], [3:26], [4:25]'
   source_path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   resolution: disputed
-  note: 'The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski''s own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-096-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-15-advanced-space-propulsion`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment ''AATIP'' framing diverges from Lacatski''s own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources.'

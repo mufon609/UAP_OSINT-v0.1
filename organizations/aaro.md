@@ -84,17 +84,17 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08-26 | government/defense-gov-kosloski-appointment-20240826.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08-26 | government/defense-gov-kosloski-appointment-20240826.html |
 
 #### Deputy Leadership
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/tim-phillips`] | Deputy Director | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
-| [`/people/tim-phillips`] | Acting Director | 2023-12 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/tim-phillips`] | Deputy Director | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf |
+| [`/people/tim-phillips`] | Acting Director | 2023-12 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |
 
 ---
 
@@ -1110,17 +1110,17 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
-| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html | AOIMSG renaming and scope expansion quoted verbatim in q5. |
-| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Disestablishment of the UAPTF and transition of its data, analysis, or other relevant material to the AARO directed verbatim in q11a. |
-| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Memorandum direction — establishment in coordination with the Director of National Intelligence (DNI) |
-| [`/organizations/ousd-is`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Establishment directive to the USD(I&S) quoted verbatim in q11. Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance while operational reporting transitioned to the Deputy Secretary of Defense (per 50 U.S.C. § 3373 and the DefenseScoop reporting at q57/q58), so this parent edge is administrative rather than operational. |
-| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt | AARO Support Services contract scope quoted verbatim in q13 (HQ003422C0094) and q12 (the Congressional Affairs, Public Affairs, and FOIA Support task area). Field data not carried by a structured contracts surface on this node: prime contracts HQ003422C0094 (signed 2022, \$4,061,786.51) and follow-on HQ003424C0096 (signed 2024, \$3,471,829.40, per usaspending-hq003424c0096.txt). The Performance Work Statement task-area enumeration is on an OCR-scanned source (blackvault-sancorp-23-f-1114-aaro-pws.pdf) with no clean-text sibling, so it is not promotable to a verbatim quote. |
-| [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Washington Headquarters Services Acquisition Directorate (Issue By DoDAAC HQ0034) is the contracting subtier agency that issues AARO's support-services contracts on behalf of OUSD(I&S), at 4800 Mark Center Drive, Suite 09F09, Alexandria VA; Pay Official DoDAAC HQ0768. These SF 33 Block 7 / Routing Data Table fields sit on an OCR-scanned source (blackvault-sancorp-23-f-1114-aaro-pws.pdf) whose page-1 issuing-office block extracts as corrupted text with no clean-text sibling, so they are not promotable to a verbatim quote. |
-| [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | AAROEXEC is the AARO Executive Council, renamed by the Hicks AARO establishment memo from the predecessor AOIMEXEC. Per the Hicks memo, the mission of the AAROEXEC is to provide oversight and direction to the AARO. Distinct from the parent USD(I&S) reporting line; AAROEXEC is the senior governance body that reviews AARO direction. |
-| [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf | Influence and Perception Management Office. Sister sub-office under the same OUSD(I&S) administrative parent per FY 2026 OSD OP-5 (which lists IPMO alongside DMDPO, OSD Red Team, SCPO, CP/WMD Office, AIC, and the Law Enforcement Oversight and Compliance Directorate as funded OUSD(I&S) sub-offices). Sancorp Consulting holds prime contracts at both AARO (HQ003422C0094, signed September 1, 2022) and IPMO (HQ003422C0064, PWS dated April 25, 2022) — both 8(a) sole-source procurements issued by the same Washington Headquarters Services Acquisition Directorate three months apart. |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html |
+| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/ousd-is`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt |
+| [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
+| [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
 
 ---
 
@@ -1132,13 +1132,9 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** Circulating in public discourse attributed to unnamed sources and to commentary accompanying the November 2023 departure announcement
 
-**Investigator note:** The Hicks statement is the only primary-source account of the departure's framing surfaced in the 11-source corpus here; absent conflicting primary evidence, the announcement framing stands as the authoritative public record
-
 ### "AARO's investigatory scope was narrowed or constrained by DoD leadership to exclude access to classified programs that would have contained evidence of UAP reverse-engineering activities"
 
 **Circulates in:** Widely referenced in public UAP discourse and in commentary on the HRR Vol I findings; Explicit claims attributed to witnesses at 2023-07-26 House Oversight hearing and subsequent testimony that is archived in this repository
-
-**Investigator note:** AARO's own primary sources assert adequate investigatory access; counter-claims live in other archived primary sources. The disagreement is a cross-node analytical finding rather than a gap in AARO's primary record
 
 ---
 
@@ -1146,13 +1142,13 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| All-domain | All-Domain | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | The Hicks establishment memo and the first DoD press release use lowercase 'd' in "All-domain Anomaly Resolution Office". Subsequent DoD press releases (Kirkpatrick departure, Kosloski appointment) use capital 'D' — "All-Domain Anomaly Resolution Office". Both forms appear in source and are preserved verbatim in the quoted passages. |
-| stand-up | stand up | government/media-defense-gov-kirkpatrick-biography-20220720.pdf | Kirkpatrick biography uses hyphenated "stand-up" as a verb form. Description prose now matches source verbatim. |
-| fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | The Hicks memorandum is a text-native PDF, but the source text layer encodes "fulfilled" with an internal space — both `pdftotext` (default) and `pdftotext -layout` extract the literal token "fulfi lled". The visible memorandum reads "fulfilled". Same shape as the `extraction-lossy` manifest category (text layer present, not OCR'd, but pdftotext yields artifacts — see `meta/conventions.md` "Statements as the universal evidentiary primitive" and `meta/schema.yaml::manifest_entry.extraction_type_values`); the verbatim quote in description prose preserves the source extract as received. A clean `.txt` sibling per the `extraction-lossy` sibling discipline could close this at the manifest layer. |
-| Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | The Hicks memo uses "Airborne Object Identification and Management Group" (drops "Synchronization") when referring to the original November 2021 memorandum title. The AOIMSG press release and its own body use the full "Airborne Object Identification and Management Synchronization Group (AOIMSG)" form. Both are source-attested; quoted passages preserve verbatim. |
-| Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/defense-gov-aaro-establishment-20220720.html | The DoD press release announcing AARO establishment also drops "Synchronization" from the AOIMSG full name — the same variant tracked at nq2 for the Hicks establishment memo. Both primary sources carry the dropped form; q5 preserves the press release form verbatim. The full canonical name "Airborne Object Identification and Management Synchronization Group" appears in body description prose and in the AOIMSG establishment press release (separate source). |
+| Source Form | Canonical | Source |
+|---|---|---|
+| All-domain | All-Domain | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| stand-up | stand up | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/defense-gov-aaro-establishment-20220720.html |
 
 ---
 
@@ -1160,9 +1156,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| 170 meters away from the plume | 170 kilometers from the volcano | government/armed-services-senate-gov-aaro-case-slides-20241119.pdf | Mt. Etna 2018 case distance figure differs between two same-day primary sources. AARO unclassified slide deck (created Nov 18, 2024 5:24 PM EST) states the object was a balloon "approximately 170 kilometers from the volcano" (slide 6). The SASC stenographic transcript records Kosloski's oral testimony as "170 meters away from the plume" (transcript page 7-line 886 of stenographic record). Both are AARO-attributed primary sources from the November 19, 2024 SASC hearing. The repository preserves both verbatim quotes and does not adjudicate which figure is correct; the slide deck represents AARO's pre-prepared written attestation while the transcript captures the spoken oral testimony. |
+| Position | Counterpart | Source |
+|---|---|---|
+| 170 meters away from the plume | 170 kilometers from the volcano | government/armed-services-senate-gov-aaro-case-slides-20241119.pdf |
 
 ---
 

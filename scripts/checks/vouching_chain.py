@@ -2,7 +2,7 @@
 
 Present on whistleblower person artifacts. Each entry: required
 {voucher_path, attestation, source}, optional {evidentiary_basis,
-confidence, note}.
+confidence}.
 
 Closed enums shared with ``program_involvement`` (the toolkit's
 common evidentiary-quality classification across credibility-

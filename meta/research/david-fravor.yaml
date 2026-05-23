@@ -250,8 +250,8 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /people/alex-dietrich
   observation_type: testimonial
+  confirms: 'Other F/A-18F pilot in Fravor''s 2-plane flight; Fravor''s testimony confirms the wingman also lost visual at intercept'
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Other F/A-18F pilot in Fravor's 2-plane flight; Fravor's testimony confirms the wingman also lost visual at intercept
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 49-50, 71-74
@@ -259,8 +259,8 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /organizations/uss-princeton
   observation_type: instrumented
+  confirms: 'Aegis SPY-1 radar observed the object for two weeks prior and tracked the reacquisition 60 miles east of the CAP point after the airborne encounter'
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Aegis SPY-1 radar observed the object for two weeks prior and tracked the reacquisition 60 miles east of the CAP point after the airborne encounter
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 28-31, 50-53
@@ -268,8 +268,8 @@ corroboration_items:
   added_date: '2026-04-19'
   observer_path: /media/flir1-video
   observation_type: documentary
+  confirms: 'Approximately 90-second targeting-pod video captured by a follow-on Nimitz crew immediately after Fravor''s flight; publicly released by the USG in 2017'
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Approximately 90-second targeting-pod video captured by a follow-on Nimitz crew immediately after Fravor's flight; publicly released by the USG in 2017
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 57-62
@@ -284,7 +284,6 @@ naming_quirks:
   location: line 79
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node).
 - id: nq2
   added_date: '2026-04-23'
   observed: Leslie Keane
@@ -292,5 +291,4 @@ naming_quirks:
   location: line 81
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Canonical form "Leslie Kean" matches her own byline on the December 2017 NYT articles and on her Debrief-era work.
 rumors: []

@@ -517,7 +517,6 @@ naming_quirks:
   location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [6:02]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Lacatski". The caption alternates between "latky" and "latsky" within the same JRE #2194 passage; both forms are preserved verbatim per the transcript-provenance auto-caption discipline.'
 - id: nq2
   added_date: '2026-05-19'
   observed: 'latsky'
@@ -525,7 +524,6 @@ naming_quirks:
   location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [6:04]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Lacatski" — the second of the two forms the caption produces for the surname in the same JRE #2194 passage.'
 - id: nq3
   added_date: '2026-05-19'
   observed: 'langly'
@@ -533,7 +531,6 @@ naming_quirks:
   location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [2:26]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: 'YouTube auto-caption rendering of "Langley" — the CIA Langley headquarters in Northern Virginia.'
 
 rumors: []
 

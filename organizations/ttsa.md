@@ -43,32 +43,32 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2022 | government/sec-ttsa-1a-partii-20170710.html |  |
-| [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
-| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |  |
-| [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 – 2022 | government/sec-ttsa-1a-partii-20170710.html | The 1-A names DeLonge the company's principal investor and key man. |
-| [`/people/j-christopher-mizer`] | Director | 2019-05-14 | government/sec-ttsa-1k-partii-20220502.html |  |
-| [`/people/stan-spry`] | Director | 2021-06-14 | government/sec-ttsa-1k-partii-20220502.html |  |
-| [`/people/tom-delonge`] | Founder, Chairman of the Board, and interim Chief Executive Officer | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |
+| [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/j-christopher-mizer`] | Director | 2019-05-14 | government/sec-ttsa-1k-partii-20220502.html |
+| [`/people/stan-spry`] | Director | 2021-06-14 | government/sec-ttsa-1k-partii-20220502.html |
+| [`/people/tom-delonge`] | Founder, Chairman of the Board, and interim Chief Executive Officer | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 #### Staff
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2022 | government/sec-ttsa-1a-partii-20170710.html | Kari DeLonge is the sister of Tom DeLonge. |
-| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 – 2021 | news/tothestarsacademy-home-20180108.html | The cited filings record no specific departure date, describing Elizondo only as a former company employee. |
-| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 – 2021 | news/tothestarsacademy-home-20180108.html |
+| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 #### Advisors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |  |
-| [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
-| [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |  |
-| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |
+| [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 ---
 
@@ -770,15 +770,15 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/to-the-stars-inc`] | subsidiary | government/sec-ttsa-1a-partii-20170710.html | Wholly-owned subsidiary acquired via the June 1, 2017 Contribution Agreement (q52). |
-| [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf | Contracting agency on CRADA 19-15, Warren MI (address at q53). |
-| [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf | Named in CRADA 19-15 as an Other Participant that can share historical reports on the origin of TTSA's materiel (q14). |
-| [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf | Acquired the specimen from a private UAP investigating organization and the U.S. Army (q15), then contracted ORNL in 2022 for independent characterization (q19). |
-| [`/organizations/earthtech-international`] | other | government/sec-ttsa-1a-partii-20170710.html | Shared-principal relationship through co-founder Harold E. Puthoff, who has been President and CEO of EarthTech International, Inc. since 1985 while serving as TTSA VP Science and Technology. Not an arms-length partnership — Puthoff founded and runs both entities. |
-| [`/organizations/gravity-holdings-llc`] | other | government/sec-ttsa-1k-partii-20250417.html | Majority shareholder at 52.16% of Class A Common Stock (q54); the June 1, 2021 Binding Term Sheet Amendment routed DeLonge's 784,970 shares to Gravity Holdings (q41), concentrating ownership. |
-| [`/organizations/love-movie-llc`] | subsidiary | government/sec-ttsa-1k-partii-20220502.html | Former wholly-owned subsidiary, sold to DeLonge under the December 24, 2020 Binding Term Sheet, which also terminated the AvA Licensing Agreement (q40). |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/to-the-stars-inc`] | subsidiary | government/sec-ttsa-1a-partii-20170710.html |
+| [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+| [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+| [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf |
+| [`/organizations/earthtech-international`] | other | government/sec-ttsa-1a-partii-20170710.html |
+| [`/organizations/gravity-holdings-llc`] | other | government/sec-ttsa-1k-partii-20250417.html |
+| [`/organizations/love-movie-llc`] | subsidiary | government/sec-ttsa-1k-partii-20220502.html |
 
 ---
 
@@ -790,8 +790,6 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 **Circulates in:** DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified); Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024); Public discourse around the TTSA-DEVCOM CRADA material
 
-**Primary-source refutation:** AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository. TTSA's own counter-analysis — the Puthoff/Davis memorandum submitted to the TTSA Board on September 27, 2024 and published February 28, 2025 — concurs that the analysis 'did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin' while qualifying that it 'did not absolutely rule it out either.' TTSA's published corporate position therefore does not endorse the 1947-extraterrestrial claim. The FY2021 Form 1-K (April 2022) additionally describes TTSA's science and technology division — including A.D.A.M. — as 'now retired', documenting the company's own disclosure that the material-analysis research framework ended with the February 2021 strategic reorganization.
-
 ---
 
 ## Public-Record Claims Without Primary Source
@@ -802,22 +800,20 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails; Public discourse about the TTSA-McCasland relationship
 
-**Investigator note:** The sole primary-source attestation of McCasland's advisory-team role is DeLonge's own 2016 email to Podesta. McCasland has not publicly confirmed or denied the claim, and no independent primary-source documentation of his TTSA involvement is archived in this repository. The Podesta email itself is primary-source-authentic (SPF/DMARC/DKIM validated in the raw source), but it documents DeLonge's claim about McCasland, not McCasland's own statements.
-
 ---
 
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| TTS AAS | To The Stars Academy of Arts and Science Inc. | government/sec-ttsa-1a-partii-20170710.html | SEC filing uses 'TTS AAS' as an internal shorthand for the parent company to distinguish from the TTS subsidiary. Public-facing name is 'To The Stars Academy of Arts and Science Inc.' or 'TTSA'. |
-| Lue Elizondo | Luis Elizondo | news/tothestarsacademy-home-20180108.html | TTSA routinely uses 'Lue Elizondo' as an informal form; canonical full name per his own public biography is 'Luis Elizondo'. |
-| metamateiiais | metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf | OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF. Correct form 'metamaterials' appears elsewhere in the same document. |
-| struefural metamateriais | structural metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf | OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF. |
-| = VP of Operations Jim Semivan | and VP of Operations Jim Semivan | news/tothestarsacademy-home-20180108.html | Typographical artifact in TTSA's own press release text ('=' where conjunction 'and' was likely intended). |
-| 215 South Coast Hwy 101, Ste. U-38 | Coast Hwy 101 complex, Encinitas CA (multi-suite) | government/army-ttsa-crada-19-15-nete-20191001.pdf | TTSA's SEC 1-A registers the corporate HQ as 1051 S. Coast Hwy 101 Suite B; the CRADA document records Elizondo's TTSA mailing address as 215 South Coast Hwy 101 Suite U-38 (and 315 South Coast Hwy 101 Suite U-38 in a second occurrence with OCR variance). Suite U-38 and Suite B are different suites at the same Encinitas address complex — TTSA appears to have operated from multiple suites simultaneously during 2017-2019. Address variance is not contradiction; both forms are source-attested. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| TTS AAS | To The Stars Academy of Arts and Science Inc. | government/sec-ttsa-1a-partii-20170710.html |
+| Lue Elizondo | Luis Elizondo | news/tothestarsacademy-home-20180108.html |
+| metamateiiais | metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+| struefural metamateriais | structural metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+| = VP of Operations Jim Semivan | and VP of Operations Jim Semivan | news/tothestarsacademy-home-20180108.html |
+| 215 South Coast Hwy 101, Ste. U-38 | Coast Hwy 101 complex, Encinitas CA (multi-suite) | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 
 ---
 

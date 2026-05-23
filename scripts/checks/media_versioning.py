@@ -5,7 +5,7 @@ original media; populated when the node's frontmatter has
 ``derivation_of`` set and the derivative differs from its parent.
 
 Each entry: required {id, aspect, parent_form, this_form, source},
-optional {note}. ``aspect`` enum {duration, encoding, metadata,
+no optional fields. ``aspect`` enum {duration, encoding, metadata,
 content, provenance, other} — ``other`` is the extensibility escape;
 unknown values warn (don't error) inviting schema discussion. The
 extensible-enum warn-on-unknown pattern fits because aspect doesn't

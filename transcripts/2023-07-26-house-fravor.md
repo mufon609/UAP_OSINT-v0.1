@@ -37,27 +37,27 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| David Fravor | Witness | [`/people/david-fravor`] | Primary subject of this transcript; retired U.S. Navy Commander; testified under oath on the 2004 Nimitz UAP encounter. |
-| Ryan Graves | Witness | [`/people/ryan-graves`] | Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach UAP encounters. |
-| David Grusch | Witness | [`/people/david-grusch`] | Former intelligence officer, NRO Representative to the UAP Task Force; filed a PPD-19 urgent concern complaint in May 2022; testified under oath. |
-| Glenn Grothman | Subcommittee Chair |  | Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin). |
-| Robert Garcia | Subcommittee Ranking Member |  | Ranking Minority Member of the Subcommittee (California). |
-| Tim Burchett | Member (waived on) |  | Representative (Tennessee); led effort to secure the hearing; questioned all three witnesses. |
-| Anna Paulina Luna | Member (waived on) |  | Representative (Florida); co-led effort to secure the hearing; questioned Grusch and Graves. |
-| Jared Moskowitz | Subcommittee Member |  | Representative (Florida); questioned all three witnesses on physics, sensors, and satellite imagery. |
-| Jamie Raskin | Full Committee Ranking Member |  | Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned all three witnesses. |
-| Virginia Foxx | Subcommittee Member |  | Representative (North Carolina); questioned Grusch on Kirkpatrick AARO contradiction. |
-| Maxwell Frost | Subcommittee Member |  | Representative (Florida); questioned Graves and Fravor on NASA and commercial aviation. |
-| James Comer | Full Committee Chair |  | Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett. |
-| Matt Gaetz | Member (waived on) |  | Representative (Florida); waived on to the Subcommittee for this hearing; questioned Fravor and Graves on Eglin Air Force Base UAP incident. |
-| Alexandria Ocasio-Cortez | Member (waived on) |  | Representative (New York); waived on to the Subcommittee for this hearing; questioned all three witnesses on defense contractor relationships. |
-| Andy Biggs | Subcommittee Member |  | Representative (Arizona); questioned on Phoenix Lights case and over-classification. |
-| Eric Burlison | Member (waived on) |  | Representative (Missouri); questioned Grusch on harm claims and multidimensional frameworks. |
-| Nancy Mace | Subcommittee Member |  | Representative (South Carolina); questioned all three witnesses. |
-| Nick Langworthy | Member (waived on) |  | Representative (New York); waived on to the Subcommittee for this hearing; questioned Fravor in detail on the November 14 2004 Nimitz incident. |
-| Andrew Ogles | Member (waived on) |  | Representative (Tennessee); waived on to the Subcommittee for this hearing; questioned all three witnesses on national security threat assessment. |
+| Name | Role | Node Link |
+|---|---|---|
+| David Fravor | Witness | [`/people/david-fravor`] |
+| Ryan Graves | Witness | [`/people/ryan-graves`] |
+| David Grusch | Witness | [`/people/david-grusch`] |
+| Glenn Grothman | Subcommittee Chair |  |
+| Robert Garcia | Subcommittee Ranking Member |  |
+| Tim Burchett | Member (waived on) |  |
+| Anna Paulina Luna | Member (waived on) |  |
+| Jared Moskowitz | Subcommittee Member |  |
+| Jamie Raskin | Full Committee Ranking Member |  |
+| Virginia Foxx | Subcommittee Member |  |
+| Maxwell Frost | Subcommittee Member |  |
+| James Comer | Full Committee Chair |  |
+| Matt Gaetz | Member (waived on) |  |
+| Alexandria Ocasio-Cortez | Member (waived on) |  |
+| Andy Biggs | Subcommittee Member |  |
+| Eric Burlison | Member (waived on) |  |
+| Nancy Mace | Subcommittee Member |  |
+| Nick Langworthy | Member (waived on) |  |
+| Andrew Ogles | Member (waived on) |  |
 
 ---
 
@@ -574,10 +574,10 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| Leslie Keane | Leslie Kean | government/congress-gov-house-hearing-transcript-20230726.pdf | Fravor's oral testimony repeats the same trailing-'e' misspelling of the journalist's surname that appears in his written statement (see written-testimony-fravor-2023 nq1). Two-source attestation strengthens the pattern as a consistent Fravor-authored variant rather than a stenographic error. Use canonical form in prose outside quoted passages. |
-| Lue | Luis Elizondo | government/congress-gov-house-hearing-transcript-20230726.pdf | Fravor uses "Lue" (2 instances in this transcript — q9 "led by Lue Elizondo" and q12 "I was made aware that Lue had left") as an alias-of-record for Luis Elizondo. The repeated usage indicates a familiar-name convention rather than a typo. Use canonical "Luis Elizondo" in prose; preserve "Lue" inside quoted passages. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| Leslie Keane | Leslie Kean | government/congress-gov-house-hearing-transcript-20230726.pdf |
+| Lue | Luis Elizondo | government/congress-gov-house-hearing-transcript-20230726.pdf |
 
 ---
 
@@ -585,9 +585,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
 
-| Position | Counterpart | Source | Note |
-|---|---|---|---|
-| ATIP program | AATIP (Advanced Aerospace Threat Identification Program) | government/congress-gov-house-hearing-transcript-20230726.pdf | Fravor's oral testimony uses "ATIP program" in the Pentagon led by Lue Elizondo (q9), paralleling the same program name in his written testimony (written-testimony-fravor-2023 nq3 — "ATIP (Anomalous Threat Identification Program)"). The oral form omits the expansion the written form provides. Whether ATIP refers to AATIP or a distinct program remains unresolved; see research_gap rg3. |
+| Position | Counterpart | Source |
+|---|---|---|
+| ATIP program | AATIP (Advanced Aerospace Threat Identification Program) | government/congress-gov-house-hearing-transcript-20230726.pdf |
 
 ---
 

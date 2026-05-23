@@ -64,7 +64,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 99-110, 435-447
-  note: Director, All-domain Anomaly Resolution Office at the time of the hearing; sole open-session witness; oath status unknown — see context_extrinsic.
 - id: s2
   added_date: '2026-04-28'
   name: Kirsten E. Gillibrand
@@ -73,7 +72,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 64-66, 93-97
-  note: Chairwoman of the Subcommittee on Emerging Threats and Capabilities (New York); presiding.
 - id: s3
   added_date: '2026-04-28'
   name: Joni Ernst
@@ -82,7 +80,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 68-70, 321-329
-  note: Ranking Member of the Subcommittee (Iowa).
 - id: s4
   added_date: '2026-04-28'
   name: Senator Rosen
@@ -91,7 +88,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 68-70, 1591-1597
-  note: Senator from Nevada; Subcommittee member; transcript labels her speaker tag as "Senator Rosen" without first name.
 - id: s5
   added_date: '2026-04-28'
   name: Audience Member
@@ -100,7 +96,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 2586-2741
-  note: 'The transcript labels two distinct audience speakers as "Audience Member" without further identification: a Marine veteran from Ohio (drove 600 miles, mentioned David Spergel and Neil deGrasse Tyson, presented a book) and a resident from Albuquerque, New Mexico (described UAP over Sandia Labs and Kirtland Air Force Base; stated propulsion-field theories about the craft observed). A third briefer "Same here" comment from a separate audience member is also recorded.'
 - id: s6
   added_date: '2026-04-28'
   name: Staff
@@ -109,7 +104,6 @@ speakers:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: lines 2780-2782
-  note: Anonymous Subcommittee staff member; one brief response in the closing exchange about handling of materials presented by the audience.
 quotes:
 - id: q1
   speaker_id: s1
@@ -563,7 +557,6 @@ naming_quirks:
   location: stenographic transcript lines 1982, 1985, 2113 (Kirkpatrick Q&A)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Alderson Court Reporting stenographer rendered the spoken acronym "USD(I&S)" (Under Secretary of Defense for Intelligence and Security) phonetically as "USDINS" throughout the open-session transcript. Kirkpatrick's pre-hearing written Statement for the Record uses written-out forms instead. Preserved as it appears in the stenographic transcript.
 - id: nq2
   added_date: '2026-04-28'
   observed: 'Mr. Kirkpatrick'
@@ -571,7 +564,6 @@ naming_quirks:
   location: stenographic transcript throughout (e.g., speaker tags at lines 439, 1194, 1665)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Senate stenographic convention applies "Mr." / "Ms." prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as "Dr. Kirkpatrick"; the speaker-tag prefix "Mr. Kirkpatrick:" is the stenographer's rendering convention.
 - id: nq3
   added_date: '2026-04-28'
   observed: Kirkland Air Force Base
@@ -579,4 +571,3 @@ naming_quirks:
   location: stenographic transcript line 2672 (audience-member speech)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   resolution: preserve-as-sic-in-quotes
-  note: Audience member referenced "Sandia Labs and Kirkland Air Force Base"; the canonical name is Kirtland Air Force Base (Albuquerque, New Mexico). The stenographer captured the audience speaker's pronunciation phonetically. Preserved as it appears in the transcript.

@@ -45,34 +45,34 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 #### Directors
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/stephen-cambone`] | Under Secretary of Defense for Intelligence | 2003-03-07 – 2006-12-31 | government/defense-gov-cambone-usdi-bio-200709.html | The Source column's biography (last updated January 2006) carries the March 7, 2003 confirmation but not the later departure; the December 31, 2006 end date rests on the separate DoD resignation release No. 1221-06. |
-| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html |  |
-| [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011-03 – 2015-04 | government/crs-if10523-defense-primer-usdis.html | Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict. |
-| [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf |  |
-| [`/people/todd-lowery`] | Acting Under Secretary of Defense for Intelligence | 2017-01 – 2017-06 | government/crs-if10523-defense-primer-usdis.html |  |
-| [`/people/kari-bingen`] | Acting Under Secretary of Defense for Intelligence | 2017-06 – 2017-12 | government/crs-if10523-defense-primer-usdis.html |  |
-| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence | 2017-12-01 – 2019-12-19 | government/pl-116-92-ndaa-fy2020.pdf |  |
-| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2019-12-20 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html |  |
-| [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-01-20 | government/defense-gov-personnel-changes-pentagon-20201110.html |  |
-| [`/people/david-m-taylor`] | Acting Under Secretary of Defense for Intelligence and Security | 2021-01-20 – 2021-06-01 | government/crs-if10523-defense-primer-usdis.html |  |
-| [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |  |
-| [`/people/milancy-harris`] | Acting Under Secretary of Defense for Intelligence and Security | 2024-03 – 2025-01 | government/crs-if10523-defense-primer-usdis.html |  |
-| [`/people/dustin-gard-weiss`] | Acting Under Secretary of Defense for Intelligence and Security | 2025-01 – 2025-07-25 | government/crs-if10523-defense-primer-usdis.html |  |
-| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/stephen-cambone`] | Under Secretary of Defense for Intelligence | 2003-03-07 – 2006-12-31 | government/defense-gov-cambone-usdi-bio-200709.html |
+| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html |
+| [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011-03 – 2015-04 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf |
+| [`/people/todd-lowery`] | Acting Under Secretary of Defense for Intelligence | 2017-01 – 2017-06 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/kari-bingen`] | Acting Under Secretary of Defense for Intelligence | 2017-06 – 2017-12 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence | 2017-12-01 – 2019-12-19 | government/pl-116-92-ndaa-fy2020.pdf |
+| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2019-12-20 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html |
+| [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-01-20 | government/defense-gov-personnel-changes-pentagon-20201110.html |
+| [`/people/david-m-taylor`] | Acting Under Secretary of Defense for Intelligence and Security | 2021-01-20 – 2021-06-01 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
+| [`/people/milancy-harris`] | Acting Under Secretary of Defense for Intelligence and Security | 2024-03 – 2025-01 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/dustin-gard-weiss`] | Acting Under Secretary of Defense for Intelligence and Security | 2025-01 – 2025-07-25 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf |
 
 #### Deputy Leadership
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/justin-overbaugh`] | Deputy Under Secretary of War for Intelligence and Security | 2025 | government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/justin-overbaugh`] | Deputy Under Secretary of War for Intelligence and Security | 2025 | government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf |
 
 #### Staff
 
-| Name | Role | Period | Source | Note |
-|---|---|---|---|---|
-| [`/people/david-kozik`] | Director Congressional Activities, Office of the Under Secretary of Defense Intelligence | 2017-12-27 | government/dvids-kozik-portrait-page-20260501.html |  |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/david-kozik`] | Director Congressional Activities, Office of the Under Secretary of Defense Intelligence | 2017-12-27 | government/dvids-kozik-portrait-page-20260501.html |
 
 ---
 
@@ -733,25 +733,25 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ### Confirmed
 
-| Organization | Relationship | Source | Note |
-|---|---|---|---|
-| [`/organizations/dod`] | parent | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf | DoDD 5143.01 is issued under SecDef authority pursuant to 10 U.S.C. §§ 113 and 137. |
-| [`/organizations/dia`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/nga`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/nsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/nro`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/dcsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/aaro`] | subsidiary | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373. Pair with or15 (AIC); the FY 2025 and FY 2026 OSD OP-5 budget submissions name the same-mission OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" while AARO continues to operate publicly under its own name (aaro.mil active, FOIA org chart still lists AARO). The structural relationship between AARO and AIC at primary-source level is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO); description prose carries the analysis. |
-| [`/organizations/ipmo`] | subsidiary | government/notre-dame-ipmo-memo-20220527.pdf |  |
-| [`/organizations/odni`] | partner | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
-| [`/organizations/sancorp-consulting`] | contractor | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Sancorp Consulting LLC is a prime contractor providing support services across multiple OUSD(I&S) subordinate offices including AARO and IPMO. |
-| [`/organizations/dmdpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/osd-red-team`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/scpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/cp-wmd`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |  |
-| [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | AIC's FY 2026 OSD OP-5 mission language ("reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence") is the literal NDAA FY23 § 1683 statutory carveout unique to AARO. The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)"; the FY 2025 OSD OP-5 (March 11, 2024 release) was the first to substitute "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language; FY 2026 OSD OP-5 retains AIC. No public DoD announcement of an AARO renaming has been issued; aaro.mil website remains active under the AARO name. Pair with or7 (AARO, per Hicks establishment memorandum); structural relationship between the two is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO) and is currently described as separate subsidiaries until a primary-source resolution surfaces. |
-| [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf | Stand-up tense shift between FY 2025 OSD OP-5 (March 2024, future tense, "will lead, coordinate, and integrate") and FY 2026 OSD OP-5 (June 2025, present tense, "leads, coordinates, and integrates") attests operational status was achieved sometime between March 2024 and June 2025, well after the original 90-day deadline (~July 20, 2023). |
-| [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf | Between FY 2025 OSD OP-5 (released March 2024, where C-ADI sat in the sub-office bullet list between SCPO and CP/WMD) and FY 2026 OSD OP-5 (released June 2025), C-ADI moved into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)" — administrative reorganization, not disestablishment. Establishment instrument not retrieved at primary-source level (FOIA-able to OUSD(I&S) Front Office for an establishment memo dated between March 2023 (FY24 OP-5 release) and March 2024 (FY25 OP-5 release)). |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/dod`] | parent | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/dia`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/nga`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/nsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/nro`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/dcsa`] | subsidiary | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/aaro`] | subsidiary | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/ipmo`] | subsidiary | government/notre-dame-ipmo-memo-20220527.pdf |
+| [`/organizations/odni`] | partner | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
+| [`/organizations/sancorp-consulting`] | contractor | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
+| [`/organizations/dmdpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/osd-red-team`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/scpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/cp-wmd`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf |
 
 ---
 
@@ -759,16 +759,16 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| USD(I) | USD(I&S) | government/pl-116-92-ndaa-fy2020.pdf | The position was formally titled "Under Secretary of Defense for Intelligence" (USD(I)) from establishment in 2002 through December 19, 2019. Section 1621 of P.L. 116-92 redesignated the position effective on enactment (December 20, 2019). Pre-rename primary sources (Clapper SAP packet, Vickers nomination, Lettre testimony) attest the USD(I) form. Use the contemporaneous form when quoting and the canonical USD(I&S) form for current references. |
-| USW (Intelligence & Security) | USD(I&S) | government/wargov-office-of-secretary-of-war.html | Per EO 14347 Section 2(c), subordinate officials may use corresponding secondary titles such as Under Secretary of War in non-statutory contexts. The war.gov institutional listing uses USW (Intelligence & Security); statutory references per 10 U.S.C. § 137 retain the USD(I&S) form per EO 14347 Section 2(e). |
-| AAITP | AATIP | government/clapper-depsecdef-sap-packet-final-20091117.pdf | The November 17, 2009 Clapper memorandum is an OCR-scan source (Acrobat 9.55 Paper Capture Plug-in) where "AATIP" extracted as "AAITP" — character-cluster transposition typical of OCR errors. The memorandum also writes the longer-form name "Advanced Aerospace Threat and Identification Program" — also "Identification" rather than "Identification" suggests the underlying name is correctly Advanced Aerospace Threat Identification Program. Preserved in verbatim quotes; canonical form used outside quotes. |
-| AA WSAP | AAWSAP | government/clapper-depsecdef-sap-packet-final-20091117.pdf | OCR-scan source has unintended whitespace inside the AAWSAP acronym (AA WSAP). Preserved in verbatim quotes. |
-| DEfENSE PENTAGON | DEFENSE PENTAGON | government/clapper-depsecdef-sap-packet-final-20091117.pdf | OCR-scan letterhead extraction of "DEFENSE PENTAGON" produced the lowercase-f variant "DEfENSE". Preserved in verbatim letterhead quote. |
-| ovember | November | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | OCR-scan dropped the leading "N" from "November" in multiple places (e.g., "ovember 23, 2021"). Preserved in verbatim quotes if the affected passage is excerpted. |
-| fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | OCR-scan inserted whitespace inside "fulfilled" (rendered as "fulfi lled"). Preserved when excerpted in the AARO mission-statement quote. |
-| CUl | CUI | government/dodig-2026-047-redacted-secure.pdf | OCR-extraction of CUI (Controlled Unclassified Information) acronym occasionally renders the trailing "I" as lowercase "l" (CUl). Preserved in verbatim quotes. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| USD(I) | USD(I&S) | government/pl-116-92-ndaa-fy2020.pdf |
+| USW (Intelligence & Security) | USD(I&S) | government/wargov-office-of-secretary-of-war.html |
+| AAITP | AATIP | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
+| AA WSAP | AAWSAP | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
+| DEfENSE PENTAGON | DEFENSE PENTAGON | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
+| ovember | November | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| CUl | CUI | government/dodig-2026-047-redacted-secure.pdf |
 
 ---
 

@@ -2,7 +2,7 @@
 
 Present on organization artifacts. Each entry: required {person_path,
 role, source}, optional {period_start, period_end, leadership_class,
-flagged, note}.
+flagged}.
 
 CLOSED ``leadership_class`` enum {director, deputy, staff, advisor,
 other} drives renderer sub-grouping in the Key Personnel section

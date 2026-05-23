@@ -1,7 +1,7 @@
 """affiliations check — type-conditional research-artifact check.
 
 Present on person artifacts. Each entry: required {organization_path,
-role, source}, optional {period_start, period_end, flagged, note}.
+role, source}, optional {period_start, period_end, flagged}.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``. Entry-shape validation delegates to

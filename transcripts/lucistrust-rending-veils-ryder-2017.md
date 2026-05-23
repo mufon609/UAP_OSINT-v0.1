@@ -35,10 +35,10 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ## Speakers
 
-| Name | Role | Node Link | Note |
-|---|---|---|---|
-| Lawrence | Moderator |  | Lucis Trust ([`/organizations/lucis-trust`]) Arcane School ([`/organizations/lucis-trust-arcane-school`]) Conference moderator; first name only given in the transcript. Introduces the talk topic, frames the speaker as "either a Druid from Glastonbury or a Lockheed guy," and steers the conversational sections. Last name not attested in this source. Paired in the conference programme with Dr. Lee Blackburn's ([`/people/lee-blackburn`]) "Part 2: The Violet Force and Health". |
-| Dr. James T. Ryder | Speaker | [`/people/james-ryder`] | Retired Vice President of Lockheed Martin Space Systems Company ([`/organizations/lockheed-martin-space-systems-company`]) and former head of the Advanced Technology Centre. Chairman of the Board for the International Science Foundation and the Institute for Venture Science at the time of the talk. |
+| Name | Role | Node Link |
+|---|---|---|
+| Lawrence | Moderator |  |
+| Dr. James T. Ryder | Speaker | [`/people/james-ryder`] |
 
 ---
 
@@ -204,10 +204,10 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
 
-| Source Form | Canonical | Source | Note |
-|---|---|---|---|
-| divas | devas | transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt | Whisper renders the theosophical term "devas" (Alice Bailey / Ageless Wisdom nature-spirit intelligences) inconsistently — five occurrences correctly rendered as "devas" ([00:11], [07:36], [60:07], [60:31], [60:44]) and five as "divas" (the more common English word; phonetically similar). The Bailey-tradition canonical form is "devas." Preserved verbatim per source-read-first discipline. |
-| Vail | Veil | transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt | Ryder pronounces "Veil" in a way whisper renders as "Vail" (an alternate spelling that does exist but is not the talk title's canonical form). The talk's published title is "The Rending of the Veils" (per the Lucis Trust conference page); the transcript's "Vail" rendering is preserved verbatim where it appears. |
+| Source Form | Canonical | Source |
+|---|---|---|
+| divas | devas | transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt |
+| Vail | Veil | transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt |
 
 ---
 
@@ -219,14 +219,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/jacques-vallee`]
 - [`/people/james-ryder`]
 - [`/people/lawrence-lucis-trust-moderator`]
-- [`/people/lee-blackburn`]
 
 ### Organizations
 
 - [`/organizations/institute-for-venture-science`]
 - [`/organizations/international-science-foundation`]
 - [`/organizations/lockheed-martin`]
-- [`/organizations/lockheed-martin-space-systems-company`]
-- [`/organizations/lucis-trust`]
-- [`/organizations/lucis-trust-arcane-school`]
 - [`/organizations/safire-project`]
