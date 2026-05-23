@@ -108,20 +108,6 @@ russell-targ cited for this was stripped. The inverse case (unknown start,
 attested active-by year) currently uses the active-by year as `period_start`
 with a role-text caveat (e.g. ronald-moultrie a30/a31) — fold both into one ruling.
 
-### C2 — No orchestration path for augmenting/maintaining an existing node
-
-`/build` scaffolds a *fresh* node (`research-scaffold.py` writes fresh, cannot
-append), so the orchestrator fits new builds only. The common maintenance case
-— add a recovered quote, re-source a dead citation, correct a data field on an
-*existing* node — has no orchestrator: the role agents (external-investigator →
-archive → worker → builder → auditor) each operate fine on an existing artifact,
-but the contributor must sequence them by hand and judge ad hoc which roles even
-apply (a pure data-correctness fix needs neither worker nor builder; a re-source
-needs archive + worker but no scaffold). Consider a lean `/augment` skill (or a
-`/build --augment` mode) that runs the applicable subset against an existing
-artifact without re-scaffolding, and document the manual sequence in
-`prompts/build.md` / `topology.md` meanwhile.
-
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 
 The prose-drift gate is correct and the resulting nodes are worth the

@@ -120,10 +120,34 @@ schema for your own role.
 - **all-internal** — the internal survey sets `all_internal: true`,
   `gaps: []` → external + archive roles are skipped; the build proceeds from
   the reused, already-archived sources.
-- **tightening loop** — the audit flags `adjacent_needs_update[]` with
-  `skip_external: true` → re-enter at the `extract` phase for the adjacent
-  node (its material is already archived; no new URL, no new bytes), then
-  rebuild and re-audit until no adjacent node flags.
+
+### Partial re-entry — skip scaffold, run a minimal role subset
+
+When the artifact already exists, a change runs through only the roles it
+needs — never a fresh scaffold. The shared rules:
+
+1. **Skip scaffold** — the node + artifact exist (`new.py` /
+   `research-scaffold.py` do not run; the latter cannot append anyway).
+2. **Dispatch only the roles the change needs** — a data-correctness fix needs
+   no worker; a quote from an already-archived source needs the worker but no
+   external/archive; a new or re-pulled source needs external → archive →
+   worker. No role introduces a quote outside `extract`.
+3. **Route failures** — a failing check goes through `route_failure.py` to its
+   owning role; the fix target is always artifact data.
+4. **Preserve contradictions** — material that disagrees with a sourced claim
+   is added alongside via `superseded_by` / `contradicted_by` /
+   `corroborated_by`, never overwritten.
+
+Two entry points share this contract:
+
+- **tightening loop** (auditor-triggered, adjacent node) — the audit flags
+  `adjacent_needs_update[]` with `skip_external: true` → re-enter at the
+  `extract` phase for the adjacent node (material already archived; no new URL,
+  no new bytes), rebuild, re-audit until no adjacent node flags.
+- **`/augment`** (user-triggered, primary node) — a maintenance change to an
+  existing node (add a recovered quote, re-source a dead citation, correct a
+  data field), classified into the role subset above; the proactive counterpart
+  to reactive `/audit`. See the `augment` skill.
 
 ## One new synthesis-heavy node per session
 

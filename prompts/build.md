@@ -9,7 +9,8 @@ investigation nodes carry lighter synthesis surfaces (most of their
 body is verbatim source via Key Passages) and may be scaffolded in
 batches within a single session. The rule limits *new node
 construction* — it does not restrict editing, auditing, or rebuilding
-existing nodes; for those tasks use the `/audit` skill and the other
+existing nodes; for those tasks use the `/augment` skill (add a quote,
+re-source a citation, correct a field) and `/audit`, plus the other
 workflow skills (`/verify-transcript`, `/quote-relevance-audit`,
 `/archive-sweep`).
 
@@ -35,8 +36,8 @@ organization, location, finding, and investigation.
    *new* nodes (`scripts/build/new.py` +
    `scripts/build/research-scaffold.py`). Editing, auditing, fixing,
    or rebuilding existing nodes — including in batches — is
-   unrestricted for any type and follows its own prompts (`audit.md`,
-   `verify-transcript.md`, `archive-sweep.md`).
+   unrestricted for any type and follows its own workflow skills
+   (`/augment`, `/audit`, `/verify-transcript`, `/archive-sweep`).
 
 2. **Source-read-first.** Every claim and every quote must trace to
    text that was extracted from an archived source **in this session**.

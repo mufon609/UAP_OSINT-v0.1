@@ -72,10 +72,18 @@ surfaces + prose-drift), `render` (render-time structure + cross-layer checks).
 ## Orchestration branches
 
 - **all-internal** — the internal survey sets `all_internal: true` → external +
-  archive are skipped.
+  archive are skipped (a fresh build from reused, already-archived sources).
 - **tightening loop** — the audit flags `adjacent_needs_update[]` with
   `skip_external: true` → re-enter at `extract` (the material is already
   archived; no new URL, no new bytes), rebuild, re-audit.
+- **`/augment`** (user-triggered) — maintenance on an existing node, the
+  proactive counterpart to reactive `/audit`: classify the change (data fix → no
+  role; quote from an archived source → worker; new/re-pulled source → external →
+  archive → worker), then rebuild + audit.
+
+The tightening loop and `/augment` share one **partial-re-entry** contract — skip
+scaffold, run only the roles a change needs, route failures to the owning role,
+preserve contradictions (`build-protocol`).
 
 ## Fix the data, never the node body — now enforced, not just stated
 
