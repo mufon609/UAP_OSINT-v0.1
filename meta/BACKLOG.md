@@ -114,6 +114,22 @@ russell-targ cited for this was stripped. The inverse case (unknown start,
 attested active-by year) currently uses the active-by year as `period_start`
 with a role-text caveat (e.g. ronald-moultrie a30/a31) — fold both into one ruling.
 
+### C2 — `extract-source.py --source` scratch path collides for an OCR-scan PDF + its `.txt` sibling
+
+`extract-source.py --source {path}` derives the `/tmp/scratch-{stem}.txt` name
+from the path's basename **without the extension**, so an OCR-scan PDF and its
+same-stem `.txt` sibling both target the same scratch file. Running `--source`
+on the `.pdf` therefore overwrites a clean sibling-derived scratch with the
+corrupt OCR text layer — silently. The canonical build path
+(`extract-source.py --artifact {yaml}`) avoids this: it names the scratch from
+the artifact slug and prefers the sibling, so the footgun is latent — but a
+contributor extracting an ocr-scan PDF directly gets garbage with no warning.
+Fix: discriminate the `--source` scratch name by format (`scratch-{stem}-{ext}.txt`),
+or refuse/warn when a verified sibling is registered for the requested PDF.
+Verify no other scratch-path consumer depends on the current name first.
+Surfaced building dird-26 (the survey flagged the collision; `--artifact` was
+used, so no break occurred).
+
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 
 The prose-drift gate is correct and the resulting nodes are worth the
@@ -140,6 +156,17 @@ Key Passages + `naming_quirks` instead. This may be intended (description
 = strictly source-grounded synthesis); decide deliberately whether the
 check should credit canonical-form `naming_quirks` / `document_intrinsic`
 vocabulary. Same check family as C5; handle with the same care.
+
+Re-confirmed on `dird-26`: the document's author line is FOIA `(b)(6)`-redacted,
+so the extrinsic author attribution (Dr. Kit Green, from the DIA→Congress
+products list) cannot enter the `description` prose — the source body never
+contains "Kit Green" / "products list". The established workaround (also on
+`dird-24`): carry the attribution navigationally via the `[/people/…]` +
+`[/documents/…]` links plus a structured `context_extrinsic` field (out of
+prose-drift scope, non-rendering), keeping the name out of every quote. If the
+deliberate ruling is that `description` stays strictly source-body-grounded,
+document this attribution-via-links pattern as the canonical handling rather
+than crediting metadata vocabulary.
 
 ### C9 — verbatim-quote check doesn't normalize page-footer/header boilerplate
 

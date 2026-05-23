@@ -846,6 +846,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #26 — ''Field Effects on Biological Tissues'' (DIA-letter title; the document title page reads ''Anomalous Acute and Subacute Field Effects on Human Biological Tissues''), ICOD 1 December 2009 (confirmed page 1; series ''Acquisition Threat Support''), dated 11 March 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 39 pages. DIA attachment #12 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Kit Green, Wayne State University (per that DIA list); cross-ref /people/kit-green. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_26-DIRD_Anomalous_Acute_and_Subacute_Field_Effects_on_Human_Biological_Tissues.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-26-field-effects-human-biological-tissues-2010.txt
+    archived_date: '2026-05-23'
+    note: 'Clean-text sibling of the OCR-scanned DIRD Black Vault #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues). Produced 2026-05-23 via multimodal page-image read of all 39 pages; independently verified 2026-05-23 by a separate agent session — PASS (one Appendix-B item-30 location discrepancy, ITALY/ISOLA->VENEZUELA/VALENCIA, caught and corrected before registration). The Black Vault declassification-distribution insert (physical page 2) is excluded. Equations/figures and the rotated low-res Appendix-C data matrix (pp. 29-31) are bracketed/flagged; redactions (b)(6)/(b)(3):10 USC 424, source spellings, and source typos (e.g. ''1054'', ''parasthesiae'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_27-DIRD_Laser_Lightcraft_Nanosatellites.pdf
   status: archived
   artifacts:

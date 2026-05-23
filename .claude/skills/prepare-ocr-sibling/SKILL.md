@@ -46,7 +46,12 @@ quotes.
    cover-insert page that is not part of the document itself (report which
    physical page was excluded). The producer reports the load-bearing
    front-matter facts it captured and flags any faded / ambiguous / redacted
-   spots where a vision model might hallucinate.
+   spots where a vision model might hallucinate. **A flag records only what is
+   legible** (`[unclear]`, `[illegible digit]`) — it must never assert an
+   alternative reading, date, or name not actually visible in the image. A flag
+   that invents specifics reintroduces the very hallucination it is meant to
+   surface, and that error is invisible to its author — which is why the
+   independent pass scrutinizes flagged spots, not just plain text.
 
 3. **Independently verify — `Agent(general-purpose)`, a DIFFERENT session.**
    Dispatch a SEPARATE agent (independence is the whole point) to re-read the
