@@ -586,7 +586,7 @@ quotes:
     source:
       path: government/usaspending-w519tc23f0545.txt
       location: '"description" field, CONT_AWD_W519TC23F0545_9700_W519TC23G0042_9700'
-    significance: 'USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (AI Talent 2.0 BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).'
+    significance: 'USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).'
     statement_date: '2023-09-25'
   - id: q43
     added_date: '2026-05-22'
@@ -894,7 +894,7 @@ timeline:
   - id: t16
     added_date: '2026-04-30'
     date: '2023-09-25'
-    event: 'W519TC23F0545 awarded — CDAO Algorithmic Warfare and Public Affairs task order (parent W519TC23G0042 AI Talent 2.0 BOA), $1,592,695.'
+    event: 'W519TC23F0545 awarded — CDAO Algorithmic Warfare and Public Affairs task order (parent W519TC23G0042 BOA), $1,592,695.'
     category: contract
     source:
       path: government/usaspending-w519tc23f0545.txt
@@ -1108,7 +1108,7 @@ contracts:
     value: '$1,592,695'
     source:
       path: government/usaspending-w519tc23f0545.txt
-      location: '"description" field; parent IDV W519TC23G0042 (AI Talent 2.0 BOA)'
+      location: '"description" field; parent IDV W519TC23G0042 (BOA)'
   - id: c9
     added_date: '2026-04-30'
     contract_number: HQ003424C0046

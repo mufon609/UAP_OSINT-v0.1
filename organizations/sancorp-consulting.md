@@ -375,7 +375,7 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (AI Talent 2.0 BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).
+### USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship (or8).
 
 > THE PURPOSE OF THIS ACTION IS FULFILL CDAO'S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLIC AFFAIRS SUPPORT. THIS TASK ORDER PROVIDES TECHNICAL WRITER AND GRAPHIC DESIGNER SUPPORT FOR THE CDAO.
 
@@ -713,7 +713,7 @@ _No personnel attested in primary sources to date._
 | 2023-05-19 | Robert Skvarla, Jr. filed FOIA cases 23-F-0905 (AARO/Sancorp) and 23-F-0906 (IPMO/Sancorp) with DoD/OUSD(I&S). | foia | news/muckrock-foia-23-f-0905-wayback-20260430.html |  |
 | 2023-05-25 | HQ003423C0061 awarded — Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services, $3,021,082 (IPMO continuation). | contract | government/usaspending-hq003423c0061.txt |  |
 | 2023-09-11 | DoD FOID released FOIA 23-F-1114 (John Greenewald) — 125 pages responsive, 11 pages withheld in their entirety per (b)(5), portions of the remaining 114 pages exempt from release per (b)(4) and (b)(6) — including the AARO contract Performance Work Statement; and 23-F-0905 (Skvarla) partial response. | foia | government/foia-23-f-0905-final-grant-in-part.pdf |  |
-| 2023-09-25 | W519TC23F0545 awarded — CDAO Algorithmic Warfare and Public Affairs task order (parent W519TC23G0042 AI Talent 2.0 BOA), $1,592,695. | contract | government/usaspending-w519tc23f0545.txt |  |
+| 2023-09-25 | W519TC23F0545 awarded — CDAO Algorithmic Warfare and Public Affairs task order (parent W519TC23G0042 BOA), $1,592,695. | contract | government/usaspending-w519tc23f0545.txt |  |
 | 2024-05-31 | HQ003424C0046 awarded — Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services, $5,751,921 (IPMO continuation). | contract | government/usaspending-hq003424c0046.txt |  |
 | 2024-07-23 | HQ003424F0411 awarded — LABOR task order to OASD Homeland Defense and Hemispheric Affairs / OASD Nuclear and Countering Weapons of Mass Destruction (parent 47QRAA22D00C4), $11,214,091 — largest single Sancorp award. | contract | government/usaspending-hq003424f0411.txt |  |
 | 2024-08-21 | Joo Y. Chung (PCLT) AFFIRMED FOID withholding on FOIA 23-F-0905 in 23-A-0905-A1 Appellate Response. | foia | government/foia-23-a-0905-a1-appellate-response.pdf |  |

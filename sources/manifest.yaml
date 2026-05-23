@@ -1420,12 +1420,12 @@
 - url: https://mondovisione.com/media-and-resources/news/c5-partners-appoints-former-us-national-security-agency-director-of-operations/
   status: archived
   archive_status: 3
-  wayback_date: '2018-05-17'
+  wayback_date: '2017-04-21'
   artifacts:
   - format: html
     archived_date: '2026-04-30'
     path: news/mondovisione-c5-partners-moultrie-nsa-20170306.html
-    note: 'C5 Capital announcement (March 6, 2017): C5 Partners appoints former NSA Director of Operations Ron Moultrie. Source for audit § 5.2 — Moultrie joined C5 Capital as Strategic Partner in early 2017.'
+    note: 'C5 Capital announcement (dateline 03/02/2017; headline "C5 Partners Appoints Former US National Security Agency Director Of Operations, Ron Moultrie, As A New Strategic Partner"): C5 Partners appoints former NSA Director of Operations Ron Moultrie as a Strategic Partner; "Ron joined C5 in January 2017." Source for audit § 5.2 — Moultrie joined C5 Capital as Strategic Partner in early 2017. Local file is the full-body 2017-04-21 Wayback id_ snapshot (the live mondovisione.com page now serves a JS/cookie-wall shell with no extractable body).'
 - url: https://newparadigminstitute.org/learn/library/using-the-wall-street-journal-the-pentagon-is-gaslighting-the-public-on-ufos-again/
   status: archived
   archive_status: 3
@@ -3975,7 +3975,7 @@
   - format: txt
     archived_date: '2026-04-30'
     path: government/usaspending-w519tc23f0545.txt
-    note: 'USAspending JSON record for Sancorp CDAO Algorithmic Warfare and Public Affairs task order W519TC23F0545 (parent W519TC23G0042 — AI Talent 2.0 BOA). Total obligation: $1,592,695. Signed 2023-09-25 → end 2025-09-27. Awarded by Department of the Army. Description: ''THE PURPOSE OF THIS ACTION IS FULFILL CDAO''''S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLI[c affairs]''. Per Sancorp Past Performance: ''Department of Defense, Chief Digital and Artificial Intelligence Office, Algorithmic Warfare/Public Affairs.'''
+    note: 'USAspending JSON record for Sancorp CDAO Algorithmic Warfare and Public Affairs task order W519TC23F0545 (parent W519TC23G0042 — BOA). Total obligation: $1,592,695. Signed 2023-09-25 → end 2025-09-27. Awarded by Department of the Army. Description: ''THE PURPOSE OF THIS ACTION IS FULFILL CDAO''''S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLI[c affairs]''. Per Sancorp Past Performance: ''Department of Defense, Chief Digital and Artificial Intelligence Office, Algorithmic Warfare/Public Affairs.'''
 - url: https://www.usaspending.gov/award/CONT_AWD_W912CL25CA005_9700_-NONE-_-NONE-
   status: archived
   archive_status: 3
