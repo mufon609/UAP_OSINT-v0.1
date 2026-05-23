@@ -116,7 +116,7 @@ can read clean while artifact-level warnings stand.
 | `/documents/written-testimony-kirkpatrick-2023` | primary-source-confirmed | gov-doc |
 | `/documents/wsj-pentagon-disinformation-ufo-mythology-2025` | primary-source-confirmed | non-gov-doc |
 
-### Transcripts (11)
+### Transcripts (12)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -125,6 +125,7 @@ can read clean while artifact-level warnings stand.
 | `/transcripts/2023-07-26-house-graves` | primary-source-confirmed | hearing |
 | `/transcripts/2023-07-26-house-grusch` | primary-source-confirmed | hearing |
 | `/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026` | primary-source-confirmed | other |
+| `/transcripts/jre-2194-elizondo-2024` | primary-source-confirmed | other |
 | `/transcripts/lucistrust-rending-veils-ryder-2017` | primary-source-confirmed | other |
 | `/transcripts/mysterywire-lacatski-kelleher-knapp-2021` | primary-source-confirmed | other |
 | `/transcripts/weaponized-038-lacatski-kelleher-2023` | primary-source-confirmed | other |

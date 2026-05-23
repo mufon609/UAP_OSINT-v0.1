@@ -64,9 +64,15 @@ manifest). Both behaved per contract. Paths still unverified end-to-end:
 - **role 2 + role 3 integrated inside a full `/build`** with a genuine
   external-source gap — so far they have run standalone, not as the
   external-gap branch of a fresh orchestration.
-- the **`caption` and `foia` worker kinds** — only `pdf` + `html` have been hit.
+- the **`foia` worker kind** — `caption` is now exercised (the all-internal
+  `jre-2194-elizondo-2024` transcript build hit it end-to-end: internal-survey →
+  caption worker → builder → audit). `pdf` + `html` + `caption` done; only `foia`
+  remains, and no load-bearing *unarchived* FOIA source currently exists to build
+  (every referenced FOIA doc is already archived) — wait for a genuine FOIA gap
+  rather than manufacturing one.
 - **error routing** (`route_failure.py`) — no validator failure has needed
-  routing on a clean run.
+  routing on a clean run (the caption build was clean; its audit findings were
+  applied via builder re-entry, not a routed check failure).
 
 Drive a build that forces these paths (a target with an external-source
 gap + a caption/FOIA source); confirm each `--phase X` fires exactly the
