@@ -98,18 +98,23 @@ extracted, references region image-verified). Remaining work:
 
 **(a) Re-level DIRD density against the rubric.** Audit each built DIRD's quote
 set against the rubric — the target is each major section's finding captured, NOT
-a quote-count (`### Density is source-driven`). dird-24 is the clearest
-under-extraction (9 quotes — frame + endpoints only; its Sections I–VI body is
-unquoted, and the citations pilot did NOT touch the body); dird-04 (55 quotes) is
-audited for whether each quote is a distinct subsection finding. Each re-level
-requires image-verifying the relevant OCR-sibling body regions against the PDF
-first (the built DIRDs verified only their already-quoted regions — see the
-dird-24 sibling note for the precedent). Use `coverage-suggest.py` + the rubric.
-Re-level the whole set for consistency, not dird-04 in isolation.
+a quote-count (`### Density is source-driven`). **dird-24 DONE** (2026-05-24,
+9 → 19 quotes): captured §II Cole-Puthoff thermodynamics / Forward's
+no-continuous-extraction limit / "no practicable technique demonstrated", §III
+QED + SED origin of the ZPF, §IV Koch et al. corroboration, the §V/Summary
+ZPF-modes-placeholder + new-boundary-conditions findings, and §VI SED-inadequate
+/ QED-vacuum-degradable conclusions; quotes renumbered to document order; the
+equation/superscript energy-density passages intentionally left unquoted. Each
+re-level requires image-verifying the relevant OCR-sibling body regions against
+the PDF first (the built DIRDs verified only their already-quoted regions — see
+the dird-24 sibling note for the precedent). Use `coverage-suggest.py` + the
+rubric. Remaining: dird-04 (55 quotes) audited for whether each quote is a
+distinct subsection finding (likely over the bar, not under); dird-01/02/03/15/26
+audited for any skipped section findings. Re-level the set for consistency.
 
 | DIRD | pages | quotes | quotes/page |
 |---|---|---|---|
-| dird-24 quantum-vacuum-energy-extraction | 58 | 9 | 0.16 |
+| dird-24 quantum-vacuum-energy-extraction (RE-LEVELED → 19) | 58 | 9→19 | 0.33 |
 | dird-26 field-effects | 39 | 21 | 0.54 |
 | dird-01 metallic-glasses | 31 | 17 | 0.55 |
 | dird-03 pulsed-hpm | 38 | 23 | 0.61 |

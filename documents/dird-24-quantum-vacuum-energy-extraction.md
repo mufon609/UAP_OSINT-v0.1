@@ -116,6 +116,66 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 
 ---
 
+### Thermodynamics finding — Cole and Puthoff verified that generic ZPF energy-extraction schemes are not contradictory to the laws of thermodynamics
+
+> Cole and Puthoff (Reference 11) verified that (generic) energy extraction schemes are not contradictory to the laws of thermodynamics.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 8, ¶ (II. Historical Concepts) |
+
+---
+
+### Thermodynamic limit — a net cyclical Casimir process cannot continually extract energy without violating the second law; Forward's process cannot be cycled for continuous extraction
+
+> However, if one is considering a net cyclical process on the basis of, say, the Casimir effect, then energy would not be able to be continually extracted without a violation of the second law of thermodynamics. Thus, Forward’s process cannot be cycled to yield a continuous extraction of energy.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 9, ¶ (II. Historical Concepts) |
+
+---
+
+### Section II finding — although several novel ZPF energy-extraction mechanisms have been proposed, no practicable technique has been demonstrated in the laboratory
+
+> Although several novel ZPF energy extraction mechanisms have been proposed in the popular and technical literature, no practicable technique has been successfully demonstrated in the laboratory.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 10, ¶ (II. Historical Concepts) |
+
+---
+
+### QED origin of the ZPF — the basis of the zero-point field is typically attributed to the Heisenberg Uncertainty Principle
+
+> The basis of the ZPF is typically attributed to the Heisenberg Uncertainty Principle.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 11, ¶ (III. Origin of Zero-Point Field Energy — Elements of QED Theory) |
+
+---
+
+### SED origin of the ZPF — stochastic electrodynamics identifies the ZPF's origin as a direct consequence of a classical ZPF background
+
+> An alternative to QED, stochastic electrodynamics (SED) identifies the origin of the ZPF as a direct consequence of a classical ZPF background.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 13, ¶ (III. Origin of Zero-Point Field Energy — Elements of SED Theory) |
+
+---
+
 ### Lockheed-Martin involvement — a subset of the proposed energy-extraction concepts underwent preliminary evaluation by Lockheed-Martin review panels of internal R&D personnel and outside experts
 
 > A subset of our proposed concepts has undergone preliminary evaluation by Lockheed-Martin review panels involving both internal R&D personnel and outside experts on theory and experimentation (V. Teofilo, private communication, 2005).
@@ -128,6 +188,42 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 
 ---
 
+### Experimental corroboration — the Koch et al. voltage-fluctuation result is striking corroboration of the reality of the ZPF and proves the ZPF can do real work
+
+> The Koch et al. result is striking corroboration of the reality of the ZPF and proves that the ZPF can do real work (cause measurable currents).
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 14, ¶ (IV. Review of Selected Experiments) |
+
+---
+
+### Theoretical finding — ZPF modes are only a placeholder for a quantum field's vacuum-state calculations; the hardwired modes cannot be driven below the ground state, only the overall renormalized vacuum state energy can
+
+> In accordance with the discussion in Sections III and V, the ZPF modes serve only as a placeholder for a quantum field’s vacuum state calculations. Therefore, the “hardwired” ZPF modes cannot be driven below the ground state. It is only a quantum field’s overall (renormalized) vacuum state energy that can be driven down to or below the ground state.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy) |
+
+---
+
+### Research direction — the conjectured key to vacuum energy extraction is inventing new boundary conditions (or combinations/methods) that perturb a quantum field's ZPF modes
+
+> Therefore, one can conjecture that the key to exploring the possibility of extracting energy from the vacuum is to invent new boundary conditions or new combinations of boundary conditions as well as new methods of modifying the quantum vacuum boundary conditions that perturb the ZPF modes of any quantum field under study.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy) |
+
+---
+
 ### Conclusion — second-quantized QED, based on an immutable, non-degradable vacuum, does not support the concept of continuous vacuum energy conversion
 
 > First, one sees that although the original inspiration for the concept of continuous vacuum energy extraction came from second-quantized QED theory, it must be acknowledged that QED, as an axiomatic, quantized formalism based on the concept of an immutable, non-degradable vacuum, does not support the concept of continuous vacuum energy conversion. Given that second-quantized QED is our most comprehensive quantum theory to date, its lack of support for continuous vacuum energy conversion must be given serious consideration.
@@ -137,6 +233,30 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
 | Location | p. 45, ¶1 (VI. Conclusion: The Way Forward) |
+
+---
+
+### Conclusion — SED has enough shortcomings in its current state that it is not at present an adequate tool for assessing potential vacuum energy conversion
+
+> Second, SED as an alternative theory, whose formalism has been taken to support the concept of continuous vacuum energy conversion, has enough shortcomings in its current state of development that one must conclude that it is not at present an adequate tool for the assessment of potential vacuum energy conversion.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 45, ¶ (VI. Conclusion: The Way Forward) |
+
+---
+
+### Conclusion — the QED vacuum is in fact degradable under a variety of Casimir effects, quantum-optical and gravitation-induced vacuum squeezing, and gravitational redshifting
+
+> It has been shown that the QED vacuum is in fact degradable under the action of a variety of Casimir effects, quantum optical vacuum squeezing, gravitation-induced vacuum squeezing, or gravitational redshifting.
+
+| Field | Value |
+|---|---|
+| Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
+| Location | p. 45, ¶ (VI. Conclusion: The Way Forward) |
 
 ---
 
