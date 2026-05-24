@@ -43,6 +43,25 @@ Audit goals:
    artifact edit + rebuild, skipping the Worker. Both skip the External
    Investigator (material already archived). Emit `adjacent_needs_update[]`
    with each node + its shape + scratch path.
+8. **Family comparability (source-anchored).** Per `meta/conventions.md`
+   "Comparability standard", compare the target against its family peers —
+   same `type`, and within type the same `archetype` (people) or `kind`
+   (organizations / documents / events). For each **source-anchored** optional
+   section a peer populates that the target lacks — `## Primary-Source
+   Contradictions` (`rumors[].status: primary-source-disputed`),
+   `## Public-Record Claims Without Primary Source`
+   (`not-primary-source-established`), `## Source-Form Notes` /
+   `## Preserved Disagreements` (`naming_quirks[].resolution`), `## References`
+   (document `cited_works[]`) — read the target's OWN archived sources and ask
+   whether the same class of material is present-but-uncaptured. Read the peer
+   artifacts directly (`meta/research/{peer}.yaml`); no tooling needed for a
+   handful of peers. **Recommend-only, and a source re-check — never a count
+   match.** A peer carrying a section is not license to add entries until the
+   target "matches" (that is the pressure `### Density is source-driven`
+   forbids); add an entry only if the target's source attests it, and if it
+   doesn't, the asymmetry is correct. Synthesis sections (Description,
+   Background, Credibility Notes) are out of scope. Emit any candidates in the
+   auditor stub.
 
 Recover a 404'd source before calling it lost: a manifest entry with
 `status: pending` + `wayback_date` set is recoverable via the fuzzy-timestamp

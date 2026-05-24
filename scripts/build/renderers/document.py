@@ -6,6 +6,8 @@ required_sections — Provenance is gov-doc-only; all other sections
 emit on both kinds.
 """
 
+import re
+
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
@@ -27,6 +29,7 @@ EMITS = frozenset({
     "Key Passages",
     "Source-Form Notes",
     "Preserved Disagreements",
+    "References",
     "Associated Nodes",
 })
 
@@ -122,6 +125,46 @@ def render_key_passages(artifact):
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 
 
+def render_cited_works(artifact):
+    """Document References — the source document's formal citation list,
+    transcribed verbatim (source spelling preserved, OCR sic). Emits only
+    when ``cited_works[]`` has entries; a document with no reference list
+    (empty list) omits the section entirely.
+
+    Renders each entry's ``citation_verbatim`` as a keyed bullet (soft-wrap
+    newlines collapsed to spaces — the same whitespace normalization the
+    citation-verbatim check applies). The split bibliographic fields
+    (``author`` / ``year`` / ``title``) are the artifact-side query
+    dimension (recurring-author network) and are not separately rendered —
+    the verbatim entry already carries them, and the archived source is the
+    fidelity backstop."""
+    works = [w for w in (artifact.get("cited_works") or []) if isinstance(w, dict)]
+    if not works:
+        return ""
+
+    def _key(w):
+        k = str(w.get("citation_key", "")).strip()
+        return (0, int(k)) if k.isdigit() else (1, k)
+
+    lines = ["## References", ""]
+    lines.append(
+        "Reference list carried by the source document, transcribed verbatim "
+        "(source spelling preserved). Captured as an authorship-network "
+        "dimension; not part of the document's argument."
+    )
+    lines.append("")
+    for w in sorted(works, key=_key):
+        key = str(w.get("citation_key", "")).strip()
+        verbatim = " ".join((w.get("citation_verbatim") or "").split())
+        # citation_verbatim is faithful and includes the source's own leading
+        # [N] marker; strip it for display since the marker is re-emitted in
+        # bold from citation_key (avoids a doubled "[1] [1]" prefix).
+        verbatim = re.sub(r"^\[\d+\]\s*", "", verbatim)
+        marker = f"**[{key}]** " if key else ""
+        lines.append(f"- {marker}{verbatim}")
+    return "\n".join(lines) + "\n"
+
+
 def render_body_document(artifact, node_kind):
     """Document-type body composition. H1 title stands alone — no
     ``---`` separator between H1 and first H2. Document nodes have no
@@ -138,6 +181,7 @@ def render_body_document(artifact, node_kind):
         render_key_passages(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
+        render_cited_works(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]

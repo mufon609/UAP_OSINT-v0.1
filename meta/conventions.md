@@ -1263,6 +1263,102 @@ secondary-source-only entries.
 
 ---
 
+## Comparability standard — same source-anchored treatment across a family
+
+Two nodes of the same kind get built in different sessions by different
+workers, and a source-anchored section one of them carries can quietly go
+missing on the other — not because the second node's sources lack the material,
+but because no one checked. `/organizations/ipmo` carries a
+`primary-source-disputed` rumor and so renders a `## Primary-Source
+Contradictions` section; `/organizations/aaro`, a peer `gov` organization with
+its own contested public claims, does not — and nothing in the build or audit
+flow asked whether it should. That gap is the failure this standard closes.
+
+**The principle.** Members of a comparable node family receive the same
+*source-anchored treatment*. When one member carries a source-anchored optional
+section or dimension, every peer is obliged to be checked — at build time and at
+audit time — for the same class of material against its own archived sources.
+The standard governs the *checking*, never the *output*: presence stays
+content-driven. A peer emits the section if and only if its sources support it.
+A `gov` organization with no archived primary source refuting a circulating
+claim correctly carries no `## Primary-Source Contradictions` section, and that
+is not a defect.
+
+**Family axes.** "Comparable" means same `type`, and within type the same
+`archetype` (people) or `kind` (organizations, documents, events) — the grouping
+the schema already uses to decide conditional sections. No separate "family"
+field exists or is needed. The `gov` organizations (aaro, ipmo, oni, ousd-is,
+uaptf) are one family; the `eyewitness` people (fravor, dietrich, graves)
+another.
+
+**In scope — source-anchored surfaces only.** The treatment that must converge
+is the evidentiary handling of source material, which surfaces as the optional
+sections rendered by `scripts/build/renderers/_universal.py` plus the document
+`cited_works` dimension:
+
+- `## Primary-Source Contradictions` (`rumors[].status: primary-source-disputed`)
+- `## Public-Record Claims Without Primary Source` (`rumors[].status: not-primary-source-established`)
+- `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
+- `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
+- `## References` (document `cited_works[]`)
+
+**Out of scope — synthesis prose, and the lighter-surface node types.** The
+synthesis fields (`description`, `background`, `top_relevance`,
+`credibility_notes`, free-prose timeline) are never convergence candidates;
+their shape is the contributor's judgment of one node's evidence, not a
+cross-node obligation. Likewise the deliberate decision that document /
+transcript / event / media / location nodes omit synthesis-heavy sections to
+minimize prose-drift surface is correct and is not a divergence to "fix."
+
+**This is not a count target.** Read this standard alongside `### Density is
+source-driven` above. That section forbids comparison framings like "comparable
+nodes have N entries; this one has fewer — anything to add?" This standard does
+not reopen them. It operates one level up, on *presence-class* — whether a peer
+treats a category of source material at all — not on entry counts. The correct
+response to a surfaced asymmetry is to re-check the lagging node's sources for
+the same class of material, and to add an entry only if a source attests it.
+"Peer X has this section; add entries until this node matches" is exactly the
+pressure the density rule prohibits, and it stays prohibited.
+
+### Document-corpus extraction — the DIRD passage rubric
+
+The same principle governs *within* a document corpus, where the unit of
+divergence is not a section but a category of passage. The AAWSAP Defense
+Intelligence Reference Documents (DIRDs) are commissioned program products whose
+substance is relevant by program proxy; built one per session, they drifted to a
+~10× range in extraction density because each worker judged "load-bearing"
+afresh with no shared selection rule. The rubric below replaces that judgment
+with a category checklist, so density falls out of consistent selection rather
+than becoming a target in its own right.
+
+Every DIRD node captures, where the source contains it:
+
+- **Provenance / front matter** — title, author(s), preparing organization,
+  date, contract/administrative markings.
+- **Thesis and scope** — the document's stated purpose and the boundary of what
+  it surveys.
+- **Each major section's finding** — the load-bearing claim or result of every
+  numbered section, not only the summary. This is the category most often
+  dropped (dird-24 captured its frame and endpoints but none of its Section I–VI
+  body); capturing it is what levels an under-extracted DIRD up.
+- **Methods / approach** — how the work the document characterizes was or would
+  be done, where the source describes it.
+- **Conclusions / recommendations** — the document's closing assessment and any
+  recommended next steps.
+- **Acknowledgements** — named contributors and collaborating institutions (an
+  authorship-network signal; e.g. dird-24 acknowledges Puthoff).
+- **References** — the formal citation list, captured as `cited_works[]` (see
+  the document-artifact schema), not as `quotes[]`.
+
+`scripts/tools/coverage-suggest.py` is the forward-coverage aid: it surfaces
+substantive source paragraphs that no quote references, which the contributor
+reads against this rubric to find a section finding that was skipped. The rubric
+names what must be *considered*; the source still decides what is *present*. It
+is not a quote-count target — a short DIRD with few sections yields few quotes,
+and that is correct.
+
+---
+
 ## Three-layer evidentiary architecture
 
 The repository carries three distinct evidentiary node layers sitting on

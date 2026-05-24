@@ -278,6 +278,17 @@ types:
       - filing
       - database-extract
       - other
+    optional_sections:
+      - Source-Form Notes
+      - Preserved Disagreements
+      - References
+    # Source-Form Notes / Preserved Disagreements / References are rendered
+    # conditionally by the renderer from artifact-side content (naming_quirks
+    # entries with resolution preserve-as-sic-in-quotes / disputed; populated
+    # cited_works[]). No frontmatter gate, so no conditionally_required entry —
+    # section auto-suppressed by the renderer when its source data is empty;
+    # this optional_sections list declares acceptability (mirrors the finding
+    # type, and matches renderer EMITS via renderer-coverage.py).
     section_rules:
       Key Passages: {requires_quote_attribution: true}
 

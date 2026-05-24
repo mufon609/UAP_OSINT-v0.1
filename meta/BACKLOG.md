@@ -84,18 +84,28 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A3 — DIRD extraction process: consistency standard (open) + capture citations (decided)
+### A3 — DIRD extraction: re-level the corpus against the rubric + extract remaining citations
 
-Two facets of one question — *how should an AAWSAP DIRD document node be
-extracted?* — surfaced when a relevance audit of `dird-04-biomaterials` (55
-quotes) found it a ~3× outlier against its siblings. The size gap is a symptom;
-the underlying issue is that there is **no shared extraction standard** for DIRD
-document nodes, so each was built to whatever its worker session judged
-"load-bearing" under "density source-driven, no count target."
+The DIRD extraction standard now exists — the passage-selection rubric in
+`meta/conventions.md` "Document-corpus extraction — the DIRD passage rubric"
+(provenance / thesis-and-scope / each section's finding / methods / conclusions /
+acknowledgements / references), under the "Comparability standard". The
+`cited_works` dimension is modeled (`schema-research-artifact.yaml`
+`cited_work_entry`; required-but-emptyable on every document), rendered
+(`## References` in `renderers/document.py`), source-fidelity-gated
+(`scripts/checks/cited_works.py`), and proven on dird-24 (113 references
+extracted, references region image-verified). Remaining work:
 
-**(a) Extraction-density consistency — OPEN QUESTION (a fresh session decides;
-no recommendation is recorded here on purpose).** The seven built DIRDs span a
-~10× density range with no principled reason:
+**(a) Re-level DIRD density against the rubric.** Audit each built DIRD's quote
+set against the rubric — the target is each major section's finding captured, NOT
+a quote-count (`### Density is source-driven`). dird-24 is the clearest
+under-extraction (9 quotes — frame + endpoints only; its Sections I–VI body is
+unquoted, and the citations pilot did NOT touch the body); dird-04 (55 quotes) is
+audited for whether each quote is a distinct subsection finding. Each re-level
+requires image-verifying the relevant OCR-sibling body regions against the PDF
+first (the built DIRDs verified only their already-quoted regions — see the
+dird-24 sibling note for the precedent). Use `coverage-suggest.py` + the rubric.
+Re-level the whole set for consistency, not dird-04 in isolation.
 
 | DIRD | pages | quotes | quotes/page |
 |---|---|---|---|
@@ -107,35 +117,16 @@ no recommendation is recorded here on purpose).** The seven built DIRDs span a
 | dird-02 programmable-matter | 21 | 17 | 0.81 |
 | dird-04 biomaterials | 33 | 55 | 1.67 |
 
-The longest DIRD (dird-24, 58pp) has the fewest quotes (9) — a candidate for
-*under*-extraction; dird-04 (1.67/pg) is the high end. The investigation must
-decide: is dird-04 over-extracted, are the others (esp. dird-24) under-extracted,
-or both — and what is the consistent rule (a quote-density target, or, better, a
-selection rubric naming which categories of DIRD passage must be captured:
-provenance / thesis-and-scope / each section's finding / methods / conclusions /
-…) so density falls out of consistent selection rather than worker judgment?
-Context for the deciding session: not every passage needs explicit UAP content —
-a DIRD is an AAWSAP product, so its substance is relevant by program proxy, which
-argues against aggressive trimming; under-extraction risks losing material whose
-relevance only surfaces later. **Do not trim dird-04 in isolation** — resolve the
-standard, then re-level the whole DIRD set against it.
-
-**(b) Capture DIRD citations — DECIDED (implement; not an open question).** The
-DIRDs carry formal reference lists that the repo captures nowhere: dird-24 alone
-has a `References` section with ~206 citation markers, and **no document
-research-artifact has any citations/references field** — the schema doesn't model
-it. The AAWSAP-commissioned authors' citations are an investigative dimension
-(who they relied on; recurring cited authors; cross-DIRD / known-figure networks).
-The decision is to capture them as a new dimension. Implementation (for the same
-fresh session, since it is part of redefining DIRD extraction): design the schema
-representation on the document artifact type (a `cited_works` / `references`
-section), render it, and extract across the DIRD corpus (dird-24's reference list
-first). Decide granularity (full bibliographic entries vs. author+year+title).
+**(b) Extract `cited_works` for the rest of the corpus.** dird-24 done; extract
+the reference lists of the other DIRDs (and any other document carrying a formal
+reference list) into `cited_works[]`. Each OCR-scan DIRD's references region must
+be image-verified against the PDF before extraction (per the dird-24 sibling-note
+precedent). The recurring-author network is the payoff (e.g. Puthoff appears in 7
+dird-24 references plus its Acknowledgements).
 
 **Blocks:** none.
-**Blocked by:** none. Reserve for a session explicitly scoped to the DIRD
-extraction process (the density re-level + the citations schema/extraction are
-coupled — both redefine how a DIRD is extracted).
+**Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
+verification of the relevant region.
 
 ---
 
@@ -151,28 +142,24 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Cross-node structural-consistency audit
+### C1 — Apply the family-comparability audit to AARO's contested claims
 
-Comparable nodes diverge in load-bearing, **source-anchored** optional sections,
-with no standing check that surfaces the divergence. Observed:
+The cross-node comparability mechanism now exists — the "Comparability standard"
+in `meta/conventions.md` plus the recommend-only family-comparability goal in the
+auditor (`.claude/agents/auditor.md` goal 8, surfaced in `/audit`). Remaining is
+the one concrete observed asymmetry: `/organizations/aaro` carries no
+`## Primary-Source Contradictions` section while peer `gov` org
+`/organizations/ipmo` does. Run `/audit` on `aaro` and apply goal 8 — does AARO
+have a circulating public claim that an archived primary source actively refutes
+(warranting a `rumors[].status: primary-source-disputed` entry)?
+`/findings/aaro-denial-action-mismatch` is a lead. A **source re-check, not a
+count match**: add an entry only if a source attests it; if none does, the
+absence is correct.
 
-- An organization with publicly contested claims (`/organizations/aaro`) lacks the
-  **Primary-Source Contradictions** / **Public-Record Claims Without Primary Source**
-  sections a peer org (`/organizations/ipmo`) carries — the same source-anchored
-  treatment of contested public-record material applied to one node and not the other.
-- **Associated Nodes** is an unlabeled list while **Relationships** (person nodes)
-  labels the tie — the navigational surface drops the relation type.
-
-Convergence candidates **only** where the section is source-anchored (verbatim /
-contradiction material), never synthesis prose. **Out of scope:** the deliberate
-lighter-surface design — document / transcript / event / media / location nodes
-intentionally omit synthesis-heavy sections (Credibility Notes, free-prose Timeline)
-to minimize prose-drift surface; that asymmetry is correct and must not be "fixed."
-
-Mechanism to evaluate: a dedicated cross-node consistency pass — a new skill/agent run
-as a final audit over a built set, possibly section-specialized agents (one per
-recurring section family). Decide skill-vs-agent and whether it folds into `/audit`'s
-adjacent-node propagation before building.
+(The Associated-Nodes-vs-Relationships observation was resolved as **by-design** —
+Associated Nodes is an unlabeled post-build navigation surface; relation type
+lives on the source entity's Relationships row. Duplicating it onto every
+backlink is redundancy, not discipline. No change.)
 
 **Blocks:** none.
 **Blocked by:** none.

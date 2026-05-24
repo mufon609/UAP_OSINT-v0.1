@@ -169,6 +169,23 @@ conditional_keys:
     # Captures widely-reported claims circulating in public discourse
     # that lack primary-source support in this artifact
     # (fabrication-prevention mechanism).
+  cited_works:
+    required_when_any_of:
+      - target_node_type_in: [document]
+    # Formal reference / citation list carried by the source document
+    # (e.g. an AAWSAP DIRD's References section). Required-but-emptyable
+    # on every document artifact, exactly like the other source-anchored
+    # optional sections (rumors, contradictions): the KEY is always
+    # present (empty list when the document has no reference list, or one
+    # not yet captured); the `## References` SECTION renders only when
+    # entries exist. Captures the authorship-network dimension — who the
+    # commissioned authors relied on (recurring cited authors across the
+    # corpus). Entry shape: cited_work_entry below. The bibliographic
+    # split fields (author/year/title) are derived for queryability; the
+    # source-verified `citation_verbatim` line is the fidelity anchor
+    # (scripts/checks/cited_works.py confirms it appears in the source,
+    # OCR corruption preserved as-sic). NOT quotes[] — references are a
+    # distinct dimension, not verbatim passages of the document's argument.
   timeline:
     required_when_any_of:
       - target_node_type_in: [person, organization, event, finding]
@@ -1065,6 +1082,35 @@ naming_quirk_entry:
   # canonical: corrected form (e.g., "Leslie Kean")
   # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
 
+cited_work_entry:
+  required: [citation_key, author, citation_verbatim, source]
+  optional: [year, title]
+  # citation_key: the in-source reference marker as it appears, e.g. "1"
+  #   for "[1]" (store the bare label; the renderer re-brackets). Unique
+  #   within the artifact.
+  # author: author / originating-body position as it appears in the
+  #   reference, SOURCE FORM preserved (sic) — e.g. "DeWitt, B. S." or
+  #   "Birrell, N. D., and Davies, P. C. W.", or an institutional name when
+  #   the reference carries no person author. The authorship-network
+  #   field: greppable across the corpus for recurring cited authors.
+  # year / title: optional disambiguation fields (same author, multiple
+  #   works). Source form preserved; not separately rendered.
+  # citation_verbatim: the full reference entry exactly as it appears in
+  #   the source reference list, INCLUDING the source's own [N] marker
+  #   (sic — OCR artifacts preserved, never silently corrected). The
+  #   renderer re-emits the marker in bold from citation_key and strips
+  #   the leading [N] for display, so the marker is not doubled.
+  #   The fidelity anchor: scripts/checks/cited_works.py
+  #   substring-matches it against the extracted source text — the same
+  #   mechanical backstop verbatim_quotes applies to quotes[]. This is the
+  #   reader-visible content the `## References` renderer emits.
+  # source: object with path + location (path in manifest; location
+  #   anchors the reference list within the source, e.g.
+  #   "p. 56, References").
+  # No `note` / `significance` / free-prose field by design — bibliographic
+  # facts + the verbatim anchor only (the eliminated per-entry synthesis
+  # `.note` is not reintroduced here).
+
 # --- Validation invariants (enforced by scripts/build/validate-research.py) ---
 
 invariants:
@@ -1102,9 +1148,11 @@ invariants:
 
   # Other field-shape rules
   - "context (quotes) required on person artifacts; optional on document / transcript / media"
+  - "cited_work_entry.citation_verbatim appears verbatim in the cited source — enforced by cited_works (OCR sic preserved, never corrected)"
 
   # Conditional sections
   - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
+  - "cited_works section present iff target_node type == document (empty list permitted; populated drives the References section)"
   - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
   - "corroboration_items section present iff target_node archetype == eyewitness"
   - "program_involvement section present iff target_node archetype == institutional-actor"

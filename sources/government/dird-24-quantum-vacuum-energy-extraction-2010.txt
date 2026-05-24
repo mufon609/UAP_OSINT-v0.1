@@ -2417,13 +2417,13 @@ References
 [1] DeWitt, B. S., “Quantum Field Theory in Curved Spacetime,” Physics Reports, Vol.
 19C, 1975, pp. 295-357.
 
-[2] DeWitt, B. S., “Quantum gravity: the new synthesis,” Genera/ Relativity: An Einstein
+[2] DeWitt, B. S., “Quantum gravity: the new synthesis,” General Relativity: An Einstein
 Centenary Survey, edited by S. W. Hawking and W. Israel, Cambridge Univ. Press,
-Cambridge, 1979, pp. 680-745,
+Cambridge, 1979, pp. 680-745.
 
 [3] DeWitt, B. S., “The Casimir Effect in Field Theory,” Physics in the Making, Essays on
-Developments in 20% Century Physics, In Honour of H. B. G. Casimir, edited by A.
-Sarlemijn and J. Sparnaay, North-Holland Elsevier Science Pubi., New York, 1989, pp.
+Developments in 20th Century Physics, In Honour of H. B. G. Casimir, edited by A.
+Sarlemijn and J. Sparnaay, North-Holland Elsevier Science Publ., New York, 1989, pp.
 247-272.
 
 [4] Birrell, N. D., and Davies, P. C. W., Quantum fields in curved space, Cambridge
@@ -2432,16 +2432,16 @@ Univ. Press, Cambridge, 1984.
 [5] Casimir, H. B. G., “On the Attraction Between Two Perfectly Conducting Plates,”
 Proc. Kon. Ned. Akad. Wetensch., Vol. 51, 1948, pp. 793-796.
 
-[6] Lamoreaux, S. K., “Demonstration of the Casimir Force in the 0.6 to 6 um Range,”
+[6] Lamoreaux, S. K., “Demonstration of the Casimir Force in the 0.6 to 6 µm Range,”
 Physical Review Letters, Vol. 78, 1997, pp. 5-8.
 
-[7] Mohideen, U., “Precision Measurement of the Casimir Force from 0.1 to 0.9 um,”
+[7] Mohideen, U., “Precision Measurement of the Casimir Force from 0.1 to 0.9 µm,”
 Physical Review Letters, Vol. 81, 1998, pp. 4549-4552.
 
 [8] Chen, F., et al., “Theory confronts experiment in the Casimir force measurements:
 Quantification of errors and precision,” Physical Review A, Vol. 69, 2004, 022117.
 
-(9] Forward, R. L., “Alternate Propulsion Energy Sources,” Air Force Rocket Propulsion
+[9] Forward, R. L., “Alternate Propulsion Energy Sources,” Air Force Rocket Propulsion
 Laboratory, Air Force Space Tech. Ctr. Space Div., Air Force Systems Command, Final
 Report AFRPL TR-83-067, Edwards AFB, CA, 1983, pp. A1-A14.
 
@@ -2473,7 +2473,7 @@ UNCLASSIFIED / /S@Ra@EPEGHH= SEO
 
 UNCLASSIFIED / / F@R-OFFtGH-UGE-ONE——
 
-[17] de la Pefa, L., and Cetto, A. M., The Quantum Dice: An Introduction to Stochastic
+[17] de la Peña, L., and Cetto, A. M., The Quantum Dice: An Introduction to Stochastic
 Electrodynamics, Kluwer, Dordrecht, Holland, 1996.
 
 [18] Koch, R. H., Van Harlingen, D. J., and Clarke, J., “Quantum-Noise Theory for the
@@ -2488,7 +2488,7 @@ Letters, Vol. 47, 1981, pp. 1216-1219.
 in resistively shunted Josephson junctions,” Physical Review B, Vol. 26, 1982, pp. 74-
 87.
 
-[21] Blanco, R., Franga, H. M., Santos, E., and Sponchiado, R. C., “Radiative noise in
+[21] Blanco, R., França, H. M., Santos, E., and Sponchiado, R. C., “Radiative noise in
 circuits with inductance,” Physics Letters A, Vol. 282, 2001, pp. 349-356.
 
 [22] Boyer, T. H., “Random electrodynamics: The theory of classical electrodynamics
@@ -2506,13 +2506,13 @@ Hydrogen Atom Interacting with Circularly Polarized Electromagnetic Radiation,�
 Physical Review E, Vol. 69, 2004, 016601.
 
 [26] Maclay, G. J., “Analysis of zero-point electromagnetic energy and Casimir forces in
-conducting rectangular cavities,” Physica/ Review A, Vol. 61, 2000, 052110.
+conducting rectangular cavities,” Physical Review A, Vol. 61, 2000, 052110.
 
 [27] Haisch, B., and Moddel, G., “Quantum Vacuum Energy Extraction,” United States
 Patent No. 7,379,286 B2, May 2008.
 
 [28] Puthoff, H. E., Little, S. R., and Ibison, M., “Discussion of experiment involving
-lowering of ground state energy for oscillation in a Casimir cavity,” Int? Conf. on
+lowering of ground state energy for oscillation in a Casimir cavity,” Int’l Conf. on
 Squeezed States and Uncertainty Relations (ICSSUR 2001); Special Session on Topics
 
 of Physics Related to Stochastic Electrodynamics, Boston University, 2001.
@@ -2534,12 +2534,12 @@ UNCLASSIFIED / /5@2-@5F56RR= HSE ONtT”
 
 UNCLASSIFIED / / ®@R-@FE2GR HSE Odie
 
-[32] Lin, S. ¥., Moreno, J., and Fleming, J. G., “Three-dimensional photonic-crystal
+[32] Lin, S. Y., Moreno, J., and Fleming, J. G., “Three-dimensional photonic-crystal
 emitter for thermal photovoltaic power generation,” Applied Physics Letters, Vol. 83,
 2003, pp. 380-382.
 
 [33] Iannuzzi, D., Lisanti, M., Munday, J. N., and Capasso, F., “The design of long
-range quantum electrodynamical forces and torques between macrascopic bodies,”
+range quantum electrodynamical forces and torques between macroscopic bodies,”
 Solid State Communications, Vol. 135, 2005, pp. 618-626.
 
 [34] Forward, R. L., “Apparent Endless Extraction of Energy from the Vacuum by Cyclic
@@ -2555,7 +2555,7 @@ Proc. Vol. 458, AIP Press, New York, 1999, pp. 968-973.
 
 [36] Shoulders, K. R., EV: A Tale of Discovery, Jupiter Technologies, Austin, TX, 1987.
 
-[37] Stenhoff, M., Balf Lightning: An Unsolved Problem in Atmospheric Physics, Kluwer
+[37] Stenhoff, M., Ball Lightning: An Unsolved Problem in Atmospheric Physics, Kluwer
 Academic/Plenum Publ., New York, 1999.
 
 [38] Bostick, W. H., “Experimental Study of Ionized Matter Projected Across Magnetic
@@ -2583,7 +2583,7 @@ Electrodeless Plasma Gun,” Physics of Fluids, Vol. 6, 1963, p. 418.
 electron-beam filaments,” Physical Review A, Vol. 22, 1980, pp. 2211-2217.
 
 [46] Piestrup, M. A., Puthoff, H. E., and Ebert, P. J., “Measurement of Multiple-Electron
-Emission in Single Field-Emission Events,” Journaf of Applied Physics, Vol. 82, 1997, pp.
+Emission in Single Field-Emission Events,” Journal of Applied Physics, Vol. 82, 1997, pp.
 5862-5864.
 
 46
@@ -2613,7 +2613,7 @@ International Journal of Theoretical Physics, Vol. 46, 2007, pp. 3005-3008.
 [52] Zavattini, E., et al., “Experimental Observation of Optical Rotation Generated in
 Vacuum by a Magnetic Field,” Physical Review Letters, Vol. 96, 2006, 110406.
 
-[53] Fulcher, L. P., Rafelski, J., and Klein, A., “The decay of the vacuum,” Scfentific
+[53] Fulcher, L. P., Rafelski, J., and Klein, A., “The decay of the vacuum,” Scientific
 American, Vol. 241, 1979, pp. 150-159.
 
 [54] Rafelski, J., and Miller, B., The Structured Vacuum: Thinking About Nothing,
@@ -2628,12 +2628,12 @@ Coherence and Quantum Optics, edited by L. Mandel and E. Wolf, Plenum Press, New
 York, 1973, pp. 35-81.
 
 [57] Dirac, P. A. M., in Directions in Physics, edited by H. Hora and J. R. Shepanski,
-John Wiley & Sons, New York, 1978,
+John Wiley & Sons, New York, 1978.
 
 [58] Schwarzschild, B., “High-redshift supernovae indicate that dark energy has been
 around for 10 billion years,” Physics Today, Vol. 66, 2007, pp. 21-25.
 
-[59] Particle Data Group, “Review of Particle Physics,” Journa/ of Physics G: Nuclear and
+[59] Particle Data Group, “Review of Particle Physics,” Journal of Physics G: Nuclear and
 Particle Physics, Vol. 33, 2006, pp. 210-232.
 
 [60] Weinberg, S., “The Cosmological Constant Problem,” Reviews of Modern Physics,
@@ -2661,15 +2661,15 @@ Systems by the Casimir force,” Science, Vol. 291, 2001, pp. 1941-1944.
 [64] Sakharov, A. D., “Vacuum Quantum Fluctuations in Curved Space and the Theory
 of Gravitation,” Soviet Physics Doklady, Vol. 12, 1968, pp. 1040-1041.
 
-[65] Peacock, J. A., Cosmological! Physics, Cambridge Univ. Press, Cambridge, 1999,
-pp. 25-26,
+[65] Peacock, J. A., Cosmological Physics, Cambridge Univ. Press, Cambridge, 1999,
+pp. 25-26.
 
 [66] Jaynes, E. T., “Probability in Quantum Theory,” Complexity, Entropy, and the
 Physics of Information, edited by W. Zurek, Addison-Wesley, New York, 1990, pp. 381-
 403.
 
 [67] Jaynes, E. T., “Electrodynamics Today,” Coherence and Quantum Optics, edited by
-L. Mandel and £. Wolf, Plenum Press, New York, 1978, pp. 495-509.
+L. Mandel and E. Wolf, Plenum Press, New York, 1978, pp. 495-509.
 
 [68] Boyer, T. H., “Equilibrium of Random Classical Electromagnetic Radiation in the
 Presence of a Nonrelativistic Nonlinear Electric Dipole Oscillator,” Physical Review D,
@@ -2688,7 +2688,7 @@ Matter for Classical Relativistic Multiperiodic Systems. II. Study of Radiative 
 with Rayleigh-Jeans Radiation,” Physical Review D, Vol. 29, 1984, pp. 2240-2254.
 
 [72] Cole, D. C., “Simulation Results Related to Stochastic Electrodynamics,”
-Proceedings of the Int? Conference on Quantum Theory: Reconsideration of
+Proceedings of the Int’l Conference on Quantum Theory: Reconsideration of
 Foundations-3, edited by G. Adenier, A. Khrennikov, and T. M. Nieuwenhuizen, AIP
 Conference Proceedings Vol. 810, No. 1, New York, 2005, pp. 99-113.
 
@@ -2700,7 +2700,7 @@ the understanding of quantum mechanics,” Cornell University Library E-Print Ph
 Abstracts Archive arXiv.org Database (online database), URL:
 http://arxiv.org/PS_cache/quant-ph/pdf/0501/0501011.pdf (cited 4 Jan. 2005).
 
-[75] Barut, A. 0., “Quantum electrodynamics based on self-energy versus quantization
+[75] Barut, A. O., “Quantum electrodynamics based on self-energy versus quantization
 of fields: Illustration by a simple model,” Physical Review A, Vol. 34, 1986, pp. 3502-
 3503.
 
@@ -2716,7 +2716,7 @@ energy: Lamb shift and spontaneous emission without field quantization,” Physi
 Review A, Vol. 32, 1985, pp. 3187-3195.
 
 [77] Barut, A. O., et al., “Relativistic theory of the Lamb shift in self-field quantum
-electrodynamics,” Physical Review A, Val. 45, 1992, pp. 7740-7745.
+electrodynamics,” Physical Review A, Vol. 45, 1992, pp. 7740-7745.
 
 [78] Barut, A. O., and Dowling, J. P., “Quantum electrodynamics based on self-energy:
 Spontaneous emission in cavities,” Physical Review A, Vol. 36, 1987, pp. 649-654.
@@ -2725,23 +2725,23 @@ Spontaneous emission in cavities,” Physical Review A, Vol. 36, 1987, pp. 649-6
 without second quantization: The Lamb shift and long-range Casimir-Polder van der
 Waals forces near boundaries,” Physical Review A, Vol. 36, 1987, pp. 2550-2556.
 
-[80] Barut, A. O., Dowling, 3. P., and van Huele, J. F., “Quantum electrodynamics based
+[80] Barut, A. O., Dowling, J. P., and van Huele, J. F., “Quantum electrodynamics based
 on self-fields, without second quantization: A nonrelativistic calculation of g-2,” Physical
 Review A, Vol. 38, 1988, pp. 4405-4412.
 
-[81] Barut, A. O., and Dowling, J. P., “Quantum electrodynamics based an self-fields,
+[81] Barut, A. O., and Dowling, J. P., “Quantum electrodynamics based on self-fields,
 without second quantization: Apparatus dependent contributions to g-2,” Physical
 Review A, Vol. 39, 1989, pp. 2796-2805.
 
 [82] Barut, A. O., and Dowling, J. P., “QED based on self-fields: A relativistic calculation
-of g-2," Zeitschrift fir Naturforschung, Vol. A44, 1989, p. 1051.
+of g-2," Zeitschrift für Naturforschung, Vol. A44, 1989, p. 1051.
 
 [83] Barut, A. O., and Dowling, J. P., “Quantum electrodynamics based on self-fields:
 On the origin of thermal radiation detected by an accelerated observer,” Physical
 Review A, Vol. 41, 1990, pp. 2277-2283.
 
 [84] Hochberg, D., and Kephart, T. W., “Lorentzian wormholes from the gravitationally
-squeezed vacuum,” Physics Letters B, Vol, 268, 1991, pp. 377-383.) Calloni, E., et al.,
+squeezed vacuum,” Physics Letters B, Vol. 268, 1991, pp. 377-383.) Calloni, E., et al.,
 “Gravitational effects on a rigid Casimir cavity,” International Journal of Modern Physics
 A, Vol. 17, 2002, pp. 804-807.
 
@@ -2779,7 +2779,7 @@ One-Dimensional Cavity,” Journal of Mathematical Physics, Vol. 11, 1970, pp. 2
 2691.
 
 [94] Epstein, H., Glaser, V., and Jaffe, A., “Nonpositivity of the Energy Density in
-Quantized Field Theories,” Nuovo Cimento, Val. 36, 1965, pp. 1016-1022.
+Quantized Field Theories,” Nuovo Cimento, Vol. 36, 1965, pp. 1016-1022.
 
 [95] Drummond, P. D., and Ficek, Z. (eds.), Quantum Squeezing, Springer-Verlag,
 Berlin, 2004.
@@ -2793,7 +2793,7 @@ Mixing in an Optical Cavity,” Physical Review Letters, Vol. 55, 1985, pp. 2409
 [98] Robinson, A. L., “Bell Labs Generates Squeezed Light,” Science, Vol. 230, 1985,
 pp. 927-929.
 
-[99] Robinson, A. L., “Now Four Laboratories Have Squeezed Light,” Science, Val. 233,
+[99] Robinson, A. L., “Now Four Laboratories Have Squeezed Light,” Science, Vol. 233,
 986, pp. 280-281.
 
 [100] Saleh, B. E. A., and Teich, M. C., Fundamentals of Photonics, Wiley Series in Pure
@@ -2816,10 +2816,10 @@ Univ. Library arXiv.org e-Print Archive, URL: http://arxiv.org/hep-ph/0304139. p
 [105] Xue, S.-S., “Possible vacuum-energy releasing,” Physics Letters B, Vol. 508,
 2001, pp. 211-215.
 
-[106] Xue, S.-S., “Magnetically induced vacuum decay,” Physical Review D, Val. 68,
+[106] Xue, S.-S., “Magnetically induced vacuum decay,” Physical Review D, Vol. 68,
 2003, 013004.
 
-[107] Gogohia, V., et al. (1999), “Vacuum energy density of chiral OCD in the zero
+[107] Gogohia, V., et al. (1999), “Vacuum energy density of chiral QCD in the zero
 modes enhancement quantum model,” Phys. Lett. B, vol. 453, pp. 281-288.
 
 50
@@ -2829,7 +2829,7 @@ UNCLASSIFIED / / b@ReGEebCiieetd GeO bli
 
 UNCLASSIFIED / / ROR-O58LGRAi=GE=OPiae
 
-[108] Gogohia, ¥., “Energy From The Nonperturbative QCD Vacuum,”
+[108] Gogohia, V., “Energy From The Nonperturbative QCD Vacuum,”
 http://arxiv.org/PS_cache/hep-ph/pdf/0508224.pdf (cited 22 Aug. 2005, revised 7
 March 2008).
 

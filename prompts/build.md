@@ -634,6 +634,14 @@ This:
      Document nodes' sole evidentiary layer — no `## What This
      Establishes` table (see `meta/conventions.md` "Three-layer
      evidentiary architecture").
+   - `## References` — **conditional** — from `cited_works[]`. The source
+     document's formal reference list, transcribed verbatim (each entry's
+     `citation_verbatim` is source-verified by `scripts/checks/cited_works.py`,
+     OCR sic preserved); split `author`/`year`/`title` fields are the
+     artifact-side authorship-network query dimension. Required-but-emptyable
+     on every document artifact; the section renders only when entries exist.
+     See `meta/conventions.md` "Document-corpus extraction — the DIRD passage
+     rubric" (references are one of the rubric's capture categories).
 
    **Person nodes:** (order follows `render_body_person`)
    - `## Identity` — from `document_intrinsic` (full_name, aliases,

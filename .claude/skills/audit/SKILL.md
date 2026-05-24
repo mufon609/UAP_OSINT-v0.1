@@ -29,6 +29,13 @@ Target: **$ARGUMENTS** (ask the user if empty).
    `python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml`
    surfaces substantive paragraphs no quote references + capitalized terms
    absent from the artifact (suggestions; boilerplate is common — judge each).
+   Then weigh the auditor's **family-comparability** pass (goal 8): per
+   `meta/conventions.md` "Comparability standard", does a same-`type` /
+   `kind` / `archetype` peer carry a source-anchored optional section this
+   target lacks (`## Primary-Source Contradictions`, `## Public-Record Claims`,
+   `## Source-Form Notes` / `## Preserved Disagreements`, `## References`)? If
+   so, re-check the target's OWN sources for the same class of material — a
+   source re-check, never adding entries to match a peer's count.
 3. **Present findings before changing anything** — the mechanical results, the
    semantic gaps, missing sources, cross-node divergences, and proposed
    artifact edits. Get approval for content changes.

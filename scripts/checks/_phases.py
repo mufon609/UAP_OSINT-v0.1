@@ -84,6 +84,7 @@ CHECK_PHASE = {
     "verbatim_quotes": "extract",
     "quote_location_page": "extract",
     "document_quote_source": "extract",
+    "cited_works": "extract",
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
 
