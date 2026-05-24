@@ -188,7 +188,498 @@ quotes:
     location: 'p. 29, ¶ closing (Summary and Recommendations)'
   significance: Concluding forecast — over the next 20-50 years metallic glasses and composites will see increasing acceptance as structural materials, but widespread aerospace use depends critically on developing new lightweight alloys
   statement_date: '2009-12-14'
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-24'
+    citation_key: '1'
+    author: 'Z. P. Lu, Y. Liu, and C. T. Liu'
+    year: '2009'
+    title: 'Bulk Metallic Glasses'
+    citation_verbatim: |-
+      ^1 Z. P. Lu, Y. Liu, and C. T. Liu, Chapter 4 in Bulk Metallic Glasses, M. Miller and P. K. Liaw, eds. (Springer, 2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^1'
+  - id: cw2
+    added_date: '2026-05-24'
+    citation_key: '2'
+    author: 'H. Men, W. T. Kim, and D. H. Kim'
+    year: '2003'
+    citation_verbatim: |-
+      ^2 H. Men, W. T. Kim, and D. H. Kim, Mater. Trans. 44, 2142 (2003).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^2'
+  - id: cw3
+    added_date: '2026-05-24'
+    citation_key: '3'
+    author: 'A. Peker and W. L. Johnson'
+    year: '1993'
+    citation_verbatim: |-
+      ^3 A. Peker and W. L. Johnson, Appl. Phys. Lett. 63, 2342 (1993).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^3'
+  - id: cw4
+    added_date: '2026-05-24'
+    citation_key: '4'
+    author: 'N. Nishiyama and A. Inoue'
+    year: '1996'
+    citation_verbatim: |-
+      ^4 N. Nishiyama and A. Inoue, Mater. Trans. JIM 37, 1531 (1996).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^4'
+  - id: cw5
+    added_date: '2026-05-24'
+    citation_key: '5'
+    author: 'W. Zhang, Q. S. Zhang, and A. Inoue'
+    year: '2009'
+    citation_verbatim: |-
+      ^5 W. Zhang, Q. S. Zhang, and A. Inoue, Mater. Trans. 50, 679 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^5'
+  - id: cw6
+    added_date: '2026-05-24'
+    citation_key: '6'
+    author: 'J. Schroers and W. L. Johnson'
+    year: '2004'
+    citation_verbatim: |-
+      ^6 J. Schroers and W. L. Johnson, Appl. Phys. Lett. 84, 3666 (2004).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^6'
+  - id: cw7
+    added_date: '2026-05-24'
+    citation_key: '7'
+    author: 'F. Guo, H. Wang, S. J. Poon, and G. J. Shiflet'
+    year: '2005'
+    citation_verbatim: |-
+      ^7 F. Guo, H. Wang, S. J. Poon, and G. J. Shiflet, Appl. Phys. Lett. 86, 091907 (2005).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^7'
+  - id: cw8
+    added_date: '2026-05-24'
+    citation_key: '8'
+    author: 'V. Ponnambalam, S. J. Poon, and G. J. Shiflet'
+    year: '2004'
+    citation_verbatim: |-
+      ^8 V. Ponnambalam, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 19, 1320 (2004).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^8'
+  - id: cw9
+    added_date: '2026-05-24'
+    citation_key: '9'
+    author: 'A. H. Brothers and D. C. Dunand'
+    year: '2006'
+    citation_verbatim: |-
+      ^9 A. H. Brothers and D. C. Dunand, Scripta Mater. 54, 513 (2006).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^9'
+  - id: cw10
+    added_date: '2026-05-24'
+    citation_key: '10'
+    author: 'X. J. Gu, S. J. Poon, and G. J. Shiflet'
+    year: '2007'
+    citation_verbatim: |-
+      ^10 X. J. Gu, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 22, 344 (2007).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^10'
+  - id: cw11
+    added_date: '2026-05-24'
+    citation_key: '11'
+    author: 'MatWeb'
+    citation_verbatim: |-
+      ^11 Data from MatWeb, <www.matweb.com>.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^11'
+  - id: cw12
+    added_date: '2026-05-24'
+    citation_key: '12'
+    author: 'MatWeb'
+    citation_verbatim: |-
+      ^12 Data from MatWeb, <www.matweb.com>.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^12'
+  - id: cw13
+    added_date: '2026-05-24'
+    citation_key: '13'
+    author: 'Y. He, G. M. Dougherty, G. J. Shiflet, and S. J. Poon'
+    year: '1993'
+    citation_verbatim: |-
+      ^13 Y. He, G. M. Dougherty, G. J. Shiflet, and S. J. Poon, Acta Metall. Mater. 41, 337 (1993).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^13'
+  - id: cw14
+    added_date: '2026-05-24'
+    citation_key: '14'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    year: '2007'
+    citation_verbatim: |-
+      ^14 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^14'
+  - id: cw15
+    added_date: '2026-05-24'
+    citation_key: '15'
+    author: 'P. Lowhaphandu and J. J. Lewandowski'
+    year: '1998'
+    citation_verbatim: |-
+      ^15 P. Lowhaphandu and J. J. Lewandowski, Scripta Mater. 38, 1811 (1998).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^15'
+  - id: cw16
+    added_date: '2026-05-24'
+    citation_key: '16'
+    author: 'MatWeb'
+    citation_verbatim: |-
+      ^16 Data from MatWeb, <www.matweb.com>.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^16'
+  - id: cw17
+    added_date: '2026-05-24'
+    citation_key: '17'
+    author: 'C. J. Gilbert, V. Schroeder, and R. O. Ritchie'
+    year: '1999'
+    citation_verbatim: |-
+      ^17 C. J. Gilbert, V. Schroeder, and R. O. Ritchie, Metall. Mater. Trans. A 30, 1739 (1999).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^17'
+  - id: cw18
+    added_date: '2026-05-24'
+    citation_key: '18'
+    author: 'B. Menzel and R. H. Dauskardt'
+    year: '2006'
+    citation_verbatim: |-
+      ^18 B. Menzel and R. H. Dauskardt, Acta Mater. 54, 935 (2006).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^18'
+  - id: cw19
+    added_date: '2026-05-24'
+    citation_key: '19'
+    author: 'M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie'
+    year: '2009'
+    citation_verbatim: |-
+      ^19 M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie, Proc. Nat. Acad. Sci. 106, 4986 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^19'
+  - id: cw20
+    added_date: '2026-05-24'
+    citation_key: '20'
+    author: 'A. L. Greer, K. L. Rutherford, and I. M. Hutchings'
+    year: '2002'
+    citation_verbatim: |-
+      ^20 A. L. Greer, K. L. Rutherford, and I. M. Hutchings, Int. Mater. Rev. 47, 87 (2002).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^20'
+  - id: cw21
+    added_date: '2026-05-24'
+    citation_key: '21'
+    author: 'B. A. Green, P. K. Liaw, and R. A. Buchanan'
+    year: '2009'
+    title: 'Bulk Metallic Glasses'
+    citation_verbatim: |-
+      ^21 B. A. Green, P. K. Liaw, and R. A. Buchanan, Chapter 8 in Bulk Metallic Glasses, M. Miller and P. K. Liaw, eds. (Springer, 2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^21'
+  - id: cw22
+    added_date: '2026-05-24'
+    citation_key: '22'
+    author: 'V. Schroeder and R. O. Ritchie'
+    year: '2006'
+    citation_verbatim: |-
+      ^22 V. Schroeder and R. O. Ritchie, Acta Metall. 54, 1785 (2006).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^22'
+  - id: cw23
+    added_date: '2026-05-24'
+    citation_key: '23'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    year: '2007'
+    citation_verbatim: |-
+      ^23 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^23'
+  - id: cw24
+    added_date: '2026-05-24'
+    citation_key: '24'
+    author: 'A. Hernando and M. Vazquez'
+    year: '1993'
+    title: 'Rapidly Solidified Alloys'
+    citation_verbatim: |-
+      ^24 A. Hernando and M. Vazquez, Ch. 17 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^24'
+  - id: cw25
+    added_date: '2026-05-24'
+    citation_key: '25'
+    author: 'T. Richmond and H.J. Guntherodt'
+    year: '1993'
+    title: 'Rapidly Solidified Alloys'
+    citation_verbatim: |-
+      ^25 T. Richmond and H.J. Guntherodt, Ch. 14 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^25'
+  - id: cw26
+    added_date: '2026-05-24'
+    citation_key: '26'
+    author: 'C. Haon, D. Camel, B. Drevet, and J. M. Pelletier'
+    year: '2008'
+    citation_verbatim: |-
+      ^26 C. Haon, D. Camel, B. Drevet, and J. M. Pelletier, Metall. Mater. Trans. A 39, 1791 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^26'
+  - id: cw27
+    added_date: '2026-05-24'
+    citation_key: '27'
+    author: 'Todd Hufnagel'
+    citation_verbatim: |-
+      ^27 Photograph by Todd Hufnagel.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^27'
+  - id: cw28
+    added_date: '2026-05-24'
+    citation_key: '28'
+    author: 'C. C. Hays, C. P. Kim, and W. L. Johnson'
+    year: '2000'
+    citation_verbatim: |-
+      ^28 C. C. Hays, C. P. Kim, and W. L. Johnson, Phys. Rev. Lett. 84, 2901 (2000).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^28'
+  - id: cw29
+    added_date: '2026-05-24'
+    citation_key: '29'
+    author: 'C. Fan, R. T. Ott, and T. C. Hufnagel'
+    year: '2002'
+    citation_verbatim: |-
+      ^29 C. Fan, R. T. Ott, and T. C. Hufnagel, Appl. Phys. Lett. 81, 1020 (2002).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^29'
+  - id: cw30
+    added_date: '2026-05-24'
+    citation_key: '30'
+    author: 'D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^30 D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^30'
+  - id: cw31
+    added_date: '2026-05-24'
+    citation_key: '31'
+    author: 'D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^31 D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^31'
+  - id: cw32
+    added_date: '2026-05-24'
+    citation_key: '32'
+    author: 'D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^32 D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^32'
+  - id: cw33
+    added_date: '2026-05-24'
+    citation_key: '33'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    year: '2007'
+    citation_verbatim: |-
+      ^33 Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^33'
+  - id: cw34
+    added_date: '2026-05-24'
+    citation_key: '34'
+    author: 'M. F. Ashby and A. L. Greer'
+    year: '2006'
+    citation_verbatim: |-
+      ^34 M. F. Ashby and A. L. Greer, Scripta Mater. 54, 321 (2006).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^34'
+  - id: cw35
+    added_date: '2026-05-24'
+    citation_key: '35'
+    author: 'D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^35 D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Proc. Nat. Acad. Sci. 105, 20136 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^35'
+  - id: cw36
+    added_date: '2026-05-24'
+    citation_key: '36'
+    author: 'D. C. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M. D. Demetriou, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^36 D. C. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^36'
+  - id: cw37
+    added_date: '2026-05-24'
+    citation_key: '37'
+    author: 'M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie'
+    year: '2009'
+    citation_verbatim: |-
+      ^37 M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie, Proc. Nat. Acad. Sci. 106, 4986 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^37'
+  - id: cw38
+    added_date: '2026-05-24'
+    citation_key: '38'
+    author: 'N. Barrington and M. Black'
+    year: '1998'
+    title: 'Aerospace Materials'
+    citation_verbatim: |-
+      ^38 N. Barrington and M. Black, Ch. 1 in Aerospace Materials, B. Cantor, H. Assender, and P. Grant, eds. (Institute of Physics, 1998).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^38'
+  - id: cw39
+    added_date: '2026-05-24'
+    citation_key: '39'
+    author: 'X. J. Gu, S. J. Poon, and G. J. Shiflet'
+    citation_verbatim: |-
+      ^39 Data for metallic glasses are from X. J. Gu, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 22, 344 (2007); D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008); M. F. Ashby and A. L. Greer, Scripta Mater. 54, 321 (2006); D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Proc. Nat. Acad. Sci. 105, 20136 (2008); J. J. Lewandowski, W. H. Wang, and A. L. Greer, Phil. Mag. Lett. 85, 77 (2005). Data for other materials are from Cambridge Materials Selector, <http://www.grantadesign.com/>.
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 23, References ^39'
+  - id: cw40
+    added_date: '2026-05-24'
+    citation_key: '40'
+    author: 'M. D. Demetriou, C. Veazey, J. S. Harmon, J. P. Schramm, and W. L. Johnson'
+    year: '2008'
+    citation_verbatim: |-
+      ^40 M. D. Demetriou, C. Veazey, J. S. Harmon, J. P. Schramm, and W. L. Johnson, Phys. Rev. Lett. 101, 145702 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^40'
+  - id: cw41
+    added_date: '2026-05-24'
+    citation_key: '41'
+    author: 'C. Vermeeren, ed.'
+    year: '2002'
+    title: 'Around Glare: A New Aircraft Material in Context'
+    citation_verbatim: |-
+      ^41 C. Vermeeren, ed. Around Glare: A New Aircraft Material in Context (Kluwer, 2002).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^41'
+  - id: cw42
+    added_date: '2026-05-24'
+    citation_key: '42'
+    author: 'D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue'
+    year: '2008'
+    citation_verbatim: |-
+      ^42 D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue, Adv. Eng. Mater. 10, 1008 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^42'
+  - id: cw43
+    added_date: '2026-05-24'
+    citation_key: '43'
+    author: 'A. L. Greer'
+    year: '2009'
+    citation_verbatim: |-
+      ^43 A. L. Greer, Materials Today 12(1-2), 14 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^43'
+  - id: cw44
+    added_date: '2026-05-24'
+    citation_key: '44'
+    author: 'D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue'
+    year: '2008'
+    citation_verbatim: |-
+      ^44 D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue, Adv. Eng. Mater. 10, 1008 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^44'
+  - id: cw45
+    added_date: '2026-05-24'
+    citation_key: '45'
+    author: 'Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson'
+    year: '2008'
+    citation_verbatim: |-
+      ^45 Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson, Science 322, 1816 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^45'
+  - id: cw46
+    added_date: '2026-05-24'
+    citation_key: '46'
+    author: 'Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson'
+    year: '2008'
+    citation_verbatim: |-
+      ^46 Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson, Science 322, 1816 (2008).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^46'
+  - id: cw47
+    added_date: '2026-05-24'
+    citation_key: '47'
+    author: 'T. Tamura, K. Amiya, R. S. Rachmat, Y. Mizutani, and K. Miwa'
+    year: '2005'
+    citation_verbatim: |-
+      ^47 T. Tamura, K. Amiya, R. S. Rachmat, Y. Mizutani, and K. Miwa, Nature Mater. 4, 289 (2005).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^47'
+  - id: cw48
+    added_date: '2026-05-24'
+    citation_key: '48'
+    author: 'G. Kumar, H. X. Tang, and J. Schroers'
+    year: '2009'
+    citation_verbatim: |-
+      ^48 G. Kumar, H. X. Tang, and J. Schroers, Nature 457, 868 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^48'
+  - id: cw49
+    added_date: '2026-05-24'
+    citation_key: '49'
+    author: 'A. L. Greer'
+    year: '2009'
+    citation_verbatim: |-
+      ^49 A. L. Greer, Materials Today 12(1-2), 14 (2009).
+    source:
+      path: government/dird-01-metallic-glasses-20091214.pdf
+      location: 'p. 24, References ^49'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-21'

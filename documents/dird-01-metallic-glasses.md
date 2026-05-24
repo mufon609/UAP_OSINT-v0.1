@@ -257,6 +257,62 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** Z. P. Lu, Y. Liu, and C. T. Liu, Chapter 4 in Bulk Metallic Glasses, M. Miller and P. K. Liaw, eds. (Springer, 2009).
+- **[2]** H. Men, W. T. Kim, and D. H. Kim, Mater. Trans. 44, 2142 (2003).
+- **[3]** A. Peker and W. L. Johnson, Appl. Phys. Lett. 63, 2342 (1993).
+- **[4]** N. Nishiyama and A. Inoue, Mater. Trans. JIM 37, 1531 (1996).
+- **[5]** W. Zhang, Q. S. Zhang, and A. Inoue, Mater. Trans. 50, 679 (2009).
+- **[6]** J. Schroers and W. L. Johnson, Appl. Phys. Lett. 84, 3666 (2004).
+- **[7]** F. Guo, H. Wang, S. J. Poon, and G. J. Shiflet, Appl. Phys. Lett. 86, 091907 (2005).
+- **[8]** V. Ponnambalam, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 19, 1320 (2004).
+- **[9]** A. H. Brothers and D. C. Dunand, Scripta Mater. 54, 513 (2006).
+- **[10]** X. J. Gu, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 22, 344 (2007).
+- **[11]** Data from MatWeb, <www.matweb.com>.
+- **[12]** Data from MatWeb, <www.matweb.com>.
+- **[13]** Y. He, G. M. Dougherty, G. J. Shiflet, and S. J. Poon, Acta Metall. Mater. 41, 337 (1993).
+- **[14]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
+- **[15]** P. Lowhaphandu and J. J. Lewandowski, Scripta Mater. 38, 1811 (1998).
+- **[16]** Data from MatWeb, <www.matweb.com>.
+- **[17]** C. J. Gilbert, V. Schroeder, and R. O. Ritchie, Metall. Mater. Trans. A 30, 1739 (1999).
+- **[18]** B. Menzel and R. H. Dauskardt, Acta Mater. 54, 935 (2006).
+- **[19]** M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie, Proc. Nat. Acad. Sci. 106, 4986 (2009).
+- **[20]** A. L. Greer, K. L. Rutherford, and I. M. Hutchings, Int. Mater. Rev. 47, 87 (2002).
+- **[21]** B. A. Green, P. K. Liaw, and R. A. Buchanan, Chapter 8 in Bulk Metallic Glasses, M. Miller and P. K. Liaw, eds. (Springer, 2009).
+- **[22]** V. Schroeder and R. O. Ritchie, Acta Metall. 54, 1785 (2006).
+- **[23]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
+- **[24]** A. Hernando and M. Vazquez, Ch. 17 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
+- **[25]** T. Richmond and H.J. Guntherodt, Ch. 14 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
+- **[26]** C. Haon, D. Camel, B. Drevet, and J. M. Pelletier, Metall. Mater. Trans. A 39, 1791 (2008).
+- **[27]** Photograph by Todd Hufnagel.
+- **[28]** C. C. Hays, C. P. Kim, and W. L. Johnson, Phys. Rev. Lett. 84, 2901 (2000).
+- **[29]** C. Fan, R. T. Ott, and T. C. Hufnagel, Appl. Phys. Lett. 81, 1020 (2002).
+- **[30]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+- **[31]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+- **[32]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+- **[33]** Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
+- **[34]** M. F. Ashby and A. L. Greer, Scripta Mater. 54, 321 (2006).
+- **[35]** D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Proc. Nat. Acad. Sci. 105, 20136 (2008).
+- **[36]** D. C. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
+- **[37]** M. E. Launey, D. C. Hofmann, W. L. Johnson, and R. O. Ritchie, Proc. Nat. Acad. Sci. 106, 4986 (2009).
+- **[38]** N. Barrington and M. Black, Ch. 1 in Aerospace Materials, B. Cantor, H. Assender, and P. Grant, eds. (Institute of Physics, 1998).
+- **[39]** Data for metallic glasses are from X. J. Gu, S. J. Poon, and G. J. Shiflet, J. Mater. Res. 22, 344 (2007); D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008); M. F. Ashby and A. L. Greer, Scripta Mater. 54, 321 (2006); D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Proc. Nat. Acad. Sci. 105, 20136 (2008); J. J. Lewandowski, W. H. Wang, and A. L. Greer, Phil. Mag. Lett. 85, 77 (2005). Data for other materials are from Cambridge Materials Selector, <http://www.grantadesign.com/>.
+- **[40]** M. D. Demetriou, C. Veazey, J. S. Harmon, J. P. Schramm, and W. L. Johnson, Phys. Rev. Lett. 101, 145702 (2008).
+- **[41]** C. Vermeeren, ed. Around Glare: A New Aircraft Material in Context (Kluwer, 2002).
+- **[42]** D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue, Adv. Eng. Mater. 10, 1008 (2008).
+- **[43]** A. L. Greer, Materials Today 12(1-2), 14 (2009).
+- **[44]** D. V. Louzguine-Luzgin, D. B. Miracle, and A. Inoue, Adv. Eng. Mater. 10, 1008 (2008).
+- **[45]** Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson, Science 322, 1816 (2008).
+- **[46]** Y. Li, Q. Guo, J. A. Kalb, and C. V. Thompson, Science 322, 1816 (2008).
+- **[47]** T. Tamura, K. Amiya, R. S. Rachmat, Y. Mizutani, and K. Miwa, Nature Mater. 4, 289 (2005).
+- **[48]** G. Kumar, H. X. Tang, and J. Schroers, Nature 457, 868 (2009).
+- **[49]** A. L. Greer, Materials Today 12(1-2), 14 (2009).
+
+---
+
 ## Associated Nodes
 
 ### Organizations
