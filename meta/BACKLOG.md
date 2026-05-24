@@ -51,7 +51,7 @@ Items with ordering or coupling constraints.
 
 ### A1 — Exercise the pipeline paths the first whole run didn't hit
 
-The seven-role pipeline (`prompts/topology.md`) has been run *whole* on one
+The six-role pipeline (`prompts/topology.md`) has been run *whole* on one
 real node build — a user-directed, all-internal institutional-actor build:
 Internal Investigator → Worker (×N) → Build → Audit, with handoff stubs
 captured and friction tightened in place. The **External Investigator
@@ -100,4 +100,28 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-_(none)_
+### C1 — Cross-node structural-consistency audit
+
+Comparable nodes diverge in load-bearing, **source-anchored** optional sections,
+with no standing check that surfaces the divergence. Observed:
+
+- An organization with publicly contested claims (`/organizations/aaro`) lacks the
+  **Primary-Source Contradictions** / **Public-Record Claims Without Primary Source**
+  sections a peer org (`/organizations/ipmo`) carries — the same source-anchored
+  treatment of contested public-record material applied to one node and not the other.
+- **Associated Nodes** is an unlabeled list while **Relationships** (person nodes)
+  labels the tie — the navigational surface drops the relation type.
+
+Convergence candidates **only** where the section is source-anchored (verbatim /
+contradiction material), never synthesis prose. **Out of scope:** the deliberate
+lighter-surface design — document / transcript / event / media / location nodes
+intentionally omit synthesis-heavy sections (Credibility Notes, free-prose Timeline)
+to minimize prose-drift surface; that asymmetry is correct and must not be "fixed."
+
+Mechanism to evaluate: a dedicated cross-node consistency pass — a new skill/agent run
+as a final audit over a built set, possibly section-specialized agents (one per
+recurring section family). Decide skill-vs-agent and whether it folds into `/audit`'s
+adjacent-node propagation before building.
+
+**Blocks:** none.
+**Blocked by:** none.

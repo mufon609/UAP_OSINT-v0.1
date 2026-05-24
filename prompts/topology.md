@@ -14,6 +14,10 @@ the toolkit:
 `prompts/build.md` remains the single-session fallback for a build that
 shouldn't be decomposed.
 
+This file carries only the **rationale**. The contract statements themselves —
+source-read-first, the orchestration branches, the handoff schema — live once in
+`.claude/skills/build-protocol/SKILL.md` and are *cited* here, not restated.
+
 ---
 
 ## Why these roles (capability boundaries, not feedback granularity)
@@ -50,62 +54,58 @@ Two former roles **dissolved**: the Orchestrator (a control loop, now the
 
 ## Source-read-first
 
-Every inclusion decision is made against source **content**, never a URL or
-title. Soft-enforced where sources are surveyed/fetched; **hard-enforced at the
-`extract` phase**, where the verbatim check matches every emitted quote against
-the archived + extracted file (the gate reads disk, not agent memory — which is
-why fresh-context subagents are safe). Load-bearing-ness is judged in context:
-the internal survey assembles the `linked_nodes` + topic-relevance framing and
-threads it forward; no role judges relevance from a source in isolation.
+Stated once in `build-protocol` (*Source-read-first*): content-not-URL inclusion,
+hard-enforced at the `extract` phase, load-bearing-ness judged in context. The *why*
+it can be trusted — the gate re-reads disk, not agent memory, so a fresh-context
+subagent cannot fabricate a quote — is `build-protocol`'s *non-negotiable invariant*.
+That disk-truth property is the keystone the whole role decomposition rests on.
 
 ## Phase vocabulary
 
-Each `--phase` token names the role whose output it validates. The map from
-check → phase lives in `scripts/checks/_phases.py` (the single source of truth);
-run `python3 scripts/checks/_phases.py --list-phases` for the live list. The
-canonical phases: `archive` (manifest + primary_sources), `extract` (verbatim
-quotes / speakers), `organize` (free-prose synthesis), `link` (cross-reference
-surfaces + prose-drift), `render` (render-time structure + cross-layer checks).
-`preflight` (parse/structure) runs in every phase. `--phase` only ever
-**narrows** a run; an unflagged run is the full pass.
+Each `--phase` token names the role whose output it validates; `--phase` only ever
+**narrows** a run (an unflagged run is the full pass). The check → phase map lives in
+`scripts/checks/_phases.py` — the single source of truth; run
+`python3 scripts/checks/_phases.py --list-phases` for the live list. This file is the
+gate-designated *prose* home for that vocabulary (`phase_routing_parity.py` checks
+every canonical phase is documented here), so the set is named once, here:
+
+- `archive` — manifest + primary_sources
+- `extract` — verbatim quotes / speakers (the one quote boundary)
+- `organize` — free-prose synthesis
+- `link` — cross-reference surfaces + prose-drift
+- `render` — render-time structure + the cross-layer checks
+
+`preflight` (parse / structure) runs in every phase.
 
 ## Orchestration branches
 
-- **all-internal** — the internal survey sets `all_internal: true` → external +
-  archive are skipped (a fresh build from reused, already-archived sources).
-- **tightening loop** — the audit flags `adjacent_needs_update[]` with
-  `skip_external: true` → re-enter at `extract` (the material is already
-  archived; no new URL, no new bytes), rebuild, re-audit.
-- **`/augment`** (user-triggered) — maintenance on an existing node, the
-  proactive counterpart to reactive `/audit`: classify the change (data fix → no
-  role; quote from an archived source → worker; new/re-pulled source → external →
-  archive → worker), then rebuild + audit.
+The three branches — **all-internal** (internal survey skips external + archive),
+the auditor-triggered **tightening loop**, and user-triggered **`/augment`** — and the
+**partial-re-entry** contract they share (skip scaffold, run only the roles a change
+needs, route failures to the owning role, preserve contradictions) are specified once
+in `build-protocol` (*Orchestration branches*). The rationale: a change re-enters at
+the phase its material demands, never a fresh scaffold — the cheapest correct path.
 
-The tightening loop and `/augment` share one **partial-re-entry** contract — skip
-scaffold, run only the roles a change needs, route failures to the owning role,
-preserve contradictions (`build-protocol`).
+## Fix the data, never the node body — how it's enforced
 
-## Fix the data, never the node body — now enforced, not just stated
-
-The node body is regenerated from the artifact; a hand-edit to a node body is
-blocked two ways. The mechanical gate is a committed `settings.json`
-`permissions.deny` rule on the node-type directories — it binds for the main
-thread *and* subagents (the `builder` is the one role holding `Edit`), and the
-renderer is unaffected because it writes the body via Python file I/O, not the
-Edit/Write tool. A `PreToolUse` hook (`.claude/hooks/block_node_body_edit.sh`)
-is the main-thread backstop, carrying the fix-pointing message. (The hook alone
-is insufficient: a `settings.json` `PreToolUse` hook does **not** fire for a
-*subagent's* tool call, so the deny rule is what actually gates the builder.)
-When a check fails, `route_failure.py` maps it to the owning role and the fix
-target is always artifact data. Two more hooks back the discipline — and these
-gate main-thread actions, so the hook mechanism is sufficient: a `git commit`
-runs the full pre-commit chain and blocks on any red gate (un-bypassable by
-`--no-verify`), and scaffolding a second uncommitted new person/organization
-node is blocked (the one-new-synthesis-node-per-session rule).
+The rule (regenerate the body from the artifact; route a failing check via
+`route_failure.py` to its owning role; the fix target is always artifact data) is in
+`build-protocol`. What lives here is *why it actually holds*. A hand-edit to a node
+body is blocked two ways. The mechanical gate is a committed `settings.json`
+`permissions.deny` rule on the node-type directories — it binds for the main thread
+*and* subagents (the `builder` is the one role holding `Edit`), and the renderer is
+unaffected because it writes the body via Python file I/O, not the Edit/Write tool. A
+`PreToolUse` hook (`.claude/hooks/block_node_body_edit.sh`) is the main-thread
+backstop, carrying the fix-pointing message. (The hook alone is insufficient: a
+`settings.json` `PreToolUse` hook does **not** fire for a *subagent's* tool call, so
+the deny rule is what actually gates the builder.) Two more hooks back the discipline
+— and these gate main-thread actions, so the hook mechanism is sufficient: a `git
+commit` runs the full pre-commit chain and blocks on any red gate (un-bypassable by
+`--no-verify`), and scaffolding a second uncommitted new person/organization node is
+blocked (the one-new-synthesis-node-per-session rule).
 
 ## Handoff
 
-Each role returns its stub (schema in
-`.claude/skills/build-protocol/stub-schemas.md`) as its value to the
-orchestrator — the return value *is* the handoff; no file is written for it.
-The manifest, artifact, and git remain the durable source of truth.
+The return-value-*is*-the-handoff mechanism (each role returns its stub per
+`build-protocol`'s *Handoff stubs* + `stub-schemas.md`; no file is written for it)
+keeps the durable record in one place — the manifest, artifact, and git.

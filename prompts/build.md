@@ -25,6 +25,11 @@ organization, location, finding, and investigation.
 
 ## Hard rules
 
+These mirror the canonical build contract in `.claude/skills/build-protocol/`
+(the single source of truth, preloaded into every build subagent). They are
+restated in full here because this fallback prompt runs *without* that preload —
+so when the contract changes, change `build-protocol` first, then mirror it here.
+
 1. **One *new* node per session — applies to person and organization
    nodes only.** Do not scaffold a second person or organization node
    while one is in-flight; the session ends for that target when the

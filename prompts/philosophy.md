@@ -10,8 +10,7 @@ This repo has recently been refactored to rely on agents/skills to automate and 
 Review a few nodes before you start this work so you have a good baseline of the final product.(nothing is in its final state but these are decent examples)
 
 @people/sean-kirkpatrick
-@organization/aaro
-@organization/ornl
-@organization/san-corporation
-@organization/ipmo
+@organizations/aaro
+@organizations/sancorp-consulting
+@organizations/ipmo
 
