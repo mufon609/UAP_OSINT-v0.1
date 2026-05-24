@@ -86,6 +86,60 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
+### A2 — Assess removing bookkeeping/versioning metadata from node frontmatter
+
+The changelog belongs in git. BACKLOG, comments, and node bodies do not hold a
+history of changes or book-keeping — git is the centralized history. Several
+node-frontmatter fields are bookkeeping or versioning metadata that costs the
+investigator token-window space and adds stale-reference risk without pushing
+the repo's evidentiary philosophy forward. Assess removing them; the first
+deliverable is the assessment (why is each here, is it dead-with-a-simple-
+removal or load-bearing, what breaks beyond template + schema), then a go/no-go
+plus a coupled implementation plan if approved.
+
+In scope for removal (examples from `people/hal-puthoff.md`):
+- `schema_version` (line 4) — **not** obviously dead: it backs a forward-compat
+  mechanism (`scripts/checks/schema_version_compat.py`, `meta/schema.yaml`
+  `compatible_with`, the AGENT.md "Schema versioning" migration protocol). The
+  assessment must weigh whether that mechanism earns its keep (has it ever
+  fired?) against its clutter cost — removal means retiring the compat check and
+  the AGENT.md protocol, not just deleting a line.
+- `created` (line 7) and `updated` — the clearest git-owned case: pure
+  bookkeeping dates that `git log` already holds authoritatively.
+- **Finding** `status` (`in-progress` / `documented` / `superseded`) and
+  `updated` — remove. Findings are append-only evidentiary records; their
+  lifecycle status is bookkeeping. This **resolves the finding status-transition
+  gap** (there is currently no sanctioned way to advance a finding's status —
+  node frontmatter is `Edit`/`Write`-denied, status isn't artifact-driven, and
+  no tool exists; removing the field dissolves the problem).
+
+Explicitly **out of scope (keep):** **investigation** `status`
+(`open` / `paused` / `closed`) is a meaningful lifecycle, not bookkeeping, and
+`scripts/checks/investigation_closure_path_when_paused` gates on it.
+
+Consumer map to verify against (starting point — every one must be checked
+before a field is removed):
+- `meta/schema.yaml` — `frontmatter.required` lists name `schema_version`,
+  `status`, `created` for every node type; the per-type lists drive
+  `scripts/checks/frontmatter_required`.
+- `scripts/checks/` — `schema_version_compat`, `status_archetype_kind`,
+  `artifact_top_level`, `governance_files`, `frontmatter_required`.
+- `scripts/build/build-state.py` — renders finding `status` into the CLAUDE.md
+  build-state table; reads `created`/`updated`.
+- `scripts/build/build-from-research.py` + `renderers/` — compose the node as
+  `existing-frontmatter + body`, so frontmatter is preserved, not regenerated;
+  removing fields means the renderer (or a one-time migration) must rewrite
+  frontmatter. Node files are `Edit`/`Write`-denied, so migration across the
+  ~68 existing nodes runs via a script using Python file I/O, not the Edit tool.
+- `scripts/build/new.py` + `meta/templates/` — emit the fields at scaffold.
+- `AGENT.md`, `meta/conventions.md` — document `schema_version` + status
+  lifecycle; update in lockstep.
+
+**Blocks:** none.
+**Blocked by:** none (assessment is read-only; the implementation, if approved,
+is coupled across schema + checks + renderers + all nodes + build-state + docs
+and would move to a roadmap phase).
+
 ---
 
 ## B. Parallel batch (renderer pass)
