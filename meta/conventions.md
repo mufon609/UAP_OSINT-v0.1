@@ -809,6 +809,21 @@ DIA→Congress products list — the author is carried by the link
 morphology variant or typo), but it never credits metadata either — the floor
 is the same.
 
+**Corollary — a document `description` summarizes CONTENT, not provenance.** The
+recurring cost when grounding a document node's `description` is the *provenance
+trap*: drafting the document's date, control number, classification, series
+membership, or authorship into the description prose. That metadata lives on the
+cover / title page, not in the document's content prose, so the prose-drift pool
+(content text) never contains its vocabulary (`dated`, `redacted`, `producer`,
+`series`, an author name) — each such token then fails the gate, and the fix is
+always to *relocate*, not rephrase (the Document Summary table + Key Passages
+already render the provenance). Draft the `description` from the document's own
+substantive content — what it argues, finds, or proposes, in its own words — and
+let the structured surfaces carry the provenance. Observed costing 4+ wasted
+prose-drift passes per DIRD before the description was stripped back to content
+(dird-02, dird-26); check-vocab correctly returns "absent, no suggestion" for the
+provenance tokens, which is itself the signal to relocate rather than reword.
+
 ### Density is source-driven
 
 Templates and prompts do not impose count targets on artifact content.

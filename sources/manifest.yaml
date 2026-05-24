@@ -621,6 +621,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #2 — ''Aerospace Applications of Programmable Matter'', DIA-08-0911-016, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 14 December 2009, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 21 pages. DIA attachment #23 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. McCarthy, Programmable Matter Corporation (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_02-DIRD_Aerospace_Applications_of_Programmable_Matter.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-02-programmable-matter-20091214.txt
+    archived_date: '2026-05-23'
+    note: 'Clean-text sibling of the OCR-scanned DIRD Black Vault #2 (Aerospace Applications of Programmable Matter, DIA-08-0911-016). Produced 2026-05-23 via multimodal page-image read of all 21 pages; independently verified 2026-05-23 by a separate agent session — PASS, no discrepancies. The Black Vault declassification insert (physical page 2) is excluded. Figures/charts bracketed (no numeric data invented); redactions (b)(6)/(b)(3):10 USC 424, the struck-through FOUO marking, and source typos (e.g. ref-5 ''Part 22003'') preserved verbatim. Author line is (b)(6)-redacted on the document; ''Dr. W. McCarthy'' is extrinsic, from the DIA->Congress list.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_03-DIRD_Pulsed_High-Power_Microwave_Source_Technology.pdf
   status: archived
   artifacts:

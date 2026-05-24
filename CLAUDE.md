@@ -93,13 +93,14 @@ can read clean while artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (19)
+### Documents (20)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/documents/cia-sri-geller-aug1973` | primary-source-confirmed | gov-doc |
 | `/documents/dia-aatip-products-list-2018` | primary-source-confirmed | gov-doc |
 | `/documents/dird-01-metallic-glasses` | primary-source-confirmed | gov-doc |
+| `/documents/dird-02-programmable-matter` | primary-source-confirmed | gov-doc |
 | `/documents/dird-03-pulsed-hpm` | primary-source-confirmed | gov-doc |
 | `/documents/dird-15-advanced-space-propulsion` | primary-source-confirmed | gov-doc |
 | `/documents/dird-24-quantum-vacuum-energy-extraction` | primary-source-confirmed | gov-doc |
