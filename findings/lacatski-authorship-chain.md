@@ -114,7 +114,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| $22M | $22M | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
 | Bigelow Aerospace Facilities | Bigelow Aerospace facilities | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
 
 ---

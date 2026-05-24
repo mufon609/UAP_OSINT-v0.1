@@ -77,14 +77,6 @@ quotes:
 
 naming_quirks:
 
-- id: nq1
-  added_date: '2026-05-13'
-  observed: $22M
-  canonical: $22M
-  location: SD004 page 1 Q&A content
-  source_path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-  resolution: preserve-as-sic-in-quotes
-
 - id: nq2
   added_date: '2026-05-13'
   observed: Bigelow Aerospace Facilities
