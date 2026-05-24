@@ -958,7 +958,13 @@ the PDF to page N) and verifiable. `extract-source.py` writes `--- page N ---`
 markers at the form-feed boundaries so the physical page is read straight off
 the scratch, and the `quote_location_page` check enforces it: every `p. N`
 quote must sit on physical page N (the check splits the extract on form feeds
-and confirms the quote text is on the cited page).
+and confirms the quote text is on the cited page). The check covers every
+section that carries a `p. N` ref: a **quote**'s `text` and a **naming-quirk**'s
+verbatim `observed` token are both verified to be ON page N. A **timeline**
+entry's `event` is a contributor paraphrase, not verbatim source text, so only
+page *existence* is mechanically checkable there (page N must exist); a
+timeline `p. N` that is off by a few has no verbatim anchor and rests on
+contributor care.
 
 For an **OCR-scan / extraction-lossy source** the canonical extract is the
 contributor's `.txt` sibling, which marks each document page with a

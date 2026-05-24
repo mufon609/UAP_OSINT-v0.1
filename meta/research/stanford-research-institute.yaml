@@ -599,7 +599,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'lasqr'
   canonical: 'laser'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -607,7 +607,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'parapsv- chology'
   canonical: 'parapsychology'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -615,7 +615,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'scientir''ic'
   canonical: 'scientific'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -623,7 +623,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'ORO'
   canonical: 'ORD'
-  location: 'p. 8, ¶2-4'
+  location: 'p. 7, ¶2-4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -631,7 +631,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: '19i2'
   canonical: '1972'
-  location: 'p. 8, ¶4'
+  location: 'p. 7, ¶4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -647,7 +647,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'SRI-International'
   canonical: 'SRI International'
-  location: 'p. 10, ¶1'
+  location: 'p. 14, ¶1'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -655,7 +655,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'a~ailable'
   canonical: 'available'
-  location: 'p. 9, ¶1'
+  location: 'p. 8, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -663,7 +663,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: '1020'
   canonical: '10^20'
-  location: 'p. 3-14, ¶2'
+  location: 'p. 35, ¶2'
   source_path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -671,7 +671,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: '10-20'
   canonical: '10^-20'
-  location: 'p. 3-14, ¶2'
+  location: 'p. 35, ¶2'
   source_path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -679,7 +679,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'Systems Applications International Corporation'
   canonical: 'Science Applications International Corporation'
-  location: 'p. 10, ¶3 (also p. 7 — multi-occurrence)'
+  location: 'p. 14, ¶3'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -695,7 +695,7 @@ naming_quirks:
   added_date: '2026-05-17'
   observed: '''1:7,'
   canonical: '17,'
-  location: 'p. 8, footnote'
+  location: 'p. 7, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 

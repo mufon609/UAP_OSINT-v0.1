@@ -410,7 +410,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'lasqr'
   canonical: 'laser'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -418,7 +418,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'parapsv- chology'
   canonical: 'parapsychology'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -426,7 +426,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'scientir''ic'
   canonical: 'scientific'
-  location: 'p. 8, ¶1'
+  location: 'p. 7, ¶1'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -434,7 +434,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'ORO'
   canonical: 'ORD'
-  location: 'p. 8, ¶2-4'
+  location: 'p. 7, ¶2-4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -442,7 +442,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: '19i2'
   canonical: '1972'
-  location: 'p. 8, ¶4'
+  location: 'p. 7, ¶4'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 

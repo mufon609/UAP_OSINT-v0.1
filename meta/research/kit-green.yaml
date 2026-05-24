@@ -182,7 +182,7 @@ naming_quirks:
   added_date: '2026-05-17'
   observed: '''1:7,'
   canonical: '17,'
-  location: 'p. 8, footnote'
+  location: 'p. 7, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -190,7 +190,7 @@ naming_quirks:
   added_date: '2026-05-17'
   observed: 'T 1(.'
   canonical: 'K.'
-  location: 'p. 10, footnote'
+  location: 'p. 9, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -198,7 +198,7 @@ naming_quirks:
   added_date: '2026-05-17'
   observed: 'Rerord'
   canonical: 'Record'
-  location: 'p. 10, footnote'
+  location: 'p. 9, footnote'
   source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   resolution: preserve-as-sic-in-quotes
 

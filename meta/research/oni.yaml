@@ -108,14 +108,14 @@ naming_quirks:
   added_date: '2026-05-05'
   observed: identifYing
   canonical: identifying
-  location: p. 2, ¶1 (Purpose)
+  location: p. 8, ¶1 (Purpose)
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-05'
   observed: ONn
   canonical: ONI)
-  location: p. 2, Section 1 Identifying Data, PR field
+  location: p. 7, Section 1 Identifying Data, PR field
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3

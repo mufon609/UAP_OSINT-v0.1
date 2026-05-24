@@ -203,14 +203,14 @@ naming_quirks:
   added_date: '2026-05-18'
   observed: '22M'
   canonical: '$22M'
-  location: 'p. 1, Q1 response — embedded Lacatski quotation'
+  location: 'p. 5, Q1 response — embedded Lacatski quotation'
   source_path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-18'
   observed: 'AASAP'
   canonical: 'AAWSAP'
-  location: 'p. 2, Q11 verbatim quotation of Burlison''s question'
+  location: 'p. 3, Q11 verbatim quotation of Burlison''s question'
   source_path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   resolution: preserve-as-sic-in-quotes
 

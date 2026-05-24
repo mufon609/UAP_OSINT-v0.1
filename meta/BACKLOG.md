@@ -179,25 +179,3 @@ adjacent-node propagation before building.
 
 **Blocks:** none.
 **Blocked by:** none.
-
-### C2 — Extend quote_location_page beyond `quotes[]` (timeline / naming_quirks)
-
-The `quote_location_page` check covers `quotes[]` only. `p. N` refs in
-`timeline[]` and `naming_quirks[]` are ungated and were not migrated — two
-stale timeline labels (`aaro-denial-action-mismatch` t2, `pax-river` t2) were
-found and fixed by hand during the findings audit.
-
-`naming_quirks[]` carry a verbatim `observed` token and could be gated the same
-way (token on page N). `timeline[]` entries carry a paraphrased `event`, not
-verbatim text, so they have no anchor to verify against — for those the `p. N`
-rests on contributor care regardless; the realistic scope here is
-`naming_quirks[]` plus a sweep of the existing `timeline[]` page refs against
-the now-paginated extracts.
-
-(The OCR-sibling axis of this gap is closed: siblings carry
-`----- PAGE BREAK -----` per document page, `extract_source_text` normalizes it
-to a form feed, and the gate now verifies OCR `p. N` refs the same as
-text-native — see `meta/conventions.md` "Quote location refs".)
-
-**Blocks:** none.
-**Blocked by:** none.
