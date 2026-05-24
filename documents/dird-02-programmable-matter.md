@@ -255,6 +255,22 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** <en.wiktionary.org>: "atom"
+- **[2]** McCarthy, Wil: Hacking Matter, Basic Books, March 2003
+- **[3]** "Global Green Building Trends," McGraw-Hill Construction, 2008
+- **[4]** Graham-Rowe, Duncan: Cool colours, man, New Scientist, 21 April 2001
+- **[5]** Joshua Apte, Dariush Arasteh, and Yu Joe Huang: ASHRAE report KC-03-12-3, "Future Advanced Windows or Zero-Energy Homes," ASHRAE Transactions, Volume 109, Part 22003
+- **[6]** Internal research & modeling at RavenBrick LLC, 2006-2009
+- **[7]** Innovative Specialty Films corporate website, January 2003, <http://web.archive.org/web/20021121182945/http://www.isfilms.com/>
+- **[8]** "At a Crossroad," Window Film, Volume 12, Issue 4 - July/August 2008
+- **[9]** <http://www.articlesbase.com/environment-articles/the-most-efficient-solar-cell-in-the-world-853223.html>
+
+---
+
 ## Associated Nodes
 
 ### Documents

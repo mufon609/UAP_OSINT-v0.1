@@ -157,10 +157,11 @@ def render_cited_works(artifact):
         key = str(w.get("citation_key", "")).strip()
         verbatim = " ".join((w.get("citation_verbatim") or "").split())
         # citation_verbatim is faithful and includes the source's own leading
-        # marker — bracket "[N]" (dird-24) or caret-superscript "^N" (dird-01
-        # endnotes); strip it for display since the marker is re-emitted in
-        # bold from citation_key (avoids a doubled "[1] [1]" prefix).
-        verbatim = re.sub(r"^(?:\[\d+\]|\^\d+)\s*", "", verbatim)
+        # marker — bracket "[N]" (dird-24), caret-superscript "^N" (dird-01
+        # endnotes), or number-dot "N." (dird-02 list); strip it for display
+        # since the marker is re-emitted in bold from citation_key (avoids a
+        # doubled "[1] [1]" prefix).
+        verbatim = re.sub(r"^(?:\[\d+\]|\^\d+|\d+\.)\s*", "", verbatim)
         marker = f"**[{key}]** " if key else ""
         lines.append(f"- {marker}{verbatim}")
     return "\n".join(lines) + "\n"

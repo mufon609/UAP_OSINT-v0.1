@@ -1086,9 +1086,9 @@ cited_work_entry:
   required: [citation_key, author, citation_verbatim, source]
   optional: [year, title]
   # citation_key: the in-source reference marker as it appears, e.g. "1"
-  #   for a bracketed "[1]" (dird-24) or a caret-superscript "^1" endnote
-  #   (dird-01). Store the bare number; the renderer re-brackets. Unique
-  #   within the artifact.
+  #   for a bracketed "[1]" (dird-24), a caret-superscript "^1" endnote
+  #   (dird-01), or a number-dot "1." list item (dird-02). Store the bare
+  #   number; the renderer re-brackets. Unique within the artifact.
   # author: author / originating-body position as it appears in the
   #   reference, SOURCE FORM preserved (sic) — e.g. "DeWitt, B. S." or
   #   "Birrell, N. D., and Davies, P. C. W.", or an institutional name when

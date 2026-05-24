@@ -224,7 +224,101 @@ quotes:
     location: 'p. 16, ¶ Conclusions'
   significance: Conclusions — if even a fraction of these possibilities became reality, the gains in energy efficiency, mass reduction, safety, comfort, and mission flexibility could be extremely significant and well worth pursuing
   statement_date: '2009-12-14'
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-24'
+    citation_key: '1'
+    author: 'en.wiktionary.org'
+    title: 'atom'
+    citation_verbatim: |-
+      1. <en.wiktionary.org>: "atom"
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 1'
+  - id: cw2
+    added_date: '2026-05-24'
+    citation_key: '2'
+    author: 'McCarthy, Wil'
+    year: '2003'
+    title: 'Hacking Matter'
+    citation_verbatim: |-
+      2. McCarthy, Wil: Hacking Matter, Basic Books, March 2003
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 2'
+  - id: cw3
+    added_date: '2026-05-24'
+    citation_key: '3'
+    author: 'McGraw-Hill Construction'
+    year: '2008'
+    title: 'Global Green Building Trends'
+    citation_verbatim: |-
+      3. "Global Green Building Trends," McGraw-Hill Construction, 2008
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 3'
+  - id: cw4
+    added_date: '2026-05-24'
+    citation_key: '4'
+    author: 'Graham-Rowe, Duncan'
+    year: '2001'
+    title: 'Cool colours, man'
+    citation_verbatim: |-
+      4. Graham-Rowe, Duncan: Cool colours, man, New Scientist, 21 April 2001
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 4'
+  - id: cw5
+    added_date: '2026-05-24'
+    citation_key: '5'
+    author: 'Joshua Apte, Dariush Arasteh, and Yu Joe Huang'
+    title: 'Future Advanced Windows or Zero-Energy Homes'
+    citation_verbatim: |-
+      5. Joshua Apte, Dariush Arasteh, and Yu Joe Huang: ASHRAE report KC-03-12-3, "Future Advanced Windows or
+      Zero-Energy Homes," ASHRAE Transactions, Volume 109, Part 22003
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 5'
+  - id: cw6
+    added_date: '2026-05-24'
+    citation_key: '6'
+    author: 'RavenBrick LLC'
+    citation_verbatim: |-
+      6. Internal research & modeling at RavenBrick LLC, 2006-2009
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 6'
+  - id: cw7
+    added_date: '2026-05-24'
+    citation_key: '7'
+    author: 'Innovative Specialty Films'
+    year: '2003'
+    citation_verbatim: |-
+      7. Innovative Specialty Films corporate website, January 2003,
+      <http://web.archive.org/web/20021121182945/http://www.isfilms.com/>
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 7'
+  - id: cw8
+    added_date: '2026-05-24'
+    citation_key: '8'
+    author: 'Window Film'
+    year: '2008'
+    title: 'At a Crossroad'
+    citation_verbatim: |-
+      8. "At a Crossroad," Window Film, Volume 12, Issue 4 - July/August 2008
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 8'
+  - id: cw9
+    added_date: '2026-05-24'
+    citation_key: '9'
+    author: 'articlesbase.com'
+    citation_verbatim: |-
+      9. <http://www.articlesbase.com/environment-articles/the-most-efficient-solar-cell-in-the-world-853223.html>
+    source:
+      path: government/dird-02-programmable-matter-20091214.pdf
+      location: 'p. 16, References 9'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-23'
