@@ -156,5 +156,245 @@ quotes:
     location: 'p. 17, ¶ Discussion'
   significance: Ideal-craft feature list (continued) — hardened materials, decreased effective mass, accelerated timeframe, and arbitrary gravity-like forces from restructuring the vacuum spacetime variables
   statement_date: '2010-03-29'
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-24'
+    citation_key: '1'
+    author: 'M. G. Millis and E. W. Davis'
+    year: '2009'
+    title: 'Frontiers of Propulsion Science'
+    citation_verbatim: |-
+      ^1 See, for example, a series of essays in the compendium Frontiers of Propulsion Science, Eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, Virginia (2009).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^1'
+  - id: cw2
+    added_date: '2026-05-24'
+    citation_key: '2'
+    author: 'M. Alcubierre'
+    year: '1994'
+    title: 'The warp drive: Hyper-fast travel within general relativity'
+    citation_verbatim: |-
+      ^2 M. Alcubierre, "The warp drive: Hyper-fast travel within general relativity," Class. Quantum Grav. 11, p. L73 (1994).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^2'
+  - id: cw3
+    added_date: '2026-05-24'
+    citation_key: '3'
+    author: 'H. E. Puthoff'
+    year: '1996'
+    title: 'SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview'
+    citation_verbatim: |-
+      ^3 H. E. Puthoff, "SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview," Physics Essays 9, p. 156 (1996).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^3'
+  - id: cw4
+    added_date: '2026-05-24'
+    citation_key: '4'
+    author: 'M. S. Morris and K. S. Thorne'
+    year: '1988'
+    title: 'Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity'
+    citation_verbatim: |-
+      ^4 M. S. Morris and K. S. Thorne, "Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity," Am. J. Phys. 56, pp. 395-412 (1988).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^4'
+  - id: cw5
+    added_date: '2026-05-24'
+    citation_key: '5'
+    author: 'M. Visser'
+    year: '1995'
+    title: 'Lorentzian Wormholes: From Einstein to Hawking'
+    citation_verbatim: |-
+      ^5 M. Visser, Lorentzian Wormholes: From Einstein to Hawking, AIP Press, New York, 1995.
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^5'
+  - id: cw6
+    added_date: '2026-05-24'
+    citation_key: '6'
+    author: 'M. S. Morris, K. S. Thorne and U. Yurtsever'
+    year: '1988'
+    title: 'Wormholes, time machines, and the weak energy condition'
+    citation_verbatim: |-
+      ^6 M. S. Morris, K. S. Thorne and U. Yurtsever, "Wormholes, time machines, and the weak energy condition," Phys. Rev. Lett. 61, p. 1446 (1988).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^6'
+  - id: cw7
+    added_date: '2026-05-24'
+    citation_key: '7'
+    author: 'T. D. Lee'
+    year: '1988'
+    title: 'Particle Physics and Introduction to Field Theory'
+    citation_verbatim: |-
+      ^7 T. D. Lee, Particle Physics and Introduction to Field Theory, Harwood Academic Press, London (1988).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^7'
+  - id: cw8
+    added_date: '2026-05-24'
+    citation_key: '8'
+    author: 'S. Saunders and H. R. Brown'
+    year: '1991'
+    title: 'The Philosophy of Vacuum'
+    citation_verbatim: |-
+      ^8 The Philosophy of Vacuum, Eds. S. Saunders and H. R. Brown, Clarendon Press, Oxford (1991).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^8'
+  - id: cw9
+    added_date: '2026-05-24'
+    citation_key: '9'
+    author: 'F. Wilczek'
+    year: '2008'
+    title: 'The Lightness of Being: Mass, Ether and the Unification of Forces'
+    citation_verbatim: |-
+      ^9 F. Wilczek, The Lightness of Being: Mass, Ether and the Unification of Forces, Basic Books, New York (2008).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^9'
+  - id: cw10
+    added_date: '2026-05-24'
+    citation_key: '10'
+    author: 'A. Logunov and M. Mestvirishvili'
+    year: '1989'
+    title: 'The Relativistic Theory of Gravitation'
+    citation_verbatim: |-
+      ^10 A. Logunov and M. Mestvirishvili, The Relativistic Theory of Gravitation, Mir Publ., Moscow (1989), p. 76.
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^10'
+  - id: cw11
+    added_date: '2026-05-24'
+    citation_key: '11'
+    author: 'A. Logunov and M. Mestvirishvili'
+    citation_verbatim: |-
+      ^11 Op. cit., p. 83.
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^11'
+  - id: cw12
+    added_date: '2026-05-24'
+    citation_key: '12'
+    author: 'S. M. Mahajan, A. Qadir and P. M. Valanju'
+    year: '1981'
+    title: "Reintroducing the concept of 'force' into relativity theory"
+    citation_verbatim: |-
+      ^12 S. M. Mahajan, A. Qadir and P. M. Valanju, "Reintroducing the concept of 'force' into relativity theory," Il Nuovo Cimento 65B, 404 (1981).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^12'
+  - id: cw13
+    added_date: '2026-05-24'
+    citation_key: '13'
+    author: 'R. Klauber'
+    year: '2001'
+    title: 'Physical components, coordinate components, and the speed of light'
+    citation_verbatim: |-
+      ^13 R. Klauber, "Physical components, coordinate components, and the speed of light," www.arXiv:gr-qc/0105071 v1 (18 May 2001).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^13'
+  - id: cw14
+    added_date: '2026-05-24'
+    citation_key: '14'
+    author: 'F. de Felice'
+    year: '1971'
+    title: 'On the gravitational field acting as an optical medium'
+    citation_verbatim: |-
+      ^14 F. de Felice, "On the gravitational field acting as an optical medium," Gen. Rel. and Grav. 2, 347 (1971).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^14'
+  - id: cw15
+    added_date: '2026-05-24'
+    citation_key: '15'
+    author: 'K. K. Nandi and A. Islam'
+    year: '1995'
+    title: 'On the optical-mechanical analogy in general relativity'
+    citation_verbatim: |-
+      ^15 K. K. Nandi and A. Islam, "On the optical-mechanical analogy in general relativity," Am. J. Phys. 63, 251 (1995).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^15'
+  - id: cw16
+    added_date: '2026-05-24'
+    citation_key: '16'
+    author: 'H. E. Puthoff'
+    year: '2002'
+    title: 'Polarizable-vacuum (PV) approach to general relativity'
+    citation_verbatim: |-
+      ^16 H. E. Puthoff, "Polarizable-vacuum (PV) approach to general relativity," Found. Phys. 32, 927 (2002).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^16'
+  - id: cw17
+    added_date: '2026-05-24'
+    citation_key: '17'
+    author: 'P. Boonserm et al.'
+    year: '2005'
+    title: 'Effective refractive index tensor for weak-field gravity'
+    citation_verbatim: |-
+      ^17 P. Boonserm et al., "Effective refractive index tensor for weak-field gravity," Class. Quant. Grav. 22, 1905 (2005).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^17'
+  - id: cw18
+    added_date: '2026-05-24'
+    citation_key: '18'
+    author: 'X.-H. Ye and Q. Lin'
+    year: '2008'
+    title: 'A simple optical analysis of gravitational lensing'
+    citation_verbatim: |-
+      ^18 X.-H. Ye and Q. Lin, "A simple optical analysis of gravitational lensing," J. Modern Optics 55, no. 7, 1119 (2008).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^18'
+  - id: cw19
+    added_date: '2026-05-24'
+    citation_key: '19'
+    author: 'H. E. Puthoff, E. W. Davis and C. Maccone'
+    year: '2005'
+    title: 'Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'
+    citation_verbatim: |-
+      ^19 H. E. Puthoff, E. W. Davis and C. Maccone, "Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity," Gen. Relativ. Grav. 37, 483 (2005).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^19'
+  - id: cw20
+    added_date: '2026-05-24'
+    citation_key: '20'
+    author: 'A. P. Lightman and D. P. Lee'
+    year: '1973'
+    title: 'Restricted proof that the weak equivalence principle implies the Einstein equivalence principle'
+    citation_verbatim: |-
+      ^20 A. P. Lightman and D. P. Lee, "Restricted proof that the weak equivalence principle implies the Einstein equivalence principle," Phys. Rev. D 8, 364 (1973).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^20'
+  - id: cw21
+    added_date: '2026-05-24'
+    citation_key: '21'
+    author: 'C. W. Misner, K. S. Thorne and J. A. Wheeler'
+    year: '1973'
+    title: 'Gravitation'
+    citation_verbatim: |-
+      ^21 C. W. Misner, K. S. Thorne and J. A. Wheeler, Gravitation, Freeman, San Francisco (1973), p. 5.
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^21'
+  - id: cw22
+    added_date: '2026-05-24'
+    citation_key: '22'
+    author: 'E. W. Davis'
+    year: '2009'
+    title: 'Chapter 15: Faster-than-Light Approaches in General Relativity'
+    citation_verbatim: |-
+      ^22 E. W. Davis, "Chapter 15: Faster-than-Light Approaches in General Relativity," Frontiers of Propulsion Science, Progress in Astronautics and Aeronautics Series, Vol. 227, eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, VA, pp. 473 (2009).
+    source:
+      path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+      location: 'p. 12, References ^22'
 naming_quirks: []

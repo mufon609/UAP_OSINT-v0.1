@@ -283,7 +283,623 @@ quotes:
     location: 'p. 23, ¶ Appendix A'
   significance: Schuessler catalog — Appendix A reproduces the Schuessler catalog of 356 selected cases of UFO-induced physiological effects 1873–1994 ("complied" is the document's form for compiled)
   statement_date: '2010-03-11'
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-24'
+    citation_key: '1'
+    author: 'C.J. Shilling'
+    year: '1997'
+    title: 'Effects of acute exposure to ultrahigh radiofrequency radiation on three antenna engineers'
+    citation_verbatim: |-
+      [1] C.J. Shilling, "Effects of acute exposure to ultrahigh radiofrequency radiation on
+      three antenna engineers" Occup. Environ. Med 1997;54;281-284
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [1]'
+  - id: cw2
+    added_date: '2026-05-24'
+    citation_key: '2'
+    author: 'J. Schuessler'
+    year: '1996'
+    title: 'UFO-Related Human Physiological Effects'
+    citation_verbatim: |-
+      [2] J. Schuessler, UFO-Related Human Physiological Effects (Geo Graphics Printing Co.,
+      La Porte, TX, 1996).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [2]'
+  - id: cw3
+    added_date: '2026-05-24'
+    citation_key: '3'
+    author: 'P. A. Sturrock'
+    year: '1998'
+    title: 'Physical evidence related to UFO reports: The Proceedings of a workshop held at Pocantico Conference Center, Tarrytown, NY, Sept. 29 – Oct. 4, 1998'
+    citation_verbatim: |-
+      [3] P. A. Sturrock, "Physical evidence related to UFO reports: The Proceedings of a
+      workshop held at Pocantico Conference Center, Tarrytown, NY, Sept. 29 – Oct. 4,
+      1998,: Jour. Sci. Exploration 22, pp. 179-229 (1998).  The results of this workshop
+      were later published in detail in book form, P. A. Sturrock, The UFO Enigma (Warner
+      Books, New York, 2000).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [3]'
+  - id: cw4
+    added_date: '2026-05-24'
+    citation_key: '4'
+    author: 'J. F. Schuessler'
+    year: '1981'
+    title: 'Cash-Landrum Radiation Case'
+    citation_verbatim: |-
+      [4] J. F. Schuessler, "Cash-Landrum Radiation Case," MUFON UFO Jour. 165, p. 3
+      (November 1981).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [4]'
+  - id: cw5
+    added_date: '2026-05-24'
+    citation_key: '5'
+    author: 'Army INSCOM (Intelligence and Security Command)'
+    year: '1998'
+    title: 'Addendum to Nonlethal Technologies – Worldwide (NGIC-1147-101-98): "Bioeffects of Selected Nonlethal Weapons"'
+    citation_verbatim: |-
+      [5] Addendum to Nonlethal Technologies – Worldwide (NGIC-1147-101-98): "Bioeffects
+      of Selected Nonlethal Weapons," Army INSCOM (Intelligence and Security Command)
+      Report (1998).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [5]'
+  - id: cw6
+    added_date: '2026-05-24'
+    citation_key: '5-a'
+    author: 'wired.com'
+    citation_verbatim: |-
+      [5-a] http://www.wired.com/dangerroom/2008/03/shoe-zapping-ra/
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [5-a]'
+  - id: cw7
+    added_date: '2026-05-24'
+    citation_key: '5-b'
+    author: '127.0.0.1:4664 (local cache)'
+    citation_verbatim: |-
+      [5-b] http://127.0.0.1:4664/cache?event_id=135227&schema_id=8&q=Bioengineering
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [5-b]'
+  - id: cw8
+    added_date: '2026-05-24'
+    citation_key: '5-c'
+    author: 'thebulletin.org'
+    citation_verbatim: |-
+      [5-c] http://www.thebulletin.org/web-edition/roundtables/the-military-application-of-
+      neuroscience-research#rt4022
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [5-c]'
+  - id: cw9
+    added_date: '2026-05-24'
+    citation_key: '6'
+    author: 'J. Alexander'
+    year: '1999'
+    title: 'Future War: Non-lethal Weapons in Twenty-First-Century Warfare'
+    citation_verbatim: |-
+      [6] J. Alexander, Future War: Non-lethal Weapons in Twenty-First-Century Warfare
+      (Thomas Dunne Books, New York, 1999).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [6]'
+  - id: cw10
+    added_date: '2026-05-24'
+    citation_key: '7'
+    author: 'J. McCampbell'
+    year: '1987'
+    title: 'Effects of UFOs upon people'
+    citation_verbatim: |-
+      [7] J. McCampbell, "Effects of UFOs upon people," in H. Evans and J. Spencer, UFOs
+      1947-1987, the 40-Year Search for an Explanation (Fortean Times, London, 1987).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 19, References [7]'
+  - id: cw11
+    added_date: '2026-05-24'
+    citation_key: '8'
+    author: 'J. Vallee'
+    year: '1990'
+    title: 'Confrontations'
+    citation_verbatim: |-
+      [8] J. Vallee, Confrontations (Ballantine Books, New York, 1990).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [8]'
+  - id: cw12
+    added_date: '2026-05-24'
+    citation_key: '9'
+    author: 'Brazilian Air Force'
+    citation_verbatim: |-
+      [9] A partial summary of official Brazilian Air Force documentation concerning a
+      months-long series of close-range, well-documented observations of anomalous craft at
+      Colares in 1977, which includes description of a number of medical injuries, is available
+      at the website: http://www.ufologie.net/htm/colaresgevaerd01.htm.
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [9]'
+  - id: cw13
+    added_date: '2026-05-24'
+    citation_key: '10'
+    author: 'Airborne Instruments Laboratory'
+    year: '1956'
+    title: 'An observation on the detection by the ear of microwave signals'
+    citation_verbatim: |-
+      [10] Airborne Instruments Laboratory 1956 An observation on the detection by the ear
+      of microwave signals Proc IRE 44:2A
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [10]'
+  - id: cw14
+    added_date: '2026-05-24'
+    citation_key: '11'
+    author: 'Elder JA & Chou CK'
+    year: '2003'
+    title: 'Auditory response to Pulsed Radiofrequency Energy'
+    citation_verbatim: |-
+      [11] Elder JA & Chou CK 2003 Auditory response to Pulsed Radiofrequency Energy
+      Bioelectromagnetics Supplement 6:S162-S173
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [11]'
+  - id: cw15
+    added_date: '2026-05-24'
+    citation_key: '12'
+    author: 'Green C.'
+    year: '2009'
+    citation_verbatim: |-
+      [12] Green C. 2009 & 1983 {Unpublished Personal Archives}
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [12]'
+  - id: cw16
+    added_date: '2026-05-24'
+    citation_key: '13'
+    author: 'Guy AW & Chou CK'
+    year: '1982'
+    title: 'Effects of High Intensity microwave pulse exposure of rat brain'
+    citation_verbatim: |-
+      [13] Guy AW & Chou CK 1982 Effects of High Intensity microwave pulse exposure of rat
+      brain Radio Science 17(5S):169S-178S
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [13]'
+  - id: cw17
+    added_date: '2026-05-24'
+    citation_key: '14'
+    author: 'Marino C. et.al.'
+    year: '2000'
+    title: 'Effects of microwaves (900 MHz) on the cochlear receptor: Exposure systems and preliminary results'
+    citation_verbatim: |-
+      [14] Marino C. et.al. 2000 Effects of microwaves (900 MHz) on the cochlear receptor:
+      Exposure systems and preliminary results Radiat Environ Biophys 39:141-147
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [14]'
+  - id: cw18
+    added_date: '2026-05-24'
+    citation_key: '15'
+    author: 'Kanokov Z. et.al.'
+    year: '2006'
+    title: 'On the Influence of Weak Magnetic and Electrical Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation'
+    citation_verbatim: |-
+      [15] Kanokov Z. et.al. 2006 On the Influence of Weak Magnetic and Electrical Fields on
+      the Fluctuations of Ionic Electric Currents in Blood Circulation   {Deutsche
+      Forschungsgemeinschaft DFG 436 RUS 113/705/0-3}
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [15]'
+  - id: cw19
+    added_date: '2026-05-24'
+    citation_key: '16'
+    author: 'en.wikipedia.org'
+    citation_verbatim: |-
+      [16] http://en.wikipedia.org/wiki/Ionizing_radiation
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [16]'
+  - id: cw20
+    added_date: '2026-05-24'
+    citation_key: '17'
+    author: 'D. Bushnell'
+    year: '2007'
+    title: 'Imaginable technologies for human missions to Mars'
+    citation_verbatim: |-
+      [17] D. Bushnell, "Imaginable technologies for human missions to Mars," Aerospace
+      America (June 2007), p. 24.
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [17]'
+  - id: cw21
+    added_date: '2026-05-24'
+    citation_key: '18'
+    author: 'J. Butler'
+    year: '2005'
+    title: 'Forensic DNA Typing: Biology, Technology, and Genetics of STR Markers - 2nd Edition'
+    citation_verbatim: |-
+      [18] J. Butler, Forensic DNA Typing: Biology, Technology, and Genetics of STR Markers
+      - 2nd Edition (Academic Press, New York, 2005).
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [18]'
+  - id: cw22
+    added_date: '2026-05-24'
+    citation_key: '19'
+    author: 'Marino AA, et.al.'
+    year: '1979'
+    title: 'Power Frequency Electric Fields and Biological Stress: A Cause and Effect Relationship'
+    citation_verbatim: |-
+      [19] Marino AA, et.al. 1979 Power Frequency Electric Fields and Biological Stress: A
+      Cause and Effect Relationship Biol. Effects of ELF: 18th Hanford Con pps 258-276
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [19]'
+  - id: cw23
+    added_date: '2026-05-24'
+    citation_key: '20'
+    author: 'Ryan KL et. al.'
+    year: '2000'
+    title: 'Radio frequency radiation of millimeter wave length: potential occupational safety issues relating to surface heating'
+    citation_verbatim: |-
+      [20] Ryan KL et. al. 2000 Radio frequency radiation of millimeter wave length: potential
+      occupational safety issues relating to surface heating Health Physics 78:170-81
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [20]'
+  - id: cw24
+    added_date: '2026-05-24'
+    citation_key: '21'
+    author: 'Gandhi O & Riazi I'
+    year: '1986'
+    title: 'Absorption of millimeter waves by human beings and its biological implications'
+    citation_verbatim: |-
+      [21] Gandhi O & Riazi I 1986 Absorption of millimeter waves by human beings  and its
+      biological implications Microwave Theory and Techniques, 34(2) 228-235 IEEE
+      Transactions Feb.
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [21]'
+  - id: cw25
+    added_date: '2026-05-24'
+    citation_key: '22'
+    author: 'Siegel AM, et. al.'
+    year: '1969'
+    title: 'Some biological effects of Low-energy protons on Skin'
+    citation_verbatim: |-
+      [22] Siegel AM, et. al. 1969 Some biological effects of Low-energy protons on Skin
+      Radiation Research 37:323-333
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [22]'
+  - id: cw26
+    added_date: '2026-05-24'
+    citation_key: '23'
+    author: 'Graham RB'
+    year: '1985'
+    title: 'The medical records of human exposure to radiofrequency radiation. In: The impact of proposed radiofrequency radiation standards on military operations'
+    citation_verbatim: |-
+      [23] Graham RB 1985 The medical records of human exposure to radiofrequency
+      radiation. In: The impact of proposed radiofrequency radiation standards on military
+      operations Advisory Group for Aerospace Research and Development (AGARD) 6-16-8
+      Lecture Series No. 138
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [23]'
+  - id: cw27
+    added_date: '2026-05-24'
+    citation_key: '24'
+    author: 'Green C.'
+    year: '2009'
+    citation_verbatim: |-
+      [24] Green C. 2009 & 1978 {Unpublished Personal Archives}
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 20, References [24]'
+  - id: cw28
+    added_date: '2026-05-24'
+    citation_key: '25'
+    author: 'Machiori PE et.al.'
+    year: '1995'
+    title: 'Acute multiple mononeuropathy after accidental exposure to oven microwaves'
+    citation_verbatim: |-
+      [25] Machiori PE et.al. 1995 Acute multiple mononeuropathy after accidental exposure
+      to oven microwaves Occup. Med 45:276-7
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [25]'
+  - id: cw29
+    added_date: '2026-05-24'
+    citation_key: '26'
+    author: 'Hocking B et.al.'
+    year: '1988'
+    title: 'Assessment of Health after radio-frequency radiation accident'
+    citation_verbatim: |-
+      [26] Hocking B et.al. 1988 Assessment of Health after radio-frequency radiation
+      accident J. Microwave Power and electromagnetic energy 23:67-74
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [26]'
+  - id: cw30
+    added_date: '2026-05-24'
+    citation_key: '27'
+    author: 'McRee DI & Wachtel H'
+    year: '1986'
+    title: 'Elimination of microwave effects on the vitality of nerves after blockage of active transport'
+    citation_verbatim: |-
+      [27] McRee DI & Wachtel H 1986 Elimination of microwave effects on the vitality of
+      nerves after blockage of active transport Radiat Res  108:260-8
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [27]'
+  - id: cw31
+    added_date: '2026-05-24'
+    citation_key: '28'
+    author: 'Forman SA et.al.'
+    year: '1982'
+    title: 'Psychological symptoms and intermittent hypertension following acute microwave exposure'
+    citation_verbatim: |-
+      [28] Forman SA et.al. 1982 Psychological symptoms and intermittent hypertension
+      following acute microwave exposure
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [28]'
+  - id: cw32
+    added_date: '2026-05-24'
+    citation_key: '29'
+    author: 'Wayne L et.al.'
+    year: '1984'
+    title: 'Investigation of an active microwave – hand oven injury'
+    citation_verbatim: |-
+      [29] Wayne L  et.al. 1984 Investigation of an active microwave – hand oven injury J.
+      Hand Surgery 9A:132-5
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [29]'
+  - id: cw33
+    added_date: '2026-05-24'
+    citation_key: '30'
+    author: 'Riddervold IS et. al.'
+    year: '2008'
+    title: 'Cognitive function and symptoms in adults and adolescents in relation to RF radiation from UMTS base stations'
+    citation_verbatim: |-
+      [30] Riddervold IS et. al. 2008 Cognitive function and symptoms in adults and
+      adolescents in relation to RF radiation from UMTS base stations Bioelectromagnetics
+      29:257-67
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [30]'
+  - id: cw34
+    added_date: '2026-05-24'
+    citation_key: '31'
+    author: 'arxiv.org'
+    year: '2009'
+    title: 'On the Influence of Weak Magnetic and Electric Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation'
+    citation_verbatim: |-
+      [31] arxiv.org/abs/0904.1198 2009 On the Influence of Weak Magnetic and Electric
+      Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [31]'
+  - id: cw35
+    added_date: '2026-05-24'
+    citation_key: '32'
+    author: 'McRee DI & Wachtel H'
+    year: '1982'
+    title: 'Pulse Microwave effects on nerve vitality'
+    citation_verbatim: |-
+      [32] McRee DI & Wachtel H 1982 Pulse Microwave effects on nerve vitality Radiat Res
+      91:212-8
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [32]'
+  - id: cw36
+    added_date: '2026-05-24'
+    citation_key: '33'
+    author: 'Risling M'
+    year: '2009'
+    title: 'Detailed Examples of Radio Frequency, Kinetic Energy, and Electro-Muscular Devices: a Meta Review'
+    citation_verbatim: |-
+      [33] Risling M 2009 Detailed Examples of Radio Frequency, Kinetic Energy, and Electro-
+      Muscular Devices: a Meta Review NATO RTO-EN-HFM-145: 2-1—2-7
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [33]'
+  - id: cw37
+    added_date: '2026-05-24'
+    citation_key: '34'
+    author: 'Bassett CA'
+    year: '1989'
+    title: 'Fundamental and practical aspects of therapeutic uses of pulsed electromagnetic fields'
+    citation_verbatim: |-
+      [34] Bassett CA 1989 Fundamental and practical aspects of therapeutic uses of pulsed
+      electromagnetic fields Crit Rev Biomed Eng 17(5): 415-529
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [34]'
+  - id: cw38
+    added_date: '2026-05-24'
+    citation_key: '35'
+    author: 'Green C.'
+    year: '2009'
+    title: 'PEMF current human effect literature'
+    citation_verbatim: |-
+      [35] PEMF current human effect literature Green C. 2009; 2,920 citations
+      http://scholar.google.cn/scholar?q=PEMFs&hl=en&lr=&btnG=Search; 255 citations
+      http://www.ncbi.nlm.nih.gov/sites/entrez
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [35]'
+  - id: cw39
+    added_date: '2026-05-24'
+    citation_key: '36'
+    author: 'Loo CK et. al'
+    year: '2003'
+    title: 'High (15 HZ) and low (1 HZ) frequency transcranial stimulation have different acute effects on regional cerebral blood flow in depressed patients'
+    citation_verbatim: |-
+      [36] Loo CK et. al  2003 High (15 HZ) and low (1 HZ) frequency transcranial
+      stimulation have different acute effects on regional cerebral blood flow in depressed
+      patients Psychol Med 6:997-1--6
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [36]'
+  - id: cw40
+    added_date: '2026-05-24'
+    citation_key: '37'
+    author: 'C.F. Blackman, et.al.'
+    year: '2007'
+    title: 'The BioInitiative Report: A Rationale for a Biologically-based Public Exposure Standard for Electromagnetic Fields (ELF and RF)'
+    citation_verbatim: |-
+      [37] C.F. Blackman, et.al. 2007 http://www.bioinitiative.org/report/index.htm The
+      BioInitiative Report: A Rationale for a Biologically-based Public Exposure Standard
+      for Electromagnetic Fields (ELF and RF)
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [37]'
+  - id: cw41
+    added_date: '2026-05-24'
+    citation_key: '38'
+    author: 'American Cancer Society'
+    year: '2009'
+    title: 'Radiation Exposures'
+    citation_verbatim: |-
+      [38] American Cancer Society Radiation Exposures" May, 2009
+      http://www.cancer.org/docroot/ped/content/ped_1_3x_radiation_exposure_and_cancer
+      .asp
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [38]'
+  - id: cw42
+    added_date: '2026-05-24'
+    citation_key: '39'
+    author: 'Lee JJ, et. al.'
+    year: '2008'
+    title: 'Acute Radiofrequency irradiation does not affect cell cycle, migration, and invasion'
+    citation_verbatim: |-
+      [39] Lee JJ, et. al. 2008 Acute Radiofrequency irradiation does not affect cell cycle,
+      migration, and invasion Bioelectromagnetics Dec. 29(8):615-25
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [39]'
+  - id: cw43
+    added_date: '2026-05-24'
+    citation_key: '40'
+    author: 'Green, CC'
+    year: '2001'
+    citation_verbatim: |-
+      [40] Green, CC 2001, 2009 Unpublished HIPPA files
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [40]'
+  - id: cw44
+    added_date: '2026-05-24'
+    citation_key: '41'
+    author: 'Green C.'
+    year: '2009'
+    title: 'RF Injury and Brain literature'
+    citation_verbatim: |-
+      [41] RF Injury and Brain literature Green C. 2009 8,006 citations
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 21, References [41]'
+  - id: cw45
+    added_date: '2026-05-24'
+    citation_key: '42'
+    author: 'Sherry, CJ et.al.'
+    year: '1995'
+    title: 'Lack of Behavioral Effects after exposure to ultra wide-band electromagnetic radiation in the microwave frequency range'
+    citation_verbatim: |-
+      [42] Sherry, CJ et.al. 1995 Lack of Behavioral Effects after exposure to ultra wide-band
+      electromagnetic radiation in the microwave frequency range Radiation Research 143(1)
+      93-97
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [42]'
+  - id: cw46
+    added_date: '2026-05-24'
+    citation_key: '43'
+    author: 'Brillaud E et. al.'
+    year: '2007'
+    title: 'Effect of an acute 900 MHz GSM exposure on glia in the rat brain: a time-dependent study'
+    citation_verbatim: |-
+      [43] Brillaud E et. al. 2007 Effect of an acute 900 MHz GSM exposure on glia in the rat
+      brain: a time-dependent study Toxicology 23891):23-33
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [43]'
+  - id: cw47
+    added_date: '2026-05-24'
+    citation_key: '44'
+    author: 'Masuda H. et.al.'
+    year: '2007'
+    title: 'Effects of acute exposure to a 1439 MHz electromagnetic field on the microcirculatory parameters in rat brain'
+    citation_verbatim: |-
+      [44] Masuda H. et.al. 2007 Effects of acute exposure to a 1439 MHz electromagnetic
+      field on the microcirculatory parameters in rat brain In Vivo 21(4):555-62
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [44]'
+  - id: cw48
+    added_date: '2026-05-24'
+    citation_key: '45'
+    author: 'Lai, H'
+    year: '1998'
+    title: 'Neurological effects of radiofrequency electromagnetic radiation'
+    citation_verbatim: |-
+      [45] Lai, H 1998 Neurological effects of radiofrequency electromagnetic radiation
+      Workshop on Biological and health effects of RF electromagnetic fields
+      www.mapcruzin.com
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [45]'
+  - id: cw49
+    added_date: '2026-05-24'
+    citation_key: '46'
+    author: 'Lai, H'
+    year: '1997'
+    title: 'Neurological Effects of radiofrequency electromagnetic radiation relating to Wireless Communication Technology'
+    citation_verbatim: |-
+      [46] Lai, H 1997 Neurological Effects of radiofrequency electromagnetic radiation
+      relating to Wireless Communication Technology www.mapcruzin.com
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [46]'
+  - id: cw50
+    added_date: '2026-05-24'
+    citation_key: '47'
+    author: 'CDC'
+    title: 'About the International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)'
+    citation_verbatim: |-
+      [47] About the International Classification of Diseases, Tenth Revision, Clinical
+      Modification (ICD-10-CM) http://www.cdc.gov/nchs/about/otheract/icd9/abticd10.htm
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [47]'
+  - id: cw51
+    added_date: '2026-05-24'
+    citation_key: '48'
+    author: 'yawp.com'
+    title: 'Vallee Classification System'
+    citation_verbatim: |-
+      [48] Vallee Classification System http://www.yawp.com/3rd-i/rsrc/gloss/v/vallee.html
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [48]'
+  - id: cw52
+    added_date: '2026-05-24'
+    citation_key: '49'
+    author: 'medterms.com'
+    title: 'Definition of HIPAA'
+    citation_verbatim: |-
+      [49] Definition of HIPAA
+      http://www.medterms.com/script/main/art.asp?articlekey=31785
+    source:
+      path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
+      location: 'p. 22, References [49]'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-23'

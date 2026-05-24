@@ -317,6 +317,65 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** C.J. Shilling, "Effects of acute exposure to ultrahigh radiofrequency radiation on three antenna engineers" Occup. Environ. Med 1997;54;281-284
+- **[2]** J. Schuessler, UFO-Related Human Physiological Effects (Geo Graphics Printing Co., La Porte, TX, 1996).
+- **[3]** P. A. Sturrock, "Physical evidence related to UFO reports: The Proceedings of a workshop held at Pocantico Conference Center, Tarrytown, NY, Sept. 29 – Oct. 4, 1998,: Jour. Sci. Exploration 22, pp. 179-229 (1998). The results of this workshop were later published in detail in book form, P. A. Sturrock, The UFO Enigma (Warner Books, New York, 2000).
+- **[4]** J. F. Schuessler, "Cash-Landrum Radiation Case," MUFON UFO Jour. 165, p. 3 (November 1981).
+- **[5]** Addendum to Nonlethal Technologies – Worldwide (NGIC-1147-101-98): "Bioeffects of Selected Nonlethal Weapons," Army INSCOM (Intelligence and Security Command) Report (1998).
+- **[5-a]** http://www.wired.com/dangerroom/2008/03/shoe-zapping-ra/
+- **[5-b]** http://127.0.0.1:4664/cache?event_id=135227&schema_id=8&q=Bioengineering
+- **[5-c]** http://www.thebulletin.org/web-edition/roundtables/the-military-application-of- neuroscience-research#rt4022
+- **[6]** J. Alexander, Future War: Non-lethal Weapons in Twenty-First-Century Warfare (Thomas Dunne Books, New York, 1999).
+- **[7]** J. McCampbell, "Effects of UFOs upon people," in H. Evans and J. Spencer, UFOs 1947-1987, the 40-Year Search for an Explanation (Fortean Times, London, 1987).
+- **[8]** J. Vallee, Confrontations (Ballantine Books, New York, 1990).
+- **[9]** A partial summary of official Brazilian Air Force documentation concerning a months-long series of close-range, well-documented observations of anomalous craft at Colares in 1977, which includes description of a number of medical injuries, is available at the website: http://www.ufologie.net/htm/colaresgevaerd01.htm.
+- **[10]** Airborne Instruments Laboratory 1956 An observation on the detection by the ear of microwave signals Proc IRE 44:2A
+- **[11]** Elder JA & Chou CK 2003 Auditory response to Pulsed Radiofrequency Energy Bioelectromagnetics Supplement 6:S162-S173
+- **[12]** Green C. 2009 & 1983 {Unpublished Personal Archives}
+- **[13]** Guy AW & Chou CK 1982 Effects of High Intensity microwave pulse exposure of rat brain Radio Science 17(5S):169S-178S
+- **[14]** Marino C. et.al. 2000 Effects of microwaves (900 MHz) on the cochlear receptor: Exposure systems and preliminary results Radiat Environ Biophys 39:141-147
+- **[15]** Kanokov Z. et.al. 2006 On the Influence of Weak Magnetic and Electrical Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation {Deutsche Forschungsgemeinschaft DFG 436 RUS 113/705/0-3}
+- **[16]** http://en.wikipedia.org/wiki/Ionizing_radiation
+- **[17]** D. Bushnell, "Imaginable technologies for human missions to Mars," Aerospace America (June 2007), p. 24.
+- **[18]** J. Butler, Forensic DNA Typing: Biology, Technology, and Genetics of STR Markers - 2nd Edition (Academic Press, New York, 2005).
+- **[19]** Marino AA, et.al. 1979 Power Frequency Electric Fields and Biological Stress: A Cause and Effect Relationship Biol. Effects of ELF: 18th Hanford Con pps 258-276
+- **[20]** Ryan KL et. al. 2000 Radio frequency radiation of millimeter wave length: potential occupational safety issues relating to surface heating Health Physics 78:170-81
+- **[21]** Gandhi O & Riazi I 1986 Absorption of millimeter waves by human beings and its biological implications Microwave Theory and Techniques, 34(2) 228-235 IEEE Transactions Feb.
+- **[22]** Siegel AM, et. al. 1969 Some biological effects of Low-energy protons on Skin Radiation Research 37:323-333
+- **[23]** Graham RB 1985 The medical records of human exposure to radiofrequency radiation. In: The impact of proposed radiofrequency radiation standards on military operations Advisory Group for Aerospace Research and Development (AGARD) 6-16-8 Lecture Series No. 138
+- **[24]** Green C. 2009 & 1978 {Unpublished Personal Archives}
+- **[25]** Machiori PE et.al. 1995 Acute multiple mononeuropathy after accidental exposure to oven microwaves Occup. Med 45:276-7
+- **[26]** Hocking B et.al. 1988 Assessment of Health after radio-frequency radiation accident J. Microwave Power and electromagnetic energy 23:67-74
+- **[27]** McRee DI & Wachtel H 1986 Elimination of microwave effects on the vitality of nerves after blockage of active transport Radiat Res 108:260-8
+- **[28]** Forman SA et.al. 1982 Psychological symptoms and intermittent hypertension following acute microwave exposure
+- **[29]** Wayne L et.al. 1984 Investigation of an active microwave – hand oven injury J. Hand Surgery 9A:132-5
+- **[30]** Riddervold IS et. al. 2008 Cognitive function and symptoms in adults and adolescents in relation to RF radiation from UMTS base stations Bioelectromagnetics 29:257-67
+- **[31]** arxiv.org/abs/0904.1198 2009 On the Influence of Weak Magnetic and Electric Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation
+- **[32]** McRee DI & Wachtel H 1982 Pulse Microwave effects on nerve vitality Radiat Res 91:212-8
+- **[33]** Risling M 2009 Detailed Examples of Radio Frequency, Kinetic Energy, and Electro- Muscular Devices: a Meta Review NATO RTO-EN-HFM-145: 2-1—2-7
+- **[34]** Bassett CA 1989 Fundamental and practical aspects of therapeutic uses of pulsed electromagnetic fields Crit Rev Biomed Eng 17(5): 415-529
+- **[35]** PEMF current human effect literature Green C. 2009; 2,920 citations http://scholar.google.cn/scholar?q=PEMFs&hl=en&lr=&btnG=Search; 255 citations http://www.ncbi.nlm.nih.gov/sites/entrez
+- **[36]** Loo CK et. al 2003 High (15 HZ) and low (1 HZ) frequency transcranial stimulation have different acute effects on regional cerebral blood flow in depressed patients Psychol Med 6:997-1--6
+- **[37]** C.F. Blackman, et.al. 2007 http://www.bioinitiative.org/report/index.htm The BioInitiative Report: A Rationale for a Biologically-based Public Exposure Standard for Electromagnetic Fields (ELF and RF)
+- **[38]** American Cancer Society Radiation Exposures" May, 2009 http://www.cancer.org/docroot/ped/content/ped_1_3x_radiation_exposure_and_cancer .asp
+- **[39]** Lee JJ, et. al. 2008 Acute Radiofrequency irradiation does not affect cell cycle, migration, and invasion Bioelectromagnetics Dec. 29(8):615-25
+- **[40]** Green, CC 2001, 2009 Unpublished HIPPA files
+- **[41]** RF Injury and Brain literature Green C. 2009 8,006 citations
+- **[42]** Sherry, CJ et.al. 1995 Lack of Behavioral Effects after exposure to ultra wide-band electromagnetic radiation in the microwave frequency range Radiation Research 143(1) 93-97
+- **[43]** Brillaud E et. al. 2007 Effect of an acute 900 MHz GSM exposure on glia in the rat brain: a time-dependent study Toxicology 23891):23-33
+- **[44]** Masuda H. et.al. 2007 Effects of acute exposure to a 1439 MHz electromagnetic field on the microcirculatory parameters in rat brain In Vivo 21(4):555-62
+- **[45]** Lai, H 1998 Neurological effects of radiofrequency electromagnetic radiation Workshop on Biological and health effects of RF electromagnetic fields www.mapcruzin.com
+- **[46]** Lai, H 1997 Neurological Effects of radiofrequency electromagnetic radiation relating to Wireless Communication Technology www.mapcruzin.com
+- **[47]** About the International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) http://www.cdc.gov/nchs/about/otheract/icd9/abticd10.htm
+- **[48]** Vallee Classification System http://www.yawp.com/3rd-i/rsrc/gloss/v/vallee.html
+- **[49]** Definition of HIPAA http://www.medterms.com/script/main/art.asp?articlekey=31785
+
+---
+
 ## Associated Nodes
 
 ### People

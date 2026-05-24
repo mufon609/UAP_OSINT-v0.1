@@ -117,12 +117,17 @@ Re-level the whole set for consistency, not dird-04 in isolation.
 | dird-02 programmable-matter | 21 | 17 | 0.81 |
 | dird-04 biomaterials | 33 | 55 | 1.67 |
 
-**(b) Extract `cited_works` for the rest of the corpus.** dird-24 done; extract
-the reference lists of the other DIRDs (and any other document carrying a formal
-reference list) into `cited_works[]`. Each OCR-scan DIRD's references region must
-be image-verified against the PDF before extraction (per the dird-24 sibling-note
-precedent). The recurring-author network is the payoff (e.g. Puthoff appears in 7
-dird-24 references plus its Acknowledgements).
+**(b) Extract `cited_works` — the 7 BUILT DIRDs are DONE.** dird-24 (113, `[N]`),
+dird-01 (49, `^N` endnotes), dird-02 (9, `N.` list), dird-15 (22, `^N`; Puthoff's
+DIRD — cites Davis/Maccone), dird-26 (52, `[N]` + sub-lettered `[5-a/b/c]`; the
+UFO-relevant list — Schuessler, Sturrock, Vallee, Cash-Landrum). dird-03
+(Pulsed HPM) and dird-04 (Biomaterials) were assessed and **carry no formal
+reference list** (end at Conclusion / Summary; sibling marker-scan = 0; PDF last
+page confirmed) — their `cited_works: []` is correct, not missing. Remaining:
+the UNBUILT DIRDs (dird-05/06/08/11/19/22/25/29/30/33/34/37, etc.) get their
+citations when each is built — same per-DIRD flow (locate region → image-verify
+sibling vs PDF → worker extract → integrate). The recurring-author network is the
+payoff (Puthoff in 7 dird-24 refs + dird-15; E. W. Davis / C. Maccone cross-DIRD).
 
 *Illegible references (deferred — design on first real case).* dird-24's
 references were all recoverable by image-verifying the PDF page. If a remaining

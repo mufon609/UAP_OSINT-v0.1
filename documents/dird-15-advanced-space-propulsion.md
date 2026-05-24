@@ -196,6 +196,35 @@ The analysis is a model-independent, "general relativity for engineers" approach
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** See, for example, a series of essays in the compendium Frontiers of Propulsion Science, Eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, Virginia (2009).
+- **[2]** M. Alcubierre, "The warp drive: Hyper-fast travel within general relativity," Class. Quantum Grav. 11, p. L73 (1994).
+- **[3]** H. E. Puthoff, "SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview," Physics Essays 9, p. 156 (1996).
+- **[4]** M. S. Morris and K. S. Thorne, "Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity," Am. J. Phys. 56, pp. 395-412 (1988).
+- **[5]** M. Visser, Lorentzian Wormholes: From Einstein to Hawking, AIP Press, New York, 1995.
+- **[6]** M. S. Morris, K. S. Thorne and U. Yurtsever, "Wormholes, time machines, and the weak energy condition," Phys. Rev. Lett. 61, p. 1446 (1988).
+- **[7]** T. D. Lee, Particle Physics and Introduction to Field Theory, Harwood Academic Press, London (1988).
+- **[8]** The Philosophy of Vacuum, Eds. S. Saunders and H. R. Brown, Clarendon Press, Oxford (1991).
+- **[9]** F. Wilczek, The Lightness of Being: Mass, Ether and the Unification of Forces, Basic Books, New York (2008).
+- **[10]** A. Logunov and M. Mestvirishvili, The Relativistic Theory of Gravitation, Mir Publ., Moscow (1989), p. 76.
+- **[11]** Op. cit., p. 83.
+- **[12]** S. M. Mahajan, A. Qadir and P. M. Valanju, "Reintroducing the concept of 'force' into relativity theory," Il Nuovo Cimento 65B, 404 (1981).
+- **[13]** R. Klauber, "Physical components, coordinate components, and the speed of light," www.arXiv:gr-qc/0105071 v1 (18 May 2001).
+- **[14]** F. de Felice, "On the gravitational field acting as an optical medium," Gen. Rel. and Grav. 2, 347 (1971).
+- **[15]** K. K. Nandi and A. Islam, "On the optical-mechanical analogy in general relativity," Am. J. Phys. 63, 251 (1995).
+- **[16]** H. E. Puthoff, "Polarizable-vacuum (PV) approach to general relativity," Found. Phys. 32, 927 (2002).
+- **[17]** P. Boonserm et al., "Effective refractive index tensor for weak-field gravity," Class. Quant. Grav. 22, 1905 (2005).
+- **[18]** X.-H. Ye and Q. Lin, "A simple optical analysis of gravitational lensing," J. Modern Optics 55, no. 7, 1119 (2008).
+- **[19]** H. E. Puthoff, E. W. Davis and C. Maccone, "Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity," Gen. Relativ. Grav. 37, 483 (2005).
+- **[20]** A. P. Lightman and D. P. Lee, "Restricted proof that the weak equivalence principle implies the Einstein equivalence principle," Phys. Rev. D 8, 364 (1973).
+- **[21]** C. W. Misner, K. S. Thorne and J. A. Wheeler, Gravitation, Freeman, San Francisco (1973), p. 5.
+- **[22]** E. W. Davis, "Chapter 15: Faster-than-Light Approaches in General Relativity," Frontiers of Propulsion Science, Progress in Astronautics and Aeronautics Series, Vol. 227, eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, VA, pp. 473 (2009).
+
+---
+
 ## Associated Nodes
 
 ### People

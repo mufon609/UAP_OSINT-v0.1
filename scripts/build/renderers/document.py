@@ -143,8 +143,11 @@ def render_cited_works(artifact):
         return ""
 
     def _key(w):
+        # Sort by numeric prefix, then any suffix — so "5" < "5-a" < "5-b" < "6"
+        # (dird-26 carries sub-lettered URL entries [5-a]/[5-b]/[5-c]).
         k = str(w.get("citation_key", "")).strip()
-        return (0, int(k)) if k.isdigit() else (1, k)
+        m = re.match(r"(\d+)(.*)", k)
+        return (0, int(m.group(1)), m.group(2)) if m else (1, 0, k)
 
     lines = ["## References", ""]
     lines.append(
@@ -157,11 +160,11 @@ def render_cited_works(artifact):
         key = str(w.get("citation_key", "")).strip()
         verbatim = " ".join((w.get("citation_verbatim") or "").split())
         # citation_verbatim is faithful and includes the source's own leading
-        # marker — bracket "[N]" (dird-24), caret-superscript "^N" (dird-01
-        # endnotes), or number-dot "N." (dird-02 list); strip it for display
-        # since the marker is re-emitted in bold from citation_key (avoids a
-        # doubled "[1] [1]" prefix).
-        verbatim = re.sub(r"^(?:\[\d+\]|\^\d+|\d+\.)\s*", "", verbatim)
+        # marker — bracket "[N]" / "[N-a]" (dird-24, dird-26), caret-superscript
+        # "^N" (dird-01 endnotes), or number-dot "N." (dird-02 list); strip it
+        # for display since the marker is re-emitted in bold from citation_key
+        # (avoids a doubled "[1] [1]" prefix).
+        verbatim = re.sub(r"^(?:\[\d+(?:-[a-z])?\]|\^\d+|\d+\.)\s*", "", verbatim)
         marker = f"**[{key}]** " if key else ""
         lines.append(f"- {marker}{verbatim}")
     return "\n".join(lines) + "\n"
