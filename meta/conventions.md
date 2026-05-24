@@ -790,6 +790,25 @@ of an extraction artifact (e.g. an HTML element-boundary concatenation,
 or a PDF page-number footer/header wedged into a page-spanning quote) is
 fixed at the extraction layer, never accepted as a standing error.
 
+**The pool is the node's own source TEXT — extrinsic metadata is not
+credited.** The prose-drift pool is built from the node's `primary_sources[]`
+text only; it deliberately does NOT include `document_intrinsic` values,
+`naming_quirks.canonical`, or `context_extrinsic`. Crediting metadata
+vocabulary would let words the source itself never states into the description
+prose — inverting the gate's purpose. A fact attested only *extrinsically* —
+by a separate source, or by structured metadata, rather than by this node's own
+primary-source text — therefore cannot be asserted in this node's `description`
+prose. Carry it navigationally instead: a cross-reference link to the node or
+source that *does* attest it, plus a structured field (`context_extrinsic`,
+`naming_quirks`) that records it out of the prose-drift scope. Example: a DIRD
+whose author line is `(b)(6)`-redacted on the document but identified in the
+DIA→Congress products list — the author is carried by the link
+(`[/people/…]`, `[/documents/dia-aatip-products-list-2018]`) and held in
+`context_extrinsic`, never named in the description prose (dird-24, dird-26).
+`check-vocab.py` surfaces the nearest source forms for an absent token (a
+morphology variant or typo), but it never credits metadata either — the floor
+is the same.
+
 ### Density is source-driven
 
 Templates and prompts do not impose count targets on artifact content.
@@ -928,6 +947,20 @@ with not-quote and defeats the navigation purpose. When converting
 `lines N-M` to a canonical form, the contributor verifies the new
 ref's range against the source page itself, not just against the
 extract.
+
+**Page-spanning quotes split at the page boundary.** When a single passage runs
+across a printed-page boundary, the page footer + page number + next-page header
+sit wedged in the middle of the extracted text. Rather than teach the
+verbatim-quote check to strip that boilerplate — which is one keystroke away
+from masking the real content mismatches the check exists to catch — split the
+passage into two adjacent Key Passages at the boundary, each anchored to its own
+page (`p. N`, then `p. N+1`). Each quote is then ≤ one page, so no
+footer/header/page-number boilerplate falls inside a quote and the verbatim
+check matches cleanly. `normalize_for_compare` strips caption timestamps,
+markdown block-quote markers, dashes, and whitespace (plus the conservative
+form-feed-adjacent page-number strip at extraction time); it is deliberately
+*not* extended to recognize page footers/headers, because boilerplate-stripping
+a quote would weaken the one exactness the verbatim gate is for.
 
 ### Check naming
 

@@ -8,9 +8,7 @@ canonical tokenizer + extraction layer from `scripts/lib/_common.py`
 script output reflects what the validator would see byte-for-byte.
 
 Use case: drafting `description` / `background` / `top_relevance` /
-`credibility_notes` prose (or per-entry residue notes:
-`ownership_timeline.note`, `key_personnel.note`, `contracts.note`,
-`media_versioning.note`, `vouching_chain.attestation`). Per
+`credibility_notes` prose (or `vouching_chain.attestation`). Per
 `meta/conventions.md` "Prose-drift discipline on synthesis surfaces",
 every significant token in those fields should be source-attested.
 This script lets a contributor pre-flight a draft's vocabulary
@@ -48,6 +46,7 @@ Exit codes:
 """
 
 import argparse
+import difflib
 import sys
 from pathlib import Path
 
@@ -134,6 +133,8 @@ def main():
     print()
 
     width = max(max(len(t) for t in args.tokens), 12)
+    # Sorted once for deterministic close-match suggestions below.
+    pool_sorted = sorted(pool)
 
     for raw in args.tokens:
         sub_tokens = extract_significant_tokens(raw)
@@ -143,7 +144,21 @@ def main():
         absent = sorted(t for t in sub_tokens if t not in pool)
         if absent:
             detail = ", ".join(absent)
-            print(f"  {raw:<{width}}  ✗ absent  [{detail}]")
+            line = f"  {raw:<{width}}  ✗ absent  [{detail}]"
+            # Advisory only: surface the nearest source tokens so the
+            # contributor can rewrite to the exact source form — a
+            # morphological variant ("give" vs source "gives") or a typo
+            # ("tenue" vs "tenure"). This NEVER passes an absent token; the
+            # prose-drift gate (validate-research.py) is a separate code path
+            # and is unaffected — this is a pre-flight convenience.
+            hints = []
+            for t in absent:
+                near = difflib.get_close_matches(t, pool_sorted, n=3, cutoff=0.7)
+                if near:
+                    hints.append(f"{t} → {', '.join(near)}")
+            if hints:
+                line += "   source has: " + "; ".join(hints)
+            print(line)
         else:
             print(f"  {raw:<{width}}  ✓ present")
 
