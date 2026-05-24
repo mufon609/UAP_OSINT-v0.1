@@ -124,6 +124,20 @@ be image-verified against the PDF before extraction (per the dird-24 sibling-not
 precedent). The recurring-author network is the payoff (e.g. Puthoff appears in 7
 dird-24 references plus its Acknowledgements).
 
+*Illegible references (deferred — design on first real case).* dird-24's
+references were all recoverable by image-verifying the PDF page. If a remaining
+DIRD has a reference that is **visibly present but genuinely unreadable** (scan
+too degraded to make out, not recoverable from the page), the current mechanism
+has no answer (the `cited_works` verbatim check errors). At that point add: an
+optional `cited_work_entry.legibility: illegible` flag → `cited_works.py` WARNS
+instead of erroring (mirrors the binary-source warn path) and still verifies any
+legible fragment provided; the renderer emits a standardized, searchable `[sic]`
+label — `**[N]** *[illegible in source — p.N; preserved [sic], flagged for
+re-OCR/re-verification]*` — greppable later via `legibility: illegible`
+(artifacts) and `[illegible in source` (nodes). Capture the marker + legible
+fragment; never fabricate the unreadable span, never skip the entry (skipping
+loses the fact a reference exists at [N]).
+
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
 verification of the relevant region.
