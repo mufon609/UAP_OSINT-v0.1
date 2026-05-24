@@ -1,0 +1,670 @@
+id: meta/research/dird-04-biomaterials
+type: research-artifact
+schema_version: 1
+target_node: documents/dird-04-biomaterials
+status: active
+created: '2026-05-24'
+primary_sources:
+- path: government/dird-04-biomaterials-20100107.pdf
+  format: pdf
+document_intrinsic:
+  internal_title: Biomaterials
+  internal_date: '2010-01-07'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY banner; ''Defense Intelligence Reference Document'' on the cover with the ''Acquisition Threat Support'' series line; DIA control number DIA-08-0912-006; dated 7 January 2010; ICOD 1 December 2009'
+  pages: 33
+context_extrinsic:
+  display_title: 'Biomaterials — DIA Defense Intelligence Reference Document, AAWSA Program, 7 January 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_04_DIRD_Biomaterials.pdf
+  quote_attribution: 'DIRD #4 (Biomaterials), 7 January 2010'
+  extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. Bruce Towe, University of Arizona (attachment 17, short title "Biomaterials").'
+quotes:
+- id: q1
+  added_date: '2026-05-24'
+  text: |-
+    7 January 2010
+    ICOD: 1 December 2009
+    DIA-08-0912-006
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 1, ¶ date/control block'
+  significance: Date, ICOD, and control number — dated 7 January 2010 with an information cut-off date of 1 December 2009 and DIA control number DIA-08-0912-006
+  statement_date: '2010-01-07'
+- id: q2
+  added_date: '2026-05-24'
+  text: |-
+    Defense
+    Intelligence
+    Reference
+    Document
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 1, ¶ banner'
+  significance: DIRD series identity — the cover banner naming the document a Defense Intelligence Reference Document
+  statement_date: '2010-01-07'
+- id: q3
+  added_date: '2026-05-24'
+  text: |-
+    Prepared by:
+
+    [(b)(3):10 USC 424]
+
+    Defense Intelligence Agency
+
+    Author:
+    [(b)(6)]
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 2, ¶ prepared-by/author block'
+  significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6), so no author name appears on the document
+  statement_date: '2010-01-07'
+- id: q4
+  added_date: '2026-05-24'
+  text: |-
+    COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 2, ¶ Administrative Note'
+  significance: Administrative Note — a copyright warning that further dissemination of the photographs in the publication is not authorized
+  statement_date: '2010-01-07'
+- id: q5
+  added_date: '2026-05-24'
+  text: |-
+    This product is one in a series of advanced technology reports produced in FY 2009
+    under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace
+    Weapon System Applications (AAWSA) Program. Comments or questions pertaining to
+    this document should be addressed to [(b)(3):10 USC 424;(b)(6)] AAWSA Program
+    Manager, Defense Intelligence Agency, ATTN:[(b)(3):10 USC 424] Bldg 6000, Washington,
+    DC 20340-5100.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 2, ¶ Administrative Note'
+  significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the document writes "AAWSA" (not the common "AAWSAP"), and the AAWSA Program Manager identity is withheld under FOIA exemption markers
+  statement_date: '2010-01-07'
+- id: q6
+  added_date: '2026-05-24'
+  text: |-
+    Biomaterials are metals, ceramics, polymers, glasses, carbons, and composite
+    materials intended to interface with biological systems. They are often used to
+    treat, augment, or replace bodily tissues, organs, or functions.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 5, ¶ Introduction'
+  significance: Definition — biomaterials are metals, ceramics, polymers, glasses, carbons, and composite materials intended to interface with biological systems and used to treat, augment, or replace bodily tissues, organs, or functions
+  statement_date: '2010-01-07'
+- id: q7
+  added_date: '2026-05-24'
+  text: |-
+    Biomaterials are usually nonliving, but recent
+    definitions also include living skin and tissues produced in culture.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 5, ¶ Introduction'
+  significance: Scope of the definition — biomaterials are usually nonliving, but recent definitions also include living skin and tissues produced in culture
+  statement_date: '2010-01-07'
+- id: q8
+  added_date: '2026-05-24'
+  text: |-
+    A biocompatible material is different from a biological material produced by a
+    biological system, such as bone. Artificial hips, vascular stents, artificial
+    pacemakers, and catheters are all made of biocompatible materials that
+    typically have a synthetic origin.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 5, ¶ Introduction'
+  significance: Biocompatible vs. biological — artificial hips, vascular stents, artificial pacemakers, and catheters are all made of biocompatible materials that typically have a synthetic origin
+  statement_date: '2010-01-07'
+- id: q9
+  added_date: '2026-05-24'
+  text: |-
+    Although biomaterials are used primarily for medical applications, they are
+    also used to grow cells in culture, to assay for blood proteins in the clinical
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 5, ¶ Introduction'
+  significance: Non-medical applications — biomaterials are also used to grow cells in culture and to assay for blood proteins in the clinical laboratory
+  statement_date: '2010-01-07'
+- id: q10
+  added_date: '2026-05-24'
+  text: |-
+    Biocompatibility is an important issue in biomedical implants and sensors. A
+    material-tissue interaction that results from implanting a foreign object in the
+    body is a major obstacle to developing stable and long-term implantable
+    devices and sensors.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 6, ¶ Importance of Biocompatibility'
+  significance: Importance of biocompatibility — the material-tissue interaction from implanting a foreign object is a major obstacle to developing stable and long-term implantable devices and sensors
+  statement_date: '2010-01-07'
+- id: q11
+  added_date: '2026-05-24'
+  text: |-
+    The processes that occur when sensors are placed in the complex living
+    environment of the human body are sometimes known as biofouling.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 6, ¶ Importance of Biocompatibility'
+  significance: Biofouling defined — the processes that occur when sensors are placed in the complex living environment of the human body are sometimes known as biofouling
+  statement_date: '2010-01-07'
+- id: q12
+  added_date: '2026-05-24'
+  text: |-
+    Experiences of many investigators (more than 600 reported studies since 1996)
+    with the biocompatibility of biomaterials related to the function of implanted
+    biosensors have been poor such that many companies have abandoned
+    implantable sensor devices altogether.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 6, ¶ Importance of Biocompatibility'
+  significance: Implanted-biosensor track record — more than 600 reported studies since 1996 with the biocompatibility of biomaterials related to implanted biosensors have been poor, such that many companies have abandoned implantable sensor devices altogether
+  statement_date: '2010-01-07'
+- id: q13
+  added_date: '2026-05-24'
+  text: |-
+    The study and use of biomaterials bring together researchers from diverse
+    academic backgrounds who must communicate clearly.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 6, ¶ Science of Biomaterials'
+  significance: Science of biomaterials — the study and use of biomaterials brings together researchers from diverse academic backgrounds who must communicate clearly
+  statement_date: '2010-01-07'
+- id: q14
+  added_date: '2026-05-24'
+  text: |-
+    Biomaterials must be compatible with the body, and there are often issues
+    that must be resolved before a product can be placed on the market and used
+    in a clinical setting. Because of this, biomaterials are usually subjected to the
+    same very stringent safety requirements as those of new drug therapies.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 7, ¶ Science of Biomaterials'
+  significance: Regulatory framing — biomaterials are usually subjected to the same very stringent safety requirements as those of new drug therapies
+  statement_date: '2010-01-07'
+- id: q15
+  added_date: '2026-05-24'
+  text: |-
+    Implantable biosensors for the human body place some of the greatest functional
+    demands on biomaterials. Biosensors monitor the physiologic state of tissues for
+    medical therapeutics or for assessing human performance.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 8, ¶ Biomaterials for Biosensors'
+  significance: Biosensors — implantable biosensors place some of the greatest functional demands on biomaterials; they monitor the physiologic state of tissues for medical therapeutics or for assessing human performance
+  statement_date: '2010-01-07'
+- id: q16
+  added_date: '2026-05-24'
+  text: |-
+    Chemically sensitive biosensor interfaces to tissue and body environments employ
+    membranes in an effort to protect the biosensor active-sensing surface from possible
+    body reactions.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 8, ¶ Biomaterials for Biosensors'
+  significance: Membrane protection — chemically sensitive biosensor interfaces employ membranes in an effort to protect the active-sensing surface from possible body reactions
+  statement_date: '2010-01-07'
+- id: q17
+  added_date: '2026-05-24'
+  text: |-
+    The most successful biomembrane materials have been porous forms of Teflon,
+    polyurethanes, and cellulose-based materials such as cellulose acetate.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 9, ¶ Biomaterials for Biosensors'
+  significance: Best biomembrane materials — the most successful have been porous forms of Teflon, polyurethanes, and cellulose-based materials such as cellulose acetate
+  statement_date: '2010-01-07'
+- id: q18
+  added_date: '2026-05-24'
+  text: |-
+    In this review, we look at representative biomaterials as well as representative
+    applications. These biomaterials are among the most popular of those used in medicine
+    today, and the applications in some cases represent multibillion-dollar-a-year markets.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 9, ¶ Biomaterials for Biomedicine'
+  significance: Review scope — representative biomaterials and applications, in some cases representing multibillion-dollar-a-year markets
+  statement_date: '2010-01-07'
+- id: q19
+  added_date: '2026-05-24'
+  text: |-
+    Perhaps the most well known of all biomaterials are the silicones—soft, pliable, and
+    semitransparent materials that are used in many different applications in modern
+    society, ranging from water sealants to fibrous insulations.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 9, ¶ Biomedical Silicones'
+  significance: Silicones — perhaps the most well known of all biomaterials, soft, pliable, and semitransparent materials used in applications ranging from water sealants to fibrous insulations
+  statement_date: '2010-01-07'
+- id: q20
+  added_date: '2026-05-24'
+  text: |-
+    Silicone is often mistakenly called "silicon." Although silicones contain silicon atoms,
+    they are an organic material of greater complexity and are not made up exclusively of
+    silicon.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 9, ¶ Biomedical Silicones'
+  significance: Silicone vs. silicon — silicone is often mistakenly called "silicon," but it is an organic material of greater complexity, not made up exclusively of silicon
+  statement_date: '2010-01-07'
+- id: q21
+  added_date: '2026-05-24'
+  text: |-
+    Biomedical silicones attracted notoriety in 1995 when a class-action lawsuit against
+    Dow Corning, Inc., brought a huge settlement resulting from the supposed dangers of
+    silicone breast implants.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 10, ¶ Biomedical Silicones'
+  significance: Silicone litigation — biomedical silicones attracted notoriety in 1995 when a class-action lawsuit against Dow Corning, Inc. brought a huge settlement over the supposed dangers of silicone breast implants
+  statement_date: '2010-01-07'
+- id: q22
+  added_date: '2026-05-24'
+  text: |-
+    Silicone is actually a common name
+    for the chemical compound
+    polydimethylsiloxane (PDMS), a class
+    of synthetic polymers with repeating
+    units of silicon and oxygen.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 11, ¶ Silicone Chemistry'
+  significance: Silicone chemistry — silicone is a common name for the chemical compound polydimethylsiloxane (PDMS), a class of synthetic polymers with repeating units of silicon and oxygen
+  statement_date: '2010-01-07'
+- id: q23
+  added_date: '2026-05-24'
+  text: |-
+    Teflon is a trade name for polytetrafluoroethylene (PTFE), a
+    fluorocarbon-based polymer.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 13, ¶ Teflon'
+  significance: Teflon — a trade name for polytetrafluoroethylene (PTFE), a fluorocarbon-based polymer
+  statement_date: '2010-01-07'
+- id: q24
+  added_date: '2026-05-24'
+  text: |-
+    When implanted in the body,
+    this strong mesh allows tissue to grow into its pores, making it ideal for medical devices
+    such as vascular grafts.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 13, ¶ Teflon'
+  significance: ePTFE mesh — when implanted in the body, the strong mesh allows tissue to grow into its pores, making it ideal for medical devices such as vascular grafts
+  statement_date: '2010-01-07'
+- id: q25
+  added_date: '2026-05-24'
+  text: |-
+    Biodegradable polymers are an
+    important and relatively large
+    category of biomaterials that are used
+    extensively in the medical and food
+    industries.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 14, ¶ Biodegradable Polymers'
+  significance: Biodegradable polymers — an important and relatively large category of biomaterials used extensively in the medical and food industries
+  statement_date: '2010-01-07'
+- id: q26
+  added_date: '2026-05-24'
+  text: |-
+    In the human body, biodegradable polymers have good compatibility but also
+    decompose to harmless materials and over time dissolve altogether.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 15, ¶ Biodegradation Advantages'
+  significance: Biodegradation advantage — in the human body, biodegradable polymers have good compatibility but also decompose to harmless materials and over time dissolve altogether
+  statement_date: '2010-01-07'
+- id: q27
+  added_date: '2026-05-24'
+  text: |-
+    Biodegradable polymers fulfill a physician's desire to have an implanted device that will
+    not require a second surgical intervention for removal, which is desirable in many
+    applications.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 15, ¶ Degradable Biomaterials'
+  significance: No-second-surgery advantage — biodegradable polymers fulfill a physician's desire to have an implanted device that will not require a second surgical intervention for removal
+  statement_date: '2010-01-07'
+- id: q28
+  added_date: '2026-05-24'
+  text: |-
+    Polylactic acid (PLA), polyglycolic acid (PGA), and their copolymers are the most widely
+    used of the biodegradable polymers.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 15, ¶ Polylactic Acid and Polyglycolic Acid'
+  significance: PLA/PGA — polylactic acid, polyglycolic acid, and their copolymers are the most widely used of the biodegradable polymers
+  statement_date: '2010-01-07'
+- id: q29
+  added_date: '2026-05-24'
+  text: |-
+    Polyethylene glycol (PEG) is a widely
+    used material in biomedicine,
+    pharmaceuticals, cosmetics, and
+    agriculture.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 17, ¶ Polyethylene Glycol or Polyethylene Oxide'
+  significance: PEG — polyethylene glycol is a widely used material in biomedicine, pharmaceuticals, cosmetics, and agriculture
+  statement_date: '2010-01-07'
+- id: q30
+  added_date: '2026-05-24'
+  text: |-
+    Hydrogels are liquid or semisolid
+    materials that have a strong affinity
+    for water.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 17, ¶ Hydrogels'
+  significance: Hydrogels — liquid or semisolid materials that have a strong affinity for water
+  statement_date: '2010-01-07'
+- id: q31
+  added_date: '2026-05-24'
+  text: |-
+    Hydrogels are cross-linked polymer networks that are insoluble in body fluids but are
+    able to swell and often have a water content of up to 90 percent.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 18, ¶ Hydrogels'
+  significance: Hydrogel structure — cross-linked polymer networks insoluble in body fluids but able to swell and often have a water content of up to 90 percent
+  statement_date: '2010-01-07'
+- id: q32
+  added_date: '2026-05-24'
+  text: |-
+    Titanium-based hip and knee implants are quite successful and are among the most
+    common orthopedic procedures.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 18, ¶ Titanium – Hip and Knee Joints'
+  significance: Titanium joints — titanium-based hip and knee implants are quite successful and among the most common orthopedic procedures
+  statement_date: '2010-01-07'
+- id: q33
+  added_date: '2026-05-24'
+  text: |-
+    Ceramic materials are sometimes
+    used directly or modified for use in
+    applications in the human body and,
+    so, become known as bioceramics.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 18, ¶ BioCeramics'
+  significance: Bioceramics — ceramic materials used directly or modified for use in the human body become known as bioceramics
+  statement_date: '2010-01-07'
+- id: q34
+  added_date: '2026-05-24'
+  text: |-
+    Dental ceramics are a major subclass of biomaterials. Porcelains are hard ceramic
+    materials that are based on a glass of silica and alumina, with fluxes used to lower their
+    fusion temperature.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 20, ¶ Dental Ceramics'
+  significance: Dental ceramics — a major subclass of biomaterials; porcelains are hard ceramic materials based on a glass of silica and alumina
+  statement_date: '2010-01-07'
+- id: q35
+  added_date: '2026-05-24'
+  text: |-
+    Living tissues are sometimes considered biomaterials if they have been cultured prior to
+    application to the human body or utilized much the same way as a synthetic material
+    would be utilized.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 20, ¶ Tissue Constructs as Biomaterials'
+  significance: Tissue constructs — living tissues are sometimes considered biomaterials if cultured prior to application to the human body or utilized much the same way as a synthetic material
+  statement_date: '2010-01-07'
+- id: q36
+  added_date: '2026-05-24'
+  text: |-
+    There are many approaches to tissue engineering, but all involve one or more of the
+    following key ingredients: harvested cells, introduction of specialized signaling
+    molecules, and three-dimensional matrices.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 21, ¶ Tissue Constructs as Biomaterials'
+  significance: Tissue-engineering ingredients — harvested cells, introduction of specialized signaling molecules, and three-dimensional matrices
+  statement_date: '2010-01-07'
+- id: q37
+  added_date: '2026-05-24'
+  text: |-
+    Perhaps the biggest challenge for tissue engineering is how to ensure angiogenesis in a
+    timely fashion within the scaffold construct; without a blood supply, cells will die, and
+    mass infection will occur.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 21, ¶ Tissue Constructs as Biomaterials'
+  significance: Tissue-engineering challenge — ensuring angiogenesis in a timely fashion within the scaffold construct; without a blood supply, cells will die and mass infection will occur
+  statement_date: '2010-01-07'
+- id: q38
+  added_date: '2026-05-24'
+  text: |-
+    Biomaterials are often made into medical devices rather than being sold in raw form.
+    Among the largest and most demanding of all biomaterial applications are devices that
+    come into direct contact with blood.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 22, ¶ Cardiovascular Biomaterials'
+  significance: Cardiovascular framing — among the largest and most demanding of all biomaterial applications are devices that come into direct contact with blood
+  statement_date: '2010-01-07'
+- id: q39
+  added_date: '2026-05-24'
+  text: |-
+    When arteries, particularly
+    the coronary arteries and the vessels of the lower limbs, become blocked by fatty
+    deposits (atherosclerosis), segments in some cases can be replaced with grafts.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 23, ¶ Cardiovascular Biomaterials'
+  significance: Vascular grafts — when arteries become blocked by fatty deposits (atherosclerosis), segments in some cases can be replaced with grafts
+  statement_date: '2010-01-07'
+- id: q40
+  added_date: '2026-05-24'
+  text: |-
+    These are artificial blood vessels used to replace blood vessels in the human body damaged by accident, atherothrosclerosis, or diabetic vascular disease.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 23, ¶ Figure 22 caption'
+  significance: Figure 22 caption (carries the OCR/source typo "atherothrosclerosis") — Gore Medical Teflon foam vascular grafts replace blood vessels damaged by accident, atherothrosclerosis, or diabetic vascular disease
+  statement_date: '2010-01-07'
+- id: q41
+  added_date: '2026-05-24'
+  text: |-
+    A problem most materials cause when in blood contact is that they trigger the rapid
+    formation of thrombus (an aggregation of blood cells).
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 24, ¶ Cardiovascular Biomaterials'
+  significance: Thrombus risk — a problem most materials cause in blood contact is that they trigger the rapid formation of thrombus, an aggregation of blood cells
+  statement_date: '2010-01-07'
+- id: q42
+  added_date: '2026-05-24'
+  text: |-
+    Heart valves are another application
+    of biomaterials in which the materials
+    are in direct contact with blood. They
+    are typically constructed using a form
+    of stainless steel and woven Teflon (or
+    Dacron) as a suture ring to anchor the
+    device.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 25, ¶ Cardiovascular Biomaterials'
+  significance: Heart valves — typically constructed using a form of stainless steel and woven Teflon (or Dacron) as a suture ring to anchor the device
+  statement_date: '2010-01-07'
+- id: q43
+  added_date: '2026-05-24'
+  text: |-
+    Figure 24. Stainless Steel and Teflon Bjork Shiley Heart Valve
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 4, ¶ Figures list'
+  significance: Figures list entry (carries the source rendering "Bjork Shiley" for the Björk–Shiley valve) — Figure 24, a stainless steel and Teflon Björk–Shiley heart valve
+  statement_date: '2010-01-07'
+- id: q44
+  added_date: '2026-05-24'
+  text: |-
+    A stent is a metal mesh tube that
+    looks something like a Chinese finger
+    puzzle and is used to prop open a
+    clogged artery.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 25, ¶ Stent Biomaterials'
+  significance: Stent defined — a metal mesh tube that looks something like a Chinese finger puzzle and is used to prop open a clogged artery
+  statement_date: '2010-01-07'
+- id: q45
+  added_date: '2026-05-24'
+  text: |-
+    The use of nitinol metal in stents is a clever application of the properties of a class of
+    materials called shape memory alloys (SMAs).
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 26, ¶ Nitinol as a Biomaterial'
+  significance: Nitinol — the use of nitinol metal in stents is a clever application of the properties of a class of materials called shape memory alloys (SMAs)
+  statement_date: '2010-01-07'
+- id: q46
+  added_date: '2026-05-24'
+  text: |-
+    SMAs have a rather remarkable
+    property: they remember their shape.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 26, ¶ Nitinol as a Biomaterial'
+  significance: 'Shape memory — SMAs have a rather remarkable property: they remember their shape'
+  statement_date: '2010-01-07'
+- id: q47
+  added_date: '2026-05-24'
+  text: |-
+    Modern soft contact lenses were invented by Czech chemist Otto Wichterle and his
+    assistant, Drahoslav Lím who also invented the first gel used for their production.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 26, ¶ Contact Lenses'
+  significance: Contact lens history — modern soft contact lenses were invented by Czech chemist Otto Wichterle and his assistant Drahoslav Lím, who also invented the first gel used for their production
+  statement_date: '2010-01-07'
+- id: q48
+  added_date: '2026-05-24'
+  text: |-
+    In 1999, first silicone hydrogels were launched on the contact lens market. These new
+    materials had the advantage of high oxygen permeability
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 27, ¶ Contact Lenses'
+  significance: Silicone hydrogel lenses — in 1999 the first silicone hydrogels were launched on the contact lens market, with the advantage of high oxygen permeability
+  statement_date: '2010-01-07'
+- id: q49
+  added_date: '2026-05-24'
+  text: |-
+    One area of biomaterials research is the use of biodegradable materials in the design of
+    systems for controlled drug delivery.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 27, ¶ Drug Delivery Polymers'
+  significance: Drug delivery — one area of biomaterials research is the use of biodegradable materials in the design of systems for controlled drug delivery
+  statement_date: '2010-01-07'
+- id: q50
+  added_date: '2026-05-24'
+  text: |-
+    Titanium metal has qualities of strength, inertness, and a biological compatibility that
+    make it desirable as a biomaterial. Essentially all pacemakers, neurostimulators, and
+    various other implanted medical devices use titanium as a packaging case material.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 29, ¶ Medical Titanium as a Biomaterial'
+  significance: Medical titanium — strength, inertness, and biological compatibility make titanium desirable; essentially all pacemakers, neurostimulators, and other implanted devices use it as a packaging case material
+  statement_date: '2010-01-07'
+- id: q51
+  added_date: '2026-05-24'
+  text: |-
+    The recognition of this dates
+    back to 1952, when Swedish Professor Per-Ingvar Brånemark conducted an experiment
+    in which he studied blood flow in living rabbit bone.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 29, ¶ Medical Titanium as a Biomaterial'
+  significance: Osseointegration origin — dates back to 1952, when Swedish Professor Per-Ingvar Brånemark studied blood flow in living rabbit bone fixed in a titanium holder
+  statement_date: '2010-01-07'
+- id: q52
+  added_date: '2026-05-24'
+  text: |-
+    He called this osseointegration and saw the possibilities for human use.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 29, ¶ Medical Titanium as a Biomaterial'
+  significance: Osseointegration named — Brånemark found bone had integrated so completely with the titanium that removing it was impossible; he called this osseointegration and saw the possibilities for human use
+  statement_date: '2010-01-07'
+- id: q53
+  added_date: '2026-05-24'
+  text: |-
+    Medical therapeutic dialysis, often called hemodialysis, is a method of removing uric
+    acid and other waste products from blood, a necessity when the kidneys fail.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 31, ¶ Biomaterials in Dialysis'
+  significance: Dialysis — medical therapeutic dialysis, often called hemodialysis, is a method of removing uric acid and other waste products from blood, a necessity when the kidneys fail
+  statement_date: '2010-01-07'
+- id: q54
+  added_date: '2026-05-24'
+  text: |-
+    The most common biomaterial used in dialyzers is a
+    semipermeable membrane made of cellulose acetate trade-named Cuprophane
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 32, ¶ Biomaterials in Dialysis'
+  significance: Dialyzer membrane — the most common biomaterial used in dialyzers is a semipermeable membrane made of cellulose acetate trade-named Cuprophane
+  statement_date: '2010-01-07'
+- id: q55
+  added_date: '2026-05-24'
+  text: |-
+    The performance of biomaterials underlies the success of many medical devices that
+    must be acceptable to body tissues.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 32, ¶ Summary and Recommendations'
+  significance: Summary — the performance of biomaterials underlies the success of many medical devices that must be acceptable to body tissues
+  statement_date: '2010-01-07'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-24'
+  observed: (b)(3):10 USC 424
+  canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
+  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  source_path: government/dird-04-biomaterials-20100107.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-05-24'
+  observed: (b)(6)
+  canonical: '[author identity withheld under FOIA exemption (b)(6)]'
+  location: 'p. 2, Author line'
+  source_path: government/dird-04-biomaterials-20100107.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-05-24'
+  observed: AAWSA
+  canonical: AAWSAP
+  location: 'p. 2, Administrative Note — the document writes "AAWSA" not the common "AAWSAP"'
+  source_path: government/dird-04-biomaterials-20100107.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-05-24'
+  observed: atherothrosclerosis
+  canonical: atherosclerosis
+  location: 'p. 23, Figure 22 caption — the source caption renders "atherothrosclerosis"; the body text on the same topic uses the correct "atherosclerosis"'
+  source_path: government/dird-04-biomaterials-20100107.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-05-24'
+  observed: Bjork Shiley
+  canonical: Björk–Shiley
+  location: 'p. 4, Figures list (and p. 25 Figure 24 caption) — the source renders the valve name without diacritics or hyphen'
+  source_path: government/dird-04-biomaterials-20100107.pdf
+  resolution: preserve-as-sic-in-quotes
+description: 'Biomaterials. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager ([`/organizations/dia`]). The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+
+
+  The Introduction states that biomaterials are metals, ceramics, polymers, glasses, carbons, and composite materials intended to interface with biological systems, used to treat, augment, or replace bodily tissues, organs, or functions; biomaterials are usually nonliving, but recent definitions also include living skin and tissues produced in culture. Artificial hips, vascular stents, artificial pacemakers, and catheters are all made of biocompatible materials that typically have a synthetic origin. Biocompatibility is an important issue in biomedical implants and sensors — the material-tissue interaction from implanting a foreign object is a major obstacle to stable, long-term implantable devices, a process sometimes known as biofouling — and more than 600 reported studies since 1996 found the biocompatibility of implanted biosensors poor enough that many companies abandoned implantable sensor devices altogether. Because biomaterials must be compatible with the body, they are usually subjected to the same very stringent safety requirements as those of new drug therapies.
+
+
+  The document is a review of representative biomaterials and their applications, in some cases multibillion-dollar-a-year markets. Biomaterials for biosensors employ membranes to protect the active-sensing surface, the most successful being porous forms of Teflon, polyurethanes, and cellulose acetate. Biomaterials for biomedicine include silicone (polydimethylsiloxane, PDMS) and the 1995 Dow Corning breast implants settlement; Teflon (polytetrafluoroethylene, PTFE) and its expanded ePTFE mesh for vascular grafts; biodegradable polymers including polylactic acid (PLA) and polyglycolic acid (PGA), which need no second surgical intervention for removal; polyethylene glycol (PEG); hydrogels; titanium hip and knee joints; bioceramics and dental ceramics; and tissue constructs on scaffolds, where how to ensure angiogenesis is the biggest challenge. Cardiovascular biomaterials — devices in direct contact with blood — include vascular grafts for arteries blocked by fatty deposits (atherosclerosis), the rapid formation of thrombus that most materials trigger in blood contact, heart valves of stainless steel and woven Teflon, and stents that prop open a clogged artery, including the self-expanding shape memory alloy nitinol. Further applications are contact lenses, controlled drug delivery polymers, medical titanium and osseointegration (which dates back to Per-Ingvar Brånemark in 1952), and biomaterials in dialysis, where a cellulose acetate Cuprophane membrane has the critical role in cleansing the blood. The Summary and Recommendations state that the performance of biomaterials underlies the success of many medical devices that must be acceptable to body tissues.
+
+  '

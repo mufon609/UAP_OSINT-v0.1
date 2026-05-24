@@ -657,6 +657,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #4 — ''Biomaterials'', DIA-08-0912-006, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 7 January 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #17 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Bruce Towe, University of Arizona (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_04_DIRD_Biomaterials.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-04-biomaterials-20100107.txt
+    archived_date: '2026-05-24'
+    note: 'Clean-text sibling of the OCR-scanned AAWSAP DIRD #04 ''Biomaterials'' (DIA-08-0912-006, dated 7 January 2010, ICOD 1 December 2009). Produced 2026-05-24 via multimodal page-image read; independently verified 2026-05-24 by a separate agent session — PASS (control number, dates, redaction lines (b)(3):10 USC 424 / (b)(6), and UNCLASSIFIED//FOR OFFICIAL USE ONLY banner confirmed against the page images). Physical PDF page 2 (Black Vault FOIA distribution insert) excluded per the document''s-own-pages convention; 32 document pages delimited by ''----- PAGE BREAK -----'' markers (cover, roman iii-viii, body 1-25). Equations/figures bracketed; redactions and source typos (atherothrosclerosis, Bjork Shiley) preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_05_Materials_for_Advanced_Aerospace_Platforms.pdf
   status: archived
   artifacts:
