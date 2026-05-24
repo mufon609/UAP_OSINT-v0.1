@@ -116,7 +116,7 @@ quotes:
     amended, and its implementing directives.'
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
-    location: p.1, Purpose
+    location: p. 8, Purpose
   significance: UAP Security Classification Guide identifies UAPTF at Office of Naval Intelligence — April 16, 2020 (four months before public establishment announcement)
   context: UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020 (OCR preserves "identifYing" for "identifying")
   statement_date: '2020-04-16'
@@ -125,7 +125,7 @@ quotes:
   text: This chaner establishes the Congressionally mandated, Deputy Secretary of Defense directed Unidentified Aerial Phenomenon Task Force.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.1, introductory paragraph
+    location: p. 4, introductory paragraph
   significance: UAPTF Charter attests Congressional mandate + DSD direction as joint authority
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "chaner" for "charter")
   statement_date: '2020-09-01'
@@ -134,7 +134,7 @@ quotes:
   text: The purpose of the Task Force is to create a single entity tasked with working across the Department of Defense, and with the Intelligence Community (IC) and the Interagency, to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data on unexplained Unidenlified Aerial Phenomenon (UAP). currently posing a threat to U.S. National Security.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.1, Purpose
+    location: p. 4, Purpose
   significance: UAPTF Charter Purpose — single cross-DoD/IC/Interagency entity for UAP data
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Unidenlified" for "Unidentified")
   statement_date: '2020-09-01'
@@ -143,7 +143,7 @@ quotes:
   text: Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.2, Roles and Responsibilities
+    location: p. 5, Roles and Responsibilities
   significance: UAPTF Charter — Director of the Naval Intelligence Activity designates UAPTF leadership
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020
   statement_date: '2020-09-01'
@@ -152,7 +152,7 @@ quotes:
   text: The Director, UAPTF, is the accountable official for ensuring the timely collection and consolidation of data on UAP.
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
-    location: p.3, SCOPE AND ASSUMPTIONS
+    location: p. 2, SCOPE AND ASSUMPTIONS
   significance: ODNI Preliminary Assessment — accountability framing for the Director of UAPTF
   context: ODNI Preliminary Assessment, June 25, 2021
   statement_date: '2021-06-25'
@@ -161,7 +161,7 @@ quotes:
   text: UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council.
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
-    location: p.3, SCOPE AND ASSUMPTIONS
+    location: p. 2, SCOPE AND ASSUMPTIONS
   significance: ODNI Preliminary Assessment — UAPTF as drafting body plus the cross-agency contributor list (source lists "NGA" twice; preserved as-attested)
   context: ODNI Preliminary Assessment, June 25, 2021
   statement_date: '2021-06-25'

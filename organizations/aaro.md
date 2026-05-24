@@ -600,7 +600,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Michael Shellenberger written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth", 2024-11-13 |
 | Source | [archived source](../sources/government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf) |
-| Location | p. 3 of Shellenberger written testimony |
+| Location | p. 4 |
 
 ---
 
@@ -612,7 +612,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Shellenberger written testimony, November 13 2024 House Oversight hearing, 2024-11-13 |
 | Source | [archived source](../sources/government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf) |
-| Location | p. 3 of Shellenberger written testimony |
+| Location | p. 4 |
 
 ---
 
@@ -624,7 +624,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Tim Gallaudet (former NOAA Administrator and Navy Rear Admiral) written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing, 2024-11-13 |
 | Source | [archived source](../sources/government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf) |
-| Location | p. 9 of Gallaudet written testimony, recommended-action item 1 |
+| Location | p. 5, recommended-action item 1 |
 
 ---
 
@@ -636,7 +636,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Gallaudet written testimony, November 13 2024 House Oversight hearing, 2024-11-13 |
 | Source | [archived source](../sources/government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf) |
-| Location | p. 9 of Gallaudet written testimony |
+| Location | p. 5 |
 
 ---
 
@@ -672,7 +672,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Fiscal Year 2024 Consolidated Annual Report on UAP, dated November 14, 2024, Information Cut Off: June 1, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 2, Executive Summary |
+| Location | p. 3, Executive Summary |
 
 ---
 
@@ -684,7 +684,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 5, Overview of Reports |
+| Location | p. 6, Overview of Reports |
 
 ---
 
@@ -696,7 +696,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 5, Overview of Reports |
+| Location | p. 6, Overview of Reports |
 
 ---
 
@@ -708,7 +708,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 13, Sensor Architecture |
+| Location | p. 14, Sensor Architecture |
 
 ---
 
@@ -720,7 +720,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
 | Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
-| Location | p. 12, Notable AARO Partnerships |
+| Location | p. 13, Notable AARO Partnerships |
 
 ---
 
@@ -804,7 +804,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
 | Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
-| Location | p. 1, ¶5 of statement body |
+| Location | p. 2, ¶5 of statement body |
 
 ---
 
@@ -816,7 +816,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
 | Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
-| Location | p. 1, ¶5 of statement body |
+| Location | p. 2, ¶5 of statement body |
 
 ---
 

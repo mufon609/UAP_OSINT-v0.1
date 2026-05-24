@@ -52,7 +52,7 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 |---|---|
 | Attributed to | Naval Intelligence Activity, UAP Security Classification Guide ID# 04-030, signed by Director NIA Scott Bray, 2020-04-16 |
 | Source | [archived source](../sources/government/blackvault-uap-security-classification-guide-20200416.pdf) |
-| Location | p. 2, ¶1 (Purpose) |
+| Location | p. 8, ¶1 (Purpose) |
 
 ---
 
@@ -64,7 +64,7 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 |---|---|
 | Attributed to | Senate Report 116-233, Advanced Aerial Threats section, 2020-06-17 |
 | Source | [archived source](../sources/government/govinfo-senate-report-116-233-iaa-fy2021.pdf) |
-| Location | p. 12, Advanced Aerial Threats |
+| Location | p. 11, Advanced Aerial Threats |
 
 ---
 

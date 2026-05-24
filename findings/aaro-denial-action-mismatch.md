@@ -75,7 +75,7 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 | Tier | dopsr-cleared |
 | Attestor | [`/people/luis-elizondo`] |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q6 response |
+| Location | p. 6, Q6 response |
 
 ---
 

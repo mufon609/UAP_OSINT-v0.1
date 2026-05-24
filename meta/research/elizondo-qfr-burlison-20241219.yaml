@@ -44,7 +44,7 @@ quotes:
     hearing. See Attachment 1. The responses below are presented at the UNCLASSIFIED level.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 1, opening of response letter'
+    location: 'p. 4, opening of response letter'
   significance: 'Opening of Elizondo''s response letter — establishes the document as Elizondo''s response to the November 13, 2024 hearing QFR posed by Rep. Eric Burlison on December 9, 2024. UNCLASSIFIED-level responses; Attachment 1 is the eleven-question response.'
   statement_date: '2024-12-19'
 - id: q2
@@ -58,12 +58,20 @@ quotes:
        investigated unidentified anomalous phenomena (“UAP”). AATIP engaged senior
        executives at DoD Defense aerospace companies who claimed they possessed recovered
        “exotic material” not made by any U.S. or foreign source. Because these executives
-       indicated that they could no longer glean additional insight from such material, they initially
-       agreed to allow AATIP/AAWSAP to take custody of the material.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 1, Q1 opening response'
-  significance: 'Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source, and initially agreed to transfer custody.'
+    location: 'p. 4, Q1 question + response opening (through the p. 4/p. 5 break)'
+  significance: 'Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues in q2b on p. 5.'
+  statement_date: '2024-12-19'
+- id: q2b
+  added_date: '2026-05-23'
+  text: |-
+    indicated that they could no longer glean additional insight from such material, they initially
+    agreed to allow AATIP/AAWSAP to take custody of the material.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'p. 5, Q1 response continuation (custody-agreement clause)'
+  significance: 'Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split from q2 at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.'
   statement_date: '2024-12-19'
 - id: q3
   added_date: '2026-05-18'
@@ -81,7 +89,7 @@ quotes:
                James Ryder, (now deceased).
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 1, Q1 response — DOPSR / Lacatski attribution + verbatim Lacatski quotation'
+    location: 'p. 5, Q1 response — DOPSR / Lacatski attribution + verbatim Lacatski quotation'
   significance: 'Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.'
   statement_date: '2024-12-19'
 - id: q4
@@ -100,7 +108,7 @@ quotes:
        specimens were recovered from such crashes.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 2, Q4 response part (a)'
+    location: 'p. 5, Q4 response part (a)'
   significance: 'Q4 (a) — Elizondo confirms awareness of "several incidents" where U.S. military and Defense Contract companies recovered craft/vehicles of non-human origin, including biological specimens recovered from such crashes. The strongest single statement on the craft-and-biologics record in this QFR; Elizondo''s sworn response to a written congressional question.'
   statement_date: '2024-12-19'
 - id: q5
@@ -113,7 +121,7 @@ quotes:
        should not disclose any UAP-related information to the public.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 2, Q4 response, paragraph following part (b)'
+    location: 'p. 6, Q4 response, paragraph following part (b)'
   significance: 'Q4 closing paragraph — Elizondo attests a ~2004 White House-sponsored conversation involving AAWSAP and AATIP scientists deliberating whether the U.S. public was prepared for UAP acknowledgement. The decision was reportedly made — after ~one week — not to disclose. Single-source attestation of a 2004-era pre-disclosure deliberation by White House-sponsored UAP scientists.'
   statement_date: '2024-12-19'
 - id: q6
@@ -127,7 +135,7 @@ quotes:
        from Lockheed Martin to Bigelow Aerospace.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 2, Q6 response'
+    location: 'p. 6, Q6 response'
   significance: 'Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested is "opposed the transfer".'
   statement_date: '2024-12-19'
 - id: q7
@@ -143,7 +151,7 @@ quotes:
        classification level.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 2, Q7 response opening (before p. 2/p. 3 page-break interruption)'
+    location: 'p. 6, Q7 response opening (before p. 2/p. 3 page-break interruption)'
   significance: 'Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer''s request, and "I have visited this facility." That continuation is quoted as q2b per pdftotext page-footer artifact discipline.'
   statement_date: '2024-12-19'
 - id: q8
@@ -158,7 +166,7 @@ quotes:
        suppress inquiries and investigations into the UAP topic
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 3, Q9 response'
+    location: 'p. 7, Q9 response'
   significance: 'Q9 — Elizondo confirms CIA passive resistance and U.S. Air Force ([`/organizations/us-air-force`]) active suppression campaigns against UAP inquiries during his AATIP tenure. Narrows the institutional opposition the Lockheed-to-Bigelow transfer encountered (q6) to two specific agencies and characterizes each: CIA passive, Air Force active.'
   statement_date: '2024-12-19'
 - id: q9
@@ -172,7 +180,7 @@ quotes:
        raising this issue.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 3, Q10 response opening'
+    location: 'p. 7, Q10 response opening'
   significance: 'Q10 opening — Elizondo''s sworn attestation of retaliation against UAP-transparency advocates: security-clearance suspension/revocation efforts, direct threats to safety and to family safety, "administrative terrorism" framing. Establishes on-the-record context for the broader institutional resistance pattern Elizondo and others have described.'
   statement_date: '2024-12-19'
 - id: q10
@@ -186,7 +194,7 @@ quotes:
        list of published DIRDs.
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-    location: 'p. 4, Q11 response'
+    location: 'p. 7, Q11 response'
   significance: 'Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in q3 / q7 names the program as the destination context but not as the funding source for the transfer itself.'
   statement_date: '2024-12-19'
 

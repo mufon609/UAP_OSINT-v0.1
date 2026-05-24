@@ -5,7 +5,10 @@ Extract primary-source files to plaintext for Phase I research work.
 Wraps `pdftotext` for PDFs (with `pdfinfo` metadata capture) and direct
 read for HTML/TXT. Writes extracted text to deterministic scratch paths
 so Phase I contributors can reference extracted content by predictable
-locations.
+locations. PDF scratch carries `--- page N ---` markers at the form-feed
+page boundaries (physical pages) so a contributor authors the matching
+`p. N` quote location directly — the index matches the quote_location_page
+gate that verifies it.
 
 Two modes:
 
@@ -104,6 +107,28 @@ def extract(source_file):
     return text, meta
 
 
+def mark_pages(text):
+    """Insert visible ``--- page N ---`` markers at the form-feed page
+    separators so a contributor reads the physical page number directly off
+    the scratch — and authors the matching ``p. N`` location without counting.
+
+    The page index here is the same one the ``quote_location_page`` gate uses
+    (both split the extract on form feeds, dropping a trailing empty block), so
+    a ``p. N`` authored against a marker verifies at commit. Per-page content is
+    byte-identical to what the verbatim / prose-drift checks see — the markers
+    sit only at page boundaries, exactly where a quote must not span (a
+    page-spanning passage splits into two ≤1-page quotes per
+    ``meta/conventions.md``), so a within-page quote copied from the scratch
+    still matches. Returns the text unchanged when it carries no form feeds
+    (HTML / TXT / single-page PDFs / ``.txt`` siblings)."""
+    if "\f" not in text:
+        return text
+    pages = text.split("\f")
+    while len(pages) > 1 and pages[-1].strip() == "":
+        pages.pop()
+    return "".join(f"--- page {n} ---\n{pg}" for n, pg in enumerate(pages, 1))
+
+
 # =============================================================================
 # Modes
 # =============================================================================
@@ -127,6 +152,7 @@ def do_single(source_rel_path):
 
     basename = full.stem
     out_path = SCRATCH_DIR / f"scratch-{basename}.txt"
+    text = mark_pages(text)
     out_path.write_text(text)
 
     line_count = text.count("\n") + (0 if text.endswith("\n") else 1)
@@ -186,6 +212,7 @@ def do_batch(artifact_path):
             continue
 
         out_path = SCRATCH_DIR / f"scratch-{slug}-{i}.txt"
+        text = mark_pages(text)
         out_path.write_text(text)
         line_count = text.count("\n") + (0 if text.endswith("\n") else 1)
         print(f"  [{i}] ✓ sources/{rel}")

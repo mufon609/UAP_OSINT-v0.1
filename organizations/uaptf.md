@@ -75,7 +75,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020 (OCR preserves "identifYing" for "identifying"), 2020-04-16 |
 | Source | [archived source](../sources/government/blackvault-uap-security-classification-guide-20200416.pdf) |
-| Location | p.1, Purpose |
+| Location | p. 8, Purpose |
 
 ---
 
@@ -123,7 +123,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "chaner" for "charter"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | p.1, introductory paragraph |
+| Location | p. 4, introductory paragraph |
 
 ---
 
@@ -135,7 +135,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Unidenlified" for "Unidentified"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | p.1, Purpose |
+| Location | p. 4, Purpose |
 
 ---
 
@@ -147,7 +147,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020, 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | p.2, Roles and Responsibilities |
+| Location | p. 5, Roles and Responsibilities |
 
 ---
 
@@ -183,7 +183,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | ODNI Preliminary Assessment, June 25, 2021, 2021-06-25 |
 | Source | [archived source](../sources/government/dni-gov-odni-preliminary-assessment-20210625.pdf) |
-| Location | p.3, SCOPE AND ASSUMPTIONS |
+| Location | p. 2, SCOPE AND ASSUMPTIONS |
 
 ---
 
@@ -195,7 +195,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | ODNI Preliminary Assessment, June 25, 2021, 2021-06-25 |
 | Source | [archived source](../sources/government/dni-gov-odni-preliminary-assessment-20210625.pdf) |
-| Location | p.3, SCOPE AND ASSUMPTIONS |
+| Location | p. 2, SCOPE AND ASSUMPTIONS |
 
 ---
 

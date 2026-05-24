@@ -205,7 +205,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09 |
 | Source | [archived source](../sources/news/insa-naming-convention-20220900.pdf) |
-| Location | p. 4, COUNTER-INSIDER THREAT section |
+| Location | p. 5, COUNTER-INSIDER THREAT section |
 
 ---
 

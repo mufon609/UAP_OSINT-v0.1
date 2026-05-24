@@ -540,7 +540,7 @@ quotes:
   text: 'The All-domain Anomaly Resolution Office (AARO) received 757 UAP reports during this period; 485 of these reports featured UAP incidents that occurred during the reporting period. The remaining 272 reports featured UAP incidents that occurred between 2021 and 2022 but were not reported to AARO until this reporting period and consequently were not included in previous annual UAP reports.'
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
-    location: 'p. 2, Executive Summary'
+    location: 'p. 3, Executive Summary'
   significance: 'AARO FY24 Annual Report — caseload during the reporting period: 757 UAP reports total (485 within-period, 272 from prior 2021-2022 unreported periods)'
   context: 'AARO Fiscal Year 2024 Consolidated Annual Report on UAP, dated November 14, 2024, Information Cut Off: June 1, 2024'
   statement_date: '2024-11-14'
@@ -549,7 +549,7 @@ quotes:
   text: 'AARO determined 21 cases merit further analysis by its IC and science and technology (S&T) partners.'
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
-    location: 'p. 5, Overview of Reports'
+    location: 'p. 6, Overview of Reports'
   significance: 'AARO FY24 finding — 21 cases flagged for further analysis based on reported anomalous characteristics and/or behaviors'
   context: 'AARO FY24 Consolidated Annual Report on UAP, November 14, 2024'
   statement_date: '2024-11-14'
@@ -558,7 +558,7 @@ quotes:
   text: 'AARO is working closely with its IC and S&T partners to understand and attribute the 21 cases received this reporting period that merit further analysis based on reported anomalous characteristics and/or behaviors.'
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
-    location: 'p. 5, Overview of Reports'
+    location: 'p. 6, Overview of Reports'
   significance: 'AARO FY24 — characterization of the 21 cases that merit further analysis based on reported anomalous characteristics and/or behaviors'
   context: 'AARO FY24 Consolidated Annual Report on UAP, November 14, 2024'
   statement_date: '2024-11-14'
@@ -567,7 +567,7 @@ quotes:
   text: 'AARO has begun collections using a prototype sensor system, GREMLIN, for detecting, tracking, and characterizing UAP. GREMLIN demonstrated functionality and successfully collected data during a test event in March of 2024. The next step for GREMLIN is a 90-day pattern of life collection at a site of national security.'
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
-    location: 'p. 13, Sensor Architecture'
+    location: 'p. 14, Sensor Architecture'
   significance: 'AARO FY24 — GREMLIN prototype sensor system disclosure: detecting / tracking / characterizing UAP, March 2024 test event, 90-day pattern-of-life collection scheduled at a site of national security'
   context: 'AARO FY24 Consolidated Annual Report on UAP, November 14, 2024'
   statement_date: '2024-11-14'
@@ -576,7 +576,7 @@ quotes:
   text: 'Georgia Tech Research Institute (GTRI) developed the GREMLIN sensor architecture (described in additional detail on page 13) which will be deployed in 1Q FY 2025 to support pattern-of-life analysis.'
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
-    location: 'p. 12, Notable AARO Partnerships'
+    location: 'p. 13, Notable AARO Partnerships'
   significance: 'AARO FY24 — Georgia Tech Research Institute (GTRI) named as the GREMLIN sensor architecture developer; deployment scheduled 1Q FY 2025'
   context: 'AARO FY24 Consolidated Annual Report on UAP, November 14, 2024'
   statement_date: '2024-11-14'
@@ -585,7 +585,7 @@ quotes:
   text: 'To date, AARO has over 1,600 UAP reports in its holdings from across the U.S. government.'
   source:
     path: government/aaro-kosloski-sfr-sasc-20241119.pdf
-    location: 'p. 1, ¶5 of statement body'
+    location: 'p. 2, ¶5 of statement body'
   significance: Kosloski Nov 19 2024 SASC Statement for the Record — AARO's cumulative holdings exceed 1,600 UAP reports across the U.S. government
   context: 'AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024'
   statement_date: '2024-11-19'
@@ -594,7 +594,7 @@ quotes:
   text: 'It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.'
   source:
     path: government/aaro-kosloski-sfr-sasc-20241119.pdf
-    location: 'p. 1, ¶5 of statement body'
+    location: 'p. 2, ¶5 of statement body'
   significance: 'Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.'
   context: 'AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024'
   statement_date: '2024-11-19'
@@ -631,7 +631,7 @@ quotes:
     and poor referencing, including to Wikipedia.
   source:
     path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
-    location: 'p. 3 of Shellenberger written testimony'
+    location: 'p. 4'
   significance: 'Shellenberger written testimony — disclosure-side critique characterization of HRR Vol I as "riddled with factual errors and poor referencing, including to Wikipedia"; representative public-record critique posture opposing AARO''s historical analysis.'
   context: 'Michael Shellenberger written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth"'
   statement_date: '2024-11-13'
@@ -644,7 +644,7 @@ quotes:
     service.”
   source:
     path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
-    location: 'p. 3 of Shellenberger written testimony'
+    location: 'p. 4'
   significance: 'Shellenberger written testimony — Christopher Mellon (former DASD(I)) rebuttal of HRR Vol I, "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service"; substantive disclosure-side critique attributed to a former DoD official.'
   context: Shellenberger written testimony, November 13 2024 House Oversight hearing
   statement_date: '2024-11-13'
@@ -657,7 +657,7 @@ quotes:
     examples of disinformation.
   source:
     path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
-    location: 'p. 9 of Gallaudet written testimony, recommended-action item 1'
+    location: 'p. 5, recommended-action item 1'
   significance: 'Gallaudet written testimony — calls for AARO to explain "inaccuracies and incompleteness" of HRR Vol I and questions whether AARO is failing its Congressional mandate or conducting "disinformation"; recommended Congressional action.'
   context: 'Tim Gallaudet (former NOAA Administrator and Navy Rear Admiral) written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing'
   statement_date: '2024-11-13'
@@ -672,7 +672,7 @@ quotes:
     spoken publicly about their knowledge of U.S. government UAP programs.
   source:
     path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
-    location: 'p. 9 of Gallaudet written testimony'
+    location: 'p. 5'
   significance: 'Gallaudet first-person account of an "hours-long influence operation" by then-acting AARO director and senior staff intended to convince him of the validity of HRR Vol I, question well-known UAP reports including the USS Nimitz tic-tac encounter, and disparage former government authorities. Most concrete public-record disclosure-side critique attestation against AARO institutional conduct.'
   context: Gallaudet written testimony, November 13 2024 House Oversight hearing
   statement_date: '2024-11-13'

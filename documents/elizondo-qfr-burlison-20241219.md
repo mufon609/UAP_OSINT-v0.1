@@ -45,21 +45,33 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 1, opening of response letter |
+| Location | p. 4, opening of response letter |
 
 ---
 
-### Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source, and initially agreed to transfer custody.
+### Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues in q2b on p. 5.
 
 > 1. Question: “Does any branch of the United States government, or defense contractors (aerospace and otherwise), possess technology derived from a non-human source?”
 >
-> Response: Yes. I served as the senior ranking person of the Advanced Aerospace Threat Identification Program (“AATIP”) within the Department of Defense (“DoD”). AATIP investigated unidentified anomalous phenomena (“UAP”). AATIP engaged senior executives at DoD Defense aerospace companies who claimed they possessed recovered “exotic material” not made by any U.S. or foreign source. Because these executives indicated that they could no longer glean additional insight from such material, they initially agreed to allow AATIP/AAWSAP to take custody of the material.
+> Response: Yes. I served as the senior ranking person of the Advanced Aerospace Threat Identification Program (“AATIP”) within the Department of Defense (“DoD”). AATIP investigated unidentified anomalous phenomena (“UAP”). AATIP engaged senior executives at DoD Defense aerospace companies who claimed they possessed recovered “exotic material” not made by any U.S. or foreign source. Because these executives
 
 | Field | Value |
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 1, Q1 opening response |
+| Location | p. 4, Q1 question + response opening (through the p. 4/p. 5 break) |
+
+---
+
+### Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split from q2 at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.
+
+> indicated that they could no longer glean additional insight from such material, they initially agreed to allow AATIP/AAWSAP to take custody of the material.
+
+| Field | Value |
+|---|---|
+| Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
+| Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
+| Location | p. 5, Q1 response continuation (custody-agreement clause) |
 
 ---
 
@@ -73,7 +85,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 1, Q1 response — DOPSR / Lacatski attribution + verbatim Lacatski quotation |
+| Location | p. 5, Q1 response — DOPSR / Lacatski attribution + verbatim Lacatski quotation |
 
 ---
 
@@ -91,7 +103,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q4 response part (a) |
+| Location | p. 5, Q4 response part (a) |
 
 ---
 
@@ -103,7 +115,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q4 response, paragraph following part (b) |
+| Location | p. 6, Q4 response, paragraph following part (b) |
 
 ---
 
@@ -117,7 +129,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q6 response |
+| Location | p. 6, Q6 response |
 
 ---
 
@@ -129,7 +141,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q7 response opening (before p. 2/p. 3 page-break interruption) |
+| Location | p. 6, Q7 response opening (before p. 2/p. 3 page-break interruption) |
 
 ---
 
@@ -143,7 +155,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 3, Q9 response |
+| Location | p. 7, Q9 response |
 
 ---
 
@@ -155,7 +167,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 3, Q10 response opening |
+| Location | p. 7, Q10 response opening |
 
 ---
 
@@ -167,7 +179,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 |---|---|
 | Attributed to | Luis D. Elizondo, Questions for the Record response to Rep. Eric Burlison, December 19, 2024 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 4, Q11 response |
+| Location | p. 7, Q11 response |
 
 ---
 

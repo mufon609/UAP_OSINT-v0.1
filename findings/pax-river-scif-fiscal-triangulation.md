@@ -47,7 +47,7 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 | Tier | dopsr-cleared |
 | Attestor | [`/people/luis-elizondo`] |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 2, Q7 response |
+| Location | p. 6, Q7 response |
 
 ---
 

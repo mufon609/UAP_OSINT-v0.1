@@ -61,7 +61,7 @@ quotes:
   text: '(13) NON-HUMAN INTELLIGENCE.—The term ''''non-human intelligence'''' means any sentient intelligent non-human lifeform regardless of nature or ultimate origin that may be presumed responsible for unidentified anomalous phenomena or of which the Federal Government has become aware.'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 5, §9003(13) NON-HUMAN INTELLIGENCE definition'
+    location: 'p. 3, §9003(13) NON-HUMAN INTELLIGENCE definition'
   significance: 'NHI statutory definition at §9003(13) — preserved verbatim from the Schumer-Rounds Senate-passed text without strikethrough or insertion markup. OUSD(I&S) did not narrow the NHI legal scope; the rewrite restructures the disclosure mechanism (Review Board → AARO; senior-agency withdrawal authority; unclassified-only restriction) while leaving the origin-agnostic NHI definition intact. Structural anchor for the legal-scope-preservation observation in the IPMO/AARO structural-coupling investigation.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9003 DEFINITIONS — NHI definition preserved without markup'
   statement_date: '2023-11'
@@ -88,7 +88,7 @@ quotes:
   text: 'the physical transfer of the records for purposes of conducting an independent and impartial review and such transfer is approved by the head of the Government office with custody;'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 9, §9005(b)(1) — verbatim post-overlap continuation; full source line and track-changes context in significance below'
+    location: 'p. 10, §9005(b)(1) — verbatim post-overlap continuation; full source line and track-changes context in significance below'
   significance: '§9005(b)(1) Custody and review — typical track-changes substitution pattern visible across the markup. The §9005(b)(1) head reads (verbatim): "(1) the Review Board All-domain Anomaly Resolution Office requires requests the physical transfer of the records..." — "Review Board" struck through, "All-domain Anomaly Resolution Office" inserted; "requires" struck through, "requests" inserted. Routes review-and-transfer authority through AARO instead of the independent UAP Records Review Board, and weakens the imperative ("requires" → "requests") on physical transfer of records. The Review Board → AARO substitution recurs at §9005(c)(2)(H) and elsewhere throughout the markup; AARO becomes the gatekeeper for disclosure decisions.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9005(b)(1) — Review Board → AARO substitution'
   statement_date: '2023-11'
@@ -97,7 +97,7 @@ quotes:
   text: 'Director of National Intelligence via the All-domain Anomaly Resolution Office any additional information and records'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 11, §9005(c)(2)(H) — intermediating layer insertion'
+    location: 'p. 12, §9005(c)(2)(H) — intermediating layer insertion'
   significance: '§9005(c)(2)(H) Intermediating layer — "via the All-domain Anomaly Resolution Office" inserted to route agency transmissions to ODNI through AARO. The original Schumer-Rounds text had agencies serve the Review Board directly; the OUSD(I&S) markup inserts AARO as the intermediating layer between any originating agency and the disclosure framework. Combined with the §9005(b)(1) Review Board → AARO substitution (q7), AARO sits both as the gatekeeper and as the routing intermediary.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9005(c)(2)(H) — AARO intermediating-layer insertion'
   statement_date: '2023-11'
@@ -106,7 +106,7 @@ quotes:
   text: '(2) the public disclosure of the unidentified anomalous phenomena record would violate the Privacy Act of 1974, as amended, 5 U.S.C. § 552a.'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 14, §9006(2) — Privacy Act replacement of original personal-privacy language'
+    location: 'p. 15, §9006(2) — Privacy Act replacement of original personal-privacy language'
   significance: '§9006(2) Privacy exemption — replaces the Schumer-Rounds personal-privacy postponement language ("reveal the name or identity of a living person who provided confidential information to the Federal Government and would pose a substantial risk of harm to that person") with the broader Privacy Act of 1974 (5 U.S.C. § 552a). The Privacy Act provides considerably broader privacy exemption authority than the original "named-source-with-substantial-risk-of-harm" standard — broadening the privacy exemption considerably.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9006(2) — Privacy Act broadening'
   statement_date: '2023-11'
@@ -115,7 +115,7 @@ quotes:
   text: '(3) WITHDRAWAL OF RECORDS – Senior Agency Officials designated in accordance with E.O. 13526 or any successor Orders may withdraw records in the collection that are determined to be both not related to unidentified anomalous phenomena and properly classified. The Senior Agency Official must notify the congressional defense and intelligence committees 60 days before each record is withdrawn.'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 14, §9006(3) — newly-inserted Senior Agency Official withdrawal authority'
+    location: 'p. 15, §9006(3) — newly-inserted Senior Agency Official withdrawal authority'
   significance: '§9006(3) Senior Agency Official withdrawal authority — newly-inserted section with no counterpart in the Schumer-Rounds Senate-passed text. Allows Senior Agency Officials designated under E.O. 13526 or successor Orders to withdraw records from the disclosure framework upon a determination that the record is "both not related to unidentified anomalous phenomena and properly classified". Single largest structural carveout in the markup — combined with §9004(a)(1)(C) "all unclassified" restriction (q6), classified UAP records can exit the framework either by exclusion (Collection scope) or by senior-official withdrawal.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9006(3) — Senior Agency Official withdrawal insertion'
   statement_date: '2023-11'
@@ -124,7 +124,7 @@ quotes:
   text: 'exercise eminent domain appropriately over any and all recovered technologies of unknown origin and biological evidence of non-human intelligence that may be controlled by private persons or entities in the territory of the United States in the interests of the public good.'
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: 'p. 25, §9010(a) — verbatim post-overlap continuation; full source line and track-changes context in significance below'
+    location: 'p. 30, §9010(a) — verbatim post-overlap continuation; full source line and track-changes context in significance below'
   significance: '§9010(a) Eminent domain provision — track-changes weakening of the federal authority over private non-human intelligence material. The §9010(a) head reads (verbatim): "EXERCISE OF EMINENT DOMAIN.—The It is the sense of Congress that the Federal Government shall should exercise eminent domain appropriately over any and all recovered..." — "The" struck through, "It is the sense of Congress that the" inserted (changes substantive directive to non-binding sense-of-Congress framing); "shall" struck through, "should" inserted (changes mandatory to advisory). The original Schumer-Rounds text directed federal eminent domain over non-human intelligence material as a binding provision; the OUSD(I&S) markup demotes it to advisory sense-of-Congress language.'
   context: 'OUSD(I&S) markup of S. 2226 Division G §9010(a) — eminent domain weakening'
   statement_date: '2023-11'

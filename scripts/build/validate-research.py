@@ -124,6 +124,7 @@ from checks import primary_sources as ck_primary_sources
 from checks import program_involvement as ck_program_involvement
 from checks import prose_drift as ck_prose_drift
 from checks import publication_record as ck_publication_record
+from checks import quote_location_page as ck_quote_location_page
 from checks import quotes as ck_quotes
 from checks import relationships as ck_relationships
 from checks import resolution_history as ck_resolution_history
@@ -234,6 +235,7 @@ _ARTIFACT_CHECKS = [
     ck_primary_sources,
     ck_quotes,
     ck_verbatim_quotes,
+    ck_quote_location_page,
     ck_naming_quirks,
     # Type-conditional entry-list checks
     ck_rumors,

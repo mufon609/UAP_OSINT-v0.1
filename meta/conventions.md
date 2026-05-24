@@ -947,6 +947,23 @@ itself:
 | FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers (e.g., `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt`). Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
 | The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
 
+**`p. N` is the physical page** — the page a PDF viewer's counter shows,
+equivalently the Nth form-feed-delimited block of the `pdftotext` extract. It
+is *not* the printed page number a composite document carries on its face: a
+cover letter, a questions attachment, an unnumbered first page, or roman
+front matter (`p. ii`) all push the printed number out of step with the
+physical page, and the printed number is not mechanically recoverable from the
+extract. Anchoring to the physical page makes the ref both reproducible (open
+the PDF to page N) and verifiable. `extract-source.py` writes `--- page N ---`
+markers at the form-feed boundaries so the physical page is read straight off
+the scratch, and the `quote_location_page` check enforces it: every `p. N`
+quote must sit on physical page N (the check splits the extract on form feeds
+and confirms the quote text is on the cited page). It covers text-native PDFs;
+it skips `ocr-scan` / `extraction-lossy` sources served from a `.txt` sibling,
+whose pagination isn't yet form-feed-faithful (a sibling page-marker
+convention is the deferred follow-on). A page-spanning quote sits on no single
+page and fails the check — split it at the boundary (below).
+
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
 distinct roles: `source.path` names the archived file (the ground
 truth); `source.location` navigates within that file using anchors

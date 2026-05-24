@@ -125,3 +125,23 @@ adjacent-node propagation before building.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C2 — Extend quote_location_page to OCR-scan / extraction-lossy sources
+
+The `quote_location_page` check verifies a quote's `p. N` against the physical
+page by splitting the `pdftotext` extract on form feeds. It **skips**
+`ocr-scan` / `extraction-lossy` sources because those are served from a
+contributor-produced `.txt` sibling whose pagination is not form-feed-faithful
+to the original PDF (a sibling may carry one stray form feed or none) — so
+their `p. N` labels currently go unverified. Known skipped sources with page
+refs include the SASC AARO hearing transcript and FOIA-released PDFs.
+
+Forever-fix: give siblings a page-marker convention (preserve `\f` at the
+original PDF's physical-page boundaries, or `--- page N ---` markers aligned to
+them) produced by `/prepare-ocr-sibling`, then teach the check to split a
+sibling on those markers. Re-run the gate over the previously-skipped sources
+and migrate any mislabeled `p. N` refs. Until then those labels rest on
+contributor care, not a gate.
+
+**Blocks:** none.
+**Blocked by:** none.

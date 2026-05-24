@@ -80,7 +80,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 |---|---|
 | Attributed to | SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), opening Genesis section, 2011 |
 | Source | [archived source](../sources/news/safireproject-genesis-report-20180223.pdf) |
-| Location | p. 2, ¶1 |
+| Location | p. 3, ¶1 |
 
 ---
 
@@ -200,7 +200,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 |---|---|
 | Attributed to | SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), cover-page photo caption, 2016-06-15 |
 | Source | [archived source](../sources/news/safireproject-genesis-report-20180223.pdf) |
-| Location | p. 1 (cover photo caption) |
+| Location | p. 2 |
 
 ---
 
@@ -356,7 +356,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 |---|---|
 | Attributed to | SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published; cover photo dated June 15, 2016 |
 | Source | [archived source](../sources/news/safireproject-genesis-report-20180223.pdf) |
-| Location | p. 9 |
+| Location | p. 10 |
 
 ---
 
@@ -368,7 +368,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 |---|---|
 | Attributed to | SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published |
 | Source | [archived source](../sources/news/safireproject-genesis-report-20180223.pdf) |
-| Location | p. 9 |
+| Location | p. 10 |
 
 ---
 
@@ -392,7 +392,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 |---|---|
 | Attributed to | SAFIRE PROJECT Phase Two report |
 | Source | [archived source](../sources/news/safireproject-phase-two-report.pdf) |
-| Location | p. 13 |
+| Location | p. 14 |
 
 ---
 

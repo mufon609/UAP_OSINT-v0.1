@@ -324,7 +324,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.2 (The Early Scientific Effort at SRI), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-13, ¶1 |
+| Location | p. 34, ¶1 |
 
 ---
 
@@ -336,7 +336,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-14, ¶1 |
+| Location | p. 35, ¶1 |
 
 ---
 
@@ -348,7 +348,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.1 (Early Operational Successes and Evaluation), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-12, ¶2 |
+| Location | p. 33, ¶2 |
 
 ---
 
@@ -360,7 +360,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-14, ¶2 |
+| Location | p. 35, ¶2 |
 
 ---
 

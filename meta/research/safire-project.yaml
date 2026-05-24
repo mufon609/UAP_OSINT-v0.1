@@ -240,7 +240,7 @@ quotes:
     was to test the Electric Sun model.
   source:
     path: news/safireproject-genesis-report-20180223.pdf
-    location: 'p. 9'
+    location: 'p. 10'
   significance: Primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment"). Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published; cover photo dated June 15, 2016'
 - id: q20
@@ -251,7 +251,7 @@ quotes:
     by the International Science Foundation.
   source:
     path: news/safireproject-genesis-report-20180223.pdf
-    location: 'p. 9'
+    location: 'p. 10'
   significance: Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published'
 - id: q21
@@ -260,7 +260,7 @@ quotes:
     The SAFIRE sun, photographed in the SAFIRE lab, Mississauga, Ontario, Canada, June 15, 2016
   source:
     path: news/safireproject-genesis-report-20180223.pdf
-    location: 'p. 1 (cover photo caption)'
+    location: 'p. 2'
   significance: Primary-source attestation of (a) the SAFIRE lab location as Mississauga, Ontario, Canada and (b) the precise first-firing date as June 15, 2016 (refines the prior month-only attestation from the resources page caption).
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), cover-page photo caption'
   statement_date: '2016-06-15'
@@ -274,7 +274,7 @@ quotes:
     solar physics.
   source:
     path: news/safireproject-genesis-report-20180223.pdf
-    location: 'p. 2, ¶1'
+    location: 'p. 3, ¶1'
   significance: Primary-source attestation of the 2011 antecedent — Childs's photovoltaic-research observations of solar behavior contradicting the standard model, the personal precursor to the 2012 Electric Universe Conference proposal that initiated the SAFIRE PROJECT.
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), opening Genesis section'
   statement_date: '2011'
@@ -297,7 +297,7 @@ quotes:
     for the project.
   source:
     path: news/safireproject-phase-two-report.pdf
-    location: 'p. 13'
+    location: 'p. 14'
   significance: SAFIRE Phase II power supply specification — 200 kW DC. Self-attested in the Phase Two report.
   context: 'SAFIRE PROJECT Phase Two report'
 - id: q25

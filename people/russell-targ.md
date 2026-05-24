@@ -226,7 +226,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.2 (The Early Scientific Effort at SRI), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-13, ¶1 |
+| Location | p. 34, ¶1 |
 
 > In 1988 an analysis was made of all of the experiments conducted at SRI from 1973 until that time (May et al, 1988). The analysis was based on all 154 experiments conducted during that era, consisting of over 26,000 individual trials. Of those, almost 20,000 were of the forced choice type and just over a thousand were laboratory remote viewings. There were a total of 227 subjects in all experiments.
 
@@ -234,7 +234,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Michael D. Mumford, Andrew M. Rose, and David A. Goslin, 'An Evaluation of Remote Viewing: Research and Applications,' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988), 1995-09-29 |
 | Source | [archived source](../sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf) |
-| Location | p. 3-14, ¶1 |
+| Location | p. 35, ¶1 |
 
 ### Geller SRI Tenure — Retrospective Account
 

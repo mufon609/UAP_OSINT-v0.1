@@ -61,7 +61,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 | Tier | dopsr-cleared |
 | Attestor | [`/people/luis-elizondo`] |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 1, Q1 response |
+| Location | p. 5, Q1 response |
 
 ---
 
@@ -75,7 +75,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 | Tier | dopsr-cleared |
 | Attestor | [`/people/luis-elizondo`] |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | p. 1, Q1 response indented quotation, citing Attachment 2 |
+| Location | p. 5, Q1 response indented quotation, citing Attachment 2 |
 
 ---
 

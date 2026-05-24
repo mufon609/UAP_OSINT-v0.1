@@ -79,7 +79,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 5, §9003(13) NON-HUMAN INTELLIGENCE definition |
+| Location | p. 3, §9003(13) NON-HUMAN INTELLIGENCE definition |
 
 ---
 
@@ -115,7 +115,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 9, §9005(b)(1) — verbatim post-overlap continuation; full source line and track-changes context in significance below |
+| Location | p. 10, §9005(b)(1) — verbatim post-overlap continuation; full source line and track-changes context in significance below |
 
 ---
 
@@ -127,7 +127,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 11, §9005(c)(2)(H) — intermediating layer insertion |
+| Location | p. 12, §9005(c)(2)(H) — intermediating layer insertion |
 
 ---
 
@@ -139,7 +139,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 14, §9006(2) — Privacy Act replacement of original personal-privacy language |
+| Location | p. 15, §9006(2) — Privacy Act replacement of original personal-privacy language |
 
 ---
 
@@ -151,7 +151,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 14, §9006(3) — newly-inserted Senior Agency Official withdrawal authority |
+| Location | p. 15, §9006(3) — newly-inserted Senior Agency Official withdrawal authority |
 
 ---
 
@@ -163,7 +163,7 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 |---|---|
 | Attributed to | OUSD(I&S) markup of S. 2226 Division G — UAPDA — submitted to congressional negotiators November 2023 |
 | Source | [archived source](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
-| Location | p. 25, §9010(a) — verbatim post-overlap continuation; full source line and track-changes context in significance below |
+| Location | p. 30, §9010(a) — verbatim post-overlap continuation; full source line and track-changes context in significance below |
 
 ---
 
