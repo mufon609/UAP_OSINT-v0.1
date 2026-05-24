@@ -33,7 +33,7 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 | Tier | secondary-source |
 | Attestor | [`/organizations/lockheed-martin`] |
 | Source | [archived source](../sources/news/liberationtimes-burlison-grusch-recruitment-20250327.html) |
-| Location | ¶ following Lockheed Martin "refused on multiple occasions" attestation |
+| Location | ¶ November 2023 spokesperson quote |
 
 ---
 

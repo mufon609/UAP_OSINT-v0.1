@@ -143,5 +143,14 @@ sibling on those markers. Re-run the gate over the previously-skipped sources
 and migrate any mislabeled `p. N` refs. Until then those labels rest on
 contributor care, not a gate.
 
+Same scope gap on a second axis: the check covers `quotes[]` only. `p. N` refs
+in `timeline[]` and `naming_quirks[]` are ungated and were not migrated — two
+stale timeline labels (`aaro-denial-action-mismatch` t2, `pax-river` t2) were
+found and fixed by hand during the findings audit. `naming_quirks[]` carry a
+verbatim `observed` token and could be gated the same way (token on page N);
+`timeline[]` entries carry a paraphrased `event`, not verbatim text, so they
+have no anchor to verify against — for those the `p. N` rests on contributor
+care regardless.
+
 **Blocks:** none.
 **Blocked by:** none.
