@@ -868,6 +868,21 @@ the description's reference to the contract's establishment has no
 structured-surface counterpart for the contract's closure, and the
 layered-precision principle breaks for that class of contracts.
 
+**Open `period_end` — ongoing vs. ended-but-undated.** An absent `period_end`
+renders as just `{start}` (and an absent `period_start` as `– {end}`); it is
+**not** read as "ongoing." Both a still-current role and a role known to have
+ended on an unattested date legitimately lack a `period_end`, so the end-status
+lives in the entry's `role` / descriptor text, not the period field: a role
+known to have ended with no attested end date says so (e.g. "…; ended, end date
+unattested"); a genuinely current role says "present" / "ongoing" in its
+descriptor. The inverse — an attested "active-by" year used as `period_start`
+when the true start is unattested — carries the same kind of role-text caveat
+(e.g. "…the article-attested active-by year, not a confirmed start"). A
+structured `period_*` sentinel or `ongoing` flag was considered and declined:
+adding schema + renderer machinery for this edge case is over-engineering, and
+the role text is the source-grounded surface that already carries the
+distinction.
+
 ### Quote location refs: source-anchored, not extraction-anchored
 
 Each quote in a research artifact carries a `source.location` field —

@@ -100,36 +100,6 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Notation convention for "known start, unknown end (but not ongoing)" periods
-
-Structured `period_*` fields (affiliations, contracts, program-involvement)
-have no agreed way to express a period whose start is attested but whose end
-is known to have occurred yet is undated — distinct from an ongoing role,
-which also renders as an open end. Decide the convention (a sentinel
-`period_end`, a structured flag, or a role-text annotation) and document it in
-`meta/conventions.md`; today contributors fall back to an open end plus a
-free-text caveat, which conflates "ended, date unknown" with "ongoing."
-Surfaced when the dead research-queue entry that hal-puthoff (a2/p1) and
-russell-targ cited for this was stripped. The inverse case (unknown start,
-attested active-by year) currently uses the active-by year as `period_start`
-with a role-text caveat (e.g. ronald-moultrie a30/a31) — fold both into one ruling.
-
-### C2 — `extract-source.py --source` scratch path collides for an OCR-scan PDF + its `.txt` sibling
-
-`extract-source.py --source {path}` derives the `/tmp/scratch-{stem}.txt` name
-from the path's basename **without the extension**, so an OCR-scan PDF and its
-same-stem `.txt` sibling both target the same scratch file. Running `--source`
-on the `.pdf` therefore overwrites a clean sibling-derived scratch with the
-corrupt OCR text layer — silently. The canonical build path
-(`extract-source.py --artifact {yaml}`) avoids this: it names the scratch from
-the artifact slug and prefers the sibling, so the footgun is latent — but a
-contributor extracting an ocr-scan PDF directly gets garbage with no warning.
-Fix: discriminate the `--source` scratch name by format (`scratch-{stem}-{ext}.txt`),
-or refuse/warn when a verified sibling is registered for the requested PDF.
-Verify no other scratch-path consumer depends on the current name first.
-Surfaced building dird-26 (the survey flagged the collision; `--artifact` was
-used, so no break occurred).
-
 ### C5 — Streamline prose-drift iteration WITHOUT weakening it (critical; handle carefully)
 
 The prose-drift gate is correct and the resulting nodes are worth the
