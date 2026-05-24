@@ -3,12 +3,11 @@
 Bundles the universal top-level metadata checks for every research
 artifact:
 
-  - top-level required keys: id, type, schema_version, target_node,
-    status, created, primary_sources, document_intrinsic,
-    context_extrinsic, quotes, naming_quirks
+  - top-level required keys: id, type, target_node, status,
+    primary_sources, document_intrinsic, context_extrinsic, quotes,
+    naming_quirks
   - id matches the file path (``meta/research/{slug}``)
   - type literal equals ``research-artifact``
-  - schema_version is integer in ``schema.compatible_with``
   - status enum: active | archived
   - target_node points to an existing content-node .md file
   - description required on document / transcript / media / event /
@@ -43,7 +42,6 @@ don't benefit from individual isolation.
 from pathlib import Path
 
 from checks import Issue
-from lib._common import schema_version_compat_messages
 
 
 CHECK_NAME = "artifact_top_level"
@@ -53,7 +51,7 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 REQUIRED_TOP_LEVEL_KEYS = [
-    "id", "type", "schema_version", "target_node", "status", "created",
+    "id", "type", "target_node", "status",
     "primary_sources", "document_intrinsic",
     "context_extrinsic", "quotes",
     "naming_quirks",
@@ -92,17 +90,6 @@ def check(ctx):
             f"type must be 'research-artifact'; got {data.get('type')!r}",
             check_name=CHECK_NAME,
         )
-
-    # schema_version compatibility check via the shared lib helper.
-    # Direct subscript on ``schema:`` so a malformed schema file
-    # surfaces loudly rather than masking drift.
-    schema_block = ctx.schema["schema"]
-    compatible_with = schema_block["compatible_with"]
-    current = schema_block["version"]
-    for level, msg in schema_version_compat_messages(
-        data.get("schema_version"), compatible_with, current,
-    ):
-        yield Issue(ctx.rel, level, msg, check_name=CHECK_NAME)
 
     # status enum
     if data.get("status") and data.get("status") not in valid_status:

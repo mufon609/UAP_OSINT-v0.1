@@ -1,11 +1,9 @@
 ---
 id: documents/eo-14347-restoring-department-of-war
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: executive-order
-created: 2026-05-03
 ---
 
 # Executive Order 14347 — Restoring the United States Department of War

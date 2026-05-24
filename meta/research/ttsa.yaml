@@ -1,9 +1,7 @@
 id: meta/research/ttsa
 type: research-artifact
-schema_version: 1
 target_node: organizations/ttsa
 status: active
-created: '2026-04-22'
 description: 'To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Delaware Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). Its science and aerospace division was retired in the February 2021 reorganization; the Company amended its name to "To The Stars Inc." in November 2021 and now operates with a focus on entertainment. The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company''s Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
 
 

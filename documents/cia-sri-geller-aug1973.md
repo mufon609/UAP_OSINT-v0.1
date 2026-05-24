@@ -1,11 +1,9 @@
 ---
 id: documents/cia-sri-geller-aug1973
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-16
 ---
 
 # CIA SRI Geller Experiments — August 4-11, 1973 (CIA-RDP79-00999A000300030027-0)

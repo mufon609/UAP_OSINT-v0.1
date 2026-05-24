@@ -1,10 +1,8 @@
 ---
 id: people/sean-kirkpatrick
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-04-29
 ---
 
 # Sean M. Kirkpatrick

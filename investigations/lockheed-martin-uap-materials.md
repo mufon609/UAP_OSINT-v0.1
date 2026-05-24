@@ -1,11 +1,8 @@
 ---
 id: investigations/lockheed-martin-uap-materials
 type: investigation
-schema_version: 1
 status: open
 question: 'Does Lockheed Martin own or house UAP material?'
-created: 2026-05-13
-updated: 2026-05-13
 ---
 
 # Lockheed Martin — UAP Materials

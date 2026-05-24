@@ -1,10 +1,8 @@
 ---
 id: organizations/aaro
 type: organization
-schema_version: 1
 status: active
 kind: gov
-created: 2026-04-20
 ---
 
 # AARO — All-domain Anomaly Resolution Office

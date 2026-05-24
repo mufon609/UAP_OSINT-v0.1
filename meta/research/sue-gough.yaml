@@ -1,9 +1,7 @@
 id: meta/research/sue-gough
 type: research-artifact
-schema_version: 1
 target_node: people/sue-gough
 status: active
-created: '2026-05-06'
 description: ''
 primary_sources:
 - path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html

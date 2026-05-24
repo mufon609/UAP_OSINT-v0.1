@@ -1,9 +1,7 @@
 id: meta/research/dird-01-metallic-glasses
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-01-metallic-glasses
 status: active
-created: '2026-05-21'
 primary_sources:
 - path: government/dird-01-metallic-glasses-20091214.pdf
   format: pdf

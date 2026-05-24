@@ -1,10 +1,8 @@
 ---
 id: organizations/{{slug}}
 type: organization
-schema_version: 1
 status: active
 kind: {{kind}}
-created: {{today}}
 ---
 
 # {{display_name}}

@@ -1,9 +1,7 @@
 id: meta/research/liberationtimes-white-house-approved-trip-pax-river-20260306
 type: research-artifact
-schema_version: 1
 target_node: documents/liberationtimes-white-house-approved-trip-pax-river-20260306
 status: active
-created: '2026-05-18'
 
 primary_sources:
 - path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html

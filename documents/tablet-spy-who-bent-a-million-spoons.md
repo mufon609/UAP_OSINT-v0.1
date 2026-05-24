@@ -1,11 +1,9 @@
 ---
 id: documents/tablet-spy-who-bent-a-million-spoons
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: non-gov-doc
 doc_form: article
-created: 2026-05-16
 ---
 
 # Tablet Magazine — 'The Spy Who Bent a Million Spoons' (Tal Kra-Oz, June 3, 2015)

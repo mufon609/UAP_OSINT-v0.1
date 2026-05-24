@@ -1,11 +1,9 @@
 ---
 id: documents/dird-15-advanced-space-propulsion
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-21
 ---
 
 # Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — H.E. Puthoff, EarthTech International, DIA AAWSA Program, 29 March 2010

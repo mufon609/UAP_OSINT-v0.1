@@ -65,7 +65,6 @@ CHECK_PHASE = {
     "frontmatter_required": "preflight",
     "artifact_parse": "preflight",
     "artifact_top_level": "preflight",
-    "schema_version_compat": "preflight",
     "yaml_colon_space": "preflight",
     "yaml_hash_truncation": "preflight",
     "id_path_match": "preflight",

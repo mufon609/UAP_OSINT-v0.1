@@ -1,10 +1,8 @@
 ---
 id: people/ryan-graves
 type: person
-schema_version: 1
 status: active
 archetype: eyewitness
-created: 2026-04-20
 ---
 
 # Ryan Graves

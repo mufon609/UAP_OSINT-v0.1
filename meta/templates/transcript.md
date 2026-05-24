@@ -1,10 +1,8 @@
 ---
 id: transcripts/{{slug}}
 type: transcript
-schema_version: 1
 status: {{status}}
 kind: {{kind}}
-created: {{today}}
 <!-- SOURCE_MEDIUM: uncomment and set for non-hearing transcripts to record
      the underlying source format. Free-text; extensible. Common values:
      stenographic-pdf, youtube, podcast, broadcast, documentary, film,

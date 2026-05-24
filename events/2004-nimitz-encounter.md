@@ -1,10 +1,8 @@
 ---
 id: events/2004-nimitz-encounter
 type: event
-schema_version: 1
 status: documented
 kind: encounter
-created: 2026-04-19
 ---
 
 # 2004 USS Nimitz Encounter

@@ -1,9 +1,7 @@
 id: meta/research/james-lacatski
 type: research-artifact
-schema_version: 1
 target_node: people/james-lacatski
 status: active
-created: '2026-05-17'
 primary_sources:
 - path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   format: transcript

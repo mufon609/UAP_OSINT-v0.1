@@ -1,9 +1,7 @@
 id: meta/research/kit-green
 type: research-artifact
-schema_version: 1
 target_node: people/kit-green
 status: active
-created: '2026-05-16'
 primary_sources:
 - path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
   format: pdf

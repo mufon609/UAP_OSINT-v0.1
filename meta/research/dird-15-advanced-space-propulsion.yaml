@@ -1,9 +1,7 @@
 id: meta/research/dird-15-advanced-space-propulsion
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-15-advanced-space-propulsion
 status: active
-created: '2026-05-21'
 primary_sources:
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf

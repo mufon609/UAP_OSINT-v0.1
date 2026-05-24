@@ -1,9 +1,7 @@
 id: meta/research/jre-2194-elizondo-2024
 type: research-artifact
-schema_version: 1
 target_node: transcripts/jre-2194-elizondo-2024
 status: active
-created: '2026-05-23'
 primary_sources:
 - path: transcripts/jre-2194-elizondo-2024-downloaded.md
   format: transcript

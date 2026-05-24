@@ -1,11 +1,9 @@
 ---
 id: documents/dird-26-field-effects-biological-tissues
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-23
 ---
 
 # Anomalous Acute and Subacute Field Effects on Human Biological Tissues — DIA Defense Intelligence Reference Document, AAWSA Program, 11 March 2010

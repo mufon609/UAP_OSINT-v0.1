@@ -1,9 +1,7 @@
 id: meta/research/russell-targ
 type: research-artifact
-schema_version: 1
 target_node: people/russell-targ
 status: active
-created: '2026-05-14'
 
 primary_sources:
 - path: news/espresearch-russell-targ-snapshot.html

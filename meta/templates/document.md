@@ -1,11 +1,9 @@
 ---
 id: documents/{{slug}}
 type: document
-schema_version: 1
 status: {{status}}
 kind: {{kind}}
 doc_form: {{doc_form}}
-created: {{today}}
 <!-- ARCHIVAL_STATUS: REQUIRED when doc_form is `book`; optional for
      `article` and other non-gov-doc forms. Valid values: full-text-archived,
      excerpts-only, not-archived.

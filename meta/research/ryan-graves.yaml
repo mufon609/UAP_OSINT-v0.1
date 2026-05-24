@@ -1,9 +1,7 @@
 id: meta/research/ryan-graves
 type: research-artifact
-schema_version: 1
 target_node: people/ryan-graves
 status: active
-created: '2026-04-20'
 primary_sources:
 - path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   format: pdf

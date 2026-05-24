@@ -25,7 +25,6 @@ import argparse
 import re
 import sys
 from pathlib import Path
-from datetime import date
 
 try:
     import yaml  # noqa: F401  (kept for ImportError guidance)
@@ -53,7 +52,6 @@ DEFAULT_STATUS = {
     "transcript": "primary-source-confirmed",
     "media": "primary-source-confirmed",
     "location": "active",
-    "finding": "in-progress",
     "investigation": "open",
 }
 
@@ -186,7 +184,6 @@ def main():
         "slug": args.slug,
         "display_name": display_name,
         "topic_display_name": load_topic()["display_name"],
-        "today": date.today().isoformat(),
         "archetype": args.archetype or "",
         "kind": args.kind or "",
         "doc_form": args.form or "",

@@ -1,11 +1,9 @@
 ---
 id: documents/written-testimony-kirkpatrick-2023
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: testimony
-created: 2026-04-28
 ---
 
 # Sean Kirkpatrick — Written Testimony, SASC AARO Hearing, April 19, 2023

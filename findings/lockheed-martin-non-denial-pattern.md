@@ -1,10 +1,6 @@
 ---
 id: findings/lockheed-martin-non-denial-pattern
 type: finding
-schema_version: 1
-status: in-progress
-created: 2026-05-13
-updated: 2026-05-13
 ---
 
 # Lockheed Martin — Non-Denial Pattern

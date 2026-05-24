@@ -1,10 +1,8 @@
 ---
 id: organizations/ipmo
 type: organization
-schema_version: 1
 status: active
 kind: gov
-created: 2026-05-02
 ---
 
 # Influence and Perception Management Office

@@ -1,10 +1,6 @@
 ---
 id: findings/pax-river-scif-fiscal-triangulation
 type: finding
-schema_version: 1
-status: in-progress
-created: 2026-05-13
-updated: 2026-05-13
 ---
 
 # Pax River SCIF / SAP-F Fiscal-Data Triangulation

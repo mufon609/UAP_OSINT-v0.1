@@ -1,10 +1,8 @@
 ---
 id: organizations/ousd-is
 type: organization
-schema_version: 1
 status: active
 kind: gov
-created: 2026-04-30
 ---
 
 # OUSD(I&S) — Office of the Under Secretary of Defense for Intelligence and Security

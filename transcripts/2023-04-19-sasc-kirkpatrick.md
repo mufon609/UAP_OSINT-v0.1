@@ -1,10 +1,8 @@
 ---
 id: transcripts/2023-04-19-sasc-kirkpatrick
 type: transcript
-schema_version: 1
 status: primary-source-confirmed
 kind: hearing
-created: 2026-04-28
 ---
 
 # Sean Kirkpatrick — Oral Testimony, SASC AARO Hearing, April 19, 2023

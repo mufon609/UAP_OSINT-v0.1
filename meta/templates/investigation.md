@@ -1,11 +1,8 @@
 ---
 id: investigations/{{slug}}
 type: investigation
-schema_version: 1
 status: open
 question: '{{question}}'
-created: {{today}}
-updated: {{today}}
 ---
 
 # {{display_name}}

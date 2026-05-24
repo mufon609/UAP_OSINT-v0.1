@@ -1,10 +1,8 @@
 ---
 id: transcripts/lucistrust-rending-veils-ryder-2017
 type: transcript
-schema_version: 1
 status: primary-source-confirmed
 kind: other
-created: 2026-05-17
 source_medium: vimeo
 ---
 

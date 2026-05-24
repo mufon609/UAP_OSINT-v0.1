@@ -148,10 +148,10 @@ can read clean while artifact-level warnings stand.
 
 ### Findings (4)
 
-- `/findings/aaro-denial-action-mismatch` — in-progress
-- `/findings/lacatski-authorship-chain` — in-progress
-- `/findings/lockheed-martin-non-denial-pattern` — in-progress
-- `/findings/pax-river-scif-fiscal-triangulation` — in-progress
+- `/findings/aaro-denial-action-mismatch`
+- `/findings/lacatski-authorship-chain`
+- `/findings/lockheed-martin-non-denial-pattern`
+- `/findings/pax-river-scif-fiscal-triangulation`
 
 ### Investigations (1)
 

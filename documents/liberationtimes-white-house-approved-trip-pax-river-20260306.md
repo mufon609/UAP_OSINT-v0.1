@@ -1,11 +1,9 @@
 ---
 id: documents/liberationtimes-white-house-approved-trip-pax-river-20260306
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: non-gov-doc
 doc_form: article
-created: 2026-05-18
 ---
 
 # Liberation Times — White House-Approved Trip to Pax River (March 6, 2026)

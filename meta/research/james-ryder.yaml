@@ -1,9 +1,7 @@
 id: meta/research/james-ryder
 type: research-artifact
-schema_version: 1
 target_node: people/james-ryder
 status: active
-created: '2026-05-06'
 description: ''
 primary_sources:
   - path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt

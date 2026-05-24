@@ -1,10 +1,8 @@
 ---
 id: events/{{slug}}
 type: event
-schema_version: 1
 status: documented
 kind: {{kind}}
-created: {{today}}
 ---
 
 # {{display_name}}

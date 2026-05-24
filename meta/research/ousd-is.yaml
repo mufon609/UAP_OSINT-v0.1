@@ -1,9 +1,7 @@
 id: meta/research/ousd-is
 type: research-artifact
-schema_version: 1
 target_node: organizations/ousd-is
 status: active
-created: '2026-04-30'
 description: 'The Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) is a [`/organizations/dod`] component established by Section 901 of the Bob Stump National Defense Authorization Act for Fiscal Year 2003 (Public Law 107-314, enacted December 2, 2002) as the Office of the Under Secretary of Defense for Intelligence. The position is codified at 10 U.S.C. § 137, which provides that "There is an Under Secretary of Defense for Intelligence and Security, appointed from civilian life by the President, by and with the advice and consent of the Senate." Section 1621 of the National Defense Authorization Act for Fiscal Year 2020 (Public Law 116-92, enacted December 20, 2019) redesignated the Under Secretary of Defense for Intelligence as the Under Secretary of Defense for Intelligence and Security and added a new subsection establishing the protection of privacy and civil liberties as a top priority for the office.
 
 

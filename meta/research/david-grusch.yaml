@@ -1,9 +1,7 @@
 id: meta/research/david-grusch
 type: research-artifact
-schema_version: 1
 target_node: people/david-grusch
 status: active
-created: '2026-04-20'
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf

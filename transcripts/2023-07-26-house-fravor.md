@@ -1,10 +1,8 @@
 ---
 id: transcripts/2023-07-26-house-fravor
 type: transcript
-schema_version: 1
 status: primary-source-confirmed
 kind: hearing
-created: 2026-04-19
 ---
 
 # David Fravor — Oral Testimony, House Oversight UAP Hearing, July 26, 2023

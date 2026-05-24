@@ -1,11 +1,9 @@
 ---
 id: documents/hoyer-fy2011-milcon-southern-maryland-20100728
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: press-release
-created: 2026-05-18
 ---
 
 # Hoyer FY2011 MILCON Southern Maryland Press Release (July 28, 2010)

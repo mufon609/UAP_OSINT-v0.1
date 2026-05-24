@@ -1,9 +1,7 @@
 id: meta/research/lacatski-authorship-chain
 type: research-artifact
-schema_version: 1
 target_node: findings/lacatski-authorship-chain
 status: active
-created: '2026-05-13'
 
 description: 'SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, published at the House Oversight UAP hearing, identified Lockheed Martin Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) (now deceased) as having proposed a UAP material divestment plan to "SCIF-out Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) Facilities" — submitted to AAWSAP ([`/organizations/aawsap`]) leadership; as published the page does not name its author, but carries a "CLEARED For Open Publication Sep 06, 2023" DOPSR ([`/organizations/dopsr`]) clearance stamp. Luis Elizondo''s ([`/people/luis-elizondo`]) December 19, 2024 Question for the Record response to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) confirmed that a DOPSR document "dated September 6, 2023" "authorized the release of a statement by Dr. James Lacatski ([`/people/james-lacatski`]), the former Director of the Advanced Aerospace Weapon System Application Program", and included the Lacatski statement in the Q1 response as Attachment 2. The chain confirms Lacatski as the author of the DOPSR-cleared SD004 page-1 statement that identified Dr. James Ryder at Lockheed Martin ([`/organizations/lockheed-martin`]).
 

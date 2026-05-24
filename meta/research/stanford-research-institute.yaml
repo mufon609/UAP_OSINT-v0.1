@@ -1,9 +1,7 @@
 id: meta/research/stanford-research-institute
 type: research-artifact
-schema_version: 1
 target_node: organizations/stanford-research-institute
 status: active
-created: '2026-05-15'
 primary_sources:
 - path: news/sri-international-about-20260515.html
   format: html

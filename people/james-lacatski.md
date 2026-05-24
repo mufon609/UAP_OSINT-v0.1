@@ -1,10 +1,8 @@
 ---
 id: people/james-lacatski
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-05-17
 ---
 
 # Dr. James T. Lacatski, D.Eng.

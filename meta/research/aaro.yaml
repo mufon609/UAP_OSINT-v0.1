@@ -1,9 +1,7 @@
 id: meta/research/aaro
 type: research-artifact
-schema_version: 1
 target_node: organizations/aaro
 status: active
-created: '2026-04-20'
 description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) is a [`/organizations/dod`] office established on July 15, 2022 by Deputy Secretary of Defense Kathleen Hicks, following the enactment of Section 1683 of the National Defense Authorization Act for Fiscal Year 2022. Per the Hicks establishment memorandum ([`/documents/hicks-aaro-establishment-memo-2022`]), AARO was established "to carry out the duties that were to be fulfi lled by the AOIMSG" [sic — source PDF text reads "fulfi lled"]; upon AARO''s establishment, the Secretary of the [`/organizations/us-navy`] was directed to disestablish the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]).
 
 

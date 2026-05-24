@@ -1,9 +1,7 @@
 id: meta/research/ipmo
 type: research-artifact
-schema_version: 1
 target_node: organizations/ipmo
 status: active
-created: '2026-05-02'
 description: 'The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting''s ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)), who is in turn supported by the Director of the IPMO for all influence and perception management related matters.
 
 

@@ -48,7 +48,7 @@ is untouched (the skills, subagents, and `settings.json` are toolkit).
 
 ## Step 3 — Regenerate `meta/topic/overview.md`
 
-Required frontmatter: `id`, `type: meta`, `schema_version: 1`, `created`,
+Required frontmatter: `id`, `type: meta`,
 `topic: <identifier>`, `display_name: <Display Name>`. Both `topic` and
 `display_name` are validated as required by
 `scripts/checks/governance_files.py`; both feed `lib._common.load_topic()`,

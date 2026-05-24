@@ -1,10 +1,8 @@
 ---
 id: organizations/ttsa
 type: organization
-schema_version: 1
 status: active
 kind: private
-created: 2026-04-22
 ---
 
 # TTSA — To The Stars Academy of Arts and Science

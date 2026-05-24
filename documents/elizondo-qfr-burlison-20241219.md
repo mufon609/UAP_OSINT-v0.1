@@ -1,11 +1,9 @@
 ---
 id: documents/elizondo-qfr-burlison-20241219
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: testimony
-created: 2026-05-18
 ---
 
 # Elizondo Question for the Record Response to Burlison (December 19, 2024)

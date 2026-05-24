@@ -1,8 +1,6 @@
 ---
 id: meta/sources-access
 type: meta
-schema_version: 1
-created: 2026-04-17
 ---
 
 # Source Access Reference

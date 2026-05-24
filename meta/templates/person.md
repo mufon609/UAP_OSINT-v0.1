@@ -1,10 +1,8 @@
 ---
 id: people/{{slug}}
 type: person
-schema_version: 1
 status: active
 archetype: {{archetype}}
-created: {{today}}
 ---
 
 # {{display_name}}

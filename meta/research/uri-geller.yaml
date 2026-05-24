@@ -1,9 +1,7 @@
 id: meta/research/uri-geller
 type: research-artifact
-schema_version: 1
 target_node: people/uri-geller
 status: active
-created: '2026-05-16'
 primary_sources:
 - path: news/urigeller-com-biography-20260516.html
   format: html

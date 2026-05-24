@@ -717,33 +717,6 @@ def supported_types():
     return content_node_types()
 
 
-def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):
-    """Return list of ``(level, message)`` tuples for schema_version
-    compatibility violations. Caller wraps each tuple in its Issue
-    class. Empty list when the value is valid, or when it's None
-    (absence is the caller's required-field check, not this one).
-
-    ``prefix`` lets template-shaped check sites prepend context (e.g.,
-    "Template ") to error messages without forking the helper.
-    """
-    if sv is None:
-        return []
-    if not isinstance(sv, int) or isinstance(sv, bool):
-        return [(
-            "error",
-            f"{prefix}schema_version must be an integer; got {sv!r} "
-            f"({type(sv).__name__})",
-        )]
-    if sv not in compatible_with:
-        return [(
-            "error",
-            f"{prefix}schema_version {sv} not in compatible_with "
-            f"{compatible_with} (current schema version is {current_version}). "
-            f"Consult the migration docs that ship with the schema_version bump.",
-        )]
-    return []
-
-
 def extract_h2_sections(text):
     """Return the list of H2 heading titles (the text after ``## ``) in
     document order. Trailing whitespace stripped per heading. Used as

@@ -1,9 +1,7 @@
 id: meta/research/cia-sri-geller-aug1973
 type: research-artifact
-schema_version: 1
 target_node: documents/cia-sri-geller-aug1973
 status: active
-created: '2026-05-16'
 primary_sources:
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf

@@ -1,10 +1,8 @@
 ---
 id: people/uri-geller
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-05-16
 ---
 
 # Uri Geller

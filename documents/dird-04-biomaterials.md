@@ -1,11 +1,9 @@
 ---
 id: documents/dird-04-biomaterials
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-24
 ---
 
 # Biomaterials — DIA Defense Intelligence Reference Document, AAWSA Program, 7 January 2010

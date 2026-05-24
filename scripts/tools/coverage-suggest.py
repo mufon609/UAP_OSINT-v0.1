@@ -196,8 +196,7 @@ def collect_artifact_text(data):
     # participants / witnesses_testimony etc. — without enumerating
     # each shape. We just walk dict values recursively.
     handled_keys = {
-        "id", "type", "schema_version", "target_node", "status",
-        "created", "updated", "primary_sources",
+        "id", "type", "target_node", "status", "primary_sources",
         "quotes", "naming_quirks", "rumors",
         "description", "background", "top_relevance",
         "credibility_notes", "pattern_statement", "document_intrinsic",

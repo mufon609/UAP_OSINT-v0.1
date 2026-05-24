@@ -23,7 +23,6 @@ the build process fills it in. Contributors should run
 
 import argparse
 import sys
-from datetime import date
 from pathlib import Path
 
 try:
@@ -225,14 +224,11 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     from ``schema-research-artifact.yaml::conditional_keys`` via ``evaluate_required_when``
     (the same helper the validators use).
     """
-    today = date.today().isoformat()
     artifact = {
         "id": f"meta/research/{slug}",
         "type": "research-artifact",
-        "schema_version": 1,
         "target_node": f"{TYPE_DIRS[node_type]}/{slug}",
         "status": "active",
-        "created": today,
         "primary_sources": build_primary_sources_list(source_paths, manifest),
         "document_intrinsic": {},
         "context_extrinsic": {},

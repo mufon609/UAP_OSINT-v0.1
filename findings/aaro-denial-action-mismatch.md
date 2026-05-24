@@ -1,10 +1,6 @@
 ---
 id: findings/aaro-denial-action-mismatch
 type: finding
-schema_version: 1
-status: in-progress
-created: 2026-05-13
-updated: 2026-05-13
 ---
 
 # AARO HRR Vol I Denial — Action-Scope Mismatch

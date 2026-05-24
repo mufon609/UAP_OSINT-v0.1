@@ -1,10 +1,8 @@
 ---
 id: organizations/uaptf
 type: organization
-schema_version: 1
 status: active
 kind: gov
-created: 2026-04-20
 ---
 
 # UAPTF — Unidentified Aerial Phenomena Task Force

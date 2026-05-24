@@ -1,10 +1,8 @@
 ---
 id: media/{{slug}}
 type: media
-schema_version: 1
 status: {{status}}
 kind: {{kind}}
-created: {{today}}
 <!-- DERIVATION: uncomment and set if this media is an edited, cropped,
      re-encoded, or metadata-scrubbed derivative of a parent media node.
      When set, the Media Versioning section below is required.

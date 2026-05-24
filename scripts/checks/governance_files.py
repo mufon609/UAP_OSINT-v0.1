@@ -1,24 +1,23 @@
 """governance-frontmatter check — global BaseContext check.
 
 Validates every ``.md`` file under ``meta/`` carries the required
-frontmatter discipline: id / type / schema_version / created;
-schema_version in ``schema.compatible_with``; id matches file path.
+frontmatter discipline: id / type; id matches file path.
 
 Templates (under ``meta/templates/``) route through a placeholder-aware
-regex path because their ``{{slug}}`` / ``{{today}}`` values conflict
-with YAML's flow-mapping syntax and can't be YAML-parsed cleanly.
-Other governance docs use standard YAML frontmatter parsing.
+regex path because their ``{{slug}}`` value conflicts with YAML's
+flow-mapping syntax and can't be YAML-parsed cleanly. Other governance
+docs use standard YAML frontmatter parsing.
 
 Template drift is the high-blast-radius case the check guards: a
-drifted schema_version in ``meta/templates/{type}.md`` propagates to
-every node scaffolded by ``new.py`` afterward, and would otherwise be
+drifted id / type in ``meta/templates/{type}.md`` propagates to every
+node scaffolded by ``new.py`` afterward, and would otherwise be
 undetectable until one of those downstream nodes was validated.
 
 Skips ``meta/topic/working-notes/`` per the working-notes README —
 those files are transient contributor scratch, deleted on integration.
 
-Consumes ``BaseContext.schema``; performs its own filesystem walk
-(governance walk is global, not driven by content-node iteration).
+Performs its own filesystem walk (governance walk is global, not driven
+by content-node iteration).
 """
 
 import re
@@ -28,13 +27,12 @@ from checks import Issue
 from lib._common import (
     content_type_dirs,
     parse_frontmatter,
-    schema_version_compat_messages,
 )
 
 
 CHECK_NAME = "governance_files"
 
-_REQUIRED_META_FIELDS = ("id", "type", "schema_version", "created")
+_REQUIRED_META_FIELDS = ("id", "type")
 
 # meta/topic/working-notes/ is the holding pen for in-progress contributor
 # synthesis (handoff drafts, audit scratch, investigation notes). Per
@@ -62,11 +60,11 @@ def _iter_governance_files():
         yield p
 
 
-def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
+def _check_template_frontmatter(path, rel, text):
     """Template-specific frontmatter check. YAML can't cleanly parse
-    template placeholders like ``{{slug}}`` and ``{{today}}`` — they
-    conflict with YAML's flow-mapping syntax (``{...}``). Use line-based
-    regex checks against the raw frontmatter block instead."""
+    template placeholders like ``{{slug}}`` — they conflict with YAML's
+    flow-mapping syntax (``{...}``). Use line-based regex checks against
+    the raw frontmatter block instead."""
     if not text.startswith("---"):
         yield Issue(rel, "error",
             "Template missing frontmatter opener '---'",
@@ -112,39 +110,15 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
             f"filename stem {stem!r}",
             check_name=CHECK_NAME)
 
-    # schema_version: must be integer in compatible_with. Templates
-    # hard-code a version (not a placeholder) because scaffolded nodes
-    # inherit the value verbatim.
-    sv_match = re.search(r"^schema_version:\s*(\d+)\s*$", block, re.MULTILINE)
-    if not sv_match:
-        yield Issue(rel, "error",
-            "Template missing required 'schema_version:' line "
-            "(must be an integer, not a placeholder)",
-            check_name=CHECK_NAME)
-    else:
-        sv = int(sv_match.group(1))
-        current = schema_block["version"]
-        for level, msg in schema_version_compat_messages(
-            sv, compatible_with, current, prefix="Template ",
-        ):
-            yield Issue(rel, level, msg, check_name=CHECK_NAME)
 
-    # created: required; value is always `{{today}}` placeholder, not
-    # validated as a date (the scaffolder substitutes).
-    if not re.search(r"^created:\s*\S", block, re.MULTILINE):
-        yield Issue(rel, "error",
-            "Template missing required 'created:' line in frontmatter",
-            check_name=CHECK_NAME)
-
-
-def _check_governance_doc_frontmatter(rel, text, compatible_with, schema_block):
+def _check_governance_doc_frontmatter(rel, text):
     """Standard governance-doc frontmatter check via YAML parse."""
     fm, _ = parse_frontmatter(text)
 
     if fm is None:
         yield Issue(rel, "error",
             "Missing or malformed YAML frontmatter (meta/ files require "
-            "id / type / schema_version / created)",
+            "id / type)",
             check_name=CHECK_NAME)
         return
 
@@ -156,13 +130,6 @@ def _check_governance_doc_frontmatter(rel, text, compatible_with, schema_block):
                 f"(meta/ files require "
                 f"{' / '.join(_REQUIRED_META_FIELDS)})",
                 check_name=CHECK_NAME)
-
-    # schema_version value check
-    current = schema_block["version"]
-    for level, msg in schema_version_compat_messages(
-        fm.get("schema_version"), compatible_with, current,
-    ):
-        yield Issue(rel, level, msg, check_name=CHECK_NAME)
 
     # id matches path
     if "id" in fm:
@@ -197,13 +164,6 @@ def check(ctx):
     Also verifies meta/topic/overview.md exists — every toolkit
     instance must declare its topic scope there (see
     the /fork-init skill)."""
-    # Direct schema-config access; KeyError surfaces if the schema's
-    # `schema:` block or its required nested keys are missing. Schema
-    # is foundational toolkit contract — silent fallbacks would mask
-    # schema drift, not a degrade-gracefully case.
-    schema_block = ctx.schema["schema"]
-    compatible_with = schema_block["compatible_with"]
-
     overview_path = _META_DIR / "topic" / "overview.md"
     if not overview_path.exists():
         yield Issue(
@@ -222,8 +182,6 @@ def check(ctx):
         text = path.read_text(encoding="utf-8", errors="replace")
 
         if is_template:
-            yield from _check_template_frontmatter(
-                path, rel, text, compatible_with, schema_block)
+            yield from _check_template_frontmatter(path, rel, text)
         else:
-            yield from _check_governance_doc_frontmatter(
-                rel, text, compatible_with, schema_block)
+            yield from _check_governance_doc_frontmatter(rel, text)

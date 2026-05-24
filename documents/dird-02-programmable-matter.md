@@ -1,11 +1,9 @@
 ---
 id: documents/dird-02-programmable-matter
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-23
 ---
 
 # Aerospace Applications of Programmable Matter — DIA Defense Intelligence Reference Document, AAWSA Program, 14 December 2009

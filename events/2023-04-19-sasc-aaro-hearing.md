@@ -1,10 +1,8 @@
 ---
 id: events/2023-04-19-sasc-aaro-hearing
 type: event
-schema_version: 1
 status: documented
 kind: hearing
-created: 2026-04-28
 ---
 
 # April 19, 2023 SASC Subcommittee on Emerging Threats AARO Hearing

@@ -1,10 +1,6 @@
 ---
 id: findings/{{slug}}
 type: finding
-schema_version: 1
-status: in-progress
-created: {{today}}
-updated: {{today}}
 ---
 
 # {{display_name}}

@@ -1,9 +1,7 @@
 id: meta/research/hal-puthoff
 type: research-artifact
-schema_version: 1
 target_node: people/hal-puthoff
 status: active
-created: '2026-05-15'
 
 primary_sources:
 - path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf

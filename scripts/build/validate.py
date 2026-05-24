@@ -34,10 +34,9 @@ Checks:
   invocation, before the per-node checks.
 
   Governance-frontmatter check — every .md file under meta/ must carry
-  id / type / schema_version / created; schema_version must be in
-  schema.compatible_with; id must match file path. Templates routed
-  through a placeholder-aware regex path because their `{{slug}}` /
-  `{{today}}` values can't be YAML-parsed cleanly.
+  id / type; id must match file path. Templates routed through a
+  placeholder-aware regex path because their `{{slug}}` value can't be
+  YAML-parsed cleanly.
 
   Conditionally-required check — schema-driven enforcement of
   `types.{T}.conditionally_required` entries. Condition grammar:
@@ -112,7 +111,6 @@ from checks import manifest_extraction_type as ck_manifest_extraction_type
 from checks import manifest_parse as ck_manifest_parse
 from checks import manifest_value_enums as ck_manifest_value_enums
 from checks import required_sections as ck_required_sections
-from checks import schema_version_compat as ck_schema_version_compat
 from checks import section_rules as ck_section_rules
 from checks import status_archetype_kind as ck_status_archetype_kind
 from checks import table_cell_word_budget as ck_table_cell_word_budget
@@ -127,7 +125,6 @@ from checks import table_cell_word_budget as ck_table_cell_word_budget
 # section_text), but each check is otherwise independent.
 _NODE_CHECKS = [
     ck_frontmatter_required,
-    ck_schema_version_compat,
     ck_id_path_match,
     ck_status_archetype_kind,
     ck_doc_form_archival_status,

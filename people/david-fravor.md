@@ -1,10 +1,8 @@
 ---
 id: people/david-fravor
 type: person
-schema_version: 1
 status: active
 archetype: eyewitness
-created: 2026-04-19
 ---
 
 # David Fravor

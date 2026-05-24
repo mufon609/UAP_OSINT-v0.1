@@ -1,9 +1,7 @@
 id: meta/research/dird-02-programmable-matter
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-02-programmable-matter
 status: active
-created: '2026-05-23'
 primary_sources:
 - path: government/dird-02-programmable-matter-20091214.pdf
   format: pdf

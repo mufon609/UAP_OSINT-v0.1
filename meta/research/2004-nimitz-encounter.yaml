@@ -1,9 +1,7 @@
 id: meta/research/2004-nimitz-encounter
 type: research-artifact
-schema_version: 1
 target_node: events/2004-nimitz-encounter
 status: active
-created: '2026-04-19'
 description: 'In November 2004, Commander [`/people/david-fravor`] — Commanding Officer of Strike Fighter Squadron Forty-One, the "Black Aces" ([`/organizations/vfa-41`]) — was scheduled to lead a 2 V 2 Air to Air training exercise from [`/organizations/uss-nimitz`] (CVN-68). His flight of 2 F/A-18Fs was the Blue Air, controlled by [`/organizations/uss-princeton`] (CG-59). The Red Air was flown by Marine squadron VMFA-232 ([`/organizations/vmfa-232`]). [`/organizations/vfa-41`] was at the beginning of a workup cycle that would prepare the squadron for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq; the squadron was attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed onboard [`/organizations/uss-nimitz`].
 
 

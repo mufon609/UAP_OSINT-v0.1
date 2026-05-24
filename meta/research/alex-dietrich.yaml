@@ -1,9 +1,7 @@
 id: meta/research/alex-dietrich
 type: research-artifact
-schema_version: 1
 target_node: people/alex-dietrich
 status: active
-created: '2026-04-21'
 description: ''
 primary_sources:
 - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf

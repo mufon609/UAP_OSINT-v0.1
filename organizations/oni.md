@@ -1,10 +1,8 @@
 ---
 id: organizations/oni
 type: organization
-schema_version: 1
 status: active
 kind: gov
-created: 2026-05-05
 ---
 
 # ONI — Office of Naval Intelligence

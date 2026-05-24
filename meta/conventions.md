@@ -1,8 +1,6 @@
 ---
 id: meta/conventions
 type: meta
-schema_version: 1
-created: 2026-04-17
 ---
 
 # Conventions
@@ -1697,10 +1695,7 @@ tier that matches who invokes them and what role they play:
   same `extract_source_text` and tokenizing through the same
   `STOPWORDS` set — is mechanical rather than comment-discipline-
   based. Also carries the markdown helpers (`parse_frontmatter`,
-  `extract_h2_sections`, `extract_section`) and the
-  `schema_version_compat_messages` helper that consolidates the
-  schema-version compatibility check across content nodes, research
-  artifacts, and governance-doc / template frontmatter.
+  `extract_h2_sections`, `extract_section`).
 - **`/scripts/scratch/`**: contributor landing zone for in-progress
   exploratory queries against the corpus — one-off scripts that
   answer questions like "which manifest entries lack X," "count

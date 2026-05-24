@@ -4,19 +4,6 @@
 # and structural rules. Read by scripts/build/validate.py and scripts/build/new.py.
 # Human-readable rationale lives in meta/conventions.md.
 
-schema:
-  version: 1
-  revision_date: 2026-04-17
-  compatible_with: [1]
-  # compatible_with lists which file-level schema_version values validate
-  # cleanly against this spec. Expanded during migration windows; shrunk
-  # when a version is retired.
-
-# Every schema-governed file carries schema_version in its frontmatter
-# (nodes, templates, research artifacts, governance docs under meta/).
-# Version is checked at validation time against `schema.compatible_with`
-# above. Mismatches surface as errors.
-
 # ---------------------------------------------------------------------------
 # Cross-cutting vocabularies
 # ---------------------------------------------------------------------------
@@ -83,7 +70,7 @@ types:
       per_entry:
         - [vouching_chain, attestation]
     frontmatter:
-      required: [id, type, schema_version, status, archetype, created]
+      required: [id, type, status, archetype]
       optional: [authored_works]  # list of /documents/... paths (doc_form: book)
     archetypes:
       eyewitness:
@@ -184,7 +171,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, kind, created]
+      required: [id, type, status, kind]
     kinds:
       gov:
         description: "Government — federal department, agency, program office, federal lab, congressional body, military service, military unit"
@@ -238,7 +225,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, kind, doc_form, created]
+      required: [id, type, status, kind, doc_form]
       optional: [archival_status]
       # archival_status: applies to non-gov-doc doc_forms where the full
       #   text may not be archived locally. Required when doc_form is
@@ -312,7 +299,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, kind, created]
+      required: [id, type, status, kind]
     kinds:
       hearing:
         description: "Formal proceeding — congressional hearing, deposition"
@@ -347,7 +334,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, kind, created]
+      required: [id, type, status, kind]
       optional: [source_medium, derived_from]
       # source_medium: free-text metadata for the underlying source format
       #   (e.g., stenographic-pdf, youtube, podcast, broadcast, documentary,
@@ -407,7 +394,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, kind, created]
+      required: [id, type, status, kind]
       optional: [derivation_of]
       # derivation_of: path to a parent media node when this media is an
       #   edited, cropped, re-encoded, or metadata-scrubbed derivative
@@ -454,7 +441,7 @@ types:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, created]
+      required: [id, type, status]
     required_sections:
       - Overview
       - Description
@@ -494,13 +481,12 @@ types:
   # architecture" for the full bright line.
   finding:
     path: findings
-    status_values: [documented, in-progress, superseded]
     description_required: true
     prose_drift_fields:
       top_level: [description]
       per_entry: []
     frontmatter:
-      required: [id, type, schema_version, status, created, updated]
+      required: [id, type]
       optional: [superseded_by]
       # superseded_by: path of newer finding when status == superseded.
     required_sections:
@@ -549,7 +535,7 @@ types:
     path: investigations
     status_values: [open, paused, closed]
     frontmatter:
-      required: [id, type, schema_version, status, question, created, updated]
+      required: [id, type, status, question]
       # question: free-text frontmatter — the open question this
       # investigation pursues. Grep-able for investigation indices;
       # mirrored as the rendered ## Question section body.
@@ -595,7 +581,7 @@ types:
   meta:
     description: "Governing documents (conventions.md, topic/research-queue.md, toolkit-notes) — no enforced node structure"
     frontmatter:
-      required: [id, type, schema_version, created]
+      required: [id, type]
 
   # --- RESEARCH-ARTIFACT --------------------------------------------------
   # Structured-data layer backing every content node

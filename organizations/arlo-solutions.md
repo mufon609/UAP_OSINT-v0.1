@@ -1,10 +1,8 @@
 ---
 id: organizations/arlo-solutions
 type: organization
-schema_version: 1
 status: active
 kind: gov-contractor
-created: 2026-05-03
 ---
 
 # Arlo Solutions

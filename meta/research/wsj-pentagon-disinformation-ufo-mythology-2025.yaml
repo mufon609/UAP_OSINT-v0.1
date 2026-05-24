@@ -1,9 +1,7 @@
 id: meta/research/wsj-pentagon-disinformation-ufo-mythology-2025
 type: research-artifact
-schema_version: 1
 target_node: documents/wsj-pentagon-disinformation-ufo-mythology-2025
 status: active
-created: '2026-05-21'
 primary_sources:
 - path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
   format: html

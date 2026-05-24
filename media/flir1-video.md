@@ -1,10 +1,8 @@
 ---
 id: media/flir1-video
 type: media
-schema_version: 1
 status: primary-source-confirmed
 kind: video
-created: 2026-04-20
 ---
 
 # 1 - FLIR — Navy Targeting-Pod Video (November 2004)

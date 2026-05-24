@@ -1,8 +1,6 @@
 ---
 id: meta/README
 type: meta
-schema_version: 1
-created: 2026-05-05
 ---
 
 # /meta/

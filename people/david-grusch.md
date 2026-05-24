@@ -1,10 +1,8 @@
 ---
 id: people/david-grusch
 type: person
-schema_version: 1
 status: active
 archetype: whistleblower
-created: 2026-04-20
 ---
 
 # David Grusch

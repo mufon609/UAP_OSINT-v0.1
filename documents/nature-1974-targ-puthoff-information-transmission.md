@@ -1,11 +1,9 @@
 ---
 id: documents/nature-1974-targ-puthoff-information-transmission
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: non-gov-doc
 doc_form: article
-created: 2026-05-16
 ---
 
 # INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING — Puthoff & Targ, Nature 251, 602-607 (October 1974); CIA mirror CIA-RDP96-00787R000100220001-8

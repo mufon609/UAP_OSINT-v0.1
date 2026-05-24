@@ -1,10 +1,8 @@
 ---
 id: people/james-holly
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-05-20
 ---
 
 # James Holly

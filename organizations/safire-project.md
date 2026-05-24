@@ -1,10 +1,8 @@
 ---
 id: organizations/safire-project
 type: organization
-schema_version: 1
 status: active
 kind: private
-created: 2026-05-07
 ---
 
 # SAFIRE Project

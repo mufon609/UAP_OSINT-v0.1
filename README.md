@@ -131,9 +131,9 @@ scripts/
                             them via explicit step lists
   lib/                      shared cross-script helpers (source extraction,
                             HTML cleanup, quote normalization, frontmatter
-                            parse, schema_version compat) — imported by
-                            both the orchestrators and the per-check
-                            modules; keeps mechanical lockstep across them
+                            parse) — imported by both the orchestrators and
+                            the per-check modules; keeps mechanical lockstep
+                            across them
 
 scripts/tests/
   pre-commit.sh             canonical all-gates health check (chains 11 gates:

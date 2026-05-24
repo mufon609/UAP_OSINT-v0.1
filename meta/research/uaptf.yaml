@@ -1,9 +1,7 @@
 id: meta/research/uaptf
 type: research-artifact
-schema_version: 1
 target_node: organizations/uaptf
 status: active
-created: '2026-04-20'
 description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter states that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
 
 

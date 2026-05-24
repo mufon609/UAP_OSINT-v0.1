@@ -1,9 +1,7 @@
 ---
 id: locations/skinwalker-ranch
 type: location
-schema_version: 1
 status: active
-created: 2026-04-20
 ---
 
 # Skinwalker Ranch

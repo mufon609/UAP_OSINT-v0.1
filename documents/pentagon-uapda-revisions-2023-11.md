@@ -1,11 +1,9 @@
 ---
 id: documents/pentagon-uapda-revisions-2023-11
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: memo
-created: 2026-05-02
 ---
 
 # Pentagon UAPDA Revisions — November 2023 OUSD(I&S) Markup of S. 2226 Division G

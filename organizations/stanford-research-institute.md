@@ -1,10 +1,8 @@
 ---
 id: organizations/stanford-research-institute
 type: organization
-schema_version: 1
 status: active
 kind: private
-created: 2026-05-15
 ---
 
 # SRI International

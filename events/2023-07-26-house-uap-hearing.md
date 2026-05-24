@@ -1,10 +1,8 @@
 ---
 id: events/2023-07-26-house-uap-hearing
 type: event
-schema_version: 1
 status: documented
 kind: hearing
-created: 2026-04-20
 ---
 
 # July 26, 2023 House Oversight UAP Hearing

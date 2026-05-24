@@ -1,11 +1,9 @@
 ---
 id: documents/wsj-pentagon-disinformation-ufo-mythology-2025
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: non-gov-doc
 doc_form: article
-created: 2026-05-21
 ---
 
 # The Wall Street Journal — 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Joel Schectman & Aruna Viswanatha, June 6, 2025)

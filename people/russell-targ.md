@@ -1,10 +1,8 @@
 ---
 id: people/russell-targ
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-05-14
 ---
 
 # Russell Targ

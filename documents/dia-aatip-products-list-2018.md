@@ -1,11 +1,9 @@
 ---
 id: documents/dia-aatip-products-list-2018
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: letter
-created: 2026-05-21
 ---
 
 # DIA Congressional Relations Division letter U-18-0001/OCC1 to SASC — list of all AATIP products produced under the contract (List of Attachments), 9 January 2018

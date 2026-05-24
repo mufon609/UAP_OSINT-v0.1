@@ -1,9 +1,7 @@
 id: meta/research/oni
 type: research-artifact
-schema_version: 1
 target_node: organizations/oni
 status: active
-created: '2026-05-05'
 description: 'The Office of Naval Intelligence (ONI) appears in the UAP record primarily through its role with the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]). The Naval Intelligence Activity ([`/organizations/nia`]) UAP Security Classification Guide, issued 16 April 2020 under the signature of NIA Director Mr. Scott Bray ([`/people/scott-bray`]), names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as the subject of its classification authority. Senate Report 116-233 (June 17, 2020), accompanying the Intelligence Authorization Act for Fiscal Year 2021, supports "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" and directs the Director of National Intelligence ([`/organizations/odni`]) to submit an intelligence assessment of the threat posed by UAP, including "a detailed analysis of UAP data and intelligence reporting collected or held by the Office of Naval Intelligence". The 25 June 2021 ODNI Preliminary Assessment ([`/documents/odni-preliminary-assessment-2021`]) was submitted in response to that direction; ONI is listed as "Navy/ONI" among the agencies that provided input to the report, with USD(I&S) ([`/organizations/ousd-is`]), DIA, FBI, NRO, NGA, NSA, and other Intelligence Community input.
 
 

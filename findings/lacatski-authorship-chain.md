@@ -1,10 +1,6 @@
 ---
 id: findings/lacatski-authorship-chain
 type: finding
-schema_version: 1
-status: in-progress
-created: 2026-05-13
-updated: 2026-05-13
 ---
 
 # Lacatski Authorship Chain — SD004 Page-1 Statement

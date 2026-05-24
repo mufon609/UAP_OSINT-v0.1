@@ -1,9 +1,7 @@
 id: meta/research/dird-26-field-effects-biological-tissues
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-26-field-effects-biological-tissues
 status: active
-created: '2026-05-23'
 primary_sources:
 - path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   format: pdf

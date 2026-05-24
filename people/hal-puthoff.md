@@ -1,10 +1,8 @@
 ---
 id: people/hal-puthoff
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-05-15
 ---
 
 # Harold E. Puthoff

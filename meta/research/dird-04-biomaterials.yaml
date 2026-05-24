@@ -1,9 +1,7 @@
 id: meta/research/dird-04-biomaterials
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-04-biomaterials
 status: active
-created: '2026-05-24'
 primary_sources:
 - path: government/dird-04-biomaterials-20100107.pdf
   format: pdf

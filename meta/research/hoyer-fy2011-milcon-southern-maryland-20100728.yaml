@@ -1,9 +1,7 @@
 id: meta/research/hoyer-fy2011-milcon-southern-maryland-20100728
 type: research-artifact
-schema_version: 1
 target_node: documents/hoyer-fy2011-milcon-southern-maryland-20100728
 status: active
-created: '2026-05-18'
 
 primary_sources:
 - path: government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html

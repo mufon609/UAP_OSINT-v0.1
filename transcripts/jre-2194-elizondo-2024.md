@@ -1,10 +1,8 @@
 ---
 id: transcripts/jre-2194-elizondo-2024
 type: transcript
-schema_version: 1
 status: primary-source-confirmed
 kind: other
-created: 2026-05-23
 source_medium: youtube
 ---
 

@@ -1,11 +1,9 @@
 ---
 id: documents/dird-24-quantum-vacuum-energy-extraction
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-21
 ---
 
 # Concepts for Extracting Energy from the Quantum Vacuum — DIA Defense Intelligence Reference Document, AAWSA Program, 6 April 2010

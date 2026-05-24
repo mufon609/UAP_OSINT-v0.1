@@ -1,10 +1,8 @@
 ---
 id: people/ronald-moultrie
 type: person
-schema_version: 1
 status: active
 archetype: institutional-actor
-created: 2026-04-29
 ---
 
 # Ronald Moultrie

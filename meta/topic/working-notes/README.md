@@ -1,8 +1,6 @@
 ---
 id: meta/topic/working-notes/README
 type: meta
-schema_version: 1
-created: 2026-04-28
 ---
 
 # Working Notes
@@ -48,9 +46,7 @@ that will eventually carry them are pending.
 ---
 id: meta/topic/working-notes/{slug}
 type: meta
-schema_version: 1
 status: working-notes
-created: YYYY-MM-DD
 integration_targets:
   - /people/{slug}
   - /organizations/{slug}

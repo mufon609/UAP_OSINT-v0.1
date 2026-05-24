@@ -1,11 +1,9 @@
 ---
 id: documents/dird-03-pulsed-hpm
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-21
 ---
 
 # Pulsed High-Power Microwave Source Technology — DIA Defense Intelligence Reference Document, AAWSA Program, 28 January 2010

@@ -115,16 +115,6 @@ If you're doing anything related to this instance's topic, read
 
 ---
 
-## Schema versioning
-
-Every schema-governed file declares `schema_version` in its frontmatter.
-The current schema version is declared at the top of `meta/schema.yaml`
-under the `schema:` block. If you encounter a file whose `schema_version`
-is not listed in `schema.compatible_with`, consult the migration docs
-that ship with the schema_version bump.
-
----
-
 ## If you're uncertain about anything
 
 - Default to reading `meta/conventions.md` for the epistemic standard.

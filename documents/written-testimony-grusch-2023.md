@@ -1,11 +1,9 @@
 ---
 id: documents/written-testimony-grusch-2023
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: testimony
-created: 2026-04-20
 ---
 
 # David Grusch — Written Testimony, House Oversight, July 26, 2023

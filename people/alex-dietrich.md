@@ -1,10 +1,8 @@
 ---
 id: people/alex-dietrich
 type: person
-schema_version: 1
 status: active
 archetype: eyewitness
-created: 2026-04-21
 ---
 
 # Alex Dietrich

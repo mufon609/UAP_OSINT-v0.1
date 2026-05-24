@@ -30,10 +30,8 @@ confidence_values: [high, medium, low]
 required_keys:
   - id                    # meta/research/{slug}; must match file path
   - type                  # literal: research-artifact
-  - schema_version        # validated against schema.compatible_with
   - target_node           # {type}/{slug} of the node this artifact backs
   - status                # active | archived
-  - created               # YYYY-MM-DD
   # ``description`` is type-conditional and lives outside this universal
   # required_keys list. REQUIRED on every content type whose schema
   # block in ``meta/schema.yaml`` declares ``description_required: true``
@@ -1072,7 +1070,6 @@ naming_quirk_entry:
 invariants:
   # Frontmatter / top-level
   - "target_node field points to a file that exists (type/slug.md)"
-  - "schema_version value appears in schema.compatible_with"
 
   # Entry-level
   - "every entry id is unique within its section"

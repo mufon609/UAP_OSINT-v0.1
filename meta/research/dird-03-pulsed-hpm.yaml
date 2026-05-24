@@ -1,9 +1,7 @@
 id: meta/research/dird-03-pulsed-hpm
 type: research-artifact
-schema_version: 1
 target_node: documents/dird-03-pulsed-hpm
 status: active
-created: '2026-05-21'
 primary_sources:
 - path: government/dird-03-pulsed-hpm-20100128.pdf
   format: pdf

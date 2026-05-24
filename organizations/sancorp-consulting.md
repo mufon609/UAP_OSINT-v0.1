@@ -1,10 +1,8 @@
 ---
 id: organizations/sancorp-consulting
 type: organization
-schema_version: 1
 status: active
 kind: gov-contractor
-created: 2026-04-30
 ---
 
 # Sancorp Consulting, LLC

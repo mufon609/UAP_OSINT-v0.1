@@ -1,9 +1,7 @@
 id: meta/research/james-holly
 type: research-artifact
-schema_version: 1
 target_node: people/james-holly
 status: active
-created: '2026-05-20'
 primary_sources:
 - path: government/notre-dame-ipmo-memo-20220527.pdf
   format: pdf

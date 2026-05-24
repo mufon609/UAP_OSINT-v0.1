@@ -1,9 +1,7 @@
 ---
 id: locations/{{slug}}
 type: location
-schema_version: 1
 status: {{status}}
-created: {{today}}
 ---
 
 # {{display_name}}

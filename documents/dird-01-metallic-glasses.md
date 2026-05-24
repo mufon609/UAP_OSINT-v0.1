@@ -1,11 +1,9 @@
 ---
 id: documents/dird-01-metallic-glasses
 type: document
-schema_version: 1
 status: primary-source-confirmed
 kind: gov-doc
 doc_form: technical-report
-created: 2026-05-21
 ---
 
 # Metallic Glasses: Status and Prospects for Aerospace Applications — DIA Defense Intelligence Reference Document, AAWSA Program, 14 December 2009

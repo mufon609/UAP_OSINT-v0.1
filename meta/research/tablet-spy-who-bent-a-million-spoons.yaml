@@ -1,9 +1,7 @@
 id: meta/research/tablet-spy-who-bent-a-million-spoons
 type: research-artifact
-schema_version: 1
 target_node: documents/tablet-spy-who-bent-a-million-spoons
 status: active
-created: '2026-05-16'
 primary_sources:
 - path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
   format: html
