@@ -64,7 +64,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶2 |
+| Location | p. 7, ¶2 |
 
 > The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORO representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 19i2.
 
@@ -72,7 +72,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶4 |
+| Location | p. 7, ¶4 |
 
 > During November of 1976, Director George Bush became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI about their work in parapsychology. Mr. Bush requested and received a briefing on CIA's investigations into parapsychology.
 
@@ -80,7 +80,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 15, ¶1 |
+| Location | p. 14, ¶1 |
 
 ### SRI Experimental Methodology and Controls
 
@@ -162,7 +162,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8) |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶1 |
+| Location | p. 7, ¶1 |
 
 > Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
 
@@ -208,7 +208,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 10, ¶1 |
+| Location | p. 14, ¶1 |
 
 > The effort at SRI was discontinued in 1990. However, as a result of Congressional direction in FY 1991 for DIA, new research in this area was established with the Systems Applications International Corporation (SAIC), in Menlo Park, CA.
 
@@ -216,7 +216,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 10, ¶3 |
+| Location | p. 14, ¶3 |
 
 ### SRI Program Scope and Evaluation
 

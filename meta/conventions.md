@@ -958,11 +958,19 @@ the PDF to page N) and verifiable. `extract-source.py` writes `--- page N ---`
 markers at the form-feed boundaries so the physical page is read straight off
 the scratch, and the `quote_location_page` check enforces it: every `p. N`
 quote must sit on physical page N (the check splits the extract on form feeds
-and confirms the quote text is on the cited page). It covers text-native PDFs;
-it skips `ocr-scan` / `extraction-lossy` sources served from a `.txt` sibling,
-whose pagination isn't yet form-feed-faithful (a sibling page-marker
-convention is the deferred follow-on). A page-spanning quote sits on no single
-page and fails the check — split it at the boundary (below).
+and confirms the quote text is on the cited page).
+
+For an **OCR-scan / extraction-lossy source** the canonical extract is the
+contributor's `.txt` sibling, which marks each document page with a
+`----- PAGE BREAK -----` line (the `/prepare-ocr-sibling` convention).
+`extract_source_text` normalizes that marker to a form feed, so the same page
+machinery applies: `p. N` is the Nth document page = the Nth sibling block. The
+sibling's pages are the *document's own* pages — a FOIA cover sheet or
+distribution insert the sibling omits is not counted, which is the page a
+reader navigates to in the document itself. A sibling that carries no page
+marker is not page-structured and its `p. N` refs are skipped (no reliable
+split). A page-spanning quote sits on no single page and fails the check —
+split it at the boundary (below).
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
 distinct roles: `source.path` names the archived file (the ground

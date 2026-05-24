@@ -26,7 +26,7 @@ created: 2026-05-21
 
 ## Description
 
-Pulsed High-Power Microwave Source Technology. The Defense Intelligence Reference Document is 28 January 2010, with an ICOD of 1 December 2009 and control number DIA-08-0912-005; UNCLASSIFIED//FOR OFFICIAL USE ONLY appears on every page. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+Pulsed High-Power Microwave Source Technology. The Defense Intelligence Reference Document is 28 January 2010, with an ICOD of 1 December 2009 and control number DIA-08-0912-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
 
 The Summary states the paper provides an overview of the major types of high-power microwave (HPM) sources and the critical technologies required to build them. Pulsed HPM technology has been of scientific and military interest for several decades; originally the interest focused on high-altitude electromagnetic pulse (HEMP) concerns, the effects of which became fully known in 1962 when a high-altitude nuclear test codenamed Starfish Prime over the Pacific Ocean disrupted radio stations and electronic equipment 800 miles away in Hawaii. HPM radiation is composed of shorter waveforms at higher frequencies than HEMP, which makes it highly effective against electronic equipment and more difficult to harden against; whereas HEMP weapons are large in scale and require a nuclear capability, HPM weapons are smaller in scale, involve a much lower level of technology, and are within the capability of almost any state. Technical accessibility, lower cost, and the vulnerability of U.S. electronic equipment could make small-scale HPM weapons attractive to terrorist groups, and HPM devices are now categorized as directed-energy weapons. One major military use is electronic attack, referred to by the media as an ebomb, with peak powers in excess of 10 gigawatts; kill mechanisms include semiconductor overheating or burnout, arc generation, computer upsets, voltage induction into sensitive circuits, display upset, and overvoltage in discrete components.
 
@@ -172,7 +172,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 1, ¶1 (Critical Technologies) |
+| Location | p. 9, ¶1 (Critical Technologies) |
 
 ---
 
@@ -184,7 +184,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 8, ¶2 (Cathode Materials) |
+| Location | p. 16, ¶2 (Cathode Materials) |
 
 ---
 
@@ -196,7 +196,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 10, ¶ (Cesium Iodide Coated) |
+| Location | p. 18, ¶ (Cesium Iodide Coated) |
 
 ---
 
@@ -208,7 +208,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 11, ¶1 (High-Voltage Switching) |
+| Location | p. 19, ¶1 (High-Voltage Switching) |
 
 ---
 
@@ -220,7 +220,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 14, ¶1 (Solid-State Switching) |
+| Location | p. 22, ¶1 (Solid-State Switching) |
 
 ---
 
@@ -238,7 +238,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 15, ¶ (High-Voltage Pulse Sources) |
+| Location | p. 23, ¶ (High-Voltage Pulse Sources) |
 
 ---
 
@@ -254,7 +254,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 17, ¶ (Pulsed High-Power Microwave Sources) |
+| Location | p. 25, ¶ (Pulsed High-Power Microwave Sources) |
 
 ---
 
@@ -266,7 +266,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 20, ¶ (SNIPER) |
+| Location | p. 28, ¶ (SNIPER) |
 
 ---
 
@@ -278,7 +278,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 20, ¶ (H-Series HPM Sources) |
+| Location | p. 28, ¶ (H-Series HPM Sources) |
 
 ---
 
@@ -290,7 +290,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 24, ¶ (The Jolt HPM Source) |
+| Location | p. 32, ¶ (The Jolt HPM Source) |
 
 ---
 
@@ -302,7 +302,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 19, ¶ (Gyrotrons) |
+| Location | p. 28, ¶ (Gyrotrons) |
 
 ---
 
@@ -314,7 +314,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 29, ¶1 (Conclusion) |
+| Location | p. 37, ¶1 (Conclusion) |
 
 ---
 
@@ -326,7 +326,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. 29, ¶ closing (Conclusion) |
+| Location | p. 37, ¶ closing (Conclusion) |
 
 ---
 

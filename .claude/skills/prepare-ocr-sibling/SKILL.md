@@ -44,7 +44,12 @@ quotes.
    bracketed placeholders; transcribe the per-page classification banner and
    page numbers where they appear; EXCLUDE any third-party distribution / FOIA
    cover-insert page that is not part of the document itself (report which
-   physical page was excluded). The producer reports the load-bearing
+   physical page was excluded). **Mark every document-page boundary with a line
+   `----- PAGE BREAK -----`** (between pages — not before the first or after the
+   last). Those markers delimit the sibling's pages: `extract_source_text`
+   normalizes them to form feeds so `quote_location_page` can verify a quote's
+   `p. N` against the Nth block (see `meta/conventions.md` "Quote location
+   refs"). Without them, the sibling's `p. N` refs go unverified. The producer reports the load-bearing
    front-matter facts it captured and flags any faded / ambiguous / redacted
    spots where a vision model might hallucinate. **A flag records only what is
    legible** (`[unclear]`, `[illegible digit]`) — it must never assert an

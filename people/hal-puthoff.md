@@ -81,7 +81,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 |---|---|
 | Attributed to | Section IV (Discussion) opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015 — Puthoff's restatement of the thesis after Sections I-III. Footnote (^3) directs to Reference 1, Frontiers of Propulsion Science (Eds. M. G. Millis and E. W. Davis, AIAA Press, 2009), 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 11, ¶1 |
+| Location | p. 16, ¶1 |
 
 > Despite the challenges, sample calculations as presented herein indicate the direction of potentially useful trends derivable on the basis of the application of GR principles as embodied in a metric engineering approach, with the results constrained only by what is achievable practically in an engineering sense. The latter is, however, a daunting constraint. At this point in the consideration of such nascent concepts, given our present level of technological evolution, it is premature to even guess about an optimum strategy, let alone attempt to form a critical path for the engineering development of such technologies. Nonetheless, only through rigorous inquiry into such concepts can one hope to arrive at a proper assessment of the possibilities inherent in the evolution of advanced spaceflight technologies.
 
@@ -89,7 +89,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 |---|---|
 | Attributed to | Section IV (Discussion) closing paragraph of Defense Intelligence Reference Document DIA-08-1003-015 — Puthoff's methodological conclusion framing the analysis as direction-of-trend identification rather than near-term technological prescription, 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 12, ¶1 |
+| Location | p. 17, ¶1 |
 
 ### UAP Material Analysis
 

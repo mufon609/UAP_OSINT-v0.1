@@ -57,7 +57,7 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8 naming K. Green at OSI, 1972-06-17 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, footnote |
+| Location | p. 7, footnote |
 
 > T 1(. Green; LSD/OSI; Memorandum for the Rerord; Subject: Verification of Remote Viewing
 
@@ -65,7 +65,7 @@ Per the IRVA biographical page (q4), in the mid-’70s Green was the first analy
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 10 naming K. Green at LSD/OSI as author of a 9 November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at Stanford Research Institute, 1973-11-09 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 10, footnote |
+| Location | p. 9, footnote |
 
 ### CIA Career and Tenure
 

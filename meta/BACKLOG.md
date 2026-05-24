@@ -180,31 +180,24 @@ adjacent-node propagation before building.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C2 — Extend quote_location_page to OCR-scan / extraction-lossy sources
+### C2 — Extend quote_location_page beyond `quotes[]` (timeline / naming_quirks)
 
-The `quote_location_page` check verifies a quote's `p. N` against the physical
-page by splitting the `pdftotext` extract on form feeds. It **skips**
-`ocr-scan` / `extraction-lossy` sources because those are served from a
-contributor-produced `.txt` sibling whose pagination is not form-feed-faithful
-to the original PDF (a sibling may carry one stray form feed or none) — so
-their `p. N` labels currently go unverified. Known skipped sources with page
-refs include the SASC AARO hearing transcript and FOIA-released PDFs.
-
-Forever-fix: give siblings a page-marker convention (preserve `\f` at the
-original PDF's physical-page boundaries, or `--- page N ---` markers aligned to
-them) produced by `/prepare-ocr-sibling`, then teach the check to split a
-sibling on those markers. Re-run the gate over the previously-skipped sources
-and migrate any mislabeled `p. N` refs. Until then those labels rest on
-contributor care, not a gate.
-
-Same scope gap on a second axis: the check covers `quotes[]` only. `p. N` refs
-in `timeline[]` and `naming_quirks[]` are ungated and were not migrated — two
+The `quote_location_page` check covers `quotes[]` only. `p. N` refs in
+`timeline[]` and `naming_quirks[]` are ungated and were not migrated — two
 stale timeline labels (`aaro-denial-action-mismatch` t2, `pax-river` t2) were
-found and fixed by hand during the findings audit. `naming_quirks[]` carry a
-verbatim `observed` token and could be gated the same way (token on page N);
-`timeline[]` entries carry a paraphrased `event`, not verbatim text, so they
-have no anchor to verify against — for those the `p. N` rests on contributor
-care regardless.
+found and fixed by hand during the findings audit.
+
+`naming_quirks[]` carry a verbatim `observed` token and could be gated the same
+way (token on page N). `timeline[]` entries carry a paraphrased `event`, not
+verbatim text, so they have no anchor to verify against — for those the `p. N`
+rests on contributor care regardless; the realistic scope here is
+`naming_quirks[]` plus a sweep of the existing `timeline[]` page refs against
+the now-paginated extracts.
+
+(The OCR-sibling axis of this gap is closed: siblings carry
+`----- PAGE BREAK -----` per document page, `extract_source_text` normalizes it
+to a form feed, and the gate now verifies OCR `p. N` refs the same as
+text-native — see `meta/conventions.md` "Quote location refs".)
 
 **Blocks:** none.
 **Blocked by:** none.

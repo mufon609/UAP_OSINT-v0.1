@@ -26,7 +26,7 @@ created: 2026-05-21
 
 ## Description
 
-Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering. The author is H.E. Puthoff, Ph.D. ([`/people/hal-puthoff`]) of EarthTech International, Inc. ([`/organizations/earthtech-international`]), Austin, Texas; the document was prepared by the Acquisition Support Division (DWO-3) of the Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency ([`/organizations/dia`]), 29 March 2010, with an ICOD of 1 December 2009. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Advanced Aerospace Weapon System Applications (AAWSA) Program and is addressed to James T. Lacatski, D.Eng. ([`/people/james-lacatski`]), AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]). UNCLASSIFIED//FOR OFFICIAL USE ONLY appears on every page.
+Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering. The author is H.E. Puthoff, Ph.D. ([`/people/hal-puthoff`]) of EarthTech International, Inc. ([`/organizations/earthtech-international`]), Austin, Texas; the document was prepared by the Acquisition Support Division (DWO-3) of the Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency ([`/organizations/dia`]), 29 March 2010, with an ICOD of 1 December 2009. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Advanced Aerospace Weapon System Applications (AAWSA) Program and is addressed to James T. Lacatski, D.Eng. ([`/people/james-lacatski`]), AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]). UNCLASSIFIED//FOR OFFICIAL USE ONLY.
 
 The paper considered the concept that empty space itself — the quantum vacuum, or spacetime metric — might be engineered to provide energy/thrust for future space vehicles. Puthoff states the proposal is solidly grounded in modern physical theory: "engineering the vacuum" was introduced by Nobelist T. D. Lee, and a statement acknowledging the central role of the vacuum in modern physics is provided by 2004 Nobelist Frank Wilczek. The vacuum is characterized as an energetic and structured medium: within quantum theory the seat of energetic particle and field fluctuations, and within general relativity the seat of a spacetime structure (metric) that encodes the distribution of matter and energy.
 
@@ -122,7 +122,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 1, ¶2 |
+| Location | p. 6, ¶2 |
 
 ---
 
@@ -134,7 +134,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 8, ¶ Velocity of Light/Craft |
+| Location | p. 13, ¶ Velocity of Light/Craft |
 
 ---
 
@@ -146,7 +146,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 10, ¶ Gravity/Antigravity/Propulsion Effects |
+| Location | p. 15, ¶ Gravity/Antigravity/Propulsion Effects |
 
 ---
 
@@ -158,7 +158,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 10, ¶ Gravity/Antigravity/Propulsion Effects |
+| Location | p. 15, ¶ Gravity/Antigravity/Propulsion Effects |
 
 ---
 
@@ -170,7 +170,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 11, ¶ Discussion opening |
+| Location | p. 16, ¶ Discussion opening |
 
 ---
 
@@ -182,7 +182,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 11, ¶ Discussion |
+| Location | p. 16, ¶ Discussion |
 
 ---
 
@@ -194,7 +194,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 12, ¶ Discussion |
+| Location | p. 17, ¶ Discussion |
 
 ---
 

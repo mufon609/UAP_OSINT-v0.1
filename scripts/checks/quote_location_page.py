@@ -17,23 +17,19 @@ shift the count) — is caught here instead of passing silently.
 form-feed-delimited block of the extract. See ``meta/conventions.md`` "Quote
 location refs" for the convention this enforces.
 
-Scope and skips (chosen so the check never false-fails):
+Eligibility is decided by one signal — does the extract carry form-feed page
+separators? Text-native PDFs get them from ``pdftotext``; OCR-scan /
+extraction-lossy sources get them from their clean ``.txt`` sibling, where
+``extract_source_text`` has normalized the ``----- PAGE BREAK -----`` marker
+to ``\f`` (so an OCR source's ``p. N`` is its Nth document page = Nth sibling
+block). Everything else is skipped, so the check never false-fails:
   - Only quotes whose location matches ``p. N`` (integer page). Roman-numeral
     front matter (``p. ii``), paragraph anchors (``¶N``), caption timestamps
-    (``[MM:SS]``), and FOIA ``Doc N`` anchors carry no physical-page claim and
-    are skipped.
-  - Skips sources flagged non-text-native (``ocr-scan`` / ``extraction-lossy``)
-    in the manifest. ``extract_source_text`` serves those from a contributor's
-    clean ``.txt`` sibling, whose form-feed structure is not guaranteed to
-    track the original PDF's physical pages (a hand-transcription may carry one
-    stray form-feed or none) — so physical-page verification isn't sound for
-    them yet. It waits on a page-marker convention in the sibling (see
-    ``meta/conventions.md``). This skip uses the same extraction-type lookup
-    ``extract_source_text`` uses to decide to serve the sibling, so the two
-    stay aligned.
-  - Skips any source whose extract carries no form-feed separators (HTML / TXT
-    articles using ``¶N`` anchors, single-page PDFs) — no page structure to
-    index.
+    (``[MM:SS]``), and FOIA ``Doc N`` anchors carry no physical-page claim.
+  - Sources whose extract has no form feed: HTML / TXT articles (``¶N``
+    anchors), single-page PDFs, and OCR siblings that carry no page marker
+    (``extract_source_text`` strips their stray form feeds) — no page structure
+    to index.
 
 A quote that matches no single page (its text straddles a page boundary) is a
 convention violation in its own right — page-spanning quotes split at the
@@ -44,12 +40,7 @@ import re
 
 from checks import Issue
 from checks._research_utils import entries
-from lib._common import (
-    SOURCES_DIR,
-    _load_extraction_types,
-    extract_source_text,
-    normalize_for_compare,
-)
+from lib._common import SOURCES_DIR, extract_source_text, normalize_for_compare
 
 
 CHECK_NAME = "quote_location_page"
@@ -75,13 +66,6 @@ def check(ctx):
         if not m:
             continue  # not a `p. N` page ref — out of scope
         page = int(m.group(1))
-
-        # Non-text-native PDFs are served from a .txt sibling whose pagination
-        # isn't guaranteed to track the PDF's physical pages — skip until the
-        # sibling carries page markers. Same lookup extract_source_text uses.
-        et = _load_extraction_types().get(rel_source)
-        if et and et != "text-native":
-            continue
 
         source_file = SOURCES_DIR / rel_source
         if not source_file.exists():

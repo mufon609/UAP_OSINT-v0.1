@@ -835,6 +835,31 @@ def _strip_pdf_page_number_lines(text):
     return "\f".join(pages)
 
 
+_SIBLING_PAGE_BREAK = re.compile(r"\n*[ \t]*-----\s*PAGE BREAK\s*-----[ \t]*\n*")
+
+
+def _sibling_page_breaks_to_ff(text):
+    r"""Normalize a clean-text `.txt` sibling's page boundaries to form feeds.
+
+    OCR-scan / extraction-lossy sources are served from a contributor-produced
+    sibling instead of pdftotext output, so they carry no `\f` page separators.
+    Siblings mark each document-page boundary with `----- PAGE BREAK -----` (the
+    ``/prepare-ocr-sibling`` convention); converting those to `\f` lets the
+    page-aware consumers (``quote_location_page``) split a sibling into pages the
+    same way they split pdftotext output. ``p. N`` for an OCR source is then the
+    Nth document page = the Nth sibling block (FOIA cover / distribution insert
+    pages the sibling omits aren't counted — that's the page a reader navigates
+    to in the document itself).
+
+    A sibling that carries no `----- PAGE BREAK -----` marker is not
+    page-structured; strip any stray form feed so its `p. N` refs are skipped by
+    the gate (no reliable split) rather than checked against a bogus one.
+    """
+    if _SIBLING_PAGE_BREAK.search(text):
+        return _SIBLING_PAGE_BREAK.sub("\f", text)
+    return text.replace("\f", "")
+
+
 def extract_source_text(source_path):
     """Extract plain text from a source file. Returns None if unavailable.
     Cached for the duration of one validator run.
@@ -897,6 +922,7 @@ def extract_source_text(source_path):
             if sibling.exists():
                 try:
                     result = sibling.read_text(encoding="utf-8", errors="replace")
+                    result = _sibling_page_breaks_to_ff(result)
                     used_sibling = True
                 except OSError:
                     pass  # fall through to pdftotext

@@ -26,7 +26,7 @@ created: 2026-05-21
 
 ## Description
 
-Metallic Glasses: Status and Prospects for Aerospace Applications. The Defense Intelligence Reference Document is 14 December 2009, with an ICOD of 1 December 2009 and control number DIA-08-0911-012; UNCLASSIFIED//FOR OFFICIAL USE ONLY appears on every page. On page ii, where the Prepared by and Author appear, the document gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+Metallic Glasses: Status and Prospects for Aerospace Applications. The Defense Intelligence Reference Document is 14 December 2009, with an ICOD of 1 December 2009 and control number DIA-08-0911-012, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
 
 The Summary characterized metallic glasses as materials that combine some of the advantageous mechanical properties of metals — strength, stiffness, and in some cases toughness — with the processing flexibility usually associated with thermoplastic polymers. The absence of crystalline defects allows them to be much stronger than conventional alloys but also means they have near-zero tensile ductility and poor fatigue resistance. In structural applications metallic glasses are most likely to be useful as composites consisting of ductile crystalline dendrites in a metallic glass matrix; these dendritic composites sacrifice some strength but can have exceptionally high fracture toughness and good fatigue resistance and could replace high-strength steels in certain load-limited structural components in aerospace vehicles where space is limited. Because they are true glasses, thermoplastic forming near the glass transition temperature affords tremendous flexibility in processing — components can be formed in a single step (for example, by injection molding) in complex geometries, metallic glass foams can be made with relative ease, and the lack of a crystalline grain structure allows nanoscale features to be formed with high fidelity, which may make them useful in micro-electromechanical systems (MEMS) applications.
 
@@ -124,7 +124,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 1, ¶1 (Structure) |
+| Location | p. 7, ¶1 (Structure) |
 
 ---
 
@@ -136,7 +136,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 3, ¶2 (Glass-Forming Alloys) |
+| Location | p. 9, ¶2 (Glass-Forming Alloys) |
 
 ---
 
@@ -148,7 +148,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 6, ¶1 (Strength and Ductility) |
+| Location | p. 12, ¶1 (Strength and Ductility) |
 
 ---
 
@@ -160,7 +160,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 7, ¶1 (Strength and Ductility) |
+| Location | p. 13, ¶1 (Strength and Ductility) |
 
 ---
 
@@ -172,7 +172,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 9, ¶1 (Fatigue) |
+| Location | p. 15, ¶1 (Fatigue) |
 
 ---
 
@@ -184,7 +184,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 9, ¶2 (Fatigue) |
+| Location | p. 15, ¶2 (Fatigue) |
 
 ---
 
@@ -196,7 +196,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 15, ¶2 (Fracture and Fatigue) |
+| Location | p. 22, ¶2 (Fracture and Fatigue) |
 
 ---
 
@@ -208,7 +208,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 17, ¶3 (Structural Applications) |
+| Location | p. 23, ¶3 (Structural Applications) |
 
 ---
 
@@ -220,7 +220,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 19, ¶1 (Structural Applications) |
+| Location | p. 25, ¶1 (Structural Applications) |
 
 ---
 
@@ -232,7 +232,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 20, ¶1 (Alloy Design) |
+| Location | p. 26, ¶1 (Alloy Design) |
 
 ---
 
@@ -244,7 +244,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. 22, ¶ closing (Summary and Recommendations) |
+| Location | p. 29, ¶ closing (Summary and Recommendations) |
 
 ---
 
