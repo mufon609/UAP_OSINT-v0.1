@@ -140,6 +140,59 @@ before a field is removed):
 is coupled across schema + checks + renderers + all nodes + build-state + docs
 and would move to a roadmap phase).
 
+### A3 — DIRD extraction process: consistency standard (open) + capture citations (decided)
+
+Two facets of one question — *how should an AAWSAP DIRD document node be
+extracted?* — surfaced when a relevance audit of `dird-04-biomaterials` (55
+quotes) found it a ~3× outlier against its siblings. The size gap is a symptom;
+the underlying issue is that there is **no shared extraction standard** for DIRD
+document nodes, so each was built to whatever its worker session judged
+"load-bearing" under "density source-driven, no count target."
+
+**(a) Extraction-density consistency — OPEN QUESTION (a fresh session decides;
+no recommendation is recorded here on purpose).** The seven built DIRDs span a
+~10× density range with no principled reason:
+
+| DIRD | pages | quotes | quotes/page |
+|---|---|---|---|
+| dird-24 quantum-vacuum-energy-extraction | 58 | 9 | 0.16 |
+| dird-26 field-effects | 39 | 21 | 0.54 |
+| dird-01 metallic-glasses | 31 | 17 | 0.55 |
+| dird-03 pulsed-hpm | 38 | 23 | 0.61 |
+| dird-15 advanced-space-propulsion | 17 | 13 | 0.76 |
+| dird-02 programmable-matter | 21 | 17 | 0.81 |
+| dird-04 biomaterials | 33 | 55 | 1.67 |
+
+The longest DIRD (dird-24, 58pp) has the fewest quotes (9) — a candidate for
+*under*-extraction; dird-04 (1.67/pg) is the high end. The investigation must
+decide: is dird-04 over-extracted, are the others (esp. dird-24) under-extracted,
+or both — and what is the consistent rule (a quote-density target, or, better, a
+selection rubric naming which categories of DIRD passage must be captured:
+provenance / thesis-and-scope / each section's finding / methods / conclusions /
+…) so density falls out of consistent selection rather than worker judgment?
+Context for the deciding session: not every passage needs explicit UAP content —
+a DIRD is an AAWSAP product, so its substance is relevant by program proxy, which
+argues against aggressive trimming; under-extraction risks losing material whose
+relevance only surfaces later. **Do not trim dird-04 in isolation** — resolve the
+standard, then re-level the whole DIRD set against it.
+
+**(b) Capture DIRD citations — DECIDED (implement; not an open question).** The
+DIRDs carry formal reference lists that the repo captures nowhere: dird-24 alone
+has a `References` section with ~206 citation markers, and **no document
+research-artifact has any citations/references field** — the schema doesn't model
+it. The AAWSAP-commissioned authors' citations are an investigative dimension
+(who they relied on; recurring cited authors; cross-DIRD / known-figure networks).
+The decision is to capture them as a new dimension. Implementation (for the same
+fresh session, since it is part of redefining DIRD extraction): design the schema
+representation on the document artifact type (a `cited_works` / `references`
+section), render it, and extract across the DIRD corpus (dird-24's reference list
+first). Decide granularity (full bibliographic entries vs. author+year+title).
+
+**Blocks:** none.
+**Blocked by:** none. Reserve for a session explicitly scoped to the DIRD
+extraction process (the density re-level + the citations schema/extraction are
+coupled — both redefine how a DIRD is extracted).
+
 ---
 
 ## B. Parallel batch (renderer pass)
