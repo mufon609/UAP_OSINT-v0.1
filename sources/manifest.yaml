@@ -711,6 +711,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #7 — ''Invisibility Cloaking'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 30 pages. DIA attachment #7 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Ulf Leonhardt, University of St. Andrews (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-07-invisibility-cloaking-20100302.txt
+    archived_date: '2026-05-25'
+    note: 'Clean-text sibling of the OCR-scanned DIRD-07 ''Invisibility Cloaking: Theory and Experiments'' (DIA-08-1003-001, 2 March 2010). Produced 2026-05-25 via multimodal page-image read; independently verified 2026-05-25 by a separate agent session — PASS. Black Vault cover insert (PDF p.2) excluded; 29 document pages (title + ii-v + body 1-24). Equations/figures bracketed; redactions (author line (b)(6); AAWSA Program Manager (b)(3)/(b)(6)) and source artifacts (doubled author names in refs 21/22/39, stray ''[11]'' in ref 26, source grammatical errors) preserved verbatim. Author extrinsic: Dr. Ulf Leonhardt, Univ. of St. Andrews per the products-list hub.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_08-DIRD_Positron_Aerospace_Propulsion.pdf
   status: archived
   artifacts:
