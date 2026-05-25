@@ -148,6 +148,22 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
+*dird-18 content-filter blocker — isolated.* The VLM producer hard-blocks on the
+API content-filter policy (`Output blocked by content filtering policy`). The
+block is now isolated to physical pages 31–35 (printed 22–26): §IV-B/C
+negative-energy constraints + §V Conclusion, which recounts nuclear-weapon
+development history (the likely trigger). Physical pages 1–30 are
+VLM-transcribable (a chunked producer completed them) and 36–43 (References
+[1]–[79] + conclusion tail) are benign. The content-filter fallback ladder —
+local Tesseract production (filter-proof) + chunked, incrementally-written VLM
+correction to isolate the block + non-VLM verification routing — is documented in
+`.claude/skills/prepare-ocr-sibling/SKILL.md` "Fallback — when the producer is
+blocked". Remaining for the dird-18 node: the 5 blocked pages need a non-VLM
+verification path (second OCR-engine cross-check, or human transcription) before
+a fully-verified sibling can be registered; per the no-half-verified-sibling rule
+the node is deferred until then. Other unbuilt DIRDs with weaponization /
+negative-energy content may hit the same filter; the documented ladder applies.
+
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
 verification of the relevant region.
