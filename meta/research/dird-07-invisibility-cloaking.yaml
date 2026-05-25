@@ -1,0 +1,273 @@
+id: meta/research/dird-07-invisibility-cloaking
+type: research-artifact
+target_node: documents/dird-07-invisibility-cloaking
+status: active
+primary_sources:
+- path: government/dird-07-invisibility-cloaking-20100302.pdf
+  format: pdf
+document_intrinsic:
+  internal_title: 'Invisibility Cloaking: Theory and Experiments'
+  internal_date: '2010-03-02'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY (struck through to UNCLASSIFIED on every page header and footer)'
+  control_number: DIA-08-1003-001
+  pages: 30
+context_extrinsic:
+  display_title: 'Invisibility Cloaking: Theory and Experiments — DIA Defense Intelligence Reference Document, AAWSAP, 2 March 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf
+  quote_attribution: 'Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010'
+  extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. Ulf Leonhardt, University of St. Andrews (attachment 7, short title "Invisibility Cloaking"). The name is independently attested within the document''s own body, which lists "Sir John Pendry, David Smith, David Schurig, and Ulf Leonhardt" among the inventors of cloaking devices, and in the endnotes, which self-cite "U. Leonhardt" densely among the cited works.'
+description: 'Invisibility Cloaking: Theory and Experiments. The Defense Intelligence Reference Document is 2 March 2010, with an ICOD of 1 December 2009 and control DIA-08-1003-001, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note describes the product as one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author ([`/people/ulf-leonhardt`]) appears there, not on the document, where the Author line shows [(b)(6)].
+
+
+  The paper describes the theory and experiments of invisibility cloaking. Invisibility may be achieved through three principal methods: camouflage, transparency, and cloaking. Camouflage is shown through stealth technology and optical camouflage; transparency through changing a refractive index so light is not scattered; and cloaking as the universal strategy. The paper describes cloaking as a transparent shell that guides light around the hidden object as if the light would propagate through empty space, so both the interior of the cloaking device is hidden and the act of hiding is concealed.
+
+
+  The paper describes the theory as a transformation of space: an optical material deforms the coordinates of space, creating the illusion that light propagates along straight lines through a virtual space while in reality it is bent around a hollow region that has become invisible. This idea of cloaking by coordinate transformations was put forward by two independent groups whose theories appeared in Science Express on 25 May 2006, and in October 2006 the first cloaking device was demonstrated for microwaves. The first prototype was designed to operate in the microwave region for a wavelength of about 3 cm, built from rings of flexible circuit board etched into split-ring resonators; a material with electromagnetic or optical properties that depends on structures much smaller than the wavelength is called a metamaterial.
+
+
+  The paper describes a fundamental problem of transformation-based cloaking: the demonstrated microwave-cloaking device only works correctly for a single frequency, and the speed of light must be infinitely large at the inner lining of the invisibility cloak, so cloaking of wave packets carrying information is impossible. With non-Euclidean curved-space cloaking the distortion of space is always finite rather than infinite, so such devices can in principle operate in a broad band of the spectrum. The paper describes the greatest challenge for turning invisibility from an idea into a workable device as not technology but imagination; perfect cloaking devices are impossible because they require materials where the speed of light approaches infinity, while imperfect cloaking devices implementing curved-space geometries could be made — for microwaves, definitely within reach of present technology.
+
+  '
+quotes:
+- id: q-title-classification-banner
+  added_date: '2026-05-25'
+  text: |-
+    UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 1, classification banner'
+  significance: Classification banner — the cover marking is UNCLASSIFIED with FOR OFFICIAL USE ONLY struck through, the form preserved on every page header and footer
+  statement_date: '2010-03-02'
+- id: q-title-page-id-block
+  added_date: '2026-05-25'
+  text: |-
+    Defense
+    Intelligence
+    Reference
+    Document
+
+    [black redaction bar] Acquisition Threat Support
+
+    2 March 2010
+    ICOD: 1 December 2009
+    DIA-08-1003-001
+
+    Invisibility Cloaking: Theory
+    and Experiments
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 1, title-page identity block'
+  significance: 'Title-page identity block — Defense Intelligence Reference Document, Acquisition Threat Support, dated 2 March 2010, ICOD 1 December 2009, control number DIA-08-1003-001, full title "Invisibility Cloaking: Theory and Experiments"'
+  statement_date: '2010-03-02'
+- id: q-prepared-by-author-redaction-block
+  added_date: '2026-05-25'
+  text: |-
+    Prepared by:
+    [(b)(3):10 USC 424]
+
+    Defense Intelligence Agency
+
+    Author:
+    [(b)(6)]
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 2, prepared-by/author block'
+  significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
+  statement_date: '2010-03-02'
+- id: q-copyright-warning
+  added_date: '2026-05-25'
+  text: |-
+    COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 2, Administrative Note (Copyright Warning)'
+  significance: Copyright warning — further dissemination of the photographs in the publication is not authorized
+  statement_date: '2010-03-02'
+- id: q-administrative-note-aawsa
+  added_date: '2026-05-25'
+  text: |-
+    This product is one in a series of advanced technology reports produced in FY 2009
+    under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace
+    Weapon System Applications (AAWSA) Program. Comments or questions pertaining to
+    this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program
+    Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington,
+    DC 20340-5100.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 2, Administrative Note'
+  significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
+  statement_date: '2010-03-02'
+- id: q-three-methods-of-invisibility
+  added_date: '2026-05-25'
+  text: |-
+    Invisibility may be achieved through three principal methods: camouflage,
+    transparency, and cloaking.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 6, ¶1 (Camouflage, printed p. 1)'
+  significance: 'Invisibility taxonomy — the paper sets out three principal methods of invisibility: camouflage, transparency, and cloaking'
+  statement_date: '2010-03-02'
+- id: q-cloaking-definition-universal-strategy
+  added_date: '2026-05-25'
+  text: |-
+    Cloaking⁴, ⁵ is a universal strategy for invisibility that works for objects of arbitrary
+    compositions and shapes within a given size. In cloaking, the hidden object is enclosed
+    by the cloaking device, a transparent shell that guides light around the object as if the
+    light would propagate through empty space. In this way, both the interior of the
+    cloaking device is hidden and the act of hiding is concealed.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 10, ¶1 (Cloaking, printed p. 5)'
+  significance: Cloaking definition — cloaking is the universal strategy in which a transparent shell guides light around the hidden object as if it propagated through empty space, hiding both the object and the act of hiding
+  statement_date: '2010-03-02'
+- id: q-transformation-optics-deforms-space
+  added_date: '2026-05-25'
+  text: |-
+    The material acts like a transformation of space. In the device, each point in real space
+    is put to a new location in a virtual space (outside of the device, space remains the
+    same). The device creates the illusion that light propagates along straight lines through
+    the virtual space, whereas in reality it is bent.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 13, ¶1 (Cloaking, printed p. 8)'
+  significance: Transformation-optics theory — an optical material acts like a transformation of space, creating the illusion that light propagates along straight lines through a virtual space while in reality it is bent
+  statement_date: '2010-03-02'
+- id: q-two-groups-2006-science-express
+  added_date: '2026-05-25'
+  text: |-
+    This idea of cloaking by coordinate transformations was put forward by two
+    independent groups. Their theories appeared in Science Express on 25 May 2006 and
+    were published back to back in Science magazine later on.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 14, ¶1 (Cloaking, printed p. 8)'
+  significance: Cloaking-theory origins — the coordinate-transformation idea was put forward by two independent groups whose theories appeared in Science Express on 25 May 2006
+  statement_date: '2010-03-02'
+- id: q-october-2006-first-cloak-microwave-roster
+  added_date: '2026-05-25'
+  text: |-
+    In October 2006, the first cloaking device was demonstrated,¹¹ for microwaves.
+    Science magazine regarded cloaking as one of the top 10 science breakthroughs of the
+    year (it was top in physics and engineering). Scientific American listed the inventors of
+    cloaking devices—Sir John Pendry, David Smith, David Schurig, and Ulf Leonhardt—
+    among the top 50 policy, business, and research leaders of the year.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 14, ¶1 (Cloaking, printed p. 8)'
+  significance: Experimental result and inventor roster — in October 2006 the first cloaking device was demonstrated for microwaves, and Scientific American listed the inventors of cloaking devices as Sir John Pendry, David Smith, David Schurig, and Ulf Leonhardt
+  statement_date: '2010-03-02'
+- id: q-microwave-prototype-split-ring-resonators
+  added_date: '2026-05-25'
+  text: |-
+    The first prototype¹³ of a cloaking device was designed to operate in the microwave
+    region of the electromagnetic spectrum, for a wavelength of about 3 cm. The device
+    consists of 10 rings of flexible circuit board. The copper of the circuit board has been
+    etched away, apart from characteristic structures of about 3-mm size, so-called split-
+    ring resonators.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 14, ¶ continued (Metamaterials, printed p. 9)'
+  significance: Microwave prototype — the first prototype cloaking device operated in the microwave region for a wavelength of about 3 cm, built from rings of flexible circuit board etched into split-ring resonators
+  statement_date: '2010-03-02'
+- id: q-metamaterial-definition
+  added_date: '2026-05-25'
+  text: |-
+    A material with electromagnetic or optical properties that
+    depends on structures much smaller than the wavelength is called a metamaterial.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 15, ¶1 (Metamaterials, printed p. 10)'
+  significance: Metamaterials definition — a material whose electromagnetic or optical properties depend on structures much smaller than the wavelength is called a metamaterial
+  statement_date: '2010-03-02'
+- id: q-fundamental-problem-single-frequency
+  added_date: '2026-05-25'
+  text: |-
+    The demonstrated microwave-cloaking device only works correctly for microwave
+    radiation of a specific frequency (wavelength), and the proposed optical cloaking device
+    would also work for just one frequency; that is, for only one color. Light of different
+    colors would be severely distorted.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 20, ¶1 (Fundamental Problem, printed p. 15)'
+  significance: Cloaking limitation — the demonstrated microwave-cloaking device works correctly only for a single frequency; light of different colors would be severely distorted
+  statement_date: '2010-03-02'
+- id: q-speed-of-light-infinite-at-core
+  added_date: '2026-05-25'
+  text: |-
+    To make matters worse, the speed
+    of light must be infinitely large at the inner lining of the invisibility cloak.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 21, ¶1 (Fundamental Problem, printed p. 15)'
+  significance: Cloaking limitation — the speed of light must be infinitely large at the inner lining of the invisibility cloak, which the paper argues makes such Euclidean devices useless in practice
+  statement_date: '2010-03-02'
+- id: q-broadband-non-euclidean-finite-distortion
+  added_date: '2026-05-25'
+  text: |-
+    Why are such curved optical spaces of any practical advantage? They seem more
+    complicated, but the distortion of space in such spaces is always finite, never infinite as
+    in the conventional Euclidean cloaking devices. As the spatial distortions directly
+    correspond to the required refractive indices, the required optical properties are never
+    infinite, and hence such devices can, in principle, operate in a broad band of the
+    spectrum.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 25, ¶1 (Broadband Invisibility, printed p. 19)'
+  significance: Broadband invisibility — non-Euclidean curved-space cloaking keeps the distortion of space finite rather than infinite, so the required optical properties stay finite and such devices can in principle operate in a broad band of the spectrum
+  statement_date: '2010-03-02'
+- id: q-greatest-challenge-imagination-not-technology
+  added_date: '2026-05-25'
+  text: |-
+    The greatest challenge for turning
+    invisibility from an idea into a workable device is not technology but imagination.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 27, ¶1 (Optical Cloaking, printed p. 22)'
+  significance: Conclusion — the paper states the greatest challenge for turning invisibility from an idea into a workable device is not technology but imagination
+  statement_date: '2010-03-02'
+- id: q-summary-perfect-cloaking-impossible
+  added_date: '2026-05-25'
+  text: |-
+    A cloaking device is a passive device made of a transparent material that guides light
+    around any object in its interior as if the light has passed through empty space. The
+    cloaking device conceals the object and hides the act of hiding itself. Perfect cloaking
+    devices are impossible because they require materials where the speed of light
+    approaches infinity. Imperfect cloaking devices could be made.
+  source:
+    path: government/dird-07-invisibility-cloaking-20100302.pdf
+    location: 'p. 28, ¶1 (Summary, printed p. 23)'
+  significance: Summary — a cloaking device guides light around an object as if through empty space; perfect cloaking devices are impossible because they require the speed of light to approach infinity, but imperfect cloaking devices could be made
+  statement_date: '2010-03-02'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-25'
+  observed: '[(b)(6)]'
+  canonical: '[redacted per FOIA (b)(6)]'
+  location: 'p. 2, Author line'
+  source_path: government/dird-07-invisibility-cloaking-20100302.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-05-25'
+  observed: '[(b)(3):10 USC 424]'
+  canonical: '[redacted per FOIA (b)(3):10 USC 424]'
+  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  source_path: government/dird-07-invisibility-cloaking-20100302.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-05-25'
+  observed: AAWSA
+  canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
+  location: 'p. 2, Administrative Note'
+  source_path: government/dird-07-invisibility-cloaking-20100302.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-05-25'
+  observed: 'Invisibility Cloaking: Theory and Experiments'
+  canonical: 'Invisibility Cloaking (AAWSAP products-list short form)'
+  location: 'p. 1, title vs. AAWSAP products list attachment 7'
+  source_path: government/dird-07-invisibility-cloaking-20100302.pdf
+  resolution: disputed
+cited_works: []
