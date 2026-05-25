@@ -136,11 +136,11 @@ scripts/
                             across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains 11 gates:
+  pre-commit.sh             canonical all-gates health check (chains 12 gates:
                             help-check / test_stopwords / smoke / build/validate.py /
                             build/validate-research.py / build/review-coverage.py /
-                            build/build-state.py --check / build/build-md-spec.py /
-                            build/renderer-coverage.py / file-size-check /
+                            build/build-state.py --check / build/renderer-coverage.py /
+                            phase-routing-parity / skills-check / file-size-check /
                             cookies-check)
   help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
@@ -177,7 +177,7 @@ media/ locations/ findings/ investigations/
                             node-body-edit block, one-new-synthesis-node cap
   settings.json             hook wiring (committed; topic-neutral)
 
-prompts/                    design docs (topology.md, build.md) + Claude-Web
+prompts/                    design docs (topology.md) + Claude-Web
                             briefs — see prompts/README.md for the index
 ```
 
@@ -260,8 +260,7 @@ shows current state.
 
 If you'd rather read directly, start with `meta/conventions.md` (the
 evidentiary standard) and `meta/schema.yaml` (the structural spec),
-then run `/build` when you're ready to build a node (`prompts/build.md`
-is the single-session fallback).
+then run `/build` when you're ready to build a node.
 
 ### Returning contributor
 
@@ -272,9 +271,9 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 13 gates: help-check / test_stopwords / smoke /
+This chains 12 gates: help-check / test_stopwords / smoke /
 `validate.py` / `validate-research.py` / `review-coverage.py` /
-`build-state.py --check` / `build-md-spec.py` / `renderer-coverage.py` /
+`build-state.py --check` / `renderer-coverage.py` /
 `phase-routing-parity` / `skills-check` / `file-size-check` /
 `cookies-check`. The same chain runs as a blocking `PreToolUse` hook the
 moment you `git commit` (un-bypassable by `--no-verify`). Then pick work

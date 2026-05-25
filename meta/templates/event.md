@@ -15,8 +15,8 @@ kind: {{kind}}
      below are a shape reference; once you run build-from-research.py
      the body is replaced entirely (frontmatter above is preserved
      verbatim). Populate the research artifact and re-run the renderer
-     — see prompts/build.md Phase II for the full procedure. Hand-edits
-     to the body trigger the Phase III boundary-check failure.
+     (via the `/build` skill). Hand-edits
+     to the body trigger the boundary-check failure.
      ───────────────────────────────────────────────────────────────────── -->
 
 ## Event Summary

@@ -17,31 +17,25 @@
 #                                              stub-linking / description-drift
 #   7. python3 scripts/build/build-state.py --check
 #                                            — CLAUDE.md build-state block in sync
-#   8. python3 scripts/build/build-md-spec.py
-#                                            — prompts/build.md section parity
-#                                              with schema.yaml required_sections
-#                                              + optional_sections + conditionally
-#                                              required + universal-conditional
-#                                              section names
-#   9. python3 scripts/build/renderer-coverage.py
+#   8. python3 scripts/build/renderer-coverage.py
 #                                            — every schema-required section is
 #                                              renderer-producible (schema
 #                                              required/optional/conditional
 #                                              sections ⊆ renderer EMITS)
-#  10. python3 scripts/build/phase_routing_parity.py
+#   9. python3 scripts/build/phase_routing_parity.py
 #                                            — every --phase token in prompts/
 #                                              + .claude/ is valid per
 #                                              scripts/checks/_phases.py, and
 #                                              every canonical phase is
 #                                              documented in topology.md
-#  11. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
+#  10. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
 #                                              valid frontmatter, hard-code no
 #                                              topic token (fork-portable), and
 #                                              settings.json parses
-#  12. scripts/tests/file-size-check.sh      — git-tracked files within
+#  11. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
-#  13. scripts/tests/cookies-check.sh        — no tracked file contains
+#  12. scripts/tests/cookies-check.sh        — no tracked file contains
 #                                              Netscape cookies content or
 #                                              Google session cookies in
 #                                              Netscape-shape rows (defensive
@@ -122,7 +116,6 @@ steps=(
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
-    $'build-md-spec.py\tpython3 scripts/build/build-md-spec.py --quiet'
     $'renderer-coverage.py\tpython3 scripts/build/renderer-coverage.py --quiet'
     $'phase-routing-parity\tpython3 scripts/build/phase_routing_parity.py --quiet'
     $'skills-check\tbash scripts/tests/skills-check.sh'

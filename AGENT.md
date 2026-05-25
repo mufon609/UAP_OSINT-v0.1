@@ -45,7 +45,7 @@ If you're doing anything related to this instance's topic, read
 | Start a session here | run `/onboard` |
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → run `/build` |
-| Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline; `prompts/build.md` is the single-session fallback). One *new* person/org node per session. |
+| Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |
 | Audit an existing node | run `/audit {type}/{slug}` |
 | Verify a transcript verbatim | run `/verify-transcript {type}/{slug}` |
 | Audit quote relevance | run `/quote-relevance-audit meta/research/{slug}.yaml` |

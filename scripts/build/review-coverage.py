@@ -14,15 +14,15 @@ via an explicit step list. Skips on unsupported types (only runs against
 types whose renderer ships in build-from-research.py).
 
 This script handles mechanical rules only. Semantic / narrative-coherence
-review (agent-assisted) is a separate pass referenced in
-``prompts/build.md``.
+review (agent-assisted) is a separate pass — the `/build` auditor role
+(and the standalone ``/audit`` skill).
 
 Usage:
   review-coverage.py {artifact_path}
   review-coverage.py --all
   review-coverage.py --quiet
 
-Expected execution order per prompts/build.md:
+Expected execution order (the /build builder role):
   validate-research.py {artifact}  →  build-from-research.py {artifact}
     →  validate.py {node}  →  review-coverage.py {artifact}
 """

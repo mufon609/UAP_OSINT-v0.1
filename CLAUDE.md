@@ -35,7 +35,7 @@ python3 scripts/build/validate.py            # node structure + verbatim quotes
 python3 scripts/build/validate-research.py    # artifact structure + prose-drift
 python3 scripts/build/review-coverage.py --all  # cross-layer coverage/boundary/description-drift
 python3 scripts/build/build-state.py --check  # this file's build-state block
-bash scripts/tests/pre-commit.sh             # full 13-gate chain; ALSO the blocking commit hook (un-bypassable by --no-verify)
+bash scripts/tests/pre-commit.sh             # full 12-gate chain; ALSO the blocking commit hook (un-bypassable by --no-verify)
 ```
 
 Exit 0 on all = repo healthy. Any errors → fix first. Don't stop at
@@ -196,9 +196,9 @@ quote must rest on text you extracted from the archived source file in
 this session (via `scripts/build/extract-source.py` for PDFs / direct
 read for HTML/TXT). Not training knowledge. The verbatim-quote check in
 `scripts/build/validate.py` mechanically verifies this — but write the
-node correctly to begin with by following `prompts/build.md` Phase I
-Steps 2 and 6 (extract sources → populate quotes verbatim from scratch
-files).
+node correctly to begin with by following the source-read-first
+discipline — extract sources, then populate quotes verbatim from the
+scratch files (the `/build` worker role; `meta/conventions.md`).
 
 ---
 
@@ -256,10 +256,9 @@ the `/build` skill** — the orchestrator runs on the main thread and dispatches
 the role subagents in `.claude/agents/` (internal-investigator · external-
 investigator · archive · worker · builder · auditor); the shared contract is
 preloaded from `.claude/skills/build-protocol/`. `prompts/topology.md` is the
-design rationale for that decomposition, and `prompts/build.md` is the
-single-session fallback + the source of the Phase I → II → III mechanics each
-role applies — reach for it only when a build genuinely shouldn't be decomposed
-into agents. Standalone workflows are skills too: `/audit`, `/verify-transcript`,
+design rationale for that decomposition; the build mechanics each role applies
+live in `meta/conventions.md` (the evidentiary discipline) and the role
+subagents themselves. Standalone workflows are skills too: `/audit`, `/verify-transcript`,
 `/quote-relevance-audit`, `/archive-sweep`, `/fork-init`.
 
 Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:

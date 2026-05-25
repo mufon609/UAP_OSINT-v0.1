@@ -44,13 +44,12 @@ transcript, media, organization, location, finding, and investigation.
 
 ## Workflow
 
-Artifacts are produced by Phase I of the layered build process —
-`research-scaffold.py` creates an empty shell, `extract-source.py`
-produces scratch files from the archived primary sources, and Phase I
-populates the sections per `prompts/build.md`. Phase II
-(`build-from-research.py`) then regenerates the narrative node from the
-artifact. Phase III (`review-coverage.py`) verifies the two layers are
-in coverage alignment.
+Artifacts are produced by the build pipeline — `research-scaffold.py`
+creates an empty shell, `extract-source.py` produces scratch files from
+the archived primary sources, and the `/build` pipeline (worker + builder
+roles) populates the sections. `build-from-research.py` then regenerates
+the narrative node from the artifact, and `review-coverage.py` verifies
+the two layers are in coverage alignment.
 
 Current inventory lives on disk under `meta/research/`. Use
 `validate-research.py` to audit artifact integrity.

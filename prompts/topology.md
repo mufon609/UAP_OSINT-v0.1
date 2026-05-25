@@ -11,9 +11,6 @@ the toolkit:
   fix-the-data, branches) → preloaded into every role from
   `.claude/skills/build-protocol/` (so no role restates it).
 
-`prompts/build.md` remains the single-session fallback for a build that
-shouldn't be decomposed.
-
 This file carries only the **rationale**. The contract statements themselves —
 source-read-first, the orchestration branches, the handoff schema — live once in
 `.claude/skills/build-protocol/SKILL.md` and are *cited* here, not restated.

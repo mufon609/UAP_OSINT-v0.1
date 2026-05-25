@@ -73,8 +73,7 @@ If any validator errors, the bootstrap is broken; fix before adding content.
 ## Step 6 — First commit
 
 Commit the wipe + new `overview.md` + new `research-queue.md` as commit-zero.
-Subsequent sessions use `/build` (the multi-agent pipeline; `prompts/build.md`
-is the single-session fallback).
+Subsequent sessions use `/build` (the multi-agent pipeline).
 
 ## What NOT to change
 
@@ -82,7 +81,7 @@ Topic-neutral toolkit — do not modify during fork-init:
 
 - `meta/schema.yaml`, `meta/conventions.md`, `meta/templates/` — spec, discipline, templates.
 - `scripts/` — validators, renderer, scaffolders, source tooling, hook guards.
-- `prompts/` — the kept design docs (`topology.md`, `build.md`, `web-claude-*`).
+- `prompts/` — the kept design docs (`topology.md`, `web-claude-*`).
 - **`.claude/skills/`, `.claude/agents/`, `.claude/settings.json`** — the
   skills, role subagents, and hook wiring. These encode *how to build any
   node*, not *what this instance investigates*; keep them placeholder-only.

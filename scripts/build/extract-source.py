@@ -25,9 +25,9 @@ Output paths (deterministic):
 Batch mode also prints PDF metadata for each source (useful for
 populating document_intrinsic in the research artifact).
 
-Does NOT modify the research artifact. Phase I contributor reads the
-scratch file, extracts verbatim passages, and populates the artifact
-manually (or via bounded agent tasks per prompts/build.md).
+Does NOT modify the research artifact. The contributor reads the scratch
+file, extracts verbatim passages, and populates the artifact (the `/build`
+worker role, or manually).
 """
 
 import argparse
@@ -235,7 +235,7 @@ def do_batch(artifact_path):
     else:
         print(f"✓ All {len(sources)} sources extracted.")
     print()
-    print("Next (Phase I steps, per prompts/build.md):")
+    print("Next — populate the research artifact (the /build pipeline):")
     print(f"  - Review each /tmp/scratch-{slug}-N.txt")
     print(f"  - Populate document_intrinsic / context_extrinsic in {artifact_path.relative_to(REPO_ROOT)}")
     print(f"  - Populate quotes, naming_quirks")

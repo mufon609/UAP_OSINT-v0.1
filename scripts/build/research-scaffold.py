@@ -403,7 +403,7 @@ def main():
     print(f"  2. Populate the artifact's content sections from the extracted text.")
     print(f"     The per-type field set — document_intrinsic / context_extrinsic, the")
     print(f"     synthesis prose fields, quotes, and any type-conditional sections — is")
-    print(f"     documented in prompts/build.md Phase I (and `research-scaffold.py")
+    print(f"     documented in meta/schema.yaml + meta/conventions.md (and `research-scaffold.py")
     print(f"     --explain FIELD` prints any list field's entry shape). Source-read-first:")
     print(f"     every quote copied verbatim from the scratch files; density is")
     print(f"     source-driven — no count targets (see meta/conventions.md).")
