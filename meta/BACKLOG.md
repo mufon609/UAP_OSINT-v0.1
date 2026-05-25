@@ -212,3 +212,25 @@ backlink is redundancy, not discipline. No change.)
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C2 — Investigate whether the Description "no-duplication" convention should relax
+
+The maintainer wants `## Description` to read as a well-defined summary that may
+surface select salient items also living in a structured section (a key
+relationship, timeline event, contract, finding). The current convention pushes
+the other way — `meta/conventions.md` "Date precision: orientation-grade in prose,
+field-precise in tables" states *Description should not duplicate field-precise
+dates from a structured surface* and *eliminating duplication removes a drift
+surface*. That anti-drift rationale is load-bearing, so a relaxation could easily
+go bad; it is deferred for investigation, not changed in place.
+
+Avenues to weigh before any edit: (a) survey how built nodes actually use
+Description today — is the overlap pressure real or rare?; (b) whether the
+carve-out should stay field-precise-only (exact dates / dollar amounts / control
+numbers single-sourced in their table; orientation-grade overlap allowed); (c)
+whether the `description_token_drift` check needs any change (it checks grounding,
+not overlap, so likely none). Produce a recommended wording, then edit the
+convention and record the rationale.
+
+**Blocks:** none.
+**Blocked by:** none.
