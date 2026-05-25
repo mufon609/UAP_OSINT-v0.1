@@ -219,26 +219,23 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-**(c) DIRD page-ref convention — finish the two unpaginated siblings.** The
-standard is settled: `meta/conventions.md` "p. N is the physical page" names roman
-front matter (`p. ii`) as exactly the printed-label form a ref must NOT use; the
-anchor is the physical page (the Nth form-feed / sibling block), which
-`quote_location_page` verifies — but it silently SKIPS roman refs (digit-only
-regex), so roman front-matter refs went unverified. The roman refs in the
-paginated DIRDs (**dird-01/03/04/05/15**) have been converted to physical page
-numbers — each resolved by matching the quote text to its actual block, since the
-cover offset isn't uniform (dird-15 is +1) — and are now page-verified.
-(The map-roman-to-block-in-the-checker alternative was rejected: that offset is
-not uniform, so resolving roman labels would false-fail correct quotes; the
-standard says convert, not resolve.) Remaining: **dird-02 and dird-26** still
-carry roman refs AND their `.txt` siblings carry no `----- PAGE BREAK -----`
-markers (unpaginated), so *no* ref there — roman or arabic — is page-verified.
-Re-segment those two siblings with page-break markers (a `/prepare-ocr-sibling`
-re-run), then convert their roman refs. Once no roman refs remain corpus-wide,
-tighten `quote_location_page` to flag `p. <roman>` as non-compliant (it currently
-skips them) so the standard self-enforces. (Auditor caution: the build-role
-auditor's recommend-only family-comparability pass is not exhaustive across the
-family — a corpus-wide convention sweep like this needs a dedicated pass.)
+**(c) DIRD page-ref convention — DONE (all 11 DIRDs).** Settled rule
+(`meta/conventions.md` "`p. N` is the physical page"): `p. N` = the PDF viewer's
+page N (the Nth physical page of the file), so a reader opening the source PDF
+to page N lands on the quote. The OCR sibling therefore preserves **every**
+physical page verbatim — including the third-party Black Vault distribution page
+the PDFs carry at physical page 2 (preserved as-is, never summarized, never
+dropped). All 11 built DIRD siblings now mirror their PDFs page-for-page (block
+count == pdfinfo page count) and every quote / naming-quirk / cited-work ref is a
+PDF-viewer page, verified against the corrected sibling: dird-01/03/04/05/07/18
+had the dropped insert restored + refs shifted +1; dird-06 had the insert
+restored + a merged front-matter page split + a piecewise shift; dird-02/26 had a
+contributor *summary* of the insert replaced with the verbatim page, bespoke
+`--- page N ---` markers normalized to `----- PAGE BREAK -----`, and refs
+renumbered from the document's printed labels to PDF-viewer pages; dird-24 already
+complied; dird-15 (non-Black-Vault) has no insert. (This superseded an earlier
+omit-the-insert / physical-sheet attempt — counting the document's own pages and
+dropping the insert made `p. N` source-dependent, the opposite of findable.)
 
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
@@ -301,3 +298,33 @@ convention and record the rationale.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C3 — Paginate the OCR siblings whose `p. N` refs are silently skipped
+
+`quote_location_page` only verifies `p. N` when the source extract is
+page-structured (a `----- PAGE BREAK -----` sibling → `\f`). A repo-wide audit
+(during the DIRD page-ref work) found **17 artifacts cite `p. N` against a source
+whose `.txt` sibling is unpaginated** — so those refs are silently skipped and the
+page-precision check is effectively inactive for most non-DIRD sources. The
+quotes' *text* is still verbatim-verified; only the *page* is unchecked. Affected
+sources (sibling carries no page markers): the hearing transcripts
+(`armed-services-senate-gov-sasc-aaro-transcript-20230419` / `-20241119`,
+`congress-gov-house-hearing-transcript-20230726`), the CIA SRI/Geller docs
+(`cia-rdp79-00999a000300030027-0`, `cia-rdp96-...100180001-3`,
+`cia-rdp96-...100220001-8`), the FOIA releases (`foia-23-f-0905-doc-1` / `-doc-2`,
+`foia-23-f-0906-sancorp-ipmo-pws`), `docs-house-gov-hhrg-118-go12-20241113-sd004`,
+and `blackvault-aaro-invitations-to-grusch-24-F-0266`. Separately, a few `p. N`
+refs sit on **HTML** sources that have no pages (`sec-ttsa-1a-partii-20170710`,
+two `opg.optica.org` Targ articles) — those are mis-formatted and should be `¶N`.
+
+Fix: paginate each OCR sibling with `----- PAGE BREAK -----` so block N = PDF
+viewer page N (the rule the DIRDs now follow), re-verify each artifact's `p. N`
+refs resolve, and convert the HTML `p. N` refs to `¶N`. **Then** add the guard:
+for any source with a `.txt` sibling, the sibling's `\f`-block count must equal
+the PDF's page count (`pdfinfo`) — mechanically catches a sibling that doesn't
+mirror its PDF (unpaginated or page-short), so the silent-skip can't recur. The
+guard is deferred until the siblings are paginated; added now it would flag all
+17 at once. (All 11 DIRD siblings already satisfy block-count == pdfinfo-pages.)
+
+**Blocks:** none.
+**Blocked by:** none — each source's sibling can be paginated independently.
