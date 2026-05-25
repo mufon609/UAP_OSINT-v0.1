@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — H.E. Puthoff, EarthTech International, DIA AAWSA Program, 29 March 2010
+# Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — H.E. Puthoff, EarthTech International, DIA AAWSAP, 29 March 2010
 
 ## Document Summary
 
@@ -24,7 +24,7 @@ doc_form: technical-report
 
 ## Description
 
-Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering. The author is H.E. Puthoff, Ph.D. ([`/people/hal-puthoff`]) of EarthTech International, Inc. ([`/organizations/earthtech-international`]), Austin, Texas; the document was prepared by the Acquisition Support Division (DWO-3) of the Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency ([`/organizations/dia`]), 29 March 2010, with an ICOD of 1 December 2009. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Advanced Aerospace Weapon System Applications (AAWSA) Program and is addressed to James T. Lacatski, D.Eng. ([`/people/james-lacatski`]), AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]). UNCLASSIFIED//FOR OFFICIAL USE ONLY.
+Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering. The author is H.E. Puthoff, Ph.D. ([`/people/hal-puthoff`]) of EarthTech International, Inc. ([`/organizations/earthtech-international`]), Austin, Texas; the document was prepared by the Acquisition Support Division (DWO-3) of the Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency ([`/organizations/dia`]), 29 March 2010, with an ICOD of 1 December 2009. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`] and is addressed to James T. Lacatski, D.Eng. ([`/people/james-lacatski`]), AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]). UNCLASSIFIED//FOR OFFICIAL USE ONLY.
 
 The paper considered the concept that empty space itself — the quantum vacuum, or spacetime metric — might be engineered to provide energy/thrust for future space vehicles. Puthoff states the proposal is solidly grounded in modern physical theory: "engineering the vacuum" was introduced by Nobelist T. D. Lee, and a statement acknowledging the central role of the vacuum in modern physics is provided by 2004 Nobelist Frank Wilczek. The vacuum is characterized as an energetic and structured medium: within quantum theory the seat of energetic particle and field fluctuations, and within general relativity the seat of a spacetime structure (metric) that encodes the distribution of matter and energy.
 
@@ -196,6 +196,16 @@ The analysis is a model-independent, "general relativity for engineers" approach
 
 ---
 
+## Source-Form Notes
+
+Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
+
+| Source Form | Canonical | Source |
+|---|---|---|
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf |
+
+---
+
 ## References
 
 Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
@@ -234,6 +244,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### Organizations
 
+- [`/organizations/aawsap`]
 - [`/organizations/dia`]
 - [`/organizations/earthtech-international`]
 

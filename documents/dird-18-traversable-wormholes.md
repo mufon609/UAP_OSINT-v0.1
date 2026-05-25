@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Traversable Wormholes, Stargates, and Negative Energy — DIA Defense Intelligence Reference Document, AAWSA Program, 6 April 2010
+# Traversable Wormholes, Stargates, and Negative Energy — DIA Defense Intelligence Reference Document, AAWSAP, 6 April 2010
 
 ## Document Summary
 
@@ -24,7 +24,7 @@ doc_form: technical-report
 
 ## Description
 
-Traversable Wormholes, Stargates, and Negative Energy. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-004, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document gives (b)(3):10 USC 424 and Defense Intelligence Agency ([`/organizations/dia`]) and, on the Author line, (b)(6). An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author appears there, not on the document, which shows only (b)(6) on the Author line.
+Traversable Wormholes, Stargates, and Negative Energy. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-004, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document gives (b)(3):10 USC 424 and Defense Intelligence Agency ([`/organizations/dia`]) and, on the Author line, (b)(6). An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author ([`/people/eric-davis`]) appears there, not on the document, which shows only (b)(6) on the Author line.
 
 
 The Summary states that implementation of faster-than-light interstellar travel via traversable wormholes generally requires engineering spacetime into very specialized local geometries, and that the analysis of these via Einstein's General Theory of Relativity demonstrates such geometries require the use of exotic matter; these issues are reviewed and summarized. The principle of traversable wormholes was discovered in 1985 by Morris and Thorne as an academic exercise at the request of Carl Sagan for his novel Contact. The source of matter for a traversable wormhole must have zero or negative energy density and/or an outward radial tension (negative pressure) larger than the magnitude of the energy density; a 1-handle/throat wormhole is the most desirable engineering solution, requiring zero or arbitrarily little negative energy. A stargate is a traversable wormhole with a flat-face shape for the throat rather than the spherical-shaped throat of the Morris and Thorne wormhole, constructed by generating a thin shell or surface layer of exotic matter. The exotic matter threading a wormhole throat produces repulsive gravity, which will then deflect light rays, so the entrance to a spherically symmetric wormhole looks like a sphere that contains the mirror image of the far region, and if a small wormhole were to begin to appear or even bump into our local space one would perceive this process as the occurrence of an unusually bright spot in the sky with blue and red Doppler shifting.
@@ -579,6 +579,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Transversable | Traversable | government/dird-18-traversable-wormholes-20100406.pdf |
 | (b)(6) | [author identity withheld under FOIA exemption (b)(6)] | government/dird-18-traversable-wormholes-20100406.pdf |
 | (b)(3):10 USC 424 | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-18-traversable-wormholes-20100406.pdf |
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-18-traversable-wormholes-20100406.pdf |
 
 ---
 
@@ -670,8 +671,13 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ## Associated Nodes
 
+### People
+
+- [`/people/eric-davis`]
+
 ### Organizations
 
+- [`/organizations/aawsap`]
 - [`/organizations/dia`]
 
 ### Documents
