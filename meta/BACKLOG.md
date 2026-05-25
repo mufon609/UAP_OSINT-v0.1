@@ -164,6 +164,31 @@ a fully-verified sibling can be registered; per the no-half-verified-sibling rul
 the node is deferred until then. Other unbuilt DIRDs with weaponization /
 negative-energy content may hit the same filter; the documented ladder applies.
 
+**(c) DIRD corpus consistency sweep — two cross-DIRD inconsistencies found during
+the dird-05 build.** Both are family-comparability sweeps best done in one focused
+`/audit` pass, not piecemeal:
+- *DIA forward-ref link.* 6 of 8 built DIRDs link `[`/organizations/dia`]` in their
+  description (the AAWSA Program Manager sits in DIA on every DIRD's Administrative
+  Note); **dird-02 and dird-26 omit it**. Add the link to those two (prose-drift-safe
+  — "Defense Intelligence Agency" is verbatim in each source). The
+  dird-build-out-roadmap's "settle when DIA/AAWSAP orgs are built" note resolves to:
+  the de-facto convention is the forward-ref link, so settling = making dird-02/26
+  match. (Building the `/organizations/dia` node itself remains a separate,
+  one-per-session synthesis-node decision.)
+- *Front-matter page-ref convention.* `quote_location_page` verifies arabic `p. N`
+  against the Nth sibling block but SKIPS roman refs (`p. ii`) as carrying no
+  physical-page claim. **5 of 8 DIRDs (dird-01/02/03/15/26) use roman printed-label
+  refs for front matter (unverified); 3 (dird-04/24/05) use arabic sibling-block
+  refs (verified).** Decide the standard and apply: (i) convert the 5 to arabic
+  sibling-block (conventional per `meta/conventions.md` "p. N = physical, not
+  printed"; verified) — a 5-node content sweep; or (ii) extend `quote_location_page`
+  to map roman front-matter labels to sibling blocks and verify them (one-script
+  root-cause fix, keeps reader-faithful printed labels — viable where the roman
+  value equals the block index, as it does for dird-26). Pick one; don't leave the
+  split. (Auditor note: the build-role auditor flagged the roman-ref issue as
+  dird-26-specific and missed dird-02's DIA-link omission — its recommend-only
+  family-comparability pass is not exhaustive across the family.)
+
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
 verification of the relevant region.
