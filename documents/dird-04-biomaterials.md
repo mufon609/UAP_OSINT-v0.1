@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Biomaterials — DIA Defense Intelligence Reference Document, AAWSA Program, 7 January 2010
+# Biomaterials — DIA Defense Intelligence Reference Document, AAWSAP, 7 January 2010
 
 ## Document Summary
 
@@ -24,11 +24,11 @@ doc_form: technical-report
 
 ## Description
 
-Biomaterials. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager ([`/organizations/dia`]). The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+Biomaterials. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency ([`/organizations/dia`]) Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author ([`/people/bruce-towe`]) appears there, not on the document.
 
 The Introduction states that biomaterials are metals, ceramics, polymers, glasses, carbons, and composite materials intended to interface with biological systems, used to treat, augment, or replace bodily tissues, organs, or functions; biomaterials are usually nonliving, but recent definitions also include living skin and tissues produced in culture. Artificial hips, vascular stents, artificial pacemakers, and catheters are all made of biocompatible materials that typically have a synthetic origin. Biocompatibility is an important issue in biomedical implants and sensors — the material-tissue interaction from implanting a foreign object is a major obstacle to stable, long-term implantable devices, a process sometimes known as biofouling — and more than 600 reported studies since 1996 found the biocompatibility of implanted biosensors poor enough that many companies abandoned implantable sensor devices altogether. Because biomaterials must be compatible with the body, they are usually subjected to the same very stringent safety requirements as those of new drug therapies.
 
-The document is a review of representative biomaterials and their applications, in some cases multibillion-dollar-a-year markets. Biomaterials for biosensors employ membranes to protect the active-sensing surface, the most successful being porous forms of Teflon, polyurethanes, and cellulose acetate. Biomaterials for biomedicine include silicone (polydimethylsiloxane, PDMS) and the 1995 Dow Corning breast implants settlement; Teflon (polytetrafluoroethylene, PTFE) and its expanded ePTFE mesh for vascular grafts; biodegradable polymers including polylactic acid (PLA) and polyglycolic acid (PGA), which need no second surgical intervention for removal; polyethylene glycol (PEG); hydrogels; titanium hip and knee joints; bioceramics and dental ceramics; and tissue constructs on scaffolds, where how to ensure angiogenesis is the biggest challenge. Cardiovascular biomaterials — devices in direct contact with blood — include vascular grafts for arteries blocked by fatty deposits (atherosclerosis), the rapid formation of thrombus that most materials trigger in blood contact, heart valves of stainless steel and woven Teflon, and stents that prop open a clogged artery, including the self-expanding shape memory alloy nitinol. Further applications are contact lenses, controlled drug delivery polymers, medical titanium and osseointegration (which dates back to Per-Ingvar Brånemark in 1952), and biomaterials in dialysis, where a cellulose acetate Cuprophane membrane has the critical role in cleansing the blood. The Summary and Recommendations state that the performance of biomaterials underlies the success of many medical devices that must be acceptable to body tissues.
+The document is a review of representative biomaterials and their applications, in some cases multibillion-dollar-a-year markets. Biomaterials for biosensors employ membranes to protect the active-sensing surface, the most successful being porous forms of Teflon, polyurethanes, and cellulose acetate. Biomaterials for biomedicine include silicone (polydimethylsiloxane, PDMS) and the 1995 class-action lawsuit against Dow Corning ([`/organizations/dow-corning`]), Inc. over the supposed dangers of silicone breast implants; Teflon (polytetrafluoroethylene, PTFE) and its expanded ePTFE mesh for vascular grafts; biodegradable polymers including polylactic acid (PLA) and polyglycolic acid (PGA), which need no second surgical intervention for removal; polyethylene glycol (PEG); hydrogels; titanium hip and knee joints; bioceramics and dental ceramics; and tissue constructs on scaffolds, where how to ensure angiogenesis is the biggest challenge. Cardiovascular biomaterials — devices in direct contact with blood — include vascular grafts for arteries blocked by fatty deposits (atherosclerosis), the rapid formation of thrombus that most materials trigger in blood contact, heart valves of stainless steel and woven Teflon, and stents that prop open a clogged artery, including the self-expanding shape memory alloy nitinol. Further applications are contact lenses, controlled drug delivery polymers, medical titanium and osseointegration (which dates back to Per-Ingvar Brånemark in 1952), and biomaterials in dialysis, where a cellulose acetate Cuprophane membrane has the critical role in cleansing the blood. The Summary and Recommendations state that the performance of biomaterials underlies the success of many medical devices that must be acceptable to body tissues.
 
 ---
 
@@ -708,7 +708,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | (b)(3):10 USC 424 | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-04-biomaterials-20100107.pdf |
 | (b)(6) | [author identity withheld under FOIA exemption (b)(6)] | government/dird-04-biomaterials-20100107.pdf |
-| AAWSA | AAWSAP | government/dird-04-biomaterials-20100107.pdf |
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-04-biomaterials-20100107.pdf |
 | atherothrosclerosis | atherosclerosis | government/dird-04-biomaterials-20100107.pdf |
 | Bjork Shiley | Björk–Shiley | government/dird-04-biomaterials-20100107.pdf |
 
@@ -716,9 +716,15 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ## Associated Nodes
 
+### People
+
+- [`/people/bruce-towe`]
+
 ### Organizations
 
+- [`/organizations/aawsap`]
 - [`/organizations/dia`]
+- [`/organizations/dow-corning`]
 
 ### Documents
 

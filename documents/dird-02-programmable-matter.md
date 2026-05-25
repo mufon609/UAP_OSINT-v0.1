@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Aerospace Applications of Programmable Matter — DIA Defense Intelligence Reference Document, AAWSA Program, 14 December 2009
+# Aerospace Applications of Programmable Matter — DIA Defense Intelligence Reference Document, AAWSAP, 14 December 2009
 
 ## Document Summary
 
@@ -24,11 +24,13 @@ doc_form: technical-report
 
 ## Description
 
-Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line on every page. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line on every page. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document's Author line carries only a FOIA redaction marker, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).
 
 In the Introduction, the document states that when sensors, filters, emitters, and photovoltaic solar panels are made of Programmable Matter smart materials, the solution to a component failure or new mission requirement might be as simple as a software update. Other advantages of dynamic materials include advanced energy management and energy scavenging from a variety of sources; smart materials can even create new defensive capabilities, such as chameleon-style camouflage, deflection of laser beams, and even outright invisibility. The white paper is intended to serve as a primer on the principles behind smart materials and their possible aerospace applications over the next 50 years.
 
 The document sets out four kinds of "atoms" — natural atoms, quantum dots, photonics and metamaterials, and liquid crystals — and how it is possible to pump electrons in and out of a quantum dot using electric fields to create a programmable material whose "atoms" can be changed on demand. In theory, a block of true Programmable Matter should be able to select any point on any of these axes at any time, including magnetoresistivity, photo-/thermo-/piezoelectric effects, superconductivity, and the ability to perform computations. In addition, there is the threat of hackers; the document states we must be extremely cautious about handing malicious hackers the keys to matter itself. Aerospace applications include the possibility to reconfigure a single spacecraft attitude sensor to operate as a sun sensor, horizon sensor, or star sensor; thermal management of spacecraft; and energy-scavenging spacecraft skins; in a Scenario for Possible Applications a space station can in a pinch even turn "invisible," taking light and heat from one side and emitting a matching signal on the other side. The Directions for Future Research state that near-term applications such as smart windows and energy-saving metapolarizers should be considered the most promising for research over the next 5 years, while building and vehicle skins, sensors, and windows are three areas that particularly lend themselves to enhancement with multifunctional materials. The Conclusions state that if even a fraction of these possibilities were to become reality in crewed and crewless spacecraft, the gains in energy efficiency, mass reduction, safety, comfort, and mission flexibility could be extremely significant and well worth pursuing.
+
+On early commercialization, the document states that in the third quarter of 2009 RavenBrick LLC [`/organizations/ravenbrick`] introduced RavenWindow, a thermoreflective window film that is transparent when cold and partially reflective when hot. A 2003 study described in the document was performed by the U.S. Department of Energy's Lawrence Berkeley National Laboratory (LBNL) [`/organizations/lawrence-berkeley-national-laboratory`] on behalf of ASHRAE on dynamic window systems; studies performed by RavenBrick using LBNL tools show energy savings up to three times those of low-E glass alone.
 
 ---
 
@@ -251,7 +253,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | (b)(6) | [author identity withheld under FOIA exemption (b)(6)] | government/dird-02-programmable-matter-20091214.pdf |
 | (b)(3):10 USC 424 | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-02-programmable-matter-20091214.pdf |
 | UNCLASSIFIED//FOR OFFICIAL USE ONLY (FOUO struck through) | UNCLASSIFIED//FOR OFFICIAL USE ONLY | government/dird-02-programmable-matter-20091214.pdf |
-| AAWSA | AAWSAP | government/dird-02-programmable-matter-20091214.pdf |
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-02-programmable-matter-20091214.pdf |
 
 ---
 
@@ -272,6 +274,17 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ---
 
 ## Associated Nodes
+
+### People
+
+- [`/people/w-mccarthy`]
+
+### Organizations
+
+- [`/organizations/aawsap`]
+- [`/organizations/dia`]
+- [`/organizations/lawrence-berkeley-national-laboratory`]
+- [`/organizations/ravenbrick`]
 
 ### Documents
 

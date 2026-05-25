@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Materials for Advanced Aerospace Platforms — DIA Defense Intelligence Reference Document, AAWSA Program, 12 January 2010
+# Materials for Advanced Aerospace Platforms — DIA Defense Intelligence Reference Document, AAWSAP, 12 January 2010
 
 ## Document Summary
 
@@ -24,11 +24,11 @@ doc_form: technical-report
 
 ## Description
 
-Materials for Advanced Aerospace Platforms. The Defense Intelligence Reference Document carries the Acquisition Threat Support series, control number DIA-08-0912-008, 12 January 2010, ICOD 1 December 2009, and UNCLASSIFIED//FOR OFFICIAL USE ONLY. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager ([`/organizations/dia`]). It is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the Author is redacted under (b)(6), so the author is named there and not on the document itself.
+Materials for Advanced Aerospace Platforms. The Defense Intelligence Reference Document carries the Acquisition Threat Support series, control number DIA-08-0912-008, 12 January 2010, ICOD 1 December 2009, and UNCLASSIFIED//FOR OFFICIAL USE ONLY. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager ([`/organizations/dia`]). It is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the Author is redacted under (b)(6), so the author ([`/people/j-williams`]) is named there and not on the document itself.
 
 The document discusses "advanced aerospace platforms" divided into the narrower areas of launch vehicles, space vehicles, and space propulsion systems, separately because their key requirements are often application specific. Its design point is that any "clean sheet of paper design" must start with an assessment of the requirements for construction materials against the capability of currently available materials, and that a gap between the two requires a risk assessment and risk-mitigation plan before expending engineering hours and funds — the National Aerospace Plane (the Orient Express), a mach 12 reusable strike vehicle, became materials limited and was canceled in 1993 after about $750 million in federal R&D. Since the inception of manned space flight the approach to design has changed from zero defects to damage tolerance, on the recognition that complex structures cannot be designed and produced with zero defects.
 
-For launch vehicle structure where aerodynamic heating does not exceed about 125 °Celsius the prime candidates are advanced high-strength aluminum (Al) alloys and polymer matrix carbon fiber composites (PMCs); advanced Al alloys fabricated through friction stir welding (FSW) offer an incremental but significant improvement over the alloys used in the Saturn launch vehicle, while PMCs introduce galvanic corrosion in direct contact with Al and a resin temperature limit (conventional epoxies to about 125 °Celsius, bismaleimides to about 175 °Celsius, linear polyimides to about 300 °Celsius). For heavily loaded structures or temperatures higher than about 200 °Celsius, Ti alloys are the preferred material class. A reusable single-stage-to-orbit (SSO) vehicle will require metallic materials for the thermal protection system (TPS) and much of the other hot structure; the space shuttle is characterized as a "cold structure" with an insulating TPS, and the carbon-carbon composites (C-CCs) on its wing leading edges "age" and lose fracture toughness, a prime factor in the Columbia disaster. The document shows essentially ten distinct classes of candidate materials by operating temperature regime — advanced Al alloys, Al matrix composites, Ti alloys, Ti matrix composites, Ni-base "superalloys," refractory metal alloys, ceramic matrix composites (CMCs), carbon-carbon composites, and the titanium aluminides (γ-TiAl) — among which CMCs hold the greatest promise of defeating the temperature limits of current metals. A recurring point is that high-performance, high-value structures are cost intensive rather than technology dependent.
+For launch vehicle structure where aerodynamic heating does not exceed about 125 °Celsius the prime candidates are advanced high-strength aluminum (Al) alloys and polymer matrix carbon fiber composites (PMCs); advanced Al alloys fabricated through friction stir welding (FSW) offer an incremental but significant improvement over the alloys used in the Saturn launch vehicle, while PMCs introduce galvanic corrosion in direct contact with Al and a resin temperature limit (conventional epoxies to about 125 °Celsius, bismaleimides to about 175 °Celsius, linear polyimides to about 300 °Celsius). For heavily loaded structures or temperatures higher than about 200 °Celsius, Ti alloys are the preferred material class. A reusable single-stage-to-orbit (SSO) vehicle will require metallic materials for the thermal protection system (TPS) and much of the other hot structure; the space shuttle is characterized as a "cold structure" with an insulating TPS, and the carbon-carbon composites (C-CCs) on its wing leading edges "age" and lose fracture toughness, a prime factor in the Columbia disaster. The document shows essentially ten distinct classes of candidate materials by operating temperature regime — advanced Al alloys, Al matrix composites, Ti alloys, Ti matrix composites, Ni-base "superalloys," refractory metal alloys, ceramic matrix composites (CMCs), carbon-carbon composites, and the titanium aluminides (γ-TiAl) — among which CMCs hold the greatest promise of defeating the temperature limits of current metals. For titanium matrix composites, in the 1990s the most attractive reinforcing fiber, SCS-6, was produced exclusively by Textron Specialty Materials (TSM) [`/organizations/textron-specialty-materials`] in Lowell, MA, and work on TMCs halted after about $500 million of U.S. government funds. Among γ-TiAl applications, the most significant are two stages of low-pressure turbine blades in the engine General Electric [`/organizations/general-electric`] is providing for the Boeing 787 and the growth 747 (the 747-8). A recurring point, which the document supports with the example of the GE90 turbofan engine fan blades — made from PMCs — that General Electric produced for the Boeing 777, is that high-performance, high-value structures are cost intensive rather than technology dependent.
 
 Among propulsion systems, only reusable rocket engines are considered, as they hold the most potential to reduce the cost of placing payloads into orbit; developing a Ni-base alloy with improved hydrogen tolerance for the turbine would be a much better use of available rocket engine alloy development resources than a lighter combustion chamber or the costly Ti-5-2.5 cryopump rotor alloy. Among the summary and recommendations is the ability to achieve better design efficiency through a design synthesis process that concurrently treats form, fit and function, manufacturing capability, and materials capability as equally important design constraints — engineering nearing a state where it may now be feasible — while the long lead time holding back these methods is most often the timely availability of sufficiently mature new materials, which computational materials engineering is being used to address but still requires further advances.
 
@@ -660,7 +660,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| AAWSA Program | AAWSAP (Advanced Aerospace Weapon System Applications Program) | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
 | 125 °Celsius / 175° Celsius (inconsistent degree-symbol spacing) | °C | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
 | C-CC Cs | C-CCs | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
 | Reusable Reentry Vehicle | Reusable Crew Modules | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
@@ -682,9 +682,16 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ## Associated Nodes
 
+### People
+
+- [`/people/j-williams`]
+
 ### Organizations
 
+- [`/organizations/aawsap`]
 - [`/organizations/dia`]
+- [`/organizations/general-electric`]
+- [`/organizations/textron-specialty-materials`]
 
 ### Documents
 
