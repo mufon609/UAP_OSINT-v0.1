@@ -93,7 +93,7 @@ can read clean while artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (23)
+### Documents (24)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -104,6 +104,7 @@ can read clean while artifact-level warnings stand.
 | `/documents/dird-03-pulsed-hpm` | primary-source-confirmed | gov-doc |
 | `/documents/dird-04-biomaterials` | primary-source-confirmed | gov-doc |
 | `/documents/dird-05-aerospace-platforms-materials` | primary-source-confirmed | gov-doc |
+| `/documents/dird-06-space-access` | primary-source-confirmed | gov-doc |
 | `/documents/dird-15-advanced-space-propulsion` | primary-source-confirmed | gov-doc |
 | `/documents/dird-18-traversable-wormholes` | primary-source-confirmed | gov-doc |
 | `/documents/dird-24-quantum-vacuum-energy-extraction` | primary-source-confirmed | gov-doc |
