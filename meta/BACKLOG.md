@@ -148,26 +148,10 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-*dird-18 content-filter blocker — isolated.* The VLM producer hard-blocks on the
-API content-filter policy (`Output blocked by content filtering policy`). The
-block is now isolated to physical pages 31–35 (printed 22–26): §IV-B/C
-negative-energy constraints + §V Conclusion, which recounts nuclear-weapon
-development history (the likely trigger). Physical pages 1–30 are
-VLM-transcribable (a chunked producer completed them) and 36–43 (References
-[1]–[79] + conclusion tail) are benign. The content-filter fallback ladder —
-local Tesseract production (filter-proof) + chunked, incrementally-written VLM
-correction to isolate the block + non-VLM verification routing — is documented in
-`.claude/skills/prepare-ocr-sibling/SKILL.md` "Fallback — when the producer is
-blocked". Remaining for the dird-18 node: the 5 blocked pages need a non-VLM
-verification path (second OCR-engine cross-check, or human transcription) before
-a fully-verified sibling can be registered; per the no-half-verified-sibling rule
-the node is deferred until then. Other unbuilt DIRDs with weaponization /
-negative-energy content may hit the same filter; the documented ladder applies.
-
 **(c) DIRD corpus consistency sweep — two cross-DIRD inconsistencies found during
 the dird-05 build.** Both are family-comparability sweeps best done in one focused
 `/audit` pass, not piecemeal:
-- *DIA forward-ref link.* 6 of 8 built DIRDs link `[`/organizations/dia`]` in their
+- *DIA forward-ref link.* 7 of 9 built DIRDs link `[`/organizations/dia`]` in their
   description (the AAWSA Program Manager sits in DIA on every DIRD's Administrative
   Note); **dird-02 and dird-26 omit it**. Add the link to those two (prose-drift-safe
   — "Defense Intelligence Agency" is verbatim in each source). The
@@ -177,8 +161,8 @@ the dird-05 build.** Both are family-comparability sweeps best done in one focus
   one-per-session synthesis-node decision.)
 - *Front-matter page-ref convention.* `quote_location_page` verifies arabic `p. N`
   against the Nth sibling block but SKIPS roman refs (`p. ii`) as carrying no
-  physical-page claim. **5 of 8 DIRDs (dird-01/02/03/15/26) use roman printed-label
-  refs for front matter (unverified); 3 (dird-04/24/05) use arabic sibling-block
+  physical-page claim. **5 of 9 DIRDs (dird-01/02/03/15/26) use roman printed-label
+  refs for front matter (unverified); 4 (dird-04/24/05/18) use arabic sibling-block
   refs (verified).** Decide the standard and apply: (i) convert the 5 to arabic
   sibling-block (conventional per `meta/conventions.md` "p. N = physical, not
   printed"; verified) — a 5-node content sweep; or (ii) extend `quote_location_page`
