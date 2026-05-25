@@ -660,6 +660,28 @@ written-testimony nodes. What a hearing "established" is the verbatim
 record those linked nodes carry; the event node navigates to them
 rather than paraphrasing.
 
+### Key Testimony selection — substantive over procedural
+
+The hearing-event `## Key Testimony` section (and the analogous
+`## Key Passages` on a hearing transcript) highlights the distinctive
+evidentiary moments that make the hearing worth archiving — not
+procedural scaffolding. Skip what a structured field already captures:
+convening / adjournment / gavel timings (`event_intrinsic.start_time` /
+`end_time` + Timeline), oath administration and "I do" affirmations
+(`witnesses_testimony[].oath_status: sworn`), and routine procedural
+exchanges (recognizing a Member, yielding time, submitting for the
+record) — unless the procedural act is itself evidentiarily novel (e.g.
+unanimous consent to classify). Prefer the specific factual claims
+witnesses assert, the strongest corroborations or contradictions between
+witnesses, the most-cited post-hearing press moments, and a Member's
+quotable bipartisan or closing frame. Procedural weight lives in the
+structural fields; the Key Testimony section is the highlights reel.
+
+Event-level Key Testimony may overlap the witness-specific transcript or
+document Key Passages, and that is expected: an event stands as a
+self-contained highlights reel an investigator can read without clicking
+through, and the renderer does not deduplicate across nodes.
+
 ### Contributor prose is labeled and drift-checked
 
 Contributor prose sits on labeled synthesis fields (`description`,
@@ -803,6 +825,10 @@ whose author line is `(b)(6)`-redacted on the document but identified in the
 DIA→Congress products list — the author is carried by the link
 (`[/people/…]`, `[/documents/dia-aatip-products-list-2018]`) and held in
 `context_extrinsic`, never named in the description prose (dird-24, dird-26).
+The document's own `authors_per_document` records the redaction verbatim
+(`['[redacted per FOIA (b)(6)]']`) and stops — never substitute the
+externally-attested name into this document's intrinsic authorship; that name is
+a fact of the *attesting* source's node, reached by the cross-reference.
 `check-vocab.py` surfaces the nearest source forms for an absent token (a
 morphology variant or typo), but it never credits metadata either — the floor
 is the same.
@@ -1330,6 +1356,13 @@ substance is relevant by program proxy; built one per session, they drifted to a
 afresh with no shared selection rule. The rubric below replaces that judgment
 with a category checklist, so density falls out of consistent selection rather
 than becoming a target in its own right.
+
+**Slug convention for a serially-released corpus.** A node in a numbered set of
+released documents (e.g. the FOIA-released DIRDs) is slugged
+`{corpus}-{release#}-{short-title}` with NO date (`dird-03-pulsed-hpm`, not
+`dird-…-20100128`): siblings then sort and cross-reference by release number, and
+inbound stub references reconcile to that one form. The date lives in
+`internal_date` / the manifest, not the slug.
 
 Every DIRD node captures, where the source contains it:
 
