@@ -693,6 +693,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #6 — ''Space Access'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 8 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 57 pages. DIA attachment #4 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. P. Czysz, HyperTech (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_06-DIRD_Space_Access-Where_Weve_Been_and_Where_We_Could_Go.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-06-bv-space-access-20100308.txt
+    archived_date: '2026-05-25'
+    note: 'Clean-text sibling of the OCR-scanned DIRD-06 ''Space Access: Where We''ve Been and Where We Could Go''. Produced 2026-05-25 via multimodal page-image read; independently verified 2026-05-25 by a separate agent session — PASS. Black Vault cover insert (PDF p.2) excluded; 55 document pages (front matter i/ii/iv/v/vi/vii + body 1-49). Equations/figures bracketed; redactions (author line (b)(6); AAWSA Program Manager (b)(3)/(b)(6)) and source spellings (endnote year ''20089'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf
   status: archived
   artifacts:
