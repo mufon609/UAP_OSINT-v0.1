@@ -137,8 +137,8 @@ segment-snap tolerance).
    stenographic / published hearing transcripts are speaker-labeled in source
    (mechanically verifiable, low-risk); auto-caption / Whisper interview transcripts are
    label-less (image path where video exists, else audio path + mixed tag). Candidates:
-   the `other`-kind nodes — jre-2194, 8newsnow, mysterywire, weaponized-*, and the two
-   other lucistrust talks. Still open: the generic conversation template in
+   the `other`-kind nodes — jre-2194, 8newsnow, mysterywire, and the weaponized-*
+   set (038/096/097/114). Still open: the generic conversation template in
    `conventions.md` (narration as a `speakers[]` Narrator entry; non-speech captured
    only when verbatim-in-source AND load-bearing; same-speaker-different-recording via
    `statement_date` + `context`) — fold in as the corpus audit surfaces the cases.
@@ -172,31 +172,38 @@ equation/superscript energy-density passages intentionally left unquoted. Each
 re-level requires image-verifying the relevant OCR-sibling body regions against
 the PDF first (the built DIRDs verified only their already-quoted regions — see
 the dird-24 sibling note for the precedent). Use `coverage-suggest.py` + the
-rubric. Remaining: dird-04 (55 quotes) audited for whether each quote is a
-distinct subsection finding (likely over the bar, not under); dird-01/02/03/15/26
-audited for any skipped section findings. Re-level the set for consistency.
+rubric. Remaining: dird-04 (55) and dird-05 (50) — the density outliers —
+audited for whether each quote is a distinct subsection finding (likely over the
+bar, not under); dird-01/02/03/06/07/15/18/26 audited for any skipped section
+findings (dird-05/06/07/18 were built after this item was opened and are not yet
+rubric-audited). Re-level the set for consistency.
 
 | DIRD | pages | quotes | quotes/page |
 |---|---|---|---|
-| dird-24 quantum-vacuum-energy-extraction (RE-LEVELED → 19) | 58 | 9→19 | 0.33 |
+| dird-06 space-access | 57 | 16 | 0.28 |
+| dird-24 quantum-vacuum-energy-extraction (re-leveled) | 58 | 19 | 0.33 |
 | dird-26 field-effects | 39 | 21 | 0.54 |
 | dird-01 metallic-glasses | 31 | 17 | 0.55 |
+| dird-07 invisibility-cloaking | 30 | 17 | 0.57 |
 | dird-03 pulsed-hpm | 38 | 23 | 0.61 |
 | dird-15 advanced-space-propulsion | 17 | 13 | 0.76 |
 | dird-02 programmable-matter | 21 | 17 | 0.81 |
+| dird-18 traversable-wormholes | 42 | 43 | 1.02 |
 | dird-04 biomaterials | 33 | 55 | 1.67 |
+| dird-05 aerospace-platforms-materials | 28 | 50 | 1.79 |
 
-**(b) Extract `cited_works` — the 7 BUILT DIRDs are DONE.** dird-24 (113, `[N]`),
-dird-01 (49, `^N` endnotes), dird-02 (9, `N.` list), dird-15 (22, `^N`; Puthoff's
-DIRD — cites Davis/Maccone), dird-26 (52, `[N]` + sub-lettered `[5-a/b/c]`; the
-UFO-relevant list — Schuessler, Sturrock, Vallee, Cash-Landrum). dird-03
-(Pulsed HPM) and dird-04 (Biomaterials) were assessed and **carry no formal
-reference list** (end at Conclusion / Summary; sibling marker-scan = 0; PDF last
-page confirmed) — their `cited_works: []` is correct, not missing. Remaining:
-the UNBUILT DIRDs (dird-05/06/08/11/19/22/25/29/30/33/34/37, etc.) get their
-citations when each is built — same per-DIRD flow (locate region → image-verify
-sibling vs PDF → worker extract → integrate). The recurring-author network is the
-payoff (Puthoff in 7 dird-24 refs + dird-15; E. W. Davis / C. Maccone cross-DIRD).
+**(b) Extract `cited_works` — all 11 BUILT DIRDs are DONE.** Each built DIRD's
+reference list is extracted and source-fidelity-gated, with the citation marker
+style preserved per source (`[N]` brackets, `^N` endnotes, `N.` numbered list,
+and dird-26's sub-lettered `[5-a/b/c]` UFO-relevant entries — Schuessler,
+Sturrock, Vallee, Cash-Landrum). dird-03 (Pulsed HPM) and dird-04 (Biomaterials)
+were assessed and **carry no formal reference list** (end at Conclusion / Summary;
+sibling marker-scan = 0; PDF last page confirmed) — their `cited_works: []` is
+correct, not missing. Remaining: the UNBUILT DIRDs (08/09/10/11/12/13/14/16/17/19
+through 37 — 26 archived, none built) get their citations when each is built —
+same per-DIRD flow (locate region → image-verify sibling vs PDF → worker extract →
+integrate). The recurring-author network is the payoff (Puthoff across dird-24 +
+dird-15; E. W. Davis / C. Maccone cross-DIRD).
 
 *Illegible references (deferred — design on first real case).* dird-24's
 references were all recoverable by image-verifying the PDF page. If a remaining
@@ -212,30 +219,22 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-**(c) DIRD corpus consistency sweep — two cross-DIRD inconsistencies found during
-the dird-05 build.** Both are family-comparability sweeps best done in one focused
-`/audit` pass, not piecemeal:
-- *DIA forward-ref link.* 7 of 9 built DIRDs link `[`/organizations/dia`]` in their
-  description (the AAWSA Program Manager sits in DIA on every DIRD's Administrative
-  Note); **dird-02 and dird-26 omit it**. Add the link to those two (prose-drift-safe
-  — "Defense Intelligence Agency" is verbatim in each source). The
-  dird-build-out-roadmap's "settle when DIA/AAWSAP orgs are built" note resolves to:
-  the de-facto convention is the forward-ref link, so settling = making dird-02/26
-  match. (Building the `/organizations/dia` node itself remains a separate,
-  one-per-session synthesis-node decision.)
-- *Front-matter page-ref convention.* `quote_location_page` verifies arabic `p. N`
-  against the Nth sibling block but SKIPS roman refs (`p. ii`) as carrying no
-  physical-page claim. **5 of 9 DIRDs (dird-01/02/03/15/26) use roman printed-label
-  refs for front matter (unverified); 4 (dird-04/24/05/18) use arabic sibling-block
-  refs (verified).** Decide the standard and apply: (i) convert the 5 to arabic
-  sibling-block (conventional per `meta/conventions.md` "p. N = physical, not
-  printed"; verified) — a 5-node content sweep; or (ii) extend `quote_location_page`
-  to map roman front-matter labels to sibling blocks and verify them (one-script
-  root-cause fix, keeps reader-faithful printed labels — viable where the roman
-  value equals the block index, as it does for dird-26). Pick one; don't leave the
-  split. (Auditor note: the build-role auditor flagged the roman-ref issue as
-  dird-26-specific and missed dird-02's DIA-link omission — its recommend-only
-  family-comparability pass is not exhaustive across the family.)
+**(c) DIRD corpus consistency sweep — front-matter page-ref convention.** A
+family-comparability sweep best done in one focused `/audit` pass, not piecemeal.
+`quote_location_page` verifies arabic `p. N` against the Nth sibling block but
+SKIPS roman refs (`p. ii`) as carrying no physical-page claim. Across the 11 built
+DIRDs: **dird-06/07/18/24 use arabic sibling-block refs throughout (verified);
+dird-01/02/03/15/26 use roman printed-label front-matter refs (6–16 each,
+unverified); dird-04/05 each carry a single roman Administrative-Note front-matter
+ref.** Decide the standard and apply: (i) convert the roman refs to arabic
+sibling-block (conventional per `meta/conventions.md` "p. N = physical, not
+printed"; verified) — a content sweep across the 7 affected DIRDs; or (ii) extend
+`quote_location_page` to map roman front-matter labels to sibling blocks and verify
+them (one-script root-cause fix, keeps reader-faithful printed labels — viable
+where the roman value equals the block index). Pick one; don't leave the split.
+(Auditor caution: the build-role auditor's recommend-only family-comparability pass
+is not exhaustive across the family — a corpus-wide convention sweep like this needs
+a dedicated pass, not the per-build audit.)
 
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
