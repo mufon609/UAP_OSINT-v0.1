@@ -42,7 +42,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. ii, ¶ title |
+| Location | p. 2, ¶ title |
 
 ---
 
@@ -62,7 +62,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. ii, ¶ prepared-by/author block |
+| Location | p. 2, ¶ prepared-by/author block |
 
 ---
 
@@ -74,7 +74,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. ii, ¶ Administrative Note |
+| Location | p. 2, ¶ Administrative Note |
 
 ---
 
@@ -86,7 +86,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vi, ¶1 (Summary) |
+| Location | p. 6, ¶1 (Summary) |
 
 ---
 
@@ -98,7 +98,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vi, ¶2 (Summary) |
+| Location | p. 6, ¶2 (Summary) |
 
 ---
 
@@ -110,7 +110,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vi, ¶3 (Summary) |
+| Location | p. 6, ¶3 (Summary) |
 
 ---
 
@@ -122,7 +122,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vii, ¶1 (Summary) |
+| Location | p. 7, ¶1 (Summary) |
 
 ---
 
@@ -134,7 +134,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vii, ¶1 (Summary) |
+| Location | p. 7, ¶1 (Summary) |
 
 ---
 
@@ -146,7 +146,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. vii, ¶2 (Summary) |
+| Location | p. 7, ¶2 (Summary) |
 
 ---
 
@@ -158,7 +158,7 @@ The paper discussed the critical technologies required to build a working HPM so
 |---|---|
 | Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
 | Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
-| Location | p. viii, ¶ closing (Summary) |
+| Location | p. 8, ¶ closing (Summary) |
 
 ---
 

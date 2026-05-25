@@ -42,7 +42,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. ii, ¶ title |
+| Location | p. 2, ¶ title |
 
 ---
 
@@ -62,7 +62,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. ii, ¶ prepared-by/author block |
+| Location | p. 2, ¶ prepared-by/author block |
 
 ---
 
@@ -74,7 +74,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. ii, ¶ Administrative Note |
+| Location | p. 2, ¶ Administrative Note |
 
 ---
 
@@ -86,7 +86,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. v, ¶1 (Summary) |
+| Location | p. 5, ¶1 (Summary) |
 
 ---
 
@@ -98,7 +98,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. v, ¶2 (Summary) |
+| Location | p. 5, ¶2 (Summary) |
 
 ---
 
@@ -110,7 +110,7 @@ The document also discussed the significant limitations for aerospace applicatio
 |---|---|
 | Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
 | Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
-| Location | p. v, ¶3 (Summary) |
+| Location | p. 5, ¶3 (Summary) |
 
 ---
 

@@ -34,7 +34,7 @@ quotes:
     Metallic Glasses: Status and Prospects for Aerospace Applications
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. ii, ¶ title'
+    location: 'p. 2, ¶ title'
   significance: Document title — verbatim
   statement_date: '2009-12-14'
 - id: q2
@@ -51,7 +51,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. ii, ¶ prepared-by/author block'
+    location: 'p. 2, ¶ prepared-by/author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
   statement_date: '2009-12-14'
 - id: q3
@@ -60,7 +60,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. ii, ¶ Administrative Note'
+    location: 'p. 2, ¶ Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
   statement_date: '2009-12-14'
 - id: q4
@@ -69,7 +69,7 @@ quotes:
     Metallic glasses combine some of the advantageous mechanical properties of metals—strength, stiffness, and in some cases toughness—with the processing flexibility usually associated with thermoplastic polymers. The absence of crystalline defects allows metallic glasses to be much stronger than conventional alloys but also means they have near-zero tensile ductility and poor fatigue resistance. In structural applications, therefore, metallic glasses are most likely to be useful in the form of composites consisting of ductile crystalline dendrites in a metallic glass matrix. These dendritic composites sacrifice some strength but can have exceptionally high fracture toughness, as well as good fatigue resistance, and could replace high-strength steels in certain load-limited structural components in aerospace vehicles where space is limited.
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. v, ¶1 (Summary)'
+    location: 'p. 5, ¶1 (Summary)'
   significance: Summary thesis — metallic glasses combine metallic strength with thermoplastic processing flexibility but lack tensile ductility; dendritic composites are the most likely structural route, potentially replacing high-strength steels where space is limited
   statement_date: '2009-12-14'
 - id: q5
@@ -78,7 +78,7 @@ quotes:
     Because they are true glasses, thermoplastic forming near the glass transition temperature affords metallic glasses tremendous flexibility in processing. For instance, metallic glass components can be formed in a single step (for example, by injection molding) in complex geometries that would be difficult or impossible to produce with conventional alloys. In addition, metallic glass foams can be made with relative ease, raising the possibility of making structural foams with high strength and stiffness. Finally, because they lack a crystalline grain structure, metallic glasses can be used to form nanoscale features with high fidelity. This may make metallic glasses useful in a variety of micro-electromechanical systems (MEMS) applications.
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. v, ¶2 (Summary)'
+    location: 'p. 5, ¶2 (Summary)'
   significance: Summary — thermoplastic processing flexibility (single-step injection molding, foams, nanoscale features) is the distinctive advantage of metallic glasses over conventional alloys
   statement_date: '2009-12-14'
 - id: q6
@@ -87,7 +87,7 @@ quotes:
     Metallic glasses also have significant limitations for aerospace applications, however. Foremost among these is a lack of good glass-forming alloys; in particular, there are no good aluminum-rich glass-forming alloys, the known titanium-based alloys are either relatively dense (owing to high concentrations of alloying elements) or contain beryllium, and the known magnesium-and iron-based alloys are all quite brittle, with low fracture toughness. Although metallic glass matrix composites can have outstanding properties (particularly strength and fracture toughness), the number of good composite systems known at present is also quite limited.
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
-    location: 'p. v, ¶3 (Summary)'
+    location: 'p. 5, ¶3 (Summary)'
   significance: Summary — the foremost limitation is the lack of good glass-forming alloys (no aluminum-rich systems; titanium alloys dense or contain beryllium; magnesium/iron alloys brittle)
   statement_date: '2009-12-14'
 - id: q7
@@ -686,20 +686,20 @@ naming_quirks:
   added_date: '2026-05-21'
   observed: '[(b)(6)]'
   canonical: '[redacted per FOIA (b)(6)]'
-  location: 'p. ii, Author line'
+  location: 'p. 2, Author line'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-21'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[redacted per FOIA (b)(3):10 USC 424]'
-  location: 'p. ii, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. ii, Administrative Note'
+  location: 'p. 2, Administrative Note'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes

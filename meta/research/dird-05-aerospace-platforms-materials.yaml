@@ -521,7 +521,7 @@ naming_quirks:
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. ii, Administrative Note'
+  location: 'p. 2, Administrative Note'
   source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2

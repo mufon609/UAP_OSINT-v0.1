@@ -54,7 +54,7 @@ quotes:
     Austin, Texas 78759
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. i, ¶ prepared-by/author block'
+    location: 'p. 2, ¶ prepared-by/author block'
   significance: Prepared-by and author provenance — DIA Defense Warning Office (DWO-3) prepared, H.E. Puthoff of EarthTech International authored
   statement_date: '2010-03-29'
 - id: q3
@@ -63,7 +63,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Defense Warning Office's Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to James T. Lacatski, D.Eng., AAWSA Program Manager, Defense Intelligence Agency, ATTN: CLAR/DWO-3, Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. i, ¶ Administrative Note'
+    location: 'p. 2, ¶ Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series and James T. Lacatski, D.Eng. as AAWSA Program Manager
   statement_date: '2010-03-29'
 - id: q4
@@ -72,7 +72,7 @@ quotes:
     A theme that has come to the fore in advanced planning for long-range space exploration in the future is the concept that empty space itself (the quantum vacuum, or spacetime metric) might be engineered to provide energy/thrust for future space vehicles. Although far reaching, such a proposal is solidly grounded in modern physical theory, and therefore the possibility that matter/vacuum interactions might be engineered for spaceflight applications is not a priori ruled out (Reference 1).
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. iii, ¶1'
+    location: 'p. 4, ¶1'
   significance: Thesis statement — empty space might be engineered to provide energy/thrust for future space vehicles
   statement_date: '2010-03-29'
 - id: q5
@@ -81,7 +81,7 @@ quotes:
     The concept of "engineering the vacuum" found its first expression in the mainstream physics literature when it was introduced by Nobelist T. D. Lee in his textbook Particle Physics and Introduction to Field Theory (Reference 7). There he stated, "The experimental method to alter the properties of the vacuum may be called vacuum engineering.... If indeed we are able to alter the vacuum, then we may encounter new phenomena, totally unexpected."
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. iii, ¶2'
+    location: 'p. 4, ¶2'
   significance: Legitimization of the vacuum-engineering concept — traces it to Nobelist T. D. Lee's textbook
   statement_date: '2010-03-29'
 - id: q6
@@ -90,7 +90,7 @@ quotes:
     This paper introduces the underlying mathematical platform for investigating spacetime structure, the metric tensor approach. It then outlines the attendant physical effects that derive from alterations in the spacetime structure. Finally, the paper examines these effects as they would be exhibited in the presence of advanced aerospace craft technologies based on spacetime modification.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. iv, ¶ closing'
+    location: 'p. 5, ¶ closing'
   significance: Roadmap of the paper — metric tensor approach, attendant physical effects, advanced aerospace craft technologies
   statement_date: '2010-03-29'
 - id: q7
@@ -402,6 +402,6 @@ naming_quirks:
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. i, Administrative Note'
+  location: 'p. 2, Administrative Note'
   source_path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   resolution: preserve-as-sic-in-quotes

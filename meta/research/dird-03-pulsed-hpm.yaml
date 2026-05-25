@@ -34,7 +34,7 @@ quotes:
     Pulsed High-Power Microwave Source Technology
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. ii, ¶ title'
+    location: 'p. 2, ¶ title'
   significance: Document title — verbatim; carries the word "Source" that the AAWSAP products list drops
   statement_date: '2010-01-28'
 - id: q2
@@ -51,7 +51,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. ii, ¶ prepared-by/author block'
+    location: 'p. 2, ¶ prepared-by/author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
   statement_date: '2010-01-28'
 - id: q3
@@ -60,7 +60,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. ii, ¶ Administrative Note'
+    location: 'p. 2, ¶ Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
   statement_date: '2010-01-28'
 - id: q4
@@ -69,7 +69,7 @@ quotes:
     This paper provides an overview of the major types of high-power microwave (HPM) sources and the critical technologies required to build them. Pulsed HPM technology has been of scientific and military interest for several decades. Originally, the interest focused on the area of high-altitude electromagnetic pulse (HEMP) concerns.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vi, ¶1 (Summary)'
+    location: 'p. 6, ¶1 (Summary)'
   significance: Summary thesis — the paper overviews the major HPM source types and the critical technologies to build them; interest originated in high-altitude electromagnetic pulse (HEMP) concerns
   statement_date: '2010-01-28'
 - id: q5
@@ -78,7 +78,7 @@ quotes:
     HEMP effects became fully known in 1962, when a high-altitude nuclear test (codenamed "Starfish Prime") over the Pacific Ocean disrupted radio stations and electronic equipment 800 miles away in Hawaii.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vi, ¶2 (Summary)'
+    location: 'p. 6, ¶2 (Summary)'
   significance: HEMP origin — the 1962 Starfish Prime high-altitude nuclear test over the Pacific disrupted radio and electronics 800 miles away in Hawaii, the historical anchor for HEMP effects
   statement_date: '2010-01-28'
 - id: q6
@@ -87,7 +87,7 @@ quotes:
     HPM radiation is composed of shorter waveforms at higher frequencies than is HEMP, which makes it highly effective against electronic equipment and more difficult to harden against. Whereas HEMP weapons are large in scale and require a nuclear capability along with technology to launch high-altitude missiles, HPM weapons are smaller in scale, involve a much lower level of technology, and are within the capability of almost any state. HPMs can damage computers and electronics similar to the way HEMP can, although the effects are limited to a much shorter range. Technical accessibility, lower cost, and the vulnerability of U.S. electronic equipment could make small-scale HPM weapons attractive to terrorist groups. HPM devices are now categorized as directed-energy weapons.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vi, ¶3 (Summary)'
+    location: 'p. 6, ¶3 (Summary)'
   significance: HPM-vs-HEMP framing — HPM uses shorter, higher-frequency waveforms, is smaller-scale and lower-technology than nuclear HEMP, is within the capability of almost any state, and is now categorized as a directed-energy weapon
   statement_date: '2010-01-28'
 - id: q7
@@ -96,7 +96,7 @@ quotes:
     One major use of HPM by the military is for electronic attack, or what is referred to by the media as an "ebomb." HPM sources developed for this purpose provide peak powers in excess of 10 gigawatts. The goal of such a weapon is to disable communications and computer systems prior to any troop movements and render the enemy unable to stage a response.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vii, ¶1 (Summary)'
+    location: 'p. 7, ¶1 (Summary)'
   significance: Weapon application — the major military use is electronic attack (the media "ebomb"), with peak powers in excess of 10 gigawatts, to disable communications and computer systems prior to troop movements
   statement_date: '2010-01-28'
 - id: q8
@@ -105,7 +105,7 @@ quotes:
     As an example of the possible effects of HPM weapons, on 28 May 2001, a U.S. Commanche helicopter, flying in New York state while performing tests involving HPM weapons, was reported to have generated a low-level energy pulse that disrupted the Global Positioning System devices used to land commercial aircraft in Albany.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vii, ¶1 (Summary)'
+    location: 'p. 7, ¶1 (Summary)'
   significance: Real-world incident — a 28 May 2001 U.S. helicopter HPM test in New York state reportedly generated a pulse that disrupted GPS landing devices for commercial aircraft in Albany ("Commanche" is the document's spelling of Comanche)
   statement_date: '2010-01-28'
 - id: q9
@@ -114,7 +114,7 @@ quotes:
     Some of the kill mechanisms obtained from microwave weapons include semiconductor overheating or burnout, arc generation, computer upsets, voltage induction into sensitive circuits, display upset, and overvoltage in discrete components.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. vii, ¶2 (Summary)'
+    location: 'p. 7, ¶2 (Summary)'
   significance: Kill mechanisms — enumerates the destructive effects of microwave weapons on target electronics (semiconductor overheating/burnout, arc generation, computer upsets, voltage induction, display upset, overvoltage)
   statement_date: '2010-01-28'
 - id: q10
@@ -123,7 +123,7 @@ quotes:
     In addition, it is very difficult to detect these sort of pulsed sources, since the pulses are very short (typically 1-500 nanoseconds), and even in burst mode, the bursts are usually less than 10 seconds. The short burst mode operation is necessary because of the high peak powers and subsequent heating of key components such as switches. The UWB sources would be the most difficult to detect, since they have nearly zero energy at any one frequency and so would not be detected at all by instruments such as spectrum analyzers.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. viii, ¶ closing (Summary)'
+    location: 'p. 8, ¶ closing (Summary)'
   significance: Detectability — pulsed HPM sources are very difficult to detect (pulses 1-500 ns, bursts under 10 s); ultrawideband sources are the hardest to detect because they have nearly zero energy at any one frequency
   statement_date: '2010-01-28'
 - id: q11
@@ -259,34 +259,34 @@ naming_quirks:
   added_date: '2026-05-21'
   observed: Pulsed High-Power Microwave Source Technology
   canonical: Pulsed High-Power Microwave Technology (AAWSAP products-list short form)
-  location: 'p. ii, ¶ title vs. AAWSAP products list entry 3'
+  location: 'p. 2, ¶ title vs. AAWSAP products list entry 3'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: disputed
 - id: nq2
   added_date: '2026-05-21'
   observed: '[(b)(6)]'
   canonical: '[redacted per FOIA (b)(6)]'
-  location: 'p. ii, Author line'
+  location: 'p. 2, Author line'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-21'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[redacted per FOIA (b)(3):10 USC 424]'
-  location: 'p. ii, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-21'
   observed: Commanche
   canonical: Comanche
-  location: 'p. vii, ¶1 (Summary)'
+  location: 'p. 7, ¶1 (Summary)'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. ii, Administrative Note'
+  location: 'p. 2, Administrative Note'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes

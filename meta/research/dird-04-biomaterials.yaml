@@ -641,7 +641,7 @@ naming_quirks:
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. iii, Administrative Note — the document writes "AAWSA" not the canonical "AAWSAP"'
+  location: 'p. 2, Administrative Note — the document writes "AAWSA" not the canonical "AAWSAP"'
   source_path: government/dird-04-biomaterials-20100107.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4

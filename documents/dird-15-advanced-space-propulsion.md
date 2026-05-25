@@ -60,7 +60,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. i, ¶ prepared-by/author block |
+| Location | p. 2, ¶ prepared-by/author block |
 
 ---
 
@@ -72,7 +72,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. i, ¶ Administrative Note |
+| Location | p. 2, ¶ Administrative Note |
 
 ---
 
@@ -84,7 +84,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. iii, ¶1 |
+| Location | p. 4, ¶1 |
 
 ---
 
@@ -96,7 +96,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. iii, ¶2 |
+| Location | p. 4, ¶2 |
 
 ---
 
@@ -108,7 +108,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. iv, ¶ closing |
+| Location | p. 5, ¶ closing |
 
 ---
 
