@@ -84,7 +84,7 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Prove + adopt the speaker-attribution discipline for label-less transcript sources
+### A2 — Audit the label-less transcript corpus against the speaker-attribution discipline
 
 **The problem.** A transcript whose source is *label-less* — a machine caption or
 speech-to-text that records the words but not who spoke them — cannot have its
@@ -100,33 +100,18 @@ passage attributed to the wrong participant; another single-attribution that was
 really a two-party exchange; a summary line crediting the wrong speaker) — the
 discipline gap is real, not hypothetical.
 
-**Mechanism shipped (committed this session).** A quote may now
-carry `speaker_id` as a single id string (one speaker, unchanged) **or a list of 2+
-ids for a mixed exchange** — a passage carrying more than one speaker's words, or an
-unresolvable speaker boundary in a label-less source. A 2+ list is itself the mixed
-marker; the renderer emits a `Speakers — mixed exchange` row naming all involved
-speakers. No separate tag field (a second source of truth would drift). Changed:
-`scripts/checks/quotes.py` (resolve each id; reject 1-element list / duplicates /
-unknown ids), `scripts/build/renderers/_common.py` (`_render_attribution_block`), and
-the `schema-research-artifact.yaml::quote_entry.speaker_id` spec comment. Tested:
-single-speaker output byte-identical; mixed renders; the three bad shapes error while
-valid single + mixed pass; full-corpus `validate` / `validate-research` /
-`help-check` / `smoke` all green. **What remains HELD (uncommitted) is the pilot node's attribution
-corrections** — those rest on text-cue inference (the same fallible method that
-caused the original errors) and are unproven until confirmed against the audio. (Session specifics — which node,
-which quote ids — live in the working-tree diff and the session plan file, not here,
-to keep this entry topic-neutral.)
-
-**The discipline to adopt (the long-term fix).** Speaker attribution on a label-less
-source must be **confirmed against the audio** — the analog of the verbatim
-"source-read-first" rule (call it "confirm-against-audio"). A transcript quotes only
-a bounded set of passages, so a human listening to those few timestamps is a finite,
-definitive check that needs no tooling. Diarization is an *optional accelerator* for
-many-speaker sources, not the primary mechanism: it is heavy (HF-gated pyannote +
-torch, ~real-time on CPU), is not set up in this checkout (no `.venv-diarize`, no
-`HF_TOKEN`), and is weakest precisely on the rapid-crosstalk boundaries that are
-hardest. The mixed-exchange tag represents an unresolvable boundary honestly without
-fabricating a split.
+**The discipline (defined + codified).** Speaker attribution on a label-less source is
+**confirm-against-source** — the audio/video analog of source-read-first. Where video
+exists, confirm by *image* (frames at the quote timestamp matched to a face baseline,
+human-verified — stronger than telling similar voices apart by ear); audio-only sources
+use diarization for turn boundaries plus an anchor; a genuinely unresolvable boundary
+takes the mixed-exchange `speaker_id` list (the honest marker, not a license to skip
+attribution work). The decision tree, the per-method dependency gating, and the
+issue-routing live in `meta/conventions.md` "Speaker attribution: source format selects
+the method" and `scripts/tools/VIDEO-PIPELINE.md` Step 0. Shipped: the mixed-exchange
+mechanism (`speaker_id` as a 2+ id list, rendered `Speakers — mixed exchange`); the
+diarize venv-missing fail-fast; the pilot (`lucistrust-rending-veils-ryder-2017`)
+proven by image-verification and committed.
 
 **Latent features assessed (keep both).** `derived_from` (transcript frontmatter) is
 wired + rendered but has 0 uses — its case is a transcript that is a text rendering
@@ -147,31 +132,21 @@ download→diarize→stitch path; Haar-cascade face detection misses frequently 
 crop fallback); and several thresholds are hardcoded (pHash distance, min face size,
 segment-snap tolerance).
 
-**Remaining work (ordered — this is the plan).**
-1. **Prove the method (gate).** Confirm the pilot node's attributions against the
-   audio — a human listens to the quoted timestamps, or run diarization (requires
-   `HF_TOKEN` + manual acceptance of the gated pyannote models + the multi-GB venv
-   install). Nothing downstream is committed or codified until this settles.
-2. **Accept or revise** the held pilot attribution corrections per the result; commit
-   (revisit the mechanism only if the audio contradicts its premise).
-3. **Codify the universal conversation template** in `meta/conventions.md` —
-   **generic / topic-neutral, no content-node exemplar**: single vs. mixed
-   `speaker_id`; narration as a `speakers[]` entry (role Narrator, `node_link` when
-   identified); non-speech (music / SFX / applause / caption `>>` turn-markers)
-   captured only when verbatim-in-source AND load-bearing, via a non-person
-   `speakers[]` entry, default not captured (per "Density is source-driven");
-   same-speaker-different-recording carried via `statement_date` + `context` (no new
-   field).
-4. **Audit the remaining transcript nodes**, one at a time: stenographic hearing
-   transcripts are speaker-labeled in their source (mechanically verifiable,
-   low-risk); auto-caption interview transcripts are label-less (apply
-   confirm-against-audio + the mixed tag).
-5. **Re-assess the tooling gaps** with the test evidence; file specific fixes only
-   once a real test demonstrates the need.
+**Remaining work.**
+1. **Audit the remaining transcript nodes**, one at a time, against the discipline:
+   stenographic / published hearing transcripts are speaker-labeled in source
+   (mechanically verifiable, low-risk); auto-caption / Whisper interview transcripts are
+   label-less (image path where video exists, else audio path + mixed tag). Candidates:
+   the `other`-kind nodes — jre-2194, 8newsnow, mysterywire, weaponized-*, and the two
+   other lucistrust talks. Still open: the generic conversation template in
+   `conventions.md` (narration as a `speakers[]` Narrator entry; non-speech captured
+   only when verbatim-in-source AND load-bearing; same-speaker-different-recording via
+   `statement_date` + `context`) — fold in as the corpus audit surfaces the cases.
+2. **Re-assess the tooling gaps above** with test evidence (test-before-BACKLOG rule):
+   file a specific fix only once a real failing test demonstrates the need.
 
 **Blocks:** none.
-**Blocked by:** the step-1 proof gate — a human audio-listen, or diarization setup
-(`HF_TOKEN` + gated-model acceptance + venv install).
+**Blocked by:** nothing — incremental, one transcript at a time.
 
 ### A3 — DIRD extraction: re-level the corpus against the rubric + extract remaining citations
 

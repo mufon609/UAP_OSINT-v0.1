@@ -27,7 +27,7 @@ Jim said: "I use UAPs because a UFO is an unexplained flying object. But a UAP i
 
 On UFOs Jim said one of the great explorers in this field is Jacques Vallee ([`/people/jacques-vallee`]) — "the UFOs are not objects nor flying ... they appear ... that's why I use UAPs." On abductions Jim said "whatever's happening is not happening physically" and "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." On a Russian and American jets incident Lawrence described as "classified information, which is now released," Jim said "I wouldn't say it was or wasn't" and said "there have been many, many chases of these objects, which when you get close, they're just not there."
 
-Lawrence said crop circles are "possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and asked about violet orbs "in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." On sprites and dwarves discovered above thunderstorms from fighter pilots, Lawrence said "it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist." Jim said "well, same difference, yeah." Jim showed drawings of devas by Graham Hancock ([`/people/graham-hancock`]) "always drawn with narrow eyes, slightly angled, and a narrow chin" going back "30,000, 40,000 years in the Roman times and so forth" — and asked "what are we really dealing with when we see these kinds of things?"
+Jim said crop circles are "possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity." Lawrence asked about violet orbs "in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." On sprites and dwarves discovered above thunderstorms from fighter pilots, Lawrence said "it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist." Jim said "well, same difference, yeah." Jim showed drawings of devas by Graham Hancock ([`/people/graham-hancock`]) "always drawn with narrow eyes, slightly angled, and a narrow chin" going back "30,000, 40,000 years in the Roman times and so forth" — and asked "what are we really dealing with when we see these kinds of things?"
 
 ---
 
@@ -107,14 +107,14 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### The moderator's explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. The moderator's ontology, framed for Ryder to evaluate.
+### Ryder's explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. Ryder presents it as his own theory and turns to the moderator to judge it ("Shall I throw that theory away?").
 
 > [35:55] So when we actually look at fractal patterns, which are very common in nature, then you would expect the same electrical occurrences to follow the same kind of geometry in nature as, for instance, the snowflake, which is beautifully geometrical. And remembering that earlier, as we discussed that electricity is alive, that still makes it a very exciting prospect because we see the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity. But on the whole, because they have an inherent geometrical pattern, they are building divas and carry within them the geometrical pattern for the part of the plan that they're working with under various guiding forces. As they pass through the Earth and have effects on the physical plane, they are electrical in nature, so they are going to cause burning patterns, perhaps.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Moderator (Lawrence) framing crop circles as devic activity and asking Ryder to evaluate; the conversation has moved through earthquake lights and electromagnetic vortices. 2017-06-10 |
+| Attributed to | Ryder narrating his slides — the conversation has moved through earthquake lights and electromagnetic vortices — presenting the crop-circles-as-devic-activity theory, which he then asks the moderator (Lawrence) to judge ("Shall I throw that theory away?"). 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [35:55]–[36:40] |
 
@@ -126,7 +126,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
+| Speaker | Lawrence |
 | Attributed to | Moderator framing Ryder's prior orb-observation attestation in Alice Bailey terms. 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [39:18]–[39:34] |
@@ -159,27 +159,27 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder's on-record sidestep of an incident the moderator describes as "classified information, which is now released" — "I wouldn't say it was or wasn't." Followed by Ryder's own apparent-firsthand framing of the UAP behavioural signature: "there have been many, many chases of these objects, which when you get close, they're just not there." The classification non-denial is notable structurally — the moderator's framing is "now released"; Ryder declines to confirm or deny the classification of the incident.
+### A mixed exchange on a Russian/American-jets UAP encounter — the moderator raises it as an incident "perhaps classified... which is now released," and Ryder elaborates ("what he's referring to, there is an incident... where the US fighters and the Russian fighters chased after the same object... there have been many, many chases of these objects, which when you get close, they're just not there"). The "I wouldn't say it was or wasn't" non-denial on the classification sits at the speaker boundary and is not resolvable from the label-less transcript — the passage is attributed to both. Establishes the UAP behavioural signature (objects "just not there" on close approach) on record.
 
 > [53:28] Another example is Russian and American jets scrambling to the air, chasing objects on what was perhaps classified information, which is now released. It was classified. I wouldn't say it was or wasn't. But the very aerial dynamics that they displayed was not really possible within our... It is not. What he's referring to, there is an incident some years ago where the US fighters and the Russian fighters chased after the same object from different directions. And when they got close by, it wasn't there except the other plane showed up, which was not a good day. Unfortunately, nobody was hurt. There have been many, many chases of these objects, which when you get close, they're just not there.
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder discussing a Russian-American jet encounter with a UAP that disappeared on approach. 2017-06-10 |
+| Speakers — mixed exchange | Lawrence; Dr. James T. Ryder ([`/people/james-ryder`]) |
+| Attributed to | Mixed exchange in the session's closing minutes (the moderator has just flagged the upcoming meditation break) — the moderator raises the Russian-American jets encounter and Ryder elaborates on it. 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [53:28]–[54:14] |
 
 ---
 
-### Moderator and Ryder agreeing that upper-atmosphere sprites and dwarves discovered by fighter pilots are "clearly DIVA activity. Or EM, if you're a hard-nosed physicist. Well, same difference, yeah." Frames the equivalence of theosophical and electromagnetic readings of the same phenomena — the talk's core ontological move. Ryder affirms "same difference" rather than choosing one frame over the other.
+### A mixed exchange — the moderator asks whether the upper-atmosphere sprites and dwarves discovered by fighter pilots are recent ("the widening of the rents") or perennial, offering the duality "clearly DIVA activity. Or EM, if you're a hard-nosed physicist"; Ryder answers "Well, same difference, yeah" and continues ("what Lauren's asking is..."). Frames the equivalence of theosophical and electromagnetic readings of the same phenomena — the talk's core ontological move — with Ryder affirming "same difference" rather than choosing one frame over the other.
 
 > [54:21] Well, anyway, they've started to discover these sprites and dwarves and flashes of light above thunderstorms from fighter pilots. Do you think that's a recent phenomena that's happening because of the widening of the rents or do you think it's always happened? I mean, it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist. Well, same difference, yeah.
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Moderator and Ryder discussing the recently-discovered upper-atmosphere sprites / dwarves; Ryder confirms the discovery context. 2017-06-10 |
+| Speakers — mixed exchange | Lawrence; Dr. James T. Ryder ([`/people/james-ryder`]) |
+| Attributed to | Mixed exchange — the moderator's question about the recently-discovered upper-atmosphere sprites / dwarves and Ryder's response ("what Lauren's asking..."). 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [54:21]–[54:46] |
 
