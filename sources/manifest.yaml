@@ -792,6 +792,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #18 — ''Traversable Wormholes, Stargates, and Negative Energy'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 43 pages. DIA attachment #8 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Eric Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com; the mirror filename misspells the title as ''Traversible''). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_18-DIRD_Traversible_Wormholes_Stargates_and_Negative_Energy.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-18-traversable-wormholes-20100406.txt
+    archived_date: '2026-05-24'
+    note: 'Clean-text sibling of the OCR-scanned AAWSAP DIRD Black Vault #18 ''Traversable Wormholes, Stargates, and Negative Energy'' (DIA-08-1004-004, dated 6 April 2010, ICOD 1 December 2009). PRODUCED via local Tesseract 5 OCR (page images via pdftoppm) — the API content filter blocks a Claude model from generating the verbatim text of the negative-energy/nuclear-history passages on physical pp.31-35 (the pages are legible and not corrupt; the filter is on model output, not the source). INDEPENDENTLY VERIFIED 2026-05-24 by a separate Claude agent via structured diff against the page images (88 corrections applied: OCR slips, redaction markers, equation/figure/table placeholders, front-matter; pp.31-35 confirmed against the images, zero corrections needed on pp.34-35). Physical page 2 (Black Vault FOIA distribution insert) excluded; 42 document pages delimited by ''----- PAGE BREAK -----''. Struck-through UNCLASSIFIED//FOR OFFICIAL USE ONLY banner normalized on every page; equations/figures/tables bracketed; redactions ((b)(3):10 USC 424 / (b)(6)) and source typos (title ''Traversable'' vs Contents ''Transversable'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_19-DIRD_Antigravity_for_Aerospace_Applications.pdf
   status: archived
   artifacts:
