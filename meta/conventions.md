@@ -496,6 +496,63 @@ The five-value `transcript_provenance` enum is the schema layer
 (see `manifest_entry.transcript_provenance_values` in
 `schema.yaml`). The audit discipline above is the contributor layer.
 
+**Speaker attribution: source format selects the method.** Provenance
+classifies *text* fidelity; it also determines *how speakers are known*. A
+transcript's speaker labels are either carried by the source or absent — and
+the absent case must be *reconstructed against the recording*, never inferred
+from text alone. Inferring a speaker from textual cues (register, who-
+addresses-whom, question-then-answer shape) is a hypothesis, not a
+conclusion: it is the exact process that produces misattributions — a line
+delivered by one participant assigned to the other, or a two-party exchange
+collapsed onto one speaker. Speaker attribution on a label-less source is
+**confirm-against-source** — the audio/video analog of the verbatim
+source-read-first rule.
+
+- **Labeled sources** (`stenographic`, `published-transcript`, and
+  `human-corrected-caption` where the corrector preserved labels): speakers
+  come from the source's own attribution. Populate `speakers[]` and each
+  quote's `speaker_id` directly from the labels; the substring-verify check
+  already covers the text. No diarization or face work.
+
+- **Label-less sources** (`auto-caption`, Whisper output — words and
+  timestamps but no speaker labels): the speaker of every quote must be
+  reconstructed and confirmed against the recording. Select the method by
+  what the source provides:
+    - *Video with visible faces* → the **image path** (preferred). Extract
+      frames at each quote's timestamp (`extract-frames.py`), match faces
+      against the persistent baseline registry (`detect-faces.py`; register a
+      baseline first when a speaker has none), and **confirm by eye** —
+      seeing the mouth move, or the non-speaker shown listening, against a
+      registered face is a stronger identity check than telling similar
+      voices apart by ear. A human verifies the frames before a `speaker_id`
+      is trusted.
+    - *Audio-only* (no usable faces) → the **audio path**. `diarize-audio.py`
+      finds turn boundaries but is identity-blind (`SPEAKER_00/01/…`); map
+      those to names via an anchor (a self-introduction, one participant
+      naming another, the dominant speaker on a known monologue). Diarization
+      is weakest on rapid crosstalk — the boundaries that matter most.
+    - *Genuinely unresolvable boundary* (overlapping turns, or a handoff the
+      recording can't cleanly settle) → the **mixed-exchange** form:
+      `speaker_id` as a list of 2+ ids (`[s1, s2]`), rendering a `Speakers —
+      mixed exchange` row. It marks the boundary honestly without fabricating
+      a split; use it only when the turns are genuinely not separable, not to
+      skip attribution work where they are.
+
+When an attribution issue surfaces, route it to the proper tool, never an
+ad-hoc workaround: a source recording missing from the checkout → re-fetch
+with `download-video.py` (its bytes are gitignored; the manifest is the
+record); a speaker with no baseline → `detect-faces.py register`; a caption
+mis-transcription, or a name the machine spelled inconsistently (e.g.
+`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a diarize/stitch resolution
+below `high` confidence → human frame-verification or the mixed-exchange
+form.
+
+The per-method tool sequence and its dependency prerequisites — and the rule
+that a *missing but needed* dependency (`HF_TOKEN`, the `.venv-diarize`
+stack, browser cookies, a face baseline) must stop the run with a remedy,
+while a satisfied-or-unneeded one proceeds — live in
+`scripts/tools/VIDEO-PIPELINE.md`.
+
 **Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
 files (produced by `scripts/tools/transcribe.py`) carry a `[MM:SS]`
 marker on every caption line — one tick per 2–5 seconds of speech.

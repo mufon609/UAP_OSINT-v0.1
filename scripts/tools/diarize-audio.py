@@ -466,6 +466,20 @@ def main() -> None:
     )
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    # Fail-fast preflight — the pyannote stack lives in .venv-diarize/ (PEP 668
+    # blocks system-wide pip on Debian/Kali; the module-top block re-execs into
+    # that venv when it exists). If the venv is absent, setup hasn't been run —
+    # fail here with the remedy rather than after audio extraction, when the
+    # deferred pyannote import in run_diarization() would finally error.
+    if not _VENV_PYTHON.is_file() and os.environ.get("DIARIZE_VENV_ACTIVE") != "1":
+        sys.exit(
+            "error: .venv-diarize not found — the pyannote diarization stack\n"
+            "  is not set up in this checkout.\n"
+            "  Run scripts/tools/setup-diarize-audio.sh for the one-time setup\n"
+            "  (creates the venv, installs pyannote.audio + torch, and walks\n"
+            "  the Hugging Face gated-model acceptance + HF_TOKEN export)."
+        )
+
     hf_token = args.hf_token or os.environ.get("HF_TOKEN")
     # Fail-fast preflight — pyannote's gated model needs a token. Without
     # this, ffmpeg audio extraction + pyannote import (~60-90s total) run

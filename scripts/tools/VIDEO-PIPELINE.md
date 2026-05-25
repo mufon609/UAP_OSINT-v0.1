@@ -34,9 +34,16 @@ the auto-discovery silently.
 
 ## One-time setup
 
+This tooling is **optional** — a fresh contributor needs it only when
+attributing speakers on a *label-less* multi-speaker source (see Step 0).
+Normal build/audit work doesn't require it. Set up only the path(s) you'll
+use: the **image path** needs `setup-photo-identity.sh`; the **audio path**
+needs `setup-diarize-audio.sh`. Both are idempotent installers that report
+what's missing and exit non-zero on failure — re-run them any time.
+
 ```
-bash scripts/tools/setup-photo-identity.sh
-bash scripts/tools/setup-diarize-audio.sh    # only if using diarize-audio.py
+bash scripts/tools/setup-photo-identity.sh   # image path: OpenCV + ffmpeg + yt-dlp + JS runtime
+bash scripts/tools/setup-diarize-audio.sh    # audio path: pyannote + torch + HF-token walk-through
 ```
 
 `setup-photo-identity.sh` installs and verifies the visual-side pipeline:
@@ -59,6 +66,41 @@ bash scripts/tools/setup-diarize-audio.sh    # only if using diarize-audio.py
 
 Both scripts report missing pieces and exit non-zero if any apt / pip step
 fails. Re-runnable.
+
+---
+
+## Step 0 — classify the source, pick the method
+
+Run this *before* any step below. The source's `transcript_provenance` (in
+`sources/manifest.yaml`) tells you whether speakers are already known or must
+be reconstructed against the recording:
+
+| Source | Speakers in source? | Method |
+|---|---|---|
+| `stenographic`, `published-transcript`, label-preserving `human-corrected-caption` | yes | **none** — take speakers from the source's own labels; only the verbatim-quote check applies. Skip this pipeline. |
+| `auto-caption` / Whisper, **video with visible faces** | no | **image path** (preferred) — steps 1 → 2 → 3 → 4, then human frame-verify each quote timestamp against the baseline. Diarize (1.5) optional. |
+| `auto-caption` / Whisper, **audio-only** (no usable faces) | no | **audio path** — steps 1 → 1.5 (diarize) → anchor each identity-blind `SPEAKER_NN` to a name (self-intro, one speaker naming another, dominant monologue). |
+| genuinely unresolvable boundary (overlap / rapid crosstalk) | n/a | `speaker_id: [s1, s2]` **mixed-exchange** — never fabricate a split. |
+
+Diarization (step 1.5) is the audio path's *turn-finder* only — it segments
+*when* the speaker changes, never *who* (labels are `SPEAKER_00/01/…`). On the
+image path, faces do the naming; on the audio path you anchor the labels
+yourself. The discipline (confirm-against-source, never text-cue guesswork)
+lives in `meta/conventions.md` "Speaker attribution: source format selects the
+method."
+
+**Dependency gating.** Each method needs a subset of the tooling. Check before
+you run: a *missing but needed* dependency must stop the run with its remedy; a
+satisfied-or-unneeded one proceeds. The tools fail-fast on their own —
+`download-video.py` / `extract-frames.py` preflight their binaries,
+`diarize-audio.py` checks `.venv-diarize` + `HF_TOKEN` up front, `detect-faces.py`
+reports a missing cascade/opencv — each naming the setup script to run.
+
+| Method | Needs | Remedy if missing |
+|---|---|---|
+| image path | ffmpeg/ffprobe, OpenCV + opencv-data, Pillow; the video file; a baseline per speaker | `setup-photo-identity.sh`; re-fetch video with `download-video.py`; register baselines with `detect-faces.py register` |
+| audio path | `.venv-diarize`, `HF_TOKEN`, accepted gated models, torch; the video/audio | `setup-diarize-audio.sh` (creates venv, installs pyannote/torch, walks HF acceptance + `HF_TOKEN` export) |
+| video re-fetch (both paths) | yt-dlp, ffmpeg, JS runtime; **cookies only for YouTube**, not Vimeo | `setup-photo-identity.sh`; cookies via `extract-firefox-cookies.py` (YouTube only) |
 
 ---
 

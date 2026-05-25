@@ -36,13 +36,22 @@ quotes against sources and fixing or removing any that don't match.
 5. When replacing an entry that differs substantively, preserve the original
    via `superseded_by` / `contradicted_by` pointers; typo fixes edit in place.
 6. **Speaker attribution.** Each transcript quote carries a structural
-   `speaker_id` → `speakers[*].id`. Confirm the source's speaker matches the
-   resolved `speakers[].name`. For auto-caption sources without explicit
-   labels, confirm via surrounding text + (when available) the stitched
-   transcript at `/tmp/stitch-{slug}/stitched.md`
-   (`scripts/tools/stitch-transcript.py`; see `scripts/tools/VIDEO-PIPELINE.md`).
-   Fix a wrong `speaker_id` (add a `speakers[]` entry first if needed) and
-   regenerate.
+   `speaker_id` → `speakers[*].id` (a single id, or a list of 2+ ids for a
+   mixed exchange). The method follows the source format — see
+   `meta/conventions.md` "Speaker attribution: source format selects the
+   method":
+   - **Labeled source** (`stenographic` / `published-transcript`): take the
+     speaker from the source's own labels and confirm the match.
+   - **Label-less source** (`auto-caption` / Whisper): do **not** infer the
+     speaker from surrounding text — that guesswork is what produces
+     misattributions. Confirm against the recording per
+     `scripts/tools/VIDEO-PIPELINE.md` Step 0: the image path (frames at the
+     quote's timestamp matched to a face baseline, human-verified) where video
+     exists, else the audio path (diarize + anchor). Where a boundary genuinely
+     can't be settled, use the mixed-exchange list form rather than fabricating
+     a split.
+   Fix a wrong `speaker_id` — adding a `speakers[]` entry, or registering a face
+   baseline (`detect-faces.py register`), first when needed — and regenerate.
 
 **Output:** a before/after diff per changed quote; a summary count (verbatim /
 drift-corrected / replaced / removed + speaker_id fixes); then re-run
