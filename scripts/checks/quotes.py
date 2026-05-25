@@ -186,26 +186,52 @@ def check(ctx):
 
         # speaker_id — required on every quote when target_type is
         # transcript; references speakers[*].id on the same artifact.
-        # Structural attribution; renderer surfaces the matched speaker
-        # as a Speaker row in the verification block.
+        # A single id string attributes the quote to one speaker (the
+        # common case); a list of 2+ ids attributes a MIXED EXCHANGE to
+        # all involved speakers (a passage carrying more than one
+        # speaker's words, or a genuinely unresolvable speaker boundary
+        # in a label-less source). The list value is itself the mixed
+        # marker — the renderer surfaces it as a "Speakers — mixed
+        # exchange" row. Structural attribution either way.
         if ctx.target_type == "transcript":
             sid = q.get("speaker_id")
             if not sid:
                 yield Issue(
                     ctx.rel, "error",
                     f"quotes[{i}] ({q.get('id')!r}): missing required "
-                    f"'speaker_id' (required on transcript artifacts; "
-                    f"references one of speakers[*].id on this artifact)",
+                    f"'speaker_id' (required on transcript artifacts; a "
+                    f"speakers[*].id string for one speaker, or a list of "
+                    f"2+ ids for a mixed exchange)",
                     check_name=CHECK_NAME,
                 )
-            elif sid not in speaker_ids:
-                yield Issue(
-                    ctx.rel, "error",
-                    f"quotes[{i}] ({q.get('id')!r}): speaker_id {sid!r} "
-                    f"not in speakers[].id "
-                    f"({sorted(s for s in speaker_ids if s)})",
-                    check_name=CHECK_NAME,
-                )
+            else:
+                sid_list = sid if isinstance(sid, list) else [sid]
+                ids_seen = [str(x) for x in sid_list]
+                if isinstance(sid, list) and len(sid_list) < 2:
+                    yield Issue(
+                        ctx.rel, "error",
+                        f"quotes[{i}] ({q.get('id')!r}): speaker_id is a "
+                        f"list of fewer than 2 ids — use a bare string for "
+                        f"a single-speaker quote; a list is only for a "
+                        f"mixed exchange (2+ speakers)",
+                        check_name=CHECK_NAME,
+                    )
+                if len(ids_seen) != len(set(ids_seen)):
+                    yield Issue(
+                        ctx.rel, "error",
+                        f"quotes[{i}] ({q.get('id')!r}): speaker_id list "
+                        f"has duplicate ids {sid!r}",
+                        check_name=CHECK_NAME,
+                    )
+                for one in sid_list:
+                    if one not in speaker_ids:
+                        yield Issue(
+                            ctx.rel, "error",
+                            f"quotes[{i}] ({q.get('id')!r}): speaker_id "
+                            f"{one!r} not in speakers[].id "
+                            f"({sorted(s for s in speaker_ids if s)})",
+                            check_name=CHECK_NAME,
+                        )
         elif ctx.target_type is not None and q.get("speaker_id"):
             yield Issue(
                 ctx.rel, "warn",

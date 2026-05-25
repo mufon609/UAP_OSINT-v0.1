@@ -203,9 +203,12 @@ def _compose_attributed_to(ctx, date):
 def _render_attribution_block(quote, artifact):
     """Render the attribution table for a quote — Speaker / Attributed-to /
     Source / Location. When ``quote.speaker_id`` is set (transcript
-    artifacts), looks up the matching ``artifact.speakers[*].id`` entry
-    and emits a Speaker row carrying the speaker's name + optional
-    backtick-bracket node_link. Composes an Attributed-to line from
+    artifacts), looks up the matching ``artifact.speakers[*].id``
+    entry/entries and emits a Speaker row carrying each speaker's name +
+    optional backtick-bracket node_link. ``speaker_id`` may be a single
+    id (one ``Speaker`` row) or a list of 2+ ids for a mixed exchange
+    (a ``Speakers — mixed exchange`` row naming all involved speakers).
+    Composes an Attributed-to line from
     quote.context (when set) and quote.statement_date (when set); skips
     the date append if it already appears in the context string. The
     block carries no verification marker — confirmation against the
@@ -221,27 +224,35 @@ def _render_attribution_block(quote, artifact):
     loc = src.get("location") or ""
 
     speaker_cell = ""
+    speaker_label = "Speaker"
     sid = quote.get("speaker_id")
     if sid:
+        sid_list = sid if isinstance(sid, list) else [sid]
         speakers = artifact.get("speakers") or []
-        matched = next(
-            (s for s in speakers if isinstance(s, dict) and s.get("id") == sid),
-            None,
-        )
-        if matched:
+        by_id = {s.get("id"): s for s in speakers if isinstance(s, dict)}
+        names = []
+        for one in sid_list:
+            matched = by_id.get(one)
+            if not matched:
+                continue
             name = matched.get("name") or ""
             node_link = matched.get("node_link") or ""
             if name and node_link:
-                speaker_cell = f"{name} ([`{node_link}`])"
-            else:
-                speaker_cell = name or node_link
+                names.append(f"{name} ([`{node_link}`])")
+            elif name or node_link:
+                names.append(name or node_link)
+        speaker_cell = "; ".join(names)
+        # A list of 2+ ids is a mixed exchange — label it so the reader
+        # sees the passage isn't a single-speaker statement.
+        if isinstance(sid, list) and len(sid_list) > 1:
+            speaker_label = "Speakers — mixed exchange"
 
     rows = [
         "| Field | Value |",
         "|---|---|",
     ]
     if speaker_cell:
-        rows.append(f"| Speaker | {speaker_cell} |")
+        rows.append(f"| {speaker_label} | {speaker_cell} |")
     if attributed_to:
         rows.append(f"| Attributed to | {attributed_to} |")
     if src_link:
