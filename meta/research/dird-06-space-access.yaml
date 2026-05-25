@@ -197,7 +197,404 @@ quotes:
     location: 'p. 45, ¶3 (Conclusion, printed p. 39)'
   significance: Not-a-technology-issue — creating a LEO infrastructure is not a technology issue; the document states we have known for 50 years how to create it but destroyed development continuity
   statement_date: '2010-03-08'
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-25'
+    citation_key: '1'
+    author: 'Bruno, Claudio A.; Czysz, Paul'
+    year: '20089'
+    title: 'Future Spacecraft Propulsion Systems'
+    citation_verbatim: |-
+      ¹ Bruno, Claudio A.; Czysz, Paul, "Future Spacecraft Propulsion Systems," Second Edition, Springer in conjunction
+      with Praxis Publishing, Chichester, UK, 20089.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 1'
+  - id: cw2
+    added_date: '2026-05-25'
+    citation_key: '2'
+    author: 'Neyland, V. Ya.'
+    year: '1990'
+    title: 'Scientific and Engineering Problems and Methods of Preflight Development of Orbiters'
+    citation_verbatim: |-
+      ² Neyland, V. Ya., "Scientific and Engineering Problems and Methods of Preflight Development of Orbiters," Draft
+      Original of TsAGI paper, 1990.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 2'
+  - id: cw3
+    added_date: '2026-05-25'
+    citation_key: '3'
+    author: 'Private Communication with Vladimir Plothith'
+    year: '1991'
+    title: 'Private Communication with Vladimir Plothith, AIAA Aerospace Sciences Conference'
+    citation_verbatim: |-
+      ³ Private Communication with Vladimir Plothith, AIAA Aerospace Sciences Conference, 1991.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 3'
+  - id: cw4
+    added_date: '2026-05-25'
+    citation_key: '4'
+    author: 'DuPont, Anthony A.'
+    year: '1999'
+    title: 'Further Studies of Optimized Inlets for Hypersonic Turbine Engines'
+    citation_verbatim: |-
+      ⁴ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 4'
+  - id: cw5
+    added_date: '2026-05-25'
+    citation_key: '5'
+    author: 'Buck, M.L., Zima, W.P., Kirkham, F.S. & Jones, R.A.'
+    year: '1975'
+    title: 'Joint USAF/NASA Hypersonic Research Aircraft Study'
+    citation_verbatim: |-
+      ⁵ Buck, M.L., Zima, W.P., Kirkham, F.S. & Jones, R.A., "Joint USAF/NASA Hypersonic Research Aircraft Study,"
+      AIAA 75-1039, AIAA 25th Aircraft Systems and Technology Meeting, Los Angeles, California, August 1975.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 5'
+  - id: cw6
+    added_date: '2026-05-25'
+    citation_key: '6'
+    author: 'Küchemann, D.'
+    year: '1978'
+    title: 'The Aerodynamic Design of Aircraft -A Detailed Introduction to the Current Aerodynamic Knowledge and Practical Guide to the Solution of Aircraft Design Problems'
+    citation_verbatim: |-
+      ⁶ Küchemann, D., "The Aerodynamic Design of Aircraft -A Detailed Introduction to the Current Aerodynamic
+      Knowledge and Practical Guide to the Solution of Aircraft Design Problems," First Edition, Pergamon Press, 1978.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 6'
+  - id: cw7
+    added_date: '2026-05-25'
+    citation_key: '7'
+    author: 'Draper, Alfred C., Buck, Melvin L., Goesch, William H.'
+    year: '1971'
+    title: 'A Delta Shuttle Orbiter'
+    citation_verbatim: |-
+      ⁷ Draper, Alfred C., Buck, Melvin L., Goesch, William H., "A Delta Shuttle Orbiter," Astronautics & Aeronautics, Vol.
+      9, No 1, 26-36, Washington DC, January 1971.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 7'
+  - id: cw8
+    added_date: '2026-05-25'
+    citation_key: '8'
+    author: 'Astronautics & Aeronautics'
+    year: '1971'
+    title: 'Astronautics & Aeronautics, January 1971, Vol 9, No 1'
+    citation_verbatim: |-
+      ⁸ Astronautics & Aeronautics, January 1971, Vol 9, No 1.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 8'
+  - id: cw9
+    added_date: '2026-05-25'
+    citation_key: '9'
+    author: 'Dana, William'
+    year: '1973, 1998'
+    title: 'X-15, X24A, X24B pilot, Private Communications'
+    citation_verbatim: |-
+      ⁹ Dana, William, X-15, X24A, X24B pilot, Private Communications, 1973, 1998.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 9'
+  - id: cw10
+    added_date: '2026-05-25'
+    citation_key: '10'
+    author: 'DuPont, Anthony A.'
+    year: '1999'
+    title: 'Further Studies of Optimized Inlets for Hypersonic Turbine Engines'
+    citation_verbatim: |-
+      ¹⁰ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 10'
+  - id: cw11
+    added_date: '2026-05-25'
+    citation_key: '11'
+    author: 'Society of Automotive Engineers'
+    title: 'Advanced Engine Development at Pratt & Whitney'
+    citation_verbatim: |-
+      ¹¹ "Advanced Engine Development at Pratt & Whitney," Society of Automotive Engineers.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 11'
+  - id: cw12
+    added_date: '2026-05-25'
+    citation_key: '12'
+    author: 'Dawes, A. S. & Clarke, J.F.'
+    year: '1988'
+    title: 'Nonequilibrium Gas Flows in Entropy Layers'
+    citation_verbatim: |-
+      ¹² Dawes, A. S. & Clarke, J.F., "Nonequilibrium Gas Flows in Entropy Layers," CoA Report No. NFP8802, College of
+      Aeronautics, Cranfield Institute of Technology, Cranfield, 1988.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 12'
+  - id: cw13
+    added_date: '2026-05-25'
+    citation_key: '13'
+    author: 'Glass, D., Camarada, C. et. al.'
+    year: '1999'
+    title: 'Fabrication and Testing of a Leading-Edge-Shaped Heat Pipe'
+    citation_verbatim: |-
+      ¹³ Glass, D., Camarada, C. et. al., "Fabrication and Testing of a Leading-Edge-Shaped Heat Pipe," AIAA-99-4866,
+      9ᵗʰ International Space Planes and Hypersonic Systems and Technologies Conference, Norfolk, Va. Nov. 1999.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 13'
+  - id: cw14
+    added_date: '2026-05-25'
+    citation_key: '14'
+    author: 'Dick Mulready'
+    title: 'Advanced Engine Development at Pratt & Whitney'
+    citation_verbatim: |-
+      ¹⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 14'
+  - id: cw15
+    added_date: '2026-05-25'
+    citation_key: '15'
+    author: 'Ahern, J.E.'
+    year: '1992'
+    title: 'Thermal Management of Air-Breathing Propulsion Systems'
+    citation_verbatim: |-
+      ¹⁵ Ahern, J.E., "Thermal Management of Air-Breathing Propulsion Systems," AIAA 92-0514, 30th Aerospace
+      Sciences Meeting, Reno, Nevada, January 1992.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 15'
+  - id: cw16
+    added_date: '2026-05-25'
+    citation_key: '16'
+    author: 'Maurice, L.Q., Leingang, J.L., & Carreiro, L.R.'
+    year: '1991'
+    title: 'The Benefits of In-Flight LOX Collection for Air Breathing Space Boosters'
+    citation_verbatim: |-
+      ¹⁶ Maurice, L.Q., Leingang, J.L., & Carreiro, L.R., "The Benefits of In-Flight LOX Collection for Air Breathing Space
+      Boosters," AIAA paper, 4ᵗʰ International Aerospace Planes Conference, Orlando, Florida, December 1991.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 16'
+  - id: cw17
+    added_date: '2026-05-25'
+    citation_key: '17'
+    author: 'Rudakov, A.S. & Balepin, V.V.'
+    year: '1991'
+    title: 'Propulsion Systems with Air Pre-cooling for Aerospaceplanes'
+    citation_verbatim: |-
+      ¹⁷ Rudakov, A.S. & Balepin, V.V., "Propulsion Systems with Air Pre-cooling for Aerospaceplanes," SAE
+      911183, SAE Aerospace Atlantic, April 1991, Dayton, Ohio.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 17'
+  - id: cw18
+    added_date: '2026-05-25'
+    citation_key: '18'
+    author: 'Rudakov A.S., Gatin R.Y., Dulepov N.P., Harchevnikova B.N., Harchevnikova G.D & Yugov O.K'
+    year: '1991'
+    title: 'Analysis of Efficiency of Systems with Oxidizer Liquefaction and Accumulation for Improvement of Spaceplane Performance'
+    citation_verbatim: |-
+      ¹⁸ Rudakov A.S., Gatin R.Y., Dulepov N.P., Harchevnikova B.N., Harchevnikova G.D & Yugov O.K,: "Analysis of
+      Efficiency of Systems with Oxidizer Liquefaction and Accumulation for Improvement of Spaceplane
+      Performance": IAF-91-270: 42nd Congress of the International Astronautical Federation : Montreal October 1991.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 18'
+  - id: cw19
+    added_date: '2026-05-25'
+    citation_key: '19'
+    author: 'Balepin, V.V., Harchermikova, G.D., Tjurikov, E.V., & Avramenko, A.Ju.'
+    year: '1993'
+    title: 'Flight Liquid Oxygen Plants for Aerospace Plane: Thermodynamic and Integration Aspects'
+    citation_verbatim: |-
+      ¹⁹ Balepin, V.V., Harchermikova, G.D., Tjurikov, E.V., & Avramenko, A.Ju., "Flight Liquid Oxygen Plants for
+      Aerospace Plane: Thermodynamic and Integration Aspects," SAE chapter, 1993 SAE Aerospace Atlantic
+      Conference and Exposition, Dayton, Ohio, April 1993.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 19'
+  - id: cw20
+    added_date: '2026-05-25'
+    citation_key: '20'
+    author: 'Aoki, T., Ito, T., et.al.'
+    year: '1991'
+    title: 'A Concept of LACE for SSTO Space Plane'
+    citation_verbatim: |-
+      ²⁰ Aoki, T., Ito, T., et.al., "A Concept of LACE for SSTO Space Plane," AIAA-91-5011, AIAA 3rd International
+      Aerospace Planes Conference, Orlando, Florida, December 1991.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 20'
+  - id: cw21
+    added_date: '2026-05-25'
+    citation_key: '21'
+    author: 'Miki, Y., Taguchi, H., & Aoki, H.'
+    year: '1993'
+    title: 'Status and Future Planning of LACE Development'
+    citation_verbatim: |-
+      ²¹ Miki, Y., Taguchi, H., & Aoki, H., "Status and Future Planning of LACE Development," AIAA-93-5124, 5th
+      International Aerospace Planes & Hypersonic Technology Conference, November 1993, Munich, Germany.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 21'
+  - id: cw22
+    added_date: '2026-05-25'
+    citation_key: '22'
+    author: 'Anon.'
+    year: '1988'
+    title: 'Hyperplane'
+    citation_verbatim: |-
+      ²² Anon., "Hyperplane," 39th International Astronautical Federation Congress, Bangalore India, October 1988.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 22'
+  - id: cw23
+    added_date: '2026-05-25'
+    citation_key: '23'
+    author: 'Anon.'
+    year: '1991'
+    title: 'An-2254/Interim HoToL Launch System Study'
+    citation_verbatim: |-
+      ²³ Anon., "An-2254/Interim HoToL Launch System Study," Presented to the European Space Agency in Paris,
+      21 June 1991. Representing the participants, Antonov DB, Bae (Space Systems), Chemical Automatics Inc, NPO
+      Molnyia, TsAGI and TsAM.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 23'
+  - id: cw24
+    added_date: '2026-05-25'
+    citation_key: '24'
+    author: 'Dick Mulready'
+    title: 'Advanced Engine Development at Pratt & Whitney'
+    citation_verbatim: |-
+      ²⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 24'
+  - id: cw25
+    added_date: '2026-05-25'
+    citation_key: '25'
+    author: 'P. Hendrick and M Saint-Mard'
+    year: '1998'
+    title: 'KLIN Blended Lifting Body VTOHL S.S.T.O., Trajectory and Sizing Calculations'
+    citation_verbatim: |-
+      ²⁵ P. Hendrick and M Saint-Mard, "KLIN Blended Lifting Body VTOHL S.S.T.O., Trajectory and Sizing
+      Calculations" Ecole Royale Militaire, Brussels Belgium, March 1998.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 25'
+  - id: cw26
+    added_date: '2026-05-25'
+    citation_key: '26'
+    author: 'DuPont, Anthony A.'
+    year: '1999'
+    title: 'Further Studies of Optimized Inlets for Hypersonic Turbine Engines'
+    citation_verbatim: |-
+      ²⁶ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 26'
+  - id: cw27
+    added_date: '2026-05-25'
+    citation_key: '27'
+    author: 'Czysz, Paul A.'
+    year: '1999'
+    title: 'Evaluation and Analysis of the New Rocket-Based Combined Cycle For Reusable Launch Vehicles'
+    citation_verbatim: |-
+      ²⁷ Czysz, Paul A., "Evaluation and Analysis of the New Rocket-Based Combined Cycle For Reusable
+      Launch Vehicles," HTC-9901, for MSE Technology Applications, Inc. 30 Nov 1999.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 27'
+  - id: cw28
+    added_date: '2026-05-25'
+    citation_key: '28'
+    author: 'Crutchner, Harold L.'
+    year: '1965'
+    title: 'Selected Meridional Cross Sections of Heights, Temperatures and Dew Points of the Northern Hemisphere'
+    citation_verbatim: |-
+      ²⁸ Crutchner, Harold L., "Selected Meridional Cross Sections of Heights, Temperatures and Dew Points of the
+      Northern Hemisphere,"NAVAIR-50-1C-59, Published by Direction of the Commander, Naval Weather Service
+      Command, 1965.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 28'
+  - id: cw29
+    added_date: '2026-05-25'
+    citation_key: '29'
+    author: 'Astronautics & Aeronautics'
+    year: '1971'
+    title: 'Astronautics & Aeronautics, January 1971, Vol 9, No 1, Figure 3-11'
+    citation_verbatim: |-
+      ²⁹ Astronautics & Aeronautics, January 1971, Vol 9, No 1, Figure 3-11.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 29'
+  - id: cw30
+    added_date: '2026-05-25'
+    citation_key: '30'
+    author: 'Draper, Alfred C., Buck, Melvin L., Goesch, William L.'
+    year: '1971'
+    title: 'A Delta Shuttle Orbiter'
+    citation_verbatim: |-
+      ³⁰ Draper, Alfred C., Buck, Melvin L., Goesch, William L., "A Delta Shuttle Orbiter," Astronautics & Aeronautics, Vol.
+      9, No 1, 26-36, Washington DC, January 1971.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 30'
+  - id: cw31
+    added_date: '2026-05-25'
+    citation_key: '31'
+    author: 'Anon.'
+    year: '1970'
+    title: 'Hypersonic Research Facilities Study'
+    citation_verbatim: |-
+      ³¹ Anon., "Hypersonic Research Facilities Study," Volumes I through VI, NASA CR 114322 through 114331,
+      Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 31'
+  - id: cw32
+    added_date: '2026-05-25'
+    citation_key: '32'
+    author: 'Gaubatz, William A.'
+    year: '1997'
+    title: 'Space Transportation Infrastructure for Opening the Space Frontier-An International effort'
+    citation_verbatim: |-
+      ³² Gaubatz, William A., "Space Transportation Infrastructure for Opening the Space Frontier-An
+      International effort," The International Workshop on Space Plane/ RLV Technology Demonstrators, Tokyo,
+      Japan, March 1997.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 32'
+  - id: cw33
+    added_date: '2026-05-25'
+    citation_key: '33'
+    author: 'Koelle, H.H.'
+    title: 'Space Power'
+    citation_verbatim: |-
+      ³³ Koelle, H.H. "Space Power" IAF-93-IAF Congress, Norway.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 33'
+  - id: cw34
+    added_date: '2026-05-25'
+    citation_key: '34'
+    author: 'Anon.'
+    year: '1970'
+    title: 'Hypersonic Research Facilities Study'
+    citation_verbatim: |-
+      ³⁴ Anon., "Hypersonic Research Facilities Study," Volumes I through VI, NASA CR 114322 through 114331,
+      Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
+    source:
+      path: government/dird-06-bv-space-access-20100308.pdf
+      location: 'p. 55, endnote 34'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-25'

@@ -265,6 +265,47 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** ¹ Bruno, Claudio A.; Czysz, Paul, "Future Spacecraft Propulsion Systems," Second Edition, Springer in conjunction with Praxis Publishing, Chichester, UK, 20089.
+- **[2]** ² Neyland, V. Ya., "Scientific and Engineering Problems and Methods of Preflight Development of Orbiters," Draft Original of TsAGI paper, 1990.
+- **[3]** ³ Private Communication with Vladimir Plothith, AIAA Aerospace Sciences Conference, 1991.
+- **[4]** ⁴ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+- **[5]** ⁵ Buck, M.L., Zima, W.P., Kirkham, F.S. & Jones, R.A., "Joint USAF/NASA Hypersonic Research Aircraft Study," AIAA 75-1039, AIAA 25th Aircraft Systems and Technology Meeting, Los Angeles, California, August 1975.
+- **[6]** ⁶ Küchemann, D., "The Aerodynamic Design of Aircraft -A Detailed Introduction to the Current Aerodynamic Knowledge and Practical Guide to the Solution of Aircraft Design Problems," First Edition, Pergamon Press, 1978.
+- **[7]** ⁷ Draper, Alfred C., Buck, Melvin L., Goesch, William H., "A Delta Shuttle Orbiter," Astronautics & Aeronautics, Vol. 9, No 1, 26-36, Washington DC, January 1971.
+- **[8]** ⁸ Astronautics & Aeronautics, January 1971, Vol 9, No 1.
+- **[9]** ⁹ Dana, William, X-15, X24A, X24B pilot, Private Communications, 1973, 1998.
+- **[10]** ¹⁰ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+- **[11]** ¹¹ "Advanced Engine Development at Pratt & Whitney," Society of Automotive Engineers.
+- **[12]** ¹² Dawes, A. S. & Clarke, J.F., "Nonequilibrium Gas Flows in Entropy Layers," CoA Report No. NFP8802, College of Aeronautics, Cranfield Institute of Technology, Cranfield, 1988.
+- **[13]** ¹³ Glass, D., Camarada, C. et. al., "Fabrication and Testing of a Leading-Edge-Shaped Heat Pipe," AIAA-99-4866, 9ᵗʰ International Space Planes and Hypersonic Systems and Technologies Conference, Norfolk, Va. Nov. 1999.
+- **[14]** ¹⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
+- **[15]** ¹⁵ Ahern, J.E., "Thermal Management of Air-Breathing Propulsion Systems," AIAA 92-0514, 30th Aerospace Sciences Meeting, Reno, Nevada, January 1992.
+- **[16]** ¹⁶ Maurice, L.Q., Leingang, J.L., & Carreiro, L.R., "The Benefits of In-Flight LOX Collection for Air Breathing Space Boosters," AIAA paper, 4ᵗʰ International Aerospace Planes Conference, Orlando, Florida, December 1991.
+- **[17]** ¹⁷ Rudakov, A.S. & Balepin, V.V., "Propulsion Systems with Air Pre-cooling for Aerospaceplanes," SAE 911183, SAE Aerospace Atlantic, April 1991, Dayton, Ohio.
+- **[18]** ¹⁸ Rudakov A.S., Gatin R.Y., Dulepov N.P., Harchevnikova B.N., Harchevnikova G.D & Yugov O.K,: "Analysis of Efficiency of Systems with Oxidizer Liquefaction and Accumulation for Improvement of Spaceplane Performance": IAF-91-270: 42nd Congress of the International Astronautical Federation : Montreal October 1991.
+- **[19]** ¹⁹ Balepin, V.V., Harchermikova, G.D., Tjurikov, E.V., & Avramenko, A.Ju., "Flight Liquid Oxygen Plants for Aerospace Plane: Thermodynamic and Integration Aspects," SAE chapter, 1993 SAE Aerospace Atlantic Conference and Exposition, Dayton, Ohio, April 1993.
+- **[20]** ²⁰ Aoki, T., Ito, T., et.al., "A Concept of LACE for SSTO Space Plane," AIAA-91-5011, AIAA 3rd International Aerospace Planes Conference, Orlando, Florida, December 1991.
+- **[21]** ²¹ Miki, Y., Taguchi, H., & Aoki, H., "Status and Future Planning of LACE Development," AIAA-93-5124, 5th International Aerospace Planes & Hypersonic Technology Conference, November 1993, Munich, Germany.
+- **[22]** ²² Anon., "Hyperplane," 39th International Astronautical Federation Congress, Bangalore India, October 1988.
+- **[23]** ²³ Anon., "An-2254/Interim HoToL Launch System Study," Presented to the European Space Agency in Paris, 21 June 1991. Representing the participants, Antonov DB, Bae (Space Systems), Chemical Automatics Inc, NPO Molnyia, TsAGI and TsAM.
+- **[24]** ²⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
+- **[25]** ²⁵ P. Hendrick and M Saint-Mard, "KLIN Blended Lifting Body VTOHL S.S.T.O., Trajectory and Sizing Calculations" Ecole Royale Militaire, Brussels Belgium, March 1998.
+- **[26]** ²⁶ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
+- **[27]** ²⁷ Czysz, Paul A., "Evaluation and Analysis of the New Rocket-Based Combined Cycle For Reusable Launch Vehicles," HTC-9901, for MSE Technology Applications, Inc. 30 Nov 1999.
+- **[28]** ²⁸ Crutchner, Harold L., "Selected Meridional Cross Sections of Heights, Temperatures and Dew Points of the Northern Hemisphere,"NAVAIR-50-1C-59, Published by Direction of the Commander, Naval Weather Service Command, 1965.
+- **[29]** ²⁹ Astronautics & Aeronautics, January 1971, Vol 9, No 1, Figure 3-11.
+- **[30]** ³⁰ Draper, Alfred C., Buck, Melvin L., Goesch, William L., "A Delta Shuttle Orbiter," Astronautics & Aeronautics, Vol. 9, No 1, 26-36, Washington DC, January 1971.
+- **[31]** ³¹ Anon., "Hypersonic Research Facilities Study," Volumes I through VI, NASA CR 114322 through 114331, Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
+- **[32]** ³² Gaubatz, William A., "Space Transportation Infrastructure for Opening the Space Frontier-An International effort," The International Workshop on Space Plane/ RLV Technology Demonstrators, Tokyo, Japan, March 1997.
+- **[33]** ³³ Koelle, H.H. "Space Power" IAF-93-IAF Congress, Norway.
+- **[34]** ³⁴ Anon., "Hypersonic Research Facilities Study," Volumes I through VI, NASA CR 114322 through 114331, Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
+
+---
+
 ## Associated Nodes
 
 ### People
