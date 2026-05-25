@@ -23,10 +23,6 @@ source of truth" — phase is a routing/dispatch concern owned by the
 orchestrator layer, so one reviewable map beats a constant scattered
 across 67 modules.
 
-``_PHASE_ALIASES`` also accepts the older phase names (``scout`` /
-``marker`` / ``manager`` / ``meta-linker`` / ``builder``) and resolves
-them to the canonical ones, so existing invocations keep working.
-
 Discipline:
   - ``preflight`` checks (parse / structure / version) run in EVERY
     phase — they gate everything downstream.
@@ -41,22 +37,12 @@ Discipline:
 # Canonical phase names (each = the role whose output it validates).
 PHASES = ("archive", "extract", "organize", "link", "render")
 
-# Older phase names → their canonical equivalents. Accepted on the CLI
-# and resolved before comparison so existing invocations keep working.
-_PHASE_ALIASES = {
-    "scout": "archive",
-    "marker": "extract",
-    "manager": "organize",
-    "meta-linker": "link",
-    "builder": "render",
-}
-
-# Everything the ``--phase`` flag accepts: the canonical names, the
-# back-compat aliases, and ``preflight`` (parse/structure-only — runs just
-# the always-on checks, e.g. to confirm a freshly scaffolded artifact
-# parses before any content exists). ``in_scope`` already routes
-# ``preflight`` to the preflight checks alone.
-PHASE_CHOICES = ("preflight",) + PHASES + tuple(_PHASE_ALIASES)
+# Everything the ``--phase`` flag accepts: the canonical names plus
+# ``preflight`` (parse/structure-only — runs just the always-on checks,
+# e.g. to confirm a freshly scaffolded artifact parses before any content
+# exists). ``in_scope`` already routes ``preflight`` to the preflight
+# checks alone.
+PHASE_CHOICES = ("preflight",) + PHASES
 
 # check CHECK_NAME -> phase whose output it validates.
 CHECK_PHASE = {
@@ -182,16 +168,6 @@ PHASE_ROLE = {
 }
 
 
-def canonical_phase(requested_phase):
-    """Resolve a CLI ``--phase`` value to its canonical name.
-
-    Accepts both the canonical names and the alias names; passes
-    ``None`` (full pass) and any unknown value through unchanged."""
-    if requested_phase is None:
-        return None
-    return _PHASE_ALIASES.get(requested_phase, requested_phase)
-
-
 def phase_of(check_name):
     """Phase a check belongs to. Unlisted checks default to ``render``
     so the full pass always exercises them."""
@@ -210,13 +186,12 @@ def in_scope(check_name, requested_phase):
 
     ``requested_phase`` None → full pass (everything runs). Otherwise a
     check runs iff it is a ``preflight`` check (always) or its phase
-    equals the requested phase. The requested phase is resolved through
-    the back-compat aliases first.
+    equals the requested phase.
     """
     if requested_phase is None:
         return True
     p = phase_of(check_name)
-    return p == "preflight" or p == canonical_phase(requested_phase)
+    return p == "preflight" or p == requested_phase
 
 
 def _main(argv=None):
@@ -247,7 +222,7 @@ def _main(argv=None):
     )
     g.add_argument(
         "--list-choices", action="store_true",
-        help="list every value the --phase flag accepts (canonical + aliases + preflight)",
+        help="list every value the --phase flag accepts (canonical + preflight)",
     )
     ap.add_argument("--json", action="store_true", help="emit JSON")
     args = ap.parse_args(argv)
