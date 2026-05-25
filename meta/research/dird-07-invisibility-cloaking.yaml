@@ -270,4 +270,456 @@ naming_quirks:
   location: 'p. 1, title vs. AAWSAP products list attachment 7'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: disputed
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-25'
+    citation_key: '1'
+    author: 'A. Alu and N. Engheta'
+    year: '2005'
+    title: 'Achieving transparency with plasmonic and metamaterial coatings'
+    citation_verbatim: |-
+      ¹ A. Alu and N. Engheta, Achieving transparency with plasmonic and metamaterial coatings, Physical Review E 72,
+      016623 (2005).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 1'
+  - id: cw2
+    added_date: '2026-05-25'
+    citation_key: '2'
+    author: 'G. W. Milton and N.-A. P. Nicorovici'
+    year: '2006'
+    title: 'On the cloaking effects associated with anomalous localized resonance'
+    citation_verbatim: |-
+      ² G. W. Milton and N.-A. P. Nicorovici, On the cloaking effects associated with anomalous localized resonance,
+      Proceedings of the Royal Society London A 462, 3027 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 2'
+  - id: cw3
+    added_date: '2026-05-25'
+    citation_key: '3'
+    author: 'Y. Lai, H. Chen, Z-Q. Zhang, and C. T. Chan'
+    year: '2009'
+    title: 'Complementary Media Invisibility Cloak that Cloaks Objects at a Distance Outside the Cloaking Shell'
+    citation_verbatim: |-
+      ³ Y. Lai, H. Chen, Z-Q. Zhang, and C. T. Chan, Complementary Media Invisibility Cloak that Cloaks Objects at a
+      Distance Outside the Cloaking Shell, Physical Review Letters 102, 093901 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 3'
+  - id: cw4
+    added_date: '2026-05-25'
+    citation_key: '4'
+    author: 'U. Leonhardt'
+    year: '2006'
+    title: 'Optical Conformal Mapping'
+    citation_verbatim: |-
+      ⁴ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 4'
+  - id: cw5
+    added_date: '2026-05-25'
+    citation_key: '5'
+    author: 'J. B. Pendry, D. Schurig, and D. R. Smith'
+    year: '2006'
+    title: 'Controlling Electromagnetic Fields'
+    citation_verbatim: |-
+      ⁵ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 5'
+  - id: cw6
+    added_date: '2026-05-25'
+    citation_key: '6'
+    author: 'J. B. Pendry, D. Schurig, and D. R. Smith'
+    year: '2006'
+    title: 'Controlling Electromagnetic Fields'
+    citation_verbatim: |-
+      ⁶ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 6'
+  - id: cw7
+    added_date: '2026-05-25'
+    citation_key: '7'
+    author: 'U. Leonhardt and T. G. Philbin'
+    title: 'Transformation Optics and the Geometry of Light'
+    citation_verbatim: |-
+      ⁷ U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to
+      appear in Progress in Optics.
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 7'
+  - id: cw8
+    added_date: '2026-05-25'
+    citation_key: '8'
+    author: 'U. Leonhardt and T. G. Philbin'
+    title: 'Transformation Optics and the Geometry of Light'
+    citation_verbatim: |-
+      ⁸ U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to
+      appear in Progress in Optics.
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 8'
+  - id: cw9
+    added_date: '2026-05-25'
+    citation_key: '9'
+    author: 'U. Leonhardt'
+    year: '2006'
+    title: 'Optical Conformal Mapping'
+    citation_verbatim: |-
+      ⁹ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 9'
+  - id: cw10
+    added_date: '2026-05-25'
+    citation_key: '10'
+    author: 'J. B. Pendry, D. Schurig, and D. R. Smith'
+    year: '2006'
+    title: 'Controlling Electromagnetic Fields'
+    citation_verbatim: |-
+      ¹⁰ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 10'
+  - id: cw11
+    added_date: '2026-05-25'
+    citation_key: '11'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹¹ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 11'
+  - id: cw12
+    added_date: '2026-05-25'
+    citation_key: '12'
+    author: 'U. Leonhardt'
+    year: '2006'
+    title: 'Optical Conformal Mapping'
+    citation_verbatim: |-
+      ¹² U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 12'
+  - id: cw13
+    added_date: '2026-05-25'
+    citation_key: '13'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹³ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 13'
+  - id: cw14
+    added_date: '2026-05-25'
+    citation_key: '14'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹⁴ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 14'
+  - id: cw15
+    added_date: '2026-05-25'
+    citation_key: '15'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹⁵ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 15'
+  - id: cw16
+    added_date: '2026-05-25'
+    citation_key: '16'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹⁶ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 16'
+  - id: cw17
+    added_date: '2026-05-25'
+    citation_key: '17'
+    author: 'F. E. Wagner, S. Haslbeck, L. Stievano, S. Calogero, Q. A. Pankhurst, and P. Martinek'
+    year: '2000'
+    title: 'Before striking gold in gold-ruby glass'
+    citation_verbatim: |-
+      ¹⁷ F. E. Wagner, S. Haslbeck, L. Stievano, S. Calogero, Q. A. Pankhurst, and P. Martinek, Before striking gold in
+      gold-ruby glass, Nature 407, 691 (2000).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 17'
+  - id: cw18
+    added_date: '2026-05-25'
+    citation_key: '18'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ¹⁸ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 18'
+  - id: cw19
+    added_date: '2026-05-25'
+    citation_key: '19'
+    author: 'W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev'
+    year: '2007'
+    title: 'Optical cloaking with metamaterials'
+    citation_verbatim: |-
+      ¹⁹ W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics
+      1, 224 (2007).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 19'
+  - id: cw20
+    added_date: '2026-05-25'
+    citation_key: '20'
+    author: 'W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev'
+    year: '2007'
+    title: 'Optical cloaking with metamaterials'
+    citation_verbatim: |-
+      ²⁰ W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics
+      1, 224 (2007).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 20'
+  - id: cw21
+    added_date: '2026-05-25'
+    citation_key: '21'
+    author: 'C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener'
+    year: '2007'
+    title: 'Negative Refractive Index at Optical Wavelengths'
+    citation_verbatim: |-
+      ²¹ C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative
+      Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 21'
+  - id: cw22
+    added_date: '2026-05-25'
+    citation_key: '22'
+    author: 'C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener'
+    year: '2007'
+    title: 'Negative Refractive Index at Optical Wavelengths'
+    citation_verbatim: |-
+      ²² C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative
+      Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 22'
+  - id: cw23
+    added_date: '2026-05-25'
+    citation_key: '23'
+    author: 'J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, and X. Zhang'
+    year: '2008'
+    title: 'Optical Negative Refraction in Bulk Metamaterials of Nanowires'
+    citation_verbatim: |-
+      ²³ J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, and X. Zhang, Optical Negative Refraction in Bulk
+      Metamaterials of Nanowires, Science 321, 930 (2008).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 23'
+  - id: cw24
+    added_date: '2026-05-25'
+    citation_key: '24'
+    author: 'J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang'
+    year: '2008'
+    title: 'Three-dimensional optical metamaterial with a negative refractive index'
+    citation_verbatim: |-
+      ²⁴ J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional
+      optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 24'
+  - id: cw25
+    added_date: '2026-05-25'
+    citation_key: '25'
+    author: 'U. Leonhardt and T. G. Philbin'
+    year: '2006'
+    title: 'General relativity in electrical engineering'
+    citation_verbatim: |-
+      ²⁵ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 25'
+  - id: cw26
+    added_date: '2026-05-25'
+    citation_key: '26'
+    author: 'J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, A. M. Stacy, and X. Zhang'
+    year: '2008'
+    title: 'Optical Negative Refraction in Bulk Metamaterials of Nanowires'
+    citation_verbatim: |-
+      ²⁶ [11]   J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, A. M. Stacy, and X. Zhang, Optical Negative Refraction in
+      Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 23, ref 26'
+  - id: cw27
+    added_date: '2026-05-25'
+    citation_key: '27'
+    author: 'J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang'
+    year: '2008'
+    title: 'Three-dimensional optical metamaterial with a negative refractive index'
+    citation_verbatim: |-
+      ²⁷ J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional
+      optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 27'
+  - id: cw28
+    added_date: '2026-05-25'
+    citation_key: '28'
+    author: 'U. Leonhardt and T. G. Philbin'
+    year: '2006'
+    title: 'General relativity in electrical engineering'
+    citation_verbatim: |-
+      ²⁸ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 28'
+  - id: cw29
+    added_date: '2026-05-25'
+    citation_key: '29'
+    author: 'U. Leonhardt and T. Tyc'
+    year: '2009'
+    title: 'Broadband Invisibility by Non-Euclidean Cloaking'
+    citation_verbatim: |-
+      ²⁹ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 29'
+  - id: cw30
+    added_date: '2026-05-25'
+    citation_key: '30'
+    author: 'U. Leonhardt and T. Tyc'
+    year: '2009'
+    title: 'Broadband Invisibility by Non-Euclidean Cloaking'
+    citation_verbatim: |-
+      ³⁰ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 30'
+  - id: cw31
+    added_date: '2026-05-25'
+    citation_key: '31'
+    author: 'H. Chen and C. T. Chan'
+    year: '2008'
+    title: 'Time delays and energy transport velocities in three dimensional ideal cloaking devices'
+    citation_verbatim: |-
+      ³¹ H. Chen and C. T. Chan, Time delays and energy transport velocities in three dimensional ideal cloaking devices,
+      Journal of Applied Physics 104, 033113 (2008).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 31'
+  - id: cw32
+    added_date: '2026-05-25'
+    citation_key: '32'
+    author: 'U. Leonhardt and T. Tyc'
+    year: '2009'
+    title: 'Broadband Invisibility by Non-Euclidean Cloaking'
+    citation_verbatim: |-
+      ³² U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 32'
+  - id: cw33
+    added_date: '2026-05-25'
+    citation_key: '33'
+    author: 'M. Born and E. Wolf'
+    year: '1999'
+    title: 'Principles of Optics'
+    citation_verbatim: |-
+      ³³ M. Born and E. Wolf, Principles of Optics (Cambridge University Press, Cambridge, 1999).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 33'
+  - id: cw34
+    added_date: '2026-05-25'
+    citation_key: '34'
+    author: 'U. Leonhardt and T. Tyc'
+    year: '2009'
+    title: 'Broadband Invisibility by Non-Euclidean Cloaking'
+    citation_verbatim: |-
+      ³⁴ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 34'
+  - id: cw35
+    added_date: '2026-05-25'
+    citation_key: '35'
+    author: 'U. Leonhardt and T. Tyc'
+    year: '2009'
+    title: 'Broadband Invisibility by Non-Euclidean Cloaking'
+    citation_verbatim: |-
+      ³⁵ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 35'
+  - id: cw36
+    added_date: '2026-05-25'
+    citation_key: '36'
+    author: 'D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith'
+    year: '2006'
+    title: 'Metamaterial Electromagnetic Cloak at Microwave Frequencies'
+    citation_verbatim: |-
+      ³⁶ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial
+      Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 36'
+  - id: cw37
+    added_date: '2026-05-25'
+    citation_key: '37'
+    author: 'R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith'
+    year: '2009'
+    title: 'Broadband Ground-Plane Cloak'
+    citation_verbatim: |-
+      ³⁷ R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366
+      (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 37'
+  - id: cw38
+    added_date: '2026-05-25'
+    citation_key: '38'
+    author: 'R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith'
+    year: '2009'
+    title: 'Broadband Ground-Plane Cloak'
+    citation_verbatim: |-
+      ³⁸ R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366
+      (2009).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 38'
+  - id: cw39
+    added_date: '2026-05-25'
+    citation_key: '39'
+    author: 'C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener'
+    year: '2007'
+    title: 'Negative Refractive Index at Optical Wavelengths'
+    citation_verbatim: |-
+      ³⁹ C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative
+      Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+    source:
+      path: government/dird-07-invisibility-cloaking-20100302.pdf
+      location: 'p. 24, ref 39'
