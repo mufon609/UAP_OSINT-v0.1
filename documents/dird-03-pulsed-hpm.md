@@ -6,7 +6,7 @@ kind: gov-doc
 doc_form: technical-report
 ---
 
-# Pulsed High-Power Microwave Source Technology — DIA Defense Intelligence Reference Document, AAWSA Program, 28 January 2010
+# Pulsed High-Power Microwave Source Technology — DIA Defense Intelligence Reference Document, AAWSAP, 28 January 2010
 
 ## Document Summary
 
@@ -24,11 +24,11 @@ doc_form: technical-report
 
 ## Description
 
-Pulsed High-Power Microwave Source Technology. The Defense Intelligence Reference Document is 28 January 2010, with an ICOD of 1 December 2009 and control number DIA-08-0912-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program, and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
+Pulsed High-Power Microwave Source Technology. The Defense Intelligence Reference Document is 28 January 2010, with an ICOD of 1 December 2009 and control number DIA-08-0912-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author ([`/people/james-wells`]) appears there, not on the document, where the Author line shows [(b)(6)].
 
 The Summary states the paper provides an overview of the major types of high-power microwave (HPM) sources and the critical technologies required to build them. Pulsed HPM technology has been of scientific and military interest for several decades; originally the interest focused on high-altitude electromagnetic pulse (HEMP) concerns, the effects of which became fully known in 1962 when a high-altitude nuclear test codenamed Starfish Prime over the Pacific Ocean disrupted radio stations and electronic equipment 800 miles away in Hawaii. HPM radiation is composed of shorter waveforms at higher frequencies than HEMP, which makes it highly effective against electronic equipment and more difficult to harden against; whereas HEMP weapons are large in scale and require a nuclear capability, HPM weapons are smaller in scale, involve a much lower level of technology, and are within the capability of almost any state. Technical accessibility, lower cost, and the vulnerability of U.S. electronic equipment could make small-scale HPM weapons attractive to terrorist groups, and HPM devices are now categorized as directed-energy weapons. One major military use is electronic attack, referred to by the media as an ebomb, with peak powers in excess of 10 gigawatts; kill mechanisms include semiconductor overheating or burnout, arc generation, computer upsets, voltage induction into sensitive circuits, display upset, and overvoltage in discrete components.
 
-The paper discussed the critical technologies required to build a working HPM source. Because the pulsed-power section must operate at high voltages, it must contain insulating materials capable of withstanding the required voltage; high-voltage switching is critical to any source; and cathode materials are critical to narrowband HPM generation. Cathodes having some form of cesium coating over carbon nanostructures show the most potential, with the goal of gigawatt narrow-band sources capable of 100-megajoule energy output per burst, while solid-state switches generally still do not have the capability of operating at the tens of kilovolts required of HPM sources. An HPM source has three basic components — electrical or explosive prime power, an RF generator, and an antenna — and pulsed HPM sources can be divided into narrow-band pulsed electron beam sources and wideband or ultrawideband impulse sources such as SNIPER and the H series. Gyrotrons are important in narrowband HPM production because the only directed-energy weapon system known to be fielded, the Active Denial System operating at 95 GHz, is based on them. The Conclusion states that advanced cathode materials, computer codes, high-speed switching at high power, and low-loss insulation techniques are areas where advancement is needed, and that if photoconductive solid-state (PCSS) switching devices of higher operating voltage and extended lifetime are made available, variations of the phased array will become the HPM source design of choice.
+The paper discussed the critical technologies required to build a working HPM source. Because the pulsed-power section must operate at high voltages, it must contain insulating materials capable of withstanding the required voltage; high-voltage switching is critical to any source; and cathode materials are critical to narrowband HPM generation. Cathodes having some form of cesium coating over carbon nanostructures show the most potential, with the goal of gigawatt narrow-band sources capable of 100-megajoule energy output per burst, while solid-state switches generally still do not have the capability of operating at the tens of kilovolts required of HPM sources. An HPM source has three basic components — electrical or explosive prime power, an RF generator, and an antenna — and pulsed HPM sources can be divided into narrow-band pulsed electron beam sources and wideband or ultrawideband impulse sources such as SNIPER and the H series. The development work is connected to specific laboratories: cathodes are described for the magnetically insulated line oscillator and the reltron at Sandia National Laboratories ([`/organizations/sandia-national-laboratories`]) and for the relativistic klystron oscillator at the Air Force Research Laboratory (AFRL) ([`/organizations/afrl`]); SNIPER and EMBL are described as SNL sources, while the H series, Phoenix, Jolt, and the Matrix mesoband source were built or developed at the AFRL. Gyrotrons are important in narrowband HPM production because the only directed-energy weapon system known to be fielded, the Active Denial System operating at 95 GHz, is based on them. The Conclusion states that advanced cathode materials, computer codes, high-speed switching at high power, and low-loss insulation techniques are areas where advancement is needed, and that if photoconductive solid-state (PCSS) switching devices of higher operating voltage and extended lifetime are made available, variations of the phased array will become the HPM source design of choice.
 
 ---
 
@@ -337,6 +337,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-03-pulsed-hpm-20100128.pdf |
 | [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-03-pulsed-hpm-20100128.pdf |
 | Commanche | Comanche | government/dird-03-pulsed-hpm-20100128.pdf |
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-03-pulsed-hpm-20100128.pdf |
 
 ---
 
@@ -352,9 +353,16 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ## Associated Nodes
 
+### People
+
+- [`/people/james-wells`]
+
 ### Organizations
 
+- [`/organizations/aawsap`]
+- [`/organizations/afrl`]
 - [`/organizations/dia`]
+- [`/organizations/sandia-national-laboratories`]
 
 ### Documents
 
