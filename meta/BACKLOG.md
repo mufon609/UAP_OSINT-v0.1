@@ -219,22 +219,26 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-**(c) DIRD corpus consistency sweep — front-matter page-ref convention.** A
-family-comparability sweep best done in one focused `/audit` pass, not piecemeal.
-`quote_location_page` verifies arabic `p. N` against the Nth sibling block but
-SKIPS roman refs (`p. ii`) as carrying no physical-page claim. Across the 11 built
-DIRDs: **dird-06/07/18/24 use arabic sibling-block refs throughout (verified);
-dird-01/02/03/15/26 use roman printed-label front-matter refs (6–16 each,
-unverified); dird-04/05 each carry a single roman Administrative-Note front-matter
-ref.** Decide the standard and apply: (i) convert the roman refs to arabic
-sibling-block (conventional per `meta/conventions.md` "p. N = physical, not
-printed"; verified) — a content sweep across the 7 affected DIRDs; or (ii) extend
-`quote_location_page` to map roman front-matter labels to sibling blocks and verify
-them (one-script root-cause fix, keeps reader-faithful printed labels — viable
-where the roman value equals the block index). Pick one; don't leave the split.
-(Auditor caution: the build-role auditor's recommend-only family-comparability pass
-is not exhaustive across the family — a corpus-wide convention sweep like this needs
-a dedicated pass, not the per-build audit.)
+**(c) DIRD page-ref convention — finish the two unpaginated siblings.** The
+standard is settled: `meta/conventions.md` "p. N is the physical page" names roman
+front matter (`p. ii`) as exactly the printed-label form a ref must NOT use; the
+anchor is the physical page (the Nth form-feed / sibling block), which
+`quote_location_page` verifies — but it silently SKIPS roman refs (digit-only
+regex), so roman front-matter refs went unverified. The roman refs in the
+paginated DIRDs (**dird-01/03/04/05/15**) have been converted to physical page
+numbers — each resolved by matching the quote text to its actual block, since the
+cover offset isn't uniform (dird-15 is +1) — and are now page-verified.
+(The map-roman-to-block-in-the-checker alternative was rejected: that offset is
+not uniform, so resolving roman labels would false-fail correct quotes; the
+standard says convert, not resolve.) Remaining: **dird-02 and dird-26** still
+carry roman refs AND their `.txt` siblings carry no `----- PAGE BREAK -----`
+markers (unpaginated), so *no* ref there — roman or arabic — is page-verified.
+Re-segment those two siblings with page-break markers (a `/prepare-ocr-sibling`
+re-run), then convert their roman refs. Once no roman refs remain corpus-wide,
+tighten `quote_location_page` to flag `p. <roman>` as non-compliant (it currently
+skips them) so the standard self-enforces. (Auditor caution: the build-role
+auditor's recommend-only family-comparability pass is not exhaustive across the
+family — a corpus-wide convention sweep like this needs a dedicated pass.)
 
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
