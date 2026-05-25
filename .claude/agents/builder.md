@@ -47,7 +47,11 @@ In order, with a check after each (build-protocol → run
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize worker cross-ref candidates into `relationships` /
    `affiliations` / `timeline` / … with canonical `[`/path`]` links; populate
-   `naming_quirks` + `rumors`. →
+   `naming_quirks` + `rumors`. A cross-ref the worker flagged as a
+   **non-canonical source form** gets both a stub `[`/path`]` link
+   (stub-never-null) *and* a `naming_quirks` `preserve-as-sic-in-quotes`
+   entry mapping source-form → canonical (`meta/conventions.md` "A source
+   naming an entity under a non-canonical form"). →
    `validate-research.py --phase link meta/research/{slug}.yaml`
 3. **Render** — only if 1–2 are clean:
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

@@ -380,6 +380,53 @@ from the sibling rather than the corrupted PDF text layer; the
 naming_quirks entries continue to record the original artifacts as
 provenance and continue rendering via the Source-Form Notes section.
 
+### A source naming an entity under a non-canonical form — flag it, stub it
+
+The `preserve-as-sic-in-quotes` mechanism above is not only for OCR
+corruption and caption typos. It applies equally when a source names a
+known entity — a person, organization, program, or place — under a
+**non-canonical form**: an idiosyncratic abbreviation, a former name, or
+a misspelling. Such a reference is handled three ways at once, all
+required:
+
+1. **Preserve the source form verbatim in `quote.text`** — never silently
+   substitute the canonical form. The source form lives **only** inside
+   verbatim quotes (and the `location` / `significance` that describe them).
+   Every *synthesized* surface the repo authors in its own voice —
+   `display_title`, `quote_attribution`, the `description` prose,
+   cross-reference labels, and the canonical node name — uses the **canonical**
+   form (here, "Advanced Aerospace Weapon System Applications Program
+   (AAWSAP)"). The repo never adopts a source's idiosyncratic abbreviation as
+   its own label: a `display_title` that reads "AAWSA Program" instead of
+   "AAWSAP" is the deeper version of this defect — the variant leaking out of
+   the verbatim layer into the repo's own naming. The quote still carries
+   "AAWSA" verbatim and is still flagged (below); canonicalizing the synthesized
+   surfaces does not remove that need, it just stops the variant from
+   masquerading as the repo's chosen name.
+2. **Register a `naming_quirks` entry** (`resolution:
+   preserve-as-sic-in-quotes`) mapping the observed source form →
+   canonical name + source path, so the variance renders in the node's
+   `## Source-Form Notes` table.
+3. **Carry the canonical entity navigationally** — a stub cross-reference
+   to its canonical `/{type}/{slug}`, **even when that node is not yet
+   built** (per *Cross-reference paths to unbuilt nodes — use a stub,
+   never null*). In prose, wrap the source-verbatim form with the
+   canonical bracket path so the prose-drift check still matches the
+   source token — e.g. `Advanced Aerospace Weapon System Applications
+   (AAWSA) Program [`/organizations/aawsap`]`.
+
+The failure mode this closes: a source's own abbreviation reads as
+legitimate document text, so it slips past the OCR-artifact radar (it is
+not a corruption), and because its canonical node isn't built there is no
+name-match to trigger a cross-reference — so the reference is dropped and
+the variance goes unflagged. **An entity referenced under a variant form
+is not glossed over because its node doesn't exist yet; it is stubbed and
+flagged.** Worked example: the AAWSAP DIRDs write "Advanced Aerospace
+Weapon System Applications (AAWSA) Program" — "AAWSA" stays verbatim, a
+`naming_quirks` entry maps it to the Advanced Aerospace Weapon System
+Applications Program, and the program is stub-linked
+`[`/organizations/aawsap`]` though that node is unbuilt.
+
 ### Transcript provenance and audit discipline
 
 Transcripts of speech sources split into two evidentiary classes by
