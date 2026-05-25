@@ -313,18 +313,38 @@ sources (sibling carries no page markers): the hearing transcripts
 (`cia-rdp79-00999a000300030027-0`, `cia-rdp96-...100180001-3`,
 `cia-rdp96-...100220001-8`), the FOIA releases (`foia-23-f-0905-doc-1` / `-doc-2`,
 `foia-23-f-0906-sancorp-ipmo-pws`), `docs-house-gov-hhrg-118-go12-20241113-sd004`,
-and `blackvault-aaro-invitations-to-grusch-24-F-0266`. Separately, a few `p. N`
-refs sit on **HTML** sources that have no pages (`sec-ttsa-1a-partii-20170710`,
-two `opg.optica.org` Targ articles) — those are mis-formatted and should be `¶N`.
+and `blackvault-aaro-invitations-to-grusch-24-F-0266`. Separately, `p. N` refs
+sit on **HTML** sources that have no pages (`sec-ttsa-1a-partii-20170710` — ~25
+refs across ttsa's quotes/timeline/relationships in mixed prefix/suffix/bare
+forms; two `opg.optica.org` Targ articles in russell-targ — note some russell-targ
+`p. 1` refs point to CIA *PDFs*, not the HTML, so check the source per ref).
 
-Fix: paginate each OCR sibling with `----- PAGE BREAK -----` so block N = PDF
-viewer page N (the rule the DIRDs now follow), re-verify each artifact's `p. N`
-refs resolve, and convert the HTML `p. N` refs to `¶N`. **Then** add the guard:
-for any source with a `.txt` sibling, the sibling's `\f`-block count must equal
-the PDF's page count (`pdfinfo`) — mechanically catches a sibling that doesn't
-mirror its PDF (unpaginated or page-short), so the silent-skip can't recur. The
-guard is deferred until the siblings are paginated; added now it would flag all
-17 at once. (All 11 DIRD siblings already satisfy block-count == pdfinfo-pages.)
+**Decisions (locked with the maintainer):** (1) the hearing transcripts use the
+**PDF-viewer page** (the native view is the PDF; what a reader types into the
+viewer to find the quote), *not* the printed stenographic page — same rule as the
+DIRDs; their refs likely cite the stenographic page today and must be re-derived.
+(2) the **HTML** `p. N` page claims are inapplicable and are removed — anchor to
+the SEC filing's section heading (the form ttsa quotes already use) or a paragraph
+anchor; not a page.
+
+**Method — page-image pagination (no scriptable shortcut; tested).** Auto-aligning
+each clean sibling to its `pdftotext` page boundaries fails: the image-only PDFs
+(CIA docs, foia-0905, docs-house) have *no* text layer; the hearing transcripts'
+`pdftotext` is jumbled (line-numbered stenographic, reading order scrambled); and
+even the clean-`pdftotext` OCR pair aligns poorly (sancorp 15/20, blackvault 7/28
+page-start phrases findable). So each sibling must be paginated the dird-06 way —
+read the PDF page images, insert `----- PAGE BREAK -----` at each physical-page
+boundary so block N = PDF viewer page N — then re-verify each artifact's refs
+resolve (the transcripts also need refs re-derived). ~8 multi-page sources, ~270
+pages total; a deliberate per-source pass, committing each. Note
+`foia-23-f-0905-doc-2` is a **single physical page** → a 1-page source legitimately
+carries no `\f` and its `p. 1` is skipped by convention (not a defect; no work).
+
+**Then** add the guard: for any source with a `.txt` sibling, the sibling's
+`\f`-block count must equal the PDF's page count (`pdfinfo`) — catches a sibling
+that doesn't mirror its PDF. Deferred until the siblings are paginated (added now
+it flags all of them). All 11 DIRD siblings already satisfy block-count ==
+pdfinfo-pages.
 
 **Blocks:** none.
 **Blocked by:** none — each source's sibling can be paginated independently.
