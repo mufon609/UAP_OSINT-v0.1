@@ -24,7 +24,7 @@ doc_form: technical-report
 
 ## Description
 
-Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line on every page. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document's Author line carries only a FOIA redaction marker, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).
+Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document's Author line carries only a FOIA redaction marker, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).
 
 In the Introduction, the document states that when sensors, filters, emitters, and photovoltaic solar panels are made of Programmable Matter smart materials, the solution to a component failure or new mission requirement might be as simple as a software update. Other advantages of dynamic materials include advanced energy management and energy scavenging from a variety of sources; smart materials can even create new defensive capabilities, such as chameleon-style camouflage, deflection of laser beams, and even outright invisibility. The white paper is intended to serve as a primer on the principles behind smart materials and their possible aerospace applications over the next 50 years.
 
@@ -84,7 +84,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. ii, ¶ prepared-by/author block |
+| Location | p. 3, ¶ prepared-by/author block |
 
 ---
 
@@ -96,7 +96,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. ii, ¶ Administrative Note |
+| Location | p. 3, ¶ Administrative Note |
 
 ---
 
@@ -108,7 +108,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. ii, ¶ Administrative Note |
+| Location | p. 3, ¶ Administrative Note |
 
 ---
 
@@ -120,7 +120,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. iv, ¶ Introduction |
+| Location | p. 5, ¶ Introduction |
 
 ---
 
@@ -132,7 +132,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. iv, ¶ Introduction |
+| Location | p. 5, ¶ Introduction |
 
 ---
 
@@ -144,7 +144,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. iv, ¶ Introduction |
+| Location | p. 5, ¶ Introduction |
 
 ---
 
@@ -156,7 +156,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 3, ¶ Quantum Dots |
+| Location | p. 8, ¶ Quantum Dots |
 
 ---
 
@@ -168,7 +168,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 6, ¶ after Fig. 4 |
+| Location | p. 11, ¶ after Fig. 4 |
 
 ---
 
@@ -180,7 +180,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 6, ¶ challenges |
+| Location | p. 11, ¶ challenges |
 
 ---
 
@@ -192,7 +192,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 12, ¶ Advanced Concepts in Programmable Materials |
+| Location | p. 17, ¶ Advanced Concepts in Programmable Materials |
 
 ---
 
@@ -204,7 +204,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 13, ¶ Scenario for Possible Applications |
+| Location | p. 18, ¶ Scenario for Possible Applications |
 
 ---
 
@@ -216,7 +216,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 15, ¶ Directions for Future Research |
+| Location | p. 20, ¶ Directions for Future Research |
 
 ---
 
@@ -228,7 +228,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 15, ¶ Directions for Future Research |
+| Location | p. 20, ¶ Directions for Future Research |
 
 ---
 
@@ -240,7 +240,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 16, ¶ Conclusions |
+| Location | p. 21, ¶ Conclusions |
 
 ---
 

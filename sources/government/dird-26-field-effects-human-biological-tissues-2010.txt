@@ -1,5 +1,3 @@
---- page i (cover; physical page 1) ---
-
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through with black strike line]
 
 [DIA seal]
@@ -22,9 +20,21 @@ Human Biological Tissues
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through with black strike line]
 
---- page (physical page 2): EXCLUDED — third-party "The Black Vault" declassification distribution insert ("This document is made available through the declassification efforts and research of John Greenewald, Jr., creator of: The Black Vault ... Discover the Truth at: http://www.theblackvault.com"). Not part of the DIRD; excluded per conventions. ---
+----- PAGE BREAK -----
 
---- page ii (physical page 3) ---
+This document is made available through the declassification efforts
+and research of John Greenewald, Jr., creator of:
+
+The Black Vault
+
+The Black Vault is the largest online Freedom of Information Act (FOIA)
+document clearinghouse in the world. The research efforts here are
+responsible for the declassification of hundreds of thousands of pages
+released by the U.S. Government & Military.
+
+Discover the Truth at: http://www.theblackvault.com
+
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -62,7 +72,7 @@ DC 20340-5100.
 ii
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page iii (physical page 4) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -98,7 +108,7 @@ Figures
 iii
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page iv (physical page 5) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -116,7 +126,7 @@ Error! Bookmark not defined.
 iv
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page v (physical page 6) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -174,7 +184,7 @@ may be a threat to United States interests.
 v
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page vi (physical page 7) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -232,7 +242,7 @@ studies.
 vi
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page vii (physical page 8) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -244,7 +254,7 @@ UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 vii
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 1 (physical page 9) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -303,7 +313,7 @@ two decades. Historically, the IC (Intelligence Community) adduces verification 
 1
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 2 (physical page 10) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -361,7 +371,7 @@ http://www.cancer.org/docroot/ped/content/ped_1_3x_radiation_exposure
 2
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 3 (physical page 11) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -420,7 +430,7 @@ Government wasn't harassing him, but his document was valid: it was a newly
 3
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 4 (physical page 12) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -483,7 +493,7 @@ could be meters, or even hundreds of meters [5].
 4
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 5 (physical page 13) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -542,7 +552,7 @@ anecdotal cases in this domain, we will not review laser-induced field effects.
 5
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 6 (physical page 14) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -604,7 +614,7 @@ schizophrenic.
 6
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 7 (physical page 15) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -663,7 +673,7 @@ division. (Green & Schuessler, unpublished findings of a pair of well-documented
 7
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 8 (physical page 16) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -722,7 +732,7 @@ the author is underway and described in Appendix C.
 8
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 9 (physical page 17) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -767,7 +777,7 @@ National Laboratories during the Cold War era intended to study potential weapon
 9
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 10 (physical page 18) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -828,7 +838,7 @@ demarcate exposure in SAR, and can help distinguish whole body, head, and/or hot
 10
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 11 (physical page 19) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -888,7 +898,7 @@ additional inferences as to putative energy sources of anomalous events.
 11
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 12 (physical page 20) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -948,7 +958,7 @@ data from the events.
 12
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 13 (physical page 21) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1006,7 +1016,7 @@ review.
 13
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 14 (physical page 22) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1062,7 +1072,7 @@ Electromagnetic Radiation), heating isn't the current concern. Rather, it is low
 14
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 15 (physical page 23) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1121,7 +1131,7 @@ devices transmitting in the frequency range from 100 kHz to 6 GHz. The limits us
 15
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 16 (physical page 24) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1178,7 +1188,7 @@ Section 17.4.5. Copyright NCRP, 1986, Bethesda, Maryland 20814."
 16
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 17 (physical page 25) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1237,7 +1247,7 @@ propulsion systems of anomalous aerospace vehicles, independent of origin, based
 17
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 18 (physical page 26) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1297,7 +1307,7 @@ real-world human cases:
 18
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 19 (physical page 27) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1357,7 +1367,7 @@ neuroscience-research#rt4022
 19
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 20 (physical page 28) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1418,7 +1428,7 @@ Lecture Series No. 138
 20
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 21 (physical page 29) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1478,7 +1488,7 @@ migration, and invasion Bioelectromagnetics Dec. 29(8):615-25
 21
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 22 (physical page 30) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1516,7 +1526,7 @@ http://www.medterms.com/script/main/art.asp?articlekey=31785
 22
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 23 (physical page 31) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1580,7 +1590,7 @@ Table of Effects Frequency
 23
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 24 (physical page 32) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1611,7 +1621,7 @@ control of vehicle, material evidence.
 24
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 25 (physical page 33) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1676,7 +1686,7 @@ Data Sources (red =pending ICD classification)
 25
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 26 (physical page 34) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1727,7 +1737,7 @@ UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 26
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 27 (physical page 35) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1771,7 +1781,7 @@ AN5   Anomalous reports of injuries and deaths. i.e. SHC(spontaneous human
 27
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 28 (physical page 36) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1822,7 +1832,7 @@ protections for consumers across the country. [49]
 28
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 29 (physical page 37) ---
+----- PAGE BREAK -----
 
 [Landscape page. UNCLASSIFIED//FOR OFFICIAL USE ONLY banner at top and bottom (rotated/sideways on the image).]
 
@@ -1867,7 +1877,7 @@ The numeric cell entries (case-index numbers such as 5, 9, 13, 14, 17, 19, 27, 3
 29
 [UNCLASSIFIED//FOR OFFICIAL USE ONLY banner — rotated]
 
---- page 30 (physical page 38) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
@@ -1916,7 +1926,7 @@ Light-sensitive          5
 30
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 
---- page 31 (physical page 39) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[FOR OFFICIAL USE ONLY — struck through]
 

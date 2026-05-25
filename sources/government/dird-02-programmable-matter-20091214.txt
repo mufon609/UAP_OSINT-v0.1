@@ -1,5 +1,3 @@
---- page 1 (physical page 1) [cover] ---
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [DIA seal]
@@ -22,11 +20,21 @@ Programmable Matter
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 2 (physical page 2) ---
+----- PAGE BREAK -----
 
-[EXCLUDED: The Black Vault declassification cover page appears on physical page 2. Body not transcribed per instructions. Text reads, in summary, that the document is made available through the declassification efforts and research of John Greenewald, Jr., creator of The Black Vault, with a description of The Black Vault FOIA clearinghouse and the URL http://www.theblackvault.com. This insert is NOT part of the DIRD.]
+This document is made available through the declassification efforts
+and research of John Greenewald, Jr., creator of:
 
---- page 3 (physical page ii) ---
+The Black Vault
+
+The Black Vault is the largest online Freedom of Information Act (FOIA)
+document clearinghouse in the world. The research efforts here are
+responsible for the declassification of hundreds of thousands of pages
+released by the U.S. Government & Military.
+
+Discover the Truth at: http://www.theblackvault.com
+
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -63,7 +71,7 @@ DC 20340-5100.
 ii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 4 (physical page iii) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -104,7 +112,7 @@ Tables
 iii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 5 (physical page iv) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -139,7 +147,7 @@ behind smart materials and their possible aerospace applications over the next
 iv
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 6 (physical page 1) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -197,7 +205,7 @@ layers is a "band gap" of forbidden energies. Here, there exist no electrons at 
 1
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 7 (physical page 2) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
@@ -239,7 +247,7 @@ atoms with properties that simply do not occur on the periodic table. If we want
 2
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 8 (physical page 3) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -274,7 +282,7 @@ the passage of light. The result is a transparent material whose optical propert
 3
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 9 (physical page 4) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -328,7 +336,7 @@ polarize, diffuse, and absorb light in limitless combinations.
 4
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 10 (physical page 5) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
@@ -376,7 +384,7 @@ of changing their properties—indeed, their very purpose—on demand.
 5
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
---- page 11 (physical page 6) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -418,7 +426,7 @@ malicious hackers the keys to matter itself!
 6
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 12 (physical page 7) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
@@ -475,7 +483,7 @@ with low-E. Furthermore, because dynamic windows and low-E coatings save energy
 7
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
---- page 13 (physical page 8) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
@@ -511,7 +519,7 @@ energy savings up to three times those of low-E glass alone.
 8
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
---- page 14 (physical page 9) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -543,7 +551,7 @@ junction, one face grows hot while the other grows cold.
 9
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 15 (physical page 10) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -588,7 +596,7 @@ of energy required for air circulation and other life support functions).
 10
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 16 (physical page 11) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -645,7 +653,7 @@ possible.
 11
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 17 (physical page 12) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -701,7 +709,7 @@ current capabilities.
 12
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 18 (physical page 13) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -759,7 +767,7 @@ skylights follow them around, but now they are looking out mainly from the stati
 13
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 19 (physical page 14) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -817,7 +825,7 @@ popularity (and, indirectly, the usefulness) of different designs. Thus, consume
 14
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 20 (physical page 15) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -875,7 +883,7 @@ objects are made from traditional, inert materials. Their relationship to materi
 15
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
---- page 21 (physical page 16) ---
+----- PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
