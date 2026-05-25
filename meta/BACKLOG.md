@@ -84,6 +84,95 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
+### A2 — Prove + adopt the speaker-attribution discipline for label-less transcript sources
+
+**The problem.** A transcript whose source is *label-less* — a machine caption or
+speech-to-text that records the words but not who spoke them — cannot have its
+speakers *determined* by a text reader; they can only be *inferred* from textual
+cues (second-person address, one participant naming another in the third person,
+question-then-answer structure). Those cues are frequently absent or ambiguous in a
+fast two-party exchange, and inferring from them is the very process that produces
+misattributions: a line delivered by one participant gets assigned to the other, and
+a back-and-forth collapses onto a single speaker. The ground truth for
+who-is-speaking lives only in the audio. A pilot audit of one label-less
+multi-speaker transcript found exactly this pattern in already-shipped content (a
+passage attributed to the wrong participant; another single-attribution that was
+really a two-party exchange; a summary line crediting the wrong speaker) — the
+discipline gap is real, not hypothetical.
+
+**Mechanism shipped (committed this session).** A quote may now
+carry `speaker_id` as a single id string (one speaker, unchanged) **or a list of 2+
+ids for a mixed exchange** — a passage carrying more than one speaker's words, or an
+unresolvable speaker boundary in a label-less source. A 2+ list is itself the mixed
+marker; the renderer emits a `Speakers — mixed exchange` row naming all involved
+speakers. No separate tag field (a second source of truth would drift). Changed:
+`scripts/checks/quotes.py` (resolve each id; reject 1-element list / duplicates /
+unknown ids), `scripts/build/renderers/_common.py` (`_render_attribution_block`), and
+the `schema-research-artifact.yaml::quote_entry.speaker_id` spec comment. Tested:
+single-speaker output byte-identical; mixed renders; the three bad shapes error while
+valid single + mixed pass; full-corpus `validate` / `validate-research` /
+`help-check` / `smoke` all green. **What remains HELD (uncommitted) is the pilot node's attribution
+corrections** — those rest on text-cue inference (the same fallible method that
+caused the original errors) and are unproven until confirmed against the audio. (Session specifics — which node,
+which quote ids — live in the working-tree diff and the session plan file, not here,
+to keep this entry topic-neutral.)
+
+**The discipline to adopt (the long-term fix).** Speaker attribution on a label-less
+source must be **confirmed against the audio** — the analog of the verbatim
+"source-read-first" rule (call it "confirm-against-audio"). A transcript quotes only
+a bounded set of passages, so a human listening to those few timestamps is a finite,
+definitive check that needs no tooling. Diarization is an *optional accelerator* for
+many-speaker sources, not the primary mechanism: it is heavy (HF-gated pyannote +
+torch, ~real-time on CPU), is not set up in this checkout (no `.venv-diarize`, no
+`HF_TOKEN`), and is weakest precisely on the rapid-crosstalk boundaries that are
+hardest. The mixed-exchange tag represents an unresolvable boundary honestly without
+fabricating a split.
+
+**Latent features assessed (keep both).** `derived_from` (transcript frontmatter) is
+wired + rendered but has 0 uses — its case is a transcript that is a text rendering
+*of* a media/document node; latent, correct, keep. The audio-diarization sub-branch
+(`diarize-audio.py` + `setup-diarize-audio.sh`) was built and debugged historically
+but is unexercised in this checkout; optional, keep, note the setup cost.
+
+**Tooling-adequacy gaps — do NOT file fixes until each is proven needed (the
+test-before-BACKLOG rule).** The is-the-pipeline-enough answer for label-less
+multi-speaker sources is *no*, but each specific fix must be demonstrated against a
+real failing test before it becomes a work item: a label-less speech-to-text source
+is not a first-class tool path (`transcribe.py` is YouTube-caption-only); there is no
+mechanical speaker aid for label-less transcripts (attribution falls to manual
+inference); the speaker-ID pipeline's intermediate outputs are `/tmp`-ephemeral;
+`stitch-transcript.py` loads the face-detector by file-path `importlib` hack rather
+than a shared module; there is no end-to-end integration test of the
+download→diarize→stitch path; Haar-cascade face detection misses frequently (manual
+crop fallback); and several thresholds are hardcoded (pHash distance, min face size,
+segment-snap tolerance).
+
+**Remaining work (ordered — this is the plan).**
+1. **Prove the method (gate).** Confirm the pilot node's attributions against the
+   audio — a human listens to the quoted timestamps, or run diarization (requires
+   `HF_TOKEN` + manual acceptance of the gated pyannote models + the multi-GB venv
+   install). Nothing downstream is committed or codified until this settles.
+2. **Accept or revise** the held pilot attribution corrections per the result; commit
+   (revisit the mechanism only if the audio contradicts its premise).
+3. **Codify the universal conversation template** in `meta/conventions.md` —
+   **generic / topic-neutral, no content-node exemplar**: single vs. mixed
+   `speaker_id`; narration as a `speakers[]` entry (role Narrator, `node_link` when
+   identified); non-speech (music / SFX / applause / caption `>>` turn-markers)
+   captured only when verbatim-in-source AND load-bearing, via a non-person
+   `speakers[]` entry, default not captured (per "Density is source-driven");
+   same-speaker-different-recording carried via `statement_date` + `context` (no new
+   field).
+4. **Audit the remaining transcript nodes**, one at a time: stenographic hearing
+   transcripts are speaker-labeled in their source (mechanically verifiable,
+   low-risk); auto-caption interview transcripts are label-less (apply
+   confirm-against-audio + the mixed tag).
+5. **Re-assess the tooling gaps** with the test evidence; file specific fixes only
+   once a real test demonstrates the need.
+
+**Blocks:** none.
+**Blocked by:** the step-1 proof gate — a human audio-listen, or diarization setup
+(`HF_TOKEN` + gated-model acceptance + venv install).
+
 ### A3 — DIRD extraction: re-level the corpus against the rubric + extract remaining citations
 
 The DIRD extraction standard now exists — the passage-selection rubric in
