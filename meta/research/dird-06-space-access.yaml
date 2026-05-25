@@ -77,7 +77,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 2, prepared-by/author block'
+    location: 'p. 3, prepared-by/author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
   statement_date: '2010-03-08'
 - id: q-copyright-warning
@@ -86,7 +86,7 @@ quotes:
     COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 2, Administrative Note (Copyright Warning)'
+    location: 'p. 3, Administrative Note (Copyright Warning)'
   significance: Copyright warning — further dissemination of the photographs in the publication is not authorized
   statement_date: '2010-03-08'
 - id: q-administrative-note-aawsa
@@ -95,7 +95,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 2, Administrative Note'
+    location: 'p. 3, Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
   statement_date: '2010-03-08'
 - id: q-intro-thesis-skill-not-technology
@@ -104,7 +104,7 @@ quotes:
     This is a matter of skill; operational hardware based on durable, reliable, and demonstrated components; and operational systems. It is not necessarily a matter of technology.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 4, ¶1 (Introduction, printed p. v)'
+    location: 'p. 6, ¶1 (Introduction, printed p. v)'
   significance: Central thesis — robust space access is a matter of skill and operational hardware based on durable, reliable, demonstrated components, not necessarily a matter of technology
   statement_date: '2010-03-08'
 - id: q-intro-aerospace-veterans-hardware-issue
@@ -113,7 +113,7 @@ quotes:
     veterans responded, "It was not a technology issue; it was a hardware issue."
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 5, ¶ continued (Introduction, printed p. vi)'
+    location: 'p. 7, ¶ continued (Introduction, printed p. vi)'
   significance: Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes printed p. v; this verbatim portion opens printed p. vi)
   statement_date: '2010-03-08'
 - id: q-intro-x15-end-of-aircraft-to-space
@@ -122,7 +122,7 @@ quotes:
     With the orbiting of Sputnik, the aircraft path to space, as represented by the X series of planes, ended with the X-15. With the X-15's demise, all efforts to fly aircraft to space ended, replaced by the more familiar (but less practical) strategy of loudly blasting to space with expendable rockets derived from undertested ballistic missile hardware, as documented in early failures.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 6, ¶2 (Introduction, printed p. vii)'
+    location: 'p. 8, ¶2 (Introduction, printed p. vii)'
   significance: History — with Sputnik, the aircraft path to space (the X series) ended with the X-15, replaced by expendable rockets derived from undertested ballistic missile hardware
   statement_date: '2010-03-08'
 - id: q-glider-vs-cruiser-two-configurations
@@ -131,7 +131,7 @@ quotes:
     Two basic configuration types emerge. One configuration is for a hypersonic glider powered by either rocket or air-breathing rocket cycle propulsion that can operate as air-breathing propulsion to mach 5.5 or less. A versatile variable-capture, inward-turning inlet⁴ can be integrated with the vehicle configuration derived from the FDL series of hypersonic gliders developed by the U.S. Air Force Flight Dynamics Laboratory (AFFDL)⁵ and the work of the McDonnell Douglas Astronautics Company.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 9, ¶2 (Hypersonic Configuration Concepts, printed p. 3)'
+    location: 'p. 11, ¶2 (Hypersonic Configuration Concepts, printed p. 3)'
   significance: Configuration taxonomy — the rocket / air-breathing-rocket hypersonic glider is derived from the AFFDL FDL series of hypersonic gliders and the McDonnell Douglas Astronautics Company''s work
   statement_date: '2010-03-08'
 - id: q-stephens-weight-factor-lifting-spacecraft
@@ -140,7 +140,7 @@ quotes:
     A report cited in Appendix A (Stephens, 1965) concluded, "Weight factor for lifting spacecraft results primarily from larger surface area and only secondarily from the associated spacecraft environment and may be as large as a factor of two greater than ballistic spacecraft."
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 14, ¶3 (Hypersonic Configuration Concepts, printed p. 8)'
+    location: 'p. 16, ¶3 (Hypersonic Configuration Concepts, printed p. 8)'
   significance: Weight-factor analysis — a 1965 Stephens report concluded the weight factor for lifting spacecraft results primarily from larger surface area and may be as much as twice that of a ballistic spacecraft
   statement_date: '2010-03-08'
 - id: q-fdl7-cross-range-no-waiting
@@ -149,7 +149,7 @@ quotes:
     The hypersonic glider based on the FDL-7C and the hypersonic air-breathing aircraft in Figure 8 both have hypersonic L/D ratios in excess of 2.7. In very practical terms, that means unpowered cross ranges in excess of 4,500 nautical miles and down ranges on the order of the Earth's circumference. So these two craft can depart from any location of a low-altitude orbit and land in CONUS or in continental Europe.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 16, ¶1 (Hypersonic Configuration Concepts, printed p. 10)'
+    location: 'p. 18, ¶1 (Hypersonic Configuration Concepts, printed p. 10)'
   significance: Glider capability — the FDL-7C class has hypersonic L/D ratios above 2.7, giving unpowered cross ranges in excess of 4,500 nautical miles so the craft can depart any low orbit and land in CONUS or continental Europe
   statement_date: '2010-03-08'
 - id: q-xlr129-vs-ssme-development-time
@@ -158,7 +158,7 @@ quotes:
     The XLR-129 was a shuttle-class engine that operated with turbopump exit pressures of 3,500 psi. It was brought to full pressure operation for the U.S. Air Force in just over 3 months.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 31, ¶2 (Rocket Propulsion, printed p. 25)'
+    location: 'p. 33, ¶2 (Rocket Propulsion, printed p. 25)'
   significance: Lost capability — the Pratt & Whitney XLR-129, a shuttle-class engine, was brought to full pressure operation in just over three months, contrasted in the source with the space shuttle main engine''s three years and lack of reusability without overhaul
   statement_date: '2010-03-08'
 - id: q-horizontal-takeoff-a-priori-defeat
@@ -167,7 +167,7 @@ quotes:
     So the resulting observation was "See! Air breathers are not lighter than all-rocket!" And so the rocket proponents have defeated an air-breathing solution since the first aerospace plane in 1958.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 39, ¶1 (Up-and-Down Operations, printed p. 33)'
+    location: 'p. 41, ¶1 (Up-and-Down Operations, printed p. 33)'
   significance: Takeoff-mode argument — an a priori dictate of horizontal takeoff inflates air-breather gross weight, and on that basis rocket proponents have defeated an air-breathing solution since the first aerospace plane in 1958
   statement_date: '2010-03-08'
 - id: q-conclusion-where-is-infrastructure
@@ -176,7 +176,7 @@ quotes:
     But where is our space infrastructure? Forty years after Apollo, why have we advanced so little (as illustrated in Figure 43)? Like the pioneers' Conestoga wagons, most of our trips to LEO are one way, and when we do return, we do so with little more than the people we took to space.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 44, ¶3 (Conclusion, printed p. 38)'
+    location: 'p. 46, ¶3 (Conclusion, printed p. 38)'
   significance: Conclusion — forty years after Apollo there is no space infrastructure; most trips to LEO are one way, like the pioneers'' Conestoga wagons
   statement_date: '2010-03-08'
 - id: q-conclusion-space-business-backwards
@@ -185,7 +185,7 @@ quotes:
     Without an infrastructure, we are doomed to expendable vehicles at low launch rates for specific, one-time missions with no semblance of an infrastructure. Neither the United Kingdom nor the United States had any long-distance, two-way commerce until the railroads were established. After that, cities and commerce centers were created, enabling two-way commerce. The space business has it backwards: There is no commerce until the infrastructure is in place, not vice versa.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 45, ¶2 (Conclusion, printed p. 39)'
+    location: 'p. 47, ¶2 (Conclusion, printed p. 39)'
   significance: Infrastructure-before-commerce — as with the railroads enabling two-way commerce, the space business has it backwards because there is no commerce until the infrastructure is in place
   statement_date: '2010-03-08'
 - id: q-conclusion-known-50-years-not-technology
@@ -194,7 +194,7 @@ quotes:
     Is it a technology issue? Hardly! We have known for 50 years how to create it. Werner von Braun had Walt Disney create a clear visual image of what is required. But nobody listened, as we were too busy creating new things and throwing away the old things, destroying any development continuity.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 45, ¶3 (Conclusion, printed p. 39)'
+    location: 'p. 47, ¶3 (Conclusion, printed p. 39)'
   significance: Not-a-technology-issue — creating a LEO infrastructure is not a technology issue; the document states we have known for 50 years how to create it but destroyed development continuity
   statement_date: '2010-03-08'
 cited_works:
@@ -209,7 +209,7 @@ cited_works:
       with Praxis Publishing, Chichester, UK, 20089.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 1'
+      location: 'p. 57, endnote 1'
   - id: cw2
     added_date: '2026-05-25'
     citation_key: '2'
@@ -221,7 +221,7 @@ cited_works:
       Original of TsAGI paper, 1990.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 2'
+      location: 'p. 57, endnote 2'
   - id: cw3
     added_date: '2026-05-25'
     citation_key: '3'
@@ -232,7 +232,7 @@ cited_works:
       ³ Private Communication with Vladimir Plothith, AIAA Aerospace Sciences Conference, 1991.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 3'
+      location: 'p. 57, endnote 3'
   - id: cw4
     added_date: '2026-05-25'
     citation_key: '4'
@@ -243,7 +243,7 @@ cited_works:
       ⁴ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 4'
+      location: 'p. 57, endnote 4'
   - id: cw5
     added_date: '2026-05-25'
     citation_key: '5'
@@ -255,7 +255,7 @@ cited_works:
       AIAA 75-1039, AIAA 25th Aircraft Systems and Technology Meeting, Los Angeles, California, August 1975.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 5'
+      location: 'p. 57, endnote 5'
   - id: cw6
     added_date: '2026-05-25'
     citation_key: '6'
@@ -267,7 +267,7 @@ cited_works:
       Knowledge and Practical Guide to the Solution of Aircraft Design Problems," First Edition, Pergamon Press, 1978.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 6'
+      location: 'p. 57, endnote 6'
   - id: cw7
     added_date: '2026-05-25'
     citation_key: '7'
@@ -279,7 +279,7 @@ cited_works:
       9, No 1, 26-36, Washington DC, January 1971.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 7'
+      location: 'p. 57, endnote 7'
   - id: cw8
     added_date: '2026-05-25'
     citation_key: '8'
@@ -290,7 +290,7 @@ cited_works:
       ⁸ Astronautics & Aeronautics, January 1971, Vol 9, No 1.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 8'
+      location: 'p. 57, endnote 8'
   - id: cw9
     added_date: '2026-05-25'
     citation_key: '9'
@@ -301,7 +301,7 @@ cited_works:
       ⁹ Dana, William, X-15, X24A, X24B pilot, Private Communications, 1973, 1998.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 9'
+      location: 'p. 57, endnote 9'
   - id: cw10
     added_date: '2026-05-25'
     citation_key: '10'
@@ -312,7 +312,7 @@ cited_works:
       ¹⁰ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 10'
+      location: 'p. 57, endnote 10'
   - id: cw11
     added_date: '2026-05-25'
     citation_key: '11'
@@ -322,7 +322,7 @@ cited_works:
       ¹¹ "Advanced Engine Development at Pratt & Whitney," Society of Automotive Engineers.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 11'
+      location: 'p. 57, endnote 11'
   - id: cw12
     added_date: '2026-05-25'
     citation_key: '12'
@@ -334,7 +334,7 @@ cited_works:
       Aeronautics, Cranfield Institute of Technology, Cranfield, 1988.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 12'
+      location: 'p. 57, endnote 12'
   - id: cw13
     added_date: '2026-05-25'
     citation_key: '13'
@@ -346,7 +346,7 @@ cited_works:
       9ᵗʰ International Space Planes and Hypersonic Systems and Technologies Conference, Norfolk, Va. Nov. 1999.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 13'
+      location: 'p. 57, endnote 13'
   - id: cw14
     added_date: '2026-05-25'
     citation_key: '14'
@@ -356,7 +356,7 @@ cited_works:
       ¹⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 14'
+      location: 'p. 57, endnote 14'
   - id: cw15
     added_date: '2026-05-25'
     citation_key: '15'
@@ -368,7 +368,7 @@ cited_works:
       Sciences Meeting, Reno, Nevada, January 1992.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 15'
+      location: 'p. 57, endnote 15'
   - id: cw16
     added_date: '2026-05-25'
     citation_key: '16'
@@ -380,7 +380,7 @@ cited_works:
       Boosters," AIAA paper, 4ᵗʰ International Aerospace Planes Conference, Orlando, Florida, December 1991.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 16'
+      location: 'p. 57, endnote 16'
   - id: cw17
     added_date: '2026-05-25'
     citation_key: '17'
@@ -392,7 +392,7 @@ cited_works:
       911183, SAE Aerospace Atlantic, April 1991, Dayton, Ohio.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 17'
+      location: 'p. 57, endnote 17'
   - id: cw18
     added_date: '2026-05-25'
     citation_key: '18'
@@ -405,7 +405,7 @@ cited_works:
       Performance": IAF-91-270: 42nd Congress of the International Astronautical Federation : Montreal October 1991.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 18'
+      location: 'p. 57, endnote 18'
   - id: cw19
     added_date: '2026-05-25'
     citation_key: '19'
@@ -418,7 +418,7 @@ cited_works:
       Conference and Exposition, Dayton, Ohio, April 1993.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 19'
+      location: 'p. 57, endnote 19'
   - id: cw20
     added_date: '2026-05-25'
     citation_key: '20'
@@ -430,7 +430,7 @@ cited_works:
       Aerospace Planes Conference, Orlando, Florida, December 1991.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 20'
+      location: 'p. 57, endnote 20'
   - id: cw21
     added_date: '2026-05-25'
     citation_key: '21'
@@ -442,7 +442,7 @@ cited_works:
       International Aerospace Planes & Hypersonic Technology Conference, November 1993, Munich, Germany.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 21'
+      location: 'p. 57, endnote 21'
   - id: cw22
     added_date: '2026-05-25'
     citation_key: '22'
@@ -453,7 +453,7 @@ cited_works:
       ²² Anon., "Hyperplane," 39th International Astronautical Federation Congress, Bangalore India, October 1988.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 22'
+      location: 'p. 57, endnote 22'
   - id: cw23
     added_date: '2026-05-25'
     citation_key: '23'
@@ -466,7 +466,7 @@ cited_works:
       Molnyia, TsAGI and TsAM.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 23'
+      location: 'p. 57, endnote 23'
   - id: cw24
     added_date: '2026-05-25'
     citation_key: '24'
@@ -476,7 +476,7 @@ cited_works:
       ²⁴ Dick Mulready, "Advanced Engine Development at Pratt & Whitney" Society of Automotive Engineers.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 24'
+      location: 'p. 57, endnote 24'
   - id: cw25
     added_date: '2026-05-25'
     citation_key: '25'
@@ -488,7 +488,7 @@ cited_works:
       Calculations" Ecole Royale Militaire, Brussels Belgium, March 1998.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 25'
+      location: 'p. 57, endnote 25'
   - id: cw26
     added_date: '2026-05-25'
     citation_key: '26'
@@ -499,7 +499,7 @@ cited_works:
       ²⁶ DuPont, Anthony A., "Further Studies of Optimized Inlets for Hypersonic Turbine Engines," ISABE 99-7039, 14ᵗʰ International Symposium for Air Breathing Engines (ISABE), Florence, Italy, September 1999.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 26'
+      location: 'p. 57, endnote 26'
   - id: cw27
     added_date: '2026-05-25'
     citation_key: '27'
@@ -511,7 +511,7 @@ cited_works:
       Launch Vehicles," HTC-9901, for MSE Technology Applications, Inc. 30 Nov 1999.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 27'
+      location: 'p. 57, endnote 27'
   - id: cw28
     added_date: '2026-05-25'
     citation_key: '28'
@@ -524,7 +524,7 @@ cited_works:
       Command, 1965.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 28'
+      location: 'p. 57, endnote 28'
   - id: cw29
     added_date: '2026-05-25'
     citation_key: '29'
@@ -535,7 +535,7 @@ cited_works:
       ²⁹ Astronautics & Aeronautics, January 1971, Vol 9, No 1, Figure 3-11.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 29'
+      location: 'p. 57, endnote 29'
   - id: cw30
     added_date: '2026-05-25'
     citation_key: '30'
@@ -547,7 +547,7 @@ cited_works:
       9, No 1, 26-36, Washington DC, January 1971.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 30'
+      location: 'p. 57, endnote 30'
   - id: cw31
     added_date: '2026-05-25'
     citation_key: '31'
@@ -559,7 +559,7 @@ cited_works:
       Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 31'
+      location: 'p. 57, endnote 31'
   - id: cw32
     added_date: '2026-05-25'
     citation_key: '32'
@@ -572,7 +572,7 @@ cited_works:
       Japan, March 1997.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 32'
+      location: 'p. 57, endnote 32'
   - id: cw33
     added_date: '2026-05-25'
     citation_key: '33'
@@ -582,7 +582,7 @@ cited_works:
       ³³ Koelle, H.H. "Space Power" IAF-93-IAF Congress, Norway.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 33'
+      location: 'p. 57, endnote 33'
   - id: cw34
     added_date: '2026-05-25'
     citation_key: '34'
@@ -594,34 +594,34 @@ cited_works:
       Contract NAS2-5458, OART, NASA October 1970, declassified 1972.
     source:
       path: government/dird-06-bv-space-access-20100308.pdf
-      location: 'p. 55, endnote 34'
+      location: 'p. 57, endnote 34'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-25'
   observed: '[(b)(6)]'
   canonical: '[redacted per FOIA (b)(6)]'
-  location: 'p. 2, Author line'
+  location: 'p. 3, Author line'
   source_path: government/dird-06-bv-space-access-20100308.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-25'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[redacted per FOIA (b)(3):10 USC 424]'
-  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-06-bv-space-access-20100308.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 2, Administrative Note'
+  location: 'p. 3, Administrative Note'
   source_path: government/dird-06-bv-space-access-20100308.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-25'
   observed: '20089'
   canonical: '2009'
-  location: 'p. 55, endnote 1 (Springer publication year typo)'
+  location: 'p. 57, endnote 1 (Springer publication year typo)'
   source_path: government/dird-06-bv-space-access-20100308.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5

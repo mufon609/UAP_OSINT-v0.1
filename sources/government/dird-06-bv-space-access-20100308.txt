@@ -19,6 +19,20 @@ Go
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 ----- PAGE BREAK -----
+
+This document is made available through the declassification efforts
+and research of John Greenewald, Jr., creator of:
+
+The Black Vault
+
+The Black Vault is the largest online Freedom of Information Act (FOIA)
+document clearinghouse in the world. The research efforts here are
+responsible for the declassification of hundreds of thousands of pages
+released by the U.S. Government & Military.
+
+Discover the Truth at: http://www.theblackvault.com
+
+----- PAGE BREAK -----
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Space Access: Where We've Been . . . and Where We Could
@@ -88,7 +102,10 @@ Figure 14. Hypersonic Glider Characteristics ...................................
 Figure 15. Both Delta Planform Lifting Body (Dynasoar) and Model 176 Offer
     Superior Landing Performance .................................................................. 16
 Figure 16. McDonnell Aircraft Company Roll-Bonded Titanium Structure .............. 17
-Figure 17. Model 176 in the McDonnell Douglas Hypervelocity Impulse Tunnel .... 18
+
+----- PAGE BREAK -----
+
+ .... 18
 Figure 18. FDL-7C/D, Model 176 Entry Temperature Distribution ........................ 19
 Figure 19. Even At Mach 12, Embedded Vortices in the Boundary Layer Alter the
     Local Heat Transfer .................................................................................. 19
