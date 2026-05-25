@@ -61,7 +61,7 @@ content entirely.
 ## Step 4 — Regenerate `meta/topic/research-queue.md`
 
 Same frontmatter shape (no `topic` / `display_name` — those live only on
-`overview.md`). Re-establish the two-backlog structure (Queue + Priority Build
+`meta/topic/overview.md`). Re-establish the two-backlog structure (Queue + Priority Build
 Queue). An empty body is fine on day 1.
 
 ## Step 5 — Health check
@@ -72,7 +72,7 @@ If any validator errors, the bootstrap is broken; fix before adding content.
 
 ## Step 6 — First commit
 
-Commit the wipe + new `overview.md` + new `research-queue.md` as commit-zero.
+Commit the wipe + new `meta/topic/overview.md` + new `meta/topic/research-queue.md` as commit-zero.
 Subsequent sessions use `/build` (the multi-agent pipeline).
 
 ## What NOT to change
@@ -89,4 +89,4 @@ Topic-neutral toolkit — do not modify during fork-init:
 If you find yourself wanting to edit any of the above, stop: is this a
 topic-neutral toolkit improvement (separate commit / BACKLOG / roadmap), or are
 you trying to escape the topic-customization mechanism? The mechanism is
-`display_name` on `overview.md`; everything else flows from that.
+`display_name` on `meta/topic/overview.md`; everything else flows from that.

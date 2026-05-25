@@ -34,7 +34,7 @@ python3 scripts/build/build-state.py --check
 8. `meta/memory.md` — cross-cutting contributor working knowledge. Then review
    the personal memory directory (`MEMORY.md` is auto-loaded; referenced files
    live under `~/.claude/projects/<sanitized-project-path>/memory/`). Durable
-   evidentiary rules live in `conventions.md`, not memory.
+   evidentiary rules live in `meta/conventions.md`, not memory.
 
 ## Health check
 

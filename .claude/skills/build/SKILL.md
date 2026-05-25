@@ -38,7 +38,7 @@ build before doing anything.
      source that still needs its sibling.
 2. **`Agent(external-investigator)`** with `gaps[]` + `linked_nodes`. Read
    `queued_sources[]`. **Reject any queued source lacking a `confirming_span`**
-   — a bare "read it" is not accepted (build-protocol → the invariant).
+   — a bare "read it" is not accepted (build-protocol → the non-negotiable invariant).
 3. **`Agent(archive)`** with the (validated) `queued_sources[]`. Read
    `archived[]` + the scratch paths.
 4. **Scaffold once, here** — only after sourcing has settled the node's
