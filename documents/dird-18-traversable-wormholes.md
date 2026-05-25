@@ -72,7 +72,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 2, ¶ Prepared by: |
+| Location | p. 3, ¶ Prepared by: |
 
 ---
 
@@ -84,7 +84,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 2, ¶ This product is one in a series |
+| Location | p. 3, ¶ This product is one in a series |
 
 ---
 
@@ -96,7 +96,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 5, ¶ Implementation of faster-than-light |
+| Location | p. 6, ¶ Implementation of faster-than-light |
 
 ---
 
@@ -108,7 +108,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 5, ¶ In 1985 CalTech physicists |
+| Location | p. 6, ¶ In 1985 CalTech physicists |
 
 ---
 
@@ -120,7 +120,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 10, ¶ By inserting Equation (1) |
+| Location | p. 11, ¶ By inserting Equation (1) |
 
 ---
 
@@ -132,7 +132,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 12, ¶ It is clear from this |
+| Location | p. 13, ¶ It is clear from this |
 
 ---
 
@@ -144,7 +144,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 12, ¶ It is a straightforward exercise |
+| Location | p. 13, ¶ It is a straightforward exercise |
 
 ---
 
@@ -156,7 +156,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 15, ¶ which is a remarkable result |
+| Location | p. 16, ¶ which is a remarkable result |
 
 ---
 
@@ -168,7 +168,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 15, ¶ The exotic matter threading |
+| Location | p. 16, ¶ The exotic matter threading |
 
 ---
 
@@ -180,7 +180,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 17, ¶ If a small wormhole |
+| Location | p. 18, ¶ If a small wormhole |
 
 ---
 
@@ -192,7 +192,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 17, ¶ This section will consider |
+| Location | p. 18, ¶ This section will consider |
 
 ---
 
@@ -204,7 +204,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 18, ¶ Further investigation into this technical issue |
+| Location | p. 19, ¶ Further investigation into this technical issue |
 
 ---
 
@@ -216,7 +216,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 18, ¶ The bad news is that real physical matter |
+| Location | p. 19, ¶ The bad news is that real physical matter |
 
 ---
 
@@ -228,7 +228,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 19, ¶ It is beyond the scope of this study to include all |
+| Location | p. 20, ¶ It is beyond the scope of this study to include all |
 
 ---
 
@@ -240,7 +240,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 21, ¶ The squeezed state of the electromagnetic field |
+| Location | p. 22, ¶ The squeezed state of the electromagnetic field |
 
 ---
 
@@ -252,7 +252,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 24, ¶ The analysis, via quantum optics |
+| Location | p. 25, ¶ The analysis, via quantum optics |
 
 ---
 
@@ -264,7 +264,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 26, ¶ The Casimir effect is by far the easiest |
+| Location | p. 27, ¶ The Casimir effect is by far the easiest |
 
 ---
 
@@ -276,7 +276,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 28, ¶ Negative energy can be created by a single moving |
+| Location | p. 29, ¶ Negative energy can be created by a single moving |
 
 ---
 
@@ -288,7 +288,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 28, ¶ Negative energy can be created by a single moving |
+| Location | p. 29, ¶ Negative energy can be created by a single moving |
 
 ---
 
@@ -300,7 +300,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 28, ¶ The electromagnetic Casimir effect can be used in principle |
+| Location | p. 29, ¶ The electromagnetic Casimir effect can be used in principle |
 
 ---
 
@@ -312,7 +312,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 28, ¶ The electromagnetic Casimir effect can be used in principle |
+| Location | p. 29, ¶ The electromagnetic Casimir effect can be used in principle |
 
 ---
 
@@ -324,7 +324,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 29, ¶ The electromagnetic Casimir effect can be used in principle |
+| Location | p. 30, ¶ The electromagnetic Casimir effect can be used in principle |
 
 ---
 
@@ -336,7 +336,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 29, ¶ One knows how to make small quantities |
+| Location | p. 30, ¶ One knows how to make small quantities |
 
 ---
 
@@ -348,7 +348,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 30, ¶ where Myn is the (equivalent) mass |
+| Location | p. 31, ¶ where Myn is the (equivalent) mass |
 
 ---
 
@@ -360,7 +360,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 30, ¶ where Myn is the (equivalent) mass |
+| Location | p. 31, ¶ where Myn is the (equivalent) mass |
 
 ---
 
@@ -372,7 +372,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 30, ¶ where Myn is the (equivalent) mass |
+| Location | p. 31, ¶ where Myn is the (equivalent) mass |
 
 ---
 
@@ -384,7 +384,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 30, ¶ The Quantum Inequalities (QI) conjecture |
+| Location | p. 31, ¶ The Quantum Inequalities (QI) conjecture |
 
 ---
 
@@ -396,7 +396,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 31, ¶ The Quantum Inequalities (QI) conjecture |
+| Location | p. 32, ¶ The Quantum Inequalities (QI) conjecture |
 
 ---
 
@@ -408,7 +408,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 31, ¶ It turns out that Visser and coworkers |
+| Location | p. 32, ¶ It turns out that Visser and coworkers |
 
 ---
 
@@ -420,7 +420,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 31, ¶ It turns out that Visser and coworkers |
+| Location | p. 32, ¶ It turns out that Visser and coworkers |
 
 ---
 
@@ -432,7 +432,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 32, ¶ It is on the basis of the foregoing discussion |
+| Location | p. 33, ¶ It is on the basis of the foregoing discussion |
 
 ---
 
@@ -444,7 +444,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 32, ¶ It is on the basis of the foregoing discussion |
+| Location | p. 33, ¶ It is on the basis of the foregoing discussion |
 
 ---
 
@@ -456,7 +456,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 32, ¶ where p, is the outward radial pressure |
+| Location | p. 33, ¶ where p, is the outward radial pressure |
 
 ---
 
@@ -468,7 +468,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 33, ¶ Negative energy should be observable |
+| Location | p. 34, ¶ Negative energy should be observable |
 
 ---
 
@@ -480,7 +480,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 33, ¶ A non-optical scheme for detecting negative energy |
+| Location | p. 34, ¶ A non-optical scheme for detecting negative energy |
 
 ---
 
@@ -492,7 +492,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 34, ¶ A non-optical scheme for detecting negative energy |
+| Location | p. 35, ¶ A non-optical scheme for detecting negative energy |
 
 ---
 
@@ -504,7 +504,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 34, ¶ More than 40 years elapsed |
+| Location | p. 35, ¶ More than 40 years elapsed |
 
 ---
 
@@ -516,7 +516,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 34, ¶ A game changer may appear |
+| Location | p. 35, ¶ A game changer may appear |
 
 ---
 
@@ -528,7 +528,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 34, ¶ A game changer may appear |
+| Location | p. 35, ¶ A game changer may appear |
 
 ---
 
@@ -542,7 +542,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 35, ¶ Going forward toward the demonstration |
+| Location | p. 36, ¶ Going forward toward the demonstration |
 
 ---
 
@@ -554,7 +554,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 37, ¶ Constructing Traversable Wormholes in the Lab |
+| Location | p. 38, ¶ Constructing Traversable Wormholes in the Lab |
 
 ---
 
@@ -566,7 +566,7 @@ What is exotic about this matter is that it must have negative energy density an
 |---|---|
 | Attributed to | DIRD #18 (Traversable Wormholes, Stargates, and Negative Energy), 6 April 2010 |
 | Source | [archived source](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
-| Location | p. 37, ¶ Constructing Traversable Wormholes in the Lab |
+| Location | p. 38, ¶ Constructing Traversable Wormholes in the Lab |
 
 ---
 

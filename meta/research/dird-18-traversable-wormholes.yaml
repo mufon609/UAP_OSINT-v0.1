@@ -73,7 +73,7 @@ quotes:
     (b)(6)
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: 'p. 2, ¶ Prepared by:'
+    location: 'p. 3, ¶ Prepared by:'
   significance: Prepared-by and Author block — Defense Intelligence Agency prepared; the author identity
     is withheld under FOIA exemption (b)(6), so no author name appears on the document
   statement_date: '2010-04-06'
@@ -87,7 +87,7 @@ quotes:
     DC 20340-5160.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 2, ¶ This product is one in a series
+    location: p. 3, ¶ This product is one in a series
   significance: Administrative Note — places the report in the FY 2009 DIA AAWSA Program advanced-technology
     report series; the AAWSA Program Manager identity and mailing details are withheld under FOIA exemption
     markers
@@ -105,7 +105,7 @@ quotes:
     state of their resolution is provided.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 5, ¶ Implementation of faster-than-light
+    location: p. 6, ¶ Implementation of faster-than-light
   significance: 'Section I Summary — thesis: faster-than-light travel via traversable wormholes requires
     exotic matter; the energy-condition objection is a spurious issue; the identification, magnitude,
     and production of exotic matter is the key technical challenge'
@@ -119,7 +119,7 @@ quotes:
     who had completed the draft of his novel Contact.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 5, ¶ In 1985 CalTech physicists
+    location: p. 6, ¶ In 1985 CalTech physicists
   significance: 'Section I Summary — historical origin of traversable-wormhole physics: Morris and Thorne
     (1985), based on Einstein''s General Theory of Relativity, as an academic exercise at the request
     of Carl Sagan for his novel Contact'
@@ -134,7 +134,7 @@ quotes:
     that is larger than the magnitude of the energy density (Reference 1-3).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 10, ¶ By inserting Equation (1)
+    location: p. 11, ¶ By inserting Equation (1)
   significance: Section II.A — the source matter for a traversable wormhole must have zero or negative
     energy density and/or an outward radial tension (negative pressure) larger than the magnitude of the
     energy density
@@ -149,7 +149,7 @@ quotes:
     require zero or (arbitrarily) little negative energy to create.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 12, ¶ It is clear from this
+    location: p. 13, ¶ It is clear from this
   significance: Section II.A — a single-handle/throat traversable wormhole is the most desirable engineering
     solution, requiring zero or arbitrarily little negative energy; more handles/throats increase the
     negative energy required
@@ -164,7 +164,7 @@ quotes:
     another universe.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 12, ¶ It is a straightforward exercise
+    location: p. 13, ¶ It is a straightforward exercise
   significance: Section II.B — a “stargate” is defined as a traversable wormhole with a flat-face throat
     rather than the spherical-shaped throat of the Morris and Thorne wormhole
   statement_date: '2010-04-06'
@@ -175,7 +175,7 @@ quotes:
     matter much like a thin film of soap stretched across a loop of wire.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 15, ¶ which is a remarkable result
+    location: p. 16, ¶ which is a remarkable result
   significance: Section II.B — a stargate can be constructed by generating a thin shell or surface layer
     of exotic matter, likened to a thin film of soap stretched across a loop of wire
   statement_date: '2010-04-06'
@@ -188,7 +188,7 @@ quotes:
     remote region within our own universe, incredibly shrunken and distorted (see Figure 6).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 15, ¶ The exotic matter threading
+    location: p. 16, ¶ The exotic matter threading
   significance: Section II.C — the exotic matter threading a wormhole throat produces repulsive gravity
     that deflects light; the entrance to a spherical Morris & Thorne wormhole looks like a sphere holding
     a shrunken, distorted mirror image of the far region
@@ -202,7 +202,7 @@ quotes:
     wormhole with our local space grows or recedes, respectively.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 17, ¶ If a small wormhole
+    location: p. 18, ¶ If a small wormhole
   significance: Section II.C — a small wormhole intersecting our local space would appear as an unusually
     bright spot in the sky, with blue and red Doppler shifting as the intersection grows or recedes
   statement_date: '2010-04-06'
@@ -216,7 +216,7 @@ quotes:
     flux (Reference 10).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 17, ¶ This section will consider
+    location: p. 18, ¶ This section will consider
   significance: Section III — “exotic” matter is defined as matter with negative energy density and/or
     negative flux, unlike the non-negative energy density of all classically observed forms of matter
   statement_date: '2010-04-06'
@@ -229,7 +229,7 @@ quotes:
     energy has been produced in the laboratory and this will be discussed in the following sections.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 18, ¶ Further investigation into this technical issue
+    location: p. 19, ¶ Further investigation into this technical issue
   significance: Section III — Visser showed all generic spacetime geometries violate all the energy conditions;
     the conditions are not absolute, violating them commits no offense against nature, and negative energy
     has been produced in the laboratory
@@ -244,7 +244,7 @@ quotes:
     regions of negative energy density or negative fluxes (Reference 12).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 18, ¶ The bad news is that real physical matter
+    location: p. 19, ¶ The bad news is that real physical matter
   significance: Section III — quantum effects generically violate the averaged Null Energy Condition (ANEC);
     since 1965 quantum field theory is known to allow states of matter with local regions of negative
     energy density or negative fluxes
@@ -257,7 +257,7 @@ quotes:
     amplification (CPA) technique to boost the total output beam power.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 19, ¶ It is beyond the scope of this study to include all
+    location: p. 20, ¶ It is beyond the scope of this study to include all
   significance: Section III.B.1 (static radial electric and magnetic fields) — ultrahigh-intensity tabletop
     lasers using the chirped-pulse amplification (CPA) technique generate extreme electric and magnetic
     field strengths in the lab
@@ -270,7 +270,7 @@ quotes:
     as a result of the nonlinear-optics technique of “squeezing,”
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 21, ¶ The squeezed state of the electromagnetic field
+    location: p. 22, ¶ The squeezed state of the electromagnetic field
   significance: Section III.B.2 (squeezed quantum vacuum) — the squeezed state of the electromagnetic
     field is a primary realized example of negative energy density and flux, achieved by the nonlinear-optics
     technique of squeezing
@@ -285,7 +285,7 @@ quotes:
     squeezed vacuum states.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 24, ¶ The analysis, via quantum optics
+    location: p. 25, ¶ The analysis, via quantum optics
   significance: Section III.B.3 (gravitationally squeezed electromagnetic ZPF) — gravitation itself generates
     the squeezed vacuum states needed for stable traversable wormholes; negative-energy production is
     a necessary and unavoidable consequence of the coupling between ordinary matter and gravity
@@ -299,7 +299,7 @@ quotes:
     any two neutral (uncharged), parallel, flat, conducting surfaces (é.g., metallic plates) in a vacuum.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 26, ¶ The Casimir effect is by far the easiest
+    location: p. 27, ¶ The Casimir effect is by far the easiest
   significance: 'Section III.B.4 (Casimir effect) — the Casimir effect is the easiest and best-known way
     to generate negative energy in the lab: an attractive force between two neutral, parallel, flat, conducting
     surfaces in a vacuum'
@@ -312,7 +312,7 @@ quotes:
     from its surface and flows out into the space ahead of the mirror (Reference 25, 56).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 28, ¶ Negative energy can be created by a single moving
+    location: p. 29, ¶ Negative energy can be created by a single moving
   significance: Section III.B.5 (dynamical Casimir effect / moving mirrors) — a single moving conducting
     surface under increasing acceleration generates a flux of negative energy that flows out into the
     space ahead of the mirror
@@ -324,7 +324,7 @@ quotes:
     produce negative energy. This scheme will not be considered any further.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 28, ¶ Negative energy can be created by a single moving
+    location: p. 29, ¶ Negative energy can be created by a single moving
   significance: Section III.B.5 (dynamical Casimir effect / moving mirrors) — the moving-mirror effect
     is exceedingly small, not the most effective way to produce negative energy, and the scheme will not
     be considered any further
@@ -335,7 +335,7 @@ quotes:
   text: The electromagnetic Casimir effect can be used in principle to create a traversable wormhole.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 28, ¶ The electromagnetic Casimir effect can be used in principle
+    location: p. 29, ¶ The electromagnetic Casimir effect can be used in principle
   significance: Section III.B.6 (Casimir effect for traversable wormholes) — in principle the electromagnetic
     Casimir effect can be used to create a traversable wormhole
   statement_date: '2010-04-06'
@@ -346,7 +346,7 @@ quotes:
     of negative energy.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 28, ¶ The electromagnetic Casimir effect can be used in principle
+    location: p. 29, ¶ The electromagnetic Casimir effect can be used in principle
   significance: Section III.B.6 (Casimir effect for traversable wormholes) — cavity dimensions must be
     made exceedingly small to generate a significant amount of negative energy
   statement_date: '2010-04-06'
@@ -356,7 +356,7 @@ quotes:
   text: There is no technology known today that can engineer a cavity with such minuscule plate separations.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 29, ¶ The electromagnetic Casimir effect can be used in principle
+    location: p. 30, ¶ The electromagnetic Casimir effect can be used in principle
   significance: Section III.B.6 (Casimir effect for traversable wormholes) — no technology known today
     can engineer a cavity with such minuscule plate separations
   statement_date: '2010-04-06'
@@ -371,7 +371,7 @@ quotes:
     approaches are not necessary.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 29, ¶ One knows how to make small quantities
+    location: p. 30, ¶ One knows how to make small quantities
   significance: Section IV.A — published claims that energy-condition violations can be avoided are dismissed
     as semantic games; since the energy conditions are not absolute, such rearranging is unnecessary
   statement_date: '2010-04-06'
@@ -382,7 +382,7 @@ quotes:
     the wormhole size increases, the mass requirement grows negative-large.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 30, ¶ where Myn is the (equivalent) mass
+    location: p. 31, ¶ where Myn is the (equivalent) mass
   significance: Section IV.A — Equation (9) shows a mass of about −0.71 (Jupiter-mass, OCR-rendered ‘M)’)
     is required to build a 1-metre wormhole, growing negative-large as the wormhole size increases
   statement_date: '2010-04-06'
@@ -394,7 +394,7 @@ quotes:
     equation dictates that the total mass is zero
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 30, ¶ where Myn is the (equivalent) mass
+    location: p. 31, ¶ where Myn is the (equivalent) mass
   significance: Section IV.A — the equivalent mass (OCR-rendered ‘Mun’) is not the total mass seen by
     remote observers; the non-linearity of the general relativistic field equation dictates that the total
     mass is zero
@@ -407,7 +407,7 @@ quotes:
     was proved to be a general result.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 30, ¶ where Myn is the (equivalent) mass
+    location: p. 31, ¶ where Myn is the (equivalent) mass
   significance: Section IV.A — Visser et al. demonstrated, as a general result, the existence of spacetime
     geometries containing traversable wormholes supported by arbitrarily small quantities of negative
     energy
@@ -419,7 +419,7 @@ quotes:
     to curved spacetimes.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 30, ¶ The Quantum Inequalities (QI) conjecture
+    location: p. 31, ¶ The Quantum Inequalities (QI) conjecture
   significance: Section IV.B — the Quantum Inequalities (QI) conjecture is an extension of the Heisenberg
     Uncertainty Principle to curved spacetimes
   statement_date: '2010-04-06'
@@ -434,7 +434,7 @@ quotes:
     analogs violate all three conditions.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 31, ¶ The Quantum Inequalities (QI) conjecture
+    location: p. 32, ¶ The Quantum Inequalities (QI) conjecture
   significance: Section IV.B — the Quantum Inequalities postulate three conditions on negative-energy
     pulses, all three of which the Casimir effect and its non-Maxwellian quantum field analogs violate
   statement_date: '2010-04-06'
@@ -446,7 +446,7 @@ quotes:
     wormhole spacetime. They propose a quantifier in terms of a spatial volume integral
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 31, ¶ It turns out that Visser and coworkers
+    location: p. 32, ¶ It turns out that Visser and coworkers
   significance: Section IV.B — Visser and coworkers developed a superior quantifier, in terms of a spatial
     volume integral, for the negative energy or energy-condition violations required to build a traversable
     wormhole spacetime
@@ -459,7 +459,7 @@ quotes:
     can be made arbitrarily small. But the violation cannot be made to vanish entirely.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 31, ¶ It turns out that Visser and coworkers
+    location: p. 32, ¶ It turns out that Visser and coworkers
   significance: Section IV.B — the volume-integral quantifier can be adjusted to become vanishingly small,
     so the energy-condition violation can be made arbitrarily small, but the violation cannot be made
     to vanish entirely
@@ -472,7 +472,7 @@ quotes:
     and maintain one, but not the required assembly instructions.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 32, ¶ It is on the basis of the foregoing discussion
+    location: p. 33, ¶ It is on the basis of the foregoing discussion
   significance: Section IV.B — general relativity theory provides a recipe for the geometric and material
     ingredients to open and maintain a traversable wormhole, but not the required assembly instructions
   statement_date: '2010-04-06'
@@ -484,7 +484,7 @@ quotes:
     mechanism will be required.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 32, ¶ It is on the basis of the foregoing discussion
+    location: p. 33, ¶ It is on the basis of the foregoing discussion
   significance: Section IV.B — the author holds that empirical studies are the only way to decide whether
     the present general relativistic recipe suffices or an additional construction mechanism is required
   statement_date: '2010-04-06'
@@ -499,7 +499,7 @@ quotes:
     space transportation operations.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 32, ¶ where p, is the outward radial pressure
+    location: p. 33, ¶ where p, is the outward radial pressure
   significance: Section IV.B — a large net mass transfer makes the exit mouth's equivalent mass negative,
     which is beneficial since ANEC violations hold the throat open; engineers could “reset” the wormhole
     (turn off then on) to avert a runaway reaction
@@ -515,7 +515,7 @@ quotes:
     analysis of astronomical lensing events.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 33, ¶ Negative energy should be observable
+    location: p. 34, ¶ Negative energy should be observable
   significance: Section IV.C — naturally occurring negative energy regions are predicted to produce a
     unique lensing, chromaticity, and intensity signature in micro- and macro-lensing events, spectrally
     distinguishable from ordinary positive-energy lenses
@@ -528,7 +528,7 @@ quotes:
     energy densities and negative energy fluxes.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 33, ¶ A non-optical scheme for detecting negative energy
+    location: p. 34, ¶ A non-optical scheme for detecting negative energy
   significance: Section IV.C — Davies and Ottewill reported a non-optical scheme for detecting negative
     energy, studying the response of switched particle detectors to static negative energy densities and
     fluxes
@@ -540,7 +540,7 @@ quotes:
     cooling) of the detector.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 34, ¶ A non-optical scheme for detecting negative energy
+    location: p. 35, ¶ A non-optical scheme for detecting negative energy
   significance: Section IV.C — they showed negative energy should enhance deexcitation (induce cooling)
     of the detector
   statement_date: '2010-04-06'
@@ -552,7 +552,7 @@ quotes:
     in the laboratory as long as there is a focused, sustained level of long-term research support.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 34, ¶ More than 40 years elapsed
+    location: p. 35, ¶ More than 40 years elapsed
   significance: 'Section V Conclusion — the report''s bottom-line feasibility finding: a traversable wormhole
     can be demonstrated in the laboratory given a focused, sustained level of long-term research support'
   statement_date: '2010-04-06'
@@ -564,7 +564,7 @@ quotes:
     complete, comprehensive quantum gravity theory
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 34, ¶ A game changer may appear
+    location: p. 35, ¶ A game changer may appear
   significance: Section V Conclusion — a “game changer” could dramatically accelerate or alter an experimental
     traversable wormhole program, such as new physics predicted by a complete, comprehensive quantum gravity
     theory
@@ -576,7 +576,7 @@ quotes:
     spacetime/gravity theories (Reference 73, 74)).
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 34, ¶ A game changer may appear
+    location: p. 35, ¶ A game changer may appear
   significance: Section V Conclusion — or a completely new theory for the quantum vacuum and its related
     spacetime physics, such as “emergent” spacetime/gravity theories
   statement_date: '2010-04-06'
@@ -589,7 +589,7 @@ quotes:
     e Generating Negative Energy in the Lab: Our assessment concludes that we already make small amounts of negative energy in the lab, but we do not yet know if we can access larger amounts for extended periods of time over extended spatial distributions for the purpose of engineering a traversable wormhole.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 35, ¶ Going forward toward the demonstration
+    location: p. 36, ¶ Going forward toward the demonstration
   significance: 'Section V Conclusion — the “Going forward” research agenda; first item: small amounts
     of negative energy are already made in the lab, but it is not yet known whether larger amounts can
     be accessed over the periods, distances, and distributions needed to engineer a traversable wormhole'
@@ -602,7 +602,7 @@ quotes:
     vacuum vessel.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, ¶ Constructing Traversable Wormholes in the Lab
+    location: p. 38, ¶ Constructing Traversable Wormholes in the Lab
   significance: Section V Conclusion — Einstein's General Theory of Relativity does not provide instructions
     on how to construct a traversable wormhole in space or inside a laboratory vacuum vessel
   statement_date: '2010-04-06'
@@ -614,7 +614,7 @@ quotes:
     energy.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, ¶ Constructing Traversable Wormholes in the Lab
+    location: p. 38, ¶ Constructing Traversable Wormholes in the Lab
   significance: Section V Conclusion — the author believes theoretical and then empirical studies will
     be necessary to learn how to construct a wormhole, once an intense source of negative energy is developed
   statement_date: '2010-04-06'
@@ -628,7 +628,7 @@ cited_works:
     travel: A tool for teaching general relativity,” American Journal of Physics, Vol. 56, 1988, pp. 395-412.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [1]
+    location: p. 38, References [1]
   year: '1988'
   title: 'Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity'
 - id: cw2
@@ -639,7 +639,7 @@ cited_works:
     weak energy conditions,” Physical Review Letters, Vol. 61, 1988, pp. 1446-1449.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [2]
+    location: p. 38, References [2]
   year: '1988'
   title: Wormholes, time machines, and the weak energy conditions
 - id: cw3
@@ -650,7 +650,7 @@ cited_works:
     1995.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [3]
+    location: p. 38, References [3]
   year: '1995'
   title: 'Lorentzian Wormholes: From Einstein to Hawking'
 - id: cw4
@@ -661,7 +661,7 @@ cited_works:
     Wormhole Throat,” Physical Review D, Vol. 56, 1997, pp. 4745-4755.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [4]
+    location: p. 38, References [4]
   year: '1997'
   title: Geometric Structure of the Generic Static Traversable Wormhole Throat
 - id: cw5
@@ -672,7 +672,7 @@ cited_works:
     Letters A, Vol. 260, 1999, pp. 175-181.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [5]
+    location: p. 38, References [5]
   year: '1999'
   title: How much negative energy does a wormhole need?
 - id: cw6
@@ -683,7 +683,7 @@ cited_works:
     39, 1989, pp. 3182-3184.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [6]
+    location: p. 38, References [6]
   year: '1989'
   title: 'Traversable wormholes: Some simple examples'
 - id: cw7
@@ -694,7 +694,7 @@ cited_works:
     New York, 1973, pp. 551-556.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [7]
+    location: p. 38, References [7]
   year: '1973'
   title: Gravitation
 - id: cw8
@@ -705,7 +705,7 @@ cited_works:
     Report AFRL-PR-ED-TR-2003-0034, Air Force Materiel Command, Edwards AFB, CA, 2004, pp. 3-11.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [8]
+    location: p. 38, References [8]
   year: '2004'
   title: Teleportation Physics Study
 - id: cw9
@@ -716,7 +716,7 @@ cited_works:
     and the 10th Dimension, Anchor Books Doubleday, New York, 1995.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [9]
+    location: p. 38, References [9]
   year: '1995'
   title: 'Hyperspace: A Scientific Odyssey Through Parallel Universes, Time-Warps, and the 10th Dimension'
 - id: cw10
@@ -727,7 +727,7 @@ cited_works:
     American, Vol. 13, 2003, pp. 84-91.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 37, References [10]
+    location: p. 38, References [10]
   year: '2003'
   title: Negative Energy, Wormholes and Warp Drive
 - id: cw11
@@ -738,7 +738,7 @@ cited_works:
     Univ. Press, Cambridge, 1973, pp. 88-91, 95-96.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [11]
+    location: p. 39, References [11]
   year: '1973'
   title: The Large-Scale Structure of Space-Time
 - id: cw12
@@ -749,7 +749,7 @@ cited_works:
     Field Theories,” Nuovo Cimento, Vol. 36, 1965, pp. 1016-1022,
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [12]
+    location: p. 39, References [12]
   year: '1965'
   title: Nonpositivity of the Energy Density in Quantized Field Theories
 - id: cw13
@@ -760,7 +760,7 @@ cited_works:
     1990, pp. 1116-1124.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [13]
+    location: p. 39, References [13]
   year: '1990'
   title: Wormholes, baby universes, and causality
 - id: cw14
@@ -771,7 +771,7 @@ cited_works:
     vacuum,” Physical Review D, Vol. 54, 1996, pp. 5103-5115.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [14]
+    location: p. 39, References [14]
   year: '1996'
   title: Gravitational vacuum polarization. I. Energy conditions in the Hartle-Hawking vacuum
 - id: cw15
@@ -782,7 +782,7 @@ cited_works:
     vacuum,” Physical Review D, Vol. 54, 1996, pp. 5116-5122.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [15]
+    location: p. 39, References [15]
   year: '1996'
   title: Gravitational vacuum polarization. II. Energy conditions in the Boulware vacuum
 - id: cw16
@@ -793,7 +793,7 @@ cited_works:
     Schwarzschild spacetime,” Physical Review D, Vol. 54, 1996, pp. 5123-5128.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [16]
+    location: p. 39, References [16]
   year: '1996'
   title: Gravitational vacuum polarization. III. Energy conditions in the (1+1)-dimensional Schwarzschild
     spacetime
@@ -805,7 +805,7 @@ cited_works:
     vacuum,” Physical Review D, Vol. 56, 1997, pp. 936-952.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [17]
+    location: p. 39, References [17]
   year: '1997'
   title: Gravitational vacuum polarization. IV. Energy conditions in the Unruh vacuum
 - id: cw18
@@ -816,7 +816,7 @@ cited_works:
     Journal of Modern Physics D, Vol. 11, 2002, pp. 1553-1560,
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [18]
+    location: p. 39, References [18]
   year: '2002'
   title: Twilight for the energy conditions?
 - id: cw19
@@ -827,7 +827,7 @@ cited_works:
     American Journal of Physics, Vol. 57, 1989, pp. 707-714.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [19]
+    location: p. 39, References [19]
   year: '1989'
   title: 'Energy Density and Stress: A New Approach to Teaching Electromagnetism'
 - id: cw20
@@ -838,7 +838,7 @@ cited_works:
     2004.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [20]
+    location: p. 39, References [20]
   year: '2004'
   title: Quantum Squeezing
 - id: cw21
@@ -849,7 +849,7 @@ cited_works:
     squeezed vacuum,” Physics Letters B, Vol. 268, 1991, pp. 377-383.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [21]
+    location: p. 39, References [21]
   year: '1991'
   title: Lorentzian wormholes from the gravitationally squeezed vacuum
 - id: cw22
@@ -860,7 +860,7 @@ cited_works:
     19C, 1975, pp. 295-357.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [22]
+    location: p. 39, References [22]
   year: '1975'
   title: Quantum Field Theory in Curved Spacetime
 - id: cw23
@@ -872,7 +872,7 @@ cited_works:
     680-745.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [23]
+    location: p. 39, References [23]
   year: '1979'
   title: 'Quantum gravity: the new synthesis'
 - id: cw24
@@ -884,7 +884,7 @@ cited_works:
     J. Sparnaay, North-Holland Elsevier Science Publ., New York, 1989, pp. 247-272.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [24]
+    location: p. 39, References [24]
   year: '1989'
   title: The Casimir Effect in Field Theory
 - id: cw25
@@ -895,7 +895,7 @@ cited_works:
     Univ. Press, Cambridge, 1984.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [25]
+    location: p. 39, References [25]
   year: '1984'
   title: Quantum fields in curved space
 - id: cw26
@@ -906,7 +906,7 @@ cited_works:
     Oxford, 1991.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 38, References [26]
+    location: p. 39, References [26]
   year: '1991'
   title: The Philosophy of Vacuum
 - id: cw27
@@ -917,7 +917,7 @@ cited_works:
     Academic Press, New York, 1994.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [27]
+    location: p. 40, References [27]
   year: '1994'
   title: 'The Quantum Vacuum: An Introduction to Quantum Electrodynamics'
 - id: cw28
@@ -928,7 +928,7 @@ cited_works:
     World Scientific, New Jersey, 2001.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [28]
+    location: p. 40, References [28]
   year: '2001'
   title: 'The Casimir Effect: Physical Manifestations of Zero-Point Energy'
 - id: cw29
@@ -939,7 +939,7 @@ cited_works:
     Physical Review D, Vol. 57, 1998, pp. 3484-3488.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [29]
+    location: p. 40, References [29]
   year: '1998'
   title: Negative energy density states for the Dirac field in flat spacetime
 - id: cw30
@@ -950,7 +950,7 @@ cited_works:
     and quantum inequalities,” Physics Letters B, Vol. 570, 2003, pp. 123-128.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [30]
+    location: p. 40, References [30]
   year: '2003'
   title: Quantum states with negative energy density in the Dirac field and quantum inequalities
 - id: cw31
@@ -961,7 +961,7 @@ cited_works:
     and Quantum Gravity, Vol. 11, 1994, pp. L73-L77.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [31]
+    location: p. 40, References [31]
   year: '1994'
   title: 'The warp drive: hyper-fast travel within general relativity'
 - id: cw32
@@ -972,7 +972,7 @@ cited_works:
     Vol. 81, 1998, pp. 3567-3570.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [32]
+    location: p. 40, References [32]
   year: '1998'
   title: Superluminal Travel Requires Negative Energies
 - id: cw33
@@ -983,7 +983,7 @@ cited_works:
     Classical and Quantum Gravity, Vol. 17, 2000, pp. 4999-5008.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [33]
+    location: p. 40, References [33]
   year: '2000'
   title: Theorems on gravitational time delay and related issues
 - id: cw34
@@ -995,7 +995,7 @@ cited_works:
     227-236.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [34]
+    location: p. 40, References [34]
   year: '1978'
   title: Quantum coherence effects and the secand law of thermodynamics
 - id: cw35
@@ -1006,7 +1006,7 @@ cited_works:
     Physics Letters B, Vol. 11, 1982, p. 215.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [35]
+    location: p. 40, References [35]
   year: '1982'
   title: Can moving mirrors violate the second law of thermodynamics?
 - id: cw36
@@ -1017,7 +1017,7 @@ cited_works:
     7365-7368.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [36]
+    location: p. 40, References [36]
   year: '1996'
   title: Warp drive and causality
 - id: cw37
@@ -1028,7 +1028,7 @@ cited_works:
     Nat'l Laboratory, Livermore, CA, December 1996, pp. 4-11.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [37]
+    location: p. 40, References [37]
   year: '1996'
   title: Crossing the Petawatt Threshold
 - id: cw38
@@ -1039,7 +1039,7 @@ cited_works:
     Nat'l Laboratory, Livermore, CA, March 2000, pp. 4-12.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [38]
+    location: p. 40, References [38]
   year: '2000'
   title: The Amazing Power of the Petawatt
 - id: cw39
@@ -1050,7 +1050,7 @@ cited_works:
     Of The Extreme On A Tabletop,” Physics Today, Vol. 51, 1998, pp. 22-28.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [39]
+    location: p. 40, References [39]
   year: '1998'
   title: 'Ultrahigh-Intensity Lasers: Physics Of The Extreme On A Tabletop'
 - id: cw40
@@ -1061,7 +1061,7 @@ cited_works:
     in an Optical Cavity,” Physical Review Letters, Vol. 55, 1985, pp. 2409-2412.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [40]
+    location: p. 40, References [40]
   year: '1985'
   title: Observation of Squeezed States Generated by Four-Wave Mixing in an Optical Cavity
 - id: cw41
@@ -1072,7 +1072,7 @@ cited_works:
     pp. 50-56.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [41]
+    location: p. 40, References [41]
   year: '1986'
   title: Squeezed Light
 - id: cw42
@@ -1083,7 +1083,7 @@ cited_works:
     927-929.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [42]
+    location: p. 40, References [42]
   year: '1985'
   title: Bell Labs Generates Squeezed Light
 - id: cw43
@@ -1094,7 +1094,7 @@ cited_works:
     1986, pp. 280-281.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 39, References [43]
+    location: p. 40, References [43]
   year: '1986'
   title: Now Four Laboratories Have Squeezed Light
 - id: cw44
@@ -1105,7 +1105,7 @@ cited_works:
     and Applied Optics, John Wiley & Sons, Inc., New York, 1991, pp. 414-416.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [44]
+    location: p. 41, References [44]
   year: '1991'
   title: Fundamentals of Photonics
 - id: cw45
@@ -1116,7 +1116,7 @@ cited_works:
     Vol. 23, 1981, pp. 1693-1708.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [45]
+    location: p. 41, References [45]
   year: '1981'
   title: Quantum-mechanical noise in an interferometer
 - id: cw46
@@ -1128,7 +1128,7 @@ cited_works:
     1998.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [46]
+    location: p. 41, References [46]
   year: '1998'
   title: Quantum Inequality Restrictions on Negative Energy Densities in Curved Spacetimes
 - id: cw47
@@ -1138,7 +1138,7 @@ cited_works:
   citation_verbatim: Davies, P. C. W., How to Build a Time Machine, Penguin Books, New York, 2001.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [47]
+    location: p. 41, References [47]
   year: '2001'
   title: How to Build a Time Machine
 - id: cw48
@@ -1150,7 +1150,7 @@ cited_works:
     (cited 11 April 2004).'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [48]
+    location: p. 41, References [48]
   year: '2004'
   title: Fabrication of single nickel-nitrogen defects in diamond by chemical vapor deposition
 - id: cw49
@@ -1162,7 +1162,7 @@ cited_works:
     (cited 11 April 2004).'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [49]
+    location: p. 41, References [49]
   year: '2004'
   title: Diamond chemical vapor depasition on optical fibers for fluorescence waveguiding
 - id: cw50
@@ -1173,7 +1173,7 @@ cited_works:
     vapor via self-rotation,” Physical Review A, Vol. 68, 2003, 025801.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [50]
+    location: p. 41, References [50]
   year: '2003'
   title: Experimental vacuum squeezing in rubidium vapor via self-rotation
 - id: cw51
@@ -1184,7 +1184,7 @@ cited_works:
     Kon. Ned. Akad. Wetensch., Vol. 51, 1948, pp. 793-796.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [51]
+    location: p. 41, References [51]
   year: '1948'
   title: On the Attraction Between Two Perfectly Conducting Plates
 - id: cw52
@@ -1195,7 +1195,7 @@ cited_works:
     Review Letters, Vol. 78, 1997, pp. 5-8.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [52]
+    location: p. 41, References [52]
   year: '1997'
   title: Demonstration of the Casimir Force in the 0.6 to 6 um Range
 - id: cw53
@@ -1206,7 +1206,7 @@ cited_works:
     Review Letters, Vol. 81, 1998, pp. 4549-4552.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [53]
+    location: p. 41, References [53]
   year: '1998'
   title: Precision Measurement of the Casimir Force from 0.1 to 0.9 um
 - id: cw54
@@ -1217,7 +1217,7 @@ cited_works:
     Quantification of errors and precision,” Physical Review A, Vol. 69, 2004, 022117.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [54]
+    location: p. 41, References [54]
   year: '2004'
   title: 'Theory confronts experiment in the Casimir force measurements: Quantification of errors and
     precision'
@@ -1229,7 +1229,7 @@ cited_works:
     Solution,” Physical Review, Vol. 184, 1969, pp. 1272-1279.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [55]
+    location: p. 41, References [55]
   year: '1969'
   title: 'Vacuum Stress between Conducting Plates: An Image Solution'
 - id: cw56
@@ -1240,7 +1240,7 @@ cited_works:
     and Quantum Gravity, Vol. 2, 1985, pp. L37-L40.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [56]
+    location: p. 41, References [56]
   year: '1985'
   title: Negative energy fluxes and moving mirrors in curved space
 - id: cw57
@@ -1251,7 +1251,7 @@ cited_works:
     Cavity,” Journal of Mathematical Physics, Vol. 11, 1970, pp. 2679-2691,
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [57]
+    location: p. 41, References [57]
   year: '1970'
   title: Quantum Theory of the Electromagnetic Field in a Variable-Length One-Dimensional Cavity
 - id: cw58
@@ -1263,7 +1263,7 @@ cited_works:
     Command, Edwards AFB, CA, 1983, pp. Ai-A14.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [58]
+    location: p. 41, References [58]
   year: '1983'
   title: Alternate Propulsion Energy Sources
 - id: cw59
@@ -1274,7 +1274,7 @@ cited_works:
     energy condition violations,” Physical Review Letters, Vol. 90, 2003, 201102.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 40, References [59]
+    location: p. 41, References [59]
   year: '2003'
   title: Traversable wormholes with arbitrarily small energy condition violations
 - id: cw60
@@ -1285,7 +1285,7 @@ cited_works:
     1997, pp. 88-90.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [60]
+    location: p. 42, References [60]
   year: '1997'
   title: Energy Conditions in the Epoch of Galaxy Formation
 - id: cw61
@@ -1296,7 +1296,7 @@ cited_works:
     arxiv.org e-Print Archive, URL: http://arxiv.org/gr-qc/0409007 pdf (cited 25 May 2005).'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [61]
+    location: p. 42, References [61]
   year: '2005'
   title: Counter example to a quantum inequality
 - id: cw62
@@ -1308,7 +1308,7 @@ cited_works:
     2004).'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [62]
+    location: p. 42, References [62]
   year: '2004'
   title: Comments on ‘Counter example to the quantum inequality
 - id: cw63
@@ -1319,7 +1319,7 @@ cited_works:
     Lecture Notes in Physics, Vol. 617, Springer, Berlin, 2003, pp. 277-291.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [63]
+    location: p. 42, References [63]
   year: '2003'
   title: Weak Energy Condition Violation and Superluminal Travel
 - id: cw64
@@ -1330,7 +1330,7 @@ cited_works:
     traversable wormholes,” Pramana, Vol. 63, 2004, pp. 859-864.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [64]
+    location: p. 42, References [64]
   year: '2004'
   title: Quantifying energy condition violations in traversable wormholes
 - id: cw65
@@ -1341,7 +1341,7 @@ cited_works:
     negative energy,” Physical Review D, Vol. 65, 2002, pp. 084002.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [65]
+    location: p. 42, References [65]
   year: '2002'
   title: Constraints on spatial distributions of negative energy
 - id: cw66
@@ -1352,7 +1352,7 @@ cited_works:
     D, Vol. 51, 1995, pp. 3117-3120.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [66]
+    location: p. 42, References [66]
   year: '1995'
   title: Natural wormholes as gravitational lenses
 - id: cw67
@@ -1363,7 +1363,7 @@ cited_works:
     and the Amount of Negative Mass in the Universe,” Modern Physics Letters A, Vol. 13, 1998, pp. 1575-1581.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [67]
+    location: p. 42, References [67]
   year: '1998'
   title: Wormholes, Gamma Ray Bursts and the Amount of Negative Mass in the Universe
 - id: cw68
@@ -1374,7 +1374,7 @@ cited_works:
     be an observable signature of natural wormholes?,” Physical Review D, Vol. 58, 1998, 123001.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [68]
+    location: p. 42, References [68]
   year: '1998'
   title: Might some gamma ray bursts be an observable signature of natural wormholes?
 - id: cw69
@@ -1385,7 +1385,7 @@ cited_works:
     A, Vol. 14, 1999, pp. 791-797.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [69]
+    location: p. 42, References [69]
   year: '1999'
   title: In Search for Natural Wormholes
 - id: cw70
@@ -1396,7 +1396,7 @@ cited_works:
     Violations of the Weak Energy Condition,” Modern Physics Letters A, Vol. 16, 2001, pp. 153-162.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [70]
+    location: p. 42, References [70]
   year: '2001'
   title: Macrolensing Signatures of Large-Scale Violations of the Weak Energy Condition
 - id: cw71
@@ -1407,7 +1407,7 @@ cited_works:
     by Wormholes,” Modern Physics Letters A, Vol. 16, 2001, pp. 973-983.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [71]
+    location: p. 42, References [71]
   year: '2001'
   title: Chromaticity Effects in Microlensing by Wormholes
 - id: cw72
@@ -1418,7 +1418,7 @@ cited_works:
     examples,” Physical Review D, Vol. 65, 2002, 104014.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [72]
+    location: p. 42, References [72]
   year: '2002'
   title: 'Detection of negative energy: 4-dimensional examples'
 - id: cw73
@@ -1429,7 +1429,7 @@ cited_works:
     New Jersey, 2002.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [73]
+    location: p. 42, References [73]
   year: '2002'
   title: Artificial Black Holes
 - id: cw74
@@ -1439,7 +1439,7 @@ cited_works:
   citation_verbatim: Volovik, G. E., The Universe in a Droplet of Helium, Clarendon Press, Oxford, 2003.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [74]
+    location: p. 42, References [74]
   year: '2003'
   title: The Universe in a Droplet of Helium
 - id: cw75
@@ -1450,7 +1450,7 @@ cited_works:
     Basic Books, New York, 2008.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 41, References [75]
+    location: p. 42, References [75]
   year: '2008'
   title: 'The Lightness of Being: Mass, Ether, and the Unification of Forces'
 - id: cw76
@@ -1461,7 +1461,7 @@ cited_works:
     Vacuum by a Magnetic Field,” Physical Review Letters, Vol. 96, 2006, 110406.
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 42, References [76]
+    location: p. 43, References [76]
   year: '2006'
   title: Experimental Observation of Optical Rotation Generated in Vacuum by a Magnetic Field
 - id: cw77
@@ -1472,7 +1472,7 @@ cited_works:
     dynamical Casimir effect,” Journal of Physics A: Mathematical and Theoretical, Vol. 41, 2008, 164024.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 42, References [77]
+    location: p. 43, References [77]
   year: '2008'
   title: 'MIR status report: an experiment for the measurement of the dynamical Casimir effect'
 - id: cw78
@@ -1484,7 +1484,7 @@ cited_works:
     Vol. 41, 2008, 164026.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 42, References [78]
+    location: p. 43, References [78]
   year: '2008'
   title: Modelling superradiant amplification of Casimir photons in very low dissipation cavities
 - id: cw79
@@ -1495,7 +1495,7 @@ cited_works:
     of Physics A: Mathematical and Theoretical, Vol. 41, 2008, 164037.'
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
-    location: p. 42, References [79]
+    location: p. 43, References [79]
   year: '2008'
   title: Balanced homodyne detectors and Casimir energy densities
 naming_quirks:
@@ -1503,28 +1503,28 @@ naming_quirks:
   added_date: '2026-05-24'
   observed: Transversable
   canonical: Traversable
-  location: p. 3, Table of Contents / p. 9 Section II heading vs. p. 1 cover title and p. 5 Summary
+  location: p. 4, Table of Contents / p. 9 Section II heading vs. p. 1 cover title and p. 5 Summary
   source_path: government/dird-18-traversable-wormholes-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-24'
   observed: (b)(6)
   canonical: '[author identity withheld under FOIA exemption (b)(6)]'
-  location: p. 2, Author line
+  location: p. 3, Author line
   source_path: government/dird-18-traversable-wormholes-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-24'
   observed: (b)(3):10 USC 424
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: p. 2, Prepared-by / Administrative Note lines
+  location: p. 3, Prepared-by / Administrative Note lines
   source_path: government/dird-18-traversable-wormholes-20100406.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: p. 2, Administrative Note — 'Advanced Aerospace Weapon System Applications (AAWSA) Program'
+  location: p. 3, Administrative Note — 'Advanced Aerospace Weapon System Applications (AAWSA) Program'
     and 'AAWSA Program Manager' lines
   source_path: government/dird-18-traversable-wormholes-20100406.pdf
   resolution: preserve-as-sic-in-quotes

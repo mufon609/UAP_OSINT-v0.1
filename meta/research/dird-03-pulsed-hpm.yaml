@@ -34,7 +34,7 @@ quotes:
     Pulsed High-Power Microwave Source Technology
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 2, ¶ title'
+    location: 'p. 3, ¶ title'
   significance: Document title — verbatim; carries the word "Source" that the AAWSAP products list drops
   statement_date: '2010-01-28'
 - id: q2
@@ -51,7 +51,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 2, ¶ prepared-by/author block'
+    location: 'p. 3, ¶ prepared-by/author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
   statement_date: '2010-01-28'
 - id: q3
@@ -60,7 +60,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 2, ¶ Administrative Note'
+    location: 'p. 3, ¶ Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
   statement_date: '2010-01-28'
 - id: q4
@@ -69,7 +69,7 @@ quotes:
     This paper provides an overview of the major types of high-power microwave (HPM) sources and the critical technologies required to build them. Pulsed HPM technology has been of scientific and military interest for several decades. Originally, the interest focused on the area of high-altitude electromagnetic pulse (HEMP) concerns.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 6, ¶1 (Summary)'
+    location: 'p. 7, ¶1 (Summary)'
   significance: Summary thesis — the paper overviews the major HPM source types and the critical technologies to build them; interest originated in high-altitude electromagnetic pulse (HEMP) concerns
   statement_date: '2010-01-28'
 - id: q5
@@ -78,7 +78,7 @@ quotes:
     HEMP effects became fully known in 1962, when a high-altitude nuclear test (codenamed "Starfish Prime") over the Pacific Ocean disrupted radio stations and electronic equipment 800 miles away in Hawaii.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 6, ¶2 (Summary)'
+    location: 'p. 7, ¶2 (Summary)'
   significance: HEMP origin — the 1962 Starfish Prime high-altitude nuclear test over the Pacific disrupted radio and electronics 800 miles away in Hawaii, the historical anchor for HEMP effects
   statement_date: '2010-01-28'
 - id: q6
@@ -87,7 +87,7 @@ quotes:
     HPM radiation is composed of shorter waveforms at higher frequencies than is HEMP, which makes it highly effective against electronic equipment and more difficult to harden against. Whereas HEMP weapons are large in scale and require a nuclear capability along with technology to launch high-altitude missiles, HPM weapons are smaller in scale, involve a much lower level of technology, and are within the capability of almost any state. HPMs can damage computers and electronics similar to the way HEMP can, although the effects are limited to a much shorter range. Technical accessibility, lower cost, and the vulnerability of U.S. electronic equipment could make small-scale HPM weapons attractive to terrorist groups. HPM devices are now categorized as directed-energy weapons.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 6, ¶3 (Summary)'
+    location: 'p. 7, ¶3 (Summary)'
   significance: HPM-vs-HEMP framing — HPM uses shorter, higher-frequency waveforms, is smaller-scale and lower-technology than nuclear HEMP, is within the capability of almost any state, and is now categorized as a directed-energy weapon
   statement_date: '2010-01-28'
 - id: q7
@@ -96,7 +96,7 @@ quotes:
     One major use of HPM by the military is for electronic attack, or what is referred to by the media as an "ebomb." HPM sources developed for this purpose provide peak powers in excess of 10 gigawatts. The goal of such a weapon is to disable communications and computer systems prior to any troop movements and render the enemy unable to stage a response.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 7, ¶1 (Summary)'
+    location: 'p. 8, ¶1 (Summary)'
   significance: Weapon application — the major military use is electronic attack (the media "ebomb"), with peak powers in excess of 10 gigawatts, to disable communications and computer systems prior to troop movements
   statement_date: '2010-01-28'
 - id: q8
@@ -105,7 +105,7 @@ quotes:
     As an example of the possible effects of HPM weapons, on 28 May 2001, a U.S. Commanche helicopter, flying in New York state while performing tests involving HPM weapons, was reported to have generated a low-level energy pulse that disrupted the Global Positioning System devices used to land commercial aircraft in Albany.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 7, ¶1 (Summary)'
+    location: 'p. 8, ¶1 (Summary)'
   significance: Real-world incident — a 28 May 2001 U.S. helicopter HPM test in New York state reportedly generated a pulse that disrupted GPS landing devices for commercial aircraft in Albany ("Commanche" is the document's spelling of Comanche)
   statement_date: '2010-01-28'
 - id: q9
@@ -114,7 +114,7 @@ quotes:
     Some of the kill mechanisms obtained from microwave weapons include semiconductor overheating or burnout, arc generation, computer upsets, voltage induction into sensitive circuits, display upset, and overvoltage in discrete components.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 7, ¶2 (Summary)'
+    location: 'p. 8, ¶2 (Summary)'
   significance: Kill mechanisms — enumerates the destructive effects of microwave weapons on target electronics (semiconductor overheating/burnout, arc generation, computer upsets, voltage induction, display upset, overvoltage)
   statement_date: '2010-01-28'
 - id: q10
@@ -123,7 +123,7 @@ quotes:
     In addition, it is very difficult to detect these sort of pulsed sources, since the pulses are very short (typically 1-500 nanoseconds), and even in burst mode, the bursts are usually less than 10 seconds. The short burst mode operation is necessary because of the high peak powers and subsequent heating of key components such as switches. The UWB sources would be the most difficult to detect, since they have nearly zero energy at any one frequency and so would not be detected at all by instruments such as spectrum analyzers.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 8, ¶ closing (Summary)'
+    location: 'p. 9, ¶ closing (Summary)'
   significance: Detectability — pulsed HPM sources are very difficult to detect (pulses 1-500 ns, bursts under 10 s); ultrawideband sources are the hardest to detect because they have nearly zero energy at any one frequency
   statement_date: '2010-01-28'
 - id: q11
@@ -132,7 +132,7 @@ quotes:
     Several technology areas are critical to the design and fabrication of a working HPM source. First, because the pulsed-power section of the source must operate at high voltages, it must contain insulating materials capable of withstanding the required voltage. The insulating scheme chosen is critical to the success of the project; therefore, several insulation techniques will be discussed, along with the merits and drawbacks of each. Another pulsed-power technology that is critical to the success of any source is high-voltage switching; various types of switches will be discussed, along with applications. Finally, cathode materials are a technology area that has been thoroughly researched and is critical to narrowband HPM generation; several cathode materials will be discussed, along with needs for future cathodes.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 9, ¶1 (Critical Technologies)'
+    location: 'p. 10, ¶1 (Critical Technologies)'
   significance: Critical-technologies thesis — the three technology areas critical to a working HPM source are high-voltage insulation, high-voltage switching, and cathode materials (the latter critical to narrowband HPM generation)
   statement_date: '2010-01-28'
 - id: q12
@@ -141,7 +141,7 @@ quotes:
     The emission mechanisms of major importance for HPM at present are thermionic emission and explosive electron emission; however, field emission shows some hope with the advancements in nanostructures.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 16, ¶2 (Cathode Materials)'
+    location: 'p. 17, ¶2 (Cathode Materials)'
   significance: Cathode emission — the dominant HPM emission mechanisms are thermionic and explosive electron emission, with field emission promising as nanostructures advance
   statement_date: '2010-01-28'
 - id: q13
@@ -150,7 +150,7 @@ quotes:
     At present, HPM programs investigating the performance of cathodes having some form of cesium coating over carbon nanostructures show the most potential for progress in the state of the art. The goal of these programs is hundreds of kiloamps for tens of microseconds, resulting in gigawatt narrow-band HPM sources running at repetition rates of possibly 100 hertz and thus capable of 100-megajoule energy output per burst.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 18, ¶ (Cesium Iodide Coated)'
+    location: 'p. 19, ¶ (Cesium Iodide Coated)'
   significance: Leading cathode direction — cesium-coated carbon nanostructure cathodes show the most potential, targeting gigawatt narrow-band HPM sources capable of 100-megajoule energy output per burst
   statement_date: '2010-01-28'
 - id: q14
@@ -159,7 +159,7 @@ quotes:
     Very fast switching is critically important to the concept of UWB HPM. The basic concept is to generate a square pulse with the fastest rise time possible. A Fourier transform of this waveform results in a frequency spectrum containing frequencies determined by the width and rise time of the square pulse.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 19, ¶1 (High-Voltage Switching)'
+    location: 'p. 20, ¶1 (High-Voltage Switching)'
   significance: Switching principle — very fast switching is central to UWB HPM; a square pulse with the fastest possible rise time yields a frequency spectrum set by the pulse width and rise time
   statement_date: '2010-01-28'
 - id: q15
@@ -168,7 +168,7 @@ quotes:
     Solid-state switches have seen some improvement in voltage holdoff capability but generally still do not have the capability of operating at tens of kilovolts required of HPM sources. The current technology in lateral gallium arsenide (GaAs) switches is greatly improved compared with the old bulk avalanche semiconductor switch technology of the last decade.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 22, ¶1 (Solid-State Switching)'
+    location: 'p. 23, ¶1 (Solid-State Switching)'
   significance: Solid-state limitation — solid-state switches generally still cannot operate at the tens of kilovolts required of HPM sources, though lateral GaAs switch technology is greatly improved over older bulk avalanche semiconductor switches
   statement_date: '2010-01-28'
 - id: q16
@@ -183,7 +183,7 @@ quotes:
     •   Antenna.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 23, ¶ (High-Voltage Pulse Sources)'
+    location: 'p. 24, ¶ (High-Voltage Pulse Sources)'
   significance: 'Architecture — an HPM source has three basic components: electrical or explosive prime power, an RF generator, and an antenna'
   statement_date: '2010-01-28'
 - id: q17
@@ -196,7 +196,7 @@ quotes:
     •   Impulse HPM sources – these are typically wideband or ultrawideband sources such as SNIPER, EMBL, Phoenix, Jolt, Thor, GEM II, and the H series.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 25, ¶ (Pulsed High-Power Microwave Sources)'
+    location: 'p. 26, ¶ (Pulsed High-Power Microwave Sources)'
   significance: Source taxonomy — pulsed HPM sources split into narrow-band pulsed electron beam sources (klystron amplifiers, BWOs, TWTs, vircators, magnetrons, gyrotrons, MILO) and wideband/ultrawideband impulse sources (SNIPER, EMBL, Phoenix, Jolt, Thor, GEM II, H series)
   statement_date: '2010-01-28'
 - id: q18
@@ -205,7 +205,7 @@ quotes:
     SNIPER (Sub-Nanosecond ImPulsE Radiator) is an SNL HPM source operating at 290 kV that is capable of greater-than-1-kHz PRR. The peak power in the 3.5-ns-wide pulse is 1.25 GW, and the rise time is approximately 150 ps, resulting in spectral content from 100 MHz to 1.5 GHz. The radiated field strength, normalized to a distance of 1 meter, is 120 kV/m using a transverse electromagnetic (TEM) horn.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 28, ¶ (SNIPER)'
+    location: 'p. 29, ¶ (SNIPER)'
   significance: Fielded impulse source — SNIPER (Sub-Nanosecond ImPulsE Radiator), an SNL ultrawideband HPM source at 290 kV, >1-kHz PRR, 1.25 GW peak in a 3.5-ns pulse, ~150 ps rise time, 100 MHz–1.5 GHz spectral content
   statement_date: '2010-01-28'
 - id: q19
@@ -214,7 +214,7 @@ quotes:
     The H-series HPM sources—H2, H3, and H5—were built at the AFRL and used for various tests of assets. They are all currently inactive, except for a modified version of H3, which is being used for research at the University of New Mexico.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 28, ¶ (H-Series HPM Sources)'
+    location: 'p. 29, ¶ (H-Series HPM Sources)'
   significance: H-series provenance — the H2, H3, and H5 HPM sources were built at the AFRL for asset testing and are all currently inactive except a modified H3 used for research at the University of New Mexico
   statement_date: '2010-01-28'
 - id: q20
@@ -223,7 +223,7 @@ quotes:
     The Jolt, shown in Figure 10, was designed especially to feed the half-IRA antenna. The AFRL refers to this source as hyperband, meaning the frequency band ratio is greater than 10. On the pulsed-power end, Jolt uses a dual-resonant transformer operating at 1.1 MV.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 32, ¶ (The Jolt HPM Source)'
+    location: 'p. 33, ¶ (The Jolt HPM Source)'
   significance: Hyperband source — Jolt, an AFRL hyperband source (frequency band ratio greater than 10) feeding a half-IRA antenna and using a dual-resonant transformer at 1.1 MV
   statement_date: '2010-01-28'
 - id: q21
@@ -232,7 +232,7 @@ quotes:
     Gyrotrons are important in narrowband HPM production because the only directed-energy weapon system known to be fielded today is based on them. The Active Denial System (ADS) uses a gyrotron operating at 95 GHz that is capable of continuous operation. Power output is 100 kW, and the range is more than 750 meters.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 28, ¶ (Gyrotrons)'
+    location: 'p. 29, ¶ (Gyrotrons)'
   significance: Only fielded DEW — gyrotrons matter because the only directed-energy weapon system known to be fielded, the Active Denial System operating at 95 GHz (100 kW, range over 750 meters), is based on them
   statement_date: '2010-01-28'
 - id: q22
@@ -241,7 +241,7 @@ quotes:
     This paper provided an overview of the current state of HPM sources and the technologies driving their development. Advanced cathode materials, computer codes for more predictive ability in electron beam generation and propagation, high-speed switching at high power, and low-loss insulation techniques are just a few of the areas where advancement clearly is needed for progress to occur.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 37, ¶1 (Conclusion)'
+    location: 'p. 38, ¶1 (Conclusion)'
   significance: Conclusion — advancement is needed in advanced cathode materials, predictive computer codes, high-speed high-power switching, and low-loss insulation for progress in HPM sources
   statement_date: '2010-01-28'
 - id: q23
@@ -250,7 +250,7 @@ quotes:
     If PCSS switching devices capable of higher operating voltage and extended lifetime are made available, variations of the phased array will become the HPM source design of choice, given the inherent advantages. More compact antennas are greatly desired; however, the physics of the radiation process requires structure sizes on the order of one-half wavelength of the lowest radiated frequency. With demanding levels of directivity and gain also requirements, compact UWB antenna designs will continue to be difficult, if not impossible, to realize.
   source:
     path: government/dird-03-pulsed-hpm-20100128.pdf
-    location: 'p. 37, ¶ closing (Conclusion)'
+    location: 'p. 38, ¶ closing (Conclusion)'
   significance: Concluding forecast — if higher-voltage, longer-lived PCSS switching devices become available, phased-array variations will become the HPM source design of choice; compact ultrawideband antennas remain difficult because radiation physics requires structures on the order of one-half wavelength
   statement_date: '2010-01-28'
 cited_works: []
@@ -259,34 +259,34 @@ naming_quirks:
   added_date: '2026-05-21'
   observed: Pulsed High-Power Microwave Source Technology
   canonical: Pulsed High-Power Microwave Technology (AAWSAP products-list short form)
-  location: 'p. 2, ¶ title vs. AAWSAP products list entry 3'
+  location: 'p. 3, ¶ title vs. AAWSAP products list entry 3'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: disputed
 - id: nq2
   added_date: '2026-05-21'
   observed: '[(b)(6)]'
   canonical: '[redacted per FOIA (b)(6)]'
-  location: 'p. 2, Author line'
+  location: 'p. 3, Author line'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-21'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[redacted per FOIA (b)(3):10 USC 424]'
-  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-21'
   observed: Commanche
   canonical: Comanche
-  location: 'p. 7, ¶1 (Summary)'
+  location: 'p. 8, ¶1 (Summary)'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 2, Administrative Note'
+  location: 'p. 3, Administrative Note'
   source_path: government/dird-03-pulsed-hpm-20100128.pdf
   resolution: preserve-as-sic-in-quotes

@@ -72,7 +72,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 2, ¶ prepared-by/author block |
+| Location | p. 3, ¶ prepared-by/author block |
 
 ---
 
@@ -84,7 +84,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 2, ¶ Administrative Note |
+| Location | p. 3, ¶ Administrative Note |
 
 ---
 
@@ -96,7 +96,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 2, ¶ Administrative Note |
+| Location | p. 3, ¶ Administrative Note |
 
 ---
 
@@ -108,7 +108,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | p. 6, ¶ Introduction |
 
 ---
 
@@ -120,7 +120,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | p. 6, ¶ Introduction |
 
 ---
 
@@ -132,7 +132,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | p. 6, ¶ Introduction |
 
 ---
 
@@ -144,7 +144,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | p. 6, ¶ Introduction |
 
 ---
 
@@ -156,7 +156,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 6, ¶ Importance of Biocompatibility |
+| Location | p. 7, ¶ Importance of Biocompatibility |
 
 ---
 
@@ -168,7 +168,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 6, ¶ Importance of Biocompatibility |
+| Location | p. 7, ¶ Importance of Biocompatibility |
 
 ---
 
@@ -180,7 +180,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 6, ¶ Importance of Biocompatibility |
+| Location | p. 7, ¶ Importance of Biocompatibility |
 
 ---
 
@@ -192,7 +192,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 6, ¶ Science of Biomaterials |
+| Location | p. 7, ¶ Science of Biomaterials |
 
 ---
 
@@ -204,7 +204,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 7, ¶ Science of Biomaterials |
+| Location | p. 8, ¶ Science of Biomaterials |
 
 ---
 
@@ -216,7 +216,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 8, ¶ Biomaterials for Biosensors |
+| Location | p. 9, ¶ Biomaterials for Biosensors |
 
 ---
 
@@ -228,7 +228,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 8, ¶ Biomaterials for Biosensors |
+| Location | p. 9, ¶ Biomaterials for Biosensors |
 
 ---
 
@@ -240,7 +240,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 9, ¶ Biomaterials for Biosensors |
+| Location | p. 10, ¶ Biomaterials for Biosensors |
 
 ---
 
@@ -252,7 +252,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 9, ¶ Biomaterials for Biomedicine |
+| Location | p. 10, ¶ Biomaterials for Biomedicine |
 
 ---
 
@@ -264,7 +264,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 9, ¶ Biomedical Silicones |
+| Location | p. 10, ¶ Biomedical Silicones |
 
 ---
 
@@ -276,7 +276,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 9, ¶ Biomedical Silicones |
+| Location | p. 10, ¶ Biomedical Silicones |
 
 ---
 
@@ -288,7 +288,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 10, ¶ Biomedical Silicones |
+| Location | p. 11, ¶ Biomedical Silicones |
 
 ---
 
@@ -300,7 +300,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 11, ¶ Silicone Chemistry |
+| Location | p. 12, ¶ Silicone Chemistry |
 
 ---
 
@@ -312,7 +312,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 13, ¶ Teflon |
+| Location | p. 14, ¶ Teflon |
 
 ---
 
@@ -324,7 +324,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 13, ¶ Teflon |
+| Location | p. 14, ¶ Teflon |
 
 ---
 
@@ -336,7 +336,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 14, ¶ Biodegradable Polymers |
+| Location | p. 15, ¶ Biodegradable Polymers |
 
 ---
 
@@ -348,7 +348,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 15, ¶ Biodegradation Advantages |
+| Location | p. 16, ¶ Biodegradation Advantages |
 
 ---
 
@@ -360,7 +360,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 15, ¶ Degradable Biomaterials |
+| Location | p. 16, ¶ Degradable Biomaterials |
 
 ---
 
@@ -372,7 +372,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 15, ¶ Polylactic Acid and Polyglycolic Acid |
+| Location | p. 16, ¶ Polylactic Acid and Polyglycolic Acid |
 
 ---
 
@@ -384,7 +384,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 17, ¶ Polyethylene Glycol or Polyethylene Oxide |
+| Location | p. 18, ¶ Polyethylene Glycol or Polyethylene Oxide |
 
 ---
 
@@ -396,7 +396,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 17, ¶ Hydrogels |
+| Location | p. 18, ¶ Hydrogels |
 
 ---
 
@@ -408,7 +408,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 18, ¶ Hydrogels |
+| Location | p. 19, ¶ Hydrogels |
 
 ---
 
@@ -420,7 +420,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 18, ¶ Titanium – Hip and Knee Joints |
+| Location | p. 19, ¶ Titanium – Hip and Knee Joints |
 
 ---
 
@@ -432,7 +432,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 18, ¶ BioCeramics |
+| Location | p. 19, ¶ BioCeramics |
 
 ---
 
@@ -444,7 +444,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 20, ¶ Dental Ceramics |
+| Location | p. 21, ¶ Dental Ceramics |
 
 ---
 
@@ -456,7 +456,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 20, ¶ Tissue Constructs as Biomaterials |
+| Location | p. 21, ¶ Tissue Constructs as Biomaterials |
 
 ---
 
@@ -468,7 +468,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 21, ¶ Tissue Constructs as Biomaterials |
+| Location | p. 22, ¶ Tissue Constructs as Biomaterials |
 
 ---
 
@@ -480,7 +480,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 21, ¶ Tissue Constructs as Biomaterials |
+| Location | p. 22, ¶ Tissue Constructs as Biomaterials |
 
 ---
 
@@ -492,7 +492,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 22, ¶ Cardiovascular Biomaterials |
+| Location | p. 23, ¶ Cardiovascular Biomaterials |
 
 ---
 
@@ -504,7 +504,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 23, ¶ Cardiovascular Biomaterials |
+| Location | p. 24, ¶ Cardiovascular Biomaterials |
 
 ---
 
@@ -516,7 +516,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 23, ¶ Figure 22 caption |
+| Location | p. 24, ¶ Figure 22 caption |
 
 ---
 
@@ -528,7 +528,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 24, ¶ Cardiovascular Biomaterials |
+| Location | p. 25, ¶ Cardiovascular Biomaterials |
 
 ---
 
@@ -540,7 +540,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 25, ¶ Cardiovascular Biomaterials |
+| Location | p. 26, ¶ Cardiovascular Biomaterials |
 
 ---
 
@@ -552,7 +552,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 4, ¶ Figures list |
+| Location | p. 5, ¶ Figures list |
 
 ---
 
@@ -564,7 +564,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 25, ¶ Stent Biomaterials |
+| Location | p. 26, ¶ Stent Biomaterials |
 
 ---
 
@@ -576,7 +576,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 26, ¶ Nitinol as a Biomaterial |
+| Location | p. 27, ¶ Nitinol as a Biomaterial |
 
 ---
 
@@ -588,7 +588,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 26, ¶ Nitinol as a Biomaterial |
+| Location | p. 27, ¶ Nitinol as a Biomaterial |
 
 ---
 
@@ -600,7 +600,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 26, ¶ Contact Lenses |
+| Location | p. 27, ¶ Contact Lenses |
 
 ---
 
@@ -612,7 +612,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 27, ¶ Contact Lenses |
+| Location | p. 28, ¶ Contact Lenses |
 
 ---
 
@@ -624,7 +624,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 27, ¶ Drug Delivery Polymers |
+| Location | p. 28, ¶ Drug Delivery Polymers |
 
 ---
 
@@ -636,7 +636,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 29, ¶ Medical Titanium as a Biomaterial |
+| Location | p. 30, ¶ Medical Titanium as a Biomaterial |
 
 ---
 
@@ -648,7 +648,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 29, ¶ Medical Titanium as a Biomaterial |
+| Location | p. 30, ¶ Medical Titanium as a Biomaterial |
 
 ---
 
@@ -660,7 +660,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 29, ¶ Medical Titanium as a Biomaterial |
+| Location | p. 30, ¶ Medical Titanium as a Biomaterial |
 
 ---
 
@@ -672,7 +672,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 31, ¶ Biomaterials in Dialysis |
+| Location | p. 32, ¶ Biomaterials in Dialysis |
 
 ---
 
@@ -684,7 +684,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 32, ¶ Biomaterials in Dialysis |
+| Location | p. 33, ¶ Biomaterials in Dialysis |
 
 ---
 
@@ -696,7 +696,7 @@ The document is a review of representative biomaterials and their applications, 
 |---|---|
 | Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
 | Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
-| Location | p. 32, ¶ Summary and Recommendations |
+| Location | p. 33, ¶ Summary and Recommendations |
 
 ---
 

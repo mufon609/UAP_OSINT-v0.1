@@ -1098,12 +1098,15 @@ For an **OCR-scan / extraction-lossy source** the canonical extract is the
 contributor's `.txt` sibling, which marks each document page with a
 `----- PAGE BREAK -----` line (the `/prepare-ocr-sibling` convention).
 `extract_source_text` normalizes that marker to a form feed, so the same page
-machinery applies: `p. N` is the Nth document page = the Nth sibling block. The
-sibling's pages are the *document's own* pages — a FOIA cover sheet or
-distribution insert the sibling omits is not counted, which is the page a
-reader navigates to in the document itself. A sibling that carries no page
-marker is not page-structured and its `p. N` refs are skipped (no reliable
-split). A page-spanning quote sits on no single page and fails the check —
+machinery applies: `p. N` is the Nth physical page = the Nth sibling block. The
+sibling preserves *every physical page* of the PDF verbatim, in order —
+including a third-party FOIA/distribution insert (e.g., the Black Vault
+declassification page) where the source PDF carries one — so the Nth block is
+the page the PDF viewer shows as page N, and `p. N` resolves identically whether
+or not the file was redistributed. A distribution insert is **preserved
+verbatim** — never deleted, never replaced with a contributor summary or
+paraphrase; it simply carries no quotes. A sibling that carries no page marker
+is not page-structured and its `p. N` refs are skipped (no reliable split). A page-spanning quote sits on no single page and fails the check —
 split it at the boundary (below).
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
