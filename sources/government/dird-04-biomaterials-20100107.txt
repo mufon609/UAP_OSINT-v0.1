@@ -16,7 +16,6 @@ DIA-08-0912-006
 Biomaterials
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -30,7 +29,6 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Biomaterials
@@ -57,7 +55,7 @@ DC 20340-5100.
 
 iii
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Contents
@@ -89,7 +87,7 @@ Biomaterials for Biomedicine ...................................................
 
 iv
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
     Biomaterials in Dialysis ................................................................................... 24
@@ -144,7 +142,7 @@ Figure 31. Cuprophane Membrane Passes Blood Waste Products (Violet and
 
 v
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Biomaterials
@@ -176,7 +174,7 @@ also used to grow cells in culture, to assay for blood proteins in the clinical
 
 vi
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 laboratory, in processing biomolecules in biotechnology, for fertility regulation
@@ -229,7 +227,7 @@ The number of medical devices used each year in humans is very large. Figure
 
 vii
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 2: Common Medical Devices That Use Biomaterials. Boxed table titled "Numbers of Medical Devices/yr. Worldwide" with globe icon:
@@ -267,7 +265,7 @@ same very stringent safety requirements as those of new drug therapies.
 
 viii
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Biomaterials for Biosensors
@@ -323,7 +321,7 @@ as, more generally, where in the human body the sensor is located. The blood str
 
 1
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 the most hostile location both for sensor performance and in terms of the potential for
@@ -381,7 +379,7 @@ blood compatible, sterilizable, rugged, and strong but flexible. Its mechanical 
 
 2
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 can be tailored to varying degrees of hardness and strength for stiffness in catheter
@@ -406,7 +404,7 @@ mastectomy, particularly after breast cancer in women.
 
 3
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 SILICONE CHEMISTRY
@@ -457,7 +455,7 @@ themselves to manufacture with biosensors made by photolithography.
 
 4
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 6: Silicone Tracheostomy Tube. Photograph labeled "FOAM-CUFF-TRACHESTOMY TUBE"]
@@ -475,7 +473,7 @@ management of scars, particularly keloid scars. Figure 7 shows this product.
 
 5
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 TEFLON
@@ -506,7 +504,7 @@ such as vascular grafts.
 
 6
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Preformed ePTFE subcutaneous
@@ -561,7 +559,7 @@ sources. Synthetic polymers also represent a more reliable source of raw materia
 
 7
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 one free from concerns of immunogenicity. These polymers can be optically clear,
@@ -617,7 +615,7 @@ products in the human body are also water and carbon dioxide.
 
 8
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 PLA, or polylactide, is a thermoplastic,
@@ -672,7 +670,7 @@ growing an attachment to the chest wall and from forming adhesions onto the over
 
 9
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 tissues. The barrier remains in place only for a week or so during the healing process
@@ -729,7 +727,7 @@ due to its structure, which is            shapes/dots.]
 
 10
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 composed of long-chain molecules crosslinked to one another to create many small
@@ -785,7 +783,7 @@ the materials they were used to repair.
 
 11
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Two common ceramics used in
@@ -840,7 +838,7 @@ ingrowth into the pores occurs, with    component.]
 
 12
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 an increase in the interfacial area between the implant and the tissues. This tissue
@@ -897,7 +895,7 @@ substitutes that restore and maintain the function of human tissues. This is a f
 
 13
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 medical therapeutics and differs from standard drug therapy or permanent implants in
@@ -937,7 +935,7 @@ ear pinna lost in an accident.
 
 14
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Biodegradable polymers have been used with computer-based rapid prototyping
@@ -975,7 +973,7 @@ cardiovascular devices and how long they are in contact with blood.
 
 15
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 21: Some of the More Popular Biomedical Devices and Duration of Their Blood Contact. Boxed table titled "Medical Devices Used in the Bloodstream", column heading "Blood contact time":
@@ -1001,7 +999,7 @@ deposits (atherosclerosis), segments in some cases can be replaced with grafts. 
 
 16
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 A problem most materials cause when in blood contact is that they trigger the rapid
@@ -1029,7 +1027,7 @@ how the patch is inserted into the hole in the atrial wall using a catheter.
 
 17
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Heart valves are another application
@@ -1084,7 +1082,7 @@ applies a calibrated amount of pressure to the blood vessel walls.
 
 18
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 NITINOL AS A BIOMATERIAL
@@ -1139,7 +1137,7 @@ appeal. Figure 27 shows a gas-permeable contact lens.
 
 19
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 PMMA, however, is not an ideal
@@ -1192,7 +1190,7 @@ capsules, microcapsules, liposomes, and hollow fibers. Another approach is to di
 
 20
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 the active agent in a biodegradable polymer, as shown in Figure 28. The polymer host
@@ -1226,7 +1224,7 @@ The three key advantages polymeric drug delivery products can offer are:
 
 21
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 An appropriate selection of the polymer matrix is necessary in order to develop a
@@ -1270,7 +1268,7 @@ is now also used for head and jaw reconstruction.
 
 22
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 29 (labeled "Figure 27" in the document's caption): Photomicrograph of Titanium Metal (Appears Black in This Photo) in an Intimate Integration With Living Bone. The intersection of the two materials shows a thin barrier layer and then healthy tissue very close to the metal. It does not show inflammation or scar tissue formation.]
@@ -1300,7 +1298,7 @@ a natural, as well as chemical, adhesion, much like glue.
 
 23
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Another recent discovery is that treating the titanium surface with a silane compound
@@ -1336,7 +1334,7 @@ photograph (right) of dialyzers used to treat kidney failure.
 
 24
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Dialysis works on the principles of

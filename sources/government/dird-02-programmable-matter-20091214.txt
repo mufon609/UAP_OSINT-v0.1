@@ -13,14 +13,10 @@ Document
 ICOD: 1 December 2009
 DIA-08-0911-016
 
-
 Aerospace Applications of
 Programmable Matter
 
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -34,14 +30,9 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Aerospace Applications of Programmable Matter
-
-
-
 
 Prepared by:
 [box containing redaction marker:] (b)(3):10 USC 424
@@ -51,15 +42,9 @@ Defense Intelligence Agency
 Author:
 [box containing redaction marker:] (b)(6)
 
-
-
-
 Administrative Note
 
 COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
-
-
-
 
 This product is one in a series of advanced technology reports produced in FY 2009
 under the Defense Intelligence Agency, [boxed redaction: (b)(3):10 USC 424] Advanced Aerospace
@@ -70,8 +55,6 @@ DC 20340-5100.
 
 ii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -112,8 +95,6 @@ Tables
 iii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Aerospace Applications of Programmable Matter
@@ -146,8 +127,6 @@ behind smart materials and their possible aerospace applications over the next
 
 iv
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -205,8 +184,6 @@ layers is a "band gap" of forbidden energies. Here, there exist no electrons at 
 1
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
 [Figure 1: diagram comparing "Metal" (left) and "Semiconductor" (right). Vertical axis labeled "INCREASING ENERGY." For the Metal: a "Conduction Band" with electrons (e-) moving, above a Valence-level set of electrons. For the Semiconductor: a "Conduction Band" at top with a single electron (e-), a "Band Gap" in the middle, and a "Valence Band" at the bottom filled with electrons (e-).]
@@ -247,8 +224,6 @@ atoms with properties that simply do not occur on the periodic table. If we want
 2
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 can exert precise control over their optical, electrical, thermal, and magnetic properties
@@ -281,8 +256,6 @@ the passage of light. The result is a transparent material whose optical propert
 
 3
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -336,8 +309,6 @@ polarize, diffuse, and absorb light in limitless combinations.
 4
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
 "Impossible" Materials
@@ -384,8 +355,6 @@ of changing their properties—indeed, their very purpose—on demand.
 5
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 4: a perspective drawing of a layered cylindrical fiber, with leader lines labeling concentric/surface layers from outside in: "Conductors," "P-Layer," "N-Layer," "Memory," and at the core "Power & Control Signals."]
@@ -425,8 +394,6 @@ malicious hackers the keys to matter itself!
 
 6
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
@@ -483,8 +450,6 @@ with low-E. Furthermore, because dynamic windows and low-E coatings save energy
 7
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
 through completely different mechanisms, their effects are complementary and, thus,
@@ -519,8 +484,6 @@ energy savings up to three times those of low-E glass alone.
 8
 UNCLASSIFIED//FOR OFFICIAL USE ONLY [struck through]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 6: line chart titled "Denver Five-Year Cumulative Savings (holding energy prices constant)." Y-axis in dollars from $- to $3,000.00 in $500.00 increments. X-axis "Months Installed" from 0 to 60 (ticks at 0, 12, 24, 36, 48, 60). Legend lists series: "RavenWindow + Low-E," "Pilkington K-Glass," "Oldcastle Sunglass," "Viracon VRE238," "AFG Comfort TiR," "99% Transmissive Low-E," "99% Reflective Low-E." Curves rise over time; exact data values not transcribed.]
@@ -550,8 +513,6 @@ junction, one face grows hot while the other grows cold.
 
 9
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -595,8 +556,6 @@ of energy required for air circulation and other life support functions).
 
 10
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -653,8 +612,6 @@ possible.
 11
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 In addition, sharp temperature discontinuities can be an energy source. A Peltier
@@ -708,8 +665,6 @@ current capabilities.
 
 12
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -767,8 +722,6 @@ skylights follow them around, but now they are looking out mainly from the stati
 13
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 shady side, avoiding direct sunlight. The station has absorbed and stored all the heat
@@ -824,8 +777,6 @@ popularity (and, indirectly, the usefulness) of different designs. Thus, consume
 
 14
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
@@ -883,8 +834,6 @@ objects are made from traditional, inert materials. Their relationship to materi
 15
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 may be analogous to our present-day relationships with electronic graphs, data files,
@@ -909,7 +858,6 @@ were to become reality in crewed and crewless spacecraft, the gains in energy
 efficiency, mass reduction, safety, comfort, and mission flexibility could be extremely
 significant and well worth pursuing. All that is needed is a commitment to develop the
 underlying technologies.
-
 
 1. <en.wiktionary.org>: "atom"
 2. McCarthy, Wil: Hacking Matter, Basic Books, March 2003

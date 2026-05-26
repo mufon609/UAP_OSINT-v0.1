@@ -18,7 +18,6 @@ Been . . . and Where We Could
 Go
 
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -32,7 +31,6 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Space Access: Where We've Been . . . and Where We Could
@@ -61,7 +59,7 @@ DC 20340-5100.
 
 ii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Contents
@@ -102,8 +100,6 @@ Figure 14. Hypersonic Glider Characteristics ...................................
 Figure 15. Both Delta Planform Lifting Body (Dynasoar) and Model 176 Offer
     Superior Landing Performance .................................................................. 16
 Figure 16. McDonnell Aircraft Company Roll-Bonded Titanium Structure .............. 17
-
------ PAGE BREAK -----
 
  .... 18
 Figure 18. FDL-7C/D, Model 176 Entry Temperature Distribution ........................ 19
@@ -156,7 +152,7 @@ Table 2. Elements of the Space Infrastructure Shown in Figure 44 ...............
 
 iv
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Space Access: Where We've Been . . . and Where We Could
@@ -205,7 +201,7 @@ about space access at the time, a group of Aerospace Corporation
 
 v
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 veterans responded, "It was not a technology issue; it was a
@@ -236,7 +232,7 @@ when required or "on demand." After NASA was assigned
 
 vi
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 responsibility for space access, that Air Force's focus switched to
@@ -275,7 +271,7 @@ analogous to the SR-71 Blackbird.
 
 vii
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Propulsion Perspective
@@ -334,7 +330,7 @@ operate and the greater potential to operate from more bases.
 
 1
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 The Russian design bureaus are to thank for arriving at a concept that eliminated the
@@ -384,7 +380,7 @@ breathing propulsion system.
 
 2
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 3: HSVS Hypersonic Cruise Aircraft Showing True Skin Temperature. Line drawing of a hypersonic aircraft above a photographic skin-temperature image labeled "Mach 12 Cruise." Caption block on image: "McDonnell Aircraft Advanced Design Dept. 1958 to 1967 Mr. H. D. Altis, Director".]
@@ -404,7 +400,7 @@ in a two-stage-to-orbit rather than a single-stage-to-orbit vehicle.
 
 3
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 4: Hypersonic Rocket-Powered Glider and Hypersonic Air-Breathing Cruiser. Two line drawings: upper labeled "Rocket Powered Hypersonic Glider"; lower labeled "Combined Cycle Airbreather Powered Hypersonic Cruiser".]
@@ -433,7 +429,7 @@ reach a functional hardware stage.
 
 4
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Whatever goes into orbit must enter the atmosphere many times if it is to be a
@@ -470,7 +466,7 @@ the 1958-68 timeframe.
 
 5
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 The AFFDL's approach was to design a hypersonic performance configuration that would
@@ -518,7 +514,7 @@ support the Manned Orbiting Laboratory (MOL). This concept was briefed to the U.
 
 6
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Air Force in 1964, and elements of that configuration will be shown later. The intent
@@ -576,7 +572,7 @@ AFFDL approach.⁹
 
 7
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 The design parameters that largely determine a spacecraft's weight are its configuration
@@ -631,7 +627,7 @@ interchangeability. Altogether, 10 configurations from among the 3 families were
 
 8
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 designed, weighed, and performed using the same industrial fabrication capability. The
@@ -659,7 +655,7 @@ recovery fleet and the damage incurred by the spacecraft in a saltwater landing.
 
 9
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 goal was to be able to recover the spacecraft at any airport in CONUS, to eliminate the
@@ -692,7 +688,7 @@ issues just as it did for the space shuttle.
 
 10
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 9: NASA Langley Wing-Body Configuration WB-004 With Generally Critical Areas for Wing Bodies Identified. Line drawing labeled "NASA Langley Wing-Cylinder Configuration Concept WB-004" with annotations: "Complex curved TPS system"; "Glide angle of attack very high ~ 45° compared to 15° for high L/D design"; "Unsymmetrical vortices can produce super-sonic control problems"; "Cylinder heating extends up to 55° to 60°"; "Poor hypersonic lift-to-drag ratio limits glide range"; "Thin wings encounter severe heating from both sides i.e. 'hot structure'"; "Wing training edge controls provide limited control capability for a military maneuver vehicle"; "Inadequate lateral-directional stability and control".]
@@ -717,7 +713,7 @@ location on any inclination orbit from its current orbit with no waiting.
 
 11
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 10: FDL-7C/D and FDL-7MC Lifting-Body Configuration. Black silhouette of lifting body labeled "AFFDL-7C/D Lifting Body Configuration Concept" with annotations: "Flight tested nose tip design assures 100 °C temperature"; "Lifting body configuration eliminates thin wings with wing-like lift. High lift-to-drag ratio and global glide range"; "All-flying control surfaces provide stability and control from Mach 0.2 to 22"; "Heat pipe leading edges assures high L/D leading edge radii."; "Flat pane TPS system"; "Trapezoidal cross section increases lift-to-drag ratio and reduces side and upper surface heating by 1/3"; "Anhedral fixed fins with trailing edge flaps assure subsonic lateral-directional stability and control"; insert: "Dale Reed NASA Dryden circa 1967". Caption: Offers inherent stability and control with sufficient volume and high lift-to-drag ratio.]
@@ -737,7 +733,7 @@ those fabricated by Goodrich Aerospace for the now-defunct X-33). The nose was
 
 12
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 transpiration cooled with a low-rate water-porous spherical nose. The sharp leading
@@ -762,7 +758,7 @@ to the Lockheed Star Clipper (see Figure 38).
 
 13
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 The author was aware of three people—James S. McDonnell, the AFFDL's Albert Draper,
@@ -796,7 +792,7 @@ deorbit procedures to be on the ground in less than 90 minutes in an emergency.
 
 14
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Figure 14 compares the glide ranges and L/D ratios of selected hypersonic gliders. The
@@ -823,7 +819,7 @@ stability over the entire speed range.
 
 15
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 15: Both Delta Planform Lifting Body (Dynasoar) and Model 176 Offer Superior Landing Performance. Graph: vertical axis "Subsonic Lift-to-Drag Ratio" (0 to 10); horizontal axis "Flare Initiation Speed (percent of minimum speed) %V_min" (100 to 260). Curves labeled "Model 176", "Dynasoar", "X-15", "13° Half-Cone". Annotations: "Minimum Acceptable Initial Speed Based on Accelerated Stall Margin"; "Psychological Limit Due to Excessive Initial Speed"; "Limit Due to Margin Flare Capability".]
@@ -851,7 +847,7 @@ percent of the thermal heating enters the primary structure.
 
 16
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 16: McDonnell Aircraft Company Roll-Bonded Titanium Structure (circa 1963). Diagram and photograph: "Aero Heating" / "97.5% Radiated to Space"; "metal shingle vacuum multi-layer insulation"; "diffusion bonded super-plastically formed structure". Image caption (handwritten, partly illegible): [unclear] "McDonnell titanium structure (Courtesy of John Robson)" [unclear]. Caption: Today this structure would be super-plastically formed and diffusion bonded from RSR titanium sheets.¹¹]
@@ -879,7 +875,7 @@ space shuttle but was sturdier and could be repaired in a hanger or in orbit. A 
 
 17
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 tunnel model of the McDonnell Douglas Astronautics Company Model 176 installed in
@@ -906,7 +902,7 @@ identification of primary flow characteristics in the boundary layer of the vehi
 
 18
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Figure 18, radiation equilibrium skin temperature is the skin temperature that results
@@ -939,7 +935,7 @@ Tullahoma, Tennessee.
 
 19
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 On other McDonnell hypersonic configurations with all-movable control surfaces, the
@@ -978,7 +974,7 @@ someone in space systems but too costly to a subsonic round engine manufacturer.
 
 20
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 One of the difficulties with silicon carbide (SiC) is that it is ridged fibers, like very-small-
@@ -1020,7 +1016,7 @@ boundary did act to reduce the heat transfer to the body aft of the nose.
 
 21
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Al Draper assembled the ASSET (Aerothermodynamic Structural and System
@@ -1055,7 +1051,7 @@ thermodynamicists' solution of a simple radiation structure, not a heat pump.¹�
 
 22
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 The Qu Tube
@@ -1083,7 +1079,7 @@ control.
 
 23
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [NOTE: This page reproduces an excerpted two-column page from the University of Alabama, Huntsville, Annual Report. The text is small and partly faded; transcribed verbatim as legible below, with [unclear] for illegible portions.]
@@ -1159,7 +1155,7 @@ heat fluxes used.
 
 24
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Rocket Propulsion
@@ -1198,7 +1194,7 @@ functioned on the test stand for 80 simulated flights to space and return before
 
 25
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 overhaul was necessary. It, too, met its end in a government-terminated program, lost
@@ -1254,7 +1250,7 @@ weight ratio and gross weight and thereby making the concept less viable. In bot
 
 26
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 cases, the low-pressure hydrogen exiting the expansion turbines is entered into the
@@ -1300,7 +1296,7 @@ a ratio of wetted area to planform area less than the circular cross section of 
 
 27
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Russian HOTOL. However, NPO Molnyia provided a unique approach to space access by
@@ -1345,7 +1341,7 @@ motor; only the propellant mix is different.
 
 28
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 31: LACE Air-Breathing Rocket Reduces Gross Liftoff Weight by 150 Metric Tons and Uses Existing Rocket Engines. Graph titled "Propellant Weight": vertical axis "Propellant Weight (tons)" (0 to 300); horizontal axis "Flight Speed Along Trajectory (ft/sec)" (0 to 30,000). Curves labeled "LACE Constant OWE", "LACE Actual OWE", "Rocket Constant OWE".]
@@ -1380,7 +1376,7 @@ for acceleration.
 
 29
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Up-and-Down Operations
@@ -1416,7 +1412,7 @@ canard near the nose of the vehicle.
 
 30
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Adding the switchblade wing (see inset photo in Figure 10) provides a reasonable
@@ -1446,7 +1442,7 @@ ratio at takeoff (TWTO) of 1.35 and a Küchemann tau equal to 0.2.
 
 31
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Gross weight trends are shown for five different takeoff wing loadings for horizontal
@@ -1498,7 +1494,7 @@ tons at takeoff, compared with 750 tons for an all-rocket VTOHL propulsion conce
 
 32
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 forced HTO mode would instead have a gross weight in excess of 1,000 tons. So the
@@ -1528,7 +1524,7 @@ to those of the 1964 MOL support launcher—that is, 100 to 150 launches a year.
 
 33
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 As per the U.S. Air Force requirements
@@ -1590,7 +1586,7 @@ be possible to launch this system from Vandenberg Air Force Base or Cape Canaver
 
 34
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 but we believed new launch complexes would be required to achieve the desired launch
@@ -1624,7 +1620,7 @@ one month to plus one month represented as a +45 degree average atmosphere.
 
 35
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Figure 39 shows the deviation from the 1962 standard atmosphere for a hypersonic
@@ -1651,7 +1647,7 @@ atmospheric temperatures are at 27,000 feet over Russia in winter.
 
 36
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Conclusion
@@ -1711,7 +1707,7 @@ initiating a 2g turn. For the 1968 McDonnell Aircraft HyFAC study,³¹ the landi
 
 37
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 was contained within CONUS, demonstrating a significant maneuver capability. If a
@@ -1728,7 +1724,7 @@ were used as building materials on the West coast.
 
 38
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 43: Where We Are Today. Illustration titled "Spaceways Entering the 21st century" with orbital diagram and labels: "Planets", "LEO-Lunar Routes ??", "Planetary Exploration", "Space Based Warning", "GEO Satellites", "Geostationary Orbit Communications Warning", "Navigation Weather", "deceased MIR", "Space Station", "Space Based Tracking", "Earth Space Ports", "N-RLV", "Communications Observation". Inset of a covered wagon: "From Dr. William Gaubatz".]
@@ -1761,7 +1757,7 @@ capability to make Saturn I and Saturn V launchers.
 
 39
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Figure 44: Where We Could Be If We Can Recapture the Engineering Confidence and Expertise of the Apollo/Saturn V Era. Detailed orbital infrastructure illustration titled "Growth of the Spaceways Routes" with many labeled elements: "Waste Storage and Processing Orbits", "GEO Platforms", "Lunar Orbits", "Planets", "Planetary Exploration", "Communications Satellite Constellations", "Space Based Warning", "Orbital Transfer Vehicle", "Lunar Spaceport", "Navigation Weather LEO MEO HEO", "GEO Satellites", "Space Cruiseship", "LEO-Lunar Routes", "Fuel Station Spaceports", "RLV Launch", "Geostationary Orbit Communications Warning", "Space Based Tracking", "Space Station", "Orbit Mapping Vehicle", "Space Deployment/ Retrieval Vehicle", "Orbit Servicing Vehicle", "Orbit Sweep Vehicle", "Man-tended Manufacturing", "Hotels", "Manufacturing", "Low and Medium Earth Orbits", "Where is our railroad to space; Where are the round trips". Inset of a locomotive: "From Dr. William Gaubatz".]
@@ -1791,7 +1787,7 @@ a crowded and busy place.
 
 40
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Table 2. Elements of the Space Infrastructure Shown in Figure 44
@@ -1818,7 +1814,7 @@ Table 2. Elements of the Space Infrastructure Shown in Figure 44
 
 41
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 [Table 2 continued:
@@ -1834,7 +1830,7 @@ UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 42
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Appendix A: Historical Perspective
@@ -1891,7 +1887,7 @@ crewmember. For a 12-person crew-replacement mission, the crew-replacement
 
 43
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 payload would be 15,228 lb—well within the payload capacity. The operating
@@ -1948,7 +1944,7 @@ system are given.
 
 44
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 • Meteoroid penetration or spalling of the thin refractory metal shingles may be a
@@ -1978,7 +1974,7 @@ executed by McDonnell Aircraft Company of the McDonnell Douglas Corporation.³�
 
 45
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Appendix B: Aeropropulsion Integrated Vehicle
@@ -2020,7 +2016,7 @@ of oxidizer carried and the lighter propulsion system weight.
 
 46
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Appendix C: TAV Operational Costs
@@ -2052,7 +2048,7 @@ nonfunctional or be destroyed with minimal collateral damage.
 
 47
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 Appendix D: Landing Ellipses for Hypersonic Gliders
@@ -2075,7 +2071,7 @@ glide range equal to the Earth's equatorial circumference.
 
 48
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
------ PAGE BREAK -----
+
 UNCLASSIFIED//[struck through: FOR OFFICIAL USE ONLY]
 
 ¹ Bruno, Claudio A.; Czysz, Paul, "Future Spacecraft Propulsion Systems," Second Edition, Springer in conjunction

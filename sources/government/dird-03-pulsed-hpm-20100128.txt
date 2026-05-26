@@ -20,8 +20,6 @@ Pulsed High-Power Microwave Source Technology
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
 
@@ -33,8 +31,6 @@ responsible for the declassification of hundreds of thousands of pages
 released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -59,8 +55,6 @@ This product is one in a series of advanced technology reports produced in FY 20
 ii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -119,8 +113,6 @@ High-Voltage Pulse Sources .... 15
 iii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -182,8 +174,6 @@ iv
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 10. Jolt Hyperband HPM Source .... 24
@@ -201,8 +191,6 @@ Table 3. Cathode Study Findings .... 11
 v
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -222,8 +210,6 @@ vi
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 One major use of HPM by the military is for electronic attack, or what is referred to by the media as an "ebomb." HPM sources developed for this purpose provide peak powers in excess of 10 gigawatts. The goal of such a weapon is to disable communications and computer systems prior to any troop movements and render the enemy unable to stage a response. The technology used to drive such sources has its roots in pulsed power, and for narrowband sources requires the use of tools that have been developed in the plasma physics community. Reliance on microprocessors that have an increasing density of circuits packaged onto each chip makes such systems ever-more vulnerable to HPM effects. As an example of the possible effects of HPM weapons, on 28 May 2001, a U.S. Commanche helicopter, flying in New York state while performing tests involving HPM weapons, was reported to have generated a low-level energy pulse that disrupted the Global Positioning System devices used to land commercial aircraft in Albany.
@@ -235,8 +221,6 @@ If EM radiation is able to penetrate a target, the issue then becomes the suscep
 vii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -251,8 +235,6 @@ In addition, it is very difficult to detect these sort of pulsed sources, since 
 viii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -271,8 +253,6 @@ Insulation generally falls into one of three categories: (1) homogeneous insulat
 1
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -293,8 +273,6 @@ The true title for this section should be "Thermoplastic Polymers (Plastics)," a
 2
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -322,8 +300,6 @@ One of the greatest advantages of casting epoxies is that a high dielectric stre
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Adhesion to itself allows casting in several stages without fear of voids or mechanically weakened areas. A final desirable characteristic—one that is of obvious importance—is a very high dielectric strength. With attention to detail and diligence in the casting procedures, dielectric strengths of more then 4 kV/mil on 0.125-inch thickness have been achieved. All these advantages have allowed operation of high-voltage pulse systems at increased power levels and at half the volume of those previously insulated with mineral oil.
@@ -344,8 +320,6 @@ Insulating gases are used in many high-voltage applications where weight is a pr
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 thus, implies heightened safety concerns. Even low-volume vessels can contain hundreds of joules of energy in the compressed gas, and a housing failure can hurl fragments at deadly velocities. Highly compressed gases are used only in cases where some prized benefit is worth the increased cost and design trials to be exacted. One example of this is extremely fast switching where the electrode spacing is proportional to the added inductance during conduction—the smaller electrode spacing requires higher gas pressure for insulation. Almost every common gas has been used as insulation, and many have attributes making them desirable for certain applications. Sulfur hexafluoride, nitrogen, air, argon, helium, oxygen, and hydrogen are commonly used. Of these, only sulfur hexafluoride is an electronegative gas, meaning it has the ability to remove electrons from the volume through the formation of negative ions and thereby increase the dielectric strength. Electrical discharges in sulfur hexafluoride result in foul-smelling sulfur compounds that also deposit on the switch housing and electrodes and require frequent cleaning. These discharge compounds also tend to be highly corrosive, especially in the presence of water. Other gases with electronegative species, typically other halogens such as chlorine, also make good insulators. These gases are usually much denser than air, and breakdown voltage is roughly proportional to density, thus higher voltages can be supported even at low pressures. The halogenated hydrocarbon refrigerants, such as CCl4, CCl2F2, CCl3F, and C2Cl2F4, are also popular for insulation. The breakdown of air has been thoroughly researched, and in fact the breakdown voltage of a calibrated gap can be used to determine the magnitude of high voltages. Table 2 shows the breakdown voltages of several insulating gases relative to that of air.
@@ -360,8 +334,6 @@ Gaseous insulation as a switch medium limits the pulse repetition rate (PRR) to 
 5
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -381,8 +353,6 @@ Since the oil is the weakest dielectric medium in the preceding insulation schem
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 has resulted in an average dielectric strength of more than 3 kV/mil for the volumes mentioned. Adapting this scheme to the manufacture of high-voltage capacitors could result in significant improvement over the current state of the art of 1 joule per cubic centimeter.
@@ -400,8 +370,6 @@ This area of research is vitally important to any HPM source requiring electron 
 7
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -436,8 +404,6 @@ Efforts are still under way to increase the output power, pulsed emission durati
 8
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -475,8 +441,6 @@ Carbon cathodes have been used in diodes for more than three decades and have so
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 appears to be hydrogen ions, which, because of their low mass, contribute to the problem of gap closure. The gap closure velocity using carbon cathodes quoted by most reports researched is 2-2.5 cm/µsec, and diode gaps from the same reports were 1-4 centimeters. Carbon cathodes also have much longer lifetime than velvet. However, one of the greatest advantages of carbon is the ever-expanding ability to form both macro- and nanostructures using it as a base or substrate. Structures formed using carbon include pyramids, fibers, microfibers, nanotubes, and tufts. Many possible carbon structures still have yet to be formed and tested. Thus far, structures with the most surface area appear to perform best.
@@ -492,8 +456,6 @@ One of the most recent and impressive materials to be used in cathodes for HPM t
 10
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -523,8 +485,6 @@ High-voltage switching is among the most challenging of technologies for HPM sou
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 An oft-forgotten aspect of the spectral content is that the spectrum also contains only the odd harmonics of the lowest frequency by the definition of a Fourier transform. Thus, the faster the rise time and the wider the pulse, the broader the spectral content. Therefore, switching speed is the most important parameter of a UWB HPM source. The types of switches used for HPM are essentially the same as the types of insulation discussed earlier: gaseous, liquid, and solid state at lower voltages. The single most important attribute of gases and liquids in switching is their self-healing ability, which implies some measure of PRR capability.
@@ -545,8 +505,6 @@ with ρ being the gas density as a multiple of that for sea level air, Z is the 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 rise time is the time required to heat the gas channel to full conductivity, and the inductive rise time is the delay caused by the addition of the switch into the circuit. There are two contributions to the inductive rise time, with Lc being the spark channel inductance and Lh the housing inductance. A shorter switch gap reduces the inductive time by lowering the channel inductance but also increases the electric field in the gap, reducing the resistive time and resulting in a faster rise time. Even though the switch electrodes are usually designed for minimal cross-sectional area at a given current, the very short electrode separation required can still result in high interelectrode switch capacitance. As mentioned earlier, it is also preferable to charge the switch very quickly to achieve an overvolted switching condition, and, therefore, very fast switches always have some level of pre-pulse. Because the PRR is also of great importance, hydrogen has been chosen most often for high-speed gas switching in UWB HPM sources. Switches of this type have achieved rise times of just over 100 picoseconds (ps) and PRRs of 1,500 pulses per second.
@@ -558,8 +516,6 @@ Another type of gas switch meriting mention for its utility and indispensability
 13
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -576,8 +532,6 @@ Photoconductive solid-state (PCSS) switching is still of great interest because 
 14
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -603,8 +557,6 @@ Marx generators have been used for several decades now and have seen many improv
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 2 shows an example of a Marx generator circuit.
@@ -622,8 +574,6 @@ Explosively driven generators, also called flux compression generators (FCGs), w
 16
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -649,8 +599,6 @@ HPM tubes, such as backward wave oscillators (BWOs), traveling wave tubes (TWTs)
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 ray production, and beam breakup. The combination of x-rays and the high base pressures has led to breakdowns in the cavities and unstable beam propagation.
@@ -673,8 +621,6 @@ The magnetically insulated line oscillator (MILO) is essentially a magnetron tha
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 The Orion system, first fielded in 1995, is a self-contained, transportable HPM test facility housed in five standard shipping containers. It is computer controlled via fiberoptic links. The system is based on four continuously tunable magnetrons with a tunable frequency range of 1 to 3.3 GHz. The thyratron-switched modulator pulse charges an 11-section pulse-forming network through a step-up transformer and a triggered gas output switch. This provides a 100- to 500-ns pulse at 200 to 500 kV and up to 100 PRR that drives the magnetrons. The magnetrons are tuned by stepper-motors and use explosive emission cathodes. The vacuum of 10^-6 to 10^-7 is provided by cryopumps. The magnetic field of about 10 kG is provided by cryomagnets. The system includes an entire shipping container housing a combiner/attenuator network to provide continuously variable power over five orders of magnitude. The antenna is formed by two offset, shaped parabolic reflectors, each fed by two pyramidal horns. The antenna produces a 7 x 15 meter elliptical beam spot at a distance of 100 meters. Figure 3 shows the Orion test facility with its antenna.
@@ -688,8 +634,6 @@ Gyrotrons tap the energy associated with electrons gyrating about strong magneti
 19
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -717,8 +661,6 @@ The H-series HPM sources—H2, H3, and H5—were built at the AFRL and used for 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 uses a pulse transformer to charge a short section of coaxial transmission line to high voltage. The transmission line is charged quickly enough to overvolt a high-pressure (2,000-psi) hydrogen switch, providing 120-ps rise-time pulses at about 350 kV and 2.5-ns pulse width to another 40Ω coaxial transmission line, which uses a point geometry converter (PGC) to feed an antenna.
@@ -735,8 +677,6 @@ Figure 6 shows a cross-section drawing of H5 with a PGC feeding a Brewster angle
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 7 is a closeup photograph of the same actual components as built and tested at the High Energy Research and Test Facility antenna range. This source was used extensively for testing in the 1990s, including remote tests in which the entire system, including the antenna, a screen room, and far-field diagnostics, was fitted into a trailer specially modified for the purpose.
@@ -751,8 +691,6 @@ The Phoenix was a UWB source developed by the AFRL specifically for asset testin
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 8. Phoenix Radiated Pulse at 8.5 Meters. Plot of Electric Field on Axis (KV/m), vertical axis -5 to 45, versus Time in nanoseconds, horizontal axis 0 to 6. Two traces labeled "Phx Fld 7/94" (solid) and "Phx Fld 7/96" (dashed), both showing a sharp peak near 3 ns.]
@@ -762,8 +700,6 @@ UNCLASSIFIED//FOR OFFICIAL USE ONLY
 23
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -786,8 +722,6 @@ The AFRL has defined mesoband or moderate band sources as those with a bandwidth
 24
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -815,8 +749,6 @@ G = 2πab/λ^2
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 where:  a and b are dimensions of the sides and λ is the wavelength.
@@ -839,8 +771,6 @@ The Vlasov antenna is also well suited to narrowband HPM radiation and has some 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 13 shows (a) Vlasov antenna origins and (b) a Vlasov antenna attached to a cylindrical MILO. Vlasov antennas have one major drawback: the propagation angle is a function of the operating frequency. Thus, if the frequency chirps during the RF pulse, then the beam direction will sweep. The propagation angle is given by:
@@ -859,8 +789,6 @@ The basic approach to attaining low dispersion in a conventional antenna is to e
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 instances, the determinant of the radiated signal characteristics. Sidelobes generated using TEM antennas tend to fall off sharply and are accompanied by a stretching of the original pulse duration. The distance from the antenna to where the far field region begins is defined such that the travel time of the differential distance is less than the rise time of the pulse. Parameters such as gain and beam width for UWB antennas are difficult to define because these concepts are from the narrowband world, where the definitions are for a single frequency. For UWB antenna comparisons, the community uses the previously described figure of merit concept to aid with this problem. The FOM is the peak electric field measured at some distance multiplied by that distance, thus the unit for FOM is volts. Using this concept, gain for UWB antennas is defined as:
@@ -878,8 +806,6 @@ A new type of antenna, the impulse radiating antenna (IRA), incorporates a parab
 28
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 

@@ -1,7 +1,6 @@
 Approved For Release 2000/08/10 : CIA-RDP96-00787R000100180001-3
 
-
-[Page 1 — cover]
+[cover]
 
 STANFORD RESEARCH INSTITUTE
 MENLO PARK, CALIFORNIA
@@ -20,9 +19,6 @@ Dr. H.E. Puthoff
 Mr. Russell Targ
 Senior Research Physicist
 Electronics and Bioengineering Laboratory
-
-
-[Page 2]
 
 I    FIELD MEASUREMENTS PROGRAM, TASKS 1, 2, AND 3
 
@@ -52,9 +48,6 @@ initiated to carry out further experimentation with Mr. Swann in the
 field measurements area, and, later, Task 3 was added to carry out
 similar experimentation with Mr. Geller.
 
-
-[Page 3]
-
     C.    Protocol
 
         A rigid protocol for experimentation in the area of psycho-
@@ -81,9 +74,6 @@ consider it important to design experiments which  a) can be carried
 out using double blind procedures and  b) can be evaluated by objective
 measures independent of experimenter belief structures.
 
-
-[Page 4]
-
 II   TASKS 1 AND 2; EXPERIMENTATION WITH INGO SWANN
 
     The magnetometer observation of July 1972 indicated at least two
@@ -104,9 +94,6 @@ three identical containers, the task of Swann being to enter the
 experimental area after placement and indicate the target container.
 [...experimental details and results, 50 trials yielding 26 hits at p=0.005...]
 
-
-[Page 5]
-
 [...continuation of Section A results with statistical analysis...]
 
     B.    Remote Temperature Control Experiment
@@ -119,9 +106,6 @@ chosen was a copper-constantin 30 μV/°F thermocouple sealed in a
 at the thermocouple junction, Hewlett-Packard Model 425A DC microvoltmeter
 and strip chart recorder...]
 
-
-[Page 6]
-
     [...continuation of Section B results. The data, shown in Figure 3,
 were obtained in the following procedure. After a 20-minute control
 period in which the temperature was stabilized, a predetermined random
@@ -131,9 +115,6 @@ nine of the ten commands resulted in changes in agreement with the
 commands. Control runs with other laboratory personnel under identical
 conditions yielded null results. Therefore it can be concluded that
 the control of temperature variations in a remote object is indicated.]
-
-
-[Page 7]
 
     C.    4-State Random Generator Experiment
 
@@ -145,15 +126,9 @@ button.
 [...experimental design details, the apparatus, the PASS button,
 double-blind nature of the experiment...]
 
-
-[Page 8]
-
     [...continuation of Section C results: 7 runs of 20+ trials each,
 total scoring at p=0.35 level (not significantly different from chance
 overall), but learning trend across runs at 0.7/run learning rate.]
-
-
-[Page 9]
 
     D.    Additional Areas Indicating Further Investigation
 
@@ -164,14 +139,8 @@ articulate about subjective impressions, visualizations, etc., which
 leads to the possibility of building up a coherent picture over a long
 period of experimentation which can then be tested objectively.
 
-
-[Page 10]
-
 [Section D continues with examples — helium gas as yellow, scanning beams,
 quartz prism rainbow, etc.]
-
-
-[Page 11]
 
 III  TASK 3; EXPERIMENTATION WITH URI GELLER
 
@@ -203,9 +172,6 @@ in a million. The experiment was actually performed ten times, but on
 two occasions the subject said his perception was not clear and he
 was allowed to pass.
 
-
-[Page 12]
-
     B.    Probability 1/10 Hidden Object Experiment
 
         For this experiment ten identical aluminum film cans with
@@ -232,9 +198,6 @@ cards. The field of possibilities of target materials was at no
 time revealed to Mr. Geller. The pictures were put into double-sealed
 envelopes by an outside assistant not associated with the experiment
 
-
-[Page 13]
-
 and placed in a safe for which the experimenters did not have the
 combination. To conduct the experiment, the experimenters, two of
 which had to be present, were permitted to select an envelope at
@@ -259,9 +222,6 @@ magnetometer. Both of these experiments were performed several
 times with results improving with repetition, showing apparent
 evidence of learning taking place.
 
-
-[Page 14]
-
     D.    Laboratory Balance
 
         A precision laboratory balance measuring weights from one
@@ -279,9 +239,6 @@ Day-long control runs with no effort on Geller's part failed to reveal
 noise or artifacts resembling the signals produced by Geller's efforts.
 Therefore, the experiment indicated an apparent ability of Geller to
 affect the apparatus by an as yet unidentified means.]
-
-
-[Page 15]
 
     E.    Magnetometer Experiment
 
@@ -312,9 +269,6 @@ experimental situation to have physical contact with any metal he
 bent. In a more relaxed protocol where he was permitted to touch
 the metal, metals were bent. This included SRI-manufactured and
 
-
-[Page 16]
-
 serialized rings of brass and copper which were measured to require 150
 lbs. force to bend them. However, it was not clear whether such
 bending took place because Mr. Geller has extraordinarily strong
@@ -330,7 +284,6 @@ die-in-the-box experiment) and the two psychokinetic experiments
 (depression or raising of a weight on an electrical scale and the
 magnetometer indication) do not admit of any ready counterhypothesis
 to the concept of extraordinary human functioning.
-
 
 IV   SUMMARY AND CONCLUSIONS
 
@@ -352,20 +305,18 @@ to obtain sufficient data to permit the emergence of patterns of
 cause-effect relationships and the elucidation of the mechanisms and
 agencies involved.
 
+[figures]
 
-[Pages 17-22 — figures]
+[Figure 1: cumulative hits curve, Swann probability 1/3 experiment, 50 trials, Σ=26 (p=0.005)]
 
-[Page 17 — Figure 1: cumulative hits curve, Swann probability 1/3 experiment, 50 trials, Σ=26 (p=0.005)]
+[Figure 2: hits/run plot, Swann probability 1/3 experiment, 5 runs of 10 trials each, learning rate 0.5]
 
-[Page 18 — Figure 2: hits/run plot, Swann probability 1/3 experiment, 5 runs of 10 trials each, learning rate 0.5]
+[Figure 3: Swann remote temperature control chart recording, R and H markers showing rest/heat commands across time]
 
-[Page 19 — Figure 3: Swann remote temperature control chart recording, R and H markers showing rest/heat commands across time]
+[Figure 4: hits/run plot, Swann 4-state random generator experiment, 7 runs, 190 trials, learning rate 0.7]
 
-[Page 20 — Figure 4: hits/run plot, Swann 4-state random generator experiment, 7 runs, 190 trials, learning rate 0.7]
+[Figure 5: Geller picture-drawing experiment results, dated 12/7/72, showing target/response pairs (plane, smiley face, car, etc.) with "URI" signature and timestamps 1:40, 1:45, 1:50]
 
-[Page 21 — Figure 5: Geller picture-drawing experiment results, dated 12/7/72, showing target/response pairs (plane, smiley face, car, etc.) with "URI" signature and timestamps 1:40, 1:45, 1:50]
-
-[Pages 22-29 — additional figures showing Geller experimental drawings + apparatus diagrams]
-
+[additional figures showing Geller experimental drawings + apparatus diagrams]
 
 Approved For Release 2000/08/10 : CIA-RDP96-00787R000100180001-3

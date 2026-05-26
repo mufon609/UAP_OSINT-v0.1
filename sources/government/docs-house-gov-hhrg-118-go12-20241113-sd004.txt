@@ -50,10 +50,6 @@ LLM and authoring the verbatim text from what is legibly displayed.
 Bracketed annotations [in square brackets] document where DOPSR /
 disclaimer text overlays partially occlude the underlying Q&A text.
 
-================================================================
-PAGE 1 — CONTEMPORARY Q&A CONTENT (DOPSR-CLEARED 2023-09-06)
-================================================================
-
 [Top-right corner stamp:]
 CLEARED
 For Open Publication

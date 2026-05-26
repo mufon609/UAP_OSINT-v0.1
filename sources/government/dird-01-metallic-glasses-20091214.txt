@@ -16,8 +16,6 @@ Metallic Glasses: Status and Prospects for Aerospace Applications
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
 
@@ -29,8 +27,6 @@ responsible for the declassification of hundreds of thousands of pages
 released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -55,8 +51,6 @@ This product is one in a series of advanced technology reports produced in FY 20
 ii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -109,8 +103,6 @@ iii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Current Challenges and Prospects for the Future .... 20
@@ -144,8 +136,6 @@ iv
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Metallic Glasses: Status and Prospects for Aerospace Applications
@@ -168,8 +158,6 @@ v
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
     -   The effect of alloy composition and structure on plastic deformation.
@@ -183,8 +171,6 @@ It is highly likely that continued work over the next 20-50 years will result in
 vi
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -204,8 +190,6 @@ From an applications point of view, the amorphous structure of metallic glasses 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 glasses in the true sense of the word, rather than melting abruptly (as crystalline metals do), they soften and flow over a range of temperatures in a manner akin to common (oxide) glasses. This creates opportunities for tremendous flexibility in the processing of metallic glasses.
@@ -223,8 +207,6 @@ For some materials, such as silica (silicon dioxide) and most thermoplastic poly
 2
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -251,8 +233,6 @@ Moving from the laboratory to industrial practice, it is important to note that 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Casting and Molding
@@ -270,8 +250,6 @@ There are two important limitations on processing of metallic glasses in the sup
 4
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -297,8 +275,6 @@ When a material is subjected to a stress, it can experience both elastic and pla
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 of conventional alloys. In this section, we review the mechanical behavior of metallic glasses, with particular attention to properties of interest for aerospace applications. We consider actual properties in detail in the section below on applications, where we compare the properties of metallic glasses with those of other advanced structural materials.
@@ -314,8 +290,6 @@ The theoretical strength of perfect, defect-free crystalline metals is several o
 6
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -335,8 +309,6 @@ Unfortunately, the lack of dislocations in amorphous alloys is also their Achill
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 4. Shear Bands. Produced by bending of a zirconium-based metallic glass.^14 — image scale bar: 200 µm.]
@@ -352,8 +324,6 @@ However, some metallic glasses appear to be intrinsically brittle in that they f
 8
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -371,8 +341,6 @@ The poor fatigue resistance of metallic glasses is a critical limitation for str
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 5. Fatigue Limit of Metallic Glasses and Metallic-Glass-Matrix Composites. Fatigue life data for single-phase zirconium-based metallic glass (red) and a dendritic metallic glass matrix composite (blue). Representative data for steel (300-M) of similar tensile strength are shown for comparison.^17 ^18 ^19 — Plot axes: Stress amplitude/Ultimate tensile strength (vertical) versus Number of cycles to failure (horizontal, 10^3 to 10^8). Curves labeled Dendritic composite, High-strength steel, and Single-phase metallic glass.]
@@ -389,8 +357,6 @@ It is frequently stated that metallic glasses have excellent corrosion resistanc
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 The subject of stress-corrosion cracking of metallic glasses, despite its obvious importance for structural applications, has received scant attention in the literature. What little work that has been done has focused on zirconium-based glasses, with the observation that these alloys are very susceptible to stress-corrosion cracking in aqueous environments containing chloride ions, likely owing to the fact that they do not form protective oxide surface layers.^22
@@ -404,8 +370,6 @@ The discussion above relates to mechanical behavior at temperatures well below t
 11
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -423,8 +387,6 @@ A common misperception among those hearing about metallic glasses for the first 
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 7. Cast Metallic Glass Wedge. Wedge of a zirconium-based bulk metallic glass produced by casting. Note the shiny metallic luster, typical of metallic glasses.^27 — image shows a metallic wedge alongside a ruler scale marked 0, 1, 2, 3, 4, 5.]
@@ -440,8 +402,6 @@ Broadly speaking, there are two kinds of metallic glass matrix composites: ex si
 13
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -465,8 +425,6 @@ One of the most promising recent advances in the metallic glass field is the dev
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 8. Microstructure of In Situ Metallic Glass Matrix Composite. With ductile crystalline dendrites. (a) Scanning electron micrograph showing the dendrites (light gray) in the glassy matrix (dark gray). (b) Composite after plastic deformation; note the multiplicity of slip steps, indicating extensive interaction of shear bands with the dendrites.^33 — image (a) scale bar: 50 µm; image (b) scale bar: 10 µm.]
@@ -486,8 +444,6 @@ where K_Ic is the plane-strain fracture toughness (mentioned above) and σ_y is 
 15
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -519,8 +475,6 @@ The key properties of materials for structural applications in aerospace are:
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 •   Fatigue resistance (including resistance to both fatigue crack initiation and fatigue crack growth).
@@ -539,8 +493,6 @@ These considerations suggest the dendritic metallic glass matrix composites migh
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 9. Materials Property Charts. (a) Strength and stiffness (both normalized to density) of metallic glasses (yellow) and dendritic metallic glass matrix composites (red) compared with other materials. (b) Damage tolerance. On this plot, the dashed lines represent contours of equal fracture energy. In both plots, polymer composites (CFRP and GFRP) are represented by isotropic averages; continuous fiber composites can have greater strength and stiffness in a direction parallel to the fibers.^39 — Plot (a) axes: Specific strength, σ_y /ρ (MPa m^3 kg^-1) (vertical) versus Specific stiffness, E/ρ (MPa m^3 kg^-1) (horizontal); labeled regions include Metallic glasses, Dendritic composites, Polymers, Polymer foams, Biologicals, Metals (crystalline), Wood (along grain), Nylon, PEEK, Titanium, Aluminum, Silicon carbide, Alumina, Zr, Cu, Fe, Ti. Plot (b) axes: Fracture toughness, K_Ic (MPa √m) (vertical) versus Stiffness, E (GPa) (horizontal); labeled regions include Dendritic composites, Metallic glasses, Metals, Polymers, Biologicals, Low alloy steels, Nickel-based superalloys, Titanium, Zr-based, Ti based, Zr,Ti,Cu,Ni,Be..., Zirconia, Silicon nitride, Silicon carbide, Hardwood (along grains), PET, CFRP (eq), Ce, Al, Ni, Cu, Mg, Cu, Tb, Fe, Mn, Mo, Cr, C, B; contour lines labeled G = 1000 kJ m^-2 and G = 10 kJ m^-2.]
@@ -548,8 +500,6 @@ UNCLASSIFIED//FOR OFFICIAL USE ONLY
 18
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -568,8 +518,6 @@ Finally, the magnetic properties of certain amorphous alloys have long been expl
 19
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -592,8 +540,6 @@ Most of the practical interest in single-phase (monolithic) metallic glasses cen
 20
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -618,8 +564,6 @@ Unfortunately, our understanding of thermodynamics and phase formation in comple
 21
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -648,8 +592,6 @@ For metallic glasses (and their composites) to be of broad utility in aerospace 
 22
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -698,8 +640,6 @@ It is highly likely that continued work over the next 20-50 years will result in
 23
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 

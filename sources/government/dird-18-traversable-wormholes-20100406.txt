@@ -17,7 +17,6 @@ Stargates, and Negative
 Energy
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -31,7 +30,6 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Traversable Wormholes, Stargates, and Negative Energy
@@ -60,7 +58,7 @@ Manager, Defense Intelligence Agency, ATTN (b)(3):10 USC 424 Bldg 6000, Washingt
 DC 20340-5160.
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Contents
@@ -115,7 +113,7 @@ of Curvature, ρ1 and ρ2 ... 6
 iil
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 6. A Spherically Symmetric Traversable Wormhole Observed in Space........ 7
@@ -132,7 +130,7 @@ Table 2. Negative Equivalent Mass Required for Traversable Wormhole ... 22
 iv
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Traversable Wormholes, Stargates, and Negative Energy
@@ -186,7 +184,7 @@ hole’s event horizon, you can never come back out because you will have to
 attain FTL speed to escape it. Not even light can escape from an event horizon.
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Wormhole
@@ -219,7 +217,7 @@ one time or another in our recent history or remain as theoretical proposals,
 vi
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 but all are based on Newtonian mechanics. The limiting speed of space flight,
@@ -276,7 +274,7 @@ so they could return from their voyage in time to wave goodbye to themselves
 vil
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 as they see themselves depart on their journey. This is no longer recognized in
@@ -311,7 +309,7 @@ assessment on the present state of their resolution is provided.
 vill
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 II. A Brief Review of Transversable Wormholes and the
@@ -369,7 +367,7 @@ Space coordinates and xo = time coordinate.
 
 1
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 e There is no singularity of infinitely collapsed matter residing at the wormhole throat.
@@ -416,7 +414,7 @@ defined by ds* = g,,,dx"dx", where g,,. is the metric tensor which is a 4x4 matr
 spacetime and dx* is the infinitesimal coordinate separation between twa points.
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 2 shows two diagrams
@@ -472,7 +470,7 @@ ye = 2(1 - g). Therefore, the (static) wormhole Gauss-Bonnet relation is given b
 ye/4 or U < (1 - g)/2 (Reference 5). (The case for dynamic traversable wormholes has
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 results that are similar to the static case.) This relation will help to decide if a
@@ -515,7 +513,7 @@ two-dimensional space-like hypersurface, at which the two original Minkowski spa
 are identified (see Figures 3 and 4).
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 3: Diagram of a Simultaneous View of Two Remote Compact Regions, Ω1 and Ω2, of Minkowski Space Used to Create the Wormhole Throat δΩ (time is suppressed in this diagram)] Diagram of a Simultaneous View of Two Remote Compact Regions, Q: and 92, of Minkowski
@@ -531,7 +529,7 @@ cast in terms of the surface stress-energy tensor S | of a thin shell of matter 
 energy) localized inside the wormhole throat GQ (Reference 8):
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Equation (2)]
@@ -556,7 +554,7 @@ Equation (2) is solved and the components of 5; are found to be (Reference 8):
 space coordinates and x = time coordinate.
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Equation (3b)]
@@ -609,7 +607,7 @@ within our own universe, incredibly shrunken and distorted (see Figure 6). This 
 
 7
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 example of the topological inversion manifested in wormhole geometry. The spherical
@@ -630,7 +628,7 @@ threading its throat is zero as seen and felt by light and matter passing throug
 [Figure 7: A Stargate (adapted from Reference 9)]
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 8: A Stargate in Times Square]
@@ -661,7 +659,7 @@ quantities.
 
 9
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 one can call this material property “exotic.” The condition for ordinary, classical (non-
@@ -717,7 +715,7 @@ quantum fields (Reference 1, 20).
 
 10
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 « Gravitationally squeezed vacuum electromagnetic zero-point fluctuations (Reference
@@ -773,7 +771,7 @@ safely through the laser system. Made more tractable in this way, the pulse can 
 
 11
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 amplified to substantial energies (with orders of magnitude greater peak power)
@@ -827,7 +825,7 @@ than would be expected on the basis of the equipartition theorem. One can in pri
 
 12
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 exploit quantum squeezing to extract energy from one place in the ordinary vacuum at
@@ -883,7 +881,7 @@ ultra-fast rotating mirror system (Reference 47). In this scheme a laser beam is
 
 13
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 through an optical cavity resonator made of a lithium niobate (LiNbOs) crystal that is
@@ -928,7 +926,7 @@ illustration of this is shown in Figure 10.
 
 14
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 10: Sodium Chamber Negative Energy Separator (Reference 41)]
@@ -952,7 +950,7 @@ extended to our application.
 
 15
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Finally, Ries et al. (Reference 50) experimentally demonstrated the very first simple,
@@ -1005,7 +1003,7 @@ massive bady becomes a black hole, j.e., at which light is unable to escape from
 
 16
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 gravitational field is squeezing the vacuum). The corresponding local vacuum state
@@ -1045,7 +1043,7 @@ energy density (for r>> rs) (Reference 15):
 
 17
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Table 1. Substantial Gravitational Squeezing Occurs for Vacuum ZPF When A >
@@ -1108,7 +1106,7 @@ fluctuations
 Figure 12. Schematic of the Casimir Effect
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 It turns out that there are many different types of Casimir effects found in quantum
@@ -1165,7 +1163,7 @@ Space or fibre bundle) of the field in question whereby the topology not only of
 
 19
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 manifold, but of the fibre bundle itself has an effect on 7". In addition to this, there
@@ -1221,7 +1219,7 @@ plates, the plates will have equal electric charges placed upon them to establis
 
 20
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 adequate Coulomb repulsion.? Equation (8) shows that a 1 km radius throat will require
@@ -1271,7 +1269,7 @@ would be considered separately.
 
 21
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Equation (9)]
@@ -1327,7 +1325,7 @@ observed. This conjecture was devised as an attempt to quantify the amount of
 
 22
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 negative energy or energy condition violations required to build a traversable wormhole
@@ -1384,7 +1382,7 @@ upper limit) such that within a wormhole spacetime (Reference 59}:
 
 23
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 where p, is the outward radial pressure required to hold a wormhole throat open. The
@@ -1440,7 +1438,7 @@ or uncharged) wormhele.
 
 24
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 the allowable spatial distributions of negative energy. And there were found to be
@@ -1497,7 +1495,7 @@ negative energy density (or negative energy flux). The detector model includes a
 
 25
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 explicit switching factor whereby five different switching functions (based on data
@@ -1553,7 +1551,7 @@ nonlinear optical medium endowed with paramagnetic, dichroic, birefringent, cond
 
 26
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 matter, and many other fascinating properties (Reference 22-24, 26, 73-76).
@@ -1610,7 +1608,7 @@ point energy of a vacuum field mode as an input state. More recent developments
 
 27
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 28
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
@@ -1668,7 +1666,7 @@ trapping and storing negative energy will need to be supported, and such a progr
 should be guided by the use of laboratory detectors such as the one proposed in the
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 previous section. However, it is the opinion of the author that free-space negative
@@ -1724,7 +1722,7 @@ Scientific American, Vol. 13, 2003, pp. 84-91.
 
 29
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [11] Hawking, S. W., and Ellis, G. F. R., The Large-Scale Structure of Space-Time,
@@ -1781,7 +1779,7 @@ Press, Oxford, 1991.
 
 30
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [27] Milonni, P. W., The Quantum Vacuum: An Introduction to Quantum
@@ -1838,7 +1836,7 @@ pp. 927-929.
 
 31
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [44] Saleh, B. E. A., and Teich, M. C., Fundamentals of Photonics, Wiley Series in Pure
@@ -1897,7 +1895,7 @@ energy condition violations,” Physical Review Letters, Vol. 90, 2003, 201102.
 
 32
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [60] Visser, M., “Energy Conditions in the Epoch of Galaxy Formation,” Science, Vol.
@@ -1955,7 +1953,7 @@ Basic Books, New York, 2008.
 
 33
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [76] Zavattini, E., et al., “Experimental Observation of Optical Rotation Generated in

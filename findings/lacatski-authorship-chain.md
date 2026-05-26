@@ -7,13 +7,13 @@ type: finding
 
 ## Pattern Statement
 
-Three-source attestation chain (SD004 page-1 statement with DOPSR clearance stamp + Elizondo December 2024 QFR Q1 naming Lacatski as the author + entry into the 2024-11-13 House Oversight hearing record) establishing James Lacatski as the author of the DOPSR-cleared (2023-09-06) statement that named Lockheed Martin Space Systems Vice President James Ryder.
+Three-source attestation chain (SD004 page-1 statement with DOPSR clearance stamp + Elizondo December 2024 QFR Q1 naming Lacatski as the author + entry into the 2024-11-13 House Oversight hearing record) establishing James Lacatski as the author of the statement cleared by DOPSR (2023-09-06) that named Lockheed Martin Space Systems Vice President James Ryder.
 
 ---
 
 ## Description
 
-SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, published at the House Oversight UAP hearing, identified Lockheed Martin Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) (now deceased) as having proposed a UAP material divestment plan to "SCIF-out Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) Facilities" — submitted to AAWSAP ([`/organizations/aawsap`]) leadership; as published the page does not name its author, but carries a "CLEARED For Open Publication Sep 06, 2023" DOPSR ([`/organizations/dopsr`]) clearance stamp. Luis Elizondo's ([`/people/luis-elizondo`]) December 19, 2024 Question for the Record response to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) confirmed that a DOPSR document "dated September 6, 2023" "authorized the release of a statement by Dr. James Lacatski ([`/people/james-lacatski`]), the former Director of the Advanced Aerospace Weapon System Application Program", and included the Lacatski statement in the Q1 response as Attachment 2. The chain confirms Lacatski as the author of the DOPSR-cleared SD004 page-1 statement that identified Dr. James Ryder at Lockheed Martin ([`/organizations/lockheed-martin`]).
+SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, published at the House Oversight UAP hearing, identified Lockheed Martin Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) (now deceased) as having proposed a UAP material divestment plan to "SCIF-out Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) Facilities" — submitted to AAWSAP ([`/organizations/aawsap`]) leadership; as published the page does not name its author, but carries a "CLEARED For Open Publication Sep 06, 2023" DOPSR ([`/organizations/dopsr`]) clearance stamp. Luis Elizondo's ([`/people/luis-elizondo`]) December 19, 2024 Question for the Record response to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) confirmed that a DOPSR document "dated September 6, 2023" "authorized the release of a statement by Dr. James Lacatski ([`/people/james-lacatski`]), the former Director of the Advanced Aerospace Weapon System Application Program", and included the Lacatski statement in the Q1 response as Attachment 2. The chain confirms Lacatski as the author of the SD004 page-1 statement cleared by DOPSR that identified Dr. James Ryder at Lockheed Martin ([`/organizations/lockheed-martin`]).
 
 ---
 
@@ -47,7 +47,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 ---
 
-### Elizondo QFR Q1 names James Lacatski as the author of the SD004 page-1 DOPSR-cleared statement and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" — the authorship-identification step that closes the chain
+### Elizondo QFR Q1 names James Lacatski as the author of the SD004 page-1 statement cleared by DOPSR and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" — the authorship-identification step that closes the chain
 
 > Confirmation of this may be inferred from an official DoD Office of Prepublication and Security Review ("DOPSR") document, dated September 6, 2023. This document authorized the release of a statement by Dr. James Lacatski, the former Director of the Advanced Aerospace Weapon System Application Program ("AAWSAP").
 
@@ -100,7 +100,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 |---|---|---|---|
 | 2023-09-06 | DOPSR clears the SD004 page-1 Q&A statement for open publication. The clearance stamp reads "CLEARED For Open Publication Sep 06, 2023 Department of Defense OFFICE OF PREPUBLICATION AND SECURITY REVIEW". | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |  |
 | 2024-11-13 | SD004 enters the public record as a supplemental document at the House Oversight + Cybersecurity/IT subcommittee UAP hearing "Unidentified Anomalous Phenomena: Exposing the Truth". The document is hosted at docs.house.gov as hhrg-118-go12-20241113-sd004.pdf. | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |  |
-| 2024-12-19 | Luis Elizondo signs his Question for the Record response to Rep. Eric Burlison's December 9, 2024 letter. Q1 names Dr. James Lacatski, the former Director of AAWSAP, as the author of the SD004 page-1 DOPSR-cleared statement, citing the September 6, 2023 DOPSR clearance date and reproducing the verbatim Lacatski text as Attachment 2. | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
+| 2024-12-19 | Luis Elizondo signs his Question for the Record response to Rep. Eric Burlison's December 9, 2024 letter. Q1 names Dr. James Lacatski, the former Director of AAWSAP, as the author of the SD004 page-1 statement cleared by DOPSR, citing the September 6, 2023 DOPSR clearance date and reproducing the verbatim Lacatski text as Attachment 2. | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
 
 ---
 

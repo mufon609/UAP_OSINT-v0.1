@@ -19,7 +19,6 @@ Materials for Advanced
 Aerospace Platforms
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -33,7 +32,6 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Materials for Advanced Aerospace Platforms
@@ -56,7 +54,7 @@ This product is one in a series of advanced technology reports produced in FY 20
 
 ii
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Contents
@@ -94,7 +92,7 @@ Tables
 
 iii
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Materials for Advanced Aerospace Platforms
@@ -107,7 +105,7 @@ Since the inception of manned space flight, the approach to design has changed t
 
 iv
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 this demonstrated inspections capability. Implementation of these standards, starting with the B-1 bomber and the F-100 and F-110 engines, has dramatically reduced (but not eliminated) the incidence of catastrophic failures of critical components that endanger crews, vehicles, or both.
@@ -116,7 +114,7 @@ Taking these changes into account, this document outlines the current situation 
 
 v
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Materials for Advanced Aerospace Platforms
@@ -129,7 +127,7 @@ Perhaps the most important aspect of the improved Al alloys is their higher frac
 
 1
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 The newer Al alloys also can be specially processed to render them superplastically formable. This capability opens a realm of possibilities in the absence of this capability, are machined from thick plate. Very large structures are produced in sections that must be joined. Conventional fusion welding techniques do not work for high-strength Al alloys such as 7075, 7050, 2024, or 2050 because either the welds lead to cracks or the welds made under conditions that avoid cracking have greatly reduced tensile properties. Because these alloys are not amenable to welding, heavier, fatigue-prone mechanically fastened joints must be used. Recently, scientists developed a joining process that permits joining of Al alloys such as 7050. This process, called friction stir welding (FSW), allows joint designs in a variety of configurations that were not considered possible when fusion welding was the only alternative.
@@ -144,7 +142,7 @@ The combined action of the rotation and the traversing of the tool essentially k
 
 2
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 construction to be considered too risky. Today, the combination of higher toughness alloys and FSW opens up the possibility of greater design flexibility resulting in lighter large structures with equal or greater reliability than earlier ones.
@@ -159,7 +157,7 @@ Composite structures can be manufactured using one of three methods: hand layup 
 
 3
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 material is not suitable for the reasons stated earlier. Clearly, the time required for layup places practical limitations on component size.
@@ -174,7 +172,7 @@ Figure 2. Specially Modified 747 Transporter Unloading a Boeing 787 Composite Fu
 
 4
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 leaving voids. This limitation makes it difficult to use many thermoplastic resins that are otherwise attractive because they are recyclable and have much longer shelf lives than thermosets (epoxies). Another, more obvious limitation of RTM is component size. This is in part because weaving of very large fiber preforms is challenging and requires a very large weaving machine. It also requires a large injection machine capable of multiple injection sites to ensure the complete infiltration necessary to avoid formation of voids.
@@ -185,7 +183,7 @@ For other applications, which are limited by different material properties, the 
 
 5
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements.
@@ -196,7 +194,7 @@ The maximum temperature at which PMCs can be used is limited by PMCs' susceptibi
 
 6
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 in materials with small annual sales volume, so even licensing the new material to one of these companies may not be commercially feasible.
@@ -209,7 +207,7 @@ The most commonly used structural grade of Ti alloy today, Ti-6-4, can be readil
 
 7
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 β-Ti alloys would be an attractive option for a launch vehicle with a very heavy payload. These alloys can be processed and heat-treated to ultimate tensile strengths greater than 1,300 mega-Pascals (MPa), making them very efficient structural alloys. However, at these strength levels, the fracture toughness is decreased to about 40 MPa-m^0.5, making damage tolerance marginal. For example, using a design stress that is two-thirds that of ultimate tensile strength, the critical crack size for an alloy with these properties is about 4 millimeters. Such a small critical crack size poses a challenge to any required field inspections associated with reusability requirements. β-Ti alloys' stiffness also is as much as 10 percent lower than that of α+β alloys. Ten percent lower stiffness generally is not an issue in a tension-loaded structure, but it can be an issue for a compression-loaded structure because of the potential for buckling. Designs with a higher section modulus can eliminate this concern, but the additional shape complexity will almost certainly add cost. In extreme circumstances, Ti alloys can be reinforced with ceramic fibers (typically silicon carbide) to increase their intrinsic stiffness, as will be discussed later.
@@ -220,7 +218,7 @@ In summary, although the choices of materials for launch vehicles are in princip
 
 8
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 REUSABLE CREW MODULES
@@ -231,7 +229,7 @@ The design efficiency of an integrated TPS and load-bearing structure is extreme
 
 9
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 considered in light of the thermal stresses that were certain to develop in a large structure placed in the fluidized bed.
@@ -252,7 +250,7 @@ AMCs = Al matrix composites; TMCs = titanium matrix composites; CMCs = ceramic m
 
 10
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Table 1 shows there are essentially 10 distinct classes of candidate materials for use in a reusable SSO vehicle. Their usefulness for specific applications and components depends on the operating temperature regime and the design-limiting material property. Some background and characteristics of each of these materials are described in this section. Applications of some of these materials have already been addressed, so the discussion here is limited to applications for a reusable SSO vehicle.
@@ -267,7 +265,7 @@ As described in the Launch Vehicle section, polymer matrix composites have excel
 
 11
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 ensure that any outgassing that occurs in space would not liberate any of this toxic material—at least not where it could be ingested by the crew.
@@ -286,7 +284,7 @@ Ti alloys also have been discussed earlier, but mainly in the context of heavy-s
 
 12
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 [Figure 3: Micrograph Showing α Phase Formation at the Surface of a Ti Alloy That has Been Exposed to Air at Elevated Temperature — SEM micrograph; data bar reads "HV Spot Det WD Mag" / "15.0 kV 4.0 SSD 6.7 mm 700x" with a "200.0µm" scale marker]
@@ -307,7 +305,7 @@ The α case is harder than the matrix because oxygen is a potent α-phase solid-
 
 13
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 • Once α case is present, can the structure be repaired (for example, by fusion or friction stir welding)?
@@ -334,7 +332,7 @@ Fiber Volume fraction | 0.39]
 
 14
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Figure 4 shows an example of a Ti matrix composite (TMC) cross section.
@@ -353,7 +351,7 @@ Table 2 shows that the strength and stiffness properties of TMCs can exceed thos
 
 15
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 • A couple of costly and highly visible TMC component test failures using TSM materials called into question the viability of TMCs. In truth, the real issue was one of quality and not the fundamental viability of the TMC material concept.
@@ -380,7 +378,7 @@ Ni-base alloys have been considered real engineering materials for at least 40 y
 
 16
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 inception. In fact, Ni-base alloys are a prime enabler of the modern gas turbine engine. As a result, this class of materials has a well-established industrial base for the production of literally all product forms. There is a second class of Ni-base alloys that has excellent resistance to attack in aggressive environments, such as those encountered in petroleum recovery, but these alloys are not of interest for high-temperature applications. To avoid any confusion, the term Ni-base alloys is used in this document to mean high-temperature Ni-base alloys.
@@ -391,7 +389,7 @@ Production of Ni-base alloys has evolved over several decades. Both ingot metall
 
 17
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 alloys' superior thermal fatigue resistance gives them great potential for use in TPS; thus, it would be appropriate to revisit this class of alloy after addressing its past problems.
@@ -410,7 +408,7 @@ Ceramic matrix composites (CMCs) are attractive because they are much tougher th
 
 18
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 will eventually fracture at their weakest points, which, statistically, is often somewhere in the matrix rather than at the mouth of the crack. These fractured fibers then must be pulled out of the matrix during crack extension under continued loading, an action that dissipates additional energy. Therefore, the total energy expended during fracture of a CMC is much greater than it would be in the case of a monolithic specimen of the ceramic matrix. The crack bridging and pullout mechanisms of toughening, with the attendant increase in energy dissipation during fracture, are the conceptual foundation for CMCs. In SiC fiber-reinforced SiC matrix (called SiC-SiC) CMCs, the toughness can be as high as 10 times that of the unreinforced matrix. Clearly, the nature of the fiber-matrix interface determines the resistance to fiber pullout after fracture and controls the toughness. In high-temperature CMCs, the fibers are coated to achieve an intermediate fiber-matrix interfacial bond strength that optimizes pullout toughening. If the interface is too weak, the fibers pull out too easily. If it is too strong, the fibers break without any pullout. Neither of these situations maximizes the toughness. Therefore, the challenge in creating a tough CMC is not only creating this interface but also finding a coating that will remain stable over time during exposure to elevated temperatures. As service temperature increases, this latter requirement becomes more challenging. For extended service, SiC-SiC CMCs currently are limited to about 1,400 °Celsius, but this is higher than the capability of metallic materials.
@@ -425,7 +423,7 @@ Carbon-carbon composites (C-CCs) consist of carbon fibers in a typically amorpho
 
 19
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Therefore, instabilities that cause time-dependent reductions in toughness must be understood before these materials can be considered candidates for future TPS applications.
@@ -442,7 +440,7 @@ A potentially ideal, high-volume application of γ-TiAl alloys is exhaust valves
 
 20
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 PROPULSION SYSTEMS
@@ -457,7 +455,7 @@ Traditionally, the cryopump rotating parts have been made from forgings of the n
 
 21
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
------ PAGE BREAK -----
+
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 design of a cryopump potentially can benefit from these new materials and from abandoning the use of notched strength as a design paradigm.

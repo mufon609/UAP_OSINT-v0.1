@@ -11,18 +11,10 @@ Document
 ICOD: 1 December 2009
 DIA-08-1003-001
 
-
-
-
 Invisibility Cloaking: Theory
 and Experiments
 
-
-
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 This document is made available through the declassification efforts
 and research of John Greenewald, Jr., creator of:
@@ -36,14 +28,9 @@ released by the U.S. Government & Military.
 
 Discover the Truth at: http://www.theblackvault.com
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Invisibility Cloaking: Theory and Experiments
-
-
-
 
 Prepared by:
 [(b)(3):10 USC 424]
@@ -53,15 +40,9 @@ Defense Intelligence Agency
 Author:
 [(b)(6)]
 
-
-
-
 Administrative Note
 
 COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
-
-
-
 
 This product is one in a series of advanced technology reports produced in FY 2009
 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace
@@ -72,8 +53,6 @@ DC 20340-5100.
 
 ii
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -93,7 +72,6 @@ Optical Cloaking ...............................................................
 Summary ..................................................................................................... 23
 References ................................................................................................... 23
 
-
 Figures
 
 Figure 1. B2 Stealth Bomber ........................................................................ 1
@@ -110,8 +88,6 @@ Figure 11. Cloaking Device for Microwaves ......................................
 
 iii
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -134,8 +110,6 @@ Figure 23. Implementation of the Ground-Plate Cloak ............................
 iv
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Invisibility Cloaking: Theory and Experiments
@@ -149,8 +123,6 @@ and experimental developments and tries to project into the future.
 
 v
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -188,8 +160,6 @@ has assumed the color of the background: the stealth plane is camouflaged.
 1
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Another recent example of camouflage is
@@ -224,8 +194,6 @@ Figure 3. The Secret Optical Camouflage (Tachi Laboratory, Tokyo)
 
 2
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -283,8 +251,6 @@ with negative refraction, the wave fronts of light appear to move in the opposit
 3
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 direction from the propagation. The clearest and most advanced form of this concept is
@@ -319,8 +285,6 @@ the cloaking sphere are invisible.
 4
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Cloaking
@@ -348,8 +312,6 @@ curved spaces by themselves.
 
 5
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -382,8 +344,6 @@ curved geometry.
 6
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 [Figure 8: dark gradient field with a wavy ray path running from A at lower left to B at lower right]
@@ -403,8 +363,6 @@ space, as shown in Figure 9 below.
 
 7
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -429,8 +387,6 @@ hidden core of the device, engulfing it, as Figure 10 shows.⁸
 
 8
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -468,8 +424,6 @@ ring resonators.
 
 9
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -526,8 +480,6 @@ When the light wave hits the resonance of the gold particle, most of its energy 
 
 10
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -586,8 +538,6 @@ They act similarly to the gold particles embedded in ruby glass; their optical p
 11
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 depend on their lengths and on their arrangement, which, in principle, can be tailor-
@@ -611,8 +561,6 @@ visible range of the spectrum. Losses typically are a greater problem for negati
 
 12
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -638,8 +586,6 @@ at the core of their principal design.²⁵
 13
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 [Figure 15: panels showing optical-metamaterial negative-refraction experiment; one panel shows a fabricated fishnet structure (photographic); panel b shows a prism diagram labeled "n = 1", "Prism", "Quartz", with angle β; panel c shows an optical setup: "Laser beam" → "Lens 1" → "Sample" → "Lens 2" → "Camera" with focal length f marked, and image inset labeled "n = -1"]
@@ -649,8 +595,6 @@ Fishnets²⁶
 
 14
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -674,8 +618,6 @@ by implementing the coordinate transformation shown below in Figure 17.²⁹
 
 15
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -714,8 +656,6 @@ group, the wave packet, as Figure 18 below shows.
 
 16
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -762,8 +702,6 @@ sphere establishes a non-Euclidean geometry. To implement this geometry in the t
 17
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 dimensional plane, one can use the stereographic projection, the central ingredient of
@@ -800,8 +738,6 @@ Figure 19. Stereographic Projection
 18
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Broadband Invisibility
@@ -835,8 +771,6 @@ device yet, but one could place a mirror around the equator of the virtual spher
 
 19
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -880,8 +814,6 @@ transformation shown below (that already appeared in the first paper on cloaking
 20
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 coordinate transformations). This is not a cloaking device: it compresses an extended
@@ -903,8 +835,6 @@ Figure 23. Implementation of the Ground-Plate Cloak³⁸
 
 21
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
@@ -958,8 +888,6 @@ appears to be difficult, despite the progress made in liquid-crystal displays.
 22
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 
 Summary
@@ -974,9 +902,6 @@ are definitely within reach of the present technology. Whether invisibility in t
 range of the spectrum will become a reality is not entirely clear yet. Most probably, this
 will depend more on the new theoretical research than on advances in new materials,
 and on the application of mathematical intelligence, intuition, and imagination.
-
-
-
 
 ¹ A. Alu and N. Engheta, Achieving transparency with plasmonic and metamaterial coatings, Physical Review E 72,
 016623 (2005).
@@ -1026,8 +951,6 @@ Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
 
 23
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
 

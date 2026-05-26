@@ -16,8 +16,6 @@ Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Advanced Space Propulsion based on Vacuum (Spacetime Metric) Engineering
@@ -45,8 +43,6 @@ This product is one in a series of advanced technology reports produced in FY 20
 i
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -98,8 +94,6 @@ ii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
@@ -118,8 +112,6 @@ iii
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 components of potential utility involve very-small-wavelength, high-frequency field structures and thus resist facile engineering solutions. With regard to perturbation of the spacetime metric, the required energy densities predicted by present theory exceed by many orders of magnitude values achievable with existing engineering techniques. Nonetheless, one can examine the possibilities and implications under the expectation that as science and its attendant derivative technologies mature, felicitous means may yet be found that permit the exploitation of the enormous, as-yet-untapped potential of engineering so-called "empty space," the vacuum.
@@ -129,8 +121,6 @@ This paper introduces the underlying mathematical platform for investigating spa
 iv
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -164,8 +154,6 @@ As an example of spacetime alteration, in a spacetime altered by the presence of
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 with the metric tensor coefficients g_μν modifying the Minkowski flat-spacetime intervals dt, dr, and so forth, accordingly.
@@ -188,8 +176,6 @@ In undistorted spacetime, measurements with physical rods and clocks yield spati
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 TIME INTERVAL, FREQUENCY, ENERGY
@@ -203,8 +189,6 @@ Given that frequency measurements are the reciprocal of time duration measuremen
 3
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -234,8 +218,6 @@ Interior to a spacetime region altered by, say, a dense mass (for example, a bla
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 From a viewpoint exterior to the region, however, from the above one finds that the remotely observed coordinate ratio measurement yields a different value
@@ -260,8 +242,6 @@ As discussed below, a number of striking effects can be anticipated in certain e
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 Effective Mass in Spacetime-Altered Regions
@@ -284,8 +264,6 @@ With regard to the first table entry (time interval), in a spacetime-altered reg
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 therefore time intervals are seen as lengthening and processes as running slower,^2 one consequence of which is redshift of emission lines. Should such a time-slowed condition be engineered in an advanced aerospace application, an individual who has spent time within such a temporally modified field would, when returned to the normal environment, find that more time had passed than could be experientially accounted for.
@@ -306,8 +284,6 @@ With regard to the third entry in Table 1 (energy), in a spacetime-altered regio
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 craft's material properties would appear "hardened" relative to the environment owing to the increased binding energies of atoms in its material structure. Such a craft could, for example, impact water at high velocities without apparent deleterious effects.
@@ -326,8 +302,6 @@ Given that velocities in general in different coordinate systems scale as does t
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 REFRACTIVE INDEX EFFECTS
@@ -344,8 +318,6 @@ As noted in the preceding sections, spacetime alteration of energy and light-spe
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
------ PAGE BREAK -----
-
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 GRAVITY/ANTIGRAVITY/PROPULSION EFFECTS
@@ -357,8 +329,6 @@ The entire discussion of the possibility of generating a spacetime structure lik
 10
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
@@ -379,8 +349,6 @@ Of particular interest with regard to innovative forms of advanced aerospace cra
 11
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-
------ PAGE BREAK -----
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
