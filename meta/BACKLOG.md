@@ -299,86 +299,95 @@ convention and record the rationale.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C3 — Make the non-DIRD `p. N` refs verifiable (silent-skip remediation)
+### C3 — Uniform clean siblings: never manufacture page structure (strip-all)
 
-`quote_location_page` only verifies `p. N` when the source extract is
-page-structured (canonical `----- PAGE BREAK -----` → `\f`, or pdftotext form
-feeds). A repo-wide audit found the non-DIRD paginated sources cite `p. N`
-against extracts that aren't page-structured, so those refs are **silently
-skipped** — text still verbatim-verified, page unchecked.
+**Decided principle (with the maintainer).** *Never manufacture page structure
+in a sibling.* A `.txt` sibling is a clean, full-text-searchable transcription —
+nothing more. It carries **no** synthetic page markers (`----- PAGE BREAK -----`,
+`[Page N]`, `=== p. N ===`). `p. N` means the page a PDF viewer shows for the
+source, and is **machine-verified only where the source's own extraction yields
+form feeds natively** — text-native PDFs via `pdftotext` (e.g. the House
+transcript, now text-native). For an OCR/sibling-backed source `p. N` is a
+**verbatim-anchored navigation hint**: the verbatim-quote check confirms the text
+is in the source, the clean sibling is searchable, and the PDF's own pages are
+navigable — page-precision rests on contributor care (the standard the convention
+already applies to `timeline` `p. N`). Quotes are already easy to find without
+manufactured pagination; the page-break markers only ever served
+`quote_location_page`, never the researcher. **All siblings must end on the same
+structure** — no half-state where some are paginated and others not.
 
-**Already DONE (do not redo):**
-- **Form-feed-eating bug fixed** (`scripts/lib/_common.py`, commit `24be516`).
-  `extract_source_text`'s hyphen-merge (`-\s+`→`-`) was swallowing the `\f`
-  after any page-final hyphen (footer page numbers like `- 1 -`), silently
-  fusing pages and shifting every downstream split. This corrupted the page
-  check for *any* paginated source — the checker is only a reliable oracle
-  after this fix. Restricted to whitespace-minus-form-feed.
-- **`cia-rdp79`** sibling normalized to canonical breaks (commit `199b11a`);
-  its 24 refs now actively verified and pass. This is the proof-of-method.
-- **Sibling rule refined** in `meta/conventions.md` + `schema.yaml`: a sibling
-  is warranted only for `ocr-scan` (OCR-producer metadata) or *pervasively*
-  corrupt `extraction-lossy` (stenographic line-number noise). A clean,
-  natively-paginated text layer with only a *sparse* glyph artifact stays
-  `text-native` — no sibling.
+This supersedes the earlier "paginate the siblings" direction (the cancelled
+Work-B below). C3-A's House work is already consistent: text-native, native
+`pdftotext` pages, no sibling.
 
-**Decisions (locked with the maintainer):** (1) page anchor = **physical
-PDF-viewer page**, uniform with the DIRDs (refs that cite a printed/stenographic
-page must be re-derived to physical). (2) HTML `p. N` claims are removed (HTML
-has no pages) — anchor to a section heading or `¶N`. (3) **Remove + regenerate
-over fix** a needless or broken sibling.
+**Done (C3-A):** form-feed-eating bug fixed (`scripts/lib/_common.py`, `24be516`);
+House transcript reclassified text-native + sibling removed + 212 refs to physical
+(`993cbe5`); `‡`→`½` fold in `normalize_for_compare`; "a sibling must be
+proportionate to the damage" in conventions/schema.
 
-**Work — A. Remove the House transcript sibling — DONE.**
-`congress-gov-house-hearing-transcript-20230726` was text-native (Acrobat
-Distiller from a `.txt` source; pristine, natively-paginated `pdftotext`); its
-54-page hand sibling existed only to repair one `11½`→`‡` glyph and had
-silently drifted from the transcript. Done: folded `‡`→`½` in
-`normalize_for_compare`; corrected the 3 drifted quotes to verbatim (graves q12
-`"foreign drones, is an urgent"` typo preserved, fravor q20 `"No one came."`,
-fravor q3 `"over 2 weeks"`); reclassified the manifest entry text-native +
-removed the sibling artifact + deleted the `.txt`; re-derived all 212 `p. N`
-refs printed→physical (+4: cover + two Roman front-matter pages precede printed
-p. 1) across the 6 artifacts; `quote_location_page` now actively verifies them.
-**Residual:** the 16 `line N` speaker/naming-quirk refs on the house transcript
-(raw `pdftotext` line numbers — the deprecated extraction-transient form) are
-untouched; convert them to physical `p. N` (or `¶`) in a future pass — small,
-unchecked, pre-existing, not coupled to anything.
+**Work — the strip-all uniformity pass (next session; one coherent migration,
+not piecemeal).** "Fix all the old documents, do not leave them hanging."
 
-**Work — B. Page-faithful the genuine siblings** (ocr-scan / pervasive-lossy;
-their `p. N` refs are silently skipped today). Per source: paginate to canonical
-`----- PAGE BREAK -----` (block N = physical page N), run
-`validate-research.py`, re-derive each flagged ref to the physical page the
-checker reports (it is now a reliable oracle), verify block-count == `pdfinfo`,
-commit.
-- *image-only (read page images, dird-06 method):* `cia-rdp96-…100180001-3`
-  (extend its `[Page N]` markers 21→29), `cia-rdp96-…100220001-8` (Nature, 19pp),
-  `foia-23-f-0905-doc-1` (34pp; normalize its `PAGE N of 34` markers),
-  `docs-house-…go12-…-sd004` (21pp; refs all `p. 1`).
-- *OCR with a usable text layer (pdftotext-map align, spot-verify):*
-  `foia-23-f-0906-sancorp-ipmo-pws`, `blackvault-aaro-invitations-to-grusch`
-  (FOIA correspondence release — confirm `p. N` vs `Doc N` per its nature).
-- *stenographic text-native-noisy (pdftotext form-feed map):* SASC
-  `-20230419` (56 refs) and `-20241119` (7 refs; also re-anchor its
-  `p. N, lines X-Y` refs — the line numbers are stripped from the sibling).
-- `foia-23-f-0905-doc-2` is a **single physical page** → legitimately no `\f`,
-  `p. 1` skipped by convention. **No work.**
+1. **Strip synthetic page markers from every sibling that carries them.** Current
+   `----- PAGE BREAK -----` set (13): `cia-rdp79`,
+   `dia-advancedspacepropulsion-puthoff-dird`,
+   `dird-01/02/03/04/05/06/07/18/24/26`, `fas-org-aatip-list`. Plus residual
+   bespoke markers: `[Page N]` in `cia-rdp96-…100180001-3`, `[Page N footer]` in
+   `cia-rdp79`, any `=== … ===`. Re-enumerate at execution:
+   `grep -rlE '^----- PAGE BREAK|^\[Page |^=== ' sources/`. Black Vault / FOIA
+   distribution-insert *text* the markers bound stays verbatim (source content);
+   only the marker lines go.
+2. **FOIA email-release `DOCUMENT N` markers** (`blackvault-foia-24-f-0894`,
+   `blackvault-aaro-invitations`): decide — these are *content* structure (each
+   block is a discrete email/letter = the `Doc N` anchor), not synthetic
+   pagination. Likely KEEP (a legitimate anchor for a different source shape);
+   confirm against the convention's `Doc N` row before touching.
+3. **Flip the convention** (`meta/conventions.md` — the "`p. N` is the physical
+   page" section + the sibling section currently asserting "must be page-faithful
+   / flat = defect") **and `schema.yaml`** to the principle above. The
+   `/prepare-ocr-sibling` skill must stop emitting `----- PAGE BREAK -----`.
+4. **Reframe the check / extraction** (`scripts/checks/quote_location_page.py`,
+   `scripts/lib/_common.py` `_sibling_page_breaks_to_ff`): `quote_location_page`
+   verifies `p. N` only via native `pdftotext` form feeds (text-native PDFs);
+   sibling-backed sources have no form feeds → it skips them **by design**, not a
+   silent defect. Remove/inert `_sibling_page_breaks_to_ff`. Update docstrings.
+5. **Refs need no text edits** — stripping markers doesn't touch quote text
+   (verbatim check still passes) and `p. N` stays the navigation hint. DIRD refs
+   were derived to physical pages and remain correct physical hints. *Secondary,
+   optional:* transcript/other refs that cite a *printed* page (the untouched
+   former Work-B set: SASC `-20230419`/`-20241119`, etc.) are hints that may
+   diverge from the PDF-viewer page — normalize to one consistent meaning only if
+   desired; not required by the strip.
+6. **Update notes** in `sources/manifest.yaml` that reference `----- PAGE BREAK
+   -----` (incl. the `cia-rdp79` note) and any node/doc references.
+7. **Verify + acceptance.** `validate.py` + `validate-research.py` green; every
+   verbatim quote still passes; `p. N` on stripped siblings now skips the page
+   check; text-native PDFs stay page-verified. **Uniformity acceptance:**
+   `grep -rlE '^----- PAGE BREAK|^\[Page |^=== ' sources/` returns nothing (modulo
+   the `DOCUMENT N` decision in step 2).
+8. **Gates.** Drop the planned `sibling_page_faithful` (force-pagination —
+   contradicts the principle). Keep `sibling_parent_extraction_type` (a `.txt`
+   sibling may exist only for a non-text-native parent — Invariant 1). Optionally
+   add the inverse: a sibling must NOT carry synthetic page markers (locks in
+   uniformity going forward).
 
-**Work — C. Downgrade HTML `p. N`** (page-less): `sec-ttsa-1a-partii-20170710`
-(~24 refs in `ttsa.yaml`, plus `hal-puthoff`) → section heading / `¶N`;
-`opg.optica.org` Targ articles in `russell-targ` **per-ref** (keep `p. N` where
-the ref points to a CIA *PDF*, downgrade where it points to the optica HTML).
-The `optica` hits in DIRD artifacts are `cited_works` bibliography, not
-`source.location` — leave them.
+This folds in the former House residual (16 `line N` speaker/naming-quirk refs)
+and the cancelled Work-B sources — none get paginated; their `p. N` / `line N`
+refs become hints under the uniform principle.
 
-**Work — D. Add the gates** (after A–C land; lean):
-- `sibling_parent_extraction_type` — a same-stem `.txt` sibling may exist only
-  when its PDF parent's `extraction_type` is non-text-native (enforces the
-  proportionality rule; once House is removed there are 0 violations).
-- `sibling_page_faithful` — any sibling carrying `----- PAGE BREAK -----` must
-  have block-count == `pdfinfo` pages (fires only on marker-carrying siblings,
-  so `Doc N` email-release siblings are untouched). All DIRD + cia-rdp79
-  siblings already satisfy it.
-Wire both into `validate.py`; register phases via `_phases.py` parity gate.
+**~~Work — B. Page-faithful the genuine siblings~~ — CANCELLED.** Superseded by
+the strip-all principle: we do not paginate siblings. The sources it named
+(`cia-rdp96-…100180001-3`, `…100220001-8` Nature, `foia-23-f-0905-doc-1`,
+`docs-house-…sd004`, `foia-23-f-0906`, `blackvault-aaro`, SASC `-20230419` /
+`-20241119`) keep their clean siblings; their `p. N` refs are PDF-viewer-page
+hints. `foia-23-f-0905-doc-2` is a single page — moot.
+
+**Still separate — HTML `p. N` downgrade.** `sec-ttsa-1a-partii-20170710` (~24
+refs in `ttsa.yaml` + `hal-puthoff`) and the `opg.optica.org` Targ articles in
+`russell-targ` cite `p. N` on **HTML** sources that have no pages at all → anchor
+to a section heading / `¶N` (per-ref: keep `p. N` where a `russell-targ` ref
+points to a CIA *PDF*; the `optica` hits in DIRD artifacts are `cited_works`
+bibliography, not `source.location` — leave them). Independent of the strip.
 
 **Blocks:** none.
-**Blocked by:** none — each source is independent; A is self-contained.
+**Blocked by:** none.
