@@ -192,18 +192,20 @@ rubric-audited). Re-level the set for consistency.
 | dird-04 biomaterials | 33 | 55 | 1.67 |
 | dird-05 aerospace-platforms-materials | 28 | 50 | 1.79 |
 
-**(b) Extract `cited_works` — all 11 BUILT DIRDs are DONE.** Each built DIRD's
+**(b) Extract `cited_works` — all 13 BUILT DIRDs are DONE.** Each built DIRD's
 reference list is extracted and source-fidelity-gated, with the citation marker
 style preserved per source (`[N]` brackets, `^N` endnotes, `N.` numbered list,
 and dird-26's sub-lettered `[5-a/b/c]` UFO-relevant entries — Schuessler,
 Sturrock, Vallee, Cash-Landrum). dird-03 (Pulsed HPM) and dird-04 (Biomaterials)
 were assessed and **carry no formal reference list** (end at Conclusion / Summary;
 sibling marker-scan = 0; PDF last page confirmed) — their `cited_works: []` is
-correct, not missing. Remaining: the UNBUILT DIRDs (08/09/10/11/12/13/14/16/17/19
-through 37 — 26 archived, none built) get their citations when each is built —
+correct, not missing. Remaining: the UNBUILT DIRDs (10/11/12/13/14/16/17/19
+through 37 — 24 archived, none built) get their citations when each is built —
 same per-DIRD flow (locate region → image-verify sibling vs PDF → worker extract →
-integrate). The recurring-author network is the payoff (Puthoff across dird-24 +
-dird-15; E. W. Davis / C. Maccone cross-DIRD).
+integrate). (dird-08/09 are now built; their cited_works were extracted at build
+time and their reference page refs corrected to PDF-viewer pages — see (c).) The
+recurring-author network is the payoff (Puthoff across dird-24 + dird-15;
+E. W. Davis / C. Maccone cross-DIRD).
 
 *Illegible references (deferred — design on first real case).* dird-24's
 references were all recoverable by image-verifying the PDF page. If a remaining
@@ -219,13 +221,13 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-**(c) DIRD page-ref convention — DONE (all 11 DIRDs).** Settled rule
+**(c) DIRD page-ref convention — DONE (all 13 DIRDs) + ENFORCED.** Settled rule
 (`meta/conventions.md` "`p. N` is the physical page"): `p. N` = the PDF viewer's
 page N (the Nth physical page of the file), so a reader opening the source PDF
 to page N lands on the quote. The OCR sibling therefore preserves **every**
 physical page verbatim — including the third-party Black Vault distribution page
 the PDFs carry at physical page 2 (preserved as-is, never summarized, never
-dropped). All 11 built DIRD siblings now mirror their PDFs page-for-page (block
+dropped). All 13 built DIRD siblings now mirror their PDFs page-for-page (block
 count == pdfinfo page count) and every quote / naming-quirk / cited-work ref is a
 PDF-viewer page, verified against the corrected sibling: dird-01/03/04/05/07/18
 had the dropped insert restored + refs shifted +1; dird-06 had the insert
@@ -236,6 +238,41 @@ renumbered from the document's printed labels to PDF-viewer pages; dird-24 alrea
 complied; dird-15 (non-Black-Vault) has no insert. (This superseded an earlier
 omit-the-insert / physical-sheet attempt — counting the document's own pages and
 dropping the insert made `p. N` source-dependent, the opposite of findable.)
+
+*Later brought into compliance + enforced.* **dird-08/09** (built after this item
+was first closed, and regressed to the document's printed page numbers) were
+remapped to PDF-viewer pages (offset +6 / +8, derived from each PDF's clean OCR
+folio sequence). The **cited_works (References) page refs on dird-01/07/15/24** were
+still the document's printed folios — the body quotes had been converted but the
+reference lists were missed — and were corrected to the PDF-viewer page where each
+reference list physically sits (dird-01 refs p.24/25 → p.30/31; dird-07 → p.29/30;
+dird-15 → p.17; dird-24 +7). The convention is now **mechanically enforced** so it
+cannot regress: `location_format` errors on any roman (`p. ii`) or `printed p.`
+location ref — and runs on OCR-scan sources too, where `quote_location_page` (which
+skips sibling-backed sources) cannot reach; `pdf_page_count` errors when
+`document_intrinsic.pages` ≠ the PDF's `pdfinfo` page count. The document renderer
+also emits a one-line physical-page convention note on every multi-page PDF node.
+(`pdfinfo` on the archived file is ground truth for the count — the external audit's
+third-party page-listing numbers were all wrong.)
+
+**(d) Verbatim fidelity — re-verify each OCR sibling against the PDF page images.**
+For an OCR-scan DIRD the verbatim-quote check compares artifact ↔ `.txt` sibling
+only; it is structurally blind to drift between the hand-made sibling and the actual
+PDF (the sibling is the canonical extract, verified once at production and never
+re-checked). A PDF-grounded external audit of dird-08/09 surfaced candidate
+sibling-transcription drift the check cannot catch — **dird-08**: "globe-encircling
+UAV flight" (PDF may read "UAV turbojet flight"), "interactions with the walls" (PDF
+may read "on the walls"), "Sänger" rendered with the umlaut where the source body /
+figure captions / ref 37 may print "Sanger"; **dird-09**: "Tokomak" standardized
+where the source uses both "Tokamak" and "Tokomak" within one paragraph, a
+"shownif" → "shown if" half-fix, and minor punctuation/case drift. Confirm each
+already-quoted span (and reference) against the PDF page image; correct the sibling
++ artifact where it diverges, and preserve genuine non-canonical source forms with a
+Source-Form Notes row rather than silently normalizing. The structural gap applies
+to **every** OCR sibling in the corpus, not only DIRDs — but the audit evidence is
+dird-08/09, so start there. **Shares the per-DIRD image-verification pass with (a)** —
+do the coverage re-level and the fidelity check in one sweep per DIRD rather than
+reading each sibling against the PDF twice.
 
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
