@@ -21,6 +21,8 @@ doc_form: testimony
 | Primary Source URL | https://www.armed-services.senate.gov/download/kirkpatrick-statement |
 | Local Archive | [sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

@@ -114,6 +114,7 @@ from checks import iff_section as ck_iff_section
 from checks import investigation_closure_path_when_paused as ck_investigation_closure_path_when_paused
 from checks import investigation_hypothesis_citation as ck_investigation_hypothesis_citation
 from checks import key_personnel as ck_key_personnel
+from checks import location_format as ck_location_format
 from checks import location_relationships as ck_location_relationships
 from checks import media_versioning as ck_media_versioning
 from checks import naming_quirks as ck_naming_quirks
@@ -121,6 +122,7 @@ from checks import open_questions as ck_open_questions
 from checks import org_relationships as ck_org_relationships
 from checks import ownership_timeline as ck_ownership_timeline
 from checks import participants as ck_participants
+from checks import pdf_page_count as ck_pdf_page_count
 from checks import primary_sources as ck_primary_sources
 from checks import program_involvement as ck_program_involvement
 from checks import prose_drift as ck_prose_drift
@@ -237,6 +239,8 @@ _ARTIFACT_CHECKS = [
     ck_quotes,
     ck_verbatim_quotes,
     ck_quote_location_page,
+    ck_location_format,   # roman / printed-folio location-ref guard (runs on OCR sources too)
+    ck_pdf_page_count,     # declared pages == PDF physical pages; no p.N over-range
     ck_naming_quirks,
     # Type-conditional entry-list checks
     ck_rumors,

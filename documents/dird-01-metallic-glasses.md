@@ -16,9 +16,11 @@ doc_form: technical-report
 | Authored Date (per document) | 2009-12-14 |
 | Author (per document) | [redacted per FOIA (b)(6)] |
 | Classification | UNCLASSIFIED//FOR OFFICIAL USE ONLY |
-| Format | PDF, 24 pages |
+| Format | PDF, 31 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_01_Metallic_Glasses_for_Aerospace_Applications.pdf |
 | Local Archive | [sources/government/dird-01-metallic-glasses-20091214.pdf](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---
 

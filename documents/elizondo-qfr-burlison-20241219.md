@@ -21,6 +21,8 @@ doc_form: testimony
 | Primary Source URL | https://douglasjohnson.ghost.io/content/files/2025/02/House-Oversight-QFR-Elizondo--Dec.-2024-.pdf |
 | Local Archive | [sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

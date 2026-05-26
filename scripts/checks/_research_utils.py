@@ -116,6 +116,26 @@ def entries(data, section):
     return v if isinstance(v, list) else []
 
 
+def walk_locations(obj, path=""):
+    """Yield ``(jsonpath, value)`` for every string under a key named
+    ``location`` anywhere in the artifact data, depth-first. The single
+    surface for location-format checks (``location_format``,
+    ``pdf_page_count``) so they see every ``source.location`` /
+    ``naming_quirks[].location`` / ``cited_works[].source.location`` /
+    ``timeline[].source.location`` ref regardless of which section carries
+    it — no per-section enumeration to drift out of sync with the schema."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            child = f"{path}.{k}" if path else k
+            if k == "location" and isinstance(v, str):
+                yield child, v
+            else:
+                yield from walk_locations(v, child)
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            yield from walk_locations(v, f"{path}[{i}]")
+
+
 def check_unique_ids(rel, items, section_name, check_name):
     """Yield Issues for any entry missing 'id' or duplicating an id
     already seen in this section."""

@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf |
 | Local Archive | [sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

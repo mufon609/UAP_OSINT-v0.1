@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf |
 | Local Archive | [sources/government/dird-07-invisibility-cloaking-20100302.pdf](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description
@@ -56,7 +58,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 26, ¶1 (Broadband Invisibility, printed p. 19) |
+| Location | p. 26, ¶1 (Broadband Invisibility) |
 
 ---
 
@@ -68,7 +70,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 11, ¶1 (Cloaking, printed p. 5) |
+| Location | p. 11, ¶1 (Cloaking) |
 
 ---
 
@@ -92,7 +94,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 21, ¶1 (Fundamental Problem, printed p. 15) |
+| Location | p. 21, ¶1 (Fundamental Problem) |
 
 ---
 
@@ -104,7 +106,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 28, ¶1 (Optical Cloaking, printed p. 22) |
+| Location | p. 28, ¶1 (Optical Cloaking) |
 
 ---
 
@@ -116,7 +118,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 16, ¶1 (Metamaterials, printed p. 10) |
+| Location | p. 16, ¶1 (Metamaterials) |
 
 ---
 
@@ -128,7 +130,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 15, ¶ continued (Metamaterials, printed p. 9) |
+| Location | p. 15, ¶ continued (Metamaterials) |
 
 ---
 
@@ -140,7 +142,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 15, ¶1 (Cloaking, printed p. 8) |
+| Location | p. 14, ¶1 (Cloaking) |
 
 ---
 
@@ -168,7 +170,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 22, ¶1 (Fundamental Problem, printed p. 15) |
+| Location | p. 22, ¶1 (Fundamental Problem) |
 
 ---
 
@@ -180,7 +182,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 29, ¶1 (Summary, printed p. 23) |
+| Location | p. 29, ¶1 (Summary) |
 
 ---
 
@@ -192,7 +194,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 7, ¶1 (Camouflage, printed p. 1) |
+| Location | p. 7, ¶1 (Camouflage) |
 
 ---
 
@@ -234,7 +236,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 14, ¶1 (Cloaking, printed p. 8) |
+| Location | p. 14, ¶1 (Cloaking) |
 
 ---
 
@@ -246,7 +248,7 @@ The paper describes a fundamental problem of transformation-based cloaking: the 
 |---|---|
 | Attributed to | Invisibility Cloaking: Theory and Experiments — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-| Location | p. 15, ¶1 (Cloaking, printed p. 8) |
+| Location | p. 14, ¶1 (Cloaking) |
 
 ---
 

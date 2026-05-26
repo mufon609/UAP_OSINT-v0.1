@@ -13,7 +13,7 @@ document_intrinsic:
   classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
   classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY (struck through to UNCLASSIFIED on every page header and footer)'
   control_number: DIA-08-1001-006
-  pages: 55
+  pages: 57
 context_extrinsic:
   display_title: 'Space Access: Where We''ve Been . . . and Where We Could Go — DIA Defense Intelligence Reference Document, AAWSAP, 8 March 2010'
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_06-DIRD_Space_Access-Where_Weve_Been_and_Where_We_Could_Go.pdf
@@ -104,7 +104,7 @@ quotes:
     This is a matter of skill; operational hardware based on durable, reliable, and demonstrated components; and operational systems. It is not necessarily a matter of technology.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 6, ¶1 (Introduction, printed p. v)'
+    location: 'p. 6, ¶1 (Introduction)'
   significance: Central thesis — robust space access is a matter of skill and operational hardware based on durable, reliable, demonstrated components, not necessarily a matter of technology
   statement_date: '2010-03-08'
 - id: q-intro-aerospace-veterans-hardware-issue
@@ -113,8 +113,8 @@ quotes:
     veterans responded, "It was not a technology issue; it was a hardware issue."
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 7, ¶ continued (Introduction, printed p. vi)'
-  significance: Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes printed p. v; this verbatim portion opens printed p. vi)
+    location: 'p. 7, ¶ continued (Introduction)'
+  significance: Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7)
   statement_date: '2010-03-08'
 - id: q-intro-x15-end-of-aircraft-to-space
   added_date: '2026-05-25'
@@ -122,7 +122,7 @@ quotes:
     With the orbiting of Sputnik, the aircraft path to space, as represented by the X series of planes, ended with the X-15. With the X-15's demise, all efforts to fly aircraft to space ended, replaced by the more familiar (but less practical) strategy of loudly blasting to space with expendable rockets derived from undertested ballistic missile hardware, as documented in early failures.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 8, ¶2 (Introduction, printed p. vii)'
+    location: 'p. 8, ¶2 (Introduction)'
   significance: History — with Sputnik, the aircraft path to space (the X series) ended with the X-15, replaced by expendable rockets derived from undertested ballistic missile hardware
   statement_date: '2010-03-08'
 - id: q-glider-vs-cruiser-two-configurations
@@ -131,7 +131,7 @@ quotes:
     Two basic configuration types emerge. One configuration is for a hypersonic glider powered by either rocket or air-breathing rocket cycle propulsion that can operate as air-breathing propulsion to mach 5.5 or less. A versatile variable-capture, inward-turning inlet⁴ can be integrated with the vehicle configuration derived from the FDL series of hypersonic gliders developed by the U.S. Air Force Flight Dynamics Laboratory (AFFDL)⁵ and the work of the McDonnell Douglas Astronautics Company.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 11, ¶2 (Hypersonic Configuration Concepts, printed p. 3)'
+    location: 'p. 11, ¶2 (Hypersonic Configuration Concepts)'
   significance: Configuration taxonomy — the rocket / air-breathing-rocket hypersonic glider is derived from the AFFDL FDL series of hypersonic gliders and the McDonnell Douglas Astronautics Company''s work
   statement_date: '2010-03-08'
 - id: q-stephens-weight-factor-lifting-spacecraft
@@ -140,7 +140,7 @@ quotes:
     A report cited in Appendix A (Stephens, 1965) concluded, "Weight factor for lifting spacecraft results primarily from larger surface area and only secondarily from the associated spacecraft environment and may be as large as a factor of two greater than ballistic spacecraft."
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 16, ¶3 (Hypersonic Configuration Concepts, printed p. 8)'
+    location: 'p. 16, ¶3 (Hypersonic Configuration Concepts)'
   significance: Weight-factor analysis — a 1965 Stephens report concluded the weight factor for lifting spacecraft results primarily from larger surface area and may be as much as twice that of a ballistic spacecraft
   statement_date: '2010-03-08'
 - id: q-fdl7-cross-range-no-waiting
@@ -149,7 +149,7 @@ quotes:
     The hypersonic glider based on the FDL-7C and the hypersonic air-breathing aircraft in Figure 8 both have hypersonic L/D ratios in excess of 2.7. In very practical terms, that means unpowered cross ranges in excess of 4,500 nautical miles and down ranges on the order of the Earth's circumference. So these two craft can depart from any location of a low-altitude orbit and land in CONUS or in continental Europe.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 18, ¶1 (Hypersonic Configuration Concepts, printed p. 10)'
+    location: 'p. 18, ¶1 (Hypersonic Configuration Concepts)'
   significance: Glider capability — the FDL-7C class has hypersonic L/D ratios above 2.7, giving unpowered cross ranges in excess of 4,500 nautical miles so the craft can depart any low orbit and land in CONUS or continental Europe
   statement_date: '2010-03-08'
 - id: q-xlr129-vs-ssme-development-time
@@ -158,7 +158,7 @@ quotes:
     The XLR-129 was a shuttle-class engine that operated with turbopump exit pressures of 3,500 psi. It was brought to full pressure operation for the U.S. Air Force in just over 3 months.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 33, ¶2 (Rocket Propulsion, printed p. 25)'
+    location: 'p. 33, ¶2 (Rocket Propulsion)'
   significance: Lost capability — the Pratt & Whitney XLR-129, a shuttle-class engine, was brought to full pressure operation in just over three months, contrasted in the source with the space shuttle main engine''s three years and lack of reusability without overhaul
   statement_date: '2010-03-08'
 - id: q-horizontal-takeoff-a-priori-defeat
@@ -167,7 +167,7 @@ quotes:
     So the resulting observation was "See! Air breathers are not lighter than all-rocket!" And so the rocket proponents have defeated an air-breathing solution since the first aerospace plane in 1958.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 41, ¶1 (Up-and-Down Operations, printed p. 33)'
+    location: 'p. 41, ¶1 (Up-and-Down Operations)'
   significance: Takeoff-mode argument — an a priori dictate of horizontal takeoff inflates air-breather gross weight, and on that basis rocket proponents have defeated an air-breathing solution since the first aerospace plane in 1958
   statement_date: '2010-03-08'
 - id: q-conclusion-where-is-infrastructure
@@ -176,7 +176,7 @@ quotes:
     But where is our space infrastructure? Forty years after Apollo, why have we advanced so little (as illustrated in Figure 43)? Like the pioneers' Conestoga wagons, most of our trips to LEO are one way, and when we do return, we do so with little more than the people we took to space.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 46, ¶3 (Conclusion, printed p. 38)'
+    location: 'p. 46, ¶3 (Conclusion)'
   significance: Conclusion — forty years after Apollo there is no space infrastructure; most trips to LEO are one way, like the pioneers'' Conestoga wagons
   statement_date: '2010-03-08'
 - id: q-conclusion-space-business-backwards
@@ -185,7 +185,7 @@ quotes:
     Without an infrastructure, we are doomed to expendable vehicles at low launch rates for specific, one-time missions with no semblance of an infrastructure. Neither the United Kingdom nor the United States had any long-distance, two-way commerce until the railroads were established. After that, cities and commerce centers were created, enabling two-way commerce. The space business has it backwards: There is no commerce until the infrastructure is in place, not vice versa.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 47, ¶2 (Conclusion, printed p. 39)'
+    location: 'p. 47, ¶2 (Conclusion)'
   significance: Infrastructure-before-commerce — as with the railroads enabling two-way commerce, the space business has it backwards because there is no commerce until the infrastructure is in place
   statement_date: '2010-03-08'
 - id: q-conclusion-known-50-years-not-technology
@@ -194,7 +194,7 @@ quotes:
     Is it a technology issue? Hardly! We have known for 50 years how to create it. Werner von Braun had Walt Disney create a clear visual image of what is required. But nobody listened, as we were too busy creating new things and throwing away the old things, destroying any development continuity.
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
-    location: 'p. 47, ¶3 (Conclusion, printed p. 39)'
+    location: 'p. 47, ¶3 (Conclusion)'
   significance: Not-a-technology-issue — creating a LEO infrastructure is not a technology issue; the document states we have known for 50 years how to create it but destroyed development continuity
   statement_date: '2010-03-08'
 cited_works:

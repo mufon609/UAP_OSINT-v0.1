@@ -19,6 +19,8 @@ doc_form: memo
 | Format | PDF, 33 pages |
 | Local Archive | [sources/government/pentagon-uapda-proposed-revisions-202311.pdf](../sources/government/pentagon-uapda-proposed-revisions-202311.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

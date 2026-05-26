@@ -64,11 +64,13 @@ CHECK_PHASE = {
     "manifest_artifact_shape": "archive",
     "primary_sources": "archive",
     "doc_form_archival_status": "archive",
+    "pdf_page_count": "archive",  # declared pages vs the source PDF's physical count
 
     # extract (role 4) — verbatim quote extraction (the one quote boundary)
     "quotes": "extract",
     "verbatim_quotes": "extract",
     "quote_location_page": "extract",
+    "location_format": "extract",  # roman / printed-folio location-ref guard
     "document_quote_source": "extract",
     "cited_works": "extract",
     "speakers": "extract",

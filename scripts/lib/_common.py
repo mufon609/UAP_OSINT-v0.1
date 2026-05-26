@@ -820,6 +820,37 @@ def _strip_sibling_form_feeds(text):
     return text.replace("\f", "")
 
 
+def pdf_physical_page_count(source_path):
+    r"""Physical page count of a PDF — what a PDF viewer's page counter shows.
+
+    Read from the PDF's page tree via ``pdfinfo`` (poppler, same toolchain as
+    ``pdftotext``), so it is the true file page count independent of the text
+    layer: correct for image-only / pure-scan PDFs (where ``pdftotext`` would
+    collapse to a single block) as well as text-native and OCR-scan files. For
+    a text-bearing PDF this equals the ``pdftotext`` form-feed page count — the
+    same physical-page model the ``--- page N ---`` extract markers and the
+    ``quote_location_page`` check use. Never reads a ``.txt`` sibling, so it
+    reports the file's own page count even for OCR-scan sources whose canonical
+    text extract is a sibling — exactly where declared counts and ``p. N`` refs
+    drifted onto printed folios. Returns None when the file is absent, isn't a
+    PDF, or ``pdfinfo`` is unavailable / fails (caller treats None as "can't
+    check", never as a violation).
+    """
+    if source_path.suffix.lower() != ".pdf" or not source_path.exists():
+        return None
+    try:
+        proc = subprocess.run(
+            ["pdfinfo", str(source_path)],
+            capture_output=True, text=True, timeout=60,
+        )
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return None
+    if proc.returncode != 0:
+        return None
+    m = re.search(r"^Pages:\s*(\d+)", proc.stdout, re.MULTILINE)
+    return int(m.group(1)) if m else None
+
+
 def extract_source_text(source_path):
     """Extract plain text from a source file. Returns None if unavailable.
     Cached for the duration of one validator run.

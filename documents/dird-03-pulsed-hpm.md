@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_03-DIRD_Pulsed_High-Power_Microwave_Source_Technology.pdf |
 | Local Archive | [sources/government/dird-03-pulsed-hpm-20100128.pdf](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

@@ -20,6 +20,8 @@ doc_form: testimony
 | Primary Source URL | https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf |
 | Local Archive | [sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

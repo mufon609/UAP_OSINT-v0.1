@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_05_Materials_for_Advanced_Aerospace_Platforms.pdf |
 | Local Archive | [sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description
@@ -222,7 +224,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 
 ---
 
-### Recurring cost thesis — high-performance, high-value structures are cost-intensive rather than technology-dependent (drawn from the GE90 PMC fan-blade example); the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.10/p.11 boundary, quoted to the p.10 page edge
+### Recurring cost thesis — high-performance, high-value structures are cost-intensive rather than technology-dependent (drawn from the GE90 PMC fan-blade example); the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.11/p.12 boundary, quoted to the p.11 page edge
 
 > This example supports the unwritten rule that the pathways leading to high-performance, high-value structures typically are
 

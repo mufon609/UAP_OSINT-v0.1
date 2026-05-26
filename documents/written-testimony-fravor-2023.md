@@ -20,6 +20,8 @@ doc_form: testimony
 | Primary Source URL | https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf |
 | Local Archive | [sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
+
 ---
 
 ## Description

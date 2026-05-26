@@ -83,6 +83,25 @@ def render_document_summary(artifact):
     lines.append("|---|---|")
     for k, v in rows:
         lines.append(f"| {k} | {v} |")
+    # Stated page-citation convention note for multi-page PDF sources. `p. N`
+    # refs throughout this repo are physical / PDF-viewer pages (the Nth page of
+    # the file), which for composite documents — a cover, a Black Vault FOIA
+    # insert, roman front matter — run ahead of the printed page number the
+    # document carries on its face. State it so a reader following `p. N` opens
+    # the PDF to page N rather than hunting the printed folio.
+    src_fmt = (sources[0].get("format") if sources and isinstance(sources[0], dict) else None)
+    try:
+        npages = int(dm.get("pages"))  # tolerate int (30) or numeric string ('8')
+    except (TypeError, ValueError):
+        npages = 0
+    if src_fmt == "pdf" and npages > 1:
+        lines.append("")
+        lines.append(
+            "_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth "
+            "page of the file, counting any cover and front matter — which run "
+            "ahead of the printed page number the document shows on the page "
+            "itself._"
+        )
     return "\n".join(lines) + "\n"
 
 

@@ -16,9 +16,11 @@ doc_form: technical-report
 | Authored Date (per document) | 2010-03-08 |
 | Author (per document) | [redacted per FOIA (b)(6)] |
 | Classification | UNCLASSIFIED//FOR OFFICIAL USE ONLY |
-| Format | PDF, 55 pages |
+| Format | PDF, 57 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_06-DIRD_Space_Access-Where_Weve_Been_and_Where_We_Could_Go.pdf |
 | Local Archive | [sources/government/dird-06-bv-space-access-20100308.pdf](../sources/government/dird-06-bv-space-access-20100308.pdf) |
+
+_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---
 
@@ -56,7 +58,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 47, ¶3 (Conclusion, printed p. 39) |
+| Location | p. 47, ¶3 (Conclusion) |
 
 ---
 
@@ -68,7 +70,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 47, ¶2 (Conclusion, printed p. 39) |
+| Location | p. 47, ¶2 (Conclusion) |
 
 ---
 
@@ -80,7 +82,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 46, ¶3 (Conclusion, printed p. 38) |
+| Location | p. 46, ¶3 (Conclusion) |
 
 ---
 
@@ -104,7 +106,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 18, ¶1 (Hypersonic Configuration Concepts, printed p. 10) |
+| Location | p. 18, ¶1 (Hypersonic Configuration Concepts) |
 
 ---
 
@@ -116,7 +118,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 11, ¶2 (Hypersonic Configuration Concepts, printed p. 3) |
+| Location | p. 11, ¶2 (Hypersonic Configuration Concepts) |
 
 ---
 
@@ -128,11 +130,11 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 41, ¶1 (Up-and-Down Operations, printed p. 33) |
+| Location | p. 41, ¶1 (Up-and-Down Operations) |
 
 ---
 
-### Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes printed p. v; this verbatim portion opens printed p. vi)
+### Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7)
 
 > veterans responded, "It was not a technology issue; it was a hardware issue."
 
@@ -140,7 +142,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 7, ¶ continued (Introduction, printed p. vi) |
+| Location | p. 7, ¶ continued (Introduction) |
 
 ---
 
@@ -152,7 +154,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 6, ¶1 (Introduction, printed p. v) |
+| Location | p. 6, ¶1 (Introduction) |
 
 ---
 
@@ -164,7 +166,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 8, ¶2 (Introduction, printed p. vii) |
+| Location | p. 8, ¶2 (Introduction) |
 
 ---
 
@@ -196,7 +198,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 16, ¶3 (Hypersonic Configuration Concepts, printed p. 8) |
+| Location | p. 16, ¶3 (Hypersonic Configuration Concepts) |
 
 ---
 
@@ -238,7 +240,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 33, ¶2 (Rocket Propulsion, printed p. 25) |
+| Location | p. 33, ¶2 (Rocket Propulsion) |
 
 ---
 

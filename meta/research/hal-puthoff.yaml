@@ -131,7 +131,7 @@ quotes:
     A theme that has come to the fore in advanced planning for long-range space exploration in the future is the concept that empty space itself (the quantum vacuum, or spacetime metric) might be engineered to provide energy/thrust for future space vehicles. Although far reaching, such a proposal is solidly grounded in modern physical theory, and therefore the possibility that matter/vacuum interactions might be engineered for spaceflight applications is not a priori ruled out (Reference 1). Given the current development of mainstream theoretical physics on such topics as warp drives and traversable wormholes that provides for such vacuum engineering possibilities (References 2-6), provided in this paper is a broad perspective of the physics and consequences of the engineering of the spacetime metric.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. iii, ¶1'
+    location: 'p. 4, ¶1'
   context: 'Preface and Introduction opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' (29 March 2010; ICOD 1 December 2009; U//FOUO). Author: H.E. Puthoff, EarthTech International, Austin, Texas. DIA AAWSA Program Manager: James T. Lacatski, D.Eng.'
   observation_type: relayed
   statement_date: '2010-03-29'
@@ -400,7 +400,7 @@ timeline:
   event: 'Puthoff publishes [`/documents/dird-15-advanced-space-propulsion`] — Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' — under the DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]); Program Manager James T. Lacatski ([`/people/james-lacatski`]), D.Eng. Author affiliation: EarthTech International ([`/organizations/earthtech-international`]), Austin, Texas.'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. i'
+    location: 'p. 2'
   category: publication
   node_link: '/documents/dird-15-advanced-space-propulsion'
 
@@ -629,7 +629,7 @@ relationships:
   relationship: 'AAWSA Program Manager who administered the AAWSAP DIRD series of which Puthoff''s 2010-03-29 DIA-08-1003-015 ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' is one report; named on the DIRD attribution page as the point of contact for comments or questions'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. i'
+    location: 'p. 2'
 
 program_involvement:
 - id: p1
@@ -686,7 +686,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. i'
+    location: 'p. 2'
 
 - id: p6
   added_date: '2026-05-16'
