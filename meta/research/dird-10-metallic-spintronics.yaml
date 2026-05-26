@@ -319,4 +319,1016 @@ naming_quirks:
   location: 'p. 10, Section 3.1 (STT Basics), ¶3'
   source_path: government/dird-10-metallic-spintronics-20100323.pdf
   resolution: preserve-as-sic-in-quotes
-cited_works: []
+cited_works:
+  - id: cw1
+    added_date: '2026-05-26'
+    citation_key: '1'
+    author: 'Baibich, M. N., et al.'
+    year: '1988'
+    citation_verbatim: |-
+      (1) Baibich, M. N., et al., Phys. Rev. Lett. 61, 2472 (1988).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (1)'
+  - id: cw2
+    added_date: '2026-05-26'
+    citation_key: '2'
+    author: 'Binasch, G., et al.'
+    year: '1989'
+    citation_verbatim: |-
+      (2) Binasch, G., et al., Phys. Rev. B 39, 4828 (1989).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (2)'
+  - id: cw3
+    added_date: '2026-05-26'
+    citation_key: '3'
+    author: 'Slonczewski, J. C.'
+    year: '1996'
+    citation_verbatim: |-
+      (3) Slonczewski, J. C., J. Magn. Magn. Mater. 159, L1 (1996).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (3)'
+  - id: cw4
+    added_date: '2026-05-26'
+    citation_key: '4'
+    author: 'Berger, L.'
+    year: '1997'
+    citation_verbatim: |-
+      (4) Berger, L., J. Appl. Phys. 81, 4880 (1997).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (4)'
+  - id: cw5
+    added_date: '2026-05-26'
+    citation_key: '5'
+    author: 'Tsoi, M., et al.'
+    year: '1998'
+    citation_verbatim: |-
+      (5) Tsoi, M., et al., Phys. Rev. Lett. 80, 4281 (1998).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (5)'
+  - id: cw6
+    added_date: '2026-05-26'
+    citation_key: '6'
+    author: 'Myers, E. B., et al.'
+    year: '1999'
+    citation_verbatim: |-
+      (6) Myers, E. B., et al., Science 285, 867 (1999).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (6)'
+  - id: cw7
+    added_date: '2026-05-26'
+    citation_key: '7'
+    author: 'Sun, J. Z.'
+    year: '1999'
+    citation_verbatim: |-
+      (7) Sun, J. Z., J. Magn. Magn. Mater. 202, 157 (1999).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (7)'
+  - id: cw8
+    added_date: '2026-05-26'
+    citation_key: '8'
+    author: 'Wegrowe, J.-E., et al.'
+    year: '1999'
+    citation_verbatim: |-
+      (8) Wegrowe, J.-E., et al., Europhys. Lett. 45, 626 (1999).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (8)'
+  - id: cw9
+    added_date: '2026-05-26'
+    citation_key: '9'
+    author: 'Tsoi, M., et al.'
+    year: '2000'
+    citation_verbatim: |-
+      (9) Tsoi, M., et al., Nature 406, 46 (2000).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (9)'
+  - id: cw10
+    added_date: '2026-05-26'
+    citation_key: '10'
+    author: 'Beach, G. S. D., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (10) Beach, G. S. D., et al., Phys. Rev. Lett. 97, 057203 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (10)'
+  - id: cw11
+    added_date: '2026-05-26'
+    citation_key: '11'
+    author: 'Beach, G. S. D., et al.'
+    year: '2009'
+    citation_verbatim: |-
+      (11) Beach, G. S. D., et al., Phys. Rev. Lett. 102, 067201 (2009).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (11)'
+  - id: cw12
+    added_date: '2026-05-26'
+    citation_key: '12'
+    author: 'Fert, A., Bruno, P.'
+    year: '1994'
+    title: 'Ultrathin Magnetic structures II: An Introduction to the Electronic, Magnetic and Structural Properties'
+    citation_verbatim: |-
+      (12) Fert, A., Bruno, P., in Ultrathin Magnetic structures II: An Introduction to the
+      Electronic, Magnetic and Structural Properties, ed. by J.A.C. Bland and B. Heinrich
+      (Berlin: Springer, 1994), p.82.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (12)'
+  - id: cw13
+    added_date: '2026-05-26'
+    citation_key: '13'
+    author: 'Levy, P. M.'
+    year: '1994'
+    title: 'Solid State Physics'
+    citation_verbatim: |-
+      (13) Levy, P. M., in Solid State Physics, ed. by H. Ehrenreich and D. Turnbull, vol. 47
+      (Boston, London: Acad. Press, 1994), p.367.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (13)'
+  - id: cw14
+    added_date: '2026-05-26'
+    citation_key: '14'
+    author: 'Dieny, B.'
+    year: '1994'
+    citation_verbatim: |-
+      (14) Dieny, B., J. Magn. Mag. Mat. 136, 335 (1994).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (14)'
+  - id: cw15
+    added_date: '2026-05-26'
+    citation_key: '15'
+    author: 'Gijs, M. A.M., Bauer, G. E. W.'
+    year: '1997'
+    citation_verbatim: |-
+      (15) Gijs, M. A.M., Bauer, G. E. W., Adv. Phys. 46, 285 (1997).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (15)'
+  - id: cw16
+    added_date: '2026-05-26'
+    citation_key: '16'
+    author: 'Ansermet, J.-Ph.'
+    year: '1998'
+    citation_verbatim: |-
+      (16) Ansermet, J.-Ph., J. Phys.: Cond. Mat. 10, 6027 (1998).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (16)'
+  - id: cw17
+    added_date: '2026-05-26'
+    citation_key: '17'
+    author: 'Bass, J., Pratt, W. P., Jr.'
+    year: '1999'
+    citation_verbatim: |-
+      (17) Bass, J., Pratt, W. P., Jr., J. Magn. Magn. Mat. 200, 274 (1999).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (17)'
+  - id: cw18
+    added_date: '2026-05-26'
+    citation_key: '18'
+    author: 'Fert, A., Piraux, L.'
+    year: '1999'
+    citation_verbatim: |-
+      (18) Fert, A., Piraux, L., J. Magn. Magn. Mat. 200, 338 (1999).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (18)'
+  - id: cw19
+    added_date: '2026-05-26'
+    citation_key: '19'
+    author: 'Gijs, M. A.M.'
+    year: '2000'
+    title: 'Magnetic Multilayers and Giant Magnetoresistance: Fundamentals and Industrial Applications'
+    citation_verbatim: |-
+      (19) Gijs, M. A.M., in Magnetic Multilayers and Giant Magnetoresistance: Fundamentals
+      and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.130.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 24, References (19)'
+  - id: cw20
+    added_date: '2026-05-26'
+    citation_key: '20'
+    author: 'Coehoorn, P.'
+    year: '2000'
+    title: 'Magnetic Multilayers and Giant Magnetoresistance: Fundamentals and Industrial Applications'
+    citation_verbatim: |-
+      (20) Coehoorn, P., in Magnetic Multilayers and Giant Magnetoresistance: Fundamentals
+      and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.65.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (20)'
+  - id: cw21
+    added_date: '2026-05-26'
+    citation_key: '21'
+    author: 'Barthelemy, A., Fert, A., and Petroff, F.'
+    year: '1999'
+    title: 'Handbook of Magnetic Materials'
+    citation_verbatim: |-
+      (21) Barthelemy, A., Fert, A., and Petroff, F., in Handbook of Magnetic Materials, edited
+      by K. H. J. Buschow (Amsterdam: Elsevier, 1999), p.1.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (21)'
+  - id: cw22
+    added_date: '2026-05-26'
+    citation_key: '22'
+    author: 'Tsymbal, E.Y., Pettifor, D.G.'
+    year: '2001'
+    title: 'Solid State Physics'
+    citation_verbatim: |-
+      (22) Tsymbal, E.Y., Pettifor, D.G., in Solid State Physics, ed. by H. Ehrenreich and F.
+      Spaepen, Vol. 56 (Academic Press, 2001) pp.113-237.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (22)'
+  - id: cw23
+    added_date: '2026-05-26'
+    citation_key: '23'
+    author: 'Ashcroft, W., Mermin, D.'
+    year: '1976'
+    title: 'Solid State Physics'
+    citation_verbatim: |-
+      (23) Ashcroft, W., Mermin, D., Solid State Physics (Saunders College Publishing, Forth
+      Worth, 1976).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (23)'
+  - id: cw24
+    added_date: '2026-05-26'
+    citation_key: '24'
+    author: 'Ciureanu, P.'
+    year: '1992'
+    title: 'Thin Film Resistance Sensors'
+    citation_verbatim: |-
+      (24) Ciureanu, P., in Thin Film Resistance Sensors, ed. by P. Ciureanu, S. Middelhoek
+      (Institute of Physics Publishing, Bristol, 1992), p. 253.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (24)'
+  - id: cw25
+    added_date: '2026-05-26'
+    citation_key: '25'
+    author: 'ed. by R. Weil, R. G. Barradas'
+    year: '1981'
+    title: 'Electrocrystallization'
+    citation_verbatim: |-
+      (25) Electrocrystallization, ed. by R. Weil, R. G. Barradas (The Electrochemical Society,
+      Pennington, 1981).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (25)'
+  - id: cw26
+    added_date: '2026-05-26'
+    citation_key: '26'
+    author: 'Lashmore, D. S., Dariel, M. P.'
+    year: '1988'
+    citation_verbatim: |-
+      (26) Lashmore, D. S., Dariel, M. P., J. Electrochem. Soc. 135, 1218 (1988).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (26)'
+  - id: cw27
+    added_date: '2026-05-26'
+    citation_key: '27'
+    author: 'Ohring, M.'
+    year: '1992'
+    title: 'The Materials Science of Thin Films'
+    citation_verbatim: |-
+      (27) Ohring, M., The Materials Science of Thin Films (Academic, Boston, 1992).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (27)'
+  - id: cw28
+    added_date: '2026-05-26'
+    citation_key: '28'
+    author: 'Slaughter, J. M., Pratt, W. P., Jr., and Schroeder, P. A.'
+    year: '1989'
+    citation_verbatim: |-
+      (28) Slaughter, J. M., Pratt, W. P., Jr., and Schroeder, P. A., Rev. Sci. Instrum. 60, 127
+      (1989).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (28)'
+  - id: cw29
+    added_date: '2026-05-26'
+    citation_key: '29'
+    author: 'Parkin, S. S. P., More, N., and Roche, K. P.'
+    year: '1990'
+    citation_verbatim: |-
+      (29) Parkin, S. S. P., More, N., and Roche, K. P., Phys. Rev. Lett. 64, 2304 (1990).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (29)'
+  - id: cw30
+    added_date: '2026-05-26'
+    citation_key: '30'
+    author: 'Parkin, S. S. P., Bhadra, R., and Roche, K. P.'
+    year: '1991'
+    citation_verbatim: |-
+      (30) Parkin, S. S. P., Bhadra, R., and Roche, K. P., Phys. Rev. Lett. 66, 2152 (1991).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (30)'
+  - id: cw31
+    added_date: '2026-05-26'
+    citation_key: '31'
+    author: 'Fert, A., Campbell, I. A.'
+    year: '1971'
+    citation_verbatim: |-
+      (31) Fert, A., Campbell, I. A., J. de Physique 32, C1-46 (1971).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (31)'
+  - id: cw32
+    added_date: '2026-05-26'
+    citation_key: '32'
+    author: 'Mott, N. F.'
+    year: '1936'
+    citation_verbatim: |-
+      (32) Mott, N. F., Proc. Roy. Soc. London, Ser. A 153, 699 (1936), and 156, 368 (1936),
+      and Adv. Phys. 13, 325 (1964).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (32)'
+  - id: cw33
+    added_date: '2026-05-26'
+    citation_key: '33'
+    author: 'Pratt, W. P., Jr., et al.'
+    year: '1991'
+    citation_verbatim: |-
+      (33) Pratt, W. P., Jr., et al., Phys. Rev. Lett. 66, 3060 (1991).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (33)'
+  - id: cw34
+    added_date: '2026-05-26'
+    citation_key: '34'
+    author: 'Dieny, B., et al.'
+    year: '1991'
+    citation_verbatim: |-
+      (34) Dieny, B., et al. J. Appl. Phys. 69, 4774 (1991).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (34)'
+  - id: cw35
+    added_date: '2026-05-26'
+    citation_key: '35'
+    author: 'Piraux, L., et al.'
+    year: '1994'
+    citation_verbatim: |-
+      (35) Piraux, L., et al., Appl. Phys. Lett. 65, 2484 (1994).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (35)'
+  - id: cw36
+    added_date: '2026-05-26'
+    citation_key: '36'
+    author: 'Blondel, A., Meier, J. P., Doudin, B., Ansermet, J.-Ph.'
+    year: '1994'
+    citation_verbatim: |-
+      (36) Blondel, A., Meier, J. P., Doudin, B., Ansermet, J.-Ph., Appl. Phys. Lett. 65, 3019
+      (1994).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (36)'
+  - id: cw37
+    added_date: '2026-05-26'
+    citation_key: '37'
+    author: 'Tsoi, M., Jansen, A. G. M., Bass, J.'
+    year: '1997'
+    citation_verbatim: |-
+      (37) Tsoi, M., Jansen, A. G. M., Bass, J., J. Appl. Phys. 81, 5530 (1997).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (37)'
+  - id: cw38
+    added_date: '2026-05-26'
+    citation_key: '38'
+    author: 'Smith, C.'
+    year: '1997'
+    citation_verbatim: |-
+      (38) Smith, C., Proc. UK Conf. for Sensors, Test and Measurement Technology,
+      Birmingham, England, Jan. 22-23, 1997.
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (38)'
+  - id: cw39
+    added_date: '2026-05-26'
+    citation_key: '39'
+    author: 'Daughton, J. M., et al.'
+    year: '1994'
+    citation_verbatim: |-
+      (39) Daughton, J. M., et al., IEEE Trans. Magn. 30, 4608 (1994).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 25, References (39)'
+  - id: cw40
+    added_date: '2026-05-26'
+    citation_key: '40'
+    author: 'Ji, Y., Chien, C. L., Stiles, M. D.'
+    year: '2003'
+    citation_verbatim: |-
+      (40) Ji, Y., Chien, C. L., Stiles, M. D., Phys. Rev. Lett. 90, 106601 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (40)'
+  - id: cw41
+    added_date: '2026-05-26'
+    citation_key: '41'
+    author: 'Rippard, W. H., Pufall, M. R., Kaka, S., Russek, S. E., Silva, T. J.'
+    year: '2004'
+    citation_verbatim: |-
+      (41) Rippard, W. H., Pufall, M. R., Kaka, S., Russek, S. E., Silva, T. J., Phys. Rev. Lett.
+      92, 27201 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (41)'
+  - id: cw42
+    added_date: '2026-05-26'
+    citation_key: '42'
+    author: 'Katine, J. A., Albert, F. J., Buhrman, R. A., Myers, E. B., Ralph, D. C.'
+    year: '2000'
+    citation_verbatim: |-
+      (42) Katine, J. A., Albert, F. J., Buhrman, R. A., Myers, E. B., Ralph, D. C., Phys. Rev.
+      Lett. 84, 3149 (2000).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (42)'
+  - id: cw43
+    added_date: '2026-05-26'
+    citation_key: '43'
+    author: 'Grollier, J., et al.'
+    year: '2001'
+    citation_verbatim: |-
+      (43) Grollier, J., et al., Appl. Phys. Lett. 78, 3663 (2001).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (43)'
+  - id: cw44
+    added_date: '2026-05-26'
+    citation_key: '44'
+    author: 'Liu, Y., Zhang, Z., Wang, J., Freitas, P. P., Martins, J. L.'
+    year: '2003'
+    citation_verbatim: |-
+      (44) Liu, Y., Zhang, Z., Wang, J., Freitas, P. P., Martins, J. L., J. Appl. Phys. 93, 8385
+      (2003)
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (44)'
+  - id: cw45
+    added_date: '2026-05-26'
+    citation_key: '45'
+    author: 'Moriya, R., Hamaya, K., Oiwa, A., Munekata, H.'
+    year: '2004'
+    citation_verbatim: |-
+      (45) Moriya, R., Hamaya, K., Oiwa, A., Munekata, H., Jpn. J. Appl. Phys. Part 2 - Lett.
+      Express Lett. 43, L825 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (45)'
+  - id: cw46
+    added_date: '2026-05-26'
+    citation_key: '46'
+    author: 'Dieny, B., et al.'
+    year: '1991'
+    citation_verbatim: |-
+      (46) Dieny, B., et al., Phys.Rev.B 43, 1297 (1991).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (46)'
+  - id: cw47
+    added_date: '2026-05-26'
+    citation_key: '47'
+    author: 'Waintal, X., Myers, E. B., Brouwer, P. W., Ralph, D. C.'
+    year: '2000'
+    citation_verbatim: |-
+      (47) Waintal, X., Myers, E. B., Brouwer, P. W., Ralph, D. C., Phys. Rev. B 62, 12317-
+      12327 (2000)
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (47)'
+  - id: cw48
+    added_date: '2026-05-26'
+    citation_key: '48'
+    author: 'Braganca, P.M., et al.'
+    year: '2005'
+    citation_verbatim: |-
+      (48) Braganca, P.M., et al., Appl. Phys. Lett. 87, 112507 (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (48)'
+  - id: cw49
+    added_date: '2026-05-26'
+    citation_key: '49'
+    author: 'Rippard, W. H., et al.'
+    year: '2005'
+    citation_verbatim: |-
+      (49) Rippard, W. H., et al., Phys. Rev. Lett. 95, 067203 (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (49)'
+  - id: cw50
+    added_date: '2026-05-26'
+    citation_key: '50'
+    author: 'Kiselev, S. I., et al.'
+    year: '2003'
+    citation_verbatim: |-
+      (50) Kiselev, S. I., et al., Nature 425, 380 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (50)'
+  - id: cw51
+    added_date: '2026-05-26'
+    citation_key: '51'
+    author: 'Krivorotov, I. N., et al.'
+    year: '2005'
+    citation_verbatim: |-
+      (51) Krivorotov, I. N., et al., Science 307, 228-231 (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (51)'
+  - id: cw52
+    added_date: '2026-05-26'
+    citation_key: '52'
+    author: 'Acremann, Y., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (52) Acremann, Y., et al., Phys. Rev. Lett. 96, 217202 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (52)'
+  - id: cw53
+    added_date: '2026-05-26'
+    citation_key: '53'
+    author: 'Kilcoyne, A. L. D., et al.'
+    year: '2003'
+    citation_verbatim: |-
+      (53) Kilcoyne, A. L. D., et al., J. Synchrotron Radiat. 10, 125 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (53)'
+  - id: cw54
+    added_date: '2026-05-26'
+    citation_key: '54'
+    author: 'Stöhr, J., et al.'
+    year: '1993'
+    citation_verbatim: |-
+      (54) Stöhr, J., et al., Science 259, 658 (1993).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (54)'
+  - id: cw55
+    added_date: '2026-05-26'
+    citation_key: '55'
+    author: 'Rippard, W. H., Pufall, M. R., Kaka, S., Silva, T. J., Russek, S. E.'
+    year: '2004'
+    citation_verbatim: |-
+      (55) Rippard, W. H., Pufall, M. R., Kaka, S., Silva, T. J., Russek, S. E., Phys. Rev. B 70,
+      100406 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (55)'
+  - id: cw56
+    added_date: '2026-05-26'
+    citation_key: '56'
+    author: 'Khitun, A., Nikonov, D. E., Bao, M., Galatsis, K., Wang, K. L.'
+    year: '2007'
+    citation_verbatim: |-
+      (56) Khitun, A., Nikonov, D. E., Bao, M., Galatsis, K., Wang, K. L., Nanotechnology 18,
+      465202 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (56)'
+  - id: cw57
+    added_date: '2026-05-26'
+    citation_key: '57'
+    author: 'Schneider, T., et al.'
+    year: '2008'
+    citation_verbatim: |-
+      (57) Schneider, T., et al., Appl. Phys. Lett. 92, 022505 (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (57)'
+  - id: cw58
+    added_date: '2026-05-26'
+    citation_key: '58'
+    author: 'Driskill-Smith, A. A. G., Huai, Y.'
+    year: '2007'
+    citation_verbatim: |-
+      (58) Driskill-Smith, A. A. G., Huai, Y., Future Fab Intl. 23, 28 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (58)'
+  - id: cw59
+    added_date: '2026-05-26'
+    citation_key: '59'
+    author: 'Berger, L.'
+    year: '1978'
+    citation_verbatim: |-
+      (59) Berger, L., J. Appl. Phys. 49, 2156 (1978).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (59)'
+  - id: cw60
+    added_date: '2026-05-26'
+    citation_key: '60'
+    author: 'Berger, L.'
+    year: '1984'
+    citation_verbatim: |-
+      (60) Berger, L., J. Appl. Phys. 55, 1954 (1984).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (60)'
+  - id: cw61
+    added_date: '2026-05-26'
+    citation_key: '61'
+    author: 'Berger, L.'
+    year: '1986'
+    citation_verbatim: |-
+      (61) Berger, L., Phys. Rev. B 33, 1572 (1986).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 26, References (61)'
+  - id: cw62
+    added_date: '2026-05-26'
+    citation_key: '62'
+    author: 'Berger, L.'
+    year: '1988'
+    citation_verbatim: |-
+      (62) Berger, L., J. Appl. Phys. 63, 1663 (1988).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (62)'
+  - id: cw63
+    added_date: '2026-05-26'
+    citation_key: '63'
+    author: 'Freitas, P. P., Berger, L.'
+    year: '1985'
+    citation_verbatim: |-
+      (63) Freitas, P. P., Berger, L., J. Appl. Phys. 57, 1266 (1985).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (63)'
+  - id: cw64
+    added_date: '2026-05-26'
+    citation_key: '64'
+    author: 'Hung, C.-Y., Berger, L.'
+    year: '1988'
+    citation_verbatim: |-
+      (64) Hung, C.-Y., Berger, L., J. Appl. Phys. 63, 4276 (1988).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (64)'
+  - id: cw65
+    added_date: '2026-05-26'
+    citation_key: '65'
+    author: 'Hung, C.-Y., Berger, L., Shih, C.Y.'
+    year: '1990'
+    citation_verbatim: |-
+      (65) Hung, C.-Y., Berger, L., Shih, C.Y., J. Appl. Phys. 67, 5941 (1990).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (65)'
+  - id: cw66
+    added_date: '2026-05-26'
+    citation_key: '66'
+    author: 'Yamanouchi, M., Chiba, D., Matsukura, F., Ohno, H.'
+    year: '2004'
+    citation_verbatim: |-
+      (66) Yamanouchi, M., Chiba, D., Matsukura, F., Ohno, H., Nature 428, 539 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (66)'
+  - id: cw67
+    added_date: '2026-05-26'
+    citation_key: '67'
+    author: 'Ravelosona, D., et al.'
+    year: '2005'
+    citation_verbatim: |-
+      (67) Ravelosona, D., et al., Phys. Rev. Lett. 95, 117203 (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (67)'
+  - id: cw68
+    added_date: '2026-05-26'
+    citation_key: '68'
+    author: 'Tsoi, M., Fontana, R. E., Parkin, S. S. P.'
+    year: '2003'
+    citation_verbatim: |-
+      (68) Tsoi, M., Fontana, R. E., Parkin, S. S. P., Appl. Phys. Lett. 83, 2617 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (68)'
+  - id: cw69
+    added_date: '2026-05-26'
+    citation_key: '69'
+    author: 'Grollier, J., et al.'
+    year: '2003'
+    citation_verbatim: |-
+      (69) Grollier, J., et al., Appl. Phys. Lett. 83, 509 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (69)'
+  - id: cw70
+    added_date: '2026-05-26'
+    citation_key: '70'
+    author: 'Beach, G. S. D., Nistor, C., Knutson, C., Tsoi, M., Erskine, J. L.'
+    year: '2005'
+    citation_verbatim: |-
+      (70) Beach, G. S. D., Nistor, C., Knutson, C., Tsoi, M., Erskine, J. L., Nat. Mater. 4, 741
+      (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (70)'
+  - id: cw71
+    added_date: '2026-05-26'
+    citation_key: '71'
+    author: 'Beach, G. S. D., Knutson, C., Tsoi, M., Erskine, J. L.'
+    year: '2007'
+    citation_verbatim: |-
+      (71) Beach, G. S. D., Knutson, C., Tsoi, M., Erskine, J. L., J. Magn. Magn. Mater. 310,
+      2038 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (71)'
+  - id: cw72
+    added_date: '2026-05-26'
+    citation_key: '72'
+    author: 'Hayashi, M., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (72) Hayashi, M., et al., Phys. Rev. Lett. 96, 207205 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (72)'
+  - id: cw73
+    added_date: '2026-05-26'
+    citation_key: '73'
+    author: 'Hayashi, M., et al.'
+    year: '2007'
+    citation_verbatim: |-
+      (73) Hayashi, M., et al., Nat. Phys. 3, 21 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (73)'
+  - id: cw74
+    added_date: '2026-05-26'
+    citation_key: '74'
+    author: 'Klaui, M., et al.'
+    year: '2003'
+    citation_verbatim: |-
+      (74) Klaui, M., et al., Appl. Phys. Lett. 83, 105 (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (74)'
+  - id: cw75
+    added_date: '2026-05-26'
+    citation_key: '75'
+    author: 'Kimura, T., Otani, Y., Yagi, I., Tsukagoshi, K., Aoyagi, Y.'
+    year: '2003'
+    citation_verbatim: |-
+      (75) Kimura, T., Otani, Y., Yagi, I., Tsukagoshi, K., Aoyagi, Y., J. Appl. Phys. 94, 7226
+      (2003).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (75)'
+  - id: cw76
+    added_date: '2026-05-26'
+    citation_key: '76'
+    author: 'Vernier, N., Allwood, D. A., Atkinson, D., Cooke, M. D., Cowburn, R. P.'
+    year: '2004'
+    citation_verbatim: |-
+      (76) Vernier, N., Allwood, D. A., Atkinson, D., Cooke, M. D., Cowburn, R. P., Europhys.
+      Lett. 65, 526 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (76)'
+  - id: cw77
+    added_date: '2026-05-26'
+    citation_key: '77'
+    author: 'Laufenberg, M., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (77) Laufenberg, M., et al., Phys. Rev. Lett. 97, 046602 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (77)'
+  - id: cw78
+    added_date: '2026-05-26'
+    citation_key: '78'
+    author: 'Thomas, L., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (78) Thomas, L., et al., Nature 443, 197 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (78)'
+  - id: cw79
+    added_date: '2026-05-26'
+    citation_key: '79'
+    author: 'Yamaguchi, A., et al.'
+    year: '2004'
+    citation_verbatim: |-
+      (79) Yamaguchi, A., et al., Phys. Rev. Lett. 92, 077205 (2004).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (79)'
+  - id: cw80
+    added_date: '2026-05-26'
+    citation_key: '80'
+    author: 'Yamaguchi, A., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (80) Yamaguchi, A., et al., Phys. Rev. Lett. 96, 179904 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (80)'
+  - id: cw81
+    added_date: '2026-05-26'
+    citation_key: '81'
+    author: 'Klaui, M., et al.'
+    year: '2005'
+    citation_verbatim: |-
+      (81) Klaui, M., et al., Phys. Rev. Lett. 95, 026601 (2005).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (81)'
+  - id: cw82
+    added_date: '2026-05-26'
+    citation_key: '82'
+    author: 'Meier, G., et al.'
+    year: '2007'
+    citation_verbatim: |-
+      (82) Meier, G., et al., Phys. Rev. Lett. 98, 187202 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (82)'
+  - id: cw83
+    added_date: '2026-05-26'
+    citation_key: '83'
+    author: 'Parkin, S. S. P., Hayashi, M., Thomas, L.'
+    year: '2008'
+    citation_verbatim: |-
+      (83) Parkin, S. S. P., Hayashi, M., Thomas, L., Science 320, 190 (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (83)'
+  - id: cw84
+    added_date: '2026-05-26'
+    citation_key: '84'
+    author: 'Núñez, A. S., et al.'
+    year: '2006'
+    citation_verbatim: |-
+      (84) Núñez, A. S., et al., Phys. Rev. B 73, 214426 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 27, References (84)'
+  - id: cw85
+    added_date: '2026-05-26'
+    citation_key: '85'
+    author: 'Xu, Y., Wang, S., Xia, K.'
+    year: '2008'
+    citation_verbatim: |-
+      (85) Xu, Y., Wang, S., Xia, K., Phys. Rev. Lett. 100, 226602 (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (85)'
+  - id: cw86
+    added_date: '2026-05-26'
+    citation_key: '86'
+    author: 'Gomonay, H., Loktev, V.'
+    year: '2008'
+    citation_verbatim: |-
+      (86) Gomonay, H., Loktev, V., Low Temp. Phys. 34, 198 (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (86)'
+  - id: cw87
+    added_date: '2026-05-26'
+    citation_key: '87'
+    author: 'Wei, Z., Sharma, A., Bass, J., Tsoi, M.'
+    year: '2009'
+    citation_verbatim: |-
+      (87) Wei, Z., Sharma, A., Bass, J., Tsoi, M., J. Appl. Phys. 105, 07D113 (2009).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (87)'
+  - id: cw88
+    added_date: '2026-05-26'
+    citation_key: '88'
+    author: 'Meiklejohn, W. H., Bean, C. P.'
+    year: '1956'
+    citation_verbatim: |-
+      (88) Meiklejohn, W. H., Bean, C. P., Phys. Rev. 102, 1413 (1956).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (88)'
+  - id: cw89
+    added_date: '2026-05-26'
+    citation_key: '89'
+    author: 'Stöhr, J., Siegmann, H. C.'
+    year: '2006'
+    title: 'Magnetism: from fundamentals to nanoscale dynamics'
+    citation_verbatim: |-
+      (89) Stöhr, J., Siegmann, H. C., Magnetism: from fundamentals to nanoscale dynamics
+      (Springer Series in Solid-State Sciences, Vol. 152, Springer, 2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (89)'
+  - id: cw90
+    added_date: '2026-05-26'
+    citation_key: '90'
+    author: 'Urazhdin, S., Chien, C. L., Guslienko, K. Y., Novozhilova, L.'
+    year: '2006'
+    citation_verbatim: |-
+      (90) Urazhdin, S., Chien, C. L., Guslienko, K. Y., Novozhilova, L., Phys. Rev. B 73,
+      054416 (2006).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (90)'
+  - id: cw91
+    added_date: '2026-05-26'
+    citation_key: '91'
+    author: 'Wei, Z., et al.'
+    year: '2007'
+    citation_verbatim: |-
+      (91) Wei, Z., et al., Phys. Rev. Lett. 98, 116603 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (91)'
+  - id: cw92
+    added_date: '2026-05-26'
+    citation_key: '92'
+    author: 'Urazhdin, S., Anthony, N.'
+    year: '2007'
+    citation_verbatim: |-
+      (92) Urazhdin, S., Anthony, N., Phys. Rev. Lett. 99, 046602 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (92)'
+  - id: cw93
+    added_date: '2026-05-26'
+    citation_key: '93'
+    author: 'Tang, X.-L., Zhang, H.-W., Su, H., Zhong, Z.-Y., Jing, Y.-L.'
+    year: '2007'
+    citation_verbatim: |-
+      (93) Tang, X.-L., Zhang, H.-W., Su, H., Zhong, Z.-Y., Jing, Y.-L., Appl. Phys. Lett. 91,
+      122504 (2007).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (93)'
+  - id: cw94
+    added_date: '2026-05-26'
+    citation_key: '94'
+    author: 'Dai, N. V., et al.'
+    year: '2008'
+    citation_verbatim: |-
+      (94) Dai, N. V., et al., Phys. Rev. B 77, 132406 (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (94)'
+  - id: cw95
+    added_date: '2026-05-26'
+    citation_key: '95'
+    author: 'Basset, J., Sharma, A., Wei, Z., Bass, J., Tsoi, M.'
+    year: '2008'
+    citation_verbatim: |-
+      (95) Basset, J., Sharma, A., Wei, Z., Bass, J., Tsoi, M., Proc. SPIE 7036, 703605
+      (2008).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (95)'
+  - id: cw96
+    added_date: '2026-05-26'
+    citation_key: '96'
+    author: 'Wei, Z., Basset, J., Sharma, A., Bass, J., Tsoi, M.'
+    year: '2009'
+    citation_verbatim: |-
+      (96) Wei, Z., Basset, J., Sharma, A., Bass, J., Tsoi, M., J. Appl. Phys. 105, 07D108
+      (2009).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (96)'
+  - id: cw97
+    added_date: '2026-05-26'
+    citation_key: '97'
+    author: 'Moore, G. E.'
+    year: '1965'
+    title: 'Electronics Magazine'
+    citation_verbatim: |-
+      (97) Moore, G. E., Electronics Magazine (McGraw Hill, New York, 1965).
+    source:
+      path: government/dird-10-metallic-spintronics-20100323.pdf
+      location: 'p. 28, References (97)'

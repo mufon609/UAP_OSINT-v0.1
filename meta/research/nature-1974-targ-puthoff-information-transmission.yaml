@@ -155,5 +155,109 @@ quotes:
     location: 'p. 13, ¶ acknowledgements'
   significance: 'Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).'
   statement_date: '1974-10'
-cited_works: []
+cited_works:
+- id: cw1
+  added_date: '2026-05-26'
+  citation_key: '1'
+  author: 'Pratt, J. , Rhine, J. B. , Stuart, C., and Greenwood, J.'
+  year: '1940'
+  title: 'Extra Sensory Perception after Sixty Years'
+  citation_verbatim: |-
+    1 Pratt, J. , Rhine, J. B. , Stuart, C., and Greenwood, J. , Extra Sensory
+    Perception after Sixty Years (Henry Holt, New York, 1940).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 1'
+- id: cw2
+  added_date: '2026-05-26'
+  citation_key: '2'
+  author: 'Soal, S. , and Bateman, F.'
+  year: '1954'
+  title: 'Modern Experiments in Telepathy'
+  citation_verbatim: |-
+    ^ Soal, S. , and Bateman, F. , Modern Experiments in Telepathy (Faber and
+    Faber, London, 1954).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 2'
+- id: cw3
+  added_date: '2026-05-26'
+  citation_key: '3'
+  author: 'Vasilliev, L. L.'
+  year: '1963'
+  title: 'Experiments in Mental Suggestion'
+  citation_verbatim: |-
+    ^ Vasilliev, L. L. , Experiments in Mental Suggestion (ISMI Publications,
+    Hampshire, England, 1963).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 3'
+- id: cw4
+  added_date: '2026-05-26'
+  citation_key: '4'
+  author: 'Musso, J. R. , and Granero, M.'
+  year: '1973'
+  citation_verbatim: |-
+    4 Musso, J. R. , and Granero, M. , J. Parapsychology , 37, 13-37 (1973).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 4'
+- id: cw5
+  added_date: '2026-05-26'
+  citation_key: '5'
+  author: 'Osis, K.'
+  year: '1972'
+  citation_verbatim: |-
+    5 Osis, K. , ASPR Newsletter, No. 14 (1972).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 5'
+- id: cw6
+  added_date: '2026-05-26'
+  citation_key: '6'
+  author: 'Tart, C. T.'
+  year: '1963'
+  title: 'Physiological Correlates of Psi Cognition'
+  citation_verbatim: |-
+    ^ Tart, C. T. , Physiological Correlates of Psi Cognition, Int. J. Parapsychology ,
+    Y, No. 4 (1963).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 6'
+- id: cw7
+  added_date: '2026-05-26'
+  citation_key: '7'
+  author: 'Dean, E. D.'
+  year: '1966'
+  citation_verbatim: |-
+    7 Dean, E. D. , Int. J. Neuropsychiatry, 2 (1966).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 7'
+- id: cw8
+  added_date: '2026-05-26'
+  citation_key: '8'
+  author: 'Hill, D. , and Parr, G.'
+  year: '1963'
+  title: 'Electroencephalography: A Symposium on its Various Aspects'
+  citation_verbatim: |-
+    O
+
+    Hill, D. , and Parr, G. , Electroencephalography: A Symposium on its
+    Various Aspects (Macmillan, New York, 196 3).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 8'
+- id: cw9
+  added_date: '2026-05-26'
+  citation_key: '9'
+  author: 'Siegel, S.'
+  year: '1956'
+  title: 'Nonparametric Statistics for the Behavioral Sciences'
+  citation_verbatim: |-
+    9 Siegel, S. , Nonparametric Statistics for the Behavioral Sciences, pp. 152-156
+    (McGraw-Hill, New York, 1956).
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, References 9'
 naming_quirks: []

@@ -176,6 +176,22 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** 1 Pratt, J. , Rhine, J. B. , Stuart, C., and Greenwood, J. , Extra Sensory Perception after Sixty Years (Henry Holt, New York, 1940).
+- **[2]** ^ Soal, S. , and Bateman, F. , Modern Experiments in Telepathy (Faber and Faber, London, 1954).
+- **[3]** ^ Vasilliev, L. L. , Experiments in Mental Suggestion (ISMI Publications, Hampshire, England, 1963).
+- **[4]** 4 Musso, J. R. , and Granero, M. , J. Parapsychology , 37, 13-37 (1973).
+- **[5]** 5 Osis, K. , ASPR Newsletter, No. 14 (1972).
+- **[6]** ^ Tart, C. T. , Physiological Correlates of Psi Cognition, Int. J. Parapsychology , Y, No. 4 (1963).
+- **[7]** 7 Dean, E. D. , Int. J. Neuropsychiatry, 2 (1966).
+- **[8]** O Hill, D. , and Parr, G. , Electroencephalography: A Symposium on its Various Aspects (Macmillan, New York, 196 3).
+- **[9]** 9 Siegel, S. , Nonparametric Statistics for the Behavioral Sciences, pp. 152-156 (McGraw-Hill, New York, 1956).
+
+---
+
 ## Associated Nodes
 
 ### People

@@ -192,20 +192,23 @@ rubric-audited). Re-level the set for consistency.
 | dird-04 biomaterials | 33 | 55 | 1.67 |
 | dird-05 aerospace-platforms-materials | 28 | 50 | 1.79 |
 
-**(b) Extract `cited_works` — all 13 BUILT DIRDs are DONE.** Each built DIRD's
+**(b) Extract `cited_works` — all 14 BUILT DIRDs are DONE.** Each built DIRD's
 reference list is extracted and source-fidelity-gated, with the citation marker
-style preserved per source (`[N]` brackets, `^N` endnotes, `N.` numbered list,
-and dird-26's sub-lettered `[5-a/b/c]` UFO-relevant entries — Schuessler,
-Sturrock, Vallee, Cash-Landrum). dird-03 (Pulsed HPM) and dird-04 (Biomaterials)
-were assessed and **carry no formal reference list** (end at Conclusion / Summary;
-sibling marker-scan = 0; PDF last page confirmed) — their `cited_works: []` is
-correct, not missing. Remaining: the UNBUILT DIRDs (10/11/12/13/14/16/17/19
-through 37 — 24 archived, none built) get their citations when each is built —
-same per-DIRD flow (locate region → image-verify sibling vs PDF → worker extract →
-integrate). (dird-08/09 are now built; their cited_works were extracted at build
-time and their reference page refs corrected to PDF-viewer pages — see (c).) The
-recurring-author network is the payoff (Puthoff across dird-24 + dird-15;
-E. W. Davis / C. Maccone cross-DIRD).
+style preserved per source (`[N]` brackets, `(N)` parenthetical, `^N` endnotes,
+`N.` numbered list, dird-09's `N.N` dotted chapter.ref, and dird-26's sub-lettered
+`[5-a/b/c]` UFO-relevant entries — Schuessler, Sturrock, Vallee, Cash-Landrum).
+dird-03 (Pulsed HPM) and dird-04 (Biomaterials) were assessed and **carry no
+formal reference list** (end at Conclusion / Summary; sibling marker-scan = 0;
+PDF last page confirmed) — their `cited_works: []` is correct, not missing.
+Remaining: the UNBUILT DIRDs (11/12/13/14/16/17/19 through 37 — 23 archived, none
+built) get their citations when each is built — same per-DIRD flow (locate region
+→ image-verify sibling vs PDF → worker extract → integrate). (dird-08/09
+cited_works were extracted at build time; **dird-10** was built in a later session
+and shipped with `cited_works: []` — the omission was caught only on review, which
+prompted the `cited_works_uncaptured` enforcement gate, and its 97 references were
+then backfilled — see C6.) The recurring-author network is the payoff (Puthoff
+across dird-24 + dird-15; E. W. Davis / C. Maccone cross-DIRD; M. Tsoi within
+dird-10).
 
 *Illegible references (deferred — design on first real case).* dird-24's
 references were all recoverable by image-verifying the PDF page. If a remaining
@@ -516,4 +519,64 @@ and the build-state block; record whether the existing set is acceptable-as-is
 (grandfathered) or warrants a separate rename sweep.
 
 **Blocks:** none (advisory; future DIRD builds proceed without it).
+**Blocked by:** none.
+
+### C6 — cited_works empty-state convention ("None") + enforcement hardening
+
+**Context.** `cited_works` is required-but-emptyable on document artifacts, but a
+bare `cited_works: []` is **ambiguous**: it means BOTH "the source has no
+reference list" (legitimate — an executive order, a news item, a hearing
+transcript) AND "the source has references nobody captured yet" (the dird-10
+defect — built with `[]` despite a 97-entry `6. References` section). The interim
+gate `cited_works_uncaptured` (`scripts/checks/cited_works_uncaptured.py`,
+extract phase, hard error) resolves this by **heuristic** — scanning the source
+text for a reference-list signal — which is necessarily imperfect (limits below).
+
+**Decided direction (maintainer): the section needs an explicit default
+convention — "None".** A document with no reference list should *affirmatively
+record that* (the section's empty state is an explicit "None" sentinel, not a
+bare `[]`), so empty is never silently ambiguous and "mandatory capture" means:
+every document artifact either **captures its references** or **affirms the
+source has none**. Design + apply: the affirmation marker (sentinel value / flag
+shape), the schema change (`schema-research-artifact.yaml`), the
+`research-scaffold.py` default, the worker/builder role updates, and a one-time
+backfill of the affirmation onto every existing no-reference document (the EOs,
+news, the 4 written testimonies, the AATIP products list, cia-sri-geller,
+elizondo-qfr, pentagon-uapda, tablet, wsj, and dird-03/04 — all assessed
+reference-less). The heuristic then demotes to a **cross-check**: warn/error when
+an affirmed-"None" source actually exhibits a reference-list signal (a false
+affirmation), rather than being the primary gate.
+
+**Heuristic gate's known limits (what "None" supersedes).**
+`cited_works_uncaptured` is tuned for **zero false positives** (a hard gate must
+not wrongly block — e.g. it deliberately ignores `(N)` legislative enumeration
+like the UAP Disclosure Act's statutory subsections, counting `(N)` only after a
+"References" heading) at the cost of **false negatives**: it detects `[N]` / `^N`
+footnote / `N.N` dotted / `(N)`-after-heading / `N.`-after-heading formats but
+MISSES (a) bare `N␣Author` numbered lists with no heading (nature-1974's CIA-RDP
+scan — its 9 refs were backfilled by hand); (b) several already-populated DIRD
+formats (dird-02/05/06/07/08 — currently populated, so moot today, but a future
+empty doc in those formats would slip through). The "None"-affirmation convention
+closes these because its pass case does not depend on format detection.
+
+**Blocks:** none.
+**Blocked by:** none (the interim heuristic gate is shipped; this hardens it).
+
+### C7 — Decide whether citation capture warrants a dedicated `/capture-citations` skill
+
+Citation capture/backfill — locate a source's reference list, extract each entry
+verbatim into `cited_works[]` with the correct marker format + physical-page
+`source.location`, validate against `cited_works.py` — is a distinct, repeatable
+operation that recurs for every reference-bearing document and was just run by
+hand (dird-10's 97 entries + nature-1974's 9). It **overlaps existing surfaces**:
+the `/build` worker already captures `cited_works` at build time, and `/augment`
+covers maintenance backfill on already-built nodes. So the question is whether a
+dedicated action skill earns its keep, or whether the discipline belongs as an
+`/augment` use-case plus a `meta/conventions.md` section. Decide; if yes, the
+skill encodes the marker-format handling (mirror `cited_works_uncaptured.py`'s
+format catalogue), the verbatim + physical-page requirements, and the C6 "None"
+convention. Gated (test-before-BACKLOG): build only if the backfill shape recurs
+beyond the current handful — otherwise leave it to `/augment`.
+
+**Blocks:** none.
 **Blocked by:** none.

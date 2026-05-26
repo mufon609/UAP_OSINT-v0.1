@@ -1015,6 +1015,23 @@ Comparison framings also count as targets and should be avoided:
 one has fewer — anything to add?". Only flag specific entries that
 look unsupported by source; never flag aggregate counts.
 
+**Density governs count, not capture.** The rule bars count *targets*;
+it does not license declining to capture a class of source material the
+source actually carries. Whether the source has a reference list to
+record in `cited_works`, whether a passage is a load-bearing quote,
+whether a contradiction is attested — those are source-*presence*
+questions, answered by reading the source, not density questions. The
+misread to refuse is "these references aren't load-bearing, so leave
+`cited_works` empty": a source-attested reference list is captured
+*because the source carries it* (the DIRD passage rubric below names
+References as a capture category, and `cited_works` is required-but-
+emptyable on every document artifact); `cited_works_uncaptured` errors
+when an empty list leaves a detectable source reference list uncaptured.
+Density governs only how many entries that capture then yields. The same
+holds for every required-but-emptyable source-anchored section: an empty
+list is correct only when the source genuinely lacks that material,
+never as a discretionary skip.
+
 Structural thresholds are different and remain in force. The finding-
 node creation threshold (~200 words, 3+ entity nodes, or text about
 to be written into 3+ different nodes per `meta/schema.yaml::types

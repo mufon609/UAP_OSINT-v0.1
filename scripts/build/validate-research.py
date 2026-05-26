@@ -97,6 +97,7 @@ from checks import affiliations as ck_affiliations
 from checks import artifact_top_level as ck_artifact_top_level
 from checks import cited_findings as ck_cited_findings
 from checks import cited_works as ck_cited_works
+from checks import cited_works_uncaptured as ck_cited_works_uncaptured
 from checks import closure_path as ck_closure_path
 from checks import contracts as ck_contracts
 from checks import contradictions as ck_contradictions
@@ -246,6 +247,7 @@ _ARTIFACT_CHECKS = [
     ck_rumors,
     ck_timeline,
     ck_cited_works,  # document-conditional; verbatim source-fidelity on references
+    ck_cited_works_uncaptured,  # document-conditional; errors when an empty cited_works leaves a source reference list uncaptured
     # Archetype / kind-conditional entry-list checks
     ck_corroboration_items,
     ck_program_involvement,

@@ -73,6 +73,7 @@ CHECK_PHASE = {
     "location_format": "extract",  # roman / printed-folio location-ref guard
     "document_quote_source": "extract",
     "cited_works": "extract",
+    "cited_works_uncaptured": "extract",
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
 

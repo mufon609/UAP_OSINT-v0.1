@@ -303,6 +303,110 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ---
 
+## References
+
+Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
+
+- **[1]** (1) Baibich, M. N., et al., Phys. Rev. Lett. 61, 2472 (1988).
+- **[2]** (2) Binasch, G., et al., Phys. Rev. B 39, 4828 (1989).
+- **[3]** (3) Slonczewski, J. C., J. Magn. Magn. Mater. 159, L1 (1996).
+- **[4]** (4) Berger, L., J. Appl. Phys. 81, 4880 (1997).
+- **[5]** (5) Tsoi, M., et al., Phys. Rev. Lett. 80, 4281 (1998).
+- **[6]** (6) Myers, E. B., et al., Science 285, 867 (1999).
+- **[7]** (7) Sun, J. Z., J. Magn. Magn. Mater. 202, 157 (1999).
+- **[8]** (8) Wegrowe, J.-E., et al., Europhys. Lett. 45, 626 (1999).
+- **[9]** (9) Tsoi, M., et al., Nature 406, 46 (2000).
+- **[10]** (10) Beach, G. S. D., et al., Phys. Rev. Lett. 97, 057203 (2006).
+- **[11]** (11) Beach, G. S. D., et al., Phys. Rev. Lett. 102, 067201 (2009).
+- **[12]** (12) Fert, A., Bruno, P., in Ultrathin Magnetic structures II: An Introduction to the Electronic, Magnetic and Structural Properties, ed. by J.A.C. Bland and B. Heinrich (Berlin: Springer, 1994), p.82.
+- **[13]** (13) Levy, P. M., in Solid State Physics, ed. by H. Ehrenreich and D. Turnbull, vol. 47 (Boston, London: Acad. Press, 1994), p.367.
+- **[14]** (14) Dieny, B., J. Magn. Mag. Mat. 136, 335 (1994).
+- **[15]** (15) Gijs, M. A.M., Bauer, G. E. W., Adv. Phys. 46, 285 (1997).
+- **[16]** (16) Ansermet, J.-Ph., J. Phys.: Cond. Mat. 10, 6027 (1998).
+- **[17]** (17) Bass, J., Pratt, W. P., Jr., J. Magn. Magn. Mat. 200, 274 (1999).
+- **[18]** (18) Fert, A., Piraux, L., J. Magn. Magn. Mat. 200, 338 (1999).
+- **[19]** (19) Gijs, M. A.M., in Magnetic Multilayers and Giant Magnetoresistance: Fundamentals and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.130.
+- **[20]** (20) Coehoorn, P., in Magnetic Multilayers and Giant Magnetoresistance: Fundamentals and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.65.
+- **[21]** (21) Barthelemy, A., Fert, A., and Petroff, F., in Handbook of Magnetic Materials, edited by K. H. J. Buschow (Amsterdam: Elsevier, 1999), p.1.
+- **[22]** (22) Tsymbal, E.Y., Pettifor, D.G., in Solid State Physics, ed. by H. Ehrenreich and F. Spaepen, Vol. 56 (Academic Press, 2001) pp.113-237.
+- **[23]** (23) Ashcroft, W., Mermin, D., Solid State Physics (Saunders College Publishing, Forth Worth, 1976).
+- **[24]** (24) Ciureanu, P., in Thin Film Resistance Sensors, ed. by P. Ciureanu, S. Middelhoek (Institute of Physics Publishing, Bristol, 1992), p. 253.
+- **[25]** (25) Electrocrystallization, ed. by R. Weil, R. G. Barradas (The Electrochemical Society, Pennington, 1981).
+- **[26]** (26) Lashmore, D. S., Dariel, M. P., J. Electrochem. Soc. 135, 1218 (1988).
+- **[27]** (27) Ohring, M., The Materials Science of Thin Films (Academic, Boston, 1992).
+- **[28]** (28) Slaughter, J. M., Pratt, W. P., Jr., and Schroeder, P. A., Rev. Sci. Instrum. 60, 127 (1989).
+- **[29]** (29) Parkin, S. S. P., More, N., and Roche, K. P., Phys. Rev. Lett. 64, 2304 (1990).
+- **[30]** (30) Parkin, S. S. P., Bhadra, R., and Roche, K. P., Phys. Rev. Lett. 66, 2152 (1991).
+- **[31]** (31) Fert, A., Campbell, I. A., J. de Physique 32, C1-46 (1971).
+- **[32]** (32) Mott, N. F., Proc. Roy. Soc. London, Ser. A 153, 699 (1936), and 156, 368 (1936), and Adv. Phys. 13, 325 (1964).
+- **[33]** (33) Pratt, W. P., Jr., et al., Phys. Rev. Lett. 66, 3060 (1991).
+- **[34]** (34) Dieny, B., et al. J. Appl. Phys. 69, 4774 (1991).
+- **[35]** (35) Piraux, L., et al., Appl. Phys. Lett. 65, 2484 (1994).
+- **[36]** (36) Blondel, A., Meier, J. P., Doudin, B., Ansermet, J.-Ph., Appl. Phys. Lett. 65, 3019 (1994).
+- **[37]** (37) Tsoi, M., Jansen, A. G. M., Bass, J., J. Appl. Phys. 81, 5530 (1997).
+- **[38]** (38) Smith, C., Proc. UK Conf. for Sensors, Test and Measurement Technology, Birmingham, England, Jan. 22-23, 1997.
+- **[39]** (39) Daughton, J. M., et al., IEEE Trans. Magn. 30, 4608 (1994).
+- **[40]** (40) Ji, Y., Chien, C. L., Stiles, M. D., Phys. Rev. Lett. 90, 106601 (2003).
+- **[41]** (41) Rippard, W. H., Pufall, M. R., Kaka, S., Russek, S. E., Silva, T. J., Phys. Rev. Lett. 92, 27201 (2004).
+- **[42]** (42) Katine, J. A., Albert, F. J., Buhrman, R. A., Myers, E. B., Ralph, D. C., Phys. Rev. Lett. 84, 3149 (2000).
+- **[43]** (43) Grollier, J., et al., Appl. Phys. Lett. 78, 3663 (2001).
+- **[44]** (44) Liu, Y., Zhang, Z., Wang, J., Freitas, P. P., Martins, J. L., J. Appl. Phys. 93, 8385 (2003)
+- **[45]** (45) Moriya, R., Hamaya, K., Oiwa, A., Munekata, H., Jpn. J. Appl. Phys. Part 2 - Lett. Express Lett. 43, L825 (2004).
+- **[46]** (46) Dieny, B., et al., Phys.Rev.B 43, 1297 (1991).
+- **[47]** (47) Waintal, X., Myers, E. B., Brouwer, P. W., Ralph, D. C., Phys. Rev. B 62, 12317- 12327 (2000)
+- **[48]** (48) Braganca, P.M., et al., Appl. Phys. Lett. 87, 112507 (2005).
+- **[49]** (49) Rippard, W. H., et al., Phys. Rev. Lett. 95, 067203 (2005).
+- **[50]** (50) Kiselev, S. I., et al., Nature 425, 380 (2003).
+- **[51]** (51) Krivorotov, I. N., et al., Science 307, 228-231 (2005).
+- **[52]** (52) Acremann, Y., et al., Phys. Rev. Lett. 96, 217202 (2006).
+- **[53]** (53) Kilcoyne, A. L. D., et al., J. Synchrotron Radiat. 10, 125 (2003).
+- **[54]** (54) Stöhr, J., et al., Science 259, 658 (1993).
+- **[55]** (55) Rippard, W. H., Pufall, M. R., Kaka, S., Silva, T. J., Russek, S. E., Phys. Rev. B 70, 100406 (2004).
+- **[56]** (56) Khitun, A., Nikonov, D. E., Bao, M., Galatsis, K., Wang, K. L., Nanotechnology 18, 465202 (2007).
+- **[57]** (57) Schneider, T., et al., Appl. Phys. Lett. 92, 022505 (2008).
+- **[58]** (58) Driskill-Smith, A. A. G., Huai, Y., Future Fab Intl. 23, 28 (2007).
+- **[59]** (59) Berger, L., J. Appl. Phys. 49, 2156 (1978).
+- **[60]** (60) Berger, L., J. Appl. Phys. 55, 1954 (1984).
+- **[61]** (61) Berger, L., Phys. Rev. B 33, 1572 (1986).
+- **[62]** (62) Berger, L., J. Appl. Phys. 63, 1663 (1988).
+- **[63]** (63) Freitas, P. P., Berger, L., J. Appl. Phys. 57, 1266 (1985).
+- **[64]** (64) Hung, C.-Y., Berger, L., J. Appl. Phys. 63, 4276 (1988).
+- **[65]** (65) Hung, C.-Y., Berger, L., Shih, C.Y., J. Appl. Phys. 67, 5941 (1990).
+- **[66]** (66) Yamanouchi, M., Chiba, D., Matsukura, F., Ohno, H., Nature 428, 539 (2004).
+- **[67]** (67) Ravelosona, D., et al., Phys. Rev. Lett. 95, 117203 (2005).
+- **[68]** (68) Tsoi, M., Fontana, R. E., Parkin, S. S. P., Appl. Phys. Lett. 83, 2617 (2003).
+- **[69]** (69) Grollier, J., et al., Appl. Phys. Lett. 83, 509 (2003).
+- **[70]** (70) Beach, G. S. D., Nistor, C., Knutson, C., Tsoi, M., Erskine, J. L., Nat. Mater. 4, 741 (2005).
+- **[71]** (71) Beach, G. S. D., Knutson, C., Tsoi, M., Erskine, J. L., J. Magn. Magn. Mater. 310, 2038 (2007).
+- **[72]** (72) Hayashi, M., et al., Phys. Rev. Lett. 96, 207205 (2006).
+- **[73]** (73) Hayashi, M., et al., Nat. Phys. 3, 21 (2007).
+- **[74]** (74) Klaui, M., et al., Appl. Phys. Lett. 83, 105 (2003).
+- **[75]** (75) Kimura, T., Otani, Y., Yagi, I., Tsukagoshi, K., Aoyagi, Y., J. Appl. Phys. 94, 7226 (2003).
+- **[76]** (76) Vernier, N., Allwood, D. A., Atkinson, D., Cooke, M. D., Cowburn, R. P., Europhys. Lett. 65, 526 (2004).
+- **[77]** (77) Laufenberg, M., et al., Phys. Rev. Lett. 97, 046602 (2006).
+- **[78]** (78) Thomas, L., et al., Nature 443, 197 (2006).
+- **[79]** (79) Yamaguchi, A., et al., Phys. Rev. Lett. 92, 077205 (2004).
+- **[80]** (80) Yamaguchi, A., et al., Phys. Rev. Lett. 96, 179904 (2006).
+- **[81]** (81) Klaui, M., et al., Phys. Rev. Lett. 95, 026601 (2005).
+- **[82]** (82) Meier, G., et al., Phys. Rev. Lett. 98, 187202 (2007).
+- **[83]** (83) Parkin, S. S. P., Hayashi, M., Thomas, L., Science 320, 190 (2008).
+- **[84]** (84) Núñez, A. S., et al., Phys. Rev. B 73, 214426 (2006).
+- **[85]** (85) Xu, Y., Wang, S., Xia, K., Phys. Rev. Lett. 100, 226602 (2008).
+- **[86]** (86) Gomonay, H., Loktev, V., Low Temp. Phys. 34, 198 (2008).
+- **[87]** (87) Wei, Z., Sharma, A., Bass, J., Tsoi, M., J. Appl. Phys. 105, 07D113 (2009).
+- **[88]** (88) Meiklejohn, W. H., Bean, C. P., Phys. Rev. 102, 1413 (1956).
+- **[89]** (89) Stöhr, J., Siegmann, H. C., Magnetism: from fundamentals to nanoscale dynamics (Springer Series in Solid-State Sciences, Vol. 152, Springer, 2006).
+- **[90]** (90) Urazhdin, S., Chien, C. L., Guslienko, K. Y., Novozhilova, L., Phys. Rev. B 73, 054416 (2006).
+- **[91]** (91) Wei, Z., et al., Phys. Rev. Lett. 98, 116603 (2007).
+- **[92]** (92) Urazhdin, S., Anthony, N., Phys. Rev. Lett. 99, 046602 (2007).
+- **[93]** (93) Tang, X.-L., Zhang, H.-W., Su, H., Zhong, Z.-Y., Jing, Y.-L., Appl. Phys. Lett. 91, 122504 (2007).
+- **[94]** (94) Dai, N. V., et al., Phys. Rev. B 77, 132406 (2008).
+- **[95]** (95) Basset, J., Sharma, A., Wei, Z., Bass, J., Tsoi, M., Proc. SPIE 7036, 703605 (2008).
+- **[96]** (96) Wei, Z., Basset, J., Sharma, A., Bass, J., Tsoi, M., J. Appl. Phys. 105, 07D108 (2009).
+- **[97]** (97) Moore, G. E., Electronics Magazine (McGraw Hill, New York, 1965).
+
+---
+
 ## Associated Nodes
 
 ### Organizations
