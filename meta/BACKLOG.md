@@ -466,25 +466,3 @@ and the build-state block; record whether the existing set is acceptable-as-is
 
 **Blocks:** none (advisory; future DIRD builds proceed without it).
 **Blocked by:** none.
-
-### C6 — Propagate the dird-09 cross-link into dia-aatip-products-list-2018
-
-DIRD-09 (`/documents/dird-09-iec-fusion`, built this session) is attachment 1 on
-the DIA→Congress products list. `/documents/dia-aatip-products-list-2018` already
-carries a verbatim quote naming attachment 1 ("Inertial Electrostatic Confinement
-Fusion, Dr. George Miley, Univ. Of Illinois"), but its description-prose
-attachment roster does not yet wrap that mention with the now-built
-`[`/documents/dird-09-iec-fusion`]` link — so dird-09 is absent from the
-products-list's auto-derived `## Associated Nodes → Documents` block (which lists
-the other built DIRDs). Every prior built DIRD closed this same loop. Fix =
-Builder-shape artifact edit on `meta/research/dia-aatip-products-list-2018.yaml`
-(bracket-wrap attachment 1's mention in the description) + rebuild; no new bytes,
-no Worker/External/Archive. Surfaced by the dird-09 build auditor.
-
-**Blocks:** none.
-**Blocked by:** at dird-09 build time, `dia-aatip-products-list-2018` was being
-edited by the concurrent DIRD-08 build (uncommitted `M` on both its node and
-artifact, adding dird-08's own cross-link). Deferred to avoid a write collision
-with that agent. Apply once the DIRD-08 build has committed/released the
-products-list — ideally fold dird-09's wrap into the same pass that confirms
-dird-08's.
