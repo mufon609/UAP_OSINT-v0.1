@@ -255,24 +255,38 @@ also emits a one-line physical-page convention note on every multi-page PDF node
 (`pdfinfo` on the archived file is ground truth for the count — the external audit's
 third-party page-listing numbers were all wrong.)
 
-**(d) Verbatim fidelity — re-verify each OCR sibling against the PDF page images.**
+**(d) Image-verify each OCR sibling against the PDF page images — dird-08/09 DONE.**
 For an OCR-scan DIRD the verbatim-quote check compares artifact ↔ `.txt` sibling
-only; it is structurally blind to drift between the hand-made sibling and the actual
-PDF (the sibling is the canonical extract, verified once at production and never
-re-checked). A PDF-grounded external audit of dird-08/09 surfaced candidate
-sibling-transcription drift the check cannot catch — **dird-08**: "globe-encircling
-UAV flight" (PDF may read "UAV turbojet flight"), "interactions with the walls" (PDF
-may read "on the walls"), "Sänger" rendered with the umlaut where the source body /
-figure captions / ref 37 may print "Sanger"; **dird-09**: "Tokomak" standardized
-where the source uses both "Tokamak" and "Tokomak" within one paragraph, a
-"shownif" → "shown if" half-fix, and minor punctuation/case drift. Confirm each
-already-quoted span (and reference) against the PDF page image; correct the sibling
-+ artifact where it diverges, and preserve genuine non-canonical source forms with a
-Source-Form Notes row rather than silently normalizing. The structural gap applies
-to **every** OCR sibling in the corpus, not only DIRDs — but the audit evidence is
-dird-08/09, so start there. **Shares the per-DIRD image-verification pass with (a)** —
-do the coverage re-level and the fidelity check in one sweep per DIRD rather than
-reading each sibling against the PDF twice.
+only; it is structurally blind both to (i) drift between the hand-made sibling and
+the PDF, and (ii) page-citation errors (the `quote_location_page` check skips
+sibling-backed sources). The only ground truth is the PDF page image.
+
+**What the dird-08/09 pass found (reframes the concern).** The external audit's
+verbatim-drift claims were **all false positives** — read against the page images,
+every flagged span matched the node: dird-08 "globe-encircling UAV flight" (p.33,
+not "turbojet"), "interactions with the walls" (p.34, not "on"), "Sänger" with the
+umlaut throughout; dird-09 "Tokomak" consistently (no dual spelling), "...television,
+as an approach" (comma, not semicolon), "Central Spot" + "(Figure 1.4). As verified"
+(as the node has), "Robert Hirsh ... shown if Figure 2.1" genuinely printed thus. The
+siblings are **faithful**; the auditor evidently read the garbled OCR text layer, not
+the page images. The non-canonical source forms were already preserved verbatim and
+mostly flagged (dird-09 nq4 Tokomak, nq5 Hirsh; added nq6 "shown if"→"shown in").
+
+**The real defect is page-citation accuracy.** The page-ref convention pass (item (c))
+converted printed→physical by a fixed offset, which faithfully carried **pre-existing
+off-by-one errors** in the original citations — a quote/reference on a section's
+*continuation* page had been cited at the section-start page. Only image/content
+verification catches these. Fixed: **dird-08** 6 (commit ef400c1), **dird-09** 21
+(16 quotes + 5 references; commit 6fdf357).
+
+**Remaining: the other 11 built OCR DIRDs** (01/02/03/04/05/06/07/15/18/24/26). Each
+needs the same per-DIRD image pass — primarily to catch the off-by-one page-citation
+errors the offset conversion propagated (the method: a token-vote page resolver over
+the PDF's `pdftotext` pages flags candidates, then confirm each against the page image
+— references especially, where the resolver is unreliable because reference text
+overlaps body in-text citations). Verbatim is likely faithful (08/09 were) but confirm
+the audit-flagged spans where they exist. **Shares the per-DIRD image pass with (a)** —
+do the coverage re-level and the page/fidelity check in one sweep per DIRD.
 
 **Blocks:** none.
 **Blocked by:** none. Each DIRD's re-level / extraction is gated on OCR-sibling
