@@ -349,14 +349,17 @@ document left in a half-state.
 
 **Residuals (within C3, not blocking):**
 - **HTML `p. N` downgrade — DONE** (commit `9b80590`). See below.
-- **Distribution-insert include/exclude — reconcile (now low-stakes).** The
-  `/prepare-ocr-sibling` skill says EXCLUDE a third-party FOIA / Black Vault
-  cover-insert page, but the post-DIRD siblings had the insert RESTORED
-  (included as content) and the stale manifest notes for dird-04/05/18 still say
-  "excluded." With page-counting gone there is no structural reason to include
-  it, so this is now a pure content-faithfulness call — decide once (third-party
-  insert is not the document → exclude, vs. preserve as content) and align
-  skill + siblings + notes.
+- **Distribution-insert include/exclude — RESOLVED: PRESERVE verbatim.**
+  Maintainer ruling: every physical page of the released PDF — including a
+  third-party FOIA / Black Vault cover-insert — is transcribed verbatim; the
+  released copy's provenance is part of the source and is not hidden (the source
+  is kept as close to verbatim as possible). The siblings already complied (all
+  10 Black Vault DIRDs carry the complete insert; verified verbatim vs the PDF
+  page-2 image for dird-01 + dird-06; the insert is Greenewald's identical
+  standard cover across releases). Fixed the stale surfaces: the
+  `/prepare-ocr-sibling` skill (3 spots: now "transcribe every page incl. the
+  insert") and 9 manifest notes that wrongly claimed the insert was "excluded".
+  conventions.md already said preserve (`:319`). 0 insert-exclusion claims remain.
 - **Optional gates** (lean, preventive; neither built, 0 violations today):
   `sibling_parent_extraction_type` (a `.txt` sibling may exist only for a
   non-text-native parent); and the inverse — a sibling must carry no synthetic

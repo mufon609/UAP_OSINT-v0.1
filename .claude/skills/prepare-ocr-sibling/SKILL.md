@@ -42,9 +42,11 @@ quotes.
    "Producing the `.txt` sibling": preserve redaction markers, the document's
    own typos, and source spellings exactly; render equations and figures as
    bracketed placeholders; transcribe the per-page classification banner and
-   page numbers where they appear; EXCLUDE any third-party distribution / FOIA
-   cover-insert page that is not part of the document itself (report which
-   physical page was excluded). Do **not** add `----- PAGE BREAK -----` or any
+   page numbers where they appear; **transcribe every physical page verbatim,
+   INCLUDING any third-party distribution / FOIA cover-insert** (e.g. a Black
+   Vault declassification page) — the released copy's provenance is part of the
+   source and is not hidden (`meta/conventions.md`: preserve, don't strip).
+   Do **not** add `----- PAGE BREAK -----` or any
    synthetic page structure — the sibling is a clean transcription. `p. N` refs
    against a sibling are verbatim-anchored navigation hints (the page check
    verifies `p. N` only on text-native PDFs with native `pdftotext` form feeds;
@@ -73,7 +75,8 @@ quotes.
        --path {category}/{stem}.txt --format txt --wayback-skip \
        --note "Clean-text sibling of the OCR-scanned <source>. Produced <date>
        via multimodal page-image read; independently verified <date> by a
-       separate agent session — PASS. <excluded insert page(s)>. Equations /
+       separate agent session — PASS. <any third-party FOIA/distribution insert
+       preserved verbatim>. Equations /
        figures bracketed; redactions + source spellings preserved verbatim."
    ```
    The `#clean-text-transcription` URL suffix + `--wayback-skip` mark it as a
@@ -101,9 +104,9 @@ autonomous, no human step needed in the normal case:
    pdftoppm -png -r 300 sources/{path}.pdf /tmp/{stem}/page
    for f in /tmp/{stem}/page-*.png; do tesseract "$f" "${f%.png}" --psm 1 -l eng; done
    ```
-   Assemble the per-page OCR into the sibling **by script** (exclude any FOIA
-   insert page; no synthetic page markers — a clean transcription) — keep
-   the assembly out of model tokens too.
+   Assemble the per-page OCR into the sibling **by script** (include every
+   page, the FOIA insert included; no synthetic page markers — a clean
+   transcription) — keep the assembly out of model tokens too.
 
 2. **Verify + correct with a model diff-pass (filter-safe).** A separate
    `Agent(general-purpose)` reads each page image against the assembled draft and
