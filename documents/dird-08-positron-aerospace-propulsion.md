@@ -70,7 +70,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 7, Antimatter |
+| Location | p. 8, Antimatter |
 
 ---
 
@@ -106,7 +106,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 33, Conclusions |
+| Location | p. 34, Conclusions |
 
 ---
 
@@ -122,7 +122,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 
 ---
 
-### Globe-encircling flight cost (p. 23) — the required 150 µg could be manufactured in 6 months for $96 million; the Conclusions instead state $69 million (intra-document contradiction; the document cites "Table 5")
+### Globe-encircling flight cost (p. 30) — the required 150 µg could be manufactured in 6 months for $96 million; the Conclusions instead state $69 million (intra-document contradiction; the document cites "Table 5")
 
 > Table 5, the required 150 µg for this epic flight could be manufactured in 6 months for $96 million, or 0.0007 percent of U.S. GDP.
 
@@ -130,7 +130,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 29, Positron Costs |
+| Location | p. 30, Positron Costs |
 
 ---
 
@@ -226,7 +226,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 28, Positron Production |
+| Location | p. 29, Positron Production |
 
 ---
 
@@ -252,7 +252,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 8, Positron Air-Breathing Propulsion |
+| Location | p. 9, Positron Air-Breathing Propulsion |
 
 ---
 
@@ -288,7 +288,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 22, The Sänger Photon Positron Rocket |
+| Location | p. 23, The Sänger Photon Positron Rocket |
 
 ---
 
@@ -414,7 +414,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 | Position | Counterpart | Source |
 |---|---|---|
-| $96 million (p. 23, Positron Costs) | $69 million (p. 27, Conclusions) | government/dird-08-positron-aerospace-propulsion-20100302.pdf |
+| $96 million (p. 30, Positron Costs) | $69 million (p. 33, Conclusions) | government/dird-08-positron-aerospace-propulsion-20100302.pdf |
 
 ---
 
