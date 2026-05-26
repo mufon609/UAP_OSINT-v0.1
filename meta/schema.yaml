@@ -668,16 +668,22 @@ artifact_entry:
   #                      `compatrtmented` for `compartmented`). The PDF's
   #                      text layer IS the OCR output.
   #   extraction-lossy — text layer is present and was NOT produced by OCR
-  #                      (author native or Acrobat Distiller from `.txt`,
-  #                      etc.), but pdftotext extraction still produces
-  #                      artifacts — Unicode mapping errors, font encoding
-  #                      issues, character substitution at the PDF-
-  #                      generation or extraction layer. Example: the 2023
-  #                      House Oversight hearing transcript where
-  #                      `11½ hours` renders as `11‡ hours` in pdftotext
-  #                      output. Different root cause from ocr-scan (no
-  #                      scan step involved); same operational consequence
-  #                      (default extraction unreliable).
+  #                      (author native / court-reporting software /
+  #                      Acrobat Distiller from `.txt`), but pdftotext
+  #                      extraction is PERVASIVELY unreliable: stenographic
+  #                      line-number prefixes + page-footer triplets on every
+  #                      line (the Alderson Senate transcripts), or systematic
+  #                      Unicode-mapping corruption across the document.
+  #                      Different root cause from ocr-scan (no scan step);
+  #                      same consequence (default extraction unusable as-is).
+  #                      NOT extraction-lossy: a clean, natively-paginated
+  #                      text layer marred by only a SPARSE isolated glyph
+  #                      (e.g. a single `11½`->`‡`). That stays text-native —
+  #                      pdftotext is canonical, the glyph is handled at the
+  #                      quote (re-derive it, or normalize the confusable),
+  #                      never by hand-transcribing the document. A sibling
+  #                      must be proportionate to the damage; see
+  #                      meta/conventions.md.
   # Operational handling (both ocr-scan and extraction-lossy): the validator
   # prefers a same-stem `.txt` sibling over pdftotext output when the field
   # is set to any non-text-native value. The sibling is a contributor-

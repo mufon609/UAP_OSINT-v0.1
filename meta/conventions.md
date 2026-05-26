@@ -162,21 +162,36 @@ validator does not close the OCR-corruption gap; the ingestion
 pipeline does.
 
 The same `.txt`-sibling preference handles `extraction_type:
-extraction-lossy` sources — text-native PDFs whose extracted text
-is unreliable for non-OCR reasons (Unicode-mapping artifacts at
-PDF-generation time, stenographic-format noise like inline line-
-number prefixes and page-footer triplets). A 2026-05-04 evaluation
-of the known Unicode-mapping case (`11½` encoded as byte `\x87` →
-U+2021 in the embedded font's CMap) confirmed the corruption lives
-in the source PDF's content stream itself: `pdftotext`, `mutool`,
-and `pypdf` all faithfully reproduce the same bytes because the
-PDF tells every compliant reader that the glyph is `‡`. Switching
-extraction tools is not a path forward — the contributor-produced
-clean transcription, visually verified against the source page, is
-the canonical recovery for both ocr-scan and extraction-lossy
-sources. Do not re-open this question without new evidence (e.g.,
-a substantively different failure mode that doesn't reduce to
-"PDF content stream encodes the wrong glyph").
+extraction-lossy` sources — text-native PDFs whose extracted text is
+**pervasively** unreliable for non-OCR reasons: stenographic-format
+noise (inline line-number prefixes and page-footer triplets on every
+line, as in the Alderson court-reporter Senate transcripts) or
+systematic Unicode-mapping corruption across the document. A
+2026-05-04 evaluation of the Unicode-mapping failure mode (`11½`
+encoded as byte `\x87` → U+2021 in the embedded font's CMap) confirmed
+the corruption lives in the source PDF's content stream itself:
+`pdftotext`, `mutool`, and `pypdf` all faithfully reproduce the same
+bytes because the PDF tells every compliant reader that the glyph is
+`‡`. Switching extraction tools is not a path forward.
+
+**A sibling must be proportionate to the damage.** The recovery for a
+*pervasively* corrupted extract is the contributor-produced clean
+transcription, visually verified against the source page. But a clean,
+natively-paginated text layer marred by only a *sparse, isolated*
+glyph artifact — a single `11½`→`‡` in one passage of an otherwise
+pristine transcript — does **not** warrant hand-transcribing the
+document. That manufactures a large, drift-prone artifact to repair
+one character (and in the case that prompted this rule, a
+hand-pagination that diverged from the PDF's real physical pages — the
+manual work introduced an error `pdftotext` did not have). Such a
+source stays `text-native`: `pdftotext` is the canonical extract
+(natively paginated, so `p. N` resolves for free against its form
+feeds), and the isolated glyph is handled at the point of use —
+re-derive the affected quote, or add the specific Unicode-confusable
+to `normalize_for_compare` — never by transcribing the whole document.
+Reserve the sibling for extraction that is broken throughout; the test
+is the OCR-producer / pervasive-noise signal below, not the presence
+of any single bad character.
 
 **Detecting a new OCR-scan source.** A PDF whose Producer / Creator
 metadata names an OCR engine (OmniPage, AINSLIB.OCR, ABBYY,
