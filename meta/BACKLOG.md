@@ -348,7 +348,7 @@ document left in a half-state.
   both validators + the 12-gate chain green.
 
 **Residuals (within C3, not blocking):**
-- **HTML `p. N` downgrade** — see "Still separate" below; not yet done.
+- **HTML `p. N` downgrade — DONE** (commit `9b80590`). See below.
 - **Distribution-insert include/exclude — reconcile (now low-stakes).** The
   `/prepare-ocr-sibling` skill says EXCLUDE a third-party FOIA / Black Vault
   cover-insert page, but the post-DIRD siblings had the insert RESTORED
@@ -369,12 +369,18 @@ the strip-all principle: we do not paginate siblings. The sources it named
 `-20241119`) keep their clean siblings; their `p. N` refs are PDF-viewer-page
 hints. `foia-23-f-0905-doc-2` is a single page — moot.
 
-**Still separate — HTML `p. N` downgrade.** `sec-ttsa-1a-partii-20170710` (~24
-refs in `ttsa.yaml` + `hal-puthoff`) and the `opg.optica.org` Targ articles in
-`russell-targ` cite `p. N` on **HTML** sources that have no pages at all → anchor
-to a section heading / `¶N` (per-ref: keep `p. N` where a `russell-targ` ref
-points to a CIA *PDF*; the `optica` hits in DIRD artifacts are `cited_works`
-bibliography, not `source.location` — leave them). Independent of the strip.
+**HTML `p. N` downgrade — DONE** (commit `9b80590`). HTML sources have no
+PDF-viewer pages, so `p. N` was inapplicable. Re-anchored to document-native
+handles: `ttsa.yaml` (20 refs on the `sec-ttsa-1a-partii` SEC Form 1-A) → section
+headings ('Risk Factors', 'Directors, Executive Officers and Significant
+Employees', 'Advisory Board', 'Contribution Agreement', "Part II, ¶ 'Description
+of Business'"), with `p. 1` → "Offering Circular cover" and `p. 23` → the
+corporate-history paragraph; `russell-targ.yaml` (5 refs on the
+`opg.optica.org` Targ articles) → "author byline". Left intact: russell-targ's
+CIA/SRI *PDF* `p. N` refs, the ORNL Synopsis/Supplement PDF refs in `ttsa`, and
+the `optica` `cited_works` bibliography entries in DIRD artifacts (not
+`source.location`). (`hal-puthoff` had no HTML `p. N` refs — the original
+estimate was imprecise.)
 
 **Blocks:** none.
 **Blocked by:** none.
