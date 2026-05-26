@@ -292,7 +292,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald and coworkers
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 15, Section 3.2 (STT Experiments) |
+| Location | p. 15, Section 3.2 (STT Experiments), high-frequency precession ¶ |
 
 ---
 

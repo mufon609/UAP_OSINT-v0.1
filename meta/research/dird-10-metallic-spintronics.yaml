@@ -227,7 +227,7 @@ quotes:
     spectrometer.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 15, Section 3.2 (STT Experiments)'
+    location: 'p. 15, Section 3.2 (STT Experiments), high-frequency precession ¶'
   significance: The second Tsoi et al. attribution — credits the first unequivocal evidence of current-driven GHz precession to Tsoi et al. (Reference 9); echoes the external products-list authorship attribution while the body still never names the report's author
   statement_date: '2010-03-23'
 - id: q-stt-stxm-resolution
