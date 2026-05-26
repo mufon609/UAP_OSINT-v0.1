@@ -920,7 +920,14 @@ def extract_source_text(source_path):
         except OSError:
             result = None
     if result is not None:
-        result = re.sub(r"-\s+", "-", result)
+        # Merge line-wrap hyphenation (`Geospatial-\nIntelligence`) but NEVER
+        # across a form feed. `\s` includes `\f`, so the old `-\s+` swallowed
+        # the page separator after a page-final hyphen — a footer page number
+        # (`- 1 -`) or a word hyphenated at the very bottom of a page —
+        # silently merging that page into the next and shifting every
+        # downstream `p. N` split. Whitespace-minus-form-feed keeps the merge
+        # but preserves page boundaries.
+        result = re.sub(r"-[ \t\r\n\v]+", "-", result)
     _source_text_cache[source_path] = result
     return result
 
