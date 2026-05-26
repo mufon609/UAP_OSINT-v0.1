@@ -328,20 +328,21 @@ page must be re-derived to physical). (2) HTML `p. N` claims are removed (HTML
 has no pages) — anchor to a section heading or `¶N`. (3) **Remove + regenerate
 over fix** a needless or broken sibling.
 
-**Work — A. Remove the House transcript sibling (it should not exist).**
-`congress-gov-house-hearing-transcript-20230726` is text-native (Acrobat
-Distiller from a `.txt` source; pristine, natively-paginated `pdftotext`). Its
-54-page hand sibling existed only to repair one `11½`→`‡` glyph and its
-hand-pagination diverged from the PDF (marked 3 front-matter pages; the PDF has
-4 — printed `p. N` = physical `p. N+4`). Reclassify `text-native`, delete the
-sibling, and regenerate the refs against `pdftotext`. **Coupled** (do as one
-unit — removal activates both checks): (i) the verbatim check — the 2 `11½ hours`
-quotes (`2023-07-26-house-grusch`, `david-grusch`) fail vs pdftotext's `11‡`:
-re-derive them or add the `½`/`‡` confusable to `normalize_for_compare`; (ii) the
-physical-page check — re-derive the bare-leading `p. N` refs (house-fravor /
--grusch / -graves / -uap-hearing, ryan-graves) and, for consistency, the
-descriptive-prefix refs too (`…, p. N`), printed→physical (+4, confirm constant
-via the pdftotext printed-number-per-page map). ~212 refs across 6 artifacts.
+**Work — A. Remove the House transcript sibling — DONE.**
+`congress-gov-house-hearing-transcript-20230726` was text-native (Acrobat
+Distiller from a `.txt` source; pristine, natively-paginated `pdftotext`); its
+54-page hand sibling existed only to repair one `11½`→`‡` glyph and had
+silently drifted from the transcript. Done: folded `‡`→`½` in
+`normalize_for_compare`; corrected the 3 drifted quotes to verbatim (graves q12
+`"foreign drones, is an urgent"` typo preserved, fravor q20 `"No one came."`,
+fravor q3 `"over 2 weeks"`); reclassified the manifest entry text-native +
+removed the sibling artifact + deleted the `.txt`; re-derived all 212 `p. N`
+refs printed→physical (+4: cover + two Roman front-matter pages precede printed
+p. 1) across the 6 artifacts; `quote_location_page` now actively verifies them.
+**Residual:** the 16 `line N` speaker/naming-quirk refs on the house transcript
+(raw `pdftotext` line numbers — the deprecated extraction-transient form) are
+untouched; convert them to physical `p. N` (or `¶`) in a future pass — small,
+unchecked, pre-existing, not coupled to anything.
 
 **Work — B. Page-faithful the genuine siblings** (ocr-scan / pervasive-lossy;
 their `p. N` refs are silently skipped today). Per source: paginate to canonical
