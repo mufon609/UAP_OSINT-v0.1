@@ -118,7 +118,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 29, Section III (Cylindrical IECs), ¶ |
+| Location | p. 30, Section III (Cylindrical IECs), ¶ |
 
 ---
 
@@ -154,7 +154,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 24, Section II, ¶ |
+| Location | p. 25, Section II, ¶ |
 
 ---
 
@@ -214,7 +214,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 62, Section V (Space Propulsion), ¶ |
+| Location | p. 63, Section V (Space Propulsion), ¶ |
 
 ---
 
@@ -262,7 +262,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 56, Section V (Overview for Weapons/Nuclear Material Simulation Articles), ¶ |
+| Location | p. 57, Section V (Overview for Weapons/Nuclear Material Simulation Articles), ¶ |
 
 ---
 
@@ -298,7 +298,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 32, Section III (Description of the IEC Jet Thruster), ¶ |
+| Location | p. 33, Section III (Description of the IEC Jet Thruster), ¶ |
 
 ---
 
@@ -334,7 +334,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 30, Section III (Electrically-Driven IEC Jet Thruster), ¶ |
+| Location | p. 31, Section III (Electrically-Driven IEC Jet Thruster), ¶ |
 
 ---
 
@@ -346,7 +346,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 39, Section III (Khachan's Studies at U of Sydney), ¶ |
+| Location | p. 40, Section III (Khachan's Studies at U of Sydney), ¶ |
 
 ---
 
@@ -358,7 +358,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 50, Section IV (Kim – Stability Analysis), ¶ |
+| Location | p. 51, Section IV (Kim – Stability Analysis), ¶ |
 
 ---
 
@@ -418,7 +418,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 19, Section I (Miley's "Ion Injected" Device), ¶ |
+| Location | p. 20, Section I (Miley's "Ion Injected" Device), ¶ |
 
 ---
 
@@ -442,7 +442,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 42, Section IV, ¶ |
+| Location | p. 43, Section IV, ¶ |
 
 ---
 
@@ -516,7 +516,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 51, Section IV (Rider – Energy Balance Study), ¶ |
+| Location | p. 52, Section IV (Rider – Energy Balance Study), ¶ |
 
 ---
 
@@ -618,7 +618,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 48, Section IV (Tzonev et al. – Deep Well Study), ¶ |
+| Location | p. 49, Section IV (Tzonev et al. – Deep Well Study), ¶ |
 
 ---
 
@@ -630,7 +630,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 71, Section VI (Proposed Breakeven Experiment), ¶ |
+| Location | p. 72, Section VI (Proposed Breakeven Experiment), ¶ |
 
 ---
 
@@ -642,7 +642,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 68, Section VI (Demonstration of Net Energy Gain), ¶ |
+| Location | p. 69, Section VI (Demonstration of Net Energy Gain), ¶ |
 
 ---
 
@@ -654,7 +654,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 71, Section VI (Proposed Breakeven Experiment), ¶ |
+| Location | p. 72, Section VI (Proposed Breakeven Experiment), ¶ |
 
 ---
 
@@ -666,7 +666,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | p. 72, Section VI (Concluding Remarks), ¶ |
+| Location | p. 73, Section VI (Concluding Remarks), ¶ |
 
 ---
 
@@ -693,6 +693,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-09-iec-fusion-20100310.pdf |
 | Tokomak | Tokamak | government/dird-09-iec-fusion-20100310.pdf |
 | Hirsh | Hirsch | government/dird-09-iec-fusion-20100310.pdf |
+| shown if Figure 2.1 | shown in Figure 2.1 | government/dird-09-iec-fusion-20100310.pdf |
 
 ---
 

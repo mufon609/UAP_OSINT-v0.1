@@ -241,7 +241,7 @@ quotes:
     experiment using this type of IEC is discussed in Section VI.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 19, Section I (Miley''s "Ion Injected" Device), ¶'
+    location: 'p. 20, Section I (Miley''s "Ion Injected" Device), ¶'
   significance: 'UIUC ion-injected device result — with a recirculation number of roughly 2 and ~50 mA injected current, the measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶, the basis for the proposed p-¹¹B breakeven experiment of Section VI'
   statement_date: '2010-03-10'
 - id: q-hirsch-record-neutron-rate
@@ -275,7 +275,7 @@ quotes:
     control units.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 24, Section II, ¶'
+    location: 'p. 25, Section II, ¶'
   significance: Daimler-Chrysler NAA — Daimler-Chrysler licensed the IEC neutron technology through the UIUC and used it for their neutron-activation-analysis quality-control units
   statement_date: '2010-03-10'
 - id: q-section3-other-geometries-thesis
@@ -299,7 +299,7 @@ quotes:
     state while for pulsed output 10^9 n/s (D-D) is obtained.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 29, Section III (Cylindrical IECs), ¶'
+    location: 'p. 30, Section III (Cylindrical IECs), ¶'
   significance: 'Cylindrical IEC yields — the hollow-cathode C-Device produces about 10⁷ n/s (D-D) steady state and 10⁹ n/s (D-D) for pulsed output'
   statement_date: '2010-03-10'
 - id: q-jet-thruster-purpose
@@ -324,7 +324,7 @@ quotes:
     identification of the materials and surface features of the object.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 30, Section III (Electrically-Driven IEC Jet Thruster), ¶'
+    location: 'p. 31, Section III (Electrically-Driven IEC Jet Thruster), ¶'
   significance: Jet thruster target interrogation — the jet channel extraction technique enables directing and focusing the plasma stream onto an asteroid or other object for interrogation, with plasma-emission-spectra analysis identifying the materials and surface features of the object
   statement_date: '2010-03-10'
 - id: q-jet-thruster-disable-target
@@ -348,7 +348,7 @@ quotes:
     symmetric microchannels into a directed beam or jet.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 32, Section III (Description of the IEC Jet Thruster), ¶'
+    location: 'p. 33, Section III (Description of the IEC Jet Thruster), ¶'
   significance: 'Jet power conversion — over half the energy imparted to the ions by the accelerating grid is funneled into the jet; in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow'
   statement_date: '2010-03-10'
 - id: q-daiec-description
@@ -383,7 +383,7 @@ quotes:
     the thruster and its efficiency greatly exceed existing electric propulsion thrusters.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 39, Section III (Khachan''s Studies at U of Sydney), ¶'
+    location: 'p. 40, Section III (Khachan''s Studies at U of Sydney), ¶'
   significance: 'Khachan thruster — at the University of Sydney, Khachan engineered the collimated beam of exiting neutrals from a conical cathode into a simple electric propulsion thruster, claiming its specific impulse and efficiency greatly exceed existing electric propulsion thrusters'
   statement_date: '2010-03-10'
 - id: q-nevins-pessimistic-q-021
@@ -392,7 +392,7 @@ quotes:
     Accordingly, he predicted that the Q-value (defined the ratio of fusion power out to ion input power) of an IEC device operating with a 50/50 percent deuterium−tritium (D-T) mixture would be ~0.21 for a 50-kV square well. This conclusion would rule out the possibility of a fusion reactor, but would leave open the development of driven neutron sources.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 42, Section IV, ¶'
+    location: 'p. 43, Section IV, ¶'
   significance: 'Nevins pessimistic result — Nevins predicted the Q-value of an IEC operating with a 50/50 D-T mixture would be ~0.21 for a 50-kV square well, ruling out a fusion reactor but leaving open driven neutron sources'
   statement_date: '2010-03-10'
 - id: q-nevins-thorough-subtle-assumptions
@@ -446,7 +446,7 @@ quotes:
     In summary, this study by Tzonev et al. is very encouraging for formation of deep wells in IEC devices designed for reactors using beam-beam dominated fusion. However, much more work needs to be done along these lines to fully identify the optimal ion injection strategy for deep wells with minimum power input.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 48, Section IV (Tzonev et al. – Deep Well Study), ¶'
+    location: 'p. 49, Section IV (Tzonev et al. – Deep Well Study), ¶'
   significance: 'Tzonev summary — the study is very encouraging for formation of deep wells in IEC reactors using beam-beam dominated fusion, though much more work is needed to identify the optimal ion injection strategy'
   statement_date: '2010-03-10'
 - id: q-kim-window-of-stability
@@ -464,7 +464,7 @@ quotes:
     The results summarized in Figure 4.10 indicated that the two-stream instability is stabilized if the angular momentum spread of the beam ions is small enough, due to enhanced ion densification at the center of the device. This is very encouraging for future IEC development. However, an experimental study should be performed to verify this result.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 50, Section IV (Kim – Stability Analysis), ¶'
+    location: 'p. 51, Section IV (Kim – Stability Analysis), ¶'
   significance: 'Kim two-stream result — the two-stream instability is stabilized if the angular momentum spread of the beam ions is small enough, due to enhanced ion densification at the center, though an experimental study is needed to verify it'
   statement_date: '2010-03-10'
 - id: q-rider-bremsstrahlung-prohibitive
@@ -473,7 +473,7 @@ quotes:
     Using the Maxwellian average values, he found that Bremsstrahlung losses would be prohibitively large for 3He-3He, p-11B, and p-6Li reactors and will be a considerable fraction of the fusion power for D-3He and D-D reactors.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 51, Section IV (Rider – Energy Balance Study), ¶'
+    location: 'p. 52, Section IV (Rider – Energy Balance Study), ¶'
   significance: 'Rider Bremsstrahlung critique — using Maxwellian average values, Rider found Bremsstrahlung losses would be prohibitively large for 3He-3He, p-11B, and p-6Li reactors and a considerable fraction of the fusion power for D-3He and D-D reactors'
   statement_date: '2010-03-10'
 - id: q-rider-response-maxwellian-bias
@@ -518,7 +518,7 @@ quotes:
     B. Nuclear Materials such as natural uranium (U-238) and weapon grade with enriched (U-235). Testing can be done with this natural uranium which can be obtained without special restrictions.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 56, Section V (Overview for Weapons/Nuclear Material Simulation Articles), ¶'
+    location: 'p. 57, Section V (Overview for Weapons/Nuclear Material Simulation Articles), ¶'
   significance: 'Detection categories — the simulation-article overview lists nuclear materials such as natural uranium (U-238) and weapon-grade enriched (U-235) among items of interest for detection in inspection stations'
   statement_date: '2010-03-10'
 - id: q-fusion-ship-ii-config
@@ -536,7 +536,7 @@ quotes:
     A typical trip time for an out-and-back mission to Jupiter is 210 days out and 153 days to return. This is comparable to or faster than that predicted in prior fusion studies.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 62, Section V (Space Propulsion), ¶'
+    location: 'p. 63, Section V (Space Propulsion), ¶'
   significance: 'Fusion Ship II Jupiter mission — a typical out-and-back mission to Jupiter is 210 days out and 153 days to return, comparable to or faster than prior fusion studies'
   statement_date: '2010-03-10'
 - id: q-mcsa-concept
@@ -572,7 +572,7 @@ quotes:
     Thus in principle, energy breakeven could be demonstrated in the IEC in a very dense plasma "core" occupying only a few cc volume with only a few 100's of watts in and out. This extreme is not currently possible, but use of the new gun injected technology to obtain breakeven in a dense plasma core in the IEC of 100's of cc volume and with 20-25 kW input power seems practical.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 68, Section VI (Demonstration of Net Energy Gain), ¶'
+    location: 'p. 69, Section VI (Demonstration of Net Energy Gain), ¶'
   significance: 'Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out; breakeven in a 100''s-of-cc core with 20-25 kW input power using new gun-injected technology seems practical'
   statement_date: '2010-03-10'
 - id: q-vi-p11b-lawson-requirement
@@ -590,7 +590,7 @@ quotes:
     The 12 gun breakeven design will provide an increase in β to ~ 1000 due to differential pumping effects, I will increase to 6000 mA (due to multiple pulsed guns), and a will be cut down by 10 due to improvements in focusing both and reduced collisionality. This predicts an increase in Q (compared to prior gun experiment) of ~10⁸, giving Q=1 ("breakeven") as required for a p-¹¹B plasma
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 71, Section VI (Proposed Breakeven Experiment), ¶'
+    location: 'p. 72, Section VI (Proposed Breakeven Experiment), ¶'
   significance: '12-gun Q scaling — the 12-gun breakeven design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10, predicting a ~10⁸ increase in Q over the prior gun experiment to give Q=1 ("breakeven") for a p-¹¹B plasma'
   statement_date: '2010-03-10'
 - id: q-vi-hydrogen-simulation
@@ -599,7 +599,7 @@ quotes:
     Thus we propose to confirm the achievement of breakeven conditions using a hydrogen plasma and diagnostics to show that the nτ and T corresponding to Q = 1 (p-¹¹B) are obtained.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 71, Section VI (Proposed Breakeven Experiment), ¶'
+    location: 'p. 72, Section VI (Proposed Breakeven Experiment), ¶'
   significance: 'Hydrogen simulation — the proposal is to confirm breakeven conditions using a hydrogen plasma and diagnostics showing that the nτ and T corresponding to Q = 1 (p-¹¹B) are obtained'
   statement_date: '2010-03-10'
 - id: q-vi-no-show-stoppers
@@ -608,7 +608,7 @@ quotes:
     There are no "show stoppers" however, so the road map to IEC fusion power seems clear. The main challenge is to find funding sources with the "will" to proceed.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 72, Section VI (Concluding Remarks), ¶'
+    location: 'p. 73, Section VI (Concluding Remarks), ¶'
   significance: 'Conclusion — the report states there are no "show stoppers," so the road map to IEC fusion power seems clear, with the main challenge being to find funding sources with the "will" to proceed'
   statement_date: '2010-03-10'
 naming_quirks:
@@ -645,6 +645,13 @@ naming_quirks:
   observed: Hirsh
   canonical: Hirsch
   location: 'pp. 11, 22, IEC Background and Select Experiments sections'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-05-26'
+  observed: shown if Figure 2.1
+  canonical: shown in Figure 2.1
+  location: 'p. 22, Section II (Hirsch experiment sentence)'
   source_path: government/dird-09-iec-fusion-20100310.pdf
   resolution: preserve-as-sic-in-quotes
 cited_works:
@@ -888,7 +895,7 @@ cited_works:
            14-16, (2005).
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 28, Section II References'
+    location: 'p. 29, Section II References'
 - id: cw20
   added_date: '2026-05-26'
   citation_key: '2.8'
@@ -901,7 +908,7 @@ cited_works:
            Alamos National Laboratory,, NM, March 14-16, (2005).
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 28, Section II References'
+    location: 'p. 29, Section II References'
 - id: cw21
   added_date: '2026-05-26'
   citation_key: '3.1'
@@ -1177,7 +1184,7 @@ cited_works:
     5.3   G. H. Miley, R. Stubbers, J. Webber, H. Momota, "Magnetically-Channeled SIEC Array (MCSA) Fusion Device for Interplanetary Missions", Space Technology and Applications International Forum-STAIF 2004 (M.S. El Genk, Ed.) American Institute of Physics Conf. Proceedings (2004).
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 67, Section V References'
+    location: 'p. 68, Section V References'
 - id: cw46
   added_date: '2026-05-26'
   citation_key: '5.4'
@@ -1188,7 +1195,7 @@ cited_works:
     5.4   H. Momota, G. H. Miley, and J. Nadler, "Direct Energy Conversion for IEC Propulsions", Report to National Institute for Fusion Science of Japan, Report NISF-641, ISSN 0915-633X, August (2000).
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 67, Section V References'
+    location: 'p. 68, Section V References'
 - id: cw47
   added_date: '2026-05-26'
   citation_key: '5.5'
@@ -1199,4 +1206,4 @@ cited_works:
     5.5   Y. Gu, M. Williams, R. Stubbers, G. Miley, "Pulsed Operation of Spherical Inertial-Electrostatic Confinement Device," Proceeding of 12th Topical Meeting on the Technology of Fusion Energy, ANS, Reno, NV, 16-20 June (1996), pp. 1342-1346.
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
-    location: 'p. 67, Section V References'
+    location: 'p. 68, Section V References'
