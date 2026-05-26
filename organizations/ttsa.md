@@ -92,7 +92,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | Part II, ¶ 'Description of Business', p. 2 |
+| Location | Part II, ¶ 'Description of Business' |
 
 ---
 
@@ -104,7 +104,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | p. 7, 'Risk Factors' |
+| Location | 'Risk Factors' |
 
 ---
 
@@ -116,7 +116,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | p. 31, 'Directors, Executive Officers and Significant Employees' |
+| Location | 'Directors, Executive Officers and Significant Employees' |
 
 ---
 
@@ -128,7 +128,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | p. 33, 'Advisory Board' |
+| Location | 'Advisory Board' |
 
 ---
 
@@ -152,7 +152,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | p. 32, 'Directors, Executive Officers and Significant Employees' — Kari DeLonge bio |
+| Location | 'Directors, Executive Officers and Significant Employees' — Kari DeLonge bio |
 
 ---
 
@@ -164,7 +164,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Location | p. 28, Contribution Agreement passage |
+| Location | 'Contribution Agreement' passage |
 
 ---
 

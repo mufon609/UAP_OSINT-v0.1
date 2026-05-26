@@ -376,7 +376,7 @@ quotes:
     1Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
-    location: 'p. 1'
+    location: "author byline"
   context: 'Author affiliation byline of Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, ''Coherent lidar airborne windshear sensor: performance evaluation'', Applied Optics 30 (15), 2013–2026 (1991), DOI 10.1364/AO.30.002013'
   observation_type: relayed
   statement_date: '1991-05-20'
@@ -504,7 +504,7 @@ timeline:
   event: 'Targ, Kavaya, Huffaker, and Bowles publish [`/documents/targ-coherent-lidar-airborne-windshear-sensor-1991`] in Applied Optics 30 (15), 2013–2026 (DOI 10.1364/AO.30.002013). Targ author affiliation: Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA — peer-reviewed primary attestation of Targ at LMSC in 1991.'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
-    location: 'p. 1'
+    location: "author byline"
   category: publication
   node_link: '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991'
 
@@ -514,7 +514,7 @@ timeline:
   event: 'Targ et al. publish [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] in Applied Optics 35 (36), 7117–7127 (DOI 10.1364/AO.35.007117). Targ author affiliation: Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto — same address as the 1991 Lockheed Missiles & Space Company byline.'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
-    location: 'p. 1'
+    location: "author byline"
   category: publication
   node_link: '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996'
 
@@ -678,7 +678,7 @@ affiliations:
   period_end: '1995'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
-    location: 'p. 1'
+    location: "author byline"
 
 - id: a3
   added_date: '2026-05-14'
@@ -785,7 +785,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
-    location: 'p. 1'
+    location: "author byline"
 
 - id: p3
   added_date: '2026-05-15'

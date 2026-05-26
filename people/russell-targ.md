@@ -184,7 +184,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Author affiliation byline of Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, 'Coherent lidar airborne windshear sensor: performance evaluation', Applied Optics 30 (15), 2013–2026 (1991), DOI 10.1364/AO.30.002013, 1991-05-20 |
 | Source | [archived source](../sources/news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html) |
-| Location | p. 1 |
+| Location | author byline |
 
 > Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
 

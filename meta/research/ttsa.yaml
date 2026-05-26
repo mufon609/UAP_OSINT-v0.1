@@ -68,7 +68,7 @@ quotes:
     The company is a Public Benefit Corporation founded in 2017 by a former senior Intelligence Officer with the CIA, a distinguished research scientist, and an award-winning artist with the goal of creating a dynamic consortium that can be a positive vehicle for change by supporting progressive thought through academic research, exotic engineering, and cinematic entertainment.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: "Part II, ¶ 'Description of Business', p. 2"
+    location: "Part II, ¶ 'Description of Business'"
   significance: TTSA's self-description as a Delaware Public Benefit Corporation spanning academic research, exotic engineering, and cinematic entertainment.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -78,7 +78,7 @@ quotes:
     TTS AAS was incorporated in February 2017, and although the Entertainment Division conducted through our subsidiary TTS has been conducted for several years, we are intending to expand into completely new businesses.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 7, 'Risk Factors'
+    location: "'Risk Factors'"
   significance: Primary-source founding date — TTSA incorporated February 2017; Entertainment Division inherited from pre-existing To The Stars, Inc. (TTS) subsidiary.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -88,7 +88,7 @@ quotes:
     Tom DeLonge is the founder, President, and interim CEO of the company.  He is also President of the company's subsidiary, TTS, and has been since 2015.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 31, 'Directors, Executive Officers and Significant Employees'
+    location: "'Directors, Executive Officers and Significant Employees'"
   significance: DeLonge's TTSA leadership role (Founder, President, interim CEO) and his prior TTS presidency since 2015.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -98,7 +98,7 @@ quotes:
     The company's Advisory Board consists of accomplished scientists, researchers, inventors, and former intelligence and governmental officials with a proven track record of success in their respective fields. The Advisory Board is Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher, Dr. Garry Nolan, and Dr. Paul Rapp.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 33, 'Advisory Board'
+    location: "'Advisory Board'"
   significance: Full Advisory Board roster as of the 2017 SEC filing — six named members.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -551,7 +551,7 @@ quotes:
     Kari DeLonge is the Chief Marketing and Product Officer for company's subsidiary TTS.  She has served in this position since the company's inception in 2011.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 32, 'Directors, Executive Officers and Significant Employees' — Kari DeLonge bio
+    location: "'Directors, Executive Officers and Significant Employees' — Kari DeLonge bio"
   significance: 2017 1-A — Kari DeLonge as Chief Marketing and Product Officer of the TTS subsidiary, a role held since the company's inception in 2011.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -581,7 +581,7 @@ quotes:
     On June 1, 2017, TTS AAS entered into a Contribution Agreement with Gravity Holdings, LLC in which Gravity Holdings, LLC contributed all of its shares of To The Stars, Inc. to TTS AAS in exchange for 55,000,000 shares of TTS AAS Class A Common Stock.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 28, Contribution Agreement passage
+    location: "'Contribution Agreement' passage"
   significance: 2017 1-A — To The Stars, Inc. became TTSA's wholly-owned subsidiary on June 1, 2017 via Contribution Agreement, in exchange for 55,000,000 shares of Class A Common Stock.
   context: 'SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017'
   statement_date: '2017-07-10'
@@ -686,7 +686,7 @@ timeline:
   event: To The Stars, Inc. established (originally as Resting Bird, Inc.) — pre-existing entity later acquired by TTSA as its Entertainment Division subsidiary.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 23
+    location: "¶ 'Our subsidiary, TTS, was established'"
 - id: tl2
   category: other
   added_date: '2026-04-22'
@@ -694,7 +694,7 @@ timeline:
   event: Archive West Investments acquires the shares of To The Stars, Inc.; DeLonge begins as President of TTS.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 23
+    location: "¶ 'Our subsidiary, TTS, was established'"
 - id: tl3
   category: other
   added_date: '2026-04-22'
@@ -711,7 +711,7 @@ timeline:
   event: To The Stars Academy of Arts and Science Inc. incorporated in Delaware as a Public Benefit Corporation.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 7
+    location: "'Risk Factors'"
 - id: tl5
   category: other
   added_date: '2026-04-22'
@@ -719,7 +719,7 @@ timeline:
   event: Archive West Investments contributes 100% of the shares of To The Stars, Inc. to Gravity Holdings, LLC (DeLonge Family Trust single-member LLC).
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 28
+    location: "'Contribution Agreement'"
 - id: tl6
   category: other
   added_date: '2026-04-22'
@@ -727,7 +727,7 @@ timeline:
   event: TTSA enters Contribution Agreement with Gravity Holdings for TTS shares in exchange for 55,000,000 shares of Class A Common Stock — consolidates TTS as wholly-owned subsidiary.
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 28
+    location: "'Contribution Agreement'"
 - id: tl7
   category: filing
   added_date: '2026-04-22'
@@ -735,7 +735,7 @@ timeline:
   event: TTSA files preliminary SEC Form 1-A Part II (Regulation A+ offering circular) for up to 10,000,000 shares at $5.00/share ($50 million maximum).
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 1
+    location: "Offering Circular cover"
   node_link: /documents/sec-ttsa-1a-partii-2017
 - id: tl8
   category: other
@@ -990,7 +990,7 @@ key_personnel:
   leadership_class: director
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 31
+    location: "'Directors, Executive Officers and Significant Employees'"
 - id: kp1b
   added_date: '2026-04-22'
   person_path: /people/tom-delonge
@@ -1009,7 +1009,7 @@ key_personnel:
   leadership_class: director
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 31
+    location: "'Directors, Executive Officers and Significant Employees'"
 - id: kp2b
   added_date: '2026-04-22'
   person_path: /people/hal-puthoff
@@ -1027,7 +1027,7 @@ key_personnel:
   leadership_class: director
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 31
+    location: "'Directors, Executive Officers and Significant Employees'"
 - id: kp4
   added_date: '2026-04-22'
   person_path: /people/luis-elizondo
@@ -1066,7 +1066,7 @@ key_personnel:
   leadership_class: advisor
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 33
+    location: "'Advisory Board'"
 - id: kp8
   added_date: '2026-04-22'
   person_path: /people/colm-kelleher
@@ -1075,7 +1075,7 @@ key_personnel:
   leadership_class: advisor
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 33
+    location: "'Advisory Board'"
 - id: kp9
   added_date: '2026-04-22'
   person_path: /people/kari-delonge
@@ -1085,7 +1085,7 @@ key_personnel:
   leadership_class: staff
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 32
+    location: "'Directors, Executive Officers and Significant Employees'"
 - id: kp9b
   added_date: '2026-04-22'
   person_path: /people/kari-delonge
@@ -1120,7 +1120,7 @@ org_relationships:
   relationship_type: subsidiary
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 7 and p. 28
+    location: "'Risk Factors' and 'Contribution Agreement'"
 - id: or2
   added_date: '2026-04-22'
   organization_path: /organizations/ccdc-ground-vehicle-systems-center
@@ -1148,7 +1148,7 @@ org_relationships:
   relationship_type: other
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
-    location: p. 32
+    location: "'Directors, Executive Officers and Significant Employees'"
 - id: or6
   added_date: '2026-04-23'
   organization_path: /organizations/gravity-holdings-llc
