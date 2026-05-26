@@ -26,7 +26,7 @@ _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the
 
 ## Description
 
-Metallic Spintronics. The Defense Intelligence Reference Document is 23 March 2010, with an ICOD of 1 December 2009 and control DIA-08-1003-011, UNCLASSIFIED//FOR OFFICIAL USE ONLY, with FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED. Where the document shows Prepared by and Author, it shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions pertaining to this document should be addressed to the AAWSA Program Manager. The document is made available through the declassification efforts and research of John Greenewald, Jr., creator of The Black Vault. It is one of the FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the Author line shows [(b)(6)].
+Metallic Spintronics. The Defense Intelligence Reference Document, 23 March 2010, has an ICOD of 1 December 2009 and control DIA-08-1003-011, UNCLASSIFIED//FOR OFFICIAL USE ONLY, with FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED. Where the document shows Prepared by and Author, it shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions pertaining to this document should be addressed to the AAWSA Program Manager. The document is made available through the declassification efforts and research of John Greenewald, Jr., creator of The Black Vault ([`/organizations/the-black-vault`]). It is one of the FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
 
 The report discusses the physics and applications of metallic spintronics, a nanoscale technology (a neologism for "spin-based electronics") in which information is carried not by the electron's charge, as in conventional microchips, but by the electron's intrinsic spin. It is discussed from the perspective of two phenomena. Giant magnetoresistance (GMR), research on which was awarded the Nobel Prize in Physics in 2007, refers to a dramatic reduction in the resistance of magnetic multilayers when subjected to an external magnetic field; GMR is currently used in magnetic field sensors, including those in read heads for computer hard drives, in galvanic isolators, and in nonvolatile random access memory devices, and reading information stored on magnetic hard disk drives was the first large-scale commercial application of GMR. The inverse effect, spin-transfer-torque (STT), refers to a novel method to control and manipulate magnetic moments in nanostructures by spin currents; the first observation of such a spin-transfer phenomenon in magnetic multilayers was recorded by Tsoi et al. (Reference 5). The report reviews STT experiments and applications, including STT MRAM, which removes the constraints on scalability when a high-density electrical current is driven directly through the storage element, and current-induced motion of magnetic domain walls proposed as the basis for "racetrack" memory.
 
@@ -272,6 +272,30 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald and coworkers
 
 ---
 
+### The Section 3.2 experimental endpoint — scanning transmission x-ray microscopy resolves the free CoFe layer magnetization vector field with ~100-picosond temporal resolution; source preserves the ~100-picosond spelling for ~100-picosecond
+
+> The M-vector field of the free layer can be reconstructed from the measured Mx and My components as illustrated in Figure 9c, and the ultrafast x-ray microscopy technique provided a means to monitor this field as a function of time with ~100-picosond resolution.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
+| Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
+| Location | p. 16, Section 3.2 (STT Experiments), STXM/Figure 9 ¶ |
+
+---
+
+### The second Tsoi et al. attribution — credits the first unequivocal evidence of current-driven GHz precession to Tsoi et al. (Reference 9); echoes the external products-list authorship attribution while the body still never names the report's author
+
+> The first experiment providing unequivocal evidence that a dc electrical current can result in high-frequency (tens of GHz) precession of magnetic moments was reported by Tsoi et al. in (Reference 9). Here an STT device—point contact—was placed in a microwave cavity of a high-frequency, high-field electron spin resonance (ESR) spectrometer.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
+| Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
+| Location | p. 15, Section 3.2 (STT Experiments) |
+
+---
+
 ### Establishes provenance as a DIA Defense Intelligence Reference Document, Acquisition Threat Support, 23 March 2010, ICOD 1 December 2009, control DIA-08-1003-011 — the AAWSAP DIRD identity block
 
 > Defense Intelligence Reference Document
@@ -296,9 +320,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| lithographycal | lithographic | government/dird-10-metallic-spintronics-20100323.pdf |
 | ~100-picosond | ~100-picosecond | government/dird-10-metallic-spintronics-20100323.pdf |
-| Forth Worth | Fort Worth | government/dird-10-metallic-spintronics-20100323.pdf |
 | SST | STT | government/dird-10-metallic-spintronics-20100323.pdf |
 
 ---
@@ -413,6 +435,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
+- [`/organizations/the-black-vault`]
 
 ### Documents
 
