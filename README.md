@@ -251,6 +251,50 @@ omitted when empty.
 
 ---
 
+## How to read a node
+
+Every file under `/people/`, `/organizations/`, `/documents/`, `/events/`,
+`/transcripts/`, `/media/`, `/locations/`, `/findings/`, and
+`/investigations/` is a **node** — a human-readable narrative assembled
+entirely from verified primary sources. Reading one:
+
+- **Frontmatter first.** The YAML block at the top states the node's `type`,
+  `status`, and evidentiary category (`archetype` for people, `kind` for
+  organizations / documents / events). The category is the first thing to
+  read: it tells you *what kind of witness or record* this is — an eyewitness
+  vs. an institutional actor, a government document vs. a news article —
+  before you read a word of content.
+- **Sections are evidentiary, not editorial.** A node's sections are fixed by
+  its type (full list in `meta/schema.yaml`). Narrative synthesis (such as
+  Background, "{Topic} Relevance", Credibility Notes) is kept separate from
+  the verbatim record (Statements, Key Passages, Key Testimony), so you always
+  know whether you are reading the editors' framing or the source's own words.
+- **Every claim carries its evidentiary state.** The `✅ / ⏳ / ⚠ / ❌` markers
+  (see *Status markers* above) appear throughout — on relationship,
+  affiliation, and evidence rows — so the confidence of a claim is visible
+  before you rely on it. Confirmed and Flagged claims are split into separate
+  subsections.
+- **Quotes are verbatim and traceable.** Each quote in a Key Passages /
+  Statements block carries a `Source:` pointer to an archived file under
+  `sources/`. To check any claim independently, open that source and compare:
+  the quote matches the original character-for-character (the repository
+  enforces this mechanically).
+- **Follow the cross-references.** Inline `[`/type/slug`]` links and the
+  `## Associated Nodes` section at the foot of each node are the navigational
+  fabric — they connect a person to the organizations, events, and documents
+  they appear in. Follow them to widen from a single node to the set that
+  bears on your question.
+- **The narrative is generated, not hand-written.** Each node body is rendered
+  from a structured research artifact at `meta/research/{slug}.yaml` (the
+  machine-readable fact layer); read the `.md` for narrative, and the `.yaml`
+  if you need the same facts in fuller structured form. The `.md` is never
+  edited by hand.
+
+If a fact is not in the nodes you have read, the repository does not establish
+it — it is not inferred or filled in from outside knowledge.
+
+---
+
 ## How to start
 
 ### New contributor
