@@ -958,6 +958,14 @@ def normalize_for_compare(text):
     text = text.replace("\u2014", "-").replace("\u2013", "-")
     # Non-breaking space -> space
     text = text.replace("\u00a0", " ")
+    # PDF font-CMap confusable: in some text-native PDFs (Acrobat Distiller
+    # from a .txt source) the \u00bd glyph (U+00BD) is encoded so that pdftotext
+    # extracts it as \u2021 (U+2021). Fold the extracted \u2021 back to \u00bd so a true
+    # "11\u00bd" quote matches the source bytes without hand-transcribing the
+    # document (meta/conventions.md "a sibling must be proportionate to the
+    # damage"). Both quote and source pass through here, so a genuine \u2021
+    # still matches a genuine \u2021 (both fold to \u00bd).
+    text = text.replace("\u2021", "\u00bd")
     # YouTube-caption timestamp markers — strip [MM:SS] and [H:MM:SS].
     # transcribe.py prefixes every caption line with a timing marker
     # (typically every 2-5 seconds); those are caption-file-format

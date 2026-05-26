@@ -103,7 +103,7 @@ _Direct observation._
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 47 |
+| Location | p. 51 |
 
 _Direct observation._
 
@@ -115,7 +115,7 @@ _Direct observation._
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Tim Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 19 |
+| Location | p. 23 |
 
 _Direct observation._
 
@@ -161,7 +161,7 @@ _Direct observation._
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Anna Paulina Luna, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 24 |
+| Location | p. 28 |
 
 ---
 

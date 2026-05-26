@@ -101,7 +101,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Graves oral statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 10 |
+| Location | p. 14 |
 
 > I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
 
@@ -109,7 +109,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Grusch oral statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 12 |
+| Location | p. 16 |
 
 > Absolutely, based on interviewing over 40 witnesses over 4 years.
 
@@ -117,7 +117,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Grusch Q&A response to Ranking Member Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 19 |
+| Location | p. 23 |
 
 > I hope you understand that there would be bipartisan rejection of any attempt to vilify, demonize, or engage in other reprisals against our witnesses and people who are telling the truth from their perspective.
 
@@ -125,7 +125,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Grusch (first round, Raskin), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 22 |
+| Location | p. 26 |
 
 > I call it administrative terrorism.
 
@@ -133,7 +133,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Grusch Q&A response to Raskin (first round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 22 |
+| Location | p. 26 |
 
 > This is an approximation based off of my personal experience speaking with a number of pilots, but I would estimate we are somewhere near 5 percent reporting, perhaps.
 
@@ -141,7 +141,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Graves Q&A response to Representative Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 39 |
+| Location | p. 43 |
 
 > Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
 
@@ -149,7 +149,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Grusch Q&A response to Representative Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 40 |
+| Location | p. 44 |
 
 > You know, it has been said it is probably the most credible UFO sighting in history, based on all the sensors that were tracking it and then for us to get visual.
 
@@ -157,7 +157,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Fravor Q&A response to Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 42 |
+| Location | p. 46 |
 
 > I also want to note for our witnesses and for the public that I am a freshman Member of Congress and I have only been here for 7 months. But this is by far the most bipartisan conversation and discussion that I have seen happen in the Congress and I think that a topic of this significance as it relates to our national security, as it relates to information that we are trying to gather for the American public does bring people together and I think that has been really great to see.
 
@@ -165,7 +165,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|
 | Attributed to | Garcia closing remarks, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 49 |
+| Location | p. 53 |
 
 ---
 
