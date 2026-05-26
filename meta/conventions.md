@@ -138,6 +138,19 @@ extractions of the underlying audio/video, and the underlying media
 is the original source. See "Transcript provenance and audit
 discipline" below for the per-provenance verification path.
 
+**When a source gets a `.txt` sibling — the rule.** A `.txt` sibling
+exists *if and only if* the source's default extraction is not a
+faithful rendering of the original text — i.e. its `extraction_type`
+is `ocr-scan` or `extraction-lossy`. A `text-native` source (clean
+text layer, HTML, plain text) is rendered faithfully by `pdftotext` /
+direct read and **never gets a sibling**: producing one is busywork
+and adds a drift surface for no gain. The two non-text-native cases
+are the "corrupted or image" pair — `ocr-scan` is a scanned image
+(OCR reconstructed the text from page pictures), `extraction-lossy`
+is a text-native PDF whose extracted *bytes* are wrong (not an image,
+but corrupted at the content-stream / extraction layer). Sibling
+existence keys on extraction faithfulness, not on file type.
+
 OCR-scanned sources are a known blind spot: when both the quote text
 and the source extract carry the same OCR corruption, the
 verbatim-quote check passes despite the quote not matching the
@@ -1105,9 +1118,21 @@ declassification page) where the source PDF carries one — so the Nth block is
 the page the PDF viewer shows as page N, and `p. N` resolves identically whether
 or not the file was redistributed. A distribution insert is **preserved
 verbatim** — never deleted, never replaced with a contributor summary or
-paraphrase; it simply carries no quotes. A sibling that carries no page marker
-is not page-structured and its `p. N` refs are skipped (no reliable split). A page-spanning quote sits on no single page and fails the check —
-split it at the boundary (below).
+paraphrase; it simply carries no quotes. A sibling of a continuous multi-page
+PDF **must** carry a `----- PAGE BREAK -----` at every physical-page boundary,
+so its block count equals the PDF's page count (`pdfinfo`) and `p. N` resolves
+to the page a viewer shows. A flat sibling of such a source is an *incomplete
+transcription* — a defect to fix, not a tolerated state in which the page check
+quietly goes dark (the `sibling_page_faithful` gate enforces block-count ==
+page-count on any marker-carrying sibling; `/prepare-ocr-sibling` paginates at
+creation time, when the page boundaries are read straight off the page images
+anyway). A source that genuinely has no PDF pages carries no page marker and
+uses its native anchor instead of a `p. N`: an HTML filing or single-page memo
+uses `¶N` / a section heading, an audio/video transcript uses `[MM:SS]`, and a
+FOIA email release uses `Doc N` (its `DOCUMENT N` markers, not page breaks).
+This keeps the anchor source-anchored — a property of the document — rather than
+an accident of whether the file needed an OCR sibling. A page-spanning quote
+sits on no single page and fails the check — split it at the boundary (below).
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
 distinct roles: `source.path` names the archived file (the ground

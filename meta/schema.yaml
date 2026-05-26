@@ -657,7 +657,9 @@ artifact_entry:
   #   text-native      — clean text layer (PDF authored with native text),
   #                      HTML, plain text, or any source whose extracted
   #                      bytes are a faithful rendering of the original.
-  #                      pdftotext / direct read is sufficient.
+  #                      pdftotext / direct read is sufficient, so a
+  #                      text-native source NEVER gets a `.txt` sibling —
+  #                      producing one is busywork + a drift surface.
   #   ocr-scan         — text layer absent or unreliable because the source
   #                      is a scanned image; OCR was needed to produce any
   #                      text at all. Failure mode: character-level
