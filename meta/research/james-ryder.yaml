@@ -773,7 +773,7 @@ relationships:
   - id: rel2
     added_date: '2026-05-06'
     person_path: '/people/james-lacatski'
-    relationship: 'Former Director of AAWSAP at the Defense Intelligence Agency; named in Luis Elizondo''s December 19, 2024 Question for the Record response as the author of the statement cleared by DOPSR (September 6, 2023) that names Ryder as the Lockheed Martin Space Systems Vice President proposing the UAP material divestment plan. Same text on SD004 page 1.'
+    relationship: 'Former Director of AAWSAP at the Defense Intelligence Agency; named in Luis Elizondo''s December 19, 2024 Question for the Record response as the author of the statement cleared by DOPSR that names Ryder as the Lockheed Martin Space Systems Vice President proposing the UAP material divestment plan. Same text on SD004 page 1.'
     source:
       path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
       location: 'p. 3'
