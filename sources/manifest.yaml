@@ -729,6 +729,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #8 — ''Positron Aerospace Propulsion'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 36 pages. DIA attachment #13 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Gerald Smith, Positronics Research (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_08-DIRD_Positron_Aerospace_Propulsion.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-08-positron-aerospace-propulsion-20100302.txt
+    archived_date: '2026-05-26'
+    note: Clean-text sibling of the OCR-scanned DIRD-08 'Positron Aerospace Propulsion'. Produced 2026-05-26 via multimodal page-image read; independently verified 2026-05-26 by a separate agent session — PASS. Black Vault FOIA declassification insert preserved verbatim. Equations / figures bracketed; redactions ((b)(3):10 USC 424, (b)(6)) and source spellings/typos (LOCASS, source's 'Table 5' ref, '53th', Kapatankos) preserved verbatim. Source prints program acronym AAWSA.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_09-DIRD_Inertial_Electrostatic_Confinement_Fusion.pdf
   status: archived
   artifacts:
@@ -737,6 +746,15 @@
     archived_date: '2026-05-21'
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #9 — ''Inertial Electrostatic Confinement Fusion'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 10 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 73 pages. DIA attachment #1 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Miley, University of Illinois (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
+  archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_09-DIRD_Inertial_Electrostatic_Confinement_Fusion.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-09-iec-fusion-20100310.txt
+    archived_date: '2026-05-26'
+    note: Clean-text sibling of the OCR-scanned DIRD-09 'Inertial Electrostatic Confinement Fusion' (DIA-08-1003-006, 10 March 2010, U//FOUO). Produced 2026-05-26 via multimodal page-image read (4 parallel producers across pages 1-20/21-40/41-60/61-73); independently verified 2026-05-26 by four separate agent sessions — all PASS. Black Vault FOIA declassification insert (p.2) preserved verbatim. Equations/figures bracketed; redactions and source spellings/typos preserved verbatim.
   archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_10_Metallic_Spintronics.pdf
   status: archived

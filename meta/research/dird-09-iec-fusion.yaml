@@ -1,0 +1,1202 @@
+id: meta/research/dird-09-iec-fusion
+type: research-artifact
+target_node: documents/dird-09-iec-fusion
+status: active
+primary_sources:
+- path: government/dird-09-iec-fusion-20100310.pdf
+  format: pdf
+document_intrinsic:
+  internal_title: 'Inertial Electrostatic Confinement Fusion'
+  internal_date: '2010-03-10'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY (FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED on every page header and footer)'
+  control_number: DIA-08-1003-006
+  pages: 73
+context_extrinsic:
+  display_title: 'Inertial Electrostatic Confinement Fusion — DIA Defense Intelligence Reference Document, AAWSAP, 10 March 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_09-DIRD_Inertial_Electrostatic_Confinement_Fusion.pdf
+  quote_attribution: 'Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010'
+  extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress products list attributes the report to Dr. George Miley, University of Illinois (attachment 1). The attribution is independently corroborated within the document''s own body, which self-identifies "the author, George Miley" and describes the inertial electrostatic confinement work at the University of Illinois Urbana-Champaign.'
+description: 'Inertial Electrostatic Confinement Fusion. The Defense Intelligence Reference Document is 10 March 2010, with an ICOD of 1 December 2009 and control DIA-08-1003-006, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note names the product as one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the author ([`/people/george-miley`]) appears there, not on the document, where the Author line shows [(b)(6)].
+
+
+  The report provides an overview of the basics, current experimental status, supporting theory, and potential applications of inertial electrostatic confinement (IEC) fusion, with emphasis on work at the University of Illinois Urbana-Champaign. IEC was conceived of by Philo Farnsworth as an approach to fusion power using electrostatic fields for confinement. In the gridded IEC device a spherical mesh grid is suspended on a high voltage feed-through in the center of a metal vacuum vessel; the fuel gas, e.g. deuterium, is fed into the chamber and the high negative voltage on the grid extracts ions from the plasma and accelerates them toward the center, where the ions are trapped in a potential well and recirculate many times, giving a finite probability of fusing. For breakeven, J. Lawson developed his "criterion" nτ = 10¹⁴ cm⁻³-sec at T > 15 keV for DT fusion. The report shows that IEC is one of the few potential fusion approaches that can potentially burn aneutronic fuels like p-¹¹B (hydrogen – Boron 11), in which neutrons carry no more than 1% of the total released energy.
+
+
+  The report reviewed select experiments — the early Hirsch ion-injected IEC that exceeded 10⁹ DT n/s at 150 kV, the STAR mode discharge, and IEC neutron source work licensed by Daimler-Chrysler — and other geometries, including cylindrical IECs, an electrically-driven IEC jet thruster intended as an ultra-maneuverable space thruster, the Dipole Assisted IEC (DaIEC), and Khachan''s studies at the University of Sydney. A theory section compares the pessimistic Q ~ 0.21 result of Nevins for a 50-kV square well against the bounce-averaged Fokker-Planck (BAFP) results of Chacon, the deep double well study of Tzonev et al., the stability "window" found by Kim, and the Bremsstrahlung loss and energy balance critique of Rider.
+
+
+  The report provides an overview of potential applications — neutron/proton/x-ray sources, an integrated x-ray/neutron inspection system for explosives and nuclear material detection, and space propulsion, including the "Fusion Ship II" 750-MWe IEC fusion-powered manned spacecraft and the Magnetically-Channeled Spherical IEC Array (MCSA) concept. Present experimental devices are four to five orders of magnitude below breakeven energy gain for p-¹¹B; the report concludes with a conceptual proposal for a 12 gun breakeven experiment that would confirm break-even conditions using a hydrogen plasma simulation of p-¹¹B, and argued there are no "show stoppers" to the road map to IEC fusion power.
+
+  '
+quotes:
+- id: q-classification-banner
+  added_date: '2026-05-26'
+  text: |-
+    UNCLASSIFIED//[struck through] FOR OFFICIAL USE ONLY
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 1, classification banner'
+  significance: Classification banner — the cover marking is UNCLASSIFIED with FOR OFFICIAL USE ONLY struck through, the form preserved on every page header and footer
+  statement_date: '2010-03-10'
+- id: q-title-identity-block
+  added_date: '2026-05-26'
+  text: |-
+    Defense
+    Intelligence
+    Reference
+    Document
+
+    Acquisition Threat Support
+    [black redaction bar]
+
+    10 March 2010
+    ICOD: 1 December 2009
+    DIA-08-1003-006
+
+    Inertial Electrostatic
+    Confinement Fusion
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 1, title-page identity block'
+  significance: 'Title-page identity block — Defense Intelligence Reference Document, Acquisition Threat Support, dated 10 March 2010, ICOD 1 December 2009, control number DIA-08-1003-006, title "Inertial Electrostatic Confinement Fusion"'
+  statement_date: '2010-03-10'
+- id: q-prepared-by-author-block
+  added_date: '2026-05-26'
+  text: |-
+    Prepared by:
+    [(b)(3):10 USC 424]
+    Defense Intelligence Agency
+
+    Author:
+    [(b)(6)]
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 2, prepared-by/author block'
+  significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
+  statement_date: '2010-03-10'
+- id: q-copyright-warning
+  added_date: '2026-05-26'
+  text: |-
+    COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 2, Administrative Note (Copyright Warning)'
+  significance: Copyright warning — further dissemination of the photographs in the publication is not authorized
+  statement_date: '2010-03-10'
+- id: q-aawsa-admin-note
+  added_date: '2026-05-26'
+  text: |-
+    This product is one in a series of advanced technology reports produced in FY 2009
+    under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace
+    Weapon System Applications (AAWSA) Program. Comments or questions pertaining to
+    this document should be addressed to [(b)(3):10 USC 424;(b)(6)] AAWSA Program
+    Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington,
+    DC 20340-5100.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 2, Administrative Note'
+  significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
+  statement_date: '2010-03-10'
+- id: q-preface-thesis-scope
+  added_date: '2026-05-26'
+  text: |-
+    This report is intended to provide the reader with an overview of the basics,
+    current experimental status, supporting theory, and potential applications of
+    inertial electrostatic confinement (IEC) fusion. Emphasis is placed on work in
+    these areas at the University of Illinois Urbana-Champaign, although some
+    other research is brought in.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. vii, Preface, ¶1'
+  significance: Thesis and scope — the report overviews the basics, experimental status, theory, and potential applications of IEC fusion, emphasizing work at the University of Illinois Urbana-Champaign
+  statement_date: '2010-03-10'
+- id: q-preface-aneutronic-claim
+  added_date: '2026-05-26'
+  text: |-
+    The report further shows that
+    IEC is one of the few potential fusion approaches that can potentially burn
+    aneutronic fuels like p-¹¹B (hydrogen – Boron 11). In aneutronic fusion,
+    neutrons carry no more than 1% of the total released energy, greatly reducing
+    problems associated with neutron radiation.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. vii, Preface, ¶2'
+  significance: Aneutronic claim — the report argues IEC is one of the few fusion approaches that can potentially burn aneutronic fuels like p-¹¹B, in which neutrons carry no more than 1% of the total released energy
+  statement_date: '2010-03-10'
+- id: q-iec-basic-mechanism
+  added_date: '2026-05-26'
+  text: |-
+    As shown, this
+    "gridded" type IEC has a spherical mesh grid suspended on a high voltage feed-through
+    in the center of a metal vacuum vessel. The fusion "fuel", e.g. deuterium gas, is first
+    fed into the chamber originally prepared at high vacuum, e.g. 10⁻⁷ Torr.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 1, Section I, ¶ (printed p. 1)'
+  significance: IEC basic mechanism — a gridded IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel, with fusion fuel such as deuterium gas fed into a chamber prepared at high vacuum
+  statement_date: '2010-03-10'
+- id: q-lawson-criterion
+  added_date: '2026-05-26'
+  text: |-
+    Also the ion energy (or temperature T) must be in the 20 or more keV range assuming
+    D-T fuel. For breakeven, J. Lawson developed his famous "criterion" nτ = 10¹⁴ cm⁻³-sec
+    at T > 15 keV for DT fusion. Here τ = energy confinement time, sec; n = ion density,
+    cm⁻³ and T = ion "temperature" or average energy.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 2, Section I, ¶ (printed p. 2)'
+  significance: Lawson criterion — for breakeven, J. Lawson developed the criterion nτ = 10¹⁴ cm⁻³-sec at T > 15 keV for DT fusion
+  statement_date: '2010-03-10'
+- id: q-farnsworth-origin
+  added_date: '2026-05-26'
+  text: |-
+    Inertial Electrostatic Confinement (IEC) was conceived of by Philo Farnsworth, the
+    inventor of electronic television, as an approach to fusion power using electrostatic
+    fields for confinement (Reference 1.2). When he did this in 1955, the prime approaches
+    being pursued worldwide were magnetic confinement or inertial (laser compression of
+    targets) confinement.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 3, Section I (IEC Background), ¶1 (printed p. 3)'
+  significance: IEC origin — inertial electrostatic confinement was conceived of by Philo Farnsworth, the inventor of electronic television, as an approach to fusion power using electrostatic fields for confinement, in 1955
+  statement_date: '2010-03-10'
+- id: q-miley-bussard-involvement
+  added_date: '2026-05-26'
+  text: |-
+    Then in the late 1990s R. W. Bussard
+    revived the concept with the hybrid IEC magnetic approach (Reference 1.6-1.7). In this
+    approach the electrons were confined in the magnetic field, forming a potentials trap for
+    ions. [Note the similarity to the original conceptual potential well discussed by Elmore,
+    et al. (Reference 1.1)]. Upon invitation by R.W. Bussard to join this effort, the author,
+    George Miley, undertook supporting experiments that were a variation of the original
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 3, Section I (IEC Background), ¶3 (printed p. 3)'
+  significance: 'Authorship self-identification — the document self-identifies the author as George Miley, invited by R. W. Bussard to join the IEC effort, undertaking supporting experiments that were a variation of the original Hirsch approach'
+  statement_date: '2010-03-10'
+- id: q-bussard-military-funding-youtube
+  added_date: '2026-05-26'
+  text: |-
+    Meanwhile Bussard's
+    work continued with strong funding from the military. However, little was published or
+    known about this until 2008 when he made public appeals on "YouTube" to regain
+    funding stopped just when the experiment achieved a major success.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 4, Section I (IEC Background), ¶1 (printed p. 4)'
+  significance: Bussard military funding — Bussard's Polywell work continued with strong funding from the military, with little published until his 2008 YouTube appeals to regain funding stopped just as the experiment achieved a major success
+  statement_date: '2010-03-10'
+- id: q-doe-no-funding-tokamak
+  added_date: '2026-05-26'
+  text: |-
+    At this point the IEC still receives no funding from DOE which remains focused on the
+    Tokomak route to fusion power. Thus, with little funding, slow progress has been made
+    in answering the key question of whether or not the IEC can be developed for fusion
+    power. If it can, the device would be simpler and smaller than a Tokomak, making it an
+    extremely attractive option.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 4, Section I (IEC Background), ¶2 (printed p. 4)'
+  significance: 'Funding status — the IEC receives no funding from DOE, which remains focused on the Tokomak route; if developed, the IEC device would be simpler and smaller than a Tokomak'
+  statement_date: '2010-03-10'
+- id: q-emc2-other-labs-scope-limit
+  added_date: '2026-05-26'
+  text: |-
+    One other limitation of this report is that it largely provides details based on the
+    author's work on IECs over the last decade. Thus it will not do justice to the ongoing
+    work by others, notably at EMC² on the Bussard Polywell device or the advanced
+    gridded IEC neutron/proton source development work at the U of Wisconsin, Kyoto
+    University, and Tokyo Institute of Technology.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 4, Section I (IEC Background), ¶5 (printed p. 4)'
+  significance: Scope limitation — the report largely provides details based on the author's own IEC work over the last decade, and will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology
+  statement_date: '2010-03-10'
+- id: q-star-mode-modes
+  added_date: '2026-05-26'
+  text: |-
+    "Glow discharge operation of the IECGD is categorized by three distinct discharge
+    "modes": Star, Central Spot, and Halo (illustrated in Figure 1.3). These names are quite
+    descriptive of the visual appearances of the visible light emitted from the discharges. All
+    three modes are reproducible and stable; each is associated with a different potential
+    well structure, hence neutron production rate. The star mode was used extensively in
+    recent experiments. It is distinguished by microchannels or "spokes" radiating outward
+    from a bright center spot (Figure 1.4).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 8, Section I (IEC Basics), ¶ (printed p. 8)'
+  significance: 'Discharge modes — glow-discharge IEC operation is categorized by three distinct modes, Star, Central Spot, and Halo, each associated with a different potential well structure and neutron production rate; the star mode is distinguished by microchannels or "spokes" radiating from a bright center spot'
+  statement_date: '2010-03-10'
+- id: q-miley-ion-injected-q-value
+  added_date: '2026-05-26'
+  text: |-
+    These studies did include differential pumping so that
+    number of recirculating passes, β, by an ion was very low, roughly 2. The injected ion
+    current, I, was about 50 mA. Still, based on measurements of neutrons emitted using
+    deuterium fuel, the Q (fusion energy gain/energy in) was remarkable for such a small
+    device, order of 10⁻⁶. Based on these results, an aggressive p-¹¹B breakeven
+    experiment using this type of IEC is discussed in Section VI.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 11, Section I (Miley''s "Ion Injected" Device), ¶ (printed p. 11)'
+  significance: 'UIUC ion-injected device result — with a recirculation number of roughly 2 and ~50 mA injected current, the measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶, the basis for the proposed p-¹¹B breakeven experiment of Section VI'
+  statement_date: '2010-03-10'
+- id: q-hirsch-record-neutron-rate
+  added_date: '2026-05-26'
+  text: |-
+    In Reference 2.1, Robert Hirsh disclosed experimental results with very high D-T
+    neutron rates from an ion-injected IEC shown if Figure 2.1.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 14, Section II, ¶2 (printed p. 14)'
+  significance: Hirsch experiment — Robert Hirsh disclosed experimental results with very high D-T neutron rates from an ion-injected IEC
+  statement_date: '2010-03-10'
+- id: q-hirsch-fig22-neutron-yield
+  added_date: '2026-05-26'
+  text: |-
+    Figure 2.2. Neutron Rates Measured With the IEC of
+    Figure 2.1 Exceeded 10^9 DT n/s at 150 kV. For
+    perspective, note that, as discussed later, UIUC IEC gridded
+    devices routinely produce 10^8 DD n/s at ~ 80 kV. This is
+    slightly above Hirsch's result but uses higher ion currents.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 14, Section II, Figure 2.2 caption (printed p. 14)'
+  significance: 'Hirsch neutron yield — neutron rates measured with the Hirsch IEC exceeded 10⁹ DT n/s at 150 kV, while UIUC gridded devices routinely produce 10⁸ DD n/s at ~80 kV using higher ion currents'
+  statement_date: '2010-03-10'
+- id: q-daimler-chrysler-naa
+  added_date: '2026-05-26'
+  text: |-
+    Daimler-Chrysler licensed use of this IEC
+    neutron technology through the UIUC and used this approach for their NAA quality
+    control units.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 16, Section II, ¶ (printed p. 16)'
+  significance: Daimler-Chrysler NAA — Daimler-Chrysler licensed the IEC neutron technology through the UIUC and used it for their neutron-activation-analysis quality-control units
+  statement_date: '2010-03-10'
+- id: q-section3-other-geometries-thesis
+  added_date: '2026-05-26'
+  text: |-
+    A unique feature of the IEC is the ability to vary its geometry to adapt to a number of
+    important near term and future applications. Here we consider cylindrical IEC
+    geometries, the IEC Jet extraction geometry, dipole assisted, and magnetically-coupled
+    IEC unit which add flexibility for use in some power applications.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 21, Section III, ¶1 (printed p. 21)'
+  significance: 'Other geometries thesis — a unique feature of the IEC is the ability to vary its geometry, considered here as cylindrical, jet-extraction, dipole-assisted, and magnetically-coupled IEC configurations'
+  statement_date: '2010-03-10'
+- id: q-cylindrical-iec-yields
+  added_date: '2026-05-26'
+  text: |-
+    This configuration is used to initiate a plasma discharge,
+    resulting in electrostatic confinement of fusion fuel ions in both the axial and radial
+    directions (Reference 3.4). Present operation produces about 10^7 n/s (D-D) steady
+    state while for pulsed output 10^9 n/s (D-D) is obtained.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 21, Section III (Cylindrical IECs), ¶ (printed p. 21)'
+  significance: 'Cylindrical IEC yields — the hollow-cathode C-Device produces about 10⁷ n/s (D-D) steady state and 10⁹ n/s (D-D) for pulsed output'
+  statement_date: '2010-03-10'
+- id: q-jet-thruster-purpose
+  added_date: '2026-05-26'
+  text: |-
+    The IEC jet thruster is intended as an ultra-maneuverable space thruster for satellite
+    and small probe thrust operations. The IEC Jet design potential offers a unique
+    capability to cover a wide range of powers (few Watts to Kilowatts) with good efficiency
+    while providing a plasma jet that can start with a large diameter but be narrowed
+    directionally to focus on targets.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 22, Section III (Electrically-Driven IEC Jet Thruster), ¶ (printed p. 22)'
+  significance: IEC jet thruster purpose — the IEC jet thruster is intended as an ultra-maneuverable space thruster for satellite and small probe operations, providing a plasma jet that can start large but be narrowed directionally to focus on targets
+  statement_date: '2010-03-10'
+- id: q-jet-thruster-target-interrogation
+  added_date: '2026-05-26'
+  text: |-
+    In addition to maneuverable thrusting, the jet channel extraction technique
+    enables directing and focusing the plasma stream down on an asteroid or other object
+    for interrogation of it. Analysis of the plasma emission spectra would provide an
+    identification of the materials and surface features of the object.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 22, Section III (Electrically-Driven IEC Jet Thruster), ¶ (printed p. 22)'
+  significance: Jet thruster target interrogation — the jet channel extraction technique enables directing and focusing the plasma stream onto an asteroid or other object for interrogation, with plasma-emission-spectra analysis identifying the materials and surface features of the object
+  statement_date: '2010-03-10'
+- id: q-jet-thruster-disable-target
+  added_date: '2026-05-26'
+  text: |-
+    This becomes especially important when considering how
+    long it may take to disable a defensive target (the platform's impulse time to disable).
+    The use of an intense pulsed jet could disable the target before it has time to maneuver
+    or apply defensive layers.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 23, Section III (Relation to Other Prior Thrusters), ¶ (printed p. 23)'
+  significance: 'Jet thruster disable concept — the IEC jet operated as a pulsed device could disable a defensive target before it has time to maneuver or apply defensive layers'
+  statement_date: '2010-03-10'
+- id: q-jet-power-conversion
+  added_date: '2026-05-26'
+  text: |-
+    For example, with the device of Figure 3.2b, the input power is about 2
+    kW with over 1.5 kW being carried out by the jet flow. Consequently, this configuration
+    provides a way to efficiently convert the energy stored by accelerated ions in the
+    symmetric microchannels into a directed beam or jet.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 24, Section III (Description of the IEC Jet Thruster), ¶ (printed p. 24)'
+  significance: 'Jet power conversion — over half the energy imparted to the ions by the accelerating grid is funneled into the jet; in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow'
+  statement_date: '2010-03-10'
+- id: q-daiec-description
+  added_date: '2026-05-26'
+  text: |-
+    The dipole assisted IEC DaIEC is similar to the IEC concept discussed above except a
+    dipole magnet is located in the center of two hemispherical grids (Reference 3.9). The
+    DaIEC was first proposed by G. Miley at the UIUC and has been under investigation
+    there.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 29, Section III (The Dipole Assisted IEC (DaIEC)), ¶1 (printed p. 29)'
+  significance: 'DaIEC description — the dipole assisted IEC places a dipole magnet in the center of two hemispherical grids, first proposed by G. Miley at the UIUC and under investigation there'
+  statement_date: '2010-03-10'
+- id: q-daiec-density-result
+  added_date: '2026-05-26'
+  text: |-
+    Experiments have confirmed that an order of magnitude density increase (vs. no
+    dipole present) can be achieved in the center region.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 30, Section III (DAIEC Experiments), ¶ (printed p. 30)'
+  significance: DaIEC density result — experiments confirmed an order-of-magnitude density increase in the center region versus no dipole present
+  statement_date: '2010-03-10'
+- id: q-khachan-sydney-thruster
+  added_date: '2026-05-26'
+  text: |-
+    Based on this observation,
+    Khachan has engineered the collimated beam of exiting neutrals from the cathode to
+    make a simple electric propulsion thruster where a unidirectional micro-channel
+    emerges from a conical cathode (Reference 3.14). He claims that the specific impulse of
+    the thruster and its efficiency greatly exceed existing electric propulsion thrusters.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 31, Section III (Khachan''s Studies at U of Sydney), ¶ (printed p. 31)'
+  significance: 'Khachan thruster — at the University of Sydney, Khachan engineered the collimated beam of exiting neutrals from a conical cathode into a simple electric propulsion thruster, claiming its specific impulse and efficiency greatly exceed existing electric propulsion thrusters'
+  statement_date: '2010-03-10'
+- id: q-nevins-pessimistic-q-021
+  added_date: '2026-05-26'
+  text: |-
+    Accordingly, he predicted that the Q-value (defined the ratio of fusion power out to ion input power) of an IEC device operating with a 50/50 percent deuterium−tritium (D-T) mixture would be ~0.21 for a 50-kV square well. This conclusion would rule out the possibility of a fusion reactor, but would leave open the development of driven neutron sources.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 34, Section IV, ¶ (printed p. 34)'
+  significance: 'Nevins pessimistic result — Nevins predicted the Q-value of an IEC operating with a 50/50 D-T mixture would be ~0.21 for a 50-kV square well, ruling out a fusion reactor but leaving open driven neutron sources'
+  statement_date: '2010-03-10'
+- id: q-nevins-thorough-subtle-assumptions
+  added_date: '2026-05-26'
+  text: |-
+    Nevin's analysis appears to be very thorough, however, as discussed next, it suffers from several key, but subtle assumptions that may force the pessimistic results.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 34, Section IV, ¶1 (printed p. 34)'
+  significance: 'Nevins critique — the report holds that Nevins''s analysis, while very thorough, suffers from several key but subtle assumptions that may force the pessimistic results'
+  statement_date: '2010-03-10'
+- id: q-chacon-bafp-large-gains
+  added_date: '2026-05-26'
+  text: |-
+    are possible in Penning IEC devices provided that: 1) The electrostatic well is deep enough (E0 > 100 kV); 2) Ion confinement time is long enough ( θ > 0.01); and 3) Ion source strength is moderate (Ŝmax < 300).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 36, Section IV, ¶ (printed p. 36; continues the page-35 sentence "When these restrictive assumptions are removed, it is found that large energy gains (Qs of hundreds) for beam-like solutions in square wells")'
+  significance: 'Chacon BAFP large gains — when Nevins''s restrictive assumptions are removed, the bounce-averaged Fokker-Planck model finds large energy gains (Qs of hundreds) for beam-like solutions in square wells in Penning IEC devices'
+  statement_date: '2010-03-10'
+- id: q-chacon-bafp-conditions
+  added_date: '2026-05-26'
+  text: |-
+    These conditions include that the electrostatic well is deep enough (E0 ~ 100 kV); Ion confinement time is long enough (θ ~ 0.01); the ion source strength is moderate (Ŝmax < 300), while the ion injection energy is slightly below the potential-well maximum.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 36, Section IV, ¶ (printed p. 36)'
+  significance: 'Chacon BAFP conditions — promising Q values require a deep electrostatic well (E0 ~ 100 kV), long enough ion confinement time (θ ~ 0.01), and moderate ion source strength (Ŝmax < 300), with ion injection energy slightly below the potential-well maximum'
+  statement_date: '2010-03-10'
+- id: q-parabolic-well-larger-q
+  added_date: '2026-05-26'
+  text: |-
+    Thus, parabolic wells result in larger density peaks at the center, yielding Q-values 3 to 5 times larger (for E0 ~ 150 kV) than those obtained with square wells.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 36, Section IV, ¶ (printed p. 36)'
+  significance: 'Parabolic well advantage — parabolic wells yield larger central density peaks and Q-values 3 to 5 times larger (for E0 ~ 150 kV) than square wells'
+  statement_date: '2010-03-10'
+- id: q-tzonev-deep-double-wells
+  added_date: '2026-05-26'
+  text: |-
+    Tzonev et al. found that deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A); high perpendicular ion energy spread (3 keV-14 keV); low perpendicular electron energy spread (3 eV), and low radial ion energy spread (0.l eV-0.5 eV).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 39, Section IV (Tzonev et al. – Deep Well Study), ¶ (printed p. 39)'
+  significance: 'Tzonev deep wells — Tzonev et al. found deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A), high perpendicular ion energy spread (3 keV-14 keV), low perpendicular electron energy spread (3 eV), and low radial ion energy spread'
+  statement_date: '2010-03-10'
+- id: q-tzonev-summary-encouraging
+  added_date: '2026-05-26'
+  text: |-
+    In summary, this study by Tzonev et al. is very encouraging for formation of deep wells in IEC devices designed for reactors using beam-beam dominated fusion. However, much more work needs to be done along these lines to fully identify the optimal ion injection strategy for deep wells with minimum power input.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 40, Section IV (Tzonev et al. – Deep Well Study), ¶ (printed p. 40)'
+  significance: 'Tzonev summary — the study is very encouraging for formation of deep wells in IEC reactors using beam-beam dominated fusion, though much more work is needed to identify the optimal ion injection strategy'
+  statement_date: '2010-03-10'
+- id: q-kim-window-of-stability
+  added_date: '2026-05-26'
+  text: |-
+    More recently, H. J. Kim, in his thesis done with G. Miley, did an in-depth study of two stream-like instabilities in the ion-injected type IEC (see Reference 4.6). His work is very encouraging in that he identifies a possible "window of stability" which depends on the injected energy distribution and angular velocity spread.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 41, Section IV (Kim – Stability Analysis), ¶ (printed p. 41)'
+  significance: 'Kim stability window — H. J. Kim''s thesis study of two-stream-like instabilities in the ion-injected IEC identifies a possible "window of stability" depending on the injected energy distribution and angular velocity spread'
+  statement_date: '2010-03-10'
+- id: q-kim-two-stream-stabilized
+  added_date: '2026-05-26'
+  text: |-
+    The results summarized in Figure 4.10 indicated that the two-stream instability is stabilized if the angular momentum spread of the beam ions is small enough, due to enhanced ion densification at the center of the device. This is very encouraging for future IEC development. However, an experimental study should be performed to verify this result.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 42, Section IV (Kim – Stability Analysis), ¶ (printed p. 42)'
+  significance: 'Kim two-stream result — the two-stream instability is stabilized if the angular momentum spread of the beam ions is small enough, due to enhanced ion densification at the center, though an experimental study is needed to verify it'
+  statement_date: '2010-03-10'
+- id: q-rider-bremsstrahlung-prohibitive
+  added_date: '2026-05-26'
+  text: |-
+    Using the Maxwellian average values, he found that Bremsstrahlung losses would be prohibitively large for 3He-3He, p-11B, and p-6Li reactors and will be a considerable fraction of the fusion power for D-3He and D-D reactors.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 43, Section IV (Rider – Energy Balance Study), ¶ (printed p. 43)'
+  significance: 'Rider Bremsstrahlung critique — using Maxwellian average values, Rider found Bremsstrahlung losses would be prohibitively large for 3He-3He, p-11B, and p-6Li reactors and a considerable fraction of the fusion power for D-3He and D-D reactors'
+  statement_date: '2010-03-10'
+- id: q-rider-response-maxwellian-bias
+  added_date: '2026-05-26'
+  text: |-
+    The problem with Rider's analysis is his not using reaction and scattering rates averaged over the non-Maxwellian distribution characteristic of an IEC reactor. This includes both the beam-like ion distribution and the large ion-electron temperature ratio.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 44, Section IV (Rider – Energy Balance Study), ¶ (printed p. 44)'
+  significance: 'Rider rebuttal — the report holds the problem with Rider''s analysis is his not using reaction and scattering rates averaged over the non-Maxwellian distribution characteristic of an IEC reactor'
+  statement_date: '2010-03-10'
+- id: q-neutron-source-vs-power-design
+  added_date: '2026-05-26'
+  text: |-
+    In summary, the design of an optimal IEC neutron source is seen to be quite different from a power-producing IEC. In the source design, the grid parameters, grid/vessel diameter ratio, chamber diameter, surface conditions, background pressure, current, and voltage all become important parameters.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 45, Section IV (Neutron Source Simulations), ¶ (printed p. 45)'
+  significance: 'Source vs. power design — the design of an optimal IEC neutron source differs from a power-producing IEC, with grid parameters, diameter ratios, surface conditions, pressure, current, and voltage all important in the source design'
+  statement_date: '2010-03-10'
+- id: q-integrated-inspection-concept
+  added_date: '2026-05-26'
+  text: |-
+    This integrated inspection system was proposed by G. Miley, et al., in Reference 5.1. It incorporates combined 2.5-and 14-MeV IEC neutron sources and an IEC x-ray source.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 47, Section V (Integrated X-Ray/Neutron Sources), ¶ (printed p. 47)'
+  significance: 'Integrated inspection concept — an integrated inspection system proposed by G. Miley et al. incorporates combined 2.5- and 14-MeV IEC neutron sources and an IEC x-ray source'
+  statement_date: '2010-03-10'
+- id: q-inspection-detection-targets
+  added_date: '2026-05-26'
+  text: |-
+    Basic elements such as oxygen, carbon, and chlorine present in the explosives can be identified through the (n, n'γ) reaction initiated by fast neutrons. The gamma rays produced in the reaction are characteristic of elements being interrogated. Another basic element in many explosives, nitrogen, is usually measured through (n, γ) reactions initiated by thermal neutrons.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 47, Section V (Nuclear and Chemical Explosive Detection Techniques), ¶ (printed p. 47)'
+  significance: 'Detection technique — basic elements such as oxygen, carbon, and chlorine in explosives are identified through the (n, n''γ) reaction initiated by fast neutrons, and nitrogen through (n, γ) reactions initiated by thermal neutrons'
+  statement_date: '2010-03-10'
+- id: q-inspection-detection-categories
+  added_date: '2026-05-26'
+  text: |-
+    B. Nuclear Materials such as natural uranium (U-238) and weapon grade with enriched (U-235). Testing can be done with this natural uranium which can be obtained without special restrictions.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 48, Section V (Overview for Weapons/Nuclear Material Simulation Articles), ¶ (printed p. 48)'
+  significance: 'Detection categories — the simulation-article overview lists nuclear materials such as natural uranium (U-238) and weapon-grade enriched (U-235) among items of interest for detection in inspection stations'
+  statement_date: '2010-03-10'
+- id: q-fusion-ship-ii-config
+  added_date: '2026-05-26'
+  text: |-
+    The overall spaceship length is 300 meters and the initial mass at mission start is 500 metric tons. Crew and avionics/computers are located in the central compartment at the forward end of the vehicle.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 54, Section V (Space Propulsion), ¶ (printed p. 54)'
+  significance: 'Fusion Ship II configuration — the IEC fusion-powered spaceship "Fusion Ship II" has an overall length of 300 meters and an initial mass at mission start of 500 metric tons, with crew and avionics in the central forward compartment'
+  statement_date: '2010-03-10'
+- id: q-fusion-ship-ii-jupiter
+  added_date: '2026-05-26'
+  text: |-
+    A typical trip time for an out-and-back mission to Jupiter is 210 days out and 153 days to return. This is comparable to or faster than that predicted in prior fusion studies.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 54, Section V (Space Propulsion), ¶ (printed p. 54)'
+  significance: 'Fusion Ship II Jupiter mission — a typical out-and-back mission to Jupiter is 210 days out and 153 days to return, comparable to or faster than prior fusion studies'
+  statement_date: '2010-03-10'
+- id: q-mcsa-concept
+  added_date: '2026-05-26'
+  text: |-
+    The Magnetically-Channeled Spherical IEC Array (MCSA) concept for a hybrid magnetic assisted spherical IEC configuration maintains the basic ion-injected spherical IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 56, Section V (Magnetically-Channeled Spherical IEC Array (MCSA) Concept), ¶ (printed p. 56)'
+  significance: 'MCSA concept — the Magnetically-Channeled Spherical IEC Array maintains the basic ion-injected spherical IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products'
+  statement_date: '2010-03-10'
+- id: q-section-v-concluding-remarks
+  added_date: '2026-05-26'
+  text: |-
+    Space propulsion and related space power seems quite far term due to the large size powers demanded for such applications. However, the possibility of using magnetic coupling of smaller unit provides a modular approach that has many advantages, plus expediting development by allowing concentration on the smaller modules.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V (Concluding Remarks), ¶ (printed p. 59)'
+  significance: 'Section V conclusion — space propulsion seems far term due to the large powers demanded, but magnetic coupling of smaller units provides a modular approach with many advantages that expedites development'
+  statement_date: '2010-03-10'
+- id: q-section-vi-orders-below-breakeven
+  added_date: '2026-05-26'
+  text: |-
+    However best current device results are 5 or 6 orders of magnitude down in energy gain Q (energy out/ in) from breakeven. Thus it may appear that such a hope is many years off. Fortunately, the IEC can be scaled up in energy gain while keeping a small size since the losses are in velocity space (i.e. via ion upscattering out of the potential well trap).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 60, Section VI, ¶1 (printed p. 60)'
+  significance: 'Breakeven gap — best current device results are 5 or 6 orders of magnitude below breakeven energy gain Q, but the IEC can be scaled up in energy gain while keeping a small size because the losses are in velocity space'
+  statement_date: '2010-03-10'
+- id: q-vi-breakeven-small-core
+  added_date: '2026-05-26'
+  text: |-
+    Thus in principle, energy breakeven could be demonstrated in the IEC in a very dense plasma "core" occupying only a few cc volume with only a few 100's of watts in and out. This extreme is not currently possible, but use of the new gun injected technology to obtain breakeven in a dense plasma core in the IEC of 100's of cc volume and with 20-25 kW input power seems practical.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 60, Section VI (Demonstration of Net Energy Gain), ¶ (printed p. 60)'
+  significance: 'Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out; breakeven in a 100''s-of-cc core with 20-25 kW input power using new gun-injected technology seems practical'
+  statement_date: '2010-03-10'
+- id: q-vi-p11b-lawson-requirement
+  added_date: '2026-05-26'
+  text: |-
+    This trapped plasma must meet the Lawson criterion for energy to break-even with p-¹¹B, nτ ~ 10¹⁶ cm⁻³-sec (two orders of magnitude above the requirement for D-T fusion). Here n is the ion density and τ is the ion confinement time.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 61, Section VI (Vision of a Future p-¹¹B Fusion Plant), ¶ (printed p. 61)'
+  significance: 'p-¹¹B Lawson requirement — break-even with p-¹¹B requires the trapped plasma to meet a Lawson criterion of nτ ~ 10¹⁶ cm⁻³-sec, two orders of magnitude above the D-T fusion requirement'
+  statement_date: '2010-03-10'
+- id: q-vi-12-gun-q-scaling
+  added_date: '2026-05-26'
+  text: |-
+    The 12 gun breakeven design will provide an increase in β to ~ 1000 due to differential pumping effects, I will increase to 6000 mA (due to multiple pulsed guns), and a will be cut down by 10 due to improvements in focusing both and reduced collisionality. This predicts an increase in Q (compared to prior gun experiment) of ~10⁸, giving Q=1 ("breakeven") as required for a p-¹¹B plasma
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 63, Section VI (Proposed Breakeven Experiment), ¶ (printed p. 63)'
+  significance: '12-gun Q scaling — the 12-gun breakeven design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10, predicting a ~10⁸ increase in Q over the prior gun experiment to give Q=1 ("breakeven") for a p-¹¹B plasma'
+  statement_date: '2010-03-10'
+- id: q-vi-hydrogen-simulation
+  added_date: '2026-05-26'
+  text: |-
+    Thus we propose to confirm the achievement of breakeven conditions using a hydrogen plasma and diagnostics to show that the nτ and T corresponding to Q = 1 (p-¹¹B) are obtained.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 63, Section VI (Proposed Breakeven Experiment), ¶ (printed p. 63)'
+  significance: 'Hydrogen simulation — the proposal is to confirm breakeven conditions using a hydrogen plasma and diagnostics showing that the nτ and T corresponding to Q = 1 (p-¹¹B) are obtained'
+  statement_date: '2010-03-10'
+- id: q-vi-no-show-stoppers
+  added_date: '2026-05-26'
+  text: |-
+    There are no "show stoppers" however, so the road map to IEC fusion power seems clear. The main challenge is to find funding sources with the "will" to proceed.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 64, Section VI (Concluding Remarks), ¶ (printed p. 64)'
+  significance: 'Conclusion — the report states there are no "show stoppers," so the road map to IEC fusion power seems clear, with the main challenge being to find funding sources with the "will" to proceed'
+  statement_date: '2010-03-10'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-26'
+  observed: '[(b)(6)]'
+  canonical: '[redacted per FOIA (b)(6)]'
+  location: 'p. 2, Author line'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-05-26'
+  observed: '[(b)(3):10 USC 424]'
+  canonical: '[redacted per FOIA (b)(3):10 USC 424]'
+  location: 'p. 2, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-05-26'
+  observed: AAWSA
+  canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
+  location: 'p. 2, Administrative Note'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-05-26'
+  observed: Tokomak
+  canonical: Tokamak
+  location: 'pp. 4, 43, 55, 60, IEC Background and Theory/Applications sections'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-05-26'
+  observed: Hirsh
+  canonical: Hirsch
+  location: 'pp. 3, 14, IEC Background and Select Experiments sections'
+  source_path: government/dird-09-iec-fusion-20100310.pdf
+  resolution: preserve-as-sic-in-quotes
+cited_works:
+- id: cw1
+  added_date: '2026-05-26'
+  citation_key: '1.1'
+  author: 'W. Elmore, J. Tuck, and K. Watson'
+  year: '1959'
+  title: 'On the Inertial-Electrostatic Confinement of a Plasma'
+  citation_verbatim: |-
+    1.1    W. Elmore, J. Tuck, and K. Watson, "On the Inertial-Electrostatic Confinement of
+           a Plasma", Phys. Fluids, vol. 2, No. 3, (1959) pp. 239-246.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw2
+  added_date: '2026-05-26'
+  citation_key: '1.2'
+  author: 'R.L. Hirsch'
+  year: '1967'
+  title: 'Inertial-electrostatic confinement of ionized fusion gases'
+  citation_verbatim: |-
+    1.2    R.L. Hirsch, "Inertial-electrostatic confinement of ionized fusion gases," J. of Appl.
+           Phys., vol. 38, (1967) pp. 4522-4534.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw3
+  added_date: '2026-05-26'
+  citation_key: '1.3'
+  author: 'W. M. Black and E. H. Klevans'
+  year: '1974'
+  title: 'Theory of Potential-Well Formation in an Electrostatic Confinement Device'
+  citation_verbatim: |-
+    1.3    W. M. Black and E. H. Klevans, "Theory of Potential-Well Formation in an
+           Electrostatic Confinement Device", J. of Appl. Phys., Vol. 45, No. 6 (1974) pp. 2502-2511.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw4
+  added_date: '2026-05-26'
+  citation_key: '1.4'
+  author: 'T. A. Thorson, R. D. Durst, R. J. Fonck, and L. P. Wainwright'
+  year: '1997'
+  title: 'Convergence Electrostatic Potential, and Density Measurements in a Spherical Convergent Ion Focus'
+  citation_verbatim: |-
+    1.4    T. A. Thorson, R. D. Durst, R. J. Fonck, and L. P. Wainwright, "Convergence
+           Electrostatic Potential, and Density Measurements in a Spherical Convergent Ion
+           Focus", Phys. Plasmas, vol. 4, no. 1, (1997) pp. 4-5.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw5
+  added_date: '2026-05-26'
+  citation_key: '1.5'
+  author: 'G.H. Miley, et al.'
+  year: '1993'
+  title: 'Inertial-electrostatic confinement neutron proton source'
+  citation_verbatim: |-
+    1.5    G.H. Miley, et al., "Inertial-electrostatic confinement neutron proton source,"
+           Third International Conference on Dense 2-pinches, AIP Conference Proceedings 299,
+           (1993) pp. 675-689.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw6
+  added_date: '2026-05-26'
+  citation_key: '1.6'
+  author: 'R.W. Bussard'
+  year: '1991'
+  title: 'Some Physics Considerations of Magnetic Inertial-Electrostatic Confinement: A New Concept for Spherical Converging-Flow Fusion'
+  citation_verbatim: |-
+    1.6    R.W. Bussard, "Some Physics Considerations of Magnetic Inertial-Electrostatic
+           Confinement: A New  Concept for Spherical Converging-Flow Fusion", Fusion
+           Technology, vol. 19, no. 2, (1991) pp. 273-293.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw7
+  added_date: '2026-05-26'
+  citation_key: '1.7'
+  author: 'N. A. Krall'
+  year: '1992'
+  title: 'The Polywell™: A Spherically Convergent Ion Focus Concept'
+  citation_verbatim: |-
+    1.7    N. A. Krall, "The Polywell™: A Spherically Convergent Ion Focus Concept", Fusion
+           Technology, vol. 22, no1, (1992) pp. 42-49.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw8
+  added_date: '2026-05-26'
+  citation_key: '1.8'
+  author: 'S. K. Wong and N. A. Krall'
+  year: '1993'
+  title: 'A Nonlocal Theory of Counterstreaming Ion Instability'
+  citation_verbatim: |-
+    1.8    S. K. Wong and N. A. Krall, "A Nonlocal Theory of Counterstreaming Ion
+           Instability", Phys. Fluids B, vol. 5, no.6, (1993) pp. 1706-1714.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw9
+  added_date: '2026-05-26'
+  citation_key: '1.9'
+  author: 'D. C. Barnes, M. M. Schauer, K. R. Umstadter, L. Chacon, and G. H. Miley'
+  year: '2000'
+  title: 'Electron equilibrium and confinement in a modified Penning trap and its application to Penning fusion'
+  citation_verbatim: |-
+    1.9    D. C. Barnes, M. M. Schauer, K. R. Umstadter, L. Chacon, and G. H. Miley,
+           "Electron equilibrium and confinement in a modified Penning trap and its application
+           to Penning fusion", Phys. Plasmas, vol. 7, no. 5, May (2000).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw10
+  added_date: '2026-05-26'
+  citation_key: '1.10'
+  author: 'R. A. Nebel, D. C. Barnes'
+  year: '1998'
+  title: 'Fusion Technology 38, 28'
+  citation_verbatim: |-
+    1.10   R. A. Nebel, D. C. Barnes, Fusion Technology 38, 28 (1998).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw11
+  added_date: '2026-05-26'
+  citation_key: '1.11'
+  author: 'D. C. Barnes, R. A. Nebel'
+  year: '1998'
+  title: 'Stable, thermal equilibrium, large-amplitude, spherical plasma oscillations in electrostatic confinement devices'
+  citation_verbatim: |-
+    1.11   D. C. Barnes, R. A. Nebel, "Stable, thermal equilibrium, large-amplitude,
+           spherical plasma oscillations in electrostatic confinement devices", Physics of
+           Plasmas 5, 2498 (1998).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw12
+  added_date: '2026-05-26'
+  citation_key: '1.12'
+  author: 'J. Park, R. A. Nebel, S. Stange, S. K. Murali'
+  year: '2005'
+  title: 'Periodically oscillating plasma sphere'
+  citation_verbatim: |-
+    1.12   J. Park, R. A. Nebel, S. Stange, S. K. Murali, "Periodically oscillating plasma
+           sphere", Physics of Plasmas 12, (2005) 056315.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 13, Section I References (printed p. 13)'
+- id: cw13
+  added_date: '2026-05-26'
+  citation_key: '2.1'
+  author: 'R. L. Hirsch'
+  year: '1967'
+  title: 'Inertial-Electrostatic Confinement of Ionized Fusion Gases'
+  citation_verbatim: |-
+    2.1    R. L. Hirsch, "Inertial-Electrostatic Confinement of Ionized Fusion Gases," J. Appl.
+           Physics 38, no.11, (1967) pp. 4522-4534.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw14
+  added_date: '2026-05-26'
+  citation_key: '2.2'
+  author: 'A. L. Gardner'
+  year: '1974'
+  title: 'Studies of Charged-Particle Distributions in an Electrostatic Confinement System'
+  citation_verbatim: |-
+    2.2    A. L. Gardner, "Studies of Charged-Particle Distributions in an Electrostatic
+           Confinement System, "U. S. Atomic Energy Commission Final Report N. C00-2180-7,
+           Washington, D. C. (1974).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw15
+  added_date: '2026-05-26'
+  citation_key: '2.3'
+  author: 'G. H. Miley, Y. Gu, J. M. DeMorea, R. A. Stubbers, T. A. Hochberg, J. H. Nadler, and R. A. Anderl'
+  year: '1997'
+  title: 'Discharge Characteristics of the Spherical Inertial Electrostatic Confinement (IEC) Device'
+  citation_verbatim: |-
+    2.3    G. H. Miley, Y. Gu, J. M. DeMorea, R. A. Stubbers, T. A. Hochberg, J. H. Nadler,
+           and R. A. Anderl, "Discharge Characteristics of the Spherical Inertial Electrostatic
+           Confinement (IEC) Device," IEEE Transactions Plasma Science, Vol. 24, No. 4, (1997)
+           pp. 733-739.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw16
+  added_date: '2026-05-26'
+  citation_key: '2.4'
+  author: 'T.J. McGuire and R.J. Sedwick'
+  year: '2005'
+  title: 'Improving IEC Particle Confinement Times Using Multiple Grids'
+  citation_verbatim: |-
+    2.4    T.J. McGuire and R.J. Sedwick, "Improving IEC Particle Confinement Times Using
+           Multiple Grids" 7th US-Japan IEC Workshop, Los Alamos National Laboratory, NM,
+           March 14-16 (2005).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw17
+  added_date: '2026-05-26'
+  citation_key: '2.5'
+  author: 'R.A. Anderl, J.K. Hartwell, J.H. Nadler, J.M. DeMora, R.A. Stubbers, and G.H. Miley'
+  year: '1996'
+  title: 'Development of an IEC Neutron Source for NDE'
+  citation_verbatim: |-
+    2.5    R.A. Anderl, J.K. Hartwell, J.H. Nadler, J.M. DeMora, R.A. Stubbers, and G.H.
+           Miley, "Development of an IEC Neutron Source for NDE," 16th Symposium on Fusion
+           Engineering, eds. G.H. Miley and C.M. Elliott, IEEE Conf. Proc. 95CH35852, IEEE,
+           Piscataway, NJ, (1996) pp. 1482-1485.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw18
+  added_date: '2026-05-26'
+  citation_key: '2.6'
+  author: 'Y. Gu, M. Williams, R. Stubbers, and G. Miley'
+  year: '1996'
+  title: 'Pulsed Operation of Spherical Inertial-Electrostatic Confinement Device'
+  citation_verbatim: |-
+    2.6    Y. Gu, M. Williams, R. Stubbers, and G. Miley, "Pulsed Operation of Spherical
+           Inertial-Electrostatic Confinement Device", Fusion Technology, Vol. 30, no. 3, (1996)
+           pp. 1342-1346.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw19
+  added_date: '2026-05-26'
+  citation_key: '2.7'
+  author: 'T. Takamatsu, T. Kyunai, S. Ogawa, K. Masuda, H. Toku, and K. Yoshikawa'
+  year: '2005'
+  title: 'A Magnetron Discharge Ion Source for an Inertial Electrostatic Confinement Fusion Device'
+  citation_verbatim: |-
+    2.7    T. Takamatsu, T. Kyunai, S. Ogawa, K. Masuda, H. Toku, and K. Yoshikawa, "A
+           Magnetron Discharge Ion Source for an Inertial Electrostatic Confinement Fusion
+           Device" 7th U.S.-Japan IEC Workshop , Los Alamos National Laboratory, NM, March
+           14-16, (2005).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw20
+  added_date: '2026-05-26'
+  citation_key: '2.8'
+  author: 'G. R. Piefer, J. F. Santarius, R. P. Ashley, G.L. Kulcinski'
+  year: '2005'
+  title: 'Progress in the Development of a ³He Ion Source for IEC Fusion'
+  citation_verbatim: |-
+    2.8    G. R. Piefer, J. F. Santarius, R. P. Ashley, G.L. Kulcinski "Progress in the
+           Development of a ³He Ion Source for IEC Fusion", 7th U.S.-Japan IEC Workshop, Los
+           Alamos National Laboratory,, NM, March 14-16, (2005).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 20, Section II References (printed p. 20)'
+- id: cw21
+  added_date: '2026-05-26'
+  citation_key: '3.1'
+  author: 'B. Bromley, L. Chacon, and G. Miley'
+  year: '1998'
+  title: 'Approximate Modeling of Cylindrical Inertial Electrostatic Confinement, (IEC) Fusion Neutron Generator'
+  citation_verbatim: |-
+    3.1    B. Bromley, L. Chacon, and G. Miley, "Approximate Modeling of Cylindrical Inertial
+           Electrostatic Confinement, (IEC) Fusion Neutron Generator," Proc. 16th International
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 32, Section III References (printed p. 32; reference 3.1 continues onto p. 33: "Conference on Numerical Simulation of Plasmas, UCLA Dept. Physics, Los Angeles, CA, Santa Barbara, CA, Feb10-12 (1998) pp. 191-192.")'
+- id: cw22
+  added_date: '2026-05-26'
+  citation_key: '3.2'
+  author: 'G. Miley, T. Bauer, J. Nadler, H. Hora'
+  year: '2000'
+  title: 'Converging Beam Neutron Source for Driving a Sub-critical Fission Reactor'
+  citation_verbatim: |-
+    3.2   G. Miley, T. Bauer, J. Nadler, H. Hora, "Converging Beam Neutron Source for Driving a Sub-critical Fission Reactor", Proceedings, ICONE 8, CD/Track 8, 8500 Apr 2-6 Baltimore, MD, (2000)pp. 1-8.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw23
+  added_date: '2026-05-26'
+  citation_key: '3.3'
+  author: 'R. A. Stubbers, H. J. Kim, and G. H. Miley'
+  year: '2002'
+  title: 'Two-Dimensional Modeling of a Radically-Convergent Cylindrical Inertial Electrostatic Confinement, (IEC) Fusion Device'
+  citation_verbatim: |-
+    3.3   R. A. Stubbers, H. J. Kim, and G. H. Miley, "Two-Dimensional Modeling of a Radically-Convergent Cylindrical Inertial Electrostatic Confinement, (IEC) Fusion Device," 5th US/Japan Workshop, IEC Fusion, Madison WI, Oct 9-10 (2002).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw24
+  added_date: '2026-05-26'
+  citation_key: '3.4'
+  author: 'G. H. Miley, R. A. Stubbers, and H. Momota'
+  year: '2003'
+  title: 'Advances in Cylindrical IEC Neutron Source Design for Driven Sub-Critical Operation'
+  citation_verbatim: |-
+    3.4   G. H. Miley, R. A. Stubbers, and H. Momota, "Advances in Cylindrical IEC Neutron Source Design for Driven Sub-Critical Operation," to be published in the proceedings of ICONE 11: 11th International Conference on Nuclear Engineering, Nuclear Energy-Dawn of a New Era, ICONE 11, Tokyo, Japan, Apr 20-23 (2003).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw25
+  added_date: '2026-05-26'
+  citation_key: '3.5'
+  author: 'G. H. Miley, J. Javedani. R. Nebel, J. Nadler, Y. Gu, A. Satsangi and P. Heck'
+  year: '1994'
+  title: 'An Inertial Electrostatic Confinement Neutron/Proton Source'
+  citation_verbatim: |-
+    3.5   G. H. Miley, J. Javedani. R. Nebel, J. Nadler, Y. Gu, A. Satsangi and P. Heck, "An Inertial Electrostatic Confinement Neutron/Proton Source," Third International Conference on Dense Z pinches, editors. Haines, Malcolm, Knight, and Andrew, AIP Conference Proceedings 299, AIP Press, (1994), pp. 675-689.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw26
+  added_date: '2026-05-26'
+  citation_key: '3.6'
+  author: 'R. W. Bussard'
+  year: '1990'
+  title: 'Fusion as Electric Propulsion'
+  citation_verbatim: |-
+    3.6   R. W. Bussard, "Fusion as Electric Propulsion," J. of Propulsion, Vol. 6, No. 5, (1990), pp. 567-574.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw27
+  added_date: '2026-05-26'
+  citation_key: '3.7'
+  author: 'Y. Gu, .B., Nadler, J.H., Satsangi, A.J., Javedani, J.B., Miley, G.H., Nebel. R.A. and Barnes, D.C.'
+  year: '1994'
+  title: 'Physics and Effects of Grid-Electric Field Perturbation on Spherical Electrostatic-Inertial Confinement Fusion'
+  citation_verbatim: |-
+    3.7   Y. Gu, .B., Nadler, J.H., Satsangi, A.J., Javedani, J.B., Miley, G.H., Nebel. R.A. and Barnes, D.C., "Physics and Effects of Grid-Electric Field Perturbation on Spherical Electrostatic-Inertial Confinement Fusion". 21st EPS Conference on Controlled Fusion and Plasma Physics, editors Joffrin, E., Platz, P. and Stott, P.E., Montpellier, France, Vol. 436, (1994).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw28
+  added_date: '2026-05-26'
+  citation_key: '3.8'
+  author: 'D. C. Barnes, R. A. Nebel, F. L. Ribe, G. H. Miley, J. Javedani, Y. Gu. and A. Satsangi'
+  year: '1994'
+  title: 'Inertial Electrostatic Confinement Experiments at Low Working Pressure'
+  citation_verbatim: |-
+    3.8   D. C. Barnes, R. A. Nebel, F. L. Ribe, G. H. Miley, J. Javedani, Y. Gu. and A. Satsangi, "Inertial Electrostatic Confinement Experiments at Low Working Pressure," Prepared under U.S. Army contract DAAK70-93-003 8 by the Nambe Tech Corp., NTTR-101, Santa Fe, NM (1994).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw29
+  added_date: '2026-05-26'
+  citation_key: '3.9'
+  author: 'G. H. Miley, H. Momota, P.J. Shrestha, R. Thomas, and Y. Takeyama'
+  year: '2006'
+  title: 'Space Propulsion Based on Dipole Assisted IEC System'
+  citation_verbatim: |-
+    3.9   G. H. Miley, H. Momota, P.J. Shrestha, R. Thomas, and Y. Takeyama, " Space Propulsion Based on Dipole Assisted IEC System", AIP Conference Proceedings, Albuquerque, New Mexico STAIF , vol. 813, (2006)pp. 1240-1248.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw30
+  added_date: '2026-05-26'
+  citation_key: '3.10'
+  author: 'A. Hasegawa, L. Chen, and M.E. Mauel'
+  year: '1990'
+  title: 'A D-3He Fusion Reactor Based on a Dipole Magnetic Field'
+  citation_verbatim: |-
+    3.10  A. Hasegawa, L. Chen, and M.E. Mauel, "A D-3He Fusion Reactor Based on a Dipole Magnetic Field," Nuclear Fusion, Vol. 30, Sept. (1990), pp. 2405.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw31
+  added_date: '2026-05-26'
+  citation_key: '3.11'
+  author: 'J. Khachan, S. Collis'
+  year: '2001'
+  title: 'Measurements of ion energy distributions by Doppler shift spectroscopy in an inertial electrostatic confinement device'
+  citation_verbatim: |-
+    3.11  J. Khachan, S. Collis, " Measurements of ion energy distributions by Doppler shift spectroscopy in an inertial electrostatic confinement device", Phys. of Plasmas, vol. 8, no. 4 (2001) pp. 1299-1304.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw32
+  added_date: '2026-05-26'
+  citation_key: '3.12'
+  author: 'O. Shrier, J. Khachan, S. Bosi, M. Fitzgerald, N. Evans'
+  year: '2006'
+  title: 'Diverging ion motion in an inertial electrostatic confinement discharge'
+  citation_verbatim: |-
+    3.12  O. Shrier, J. Khachan, S. Bosi, M. Fitzgerald, N. Evans, "Diverging ion motion in an inertial electrostatic confinement discharge", Phys. of Plasmas, vol. 13, no. 1, (2006). Art. No. 012703.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw33
+  added_date: '2026-05-26'
+  citation_key: '3.13'
+  author: 'J. Khachan, A. Samarian'
+  year: '2007'
+  title: 'Dust diagnostics on an inertial electrostatic confinement discharge'
+  citation_verbatim: |-
+    3.13 J. Khachan, A. Samarian, "Dust diagnostics on an inertial electrostatic confinement discharge", Phys. Letters A, vol. 363, no. 4 (2007) pp. 297-301.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw34
+  added_date: '2026-05-26'
+  citation_key: '3.14'
+  author: 'L. Blackhall, J. Khachan'
+  year: '2007'
+  title: 'A simple electric thruster based on ion charge exchange'
+  citation_verbatim: |-
+    3.14 L. Blackhall, J. Khachan, "A simple electric thruster based on ion charge exchange", vol. 40, No. 8, (2007) pp. 2491-2494.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'pp. 32-33, Section III References (printed pp. 32-33)'
+- id: cw35
+  added_date: '2026-05-26'
+  citation_key: '4.1'
+  author: 'W.M. Nevins'
+  year: '1995'
+  title: 'Can inertial electrostatic confinement work beyond the ion-ion collisional time scale?'
+  citation_verbatim: |-
+    4.1   W.M. Nevins, Can inertial electrostatic confinement work beyond the ion-ion collisional time scale?" Phys. Plasmas, Vol. 2, No. I0, October (1995) pp. 3804-3819.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw36
+  added_date: '2026-05-26'
+  citation_key: '4.2'
+  author: 'L. Chacon, G. H. Miley, D. C. Barnes, and D. A. Knoll'
+  year: '2000'
+  title: 'Energy gain calculations in Penning fusion systems using a bounce-averaged Fokker−Planck modelz'
+  citation_verbatim: |-
+    4.2   L. Chacon, G. H. Miley, D. C. Barnes, and D. A. Knoll, "Energy gain calculations in Penning fusion systems using a bounce-averaged Fokker−Planck modelz" Phys. of Plasmas, vol. 7, no. 11, (2000) p. 4547.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw37
+  added_date: '2026-05-26'
+  citation_key: '4.3'
+  author: 'T .N. Tiouririne and D. C. Barnes'
+  year: '1995'
+  title: 'Optimization of SCIF Fusion Systems'
+  citation_verbatim: |-
+    4.3   T .N. Tiouririne and D. C. Barnes, Optimization of SCIF Fusion Systems", Bull. Am. Phys. Soc., vol. 40 (1995) pp. 1665.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw38
+  added_date: '2026-05-26'
+  citation_key: '4.4'
+  author: 'I.V. Tzonev, J. M. DeMora, G.H. Miley'
+  year: '1996'
+  title: 'Effect of Large Ion Angular Momentum Spread and High Current on Inertial Electrostatic Confinement Potential Structures'
+  citation_verbatim: |-
+    4.4   I.V. Tzonev, J. M. DeMora, G.H. Miley, "Effect of Large Ion Angular Momentum Spread and High Current on Inertial Electrostatic Confinement Potential Structures", Proc. 16th IEEENPSS Symp. On Fusion Engr. (Miley and Elliott, eds.) IEEE paper 95CH35852, 1476-1481 (1996).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw39
+  added_date: '2026-05-26'
+  citation_key: '4.5'
+  author: 'G.H. Miley and H. Momota'
+  year: '2001'
+  title: 'Virtual Cathode in a Stationary Spherical Inertial Electrostatic Confinement'
+  citation_verbatim: |-
+    4.5   G.H. Miley and H. Momota, "Virtual Cathode in a Stationary Spherical Inertial Electrostatic Confinement", Fusion Science and Technology, Vol. 40, July (2001).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw40
+  added_date: '2026-05-26'
+  citation_key: '4.6'
+  author: 'H.J. Kim'
+  year: '2006'
+  title: 'Instability Studies on a Spherical Inertial Electrostatic Confinement'
+  citation_verbatim: |-
+    4.6   H.J. Kim, "Instability Studies on a Spherical Inertial Electrostatic Confinement", Dissertation, Submitted in partial fulfillment for the requirements of degree of Doctor of Philosophy, NPRE Department, University of Illinois at Urbana-Champaign, Illinois (2006).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw41
+  added_date: '2026-05-26'
+  citation_key: '4.7'
+  author: 'T.H. Rider'
+  year: '1995'
+  title: 'A general critique of inertial-electrostatic confinement fusion systems'
+  citation_verbatim: |-
+    4.7   T.H. Rider, "A general critique of inertial-electrostatic confinement fusion systems", Phys. Plasmas, Vol. 2, No. 6, June (1995) p. 1853.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw42
+  added_date: '2026-05-26'
+  citation_key: '4.8'
+  author: 'G.H. Miley, John M. DeMora, Brian E. Jurczyk, Martin Nieto'
+  year: '1999'
+  title: 'Computational Studies of Collisional Processes in Inertial Electrostatic Glow Discharge Fusion Devices'
+  citation_verbatim: |-
+    4.8   G.H. Miley, John M. DeMora, Brian E. Jurczyk, Martin Nieto, "Computational Studies of Collisional Processes in Inertial Electrostatic Glow Discharge Fusion Devices," 18th Symposium on Fusion Engineering, (1999) p 23.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 46, Section IV References (printed p. 46)'
+- id: cw43
+  added_date: '2026-05-26'
+  citation_key: '5.1'
+  author: 'G. H. Miley, L. Wu, H. J. Kim'
+  year: '2005'
+  title: 'Nuclear Techniques in National Security Studies on Contraband Detections IEC-based neutron generator for security inspection system'
+  citation_verbatim: |-
+    5.1   G. H. Miley, L. Wu, H. J. Kim, Nuclear Techniques in National Security Studies on Contraband Detections IEC-based neutron generator for security inspection system", Journal of Radioanalytical and Nuclear Chemistry, Vol. 263, No. 1 (2005) pp.159-164.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V References (printed p. 59)'
+- id: cw44
+  added_date: '2026-05-26'
+  citation_key: '5.2'
+  author: 'R. Burton, H. Momota, N. Richardson, Y. Shaban, and G. H. Miley'
+  year: '2003'
+  title: 'Fusion Ship II-A Fast Manned Interplanetary Space Vehicle Using Inertial Electrostatic Fusion'
+  citation_verbatim: |-
+    5.2   R. Burton, H. Momota, N. Richardson, Y. Shaban, and G. H. Miley, "Fusion Ship II-A Fast Manned Interplanetary Space Vehicle Using Inertial Electrostatic Fusion", Space Technology and Applications International Forum -STAIF-2003, Albuquerque, NM, 654, Feb 2-5 (2003) (M.S. El-Genk, ed.), American Institute of Physics Conf. Proceedings, pp. 553-562.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V References (printed p. 59)'
+- id: cw45
+  added_date: '2026-05-26'
+  citation_key: '5.3'
+  author: 'G. H. Miley, R. Stubbers, J. Webber, H. Momota'
+  year: '2004'
+  title: 'Magnetically-Channeled SIEC Array (MCSA) Fusion Device for Interplanetary Missions'
+  citation_verbatim: |-
+    5.3   G. H. Miley, R. Stubbers, J. Webber, H. Momota, "Magnetically-Channeled SIEC Array (MCSA) Fusion Device for Interplanetary Missions", Space Technology and Applications International Forum-STAIF 2004 (M.S. El Genk, Ed.) American Institute of Physics Conf. Proceedings (2004).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V References (printed p. 59)'
+- id: cw46
+  added_date: '2026-05-26'
+  citation_key: '5.4'
+  author: 'H. Momota, G. H. Miley, and J. Nadler'
+  year: '2000'
+  title: 'Direct Energy Conversion for IEC Propulsions'
+  citation_verbatim: |-
+    5.4   H. Momota, G. H. Miley, and J. Nadler, "Direct Energy Conversion for IEC Propulsions", Report to National Institute for Fusion Science of Japan, Report NISF-641, ISSN 0915-633X, August (2000).
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V References (printed p. 59)'
+- id: cw47
+  added_date: '2026-05-26'
+  citation_key: '5.5'
+  author: 'Y. Gu, M. Williams, R. Stubbers, G. Miley'
+  year: '1996'
+  title: 'Pulsed Operation of Spherical Inertial-Electrostatic Confinement Device'
+  citation_verbatim: |-
+    5.5   Y. Gu, M. Williams, R. Stubbers, G. Miley, "Pulsed Operation of Spherical Inertial-Electrostatic Confinement Device," Proceeding of 12th Topical Meeting on the Technology of Fusion Energy, ANS, Reno, NV, 16-20 June (1996), pp. 1342-1346.
+  source:
+    path: government/dird-09-iec-fusion-20100310.pdf
+    location: 'p. 59, Section V References (printed p. 59)'
