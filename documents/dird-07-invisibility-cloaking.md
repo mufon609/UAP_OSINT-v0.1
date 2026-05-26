@@ -278,45 +278,45 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
 
-- **[1]** ¹ A. Alu and N. Engheta, Achieving transparency with plasmonic and metamaterial coatings, Physical Review E 72, 016623 (2005).
-- **[2]** ² G. W. Milton and N.-A. P. Nicorovici, On the cloaking effects associated with anomalous localized resonance, Proceedings of the Royal Society London A 462, 3027 (2006).
-- **[3]** ³ Y. Lai, H. Chen, Z-Q. Zhang, and C. T. Chan, Complementary Media Invisibility Cloak that Cloaks Objects at a Distance Outside the Cloaking Shell, Physical Review Letters 102, 093901 (2009).
-- **[4]** ⁴ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
-- **[5]** ⁵ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
-- **[6]** ⁶ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
-- **[7]** ⁷ U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to appear in Progress in Optics.
-- **[8]** ⁸ U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to appear in Progress in Optics.
-- **[9]** ⁹ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
-- **[10]** ¹⁰ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
-- **[11]** ¹¹ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[12]** ¹² U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
-- **[13]** ¹³ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[14]** ¹⁴ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[15]** ¹⁵ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[16]** ¹⁶ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[17]** ¹⁷ F. E. Wagner, S. Haslbeck, L. Stievano, S. Calogero, Q. A. Pankhurst, and P. Martinek, Before striking gold in gold-ruby glass, Nature 407, 691 (2000).
-- **[18]** ¹⁸ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[19]** ¹⁹ W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics 1, 224 (2007).
-- **[20]** ²⁰ W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics 1, 224 (2007).
-- **[21]** ²¹ C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
-- **[22]** ²² C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
-- **[23]** ²³ J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, and X. Zhang, Optical Negative Refraction in Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
-- **[24]** ²⁴ J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
-- **[25]** ²⁵ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
-- **[26]** ²⁶ [11] J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, A. M. Stacy, and X. Zhang, Optical Negative Refraction in Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
-- **[27]** ²⁷ J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
-- **[28]** ²⁸ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
-- **[29]** ²⁹ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
-- **[30]** ³⁰ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
-- **[31]** ³¹ H. Chen and C. T. Chan, Time delays and energy transport velocities in three dimensional ideal cloaking devices, Journal of Applied Physics 104, 033113 (2008).
-- **[32]** ³² U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
-- **[33]** ³³ M. Born and E. Wolf, Principles of Optics (Cambridge University Press, Cambridge, 1999).
-- **[34]** ³⁴ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
-- **[35]** ³⁵ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
-- **[36]** ³⁶ D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
-- **[37]** ³⁷ R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366 (2009).
-- **[38]** ³⁸ R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366 (2009).
-- **[39]** ³⁹ C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+- **[1]** A. Alu and N. Engheta, Achieving transparency with plasmonic and metamaterial coatings, Physical Review E 72, 016623 (2005).
+- **[2]** G. W. Milton and N.-A. P. Nicorovici, On the cloaking effects associated with anomalous localized resonance, Proceedings of the Royal Society London A 462, 3027 (2006).
+- **[3]** Y. Lai, H. Chen, Z-Q. Zhang, and C. T. Chan, Complementary Media Invisibility Cloak that Cloaks Objects at a Distance Outside the Cloaking Shell, Physical Review Letters 102, 093901 (2009).
+- **[4]** U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+- **[5]** J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+- **[6]** J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+- **[7]** U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to appear in Progress in Optics.
+- **[8]** U. Leonhardt and T. G. Philbin, Transformation Optics and the Geometry of Light, preprint arXiv:0805.4778, to appear in Progress in Optics.
+- **[9]** U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+- **[10]** J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
+- **[11]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[12]** U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
+- **[13]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[14]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[15]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[16]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[17]** F. E. Wagner, S. Haslbeck, L. Stievano, S. Calogero, Q. A. Pankhurst, and P. Martinek, Before striking gold in gold-ruby glass, Nature 407, 691 (2000).
+- **[18]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[19]** W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics 1, 224 (2007).
+- **[20]** W. Cai, U. K. Chettiar, A. V. Kildishev, and V. M. Shalaev, Optical cloaking with metamaterials, Nature Photonics 1, 224 (2007).
+- **[21]** C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+- **[22]** C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
+- **[23]** J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, and X. Zhang, Optical Negative Refraction in Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
+- **[24]** J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
+- **[25]** U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
+- **[26]** [11] J. Yao, Z. Liu, Y. Liu, Y. Wang, C. Sun, G. Bartal, A. M. Stacy, and X. Zhang, Optical Negative Refraction in Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
+- **[27]** J. Valentine, S. Zhang, T. Zentgraf, E. Ulin-Avila, D. A. Genov, G. Bartal, and X. Zhang, Three-dimensional optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
+- **[28]** U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
+- **[29]** U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+- **[30]** U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+- **[31]** H. Chen and C. T. Chan, Time delays and energy transport velocities in three dimensional ideal cloaking devices, Journal of Applied Physics 104, 033113 (2008).
+- **[32]** U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+- **[33]** M. Born and E. Wolf, Principles of Optics (Cambridge University Press, Cambridge, 1999).
+- **[34]** U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+- **[35]** U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
+- **[36]** D. Schurig, J. J. Mock, B. J. Justice, S. A. Cummer, J. B. Pendry, A. F. Starr, and D. R. Smith, Metamaterial Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
+- **[37]** R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366 (2009).
+- **[38]** R. Liu, C. Ji, J. J. Mock, J. Y. Chin, T. J. Cui, and D. R. Smith, Broadband Ground-Plane Cloak, Science 323, 366 (2009).
+- **[39]** C. M. Soukoulis, S. Linden, and M. Wegener, Costas M. Soukoulis, Stefan Linden, and Martin Wegener, Negative Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
 
 ---
 

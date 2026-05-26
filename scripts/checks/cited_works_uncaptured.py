@@ -16,8 +16,9 @@ Scope + firing:
   - Fires only when ``cited_works`` is empty/absent AND at least one
     primary source's extracted text exhibits a reference-list signal — a
     ``References`` / ``Bibliography`` heading followed by a run of numbered
-    citation markers, OR a dense headingless tail run of numbered markers
-    (the endnote style some journal articles use). The empty list stays
+    citation markers, OR a dense run of high-confidence citation markers
+    anywhere in the text with no heading (the appended-endnote style, e.g.
+    Unicode-superscript ``¹ Author …`` entries). The empty list stays
     legitimate for a document whose source carries no reference list (an
     executive order, a short news item, a hearing transcript): those
     produce no signal and no error.
@@ -57,7 +58,8 @@ _HEADING_RE = re.compile(
 # Line-initial citation markers, in the formats observed across the corpus:
 #   [1]     bracket                                    (dird-24)
 #   (1)     parenthetical                              (dird-10)
-#   ^1      superscript endnote/footnote, no period    (dird-01)
+#   ^1      ASCII-caret superscript, no period         (dird-01)
+#   ¹       Unicode superscript endnote                (dird-06/07/08)
 #   1.1     dotted chapter.ref                         (dird-09)
 #   1.      plain numbered + space
 # The marker set is path-dependent, and that split is load-bearing:
@@ -68,13 +70,16 @@ _HEADING_RE = re.compile(
 #     statutory/legislative enumeration (the proposed UAP Disclosure Act's
 #     "(1) … (2) …" subsections), a costly false positive for a hard gate —
 #     as are bare ``N.`` and dotted ``N.N`` (a table of contents / numbered
-#     section list). Only ``[N]`` and ``^N`` survive headingless.
+#     section list). Only the unambiguous endnote markers survive headingless:
+#     ``[N]``, ASCII ``^N``, and line-initial Unicode superscripts (inline
+#     superscript CALLOUTS are not line-initial, so they don't match).
+_SUP = "⁰¹²³⁴⁵⁶⁷⁸⁹"
 _HEADING_MARKER_RE = re.compile(
-    r'(?m)^[ \t]*(?:\[\d{1,3}\]|\(\d{1,3}\)|\^\d{1,3}\b|'
+    r'(?m)^[ \t]*(?:\[\d{1,3}\]|\(\d{1,3}\)|\^\d{1,3}\b|[' + _SUP + r']{1,3}(?=[ \t])|'
     r'\d{1,2}\.\d{1,3}\b|\d{1,3}\.(?=[ \t]))'
 )
 _FOOTNOTE_MARKER_RE = re.compile(
-    r'(?m)^[ \t]*(?:\[\d{1,3}\]|\^\d{1,3}\b)'
+    r'(?m)^[ \t]*(?:\[\d{1,3}\]|\^\d{1,3}\b|[' + _SUP + r']{1,3}(?=[ \t]))'
 )
 
 # After a heading a handful of markers confirms a real list; the

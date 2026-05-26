@@ -422,44 +422,44 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
 
-- **[1]** ¹ P. A. M. Dirac, Proc. Roy. Soc. A .126, 360 (1930).
-- **[2]** ² C. D. Anderson, Phys. Rev. 43, 491 (1933).
-- **[3]** ³ O. Chamberlain, E. Segre, C. Wiegand and T. Ypsilantis, Phys. Rev. 100, 947 (1955).
-- **[4]** ⁴ G. Luders, Ann. Phys. 2, 1-15 (1957).
-- **[5]** ⁵ P. Hill and C. Peterson, Mechanics of Thermodynamics of Propulsion, 2nd ed., Addison - Wesley Publishing Co. (1992).
-- **[6]** ⁶ G. Herken, "The Flying Crowbar", Air and Space Magazine, Vol. 5 (#1), p. 28, April/May (1990) (http://www.merkle.com/pluto/pluto.html).
-- **[7]** ⁷ R. W. Bussard and R. D. DeLauer, Fundamentals of Nuclear Flight, McGraw-Hill Book Co. (1965)
-- **[8]** ⁸ G. A. Smith et al., "Revolutionary Positron Conversion", Final Technical Report, AFRL Contract F08630-00-C-0010, Eglin AFB, FL, March (2002).
-- **[9]** ⁹ O. Chamberlain, E. Segre, C. Wiegand and T. Ypsilantis, Phys. Rev. 100, 947 (1955)
-- **[10]** ¹⁰ G. Luders, Ann. Phys. 2, 1-15 (1957).
-- **[11]** ¹¹ G. A. Smith et al., "Revolutionary Positron Conversion", Final Technical Report, AFRL Contract F08630-00-C-0010, Eglin AFB, FL, March (2002).
-- **[19]** ¹⁹ Northrop-Grumman Corp: Report to Kaiser-Marquardt for HTHL blended-body SSTO engine, "Vision Vehicle Final Report," April 30 (1998).
-- **[20]** ²⁰ G. A. Smith et al., "A Revolutionary Positron Based SSRV Vehicle for Application to Human Exploration and Development of Space", The Advanced Space Propulsion Workshop, NASA Marshall Space Flight Center, Huntsville, AL, April 2-6 (2001).
-- **[27]** ²⁷ G. A. Smith, "Positron Propelled and Powered Space Transport Vehicle for Planetary Missions", NIAC Phase I Final Report, Research Subaward No. 07605-003-048, September 1, 2005 – March 31, 2006.
-- **[29]** ²⁹ D. R. Koenig, "Experience Gained from the Space Nuclear Rocket Program (Rover)," LA-10062-H, Los Alamos National Laboratory, NM., May (1986).
-- **[31]** ³¹ L. E. Thode et al., J. Propulsion and Power 14, 4 (1998).
-- **[32]** ³² D. I. Poston and T. Kammash, Nuclear Science and Engineering 122, 32 (1996).
-- **[33]** ³³ S. K. Borowski et al., "Nuclear Thermal Rocket/Vehicle Design Options for Future NASA Missions to the Moon and Mars," AIAA-93-4170 (NASA Tech Memorandum 107071), (1993).
-- **[37]** ³⁷ E. Sänger, Ing. Arch. 21, 213 (1953).
-- **[40]** ⁴⁰ G. Gaidos et al., "Antiproton-Catalyzed Microfission/fusion Propulsion Systems for Exploration of the Outer Solar System and Beyond," AIAA-98-3589, Presented at the 34th AIAA/ASME/SAE/ASEE Joint Propulsion Conference & Exhibit (1998).
-- **[41]** ⁴¹ W. Lance Werthman, "Antiproton-Catalyzed Microfission/fusion Space Propulsion", MS Thesis, Dept. of Aerospace Engineering, Penn State University (1995).
-- **[42]** ⁴² G. A. Smith, "High Density Storage of Antimatter", Advanced High Energy Storage Conference, MITRE Corp., McLean, VA, Aug. 1 (2005).
-- **[43]** ⁴³ S. J. Hoffman and D. I. Kaplan, eds. "Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team," NASA Special Publication 6107, JSC (1997).
-- **[44]** ⁴⁴ B. G. Drake, ed. "Reference Mission Version 3.0: Addendum to the Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team," http://ares.jsc.nasa.gov/ HumanExplore/ Exploration/ EXLibrary/docs/ MarsRef/addendum/index.htm, June (1998).
-- **[46]** ⁴⁶ J. Dion, "Stirling Radioisotope Generator", NASA Glenn Research Center, ME 388R.2, Spring (2005).
-- **[56]** ⁵⁶ C.A. Kapatankos, J. Synchrotron Rad. 3, 268-271 (1996).
-- **[57]** ⁵⁷ ILC undulator-based source, www.ippp.dur.ac.uk/~gudrid/source/BCD-source. ILC capitalization is estimated at $9B (see www.linearcollider.org).
-- **[60]** ⁶⁰ R. Landua, CERN, "Precision Experiments with Antiprotons", Feb. 24 (2003).
-- **[61]** ⁶¹ S. Howe et al., AIP Conf. Proc. 746, 520 (2005).
-- **[62]** ⁶² 14 MeV Electron Linac @ $5M capitalization cost and $5M/yr operating cost (A. Herer et al., "Applications of High Voltage High Powered Electron Beams", IBA, Belgium, 1997).
-- **[63]** ⁶³ G. R. Schmidt et al., J. Propulsion and Power, 16, 923 (2000).
-- **[64]** ⁶⁴ J. Rejcek et al., Rad. Phys. Chem. 68, 655 (2003).
-- **[66]** ⁶⁶ C. M. Surko and R. G. Greaves, Phys. Plasmas 11, 2333 (2004).
-- **[67]** ⁶⁷ G. A. Smith, "Long-Term Confinement of Dense Positron Plasmas", Final Technical Report, AFRL Contract F08630-02-C-0017, Eglin AFB, FL, January 23 (2007).
-- **[69]** ⁶⁹ G. A. Smith, "Positron Energy Conversion (PEC)", 53th JANNAF Propulsion Meeting, Subcommittee on Future Technologies for Spacecraft Propulsion (2005 0356 EA), CPIAC JSC CD43 December (2005).
-- **[70]** ⁷⁰ G. A. Smith, "Stabilization and Long Term Confinement of Atomic Positronium", Final Technical Report, AFRL Contract F08630-02-C-0018, Eglin AFB, FL, January 23 (2007).
-- **[73]** ⁷³ J. Lu, "Classical Trajectory Monte Carlo Simulation of Ion-Rydberg Atom Collisions", Ph. D. Dissertation, University of Bielefeld, Germany, May (2003).
-- **[75]** ⁷⁵ K. Sudarshan et al., J. Phys: Condens. Matter 19, 386 (2007).
+- **[1]** P. A. M. Dirac, Proc. Roy. Soc. A .126, 360 (1930).
+- **[2]** C. D. Anderson, Phys. Rev. 43, 491 (1933).
+- **[3]** O. Chamberlain, E. Segre, C. Wiegand and T. Ypsilantis, Phys. Rev. 100, 947 (1955).
+- **[4]** G. Luders, Ann. Phys. 2, 1-15 (1957).
+- **[5]** P. Hill and C. Peterson, Mechanics of Thermodynamics of Propulsion, 2nd ed., Addison - Wesley Publishing Co. (1992).
+- **[6]** G. Herken, "The Flying Crowbar", Air and Space Magazine, Vol. 5 (#1), p. 28, April/May (1990) (http://www.merkle.com/pluto/pluto.html).
+- **[7]** R. W. Bussard and R. D. DeLauer, Fundamentals of Nuclear Flight, McGraw-Hill Book Co. (1965)
+- **[8]** G. A. Smith et al., "Revolutionary Positron Conversion", Final Technical Report, AFRL Contract F08630-00-C-0010, Eglin AFB, FL, March (2002).
+- **[9]** O. Chamberlain, E. Segre, C. Wiegand and T. Ypsilantis, Phys. Rev. 100, 947 (1955)
+- **[10]** G. Luders, Ann. Phys. 2, 1-15 (1957).
+- **[11]** G. A. Smith et al., "Revolutionary Positron Conversion", Final Technical Report, AFRL Contract F08630-00-C-0010, Eglin AFB, FL, March (2002).
+- **[19]** Northrop-Grumman Corp: Report to Kaiser-Marquardt for HTHL blended-body SSTO engine, "Vision Vehicle Final Report," April 30 (1998).
+- **[20]** G. A. Smith et al., "A Revolutionary Positron Based SSRV Vehicle for Application to Human Exploration and Development of Space", The Advanced Space Propulsion Workshop, NASA Marshall Space Flight Center, Huntsville, AL, April 2-6 (2001).
+- **[27]** G. A. Smith, "Positron Propelled and Powered Space Transport Vehicle for Planetary Missions", NIAC Phase I Final Report, Research Subaward No. 07605-003-048, September 1, 2005 – March 31, 2006.
+- **[29]** D. R. Koenig, "Experience Gained from the Space Nuclear Rocket Program (Rover)," LA-10062-H, Los Alamos National Laboratory, NM., May (1986).
+- **[31]** L. E. Thode et al., J. Propulsion and Power 14, 4 (1998).
+- **[32]** D. I. Poston and T. Kammash, Nuclear Science and Engineering 122, 32 (1996).
+- **[33]** S. K. Borowski et al., "Nuclear Thermal Rocket/Vehicle Design Options for Future NASA Missions to the Moon and Mars," AIAA-93-4170 (NASA Tech Memorandum 107071), (1993).
+- **[37]** E. Sänger, Ing. Arch. 21, 213 (1953).
+- **[40]** G. Gaidos et al., "Antiproton-Catalyzed Microfission/fusion Propulsion Systems for Exploration of the Outer Solar System and Beyond," AIAA-98-3589, Presented at the 34th AIAA/ASME/SAE/ASEE Joint Propulsion Conference & Exhibit (1998).
+- **[41]** W. Lance Werthman, "Antiproton-Catalyzed Microfission/fusion Space Propulsion", MS Thesis, Dept. of Aerospace Engineering, Penn State University (1995).
+- **[42]** G. A. Smith, "High Density Storage of Antimatter", Advanced High Energy Storage Conference, MITRE Corp., McLean, VA, Aug. 1 (2005).
+- **[43]** S. J. Hoffman and D. I. Kaplan, eds. "Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team," NASA Special Publication 6107, JSC (1997).
+- **[44]** B. G. Drake, ed. "Reference Mission Version 3.0: Addendum to the Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team," http://ares.jsc.nasa.gov/ HumanExplore/ Exploration/ EXLibrary/docs/ MarsRef/addendum/index.htm, June (1998).
+- **[46]** J. Dion, "Stirling Radioisotope Generator", NASA Glenn Research Center, ME 388R.2, Spring (2005).
+- **[56]** C.A. Kapatankos, J. Synchrotron Rad. 3, 268-271 (1996).
+- **[57]** ILC undulator-based source, www.ippp.dur.ac.uk/~gudrid/source/BCD-source. ILC capitalization is estimated at $9B (see www.linearcollider.org).
+- **[60]** R. Landua, CERN, "Precision Experiments with Antiprotons", Feb. 24 (2003).
+- **[61]** S. Howe et al., AIP Conf. Proc. 746, 520 (2005).
+- **[62]** 14 MeV Electron Linac @ $5M capitalization cost and $5M/yr operating cost (A. Herer et al., "Applications of High Voltage High Powered Electron Beams", IBA, Belgium, 1997).
+- **[63]** G. R. Schmidt et al., J. Propulsion and Power, 16, 923 (2000).
+- **[64]** J. Rejcek et al., Rad. Phys. Chem. 68, 655 (2003).
+- **[66]** C. M. Surko and R. G. Greaves, Phys. Plasmas 11, 2333 (2004).
+- **[67]** G. A. Smith, "Long-Term Confinement of Dense Positron Plasmas", Final Technical Report, AFRL Contract F08630-02-C-0017, Eglin AFB, FL, January 23 (2007).
+- **[69]** G. A. Smith, "Positron Energy Conversion (PEC)", 53th JANNAF Propulsion Meeting, Subcommittee on Future Technologies for Spacecraft Propulsion (2005 0356 EA), CPIAC JSC CD43 December (2005).
+- **[70]** G. A. Smith, "Stabilization and Long Term Confinement of Atomic Positronium", Final Technical Report, AFRL Contract F08630-02-C-0018, Eglin AFB, FL, January 23 (2007).
+- **[73]** J. Lu, "Classical Trajectory Monte Carlo Simulation of Ion-Rydberg Atom Collisions", Ph. D. Dissertation, University of Bielefeld, Germany, May (2003).
+- **[75]** K. Sudarshan et al., J. Phys: Condens. Matter 19, 386 (2007).
 
 ---
 

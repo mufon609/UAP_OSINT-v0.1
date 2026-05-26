@@ -551,13 +551,19 @@ affirmation), rather than being the primary gate.
 `cited_works_uncaptured` is tuned for **zero false positives** (a hard gate must
 not wrongly block — e.g. it deliberately ignores `(N)` legislative enumeration
 like the UAP Disclosure Act's statutory subsections, counting `(N)` only after a
-"References" heading) at the cost of **false negatives**: it detects `[N]` / `^N`
-footnote / `N.N` dotted / `(N)`-after-heading / `N.`-after-heading formats but
-MISSES (a) bare `N␣Author` numbered lists with no heading (nature-1974's CIA-RDP
-scan — its 9 refs were backfilled by hand); (b) several already-populated DIRD
-formats (dird-02/05/06/07/08 — currently populated, so moot today, but a future
-empty doc in those formats would slip through). The "None"-affirmation convention
-closes these because its pass case does not depend on format detection.
+"References" heading) at the cost of **false negatives**. It detects `[N]`,
+ASCII `^N`, Unicode-superscript `¹` endnotes (dird-06/07/08), `N.N` dotted,
+`(N)`-after-heading, and `N.`-after-heading. It still MISSES three residual
+formats — all currently populated except nature, so moot today, but a future
+empty doc in them would slip through: (a) a bare `N␣Author` numbered list with no
+heading (nature-1974's CIA-RDP scan — its 9 refs were backfilled by hand); (b) an
+**unnumbered** bibliography with no line-initial marker at all (dird-05:
+`Hatch, J. ed. Aluminum, Properties…`); (c) a `N.` numbered list with no
+References heading (dird-02 — bare `N.` is excluded headingless because it also
+matches a table of contents / numbered section list). Catching (b)/(c) safely
+needs content-level detection, not more markers (more markers reintroduce false
+positives). The "None"-affirmation convention closes all three because its pass
+case does not depend on format detection at all.
 
 **Blocks:** none.
 **Blocked by:** none (the interim heuristic gate is shipped; this hardens it).

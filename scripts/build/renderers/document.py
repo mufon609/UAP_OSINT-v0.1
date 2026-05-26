@@ -179,13 +179,22 @@ def render_cited_works(artifact):
         key = str(w.get("citation_key", "")).strip()
         verbatim = " ".join((w.get("citation_verbatim") or "").split())
         # citation_verbatim is faithful and includes the source's own leading
-        # marker — bracket "[N]" / "[N-a]" (dird-24, dird-26), caret-superscript
-        # "^N" (dird-01 endnotes), dotted-decimal "N.M" (dird-09 per-section
-        # lists), or number-dot "N." (dird-02 list); strip it for display since
-        # the marker is re-emitted in bold from citation_key (avoids a doubled
-        # "[1] [1]" prefix). The "N.M" branch precedes "N." so the full dotted
-        # key is consumed rather than leaving a stray second component.
-        verbatim = re.sub(r"^(?:\[\d+(?:-[a-z])?\]|\^\d+|\d+\.\d+|\d+\.)\s*", "", verbatim)
+        # marker — bracket "[N]" / "[N-a]" (dird-24, dird-26), parenthetical
+        # "(N)" (dird-10), caret-superscript "^N" (dird-01 endnotes), Unicode
+        # superscript "¹" (dird-06/07/08 endnotes), dotted-decimal "N.M"
+        # (dird-09 per-section lists), number-dot "N." (dird-02 list), or a bare
+        # leading number "N " (nature-1974's numbered list); strip it for
+        # display since the marker is re-emitted in bold from citation_key
+        # (avoids a doubled "[1] [1]" prefix). Order matters: "N.M" precedes
+        # "N." so the full dotted key is consumed, and the bare-number branch is
+        # last + requires trailing whitespace so it only fires as a list marker,
+        # never on a number that opens the citation text. A garbled OCR marker
+        # (e.g. nature's "^"/"O" sics for a lost digit) is intentionally left in
+        # place — faithful to the scan, and the citation_key still carries N.
+        verbatim = re.sub(
+            r"^(?:(?:\[\d+(?:-[a-z])?\]|\(\d+\)|\^\d+|[⁰¹²³⁴⁵⁶⁷⁸⁹]+|\d+\.\d+|\d+\.)\s*"
+            r"|\d+\s+)",
+            "", verbatim)
         marker = f"**[{key}]** " if key else ""
         lines.append(f"- {marker}{verbatim}")
     return "\n".join(lines) + "\n"
