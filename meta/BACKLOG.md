@@ -387,3 +387,55 @@ estimate was imprecise.)
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C4 — Skills↔conventions sharing: the layer is already cite-don't-restate; resolve the one orphan
+
+**Finding.** The skill layer already implements "per-skill + a common helper,
+cited not restated," and the design splits correctly by *where a skill runs*:
+
+- **Build agents (fresh-context subagents).** The six role agents under
+  `.claude/agents/` share one common helper — `.claude/skills/build-protocol/SKILL.md` —
+  preloaded via `skills: build-protocol` in each agent's frontmatter and **cited**
+  with the `(build-protocol → section)` arrow pattern, never restated. `build-protocol`
+  is topic-neutral and itself cites `meta/conventions.md` for the long-form disciplines
+  ("Producing the `.txt` sibling"; "Tier model and linking contract") and
+  `scripts/checks/_phases.py` for phase vocabulary. This is exactly the common-helper
+  shape; it earns its keep because a fresh-context subagent cannot see
+  CLAUDE.md/conventions.md by default.
+- **Standalone (main-thread) skills.** `onboard` / `audit` / `augment` /
+  `verify-transcript` / `prepare-ocr-sibling` / `archive-sweep` / `fork-init` cite
+  `meta/conventions.md` directly — the correct common source on the main thread, where
+  the skill text + CLAUDE.md + conventions.md are all reachable. No preloaded helper
+  is needed.
+
+**Decision recorded (so it is not re-opened): do NOT add a new shared-helper skill
+for the standalone family.** It would duplicate what `meta/conventions.md` already is
+for main-thread skills, and the inline restatements that exist are *audience-specific
+slices*, not flat duplication — e.g. the OCR-sibling discipline is canonical in
+conventions.md ("Producing the `.txt` sibling"), summarized in `build-protocol`, and
+each consumer restates only its slice (`build` step 4b = the orchestrator's
+sibling-readiness slice; `prepare-ocr-sibling` = the producer/verifier slice).
+Factoring those into a fourth shared file would add indirection without removing a
+real drift surface.
+
+**The one genuine orphan — `quote-relevance-audit`.** Its discipline (the
+keep/consolidate/move decision matrix; "attribution ≠ relevance"; "move detail, don't
+lose it") lives only in the skill, with no anchor in `meta/conventions.md` — the
+existing "Relevance can be relational" section is about *entity* inclusion, not
+*per-quote* content-relevance. This is currently by-design: the skill's own closing
+line defers centralization until "the same over-extraction shape recurs across many
+nodes." Gated action (test-before-BACKLOG): once that over-extraction shape has
+recurred across multiple node audits, promote the matrix to a named
+`meta/conventions.md` section (sibling to "Comparability standard") and have the skill
+cite it; until then leave it skill-local. Do not pre-emptively centralize a
+one-consumer discipline.
+
+**Minor, optional (low value).** Citation hygiene across the standalone skills is
+slightly uneven — most name the cited section (`conventions.md "Comparability
+standard"`), a few cite the doc without the section anchor. Always-name-the-section
+would aid navigation but fixes no defect; fold into any future skill edit rather than
+a dedicated pass.
+
+**Blocks:** none.
+**Blocked by:** nothing; the quote-relevance promotion is gated on observed
+recurrence, not a dependency.
