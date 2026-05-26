@@ -50,7 +50,7 @@ slug: {slug}
 archived:
   - url: https://{host}/.../{document}.pdf
     path: {category}/{file}.pdf
-    archive_status: archived   # or pending + wayback_date
+    status: archived           # or pending + wayback_date
     scratch: /tmp/scratch-{slug}-2.txt
 primary_sources_registered: [{category}/{file}.pdf]
 validator_findings: []         # validate.py --phase archive
@@ -79,6 +79,12 @@ outputs_produced:
     - fact: "{fact}"
       source_phrasing: "<exact words from source — prose-drift grounding>"
       location: "<location anchor>"
+  cited_works:                  # DOCUMENT sources with a reference list ONLY — a distinct extract
+                                # dimension PARALLEL to quotes[], never a quotes[] entry; omit otherwise
+    - citation_key: "<bare in-source marker, e.g. 1 for [1] / ^1 / 1.>"
+      author: "<author / originating body, source form preserved (sic)>"
+      citation_verbatim: "<full reference line copied verbatim from scratch, incl. its [N] marker + OCR sic>"
+      location: "<source-shape anchor, e.g. p. N, References>"   # optional: year, title
 validator_findings: []         # validate-research.py --phase extract, on the merged artifact
 ```
 

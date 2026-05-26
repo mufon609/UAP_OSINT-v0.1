@@ -23,10 +23,12 @@ In order, with a check after each (build-protocol → run
 
 0. **Merge.** You are the single serializer of the worker fragments — merge
    each fragment's `quotes[]` + `background_material[]` + `cross_ref_candidates[]`
-   into the scaffolded artifact in one deterministic pass (workers do not write
-   it, so there's no race), introducing only quotes a worker surfaced. Then run
+   + `cited_works[]` (document sources) into the scaffolded artifact in one
+   deterministic pass (workers do not write it, so there's no race), introducing
+   only material a worker surfaced. Then run
    `validate-research.py --phase extract meta/research/{slug}.yaml` once — the
-   verbatim boundary fires here on the merged result (it reads disk).
+   verbatim boundary fires here on the merged result (it reads disk), covering
+   `cited_works` `citation_verbatim` the same way it covers `quotes` text.
 1. **Organize.** Cluster quotes into the final `claim_group`; derive the
    primary/pointer split via `corroborated_by` (prefer sworn > written >
    interview > podcast; tie-break earliest `statement_date`). Write the
