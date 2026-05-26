@@ -1123,31 +1123,29 @@ timeline `p. N` that is off by a few has no verbatim anchor and rests on
 contributor care.
 
 For an **OCR-scan / extraction-lossy source** the canonical extract is the
-contributor's `.txt` sibling, which marks each document page with a
-`----- PAGE BREAK -----` line (the `/prepare-ocr-sibling` convention).
-`extract_source_text` normalizes that marker to a form feed, so the same page
-machinery applies: `p. N` is the Nth physical page = the Nth sibling block. The
-sibling preserves *every physical page* of the PDF verbatim, in order —
-including a third-party FOIA/distribution insert (e.g., the Black Vault
-declassification page) where the source PDF carries one — so the Nth block is
-the page the PDF viewer shows as page N, and `p. N` resolves identically whether
-or not the file was redistributed. A distribution insert is **preserved
-verbatim** — never deleted, never replaced with a contributor summary or
-paraphrase; it simply carries no quotes. A sibling of a continuous multi-page
-PDF **must** carry a `----- PAGE BREAK -----` at every physical-page boundary,
-so its block count equals the PDF's page count (`pdfinfo`) and `p. N` resolves
-to the page a viewer shows. A flat sibling of such a source is an *incomplete
-transcription* — a defect to fix, not a tolerated state in which the page check
-quietly goes dark (the `sibling_page_faithful` gate enforces block-count ==
-page-count on any marker-carrying sibling; `/prepare-ocr-sibling` paginates at
-creation time, when the page boundaries are read straight off the page images
-anyway). A source that genuinely has no PDF pages carries no page marker and
-uses its native anchor instead of a `p. N`: an HTML filing or single-page memo
-uses `¶N` / a section heading, an audio/video transcript uses `[MM:SS]`, and a
-FOIA email release uses `Doc N` (its `DOCUMENT N` markers, not page breaks).
-This keeps the anchor source-anchored — a property of the document — rather than
-an accident of whether the file needed an OCR sibling. A page-spanning quote
-sits on no single page and fails the check — split it at the boundary (below).
+contributor's `.txt` sibling — a clean, full-text-searchable transcription that
+carries **no synthetic page markers**. *Never manufacture page structure in a
+sibling* (the insert / front-matter handling is a `/prepare-ocr-sibling`
+production detail; whatever a sibling transcribes, it is never delimited by an
+inserted page break).
+
+So for a sibling-backed source `p. N` is a **verbatim-anchored navigation
+hint**: the verbatim-quote check confirms the text is in the source, the clean
+sibling is searchable, and the PDF's own pages are navigable in any viewer — so
+a reader still finds the quote, and the page-precision rests on contributor
+care, the same standard applied to a `timeline` `p. N`. `quote_location_page`
+mechanically verifies `p. N` **only where the source's own extraction yields
+form feeds natively** — text-native PDFs via `pdftotext`; for a sibling-backed
+source (no native form feeds) the check skips, **by design**, not a silent
+defect. The page-break markers a sibling used to carry served only the checker,
+never the researcher, so they are gone.
+
+A source that genuinely has no PDF pages uses a non-page anchor: an HTML filing
+or single-page memo uses `¶N` / a section heading, an audio/video transcript
+uses `[MM:SS]`, and a FOIA email release uses `Doc N` (its `DOCUMENT N` markers —
+intrinsic document-collection structure, the one place a marker is *content*,
+not manufactured pagination). A page-spanning quote on a text-native PDF sits on
+no single page and fails the check — split it at the boundary (below).
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
 distinct roles: `source.path` names the archived file (the ground

@@ -44,12 +44,12 @@ quotes.
    bracketed placeholders; transcribe the per-page classification banner and
    page numbers where they appear; EXCLUDE any third-party distribution / FOIA
    cover-insert page that is not part of the document itself (report which
-   physical page was excluded). **Mark every document-page boundary with a line
-   `----- PAGE BREAK -----`** (between pages — not before the first or after the
-   last). Those markers delimit the sibling's pages: `extract_source_text`
-   normalizes them to form feeds so `quote_location_page` can verify a quote's
-   `p. N` against the Nth block (see `meta/conventions.md` "Quote location
-   refs"). Without them, the sibling's `p. N` refs go unverified. The producer reports the load-bearing
+   physical page was excluded). Do **not** add `----- PAGE BREAK -----` or any
+   synthetic page structure — the sibling is a clean transcription. `p. N` refs
+   against a sibling are verbatim-anchored navigation hints (the page check
+   verifies `p. N` only on text-native PDFs with native `pdftotext` form feeds;
+   sibling-backed sources skip by design — see `meta/conventions.md` "Quote
+   location refs"). The producer reports the load-bearing
    front-matter facts it captured and flags any faded / ambiguous / redacted
    spots where a vision model might hallucinate. **A flag records only what is
    legible** (`[unclear]`, `[illegible digit]`) — it must never assert an
@@ -102,7 +102,7 @@ autonomous, no human step needed in the normal case:
    for f in /tmp/{stem}/page-*.png; do tesseract "$f" "${f%.png}" --psm 1 -l eng; done
    ```
    Assemble the per-page OCR into the sibling **by script** (exclude any FOIA
-   insert page; insert `----- PAGE BREAK -----` between document pages) — keep
+   insert page; no synthetic page markers — a clean transcription) — keep
    the assembly out of model tokens too.
 
 2. **Verify + correct with a model diff-pass (filter-safe).** A separate

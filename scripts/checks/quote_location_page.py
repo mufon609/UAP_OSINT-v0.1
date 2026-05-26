@@ -17,20 +17,25 @@ broader:
                           off-by-a-few has no verbatim anchor to verify against and
                           rests on contributor care (see meta/conventions.md).
 
-`p. N` is the **physical** page: the Nth form-feed-delimited block of the
-extract. Text-native PDFs get the form feeds from `pdftotext`; OCR-scan /
-extraction-lossy sources get them from their `.txt` sibling, where
-`extract_source_text` normalizes the `----- PAGE BREAK -----` marker to `\f` (so
-an OCR source's `p. N` is its Nth document page = Nth sibling block). The wrong
-page — the easy error when a PDF's physical pages diverge from its printed page
-numbers (a cover, a front-matter block, a FOIA insert all shift the count) — is
-caught here instead of passing silently.
+`p. N` is the **physical** page a PDF viewer shows: the Nth form-feed-delimited
+block of the extract. This check verifies `p. N` **only where the source's own
+extraction yields form feeds natively** — text-native PDFs via `pdftotext`,
+where the wrong page (the easy error when physical pages diverge from printed
+page numbers — a cover, a front-matter block, a FOIA insert all shift the
+count) is caught here instead of passing silently.
+
+A sibling-backed source (OCR-scan / extraction-lossy) carries **no synthetic
+page markers** — never manufacture page structure in a sibling — so its extract
+has no form feeds and this check skips it **by design**, not as a silent defect.
+For such a source `p. N` is a verbatim-anchored navigation hint: the
+verbatim-quote check confirms the text is in the source, and page-precision
+rests on contributor care (see meta/conventions.md).
 
 Eligibility is one signal: does the extract carry form-feed page separators?
 Everything else is skipped, so the check never false-fails: locations that
 aren't `p. N` (roman `p. ii`, `¶N`, `[MM:SS]`, `Doc N`); and sources whose
-extract has no form feed (HTML/TXT `¶N` articles, single-page PDFs, OCR siblings
-with no page marker — their stray form feeds are stripped by
+extract has no form feed (HTML/TXT `¶N` articles, single-page PDFs, and all
+sibling-backed sources — any stray form feed is stripped by
 `extract_source_text`).
 
 A quote (or observed token) on no single page straddles a page boundary —
