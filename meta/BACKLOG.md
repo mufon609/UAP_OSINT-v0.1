@@ -439,3 +439,52 @@ a dedicated pass.
 **Blocks:** none.
 **Blocked by:** nothing; the quote-relevance promotion is gated on observed
 recurrence, not a dependency.
+
+### C5 — Document a DIRD node slug-naming convention
+
+The built DIRD slugs are inconsistent and there is no documented rule deciding
+between them:
+
+- **Spelled-out topic** — `dird-07-invisibility-cloaking`,
+  `dird-15-advanced-space-propulsion`, `dird-18-traversable-wormholes`,
+  `dird-24-quantum-vacuum-energy-extraction`.
+- **Abbreviation / acronym** — `dird-03-pulsed-hpm`, and `dird-09-iec-fusion`
+  (chosen this session: "IEC" is the document's own standard term for inertial
+  electrostatic confinement, and it matches the archived source-file stem
+  `dird-09-iec-fusion-20100310.pdf`).
+
+Each build currently picks ad hoc. Propose and document a rule in
+`meta/conventions.md` (sibling to the existing naming/slug guidance) — a
+reasonable candidate: *use the document's own widely-recognized acronym when one
+exists and reads unambiguously; otherwise spell out the topic in kebab-case* —
+and add a one-time note reconciling the existing slugs against it. The unbuilt
+DIRDs (08/10/11/… per A3) would then key off the documented rule at build time
+rather than per-builder judgment. **Do not retro-rename** existing slugs as part
+of this — renaming a node slug touches its file path, every inbound cross-link,
+and the build-state block; record whether the existing set is acceptable-as-is
+(grandfathered) or warrants a separate rename sweep.
+
+**Blocks:** none (advisory; future DIRD builds proceed without it).
+**Blocked by:** none.
+
+### C6 — Propagate the dird-09 cross-link into dia-aatip-products-list-2018
+
+DIRD-09 (`/documents/dird-09-iec-fusion`, built this session) is attachment 1 on
+the DIA→Congress products list. `/documents/dia-aatip-products-list-2018` already
+carries a verbatim quote naming attachment 1 ("Inertial Electrostatic Confinement
+Fusion, Dr. George Miley, Univ. Of Illinois"), but its description-prose
+attachment roster does not yet wrap that mention with the now-built
+`[`/documents/dird-09-iec-fusion`]` link — so dird-09 is absent from the
+products-list's auto-derived `## Associated Nodes → Documents` block (which lists
+the other built DIRDs). Every prior built DIRD closed this same loop. Fix =
+Builder-shape artifact edit on `meta/research/dia-aatip-products-list-2018.yaml`
+(bracket-wrap attachment 1's mention in the description) + rebuild; no new bytes,
+no Worker/External/Archive. Surfaced by the dird-09 build auditor.
+
+**Blocks:** none.
+**Blocked by:** at dird-09 build time, `dia-aatip-products-list-2018` was being
+edited by the concurrent DIRD-08 build (uncommitted `M` on both its node and
+artifact, adding dird-08's own cross-link). Deferred to avoid a write collision
+with that agent. Apply once the DIRD-08 build has committed/released the
+products-list — ideally fold dird-09's wrap into the same pass that confirms
+dird-08's.
