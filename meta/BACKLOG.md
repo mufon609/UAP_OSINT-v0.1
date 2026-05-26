@@ -325,55 +325,42 @@ House transcript reclassified text-native + sibling removed + 212 refs to physic
 (`993cbe5`); `‡`→`½` fold in `normalize_for_compare`; "a sibling must be
 proportionate to the damage" in conventions/schema.
 
-**Work — the strip-all uniformity pass (next session; one coherent migration,
-not piecemeal).** "Fix all the old documents, do not leave them hanging."
+**Work — the strip-all uniformity pass — DONE.** Executed as one migration; no
+document left in a half-state.
+- Stripped every synthetic page marker from 16 siblings: 13 `----- PAGE BREAK
+  -----` (cia-rdp79, dia-advancedspacepropulsion, dird-01/02/03/04/05/06/07/18/
+  24/26, fas-org-aatip) + `[Page N]`/`[Pages N-M]` (cia-rdp96-…100180001-3,
+  cia-rdp79 footers) + `PAGE N —`/`PAGE N of M` (foia-23-f-0905-doc-1,
+  docs-house-…sd004's `=== PAGE 1 ===` block). Content kept (figure
+  descriptions, declassification stamps, the SF-33's verbatim "PAGE 1 OF 34
+  PAGES", docs-house SCOPE note + faithful stamp). `DOCUMENT N` email-release
+  markers KEPT (blackvault ×2 — intrinsic Doc-N structure). Commit `fb31764`.
+- Reframed the principle across every surface — `meta/conventions.md`,
+  `quote_location_page.py`, `_common.py` (`_sibling_page_breaks_to_ff` →
+  `_strip_sibling_form_feeds`), 3 manifest notes, `/prepare-ocr-sibling` skill.
+  Commit `466a28c`.
+- Prose-drift cascade fixed (the stripped markers had been grounding prose):
+  cia-sri-geller dropped "page 1" anchoring; james-ryder + lacatski
+  "DOPSR-cleared" → "cleared by DOPSR" (source vocab); `attestation_tier:
+  dopsr-cleared` controlled values unchanged.
+- **Acceptance met:** no sibling carries a synthetic page marker; the former
+  House `line N` refs and the cancelled-Work-B refs are PDF-viewer-page hints;
+  both validators + the 12-gate chain green.
 
-1. **Strip synthetic page markers from every sibling that carries them.** Current
-   `----- PAGE BREAK -----` set (13): `cia-rdp79`,
-   `dia-advancedspacepropulsion-puthoff-dird`,
-   `dird-01/02/03/04/05/06/07/18/24/26`, `fas-org-aatip-list`. Plus residual
-   bespoke markers: `[Page N]` in `cia-rdp96-…100180001-3`, `[Page N footer]` in
-   `cia-rdp79`, any `=== … ===`. Re-enumerate at execution:
-   `grep -rlE '^----- PAGE BREAK|^\[Page |^=== ' sources/`. Black Vault / FOIA
-   distribution-insert *text* the markers bound stays verbatim (source content);
-   only the marker lines go.
-2. **FOIA email-release `DOCUMENT N` markers** (`blackvault-foia-24-f-0894`,
-   `blackvault-aaro-invitations`): decide — these are *content* structure (each
-   block is a discrete email/letter = the `Doc N` anchor), not synthetic
-   pagination. Likely KEEP (a legitimate anchor for a different source shape);
-   confirm against the convention's `Doc N` row before touching.
-3. **Flip the convention** (`meta/conventions.md` — the "`p. N` is the physical
-   page" section + the sibling section currently asserting "must be page-faithful
-   / flat = defect") **and `schema.yaml`** to the principle above. The
-   `/prepare-ocr-sibling` skill must stop emitting `----- PAGE BREAK -----`.
-4. **Reframe the check / extraction** (`scripts/checks/quote_location_page.py`,
-   `scripts/lib/_common.py` `_sibling_page_breaks_to_ff`): `quote_location_page`
-   verifies `p. N` only via native `pdftotext` form feeds (text-native PDFs);
-   sibling-backed sources have no form feeds → it skips them **by design**, not a
-   silent defect. Remove/inert `_sibling_page_breaks_to_ff`. Update docstrings.
-5. **Refs need no text edits** — stripping markers doesn't touch quote text
-   (verbatim check still passes) and `p. N` stays the navigation hint. DIRD refs
-   were derived to physical pages and remain correct physical hints. *Secondary,
-   optional:* transcript/other refs that cite a *printed* page (the untouched
-   former Work-B set: SASC `-20230419`/`-20241119`, etc.) are hints that may
-   diverge from the PDF-viewer page — normalize to one consistent meaning only if
-   desired; not required by the strip.
-6. **Update notes** in `sources/manifest.yaml` that reference `----- PAGE BREAK
-   -----` (incl. the `cia-rdp79` note) and any node/doc references.
-7. **Verify + acceptance.** `validate.py` + `validate-research.py` green; every
-   verbatim quote still passes; `p. N` on stripped siblings now skips the page
-   check; text-native PDFs stay page-verified. **Uniformity acceptance:**
-   `grep -rlE '^----- PAGE BREAK|^\[Page |^=== ' sources/` returns nothing (modulo
-   the `DOCUMENT N` decision in step 2).
-8. **Gates.** Drop the planned `sibling_page_faithful` (force-pagination —
-   contradicts the principle). Keep `sibling_parent_extraction_type` (a `.txt`
-   sibling may exist only for a non-text-native parent — Invariant 1). Optionally
-   add the inverse: a sibling must NOT carry synthetic page markers (locks in
-   uniformity going forward).
-
-This folds in the former House residual (16 `line N` speaker/naming-quirk refs)
-and the cancelled Work-B sources — none get paginated; their `p. N` / `line N`
-refs become hints under the uniform principle.
+**Residuals (within C3, not blocking):**
+- **HTML `p. N` downgrade** — see "Still separate" below; not yet done.
+- **Distribution-insert include/exclude — reconcile (now low-stakes).** The
+  `/prepare-ocr-sibling` skill says EXCLUDE a third-party FOIA / Black Vault
+  cover-insert page, but the post-DIRD siblings had the insert RESTORED
+  (included as content) and the stale manifest notes for dird-04/05/18 still say
+  "excluded." With page-counting gone there is no structural reason to include
+  it, so this is now a pure content-faithfulness call — decide once (third-party
+  insert is not the document → exclude, vs. preserve as content) and align
+  skill + siblings + notes.
+- **Optional gates** (lean, preventive; neither built, 0 violations today):
+  `sibling_parent_extraction_type` (a `.txt` sibling may exist only for a
+  non-text-native parent); and the inverse — a sibling must carry no synthetic
+  page markers (locks in uniformity).
 
 **~~Work — B. Page-faithful the genuine siblings~~ — CANCELLED.** Superseded by
 the strip-all principle: we do not paginate siblings. The sources it named
