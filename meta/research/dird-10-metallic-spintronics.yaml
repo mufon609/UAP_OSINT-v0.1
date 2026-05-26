@@ -1,0 +1,322 @@
+id: meta/research/dird-10-metallic-spintronics
+type: research-artifact
+target_node: documents/dird-10-metallic-spintronics
+status: active
+primary_sources:
+- path: government/dird-10-metallic-spintronics-20100323.pdf
+  format: pdf
+document_intrinsic:
+  internal_title: 'Metallic Spintronics'
+  internal_date: '2010-03-23'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY (FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED on every page header and footer)'
+  control_number: DIA-08-1003-011
+  pages: 28
+context_extrinsic:
+  display_title: 'Metallic Spintronics — DIA Defense Intelligence Reference Document, AAWSAP, 23 March 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_10_Metallic_Spintronics.pdf
+  quote_attribution: 'Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010'
+  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress AAWSAP products list attributes the report to Dr. M. Tsoi of the University of Texas at Austin (attachment 24). The document''s own body does not name its author, though it foregrounds work by "Tsoi et al." — for example, it credits the first experimental observation of spin transfer to Tsoi et al. (Reference 5). Cross-reference [`/documents/dia-aatip-products-list-2018`]. The body cites "Tsoi et al." only at those reference markers; nothing about specific reference co-authorship is asserted beyond what is visible in the body.'
+description: 'Metallic Spintronics. The Defense Intelligence Reference Document is 23 March 2010, with an ICOD of 1 December 2009 and control DIA-08-1003-011, UNCLASSIFIED//FOR OFFICIAL USE ONLY, with FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED. Where the document shows Prepared by and Author, it shows [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and [(b)(6)]. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions pertaining to this document should be addressed to the AAWSA Program Manager. The document is made available through the declassification efforts and research of John Greenewald, Jr., creator of The Black Vault. It is one of the FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the Author line shows [(b)(6)].
+
+
+  The report discusses the physics and applications of metallic spintronics, a nanoscale technology (a neologism for "spin-based electronics") in which information is carried not by the electron''s charge, as in conventional microchips, but by the electron''s intrinsic spin. It is discussed from the perspective of two phenomena. Giant magnetoresistance (GMR), research on which was awarded the Nobel Prize in Physics in 2007, refers to a dramatic reduction in the resistance of magnetic multilayers when subjected to an external magnetic field; GMR is currently used in magnetic field sensors, including those in read heads for computer hard drives, in galvanic isolators, and in nonvolatile random access memory devices, and reading information stored on magnetic hard disk drives was the first large-scale commercial application of GMR. The inverse effect, spin-transfer-torque (STT), refers to a novel method to control and manipulate magnetic moments in nanostructures by spin currents; the first observation of such a spin-transfer phenomenon in magnetic multilayers was recorded by Tsoi et al. (Reference 5). The report reviews STT experiments and applications, including STT MRAM, which removes the constraints on scalability when a high-density electrical current is driven directly through the storage element, and current-induced motion of magnetic domain walls proposed as the basis for "racetrack" memory.
+
+
+  Section 4 discusses antiferromagnetic metal spintronics: MacDonald and coworkers predicted that effects similar to GMR and STT observed with ferromagnets ought to occur in multilayer systems where the ferromagnetic (F) components are replaced by antiferromagnets (AFM). Section 5 (Summary and Conclusions) discusses Moore''s law (Reference 97), which foresees transistor density of ~10¹³ cm⁻² by 2035 and ~40 MW/cm² of power dissipated on a chip; the International Technology Roadmap for Semiconductors has termed this imminent collapse the "Red Brick Wall." The report states that the radiation resistance would be of particular interest for aerospace applications because the radiation in space is known to severely damage conventional electronics, and that long space trips would benefit from the radiation resistance and reduced power consumption of metallic spintronic devices.
+
+  '
+quotes:
+- id: q-classification-banner
+  added_date: '2026-05-26'
+  text: |-
+    UNCLASSIFIED//[struck through] FOR OFFICIAL USE ONLY
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 1, classification banner'
+  significance: The classification marking on every page header and footer — FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED on FOIA declassification
+  statement_date: '2010-03-23'
+- id: q-title-page-identity-block
+  added_date: '2026-05-26'
+  text: |-
+    Defense
+    Intelligence
+    Reference
+    Document
+
+    Acquisition Threat Support
+    [black redaction bar]
+
+    23 March 2010
+    ICOD: 1 December 2009
+    DIA-08-1003-011
+
+    Metallic Spintronics
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 1, title-page identity block'
+  significance: 'Establishes provenance as a DIA Defense Intelligence Reference Document, Acquisition Threat Support, 23 March 2010, ICOD 1 December 2009, control DIA-08-1003-011 — the AAWSAP DIRD identity block'
+  statement_date: '2010-03-23'
+- id: q-blackvault-foia-insert
+  added_date: '2026-05-26'
+  text: |-
+    This document is made available through the declassification efforts
+    and research of John Greenewald, Jr., creator of:
+
+    The Black Vault
+
+    The Black Vault is the largest online Freedom of Information Act (FOIA)
+    document clearinghouse in the world. The research efforts here are
+    responsible for the declassification of hundreds of thousands of pages
+    released by the U.S. Government & Military.
+
+    Discover the Truth at: http://www.theblackvault.com
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 2, Black Vault FOIA declassification insert'
+  significance: Documents the FOIA declassification/release chain — the copy was released via FOIA and published through John Greenewald, Jr.'s Black Vault
+  statement_date: '2010-03-23'
+- id: q-prepared-by-author-block
+  added_date: '2026-05-26'
+  text: |-
+    Prepared by:
+    [(b)(3):10 USC 424]
+    Defense Intelligence Agency
+
+    Author:
+    [(b)(6)]
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 3, prepared-by/author block'
+  significance: The document names no author — Prepared-by redacted under (b)(3):10 USC 424, Author under (b)(6); the Tsoi/UT-Austin attribution comes only from the external DIA products list
+  statement_date: '2010-03-23'
+- id: q-copyright-warning
+  added_date: '2026-05-26'
+  text: |-
+    COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 3, Administrative Note (Copyright Warning)'
+  significance: Administrative Note copyright caveat — further dissemination of the publication's photographs is not authorized
+  statement_date: '2010-03-23'
+- id: q-aawsa-program-paragraph
+  added_date: '2026-05-26'
+  text: |-
+    This product is one in a series of advanced technology reports produced in FY 2009
+    under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace
+    Weapon System Applications (AAWSA) Program. Comments or questions pertaining to
+    this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program
+    Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 42] Bldg 6000, Washington,
+    DC 20340-5100.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 3, Administrative Note (AAWSA Program paragraph)'
+  significance: The defining provenance paragraph — places the report in the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA/AAWSAP) Program series, program-manager contact redacted
+  statement_date: '2010-03-23'
+- id: q-spintronics-thesis
+  added_date: '2026-05-26'
+  text: |-
+    A promising
+    nanoscale technology known as spintronics (a neologism for "spin-based electronics") has emerged. Spintronics refers to the role an
+    electron spin plays in solid-state physics. Spintronics researchers
+    aim to develop a revolutionary new class of electronic devices based
+    on the spin of electrons in addition to the charge. In spintronic
+    devices, information is carried not by the electron's charge, as in
+    conventional microchips, but by the electron's intrinsic spin.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 5, Section 1 (Introduction), ¶1'
+  significance: The report's central premise — spintronics encodes information in electron spin rather than charge
+  statement_date: '2010-03-23'
+- id: q-gmr-stt-framing
+  added_date: '2026-05-26'
+  text: |-
+    Giant
+    magnetoresistance (GMR) (Reference 1, 2) and spin-transfer-torque
+    (STT) (Reference 3-5) phenomena exemplify such interconnections
+    in multilayers composed of ferromagnetic (F) and nonmagnetic (N)
+    layers. The physics and applications of metallic spintronics are
+    discussed in this report from the perspective of these two
+    phenomena. GMR, research on which was awarded the Nobel Prize in
+    Physics in 2007, refers to a large change in resistance of magnetic
+    multilayers when the relative orientation of magnetic moments in
+    their constituent ferromagnetic layers is altered by an applied
+    magnetic field.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 5, Section 1 (Introduction), ¶2'
+  significance: Frames the report's two organizing phenomena — GMR (2007 Nobel Prize) and its inverse STT
+  statement_date: '2010-03-23'
+- id: q-aerospace-section5-framing
+  added_date: '2026-05-26'
+  text: |-
+    Section 5 summarizes, with an eye to the future, the development of
+    spintronic technologies and their aerospace applications.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 6, Section 1 (Introduction), report-arrangement ¶'
+  significance: The explicit tie between the science and the AAWSAP aerospace mandate — flags Section 5 as the aerospace-applications locus
+  statement_date: '2010-03-23'
+- id: q-gmr-basics
+  added_date: '2026-05-26'
+  text: |-
+    GMR in magnetic multilayers refers to a dramatic reduction in the resistance of the
+    multilayers when subjected to an external magnetic field. GMR's size is usually defined
+    as the resistance change in magnetic field relative to its peak value.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 7, Section 2.1 (GMR Basics), ¶2'
+  significance: The working definition of giant magnetoresistance anchoring Section 2
+  statement_date: '2010-03-23'
+- id: q-gmr-applications
+  added_date: '2026-05-26'
+  text: |-
+    GMR is currently used in magnetic field sensors, including those in read heads for
+    computer hard drives, in galvanic isolators, and in nonvolatile random access memory
+    devices. Reading information stored on magnetic hard disk drives in computers was the
+    first large-scale commercial application of GMR.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 9, Section 2.2 (GMR Applications), ¶1'
+  significance: GMR's mature commercial footprint — hard-drive read heads, galvanic isolators, nonvolatile memory
+  statement_date: '2010-03-23'
+- id: q-stt-definition
+  added_date: '2026-05-26'
+  text: |-
+    This section focuses on the spin-transfer-torque (STT) phenomenon, which refers to a
+    novel method to control and manipulate magnetic moments in nanostructures by spin
+    currents—one of the forefront and most exciting areas in magnetism research today.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 10, Section 3 (Spin-Transfer-Torque), ¶1'
+  significance: Defines STT — current-driven manipulation of magnetic moments in nanostructures — the report's forward-looking core
+  statement_date: '2010-03-23'
+- id: q-stt-first-observation-tsoi
+  added_date: '2026-05-26'
+  text: |-
+    The first observation of such a spin-transfer phenomenon in magnetic multilayers was
+    recorded by Tsoi et al. (Reference 5) (see Figure 3). In this experiment, the spin-transfer-induced
+    excitations were produced by injecting high-density electrical currents into a
+    Co/Cu magnetic multilayer through a mechanical point contact.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 10, Section 3.1 (STT Basics), ¶2'
+  significance: Credits the first experimental observation of spin transfer to "Tsoi et al." — the body's closest echo of the products-list authorship attribution, though the body never names Tsoi as the report's author
+  statement_date: '2010-03-23'
+- id: q-stt-recording-oscillator
+  added_date: '2026-05-26'
+  text: |-
+    In high-speed, high-density magnetic recording
+    technology, for instance, SST could replace the Oersted field currently used for writing
+    magnetic bits in storage media (for example, in magnetic random access memory
+    [MRAM]). This may lead to a smaller and faster magnetic memory.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 10, Section 3.1 (STT Basics), ¶3'
+  significance: An early STT application — replacing the Oersted write field in MRAM for smaller, faster magnetic memory; preserves the source's "SST" typo for STT
+  statement_date: '2010-03-23'
+- id: q-stt-applications-oscillator
+  added_date: '2026-05-26'
+  text: |-
+    STT MRAM (see Figure 10b) removes the constraints on scalability. Here the switching
+    of the free layer magnetic moment is achieved by STT switching when a high-density
+    electrical current is driven directly through the storage element (MTJ or spin valve).
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 17, Section 3.3 (STT Applications), STT-MRAM ¶'
+  significance: STT-MRAM as the scalable successor to conventional MRAM — drives the write current directly through the storage element, removing the Oersted-field scaling limit
+  statement_date: '2010-03-23'
+- id: q-racetrack-memory
+  added_date: '2026-05-26'
+  text: |-
+    Moving magnetic domain walls with
+    current was proposed as the basis for a
+    new type of magnetic memory called
+    "racetrack" (Reference 83).
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 18, Section 3.4 (STT-Driven Motion of Magnetic Domain Walls), racetrack ¶'
+  significance: Introduces racetrack memory — current-driven domain-wall motion — as a third STT-enabled storage technology
+  statement_date: '2010-03-23'
+- id: q-antiferromagnetic-prediction
+  added_date: '2026-05-26'
+  text: |-
+    Recently, MacDonald and coworkers (Reference 84) predicted that effects similar to
+    GMR and STT observed with ferromagnets ought to occur in multilayer systems where
+    the ferromagnetic (F) components are replaced by antiferromagnets (AFM).
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 19, Section 4 (Antiferromagnetic Metal Spintronics), ¶1'
+  significance: Opens the antiferromagnetic-spintronics direction — GMR/STT analogues predicted when ferromagnets are replaced by antiferromagnets
+  statement_date: '2010-03-23'
+- id: q-conclusions-moores-law
+  added_date: '2026-05-26'
+  text: |-
+    The semiconductor industry has distinguished itself by a long-term trend known as
+    Moore's law (Reference 97) that foresees an exponential increase in transistor density
+    on a chip, doubling approximately every 2 years. Continuing at this pace, the transistor
+    density will reach ~ 10¹³ cm⁻² by 2035, which at clock speeds of ~10 GHz would result
+    in ~40 MW/cm² of power dissipated on a chip.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 22, Section 5 (Summary and Conclusions), ¶1'
+  significance: States the motivating problem — the Moore's-law power-density trend projecting ~40 MW/cm² dissipation by 2035
+  statement_date: '2010-03-23'
+- id: q-conclusions-redbrickwall
+  added_date: '2026-05-26'
+  text: |-
+    The International Technology Roadmap for Semiconductors (http://www.itrs.net) has
+    termed this imminent collapse the "Red Brick Wall," where "Red" indicates no "known
+    manufacturable solutions" (of reasonable confidence) exist for continued scaling in
+    some aspect of the semiconductor technology.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 23, Section 5 (Summary and Conclusions), ¶1'
+  significance: Names the "Red Brick Wall" — the semiconductor-scaling collapse that motivates a charge-free, spin-based alternative
+  statement_date: '2010-03-23'
+- id: q-conclusions-aerospace-radiation
+  added_date: '2026-05-26'
+  text: |-
+    The radiation resistance would be of particular interest for aerospace applications
+    because the radiation in space is known to severely damage conventional electronics by
+    building up a destructive charge in transistors. Long space trips that would expose
+    onboard electronics to years of radiation would benefit from the radiation resistance
+    and reduced power consumption (for example, like a nonvolatile memory that can
+    retain the stored information even when not powered) of metallic spintronic devices.
+  source:
+    path: government/dird-10-metallic-spintronics-20100323.pdf
+    location: 'p. 23, Section 5 (Summary and Conclusions), aerospace ¶'
+  significance: The report's explicit aerospace/defense relevance — radiation resistance and low power consumption of metallic spintronic devices as advantages for onboard electronics on long space missions (the AAWSAP tie-in)
+  statement_date: '2010-03-23'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-26'
+  observed: 'lithographycal'
+  canonical: 'lithographic'
+  location: 'p. 11, Figure 4 labels'
+  source_path: government/dird-10-metallic-spintronics-20100323.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-05-26'
+  observed: '~100-picosond'
+  canonical: '~100-picosecond'
+  location: 'p. 16, Section 3.2 (STT Experiments)'
+  source_path: government/dird-10-metallic-spintronics-20100323.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-05-26'
+  observed: 'Forth Worth'
+  canonical: 'Fort Worth'
+  location: 'p. 25, References (Reference 23)'
+  source_path: government/dird-10-metallic-spintronics-20100323.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-05-26'
+  observed: 'SST'
+  canonical: 'STT'
+  location: 'p. 10, Section 3.1 (STT Basics), ¶3'
+  source_path: government/dird-10-metallic-spintronics-20100323.pdf
+  resolution: preserve-as-sic-in-quotes
+cited_works: []

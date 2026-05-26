@@ -765,6 +765,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #10 — ''Metallic Spintronics'', DIA-08-1003-011, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 28 pages. DIA attachment #24 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. M. Tsoi, University of Texas - Austin (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_10_Metallic_Spintronics.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-10-metallic-spintronics-20100323.txt
+    archived_date: '2026-05-26'
+    note: 'Clean-text sibling of the OCR-scanned DIRD-10 ''Metallic Spintronics'' (DIA-08-1003-011, 23 March 2010, U//FOUO, 28 pp.). Produced 2026-05-26 via multimodal page-image read of all 28 pages; independently verified 2026-05-26 by a separate agent session (full image-vs-text re-read) — PASS, plus orchestrator spot-audit of the title page, Black Vault FOIA insert, and author-redaction block. Black Vault FOIA declassification insert (physical p.2) preserved verbatim. Author redacted on the document face (Author: (b)(6)); attribution to Dr. M. Tsoi rests on the DIA→Congress list (attachment #24) only, not the document itself. Equations/figures bracketed; redactions, source spellings and printed typos (e.g. ''lithographycal'', ''Forth Worth'', ''~100-picosond'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_11-DIRD_Advanced_Nuclear_Propulsion_for_Manned_Deep_Space_Missions.pdf
   status: archived
   artifacts:
