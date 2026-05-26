@@ -48,10 +48,13 @@ quotes.
    source and is not hidden (`meta/conventions.md`: preserve, don't strip).
    Do **not** add `----- PAGE BREAK -----` or any
    synthetic page structure — the sibling is a clean transcription. `p. N` refs
-   against a sibling are verbatim-anchored navigation hints (the page check
-   verifies `p. N` only on text-native PDFs with native `pdftotext` form feeds;
-   sibling-backed sources skip by design — see `meta/conventions.md` "Quote
-   location refs"). The producer reports the load-bearing
+   against a sibling are verbatim-anchored navigation hints (`quote_location_page`
+   verifies the text is ON page N only on text-native PDFs with native `pdftotext`
+   form feeds; sibling-backed sources skip that by design). Still author them as
+   **physical / PDF-viewer integers** — never roman (`p. ii`) or a `printed p. N`
+   annotation: `location_format` rejects those even on a sibling-backed source, and
+   `pdf_page_count` checks the document's declared page count against `pdfinfo`. See
+   `meta/conventions.md` "Quote location refs". The producer reports the load-bearing
    front-matter facts it captured and flags any faded / ambiguous / redacted
    spots where a vision model might hallucinate. **A flag records only what is
    legible** (`[unclear]`, `[illegible digit]`) — it must never assert an

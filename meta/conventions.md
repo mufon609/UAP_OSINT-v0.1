@@ -1122,6 +1122,16 @@ page *existence* is mechanically checkable there (page N must exist); a
 timeline `p. N` that is off by a few has no verbatim anchor and rests on
 contributor care.
 
+Two companion checks enforce the ref's *form* regardless of extraction type —
+including on the sibling-backed OCR sources `quote_location_page` skips:
+`location_format` errors on a roman-numeral page ref (`p. ii`) or a `printed
+p. N` dual annotation (physical pages are integers; the convention is
+physical-only with a node-level stated note, which the document renderer
+emits), and `pdf_page_count` errors when a document's declared `pages` ≠ the
+source PDF's `pdfinfo` page count. So a sibling-backed source's `p. N` is
+unverified only as to *which* physical page the text sits on — its integer
+form and the document's page count are still gated.
+
 For an **OCR-scan / extraction-lossy source** the canonical extract is the
 contributor's `.txt` sibling — a clean, full-text-searchable transcription that
 carries **no synthetic page markers**. *Never manufacture page structure in a
