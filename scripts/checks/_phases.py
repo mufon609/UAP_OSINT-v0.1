@@ -3,7 +3,7 @@
 Maps each check (by ``CHECK_NAME``) to the build-pipeline phase whose
 output it validates, so an agent can run a phase-scoped pass
 (``--phase {archive|extract|organize|link|render}``) for fast feedback
-on what it just produced, rather than the full ~69-check sweep. A phase
+on what it just produced, rather than the full check sweep. A phase
 token is named after the role whose output it validates — see the agent
 topology in ``prompts/topology.md``. (One-line phase descriptions are not
 restated here; they live in ``PHASE_DESC`` below, surfaced via
@@ -23,7 +23,7 @@ Routing lives HERE, not on the check modules: per
 ``scripts/checks/__init__.py``, "the [dispatch] lists are the routing
 source of truth" — phase is a routing/dispatch concern owned by the
 orchestrator layer, so one reviewable map beats a constant scattered
-across 67 modules.
+across the per-check modules.
 
 Discipline:
   - ``preflight`` checks (parse / structure / version) run in EVERY
