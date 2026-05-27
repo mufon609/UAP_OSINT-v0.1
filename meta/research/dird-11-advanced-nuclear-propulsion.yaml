@@ -135,12 +135,12 @@ quotes:
   added_date: '2026-05-26'
   text: |-
     To appreciate the importance of deuterium as the preferred and abundantly available
-    nuclear rocket fuel, one must consider the secondary reactions with D of the He? and T
+    nuclear rocket fuel, one must consider the secondary reactions with D of the He3 and T
     reaction products from D-D fusion.
   source:
     path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
     location: 'section "Deuterium as the Preferred Nuclear Rocket Fuel", ¶1'
-  significance: The propulsion thesis stated plainly — deuterium is framed as the preferred and abundantly available nuclear rocket fuel; preserves the OCR rendering "He?" for He3
+  significance: The propulsion thesis stated plainly — deuterium is framed as the preferred and abundantly available nuclear rocket fuel
   statement_date: '2010-03-11'
 - id: q-deuterium-availability
   added_date: '2026-05-26'
@@ -198,13 +198,6 @@ naming_quirks:
   source_path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
-  added_date: '2026-05-26'
-  observed: 'He?'
-  canonical: 'He3'
-  location: 'section "Deuterium as the Preferred Nuclear Rocket Fuel", ¶1'
-  source_path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq3
   added_date: '2026-05-26'
   observed: 'Los Alamos scientific Laboratory'
   canonical: 'Los Alamos Scientific Laboratory'

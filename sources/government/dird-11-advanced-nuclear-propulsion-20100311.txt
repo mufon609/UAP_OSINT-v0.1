@@ -451,7 +451,7 @@ potential equal to V requires an electron number density n ≈ V/πeR² . For V 
 Deuterium as the Preferred Nuclear Rocket Fuel
 
 To appreciate the importance of deuterium as the preferred and abundantly available
-nuclear rocket fuel, one must consider the secondary reactions with D of the He? and T
+nuclear rocket fuel, one must consider the secondary reactions with D of the He3 and T
 reaction products from D-D fusion. Taking these reactions into account, one obtains
 from 6 deuterium nuclei an energy of 26.8 megaelectronvolts (MeV) in charged fusion
 products, made up of He3 and H, and an energy of 16.55 MeV in neutrons. This means

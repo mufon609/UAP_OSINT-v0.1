@@ -126,9 +126,9 @@ Two concepts are of great importance for the envisioned deuterium fusion-driven 
 
 ---
 
-### The propulsion thesis stated plainly — deuterium is framed as the preferred and abundantly available nuclear rocket fuel; preserves the OCR rendering "He?" for He3
+### The propulsion thesis stated plainly — deuterium is framed as the preferred and abundantly available nuclear rocket fuel
 
-> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He? and T reaction products from D-D fusion.
+> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He3 and T reaction products from D-D fusion.
 
 | Field | Value |
 |---|---|
@@ -215,7 +215,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | AAWSA | AAWSAP | government/dird-11-advanced-nuclear-propulsion-20100311.pdf |
-| He? | He3 | government/dird-11-advanced-nuclear-propulsion-20100311.pdf |
 | Los Alamos scientific Laboratory | Los Alamos Scientific Laboratory | government/dird-11-advanced-nuclear-propulsion-20100311.pdf |
 
 ---
