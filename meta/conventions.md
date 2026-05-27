@@ -2199,8 +2199,10 @@ why notes that anchor on still-live concepts:
 
 - `meta/conventions.md` section names (the convention is the
   durable contract)
-- `meta/schema.yaml` field paths
-  (`schema.yaml::types.research-artifact.conditional_keys`)
+- schema field paths — `meta/schema.yaml` for node types, or
+  `meta/schema-research-artifact.yaml` for artifact fields (e.g.
+  `schema-research-artifact.yaml::conditional_keys`, merged into
+  `types.research-artifact` at parse time)
 - `meta/roadmap.md` mentions when scoping a "not yet implemented"
   check
 - Layering invariants (e.g., "presence-guard, not truthy — opens a

@@ -184,9 +184,9 @@ def _discover_target(data):
     of None when target_node isn't set or doesn't resolve.
 
     ``target_status`` is the node's frontmatter ``status`` value
-    (e.g., ``open`` / ``paused`` / ``closed`` for investigation,
-    ``documented`` / ``in-progress`` / ``superseded`` for finding).
-    Used by checks that gate on the node's status — currently
+    (e.g., ``open`` / ``paused`` / ``closed`` for investigation); ``None``
+    for types that carry no status field, such as findings. Used by checks
+    that gate on the node's status — currently
     ``investigation_closure_path_when_paused``.
     """
     target_node = data.get("target_node") or ""

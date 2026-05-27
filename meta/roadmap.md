@@ -26,9 +26,12 @@ Blocked on: multiple artifacts with overlapping evidentiary claims. Can't
 build propagation tooling without a real propagation case — likely after
 ~10 nodes through the full pipeline. The build topology's Audit role
 (`prompts/topology.md`) already runs a manual adjacent-node propagation
-pass; this item is the *mechanical* layer it lacks: bidirectional
-`corroborated_by` / `superseded_by` / `contradicted_by` pointers resolving
-across artifacts, plus validator coverage for broken cross-artifact refs.
+pass; this item is the *mechanical* layer it lacks: tooling that detects
+when an update to one artifact should propagate to the linked artifacts.
+(Cross-artifact ref *integrity* is already covered — `corroborated_by` /
+`superseded_by` / `contradicted_by` resolution by
+`scripts/checks/cross_refs.py` plus the tier-linking checks; what remains
+is propagation, not validation.)
 
 ---
 

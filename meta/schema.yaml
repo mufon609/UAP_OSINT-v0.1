@@ -499,7 +499,7 @@ types:
     frontmatter:
       required: [id, type]
       optional: [superseded_by]
-      # superseded_by: path of newer finding when status == superseded.
+      # superseded_by: path of the newer finding that replaces this one.
     required_sections:
       - Pattern Statement
       - Description

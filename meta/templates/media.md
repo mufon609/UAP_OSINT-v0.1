@@ -73,7 +73,7 @@ derivation_of: media/{{parent_slug}}
                 etc.)
        Note   — optional contributor synthesis of analytical
                 significance. Length is source-driven (see
-                `meta/conventions.md` "Free-prose density is
+                `meta/conventions.md` "Density is
                 source-driven"). -->
 <!-- DERIVATIVE: yes -->
 ## Media Versioning
