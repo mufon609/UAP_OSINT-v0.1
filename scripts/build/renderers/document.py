@@ -46,6 +46,37 @@ def render_title(artifact):
     return f"# {title}\n"
 
 
+# Physical-page ref detector: a `p. N` / `pp. N` location naming an integer page.
+# A sibling-backed (markerless OCR) source carries descriptive content-anchor
+# locations and NO `p. N` refs (meta/conventions.md "Quote location refs"); the
+# page-citation note in render_document_summary is suppressed for such a node so
+# it never advertises a citation form it does not use.
+_PAGE_REF = re.compile(r"\bpp?\.\s*\d")
+
+
+def _has_physical_page_ref(artifact):
+    """True if any quote / cited-work / naming-quirk / timeline location names a
+    physical `p. N` page — i.e. the node actually uses page-citation refs."""
+    def _scan(loc):
+        return isinstance(loc, str) and bool(_PAGE_REF.search(loc))
+    for q in (artifact.get("quotes") or []):
+        src = q.get("source") if isinstance(q, dict) else None
+        if isinstance(src, dict) and _scan(src.get("location")):
+            return True
+    for cw in (artifact.get("cited_works") or []):
+        src = cw.get("source") if isinstance(cw, dict) else None
+        if isinstance(src, dict) and _scan(src.get("location")):
+            return True
+    for nq in (artifact.get("naming_quirks") or []):
+        if isinstance(nq, dict) and _scan(nq.get("location")):
+            return True
+    for t in (artifact.get("timeline") or []):
+        src = t.get("source") if isinstance(t, dict) else None
+        if isinstance(src, dict) and _scan(src.get("location")):
+            return True
+    return False
+
+
 def render_document_summary(artifact):
     dm = artifact.get("document_intrinsic") or {}
     ctx = artifact.get("context_extrinsic") or {}
@@ -83,18 +114,21 @@ def render_document_summary(artifact):
     lines.append("|---|---|")
     for k, v in rows:
         lines.append(f"| {k} | {v} |")
-    # Stated page-citation convention note for multi-page PDF sources. `p. N`
-    # refs throughout this repo are physical / PDF-viewer pages (the Nth page of
-    # the file), which for composite documents — a cover, a Black Vault FOIA
-    # insert, roman front matter — run ahead of the printed page number the
-    # document carries on its face. State it so a reader following `p. N` opens
-    # the PDF to page N rather than hunting the printed folio.
+    # Stated page-citation convention note for multi-page PDF sources that
+    # actually carry `p. N` location refs. `p. N` refs are physical / PDF-viewer
+    # pages (the Nth page of the file), which for composite documents — a cover, a
+    # Black Vault FOIA insert, roman front matter — run ahead of the printed page
+    # number the document carries on its face. State it so a reader following
+    # `p. N` opens the PDF to page N rather than hunting the printed folio. A
+    # sibling-backed (markerless OCR) source uses descriptive content-anchor
+    # locations and no `p. N` (meta/conventions.md "Quote location refs"), so the
+    # note is suppressed — the node would otherwise advertise a form it never uses.
     src_fmt = (sources[0].get("format") if sources and isinstance(sources[0], dict) else None)
     try:
         npages = int(dm.get("pages"))  # tolerate int (30) or numeric string ('8')
     except (TypeError, ValueError):
         npages = 0
-    if src_fmt == "pdf" and npages > 1:
+    if src_fmt == "pdf" and npages > 1 and _has_physical_page_ref(artifact):
         lines.append("")
         lines.append(
             "_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth "

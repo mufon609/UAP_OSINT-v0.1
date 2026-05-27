@@ -1113,10 +1113,11 @@ itself:
 
 | Source shape | Canonical location form |
 |---|---|
-| Paginated PDF (hearing transcript, government report, written testimony) | `p. N, ¶M` |
+| Text-native paginated PDF (hearing transcript, government report, written testimony) whose `pdftotext` extract carries native form-feed page breaks | `p. N, ¶M` |
 | Unpaginated short document (HTML article, single-page memo) | `¶N` |
 | Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
 | Multi-page document where paragraph anchors aren't available — either the document lacks paragraph structure, or `pdftotext -layout` collapses visually-distinct paragraphs on a page into a single block (in which case ¶1 would overstate the precision the extract can deliver) | `p. N` |
+| OCR-scan / extraction-lossy PDF whose canonical extract is a clean-text `.txt` sibling (markerless — see below) | A **descriptive content anchor** drawn from the document's own structure: a named block, section title, or reference entry — e.g. `title-page identity block`, `Administrative Note`, `section "Deuterium as the Preferred Nuclear Rocket Fuel"`, `References, entry [8]`. **Not** `p. N` — the sibling carries no page markers, so a physical-page integer can be neither read off the extract nor verified. |
 | FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers (e.g., `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt`). Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
 | The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
 
@@ -1139,15 +1140,13 @@ page *existence* is mechanically checkable there (page N must exist); a
 timeline `p. N` that is off by a few has no verbatim anchor and rests on
 contributor care.
 
-Two companion checks enforce the ref's *form* regardless of extraction type —
-including on the sibling-backed OCR sources `quote_location_page` skips:
+Two companion checks enforce the ref's *form* regardless of extraction type:
 `location_format` errors on a roman-numeral page ref (`p. ii`) or a `printed
-p. N` dual annotation (physical pages are integers; the convention is
-physical-only with a node-level stated note, which the document renderer
-emits), and `pdf_page_count` errors when a document's declared `pages` ≠ the
-source PDF's `pdfinfo` page count. So a sibling-backed source's `p. N` is
-unverified only as to *which* physical page the text sits on — its integer
-form and the document's page count are still gated.
+p. N` dual annotation wherever a `p. N` is used (physical pages are integers;
+the convention is physical-only with a node-level stated note, which the
+document renderer emits), and `pdf_page_count` errors when a document's declared
+`pages` ≠ the source PDF's `pdfinfo` page count. Both run on every artifact,
+sibling-backed sources included.
 
 For an **OCR-scan / extraction-lossy source** the canonical extract is the
 contributor's `.txt` sibling — a clean, full-text-searchable transcription that
@@ -1156,16 +1155,22 @@ sibling* (the insert / front-matter handling is a `/prepare-ocr-sibling`
 production detail; whatever a sibling transcribes, it is never delimited by an
 inserted page break).
 
-So for a sibling-backed source `p. N` is a **verbatim-anchored navigation
-hint**: the verbatim-quote check confirms the text is in the source, the clean
-sibling is searchable, and the PDF's own pages are navigable in any viewer — so
-a reader still finds the quote, and the page-precision rests on contributor
-care, the same standard applied to a `timeline` `p. N`. `quote_location_page`
-mechanically verifies `p. N` **only where the source's own extraction yields
-form feeds natively** — text-native PDFs via `pdftotext`; for a sibling-backed
-source (no native form feeds) the check skips, **by design**, not a silent
-defect. The page-break markers a sibling used to carry served only the checker,
-never the researcher, so they are gone.
+Because the sibling is markerless, a quote drawn from it does **not** carry a
+`p. N` physical-page ref. A page integer can be neither read off the extract nor
+verified: `quote_location_page` confirms `p. N` **only where the source's own
+extraction yields form feeds natively** (text-native PDFs via `pdftotext`) and
+skips a sibling-backed source **by design**. Instead the `source.location` is a
+**descriptive content anchor** drawn from the document's own structure — a named
+block, a section title, or a reference entry (e.g. `title-page identity block`,
+`Administrative Note`, `section "Deuterium as the Preferred Nuclear Rocket
+Fuel"`, `References, entry [8]`). The content anchor *is* the navigation handle
+— the sibling is full-text-searchable and the PDF's pages are navigable in any
+viewer — and, unlike an unverifiable `p. N`, it cannot silently drift onto the
+wrong page. Page-precision was the only thing a sibling `p. N` ever offered and
+it was never checked; a content anchor is self-locating and honest about what
+the markerless extract supports. (Sibling-backed nodes built under the earlier
+convention may still carry `p. N` refs; those remain valid — the form checks
+still pass — and are not mass-migrated.)
 
 A source that genuinely has no PDF pages uses a non-page anchor: an HTML filing
 or single-page memo uses `¶N` / a section heading, an audio/video transcript

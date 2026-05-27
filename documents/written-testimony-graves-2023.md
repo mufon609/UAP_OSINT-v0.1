@@ -20,8 +20,6 @@ doc_form: testimony
 | Primary Source URL | https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-GravesR-20230726.pdf |
 | Local Archive | [sources/government/docs-house-gov-graves-written-testimony-20230726.pdf](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description

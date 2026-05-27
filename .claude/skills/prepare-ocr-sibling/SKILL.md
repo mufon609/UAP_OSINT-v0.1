@@ -47,14 +47,17 @@ quotes.
    Vault declassification page) — the released copy's provenance is part of the
    source and is not hidden (`meta/conventions.md`: preserve, don't strip).
    Do **not** add `----- PAGE BREAK -----` or any
-   synthetic page structure — the sibling is a clean transcription. `p. N` refs
-   against a sibling are verbatim-anchored navigation hints (`quote_location_page`
-   verifies the text is ON page N only on text-native PDFs with native `pdftotext`
-   form feeds; sibling-backed sources skip that by design). Still author them as
-   **physical / PDF-viewer integers** — never roman (`p. ii`) or a `printed p. N`
-   annotation: `location_format` rejects those even on a sibling-backed source, and
-   `pdf_page_count` checks the document's declared page count against `pdfinfo`. See
-   `meta/conventions.md` "Quote location refs". The producer reports the load-bearing
+   synthetic page structure — the sibling is a clean transcription. Quotes later
+   drawn from this sibling use a **descriptive content anchor** for
+   `source.location` — the document's own structure (a named block, section
+   title, or reference entry: e.g. `title-page identity block`, `Administrative
+   Note`, `References, entry [8]`) — **not** a `p. N` physical-page ref. The
+   sibling is markerless and full-text-searchable, so a page integer can be
+   neither read off the extract nor verified (`quote_location_page` skips
+   sibling-backed sources by design); the content anchor is the navigation
+   handle. (`location_format` still rejects roman `p. ii` / `printed p. N`
+   forms, and `pdf_page_count` still gates the document's declared page count
+   against `pdfinfo`.) See `meta/conventions.md` "Quote location refs". The producer reports the load-bearing
    front-matter facts it captured and flags any faded / ambiguous / redacted
    spots where a vision model might hallucinate. **A flag records only what is
    legible** (`[unclear]`, `[illegible digit]`) — it must never assert an
