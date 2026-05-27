@@ -801,6 +801,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #12 — ''Technological Approaches to Controlling External Devices in the Absence of Limb-Operated Interfaces'', DIA-08-1003-012, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 37 pages. DIA attachment #20 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_12-DIRD_Technological_Approaches_to_Controlling_External_Devices.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-12-bci-controlling-external-devices-20100323.txt
+    archived_date: '2026-05-27'
+    note: 'Clean-text sibling of the OCR-scanned AAWSAP DIRD #12 (DIA-08-1003-012, ''Technological Approaches to Controlling External Devices in the Absence of Limb-Operated Interfaces'', 23 March 2010, ICOD 1 December 2009, UNCLASSIFIED//FOR OFFICIAL USE ONLY, 37pp). Produced 2026-05-27 via multimodal page-image read; independently verified 2026-05-27 by a separate agent session — PASS (title/control-number/dates, struck-through FOUO banner, redacted [(b)(6)] author line, special glyphs and 60-entry superscript-numeral reference list, and source typos all confirmed against page images). Black Vault FOIA declassification insert (physical p.2) preserved verbatim. Equations/figures bracketed; redactions ([(b)(6)], [(b)(3):10 USC 424]) and source spellings/typos preserved verbatim; no synthetic page markers.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_13-DIRD_Warp_Drive_Dark_energy_and_the_Manipulation_of_Extra_Dimensions.pdf
   status: archived
   artifacts:
