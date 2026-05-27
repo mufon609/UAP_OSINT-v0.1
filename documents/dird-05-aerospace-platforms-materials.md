@@ -663,6 +663,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
+| 125 °Celsius | 125 °C | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
 
 ---
 

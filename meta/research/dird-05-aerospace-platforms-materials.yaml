@@ -524,3 +524,11 @@ naming_quirks:
   location: 'p. 3, Administrative Note'
   source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
   resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-05-24'
+  observed: '125 °Celsius'
+  canonical: '125 °C'
+  location: 'throughout body (Key Passages — resin and Ti-alloy temperature-limit passages)'
+  source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'Source spells the unit "°Celsius" and spaces the degree symbol inconsistently — "NNN °Celsius" (space before the symbol) in most passages, "NNN° Celsius" (space after) in the resin temperature-limit list. Both forms are preserved verbatim across Key Passages; this grounded "125 °Celsius" row flags the pattern.'
