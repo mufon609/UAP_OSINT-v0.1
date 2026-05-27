@@ -519,39 +519,3 @@ beyond the current handful — otherwise leave it to `/augment`.
 
 **Blocks:** none.
 **Blocked by:** none.
-
-### C8 — Editorial pass over legacy orphan source-form notes (corpus-wide)
-
-`coverage-suggest.py` now flags **orphan** `preserve-as-sic-in-quotes`
-naming_quirks — entries whose `observed` form appears nowhere on the rendered
-node except its own `## Source-Form Notes` row (the discipline + the generative
-fix landed with the dird-12 audit: convention re-grep scoped to quoted passages,
-grounding rule added). A corpus sweep at that point found **~86 legacy orphans**
-across ~25 nodes that predate the rule. They need a per-entry editorial pass —
-**not a mechanical delete** — sorting into four classes:
-
-- **Document orthographic typos** (`Transversable`, `Obiectives`, `fulfi lled`,
-  `exerpience`, `scientfic`, `psychokenesis`, `pheomena`, …) — incidental
-  source typos in unquoted body text; **drop** (scan fidelity is the manifest
-  `extraction_type`'s job).
-- **Annotated/multi-form `observed`** (`…(FOUO struck through)`,
-  `125 °Celsius / 175° Celsius (inconsistent…)`, `assap / ASAP`,
-  `NGA (duplicated…)`) — mis-shaped: the annotation belongs in a `note`, the
-  `observed` field should hold the literal token; **reshape**.
-- **Transcript name-mishearings** (`latsky`, `Lou alzando`, `Lacy`, … —
-  karl-nell alone has 14) — deliberate auto-caption catalogs kept for identity
-  resolution. **Decide the mechanism**: either keep as legitimate orphans
-  (the tool already treats them as judge-each) or move to a dedicated
-  alias/name-variant field so the Source-Form Notes table stays strictly
-  on-node. Corpus-wide call, not per-node.
-- **Entity/name variants** (`Lockeed Martin`, `John Hopkins University`,
-  `Hal Putoff`, `Lue Elizondo`) — Tier-2; **keep** (canonical stub-link is the
-  point), confirm each is grounded or genuinely a kept variant.
-
-Once the document-typo class is pruned and the transcript-catalog mechanism is
-decided, the orphan check can be promoted from a `coverage-suggest.py`
-diagnostic to a `review-coverage.py` gate (WARN) without burying the gate in
-legacy noise. Run `coverage-suggest.py` per node for the current orphan list.
-
-**Blocks:** promoting the grounding check to a gate.
-**Blocked by:** none.
