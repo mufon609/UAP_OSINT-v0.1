@@ -78,6 +78,7 @@ from lib._common import (  # noqa: E402
     REPO_ROOT,
     SOURCES_DIR,
     STOPWORDS,
+    body_outside_quirk_tables,
     extract_source_text,
     normalize_for_compare,
     strict_yaml_load,
@@ -331,23 +332,6 @@ def find_rendered_node(slug):
     return None
 
 
-def body_outside_source_form_notes(md_text):
-    """Return the rendered node body with the `## Source-Form Notes`
-    section excised, so a quirk's own table row doesn't count as
-    grounding for itself. Drops from the `## Source-Form Notes`
-    heading up to (not including) the next `## ` heading."""
-    out, skip = [], False
-    for line in md_text.splitlines():
-        if line.startswith("## Source-Form Notes"):
-            skip = True
-            continue
-        if skip and line.startswith("## "):
-            skip = False
-        if not skip:
-            out.append(line)
-    return "\n".join(out)
-
-
 def report_quirk_grounding(data, artifact_path):
     """Surface `preserve-as-sic-in-quotes` naming_quirks whose
     `observed` form appears nowhere on the rendered node except its own
@@ -370,7 +354,7 @@ def report_quirk_grounding(data, artifact_path):
         print()
         return False
 
-    body = normalize_for_compare(body_outside_source_form_notes(node.read_text()))
+    body = normalize_for_compare(body_outside_quirk_tables(node.read_text()))
     orphans = [
         nq for nq in quirks
         if normalize_for_compare(nq.get("observed") or "") not in body

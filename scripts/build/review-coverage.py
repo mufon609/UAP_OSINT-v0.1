@@ -8,10 +8,11 @@ validate.py (node structure + verbatim quotes) and validate-research.py
 other.
 
 Per-check modules live in scripts/checks/. This file is the orchestrator:
-loads schema + manifest, iterates artifacts, dispatches the three cross-
-layer checks (coverage, boundary, description_token_drift)
-via an explicit step list. Skips on unsupported types (only runs against
-types whose renderer ships in build-from-research.py).
+loads schema + manifest, iterates artifacts, dispatches the four cross-
+layer checks (coverage, boundary, description_token_drift,
+source_form_grounding) via an explicit step list. Skips on unsupported
+types (only runs against types whose renderer ships in
+build-from-research.py).
 
 This script handles mechanical rules only. Semantic / narrative-coherence
 review (agent-assisted) is a separate pass — the `/build` auditor role
@@ -63,6 +64,7 @@ from checks import boundary as ck_boundary
 from checks import coverage as ck_coverage
 from checks import description_token_drift as ck_description_token_drift
 from checks import phase_iii_inputs as ck_phase_iii_inputs
+from checks import source_form_grounding as ck_source_form_grounding
 from checks._phases import PHASE_CHOICES, in_scope
 
 
@@ -81,6 +83,7 @@ _REVIEW_CHECKS = [
     ck_coverage,
     ck_boundary,
     ck_description_token_drift,
+    ck_source_form_grounding,
 ]
 
 

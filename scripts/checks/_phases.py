@@ -134,6 +134,7 @@ CHECK_PHASE = {
     "coverage": "render",
     "boundary": "render",
     "description_token_drift": "render",
+    "source_form_grounding": "render",
     "phase_iii_inputs": "render",
     "governance_files": "render",
     "chronological_tables": "render",        # reads the RENDERED node body

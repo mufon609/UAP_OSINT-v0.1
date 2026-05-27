@@ -1006,6 +1006,39 @@ def normalize_for_compare(text):
     return text.strip()
 
 
+# The naming_quirks-derived catalog tables. None is "quoted text the
+# reader meets," so none counts as grounding for a
+# preserve-as-sic-in-quotes entry — body_outside_quirk_tables excises
+# all three before the grounding test.
+_QUIRK_TABLE_HEADINGS = (
+    "## Source-Form Notes",
+    "## Preserved Disagreements",
+    "## Name Variants",
+)
+
+
+def body_outside_quirk_tables(md_text):
+    """Return a rendered node body with every naming_quirks-derived
+    catalog table (``## Source-Form Notes`` / ``## Preserved
+    Disagreements`` / ``## Name Variants``) excised, so a quirk's own
+    catalog row never counts as grounding for itself.
+
+    Shared by the ``source_form_grounding`` review-coverage gate and the
+    ``coverage-suggest.py`` diagnostic so both apply the identical
+    grounding definition: a ``preserve-as-sic-in-quotes`` entry is
+    grounded only when its ``observed`` form appears in quoted text (or
+    the heading / locator framing a quote) on the node — NOT merely in
+    one of these catalog tables. An entry that surfaces only in a
+    catalog row is an orphan."""
+    out, skip = [], False
+    for line in (md_text or "").splitlines():
+        if line.startswith("## "):
+            skip = any(line.startswith(h) for h in _QUIRK_TABLE_HEADINGS)
+        if not skip:
+            out.append(line)
+    return "\n".join(out)
+
+
 # ---------------------------------------------------------------------------
 # Prose-drift tokenizer — used by validate-research.py's prose-drift
 # check and by check-vocab.py (contributor pre-flight tool). Both must
