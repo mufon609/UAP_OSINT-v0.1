@@ -38,37 +38,6 @@ See `meta/conventions.md` for the full philosophy.
 
 ---
 
-## Core invariants
-
-Three rules are foundational — every node, contributor, and agent upholds
-them. Full detail in `meta/conventions.md`.
-
-1. **Four-tier directional linking.** References run *downward* a tier, never
-   up; the only same-tier links are entity ↔ entity.
-
-   | Tier | Node types | May reference | Never references |
-   |---|---|---|---|
-   | 1 — Sources | files under `sources/` | — | anything |
-   | 2 — Entity | person, organization, document, event, transcript, media, location | sources + other entity nodes (laterally) | findings, investigations |
-   | 3 — Findings | finding | sources + entity nodes | other findings, investigations |
-   | 4 — Investigations | investigation | sources + entity nodes + findings | other investigations |
-
-   Entity ↔ entity lateral links are the navigational fabric (`## Associated
-   Nodes`); the synthesis tiers never cross-link at their own level; nothing
-   points up at an investigation.
-
-2. **No unfinished work in a node.** Every quote rests on a verified, archived
-   primary source — extracted and matched character-for-character in the
-   session it was added. A quote with no confirmed source never enters a node.
-
-3. **Working notes are a report, not a residue.** An agent's analysis and
-   findings are delivered to the user (or returned as a build handoff), never
-   persisted into node bodies, code comments, or stray files. Git and
-   `meta/BACKLOG.md` own history; deferred work goes to the BACKLOG, not a
-   comment.
-
----
-
 ## Repository layout
 
 ```
@@ -251,33 +220,39 @@ omitted when empty.
 
 ---
 
-## How to start
+## Skills and agents
 
-### New contributor
+Work in this repository runs through **skills** and **role subagents**,
+defined under `.claude/`.
 
-Run `/onboard`. It reads the governance docs, runs the health check, and
-shows current state.
+A **skill** is an invokable workflow you start with `/name`; it runs on the
+main thread and may dispatch subagents. The user-facing skills:
 
-If you'd rather read directly, start with `meta/conventions.md` (the
-evidentiary standard) and `meta/schema.yaml` (the structural spec),
-then run `/build` when you're ready to build a node.
+- `/onboard` — orient at session start (read governing docs, health-check, report state)
+- `/build` — build or rebuild a node through the full multi-agent pipeline
+- `/audit` — health-check a built node for evidentiary integrity and consistency
+- `/augment` — make a targeted maintenance change to a built node without re-scaffolding
+- `/verify-transcript` — verify a transcript node's quotes against the archived source, word-for-word
+- `/quote-relevance-audit` — check that each quote is load-bearing for the node's subject
+- `/archive-sweep` — verify every cited URL is archived locally and recover/submit what's missing
+- `/prepare-ocr-sibling` — produce and verify a clean-text sibling for an OCR-scanned source before quoting it
+- `/fork-init` — bootstrap the toolkit for a different topic
 
-### Returning contributor
+A **role subagent** is a capability-bounded worker the `/build` orchestrator
+dispatches in sequence — internal-investigator → external-investigator →
+archive → worker → builder → auditor. The boundaries are mechanical, not
+conventional: only `archive` writes the source manifest, only `worker`
+introduces verbatim quotes, and the builder edits the research artifact
+rather than the rendered node. `build-protocol` is the shared contract
+preloaded into each role; it is not a skill you invoke.
 
-`CLAUDE.md` is the session-start checklist. Run the canonical all-gates
-health check:
+`.claude/hooks/` enforce the discipline at the tool level: an un-bypassable
+commit gate (runs `pre-commit.sh`), a block on hand-editing rendered node
+bodies, and a one-new-synthesis-node-per-session cap.
 
-```
-bash scripts/tests/pre-commit.sh
-```
-
-This chains 12 gates: help-check / test_stopwords / smoke /
-`validate.py` / `validate-research.py` / `review-coverage.py` /
-`build-state.py --check` / `renderer-coverage.py` /
-`phase-routing-parity` / `skills-check` / `file-size-check` /
-`cookies-check`. The same chain runs as a blocking `PreToolUse` hook the
-moment you `git commit` (un-bypassable by `--no-verify`). Then pick work
-from `meta/topic/research-queue.md`.
+Deeper detail: `AGENT.md` ("Route by task") maps a goal to the right skill;
+`prompts/topology.md` is the design rationale for the role decomposition; the
+contract itself lives in `.claude/skills/build-protocol/`.
 
 ---
 

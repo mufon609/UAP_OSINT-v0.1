@@ -2114,6 +2114,42 @@ contents; this section is the rule of record.
 
 ---
 
+## Working notes are a report, not a residue
+
+An agent's — or contributor's — analysis, intermediate reasoning, and
+findings are a **deliverable**: handed to the user, or returned up the
+build pipeline as a handoff. They are never persisted into the
+repository's durable surfaces. The repo records *what the sources say*
+and *what the code does*; it does not record the working process that
+produced either.
+
+Three durable surfaces, three places working notes must not land:
+
+- **Node bodies.** A rendered node (`people/*.md`, `organizations/*.md`,
+  …) is renderer output, regenerated from its `meta/research/` artifact;
+  it carries source-anchored content, not an agent's commentary about how
+  that content was assembled. The `block_node_body_edit.sh` hook enforces
+  this mechanically — bodies are not hand-edited at all.
+- **Code comments.** Comments describe what the code does and the
+  non-obvious why, not who changed it or what an audit found — see
+  `### NO BANDAIDS rule` and `### What TO keep in comments` below.
+- **Stray files.** No scratch notes, status logs, or "summary of this
+  session" files committed to the tree.
+
+Where the record actually lives: **git history** owns the narrative of
+what changed and why (commit messages, PR descriptions), and
+`meta/BACKLOG.md` owns deferred work — see `### BACKLOG lifecycle
+discipline`. An issue found mid-session is fixed now or filed in BACKLOG;
+it is never left behind as a comment or a node-body aside.
+
+For build work specifically, this is the mechanism the role pipeline
+already runs on: each role returns a handoff stub to the orchestrator
+rather than writing shared state (`prompts/topology.md`), and
+`meta/memory.md` records the drive-builds-through-the-topology discipline
+that keeps it that way.
+
+---
+
 ## Comments describe code, not refactor history
 
 Code comments describe what a function or script does and any
