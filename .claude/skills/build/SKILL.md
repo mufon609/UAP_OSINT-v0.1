@@ -68,9 +68,10 @@ build before doing anything.
    sibling is missing, the remedy is the **`/prepare-ocr-sibling`** skill — it
    produces the sibling (VLM page-image read), independently verifies it (a
    different agent — the producer can't self-verify), and registers the paired
-   entry. Run it (or, if you can't dispatch a skill from here, **HALT** and
-   direct the user to run `/prepare-ocr-sibling {source-path}`) before handing
-   the Worker a corrupt extract. Once every ocr-scan source has a verified
+   entry. **Invoke `/prepare-ocr-sibling {source-path}` via the Skill tool — you
+   are the main thread, so you can.** Only if your environment cannot dispatch a
+   skill from here, **HALT** and direct the user to run it. Either way, do it
+   before handing the Worker a corrupt extract. Once every ocr-scan source has a verified
    sibling, the canonical scratch comes from `extract-source.py --artifact`
    (it prefers the sibling). Text-native sources need no sibling.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
