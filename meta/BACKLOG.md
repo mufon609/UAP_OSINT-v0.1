@@ -288,7 +288,14 @@ errors the offset conversion propagated (the method: a token-vote page resolver 
 the PDF's `pdftotext` pages flags candidates, then confirm each against the page image
 — references especially, where the resolver is unreliable because reference text
 overlaps body in-text citations). Verbatim is likely faithful (08/09 were) but confirm
-the audit-flagged spans where they exist. **Shares the per-DIRD image pass with (a)** —
+the audit-flagged spans where they exist. **Caveat from dird-11 (built later via
+the Tesseract route):** its sibling carried a real verbatim glyph-mangle inside a
+quote — the document's superscript He³ rendered as `He?` — caught only by a
+page-image check, fixed, and initially mis-logged as a `preserve-as-sic`
+naming_quirk. Verbatim-faithfulness is therefore NOT safely assumed for
+Tesseract-route siblings; the per-DIRD image pass must check special-glyph
+fidelity (superscripts / subscripts / Greek / math), not only page-citations.
+**Shares the per-DIRD image pass with (a)** —
 do the coverage re-level and the page/fidelity check in one sweep per DIRD.
 
 **Blocks:** none.

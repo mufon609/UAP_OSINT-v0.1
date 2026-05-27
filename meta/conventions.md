@@ -320,14 +320,21 @@ degraded figure labels, third-party distribution inserts). Do NOT delete
 or mechanically "correct" these — deleting loses information a human can
 read off the source image, and altering the document's own words erases
 the source-form record. The sibling stays faithful and complete: the
-engine's clean prose stands; regions it garbles are left in place (a
-human reads the source image if such a region later becomes
-quote-bearing); the document's own typos are preserved sic. Any
-source-form artifact that surfaces in an authored quote is carried
-verbatim into `quote.text` and logged as a `naming_quirks` entry
-(`preserve-as-sic-in-quotes`) — that mechanism, not editing the sibling,
-is how artifacts are handled, identically to every other OCR-scan
-source. Draw verbatim quotes from the clean prose.
+engine's clean prose stands; regions it garbles are left in place; the
+document's own typos are preserved sic. **When a quote is drawn from a
+region carrying a special or garbled glyph — a superscript / subscript,
+Greek, math symbol, or isotope (He³, 10¹³), which an OCR engine drops to
+a baseline digit or to `?` — that passage MUST be checked against the
+source page image before the quote is finalized.** The verbatim-quote
+gate compares quote↔sibling, never sibling↔document, so it cannot catch a
+glyph mangled identically in both. Distinguish the two cases that check
+resolves: the **document's own** non-canonical form — a real printed typo
+(`lithographycal`, `Tokomak`) — is carried verbatim into `quote.text` and
+logged as a `naming_quirks` entry (`preserve-as-sic-in-quotes`); an **OCR
+mangle** of a glyph the document rendered correctly (He³ → `He?`) is
+**corrected** to the document's reading in both the sibling and the quote,
+never logged as sic, because it is not the source's form. Draw verbatim
+quotes from the clean prose.
 
 **Provenance + verification are mandatory regardless of method.** Record
 the production method (VLM / Tesseract / cloud-OCR / manual) in the

@@ -35,7 +35,13 @@ quotes.
    registered. If a verified sibling already exists, stop — there is nothing to
    do. Note the parent URL (you need it to register the pairing).
 
-2. **Produce — `Agent(general-purpose)`.** Dispatch a producer to read the
+2. **Produce — `Agent(general-purpose)`.** **Route check first:** if the
+   source's subject is plainly CBRN / weapons-design-sensitive (judge from the
+   title / table of contents — nuclear-weapon physics, pathogen synthesis, and
+   the like), skip this VLM producer and use the **Tesseract route** (Fallback
+   section below) from the start: a model reproducing such a passage as its own
+   tokens hard-terminates on the content filter, wasting the attempt. Otherwise,
+   dispatch a producer to read the
    source's page IMAGES (the `Read` tool with `pages: "1-20"`, `"21-40"`, … —
    max 20 pages per request) and write the verbatim transcription to the
    same-stem `.txt` adjacent to the source. Per `meta/conventions.md`
@@ -70,9 +76,13 @@ quotes.
    Dispatch a SEPARATE agent (independence is the whole point) to re-read the
    page images against the produced `.txt` and return either PASS or a list of
    `page N | .txt says "X" | image shows "Y"` discrepancies — scrutinizing the
-   producer's flagged spots and the load-bearing front matter (title, dates,
-   control numbers, author/redaction lines). The producer must not verify its
-   own output. On FAIL, route the corrections back to a producer pass and
+   producer's flagged spots, the load-bearing front matter (title, dates,
+   control numbers, author/redaction lines), and **special glyphs in body prose
+   (superscripts / subscripts, Greek, math symbols, isotopes — e.g. He³, 10¹³)**.
+   An OCR engine drops a special glyph invisibly — a superscript collapses to a
+   baseline digit, or to `?` — and the verbatim-quote gate cannot catch it: it
+   compares quote↔sibling, never sibling↔document, so a glyph mangled identically
+   in both passes silently. The producer must not verify its own output. On FAIL, route the corrections back to a producer pass and
    re-verify; do NOT register until PASS.
 
 4. **Register the paired manifest entry.** Once verified:
@@ -122,7 +132,11 @@ autonomous, no human step needed in the normal case:
    in its output, it stays under the filter even on the blocked pages (Tesseract
    usually got those right, so they need near-zero correction — the model just
    confirms them). A script applies the corrections + brackets equations +
-   normalizes banners. Independence holds: producer = Tesseract (mechanical,
+   normalizes banners. **Give special-glyph regions (superscripts / subscripts,
+   Greek, math, isotopes — He³, 10¹³) extra scrutiny here too:** Tesseract drops a
+   superscript to a baseline digit or `?` (e.g. He³ → `He?`), a mangle the
+   verbatim gate can't see — confirm each against the image and emit the fix.
+   Independence holds: producer = Tesseract (mechanical,
    cannot hallucinate); verifier = a separate model grounding each line against
    the image (residual risk is OCR accuracy, addressed by the diff, not
    fabrication). **Hard rule for the verifier:** on a sensitive page, confirm
