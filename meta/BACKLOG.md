@@ -427,33 +427,6 @@ a dedicated pass.
 **Blocked by:** nothing; the quote-relevance promotion is gated on observed
 recurrence, not a dependency.
 
-### C5 — Document a DIRD node slug-naming convention
-
-The built DIRD slugs are inconsistent and there is no documented rule deciding
-between them:
-
-- **Spelled-out topic** — `dird-07-invisibility-cloaking`,
-  `dird-15-advanced-space-propulsion`, `dird-18-traversable-wormholes`,
-  `dird-24-quantum-vacuum-energy-extraction`.
-- **Abbreviation / acronym** — `dird-03-pulsed-hpm`, and `dird-09-iec-fusion`
-  (chosen this session: "IEC" is the document's own standard term for inertial
-  electrostatic confinement, and it matches the archived source-file stem
-  `dird-09-iec-fusion-20100310.pdf`).
-
-Each build currently picks ad hoc. Propose and document a rule in
-`meta/conventions.md` (sibling to the existing naming/slug guidance) — a
-reasonable candidate: *use the document's own widely-recognized acronym when one
-exists and reads unambiguously; otherwise spell out the topic in kebab-case* —
-and add a one-time note reconciling the existing slugs against it. The unbuilt
-DIRDs (08/10/11/… per A3) would then key off the documented rule at build time
-rather than per-builder judgment. **Do not retro-rename** existing slugs as part
-of this — renaming a node slug touches its file path, every inbound cross-link,
-and the build-state block; record whether the existing set is acceptable-as-is
-(grandfathered) or warrants a separate rename sweep.
-
-**Blocks:** none (advisory; future DIRD builds proceed without it).
-**Blocked by:** none.
-
 ### C6 — cited_works empty-state convention ("None") + enforcement hardening
 
 **Context.** `cited_works` is required-but-emptyable on document artifacts, but a
@@ -500,22 +473,3 @@ case does not depend on format detection at all.
 
 **Blocks:** none.
 **Blocked by:** none (the interim heuristic gate is shipped; this hardens it).
-
-### C7 — Decide whether citation capture warrants a dedicated `/capture-citations` skill
-
-Citation capture/backfill — locate a source's reference list, extract each entry
-verbatim into `cited_works[]` with the correct marker format + physical-page
-`source.location`, validate against `cited_works.py` — is a distinct, repeatable
-operation that recurs for every reference-bearing document and was just run by
-hand (dird-10's 97 entries + nature-1974's 9). It **overlaps existing surfaces**:
-the `/build` worker already captures `cited_works` at build time, and `/augment`
-covers maintenance backfill on already-built nodes. So the question is whether a
-dedicated action skill earns its keep, or whether the discipline belongs as an
-`/augment` use-case plus a `meta/conventions.md` section. Decide; if yes, the
-skill encodes the marker-format handling (mirror `cited_works_uncaptured.py`'s
-format catalogue), the verbatim + physical-page requirements, and the C6 "None"
-convention. Gated (test-before-BACKLOG): build only if the backfill shape recurs
-beyond the current handful — otherwise leave it to `/augment`.
-
-**Blocks:** none.
-**Blocked by:** none.
