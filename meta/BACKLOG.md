@@ -224,7 +224,22 @@ re-OCR/re-verification]*` — greppable later via `legibility: illegible`
 fragment; never fabricate the unreadable span, never skip the entry (skipping
 loses the fact a reference exists at [N]).
 
-**(c) DIRD page-ref convention — DONE (all 13 DIRDs) + ENFORCED.** Settled rule
+**(c) DIRD page-ref convention — DONE (all 13 DIRDs) + ENFORCED.**
+
+> **⚠ Superseded in part by C3 (markerless strip-all).** The page-for-page
+> mirroring claimed in this subsection — siblings carrying `----- PAGE BREAK
+> -----` markers so *block count == `pdfinfo` page count* — was reversed by C3's
+> strip-all uniformity pass (commits `fb31764` / `466a28c`), which stripped every
+> synthetic page marker from the DIRD siblings that carried them. The siblings are
+> now **markerless**, so no block-count↔`pdfinfo` correspondence exists. What
+> still holds: the `p. N` = PDF-viewer-page *semantic* convention and its
+> mechanical enforcement (`location_format`, `pdf_page_count`); for a
+> sibling-backed source `p. N` is a verbatim-anchored navigation hint, and new
+> builds (dird-11 / dird-12, via `/prepare-ocr-sibling`) use **descriptive content
+> anchors** instead of `p. N`. The narrative below is retained as the record of
+> the page-ref work — read it in that light.
+
+Settled rule
 (`meta/conventions.md` "`p. N` is the physical page"): `p. N` = the PDF viewer's
 page N (the Nth physical page of the file), so a reader opening the source PDF
 to page N lands on the quote. The OCR sibling therefore preserves **every**
