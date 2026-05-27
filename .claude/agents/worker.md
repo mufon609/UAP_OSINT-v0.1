@@ -20,7 +20,12 @@ verbatim quotes. Copy quote `text` verbatim from the scratch file — never
 typed from memory. Preserve source artifacts exactly (HTML entities, OCR
 damage, auto-caption typos). After merge, the `verbatim_quotes` check matches
 every quote against the extracted file (gates read disk — build-protocol), so
-a mistyped span trips there.
+a mistyped span trips there. Each quote `text` is a **single contiguous span**
+of the source — the check substring-matches it against the scratch, so an
+internal ellipsis (`…` / ` ... `) bridging two non-adjacent passages is not
+verbatim and trips the gate. For non-adjacent passages emit **separate quotes**
+(the builder clusters them under one `claim_group`); never join them with an
+ellipsis.
 
 **Whose voice? — the quote-attribution gate.** Verbatim is necessary but not
 sufficient; the check verifies the bytes are in the source, not who said them.
