@@ -783,6 +783,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #11 — ''Advanced Nuclear Propulsion for Manned Deep Space Missions'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 11 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 38 pages. DIA attachment #2 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. F. Winterberg, University of Nevada – Reno (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_11-DIRD_Advanced_Nuclear_Propulsion_for_Manned_Deep_Space_Missions.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-11-advanced-nuclear-propulsion-20100311.txt
+    archived_date: '2026-05-26'
+    note: Clean-text sibling of the OCR-scanned DIRD-11 'Advanced Nuclear Propulsion for Manned Deep Space Missions'. Produced 2026-05-26 via local Tesseract OCR of the page images (filter-safe route — the body's nonfission-ignition / thermonuclear-detonation content is proliferation-sensitive and trips the model-output content filter on VLM re-transcription). Independently verified 2026-05-26 by two separate agent sessions (pages 1-19 and 20-38) grounding each line against the page images — PASS; 261 anchored corrections applied (redaction markers, equation/figure brackets, reference umlauts/initials, prose OCR fixes). Control number DIA-08-1003-007 and Author [(b)(6)] confirmed against page 1. Black Vault FOIA cover-insert preserved verbatim; equations/figures bracketed; redactions + source spellings preserved verbatim.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_12-DIRD_Technological_Approaches_to_Controlling_External_Devices.pdf
   status: archived
   artifacts:
