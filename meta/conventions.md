@@ -436,12 +436,20 @@ misspelling sitting in body text you never quote has no on-node
 referent, and the entry then renders as a correction to nothing — an
 *orphan* source-form note. Scan fidelity as a whole is recorded by the
 manifest entry's `extraction_type` (`ocr-scan` / `extraction-lossy`),
-not by one `naming_quirks` row per source typo. At audit time
-`scripts/tools/coverage-suggest.py` flags any ungrounded entry (its
-`observed` form present only in its own `## Source-Form Notes` row);
-an entry deliberately recording a not-on-node variant (e.g. how an
-auto-caption mangles a name, kept for identity resolution) is a
-legitimate orphan — judge each.
+not by one `naming_quirks` row per source typo. **Source-Form Notes
+stays strictly grounded — it carries no orphans.** Resolve every
+ungrounded `preserve-as-sic-in-quotes` entry one of two ways: an
+incidental source typo in body text you never quote is **dropped**
+(scan fidelity is the `extraction_type`'s job, above); a deliberate
+non-canonical variant kept for navigation / identity resolution — an
+auto-caption name mangling, an idiosyncratic source abbreviation whose
+specific instance you did not quote — is **reclassified
+`off-node-variant`**, which renders in the node's separate
+`## Name Variants` section (see *Off-node variants* below) rather than
+Source-Form Notes. At audit time `scripts/tools/coverage-suggest.py`
+and the `review-coverage.py` grounding gate flag any ungrounded
+`preserve-as-sic-in-quotes` entry — a hard signal, no longer a
+judge-each carve-out.
 
 The discipline is a per-quote workaround, not a substitute for
 producing the `.txt` sibling. Once the sibling exists and the manifest
@@ -473,10 +481,15 @@ required:
    "AAWSA" verbatim and is still flagged (below); canonicalizing the synthesized
    surfaces does not remove that need, it just stops the variant from
    masquerading as the repo's chosen name.
-2. **Register a `naming_quirks` entry** (`resolution:
-   preserve-as-sic-in-quotes`) mapping the observed source form →
-   canonical name + source path, so the variance renders in the node's
-   `## Source-Form Notes` table.
+2. **Register a `naming_quirks` entry** mapping the observed source
+   form → canonical name + source path. Choose the resolution by
+   whether the variant is quoted on this node: when the source form
+   appears in a quote (or its heading / locator), use
+   `preserve-as-sic-in-quotes` and it renders in `## Source-Form
+   Notes`; when the entity is stub-linked but its variant form is not
+   quoted on the node, use `off-node-variant` and it renders in
+   `## Name Variants` (see *Off-node variants* below). Either way the
+   variance is catalogued and the canonical is carried navigationally.
 3. **Carry the canonical entity navigationally** — a stub cross-reference
    to its canonical `/{type}/{slug}`, **even when that node is not yet
    built** (per *Cross-reference paths to unbuilt nodes — use a stub,
@@ -496,6 +509,30 @@ Weapon System Applications (AAWSA) Program" — "AAWSA" stays verbatim, a
 `naming_quirks` entry maps it to the Advanced Aerospace Weapon System
 Applications Program, and the program is stub-linked
 `[`/organizations/aawsap`]` though that node is unbuilt.
+
+### Off-node variants — catalogued, not on the node
+
+`off-node-variant` is the `naming_quirks` resolution for a non-canonical
+form the source attests but that **does not appear in any quote on the
+node** — an auto-caption mangling of a name, an OCR variant, or an
+entity abbreviation whose specific instance you catalogued for
+navigation / identity resolution but did not quote. It is the
+deliberate counterpart to an orphan: the same not-on-node shape, but
+declared rather than accidental.
+
+Such entries render in their own `## Name Variants` section (Variant
+Form → Canonical → Source), parallel to how `disputed` renders in
+`## Preserved Disagreements`. This keeps `## Source-Form Notes`
+strictly grounded — every row there is a form the reader meets in
+quoted text — while the off-node catalogue (caption manglings kept for
+speaker-identity resolution; entity variants that are stub-linked but
+not quoted) stays reader-visible and greppable without polluting the
+grounded table. Choose the resolution by one test: **does the
+`observed` form appear in quoted text (or the heading / locator
+framing a quote) on this node?** Yes → `preserve-as-sic-in-quotes`
+(Source-Form Notes). No, but worth keeping for navigation →
+`off-node-variant` (Name Variants). Neither — an incidental typo of no
+navigational value → drop the entry.
 
 ### Transcript provenance and audit discipline
 
@@ -527,9 +564,13 @@ textbook auto-caption blind spot. The `transcript_provenance` value
 the canonical original. Audit handling mirrors `ocr-scan`:
 
 - **Known caption artifacts** registered as `naming_quirks` entries
-  with resolution `preserve-as-sic-in-quotes` (same workflow as
-  OCR-scan source-form preservation per
+  (same workflow as OCR-scan source-form preservation per
   `feedback_prose_drift_warnings_must_resolve.md` Category 3).
+  Resolution by the grounding test above: a mangling that appears in a
+  quoted passage on the node is `preserve-as-sic-in-quotes` (renders in
+  Source-Form Notes); a mangling catalogued for speaker-identity
+  resolution but not present in any on-node quote is `off-node-variant`
+  (renders in Name Variants — see *Off-node variants* above).
   Examples already in the corpus: `Bigalow`→`Bigelow`,
   `lockie Martin`→`Lockheed Martin`, `Jim laty`→`Jim Lacatski`,
   `alzando`→`Elizondo`.

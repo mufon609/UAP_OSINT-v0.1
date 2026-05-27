@@ -32,7 +32,9 @@ Target: **$ARGUMENTS** (ask the user if empty).
    and **ungrounded `## Source-Form Notes`** — `preserve-as-sic-in-quotes`
    entries whose `observed` form appears only in its own table row (an
    incidental source typo logged but never quoted → drop it; a deliberate
-   not-on-node variant → keep — judge each).
+   not-on-node variant → reclassify `resolution: off-node-variant`, which
+   renders in `## Name Variants` — resolve each, Source-Form Notes carries no
+   orphans).
    Then weigh the auditor's **family-comparability** pass (goal 8): per
    `meta/conventions.md` "Comparability standard", does a same-`type` /
    `kind` / `archetype` peer carry a source-anchored optional section this

@@ -16,6 +16,12 @@ their type-specific sections.
   - ``render_preserved_disagreements``   — every node may carry
                                            ``naming_quirks`` with
                                            ``resolution: disputed``.
+  - ``render_name_variants``             — every node may carry
+                                           ``naming_quirks`` with
+                                           ``resolution: off-node-
+                                           variant`` (not-on-node
+                                           variants catalogued for
+                                           navigation).
   - ``render_primary_source_contradictions``
                                          — emits on every type whose
                                            schema permits ``rumors``
@@ -62,10 +68,18 @@ def render_source_form_notes(artifact):
     in quote text and would otherwise read to a reader as contributor
     misspellings without explicit signal.
 
+    Every entry here must be grounded — its `observed` form appears in
+    quoted text (or the heading / locator framing a quote) on the node.
+    A non-canonical form the source attests but that is NOT quoted on
+    the node is an off-node variant: it carries `resolution:
+    off-node-variant` and renders via render_name_variants, never here.
+    This keeps Source-Form Notes strictly grounded (no orphan rows).
+
     Returns empty string when no preserve-as-sic entries exist.
     `disputed` resolutions render via render_preserved_disagreements
-    (parallel section); `use-canonical` and `unresolved` stay
-    contributor-side metadata only.
+    and `off-node-variant` via render_name_variants (parallel
+    sections); `use-canonical` and `unresolved` stay contributor-side
+    metadata only.
 
     Applies to every node type — naming_quirks is universal across
     target types.
@@ -125,6 +139,53 @@ def render_preserved_disagreements(artifact):
         "|---|---|---|",
     ]
     for q in disputed:
+        observed = _escape_table_cell(q.get("observed"))
+        canonical = _escape_table_cell(q.get("canonical"))
+        source_path = _escape_table_cell(q.get("source_path"))
+        lines.append(f"| {observed} | {canonical} | {source_path} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_name_variants(artifact):
+    """Emit a `## Name Variants` section listing `naming_quirks`
+    entries whose resolution is `off-node-variant` — non-canonical
+    forms a primary source attests for an entity or name (auto-caption
+    manglings of a name, OCR variants, idiosyncratic abbreviations,
+    alternate spellings) that the contributor has NOT quoted on this
+    node. Unlike `preserve-as-sic-in-quotes` entries (which must be
+    grounded in on-node quoted text and render via
+    render_source_form_notes), these are deliberately not-on-node:
+    catalogued for navigation / identity resolution and to stub the
+    canonical entity, so they render in their own section and keep
+    Source-Form Notes strictly grounded (no orphan rows).
+
+    Returns empty string when no off-node-variant entries exist.
+    Applies to every node type — naming_quirks is universal across
+    target types.
+    """
+    quirks = artifact.get("naming_quirks") or []
+    variants = [
+        q for q in quirks
+        if isinstance(q, dict) and q.get("resolution") == "off-node-variant"
+    ]
+    if not variants:
+        return ""
+
+    lines = [
+        "## Name Variants",
+        "",
+        "Non-canonical forms the cited primary source attests for an "
+        "entity or name — auto-caption manglings, OCR variants, "
+        "idiosyncratic abbreviations, alternate spellings — that are "
+        "not quoted on this node. Catalogued for navigation and "
+        "identity resolution; the canonical form is the repository's "
+        "own label. (Source forms that DO appear in quoted text on "
+        "this node are tabled under Source-Form Notes instead.)",
+        "",
+        "| Variant Form | Canonical | Source |",
+        "|---|---|---|",
+    ]
+    for q in variants:
         observed = _escape_table_cell(q.get("observed"))
         canonical = _escape_table_cell(q.get("canonical"))
         source_path = _escape_table_cell(q.get("source_path"))

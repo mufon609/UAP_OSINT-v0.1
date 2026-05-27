@@ -19,6 +19,7 @@ from ._common import (
 from ._universal import (
     render_associated_nodes,
     render_description,
+    render_name_variants,
     render_preserved_disagreements,
     render_source_form_notes,
 )
@@ -33,6 +34,7 @@ EMITS = frozenset({
     "Key Passages",
     "Source-Form Notes",
     "Preserved Disagreements",
+    "Name Variants",
     "Associated Nodes",
 })
 
@@ -216,6 +218,7 @@ def render_body_media(artifact, kind, fm):
         render_media_key_passages(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
+        render_name_variants(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]

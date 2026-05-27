@@ -35,10 +35,11 @@ Audit goals:
    references + capitalized terms absent from the artifact (suggestions; judge
    each — boilerplate is common), and **ungrounded `## Source-Form Notes`**:
    `preserve-as-sic-in-quotes` entries whose `observed` form appears only in its
-   own table row. An incidental source typo logged but never quoted → drop the
-   entry (orphan, correction-to-nothing); a deliberate not-on-node variant
-   (e.g. an auto-caption name mangling kept for identity resolution) → keep.
-   Judge each.
+   own table row. Source-Form Notes carries no orphans: an incidental source
+   typo logged but never quoted → drop the entry (correction-to-nothing); a
+   deliberate not-on-node variant (e.g. an auto-caption name mangling kept for
+   identity resolution) → reclassify `resolution: off-node-variant` (renders in
+   `## Name Variants`, not Source-Form Notes). Resolve each, don't leave it.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
 7. **Adjacent-node propagation (the tightening loop).** Compare adjacent /

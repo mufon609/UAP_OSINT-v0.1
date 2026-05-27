@@ -21,6 +21,7 @@ from ._common import (
 from ._universal import (
     render_associated_nodes,
     render_description,
+    render_name_variants,
     render_preserved_disagreements,
     render_source_form_notes,
 )
@@ -39,6 +40,7 @@ EMITS = frozenset({
     "Timeline",                  # conditional
     "Source-Form Notes",         # conditional
     "Preserved Disagreements",   # conditional
+    "Name Variants",             # conditional
     "Associated Nodes",
 })
 
@@ -223,6 +225,7 @@ def render_body_finding(artifact, fm):
         render_finding_timeline(artifact),             # conditional
         render_source_form_notes(artifact),            # conditional
         render_preserved_disagreements(artifact),      # conditional
+        render_name_variants(artifact),                # conditional
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]

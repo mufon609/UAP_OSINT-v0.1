@@ -35,9 +35,13 @@ Contributor judges each candidate manually — the tool surfaces
 audit targets, never asserts they're under-extraction. Boilerplate,
 navigation noise, and tangential content (a hearing transcript names
 50 topics; a witness's person node only quotes 5) are legitimately
-unreferenced. A deliberately-cataloged source/name variant (e.g. a
-transcript node recording how auto-captions mangle a name for
-identity resolution) is a legitimate orphan — judge each.
+unreferenced. A `preserve-as-sic-in-quotes` orphan, by contrast, is
+never left in place: Source-Form Notes carries no orphans. An
+incidental source typo never quoted → drop the entry; a deliberately-
+cataloged source/name variant (e.g. how auto-captions mangle a name,
+kept for identity resolution) → reclassify `resolution:
+off-node-variant`, which renders in the node's `## Name Variants`
+section instead. See `meta/conventions.md` "Off-node variants".
 
 Usage:
     coverage-suggest.py meta/research/{slug}.yaml
@@ -513,7 +517,8 @@ def main():
         print("  - Capitalized term is a named entity? → add a [`/path`] body wrap")
         print("  - Ungrounded source-form note? → if it's an incidental source")
         print("    typo in unquoted body text, drop the naming_quirks entry;")
-        print("    if it's a deliberate not-on-node variant, leave it (judge)")
+        print("    if it's a deliberate not-on-node variant, reclassify it")
+        print("    resolution: off-node-variant (renders in ## Name Variants)")
         print("  - Boilerplate / navigation / tangential? → ignore (no action needed)")
         print()
         print("[¶~N] indices are paragraph-numbers in the EXTRACTED scratch text")
