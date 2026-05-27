@@ -202,23 +202,3 @@ naming_quirks:
   location: lines 68, 78
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
-rumors:
-- id: r1
-  added_date: '2026-04-19'
-  claim: The pilot who took the approximately 90 second targeting pod video was Chad Underwood
-  status: not-primary-source-established
-  observed_sources:
-  - New York Magazine interview with Chad Underwood (2019)
-  - Multiple secondary-source accounts
-- id: r2
-  added_date: '2026-04-19'
-  claim: The encounter took place off the coast of Southern California
-  status: not-primary-source-established
-  observed_sources:
-  - Multiple secondary-source accounts
-- id: r3
-  added_date: '2026-04-19'
-  claim: The encounter occurred on November 14, 2004
-  status: not-primary-source-established
-  observed_sources:
-  - Multiple secondary-source accounts

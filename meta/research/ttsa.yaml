@@ -655,22 +655,6 @@ naming_quirks:
   location: SEC 1-A filing, directors section
   source_path: government/sec-ttsa-1a-partii-20170710.html
   resolution: use-canonical
-rumors:
-- id: r1
-  added_date: '2026-04-22'
-  claim: TTSA possesses or possessed physical debris from an off-world crashed spacecraft recovered in 1947 (widely attributed to the Roswell incident).
-  status: primary-source-disputed
-  observed_sources:
-  - DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified)
-  - Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024)
-  - Public discourse around the TTSA-DEVCOM CRADA material
-- id: r2
-  added_date: '2026-04-22'
-  claim: Retired Lt. Gen. William N. McCasland personally facilitated TTSA's founding-era advisory team and had insider knowledge of recovered UAP material at Wright-Patterson Air Force Base.
-  status: not-primary-source-established
-  observed_sources:
-  - DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails #3099)
-  - Public discourse about the TTSA-McCasland relationship
 timeline:
 - id: tl1
   category: founding

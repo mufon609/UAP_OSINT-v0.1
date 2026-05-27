@@ -250,7 +250,7 @@ quotes:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2002 talk abstract'
   context: 'Russell Targ, IRVA 2002 talk abstract "The Real ''Real X-Files'': Remote viewing at Stanford Research Institute" (archived on the IRVA speaker biography page)'
-  significance: 'Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage graduates the earlier rumor r2 (Price/Swann as foundational SRI subjects) by anchoring both names to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).'
+  significance: 'Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).'
 
 - id: q18
   added_date: '2026-05-15'
@@ -413,7 +413,7 @@ quotes:
     location: '1977 entry (rename)'
   context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1977'
-  significance: 'SRI''s own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and graduates rumor r1 (1977 rename date previously not-primary-source-established). The full year-only date is attested; specific within-1977 date not attested.'
+  significance: 'SRI''s own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and supplies a primary source for the 1977 rename date. The full year-only date is attested; specific within-1977 date not attested.'
 
 - id: q30
   added_date: '2026-05-15'
@@ -446,7 +446,7 @@ quotes:
     location: '1969 entry (ARPANET)'
   context: 'SRI International''s 2004-era ''History of SRI International, 1960s'' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1969'
-  significance: 'SRI''s own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors prior rumor r3 (ARPANET) at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.'
+  significance: 'SRI''s own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI''s ARPANET role at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.'
 
 - id: q33
   added_date: '2026-05-15'
@@ -774,7 +774,7 @@ timeline:
   added_date: '2026-05-15'
   date: '1960s'
   category: innovation
-  event: 'ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI''s ARPANET role (graduates rumor r3 partially — body-text attestation now in place from sri.com self-attestation).'
+  event: 'ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI''s ARPANET role (body-text attestation now in place from sri.com self-attestation).'
   source:
     path: news/sri-international-timeline-of-innovation-page2-20260515.html
     location: '1960s entries section'
@@ -1250,6 +1250,3 @@ org_relationships:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 10, ¶3'
-
-rumors: []
-

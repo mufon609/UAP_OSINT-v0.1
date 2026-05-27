@@ -107,7 +107,6 @@ CHECK_PHASE = {
     "location_relationships": "link",
     "media_versioning": "link",
     "naming_quirks": "link",
-    "rumors": "link",
     "cross_refs": "link",
     "cited_findings": "link",
     "contradictions": "link",
@@ -151,7 +150,7 @@ PHASE_DESC = {
     "archive": "manifest integrity + primary_sources + doc_form_archival_status",
     "extract": "verbatim quotes / speakers — the one quote boundary",
     "organize": "free-prose synthesis entry-shape",
-    "link": "cross-reference surfaces + naming_quirks / rumors / prose_drift",
+    "link": "cross-reference surfaces + naming_quirks / prose_drift",
     "render": "render-time node structure + the cross-layer checks (coverage / boundary / description-drift)",
 }
 

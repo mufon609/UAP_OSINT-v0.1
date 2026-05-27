@@ -960,7 +960,7 @@ flagged token drives to one of two outcomes:
 
 - The prose is rewritten to use source vocabulary exactly, OR
 - The source-vs-prose variance is captured as structured evidentiary
-  data (a `naming_quirks` entry, a `rumors[]` entry, a `timeline[]`
+  data (a `naming_quirks` entry, a `timeline[]`
   row, a `quotes[]` entry — pick the surface that carries the
   variance's evidentiary meaning).
 
@@ -1019,8 +1019,7 @@ There is no "documented residual" exemption: a flagged token cannot
 remain on the artifact. It is resolved at the root — reworded, or
 relocated to a structured evidentiary field whose own source
 attribution carries the variance (a `naming_quirks` entry for a
-source-form vs canonical-form name, a `rumors[]` entry for an
-uncorroborated claim, and so on). A token that is absent only because
+source-form vs canonical-form name, and so on). A token that is absent only because
 of an extraction artifact (e.g. an HTML element-boundary concatenation,
 or a PDF page-number footer/header wedged into a page-spanning quote) is
 fixed at the extraction layer, never accepted as a standing error.
@@ -1069,7 +1068,7 @@ Templates and prompts do not impose count targets on artifact content.
 This applies uniformly to two surfaces:
 
 - **Entry lists.** `quotes`, `naming_quirks`,
-  `rumors`, `affiliations`, `relationships`, `corroboration_items`,
+  `affiliations`, `relationships`, `corroboration_items`,
   `program_involvement`, `publication_record`, `vouching_chain`,
   `participants`, `witnesses_testimony`, `timeline`, `key_personnel`,
   `org_relationships`, `contracts`, `media_versioning`, and any
@@ -1510,55 +1509,15 @@ documented separately.
 
 ---
 
-## Rumors — circulating claims without primary-source backing
-
-Person / organization / event / location artifacts carry an optional
-`rumors[]` section recording widely-circulated public-record claims
-the repository has positioned on but not yet anchored to a verbatim
-primary-source quote. Two statuses, two reader-visible render
-surfaces:
-
-- `not-primary-source-established` — the claim circulates in public
-  discourse (Wikipedia, third-party biographies, news coverage,
-  organizational PR) but no primary attestation has been archived in
-  this repository. Renders as a `## Public-Record Claims Without
-  Primary Source` section. Reader sees both the claim and the
-  repository's stance: "we know this circulates; we haven't sourced
-  it." Investigator note in the entry captures what would graduate
-  the rumor to a quote (e.g., "when the IRVA bio is re-archived from
-  Wayback, graduate r3").
-
-- `primary-source-disputed` — primary sources in the archive
-  actively refute the claim. Renders as a `## Primary-Source
-  Contradictions` section. The contradiction itself is the
-  evidentiary finding; the note field carries the refutation text.
-
-Both surfaces serve dual purposes — fabrication-prevention for future
-contributor sessions ("we already considered this; don't re-introduce
-it without a source") and reader-visible transparency ("here's
-what's circulating and how we evaluated it"). When a primary source
-eventually anchors a `not-primary-source-established` rumor, graduate
-it to a `quotes[]` entry citing the new source and delete the rumor
-entry — `git log --follow` preserves the rumor history.
-
-Rumors are NOT a third evidentiary tier. The Confirmed / Flagged
-binary still applies to the structured-table content of the node;
-rumors are a separate catalogue of circulating-but-unanchored
-claims, distinct from both confirmed facts and structured-Flagged
-secondary-source-only entries.
-
----
-
 ## Comparability standard — same source-anchored treatment across a family
 
 Two nodes of the same kind get built in different sessions by different
 workers, and a source-anchored section one of them carries can quietly go
 missing on the other — not because the second node's sources lack the material,
-but because no one checked. `/organizations/ipmo` carries a
-`primary-source-disputed` rumor and so renders a `## Primary-Source
-Contradictions` section; `/organizations/aaro`, a peer `gov` organization with
-its own contested public claims, does not — and nothing in the build or audit
-flow asked whether it should. That gap is the failure this standard closes.
+but because no one checked. One member of a family may carry a `## Source-Form
+Notes` section its sources support while a peer that should be checked for the
+same class of material never was — and nothing in the build or audit flow asked
+whether it should. That gap is the failure this standard closes.
 
 **The principle.** Members of a comparable node family receive the same
 *source-anchored treatment*. When one member carries a source-anchored optional
@@ -1566,9 +1525,8 @@ section or dimension, every peer is obliged to be checked — at build time and 
 audit time — for the same class of material against its own archived sources.
 The standard governs the *checking*, never the *output*: presence stays
 content-driven. A peer emits the section if and only if its sources support it.
-A `gov` organization with no archived primary source refuting a circulating
-claim correctly carries no `## Primary-Source Contradictions` section, and that
-is not a defect.
+A node whose sources attest no non-canonical name form correctly carries no
+`## Source-Form Notes` section, and that is not a defect.
 
 **Family axes.** "Comparable" means same `type`, and within type the same
 `archetype` (people) or `kind` (organizations, documents, events) — the grouping
@@ -1582,8 +1540,6 @@ is the evidentiary handling of source material, which surfaces as the optional
 sections rendered by `scripts/build/renderers/_universal.py` plus the document
 `cited_works` dimension:
 
-- `## Primary-Source Contradictions` (`rumors[].status: primary-source-disputed`)
-- `## Public-Record Claims Without Primary Source` (`rumors[].status: not-primary-source-established`)
 - `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
 - `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
 - `## References` (document `cited_works[]`)

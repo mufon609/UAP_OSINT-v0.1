@@ -152,7 +152,7 @@ quotes:
     location: '¶4'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation (q2) of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter). Supersedes rumor r3 (1997 retirement was previously not-primary-source-established); r3 deleted on this audit pass.'
+  significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation (q2) of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter).'
 
 - id: q9
   claim_group: "SRI Psychic-Research Cofounder Role"
@@ -459,24 +459,6 @@ naming_quirks:
   location: '¶3'
   source_path: news/irva-targ-russell-wayback-20250123.html
   resolution: disputed
-
-rumors:
-- id: r1
-  added_date: '2026-05-15'
-  claim: 'Russell Targ was born April 11, 1934 in Chicago, Illinois.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'Wikipedia (Russell Targ article)'
-  - 'IRVA speaker biography page at irva.org/speaker/targ-russell (currently HTTP 404; the Internet Archive Wayback Machine retains snapshots but retrieval is blocked from this toolkit environment per sources/manifest.yaml manifest note)'
-
-- id: r2
-  added_date: '2026-05-15'
-  claim: 'Targ worked at Sperry Gyroscope (1956-1958), Technical Research Group (late 1950s), and Sylvania Electronic Defense Laboratories (1960s) prior to joining Stanford Research Institute around 1972.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'Wikipedia (Russell Targ article)'
-  - 'IRVA speaker biography page (currently 404)'
-  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (named in the espresearch.com book catalogue but the book itself is not archived in this repository)'
 
 timeline:
 - id: t1
@@ -810,5 +792,3 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
-
-

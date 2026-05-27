@@ -98,7 +98,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors prior rumor r3 (ARPANET) at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.
+### SRI's own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI's ARPANET role at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.
 
 > 1969: SRI receives the first login on the ARPANET, the world's first computer network with flexible routing, and the predecessor to today's Internet.
 
@@ -230,7 +230,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and graduates rumor r1 (1977 rename date previously not-primary-source-established). The full year-only date is attested; specific within-1977 date not attested.
+### SRI's own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and supplies a primary source for the 1977 rename date. The full year-only date is attested; specific within-1977 date not attested.
 
 > 1977: Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change.
 
@@ -530,7 +530,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage graduates the earlier rumor r2 (Price/Swann as foundational SRI subjects) by anchoring both names to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).
+### Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).
 
 > At Stanford Research Institute (SRI), in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory. The following year, retired police commissioner, Pat Price showed us how to do this with great reliability and accuracy. With these data, and the education provided by Pat and Ingo, we were able to initiate a twenty-million dollar program in research and applications of remote viewing that lasted more than twenty years – a paranormal feat in itself.
 
@@ -634,7 +634,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | 1949-03 | IRS grants 501(c)(3) tax-exempt status to Stanford Research Institute per ProPublica Nonprofit Explorer (EIN 94-1160950). | governance | news/propublica-sri-international-941160950-20260515.html |  |
 | 1960s | Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2 (one of nine IEEE Milestones cohort per q23). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1960s | The computer mouse and interactive computing — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
-| 1960s | ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI's ARPANET role (graduates rumor r3 partially — body-text attestation now in place from sri.com self-attestation). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
+| 1960s | ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI's ARPANET role (body-text attestation now in place from sri.com self-attestation). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1968 | Douglas Engelbart [`/people/douglas-engelbart`] and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco — the "Mother of All Demos". | innovation | news/sri-com-about-history-1960s-wayback-2004.html |  |
 | 1968 | Charles A. Anderson [`/people/charles-a-anderson`] becomes SRI's president. | governance | news/sri-com-about-history-1960s-wayback-2004.html |  |
 | 1969 | SRI receives the first login on the ARPANET [`/organizations/arpanet`] — the world's first computer network with flexible routing, and the predecessor to today's Internet. | innovation | news/sri-com-about-history-1960s-wayback-2004.html |  |

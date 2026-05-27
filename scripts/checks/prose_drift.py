@@ -12,7 +12,7 @@ appear in the referenced primary-source text:
     prose carries no licence to introduce vocabulary the cited sources
     don't attest. Resolution is to rewrite to source vocabulary or
     relocate the variance to a structured evidentiary field
-    (naming_quirks, rumors, timeline, quotes) — never a standing
+    (naming_quirks, timeline, quotes) — never a standing
     residual. See conventions.md "Prose-drift discipline on synthesis
     surfaces".
 

@@ -465,5 +465,3 @@ naming_quirks:
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
   resolution: off-node-variant
-
-rumors: []

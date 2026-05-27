@@ -351,34 +351,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ---
 
-## Primary-Source Contradictions
-
-Widely-circulated secondary-source claims contradicted by primary-source evidence.
-
-### "The ranch is approximately 512 acres"
-
-**Circulates in:** Wikipedia; history.co.uk; Vice 2020; most post-2005 news sources
-
----
-
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "A bulletproof wolf-like creature was shot on the ranch during the Sherman era"
-
-**Circulates in:** Hunt for the Skinwalker (2005) popular lore; various paranormal-genre retellings
-
-### "The ranch is the site of interdimensional portals / gateways"
-
-**Circulates in:** Gary Hart statements quoted in Deseret News October 1996; NIDS-era and post-NIDS paranormal-genre coverage
-
-### "The Skinwalker cryptid creature has been observed on the property"
-
-**Circulates in:** Hunt for the Skinwalker (2005); The Secret of Skinwalker Ranch (History Channel, 2020-)
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

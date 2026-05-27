@@ -1120,7 +1120,7 @@ def body_outside_quirk_tables(md_text):
 #       triggering as drift across N artifacts").
 # Adding a content word here to silence false-positive warnings is the
 # wrong fix — rewrite the prose to use source vocabulary instead, or
-# capture the variance as evidentiary data (naming_quirks / rumors /
+# capture the variance as evidentiary data (naming_quirks /
 # a new quote).
 # ---------------------------------------------------------------------------
 

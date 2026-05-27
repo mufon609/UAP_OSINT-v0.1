@@ -890,33 +890,3 @@ naming_quirks:
   location: "¶2 (biography page; in re Geller's December 20, 1946 birthplace attestation)"
   source_path: news/urigeller-com-biography-20260516.html
   resolution: preserve-as-sic-in-quotes
-
-rumors:
-
-- id: r1
-  added_date: '2026-05-16'
-  claim: 'Geller''s tenure at the Stanford Research Institute spans two separate visits — a five-week period in late 1972 and an eight-day visit in August 1973 — per Puthoff-Targ''s own SRI-internal daily log "The Record" (not archived in this repository). Russell Targ''s 2007 retrospective comment in the Brendan Burton article of "six weeks in 1973" may collapse the two visits into one period.'
-  status: not-primary-source-established
-  observed_sources:
-  - Puthoff-Targ "The Record" daily log — SRI-internal primary source, not currently archived in this repository
-  - Puthoff-Targ SRI film narration (published with consent of the SRI researchers; surfaces the late-1972 visit predating the film's March 1973 Columbia University screening)
-  - urigeller.com/project-stargate-the-cias-human-experiments-with-mind-control/ (third-party syndicated article on Geller's site; not in the archived source set for this node; carries the "eight days in August 1973" framing)
-  - Multiple public-record secondary sources (Wikipedia, Project Stargate biographies, Geller's own books)
-
-- id: r2
-  added_date: '2026-05-16'
-  claim: 'A retired Israeli air force officer eyewitness validated Geller''s age-four sphere-of-light encounter in a garden near his house, decades after the event.'
-  status: not-primary-source-established
-  observed_sources:
-  - urigeller.com/uri-gellers-biography/ ¶2 (the claim itself, attested by Geller's biography)
-
-- id: r4
-  added_date: '2026-05-16'
-  claim: 'The Uri Geller Museum at 7 Mazal Arieh Street, Old Jaffa, opened in 2021 (not 2016, which is Geller''s return-to-Israel year).'
-  status: not-primary-source-established
-  observed_sources:
-  - Wikipedia (Uri Geller Museum entry)
-  - urigellermuseum.com (the museum's own website)
-  - JNS (Jewish News Syndicate) November 2021 coverage of the museum opening
-  - Jewish Virtual Library
-

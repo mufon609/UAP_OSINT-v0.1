@@ -5,9 +5,6 @@ Scaffold an empty research artifact for a target node.
 Produces meta/research/{slug}.yaml with:
   - required top-level keys populated with defaults
   - empty lists for each content section
-  - `rumors` section present only when target_node type ∈
-    {person, organization, event, location} (per
-    schema-research-artifact.yaml::conditional_keys)
 
 Usage:
   research-scaffold.py --target {type}/{slug}

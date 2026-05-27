@@ -21,8 +21,6 @@ from ._universal import (
     render_description,
     render_name_variants,
     render_preserved_disagreements,
-    render_primary_source_contradictions,
-    render_public_record_claims,
     render_source_form_notes,
     render_timeline,
 )
@@ -39,8 +37,6 @@ EMITS = frozenset({
     "Key Testimony",          # hearing kind
     "Witnesses & Testimony",  # hearing kind
     "Corroboration",          # encounter kind
-    "Primary-Source Contradictions",
-    "Public-Record Claims Without Primary Source",
     "Source-Form Notes",
     "Preserved Disagreements",
     "Name Variants",
@@ -276,8 +272,6 @@ def render_body_event(artifact, kind):
     else:
         sys.exit(f"ERROR: render_body_event: unknown event kind {kind!r}")
     sections.extend([
-        render_primary_source_contradictions(artifact),
-        render_public_record_claims(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
         render_name_variants(artifact),

@@ -333,20 +333,6 @@ Targ's 2007 retrospective comment in the Brendan Burton piece on urigeller.com â
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "Russell Targ was born April 11, 1934 in Chicago, Illinois."
-
-**Circulates in:** Wikipedia (Russell Targ article); IRVA speaker biography page at irva.org/speaker/targ-russell (currently HTTP 404; the Internet Archive Wayback Machine retains snapshots but retrieval is blocked from this toolkit environment per sources/manifest.yaml manifest note)
-
-### "Targ worked at Sperry Gyroscope (1956-1958), Technical Research Group (late 1950s), and Sylvania Electronic Defense Laboratories (1960s) prior to joining Stanford Research Institute around 1972."
-
-**Circulates in:** Wikipedia (Russell Targ article); IRVA speaker biography page (currently 404); Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (named in the espresearch.com book catalogue but the book itself is not archived in this repository)
-
----
-
 ## Source-Form Notes
 
 Source-form preservations â€” verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

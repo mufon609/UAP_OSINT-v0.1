@@ -274,37 +274,6 @@ naming_quirks:
   location: Frank Warren 2020 article
   source_path: news/theufochronicles-myers-family-20200412.html
   resolution: use-canonical
-rumors:
-- id: r1
-  added_date: '2026-04-20'
-  claim: The ranch is approximately 512 acres
-  status: primary-source-disputed
-  observed_sources:
-  - Wikipedia
-  - history.co.uk
-  - Vice 2020
-  - most post-2005 news sources
-- id: r2
-  added_date: '2026-04-20'
-  claim: A bulletproof wolf-like creature was shot on the ranch during the Sherman era
-  status: not-primary-source-established
-  observed_sources:
-  - Hunt for the Skinwalker (2005) popular lore
-  - various paranormal-genre retellings
-- id: r3
-  added_date: '2026-04-20'
-  claim: The ranch is the site of interdimensional portals / gateways
-  status: not-primary-source-established
-  observed_sources:
-  - Gary Hart statements quoted in Deseret News October 1996
-  - NIDS-era and post-NIDS paranormal-genre coverage
-- id: r4
-  added_date: '2026-04-20'
-  claim: The Skinwalker cryptid creature has been observed on the property
-  status: not-primary-source-established
-  observed_sources:
-  - Hunt for the Skinwalker (2005)
-  - The Secret of Skinwalker Ranch (History Channel, 2020-)
 ownership_timeline:
 - id: ot1
   added_date: '2026-04-20'

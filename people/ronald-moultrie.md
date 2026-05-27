@@ -290,16 +290,6 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "Moultrie was 'removed' from his official biography after the Battelle Advisory Board affiliation became publicly known via the Sharp tweet (anonymous-attribution claim circulated in UAP-disclosure online discussion forums and the IBTimes UK 'Gerb' January 2026 piece)"
-
-**Circulates in:** IBTimes UK "Gerb" piece (January 2026); X / Twitter UAP-disclosure discussion threads
-
----
-
 ## Associated Nodes
 
 ### People

@@ -166,13 +166,6 @@ quotes:
   observation_type: relayed
   statement_date: '2026-02-25'
 naming_quirks: []
-rumors:
-- id: r1
-  added_date: '2026-05-06'
-  claim: 'The Sue Gough who serves as Department of Defense Public Affairs spokesperson with the AARO portfolio is the same Susan I. Gough who authored the April 7, 2003 U.S. Army War College Strategy Research Project paper "The Evolution of Strategic Influence" on perception management and strategic communication doctrine.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'UAP-disclosure online discussion linking Gough''s 2003 USAWC perception-management paper to her later DoD/AARO UAP spokesperson role'
 timeline:
 - id: t1
   added_date: '2026-05-06'

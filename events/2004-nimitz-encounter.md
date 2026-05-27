@@ -70,24 +70,6 @@ As the flight turned back towards the CAP point, the air controller let them kno
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "The pilot who took the approximately 90 second targeting pod video was Chad Underwood"
-
-**Circulates in:** New York Magazine interview with Chad Underwood (2019); Multiple secondary-source accounts
-
-### "The encounter took place off the coast of Southern California"
-
-**Circulates in:** Multiple secondary-source accounts
-
-### "The encounter occurred on November 14, 2004"
-
-**Circulates in:** Multiple secondary-source accounts
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

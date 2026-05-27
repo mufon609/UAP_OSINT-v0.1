@@ -1658,7 +1658,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burchett, p. 34
-  significance: KEY — Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s. Primary-source attestation for rumor r2 (NHI terminology) and for the pre-Roswell start date.
+  significance: KEY — Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s. Primary-source attestation for the "nonhuman" terminology preference and for the pre-Roswell start date.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -1831,9 +1831,9 @@ quotes:
     location: Q&A with Rep. Burlison, p. 40
   significance: 'Sworn admission — Grusch has NOT personally seen any
 
-    non-human biologics/bodies. Critical epistemic boundary for r1
+    non-human biologics/bodies. Critical epistemic boundary for the
 
-    rumor (non-human biologics): primary-source statement establishes
+    non-human-biologics claim: primary-source statement establishes
 
     Grusch''s biologics claim is relayed, not firsthand.
 
@@ -1938,7 +1938,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 44
-  significance: LANDMARK — First sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries." Primary-source attestation for r1 rumor (non-human biologics claim).
+  significance: LANDMARK — First sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries." Primary-source attestation for the non-human-biologics claim.
   context: Oral testimony Q&A (response to "do we have the bodies of the pilots who piloted this craft?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -1950,7 +1950,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 44
-  significance: LANDMARK — Sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders. Primary-source attestation for r1 rumor (non-human biologics) AND r2 (NHI terminology). Note carefully relayed framing — "assessment of people with direct knowledge."
+  significance: LANDMARK — Sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders. Primary-source attestation for the non-human-biologics claim AND the "nonhuman" terminology preference. Note carefully relayed framing — "assessment of people with direct knowledge."
   context: Oral testimony Q&A (response to "were they human or nonhuman biologics?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -2152,7 +2152,7 @@ quotes:
   source:
     path: news/thedebrief-grusch-2023.html
     location: ¶7 (Kean/Blumenthal quote attribution of Grusch)
-  significance: KEY — Grusch's published characterization of the retrieved material's origin as "non-human intelligence, whether extraterrestrial or unknown origin" with the evidentiary basis cited (vehicle morphologies, material science testing, atomic arrangements, radiological signatures). Primary-source attestation for r2 rumor (NHI terminology) — this is Grusch's published terminology preference predating his sworn testimony.
+  significance: KEY — Grusch's published characterization of the retrieved material's origin as "non-human intelligence, whether extraterrestrial or unknown origin" with the evidentiary basis cited (vehicle morphologies, material science testing, atomic arrangements, radiological signatures). Primary-source attestation for the "nonhuman" terminology preference — this is Grusch's published terminology preference predating his sworn testimony.
   context: The Debrief article by Kean & Blumenthal, published 2023-06-05
   observation_type: relayed
   category: filed-claim
@@ -2561,4 +2561,3 @@ naming_quirks:
   location: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
   source_path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
-rumors: []

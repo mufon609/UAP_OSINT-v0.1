@@ -23,8 +23,6 @@ behind each node. They capture:
 - Entities referenced (person, org, event, doc, transcript, media,
   location, finding)
 - Naming quirks in the sources (typos, alt spellings)
-- Rumors (on person / org / event / location artifacts) — widely-
-  reported claims lacking primary-source support here
 - Per-type structured sections (timeline, affiliations, relationships,
   corroboration_items, program_involvement, vouching_chain, etc.)
 

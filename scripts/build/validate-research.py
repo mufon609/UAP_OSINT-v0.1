@@ -30,7 +30,7 @@ Per-artifact checks (after parse + ResearchContext construction):
                                          side; the rendered node inherits
                                          the verified quote text from
                                          the artifact by construction.
-  - rumors, timeline                  — type-conditional
+  - timeline                          — type-conditional
   - corroboration_items, program_involvement, publication_record,
     vouching_chain                    — archetype/kind-conditional
   - affiliations, relationships       — person-conditional
@@ -132,7 +132,6 @@ from checks import quote_location_page as ck_quote_location_page
 from checks import quotes as ck_quotes
 from checks import relationships as ck_relationships
 from checks import resolution_history as ck_resolution_history
-from checks import rumors as ck_rumors
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
@@ -244,7 +243,6 @@ _ARTIFACT_CHECKS = [
     ck_pdf_page_count,     # declared pages == PDF physical pages; no p.N over-range
     ck_naming_quirks,
     # Type-conditional entry-list checks
-    ck_rumors,
     ck_timeline,
     ck_cited_works,  # document-conditional; verbatim source-fidelity on references
     ck_cited_works_uncaptured,  # document-conditional; errors when an empty cited_works leaves a source reference list uncaptured

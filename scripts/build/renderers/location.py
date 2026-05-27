@@ -22,8 +22,6 @@ from ._universal import (
     render_description,
     render_name_variants,
     render_preserved_disagreements,
-    render_primary_source_contradictions,
-    render_public_record_claims,
     render_source_form_notes,
 )
 
@@ -38,8 +36,6 @@ EMITS = frozenset({
     "{topic_display_name}-Scope Activity",
     "Key Passages",
     "Relationships",
-    "Primary-Source Contradictions",
-    "Public-Record Claims Without Primary Source",
     "Source-Form Notes",
     "Preserved Disagreements",
     "Name Variants",
@@ -256,8 +252,6 @@ def render_body_location(artifact, fm):
         render_top_scope_activity(artifact),
         render_location_key_passages(artifact),
         render_location_relationships(artifact),
-        render_primary_source_contradictions(artifact),
-        render_public_record_claims(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
         render_name_variants(artifact),

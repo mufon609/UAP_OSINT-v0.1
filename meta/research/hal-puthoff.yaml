@@ -243,8 +243,6 @@ naming_quirks:
   source_path: news/irva-targ-russell-wayback-20250123.html
   resolution: disputed
 
-rumors: []
-
 timeline:
 - id: t1
   added_date: '2026-05-16'

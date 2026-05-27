@@ -745,7 +745,6 @@ naming_quirks:
     location: 'AARO contract HQ003422C0094 (FOIA 23-F-0905 doc-1 release) — Section B Block 15A Sancorp office line beneath company name; Section F ship-to addresses; Section G Technical POC / COR field; doc_2 email To-line recipient'
     source_path: government/foia-23-f-0905-doc-1-released.pdf
     resolution: preserve-as-sic-in-quotes
-rumors: []
 timeline:
   - id: t1
     added_date: '2026-04-30'

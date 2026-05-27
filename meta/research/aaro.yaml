@@ -1477,17 +1477,3 @@ naming_quirks:
   location: SASC stenographic transcript (Kosloski oral testimony) vs. AARO unclassified slide deck
   source_path: government/armed-services-senate-gov-aaro-case-slides-20241119.pdf
   resolution: disputed
-rumors:
-- id: r1
-  added_date: '2026-04-20'
-  claim: Kirkpatrick's December 2023 departure was driven by conflict with Congressional whistleblower investigators and/or political pressure rather than voluntary retirement
-  status: not-primary-source-established
-  observed_sources:
-  - Circulating in public discourse attributed to unnamed sources and to commentary accompanying the November 2023 departure announcement
-- id: r2
-  added_date: '2026-04-20'
-  claim: AARO's investigatory scope was narrowed or constrained by DoD leadership to exclude access to classified programs that would have contained evidence of UAP reverse-engineering activities
-  status: not-primary-source-established
-  observed_sources:
-  - Widely referenced in public UAP discourse and in commentary on the HRR Vol I findings
-  - Explicit claims attributed to witnesses at 2023-07-26 House Oversight hearing and subsequent testimony that is archived in this repository

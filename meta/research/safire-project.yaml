@@ -550,7 +550,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html (multiple paragraphs); sources/news/safireproject-genesis-snapshot.html'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-rumors: []
 timeline:
 - id: t12
   added_date: '2026-05-07'

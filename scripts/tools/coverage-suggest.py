@@ -197,18 +197,6 @@ def collect_artifact_text(data):
             if isinstance(val, str):
                 parts.append(val)
 
-    # Rumors
-    for r in data.get("rumors") or []:
-        if not isinstance(r, dict):
-            continue
-        for key in ("claim", "note"):
-            val = r.get(key)
-            if isinstance(val, str):
-                parts.append(val)
-        for o in r.get("observed_sources") or []:
-            if isinstance(o, str):
-                parts.append(o)
-
     # Generic entry-list traversal for everything else — captures
     # affiliations / relationships / timeline / program_involvement /
     # ownership_timeline / top_scope_activity / location_relationships
@@ -218,7 +206,7 @@ def collect_artifact_text(data):
     # each shape. We just walk dict values recursively.
     handled_keys = {
         "id", "type", "target_node", "status", "primary_sources",
-        "quotes", "naming_quirks", "rumors",
+        "quotes", "naming_quirks",
         "description", "background", "top_relevance",
         "credibility_notes", "pattern_statement", "document_intrinsic",
         "context_extrinsic",

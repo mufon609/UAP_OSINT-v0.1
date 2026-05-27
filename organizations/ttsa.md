@@ -780,26 +780,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-## Primary-Source Contradictions
-
-Widely-circulated secondary-source claims contradicted by primary-source evidence.
-
-### "TTSA possesses or possessed physical debris from an off-world crashed spacecraft recovered in 1947 (widely attributed to the Roswell incident)."
-
-**Circulates in:** DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified); Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024); Public discourse around the TTSA-DEVCOM CRADA material
-
----
-
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "Retired Lt. Gen. William N. McCasland personally facilitated TTSA's founding-era advisory team and had insider knowledge of recovered UAP material at Wright-Patterson Air Force Base."
-
-**Circulates in:** DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails; Public discourse about the TTSA-McCasland relationship
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

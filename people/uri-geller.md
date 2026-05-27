@@ -330,24 +330,6 @@ Per biography ¶17, Uri provided a drawing for Michael Jackson ([`/people/michae
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "Geller's tenure at the Stanford Research Institute spans two separate visits — a five-week period in late 1972 and an eight-day visit in August 1973 — per Puthoff-Targ's own SRI-internal daily log "The Record" (not archived in this repository). Russell Targ's 2007 retrospective comment in the Brendan Burton article of "six weeks in 1973" may collapse the two visits into one period."
-
-**Circulates in:** Puthoff-Targ "The Record" daily log — SRI-internal primary source, not currently archived in this repository; Puthoff-Targ SRI film narration (published with consent of the SRI researchers; surfaces the late-1972 visit predating the film's March 1973 Columbia University screening); urigeller.com/project-stargate-the-cias-human-experiments-with-mind-control/ (third-party syndicated article on Geller's site; not in the archived source set for this node; carries the "eight days in August 1973" framing); Multiple public-record secondary sources (Wikipedia, Project Stargate biographies, Geller's own books)
-
-### "A retired Israeli air force officer eyewitness validated Geller's age-four sphere-of-light encounter in a garden near his house, decades after the event."
-
-**Circulates in:** urigeller.com/uri-gellers-biography/ ¶2 (the claim itself, attested by Geller's biography)
-
-### "The Uri Geller Museum at 7 Mazal Arieh Street, Old Jaffa, opened in 2021 (not 2016, which is Geller's return-to-Israel year)."
-
-**Circulates in:** Wikipedia (Uri Geller Museum entry); urigellermuseum.com (the museum's own website); JNS (Jewish News Syndicate) November 2021 coverage of the museum opening; Jewish Virtual Library
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

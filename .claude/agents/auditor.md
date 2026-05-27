@@ -26,7 +26,7 @@ Audit goals:
 3. **Prose-drift** — re-run `validate-research.py`; the free-prose synthesis
    fields + `vouching_chain.attestation` are a zero-ungrounded-token hard gate.
    Each unmatched token resolves to source-matched prose OR is captured as
-   structured evidentiary data (naming quirk, rumor, timeline entry, quote).
+   structured evidentiary data (naming quirk, timeline entry, quote).
 4. **Contradiction markers** — `❌ Contradiction` where positions contradict
    and at least one side has primary-source evidence; `⚠ Disputed — unknown`
    only where neither side does. Reclassify if wrong.
@@ -54,10 +54,7 @@ Audit goals:
    "Comparability standard", compare the target against its family peers —
    same `type`, and within type the same `archetype` (people) or `kind`
    (organizations / documents / events). For each **source-anchored** optional
-   section a peer populates that the target lacks — `## Primary-Source
-   Contradictions` (`rumors[].status: primary-source-disputed`),
-   `## Public-Record Claims Without Primary Source`
-   (`not-primary-source-established`), `## Source-Form Notes` /
+   section a peer populates that the target lacks — `## Source-Form Notes` /
    `## Preserved Disagreements` (`naming_quirks[].resolution`), `## References`
    (document `cited_works[]`) — read the target's OWN archived sources and ask
    whether the same class of material is present-but-uncaptured. Read the peer

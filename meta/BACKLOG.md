@@ -331,28 +331,6 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Apply the family-comparability audit to AARO's contested claims
-
-The cross-node comparability mechanism now exists — the "Comparability standard"
-in `meta/conventions.md` plus the recommend-only family-comparability goal in the
-auditor (`.claude/agents/auditor.md` goal 8, surfaced in `/audit`). Remaining is
-the one concrete observed asymmetry: `/organizations/aaro` carries no
-`## Primary-Source Contradictions` section while peer `gov` org
-`/organizations/ipmo` does. Run `/audit` on `aaro` and apply goal 8 — does AARO
-have a circulating public claim that an archived primary source actively refutes
-(warranting a `rumors[].status: primary-source-disputed` entry)?
-`/findings/aaro-denial-action-mismatch` is a lead. A **source re-check, not a
-count match**: add an entry only if a source attests it; if none does, the
-absence is correct.
-
-(The Associated-Nodes-vs-Relationships observation was resolved as **by-design** —
-Associated Nodes is an unlabeled post-build navigation surface; relation type
-lives on the source entity's Relationships row. Duplicating it onto every
-backlink is redundancy, not discipline. No change.)
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may

@@ -342,20 +342,6 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "Arlo Solutions has a direct contract with the Influence and Perception Management Office (IPMO) — i.e., Arlo is an IPMO contractor in the same way Sancorp is the IPMO contractor under HQ003422C0064 / HQ003423C0061 / HQ003424C0046."
-
-**Circulates in:** Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
-
-### "Sancorp's resigned SASP staff officer key personnel ("X" in the GAO B-422985 decision) joined Arlo Solutions in February 2025 — i.e., Arlo poached the Sancorp incumbent who would have filled the SASP staff officer SME IV role, materially weakening Sancorp's protest position."
-
-**Circulates in:** GAO B-422985.4 / B-422985.5 decision (June 11, 2025) names Arlo as the intervenor whose request for dismissal cited X's resignation and new employment; Arlo's recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV positions — same level/role X had at Sancorp; Arlo's Greenhouse job board carries an "OUSW(I&S) SASP Incumbent" category placeholder, suggesting incumbent-staff-transfer mechanics
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

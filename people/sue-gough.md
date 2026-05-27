@@ -202,16 +202,6 @@ Her email signature in the FOIA case 24-F-0894 emails read Gough, Susan L (Sue) 
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "The Sue Gough who serves as Department of Defense Public Affairs spokesperson with the AARO portfolio is the same Susan I. Gough who authored the April 7, 2003 U.S. Army War College Strategy Research Project paper "The Evolution of Strategic Influence" on perception management and strategic communication doctrine."
-
-**Circulates in:** UAP-disclosure online discussion linking Gough's 2003 USAWC perception-management paper to her later DoD/AARO UAP spokesperson role
-
----
-
 ## Associated Nodes
 
 ### People

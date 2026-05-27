@@ -304,26 +304,6 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-## Primary-Source Contradictions
-
-Widely-circulated secondary-source claims contradicted by primary-source evidence.
-
-### "Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) was awarded the WHS contract HQ003423C0061 (Sancorp IPMO follow-on, signed May 25, 2023) to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO."
-
-**Circulates in:** SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (May 27, 2023) — description prose names Premier Enterprise Solutions, LLC as the awardee
-
----
-
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "IPMO is an institutional successor or continuation of the Office of Strategic Influence (OSI), the short-lived 2001-2002 DoD office shut down by SecDef Rumsfeld after public scrutiny."
-
-**Circulates in:** Klippenstein (The Intercept, May 17, 2023) — "Inside The Pentagon's New Perception Management Office"; Webb (MintPress News, June 29, 2023); Klarenberg (multiple outlets, 2023); Wikipedia "Influence and Perception Management Office" article
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
@@ -353,7 +333,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/le-oversight-compliance-directorate`]
 - [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
-- [`/organizations/premier-enterprise-solutions`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
 - [`/organizations/state-dept-gec`]

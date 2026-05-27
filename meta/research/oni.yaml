@@ -123,7 +123,6 @@ naming_quirks:
   location: '[5:32]'
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-rumors: []
 timeline:
 - id: t1
   added_date: '2026-05-05'

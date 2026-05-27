@@ -163,19 +163,13 @@ required_keys:
 # OR encounter-event). The any-of-list grammar handles both shapes
 # uniformly.
 conditional_keys:
-  rumors:
-    required_when_any_of:
-      - target_node_type_in: [person, organization, event, location]
-    # Captures widely-reported claims circulating in public discourse
-    # that lack primary-source support in this artifact
-    # (fabrication-prevention mechanism).
   cited_works:
     required_when_any_of:
       - target_node_type_in: [document]
     # Formal reference / citation list carried by the source document
     # (e.g. an AAWSAP DIRD's References section). Required-but-emptyable
     # on every document artifact, exactly like the other source-anchored
-    # optional sections (rumors, contradictions): the KEY is always
+    # optional section (contradictions): the KEY is always
     # present (empty list when the document has no reference list, or one
     # not yet captured); the `## References` SECTION renders only when
     # entries exist. Captures the authorship-network dimension — who the
@@ -363,7 +357,7 @@ conditional_keys:
     # Documented institutional UAP-scope activity at this location
     # (NIDS investigation, BAASS/AAWSAP contract work, Fugal-era
     # research, etc.). Scope is institutional — popular paranormal
-    # lore without primary-source backing belongs in `rumors`, not
+    # lore without primary-source backing is out of scope, not
     # here. Each entry: period_start, period_end (optional),
     # activity, actor_paths (optional list of /people|/organizations),
     # source. Renders as the `## {topic_display_name}-Scope Activity`
@@ -488,7 +482,7 @@ primary_sources_entry:
 
 # --- Entry shapes per top-level list section ---
 
-# Every entry across quotes, rumors, naming_quirks carries the
+# Every entry across quotes, naming_quirks carries the
 # lifecycle fields below.
 entry_lifecycle_fields:
   required: [id, added_date]
@@ -639,32 +633,6 @@ quote_source:
   #   passage; the renderer passes the string through verbatim and
   #   the quote-verbatim check substring-matches the extracted source
   #   text regardless.
-
-rumor_entry:
-  required: [claim, status]
-  optional: [observed_sources]
-  status_values: [not-primary-source-established, primary-source-disputed]
-  # claim: the circulating claim as prose
-  # status: not-primary-source-established | primary-source-disputed
-  #   Fabrication-prevention catalogue + reader-visible
-  #   transparency surface. Rumors are contributor-curated records
-  #   of widely-circulated claims so a future session doesn't
-  #   unconsciously recirculate them into node prose, AND so
-  #   readers landing on the node see the repository's stance on
-  #   each circulating claim rather than silent omission.
-  #   - not-primary-source-established: widely reported in public
-  #     discourse; no primary-source attestation archived in this
-  #     repository (yet). Renders as a `## Public-Record Claims
-  #     Without Primary Source` section on the node body. When a
-  #     primary source is eventually archived, graduate the rumor
-  #     to a quote / claim and delete the rumor entry.
-  #   - primary-source-disputed: primary sources actively refute
-  #     the claim. Renders as a `## Primary-Source Contradictions`
-  #     section on the node body — the contradiction itself is an
-  #     evidentiary finding investigators should see.
-  # observed_sources: list of descriptions — where the rumor
-  #   circulates. Renders as the "Circulates in:" line on both
-  #   render surfaces.
 
 timeline_entry:
   required: [date, event, source]
@@ -1171,7 +1139,6 @@ invariants:
   # the validator actually reads.
   - "research-artifact.status: status_values (active | archived)"
   - "quote_entry.observation_type: quote_entry.observation_type_values"
-  - "rumor_entry.status: rumor_entry.status_values"
   - "corroboration_entry.observation_type: corroboration_entry.observation_type_values"
   - "participant_entry.capacity: participant_entry.capacity_values"
   - "witnesses_testimony_entry.oath_status: witnesses_testimony_entry.oath_status_values"
@@ -1187,7 +1154,6 @@ invariants:
   - "cited_work_entry.citation_verbatim appears verbatim in the cited source — enforced by cited_works (OCR sic preserved, never corrected)"
 
   # Conditional sections
-  - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
   - "cited_works section present iff target_node type == document (empty list permitted; populated drives the References section)"
   - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
   - "corroboration_items section present iff target_node archetype == eyewitness"

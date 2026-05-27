@@ -57,8 +57,8 @@ status: {{status}}
      Populated from top_scope_activity[] in the research artifact;
      renderer sorts chronologically by period_start. Scope is
      institutional primary-source-attested activity — popular
-     paranormal lore without primary-source backing belongs in the
-     artifact's rumors[] list, not here. -->
+     paranormal lore without primary-source backing does not belong
+     here. -->
 
 | Period | Activity | Source |
 |---|---|---|

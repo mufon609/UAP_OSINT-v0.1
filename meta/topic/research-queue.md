@@ -34,8 +34,7 @@ Two backlogs live here, distinguished by origin:
 
 | Item | Source | Found In | Priority | Status |
 |---|---|---|---|---|
-| Puthoff–Targ "The Record" SRI daily log | SRI-internal daily log (location/archival TBD) — resolves the five-week-vs-eight-day SRI-tenure chronology | [`/people/uri-geller`] rumor r1 | Low | Pending |
-| Uri Geller Museum opening-date primary source | Old Jaffa museum opening date (currently secondary-only "2021") — would graduate rumor r4 and populate affiliation a9 `period_start` | [`/people/uri-geller`] rumor r4 / affiliation a9 | Low | Pending |
+| Uri Geller Museum opening-date primary source | Old Jaffa museum opening date (currently secondary-only "2021") — would populate affiliation a9 `period_start` | [`/people/uri-geller`] affiliation a9 | Low | Pending |
 | AARO→AIC budget-rebrand finding (Tier-3 finding-build; deferred — do not build without direction) | FY2024/2025/2026 OSD OP-5 submissions (archived): FY2024 named AARO, FY2025 first substituted "AIC", FY2026 retains it; no public DoD renaming announcement and aaro.mil remains active | note-residue audit (ousd-is entity layer must not carry the multi-year pattern) | Medium | Pending |
 
 ---

@@ -4,9 +4,9 @@ Present on location artifacts. Tracks documented institutional
 activity within the topic's scope at the location. The
 institutional-vs-popular distinction is load-bearing: only
 documented institutional activity belongs here; popular lore without
-primary-source backing goes in ``rumors``. The check itself enforces
-shape only; the distinction is contributor judgment at authoring
-time.
+primary-source backing is out of scope for this repository. The
+check itself enforces shape only; the distinction is contributor
+judgment at authoring time.
 
 Each entry: required {period_start, activity, source}, optional
 {period_end, actor_paths (list)}. ``actor_paths`` (when set)

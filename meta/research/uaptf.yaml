@@ -531,18 +531,3 @@ naming_quirks:
   location: UAPTF Charter package, NIA Director cross-service outreach memorandum
   source_path: government/blackvault-uaptf-charter-foia-20250422.pdf
   resolution: preserve-as-sic-in-quotes
-rumors:
-- id: r1
-  added_date: '2026-04-20'
-  claim: Karl Nell served as Army Director / Army liaison supporting the UAPTF from 2021 to 2022
-  status: not-primary-source-established
-  observed_sources:
-  - Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization)
-  - SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
-- id: r2
-  added_date: '2026-04-20'
-  claim: UAPTF was deliberately under-resourced and denied access to pre-existing compartmented UAP programs within the U.S. Government
-  status: not-primary-source-established
-  observed_sources:
-  - Grusch sworn testimony at 2023-07-26 House Oversight hearing (archived as /documents/written-testimony-grusch-2023) claims denial of access to a "multi-decade UAP crash retrieval and reverse engineering program"
-  - Widely circulating in UAP-related public discourse
