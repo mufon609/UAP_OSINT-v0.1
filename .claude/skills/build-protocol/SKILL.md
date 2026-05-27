@@ -141,9 +141,11 @@ needs — never a fresh scaffold. The shared rules:
 Two entry points share this contract:
 
 - **tightening loop** (auditor-triggered, adjacent node) — the audit flags
-  `adjacent_needs_update[]` with `skip_external: true` → re-enter at the
-  `extract` phase for the adjacent node (material already archived; no new URL,
-  no new bytes), rebuild, re-audit until no adjacent node flags.
+  `adjacent_needs_update[]` with `skip_external: true` → re-enter at the role the
+  change needs (the Worker for shape a — extract spans from the already-archived
+  scratch; the Builder for shape b — a stale derived field, no extraction), rebuild,
+  re-audit until no adjacent node flags. External + Archive are skipped (material
+  already archived; no new URL, no new bytes).
 - **`/augment`** (user-triggered, primary node) — a maintenance change to an
   existing node (add a recovered quote, re-source a dead citation, correct a
   data field), classified into the role subset above; the proactive counterpart

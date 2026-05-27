@@ -207,7 +207,7 @@ archetype: {{archetype}}
 <!-- Analytical paragraphs grounded in primary sources. For eyewitnesses,
      include an observational framing note. When a discrete finding
      spans 3+ entity nodes or otherwise meets the finding-node creation
-     threshold (see meta/schema.yaml::types.finding.creation_threshold),
+     threshold (see meta/conventions.md "Bright line — fact vs finding"),
      promote it to a finding node. -->
 
 ---

@@ -18,7 +18,7 @@ In order:
 
 1. `README.md` — what this repository is
 2. `meta/conventions.md` — evidentiary discipline and structural rationale
-3. `meta/schema.yaml` — machine-readable spec (types, kinds, archetypes, required sections, vocabularies)
+3. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
 4. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
 5. `meta/topic/research-queue.md` — current priority build queue
 
@@ -35,13 +35,15 @@ python3 scripts/build/validate.py            # node structure + verbatim quotes
 python3 scripts/build/validate-research.py    # artifact structure + prose-drift
 python3 scripts/build/review-coverage.py --all  # cross-layer coverage/boundary/description-drift
 python3 scripts/build/build-state.py --check  # this file's build-state block
-bash scripts/tests/pre-commit.sh             # full 12-gate chain; ALSO the blocking commit hook (un-bypassable by --no-verify)
+bash scripts/tests/pre-commit.sh             # full gate chain (subsumes the four above + more); ALSO the blocking commit hook (un-bypassable by --no-verify)
 ```
 
 Exit 0 on all = repo healthy. Any errors → fix first. Don't stop at
 `validate.py`: the artifact validator carries the prose-drift family and
-the coverage review carries the cross-layer checks, so a node-only pass
-can read clean while artifact-level warnings stand.
+the coverage review carries the cross-layer checks, and `pre-commit.sh`
+adds the `renderer-coverage.py` and `phase_routing_parity.py` gates a
+node-only pass never runs — so a node-only pass can read clean while
+artifact-level warnings stand.
 
 ---
 
@@ -233,6 +235,7 @@ landing rules.
 | `associate.py` | Regenerate `## Associated Nodes` sections from body links |
 | `build-state.py` | Refresh this file's build-state block |
 | `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `topology.md` |
+| `renderer-coverage.py` | Coverage gate — every schema required/optional/conditional section is renderer-producible (schema sections ⊆ renderer `EMITS`). A blocking gate in `pre-commit.sh`. |
 
 ### Tools — `scripts/tools/`
 

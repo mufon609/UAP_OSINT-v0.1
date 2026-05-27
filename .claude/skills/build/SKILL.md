@@ -28,6 +28,11 @@ build before doing anything.
 
 ## Sequence
 
+> The numbered **steps** below are the orchestrator's sequence; the six dispatched
+> **roles** (internal-investigator … auditor, numbered 1–6 in their agent
+> descriptions) map to steps 1–3 and 5–7 — scaffolding is step 4 / 4b, finalization
+> step 8. A cross-reference to "role N" means the role, not the step number.
+
 1. **`Agent(internal-investigator)`** with the target. Read its stub:
    `linked_nodes`, `reusable_sources`, `gaps`, `all_internal`.
    - **all-internal branch:** if `all_internal: true` / `gaps: []`, skip

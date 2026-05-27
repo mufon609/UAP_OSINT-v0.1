@@ -58,13 +58,12 @@ If you're doing anything related to this instance's topic, read
 
 | What | Where |
 |---|---|
-| Node structure spec | `meta/schema.yaml` |
+| Node structure spec | `meta/schema.yaml` (nodes) · `meta/schema-research-artifact.yaml` (research artifacts) |
 | Epistemic standard (why the rules exist) | `meta/conventions.md` |
 | Contributor working knowledge (cross-cutting behavioral patterns) | `meta/memory.md` |
 | Node templates (one per type) | `meta/templates/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
 | Site-specific archival workarounds (incl. Wayback fuzzy-timestamp pull for recovering 404'd sources) | `meta/sources-access.md` |
-| Validator audit trail (auto-appended) | `meta/toolkit-notes/issue-log.yaml` |
 | Build-state snapshot | `CLAUDE.md` (auto-generated section) |
 | This instance's topic scope | `meta/topic/overview.md` |
 
@@ -104,14 +103,14 @@ If you're doing anything related to this instance's topic, read
 |---|---|---|
 | `AGENT.md`, `CLAUDE.md`, `README.md` | Governance / entry points | Markdown |
 | `meta/*.md`, `meta/topic/*.md` | Governance / reference | Markdown with YAML frontmatter |
-| `meta/schema.yaml` | Machine-readable spec | YAML |
+| `meta/schema.yaml`, `meta/schema-research-artifact.yaml` | Machine-readable specs (node / research-artifact) | YAML |
 | `meta/templates/*.md` | Node scaffolding templates | Markdown with placeholder tokens |
 | `{type}/*.md` (people, organizations, ...) | Content nodes | Markdown with YAML frontmatter |
 | `meta/research/*.yaml` | Research artifacts | YAML |
 | `sources/manifest.yaml` | Source archival index | YAML |
 | `sources/{category}/*` | Archived primary sources | PDF / HTML / TXT / other |
 | `scripts/{build,tools}/*.py` | Toolkit scripts (build pipeline + utilities) | Python |
-| `prompts/*.md` | Paste-ready session prompts | Markdown |
+| `prompts/*.md` | Design docs (topology, philosophy) + paste-ready Claude-Web briefs | Markdown |
 
 ---
 

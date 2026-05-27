@@ -5,13 +5,15 @@ output it validates, so an agent can run a phase-scoped pass
 (``--phase {archive|extract|organize|link|render}``) for fast feedback
 on what it just produced, rather than the full ~69-check sweep. A phase
 token is named after the role whose output it validates — see the agent
-topology in ``prompts/topology.md``:
+topology in ``prompts/topology.md``. (One-line phase descriptions are not
+restated here; they live in ``PHASE_DESC`` below, surfaced via
+``--list-phases``.) The phase -> owning role:
 
-  archive   role 3 Archive          (manifest + primary_sources)
-  extract   role 4 Worker           (verbatim quotes / speakers)
-  organize  role 5 Build, organize  (free-prose synthesis)
-  link      role 5 Build, link      (cross-reference surfaces + prose-drift)
-  render    role 5 Build, render    (render-time structure + cross-layer)
+  archive   role 3 Archive
+  extract   role 4 Worker
+  organize  role 5 Build, organize
+  link      role 5 Build, link
+  render    role 5 Build, render
 
 Role 6 Audit runs the full unflagged pass. Roles 0/1/2 (Orchestrator,
 Internal/External Investigator) produce no gated artifact state, so they
@@ -139,10 +141,10 @@ CHECK_PHASE = {
     "finding_source_in_entity_node": "render",  # needs the global cross-artifact index
 }
 
-# One-line description of what each phase validates. Formalizes the
-# docstring prose above so a single source feeds both the human-readable
-# vocabulary (``--list-phases``, the build-protocol skill injection) and
-# this module — nothing restates it in prose elsewhere.
+# One-line description of what each phase validates — the single
+# human-readable source for them, surfaced via ``--list-phases`` and the
+# build-protocol skill injection. Not restated in prose elsewhere: the
+# docstring above and prompts/topology.md carry the phase tokens only.
 PHASE_DESC = {
     "preflight": "parse / structure / version — always-on, runs in every phase",
     "archive": "manifest integrity + primary_sources + doc_form_archival_status",

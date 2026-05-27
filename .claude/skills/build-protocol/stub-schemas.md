@@ -59,7 +59,7 @@ validator_findings: []         # validate.py --phase archive
 ```yaml
 # worker — returned stub (one per source)
 # The worker EMITS this fragment; it does NOT merge into the shared
-# artifact. The orchestrator serializes the merge of all worker fragments,
+# artifact. The builder serializes the merge of all worker fragments,
 # then runs the extract-phase check once on the merged result.
 agent: worker
 worker_kind: pdf               # pdf | html | caption | foia

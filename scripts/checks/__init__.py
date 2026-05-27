@@ -66,10 +66,11 @@ class Issue:
     ``tokens`` carries a structured payload for checks whose human-
     readable ``message`` is necessarily truncated (e.g., prose-drift
     warnings preview only the first 8 unmatched tokens). The full set
-    lands here and propagates to the issue-log YAML, so contributor
-    iteration loops and post-hoc audits don't re-derive what the check
-    already computed. ``None`` for checks that don't carry a structured
-    payload — preserves backward compatibility.
+    lands here for any structured consumer (``--format json``, IDE
+    integration, single-check debugging), so contributor iteration loops
+    and post-hoc audits don't re-derive what the check already computed.
+    ``None`` for checks that don't carry a structured payload — preserves
+    backward compatibility.
     """
 
     path: str

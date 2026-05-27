@@ -60,17 +60,14 @@ That disk-truth property is the keystone the whole role decomposition rests on.
 ## Phase vocabulary
 
 Each `--phase` token names the role whose output it validates; `--phase` only ever
-**narrows** a run (an unflagged run is the full pass). The check → phase map lives in
-`scripts/checks/_phases.py` — the single source of truth; run
-`python3 scripts/checks/_phases.py --list-phases` for the live list. This file is the
-gate-designated *prose* home for that vocabulary (`phase_routing_parity.py` checks
-every canonical phase is documented here), so the set is named once, here:
+**narrows** a run (an unflagged run is the full pass). The check → phase map **and the
+one-line description of each phase** live in `scripts/checks/_phases.py` — the single
+source of truth; run `python3 scripts/checks/_phases.py --list-phases` for the live
+list. The canonical phase tokens are enumerated here (so `phase_routing_parity.py` can
+confirm none ships undocumented), but their descriptions are **not** restated — read
+them from `--list-phases`:
 
-- `archive` — manifest + primary_sources
-- `extract` — verbatim quotes / speakers (the one quote boundary)
-- `organize` — free-prose synthesis
-- `link` — cross-reference surfaces + prose-drift
-- `render` — render-time structure + the cross-layer checks
+- `archive` · `extract` · `organize` · `link` · `render`
 
 `preflight` (parse / structure) runs in every phase.
 

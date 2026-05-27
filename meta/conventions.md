@@ -294,12 +294,21 @@ guardrail on the model's output, entirely separate from this
 repository's topic scope and editorial rules. It can fire unpredictably
 mid-transcription, and its trigger is opaque: in practice it has blocked
 one source while transcribing another of comparable subject matter
-cleanly, so it does NOT track topic scope or any clean content category,
-and is never a signal about a source's relevance. A dedicated OCR engine
+cleanly, so it does NOT track this repository's topic scope and is never
+a signal about a source's relevance. The one predictable case is content
+the model's policy treats as sensitive to *reproduce* — plainly CBRN /
+weapons-design-sensitive material reliably trips the generative filter,
+which is why such a source skips the VLM step (pre-screen below). A
+dedicated OCR engine
 does text *recognition*, not generation, so it is filter-immune and
 uniformly applicable. The standard method
 ladder for every OCR-scan / extraction-lossy sibling:
 
+0. **Pre-screen — plainly CBRN / weapons-design-sensitive?** Judge from the
+   title / table of contents. If so, **skip the VLM step and start at the OCR
+   engine** (step 2): a model reproducing such a passage as its own tokens
+   hard-terminates on the content filter, wasting the attempt. The
+   `/prepare-ocr-sibling` skill applies this route check first.
 1. **Default — VLM page-image read** (path 3): highest fidelity on
    degraded scans (contextual glyph restoration, equation/table
    handling). Use whenever it completes.
@@ -363,8 +372,17 @@ verify-paths`) plus pre-commit as the only safe orphan-cleanup gate
 for sibling files.
 
 **Per-quote contributor discipline when an OCR-scan source's `.txt`
-sibling hasn't been produced yet.** A new OCR-scan source may enter
-the corpus before a contributor produces its clean-text sibling — the
+sibling hasn't been produced yet.** *(Scope: the `/build` pipeline
+produces the verified sibling **before** the Worker — step 4b, "OCR-scan
+sibling readiness"; build-protocol → source-read-first — so a correctly
+run `/build` does not reach this state. But that is role discipline, not
+a hard gate: the verbatim-quote check is structurally blind to a
+sibling-less OCR quote (it passes — see below), so this discipline is the
+safety net whenever a quote does reach the artifact before its sibling —
+an out-of-pipeline manual edit, an `/augment`, or a `/build` where step 4b
+was skipped.)* A new OCR-scan
+source may enter the corpus before a contributor produces its clean-text
+sibling — the
 validator falls back to `pdftotext` output of the OCR'd PDF in that
 case, and OCR character-corruptions (`telated` for `related`,
 `compatrtmented` for `compartmented`, `bigalow` for `bigelow`) pass the
@@ -1058,8 +1076,8 @@ never as a discretionary skip.
 
 Structural thresholds are different and remain in force. The finding-
 node creation threshold (~200 words, 3+ entity nodes, or text about
-to be written into 3+ different nodes per `meta/schema.yaml::types
-.finding.creation_threshold`) governs WHEN analysis should move to a
+to be written into 3+ different nodes — see "Bright line — fact vs
+finding" below) governs WHEN analysis should move to a
 different node, not HOW LONG a field's prose should be. Cross-
 reference brevity — entity nodes citing a finding carry a brief
 summary plus link back, with the canonical narrative living on the
@@ -2065,10 +2083,9 @@ their character:
   stable governance specs and forward-looking work registers — the
   rules and the active agenda. A contributor consults these at
   session start or when something on the work queue applies.
-- **`meta/toolkit-notes/`**: validator issue-log (auto-appended by
-  the validator orchestrators). Reserved for any future retrospective
-  or technique notes — backward-looking lessons live here when they
-  surface. Empty of `.md` content at present.
+- **`meta/toolkit-notes/`**: reserved for backward-looking lessons
+  (why a rule exists; what was tried before) — retrospective or technique
+  notes live here when they surface. Not yet created.
 - **`meta/templates/`**: scaffolding templates, one per node type.
   Consumed mechanically by `scripts/build/new.py`; rarely read directly
   by contributors except when a new node type is being added.
