@@ -30,9 +30,15 @@ Audit goals:
 4. **Contradiction markers** — `❌ Contradiction` where positions contradict
    and at least one side has primary-source evidence; `⚠ Disputed — unknown`
    only where neither side does. Reclassify if wrong.
-5. **Under-extraction** — `coverage-suggest.py meta/research/{slug}.yaml`
-   surfaces paragraphs no quote references + capitalized terms absent from the
-   artifact (suggestions; judge each — boilerplate is common).
+5. **Under-extraction + source-form grounding** —
+   `coverage-suggest.py meta/research/{slug}.yaml` surfaces paragraphs no quote
+   references + capitalized terms absent from the artifact (suggestions; judge
+   each — boilerplate is common), and **ungrounded `## Source-Form Notes`**:
+   `preserve-as-sic-in-quotes` entries whose `observed` form appears only in its
+   own table row. An incidental source typo logged but never quoted → drop the
+   entry (orphan, correction-to-nothing); a deliberate not-on-node variant
+   (e.g. an auto-caption name mangling kept for identity resolution) → keep.
+   Judge each.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
 7. **Adjacent-node propagation (the tightening loop).** Compare adjacent /

@@ -403,10 +403,27 @@ source-form pattern is particularly load-bearing for a specific
 evidentiary claim (the Grusch q157 + PPD-19 cases are examples), but
 is not the primary reader-visibility mechanism.
 
-After registering the naming_quirks entries, re-grep the source
-extract for additional artifact patterns matching those already
-logged — drafting the registrations often surfaces artifacts not
-caught in the initial scan.
+After registering the naming_quirks entries, re-grep **the passages
+you are quoting** for additional artifact patterns matching those
+already logged — drafting the registrations often surfaces artifacts
+not caught in the initial scan.
+
+Scope that re-grep to quoted text (and the `significance` / `location`
+that frame a quote). A `preserve-as-sic-in-quotes` entry exists to
+annotate a source form the reader **encounters on the node**, so its
+`observed` form must appear somewhere the reader meets it — inside a
+quote, or in the heading / locator describing one. Do **not** sweep
+the entire source extract and log every OCR typo: an incidental
+misspelling sitting in body text you never quote has no on-node
+referent, and the entry then renders as a correction to nothing — an
+*orphan* source-form note. Scan fidelity as a whole is recorded by the
+manifest entry's `extraction_type` (`ocr-scan` / `extraction-lossy`),
+not by one `naming_quirks` row per source typo. At audit time
+`scripts/tools/coverage-suggest.py` flags any ungrounded entry (its
+`observed` form present only in its own `## Source-Form Notes` row);
+an entry deliberately recording a not-on-node variant (e.g. how an
+auto-caption mangles a name, kept for identity resolution) is a
+legitimate orphan — judge each.
 
 The discipline is a per-quote workaround, not a substitute for
 producing the `.txt` sibling. Once the sibling exists and the manifest

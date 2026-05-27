@@ -386,7 +386,7 @@ quotes:
   source:
     path: government/dird-12-bci-controlling-external-devices-20100323.pdf
     location: 'section "Trials Using Human Subjects", median-nerve self-experimenter paragraph'
-  significance: The single normal-healthy-human peripheral-implant trial (2002) — sensation and control achieved through a peripheral array implant in the median nerve, but the nerve-microarray connection deteriorated beyond use within 3 months, a load-bearing data point for the survey's pessimism on durable invasive interfaces
+  significance: The single normal-healthy-human peripheral-implant trial (2002) — sensation and control achieved through a peripheral array implant in the median nerve, but the nerve-microarray connection lasted 3 months before it deteriorated beyond use, a load-bearing data point for the survey's pessimism on durable invasive interfaces
   statement_date: '2010-03-23'
 - id: q33
   added_date: '2026-05-27'
@@ -530,41 +530,6 @@ naming_quirks:
   location: 'section "Hybrid Neuro-Robotic Systems for True Closed-Loop BMI", lamprey paragraph'
   source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
   resolution: preserve-as-sic-in-quotes
-- id: nq7
-  added_date: '2026-05-27'
-  observed: 'excitory'
-  canonical: 'excitatory'
-  location: 'section "Direct Neural Signals", dendritic-signals body (outside any extracted quote)'
-  source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq8
-  added_date: '2026-05-27'
-  observed: 'sucli'
-  canonical: 'sulci'
-  location: 'section "Direct Neural Signals", gyri-and-sucli body (outside any extracted quote)'
-  source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq9
-  added_date: '2026-05-27'
-  observed: 'materiel'
-  canonical: 'material'
-  location: 'section "MRI and fMRI", hydrogen-rich body (outside any extracted quote)'
-  source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq10
-  added_date: '2026-05-27'
-  observed: 'valance'
-  canonical: 'valence'
-  location: 'section "MRI and fMRI", valance-electron body (outside any extracted quote)'
-  source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq11
-  added_date: '2026-05-27'
-  observed: 'electrco-myogram'
-  canonical: 'electromyogram'
-  location: 'section "EEG", footnote 9 (outside any extracted quote)'
-  source_path: government/dird-12-bci-controlling-external-devices-20100323.pdf
-  resolution: preserve-as-sic-in-quotes
 description: 'A Defense Intelligence Reference Document produced under the Defense Intelligence Agency ([`/organizations/dia`]) Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], one in a series of advanced technology reports produced in FY 2009. The Administrative Note states a COPYRIGHT WARNING that further dissemination of the photographs in this publication is not authorized. The Author line shows only [(b)(6)] and the Prepared by line shows the Defense Intelligence Agency, so the document shows no author; it is one of the FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]). The document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]).
 
 
@@ -577,7 +542,7 @@ description: 'A Defense Intelligence Reference Document produced under the Defen
   There are four noninvasive technologies in widespread use for monitoring brain activity — electroencephalography (EEG) and magnetoencephalography (MEG) as direct measures, functional MRI (fMRI) and near-infrared spectroscopy (NIRS) as indirect BOLD measures. The EEG discussion covers commercial dry-electrode devices for consumers and the doubt about whether they read neural signals at all rather than facial muscle movement. MEG is dependent on superconducting quantum interference devices (SQUIDs) sensitive to 100 femtoTesla changes, and 100 femtoTesla will prove an insurmountable barrier to sifting signal from noise outside a heavily-shielded, metal-free environment. The electromyogram (EMG) approach uses the muscles as a biological amplifier of neural signals, with 1-2 bits per second possible with minimal training. fMRI has unmatched 3D spatial resolution and complete skull penetration, but the several seconds BOLD delay makes it inappropriate for many naturalistic applications; and NIRS correlates with fMRI at reduced coverage and lower resolution.
 
 
-  The invasive technologies discussion presents the cochlear implant — the most prolific human invasive BMI, an open loop stimulation system through a peripheral connection — then the direct cortical array, penetrating cortical electrodes and their scar tissue response, MEMS/ECoG/PSoC chips that fuse biological to physical circuitry external to the body, the Fetz autonomous battery operated neural implant, chronic neural implants with fMRI, new electrode designs that are MR compatible, and hybrid neuro-robotic systems including a lamprey brain stem closed loop pointing to cerebellar interface points. Trials using human subjects present the ethical dilemma of implanting normal volunteers and a 2002 median nerve self-experimenter trial whose connection deteriorated within 3 months; optical stimulation that uses light to gate action potentials through a locally inserted LED is presented as a path with no contact between the physical circuits and neurons, avoiding scar tissue. The Discussion states that any successful BMI relies on brain plasticity through user training, neural decoding by a machine learning algorithm, and neuroscience knowledge, and the Conclusions state that noninvasive electrical sensors that rely primarily on EMG signals will dominate near term real-world applications and surpass traditional electro-mechanical interfaces within 5 years, while the far term high-bandwidth (5-20 bits/second) path is an invasive approach using interfaces with single neurons in the cortex or cerebellum, with optical interfaces and ex-vivo electrode arrays encased in engineered neural tissue the two most promising research paths.
+  The invasive technologies discussion presents the cochlear implant — the most prolific human invasive BMI, an open loop stimulation system through a peripheral connection — then the direct cortical array, penetrating cortical electrodes and their scar tissue response, MEMS/ECoG/PSoC chips that fuse biological to physical circuitry external to the body, the Fetz autonomous battery operated neural implant, chronic neural implants with fMRI, new electrode designs that are MR compatible, and hybrid neuro-robotic systems including a lamprey brain stem closed loop pointing to cerebellar interface points. Trials using human subjects present the ethical dilemma of implanting normal volunteers and a 2002 median nerve self-experimenter trial whose connection lasted 3 months before it deteriorated beyond use; optical stimulation that uses light to gate action potentials through a locally inserted LED is presented as a path with no contact between the physical circuits and neurons, avoiding scar tissue. The Discussion states that any successful BMI relies on brain plasticity through user training, neural decoding by a machine learning algorithm, and neuroscience knowledge, and the Conclusions state that noninvasive electrical sensors that rely primarily on EMG signals will dominate near term real-world applications and surpass traditional electro-mechanical interfaces within 5 years, while the far term high-bandwidth (5-20 bits/second) path is an invasive approach using interfaces with single neurons in the cortex or cerebellum, with optical interfaces and ex-vivo electrode arrays encased in engineered neural tissue the two most promising research paths.
 
   '
 cited_works:

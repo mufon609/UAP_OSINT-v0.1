@@ -53,7 +53,12 @@ In order, with a check after each (build-protocol → run
    **non-canonical source form** gets both a stub `[`/path`]` link
    (stub-never-null) *and* a `naming_quirks` `preserve-as-sic-in-quotes`
    entry mapping source-form → canonical (`meta/conventions.md` "A source
-   naming an entity under a non-canonical form"). →
+   naming an entity under a non-canonical form"). Register
+   `preserve-as-sic-in-quotes` **only** for a form that appears on the node —
+   inside a quote, or the `significance` / `location` framing one; never sweep
+   the source and log incidental typos in unquoted body text (orphan
+   source-form notes — `coverage-suggest.py` flags them, scan fidelity is the
+   manifest `extraction_type`'s job). →
    `validate-research.py --phase link meta/research/{slug}.yaml`
 3. **Render** — only if 1–2 are clean:
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

@@ -1098,6 +1098,13 @@ naming_quirk_entry:
   # observed: as it appears in source (e.g., "Leslie Keane")
   # canonical: corrected form (e.g., "Leslie Kean")
   # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
+  # preserve-as-sic-in-quotes grounding: the observed form must appear on the
+  #   rendered node — inside a quote, or the significance/location that frames
+  #   one. An entry whose observed surfaces ONLY in its own ## Source-Form Notes
+  #   row is an orphan (an incidental source typo in unquoted body text, logged
+  #   but never quoted); scripts/tools/coverage-suggest.py flags it. Whole-scan
+  #   fidelity is the manifest extraction_type's job, not one quirk row per typo.
+  #   See meta/conventions.md (the preserve-as-sic-in-quotes discipline).
 
 cited_work_entry:
   required: [citation_key, author, citation_verbatim, source]

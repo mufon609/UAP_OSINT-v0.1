@@ -25,10 +25,14 @@ Target: **$ARGUMENTS** (ask the user if empty).
    a fresh-context cold pass — it runs the full validators + the audit goals
    and returns findings + `adjacent_needs_update[]`. The independent read is
    the point: the session that built a node can't reliably self-verify it.
-2. **Pre-audit under-extraction (optional):**
+2. **Pre-audit under-extraction + source-form grounding:**
    `python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml`
    surfaces substantive paragraphs no quote references + capitalized terms
-   absent from the artifact (suggestions; boilerplate is common — judge each).
+   absent from the artifact (suggestions; boilerplate is common — judge each),
+   and **ungrounded `## Source-Form Notes`** — `preserve-as-sic-in-quotes`
+   entries whose `observed` form appears only in its own table row (an
+   incidental source typo logged but never quoted → drop it; a deliberate
+   not-on-node variant → keep — judge each).
    Then weigh the auditor's **family-comparability** pass (goal 8): per
    `meta/conventions.md` "Comparability standard", does a same-`type` /
    `kind` / `archetype` peer carry a source-anchored optional section this

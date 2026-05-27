@@ -2,7 +2,7 @@
 """Source-coverage audit aid for a research artifact.
 
 Read-only diagnostic. For each primary source on a research artifact,
-surfaces two kinds of audit candidates the mechanical validators
+surfaces three kinds of audit candidates the mechanical validators
 cannot catch:
 
   1. **Unreferenced source paragraphs** — paragraphs of substantive
@@ -17,11 +17,27 @@ cannot catch:
      artifact's text fields (quotes, entries, prose). Likely missed
      entities (people, organizations, documents the source names).
 
+  3. **Ungrounded source-form notes** — `naming_quirks` entries with
+     resolution `preserve-as-sic-in-quotes` whose `observed` form
+     appears nowhere on the rendered node *except* its own
+     `## Source-Form Notes` table row. The Source-Form Notes table
+     exists to annotate a source form a reader *encounters* in quoted
+     text (or the heading / locator that frames a quote); an entry the
+     reader meets only as a correction-to-nothing is an orphan —
+     usually an incidental source typo in unquoted body text that was
+     logged but never surfaced. Reverse-direction complement of the
+     verbatim-quote check: verbatim-quote confirms quotes are in the
+     source; this confirms quirk entries are grounded on the node.
+     See `meta/conventions.md` (the `preserve-as-sic-in-quotes`
+     discipline: the source form "lives only inside verbatim quotes").
+
 Contributor judges each candidate manually — the tool surfaces
 audit targets, never asserts they're under-extraction. Boilerplate,
 navigation noise, and tangential content (a hearing transcript names
 50 topics; a witness's person node only quotes 5) are legitimately
-unreferenced.
+unreferenced. A deliberately-cataloged source/name variant (e.g. a
+transcript node recording how auto-captions mangle a name for
+identity resolution) is a legitimate orphan — judge each.
 
 Usage:
     coverage-suggest.py meta/research/{slug}.yaml
@@ -290,6 +306,84 @@ def paragraph_coverage(paragraphs, quotes_for_source, min_chars):
     return unreferenced
 
 
+# Rendered-node type directories, relative to REPO_ROOT — where a
+# built node lands by type. The grounding check resolves an artifact
+# `meta/research/{slug}.yaml` to its rendered `{type}/{slug}.md` by
+# stem; slugs are unique across the corpus, so the first match wins.
+_NODE_TYPE_DIRS = (
+    "documents", "people", "organizations", "events", "transcripts",
+    "media", "locations", "findings", "investigations",
+)
+
+
+def find_rendered_node(slug):
+    """Return the Path to the rendered node `.md` for an artifact slug,
+    or None if the node isn't built yet. Globs the type directories
+    under REPO_ROOT for `{slug}.md`."""
+    for d in _NODE_TYPE_DIRS:
+        p = REPO_ROOT / d / f"{slug}.md"
+        if p.exists():
+            return p
+    return None
+
+
+def body_outside_source_form_notes(md_text):
+    """Return the rendered node body with the `## Source-Form Notes`
+    section excised, so a quirk's own table row doesn't count as
+    grounding for itself. Drops from the `## Source-Form Notes`
+    heading up to (not including) the next `## ` heading."""
+    out, skip = [], False
+    for line in md_text.splitlines():
+        if line.startswith("## Source-Form Notes"):
+            skip = True
+            continue
+        if skip and line.startswith("## "):
+            skip = False
+        if not skip:
+            out.append(line)
+    return "\n".join(out)
+
+
+def report_quirk_grounding(data, artifact_path):
+    """Surface `preserve-as-sic-in-quotes` naming_quirks whose
+    `observed` form appears nowhere on the rendered node except its own
+    Source-Form Notes row (orphans). Returns True if any orphan
+    surfaced. No-op (prints nothing, returns False) when the artifact
+    has no such entries."""
+    quirks = [
+        nq for nq in (data.get("naming_quirks") or [])
+        if isinstance(nq, dict)
+        and nq.get("resolution") == "preserve-as-sic-in-quotes"
+    ]
+    if not quirks:
+        return False
+
+    print("── Source-Form Notes grounding ──")
+    node = find_rendered_node(artifact_path.stem)
+    if node is None:
+        print("  ⚠ rendered node not found — build the node, then re-run "
+              "to check Source-Form Notes grounding.")
+        print()
+        return False
+
+    body = normalize_for_compare(body_outside_source_form_notes(node.read_text()))
+    orphans = [
+        nq for nq in quirks
+        if normalize_for_compare(nq.get("observed") or "") not in body
+    ]
+    if orphans:
+        print(f"  Ungrounded entries ({len(orphans)} of {len(quirks)} "
+              f"preserve-as-sic-in-quotes):")
+        for nq in orphans:
+            print(f"    {nq.get('id')}: observed={nq.get('observed')!r} "
+                  f"— appears only in its own Source-Form Notes row")
+    else:
+        print(f"  ✓ All {len(quirks)} source-form note(s) are grounded in "
+              f"quoted text / heading / locator on the node.")
+    print()
+    return bool(orphans)
+
+
 def main():
     ap = argparse.ArgumentParser(
         description=(
@@ -333,7 +427,9 @@ def main():
     print(f"  {len(primary_sources)} primary source(s); {len(quotes)} quote(s)")
     print()
 
-    any_surfaced = False
+    # Source-Form Notes grounding runs independent of source extraction
+    # (it reads the rendered node, not the source), so it always reports.
+    any_surfaced = report_quirk_grounding(data, artifact_path)
     extracted_count = 0
     skipped_count = 0
 
@@ -415,6 +511,9 @@ def main():
         print("Read-only diagnostic. Judge each candidate manually:")
         print("  - Paragraph load-bearing for the subject? → add a quote")
         print("  - Capitalized term is a named entity? → add a [`/path`] body wrap")
+        print("  - Ungrounded source-form note? → if it's an incidental source")
+        print("    typo in unquoted body text, drop the naming_quirks entry;")
+        print("    if it's a deliberate not-on-node variant, leave it (judge)")
         print("  - Boilerplate / navigation / tangential? → ignore (no action needed)")
         print()
         print("[¶~N] indices are paragraph-numbers in the EXTRACTED scratch text")
