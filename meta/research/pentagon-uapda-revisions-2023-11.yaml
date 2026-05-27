@@ -137,10 +137,3 @@ quotes:
   statement_date: '2023-11'
 cited_works: []
 naming_quirks:
-- id: nq1
-  added_date: '2026-05-02'
-  observed: 'non human intelligence'
-  canonical: 'non-human intelligence'
-  location: 'p. 4, §9003(11) "deceased non human intelligence" (extracted-text artifact)'
-  source_path: government/pentagon-uapda-proposed-revisions-202311.pdf
-  resolution: preserve-as-sic-in-quotes

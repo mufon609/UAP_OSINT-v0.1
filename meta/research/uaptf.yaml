@@ -524,13 +524,6 @@ naming_quirks:
   location: UAP Security Classification Guide (ID# 04-030), p.1 Purpose statement
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
-- id: nq4
-  added_date: '2026-04-22'
-  observed: NGA (duplicated in the contributor list)
-  canonical: NGA
-  location: ODNI Preliminary Assessment, p.3 SCOPE AND ASSUMPTIONS, contributor list
-  source_path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
-  resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-05-22'
   observed: Intelli_gence

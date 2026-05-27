@@ -269,13 +269,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | kellerer | Kelleher | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | colum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | Callum | Colm | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| naap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | knap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | oap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| ossap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | assap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| asap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| asep | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | Assam | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | atip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | a tip | AATIP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
@@ -286,6 +282,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Gia | DIA | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | grush | Grusch | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | Capital Hill | Capitol Hill | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| naap | Knapp | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| ossap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| asap | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| asep | AAWSAP | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 
 ---
 

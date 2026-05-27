@@ -204,10 +204,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | Saul | Sol | transcripts/nell-sol-foundation-2023-downloaded.md |
 | Gary | Garry | transcripts/nell-sol-foundation-2023-downloaded.md |
+| Carl | Karl | transcripts/nell-salt-2024-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
 | Lou alzando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md |
 | L Alando | Luis Elizondo | transcripts/nell-sol-foundation-2023-downloaded.md |
 | Chris melon | Chris Mellon | transcripts/nell-sol-foundation-2023-downloaded.md |
-| Carl | Karl | transcripts/nell-salt-2024-downloaded.md |
 | Paul helier | Paul Hellyer | transcripts/nell-salt-2024-downloaded.md |
 | ham Eed | Haim Eshed | transcripts/nell-salt-2024-downloaded.md |
 | Lou Alzando | Luis Elizondo | transcripts/nell-salt-2024-downloaded.md |

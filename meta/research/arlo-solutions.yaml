@@ -340,7 +340,7 @@ naming_quirks:
   canonical: Department of Defense
   location: Arlo SASP press release Lonye Ford CEO quote ("DoW leadership"); SASP press release context paragraph ("Department of War (DoW) leaders")
   source_path: news/arlo-press-85m-sasp-20260503.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
   added_date: '2026-05-03'
 rumors:
 - id: r1

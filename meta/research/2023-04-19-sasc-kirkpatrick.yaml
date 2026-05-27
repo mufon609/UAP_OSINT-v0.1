@@ -561,7 +561,7 @@ naming_quirks:
   canonical: 'Dr. Kirkpatrick'
   location: stenographic transcript throughout (e.g., speaker tags at lines 439, 1194, 1665)
   source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-04-28'
   observed: Kirkland Air Force Base

@@ -663,9 +663,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
-| 125 °Celsius / 175° Celsius (inconsistent degree-symbol spacing) | °C | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
-| C-CC Cs | C-CCs | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
-| Reusable Reentry Vehicle | Reusable Crew Modules | government/dird-05-bv-aerospace-platforms-materials-20100112.pdf |
 
 ---
 

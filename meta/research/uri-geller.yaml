@@ -843,22 +843,6 @@ naming_quirks:
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
 
-- id: nq3
-  added_date: '2026-05-16'
-  observed: 'psychokenesis'
-  canonical: 'psychokinesis'
-  location: "¶15 (Brendan Burton article — Sarfatti intro)"
-  source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
-  resolution: preserve-as-sic-in-quotes
-
-- id: nq4
-  added_date: '2026-05-16'
-  observed: 'pheomena'
-  canonical: 'phenomena'
-  location: "¶16 (Brendan Burton article — Sarfatti intro)"
-  source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
-  resolution: preserve-as-sic-in-quotes
-
 - id: nq5
   added_date: '2026-05-16'
   observed: 'Brasil'
@@ -872,14 +856,6 @@ naming_quirks:
   observed: 'Brasilian'
   canonical: 'Brazilian'
   location: "¶17 (Brendan Burton article — Sarfatti quote)"
-  source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
-  resolution: preserve-as-sic-in-quotes
-
-- id: nq7
-  added_date: '2026-05-16'
-  observed: 'statisical'
-  canonical: 'statistical'
-  location: "¶21 (Brendan Burton article — Byrd verbatim quote)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
 

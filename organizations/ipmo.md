@@ -330,7 +330,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| Obiectives | Objectives | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |
 | Kimmidge | Kimmage | news/defense-one-sof-week-oie-panel-20240524.html |
 
 ---

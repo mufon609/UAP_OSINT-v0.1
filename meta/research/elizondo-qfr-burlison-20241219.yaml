@@ -211,5 +211,5 @@ naming_quirks:
   canonical: 'AAWSAP'
   location: 'p. 3, Q11 verbatim quotation of Burlison''s question'
   source_path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 

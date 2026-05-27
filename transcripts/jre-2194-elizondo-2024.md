@@ -289,10 +289,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | James latky / Dr James latsky PhD | James Lacatski | transcripts/jre-2194-elizondo-2024-downloaded.md |
-| assap / ASAP | AAWSAP | transcripts/jre-2194-elizondo-2024-downloaded.md |
-| ATP / atps | AATIP | transcripts/jre-2194-elizondo-2024-downloaded.md |
 | Dr halud off | Hal Puthoff | transcripts/jre-2194-elizondo-2024-downloaded.md |
 | Dr AR Davis | Dr. Eric W. Davis | transcripts/jre-2194-elizondo-2024-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| assap / ASAP | AAWSAP | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| ATP / atps | AATIP | transcripts/jre-2194-elizondo-2024-downloaded.md |
 | pen pagon / pagon | Pentagon | transcripts/jre-2194-elizondo-2024-downloaded.md |
 
 ---

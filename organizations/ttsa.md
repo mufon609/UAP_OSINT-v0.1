@@ -807,11 +807,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | TTS AAS | To The Stars Academy of Arts and Science Inc. | government/sec-ttsa-1a-partii-20170710.html |
-| Lue Elizondo | Luis Elizondo | news/tothestarsacademy-home-20180108.html |
 | metamateiiais | metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | struefural metamateriais | structural metamaterials | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | = VP of Operations Jim Semivan | and VP of Operations Jim Semivan | news/tothestarsacademy-home-20180108.html |
-| 215 South Coast Hwy 101, Ste. U-38 | Coast Hwy 101 complex, Encinitas CA (multi-suite) | government/army-ttsa-crada-19-15-nete-20191001.pdf |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| Lue Elizondo | Luis Elizondo | news/tothestarsacademy-home-20180108.html |
 
 ---
 

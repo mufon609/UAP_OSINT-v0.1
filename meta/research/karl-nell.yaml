@@ -373,21 +373,21 @@ naming_quirks:
   canonical: 'Luis Elizondo'
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-18'
   observed: 'L Alando'
   canonical: 'Luis Elizondo'
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:12:13]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-18'
   observed: 'Chris melon'
   canonical: 'Chris Mellon'
   location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
   source_path: transcripts/nell-sol-foundation-2023-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq6
   added_date: '2026-05-18'
   observed: 'Carl'
@@ -401,69 +401,69 @@ naming_quirks:
   canonical: 'Paul Hellyer'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq8
   added_date: '2026-05-18'
   observed: 'ham Eed'
   canonical: 'Haim Eshed'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq9
   added_date: '2026-05-18'
   observed: 'Lou Alzando'
   canonical: 'Luis Elizondo'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq10
   added_date: '2026-05-18'
   observed: 'truck Schumer'
   canonical: 'Chuck Schumer'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq11
   added_date: '2026-05-18'
   observed: 'marubio'
   canonical: 'Marco Rubio'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq12
   added_date: '2026-05-18'
   observed: 'rri Patterson Air Force Base'
   canonical: 'Wright-Patterson Air Force Base'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:17]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq13
   added_date: '2026-05-18'
   observed: 'Eric Klein'
   canonical: 'Eric Cline'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:10:04]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq14
   added_date: '2026-05-22'
   observed: 'tri vesture'
   canonical: 'trivestiture'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq15
   added_date: '2026-05-22'
   observed: 'locki missiles in space'
   canonical: 'Lockheed Missiles & Space'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq16
   added_date: '2026-05-22'
   observed: 'northr grman'
   canonical: 'Northrop Grumman'
   location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:53]"'
   source_path: transcripts/nell-salt-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 rumors: []

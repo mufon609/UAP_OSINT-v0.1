@@ -305,7 +305,7 @@ naming_quirks:
   canonical: Lacatski
   location: '[19:48]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-17'
   observed: skiff
@@ -319,4 +319,4 @@ naming_quirks:
   canonical: Lacatski
   location: '[16:36]'
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant

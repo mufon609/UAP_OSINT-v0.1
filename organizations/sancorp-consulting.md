@@ -765,11 +765,18 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | thi s | this | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
 | Plann ing | Planning | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
 | Executi ve | Executive | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
-| artifical intelligence | artificial intelligence | news/highergov-sancorp-profile-20260430.html |
-| SanCorp | Sancorp | news/highergov-sancorp-profile-20260430.html |
-| Identitiy | Identity | news/sancorp-careers-20260430.html |
 | (b)(4) | (b)(4) | government/foia-23-f-0905-doc-1-released.pdf |
 | (b)(6) | (b)(6) | government/foia-23-f-0905-doc-1-released.pdf |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| SanCorp | Sancorp | news/highergov-sancorp-profile-20260430.html |
 
 ---
 

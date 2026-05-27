@@ -519,10 +519,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| Deitrich | Dietrich | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
 | fraver | Fravor | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
-| prinston | Princeton | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
-| nits | Nimitz | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 | Nimttz | Nimitz | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |
 | Fleer | FLIR | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 | ROC | NROTC | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |
@@ -538,6 +535,18 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 | Position | Counterpart | Source |
 |---|---|---|
 | Chad and the back seat | Chad Underwood (primary-source disagreement — position unresolved) | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| Deitrich | Dietrich | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
+| prinston | Princeton | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
+| nits | Nimitz | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 
 ---
 

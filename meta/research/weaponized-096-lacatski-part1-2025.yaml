@@ -268,28 +268,28 @@ naming_quirks:
   canonical: AAWSAP
   location: '[56:15], [56:21]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-05-17'
   observed: Bass
   canonical: BAASS
   location: '[31:08]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-17'
   observed: Column
   canonical: Colm
   location: '[24:05]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-17'
   observed: Kitaski
   canonical: Lacatski
   location: '[44:22]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq6
   added_date: '2026-05-17'
   observed: Arrow
@@ -310,4 +310,4 @@ naming_quirks:
   canonical: Skinwalker
   location: '[39:17]'
   source_path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant

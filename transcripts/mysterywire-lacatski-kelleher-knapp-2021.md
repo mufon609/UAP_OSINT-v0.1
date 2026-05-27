@@ -193,16 +193,25 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| collin | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| column | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| allsap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | ossap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | asap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | osap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | atip | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | atep | AATIP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | bass | BAASS | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| collin | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| column | Colm | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| allsap | AAWSAP | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | aflacy | AFOSI | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 | tick | Tic Tac | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
 

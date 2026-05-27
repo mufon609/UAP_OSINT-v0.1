@@ -112,10 +112,10 @@ naming_quirks:
 - id: nq2
   added_date: '2026-05-05'
   observed: ONn
-  canonical: ONI)
+  canonical: ONI
   location: p. 7, Section 1 Identifying Data, PR field
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-05-05'
   observed: Naval intelligence

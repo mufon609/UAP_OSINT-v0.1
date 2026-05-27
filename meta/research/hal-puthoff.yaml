@@ -209,7 +209,7 @@ naming_quirks:
   canonical: 'Puthoff'
   location: '[59:05]'
   source_path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 - id: nq3
   added_date: '2026-05-16'
@@ -217,7 +217,7 @@ naming_quirks:
   canonical: 'Hal Puthoff'
   location: '[39:24]'
   source_path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 - id: nq4
   added_date: '2026-05-16'
@@ -225,7 +225,7 @@ naming_quirks:
   canonical: 'Puthoff'
   location: '[1:08:10]'
   source_path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 - id: nq5
   added_date: '2026-05-16'
@@ -233,7 +233,7 @@ naming_quirks:
   canonical: 'Hal Puthoff'
   location: 'tag list at end of page'
   source_path: news/safireproject-team-snapshot.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 - id: nq6
   added_date: '2026-05-16'

@@ -283,21 +283,21 @@ naming_quirks:
   canonical: Lacatski
   location: '[2:43]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-05-17'
   observed: Lowsky
   canonical: Lacatski
   location: '[25:00]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-17'
   observed: Lasksky
   canonical: Lacatski
   location: '[1:14:22]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-17'
   observed: Latsky
@@ -318,7 +318,7 @@ naming_quirks:
   canonical: AAWSAP
   location: '[7:17], [21:09], [48:12]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq8
   added_date: '2026-05-17'
   observed: Osap
@@ -346,7 +346,7 @@ naming_quirks:
   canonical: Bigelow
   location: '[39:23]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq12
   added_date: '2026-05-17'
   observed: column
@@ -360,7 +360,7 @@ naming_quirks:
   canonical: Reid
   location: '[1:03:38]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq14
   added_date: '2026-05-17'
   observed: Grush
@@ -374,7 +374,7 @@ naming_quirks:
   canonical: DOPSR
   location: '[7:31]'
   source_path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq16
   added_date: '2026-05-17'
   observed: deal

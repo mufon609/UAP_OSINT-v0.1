@@ -190,6 +190,15 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | 22M | $22M | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
 | AASAP | AAWSAP | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
 
 ---

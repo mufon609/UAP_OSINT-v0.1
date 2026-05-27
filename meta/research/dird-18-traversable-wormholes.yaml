@@ -1499,13 +1499,6 @@ cited_works:
   year: '2008'
   title: Balanced homodyne detectors and Casimir energy densities
 naming_quirks:
-- id: nq1
-  added_date: '2026-05-24'
-  observed: Transversable
-  canonical: Traversable
-  location: p. 4, Table of Contents / p. 9 Section II heading vs. p. 1 cover title and p. 5 Summary
-  source_path: government/dird-18-traversable-wormholes-20100406.pdf
-  resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-24'
   observed: (b)(6)

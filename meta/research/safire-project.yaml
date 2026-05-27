@@ -508,20 +508,6 @@ naming_quirks:
   location: 'sources/news/safireproject-team-snapshot.html ¶17 (David Talbott bio)'
   source_path: news/safireproject-team-snapshot.html
   resolution: preserve-as-sic-in-quotes
-- id: nq2
-  added_date: '2026-05-07'
-  observed: exerpience
-  canonical: experience
-  location: 'sources/news/safireproject-team-snapshot.html ¶16 (Jim Ryder consulting bio)'
-  source_path: news/safireproject-team-snapshot.html
-  resolution: preserve-as-sic-in-quotes
-- id: nq3
-  added_date: '2026-05-07'
-  observed: scientfic
-  canonical: scientific
-  location: 'sources/news/safireproject-team-snapshot.html ¶14 (consulting team description)'
-  source_path: news/safireproject-team-snapshot.html
-  resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-07'
   observed: atmoshere
@@ -549,14 +535,14 @@ naming_quirks:
   canonical: Johns Hopkins University
   location: 'sources/news/safireproject-genesis-snapshot.html (planning session photo caption)'
   source_path: news/safireproject-genesis-snapshot.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq8
   added_date: '2026-05-07'
   observed: Hal Putoff
   canonical: Hal Puthoff
   location: 'sources/news/safireproject-team-snapshot.html (group photo caption identifying photo subjects)'
   source_path: news/safireproject-team-snapshot.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq9
   added_date: '2026-05-07'
   observed: Monty

@@ -206,19 +206,6 @@ The Magnesium-Zinc-Bismuth (MgZn/Bi) specimen analysis is on the public record f
 
 ---
 
-## Source-Form Notes
-
-Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
-
-| Source Form | Canonical | Source |
-|---|---|---|
-| put off | Puthoff | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
-| hal put off | Hal Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
-| pothos | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
-| Hal Putoff | Hal Puthoff | news/safireproject-team-snapshot.html |
-
----
-
 ## Preserved Disagreements
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
@@ -226,6 +213,19 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 | Position | Counterpart | Source |
 |---|---|---|
 | E. Harold Puthoff | Harold E. Puthoff | news/irva-targ-russell-wayback-20250123.html |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| put off | Puthoff | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
+| hal put off | Hal Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
+| pothos | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
+| Hal Putoff | Hal Puthoff | news/safireproject-team-snapshot.html |
 
 ---
 

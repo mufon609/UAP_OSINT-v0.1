@@ -337,13 +337,22 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| Lockeed Martin | Lockheed Martin | news/lucistrust-garment-of-god-video-page-snapshot.html |
 | ibx | IBEX | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
 | leprosy | telepathy | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
 | put off | Puthoff | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
 | pothos | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
 | thought of | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
 | wall thornhill | Wal Thornhill | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| Lockeed Martin | Lockheed Martin | news/lucistrust-garment-of-god-video-page-snapshot.html |
 
 ---
 

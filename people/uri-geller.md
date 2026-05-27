@@ -356,11 +356,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | Hal Puthof | Hal Puthoff | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | Russel Targ | Russell Targ | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
-| psychokenesis | psychokinesis | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
-| pheomena | phenomena | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | Brasil | Brazil | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | Brasilian | Brazilian | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
-| statisical | statistical | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | form our forebears | from our forebears | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | out lives | our lives | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |
 | Werner von Braun | Wernher von Braun | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |

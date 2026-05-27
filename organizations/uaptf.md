@@ -387,7 +387,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | John Stratton | Jay Stratton | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |
 | identifYing | identifying | government/blackvault-uap-security-classification-guide-20200416.pdf |
-| NGA (duplicated in the contributor list) | NGA | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
 | Intelli_gence | Intelligence | government/blackvault-uaptf-charter-foia-20250422.pdf |
 
 ---

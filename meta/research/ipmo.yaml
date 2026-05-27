@@ -261,13 +261,6 @@ quotes:
   context: 'USAspending.gov award record for DoD/WHS contract HQ003422C0064 to Sancorp Consulting, LLC'
   statement_date: '2022-06-09'
 naming_quirks:
-- id: nq1
-  added_date: '2026-05-02'
-  observed: 'Obiectives'
-  canonical: 'Objectives'
-  location: 'IPMO PWS §1.3 section header'
-  source_path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
-  resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-02'
   observed: 'HOLLY.JAMES.ANTHONY.1231235051598'

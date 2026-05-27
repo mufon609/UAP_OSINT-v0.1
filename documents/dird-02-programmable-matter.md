@@ -254,7 +254,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | (b)(6) | [author identity withheld under FOIA exemption (b)(6)] | government/dird-02-programmable-matter-20091214.pdf |
 | (b)(3):10 USC 424 | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-02-programmable-matter-20091214.pdf |
-| UNCLASSIFIED//FOR OFFICIAL USE ONLY (FOUO struck through) | UNCLASSIFIED//FOR OFFICIAL USE ONLY | government/dird-02-programmable-matter-20091214.pdf |
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-02-programmable-matter-20091214.pdf |
 
 ---

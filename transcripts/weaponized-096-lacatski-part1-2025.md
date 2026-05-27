@@ -277,12 +277,21 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | AASAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Arrow | AARO | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Tar O'Toole | Tara O'Toole | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
 | AOSAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 | Bass | BAASS | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 | Column | Colm | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 | Kitaski | Lacatski | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
-| Arrow | AARO | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
-| Tar O'Toole | Tara O'Toole | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 | Walker | Skinwalker | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 
 ---

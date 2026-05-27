@@ -1160,7 +1160,7 @@ naming_quirks:
   canonical: AAWSAP
   location: Clapper SAP packet, throughout
   source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-04-30'
   observed: 'DEfENSE PENTAGON'
@@ -1173,13 +1173,6 @@ naming_quirks:
   observed: ovember
   canonical: November
   location: Hicks AARO establishment memorandum, throughout
-  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq7
-  added_date: '2026-04-30'
-  observed: fulfi lled
-  canonical: fulfilled
-  location: Hicks AARO establishment memorandum
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq8

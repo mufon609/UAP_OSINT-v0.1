@@ -179,16 +179,6 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-## Source-Form Notes
-
-Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
-
-| Source Form | Canonical | Source |
-|---|---|---|
-| non human intelligence | non-human intelligence | government/pentagon-uapda-proposed-revisions-202311.pdf |
-
----
-
 ## Associated Nodes
 
 ### People

@@ -287,21 +287,30 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | Latsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| Lacy | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| Lowsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| Lasksky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | Latsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | OAP | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| OSAP | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | Osap | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | Oset | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | Loheed | Lockheed | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| Bigalow | Bigelow | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | column | Colm | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| Reed | Reid | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | Grush | Grusch | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
-| DOSAR | DOPSR | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 | deal | DOE | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| Lacy | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| Lowsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| Lasksky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| OSAP | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| Bigalow | Bigelow | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| Reed | Reid | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
+| DOSAR | DOPSR | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md |
 
 ---
 

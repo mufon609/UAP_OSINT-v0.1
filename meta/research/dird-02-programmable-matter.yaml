@@ -334,13 +334,6 @@ naming_quirks:
   location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-02-programmable-matter-20091214.pdf
   resolution: preserve-as-sic-in-quotes
-- id: nq3
-  added_date: '2026-05-23'
-  observed: UNCLASSIFIED//FOR OFFICIAL USE ONLY (FOUO struck through)
-  canonical: UNCLASSIFIED//FOR OFFICIAL USE ONLY
-  location: 'every page banner — the FOUO marking is struck through with a black strike line'
-  source_path: government/dird-02-programmable-matter-20091214.pdf
-  resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-25'
   observed: AAWSA

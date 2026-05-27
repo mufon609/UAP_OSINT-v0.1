@@ -199,28 +199,28 @@ naming_quirks:
   canonical: Lacatski
   location: '[13:13]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-17'
   observed: collin
   canonical: Colm
   location: '[4:09]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-17'
   observed: column
   canonical: Colm
   location: '[12:25]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq6
   added_date: '2026-05-17'
   observed: allsap
   canonical: AAWSAP
   location: '[0:28]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq7
   added_date: '2026-05-17'
   observed: ossap
@@ -269,11 +269,11 @@ naming_quirks:
   canonical: AFOSI
   location: '[6:19]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq14
   added_date: '2026-05-17'
   observed: tick
   canonical: Tic Tac
   location: '[16:25]'
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant

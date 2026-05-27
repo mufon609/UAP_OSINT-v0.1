@@ -492,16 +492,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
-| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
 | Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
-| Dothraki | DOPSR | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
-| Burleson | Burlison | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
-| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
-| Bass | BAASS | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
 
 ---
 
@@ -512,6 +503,24 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 | Position | Counterpart | Source |
 |---|---|---|
 | AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| latsky | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| lakatsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| lykotsky | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md |
+| laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md |
+| Dothraki | DOPSR | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| Burleson | Burlison | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
+| Bass | BAASS | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |
 
 ---
 

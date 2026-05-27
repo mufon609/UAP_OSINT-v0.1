@@ -252,14 +252,14 @@ naming_quirks:
   canonical: AAWSAP
   location: '[14:02], [29:45]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-05-23'
   observed: 'ATP / atps'
   canonical: AATIP
   location: '[25:28], [29:45], [50:27]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-23'
   observed: 'Dr halud off'
@@ -280,7 +280,7 @@ naming_quirks:
   canonical: Pentagon
   location: '[55:23]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 description: 'Joe Rogan podcast with [`/people/luis-elizondo`].
 
 

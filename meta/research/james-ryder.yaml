@@ -335,7 +335,7 @@ naming_quirks:
     canonical: 'Lockheed Martin'
     location: 'sources/news/lucistrust-garment-of-god-video-page-snapshot.html'
     source_path: 'news/lucistrust-garment-of-god-video-page-snapshot.html'
-    resolution: preserve-as-sic-in-quotes
+    resolution: off-node-variant
   - id: nq2
     added_date: '2026-05-07'
     observed: 'ibx'

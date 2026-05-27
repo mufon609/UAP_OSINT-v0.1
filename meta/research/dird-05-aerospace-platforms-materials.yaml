@@ -524,24 +524,3 @@ naming_quirks:
   location: 'p. 3, Administrative Note'
   source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
   resolution: preserve-as-sic-in-quotes
-- id: nq2
-  added_date: '2026-05-24'
-  observed: '125 °Celsius / 175° Celsius (inconsistent degree-symbol spacing)'
-  canonical: °C
-  location: 'throughout body'
-  source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq3
-  added_date: '2026-05-24'
-  observed: C-CC Cs
-  canonical: C-CCs
-  location: 'p. 16, Table 1 (Above 550 °C row)'
-  source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
-  resolution: preserve-as-sic-in-quotes
-- id: nq4
-  added_date: '2026-05-24'
-  observed: Reusable Reentry Vehicle
-  canonical: Reusable Crew Modules
-  location: 'p. 13, ¶ Ti Alloys cross-reference (body) vs Contents entry and section heading'
-  source_path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
-  resolution: preserve-as-sic-in-quotes

@@ -928,7 +928,7 @@ naming_quirks:
   canonical: Dietrich
   location: "line 1092"
   source_path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq2
   added_date: '2026-04-21'
   observed: fraver
@@ -942,14 +942,14 @@ naming_quirks:
   canonical: Princeton
   location: "line 497"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-04-21'
   observed: nits
   canonical: Nimitz
   location: "lines 41-42, 52"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-04-21'
   observed: Nimttz

@@ -567,11 +567,11 @@ Group E — Sancorp Insider Threat contract preceded Kirkpatrick's request for c
 
 ---
 
-## Source-Form Notes
+## Name Variants
 
-Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
 
-| Source Form | Canonical | Source |
+| Variant Form | Canonical | Source |
 |---|---|---|
 | Mr. Kirkpatrick | Dr. Kirkpatrick | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf |
 

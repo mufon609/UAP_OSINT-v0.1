@@ -762,11 +762,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | USD(I) | USD(I&S) | government/pl-116-92-ndaa-fy2020.pdf |
 | USW (Intelligence & Security) | USD(I&S) | government/wargov-office-of-secretary-of-war.html |
 | AAITP | AATIP | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
-| AA WSAP | AAWSAP | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
 | DEfENSE PENTAGON | DEFENSE PENTAGON | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
 | ovember | November | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | CUl | CUI | government/dodig-2026-047-redacted-secure.pdf |
+
+---
+
+## Name Variants
+
+Non-canonical forms the cited primary source attests for an entity or name — auto-caption manglings, OCR variants, idiosyncratic abbreviations, alternate spellings — that are not quoted on this node. Catalogued for navigation and identity resolution; the canonical form is the repository's own label. (Source forms that DO appear in quoted text on this node are tabled under Source-Form Notes instead.)
+
+| Variant Form | Canonical | Source |
+|---|---|---|
+| AA WSAP | AAWSAP | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
 
 ---
 

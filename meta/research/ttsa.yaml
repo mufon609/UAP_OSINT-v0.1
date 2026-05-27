@@ -626,7 +626,7 @@ naming_quirks:
   canonical: Luis Elizondo
   location: TTSA 2018 homepage and multiple TTSA self-published materials
   source_path: news/tothestarsacademy-home-20180108.html
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-04-22'
   observed: metamateiiais
@@ -655,13 +655,6 @@ naming_quirks:
   location: SEC 1-A filing, directors section
   source_path: government/sec-ttsa-1a-partii-20170710.html
   resolution: use-canonical
-- id: nq7
-  added_date: '2026-04-22'
-  observed: 215 South Coast Hwy 101, Ste. U-38
-  canonical: Coast Hwy 101 complex, Encinitas CA (multi-suite)
-  location: CRADA 19-15 document, Collaborator address block (Elizondo mailing address)
-  source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
-  resolution: preserve-as-sic-in-quotes
 rumors:
 - id: r1
   added_date: '2026-04-22'

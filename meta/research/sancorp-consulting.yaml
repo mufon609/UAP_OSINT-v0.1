@@ -724,27 +724,13 @@ naming_quirks:
     location: 'AARO PWS, Section 5.6 task header'
     source_path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     resolution: preserve-as-sic-in-quotes
-  - id: nq9
-    added_date: '2026-04-30'
-    observed: 'artifical intelligence'
-    canonical: 'artificial intelligence'
-    location: 'HigherGov SAM.gov-derived capability description — SanCorp Consulting capabilities paragraph'
-    source_path: news/highergov-sancorp-profile-20260430.html
-    resolution: preserve-as-sic-in-quotes
   - id: nq10
     added_date: '2026-04-30'
     observed: 'SanCorp'
     canonical: 'Sancorp'
     location: 'HigherGov capability description first sentence'
     source_path: news/highergov-sancorp-profile-20260430.html
-    resolution: preserve-as-sic-in-quotes
-  - id: nq11
-    added_date: '2026-04-30'
-    observed: 'Identitiy'
-    canonical: 'Identity'
-    location: 'Sancorp navigation menu — CAPABILITIES heading'
-    source_path: news/sancorp-careers-20260430.html
-    resolution: preserve-as-sic-in-quotes
+    resolution: off-node-variant
   - id: nq12
     added_date: '2026-04-30'
     observed: '(b)(4)'

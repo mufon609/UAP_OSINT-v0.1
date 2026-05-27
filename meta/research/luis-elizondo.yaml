@@ -528,7 +528,7 @@ naming_quirks:
   canonical: 'Langley'
   location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [2:26]'
   source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 
 rumors: []
 

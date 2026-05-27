@@ -819,35 +819,35 @@ naming_quirks:
   canonical: Lacatski
   location: WEAPONIZED EP 38 (2023-10-16) — multiple occurrences in auto-caption
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq2
   added_date: '2026-05-17'
   observed: lakatsky
   canonical: Lacatski
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq3
   added_date: '2026-05-17'
   observed: lykotsky
   canonical: Lacatski
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq4
   added_date: '2026-05-17'
   observed: caskey
   canonical: Lacatski
   location: Mystery Wire 2021 — auto-caption
   source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq5
   added_date: '2026-05-17'
   observed: laty
   canonical: Lacatski
   location: WEAPONIZED EP 38 closing recap — auto-caption
   source_path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq6
   added_date: '2026-05-17'
   observed: Reed
@@ -868,26 +868,26 @@ naming_quirks:
   canonical: DOPSR
   location: WEAPONIZED EP 114 [1:11:57] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq9
   added_date: '2026-05-18'
   observed: Burleson
   canonical: Burlison
   location: WEAPONIZED EP 114 [1:14:06] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq10
   added_date: '2026-05-18'
   observed: Lakatski
   canonical: Lacatski
   location: WEAPONIZED EP 114 multiple occurrences in auto-caption (e.g., [56:38], [1:36:05])
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 - id: nq11
   added_date: '2026-05-18'
   observed: Bass
   canonical: BAASS
   location: WEAPONIZED EP 114 [1:29:42] — auto-caption
   source_path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
-  resolution: preserve-as-sic-in-quotes
+  resolution: off-node-variant
 rumors: []
