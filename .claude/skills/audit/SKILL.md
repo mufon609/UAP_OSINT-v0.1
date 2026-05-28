@@ -56,7 +56,7 @@ Target: **$ARGUMENTS** (ask the user if empty).
    then grep the regenerated body to confirm the change actually surfaces (a
    fix that lands only in an artifact-only lifecycle field never renders — move
    it to a rendered surface).
-6. **Re-validate:** `review-coverage.py` must pass all four checks; then the
+6. **Re-validate:** `review-coverage.py --all` must pass clean; then the
    full pre-commit chain. The user commits.
 
 For quote-heavy nodes (transcripts, hearings, podcast-heavy people), follow

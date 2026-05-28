@@ -25,8 +25,9 @@ python3 scripts/build/build-state.py --check
 1. `CLAUDE.md` — session-start checklist + current build state.
 2. `README.md` — what this repository is.
 3. `meta/conventions.md` — the evidentiary discipline.
-4. `meta/schema.yaml` — node types, required sections, vocabularies, the
-   research-artifact shape.
+4. `meta/schema.yaml` — node types, required sections, vocabularies; and
+   `meta/schema-research-artifact.yaml` — the research-artifact spec that drives
+   `validate-research.py`.
 5. `meta/roadmap.md` — active work + the architectural corrections that shaped
    the codebase.
 6. `meta/topic/research-queue.md` — current priority queue.
@@ -48,7 +49,7 @@ nothing red can be committed.)
 
 1. Report the current build state (node counts per type) from `CLAUDE.md`.
 2. Summarize the top 3 items in the research queue with rationale.
-3. Report the active roadmap sub-phase and what's queued next.
+3. Report the active roadmap step and what's queued next.
 4. Ask the user what to build or what task to run.
 
 Do not scaffold nodes without explicit direction. When the user directs a

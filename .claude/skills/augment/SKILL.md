@@ -78,10 +78,11 @@ the fix to the artifact and re-validate. The fix target is always artifact data.
 ## 4. OCR gate — before any worker
 
 Read the manifest entry for the source. If it is `extraction_type: ocr-scan` / `extraction-lossy`
-and lacks a verified same-stem `.txt` sibling, its extract is corrupt and **not worker-ready**.
-**HALT** and direct the user to run `/prepare-ocr-sibling {source}` (you cannot reliably dispatch a
-skill from here, and the worker has no Write tool to produce the sibling). Resume once the verified
-sibling is registered — `extract-source.py --artifact` then prefers it.
+and lacks a verified same-stem `.txt` sibling, its extract is corrupt and **not worker-ready**
+(the worker has no Write tool to produce the sibling). **Invoke `/prepare-ocr-sibling {source}` via
+the Skill tool — you are the main thread, so you can.** Only if your environment cannot dispatch a
+skill from here, **HALT** and direct the user to run it. Resume once the verified sibling is
+registered — `extract-source.py --artifact` then prefers it.
 
 ## 5. Rebuild, audit, close out
 
