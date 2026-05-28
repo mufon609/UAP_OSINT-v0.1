@@ -336,55 +336,50 @@ No upstream blockers; safe to pick up in any session. Default-focus tier.
 **The problem.** The toolkit layer survives `/fork-init` untouched (`fork-init`'s
 "What NOT to change": `meta/schema.yaml`, `meta/conventions.md`, `meta/templates/`,
 `scripts/`, the kept `prompts/`, `.claude/`), so it must explain every rule
-**generically**. It is instead seeded throughout with *this* instance's historic
-cases — specific witnesses, organizations, documents, and events used as
-illustrative examples in rule prose, spec comments, docstrings, and CLI-usage
-strings. On a fork those examples leak the prior subject into the new instance's
-toolkit. Neutrality is mechanically enforced **only** on `.claude/`
-(`scripts/tests/skills-check.sh`, and only for the literal subject token), so the
-`meta/` governance docs and `scripts/` have no guard and have drifted.
+**generically**. It is instead seeded with *this* instance's historic cases —
+specific witnesses, organizations, documents, and events used as illustrative
+examples in spec comments, docstrings, CLI-usage strings, and rule prose. On a
+fork those examples leak the prior subject into the new instance's toolkit.
+Neutrality is mechanically enforced **only** on `.claude/`
+(`scripts/tests/skills-check.sh`, and only for the literal subject token), so
+files outside that guard have no protection and drift accumulates.
 
-**In scope (investigate + genericize).** `meta/conventions.md`, `meta/schema.yaml`,
-`meta/memory.md`, `scripts/`. The same leak class also appears in
-`meta/schema-research-artifact.yaml`, `meta/templates/`, `prompts/web-claude-*`,
-and `.claude/agents/worker.md` — fold them into the same pass (the finder below
-surfaces them). `meta/memory.md` showed 0 hits on a curated grep; confirm clean
-or catch what the grep missed.
+**In scope (investigate + genericize).** `scripts/`, `meta/templates/`,
+`prompts/web-claude-*`, and `.claude/agents/worker.md`. The leak class includes
+`new.py` CLI-usage strings (`--slug skinwalker-ranch`, `--slug
+written-testimony-fravor-2023`), renderer/check code comments keyed to specific
+documents (DIRD-numbering notes carrying `dird-02` / `dird-24` / `dird-26` as
+citation-marker examples in `scripts/build/renderers/document.py` and
+`scripts/checks/cited_works_uncaptured.py`, `# (e.g. "David Fravor")`,
+`coverage-suggest.py` sample output `"Targ"`, `"Lockheed"`, `"Puthoff"`), and
+worked-example templates.
 
 **Out of scope (leave as-is).** `meta/BACKLOG.md` and `meta/sources-access.md` —
 their node references are legitimate instance work-tracking and site-access notes
 that must name the cases they concern, not rules dressed in historic examples.
 
-**Scale (curated-grep floor; real count higher).** ~59 in conventions.md, ~38
-across ~11 `scripts/` files, ~4 in schema.yaml (+~12 in
-schema-research-artifact.yaml). Representative leaks: OCR/caption mis-transcription
-examples built from real surnames (`Bigalow`→`Bigelow`, `lockie Martin`→`Lockheed
-Martin`, `Kurpatre`→`Kirkpatrick`); `new.py` usage strings (`--slug
-skinwalker-ranch`, `--slug written-testimony-fravor-2023`); renderer/check comments
-keyed to specific documents (DIRD-numbering notes, `# (e.g. "David Fravor")`, `#
-"Per Fravor," doesn't flag "Per"`); `coverage-suggest.py` sample output `"Targ",
-"Lockheed", "Puthoff"`.
-
-**Method (mechanical finder, not a curated regex — a hand-list undercounts; it
-already missed `Baibich`, `uss-princeton`, `Sol Foundation`, `Stargate`).** Derive
-the topic-entity lexicon from the content layer — slugs plus `name:`/alias fields
-across the content-node directories, `meta/research/`, and `meta/topic/` — then
-flag any toolkit file containing those tokens. Exhaustive and fork-safe (the
-lexicon regenerates per instance). Genericize each hit: `{type}`/`{slug}`/
-`{display_name}` placeholders for path/CLI examples; neutral invented stand-ins or
-generic descriptors for prose, preserving each example's instructional point.
+**Method (mechanical finder, not a curated regex — a hand-list undercounts; the
+missing tokens are not obvious to guess, e.g. `Baibich`, `uss-princeton`,
+`Sol Foundation`, `Stargate`).** Derive the topic-entity lexicon from the content
+layer — slugs plus `name:`/alias fields across the content-node directories,
+`meta/research/`, and `meta/topic/` — then flag any toolkit file containing those
+tokens. Exhaustive and fork-safe (the lexicon regenerates per instance).
+Per-example disposition: delete the example outright when it is restatement of
+the rule beside it (the rule stands alone); otherwise genericize to neutral
+invented stand-ins or `{type}` / `{slug}` / `{display_name}` placeholders,
+preserving the example's instructional point.
 
 **Follow-on — close the enforcement gap.** Promote the finder to a
 `scripts/checks/` gate wired into `pre-commit.sh` (sibling to `skills-check.sh`,
 but covering the whole toolkit surface and keyed off the derived content-entity
-lexicon, not just the subject token). This is the missing guard that let the drift
-accumulate; without it the cleanup regresses silently.
+lexicon, not just the subject token). This is the missing guard that lets the
+drift accumulate; without it the cleanup regresses silently.
 
 **Open sub-question (decide during the work).** Whether to also genericize the
-*subject token* `UAP`/`UFO` → `{display_name}` in toolkit files (~25 hits).
-`skills-check.sh` already forbids the literal token in `.claude/`; extending that
-to the rest of the toolkit is the strictly-correct end state but is separable from
-purging the named historic cases.
+*subject token* `UAP` / `UFO` → `{display_name}` in the remaining toolkit files.
+`skills-check.sh` already forbids the literal token in `.claude/`; extending
+that to the rest of the toolkit is the strictly-correct end state but is
+separable from purging the named historic cases.
 
 **Blocks:** none.
 **Blocked by:** none.
@@ -407,6 +402,28 @@ numbers single-sourced in their table; orientation-grade overlap allowed); (c)
 whether the `description_token_drift` check needs any change (it checks grounding,
 not overlap, so likely none). Produce a recommended wording, then edit the
 convention and record the rationale.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C3 — Single canonical home for the OCR/caption mis-transcription example
+
+The same OCR/caption character-corruption failure-mode illustration appears in
+three governance docs: `meta/schema.yaml` (the `auto-caption` value
+description), `meta/schema-research-artifact.yaml` (the same value description
+on `quote_entry`), and `meta/conventions.md` (the transcript-provenance
+discipline section). Same example, three places to keep in sync, three drift
+surfaces.
+
+The fix is single-source-of-truth: pick one canonical home, have the others
+reference it by section name (which is a durable contract per `meta/conventions.md`
+"Comments describe code, not refactor history"). Likely canonical is
+`meta/conventions.md` "Transcript provenance and audit discipline" — that's
+where the failure-mode rule is taught in prose; the schema-side comments would
+then say "see conventions.md '<section name>' for the auto-caption failure
+mode" and drop the example list. Verify the candidate's section name is stable
+(no near-term rename pressure) and that the schema-side comments read cleanly
+without the inline example list before making the cut.
 
 **Blocks:** none.
 **Blocked by:** none.
