@@ -165,9 +165,9 @@ The same `.txt`-sibling preference handles `extraction_type:
 extraction-lossy` sources — text-native PDFs whose extracted text is
 **pervasively** unreliable for non-OCR reasons: stenographic-format
 noise (inline line-number prefixes and page-footer triplets on every
-line, as in the Alderson court-reporter Senate transcripts) or
-systematic Unicode-mapping corruption across the document. A
-2026-05-04 evaluation of the Unicode-mapping failure mode (`11½`
+line, as in court-reporter transcripts) or
+systematic Unicode-mapping corruption across the document.
+Evaluation of the Unicode-mapping failure mode (`11½`
 encoded as byte `\x87` → U+2021 in the embedded font's CMap) confirmed
 the corruption lives in the source PDF's content stream itself:
 `pdftotext`, `mutool`, and `pypdf` all faithfully reproduce the same
@@ -181,9 +181,7 @@ natively-paginated text layer marred by only a *sparse, isolated*
 glyph artifact — a single `11½`→`‡` in one passage of an otherwise
 pristine transcript — does **not** warrant hand-transcribing the
 document. That manufactures a large, drift-prone artifact to repair
-one character (and in the case that prompted this rule, a
-hand-pagination that diverged from the PDF's real physical pages — the
-manual work introduced an error `pdftotext` did not have). Such a
+one character. Such a
 source stays `text-native`: `pdftotext` is the canonical extract
 (natively paginated, so `p. N` resolves for free against its form
 feeds), and the isolated glyph is handled at the point of use —
@@ -214,8 +212,8 @@ output looks clean on a casual read. The signals to check:
 - **Producer-string heuristic.** Run `pdfinfo` on the PDF and check
   the Producer / Creator fields. OmniPage CSDK, AINSLIB.OCR, ABBYY
   FineReader, and Tesseract producers all warrant inspection even
-  when the extract looks clean. (One PDF in the Phase F corpus audit had
-  a clean extract despite OCR producer metadata; that's the
+  when the extract looks clean. (Some PDFs have a clean extract
+  despite OCR producer metadata; that's the
   exception case — flagged `ocr-scan` with a verification note
   instead of producing a `.txt` sibling. Most OCR-produced PDFs need
   the sibling.)
@@ -235,8 +233,7 @@ interchangeable; the independent-verification step is what closes the
 trust gap. Pick the path that fits the document's shape.
 
 1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
-   despite OCR-suggesting producer metadata (the Phase F corpus
-   audit surfaced one such case). Run `pdftotext -layout source.pdf`, diff
+   despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
    the output against the rendered page, and copy to the sibling
    path if clean. Lowest effort; only viable when the layer happens
    to be reliable. The validator's `extract_source_text` already
@@ -385,7 +382,7 @@ source may enter the corpus before a contributor produces its clean-text
 sibling — the
 validator falls back to `pdftotext` output of the OCR'd PDF in that
 case, and OCR character-corruptions (`telated` for `related`,
-`compatrtmented` for `compartmented`, `bigalow` for `bigelow`) pass the
+`compatrtmented` for `compartmented`, `appatently` for `apparently`) pass the
 verbatim-quote check because both the quote text and the source extract
 carry the same corruption. The check is mechanically correct but reader-
 misleading — confirmation against the OCR-corrupted extract is not
@@ -401,8 +398,8 @@ both required, when authoring a quote from such a source:
    substitution of the canonical form would make the verbatim-quote
    check fail AND erase the source-form-as-archived discipline. When
    the canonical form needs to appear in prose elsewhere, wrap a
-   backtick-bracket path on the canonical target — e.g., `"lockie
-   Martin" [`/organizations/lockheed-martin`]` — the prose-drift check
+   backtick-bracket path on the canonical target — e.g., `"acme
+   widgits" [`/organizations/acme-widgets`]` — the prose-drift check
    strips the bracket wrap before tokenizing, so the source-verbatim
    token matches against source while the canonical wrap provides
    navigability.
@@ -418,7 +415,7 @@ text has a reference table directly on the node body — no separate
 prose flag required. Adding a one-sentence prose flag in
 `credibility_notes` / `description` remains optional when the
 source-form pattern is particularly load-bearing for a specific
-evidentiary claim (the Grusch q157 + PPD-19 cases are examples), but
+evidentiary claim, but
 is not the primary reader-visibility mechanism.
 
 After registering the naming_quirks entries, re-grep **the passages
@@ -473,14 +470,14 @@ required:
    Every *synthesized* surface the repo authors in its own voice —
    `display_title`, `quote_attribution`, the `description` prose,
    cross-reference labels, and the canonical node name — uses the **canonical**
-   form (here, "Advanced Aerospace Weapon System Applications Program
-   (AAWSAP)"). The repo never adopts a source's idiosyncratic abbreviation as
-   its own label: a `display_title` that reads "AAWSA Program" instead of
-   "AAWSAP" is the deeper version of this defect — the variant leaking out of
-   the verbatim layer into the repo's own naming. The quote still carries
-   "AAWSA" verbatim and is still flagged (below); canonicalizing the synthesized
-   surfaces does not remove that need, it just stops the variant from
-   masquerading as the repo's chosen name.
+   form (say, "Advanced Materials Research Program (AMRP)"). The repo never
+   adopts a source's idiosyncratic abbreviation as its own label: a
+   `display_title` that reads "AMR Program" instead of "AMRP" is the deeper
+   version of this defect — the variant leaking out of the verbatim layer into
+   the repo's own naming. The quote still carries "AMR Program" verbatim and is
+   still flagged (below); canonicalizing the synthesized surfaces does not
+   remove that need, it just stops the variant from masquerading as the repo's
+   chosen name.
 2. **Register a `naming_quirks` entry** mapping the observed source
    form → canonical name + source path. Choose the resolution by
    whether the variant is quoted on this node: when the source form
@@ -495,8 +492,8 @@ required:
    built** (per *Cross-reference paths to unbuilt nodes — use a stub,
    never null*). In prose, wrap the source-verbatim form with the
    canonical bracket path so the prose-drift check still matches the
-   source token — e.g. `Advanced Aerospace Weapon System Applications
-   (AAWSA) Program [`/organizations/aawsap`]`.
+   source token — e.g. `Advanced Materials Research (AMR) Program
+   [`/organizations/amrp`]`.
 
 The failure mode this closes: a source's own abbreviation reads as
 legitimate document text, so it slips past the OCR-artifact radar (it is
@@ -504,11 +501,7 @@ not a corruption), and because its canonical node isn't built there is no
 name-match to trigger a cross-reference — so the reference is dropped and
 the variance goes unflagged. **An entity referenced under a variant form
 is not glossed over because its node doesn't exist yet; it is stubbed and
-flagged.** Worked example: the AAWSAP DIRDs write "Advanced Aerospace
-Weapon System Applications (AAWSA) Program" — "AAWSA" stays verbatim, a
-`naming_quirks` entry maps it to the Advanced Aerospace Weapon System
-Applications Program, and the program is stub-linked
-`[`/organizations/aawsap`]` though that node is unbuilt.
+flagged.**
 
 ### Off-node variants — catalogued, not on the node
 
@@ -539,10 +532,10 @@ navigational value → drop the entry.
 Transcripts of speech sources split into two evidentiary classes by
 how the audio-to-text transcription happened:
 
-**Human-produced transcripts** (stenographic court reporting like
-Alderson Court Reporting; outlet-published transcripts with human
-editorial review against audio — NYTimes transcript service, Federal
-News Network, broadcast transcripts where the outlet's process
+**Human-produced transcripts** (accredited stenographic court
+reporting; outlet-published transcripts with human editorial review
+against audio — a national news outlet's or wire service's transcript
+service, broadcast transcripts where the outlet's process
 includes audio confirmation). The human has already done the audio-
 to-text confirmation. These are equivalent-footing primary sources —
 the validator's substring match against the transcript file is
@@ -555,9 +548,9 @@ Whisper output, any other machine-generated caption file with no
 human correction step). The caption file IS the machine extraction
 of an underlying audio/video signal — structurally the same shape as
 the OCR text layer of a scanned PDF. Failure mode: character-level
-mis-transcription (`Bigalow` for `Bigelow`, `lockie Martin` for
-`Lockheed Martin`, `Kurpatre` for `Kirkpatrick`, `Jim laty` for `Jim
-Lacatski`). When both quote text and caption file carry the same
+mis-transcription (`Halverson` for `Halvorsen`, `acme widgits` for
+`Acme Widgets`, `Petrakis` for `Petrakos`, `Dan ricco` for `Dan
+Rizzo`). When both quote text and caption file carry the same
 machine artifact, the verbatim-quote check passes trivially — the
 textbook auto-caption blind spot. The `transcript_provenance` value
 `auto-caption` marks these sources; the underlying audio/video is
@@ -570,9 +563,6 @@ the canonical original. Audit handling mirrors `ocr-scan`:
   Source-Form Notes); a mangling catalogued for speaker-identity
   resolution but not present in any on-node quote is `off-node-variant`
   (renders in Name Variants — see *Off-node variants* above).
-  Examples already in the corpus: `Bigalow`→`Bigelow`,
-  `lockie Martin`→`Lockheed Martin`, `Jim laty`→`Jim Lacatski`,
-  `alzando`→`Elizondo`.
 
 - **Programmatic suspect-pattern scan** on caption files: same
   character-cluster heuristics that detect OCR mis-reads
@@ -730,8 +720,8 @@ speakers entry — `Name ([`/people/slug`])` when the speaker has a
 unidentified panelists).
 
 The bright line: `context` carries circumstance prose (venue, format,
-neighboring exchange — "opening statement", "Q&A exchange with Rep.
-Burchett", "Lacatski continuing his prepared statement"); `speaker_id`
+neighboring exchange — "opening statement", "Q&A exchange with a
+committee member", "the witness continuing his prepared statement"); `speaker_id`
 carries who-said-it. Two contributors authoring quotes from the same
 source can disagree on circumstance phrasing without diverging on the
 attribution — the structural reference is what validates and renders.
@@ -747,8 +737,8 @@ Three failure modes the structural reference closes:
   to recover the speaker assignment. The structural reference makes
   the assignment self-documenting.
 - **Renderer inconsistency.** Hand-formatted Attributed-to strings
-  varied in how they named speakers ("Lacatski" vs "Dr. James
-  Lacatski" vs "Dr. Lacatski"). Mechanical lookup from `speakers[]`
+  varied in how they named speakers ("Halvorsen" vs "Dr. Jane
+  Halvorsen" vs "Dr. Halvorsen"). Mechanical lookup from `speakers[]`
   produces one consistent rendered form per identity.
 
 The accompanying `speaker_baseline_consistency` check
@@ -772,19 +762,19 @@ source cited.
 
 The bright lines:
 
-- **First-person utterance.** "I saw a Tic Tac"; "I was the cofounder
+- **First-person utterance.** "I saw the object"; "I was the cofounder
   of …"; a press-release quote attributed to the subject. Belongs in
   Statements.
 - **Co-authored academic publications.** The subject is named in the
   author byline and the passage is collectively-authored prose.
   Belongs in Statements when the substantive content is the subject's
-  own research, position, or institutional claim (1974 Targ + Puthoff
-  Nature abstract reporting SRI experimental results: yes). May be
-  skipped when the byline is the only subject-relevant fact and the
-  passage's substance is technical content unrelated to the subject
-  as a person (1991 Targ et al. lidar abstract about windshear
-  detection: byline establishes affiliation, but the prose isn't
-  meaningful as a Targ statement). Either way, the publication itself
+  own research, position, or institutional claim (a co-authored
+  journal abstract reporting the subject's experimental results: yes).
+  May be skipped when the byline is the only subject-relevant fact and
+  the passage's substance is technical content unrelated to the subject
+  as a person (a co-authored technical paper on an unrelated topic:
+  byline establishes affiliation, but the prose isn't meaningful as a
+  statement by the subject). Either way, the publication itself
   remains the primary-source attestation of the affiliation — captured
   via the corresponding `affiliations[]` / `timeline[]` row pointing
   at the paper.
@@ -851,26 +841,20 @@ secondary-source, contested — the `significance` H3 header carries
 an explicit hedge phrase so readers see the epistemic framing before
 they read the quote text. Examples:
 
-- "DeLonge email to Podesta — claim-of-record regarding McCasland,
-  Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
-  not independently verified)"
-- "Self-attested capacity, contested by AARO record"
+- "Self-attested capacity, contested by the official record"
 - "Claim-of-record — secondary-source attestation only"
 
 The hedge appears in the H3 header where readers see it BEFORE
-reading the blockquote. The TTSA artifact's q5 DeLonge-Podesta email
-is the surfacing case: chronological promotion to position 1 (over
-later SEC filings) risked the ordering being read as an epistemic
-endorsement; the hedge phrase keeps the order chronological but
-inoculates against that reading. No schema change; contributor
-discipline at the `significance` field.
+reading the blockquote. A chronologically-promoted low-weight quote
+can otherwise be read as an epistemic endorsement; the hedge phrase
+keeps the order chronological but inoculates against that reading.
+No schema change; contributor discipline at the `significance` field.
 
 ### Hearing events as venues
 
-An event is a venue, not a speaker. The prior `What The Hearing
-Established` synthesis section is collapsed into `Witnesses & Testimony`,
-a cross-reference table pointing at each witness's transcript and
-written-testimony nodes. What a hearing "established" is the verbatim
+An event is a venue, not a speaker. Hearings carry a `Witnesses &
+Testimony` cross-reference table pointing at each witness's transcript
+and written-testimony nodes. What a hearing "established" is the verbatim
 record those linked nodes carry; the event node navigates to them
 rather than paraphrasing.
 
@@ -978,11 +962,11 @@ flagged token drives to one of two outcomes:
    prose. The wrapped link path renders canonically regardless of
    the surrounding prose token.
 
-3. **Source-form vs canonical-form naming variance** (source `Lue`
-   vs canonical `Luis`; source `Keane` vs canonical `Kean`;
-   source `Bigalow` vs canonical `Bigelow`): wrap the source form
-   in the canonical link path — e.g., `Lue Elizondo
-   ([`/people/luis-elizondo`])`. The prose-drift check strips the
+3. **Source-form vs canonical-form naming variance** (source `Sue`
+   vs canonical `Susan`; source `Halverson` vs canonical
+   `Halvorsen`; source `Petrakis` vs canonical `Petrakos`): wrap the
+   source form in the canonical link path — e.g., `Sue Halvorsen
+   ([`/people/susan-halvorsen`])`. The prose-drift check strips the
    wrap before tokenizing, so the source token matches against
    source while the canonical wrap provides navigability. Log the
    variance in `naming_quirks` with a resolution that captures its
@@ -1033,11 +1017,11 @@ by a separate source, or by structured metadata, rather than by this node's own
 primary-source text — therefore cannot be asserted in this node's `description`
 prose. Carry it navigationally instead: a cross-reference link to the node or
 source that *does* attest it, plus a structured field (`context_extrinsic`,
-`naming_quirks`) that records it out of the prose-drift scope. Example: a DIRD
-whose author line is `(b)(6)`-redacted on the document but identified in the
-DIA→Congress products list — the author is carried by the link
-(`[/people/…]`, `[/documents/dia-aatip-products-list-2018]`) and held in
-`context_extrinsic`, never named in the description prose (dird-24, dird-26).
+`naming_quirks`) that records it out of the prose-drift scope. Example: a
+document whose author line is `(b)(6)`-redacted on the source but identified
+in a separate agency index — the author is carried by the link
+(`[/people/…]`, `[/documents/{agency-index-slug}]`) and held in
+`context_extrinsic`, never named in the description prose.
 The document's own `authors_per_document` records the redaction verbatim
 (`['[redacted per FOIA (b)(6)]']`) and stops — never substitute the
 externally-attested name into this document's intrinsic authorship; that name is
@@ -1056,10 +1040,9 @@ cover / title page, not in the document's content prose, so the prose-drift pool
 always to *relocate*, not rephrase (the Document Summary table + Key Passages
 already render the provenance). Draft the `description` from the document's own
 substantive content — what it argues, finds, or proposes, in its own words — and
-let the structured surfaces carry the provenance. Observed costing 4+ wasted
-prose-drift passes per DIRD before the description was stripped back to content
-(dird-02, dird-26); check-vocab correctly returns "absent, no suggestion" for the
-provenance tokens, which is itself the signal to relocate rather than reword.
+let the structured surfaces carry the provenance. Check-vocab correctly
+returns "absent, no suggestion" for the provenance tokens, which is itself
+the signal to relocate rather than reword.
 
 ### Density is source-driven
 
@@ -1104,7 +1087,7 @@ whether a contradiction is attested — those are source-*presence*
 questions, answered by reading the source, not density questions. The
 misread to refuse is "these references aren't load-bearing, so leave
 `cited_works` empty": a source-attested reference list is captured
-*because the source carries it* (the DIRD passage rubric below names
+*because the source carries it* (the passage rubric below names
 References as a capture category, and `cited_works` is required-but-
 emptyable on every document artifact); `cited_works_uncaptured` errors
 when an empty list leaves a detectable source reference list uncaptured.
@@ -1199,7 +1182,7 @@ itself:
 | Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
 | Multi-page document where paragraph anchors aren't available — either the document lacks paragraph structure, or `pdftotext -layout` collapses visually-distinct paragraphs on a page into a single block (in which case ¶1 would overstate the precision the extract can deliver) | `p. N` |
 | OCR-scan / extraction-lossy PDF whose canonical extract is a clean-text `.txt` sibling (markerless — see below) | A **descriptive content anchor** drawn from the document's own structure: a named block, section title, or reference entry — e.g. `title-page identity block`, `Administrative Note`, `section "Deuterium as the Preferred Nuclear Rocket Fuel"`, `References, entry [8]`. **Not** `p. N` — the sibling carries no page markers, so a physical-page integer can be neither read off the extract nor verified. |
-| FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers (e.g., `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt`). Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
+| FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers. Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
 | The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
 
 **`p. N` is the physical page** — the page a PDF viewer's counter shows,
@@ -1467,7 +1450,7 @@ evidence on each side:
 - **`❌ Contradiction`** — positions directly contradict **and at
   least one side is backed by primary-source evidence**. Two shapes:
   (a) both sides have primary-source evidence that conflicts (e.g.,
-  AARO HRR Vol I finding vs. a FOIA-released DIRD document);
+  an agency report's finding vs. a FOIA-released document);
   (b) one side has primary-source evidence, the other rests on
   self-attestation or on-record claim alone (e.g., DoD PA official
   denial vs. individual's self-reported role). In either shape, each
@@ -1530,9 +1513,8 @@ A node whose sources attest no non-canonical name form correctly carries no
 **Family axes.** "Comparable" means same `type`, and within type the same
 `archetype` (people) or `kind` (organizations, documents, events) — the grouping
 the schema already uses to decide conditional sections. No separate "family"
-field exists or is needed. The `gov` organizations (aaro, ipmo, oni, ousd-is,
-uaptf) are one family; the `eyewitness` people (fravor, dietrich, graves)
-another.
+field exists or is needed. The `gov` organizations are one family; the
+`eyewitness` people another.
 
 **In scope — source-anchored surfaces only.** The treatment that must converge
 is the evidentiary handling of source material, which surfaces as the optional
@@ -1561,25 +1543,23 @@ the same class of material, and to add an entry only if a source attests it.
 "Peer X has this section; add entries until this node matches" is exactly the
 pressure the density rule prohibits, and it stays prohibited.
 
-### Document-corpus extraction — the DIRD passage rubric
+### Document-corpus extraction — the passage rubric
 
 The same principle governs *within* a document corpus, where the unit of
-divergence is not a section but a category of passage. The AAWSAP Defense
-Intelligence Reference Documents (DIRDs) are commissioned program products whose
-substance is relevant by program proxy; built one per session, they drifted to a
-~10× range in extraction density because each worker judged "load-bearing"
-afresh with no shared selection rule. The rubric below replaces that judgment
-with a category checklist, so density falls out of consistent selection rather
-than becoming a target in its own right.
+divergence is not a section but a category of passage. Commissioned-program
+documents built one per session drift to wide ranges in extraction density
+when each worker judges "load-bearing" afresh with no shared selection rule.
+The rubric below replaces that judgment with a category checklist, so density
+falls out of consistent selection rather than becoming a target in its own
+right.
 
 **Slug convention for a serially-released corpus.** A node in a numbered set of
-released documents (e.g. the FOIA-released DIRDs) is slugged
-`{corpus}-{release#}-{short-title}` with NO date (`dird-03-pulsed-hpm`, not
-`dird-…-20100128`): siblings then sort and cross-reference by release number, and
-inbound stub references reconcile to that one form. The date lives in
-`internal_date` / the manifest, not the slug.
+released documents (e.g. a FOIA-released set) is slugged
+`{corpus}-{release#}-{short-title}` with NO date: siblings then sort and
+cross-reference by release number, and inbound stub references reconcile to
+that one form. The date lives in `internal_date` / the manifest, not the slug.
 
-Every DIRD node captures, where the source contains it:
+Every node in such a corpus captures, where the source contains it:
 
 - **Provenance / front matter** — title, author(s), preparing organization,
   date, contract/administrative markings.
@@ -1587,14 +1567,13 @@ Every DIRD node captures, where the source contains it:
   it surveys.
 - **Each major section's finding** — the load-bearing claim or result of every
   numbered section, not only the summary. This is the category most often
-  dropped (dird-24 captured its frame and endpoints but none of its Section I–VI
-  body); capturing it is what levels an under-extracted DIRD up.
+  dropped; capturing it is what levels an under-extracted node up.
 - **Methods / approach** — how the work the document characterizes was or would
   be done, where the source describes it.
 - **Conclusions / recommendations** — the document's closing assessment and any
   recommended next steps.
 - **Acknowledgements** — named contributors and collaborating institutions (an
-  authorship-network signal; e.g. dird-24 acknowledges Puthoff).
+  authorship-network signal).
 - **References** — the formal citation list, captured as `cited_works[]` (see
   the document-artifact schema), not as `quotes[]`.
 
@@ -1602,8 +1581,8 @@ Every DIRD node captures, where the source contains it:
 substantive source paragraphs that no quote references, which the contributor
 reads against this rubric to find a section finding that was skipped. The rubric
 names what must be *considered*; the source still decides what is *present*. It
-is not a quote-count target — a short DIRD with few sections yields few quotes,
-and that is correct.
+is not a quote-count target — a short document with few sections yields few
+quotes, and that is correct.
 
 ---
 
@@ -1658,11 +1637,11 @@ so a self-reference in `id` / `target_node` is not a violation.
 Entity nodes (people, organizations, documents, events, transcripts,
 media, locations) carry **facts**: single-source attestations,
 including load-bearing facts that name other entities. The fact
-"Grusch on JRE #2065 named Lockheed Martin as the contractor he
-provided to the ICIG" is a fact about Grusch — it lives on his
-person node and on the JRE transcript node and (because it's load-
-bearing for Lockheed Martin) on the Lockheed Martin organization
-node. Same primary source; three entity-side fact records. None of
+"witness W on transcript T named organization O as the contractor
+they reported to investigators" is a fact about W — it lives on
+W's person node, on T's transcript node, and (because it's
+load-bearing for O) on O's organization node. Same primary source;
+three entity-side fact records. None of
 them speculates beyond what the source attests.
 
 Entity nodes keep cross-node links, `## Associated Nodes`, structural
@@ -1753,12 +1732,12 @@ primary sources are read together. No single source establishes the
 pattern; the synthesis is the cross-source convergence (or
 divergence on a single question).
 
-Grusch on JRE naming Lockheed = fact (one source, one statement).
-Lockheed's consistent refusal to deny across three Liberation Times
-moments over 16 months = finding (three sources, the pattern is the
-consistency). Lacatski authoring SD004 page 1 (anonymous in SD004,
-named in Elizondo QFR, entered into House record) = finding (three-
-source chain establishing authorship).
+A witness on a single podcast naming a contractor = fact (one source,
+one statement). A company's consistent refusal to deny across three
+news outlets' inquiries over a year = finding (three sources, the
+pattern is the consistency). A person authored a document
+anonymously (named in a separate filing, entered into the public
+record) = finding (three-source chain establishing authorship).
 
 ### Promotion thresholds
 
@@ -1830,12 +1809,12 @@ streamed interviews — three classes of entity must appear as
 corresponding `timeline[].event` text):
 
 - **Venue** — the organization that hosts or distributes the
-  appearance (WEAPONIZED → `/organizations/weaponized`; the Joe Rogan
-  Experience → `/organizations/joe-rogan-experience`; the Sol
-  Foundation Symposium → `/organizations/sol-foundation`).
+  appearance (a podcast or video show → `/organizations/{slug}`;
+  a foundation's symposium → `/organizations/{slug}`).
 - **Host / interviewer / moderator** — the person conducting the
-  appearance (George Knapp on WEAPONIZED; Joe Rogan on JRE).
-  Structurally distinct from the subject of the appearance.
+  appearance (the show's host on each episode, the panel moderator
+  at a symposium). Structurally distinct from the subject of the
+  appearance.
 - **Transcript-to-be** — the transcript node where the verbatim
   evidence will live, wrapped with its forward-looking path even
   before the transcript node is built. The broken-link registry
@@ -1860,11 +1839,8 @@ the broken-link registry (the Priority Build Queue) and the auto-generated
 that surfaces in neither — the attested affiliation or relationship then
 never becomes a build candidate and isn't navigable, dropping a real
 cross-reference on the floor. For example, an institutional actor's prior
-`U.S. Army` / `U.S. Joint Special Operations Command` service takes
-`/organizations/us-army` / `/organizations/jsoc` even with no such node
-built — exactly as `ronald-moultrie`'s affiliations carry
-`/organizations/us-air-force`, `/organizations/cia`, and others ahead of
-their nodes. Same body-wrap-is-load-bearing mechanism as above.
+affiliation with another organization takes `/organizations/{slug}` even
+with no such node built. Same body-wrap-is-load-bearing mechanism as above.
 
 ---
 
@@ -1943,8 +1919,7 @@ across the whole manifest).
 ## Scope
 
 The repository is a general-purpose primary-source investigation
-toolkit. Its first instance documents UAP-related public-record
-material, but the schema and structure are topic-neutral. Any
+toolkit; the schema and structure are topic-neutral. Any
 investigation grounded in primary sources — historical event, legal
 case, policy decision, scientific controversy — can use the same
 structure.
@@ -1959,8 +1934,8 @@ Three tiers, each with a different organizing principle:
 `/people/`, `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
 `/media/`, `/locations/`, `/findings/` each hold single-level `slug.md`
 files. `/sources/` is flat within each category subdirectory. A
-researcher looking for `/people/david-grusch.md` finds it one click in
-— no `/people/whistleblowers/intelligence-community/david-grusch.md`
+researcher looking for `/people/{slug}.md` finds it one click in
+— no `/people/{archetype-category}/{sub-category}/{slug}.md`
 nesting. The frontmatter (archetype, kind, status) carries the
 categorization that hierarchy would otherwise impose.
 
