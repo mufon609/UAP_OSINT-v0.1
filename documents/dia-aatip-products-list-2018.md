@@ -193,6 +193,12 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

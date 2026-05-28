@@ -101,6 +101,12 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

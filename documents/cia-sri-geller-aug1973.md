@@ -180,6 +180,12 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

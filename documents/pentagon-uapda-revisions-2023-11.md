@@ -179,6 +179,12 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

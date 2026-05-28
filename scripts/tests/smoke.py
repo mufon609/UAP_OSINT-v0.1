@@ -269,6 +269,19 @@ def run_research(label: str, target: str, steps: tuple) -> list:
         return results
     results.append(Result(f"{label} scaffold", True))
 
+    # Document fixtures: the scaffolder writes `cited_works: ""` so the
+    # contributor is forced to choose the affirmation (NONE | IGNORED |
+    # entries) — see meta/conventions.md "cited_works affirmation". The
+    # smoke test mirrors that minimum-population step by flipping the
+    # placeholder to NONE before validate-research runs; the per-fixture
+    # smoke contract is "scaffold + minimum population → validate
+    # cleanly," not "scaffold alone is committable."
+    if target.startswith("documents/"):
+        p = Path(artifact)
+        text = p.read_text(encoding="utf-8")
+        text = text.replace("cited_works: ''", "cited_works: NONE", 1)
+        p.write_text(text, encoding="utf-8")
+
     rc, out, err = _call_main("validate-research", [artifact, "--quiet"])
     if rc != 0:
         results.append(Result(f"{label} validate-research", False,

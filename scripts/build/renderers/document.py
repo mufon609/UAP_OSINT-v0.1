@@ -65,7 +65,8 @@ def _has_physical_page_ref(artifact):
         src = q.get("source") if isinstance(q, dict) else None
         if isinstance(src, dict) and _scan(src.get("location")):
             return True
-    for cw in (artifact.get("cited_works") or []):
+    cw_value = artifact.get("cited_works")
+    for cw in (cw_value if isinstance(cw_value, list) else []):
         src = cw.get("source") if isinstance(cw, dict) else None
         if isinstance(src, dict) and _scan(src.get("location")):
             return True
@@ -182,19 +183,53 @@ def render_key_passages(artifact):
 
 
 def render_cited_works(artifact):
-    """Document References — the source document's formal citation list,
-    transcribed verbatim (source spelling preserved, OCR sic). Emits only
-    when ``cited_works[]`` has entries; a document with no reference list
-    (empty list) omits the section entirely.
+    """Document References — the three-state cited_works affirmation.
 
-    Renders each entry's ``citation_verbatim`` as a keyed bullet (soft-wrap
-    newlines collapsed to spaces — the same whitespace normalization the
-    citation-verbatim check applies). The split bibliographic fields
-    (``author`` / ``year`` / ``title``) are the artifact-side query
-    dimension (recurring-author network) and are not separately rendered —
-    the verbatim entry already carries them, and the archived source is the
-    fidelity backstop."""
-    works = [w for w in (artifact.get("cited_works") or []) if isinstance(w, dict)]
+    Three valid shapes (see meta/conventions.md "cited_works affirmation"):
+
+      - ``cited_works: NONE``    — source carries no reference list. Render
+                                   a one-line "Source carries no reference
+                                   list." affirmation under ## References.
+      - ``cited_works: IGNORED`` — source HAS a reference list, deliberately
+                                   not captured (low-value release valve).
+                                   Render a one-line "deliberately not
+                                   captured" affirmation under ## References,
+                                   reader-visible so the discretionary skip
+                                   is observable on the node body itself.
+      - non-empty list           — render the entries view (each entry's
+                                   ``citation_verbatim`` as a keyed bullet,
+                                   soft-wrap newlines collapsed to spaces —
+                                   the same whitespace normalization the
+                                   citation-verbatim check applies). The
+                                   split bibliographic fields (``author`` /
+                                   ``year`` / ``title``) are the artifact-
+                                   side query dimension (recurring-author
+                                   network) and not separately rendered:
+                                   the verbatim already carries them, and
+                                   the archived source is the fidelity
+                                   backstop.
+
+    Empty list / unknown shape returns ``""`` defensively — the validator
+    rejects those structurally; rendering nothing keeps the node
+    well-formed if the renderer runs on a pre-validation artifact."""
+    value = artifact.get("cited_works")
+
+    if value == "NONE":
+        return (
+            "## References\n"
+            "\n"
+            "*Source carries no reference list.*\n"
+        )
+    if value == "IGNORED":
+        return (
+            "## References\n"
+            "\n"
+            "*Source's reference list deliberately not captured (low-value).*\n"
+        )
+    if not isinstance(value, list):
+        return ""
+
+    works = [w for w in value if isinstance(w, dict)]
     if not works:
         return ""
 

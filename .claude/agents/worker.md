@@ -69,19 +69,35 @@ naming the metadata field, never a `quotes[]` entry.
    facts with their **exact source phrasing** + location anchor — so the
    builder can write source-grounded prose (prose-drift tokenizes against this)
    without re-reading the source.
-4. **Document source with a reference list — emit `cited_works[]`.** If the
-   source is a document carrying a formal reference / citation list (e.g. an
-   AAWSAP DIRD's References section), extract each entry — a distinct
-   extract-phase dimension **parallel to `quotes[]`, never a `quotes[]` entry**
-   (references are not verbatim passages of the document's argument). Per entry:
-   `citation_key` (the bare in-source marker — `1` for `[1]` / `^1` / `1.`),
-   `author` (source form preserved sic), `citation_verbatim` (the full reference
-   line copied verbatim from the scratch, INCLUDING its own `[N]` marker + any
-   OCR damage), optional `year` / `title`, and a `location` anchor (e.g.
-   `p. N, References`). `citation_verbatim` carries the same disk-read verbatim
-   backstop `quotes[]` does (`scripts/checks/cited_works.py` substring-matches it
-   against the source), so copy it from the scratch, never from memory. Omit the
-   block for non-document sources or a document with no reference list.
+4. **Document source — emit `cited_works` in one of three valid shapes.**
+   `cited_works` is required on every document artifact; the shape carries an
+   affirmation about the source's reference-list state (`meta/conventions.md`
+   "cited_works affirmation"). A bare `cited_works: []` is REJECTED. Pick
+   exactly one based on what the source actually carries:
+
+   - **`cited_works: NONE`** — the source has no formal reference list at
+     all (executive orders, news articles, hearing transcripts, short
+     written testimonies). Emit the bare sentinel; no entries.
+   - **`cited_works: IGNORED`** — the source HAS a reference list, but it
+     is low-value and you are deliberately not capturing it. Rare release
+     valve, observable on the rendered node — do not reach for it as a
+     productivity shortcut on a real reference list.
+   - **`cited_works: [<entry>, ...]`** — non-empty list of entries the
+     source carries (e.g. an AAWSAP DIRD's References section). A distinct
+     extract-phase dimension **parallel to `quotes[]`, never a `quotes[]`
+     entry** (references are not verbatim passages of the document's
+     argument). Per entry: `citation_key` (the bare in-source marker —
+     `1` for `[1]` / `^1` / `1.`), `author` (source form preserved sic),
+     `citation_verbatim` (the full reference line copied verbatim from
+     the scratch, INCLUDING its own `[N]` marker + any OCR damage),
+     optional `year` / `title`, and a `location` anchor (e.g.
+     `p. N, References`). `citation_verbatim` carries the same disk-read
+     verbatim backstop `quotes[]` does
+     (`scripts/checks/cited_works.py` substring-matches it against the
+     source), so copy it from the scratch, never from memory.
+
+   Omit the block entirely for non-document sources (workers on
+   transcript / media / etc. sources do not emit `cited_works`).
 
 Return the worker stub (build-protocol → stub-schemas.md) as your final
 message. You do not merge or validate — the builder serializes the merge of

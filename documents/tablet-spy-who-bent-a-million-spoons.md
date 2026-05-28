@@ -154,6 +154,12 @@ Other things in the article: Geller's role in knocking out radar stations ahead 
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

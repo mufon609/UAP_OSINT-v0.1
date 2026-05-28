@@ -72,6 +72,12 @@ EMPTY_SECTION_SHAPES = {
     "pattern_statement": "",
     # Investigation artifact — single integrated answer object
     "best_current_answer": {},
+    # Document artifact — three-state affirmation (NONE | IGNORED | list).
+    # Empty-string default fails the cited_works check immediately so the
+    # contributor is forced to write the affirmation explicitly during
+    # the extract phase; no silent empty-list pass-through. See
+    # meta/conventions.md "cited_works affirmation".
+    "cited_works": "",
 }
 
 

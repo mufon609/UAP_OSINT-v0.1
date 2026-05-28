@@ -246,8 +246,8 @@ _ARTIFACT_CHECKS = [
     ck_naming_quirks,
     # Type-conditional entry-list checks
     ck_timeline,
-    ck_cited_works,  # document-conditional; verbatim source-fidelity on references
-    ck_cited_works_uncaptured,  # document-conditional; errors when an empty cited_works leaves a source reference list uncaptured
+    ck_cited_works,  # document-conditional; three-state machine (NONE | IGNORED | non-empty list) + verbatim source-fidelity on populated lists
+    ck_cited_works_uncaptured,  # document-conditional; WARN cross-check — warns when cited_works == 'NONE' but source carries a reference-list signal (false affirmation)
     # Archetype / kind-conditional entry-list checks
     ck_corroboration_items,
     ck_program_involvement,

@@ -1,40 +1,47 @@
-"""cited-works-uncaptured check — a source reference list left uncaptured.
+"""cited-works-uncaptured check — cross-check on the NONE affirmation.
 
-Hard-error gate closing the enforcement gap that let document nodes ship
-with an empty ``cited_works[]`` even though their primary source carries a
-formal References / Bibliography section. Capturing that list is mandatory
-where the source contains it (``meta/conventions.md`` DIRD rubric, and the
-document-artifact schema's required-but-emptyable ``cited_works``); the
-``### Density is source-driven`` rule governs HOW MANY entries go in once a
-section is populated, never WHETHER to capture a source-attested reference
-list at all. Conflating the two — "the references aren't load-bearing, so
-leave it empty" — is the exact failure this check forecloses.
+WARN-level cross-check, paired with the explicit three-state affirmation
+on ``cited_works`` (see ``meta/conventions.md`` "cited_works affirmation"
+and the ``cited_works`` check). The primary enforcement is now structural:
+a document artifact's ``cited_works`` must be ``NONE`` (source has no
+reference list), ``IGNORED`` (source has one, deliberately not captured),
+or a non-empty list of entries; a bare ``cited_works: []`` is rejected
+outright. This check exists to catch the one residual failure mode the
+structural form can't — a contributor affirming ``NONE`` when the source
+actually does carry a reference list (a false affirmation).
 
 Scope + firing:
   - Runs only for document artifacts (``cited_works`` is document-scoped;
     gated by ``section_in_scope``).
-  - Fires only when ``cited_works`` is empty/absent AND at least one
-    primary source's extracted text exhibits a reference-list signal — a
-    ``References`` / ``Bibliography`` heading followed by a run of numbered
-    citation markers, OR a dense run of high-confidence citation markers
-    anywhere in the text with no heading (the appended-endnote style, e.g.
-    Unicode-superscript ``¹ Author …`` entries). The empty list stays
-    legitimate for a document whose source carries no reference list (an
-    executive order, a short news item, a hearing transcript): those
-    produce no signal and no error.
+  - Fires only when ``cited_works == 'NONE'`` AND at least one primary
+    source's extracted text exhibits a reference-list signal — a
+    ``References`` / ``Bibliography`` heading followed by a run of
+    numbered citation markers, OR a dense run of high-confidence
+    citation markers anywhere in the text with no heading (the appended-
+    endnote style, e.g. Unicode-superscript ``¹ Author …`` entries).
+  - Explicitly does NOT fire on ``cited_works == 'IGNORED'`` — the
+    contributor has affirmed the source HAS a list and is deliberately
+    skipping it; signal-in-source is the EXPECTED state and warning on
+    it would be noise. The audit surface for ``IGNORED`` is the
+    rendered node + a repo-wide grep, NOT this check.
+  - Detection regexes intentionally retain documented false negatives
+    (bare ``N␣Author``, unnumbered bibliographies, headingless ``N.``)
+    — those formats no longer matter as a gate now that affirmation is
+    explicit. The heuristic stays cheap and zero-false-positive; the
+    affirmation is doing the structural work.
 
-This detects the BINARY presence of an uncaptured list, never a count: it
-does not compare entry counts or peer nodes (that pressure is what
-``### Density is source-driven`` prohibits). Verbatim fidelity of the
-entries once populated is the separate ``cited_works`` check; cross-layer
-node-body coverage is ``coverage``. OCR-scan PDFs are read through their
-verified ``.txt`` sibling via ``extract_source_text``.
+This detects the BINARY presence of an unaffirmed list, never a count:
+it does not compare entry counts or peer nodes (that pressure is what
+``### Density is source-driven`` prohibits). Verbatim fidelity of
+populated entries is the ``cited_works`` check; cross-layer node-body
+coverage is ``coverage``. OCR-scan PDFs are read through their verified
+``.txt`` sibling via ``extract_source_text``.
 """
 
 import re
 
 from checks import Issue
-from checks._research_utils import entries, section_in_scope
+from checks._research_utils import section_in_scope
 from lib._common import (
     BINARY_FORMATS,
     SOURCES_DIR,
@@ -106,9 +113,13 @@ def check(ctx):
     # Document-scoped only (same gate as the cited_works entry check).
     if not section_in_scope(ctx, "cited_works"):
         return
-    # Already populated → nothing to flag (verbatim is the cited_works
-    # check's job). Empty or absent → scan the sources.
-    if entries(ctx.data, "cited_works"):
+    # Fires only on the NONE affirmation — the false-affirmation case.
+    # IGNORED expects a signal-bearing source and is the right answer
+    # there (the audit surface is the rendered node + grep, not this
+    # check). A populated list is handled by the cited_works entry
+    # check. A bare [] errors structurally in cited_works (the primary
+    # gate) — no need to second-flag it here.
+    if ctx.data.get("cited_works") != "NONE":
         return
 
     for src in (ctx.data.get("primary_sources") or []):
@@ -128,14 +139,13 @@ def check(ctx):
             continue  # extraction failure surfaced elsewhere
         if _reference_list_signal(source_text):
             yield Issue(
-                ctx.rel, "error",
-                f"cited_works is empty but primary source sources/{rel_source} "
-                f"carries a reference list (References / Bibliography section "
-                f"detected) — capture it into cited_works[]. The source "
-                f"reference list is mandatory where present (meta/conventions.md "
-                f"DIRD rubric + document-artifact schema); 'density is "
-                f"source-driven' governs entry count, never whether to capture "
-                f"the list.",
+                ctx.rel, "warn",
+                f"cited_works: NONE affirms the source carries no reference "
+                f"list, but a References / Bibliography signal was detected "
+                f"in sources/{rel_source} — likely a false affirmation. "
+                f"Re-verify the source, then either capture the entries or "
+                f"flip the affirmation to IGNORED (deliberate skip). See "
+                f"meta/conventions.md 'cited_works affirmation'.",
                 check_name=CHECK_NAME,
             )
             return  # one diagnostic per artifact

@@ -1,10 +1,24 @@
 """cited-works check — type-conditional research-artifact check (load-bearing).
 
-Required-but-emptyable on document artifacts: the formal reference /
-citation list the source document carries. The KEY is present on every
-document artifact (empty list when the document has no reference list,
-or one not yet captured); the ``## References`` SECTION renders only
-when entries exist.
+Document artifacts MUST set ``cited_works`` to one of three valid
+shapes — the three-state affirmation that resolves the historical
+empty-list ambiguity (see ``meta/conventions.md`` "cited_works
+affirmation"):
+
+  - ``cited_works: NONE`` (string sentinel) — the source carries no
+    reference list. Renders a one-line affirmation; no entry
+    validation runs here.
+  - ``cited_works: IGNORED`` (string sentinel) — the source HAS a
+    reference list, deliberately not captured (low-value release
+    valve). Renders a one-line affirmation; no entry validation runs.
+    The audit surface for ``IGNORED`` is the rendered node + a
+    repo-wide grep, NOT this check or the heuristic
+    ``cited_works_uncaptured``.
+  - ``cited_works: [<entry>, ...]`` — non-empty list of
+    ``cited_work_entry``. Entry validation runs as documented below. A
+    bare ``cited_works: []`` is REJECTED — the empty list used to be
+    ambiguous between "source has no list" and "list not yet
+    captured"; the sentinels now carry the affirmation explicitly.
 
 Each entry carries derived bibliographic split fields (``citation_key`` /
 ``author`` / optional ``year`` / ``title``) for queryability — the
@@ -18,9 +32,14 @@ fields are the contributor's structured read of that verbatim string.
 
 Layered enforcement, parallel to the quote family:
 
-  - this check (entry shape + source-fidelity): required fields present,
-    ``source`` is a manifest-known path + location, and
-    ``citation_verbatim`` appears verbatim in the cited source file.
+  - this check (state machine + entry shape + source-fidelity): the
+    three-shape state machine above; on populated lists, required
+    fields present, ``source`` is a manifest-known path + location,
+    and ``citation_verbatim`` appears verbatim in the cited source.
+  - ``cited_works_uncaptured`` (cross-check, WARN): warns when
+    ``cited_works == 'NONE'`` but a reference-list signal is detected
+    in the source — a likely-false affirmation. Demoted from primary
+    gate to cross-check now that the affirmation is explicit.
   - ``coverage`` (cross-layer): the rendered ``## References`` content
     appears in the node body — source → artifact → node.
 
@@ -57,6 +76,43 @@ def check(ctx):
         return  # iff_section handled placement; skip per-entry validation
     if "cited_works" not in ctx.data:
         return  # iff_section emitted "required missing"; nothing to validate
+
+    value = ctx.data.get("cited_works")
+    sentinels = ctx.schema["types"]["research-artifact"][
+        "cited_works_sentinel_values"]
+
+    # Three-shape state machine — see module docstring.
+    if isinstance(value, str):
+        if value in sentinels:
+            return  # affirmation — no entry validation
+        yield Issue(
+            ctx.rel, "error",
+            f"cited_works string value {value!r} is not a valid sentinel — "
+            f"must be one of {sentinels} (or a non-empty list of "
+            f"cited_work_entry). See meta/conventions.md 'cited_works "
+            f"affirmation'.",
+            check_name=CHECK_NAME,
+        )
+        return
+    if not isinstance(value, list):
+        yield Issue(
+            ctx.rel, "error",
+            f"cited_works must be a string sentinel (one of {sentinels}) "
+            f"or a non-empty list of cited_work_entry; got "
+            f"{type(value).__name__}.",
+            check_name=CHECK_NAME,
+        )
+        return
+    if not value:
+        yield Issue(
+            ctx.rel, "error",
+            f"cited_works is an empty list — bare [] is no longer valid. "
+            f"Use one of {sentinels} to affirm the source's reference-list "
+            f"state, or populate with cited_work_entry objects. See "
+            f"meta/conventions.md 'cited_works affirmation'.",
+            check_name=CHECK_NAME,
+        )
+        return
 
     # Schema-driven required-field list — single source of truth on the
     # entry definition; lifecycle fields (id / added_date) checked separately.

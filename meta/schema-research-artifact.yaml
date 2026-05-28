@@ -24,6 +24,13 @@ evidentiary_basis_values:
   - self-attested
   - secondary
 confidence_values: [high, medium, low]
+# Sentinel values permitted for ``cited_works`` on document artifacts in
+# place of an entry list. ``NONE`` affirms the source carries no
+# reference list; ``IGNORED`` affirms the source HAS one but the
+# contributor deliberately did not capture it (release valve — see
+# ``meta/conventions.md`` "cited_works affirmation"). A bare
+# ``cited_works: []`` is not a valid third value; the check rejects it.
+cited_works_sentinel_values: [NONE, IGNORED]
 
 # Top-level required keys — the research artifact is a flat YAML dict
 # (no markdown frontmatter / body distinction since it's pure YAML).
@@ -166,20 +173,41 @@ conditional_keys:
   cited_works:
     required_when_any_of:
       - target_node_type_in: [document]
-    # Formal reference / citation list carried by the source document
-    # (e.g. a technical report's References section). Required-but-emptyable
-    # on every document artifact, exactly like the other source-anchored
-    # optional section (contradictions): the KEY is always
-    # present (empty list when the document has no reference list, or one
-    # not yet captured); the `## References` SECTION renders only when
-    # entries exist. Captures the authorship-network dimension — who the
-    # commissioned authors relied on (recurring cited authors across the
-    # corpus). Entry shape: cited_work_entry below. The bibliographic
-    # split fields (author/year/title) are derived for queryability; the
-    # source-verified `citation_verbatim` line is the fidelity anchor
-    # (scripts/checks/cited_works.py confirms it appears in the source,
-    # OCR corruption preserved as-sic). NOT quotes[] — references are a
-    # distinct dimension, not verbatim passages of the document's argument.
+    # Reference list carried by the source document. Required on every
+    # document artifact in one of three valid shapes — a bare
+    # ``cited_works: []`` is REJECTED because the empty list was
+    # historically ambiguous (legitimately empty OR forgotten capture;
+    # see ``meta/conventions.md`` "cited_works affirmation"):
+    #
+    #   - ``NONE`` (string sentinel): the source carries no formal
+    #             reference list (EOs, news items, hearing transcripts,
+    #             short docs). Renders a one-line "Source carries no
+    #             reference list." affirmation under ``## References``.
+    #             Greppable across the corpus via
+    #             ``grep -l '^cited_works: NONE$'``.
+    #   - ``IGNORED`` (string sentinel): the source HAS a reference list
+    #             but the contributor deliberately did not capture it
+    #             (low-value). Release valve — observable on the
+    #             rendered node and via ``grep -l '^cited_works:
+    #             IGNORED$'``; tuned retroactively based on observed
+    #             usage. Renders a one-line "deliberately not captured"
+    #             affirmation under ``## References``.
+    #   - non-empty list of ``cited_work_entry``: source carries a
+    #             reference list and it is captured below. Renders the
+    #             ``## References`` entries view. Captures the
+    #             authorship-network dimension — who the commissioned
+    #             authors relied on (recurring cited authors across the
+    #             corpus). Entry shape: ``cited_work_entry`` below. The
+    #             bibliographic split fields (author / year / title)
+    #             are derived for queryability; the source-verified
+    #             ``citation_verbatim`` line is the fidelity anchor
+    #             (``scripts/checks/cited_works.py`` confirms it
+    #             appears in the source, OCR corruption preserved
+    #             as-sic).
+    #
+    # NOT quotes[] — references are a distinct dimension, not verbatim
+    # passages of the document's argument. The sentinel vocabulary is
+    # ``research-artifact.cited_works_sentinel_values`` (above).
   timeline:
     required_when_any_of:
       - target_node_type_in: [person, organization, event, finding]
@@ -1151,7 +1179,7 @@ invariants:
   - "cited_work_entry.citation_verbatim appears verbatim in the cited source — enforced by cited_works (OCR sic preserved, never corrected)"
 
   # Conditional sections
-  - "cited_works section present iff target_node type == document (empty list permitted; populated drives the References section)"
+  - "cited_works section present iff target_node type == document; value is 'NONE' | 'IGNORED' | non-empty list of cited_work_entry (bare [] REJECTED — see cited_works check)"
   - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
   - "corroboration_items section present iff target_node archetype == eyewitness"
   - "program_involvement section present iff target_node archetype == institutional-actor"

@@ -1092,13 +1092,62 @@ questions, answered by reading the source, not density questions. The
 misread to refuse is "these references aren't load-bearing, so leave
 `cited_works` empty": a source-attested reference list is captured
 *because the source carries it* (the passage rubric below names
-References as a capture category, and `cited_works` is required-but-
-emptyable on every document artifact); `cited_works_uncaptured` errors
-when an empty list leaves a detectable source reference list uncaptured.
-Density governs only how many entries that capture then yields. The same
-holds for every required-but-emptyable source-anchored section: an empty
-list is correct only when the source genuinely lacks that material,
-never as a discretionary skip.
+References as a capture category). For `cited_works` specifically, the
+empty-state ambiguity is closed by the three-state affirmation below
+(`cited_works: NONE | IGNORED | non-empty list`) — a bare `[]` is
+rejected outright, so the contributor cannot quietly drop a captured
+list on "not load-bearing" grounds. Density governs only how many
+entries a captured list then yields. The same holds for every
+required-but-emptyable source-anchored section: an empty list is
+correct only when the source genuinely lacks that material, never as a
+discretionary skip.
+
+### `cited_works` affirmation — three-state discipline
+
+`cited_works` is required on every document artifact, and must take one
+of three valid shapes — never a bare `cited_works: []`. The empty list
+was historically ambiguous (it meant BOTH "source carries no reference
+list" AND "source carries one but nobody captured it yet"); the
+affirmation closes that ambiguity by recording the contributor's
+positive judgment in the artifact.
+
+- **`cited_works: NONE`** — the source carries no formal reference
+  list at all. Executive orders, news items, hearing transcripts,
+  short documents whose argument doesn't cite outside work. Renders a
+  one-line `## References` affirmation: *Source carries no reference
+  list.* Greppable across the corpus via
+  `grep -l '^cited_works: NONE$' meta/research/*.yaml`.
+
+- **`cited_works: IGNORED`** — the source HAS a reference list, but
+  the contributor judged it low-value and deliberately did not capture
+  it. Release valve, *not* a routine skip path: the discretionary
+  judgment is recorded reader-visibly (the rendered node carries a
+  one-line `## References` affirmation: *Source's reference list
+  deliberately not captured (low-value).*) and is greppable via
+  `grep -l '^cited_works: IGNORED$' meta/research/*.yaml`. The value
+  exists so the structural gate doesn't become a productivity block
+  on edge cases; it is observed and tuned retroactively — if it
+  accumulates on documents that arguably should be captured, the
+  contract tightens (typed sub-enum, required justification field,
+  or removal). The `cited_works_uncaptured` cross-check deliberately
+  does NOT warn on `IGNORED` because signal-in-source is the
+  *expected* state there.
+
+- **non-empty list of `cited_work_entry`** — the source carries a
+  reference list and it is captured below. Renders the full
+  `## References` entries view. The bibliographic split fields
+  (`citation_key` / `author` / optional `year` / `title`) are the
+  authorship-network dimension (recurring cited authors across the
+  corpus); `citation_verbatim` is the fidelity anchor that the
+  `cited_works` check substring-matches against the source.
+
+The `cited_works_uncaptured` check is the cross-check on a false
+`NONE` affirmation: it WARNS when `cited_works: NONE` is set but a
+reference-list signal is detected in the source's extracted text — a
+likely-wrong affirmation that the contributor should re-verify (then
+either capture the entries or flip to `IGNORED`). It is a backstop,
+not the primary gate; the structural three-state machine carries the
+load.
 
 Structural thresholds are different and remain in force. The finding-
 node creation threshold (~200 words, 3+ entity nodes, or text about

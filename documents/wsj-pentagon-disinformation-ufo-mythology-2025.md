@@ -190,6 +190,12 @@ In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`])
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

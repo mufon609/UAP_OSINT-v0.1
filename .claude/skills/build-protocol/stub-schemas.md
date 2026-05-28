@@ -79,8 +79,13 @@ outputs_produced:
     - fact: "{fact}"
       source_phrasing: "<exact words from source — prose-drift grounding>"
       location: "<location anchor>"
-  cited_works:                  # DOCUMENT sources with a reference list ONLY — a distinct extract
-                                # dimension PARALLEL to quotes[], never a quotes[] entry; omit otherwise
+  cited_works:                  # DOCUMENT sources only — three-state affirmation
+                                # (conventions.md "cited_works affirmation"); omit
+                                # entirely for non-document sources. Pick exactly
+                                # one of three shapes — bare [] is REJECTED:
+                                #   NONE     — source has no reference list
+                                #   IGNORED  — source has one, deliberately not captured
+                                #   list of entries (below) — captured
     - citation_key: "<bare in-source marker, e.g. 1 for [1] / ^1 / 1.>"
       author: "<author / originating body, source form preserved (sic)>"
       citation_verbatim: "<full reference line copied verbatim from scratch, incl. its [N] marker + OCR sic>"

@@ -206,6 +206,12 @@ Grusch's Closing Statement: a conviction to expose what Grusch viewed as a grave
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

@@ -203,6 +203,12 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

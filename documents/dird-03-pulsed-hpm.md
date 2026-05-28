@@ -353,6 +353,12 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People

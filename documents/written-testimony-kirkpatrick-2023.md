@@ -281,6 +281,12 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 
 ---
 
+## References
+
+*Source carries no reference list.*
+
+---
+
 ## Associated Nodes
 
 ### People
