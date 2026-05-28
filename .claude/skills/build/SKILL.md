@@ -58,27 +58,23 @@ build before doing anything.
      in one session is blocked. Lighter types may batch. Don't work around it.)*
 4b. **OCR-scan sibling readiness — gate before the Worker.** A primary source
    flagged `extraction_type: ocr-scan` / `extraction-lossy` (manifest) is **not
-   worker-ready**: its `pdftotext`/extract layer is corrupt, so a quote pulled
-   from it is garbage or trips the verbatim gate (build-protocol →
-   source-read-first). Read the manifest entry for each primary source; for any
-   ocr-scan / extraction-lossy source that lacks a verified same-stem `.txt`
-   sibling, the sibling MUST exist before the Worker. It is produced by VLM
-   page-image read **and independently verified by a different agent** (the
-   producer cannot self-verify a hallucination), then registered as a paired
-   entry — the four-path procedure + the independent-verification rule are in
-   `meta/conventions.md` "Producing the `.txt` sibling". This is the
-   orchestrator's responsibility, **never the Worker's** (the Worker has no
-   Write tool). It runs **regardless of the all-internal branch** — all-internal
-   skips new-bytes sourcing (external + archive), not source-prep. If a
-   sibling is missing, the remedy is the **`/prepare-ocr-sibling`** skill — it
-   produces the sibling (VLM page-image read), independently verifies it (a
-   different agent — the producer can't self-verify), and registers the paired
-   entry. **Invoke `/prepare-ocr-sibling {source-path}` via the Skill tool — you
-   are the main thread, so you can.** Only if your environment cannot dispatch a
-   skill from here, **HALT** and direct the user to run it. Either way, do it
-   before handing the Worker a corrupt extract. Once every ocr-scan source has a verified
-   sibling, the canonical scratch comes from `extract-source.py --artifact`
-   (it prefers the sibling). Text-native sources need no sibling.
+   worker-ready**: its extract layer is corrupt, so a quote pulled from it is
+   garbage or trips the verbatim gate (the why + the
+   produce→independently-verify→register contract: build-protocol →
+   "OCR-scanned sources need a verified sibling"). Read the manifest entry for
+   each primary source; any ocr-scan / extraction-lossy source lacking a
+   verified same-stem `.txt` sibling MUST get one before the Worker. This is the
+   orchestrator's responsibility, **never the Worker's** (the Worker has no Write
+   tool), and it runs **regardless of the all-internal branch** — all-internal
+   skips new-bytes sourcing (external + archive), not source-prep. The remedy is
+   the **`/prepare-ocr-sibling`** skill, which produces, independently verifies,
+   and registers the sibling: **invoke `/prepare-ocr-sibling {source-path}` via
+   the Skill tool — you are the main thread, so you can.** Only if your
+   environment cannot dispatch a skill from here, **HALT** and direct the user to
+   run it. Either way, do it before handing the Worker a corrupt extract. Once
+   every ocr-scan source has a verified sibling, the canonical scratch comes from
+   `extract-source.py --artifact` (it prefers the sibling). Text-native sources
+   need no sibling.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.
