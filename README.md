@@ -204,19 +204,41 @@ investigation bright line.
 
 ## Status markers
 
-Five status markers document evidentiary state throughout the repository:
+The repository records evidentiary state structurally, not with inline
+emoji on every row. Two mechanisms carry it.
 
-| Marker | Meaning |
+**Confirmed vs. Flagged splits.** Any section that mixes
+primary-source-supported entries with secondary-source-only ones —
+affiliations, relationships, organization key-personnel, event
+participants — splits into `### Confirmed` and `### Flagged`
+subsections:
+
+| Subsection | Meaning |
 |---|---|
-| `✅ Confirmed` | Verified against a linked primary source |
-| `⏳ Pending` | Claimed or cited; not yet verified |
-| `⚠ Flagged` | Secondary-source only; requires primary-source confirmation |
-| `⚠ Disputed — unknown` | Both sides assert; neither has primary-source evidence |
-| `❌ Contradiction` | Positions contradict and at least one side is backed by primary-source evidence |
+| `### Confirmed` | Established from a primary source linked in the row |
+| `### Flagged` | Cited in secondary sources only; awaiting primary-source confirmation |
 
-Relationship tables, affiliations, and evidence sections split into
-`### Confirmed` and `### Flagged` subsections. Flagged subsections are
-omitted when empty.
+`### Flagged` is omitted entirely when empty (a present-but-empty
+Flagged subsection is a schema violation). The split records source
+quality, not truth: a Flagged item may well be true — it just hasn't
+been verified against a primary source yet. On finding nodes, each
+evidence row's weight comes from a structured `attestation_tier` field
+(`sworn-oath`, `dopsr-cleared`, `on-record`, `self-attested`, …) rather
+than a marker.
+
+**Cross-source disagreement.** Where sources conflict, the disagreement
+is documented on the synthesis/finding node where it gains analytical
+meaning, under `## Apparent Contradictions`. Two doctrinal labels
+distinguish the cases by evidence quality:
+
+| Label | Meaning |
+|---|---|
+| `⚠ Disputed — unknown` | Both sides assert; neither has primary-source evidence beyond its own authority to speak |
+| `❌ Contradiction` | Positions conflict and at least one side is backed by primary-source evidence |
+
+These frame how a finding is written; the repository documents both
+sides and does not adjudicate. See `meta/conventions.md`
+("Confirmed vs Flagged", "Contradictions") for the full discipline.
 
 ---
 
