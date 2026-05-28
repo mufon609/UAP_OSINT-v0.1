@@ -127,8 +127,8 @@ required_keys:
   #   at render time for type-specific section rendering (Statements on
   #   person, Key Testimony on hearings, Key Passages elsewhere). No
   #   separate `claims[]` layer — a contributor-synthesized claim layer
-  #   created a drift surface that mechanical checks couldn't catch;
-  #   eliminated repo-wide. Cross-entity synthesis goes on finding
+  #   would create a drift surface mechanical checks can't catch.
+  #   Cross-entity synthesis goes on finding
   #   nodes.
   - naming_quirks         # list — source-specific oddities (typos, alt spellings)
 # Audit trail / history: git log and git diff on the artifact file
@@ -167,7 +167,7 @@ conditional_keys:
     required_when_any_of:
       - target_node_type_in: [document]
     # Formal reference / citation list carried by the source document
-    # (e.g. an AAWSAP DIRD's References section). Required-but-emptyable
+    # (e.g. a technical report's References section). Required-but-emptyable
     # on every document artifact, exactly like the other source-anchored
     # optional section (contradictions): the KEY is always
     # present (empty list when the document has no reference list, or one
@@ -278,9 +278,7 @@ conditional_keys:
       - target_node_type_in: [event]
         target_node_kind_in: [hearing]
     # List of hearing witnesses with cross-references to their
-    # transcript and written-testimony nodes. Replaces the prior
-    # `What The Hearing Established` prose section — same evidentiary
-    # content via cross-reference. Renders as the `## Witnesses &
+    # transcript and written-testimony nodes. Renders as the `## Witnesses &
     # Testimony` table.
     #
     # AND-combined: hearing is shared between event and transcript
@@ -322,9 +320,9 @@ conditional_keys:
     # Structured contract records on gov-contractor organization
     # artifacts. Each entry: contract_number, contracting_agency,
     # period_start/end, counterparties, value, deliverables,
-    # source. Shape influenced by the AAWSAP / DIRD corpus
-    # (single large contract producing many technical deliverables
-    # as referenced docs). Renders as the `## Primary Contracts`
+    # source. Shape models a single large contract
+    # producing many technical deliverables
+    # as referenced docs. Renders as the `## Primary Contracts`
     # table, chronologically ordered by period_start. Absent on
     # gov and private kinds. Entry shape: contract_entry below.
     #
@@ -354,10 +352,10 @@ conditional_keys:
   top_scope_activity:
     required_when_any_of:
       - target_node_type_in: [location]
-    # Documented institutional UAP-scope activity at this location
-    # (NIDS investigation, BAASS/AAWSAP contract work, Fugal-era
-    # research, etc.). Scope is institutional — popular paranormal
-    # lore without primary-source backing is out of scope, not
+    # Documented institutional in-scope activity at this location
+    # (institutional investigations, contract research programs,
+    # on-site research operations, etc.). Scope is institutional — popular
+    # unsourced lore without primary-source backing is out of scope, not
     # here. Each entry: period_start, period_end (optional),
     # activity, actor_paths (optional list of /people|/organizations),
     # source. Renders as the `## {topic_display_name}-Scope Activity`
@@ -544,7 +542,7 @@ quote_entry:
   # observation_type: direct | relayed
   #   Required on every quote when target_node type is `person`.
   #   `direct`  — first-hand sensory observation by the person
-  #               (Fravor's "I saw a Tic Tac-shaped object" — observed).
+  #               (a witness's "I saw the object myself" — observed).
   #   `relayed` — anything else the person asserted (things heard,
   #               read, inferred, relayed from others, published).
   #   Default: relayed. Enforced by scripts/checks/quotes.py.
@@ -759,7 +757,7 @@ witnesses_testimony_entry:
 speaker_entry:
   required: [name, source]
   optional: [role, node_link]
-  # name: display name (e.g., "David Fravor", "Glenn Grothman")
+  # name: display name (e.g., "Jane Smith", "Rep. John Doe")
   # role: the speaker's role at this transcript event. Free-text;
   #   common values: Witness, Chair, Committee Member, Host,
   #   Interviewer, Guest, Moderator, Presenter. Scanned by
@@ -803,9 +801,9 @@ contract_entry:
     - value
     - deliverables
   # contract_number: contract identifier as attested in the primary
-  #   source (e.g., "HHM402-08-C-0072" for AAWSAP). Preserved verbatim
+  #   source (e.g., a contract identifier like "ABC123-08-C-0072"). Preserved verbatim
   #   from source.
-  # contracting_agency: free-text (e.g., "DIA", "DARPA", "Navy OPNAV").
+  # contracting_agency: free-text (e.g., a service or defense-agency acronym).
   #   Prefer the agency's /organizations/ wrap_path in contributor
   #   prose elsewhere; this field carries the agency's short form as
   #   it appears on the contract itself.
@@ -821,7 +819,7 @@ contract_entry:
   # value: dollar amount attested in the primary source (string form
   #   preserves source formatting — "$22 million", "$22M", "22,000,000").
   # deliverables: optional list of document paths the contract produced
-  #   (e.g., DIRD technical reports on AAWSAP). Each entry a
+  #   (e.g., technical reports produced under the contract). Each entry a
   #   /documents/... path; absent or empty list when deliverables are
   #   not publicly enumerated.
 
@@ -879,9 +877,9 @@ top_scope_activity_entry:
   optional: [period_end, actor_paths]
   # period_start / period_end: same conventions as
   #   ownership_timeline_entry.
-  # activity: one-line description of the UAP-scope institutional
-  #   activity conducted at the location (e.g., "NIDS investigation",
-  #   "BAASS/AAWSAP contract research", "Fugal-era on-site research
+  # activity: one-line description of the in-scope institutional
+  #   activity conducted at the location (e.g., "Institutional field
+  #   investigation", "Contract research program", "On-site research
   #   operations"). Scanned by the prose-drift check against source.path token
   #   pool.
   # actor_paths: optional list of /people|/organizations wrap_paths
@@ -990,7 +988,7 @@ source_entry:
 open_question_entry:
   required: [id, question]
   optional: [what_would_resolve]
-  # question: the open analytical question (e.g., "Does Lacatski's
+  # question: the open analytical question (e.g., "Does the witness's
   #   account constitute primary-source evidence of the event
   #   occurring, or only of the claim having been made?").
   # what_would_resolve: contributor-written description of the
@@ -1017,7 +1015,7 @@ closure_path_entry:
   required: [id, blocking_event]
   optional: [expected_unblock_path]
   # blocking_event: the external event blocking the investigation
-  #   (e.g., "BlackVault FOIA appeal on 24-F-0266 resolves").
+  #   (e.g., "a pending FOIA appeal resolves").
   # expected_unblock_path: contributor-written description of what
   #   the unblock would surface and how it would advance the
   #   investigation. Speculation-tolerant.
@@ -1055,7 +1053,7 @@ media_versioning_entry:
   # this_form: free-text observation of THIS derivative media (1-2
   #   lines). Same free-text shape.
   # source: object with path + location — the primary source attesting
-  #   the difference (e.g., DoD press release confirming the 2020
+  #   the difference (e.g., an official press release confirming a
   #   declassified cut; FOIA response with metadata inspection;
   #   side-by-side visual comparison noted in an archived article).
 
@@ -1063,8 +1061,8 @@ naming_quirk_entry:
   required: [observed, canonical, location, source_path, resolution]
   optional: []
   resolution_values: [preserve-as-sic-in-quotes, off-node-variant, use-canonical, disputed, unresolved]
-  # observed: as it appears in source (e.g., "Leslie Keane")
-  # canonical: corrected form (e.g., "Leslie Kean")
+  # observed: as it appears in source (e.g., "Stephan Grey")
+  # canonical: corrected form (e.g., "Stephen Gray")
   # resolution: preserve-as-sic-in-quotes | off-node-variant | use-canonical |
   #   disputed | unresolved
   # preserve-as-sic-in-quotes grounding: the observed form MUST appear on the
@@ -1089,8 +1087,8 @@ cited_work_entry:
   required: [citation_key, author, citation_verbatim, source]
   optional: [year, title]
   # citation_key: the in-source reference marker as it appears, e.g. "1"
-  #   for a bracketed "[1]" (dird-24), a caret-superscript "^1" endnote
-  #   (dird-01), or a number-dot "1." list item (dird-02). Store the bare
+  #   for a bracketed "[1]", a caret-superscript "^1" endnote,
+  #   or a number-dot "1." list item. Store the bare
   #   number; the renderer re-brackets. Unique within the artifact.
   # author: author / originating-body position as it appears in the
   #   reference, SOURCE FORM preserved (sic) — e.g. "DeWitt, B. S." or
@@ -1112,8 +1110,7 @@ cited_work_entry:
   #   anchors the reference list within the source, e.g.
   #   "p. 56, References").
   # No `note` / `significance` / free-prose field by design — bibliographic
-  # facts + the verbatim anchor only (the eliminated per-entry synthesis
-  # `.note` is not reintroduced here).
+  # facts + the verbatim anchor only.
 
 # --- Validation invariants (enforced by scripts/build/validate-research.py) ---
 
