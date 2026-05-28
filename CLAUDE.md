@@ -268,8 +268,9 @@ investigator · archive · worker · builder · auditor); the shared contract is
 preloaded from `.claude/skills/build-protocol/`. `prompts/topology.md` is the
 design rationale for that decomposition; the build mechanics each role applies
 live in `meta/conventions.md` (the evidentiary discipline) and the role
-subagents themselves. Standalone workflows are skills too: `/audit`, `/verify-transcript`,
-`/quote-relevance-audit`, `/archive-sweep`, `/fork-init`.
+subagents themselves. Standalone workflows are skills too: `/audit`, `/augment`,
+`/verify-transcript`, `/quote-relevance-audit`, `/archive-sweep`,
+`/prepare-ocr-sibling`, `/fork-init`.
 
 Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:
 
