@@ -39,9 +39,13 @@ Target: **$ARGUMENTS** (ask the user if empty).
    `meta/conventions.md` "Comparability standard", does a same-`type` /
    `kind` / `archetype` peer carry a source-anchored optional section this
    target lacks (`## Primary-Source Contradictions`, `## Public-Record Claims`,
-   `## Source-Form Notes` / `## Preserved Disagreements`, `## References`)? If
-   so, re-check the target's OWN sources for the same class of material — a
-   source re-check, never adding entries to match a peer's count.
+   `## Source-Form Notes` / `## Preserved Disagreements`)? If so, re-check
+   the target's OWN sources for the same class of material — a source
+   re-check, never adding entries to match a peer's count. **`## References`
+   is universal on documents** via the three-state `cited_works` affirmation
+   (`conventions.md` "cited_works affirmation"); the audit question there is
+   not "does the section exist?" but "is the affirmation
+   (NONE / IGNORED / list) correct against the target's own source?"
 3. **Present findings before changing anything** — the mechanical results, the
    semantic gaps, missing sources, cross-node divergences, and proposed
    artifact edits. Get approval for content changes.

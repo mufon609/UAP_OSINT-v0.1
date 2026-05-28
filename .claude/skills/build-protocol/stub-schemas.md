@@ -79,13 +79,20 @@ outputs_produced:
     - fact: "{fact}"
       source_phrasing: "<exact words from source — prose-drift grounding>"
       location: "<location anchor>"
-  cited_works:                  # DOCUMENT sources only — three-state affirmation
-                                # (conventions.md "cited_works affirmation"); omit
-                                # entirely for non-document sources. Pick exactly
-                                # one of three shapes — bare [] is REJECTED:
-                                #   NONE     — source has no reference list
-                                #   IGNORED  — source has one, deliberately not captured
-                                #   list of entries (below) — captured
+  # cited_works (DOCUMENT sources only — conventions.md "cited_works
+  # affirmation"; omit entirely for non-document sources). Pick exactly ONE
+  # of three shapes; bare [] is REJECTED.
+  #
+  # Shape A — source has no reference list (EOs, news items, hearing
+  # transcripts, short docs):
+  cited_works: NONE
+  # Shape B — source HAS a reference list, deliberately not captured
+  # (rare low-value release valve, observable on the rendered node):
+  cited_works: IGNORED
+  # Shape C — source carries a reference list and it is captured below.
+  # Each entry is a distinct extract-phase dimension PARALLEL to quotes[]
+  # (never a quotes[] entry), source form preserved sic:
+  cited_works:
     - citation_key: "<bare in-source marker, e.g. 1 for [1] / ^1 / 1.>"
       author: "<author / originating body, source form preserved (sic)>"
       citation_verbatim: "<full reference line copied verbatim from scratch, incl. its [N] marker + OCR sic>"

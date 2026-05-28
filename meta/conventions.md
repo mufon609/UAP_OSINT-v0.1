@@ -1595,7 +1595,11 @@ sections rendered by `scripts/build/renderers/_universal.py` plus the document
 
 - `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
 - `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
-- `## References` (document `cited_works[]`)
+- `## References` (document `cited_works` — UNIVERSAL on documents via the
+  three-state affirmation NONE / IGNORED / list, see "cited_works
+  affirmation" above; the comparability question shifts from "does the peer
+  carry the section?" to "is the affirmation correct against the peer's
+  source?")
 
 **Out of scope — synthesis prose, and the lighter-surface node types.** The
 synthesis fields (`description`, `background`, `top_relevance`,

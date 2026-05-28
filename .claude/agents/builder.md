@@ -23,9 +23,15 @@ In order, with a check after each (build-protocol → run
 
 0. **Merge.** You are the single serializer of the worker fragments — merge
    each fragment's `quotes[]` + `background_material[]` + `cross_ref_candidates[]`
-   + `cited_works[]` (document sources) into the scaffolded artifact in one
+   + `cited_works` (document sources) into the scaffolded artifact in one
    deterministic pass (workers do not write it, so there's no race), introducing
-   only material a worker surfaced. Then run
+   only material a worker surfaced. **`cited_works` is the three-state
+   affirmation** (`meta/conventions.md` "cited_works affirmation"): a worker
+   fragment may carry the scalar `NONE` / `IGNORED` instead of a list — pass
+   the scalar through verbatim (no list-union semantics on a string). The
+   per-document expectation is exactly one `cited_works` shape across the
+   merged artifact; conflicting fragments are a data defect to route, not to
+   reconcile. Then run
    `validate-research.py --phase extract meta/research/{slug}.yaml` once — the
    verbatim boundary fires here on the merged result (it reads disk), covering
    `cited_works` `citation_verbatim` the same way it covers `quotes` text.
