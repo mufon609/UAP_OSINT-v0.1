@@ -333,59 +333,6 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Purge historic-case examples from the topic-neutral toolkit
-
-**The problem.** The toolkit layer survives `/fork-init` untouched (`fork-init`'s
-"What NOT to change": `meta/schema.yaml`, `meta/conventions.md`, `meta/templates/`,
-`scripts/`, the kept `prompts/`, `.claude/`), so it must explain every rule
-**generically**. It is instead seeded with *this* instance's historic cases —
-specific witnesses, organizations, documents, and events used as illustrative
-examples in spec comments, docstrings, CLI-usage strings, and rule prose. On a
-fork those examples leak the prior subject into the new instance's toolkit.
-Neutrality is mechanically enforced **only** on `.claude/`
-(`scripts/tests/skills-check.sh`, and only for the literal subject token), so
-files outside that guard have no protection and drift accumulates.
-
-**In scope (investigate + genericize).** `scripts/`, `meta/templates/`,
-`prompts/web-claude-*`, and `.claude/agents/worker.md`. The leak class includes
-`new.py` CLI-usage strings (`--slug skinwalker-ranch`, `--slug
-written-testimony-fravor-2023`), renderer/check code comments keyed to specific
-documents (DIRD-numbering notes carrying `dird-02` / `dird-24` / `dird-26` as
-citation-marker examples in `scripts/build/renderers/document.py` and
-`scripts/checks/cited_works_uncaptured.py`, `# (e.g. "David Fravor")`,
-`coverage-suggest.py` sample output `"Targ"`, `"Lockheed"`, `"Puthoff"`), and
-worked-example templates.
-
-**Out of scope (leave as-is).** `meta/BACKLOG.md` and `meta/sources-access.md` —
-their node references are legitimate instance work-tracking and site-access notes
-that must name the cases they concern, not rules dressed in historic examples.
-
-**Method (mechanical finder, not a curated regex — a hand-list undercounts; the
-missing tokens are not obvious to guess, e.g. `Baibich`, `uss-princeton`,
-`Sol Foundation`, `Stargate`).** Derive the topic-entity lexicon from the content
-layer — slugs plus `name:`/alias fields across the content-node directories,
-`meta/research/`, and `meta/topic/` — then flag any toolkit file containing those
-tokens. Exhaustive and fork-safe (the lexicon regenerates per instance).
-Per-example disposition: delete the example outright when it is restatement of
-the rule beside it (the rule stands alone); otherwise genericize to neutral
-invented stand-ins or `{type}` / `{slug}` / `{display_name}` placeholders,
-preserving the example's instructional point.
-
-**Follow-on — close the enforcement gap.** Promote the finder to a
-`scripts/checks/` gate wired into `pre-commit.sh` (sibling to `skills-check.sh`,
-but covering the whole toolkit surface and keyed off the derived content-entity
-lexicon, not just the subject token). This is the missing guard that lets the
-drift accumulate; without it the cleanup regresses silently.
-
-**Open sub-question (decide during the work).** Whether to also genericize the
-*subject token* `UAP` / `UFO` → `{display_name}` in the remaining toolkit files.
-`skills-check.sh` already forbids the literal token in `.claude/`; extending
-that to the rest of the toolkit is the strictly-correct end state but is
-separable from purging the named historic cases.
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may
