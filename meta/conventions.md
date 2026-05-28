@@ -564,8 +564,7 @@ textbook auto-caption blind spot. The `transcript_provenance` value
 the canonical original. Audit handling mirrors `ocr-scan`:
 
 - **Known caption artifacts** registered as `naming_quirks` entries
-  (same workflow as OCR-scan source-form preservation per
-  `feedback_prose_drift_warnings_must_resolve.md` Category 3).
+  (same workflow as OCR-scan source-form preservation).
   Resolution by the grounding test above: a mangling that appears in a
   quoted passage on the node is `preserve-as-sic-in-quotes` (renders in
   Source-Form Notes); a mangling catalogued for speaker-identity
@@ -2028,7 +2027,8 @@ tier that matches who invokes them and what role they play:
 - **`/scripts/tests/`**: gate-internal infrastructure that exists ONLY
   to support the pre-commit chain — the orchestrator (`pre-commit.sh`)
   plus its internal regression tests (`help-check.sh`, `smoke.py`,
-  `test_stopwords.py`, `file-size-check.sh`, `cookies-check.sh`). No
+  `test_stopwords.py`, `skills-check.sh`, `file-size-check.sh`,
+  `cookies-check.sh`). No
   contributor invokes these directly; the directory is the gate chain's
   private toolkit.
 - **`/scripts/lib/`**: shared cross-cutting helpers (`_common.py`)

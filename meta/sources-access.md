@@ -328,9 +328,8 @@ noting the manual-paste origin and the cleanup applied.
 ### Notes on the auto-caption discipline
 
 - Auto-caption typos (`bigalow`, `lockie martin`, `latsky` for
-  Lacatski, `kellerer` for Kelleher, etc.) are preserved verbatim
-  per `feedback_transcript_timestamps_in_quotes.md`. Log source-
-  form-vs-canonical variances in the artifact's `naming_quirks`
+  Lacatski, `kellerer` for Kelleher, etc.) are preserved verbatim.
+  Log source-form-vs-canonical variances in the artifact's `naming_quirks`
   with `resolution: preserve-as-sic-in-quotes`.
 - All three paths above produce the same `[MM:SS] text` shape, so
   downstream tooling (verbatim-quote check, prose-drift tokenizer)
