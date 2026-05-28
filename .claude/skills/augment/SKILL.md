@@ -5,6 +5,7 @@ argument-hint: {type}/{slug} "<what to change>"
 allowed-tools:
   - Agent(external-investigator, archive, worker, auditor)
   - Skill(prepare-ocr-sibling)
+  - Skill(prepare-transcript-sibling)
   - Read
   - Grep
   - Glob
@@ -76,14 +77,23 @@ the fix to the artifact and re-validate. The fix target is always artifact data.
   / `contradicted_by` / `corroborated_by` — never overwrite. Declare which case applies before
   editing; the mechanics are opposite.
 
-## 4. OCR gate — before any worker
+## 4. Sibling-readiness gate — before any worker
 
-Read the manifest entry for the source. If it is `extraction_type: ocr-scan` / `extraction-lossy`
-and lacks a verified same-stem `.txt` sibling, its extract is corrupt and **not worker-ready**
-(the worker has no Write tool to produce the sibling). **Invoke `/prepare-ocr-sibling {source}` via
-the Skill tool — you are the main thread, so you can.** Only if your environment cannot dispatch a
-skill from here, **HALT** and direct the user to run it. Resume once the verified sibling is
-registered — `extract-source.py --artifact` then prefers it.
+Read the manifest entry for the source. The worker has no Write tool to produce a sibling —
+production is always the orchestrator's responsibility (build-protocol → "Some primary sources need
+a verified sibling"). Two flavors:
+
+- **OCR-scan / extraction-lossy without a verified `.txt` sibling** → extract is corrupt and **not
+  worker-ready**. **Invoke `/prepare-ocr-sibling {source}` via the Skill tool — you are the main
+  thread, so you can.** Only if your environment cannot dispatch a skill from here, **HALT** and
+  direct the user to run it. Resume once the verified sibling is registered —
+  `extract-source.py --artifact` then prefers it.
+- **Label-less transcript (`auto-caption` / `human-corrected-caption`) without a verified
+  `-stitched.md` sibling** → `speaker_id` is not derivable from the caption alone. **Invoke
+  `/prepare-transcript-sibling {slug}` via the Skill tool.** Only if your environment cannot
+  dispatch a skill, **HALT** and direct the user. Resume once registered; the verbatim source is
+  unchanged (the sibling adds the attribution layer `validate-research.py` matches `speaker_id`
+  against).
 
 ## 5. Rebuild, audit, close out
 

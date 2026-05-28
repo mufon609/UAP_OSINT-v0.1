@@ -36,18 +36,32 @@ relevance often lives in its relationships, not its own source. The
 must be **threaded forward** to every downstream role; no role judges
 relevance from a source alone.
 
-**OCR-scanned sources need a verified sibling before the Worker.** A primary
-source flagged `extraction_type: ocr-scan` / `extraction-lossy` (manifest) is
-**not worker-ready**: its `pdftotext` layer is corrupt, so quotes pulled from it
-would be garbage or fail the verbatim gate. Its canonical text is a same-stem
-`.txt` sibling, produced by VLM page-image read and **independently verified by
-a different agent** — the producer cannot self-verify a hallucination, which is
-invisible to its author (`meta/conventions.md` "Producing the `.txt` sibling").
-Producing + verifying + registering the sibling is the **orchestrator's
-sibling-readiness step** (`/build` step 4b), run before the Worker — never the
-Worker's job: the Worker has no Write tool and emits a fragment, not a file.
-This keeps source-read-first honest for scanned documents instead of letting a
-corrupt extract masquerade as source text.
+**Some primary sources need a verified sibling before the Worker.** Two flavors
+carry a built-in deficiency the verbatim / attribution gates cannot catch by
+themselves; both are made worker-ready by an orchestrator-produced,
+**independently-verified** sibling — the producer cannot self-verify the
+failure mode (it is invisible to its author).
+
+- **OCR-scanned documents** (`extraction_type: ocr-scan` / `extraction-lossy`):
+  the `pdftotext` layer is corrupt, so quotes pulled from it would be garbage
+  or fail the verbatim gate. Its canonical text is a same-stem `.txt` sibling,
+  produced by VLM page-image read (`meta/conventions.md` "Producing the `.txt`
+  sibling"). Sibling-readiness step: **`/build` step 4b** via
+  `/prepare-ocr-sibling`. *The sibling replaces the corrupt text layer.*
+- **Label-less transcripts** (`transcript_provenance: auto-caption` /
+  `human-corrected-caption` without inline labels): the caption text is fine
+  but speaker labels are absent — `speaker_id` cannot be derived from the
+  caption file alone, only against the recording (`meta/conventions.md`
+  "Speaker attribution: source format selects the method"). Its canonical
+  attribution is a same-stem stitched sibling, produced by the video pipeline.
+  Sibling-readiness step: **`/build` step 4c** via
+  `/prepare-transcript-sibling`. *The sibling adds an attribution layer
+  alongside the unchanged verbatim source.*
+
+Producing + verifying + registering each sibling is the **orchestrator's** job,
+never the Worker's: the Worker has no Write tool and emits a fragment, not a
+file. This keeps source-read-first + attribution-against-source honest instead
+of letting a corrupt extract or label-less caption masquerade as worker-ready.
 
 **Exemplars give shape, not facts.** A built node handed to you as a structural
 model (a sibling document, an archetype peer) supplies SHAPE only — section set,

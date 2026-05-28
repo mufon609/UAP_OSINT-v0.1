@@ -5,6 +5,7 @@ argument-hint: {type}/{slug} "<scope>"
 allowed-tools:
   - Agent(internal-investigator, external-investigator, archive, worker, builder, auditor)
   - Skill(prepare-ocr-sibling)
+  - Skill(prepare-transcript-sibling)
   - Read
   - Bash(python3 scripts/build/new.py *)
   - Bash(python3 scripts/build/research-scaffold.py *)
@@ -63,7 +64,7 @@ build before doing anything.
    worker-ready**: its extract layer is corrupt, so a quote pulled from it is
    garbage or trips the verbatim gate (the why + the
    produce→independently-verify→register contract: build-protocol →
-   "OCR-scanned sources need a verified sibling"). Read the manifest entry for
+   "Some primary sources need a verified sibling"). Read the manifest entry for
    each primary source; any ocr-scan / extraction-lossy source lacking a
    verified same-stem `.txt` sibling MUST get one before the Worker. This is the
    orchestrator's responsibility, **never the Worker's** (the Worker has no Write
@@ -77,6 +78,27 @@ build before doing anything.
    every ocr-scan source has a verified sibling, the canonical scratch comes from
    `extract-source.py --artifact` (it prefers the sibling). Text-native sources
    need no sibling.
+4c. **Transcript sibling readiness — gate before the Worker.** A primary source
+   flagged `transcript_provenance: auto-caption` / `human-corrected-caption`
+   (label-less; no inline speaker labels) is **not worker-ready for `speaker_id`**:
+   the caption file carries the verbatim text but no built-in attribution, so
+   `speaker_id` on quotes cannot be derived from it alone (the why + the
+   produce→independently-verify→register contract: build-protocol →
+   "Some primary sources need a verified sibling"). Read the manifest entry for
+   each primary source; any label-less transcript source lacking a verified
+   `-stitched.md` sibling MUST get one before the Worker. Same shape as 4b:
+   orchestrator's responsibility, **never the Worker's**, and it runs
+   **regardless of the all-internal branch**. The remedy is the
+   **`/prepare-transcript-sibling`** skill, which walks the 5-step video
+   pipeline, independently verifies each below-`high` speaker resolution, and
+   registers the paired sibling: **invoke `/prepare-transcript-sibling {slug}`
+   via the Skill tool — you are the main thread, so you can.** Only if your
+   environment cannot dispatch a skill from here, **HALT** and direct the user
+   to run it. Either way, do it before the Worker emits a speaker-attributed
+   quote. Unlike 4b, the verbatim source is unchanged — `extract-source.py
+   --artifact` still pulls from the auto-caption file; the sibling adds the
+   attribution layer `validate-research.py` matches `speaker_id` against.
+   Labeled sources (`stenographic` / `published-transcript`) need no sibling.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.
