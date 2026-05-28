@@ -100,6 +100,7 @@ from checks import cited_works as ck_cited_works
 from checks import cited_works_uncaptured as ck_cited_works_uncaptured
 from checks import closure_path as ck_closure_path
 from checks import contracts as ck_contracts
+from checks import context_extrinsic_url as ck_context_extrinsic_url
 from checks import contradictions as ck_contradictions
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
@@ -236,6 +237,7 @@ _ARTIFACT_CHECKS = [
     ck_iff_section,
     # Universal entry-list checks
     ck_primary_sources,
+    ck_context_extrinsic_url,  # primary_source_url matches the manifest entry's URL
     ck_quotes,
     ck_verbatim_quotes,
     ck_quote_location_page,

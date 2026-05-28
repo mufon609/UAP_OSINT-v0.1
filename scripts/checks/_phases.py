@@ -71,6 +71,7 @@ CHECK_PHASE = {
     # extract (role 4) — verbatim quote extraction (the one quote boundary)
     "quotes": "extract",
     "verbatim_quotes": "extract",
+    "context_extrinsic_url": "extract",  # context_extrinsic.primary_source_url ↔ manifest entry url
     "quote_location_page": "extract",
     "location_format": "extract",  # roman / printed-folio location-ref guard
     "document_quote_source": "extract",
