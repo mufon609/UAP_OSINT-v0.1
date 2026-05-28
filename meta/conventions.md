@@ -281,7 +281,11 @@ For all four paths, the canonical sibling lands at `<same-stem>.txt`
 adjacent to the source. The validator's `extraction_type: ocr-scan`
 or `extraction-lossy` flag tells `extract_source_text` to prefer the
 sibling over the underlying PDF text layer. The sibling itself is a
-manifest entry (matching the parent PDF entry).
+manifest entry (matching the parent PDF entry); it is **NOT** listed
+in any artifact's `primary_sources[]` — the parent PDF is the
+primary source, the sibling is only the extraction surface. Quotes
+derive their verbatim text from the sibling but cite the PDF path in
+`source.path`.
 
 **Sibling-production method standard.** The four paths above are
 interchangeable on fidelity, but they are NOT interchangeable on

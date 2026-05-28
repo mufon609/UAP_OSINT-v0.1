@@ -99,6 +99,12 @@ quotes.
    derived, non-fetchable artifact paired to the parent PDF entry. Confirm with
    `python3 scripts/tools/manifest.py verify-paths`.
 
+   **Do not list this sibling's path in any artifact's `primary_sources[]`** —
+   the parent PDF is the primary source; the sibling is only the extraction
+   surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources,
+   so quotes derive their verbatim text from it but cite the PDF path in
+   `source.path` (see `meta/conventions.md` "Producing the `.txt` sibling").
+
 ## Fallback — when the producer is blocked by the API content filter
 
 Some source content trips the API content-filtering policy. The block is on the

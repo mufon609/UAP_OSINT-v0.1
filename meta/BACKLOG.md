@@ -333,6 +333,44 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
+### C1 — Mechanical safeguard against paired-sibling paths in `primary_sources[]`
+
+The convention "primary source = parent PDF; the `.txt` sibling is the
+extraction surface only" now lives in `meta/conventions.md` "Producing the
+`.txt` sibling" and `.claude/skills/prepare-ocr-sibling/SKILL.md` step 4. The
+docs are the *small* fix. The larger, durable fix is mechanical:
+
+- **Option A — validator.** A per-research-artifact check that walks
+  `primary_sources[].path`, looks each path up in the manifest, and fails
+  when the registered URL carries a fragment suffix (the paired-sibling
+  marker: `#clean-text-transcription`, `#stitched-attribution`). The error
+  message names the parent PDF path the artifact should list instead.
+  Lives at `scripts/checks/primary_sources_no_sibling.py`, registered in
+  `_phases.py` (`archive` phase) and `validate-research.py`'s
+  `_ARTIFACT_CHECKS` dispatch list. Parallel mechanism to the
+  `context_extrinsic_url` check that catches hallucinated URLs by the same
+  manifest-as-truth pattern.
+- **Option B — scaffold-time guard.** Extend
+  `scripts/build/research-scaffold.py`'s `build_primary_sources_list` to
+  detect a sibling path among `--sources` and fail fast with the parent
+  PDF suggestion, before the artifact is even shaped. Catches the mistake
+  at the moment of action rather than after.
+
+Either covers the mistake class the dird-13 build had to reverse-engineer
+by precedent. Both layers would be belt-and-suspenders (the validator
+catches hand-edits the scaffold guard doesn't see; the scaffold guard
+catches the case before an artifact is shaped at all). Pick the validator
+first if only one — it's the durable backstop.
+
+When taking this up, also extend the convention note to
+`.claude/skills/prepare-transcript-sibling/SKILL.md` step 4 (the
+transcript sibling registers with a different fragment marker but
+follows the same primary-vs-extraction-surface split — the docs there
+should match the OCR-sibling skill).
+
+**Blocks:** none.
+**Blocked by:** none.
+
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may
