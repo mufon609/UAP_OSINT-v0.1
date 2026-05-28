@@ -59,7 +59,6 @@ meta/
     overview.md             topic statement, scope, corpora
     research-queue.md       priority investigation queue
     working-notes/          in-progress synthesis docs awaiting integration into content nodes
-  toolkit-notes/            toolkit lessons-learned (topic-neutral)
 
 scripts/
   build/                    build pipeline + validators (contributor-facing)

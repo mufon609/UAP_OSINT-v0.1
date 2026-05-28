@@ -258,8 +258,7 @@ def main():
         help="Run only one build-pipeline phase's checks (plus the always-on "
              "preflight checks) instead of the full sweep — scoped agent "
              "feedback per prompts/topology.md. Phases: "
-             "archive / extract / organize / link / render (aliases "
-             "scout / marker / manager / meta-linker / builder also accepted). "
+             "archive / extract / organize / link / render. "
              "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()
 

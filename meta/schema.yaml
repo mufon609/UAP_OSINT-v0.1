@@ -587,7 +587,7 @@ types:
 
   # --- META ---------------------------------------------------------------
   meta:
-    description: "Governing documents (conventions.md, topic/research-queue.md, toolkit-notes) — no enforced node structure"
+    description: "Governing documents (conventions.md, topic/research-queue.md) — no enforced node structure"
     frontmatter:
       required: [id, type]
 

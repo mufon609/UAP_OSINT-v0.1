@@ -286,8 +286,8 @@ def main():
         "--phase", choices=PHASE_CHOICES, default=None, metavar="PHASE",
         help="Command-shape symmetry with validate*.py — all coverage checks "
              "are render-phase, so only --phase render (or the full pass) runs "
-             "them; any other phase short-circuits to 0 checks. Alias "
-             "'builder' also accepted. See scripts/checks/_phases.py.")
+             "them; any other phase short-circuits to 0 checks. "
+             "See scripts/checks/_phases.py.")
     args = parser.parse_args()
 
     global _PHASE

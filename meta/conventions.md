@@ -1970,8 +1970,7 @@ not researcher browsing. `/scripts/lib/` holds genuinely shared
 cross-cutting helpers.
 
 **Governance and structured-data backing** (`/meta/`) is organized
-by role: `/meta/templates/`, `/meta/topic/`, `/meta/toolkit-notes/`,
-`/meta/research/`. Research artifacts live under `/meta/research/`
+by role: `/meta/templates/`, `/meta/topic/`, `/meta/research/`. Research artifacts live under `/meta/research/`
 because they are the contributor-edited Phase I working surface and
 the agent-readable structured fact layer (per `AGENT.md`) — not
 investigator-read narrative. Putting them with templates (mechanical
@@ -2080,9 +2079,6 @@ their character:
   stable governance specs and forward-looking work registers — the
   rules and the active agenda. A contributor consults these at
   session start or when something on the work queue applies.
-- **`meta/toolkit-notes/`**: reserved for backward-looking lessons
-  (why a rule exists; what was tried before) — retrospective or technique
-  notes live here when they surface. Not yet created.
 - **`meta/templates/`**: scaffolding templates, one per node type.
   Consumed mechanically by `scripts/build/new.py`; rarely read directly
   by contributors except when a new node type is being added.
@@ -2106,8 +2102,7 @@ under `/meta/` survives because everything else is topic-neutral
 toolkit. Items therefore land at the right tier on first author —
 topic-specific items in `/meta/topic/` (governance) or
 `/meta/research/` (structured facts), toolkit-neutral items at
-`meta/`-direct or in `meta/toolkit-notes/` per the rules-vs-lessons
-distinction above.
+`meta/`-direct.
 
 `meta/README.md` is a friendly-face index of the directory's
 contents; this section is the rule of record.
