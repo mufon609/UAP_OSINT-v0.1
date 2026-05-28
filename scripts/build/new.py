@@ -3,19 +3,11 @@
 Scaffold a new node from meta/templates/.
 
 Examples:
-  new.py person --archetype eyewitness --slug chad-underwood --name "Chad Underwood"
-  new.py organization --kind gov --slug aaro --name "AARO"
-  new.py document --kind gov-doc --form testimony --slug written-testimony-fravor-2023
-  new.py document --kind non-gov-doc --form article --slug 2017-nyt-tic-tac
-  new.py document --kind non-gov-doc --form book --archival-status excerpts-only --slug skinwalkers-at-the-pentagon-2021
-  new.py transcript --kind hearing --slug 2023-07-26-house-fravor
-  new.py transcript --kind other --slug nell-sol-foundation-2023
-  new.py event --kind hearing --slug 2023-07-26-house-oversight
-  new.py media --kind video --slug gimbal-declassified
-  new.py media --kind photo --slug dird-01-cover
-  new.py location --slug skinwalker-ranch
-  new.py finding --slug lockheed-martin-non-denial-pattern
-  new.py investigation --slug lockheed-martin-uap-materials --question "Does Lockheed Martin own/house UAP material?"
+  new.py person --archetype eyewitness --slug jane-doe --name "Jane Doe"
+  new.py organization --kind gov --slug example-agency --name "Example Agency"
+  new.py document --kind gov-doc --form testimony --archival-status excerpts-only --slug example-testimony-2024
+  new.py location --slug example-site
+  new.py investigation --slug example-inquiry --question "Does Acme Widgets house the example materials?"
 
 Reads meta/schema.yaml + meta/templates/{type}.md.
 Writes to {type_dir}/{slug}.md.
@@ -57,7 +49,7 @@ DEFAULT_STATUS = {
 
 
 def humanize(slug):
-    """chad-underwood -> Chad Underwood"""
+    """jane-doe -> Jane Doe"""
     return " ".join(w.capitalize() for w in slug.split("-"))
 
 
@@ -173,7 +165,7 @@ def main():
     status = args.status or DEFAULT_STATUS.get(args.type, "active")
     # ``topic_display_name`` is the toolkit-instance topic's display name
     # (e.g. "UAP" on this fork) — distinct from ``display_name`` which
-    # is THIS NODE's title (e.g. "David Fravor"). Templates that
+    # is THIS NODE's title. Templates that
     # reference the topic in section headers / comments use
     # ``{{topic_display_name}}`` so the scaffolded body matches what the
     # renderer would emit (the renderer composes the same headers from

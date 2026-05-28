@@ -8,9 +8,7 @@ Produces meta/research/{slug}.yaml with:
 
 Usage:
   research-scaffold.py --target {type}/{slug}
-  research-scaffold.py --target documents/written-testimony-fravor-2023
-  research-scaffold.py --target documents/written-testimony-fravor-2023 \\
-      --sources government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  research-scaffold.py --target {type}/{slug} --sources {source-path}
   research-scaffold.py --target ... --force    # overwrite existing artifact
 
 The scaffolded artifact is a structurally valid empty shell. Phase I of
@@ -334,11 +332,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--target",
-                        help="Target node: type/slug (e.g., documents/written-testimony-fravor-2023). "
+                        help="Target node: type/slug (e.g., documents/{slug}). "
                              "Required for scaffolding; omit when using --explain.")
     parser.add_argument("--sources", default="",
                         help="Comma-separated list of primary-source paths relative to sources/ "
-                             "(e.g., government/file.pdf,video/gimbal.mp4). Optional — can be "
+                             "(e.g., government/file.pdf,video/example.mp4). Optional — can be "
                              "added during Phase I.")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite existing research artifact")

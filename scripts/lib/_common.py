@@ -1179,7 +1179,7 @@ def extract_significant_tokens(text):
     """Return a set of significant tokens: lowercase words, ≥3 chars,
     excluding STOPWORDS. Preserves intra-word hyphens (so `f/a-18f`,
     `cvn-68`, `world-famous` survive). Strips possessive `'s` suffix
-    (so `fravor's` → `fravor`) — possessive forms are noise against
+    (so `smith's` → `smith`) — possessive forms are noise against
     source text that typically uses first-person `my` / `I`. Strips
     backtick-bracket repo-path wraps (they're identifiers, not
     source-attested content) and markdown emphasis characters.
@@ -1215,14 +1215,14 @@ def extract_significant_tokens(text):
     text = text.replace("—", " ").replace("–", "-")
     text = text.lower()
     words = re.findall(r"[a-z0-9][a-z0-9\-']+", text)
-    # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
+    # Strip trailing possessive `'s` to collapse "smith" ↔ "smith's".
     # (Leaves intra-word apostrophes alone: "don't" stays "don't".)
     words = [re.sub(r"'s$", "", w) for w in words]
     # Strip trailing quote characters that the regex captured from
     # source-quoted phrases. The matched class `[a-z0-9\-']+` includes
     # the apostrophe so intra-word forms like "don't" survive — but the
     # same pattern keeps a trailing quote when a source-quoted phrase
-    # like 'High' or America's UFO Mythology' decodes through YAML
+    # like 'High' or Halverson's Quarterly Report' decodes through YAML
     # single-quoted-scalar escaping. The trailing quote is grammatical
     # punctuation, never part of a word's identity; drop it.
     words = [w.rstrip("'") for w in words]

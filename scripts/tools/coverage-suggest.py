@@ -132,7 +132,7 @@ NAV_NOISE = frozenset({
 
 # Capitalized-token regex — words starting with uppercase, 3+ chars,
 # allowing intra-word apostrophes / hyphens. Matches:
-#   "Targ", "Lockheed", "Puthoff", "Stargate-precursor"
+#   "Smith", "Halverson", "Acme", "Codename-variant"
 # Skips:
 #   - All-caps acronyms (template noise; 2+ uppercase consecutive)
 #   - Short words ("To", "By")
@@ -370,7 +370,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Example:\n"
-            "  coverage-suggest.py meta/research/russell-targ.yaml\n"
+            "  coverage-suggest.py meta/research/{slug}.yaml\n"
         ),
     )
     ap.add_argument("artifact_path",

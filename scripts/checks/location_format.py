@@ -15,10 +15,10 @@ page** — an integer, the Nth page of the file. Two deviations are banned:
 
 This is the guard ``quote_location_page`` structurally cannot be: that check
 skips sibling-backed OCR-scan sources (their canonical extract has no form
-feeds), which is exactly where these deviations accumulated across the AAWSAP
-DIRD set. This check is a pure string check on the artifact data, so it runs
-regardless of extraction type — the mechanical backstop that keeps a rebuilt
-or newly added node from reintroducing printed/roman page refs.
+feeds), so a sibling-only check is needed there. This check is a pure string
+check on the artifact data, so it runs regardless of extraction type — the
+mechanical backstop that keeps a rebuilt or newly added node from
+reintroducing printed/roman page refs.
 
 Anchored on ``p.`` so a chapter/section roman numeral not prefixed by ``p.``
 (e.g. ``(III. Origin of Zero-Point Field Energy)``) never matches; and a

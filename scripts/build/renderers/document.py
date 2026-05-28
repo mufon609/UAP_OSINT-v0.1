@@ -118,10 +118,11 @@ def render_document_summary(artifact):
         lines.append(f"| {k} | {v} |")
     # Stated page-citation convention note for multi-page PDF sources that
     # actually carry `p. N` location refs. `p. N` refs are physical / PDF-viewer
-    # pages (the Nth page of the file), which for composite documents — a cover, a
-    # Black Vault FOIA insert, roman front matter — run ahead of the printed page
-    # number the document carries on its face. State it so a reader following
-    # `p. N` opens the PDF to page N rather than hunting the printed folio. A
+    # pages (the Nth page of the file), which for composite documents — a cover,
+    # a third-party FOIA distribution insert, roman front matter — run ahead of
+    # the printed page number the document carries on its face. State it so a
+    # reader following `p. N` opens the PDF to page N rather than hunting the
+    # printed folio. A
     # sibling-backed (markerless OCR) source uses descriptive content-anchor
     # locations and no `p. N` (meta/conventions.md "Quote location refs"), so the
     # note is suppressed — the node would otherwise advertise a form it never uses.
@@ -199,7 +200,7 @@ def render_cited_works(artifact):
 
     def _key(w):
         # Sort by numeric prefix, then any suffix — so "5" < "5-a" < "5-b" < "6"
-        # (dird-26 carries sub-lettered URL entries [5-a]/[5-b]/[5-c]).
+        # (some documents carry sub-lettered entries like [5-a]/[5-b]/[5-c]).
         k = str(w.get("citation_key", "")).strip()
         m = re.match(r"(\d+)(.*)", k)
         return (0, int(m.group(1)), m.group(2)) if m else (1, 0, k)
@@ -215,18 +216,17 @@ def render_cited_works(artifact):
         key = str(w.get("citation_key", "")).strip()
         verbatim = " ".join((w.get("citation_verbatim") or "").split())
         # citation_verbatim is faithful and includes the source's own leading
-        # marker — bracket "[N]" / "[N-a]" (dird-24, dird-26), parenthetical
-        # "(N)" (dird-10), caret-superscript "^N" (dird-01 endnotes), Unicode
-        # superscript "¹" (dird-06/07/08 endnotes), dotted-decimal "N.M"
-        # (dird-09 per-section lists), number-dot "N." (dird-02 list), or a bare
-        # leading number "N " (nature-1974's numbered list); strip it for
-        # display since the marker is re-emitted in bold from citation_key
-        # (avoids a doubled "[1] [1]" prefix). Order matters: "N.M" precedes
-        # "N." so the full dotted key is consumed, and the bare-number branch is
-        # last + requires trailing whitespace so it only fires as a list marker,
-        # never on a number that opens the citation text. A garbled OCR marker
-        # (e.g. nature's "^"/"O" sics for a lost digit) is intentionally left in
-        # place — faithful to the scan, and the citation_key still carries N.
+        # marker — bracket "[N]" / "[N-a]", parenthetical "(N)",
+        # caret-superscript "^N" endnote, Unicode superscript "¹" endnote,
+        # dotted-decimal "N.M", number-dot "N.", or a bare leading number
+        # "N "; strip it for display since the marker is re-emitted in bold
+        # from citation_key (avoids a doubled "[1] [1]" prefix). Order
+        # matters: "N.M" precedes "N." so the full dotted key is consumed,
+        # and the bare-number branch is last + requires trailing whitespace
+        # so it only fires as a list marker, never on a number that opens
+        # the citation text. A garbled OCR marker (e.g. "^"/"O" sics for a
+        # lost digit) is intentionally left in place — faithful to the
+        # scan, and the citation_key still carries N.
         verbatim = re.sub(
             r"^(?:(?:\[\d+(?:-[a-z])?\]|\(\d+\)|\^\d+|[⁰¹²³⁴⁵⁶⁷⁸⁹]+|\d+\.\d+|\d+\.)\s*"
             r"|\d+\s+)",

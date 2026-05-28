@@ -1,10 +1,10 @@
 """cited-works check — type-conditional research-artifact check (load-bearing).
 
 Required-but-emptyable on document artifacts: the formal reference /
-citation list the source document carries (e.g. an AAWSAP DIRD's
-References section). The KEY is present on every document artifact (empty
-list when the document has no reference list, or one not yet captured);
-the ``## References`` SECTION renders only when entries exist.
+citation list the source document carries. The KEY is present on every
+document artifact (empty list when the document has no reference list,
+or one not yet captured); the ``## References`` SECTION renders only
+when entries exist.
 
 Each entry carries derived bibliographic split fields (``citation_key`` /
 ``author`` / optional ``year`` / ``title``) for queryability — the

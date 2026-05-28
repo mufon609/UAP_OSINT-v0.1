@@ -56,20 +56,19 @@ _HEADING_RE = re.compile(
 )
 
 # Line-initial citation markers, in the formats observed across the corpus:
-#   [1]     bracket                                    (dird-24)
-#   (1)     parenthetical                              (dird-10)
-#   ^1      ASCII-caret superscript, no period         (dird-01)
-#   ¹       Unicode superscript endnote                (dird-06/07/08)
-#   1.1     dotted chapter.ref                         (dird-09)
+#   [1]     bracket
+#   (1)     parenthetical
+#   ^1      ASCII-caret superscript, no period
+#   ¹       Unicode superscript endnote
+#   1.1     dotted chapter.ref
 #   1.      plain numbered + space
 # The marker set is path-dependent, and that split is load-bearing:
-#   - AFTER a confirmed References heading the broad set is safe (we are
-#     past any table of contents), and ``(N)`` is genuine reference
-#     numbering (dird-10's references are "(1) Baibich, M. N., et al., …").
+#   - AFTER a confirmed References heading the broad set is safe (past any
+#     table of contents); there ``(N)`` is genuine reference numbering.
 #   - On the HEADINGLESS path ``(N)`` is EXCLUDED — there it is the shape of
-#     statutory/legislative enumeration (the proposed UAP Disclosure Act's
-#     "(1) … (2) …" subsections), a costly false positive for a hard gate —
-#     as are bare ``N.`` and dotted ``N.N`` (a table of contents / numbered
+#     statutory/legislative enumeration in legal text (``(1) … (2) …``
+#     numbered subsections), a costly false positive for a hard gate — as
+#     are bare ``N.`` and dotted ``N.N`` (a table of contents / numbered
 #     section list). Only the unambiguous endnote markers survive headingless:
 #     ``[N]``, ASCII ``^N``, and line-initial Unicode superscripts (inline
 #     superscript CALLOUTS are not line-initial, so they don't match).
