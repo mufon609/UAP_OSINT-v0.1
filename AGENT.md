@@ -46,7 +46,9 @@ If you're doing anything related to this instance's topic, read
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → run `/build` |
 | Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |
+| Prepare a clean-text sibling for an OCR source | run `/prepare-ocr-sibling {category}/{filename}.pdf` (before quoting an OCR-scanned source) |
 | Audit an existing node | run `/audit {type}/{slug}` |
+| Maintain a built node without re-scaffolding | run `/augment {type}/{slug} "<what to change>"` (add a recovered quote, re-source a dead citation, correct a field) |
 | Verify a transcript verbatim | run `/verify-transcript {type}/{slug}` |
 | Audit quote relevance | run `/quote-relevance-audit meta/research/{slug}.yaml` |
 | Run an archival sweep | run `/archive-sweep` |
@@ -110,7 +112,7 @@ If you're doing anything related to this instance's topic, read
 | `sources/manifest.yaml` | Source archival index | YAML |
 | `sources/{category}/*` | Archived primary sources | PDF / HTML / TXT / other |
 | `scripts/{build,tools}/*.py` | Toolkit scripts (build pipeline + utilities) | Python |
-| `prompts/*.md` | Design docs (topology, philosophy) + paste-ready Claude-Web briefs | Markdown |
+| `prompts/*.md` | Design docs (topology) + paste-ready Claude-Web briefs | Markdown |
 
 ---
 
