@@ -17,25 +17,29 @@
 #                                              stub-linking / description-drift
 #   7. python3 scripts/build/build-state.py --check
 #                                            — CLAUDE.md build-state block in sync
-#   8. python3 scripts/build/renderer-coverage.py
+#   8. python3 scripts/build/associate.py --check
+#                                            — every node's '## Associated Nodes'
+#                                              section matches the links derived
+#                                              from its own body (no drift)
+#   9. python3 scripts/build/renderer-coverage.py
 #                                            — every schema-required section is
 #                                              renderer-producible (schema
 #                                              required/optional/conditional
 #                                              sections ⊆ renderer EMITS)
-#   9. python3 scripts/build/phase_routing_parity.py
+#  10. python3 scripts/build/phase_routing_parity.py
 #                                            — every --phase token in prompts/
 #                                              + .claude/ is valid per
 #                                              scripts/checks/_phases.py, and
 #                                              every canonical phase is
 #                                              documented in topology.md
-#  10. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
+#  11. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
 #                                              valid frontmatter, hard-code no
 #                                              topic token (fork-portable), and
 #                                              settings.json parses
-#  11. scripts/tests/file-size-check.sh      — git-tracked files within
+#  12. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
-#  12. scripts/tests/cookies-check.sh        — no tracked file contains
+#  13. scripts/tests/cookies-check.sh        — no tracked file contains
 #                                              Netscape cookies content or
 #                                              Google session cookies in
 #                                              Netscape-shape rows (defensive
@@ -116,6 +120,7 @@ steps=(
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
+    $'associate.py --check\tpython3 scripts/build/associate.py --check'
     $'renderer-coverage.py\tpython3 scripts/build/renderer-coverage.py --quiet'
     $'phase-routing-parity\tpython3 scripts/build/phase_routing_parity.py --quiet'
     $'skills-check\tbash scripts/tests/skills-check.sh'
