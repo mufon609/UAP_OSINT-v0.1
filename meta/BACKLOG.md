@@ -406,28 +406,6 @@ convention and record the rationale.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C3 — Single canonical home for the OCR/caption mis-transcription example
-
-The same OCR/caption character-corruption failure-mode illustration appears in
-three governance docs: `meta/schema.yaml` (the `auto-caption` value
-description), `meta/schema-research-artifact.yaml` (the same value description
-on `quote_entry`), and `meta/conventions.md` (the transcript-provenance
-discipline section). Same example, three places to keep in sync, three drift
-surfaces.
-
-The fix is single-source-of-truth: pick one canonical home, have the others
-reference it by section name (which is a durable contract per `meta/conventions.md`
-"Comments describe code, not refactor history"). Likely canonical is
-`meta/conventions.md` "Transcript provenance and audit discipline" — that's
-where the failure-mode rule is taught in prose; the schema-side comments would
-then say "see conventions.md '<section name>' for the auto-caption failure
-mode" and drop the example list. Verify the candidate's section name is stable
-(no near-term rename pressure) and that the schema-side comments read cleanly
-without the inline example list before making the cut.
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ### C4 — Skills↔conventions sharing: the layer is already cite-don't-restate; resolve the one orphan
 
 **Finding.** The skill layer already implements "per-skill + a common helper,

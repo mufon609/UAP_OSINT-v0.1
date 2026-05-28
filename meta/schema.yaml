@@ -654,11 +654,11 @@ artifact_entry:
   #                      producing one is busywork + a drift surface.
   #   ocr-scan         — text layer absent or unreliable because the source
   #                      is a scanned image; OCR was needed to produce any
-  #                      text at all. Failure mode: character-level
-  #                      corruption introduced by the OCR process itself
-  #                      (e.g. `inforniation` for `information`,
-  #                      `compatrtmented` for `compartmented`). The PDF's
-  #                      text layer IS the OCR output.
+  #                      text at all. The PDF's text layer IS the OCR output.
+  #                      Failure mode (character-level corruption) + detection
+  #                      signals + per-quote audit discipline: see
+  #                      meta/conventions.md "Confirmation is a precondition
+  #                      for inclusion".
   #   extraction-lossy — text layer is present and was NOT produced by OCR
   #                      (author native / court-reporting software /
   #                      Acrobat Distiller from `.txt`), but pdftotext
@@ -720,32 +720,13 @@ artifact_entry:
   #                             in the manifest note.
   #   auto-caption            — machine-generated caption (YouTube auto-
   #                             caption, Otter.ai, Whisper output, etc.)
-  #                             with no human correction. Failure mode:
-  #                             character-level mis-transcription
-  #                             (e.g. "Halverson" for "Halvorsen", "acme
-  #                             widgits" for "Acme Widgets", "Petrakis"
-  #                             for "Petrakos"). Same shape as
-  #                             ocr-scan: machine rendering of an
-  #                             underlying signal, with errors. The
-  #                             caption file IS the machine output.
-  #                             Validator substring match against the
-  #                             caption file passes trivially when both
-  #                             quote text and caption carry the same
-  #                             machine artifact — the textbook auto-
-  #                             caption blind spot the audit must catch.
+  #                             with no human correction. The caption file
+  #                             IS the machine output. Failure mode
+  #                             (character-level mis-transcription, same
+  #                             shape as ocr-scan) + audit discipline: see
+  #                             meta/conventions.md "Transcript provenance
+  #                             and audit discipline".
   #   unknown                 — provenance not yet classified.
-  # Operational handling for auto-caption: same workflow as ocr-scan.
-  # The caption file is the machine extraction; the underlying audio /
-  # video is the original source. Contributor discipline requires
-  # registering known caption typos as `naming_quirks` entries with
-  # resolution `preserve-as-sic-in-quotes`, mirroring the OCR-scan
-  # discipline. Audio confirmation is required when programmatic /
-  # contextual review surfaces anomalies — the exception case is when
-  # the auto-caption happens to be clean enough that the validator's
-  # substring match is substantively meaningful (analog to the
-  # ocr-scan-with-clean-extract exception in meta/conventions.md).
-  # See meta/conventions.md "Transcript provenance and audit discipline"
-  # for the full discipline.
   # `wayback_skip: true` (URL-level) marks entries where Wayback archival
   # is not applicable — synthetic deep-link URLs that require session
   # state (e.g., government records-portal deep-links) and therefore
