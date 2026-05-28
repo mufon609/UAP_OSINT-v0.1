@@ -50,6 +50,19 @@ Audit goals:
    artifact edit + rebuild, skipping the Worker. Both skip the External
    Investigator (material already archived). Emit `adjacent_needs_update[]`
    with each node + its shape + scratch path.
+
+   **Both shapes are source-rooted; there is no third shape.** Per
+   `meta/conventions.md` "Entity nodes — facts" (prose-section references to
+   other entities only "**where the primary source attests them**"), a topical
+   similarity between two entity nodes — same subject, overlapping technical
+   material, products of the same program — is **not** a propagation candidate
+   unless the adjacent node's primary source attests the connection (a
+   citation, named reference, or structural overlap). Topical-only convergence
+   belongs in `## Associated Nodes` via the shared navigational anchor (a
+   roster / products-list / same-event transcript), which `associate.py`
+   populates automatically from existing tier-2 cross-links. If the adjacent
+   node's source carries no attestation of the connection, the asymmetry is
+   correct; do not emit.
 8. **Family comparability (source-anchored).** Per `meta/conventions.md`
    "Comparability standard", compare the target against its family peers —
    same `type`, and within type the same `archetype` (people) or `kind`
