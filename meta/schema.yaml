@@ -8,13 +8,6 @@
 # Cross-cutting vocabularies
 # ---------------------------------------------------------------------------
 
-status_markers:
-  confirmed: "✅ Confirmed"
-  pending: "⏳ Pending"
-  flagged: "⚠ Flagged"
-  disputed: "⚠ Disputed — unknown"     # both sides assert; neither has primary-source evidence
-  contradiction: "❌ Contradiction"     # positions directly contradict and at least one side is backed by primary-source evidence
-
 limits:
   table_cell_words_soft: 55  # table cells exceeding this should promote to
                               # a ### subsection or a finding node
