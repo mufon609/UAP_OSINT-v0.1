@@ -137,9 +137,11 @@ media/ locations/ findings/ investigations/
 
 .claude/
   skills/                   invokable workflows — /build, /onboard, /audit,
-                            /verify-transcript, /quote-relevance-audit,
-                            /archive-sweep, /fork-init — plus the build-protocol
-                            contract preloaded into the role subagents
+                            /augment, /verify-transcript, /quote-relevance-audit,
+                            /archive-sweep, /prepare-ocr-sibling,
+                            /prepare-transcript-sibling, /fork-init — plus the
+                            build-protocol contract preloaded into the role
+                            subagents
   agents/                   the six build role subagents (internal-investigator,
                             external-investigator, archive, worker, builder, auditor)
   hooks/                    PreToolUse guards — commit gate (runs pre-commit.sh),
@@ -258,6 +260,7 @@ main thread and may dispatch subagents. The user-facing skills:
 - `/quote-relevance-audit` — check that each quote is load-bearing for the node's subject
 - `/archive-sweep` — verify every cited URL is archived locally and recover/submit what's missing
 - `/prepare-ocr-sibling` — produce and verify a clean-text sibling for an OCR-scanned source before quoting it
+- `/prepare-transcript-sibling` — produce and verify a speaker-attributed sibling for a label-less transcript (auto-caption / Whisper) before quoting it
 - `/fork-init` — bootstrap the toolkit for a different topic
 
 A **role subagent** is a capability-bounded worker the `/build` orchestrator

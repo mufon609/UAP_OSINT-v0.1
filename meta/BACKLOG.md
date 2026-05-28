@@ -111,7 +111,9 @@ issue-routing live in `meta/conventions.md` "Speaker attribution: source format 
 the method" and `scripts/tools/VIDEO-PIPELINE.md` Step 0. Shipped: the mixed-exchange
 mechanism (`speaker_id` as a 2+ id list, rendered `Speakers — mixed exchange`); the
 diarize venv-missing fail-fast; the pilot (`lucistrust-rending-veils-ryder-2017`)
-proven by image-verification and committed.
+proven by image-verification and committed; the `/prepare-transcript-sibling` skill
+(producer → independent-verifier → register loop, wired as `/build` step 4c —
+parallel to `/prepare-ocr-sibling`'s step 4b).
 
 **Latent features assessed (keep both).** `derived_from` (transcript frontmatter) is
 wired + rendered but has 0 uses — its case is a transcript that is a text rendering

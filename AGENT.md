@@ -47,6 +47,7 @@ If you're doing anything related to this instance's topic, read
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → run `/build` |
 | Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |
 | Prepare a clean-text sibling for an OCR source | run `/prepare-ocr-sibling {category}/{filename}.pdf` (before quoting an OCR-scanned source) |
+| Prepare a speaker-attributed sibling for a label-less transcript | run `/prepare-transcript-sibling {slug}` (before quoting an auto-caption / Whisper / human-corrected-caption source) |
 | Audit an existing node | run `/audit {type}/{slug}` |
 | Maintain a built node without re-scaffolding | run `/augment {type}/{slug} "<what to change>"` (add a recovered quote, re-source a dead citation, correct a field) |
 | Verify a transcript verbatim | run `/verify-transcript {type}/{slug}` |

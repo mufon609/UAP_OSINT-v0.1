@@ -7,8 +7,11 @@ interview, documentary with intercut interviews — a single transcript line may
 belong to any of them. This pipeline lets a contributor visually confirm
 who-is-who before quoting material in entity-node Statements / Key Passages.
 
-Where the pipeline fits in the repo: contributor diagnostic tooling, not part
-of the build pipeline. It gates the discipline of "every quote attributed to
+Where the pipeline fits in the repo: it is the canonical procedure the
+`/prepare-transcript-sibling` skill invokes — the orchestrator's
+sibling-readiness gate at `/build` step 4c for any label-less transcript
+primary source. The steps below are also runnable manually as a contributor
+diagnostic. The pipeline gates the discipline of "every quote attributed to
 a person actually came from that person" — same evidentiary discipline that
 the verbatim-quote check enforces mechanically, but for sources where the
 speaker isn't stamped in the transcript itself.
