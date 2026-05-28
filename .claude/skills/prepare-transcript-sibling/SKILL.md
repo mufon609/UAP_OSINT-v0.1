@@ -84,9 +84,10 @@ against; the sibling adds the **speaker-attribution layer** that
 
 3. **Independently verify — `Agent(general-purpose)`, a DIFFERENT session.**
    Dispatch a SEPARATE agent (independence is the whole point) to re-check
-   every below-`high` resolution + every turn boundary the producer flagged,
-   against the source frames (image path) or the diarize anchor evidence
-   (audio path). The producer cannot self-verify a mis-registered baseline.
+   every below-`high` speaker resolution + every baseline the producer
+   registered, against the source frames (image path) or the diarize anchor
+   evidence (audio path). The producer cannot self-verify a mis-registered
+   baseline.
    Return PASS, or a list of `[MM:SS] | stitched says SPEAKER_NN → identity-A |
    image/audio shows identity-B`. The verifier specifically scrutinizes: every
    `medium` (split-screen ambiguity), `low` (no single identity dominated), and
