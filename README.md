@@ -107,7 +107,8 @@ scripts/tests/
   pre-commit.sh             canonical all-gates health check (chains every gate:
                             help-check / test_stopwords / smoke / build/validate.py /
                             build/validate-research.py / build/review-coverage.py /
-                            build/build-state.py --check / build/renderer-coverage.py /
+                            build/build-state.py --check / build/associate.py --check /
+                            build/renderer-coverage.py /
                             phase-routing-parity / skills-check / file-size-check /
                             cookies-check)
   help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
