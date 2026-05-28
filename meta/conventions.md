@@ -287,6 +287,25 @@ primary source, the sibling is only the extraction surface. Quotes
 derive their verbatim text from the sibling but cite the PDF path in
 `source.path`.
 
+**The parent-in-`primary_sources[]` rule generalizes to every paired
+sibling — OCR clean-text and speaker-attributed transcript alike.** Both
+flavors register as a manifest entry whose URL carries a fragment marker
+distinguishing it from its parent — `#clean-text-transcription` for an
+OCR sibling, `#speaker-attributed-transcript` for the stitched
+transcript sibling produced by the video pipeline
+(`scripts/tools/VIDEO-PIPELINE.md`; `/prepare-transcript-sibling`). In
+both cases `primary_sources[]` lists the **parent** (the PDF for an
+OCR-scan source, the auto-caption / human-corrected-caption file for a
+label-less transcript), never the sibling. The structural twist between
+the two flavors is what the sibling does to its parent: the OCR sibling
+**replaces** the parent's corrupt text layer (quotes derive verbatim
+text from the sibling); the transcript sibling **coexists with** the
+parent, adding the speaker-attribution layer that
+`validate-research.py` matches `speaker_id` against while the
+auto-caption file remains the verbatim source `validate.py` matches
+`quote.text` against. The fragment-marker pattern is the manifest's
+signal that an entry is a sibling, not a parent.
+
 **Sibling-production method standard.** The four paths above are
 interchangeable on fidelity, but they are NOT interchangeable on
 *uniformity*: the VLM (vision-language model) path runs through the

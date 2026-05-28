@@ -115,6 +115,16 @@ against; the sibling adds the **speaker-attribution layer** that
    as a derived, non-fetchable artifact paired to the parent auto-caption
    entry. Confirm with `python3 scripts/tools/manifest.py verify-paths`.
 
+   **Do not list this sibling's path in any artifact's `primary_sources[]`** —
+   the parent auto-caption / human-corrected-caption file is the primary
+   source; the stitched sibling adds only the speaker-attribution layer.
+   `validate.py` matches `quote.text` against the parent (unchanged verbatim
+   layer); `validate-research.py` matches each quote's `speaker_id` against
+   the sibling. The two artifacts coexist (see `meta/conventions.md`
+   "Producing the `.txt` sibling" — same parent-in-`primary_sources[]` rule
+   as the OCR sibling, despite the different fragment marker and the
+   coexist-vs-replace structural twist).
+
 ## Downstream
 
 The sibling is now canonical for `speaker_id`: `validate-research.py` matches
