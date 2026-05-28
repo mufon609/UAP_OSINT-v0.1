@@ -4,6 +4,7 @@ description: Orchestrate a maintenance change to an existing node — add a reco
 argument-hint: {type}/{slug} "<what to change>"
 allowed-tools:
   - Agent(external-investigator, archive, worker, auditor)
+  - Skill(prepare-ocr-sibling)
   - Read
   - Grep
   - Glob

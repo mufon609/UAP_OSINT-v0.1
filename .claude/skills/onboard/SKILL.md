@@ -6,6 +6,7 @@ allowed-tools:
   - Grep
   - Glob
   - Bash(python3 scripts/build/build-state.py *)
+  - Bash(bash scripts/tests/pre-commit.sh)
 ---
 
 # Onboard
