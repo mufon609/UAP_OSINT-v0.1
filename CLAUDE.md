@@ -95,7 +95,7 @@ artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (30)
+### Documents (31)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -113,6 +113,7 @@ artifact-level warnings stand.
 | `/documents/dird-10-metallic-spintronics` | primary-source-confirmed | gov-doc |
 | `/documents/dird-11-advanced-nuclear-propulsion` | primary-source-confirmed | gov-doc |
 | `/documents/dird-12-bci-controlling-external-devices` | primary-source-confirmed | gov-doc |
+| `/documents/dird-13-warp-drive-extra-dimensions` | primary-source-confirmed | gov-doc |
 | `/documents/dird-15-advanced-space-propulsion` | primary-source-confirmed | gov-doc |
 | `/documents/dird-18-traversable-wormholes` | primary-source-confirmed | gov-doc |
 | `/documents/dird-24-quantum-vacuum-energy-extraction` | primary-source-confirmed | gov-doc |

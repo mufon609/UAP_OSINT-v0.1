@@ -819,6 +819,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #13 — ''Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 2 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 34 pages. DIA attachment #19 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Obousy, Obousy Consultants (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_13-DIRD_Warp_Drive_Dark_energy_and_the_Manipulation_of_Extra_Dimensions.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-13-warp-drive-extra-dimensions-20100402.txt
+    archived_date: '2026-05-28'
+    note: 'Clean-text sibling of the OCR-scanned DIRD-13 PDF (parent: dird-13-warp-drive-extra-dimensions-20100402.pdf). Produced 2026-05-28 via multimodal page-image read of all 34 pages; independently verified 2026-05-28 by a separate agent session — PASS. Black Vault FOIA insert page preserved verbatim between cover and page ii. Equations and figures rendered as bracketed placeholders; redactions ((b)(6) author block, (b)(3):10 USC 424 program-name redactions) preserved verbatim; source spellings + OCR-quirk typos in reference list (e.g. ''Brane ination'', ''relativittstheorie'' without umlauts, ''unitatsproblem'', ''De_ayet'') preserved verbatim per OCR-scan discipline. Two scan-line minus-sign drops at v_warp exponents (page 3) and Casimir force exponent (page 7) preserved as visible in image — no inferred corrections.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_14-DIRD_The_Role_of_Superconductors_in_Gravity_Research.pdf
   status: archived
   artifacts:
