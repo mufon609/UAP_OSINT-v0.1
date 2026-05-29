@@ -1,24 +1,24 @@
 {
   "permissions": {
     "deny": [
-      "Edit(people/**)",
-      "Write(people/**)",
-      "Edit(organizations/**)",
-      "Write(organizations/**)",
-      "Edit(documents/**)",
-      "Write(documents/**)",
-      "Edit(events/**)",
-      "Write(events/**)",
-      "Edit(transcripts/**)",
-      "Write(transcripts/**)",
-      "Edit(media/**)",
-      "Write(media/**)",
-      "Edit(locations/**)",
-      "Write(locations/**)",
-      "Edit(findings/**)",
-      "Write(findings/**)",
-      "Edit(investigations/**)",
-      "Write(investigations/**)"
+      "Edit(/people/**)",
+      "Write(/people/**)",
+      "Edit(/organizations/**)",
+      "Write(/organizations/**)",
+      "Edit(/documents/**)",
+      "Write(/documents/**)",
+      "Edit(/events/**)",
+      "Write(/events/**)",
+      "Edit(/transcripts/**)",
+      "Write(/transcripts/**)",
+      "Edit(/media/**)",
+      "Write(/media/**)",
+      "Edit(/locations/**)",
+      "Write(/locations/**)",
+      "Edit(/findings/**)",
+      "Write(/findings/**)",
+      "Edit(/investigations/**)",
+      "Write(/investigations/**)"
     ]
   },
   "hooks": {
