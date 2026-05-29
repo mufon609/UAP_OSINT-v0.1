@@ -2,50 +2,63 @@
 """
 Mechanical spot-check of a speaker-attribution sibling.
 
-For each turn in `{slug}-attribution.yaml`, extracts THREE frames from the
-source video at the timestamps of the FIRST, MIDDLE, and LAST source lines
-covered by the turn, runs dlib HOG face-detection + ResNet face-embedding
-matching against the photo-identity-log baselines on each frame, and compares
-the resulting identity(ies) against the turn's `speaker_id`.
+For each turn in `{slug}-attribution.yaml`, samples a BURST of frames evenly
+spaced across the turn's source-line time window, runs dlib HOG face-detection
++ ResNet face-embedding matching against the photo-identity-log baselines on
+each frame, and compares the resulting identity(ies) against the turn's
+`speaker_id`.
 
-The beginning/middle/end sampling pattern catches the fold-up failure mode
-that the producer + verifier text-passes cannot catch:
+Why a burst (not 3 stills) and why dominance (not co-presence)
+-------------------------------------------------------------
+The earlier version sampled three stills (beg/mid/end) and flagged
+`contested-fold` whenever ANY other in-transcript speaker appeared in ANY ONE
+frame. Measured against real footage that mis-fires badly: in a two-shot
+podcast, a multi-camera interview, or a voiceover news package the non-speaking
+participant's face is legitimately on screen (reaction shots, cutaways,
+b-roll), so correct turns false-fold. The verdict tracked CAMERA FRAMING, not
+attribution error — because face PRESENCE is not the same question as who is
+SPEAKING.
 
-  - If turn 380-466 is labeled `s2` (Elizondo) and the START frame at
-    [13:23] shows Elizondo AND the END frame at [16:47] shows Elizondo
-    BUT the MIDDLE frame at [15:05] shows Rogan, then the turn has
-    silently folded an embedded Rogan question into Elizondo's
-    monologue. Spot-check surfaces it; text-pass cannot.
+This pass keeps the identity engine but changes what the verdict means:
+
+  - Sample K frames across the whole turn window (denser, evenly spaced).
+  - Decide by DOMINANCE / CONSISTENCY, not incidental co-presence:
+      * the assigned speaker seen in a majority of face-frames → confirmed
+        (a co-present other is a two-shot footnote, not a fold);
+      * the assigned speaker NEVER seen AND exactly one other in-transcript
+        speaker seen consistently → contested-fold (the genuine wrong-label
+        signature);
+      * an assigned speaker whose `on_camera_role` is voiceover / off-camera /
+        mixed, not seen on camera → honestly-unverified (expected), never a fold.
 
 Per-turn verdict:
-  - confirmed         — at least one of the 3 frames matched the assigned
-                        speaker; no other DEFINED speaker (in speakers[])
-                        was detected.
-  - contested-fold    — assigned speaker may or may not have been seen,
-                        AND another speaker FROM THE SAME YAML's speakers[]
-                        was detected in at least one frame. **This is the
-                        fold-up signal.** Highest-priority review.
-  - contested-other   — a baseline identity NOT in this transcript's
-                        speakers[] was detected (b-roll footage of another
-                        person, or an archival clip). Embedding matching makes
-                        a look-alike false-positive far less likely than the
-                        old perceptual-hash engine. Informational; the assigned
-                        attribution may still be correct.
-  - inconclusive      — no faces detected, or no baseline matches at all.
-  - no-baseline       — the assigned speaker has no baseline directory
-                        (cannot verify, honest signal).
-  - n/a-foreign       — turn is foreign-*; not attributable to a live
-                        speaker, image check is skipped.
+  - confirmed              — assigned speaker dominates the face-frames (co-present
+                             others, if any, noted as two-shot/cutaway).
+  - confirmed-with-footnote— assigned speaker seen, but not a clean majority;
+                             recorded honestly, does NOT block a gate.
+  - contested-fold         — assigned speaker never seen AND another in-this-YAML
+                             speaker seen consistently. **The wrong-label signal.**
+                             Highest-priority review; the gate signal.
+  - contested-other        — a baseline identity NOT in this transcript's
+                             speakers[] was the only match (b-roll / archival).
+                             Informational; attribution may still be correct.
+  - honestly-unverified    — assigned role is off-camera/voiceover/mixed and the
+                             assigned face was not (or could not be) seen; this
+                             is expected, not an error.
+  - inconclusive           — no faces / no baseline matches, or signal too weak.
+  - no-baseline            — the assigned speaker has no baseline directory
+                             (cannot verify, honest signal).
+  - n/a-foreign            — turn is foreign-*; not attributable to a live
+                             speaker, image check is skipped.
 
 Output:
-  - CSV at `{stem}-spot-check.csv` (or `--output PATH`) — one row per
-    turn with line_range, speaker_id, three timestamps, three matched
-    identities, verdict, notes.
+  - CSV at `{stem}-spot-check.csv` (or `--output PATH`) — one row per turn.
   - Summary on stdout.
 
 Usage:
   spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4
   spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4 --output PATH.csv
+  spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4 --frames 9
 """
 
 import os
@@ -75,7 +88,6 @@ import argparse
 import csv
 import importlib.util
 import re
-import subprocess
 import tempfile
 from typing import Optional
 
@@ -91,10 +103,41 @@ from lib._common import REPO_ROOT  # noqa: E402
 TOOLS_DIR = Path(__file__).resolve().parent
 TS_RE = re.compile(r"^\[(\d+):(\d+)\]")
 
+# Burst sampling: K frames evenly spaced across each turn's source-line time
+# window. Denser than the old 3-still beg/mid/end pattern so the dominance /
+# consistency test is robust to a single off-frame cutaway. MIN_SPAN_S floors
+# the window for single-line / sub-second turns so the K frames still differ.
+NUM_SAMPLES = 7
+MIN_SPAN_S = 2.0
+
+# An assigned speaker with one of these roles can legitimately be off camera
+# while speaking (voiceover narration, off-camera interviewer). For such a
+# speaker, "assigned face not seen" is expected — honestly-unverified, never a
+# fold. `mixed` is included because the speaker alternates on/off camera, so a
+# not-seen window is ambiguous, not evidence of a wrong label.
+OFF_CAMERA_ROLES = {"voiceover", "off-camera", "mixed"}
+
+# Minimum number of recognized face-frames required before "assigned never seen,
+# another seen consistently" is allowed to fold. A single recognized face-frame
+# (the rest unrecognized) is too thin to overturn a label — one cutaway to the
+# listener satisfies a majority-of-one. Below this floor the verdict is
+# inconclusive (honest, does not block a gate); the contradiction must be
+# corroborated across ≥2 frames to count.
+MIN_FOLD_FRAMES = 2
+
+# (Stage 2 / ASD) A fold needs enough on-camera time to establish who is
+# speaking. Below this window length the assigned speaker's absence is
+# uninformative — the camera may simply not have cut to them during a brief turn
+# (e.g. a 3-second host question asked while the camera holds on the guest, who
+# reacts / starts answering). Such turns are inconclusive, never folds; a genuine
+# long mislabeled block (tens of seconds where one person talks throughout) still
+# folds.
+MIN_FOLD_SECONDS = 12.0
+
 
 # ----------------------------------------------------------------------------
-# detect-faces module loader (importlib — detect-faces.py has hyphens in its
-# filename, so it can't be loaded with a normal `import`)
+# detect-faces / extract-frames module loader (importlib — these filenames have
+# hyphens, so they can't be loaded with a normal `import`)
 # ----------------------------------------------------------------------------
 
 def _load_sibling(rel_filename: str):
@@ -139,24 +182,21 @@ def last_ts_at_or_before(line_to_ts: dict, target_line: int, min_line: int) -> O
     return None
 
 
-# ----------------------------------------------------------------------------
-# Frame extraction (ffmpeg)
-# ----------------------------------------------------------------------------
-
-def extract_frame(video_path: Path, ts_seconds: float, out_path: Path) -> bool:
-    """Extract a single frame from video at `ts_seconds` to `out_path`.
-    Returns True on success."""
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "ffmpeg", "-y", "-loglevel", "error",
-        "-ss", f"{ts_seconds:.3f}",
-        "-i", str(video_path),
-        "-frames:v", "1",
-        "-q:v", "2",
-        str(out_path),
-    ]
-    res = subprocess.run(cmd, capture_output=True)
-    return res.returncode == 0 and out_path.exists() and out_path.stat().st_size > 0
+def sample_window(beg_ts: Optional[float], end_ts: Optional[float]):
+    """Turn a turn's (first-line ts, last-line ts) into a (start, span) burst
+    window. Returns None when the turn covers no timestamped source line.
+    Floors the span at MIN_SPAN_S so single-line / single-tick turns still
+    yield distinct frames."""
+    if beg_ts is None and end_ts is None:
+        return None
+    start = beg_ts if beg_ts is not None else end_ts
+    end = end_ts if end_ts is not None else beg_ts
+    if end < start:
+        start, end = end, start
+    span = end - start
+    if span < MIN_SPAN_S:
+        span = MIN_SPAN_S
+    return max(0.0, start), span
 
 
 # ----------------------------------------------------------------------------
@@ -233,57 +273,210 @@ def expected_identities(speaker_id, speakers_by_id, available_baselines):
     return set(ids), has_baseline
 
 
-def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
-                     defined_baselines: set, yaml_speaker_identities: set):
-    """matches_per_frame = list of 3 lists of identity slugs (beg, mid, end).
-    yaml_speaker_identities = identity slugs of speakers in this YAML's
-    speakers[] (the in-this-transcript set).
-    defined_baselines = all identities with baseline dirs anywhere in the
-    corpus (broader set).
-    Returns (verdict, notes_string).
+def assigned_roles_for(speaker_id, speakers_by_id) -> set:
+    """Return the set of on_camera_role values for the assigned speaker(s)."""
+    ids = speaker_id if isinstance(speaker_id, list) else [speaker_id]
+    roles = set()
+    for m in ids:
+        sp = speakers_by_id.get(m)
+        if sp and sp.get("on_camera_role"):
+            roles.add(sp["on_camera_role"])
+    return roles
 
-    A match against a speaker IN this YAML's speakers[] is a fold-up signal
-    (contested-fold). A match against any OTHER baseline is contested-other
-    — could be b-roll or archival footage (embedding matching makes a
-    look-alike false-positive far less likely than the old engine)."""
+
+def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
+                     defined_baselines: set, yaml_speaker_identities: set,
+                     assigned_roles: set):
+    """Decide a turn's verdict by DOMINANCE / CONSISTENCY over K sampled frames.
+
+    matches_per_frame  — list of per-frame identity-slug lists (one per sampled
+                         frame; empty list = no recognized face in that frame).
+    yaml_speaker_identities — identity slugs of this YAML's speakers[].
+    defined_baselines  — all identities with baseline dirs anywhere in the corpus.
+    assigned_roles     — on_camera_role(s) of the assigned speaker(s).
+
+    Returns (verdict, notes_string). A genuine fold is the assigned speaker
+    NEVER seen while another in-transcript speaker is seen consistently — not
+    mere on-screen co-presence (two-shots, reaction cutaways, b-roll)."""
     if not has_baseline:
         return "no-baseline", "no baseline directory for assigned speaker(s)"
 
-    all_matches = [m for frame_matches in matches_per_frame for m in frame_matches]
-    if not all_matches:
-        return "inconclusive", "no faces detected or no baseline matches across 3 frames"
+    n_total = len(matches_per_frame)
+    face_frames = [set(f) for f in matches_per_frame if f]
+    matched_frames = len(face_frames)
+    off_camera_ok = bool(assigned_roles & OFF_CAMERA_ROLES)
 
-    assigned_hits = sum(1 for m in all_matches if m in expected)
-    # Split "other" detections by whether the identity is in this YAML's
-    # speaker set (fold-up risk) or not (b-roll / false-positive territory).
-    other_in_yaml = sorted({m for m in all_matches if m in yaml_speaker_identities and m not in expected})
-    other_outside_yaml = sorted({m for m in all_matches if m in defined_baselines and m not in yaml_speaker_identities})
+    if matched_frames == 0:
+        if off_camera_ok:
+            return "honestly-unverified", (
+                f"no on-camera face recognized across {n_total} frames; assigned "
+                f"role {sorted(assigned_roles)} may be off-camera/voiceover")
+        return "inconclusive", f"no faces detected or no baseline matches across {n_total} frames"
 
-    if other_in_yaml:
-        if assigned_hits:
-            return "contested-fold", (
-                f"assigned speaker seen ({assigned_hits}/3 frames) AND another "
-                f"YAML-speaker also seen: {other_in_yaml}"
-            )
-        return "contested-fold", f"assigned speaker not detected; another YAML-speaker seen: {other_in_yaml}"
+    assigned_frames = sum(1 for f in face_frames if f & expected)
 
-    if other_outside_yaml:
-        if assigned_hits:
-            # Confirmed (assigned seen) but also saw a non-YAML identity →
-            # informational footnote, not a contested verdict.
+    other_counts: dict = {}
+    for f in face_frames:
+        for ident in f:
+            if ident in yaml_speaker_identities and ident not in expected:
+                other_counts[ident] = other_counts.get(ident, 0) + 1
+    outside_any = sorted({
+        ident for f in face_frames for ident in f
+        if ident in defined_baselines and ident not in yaml_speaker_identities
+    })
+
+    # Strict majority of the frames that recognized any face.
+    majority = (matched_frames // 2) + 1
+    consistent_others = sorted(i for i, c in other_counts.items() if c >= majority)
+
+    # 1. Assigned speaker dominates → confirmed (co-present others = two-shot footnote).
+    if assigned_frames >= majority:
+        if other_counts:
             return "confirmed", (
-                f"{assigned_hits}/3 frames matched assigned speaker; "
-                f"non-YAML identity also detected (b-roll/archival/false-positive): "
-                f"{other_outside_yaml}"
-            )
-        return "contested-other", (
-            f"assigned speaker not detected; non-YAML identity matched "
-            f"(b-roll/archival/false-positive): {other_outside_yaml}"
-        )
+                f"assigned speaker dominant ({assigned_frames}/{matched_frames} "
+                f"face-frames); co-present (two-shot/cutaway): {sorted(other_counts)}")
+        return "confirmed", f"assigned speaker seen in {assigned_frames}/{matched_frames} face-frames"
 
-    if assigned_hits:
-        return "confirmed", f"{assigned_hits}/3 frames matched assigned speaker"
-    return "inconclusive", f"only unknown identities matched: {sorted(set(all_matches))}"
+    # 2. Assigned seen but not a clean majority → honest footnote, not a block.
+    if assigned_frames >= 1:
+        extra = f"; other YAML-speaker(s) also present: {sorted(other_counts)}" if other_counts else ""
+        return "confirmed-with-footnote", (
+            f"assigned speaker seen in {assigned_frames}/{matched_frames} face-frames "
+            f"(not a clean majority){extra}")
+
+    # 3. Assigned speaker never seen.
+    if off_camera_ok:
+        others = sorted(other_counts) or outside_any
+        return "honestly-unverified", (
+            f"assigned speaker not seen in {matched_frames} face-frames; assigned "
+            f"role {sorted(assigned_roles)} may be off-camera/voiceover "
+            f"(others seen: {others})")
+    # Require corroboration across ≥ MIN_FOLD_FRAMES before overturning a label;
+    # a lone recognized frame is too thin (one cutaway to the listener).
+    if matched_frames < MIN_FOLD_FRAMES:
+        return "inconclusive", (
+            f"assigned speaker not seen, but only {matched_frames} face-frame(s) "
+            f"recognized — insufficient evidence to fold "
+            f"(others seen: {sorted(other_counts) or outside_any})")
+    if len(consistent_others) == 1:
+        only = consistent_others[0]
+        return "contested-fold", (
+            f"assigned speaker NEVER seen across {matched_frames} face-frames; "
+            f"{only} seen consistently ({other_counts[only]}/{matched_frames}) — "
+            f"likely wrong label")
+    if consistent_others:
+        return "contested-fold", (
+            f"assigned speaker NEVER seen; multiple YAML-speakers seen "
+            f"consistently: {consistent_others}")
+    if other_counts:
+        # Assigned never seen, others only sporadic → genuinely can't tell.
+        return "inconclusive", (
+            f"assigned speaker not seen; other YAML-speaker(s) seen sporadically "
+            f"(below majority): {sorted(other_counts)}")
+    if outside_any:
+        return "contested-other", (
+            f"assigned speaker not seen; non-YAML identity matched "
+            f"(b-roll/archival): {outside_any}")
+    return "inconclusive", "only unknown identities matched"
+
+
+def verdict_for_turn_asd(expected: set, has_baseline: bool, mar_by_identity: dict,
+                         matched_frames: int, audio_rms, yaml_speaker_identities: set,
+                         defined_baselines: set, assigned_roles: set,
+                         mar_talk_range: float, silence_rms: float,
+                         window_span: float = 0.0):
+    """Speaking-aware verdict (Stage 2): decide by WHO is actually talking, not
+    who is on screen.
+
+    mar_by_identity — {identity: [MAR values across frames where recognized]};
+                      a face is *actively speaking* when its MAR RANGE (max-min)
+                      over ≥2 observations is ≥ mar_talk_range.
+    matched_frames  — frames that recognized any baseline face.
+    audio_rms       — window mean int16 RMS (None = unknown); below silence_rms
+                      the window is treated as b-roll/music/dead air.
+
+    A listening face on screen is NOT a wrong-label signal — only another
+    identified person *speaking* in the assigned span is a fold."""
+    if not has_baseline:
+        return "no-baseline", "no baseline directory for assigned speaker(s)"
+
+    off_camera_ok = bool(assigned_roles & OFF_CAMERA_ROLES)
+    audio_present = audio_rms is not None and audio_rms >= silence_rms
+
+    talking = {}
+    for slug, mars in mar_by_identity.items():
+        if len(mars) >= 2:
+            rng = max(mars) - min(mars)
+            if rng >= mar_talk_range:
+                talking[slug] = rng
+
+    if matched_frames == 0:
+        if off_camera_ok:
+            return "honestly-unverified", (
+                "no on-camera face recognized; assigned role "
+                f"{sorted(assigned_roles)} may be off-camera/voiceover")
+        return "inconclusive", "no faces detected or no baseline matches"
+
+    if not talking:
+        # Faces present but no mouth is moving → the speaker is off-camera (or
+        # mouth motion below threshold). A listening face is benign, never a fold.
+        if audio_present:
+            return "honestly-unverified", (
+                f"on-camera face(s) present but none actively speaking "
+                f"(MAR range < {mar_talk_range}); speaker likely off-camera")
+        return "inconclusive", (
+            "no active on-camera speaker and window near-silent (b-roll/music/dead air)")
+
+    assigned_talking = sorted(s for s in talking if s in expected)
+    other_yaml_talking = sorted(
+        s for s in talking if s in yaml_speaker_identities and s not in expected)
+    other_outside_talking = sorted(
+        s for s in talking if s in defined_baselines and s not in yaml_speaker_identities)
+
+    if assigned_talking:
+        if other_yaml_talking:
+            return "confirmed-with-footnote", (
+                f"assigned speaker actively speaking; overlapping speech with "
+                f"{other_yaml_talking} (crosstalk)")
+        return "confirmed", (
+            f"assigned speaker is the active on-camera speaker "
+            f"(MAR range {talking[assigned_talking[0]]:.3f})")
+
+    if other_yaml_talking:
+        # A voiceover/mixed/off-camera assigned speaker may legitimately be
+        # narrating over b-roll of another person talking (a news package over
+        # interview footage). MAR sees the on-screen mouth move but cannot tell
+        # whose voice is on the track — so this is ambiguous, not a fold.
+        if off_camera_ok:
+            return "honestly-unverified", (
+                f"assigned speaker {sorted(assigned_roles)} not visibly speaking while "
+                f"{other_yaml_talking} speaks on camera — ambiguous "
+                f"(possible voiceover/narration over b-roll)")
+        if window_span < MIN_FOLD_SECONDS:
+            return "inconclusive", (
+                f"{other_yaml_talking} seen speaking but the turn window is only "
+                f"{window_span:.0f}s — too brief to confirm the assigned speaker is "
+                f"off-camera (camera may not have cut to them)")
+        if len(other_yaml_talking) == 1:
+            return "contested-fold", (
+                f"active on-camera speaker is {other_yaml_talking[0]}, NOT the "
+                f"assigned speaker — likely wrong label")
+        return "contested-fold", (
+            f"active on-camera speakers {other_yaml_talking} ≠ assigned — likely wrong label")
+
+    if other_outside_talking:
+        return "contested-other", (
+            f"active speaker is a non-YAML identity "
+            f"(b-roll/archival interview clip): {other_outside_talking}")
+
+    return "inconclusive", "active speaker could not be resolved to a baseline identity"
+
+
+# Verdict bookkeeping — order drives the summary print + CSV summary key set.
+VERDICTS = (
+    "confirmed", "confirmed-with-footnote", "contested-fold", "contested-other",
+    "honestly-unverified", "inconclusive", "no-baseline", "n/a-foreign",
+)
 
 
 # ----------------------------------------------------------------------------
@@ -291,7 +484,9 @@ def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
 # ----------------------------------------------------------------------------
 
 def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
-               scratch_root: Path = None, embed_threshold: float = 0.50):
+               scratch_root: Path = None, embed_threshold: float = 0.50,
+               num_samples: int = NUM_SAMPLES, asd_engine: str = "mar",
+               mar_talk_range: float = 0.06, silence_rms: float = 200.0):
     with yaml_path.open() as f:
         data = yaml.safe_load(f)
 
@@ -307,8 +502,14 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
         if slug
     }
 
-    # Load detect-faces helpers + the cached baseline embedding index
+    # Load detect-faces helpers + the cached baseline embedding index, and the
+    # extract-frames burst primitive (one ffmpeg decode → K evenly-spaced frames).
+    # The active-speaker engine (Stage 2 — MAR lip-motion) is loaded only when
+    # asd_engine != "none"; with "none" the verdict falls back to the Stage-1
+    # presence/dominance test.
     detect_faces_mod = _load_sibling("detect-faces.py")
+    extract_frames_mod = _load_sibling("extract-frames.py")
+    asd_mod = _load_sibling("active-speaker.py") if asd_engine == "mar" else None
     baseline_index = detect_faces_mod.build_baseline_index()
     baselines_root = REPO_ROOT / "sources/photo-identity-log/baselines"
     defined_baselines = baselines_available(baselines_root)
@@ -322,75 +523,104 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
         scratch_root = Path(tempfile.mkdtemp(prefix=f"spot-check-{data['slug']}-"))
     print(f"scratch dir: {scratch_root}")
 
+    def fmt_ts(t):
+        if t is None:
+            return ""
+        return f"{int(t // 60)}:{int(t % 60):02d}"
+
     rows = []
-    summary = {"confirmed": 0, "contested-fold": 0, "contested-other": 0,
-               "inconclusive": 0, "no-baseline": 0, "n/a-foreign": 0}
+    summary = {k: 0 for k in VERDICTS}
 
     for t in data.get("turns", []):
         sid = t["speaker_id"]
         lr = t["line_range"]
         lo, hi = parse_range(lr)
+        roles = assigned_roles_for(sid, speakers_by_id)
+        role_str = "|".join(sorted(roles))
 
         if isinstance(sid, str) and sid.startswith("foreign-"):
             rows.append({
-                "line_range": lr, "speaker_id": sid,
-                "beg_ts": "", "beg_matches": "",
-                "mid_ts": "", "mid_matches": "",
-                "end_ts": "", "end_matches": "",
+                "line_range": lr, "speaker_id": sid, "on_camera_role": "",
+                "window": "", "n_frames": 0, "n_face_frames": 0,
+                "assigned_frames": 0, "others_seen": "",
+                "active_speakers": "", "audio_rms": "",
                 "verdict": "n/a-foreign",
                 "notes": "foreign content; no live-speaker check",
             })
             summary["n/a-foreign"] += 1
             continue
 
-        # Three target lines: first, middle, last in range
-        mid = (lo + hi) // 2
         beg_ts = first_ts_at_or_after(line_to_ts, lo, hi)
-        mid_ts = first_ts_at_or_after(line_to_ts, mid, hi)
         end_ts = last_ts_at_or_before(line_to_ts, hi, lo)
+        window = sample_window(beg_ts, end_ts)
 
-        # If beg=end (single line) keep all three as same timestamp
-        timestamps = [beg_ts, mid_ts, end_ts]
-
-        # Extract + identify each frame
         matches_per_frame = []
-        frame_labels = ["beg", "mid", "end"]
-        seen_paths = {}
-        for label, ts in zip(frame_labels, timestamps):
-            if ts is None:
-                matches_per_frame.append([])
-                continue
-            # Dedupe: if beg_ts == mid_ts == end_ts, only extract once
-            if ts in seen_paths:
-                matches_per_frame.append(seen_paths[ts])
-                continue
-            frame_path = scratch_root / "frames" / f"L{lo:05d}-{label}-{int(ts):05d}s.jpg"
-            ok = extract_frame(video_path, ts, frame_path)
-            if not ok:
-                matches_per_frame.append([])
-                continue
-            idents = identify_frame(frame_path, detect_faces_mod,
-                                    baseline_index, embed_threshold)
-            matches_per_frame.append(idents)
-            seen_paths[ts] = idents
+        mar_by_identity: dict = {}
+        n_frames = 0
+        audio_rms = None
+        if window is not None:
+            start, span = window
+            frame_dir = scratch_root / "frames" / f"L{lo:05d}"
+            frames = extract_frames_mod.extract_burst_individual(
+                video_path, start, span, num_samples, frame_dir)
+            n_frames = len(frames)
+            if asd_mod is not None:
+                audio_rms = asd_mod.window_audio_rms(video_path, start, span)
+                for fp in frames:
+                    idents = []
+                    for _bbox, enc, mar in asd_mod.analyze_frame(fp):
+                        slug = detect_faces_mod.identify(enc, baseline_index, embed_threshold)
+                        if slug:
+                            idents.append(slug)
+                            if mar is not None:
+                                mar_by_identity.setdefault(slug, []).append(mar)
+                    matches_per_frame.append(idents)
+            else:
+                for fp in frames:
+                    matches_per_frame.append(
+                        identify_frame(fp, detect_faces_mod, baseline_index, embed_threshold))
 
         expected, has_baseline = expected_identities(sid, speakers_by_id, defined_baselines)
-        verdict, notes = verdict_for_turn(expected, has_baseline,
-                                           matches_per_frame, defined_baselines,
-                                           yaml_speaker_identities)
+        face_frames = [set(f) for f in matches_per_frame if f]
+        matched_frames = len(face_frames)
 
-        def fmt_ts(t):
-            if t is None: return ""
-            return f"{int(t//60)}:{int(t%60):02d}"
+        if asd_mod is not None:
+            verdict, notes = verdict_for_turn_asd(
+                expected, has_baseline, mar_by_identity, matched_frames, audio_rms,
+                yaml_speaker_identities, defined_baselines, roles,
+                mar_talk_range, silence_rms,
+                window_span=(window[1] if window is not None else 0.0))
+        else:
+            verdict, notes = verdict_for_turn(
+                expected, has_baseline, matches_per_frame, defined_baselines,
+                yaml_speaker_identities, roles)
+
+        assigned_frames = sum(1 for f in face_frames if f & expected)
+        others_count: dict = {}
+        for f in face_frames:
+            for ident in f:
+                if ident not in expected:
+                    others_count[ident] = others_count.get(ident, 0) + 1
+        others_seen = ",".join(f"{k}:{v}" for k, v in sorted(others_count.items()))
+        active_speakers = ",".join(
+            f"{k}:{(max(v) - min(v)):.3f}"
+            for k, v in sorted(mar_by_identity.items()) if len(v) >= 2)
+
+        win_str = ""
+        if window is not None:
+            win_str = f"{fmt_ts(window[0])}–{fmt_ts(window[0] + window[1])}"
 
         rows.append({
-            "line_range": lr, "speaker_id": sid if isinstance(sid, str) else ",".join(sid),
-            "beg_ts": fmt_ts(beg_ts),
-            "beg_matches": "|".join(matches_per_frame[0]),
-            "mid_ts": fmt_ts(mid_ts),
-            "mid_matches": "|".join(matches_per_frame[1]),
-            "end_ts": fmt_ts(end_ts),
-            "end_matches": "|".join(matches_per_frame[2]),
+            "line_range": lr,
+            "speaker_id": sid if isinstance(sid, str) else ",".join(sid),
+            "on_camera_role": role_str,
+            "window": win_str,
+            "n_frames": n_frames,
+            "n_face_frames": matched_frames,
+            "assigned_frames": assigned_frames,
+            "others_seen": others_seen,
+            "active_speakers": active_speakers,
+            "audio_rms": f"{audio_rms:.0f}" if audio_rms is not None else "",
             "verdict": verdict,
             "notes": notes,
         })
@@ -408,14 +638,14 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
     print()
     print(f"Spot-check verdict — {data['slug']}")
     print(f"  engine: dlib HOG + ResNet embeddings   "
-          f"embed-threshold: {embed_threshold} (Euclidean)")
+          f"embed-threshold: {embed_threshold} (Euclidean)   "
+          f"frames/turn: {num_samples}")
     print(f"  Total turns scanned: {len(rows)}")
-    for k in ("confirmed", "contested-fold", "contested-other",
-              "inconclusive", "no-baseline", "n/a-foreign"):
-        print(f"  {k:<16}: {summary[k]}")
+    for k in VERDICTS:
+        print(f"  {k:<24}: {summary[k]}")
     if summary["contested-fold"]:
         print()
-        print("CONTESTED-FOLD turns (review urgently — potential fold-up):")
+        print("CONTESTED-FOLD turns (review urgently — likely wrong label):")
         for r in rows:
             if r["verdict"] == "contested-fold":
                 print(f"  lines {r['line_range']:>12} (assigned {r['speaker_id']}): {r['notes']}")
@@ -430,11 +660,32 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Spot-check speaker-attribution sibling via beg/mid/end frames.",
+        description="Spot-check speaker-attribution sibling via a per-turn frame burst.",
     )
     ap.add_argument("yaml_path", help="path to {slug}-attribution.yaml")
     ap.add_argument("--video", required=True, help="path to source video file")
     ap.add_argument("--output", help="output CSV path (default: alongside yaml)")
+    ap.add_argument(
+        "--frames", type=int, default=NUM_SAMPLES,
+        help=f"frames sampled per turn across its time window (default {NUM_SAMPLES}; "
+             "denser sampling makes the dominance/consistency test more robust)",
+    )
+    ap.add_argument(
+        "--asd", choices=["mar", "none"], default="mar",
+        help="active-speaker engine: 'mar' (default) verifies WHO is speaking via "
+             "mouth-motion (active-speaker.py); 'none' falls back to the Stage-1 "
+             "presence/dominance test (who is on camera)",
+    )
+    ap.add_argument(
+        "--mar-talk-range", type=float, default=0.06,
+        help="minimum MAR range (max-min across the burst) for a face to count as "
+             "actively speaking (default 0.06; --asd mar only)",
+    )
+    ap.add_argument(
+        "--silence-rms", type=float, default=200.0,
+        help="window int16 audio RMS below which the window is treated as "
+             "silent/b-roll (default 200; --asd mar only)",
+    )
     ap.add_argument(
         "--embed-threshold", type=float, default=0.50,
         help="max Euclidean distance between a frame face embedding and a "
@@ -451,7 +702,9 @@ def main():
     else:
         output = yaml_path.with_name(yaml_path.stem.replace("-attribution", "") + "-spot-check.csv")
 
-    spot_check(yaml_path, video_path, output, embed_threshold=args.embed_threshold)
+    spot_check(yaml_path, video_path, output, embed_threshold=args.embed_threshold,
+               num_samples=args.frames, asd_engine=args.asd,
+               mar_talk_range=args.mar_talk_range, silence_rms=args.silence_rms)
 
 
 if __name__ == "__main__":
