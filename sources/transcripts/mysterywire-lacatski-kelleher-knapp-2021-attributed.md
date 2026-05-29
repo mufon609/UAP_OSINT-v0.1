@@ -539,7 +539,7 @@ Downloaded: 2026-05-17
 ```
 
 ### Speakers — mixed exchange: James Lacatski, Colm Kelleher  
-*(lines 427-428 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 427-428 · ⚠ LOW CONFIDENCE)*
 
 ```
 [17:04] george i appreciate it

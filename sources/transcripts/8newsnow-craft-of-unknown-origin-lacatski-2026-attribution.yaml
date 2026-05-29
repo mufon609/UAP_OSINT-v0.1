@@ -1,5 +1,6 @@
 # Speaker-attribution sibling — verified, structured-only. Verification
-# scaffolding (rationale / verifier_notes) was stripped by
+# scaffolding (rationale / verifier_notes / needs_image_verification) was
+# stripped by
 # scripts/build/finalize-attribution.py once the independent verifier
 # passed. Indexes into the source transcript by 1-indexed line range;
 # references only, no transcript text. Conforms to
@@ -118,4 +119,3 @@ turns:
 - speaker_id: s3
   line_range: '140'
   confidence: low
-  needs_image_verification: true

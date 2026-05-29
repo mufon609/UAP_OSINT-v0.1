@@ -227,14 +227,16 @@ The verifier returns:
 - **PASS** — the orchestrator runs `python3 scripts/build/finalize-attribution.py
   {draft}.yaml --verifier-session {id}`, which sets `verification_status:
   verified` + `verifier_session` AND **strips the verification scaffolding**:
-  every turn's `rationale` + `verifier_notes`, and the top-level
-  `verifier_notes`. The committed sibling is structured-only — `rationale` did
-  its job (gave the verifier a cue to check); on a verified sibling it's dead
-  prose that renders into the `.md` and invites opinion, so it's removed. The
+  every turn's `rationale` + `verifier_notes` + `needs_image_verification`, and
+  the top-level `verifier_notes`. The committed sibling is structured-only —
+  `rationale` did its job (gave the verifier a cue to check) and
+  `needs_image_verification` did its (routed the turn to step 4b); on a verified
+  sibling they're dead scaffolding that renders into / clutters the `.md`, so
+  they're removed. The
   structural validator then FATALs if any scaffolding remains, so the strip is
   enforced, not optional. (`confidence: low|medium` stays as the durable
-  uncertainty marker; an investigator reads the source lines to judge a
-  boundary.) Do NOT hand-edit the YAML to strip — use the tool (no 40-field
+  uncertainty marker — alongside any `image_verification[]` resolution; an
+  investigator reads the source lines to judge a boundary.) Do NOT hand-edit the YAML to strip — use the tool (no 40-field
   agent edit → no mangling).
 - **REJECT** — sets `verification_status: rejected` with
   `verifier_notes: |\n  <correction list>` enumerating each turn
@@ -286,6 +288,16 @@ If the dlib engine isn't installed (`.venv-face/` absent — run
 pointer. The skill does NOT treat that as a blocker — it routes the affected
 turns to manual contributor review instead. The image path is the backstop,
 not the prerequisite.
+
+Either way, `needs_image_verification` is **draft-phase scaffolding**: it is
+the producer's request to this step, not a durable field. Finalize (step 5
+above) strips it from every turn, and the structural validator FATALs if a
+verified sibling still carries it. A turn that was image-verified keeps its
+`image_verification[]` entry as the durable record; a turn whose flag the
+contributor chose not to act on (image path skipped, or backstop unavailable)
+keeps only its `confidence: low|medium` marker. Do not finalize a sibling with
+the flag still standing as an unactioned to-do — resolve or consciously accept
+each flagged turn first.
 
 ## 5. Register + render.
 

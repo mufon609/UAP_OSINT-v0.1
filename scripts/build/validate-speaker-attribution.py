@@ -406,10 +406,12 @@ def check_verification_fields(data, rpt):
 
 def check_verified_structured_only(data, rpt):
     """A VERIFIED sibling is the committed end-product and carries no
-    verification scaffolding. rationale + verifier_notes are stripped on
-    finalize (scripts/build/finalize-attribution.py); their presence on a
-    verified sibling is a FATAL — the structured fields (speaker_id,
-    line_range, confidence) are the durable record."""
+    verification scaffolding. rationale + verifier_notes + the
+    needs_image_verification flag are stripped on finalize
+    (scripts/build/finalize-attribution.py); their presence on a verified
+    sibling is a FATAL — the structured fields (speaker_id, line_range,
+    confidence) plus any image_verification[] resolution are the durable
+    record."""
     if data.get("verification_status") != "verified":
         return
     if data.get("verifier_notes"):
@@ -421,13 +423,14 @@ def check_verified_structured_only(data, rpt):
     for i, t in enumerate(data.get("turns") or []):
         if not isinstance(t, dict):
             continue
-        for field in ("rationale", "verifier_notes"):
+        for field in ("rationale", "verifier_notes", "needs_image_verification"):
             if t.get(field):
                 rpt.fatal(
                     f"turns[{i}].{field}",
                     f"forbidden on a verified sibling — strip via "
                     f"finalize-attribution.py ({field} is draft-phase scaffolding; "
-                    f"confidence is the durable uncertainty marker)",
+                    f"confidence + any image_verification[] resolution are the "
+                    f"durable record)",
                 )
 
 

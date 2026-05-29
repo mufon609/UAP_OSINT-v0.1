@@ -46,7 +46,7 @@ Downloaded: 2026-05-19
 ```
 
 ### Joe Rogan — Host  
-*(lines 13-18 · medium confidence · ⚠ needs image verification)*
+*(lines 13-18 · medium confidence)*
 
 ```
 [0:14] I'm doing better than I deserve yeah
@@ -58,7 +58,7 @@ Downloaded: 2026-05-19
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 19-46 · medium confidence · ⚠ needs image verification)*
+*(lines 19-46 · medium confidence)*
 
 ```
 [0:28] of official jobs government in regards
@@ -661,7 +661,7 @@ Downloaded: 2026-05-19
 ```
 
 ### Joe Rogan — Host  
-*(lines 544-578 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 544-578 · ⚠ LOW CONFIDENCE)*
 
 ```
 [20:11] was most compelling like I said more
@@ -1124,7 +1124,7 @@ Department of the Air Force / The Pentagon, circa 1952.
 ```
 
 ### Joe Rogan — Host  
-*(lines 907-916 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 907-916 · ⚠ LOW CONFIDENCE)*
 
 ```
 [33:40] know I know but it's just like yeah the
@@ -3197,7 +3197,7 @@ Department of the Air Force / The Pentagon, circa 1952.
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 2590-2619 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 2590-2619 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:35:05] kind of blurry looking night vision
@@ -3379,7 +3379,7 @@ Department of the Air Force / The Pentagon, circa 1952.
 ```
 
 ### Joe Rogan — Host  
-*(lines 2724-2746 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 2724-2746 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:40:00] yeah I mean it just makes sense that if
@@ -4533,7 +4533,7 @@ Department of the Air Force / The Pentagon, circa 1952.
 ```
 
 ### Joe Rogan — Host  
-*(lines 3650-3657 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 3650-3657 · ⚠ LOW CONFIDENCE)*
 
 ```
 [2:14:34] thank you very much thanks again I I

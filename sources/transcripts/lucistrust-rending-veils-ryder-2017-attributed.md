@@ -1153,7 +1153,7 @@
 ```
 
 ### Speakers — mixed exchange: Lawrence, Dr. James T. Ryder  
-*(lines 1000-1002 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 1000-1002 · ⚠ LOW CONFIDENCE)*
 
 ```
 [45:09] If you're a scientist, yeah.

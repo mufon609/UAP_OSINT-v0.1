@@ -245,11 +245,18 @@ turn_entry:
   #   AF memo paragraph 6", "NewsNation Coulthart-Grusch interview,
   #   June 2023", "House oversight hearing July 26 2023, Mace question".
   #
-  # needs_image_verification: bool (default false). Set by producer
-  #   when textual cues are insufficient and confirmation against the
-  #   source recording would help. Routed to the conditional image-
-  #   verification step against sources/photo-identity-log/baselines/.
-  #   Cleared once verifier resolves (see image_verification_entry).
+  # needs_image_verification: bool (default false). DRAFT-PHASE
+  #   VERIFICATION SCAFFOLDING — the producer's request that this turn be
+  #   confirmed against the source recording when textual cues are
+  #   insufficient. Routed to the conditional image-verification step
+  #   against sources/photo-identity-log/baselines/. Like rationale, it is
+  #   draft-phase only: once the sibling is VERIFIED the flag has served its
+  #   purpose and is STRIPPED by scripts/build/finalize-attribution.py — a
+  #   verified sibling carries no needs_image_verification (the validator
+  #   FATALs if it does). The durable record of a resolved turn is its
+  #   `confidence` plus any image_verification_entry; an unresolved turn
+  #   carries only `confidence` (image verification is the backstop, not a
+  #   prerequisite — see the skill).
   #
   # verifier_notes: free-text added by the independent verifier on
   #   turns they corrected or specifically reviewed. Not added by the

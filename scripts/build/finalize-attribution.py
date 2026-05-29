@@ -2,17 +2,20 @@
 """finalize-attribution.py — strip verification scaffolding from a speaker-
 attribution sibling, leaving a structured-only verified artifact.
 
-`rationale` and `verifier_notes` are DRAFT-PHASE scaffolding: the producer
-emits the cue for each contested boundary, the independent verifier checks it
-against the source. Once the sibling is verified that prose has served its
+`rationale`, `verifier_notes`, and `needs_image_verification` are DRAFT-PHASE
+scaffolding: the producer emits the cue for each contested boundary (and flags
+turns it wants confirmed against frames), the independent verifier checks them
+against the source. Once the sibling is verified that scaffolding has served its
 purpose — it isn't load-bearing on the committed artifact, it eats tokens, and
-it renders into the `-attributed.md`. This tool removes it deterministically
+the prose renders into the `-attributed.md`. This tool removes it deterministically
 (agents emit/judge; scripts mutate), so a verified sibling carries only its
 structured fields. `confidence: low|medium` remains as the durable uncertainty
-marker; an investigator reads the source lines to judge any boundary.
+marker (alongside any `image_verification[]` resolution); an investigator reads
+the source lines to judge any boundary.
 
-Stripped: every turn's `rationale` + `verifier_notes`, the top-level
-`verifier_notes`, and any `contributor_notes` on an image_verification entry.
+Stripped: every turn's `rationale` + `verifier_notes` + `needs_image_verification`,
+the top-level `verifier_notes`, and any `contributor_notes` on an
+image_verification entry.
 Kept: all structured fields, `confidence`, `referenced_source`, speaker
 `notes`, `image_verification` (turn_line_range / resolution /
 resolved_speaker_id / resolved_by).
@@ -38,7 +41,8 @@ from lib._common import REPO_ROOT, strict_yaml_load  # noqa: E402
 
 HEADER = (
     "# Speaker-attribution sibling — verified, structured-only. Verification\n"
-    "# scaffolding (rationale / verifier_notes) was stripped by\n"
+    "# scaffolding (rationale / verifier_notes / needs_image_verification) was\n"
+    "# stripped by\n"
     "# scripts/build/finalize-attribution.py once the independent verifier\n"
     "# passed. Indexes into the source transcript by 1-indexed line range;\n"
     "# references only, no transcript text. Conforms to\n"
@@ -59,7 +63,8 @@ def finalize(data: dict, verifier_session: str | None) -> dict:
             )
 
     counts = {"rationale": 0, "turn_verifier_notes": 0,
-              "top_verifier_notes": 0, "contributor_notes": 0}
+              "top_verifier_notes": 0, "needs_image_verification": 0,
+              "contributor_notes": 0}
 
     if data.pop("verifier_notes", None) is not None:
         counts["top_verifier_notes"] = 1
@@ -69,6 +74,8 @@ def finalize(data: dict, verifier_session: str | None) -> dict:
                 counts["rationale"] += 1
             if t.pop("verifier_notes", None) is not None:
                 counts["turn_verifier_notes"] += 1
+            if t.pop("needs_image_verification", None) is not None:
+                counts["needs_image_verification"] += 1
     for e in data.get("image_verification") or []:
         if isinstance(e, dict) and e.pop("contributor_notes", None) is not None:
             counts["contributor_notes"] += 1
@@ -110,8 +117,9 @@ def main() -> None:
     print(f"  stripped: {counts['rationale']} rationale, "
           f"{counts['turn_verifier_notes']} turn verifier_notes, "
           f"{counts['top_verifier_notes']} top verifier_notes, "
+          f"{counts['needs_image_verification']} needs_image_verification, "
           f"{counts['contributor_notes']} contributor_notes "
-          f"({total} prose field(s) total)")
+          f"({total} scaffolding field(s) total)")
 
 
 if __name__ == "__main__":

@@ -269,7 +269,7 @@ this transcript's metadata.
 ```
 
 ### KLAS Studio Anchor — 8 News Now studio anchor (lead-in + handoff)  
-*(lines 140 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
+*(lines 140 · ⚠ LOW CONFIDENCE)*
 
 ```
 [5:12] >> hear a pin drop when he's talking.
