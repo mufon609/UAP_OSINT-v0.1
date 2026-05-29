@@ -174,3 +174,25 @@ auditor's advisory-scoped Bash can run `git restore` and silently
 revert an uncommitted batch; a committed change is immune. A
 regression caught after the commit is a cheap follow-up — far cheaper
 than lost work.
+
+### No speculative estimates — name the work, not its size
+
+Work plans, BACKLOG entries, and status reports state what needs to
+get done, not how much of it there is or how long it will take. Do
+not invent: per-task percentage gains, accuracy projections, hour
+estimates, session counts, line-count estimates, or probability
+claims about whether something will succeed. Algorithm- or library-
+level facts (a published benchmark number, a documented distance
+metric, a measured throughput) are properties of the tool itself and
+belong in artifacts. The line: anything specific to THIS project's
+outcome where there is no measurement is speculation.
+
+Where uncertainty matters, state directional shape only ("this
+should help format X more than format Y, magnitudes unknown") and
+prefer naming what would resolve the uncertainty (run a real test)
+over inventing the number.
+
+**Why:** Speculative percentages and hours read as precision but
+contain no information — the reader cannot tell what was measured
+from what was guessed, and the artifact decays as more sessions
+accumulate fake-precise predictions that nothing tests.
