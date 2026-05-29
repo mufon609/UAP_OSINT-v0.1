@@ -90,6 +90,12 @@ The producer's brief includes:
   text in turn entries**. The schema has no `text` field on `turn_entry`;
   the validator will fail if the agent invents one or tries to inline
   text. The output is references, not transcript.
+- **`line_range` values MUST be quoted YAML strings.** Write `"82"` for
+  a single line and `"82-99"` for a range — both with surrounding double
+  quotes. YAML otherwise parses bare `82` as an integer, which the
+  validator rejects with `malformed; expected 'N' or 'N-M'`. This is
+  the easiest single mistake to make and the most common producer-side
+  validator failure.
 - For each turn entry, produce: `speaker_id` (defined-id `s1`/`s2`/...,
   a `foreign-*` kind, or a 2+-element mixed-exchange list), `line_range`
   (`N` or `N-M`), `confidence` (high/medium/low), and `rationale` (the

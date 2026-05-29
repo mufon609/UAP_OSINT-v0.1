@@ -4286,6 +4286,19 @@
     transcript_provenance: auto-caption
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     note: 8 News Now / KLAS-TV Las Vegas / Mystery Wire news segment 'Craft of unknown origin subject of secret study, former US intelligence official confirms' by George Knapp, published 2026-04-06. ~5 minutes (132 caption lines). Lacatski speaks directly on-camera with Knapp. Published 2 days before WEAPONIZED EP 114 (2026-04-08); same 'Future Visions' (Lacatski's fourth book) press cycle but news-segment format vs long-form podcast. Opens with narrator naming Lacatski and his AAWSAP role; Lacatski speaks throughout.
+- url: https://www.youtube.com/watch?v=MiUDl_9v6Ag#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-attribution.yaml
+    archived_date: '2026-05-29'
+    note: Speaker-attribution sibling of the label-less transcript at transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; 3rd pilot — structurally hardest BACKLOG case, news-package format with reporter narration + interview clips + studio anchor handoff). Verified 2026-05-29 by independent verifier — REJECT with 1 correction (lines 135-136 boundary off-by-one); orchestrator applied the fix. Verifier successfully exercised the content-check-on-both-sides rule (added after the 2026-05-28 mysterywire confabulation). 19 turns covering source_line_count=140. 1 turn flagged needs_image_verification (line 140 anchor identity).
+  - format: md
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-attributed.md
+    archived_date: '2026-05-29'
+    note: Rendered companion of transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-attribution.yaml. Deterministic output of scripts/tools/render-speaker-transcript.py — body content byte-identical to the parent auto-caption file.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=Nc9_ZP36-AI
   status: archived
   archive_status: 3
