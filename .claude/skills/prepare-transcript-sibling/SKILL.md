@@ -247,8 +247,12 @@ discipline** — most transcripts won't trigger it. When triggered:
    from the source line, then `python3 scripts/tools/extract-frames.py
    burst --video sources/video/{slug}.mp4 --timestamps MM:SS`.
 3. `python3 scripts/tools/detect-faces.py detect --index
-   /tmp/frames-{slug}/burst-MM-SS/index.md` — matches against
-   `sources/photo-identity-log/baselines/`.
+   /tmp/frames-{slug}/burst-MM-SS/index.md` — dlib HOG detection + ResNet
+   face-embedding matching against `sources/photo-identity-log/baselines/`
+   (embeddings replaced Haar+pHash per BACKLOG C1: the same/different-person
+   distance gap eliminates look-alike false positives). For a turn-level
+   mechanical cross-check across a whole sibling, `spot-check-attribution.py`
+   uses the same engine.
 4. Outcomes:
    - **Clean baseline match:** agent verifier records an
      `image_verification[]` entry with `resolution: confirmed` (or
@@ -264,11 +268,11 @@ discipline** — most transcripts won't trigger it. When triggered:
    validator (the YAML now has updated turns + an `image_verification[]`
    list).
 
-If `setup-photo-identity.sh` hasn't run (system OpenCV missing),
-`detect-faces.py` errors with the install pointer. The skill does NOT
-treat that as a blocker — it routes the affected turns to manual
-contributor review instead. The image path is the backstop, not the
-prerequisite.
+If the dlib engine isn't installed (`.venv-face/` absent — run
+`setup-face-embeddings.sh`), `detect-faces.py` errors with the install
+pointer. The skill does NOT treat that as a blocker — it routes the affected
+turns to manual contributor review instead. The image path is the backstop,
+not the prerequisite.
 
 ## 5. Register + render.
 

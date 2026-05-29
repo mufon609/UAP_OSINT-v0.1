@@ -45,19 +45,28 @@ needs `setup-diarize-audio.sh`. Both are idempotent installers that report
 what's missing and exit non-zero on failure — re-run them any time.
 
 ```
-bash scripts/tools/setup-photo-identity.sh   # image path: OpenCV + ffmpeg + yt-dlp + JS runtime
+bash scripts/tools/setup-photo-identity.sh   # frame side: ffmpeg + Pillow + yt-dlp + JS runtime
+bash scripts/tools/setup-face-embeddings.sh  # matching engine: cmake + dlib + face_recognition (.venv-face)
 bash scripts/tools/setup-diarize-audio.sh    # audio path: pyannote + torch + HF-token walk-through
 ```
 
-`setup-photo-identity.sh` installs and verifies the visual-side pipeline:
+`setup-photo-identity.sh` installs and verifies the frame-handling side:
 
 | Dependency | Purpose | Install path |
 |---|---|---|
-| `python3-opencv` | Haar cascade face detection | apt |
-| `opencv-data` | Cascade XML files | apt |
 | `yt-dlp` | Video download | pip / apt |
 | `ffmpeg`, `ffprobe` | Frame extraction, merge, duration probe | apt |
+| `python3-pil` (Pillow) | Face crop resize/save | apt |
 | JS runtime (`deno` / `node` / `bun`) | yt-dlp's EJS challenge solver | varies |
+
+`setup-face-embeddings.sh` installs the dlib matching engine (separate venv —
+PEP 668 + heavy C++ build):
+
+| Dependency | Purpose | Install path |
+|---|---|---|
+| `cmake` + `build-essential` | Compile dlib from source | apt |
+| `.venv-face/` (`--system-site-packages`) | Isolate dlib/face_recognition; reuse system Pillow/yaml | `python3 -m venv` |
+| `dlib` + `face_recognition` + `numpy` | HOG detector + ResNet face embeddings | pip (in venv) |
 
 `setup-diarize-audio.sh` covers the audio-side optional step:
 
@@ -97,11 +106,12 @@ you run: a *missing but needed* dependency must stop the run with its remedy; a
 satisfied-or-unneeded one proceeds. The tools fail-fast on their own —
 `download-video.py` / `extract-frames.py` preflight their binaries,
 `diarize-audio.py` checks `.venv-diarize` + `HF_TOKEN` up front, `detect-faces.py`
-reports a missing cascade/opencv — each naming the setup script to run.
+auto-relaunches under `.venv-face` (and errors with the setup script if it's
+absent) — each naming the setup script to run.
 
 | Method | Needs | Remedy if missing |
 |---|---|---|
-| image path | ffmpeg/ffprobe, OpenCV + opencv-data, Pillow; the video file; a baseline per speaker | `setup-photo-identity.sh`; re-fetch video with `download-video.py`; register baselines with `detect-faces.py register` |
+| image path | ffmpeg/ffprobe + Pillow (`setup-photo-identity.sh`), the dlib engine in `.venv-face` (`setup-face-embeddings.sh`); the video file; a baseline per speaker | run both setup scripts; re-fetch video with `download-video.py`; register baselines with `detect-faces.py register` |
 | audio path | `.venv-diarize`, `HF_TOKEN`, accepted gated models, torch; the video/audio | `setup-diarize-audio.sh` (creates venv, installs pyannote/torch, walks HF acceptance + `HF_TOKEN` export) |
 | video re-fetch (both paths) | yt-dlp, ffmpeg, JS runtime; **cookies only for YouTube**, not Vimeo | `setup-photo-identity.sh`; cookies via `extract-firefox-cookies.py` (YouTube only) |
 
@@ -220,10 +230,11 @@ python3 scripts/tools/detect-faces.py detect \
     --input /tmp/frames-{slug}/anchor/
 ```
 
-For each detected face, the tool saves a 256×256 jpg crop to
-`sources/photo-identity-log/crops/` (skipping near-duplicates via perceptual
-hash). Summary reports counts: faces detected, deduplicated, identified
-(meaning: pHash matched against an existing baseline crop).
+For each detected face (dlib HOG), the tool saves a 256×256 jpg crop to
+`sources/photo-identity-log/crops/` (skipping near-identical frames via face
+embedding distance) and records a best-guess identity hint where the embedding
+matches a baseline. Summary reports counts: faces detected, deduplicated,
+identified (embedding-matched against an existing baseline).
 
 ### 4. Register clear baselines
 
@@ -254,9 +265,11 @@ The `register` command:
    provenance (source video path, timestamp, bbox)
 
 Future `detect` runs will identify new crops against the accumulating
-baseline set — when an unambiguous baseline pHash-matches a freshly-detected
-face in a new frame, the tool reports it as identified rather than queuing
-it as an unlabeled crop.
+baseline set — when a freshly-detected face embedding-matches a baseline
+within the match threshold, the tool tags the crop with that identity hint
+(and dedups it if it's a near-identical repeat). More references per identity
+(5–10 spanning angle/lighting/year) raise match accuracy; the embedding cache
+(`baseline-encodings.npz`) rebuilds automatically when baselines change.
 
 ### Maintenance: prune unidentified crops
 
@@ -266,9 +279,9 @@ python3 scripts/tools/detect-faces.py prune --dry-run
 python3 scripts/tools/detect-faces.py prune --force  # no prompt
 ```
 
-Removes crops in `crops/` whose pHash matches no baseline — i.e., unlabeled
-faces the contributor has decided not to keep. Removed crops leave git
-history but no longer in HEAD.
+Removes crops in `crops/` whose face embedding matches no baseline identity
+— i.e., unlabeled faces the contributor has decided not to keep. Removed
+crops leave git history but no longer in HEAD.
 
 ### 5. Stitch the auto-caption transcript with speaker labels
 
@@ -285,7 +298,7 @@ the `-downloaded.md` (or equivalent) path; pass `--diarize-segments` /
 `--transcript` to override.
 
 For each diarize segment, extracts a frame at the segment's midpoint,
-runs face detection, pHash-matches against `baselines/`. Aggregates the
+runs face detection, embedding-matches against `baselines/`. Aggregates the
 matches per anonymous speaker label and writes:
 
 - `/tmp/stitch-{slug}/stitched.md` — header carries the speaker-resolution
@@ -312,7 +325,7 @@ Confidence ratings the script emits:
 - `low`    — speaker had visual matches but no single identity dominated.
 - `none`   — no baseline matches at all in this speaker's segments
              (frame was a graphic overlay, no face detected, or face
-             pHash exceeded the threshold against every baseline).
+             embedding distance exceeded the threshold against every baseline).
 
 A `⚠ Manual review required` banner fires whenever any speaker resolves
 below `high`. The contributor uses the stitched output to populate the

@@ -64,15 +64,30 @@ the resolved speaker labels to populate the ``speaker_id`` field on each
 transcript quote in the research artifact.
 """
 
+import os
+import sys
+from pathlib import Path
+
+# Venv auto-relaunch — the detect-faces sibling needs face_recognition / dlib
+# from .venv-face/. Same guarded re-exec idiom as detect-faces.py; guarded on
+# the venv existing so --help works under bare system Python (help-check green).
+_VENV_DIR = Path(__file__).resolve().parent.parent.parent / ".venv-face"
+_VENV_PYTHON = _VENV_DIR / "bin" / "python3"
+if (
+    _VENV_PYTHON.is_file()
+    and Path(sys.prefix).resolve() != _VENV_DIR.resolve()
+    and os.environ.get("FACE_VENV_ACTIVE") != "1"
+):
+    os.environ["FACE_VENV_ACTIVE"] = "1"
+    os.execv(str(_VENV_PYTHON), [str(_VENV_PYTHON)] + sys.argv)
+
 import argparse
 import csv
 import importlib.util
 import re
 import subprocess
-import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
-from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import yaml
@@ -189,14 +204,13 @@ def parse_caption_file(path: Path) -> List[CaptionLine]:
     return out
 
 
-def load_baselines(manifest_path: Path) -> List[Tuple[Path, int, str]]:
-    """Load identity baselines: walks baselines/ on disk, computing pHash
-    per file. The manifest is used to confirm the baselines directory
-    location; the pHash + identity slug come from the on-disk file layout
-    (baselines/{slug}/ref_NN.jpg)."""
+def load_baselines(manifest_path: Path) -> dict:
+    """Load the identity baseline embedding index: {slug: ndarray (k,128)}.
+    Walks baselines/{slug}/ref_NN.jpg on disk and encodes each (cached). The
+    manifest is used only to confirm the baselines directory location."""
     if not manifest_path.is_file():
         sys.exit(f"error: baselines manifest not found: {manifest_path}")
-    return detect_faces_mod.baseline_phashes()
+    return detect_faces_mod.build_baseline_index()
 
 
 # ----------------------------------------------------------------------------
@@ -204,24 +218,19 @@ def load_baselines(manifest_path: Path) -> List[Tuple[Path, int, str]]:
 # ----------------------------------------------------------------------------
 
 def detect_identities_in_frame(
-    frame_path: Path, baseline_hashes: List[Tuple[Path, int, str]],
-    crop_scratch_dir: Path,
+    frame_path: Path, baseline_index: dict, crop_scratch_dir: Path,
 ) -> Tuple[List[str], int]:
-    """Returns (matched_identities, n_faces). For each face detected in
-    ``frame_path``, crops it, computes pHash, and matches against
-    baselines. Returns the list of matched identity slugs (None matches
-    omitted) plus the total face count."""
-    faces = detect_faces_mod.detect_faces_in_image(frame_path)
+    """Returns (matched_identities, n_faces). Detects + embeds every face in
+    ``frame_path`` (dlib HOG + ResNet) and matches each against the baseline
+    embedding index within EMBED_MATCH_DISTANCE. Returns the matched identity
+    slugs (None matches omitted) plus the total face count. crop_scratch_dir
+    is retained for signature compatibility but no longer written."""
+    faces = detect_faces_mod.encode_faces_in_image(frame_path)
     matched = []
-    crop_scratch_dir.mkdir(parents=True, exist_ok=True)
-    for i, bbox in enumerate(faces):
-        crop_path = crop_scratch_dir / f"{frame_path.stem}_face_{i:02d}.jpg"
-        if not detect_faces_mod.crop_and_save(frame_path, bbox, crop_path):
-            continue
-        phash = detect_faces_mod.perceptual_hash(crop_path)
-        if phash is None:
-            continue
-        identity = detect_faces_mod.identify_against_baselines(phash, baseline_hashes)
+    for _bbox, enc in faces:
+        identity = detect_faces_mod.identify(
+            enc, baseline_index, detect_faces_mod.EMBED_MATCH_DISTANCE
+        )
         if identity:
             matched.append(identity)
     return matched, len(faces)

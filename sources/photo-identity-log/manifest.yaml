@@ -10,6 +10,58 @@
   - 178
   added_date: '2026-05-19'
   note: 'Frontal close-up, clean-shaven, fuller brown-grey hair, light blue striped button-up, sailing painting backdrop. Biochemist; co-author with Lacatski of ''Inside the US Government Covert UFO Program: Initial Revelations'' (and earlier ''Hunt for the Skinwalker''). Identity confirmed via [24:07] Corbell direct address (''let''s start with colum colum this book is so much different from Skin Walkers at the Pentagon'') — 27:18 falls within Kelleher''s answer; the single-face anchor at 27:18 shows this person in close-up.'
+- identity: colm-kelleher
+  path: baselines/colm-kelleher/ref_02.jpg
+  sha256: 22b636dc3f67be0e49982f006d029fe53f8e1545db9e57a10e76bd6af10eb36a
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: 04:30
+  bbox:
+  - 259
+  - 128
+  - 107
+  - 107
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: colm-kelleher
+  path: baselines/colm-kelleher/ref_03.jpg
+  sha256: c6c8143646a202b96b48f5e2db1b688a60d9843d2f7bcdc4f819ca027f678e2d
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: 06:30
+  bbox:
+  - 247
+  - 128
+  - 107
+  - 107
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: colm-kelleher
+  path: baselines/colm-kelleher/ref_04.jpg
+  sha256: 2e3ba5cd0c97a9cf0c83f443f06a5085bf53e75810e1879f1dba845d219e0508
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: '12:30'
+  bbox:
+  - 259
+  - 140
+  - 107
+  - 107
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: colm-kelleher
+  path: baselines/colm-kelleher/ref_05.jpg
+  sha256: 37bcae8375c07505b8b61d19806102643e29e47b662c8b960e13ff477795306d
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: '15:30'
+  bbox:
+  - 247
+  - 140
+  - 107
+  - 107
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
 - identity: danny-sheehan
   path: baselines/danny-sheehan/ref_01.jpg
   sha256: 081e0d77c2af502acdf2790c2ff031296020caa83d4ad64e908198bce38827f6
@@ -121,6 +173,84 @@
   - 120
   added_date: '2026-05-19'
   note: 'Frontal close-up, glasses visible, balding, light blue button-up shirt, plain backdrop. Co-author with Kelleher of ''Inside the US Government Covert UFO Program: Initial Revelations''. Identity confirmed via [1:56-2:01] transcript first-person attestation: ''the program was created between myself and Senator Reed at the defense intelligence agency'' (= AAWSAP, which Lacatski created at DIA with Sen. Reid); [24:07] Corbell refers to ''Jim'' separately from ''colum'', confirming Jim = Lacatski.'
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_02.jpg
+  sha256: 958cc55cfa89093333c6a336110afb597394ac04b26dee6863f0076d8f9d8c3a
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: 02:30
+  bbox:
+  - 275
+  - 166
+  - 89
+  - 89
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_03.jpg
+  sha256: 3a35bdecb6d45f2677e43487ef34bdbb852c1862dd71acb0a8d7b904a131e877
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: 03:30
+  bbox:
+  - 275
+  - 176
+  - 89
+  - 89
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_04.jpg
+  sha256: dbe5bb427aa8e8fad6789de791f8ffe19bfc47bd5a6723014e0a8c5da52da479
+  source_video_path: sources/video/mysterywire-lacatski-kelleher-knapp-2021.mp4
+  source_timestamp: '14:30'
+  bbox:
+  - 275
+  - 176
+  - 89
+  - 89
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  note: Mystery Wire 2021 book-launch interview (Skinwalkers at the Pentagon); embedding-engine baseline expansion (BACKLOG C1)
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_05.jpg
+  sha256: 5a62e57b256ba4fd56c229c59c4f63cd900e3ec52c941a60e09d213472f32f41
+  source_video_path: sources/video/8newsnow-craft-of-unknown-origin-lacatski-2026.mp4
+  source_timestamp: 01:10
+  bbox:
+  - 340
+  - 118
+  - 223
+  - 223
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  note: 8 News Now 2026 (Lacatski, different setting/year from 2021 refs); embedding-engine baseline expansion (BACKLOG C1)
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_06.jpg
+  sha256: e788113c809136486f3b45943efce2b86fb76a13d8caa202c7e3fd3ae861f922
+  source_video_path: sources/video/8newsnow-craft-of-unknown-origin-lacatski-2026.mp4
+  source_timestamp: 02:30
+  bbox:
+  - 340
+  - 118
+  - 223
+  - 223
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  note: 8 News Now 2026 (Lacatski, different setting/year from 2021 refs); embedding-engine baseline expansion (BACKLOG C1)
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_07.jpg
+  sha256: d64a3d72d934205ee43e0458f023c34746c69bbd2f86162d9bca09d10ced729a
+  source_video_path: sources/video/8newsnow-craft-of-unknown-origin-lacatski-2026.mp4
+  source_timestamp: 04:30
+  bbox:
+  - 340
+  - 142
+  - 223
+  - 223
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  note: 8 News Now 2026 (Lacatski, different setting/year from 2021 refs); embedding-engine baseline expansion (BACKLOG C1)
 - identity: james-ryder
   path: baselines/james-ryder/ref_01.jpg
   sha256: 6374164aaf9df58c821fd8d0113a1c5fb006341c3ce4651d78257caa0cd11012
@@ -221,6 +351,45 @@
   added_date: '2026-05-19'
   source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
   note: 'JRE #2194 with Elizondo; alt pose, smiling'
+- identity: joe-rogan
+  path: baselines/joe-rogan/ref_03.jpg
+  sha256: 888bf4746e9888dfaabaa6ef19d5e038f9aee7323e763d68ff1b17877a58ddb7
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '1:09:00'
+  bbox:
+  - 474
+  - 163
+  - 107
+  - 108
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
+- identity: joe-rogan
+  path: baselines/joe-rogan/ref_04.jpg
+  sha256: 92f9754d11f17826264d535bff3daac42e6c4093901b4e2064156c1ca619f370
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '1:41:00'
+  bbox:
+  - 442
+  - 133
+  - 155
+  - 155
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
+- identity: joe-rogan
+  path: baselines/joe-rogan/ref_05.jpg
+  sha256: f0e54e30b2c72e85be979942a8aecbdd9b1d6c112d3b3be9c12f17bba010bd2e
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '2:05:00'
+  bbox:
+  - 442
+  - 133
+  - 155
+  - 155
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
 - identity: joni-ernst
   path: baselines/joni-ernst/ref_01.jpg
   sha256: f1c0893dbf0eb15fab40991723e9c713e1a0198285c0c662b2a649380f978452
@@ -271,6 +440,45 @@
   added_date: '2026-05-19'
   source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
   note: 'JRE #2194 appearance; gray cap, tighter crop'
+- identity: luis-elizondo
+  path: baselines/luis-elizondo/ref_03.jpg
+  sha256: aa01ff3e6eba8af920f61b33bf2442e372468b43a45d948b52ab4ffe19369beb
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '13:00'
+  bbox:
+  - 411
+  - 125
+  - 129
+  - 129
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
+- identity: luis-elizondo
+  path: baselines/luis-elizondo/ref_04.jpg
+  sha256: 3836be5e9fda017dc0447ed7fc720ba134639591abb4f753629ecd80a2dcda0c
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '45:00'
+  bbox:
+  - 411
+  - 139
+  - 129
+  - 129
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
+- identity: luis-elizondo
+  path: baselines/luis-elizondo/ref_05.jpg
+  sha256: 37848c177a6df550205c4495f9906ec13451b5014d90533a605eb460cb581408
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '2:13:00'
+  bbox:
+  - 356
+  - 133
+  - 155
+  - 155
+  added_date: '2026-05-29'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 Elizondo 2024; embedding-engine baseline expansion (BACKLOG C1)'
 - identity: meagan-medick
   path: baselines/meagan-medick/ref_01.jpg
   sha256: f499c18ec0a771364103436af47bc2fe8fb4dd398622c3f1a0814e3bb7f9e44b

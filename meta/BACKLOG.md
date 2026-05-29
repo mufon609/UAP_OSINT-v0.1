@@ -267,7 +267,7 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Upgrade `spot-check-attribution.py` from Haar+pHash to dlib face embeddings
+### C1 — ✅ DONE (2026-05-29): dlib face embeddings replaced Haar+pHash
 
 **The problem.** The agent-based speaker-attribution pipeline ships with a
 mechanical fourth-layer spot-check at `scripts/tools/spot-check-attribution.py`
@@ -299,52 +299,55 @@ detected in a JRE-Elizondo episode, or `david-fravor` / `luis-elizondo` /
 neither is actually present. Haar-cascade also misses 50–75% of faces at
 random timestamps because of profile/angled/looking-down shots.
 
-**The fix.** Replace the matching stack with dlib's HOG face detector +
-ResNet face embeddings, accessed via the `face_recognition` Python library
-(Adam Geitgey's dlib wrapper). The dlib face model scores 99.38% on the
-Labeled Faces in the Wild benchmark. The embedding distance metric has a
-clean gap between same-person (typical cosine ~0.4) and different-person
-(typical ~0.7+) frames — the overlap problem that defeats pHash threshold
-tuning doesn't exist in embedding space.
+**✅ RESOLVED (2026-05-29).** The matching stack was replaced in place with
+dlib's HOG detector + ResNet 128-d face embeddings via `face_recognition`
+(no dual-backend — clean cut, pHash recoverable from git). dlib built from
+source in a project-local `.venv-face/` (`setup-face-embeddings.sh`); the
+tools auto-relaunch under it. Distance metric is **Euclidean** (the library's
+native metric; the "cosine ~0.4" note above was imprecise), default
+`--embed-threshold 0.50` (tighter than dlib's 0.6 to favour precision).
+Baselines are encoded once into a sha256-fingerprinted `baseline-encodings.npz`
+cache.
 
-**Shape of expected gain.** Confirm rate should rise on all three shipped
-pilots; the lift is largest on the formats pHash fails completely (the
-8newsnow news-package case is currently 0% confirm; embeddings would
-produce a non-zero rate). `contested-other` false positives should drop
-toward zero — semantic matching doesn't collide similar-looking faces the
-way perceptual hashing does. Magnitudes are unknown until a real test on
-this corpus.
+**Measured result — same three pilots, embed @ 0.50 vs the saved pHash run:**
 
-**Implementation shape.** Clone the structure of `spot-check-
-attribution.py` and swap the matching step. Baselines are encoded once
-and cached. Per-frame is face detect + encode + distance lookup. Cost is
-bounded but not measured.
+| Pilot | confirmed | contested-fold | contested-other | inconclusive |
+|---|---|---|---|---|
+| jre-2194 | 23 → **27** | 19 → 22 | 1 → **0** | 97 → 91 |
+| mysterywire | 1 → **6** | 4 → 7 | 7 → **0** | 3 → 2 |
+| 8newsnow | 0 → **5** | 0 → 4 | 13 → **0** | 1 → 5 |
 
-**Install risk: medium.** `pip install face_recognition` on Kali/Debian
-usually works in 1–5 min. Depends on `dlib` (C++); wheels often available
-but may compile, needing `cmake` + Python dev headers + `build-essential`.
-Total dependency size ~100 MB. If wheel install fails, fall back to
-`deepface` library which has multiple backend options including a
-TensorFlow Keras-based path.
+Every prediction held: **`contested-other` look-alike false positives → 0 on
+all three pilots** (the JRE `david-grusch`-in-an-Elizondo-episode and the
+13 phantom 8newsnow matches are gone); confirm rate rose on every pilot;
+previously-`inconclusive` Haar-missed angled shots now resolve. The
+false-positives that existed reclassified to *correct* verdicts (real
+same-panel detections → confirmed/fold), not to new errors. Threshold sweep
+0.45/0.50/0.55 on JRE: all hold contested-other at 0; 0.50 ties 0.55 for
+peak confirms — a wide clean band, confirming the same/different distance
+gap pHash lacked.
 
-**Adjacent improvement (multiplicative, not redundant).** More baseline
-frames per identity also help. With embeddings: going from the current 1-2
-references per identity to 5-10 lifts match accuracy from ~95% to ~99% by
-giving the centroid vector richer angle/lighting coverage. Worth doing for
-core corpus identities (the speakers appearing across multiple node
-transcripts) once embeddings are in place; not worth doing for pHash
-because the ceiling is too low.
+**Baseline expansion — done, but the honest finding:** core identities grown
+to 5–10 refs (lacatski 1→7, kelleher 1→5, rogan 2→5, elizondo 2→5, spanning
+angle/year/setting; knapp stayed at 1 — he is the off-camera interviewer in
+our sources, no on-camera single-face frames to harvest). Re-running all
+three pilots with the expanded 43-vector baseline set changed **0 verdicts**
+and only 2/145 match-lists: embeddings were already at ceiling on these
+pilots with single baselines. The extra references are insurance for harder
+*future* inputs (profile, cross-lighting, cross-year), not a measurable lift
+on the current corpus — recorded so the next contributor doesn't expect one.
 
-**Test path.** Validate on JRE-2194 first (video on disk, identities closest
-to baseline conditions, hard numbers available for comparison from the
-current pHash run at `/tmp/spot-check-jre-2194-final.csv`). If confirm rate
-jumps as predicted, run on mysterywire + 8newsnow as the harder cases. If
-predictions hold, fold the embedding-based path into the skill as the
-default (current pHash path stays as a fallback for environments where
-dlib won't install).
+Shipped: `detect-faces.py` engine swap (HOG detect + embedding dedup/identity
++ `encode-baselines` subcommand), `spot-check-attribution.py` wiring +
+`--embed-threshold`, `stitch-transcript.py` updated to the same API,
+`setup-face-embeddings.sh`, docs (CLAUDE.md, VIDEO-PIPELINE.md, SKILL.md,
+setup-photo-identity.sh — Haar/opencv dependency retired). Comparison CSVs
+preserved under `sources/photo-identity-log/.compare/` (gitignored).
 
-**Blocks:** none.
-**Blocked by:** none. Install is the one risk; tractable.
+**Follow-up (optional):** the diarize+stitch path (`stitch-transcript.py` +
+`diarize-audio.py` + `.venv-diarize`) is superseded by the agent-based
+`/prepare-transcript-sibling`; stitch was kept working (updated to embeddings)
+but is a candidate for full removal if the diarize path is formally retired.
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 

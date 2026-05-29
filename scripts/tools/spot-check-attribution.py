@@ -4,9 +4,9 @@ Mechanical spot-check of a speaker-attribution sibling.
 
 For each turn in `{slug}-attribution.yaml`, extracts THREE frames from the
 source video at the timestamps of the FIRST, MIDDLE, and LAST source lines
-covered by the turn, runs face-detection + photo-identity-log baseline
-matching on each frame, and compares the resulting identity(ies) against
-the turn's `speaker_id`.
+covered by the turn, runs dlib HOG face-detection + ResNet face-embedding
+matching against the photo-identity-log baselines on each frame, and compares
+the resulting identity(ies) against the turn's `speaker_id`.
 
 The beginning/middle/end sampling pattern catches the fold-up failure mode
 that the producer + verifier text-passes cannot catch:
@@ -27,9 +27,10 @@ Per-turn verdict:
                         fold-up signal.** Highest-priority review.
   - contested-other   — a baseline identity NOT in this transcript's
                         speakers[] was detected (b-roll footage of another
-                        person, archival clip, OR a pHash false-positive
-                        — common at looser thresholds). Informational;
-                        the assigned attribution may still be correct.
+                        person, or an archival clip). Embedding matching makes
+                        a look-alike false-positive far less likely than the
+                        old perceptual-hash engine. Informational; the assigned
+                        attribution may still be correct.
   - inconclusive      — no faces detected, or no baseline matches at all.
   - no-baseline       — the assigned speaker has no baseline directory
                         (cannot verify, honest signal).
@@ -47,15 +48,36 @@ Usage:
   spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4 --output PATH.csv
 """
 
+import os
+import sys
+from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Venv auto-relaunch — must happen before importing the detect-faces sibling
+# (which needs face_recognition / dlib from .venv-face/). Same guarded re-exec
+# idiom as detect-faces.py / diarize-audio.py; doing it here, at process start,
+# means the relaunch is deterministic rather than firing mid-function when the
+# sibling module is exec'd. The venv is --system-site-packages, so PyYAML +
+# ffmpeg-driving stdlib stay available after the relaunch. Guarded on the venv
+# existing so --help works under bare system Python (help-check stays green).
+# ---------------------------------------------------------------------------
+_VENV_DIR = Path(__file__).resolve().parent.parent.parent / ".venv-face"
+_VENV_PYTHON = _VENV_DIR / "bin" / "python3"
+if (
+    _VENV_PYTHON.is_file()
+    and Path(sys.prefix).resolve() != _VENV_DIR.resolve()
+    and os.environ.get("FACE_VENV_ACTIVE") != "1"
+):
+    os.environ["FACE_VENV_ACTIVE"] = "1"
+    os.execv(str(_VENV_PYTHON), [str(_VENV_PYTHON)] + sys.argv)
+
 import argparse
 import csv
 import importlib.util
 import re
 import shutil
 import subprocess
-import sys
 import tempfile
-from pathlib import Path
 from typing import Optional
 
 try:
@@ -142,40 +164,23 @@ def extract_frame(video_path: Path, ts_seconds: float, out_path: Path) -> bool:
 # Per-frame identification
 # ----------------------------------------------------------------------------
 
-def identify_frame(frame_path: Path, detect_faces_mod, baselines, scratch_dir: Path,
-                   phash_threshold: int):
-    """Run face detection on frame_path; for each face, crop + pHash + match
-    against baselines using a configurable Hamming-distance threshold (the
-    detect-faces.py default of 5 is calibrated for near-duplicate dedup; for
-    cross-shot identity matching we want a looser threshold, typically 15-25).
-    Returns list of identity slugs (may be empty)."""
+def identify_frame(frame_path: Path, detect_faces_mod, baseline_index,
+                   embed_threshold: float):
+    """Detect + embed every face in frame_path (dlib HOG + ResNet, one pass on
+    the original pixels) and match each against the baseline embedding index.
+    Returns the list of identity slugs detected — one best match per face,
+    within embed_threshold Euclidean distance (may be empty)."""
     if not frame_path.exists():
         return []
     try:
-        faces = detect_faces_mod.detect_faces_in_image(frame_path)
+        faces = detect_faces_mod.encode_faces_in_image(frame_path)
     except Exception:
         return []
-    if not faces:
-        return []
     identities = []
-    scratch_dir.mkdir(parents=True, exist_ok=True)
-    for i, bbox in enumerate(faces):
-        crop_path = scratch_dir / f"{frame_path.stem}_face_{i:02d}.jpg"
-        if not detect_faces_mod.crop_and_save(frame_path, bbox, crop_path):
-            continue
-        phash = detect_faces_mod.perceptual_hash(crop_path)
-        if phash is None:
-            continue
-        # Find closest-matching baseline; apply our threshold (not detect-
-        # faces's default-5 dedup threshold).
-        best_ident, best_dist = None, phash_threshold + 1
-        for _, base_phash, slug in baselines:
-            d = detect_faces_mod.hamming_distance(phash, base_phash)
-            if d < best_dist:
-                best_dist = d
-                best_ident = slug
-        if best_ident and best_dist <= phash_threshold:
-            identities.append(best_ident)
+    for _bbox, enc in faces:
+        slug = detect_faces_mod.identify(enc, baseline_index, embed_threshold)
+        if slug:
+            identities.append(slug)
     return identities
 
 
@@ -240,7 +245,8 @@ def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
 
     A match against a speaker IN this YAML's speakers[] is a fold-up signal
     (contested-fold). A match against any OTHER baseline is contested-other
-    — could be b-roll, archival, or a pHash false-positive."""
+    — could be b-roll or archival footage (embedding matching makes a
+    look-alike false-positive far less likely than the old engine)."""
     if not has_baseline:
         return "no-baseline", "no baseline directory for assigned speaker(s)"
 
@@ -286,7 +292,7 @@ def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
 # ----------------------------------------------------------------------------
 
 def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
-               scratch_root: Path = None, phash_threshold: int = 20):
+               scratch_root: Path = None, embed_threshold: float = 0.50):
     with yaml_path.open() as f:
         data = yaml.safe_load(f)
 
@@ -302,9 +308,9 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
         if slug
     }
 
-    # Load detect-faces helpers + baselines
+    # Load detect-faces helpers + the cached baseline embedding index
     detect_faces_mod = _load_sibling("detect-faces.py")
-    baselines = detect_faces_mod.baseline_phashes()
+    baseline_index = detect_faces_mod.build_baseline_index()
     baselines_root = REPO_ROOT / "sources/photo-identity-log/baselines"
     defined_baselines = baselines_available(baselines_root)
 
@@ -364,8 +370,8 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
             if not ok:
                 matches_per_frame.append([])
                 continue
-            idents = identify_frame(frame_path, detect_faces_mod, baselines,
-                                    scratch_root / "crops", phash_threshold)
+            idents = identify_frame(frame_path, detect_faces_mod,
+                                    baseline_index, embed_threshold)
             matches_per_frame.append(idents)
             seen_paths[ts] = idents
 
@@ -402,6 +408,8 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
     print(f"\nWrote {output_csv}")
     print()
     print(f"Spot-check verdict — {data['slug']}")
+    print(f"  engine: dlib HOG + ResNet embeddings   "
+          f"embed-threshold: {embed_threshold} (Euclidean)")
     print(f"  Total turns scanned: {len(rows)}")
     for k in ("confirmed", "contested-fold", "contested-other",
               "inconclusive", "no-baseline", "n/a-foreign"):
@@ -429,11 +437,11 @@ def main():
     ap.add_argument("--video", required=True, help="path to source video file")
     ap.add_argument("--output", help="output CSV path (default: alongside yaml)")
     ap.add_argument(
-        "--phash-threshold", type=int, default=20,
-        help="max Hamming distance to count as a baseline match (default 20; "
-             "detect-faces.py's near-duplicate threshold of 5 is too strict for "
-             "cross-shot identity matching — same person at different camera "
-             "angles routinely lands at distance 10-25)",
+        "--embed-threshold", type=float, default=0.50,
+        help="max Euclidean distance between a frame face embedding and a "
+             "baseline reference to count as a match (default 0.50; dlib's own "
+             "compare_faces tolerance is 0.6 — 0.50 is tighter, favouring "
+             "precision over recall to keep contested-other false positives low)",
     )
     args = ap.parse_args()
 
@@ -444,7 +452,7 @@ def main():
     else:
         output = yaml_path.with_name(yaml_path.stem.replace("-attribution", "") + "-spot-check.csv")
 
-    spot_check(yaml_path, video_path, output, phash_threshold=args.phash_threshold)
+    spot_check(yaml_path, video_path, output, embed_threshold=args.embed_threshold)
 
 
 if __name__ == "__main__":

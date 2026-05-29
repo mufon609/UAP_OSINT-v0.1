@@ -2,11 +2,16 @@
 # scripts/tools/setup-photo-identity.sh
 #
 # One-time setup for the video pipeline + speaker-identification toolset.
-# Installs and verifies every dependency the four-step pipeline needs:
+# Installs and verifies the frame-handling dependencies the pipeline needs:
 #
 #   download-video.py    yt-dlp + ffmpeg + JS runtime (EJS challenge solver)
 #   extract-frames.py    ffmpeg + ffprobe
-#   detect-faces.py      python3-opencv + opencv-data + Pillow
+#   detect-faces.py      Pillow (cropping) + the dlib face-embedding engine
+#
+# The dlib HOG detector + ResNet face-embedding matcher behind detect-faces.py
+# and spot-check-attribution.py lives in a separate venv — run
+# scripts/tools/setup-face-embeddings.sh for that. This script covers only the
+# frame-handling side (download / extract / crop).
 #
 # See scripts/tools/VIDEO-PIPELINE.md for the end-to-end workflow.
 #
@@ -23,33 +28,18 @@ echo "============================================================"
 echo
 
 # ---------------------------------------------------------------------------
-# apt install: python3-opencv + opencv-data + ffmpeg
+# apt install: ffmpeg + Pillow
 # ---------------------------------------------------------------------------
-echo "[1/4] apt install python3-opencv + opencv-data + ffmpeg..."
+echo "[1/3] apt install ffmpeg + python3-pil..."
 sudo apt update -qq
-sudo apt install -y python3-opencv opencv-data ffmpeg
+sudo apt install -y ffmpeg python3-pil
 echo
 
 # ---------------------------------------------------------------------------
 # Python module verification
 # ---------------------------------------------------------------------------
-echo "[2/4] Python module verification:"
-python3 -c "import cv2; print(f'  cv2 (opencv) {cv2.__version__} OK')"
-python3 -c "from PIL import Image; print(f'  Pillow OK')"
-echo
-
-# ---------------------------------------------------------------------------
-# Haar cascade XML — must be present for detect-faces.py
-# ---------------------------------------------------------------------------
-echo "[3/4] Haar cascade XML path:"
-CASCADE=/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml
-if [ -f "$CASCADE" ]; then
-    echo "  ✓ $CASCADE"
-else
-    echo "  WARNING: not found at $CASCADE."
-    echo "  detect-faces.py will probe other standard paths at runtime,"
-    echo "  but the apt install above should have placed it here."
-fi
+echo "[2/3] Python module verification:"
+python3 -c "from PIL import Image; print('  Pillow OK')"
 echo
 
 # ---------------------------------------------------------------------------
@@ -57,7 +47,7 @@ echo
 # (Tools that may already be installed via pip / native installer / apt;
 # script reports rather than installs.)
 # ---------------------------------------------------------------------------
-echo "[4/4] Video-pipeline dependency check:"
+echo "[3/3] Video-pipeline dependency check:"
 
 # yt-dlp
 if command -v yt-dlp >/dev/null 2>&1; then
@@ -99,6 +89,10 @@ echo
 echo "============================================================"
 echo " Setup complete."
 echo "============================================================"
+echo
+echo "IMPORTANT: detect-faces.py / spot-check-attribution.py also need the"
+echo "dlib face-embedding engine. Run it once:"
+echo "  bash scripts/tools/setup-face-embeddings.sh"
 echo
 echo "Next: see scripts/tools/VIDEO-PIPELINE.md for the four-step workflow."
 echo
