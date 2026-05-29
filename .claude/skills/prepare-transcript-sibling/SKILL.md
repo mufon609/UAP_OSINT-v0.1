@@ -32,18 +32,18 @@ can't resolve from text alone (and for any contributor who wants to spot-
 check) — humans stay in the loop where they add value (visual identification),
 agents do the patient text-parsing.
 
-**Why agent-based, not the old diarize+stitch pipeline:** corpus test
+**Why agent-based, not a mechanical audio pipeline:** corpus test
 (2026-05-28, see `meta/BACKLOG.md` A2 "Test-evidence accumulated") showed
-agents catch failure modes the mechanical pipeline cannot — document
+agents catch failure modes a mechanical turn-finder cannot — document
 recitation mid-conversation, prepared-statement reading, narrator vs
-in-room-speaker distinction — in minutes vs hours of CPU + zero
-prerequisites (no HF_TOKEN, no `.venv-diarize`, no `setup-photo-identity.sh`
-unless image-verification is actually invoked). The Yes Theory / Grusch
+in-room-speaker distinction — in minutes + zero prerequisites (no setup at
+all unless image-verification is actually invoked). The Yes Theory / Grusch
 documentary scan made the failure mode concrete: a mechanical face-vote
 across that transcript would have silently misattributed ~22 minutes of
 host narration to the whistleblower as first-person experiential claims.
-The mechanical scripts remain — see "Image verification" below — as a
-targeted backstop, not the spine.
+The image tools remain — see "Image verification" below — as a targeted
+backstop, not the spine. (The earlier diarize+stitch pipeline this replaced
+was removed once the agent pass proved out.)
 
 **Structural verbatim guarantee.** Agents emit references to line ranges
 in `source_path`; they never quote source text in their output. The

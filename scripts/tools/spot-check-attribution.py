@@ -55,9 +55,9 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # Venv auto-relaunch — must happen before importing the detect-faces sibling
 # (which needs face_recognition / dlib from .venv-face/). Same guarded re-exec
-# idiom as detect-faces.py / diarize-audio.py; doing it here, at process start,
-# means the relaunch is deterministic rather than firing mid-function when the
-# sibling module is exec'd. The venv is --system-site-packages, so PyYAML +
+# idiom as detect-faces.py; doing it here, at process start, means the relaunch
+# is deterministic rather than firing mid-function when the sibling module is
+# exec'd. The venv is --system-site-packages, so PyYAML +
 # ffmpeg-driving stdlib stay available after the relaunch. Guarded on the venv
 # existing so --help works under bare system Python (help-check stays green).
 # ---------------------------------------------------------------------------
@@ -94,8 +94,8 @@ TS_RE = re.compile(r"^\[(\d+):(\d+)\]")
 
 
 # ----------------------------------------------------------------------------
-# detect-faces module loader (same importlib pattern stitch-transcript uses
-# — detect-faces.py has hyphens, can't `import`)
+# detect-faces module loader (importlib — detect-faces.py has hyphens in its
+# filename, so it can't be loaded with a normal `import`)
 # ----------------------------------------------------------------------------
 
 def _load_sibling(rel_filename: str):

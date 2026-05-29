@@ -339,15 +339,21 @@ on the current corpus — recorded so the next contributor doesn't expect one.
 
 Shipped: `detect-faces.py` engine swap (HOG detect + embedding dedup/identity
 + `encode-baselines` subcommand), `spot-check-attribution.py` wiring +
-`--embed-threshold`, `stitch-transcript.py` updated to the same API,
-`setup-face-embeddings.sh`, docs (CLAUDE.md, VIDEO-PIPELINE.md, SKILL.md,
-setup-photo-identity.sh — Haar/opencv dependency retired). Comparison CSVs
-preserved under `sources/photo-identity-log/.compare/` (gitignored).
+`--embed-threshold`, `setup-face-embeddings.sh`, docs (CLAUDE.md,
+VIDEO-PIPELINE.md, SKILL.md, setup-photo-identity.sh — Haar/opencv dependency
+retired). Comparison CSVs preserved under
+`sources/photo-identity-log/.compare/` (gitignored). (The interim step that
+updated `stitch-transcript.py` to the embedding API was mooted by the
+follow-up removal below.)
 
-**Follow-up (optional):** the diarize+stitch path (`stitch-transcript.py` +
-`diarize-audio.py` + `.venv-diarize`) is superseded by the agent-based
-`/prepare-transcript-sibling`; stitch was kept working (updated to embeddings)
-but is a candidate for full removal if the diarize path is formally retired.
+**Follow-up — DONE (2026-05-29):** the superseded diarize+stitch path
+(`stitch-transcript.py` + `diarize-audio.py` + `setup-diarize-audio.sh` +
+`.venv-diarize`) was removed; the agent-based `/prepare-transcript-sibling`
+is the sole speaker-attribution spine, with `detect-faces.py` /
+`spot-check-attribution.py` as the visual backstop. Docs (CLAUDE.md, README,
+VIDEO-PIPELINE.md now four-step, conventions.md, sources-access.md, SKILL.md)
+updated; the audio-only source path now routes to the agent text-pass +
+manual anchoring instead of pyannote diarization.
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 

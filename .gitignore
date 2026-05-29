@@ -53,14 +53,9 @@ sources/photo-identity-log/crops/*.png
 # and auto-prunes rows whose crops/* paths no longer exist.
 sources/photo-identity-log/index.csv
 
-# Project-local venv for diarize-audio.py. Created by setup-diarize-audio.sh
-# to comply with PEP 668 externally-managed-environment protection on
-# Debian/Kali. diarize-audio.py auto-relaunches under .venv-diarize/bin/python3
-# so contributors don't have to remember to `source` the activate script.
-.venv-diarize/
-
 # Project-local venv for the dlib face-embedding matcher. Created by
-# setup-face-embeddings.sh (same PEP 668 rationale as .venv-diarize). Both
+# setup-face-embeddings.sh to comply with PEP 668 externally-managed-environment
+# protection on Debian/Kali (and to isolate dlib's heavy C++ build). Both
 # detect-faces.py and spot-check-attribution.py auto-relaunch under
 # .venv-face/bin/python3 when it exists.
 .venv-face/

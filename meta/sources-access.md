@@ -263,10 +263,10 @@ If the source has multiple on-camera speakers and you'll need
 per-quote `speaker_id` resolution, run the caption pull above first,
 then continue with the visual-side pipeline at
 `scripts/tools/VIDEO-PIPELINE.md` (download-video.py → extract-frames
-→ detect-faces → register baselines → stitch-transcript). Use the
-SAME `--slug` across `transcribe.py` and `download-video.py` —
-`stitch-transcript.py` discovers companion artifacts by slug, and
-slug drift silently breaks auto-discovery.
+→ detect-faces → register baselines; then `spot-check-attribution.py`
+to cross-check the finished sibling). Use the SAME `--slug` across
+`transcribe.py` and `download-video.py` so the caption file and the
+video line up by name.
 
 ### One-video shorthand
 

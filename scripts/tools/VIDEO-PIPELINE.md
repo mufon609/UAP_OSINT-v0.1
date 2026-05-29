@@ -22,16 +22,14 @@ For YouTube sources you also want the auto-caption transcript registered as
 a primary source for the verbatim-quote check. That's a separate, lighter
 workflow covered in `meta/sources-access.md` "YouTube (youtube.com)" —
 cookies-authenticated `transcribe.py` → `manifest.py add ... --format
-transcript --transcript-provenance auto-caption`. Run it BEFORE step 1
-below so the caption file is already in place when `stitch-transcript.py`
-runs at step 5.
+transcript --transcript-provenance auto-caption`. The caption file is the
+verbatim source the attribution sibling labels; register it before attributing
+speakers.
 
 **Slug discipline.** Use the same `--slug` for `transcribe.py` and
-`download-video.py` on a single source. `stitch-transcript.py`'s
-auto-discovery looks for the caption file at
-`sources/transcripts/{slug}-downloaded.md` and the diarize segments at
-`/tmp/diarize-{slug}/segments.csv` — slugs that drift across tools break
-the auto-discovery silently.
+`download-video.py` on a single source, so the caption file at
+`sources/transcripts/{slug}-downloaded.md` and the video at
+`sources/video/{slug}.mp4` line up by name.
 
 ---
 
@@ -39,15 +37,14 @@ the auto-discovery silently.
 
 This tooling is **optional** — a fresh contributor needs it only when
 attributing speakers on a *label-less* multi-speaker source (see Step 0).
-Normal build/audit work doesn't require it. Set up only the path(s) you'll
-use: the **image path** needs `setup-photo-identity.sh`; the **audio path**
-needs `setup-diarize-audio.sh`. Both are idempotent installers that report
-what's missing and exit non-zero on failure — re-run them any time.
+Normal build/audit work doesn't require it. Two idempotent installers cover
+it — `setup-photo-identity.sh` (frame handling) and `setup-face-embeddings.sh`
+(the dlib matching engine). Both report what's missing and exit non-zero on
+failure — re-run them any time.
 
 ```
 bash scripts/tools/setup-photo-identity.sh   # frame side: ffmpeg + Pillow + yt-dlp + JS runtime
 bash scripts/tools/setup-face-embeddings.sh  # matching engine: cmake + dlib + face_recognition (.venv-face)
-bash scripts/tools/setup-diarize-audio.sh    # audio path: pyannote + torch + HF-token walk-through
 ```
 
 `setup-photo-identity.sh` installs and verifies the frame-handling side:
@@ -68,14 +65,6 @@ PEP 668 + heavy C++ build):
 | `.venv-face/` (`--system-site-packages`) | Isolate dlib/face_recognition; reuse system Pillow/yaml | `python3 -m venv` |
 | `dlib` + `face_recognition` + `numpy` | HOG detector + ResNet face embeddings | pip (in venv) |
 
-`setup-diarize-audio.sh` covers the audio-side optional step:
-
-| Dependency | Purpose | Install path |
-|---|---|---|
-| `pyannote.audio` + `torch` + `torchaudio` | Speaker diarization model | pip |
-| Hugging Face user-conditions (manual) | pyannote/speaker-diarization-3.1 + pyannote/segmentation-3.0 are gated | hf.co browser click |
-| `HF_TOKEN` env var | Auth for the pipeline download | shell export |
-
 Both scripts report missing pieces and exit non-zero if any apt / pip step
 fails. Re-runnable.
 
@@ -90,42 +79,37 @@ be reconstructed against the recording:
 | Source | Speakers in source? | Method |
 |---|---|---|
 | `stenographic`, `published-transcript`, label-preserving `human-corrected-caption` | yes | **none** — take speakers from the source's own labels; only the verbatim-quote check applies. Skip this pipeline. |
-| `auto-caption` / Whisper, **video with visible faces** | no | **image path** (preferred) — steps 1 → 2 → 3 → 4, then human frame-verify each quote timestamp against the baseline. Diarize (1.5) optional. |
-| `auto-caption` / Whisper, **audio-only** (no usable faces) | no | **audio path** — steps 1 → 1.5 (diarize) → anchor each identity-blind `SPEAKER_NN` to a name (self-intro, one speaker naming another, dominant monologue). |
+| `auto-caption` / Whisper, **video with visible faces** | no | **image path** — steps 1 → 2 → 3 → 4, then human frame-verify each quote timestamp against the baseline. |
+| `auto-caption` / Whisper, **audio-only** (no usable faces) | no | **agent text-pass + manual anchoring** — `/prepare-transcript-sibling` resolves speakers from content (self-intro, one speaker naming another, dominant monologue); the contributor anchors any turn the text can't settle. No on-disk faces to match, so this pipeline doesn't apply. |
 | genuinely unresolvable boundary (overlap / rapid crosstalk) | n/a | `speaker_id: [s1, s2]` **mixed-exchange** — never fabricate a split. |
 
-Diarization (step 1.5) is the audio path's *turn-finder* only — it segments
-*when* the speaker changes, never *who* (labels are `SPEAKER_00/01/…`). On the
-image path, faces do the naming; on the audio path you anchor the labels
-yourself. The discipline (confirm-against-source, never text-cue guesswork)
-lives in `meta/conventions.md` "Speaker attribution: source format selects the
-method."
+Faces do the naming on the image path; the discipline (confirm-against-source,
+never text-cue guesswork) lives in `meta/conventions.md` "Speaker attribution:
+source format selects the method."
 
-**Dependency gating.** Each method needs a subset of the tooling. Check before
-you run: a *missing but needed* dependency must stop the run with its remedy; a
-satisfied-or-unneeded one proceeds. The tools fail-fast on their own —
-`download-video.py` / `extract-frames.py` preflight their binaries,
-`diarize-audio.py` checks `.venv-diarize` + `HF_TOKEN` up front, `detect-faces.py`
-auto-relaunches under `.venv-face` (and errors with the setup script if it's
-absent) — each naming the setup script to run.
+**Dependency gating.** The image path needs a subset of the tooling. Check
+before you run: a *missing but needed* dependency must stop the run with its
+remedy. The tools fail-fast on their own — `download-video.py` /
+`extract-frames.py` preflight their binaries, `detect-faces.py` auto-relaunches
+under `.venv-face` (and errors with the setup script if it's absent) — each
+naming the setup script to run.
 
 | Method | Needs | Remedy if missing |
 |---|---|---|
 | image path | ffmpeg/ffprobe + Pillow (`setup-photo-identity.sh`), the dlib engine in `.venv-face` (`setup-face-embeddings.sh`); the video file; a baseline per speaker | run both setup scripts; re-fetch video with `download-video.py`; register baselines with `detect-faces.py register` |
-| audio path | `.venv-diarize`, `HF_TOKEN`, accepted gated models, torch; the video/audio | `setup-diarize-audio.sh` (creates venv, installs pyannote/torch, walks HF acceptance + `HF_TOKEN` export) |
-| video re-fetch (both paths) | yt-dlp, ffmpeg, JS runtime; **cookies only for YouTube**, not Vimeo | `setup-photo-identity.sh`; cookies via `extract-firefox-cookies.py` (YouTube only) |
+| video re-fetch | yt-dlp, ffmpeg, JS runtime; **cookies only for YouTube**, not Vimeo | `setup-photo-identity.sh`; cookies via `extract-firefox-cookies.py` (YouTube only) |
 
 ---
 
-## Five-step pipeline
+## Four-step pipeline
 
 Each step is one command. Defaults are tuned for the common case; flags exist
 for tuning when needed.
 
-Steps 1–4 produce three independent artifacts (video, diarize segments,
-identity baselines). Step 5 merges them into a single speaker-labeled
-transcript the contributor uses when populating `speaker_id` on transcript-
-artifact quotes.
+Steps 1–4 build the persistent identity-baseline set; with baselines in place,
+`detect-faces.py` (and `spot-check-attribution.py`, for a turn-by-turn check of
+an attribution sibling) resolves who-is-who in any new frame. The contributor
+uses that to populate `speaker_id` on transcript-artifact quotes.
 
 ### 1. Download the source video
 
@@ -157,42 +141,6 @@ Common tunables:
 - `--quality 720` for higher facial detail (file size scales ~2-3×)
 - `--note "STR"` to attach contributor context to the manifest entry
 - `--dry-run` to inspect the yt-dlp invocation without running
-
-### 1.5. (Optional) Diarize the audio — discover speaker turns
-
-```
-python3 scripts/tools/diarize-audio.py sources/video/{slug}.mp4
-python3 scripts/tools/diarize-audio.py sources/video/{slug}.mp4 --start 19:00 --end 22:00
-```
-
-Identity-blind speaker diarization via `pyannote/speaker-diarization-3.1`.
-Output is two files in `/tmp/diarize-{slug}/` (or `--out DIR`):
-
-- `segments.csv` — `start_seconds, end_seconds, duration_seconds, speaker`
-  one row per detected turn. Speaker labels are anonymous
-  (`SPEAKER_00`, `SPEAKER_01`, ...) — pyannote answers "this voice is
-  different from that voice," not "this is X."
-- `segments.md` — human-readable summary: per-speaker total speech time +
-  percentage, chronological segment list with `[HH:MM:SS]` anchors, and a
-  per-speaker view for jumping to a specific speaker's appearances.
-
-When to run it:
-
-- **Unfamiliar source**: you don't know how many people speak or when they
-  trade off. Diarize first to see "3 speakers, SPEAKER_01 dominates
-  18:00–32:00, SPEAKER_02 enters at 47:00" — then targeted extract-frames
-  at those handoffs.
-- **Narration vs. on-camera speech**: a video-only frame at a contested
-  timestamp can't tell you whether a voice belongs to someone on camera
-  or to off-frame narration. Diarization + frames together resolve this:
-  if SPEAKER_NN persists across cuts where the on-camera person changes,
-  it's narration.
-- **Skip it** for short, two-speaker, well-known sources where you can
-  identify speakers from the frames directly.
-
-Slow on CPU — diarization runs at roughly real-time, so a 3-hour video
-takes ~3 hours. Use `--start` / `--end` to slice the analyzed range to
-the contested passage.
 
 ### 2. Extract frames at contested timestamps
 
@@ -283,60 +231,23 @@ Removes crops in `crops/` whose face embedding matches no baseline identity
 — i.e., unlabeled faces the contributor has decided not to keep. Removed
 crops leave git history but no longer in HEAD.
 
-### 5. Stitch the auto-caption transcript with speaker labels
+### Using the baselines to attribute speakers
 
-```
-python3 scripts/tools/stitch-transcript.py sources/video/{slug}.mp4
-```
+With baselines registered, two tools resolve who-is-who:
 
-Prereqs: steps 1, 1.5, and 4 above must have completed (video file,
-diarize `segments.csv`, and at least one identity baseline registered),
-plus an auto-caption transcript downloaded via `transcribe.py` at
-`sources/transcripts/{slug}-downloaded.md`. Auto-discovery looks for
-the segments at `/tmp/diarize-{slug}/segments.csv` and the transcript at
-the `-downloaded.md` (or equivalent) path; pass `--diarize-segments` /
-`--transcript` to override.
+- `detect-faces.py detect` on frames at any contested timestamp tags each
+  detected face with its embedding-matched identity — the
+  `/prepare-transcript-sibling` image-verification backstop calls this for
+  turns the producer flagged `needs_image_verification`.
+- `spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4` runs a mechanical
+  turn-by-turn cross-check of a finished attribution sibling: it samples
+  beg/mid/end frames per turn and flags `confirmed` / `contested-fold` /
+  `contested-other` / `inconclusive` against each turn's `speaker_id`.
 
-For each diarize segment, extracts a frame at the segment's midpoint,
-runs face detection, embedding-matches against `baselines/`. Aggregates the
-matches per anonymous speaker label and writes:
-
-- `/tmp/stitch-{slug}/stitched.md` — header carries the speaker-resolution
-  table with confidence rating per speaker; transcript body has the
-  speaker label rendered at every turn boundary (consecutive lines from
-  the same speaker are not re-labeled). Unanalyzed regions (caption ticks
-  outside the diarize range) and unresolved speakers (no baseline match)
-  are marked explicitly so the contributor sees the coverage gaps.
-- `/tmp/stitch-{slug}/speaker-map.csv` — machine-readable rollup of the
-  same speaker resolutions.
-- `/tmp/stitch-{slug}/frames/` — per-segment midpoint frames kept so the
-  contributor can spot-check any speaker assignment that surfaced below
-  `high` confidence.
-
-Confidence ratings the script emits:
-
-- `high`   — single identity dominates this speaker's segment-frame
-             matches AND no other speaker also resolves to the same
-             identity (single-camera coverage with clean switching).
-- `medium` — single identity dominates but matches are partial, OR the
-             same identity also dominates another speaker (split-screen
-             ambiguity; visual baseline alone can't tell which face is
-             actively speaking).
-- `low`    — speaker had visual matches but no single identity dominated.
-- `none`   — no baseline matches at all in this speaker's segments
-             (frame was a graphic overlay, no face detected, or face
-             embedding distance exceeded the threshold against every baseline).
-
-A `⚠ Manual review required` banner fires whenever any speaker resolves
-below `high`. The contributor uses the stitched output to populate the
-`speaker_id` field on each transcript-artifact quote — and overrides any
-medium / low / none speaker resolution before relying on it.
-
-The output is contributor-diagnostic only; it lands in `/tmp/` and is
-not manifest-registered. The downloaded transcript at
-`sources/transcripts/{slug}-downloaded.md` remains the verbatim source
-the validator's verbatim-quote check verifies against. The stitched
-file is what a human reads to figure out who said what.
+Both feed the contributor's judgment when populating `speaker_id`; neither is
+manifest-registered. The downloaded transcript at
+`sources/transcripts/{slug}-downloaded.md` remains the verbatim source the
+validator's verbatim-quote check verifies against.
 
 ---
 
@@ -395,6 +306,7 @@ The Michels-Barber documentary, end to end:
 ```
 # Setup (one time)
 bash scripts/tools/setup-photo-identity.sh
+bash scripts/tools/setup-face-embeddings.sh
 
 # Download
 python3 scripts/tools/download-video.py \
@@ -437,10 +349,9 @@ python3 scripts/tools/detect-faces.py prune
 
 | Tool | When |
 |---|---|
-| `setup-photo-identity.sh` | First time on a machine, or when adding the video pipeline to an existing checkout |
-| `setup-diarize-audio.sh` | First time using the audio-side speaker-diarization step (separate from the visual-side setup) |
+| `setup-photo-identity.sh` | First time on a machine, or when adding the video pipeline to an existing checkout (frame handling) |
+| `setup-face-embeddings.sh` | First time on a machine — installs the dlib face-embedding matcher (`.venv-face`) that `detect-faces.py` / `spot-check-attribution.py` need |
 | `download-video.py` | Archiving a new video source that needs face detection |
-| `diarize-audio.py` | Unfamiliar long source — discover how many speakers exist and when they trade off, before pointing extract-frames at handoff timestamps; also useful for distinguishing on-camera speech from off-frame narration |
 | `extract-frames.py anchor` | First-time on a video — establish visual identity of each on-camera speaker |
 | `extract-frames.py burst` | Speaker disambiguation at a specific contested transcript timestamp |
 | `extract-frames.py sweep` | Visual map of an unfamiliar source |
@@ -448,5 +359,5 @@ python3 scripts/tools/detect-faces.py prune
 | `detect-faces.py detect` | After any extract-frames run, to find faces in the extracted frames |
 | `detect-faces.py register` | After reviewing a crop, to promote it to a persistent baseline |
 | `detect-faces.py prune` | Periodic cleanup of unidentified crops |
-| `stitch-transcript.py` | After steps 1, 1.5, 4, and a `transcribe.py` run on the video — bridges the three independent artifacts (video, diarize segments, baselines) into a speaker-labeled transcript for populating `speaker_id` on transcript-artifact quotes |
+| `spot-check-attribution.py` | Mechanical turn-by-turn cross-check of a finished attribution sibling against the video (beg/mid/end frame sampling → confirmed / contested-fold / contested-other / inconclusive) |
 | `extract-firefox-cookies.py` | Only when piping cookies into a tool that doesn't support `--cookies-from-browser` (e.g., `transcribe.py`) |

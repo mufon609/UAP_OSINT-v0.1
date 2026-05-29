@@ -78,12 +78,12 @@ from pathlib import Path
 # Venv auto-relaunch — must happen before importing anything dlib-touched.
 # face_recognition + dlib live inside .venv-face/ at the repo root (PEP 668
 # blocks system-wide pip on Debian/Kali, and dlib's C++ footprint is too heavy
-# to want system-wide). The venv is created --system-site-packages, so cv2 /
-# PIL / PyYAML stay importable after the re-exec. Same detection idiom as
-# diarize-audio.py: compare sys.prefix to the venv dir (venv's bin/python3 is a
-# symlink to the system interpreter, so realpath() can't distinguish them).
-# Guarded on the venv existing so `--help` works under bare system Python and
-# scripts/tests/help-check.sh stays green without .venv-face present.
+# to want system-wide). The venv is created --system-site-packages, so PIL /
+# PyYAML stay importable after the re-exec. Detection idiom: compare sys.prefix
+# to the venv dir (venv's bin/python3 is a symlink to the system interpreter,
+# so realpath() can't distinguish them). Guarded on the venv existing so
+# `--help` works under bare system Python and scripts/tests/help-check.sh stays
+# green without .venv-face present.
 # ---------------------------------------------------------------------------
 _HERE = Path(__file__).resolve()
 _REPO_ROOT = _HERE.parent.parent.parent  # scripts/tools/detect-faces.py → repo root

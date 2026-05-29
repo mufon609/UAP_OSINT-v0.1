@@ -652,11 +652,12 @@ source-read-first rule.
       registered face is a stronger identity check than telling similar
       voices apart by ear. A human verifies the frames before a `speaker_id`
       is trusted.
-    - *Audio-only* (no usable faces) → the **audio path**. `diarize-audio.py`
-      finds turn boundaries but is identity-blind (`SPEAKER_00/01/…`); map
-      those to names via an anchor (a self-introduction, one participant
-      naming another, the dominant speaker on a known monologue). Diarization
-      is weakest on rapid crosstalk — the boundaries that matter most.
+    - *Audio-only* (no usable faces) → resolve speakers from **content**, via
+      the agent text-pass (`/prepare-transcript-sibling`): anchor each turn to
+      a name using a self-introduction, one participant naming another, or the
+      dominant speaker on a known monologue, and confirm against both sides of
+      every turn boundary. A turn the text genuinely can't settle takes the
+      mixed-exchange form below; never guess from a transition cue alone.
     - *Genuinely unresolvable boundary* (overlapping turns, or a handoff the
       recording can't cleanly settle) → the **mixed-exchange** form:
       `speaker_id` as a list of 2+ ids (`[s1, s2]`), rendering a `Speakers —
@@ -669,14 +670,13 @@ ad-hoc workaround: a source recording missing from the checkout → re-fetch
 with `download-video.py` (its bytes are gitignored; the manifest is the
 record); a speaker with no baseline → `detect-faces.py register`; a caption
 mis-transcription, or a name the machine spelled inconsistently (e.g.
-`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a diarize/stitch resolution
-below `high` confidence → human frame-verification or the mixed-exchange
-form.
+`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a frame match that doesn't
+clearly resolve → human frame-verification or the mixed-exchange form.
 
 The per-method tool sequence and its dependency prerequisites — and the rule
-that a *missing but needed* dependency (`HF_TOKEN`, the `.venv-diarize`
-stack, browser cookies, a face baseline) must stop the run with a remedy,
-while a satisfied-or-unneeded one proceeds — live in
+that a *missing but needed* dependency (the `.venv-face` dlib stack, browser
+cookies, a face baseline) must stop the run with a remedy, while a
+satisfied-or-unneeded one proceeds — live in
 `scripts/tools/VIDEO-PIPELINE.md`.
 
 **Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
@@ -759,9 +759,9 @@ Three failure modes the structural reference closes:
   check. The `quotes` check now fails when `speaker_id` doesn't
   resolve to a real `speakers[].id`.
 - **Re-author ambiguity.** Six months later a contributor re-reading
-  the artifact had to re-trace the diarize + frame + baseline merge
-  to recover the speaker assignment. The structural reference makes
-  the assignment self-documenting.
+  the artifact had to re-trace the frame + baseline match to recover
+  the speaker assignment. The structural reference makes the
+  assignment self-documenting.
 - **Renderer inconsistency.** Hand-formatted Attributed-to strings
   varied in how they named speakers ("Halvorsen" vs "Dr. Jane
   Halvorsen" vs "Dr. Halvorsen"). Mechanical lookup from `speakers[]`
@@ -771,9 +771,9 @@ The accompanying `speaker_baseline_consistency` check
 (`scripts/checks/speaker_baseline_consistency.py`) catches the next
 link of the chain: every `speakers[].node_link` that points at
 `/people/{slug}` should have a baseline at
-`sources/photo-identity-log/baselines/{slug}/` so video-pipeline
+`sources/photo-identity-log/baselines/{slug}/` so the video-pipeline
 tools (`scripts/tools/detect-faces.py`,
-`scripts/tools/stitch-transcript.py`) can mechanically resolve the
+`scripts/tools/spot-check-attribution.py`) can mechanically resolve the
 speaker on future videos.
 
 ### Statements speaker-attribution — quotes BY the person, not ABOUT
