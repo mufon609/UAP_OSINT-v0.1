@@ -6,6 +6,7 @@ allowed-tools:
   - Agent(general-purpose)
   - Read
   - Bash(python3 scripts/build/validate-speaker-attribution.py *)
+  - Bash(python3 scripts/build/finalize-attribution.py *)
   - Bash(python3 scripts/tools/render-speaker-transcript.py *)
   - Bash(python3 scripts/tools/manifest.py *)
   - Bash(python3 scripts/tools/extract-frames.py *)
@@ -222,12 +223,23 @@ against the actual source file, not against the producer's rationale
 prose.**
 
 The verifier returns:
-- **PASS** — sets `verification_status: verified`, adds
-  `verifier_session: {id}` to the YAML.
+- **PASS** — the orchestrator runs `python3 scripts/build/finalize-attribution.py
+  {draft}.yaml --verifier-session {id}`, which sets `verification_status:
+  verified` + `verifier_session` AND **strips the verification scaffolding**:
+  every turn's `rationale` + `verifier_notes`, and the top-level
+  `verifier_notes`. The committed sibling is structured-only — `rationale` did
+  its job (gave the verifier a cue to check); on a verified sibling it's dead
+  prose that renders into the `.md` and invites opinion, so it's removed. The
+  structural validator then FATALs if any scaffolding remains, so the strip is
+  enforced, not optional. (`confidence: low|medium` stays as the durable
+  uncertainty marker; an investigator reads the source lines to judge a
+  boundary.) Do NOT hand-edit the YAML to strip — use the tool (no 40-field
+  agent edit → no mangling).
 - **REJECT** — sets `verification_status: rejected` with
   `verifier_notes: |\n  <correction list>` enumerating each turn
   that needs revision and why. Route back to producer; do NOT
-  register a rejected sibling.
+  register a rejected sibling. (rationale/verifier_notes are kept while
+  rejected — the producer needs them to fix.)
 
 The verifier never asserts speaker identities from outside the source
 text — they're checking the producer's read of the same evidence, not

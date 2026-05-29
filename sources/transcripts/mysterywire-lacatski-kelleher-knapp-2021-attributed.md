@@ -19,11 +19,6 @@
 ### [Non-conversational content]  
 *(lines 1-8)*
 
-> **Rationale:** Markdown file header block (title, source URL, video ID, download
-date, horizontal-rule separator, blank lines) preceding the
-timestamped transcript. Not spoken content.
-
-
 ```
 # YouTube Transcript — mysterywire-lacatski-kelleher-knapp-2021
 
@@ -37,21 +32,6 @@ Downloaded: 2026-05-17
 
 ### George Knapp — Host / Interviewer  
 *(lines 9-25)*
-
-> **Rationale:** Opens with second-person address "uh dr jim lakatsky" (auto-caption
-misspelling of Lacatski) — host introducing his first interviewee
-and posing the opening question about AAWSAP/UFO framing.
-Question closes line 25 "made public so far".
-
-> **Verifier note:** Range narrowed from 9-38 to 9-25 per orchestrator correction.
-Producer + verifier both mis-placed the answer-start boundary at
-line 39; the actual first-person answer-start "it was completely
-ufo related" is at line 26. Verifier confabulated (cited line 39
-as containing "it was completely ufo related" — that text is at
-line 26; line 39 is "among the topics"). Calibration finding:
-verifier briefs should require content-check on BOTH sides of a
-boundary, not just confirm the producer's transition cue.
-
 
 ```
 [0:03] uh dr jim lakatsky there has been
@@ -75,18 +55,6 @@ boundary, not just confirm the producer's transition cue.
 
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Guest  
 *(lines 26-60)*
-
-> **Rationale:** Answer register opens at line 26 "it was completely ufo related"
-— direct response to Knapp's preceding question. First-person
-authority ("we use the statement of objectives format", "i mean")
-and program-architect content (RFP format, Bigelow Aerospace
-proposal at lines 35-37, DIA reporting chain) identify Lacatski.
-Closes line 60 "so yes it was completely a ufo project" — answer-
-summary cadence.
-
-> **Verifier note:** Range extended from 39-60 to 26-60 per orchestrator correction
-(see prior turn's verifier_notes).
-
 
 ```
 [0:39] it was completely ufo related
@@ -129,12 +97,6 @@ summary cadence.
 ### George Knapp — Host / Interviewer  
 *(lines 61-67)*
 
-> **Rationale:** Topic-pivot question opens line 61 "one of the other things that's
-been confusing for the public" — host transition cue. Ends with
-explicit ask "can you clarify the difference between ossap and
-atip" — interrogative close.
-
-
 ```
 [2:06] one of the other things that's been
 [2:07] confusing for the public over the last
@@ -147,14 +109,6 @@ atip" — interrogative close.
 
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Guest  
 *(lines 68-107)*
-
-> **Rationale:** Line 68 "yes" + immediate substantive answer to Knapp's preceding
-AATIP-vs-AAWSAP question. First-person program-insider content
-("within my own office", "our security was that tight",
-"i can tell you for a fact"). Continuous 40-line monologue with no
-embedded host interjection. Ends line 107 with hedging close
-("that's that's the best example i i i can give").
-
 
 ```
 [2:22] yes
@@ -202,12 +156,6 @@ embedded host interjection. Ends line 107 with hedging close
 ### George Knapp — Host / Interviewer  
 *(lines 108-114)*
 
-> **Rationale:** Line 108 second-person address "uh dr collin kelleher" (auto-
-caption rendering of Colm Kelleher) — host introducing second
-interviewee and posing question about BAASS operations. Closes
-with interrogative "how did it work" at line 114.
-
-
 ```
 [4:09] uh dr collin kelleher you were a program
 [4:11] manager at bass can you describe in sort
@@ -220,21 +168,6 @@ with interrogative "how did it work" at line 114.
 
 ### Colm Kelleher — Guest  
 *(lines 115-194)*
-
-> **Rationale:** Line 115 first-person answer "well i was hired in uh november of
-2008" — directly answers Knapp's question to Kelleher. Content
-throughout is BAASS-operational (recruiting, hiring, AFOSI
-veteran, facility security clearances, day-to-day program
-execution in Las Vegas) — consistent with Kelleher as BAASS
-program manager. At line 164 he addresses Knapp by name ("and
-george when you considered") but this is part of Kelleher's own
-narration, not a turn transition. At line 188 he refers to
-"dr lakatsky's input in washington dc" — third-person reference to
-Lacatski confirms Kelleher is the speaker (Lacatski would not
-refer to himself this way). No embedded Knapp interjection in the
-80-line span. Closes line 194 "that was the key" — answer-summary
-cadence.
-
 
 ```
 [4:26] well i was hired in uh november of 2008.
@@ -322,14 +255,6 @@ cadence.
 ### George Knapp — Host / Interviewer  
 *(lines 195-209)*
 
-> **Rationale:** Line 195 topic transition "you know one of the most disturbing
-aspects of the investigation that you both cooperated in" — host
-register addressing both guests in third-person ("you both"),
-followed by directed ask at line 205 "uh dr kelleher can you tell
-us a little bit about what was learned about the medical
-consequences". Interrogative close line 209.
-
-
 ```
 [7:53] you know one of the most disturbing
 [7:54] aspects of the investigation that you
@@ -350,17 +275,6 @@ consequences". Interrogative close line 209.
 
 ### Colm Kelleher — Guest  
 *(lines 210-326)*
-
-> **Rationale:** Line 210 "yes uh we we had multiple streams" — direct answer to
-Knapp's preceding medical-effects question to Kelleher. Long
-single-speaker monologue covering data-warehouse architecture,
-physician scientists, HIPAA discipline, then a narrated case
-example (Oregon biotechnologist, lines 265-326). Per Rule 2 the
-biotechnologist's experience is narrated by Kelleher, not
-reported speech; no recruiter or witness quotation triggers a
-foreign-recitation split. Closes line 326 "was followed actually
-for years" — case-summary close. No embedded Knapp interjection.
-
 
 ```
 [8:26] yes uh we we had multiple streams of uh
@@ -485,15 +399,6 @@ for years" — case-summary close. No embedded Knapp interjection.
 ### George Knapp — Host / Interviewer  
 *(lines 327-338)*
 
-> **Rationale:** Line 327 wrap-up cue "just one last comment from each of you" —
-host structural-transition. Line 332 second-person address "uh dr
-caskey jim" (auto-caption corruption of Lacatski first-name,
-"caskey" + "jim") directing the question to Lacatski. Question
-content (14-month DoD review process) is host-asking-guest.
-Closes line 338 with interrogative "how you feel about what
-emerged from that process".
-
-
 ```
 [13:04] just one last comment from each of you
 [13:06] uh you know we all have been working on
@@ -511,14 +416,6 @@ emerged from that process".
 
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Guest  
 *(lines 339-351)*
-
-> **Rationale:** Line 339 "well i'm glad that we finally gut public release
-authority" — Lacatski first-person answer to Knapp's DoD-process
-question (Lacatski as program lead would speak of DoD release
-authority). First-person rapport with DoD reviewers ("almost in
-constant communication with them / very pleasant"). Ends line 351
-"very pleasant" immediately before mid-turn [Music] marker.
-
 
 ```
 [13:30] well i'm glad that we finally
@@ -539,27 +436,12 @@ constant communication with them / very pleasant"). Ends line 351
 ### [Non-speech audio]  
 *(lines 352)*
 
-> **Rationale:** Bracket-tagged "[Music]" marker mid-Lacatski-turn. Non-speech
-audio; not attributable to any live speaker. Per Rule 5 and
-foreign_kind_values, foreign-music covers bracket-tagged music
-cues.
-
-
 ```
 [13:57] [Music]
 ```
 
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Guest  
 *(lines 353-368)*
-
-> **Rationale:** Continuation of Lacatski's same answer immediately after the
-[Music] cue. Line 353 "people i was dealing with and i" completes
-the sentence-fragment "very pleasant" at line 351 ("very pleasant
-people i was dealing with") — unbroken syntactic continuity
-across the music marker. Content remains DoD-review process
-(pandemic, off-site, top-secret SCI handling, release approval).
-Closes line 368 "i'm glad we got that uh approval for release".
-
 
 ```
 [13:59] people i was dealing with and i
@@ -583,13 +465,6 @@ Closes line 368 "i'm glad we got that uh approval for release".
 ### George Knapp — Host / Interviewer  
 *(lines 369-371)*
 
-> **Rationale:** Line 369 second-person address "column you're excited" — auto-
-caption rendering of "Colm" as "column", directing Knapp's
-question to Kelleher. Host metaphor "must be like giving birth"
-and follow-up "to be able to tell this story" — interrogative
-framing for Kelleher's closing comment.
-
-
 ```
 [14:37] column you're excited to it must be like
 [14:39] giving birth huh i have this finally out
@@ -598,18 +473,6 @@ framing for Kelleher's closing comment.
 
 ### Colm Kelleher — Guest  
 *(lines 372-411)*
-
-> **Rationale:** Line 372 "yeah i think it's been a it's been a long time coming"
-— direct answer to Knapp's preceding ask to Kelleher. Identifies
-himself as Kelleher via line 388 "i remember standing in my
-office actually um in las vegas" (Kelleher was Las Vegas day-to-
-day manager, per his own statement and Lacatski's earlier
-framing) and line 401 third-person reference to "dr lykotsky was
-the driving force in in washington dc and i was the day-to-day
-manager in las vegas" — Kelleher distinguishing himself from
-Lacatski. Continuous monologue; closes line 411 "book also" at
-the boundary with Knapp's reaction.
-
 
 ```
 [14:43] yeah i think it's been a it's been a
@@ -657,17 +520,6 @@ the boundary with Knapp's reaction.
 ### George Knapp — Host / Interviewer  
 *(lines 412-426)*
 
-> **Rationale:** Line 412 register shift "what i liked was the inside baseball of"
-— first-person host-reaction register (a guest would say "what we
-did", not "what i liked"). Third-person reference to the guests
-at line 413 "how all of you senator reid robert bigelow fought"
-treats the guests as subjects of the praise rather than as
-speakers — host perspective. Continues into closing wrap-up at
-line 423 "um okay well first of many conversations to come" and
-sign-off line 425-426 "i'll be talking to you guys soon okay
-thanks". One continuous Knapp commentary-plus-closing turn.
-
-
 ```
 [16:32] what i liked was the inside baseball of
 [16:34] how all of you senator reid robert
@@ -689,17 +541,6 @@ thanks". One continuous Knapp commentary-plus-closing turn.
 ### Speakers — mixed exchange: James Lacatski, Colm Kelleher  
 *(lines 427-428 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
 
-> **Rationale:** Closing thank-you exchange: line 427 "george i appreciate it" and
-line 428 "thank you" — both lines are guest utterances addressed
-to Knapp, but textual cues alone cannot resolve which guest spoke
-which line. Either order is consistent with podcast convention.
-Mixed-exchange [s2, s3] captures the unresolvable two-utterance
-boundary; audio anchor / video frame at 17:04-17:06 would resolve
-via voice or face identification. Per Rule 4, this is a
-genuinely audio-anchor-dependent case (similar register / brief
-single-clause utterances), warranting needs_image_verification.
-
-
 ```
 [17:04] george i appreciate it
 [17:06] thank you
@@ -707,10 +548,6 @@ single-clause utterances), warranting needs_image_verification.
 
 ### [Non-speech audio]  
 *(lines 429)*
-
-> **Rationale:** Terminal bracket-tagged "[Music]" outro marker. Non-speech audio;
-not attributable to any live speaker. Per Rule 5, foreign-music.
-
 
 ```
 [17:13] [Music]

@@ -24,12 +24,14 @@ Checks (run in order; first fatal aborts the file):
   7. node_links              — referenced /people|/orgs paths exist
   8. turn_speaker_ids        — each speaker_id valid (defined / foreign / mixed)
   9. turn_confidence         — confidence in {high, medium, low}
- 10. turn_rationale          — rationale required where mandatory
+ 10. turn_rationale          — rationale required where mandatory (draft only)
  11. turn_referenced_source  — required for foreign-recitation / -archival
  12. turn_coverage           — every line in [1, source_line_count]
                                 covered exactly once; ranges sorted
  13. verification_fields     — verifier_session/notes consistent with status
- 14. image_verification      — entries shape if present
+ 14. verified_structured_only — verified siblings carry no rationale /
+                                verifier_notes scaffolding (stripped on finalize)
+ 15. image_verification      — entries shape if present
 
 Usage:
   validate-speaker-attribution.py PATH        # validate one sibling
@@ -299,7 +301,12 @@ def check_turn_confidence(data, schema, rpt):
 
 def check_turn_rationale(data, schema, rpt):
     """rationale required when confidence < high OR speaker_id is foreign-*
-    OR speaker_id is a mixed-exchange list."""
+    OR speaker_id is a mixed-exchange list — but ONLY while the sibling is
+    not yet verified. rationale is draft-phase verification scaffolding the
+    independent verifier checks; finalize-attribution.py strips it on verify,
+    so a verified sibling carries none (see check_verified_structured_only)."""
+    if data.get("verification_status") == "verified":
+        return
     foreign_kinds = set(schema.get("foreign_kind_values", []))
     for i, t in enumerate(data.get("turns") or []):
         if not isinstance(t, dict):
@@ -397,6 +404,33 @@ def check_verification_fields(data, rpt):
         rpt.fatal("verifier_notes", "required when verification_status is 'rejected'")
 
 
+def check_verified_structured_only(data, rpt):
+    """A VERIFIED sibling is the committed end-product and carries no
+    verification scaffolding. rationale + verifier_notes are stripped on
+    finalize (scripts/build/finalize-attribution.py); their presence on a
+    verified sibling is a FATAL — the structured fields (speaker_id,
+    line_range, confidence) are the durable record."""
+    if data.get("verification_status") != "verified":
+        return
+    if data.get("verifier_notes"):
+        rpt.fatal(
+            "verifier_notes",
+            "forbidden on a verified sibling — strip via finalize-attribution.py "
+            "(verifier_notes is draft/rejected-only scaffolding)",
+        )
+    for i, t in enumerate(data.get("turns") or []):
+        if not isinstance(t, dict):
+            continue
+        for field in ("rationale", "verifier_notes"):
+            if t.get(field):
+                rpt.fatal(
+                    f"turns[{i}].{field}",
+                    f"forbidden on a verified sibling — strip via "
+                    f"finalize-attribution.py ({field} is draft-phase scaffolding; "
+                    f"confidence is the durable uncertainty marker)",
+                )
+
+
 def check_image_verification(data, rpt):
     ivs = data.get("image_verification")
     if ivs is None:
@@ -412,12 +446,12 @@ def check_image_verification(data, rpt):
         for req in ("turn_line_range", "resolution", "resolved_speaker_id", "resolved_by"):
             if req not in e:
                 rpt.fatal(f"image_verification[{i}]", f"missing required key: {req}")
-        # Allowed-key enforcement: keep the entry to its durable fields. In
-        # particular reject `frames_extracted` (transient /tmp paths → dead
-        # references once committed) and `baseline_matched` (unread, redundant
-        # with resolution/resolved_speaker_id/contributor_notes).
+        # Allowed-key enforcement: the entry is structured-only. Rejects
+        # `frames_extracted` (transient /tmp paths → dead references once
+        # committed), `baseline_matched` (unread, redundant), and
+        # `contributor_notes` (prose restating resolution/resolved_speaker_id).
         allowed = {"turn_line_range", "resolution", "resolved_speaker_id",
-                   "resolved_by", "contributor_notes"}
+                   "resolved_by"}
         extra = sorted(set(e) - allowed)
         if extra:
             rpt.fatal(
@@ -467,6 +501,7 @@ def validate(path, schema):
     check_turn_referenced_source(data, rpt)
     check_turn_coverage(data, rpt)
     check_verification_fields(data, rpt)
+    check_verified_structured_only(data, rpt)
     check_image_verification(data, rpt)
     return rpt
 

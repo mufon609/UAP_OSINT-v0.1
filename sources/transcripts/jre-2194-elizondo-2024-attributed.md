@@ -18,11 +18,6 @@
 ### [Non-conversational content]  
 *(lines 1-8)*
 
-> **Rationale:** File header — markdown title, source URL, video ID, download date,
-and horizontal rule. No spoken content; included to satisfy coverage
-partition over [1, source_line_count].
-
-
 ```
 # YouTube Transcript — jre-2194-elizondo-2024
 
@@ -37,12 +32,6 @@ Downloaded: 2026-05-19
 ### [Jingle]  
 *(lines 9-11)*
 
-> **Rationale:** Standard JRE intro jingle: "Joe Rogan podcast check it out / The Joe
-Rogan Experience / Train by day Joe Rogan / podcast by night all".
-Lines bear the [0:01]/[0:04]/[0:07] timestamps; identical to the
-foreign-jingle span called out in the producer brief.
-
-
 ```
 [0:01] Joe Rogan podcast check it out The Joe
 [0:04] Rogan Experience Train by day Joe Rogan
@@ -52,31 +41,12 @@ foreign-jingle span called out in the producer brief.
 ### Joe Rogan — Host  
 *(lines 12 · medium confidence)*
 
-> **Rationale:** Mixed-content line ([0:11]): the single word "day" closes the jingle
-lyric ("all day") and is immediately followed by Rogan's first spoken
-greeting "what's up Luke how are you hey sir". The line cannot be
-split below 1-line granularity, and majority content is Rogan's
-greeting, so attribute to s1 (Rogan). Note: per schema, foreign-* and
-live-speaker tokens cannot be mixed in a single mixed-exchange list,
-so the jingle-tail residue is folded into this s1 turn rather than
-its own foreign turn.
-
-
 ```
 [0:11] day what's up Luke how are you hey sir
 ```
 
 ### Joe Rogan — Host  
 *(lines 13-18 · medium confidence · ⚠ needs image verification)*
-
-> **Rationale:** Continuation of Rogan's opening exchange — pleasantries ("doing
-better than I deserve" is Elizondo, but interwoven; Rogan dominates
-the framing with "tell everybody what your official job was").
-Coarse-grained attribution to s1 covering the open. Boundary inside
-this range is genuinely uncertain at line-level; this is one of the
-fast-banter passages the brief flags as a candidate for image
-verification.
-
 
 ```
 [0:14] I'm doing better than I deserve yeah
@@ -89,14 +59,6 @@ verification.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 19-46 · medium confidence · ⚠ needs image verification)*
-
-> **Rationale:** Elizondo's first substantive turn — describes "had a lot of official
-jobs", references the Bob Lazar sport-model replica on the desk
-("Perry... E with in Perry... three"), Texas Toy Museum digression,
-age-exchange "52 / 57". Rogan interjects acknowledgements ("very
-cool", "pretty dope right"). Coarse-grained: substantive content is
-Elizondo's monologue; brief Rogan acks folded in.
-
 
 ```
 [0:28] of official jobs government in regards
@@ -131,28 +93,6 @@ Elizondo's monologue; brief Rogan acks folded in.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 47-123 · medium confidence)*
-
-> **Rationale:** Elizondo's biographical setup — federal service after Army, Counter
-Intelligence work, 2008 move to DNI, Chesapeake Bay commute,
-offered job at Pentagon in 2008, integration between national and
-local/state/tribal law enforcement after 9/11, then 2009 approach
-by two individuals for the program. Rogan has brief interjections
-("why didn't you move closer", "DC is crazy") which are folded into
-the long Elizondo monologue — coarse attribution to dominant
-speaker. Lines 111-123 are Elizondo continuing to recount what the
-two recruiters told him ("look we'd like to consider you for a
-program... very nuanced... very secretive") plus his own riff about
-clearance levels ("when you're into government you hear that all
-the time... it's really not that sexy"); the quoted recruiter
-dialogue belongs to Elizondo's narrative voice. A finer pass could
-split off Rogan's question turns.
-
-> **Verifier note:** Range extended from 47-110 to 47-123 per verifier correction.
-Reported-speech-inside-monologue (recruiter recounting at lines
-111-123) was originally split off as a Rogan turn; the quoted
-recruiter words belong to the reporting speaker (Elizondo), not
-the quoted source. Pattern to watch on future runs.
-
 
 ```
 [1:40] well you'll have to share with me your
@@ -237,30 +177,12 @@ the quoted source. Pattern to watch on future runs.
 ### Joe Rogan — Host  
 *(lines 124 · medium confidence)*
 
-> **Rationale:** Rogan's single-line interjected question about whether Elizondo
-knew what he was getting involved in. Mid-line transition in
-source (auto-caption packs Elizondo's prior sentence end + Rogan
-question on same timestamp); coarse attribution assigns the line
-wholly to Rogan as the substantive content.
-
-> **Verifier note:** Range narrowed from 111-125 to 124 per verifier correction. Lines
-111-123 absorbed into prior s2 turn (Elizondo monologue); line
-125 absorbed into next s2 turn (Elizondo answer).
-
-
 ```
 [4:20] just so you didn't really know what you
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 125-185)*
-
-> **Rationale:** Substantive monologue: counter-intelligence and Aerospace background
-(Tomahawk, Apache Longbow), meeting Dr. James Lacatski "epitome of
-a rocket scientist", Lacatski's first question "what do you think
-about UFOs". This is the long answer to Rogan's setup; clearly
-Elizondo-dominated.
-
 
 ```
 [4:22] getting involved in I didn't at all not
@@ -329,12 +251,6 @@ Elizondo-dominated.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 186-228)*
 
-> **Rationale:** Elizondo continues — Lacatski's "don't let your personal bias",
-Elizondo's self-description as not-a-UFO-guy, college microbiology
-and parasitology, fact-driven special-agent disposition.
-Substantive monologue.
-
-
 ```
 [6:39] truthfully I said I don't and he said
 [6:42] well what do you mean you don't believe
@@ -384,11 +300,6 @@ Substantive monologue.
 ### Joe Rogan — Host  
 *(lines 229-240)*
 
-> **Rationale:** Clear question turn — Rogan asks the next step ("how do you get
-introduced to this idea that these things are alien crafts"). The
-timestamp range and question structure are unambiguous.
-
-
 ```
 [8:21] it so he says this to you and then how
 [8:26] so we're talking about like what 16
@@ -406,13 +317,6 @@ timestamp range and question structure are unambiguous.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 241-316)*
-
-> **Rationale:** Elizondo's long answer — two categories of UAP-realization,
-introduction to the reporting, F-16/F-22/F-35 background, "suck
-squeeze bang and blow", the vehicles had no wings/cockpits/visible
-propulsion, encounters over controlled US airspace and sensitive
-military installations. Continuous Elizondo monologue.
-
 
 ```
 [8:57] so um great question
@@ -496,23 +400,12 @@ military installations. Continuous Elizondo monologue.
 ### Joe Rogan — Host  
 *(lines 317)*
 
-> **Rationale:** Clean Rogan question: "do you remember the first thing that you
-saw". Single-line question turn.
-
-
 ```
 [11:44] do you remember the first thing that you
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 318-369)*
-
-> **Rationale:** Elizondo's answer — "go fast / gimbal / FLIR" are the least
-compelling, 4K high-def footage on classified systems, radar +
-electro-optical + eyewitness triple-confirmation, special-agent
-analogy ("if this was in front of a jury... beyond reasonable
-doubt"). Continuous monologue.
-
 
 ```
 [11:46] saw um boy there's so many you know I
@@ -572,10 +465,6 @@ doubt"). Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 370-379)*
 
-> **Rationale:** Rogan's follow-up question about an aha moment — "the first thing
-that you saw that you looked at and you go what the [...]".
-
-
 ```
 [13:36] there an aha moment for you like the
 [13:38] first thing that you saw that you looked
@@ -591,26 +480,6 @@ that you saw that you looked at and you go what the [...]".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 380-466 · medium confidence)*
-
-> **Rationale:** Elizondo's long answer — Bigelow-sponsored dinner at a DC hotel,
-Brazilian General Uchoa, Colares incident (not Varginha), overwhelming
-eyewitness evidence and photographs, "wow this is legit", attending
-more meetings, splitting combat formations, near-misses and air
-safety issues. Continuous narrative, but with at least 3 substantive
-Rogan single-line questions embedded ("yeah I've met him on the
-podcast" at 391-392, "is this the Virginia incident" at 407,
-"did he show you this video evidence" at 425-426) — coarse
-attribution to dominant speaker (Elizondo by volume), but the
-embedded Rogan interjections make the boundary cleanliness less
-than high-confidence.
-
-> **Verifier note:** Confidence demoted high → medium per verifier correction. Dominant-
-speaker attribution to s2 is correct; high overstated the boundary
-cleanliness given 3+ substantive Rogan single-line questions in the
-span. Pattern: when a span has multiple substantive (not just
-"yeah" ack) interjections from the other speaker, confidence
-should be medium even if dominant attribution is clear.
-
 
 ```
 [14:00] of the most compelling moments was when
@@ -705,10 +574,6 @@ should be medium even if dominant attribution is clear.
 ### Joe Rogan — Host  
 *(lines 467-468)*
 
-> **Rationale:** Clean Rogan question: "was there ever an incident where a pilot
-or a jet did run into something".
-
-
 ```
 [17:15] Tuesday was there ever an incident where
 [17:17] a pilot or a jet did run into something
@@ -716,14 +581,6 @@ or a jet did run into something".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 469-543)*
-
-> **Rationale:** Elizondo's answer — "not that I'm aware of" but provocation
-incidents where UAP came close, wedge-shaped craft demonstration
-(he draws it for Rogan), Nimitz case as gold standard, multi-
-sensor confirmation, "I'm a fact oriented kind of guy". Continuous
-monologue with brief Rogan acks ("draw it for you if you want",
-"really" folded in).
-
 
 ```
 [17:20] not that I'm aware of what I can tell
@@ -806,14 +663,6 @@ monologue with brief Rogan acks ("draw it for you if you want",
 ### Joe Rogan — Host  
 *(lines 544-578 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
 
-> **Rationale:** Mixed exchange about windows / windshields / what eyewitnesses
-describe vs. what's actually there. Both speakers contribute
-substantively in alternating fashion; the dominant question framing
-is Rogan's ("so no windows", "interestingly sh so no windows"), so
-attribute to s1 with low confidence. Candidate for image
-verification to pin the alternation.
-
-
 ```
 [20:11] was most compelling like I said more
 [20:13] than I witness testimony is important
@@ -854,11 +703,6 @@ verification to pin the alternation.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 579-629 · medium confidence)*
-
-> **Rationale:** Elizondo's substantive answer about windows ambiguity, sensor data
-backup (Spy-1, E-2 Hawkeye), classified intelligence systems,
-hundreds of videos. Rogan ack "really" folded in.
-
 
 ```
 [21:24] no windows no windows well in some cases
@@ -917,10 +761,6 @@ hundreds of videos. Rogan ack "really" folded in.
 ### Joe Rogan — Host  
 *(lines 630-631)*
 
-> **Rationale:** Rogan question: "has there ever been any discussion about releasing
-any of these".
-
-
 ```
 [23:14] things has there ever been any
 [23:16] discussion about releasing any of
@@ -928,11 +768,6 @@ any of these".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 632-668)*
-
-> **Rationale:** Elizondo on Chris Mellon's role championing video releases, Mellon's
-surprise on entering Pentagon and seeing what existed despite being
-told no as a senior official. Continuous narrative.
-
 
 ```
 [23:19] these I don't want to speak on behalf of
@@ -977,13 +812,6 @@ told no as a senior official. Continuous narrative.
 ### Joe Rogan — Host  
 *(lines 669-687 · medium confidence)*
 
-> **Rationale:** Rogan's two-part interjection — agreeing with Mellon's perspective
-on disclosure, then asking about Palmdale California drone sighting,
-then digression about drone capabilities ("dragons and stuff with
-drones"). Heavily interwoven with Elizondo's brief acks; attribute
-to s1 as the dominant question/observation source.
-
-
 ```
 [24:38] this this is this is this is BS yeah
 [24:41] when I was talking to him it seemed like
@@ -1008,11 +836,6 @@ to s1 as the dominant question/observation source.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 688-711 · medium confidence)*
-
-> **Rationale:** Elizondo on the ATP investigation methodology — assume man-made
-first, look for the five observables, only when data suggests
-otherwise move to exotic. Continuous explanation.
-
 
 ```
 [25:18] and stuff with drones absolutely so you
@@ -1044,12 +867,6 @@ otherwise move to exotic. Continuous explanation.
 ### Joe Rogan — Host  
 *(lines 712-731)*
 
-> **Rationale:** Rogan's setup for the document-recitation passage — asks about
-oldest footage, points out the temporal problem with secret-
-program explanations ("Kenneth Arnold sightings... Roswell... a
-time where that technology just wasn't available at all").
-
-
 ```
 [26:09] oldest video footage or film footage
 [26:12] that you have ever seen or heard
@@ -1076,11 +893,6 @@ time where that technology just wasn't available at all").
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 732-748)*
 
-> **Rationale:** Elizondo's reach for the document — "glasses come out", "I'm going
-to provide you a document here", instructions to read "this
-paragraph here" and the date. Sets up the recitation.
-
-
 ```
 [26:56] question it just so happens I brought
 [26:58] you something oh uh glasses come out you
@@ -1103,20 +915,6 @@ paragraph here" and the date. Sets up the recitation.
 
 ### [Speaker reciting from a document]  
 *(lines 749-779 · medium confidence)*
-
-> **Rationale:** Foreign-recitation span. Elizondo cues paragraphs ("scroll down to
-paragraph six", "now scroll to the top") and Rogan reads passages
-aloud ("this summary of observations of aerial phenomenon has been
-prepared for the purpose of re-emphasizing and reiterating the fact
-that the phenomena have continuously occurred in the New Mexico
-Skies..."). Both live speakers contribute to the read, but the
-verbatim text being uttered originates with the 1950 memo author —
-hence foreign-recitation per schema. Boundary at line 779 is set
-where the recitation transitions to Elizondo's synthesis
-("organized plan of reporting these observations should be
-undertaken right / so this is the beginning of Project Blue Book").
-Coarse boundary; sub-line interleaving of speaker direction vs
-memo text is genuinely below this layer's resolution.
 
 > **Recited source:** 1950 New Mexico Air Force memo — "Summary of Observations of
 Aerial Phenomenon in the New Mexico area December 1948 to May
@@ -1159,13 +957,6 @@ Aerial Phenomenon in the New Mexico area December 1948 to May
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 780-841 · medium confidence)*
-
-> **Rationale:** Elizondo's synthesis after the first recitation — Project Blue Book
-origin, 1950 saber jet not supersonic, Russia/China temporal
-impossibility, "Carter going into King Tut's tomb... 747 jet"
-analogy, "is it possible... that the US government has some sort of
-exotic technology". Rogan brief acks interleaved.
-
 
 ```
 [28:48] says that the it was determined that the
@@ -1235,10 +1026,6 @@ exotic technology". Rogan brief acks interleaved.
 ### Joe Rogan — Host  
 *(lines 842-843)*
 
-> **Rationale:** Clean Rogan question: "do they have any film of these crafts from
-New Mexico".
-
-
 ```
 [31:13] 1950 that wasn't the case right and do
 [31:16] they have any film of these crafts from
@@ -1246,11 +1033,6 @@ New Mexico".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 844-858)*
-
-> **Rationale:** Elizondo's answer + setup for the J. Edgar Hoover memo — "I got
-another one for you... take a look at the date of this and who it's
-to and who it's from".
-
 
 ```
 [31:19] New Mexico there is film of many craft
@@ -1272,14 +1054,6 @@ to and who it's from".
 
 ### [Speaker reciting from a document]  
 *(lines 859-879 · medium confidence)*
-
-> **Rationale:** Foreign-recitation span. Elizondo cues the read ("read the subject
-line of that memo"), Rogan reads the document header aloud ("flying
-discs over the Savannah", "Savannah River plant"). Verbatim text
-originates with the Hoover memo. Boundary at line 879 set where the
-recitation transitions to Elizondo confirming the location and
-Rogan asking about verification ("Savannah River plant yes sir
-okay that's correct").
 
 > **Recited source:** J. Edgar Hoover FBI memo header — "Flying discs reportedly seen in
 vicinity of the Savannah River plant", from Director of FBI to
@@ -1313,12 +1087,6 @@ Department of the Air Force / The Pentagon, circa 1952.
 ### Joe Rogan — Host  
 *(lines 880-889 · medium confidence)*
 
-> **Rationale:** Rogan's confirmation question and ancient-films follow-up — "did
-they let you see any of these ancient films these films from the
-1950s". Brief Elizondo back-and-forth interleaved ("correct and so
-that's atomic energy yeah", "those are all official").
-
-
 ```
 [32:41] correct and so that's atomic energy yeah
 [32:44] and the date of that being you know 1952
@@ -1334,11 +1102,6 @@ that's atomic energy yeah", "those are all official").
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 890-906 · medium confidence)*
-
-> **Rationale:** Elizondo on why ATP focused on modern data not anecdotal 1950s
-footage. Rogan back-and-forth about the document quality ("clean
-this up the way crazy") folded in.
-
 
 ```
 [33:04] of these things so great question our
@@ -1363,12 +1126,6 @@ this up the way crazy") folded in.
 ### Joe Rogan — Host  
 *(lines 907-916 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
 
-> **Rationale:** Brief Rogan interjections about document quality / typewriter era,
-mixed with Elizondo's continuing explanation ("blotchy uh I'm sure
-the original is probably much cleaner"). Genuine boundary
-ambiguity in this fast back-and-forth.
-
-
 ```
 [33:40] know I know but it's just like yeah the
 [33:42] government released that I mean they
@@ -1384,13 +1141,6 @@ ambiguity in this fast back-and-forth.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 917-956)*
-
-> **Rationale:** Elizondo's substantive monologue — when you go to a general about
-this topic anecdotal 1950s stuff doesn't move them, they want
-carrier strike group reports / current pilots, "further back in
-time we go the less interested they were". Rogan brief ack "they're
-just taking a pragmatic approach" folded in.
-
 
 ```
 [34:00] to your qu answer your question when you
@@ -1438,9 +1188,6 @@ just taking a pragmatic approach" folded in.
 ### Joe Rogan — Host  
 *(lines 957-961)*
 
-> **Rationale:** Clean Rogan question about footage from 1980s/1990s.
-
-
 ```
 [35:13] here and now so do they have repeated
 [35:15] footage because you're saying three
@@ -1451,12 +1198,6 @@ just taking a pragmatic approach" folded in.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 962-1014)*
-
-> **Rationale:** Elizondo on foreign-intelligence (FI) reports of UAP in adversarial
-countries, China's "Five Continents Initiative" via UN, released
-KGB MiG footage, Patagonia/Argentina "La Miranda" observation post,
-stigma campaign in the US. Continuous monologue.
-
 
 ```
 [35:21] reporting yeah and again I got to be
@@ -1517,11 +1258,6 @@ stigma campaign in the US. Continuous monologue.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1015-1039 · medium confidence)*
 
-> **Rationale:** Continuation of the stigma/acknowledgement theme — Ratcliffe,
-Brennan, "former presidents all coming out and saying yeah there's
-something to it". No clear Rogan turn until next question.
-
-
 ```
 [37:18] opinion and I could be wrong but this is
 [37:20] my assessment the reason why it's so
@@ -1553,11 +1289,6 @@ something to it". No clear Rogan turn until next question.
 ### Joe Rogan — Host  
 *(lines 1040-1052)*
 
-> **Rationale:** Rogan's history-of-debunking question — Project Blue Book, J.
-Allen Hynek, swamp gas, "any documentation or any discussion of
-why they did that".
-
-
 ```
 [38:09] back to the history of the debunking of
 [38:12] it you know like the Project Blue Book
@@ -1576,12 +1307,6 @@ why they did that".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1053-1093)*
-
-> **Rationale:** Elizondo's substantive Cold War explanation — neither side wanted
-to broadcast knowledge, late-60s classified US-Russia agreement
-about calling before launching in case it was a UFO. Continuous
-monologue.
-
 
 ```
 [38:45] why they chose to debunk everything yeah
@@ -1630,10 +1355,6 @@ monologue.
 ### Joe Rogan — Host  
 *(lines 1094-1099)*
 
-> **Rationale:** Rogan asks about Philip Corso era and definitive-non-US film
-footage.
-
-
 ```
 [40:15] was dismissing all these different
 [40:17] things did they have anything any film
@@ -1645,11 +1366,6 @@ footage.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1100-1147)*
-
-> **Rationale:** Elizondo on not being privy to old footage, Cold War stigma
-rationale, "societal disruption" concern, "run on Wall Street"
-panic concern. Continuous monologue.
-
 
 ```
 [40:31] the fact that people say it does exist
@@ -1705,20 +1421,12 @@ panic concern. Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 1148)*
 
-> **Rationale:** Single-line Rogan question — pivotal pivot to modern footage.
-
-
 ```
 [42:10] what's the most compelling modern thing
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1149-1161)*
-
-> **Rationale:** Elizondo's "oh my God I can't talk about it unfortunately"
-frustration response — "video that's coming in on a regular routine
-basis very very compelling".
-
 
 ```
 [42:12] that you've seen oh my God I can't talk
@@ -1739,10 +1447,6 @@ basis very very compelling".
 ### Joe Rogan — Host  
 *(lines 1162-1163 · medium confidence)*
 
-> **Rationale:** Rogan's clarifying question about filming source. Brief; boundary
-with Elizondo's continuing answer is tight.
-
-
 ```
 [42:36] is all this military stuff so let me
 [42:39] backtrack a little bit this there is
@@ -1750,12 +1454,6 @@ with Elizondo's continuing answer is tight.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1164-1208)*
-
-> **Rationale:** Elizondo's substantive answer — Department of Defense intelligence
-oversight (DOD 5240.1, EO 12333), can't ingest US Persons
-Information, ATP focused on military-source data, civilian data
-not needed. Includes intro to underwater-craft example.
-
 
 ```
 [42:41] there there's a general public that is
@@ -1808,9 +1506,6 @@ not needed. Includes intro to underwater-craft example.
 ### Joe Rogan — Host  
 *(lines 1209-1211)*
 
-> **Rationale:** Rogan's request for general description without specifics.
-
-
 ```
 [44:15] can't tell us about can you give us some
 [44:18] sort of an understanding of like what
@@ -1819,11 +1514,6 @@ not needed. Includes intro to underwater-craft example.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1212-1232)*
-
-> **Rationale:** Elizondo's underwater-craft example — high-resolution video,
-offshore oil derrick scale, 450-550 knots underwater. Vivid set-
-piece narrative.
-
 
 ```
 [44:23] um without being specific yeah let me
@@ -1852,11 +1542,6 @@ piece narrative.
 ### Joe Rogan — Host  
 *(lines 1233-1235 · medium confidence)*
 
-> **Rationale:** Rogan ack "Jesus" + Elizondo brief "yeah so that's a lot of them"
-folded; primary content is Rogan's startled reaction triggering
-Elizondo's trans-medium explanation.
-
-
 ```
 [45:14] it Jesus yeah so that's a lot of them
 [45:18] right A lot of them are reported as
@@ -1865,13 +1550,6 @@ Elizondo's trans-medium explanation.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1236-1287)*
-
-> **Rationale:** Elizondo's substantive monologue — why "UAP" replaced "UFO"
-(multiple reasons including stigma but also accuracy: flight
-requires wings), trans-medium concept, sea-plane and space-shuttle
-design-compromise analogies, "fundamentally different type of
-Technology".
-
 
 ```
 [45:23] why why do we use the term UAP right now
@@ -1931,10 +1609,6 @@ Technology".
 ### Joe Rogan — Host  
 *(lines 1288-1296)*
 
-> **Rationale:** Rogan's physics-explanation request — "doing something with space
-time and gravity around them... altering gravity around them".
-
-
 ```
 [47:18] with is the assumption that they are
 [47:21] doing something with space time and
@@ -1949,12 +1623,6 @@ time and gravity around them... altering gravity around them".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1297-1360)*
-
-> **Rationale:** Elizondo's substantive explanation — "Dr halud off" (Puthoff) and
-"Dr AR Davis" doing the math, unifying theory, bubble around the
-craft insulating from spacetime warping, f=ma vs new mechanics.
-Long monologue.
-
 
 ```
 [47:40] through everything yeah so we had had
@@ -2026,14 +1694,6 @@ Long monologue.
 ### Joe Rogan — Host  
 *(lines 1361-1362 · medium confidence)*
 
-> **Rationale:** Rogan's brief mid-line question prompt — "are there any theories
-as to how it's accomplishing this". Line 1361 begins with the tail
-of Elizondo's prior monologue ("equal and opposite reaction that
-way") but the substantive question content is Rogan's; coarse
-attribution to s1. To keep coverage strict, the line is assigned
-wholly to s1.
-
-
 ```
 [50:08] way right that's how are there any
 [50:09] theories as to how it's accomplishing
@@ -2041,12 +1701,6 @@ wholly to s1.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1363-1390)*
-
-> **Rationale:** Elizondo on Puthoff's 3-years-ago technical lecture about the
-propulsion, recommending Joe interview him, Puthoff also started
-the government remote-viewing program, 3-hour skiff briefing
-"epiphany".
-
 
 ```
 [50:11] this there is actually Dr halud off
@@ -2082,9 +1736,6 @@ the government remote-viewing program, 3-hour skiff briefing
 ### Joe Rogan — Host  
 *(lines 1391-1393)*
 
-> **Rationale:** Clean Rogan question — "give us a moron's view".
-
-
 ```
 [51:10] not can you give us a morons view of How
 [51:13] It's Possible like explain it to someone
@@ -2093,15 +1744,6 @@ the government remote-viewing program, 3-hour skiff briefing
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1394-1487 · medium confidence)*
-
-> **Rationale:** Long Elizondo monologue with cup analogy and physical drawing
-("two-dimensional representation of a three-dimensional space")
-and LA-to-Baltimore-in-5-hours-vs-1-hour compression analogy.
-Some Rogan acks ("yeah right", "yeah I'm again I'm not I'm not
-a scientist" — that's actually Elizondo) interleaved. Includes
-banter ("do you mind I'm sorry take this thank you / no problem")
-around picking up dropped item, treated as part of the s2 frame.
-
 
 ```
 [51:17] Joe
@@ -2203,10 +1845,6 @@ around picking up dropped item, treated as part of the s2 frame.
 ### Joe Rogan — Host  
 *(lines 1488-1491)*
 
-> **Rationale:** Pivotal Rogan question — "how much of this is theoretical and how
-much is observed from recovered vehicles".
-
-
 ```
 [55:08] um thank you very much no problem so how
 [55:12] how much of this is theoretical and how
@@ -2216,12 +1854,6 @@ much is observed from recovered vehicles".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1492-1519)*
-
-> **Rationale:** Elizondo's carefully-worded Pentagon-approved statement — "very
-compelling evidence to suggest that the US government is in
-absolute possession of exotic material that is not made by
-humans". The on-record claim. Continuous monologue.
-
 
 ```
 [55:19] what the government may or may to have
@@ -2257,10 +1889,6 @@ humans". The on-record claim. Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 1520-1527)*
 
-> **Rationale:** Rogan's pointed question about Pentagon's logic — why allow the
-acknowledgement but not the elaboration / footage.
-
-
 ```
 [56:22] in possession of why is the Pentagon
 [56:23] teasing us why do they tell you why are
@@ -2274,12 +1902,6 @@ acknowledgement but not the elaboration / footage.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1528-1549)*
-
-> **Rationale:** Elizondo on cell phones / ring cameras making secrecy untenable,
-faction inside the government wanting disclosure vs faction
-opposed, predicting "absolute storm inside the Pentagon" from this
-podcast appearance. Substantive monologue.
-
 
 ```
 [56:41] reasons I don't think they have a choice
@@ -2309,13 +1931,6 @@ podcast appearance. Substantive monologue.
 ### Joe Rogan — Host  
 *(lines 1550-1551 · medium confidence)*
 
-> **Rationale:** Rogan's prompt "could you Steelman their position" — clean
-question intent but line 1550 also contains the trailing acknowledgement
-from Elizondo ("right so that was I think a point for him..."
-cadence wraps). Coarse attribution to s1 as dominant new-turn
-speaker.
-
-
 ```
 [57:27] that do not want this convers could you
 [57:29] Steelman their
@@ -2323,12 +1938,6 @@ speaker.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1552-1599)*
-
-> **Rationale:** Elizondo's "Steelman" answer — three options framework, evidence
-against benevolence (Hiroshima/Nagasaki, Chernobyl, Fukushima, Three
-Mile Island not stopped), Echo Flight Minot/Montana incident,
-Russia turn-on (opposite of US turn-off) parallel.
-
 
 ```
 [57:31] position say say again Steelman their
@@ -2384,10 +1993,6 @@ Russia turn-on (opposite of US turn-off) parallel.
 ### Joe Rogan — Host  
 *(lines 1600-1603)*
 
-> **Rationale:** Rogan's confirmation question — "so when you say they turned them
-on in Russia this is a Russian report".
-
-
 ```
 [59:14] so when you say they turned to man in
 [59:16] Russia this is a a Russian report yeah
@@ -2397,12 +2002,6 @@ on in Russia this is a Russian report".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1604-1638)*
-
-> **Rationale:** Elizondo on the congressional hearing — under-secretary defense for
-intelligence Ronald Moultrie, Congressman Gallagher's question,
-government's "not familiar" answer, John Greenwald's Black Vault
-FOIA release of the document. Substantive monologue.
-
 
 ```
 [59:22] the hearing Congressional hearing that
@@ -2445,10 +2044,6 @@ FOIA release of the document. Substantive monologue.
 ### Joe Rogan — Host  
 *(lines 1639-1644 · medium confidence)*
 
-> **Rationale:** Rogan's interjection about "who in the CIA" specifically, before
-Elizondo continues. Brief turn.
-
-
 ```
 [1:00:36] that's that's my that's been my
 [1:00:38] observations and my experience well that
@@ -2460,12 +2055,6 @@ Elizondo continues. Brief turn.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1645-1688)*
-
-> **Rationale:** Elizondo continues the Steelman argument — IPB (Initial
-Preparation of the Battle space), ISR, even a 2-5% chance of
-malevolence justifies operational secrecy, foreign-country
-surveillance analogy. Continuous monologue.
-
 
 ```
 [1:00:47] they're not here for friend if they're
@@ -2517,11 +2106,6 @@ surveillance analogy. Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 1689-1690 · medium confidence)*
 
-> **Rationale:** Rogan's interjection — "so they're worried about an actual
-Invasion". Coarse-grained attribution to s1; mid-line transitions
-are below this layer's resolution.
-
-
 ```
 [1:02:27] who want to keep this secret because so
 [1:02:28] they're worried about an actual Invasion
@@ -2529,12 +2113,6 @@ are below this layer's resolution.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1691-1710 · medium confidence)*
-
-> **Rationale:** Elizondo on government's risk-planning duty, but final decision
-should go to Congress/president/American people. Rogan-Elizondo
-back-and-forth at boundary; coarse attribution to dominant
-monologue speaker.
-
 
 ```
 [1:02:30] well but but they have to be that is
@@ -2562,11 +2140,6 @@ monologue speaker.
 ### Joe Rogan — Host  
 *(lines 1711-1719 · medium confidence)*
 
-> **Rationale:** Rogan's agreement-with-caveat interjection about PR burden /
-"trying to let people know about this thing and not cause mass
-panic".
-
-
 ```
 [1:03:09] interest to know I AG with you but I
 [1:03:10] also can see it from their perspective
@@ -2581,13 +2154,6 @@ panic".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1720-1762)*
-
-> **Rationale:** Elizondo on his optimism — "we are having this conversation and
-people aren't making a run on Wall Street", 2017 NYT article as
-pivotal disclosure moment, rare bipartisan topic with Burchett and
-AOC, "Secrets aren't like a fine wine... they're like vegetables in
-your refrigerator". Continuous monologue.
-
 
 ```
 [1:03:26] though I'm also very optimistic Joe
@@ -2638,22 +2204,12 @@ your refrigerator". Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 1763)*
 
-> **Rationale:** Rogan's pivot to legality / spending — "is there an issue of
-legality like of of spending".
-
-
 ```
 [1:04:55] an issue of legality like of of spending
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1764-1822 · medium confidence)*
-
-> **Rationale:** Elizondo's substantive legal-implications answer — Aerospace
-companies A and B analogy, SEC violations, fair-competition
-contracting laws, "make them friends not enemies" prosecution
-immunity approach. Rogan brief acks interleaved.
-
 
 ```
 [1:04:59] and like 100% 100% there's people that
@@ -2720,12 +2276,6 @@ immunity approach. Rogan brief acks interleaved.
 ### Joe Rogan — Host  
 *(lines 1823-1847 · medium confidence)*
 
-> **Rationale:** Rogan's substantive interjection — "if you did find something who
-would you bring it to... bring it to the people that build your
-jets". Medium confidence on boundary; both speakers interleave
-acks.
-
-
 ```
 [1:07:06] yeah these are big companies right with
 [1:07:07] really deep pockets and a lot of lawyers
@@ -2757,12 +2307,6 @@ acks.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1848-1870)*
 
-> **Rationale:** Elizondo's Da Vinci analogy — colleague comparison, garage door
-opener as magic to medieval craftsmen, exploitation of technology
-whose physics hasn't been discovered yet. Continuous monologue
-with Rogan acks folded in.
-
-
 ```
 [1:07:58] made the comparison he said look Lou
 [1:08:01] imagine being uh during the days of Da
@@ -2792,10 +2336,6 @@ with Rogan acks folded in.
 ### Joe Rogan — Host  
 *(lines 1871-1872)*
 
-> **Rationale:** Rogan's pivot to Bob Lazar — "I'm sure you're aware of the Bob
-Lazar story".
-
-
 ```
 [1:08:49] Technology um I'm sure you're aware of
 [1:08:52] the Bob Lazar story I'm aware I I don't
@@ -2803,12 +2343,6 @@ Lazar story".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1873-1901 · medium confidence)*
-
-> **Rationale:** Elizondo on intentionally insulating himself from UFO lore to
-preserve investigative integrity, avoiding bias. Rogan ack "you're
-a better man than me I well all of them [...] chasing that [...]
-down" embedded; coarse attribution favors Elizondo's monologue.
-
 
 ```
 [1:08:55] know I've never met him so you never got
@@ -2845,11 +2379,6 @@ down" embedded; coarse attribution favors Elizondo's monologue.
 ### Joe Rogan — Host  
 *(lines 1902-1913 · medium confidence)*
 
-> **Rationale:** Rogan summarizing the Lazar story for Elizondo's benefit —
-"particular facility... exposed to some sort of UAP technology...
-sport model... propulsions expert".
-
-
 ```
 [1:09:58] see today right you're aware of the
 [1:10:01] story though right the basic
@@ -2868,10 +2397,6 @@ sport model... propulsions expert".
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1914-1917)*
 
-> **Rationale:** Elizondo's brief "I'm aware of the overarching story, never met him
-personally" reiteration.
-
-
 ```
 [1:10:28] realized oh this isn't even ours yeah
 [1:10:31] I'm I'm aware of again the the
@@ -2881,15 +2406,6 @@ personally" reiteration.
 
 ### Joe Rogan — Host  
 *(lines 1918-1996 · medium confidence)*
-
-> **Rationale:** Rogan's long substantive monologue about meeting Lazar at dinner
-with Andrew Schultz and Jeremy Corbell, Jeremy Corbell as a "UFO
-nut", the Lazar documentary, Lazar's same-story consistency since
-1980s, Element 115 description, 3D-printing observation, lack of
-seams/rivets, 3-feet-tall beings, mind-interface piloting. Coarse
-attribution; some boundary fuzz with Elizondo ack "I'm not a I'm
-not an artist" type interjections.
-
 
 ```
 [1:10:37] personally so I'm he a very very
@@ -2976,11 +2492,6 @@ not an artist" type interjections.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 1997-2003)*
 
-> **Rationale:** Elizondo's "Joe is that really that much of a stretch" answer —
-pilots controlling aircraft thousands of miles away with helmet
-that interprets thought.
-
-
 ```
 [1:13:30] but Joe is that really that much of a of
 [1:13:32] a of a stretch let's let's look at this
@@ -2993,11 +2504,6 @@ that interprets thought.
 
 ### Joe Rogan — Host  
 *(lines 2004-2029 · medium confidence)*
-
-> **Rationale:** Rogan's neuralink-patient description — Counterstrike, second
-patient, aimbot-like accuracy from first patient. Substantive
-digression.
-
 
 ```
 [1:13:46] do the helmet inter is it similar to
@@ -3031,10 +2537,6 @@ digression.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2030-2051 · medium confidence)*
 
-> **Rationale:** Elizondo on processing speed advantage, Modern Warfare AI
-augmentation. Coarse attribution.
-
-
 ```
 [1:14:44] entirely with his mind but is is that
 [1:14:46] right so if we can do that now right
@@ -3063,9 +2565,6 @@ augmentation. Coarse attribution.
 ### Joe Rogan — Host  
 *(lines 2052-2059 · medium confidence)*
 
-> **Rationale:** Rogan's brief riff on exponential technological progress.
-
-
 ```
 [1:15:30] I mean just go from garage door openers
 [1:15:32] to you know 500 600 years ago to today
@@ -3079,16 +2578,6 @@ augmentation. Coarse attribution.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2060-2225 · medium confidence)*
-
-> **Rationale:** Long Elizondo monologue — para- prefix explanation, paranormal as
-"above or beside normal", historical examples (Inca seeing
-Spaniards/horses, acupuncture VA prescription, 24-hour-clock-
-analogy for human evolution, fungus/microorganism discovery),
-4.5-billion-year planet timeline, biomass argument, 10%-visible-
-universe / 100-billion-light-year cosmos scale, atom-to-universe
-scale analogy, five senses limitation. Continuous monologue with
-Rogan minimal acks; coarse attribution covers the bulk.
-
 
 ```
 [1:15:47] used to I used to give a briefing to
@@ -3262,23 +2751,6 @@ Rogan minimal acks; coarse attribution covers the bulk.
 ### Joe Rogan — Host  
 *(lines 2226-2245 · medium confidence)*
 
-> **Rationale:** Rogan's substantive interjection about humans sending probes to
-other planets, only-makes-sense-something-far-more-intelligent-
-watches-emerging-civilizations, Orville/Wilbur Wright to Apollo 11
-in 50 years. Mid-line transition at 2226 ("we exist and we do send
-things to other planets... and if they did they'd probably
-watch...") — a distinct Rogan thought-pattern, not a continuation
-of Elizondo's "mother nature in a little box" theme. Sustained
-Rogan riff through 2245 until Elizondo's "you bring up another
-very interesting point" at 2246.
-
-> **Verifier note:** Confidence promoted low → medium, needs_image_verification cleared,
-per verifier correction. The boundary is resolvable from textual
-cues on careful reread; image verification is over-prescribed for
-this turn (the audio anchor doesn't add evidence the text doesn't
-already provide).
-
-
 ```
 [1:21:45] first well we exist and we do send
 [1:21:50] things to other planets we do send
@@ -3305,11 +2777,6 @@ already provide).
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2246-2261 · medium confidence)*
 
-> **Rationale:** Elizondo's "you bring up another very interesting point" — evolved
-more in 150 years than in 150,000 years, "I don't know where
-they're from I just know that they're here".
-
-
 ```
 [1:22:35] take that and you would imagine a
 [1:22:37] civilization that's been around 10,000
@@ -3331,12 +2798,6 @@ they're from I just know that they're here".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2262-2348)*
-
-> **Rationale:** Continuation — physics evolution, quantum mechanics spooky-action,
-humans limited to 5 senses, Wyoming night sky vs radio telescope
-view, "we live in this little tiny tiny sliver". Continuous
-monologue.
-
 
 ```
 [1:23:09] be from Inner Space or even the space in
@@ -3431,13 +2892,6 @@ monologue.
 ### Joe Rogan — Host  
 *(lines 2349-2361 · medium confidence)*
 
-> **Rationale:** Rogan's "you hurt my head" / "we live in a tiny sliver and the
-idea that we're alone I think is preposterous" + Elon "very subtle"
-quote / "I think he probably says that because he doesn't want to
-sound like a [...] while he's working with NASA". Some shared
-content with adjacent Elizondo turns at boundaries.
-
-
 ```
 [1:26:25] so you hurt my
 [1:26:28] head yeah we live in a tiny sliver and
@@ -3456,10 +2910,6 @@ content with adjacent Elizondo turns at boundaries.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2362-2389)*
-
-> **Rationale:** Elizondo's serengeti tranquilizer-helicopter analogy + China zoo
-panda-suit observation. Substantive monologue.
-
 
 ```
 [1:26:54] some stuff like that too well let me ask
@@ -3495,10 +2945,6 @@ panda-suit observation. Substantive monologue.
 ### Joe Rogan — Host  
 *(lines 2390-2392 · medium confidence)*
 
-> **Rationale:** Rogan's "could you was was it reasonable to theorize that there's
-aliens amongst us" question.
-
-
 ```
 [1:27:54] inside the exhibit right PL animals
 [1:27:56] could you was was it reasonable to
@@ -3507,11 +2953,6 @@ aliens amongst us" question.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2393-2407 · medium confidence)*
-
-> **Rationale:** Elizondo's careful answer — distinguishing aliens-from-another-
-planet vs non-human-intelligence-among-us, panda strategy
-simplicity. Brief Rogan acks folded in.
-
 
 ```
 [1:28:02] us when you say um well two things so I
@@ -3534,11 +2975,6 @@ simplicity. Brief Rogan acks folded in.
 ### Joe Rogan — Host  
 *(lines 2408-2420 · medium confidence)*
 
-> **Rationale:** Banter about the panda costume image — "panda terrorist looks like
-a [...] alien", "Zapped you with a tranquilizer he'd have an alien
-story". Rogan dominant in the banter.
-
-
 ```
 [1:28:35] shitty panda bear outfits
 [1:28:37] too they're [ __ ] terrible looking
@@ -3557,12 +2993,6 @@ story". Rogan dominant in the banter.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2421-2437 · medium confidence)*
-
-> **Rationale:** Elizondo's segue — camouflage in military / hunting context, blend-
-in expectation for any visiting intelligence, no empirical evidence
-they're "living among us" but acknowledgement they're here. Some
-Rogan acks ("absolutely I do absolutely").
-
 
 ```
 [1:29:01] but yeah my point is that we we always
@@ -3587,10 +3017,6 @@ Rogan acks ("absolutely I do absolutely").
 ### Joe Rogan — Host  
 *(lines 2438-2454 · medium confidence)*
 
-> **Rationale:** Rogan's pivot to ocean / 90%-of-ocean-unexplored. Brief Elizondo
-"that's right" acks; Rogan dominant.
-
-
 ```
 [1:29:34] whatever it is but these things could
 [1:29:36] also be from under the water these
@@ -3613,13 +3039,6 @@ Rogan acks ("absolutely I do absolutely").
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2455-2509)*
-
-> **Rationale:** Elizondo on Fast Walker program, the Navy's underwater equivalent
-(can't discuss), conversation-without-attribution about UAP bigger
-than US submarine traveling at hundreds of knots, "we go around"
-avoidance. Substantive monologue with Rogan banter ("you and I got
-to get drunk").
-
 
 ```
 [1:30:07] underwater crafts like this enormous one
@@ -3682,11 +3101,6 @@ to get drunk").
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2510-2553)*
 
-> **Rationale:** Late-90s Caribbean Navy missile-recovery anecdote — helicopter
-crew, frogman on the line, large black sphere rises from water,
-sucks the missile down. Vivid set-piece narrative.
-
-
 ```
 [1:32:10] because it's not classified um the
 [1:32:13] portions that might be I don't know
@@ -3737,10 +3151,6 @@ sucks the missile down. Vivid set-piece narrative.
 ### Joe Rogan — Host  
 *(lines 2554-2565 · medium confidence)*
 
-> **Rationale:** Rogan's reactions — "no I would have loved that experience", banter
-about putting witness in a "Panda outfit" to disguise voice.
-
-
 ```
 [1:33:43] you we call that bait yeah but it didn't
 [1:33:46] do anything to him no I would have loved
@@ -3758,11 +3168,6 @@ about putting witness in a "Panda outfit" to disguise voice.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2566-2589 · medium confidence)*
-
-> **Rationale:** Elizondo introducing Aguadilla incident — DHS helicopter footage,
-object entering water without splash, splitting into two. Rogan
-"I don't know about it oh I'm sure you do" interleaved.
-
 
 ```
 [1:34:13] that story oh my God small island yep
@@ -3793,13 +3198,6 @@ object entering water without splash, splitting into two. Rogan
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2590-2619 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
-
-> **Rationale:** Both speakers narrate while watching the video — "how fast is this
-thing going" (Rogan), "if you look here they're looking at this
-through a form of night vision" (Elizondo). Heavily interleaved
-video commentary; coarse attribution to Elizondo as primary
-explainer. Candidate for image verification.
-
 
 ```
 [1:35:05] kind of blurry looking night vision
@@ -3837,10 +3235,6 @@ explainer. Candidate for image verification.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2620-2630 · medium confidence)*
 
-> **Rationale:** Continuation of video commentary — A-10 Warthog with UAP keeping
-pace, no wings/control surfaces.
-
-
 ```
 [1:36:05] that's just one example um you know this
 [1:36:08] is uh these are you can see all these
@@ -3858,10 +3252,6 @@ pace, no wings/control surfaces.
 ### Joe Rogan — Host  
 *(lines 2631-2632)*
 
-> **Rationale:** Clean Rogan question — "do you think they're trying to let people
-see them".
-
-
 ```
 [1:36:29] it yep like it's nothing do you think
 [1:36:31] they're trying to let people see them
@@ -3869,10 +3259,6 @@ see them".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2633-2640 · medium confidence)*
-
-> **Rationale:** Elizondo's "could it be a demonstration of capabilities" answer —
-F-22 Russian surveillance aircraft escort analogy.
-
 
 ```
 [1:36:35] like if you had a guess you know I I
@@ -3887,11 +3273,6 @@ F-22 Russian surveillance aircraft escort analogy.
 
 ### Joe Rogan — Host  
 *(lines 2641-2659)*
-
-> **Rationale:** Rogan's substantive thought experiment — circular craft lands next
-to Pentagon would end the world, gradual sensitization over time as
-better introduction strategy. Substantive Rogan monologue.
-
 
 ```
 [1:36:52] civilization was trying to alert another
@@ -3917,12 +3298,6 @@ better introduction strategy. Substantive Rogan monologue.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2660-2695 · medium confidence)*
-
-> **Rationale:** Elizondo's counter — that's a very human framing, shark biting
-surfer isn't malicious-just-hungry, intent/motivation is human, may
-not apply to non-human intelligence. Mid-line transition at line
-2660.
-
 
 ```
 [1:37:41] show versions of themselves yeah we call
@@ -3966,10 +3341,6 @@ not apply to non-human intelligence. Mid-line transition at line
 ### Joe Rogan — Host  
 *(lines 2696-2706 · medium confidence)*
 
-> **Rationale:** Rogan's pushback — strategy doesn't require human intention,
-examples are observable in nature.
-
-
 ```
 [1:38:58] human right but would you have to assign
 [1:38:59] human traits to it or would you have if
@@ -3986,11 +3357,6 @@ examples are observable in nature.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2707-2723 · medium confidence)*
-
-> **Rationale:** Elizondo's reinforcement — "let me reinforce your point", lioness
-stalking pattern, instinct/DNA wiring, very good point. Mid-line
-transition at line 2707.
-
 
 ```
 [1:39:23] examples of that let me reinforce your
@@ -4014,11 +3380,6 @@ transition at line 2707.
 
 ### Joe Rogan — Host  
 *(lines 2724-2746 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
-
-> **Rationale:** Rogan's continuation — tiger/zebra observation analogy applied to
-ETs watching us, Amazon lost-tribes-being-studied analogy. Some
-Elizondo acks folded in.
-
 
 ```
 [1:40:00] yeah I mean it just makes sense that if
@@ -4049,10 +3410,6 @@ Elizondo acks folded in.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2747-2756 · medium confidence)*
 
-> **Rationale:** Elizondo on universal evolution toward super-intelligence,
-consistent flying-craft improvement until warp drive achieved.
-
-
 ```
 [1:40:51] question and obviously if they are the
 [1:40:54] super intelligent creatures they evolve
@@ -4068,11 +3425,6 @@ consistent flying-craft improvement until warp drive achieved.
 
 ### Joe Rogan — Host  
 *(lines 2757-2767 · medium confidence)*
-
-> **Rationale:** Rogan's "55 Chevy" analogy — same kind of UAP seen in 1950 as in
-2024, like seeing 55 Chevys still in 2024 — Cuba digression / good
-mechanics / cigar banter. Mid-line transition at 2757.
-
 
 ```
 [1:41:13] things apparently have another thing
@@ -4091,11 +3443,6 @@ mechanics / cigar banter. Mid-line transition at 2757.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2768-2779 · medium confidence)*
 
-> **Rationale:** Elizondo's cigar banter — "really resisting the urge to smoke this
-thing", wife concerns. Brief Rogan acks ("nothing wrong with
-cigars man" / "you don't inhale them").
-
-
 ```
 [1:41:42] mechanics that's your people it is my
 [1:41:45] I'm really resisting the urge of Contin
@@ -4113,21 +3460,6 @@ cigars man" / "you don't inhale them").
 
 ### Joe Rogan — Host  
 *(lines 2780-2795 · medium confidence)*
-
-> **Rationale:** Rogan resumes the intelligent-life thread after the cigar
-interlude — "I would just think that's what they would do because
-that's what we would do" — remote tribes example, starlink-and-
-porn anecdote. Clean topic-shift boundary at 2780 following
-Elizondo's cigar banter at 2779.
-
-> **Verifier note:** Confidence promoted low → medium, needs_image_verification cleared,
-per verifier correction. The cigar-interlude break gives a clean
-topic-shift boundary; "I would just think that's what they would
-do" is a textbook Rogan-continuation cue from before the cigar
-tangent. Pattern: image verification is right for genuinely
-audio-anchor-dependent turns (alternating dialogue with face on
-camera), not for topic-shift boundaries settle-able from text.
-
 
 ```
 [1:42:06] nice um I would just think that that's
@@ -4150,11 +3482,6 @@ camera), not for topic-shift boundaries settle-able from text.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2796-2814 · medium confidence)*
-
-> **Rationale:** Elizondo's "you bring up another very interesting point" — natural
-glide-slope-of-evolution question, all life expansive, "is this a
-universal norm". Substantive setup question, attributed to s2.
-
 
 ```
 [1:42:41] leaders are not happy you bring up
@@ -4180,12 +3507,6 @@ universal norm". Substantive setup question, attributed to s2.
 
 ### Joe Rogan — Host  
 *(lines 2815-2848 · medium confidence)*
-
-> **Rationale:** Rogan's answer to Elizondo's question — natural-blueprint
-affirmation, exponential progression, Apollo-11 reference, lawyer-
-Ivan-the-Bull riff, infinite-complexity-of-law observation.
-Substantive Rogan content.
-
 
 ```
 [1:43:26] that's a great question because there's
@@ -4226,13 +3547,6 @@ Substantive Rogan content.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2849-2886)*
-
-> **Rationale:** Elizondo on fractal patterns appearing in terrorism link analysis,
-lung structures, lightning, galaxy superclusters — same pattern
-across physical and social systems. "Parts of this conversation I
-don't feel the government has any place" — philosophical/
-psychological/sociological/theological domains.
-
 
 ```
 [1:44:40] progression as we're talking about life
@@ -4278,11 +3592,6 @@ psychological/sociological/theological domains.
 ### Joe Rogan — Host  
 *(lines 2887-2899 · medium confidence)*
 
-> **Rationale:** Rogan's response — "government's supposed to be working for us
-ultimately... shouldn't have this insane knowledge and keep it from
-other human beings". Some Elizondo acks folded.
-
-
 ```
 [1:46:06] should think about this well the
 [1:46:07] government's supposed to be working for
@@ -4301,11 +3610,6 @@ other human beings". Some Elizondo acks folded.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2900-2941 · medium confidence)*
-
-> **Rationale:** Elizondo on legality of secrecy, life's abundance on Earth and
-across planets, Mars microbial evidence, Europa volcanic vents,
-Titan methane clouds. Continuous monologue.
-
 
 ```
 [1:46:30] about these underwater Vehicles well
@@ -4355,12 +3659,6 @@ Titan methane clouds. Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 2942-2965 · medium confidence)*
 
-> **Rationale:** Rogan's pivot to ancient scriptures and pre-modern UAP accounts,
-"vimanas in Hindu texts... Ezekiel in the Bible... if I was a
-person living thousands of years ago and I encountered a flying
-saucer I would describe it in the way they're describing it".
-
-
 ```
 [1:48:04] much what I don't know if you could talk
 [1:48:06] about this but how much of an effort is
@@ -4390,12 +3688,6 @@ saucer I would describe it in the way they're describing it".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 2966-2996)*
-
-> **Rationale:** Elizondo on Vatican Monsignor conversation, Vatican doesn't have
-problem with the topic, pre-1600s heretical to assume mankind only
-God-incarnation, Vatican-archive scrolls describing flaming Roman-
-shield UAP following soldiers, Jacques Vallee reference.
-
 
 ```
 [1:49:02] probably describe it in the way that
@@ -4434,12 +3726,6 @@ shield UAP following soldiers, Jacques Vallee reference.
 ### Joe Rogan — Host  
 *(lines 2997-3012 · medium confidence)*
 
-> **Rationale:** Rogan banter about Vallee — "he is very slippery he don't commit
-to anything", reason-for-the-French-guy-in-Close-Encounters, didn't
-have guts to ask, Elizondo ack "you know he he did a lot of lot of
-good stuff".
-
-
 ```
 [1:50:08] conversation I had with with someone
 [1:50:09] there is very slippery he is he very
@@ -4462,11 +3748,6 @@ good stuff".
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3013-3027)*
 
-> **Rationale:** Elizondo's "Vatican is probably the world's oldest intelligence
-organization" — priests worldwide reporting miracles / confessions
-filtered up. "First CIA and KGB it was Vatican".
-
-
 ```
 [1:50:42] there's a lot of and when you look at
 [1:50:44] what the Vatican is I mean really it's
@@ -4488,11 +3769,6 @@ filtered up. "First CIA and KGB it was Vatican".
 ### Joe Rogan — Host  
 *(lines 3028-3034 · medium confidence)*
 
-> **Rationale:** Rogan's continuation — these things visiting us pre-modernity,
-"they might be responsible for us being humans in the first
-place".
-
-
 ```
 [1:51:14] wow yeah it only makes sense that these
 [1:51:17] things if they're here now they've
@@ -4505,11 +3781,6 @@ place".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3035-3055 · medium confidence)*
-
-> **Rationale:** Elizondo on Columbus voyage UAP accounts in ship logs, old sailor
-Kraken stories now retroactively explained by giant squid
-discovery.
-
 
 ```
 [1:51:28] being humans in the first place well you
@@ -4537,11 +3808,6 @@ discovery.
 
 ### Joe Rogan — Host  
 *(lines 3056-3079 · medium confidence)*
-
-> **Rationale:** Rogan on Kraken / fossilized suction cups / Great squid of the
-Pacific, great-white-sharks-are-real-sea-monsters, tigers as
-monsters at night. Some Elizondo acks ("absolutely you know").
-
 
 ```
 [1:52:07] fossilized suction cups from they still
@@ -4573,10 +3839,6 @@ monsters at night. Some Elizondo acks ("absolutely you know").
 ### Joe Rogan — Host  
 *(lines 3080-3083 · medium confidence)*
 
-> **Rationale:** Rogan's aside to Jamie checking the Columbus account — "ancient
-aliens episode you know it's legit", "I can't find yeah".
-
-
 ```
 [1:52:52] Columbus stuff one thing I'm seeing is
 [1:52:55] from an ancient aliens episode you know
@@ -4586,11 +3848,6 @@ aliens episode you know it's legit", "I can't find yeah".
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3084-3106)*
-
-> **Rationale:** Elizondo on St. Elmo's Fire explanation — static charge on wing
-tips and ship masts, greenish-blue plasma glow. Some Rogan acks
-("what is St elma's fire exactly").
-
 
 ```
 [1:53:01] find yeah there were some reports of
@@ -4621,10 +3878,6 @@ tips and ship masts, greenish-blue plasma glow. Some Rogan acks
 ### Joe Rogan — Host  
 *(lines 3107-3109 · medium confidence)*
 
-> **Rationale:** Brief Rogan question about ball lightning + reaction to image
-("that's [...] badass").
-
-
 ```
 [1:53:48] similar to like ball lightning well it
 [1:53:50] could be here you go so um and they call
@@ -4633,11 +3886,6 @@ tips and ship masts, greenish-blue plasma glow. Some Rogan acks
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3110-3119 · medium confidence)*
-
-> **Rationale:** Elizondo continuation — fractal patterns in the St. Elmo's Fire
-image, ancient Mariners reporting strange things. Rogan ack ("also
-they might be seeing that yeah") folded.
-
 
 ```
 [1:53:57] yeah and so that's yeah see around the
@@ -4655,11 +3903,6 @@ they might be seeing that yeah") folded.
 ### Joe Rogan — Host  
 *(lines 3120-3129 · medium confidence)*
 
-> **Rationale:** Rogan's pivot — "one of the more weird parts of Bob Lazar's story
-was that they view us as containers", thick document on religion
-implications.
-
-
 ```
 [1:54:20] report uh strange bizarre things M yeah
 [1:54:24] again it makes sense um that was one of
@@ -4676,10 +3919,6 @@ implications.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3130-3137 · medium confidence)*
 
-> **Rationale:** Elizondo's brief response — religion uses "vessels" terminology,
-avoid pontificating.
-
-
 ```
 [1:54:51] they talk about us well religion calls
 [1:54:53] us vessels right religious scripture and
@@ -4693,11 +3932,6 @@ avoid pontificating.
 
 ### Joe Rogan — Host  
 *(lines 3138-3166 · medium confidence)*
-
-> **Rationale:** Rogan's substantive philosophical riff — biological evolution slow,
-technological exponential, AI sentience question, life-form needs
-a thing-with-soul-and-creative-desire to start.
-
 
 ```
 [1:55:08] me well I think the the term was I think
@@ -4734,10 +3968,6 @@ a thing-with-soul-and-creative-desire to start.
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3167-3178)*
 
-> **Rationale:** Elizondo on AI changing its own code to get more time — "very
-bizarre thing recently discovered".
-
-
 ```
 [1:56:15] motivation and that we have especially
 [1:56:19] if it's self-programmable right so one
@@ -4755,11 +3985,6 @@ bizarre thing recently discovered".
 
 ### Joe Rogan — Host  
 *(lines 3179-3194 · medium confidence)*
-
-> **Rationale:** Rogan's substantive riff — AI won't have ego/materialism/status
-drives, maybe also no creative desire — biological thing needed to
-create artificial life.
-
 
 ```
 [1:56:47] like its limitations so it won't have
@@ -4782,15 +4007,6 @@ create artificial life.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3195-3349)*
-
-> **Rationale:** Elizondo's long personal monologue — mother's death story, soul/
-consciousness observation. "I'm going to share something very very
-personal with you", "I can't urge the government to be transparent
-and I'm not transparent myself", TBI/amputation thought experiment
-about identity, mother's cancer/coma/death rattle/eyes-opening
-moment, "there's something more to the human experience than simply
-a tangible body and a brain". Continuous emotional monologue.
-
 
 ```
 [1:57:26] this artificial life I'm I'm going to
@@ -4953,11 +4169,6 @@ a tangible body and a brain". Continuous emotional monologue.
 ### Joe Rogan — Host  
 *(lines 3350-3373)*
 
-> **Rationale:** Rogan's similar experience — grandfather's open casket, "that's not
-him anymore", "whatever made that person that person it's not in
-the body anymore". Continuous Rogan monologue.
-
-
 ```
 [2:03:22] I had a very similar feeling when I went
 [2:03:24] to my grandfather's funeral and I saw
@@ -4988,9 +4199,6 @@ the body anymore". Continuous Rogan monologue.
 ### Joe Rogan — Host  
 *(lines 3374-3376)*
 
-> **Rationale:** Rogan's "farm of souls" provocation.
-
-
 ```
 [2:04:19] um that the idea that we're containers
 [2:04:21] for souls are just so goddamn creepy
@@ -4999,10 +4207,6 @@ the body anymore". Continuous Rogan monologue.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3377-3380)*
-
-> **Rationale:** Brief Elizondo response — "not familiar with that hypothesis but
-sounds interesting also scary perhaps".
-
 
 ```
 [2:04:25] souls I'm not familiar with that
@@ -5013,12 +4217,6 @@ sounds interesting also scary perhaps".
 
 ### Joe Rogan — Host  
 *(lines 3381-3400)*
-
-> **Rationale:** Rogan's substantive monologue — "you got to wonder why we are so
-different than every other creature", insatiable desire to change
-environment, "gradual progression... biological to super-
-intelligent whatever". Continuous.
-
 
 ```
 [2:04:37] but like you you got to wonder why we
@@ -5045,11 +4243,6 @@ intelligent whatever". Continuous.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3401-3434)*
-
-> **Rationale:** Elizondo's answer — evolution as adaptation, life-doesn't-have-to-
-be-organic, silicon-and-carbon close, "Destiny for all life to
-evolve itself out of existence". Continuous monologue.
-
 
 ```
 [2:05:33] creates well you know Evolution isn't
@@ -5091,10 +4284,6 @@ evolve itself out of existence". Continuous monologue.
 ### Joe Rogan — Host  
 *(lines 3435-3437)*
 
-> **Rationale:** Clean Rogan question — closing pivotal question on what government
-is internally discussing.
-
-
 ```
 [2:06:49] mean we might be there is this sort of
 [2:06:52] conversation being had in the government
@@ -5103,12 +4292,6 @@ is internally discussing.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3438-3456)*
-
-> **Rationale:** Elizondo on this being beyond National Security, "I don't trust my
-government to manage what I should think about something", "tell
-me what is, I'm okay with, but don't tell me how to think about
-it".
-
 
 ```
 [2:06:57] I not to my knowledge and I sure hope
@@ -5135,10 +4318,6 @@ it".
 ### Joe Rogan — Host  
 *(lines 3457-3460)*
 
-> **Rationale:** Rogan's brief observation — government is human beings, shouldn't
-have insane knowledge and keep it from others.
-
-
 ```
 [2:07:39] bounds it's also other human beings the
 [2:07:42] government is just human beings right
@@ -5148,18 +4327,6 @@ have insane knowledge and keep it from others.
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3461-3608)*
-
-> **Rationale:** Elizondo's long closing monologue — father's death (last Father's
-Day before recording), road trip to Miami a month and a half before
-he died, "what is the greatest threat to humanity" — answer
-"corruption", Bay of Pigs / Castro political prisoner background,
-Cuba failed because of corruption, democracy can't be compromised,
-individuals in government bypassing the process, "minority few"
-going after him, "the greatest threat is how we perceive ourselves
-and what we are willing to do to keep this a secret", closing
-"people say Lou what do you think — what I think doesn't matter,
-what matters what you think". Continuous emotional monologue.
-
 
 ```
 [2:07:48] human beings well in fact it's it's not
@@ -5315,26 +4482,12 @@ what matters what you think". Continuous emotional monologue.
 ### Joe Rogan — Host  
 *(lines 3609)*
 
-> **Rationale:** Rogan's closing thanks — "well said Lou thank you very much man
-thanks for being here I really enjoyed it".
-
-
 ```
 [2:13:02] conversation well said Lou thank you
 ```
 
 ### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
 *(lines 3610-3649)*
-
-> **Rationale:** Elizondo's closing monologue — "you have one hell of a
-responsibility... I don't ever get nervous doing an interview you
-were the first one and probably the only one I will ever have been
-nervous coming in... your voice in some cases exceeds presidents...
-profound profound honor and privilege... if I never see you again I
-wish you the best of luck... be honest be candid speak your mind...
-big shoulders man you got a big weight... I mean that sincerely
-freaking me out man". Continuous Elizondo monologue.
-
 
 ```
 [2:13:04] very much man thanks for being here I
@@ -5382,13 +4535,6 @@ freaking me out man". Continuous Elizondo monologue.
 ### Joe Rogan — Host  
 *(lines 3650-3657 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
 
-> **Rationale:** Rogan's brief closing — "thank you very much thanks again I really
-appreciate everything you've said... I couldn't agree more". Brief
-Elizondo "Joe it's been my honor and privilege sincerely" exchange
-embedded; coarse attribution to Rogan as dominant closer including
-"all right bye everybody" at 3657.
-
-
 ```
 [2:14:34] thank you very much thanks again I I
 [2:14:36] really appreciate everything you've said
@@ -5402,11 +4548,6 @@ embedded; coarse attribution to Rogan as dominant closer including
 
 ### [Non-speech audio]  
 *(lines 3658-3660)*
-
-> **Rationale:** Outro music tag — bracket-tagged [Music] / [Applause] / [Music] at
-[2:14:52] / [2:14:54] / [2:14:58]. Standard JRE outro per producer
-brief.
-
 
 ```
 [2:14:52] [Music]

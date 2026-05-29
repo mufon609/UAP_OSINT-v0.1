@@ -18,8 +18,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1-55)*
 
-> **Rationale:** Host introduction monologue ("we're very pleased to have with us somebody to talk about fairies"), biographical framing of the guest, and the opening question handed to "Jim" ("you may want to start the ball rolling by giving us some examples of that from history and present").
-
 ```
 [00:00] Right, so, we're very pleased to have with us somebody to talk about fairies,
 [00:11] devas, and unidentified aerial phenomena.
@@ -80,8 +78,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 56-301)*
-
-> **Rationale:** Guest opens his answer ("A little bit, yes. So, thank you. I'm going to talk through some slides very quickly"). Long slide-driven monologue through cave art, entoptics and shamanic transformation. The embedded first-person voices (smoke-signal exchange, "Have you tried it?") are Ryder recounting / dramatising, not separate live speakers — reported speech stays with the reporting speaker.
 
 ```
 [04:05] A little bit, yes. So, thank you.
@@ -335,8 +331,6 @@
 ### Lawrence — Moderator/host  
 *(lines 302-305)*
 
-> **Rationale:** Substantive interjected question from the host ("But doesn't entoptic actually mean that the effect of the drawing on you causes chemicals in the brain to secrete, so it could be argued that it's a chemical phenomenon?"). Ryder's next turn opens "to your question there", confirming a question was just asked.
-
 ```
 [16:07] But doesn't entoptic actually mean
 [16:09] that the effect of the drawing on you
@@ -346,8 +340,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 306-507 · medium confidence)*
-
-> **Rationale:** Ryder resumes ("Yes, and in fact, that's what they think, to your question there") — the explicit answer-marker confirms the boundary at 305/306. Continues through Middle Ages / Joan of Arc / Lourdes / Fatima, Graham Hancock drug drawings, DNA, methods of inducing the state. Marked medium (not high) because the single substantive host question at 302-305 sits inside this otherwise-continuous span and Ryder's closing lines (498-507) drift toward the host's interpretive register before the clean handback at 508.
 
 ```
 [16:17] Yes, and in fact, that's what they think,
@@ -557,8 +549,6 @@
 ### Lawrence — Moderator/host  
 *(lines 508-516)*
 
-> **Rationale:** Host question ("So how does this relate, then, to the way that the drawings that we've seen from 40,000 years ago? ... some of them just seem like strange monsters and extraterrestrials.").
-
 ```
 [25:27] So how does this relate, then,
 [25:30] to the way that the drawings that we've seen
@@ -573,8 +563,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 517-650)*
-
-> **Rationale:** Ryder answers ("Yeah. The answer to that is that these things allow one to get into a different state of mind"). Crop circles, the guarded ranch, orbs in old photographs, the York pub photos, ending "So you go, okay, it's not digital cameras. We see those just fine."
 
 ```
 [25:51] Yeah.
@@ -716,8 +704,6 @@
 ### Lawrence — Moderator/host  
 *(lines 651-685)*
 
-> **Rationale:** Register shift to the host's "ageless wisdom" framing ("as the veils are starting to thin... are the phenomena of crop circles to do with extraterrestrials... Jung would probably say...") culminating in a direct question to the guest ("What are your thoughts as far as alien abductions and UFOs? ... How do you see that?").
-
 ```
 [31:22] So the direction that we are,
 [31:27] I suppose, moving in that whatever means
@@ -758,8 +744,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 686-740)*
-
-> **Rationale:** Ryder answers ("Since these have always been seen for 40,000 years... are these really induced? Are they by man? Or do they really exist?"). Earthquake-lights slide; closes addressing the host by name ("And as you mentioned, Lawrence, there's all these things over UFOs... We'll talk about what those things might be.").
 
 ```
 [32:44] Since these have always been seen
@@ -822,8 +806,6 @@
 ### Lawrence — Moderator/host  
 *(lines 741-780)*
 
-> **Rationale:** Host interpretive register (Storm and Tornado Research Organization, electromagnetic vortices, fractal patterns, "as we discussed that electricity is alive", crop circles "created by divas", "the part of the plan", "under various guiding forces") ending with a question to the guest ("What do you think of that? Shall I throw that theory away?").
-
 ```
 [34:55] So as far as earthquake lights,
 [34:58] lightning sculpting mountains,
@@ -869,8 +851,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 781-839)*
-
-> **Rationale:** Ryder answers ("No, you won't throw that theory away. That's one of the big problems in all this"). Orbs: Code 5, fluorescence vs reflection, ending "And the answer is it doesn't. So it becomes very, very different questions."
 
 ```
 [36:44] No, you won't throw that theory away.
@@ -937,8 +917,6 @@
 ### Lawrence — Moderator/host  
 *(lines 840-846)*
 
-> **Rationale:** Second-person address plus the host's signature register ("You also mentioned to me in the past about violet orbs... in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ.").
-
 ```
 [39:17] You also mentioned to me in the past
 [39:20] about violet orbs,
@@ -951,8 +929,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 847-888)*
-
-> **Rationale:** Ryder answers ("They're a little hard to see on these pictures... orbs are consistently... violet"); the ranch couple's encounter with two violet orbs, ending "so there's studies going on to study that kind of communication and what's really there."
 
 ```
 [39:34] They're a little hard to see on these pictures,
@@ -1002,8 +978,6 @@
 ### Lawrence — Moderator/host  
 *(lines 889-903)*
 
-> **Rationale:** Host question ("You'd have thought that some kind of experiment could be set up quite easily... to confirm the reality of orbs... or is that not the case?").
-
 ```
 [40:59] You'd have thought that
 [41:02] some kind of experiment
@@ -1024,8 +998,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 904-942)*
-
-> **Rationale:** Ryder answers ("They seem to be directable by what I was mentioning with communication"). Infrared/UV bedroom experiment, airflow detectors, ending "So in the case of orbs, that's one line of investigation."
 
 ```
 [41:40] They seem to be directable
@@ -1072,8 +1044,6 @@
 ### Lawrence — Moderator/host  
 *(lines 943-952 · medium confidence)*
 
-> **Rationale:** Host pivots and asks ("But when it comes to UFOs and extraterrestrials, just to sort of wrap that one up, do you think that this is all DVIC activity? I know you had an example of the scientists in, was it Rendell Forest?"). The bare "Yeah" at 948 reads as the host confirming his own recollection between the question and his follow-on framing ("And I think that's just a very good example of how cultural conditioning can fool the senses"); treated as glue inside this host turn rather than a separate Ryder ack. Medium because of that one-word ambiguity.
-
 ```
 [43:14] But when it comes to UFOs and extraterrestrials,
 [43:17] just to sort of wrap that one up,
@@ -1089,8 +1059,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 953-978)*
-
-> **Rationale:** Ryder answers ("Yes, it's a forest incident. It goes back in England"). Frames the two drawings and the photograph, "they were convinced... they did feel metal. There was, quote, a ship there."
 
 ```
 [43:43] Yes, it's a forest incident.
@@ -1124,8 +1092,6 @@
 ### Lawrence — Moderator/host  
 *(lines 979-980 · medium confidence)*
 
-> **Rationale:** Short host clarifying question ("Just to set the scene, they were working in a laboratory?"). Medium: rapid two-line exchange resolved by the immediate correction in the next turn.
-
 ```
 [44:33] Just to set the scene,
 [44:34] they were working in a laboratory?
@@ -1133,8 +1099,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 981-982 · medium confidence)*
-
-> **Rationale:** Ryder corrects the host ("Oh, that's right. Working in a forest."). Medium: micro-turn inside a fast back-and-forth.
 
 ```
 [44:36] Oh, that's right.
@@ -1144,16 +1108,12 @@
 ### Lawrence — Moderator/host  
 *(lines 983 · medium confidence)*
 
-> **Rationale:** Host accepts the correction ("In a forest, yeah."). One-line ack attributed to the host who raised the laboratory/forest point; medium given the rapid alternation.
-
 ```
 [44:38] In a forest, yeah.
 ```
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 984-991)*
-
-> **Rationale:** Ryder resumes the narrative ("Where the investigators were sent to really go study it... they did see a bright object... and reported it was metal.").
 
 ```
 [44:39] Where the investigators were sent
@@ -1169,8 +1129,6 @@
 ### Lawrence — Moderator/host  
 *(lines 992 · medium confidence)*
 
-> **Rationale:** Host incredulous question ("These were scientists?"). Medium: single short interrogative in a fast exchange.
-
 ```
 [44:56] These were scientists?
 ```
@@ -1178,16 +1136,12 @@
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 993 · medium confidence)*
 
-> **Rationale:** Ryder answers ("These are highly trained technical people."). Medium: one-line answer between two host turns.
-
 ```
 [44:58] These are highly trained technical people.
 ```
 
 ### Lawrence — Moderator/host  
 *(lines 994-999 · medium confidence)*
-
-> **Rationale:** Host pushes back ("They just sound a little bit silly to me... if you saw a bright white... would you go up and touch it?"). Medium: continues the rapid exchange.
 
 ```
 [45:00] They just sound a little bit silly to me.
@@ -1201,8 +1155,6 @@
 ### Speakers — mixed exchange: Lawrence, Dr. James T. Ryder  
 *(lines 1000-1002 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
 
-> **Rationale:** Genuinely ambiguous micro-exchange. "If you're a scientist, yeah. / I might have. / I would get the technicians to do that." can read either as the host answering his own rhetorical "would you go up and touch it?" or as Ryder responding. No name, no register marker resolves it; the surrounding lines flip speaker at 999 (host) and 1003 (Ryder, "No, they did."). Flagged for image verification.
-
 ```
 [45:09] If you're a scientist, yeah.
 [45:12] I might have.
@@ -1211,8 +1163,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1003-1029)*
-
-> **Rationale:** Ryder ("No, they did. What I did in that case is ask the question to the investigators...") — the pressure-not-metal re-investigation, ending "but now we realize that it's not a solid object."
 
 ```
 [45:20] No, they did.
@@ -1247,8 +1197,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1030-1033 · medium confidence)*
 
-> **Rationale:** Host raises the burning point ("I don't know if it occurred in this incident, but certainly in other ones like that, there's been a lot of severe burning through contact with them that you mentioned."). "that you mentioned" addresses the guest, marking this as the host. Medium: brief turn embedded in Ryder-dominant territory.
-
 ```
 [46:18] I don't know if it occurred in this incident,
 [46:22] but certainly in other ones like that,
@@ -1258,8 +1206,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1034-1050)*
-
-> **Rationale:** Ryder ("Yes. There has been, and it's I guess the best I can say that the technical scientific world does not know what to do with it..."). Trails forward to the Max Planck / leading-scientists preview, "very close to the ageless wisdom actually."
 
 ```
 [46:28] Yes.
@@ -1283,8 +1229,6 @@
 
 ### Lawrence — Moderator/host  
 *(lines 1051-1068 · medium confidence)*
-
-> **Rationale:** Register shifts to the host's interpretive voice ("But to my mind anyway, the whole idea of explaining through some form of panpsychism... the diva hierarchies... makes a lot more sense than visitors on the physical plane from Andromeda and Captain Zob of the Galactic Federation"). Medium: the 1050/1051 boundary rests on register, not an explicit cue, and Ryder's preceding "ageless wisdom" mention slightly blurs it. The aside at 1069-1070 is carved out separately.
 
 ```
 [47:11] So we are moving into the era
@@ -1310,8 +1254,6 @@
 ### [Non-conversational content]  
 *(lines 1069-1070 · ⚠ LOW CONFIDENCE)*
 
-> **Rationale:** Unattributable production/audience aside interrupting the host mid-sentence ("Can't hear either of us. / Yell."). Not content from either defined speaker — a request about audibility from someone in the room. Bracketed out so it does not contaminate the host's turn. The "Lada" at line 1068 is a Whisper mishearing of the host's name as he resumes, so it stays with s1.
-
 ```
 [47:58] Can't hear either of us.
 [48:00] Yell.
@@ -1319,8 +1261,6 @@
 
 ### Lawrence — Moderator/host  
 *(lines 1071-1098)*
-
-> **Rationale:** Host resumes the ageless-wisdom argument after the audibility aside ("Apart from anything else that's the idea of extraterrestrials on the physical plane... each logos has a ring past knot... the whole idea of hostile aliens abducting people... just seems wrong from that point of view"), handing back to the guest ("But the alien abductions, I think you've got something to say about.").
 
 ```
 [48:03] Apart from anything else that's
@@ -1355,8 +1295,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1099-1183)*
-
-> **Rationale:** Ryder answers ("Probably always, I'm sure many of you have read about abductions"). Sealed-room abduction studies, Jacques Vallee summary ("the UFOs are not objects nor flying"), Old Testament / chariots / medieval magicians, ending "many religions today that have been founded based on these interactions." The rhetorical self-questions ("What, the burning bush? Certain angel encounters?") are Ryder's own and stay in this turn.
 
 ```
 [49:23] Probably always, I'm sure many of you
@@ -1449,8 +1387,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1184-1212)*
 
-> **Rationale:** Host managing the room ("It's like telling ghost stories a little bit... Who's in the back?... Can we hang on a minute please, Rosemary? We can do this after the meditation... we're running out of time already") then raising the next topic ("Another example is Russian and American jets scrambling... was not really possible within our..."), trailing off into Ryder's completion. The deferred audience question (Rosemary, "a question over there") is narrated by the host, not a spoken audience turn, so no separate speaker is created.
-
 ```
 [52:46] I think another example,
 [52:49] I remember you,
@@ -1486,8 +1422,6 @@
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1213-1223 · medium confidence)*
 
-> **Rationale:** Ryder completes the host's trailed-off sentence and takes over ("It is not. What he's referring to, there is an incident some years ago where the US fighters and the Russian fighters chased after the same object..."). "What he's referring to" marks the third-person reference to the host. Medium: the 1212/1213 handoff is a sentence-completion rather than a clean turn boundary.
-
 ```
 [53:51] It is not.
 [53:52] What he's referring to,
@@ -1505,8 +1439,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1224-1234)*
 
-> **Rationale:** Host question ("What about the phenomena on top... these sprites and dwarves and flashes of light above thunderstorms... Do you think that's a recent phenomena... I mean, it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist.").
-
 ```
 [54:14] What about the phenomena on top
 [54:16] that I think fairly recently,
@@ -1523,8 +1455,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1235-1262)*
-
-> **Rationale:** Ryder answers ("Well, same difference, yeah. I don't have good pictures on it, but what Lauren's asking is...") — the third-person "what Lauren's asking" (Whisper rendering of the host's name) confirms the speaker. High-resolution satellites, sprites, the atmosphere "moving like a river", the stars-forming announcement.
 
 ```
 [54:43] Well, same difference, yeah.
@@ -1560,8 +1490,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1263-1265)*
 
-> **Rationale:** Host offering the term ("Well, a sort of acknowledgment of that, which I presume you're talking about, a sort of Birkeland current.").
-
 ```
 [56:02] Well, a sort of acknowledgment of that,
 [56:04] which I presume you're talking about,
@@ -1570,8 +1498,6 @@
 
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1266-1310)*
-
-> **Rationale:** Ryder confirms and continues ("They are essentially Birkeland currents, and that term is being used because Birkeland was a physicist who did that"). The "study of absurdity", the clock-with-no-hands UFO encounter ("that's because time is not"), ending "It's like an interaction between you and some others."
 
 ```
 [56:08] They are essentially Birkeland currents,
@@ -1624,8 +1550,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1311-1353)*
 
-> **Rationale:** Host wrap-up ("That's an interesting topic to explore about actual communication, and I think it will lead us on after... for those of you who do have the opportunity to stay... the role that discrimination is going to be needed... the battle between science and pseudoscience... the electromagnetic interpretation... after the meditation") closing the session ("But at this point, to keep to the time schedule, we'll thank Jim very much, and then we'll have our meditation.").
-
 ```
 [58:05] That's an interesting topic to explore
 [58:08] about actual communication,
@@ -1675,8 +1599,6 @@
 ### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
 *(lines 1354-1380)*
 
-> **Rationale:** Ryder interrupts the close to make one last slide point ("Before you do that, let me do one thing. Upper left, you remember that picture?"). The deva/fairy drawings with narrow eyes and chin, the Hancock drug-induced drawing, ending "what are we really dealing with when we see these kinds of things?"
-
 ```
 [59:55] Before you do that, let me do one thing.
 [59:57] Upper left, you remember that picture?
@@ -1710,8 +1632,6 @@
 ### Lawrence — Moderator/host  
 *(lines 1381-1382)*
 
-> **Rationale:** Host's final close ("Okay, well, for part one anyway, Jim, thank you very much.") — direct address by name, terminal thanks.
-
 ```
 [60:57] Okay, well, for part one anyway,
 [60:59] Jim, thank you very much.
@@ -1726,4 +1646,3 @@ Turns whose `needs_image_verification: true` flag was resolved against `sources/
 | Turn lines | Resolution | Resolved speaker | Resolved by |
 |---|---|---|---|
 | `1000-1002` | ambiguous | `s1, s2` | contributor |
-|  | | | Both speakers are on-camera through the [45:08]-[45:16] cross-talk window, so the stills can't resolve who speaks each line; the mixed exchange stands. |

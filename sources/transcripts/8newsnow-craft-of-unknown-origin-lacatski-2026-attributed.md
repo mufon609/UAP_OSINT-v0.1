@@ -19,15 +19,6 @@
 ### [Non-conversational content]  
 *(lines 1-8)*
 
-> **Rationale:** File header metadata block emitted by the YouTube transcript downloader
-(markdown title, source URL, video ID, downloaded date, "---" separator
-and surrounding blank lines). Not speech content; not attributable to
-any live in-room speaker; not a recited document, archival clip, music
-tag, or any other foreign-* sub-kind. Classified foreign-other per
-schema foreign_kind_values "clearly non-conversational, doesn't fit
-above".
-
-
 ```
 # YouTube Transcript — 8newsnow-craft-of-unknown-origin-lacatski-2026
 
@@ -41,16 +32,6 @@ Downloaded: 2026-05-17
 
 ### KLAS Studio Anchor — 8 News Now studio anchor (lead-in + handoff)  
 *(lines 9-20)*
-
-> **Rationale:** KLAS studio-anchor scripted lead-in framing the segment. Third-person
-register about Lacatski ("A US intelligence official... has confirmed",
-"Dr. James Lacatski adds...") and explicit third-person reference to
-Knapp ("Lacatski spoke exclusively with our chief investigator George
-Knapp"). Line 19 transitions into the anchor's conversational handoff
-("Yeah,"), with line 20 completing the on-air handoff to Knapp ("we're
-overdue for some UFO news, right?"). Standard TV news-package anchor-
-intro pattern.
-
 
 ```
 [0:01] A US intelligence official who designed
@@ -70,15 +51,6 @@ intro pattern.
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 21-31)*
 
-> **Rationale:** Knapp's reporter-package voiceover opens. Third-person framing of
-Lacatski ("Some of our viewers might remember the name James Lacatski,
-an analyst and nuclear engineer who worked for the DIA... oversaw a
-program called AATIP, based here in Las Vegas... Dr. Lacatski has been
-authorized to spill some of these deep dark secrets"). Reporter's Las-
-Vegas-station "based here" plus the present-tense package framing
-identify Knapp as the voiceover narrator.
-
-
 ```
 [0:30] Some of our viewers might remember the
 [0:31] name James Lacatski, an analyst and
@@ -96,14 +68,6 @@ identify Knapp as the voiceover narrator.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 32-37)*
 
-> **Rationale:** Lacatski interview clip. First-person subject voice describing his own
-work and a prior meeting with Knapp ("Reducing 30,000 pages of analyst
-photos and information and logs... that was a tough job. So, when I
-first met you, I could only give you a very top-level view of what we
-had done"). The "you" addressed is Knapp; "we" is the AATIP/AAWSAP
-team — both consistent with Lacatski's voice.
-
-
 ```
 [0:53] Reducing 30,000 pages of analyst photos
 [0:57] and information and logs and and
@@ -115,21 +79,6 @@ team — both consistent with Lacatski's voice.
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 38-63 · medium confidence)*
-
-> **Rationale:** Knapp narration resumes mid-line at line 38 ("done. The first time Dr.
-James Lacatski..."), then runs as continuous voiceover through line 63.
-Covers AATIP history (March 2018 Reid meeting, NYT 2017 disclosure, DIA
-authorization, Bigelow Aerospace subcontractor, 27-month run, 100+
-reports). Line 38 is contested: Lacatski's sentence-completion ("done.")
-vs. Knapp's narration onset ("The first time Dr. James Lacatski") —
-Knapp dominates by length, so line 38 assigned to Knapp per Rule 1
-(atomic-line / dominant-content). Line 63 ends with Knapp's interview
-question setup ("Then it didn't go off track into the paranormal. It
-was from") — still s1, role-shift narration → on-camera question is
-internal to Knapp, not a speaker change. Medium confidence reflects the
-mid-line boundary at 38 and the role-shift narration → question without
-a hard cue.
-
 
 ```
 [1:12] done. The first time Dr. James Lacatski
@@ -163,12 +112,6 @@ a hard cue.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 64-66)*
 
-> **Rationale:** Lacatski's interview answer. Picks up from Knapp's question with first-
-person program framing ("It was to / to investigate the paranormal as
-being / the umbrella over UFOs right from the"). Direct continuation of
-the question/answer exchange; subject-matter expert voice.
-
-
 ```
 [2:16] It was to
 [2:17] to investigate the paranormal as being
@@ -177,15 +120,6 @@ the question/answer exchange; subject-matter expert voice.
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 67-69 · medium confidence)*
-
-> **Rationale:** Knapp follow-up interview question. Line 67 is contested: Lacatski's
-sentence-end ("get-go.") then Knapp's next question ("And your bosses
-knew that from"). Knapp dominates line 67 by length and is the speaker
-of the question's continuation on 68-69 ("the beginning. They knew it
-was going to / get here."). Second-person "your bosses" addressed to
-Lacatski confirms this is Knapp's question, not Lacatski's continued
-answer. Medium confidence due to the mid-line transition at 67.
-
 
 ```
 [2:23] get-go. And your bosses knew that from
@@ -196,13 +130,6 @@ answer. Medium confidence due to the mid-line transition at 67.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 70-73)*
 
-> **Rationale:** Lacatski's confirmation answer. The line 70 auto-caption emits a ">>"
-speaker-change marker (">> from the beginning."), unambiguously
-flagging the turn boundary back to Lacatski. He continues through 71-73
-("Uh they were concerned from the beginning about the the leak, but we
-never had a a leak."). First-person "we" = the AATIP/AAWSAP team.
-
-
 ```
 [2:28] >> from the beginning.
 [2:29] Uh they were concerned from the
@@ -212,17 +139,6 @@ never had a a leak."). First-person "we" = the AATIP/AAWSAP team.
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 74-81 · medium confidence)*
-
-> **Rationale:** Knapp narration resumes. Line 74 is contested: Lacatski's tail ("Uh
-not at all.") then Knapp's narration onset ("Lacatski and a DIA").
-Knapp narration dominates by length, so line 74 assigned to Knapp per
-Rule 1. Narration arc covers Lacatski + Jay Stratton motivation, UFO
-reports over US military assets, and Skinwalker Ranch context. Line 81
-ends with another mid-line transition: Knapp's "known as Skinwalker
-Ranch." (narration) then "He's got" (archival voice start). Knapp's
-portion of line 81 dominates by length, so line 81 stays with Knapp.
-Medium confidence reflects the contested lines 74 and 81.
-
 
 ```
 [2:36] Uh not at all. Lacatski and a DIA
@@ -238,18 +154,6 @@ Medium confidence reflects the contested lines 74 and 81.
 ### [Archival recording]  
 *(lines 82 · medium confidence)*
 
-> **Rationale:** Disjoint single-line content describing a creature's anatomy ("three
-big toes and one at the back."). Topic and register break sharply from
-both Knapp's adjacent narration ("Skinwalker Ranch" / "Creatures,
-animal mutilations") and the package's interview clips. Reads as an
-embedded archival clip — almost certainly a fragment of prior 8 News
-Now / Mystery Wire reporting on Skinwalker Ranch creature sightings,
-cut in as a brief evidentiary illustration. Author is NOT a live in-
-room speaker on this package; flagged foreign-archival per schema
-("embedded recording from a different context"). Medium confidence
-because the archival source identity cannot be pinned from the text
-alone; image/audio verification could confirm the cut-in.
-
 > **Recited source:** Unidentified prior 8 News Now / Mystery Wire Skinwalker Ranch report;
 Skinwalker-creature-anatomy fragment. Exact provenance not surfaced in
 this transcript's metadata.
@@ -261,16 +165,6 @@ this transcript's metadata.
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 83-95 · medium confidence)*
-
-> **Rationale:** Knapp narration resumes immediately after the archival cut-in
-("Creatures, animal mutilations, poltergeist or trickster-type
-activities..."). Covers Skinwalker phenomena list, Lacatski's own ranch
-visit, the paranormal-umbrella thesis, and the Future Visions book
-setup. Line 95 is contested: Knapp narration ("about AATIP, Future
-Visions.") then Lacatski clip onset ("That's the") — Knapp dominates
-by length, so line 95 stays with Knapp per Rule 1. Medium confidence
-reflects the contested boundary at line 95.
-
 
 ```
 [2:58] Creatures, animal mutilations,
@@ -291,15 +185,6 @@ reflects the contested boundary at line 95.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 96-99)*
 
-> **Rationale:** Lacatski interview clip framing the AAWSAP/AATIP investigation thesis:
-"purpose of the government effort was to look into is there is there
-something really there, especially in the paranormal umbrella. And the
-answer is absolutely yes." First-person framing of program purpose;
-subject-matter expert voice. Clean clip boundaries handled at line 95
-(Knapp dominates) and line 100 (Knapp dominates), leaving 96-99
-wholly Lacatski.
-
-
 ```
 [3:28] purpose of the government effort was to
 [3:31] look into is there is there something
@@ -309,20 +194,6 @@ wholly Lacatski.
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 100-113 · medium confidence)*
-
-> **Rationale:** Knapp narration continues. Line 100 is contested: Lacatski clip tail
-("absolutely yes.") then Knapp onset ("Members of Congress and") —
-Knapp dominates by length, so line 100 assigned to Knapp per Rule 1.
-Arc covers members-of-Congress / legacy-programs framing, the Area-51-
-1989 frame, the prior-book disclosure pivot ("In a previous book,
-Lacatski was authorized to say in very brief terms that the government
-does possess at least one advanced craft of unknown origin"), and the
-"even larger questions" setup of the next Lacatski clip. Line 113 is
-contested: Knapp narration tail ("even larger questions.") then
-Lacatski clip onset ("You could have") — Knapp's portion dominates by
-length, so line 113 stays with Knapp. Medium confidence reflects the
-mid-line boundaries at 100 and 113.
-
 
 ```
 [3:39] absolutely yes. Members of Congress and
@@ -344,17 +215,6 @@ mid-line boundaries at 100 and 113.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 114-125)*
 
-> **Rationale:** Lacatski interview clip continues from line 114 ("craft, you could
-have bodies, it wouldn't necessarily tell you where they're from, why
-they're here, what their their plan is. Nope, it it wouldn't, and
-that's part of the of the story... if there was an alien intelligence,
-which some people think is behind all of this, they must be shaking
-their heads in frustration cuz we move like a snail. And maybe at
-times we even go backwards."). First-person speculative reflection;
-Lacatski's voice continuous through line 125 ("times we even go
-backwards.").
-
-
 ```
 [4:14] craft, you could have bodies, it
 [4:17] wouldn't necessarily tell you where
@@ -373,15 +233,6 @@ backwards.").
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 126-127 · medium confidence)*
 
-> **Rationale:** Knapp narration resumes with the signoff arc opener: "This is Dr.
-Lacatski's fourth and final / book based on the AATIP files." Line 127
-is contested at the end: Knapp narration tail ("book based on the
-AATIP files.") then Lacatski clip onset ("I was") — Knapp dominates
-line 127 by length, so it stays with Knapp per Rule 1. The Lacatski
-first-person attribution clip itself lands on line 128 (next turn).
-Medium confidence reflects the mid-line boundary at 127.
-
-
 ```
 [4:44] This is Dr. Lacatski's fourth and final
 [4:46] book based on the AATIP files. I was
@@ -390,45 +241,12 @@ Medium confidence reflects the mid-line boundary at 127.
 ### James Lacatski ([/people/james-lacatski](/people/james-lacatski)) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager)  
 *(lines 128 · medium confidence)*
 
-> **Rationale:** Brief Lacatski clip cut into the signoff narration: "co-author on two
-of those along with Dr." First-person voice belongs to Lacatski, the
-known co-author with Colm Kelleher of two prior AATIP-era books
-(Skinwalkers at the Pentagon; Inside the US Government's Covert UFO
-Program). The clip's full sentence ("I was co-author on two of those
-along with Dr. Colm Kelleher") spans lines 127-129 but per Rule 1
-atomic-line discipline only line 128 is wholly Lacatski-dominant; the
-"I was" onset on 127 is held by Knapp's longer narration there and the
-"Colm Kelleher." tail on 129 is held by Knapp's longer narration onset.
-Medium confidence reflects the unusually short one-line span produced
-by the dominant-content rule on a clip that sentence-spans three lines.
-
-
 ```
 [4:48] co-author on two of those along with Dr.
 ```
 
 ### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 129-136 · medium confidence)*
-
-> **Rationale:** Knapp narration concludes the package. Line 129 is contested: Lacatski
-clip tail ("Colm Kelleher.") then Knapp narration onset ("Future
-Visions contains") — Knapp dominates by length, so line 129 stays with
-Knapp. Narration covers Future Visions book contents, Skinwalker Ranch
-+ similar locations, "another program that grew out of AATIP," and the
-Mystery Wire interview pointer. Line 136 is contested at the end:
-Knapp's "Mystery Wire site. Back to you." (signoff to anchor) then
-anchor's "Good" (handoff onset) — Knapp dominates line 136 by length,
-so it stays with Knapp. Medium confidence reflects the mid-line
-transitions at 129 and 136.
-
-> **Verifier note:** Range extended from 129-135 to 129-136 per verifier correction.
-Producer's original turn split the boundary at 135/136 but the
-contested-line content ("Mystery Wire site. Back to you. / Good") is
-on line 136, not line 135. The producer's mental model was right
-(Knapp's "Back to you" dominates) but the YAML line number was
-off-by-one. Caught by the content-check-on-both-sides rule (added
-after the 2026-05-28 mysterywire confabulation).
-
 
 ```
 [4:51] Colm Kelleher. Future Visions contains
@@ -444,21 +262,6 @@ after the 2026-05-28 mysterywire confabulation).
 ### KLAS Studio Anchor — 8 News Now studio anchor (lead-in + handoff)  
 *(lines 137-139 · medium confidence)*
 
-> **Rationale:** Studio-anchor handoff close: "Good reading, George. Thanks so much.
-Does it get more interesting [music] than a / George Knapp report?"
-Direct second-person address to Knapp by name ("George"), praise-and-
-handoff register characteristic of the anchor desk close. Line 137
-contains the embedded "[music]" non-speech bracket inside the anchor's
-speech — per Rule 1 the line is dominated by anchor speech, so the
-line is assigned to s3 with the inline music tag noted here rather than
-split out as a separate foreign-music turn. Medium confidence reflects
-the mid-line music tag at 137; speaker identity is consistent anchor
-throughout the span.
-
-> **Verifier note:** Range narrowed from 136-139 to 137-139 per verifier correction
-(see prior turn's verifier_notes).
-
-
 ```
 [5:08] reading, George. Thanks so much. Does it
 [5:09] get more interesting [music] than a
@@ -467,19 +270,6 @@ throughout the span.
 
 ### KLAS Studio Anchor — 8 News Now studio anchor (lead-in + handoff)  
 *(lines 140 · ⚠ LOW CONFIDENCE · ⚠ needs image verification)*
-
-> **Rationale:** Final line ">> hear a pin drop when he's talking." The auto-caption
-">>" prefix marks a speaker change from the prior anchor turn, but no
-name is surfaced. Most plausibly a co-anchor (the original anchor
-addresses Knapp directly on lines 136-139; the ">>" handoff on line 140
-suggests a second voice at the desk weighing in on the segment).
-Provisionally assigned to s3 (KLAS Studio Anchor) since no second-
-anchor identity is surfaced and the register is consistent with the
-anchor desk. Low confidence + needs_image_verification: true because
-audio/image at [5:12] would distinguish co-anchor from same anchor;
-if a second anchor is visible, the verifier can split into a new
-speaker entry.
-
 
 ```
 [5:12] >> hear a pin drop when he's talking.

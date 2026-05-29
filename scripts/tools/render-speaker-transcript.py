@@ -221,8 +221,6 @@ def render_image_verification_block(data):
             f"| `{e['turn_line_range']}` | {e['resolution']} | "
             f"`{sid_disp}` | {e['resolved_by']} |"
         )
-        if e.get("contributor_notes"):
-            out.append(f"|  | | | {e['contributor_notes']} |")
     out.append("")
     return "\n".join(out)
 

@@ -1,6 +1,8 @@
-# Speaker-attribution sibling — produced by the agent-based attribution pipeline
-# (PRODUCER role). Indexes into the source transcript by 1-indexed line range.
-# References only; no transcript text duplicated. Conforms to
+# Speaker-attribution sibling — verified, structured-only. Verification
+# scaffolding (rationale / verifier_notes) was stripped by
+# scripts/build/finalize-attribution.py once the independent verifier
+# passed. Indexes into the source transcript by 1-indexed line range;
+# references only, no transcript text. Conforms to
 # meta/schema-speaker-attribution.yaml.
 
 slug: lucistrust-rending-veils-ryder-2017
@@ -10,442 +12,146 @@ generated_date: 2026-05-29
 producer_session: producer-opus-4.8-1m-2026-05-29
 verification_status: verified
 verifier_session: verifier-opus-4.8-1m-2026-05-29-a16583d770ade68ef
-verifier_notes: >-
-  Independent verifier PASS (separate agent session). Content-checked both
-  sides of every turn boundary against the source; scrutinised all low/medium
-  confidence, foreign-other, and mixed-exchange turns plus a high-confidence
-  sample. No misplaced boundaries, no foreign-kind errors, no separable work
-  skipped in the mixed turn. The one needs_image_verification turn (1000-1002)
-  was resolved via image verification — see image_verification below.
-
 speakers:
-  - id: s1
-    name: Lawrence
-    role: Moderator/host
-    on_camera_role: primary
-    notes: >-
-      Opens with the introduction, frames each question in the Lucis Trust
-      "ageless wisdom" register (etheric veils, divas, the reappearance of
-      the Christ, ring-pass-not), organises the session, manages the room and
-      audience, and closes with "Jim, thank you very much." Addresses the
-      guest as "James" and "Jim"; the guest in turn refers to him as
-      "Lawrence" (line 737) and "Lauren" (line 1237), and a Whisper mishearing
-      renders his name as "Oren" (line 481) and "Lada" (line 1068). All the
-      same host.
-  - id: s2
-    name: Dr. James T. Ryder
-    role: Guest / main speaker
-    node_link: /people/james-ryder
-    on_camera_role: primary
-    notes: >-
-      Retired Vice President of Lockheed Martin Space Systems Company and
-      former head of the Advanced Technology Centre; Chairman of the Board of
-      the International Science Foundation (funds SAFIRE) and the Institute for
-      Venture Science. Delivers the bulk of the runtime as a slide-driven
-      presentation; the host's questions punctuate long monologue spans.
-
+- id: s1
+  name: Lawrence
+  role: Moderator/host
+  on_camera_role: primary
+  notes: Opens with the introduction, frames each question in the Lucis Trust "ageless wisdom" register (etheric veils, divas, the reappearance of the Christ, ring-pass-not), organises the session, manages the room and audience, and closes with "Jim, thank you very much." Addresses the guest as "James" and "Jim"; the guest in turn refers to him as "Lawrence" (line 737) and "Lauren" (line 1237), and a Whisper mishearing renders his name as "Oren" (line 481) and "Lada" (line 1068). All the same host.
+- id: s2
+  name: Dr. James T. Ryder
+  role: Guest / main speaker
+  node_link: /people/james-ryder
+  on_camera_role: primary
+  notes: Retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Centre; Chairman of the Board of the International Science Foundation (funds SAFIRE) and the Institute for Venture Science. Delivers the bulk of the runtime as a slide-driven presentation; the host's questions punctuate long monologue spans.
 turns:
-  # --- Lawrence's introduction + opening question -----------------------------
-  - speaker_id: s1
-    line_range: "1-55"
-    confidence: high
-    rationale: >-
-      Host introduction monologue ("we're very pleased to have with us
-      somebody to talk about fairies"), biographical framing of the guest, and
-      the opening question handed to "Jim" ("you may want to start the ball
-      rolling by giving us some examples of that from history and present").
-
-  # --- Ryder begins the presentation ------------------------------------------
-  - speaker_id: s2
-    line_range: "56-301"
-    confidence: high
-    rationale: >-
-      Guest opens his answer ("A little bit, yes. So, thank you. I'm going to
-      talk through some slides very quickly"). Long slide-driven monologue
-      through cave art, entoptics and shamanic transformation. The embedded
-      first-person voices (smoke-signal exchange, "Have you tried it?") are
-      Ryder recounting / dramatising, not separate live speakers — reported
-      speech stays with the reporting speaker.
-
-  # --- Lawrence interjected question on entoptics ------------------------------
-  - speaker_id: s1
-    line_range: "302-305"
-    confidence: high
-    rationale: >-
-      Substantive interjected question from the host ("But doesn't entoptic
-      actually mean that the effect of the drawing on you causes chemicals in
-      the brain to secrete, so it could be argued that it's a chemical
-      phenomenon?"). Ryder's next turn opens "to your question there",
-      confirming a question was just asked.
-
-  - speaker_id: s2
-    line_range: "306-507"
-    confidence: medium
-    rationale: >-
-      Ryder resumes ("Yes, and in fact, that's what they think, to your
-      question there") — the explicit answer-marker confirms the boundary at
-      305/306. Continues through Middle Ages / Joan of Arc / Lourdes / Fatima,
-      Graham Hancock drug drawings, DNA, methods of inducing the state. Marked
-      medium (not high) because the single substantive host question at
-      302-305 sits inside this otherwise-continuous span and Ryder's closing
-      lines (498-507) drift toward the host's interpretive register before the
-      clean handback at 508.
-
-  # --- Lawrence question: how does this relate to the drawings ----------------
-  - speaker_id: s1
-    line_range: "508-516"
-    confidence: high
-    rationale: >-
-      Host question ("So how does this relate, then, to the way that the
-      drawings that we've seen from 40,000 years ago? ... some of them just
-      seem like strange monsters and extraterrestrials.").
-
-  - speaker_id: s2
-    line_range: "517-650"
-    confidence: high
-    rationale: >-
-      Ryder answers ("Yeah. The answer to that is that these things allow one
-      to get into a different state of mind"). Crop circles, the guarded
-      ranch, orbs in old photographs, the York pub photos, ending "So you go,
-      okay, it's not digital cameras. We see those just fine."
-
-  # --- Lawrence interpretive framing + multi-part question --------------------
-  - speaker_id: s1
-    line_range: "651-685"
-    confidence: high
-    rationale: >-
-      Register shift to the host's "ageless wisdom" framing ("as the veils are
-      starting to thin... are the phenomena of crop circles to do with
-      extraterrestrials... Jung would probably say...") culminating in a
-      direct question to the guest ("What are your thoughts as far as alien
-      abductions and UFOs? ... How do you see that?").
-
-  - speaker_id: s2
-    line_range: "686-740"
-    confidence: high
-    rationale: >-
-      Ryder answers ("Since these have always been seen for 40,000 years...
-      are these really induced? Are they by man? Or do they really exist?").
-      Earthquake-lights slide; closes addressing the host by name ("And as you
-      mentioned, Lawrence, there's all these things over UFOs... We'll talk
-      about what those things might be.").
-
-  # --- Lawrence: electrical/EM interpretation + "What do you think of that?" ---
-  - speaker_id: s1
-    line_range: "741-780"
-    confidence: high
-    rationale: >-
-      Host interpretive register (Storm and Tornado Research Organization,
-      electromagnetic vortices, fractal patterns, "as we discussed that
-      electricity is alive", crop circles "created by divas", "the part of the
-      plan", "under various guiding forces") ending with a question to the
-      guest ("What do you think of that? Shall I throw that theory away?").
-
-  - speaker_id: s2
-    line_range: "781-839"
-    confidence: high
-    rationale: >-
-      Ryder answers ("No, you won't throw that theory away. That's one of the
-      big problems in all this"). Orbs: Code 5, fluorescence vs reflection,
-      ending "And the answer is it doesn't. So it becomes very, very different
-      questions."
-
-  # --- Lawrence: violet orbs / ageless wisdom ---------------------------------
-  - speaker_id: s1
-    line_range: "840-846"
-    confidence: high
-    rationale: >-
-      Second-person address plus the host's signature register ("You also
-      mentioned to me in the past about violet orbs... in light of the ageless
-      wisdom teachings talking about the violet divas accompanying the
-      reappearance of the Christ.").
-
-  - speaker_id: s2
-    line_range: "847-888"
-    confidence: high
-    rationale: >-
-      Ryder answers ("They're a little hard to see on these pictures... orbs
-      are consistently... violet"); the ranch couple's encounter with two
-      violet orbs, ending "so there's studies going on to study that kind of
-      communication and what's really there."
-
-  # --- Lawrence: could you set up an experiment? ------------------------------
-  - speaker_id: s1
-    line_range: "889-903"
-    confidence: high
-    rationale: >-
-      Host question ("You'd have thought that some kind of experiment could be
-      set up quite easily... to confirm the reality of orbs... or is that not
-      the case?").
-
-  - speaker_id: s2
-    line_range: "904-942"
-    confidence: high
-    rationale: >-
-      Ryder answers ("They seem to be directable by what I was mentioning with
-      communication"). Infrared/UV bedroom experiment, airflow detectors,
-      ending "So in the case of orbs, that's one line of investigation."
-
-  # --- Rapid alternation: Rendlesham / forest incident ------------------------
-  - speaker_id: s1
-    line_range: "943-952"
-    confidence: medium
-    rationale: >-
-      Host pivots and asks ("But when it comes to UFOs and extraterrestrials,
-      just to sort of wrap that one up, do you think that this is all DVIC
-      activity? I know you had an example of the scientists in, was it Rendell
-      Forest?"). The bare "Yeah" at 948 reads as the host confirming his own
-      recollection between the question and his follow-on framing ("And I
-      think that's just a very good example of how cultural conditioning can
-      fool the senses"); treated as glue inside this host turn rather than a
-      separate Ryder ack. Medium because of that one-word ambiguity.
-
-  - speaker_id: s2
-    line_range: "953-978"
-    confidence: high
-    rationale: >-
-      Ryder answers ("Yes, it's a forest incident. It goes back in England").
-      Frames the two drawings and the photograph, "they were convinced... they
-      did feel metal. There was, quote, a ship there."
-
-  - speaker_id: s1
-    line_range: "979-980"
-    confidence: medium
-    rationale: >-
-      Short host clarifying question ("Just to set the scene, they were
-      working in a laboratory?"). Medium: rapid two-line exchange resolved by
-      the immediate correction in the next turn.
-
-  - speaker_id: s2
-    line_range: "981-982"
-    confidence: medium
-    rationale: >-
-      Ryder corrects the host ("Oh, that's right. Working in a forest.").
-      Medium: micro-turn inside a fast back-and-forth.
-
-  - speaker_id: s1
-    line_range: "983"
-    confidence: medium
-    rationale: >-
-      Host accepts the correction ("In a forest, yeah."). One-line ack
-      attributed to the host who raised the laboratory/forest point; medium
-      given the rapid alternation.
-
-  - speaker_id: s2
-    line_range: "984-991"
-    confidence: high
-    rationale: >-
-      Ryder resumes the narrative ("Where the investigators were sent to
-      really go study it... they did see a bright object... and reported it
-      was metal.").
-
-  - speaker_id: s1
-    line_range: "992"
-    confidence: medium
-    rationale: >-
-      Host incredulous question ("These were scientists?"). Medium: single
-      short interrogative in a fast exchange.
-
-  - speaker_id: s2
-    line_range: "993"
-    confidence: medium
-    rationale: >-
-      Ryder answers ("These are highly trained technical people."). Medium:
-      one-line answer between two host turns.
-
-  - speaker_id: s1
-    line_range: "994-999"
-    confidence: medium
-    rationale: >-
-      Host pushes back ("They just sound a little bit silly to me... if you
-      saw a bright white... would you go up and touch it?"). Medium: continues
-      the rapid exchange.
-
-  - speaker_id: ["s1", "s2"]
-    line_range: "1000-1002"
-    confidence: low
-    rationale: >-
-      Genuinely ambiguous micro-exchange. "If you're a scientist, yeah. / I
-      might have. / I would get the technicians to do that." can read either
-      as the host answering his own rhetorical "would you go up and touch it?"
-      or as Ryder responding. No name, no register marker resolves it; the
-      surrounding lines flip speaker at 999 (host) and 1003 (Ryder, "No, they
-      did."). Flagged for image verification.
-    needs_image_verification: true
-
-  - speaker_id: s2
-    line_range: "1003-1029"
-    confidence: high
-    rationale: >-
-      Ryder ("No, they did. What I did in that case is ask the question to the
-      investigators...") — the pressure-not-metal re-investigation, ending
-      "but now we realize that it's not a solid object."
-
-  - speaker_id: s1
-    line_range: "1030-1033"
-    confidence: medium
-    rationale: >-
-      Host raises the burning point ("I don't know if it occurred in this
-      incident, but certainly in other ones like that, there's been a lot of
-      severe burning through contact with them that you mentioned."). "that
-      you mentioned" addresses the guest, marking this as the host. Medium:
-      brief turn embedded in Ryder-dominant territory.
-
-  - speaker_id: s2
-    line_range: "1034-1050"
-    confidence: high
-    rationale: >-
-      Ryder ("Yes. There has been, and it's I guess the best I can say that
-      the technical scientific world does not know what to do with it...").
-      Trails forward to the Max Planck / leading-scientists preview, "very
-      close to the ageless wisdom actually."
-
-  # --- Lawrence: panpsychism / ageless-wisdom counter-argument ----------------
-  - speaker_id: s1
-    line_range: "1051-1068"
-    confidence: medium
-    rationale: >-
-      Register shifts to the host's interpretive voice ("But to my mind
-      anyway, the whole idea of explaining through some form of panpsychism...
-      the diva hierarchies... makes a lot more sense than visitors on the
-      physical plane from Andromeda and Captain Zob of the Galactic
-      Federation"). Medium: the 1050/1051 boundary rests on register, not an
-      explicit cue, and Ryder's preceding "ageless wisdom" mention slightly
-      blurs it. The aside at 1069-1070 is carved out separately.
-
-  - speaker_id: foreign-other
-    line_range: "1069-1070"
-    confidence: low
-    rationale: >-
-      Unattributable production/audience aside interrupting the host
-      mid-sentence ("Can't hear either of us. / Yell."). Not content from
-      either defined speaker — a request about audibility from someone in the
-      room. Bracketed out so it does not contaminate the host's turn. The
-      "Lada" at line 1068 is a Whisper mishearing of the host's name as he
-      resumes, so it stays with s1.
-
-  - speaker_id: s1
-    line_range: "1071-1098"
-    confidence: high
-    rationale: >-
-      Host resumes the ageless-wisdom argument after the audibility aside
-      ("Apart from anything else that's the idea of extraterrestrials on the
-      physical plane... each logos has a ring past knot... the whole idea of
-      hostile aliens abducting people... just seems wrong from that point of
-      view"), handing back to the guest ("But the alien abductions, I think
-      you've got something to say about.").
-
-  - speaker_id: s2
-    line_range: "1099-1183"
-    confidence: high
-    rationale: >-
-      Ryder answers ("Probably always, I'm sure many of you have read about
-      abductions"). Sealed-room abduction studies, Jacques Vallee summary
-      ("the UFOs are not objects nor flying"), Old Testament / chariots /
-      medieval magicians, ending "many religions today that have been founded
-      based on these interactions." The rhetorical self-questions ("What, the
-      burning bush? Certain angel encounters?") are Ryder's own and stay in
-      this turn.
-
-  # --- Lawrence: room management + audience deferral + next question ----------
-  - speaker_id: s1
-    line_range: "1184-1212"
-    confidence: high
-    rationale: >-
-      Host managing the room ("It's like telling ghost stories a little bit...
-      Who's in the back?... Can we hang on a minute please, Rosemary? We can
-      do this after the meditation... we're running out of time already") then
-      raising the next topic ("Another example is Russian and American jets
-      scrambling... was not really possible within our..."), trailing off into
-      Ryder's completion. The deferred audience question (Rosemary, "a
-      question over there") is narrated by the host, not a spoken audience
-      turn, so no separate speaker is created.
-
-  - speaker_id: s2
-    line_range: "1213-1223"
-    confidence: medium
-    rationale: >-
-      Ryder completes the host's trailed-off sentence and takes over ("It is
-      not. What he's referring to, there is an incident some years ago where
-      the US fighters and the Russian fighters chased after the same
-      object..."). "What he's referring to" marks the third-person reference
-      to the host. Medium: the 1212/1213 handoff is a sentence-completion
-      rather than a clean turn boundary.
-
-  # --- Lawrence: sprites/dwarves question -------------------------------------
-  - speaker_id: s1
-    line_range: "1224-1234"
-    confidence: high
-    rationale: >-
-      Host question ("What about the phenomena on top... these sprites and
-      dwarves and flashes of light above thunderstorms... Do you think that's
-      a recent phenomena... I mean, it's clearly DIVA activity. Or EM, if
-      you're a hard-nosed physicist.").
-
-  - speaker_id: s2
-    line_range: "1235-1262"
-    confidence: high
-    rationale: >-
-      Ryder answers ("Well, same difference, yeah. I don't have good pictures
-      on it, but what Lauren's asking is...") — the third-person "what Lauren's
-      asking" (Whisper rendering of the host's name) confirms the speaker.
-      High-resolution satellites, sprites, the atmosphere "moving like a
-      river", the stars-forming announcement.
-
-  # --- Lawrence: Birkeland current acknowledgment -----------------------------
-  - speaker_id: s1
-    line_range: "1263-1265"
-    confidence: high
-    rationale: >-
-      Host offering the term ("Well, a sort of acknowledgment of that, which I
-      presume you're talking about, a sort of Birkeland current.").
-
-  - speaker_id: s2
-    line_range: "1266-1310"
-    confidence: high
-    rationale: >-
-      Ryder confirms and continues ("They are essentially Birkeland currents,
-      and that term is being used because Birkeland was a physicist who did
-      that"). The "study of absurdity", the clock-with-no-hands UFO encounter
-      ("that's because time is not"), ending "It's like an interaction between
-      you and some others."
-
-  # --- Lawrence: closing / thanks (interrupted by Ryder's final slide) --------
-  - speaker_id: s1
-    line_range: "1311-1353"
-    confidence: high
-    rationale: >-
-      Host wrap-up ("That's an interesting topic to explore about actual
-      communication, and I think it will lead us on after... for those of you
-      who do have the opportunity to stay... the role that discrimination is
-      going to be needed... the battle between science and pseudoscience...
-      the electromagnetic interpretation... after the meditation") closing the
-      session ("But at this point, to keep to the time schedule, we'll thank
-      Jim very much, and then we'll have our meditation.").
-
-  - speaker_id: s2
-    line_range: "1354-1380"
-    confidence: high
-    rationale: >-
-      Ryder interrupts the close to make one last slide point ("Before you do
-      that, let me do one thing. Upper left, you remember that picture?"). The
-      deva/fairy drawings with narrow eyes and chin, the Hancock drug-induced
-      drawing, ending "what are we really dealing with when we see these kinds
-      of things?"
-
-  - speaker_id: s1
-    line_range: "1381-1382"
-    confidence: high
-    rationale: >-
-      Host's final close ("Okay, well, for part one anyway, Jim, thank you
-      very much.") — direct address by name, terminal thanks.
-
+- speaker_id: s1
+  line_range: 1-55
+  confidence: high
+- speaker_id: s2
+  line_range: 56-301
+  confidence: high
+- speaker_id: s1
+  line_range: 302-305
+  confidence: high
+- speaker_id: s2
+  line_range: 306-507
+  confidence: medium
+- speaker_id: s1
+  line_range: 508-516
+  confidence: high
+- speaker_id: s2
+  line_range: 517-650
+  confidence: high
+- speaker_id: s1
+  line_range: 651-685
+  confidence: high
+- speaker_id: s2
+  line_range: 686-740
+  confidence: high
+- speaker_id: s1
+  line_range: 741-780
+  confidence: high
+- speaker_id: s2
+  line_range: 781-839
+  confidence: high
+- speaker_id: s1
+  line_range: 840-846
+  confidence: high
+- speaker_id: s2
+  line_range: 847-888
+  confidence: high
+- speaker_id: s1
+  line_range: 889-903
+  confidence: high
+- speaker_id: s2
+  line_range: 904-942
+  confidence: high
+- speaker_id: s1
+  line_range: 943-952
+  confidence: medium
+- speaker_id: s2
+  line_range: 953-978
+  confidence: high
+- speaker_id: s1
+  line_range: 979-980
+  confidence: medium
+- speaker_id: s2
+  line_range: 981-982
+  confidence: medium
+- speaker_id: s1
+  line_range: '983'
+  confidence: medium
+- speaker_id: s2
+  line_range: 984-991
+  confidence: high
+- speaker_id: s1
+  line_range: '992'
+  confidence: medium
+- speaker_id: s2
+  line_range: '993'
+  confidence: medium
+- speaker_id: s1
+  line_range: 994-999
+  confidence: medium
+- speaker_id:
+  - s1
+  - s2
+  line_range: 1000-1002
+  confidence: low
+  needs_image_verification: true
+- speaker_id: s2
+  line_range: 1003-1029
+  confidence: high
+- speaker_id: s1
+  line_range: 1030-1033
+  confidence: medium
+- speaker_id: s2
+  line_range: 1034-1050
+  confidence: high
+- speaker_id: s1
+  line_range: 1051-1068
+  confidence: medium
+- speaker_id: foreign-other
+  line_range: 1069-1070
+  confidence: low
+- speaker_id: s1
+  line_range: 1071-1098
+  confidence: high
+- speaker_id: s2
+  line_range: 1099-1183
+  confidence: high
+- speaker_id: s1
+  line_range: 1184-1212
+  confidence: high
+- speaker_id: s2
+  line_range: 1213-1223
+  confidence: medium
+- speaker_id: s1
+  line_range: 1224-1234
+  confidence: high
+- speaker_id: s2
+  line_range: 1235-1262
+  confidence: high
+- speaker_id: s1
+  line_range: 1263-1265
+  confidence: high
+- speaker_id: s2
+  line_range: 1266-1310
+  confidence: high
+- speaker_id: s1
+  line_range: 1311-1353
+  confidence: high
+- speaker_id: s2
+  line_range: 1354-1380
+  confidence: high
+- speaker_id: s1
+  line_range: 1381-1382
+  confidence: high
 image_verification:
-  - turn_line_range: "1000-1002"
-    resolution: ambiguous
-    resolved_speaker_id: [s1, s2]
-    resolved_by: contributor
-    contributor_notes: >-
-      Both speakers are on-camera through the [45:08]-[45:16] cross-talk
-      window, so the stills can't resolve who speaks each line; the mixed
-      exchange stands.
+- turn_line_range: 1000-1002
+  resolution: ambiguous
+  resolved_speaker_id:
+  - s1
+  - s2
+  resolved_by: contributor

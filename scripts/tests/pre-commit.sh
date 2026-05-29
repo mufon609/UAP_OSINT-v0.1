@@ -11,6 +11,10 @@
 #                                              governance-file + conditionally_required
 #   5. python3 scripts/build/validate-research.py
 #                                            — research-artifact structural check
+#      python3 scripts/build/validate-speaker-attribution.py --quiet
+#                                            — speaker-attribution sibling structural
+#                                              check (incl. verified = no rationale/
+#                                              verifier_notes scaffolding)
 #   6. python3 scripts/build/review-coverage.py --all
 #                                            — cross-layer check (artifact ↔ rendered
 #                                              node): coverage / boundary /
@@ -118,6 +122,7 @@ steps=(
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'validate.py\tpython3 scripts/build/validate.py'
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
+    $'validate-speaker-attribution.py\tpython3 scripts/build/validate-speaker-attribution.py --quiet'
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
     $'associate.py --check\tpython3 scripts/build/associate.py --check'

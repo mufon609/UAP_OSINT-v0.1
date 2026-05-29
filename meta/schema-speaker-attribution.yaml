@@ -121,7 +121,8 @@ optional_keys:
   - verifier_session      # agent session id of the independent verifier
                           # (required when verification_status == verified)
   - verifier_notes        # free-text; required when verification_status
-                          # == rejected (carries the correction list)
+                          # == rejected (carries the correction list).
+                          # FORBIDDEN when == verified (stripped on finalize).
   - image_verification    # list of image_verification_entry (only for
                           # turns whose `needs_image_verification` was
                           # resolved against the photo-identity-log)
@@ -222,8 +223,16 @@ turn_entry:
   #     to verifier scrutiny by default; routes to conditional image-
   #     verification if `needs_image_verification: true` is set.
   #
-  # rationale: free-text. REQUIRED when confidence < high OR speaker_id
-  #   is a `foreign-*` kind OR speaker_id is a mixed-exchange list.
+  # rationale: free-text. DRAFT-PHASE VERIFICATION SCAFFOLDING — the cue
+  #   the producer relied on, which the independent verifier checks against
+  #   the source. REQUIRED while verification_status != verified (draft /
+  #   rejected) when confidence < high OR speaker_id is a `foreign-*` kind
+  #   OR speaker_id is a mixed-exchange list. Once the sibling is VERIFIED
+  #   the rationale has served its purpose and is STRIPPED by
+  #   scripts/build/finalize-attribution.py — a verified sibling carries no
+  #   rationale (the validator FATALs if it does). `confidence` is the
+  #   durable uncertainty marker on the committed artifact; an investigator
+  #   reads the source lines to judge a boundary.
   #   For foreign content: explain WHY this span is foreign (e.g.,
   #   "Elizondo announces 'scroll down to paragraph 6' and reads the
   #   1950 NM AF memo verbatim through line 428"). For low/medium
@@ -244,7 +253,8 @@ turn_entry:
   #
   # verifier_notes: free-text added by the independent verifier on
   #   turns they corrected or specifically reviewed. Not added by the
-  #   producer.
+  #   producer. Like rationale, draft-phase scaffolding — STRIPPED on
+  #   finalize; forbidden on a verified sibling.
 
 # ---------------------------------------------------------------------------
 # image_verification_entry — record of conditional image-verification
@@ -266,7 +276,13 @@ turn_entry:
 
 image_verification_entry:
   required: [turn_line_range, resolution, resolved_speaker_id, resolved_by]
-  optional: [contributor_notes]
+  optional: []
+  # Structured-only. The four required fields ARE the durable record — an
+  # `ambiguous` resolution with `resolved_speaker_id: [s1, s2]` already says
+  # "couldn't resolve who; mixed exchange stands." No free-text: a prose note
+  # restating the structured verdict is clutter (it renders into the .md, eats
+  # tokens, and invites opinion). Frame inspection is transient working state,
+  # not recorded.
   # turn_line_range: the line_range of the turn this entry resolves;
   #   must match an entry in turns[] exactly.
   # resolution: enum [confirmed, corrected, ambiguous].
@@ -285,12 +301,6 @@ image_verification_entry:
   #     missing, multiple plausible matches, or LLM-confidence too low).
   #     This is the path the photo-identity-log human-in-the-loop
   #     workflow preserves.
-  # contributor_notes: free-text when resolved_by: contributor. ONE or two
-  #   sentences — the durable conclusion only (which speaker(s) and the
-  #   one reason it resolved that way). NOT a narration of the verification
-  #   steps, who-wore-what, or engine recall behaviour — that detail belongs
-  #   in the session log, not the committed artifact (it renders into the
-  #   .md). Cite the [MM:SS] window checked; never /tmp frame paths.
 
 # ---------------------------------------------------------------------------
 # Cross-schema integration points
