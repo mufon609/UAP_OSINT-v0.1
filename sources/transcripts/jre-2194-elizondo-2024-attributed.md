@@ -660,8 +660,8 @@ Downloaded: 2026-05-19
 [20:09] pilots are reporting and for for me that
 ```
 
-### Joe Rogan — Host  
-*(lines 544-578 · ⚠ LOW CONFIDENCE)*
+### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
+*(lines 544-578)*
 
 ```
 [20:11] was most compelling like I said more
@@ -1123,8 +1123,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [33:38] suspicious no you can find it I know I
 ```
 
-### Joe Rogan — Host  
-*(lines 907-916 · ⚠ LOW CONFIDENCE)*
+### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
+*(lines 907-916 · medium confidence)*
 
 ```
 [33:40] know I know but it's just like yeah the
@@ -4554,3 +4554,14 @@ Department of the Air Force / The Pentagon, circa 1952.
 [2:14:54] [Applause]
 [2:14:58] [Music]
 ```
+
+---
+
+## Image-verification audit trail
+
+Turns whose `needs_image_verification: true` flag was resolved against `sources/photo-identity-log/baselines/`. Preserved here as the audit trail for downstream cross-checks.
+
+| Turn lines | Resolution | Resolved speaker | Resolved by |
+|---|---|---|---|
+| `544-578` | corrected | `s2` | agent-verifier |
+| `907-916` | corrected | `s2` | agent-verifier |

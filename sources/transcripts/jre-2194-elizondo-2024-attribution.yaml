@@ -77,9 +77,9 @@ turns:
 - speaker_id: s2
   line_range: 469-543
   confidence: high
-- speaker_id: s1
+- speaker_id: s2
   line_range: 544-578
-  confidence: low
+  confidence: high
 - speaker_id: s2
   line_range: 579-629
   confidence: medium
@@ -136,9 +136,9 @@ turns:
 - speaker_id: s2
   line_range: 890-906
   confidence: medium
-- speaker_id: s1
+- speaker_id: s2
   line_range: 907-916
-  confidence: low
+  confidence: medium
 - speaker_id: s2
   line_range: 917-956
   confidence: high
@@ -475,3 +475,12 @@ turns:
 - speaker_id: foreign-music
   line_range: 3658-3660
   confidence: high
+image_verification:
+- turn_line_range: 544-578
+  resolution: corrected
+  resolved_speaker_id: s2
+  resolved_by: agent-verifier
+- turn_line_range: 907-916
+  resolution: corrected
+  resolved_speaker_id: s2
+  resolved_by: agent-verifier
