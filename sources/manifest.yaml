@@ -2201,6 +2201,19 @@
     transcript_provenance: auto-caption
     path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
     note: 'Whisper-derived transcript of Dr. James T. Ryder''s presentation ''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' at the Lucis Trust Arcane School Conference, London, 10-11 June 2017 (Vimeo video ID 222366976, runtime 1:01:06). Sibling artifact to the parent Vimeo video entry above. Transcript provenance: faster-whisper large-v3 int8 CPU transcription run 2026-05-17 against the local Vimeo video archive (sources/video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4) on a 4-core ARM64 VM; initial_prompt seeded with proper nouns (Puthoff, Targ, Vallée, Bailey, Constable, devas, Lockheed, IBEX, SAFIRE, Hancock) to bias proper-noun spellings. 1382 segments / 107.7 min runtime. Same canonical [MM:SS]-inline format as the corpus convention used by other auto-caption transcripts in /sources/transcripts/. Machine-generated with no human-corrected caption pass — auto-caption-class provenance, same audit discipline as YouTube auto-captions per meta/conventions.md "Transcript provenance and audit discipline".'
+- url: https://vimeo.com/222366976/0c171ef640#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/lucistrust-rending-veils-ryder-2017-attribution.yaml
+    archived_date: '2026-05-29'
+    note: 'Speaker-attribution sibling of the label-less Whisper transcript at transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt. Produced 2026-05-29 via /prepare-transcript-sibling (agent-based). Verified 2026-05-29 by a separate agent session — PASS. Image-verification: 1 turn (lines 1000-1002) resolved against photo-identity-log baselines — ambiguous (both speakers on-camera, mixed exchange stands).'
+  - format: md
+    path: transcripts/lucistrust-rending-veils-ryder-2017-attributed.md
+    archived_date: '2026-05-29'
+    note: Human-readable rendering of the speaker-attribution sibling (lucistrust-rending-veils-ryder-2017-attribution.yaml) over source bytes. Derived view; the YAML is source-of-truth. Generated via render-speaker-transcript.py.
+  archive_status: 1
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   status: archived
   archive_status: 3
