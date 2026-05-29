@@ -456,6 +456,19 @@ divergence + missing node_links + honorific name-matching → W4 + W1.
 existing siblings (backfill node_links, timestamps, hash) and re-stamp the
 existing transcript artifacts to confirm.
 
+**Residual to clear at W3 migration:** before `needs_image_verification` was
+de-gated (commit 992006d), 9 turns the producer had flagged for image
+verification across 3 verified siblings — jre-2194-elizondo-2024 (7),
+8newsnow-craft-of-unknown-origin-lacatski-2026 (1),
+mysterywire-lacatski-kelleher-knapp-2021 (1) — shipped without ever being
+visually confirmed. The flags are now stripped and the durable
+`confidence: low|medium` markers carry the uncertainty (lucistrust's one
+flagged turn already has an `image_verification[]` resolution). These turns are
+not a correctness gap, but they are the concrete set of "never visually
+verified" turns that W3's always-on spot-check should retroactively cover when
+it re-finalizes the existing siblings. Until then they remain honestly
+unverified.
+
 **Blocks:** none.
 **Blocked by:** none. W1 is internally blocked by W3+W4.
 
