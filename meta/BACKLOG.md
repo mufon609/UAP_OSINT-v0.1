@@ -302,27 +302,23 @@ random timestamps because of profile/angled/looking-down shots.
 **The fix.** Replace the matching stack with dlib's HOG face detector +
 ResNet face embeddings, accessed via the `face_recognition` Python library
 (Adam Geitgey's dlib wrapper). The dlib face model scores 99.38% on the
-Labeled Faces in the Wild benchmark, and the embedding distance metric
-gives a clean gap between same-person (~0.4 cosine) and different-person
-(~0.7+) — threshold 0.6 separates cleanly.
+Labeled Faces in the Wild benchmark. The embedding distance metric has a
+clean gap between same-person (typical cosine ~0.4) and different-person
+(typical ~0.7+) frames — the overlap problem that defeats pHash threshold
+tuning doesn't exist in embedding space.
 
-Expected improvement, by pilot:
+**Shape of expected gain.** Confirm rate should rise on all three shipped
+pilots; the lift is largest on the formats pHash fails completely (the
+8newsnow news-package case is currently 0% confirm; embeddings would
+produce a non-zero rate). `contested-other` false positives should drop
+toward zero — semantic matching doesn't collide similar-looking faces the
+way perceptual hashing does. Magnitudes are unknown until a real test on
+this corpus.
 
-| Pilot | current confirm rate | expected with embeddings |
-|---|---:|---:|
-| jre-2194 | 16% | ~85% |
-| mysterywire | 6% | ~80% |
-| 8newsnow | 0% | ~75% |
-
-False-positive rate `contested-other` is expected to drop to near zero
-(the matching is semantic, not perceptual; similar-looking middle-aged
-white men no longer collide).
-
-**Implementation cost.** ~150 lines of Python; clone the structure of
-`spot-check-attribution.py` and swap the matching step. One-time baseline-
-embedding pass (~30 sec wallclock) caches all baselines to a `.pkl`. Per-
-frame face detection + embedding + distance lookup is ~50 ms. Estimated
-total: ~2 hours of build + test.
+**Implementation shape.** Clone the structure of `spot-check-
+attribution.py` and swap the matching step. Baselines are encoded once
+and cached. Per-frame is face detect + encode + distance lookup. Cost is
+bounded but not measured.
 
 **Install risk: medium.** `pip install face_recognition` on Kali/Debian
 usually works in 1–5 min. Depends on `dlib` (C++); wheels often available
