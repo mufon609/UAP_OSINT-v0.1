@@ -56,9 +56,10 @@ verbatim-quote chain that `validate.py` defends is structurally intact.
 **One structural difference from the OCR sibling:** the auto-caption file
 remains the verbatim source `validate.py` matches `quote.text` against;
 the sibling YAML adds the speaker-attribution overlay that
-`validate-research.py` matches `speaker_id` against (cross-validator is a
-future scripts/checks/ module per schema-speaker-attribution.yaml::"Cross-
-schema integration points"). The two artifacts coexist; OCR sibling, by
+`validate-research.py` matches `speaker_id` against — the
+`speaker_attribution_consistency` check (scripts/checks/) resolves each
+quote's `[MM:SS]` anchor to the sibling's covering turn and confirms the
+attributed speaker agrees. The two artifacts coexist; OCR sibling, by
 contrast, replaces a corrupt text layer.
 
 ## 1. Confirm the need + classify the source.
@@ -322,7 +323,8 @@ the YAML adds the speaker-attribution overlay, the .md is a rendering
 of that overlay over source bytes. `validate.py` continues matching
 `quote.text` against the parent (unchanged verbatim layer);
 `validate-research.py` matches each quote's `speaker_id` against the
-sibling YAML at the quote's line range.
+sibling YAML (the `speaker_attribution_consistency` check, resolving the
+quote's `[MM:SS]` anchor to the sibling's covering turn).
 
 ## Downstream
 

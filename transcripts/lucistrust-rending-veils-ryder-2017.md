@@ -27,7 +27,7 @@ Jim said: "I use UAPs because a UFO is an unexplained flying object. But a UAP i
 
 On UFOs Jim said one of the great explorers in this field is Jacques Vallee ([`/people/jacques-vallee`]) — "the UFOs are not objects nor flying ... they appear ... that's why I use UAPs." On abductions Jim said "whatever's happening is not happening physically" and "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." On a Russian and American jets incident Lawrence described as "classified information, which is now released," Jim said "I wouldn't say it was or wasn't" and said "there have been many, many chases of these objects, which when you get close, they're just not there."
 
-Jim said crop circles are "possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity." Lawrence asked about violet orbs "in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." On sprites and dwarves discovered above thunderstorms from fighter pilots, Lawrence said "it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist." Jim said "well, same difference, yeah." Jim showed drawings of devas by Graham Hancock ([`/people/graham-hancock`]) "always drawn with narrow eyes, slightly angled, and a narrow chin" going back "30,000, 40,000 years in the Roman times and so forth" — and asked "what are we really dealing with when we see these kinds of things?"
+Lawrence said crop circles are "possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity." Lawrence asked about violet orbs "in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." On sprites and dwarves discovered above thunderstorms from fighter pilots, Lawrence said "it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist." Jim said "well, same difference, yeah." Jim showed drawings of devas by Graham Hancock ([`/people/graham-hancock`]) "always drawn with narrow eyes, slightly angled, and a narrow chin" going back "30,000, 40,000 years in the Roman times and so forth" — and asked "what are we really dealing with when we see these kinds of things?"
 
 ---
 
@@ -107,14 +107,14 @@ Jim said crop circles are "possibly being created by divas of some kind, in some
 
 ---
 
-### Ryder's explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. Ryder presents it as his own theory and turns to the moderator to judge it ("Shall I throw that theory away?").
+### The moderator Lawrence's explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. Lawrence advances the theory and turns to Ryder to judge it ("Shall I throw that theory away?"); Ryder endorses it ("No, you won't throw that theory away").
 
 > [35:55] So when we actually look at fractal patterns, which are very common in nature, then you would expect the same electrical occurrences to follow the same kind of geometry in nature as, for instance, the snowflake, which is beautifully geometrical. And remembering that earlier, as we discussed that electricity is alive, that still makes it a very exciting prospect because we see the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity. But on the whole, because they have an inherent geometrical pattern, they are building divas and carry within them the geometrical pattern for the part of the plan that they're working with under various guiding forces. As they pass through the Earth and have effects on the physical plane, they are electrical in nature, so they are going to cause burning patterns, perhaps.
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James T. Ryder ([`/people/james-ryder`]) |
-| Attributed to | Ryder narrating his slides — the conversation has moved through earthquake lights and electromagnetic vortices — presenting the crop-circles-as-devic-activity theory, which he then asks the moderator (Lawrence) to judge ("Shall I throw that theory away?"). 2017-06-10 |
+| Speaker | Lawrence |
+| Attributed to | Lawrence (moderator) speaking — the conversation has moved through earthquake lights and electromagnetic vortices — advancing the crop-circles-as-devic-activity theory, which he then asks Ryder to judge ("Shall I throw that theory away?"); Ryder endorses it at [36:44] ("No, you won't throw that theory away"). 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [35:55]–[36:40] |
 

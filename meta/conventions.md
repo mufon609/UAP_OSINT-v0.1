@@ -304,9 +304,10 @@ corrupt text layer (quotes derive verbatim text from the sibling); the
 attribution sibling **coexists with** the parent, adding the speaker-
 attribution layer (a YAML indexed by line range into the source file —
 see `meta/schema-speaker-attribution.yaml`) that
-`validate-research.py` matches `speaker_id` against while the
-auto-caption file remains the verbatim source `validate.py` matches
-`quote.text` against. The fragment-marker pattern is the manifest's
+`validate-research.py` matches `speaker_id` against (the
+`speaker_attribution_consistency` check, which resolves each quote's
+`[MM:SS]` anchor to the covering turn) while the auto-caption file
+remains the verbatim source `validate.py` matches `quote.text` against. The fragment-marker pattern is the manifest's
 signal that an entry is a sibling, not a parent.
 
 **Sibling-production method standard.** The four paths above are

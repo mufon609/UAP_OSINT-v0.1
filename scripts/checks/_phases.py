@@ -79,6 +79,7 @@ CHECK_PHASE = {
     "cited_works_uncaptured": "extract",
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
+    "speaker_attribution_consistency": "extract",  # quote speaker_id ↔ attribution sibling at the [MM:SS] anchor
 
     # organize (role 5) — free-prose synthesis (incl. claim-group quote organization)
     "top_scope_activity": "organize",

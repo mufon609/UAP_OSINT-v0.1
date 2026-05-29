@@ -1385,7 +1385,7 @@
 ```
 
 ### Lawrence — Moderator/host  
-*(lines 1184-1212)*
+*(lines 1184-1208)*
 
 ```
 [52:46] I think another example,
@@ -1413,16 +1413,16 @@
 [53:34] chasing objects on what was perhaps classified information,
 [53:38] which is now released.
 [53:40] It was classified.
+```
+
+### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
+*(lines 1209-1223 · medium confidence)*
+
+```
 [53:42] I wouldn't say it was or wasn't.
 [53:44] But the very aerial dynamics that they displayed
 [53:48] was not really possible
 [53:50] within our...
-```
-
-### Dr. James T. Ryder ([/people/james-ryder](/people/james-ryder)) — Guest / main speaker  
-*(lines 1213-1223 · medium confidence)*
-
-```
 [53:51] It is not.
 [53:52] What he's referring to,
 [53:53] there is an incident some years ago
@@ -1646,3 +1646,4 @@ Turns whose `needs_image_verification: true` flag was resolved against `sources/
 | Turn lines | Resolution | Resolved speaker | Resolved by |
 |---|---|---|---|
 | `1000-1002` | ambiguous | `s1, s2` | contributor |
+| `1209-1223` | corrected | `s2` | agent-verifier |

@@ -133,6 +133,7 @@ from checks import quote_location_page as ck_quote_location_page
 from checks import quotes as ck_quotes
 from checks import relationships as ck_relationships
 from checks import resolution_history as ck_resolution_history
+from checks import speaker_attribution_consistency as ck_speaker_attribution_consistency
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
@@ -259,6 +260,7 @@ _ARTIFACT_CHECKS = [
     ck_witnesses_testimony,
     ck_speakers,
     ck_speaker_baseline_consistency,
+    ck_speaker_attribution_consistency,
     ck_media_versioning,
     ck_key_personnel,
     ck_org_relationships,

@@ -316,11 +316,16 @@ image_verification_entry:
 #    sibling-presence check for those provenances).
 #
 # 2. `speaker_id` on transcript-artifact `quote_entry` items must
-#    resolve against this sibling's `turns[]` at the quote's line range.
-#    The cross-validator (a future scripts/checks/ module) confirms
-#    every transcript-quote's speaker_id matches the sibling's
-#    attribution at that quote's source location. Drift = data error
-#    routed by route_failure.py to the artifact-data fix role.
+#    resolve against this sibling's `turns[]` at the quote's source
+#    location. The cross-validator —
+#    `scripts/checks/speaker_attribution_consistency.py`, run by
+#    validate-research.py — resolves each quote's `[MM:SS]` anchor to a
+#    source line, finds the covering turn(s), maps the sibling's speaker
+#    to the artifact's speaker by node_link / name (the two `speakers[]`
+#    lists are authored independently and their ids can disagree), and
+#    confirms the quote's speaker_id is among the speakers active across
+#    the lines the quote spans. Drift = data error, routed by
+#    route_failure.py to the artifact-data fix role.
 #
 # 3. `speakers[]` on the transcript artifact and `speakers[]` on this
 #    sibling are NOT required to match. The artifact's speakers[] lists
