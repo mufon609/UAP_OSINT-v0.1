@@ -253,9 +253,12 @@ turn_entry:
 #
 # Optional top-level `image_verification: []` list. One entry per turn
 # whose `needs_image_verification: true` was resolved against the photo-
-# identity-log. Preserves the audit trail: which turn, which frames were
-# extracted, which baseline matched, who confirmed (agent verifier vs.
-# contributor). The mechanical face-detection machinery
+# identity-log. Records the durable outcome — which turn, what the
+# resolution was, who confirmed (agent verifier vs. contributor), and a
+# prose note. Extraction frames are transient /tmp working files and are
+# NOT recorded (committing /tmp paths produces dead references the moment
+# the dir is cleared); the timestamps live in the resolved turn and the
+# prose note. The mechanical face-detection machinery
 # (scripts/tools/detect-faces.py, sources/photo-identity-log/baselines/)
 # is preserved as the higher-confidence backstop — see
 # meta/conventions.md "Speaker attribution: source format selects the
@@ -263,7 +266,7 @@ turn_entry:
 
 image_verification_entry:
   required: [turn_line_range, resolution, resolved_speaker_id, resolved_by]
-  optional: [frames_extracted, baseline_matched, contributor_notes]
+  optional: [contributor_notes]
   # turn_line_range: the line_range of the turn this entry resolves;
   #   must match an entry in turns[] exactly.
   # resolution: enum [confirmed, corrected, ambiguous].
@@ -282,11 +285,12 @@ image_verification_entry:
   #     missing, multiple plausible matches, or LLM-confidence too low).
   #     This is the path the photo-identity-log human-in-the-loop
   #     workflow preserves.
-  # frames_extracted: optional list of paths under /tmp/frames-{slug}/
-  #   the verifier extracted to make the call. Audit trail.
-  # baseline_matched: optional path under sources/photo-identity-log/
-  #   baselines/{identity}/ matched against. Audit trail.
-  # contributor_notes: free-text when resolved_by: contributor.
+  # contributor_notes: free-text when resolved_by: contributor. ONE or two
+  #   sentences — the durable conclusion only (which speaker(s) and the
+  #   one reason it resolved that way). NOT a narration of the verification
+  #   steps, who-wore-what, or engine recall behaviour — that detail belongs
+  #   in the session log, not the committed artifact (it renders into the
+  #   .md). Cite the [MM:SS] window checked; never /tmp frame paths.
 
 # ---------------------------------------------------------------------------
 # Cross-schema integration points

@@ -412,6 +412,18 @@ def check_image_verification(data, rpt):
         for req in ("turn_line_range", "resolution", "resolved_speaker_id", "resolved_by"):
             if req not in e:
                 rpt.fatal(f"image_verification[{i}]", f"missing required key: {req}")
+        # Allowed-key enforcement: keep the entry to its durable fields. In
+        # particular reject `frames_extracted` (transient /tmp paths → dead
+        # references once committed) and `baseline_matched` (unread, redundant
+        # with resolution/resolved_speaker_id/contributor_notes).
+        allowed = {"turn_line_range", "resolution", "resolved_speaker_id",
+                   "resolved_by", "contributor_notes"}
+        extra = sorted(set(e) - allowed)
+        if extra:
+            rpt.fatal(
+                f"image_verification[{i}]",
+                f"unknown key(s) {extra}; allowed: {sorted(allowed)}",
+            )
         tr = e.get("turn_line_range")
         if tr and tr not in turn_ranges:
             rpt.fatal(

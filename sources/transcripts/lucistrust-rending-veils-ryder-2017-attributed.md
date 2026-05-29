@@ -1726,4 +1726,4 @@ Turns whose `needs_image_verification: true` flag was resolved against `sources/
 | Turn lines | Resolution | Resolved speaker | Resolved by |
 |---|---|---|---|
 | `1000-1002` | ambiguous | `s1, s2` | contributor |
-|  | | | Frames at [45:08]-[45:16] (the flagged cross-talk window) show BOTH participants seated at the table: Dr. James Ryder (right; grey hair, glasses — matches the james-ryder baseline) and the moderator Lawrence (left; shaved head, glasses, pink shirt — no baseline registered, he is not a corpus identity). dlib HOG detected a face only at [45:16] and it did not embedding-match Ryder. Because both speakers are on-camera simultaneously during the rapid three-line exchange and the stills cannot show whose mouth is moving on which line, the image evidence is inconclusive — it CONFIRMS the producer's [s1, s2] mixed-exchange call rather than overriding it. The attribution stands as mixed. |
+|  | | | Both speakers are on-camera through the [45:08]-[45:16] cross-talk window, so the stills can't resolve who speaks each line; the mixed exchange stands. |
