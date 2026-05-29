@@ -84,86 +84,6 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Audit the label-less transcript corpus against the speaker-attribution discipline
-
-**The problem.** A transcript whose source is *label-less* — a machine caption or
-speech-to-text that records the words but not who spoke them — cannot have its
-speakers *determined* by a text reader; they can only be *inferred* from textual
-cues (second-person address, one participant naming another in the third person,
-question-then-answer structure). Those cues are frequently absent or ambiguous in a
-fast two-party exchange, and inferring from them is the very process that produces
-misattributions: a line delivered by one participant gets assigned to the other, and
-a back-and-forth collapses onto a single speaker. The ground truth for
-who-is-speaking lives only in the audio. A pilot audit of one label-less
-multi-speaker transcript found exactly this pattern in already-shipped content (a
-passage attributed to the wrong participant; another single-attribution that was
-really a two-party exchange; a summary line crediting the wrong speaker) — the
-discipline gap is real, not hypothetical.
-
-**The discipline (defined + codified).** Speaker attribution on a label-less source is
-**confirm-against-source** — the audio/video analog of source-read-first. Where video
-exists, confirm by *image* (frames at the quote timestamp matched to a face baseline,
-human-verified — stronger than telling similar voices apart by ear); audio-only sources
-use diarization for turn boundaries plus an anchor; a genuinely unresolvable boundary
-takes the mixed-exchange `speaker_id` list (the honest marker, not a license to skip
-attribution work). The decision tree, the per-method dependency gating, and the
-issue-routing live in `meta/conventions.md` "Speaker attribution: source format selects
-the method" and `scripts/tools/VIDEO-PIPELINE.md` Step 0. Shipped: the mixed-exchange
-mechanism (`speaker_id` as a 2+ id list, rendered `Speakers — mixed exchange`); the
-diarize venv-missing fail-fast; the pilot (`lucistrust-rending-veils-ryder-2017`)
-proven by image-verification and committed; the `/prepare-transcript-sibling` skill
-(producer → independent-verifier → register loop, wired as `/build` step 4c —
-parallel to `/prepare-ocr-sibling`'s step 4b).
-
-**Latent features assessed (keep both).** `derived_from` (transcript frontmatter) is
-wired + rendered but has 0 uses — its case is a transcript that is a text rendering
-*of* a media/document node; latent, correct, keep. The audio-diarization sub-branch
-(`diarize-audio.py` + `setup-diarize-audio.sh`) was built and debugged historically
-but is unexercised in this checkout; optional, keep, note the setup cost.
-
-**Tooling-adequacy gaps — do NOT file fixes until each is proven needed (the
-test-before-BACKLOG rule).** The is-the-pipeline-enough answer for label-less
-multi-speaker sources is *no*, but each specific fix must be demonstrated against a
-real failing test before it becomes a work item: a label-less speech-to-text source
-is not a first-class tool path (`transcribe.py` is YouTube-caption-only); there is no
-mechanical speaker aid for label-less transcripts (attribution falls to manual
-inference); the speaker-ID pipeline's intermediate outputs are `/tmp`-ephemeral;
-`stitch-transcript.py` loads the face-detector by file-path `importlib` hack rather
-than a shared module; there is no end-to-end integration test of the
-download→diarize→stitch path; Haar-cascade face detection misses frequently (manual
-crop fallback); and several thresholds are hardcoded (pHash distance, min face size,
-segment-snap tolerance).
-
-**Test-evidence accumulated (2026-05-28 dry run on jre-2194-elizondo-2024).** The
-producer agent's non-interactive Bash shell cannot self-resolve either
-`setup-*.sh` prerequisite — `setup-photo-identity.sh` needs sudo for the
-`python3-opencv` apt install, `setup-diarize-audio.sh` walks an interactive
-Hugging Face user-conditions acceptance + `HF_TOKEN` setup. Both must run in the
-user's interactive shell before the skill is invoked, but neither `SKILL.md` nor
-`/build` step 4c surfaces this as a prerequisite, and the producer burns a run
-to discover it. Candidate fix (deferred per test-before-BACKLOG until a second
-audit re-hits it): have skill step 1 pre-flight both environments and refuse to
-dispatch the producer until they pass — or at minimum document the prereq in
-`SKILL.md`. The downloaded video + 8 anchor frames from this dry run are
-retained at `sources/video/jre-2194-elizondo-2024.mp4` + `/tmp/frames-jre-2194-elizondo-2024/`
-for a resumable continuation once the user clears the prereqs.
-
-**Remaining work.**
-1. **Audit the remaining transcript nodes**, one at a time, against the discipline:
-   stenographic / published hearing transcripts are speaker-labeled in source
-   (mechanically verifiable, low-risk); auto-caption / Whisper interview transcripts are
-   label-less (image path where video exists, else audio path + mixed tag). Candidates:
-   the `other`-kind nodes — jre-2194, 8newsnow, mysterywire, and the weaponized-*
-   set (038/096/097/114). Still open: the generic conversation template in
-   `conventions.md` (narration as a `speakers[]` Narrator entry; non-speech captured
-   only when verbatim-in-source AND load-bearing; same-speaker-different-recording via
-   `statement_date` + `context`) — fold in as the corpus audit surfaces the cases.
-2. **Re-assess the tooling gaps above** with test evidence (test-before-BACKLOG rule):
-   file a specific fix only once a real failing test demonstrates the need.
-
-**Blocks:** none.
-**Blocked by:** nothing — incremental, one transcript at a time.
-
 ### A3 — DIRD extraction: re-level the corpus against the rubric + extract remaining citations
 
 The DIRD extraction standard now exists — the passage-selection rubric in
@@ -346,6 +266,89 @@ _(none)_
 ## C. Anytime (no dependencies)
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
+
+### C1 — Upgrade `spot-check-attribution.py` from Haar+pHash to dlib face embeddings
+
+**The problem.** The agent-based speaker-attribution pipeline ships with a
+mechanical fourth-layer spot-check at `scripts/tools/spot-check-attribution.py`
+— extracts beginning/middle/end frames per turn, runs face-detection +
+photo-identity-log baseline matching, surfaces per-turn `confirmed` /
+`contested-fold` / `contested-other` / `inconclusive` verdicts. The intent is
+contributor peace-of-mind: every turn gets mechanical visual cross-check, and
+a fold-up (two speakers folded into one turn) shows up as `contested-fold`.
+
+The current matching stack — Haar-cascade face detection + perceptual-hash
+(pHash) baseline matching — has a structurally low ceiling. Test evidence
+from the three shipped pilots (2026-05-29):
+
+| Pilot | confirmed | contested-fold | contested-other | inconclusive | useful? |
+|---|---:|---:|---:|---:|---|
+| jre-2194-elizondo-2024 (3,660 lines, 145 turns) | 23 | 19 | 1 | 97 | yes |
+| mysterywire-lacatski-kelleher-knapp-2021 (429 lines, 18 turns) | 1 | 4 | 7 | 3 | marginal |
+| 8newsnow-craft-of-unknown-origin-lacatski-2026 (140 lines, 19 turns) | 0 | 0 | 13 | 1 | no |
+
+JRE-2194 works because Rogan + Elizondo have distinctive features and the
+JRE camera setup matches existing baselines. The other two pilots show the
+fundamental limits: pHash distance distributions for same-person frames vs
+different-person frames OVERLAP (same-person ranges 5–25; different-person
+ranges 5–30). No single threshold separates them: distance 5 (default for
+near-duplicate dedup) misses real matches at distance 15; distance 20
+catches real matches but also surfaces false-positives like `david-grusch`
+detected in a JRE-Elizondo episode, or `david-fravor` / `luis-elizondo` /
+`james-ryder` detected across every 8newsnow news-package frame where
+neither is actually present. Haar-cascade also misses 50–75% of faces at
+random timestamps because of profile/angled/looking-down shots.
+
+**The fix.** Replace the matching stack with dlib's HOG face detector +
+ResNet face embeddings, accessed via the `face_recognition` Python library
+(Adam Geitgey's dlib wrapper). The dlib face model scores 99.38% on the
+Labeled Faces in the Wild benchmark, and the embedding distance metric
+gives a clean gap between same-person (~0.4 cosine) and different-person
+(~0.7+) — threshold 0.6 separates cleanly.
+
+Expected improvement, by pilot:
+
+| Pilot | current confirm rate | expected with embeddings |
+|---|---:|---:|
+| jre-2194 | 16% | ~85% |
+| mysterywire | 6% | ~80% |
+| 8newsnow | 0% | ~75% |
+
+False-positive rate `contested-other` is expected to drop to near zero
+(the matching is semantic, not perceptual; similar-looking middle-aged
+white men no longer collide).
+
+**Implementation cost.** ~150 lines of Python; clone the structure of
+`spot-check-attribution.py` and swap the matching step. One-time baseline-
+embedding pass (~30 sec wallclock) caches all baselines to a `.pkl`. Per-
+frame face detection + embedding + distance lookup is ~50 ms. Estimated
+total: ~2 hours of build + test.
+
+**Install risk: medium.** `pip install face_recognition` on Kali/Debian
+usually works in 1–5 min. Depends on `dlib` (C++); wheels often available
+but may compile, needing `cmake` + Python dev headers + `build-essential`.
+Total dependency size ~100 MB. If wheel install fails, fall back to
+`deepface` library which has multiple backend options including a
+TensorFlow Keras-based path.
+
+**Adjacent improvement (multiplicative, not redundant).** More baseline
+frames per identity also help. With embeddings: going from the current 1-2
+references per identity to 5-10 lifts match accuracy from ~95% to ~99% by
+giving the centroid vector richer angle/lighting coverage. Worth doing for
+core corpus identities (the speakers appearing across multiple node
+transcripts) once embeddings are in place; not worth doing for pHash
+because the ceiling is too low.
+
+**Test path.** Validate on JRE-2194 first (video on disk, identities closest
+to baseline conditions, hard numbers available for comparison from the
+current pHash run at `/tmp/spot-check-jre-2194-final.csv`). If confirm rate
+jumps as predicted, run on mysterywire + 8newsnow as the harder cases. If
+predictions hold, fold the embedding-based path into the skill as the
+default (current pHash path stays as a fallback for environments where
+dlib won't install).
+
+**Blocks:** none.
+**Blocked by:** none. Install is the one risk; tractable.
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
