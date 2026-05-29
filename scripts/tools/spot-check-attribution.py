@@ -75,7 +75,6 @@ import argparse
 import csv
 import importlib.util
 import re
-import shutil
 import subprocess
 import tempfile
 from typing import Optional

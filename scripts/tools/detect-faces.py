@@ -177,22 +177,6 @@ def _to_xywh(loc: Tuple[int, int, int, int]) -> Tuple[int, int, int, int]:
     return (int(left), int(top), int(right - left), int(bottom - top))
 
 
-def _to_css(bbox: Tuple[int, int, int, int]) -> Tuple[int, int, int, int]:
-    """(x, y, w, h) → face_recognition (top, right, bottom, left)."""
-    x, y, w, h = bbox
-    return (int(y), int(x + w), int(y + h), int(x))
-
-
-def detect_faces_in_image(image_path: Path) -> List[Tuple[int, int, int, int]]:
-    """Return a list of (x, y, w, h) bounding boxes for faces in the image,
-    detected via dlib's HOG detector. Empty list on read failure or no faces.
-
-    Filtering: drops detections smaller than MIN_FACE_SIZE on either axis. HOG
-    catches profile/angled/looking-down shots a frontal Haar cascade misses,
-    which is the bulk of the recall gain over the old engine."""
-    return [bbox for bbox, _ in encode_faces_in_image(image_path)]
-
-
 def encode_faces_in_image(
     image_path: Path,
 ) -> List[Tuple[Tuple[int, int, int, int], "object"]]:
@@ -590,6 +574,7 @@ def cmd_detect(args) -> None:
                 total_saved += 1
                 auto_slug = identify(enc, baseline_index, EMBED_MATCH_DISTANCE)
                 if auto_slug:
+                    total_identified += 1
                     per_image_id += 1
                     identity_counts[auto_slug] = identity_counts.get(auto_slug, 0) + 1
                 fingerprint = hashlib.sha1(np.asarray(enc).tobytes()).hexdigest()[:16]
