@@ -646,7 +646,16 @@ manifest_entry:
 artifact_entry:
   required: [format, path, archived_date]
   optional: [extraction_type, transcript_provenance, note]
-  format_values: [pdf, html, txt, audio, image, video, transcript]
+  format_values: [pdf, html, txt, audio, image, video, transcript, yaml, md]
+  # `yaml` and `md` were added for the speaker-attribution sibling pair
+  # (see meta/schema-speaker-attribution.yaml + /prepare-transcript-sibling):
+  #   - yaml — the {slug}-attribution.yaml sibling, source-of-truth for
+  #     speaker_id on transcript-artifact quotes
+  #   - md   — the {slug}-attributed.md rendered companion (deterministic
+  #     output of scripts/tools/render-speaker-transcript.py; body content
+  #     byte-identical to the parent auto-caption file)
+  # Both register under the parent transcript URL with fragment
+  # `#speaker-attribution` + `--wayback-skip` (derived, non-fetchable).
   extraction_type_values: [text-native, ocr-scan, extraction-lossy]
   # `extraction_type` classifies how the archived file yields text. Optional;
   # defaults to `text-native` when absent (legacy entries pre-field). The

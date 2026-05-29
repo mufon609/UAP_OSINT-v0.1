@@ -1,0 +1,327 @@
+# Primary-source investigation knowledge-base — speaker-attribution schema
+#
+# Specification for the source-layer speaker-attribution sibling produced
+# by `/prepare-transcript-sibling` (the agent-based attribution pipeline).
+# One sibling per label-less transcript source. Sibling lives next to the
+# source file at `sources/transcripts/{stem}-attribution.yaml` and is the
+# source-of-truth for the `speaker_id` field on transcript-artifact
+# `quote_entry` items (see schema-research-artifact.yaml::quote_entry).
+#
+# Loaded by `scripts/build/validate-speaker-attribution.py`. Rendered into
+# a human-readable `{stem}-attributed.md` by
+# `scripts/tools/render-speaker-transcript.py`. Cross-references use the
+# form `schema-speaker-attribution.yaml::X`.
+#
+# The sibling indexes into the source file by 1-indexed line range. It
+# never duplicates source text — agents emit references only. The
+# renderer reads source-file bytes verbatim and wraps them with the
+# attribution labels from this yaml. This is the verbatim-quote-chain
+# discipline (the source file remains the authoritative bytes); the agent
+# producer cannot drift from source because there is no `text` field in
+# this schema for it to populate.
+#
+# Provenance contract: this sibling is regeneratable from
+# (source_path, agent producer, agent verifier). It is NOT hand-curated.
+# Contributor edits go through the skill's re-run path, not direct
+# editing — same discipline as the OCR sibling (meta/conventions.md
+# "Producing the `.txt` sibling").
+#
+# Structural twist vs the OCR sibling: the OCR sibling REPLACES a corrupt
+# pdftotext layer for verbatim-quote matching; the attribution sibling
+# COEXISTS with the original transcript (which remains the verbatim
+# source). validate.py matches `quote.text` against the source file
+# unchanged; validate-research.py matches each transcript-quote's
+# `speaker_id` against the attribution sibling at the quote's line range.
+
+path_prefix: sources/transcripts/
+path_suffix: -attribution.yaml
+format: yaml
+
+# Closed enums shared across this schema.
+
+# `on_camera_role` classifies a speaker's typical visual presence in the
+# source recording. Drives downstream behavior: `voiceover` and
+# `off-camera` speakers should NOT be expected to match face baselines at
+# their turn timestamps — the conditional image-verification step skips
+# them by default. `mixed` speakers (host who narrates AND appears in
+# segments) require per-turn judgment.
+on_camera_role_values:
+  - primary       # speaker appears on camera during most of their turns
+  - voiceover     # speaker is heard but not shown (documentary narrator)
+  - mixed         # speaker appears in some turns, narrates over others
+  - off-camera    # speaker is heard but never visible (phone caller, etc.)
+
+# `foreign_kind` classifies content NOT attributable to any in-room
+# speaker. Distinct from speakers[] (which carries the live participants,
+# including off-camera narrators / hosts — those are speakers, not
+# foreign content). Foreign content is content whose AUTHOR is outside
+# the live speaker set: a jingle composed by the show, a memo authored by
+# a third party, an archival clip recorded in a different context. See
+# meta/conventions.md "Foreign content" (drafted post-corpus-evidence;
+# see meta/BACKLOG.md A2 "Test-evidence accumulated" for the rationale).
+foreign_kind_values:
+  - foreign-jingle        # show-intro lyric/music with brand identifier
+  - foreign-intro         # third-person framing voiceover (NOT a speaker)
+  - foreign-outro         # closing third-person framing voiceover
+  - foreign-ad-read       # sponsor read, promo code, product mention
+  - foreign-narration     # off-screen voice describing footage/b-roll
+                          # (when the narrator is NOT a defined speaker;
+                          # if the narrator IS a defined speaker — e.g.
+                          # documentary host Ammar Kandil narrating over
+                          # Grusch footage — use that speaker's id and
+                          # set their on_camera_role to voiceover/mixed)
+  - foreign-archival      # embedded recording from a different context
+                          # (news clip, prior interview, hearing footage)
+                          # — the speaker(s) in the recording are NOT live
+                          # in-room participants
+  - foreign-recitation    # in-room speaker reading verbatim from a
+                          # primary document (FBI memo, AARO email, slide
+                          # quote) — text originates with a third-party
+                          # author even though spoken by a live speaker.
+                          # Use `referenced_source` on the turn entry to
+                          # identify the recited document.
+  - foreign-prepared      # in-room speaker reading their OWN written
+                          # statement (Lacatski's 9-min prepared remarks
+                          # in weaponized-096). Same speaker, but the text
+                          # was composed not spontaneous. Border case;
+                          # contributor judgment per meta/conventions.md.
+  - foreign-music         # bracket-tagged non-speech audio ([Music],
+                          # [Applause]) — typically zero-content
+  - foreign-other         # clearly non-conversational, doesn't fit above
+
+confidence_values: [high, medium, low]
+
+# Verification status of the sibling as a whole. Producer emits `draft`;
+# the structural validator + independent verifier promote to `verified`.
+# Failed verification leaves the sibling at `draft` with a `verifier_notes`
+# field populated.
+verification_status_values: [draft, verified, rejected]
+
+# ---------------------------------------------------------------------------
+# Top-level required keys
+# ---------------------------------------------------------------------------
+
+required_keys:
+  - slug                  # MUST match {stem} of source_path
+  - source_path           # path under sources/, relative; matches a
+                          # manifest entry with transcript_provenance ∈
+                          # {auto-caption, human-corrected-caption}
+  - source_line_count     # int; MUST equal `wc -l` of source_path. The
+                          # coverage check uses this as the upper bound
+                          # for the turns array. Drift = source file
+                          # changed underneath the sibling → re-run skill.
+  - generated_date        # YYYY-MM-DD
+  - producer_session      # agent session id of the producer (for audit)
+  - verification_status   # draft | verified | rejected
+  - speakers              # list of speaker_entry
+  - turns                 # list of turn_entry; covers every line of
+                          # source_path with no gaps + no overlaps
+
+optional_keys:
+  - verifier_session      # agent session id of the independent verifier
+                          # (required when verification_status == verified)
+  - verifier_notes        # free-text; required when verification_status
+                          # == rejected (carries the correction list)
+  - image_verification    # list of image_verification_entry (only for
+                          # turns whose `needs_image_verification` was
+                          # resolved against the photo-identity-log)
+
+# ---------------------------------------------------------------------------
+# speaker_entry — one per live in-room participant
+# ---------------------------------------------------------------------------
+#
+# Live participants ONLY. Off-camera narrators who are part of the
+# production (documentary host) are speakers. Third-party authors whose
+# words appear via recitation, archival clip, or news anchor cut-in are
+# NOT speakers — their content is `foreign-*` per foreign_kind_values
+# above. Border cases (a hearing co-chair briefly recorded in the
+# documentary's archival news segment): contributor judgment — if their
+# words appear ONLY via the archival clip, use foreign-archival; if they
+# also participate in the live segment, they ARE a speaker.
+
+speaker_entry:
+  required: [id, name, on_camera_role]
+  optional: [role, node_link, notes]
+  # id: short stable handle, conventionally `s1`, `s2`, ... in turn-
+  #   appearance order. Referenced by turn_entry.speaker_id; same form
+  #   as the existing speakers[] convention on transcript artifacts
+  #   (schema-research-artifact.yaml::speaker_entry).
+  # name: display name (e.g., "Joe Rogan", "Luis Elizondo", "Ammar
+  #   Kandil"). Free-text; rendered as the speaker label in the
+  #   -attributed.md output.
+  # on_camera_role: enum (see on_camera_role_values). Drives the
+  #   conditional image-verification step's per-speaker behavior — a
+  #   `voiceover`-tagged speaker's turns are NOT auto-flagged for
+  #   image verification even when face-detection misses, because their
+  #   face is structurally not expected to appear at their turn
+  #   timestamps. A `primary`-tagged speaker's low-confidence turns DO
+  #   route to image verification by default.
+  # role: free-text description (e.g., "Host", "Guest", "Whistleblower",
+  #   "Narrator", "Interviewer"). Same convention as the existing
+  #   speakers[] role field on transcript artifacts.
+  # node_link: optional /people/... path when the speaker has a
+  #   repository node. Renders as a wrap-link in the speaker label.
+  # notes: free-text. Use for non-obvious context the verifier needs
+  #   (e.g., "Ammar Kandil narrates ~32% of runtime in voiceover; his
+  #   live in-room appearances are confined to Days 1-2").
+
+# ---------------------------------------------------------------------------
+# turn_entry — coverage spine; one array, every line covered exactly once
+# ---------------------------------------------------------------------------
+#
+# The coverage discipline:
+# - Every line in source_path (1..source_line_count) MUST be covered by
+#   exactly one turn entry.
+# - line_range values across all entries form a strict partition: no
+#   gaps, no overlaps. Validator enforces.
+# - Adjacent same-speaker turns are NOT pre-merged by the producer; the
+#   renderer collapses them at output time. Two reasons: (1) the
+#   verifier needs per-turn confidence ratings, (2) a topic shift may
+#   warrant a fresh turn even within one speaker's continuous speech.
+# - The first and last turns are typically `foreign-jingle` /
+#   `foreign-intro` and `foreign-outro` / `foreign-music` respectively;
+#   the coverage discipline still applies — line 1 must be covered.
+
+turn_entry:
+  required: [speaker_id, line_range, confidence]
+  optional: [rationale, referenced_source, needs_image_verification, verifier_notes]
+  # speaker_id: three shapes accepted, mirroring the existing
+  #   schema-research-artifact.yaml::quote_entry.speaker_id convention:
+  #
+  #   - a single STRING matching a speakers[].id (e.g. `s2`) — the
+  #     common case; renders as "Speaker: {name}" in -attributed.md.
+  #   - a single STRING matching a `foreign-*` value from
+  #     foreign_kind_values — content NOT attributable to any speaker;
+  #     renders as "[{kind}]" with the rationale and referenced_source
+  #     surfaced in the line preamble.
+  #   - a LIST of 2+ strings, all matching speakers[].id (e.g.
+  #     `[s1, s2]`) — mixed exchange / unresolvable boundary. Renders
+  #     as "Speakers — mixed exchange: {name1}, {name2}". A 1-element
+  #     list is rejected (use the bare string). Foreign-* values cannot
+  #     appear in a mixed-exchange list (foreign content is not a
+  #     "speaker" — use a separate foreign-* turn or split the range).
+  #
+  # line_range: 1-indexed line numbers into source_path. Two forms:
+  #
+  #   - "N" — a single line (validator accepts; equivalent to "N-N").
+  #   - "N-M" — closed interval [N, M], 1 ≤ N ≤ M ≤ source_line_count.
+  #
+  #   Validator confirms every line in [1, source_line_count] is
+  #   covered by exactly one turn entry, with no overlaps. Ranges
+  #   must be sorted ascending across the turns array (chronological
+  #   reading order).
+  #
+  # confidence: high | medium | low.
+  #   - high: speaker boundary is clean (self-introduction, second-
+  #     person address, clear topic continuity, unambiguous register
+  #     shift).
+  #   - medium: boundary is plausible from textual cues but not
+  #     conclusive (could be confirmed by audio anchor at the
+  #     timestamp, but mechanical pipeline isn't being run).
+  #   - low: boundary is uncertain; producer's best judgment. Routes
+  #     to verifier scrutiny by default; routes to conditional image-
+  #     verification if `needs_image_verification: true` is set.
+  #
+  # rationale: free-text. REQUIRED when confidence < high OR speaker_id
+  #   is a `foreign-*` kind OR speaker_id is a mixed-exchange list.
+  #   For foreign content: explain WHY this span is foreign (e.g.,
+  #   "Elizondo announces 'scroll down to paragraph 6' and reads the
+  #   1950 NM AF memo verbatim through line 428"). For low/medium
+  #   confidence: name the cue the producer relied on (e.g.,
+  #   "second-person address pattern; no name spoken").
+  #
+  # referenced_source: free-text identifier of the document/recording
+  #   being recited or replayed. REQUIRED when speaker_id is
+  #   `foreign-recitation` or `foreign-archival`. Examples: "1950 NM
+  #   AF memo paragraph 6", "NewsNation Coulthart-Grusch interview,
+  #   June 2023", "House oversight hearing July 26 2023, Mace question".
+  #
+  # needs_image_verification: bool (default false). Set by producer
+  #   when textual cues are insufficient and confirmation against the
+  #   source recording would help. Routed to the conditional image-
+  #   verification step against sources/photo-identity-log/baselines/.
+  #   Cleared once verifier resolves (see image_verification_entry).
+  #
+  # verifier_notes: free-text added by the independent verifier on
+  #   turns they corrected or specifically reviewed. Not added by the
+  #   producer.
+
+# ---------------------------------------------------------------------------
+# image_verification_entry — record of conditional image-verification
+# resolution for low-confidence turns
+# ---------------------------------------------------------------------------
+#
+# Optional top-level `image_verification: []` list. One entry per turn
+# whose `needs_image_verification: true` was resolved against the photo-
+# identity-log. Preserves the audit trail: which turn, which frames were
+# extracted, which baseline matched, who confirmed (agent verifier vs.
+# contributor). The mechanical face-detection machinery
+# (scripts/tools/detect-faces.py, sources/photo-identity-log/baselines/)
+# is preserved as the higher-confidence backstop — see
+# meta/conventions.md "Speaker attribution: source format selects the
+# method" for the image-path discipline.
+
+image_verification_entry:
+  required: [turn_line_range, resolution, resolved_speaker_id, resolved_by]
+  optional: [frames_extracted, baseline_matched, contributor_notes]
+  # turn_line_range: the line_range of the turn this entry resolves;
+  #   must match an entry in turns[] exactly.
+  # resolution: enum [confirmed, corrected, ambiguous].
+  #   - confirmed: image evidence supports the producer's
+  #     resolved_speaker_id (no change to turns[]).
+  #   - corrected: image evidence contradicts; turns[] was updated to
+  #     resolved_speaker_id (which differs from producer's original).
+  #   - ambiguous: image evidence is inconclusive; resolved_speaker_id
+  #     is the contributor's judgment, may be a mixed-exchange list.
+  # resolved_speaker_id: the final speaker_id assigned (after image
+  #   verification). Same three shapes as turn_entry.speaker_id.
+  # resolved_by: enum [agent-verifier, contributor].
+  #   - agent-verifier: the independent verifier agent extracted frames
+  #     and matched against baselines unambiguously.
+  #   - contributor: a human reviewer made the call (face baseline
+  #     missing, multiple plausible matches, or LLM-confidence too low).
+  #     This is the path the photo-identity-log human-in-the-loop
+  #     workflow preserves.
+  # frames_extracted: optional list of paths under /tmp/frames-{slug}/
+  #   the verifier extracted to make the call. Audit trail.
+  # baseline_matched: optional path under sources/photo-identity-log/
+  #   baselines/{identity}/ matched against. Audit trail.
+  # contributor_notes: free-text when resolved_by: contributor.
+
+# ---------------------------------------------------------------------------
+# Cross-schema integration points
+# ---------------------------------------------------------------------------
+#
+# This sibling INTEGRATES with the research-artifact schema as follows:
+#
+# 1. `transcript_provenance` on the manifest source entry (see
+#    schema.yaml::transcript_provenance_values) gates eligibility:
+#    only `auto-caption` and `human-corrected-caption` sources need a
+#    sibling. Stenographic / published-transcript sources carry speaker
+#    labels in their own bytes; no sibling required (validator skips
+#    sibling-presence check for those provenances).
+#
+# 2. `speaker_id` on transcript-artifact `quote_entry` items must
+#    resolve against this sibling's `turns[]` at the quote's line range.
+#    The cross-validator (a future scripts/checks/ module) confirms
+#    every transcript-quote's speaker_id matches the sibling's
+#    attribution at that quote's source location. Drift = data error
+#    routed by route_failure.py to the artifact-data fix role.
+#
+# 3. `speakers[]` on the transcript artifact and `speakers[]` on this
+#    sibling are NOT required to match. The artifact's speakers[] lists
+#    only speakers whose quotes appear in the artifact (cross-reference
+#    surface); the sibling's speakers[] lists ALL participants in the
+#    source recording (attribution surface). The sibling is the
+#    superset.
+#
+# 4. The manifest entry for the sibling carries the URL suffix
+#    `#speaker-attribution` (parallels `#clean-text-transcription` on
+#    the OCR sibling — both are fragment-marked derived artifacts pointing
+#    at a parent manifest entry). `--wayback-skip` is required (derived
+#    artifact, not fetchable). Parent manifest entry remains the source-
+#    of-truth for the verbatim transcript bytes. The rendered companion
+#    `{stem}-attributed.md` (deterministic output of
+#    `scripts/tools/render-speaker-transcript.py`) is a SECOND manifest
+#    entry under the same parent + `#speaker-attribution` fragment,
+#    distinguished by its `format: md` (vs the YAML's `format: yaml`).

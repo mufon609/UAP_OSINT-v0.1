@@ -134,6 +134,20 @@ download→diarize→stitch path; Haar-cascade face detection misses frequently 
 crop fallback); and several thresholds are hardcoded (pHash distance, min face size,
 segment-snap tolerance).
 
+**Test-evidence accumulated (2026-05-28 dry run on jre-2194-elizondo-2024).** The
+producer agent's non-interactive Bash shell cannot self-resolve either
+`setup-*.sh` prerequisite — `setup-photo-identity.sh` needs sudo for the
+`python3-opencv` apt install, `setup-diarize-audio.sh` walks an interactive
+Hugging Face user-conditions acceptance + `HF_TOKEN` setup. Both must run in the
+user's interactive shell before the skill is invoked, but neither `SKILL.md` nor
+`/build` step 4c surfaces this as a prerequisite, and the producer burns a run
+to discover it. Candidate fix (deferred per test-before-BACKLOG until a second
+audit re-hits it): have skill step 1 pre-flight both environments and refuse to
+dispatch the producer until they pass — or at minimum document the prereq in
+`SKILL.md`. The downloaded video + 8 anchor frames from this dry run are
+retained at `sources/video/jre-2194-elizondo-2024.mp4` + `/tmp/frames-jre-2194-elizondo-2024/`
+for a resumable continuation once the user clears the prereqs.
+
 **Remaining work.**
 1. **Audit the remaining transcript nodes**, one at a time, against the discipline:
    stenographic / published hearing transcripts are speaker-labeled in source

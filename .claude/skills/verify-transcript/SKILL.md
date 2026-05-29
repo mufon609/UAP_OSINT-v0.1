@@ -45,18 +45,20 @@ quotes against sources and fixing or removing any that don't match.
      speaker from the source's own labels and confirm the match against the
      caption file.
    - **Label-less source** (`auto-caption` / `human-corrected-caption`): the
-     canonical attribution is the speaker-attributed sibling produced by
+     canonical attribution is the `-attribution.yaml` sibling produced by
      `/prepare-transcript-sibling`. If the source lacks a verified
-     `-stitched.md` sibling, **invoke `/prepare-transcript-sibling {slug}` via
-     the Skill tool — you are the main thread, so you can.** Only if your
-     environment cannot dispatch a skill, **HALT** and direct the user to run
-     it. Once registered, confirm each quote's `speaker_id` matches the
-     sibling's attribution at the quote's timestamp. Do **not** infer the
-     speaker from surrounding caption text — that guesswork is what produces
-     misattributions. Where a boundary genuinely can't be settled, use the
-     mixed-exchange list form rather than fabricating a split.
+     `-attribution.yaml` sibling, **invoke `/prepare-transcript-sibling {slug}`
+     via the Skill tool — you are the main thread, so you can.** Only if
+     your environment cannot dispatch a skill, **HALT** and direct the user
+     to run it. Once registered, confirm each quote's `speaker_id` matches
+     the sibling's `turns[]` at the quote's line range in the source file.
+     Do **not** infer the speaker from surrounding caption text — that
+     guesswork is what produces misattributions. Where a boundary genuinely
+     can't be settled, use the mixed-exchange list form rather than
+     fabricating a split.
    Fix a wrong `speaker_id` by editing `speakers[]` or `speaker_id` in the
-   artifact and regenerating. Baselines and stitching live in
+   artifact and regenerating. The attribution sibling itself, plus the
+   photo-identity-log image-verification backstop, live in
    `/prepare-transcript-sibling`; verify-transcript does not invoke them
    directly.
 

@@ -89,10 +89,11 @@ a verified sibling"). Two flavors:
   direct the user to run it. Resume once the verified sibling is registered —
   `extract-source.py --artifact` then prefers it.
 - **Label-less transcript (`auto-caption` / `human-corrected-caption`) without a verified
-  `-stitched.md` sibling** → `speaker_id` is not derivable from the caption alone. **Invoke
+  `-attribution.yaml` sibling** → `speaker_id` is not derivable from the caption alone. **Invoke
   `/prepare-transcript-sibling {slug}` via the Skill tool.** Only if your environment cannot
   dispatch a skill, **HALT** and direct the user. Resume once registered; the verbatim source is
-  unchanged (the sibling adds the attribution layer `validate-research.py` matches `speaker_id`
+  unchanged (the sibling adds the attribution layer indexed by line range — see
+  `meta/schema-speaker-attribution.yaml` — that `validate-research.py` matches `speaker_id`
   against).
 
 ## 5. Rebuild, audit, close out

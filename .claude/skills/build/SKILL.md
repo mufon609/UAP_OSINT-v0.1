@@ -86,19 +86,21 @@ build before doing anything.
    produce→independently-verify→register contract: build-protocol →
    "Some primary sources need a verified sibling"). Read the manifest entry for
    each primary source; any label-less transcript source lacking a verified
-   `-stitched.md` sibling MUST get one before the Worker. Same shape as 4b:
+   `-attribution.yaml` sibling MUST get one before the Worker. Same shape as 4b:
    orchestrator's responsibility, **never the Worker's**, and it runs
    **regardless of the all-internal branch**. The remedy is the
-   **`/prepare-transcript-sibling`** skill, which walks the 5-step video
-   pipeline, independently verifies each below-`high` speaker resolution, and
-   registers the paired sibling: **invoke `/prepare-transcript-sibling {slug}`
-   via the Skill tool — you are the main thread, so you can.** Only if your
-   environment cannot dispatch a skill from here, **HALT** and direct the user
-   to run it. Either way, do it before the Worker emits a speaker-attributed
-   quote. Unlike 4b, the verbatim source is unchanged — `extract-source.py
-   --artifact` still pulls from the auto-caption file; the sibling adds the
-   attribution layer `validate-research.py` matches `speaker_id` against.
-   Labeled sources (`stenographic` / `published-transcript`) need no sibling.
+   **`/prepare-transcript-sibling`** skill, which runs the agent-based
+   attribution pipeline (semantic parse → structural validate → independent
+   verify → conditional image-verification backstop) and registers the paired
+   sibling: **invoke `/prepare-transcript-sibling {slug}` via the Skill tool
+   — you are the main thread, so you can.** Only if your environment cannot
+   dispatch a skill from here, **HALT** and direct the user to run it.
+   Either way, do it before the Worker emits a speaker-attributed quote.
+   Unlike 4b, the verbatim source is unchanged — `extract-source.py
+   --artifact` still pulls from the auto-caption file; the sibling YAML adds
+   the attribution layer `validate-research.py` matches `speaker_id` against
+   (indexed by line range into the source file). Labeled sources
+   (`stenographic` / `published-transcript`) need no sibling.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.

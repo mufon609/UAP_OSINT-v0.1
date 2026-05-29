@@ -4237,6 +4237,19 @@
   - format: video
     path: video/jre-2194-elizondo-2024.mp4
     archived_date: '2026-05-19'
+- url: https://www.youtube.com/watch?v=9gLPtRwXgCM#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/jre-2194-elizondo-2024-attribution.yaml
+    archived_date: '2026-05-28'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/jre-2194-elizondo-2024-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based attribution pipeline; first end-to-end pilot of the redesigned skill). Verified 2026-05-28 by independent verifier (separate agent session) — PASS with 4 corrections applied (reported-speech-inside-monologue, multi-interjection-confidence-downgrade, 2× image-verification-overprescription). 145 turns covering source_line_count=3660. Image verification: 7 turns retain needs_image_verification flag for future contributor review.'
+  - format: md
+    path: transcripts/jre-2194-elizondo-2024-attributed.md
+    archived_date: '2026-05-28'
+    note: Rendered companion of transcripts/jre-2194-elizondo-2024-attribution.yaml. Deterministic output of scripts/tools/render-speaker-transcript.py — body content byte-identical to the parent auto-caption file; labels and metadata derive from the .yaml sibling. Do not edit directly — edits go through the .yaml and a re-render.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=C4rSj5Aum7w
   status: archived
   archive_status: 1
@@ -4343,6 +4356,19 @@
     transcript_provenance: auto-caption
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
     note: Mystery Wire / 8 News Now Las Vegas (KLAS-TV) book launch interview with George Knapp, Dr. James Lacatski, and Dr. Colm Kelleher, published 2021-10-12. ~17 minutes (421 caption lines). Earliest known on-record Lacatski primary-source media (predates the WEAPONIZED EP 38 interview by 2 years). Promotional press cycle for 'Skinwalkers at the Pentagon' (Lacatski/Kelleher/Knapp, October 2021). Auto-caption typos likely present for proper names (Lacatski/Kelleher/AAWSAP/AATIP) — register as naming_quirks during Phase I per source-form preservation discipline.
+- url: https://www.youtube.com/watch?v=b3U0PVvv7RQ#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-attribution.yaml
+    archived_date: '2026-05-28'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; re-pilot run with updated brief — first to pass producer + validator first try with no overlap cleanup). Verified 2026-05-28 by independent verifier (separate agent session) — returned PASS but confabulated on 9-38/39-60 boundary; orchestrator override applied lines 26-38 correction (Lacatski answer-start). 18 turns covering source_line_count=429. Image verification: 1 turn (closing mixed-exchange 427-428) retains needs_image_verification flag.'
+  - format: md
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-attributed.md
+    archived_date: '2026-05-28'
+    note: Rendered companion of transcripts/mysterywire-lacatski-kelleher-knapp-2021-attribution.yaml. Deterministic output of scripts/tools/render-speaker-transcript.py — body content byte-identical to the parent auto-caption file; labels and metadata derive from the .yaml sibling. Do not edit directly — edits go through the .yaml and a re-render.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=bi0H_mkwTW0
   status: archived
   archive_status: 3
