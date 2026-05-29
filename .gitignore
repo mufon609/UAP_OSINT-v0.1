@@ -58,3 +58,18 @@ sources/photo-identity-log/index.csv
 # Debian/Kali. diarize-audio.py auto-relaunches under .venv-diarize/bin/python3
 # so contributors don't have to remember to `source` the activate script.
 .venv-diarize/
+
+# Project-local venv for the dlib face-embedding matcher. Created by
+# setup-face-embeddings.sh (same PEP 668 rationale as .venv-diarize). Both
+# detect-faces.py and spot-check-attribution.py auto-relaunch under
+# .venv-face/bin/python3 when it exists.
+.venv-face/
+
+# Derived baseline-encoding cache (128-d dlib embeddings of every baseline
+# crop). Rebuilt on demand from the committed baselines/ via a sha256
+# fingerprint — never authoritative, never committed.
+sources/photo-identity-log/baseline-encodings.npz
+
+# Local-only spot-check comparison scratch (pHash-vs-embed CSVs). Working
+# evidence; the authoritative result lives in meta/BACKLOG.md's C1 table.
+sources/photo-identity-log/.compare/
