@@ -377,6 +377,88 @@ convention and record the rationale.
 **Blocks:** none.
 **Blocked by:** none.
 
+### C3 — Speaker-attribution pipeline: prevent attribution errors at the source
+
+The pipeline's *verbatim* guarantee is sound, but **attribution correctness
+rests on fallible agent judgment plus hand-keying**, caught only by
+after-the-fact checks. Two opposite-polarity misattributions were found in one
+transcript this session: a worker hand-keyed a `speaker_id` that contradicted
+the sibling, and a producer boundary call was passed by the independent
+verifier at HIGH confidence yet was wrong (image evidence overturned it). The
+shipped `speaker_attribution_consistency` check catches the first class but
+only at quoted spans, and the second class never reached the image backstop
+because that backstop is gated by producer self-doubt.
+
+**The shift: make the sibling a verified single-source-of-truth, then DERIVE
+everything downstream from it.** No human re-keys attribution; the consistency
+check becomes defense-in-depth that should never fire. Because derivation
+trusts the sibling, sibling correctness (W3+W4) must land with or before
+derivation (W1).
+
+- **W1 — Derive `speaker_id`, don't author it.** New `scripts/build/stamp-speaker-id.py`
+  resolves each transcript quote's `[MM:SS]` → sibling turn → speaker and
+  stamps `speaker_id`; it also generates the artifact's `speakers[]` from the
+  sibling (so ids/names/node_links are copied, not independently re-authored —
+  killing the id-divergence hazard). The Worker stops hand-typing `speaker_id`
+  (emits text + location only); the Builder runs the stamp step. For
+  person/org artifacts, the same tool runs in confirm-mode (warns if the
+  sibling attributes a quoted span to someone other than the node subject).
+  Reuses the resolution helpers in `scripts/checks/speaker_attribution_consistency.py`
+  (`_load_siblings`, `_range_seconds`, `_resolve_line`, `_build_line_map`,
+  `_build_source_index`, `_norm_link`/`_norm_name`) and the timestamp map in
+  `scripts/tools/spot-check-attribution.py` (`build_line_timestamp_map`).
+  Touches `.claude/agents/worker.md` + `.claude/skills/build-protocol/`.
+
+- **W3 — Systematic video verification as an always-on hard gate.** Wire
+  `scripts/tools/spot-check-attribution.py` (already samples beg/mid/end frames
+  per turn across ALL turns and emits confirmed / contested-fold /
+  contested-other / inconclusive / no-baseline / n/a-foreign) into
+  `/prepare-transcript-sibling` as a mandatory pre-finalize step. A
+  `contested-fold` verdict BLOCKS finalize and routes back to producer/verifier.
+  **No graceful skip:** a sibling for a video source cannot be finalized unless
+  the video + `.venv-face` are present and the spot-check runs (`no-baseline`
+  speakers such as moderators are recorded as honestly unverified, not a pass).
+  This de-gates the backstop from producer self-doubt; it would have caught the
+  4-line boundary fold found this session. Note: `needs_image_verification` is
+  now draft-only/stripped on finalize, so the producer flag is no longer the
+  gate — the systematic spot-check is.
+
+- **W4 — `node_link` as the identity join key.** New check in
+  `scripts/build/validate-speaker-attribution.py`: every live (non-`foreign-*`)
+  speaker in a *verified* sibling must carry a `node_link`. Makes the sibling
+  the authoritative identity map and kills the honorific/name-matching
+  fragility (e.g. "Dr. Colm Kelleher" vs "Colm Kelleher"). Backfill the
+  existing siblings whose live speakers lack links.
+
+- **W2 — Harden the sibling format (follow-on).** Add deterministic per-turn
+  `start_ts`/`end_ts` and a top-level source content hash, computed by
+  `scripts/build/finalize-attribution.py` (timestamp derivation already exists
+  in spot-check). Exact timestamp resolution replaces the nearest-preceding
+  heuristic; the content hash replaces line-count-only drift detection.
+  `validate-speaker-attribution.py` gains hash + timestamp-consistency checks.
+
+- **W5 — Document the residual.** Sub-line speaker transitions (turn-end +
+  turn-start packed on one `[MM:SS]` line) cannot be represented by the
+  line-range schema and cannot be fully eliminated; keep the
+  dominant-speaker + `medium`-confidence convention and rely on W3 to catch the
+  worst cases. Document honestly in the SKILL + conventions as a known limit.
+
+**Issue → mitigation:** (1) confident-wrong verification / self-gated backstop
+→ W3. (2) errors across worker/producer/verifier, worker ignored the sibling →
+W1. (3) consistency check covers only quoted, transcript-side spans →
+dissolved by W3 (all turns verified at production) + W1 (universal derivation,
+incl. person/org confirm-mode). (4) coordinate-mismatch heuristic +
+source-stability pinning → W2; sub-line granularity → W5 (residual). (5) id
+divergence + missing node_links + honorific name-matching → W4 + W1.
+
+**Sequencing:** W3 + W4 (harden the sibling) → W1 (derive from it) → W2
+(format hardening); W5 is doc-only, anytime. Migration: re-finalize the
+existing siblings (backfill node_links, timestamps, hash) and re-stamp the
+existing transcript artifacts to confirm.
+
+**Blocks:** none.
+**Blocked by:** none. W1 is internally blocked by W3+W4.
+
 ### C4 — Skills↔conventions sharing: the layer is already cite-don't-restate; resolve the one orphan
 
 **Finding.** The skill layer already implements "per-skill + a common helper,
