@@ -1,6 +1,6 @@
 ---
 name: prepare-transcript-sibling
-description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption / Whisper / human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → conditional image-verification backstop). Photo-identity-log stays the human-in-the-loop visual audit trail. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
+description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption / Whisper / human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → mandatory active-speaker fold gate at finalize for video sources). The photo-identity-log baselines + mouth-motion engine decide who is SPEAKING, not who is on camera. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
 argument-hint: {transcript-slug}
 allowed-tools:
   - Agent(general-purpose)
@@ -26,25 +26,27 @@ text but **no built-in speaker attribution**: `speaker_id` on transcript-
 artifact quotes cannot be derived from the caption file alone. The canonical
 attribution is a **same-stem sibling YAML** indexing into the source file by
 1-indexed line range — see `meta/schema-speaker-attribution.yaml`. Produced
-by a semantic-parse agent, validated by a structural gate script, and
-independently verified by a separate agent session. **Photo-identity-log
-visual baselines stay the conditional backstop** for turns the producer
-can't resolve from text alone (and for any contributor who wants to spot-
-check) — humans stay in the loop where they add value (visual identification),
-agents do the patient text-parsing.
+by a semantic-parse agent, validated by a structural gate script,
+independently verified by a separate agent session, and — for a video source —
+**gated at finalize by a systematic active-speaker spot-check across every
+turn** (§4b; a `contested-fold` blocks finalize). The agent does the patient
+text-parsing; the image gate mechanically catches the boundary call that is
+confidently wrong and slips past the text verifier.
 
 **Why agent-based, not a mechanical audio pipeline:** corpus test
 (2026-05-28, see `meta/BACKLOG.md` A2 "Test-evidence accumulated") showed
 agents catch failure modes a mechanical turn-finder cannot — document
 recitation mid-conversation, prepared-statement reading, narrator vs
-in-room-speaker distinction — in minutes + zero prerequisites (no setup at
-all unless image-verification is actually invoked). The Yes Theory / Grusch
-documentary scan made the failure mode concrete: a mechanical face-vote
-across that transcript would have silently misattributed ~22 minutes of
-host narration to the whistleblower as first-person experiential claims.
-The image tools remain — see "Image verification" below — as a targeted
-backstop, not the spine. (The earlier diarize+stitch pipeline this replaced
-was removed once the agent pass proved out.)
+in-room-speaker distinction — that a mechanical turn-finder cannot. The agent
+pass is the attribution *spine*. The Yes Theory / Grusch documentary scan made
+the failure mode concrete: a naive mechanical face-vote across that transcript
+would have silently misattributed ~22 minutes of host narration to the
+whistleblower as first-person experiential claims — which is why the image gate
+(§4b) decides who is SPEAKING (mouth-motion), not who is on camera. For a video
+source that gate is a mandatory finalize step, so the dlib engine + the source
+recording are prerequisites at finalize (not at draft time). (The earlier
+diarize+stitch pipeline this replaced was removed once the agent pass proved
+out.)
 
 **Structural verbatim guarantee.** Agents emit references to line ranges
 in `source_path`; they never quote source text in their output. The
@@ -224,8 +226,13 @@ against the actual source file, not against the producer's rationale
 prose.**
 
 The verifier returns:
-- **PASS** — the orchestrator runs `python3 scripts/build/finalize-attribution.py
-  {draft}.yaml --verifier-session {id}`, which sets `verification_status:
+- **PASS** — the orchestrator finalizes **through the W3 fold gate**:
+  `python3 scripts/build/finalize-attribution.py {draft}.yaml
+  --verifier-session {id} --video sources/video/{recording}` (or `--no-video`
+  ONLY for a genuinely audio-only source). Finalize first runs the
+  active-speaker spot-check across EVERY turn (§4b); any `contested-fold`
+  BLOCKS finalize and routes back to producer/verifier — no graceful skip. On a
+  clean gate it sets `verification_status:
   verified` + `verifier_session` AND **strips the verification scaffolding**:
   every turn's `rationale` + `verifier_notes` + `needs_image_verification`, and
   the top-level `verifier_notes`. The committed sibling is structured-only —
@@ -248,56 +255,57 @@ The verifier never asserts speaker identities from outside the source
 text — they're checking the producer's read of the same evidence, not
 introducing new evidence.
 
-## 4b. Image verification (CONDITIONAL — only for `needs_image_verification: true`).
+## 4b. Image verification — the MANDATORY pre-finalize fold gate (W3).
 
-For any turn the producer marked `needs_image_verification: true`, the
-photo-identity-log machinery resolves the ambiguity against actual
-frames. **This step is optional and gated by the producer's flagging
-discipline** — most transcripts won't trigger it. When triggered:
+**Not optional, not gated by the producer's self-doubt.** `finalize-attribution.py
+--video` runs `spot-check-attribution.py` across EVERY turn of a video-source
+sibling; a `contested-fold` verdict BLOCKS finalize and routes back. **No
+graceful skip:** a sibling whose source has a recording cannot be finalized
+unless the spot-check actually runs (video + `.venv-face` present). `--no-video`
+is the explicit, honest opt-out for a genuinely audio-only source — not a way
+to skip a check that could have run.
 
-1. Ensure the source video is on disk:
-   `python3 scripts/tools/download-video.py {parent_url} --slug {slug}`
-   (idempotent; skip-on-exists). Skip if the source is audio-only.
-2. For each flagged turn's first line, derive the `[MM:SS]` timestamp
-   from the source line, then `python3 scripts/tools/extract-frames.py
-   burst --video sources/video/{slug}.mp4 --timestamps MM:SS`.
-3. `python3 scripts/tools/detect-faces.py detect --index
-   /tmp/frames-{slug}/burst-MM-SS/index.md` — dlib HOG detection + ResNet
-   face-embedding matching against `sources/photo-identity-log/baselines/`
-   (embeddings replaced Haar+pHash per BACKLOG C1: the same/different-person
-   distance gap eliminates look-alike false positives). For a turn-level
-   mechanical cross-check across a whole sibling, `spot-check-attribution.py`
-   uses the same engine.
-4. Outcomes:
-   - **Clean baseline match:** agent verifier records an
-     `image_verification[]` entry with `resolution: confirmed` (or
-     `corrected` if the image evidence overrides the producer's
-     attribution) and updates the corresponding turn's `speaker_id`
-     and confidence.
-   - **No clear match, or multiple plausible matches:** **prompt the
-     contributor**. Surface the extracted crops + the producer's
-     attribution. Contributor makes the call; record as
-     `resolution: ambiguous` with `resolved_by: contributor` and
-     `contributor_notes`. This is the human-in-the-loop path.
-5. After all flagged turns are resolved, re-run the structural
-   validator (the YAML now has updated turns + an `image_verification[]`
-   list).
+Why systematic, not flag-gated: the failure mode is a producer boundary call
+that is *confidently wrong* and passes the independent verifier — exactly the
+call that never raises a self-doubt flag. So the image check must run on ALL
+turns, not only the ones the producer flagged. (`needs_image_verification` is
+now draft-only scaffolding, stripped on finalize; the systematic spot-check is
+the gate.)
 
-If the dlib engine isn't installed (`.venv-face/` absent — run
-`setup-face-embeddings.sh`), `detect-faces.py` errors with the install
-pointer. The skill does NOT treat that as a blocker — it routes the affected
-turns to manual contributor review instead. The image path is the backstop,
-not the prerequisite.
+What the gate decides — **who is SPEAKING, not who is on camera.** It samples a
+per-turn frame burst, resolves WHO each on-screen face is (dlib embeddings via
+`detect-faces.py`) and WHICH face is talking (`active-speaker.py` mouth-motion),
+and folds only when another identified speaker is the active speaker over a
+long-enough window. Framing false-positives (two-shots, reaction cutaways,
+voiceover, brief turns) are absorbed by the dominance + active-speaker +
+duration guards, so a `contested-fold` is a *likely wrong label*. Verdicts that
+do NOT block — recorded honestly, never a pass-by-omission: `confirmed` /
+`confirmed-with-footnote`, `honestly-unverified` (off-camera/voiceover speaker,
+or no on-camera speaker), `inconclusive`, `no-baseline` (e.g. a moderator with
+no baseline), `contested-other` (b-roll/archival identity).
 
-Either way, `needs_image_verification` is **draft-phase scaffolding**: it is
-the producer's request to this step, not a durable field. Finalize (step 5
-above) strips it from every turn, and the structural validator FATALs if a
-verified sibling still carries it. A turn that was image-verified keeps its
-`image_verification[]` entry as the durable record; a turn whose flag the
-contributor chose not to act on (image path skipped, or backstop unavailable)
-keeps only its `confidence: low|medium` marker. Do not finalize a sibling with
-the flag still standing as an unactioned to-do — resolve or consciously accept
-each flagged turn first.
+On a `contested-fold` (gate blocked):
+1. Read the turn's source lines + the spot-check note (which identity is the
+   active speaker) and confirm against the transcript text.
+2. Relabel the turn's `speaker_id` to the correct speaker (or split it / mark a
+   mixed exchange), and record an `image_verification[]` entry
+   (`resolution: corrected`, `resolved_speaker_id`, `resolved_by: agent-verifier`;
+   use `resolution: ambiguous` + `resolved_by: contributor` when a human must
+   adjudicate).
+3. Re-run `validate-speaker-attribution.py`, then re-run finalize — the gate
+   must come back clean (0 `contested-fold`) before the sibling is verified.
+
+Setup the gate needs: the source recording on disk
+(`download-video.py {parent_url} --slug {slug}`) and the dlib engine
+(`.venv-face/`, via `setup-face-embeddings.sh`). If either is missing the gate
+cannot run and finalize refuses — that IS the no-graceful-skip rule, not a bug.
+
+**Residual (W5) — sub-line transitions.** When a turn-end and the next turn-start
+are packed onto one `[MM:SS]` line, the line-range schema cannot split them;
+assign the line to the speaker who dominates its content (`confidence: medium`)
+and rely on this gate to catch the worst cases. A turn that is genuinely a fast
+two-speaker exchange takes a mixed-exchange `[s1, s2]` label, which the gate
+treats as crosstalk (not a fold).
 
 ## 5. Register + render.
 

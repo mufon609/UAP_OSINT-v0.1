@@ -409,19 +409,29 @@ derivation (W1).
   `scripts/tools/spot-check-attribution.py` (`build_line_timestamp_map`).
   Touches `.claude/agents/worker.md` + `.claude/skills/build-protocol/`.
 
-- **W3 — Systematic video verification as an always-on hard gate.** Wire
-  `scripts/tools/spot-check-attribution.py` (already samples beg/mid/end frames
-  per turn across ALL turns and emits confirmed / contested-fold /
-  contested-other / inconclusive / no-baseline / n/a-foreign) into
-  `/prepare-transcript-sibling` as a mandatory pre-finalize step. A
-  `contested-fold` verdict BLOCKS finalize and routes back to producer/verifier.
-  **No graceful skip:** a sibling for a video source cannot be finalized unless
-  the video + `.venv-face` are present and the spot-check runs (`no-baseline`
-  speakers such as moderators are recorded as honestly unverified, not a pass).
-  This de-gates the backstop from producer self-doubt; it would have caught the
-  4-line boundary fold found this session. Note: `needs_image_verification` is
-  now draft-only/stripped on finalize, so the producer flag is no longer the
-  gate — the systematic spot-check is.
+- **W3 — Systematic video verification as an always-on hard gate. DONE
+  (2026-05-31).** `finalize-attribution.py` now requires `--video` (runs
+  `spot-check-attribution.py` across ALL turns; any `contested-fold` BLOCKS
+  finalize and routes back) or `--no-video` (explicit audio-only opt-out) — no
+  graceful skip by omission, and the gate refuses if the video / `.venv-face`
+  are missing. `/prepare-transcript-sibling` §4b is rewritten from "conditional,
+  producer-flag-gated" to this mandatory gate; `needs_image_verification` is
+  draft-only/stripped on finalize.
+  **Correction to the original spec — the verdict had to be made trustworthy
+  first.** Measured on the 4 verified siblings, the old presence-based
+  `contested-fold` was a near-100% false-block on real footage: it fired on any
+  on-screen co-presence, so two-shots, reaction cutaways, and voiceover packages
+  all folded correct turns (jre 22, mysterywire 7, 8newsnow 4; lucistrust 0).
+  Face PRESENCE is not the SPEAKING question. So the gate is built on a rewritten
+  verdict (commit `feat(spot-check): verify WHO is speaking…`): Stage 1
+  dominance/consistency over a per-turn burst + off-camera-role awareness;
+  Stage 2 `active-speaker.py` (mouth-aspect-ratio lip-motion composed with the
+  dlib identity engine) so a fold means *another identified person is the active
+  speaker*; plus `MIN_FOLD_FRAMES`/`MIN_FOLD_SECONDS` floors. Framing
+  false-folds 33 → 0 across the 4 siblings, while the gate surfaced a genuine
+  misattribution it would otherwise have missed (jre 544-578, a 35-line Elizondo
+  block mislabeled Rogan — now corrected). `no-baseline`/`honestly-unverified`/
+  `inconclusive` are recorded honestly, never a pass-by-omission.
 
 - **W4 — `node_link` as the identity join key.** New check in
   `scripts/build/validate-speaker-attribution.py`: every live (non-`foreign-*`)

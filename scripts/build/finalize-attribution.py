@@ -20,24 +20,43 @@ Kept: all structured fields, `confidence`, `referenced_source`, speaker
 `notes`, `image_verification` (turn_line_range / resolution /
 resolved_speaker_id / resolved_by).
 
-Run after the independent verifier returns PASS:
+W3 fold gate (BACKLOG C3) — finalize is mechanically gated on the active-
+speaker spot-check. There is NO graceful skip: a sibling whose source has a
+recording cannot be finalized unless the spot-check runs clean.
 
-  ./finalize-attribution.py SIBLING.yaml --verifier-session SESSION_ID
+  ./finalize-attribution.py SIBLING.yaml --verifier-session SESSION_ID --video VIDEO.mp4
+  ./finalize-attribution.py SIBLING.yaml --verifier-session SESSION_ID --no-video
 
-On an already-verified sibling (re-finalize), --verifier-session may be
-omitted — the existing one is kept. Run `validate-speaker-attribution.py`
-afterwards; a verified sibling that still carries scaffolding is a FATAL there
-(this tool is what clears it).
+  - `--video PATH`  runs scripts/tools/spot-check-attribution.py across ALL
+    turns; any `contested-fold` verdict (another in-transcript speaker is the
+    active on-camera speaker) BLOCKS finalize and routes back to the producer/
+    verifier. The verdict is trustworthy: framing false-positives (two-shots,
+    cutaways, voiceover) are handled by the dominance + active-speaker +
+    duration guards, so a fold means a likely wrong label.
+  - `--no-video`  the explicit, honest opt-out for a genuinely audio-only
+    source (no recording to verify against). Recorded as the contributor's
+    assertion; the source's `confidence` markers carry the residual.
+  - neither       refused — the gate is not skippable by omission.
+
+On an already-verified sibling (re-finalize / migration), --verifier-session
+may be omitted — the existing one is kept; the fold gate still runs. Run
+`validate-speaker-attribution.py` afterwards; a verified sibling that still
+carries scaffolding is a FATAL there (this tool is what clears it).
 """
 
 import argparse
+import csv
+import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import REPO_ROOT, strict_yaml_load  # noqa: E402
+
+SPOT_CHECK = REPO_ROOT / "scripts" / "tools" / "spot-check-attribution.py"
 
 HEADER = (
     "# Speaker-attribution sibling — verified, structured-only. Verification\n"
@@ -48,6 +67,25 @@ HEADER = (
     "# references only, no transcript text. Conforms to\n"
     "# meta/schema-speaker-attribution.yaml.\n"
 )
+
+
+def run_fold_gate(sibling_path: Path, video_path: Path) -> list:
+    """W3 gate — run the active-speaker spot-check across all turns and return
+    the list of `contested-fold` rows (empty = clean). Exits non-zero if the
+    spot-check itself cannot run (missing video / .venv-face): no graceful
+    skip — an unrunnable gate blocks finalize rather than passing silently."""
+    out_csv = Path(tempfile.mkdtemp(prefix="finalize-foldgate-")) / "spot-check.csv"
+    cmd = [sys.executable, str(SPOT_CHECK), str(sibling_path),
+           "--video", str(video_path), "--output", str(out_csv)]
+    print("W3 fold gate: running active-speaker spot-check across all turns…")
+    if subprocess.run(cmd).returncode != 0 or not out_csv.is_file():
+        sys.exit(
+            "error: W3 fold gate could not run the spot-check (video + .venv-face "
+            "are required; no graceful skip). Fix the environment, or use "
+            "--no-video for a genuinely audio-only source."
+        )
+    with out_csv.open() as f:
+        return [r for r in csv.DictReader(f) if r.get("verdict") == "contested-fold"]
 
 
 def finalize(data: dict, verifier_session: str | None) -> dict:
@@ -89,11 +127,33 @@ def main() -> None:
     ap.add_argument("--verifier-session",
                     help="verifier agent session id (sets status=verified). "
                          "Optional when the sibling is already verified.")
+    gate = ap.add_mutually_exclusive_group(required=True)
+    gate.add_argument("--video", help="source recording — runs the W3 active-speaker "
+                                      "fold gate; contested-fold blocks finalize")
+    gate.add_argument("--no-video", action="store_true",
+                      help="explicit opt-out for a genuinely audio-only source "
+                           "(no recording to verify against)")
     args = ap.parse_args()
 
     path = Path(args.path)
     if not path.is_file():
         sys.exit(f"error: not found: {path}")
+
+    # W3 fold gate — runs before any mutation, so a blocked finalize leaves the
+    # sibling untouched for the producer/verifier to fix and re-run.
+    if args.video:
+        video = Path(args.video)
+        if not video.is_file():
+            sys.exit(f"error: --video not found: {video}")
+        contested = run_fold_gate(path, video)
+        if contested:
+            print("\nW3 GATE BLOCKED — contested-fold turn(s); finalize refused. "
+                  "Fix attribution (relabel) and re-run:", file=sys.stderr)
+            for r in contested:
+                print(f"  lines {r.get('line_range'):>12} "
+                      f"(assigned {r.get('speaker_id')}): {r.get('notes')}", file=sys.stderr)
+            sys.exit(2)
+        print("W3 fold gate: clean (0 contested-fold).")
 
     with path.open() as f:
         data = strict_yaml_load(f)

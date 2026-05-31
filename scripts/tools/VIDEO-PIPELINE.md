@@ -236,16 +236,17 @@ crops leave git history but no longer in HEAD.
 With baselines registered, two tools resolve who-is-who:
 
 - `detect-faces.py detect` on frames at any contested timestamp tags each
-  detected face with its embedding-matched identity — the
-  `/prepare-transcript-sibling` image-verification backstop calls this for
-  turns the producer flagged `needs_image_verification`.
-- `spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4` runs a mechanical
-  turn-by-turn cross-check of a finished attribution sibling: it samples
-  beg/mid/end frames per turn and flags `confirmed` / `contested-fold` /
-  `contested-other` / `inconclusive` against each turn's `speaker_id`.
+  detected face with its embedding-matched identity — ad-hoc inspection when
+  resolving a single contested turn.
+- `spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4` is the **W3
+  finalize gate** (BACKLOG C3): a per-turn frame burst across every turn,
+  deciding who is SPEAKING (mouth-motion via `active-speaker.py`) not just who
+  is on camera. `contested-fold` (another identified speaker is the active
+  speaker) BLOCKS finalize. It runs automatically inside
+  `finalize-attribution.py --video`; run it standalone to preview before
+  finalizing.
 
-Both feed the contributor's judgment when populating `speaker_id`; neither is
-manifest-registered. The downloaded transcript at
+Both feed attribution; neither is manifest-registered. The downloaded transcript at
 `sources/transcripts/{slug}-downloaded.md` remains the verbatim source the
 validator's verbatim-quote check verifies against.
 
@@ -359,5 +360,6 @@ python3 scripts/tools/detect-faces.py prune
 | `detect-faces.py detect` | After any extract-frames run, to find faces in the extracted frames |
 | `detect-faces.py register` | After reviewing a crop, to promote it to a persistent baseline |
 | `detect-faces.py prune` | Periodic cleanup of unidentified crops |
-| `spot-check-attribution.py` | Mechanical turn-by-turn cross-check of a finished attribution sibling against the video (beg/mid/end frame sampling → confirmed / contested-fold / contested-other / inconclusive) |
+| `spot-check-attribution.py` | The W3 finalize gate — per-turn frame burst + active-speaker (mouth-motion) deciding who is SPEAKING; `contested-fold` blocks finalize. Runs inside `finalize-attribution.py --video`; standalone for preview |
+| `active-speaker.py` | Mouth-aspect-ratio (MAR) active-speaker detection (WHICH on-screen face is talking); library for the spot-check gate, plus a calibration CLI |
 | `extract-firefox-cookies.py` | Only when piping cookies into a tool that doesn't support `--cookies-from-browser` (e.g., `transcribe.py`) |
