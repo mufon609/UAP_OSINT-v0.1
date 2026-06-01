@@ -41,8 +41,8 @@ The same exotic material point is on the public sworn record in his [`/documents
 
 | Name | Role | Node Link |
 |---|---|---|
+| Joe Rogan | Host | [`/people/joe-rogan`] |
 | Luis Elizondo | Guest | [`/people/luis-elizondo`] |
-| Joe Rogan | Host |  |
 
 ---
 
@@ -313,6 +313,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/david-grusch`]
 - [`/people/hal-puthoff`]
 - [`/people/james-lacatski`]
+- [`/people/joe-rogan`]
 - [`/people/luis-elizondo`]
 - [`/people/ronald-moultrie`]
 

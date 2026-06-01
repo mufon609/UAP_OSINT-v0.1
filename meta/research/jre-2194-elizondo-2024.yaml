@@ -25,23 +25,23 @@ context_extrinsic:
 speakers:
 - id: s1
   added_date: '2026-05-23'
+  name: Joe Rogan
+  role: Host
+  node_link: /people/joe-rogan
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[0:11]'
+- id: s2
+  added_date: '2026-05-23'
   name: Luis Elizondo
   role: Guest
   node_link: /people/luis-elizondo
   source:
     path: transcripts/jre-2194-elizondo-2024-downloaded.md
     location: '[1:47]'
-- id: s2
-  added_date: '2026-05-23'
-  name: Joe Rogan
-  role: Host
-  node_link: null
-  source:
-    path: transcripts/jre-2194-elizondo-2024-downloaded.md
-    location: '[0:11]'
 quotes:
 - id: q1
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -52,7 +52,7 @@ quotes:
   significance: 'Elizondo''s account of his post-Army federal-service career — counter-intelligence work and a 2008 job change to the Director of National Intelligence.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, narrating his career timeline'
 - id: q2
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -63,7 +63,7 @@ quotes:
   significance: 'Elizondo''s account of a 2008 Pentagon role running the integration between national-level intelligence and local, state, and tribal law enforcement.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, continuing his career timeline'
 - id: q3
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -74,7 +74,7 @@ quotes:
   significance: 'Elizondo''s account of being approached in early 2009 by two individuals to consider him for "a very nuanced program very secretive program."'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, recounting his 2009 recruitment'
 - id: q4
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -85,7 +85,7 @@ quotes:
   significance: 'Elizondo''s account of his initial role running the counter-intelligence and security aspect of the program before he knew what it was.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, on the nature of his initial role'
 - id: q5
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -96,7 +96,7 @@ quotes:
   significance: 'Elizondo''s account of being taken to meet the program director at an undisclosed DC-area office.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, describing the meeting with the program director'
 - id: q6
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -107,7 +107,7 @@ quotes:
   significance: 'Elizondo''s account of first meeting James Lacatski ([`/people/james-lacatski`]) (rendered "James latky / Dr James latsky PhD" in the auto-caption), whom he calls "the number one rocket scientist in the US government."'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, recounting his first meeting with the program director'
 - id: q7
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -118,7 +118,7 @@ quotes:
   significance: 'Elizondo''s account of the program director asking him "what do you think about UFOs" at their first meeting.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, recounting the director''s question at their first meeting'
 - id: q8
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -129,7 +129,7 @@ quotes:
   significance: 'Elizondo''s account of his investigative posture inside AATIP (rendered "ATP" in the auto-caption) — presuming a case was man-made and conventional until compelling data said otherwise.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, describing his analytical posture inside the program'
 - id: q9
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -140,7 +140,7 @@ quotes:
   significance: 'Elizondo names AAWSAP (rendered "ASAP") and AATIP (rendered "atps") as the programs through which official government personnel raised concerns.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, naming the umbrella and follow-on programs'
 - id: q10
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -151,7 +151,7 @@ quotes:
   significance: 'Elizondo names AAWSAP (rendered "assap") as "the larger umbrella program."'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, describing the umbrella program'
 - id: q11
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -162,7 +162,7 @@ quotes:
   significance: 'Elizondo''s on-record claim that "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans" — the same exotic-materials point he places on the public record in his sworn QFR responses ([`/documents/elizondo-qfr-burlison-20241219`]).'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, on what the US government possesses'
 - id: q12
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -173,7 +173,7 @@ quotes:
   significance: 'Elizondo''s account of a roughly year-long Pentagon prepublication review process (the auto-caption renders "Pentagon" as "pen pagon").'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, prefacing the exotic-materials claim with the review process'
 - id: q13
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -184,7 +184,7 @@ quotes:
   significance: 'Elizondo''s framing of the question as "non nonhuman intelligence that looks like us that moves around with us" versus something from another planet.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, framing the non-human-intelligence question'
 - id: q14
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -195,7 +195,7 @@ quotes:
   significance: 'Elizondo''s definitive statement that "whatever it is it''s here" and that senior government figures have said the same.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, on the "it''s here" framing'
 - id: q15
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -206,7 +206,7 @@ quotes:
   significance: 'Elizondo names Hal Puthoff ([`/people/hal-puthoff`]) (rendered "Dr halud off") and Eric W. Davis (rendered "Dr AR Davis") among the scientists doing mathematical calculations on the team.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, naming the scientists on the team'
 - id: q16
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -217,7 +217,7 @@ quotes:
   significance: 'Elizondo ties Hal Puthoff ([`/people/hal-puthoff`]) — credited with helping start the government''s remote-viewing program — to AATIP (rendered "ATP") as one of the program''s scientists.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, describing Puthoff''s role on the program'
 - id: q17
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |
@@ -228,7 +228,7 @@ quotes:
   significance: 'Elizondo''s claim that a faction inside the government opposes his disclosure and that people "make stuff up about me trying to discredit this topic" — a discrediting / retaliation framing.'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, on internal-government opposition and discrediting'
 - id: q18
-  speaker_id: s1
+  speaker_id: s2
   added_date: '2026-05-23'
   statement_date: '2024-08-23'
   text: |

@@ -230,6 +230,7 @@ landing rules.
 | `research-scaffold.py` | Scaffold an empty research artifact for a node |
 | `extract-source.py` | Extract a primary source to plaintext (Phase I) |
 | `build-from-research.py` | Regenerate a node from its research artifact (Phase II — document / person / event / transcript / media / organization / location / finding / investigation). Per-type renderers live at `scripts/build/renderers/{type}.py`; `build-from-research.py` is the orchestrator. |
+| `stamp-speaker-id.py` | Derive transcript-quote `speaker_id` from the verified attribution sibling (BACKLOG C3-W1) — the Builder runs this instead of the Worker hand-keying. Resolves each quote's `[MM:SS]` → sibling turn → speaker, aligns the artifact's `speakers[]` ids + node_links to the sibling (killing the id-divergence hazard), and stamps `speaker_id`. Transcript artifacts → derive mode; person/org → confirm mode (warn-only). Reuses the `speaker_attribution_consistency` resolution helpers; ruamel round-trip keeps unchanged artifacts byte-identical. Dry run by default; `--write` applies. |
 | `review-coverage.py` | Coverage / boundary / stub-linking / description-drift review (Phase III) |
 | `validate.py` | Schema, structural, and verbatim-quote validation |
 | `validate-research.py` | Research-artifact structural validation |

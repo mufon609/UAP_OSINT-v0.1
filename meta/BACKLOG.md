@@ -395,19 +395,23 @@ check becomes defense-in-depth that should never fire. Because derivation
 trusts the sibling, sibling correctness (W3+W4) must land with or before
 derivation (W1).
 
-- **W1 — Derive `speaker_id`, don't author it.** New `scripts/build/stamp-speaker-id.py`
-  resolves each transcript quote's `[MM:SS]` → sibling turn → speaker and
-  stamps `speaker_id`; it also generates the artifact's `speakers[]` from the
-  sibling (so ids/names/node_links are copied, not independently re-authored —
-  killing the id-divergence hazard). The Worker stops hand-typing `speaker_id`
-  (emits text + location only); the Builder runs the stamp step. For
-  person/org artifacts, the same tool runs in confirm-mode (warns if the
-  sibling attributes a quoted span to someone other than the node subject).
-  Reuses the resolution helpers in `scripts/checks/speaker_attribution_consistency.py`
-  (`_load_siblings`, `_range_seconds`, `_resolve_line`, `_build_line_map`,
-  `_build_source_index`, `_norm_link`/`_norm_name`) and the timestamp map in
-  `scripts/tools/spot-check-attribution.py` (`build_line_timestamp_map`).
-  Touches `.claude/agents/worker.md` + `.claude/skills/build-protocol/`.
+- **W1 — Derive `speaker_id`, don't author it. DONE (2026-06-01).**
+  `scripts/build/stamp-speaker-id.py` resolves each transcript quote's `[MM:SS]`
+  → sibling turn → speaker and stamps `speaker_id`, and aligns the artifact's
+  `speakers[]` ids + node_links to the sibling (copied, not re-authored —
+  killing the id-divergence hazard). Derive mode for transcript artifacts;
+  confirm mode (warn-only) for person/org. Reuses the
+  `speaker_attribution_consistency` resolution helpers verbatim; ruamel
+  round-trip keeps an unchanged artifact byte-identical. The Worker no longer
+  hand-keys `speaker_id` (`.claude/agents/worker.md`); the Builder runs the
+  stamp step after merge (`.claude/agents/builder.md` step 0b). Migration: ran
+  it on all four transcript artifacts — jre-2194 had the swapped `s1`/`s2`
+  (artifact `s1`=Elizondo vs sibling `s1`=Rogan); the tool realigned them,
+  backfilled `/people/joe-rogan`, and re-stamped its 18 quotes (`s1`→`s2`,
+  still Elizondo); node rebuilt, `/people/joe-rogan` now tallies in the
+  broken-link registry. The other three were already consistent (no-ops). The
+  `speaker_attribution_consistency` check is now defense-in-depth that should
+  never fire.
 
 - **W3 — Systematic video verification as an always-on hard gate. DONE
   (2026-05-31).** `finalize-attribution.py` now requires `--video` (runs

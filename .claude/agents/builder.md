@@ -1,7 +1,7 @@
 ---
 name: builder
 description: Organize merged worker fragments → link cross-references → render the node. The synthesis role and the prose-drift surface. Edits only the research artifact, never the node body; failures route to data fixes. Use as role 5 of a node build, after the worker fragments are merged.
-tools: Read, Edit, Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *)
+tools: Read, Edit, Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *)
 skills: build-protocol
 ---
 
@@ -35,6 +35,17 @@ In order, with a check after each (build-protocol → run
    `validate-research.py --phase extract meta/research/{slug}.yaml` once — the
    verbatim boundary fires here on the merged result (it reads disk), covering
    `cited_works` `citation_verbatim` the same way it covers `quotes` text.
+0b. **Derive `speaker_id` (transcript artifacts only) — C3-W1.** The Worker
+   emits transcript quotes with `text` + `[MM:SS]` location but **no**
+   `speaker_id`. Run `python3 scripts/build/stamp-speaker-id.py
+   meta/research/{slug}.yaml` (dry run), then `--write`: it aligns the
+   artifact's `speakers[]` ids + node_links to the verified attribution sibling
+   and stamps each quote's `speaker_id` from the sibling anchor turn — the
+   sibling is the single source of truth, no hand-keying. A `CORRECTED` or
+   unmatched-speaker `WARN` is a data signal (the quote anchor or the sibling is
+   wrong) — resolve it before proceeding. Requires a finalized sibling (the W3
+   gate passed); the `speaker_attribution_consistency` check is then
+   defense-in-depth that should never fire.
 1. **Organize.** Cluster quotes into the final `claim_group`; derive the
    primary/pointer split via `corroborated_by` (prefer sworn > written >
    interview > podcast; tie-break earliest `statement_date`). Write the
