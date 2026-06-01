@@ -461,11 +461,18 @@ derivation (W1).
   heuristic; the content hash replaces line-count-only drift detection.
   `validate-speaker-attribution.py` gains hash + timestamp-consistency checks.
 
-- **W5 — Document the residual.** Sub-line speaker transitions (turn-end +
-  turn-start packed on one `[MM:SS]` line) cannot be represented by the
-  line-range schema and cannot be fully eliminated; keep the
-  dominant-speaker + `medium`-confidence convention and rely on W3 to catch the
-  worst cases. Document honestly in the SKILL + conventions as a known limit.
+- **W5 — Document the residual. DONE (2026-06-01).** Sub-line speaker
+  transitions (turn-end + turn-start packed on one `[MM:SS]` line) cannot be
+  represented by the line-range schema and cannot be fully eliminated; the
+  dominant-speaker + `medium`-confidence convention is kept and W3 catches the
+  worst cases. Documented honestly in
+  `.claude/skills/prepare-transcript-sibling/SKILL.md` — the producer rule at
+  the "atomic unit" guidance and the "Residual (W5) — sub-line transitions"
+  section (assign the contested line to the dominant speaker at
+  `confidence: medium`; a genuine fast two-speaker exchange takes a
+  mixed-exchange `[s1, s2]` label the gate reads as crosstalk, not a fold) —
+  and in `meta/conventions.md` (the mixed-exchange `speaker_id`-as-list form,
+  "use it only when the turns are genuinely not separable").
 
 **Issue → mitigation:** (1) confident-wrong verification / self-gated backstop
 → W3. (2) errors across worker/producer/verifier, worker ignored the sibling →
