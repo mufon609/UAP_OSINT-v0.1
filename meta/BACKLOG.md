@@ -474,12 +474,19 @@ derivation (W1).
   1997-3178). Resolved per W5: relabeled mixed-exchange `[s1, s2]` at
   `confidence: low` (preserves the in-range Elizondo quote; the gate reads
   crosstalk, not a fold). All 4 siblings re-finalized clean + idempotent.
-  **Deferred (tracked):** the consistency check still resolves quote anchors by
-  the nearest-preceding-line heuristic — rewiring it to resolve by per-turn
-  `[start_ts, end_ts]` containment touches the `validate-research.py`
-  cross-validator and was held as a separable follow-on; the per-turn
-  timestamps land now as tamper-evident metadata + the content-hash drift
-  detector.
+  **Follow-on (done 2026-06-01):** quote-anchor resolution now runs off the
+  per-turn timestamps. A shared `resolve_anchor_turns` (contiguous half-open
+  turn intervals from `start_ts`; bisect for the anchor; ±`ANCHOR_TOLERANCE_S`
+  for the span) replaced the nearest-preceding-line heuristic in both call sites
+  — `speaker_attribution_consistency.check()` (the `validate-research.py`
+  cross-validator) and `stamp-speaker-id._anchor_speakers` — so resolution is a
+  pure function of the sibling (no source re-read; the sibling validator already
+  proves its timestamps match the source) and the two sites agree by
+  construction. `ANCHOR_TOLERANCE_S = 2` was calibrated by a differential sweep:
+  it reproduces the old line-based span on all 65 sibling-backed quotes in the
+  repo with **zero divergence** (the anchor is ε-independent). Dead line helpers
+  (`_build_source_index` / `_resolve_line` / `_build_line_map` / `_SrcResolver`)
+  removed (net −39 lines).
 
 - **W5 — Document the residual. DONE (2026-06-01).** Sub-line speaker
   transitions (turn-end + turn-start packed on one `[MM:SS]` line) cannot be

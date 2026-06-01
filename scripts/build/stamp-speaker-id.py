@@ -42,13 +42,10 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from lib._common import REPO_ROOT  # noqa: E402
 from checks.speaker_attribution_consistency import (  # noqa: E402
-    _range_seconds, _build_source_index, _resolve_line, _build_line_map,
+    _range_seconds, resolve_anchor_turns,
     _norm_link, _norm_name, _load_siblings,
 )
-
-SOURCES = REPO_ROOT / "sources"
 
 
 def _yaml() -> YAML:
@@ -79,45 +76,25 @@ def _collapse(ids):
     return u[0] if len(u) == 1 else u
 
 
-class _SrcResolver:
-    """Per-source cache of (seconds→line index, sorted seconds, line→turn map)."""
-
-    def __init__(self):
-        self._cache = {}
-
-    def get(self, spath, sibling):
-        if spath not in self._cache:
-            index, total = _build_source_index(SOURCES / spath)
-            declared = sibling.get("source_line_count")
-            if index is None or (isinstance(declared, int) and declared != total):
-                self._cache[spath] = (None, None, None)
-            else:
-                self._cache[spath] = (index, sorted(index), _build_line_map(sibling))
-        return self._cache[spath]
-
-
-def _anchor_speakers(q, sibling, spath, res):
+def _anchor_speakers(q, sibling, spath):
     """(anchor_live_ids, span_live_ids, status) for a quote, resolving its
-    `[MM:SS]` location through the sibling. `span` pads ±1 line to absorb sub-
-    line / lead-in boundaries (same tolerance as the consistency check)."""
+    `[MM:SS]` location against the sibling's per-turn timestamps (W2) via the
+    shared `resolve_anchor_turns`. `span` carries the boundary slop (sub-line /
+    lead-in) the old ±1-line pad provided — the same resolver the consistency
+    check uses, so derive and cross-validate agree by construction. No source
+    re-read: validate-speaker-attribution.py has already proven the sibling's
+    timestamps match the source."""
     src = q.get("source") or {}
     start, end = _range_seconds(src.get("location"))
     if start is None:
         return [], [], "no-anchor"
-    index, sorted_secs, line_map = res.get(spath, sibling)
-    if index is None:
-        return [], [], "stale-source"
-    sl = _resolve_line(index, sorted_secs, start)
-    if sl is None:
-        return [], [], "pre-first-tick"
-    el = _resolve_line(index, sorted_secs, end) or sl
-    anchor = line_map.get(sl)
+    anchor, span_turns, status = resolve_anchor_turns(sibling, start, end)
+    if status != "ok":
+        return [], [], status  # pre-first-tick / no-timed-turns
     anchor_live = _live(anchor.get("speaker_id")) if anchor else []
     span = []
-    for ln in range(min(sl, el) - 1, max(sl, el) + 2):
-        t = line_map.get(ln)
-        if t:
-            span += _live(t.get("speaker_id"))
+    for t in span_turns:
+        span += _live(t.get("speaker_id"))
     return anchor_live, span, "ok"
 
 
@@ -141,7 +118,6 @@ def _sibling_paths(quotes, siblings):
 # ---------------------------------------------------------------------------
 
 def _derive(art, sibling, spath, changes, warnings):
-    res = _SrcResolver()
     sib_speakers = sibling.get("speakers") or []
     sib_by_id = {s.get("id"): s for s in sib_speakers if isinstance(s, dict)}
     sib_by_link, sib_by_name = {}, {}
@@ -197,7 +173,7 @@ def _derive(art, sibling, spath, changes, warnings):
             continue
         old = q.get("speaker_id")
         old_set = {remap.get(x, x) for x in (old if isinstance(old, list) else [old])} if old else set()
-        anchor_live, span, status = _anchor_speakers(q, sibling, spath, res)
+        anchor_live, span, status = _anchor_speakers(q, sibling, spath)
 
         if status != "ok":
             new = _collapse(old_set) if old_set else None
@@ -228,7 +204,6 @@ def _derive(art, sibling, spath, changes, warnings):
 # ---------------------------------------------------------------------------
 
 def _confirm(art, siblings, warnings):
-    res = _SrcResolver()
     subject = _norm_link(art.get("target_node"))
     art_speakers = art.get("speakers") or []
     art_link_by_id = {s.get("id"): _norm_link(s.get("node_link"))
@@ -240,7 +215,7 @@ def _confirm(art, siblings, warnings):
         sibling = siblings.get(spath)
         if sibling is None:
             continue
-        anchor_live, span, status = _anchor_speakers(q, sibling, spath, res)
+        anchor_live, span, status = _anchor_speakers(q, sibling, spath)
         if status != "ok" or not span:
             continue
         sib_by_id = {s.get("id"): s for s in (sibling.get("speakers") or [])

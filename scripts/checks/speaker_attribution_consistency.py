@@ -128,38 +128,9 @@ def _parse_range(line_range):
     return None, None
 
 
-def _build_source_index(src_path):
-    """Read the raw caption file and return ``(seconds → 1-indexed line,
-    total_lines)``. Only lines whose first token is a ``[MM:SS]`` tick are
-    indexed; the first line bearing a given timestamp wins (the anchor
-    convention points at the quote's first content word). ``(None, 0)`` if
-    the file can't be read. Lines are 1-indexed to match the sibling's
-    line_range coordinate (``splitlines()`` count equals the
-    ``sum(1 for _ in f)`` count that ``validate-speaker-attribution.py``
-    writes into ``source_line_count``)."""
-    try:
-        lines = src_path.read_text(encoding="utf-8", errors="replace").splitlines()
-    except OSError:
-        return None, 0
-    index = {}
-    for n, line in enumerate(lines, 1):
-        stripped = line.lstrip()
-        if not stripped.startswith("["):
-            continue
-        end = stripped.find("]")
-        if end == -1:
-            continue
-        secs = _ts_to_seconds(stripped[: end + 1])
-        if secs is None:
-            continue
-        index.setdefault(secs, n)
-    return index, len(lines)
-
-
 def build_line_ts_map(src_path):
     """Return ``{1-indexed line number: seconds}`` for every source line whose
-    first token is a ``[MM:SS]`` / ``[H:MM:SS]`` caption tick — the inverse
-    view of ``_build_source_index`` (which keys by seconds). Keying by line
+    first token is a ``[MM:SS]`` / ``[H:MM:SS]`` caption tick. Keying by line
     lets a turn's ``line_range`` resolve directly to the seconds it spans.
     Hour-format ticks are parsed correctly (``_ts_to_seconds`` handles 2- and
     3-part tokens), so sources past 1 h are fully covered. ``{}`` if the file
@@ -205,35 +176,62 @@ def turn_ts_range(line_ts_map, lo, hi):
     return min(secs), max(secs)
 
 
-def _resolve_line(index, sorted_secs, target):
-    """Resolve a target-seconds anchor to a 1-indexed source line via the
-    **nearest preceding** caption tick (the tick at or before ``target``).
-    Exact-tick anchors resolve to themselves; this also handles the
-    irregular tick spacing of Whisper transcripts and range anchors whose
-    start second falls between ticks. None if ``target`` precedes the first
-    tick (no speaker established yet)."""
-    if not sorted_secs:
-        return None
-    pos = bisect.bisect_right(sorted_secs, target) - 1
-    if pos < 0:
-        return None
-    return index[sorted_secs[pos]]
+# Seconds of slop applied to a quote's anchor span when collecting the turns it
+# touches. The line-based resolver this replaces padded ±1 source line to absorb
+# (a) a `[MM:SS]` anchor sitting one caption line off the first content word and
+# (b) a sub-line speaker transition. One caption line ≈ one inter-tick gap.
+# Empirically calibrated against the line-based resolver: swept 0–5s over every
+# sibling-backed quote in the repo, 2s is the value at which the per-turn-
+# timestamp span EXACTLY reproduces the old line-based span (0 divergences); 0–1s
+# drop a boundary speaker, ≥3s start over-including. This is the differential
+# gate from the W2 follow-on. (`anchor_turn` is ε-independent — it matches the
+# old nearest-preceding resolution at every ε.)
+ANCHOR_TOLERANCE_S = 2
 
 
-def _build_line_map(sibling):
-    """Return ``line_number → turn dict`` by expanding every turn's
-    line_range. Overlaps don't occur on a validated sibling (turn_coverage
-    guarantees each line covered once); last-writer-wins is harmless here."""
-    line_map = {}
-    for turn in sibling.get("turns") or []:
-        if not isinstance(turn, dict):
-            continue
-        lo, hi = _parse_range(turn.get("line_range"))
-        if lo is None:
-            continue
-        for ln in range(lo, hi + 1):
-            line_map[ln] = turn
-    return line_map
+def resolve_anchor_turns(sibling, start_secs, end_secs):
+    """Resolve a quote's ``[start_secs, end_secs]`` anchor to the sibling turn(s)
+    it touches, purely from the per-turn ``start_ts`` (W2) — no source re-read.
+
+    Returns ``(anchor_turn, span_turns, status)``:
+      - ``anchor_turn`` — the turn whose contiguous interval owns ``start_secs``
+        (each timed turn *i* owns ``[start_ts_i, start_ts_{i+1})``; the nearest
+        ``start_ts`` at or before ``start_secs``). This is equivalent to the old
+        nearest-preceding-caption-tick resolution: the nearest tick ≤ T lies in
+        the turn that owns T.
+      - ``span_turns`` — every timed turn whose contiguous interval intersects
+        ``[start_secs, end_secs]`` widened by ``ANCHOR_TOLERANCE_S`` (the
+        boundary slop that the old ±1-line pad provided).
+      - ``status`` — ``"ok"``; ``"pre-first-tick"`` when ``start_secs`` precedes
+        the first timed turn (no speaker established yet, → warn); or
+        ``"no-timed-turns"`` for a sibling with no timestamped turn.
+
+    Trusts the sibling's timestamps: ``validate-speaker-attribution.py``
+    recomputes them from the source and FATALs on drift (same gate chain), so
+    staleness is caught upstream rather than re-derived here."""
+    timed = [
+        (t["start_ts"], t)
+        for t in (sibling.get("turns") or [])
+        if isinstance(t, dict) and isinstance(t.get("start_ts"), int)
+    ]
+    if not timed:
+        return None, [], "no-timed-turns"
+    timed.sort(key=lambda st: st[0])
+    starts = [s for s, _ in timed]
+    if start_secs < starts[0]:
+        return None, [], "pre-first-tick"
+
+    ai = bisect.bisect_right(starts, start_secs) - 1
+    anchor_turn = timed[ai][1]
+
+    lo = start_secs - ANCHOR_TOLERANCE_S
+    hi = end_secs + ANCHOR_TOLERANCE_S
+    span_turns = []
+    for i, (s, t) in enumerate(timed):
+        nxt = starts[i + 1] if i + 1 < len(timed) else float("inf")
+        if s <= hi and nxt > lo:  # contiguous interval [s, nxt) intersects [lo, hi]
+            span_turns.append(t)
+    return anchor_turn, span_turns, "ok"
 
 
 def _norm_name(name):
@@ -327,30 +325,20 @@ def check(ctx):
             return art_by_link[link]
         return art_by_name.get(_norm_name(sib_speaker.get("name")))
 
-    # Per-source caches: resolved index/line-map (built once per path).
-    src_cache = {}
+    # Per-sibling speaker lookup (id → speaker dict), built once per path.
+    # Resolution itself reads no source file — it runs off the sibling's
+    # per-turn start_ts (W2), which validate-speaker-attribution.py has already
+    # proven matches the source in the same gate chain.
+    sib_speakers_cache = {}
 
-    def _resolve_source(spath, sibling):
-        if spath in src_cache:
-            return src_cache[spath]
-        index, total = _build_source_index(_SOURCES_DIR / spath)
-        declared = sibling.get("source_line_count")
-        # Unreadable source, OR a stale sibling whose source changed
-        # underneath it (line→turn mapping unreliable) — skip silently.
-        # validate-speaker-attribution.py owns the drift case and fatals on
-        # it in the same gate chain.
-        if index is None or (isinstance(declared, int) and declared != total):
-            src_cache[spath] = (None, [], {}, {})
-            return src_cache[spath]
-        sorted_secs = sorted(index)
-        line_map = _build_line_map(sibling)
-        sib_speakers = {
-            s.get("id"): s
-            for s in (sibling.get("speakers") or [])
-            if isinstance(s, dict)
-        }
-        src_cache[spath] = (index, sorted_secs, line_map, sib_speakers)
-        return src_cache[spath]
+    def _sib_speakers(spath, sibling):
+        if spath not in sib_speakers_cache:
+            sib_speakers_cache[spath] = {
+                s.get("id"): s
+                for s in (sibling.get("speakers") or [])
+                if isinstance(s, dict)
+            }
+        return sib_speakers_cache[spath]
 
     for i, q in enumerate(entries(ctx.data, "quotes")):
         if not isinstance(q, dict):
@@ -378,26 +366,25 @@ def check(ctx):
             )
             continue
 
-        index, sorted_secs, line_map, sib_speakers = _resolve_source(spath, sibling)
-        if index is None:
-            continue  # unreadable / stale source — flagged elsewhere
-        start_line = _resolve_line(index, sorted_secs, start_secs)
-        if start_line is None:
+        anchor_turn, span_turns, status = resolve_anchor_turns(
+            sibling, start_secs, end_secs
+        )
+        if status == "pre-first-tick":
             yield Issue(
                 ctx.rel, "warn",
                 f"quotes[{i}] ({q.get('id')!r}): anchor {loc} precedes the "
-                f"first caption tick in {spath} — speaker_id not cross-checked "
-                f"against the attribution sibling",
+                f"first timed turn in the attribution sibling for {spath} — "
+                f"speaker_id not cross-checked",
                 check_name=CHECK_NAME,
             )
             continue
-        end_line = _resolve_line(index, sorted_secs, end_secs) or start_line
+        if status != "ok":
+            continue  # sibling has no resolvable timeline — nothing to check
 
-        # Speakers active across the lines the quote spans, padded ±1 to
-        # absorb sub-line / narrator-lead-in boundaries.
-        lo = min(start_line, end_line) - 1
-        hi = max(start_line, end_line) + 1
-        span_turns = [line_map[ln] for ln in range(lo, hi + 1) if ln in line_map]
+        sib_speakers = _sib_speakers(spath, sibling)
+
+        # Speakers active across the turns the quote spans (anchor + boundary
+        # slop), live (non-foreign) only.
         live_sibling_ids = []
         for turn in span_turns:
             tsid = turn.get("speaker_id")
@@ -405,18 +392,16 @@ def check(ctx):
                 if isinstance(one, str) and not one.startswith("foreign-"):
                     live_sibling_ids.append(one)
 
-        anchor_turn = line_map.get(start_line)
         anchor_sid = anchor_turn.get("speaker_id") if anchor_turn else None
-        line_no = start_line  # cited in messages below
+        anchor_lr = anchor_turn.get("line_range") if anchor_turn else None
 
         if not live_sibling_ids:
             yield Issue(
                 ctx.rel, "warn",
-                f"quotes[{i}] ({q.get('id')!r}): anchor {loc} (source line "
-                f"{line_no}) lands in a non-conversational turn "
-                f"({anchor_sid!r}) in the attribution sibling — verify the "
-                f"[MM:SS] anchor points at the first content word of the "
-                f"attributed speaker",
+                f"quotes[{i}] ({q.get('id')!r}): anchor {loc} lands in a "
+                f"non-conversational turn ({anchor_sid!r}, lines {anchor_lr}) "
+                f"in the attribution sibling — verify the [MM:SS] anchor points "
+                f"at the first content word of the attributed speaker",
                 check_name=CHECK_NAME,
             )
             continue
@@ -447,9 +432,10 @@ def check(ctx):
         yield Issue(
             ctx.rel, "error",
             f"quotes[{i}] ({q.get('id')!r}): speaker_id {sid_q!r} disagrees "
-            f"with the attribution sibling — anchor {loc} resolves to source "
-            f"line {line_no}, which the sibling attributes to {exp_names}. "
-            f"Fix the quote's speaker_id, or re-check that the [MM:SS] anchor "
-            f"points at the first content word of the quoted speaker.",
+            f"with the attribution sibling — anchor {loc} resolves to the turn "
+            f"covering lines {anchor_lr}, which the sibling attributes to "
+            f"{exp_names}. Fix the quote's speaker_id, or re-check that the "
+            f"[MM:SS] anchor points at the first content word of the quoted "
+            f"speaker.",
             check_name=CHECK_NAME,
         )
