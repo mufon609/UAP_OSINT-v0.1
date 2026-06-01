@@ -433,12 +433,22 @@ derivation (W1).
   block mislabeled Rogan — now corrected). `no-baseline`/`honestly-unverified`/
   `inconclusive` are recorded honestly, never a pass-by-omission.
 
-- **W4 — `node_link` as the identity join key.** New check in
-  `scripts/build/validate-speaker-attribution.py`: every live (non-`foreign-*`)
-  speaker in a *verified* sibling must carry a `node_link`. Makes the sibling
-  the authoritative identity map and kills the honorific/name-matching
-  fragility (e.g. "Dr. Colm Kelleher" vs "Colm Kelleher"). Backfill the
-  existing siblings whose live speakers lack links.
+- **W4 — `node_link` as the identity join key. DONE (2026-06-01).**
+  `check_node_links` in `scripts/build/validate-speaker-attribution.py` now
+  requires every live speaker in a *verified* sibling to carry a `/people/{slug}`
+  `node_link` — making the sibling the authoritative identity map and killing
+  the honorific/name-matching fragility ("Dr. Colm Kelleher" vs "Colm
+  Kelleher"). Two corrections to the original spec, both forced by the data:
+  (1) the old check FATAL'd on an unbuilt target node, contradicting the
+  "stub, never null" convention — it now validates link *form* only, never
+  target existence (the broken-link registry tracks the stub via the transcript
+  node body). (2) genuinely unlinkable speakers — an anonymous studio anchor, a
+  first-name-only peripheral moderator — get an explicit `no_repo_node: true`
+  exemption (new optional `speaker_entry` field; mutually exclusive with
+  `node_link`). Backfilled all four siblings: stubs `/people/joe-rogan`,
+  `/people/george-knapp` (×2), `/people/colm-kelleher`; `no_repo_node: true` for
+  the KLAS studio anchor (8newsnow) and "Lawrence" (lucistrust). Dropped the
+  "No /people/ node in this repo" excuse note that the convention forbids.
 
 - **W2 — Harden the sibling format (follow-on).** Add deterministic per-turn
   `start_ts`/`end_ts` and a top-level source content hash, computed by

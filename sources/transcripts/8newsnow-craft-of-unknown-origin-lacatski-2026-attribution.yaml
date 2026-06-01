@@ -18,13 +18,12 @@ speakers:
   name: George Knapp
   on_camera_role: mixed
   role: Reporter / Chief Investigator (8 News Now / KLAS)
+  node_link: /people/george-knapp
   notes: 'Voiceover narration over b-roll for the package body, on-camera in the
 
     interview clips with Lacatski (asks the embedded interview questions).
 
     Mixed on_camera_role reflects both modes within a single news package.
-
-    No /people/ node in this repo.
 
     '
 - id: s2
@@ -43,6 +42,7 @@ speakers:
   name: KLAS Studio Anchor
   on_camera_role: primary
   role: 8 News Now studio anchor (lead-in + handoff)
+  no_repo_node: true
   notes: 'Anchor identity not surfaced in the source text. Delivers the scripted
 
     lead-in over the segment open and the conversational handoff back to

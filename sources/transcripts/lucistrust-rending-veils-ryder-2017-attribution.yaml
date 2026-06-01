@@ -17,6 +17,7 @@ speakers:
 - id: s1
   name: Lawrence
   role: Moderator/host
+  no_repo_node: true
   on_camera_role: primary
   notes: Opens with the introduction, frames each question in the Lucis Trust "ageless wisdom" register (etheric veils, divas, the reappearance of the Christ, ring-pass-not), organises the session, manages the room and audience, and closes with "Jim, thank you very much." Addresses the guest as "James" and "Jim"; the guest in turn refers to him as "Lawrence" (line 737) and "Lauren" (line 1237), and a Whisper mishearing renders his name as "Oren" (line 481) and "Lada" (line 1068). All the same host.
 - id: s2

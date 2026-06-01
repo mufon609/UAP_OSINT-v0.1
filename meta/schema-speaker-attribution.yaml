@@ -142,7 +142,7 @@ optional_keys:
 
 speaker_entry:
   required: [id, name, on_camera_role]
-  optional: [role, node_link, notes]
+  optional: [role, node_link, no_repo_node, notes]
   # id: short stable handle, conventionally `s1`, `s2`, ... in turn-
   #   appearance order. Referenced by turn_entry.speaker_id; same form
   #   as the existing speakers[] convention on transcript artifacts
@@ -160,8 +160,18 @@ speaker_entry:
   # role: free-text description (e.g., "Host", "Guest", "Whistleblower",
   #   "Narrator", "Interviewer"). Same convention as the existing
   #   speakers[] role field on transcript artifacts.
-  # node_link: optional /people/... path when the speaker has a
-  #   repository node. Renders as a wrap-link in the speaker label.
+  # node_link: /people/{slug} path for the speaker's repository node.
+  #   Renders as a wrap-link in the speaker label. In a VERIFIED sibling
+  #   every live speaker MUST carry one (W4 — the authoritative identity
+  #   join key downstream; kills honorific/name-matching fragility). A
+  #   stub to an unbuilt node is the CORRECT value (per meta/conventions.md
+  #   "Cross-reference paths to unbuilt nodes — use a stub, never null");
+  #   the broken-link registry tracks it via the transcript node body, so
+  #   target existence is NOT required here.
+  # no_repo_node: true marks a live speaker with no resolvable repository
+  #   identity — an anonymous role (an unnamed studio anchor) or a
+  #   peripheral first-name-only participant. Such a speaker is exempt
+  #   from the node_link requirement and must NOT also carry a node_link.
   # notes: free-text. Use for non-obvious context the verifier needs
   #   (e.g., "Ammar Kandil narrates ~32% of runtime in voiceover; his
   #   live in-room appearances are confined to Days 1-2").

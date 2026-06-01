@@ -216,21 +216,50 @@ def check_speakers(data, rpt):
 
 
 def check_node_links(data, rpt):
+    """W4 — node_link is the authoritative identity join key.
+
+    In a VERIFIED sibling every live speaker must carry a `/people/{slug}`
+    node_link, OR be explicitly marked `no_repo_node: true` (an anonymous /
+    unlinkable participant). A stub to an unbuilt node is the CORRECT value
+    (meta/conventions.md "stub, never null") — target existence is NOT
+    checked here; the broken-link registry tracks it via the transcript node
+    body. Draft siblings may still be filling links in, so the requirement
+    binds only once verified."""
+    verified = data.get("verification_status") == "verified"
     for i, sp in enumerate(data.get("speakers") or []):
         if not isinstance(sp, dict):
             continue
         nl = sp.get("node_link")
+        no_node = sp.get("no_repo_node") is True
+
+        if no_node and nl:
+            rpt.fatal(
+                f"speakers[{i}]",
+                f"speaker {sp.get('id')!r} marked no_repo_node: true must not also "
+                f"carry a node_link ({nl!r})",
+            )
+            continue
+        if no_node:
+            continue  # explicitly unlinkable — exempt from the join-key rule
+
         if not nl:
+            if verified:
+                rpt.fatal(
+                    f"speakers[{i}].node_link",
+                    f"live speaker {sp.get('id')!r} in a verified sibling must carry a "
+                    f"/people/{{slug}} node_link (a stub is correct for an unbuilt "
+                    f"node; the broken-link registry tracks it) — or set "
+                    f"`no_repo_node: true` if it has no resolvable repo identity "
+                    f"(e.g. an anonymous anchor)",
+                )
             continue
-        # path like /people/john-doe → people/john-doe.md
-        if not nl.startswith("/"):
-            rpt.fatal(f"speakers[{i}].node_link", f"must start with `/`: {nl!r}")
-            continue
-        target = REPO_ROOT / (nl.lstrip("/") + ".md")
-        if not target.is_file():
+
+        # node_link present — validate form only; a stub to an unbuilt node is
+        # the correct value, so target existence is deliberately NOT checked.
+        if not nl.startswith("/people/"):
             rpt.fatal(
                 f"speakers[{i}].node_link",
-                f"node {nl!r} not found at {target}",
+                f"speaker node_link must be a /people/{{slug}} path: {nl!r}",
             )
 
 

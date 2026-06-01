@@ -8,7 +8,7 @@
 
 **Speakers:**
 
-- **George Knapp** (`s1`) — Reporter / Chief Investigator (8 News Now / KLAS) — *on-camera:* mixed
+- **George Knapp** (`s1`) — Reporter / Chief Investigator (8 News Now / KLAS) — [`/people/george-knapp`](/people/george-knapp) — *on-camera:* mixed
 - **James Lacatski** (`s2`) — Interview subject (former DIA analyst; AAWSAP/AATIP program manager) — [`/people/james-lacatski`](/people/james-lacatski) — *on-camera:* primary
 - **KLAS Studio Anchor** (`s3`) — 8 News Now studio anchor (lead-in + handoff) — *on-camera:* primary
 
@@ -48,7 +48,7 @@ Downloaded: 2026-05-17
 [0:27] we're overdue for some UFO news, right?
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 21-31)*
 
 ```
@@ -77,7 +77,7 @@ Downloaded: 2026-05-17
 [1:09] a very top-level view of what we had
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 38-63 · medium confidence)*
 
 ```
@@ -118,7 +118,7 @@ Downloaded: 2026-05-17
 [2:20] the umbrella over UFOs right from the
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 67-69 · medium confidence)*
 
 ```
@@ -137,7 +137,7 @@ Downloaded: 2026-05-17
 [2:34] never had a a leak.
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 74-81 · medium confidence)*
 
 ```
@@ -163,7 +163,7 @@ this transcript's metadata.
 [2:56] three big toes and one at the back.
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 83-95 · medium confidence)*
 
 ```
@@ -192,7 +192,7 @@ this transcript's metadata.
 [3:36] paranormal umbrella. And the answer is
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 100-113 · medium confidence)*
 
 ```
@@ -230,7 +230,7 @@ this transcript's metadata.
 [4:40] times we even go backwards.
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 126-127 · medium confidence)*
 
 ```
@@ -245,7 +245,7 @@ this transcript's metadata.
 [4:48] co-author on two of those along with Dr.
 ```
 
-### George Knapp — Reporter / Chief Investigator (8 News Now / KLAS)  
+### George Knapp ([/people/george-knapp](/people/george-knapp)) — Reporter / Chief Investigator (8 News Now / KLAS)  
 *(lines 129-136 · medium confidence)*
 
 ```

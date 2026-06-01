@@ -17,6 +17,7 @@ speakers:
 - id: s1
   name: Joe Rogan
   role: Host
+  node_link: /people/joe-rogan
   on_camera_role: primary
   notes: ''
 - id: s2

@@ -17,6 +17,7 @@ speakers:
 - id: s1
   name: George Knapp
   role: Host / Interviewer
+  node_link: /people/george-knapp
   on_camera_role: primary
   notes: ''
 - id: s2
@@ -28,6 +29,7 @@ speakers:
 - id: s3
   name: Colm Kelleher
   role: Guest
+  node_link: /people/colm-kelleher
   on_camera_role: primary
   notes: ''
 turns:
