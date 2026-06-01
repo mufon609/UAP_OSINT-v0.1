@@ -19,6 +19,11 @@ Checks (run in order; first fatal aborts the file):
   2. top_level_keys          — required keys present; types correct
   3. slug_consistency        — slug matches source_path stem
   4. source_existence        — source_path exists; line count matches
+  4a. content_hash           — source_content_hash matches source bytes
+                                (required once verified); strong drift detector
+  4b. turn_timestamps        — per-turn start_ts/end_ts equal the value derived
+                                from (source, line_range); tamper-evident,
+                                chronological, present on verified timed turns
   5. enums                   — verification_status / on_camera_role values
   6. speakers                — entries shape; ids unique
   7. node_links              — referenced /people|/orgs paths exist
@@ -42,6 +47,7 @@ Exit code 0 on PASS; non-zero on any FATAL.
 """
 
 import argparse
+import hashlib
 import re
 import sys
 from dataclasses import dataclass, field
@@ -55,6 +61,10 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import strict_yaml_load, REPO_ROOT  # noqa: E402
+from checks.speaker_attribution_consistency import (  # noqa: E402
+    build_line_ts_map,
+    turn_ts_range,
+)
 
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema-speaker-attribution.yaml"
 SIBLING_GLOB = "sources/transcripts/*-attribution.yaml"
@@ -173,6 +183,107 @@ def check_source_existence(data, rpt):
                 f"declared {declared} but source file has {actual} lines — "
                 f"source changed underneath the sibling; re-run the skill",
             )
+
+
+_HASH_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
+
+
+def check_content_hash(data, rpt):
+    """W2 — source_content_hash is the strong drift detector (source_line_count
+    is a cheap pre-check; this catches any byte change under a constant line
+    count). Computed by finalize-attribution.py; required once verified
+    (parallels verifier_session). Recompute and compare — a mismatch means the
+    source changed underneath the sibling; re-run finalize."""
+    stored = data.get("source_content_hash")
+    verified = data.get("verification_status") == "verified"
+    if stored is None:
+        if verified:
+            rpt.fatal(
+                "source_content_hash",
+                "missing on a verified sibling — finalize-attribution.py stamps "
+                "it (required once verified, like verifier_session)",
+            )
+        return
+    if not isinstance(stored, str) or not _HASH_RE.match(stored):
+        rpt.fatal("source_content_hash",
+                  f"must be of the form 'sha256:<64 hex>': {stored!r}")
+        return
+    sp = data.get("source_path", "")
+    src = REPO_ROOT / sp
+    if not src.is_file():
+        return  # absence already FATAL in check_source_existence
+    actual = "sha256:" + hashlib.sha256(src.read_bytes()).hexdigest()
+    if actual != stored:
+        rpt.fatal(
+            "source_content_hash",
+            f"declared {stored} but source file hashes to {actual} — source "
+            f"changed underneath the sibling; re-run finalize-attribution.py",
+        )
+
+
+def check_turn_timestamps(data, rpt):
+    """W2 — per-turn start_ts/end_ts are derived, tamper-evident fields. They
+    must equal the value recomputed from (source, line_range), so they cannot be
+    hand-edited to drift (mirrors check_source_existence recomputing
+    source_line_count). On a verified sibling a turn whose line_range covers a
+    timestamped line MUST carry both; timestamps are non-decreasing across the
+    turns array (chronological reading order)."""
+    sp = data.get("source_path", "")
+    src = REPO_ROOT / sp
+    if not src.is_file():
+        return  # absence already FATAL in check_source_existence
+    verified = data.get("verification_status") == "verified"
+    line_ts = build_line_ts_map(src)
+    prev_start = None
+    for i, t in enumerate(data.get("turns") or []):
+        if not isinstance(t, dict):
+            continue
+        stored_start = t.get("start_ts")
+        stored_end = t.get("end_ts")
+        lohi = parse_range(t.get("line_range"))
+        exp_start, exp_end = (None, None) if lohi is None else turn_ts_range(line_ts, *lohi)
+
+        if exp_start is None:
+            # No timestamped line in range — the turn must NOT carry stale ts.
+            if stored_start is not None or stored_end is not None:
+                rpt.fatal(
+                    f"turns[{i}]",
+                    "carries start_ts/end_ts but its line_range covers no "
+                    "timestamped source line — stale; re-run finalize",
+                )
+            continue
+
+        if stored_start is None or stored_end is None:
+            if verified:
+                rpt.fatal(
+                    f"turns[{i}]",
+                    f"verified turn covering a timestamped line must carry "
+                    f"start_ts/end_ts (expected {exp_start}/{exp_end}) — re-run "
+                    f"finalize-attribution.py",
+                )
+            continue
+
+        if not isinstance(stored_start, int) or not isinstance(stored_end, int):
+            rpt.fatal(f"turns[{i}]", "start_ts/end_ts must be integer seconds")
+            continue
+        if (stored_start, stored_end) != (exp_start, exp_end):
+            rpt.fatal(
+                f"turns[{i}]",
+                f"start_ts/end_ts {stored_start}/{stored_end} != value derived "
+                f"from source {exp_start}/{exp_end} — tampered or stale; re-run "
+                f"finalize-attribution.py",
+            )
+            continue
+        if stored_start > stored_end:
+            rpt.fatal(f"turns[{i}]",
+                      f"start_ts {stored_start} > end_ts {stored_end}")
+        if prev_start is not None and stored_start < prev_start:
+            rpt.fatal(
+                f"turns[{i}]",
+                f"start_ts {stored_start} precedes a prior turn's {prev_start} "
+                f"— turns must be in chronological order",
+            )
+        prev_start = stored_start
 
 
 def check_enums(data, schema, rpt):
@@ -524,6 +635,8 @@ def validate(path, schema):
         return rpt
     check_slug_consistency(data, rpt)
     check_source_existence(data, rpt)
+    check_content_hash(data, rpt)
+    check_turn_timestamps(data, rpt)
     check_enums(data, schema, rpt)
     check_speakers(data, rpt)
     check_node_links(data, rpt)

@@ -156,6 +156,55 @@ def _build_source_index(src_path):
     return index, len(lines)
 
 
+def build_line_ts_map(src_path):
+    """Return ``{1-indexed line number: seconds}`` for every source line whose
+    first token is a ``[MM:SS]`` / ``[H:MM:SS]`` caption tick — the inverse
+    view of ``_build_source_index`` (which keys by seconds). Keying by line
+    lets a turn's ``line_range`` resolve directly to the seconds it spans.
+    Hour-format ticks are parsed correctly (``_ts_to_seconds`` handles 2- and
+    3-part tokens), so sources past 1 h are fully covered. ``{}`` if the file
+    can't be read; lines without a leading tick (headers, blanks, wrapped
+    continuations) are absent from the map.
+
+    The single line→seconds source of truth shared by
+    ``scripts/build/finalize-attribution.py`` (W2 — stamps per-turn
+    ``start_ts``/``end_ts``), ``scripts/build/validate-speaker-attribution.py``
+    (recompute-and-compare), and ``scripts/tools/spot-check-attribution.py``
+    (the W3 fold gate's burst windows — previously ``[MM:SS]``-only, which
+    silently dropped hour-format turns)."""
+    try:
+        lines = src_path.read_text(encoding="utf-8", errors="replace").splitlines()
+    except OSError:
+        return {}
+    out = {}
+    for n, line in enumerate(lines, 1):
+        stripped = line.lstrip()
+        if not stripped.startswith("["):
+            continue
+        end = stripped.find("]")
+        if end == -1:
+            continue
+        secs = _ts_to_seconds(stripped[: end + 1])
+        if secs is not None:
+            out[n] = secs
+    return out
+
+
+def turn_ts_range(line_ts_map, lo, hi):
+    """``(start_ts, end_ts)`` for an inclusive line range ``[lo, hi]``: the min
+    and max caption-tick seconds among the timestamped lines it covers, or
+    ``(None, None)`` when the range covers no timestamped line. (On a real
+    transcript ticks rise monotonically, so min/max == first/last; min/max is
+    robust to any local disorder.) Deterministic derivation shared by
+    finalize-attribution.py (stamps the fields) and
+    validate-speaker-attribution.py (recomputes and compares — the fields are
+    tamper-evident, not hand-authored)."""
+    secs = [line_ts_map[ln] for ln in range(lo, hi + 1) if ln in line_ts_map]
+    if not secs:
+        return None, None
+    return min(secs), max(secs)
+
+
 def _resolve_line(index, sorted_secs, target):
     """Resolve a target-seconds anchor to a 1-indexed source line via the
     **nearest preceding** caption tick (the tick at or before ``target``).

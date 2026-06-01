@@ -454,12 +454,32 @@ derivation (W1).
   the KLAS studio anchor (8newsnow) and "Lawrence" (lucistrust). Dropped the
   "No /people/ node in this repo" excuse note that the convention forbids.
 
-- **W2 — Harden the sibling format (follow-on).** Add deterministic per-turn
-  `start_ts`/`end_ts` and a top-level source content hash, computed by
-  `scripts/build/finalize-attribution.py` (timestamp derivation already exists
-  in spot-check). Exact timestamp resolution replaces the nearest-preceding
-  heuristic; the content hash replaces line-count-only drift detection.
-  `validate-speaker-attribution.py` gains hash + timestamp-consistency checks.
+- **W2 — Harden the sibling format (follow-on). DONE (2026-06-01).**
+  `finalize-attribution.py` now stamps deterministic per-turn `start_ts`/`end_ts`
+  (caption-tick span of each turn's line_range) and a top-level
+  `source_content_hash` (sha256 of the raw source bytes). Both are derived and
+  **tamper-evident** — `validate-speaker-attribution.py` recomputes from
+  (source, line_range) and FATALs on any drift; the hash is the strong drift
+  detector (`source_line_count` stays as the cheap pre-check), required once
+  verified. The derivation is a single hour-aware helper
+  (`speaker_attribution_consistency.build_line_ts_map` / `turn_ts_range`) shared
+  by finalize, the validator, and spot-check.
+  **Correction forced by the data — a latent W3 gap.** The spot-check's own
+  timestamp parser was `[MM:SS]`-only, so it silently dropped every `[H:MM:SS]`
+  line; jre-2194 runs to 2:14:58, meaning the W3 fold gate had **never actually
+  checked jre's back half** (those turns got no sample window → recorded
+  honestly-unverified/inconclusive). Consolidating spot-check onto the shared
+  hour-aware helper closed that hole — and the now-covered back half surfaced
+  **7 genuine mixed Rogan/Elizondo exchanges mislabeled Elizondo-only** (lines
+  1997-3178). Resolved per W5: relabeled mixed-exchange `[s1, s2]` at
+  `confidence: low` (preserves the in-range Elizondo quote; the gate reads
+  crosstalk, not a fold). All 4 siblings re-finalized clean + idempotent.
+  **Deferred (tracked):** the consistency check still resolves quote anchors by
+  the nearest-preceding-line heuristic — rewiring it to resolve by per-turn
+  `[start_ts, end_ts]` containment touches the `validate-research.py`
+  cross-validator and was held as a separable follow-on; the per-turn
+  timestamps land now as tamper-evident metadata + the content-hash drift
+  detector.
 
 - **W5 — Document the residual. DONE (2026-06-01).** Sub-line speaker
   transitions (turn-end + turn-start packed on one `[MM:SS]` line) cannot be

@@ -2,13 +2,16 @@
 # scaffolding (rationale / verifier_notes / needs_image_verification) was
 # stripped by
 # scripts/build/finalize-attribution.py once the independent verifier
-# passed. Indexes into the source transcript by 1-indexed line range;
+# passed; source_content_hash + per-turn start_ts/end_ts are machine-
+# computed from the source by the same tool (tamper-evident, regeneratable).
+# Indexes into the source transcript by 1-indexed line range;
 # references only, no transcript text. Conforms to
 # meta/schema-speaker-attribution.yaml.
 
 slug: jre-2194-elizondo-2024
 source_path: sources/transcripts/jre-2194-elizondo-2024-downloaded.md
 source_line_count: 3660
+source_content_hash: sha256:97b4fb010811141483ef64b3c15752ff8fcaab5b73b8b77cfe06d32814ed048e
 generated_date: 2026-05-28
 producer_session: pilot-producer-2026-05-28
 verifier_session: pilot-verifier-ada7ea1a0a23f3d05
@@ -33,75 +36,123 @@ turns:
 - speaker_id: foreign-jingle
   line_range: 9-11
   confidence: high
+  start_ts: 1
+  end_ts: 7
 - speaker_id: s1
   line_range: '12'
   confidence: medium
+  start_ts: 11
+  end_ts: 11
 - speaker_id: s1
   line_range: 13-18
   confidence: medium
+  start_ts: 14
+  end_ts: 24
 - speaker_id: s2
   line_range: 19-46
   confidence: medium
+  start_ts: 28
+  end_ts: 97
 - speaker_id: s2
   line_range: 47-123
   confidence: medium
+  start_ts: 100
+  end_ts: 259
 - speaker_id: s1
   line_range: '124'
   confidence: medium
+  start_ts: 260
+  end_ts: 260
 - speaker_id: s2
   line_range: 125-185
   confidence: high
+  start_ts: 262
+  end_ts: 396
 - speaker_id: s2
   line_range: 186-228
   confidence: high
+  start_ts: 399
+  end_ts: 498
 - speaker_id: s1
   line_range: 229-240
   confidence: high
+  start_ts: 501
+  end_ts: 534
 - speaker_id: s2
   line_range: 241-316
   confidence: high
+  start_ts: 537
+  end_ts: 700
 - speaker_id: s1
   line_range: '317'
   confidence: high
+  start_ts: 704
+  end_ts: 704
 - speaker_id: s2
   line_range: 318-369
   confidence: high
+  start_ts: 706
+  end_ts: 814
 - speaker_id: s1
   line_range: 370-379
   confidence: high
+  start_ts: 816
+  end_ts: 836
 - speaker_id: s2
   line_range: 380-466
   confidence: medium
+  start_ts: 840
+  end_ts: 1033
 - speaker_id: s1
   line_range: 467-468
   confidence: high
+  start_ts: 1035
+  end_ts: 1037
 - speaker_id: s2
   line_range: 469-543
   confidence: high
+  start_ts: 1040
+  end_ts: 1209
 - speaker_id: s2
   line_range: 544-578
   confidence: high
+  start_ts: 1211
+  end_ts: 1282
 - speaker_id: s2
   line_range: 579-629
   confidence: medium
+  start_ts: 1284
+  end_ts: 1391
 - speaker_id: s1
   line_range: 630-631
   confidence: high
+  start_ts: 1394
+  end_ts: 1396
 - speaker_id: s2
   line_range: 632-668
   confidence: high
+  start_ts: 1399
+  end_ts: 1476
 - speaker_id: s1
   line_range: 669-687
   confidence: medium
+  start_ts: 1478
+  end_ts: 1516
 - speaker_id: s2
   line_range: 688-711
   confidence: medium
+  start_ts: 1518
+  end_ts: 1567
 - speaker_id: s1
   line_range: 712-731
   confidence: high
+  start_ts: 1569
+  end_ts: 1614
 - speaker_id: s2
   line_range: 732-748
   confidence: high
+  start_ts: 1616
+  end_ts: 1651
 - speaker_id: foreign-recitation
   line_range: 749-779
   confidence: medium
@@ -112,15 +163,23 @@ turns:
     1950", paragraphs 6 and 2, dated May 25 1950.
 
     '
+  start_ts: 1653
+  end_ts: 1723
 - speaker_id: s2
   line_range: 780-841
   confidence: medium
+  start_ts: 1728
+  end_ts: 1871
 - speaker_id: s1
   line_range: 842-843
   confidence: high
+  start_ts: 1873
+  end_ts: 1876
 - speaker_id: s2
   line_range: 844-858
   confidence: high
+  start_ts: 1879
+  end_ts: 1909
 - speaker_id: foreign-recitation
   line_range: 859-879
   confidence: medium
@@ -131,351 +190,597 @@ turns:
     Department of the Air Force / The Pentagon, circa 1952.
 
     '
+  start_ts: 1911
+  end_ts: 1959
 - speaker_id: s1
   line_range: 880-889
   confidence: medium
+  start_ts: 1961
+  end_ts: 1982
 - speaker_id: s2
   line_range: 890-906
   confidence: medium
+  start_ts: 1984
+  end_ts: 2018
 - speaker_id: s2
   line_range: 907-916
   confidence: medium
+  start_ts: 2020
+  end_ts: 2037
 - speaker_id: s2
   line_range: 917-956
   confidence: high
+  start_ts: 2040
+  end_ts: 2111
 - speaker_id: s1
   line_range: 957-961
   confidence: high
+  start_ts: 2113
+  end_ts: 2119
 - speaker_id: s2
   line_range: 962-1014
   confidence: high
+  start_ts: 2121
+  end_ts: 2236
 - speaker_id: s2
   line_range: 1015-1039
   confidence: medium
+  start_ts: 2238
+  end_ts: 2287
 - speaker_id: s1
   line_range: 1040-1052
   confidence: high
+  start_ts: 2289
+  end_ts: 2322
 - speaker_id: s2
   line_range: 1053-1093
   confidence: high
+  start_ts: 2325
+  end_ts: 2409
 - speaker_id: s1
   line_range: 1094-1099
   confidence: high
+  start_ts: 2415
+  end_ts: 2428
 - speaker_id: s2
   line_range: 1100-1147
   confidence: high
+  start_ts: 2431
+  end_ts: 2528
 - speaker_id: s1
   line_range: '1148'
   confidence: high
+  start_ts: 2530
+  end_ts: 2530
 - speaker_id: s2
   line_range: 1149-1161
   confidence: high
+  start_ts: 2532
+  end_ts: 2554
 - speaker_id: s1
   line_range: 1162-1163
   confidence: medium
+  start_ts: 2556
+  end_ts: 2559
 - speaker_id: s2
   line_range: 1164-1208
   confidence: high
+  start_ts: 2561
+  end_ts: 2654
 - speaker_id: s1
   line_range: 1209-1211
   confidence: high
+  start_ts: 2655
+  end_ts: 2660
 - speaker_id: s2
   line_range: 1212-1232
   confidence: high
+  start_ts: 2663
+  end_ts: 2713
 - speaker_id: s1
   line_range: 1233-1235
   confidence: medium
+  start_ts: 2714
+  end_ts: 2720
 - speaker_id: s2
   line_range: 1236-1287
   confidence: high
+  start_ts: 2723
+  end_ts: 2836
 - speaker_id: s1
   line_range: 1288-1296
   confidence: high
+  start_ts: 2838
+  end_ts: 2858
 - speaker_id: s2
   line_range: 1297-1360
   confidence: high
+  start_ts: 2860
+  end_ts: 3006
 - speaker_id: s1
   line_range: 1361-1362
   confidence: medium
+  start_ts: 3008
+  end_ts: 3009
 - speaker_id: s2
   line_range: 1363-1390
   confidence: high
+  start_ts: 3011
+  end_ts: 3068
 - speaker_id: s1
   line_range: 1391-1393
   confidence: high
+  start_ts: 3070
+  end_ts: 3075
 - speaker_id: s2
   line_range: 1394-1487
   confidence: medium
+  start_ts: 3077
+  end_ts: 3306
 - speaker_id: s1
   line_range: 1488-1491
   confidence: high
+  start_ts: 3308
+  end_ts: 3317
 - speaker_id: s2
   line_range: 1492-1519
   confidence: high
+  start_ts: 3319
+  end_ts: 3379
 - speaker_id: s1
   line_range: 1520-1527
   confidence: high
+  start_ts: 3382
+  end_ts: 3397
 - speaker_id: s2
   line_range: 1528-1549
   confidence: high
+  start_ts: 3401
+  end_ts: 3445
 - speaker_id: s1
   line_range: 1550-1551
   confidence: medium
+  start_ts: 3447
+  end_ts: 3449
 - speaker_id: s2
   line_range: 1552-1599
   confidence: high
+  start_ts: 3451
+  end_ts: 3551
 - speaker_id: s1
   line_range: 1600-1603
   confidence: high
+  start_ts: 3554
+  end_ts: 3560
 - speaker_id: s2
   line_range: 1604-1638
   confidence: high
+  start_ts: 3562
+  end_ts: 3634
 - speaker_id: s1
   line_range: 1639-1644
   confidence: medium
+  start_ts: 3636
+  end_ts: 3646
 - speaker_id: s2
   line_range: 1645-1688
   confidence: high
+  start_ts: 3647
+  end_ts: 3746
 - speaker_id: s1
   line_range: 1689-1690
   confidence: medium
+  start_ts: 3747
+  end_ts: 3748
 - speaker_id: s2
   line_range: 1691-1710
   confidence: medium
+  start_ts: 3750
+  end_ts: 3786
 - speaker_id: s1
   line_range: 1711-1719
   confidence: medium
+  start_ts: 3789
+  end_ts: 3804
 - speaker_id: s2
   line_range: 1720-1762
   confidence: high
+  start_ts: 3806
+  end_ts: 3893
 - speaker_id: s1
   line_range: '1763'
   confidence: high
+  start_ts: 3895
+  end_ts: 3895
 - speaker_id: s2
   line_range: 1764-1822
   confidence: medium
+  start_ts: 3899
+  end_ts: 4024
 - speaker_id: s1
   line_range: 1823-1847
   confidence: medium
+  start_ts: 4026
+  end_ts: 4076
 - speaker_id: s2
   line_range: 1848-1870
   confidence: high
+  start_ts: 4078
+  end_ts: 4126
 - speaker_id: s1
   line_range: 1871-1872
   confidence: high
+  start_ts: 4129
+  end_ts: 4132
 - speaker_id: s2
   line_range: 1873-1901
   confidence: medium
+  start_ts: 4135
+  end_ts: 4195
 - speaker_id: s1
   line_range: 1902-1913
   confidence: medium
+  start_ts: 4198
+  end_ts: 4226
 - speaker_id: s2
   line_range: 1914-1917
   confidence: high
+  start_ts: 4228
+  end_ts: 4235
 - speaker_id: s1
   line_range: 1918-1996
   confidence: medium
-- speaker_id: s2
+  start_ts: 4237
+  end_ts: 4408
+- speaker_id:
+  - s1
+  - s2
   line_range: 1997-2003
-  confidence: high
+  confidence: low
+  start_ts: 4410
+  end_ts: 4423
 - speaker_id: s1
   line_range: 2004-2029
   confidence: medium
+  start_ts: 4426
+  end_ts: 4481
 - speaker_id: s2
   line_range: 2030-2051
   confidence: medium
+  start_ts: 4484
+  end_ts: 4526
 - speaker_id: s1
   line_range: 2052-2059
   confidence: medium
+  start_ts: 4530
+  end_ts: 4545
 - speaker_id: s2
   line_range: 2060-2225
   confidence: medium
+  start_ts: 4547
+  end_ts: 4902
 - speaker_id: s1
   line_range: 2226-2245
   confidence: medium
+  start_ts: 4905
+  end_ts: 4953
 - speaker_id: s2
   line_range: 2246-2261
   confidence: medium
+  start_ts: 4955
+  end_ts: 4987
 - speaker_id: s2
   line_range: 2262-2348
   confidence: high
+  start_ts: 4989
+  end_ts: 5182
 - speaker_id: s1
   line_range: 2349-2361
   confidence: medium
+  start_ts: 5185
+  end_ts: 5211
 - speaker_id: s2
   line_range: 2362-2389
   confidence: high
+  start_ts: 5214
+  end_ts: 5271
 - speaker_id: s1
   line_range: 2390-2392
   confidence: medium
-- speaker_id: s2
+  start_ts: 5274
+  end_ts: 5279
+- speaker_id:
+  - s1
+  - s2
   line_range: 2393-2407
-  confidence: medium
+  confidence: low
+  start_ts: 5282
+  end_ts: 5313
 - speaker_id: s1
   line_range: 2408-2420
   confidence: medium
+  start_ts: 5315
+  end_ts: 5338
 - speaker_id: s2
   line_range: 2421-2437
   confidence: medium
+  start_ts: 5341
+  end_ts: 5372
 - speaker_id: s1
   line_range: 2438-2454
   confidence: medium
+  start_ts: 5374
+  end_ts: 5404
 - speaker_id: s2
   line_range: 2455-2509
   confidence: high
+  start_ts: 5407
+  end_ts: 5529
 - speaker_id: s2
   line_range: 2510-2553
   confidence: high
+  start_ts: 5530
+  end_ts: 5620
 - speaker_id: s1
   line_range: 2554-2565
   confidence: medium
+  start_ts: 5623
+  end_ts: 5650
 - speaker_id: s2
   line_range: 2566-2589
   confidence: medium
+  start_ts: 5653
+  end_ts: 5703
 - speaker_id: s2
   line_range: 2590-2619
   confidence: low
+  start_ts: 5705
+  end_ts: 5763
 - speaker_id: s2
   line_range: 2620-2630
   confidence: medium
+  start_ts: 5765
+  end_ts: 5786
 - speaker_id: s1
   line_range: 2631-2632
   confidence: high
+  start_ts: 5789
+  end_ts: 5791
 - speaker_id: s2
   line_range: 2633-2640
   confidence: medium
+  start_ts: 5795
+  end_ts: 5809
 - speaker_id: s1
   line_range: 2641-2659
   confidence: high
+  start_ts: 5812
+  end_ts: 5857
 - speaker_id: s2
   line_range: 2660-2695
   confidence: medium
+  start_ts: 5861
+  end_ts: 5935
 - speaker_id: s1
   line_range: 2696-2706
   confidence: medium
+  start_ts: 5938
+  end_ts: 5961
 - speaker_id: s2
   line_range: 2707-2723
   confidence: medium
+  start_ts: 5963
+  end_ts: 5997
 - speaker_id: s1
   line_range: 2724-2746
   confidence: low
-- speaker_id: s2
+  start_ts: 6000
+  end_ts: 6048
+- speaker_id:
+  - s1
+  - s2
   line_range: 2747-2756
-  confidence: medium
+  confidence: low
+  start_ts: 6051
+  end_ts: 6071
 - speaker_id: s1
   line_range: 2757-2767
   confidence: medium
-- speaker_id: s2
+  start_ts: 6073
+  end_ts: 6100
+- speaker_id:
+  - s1
+  - s2
   line_range: 2768-2779
-  confidence: medium
+  confidence: low
+  start_ts: 6102
+  end_ts: 6122
 - speaker_id: s1
   line_range: 2780-2795
   confidence: medium
+  start_ts: 6126
+  end_ts: 6158
 - speaker_id: s2
   line_range: 2796-2814
   confidence: medium
+  start_ts: 6161
+  end_ts: 6204
 - speaker_id: s1
   line_range: 2815-2848
   confidence: medium
+  start_ts: 6206
+  end_ts: 6278
 - speaker_id: s2
   line_range: 2849-2886
   confidence: high
+  start_ts: 6280
+  end_ts: 6364
 - speaker_id: s1
   line_range: 2887-2899
   confidence: medium
+  start_ts: 6366
+  end_ts: 6388
 - speaker_id: s2
   line_range: 2900-2941
   confidence: medium
+  start_ts: 6390
+  end_ts: 6480
 - speaker_id: s1
   line_range: 2942-2965
   confidence: medium
+  start_ts: 6484
+  end_ts: 6540
 - speaker_id: s2
   line_range: 2966-2996
   confidence: high
+  start_ts: 6542
+  end_ts: 6606
 - speaker_id: s1
   line_range: 2997-3012
   confidence: medium
+  start_ts: 6608
+  end_ts: 6640
 - speaker_id: s2
   line_range: 3013-3027
   confidence: high
+  start_ts: 6642
+  end_ts: 6672
 - speaker_id: s1
   line_range: 3028-3034
   confidence: medium
-- speaker_id: s2
+  start_ts: 6674
+  end_ts: 6686
+- speaker_id:
+  - s1
+  - s2
   line_range: 3035-3055
-  confidence: medium
+  confidence: low
+  start_ts: 6688
+  end_ts: 6726
 - speaker_id: s1
   line_range: 3056-3079
   confidence: medium
+  start_ts: 6727
+  end_ts: 6770
 - speaker_id: s1
   line_range: 3080-3083
   confidence: medium
+  start_ts: 6772
+  end_ts: 6780
 - speaker_id: s2
   line_range: 3084-3106
   confidence: high
+  start_ts: 6781
+  end_ts: 6827
 - speaker_id: s1
   line_range: 3107-3109
   confidence: medium
+  start_ts: 6828
+  end_ts: 6833
 - speaker_id: s2
   line_range: 3110-3119
   confidence: medium
+  start_ts: 6837
+  end_ts: 6858
 - speaker_id: s1
   line_range: 3120-3129
   confidence: medium
-- speaker_id: s2
+  start_ts: 6860
+  end_ts: 6888
+- speaker_id:
+  - s1
+  - s2
   line_range: 3130-3137
-  confidence: medium
+  confidence: low
+  start_ts: 6891
+  end_ts: 6905
 - speaker_id: s1
   line_range: 3138-3166
   confidence: medium
-- speaker_id: s2
+  start_ts: 6908
+  end_ts: 6974
+- speaker_id:
+  - s1
+  - s2
   line_range: 3167-3178
-  confidence: high
+  confidence: low
+  start_ts: 6975
+  end_ts: 7004
 - speaker_id: s1
   line_range: 3179-3194
   confidence: medium
+  start_ts: 7007
+  end_ts: 7042
 - speaker_id: s2
   line_range: 3195-3349
   confidence: high
+  start_ts: 7046
+  end_ts: 7399
 - speaker_id: s1
   line_range: 3350-3373
   confidence: high
+  start_ts: 7402
+  end_ts: 7453
 - speaker_id: s1
   line_range: 3374-3376
   confidence: high
+  start_ts: 7459
+  end_ts: 7463
 - speaker_id: s2
   line_range: 3377-3380
   confidence: high
+  start_ts: 7465
+  end_ts: 7473
 - speaker_id: s1
   line_range: 3381-3400
   confidence: high
+  start_ts: 7477
+  end_ts: 7531
 - speaker_id: s2
   line_range: 3401-3434
   confidence: high
+  start_ts: 7533
+  end_ts: 7606
 - speaker_id: s1
   line_range: 3435-3437
   confidence: high
+  start_ts: 7609
+  end_ts: 7614
 - speaker_id: s2
   line_range: 3438-3456
   confidence: high
+  start_ts: 7617
+  end_ts: 7657
 - speaker_id: s1
   line_range: 3457-3460
   confidence: high
+  start_ts: 7659
+  end_ts: 7666
 - speaker_id: s2
   line_range: 3461-3608
   confidence: high
+  start_ts: 7668
+  end_ts: 7980
 - speaker_id: s1
   line_range: '3609'
   confidence: high
+  start_ts: 7982
+  end_ts: 7982
 - speaker_id: s2
   line_range: 3610-3649
   confidence: high
+  start_ts: 7984
+  end_ts: 8071
 - speaker_id: s1
   line_range: 3650-3657
   confidence: low
+  start_ts: 8074
+  end_ts: 8088
 - speaker_id: foreign-music
   line_range: 3658-3660
   confidence: high
+  start_ts: 8092
+  end_ts: 8098
 image_verification:
 - turn_line_range: 544-578
   resolution: corrected

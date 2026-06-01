@@ -2,13 +2,16 @@
 # scaffolding (rationale / verifier_notes / needs_image_verification) was
 # stripped by
 # scripts/build/finalize-attribution.py once the independent verifier
-# passed. Indexes into the source transcript by 1-indexed line range;
+# passed; source_content_hash + per-turn start_ts/end_ts are machine-
+# computed from the source by the same tool (tamper-evident, regeneratable).
+# Indexes into the source transcript by 1-indexed line range;
 # references only, no transcript text. Conforms to
 # meta/schema-speaker-attribution.yaml.
 
 slug: 8newsnow-craft-of-unknown-origin-lacatski-2026
 source_path: sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
 source_line_count: 140
+source_content_hash: sha256:997c9b1f58c696f8f6e11430fff4959211250a97464ef94824fdeec269de0e63
 generated_date: 2026-05-29
 producer_session: producer-prep-transcript-sibling-8newsnow-2026-05-28
 verifier_session: verifier-2026-05-29-a74afeb72924d3e63
@@ -61,27 +64,43 @@ turns:
 - speaker_id: s3
   line_range: 9-20
   confidence: high
+  start_ts: 1
+  end_ts: 27
 - speaker_id: s1
   line_range: 21-31
   confidence: high
+  start_ts: 30
+  end_ts: 51
 - speaker_id: s2
   line_range: 32-37
   confidence: high
+  start_ts: 53
+  end_ts: 69
 - speaker_id: s1
   line_range: 38-63
   confidence: medium
+  start_ts: 72
+  end_ts: 133
 - speaker_id: s2
   line_range: 64-66
   confidence: high
+  start_ts: 136
+  end_ts: 140
 - speaker_id: s1
   line_range: 67-69
   confidence: medium
+  start_ts: 143
+  end_ts: 147
 - speaker_id: s2
   line_range: 70-73
   confidence: high
+  start_ts: 148
+  end_ts: 154
 - speaker_id: s1
   line_range: 74-81
   confidence: medium
+  start_ts: 156
+  end_ts: 174
 - speaker_id: foreign-archival
   line_range: '82'
   confidence: medium
@@ -92,30 +111,50 @@ turns:
     this transcript''s metadata.
 
     '
+  start_ts: 176
+  end_ts: 176
 - speaker_id: s1
   line_range: 83-95
   confidence: medium
+  start_ts: 178
+  end_ts: 206
 - speaker_id: s2
   line_range: 96-99
   confidence: high
+  start_ts: 208
+  end_ts: 216
 - speaker_id: s1
   line_range: 100-113
   confidence: medium
+  start_ts: 219
+  end_ts: 252
 - speaker_id: s2
   line_range: 114-125
   confidence: high
+  start_ts: 254
+  end_ts: 280
 - speaker_id: s1
   line_range: 126-127
   confidence: medium
+  start_ts: 284
+  end_ts: 286
 - speaker_id: s2
   line_range: '128'
   confidence: medium
+  start_ts: 288
+  end_ts: 288
 - speaker_id: s1
   line_range: 129-136
   confidence: medium
+  start_ts: 291
+  end_ts: 305
 - speaker_id: s3
   line_range: 137-139
   confidence: medium
+  start_ts: 308
+  end_ts: 311
 - speaker_id: s3
   line_range: '140'
   confidence: low
+  start_ts: 312
+  end_ts: 312

@@ -2,13 +2,16 @@
 # scaffolding (rationale / verifier_notes / needs_image_verification) was
 # stripped by
 # scripts/build/finalize-attribution.py once the independent verifier
-# passed. Indexes into the source transcript by 1-indexed line range;
+# passed; source_content_hash + per-turn start_ts/end_ts are machine-
+# computed from the source by the same tool (tamper-evident, regeneratable).
+# Indexes into the source transcript by 1-indexed line range;
 # references only, no transcript text. Conforms to
 # meta/schema-speaker-attribution.yaml.
 
 slug: mysterywire-lacatski-kelleher-knapp-2021
 source_path: sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
 source_line_count: 429
+source_content_hash: sha256:15470fbcfbfa8fe0c0c2dda7e420d5ed6e8d4285ccac6be8b19a2ee5f5de5e4b
 generated_date: 2026-05-28
 producer_session: producer-2026-05-28-mysterywire-lacatski-kelleher-knapp-2021
 verifier_session: verifier-2026-05-28-a6198e47502d68394
@@ -39,53 +42,87 @@ turns:
 - speaker_id: s1
   line_range: 9-25
   confidence: high
+  start_ts: 3
+  end_ts: 38
 - speaker_id: s2
   line_range: 26-60
   confidence: high
+  start_ts: 39
+  end_ts: 121
 - speaker_id: s1
   line_range: 61-67
   confidence: high
+  start_ts: 126
+  end_ts: 140
 - speaker_id: s2
   line_range: 68-107
   confidence: high
+  start_ts: 142
+  end_ts: 246
 - speaker_id: s1
   line_range: 108-114
   confidence: high
+  start_ts: 249
+  end_ts: 263
 - speaker_id: s3
   line_range: 115-194
   confidence: high
+  start_ts: 266
+  end_ts: 471
 - speaker_id: s1
   line_range: 195-209
   confidence: high
+  start_ts: 473
+  end_ts: 503
 - speaker_id: s3
   line_range: 210-326
   confidence: high
+  start_ts: 506
+  end_ts: 781
 - speaker_id: s1
   line_range: 327-338
   confidence: high
+  start_ts: 784
+  end_ts: 807
 - speaker_id: s2
   line_range: 339-351
   confidence: high
+  start_ts: 810
+  end_ts: 836
 - speaker_id: foreign-music
   line_range: '352'
   confidence: high
+  start_ts: 837
+  end_ts: 837
 - speaker_id: s2
   line_range: 353-368
   confidence: high
+  start_ts: 839
+  end_ts: 874
 - speaker_id: s1
   line_range: 369-371
   confidence: high
+  start_ts: 877
+  end_ts: 881
 - speaker_id: s3
   line_range: 372-411
   confidence: high
+  start_ts: 883
+  end_ts: 990
 - speaker_id: s1
   line_range: 412-426
   confidence: high
+  start_ts: 992
+  end_ts: 1022
 - speaker_id:
   - s2
   - s3
   line_range: 427-428
   confidence: low
+  start_ts: 1024
+  end_ts: 1026
 - speaker_id: foreign-music
   line_range: '429'
   confidence: high
+  start_ts: 1033
+  end_ts: 1033

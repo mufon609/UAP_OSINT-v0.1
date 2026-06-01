@@ -20,6 +20,13 @@ Kept: all structured fields, `confidence`, `referenced_source`, speaker
 `notes`, `image_verification` (turn_line_range / resolution /
 resolved_speaker_id / resolved_by).
 
+Computed (W2): a top-level `source_content_hash` (sha256 of the raw source
+bytes — the strong drift detector) and per-turn `start_ts`/`end_ts` (the
+caption-tick span of each turn's line_range, hour-format aware). Both are
+derived deterministically from the source and are tamper-evident:
+`validate-speaker-attribution.py` recomputes and compares. Stamped in both
+--video and --no-video modes (pure source read).
+
 W3 fold gate (BACKLOG C3) — finalize is mechanically gated on the active-
 speaker spot-check. There is NO graceful skip: a sibling whose source has a
 recording cannot be finalized unless the spot-check runs clean.
@@ -46,6 +53,7 @@ carries scaffolding is a FATAL there (this tool is what clears it).
 
 import argparse
 import csv
+import hashlib
 import subprocess
 import sys
 import tempfile
@@ -55,6 +63,11 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import REPO_ROOT, strict_yaml_load  # noqa: E402
+from checks.speaker_attribution_consistency import (  # noqa: E402
+    _parse_range,
+    build_line_ts_map,
+    turn_ts_range,
+)
 
 SPOT_CHECK = REPO_ROOT / "scripts" / "tools" / "spot-check-attribution.py"
 
@@ -63,7 +76,9 @@ HEADER = (
     "# scaffolding (rationale / verifier_notes / needs_image_verification) was\n"
     "# stripped by\n"
     "# scripts/build/finalize-attribution.py once the independent verifier\n"
-    "# passed. Indexes into the source transcript by 1-indexed line range;\n"
+    "# passed; source_content_hash + per-turn start_ts/end_ts are machine-\n"
+    "# computed from the source by the same tool (tamper-evident, regeneratable).\n"
+    "# Indexes into the source transcript by 1-indexed line range;\n"
     "# references only, no transcript text. Conforms to\n"
     "# meta/schema-speaker-attribution.yaml.\n"
 )
@@ -120,6 +135,54 @@ def finalize(data: dict, verifier_session: str | None) -> dict:
     return counts
 
 
+def _set_after(d: dict, anchor_key: str, new_key: str, value) -> None:
+    """Insert/replace `new_key` immediately after `anchor_key`, preserving the
+    rest of the key order (falls back to end if the anchor is absent). Mutates
+    `d` in place. Idempotent: a pre-existing `new_key` anywhere is removed
+    first, so re-finalize lands it in the same position → byte-stable dump."""
+    d.pop(new_key, None)
+    rebuilt = {}
+    for k, v in d.items():
+        rebuilt[k] = v
+        if k == anchor_key:
+            rebuilt[new_key] = value
+    if new_key not in rebuilt:
+        rebuilt[new_key] = value
+    d.clear()
+    d.update(rebuilt)
+
+
+def stamp_computed_fields(source_path: Path, data: dict) -> dict:
+    """W2 — stamp the derived, tamper-evident fields from the source file:
+    a top-level `source_content_hash` (sha256 of the raw bytes) and per-turn
+    `start_ts`/`end_ts` (the caption-tick span of each turn's line_range, via
+    the shared hour-aware `build_line_ts_map`/`turn_ts_range`). Both are
+    regeneratable from (source, line_range) — `validate-speaker-attribution.py`
+    recomputes and compares. Deterministic + idempotent: fields are popped then
+    re-set in a fixed position, so re-finalizing an unchanged sibling produces
+    byte-identical output. Returns counts for the summary."""
+    digest = "sha256:" + hashlib.sha256(source_path.read_bytes()).hexdigest()
+    _set_after(data, "source_line_count", "source_content_hash", digest)
+
+    line_ts = build_line_ts_map(source_path)
+    counts = {"timed": 0, "untimed": 0}
+    for t in data.get("turns") or []:
+        if not isinstance(t, dict):
+            continue
+        # pop-then-(maybe)-set last → stable key order across re-finalize
+        t.pop("start_ts", None)
+        t.pop("end_ts", None)
+        lo, hi = _parse_range(t.get("line_range"))
+        start, end = (None, None) if lo is None else turn_ts_range(line_ts, lo, hi)
+        if start is None:
+            counts["untimed"] += 1
+            continue
+        t["start_ts"] = start
+        t["end_ts"] = end
+        counts["timed"] += 1
+    return counts
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -162,6 +225,13 @@ def main() -> None:
 
     counts = finalize(data, args.verifier_session)
 
+    # W2 — stamp derived fields (content hash + per-turn timestamps) from the
+    # source. Pure source read, so it runs in both --video and --no-video modes.
+    source_path = REPO_ROOT / data.get("source_path", "")
+    if not source_path.is_file():
+        sys.exit(f"error: source_path not found: {source_path}")
+    ts_counts = stamp_computed_fields(source_path, data)
+
     # sort_keys=False preserves the producer's key order; width avoids wrapping
     # long scalars (source_path). After stripping, every value is a short
     # scalar or list, so the dump is clean and stable across re-runs.
@@ -180,6 +250,9 @@ def main() -> None:
           f"{counts['needs_image_verification']} needs_image_verification, "
           f"{counts['contributor_notes']} contributor_notes "
           f"({total} scaffolding field(s) total)")
+    print(f"  computed: source_content_hash {data['source_content_hash'][:14]}…, "
+          f"start_ts/end_ts on {ts_counts['timed']} turn(s) "
+          f"({ts_counts['untimed']} untimed)")
 
 
 if __name__ == "__main__":

@@ -2489,8 +2489,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:13:28] do with pulling levers and moving things
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 1997-2003)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 1997-2003 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:13:30] but Joe is that really that much of a of
@@ -2951,8 +2951,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:27:59] theorize that there's aliens amongst
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 2393-2407 · medium confidence)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 2393-2407 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:28:02] us when you say um well two things so I
@@ -3407,8 +3407,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:40:48] we do the same thing yes yeah no no
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 2747-2756 · medium confidence)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 2747-2756 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:40:51] question and obviously if they are the
@@ -3440,8 +3440,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:41:40] access to other cars really good
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 2768-2779 · medium confidence)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 2768-2779 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:41:42] mechanics that's your people it is my
@@ -3779,8 +3779,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:51:26] people they might be responsible for us
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 3035-3055 · medium confidence)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 3035-3055 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:51:28] being humans in the first place well you
@@ -3916,8 +3916,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:54:48] religion and like what what they the way
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 3130-3137 · medium confidence)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 3130-3137 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:54:51] they talk about us well religion calls
@@ -3965,8 +3965,8 @@ Department of the Air Force / The Pentagon, circa 1952.
 [1:56:14] no
 ```
 
-### Luis Elizondo ([/people/luis-elizondo](/people/luis-elizondo)) — Guest  
-*(lines 3167-3178)*
+### Speakers — mixed exchange: Joe Rogan, Luis Elizondo  
+*(lines 3167-3178 · ⚠ LOW CONFIDENCE)*
 
 ```
 [1:56:15] motivation and that we have especially

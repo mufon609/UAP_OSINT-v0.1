@@ -99,9 +99,9 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import REPO_ROOT  # noqa: E402
+from checks.speaker_attribution_consistency import build_line_ts_map  # noqa: E402
 
 TOOLS_DIR = Path(__file__).resolve().parent
-TS_RE = re.compile(r"^\[(\d+):(\d+)\]")
 
 # Burst sampling: K frames evenly spaced across each turn's source-line time
 # window. Denser than the old 3-still beg/mid/end pattern so the dominance /
@@ -153,16 +153,14 @@ def _load_sibling(rel_filename: str):
 # ----------------------------------------------------------------------------
 
 def build_line_timestamp_map(source_path: Path) -> dict:
-    """Return {1-indexed line number: seconds} for every `[MM:SS] text` line.
-    Lines without a timestamp prefix (file headers, blanks) are absent from
-    the map."""
-    out = {}
-    with source_path.open() as f:
-        for i, line in enumerate(f, start=1):
-            m = TS_RE.match(line)
-            if m:
-                out[i] = int(m.group(1)) * 60 + int(m.group(2))
-    return out
+    """Return {1-indexed line number: seconds} for every timestamped source
+    line. Delegates to the shared hour-aware
+    `speaker_attribution_consistency.build_line_ts_map`, so `[H:MM:SS]` ticks
+    (sources past 1 h, e.g. jre-2194 → 2:14:58) are covered — the old local
+    `[MM:SS]`-only regex silently dropped them, leaving every hour-format turn
+    without a sample window. Lines without a leading tick (headers, blanks) are
+    absent from the map."""
+    return build_line_ts_map(source_path)
 
 
 def first_ts_at_or_after(line_to_ts: dict, target_line: int, max_line: int) -> Optional[float]:

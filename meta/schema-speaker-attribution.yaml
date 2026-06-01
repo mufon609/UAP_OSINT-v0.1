@@ -123,6 +123,15 @@ optional_keys:
   - verifier_notes        # free-text; required when verification_status
                           # == rejected (carries the correction list).
                           # FORBIDDEN when == verified (stripped on finalize).
+  - source_content_hash   # "sha256:<hex>" over the raw source-file bytes.
+                          # COMPUTED by scripts/build/finalize-attribution.py
+                          # (W2); REQUIRED once verification_status == verified
+                          # (parallels verifier_session). The strong drift
+                          # detector — source_line_count is a cheap pre-check,
+                          # this catches any byte change under a constant line
+                          # count. validate-speaker-attribution.py recomputes
+                          # and compares; mismatch = re-run finalize. Not
+                          # hand-authored.
   - image_verification    # list of image_verification_entry (only for
                           # turns whose `needs_image_verification` was
                           # resolved against the photo-identity-log)
@@ -195,7 +204,7 @@ speaker_entry:
 
 turn_entry:
   required: [speaker_id, line_range, confidence]
-  optional: [rationale, referenced_source, needs_image_verification, verifier_notes]
+  optional: [start_ts, end_ts, rationale, referenced_source, needs_image_verification, verifier_notes]
   # speaker_id: three shapes accepted, mirroring the existing
   #   schema-research-artifact.yaml::quote_entry.speaker_id convention:
   #
@@ -221,6 +230,17 @@ turn_entry:
   #   covered by exactly one turn entry, with no overlaps. Ranges
   #   must be sorted ascending across the turns array (chronological
   #   reading order).
+  #
+  # start_ts / end_ts: integer seconds — the first and last caption-tick
+  #   times spanned by line_range. COMPUTED by
+  #   scripts/build/finalize-attribution.py (W2) from the source file's
+  #   `[MM:SS]` / `[H:MM:SS]` ticks; NOT hand-authored. Absent when the turn
+  #   covers no timestamped source line (e.g. a header-only intro turn).
+  #   On a VERIFIED sibling a turn whose line_range contains a timestamped
+  #   line MUST carry both, and they must equal the value derived from
+  #   (source, line_range) — validate-speaker-attribution.py recomputes and
+  #   compares, so the fields are tamper-evident. start_ts <= end_ts, and the
+  #   ticks are non-decreasing across the turns array (chronological order).
   #
   # confidence: high | medium | low.
   #   - high: speaker boundary is clean (self-introduction, second-
