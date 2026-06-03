@@ -41,10 +41,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # Wayback-URL detection + manifest I/O share helpers with archive.py
 # via lib._common.
 from lib._common import (  # noqa: E402
-    MANIFEST_PATH,
     REPO_ROOT,
     SOURCES_DIR,
-    WAYBACK_URL_RE,
     content_dirs,
     format_from_path,
     is_gitignored,

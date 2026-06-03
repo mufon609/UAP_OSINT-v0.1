@@ -37,8 +37,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # Wayback-URL detection + manifest I/O share helpers with manifest.py
 # via lib._common.
 from lib._common import (  # noqa: E402
-    MANIFEST_PATH,
-    WAYBACK_URL_RE,
     load_manifest,
     load_topic,
     save_manifest,

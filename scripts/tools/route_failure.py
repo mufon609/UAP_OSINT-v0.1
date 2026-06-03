@@ -33,7 +33,7 @@ from pathlib import Path
 # `checks` resolves as a package (same idiom as validate.py / check-vocab.py).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from checks._phases import CHECK_PHASE, PHASE_ROLE, phase_of, role_of  # noqa: E402
+from checks._phases import CHECK_PHASE, phase_of, role_of  # noqa: E402
 
 # render-phase checks that read cross-layer / whole-repo state: a failure
 # here is rebuilt by the builder, but may signal an upstream gap (a missing

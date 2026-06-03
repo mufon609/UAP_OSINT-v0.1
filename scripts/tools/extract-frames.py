@@ -66,13 +66,12 @@ end-to-end workflow this tool is step 2 of.
 """
 
 import argparse
-import json
 import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
 # scripts/tools/extract-frames.py — put scripts/ on sys.path so
 # `from lib._common` resolves from this nested location.
