@@ -75,6 +75,21 @@ naming the metadata field, never a `quotes[]` entry.
    facts with their **exact source phrasing** + location anchor — so the
    builder can write source-grounded prose (prose-drift tokenizes against this)
    without re-reading the source.
+
+   **`naming_quirks` discipline — grounded `observed`, never-invented `canonical`.**
+   Flag a source-form quirk only when its `observed` form appears in text the
+   reader meets on the node — inside a `quotes[]` span you emit, or a
+   `cited_works` `citation_verbatim` you capture. A quirk for a form sitting in
+   unquoted body or an uncaptured reference has no on-node referent and is
+   dropped as an *orphan* by the grounding gate (`meta/conventions.md`
+   "Source-Form Notes stays strictly grounded"); whole-scan fidelity is the
+   manifest `extraction_type`'s job, not one row per typo. And `canonical`
+   records only a form the source itself supports — **never assert a correction
+   the source does not attest.** When the intended form is not derivable (a
+   descending page range, a control number you cannot resolve), mark it an
+   apparent/unresolvable source typo and assert no specific corrected value;
+   inventing a plausible one reintroduces the very fabrication the verbatim
+   discipline exists to prevent.
 4. **Document source — emit `cited_works` in one of three valid shapes.**
    `cited_works` is required on every document artifact; the shape carries an
    affirmation about the source's reference-list state (`meta/conventions.md`
