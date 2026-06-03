@@ -317,10 +317,14 @@ def run_tesseract(images):
 
 
 def run_paddleocr(images):
-    """PaddleOCR over each page image. PaddleOCR's API has shifted across
-    versions; this targets the 2.x ``.ocr()`` interface (list of
-    [box, (text, conf)] per image) and falls back to a 3.x ``.predict``-style
-    result if present. Raises with guidance if PaddleOCR isn't installed."""
+    """PaddleOCR over each page image. Tolerates both the 3.x ``predict()`` API
+    (result objects with a ``rec_texts`` list) and the 2.x ``ocr()`` API (list
+    of ``[box, (text, conf)]``). oneDNN is disabled: paddlepaddle's CPU PIR
+    executor crashes in the oneDNN path on current builds
+    (``ConvertPirAttribute2RuntimeAttribute ... onednn``); the workaround is
+    ``FLAGS_use_mkldnn=0`` + ``enable_mkldnn=False``."""
+    os.environ.setdefault("FLAGS_use_mkldnn", "0")
+    os.environ.setdefault("PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK", "True")
     try:
         from paddleocr import PaddleOCR  # noqa: PLC0415
     except Exception as e:  # noqa: BLE001
@@ -328,21 +332,54 @@ def run_paddleocr(images):
             "PaddleOCR not importable — run scripts/tools/setup-ocr-consensus.sh "
             f"to create .venv-ocr/ (this tool auto-relaunches under it). [{e}]"
         )
-    try:
-        ocr = PaddleOCR(use_angle_cls=False, lang="en", show_log=False)
-    except TypeError:
-        ocr = PaddleOCR(lang="en")  # newer signature dropped some kwargs
+    # Construct across API generations. 3.x default uses the heavy server
+    # detection model, which tried to alloc ~43 GB on a 300-dpi page — force the
+    # MOBILE det+rec models, cap the detection input side, and disable the extra
+    # doc-orientation / unwarping / textline-orientation preprocessors (memory +
+    # time). Disable oneDNN every way that's accepted (CPU PIR crash workaround).
+    for kwargs in ({"lang": "en", "enable_mkldnn": False,
+                    "text_detection_model_name": "PP-OCRv5_mobile_det",
+                    "text_recognition_model_name": "en_PP-OCRv5_mobile_rec",
+                    "use_doc_orientation_classify": False,
+                    "use_doc_unwarping": False,
+                    "use_textline_orientation": False,
+                    "text_det_limit_side_len": 1280,
+                    "text_det_limit_type": "max"},
+                   {"lang": "en", "enable_mkldnn": False},
+                   {"use_angle_cls": False, "lang": "en", "show_log": False},
+                   {"lang": "en"}):
+        try:
+            ocr = PaddleOCR(**kwargs)
+            break
+        except TypeError:
+            continue
+    else:
+        ocr = PaddleOCR()
+
+    use_predict = hasattr(ocr, "predict")
     pages = []
     for img in images:
-        res = ocr.ocr(str(img), cls=False)
         lines = []
-        if res and res[0]:
-            for entry in res[0]:
-                # 2.x: entry == [box, (text, conf)]
+        if use_predict:
+            try:
+                res = ocr.predict(str(img))
+            except TypeError:
+                res = ocr.predict(input=str(img))
+            for r in res or []:
                 try:
-                    lines.append(entry[1][0])
-                except (IndexError, TypeError):
-                    continue
+                    texts = r["rec_texts"]
+                except (KeyError, TypeError):
+                    texts = getattr(r, "rec_texts", None)
+                if texts:
+                    lines.extend(texts)
+        else:
+            res = ocr.ocr(str(img), cls=False)
+            if res and res[0]:
+                for entry in res[0]:
+                    try:  # 2.x: entry == [box, (text, conf)]
+                        lines.append(entry[1][0])
+                    except (IndexError, TypeError):
+                        continue
         pages.append("\n".join(lines))
     return "\n".join(pages)
 

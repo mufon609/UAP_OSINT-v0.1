@@ -60,6 +60,12 @@ sources/photo-identity-log/index.csv
 # .venv-face/bin/python3 when it exists.
 .venv-face/
 
+# Project-local venv for the PaddleOCR engine behind the OCR-consensus
+# pipeline. Created by setup-ocr-consensus.sh; ocr-consensus.py auto-relaunches
+# under .venv-ocr/bin/python3 when it exists. Kept separate from .venv-face/
+# because PaddleOCR's footprint is heavy.
+.venv-ocr/
+
 # Derived baseline-encoding cache (128-d dlib embeddings of every baseline
 # crop). Rebuilt on demand from the committed baselines/ via a sha256
 # fingerprint — never authoritative, never committed.
