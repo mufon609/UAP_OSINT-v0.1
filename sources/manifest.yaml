@@ -837,6 +837,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #14 — ''Role of Superconductors in Gravity Research'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 23 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 17 pages. DIA attachment #10 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Hathaway, Hathaway Consulting (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_14-DIRD_The_Role_of_Superconductors_in_Gravity_Research.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-14-superconductors-gravity-20100323.txt
+    archived_date: '2026-06-03'
+    note: 'Clean-text sibling of the OCR-scanned DIRD-14 PDF (''The Role of Superconductors in Gravity Research'', DIA AAWSAP, 23 March 2010). Produced 2026-06-03 via multimodal page-image read of all 17 pages; independently verified 2026-06-03 by a separate agent session — PASS (single page-11 footnote-marker fix routed back and confirmed against the image). Black Vault / John Greenewald FOIA cover insert preserved verbatim. Equations/figures bracketed; redactions ((b)(3):10 USC 424, (b)(6)) and source spellings/typos preserved verbatim. Note resolved at production: control number reads DIA-08-1003-013 and ICOD reads ''1 December 2010'' on the page-1 image (the parent PDF note''s ''1 December 2009'' is superseded by the verified image reading).'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_16-DIRD_The_Space_Communication_Implications_of_Quantum_Entanglement_and_Nonlocality.pdf
   status: archived
   artifacts:
