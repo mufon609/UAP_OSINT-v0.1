@@ -64,13 +64,21 @@ In order, with a check after each (build-protocol → run
      Document Summary fields and describe the document's *content* in source
      vocabulary.
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
-2. **Link.** Normalize worker cross-ref candidates into `relationships` /
-   `affiliations` / `timeline` / … with canonical `[`/path`]` links; populate
-   `naming_quirks`. A cross-ref the worker flagged as a
-   **non-canonical source form** gets both a stub `[`/path`]` link
-   (stub-never-null) *and* a `naming_quirks` `preserve-as-sic-in-quotes`
-   entry mapping source-form → canonical (`meta/conventions.md` "A source
-   naming an entity under a non-canonical form"). Register
+2. **Link.** Normalize **every** worker cross-ref candidate into a canonical
+   `[`/path`]` link — in the structured field it belongs to (`relationships` /
+   `affiliations` / `timeline` / `speakers` / …) or, for an entity named in
+   synthesis prose (a document `description`, a `background`), wrapped inline at
+   its first mention (`Name ([`/people/slug`])`, source token left verbatim so
+   prose-drift still matches). The link is **stub-never-null**: emit the
+   canonical `/{type}/{slug}` **even when that node does not exist yet**
+   (`meta/conventions.md` "Cross-reference paths to unbuilt nodes — use a stub,
+   never null") — the target existing is irrelevant, and dropping a
+   source-attested person from the prose because no node exists is the
+   under-linking failure. Populate `naming_quirks`. A cross-ref the worker
+   flagged as a **non-canonical source form** *additionally* gets a
+   `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
+   canonical (`meta/conventions.md` "A source naming an entity under a
+   non-canonical form"). Register
    `preserve-as-sic-in-quotes` **only** for a form that appears on the node —
    inside a quote, or the `significance` / `location` framing one; never sweep
    the source and log incidental typos in unquoted body text (orphan

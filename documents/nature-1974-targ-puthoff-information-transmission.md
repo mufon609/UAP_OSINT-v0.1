@@ -34,7 +34,7 @@ The paper has three studies. First, experiments with Mr. Uri Geller ([`/people/u
 
 For the Geller experiments, the conditions and results for the 10 experiments carried out in the shielded room are displayed in Table 1 and Fig. 1. Experiments 1 through 10 were carried out using a shielded room in SRI's facility for EEG research — a double walled steel room, locked by means of an inner and outer door, each of which is secured with a refrigerator-type locking mechanism. Experiments 11 through 13 were carried out in SRI's Engineering Building to make use of the computer facilities available there, with Geller secured in a double walled, copper-screen Faraday cage 54 m down the hall and around the corner from the computer room.
 
-Puthoff and Targ conclude that a channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality, containing noise along with the signal as with all biological systems. The research was sponsored by The Foundation for Parasensory Investigation, New York City; Puthoff and Targ thank Mrs. Judith Skutch and Dr. Edgar D. Mitchell ([`/people/edgar-mitchell`]) of the Institute of Noetic Sciences as well as SRI associate Mr. Bonnar Cox.
+Puthoff and Targ conclude that a channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality, containing noise along with the signal as with all biological systems. The research was sponsored by The Foundation for Parasensory Investigation, New York City; Puthoff and Targ thank Mrs. Judith Skutch ([`/people/judith-skutch`]) and Dr. Edgar D. Mitchell ([`/people/edgar-mitchell`]) of the Institute of Noetic Sciences as well as SRI associate Mr. Bonnar Cox ([`/people/bonnar-cox`]).
 
 ---
 
@@ -196,8 +196,10 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/bonnar-cox`]
 - [`/people/edgar-mitchell`]
 - [`/people/hal-puthoff`]
+- [`/people/judith-skutch`]
 - [`/people/pat-price`]
 - [`/people/russell-targ`]
 - [`/people/uri-geller`]
