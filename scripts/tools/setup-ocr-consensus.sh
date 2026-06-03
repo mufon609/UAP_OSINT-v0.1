@@ -37,6 +37,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 VENV_DIR="$REPO_ROOT/.venv-ocr"
 
+# Interpreter used to create the venv. paddlepaddle wheels can lag the newest
+# CPython (e.g. no cp313 wheel yet); if `pip install paddlepaddle` below reports
+# no matching wheel, re-run pointing at a 3.11/3.12 interpreter, e.g.:
+#   PYTHON_BIN="$HOME/.pyenv/versions/3.11.9/bin/python" scripts/tools/setup-ocr-consensus.sh
+PYTHON_BIN="${PYTHON_BIN:-python3}"
+
 echo "============================================================"
 echo " Multi-engine OCR consensus dependency setup"
 echo "============================================================"
@@ -52,15 +58,31 @@ MISSING=()
 command -v tesseract >/dev/null 2>&1 || MISSING+=(tesseract-ocr)
 command -v pdftoppm  >/dev/null 2>&1 || MISSING+=(poppler-utils)
 if ! python3 -c "import venv" 2>/dev/null; then MISSING+=(python3-venv); fi
-# PaddleOCR pulls opencv (libGL) + uses libgomp; these are common gaps on a
-# headless box. dpkg-query is cheap; only queue what's actually missing.
-for lib in libgl1 libglib2.0-0 libgomp1; do
-    dpkg-query -W -f='${Status}' "$lib" 2>/dev/null | grep -q "install ok installed" || MISSING+=("$lib")
+# PaddleOCR pulls opencv, which needs the GL + glib + gomp shared libraries.
+# Detect the actual .so files via ldconfig rather than dpkg package NAMES:
+# Debian/Kali's 64-bit time_t (t64) transition renamed many of these
+# (libglib2.0-0 -> libglib2.0-0t64). A name check both false-alarms on the old
+# name AND, if it then installs the pre-t64 package, CONFLICTS with the
+# installed t64 one (the failure this script originally hit). The loadable .so
+# is what actually matters; only queue a package when its .so is truly absent,
+# using the t64 package name as the candidate.
+declare -A SO_PKG=(
+  [libGL.so.1]=libgl1
+  [libgthread-2.0.so.0]=libglib2.0-0t64
+  [libgomp.so.1]=libgomp1
+)
+for so in "${!SO_PKG[@]}"; do
+  ldconfig -p 2>/dev/null | grep -q "$so" || MISSING+=("${SO_PKG[$so]}")
 done
 if [ "${#MISSING[@]}" -gt 0 ]; then
     echo "  Installing via apt: ${MISSING[*]}"
     sudo apt update -qq
-    sudo apt install -y "${MISSING[@]}"
+    sudo apt install -y "${MISSING[@]}" || {
+      echo "  ! apt install failed. On a t64 system the needed shared libraries"
+      echo "    are usually already present under *t64 packages — re-run; the"
+      echo "    ldconfig check above skips any .so that is already loadable."
+      exit 1
+    }
 fi
 echo "  ✓ tesseract: $(command -v tesseract) ($(tesseract --version 2>&1 | head -1))"
 echo "  ✓ pdftoppm:  $(command -v pdftoppm)"
@@ -71,21 +93,20 @@ echo
 # ---------------------------------------------------------------------------
 echo "[2/5] Project-local venv at $VENV_DIR (--system-site-packages)..."
 if [ ! -x "$VENV_DIR/bin/python3" ]; then
-    echo "  Creating venv..."
-    python3 -m venv --system-site-packages "$VENV_DIR"
+    echo "  Creating venv with: $PYTHON_BIN ($("$PYTHON_BIN" --version 2>&1))"
+    "$PYTHON_BIN" -m venv --system-site-packages "$VENV_DIR"
 fi
 echo "  ✓ venv Python: $($VENV_DIR/bin/python3 --version)"
+# Informational only — ocr-consensus.py's sole third-party import is yaml, and
+# we pip-install pyyaml into the venv below, so this never gates (it would
+# otherwise mis-fire under a 3.11 fallback venv whose system-site is not 3.13's).
 "$VENV_DIR/bin/python3" - <<'PY'
-import importlib, sys
-ok = True
-for mod in ("PIL", "yaml"):
-    try:
-        importlib.import_module(mod)
-        print(f"  ✓ system-site {mod} visible inside venv")
-    except Exception as e:  # noqa: BLE001
-        ok = False
-        print(f"  ✗ {mod} NOT visible inside venv: {e}")
-sys.exit(0 if ok else 1)
+import importlib
+try:
+    importlib.import_module("yaml")
+    print("  ✓ yaml importable in venv (system-site)")
+except Exception:  # noqa: BLE001
+    print("  · yaml not in system-site — pip will add pyyaml to the venv below")
 PY
 echo
 
@@ -96,9 +117,16 @@ echo
 echo "[3/5] pip install (inside venv) — paddlepaddle CPU wheel is large, may take several minutes..."
 "$VENV_DIR/bin/pip" install --upgrade pip
 echo "  Installing paddlepaddle (CPU)..."
-"$VENV_DIR/bin/pip" install paddlepaddle
-echo "  Installing paddleocr + numpy..."
-"$VENV_DIR/bin/pip" install paddleocr numpy
+"$VENV_DIR/bin/pip" install paddlepaddle || {
+  echo
+  echo "  ! paddlepaddle install failed — most often there is no wheel for this"
+  echo "    Python ($("$PYTHON_BIN" --version 2>&1)). Re-run against 3.11/3.12:"
+  echo "      rm -rf \"$VENV_DIR\""
+  echo "      PYTHON_BIN=\"\$HOME/.pyenv/versions/3.11.9/bin/python\" scripts/tools/setup-ocr-consensus.sh"
+  exit 1
+}
+echo "  Installing paddleocr + numpy + pyyaml..."
+"$VENV_DIR/bin/pip" install paddleocr numpy pyyaml
 echo
 
 # ---------------------------------------------------------------------------
