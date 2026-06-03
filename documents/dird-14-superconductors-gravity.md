@@ -227,6 +227,54 @@ The Conclusion: although the payoff of the discovery of a superconductor-mediate
 
 ---
 
+### The concrete evidentiary basis for the document's twice-stated "never actually performed" verdict — Podkletnov's doctoral supervisor's first-hand account that the experiment was conducted "after hours" and that he never witnessed it himself.
+
+> According to Kettunen (Reference 21), the spinning disk experiment was not actually performed at the institute but rather was conducted by Podkletnov and others "after hours." Kettunen also confided that although he was aware of the existence of the gravity shielding experiment through "so many others" telling him about it, he never witnessed it himself.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #14 (The Role of Superconductors in Gravity Research), 23 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the document's first-person voice ("Our own version...", "this author") is the redacted author. |
+| Source | [archived source](../sources/government/dird-14-superconductors-gravity-20100323.pdf) |
+| Location | Historical Timeline, Kettunen-supervisor paragraph |
+
+---
+
+### The document's single most extraordinary specific claim — the high-voltage YBCO "gravity beam" discharge allegedly toppling a pencil in an adjoining room behind a thick concrete wall. q12 names the "gravity beam" but the node otherwise never describes it.
+
+> When the static machine was operated, a light blue planar "discharge" was seen to pass from the superconductor array to the annulus. At this instant, a pencil standing upright on a table in an adjoining room and separated from the experiment by a thick concrete wall fell over.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #14 (The Role of Superconductors in Gravity Research), 23 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the document's first-person voice ("Our own version...", "this author") is the redacted author. |
+| Source | [archived source](../sources/government/dird-14-superconductors-gravity-20100323.pdf) |
+| Location | Historical Timeline, high-voltage gravity-beam apparatus paragraph |
+
+---
+
+### One of the few positive/unexplained residual results besides Tajmar — a ~0.5 percent weight increase the experimenter (Reiss) could not explain prosaically, with the author's own group supplying the YBCO disks for the experiments.
+
+> He weighed small, disk-shaped samples held in a specially made capsule while dipping it into LN2 and found a slight (~0.5 percent) weight increase of a high-temperature superconductor for which he was not able to offer a prosaic explanation.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #14 (The Role of Superconductors in Gravity Research), 23 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the document's first-person voice ("Our own version...", "this author") is the redacted author. |
+| Source | [archived source](../sources/government/dird-14-superconductors-gravity-20100323.pdf) |
+| Location | Historical Timeline, Reiss LN2 weight-anomaly paragraph |
+
+---
+
+### Even well-funded mainstream gravimetric work (Gravity Probe B) is in serious difficulty — the document's broadest credibility caveat, that the experimental difficulty in this area is "not confined to the fringe."
+
+> Final analysis of the Gravity Probe B satellite data is also apparently in serious difficulty (Reference 48), adding weight to the conclusion that experimentation in this area is fraught with difficulty even for the most experienced researchers.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #14 (The Role of Superconductors in Gravity Research), 23 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the document's first-person voice ("Our own version...", "this author") is the redacted author. |
+| Source | [archived source](../sources/government/dird-14-superconductors-gravity-20100323.pdf) |
+| Location | Historical Timeline, closing paragraph preceding the Conclusion |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
@@ -255,6 +303,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - **[16]** Li, N. and Torr, D. G., "Effects of a Gravitomagnetic Field on Pure Superconductors," Phys. Rev. D, Vol. 43, No. 2, 1991, pp. 457–459
 - **[18]** Li, N. and Torr, D. G., "Gravitoelectric–Electric Coupling via Superconductivity," Found. Phys. Lett., Vol. 6, No. 4, 1993, pp. 371-383
 - **[19]** Dewitt, B.S., "Superconductors and Gravitational Drag," Physical Review Letters, Vol. 16, 1966, p. 1902
+- **[20]** Ross, D.K., "The London Equation for Superconductors in a Gravitational Field," Journal of Physics A, Vol. 16, 1983, pp. 1331 – 1335
 - **[27]** Harris, E. G., "Comments on 'Gravitoelectric-electric Coupling via Superconductivity'," Found. Phys. Lett., Vol. 12, 1999, pg. 201
 - **[34]** Podkletnov, E. and Modanese, G., "Impulse Gravity Generator Based on Charged YBa2Cu3O7-y Superconductor with Composite Crystal Structure," arXiv: physics/0108005, Aug. 2001
 - **[35]** Hathaway, G., Cleveland, B., and Bao, Y., "Gravity Modification Experiment using a Rotating Superconducting Disk and Radio Frequency Fields," Physica C, Vol. 385, 2003, pp. 488-500

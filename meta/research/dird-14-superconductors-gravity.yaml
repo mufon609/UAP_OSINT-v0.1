@@ -229,6 +229,54 @@ quotes:
       (commonly referenced as AAWSAP) under which the DIRD series was commissioned.
     statement_date: '2010-03-23'
     claim_group: program_identity
+  - id: q16
+    added_date: '2026-06-03'
+    text: According to Kettunen (Reference 21), the spinning disk experiment was not actually performed at the institute but
+      rather was conducted by Podkletnov and others "after hours." Kettunen also confided that although he was aware of the
+      existence of the gravity shielding experiment through "so many others" telling him about it, he never witnessed it himself.
+    source:
+      path: government/dird-14-superconductors-gravity-20100323.pdf
+      location: Historical Timeline, Kettunen-supervisor paragraph
+    significance: The concrete evidentiary basis for the document's twice-stated "never actually performed" verdict — Podkletnov's
+      doctoral supervisor's first-hand account that the experiment was conducted "after hours" and that he never witnessed
+      it himself.
+    statement_date: '2010-03-23'
+    claim_group: podkletnov
+  - id: q17
+    added_date: '2026-06-03'
+    text: When the static machine was operated, a light blue planar "discharge" was seen to pass from the superconductor array
+      to the annulus. At this instant, a pencil standing upright on a table in an adjoining room and separated from the experiment
+      by a thick concrete wall fell over.
+    source:
+      path: government/dird-14-superconductors-gravity-20100323.pdf
+      location: Historical Timeline, high-voltage gravity-beam apparatus paragraph
+    significance: The document's single most extraordinary specific claim — the high-voltage YBCO "gravity beam" discharge
+      allegedly toppling a pencil in an adjoining room behind a thick concrete wall. q12 names the "gravity beam" but the node
+      otherwise never describes it.
+    statement_date: '2010-03-23'
+    claim_group: podkletnov
+  - id: q18
+    added_date: '2026-06-03'
+    text: He weighed small, disk-shaped samples held in a specially made capsule while dipping it into LN2 and found a slight
+      (~0.5 percent) weight increase of a high-temperature superconductor for which he was not able to offer a prosaic explanation.
+    source:
+      path: government/dird-14-superconductors-gravity-20100323.pdf
+      location: Historical Timeline, Reiss LN2 weight-anomaly paragraph
+    significance: One of the few positive/unexplained residual results besides Tajmar — a ~0.5 percent weight increase the
+      experimenter (Reiss) could not explain prosaically, with the author's own group supplying the YBCO disks for the experiments.
+    statement_date: '2010-03-23'
+    claim_group: reiss
+  - id: q19
+    added_date: '2026-06-03'
+    text: Final analysis of the Gravity Probe B satellite data is also apparently in serious difficulty (Reference 48), adding
+      weight to the conclusion that experimentation in this area is fraught with difficulty even for the most experienced researchers.
+    source:
+      path: government/dird-14-superconductors-gravity-20100323.pdf
+      location: Historical Timeline, closing paragraph preceding the Conclusion
+    significance: Even well-funded mainstream gravimetric work (Gravity Probe B) is in serious difficulty — the document's
+      broadest credibility caveat, that the experimental difficulty in this area is "not confined to the fringe."
+    statement_date: '2010-03-23'
+    claim_group: conclusion
 naming_quirks:
   - id: nq2
     added_date: '2026-06-03'
@@ -468,3 +516,14 @@ cited_works:
       location: References, entry [46]
     year: '2007'
     title: Search for Frame-Dragging in the Vicinity of Spinning Superconductors
+  - id: cw18
+    added_date: '2026-06-03'
+    citation_key: '20'
+    author: Ross, D.K.
+    citation_verbatim: ²⁰ Ross, D.K., "The London Equation for Superconductors in a Gravitational Field," Journal of Physics
+      A, Vol. 16, 1983, pp. 1331 – 1335
+    source:
+      path: government/dird-14-superconductors-gravity-20100323.pdf
+      location: References, entry [20]
+    year: '1983'
+    title: The London Equation for Superconductors in a Gravitational Field
