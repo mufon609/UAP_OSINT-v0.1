@@ -855,6 +855,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #16 — ''Space-Communication Implications of Quantum Entanglement and Nonlocality'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #25 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. J. Cramer, University of Washington (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_16-DIRD_The_Space_Communication_Implications_of_Quantum_Entanglement_and_Nonlocality.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-16-quantum-entanglement-nonlocality-20100330.txt
+    archived_date: '2026-06-03'
+    note: Clean-text sibling of the OCR-scanned DIRD-16 ('The Space-Communication Implications of Quantum Entanglement and Nonlocality', DIA-08-1003-016, 30 March 2010). Produced 2026-06-03 via local Tesseract OCR of 300dpi page images (VLM producer was blocked by the API content filter); independently verified 2026-06-03 by a separate agent session against the page images — PASS, 31 anchored corrections applied (reference-list footnote numbers, names, glyphs, OCR letter-swaps). John Greenewald / The Black Vault FOIA cover insert (physical page 2) preserved verbatim. Classification banners normalized to UNCLASSIFIED//FOR OFFICIAL USE ONLY; equations/figures bracketed; redactions ((b)(3):10 USC 424, (b)(6)) and source spellings preserved verbatim.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_17-DIRD_Maverick_Inventor_Versus_Corporate_Inventor-Where_Will_the_Next_major_Innovations_Arise.pdf
   status: archived
   artifacts:

@@ -1,0 +1,566 @@
+id: meta/research/dird-16-quantum-entanglement-nonlocality
+type: research-artifact
+target_node: documents/dird-16-quantum-entanglement-nonlocality
+status: active
+primary_sources:
+  - path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+    format: pdf
+document_intrinsic:
+  internal_title: The Space-Communication Implications of Quantum Entanglement and Nonlocality
+  internal_date: '2010-03-30'
+  authors_per_document:
+    - '[redacted per (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY banner recurring on every page; ''Defense Intelligence Reference Document'' / ''Acquisition Threat Support'' series identity on the cover; 30 March 2010 with ICOD 1 December 2009 and control number DIA-08-1003-016 on the cover. The title-page author block carries a ''Prepared by:'' line redacted under (b)(3):10 USC 424 above ''Defense Intelligence Agency'' and an ''Author:'' line redacted under (b)(6); the Administrative Note carries further (b)(3):10 USC 424 and (b)(6) redactions on the AAWSA Program Manager / ATTN lines. 33 document pages.'
+  pages: 33
+context_extrinsic:
+  display_title: The Space-Communication Implications of Quantum Entanglement and Nonlocality — DIA Defense Intelligence Reference Document, AAWSAP, 30 March 2010
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_16-DIRD_The_Space_Communication_Implications_of_Quantum_Entanglement_and_Nonlocality.pdf
+  quote_attribution: 'DIRD #16 (The Space-Communication Implications of Quantum Entanglement and Nonlocality), 30 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the external DIA-to-Congress products list attributes the report to Dr. John G. Cramer.'
+  extrinsic_authorship: 'No author is named on the document — the Author line is redacted under (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress AAWSAP/AATIP products list (U-18-0001/OCC1, 9 January 2018, attachment #25) attributes the report to Dr. John G. Cramer, University of Washington. The attribution is corroborated internally by the document''s own References entry [19], which lists works by John G. Cramer (the transactional interpretation of quantum mechanics applied throughout Section VII).'
+description: 'The Space-Communication Implications of Quantum Entanglement and Nonlocality reviews quantum entanglement and nonlocality and considers the possibility that this phenomenon could be used for sending observer-to-observer signals. It is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency ([`/organizations/dia`]), Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]); the author ([`/people/john-cramer`]) appears in the program''s series of these reports ([`/documents/dia-aatip-products-list-2018`]), while no author appears on the document itself.
+
+
+  The paper''s thesis is that such a demonstration would break several quantum "no-signal theorems" in the physics literature, and that nonlocal quantum signaling would have far-reaching implications as an enabling technology for superluminal and retrocausal signaling. The Foreword and Introduction observe that communication in space at the scale of the solar system is severely limited by the speed of light, and that this time delay makes real-time control of remote space-based devices impossible. The paper holds that relativity prohibits only certain forms of superluminal communication, while quantum nonlocality — the quantum connectedness acting in entangled quantum systems — appears, at least superficially, to exhibit superluminal aspects while preserving compatibility with special relativity. The question investigated is whether quantum nonlocality is the private domain of nature or whether it can be used to send signals from one observer to another; the paper states there is at present no compelling answer.
+
+
+  Section II reviews the no-signal theorems: a number of authors have presented "proofs" that nonlocal observer-to-observer communication is impossible within the formalism of standard quantum mechanics, but the paper points out a recent observation that at least some of these "proofs" are tautological, assuming the measurement process and its associated Hamiltonian are local and thereby building the no signaling conclusion into their starting assumptions. Section III holds there is no conflict between nonlocal signaling and the Lorentz invariance of special relativity, while the principle of causality appears very likely to be violated (or at least violate-able) if nonlocal signaling is possible.
+
+
+  Section IV turns to the momentum domain of Einstein''s original focus, where it appears nonlocal quantum communication may be more easily achieved. The Ghost Interference experiment of the Shih group demonstrates the nonlocal connection between entangled photons, but in the form reported does not demonstrate nonlocal communication because of its use of a classical communication link to impose the coincidence requirement between the detected photons. The paper describes a slit-imaging coincidence-free version: if the pattern observed by the camera can be changed by switching the optical fiber routing, this would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems. Later in the paper, the applications are considered — by the introduction of delay paths the "send" instant could be made to occur well after the "receive" instant, constituting a direct demonstration of retrocausal signaling and a direct violation of the principle of causality, and a "rover" operated at interplanetary distances, where the nonlocal control signal sent backwards up the time stream would arrive at the probe at the instant its video and data were transmitted, so that an Earth-based operator could steer and control the probe on Mars in real time using virtual-reality techniques.
+
+
+  Section XII describes another path, nonlinear quantum mechanics: the no-signal "proofs" become invalid if quantum mechanics is allowed to be slightly nonlinear, a technical term for a small cross-term not present in the standard formalism. Two years after Steven Weinberg''s nonlinear quantum mechanics theory was published, Joseph Polchinski showed that the nonlinear corrections upset the balance preventing superluminal communication using EPR experiments. Earth-based experimental tests for the nonlinear effects have produced only very low upper limits, but work on quantum gravity offers a curved-space wave equation in which strong space curvature — for example, the vicinity of a neutron star or black hole — means sufficient quantum nonlinearity may exist to facilitate nonlocal communication. The Conclusion states that ultimately the question of whether nonlocal communication is possible is an experimental one, resolvable by testing for nonlocal communication and observing what experimental limits appear.'
+quotes:
+  - id: q1
+    added_date: '2026-06-03'
+    text: This product is one in a series of advanced technology reports produced in FY 2009
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Administrative Note
+    significance: Program provenance — self-identifies the document as one of the FY 2009 AAWSA Program series of advanced technology reports.
+    statement_date: '2010-03-30'
+    claim_group: program_provenance
+  - id: q2
+    added_date: '2026-06-03'
+    text: |-
+      This paper reviews quantum entanglement and nonlocality and considers the
+      possibility that this phenomenon could be used for sending observer-to-observer signals. Such a demonstration would break several quantum “no-signal theorems” in the physics literature. Nonlocal quantum signaling would
+      have far-reaching implications as an enabling technology for superluminal and
+      retrocausal signaling.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Foreword and Introduction, ¶1
+    significance: Thesis — observer-to-observer signaling via entanglement/nonlocality would break several quantum no-signal theorems and would be an enabling technology for superluminal and retrocausal signaling.
+    statement_date: '2010-03-30'
+    claim_group: thesis_observer_to_observer_signaling
+  - id: q3
+    added_date: '2026-06-03'
+    text: |-
+      This time delay makes real-time control
+      of remote space-based devices impossible and leads to the need for pre-programmed robotic devices with enough “intelligence” to perform limited
+      operations with a minimum of remote control.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Foreword and Introduction, ¶2
+    significance: Space-communication problem — the light-speed time delay makes real-time control of remote space-based devices impossible, forcing reliance on pre-programmed robotic devices.
+    statement_date: '2010-03-30'
+    claim_group: space_communication_problem
+  - id: q4
+    added_date: '2026-06-03'
+    text: |-
+      However, as will be discussed in Section
+      ITT, relativity prohibits only certain forms of superluminal communication,
+      while other forms are not in conflict with relativity. One phenomenon that
+      appears, at least superficially, to exhibit superluminal aspects while
+      preserving compatibility with special relativity is quantum nonlocality
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Foreword and Introduction, ¶3
+    significance: Relativity compatibility — relativity prohibits only certain forms of superluminal communication; quantum nonlocality appears to exhibit superluminal aspects while preserving compatibility with special relativity. (Source OCR reads "Section ITT" for "Section III".)
+    statement_date: '2010-03-30'
+    claim_group: relativity_compatibility
+  - id: q5
+    added_date: '2026-06-03'
+    text: |-
+      This quantum connectedness acting in
+      entangled quantum systems is called quantum nonlocality.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Foreword and Introduction, ¶4
+    significance: Definition — quantum nonlocality is the quantum connectedness acting in entangled quantum systems.
+    statement_date: '2010-03-30'
+    claim_group: definitions_entanglement_nonlocality
+  - id: q6
+    added_date: '2026-06-03'
+    text: |-
+      The question investigated in this paper is whether quantum nonlocality is the
+      private domain of nature or whether it can be used in experimental situations
+      to send signals from one observer to another. As we will see, there is at
+      present no compelling answer to this question.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: Foreword and Introduction, ¶6
+    significance: Thesis question — whether quantum nonlocality is the private domain of nature or can be used to send observer-to-observer signals; the paper states there is at present no compelling answer.
+    statement_date: '2010-03-30'
+    claim_group: thesis_observer_to_observer_signaling
+  - id: q7
+    added_date: '2026-06-03'
+    text: |-
+      However, a number of authors (Reference 13) have
+      presented “proofs” that such nonlocal observer-to-observer communication is
+      impossible within the formalism of standard quantum mechanics.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §II. The Quantum No-Signal Theorems, ¶1
+    significance: No-signal theorems — a number of authors have presented "proofs" that nonlocal observer-to-observer communication is impossible within standard quantum mechanics.
+    statement_date: '2010-03-30'
+    claim_group: no_signal_theorems_tension
+  - id: q8
+    added_date: '2026-06-03'
+    text: |-
+      Recently it has been pointed out (Reference 14) that at least some of these
+      “proofs” ruling out nonlocal signaling are tautological, assuming that the measurement
+      process and its associated Hamiltonian are local, thereby building the final conclusion of
+      no signaling into their starting assumptions.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §II. The Quantum No-Signal Theorems, ¶4
+    significance: Tautology rebuttal — at least some of the no-signal "proofs" are tautological, assuming the measurement process and Hamiltonian are local and so building the no-signaling conclusion into their starting assumptions.
+    statement_date: '2010-03-30'
+    claim_group: no_signal_theorems_tension
+  - id: q9
+    added_date: '2026-06-03'
+    text: |-
+      If nonlocal communication is possible, would it be in conflict with special relativity, with
+      its well-known prohibition against faster-than-light signals? The answer is no.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §III. Nonlocality Versus Special Relativity?, ¶1
+    significance: Relativity compatibility — the paper answers no to whether nonlocal communication would conflict with special relativity's prohibition against faster-than-light signals.
+    statement_date: '2010-03-30'
+    claim_group: relativity_compatibility
+  - id: q10
+    added_date: '2026-06-03'
+    text: |-
+      Therefore, there is no conflict between nonlocal signaling and the Lorentz invariance of
+      special relativity. On the other hand, the principle of causality (cause must precede
+      effect in all reference frames) appears very likely to be violated (or at least violate-able) if nonlocal signaling is possible.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §III. Nonlocality Versus Special Relativity?, ¶4
+    significance: Relativity compatibility / causality — no conflict with Lorentz invariance, but the principle of causality appears very likely to be violated if nonlocal signaling is possible.
+    statement_date: '2010-03-30'
+    claim_group: relativity_compatibility
+  - id: q11
+    added_date: '2026-06-03'
+    text: |-
+      Interestingly, it
+      appears that if nonlocal quantum communication is possible at all, it may be more
+      easily achieved in the momentum domain of Einstein’s original focus.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §IV. Momentum Domain Entanglement and EPR Experiments, ¶1
+    significance: Momentum-domain route — if nonlocal quantum communication is possible at all, it may be more easily achieved in the momentum domain of Einstein's original focus.
+    statement_date: '2010-03-30'
+    claim_group: momentum_domain_route
+  - id: q12
+    added_date: '2026-06-03'
+    text: |-
+      However, the Ghost Interference experiment does not, in
+      the form reported, demonstrate nonlocal communication, because of its use of a
+      classical cammunication link in imposing the coincidence requirement between the
+      detected photons.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§IV. Momentum Domain Entanglement and EPR Experiments, ¶ "From the viewpoint of nonlocal communication"'
+    significance: Ghost-Interference coincidence problem — the Ghost Interference experiment as reported does not demonstrate nonlocal communication because of its use of a classical communication link to impose the coincidence requirement. (Source OCR reads "cammunication" for "communication".)
+    statement_date: '2010-03-30'
+    claim_group: ghost_interference_coincidence_problem
+  - id: q13
+    added_date: '2026-06-03'
+    text: |-
+      If the pattern observed by the camera can indeed be changed by switching the optical
+      fiber routing, then this would constitute a direct demonstration on nonlocal
+      communication. Such an observation would falsify the no-signal theorems mentioned
+      above
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§VI. Nonlocal Communication Versus Signaling, ¶ "If the pattern observed by the camera"'
+    significance: Coincidence-free test — if switching the optical fiber routing changes the camera pattern, it would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems. (Source OCR reads "demonstration on" for "demonstration of".)
+    statement_date: '2010-03-30'
+    claim_group: coincidence_free_ghost_interference_test
+  - id: q14
+    added_date: '2026-06-03'
+    text: |-
+      In particular, the “send” instant could be made to occur well after the “receive” instant
+      in the system, constituting a direct demonstration of retrocausal signaling.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §VIII. Superluminal and Retrocausal Nonlocal Communication, ¶2
+    significance: Retrocausal application — by introducing delay paths the "send" instant could be made to occur well after the "receive" instant, constituting a direct demonstration of retrocausal signaling.
+    statement_date: '2010-03-30'
+    claim_group: superluminal_retrocausal_application
+  - id: q15
+    added_date: '2026-06-03'
+    text: |-
+      This would be a direct demonstration of retrocausal signaling using
+      nonlocal communication and would constitute a direct violation of the principle of
+      causality.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§VIII. Superluminal and Retrocausal Nonlocal Communication, ¶ "Now consider that the sending detector"'
+    significance: Retrocausal application — receiving a message before it is sent would be a direct demonstration of retrocausal signaling using nonlocal communication and a direct violation of the principle of causality.
+    statement_date: '2010-03-30'
+    claim_group: superluminal_retrocausal_application
+  - id: q16
+    added_date: '2026-06-03'
+    text: |-
+      Now consider the application of a “rover” operated at interplanetary distances, with
+      nonlocal communications used to provide real-time “virtual reality” control of the mobile
+      device.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§XI. Example: Real-Time Earth Control of Mars Rover, ¶1'
+    significance: Mars-rover application — a rover operated at interplanetary distances, with nonlocal communications providing real-time virtual-reality control of the mobile device.
+    statement_date: '2010-03-30'
+    claim_group: mars_rover_application
+  - id: q17
+    added_date: '2026-06-03'
+    text: |-
+      The entangled photons would experience
+      the same delay, but the nonlocal control signal would be sent backwards up the time
+      stream, arriving at the probe at the instant the video signals and data were being
+      transmitted, so that the nonlocal signal could steer and control the probe in real time,
+      and an Earth-based operator could “drive” the rover on Mars using virtual-reality
+      techniques.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§XI. Example: Real-Time Earth Control of Mars Rover, ¶ "In parallel with this nonlocal"'
+    significance: Mars-rover application — the nonlocal control signal sent backwards up the time stream would arrive at the probe as its video and data were transmitted, letting an Earth-based operator drive the rover on Mars in real time using virtual-reality techniques.
+    statement_date: '2010-03-30'
+    claim_group: mars_rover_application
+  - id: q18
+    added_date: '2026-06-03'
+    text: |-
+      Such “proofs” become invalid if quantum mechanics is
+      allowed to be slightly "nonlinear," a technical term meaning that when quantum waves
+      are superimposed, they may generate a small cross-term not present in the standard
+      formalism.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§XII. Another Superluminal Possibility: Nonlinear Quantum Mechanics, ¶2'
+    significance: Nonlinear-QM path — the no-signal "proofs" become invalid if quantum mechanics is allowed to be slightly nonlinear, generating a small cross-term not present in the standard formalism.
+    statement_date: '2010-03-30'
+    claim_group: nonlinear_qm_path
+  - id: q19
+    added_date: '2026-06-03'
+    text: |-
+      Two years after Weinberg's nonlinear quantum mechanics theory was published, Joseph
+      Polchinski published a paper demonstrating that Weinberg's nonlinear corrections upset
+      the balance in quantum mechanics that prevents superluminal communication using
+      EPR experiments (Reference 26).
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§XII. Another Superluminal Possibility: Nonlinear Quantum Mechanics, ¶3'
+    significance: Nonlinear-QM path — Joseph Polchinski demonstrated that Weinberg's nonlinear corrections upset the balance in quantum mechanics that prevents superluminal communication using EPR experiments.
+    statement_date: '2010-03-30'
+    claim_group: nonlinear_qm_path
+  - id: q20
+    added_date: '2026-06-03'
+    text: |-
+      Thus, in
+      an environment where strong space curvature is expected—for example, the vicinity
+      of a neutron star or black hole—sufficient quantum nonlinearity may exist to facilitate
+      nonlocal communication.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: '§XII. Another Superluminal Possibility: Nonlinear Quantum Mechanics, ¶ "However, emerging from work on quantum gravity"'
+    significance: Nonlinear-QM path — in an environment of strong space curvature (the vicinity of a neutron star or black hole), sufficient quantum nonlinearity may exist to facilitate nonlocal communication.
+    statement_date: '2010-03-30'
+    claim_group: nonlinear_qm_path
+  - id: q21
+    added_date: '2026-06-03'
+    text: |-
+      Ultimately, the question of whether nonlocal communication is possible is an
+      experimental one. The issue should be resolvable by testing for nonlocal communication
+      and observing what experimental limits appear.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: §XIII. Conclusion
+    significance: Conclusion — whether nonlocal communication is possible is ultimately an experimental question, resolvable by testing for nonlocal communication and observing what experimental limits appear.
+    statement_date: '2010-03-30'
+    claim_group: conclusion_experimental_resolution
+cited_works:
+  - id: cw1
+    added_date: '2026-06-03'
+    citation_key: '1'
+    author: S. J. Freedman and J. F. Clauser
+    year: '1972'
+    citation_verbatim: '1 S. J. Freedman and J. F. Clauser, Phys. Rev. Letters, 28, 938-942 (1972).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [1]
+  - id: cw2
+    added_date: '2026-06-03'
+    citation_key: '2'
+    author: A. Aspect, J. Dalibard, and G. Roger
+    year: '1982'
+    citation_verbatim: |-
+      2 A. Aspect, ]. Dalibard, and G. Roger, Phys. Rev. Letters, 49, 91-95 (1982); A. Aspect, ]. Dalibard, and G. Roger,
+      Phys. Rev. Letters, 49, 1804 (1982),
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [2]
+  - id: cw3
+    added_date: '2026-06-03'
+    citation_key: '3'
+    author: Erwin Schrödinger
+    year: '1935'
+    citation_verbatim: '3 Erwin Schrödinger, Proc. of Cambridge Philosophical Society, 31, 555-563 (1935); 32, 446-451 (1936).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [3]
+  - id: cw4
+    added_date: '2026-06-03'
+    citation_key: '4'
+    author: A. Einstein, B. Podolsky, and N. Rosen
+    year: '1935'
+    citation_verbatim: '4 A. Einstein, B. Podolsky, and N. Rosen, Physical Review. 47, 777-785 (1935).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [4]
+  - id: cw5
+    added_date: '2026-06-03'
+    citation_key: '5'
+    author: Jon P. Jarrett
+    year: '1984'
+    citation_verbatim: '5 Jon P. Jarrett, Noûs, 18, 569 (1984).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [5]
+  - id: cw6
+    added_date: '2026-06-03'
+    citation_key: '6'
+    author: Abner Shimony
+    year: '1986'
+    title: Quantum Concepts in Space and Time
+    citation_verbatim: |-
+      6 Abner Shimony, Quantum Concepts in Space and Time, R. Penrose and C. J. Isham, eds., Chapter 12, pp.
+      182-203, Clarendon Press, Oxford (1986).
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [6]
+  - id: cw7
+    added_date: '2026-06-03'
+    citation_key: '7'
+    author: C. S. Wu and I. Shanknov
+    year: '1950'
+    citation_verbatim: '7 C. S. Wu and I. Shanknov, Phys. Rev., 77, 136 (1950).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [7]
+  - id: cw8
+    added_date: '2026-06-03'
+    citation_key: '8'
+    author: J. S. Bell
+    year: '1964'
+    citation_verbatim: '8 J. S. Bell, Physics, Vol. 1, 195 (1964): Rev. of Modern Physics, 38, 447 (1966).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [8]
+  - id: cw9
+    added_date: '2026-06-03'
+    citation_key: '9'
+    author: W. Tittel, J. Brendel, H. Zbinden, and N. Gisin
+    year: '1998'
+    citation_verbatim: '9 W. Tittel, J. Brendel, H. Zbinden, and N. Gisin, Phys. Rev. Letters, 82, 3563-3566 (1998).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [9]
+  - id: cw10
+    added_date: '2026-06-03'
+    citation_key: '10'
+    author: Anthony J. Leggett
+    year: '2003'
+    citation_verbatim: '10 Anthony J. Leggett, Foundations of Physics 33, 1469 (2003)'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [10]
+  - id: cw11
+    added_date: '2026-06-03'
+    citation_key: '11'
+    author: S. Gröblacher, T. Paterek, R. Kaltenbaek, C. Brukner, M. Zukowski, M. Aspelmeyer, and A. Zeilinger
+    year: '2007'
+    title: An experimental test of non-local realism
+    citation_verbatim: |-
+      11 S. Gröblacher, T. Paterek, R. Kaltenbaek, C. Brukner, M. Zukowski, M. Aspelmeyer, and A. Zeilinger, “An
+      experimental test of non-local realism,” Nature 446, 871-875 (2007),
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [11]
+  - id: cw12
+    added_date: '2026-06-03'
+    citation_key: '12'
+    author: Heinz Pagels
+    year: '1982'
+    title: The Cosmic Code
+    citation_verbatim: '12 Heinz Pagels, The Cosmic Code, Simon & Schuster, NY (1982).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [12]
+  - id: cw13
+    added_date: '2026-06-03'
+    citation_key: '13'
+    author: P. H. Eberhard; G. C. Ghirardi, A. Rimini, and T. Weber; U. Yurtsever and G. Hockney
+    year: '1977'
+    citation_verbatim: |-
+      13 P. H. Eberhard, Nuovo Cimento B 38, 75 (1977), ibid. B 46, 392 (1978); G. C. Ghirardi, A. Rimini, and T. Weber,
+      Lett, Nuovo Cimento 27, 293-298 (1980); U. Yurtsever and G, Hockney, Classical and Quantum Gravity 22, 295-312 (2005), gr-qc/0409112.
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [13]
+  - id: cw14
+    added_date: '2026-06-03'
+    citation_key: '14'
+    author: K. A. Peacock and B. Hepburn
+    year: '1999'
+    citation_verbatim: '14K. A. Peacock and B. Hepburn, Proceedings of the Meeting of the Society of Exact Philosophy (1999), quant-ph/9906036.'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [14]
+  - id: cw15
+    added_date: '2026-06-03'
+    citation_key: '15'
+    author: L. Mandel and E. Wolf
+    year: '1995'
+    title: Optical Coherence and Quantum Optics
+    citation_verbatim: |-
+      15 1. Mandel and E. Wolf, Optical Coherence and Quantum Optics, Chapter 22.4, Cambridge University Press
+      (1995),
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [15]
+  - id: cw16
+    added_date: '2026-06-03'
+    citation_key: '16'
+    author: D. V. Strekalov, A. V. Sergienko, D. N. Kiyshko, and Y. H. Shih
+    year: '1995'
+    citation_verbatim: '16D. V. Strekalov, A. V. Sergienko, D. N. Kiyshko, and Y. H. Shih, Phys. Rev. Letters, 74, 3600-3603 (1995).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [16]
+  - id: cw17
+    added_date: '2026-06-03'
+    citation_key: '17'
+    author: B. Dopfer; A. Zeilinger
+    year: '1998'
+    citation_verbatim: '17 B. Dopfer, Ph.D. Thesis, Univ. Innsbruck (1998); A. Zeilinger, Rev. Modern Physics 71, S288-S297 (1999).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [17]
+  - id: cw18
+    added_date: '2026-06-03'
+    citation_key: '18'
+    author: A. F. Abouraddy, M. B. Nasr, B. E. A. Saleh, A. V. Sergienko, and M. C. Teich
+    year: '2001'
+    citation_verbatim: '18 A. F. Abouraddy, M. B. Nasr, B. E. A. Saleh, A. V. Sergienko, and M. C. Teich. Phys. Rev. A, 63, 063803 (2001).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [18]
+  - id: cw19
+    added_date: '2026-06-03'
+    citation_key: '19'
+    author: John G. Cramer
+    year: '1986'
+    citation_verbatim: |-
+      19 John G. Cramer, Reviews of Modern Physics 58, 647 (1986); John G. Cramer, International Journal of
+      Theoretical Physics 27, 227 (1988); John G. Cramer, Foundations of Physics Letters 19, 63-73, (2006).
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [19]
+  - id: cw20
+    added_date: '2026-06-03'
+    citation_key: '20'
+    author: A. Fedrizzi, T. Herbst, A. Poppe, T. Jennewein, and A. Zeilinger
+    year: '2007'
+    citation_verbatim: '20 4. Fedrizzi, T. Herbst1, A. Poppe, T. Jenneweini and A. Zeilinger, Optics Express 15, 15377 (2007).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [20]
+  - id: cw21
+    added_date: '2026-06-03'
+    citation_key: '21'
+    author: Ludwig Zehnder; Ludwig Mach
+    year: '1891'
+    citation_verbatim: '21 Ludwig Zehnder, Z. Instrumentenkunde 11, 275 (1891); Ludwig Mach, Z. Instrumentenkunde 12, 89 (1892).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [21]
+  - id: cw22
+    added_date: '2026-06-03'
+    citation_key: '22'
+    author: J. A. Wheeler and R. P. Feynman
+    year: '1949'
+    citation_verbatim: '22:1, A, Wheeler and R. P. Feynman, Rev. Mod. Physics, 21, 425-433 (1949).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [22]
+  - id: cw23
+    added_date: '2026-06-03'
+    citation_key: '23'
+    author: F. Echeverria, G. Klinkhammer, and K. S. Thorne
+    year: '1991'
+    citation_verbatim: '23 F, Eschenerria, G. Klinkhammer, and K. S. Thorne, Phys. Rev. D, 44, 1077-1099 {1991}.'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [23]
+  - id: cw24
+    added_date: '2026-06-03'
+    citation_key: '24'
+    author: S. W. Hawking
+    year: '1992'
+    citation_verbatim: '24S. W. Hawking, Phys. Rev. D 46, 603-611 (1992).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [24]
+  - id: cw25
+    added_date: '2026-06-03'
+    citation_key: '25'
+    author: Steven Weinberg
+    year: '1989'
+    citation_verbatim: '25 Steven Weinberg, Physical Review Letters, 62, 485-490 (1989).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [25]
+  - id: cw26
+    added_date: '2026-06-03'
+    citation_key: '26'
+    author: Joseph Polchinski
+    year: '1991'
+    citation_verbatim: '26 Joseph Polchinski, Physical Review Letters, 66, 397-401 (1991).'
+    source:
+      path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+      location: References, entry [26]
+naming_quirks:
+  - id: nq1
+    added_date: '2026-06-03'
+    observed: Section ITT
+    canonical: Section III
+    location: Foreword and Introduction, ¶3
+    source_path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+    resolution: preserve-as-sic-in-quotes
+  - id: nq2
+    added_date: '2026-06-03'
+    observed: cammunication
+    canonical: communication
+    location: '§IV. Momentum Domain Entanglement and EPR Experiments, ¶ "From the viewpoint of nonlocal communication"'
+    source_path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+    resolution: preserve-as-sic-in-quotes
+  - id: nq3
+    added_date: '2026-06-03'
+    observed: demonstration on nonlocal communication
+    canonical: demonstration of nonlocal communication
+    location: '§VI. Nonlocal Communication Versus Signaling, ¶ "If the pattern observed by the camera"'
+    source_path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
+    resolution: preserve-as-sic-in-quotes
