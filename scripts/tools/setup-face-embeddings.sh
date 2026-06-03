@@ -14,8 +14,8 @@
 #   2. python3-venv (apt) — required to create the project-local venv.
 #   3. A project-local venv at .venv-face/ created WITH --system-site-packages
 #      (PEP 668 blocks system-wide pip on Debian/Kali). --system-site-packages
-#      is load-bearing: detect-faces.py uses cv2 + PIL for cropping and
-#      spot-check-attribution.py uses PyYAML, all of which live in the system
+#      is load-bearing: detect-faces.py uses PIL for cropping and
+#      spot-check-attribution.py uses PyYAML, both of which live in the system
 #      site. The venv only adds dlib / face_recognition / numpy on top, so the
 #      existing tools keep working after they auto-relaunch under venv Python.
 #   4. dlib (source build) + face_recognition + numpy installed in the venv.
@@ -70,11 +70,11 @@ if [ ! -x "$VENV_DIR/bin/python3" ]; then
     python3 -m venv --system-site-packages "$VENV_DIR"
 fi
 echo "  ✓ venv Python: $($VENV_DIR/bin/python3 --version)"
-# Confirm the system-site bridge works (cv2/PIL/yaml visible from inside venv).
+# Confirm the system-site bridge works (PIL/yaml visible from inside venv).
 "$VENV_DIR/bin/python3" - <<'PY'
 import importlib, sys
 ok = True
-for mod in ("cv2", "PIL", "yaml"):
+for mod in ("PIL", "yaml"):
     try:
         importlib.import_module(mod)
         print(f"  ✓ system-site {mod} visible inside venv")
