@@ -339,8 +339,8 @@ image-confirmed by a separate agent session. Node corrected: the 5 documented
 errors **plus 11 `cited_works` that had inherited old-sibling OCR garble** —
 exposed by the regeneration (`]. Dalibard`→`J.`, `1. Mandel`→`L.`,
 `22:1, A, Wheeler`→`J. A.`, `{1991}`→`(1991)`, missing spaces after footnote
-numbers, etc.). nq1/nq2 dropped, nq3 kept. **All 14 pre-commit gates green.**
-The corrected sibling + node are in the working tree (uncommitted).
+numbers, etc.). nq1/nq2 dropped, nq3 kept. **All 14 pre-commit gates green — committed in
+`eee1098`** (DIRD-16 fix + the `coverage_warning` guardrail).
 
 **Guardrail added (committed-ready).** `ocr-consensus.py` `cmd_run` now emits a
 `coverage_warning` when OCR-corroborated tokens absent from the VLM base cluster
