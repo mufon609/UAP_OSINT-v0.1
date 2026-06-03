@@ -1,0 +1,137 @@
+# Primary-source investigation knowledge-base — OCR-verification schema
+#
+# Specification for the OCR-consensus verification record produced by
+# `scripts/tools/ocr-consensus.py` and gated by
+# `scripts/build/validate-ocr-sibling.py`. One record per OCR-scan clean-text
+# `.txt` sibling. The record lives next to the source at
+# `sources/{category}/{stem}-ocr-verification.yaml`.
+#
+# WHY THIS EXISTS — the trust mechanism. An OCR-scan PDF's pdftotext layer is
+# corrupt, so verbatim quotes are matched against a clean-text `.txt` sibling.
+# The sibling's fidelity used to rest on a single agent's "PASS" with no durable
+# record — and it failed silently (DIRD-16's sibling carried `III→ITT`,
+# `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`). This record is the
+# durable, auditable proof that replaces that single point of failure: every
+# token of the sibling is corroborated by either ≥2 of 3 UNCORRELATED engine
+# votes (CONSENSUS) or an image adjudication recorded here (ADJUDICATED). The
+# three votes have uncorrelated failure modes — Tesseract (LSTM OCR), PaddleOCR
+# (deep-learning OCR, different architecture), VLM page-image read (different
+# modality) — so a lone wrong read loses the vote and is flagged, not kept.
+#
+# Cross-references use the form `schema-ocr-verification.yaml::X`.
+#
+# Provenance contract: regeneratable from (source PDF, the three engine votes).
+# NOT hand-curated. Contributor edits go through `ocr-consensus.py` (run /
+# adjudicate / assemble), not direct editing — same discipline as the OCR
+# sibling itself (meta/conventions.md "Producing the `.txt` sibling").
+#
+# Structural relationship to the sibling: the `.txt` sibling REPLACES the
+# corrupt pdftotext layer for verbatim-quote matching (validate.py /
+# validate-research.py's verbatim_quotes prefers it via
+# lib._common.extract_source_text). This verification record binds that sibling
+# to the page images it was checked against. `quote_source_grounding`
+# (scripts/checks/) binds each quote to a FINALIZED, sha256-matching record, so
+# a quote can never rest on an unverified or post-verification-edited sibling.
+
+path_prefix: sources/
+path_suffix: -ocr-verification.yaml
+format: yaml
+
+# ---------------------------------------------------------------------------
+# Required top-level keys (validate-ocr-sibling.py reads this list).
+# ---------------------------------------------------------------------------
+required_top_level_keys:
+  - schema             # "ocr-verification/v1"
+  - source_pdf         # rel-to-sources path of the parent OCR-scan PDF
+  - sibling_txt        # rel-to-sources path of the clean-text .txt sibling
+  - sibling_sha256     # sha256 of the FINAL sibling bytes; null until assembled
+  - engines            # list of vote records (≥2 OCR engines + the VLM vote)
+  - stats              # token/consensus/contested counts (advisory)
+  - contested          # list of contested-span records (may be empty)
+  - possible_omissions # advisory list (may be empty)
+  - contamination_flags # advisory list (may be empty)
+
+schema_version: ocr-verification/v1
+
+# ---------------------------------------------------------------------------
+# Engine vote records. The consensus requires THREE votes with uncorrelated
+# failure modes; at least TWO must be true OCR engines (so a token is never
+# accepted on the VLM read alone — the VLM-hallucination failure mode that the
+# old single-producer process could not catch).
+# ---------------------------------------------------------------------------
+engines:
+  required_ocr_engines: [tesseract, paddleocr]  # BOTH hard-required — the ≥2
+                                                # uncorrelated-OCR floor that
+                                                # guarantees no token ever rests
+                                                # on a single read.
+  recommended: [vlm]                            # third vote (different modality);
+                                                # omittable ONLY when the
+                                                # top-level `vlm_skipped` reason
+                                                # is set (CBRN / content-filter
+                                                # fallback — see the skill).
+  entry_fields: [name]                          # version / note optional
+
+# Optional top-level key. When the VLM vote is skipped (CBRN / content-filter
+# block), set `vlm_skipped: <reason>` and the validator accepts a 2-OCR-engine
+# record (Tesseract + PaddleOCR + image adjudication still clears the floor).
+optional_top_level_keys:
+  - vlm_skipped
+
+# ---------------------------------------------------------------------------
+# Contested-span record. Emitted by `ocr-consensus.py run` for every token the
+# votes disagree on; `resolution` is filled by image adjudication; `assemble`
+# then splices it into the sibling. A FINALIZED record has every contested
+# entry at status `adjudicated` with a non-null `resolution`.
+# ---------------------------------------------------------------------------
+contested_entry:
+  required_fields:
+    - id                  # c1, c2, …
+    - token_index         # index into the VLM-base token stream
+    - char_start          # offset into the draft sibling (for assemble splice)
+    - char_end
+    - line                # 1-indexed line in the sibling (navigation)
+    - candidates          # {vlm, tesseract, paddleocr} surface reads
+    - note                # why contested ("both OCR engines agree against VLM" | "all three votes differ")
+    - status              # contested | adjudicated
+    - resolution          # the adjudicated surface form (null until resolved)
+    - resolution_method   # image-adjudication
+    - adjudicator_session # who/what resolved it (audit)
+  status_values: [contested, adjudicated]
+  resolution_method_values: [image-adjudication]
+  candidate_keys: [vlm, tesseract, paddleocr]
+
+# ---------------------------------------------------------------------------
+# Advisory lists (do NOT block; surfaced for reviewer attention).
+# ---------------------------------------------------------------------------
+possible_omission_entry:
+  # A token both OCR engines read that the VLM base omitted. Advisory — the
+  # adjudicator decides whether the VLM dropped real content.
+  fields: [id, before_token_index, line, ocr_token, note, status, resolution]
+
+contamination_flag_entry:
+  # An adjudication whose resolution equals the corrupt pdftotext layer's
+  # reading at a point where an OCR engine disagreed — the "seeded from corrupt
+  # OCR" smell. Surfaced so a reviewer can double-check the adjudication wasn't
+  # itself contaminated by the layer the sibling is meant to replace.
+  fields: [id, contested_id, resolution, pdftotext_reading, note]
+
+# ---------------------------------------------------------------------------
+# Finalization invariant (validate-ocr-sibling.py enforces; quote_source_grounding
+# re-checks per quote):
+#   1. Every contested entry has status: adjudicated and a non-null resolution.
+#   2. sibling_sha256 is set and equals the sha256 of the sibling bytes on disk
+#      (tamper / post-verification-edit detector).
+#   3. engines includes the required 3 votes with ≥2 OCR engines.
+# A record satisfying all three is FINALIZED — the sibling is trustworthy and
+# quotes may cite it.
+# ---------------------------------------------------------------------------
+
+# Cross-schema integration points:
+#   1. lib._common.extract_source_text already prefers the `.txt` sibling for
+#      ocr-scan / extraction-lossy sources (unchanged by this schema).
+#   2. scripts/checks/quote_source_grounding.py (ResearchContext check, run by
+#      validate-research.py once wired): for each quote citing an ocr-scan
+#      source, requires a FINALIZED hash-matching record here.
+#   3. scripts/build/validate-ocr-sibling.py (standalone, gated in pre-commit
+#      once wired): every ocr-scan/extraction-lossy parent PDF with a registered
+#      `.txt` sibling has a FINALIZED record conforming to this schema.

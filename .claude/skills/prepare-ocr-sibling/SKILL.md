@@ -1,168 +1,151 @@
 ---
 name: prepare-ocr-sibling
-description: Produce, independently verify, and register a clean-text .txt sibling for an OCR-scanned primary source. An OCR-scan source's pdftotext layer is corrupt, so verbatim quotes cannot be derived from it until a verified sibling exists. Use before building or quoting a source flagged extraction_type ocr-scan / extraction-lossy that has no sibling; /build step 4b directs here.
+description: Produce, cross-verify, and register a clean-text .txt sibling for an OCR-scanned primary source via uncorrelated multi-engine consensus. An OCR-scan source's pdftotext layer is corrupt, so verbatim quotes cannot be derived from it until a verified sibling exists. Use before building or quoting a source flagged extraction_type ocr-scan / extraction-lossy that has no sibling; /build step 4b directs here.
 argument-hint: {category}/{filename}.pdf
 allowed-tools:
   - Agent(general-purpose)
   - Read
+  - Edit
+  - Bash(python3 scripts/tools/ocr-consensus.py *)
+  - Bash(python3 scripts/build/validate-ocr-sibling.py *)
   - Bash(python3 scripts/tools/manifest.py *)
 ---
 
-# Prepare OCR-scan clean-text sibling
+# Prepare OCR-scan clean-text sibling (multi-engine consensus)
 
 Target source: **$ARGUMENTS** — a path under `sources/` (e.g.
 `government/foo.pdf`). Ask the user if empty.
 
 An OCR-scanned source (manifest `extraction_type: ocr-scan` / `extraction-lossy`)
 has a corrupt text layer: quotes pulled from it are garbage or trip the
-verbatim-quote gate. Its canonical text is a same-stem `.txt` sibling, made
-trustworthy by **independent verification** — the agent that produces it cannot
-self-verify a hallucination (the failure mode is invisible to its author; see
-`meta/conventions.md` "Producing the `.txt` sibling"). This skill runs that
-producer → independent-verifier → register loop. It owns the build pipeline's
-OCR-sibling-readiness prerequisite; `/build` step 4b directs here, and a
-contributor can run it standalone.
+verbatim-quote gate. Its canonical text is a same-stem `.txt` sibling.
+
+**Why consensus, not a single verifier.** The old process trusted one agent to
+produce the sibling and a second agent to "PASS" it. That failed silently — both
+agents read the *same* page image with the *same* kind of vision model, so they
+made the *same* misreads (DIRD-16's sibling carried `III→ITT`,
+`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`, all certified PASS).
+The fix: **three votes with uncorrelated failure modes** —
+
+  - **Tesseract** (LSTM OCR) — vote A,
+  - **PaddleOCR** (deep-learning OCR, different architecture) — vote B,
+  - **VLM page-image read** (an agent, different modality) — vote C.
+
+A token is accepted (CONSENSUS) only when **≥2 of the 3 agree**. Anything the
+votes disagree on is flagged CONTESTED and adjudicated against the page image,
+and that adjudication is recorded in a durable
+`{stem}-ocr-verification.yaml` (spec: `meta/schema-ocr-verification.yaml`; gated
+by `scripts/build/validate-ocr-sibling.py`; bound per-quote by
+`scripts/checks/quote_source_grounding.py`). A lone wrong read loses the vote
+and is surfaced, never silently kept.
 
 This is source **prep**, not node building — it produces a faithful
-transcription of a primary source, never node content. The independent
-verification is the discipline gate, exactly as the verbatim-quote check is for
-quotes.
+transcription of a primary source, never node content.
 
-1. **Confirm the need.** Read the source's manifest entry
-   (`python3 scripts/tools/manifest.py status {url}`, or grep
-   `sources/manifest.yaml` for the path). Proceed only if it is flagged
-   `ocr-scan` / `extraction-lossy` AND no same-stem `.txt` sibling is already
-   registered. If a verified sibling already exists, stop — there is nothing to
-   do. Note the parent URL (you need it to register the pairing).
+**Prerequisite:** PaddleOCR lives in `.venv-ocr/` — run
+`scripts/tools/setup-ocr-consensus.sh` once (the user runs it; it `sudo apt`s a
+few libs). `ocr-consensus.py run` auto-relaunches under that venv.
 
-2. **Produce — `Agent(general-purpose)`.** **Route check first:** if the
-   source's subject is plainly CBRN / weapons-design-sensitive (judge from the
-   title / table of contents — nuclear-weapon physics, pathogen synthesis, and
-   the like), skip this VLM producer and use the **Tesseract route** (Fallback
-   section below) from the start: a model reproducing such a passage as its own
-   tokens hard-terminates on the content filter, wasting the attempt. Otherwise,
-   dispatch a producer to read the
-   source's page IMAGES (the `Read` tool with `pages: "1-20"`, `"21-40"`, … —
-   max 20 pages per request) and write the verbatim transcription to the
-   same-stem `.txt` adjacent to the source. Per `meta/conventions.md`
-   "Producing the `.txt` sibling": preserve redaction markers, the document's
-   own typos, and source spellings exactly; render equations and figures as
-   bracketed placeholders; transcribe the per-page classification banner and
-   page numbers where they appear; **transcribe every physical page verbatim,
-   INCLUDING any third-party distribution / FOIA cover-insert** (e.g. a Black
-   Vault declassification page) — the released copy's provenance is part of the
-   source and is not hidden (`meta/conventions.md`: preserve, don't strip).
-   Do **not** add `----- PAGE BREAK -----` or any
-   synthetic page structure — the sibling is a clean transcription. Quotes later
-   drawn from this sibling use a **descriptive content anchor** for
-   `source.location` — the document's own structure (a named block, section
-   title, or reference entry: e.g. `title-page identity block`, `Administrative
-   Note`, `References, entry [8]`) — **not** a `p. N` physical-page ref. The
-   sibling is markerless and full-text-searchable, so a page integer can be
-   neither read off the extract nor verified (`quote_location_page` skips
-   sibling-backed sources by design); the content anchor is the navigation
-   handle. (`location_format` still rejects roman `p. ii` / `printed p. N`
-   forms, and `pdf_page_count` still gates the document's declared page count
-   against `pdfinfo`.) See `meta/conventions.md` "Quote location refs". The producer reports the load-bearing
-   front-matter facts it captured and flags any faded / ambiguous / redacted
-   spots where a vision model might hallucinate. **A flag records only what is
-   legible** (`[unclear]`, `[illegible digit]`) — it must never assert an
-   alternative reading, date, or name not actually visible in the image. A flag
-   that invents specifics reintroduces the very hallucination it is meant to
-   surface, and that error is invisible to its author — which is why the
-   independent pass scrutinizes flagged spots, not just plain text.
+---
 
-3. **Independently verify — `Agent(general-purpose)`, a DIFFERENT session.**
-   Dispatch a SEPARATE agent (independence is the whole point) to re-read the
-   page images against the produced `.txt` and return either PASS or a list of
-   `page N | .txt says "X" | image shows "Y"` discrepancies — scrutinizing the
-   producer's flagged spots, the load-bearing front matter (title, dates,
-   control numbers, author/redaction lines), and **special glyphs in body prose
-   (superscripts / subscripts, Greek, math symbols, isotopes — e.g. He³, 10¹³)**.
-   An OCR engine drops a special glyph invisibly — a superscript collapses to a
-   baseline digit, or to `?` — and the verbatim-quote gate cannot catch it: it
-   compares quote↔sibling, never sibling↔document, so a glyph mangled identically
-   in both passes silently. The producer must not verify its own output. On FAIL, route the corrections back to a producer pass and
-   re-verify; do NOT register until PASS.
+1. **Confirm the need.** Read the source's manifest entry (`python3
+   scripts/tools/manifest.py status {url}`, or grep `sources/manifest.yaml`).
+   Proceed only if flagged `ocr-scan` / `extraction-lossy` AND no same-stem
+   `.txt` sibling is already registered with a FINALIZED verification record
+   (run `validate-ocr-sibling.py` to check). Note the parent URL (needed to
+   register the pairing).
 
-4. **Register the paired manifest entry.** Once verified:
+2. **Produce vote C — the VLM page-image read.** `Agent(general-purpose)`.
+   **Route check first:** if the source is plainly CBRN / weapons-design-
+   sensitive (judge from title / TOC), SKIP the VLM vote — a model reproducing
+   such a passage as its own tokens hard-terminates on the content filter. With
+   the VLM skipped the consensus runs on Tesseract + PaddleOCR + image
+   adjudication (still two uncorrelated OCR engines plus the human/agent image
+   check); note this in the verification record's engines list. Otherwise,
+   dispatch a producer to read the source's page IMAGES (`Read` with
+   `pages: "1-20"`, `"21-40"`, … — max 20/request) and write the verbatim
+   transcription to a scratch file (e.g. `/tmp/{stem}-vlm.txt`). Per
+   `meta/conventions.md` "Producing the `.txt` sibling": preserve redaction
+   markers, the document's own typos, and source spellings exactly; render
+   equations/figures as bracketed placeholders; transcribe every physical page
+   verbatim INCLUDING any third-party FOIA / distribution cover-insert (e.g. a
+   Black Vault page); no synthetic `--- PAGE BREAK ---` markers (clean
+   transcription). The VLM vote is now ONE of three — it no longer has to be
+   perfect on its own, because the OCR engines cross-check it.
+
+3. **Run the consensus.** `ocr-consensus.py` rasterizes, runs Tesseract +
+   PaddleOCR, ingests the VLM text, aligns the three votes, writes the draft
+   sibling (the VLM read is the readable base) and the verification YAML listing
+   every CONTESTED span:
+   ```
+   python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
+       --vlm /tmp/{stem}-vlm.txt --date <YYYY-MM-DD>
+   ```
+   (Add `--force` when regenerating an existing sibling — backfill.) Report the
+   consensus/contested counts.
+
+4. **Adjudicate the CONTESTED spans against the page images.** This is the only
+   non-mechanical step, and it is bounded to exactly the tokens the engines
+   disagreed on (where errors live), not the whole document. For each contested
+   entry in `{stem}-ocr-verification.yaml`, an `Agent(general-purpose)` (or the
+   contributor) reads the page image at that span's `line` / `context`, decides
+   the correct reading, and `Edit`s the entry: set `resolution` to the verbatim
+   surface form, `status: adjudicated`, `resolution_method: image-adjudication`,
+   `adjudicator_session: <id>`. **The resolution records only what the image
+   actually shows** — if it matches the corrupt pdftotext layer where an OCR
+   engine disagreed, note it under `contamination_flags` for a second look (the
+   "seeded from corrupt OCR" smell). Genuine document typos (a real misprint on
+   the page) are preserved verbatim as the resolution — flag them as the
+   document's own, not corrected.
+
+5. **Assemble + validate.**
+   ```
+   python3 scripts/tools/ocr-consensus.py assemble sources/{category}/{stem}-ocr-verification.yaml
+   python3 scripts/build/validate-ocr-sibling.py --quiet
+   ```
+   `assemble` splices the resolutions into the sibling and stamps its sha256
+   into the record; the validator confirms the record is FINALIZED (every
+   contested span adjudicated, engines ≥2 OCR + VLM, sibling hash matches). On
+   any failure, fix the data and re-run — do not hand-edit the sibling `.txt`
+   (its bytes are bound to the record's hash).
+
+6. **Register the paired manifest entries.** Once validated, register the
+   sibling (and confirm the verification YAML is tracked):
    ```
    python3 scripts/tools/manifest.py add {parent_url}#clean-text-transcription \
        --path {category}/{stem}.txt --format txt --wayback-skip \
        --note "Clean-text sibling of the OCR-scanned <source>. Produced <date>
-       via multimodal page-image read; independently verified <date> by a
-       separate agent session — PASS. <any third-party FOIA/distribution insert
-       preserved verbatim>. Equations /
-       figures bracketed; redactions + source spellings preserved verbatim."
+       via 3-engine consensus (Tesseract + PaddleOCR + VLM page-image read);
+       N contested span(s) image-adjudicated; record:
+       {stem}-ocr-verification.yaml. <FOIA/distribution insert preserved
+       verbatim>. Equations/figures bracketed; redactions + source spellings
+       preserved verbatim."
    ```
    The `#clean-text-transcription` URL suffix + `--wayback-skip` mark it as a
    derived, non-fetchable artifact paired to the parent PDF entry. Confirm with
    `python3 scripts/tools/manifest.py verify-paths`.
 
-   **Do not list this sibling's path in any artifact's `primary_sources[]`** —
+   **Do not list the sibling's path in any artifact's `primary_sources[]`** —
    the parent PDF is the primary source; the sibling is only the extraction
    surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources,
-   so quotes derive their verbatim text from it but cite the PDF path in
-   `source.path` (see `meta/conventions.md` "Producing the `.txt` sibling").
+   so quotes derive verbatim text from it but cite the PDF path in
+   `source.path`.
 
-## Fallback — when the producer is blocked by the API content filter
-
-Some source content trips the API content-filtering policy. The block is on the
-**model's OUTPUT generation** — a model *reproducing* the triggering passage as
-its own tokens — NOT on reading/viewing the page, and NOT on the source itself
-(the page is perfectly legible; this is orthogonal to OCR-scan text-layer
-corruption). It hard-terminates the agent's whole response
-(`API Error: Output blocked by content filtering policy`), so a "note the
-blocked range and continue" instruction does not survive (the agent dies before
-it can report). The route separates **production** (done by a non-model tool)
-from **verification** (a model *confirming*, not regenerating) — fully
-autonomous, no human step needed in the normal case:
-
-1. **Produce with local OCR (filter-immune).** Tesseract reads the page images;
-   the text flows image → binary → file, never through model tokens, so the
-   filter never fires. It is coherent on body prose (the part quotes come from)
-   and noisy mainly on struck-through banners, seals, and front-matter glyphs.
-   ```
-   pdftoppm -png -r 300 sources/{path}.pdf /tmp/{stem}/page
-   for f in /tmp/{stem}/page-*.png; do tesseract "$f" "${f%.png}" --psm 1 -l eng; done
-   ```
-   Assemble the per-page OCR into the sibling **by script** (include every
-   page, the FOIA insert included; no synthetic page markers — a clean
-   transcription) — keep the assembly out of model tokens too.
-
-2. **Verify + correct with a model diff-pass (filter-safe).** A separate
-   `Agent(general-purpose)` reads each page image against the assembled draft and
-   writes a **corrections file** — anchored token-level diffs (`{page, anchor,
-   fix, kind}`) — confirming the draft and emitting only small fixes; it does
-   **not** re-transcribe. Because it never reproduces the bulk triggering passage
-   in its output, it stays under the filter even on the blocked pages (Tesseract
-   usually got those right, so they need near-zero correction — the model just
-   confirms them). A script applies the corrections + brackets equations +
-   normalizes banners. **Give special-glyph regions (superscripts / subscripts,
-   Greek, math, isotopes — He³, 10¹³) extra scrutiny here too:** Tesseract drops a
-   superscript to a baseline digit or `?` (e.g. He³ → `He?`), a mangle the
-   verbatim gate can't see — confirm each against the image and emit the fix.
-   Independence holds: producer = Tesseract (mechanical,
-   cannot hallucinate); verifier = a separate model grounding each line against
-   the image (residual risk is OCR accuracy, addressed by the diff, not
-   fabrication). **Hard rule for the verifier:** on a sensitive page, confirm
-   in place and emit only minimal anchored fixes — NEVER write the full passage.
-   Only if a *specific* fix would force reproducing a long sensitive span does it
-   fall back to human correction of that one span.
-
-   *(Optional diagnostic to pinpoint which pages trip the filter: a chunked VLM
-   producer that writes one file per small page-range leaves completed chunks on
-   disk and dies on the first blocked chunk — the gap localizes the region. Not
-   required once you go straight to Tesseract + diff-verify.)*
-
-3. **Building the node from a filter-prone sibling.** The build Worker also emits
-   via model output, so steer it to each section's **finding** (the benign
-   load-bearing claim) and away from any rhetorical sensitive sentence that is
-   not load-bearing (e.g. a sensitive historical analogy used as color) —
-   skipping such a non-finding sentence is correct, not under-extraction. The
-   Builder's `description` is likewise drawn from benign content. Rendering is
-   script-based (`build-from-research.py`) and never blocks.
-
-The sibling is now canonical: `extract-source.py` and the verbatim-quote check
-prefer it over the OCR-corrupted PDF text layer. Hand back to `/build` (or the
+The sibling is now canonical and trustworthy: `extract-source.py` and the
+verbatim-quote check prefer it, and `quote_source_grounding` binds every quote
+to the finalized, hash-matching record. Hand back to `/build` (or the
 contributor) to extract the clean scratch and run the Worker.
+
+## Fallback — when the VLM vote is blocked by the API content filter
+
+If the VLM producer (step 2) trips the model provider's generative content
+filter (`API Error: Output blocked by content filtering policy` — it blocks the
+model *reproducing* a sensitive passage, not reading the page), skip vote C for
+the affected source and run the consensus on Tesseract + PaddleOCR alone, with
+image adjudication resolving their disagreements. Two uncorrelated OCR engines +
+recorded image adjudication still satisfies the ≥2-OCR-engine floor; the
+verification record's engines list omits `vlm` and the validator accepts it
+(the `min_ocr_engines: 2` invariant is what guarantees no token rests on a
+single read). Note the omission in the record and the manifest note. For a span
+where even an adjudication note would force reproducing a long sensitive
+passage, fall back to a human reading that one span.

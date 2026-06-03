@@ -226,11 +226,40 @@ a contributor-verified `.txt` sibling. The three-step contributor
 discipline below handles the per-quote case during the window before
 the sibling exists.
 
-**Producing the `.txt` sibling — four valid paths.** The sibling is
-canonical because it has been *visually verified against the source
-by an agent independent of the producer*. Production methods are
-interchangeable; the independent-verification step is what closes the
-trust gap. Pick the path that fits the document's shape.
+**Producing the `.txt` sibling — uncorrelated multi-engine consensus.**
+The sibling is canonical because every token of it is corroborated by
+either **≥2 of three votes with *uncorrelated* failure modes** — Tesseract
+(LSTM OCR), PaddleOCR (deep-learning OCR, different architecture), and a VLM
+page-image read (different modality) — or an **image adjudication recorded**
+in a durable `{stem}-ocr-verification.yaml` (spec:
+`meta/schema-ocr-verification.yaml`). This **supersedes** the earlier
+"single producer → single independent verifier" model, which failed
+silently: the producer and the verifier both read the same image with the
+same kind of vision model and made the *same* misread, so "independent"
+(different session) was not independent in *failure mode*. DIRD-16's sibling
+was certified "verified — PASS" yet carried `III→ITT`,
+`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`. Uncorrelated
+engines plus recorded image adjudication is the trust mechanism now; the
+gate chain still never compares sibling↔image mechanically, so the
+verification record IS that comparison, made durable and re-runnable.
+
+Run it via `/prepare-ocr-sibling`: `scripts/tools/ocr-consensus.py run`
+(3 votes → consensus, flags CONTESTED tokens) → adjudicate the contested
+spans against the page images → `assemble`. `scripts/build/validate-ocr-sibling.py`
+gates that every OCR-scan sibling carries a FINALIZED record (every
+contested span adjudicated, ≥2 OCR engines, sibling sha256 matches), and
+`scripts/checks/quote_source_grounding.py` binds each quote to that
+finalized, hash-matching record — so a quote can never rest on an
+unverified or post-verification-edited sibling. The floor is **≥2
+uncorrelated OCR engines** (Tesseract + PaddleOCR); the VLM vote is the
+recommended third, waivable only via a recorded `vlm_skipped` reason for
+CBRN / content-filter-blocked sources.
+
+The four methods below are how an individual *vote* (a token-recognition
+pass) is produced. They are no longer interchangeable *substitutes for
+verification* — a single pass, however careful, is exactly what failed.
+Pick production methods that fit the document's shape; consensus across
+them is what makes the result canonical.
 
 1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
    despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
