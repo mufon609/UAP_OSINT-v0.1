@@ -121,7 +121,7 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 - The intended use of the Special Access Program Facility when constructed — q1 names control rooms for Unmanned Air Vehicles, intelligence data acquisition laboratory spaces, and Sensitive Compartmented Information Facility areas; q2 describes the structure as a SAP-F hangar designed to facilitate transfer of materials via air and river.
 - Whether the hangar Burlison visited in February 2026 is the structure Elizondo's QFR describes — q4 (the 2026-03-12 Liberation Times update) reports three subsequent sources telling the outlet the visited hangar was not the structure allegedly built for the proposed transfer.
 - The contents of the structure beyond the empty-as-of-February-2026 observation in q3; q4 preserves the broader allegation that UAP-related materials may be stored within different facilities at Pax River.
-- Whether a private runway specifically built for Robert Bigelow exists at Pax River — q3 reports one source describing such a runway during the Burlison visit; q4's update reports three subsequent sources telling Liberation Times Burlison did not see such a runway.
+- Whether a private runway specifically built for Robert Bigelow ([`/people/robert-bigelow`]) exists at Pax River — q3 reports one source describing such a runway during the Burlison visit; q4's update reports three subsequent sources telling Liberation Times Burlison did not see such a runway.
 
 ---
 
@@ -164,6 +164,7 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 - [`/people/eric-burlison`]
 - [`/people/james-lacatski`]
 - [`/people/luis-elizondo`]
+- [`/people/robert-bigelow`]
 - [`/people/steny-hoyer`]
 
 ### Organizations

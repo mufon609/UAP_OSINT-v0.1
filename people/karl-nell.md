@@ -188,7 +188,7 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ## Credibility Notes
 
-The Debrief article by Leslie Kean and Ralph Blumenthal of June 5, 2023 reports that in a 2022 performance evaluation, Laura A. Potter, Deputy Chief of Staff for Intelligence, Headquarters, Department of the Army, described Nell as "an officer with the strongest possible moral compass." This is the only third party Army Intelligence performance evaluation on Nell in the primary sources here. Nell stated at SALT iConnections NY on May 21, 2024 that non-human intelligence exists, has been interacting with humanity, that this interaction is not new and is ongoing, and that there are unelected people in the government who are aware of that. Nell stated "zero doubt" as the confidence level for that claim. The underlying NHI claim is not corroborated by other primary sources here; Nell's institutional access (UAP Task Force, 2021 to 2022) is corroborated by The Debrief article and the Sol Foundation policy paper About the Author, but the NHI claim itself is based on Nell's on the record assertion alone.
+The Debrief article by Leslie Kean ([`/people/leslie-kean`]) and Ralph Blumenthal ([`/people/ralph-blumenthal`]) of June 5, 2023 reports that in a 2022 performance evaluation, Laura A. Potter ([`/people/laura-potter`]), Deputy Chief of Staff for Intelligence, Headquarters, Department of the Army, described Nell as "an officer with the strongest possible moral compass." This is the only third party Army Intelligence performance evaluation on Nell in the primary sources here. Nell stated at SALT iConnections NY on May 21, 2024 that non-human intelligence exists, has been interacting with humanity, that this interaction is not new and is ongoing, and that there are unelected people in the government who are aware of that. Nell stated "zero doubt" as the confidence level for that claim. The underlying NHI claim is not corroborated by other primary sources here; Nell's institutional access (UAP Task Force, 2021 to 2022) is corroborated by The Debrief article and the Sol Foundation policy paper About the Author, but the NHI claim itself is based on Nell's on the record assertion alone.
 
 Nell vouched for David Grusch ([`/people/david-grusch`]) in The Debrief: he characterizes Grusch as "beyond reproach" (a personal claim) and states that Grusch's assertion concerning a sub-rosa arms race for reverse engineering technologies of unknown origin is fundamentally correct, with at least some derived from non-human intelligence (a claim on the core point of the Grusch disclosure). Both statements appear in the same Debrief article.
 
@@ -238,6 +238,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/david-fravor`]
 - [`/people/david-grusch`]
 - [`/people/garry-nolan`]
+- [`/people/laura-potter`]
 - [`/people/leslie-kean`]
 - [`/people/mike-rounds`]
 - [`/people/peter-skafish`]

@@ -29,7 +29,7 @@ Joe Rogan podcast with [`/people/luis-elizondo`].
 
 He goes through his federal service jobs — counter intelligence, then in 2008 the Director of National Intelligence, then a Pentagon role on the integration between national level intelligence information and local and state and tribal law enforcement. In 2009 "two individuals" approached him for "a very nuanced program very secretive program," and he was asked to run "The Counter Intelligence and security aspect" before he knew what the program was. He was taken to a DC area office and met the program director — [`/people/james-lacatski`], "the number one rocket scientist in the US government" — whose first question was "what do you think about UFOs."
 
-On the program he points to "the larger umbrella program called assap" and to "ASAP and atps" ([`/organizations/aatip`]). His approach to a case: assume it "was man-made" and "conventional" until "compelling data that said otherwise." Among the scientists "doing the calculations" he names [`/people/hal-puthoff`], who "helped start the government's remote viewing program," and "Dr AR Davis."
+On the program he points to "the larger umbrella program called assap" and to "ASAP and atps" ([`/organizations/aatip`]). His approach to a case: assume it "was man-made" and "conventional" until "compelling data that said otherwise." Among the scientists "doing the calculations" he names [`/people/hal-puthoff`], who "helped start the government's remote viewing program," and "Dr AR Davis" ([`/people/eric-davis`]).
 
 His main statement: "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans," after a roughly year long Pentagon review. He asked whether "we" are "saying something from another planet" or "simply saying non nonhuman intelligence that looks like us that moves around with us," and says "whatever it is it's here." He says he still has his security clearance and will consult for the US government, and that a faction inside the government will "make stuff up about me trying to discredit this topic."
 
@@ -311,6 +311,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 ### People
 
 - [`/people/david-grusch`]
+- [`/people/eric-davis`]
 - [`/people/hal-puthoff`]
 - [`/people/james-lacatski`]
 - [`/people/joe-rogan`]

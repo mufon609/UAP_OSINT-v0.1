@@ -33,7 +33,7 @@ Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intellig
 
 Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at USD(I&S) Moultrie's ([`/people/ronald-moultrie`]) request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick ([`/people/sean-kirkpatrick`]) had several in-person meetings with the undersecretary. In late July 2023, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her.
 
-In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation's provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson's analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
+In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation's provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson's ([`/people/douglas-johnson`]) analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
 ---
 
@@ -786,6 +786,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/david-kozik`]
 - [`/people/david-m-taylor`]
 - [`/people/deitra-trotter`]
+- [`/people/douglas-johnson`]
 - [`/people/dustin-gard-weiss`]
 - [`/people/ezra-cohen-watnick`]
 - [`/people/james-clapper`]
@@ -795,6 +796,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/kari-bingen`]
 - [`/people/kathleen-hicks`]
 - [`/people/marcel-lettre`]
+- [`/people/marik-von-rennenkampff`]
 - [`/people/michael-vickers`]
 - [`/people/milancy-harris`]
 - [`/people/ronald-moultrie`]

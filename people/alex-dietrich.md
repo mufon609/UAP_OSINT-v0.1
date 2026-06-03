@@ -26,7 +26,7 @@ Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F str
 
 ## UAP Relevance
 
-Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade.
+Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. She was on the wing of Cmdr. Dave Fravor ([`/people/david-fravor`]) (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade.
 
 Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks (both per Fravor's House Oversight Statement, [`/documents/written-testimony-fravor-2023`]).
 
