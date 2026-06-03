@@ -71,11 +71,19 @@ engines:
                                                 # fallback — see the skill).
   entry_fields: [name]                          # version / note optional
 
-# Optional top-level key. When the VLM vote is skipped (CBRN / content-filter
-# block), set `vlm_skipped: <reason>` and the validator accepts a 2-OCR-engine
-# record (Tesseract + PaddleOCR + image adjudication still clears the floor).
+# Optional top-level keys.
+#   vlm_skipped: when the VLM vote is skipped (CBRN / content-filter block), set
+#     `vlm_skipped: <reason>` and the validator accepts a 2-OCR-engine record
+#     (Tesseract + PaddleOCR + image adjudication still clears the floor).
+#   coverage_warning: emitted by `ocr-consensus.py run` when OCR-corroborated
+#     tokens absent from the VLM base cluster into a large contiguous run at one
+#     spine point — a likely dropped paragraph/page. Advisory possible_omissions
+#     never splice into the sibling and no gate checks completeness, so this is
+#     the visible signal that the VLM base may not cover the whole document.
+#     Resolve by confirming/repairing base coverage before `assemble`.
 optional_top_level_keys:
   - vlm_skipped
+  - coverage_warning
 
 # ---------------------------------------------------------------------------
 # Contested-span record. Emitted by `ocr-consensus.py run` for every token the

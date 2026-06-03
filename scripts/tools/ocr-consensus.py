@@ -243,6 +243,45 @@ def build_consensus(vlm_text, tess_text, paddle_text):
     return stats, contested, possible_omissions
 
 
+# A contiguous run of OCR-corroborated tokens absent from the VLM base, anchored
+# at a single spine point this large, signals a whole paragraph/page the VLM
+# transcription dropped. possible_omissions is advisory and never splices into
+# the sibling, so without this the dropped region ships silently — and neither
+# validate-ocr-sibling nor quote_source_grounding check completeness (only the
+# whole-sibling sha256 + contested finalization). This promotes the largest such
+# run to a visible coverage_warning.
+MAX_OMISSION_RUN = 40
+
+
+def coverage_warning_from_omissions(omissions):
+    """Return a coverage-warning dict if OCR-corroborated tokens absent from the
+    VLM base cluster into a large contiguous run at one spine point (a likely
+    dropped paragraph/page), else None. A dropped page becomes one difflib
+    insertion block, so all its tokens share a single ``before_token_index`` —
+    grouping by that anchor and taking the largest group surfaces it."""
+    if not omissions:
+        return None
+    by_anchor = {}
+    for o in omissions:
+        by_anchor.setdefault(o["before_token_index"], []).append(o)
+    anchor, run = max(by_anchor.items(), key=lambda kv: len(kv[1]))
+    if len(run) < MAX_OMISSION_RUN:
+        return None
+    return {
+        "before_token_index": anchor,
+        "line": run[0]["line"],
+        "omitted_token_count": len(run),
+        "total_omitted_tokens": len(omissions),
+        "note": (
+            f"{len(run)} OCR-corroborated tokens absent from the VLM base "
+            f"cluster at one point (line {run[0]['line']}) — the VLM "
+            f"transcription likely dropped a paragraph or page here. The "
+            f"sibling base must cover the whole document; confirm coverage "
+            f"before `assemble`."
+        ),
+    }
+
+
 def build_consensus_2(base_text, other_text):
     """Two-engine consensus for the CBRN / content-filter fallback, where the
     VLM vote is skipped. Tesseract is the readable base; PaddleOCR is the sole
@@ -455,12 +494,14 @@ def cmd_run(args):
         {"name": "tesseract", "version": tesseract_version()},
         {"name": "paddleocr", "version": paddleocr_version()},
     ]
+    coverage_warning = None
     if vlm_text is not None:
         print("[4/4] Aligning 3 votes + computing consensus ...")
         stats, contested, omissions = build_consensus(vlm_text, tess_text, paddle_text)
         base_text = vlm_text
         engines.append({"name": "vlm", "note": f"agent page-image read; file: {args.vlm}"})
         vlm_skipped = None
+        coverage_warning = coverage_warning_from_omissions(omissions)
     else:
         print("[4/4] VLM skipped — Tesseract+PaddleOCR 2-engine consensus ...")
         stats, contested, omissions = build_consensus_2(tess_text, paddle_text)
@@ -482,6 +523,8 @@ def cmd_run(args):
     }
     if vlm_skipped:
         record["vlm_skipped"] = vlm_skipped
+    if coverage_warning:
+        record["coverage_warning"] = coverage_warning
     write_yaml(verification, record)
 
     print(f"\n  draft sibling : {sibling}")
@@ -489,6 +532,11 @@ def cmd_run(args):
     print(f"  consensus     : {stats['consensus_tokens']}/{stats['base_tokens']} tokens")
     print(f"  CONTESTED     : {stats['contested_count']}  (adjudicate against page images)")
     print(f"  omissions(adv): {stats['possible_omission_count']}")
+    if coverage_warning:
+        print(f"\n  ⚠ COVERAGE WARNING: {coverage_warning['omitted_token_count']} "
+              f"OCR-corroborated tokens absent from the VLM base cluster at "
+              f"line {coverage_warning['line']} — the base likely dropped a "
+              f"paragraph/page. Confirm whole-document coverage before assemble.")
     if contested:
         print("\n  Next: fill `resolution` for each contested span by reading the")
         print("  page image, then run: ocr-consensus.py assemble", verification)

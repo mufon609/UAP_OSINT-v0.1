@@ -74,9 +74,9 @@ Section XII describes another path, nonlinear quantum mechanics: the no-signal "
 
 ---
 
-### Relativity compatibility — relativity prohibits only certain forms of superluminal communication; quantum nonlocality appears to exhibit superluminal aspects while preserving compatibility with special relativity. (Source OCR reads "Section ITT" for "Section III".)
+### Relativity compatibility — relativity prohibits only certain forms of superluminal communication; quantum nonlocality appears to exhibit superluminal aspects while preserving compatibility with special relativity.
 
-> However, as will be discussed in Section ITT, relativity prohibits only certain forms of superluminal communication, while other forms are not in conflict with relativity. One phenomenon that appears, at least superficially, to exhibit superluminal aspects while preserving compatibility with special relativity is quantum nonlocality
+> However, as will be discussed in Section III, relativity prohibits only certain forms of superluminal communication, while other forms are not in conflict with relativity. One phenomenon that appears, at least superficially, to exhibit superluminal aspects while preserving compatibility with special relativity is quantum nonlocality
 
 | Field | Value |
 |---|---|
@@ -170,9 +170,9 @@ Section XII describes another path, nonlinear quantum mechanics: the no-signal "
 
 ---
 
-### Ghost-Interference coincidence problem — the Ghost Interference experiment as reported does not demonstrate nonlocal communication because of its use of a classical communication link to impose the coincidence requirement. (Source OCR reads "cammunication" for "communication".)
+### Ghost-Interference coincidence problem — the Ghost Interference experiment as reported does not demonstrate nonlocal communication because of its use of a classical communication link to impose the coincidence requirement.
 
-> However, the Ghost Interference experiment does not, in the form reported, demonstrate nonlocal communication, because of its use of a classical cammunication link in imposing the coincidence requirement between the detected photons.
+> However, the Ghost Interference experiment does not, in the form reported, demonstrate nonlocal communication, because of its use of a classical communication link in imposing the coincidence requirement between the detected photons.
 
 | Field | Value |
 |---|---|
@@ -296,8 +296,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| Section ITT | Section III | government/dird-16-quantum-entanglement-nonlocality-20100330.pdf |
-| cammunication | communication | government/dird-16-quantum-entanglement-nonlocality-20100330.pdf |
 | demonstration on nonlocal communication | demonstration of nonlocal communication | government/dird-16-quantum-entanglement-nonlocality-20100330.pdf |
 
 ---
@@ -307,29 +305,29 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 Reference list carried by the source document, transcribed verbatim (source spelling preserved). Captured as an authorship-network dimension; not part of the document's argument.
 
 - **[1]** S. J. Freedman and J. F. Clauser, Phys. Rev. Letters, 28, 938-942 (1972).
-- **[2]** A. Aspect, ]. Dalibard, and G. Roger, Phys. Rev. Letters, 49, 91-95 (1982); A. Aspect, ]. Dalibard, and G. Roger, Phys. Rev. Letters, 49, 1804 (1982),
+- **[2]** A. Aspect, J. Dalibard, and G. Roger, Phys. Rev. Letters, 49, 91-95 (1982); A. Aspect, J. Dalibard, and G. Roger, Phys. Rev. Letters, 49, 1804 (1982).
 - **[3]** Erwin Schrödinger, Proc. of Cambridge Philosophical Society, 31, 555-563 (1935); 32, 446-451 (1936).
 - **[4]** A. Einstein, B. Podolsky, and N. Rosen, Physical Review. 47, 777-785 (1935).
 - **[5]** Jon P. Jarrett, Noûs, 18, 569 (1984).
 - **[6]** Abner Shimony, Quantum Concepts in Space and Time, R. Penrose and C. J. Isham, eds., Chapter 12, pp. 182-203, Clarendon Press, Oxford (1986).
 - **[7]** C. S. Wu and I. Shanknov, Phys. Rev., 77, 136 (1950).
-- **[8]** J. S. Bell, Physics, Vol. 1, 195 (1964): Rev. of Modern Physics, 38, 447 (1966).
-- **[9]** W. Tittel, J. Brendel, H. Zbinden, and N. Gisin, Phys. Rev. Letters, 82, 3563-3566 (1998).
+- **[8]** J. S. Bell, Physics, Vol. 1, 195 (1964); Rev. of Modern Physics, 38, 447 (1966).
+- **[9]** W. Tittel, J. Brendel, H. Zbinden, and N. Gisin, Phys. Rev. Letters, 81, 3563-3566 (1998).
 - **[10]** Anthony J. Leggett, Foundations of Physics 33, 1469 (2003)
-- **[11]** S. Gröblacher, T. Paterek, R. Kaltenbaek, C. Brukner, M. Zukowski, M. Aspelmeyer, and A. Zeilinger, “An experimental test of non-local realism,” Nature 446, 871-875 (2007),
+- **[11]** S. Gröblacher, T. Paterek, R. Kaltenbaek, C. Brukner, M. Zukowski, M. Aspelmeyer, and A. Zeilinger, "An experimental test of non-local realism," Nature 446, 871-875 (2007).
 - **[12]** Heinz Pagels, The Cosmic Code, Simon & Schuster, NY (1982).
-- **[13]** P. H. Eberhard, Nuovo Cimento B 38, 75 (1977), ibid. B 46, 392 (1978); G. C. Ghirardi, A. Rimini, and T. Weber, Lett, Nuovo Cimento 27, 293-298 (1980); U. Yurtsever and G, Hockney, Classical and Quantum Gravity 22, 295-312 (2005), gr-qc/0409112.
-- **[14]** 14K. A. Peacock and B. Hepburn, Proceedings of the Meeting of the Society of Exact Philosophy (1999), quant-ph/9906036.
-- **[15]** 1. Mandel and E. Wolf, Optical Coherence and Quantum Optics, Chapter 22.4, Cambridge University Press (1995),
-- **[16]** 16D. V. Strekalov, A. V. Sergienko, D. N. Kiyshko, and Y. H. Shih, Phys. Rev. Letters, 74, 3600-3603 (1995).
+- **[13]** P. H. Eberhard, Nuovo Cimento B 38, 75 (1977), ibid. B 46, 392 (1978); G. C. Ghirardi, A. Rimini, and T. Weber, Lett. Nuovo Cimento 27, 293-298 (1980); U. Yurtsever and G. Hockney, Classical and Quantum Gravity 22, 295-312 (2005), gr-qc/0409112.
+- **[14]** K. A. Peacock and B. Hepburn, Proceedings of the Meeting of the Society of Exact Philosophy (1999), quant-ph/9906036.
+- **[15]** L. Mandel and E. Wolf, Optical Coherence and Quantum Optics, Chapter 22.4, Cambridge University Press (1995).
+- **[16]** D. V. Strekalov, A. V. Sergienko, D. N. Klyshko, and Y. H. Shih, Phys. Rev. Letters, 74, 3600-3603 (1995).
 - **[17]** B. Dopfer, Ph.D. Thesis, Univ. Innsbruck (1998); A. Zeilinger, Rev. Modern Physics 71, S288-S297 (1999).
 - **[18]** A. F. Abouraddy, M. B. Nasr, B. E. A. Saleh, A. V. Sergienko, and M. C. Teich. Phys. Rev. A, 63, 063803 (2001).
 - **[19]** John G. Cramer, Reviews of Modern Physics 58, 647 (1986); John G. Cramer, International Journal of Theoretical Physics 27, 227 (1988); John G. Cramer, Foundations of Physics Letters 19, 63-73, (2006).
-- **[20]** 4. Fedrizzi, T. Herbst1, A. Poppe, T. Jenneweini and A. Zeilinger, Optics Express 15, 15377 (2007).
+- **[20]** A. Fedrizzi, T. Herbst1, A. Poppe, T. Jennewein1 and A. Zeilinger, Optics Express 15, 15377 (2007).
 - **[21]** Ludwig Zehnder, Z. Instrumentenkunde 11, 275 (1891); Ludwig Mach, Z. Instrumentenkunde 12, 89 (1892).
-- **[22]** 22:1, A, Wheeler and R. P. Feynman, Rev. Mod. Physics, 21, 425-433 (1949).
-- **[23]** F, Eschenerria, G. Klinkhammer, and K. S. Thorne, Phys. Rev. D, 44, 1077-1099 {1991}.
-- **[24]** 24S. W. Hawking, Phys. Rev. D 46, 603-611 (1992).
+- **[22]** J. A. Wheeler and R. P. Feynman, Rev. Mod. Physics, 21, 425-433 (1949).
+- **[23]** F. Eschenerria, G. Klinkhammer, and K. S. Thorne, Phys. Rev. D, 44, 1077-1099 (1991).
+- **[24]** S. W. Hawking, Phys. Rev. D 46, 603-611 (1992).
 - **[25]** Steven Weinberg, Physical Review Letters, 62, 485-490 (1989).
 - **[26]** Joseph Polchinski, Physical Review Letters, 66, 397-401 (1991).
 

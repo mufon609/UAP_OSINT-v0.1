@@ -267,88 +267,104 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — OCR-scan sibling fidelity: consensus pipeline built but unwired; 32 siblings unverified; DIRD-16 backfill stalled on adjudication noise
+### C1 — OCR-scan sibling fidelity: DIRD-16 fixed; whole-document consensus evaluated and rejected for **quote-scoped confirmation**; gate refactor + 31-sibling backfill remain
 
 **The defect that started this.** OCR-scan PDFs are quoted against a clean-text
-`.txt` sibling, not the corrupt pdftotext layer. The existing siblings were
-produced by a now-retired process: one agent transcribed the page images, a
-second agent "verified" by re-reading — same modality, correlated failure mode,
-no durable record, and no mechanical sibling↔source check anywhere in the gate
-chain (the verbatim-quote check compares quote↔sibling, never sibling↔document).
-It failed silently: `documents/dird-16-quantum-entanglement-nonlocality`'s
-committed sibling carries four image-divergent errors that reached the committed
-node, each confirmed against the PDF page images — `Section ITT` (image reads
-III), `cammunication` (communication), the Tittel/Gisin reference volume `82`
-(81), and `Kiyshko` (Klyshko). They propagated into node quotes (q4, q12), two
-Source-Form Notes (nq1, nq2) that describe artifacts NOT present in the primary
-source, and cited_works (cw9, cw16). nq3 (`demonstration on` for `of`) IS a
-genuine document typo present in the PDF.
+`.txt` sibling, not the corrupt pdftotext layer. The original siblings were
+produced by a now-retired process (one agent transcribed page images, a second
+"verified" by re-reading — same modality, correlated failure mode, no durable
+record, no mechanical sibling↔source check). It failed silently: DIRD-16's
+committed sibling carried four image-divergent errors — `Section ITT` (image
+reads III), `cammunication` (communication), Tittel/Gisin volume `82` (81),
+`Kiyshko` (Klyshko) — which propagated into node quotes (q4, q12), two
+Source-Form Notes (nq1, nq2) describing artifacts NOT in the source, and
+cited_works (cw9, cw16). nq3 (`demonstration on` for `of`) IS a genuine document
+typo.
 
-**What now exists (committed, not yet active).** A replacement pipeline was
-built and committed: `scripts/tools/ocr-consensus.py` (multi-engine consensus +
-`assemble` + `--selftest`), `scripts/tools/setup-ocr-consensus.sh` (PaddleOCR →
-`.venv-ocr`), `meta/schema-ocr-verification.yaml`,
-`scripts/build/validate-ocr-sibling.py`, `scripts/checks/quote_source_grounding.py`,
-and rewrites of the `/prepare-ocr-sibling` skill + the `meta/conventions.md`
-"Producing the `.txt` sibling" section. It cross-checks three votes with
-uncorrelated failure modes — Tesseract, PaddleOCR (`.venv-ocr`, v3.6: requires
-oneDNN disabled + mobile det/rec models + a capped detection side-length, all
-handled in the committed adapter after the server model tried to allocate ~43 GB
-on a 300-dpi page), and a VLM page-image read — accepting a token only on
-≥2-of-3 agreement and flagging the rest CONTESTED for image adjudication recorded
-in a `{stem}-ocr-verification.yaml`.
+**The committed consensus tooling.** `scripts/tools/ocr-consensus.py` (multi-engine
+consensus + `assemble` + `--selftest` + the new `coverage_warning` guardrail),
+`scripts/tools/setup-ocr-consensus.sh` (PaddleOCR → `.venv-ocr`),
+`meta/schema-ocr-verification.yaml`, `scripts/build/validate-ocr-sibling.py`,
+`scripts/checks/quote_source_grounding.py`. Three votes (Tesseract, PaddleOCR,
+VLM page-image read), token accepted on ≥2-of-3, rest CONTESTED.
 
-**Problem 1 — the new machinery is not wired into the gate chain.**
-`validate-ocr-sibling.py` is not in `scripts/tests/pre-commit.sh`;
-`quote_source_grounding.py` is not in `validate-research.py`'s `_ARTIFACT_CHECKS`
-and carries `SEVERITY = "warn"`. By design (build→backfill→gate) they activate
-only after every existing sibling has a verification record. Until then nothing
-mechanically enforces sibling fidelity.
+---
 
-**Problem 2 — 32 OCR-scan siblings are unverified.** `validate-ocr-sibling.py`
-discovers 32 OCR-scan / extraction-lossy sources that have a `.txt` sibling
-(every DIRD, plus Grusch PPD-19, the FOIA docs, SD004); none has a verification
-record. All were produced by the retired process. The DIRD-16 pilot confirmed
-the old siblings are Tesseract-correlated (fresh Tesseract reproduces the same
-`cammunication`/`82`/`Kiyshko` errors), so the error class is not unique to
-DIRD-16. The per-sibling error rate across the corpus is unmeasured.
+#### 2026-06-03 session — evaluated with clear eyes; DIRD-16 done; direction set
 
-**Problem 3 — the DIRD-16 pilot stalled on adjudication noise.** DIRD-16's VLM
-vote was rejected by the model's output content-filter on the full-document
-transcription, forcing the 2-engine fallback (Tesseract base + PaddleOCR
-cross-check, `--vlm-skipped`). The consensus correctly flagged all four known
-errors as CONTESTED (Tesseract wrong, PaddleOCR right) — the core mechanism
-works. But the run produced 14,405/15,641 consensus and **1,236 CONTESTED**
-spans, of which roughly 1,230 are non-prose noise: the 2-engine fallback uses
-raw Tesseract output as the sibling base, which transcribes every glyph on the
-page including the Black Vault logo, the DIA seal, all ~12 figure diagrams, and
-TOC dot-leaders. Hand-adjudicating 1,236 spans is impractical and would recur on
-every figure-heavy DIRD. The noisiest band is the front matter (~5.7 contested
-per line) — which also contains the quotable Administrative Note (source of q1).
-A clean VLM base would not contain the non-prose tokens at all.
+**Finding 1 — the VLM content-filter block is per-page, not whole-document
+(old Problem 4, RESOLVED).** Per-page chunked production (transcribe one page,
+write its file, then read the next — so a block localizes and partial progress
+survives) recovered **31 of 33 pages**. Exactly two pages block *reproducibly in
+isolation*: PDF p12 (§III body) and p31 (glossary back-matter). The earlier
+"whole-document" block was just the single-pass producer dying on p12. Blocked
+pages were filled from Tesseract + PaddleOCR (the documented 2-engine regime,
+confined to those two pages). **Per-page chunked production + a blocked-page
+ledger + Tesseract-fill should be the default producer protocol** (fold into
+`/prepare-ocr-sibling`).
 
-**Problem 4 — the content-filter block is uncharacterized.** It is unknown
-whether the filter blocked one specific passage or the whole document; the
-producer agent died on output after reading the pages, before writing anything.
-No chunked / per-page-range production was attempted, so the recoverable
-fraction of a VLM base for DIRD-16 is unknown.
+**Finding 2 — a clean VLM base does NOT reduce the contested count (old
+Problem 3, the load-bearing result).** Re-running the consensus over a clean
+33-page VLM base produced **1067 CONTESTED** (vs 1236 on the Tesseract base) —
+same order of magnitude. The composition flips, not the magnitude: ~990 of the
+1067 are non-prose furniture, but now they are the VLM's *editorial* renderings
+(`[Figure N: …]` placeholders, struck-through-banner notes repeated on 33 pages,
+Unicode subscripts `D₁`/`f₁`, TOC page-numbers vs OCR-read dot-leaders) that raw
+OCR never produces. The premise "a clean VLM base would not contain the non-prose
+tokens" was half-true: it drops raw figure-glyph noise and adds editorial-token
+noise. **The noise is intrinsic to per-token *whole-document* consensus on a
+banner/figure-heavy government PDF — not specific to the Tesseract base.**
 
-**Problem 5 — the original DIRD-16 node fix is still unapplied.** The audit that
-opened this thread identified the node corrections (restore `III` /
-`communication`, drop nq1 / nq2, keep nq3, set the Tittel/Gisin volume to 81,
-correct the Strekalov/Klyshko author). They are blocked behind producing a
-trustworthy DIRD-16 sibling, so the committed node still carries the errors.
+**Finding 3 — the decisive measurement.** Mapping all 21 DIRD-16 node quotes to
+their char-spans in the VLM sibling (located exactly by section/¶ locator) and
+intersecting with the 1067 contested spans: **0 of 1067 contested spans fall
+inside any quote.** Every quoted passage is fully engine-confirmed (VLM matched
+≥1 OCR engine on every token); the entire contested pile is non-quoted furniture.
+Even the genuine prose disagreements sit in figure captions / non-quoted body.
 
-**Session state.** DIRD-16's sibling was restored to its committed
-(still-erroneous) state after the pilot; the pilot's verification YAML was
-ephemeral (`/tmp`). `.venv-ocr/` is present and gitignored. The consensus tooling
-is verified working on the deterministic path (selftest + assemble) and on real
-OCR (the 33-page DIRD-16 run completed end-to-end).
+**Architecture decision (maintainer) — quote-scoped confirmation replaces
+whole-document consensus.** The VLM page read is the primary "grab" (the sibling
+text quotes are drawn from); a **second OCR engine confirms only the spans
+actually quoted/cited into the node** — engine-vs-engine, image-adjudicate *only*
+on mismatch. Furniture is never quoted → never verified → never adjudicated. This
+fits the ≥2-uncorrelated-reads floor honestly (every load-bearing token rests on
+two reads; non-quoted text is never load-bearing) and matches the existing
+`conventions.md` "check the quoted region against the image" discipline. The
+whole-document `{stem}-ocr-verification.yaml` (1067-contested) format is
+**deprecated**; it was not committed.
 
-**No approach is proposed here, intentionally** — the maintainer asked that a
-fresh session evaluate the noise / VLM-block / backfill problems with clear eyes.
-Candidate directions were discussed in the originating session and are
-deliberately omitted.
+**DIRD-16 COMPLETED (old Problem 5, done).** Sibling regenerated via per-page
+VLM + Tesseract-fill for p12/p31; the full reference list (p33) independently
+image-confirmed by a separate agent session. Node corrected: the 5 documented
+errors **plus 11 `cited_works` that had inherited old-sibling OCR garble** —
+exposed by the regeneration (`]. Dalibard`→`J.`, `1. Mandel`→`L.`,
+`22:1, A, Wheeler`→`J. A.`, `{1991}`→`(1991)`, missing spaces after footnote
+numbers, etc.). nq1/nq2 dropped, nq3 kept. **All 14 pre-commit gates green.**
+The corrected sibling + node are in the working tree (uncommitted).
+
+**Guardrail added (committed-ready).** `ocr-consensus.py` `cmd_run` now emits a
+`coverage_warning` when OCR-corroborated tokens absent from the VLM base cluster
+into a large contiguous run (a likely dropped paragraph/page — the silent
+missing-page failure neither validator checked). Schema gained the optional
+`coverage_warning` key. Useful regardless of verification model (sibling
+completeness for quote extraction). `--selftest` still 5/5.
+
+#### What remains
+
+1. **Build the quote-scoped gate.** Refactor `quote_source_grounding.py` from
+   "whole-sibling finalized record + sha256" to "every quote AND cited_work from
+   an OCR-scan source is confirmed by a second OCR engine against its sibling
+   span; image-adjudication record on mismatch." **cited_works are in scope** —
+   DIRD-16 proved they are load-bearing and inherited garble. Add a quote-scoped
+   mode to `ocr-consensus.py` (intersect contested spans with quote/cited spans —
+   the session's prototype logic) or a new tool, and define the per-node/per-source
+   record format. Decide the fate of the now-superseded whole-document path +
+   `validate-ocr-sibling.py` (whole-sibling-finalized): keep / retire / repurpose.
+2. **Backfill the other 31 OCR-scan siblings** under the quote-scoped model —
+   per-sibling work is now bounded to confirming *that sibling's node's
+   quotes/cited_works*, with no figure/banner adjudication.
+3. **Wire the gate + flip `SEVERITY`** once each sibling's quote-spans are
+   confirmed (old Problem 1; old Problem 2 was 32, now 31 after DIRD-16).
 
 **Blocks:** none.
 **Blocked by:** none.
