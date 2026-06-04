@@ -26,7 +26,7 @@ _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the
 
 ## Description
 
-Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document's Author line carries only a FOIA redaction marker, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).
+Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document's Author line carries only a FOIA redaction, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).
 
 In the Introduction, the document states that when sensors, filters, emitters, and photovoltaic solar panels are made of Programmable Matter smart materials, the solution to a component failure or new mission requirement might be as simple as a software update. Other advantages of dynamic materials include advanced energy management and energy scavenging from a variety of sources; smart materials can even create new defensive capabilities, such as chameleon-style camouflage, deflection of laser beams, and even outright invisibility. The white paper is intended to serve as a primer on the principles behind smart materials and their possible aerospace applications over the next 50 years.
 
@@ -76,11 +76,11 @@ On early commercialization, the document states that in the third quarter of 200
 
 ### Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6), so no author name appears on the document
 
-> Prepared by: [box containing redaction marker:] (b)(3):10 USC 424
+> Prepared by: [(b)(3):10 USC 424]
 >
 > Defense Intelligence Agency
 >
-> Author: [box containing redaction marker:] (b)(6)
+> Author: [(b)(6)]
 
 | Field | Value |
 |---|---|
@@ -104,7 +104,7 @@ On early commercialization, the document states that in the third quarter of 200
 
 ### AAWSA Program provenance — names the FY 2009 AAWSA Program series; the document writes "AAWSA" (not the common "AAWSAP"), and the AAWSA Program Manager identity is withheld under FOIA exemption markers
 
-> This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [boxed redaction: (b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [boxed redaction: (b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [boxed redaction: (b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
+> This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
 
 | Field | Value |
 |---|---|
