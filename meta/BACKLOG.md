@@ -267,7 +267,7 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — OCR-scan sibling fidelity: DIRD-16 fixed; whole-document consensus rejected for **quote-scoped confirmation**; trust decision resolved (procedural); two structural gaps found (shared-source records, Markdown-in-sibling) + the built-node backfill remain
+### C1 — OCR-scan sibling fidelity: DIRD-16 fixed; whole-document consensus evaluated and rejected for **quote-scoped confirmation**; gate refactor + 31-sibling backfill remain
 
 **The defect that started this.** OCR-scan PDFs are quoted against a clean-text
 `.txt` sibling, not the corrupt pdftotext layer. The original siblings were
@@ -376,61 +376,28 @@ sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
 
 #### What remains
 
-**Backfill worklist (refined 2026-06-03 — measured, not estimated).** Grounding
-is needed only for BUILT nodes that carry verbatim quotes/cited_works against an
-OCR-scan source, not for every sibling on disk. Measured against the gate's own
-scope (`collect_ocr_spans` over `meta/research/*.yaml`): **35 OCR-scan sources
-are cited in-scope** across the built corpus. By citation shape:
-
-  - **24 single-artifact** (one node quotes the source) — safe to `ground`
-    per-artifact. DIRD-16 done; **19 are VLM-ready** (16 DIRDs + the
-    `cia-…1471s73-progress`, `fas-aatip-list`, and `docs-house-…hhrg-118-sd004`
-    sources) and groundable now; **4 need a VLM grab first** (`dird-18`,
-    `…sasc-…20241119`, `grusch-ppd-19` are raw-OCR siblings; `blackvault-grusch-
-    dopsr` has no sibling).
-  - **11 shared** (≥2 nodes quote the same source — e.g. `…sasc-…20230419` by 3
-    artifacts, `cia-…geller-aug1973` by 3, `dia-advancedspacepropulsion` by
-    dird-15 + hal-puthoff) — **blocked on item 1 below.**
-
-1. **NEW DEFECT — shared-source grounding is not compositional.** `ground
-   <artifact>` rebuilds `{stem}-quote-grounding.yaml` from only the artifact it
-   is run on, and the gate matches each quote's per-artifact `id` against that
-   single per-source record. So for a source cited by >1 node, grounding one
-   node leaves every other node's quotes flagged "not in the record" — and quote
-   ids are not globally unique across artifacts, so a per-source record keyed by
-   bare id is ambiguous. The 11 shared sources cannot be satisfied by the current
-   tool. Fix options to weigh: (a) `ground` accumulates/merges grounded_spans
-   across all citing artifacts into the per-source record, namespacing refs by
-   artifact; (b) `ground` takes all citing artifacts at once; (c) the record key
-   becomes (artifact, ref). Decide before backfilling any shared source.
-
-2. **NEW FINDING — VLM-sibling Markdown typography trips the gate.** Validation
-   `ground` of `fas-aatip-list` (6 quotes) produced 84 contested tokens, **82 of
-   them a literal `*`**: the VLM sibling encodes the source's *italic* report
-   titles as Markdown `*…*` (confirmed against the page image — the source shows
-   italics, no asterisk). These pass `verbatim_quotes` (quote == sibling) but are
-   contested in grounding (no OCR engine emits `*`), and honest image-adjudication
-   yields resolution≠sibling (the image has no `*`) → the gate's "the grab is
-   wrong" error fires on a *faithful* sibling. Markdown-in-sibling is otherwise
-   unaddressed in `conventions.md`. Decide: (a) grounding normalizes away Markdown
-   formatting chars before consensus; (b) a `formatting`/`typography`
-   `resolution_method` the gate accepts without literal resolution==sibling; or
-   (c) siblings transcribe plain text (losing the italic signal). Affects every
-   sibling that renders source typography as Markdown.
-
-3. **Backfill the 19 VLM-ready single-artifact nodes** via `ground`, image-
-   adjudicating genuine OCR mismatches (resolution == what the page image shows;
-   a differing resolution means the grab is wrong → fix the sibling). Regenerate
-   the 4 raw-OCR/no-sibling siblings as VLM grabs (`run --vlm`, per-page chunked)
-   first. **Trust prerequisite (RESOLVED 2026-06-03 — left procedural):** the grab
-   must be uncorrelated with the confirming OCR engines; the maintainer chose to
-   keep this as contributor discipline (conventions/skill/schema), NOT a code gate
-   (consistent with source-read-first) — so `ground` gains no `--grab` flag, and
-   the prior "enforce mechanically?" decision is closed.
-4. **Wire the gate + flip `SEVERITY` to `error`** once every built node's
-   OCR-scan quotes carry a grounding record — add `quote_source_grounding` to
-   `validate-research.py::_ARTIFACT_CHECKS`. Blocked by items 1–3.
-5. **Optional cleanup:** `ocr-consensus.py run` still emits the legacy
+1. **Backfill the other 31 OCR-scan siblings.** Per-sibling work is bounded to
+   confirming *that sibling's node's quotes/cited_works* via `ground`, with no
+   figure/banner adjudication. **Trust prerequisite:** the grab must be
+   uncorrelated with the confirming OCR engines, so a sibling still produced by
+   the retired OCR-then-correct process must be regenerated as a VLM read
+   (`run --vlm`, per-page chunked) before grounding — else an OCR engine
+   rubber-stamps its own error class. (Old Problem 2 was 32; 31 after DIRD-16.)
+2. **DECISION PENDING — enforce the trust prerequisite mechanically?** The gate
+   confirms `sibling == (Tesseract OR PaddleOCR)`, which is sound only if the
+   sibling is a VLM grab; a Tesseract-correlated sibling (e.g. an un-regenerated
+   old sibling carrying `ITT`) would be silently rubber-stamped. Today this is
+   documented + procedural only (schema/conventions/skill/this item), not enforced
+   in code — `ground` can't tell a VLM grab from a raw-OCR one by reading the
+   `.txt`. Candidate: require `ground --grab vlm-page-read`, record it in the
+   grounding YAML, and have the gate flag any span whose grab is not declared VLM —
+   an explicit auditable claim instead of a silent assumption, catching a
+   mistakenly-grounded raw-OCR sibling exactly during the backfill. Maintainer to
+   decide vs. leaving it procedural (consistent with source-read-first).
+3. **Wire the gate + flip `SEVERITY` to `error`** once every node's OCR-scan
+   quotes carry a grounding record — add `quote_source_grounding` to
+   `validate-research.py::_ARTIFACT_CHECKS` (old Problem 1).
+4. **Optional cleanup:** `ocr-consensus.py run` still emits the legacy
    whole-document `{stem}-ocr-verification.yaml` consensus dump (ungated now) and
    `assemble` still splices it; a future pass could slim `run` to emit only the
    sibling and drop `assemble` / `build_consensus_2`.
