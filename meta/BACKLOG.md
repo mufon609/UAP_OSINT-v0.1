@@ -383,17 +383,12 @@ sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
    the retired OCR-then-correct process must be regenerated as a VLM read
    (`run --vlm`, per-page chunked) before grounding — else an OCR engine
    rubber-stamps its own error class. (Old Problem 2 was 32; 31 after DIRD-16.)
-2. **DECISION PENDING — enforce the trust prerequisite mechanically?** The gate
-   confirms `sibling == (Tesseract OR PaddleOCR)`, which is sound only if the
-   sibling is a VLM grab; a Tesseract-correlated sibling (e.g. an un-regenerated
-   old sibling carrying `ITT`) would be silently rubber-stamped. Today this is
-   documented + procedural only (schema/conventions/skill/this item), not enforced
-   in code — `ground` can't tell a VLM grab from a raw-OCR one by reading the
-   `.txt`. Candidate: require `ground --grab vlm-page-read`, record it in the
-   grounding YAML, and have the gate flag any span whose grab is not declared VLM —
-   an explicit auditable claim instead of a silent assumption, catching a
-   mistakenly-grounded raw-OCR sibling exactly during the backfill. Maintainer to
-   decide vs. leaving it procedural (consistent with source-read-first).
+2. **Trust prerequisite — RESOLVED (left procedural).** The gate confirms
+   `sibling == (Tesseract OR PaddleOCR)`, sound only if the sibling is a VLM grab
+   (a raw-OCR sibling would be rubber-stamped). Maintainer decision (2026-06-03):
+   keep this as contributor discipline (schema/conventions/skill), NOT a code
+   gate — consistent with source-read-first; `ground` gets no `--grab` flag.
+   Backfill still regenerates any raw-OCR sibling as a VLM read before grounding.
 3. **Wire the gate + flip `SEVERITY` to `error`** once every node's OCR-scan
    quotes carry a grounding record — add `quote_source_grounding` to
    `validate-research.py::_ARTIFACT_CHECKS` (old Problem 1).
