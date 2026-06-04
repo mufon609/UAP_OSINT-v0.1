@@ -190,7 +190,7 @@ The document also discussed the significant limitations for aerospace applicatio
 
 ### Composite payoff — zirconium-based in situ dendritic composites reach plane-strain fracture toughness exceeding 170 MPa·m^1/2 (7x single-phase glass) and fatigue strength of 20-30 percent of tensile strength
 
-> For instance, the plane-strain fracture toughness of some zirconium-based in situ composites can exceed 170 MPa·m^1/2—7 times greater than that of single-phase glasses and greater than that of virtually any other metallic alloy.^36 This resistance to crack propagation is also manifested as improved fatigue performance. The fatigue strength of the zirconium-based in situ composites is 20-30 percent of the tensile strength; in comparison, monolithic metallic glasses have a fatigue strength of only ~ 5 percent of the tensile strength.
+> For instance, the plane-strain fracture toughness of some zirconium-based in situ composites can exceed 170 MPa m^1/2—7 times greater than that of single-phase glasses and greater than that of virtually any other metallic alloy.^36 This resistance to crack propagation is also manifested as improved fatigue performance. The fatigue strength of the zirconium-based in situ composites is 20-30 percent of the tensile strength; in comparison, monolithic metallic glasses have a fatigue strength of only ~ 5 percent of the tensile strength.
 
 | Field | Value |
 |---|---|
@@ -257,6 +257,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | [(b)(6)] | [redacted per FOIA (b)(6)] | government/dird-01-metallic-glasses-20091214.pdf |
 | [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-01-metallic-glasses-20091214.pdf |
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-01-metallic-glasses-20091214.pdf |
+| Rammamurty | Ramamurty | government/dird-01-metallic-glasses-20091214.pdf |
 
 ---
 
@@ -277,7 +278,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - **[11]** Data from MatWeb, <www.matweb.com>.
 - **[12]** Data from MatWeb, <www.matweb.com>.
 - **[13]** Y. He, G. M. Dougherty, G. J. Shiflet, and S. J. Poon, Acta Metall. Mater. 41, 337 (1993).
-- **[14]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
+- **[14]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
 - **[15]** P. Lowhaphandu and J. J. Lewandowski, Scripta Mater. 38, 1811 (1998).
 - **[16]** Data from MatWeb, <www.matweb.com>.
 - **[17]** C. J. Gilbert, V. Schroeder, and R. O. Ritchie, Metall. Mater. Trans. A 30, 1739 (1999).
@@ -286,7 +287,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - **[20]** A. L. Greer, K. L. Rutherford, and I. M. Hutchings, Int. Mater. Rev. 47, 87 (2002).
 - **[21]** B. A. Green, P. K. Liaw, and R. A. Buchanan, Chapter 8 in Bulk Metallic Glasses, M. Miller and P. K. Liaw, eds. (Springer, 2009).
 - **[22]** V. Schroeder and R. O. Ritchie, Acta Metall. 54, 1785 (2006).
-- **[23]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
+- **[23]** Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
 - **[24]** A. Hernando and M. Vazquez, Ch. 17 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
 - **[25]** T. Richmond and H.J. Guntherodt, Ch. 14 in Rapidly Solidified Alloys, H. H. Liebermann, ed. (Marcel Dekker, 1993).
 - **[26]** C. Haon, D. Camel, B. Drevet, and J. M. Pelletier, Metall. Mater. Trans. A 39, 1791 (2008).
@@ -296,7 +297,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - **[30]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
 - **[31]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
 - **[32]** D. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).
-- **[33]** Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
+- **[33]** Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
 - **[34]** M. F. Ashby and A. L. Greer, Scripta Mater. 54, 321 (2006).
 - **[35]** D. C. Hofmann, J.Y. Suh, A. Wiest, M.L. Lind, M. D. Demetriou, and W. L. Johnson, Proc. Nat. Acad. Sci. 105, 20136 (2008).
 - **[36]** D. C. Hofmann, J.-Y. Suh, A. Wiest, G. Duan, M. D. Demetriou, and W. L. Johnson, Nature 451, 1085 (2008).

@@ -147,7 +147,7 @@ quotes:
 - id: q13
   added_date: '2026-05-21'
   text: |-
-    For instance, the plane-strain fracture toughness of some zirconium-based in situ composites can exceed 170 MPa·m^1/2—7 times greater than that of single-phase glasses and greater than that of virtually any other metallic alloy.^36 This resistance to crack propagation is also manifested as improved fatigue performance. The fatigue strength of the zirconium-based in situ composites is 20-30 percent of the tensile strength; in comparison, monolithic metallic glasses have a fatigue strength of only ~ 5 percent of the tensile strength.
+    For instance, the plane-strain fracture toughness of some zirconium-based in situ composites can exceed 170 MPa m^1/2—7 times greater than that of single-phase glasses and greater than that of virtually any other metallic alloy.^36 This resistance to crack propagation is also manifested as improved fatigue performance. The fatigue strength of the zirconium-based in situ composites is 20-30 percent of the tensile strength; in comparison, monolithic metallic glasses have a fatigue strength of only ~ 5 percent of the tensile strength.
   source:
     path: government/dird-01-metallic-glasses-20091214.pdf
     location: 'p. 23, ¶2 (Fracture and Fatigue)'
@@ -322,10 +322,10 @@ cited_works:
   - id: cw14
     added_date: '2026-05-24'
     citation_key: '14'
-    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Rammamurty'
     year: '2007'
     citation_verbatim: |-
-      ^14 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
+      ^14 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original micrograph is from R. D. Conner, W. L. Johnson, N. E. Paton, and W. D. Nix, J. Appl. Phys. 94, 904 (2003).
     source:
       path: government/dird-01-metallic-glasses-20091214.pdf
       location: 'p. 30, References ^14'
@@ -412,10 +412,10 @@ cited_works:
   - id: cw23
     added_date: '2026-05-24'
     citation_key: '23'
-    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Rammamurty'
     year: '2007'
     citation_verbatim: |-
-      ^23 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
+      ^23 Graphic reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd.
     source:
       path: government/dird-01-metallic-glasses-20091214.pdf
       location: 'p. 30, References ^23'
@@ -513,10 +513,10 @@ cited_works:
   - id: cw33
     added_date: '2026-05-24'
     citation_key: '33'
-    author: 'C. A. Schuh, T. C. Hufnagel, and U. Ramamurty'
+    author: 'C. A. Schuh, T. C. Hufnagel, and U. Rammamurty'
     year: '2007'
     citation_verbatim: |-
-      ^33 Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Ramamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
+      ^33 Graphics reproduced from C. A. Schuh, T. C. Hufnagel, and U. Rammamurty, Acta Mater. 55, 4067 (2007) and used with the permission of Elsevier, Ltd. Original artwork provided by Charlie Hays, Caltech.
     source:
       path: government/dird-01-metallic-glasses-20091214.pdf
       location: 'p. 30, References ^33'
@@ -701,5 +701,12 @@ naming_quirks:
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
   location: 'p. 3, Administrative Note'
+  source_path: government/dird-01-metallic-glasses-20091214.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-06-03'
+  observed: Rammamurty
+  canonical: Ramamurty
+  location: 'p. 30, References ^14, ^23, ^33 (author U. Ramamurty)'
   source_path: government/dird-01-metallic-glasses-20091214.pdf
   resolution: preserve-as-sic-in-quotes
