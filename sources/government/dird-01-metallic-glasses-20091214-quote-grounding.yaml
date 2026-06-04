@@ -1,15 +1,16 @@
-schema: quote-grounding/v1
+schema: quote-grounding/v2
 source_pdf: government/dird-01-metallic-glasses-20091214.pdf
 sibling_txt: government/dird-01-metallic-glasses-20091214.txt
 sibling_sha256: f0e7db39ad1a573c4520b45e919314677e0d9df815c12b0022ccf86dbc4d10de
-generated: '2026-06-03'
+generated: '2026-06-04'
 confirming_engines:
 - name: tesseract
   version: 5.5.0
 - name: paddleocr
   version: 3.6.0
 grounded_spans:
-- ref: q1
+- node: dird-01-metallic-glasses
+  ref: q1
   kind: quote
   located: true
   char_start: 163
@@ -17,7 +18,8 @@ grounded_spans:
   tokens: 9
   confirmed: 9
   contested: []
-- ref: q2
+- node: dird-01-metallic-glasses
+  ref: q2
   kind: quote
   located: true
   char_start: 816
@@ -69,7 +71,8 @@ grounded_spans:
     resolution: ']'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: q3
+- node: dird-01-metallic-glasses
+  ref: q3
   kind: quote
   located: true
   char_start: 1020
@@ -143,7 +146,8 @@ grounded_spans:
     resolution: Bldg
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: q4
+- node: dird-01-metallic-glasses
+  ref: q4
   kind: quote
   located: true
   char_start: 3665
@@ -151,7 +155,8 @@ grounded_spans:
   tokens: 135
   confirmed: 135
   contested: []
-- ref: q5
+- node: dird-01-metallic-glasses
+  ref: q5
   kind: quote
   located: true
   char_start: 4516
@@ -159,7 +164,8 @@ grounded_spans:
   tokens: 125
   confirmed: 125
   contested: []
-- ref: q6
+- node: dird-01-metallic-glasses
+  ref: q6
   kind: quote
   located: true
   char_start: 5267
@@ -167,7 +173,8 @@ grounded_spans:
   tokens: 114
   confirmed: 114
   contested: []
-- ref: q7
+- node: dird-01-metallic-glasses
+  ref: q7
   kind: quote
   located: true
   char_start: 7184
@@ -175,7 +182,8 @@ grounded_spans:
   tokens: 199
   confirmed: 199
   contested: []
-- ref: q8
+- node: dird-01-metallic-glasses
+  ref: q8
   kind: quote
   located: true
   char_start: 13347
@@ -183,7 +191,8 @@ grounded_spans:
   tokens: 46
   confirmed: 46
   contested: []
-- ref: q9
+- node: dird-01-metallic-glasses
+  ref: q9
   kind: quote
   located: true
   char_start: 22877
@@ -191,7 +200,8 @@ grounded_spans:
   tokens: 77
   confirmed: 77
   contested: []
-- ref: q10
+- node: dird-01-metallic-glasses
+  ref: q10
   kind: quote
   located: true
   char_start: 24584
@@ -199,7 +209,8 @@ grounded_spans:
   tokens: 89
   confirmed: 89
   contested: []
-- ref: q11
+- node: dird-01-metallic-glasses
+  ref: q11
   kind: quote
   located: true
   char_start: 28578
@@ -207,7 +218,8 @@ grounded_spans:
   tokens: 28
   confirmed: 28
   contested: []
-- ref: q12
+- node: dird-01-metallic-glasses
+  ref: q12
   kind: quote
   located: true
   char_start: 29007
@@ -215,7 +227,8 @@ grounded_spans:
   tokens: 39
   confirmed: 39
   contested: []
-- ref: q13
+- node: dird-01-metallic-glasses
+  ref: q13
   kind: quote
   located: true
   char_start: 45864
@@ -256,7 +269,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: q14
+- node: dird-01-metallic-glasses
+  ref: q14
   kind: quote
   located: true
   char_start: 48745
@@ -275,7 +289,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: q15
+- node: dird-01-metallic-glasses
+  ref: q15
   kind: quote
   located: true
   char_start: 51295
@@ -283,7 +298,8 @@ grounded_spans:
   tokens: 52
   confirmed: 52
   contested: []
-- ref: q16
+- node: dird-01-metallic-glasses
+  ref: q16
   kind: quote
   located: true
   char_start: 54477
@@ -291,7 +307,8 @@ grounded_spans:
   tokens: 49
   confirmed: 49
   contested: []
-- ref: q17
+- node: dird-01-metallic-glasses
+  ref: q17
   kind: quote
   located: true
   char_start: 6690
@@ -299,7 +316,8 @@ grounded_spans:
   tokens: 65
   confirmed: 65
   contested: []
-- ref: cw1
+- node: dird-01-metallic-glasses
+  ref: cw1
   kind: cited_work
   located: true
   char_start: 64522
@@ -318,7 +336,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw2
+- node: dird-01-metallic-glasses
+  ref: cw2
   kind: cited_work
   located: true
   char_start: 64643
@@ -337,7 +356,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw3
+- node: dird-01-metallic-glasses
+  ref: cw3
   kind: cited_work
   located: true
   char_start: 64711
@@ -356,7 +376,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw4
+- node: dird-01-metallic-glasses
+  ref: cw4
   kind: cited_work
   located: true
   char_start: 64777
@@ -375,7 +396,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw5
+- node: dird-01-metallic-glasses
+  ref: cw5
   kind: cited_work
   located: true
   char_start: 64842
@@ -394,7 +416,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw6
+- node: dird-01-metallic-glasses
+  ref: cw6
   kind: cited_work
   located: true
   char_start: 64912
@@ -413,7 +436,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw7
+- node: dird-01-metallic-glasses
+  ref: cw7
   kind: cited_work
   located: true
   char_start: 64981
@@ -432,7 +456,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw8
+- node: dird-01-metallic-glasses
+  ref: cw8
   kind: cited_work
   located: true
   char_start: 65069
@@ -451,7 +476,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw9
+- node: dird-01-metallic-glasses
+  ref: cw9
   kind: cited_work
   located: true
   char_start: 65151
@@ -470,7 +496,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw10
+- node: dird-01-metallic-glasses
+  ref: cw10
   kind: cited_work
   located: true
   char_start: 65218
@@ -500,7 +527,8 @@ grounded_spans:
     resolution: '10'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw11
+- node: dird-01-metallic-glasses
+  ref: cw11
   kind: cited_work
   located: true
   char_start: 65294
@@ -519,7 +547,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw12
+- node: dird-01-metallic-glasses
+  ref: cw12
   kind: cited_work
   located: true
   char_start: 65334
@@ -538,7 +567,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw13
+- node: dird-01-metallic-glasses
+  ref: cw13
   kind: cited_work
   located: true
   char_start: 65374
@@ -557,7 +587,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw14
+- node: dird-01-metallic-glasses
+  ref: cw14
   kind: cited_work
   located: true
   char_start: 65469
@@ -576,7 +607,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw15
+- node: dird-01-metallic-glasses
+  ref: cw15
   kind: cited_work
   located: true
   char_start: 65736
@@ -606,7 +638,8 @@ grounded_spans:
     resolution: Lewandowski
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw16
+- node: dird-01-metallic-glasses
+  ref: cw16
   kind: cited_work
   located: true
   char_start: 65810
@@ -625,7 +658,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw17
+- node: dird-01-metallic-glasses
+  ref: cw17
   kind: cited_work
   located: true
   char_start: 65850
@@ -644,7 +678,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw18
+- node: dird-01-metallic-glasses
+  ref: cw18
   kind: cited_work
   located: true
   char_start: 65943
@@ -663,7 +698,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw19
+- node: dird-01-metallic-glasses
+  ref: cw19
   kind: cited_work
   located: true
   char_start: 66006
@@ -682,7 +718,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw20
+- node: dird-01-metallic-glasses
+  ref: cw20
   kind: cited_work
   located: true
   char_start: 66113
@@ -712,7 +749,8 @@ grounded_spans:
     resolution: I
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw21
+- node: dird-01-metallic-glasses
+  ref: cw21
   kind: cited_work
   located: true
   char_start: 66201
@@ -731,7 +769,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw22
+- node: dird-01-metallic-glasses
+  ref: cw22
   kind: cited_work
   located: true
   char_start: 66335
@@ -750,7 +789,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw23
+- node: dird-01-metallic-glasses
+  ref: cw23
   kind: cited_work
   located: true
   char_start: 66401
@@ -769,7 +809,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw24
+- node: dird-01-metallic-glasses
+  ref: cw24
   kind: cited_work
   located: true
   char_start: 66552
@@ -788,7 +829,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw25
+- node: dird-01-metallic-glasses
+  ref: cw25
   kind: cited_work
   located: true
   char_start: 66666
@@ -818,7 +860,8 @@ grounded_spans:
     resolution: in
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw26
+- node: dird-01-metallic-glasses
+  ref: cw26
   kind: cited_work
   located: true
   char_start: 66785
@@ -837,7 +880,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw27
+- node: dird-01-metallic-glasses
+  ref: cw27
   kind: cited_work
   located: true
   char_start: 66881
@@ -867,7 +911,8 @@ grounded_spans:
     resolution: '27'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw28
+- node: dird-01-metallic-glasses
+  ref: cw28
   kind: cited_work
   located: true
   char_start: 66914
@@ -886,7 +931,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw29
+- node: dird-01-metallic-glasses
+  ref: cw29
   kind: cited_work
   located: true
   char_start: 66994
@@ -905,7 +951,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw30
+- node: dird-01-metallic-glasses
+  ref: cw30
   kind: cited_work
   located: true
   char_start: 67072
@@ -924,7 +971,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw31
+- node: dird-01-metallic-glasses
+  ref: cw31
   kind: cited_work
   located: true
   char_start: 67190
@@ -954,7 +1002,8 @@ grounded_spans:
     resolution: '31'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw32
+- node: dird-01-metallic-glasses
+  ref: cw32
   kind: cited_work
   located: true
   char_start: 67308
@@ -973,7 +1022,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw33
+- node: dird-01-metallic-glasses
+  ref: cw33
   kind: cited_work
   located: true
   char_start: 67426
@@ -1014,7 +1064,8 @@ grounded_spans:
     resolution: Charlie
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw34
+- node: dird-01-metallic-glasses
+  ref: cw34
   kind: cited_work
   located: true
   char_start: 67630
@@ -1044,7 +1095,8 @@ grounded_spans:
     resolution: '34'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw35
+- node: dird-01-metallic-glasses
+  ref: cw35
   kind: cited_work
   located: true
   char_start: 67694
@@ -1063,7 +1115,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw36
+- node: dird-01-metallic-glasses
+  ref: cw36
   kind: cited_work
   located: true
   char_start: 67821
@@ -1104,7 +1157,8 @@ grounded_spans:
     resolution: C
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw37
+- node: dird-01-metallic-glasses
+  ref: cw37
   kind: cited_work
   located: true
   char_start: 67931
@@ -1123,7 +1177,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw38
+- node: dird-01-metallic-glasses
+  ref: cw38
   kind: cited_work
   located: true
   char_start: 68038
@@ -1142,7 +1197,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw39
+- node: dird-01-metallic-glasses
+  ref: cw39
   kind: cited_work
   located: true
   char_start: 68173
@@ -1161,7 +1217,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw40
+- node: dird-01-metallic-glasses
+  ref: cw40
   kind: cited_work
   located: true
   char_start: 68836
@@ -1191,7 +1248,8 @@ grounded_spans:
     resolution: '40'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw41
+- node: dird-01-metallic-glasses
+  ref: cw41
   kind: cited_work
   located: true
   char_start: 68953
@@ -1221,7 +1279,8 @@ grounded_spans:
     resolution: '41'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw42
+- node: dird-01-metallic-glasses
+  ref: cw42
   kind: cited_work
   located: true
   char_start: 69040
@@ -1240,7 +1299,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw43
+- node: dird-01-metallic-glasses
+  ref: cw43
   kind: cited_work
   located: true
   char_start: 69131
@@ -1259,7 +1319,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw44
+- node: dird-01-metallic-glasses
+  ref: cw44
   kind: cited_work
   located: true
   char_start: 69184
@@ -1289,7 +1350,8 @@ grounded_spans:
     resolution: '44'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw45
+- node: dird-01-metallic-glasses
+  ref: cw45
   kind: cited_work
   located: true
   char_start: 69275
@@ -1330,7 +1392,8 @@ grounded_spans:
     resolution: .
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw46
+- node: dird-01-metallic-glasses
+  ref: cw46
   kind: cited_work
   located: true
   char_start: 69352
@@ -1349,7 +1412,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw47
+- node: dird-01-metallic-glasses
+  ref: cw47
   kind: cited_work
   located: true
   char_start: 69429
@@ -1368,7 +1432,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw48
+- node: dird-01-metallic-glasses
+  ref: cw48
   kind: cited_work
   located: true
   char_start: 69524
@@ -1387,7 +1452,8 @@ grounded_spans:
     resolution: ^
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — every contested token confirmed sibling-faithful against the page images (Admin Note p.3; Fracture & Fatigue p.23; Structural Applications p.24; References pp.30-31). Markup/typography markers (^N superscript endnote markers, FOIA redaction brackets, in-reference punctuation) faithfully encode the source per the preserved-marker convention; word/number tokens (Bldg; Lewandowski; Charlie; I./C./Y. initials; sequential reference numbers) are sibling-correct against OCR misreads. Sibling fidelity corrected first: source typo ''Rammamurty'' [sic] restored at refs ^14/^23/^33 (nq4), and a spurious inserted middot removed (q13 ''170 MPa m^1/2'').'
-- ref: cw49
+- node: dird-01-metallic-glasses
+  ref: cw49
   kind: cited_work
   located: true
   char_start: 69591

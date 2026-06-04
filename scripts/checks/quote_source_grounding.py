@@ -43,6 +43,7 @@ gate-flip step. Non-OCR-scan sources are skipped entirely.
 """
 
 import hashlib
+from pathlib import Path
 
 import yaml
 
@@ -91,10 +92,10 @@ def _load_record(rel):
         return None, f"quote-grounding record {record_path.name} for sources/{rel} is unreadable: {e}"
     if not isinstance(rec, dict):
         return None, f"quote-grounding record {record_path.name} for sources/{rel} is not a mapping"
-    if rec.get("schema") != "quote-grounding/v1":
+    if rec.get("schema") != "quote-grounding/v2":
         return None, (f"quote-grounding record {record_path.name} for sources/{rel} "
                       f"has unexpected schema {rec.get('schema')!r} (want "
-                      f"'quote-grounding/v1') — regenerate with `ocr-consensus.py ground`.")
+                      f"'quote-grounding/v2') — regenerate with `ocr-consensus.py ground`.")
 
     recorded = rec.get("sibling_sha256")
     if not recorded:
@@ -108,9 +109,14 @@ def _load_record(rel):
                       f"since grounding (sha256 != recorded) — the confirmed spans no "
                       f"longer match the sibling; re-run `ocr-consensus.py ground`.")
 
-    spans_by_ref = {gs.get("ref"): gs for gs in (rec.get("grounded_spans") or [])
+    # Namespaced by (node, ref): one record aggregates every node citing this
+    # source, and two nodes' identically-numbered ids (both "q4") are distinct
+    # keys — so a node's quote can never be silently confirmed against a
+    # different node's span.
+    spans_by_key = {(gs.get("node"), gs.get("ref")): gs
+                    for gs in (rec.get("grounded_spans") or [])
                     if isinstance(gs, dict)}
-    return spans_by_ref, None
+    return spans_by_key, None
 
 
 def check(ctx):
@@ -128,8 +134,11 @@ def check(ctx):
         return
 
     ext_types = _load_extraction_types()
-    cache = {}        # rel -> (spans_by_ref, source_error)
+    cache = {}        # rel -> (spans_by_key, source_error)
     reported_source = set()
+    # This artifact's node slug — the namespace its spans live under in the
+    # per-source record (matches ocr-consensus.py's `artifact.stem`).
+    node_slug = Path(str(ctx.rel)).stem
 
     for obj, kind in items:
         src = obj.get("source")
@@ -141,7 +150,7 @@ def check(ctx):
 
         if rel not in cache:
             cache[rel] = _load_record(rel)
-        spans_by_ref, source_error = cache[rel]
+        spans_by_key, source_error = cache[rel]
         if source_error:
             if rel not in reported_source:    # one per source
                 reported_source.add(rel)
@@ -149,12 +158,13 @@ def check(ctx):
             continue
 
         ref = obj.get("id")
-        gs = spans_by_ref.get(ref)
+        gs = spans_by_key.get((node_slug, ref))
         if gs is None:
             yield Issue(
                 ctx.rel, SEVERITY,
-                f"{kind} {ref!r} cites OCR-scan source sources/{rel} but is not in "
-                f"the quote-grounding record — re-run `ocr-consensus.py ground`.",
+                f"{kind} {ref!r} cites OCR-scan source sources/{rel} but is not "
+                f"grounded for node {node_slug!r} in the quote-grounding record — "
+                f"re-run `ocr-consensus.py ground` on this artifact.",
                 check_name=CHECK_NAME)
             continue
         if not gs.get("located"):

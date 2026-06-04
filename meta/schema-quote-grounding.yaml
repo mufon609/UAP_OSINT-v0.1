@@ -28,14 +28,21 @@
 # OCR engine would rubber-stamp its errors. Backfill therefore regenerates each
 # sibling as a VLM page-image read (ocr-consensus.py run --vlm) before grounding.
 
-schema_version: quote-grounding/v1
+schema_version: quote-grounding/v2
 
 # Record lives beside the source: sources/{category}/{stem}-quote-grounding.yaml
 # One record per OCR-scan source PDF; aggregates the grounded spans of every
-# node that quotes/cites it.
+# node that quotes/cites it. Each span is namespaced by `node` (the citing
+# artifact's slug), so two nodes that quote the same source with identically-
+# numbered ids (both "q4") never collide. `ocr-consensus.py ground <artifact>`
+# MERGES: it replaces only the run node's spans and preserves the others — so a
+# source cited by several nodes is grounded by running `ground` on each, in any
+# order, without one run wiping another's spans. The gate looks up each quote by
+# (node, ref). (v1 — bare-ref keys, single node per record — is superseded:
+# re-run `ground` to migrate.)
 
 required_top_level_keys:
-  - schema             # "quote-grounding/v1"
+  - schema             # "quote-grounding/v2"
   - source_pdf         # rel-to-sources path of the parent OCR-scan PDF
   - sibling_txt        # rel-to-sources path of the clean-text .txt sibling (the grab)
   - sibling_sha256     # sha256 of the sibling bytes at grounding time (tamper/staleness binding)
@@ -50,10 +57,11 @@ confirming_engines:
   required: [tesseract, paddleocr]
   entry_fields: [name]   # version optional
 
-# Grounded-span record — one per quote or cited_work that cites this source.
+# Grounded-span record — one per (node, quote/cited_work) that cites this source.
 grounded_span:
   required_fields:
-    - ref        # the quote/cited_work id (q4, cw9, …)
+    - node       # citing artifact slug (e.g. dird-01-metallic-glasses) — the namespace
+    - ref        # the quote/cited_work id (q4, cw9, …), unique within its node
     - kind       # quote | cited_work
     - located    # bool — was the verbatim text found in the sibling?
   located_true_fields:   # present when located == true
@@ -88,7 +96,8 @@ contested_token:
 # Gate (quote_source_grounding.py) PASS conditions for a quote/cited_work citing
 # an OCR-scan source:
 #   1. a {stem}-quote-grounding.yaml exists and sibling_sha256 == sha256(sibling);
-#   2. the ref appears in grounded_spans with located == true;
+#   2. a (node, ref) span for the citing artifact appears in grounded_spans with
+#      located == true;
 #   3. every contested token has a non-null resolution (image-adjudicated);
 #   4. each resolution equals the sibling token (the image confirms the grab) —
 #      a mismatch is an error (the sibling is wrong; fix it, don't ground it).

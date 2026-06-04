@@ -757,11 +757,39 @@ def collect_ocr_spans(data, ext_types):
     return spans
 
 
+def _partition_prior_spans(old, node_slug):
+    """From an existing grounding record `old`, split its grounded_spans for a
+    re-ground of `node_slug`:
+
+      - ``other_spans`` — spans belonging to a DIFFERENT node; preserved verbatim
+        so a record that aggregates several citing nodes isn't clobbered when one
+        node is re-grounded (the shared-source merge).
+      - ``prior`` — ``{(ref, char_start): (resolution, method, session)}`` for THIS
+        node's spans (and for untagged legacy v1 spans, which were single-node by
+        construction), so image-adjudications carry across the re-ground.
+
+    Other nodes' adjudications stay intact because their whole span entries are
+    preserved in ``other_spans`` — they are never rebuilt, so never re-keyed.
+    """
+    prior, other = {}, []
+    for gs in (old.get("grounded_spans") or []):
+        g_node = gs.get("node")
+        if g_node is not None and g_node != node_slug:
+            other.append(gs)
+            continue
+        for c in (gs.get("contested") or []):
+            prior[(gs.get("ref"), c.get("char_start"))] = (
+                c.get("resolution"), c.get("resolution_method"),
+                c.get("adjudicator_session"))
+    return prior, other
+
+
 def cmd_ground(args):
     sys.path.insert(0, str(_REPO_ROOT / "scripts"))
     from lib._common import _load_extraction_types  # noqa: PLC0415
 
     artifact = Path(args.artifact)
+    node_slug = artifact.stem  # spans are namespaced by node so two nodes' ids don't collide
     data = yaml.safe_load(artifact.read_text(encoding="utf-8"))
     spans_by_source = collect_ocr_spans(data, _load_extraction_types())
     if not spans_by_source:
@@ -790,15 +818,17 @@ def cmd_ground(args):
         # cross-check. contested = sibling tokens corroborated by neither engine.
         _, contested, _ = build_consensus(sib_text, tess, paddle)
 
-        # Carry over prior adjudications on re-run (keyed by ref + char_start).
-        prior = {}
+        # Merge semantics: one record aggregates every node that cites this
+        # source. Re-grounding a node replaces only THAT node's spans and
+        # preserves the others (spans are namespaced by `node` so two nodes'
+        # identically-numbered ids — both "q4" — never collide). Carry prior
+        # adjudications for THIS node by (ref, char_start); a span with no
+        # `node` (legacy v1 record, single-node by construction) is treated as
+        # this node's prior, not another node's, so v1 -> v2 migrates in place.
+        prior, other_spans = {}, []
         if record_path.exists():
             old = yaml.safe_load(record_path.read_text(encoding="utf-8")) or {}
-            for gs in old.get("grounded_spans", []) or []:
-                for c in gs.get("contested", []) or []:
-                    prior[(gs.get("ref"), c.get("char_start"))] = (
-                        c.get("resolution"), c.get("resolution_method"),
-                        c.get("adjudicator_session"))
+            prior, other_spans = _partition_prior_spans(old, node_slug)
 
         collapsed, idxmap = _collapsed_index_map(sib_text)
         sib_tokens = tokenize(sib_text)
@@ -807,7 +837,8 @@ def cmd_ground(args):
             loc = locate_span(collapsed, idxmap, txt)
             if loc is None:
                 unlocated += 1
-                grounded.append({"ref": ref, "kind": kind, "located": False,
+                grounded.append({"node": node_slug, "ref": ref, "kind": kind,
+                                 "located": False,
                                  "note": "verbatim text not found in sibling — "
                                          "re-check the quote/citation"})
                 print(f"   ! {ref}: NOT located in sibling")
@@ -836,7 +867,7 @@ def cmd_ground(args):
                     })
             total_contested += len(cin)
             grounded.append({
-                "ref": ref, "kind": kind, "located": True,
+                "node": node_slug, "ref": ref, "kind": kind, "located": True,
                 "char_start": qs, "char_end": qe,
                 "tokens": n_tokens, "confirmed": n_tokens - len(cin),
                 "contested": cin,
@@ -845,7 +876,7 @@ def cmd_ground(args):
                   f"{'OK' if not cin else str(len(cin)) + ' contested'}")
 
         record = {
-            "schema": "quote-grounding/v1",
+            "schema": "quote-grounding/v2",
             "source_pdf": rel,
             "sibling_txt": str(sibling.relative_to(SOURCES_DIR)),
             "sibling_sha256": sha256_file(sibling),
@@ -854,7 +885,7 @@ def cmd_ground(args):
                 {"name": "tesseract", "version": tesseract_version()},
                 {"name": "paddleocr", "version": paddleocr_version()},
             ],
-            "grounded_spans": grounded,
+            "grounded_spans": other_spans + grounded,
         }
         write_yaml(record_path, record)
         print(f"   -> {record_path}")

@@ -1,15 +1,16 @@
-schema: quote-grounding/v1
+schema: quote-grounding/v2
 source_pdf: government/dird-02-programmable-matter-20091214.pdf
 sibling_txt: government/dird-02-programmable-matter-20091214.txt
 sibling_sha256: 5bbbace7590feed7fca060e2e698ef4a87daf79aee8de747d75354b1ad8b332f
-generated: '2026-06-03'
+generated: '2026-06-04'
 confirming_engines:
 - name: tesseract
   version: 5.5.0
 - name: paddleocr
   version: 3.6.0
 grounded_spans:
-- ref: q1
+- node: dird-02-programmable-matter
+  ref: q1
   kind: quote
   located: true
   char_start: 214
@@ -17,7 +18,8 @@ grounded_spans:
   tokens: 5
   confirmed: 5
   contested: []
-- ref: q2
+- node: dird-02-programmable-matter
+  ref: q2
   kind: quote
   located: true
   char_start: 67
@@ -25,7 +27,8 @@ grounded_spans:
   tokens: 4
   confirmed: 4
   contested: []
-- ref: q3
+- node: dird-02-programmable-matter
+  ref: q3
   kind: quote
   located: true
   char_start: 158
@@ -33,7 +36,8 @@ grounded_spans:
   tokens: 15
   confirmed: 15
   contested: []
-- ref: q4
+- node: dird-02-programmable-matter
+  ref: q4
   kind: quote
   located: true
   char_start: 863
@@ -85,7 +89,8 @@ grounded_spans:
     resolution: ']'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — q4/q6 FOIA redaction brackets confirmed against the page-3 image (redaction boxes with exemption codes (b)(3):10 USC 424 / (b)(6) printed inside, verified). Sibling normalized first: descriptive redaction prose (''[box containing redaction marker:]'' / ''[boxed redaction: ...]'') replaced with the dird-01 ''[(code)]'' convention, removing injected non-source text from quoted spans.'
-- ref: q5
+- node: dird-02-programmable-matter
+  ref: q5
   kind: quote
   located: true
   char_start: 965
@@ -93,7 +98,8 @@ grounded_spans:
   tokens: 15
   confirmed: 15
   contested: []
-- ref: q6
+- node: dird-02-programmable-matter
+  ref: q6
   kind: quote
   located: true
   char_start: 1065
@@ -167,7 +173,8 @@ grounded_spans:
     resolution: ']'
     resolution_method: image-adjudication
     adjudicator_session: '2026-06-03 image adjudication — q4/q6 FOIA redaction brackets confirmed against the page-3 image (redaction boxes with exemption codes (b)(3):10 USC 424 / (b)(6) printed inside, verified). Sibling normalized first: descriptive redaction prose (''[box containing redaction marker:]'' / ''[boxed redaction: ...]'') replaced with the dird-01 ''[(code)]'' convention, removing injected non-source text from quoted spans.'
-- ref: q7
+- node: dird-02-programmable-matter
+  ref: q7
   kind: quote
   located: true
   char_start: 4988
@@ -175,7 +182,8 @@ grounded_spans:
   tokens: 40
   confirmed: 40
   contested: []
-- ref: q8
+- node: dird-02-programmable-matter
+  ref: q8
   kind: quote
   located: true
   char_start: 5214
@@ -183,7 +191,8 @@ grounded_spans:
   tokens: 44
   confirmed: 44
   contested: []
-- ref: q9
+- node: dird-02-programmable-matter
+  ref: q9
   kind: quote
   located: true
   char_start: 5492
@@ -191,7 +200,8 @@ grounded_spans:
   tokens: 69
   confirmed: 69
   contested: []
-- ref: q10
+- node: dird-02-programmable-matter
+  ref: q10
   kind: quote
   located: true
   char_start: 12626
@@ -199,7 +209,8 @@ grounded_spans:
   tokens: 64
   confirmed: 64
   contested: []
-- ref: q11
+- node: dird-02-programmable-matter
+  ref: q11
   kind: quote
   located: true
   char_start: 20975
@@ -207,7 +218,8 @@ grounded_spans:
   tokens: 63
   confirmed: 63
   contested: []
-- ref: q12
+- node: dird-02-programmable-matter
+  ref: q12
   kind: quote
   located: true
   char_start: 22333
@@ -215,7 +227,8 @@ grounded_spans:
   tokens: 51
   confirmed: 51
   contested: []
-- ref: q13
+- node: dird-02-programmable-matter
+  ref: q13
   kind: quote
   located: true
   char_start: 37948
@@ -223,7 +236,8 @@ grounded_spans:
   tokens: 56
   confirmed: 56
   contested: []
-- ref: q14
+- node: dird-02-programmable-matter
+  ref: q14
   kind: quote
   located: true
   char_start: 42142
@@ -231,7 +245,8 @@ grounded_spans:
   tokens: 30
   confirmed: 30
   contested: []
-- ref: q15
+- node: dird-02-programmable-matter
+  ref: q15
   kind: quote
   located: true
   char_start: 46992
@@ -239,7 +254,8 @@ grounded_spans:
   tokens: 50
   confirmed: 50
   contested: []
-- ref: q16
+- node: dird-02-programmable-matter
+  ref: q16
   kind: quote
   located: true
   char_start: 48940
@@ -247,7 +263,8 @@ grounded_spans:
   tokens: 71
   confirmed: 71
   contested: []
-- ref: q17
+- node: dird-02-programmable-matter
+  ref: q17
   kind: quote
   located: true
   char_start: 50850
@@ -255,7 +272,8 @@ grounded_spans:
   tokens: 75
   confirmed: 75
   contested: []
-- ref: cw1
+- node: dird-02-programmable-matter
+  ref: cw1
   kind: cited_work
   located: true
   char_start: 51292
@@ -263,7 +281,8 @@ grounded_spans:
   tokens: 13
   confirmed: 13
   contested: []
-- ref: cw2
+- node: dird-02-programmable-matter
+  ref: cw2
   kind: cited_work
   located: true
   char_start: 51323
@@ -271,7 +290,8 @@ grounded_spans:
   tokens: 14
   confirmed: 14
   contested: []
-- ref: cw3
+- node: dird-02-programmable-matter
+  ref: cw3
   kind: cited_work
   located: true
   char_start: 51381
@@ -279,7 +299,8 @@ grounded_spans:
   tokens: 15
   confirmed: 15
   contested: []
-- ref: cw4
+- node: dird-02-programmable-matter
+  ref: cw4
   kind: cited_work
   located: true
   char_start: 51447
@@ -287,7 +308,8 @@ grounded_spans:
   tokens: 19
   confirmed: 19
   contested: []
-- ref: cw5
+- node: dird-02-programmable-matter
+  ref: cw5
   kind: cited_work
   located: true
   char_start: 51519
@@ -295,7 +317,8 @@ grounded_spans:
   tokens: 42
   confirmed: 42
   contested: []
-- ref: cw6
+- node: dird-02-programmable-matter
+  ref: cw6
   kind: cited_work
   located: true
   char_start: 51688
@@ -303,7 +326,8 @@ grounded_spans:
   tokens: 13
   confirmed: 13
   contested: []
-- ref: cw7
+- node: dird-02-programmable-matter
+  ref: cw7
   kind: cited_work
   located: true
   char_start: 51749
@@ -311,7 +335,8 @@ grounded_spans:
   tokens: 37
   confirmed: 37
   contested: []
-- ref: cw8
+- node: dird-02-programmable-matter
+  ref: cw8
   kind: cited_work
   located: true
   char_start: 51880
@@ -319,7 +344,8 @@ grounded_spans:
   tokens: 21
   confirmed: 21
   contested: []
-- ref: cw9
+- node: dird-02-programmable-matter
+  ref: cw9
   kind: cited_work
   located: true
   char_start: 51952
