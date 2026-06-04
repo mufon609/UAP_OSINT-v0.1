@@ -13,13 +13,16 @@ that single point of failure with **three uncorrelated votes** per token:
     B = PaddleOCR            (deep-learning OCR; DIFFERENT architecture)
     C = VLM page-image read  (agent, high-abstraction; different MODALITY)
 
-A token is accepted (CONSENSUS) only when **≥2 of the 3 votes agree**. Any token
-the votes disagree on is flagged CONTESTED and must be adjudicated against the
-page image — and that adjudication is recorded in a durable
-``{stem}-ocr-verification.yaml`` (the audit trail validate-ocr-sibling.py gates
-on). Because the three engines have uncorrelated failure modes, the lone wrong
-read in each DIRD-16 case loses the vote and is flagged rather than silently
-kept. See meta/conventions.md "Producing the `.txt` sibling".
+A token is accepted (CONSENSUS) only when **≥2 of the 3 votes agree**. Because the
+three engines have uncorrelated failure modes, the lone wrong read in each DIRD-16
+case loses the vote and is flagged rather than silently kept. See
+meta/conventions.md "Producing the `.txt` sibling".
+
+`run` PRODUCES the sibling (the VLM base is its readable spine). VERIFICATION is
+now **quote-scoped** (`ground`, below) — the whole-document gate
+(validate-ocr-sibling.py) and its record (`{stem}-ocr-verification.yaml`) were
+retired (BACKLOG C1): whole-document token consensus drowns the signal in
+non-prose furniture, so the gate confirms only the spans a node quotes/cites.
 
 The VLM transcription is the readable BASE of the sibling (best paragraph
 structure); Tesseract + PaddleOCR are the cross-check that corroborates each
@@ -35,9 +38,19 @@ Subcommands:
   assemble   After contested spans are adjudicated (resolutions filled in the
              YAML), splice the resolutions into the sibling and stamp its
              sha256 into the YAML. Idempotent.
+  ground     Quote-scoped grounding (the verification model that supersedes
+             whole-document consensus for the gate — BACKLOG C1): for a research
+             artifact, OCR each cited OCR-scan source, align to its `.txt`
+             sibling, and confirm ONLY the spans the node quotes/cites
+             (furniture is never quoted -> never adjudicated). Emits
+             {stem}-quote-grounding.yaml; gated by quote_source_grounding.py.
   engines    Report which engines are available (diagnostic).
   --selftest Run the alignment/consensus logic on synthetic inputs (no OCR
              engines needed) — exercised by scripts/tests/.
+
+The `run`/`assemble` whole-document path still produces the VLM-base sibling; the
+gate now grounds per quoted/cited span (`ground`) rather than requiring the whole
+sibling to be consensus-clean.
 
 PaddleOCR lives in a project-local venv at .venv-ocr/ (run
 scripts/tools/setup-ocr-consensus.sh once). This tool auto-relaunches under that
@@ -246,10 +259,11 @@ def build_consensus(vlm_text, tess_text, paddle_text):
 # A contiguous run of OCR-corroborated tokens absent from the VLM base, anchored
 # at a single spine point this large, signals a whole paragraph/page the VLM
 # transcription dropped. possible_omissions is advisory and never splices into
-# the sibling, so without this the dropped region ships silently — and neither
-# validate-ocr-sibling nor quote_source_grounding check completeness (only the
-# whole-sibling sha256 + contested finalization). This promotes the largest such
-# run to a visible coverage_warning.
+# the sibling, so without this the dropped region ships silently — and the
+# quote-scoped grounding gate confirms only quoted spans, never whole-sibling
+# completeness. This promotes the largest such run to a visible coverage_warning
+# at production time (a quote drawn from a dropped region would fail to locate in
+# `ground`, but the warning surfaces the gap earlier).
 MAX_OMISSION_RUN = 40
 
 
@@ -654,6 +668,201 @@ def cmd_selftest(_args):
     return 0
 
 
+# ---------------------------------------------------------------------------
+# Quote-scoped grounding — the quote-scoped verification model (BACKLOG C1).
+#
+# Whole-document consensus drowns the signal in furniture noise. The fidelity
+# guarantee that matters is per-LOAD-BEARING-SPAN: confirm only the spans a node
+# quotes or cites. The `.txt` sibling is the authoritative grab (the spine);
+# Tesseract + PaddleOCR cross-check it; a quoted/cited span is grounded when
+# every token agrees with >=1 OCR engine or is image-adjudicated. Furniture is
+# never quoted -> never confirmed. Record: {stem}-quote-grounding.yaml
+# (meta/schema-quote-grounding.yaml). Gate: scripts/checks/quote_source_grounding.py.
+# ---------------------------------------------------------------------------
+_OCR_TYPES = {"ocr-scan", "extraction-lossy"}
+
+
+def _norm_for_locate(s):
+    return (s.replace("“", '"').replace("”", '"')
+             .replace("‘", "'").replace("’", "'")
+             .replace("—", "-").replace("–", "-"))
+
+
+def _collapsed_index_map(text):
+    """Whitespace-collapsed, quote/dash-normalized view of `text` plus a map from
+    each collapsed-char index back to the original char offset — so a span
+    located in the normalized view is reported in original sibling coordinates
+    (the coordinate system the contested spans use). Whitespace after a hyphen is
+    dropped (a PDF line-wrap `quant-\\nph` joins to `quant-ph`), mirroring
+    lib._common.normalize_for_compare's ``-\\s+`` -> ``-`` so a reflowed citation
+    still locates."""
+    t = _norm_for_locate(text)
+    out, idxmap, prev_ws = [], [], False
+    for i, ch in enumerate(t):
+        if ch.isspace():
+            if out and out[-1] == "-":
+                continue  # hyphen line-wrap: join, drop the whitespace
+            if not prev_ws:
+                out.append(" "); idxmap.append(i); prev_ws = True
+        else:
+            out.append(ch); idxmap.append(i); prev_ws = False
+    return "".join(out), idxmap
+
+
+def _collapse_query(quote):
+    """Normalize a quote/citation the same way as _collapsed_index_map (quote/
+    dash fold, hyphen line-wrap join, whitespace collapse) so it matches."""
+    q = re.sub(r"-\s+", "-", _norm_for_locate(quote))
+    return re.sub(r"\s+", " ", q).strip()
+
+
+def locate_span(collapsed, idxmap, quote):
+    """Return (char_start, char_end) of `quote` in the original text, or None.
+    Exact normalized-substring first; head+tail fuzzy fallback for a quote that
+    crosses page furniture (a running banner spliced mid-paragraph)."""
+    q = _collapse_query(quote)
+    if not q:
+        return None
+    j = collapsed.find(q)
+    if j >= 0:
+        return idxmap[j], idxmap[j + len(q) - 1] + 1
+    head, tail = q[:25], q[-25:]
+    a = collapsed.find(head)
+    if a < 0:
+        return None
+    b = collapsed.find(tail, a)
+    if b < 0:
+        return None
+    return idxmap[a], idxmap[b + len(tail) - 1] + 1
+
+
+def collect_ocr_spans(data, ext_types):
+    """Map OCR-scan source path -> [(ref_id, kind, verbatim_text)] for every
+    quote and cited_work that cites it."""
+    spans = {}
+    for q in (data.get("quotes") or []):
+        if not isinstance(q, dict):
+            continue
+        rel = (q.get("source") or {}).get("path")
+        txt = q.get("text") or q.get("verbatim")
+        if rel and txt and ext_types.get(rel) in _OCR_TYPES:
+            spans.setdefault(rel, []).append((q.get("id"), "quote", txt))
+    for cw in (data.get("cited_works") or []):
+        if not isinstance(cw, dict):
+            continue
+        rel = (cw.get("source") or {}).get("path")
+        txt = cw.get("citation_verbatim")
+        if rel and txt and ext_types.get(rel) in _OCR_TYPES:
+            spans.setdefault(rel, []).append((cw.get("id"), "cited_work", txt))
+    return spans
+
+
+def cmd_ground(args):
+    sys.path.insert(0, str(_REPO_ROOT / "scripts"))
+    from lib._common import _load_extraction_types  # noqa: PLC0415
+
+    artifact = Path(args.artifact)
+    data = yaml.safe_load(artifact.read_text(encoding="utf-8"))
+    spans_by_source = collect_ocr_spans(data, _load_extraction_types())
+    if not spans_by_source:
+        print("no quotes/cited_works cite an OCR-scan source — nothing to ground.")
+        return
+
+    for rel, spans in spans_by_source.items():
+        pdf = SOURCES_DIR / rel
+        sibling = pdf.with_suffix(".txt")
+        stem = pdf.with_suffix("").name
+        record_path = pdf.parent / f"{stem}-quote-grounding.yaml"
+        if not pdf.exists():
+            raise SystemExit(f"source PDF not found: {pdf}")
+        if not sibling.exists():
+            raise SystemExit(
+                f"no .txt sibling for {rel} — produce it first "
+                f"(ocr-consensus.py run --vlm ...).")
+        sib_text = sibling.read_text(encoding="utf-8")
+
+        print(f"[{rel}] {len(spans)} span(s) — rasterize + OCR cross-check ...")
+        with tempfile.TemporaryDirectory(prefix=f"ground-{stem}-") as tmp:
+            images = rasterize(pdf, tmp, args.dpi)
+            tess = run_tesseract(images)
+            paddle = run_paddleocr(images)
+        # The sibling is the authoritative grab (spine); the 2 OCR engines
+        # cross-check. contested = sibling tokens corroborated by neither engine.
+        _, contested, _ = build_consensus(sib_text, tess, paddle)
+
+        # Carry over prior adjudications on re-run (keyed by ref + char_start).
+        prior = {}
+        if record_path.exists():
+            old = yaml.safe_load(record_path.read_text(encoding="utf-8")) or {}
+            for gs in old.get("grounded_spans", []) or []:
+                for c in gs.get("contested", []) or []:
+                    prior[(gs.get("ref"), c.get("char_start"))] = (
+                        c.get("resolution"), c.get("resolution_method"),
+                        c.get("adjudicator_session"))
+
+        collapsed, idxmap = _collapsed_index_map(sib_text)
+        sib_tokens = tokenize(sib_text)
+        grounded, total_contested, unlocated = [], 0, 0
+        for ref, kind, txt in spans:
+            loc = locate_span(collapsed, idxmap, txt)
+            if loc is None:
+                unlocated += 1
+                grounded.append({"ref": ref, "kind": kind, "located": False,
+                                 "note": "verbatim text not found in sibling — "
+                                         "re-check the quote/citation"})
+                print(f"   ! {ref}: NOT located in sibling")
+                continue
+            qs, qe = loc
+            n_tokens = sum(1 for (_s, cs, _ce) in sib_tokens if qs <= cs < qe)
+            cin = []
+            for c in contested:
+                if not (c["char_end"] <= qs or c["char_start"] >= qe):
+                    res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
+                    cin.append({
+                        "token_index": c["token_index"],
+                        "char_start": c["char_start"],
+                        "char_end": c["char_end"],
+                        "line": c["line"],
+                        "context": c["context"],
+                        "sibling": c["candidates"]["vlm"],
+                        "tesseract": c["candidates"]["tesseract"],
+                        "paddleocr": c["candidates"]["paddleocr"],
+                        "resolution": res,
+                        "resolution_method": meth,
+                        "adjudicator_session": sess,
+                    })
+            total_contested += len(cin)
+            grounded.append({
+                "ref": ref, "kind": kind, "located": True,
+                "char_start": qs, "char_end": qe,
+                "tokens": n_tokens, "confirmed": n_tokens - len(cin),
+                "contested": cin,
+            })
+            print(f"   - {ref} ({kind}): {n_tokens} tokens, "
+                  f"{'OK' if not cin else str(len(cin)) + ' contested'}")
+
+        record = {
+            "schema": "quote-grounding/v1",
+            "source_pdf": rel,
+            "sibling_txt": str(sibling.relative_to(SOURCES_DIR)),
+            "sibling_sha256": sha256_file(sibling),
+            "generated": args.date,
+            "confirming_engines": [
+                {"name": "tesseract", "version": tesseract_version()},
+                {"name": "paddleocr", "version": paddleocr_version()},
+            ],
+            "grounded_spans": grounded,
+        }
+        write_yaml(record_path, record)
+        print(f"   -> {record_path}")
+        print(f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
+              f"{total_contested} contested token(s) to adjudicate"
+              + ("" if not total_contested else
+                 " (read the page image at each, fill `resolution` = what the "
+                 "image shows + resolution_method: image-adjudication + "
+                 "adjudicator_session)."))
+
+
 def main():
     ap = argparse.ArgumentParser(
         description="Multi-engine OCR consensus for trustworthy clean-text siblings.")
@@ -678,6 +887,15 @@ def main():
 
     p_eng = sub.add_parser("engines", help="report engine availability")
     p_eng.set_defaults(func=cmd_engines)
+
+    p_grd = sub.add_parser(
+        "ground",
+        help="quote-scoped grounding: confirm a node's quoted/cited spans of an "
+             "OCR-scan source against the OCR engines -> {stem}-quote-grounding.yaml")
+    p_grd.add_argument("artifact", help="research artifact (meta/research/{node}.yaml)")
+    p_grd.add_argument("--dpi", type=int, default=300)
+    p_grd.add_argument("--date", default=None, help="YYYY-MM-DD for the grounding record")
+    p_grd.set_defaults(func=cmd_ground)
 
     args = ap.parse_args()
     if args.selftest:

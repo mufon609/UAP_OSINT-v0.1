@@ -1,0 +1,98 @@
+# schema-quote-grounding.yaml — the quote-scoped OCR-grounding record spec.
+#
+# Drives scripts/checks/quote_source_grounding.py (the gate) and is produced by
+# `scripts/tools/ocr-consensus.py ground <artifact>`.
+#
+# WHY this exists (supersedes the whole-document schema-ocr-verification.yaml):
+# an OCR-scan PDF is quoted against a clean-text `.txt` sibling. Whole-document
+# token-by-token consensus on a banner/figure-heavy government PDF produces ~1000
+# CONTESTED spans, ~99% of them non-prose furniture (running classification
+# banners, figure-diagram interiors, TOC dot-leaders) that no quote ever draws
+# from — un-adjudicatable noise (the DIRD-16 pilot: 1067 contested, 0 of them
+# inside any of the 21 node quotes). The fidelity guarantee that actually matters
+# is per-LOAD-BEARING-SPAN: every span a node quotes or cites must rest on two
+# uncorrelated reads.
+#
+# THE MODEL. The `.txt` sibling is the primary "grab" (ideally an uncorrelated
+# VLM page-image read — a different modality from OCR, so an OCR engine's
+# char-confusion can't be silently reproduced by the grab). A second engine pass
+# (Tesseract + PaddleOCR) confirms ONLY the spans the node quotes/cites: every
+# token of a grounded span must agree with >=1 OCR engine (>=2-of-3 with the
+# sibling), or be image-adjudicated. Furniture is never quoted -> never confirmed
+# -> never adjudicated. cited_works are in scope (they are load-bearing verbatim
+# citations and inherited the same OCR garble — DIRD-16 cw2/cw8/.../cw24).
+#
+# TRUST PREREQUISITE. The guarantee holds only if the sibling (grab) is
+# UNCORRELATED with the confirming OCR engines. A sibling produced by OCR (the
+# retired Tesseract-then-correct process) shares Tesseract's failure mode, so an
+# OCR engine would rubber-stamp its errors. Backfill therefore regenerates each
+# sibling as a VLM page-image read (ocr-consensus.py run --vlm) before grounding.
+
+schema_version: quote-grounding/v1
+
+# Record lives beside the source: sources/{category}/{stem}-quote-grounding.yaml
+# One record per OCR-scan source PDF; aggregates the grounded spans of every
+# node that quotes/cites it.
+
+required_top_level_keys:
+  - schema             # "quote-grounding/v1"
+  - source_pdf         # rel-to-sources path of the parent OCR-scan PDF
+  - sibling_txt        # rel-to-sources path of the clean-text .txt sibling (the grab)
+  - sibling_sha256     # sha256 of the sibling bytes at grounding time (tamper/staleness binding)
+  - generated          # YYYY-MM-DD
+  - confirming_engines # the OCR engines that cross-checked the grabbed spans
+  - grounded_spans     # one entry per quote / cited_work span (may be empty)
+
+# Confirming engines — the >=2 uncorrelated OCR reads that corroborate each
+# grabbed token. BOTH hard-required (a span token confirmed by either clears the
+# >=2-of-3 floor with the sibling as the third read).
+confirming_engines:
+  required: [tesseract, paddleocr]
+  entry_fields: [name]   # version optional
+
+# Grounded-span record — one per quote or cited_work that cites this source.
+grounded_span:
+  required_fields:
+    - ref        # the quote/cited_work id (q4, cw9, …)
+    - kind       # quote | cited_work
+    - located    # bool — was the verbatim text found in the sibling?
+  located_true_fields:   # present when located == true
+    - char_start # span start in the sibling (char offset)
+    - char_end
+    - tokens     # token count in the span
+    - confirmed  # tokens that agreed with >=1 OCR engine
+    - contested  # list of token-level disagreements (may be empty)
+  kind_values: [quote, cited_work]
+
+# Contested-token record — a grabbed token the OCR engines did NOT corroborate.
+# Image-adjudicated: the adjudicator reads the page image and records what it
+# shows. A FINALIZED span has every contested token resolved AND the resolution
+# equal to the sibling token (the image confirms the grab). A resolution that
+# DIFFERS from the sibling token means the grab itself is wrong — fix the sibling
+# (and the quote/citation), then re-run `ground`; the gate flags this.
+contested_token:
+  required_fields:
+    - token_index
+    - char_start
+    - char_end
+    - line                # 1-indexed line in the sibling (navigation)
+    - context             # readable window with the token guillemet-wrapped
+    - sibling             # the grabbed (sibling) surface form
+    - tesseract           # Tesseract's read of the aligned token (or null)
+    - paddleocr           # PaddleOCR's read (or null)
+    - resolution          # image-adjudicated surface form (null until resolved)
+    - resolution_method   # image-adjudication
+    - adjudicator_session # audit trail
+  resolution_method_values: [image-adjudication]
+
+# Gate (quote_source_grounding.py) PASS conditions for a quote/cited_work citing
+# an OCR-scan source:
+#   1. a {stem}-quote-grounding.yaml exists and sibling_sha256 == sha256(sibling);
+#   2. the ref appears in grounded_spans with located == true;
+#   3. every contested token has a non-null resolution (image-adjudicated);
+#   4. each resolution equals the sibling token (the image confirms the grab) —
+#      a mismatch is an error (the sibling is wrong; fix it, don't ground it).
+finalization_invariant:
+  - sibling_sha256 set and equal to sha256 of the sibling bytes on disk
+  - every cited quote/cited_work present and located
+  - every contested token adjudicated with resolution == sibling token

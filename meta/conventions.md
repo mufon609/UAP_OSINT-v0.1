@@ -226,34 +226,41 @@ a contributor-verified `.txt` sibling. The three-step contributor
 discipline below handles the per-quote case during the window before
 the sibling exists.
 
-**Producing the `.txt` sibling — uncorrelated multi-engine consensus.**
-The sibling is canonical because every token of it is corroborated by
-either **≥2 of three votes with *uncorrelated* failure modes** — Tesseract
-(LSTM OCR), PaddleOCR (deep-learning OCR, different architecture), and a VLM
-page-image read (different modality) — or an **image adjudication recorded**
-in a durable `{stem}-ocr-verification.yaml` (spec:
-`meta/schema-ocr-verification.yaml`). This **supersedes** the earlier
-"single producer → single independent verifier" model, which failed
-silently: the producer and the verifier both read the same image with the
-same kind of vision model and made the *same* misread, so "independent"
-(different session) was not independent in *failure mode*. DIRD-16's sibling
-was certified "verified — PASS" yet carried `III→ITT`,
-`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`. Uncorrelated
-engines plus recorded image adjudication is the trust mechanism now; the
-gate chain still never compares sibling↔image mechanically, so the
-verification record IS that comparison, made durable and re-runnable.
+**Producing the `.txt` sibling, and grounding what the node quotes.**
+The `.txt` sibling is the **primary grab** — ideally a VLM page-image read, a
+modality *uncorrelated* with OCR, so an OCR engine's char-confusion cannot be
+silently reproduced by the grab. (The retired "single producer → single
+independent verifier" model failed silently: producer and verifier read the same
+image with the same kind of vision model and made the *same* misread, so
+"independent" (different session) was not independent in *failure mode* —
+DIRD-16's sibling was certified "verified — PASS" yet carried `III→ITT`,
+`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.)
 
-Run it via `/prepare-ocr-sibling`: `scripts/tools/ocr-consensus.py run`
-(3 votes → consensus, flags CONTESTED tokens) → adjudicate the contested
-spans against the page images → `assemble`. `scripts/build/validate-ocr-sibling.py`
-gates that every OCR-scan sibling carries a FINALIZED record (every
-contested span adjudicated, ≥2 OCR engines, sibling sha256 matches), and
-`scripts/checks/quote_source_grounding.py` binds each quote to that
-finalized, hash-matching record — so a quote can never rest on an
-unverified or post-verification-edited sibling. The floor is **≥2
-uncorrelated OCR engines** (Tesseract + PaddleOCR); the VLM vote is the
-recommended third, waivable only via a recorded `vlm_skipped` reason for
-CBRN / content-filter-blocked sources.
+Trust is **quote-scoped** (BACKLOG C1). Whole-document token-by-token consensus on
+a banner/figure-heavy government PDF produces ~1000 CONTESTED spans, ~99% of them
+non-prose furniture (running classification banners, figure interiors, TOC
+dot-leaders) that no quote ever draws from — un-adjudicatable noise (the DIRD-16
+pilot: 1067 contested, **0** of them inside any of the 21 node quotes). So the
+gate confirms only the spans the node **quotes or cites**:
+`scripts/tools/ocr-consensus.py ground <artifact>` re-OCRs each cited OCR-scan
+source with Tesseract + PaddleOCR, aligns to the sibling, and records — in
+`{stem}-quote-grounding.yaml` (spec `meta/schema-quote-grounding.yaml`) — that
+every token of each quoted/cited span is corroborated by ≥2 reads (sibling + ≥1
+OCR engine) or **image-adjudicated**. `scripts/checks/quote_source_grounding.py`
+is the gate: a quote/cited_work can never rest on an unconfirmed span or a sibling
+edited since grounding (sha256 binding). cited_works are in scope — they are
+load-bearing verbatim citations and inherited the same OCR garble (DIRD-16
+cw2/cw5/…/cw24). The whole-document verification gate (`validate-ocr-sibling.py`)
+and its `{stem}-ocr-verification.yaml` record were **retired**.
+
+Produce + ground via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes
+the VLM base as the sibling (per-page chunked VLM production survives the content
+filter — the few pages it blocks are Tesseract-filled, confined to those pages),
+then `ocr-consensus.py ground` confirms the quoted spans and flags any token to
+image-adjudicate. The **trust prerequisite**: the grab (sibling) must be
+uncorrelated with the confirming OCR engines, so a sibling produced by the retired
+OCR-then-correct process must be **regenerated as a VLM read before grounding** —
+otherwise an OCR engine rubber-stamps its own error class.
 
 The four methods below are how an individual *vote* (a token-recognition
 pass) is produced. They are no longer interchangeable *substitutes for

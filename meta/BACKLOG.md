@@ -349,22 +349,44 @@ missing-page failure neither validator checked). Schema gained the optional
 `coverage_warning` key. Useful regardless of verification model (sibling
 completeness for quote extraction). `--selftest` still 5/5.
 
+**Quote-scoped gate BUILT (this session).** Producer:
+`ocr-consensus.py ground <artifact>` — OCRs each cited OCR-scan source
+(Tesseract + PaddleOCR), aligns to the sibling, locates each quote/cited_work
+span, intersects with the contested tokens, and writes
+`{stem}-quote-grounding.yaml` (one span entry per quote/cited_work; contested =
+tokens corroborated by neither OCR engine). Gate:
+`scripts/checks/quote_source_grounding.py` rewritten to the quote-scoped model —
+each OCR-scan quote/cited_work must be located in a hash-matching grounding
+record with every contested token image-adjudicated and the resolution equal to
+the sibling token (a resolution that *differs* means the grab is wrong → fix the
+sibling). Spec: `meta/schema-quote-grounding.yaml`. cited_works ARE in scope.
+**DIRD-16 grounded end-to-end**: 47 spans (21 quotes + 26 cited_works), all 21
+quotes confirmed with 0 contested, 10 contested cited_work tokens (the reference
+block — J. Dalibard, Noûs, 603-611, P. Eberhard, footnote numbers) image-confirmed
+against the page-33 image and recorded. Gate verified: 0 issues on the grounded
+record, fails closed on an un-adjudicated token / missing record / stale-hash.
+**Whole-document path RETIRED**: deleted `scripts/build/validate-ocr-sibling.py`
+and `meta/schema-ocr-verification.yaml`; `ocr-consensus.py run` still produces the
+sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
+`_ARTIFACT_CHECKS` until backfill (build→backfill→gate). `/prepare-ocr-sibling`,
+`meta/conventions.md` updated.
+
 #### What remains
 
-1. **Build the quote-scoped gate.** Refactor `quote_source_grounding.py` from
-   "whole-sibling finalized record + sha256" to "every quote AND cited_work from
-   an OCR-scan source is confirmed by a second OCR engine against its sibling
-   span; image-adjudication record on mismatch." **cited_works are in scope** —
-   DIRD-16 proved they are load-bearing and inherited garble. Add a quote-scoped
-   mode to `ocr-consensus.py` (intersect contested spans with quote/cited spans —
-   the session's prototype logic) or a new tool, and define the per-node/per-source
-   record format. Decide the fate of the now-superseded whole-document path +
-   `validate-ocr-sibling.py` (whole-sibling-finalized): keep / retire / repurpose.
-2. **Backfill the other 31 OCR-scan siblings** under the quote-scoped model —
-   per-sibling work is now bounded to confirming *that sibling's node's
-   quotes/cited_works*, with no figure/banner adjudication.
-3. **Wire the gate + flip `SEVERITY`** once each sibling's quote-spans are
-   confirmed (old Problem 1; old Problem 2 was 32, now 31 after DIRD-16).
+1. **Backfill the other 31 OCR-scan siblings.** Per-sibling work is bounded to
+   confirming *that sibling's node's quotes/cited_works* via `ground`, with no
+   figure/banner adjudication. **Trust prerequisite:** the grab must be
+   uncorrelated with the confirming OCR engines, so a sibling still produced by
+   the retired OCR-then-correct process must be regenerated as a VLM read
+   (`run --vlm`, per-page chunked) before grounding — else an OCR engine
+   rubber-stamps its own error class. (Old Problem 2 was 32; 31 after DIRD-16.)
+2. **Wire the gate + flip `SEVERITY` to `error`** once every node's OCR-scan
+   quotes carry a grounding record — add `quote_source_grounding` to
+   `validate-research.py::_ARTIFACT_CHECKS` (old Problem 1).
+3. **Optional cleanup:** `ocr-consensus.py run` still emits the legacy
+   whole-document `{stem}-ocr-verification.yaml` consensus dump (ungated now) and
+   `assemble` still splices it; a future pass could slim `run` to emit only the
+   sibling and drop `assemble` / `build_consensus_2`.
 
 **Blocks:** none.
 **Blocked by:** none.

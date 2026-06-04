@@ -1,39 +1,45 @@
 """quote-source-grounding check — per-artifact ResearchContext check.
 
 The per-quote "final independent check" against the primary source, made
-mechanical and re-runnable. For every quote whose ``source.path`` points at an
-OCR-scan / extraction-lossy PDF, this check binds the quote to a FINALIZED,
-hash-matching OCR-consensus verification record (see
-``meta/schema-ocr-verification.yaml``).
+mechanical and re-runnable — **quote-scoped** (BACKLOG C1). For every quote AND
+cited_work whose ``source.path`` points at an OCR-scan / extraction-lossy PDF,
+this binds the load-bearing span to a ``{stem}-quote-grounding.yaml`` record
+produced by ``scripts/tools/ocr-consensus.py ground`` (spec:
+``meta/schema-quote-grounding.yaml``).
 
-Why this is the per-quote source check, structurally:
+Why quote-scoped (and not whole-document):
 
   - ``verbatim_quotes`` already confirms the quote text appears in the `.txt`
     sibling. But the sibling is a transcription — it can itself diverge from the
     page images (that is exactly how DIRD-16's `ITT` / `cammunication` reached a
     committed node: the quote matched a *wrong* sibling).
-  - The OCR-consensus pipeline makes the sibling trustworthy: every token is
-    either CONSENSUS (≥2 of 3 uncorrelated engine votes agree — independent
-    source verification) or ADJUDICATED against the page image (recorded). A
-    FINALIZED record certifies that.
-  - Therefore, if a quote's sibling has a FINALIZED record AND the sibling bytes
-    still hash to what was verified, every token the quote draws is
-    independently source-grounded by construction. The sha256 binding is the
-    load-bearing per-quote guarantee the source-layer validator can't give: it
-    catches a sibling edited *after* verification (which ``verbatim_quotes``
-    would happily still match).
+  - Whole-document token-by-token consensus on a banner/figure-heavy government
+    PDF produces ~1000 CONTESTED spans, ~99% of them non-prose furniture (running
+    classification banners, figure interiors, TOC dot-leaders) that no quote ever
+    draws from. The DIRD-16 pilot: 1067 contested, **0 of them inside any of the
+    21 node quotes**. That noise is un-adjudicatable and not load-bearing.
+  - The guarantee that matters is per-LOAD-BEARING-SPAN: the sibling is the
+    authoritative grab (ideally a VLM page read — a modality uncorrelated with
+    OCR); Tesseract + PaddleOCR confirm ONLY the spans the node quotes/cites.
+    A grounded span has every token corroborated by >=1 OCR engine (>=2-of-3 with
+    the sibling) or image-adjudicated. cited_works are in scope — they are
+    load-bearing verbatim citations and inherited the same OCR garble (DIRD-16
+    cw2/cw5/.../cw24).
 
-Failure modes surfaced (one diagnostic per cited OCR-scan source per artifact):
-  - no verification record exists → sibling fidelity unverified;
-  - record not finalized (``sibling_sha256`` unset) → run ``assemble``;
-  - unresolved contested spans → sibling not yet trustworthy;
-  - sibling sha256 ≠ recorded → sibling edited since verification.
+Failure modes surfaced:
+  - no grounding record for a cited OCR-scan source → run ``ground``;
+  - record not finalized for the sibling (``sibling_sha256`` != sibling bytes)
+    → the sibling changed since grounding; re-run ``ground``;
+  - the quote/cited_work is absent from the record, or was not located in the
+    sibling → re-run ``ground`` / re-check the citation;
+  - a contested token in the span is not image-adjudicated → adjudicate it;
+  - an adjudication that *contradicts* the sibling (resolution != sibling token)
+    → the grab itself is wrong; fix the sibling + quote, then re-run ``ground``.
 
-Transition: ``SEVERITY = "warn"`` until the OCR-consensus backfill has produced
-a record for every existing OCR-scan sibling; flipped to ``"error"`` and wired
-into ``validate-research.py::_ARTIFACT_CHECKS`` at the gate-flip step (see the
-OCR-consensus plan). Non-OCR-scan sources are skipped entirely, so text-native
-sources are unaffected.
+Transition: ``SEVERITY = "warn"`` until every OCR-scan sibling that a node quotes
+has a grounding record (the build→backfill→gate discipline); flipped to
+``"error"`` and wired into ``validate-research.py::_ARTIFACT_CHECKS`` at the
+gate-flip step. Non-OCR-scan sources are skipped entirely.
 """
 
 import hashlib
@@ -47,7 +53,7 @@ from lib._common import SOURCES_DIR, _load_extraction_types
 CHECK_NAME = "quote_source_grounding"
 
 # Transition severity. Flip to "error" when wiring into _ARTIFACT_CHECKS after
-# the backfill (every OCR-scan sibling carries a finalized record by then).
+# every node's OCR-scan quotes carry a grounding record.
 SEVERITY = "warn"
 
 _OCR_TYPES = {"ocr-scan", "extraction-lossy"}
@@ -61,105 +67,118 @@ def _sha256(path):
     return h.hexdigest()
 
 
+def _load_record(rel):
+    """Load + validate the grounding record for an OCR-scan source path.
+
+    Returns ``(spans_by_ref, source_error)`` — exactly one is non-empty.
+    ``source_error`` is a single per-source diagnostic string (missing /
+    unreadable / stale record); when set, the source's spans are not checked
+    individually."""
+    src_path = SOURCES_DIR / rel
+    sibling = src_path.with_suffix(".txt")
+    stem = src_path.with_suffix("").name
+    record_path = src_path.parent / f"{stem}-quote-grounding.yaml"
+
+    if not record_path.exists():
+        return None, (
+            f"quote(s)/cited_work(s) cite OCR-scan source sources/{rel}, but no "
+            f"quote-grounding record exists ({record_path.name}); the spans the "
+            f"node draws are not confirmed against the page images — run "
+            f"`ocr-consensus.py ground` on the artifact.")
+    try:
+        rec = yaml.safe_load(record_path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError) as e:
+        return None, f"quote-grounding record {record_path.name} for sources/{rel} is unreadable: {e}"
+    if not isinstance(rec, dict):
+        return None, f"quote-grounding record {record_path.name} for sources/{rel} is not a mapping"
+
+    recorded = rec.get("sibling_sha256")
+    if not recorded:
+        return None, (f"quote-grounding record for sources/{rel} is not finalized "
+                      f"(sibling_sha256 unset) — re-run `ocr-consensus.py ground`.")
+    if not sibling.exists():
+        return None, (f"quote-grounding record exists but the sibling "
+                      f"sources/{sibling.relative_to(SOURCES_DIR)} is missing.")
+    if _sha256(sibling) != recorded:
+        return None, (f"sibling sources/{sibling.relative_to(SOURCES_DIR)} has changed "
+                      f"since grounding (sha256 != recorded) — the confirmed spans no "
+                      f"longer match the sibling; re-run `ocr-consensus.py ground`.")
+
+    spans_by_ref = {gs.get("ref"): gs for gs in (rec.get("grounded_spans") or [])
+                    if isinstance(gs, dict)}
+    return spans_by_ref, None
+
+
 def check(ctx):
-    """Yield Issues for quotes citing an OCR-scan source without a finalized,
-    hash-matching consensus verification record. Deduplicated per cited source
-    path (one diagnostic per source per artifact — many quotes share one
-    source)."""
-    quotes = list(entries(ctx.data, "quotes"))
-    if not quotes:
+    """Yield Issues for quotes / cited_works citing an OCR-scan source whose
+    load-bearing span is not grounded (confirmed by a second OCR engine or
+    image-adjudicated) in a hash-matching quote-grounding record."""
+    items = []
+    for q in entries(ctx.data, "quotes"):
+        if isinstance(q, dict):
+            items.append((q, "quote"))
+    for cw in entries(ctx.data, "cited_works"):
+        if isinstance(cw, dict):
+            items.append((cw, "cited_work"))
+    if not items:
         return
+
     ext_types = _load_extraction_types()
-    seen = set()
-    for q in quotes:
-        if not isinstance(q, dict):
-            continue
-        src = q.get("source")
+    cache = {}        # rel -> (spans_by_ref, source_error)
+    reported_source = set()
+
+    for obj, kind in items:
+        src = obj.get("source")
         if not isinstance(src, dict):
             continue
         rel = src.get("path")
         if not rel or ext_types.get(rel) not in _OCR_TYPES:
             continue  # text-native (or unflagged) sources are out of scope
-        if rel in seen:
-            continue
-        seen.add(rel)
 
-        src_path = SOURCES_DIR / rel
-        sibling = src_path.with_suffix(".txt")
-        stem = src_path.with_suffix("").name
-        verification = src_path.parent / f"{stem}-ocr-verification.yaml"
-
-        if not verification.exists():
-            yield Issue(
-                ctx.rel, SEVERITY,
-                f"quote(s) cite OCR-scan source sources/{rel}, but no "
-                f"OCR-consensus verification record exists "
-                f"({verification.name}); the sibling's fidelity to the page "
-                f"images is unverified — run /prepare-ocr-sibling "
-                f"(ocr-consensus.py).",
-                check_name=CHECK_NAME,
-            )
-            continue
-        try:
-            rec = yaml.safe_load(verification.read_text(encoding="utf-8"))
-        except (OSError, yaml.YAMLError) as e:
-            yield Issue(
-                ctx.rel, SEVERITY,
-                f"verification record {verification.name} for sources/{rel} "
-                f"is unreadable: {e}",
-                check_name=CHECK_NAME,
-            )
-            continue
-        if not isinstance(rec, dict):
-            yield Issue(
-                ctx.rel, SEVERITY,
-                f"verification record {verification.name} for sources/{rel} "
-                f"is not a mapping",
-                check_name=CHECK_NAME,
-            )
+        if rel not in cache:
+            cache[rel] = _load_record(rel)
+        spans_by_ref, source_error = cache[rel]
+        if source_error:
+            if rel not in reported_source:    # one per source
+                reported_source.add(rel)
+                yield Issue(ctx.rel, SEVERITY, source_error, check_name=CHECK_NAME)
             continue
 
-        recorded = rec.get("sibling_sha256")
-        if not recorded:
+        ref = obj.get("id")
+        gs = spans_by_ref.get(ref)
+        if gs is None:
             yield Issue(
                 ctx.rel, SEVERITY,
-                f"verification record for sources/{rel} is not finalized "
-                f"(sibling_sha256 unset) — run `ocr-consensus.py assemble`.",
-                check_name=CHECK_NAME,
-            )
+                f"{kind} {ref!r} cites OCR-scan source sources/{rel} but is not in "
+                f"the quote-grounding record — re-run `ocr-consensus.py ground`.",
+                check_name=CHECK_NAME)
             continue
-
-        unresolved = [
-            c.get("id") for c in (rec.get("contested") or [])
-            if isinstance(c, dict)
-            and (c.get("status") != "adjudicated" or not c.get("resolution"))
-        ]
-        if unresolved:
+        if not gs.get("located"):
             yield Issue(
                 ctx.rel, SEVERITY,
-                f"verification record for sources/{rel} has unresolved "
-                f"contested spans {unresolved}; the sibling is not yet "
-                f"trustworthy. Adjudicate + `assemble`.",
-                check_name=CHECK_NAME,
-            )
+                f"{kind} {ref!r}: verbatim text was not located in the sibling "
+                f"during grounding ({gs.get('note', '')}) — re-check the "
+                f"quote/citation, then re-run `ocr-consensus.py ground`.",
+                check_name=CHECK_NAME)
             continue
-
-        if not sibling.exists():
-            yield Issue(
-                ctx.rel, SEVERITY,
-                f"verification record exists but the sibling "
-                f"sources/{sibling.relative_to(SOURCES_DIR)} is missing.",
-                check_name=CHECK_NAME,
-            )
-            continue
-        if _sha256(sibling) != recorded:
-            yield Issue(
-                ctx.rel, SEVERITY,
-                f"sibling sources/{sibling.relative_to(SOURCES_DIR)} has been "
-                f"edited since verification (sha256 ≠ recorded) — quotes match "
-                f"an unverified sibling. Re-verify via ocr-consensus.py.",
-                check_name=CHECK_NAME,
-            )
-            continue
-        # grounded: finalized record + hash match → every quote token is
-        # consensus-or-image-adjudicated. No issue.
+        for c in (gs.get("contested") or []):
+            res = c.get("resolution")
+            sib = c.get("sibling")
+            line = c.get("line")
+            if res in (None, ""):
+                yield Issue(
+                    ctx.rel, SEVERITY,
+                    f"{kind} {ref!r}: contested token at sibling line {line} "
+                    f"({sib!r}, corroborated by neither OCR engine) is not "
+                    f"image-adjudicated — read the page image and fill "
+                    f"`resolution` in the grounding record.",
+                    check_name=CHECK_NAME)
+            elif res != sib:
+                yield Issue(
+                    ctx.rel, SEVERITY,
+                    f"{kind} {ref!r}: image adjudication contradicts the sibling at "
+                    f"line {line} (sibling={sib!r}, image={res!r}) — the grab is "
+                    f"wrong; correct the sibling + the quote/citation, then re-run "
+                    f"`ocr-consensus.py ground`.",
+                    check_name=CHECK_NAME)
+        # else: every token confirmed-or-adjudicated → grounded.
