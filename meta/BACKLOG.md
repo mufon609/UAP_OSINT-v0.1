@@ -363,8 +363,11 @@ sibling). Spec: `meta/schema-quote-grounding.yaml`. cited_works ARE in scope.
 **DIRD-16 grounded end-to-end**: 47 spans (21 quotes + 26 cited_works), all 21
 quotes confirmed with 0 contested, 10 contested cited_work tokens (the reference
 block — J. Dalibard, Noûs, 603-611, P. Eberhard, footnote numbers) image-confirmed
-against the page-33 image and recorded. Gate verified: 0 issues on the grounded
-record, fails closed on an un-adjudicated token / missing record / stale-hash.
+against the page-33 image and recorded. Gate verified by a 19-case adversarial
+suite (self-audit): 0 issues on the grounded record; fails closed on
+resolution≠sibling, un-adjudicated token, missing record, stale hash, and wrong
+schema version. Two latent issues found + fixed (commit `db23de9`): span-membership
+consistency (the `confirmed` count) and a gate schema-version guard.
 **Whole-document path RETIRED**: deleted `scripts/build/validate-ocr-sibling.py`
 and `meta/schema-ocr-verification.yaml`; `ocr-consensus.py run` still produces the
 sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
@@ -380,10 +383,21 @@ sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
    the retired OCR-then-correct process must be regenerated as a VLM read
    (`run --vlm`, per-page chunked) before grounding — else an OCR engine
    rubber-stamps its own error class. (Old Problem 2 was 32; 31 after DIRD-16.)
-2. **Wire the gate + flip `SEVERITY` to `error`** once every node's OCR-scan
+2. **DECISION PENDING — enforce the trust prerequisite mechanically?** The gate
+   confirms `sibling == (Tesseract OR PaddleOCR)`, which is sound only if the
+   sibling is a VLM grab; a Tesseract-correlated sibling (e.g. an un-regenerated
+   old sibling carrying `ITT`) would be silently rubber-stamped. Today this is
+   documented + procedural only (schema/conventions/skill/this item), not enforced
+   in code — `ground` can't tell a VLM grab from a raw-OCR one by reading the
+   `.txt`. Candidate: require `ground --grab vlm-page-read`, record it in the
+   grounding YAML, and have the gate flag any span whose grab is not declared VLM —
+   an explicit auditable claim instead of a silent assumption, catching a
+   mistakenly-grounded raw-OCR sibling exactly during the backfill. Maintainer to
+   decide vs. leaving it procedural (consistent with source-read-first).
+3. **Wire the gate + flip `SEVERITY` to `error`** once every node's OCR-scan
    quotes carry a grounding record — add `quote_source_grounding` to
    `validate-research.py::_ARTIFACT_CHECKS` (old Problem 1).
-3. **Optional cleanup:** `ocr-consensus.py run` still emits the legacy
+4. **Optional cleanup:** `ocr-consensus.py run` still emits the legacy
    whole-document `{stem}-ocr-verification.yaml` consensus dump (ungated now) and
    `assemble` still splices it; a future pass could slim `run` to emit only the
    sibling and drop `assemble` / `build_consensus_2`.
