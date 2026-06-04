@@ -681,6 +681,17 @@ def cmd_selftest(_args):
 # ---------------------------------------------------------------------------
 _OCR_TYPES = {"ocr-scan", "extraction-lossy"}
 
+# Sibling-encoding markers that are NEVER source-literal text: a superscript
+# endnote/citation marker (`^N`) and citation/redaction brackets. No OCR engine
+# emits them, so they always land in `contested` — but they are sanctioned by
+# the preserved-marker convention, not load-bearing prose. `ground` auto-resolves
+# only these (method `markup-convention`, flagged NOT image-read). The set is
+# deliberately conservative: defect-prone glyphs a sibling can wrongly inject
+# (a stray middot, ordinary punctuation an OCR engine may have read correctly)
+# are EXCLUDED, so they still surface for human image-adjudication — which is how
+# the dird-01 inserted-middot defect was caught.
+SANCTIONED_MARKUP = {"^", "[", "]"}
+
 
 def _norm_for_locate(s):
     return (s.replace("“", '"').replace("”", '"')
@@ -796,17 +807,25 @@ def cmd_ground(args):
         print("no quotes/cited_works cite an OCR-scan source — nothing to ground.")
         return
 
+    skipped = []
     for rel, spans in spans_by_source.items():
         pdf = SOURCES_DIR / rel
         sibling = pdf.with_suffix(".txt")
         stem = pdf.with_suffix("").name
         record_path = pdf.parent / f"{stem}-quote-grounding.yaml"
+        # Skip-and-warn rather than abort: a node often cites several OCR-scan
+        # sources, and one missing PDF/sibling must not block grounding the
+        # rest. A skipped source's spans stay ungrounded — the gate flags them.
         if not pdf.exists():
-            raise SystemExit(f"source PDF not found: {pdf}")
+            print(f"   ! SKIP {rel}: source PDF not found — "
+                  f"{len(spans)} span(s) ungrounded")
+            skipped.append((rel, "source PDF not found"))
+            continue
         if not sibling.exists():
-            raise SystemExit(
-                f"no .txt sibling for {rel} — produce it first "
-                f"(ocr-consensus.py run --vlm ...).")
+            print(f"   ! SKIP {rel}: no .txt sibling (produce it first: "
+                  f"ocr-consensus.py run --vlm ...) — {len(spans)} span(s) ungrounded")
+            skipped.append((rel, "no .txt sibling"))
+            continue
         sib_text = sibling.read_text(encoding="utf-8")
 
         print(f"[{rel}] {len(spans)} span(s) — rasterize + OCR cross-check ...")
@@ -832,7 +851,7 @@ def cmd_ground(args):
 
         collapsed, idxmap = _collapsed_index_map(sib_text)
         sib_tokens = tokenize(sib_text)
-        grounded, total_contested, unlocated = [], 0, 0
+        grounded, total_contested, unlocated, auto_markup = [], 0, 0, 0
         for ref, kind, txt in spans:
             loc = locate_span(collapsed, idxmap, txt)
             if loc is None:
@@ -851,7 +870,15 @@ def cmd_ground(args):
                 # confirmed = n_tokens - len(cin) is exact and never negative
                 # (quotes begin at a token boundary, so no token straddles qs).
                 if qs <= c["char_start"] < qe:
+                    sib_tok = c["candidates"]["vlm"]
                     res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
+                    if res is None and sib_tok in SANCTIONED_MARKUP:
+                        # Sanctioned sibling-encoding marker — auto-confirm by
+                        # convention, flagged NOT image-read (see SANCTIONED_MARKUP).
+                        res, meth = sib_tok, "markup-convention"
+                        sess = (f"auto: sanctioned markup token {sib_tok!r} "
+                                f"(superscript/bracket marker, not source-literal text)")
+                        auto_markup += 1
                     cin.append({
                         "token_index": c["token_index"],
                         "char_start": c["char_start"],
@@ -888,13 +915,22 @@ def cmd_ground(args):
             "grounded_spans": other_spans + grounded,
         }
         write_yaml(record_path, record)
+        human = total_contested - auto_markup
         print(f"   -> {record_path}")
-        print(f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
-              f"{total_contested} contested token(s) to adjudicate"
-              + ("" if not total_contested else
-                 " (read the page image at each, fill `resolution` = what the "
-                 "image shows + resolution_method: image-adjudication + "
-                 "adjudicator_session)."))
+        msg = (f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
+               f"{total_contested} contested ({auto_markup} auto-resolved as "
+               f"sanctioned markup, {human} to image-adjudicate)")
+        if human:
+            msg += (" — read the page image at each unresolved token, fill "
+                    "`resolution` (= what the image shows) + resolution_method: "
+                    "image-adjudication + adjudicator_session.")
+        print(msg)
+
+    if skipped:
+        print(f"\nSKIPPED {len(skipped)} source(s) — their spans remain ungrounded "
+              f"(produce the sibling, then re-run `ground`):")
+        for rel, why in skipped:
+            print(f"  - {rel}: {why}")
 
 
 def main():

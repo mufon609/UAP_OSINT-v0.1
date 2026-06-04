@@ -88,10 +88,18 @@ contested_token:
     - sibling             # the grabbed (sibling) surface form
     - tesseract           # Tesseract's read of the aligned token (or null)
     - paddleocr           # PaddleOCR's read (or null)
-    - resolution          # image-adjudicated surface form (null until resolved)
-    - resolution_method   # image-adjudication
+    - resolution          # confirmed surface form (null until resolved)
+    - resolution_method   # image-adjudication | markup-convention
     - adjudicator_session # audit trail
-  resolution_method_values: [image-adjudication]
+  # resolution_method:
+  #   image-adjudication — a human read the page image and recorded what it shows
+  #     (the load-bearing case; required for every word/number contested token).
+  #   markup-convention  — `ground` auto-confirmed a sanctioned sibling-encoding
+  #     marker (superscript `^N`, citation/redaction bracket) that no OCR engine
+  #     emits and that is never source-literal text. NOT an image read; kept as a
+  #     distinct method so a reviewer can see which tokens got human eyes. The
+  #     auto set is conservative (^ [ ]) — defect-prone glyphs stay for a human.
+  resolution_method_values: [image-adjudication, markup-convention]
 
 # Gate (quote_source_grounding.py) PASS conditions for a quote/cited_work citing
 # an OCR-scan source:
