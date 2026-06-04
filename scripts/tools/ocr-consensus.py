@@ -816,7 +816,10 @@ def cmd_ground(args):
             n_tokens = sum(1 for (_s, cs, _ce) in sib_tokens if qs <= cs < qe)
             cin = []
             for c in contested:
-                if not (c["char_end"] <= qs or c["char_start"] >= qe):
+                # start-in-span — the same membership test as n_tokens, so
+                # confirmed = n_tokens - len(cin) is exact and never negative
+                # (quotes begin at a token boundary, so no token straddles qs).
+                if qs <= c["char_start"] < qe:
                     res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
                     cin.append({
                         "token_index": c["token_index"],

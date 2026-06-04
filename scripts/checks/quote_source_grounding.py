@@ -91,6 +91,10 @@ def _load_record(rel):
         return None, f"quote-grounding record {record_path.name} for sources/{rel} is unreadable: {e}"
     if not isinstance(rec, dict):
         return None, f"quote-grounding record {record_path.name} for sources/{rel} is not a mapping"
+    if rec.get("schema") != "quote-grounding/v1":
+        return None, (f"quote-grounding record {record_path.name} for sources/{rel} "
+                      f"has unexpected schema {rec.get('schema')!r} (want "
+                      f"'quote-grounding/v1') — regenerate with `ocr-consensus.py ground`.")
 
     recorded = rec.get("sibling_sha256")
     if not recorded:
