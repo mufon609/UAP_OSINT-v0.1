@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf
+  content_block: 'None'
   pdf_metadata:
     title: CIA-RDP79-00999A000300030027-0.TIF
     creator: Adobe Acrobat 15.16

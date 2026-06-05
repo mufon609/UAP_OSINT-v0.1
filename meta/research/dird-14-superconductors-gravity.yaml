@@ -5,6 +5,7 @@ status: active
 primary_sources:
   - path: government/dird-14-superconductors-gravity-20100323.pdf
     format: pdf
+    content_block: 'None'
 document_intrinsic:
   internal_title: The Role of Superconductors in Gravity Research
   internal_date: '2010-03-23'

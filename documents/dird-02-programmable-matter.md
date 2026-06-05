@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_02-DIRD_Aerospace_Applications_of_Programmable_Matter.pdf |
 | Local Archive | [sources/government/dird-02-programmable-matter-20091214.pdf](../sources/government/dird-02-programmable-matter-20091214.pdf) |
 
+**Content Block:** None
+
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---

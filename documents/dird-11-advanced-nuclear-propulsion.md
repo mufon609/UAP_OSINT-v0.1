@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_11-DIRD_Advanced_Nuclear_Propulsion_for_Manned_Deep_Space_Missions.pdf |
 | Local Archive | [sources/government/dird-11-advanced-nuclear-propulsion-20100311.pdf](../sources/government/dird-11-advanced-nuclear-propulsion-20100311.pdf) |
 
+**Content Block:** All pages produced via Tesseract OCR — VLM re-transcription was content-blocked (proliferation-sensitive nonfission-ignition / thermonuclear content).
+
 ---
 
 ## Description

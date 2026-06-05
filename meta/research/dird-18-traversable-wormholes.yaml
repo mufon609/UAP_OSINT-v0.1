@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-18-traversable-wormholes-20100406.pdf
   format: pdf
+  content_block: 'All pages produced via Tesseract OCR — the VLM was content-blocked on the negative-energy passages (physical pp. 31-35).'
 document_intrinsic:
   internal_title: Traversable Wormholes, Stargates, and Negative Energy
   internal_date: '2010-04-06'

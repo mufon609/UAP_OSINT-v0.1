@@ -5,6 +5,7 @@ status: active
 primary_sources:
   - path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
     format: pdf
+    content_block: 'Pages 12, 31 were content-blocked for the VLM; OCR-filled (Tesseract + PaddleOCR cross-check).'
 document_intrinsic:
   internal_title: The Space-Communication Implications of Quantum Entanglement and Nonlocality
   internal_date: '2010-03-30'

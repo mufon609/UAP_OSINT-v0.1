@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-02-programmable-matter-20091214.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: Aerospace Applications of Programmable Matter
   internal_date: '2009-12-14'

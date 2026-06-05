@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_06-DIRD_Space_Access-Where_Weve_Been_and_Where_We_Could_Go.pdf |
 | Local Archive | [sources/government/dird-06-bv-space-access-20100308.pdf](../sources/government/dird-06-bv-space-access-20100308.pdf) |
 
+**Content Block:** None
+
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---

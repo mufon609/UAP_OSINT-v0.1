@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: Materials for Advanced Aerospace Platforms
   internal_date: '2010-01-12'

@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-07-invisibility-cloaking-20100302.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Invisibility Cloaking: Theory and Experiments'
   internal_date: '2010-03-02'

@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-08-positron-aerospace-propulsion-20100302.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: Positron Aerospace Propulsion
   internal_date: '2010-03-02'

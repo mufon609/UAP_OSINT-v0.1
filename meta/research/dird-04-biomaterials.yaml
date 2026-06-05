@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-04-biomaterials-20100107.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: Biomaterials
   internal_date: '2010-01-07'

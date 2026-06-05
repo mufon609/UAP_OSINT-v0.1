@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-06-bv-space-access-20100308.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Space Access: Where We''ve Been . . . and Where We Could Go'
   internal_date: '2010-03-08'

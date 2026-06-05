@@ -5,6 +5,7 @@ status: active
 primary_sources:
   - path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
     format: pdf
+    content_block: 'None'
 document_intrinsic:
   internal_title: Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions
   internal_date: '2010-04-02'

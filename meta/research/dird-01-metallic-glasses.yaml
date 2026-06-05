@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-01-metallic-glasses-20091214.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Metallic Glasses: Status and Prospects for Aerospace Applications'
   internal_date: '2009-12-14'

@@ -20,6 +20,8 @@ doc_form: letter
 | Primary Source URL | https://irp.fas.org/dia/aatip-list.pdf |
 | Local Archive | [sources/government/fas-org-aatip-list-20210808.pdf](../sources/government/fas-org-aatip-list-20210808.pdf) |
 
+**Content Block:** None
+
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---

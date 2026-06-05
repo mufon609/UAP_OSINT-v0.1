@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
   internal_date: '2010-03-29'

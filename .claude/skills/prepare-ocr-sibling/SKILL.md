@@ -77,39 +77,51 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    page); reproduce TOC entries without dot-leader runs; no synthetic page-break
    markers.
 
-   **Genuinely-blocked pages → PaddleOCR-fill.** For each page that blocks in
-   isolation, rasterize that one page and fill its slice from **PaddleOCR** — the
-   better OCR engine and one the content filter does not block (`pdftoppm -png -r
-   300 -f N -l N …`, then run that page through `ocr-consensus.py`'s PaddleOCR
-   path). The PaddleOCR fill becomes the sibling text for those pages; note them
-   so the step-2 confirmation treats them as already-OCR (a PaddleOCR-vs-PaddleOCR
-   page won't surface VLM divergences — confirm those pages by eye against the
-   image).
+   **Genuinely-blocked pages → PaddleOCR-fill (produce ≠ verify).** The content
+   filter blocks model *output* — *reproducing* a passage — so the VLM cannot
+   **produce** a blocked page. PaddleOCR can: rasterize that one page and fill its
+   slice from **PaddleOCR** (the better OCR engine, not content-blocked: `pdftoppm
+   -png -r 300 -f N -l N …`, then run that page through `ocr-consensus.py`'s
+   PaddleOCR path). **Keep the page numbers** — they are the blocked-page ledger,
+   needed for `--blocked-pages` in step 3 and the `Content Block` field in step 5.
+   The VLM still **verifies** these pages in step 3: judging PaddleOCR's pull
+   against the image (or pinpointing a wrong token) is a tiny output, not
+   reproduction, so it is not blocked — the high-fidelity check survives even
+   though the high-fidelity *transcription* didn't.
 
 3. **Write the sibling + confirm it against PaddleOCR.** Concatenate the per-page
    files in order (`cat /tmp/{stem}/p*.txt > /tmp/{stem}-vlm.txt`; zero-padding
    sorts correctly). Then:
    ```
    python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
-       --vlm /tmp/{stem}-vlm.txt [--force]
+       --vlm /tmp/{stem}-vlm.txt [--blocked-pages 12,31] [--force]
    ```
    `run` writes the VLM text as the sibling `.txt`, then re-reads the pages with
    PaddleOCR + Tesseract and prints the **load-bearing divergence report**: every
    word/number where the sibling and the OCR engines disagree (document structure
    — punctuation, bullets, banners, figure labels — is never compared, so the
-   report is short and load-bearing). `--force` regenerates an existing sibling
+   report is short and load-bearing). Pass `--blocked-pages` the ledger from step 2
+   (accepts ranges, e.g. `5-7,10,14-15`). `--force` regenerates an existing sibling
    (backfill). Heed any `⚠ COVERAGE WARNING`: a large contiguous run of
    OCR-corroborated tokens missing from the base means the VLM dropped a
    paragraph/page — recover it before proceeding.
 
-   **Reconcile each divergence against the page image.** For every reported token,
-   open the page image at the given line and decide the true reading. Where the
-   VLM misread, **correct the sibling** with `Edit` (the sibling is the canonical
+   **Reconcile each VLM-page divergence against the page image.** For every reported
+   token, open the page image at the given line and decide the true reading. Where
+   the VLM misread, **correct the sibling** with `Edit` (the sibling is the canonical
    text — fix it now, before any quote derives from it). Where the VLM is right and
    the OCR engines are wrong (common — they share glyph-confusion failures like
-   `SiO2→SiOz`, `Lím→Lim`), leave the sibling as-is. Re-run to confirm clean:
+   `SiO2→SiOz`, `Lím→Lim`), leave the sibling as-is.
+
+   **VLM-verify each blocked page.** For a blocked page the sibling text *is* the
+   PaddleOCR fill, so the sibling-vs-engines diff is silent there — `--blocked-pages`
+   instead prints the **PaddleOCR-vs-Tesseract** disagreements (the two engines'
+   highest-risk tokens). For each blocked page: read its page image and **verify**
+   PaddleOCR's fill (the VLM can judge it even though it couldn't produce it),
+   paying special attention to the flagged PaddleOCR-vs-Tesseract tokens; correct
+   the sibling where PaddleOCR misread. Re-run to confirm clean:
    ```
-   python3 scripts/tools/ocr-consensus.py verify sources/{category}/{stem}.pdf
+   python3 scripts/tools/ocr-consensus.py verify sources/{category}/{stem}.pdf [--blocked-pages 12,31]
    ```
    `verify` re-confirms the on-disk sibling without regenerating it. Repeat until
    the only remaining divergences are OCR errors on a correct sibling. The sibling
@@ -130,6 +142,21 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    — the parent PDF is the primary source; the sibling is only the extraction
    surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources, so
    quotes derive verbatim text from it but cite the PDF path in `source.path`.
+
+5. **Record the `Content Block` provenance.** The blocked-page outcome becomes a
+   durable, greppable field on the node. Note the value for the source's
+   `content_block` (on its `primary_sources[]` entry in the research artifact —
+   `meta/schema-research-artifact.yaml`; renders as `**Content Block:**` on the
+   document node):
+   - every page VLM-read → `None`;
+   - some pages PaddleOCR-filled → e.g. `Pages 12, 31 were content-blocked for the
+     VLM; PaddleOCR-filled.`;
+   - whole document content-blocked (`--vlm-skipped`) → `All pages — VLM
+     page-image read was content-blocked; produced via OCR.`
+   When the node is built (`/build`) this goes on the primary source; the build
+   pipeline's `primary_sources` stub carries `content_block`. An investigator can
+   then `grep -rn "Content Block:" documents/ | grep -v None` to find every node
+   with OCR-filled pages.
 
 The sibling is canonical once confirmed and registered; `extract-source.py` and
 the verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

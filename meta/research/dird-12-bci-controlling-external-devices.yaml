@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-12-bci-controlling-external-devices-20100323.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Technological Approaches to Controlling External Devices in the Absence of Limb-Operated Interfaces'
   internal_date: '2010-03-23'

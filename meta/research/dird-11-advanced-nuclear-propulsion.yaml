@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
   format: pdf
+  content_block: 'All pages produced via Tesseract OCR — VLM re-transcription was content-blocked (proliferation-sensitive nonfission-ignition / thermonuclear content).'
 document_intrinsic:
   internal_title: 'Advanced Nuclear Propulsion for Manned Deep Space Missions'
   internal_date: '2010-03-11'

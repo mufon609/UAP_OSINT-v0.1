@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_26-DIRD_Anomalous_Acute_and_Subacute_Field_Effects_on_Human_Biological_Tissues.pdf |
 | Local Archive | [sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
 
+**Content Block:** None
+
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---

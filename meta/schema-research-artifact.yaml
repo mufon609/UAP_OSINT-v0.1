@@ -503,8 +503,20 @@ conditional_keys:
 # Primary-source list entries
 primary_sources_entry:
   required: [path, format]
-  optional: [pdf_metadata]
+  optional: [pdf_metadata, content_block]
   # path: relative to sources/, must appear in sources/manifest.yaml
+  #
+  # content_block: extraction provenance for a sibling-backed (ocr-scan /
+  #   extraction-lossy) PDF — which pages, if any, the VLM page-image read was
+  #   content-filter-blocked on and PaddleOCR therefore filled. A short string:
+  #     "None"  — every page VLM-read;
+  #     "Pages 12, 31 were content-blocked for the VLM; PaddleOCR-filled." — some pages;
+  #     "All pages — VLM page-image read was content-blocked; produced via OCR." — whole doc.
+  #   Renders on the document node as a `**Content Block:**` line (renderers/
+  #   document.py), so an investigator can grep `Content Block:` repo-wide and
+  #   spot any value other than None. Present only on sibling-backed sources;
+  #   text-native sources never had a VLM/OCR question and omit it. Set at sibling
+  #   prep (`/prepare-ocr-sibling` step 5) and carried onto the node at build.
 
 # --- Entry shapes per top-level list section ---
 

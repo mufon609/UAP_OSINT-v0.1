@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
   format: pdf
+  content_block: 'None'
   pdf_metadata:
     title: CIA-RDP96-00787R000100220001-8.TIF
     creator: Adobe Acrobat 15.16

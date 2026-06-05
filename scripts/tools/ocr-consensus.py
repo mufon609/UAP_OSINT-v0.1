@@ -27,13 +27,25 @@ opinion (a token is corroborated if EITHER engine agrees with the sibling, so a
 divergence flags only when both disagree). On a fully content-blocked source the
 VLM vote is skipped and the sibling is built from OCR alone (``--vlm-skipped``).
 
+Blocked pages — the VLM verifies what it cannot produce. The content filter
+blocks model OUTPUT (reproducing a passage), so the VLM cannot transcribe a
+blocked page; PaddleOCR fills it instead. But the VLM CAN still verify that fill
+against the page image — judging/pinpointing a wrong token is a tiny output, not
+reproduction. On a paddle-filled page the sibling text IS PaddleOCR, so the
+normal sibling-vs-engines diff is silent (sibling == paddle); ``--blocked-pages``
+instead runs PaddleOCR-vs-Tesseract on those page images and prints where the two
+engines disagree (the highest-risk tokens), which the agent then VLM-verifies.
+
 Subcommands:
   run        Write the ``.txt`` sibling from the VLM page-image read, then OCR
              the pages (PaddleOCR + Tesseract) and print every load-bearing
              divergence for the agent to reconcile. Writes only the sibling.
+             ``--blocked-pages SPEC`` adds the per-blocked-page PaddleOCR-vs-
+             Tesseract check.
   verify     Re-confirm an EXISTING sibling against the OCR engines (no
-             regeneration) — the same load-bearing divergence report. Use when
-             re-checking a sibling produced earlier.
+             regeneration) — the same load-bearing divergence report (and
+             ``--blocked-pages`` check). Use when re-checking a sibling produced
+             earlier.
   engines    Report which engines are available (diagnostic).
   --selftest Run the alignment/consensus logic on synthetic inputs (no OCR
              engines needed) — exercised by scripts/tests/.
@@ -462,8 +474,35 @@ def print_confirm_report(divergences, sibling):
 # ---------------------------------------------------------------------------
 # Subcommands
 # ---------------------------------------------------------------------------
-def _ocr_pages(pdf, stem, dpi):
-    """Rasterize the PDF and run both OCR engines; return (tess_text, paddle_text)."""
+def parse_pages(spec):
+    """Parse a `--blocked-pages` spec ('5-7,10,14-15') into a sorted int list.
+    Accepts single pages and inclusive N-M ranges; ignores blanks."""
+    if not spec:
+        return []
+    out = set()
+    for part in spec.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if "-" in part:
+            a, b = part.split("-", 1)
+            out.update(range(int(a), int(b) + 1))
+        else:
+            out.add(int(part))
+    return sorted(out)
+
+
+def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
+    """Rasterize the PDF and run both OCR engines on the whole document.
+
+    Returns ``(tess_text, paddle_text, blocked_report)``. ``blocked_report`` is
+    ``[(page_number, [divergence, ...]), ...]`` for the content-blocked pages:
+    on such a page the sibling text IS the PaddleOCR fill (the VLM couldn't
+    produce it), so the only mechanical check is PaddleOCR-vs-Tesseract on that
+    one page image. Each divergence is ``{line, context, paddle, tess}`` for a
+    load-bearing token the two engines read differently (PaddleOCR is the fill /
+    sibling spine; Tesseract cross-checks)."""
+    blocked_report = []
     with tempfile.TemporaryDirectory(prefix=f"ocr-{stem}-") as tmp:
         images = rasterize(pdf, tmp, dpi)
         print(f"      {len(images)} page image(s)")
@@ -471,7 +510,43 @@ def _ocr_pages(pdf, stem, dpi):
         tess_text = run_tesseract(images)
         print("      PaddleOCR (primary cross-check) ...")
         paddle_text = run_paddleocr(images)
-    return tess_text, paddle_text
+        for n in blocked_pages:
+            if not (1 <= n <= len(images)):
+                print(f"      ! blocked page {n} out of range (1..{len(images)}) — skipped")
+                continue
+            print(f"      blocked page {n}: PaddleOCR fill vs Tesseract ...")
+            p_txt = run_paddleocr([images[n - 1]])
+            t_txt = run_tesseract([images[n - 1]])
+            # PaddleOCR is the fill (the sibling on this page) → it is the spine;
+            # build_consensus_2 hardcodes candidates.tesseract=base, .paddleocr=other,
+            # so normalize the keys to true engine names here.
+            _, contested, _ = build_consensus_2(p_txt, t_txt)
+            div = [{"line": c["line"], "context": c["context"],
+                    "paddle": c["candidates"]["tesseract"],   # base = PaddleOCR fill
+                    "tess": c["candidates"]["paddleocr"]}     # other = Tesseract
+                   for c in contested
+                   if is_load_bearing(c["candidates"]["tesseract"], p_txt,
+                                      c["char_start"], c["char_end"])]
+            blocked_report.append((n, div))
+    return tess_text, paddle_text, blocked_report
+
+
+def print_blocked_report(blocked_report):
+    """Print the PaddleOCR-vs-Tesseract check for each content-blocked page.
+    The sibling on these pages is the PaddleOCR fill, so the agent must VLM-verify
+    each against the page image regardless — this surfaces where the two OCR
+    engines disagree (the highest-risk tokens to check)."""
+    for n, div in blocked_report:
+        if not div:
+            print(f"\n  blocked page {n}: PaddleOCR fill and Tesseract agree on every "
+                  f"load-bearing token — still VLM-verify the page against its image.")
+            continue
+        print(f"\n  blocked page {n}: {len(div)} PaddleOCR-vs-Tesseract divergence(s) — the "
+              f"sibling here IS the PaddleOCR fill; VLM-verify each against the page image "
+              f"and correct the sibling where PaddleOCR is wrong:")
+        for d in div:
+            print(f"    line {d['line']}: paddleocr(fill)={d['paddle']!r}  tesseract={d['tess']!r}")
+            print(f"      {d['context']}")
 
 
 def _resolve_pdf(arg):
@@ -504,8 +579,9 @@ def cmd_run(args):
             "REASON (fully content-blocked source → OCR-only 2-engine sibling)."
         )
 
+    blocked = parse_pages(args.blocked_pages)
     print(f"[1/2] Rasterizing {pdf.name} at {args.dpi} dpi + OCR ...")
-    tess_text, paddle_text = _ocr_pages(pdf, stem, args.dpi)
+    tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
 
     print("[2/2] Writing the sibling + confirming load-bearing words/numbers ...")
     if args.vlm:
@@ -527,6 +603,7 @@ def cmd_run(args):
               f"paragraph/page. Recover the dropped region before using the sibling.")
 
     print_confirm_report(divergences, sibling)
+    print_blocked_report(blocked_report)
 
 
 def cmd_verify(args):
@@ -541,11 +618,13 @@ def cmd_verify(args):
             f"no sibling to verify: {sibling}\n"
             f"  produce it first: ocr-consensus.py run {args.pdf} --vlm ...")
 
+    blocked = parse_pages(args.blocked_pages)
     print(f"Rasterizing {pdf.name} at {args.dpi} dpi + OCR (re-confirm) ...")
-    tess_text, paddle_text = _ocr_pages(pdf, stem, args.dpi)
+    tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
     sib_text = sibling.read_text(encoding="utf-8")
     divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
     print_confirm_report(divergences, sibling)
+    print_blocked_report(blocked_report)
 
 
 def cmd_engines(_args):
@@ -683,6 +762,10 @@ def main():
                             "and record this reason; for fully content-blocked sources only")
     p_run.add_argument("--dpi", type=int, default=300)
     p_run.add_argument("--force", action="store_true", help="overwrite an existing sibling (backfill)")
+    p_run.add_argument("--blocked-pages", metavar="SPEC", default=None,
+                       help="pages the VLM was content-blocked on and PaddleOCR filled "
+                            "(e.g. '5-7,10,14-15'); on each, print PaddleOCR-vs-Tesseract "
+                            "divergences (the only mechanical check on a paddle-filled page)")
     p_run.set_defaults(func=cmd_run)
 
     p_vfy = sub.add_parser(
@@ -690,6 +773,9 @@ def main():
                        "(no regeneration) — same load-bearing divergence report")
     p_vfy.add_argument("pdf", help="source PDF whose .txt sibling to re-confirm")
     p_vfy.add_argument("--dpi", type=int, default=300)
+    p_vfy.add_argument("--blocked-pages", metavar="SPEC", default=None,
+                       help="pages filled by PaddleOCR (e.g. '5-7,10'); print the "
+                            "PaddleOCR-vs-Tesseract check for each")
     p_vfy.set_defaults(func=cmd_verify)
 
     p_eng = sub.add_parser("engines", help="report engine availability")

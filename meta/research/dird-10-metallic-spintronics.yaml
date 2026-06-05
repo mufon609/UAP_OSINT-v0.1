@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-10-metallic-spintronics-20100323.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Metallic Spintronics'
   internal_date: '2010-03-23'

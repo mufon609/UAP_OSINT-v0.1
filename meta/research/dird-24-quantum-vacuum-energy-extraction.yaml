@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
   format: pdf
+  content_block: 'All pages produced via Tesseract OCR — the VLM page-image read was content-blocked.'
 document_intrinsic:
   internal_title: Concepts for Extracting Energy from the Quantum Vacuum
   internal_date: '2010-04-06'

@@ -266,10 +266,17 @@ The OCR engines are glyph-recognition models that share failure modes (accent-dr
 `Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
 dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree
 against the VLM is often the *OCR* being wrong — the agent decides by reading the
-image, not by vote. On a **content-blocked page** the sibling text is a
-**PaddleOCR-fill** (PaddleOCR, not Tesseract, is the better fallback); confirm
-those pages by eye against the image, since a PaddleOCR-vs-PaddleOCR diff surfaces
-nothing. No receipt file is written — the corrected sibling *is* the artifact.
+image, not by vote. On a **content-blocked page** the VLM **cannot produce** the
+text (the filter blocks reproduction) so the sibling is a **PaddleOCR-fill**
+(PaddleOCR, not Tesseract, is the better fallback) — but the VLM **can still
+verify** it: judging the fill against the page image is a tiny output, not
+reproduction. Because the sibling there *is* PaddleOCR, the normal diff is silent,
+so `ocr-consensus.py run --blocked-pages N,M` instead surfaces the
+PaddleOCR-vs-Tesseract disagreements on those pages, which the agent VLM-verifies
+against the image. The blocked-page outcome is recorded in the source's
+`content_block` (renders as `**Content Block:**` on the node — `None`, or which
+pages were filled — so it is greppable repo-wide). No receipt file is written —
+the corrected sibling *is* the artifact.
 
 **The final check (at node audit).** Quote-vs-source verification is not done at
 sibling-prep time and is not a persisted gate; it happens when the node is

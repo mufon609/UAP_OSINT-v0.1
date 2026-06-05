@@ -5,6 +5,7 @@ status: active
 primary_sources:
 - path: government/fas-org-aatip-list-20210808.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   internal_title: (U) List of Attachments
   internal_date: '2018-01-09'

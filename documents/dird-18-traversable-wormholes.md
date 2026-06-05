@@ -20,6 +20,8 @@ doc_form: technical-report
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_18-DIRD_Traversible_Wormholes_Stargates_and_Negative_Energy.pdf |
 | Local Archive | [sources/government/dird-18-traversable-wormholes-20100406.pdf](../sources/government/dird-18-traversable-wormholes-20100406.pdf) |
 
+**Content Block:** All pages produced via Tesseract OCR — the VLM was content-blocked on the negative-energy passages (physical pp. 31-35).
+
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 
 ---
