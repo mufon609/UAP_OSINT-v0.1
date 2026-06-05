@@ -441,6 +441,21 @@ disagreement on a blocked-page span is recorded as noted — rule decided: Paddl
 wins) is a remaining mechanical task, pairing with re-filling existing
 Tesseract-filled siblings from PaddleOCR. Gate-wiring (item 3) still pending backfill.
 
+**Backfill started — dird-04 (first under the new policy) surfaced a real arbiter
+bug.** dird-04 grounded 55/55 spans, 3 load-bearing contested. One was an
+`ocr-majority` override of `Lím`→`Lim` (Drahoslav **Lím**, Czech): both OCR engines
+dropped the acute accent and the arbiter treated that as corroboration, so the gate
+would have told the contributor to *strip a correct diacritic* from a verbatim
+quote. Root cause: **diacritic-dropping is a CORRELATED Tesseract/PaddleOCR failure
+mode**, not independent — so "both OCR agree" is not corroboration when the
+disagreement is accent-only. Fix: **diacritic guard** in `arbitrate()` — a
+both-OCR-agree token that matches the grab after accent-stripping is kept and
+disclosed, never overridden (selftest case 7c). The other two contested were
+correctly disclosed (`ATTN` vs PaddleOCR `ATTNj`; `Brånemark` — engines mangled the
+å *differently*, no majority). Also tightened: grounding counts only load-bearing
+tokens, so `tokens == confirmed + len(contested)` holds honestly; dird-03 re-ground
+under the honest counts.
+
 **Blocks:** none.
 **Blocked by:** none.
 

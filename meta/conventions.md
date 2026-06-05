@@ -258,7 +258,12 @@ human step**: majority wins, and with no majority the **trust precedence `VLM >
 PaddleOCR > Tesseract`** decides, the contest noted. So on a normal page the grab
 (VLM) is the default winner; **both** OCR engines agreeing override it (the "grab
 misread a word/number" alarm — the gate flags it to correct the quote); a
-three-way split keeps the grab and discloses. On a **VLM-blocked page** the grab is
+three-way split keeps the grab and discloses. **Diacritic guard:** dropping or
+mangling an accent is a *correlated* OCR failure (Tesseract and PaddleOCR both read
+accents worse than a VLM), so two OCR engines that agree with each other but differ
+from the grab *only* in diacritics (`Lím`→`Lim`, `Brånemark`→`Branemark`) are not
+real corroboration — the grab is kept and disclosed, never overridden to its
+ascii-folded OCR reading. On a **VLM-blocked page** the grab is
 **PaddleOCR-fill** (PaddleOCR, not Tesseract, is the higher-trust fallback), so
 PaddleOCR is authoritative and a Tesseract disagreement resolves to PaddleOCR,
 noted. `scripts/checks/quote_source_grounding.py` is the gate: a quote/cited_work

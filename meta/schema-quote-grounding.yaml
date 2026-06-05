@@ -103,8 +103,9 @@ contested_token:
   #     wins (resolution = the OCR reading, != sibling). The grab misread a
   #     word/number — the gate flags it to correct the quote.
   #   disclosed         — no majority (three-way split, or 2-engine blocked-page
-  #     base); the highest-authority vote present is kept (resolution == sibling)
-  #     and the contest is disclosed.
+  #     base), OR a diacritic-only OCR agreement (both engines drop the same accent
+  #     — a correlated failure, not corroboration); the highest-authority vote
+  #     present is kept (resolution == sibling) and the contest is disclosed.
   #   image-adjudication — OPTIONAL human override of a flagged token (a contributor
   #     read the page image); persists across re-grounds. Not required anywhere.
   resolution_method_values: [ocr-majority, disclosed, image-adjudication]

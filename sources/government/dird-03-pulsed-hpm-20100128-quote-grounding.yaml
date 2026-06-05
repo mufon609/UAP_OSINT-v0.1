@@ -15,8 +15,8 @@ grounded_spans:
   located: true
   char_start: 195
   char_end: 240
-  tokens: 7
-  confirmed: 7
+  tokens: 6
+  confirmed: 6
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q2
@@ -24,8 +24,8 @@ grounded_spans:
   located: true
   char_start: 808
   char_end: 889
-  tokens: 28
-  confirmed: 28
+  tokens: 13
+  confirmed: 13
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q3
@@ -33,8 +33,8 @@ grounded_spans:
   located: true
   char_start: 1012
   char_end: 1433
-  tokens: 106
-  confirmed: 106
+  tokens: 70
+  confirmed: 70
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q4
@@ -42,8 +42,8 @@ grounded_spans:
   located: true
   char_start: 4305
   char_end: 4636
-  tokens: 60
-  confirmed: 60
+  tokens: 50
+  confirmed: 50
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q5
@@ -51,8 +51,8 @@ grounded_spans:
   located: true
   char_start: 5006
   char_end: 5208
-  tokens: 38
-  confirmed: 38
+  tokens: 31
+  confirmed: 31
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q6
@@ -60,8 +60,8 @@ grounded_spans:
   located: true
   char_start: 6572
   char_end: 7353
-  tokens: 139
-  confirmed: 139
+  tokens: 122
+  confirmed: 122
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q7
@@ -69,8 +69,8 @@ grounded_spans:
   located: true
   char_start: 7433
   char_end: 7786
-  tokens: 70
-  confirmed: 70
+  tokens: 64
+  confirmed: 64
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q8
@@ -78,8 +78,8 @@ grounded_spans:
   located: true
   char_start: 8123
   char_end: 8445
-  tokens: 62
-  confirmed: 62
+  tokens: 54
+  confirmed: 54
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q9
@@ -87,8 +87,8 @@ grounded_spans:
   located: true
   char_start: 8691
   char_end: 8927
-  tokens: 36
-  confirmed: 36
+  tokens: 30
+  confirmed: 30
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q10
@@ -96,8 +96,8 @@ grounded_spans:
   located: true
   char_start: 13277
   char_end: 13807
-  tokens: 103
-  confirmed: 103
+  tokens: 93
+  confirmed: 93
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q11
@@ -105,8 +105,8 @@ grounded_spans:
   located: true
   char_start: 13912
   char_end: 14738
-  tokens: 143
-  confirmed: 143
+  tokens: 125
+  confirmed: 125
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q12
@@ -114,8 +114,8 @@ grounded_spans:
   located: true
   char_start: 38866
   char_end: 39066
-  tokens: 31
-  confirmed: 31
+  tokens: 28
+  confirmed: 28
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q13
@@ -123,8 +123,8 @@ grounded_spans:
   located: true
   char_start: 46603
   char_end: 47025
-  tokens: 74
-  confirmed: 74
+  tokens: 69
+  confirmed: 69
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q14
@@ -132,8 +132,8 @@ grounded_spans:
   located: true
   char_start: 49563
   char_end: 49869
-  tokens: 54
-  confirmed: 54
+  tokens: 51
+  confirmed: 51
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q15
@@ -141,8 +141,8 @@ grounded_spans:
   located: true
   char_start: 57166
   char_end: 57525
-  tokens: 59
-  confirmed: 59
+  tokens: 54
+  confirmed: 54
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q16
@@ -150,8 +150,8 @@ grounded_spans:
   located: true
   char_start: 61508
   char_end: 61623
-  tokens: 21
-  confirmed: 21
+  tokens: 14
+  confirmed: 14
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q17
@@ -159,8 +159,8 @@ grounded_spans:
   located: true
   char_start: 66759
   char_end: 67282
-  tokens: 95
-  confirmed: 95
+  tokens: 72
+  confirmed: 72
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q18
@@ -168,8 +168,8 @@ grounded_spans:
   located: true
   char_start: 76361
   char_end: 76760
-  tokens: 98
-  confirmed: 98
+  tokens: 83
+  confirmed: 83
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q19
@@ -177,8 +177,8 @@ grounded_spans:
   located: true
   char_start: 77188
   char_end: 77424
-  tokens: 54
-  confirmed: 54
+  tokens: 45
+  confirmed: 45
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q20
@@ -186,8 +186,8 @@ grounded_spans:
   located: true
   char_start: 82965
   char_end: 83230
-  tokens: 59
-  confirmed: 59
+  tokens: 50
+  confirmed: 50
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q21
@@ -195,8 +195,8 @@ grounded_spans:
   located: true
   char_start: 75019
   char_end: 75333
-  tokens: 61
-  confirmed: 61
+  tokens: 54
+  confirmed: 54
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q22
@@ -204,8 +204,8 @@ grounded_spans:
   located: true
   char_start: 97116
   char_end: 97505
-  tokens: 67
-  confirmed: 67
+  tokens: 60
+  confirmed: 60
   contested: []
 - node: dird-03-pulsed-hpm
   ref: q23
@@ -213,6 +213,6 @@ grounded_spans:
   located: true
   char_start: 97724
   char_end: 98273
-  tokens: 94
-  confirmed: 94
+  tokens: 83
+  confirmed: 83
   contested: []

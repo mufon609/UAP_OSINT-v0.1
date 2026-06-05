@@ -87,6 +87,7 @@ import hashlib
 import re
 import subprocess
 import tempfile
+import unicodedata
 
 import yaml
 
@@ -667,6 +668,15 @@ def cmd_selftest(_args):
     res, meth, _ = arbitrate("5", "5", None)
     if meth != "disclosed":
         failures.append(f"case7b: lone OCR read should not override, got {meth}")
+    # Case 7c: diacritic guard — both OCR engines agree but differ from the grab
+    # ONLY by a dropped accent -> NOT corroboration -> keep grab, disclosed.
+    res, meth, _ = arbitrate("Lím", "Lim", "Lim")
+    if (res, meth) != ("Lím", "disclosed"):
+        failures.append(f"case7c: diacritic-only should keep grab, got {(res, meth)}")
+    # ...but a real base-letter disagreement still overrides.
+    res, meth, _ = arbitrate("Lém", "Lim", "Lim")
+    if (res, meth) != ("Lim", "ocr-majority"):
+        failures.append(f"case7c: base-letter diff should override, got {(res, meth)}")
 
     # Case 8: load-bearing filter — words/numbers are grounded; structure is not.
     lb = lambda s: is_load_bearing(s, s, 0, len(s))
@@ -695,6 +705,7 @@ def cmd_selftest(_args):
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
     print("  case6: arbiter -> both OCR engines override the grab (ocr-majority)")
     print("  case7: arbiter -> three-way split keeps the grab (disclosed)")
+    print("  case7c: diacritic-only OCR agreement does not override the grab")
     print("  case8: load-bearing filter -> words/numbers grounded, structure not")
     return 0
 
@@ -743,6 +754,16 @@ def is_load_bearing(surface, text, cs, ce):
     return False
 
 
+def _strip_diacritics(s):
+    """`s` with combining accents removed (NFD decompose, drop combining marks):
+    'Lím' -> 'Lim', 'Brånemark' -> 'Branemark'. Used to detect a disagreement that
+    is purely diacritical."""
+    if s is None:
+        return None
+    return "".join(c for c in unicodedata.normalize("NFD", s)
+                   if not unicodedata.combining(c))
+
+
 def arbitrate(grab, tess, paddle):
     """Resolve a load-bearing contested token with no human input. Returns
     (resolution, method, note). Both OCR engines agreeing against the grab
@@ -750,9 +771,19 @@ def arbitrate(grab, tess, paddle):
     grab is kept and disclosed. Trust precedence VLM > PaddleOCR > Tesseract falls
     out of what the grab is: a normal page's grab is the VLM read, a VLM-blocked
     page's grab is the PaddleOCR fill, so keeping the grab keeps the higher
-    authority either way."""
+    authority either way.
+
+    Diacritic guard: dropping/mangling an accent is a CORRELATED OCR failure (both
+    Tesseract and PaddleOCR read accents worse than a VLM), so two OCR engines that
+    agree with each other but differ from the grab ONLY in diacritics
+    (`Lím`->`Lim`) are not real corroboration — keep the grab and disclose, rather
+    than override a likely-correct accented name to its ascii-folded OCR read."""
     if (tess is not None and paddle is not None
             and norm_token(tess) == norm_token(paddle)):
+        if _strip_diacritics(grab) == _strip_diacritics(tess):
+            return grab, "disclosed", (
+                "auto: both OCR engines agree but differ from the grab only in "
+                "diacritics — grab kept (VLM is authoritative on accents)")
         return tess, "ocr-majority", "auto: both OCR engines agree against the grab"
     return grab, "disclosed", "auto: three-way split — grab kept, disclosed"
 
@@ -840,9 +871,12 @@ def _partition_prior_spans(old, node_slug):
         so a record that aggregates several citing nodes isn't clobbered when one
         node is re-grounded (the shared-source merge).
       - ``prior`` — ``{(ref, char_start): (resolution, method, session)}`` for THIS
-        node's spans (and for untagged legacy v1 spans, which were single-node by
-        construction), so a contributor's optional manual override of a flagged
-        token carries across the re-ground.
+        node's **manual** (``image-adjudication``) overrides only, so a
+        contributor's optional hand-resolution of a flagged token carries across
+        the re-ground. Auto resolutions (``ocr-majority`` / ``disclosed``) are NOT
+        carried — they are deterministic from the engine reads, so they must be
+        recomputed by ``arbitrate()`` every ground (else a stale auto-resolution
+        would shadow an arbiter logic change, e.g. the diacritic guard).
 
     Other nodes' resolutions stay intact because their whole span entries are
     preserved in ``other_spans`` — they are never rebuilt, so never re-keyed.
@@ -854,9 +888,10 @@ def _partition_prior_spans(old, node_slug):
             other.append(gs)
             continue
         for c in (gs.get("contested") or []):
-            prior[(gs.get("ref"), c.get("char_start"))] = (
-                c.get("resolution"), c.get("resolution_method"),
-                c.get("adjudicator_session"))
+            if c.get("resolution_method") == "image-adjudication":
+                prior[(gs.get("ref"), c.get("char_start"))] = (
+                    c.get("resolution"), c.get("resolution_method"),
+                    c.get("adjudicator_session"))
     return prior, other
 
 
@@ -901,6 +936,13 @@ def cmd_ground(args):
         # The sibling is the authoritative grab (spine); the 2 OCR engines
         # cross-check. contested = sibling tokens corroborated by neither engine.
         _, contested, _ = build_consensus(sib_text, tess, paddle)
+        # Ground only WORDS and NUMBERS: drop document structure (punctuation,
+        # bullets, brackets, markup) from the contested set up front, so every
+        # recorded contested token is load-bearing and the per-span invariant
+        # tokens == confirmed + len(contested) holds honestly.
+        contested = [c for c in contested
+                     if is_load_bearing(c["candidates"]["vlm"], sib_text,
+                                        c["char_start"], c["char_end"])]
 
         # Merge semantics: one record aggregates every node that cites this
         # source. Re-grounding a node replaces only THAT node's spans and
@@ -928,19 +970,18 @@ def cmd_ground(args):
                 print(f"   ! {ref}: NOT located in sibling")
                 continue
             qs, qe = loc
-            n_tokens = sum(1 for (_s, cs, _ce) in sib_tokens if qs <= cs < qe)
+            # Count only LOAD-BEARING span tokens (words/numbers); `contested` is
+            # already filtered to load-bearing, so confirmed = n_tokens - len(cin)
+            # is exact and tokens == confirmed + len(contested) holds.
+            n_tokens = sum(1 for (s, cs, ce) in sib_tokens
+                           if qs <= cs < qe and is_load_bearing(s, sib_text, cs, ce))
             cin = []
             for c in contested:
-                # start-in-span — the same membership test as n_tokens, so
-                # confirmed = n_tokens - len(cin) is exact and never negative
-                # (quotes begin at a token boundary, so no token straddles qs).
+                # start-in-span membership (quotes begin at a token boundary, so no
+                # token straddles qs).
                 if not (qs <= c["char_start"] < qe):
                     continue
                 sib_tok = c["candidates"]["vlm"]
-                # Only WORDS and NUMBERS are grounded; structure (punctuation,
-                # bullets, brackets, markup) is never source-literal prose -> skip.
-                if not is_load_bearing(sib_tok, sib_text, c["char_start"], c["char_end"]):
-                    continue
                 # Automated arbiter — no human step. A contributor's prior manual
                 # override persists; otherwise resolve by majority + trust
                 # precedence VLM > PaddleOCR > Tesseract:
