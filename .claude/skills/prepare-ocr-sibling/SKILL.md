@@ -79,12 +79,12 @@ few libs). `ocr-consensus.py run` / `ground` auto-relaunch under that venv.
 
    **Genuinely-blocked pages → PaddleOCR-fill.** For each page that blocks in
    isolation, rasterize that one page and fill its slice from **PaddleOCR** — the
-   higher-trust OCR engine, per the trust precedence `VLM > PaddleOCR > Tesseract`
-   (`pdftoppm -png -r 300 -f N -l N …`, then run that page through
-   `ocr-consensus.py`'s PaddleOCR path). That degrades *those pages only* to the
-   2-engine regime (PaddleOCR grab + Tesseract cross-check at ground time);
-   PaddleOCR is authoritative there and a Tesseract disagreement on a load-bearing
-   token is noted — confined and disclosed, not a whole-document fallback.
+   higher-trust OCR engine (`pdftoppm -png -r 300 -f N -l N …`, then run that page
+   through `ocr-consensus.py`'s PaddleOCR path). That degrades *those pages only* to
+   a 2-engine regime: the PaddleOCR fill becomes the grab and Tesseract is the
+   cross-check at ground time. A Tesseract disagreement on such a page is disclosed
+   (grab kept), like any other contested token — confined and disclosed, not a
+   whole-document fallback.
 
 3. **Assemble the base + write the sibling.** Concatenate the per-page files in
    order (`cat /tmp/{stem}/p*.txt > /tmp/{stem}-vlm.txt`; zero-padding sorts
@@ -124,14 +124,16 @@ few libs). `ocr-consensus.py run` / `ground` auto-relaunch under that venv.
    each quote/cited_work span, and writes `{stem}-quote-grounding.yaml`. It compares
    only the **load-bearing characters** (letters, digits, `. - % $ °`); document
    structure (punctuation, bullets, brackets, markup) is not grounded. Each
-   load-bearing contested token is **auto-arbitrated, no human step** — majority,
-   then trust precedence `VLM > PaddleOCR > Tesseract` (`ground` fills `resolution`
-   + `resolution_method: ocr-majority | disclosed` itself). The contributor's only
-   job is the **rare** case the gate flags: `resolution != sibling` (an
-   `ocr-majority` override — two engines agree the grab misread a word/number).
-   There, correct the **quote/citation** to the OCR reading (never hand-edit the
-   frozen sibling) and re-run `ground`. `quote_source_grounding.py` then passes:
-   every quoted/cited span's words and numbers rest on two uncorrelated reads.
+   load-bearing contested token is **auto-arbitrated, no human step**: the VLM grab
+   always wins and the disagreement is **disclosed** (`ground` fills `resolution =`
+   the grab + `resolution_method: disclosed` itself). The OCR engines confirm or
+   flag, never override — two glyph-recognition engines share failure modes, so
+   their agreement is not evidence against the grab. Nothing for the contributor to
+   do in the normal case. *Optionally*, if a reviewer judges the grab itself wrong
+   on a disclosed token, they may manually image-adjudicate it
+   (`resolution_method: image-adjudication`, resolution = what the page shows) and
+   correct the **quote/citation** to match (never hand-edit the frozen sibling),
+   then re-run `ground`.
 
 The sibling is canonical once registered; `extract-source.py` and the
 verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

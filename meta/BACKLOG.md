@@ -446,15 +446,26 @@ bug.** dird-04 grounded 55/55 spans, 3 load-bearing contested. One was an
 `ocr-majority` override of `Lím`→`Lim` (Drahoslav **Lím**, Czech): both OCR engines
 dropped the acute accent and the arbiter treated that as corroboration, so the gate
 would have told the contributor to *strip a correct diacritic* from a verbatim
-quote. Root cause: **diacritic-dropping is a CORRELATED Tesseract/PaddleOCR failure
-mode**, not independent — so "both OCR agree" is not corroboration when the
-disagreement is accent-only. Fix: **diacritic guard** in `arbitrate()` — a
-both-OCR-agree token that matches the grab after accent-stripping is kept and
-disclosed, never overridden (selftest case 7c). The other two contested were
-correctly disclosed (`ATTN` vs PaddleOCR `ATTNj`; `Brånemark` — engines mangled the
-å *differently*, no majority). Also tightened: grounding counts only load-bearing
-tokens, so `tokens == confirmed + len(contested)` holds honestly; dird-03 re-ground
-under the honest counts.
+quote. First fix was a narrow **diacritic guard**. Then **dird-05 showed the bug is
+general and the override rule must go entirely:** of its 3 `ocr-majority` overrides,
+**all 3 were OCR errors on a correct grab** — `SiO2`→`SiOz` (subscript 2 read as z),
+`Science`→`Sclence` (`i`→`cl`), `2nd`→`2` (dropped superscript). Tesseract and
+PaddleOCR are both glyph-recognition engines, so they share a whole family of
+glyph-confusion failures; "two OCR engines agree against the grab" is therefore not
+evidence against the uncorrelated, higher-fidelity VLM grab. **Decision (maintainer):
+drop `ocr-majority` — the grab always wins and the disagreement is disclosed; the OCR
+engines confirm or flag, never override.** `arbitrate()` simplified (diacritic guard
++ `_strip_diacritics` removed — subsumed); `resolution_method` enum is now
+`disclosed | image-adjudication`; the gate's mismatch branch is reachable only by an
+optional manual image-adjudication. The original override existed to catch a bad
+sibling (DIRD-16, OCR-then-correct) — a case the frozen-VLM-grab rule already
+prevents at source. Also tightened: grounding counts only load-bearing tokens, so
+`tokens == confirmed + len(contested)` holds honestly; dird-03 re-grounded under the
+honest counts.
+
+dird-05 grounded 56/56, 8 load-bearing contested, **all disclosed** (correct grabs
+kept: `SiO2`, `Science`, `2nd`, `Lütjering`, redactions). The other ungrounded DIRDs
+(06,07,08,09,10,11,12,13,14,18,24,26) remain a mechanical re-ground.
 
 **Blocks:** none.
 **Blocked by:** none.

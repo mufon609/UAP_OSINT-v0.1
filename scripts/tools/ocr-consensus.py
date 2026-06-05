@@ -87,7 +87,6 @@ import hashlib
 import re
 import subprocess
 import tempfile
-import unicodedata
 
 import yaml
 
@@ -655,28 +654,17 @@ def cmd_selftest(_args):
     if any(c["candidates"]["vlm"] is not None for c in c5):
         failures.append("case5: 2-engine candidates.vlm should be None")
 
-    # Case 6: arbiter — both OCR engines agree against the grab -> ocr-majority,
-    # resolution = the OCR reading (the grab misread).
-    res, meth, _ = arbitrate("82", "81", "81")
-    if (res, meth) != ("81", "ocr-majority"):
-        failures.append(f"case6: expected ('81','ocr-majority'), got {(res, meth)}")
-    # Case 7: arbiter — three-way split -> keep grab, disclosed.
-    res, meth, _ = arbitrate("Kiyshko", "Klyshko", "Klyschko")
-    if (res, meth) != ("Kiyshko", "disclosed"):
-        failures.append(f"case7: expected ('Kiyshko','disclosed'), got {(res, meth)}")
-    # Case 7b: arbiter — one OCR engine missing -> no majority -> disclosed.
-    res, meth, _ = arbitrate("5", "5", None)
-    if meth != "disclosed":
-        failures.append(f"case7b: lone OCR read should not override, got {meth}")
-    # Case 7c: diacritic guard — both OCR engines agree but differ from the grab
-    # ONLY by a dropped accent -> NOT corroboration -> keep grab, disclosed.
-    res, meth, _ = arbitrate("Lím", "Lim", "Lim")
-    if (res, meth) != ("Lím", "disclosed"):
-        failures.append(f"case7c: diacritic-only should keep grab, got {(res, meth)}")
-    # ...but a real base-letter disagreement still overrides.
-    res, meth, _ = arbitrate("Lém", "Lim", "Lim")
-    if (res, meth) != ("Lim", "ocr-majority"):
-        failures.append(f"case7c: base-letter diff should override, got {(res, meth)}")
+    # Case 6: arbiter — the grab ALWAYS wins, every disagreement disclosed; the OCR
+    # engines never override (they share glyph-confusion failures, so even both
+    # agreeing is not evidence against the uncorrelated VLM grab). Covers
+    # both-OCR-agree (incl. the dird-05 false-override cases SiO2/Science/2nd) and
+    # three-way splits and a lone OCR read.
+    for grab, t, p in [("82", "81", "81"), ("SiO2", "SiOz", "SiOz"),
+                       ("Science", "Sclence", "Sclence"), ("Lím", "Lim", "Lim"),
+                       ("Kiyshko", "Klyshko", "Klyschko"), ("5", "5", None)]:
+        res, meth, _ = arbitrate(grab, t, p)
+        if (res, meth) != (grab, "disclosed"):
+            failures.append(f"case6: {grab!r} must be kept+disclosed, got {(res, meth)}")
 
     # Case 8: load-bearing filter — words/numbers are grounded; structure is not.
     lb = lambda s: is_load_bearing(s, s, 0, len(s))
@@ -703,9 +691,7 @@ def cmd_selftest(_args):
     print("  case3: three-way disagreement -> contested")
     print("  case4: char offsets accurate for assemble")
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
-    print("  case6: arbiter -> both OCR engines override the grab (ocr-majority)")
-    print("  case7: arbiter -> three-way split keeps the grab (disclosed)")
-    print("  case7c: diacritic-only OCR agreement does not override the grab")
+    print("  case6: arbiter -> grab always kept + disclosed (OCR never overrides)")
     print("  case8: load-bearing filter -> words/numbers grounded, structure not")
     return 0
 
@@ -718,9 +704,9 @@ def cmd_selftest(_args):
 # NUMBERS of the spans a node quotes or cites (structure is not compared — see
 # is_load_bearing). The `.txt` sibling is the authoritative grab (the spine);
 # Tesseract + PaddleOCR cross-check it. Each load-bearing contested token is
-# resolved by an automated arbiter (majority, then trust precedence VLM >
-# PaddleOCR > Tesseract) — no human step. Furniture is never quoted -> never
-# confirmed. Record: {stem}-quote-grounding.yaml
+# resolved by an automated arbiter — no human step: the grab always wins and the
+# disagreement is disclosed (the OCR engines confirm or flag, never override).
+# Furniture is never quoted -> never confirmed. Record: {stem}-quote-grounding.yaml
 # (meta/schema-quote-grounding.yaml). Gate: scripts/checks/quote_source_grounding.py.
 # ---------------------------------------------------------------------------
 _OCR_TYPES = {"ocr-scan", "extraction-lossy"}
@@ -754,38 +740,27 @@ def is_load_bearing(surface, text, cs, ce):
     return False
 
 
-def _strip_diacritics(s):
-    """`s` with combining accents removed (NFD decompose, drop combining marks):
-    'Lím' -> 'Lim', 'Brånemark' -> 'Branemark'. Used to detect a disagreement that
-    is purely diacritical."""
-    if s is None:
-        return None
-    return "".join(c for c in unicodedata.normalize("NFD", s)
-                   if not unicodedata.combining(c))
-
-
 def arbitrate(grab, tess, paddle):
-    """Resolve a load-bearing contested token with no human input. Returns
-    (resolution, method, note). Both OCR engines agreeing against the grab
-    override it (``ocr-majority`` — the grab misread a word/number); otherwise the
-    grab is kept and disclosed. Trust precedence VLM > PaddleOCR > Tesseract falls
-    out of what the grab is: a normal page's grab is the VLM read, a VLM-blocked
-    page's grab is the PaddleOCR fill, so keeping the grab keeps the higher
-    authority either way.
+    """Resolve a load-bearing contested token with no human input: the VLM grab
+    ALWAYS wins and the disagreement is DISCLOSED (all three reads recorded).
+    Returns (resolution, method, note).
 
-    Diacritic guard: dropping/mangling an accent is a CORRELATED OCR failure (both
-    Tesseract and PaddleOCR read accents worse than a VLM), so two OCR engines that
-    agree with each other but differ from the grab ONLY in diacritics
-    (`Lím`->`Lim`) are not real corroboration — keep the grab and disclose, rather
-    than override a likely-correct accented name to its ascii-folded OCR read."""
+    The OCR engines never override the grab. They are both glyph-recognition
+    models, so they share failure modes — accent-drop (`Lím`->`Lim`), `i`<->`cl`,
+    subscript-digit<->letter (`SiO2`->`SiOz`), dropped super/subscripts
+    (`2nd`->`2`). When BOTH misread the same way they agree with each other but are
+    *both wrong*, so "two OCR engines agree against the grab" is not reliable
+    evidence against the uncorrelated, higher-fidelity VLM grab (dird-05 backfill:
+    3/3 such "overrides" were OCR errors on a correct grab). Their role is to
+    CONFIRM (when they agree with the grab the token isn't contested) or to FLAG
+    (disagreement -> disclosed for an optional human look), never to override."""
     if (tess is not None and paddle is not None
             and norm_token(tess) == norm_token(paddle)):
-        if _strip_diacritics(grab) == _strip_diacritics(tess):
-            return grab, "disclosed", (
-                "auto: both OCR engines agree but differ from the grab only in "
-                "diacritics — grab kept (VLM is authoritative on accents)")
-        return tess, "ocr-majority", "auto: both OCR engines agree against the grab"
-    return grab, "disclosed", "auto: three-way split — grab kept, disclosed"
+        note = (f"auto: both OCR engines read {tess!r} vs the grab — grab kept "
+                f"(OCR engines share glyph-confusion failures), disclosed")
+    else:
+        note = "auto: OCR engines disagree with the grab — grab kept, disclosed"
+    return grab, "disclosed", note
 
 
 def _norm_for_locate(s):
@@ -873,10 +848,9 @@ def _partition_prior_spans(old, node_slug):
       - ``prior`` — ``{(ref, char_start): (resolution, method, session)}`` for THIS
         node's **manual** (``image-adjudication``) overrides only, so a
         contributor's optional hand-resolution of a flagged token carries across
-        the re-ground. Auto resolutions (``ocr-majority`` / ``disclosed``) are NOT
-        carried — they are deterministic from the engine reads, so they must be
-        recomputed by ``arbitrate()`` every ground (else a stale auto-resolution
-        would shadow an arbiter logic change, e.g. the diacritic guard).
+        the re-ground. The auto ``disclosed`` resolution is NOT carried — it is
+        deterministic from the engine reads, so it is recomputed by ``arbitrate()``
+        every ground (else a stale auto-resolution would shadow an arbiter change).
 
     Other nodes' resolutions stay intact because their whole span entries are
     preserved in ``other_spans`` — they are never rebuilt, so never re-keyed.
@@ -958,7 +932,7 @@ def cmd_ground(args):
 
         collapsed, idxmap = _collapsed_index_map(sib_text)
         sib_tokens = tokenize(sib_text)
-        grounded, total_contested, unlocated, overrides = [], 0, 0, 0
+        grounded, total_contested, unlocated = [], 0, 0
         for ref, kind, txt in spans:
             loc = locate_span(collapsed, idxmap, txt)
             if loc is None:
@@ -982,18 +956,14 @@ def cmd_ground(args):
                 if not (qs <= c["char_start"] < qe):
                     continue
                 sib_tok = c["candidates"]["vlm"]
-                # Automated arbiter — no human step. A contributor's prior manual
-                # override persists; otherwise resolve by majority + trust
-                # precedence VLM > PaddleOCR > Tesseract:
-                #   - both OCR engines agree against the grab -> they override it
-                #     (the "grab misread a word/number" alarm; the gate flags it);
-                #   - otherwise keep the grab (highest authority) and disclose.
+                # Automated arbiter — no human step: the VLM grab always wins and
+                # the disagreement is disclosed (the OCR engines confirm or flag,
+                # never override — see arbitrate()). A contributor's prior MANUAL
+                # override (image-adjudication) still persists.
                 res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
                 if res is None:
                     res, meth, sess = arbitrate(
                         sib_tok, c["candidates"]["tesseract"], c["candidates"]["paddleocr"])
-                if meth == "ocr-majority":
-                    overrides += 1
                 cin.append({
                     "token_index": c["token_index"],
                     "char_start": c["char_start"],
@@ -1030,15 +1000,10 @@ def cmd_ground(args):
             "grounded_spans": other_spans + grounded,
         }
         write_yaml(record_path, record)
-        disclosed = total_contested - overrides
         print(f"   -> {record_path}")
-        msg = (f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
-               f"{total_contested} load-bearing contested "
-               f"({overrides} OCR-override, {disclosed} disclosed) — auto-arbitrated")
-        if overrides:
-            msg += (" — OCR-override means two engines agree the grab misread a "
-                    "word/number; the gate flags it to correct the quote.")
-        print(msg)
+        print(f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
+              f"{total_contested} load-bearing contested — all disclosed, grab kept "
+              f"(OCR engines confirm or flag, never override).")
 
     if skipped:
         print(f"\nSKIPPED {len(skipped)} source(s) — their spans remain ungrounded "

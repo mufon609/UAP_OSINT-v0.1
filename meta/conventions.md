@@ -254,16 +254,16 @@ source with Tesseract + PaddleOCR, aligns to the sibling, and records — in
 `{stem}-quote-grounding.yaml` (spec `meta/schema-quote-grounding.yaml`) — each
 load-bearing span token as confirmed (an OCR engine corroborates the grab) or
 contested. A contested token is resolved by a **single automated arbiter, with no
-human step**: majority wins, and with no majority the **trust precedence `VLM >
-PaddleOCR > Tesseract`** decides, the contest noted. So on a normal page the grab
-(VLM) is the default winner; **both** OCR engines agreeing override it (the "grab
-misread a word/number" alarm — the gate flags it to correct the quote); a
-three-way split keeps the grab and discloses. **Diacritic guard:** dropping or
-mangling an accent is a *correlated* OCR failure (Tesseract and PaddleOCR both read
-accents worse than a VLM), so two OCR engines that agree with each other but differ
-from the grab *only* in diacritics (`Lím`→`Lim`, `Brånemark`→`Branemark`) are not
-real corroboration — the grab is kept and disclosed, never overridden to its
-ascii-folded OCR reading. On a **VLM-blocked page** the grab is
+human step: the VLM grab always wins and the disagreement is disclosed** (all three
+reads recorded). The OCR engines **confirm or flag, never override** — Tesseract
+and PaddleOCR are both glyph-recognition models, so they share failure modes
+(accent-drop `Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter
+`SiO2`→`SiOz`, dropped super/subscripts `2nd`→`2`). When both make the *same* glyph
+error they agree with each other yet are both wrong, so "two OCR engines agree
+against the grab" is **not** evidence against the uncorrelated, higher-fidelity VLM
+grab (the dird-05 backfill: 3/3 such would-be overrides were OCR errors on a correct
+grab). A contributor MAY still manually image-adjudicate a flagged token if they
+judge the grab itself wrong; that is the only path that changes a quote. On a **VLM-blocked page** the grab is
 **PaddleOCR-fill** (PaddleOCR, not Tesseract, is the higher-trust fallback), so
 PaddleOCR is authoritative and a Tesseract disagreement resolves to PaddleOCR,
 noted. `scripts/checks/quote_source_grounding.py` is the gate: a quote/cited_work
@@ -276,11 +276,12 @@ record were **retired**.
 Produce + ground via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes
 the VLM base as the sibling (per-page chunked VLM production survives the content
 filter — the few pages it blocks are PaddleOCR-filled, confined to those pages),
-then `ocr-consensus.py ground` confirms the quoted spans and auto-arbitrates any
-contested load-bearing token. The **frozen-sibling rule**: the sibling is the VLM
-grab at creation and is **never hand-corrected** — corrections surface as the
-arbiter's OCR-override flag (fix the quote, re-ground), not as silent edits to the
-sibling. The **trust prerequisite**: the grab (sibling) must be uncorrelated with
+then `ocr-consensus.py ground` confirms the quoted spans and discloses any
+contested load-bearing token (grab kept). The **frozen-sibling rule**: the sibling
+is the VLM grab at creation and is **never hand-corrected** — if a contributor
+judges the grab itself wrong they manually image-adjudicate the token (fix the
+quote, re-ground), they do not silently edit the sibling. The **trust
+prerequisite**: the grab (sibling) must be uncorrelated with
 the confirming OCR engines, so a sibling produced by the retired OCR-then-correct
 process must be **regenerated as a VLM read before grounding** — otherwise an OCR
 engine rubber-stamps its own error class.
