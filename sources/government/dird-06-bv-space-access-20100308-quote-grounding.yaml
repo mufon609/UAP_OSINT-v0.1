@@ -1,0 +1,747 @@
+schema: quote-grounding/v2
+source_pdf: government/dird-06-bv-space-access-20100308.pdf
+sibling_txt: government/dird-06-bv-space-access-20100308.txt
+sibling_sha256: ae81313ea3de35de2f7c8f12df67bcb702f65fd38e93091066c83de98419388d
+generated: '2026-06-05'
+confirming_engines:
+- name: tesseract
+  version: 5.5.0
+- name: paddleocr
+  version: 3.6.0
+grounded_spans:
+- node: dird-06-space-access
+  ref: q-title-classification-banner
+  kind: quote
+  located: true
+  char_start: 0
+  char_end: 53
+  tokens: 7
+  confirmed: 3
+  contested:
+  - token_index: 4
+    char_start: 15
+    char_end: 21
+    line: 1
+    context: '...UNCLASSIFIED//[‹struck› through: FOR OFFICIAL USE ONL...'
+    sibling: struck
+    tesseract: R
+    paddleocr: null
+    resolution: struck
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 5
+    char_start: 22
+    char_end: 29
+    line: 1
+    context: '...UNCLASSIFIED//[struck ‹through›: FOR OFFICIAL USE ONLY]  [Def...'
+    sibling: through
+    tesseract: '-'
+    paddleocr: null
+    resolution: through
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 8
+    char_start: 35
+    char_end: 43
+    line: 1
+    context: '...SSIFIED//[struck through: FOR ‹OFFICIAL› USE ONLY]  [Defense Intellige...'
+    sibling: OFFICIAL
+    tesseract: '-'
+    paddleocr: '-'
+    resolution: OFFICIAL
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''-'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 10
+    char_start: 48
+    char_end: 52
+    line: 1
+    context: '...uck through: FOR OFFICIAL USE ‹ONLY›]  [Defense Intelligence Agenc...'
+    sibling: ONLY
+    tesseract: '-'
+    paddleocr: null
+    resolution: ONLY
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: q-title-page-id-block
+  kind: quote
+  located: true
+  char_start: 91
+  char_end: 286
+  tokens: 34
+  confirmed: 32
+  contested:
+  - token_index: 23
+    char_start: 133
+    char_end: 142
+    line: 10
+    context: '...lligence Reference Document  [‹redaction› bar] Acquisition Threat Suppo...'
+    sibling: redaction
+    tesseract: null
+    paddleocr: null
+    resolution: redaction
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 24
+    char_start: 143
+    char_end: 146
+    line: 10
+    context: '...eference Document  [redaction ‹bar›] Acquisition Threat Support  ...'
+    sibling: bar
+    tesseract: null
+    paddleocr: null
+    resolution: bar
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: q-prepared-by-author-redaction-block
+  kind: quote
+  located: true
+  char_start: 903
+  char_end: 984
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-06-space-access
+  ref: q-copyright-warning
+  kind: quote
+  located: true
+  char_start: 1007
+  char_end: 1105
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-06-space-access
+  ref: q-administrative-note-aawsa
+  kind: quote
+  located: true
+  char_start: 1107
+  char_end: 1528
+  tokens: 70
+  confirmed: 70
+  contested: []
+- node: dird-06-space-access
+  ref: q-intro-thesis-skill-not-technology
+  kind: quote
+  located: true
+  char_start: 10011
+  char_end: 10186
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-06-space-access
+  ref: q-intro-aerospace-veterans-hardware-issue
+  kind: quote
+  located: true
+  char_start: 11921
+  char_end: 11998
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-06-space-access
+  ref: q-intro-x15-end-of-aircraft-to-space
+  kind: quote
+  located: true
+  char_start: 14425
+  char_end: 14811
+  tokens: 68
+  confirmed: 68
+  contested: []
+- node: dird-06-space-access
+  ref: q-glider-vs-cruiser-two-configurations
+  kind: quote
+  located: true
+  char_start: 23469
+  char_end: 23962
+  tokens: 78
+  confirmed: 77
+  contested:
+  - token_index: 7524
+    char_start: 23729
+    char_end: 23735
+    line: 393
+    context: '...iable-capture, inward-turning ‹inlet⁴› can be integrated with the ve...'
+    sibling: inlet⁴
+    tesseract: inlet
+    paddleocr: inlet
+    resolution: inlet⁴
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''inlet'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: q-stephens-weight-factor-lifting-spacecraft
+  kind: quote
+  located: true
+  char_start: 37383
+  char_end: 37659
+  tokens: 42
+  confirmed: 42
+  contested: []
+- node: dird-06-space-access
+  ref: q-fdl7-cross-range-no-waiting
+  kind: quote
+  located: true
+  char_start: 41090
+  char_end: 41503
+  tokens: 80
+  confirmed: 80
+  contested: []
+- node: dird-06-space-access
+  ref: q-xlr129-vs-ssme-development-time
+  kind: quote
+  located: true
+  char_start: 75006
+  char_end: 75190
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-06-space-access
+  ref: q-horizontal-takeoff-a-priori-defeat
+  kind: quote
+  located: true
+  char_start: 96606
+  char_end: 96802
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-06-space-access
+  ref: q-conclusion-where-is-infrastructure
+  kind: quote
+  located: true
+  char_start: 108881
+  char_end: 109165
+  tokens: 53
+  confirmed: 53
+  contested: []
+- node: dird-06-space-access
+  ref: q-conclusion-space-business-backwards
+  kind: quote
+  located: true
+  char_start: 110752
+  char_end: 111227
+  tokens: 75
+  confirmed: 75
+  contested: []
+- node: dird-06-space-access
+  ref: q-conclusion-known-50-years-not-technology
+  kind: quote
+  located: true
+  char_start: 111399
+  char_end: 111693
+  tokens: 52
+  confirmed: 52
+  contested: []
+- node: dird-06-space-access
+  ref: cw1
+  kind: cited_work
+  located: true
+  char_start: 131244
+  char_end: 131404
+  tokens: 21
+  confirmed: 19
+  contested:
+  - token_index: 29226
+    char_start: 131261
+    char_end: 131262
+    line: 2077
+    context: '...L USE ONLY]  ¹ Bruno, Claudio ‹A›.; Czysz, Paul, "Future Spacec...'
+    sibling: A
+    tesseract: '&'
+    paddleocr: '&'
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''&'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 29244
+    char_start: 131343
+    char_end: 131345
+    line: 2077
+    context: '...ms," Second Edition, Springer ‹in› conjunction with Praxis Publi...'
+    sibling: in
+    tesseract: In
+    paddleocr: In
+    resolution: in
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''In'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: cw2
+  kind: cited_work
+  located: true
+  char_start: 131405
+  char_end: 131548
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-06-space-access
+  ref: cw3
+  kind: cited_work
+  located: true
+  char_start: 131549
+  char_end: 131638
+  tokens: 11
+  confirmed: 11
+  contested: []
+- node: dird-06-space-access
+  ref: cw4
+  kind: cited_work
+  located: true
+  char_start: 131639
+  char_end: 131843
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 29324
+    char_start: 131747
+    char_end: 131751
+    line: 2083
+    context: '...ine Engines," ISABE 99- 7039, ‹14ᵗʰ› International Symposium for A...'
+    sibling: 14ᵗʰ
+    tesseract: '14'
+    paddleocr: 14th
+    resolution: 14ᵗʰ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw5
+  kind: cited_work
+  located: true
+  char_start: 131844
+  char_end: 132055
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-06-space-access
+  ref: cw6
+  kind: cited_work
+  located: true
+  char_start: 132056
+  char_end: 132274
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 29404
+    char_start: 132058
+    char_end: 132067
+    line: 2086
+    context: '...s, California, August 1975. ⁶ ‹Küchemann›, D., "The Aerodynamic Design ...'
+    sibling: Küchemann
+    tesseract: Kichemann
+    paddleocr: Kuchemann
+    resolution: Küchemann
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw7
+  kind: cited_work
+  located: true
+  char_start: 132275
+  char_end: 132437
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-06-space-access
+  ref: cw8
+  kind: cited_work
+  located: true
+  char_start: 132438
+  char_end: 132494
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-06-space-access
+  ref: cw9
+  kind: cited_work
+  located: true
+  char_start: 132495
+  char_end: 132571
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-06-space-access
+  ref: cw10
+  kind: cited_work
+  located: true
+  char_start: 132572
+  char_end: 132777
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 29550
+    char_start: 132681
+    char_end: 132685
+    line: 2093
+    context: '...ine Engines," ISABE 99- 7039, ‹14ᵗʰ› International Symposium for A...'
+    sibling: 14ᵗʰ
+    tesseract: '14'
+    paddleocr: '14'
+    resolution: 14ᵗʰ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''14'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: cw11
+  kind: cited_work
+  located: true
+  char_start: 132778
+  char_end: 132863
+  tokens: 10
+  confirmed: 6
+  contested:
+  - token_index: 29579
+    char_start: 132831
+    char_end: 132838
+    line: 2094
+    context: '...elopment at Pratt & Whitney," ‹Society› of Automotive Engineers. ¹² D...'
+    sibling: Society
+    tesseract: SAE
+    paddleocr: SAE
+    resolution: Society
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''SAE'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 29580
+    char_start: 132839
+    char_end: 132841
+    line: 2094
+    context: '... at Pratt & Whitney," Society ‹of› Automotive Engineers. ¹² Dawe...'
+    sibling: of
+    tesseract: ','
+    paddleocr: ','
+    resolution: of
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read '','' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 29581
+    char_start: 132842
+    char_end: 132852
+    line: 2094
+    context: '... Pratt & Whitney," Society of ‹Automotive› Engineers. ¹² Dawes, A. S. & ...'
+    sibling: Automotive
+    tesseract: '2001'
+    paddleocr: '2001'
+    resolution: Automotive
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''2001'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 29582
+    char_start: 132853
+    char_end: 132862
+    line: 2094
+    context: '...itney," Society of Automotive ‹Engineers›. ¹² Dawes, A. S. & Clarke, J....'
+    sibling: Engineers
+    tesseract: null
+    paddleocr: null
+    resolution: Engineers
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw12
+  kind: cited_work
+  located: true
+  char_start: 132864
+  char_end: 133041
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-06-space-access
+  ref: cw13
+  kind: cited_work
+  located: true
+  char_start: 133042
+  char_end: 133260
+  tokens: 36
+  confirmed: 35
+  contested:
+  - token_index: 29663
+    char_start: 133154
+    char_end: 133157
+    line: 2098
+    context: '...ped Heat Pipe," AIAA-99-4866, ‹9ᵗʰ› International Space Planes an...'
+    sibling: 9ᵗʰ
+    tesseract: '3'
+    paddleocr: gth
+    resolution: 9ᵗʰ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw14
+  kind: cited_work
+  located: true
+  char_start: 133261
+  char_end: 133360
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-06-space-access
+  ref: cw15
+  kind: cited_work
+  located: true
+  char_start: 133361
+  char_end: 133509
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-06-space-access
+  ref: cw16
+  kind: cited_work
+  located: true
+  char_start: 133510
+  char_end: 133730
+  tokens: 33
+  confirmed: 31
+  contested:
+  - token_index: 29778
+    char_start: 133651
+    char_end: 133654
+    line: 2103
+    context: '... Space Boosters," AIAA paper, ‹4ᵗʰ› International Aerospace Plane...'
+    sibling: 4ᵗʰ
+    tesseract: '4'
+    paddleocr: 4tn
+    resolution: 4ᵗʰ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 29789
+    char_start: 133725
+    char_end: 133729
+    line: 2103
+    context: '...e, Orlando, Florida, December ‹1991›. ¹⁷ Rudakov, A.S. & Balepin, ...'
+    sibling: '1991'
+    tesseract: '1992'
+    paddleocr: '1992'
+    resolution: '1991'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''1992'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: cw17
+  kind: cited_work
+  located: true
+  char_start: 133731
+  char_end: 133889
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-06-space-access
+  ref: cw18
+  kind: cited_work
+  located: true
+  char_start: 133890
+  char_end: 134204
+  tokens: 49
+  confirmed: 48
+  contested:
+  - token_index: 29851
+    char_start: 133933
+    char_end: 133946
+    line: 2106
+    context: '...S., Gatin R.Y., Dulepov N.P., ‹Harchevnikova› B.N., Harchevnikova G.D & Yug...'
+    sibling: Harchevnikova
+    tesseract: Koralnik
+    paddleocr: null
+    resolution: Harchevnikova
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw19
+  kind: cited_work
+  located: true
+  char_start: 134205
+  char_end: 134463
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-06-space-access
+  ref: cw20
+  kind: cited_work
+  located: true
+  char_start: 134464
+  char_end: 134634
+  tokens: 30
+  confirmed: 30
+  contested: []
+- node: dird-06-space-access
+  ref: cw21
+  kind: cited_work
+  located: true
+  char_start: 134635
+  char_end: 134839
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-06-space-access
+  ref: cw22
+  kind: cited_work
+  located: true
+  char_start: 134840
+  char_end: 134948
+  tokens: 12
+  confirmed: 11
+  contested:
+  - token_index: 30082
+    char_start: 134947
+    char_end: 134948
+    line: 2116
+    context: '... Bangalore India, October 1988‹.› ²³ Anon., "An-2254/Interim Ho...'
+    sibling: .
+    tesseract: ','
+    paddleocr: null
+    resolution: .
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw23
+  kind: cited_work
+  located: true
+  char_start: 134949
+  char_end: 135184
+  tokens: 37
+  confirmed: 36
+  contested:
+  - token_index: 30127
+    char_start: 135151
+    char_end: 135154
+    line: 2118
+    context: '...Systems), Chemical Automatics ‹Inc›, NPO Molnyia, TsAGI and TsAM....'
+    sibling: Inc
+    tesseract: DB
+    paddleocr: DB
+    resolution: Inc
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''DB'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: cw24
+  kind: cited_work
+  located: true
+  char_start: 135185
+  char_end: 135284
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-06-space-access
+  ref: cw25
+  kind: cited_work
+  located: true
+  char_start: 135285
+  char_end: 135450
+  tokens: 27
+  confirmed: 26
+  contested:
+  - token_index: 30155
+    char_start: 135288
+    char_end: 135289
+    line: 2121
+    context: '...y of Automotive Engineers. ²⁵ ‹P›. Hendrick and M Saint-Mard, "...'
+    sibling: P
+    tesseract: p
+    paddleocr: null
+    resolution: P
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw26
+  kind: cited_work
+  located: true
+  char_start: 135451
+  char_end: 135656
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 30218
+    char_start: 135560
+    char_end: 135564
+    line: 2124
+    context: '...ine Engines," ISABE 99- 7039, ‹14ᵗʰ› International Symposium for A...'
+    sibling: 14ᵗʰ
+    tesseract: '14'
+    paddleocr: 14t
+    resolution: 14ᵗʰ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-06-space-access
+  ref: cw27
+  kind: cited_work
+  located: true
+  char_start: 135657
+  char_end: 135831
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-06-space-access
+  ref: cw28
+  kind: cited_work
+  located: true
+  char_start: 135832
+  char_end: 136055
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-06-space-access
+  ref: cw29
+  kind: cited_work
+  located: true
+  char_start: 136056
+  char_end: 136126
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-06-space-access
+  ref: cw30
+  kind: cited_work
+  located: true
+  char_start: 136127
+  char_end: 136290
+  tokens: 27
+  confirmed: 26
+  contested:
+  - token_index: 30358
+    char_start: 136182
+    char_end: 136183
+    line: 2131
+    context: '...k, Melvin L., Goesch, William ‹L›., "A Delta Shuttle Orbiter," ...'
+    sibling: L
+    tesseract: H
+    paddleocr: H
+    resolution: L
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''H'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-06-space-access
+  ref: cw31
+  kind: cited_work
+  located: true
+  char_start: 136291
+  char_end: 136457
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-06-space-access
+  ref: cw32
+  kind: cited_work
+  located: true
+  char_start: 136458
+  char_end: 136674
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-06-space-access
+  ref: cw33
+  kind: cited_work
+  located: true
+  char_start: 136675
+  char_end: 136733
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-06-space-access
+  ref: cw34
+  kind: cited_work
+  located: true
+  char_start: 136734
+  char_end: 136900
+  tokens: 25
+  confirmed: 24
+  contested:
+  - token_index: 30497
+    char_start: 136792
+    char_end: 136793
+    line: 2139
+    context: '...ch Facilities Study," Volumes ‹I› through VI, NASA CR 114322 th...'
+    sibling: I
+    tesseract: '1'
+    paddleocr: null
+    resolution: I
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
