@@ -77,12 +77,14 @@ few libs). `ocr-consensus.py run` / `ground` auto-relaunch under that venv.
    page); reproduce TOC entries without dot-leader runs; no synthetic page-break
    markers.
 
-   **Genuinely-blocked pages → Tesseract-fill.** For each page that blocks in
-   isolation, rasterize that one page and fill its slice from Tesseract
-   (`pdftoppm -png -r 300 -f N -l N … && tesseract page.png stdout --psm 1 -l
-   eng > /tmp/{stem}/pNN.txt`). That degrades *those pages only* to the 2-engine
-   regime (Tesseract grab + PaddleOCR cross-check at ground time) — confined and
-   disclosed, not a whole-document fallback.
+   **Genuinely-blocked pages → PaddleOCR-fill.** For each page that blocks in
+   isolation, rasterize that one page and fill its slice from **PaddleOCR** — the
+   higher-trust OCR engine, per the trust precedence `VLM > PaddleOCR > Tesseract`
+   (`pdftoppm -png -r 300 -f N -l N …`, then run that page through
+   `ocr-consensus.py`'s PaddleOCR path). That degrades *those pages only* to the
+   2-engine regime (PaddleOCR grab + Tesseract cross-check at ground time);
+   PaddleOCR is authoritative there and a Tesseract disagreement on a load-bearing
+   token is noted — confined and disclosed, not a whole-document fallback.
 
 3. **Assemble the base + write the sibling.** Concatenate the per-page files in
    order (`cat /tmp/{stem}/p*.txt > /tmp/{stem}-vlm.txt`; zero-padding sorts
@@ -102,7 +104,7 @@ few libs). `ocr-consensus.py run` / `ground` auto-relaunch under that venv.
        --path {category}/{stem}.txt --format txt --wayback-skip \
        --note "Clean-text sibling (VLM page-image grab) of the OCR-scanned
        <source>. Produced <date>; pages it blocked on the content filter
-       Tesseract-filled (<list>). <FOIA/distribution insert preserved verbatim>.
+       PaddleOCR-filled (<list>). <FOIA/distribution insert preserved verbatim>.
        Equations/figures bracketed; redactions + source spellings preserved
        verbatim."
    ```
@@ -119,17 +121,17 @@ few libs). `ocr-consensus.py run` / `ground` auto-relaunch under that venv.
    python3 scripts/tools/ocr-consensus.py ground meta/research/{node}.yaml --date <YYYY-MM-DD>
    ```
    This re-OCRs the source (Tesseract + PaddleOCR), aligns to the sibling, locates
-   each quote/cited_work span, and writes `{stem}-quote-grounding.yaml` — every
-   span token confirmed by ≥1 OCR engine, or flagged CONTESTED. For each contested
-   token (bounded to exactly the tokens an OCR engine disputed in a *quoted* span —
-   typically a handful), an `Agent(general-purpose)` reads the page image at its
-   `line`/`context` and fills `resolution` = **what the image shows** +
-   `resolution_method: image-adjudication` + `adjudicator_session`, then re-run
-   `ground` (it carries resolutions over). A resolution that *equals* the sibling
-   token confirms the grab; one that *differs* means the grab is wrong — fix the
-   sibling + the quote, then re-run. `quote_source_grounding.py` then passes:
-   every quoted/cited span rests on two uncorrelated reads or a recorded image
-   adjudication.
+   each quote/cited_work span, and writes `{stem}-quote-grounding.yaml`. It compares
+   only the **load-bearing characters** (letters, digits, `. - % $ °`); document
+   structure (punctuation, bullets, brackets, markup) is not grounded. Each
+   load-bearing contested token is **auto-arbitrated, no human step** — majority,
+   then trust precedence `VLM > PaddleOCR > Tesseract` (`ground` fills `resolution`
+   + `resolution_method: ocr-majority | disclosed` itself). The contributor's only
+   job is the **rare** case the gate flags: `resolution != sibling` (an
+   `ocr-majority` override — two engines agree the grab misread a word/number).
+   There, correct the **quote/citation** to the OCR reading (never hand-edit the
+   frozen sibling) and re-run `ground`. `quote_source_grounding.py` then passes:
+   every quoted/cited span's words and numbers rest on two uncorrelated reads.
 
 The sibling is canonical once registered; `extract-source.py` and the
 verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

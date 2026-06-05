@@ -16,11 +16,15 @@
 # THE MODEL. The `.txt` sibling is the primary "grab" (ideally an uncorrelated
 # VLM page-image read — a different modality from OCR, so an OCR engine's
 # char-confusion can't be silently reproduced by the grab). A second engine pass
-# (Tesseract + PaddleOCR) confirms ONLY the spans the node quotes/cites: every
-# token of a grounded span must agree with >=1 OCR engine (>=2-of-3 with the
-# sibling), or be image-adjudicated. Furniture is never quoted -> never confirmed
-# -> never adjudicated. cited_works are in scope (they are load-bearing verbatim
-# citations and inherited the same OCR garble — DIRD-16 cw2/cw8/.../cw24).
+# (Tesseract + PaddleOCR) confirms ONLY the WORDS and NUMBERS of the spans the
+# node quotes/cites — letters, digits, and the numeric symbols `. - % $ °`;
+# document structure (punctuation, bullets, brackets, markup, banners, figure
+# labels) is never compared. A load-bearing token that an OCR engine corroborates
+# is confirmed; one that neither does is resolved by an automated arbiter
+# (majority, then trust precedence VLM > PaddleOCR > Tesseract) — no human step.
+# Furniture is never quoted -> never confirmed. cited_works are in scope (they are
+# load-bearing verbatim citations and inherited the same OCR garble — DIRD-16
+# cw2/cw8/.../cw24).
 #
 # TRUST PREREQUISITE. The guarantee holds only if the sibling (grab) is
 # UNCORRELATED with the confirming OCR engines. A sibling produced by OCR (the
@@ -72,12 +76,15 @@ grounded_span:
     - contested  # list of token-level disagreements (may be empty)
   kind_values: [quote, cited_work]
 
-# Contested-token record — a grabbed token the OCR engines did NOT corroborate.
-# Image-adjudicated: the adjudicator reads the page image and records what it
-# shows. A FINALIZED span has every contested token resolved AND the resolution
-# equal to the sibling token (the image confirms the grab). A resolution that
-# DIFFERS from the sibling token means the grab itself is wrong — fix the sibling
-# (and the quote/citation), then re-run `ground`; the gate flags this.
+# Contested-token record — a LOAD-BEARING grabbed token (word/number; structure
+# is filtered out and never recorded) the OCR engines did NOT corroborate. It is
+# resolved by an automated arbiter — no human step — by majority, then trust
+# precedence VLM > PaddleOCR > Tesseract. A FINALIZED span has every contested
+# token resolved. A resolution EQUAL to the sibling token = the grab was kept
+# (disclosed three-way split, or a confirming agreement). A resolution that
+# DIFFERS from the sibling = two OCR engines override the grab (it misread a
+# word/number): correct the quote/citation to the resolution, then re-run
+# `ground`; the gate flags this.
 contested_token:
   required_fields:
     - token_index
@@ -88,28 +95,30 @@ contested_token:
     - sibling             # the grabbed (sibling) surface form
     - tesseract           # Tesseract's read of the aligned token (or null)
     - paddleocr           # PaddleOCR's read (or null)
-    - resolution          # confirmed surface form (null until resolved)
-    - resolution_method   # image-adjudication | markup-convention
-    - adjudicator_session # audit trail
+    - resolution          # arbiter's resolved surface form
+    - resolution_method   # ocr-majority | disclosed | image-adjudication
+    - adjudicator_session # audit trail (arbiter note, or human session)
   # resolution_method:
-  #   image-adjudication — a human read the page image and recorded what it shows
-  #     (the load-bearing case; required for every word/number contested token).
-  #   markup-convention  — `ground` auto-confirmed a sanctioned sibling-encoding
-  #     marker (superscript `^N`, citation/redaction bracket) that no OCR engine
-  #     emits and that is never source-literal text. NOT an image read; kept as a
-  #     distinct method so a reviewer can see which tokens got human eyes. The
-  #     auto set is conservative (^ [ ]) — defect-prone glyphs stay for a human.
-  resolution_method_values: [image-adjudication, markup-convention]
+  #   ocr-majority      — both OCR engines agreed against the grab; the OCR pair
+  #     wins (resolution = the OCR reading, != sibling). The grab misread a
+  #     word/number — the gate flags it to correct the quote.
+  #   disclosed         — no majority (three-way split, or 2-engine blocked-page
+  #     base); the highest-authority vote present is kept (resolution == sibling)
+  #     and the contest is disclosed.
+  #   image-adjudication — OPTIONAL human override of a flagged token (a contributor
+  #     read the page image); persists across re-grounds. Not required anywhere.
+  resolution_method_values: [ocr-majority, disclosed, image-adjudication]
 
 # Gate (quote_source_grounding.py) PASS conditions for a quote/cited_work citing
 # an OCR-scan source:
 #   1. a {stem}-quote-grounding.yaml exists and sibling_sha256 == sha256(sibling);
 #   2. a (node, ref) span for the citing artifact appears in grounded_spans with
 #      located == true;
-#   3. every contested token has a non-null resolution (image-adjudicated);
-#   4. each resolution equals the sibling token (the image confirms the grab) —
-#      a mismatch is an error (the sibling is wrong; fix it, don't ground it).
+#   3. every contested token has a non-null arbiter resolution;
+#   4. each resolution equals the sibling token (grab kept) — a mismatch is an
+#      OCR-override (the grab misread; correct the quote to the resolution).
 finalization_invariant:
   - sibling_sha256 set and equal to sha256 of the sibling bytes on disk
   - every cited quote/cited_work present and located
-  - every contested token adjudicated with resolution == sibling token
+  - every load-bearing contested token arbitrated; no ocr-majority override left
+    uncorrected in the quote (resolution == sibling for every recorded token)

@@ -241,26 +241,44 @@ a banner/figure-heavy government PDF produces ~1000 CONTESTED spans, ~99% of the
 non-prose furniture (running classification banners, figure interiors, TOC
 dot-leaders) that no quote ever draws from — un-adjudicatable noise (the DIRD-16
 pilot: 1067 contested, **0** of them inside any of the 21 node quotes). So the
-gate confirms only the spans the node **quotes or cites**:
+gate confirms only the spans the node **quotes or cites**, and within them only the
+**load-bearing characters — letters, digits, and the numeric symbols `. - % $ °`**.
+Document *structure* (punctuation, bullets, brackets, markup `*`, banners, figure
+labels, dot-leaders) is **never compared**: it is not source-literal prose, and
+chasing it is what drowned the old whole-document pass in furniture noise. This is
+the guarantee — *the words and numbers of the quote are corroborated by two
+uncorrelated reads* — **not** a character-perfect transcription of the page.
+
 `scripts/tools/ocr-consensus.py ground <artifact>` re-OCRs each cited OCR-scan
 source with Tesseract + PaddleOCR, aligns to the sibling, and records — in
-`{stem}-quote-grounding.yaml` (spec `meta/schema-quote-grounding.yaml`) — that
-every token of each quoted/cited span is corroborated by ≥2 reads (sibling + ≥1
-OCR engine) or **image-adjudicated**. `scripts/checks/quote_source_grounding.py`
-is the gate: a quote/cited_work can never rest on an unconfirmed span or a sibling
-edited since grounding (sha256 binding). cited_works are in scope — they are
-load-bearing verbatim citations and inherited the same OCR garble (DIRD-16
-cw2/cw5/…/cw24). The whole-document verification gate (`validate-ocr-sibling.py`)
-and its `{stem}-ocr-verification.yaml` record were **retired**.
+`{stem}-quote-grounding.yaml` (spec `meta/schema-quote-grounding.yaml`) — each
+load-bearing span token as confirmed (an OCR engine corroborates the grab) or
+contested. A contested token is resolved by a **single automated arbiter, with no
+human step**: majority wins, and with no majority the **trust precedence `VLM >
+PaddleOCR > Tesseract`** decides, the contest noted. So on a normal page the grab
+(VLM) is the default winner; **both** OCR engines agreeing override it (the "grab
+misread a word/number" alarm — the gate flags it to correct the quote); a
+three-way split keeps the grab and discloses. On a **VLM-blocked page** the grab is
+**PaddleOCR-fill** (PaddleOCR, not Tesseract, is the higher-trust fallback), so
+PaddleOCR is authoritative and a Tesseract disagreement resolves to PaddleOCR,
+noted. `scripts/checks/quote_source_grounding.py` is the gate: a quote/cited_work
+can never rest on an unconfirmed span or a sibling edited since grounding (sha256
+binding). cited_works are in scope — they are load-bearing verbatim citations and
+inherited the same OCR garble (DIRD-16 cw2/cw5/…/cw24). The whole-document
+verification gate (`validate-ocr-sibling.py`) and its `{stem}-ocr-verification.yaml`
+record were **retired**.
 
 Produce + ground via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes
 the VLM base as the sibling (per-page chunked VLM production survives the content
-filter — the few pages it blocks are Tesseract-filled, confined to those pages),
-then `ocr-consensus.py ground` confirms the quoted spans and flags any token to
-image-adjudicate. The **trust prerequisite**: the grab (sibling) must be
-uncorrelated with the confirming OCR engines, so a sibling produced by the retired
-OCR-then-correct process must be **regenerated as a VLM read before grounding** —
-otherwise an OCR engine rubber-stamps its own error class.
+filter — the few pages it blocks are PaddleOCR-filled, confined to those pages),
+then `ocr-consensus.py ground` confirms the quoted spans and auto-arbitrates any
+contested load-bearing token. The **frozen-sibling rule**: the sibling is the VLM
+grab at creation and is **never hand-corrected** — corrections surface as the
+arbiter's OCR-override flag (fix the quote, re-ground), not as silent edits to the
+sibling. The **trust prerequisite**: the grab (sibling) must be uncorrelated with
+the confirming OCR engines, so a sibling produced by the retired OCR-then-correct
+process must be **regenerated as a VLM read before grounding** — otherwise an OCR
+engine rubber-stamps its own error class.
 
 The four methods below are how an individual *vote* (a token-recognition
 pass) is produced. They are no longer interchangeable *substitutes for

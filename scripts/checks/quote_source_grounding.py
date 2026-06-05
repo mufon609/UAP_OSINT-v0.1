@@ -20,10 +20,11 @@ Why quote-scoped (and not whole-document):
     21 node quotes**. That noise is un-adjudicatable and not load-bearing.
   - The guarantee that matters is per-LOAD-BEARING-SPAN: the sibling is the
     authoritative grab (ideally a VLM page read — a modality uncorrelated with
-    OCR); Tesseract + PaddleOCR confirm ONLY the spans the node quotes/cites.
-    A grounded span has every token corroborated by >=1 OCR engine (>=2-of-3 with
-    the sibling) or image-adjudicated. cited_works are in scope — they are
-    load-bearing verbatim citations and inherited the same OCR garble (DIRD-16
+    OCR); Tesseract + PaddleOCR confirm ONLY the WORDS and NUMBERS of the spans
+    the node quotes/cites (structure is not compared). Each load-bearing contested
+    token is resolved by an automated arbiter (majority, then trust precedence
+    VLM > PaddleOCR > Tesseract) — no human step. cited_works are in scope — they
+    are load-bearing verbatim citations and inherited the same OCR garble (DIRD-16
     cw2/cw5/.../cw24).
 
 Failure modes surfaced:
@@ -32,9 +33,8 @@ Failure modes surfaced:
     → the sibling changed since grounding; re-run ``ground``;
   - the quote/cited_work is absent from the record, or was not located in the
     sibling → re-run ``ground`` / re-check the citation;
-  - a contested token in the span is not image-adjudicated → adjudicate it;
-  - an adjudication that *contradicts* the sibling (resolution != sibling token)
-    → the grab itself is wrong; fix the sibling + quote, then re-run ``ground``.
+  - an OCR-override token (resolution != grab): two engines agree the grab misread
+    a word/number → correct the quote to the OCR reading, then re-run ``ground``.
 
 Transition: ``SEVERITY = "warn"`` until every OCR-scan sibling that a node quotes
 has a grounding record (the build→backfill→gate discipline); flipped to
@@ -121,8 +121,8 @@ def _load_record(rel):
 
 def check(ctx):
     """Yield Issues for quotes / cited_works citing an OCR-scan source whose
-    load-bearing span is not grounded (confirmed by a second OCR engine or
-    image-adjudicated) in a hash-matching quote-grounding record."""
+    load-bearing span is not grounded (every word/number confirmed by an OCR
+    engine or auto-arbitrated) in a hash-matching quote-grounding record."""
     items = []
     for q in entries(ctx.data, "quotes"):
         if isinstance(q, dict):
@@ -180,19 +180,23 @@ def check(ctx):
             sib = c.get("sibling")
             line = c.get("line")
             if res in (None, ""):
+                # The arbiter always fills a resolution; a null here means a
+                # stale/hand-edited record. Safety-net warn.
                 yield Issue(
                     ctx.rel, SEVERITY,
-                    f"{kind} {ref!r}: contested token at sibling line {line} "
-                    f"({sib!r}, corroborated by neither OCR engine) is not "
-                    f"image-adjudicated — read the page image and fill "
-                    f"`resolution` in the grounding record.",
-                    check_name=CHECK_NAME)
-            elif res != sib:
-                yield Issue(
-                    ctx.rel, SEVERITY,
-                    f"{kind} {ref!r}: image adjudication contradicts the sibling at "
-                    f"line {line} (sibling={sib!r}, image={res!r}) — the grab is "
-                    f"wrong; correct the sibling + the quote/citation, then re-run "
+                    f"{kind} {ref!r}: load-bearing token at sibling line {line} "
+                    f"({sib!r}) has no arbiter resolution — re-run "
                     f"`ocr-consensus.py ground`.",
                     check_name=CHECK_NAME)
-        # else: every token confirmed-or-adjudicated → grounded.
+            elif res != sib:
+                # OCR-override: two uncorrelated engines agree the grab misread a
+                # word/number. The quote still shows the grab's reading — correct it.
+                yield Issue(
+                    ctx.rel, SEVERITY,
+                    f"{kind} {ref!r}: two OCR engines override the grab at line "
+                    f"{line} (grab={sib!r}, OCR={res!r}) — the grab misread a "
+                    f"word/number; correct the quote/citation to {res!r}, then "
+                    f"re-run `ocr-consensus.py ground`.",
+                    check_name=CHECK_NAME)
+        # else: every load-bearing token confirmed, disclosed, or override-clean
+        # (resolution == grab) → grounded.

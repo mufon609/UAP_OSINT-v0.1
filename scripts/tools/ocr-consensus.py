@@ -654,6 +654,34 @@ def cmd_selftest(_args):
     if any(c["candidates"]["vlm"] is not None for c in c5):
         failures.append("case5: 2-engine candidates.vlm should be None")
 
+    # Case 6: arbiter — both OCR engines agree against the grab -> ocr-majority,
+    # resolution = the OCR reading (the grab misread).
+    res, meth, _ = arbitrate("82", "81", "81")
+    if (res, meth) != ("81", "ocr-majority"):
+        failures.append(f"case6: expected ('81','ocr-majority'), got {(res, meth)}")
+    # Case 7: arbiter — three-way split -> keep grab, disclosed.
+    res, meth, _ = arbitrate("Kiyshko", "Klyshko", "Klyschko")
+    if (res, meth) != ("Kiyshko", "disclosed"):
+        failures.append(f"case7: expected ('Kiyshko','disclosed'), got {(res, meth)}")
+    # Case 7b: arbiter — one OCR engine missing -> no majority -> disclosed.
+    res, meth, _ = arbitrate("5", "5", None)
+    if meth != "disclosed":
+        failures.append(f"case7b: lone OCR read should not override, got {meth}")
+
+    # Case 8: load-bearing filter — words/numbers are grounded; structure is not.
+    lb = lambda s: is_load_bearing(s, s, 0, len(s))
+    for tok in ("Section", "82", "AAWSA"):
+        if not lb(tok):
+            failures.append(f"case8: {tok!r} should be load-bearing")
+    for tok in ("•", "[", "]", "*", ",", ";"):
+        if lb(tok):
+            failures.append(f"case8: {tok!r} (structure) should NOT be load-bearing")
+    # decimal point counts only between digits; a sentence period does not.
+    if not is_load_bearing(".", "3.5", 1, 2):
+        failures.append("case8: decimal '.' in '3.5' should be load-bearing")
+    if is_load_bearing(".", "end. Next", 3, 4):
+        failures.append("case8: sentence '.' should NOT be load-bearing")
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -665,6 +693,9 @@ def cmd_selftest(_args):
     print("  case3: three-way disagreement -> contested")
     print("  case4: char offsets accurate for assemble")
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
+    print("  case6: arbiter -> both OCR engines override the grab (ocr-majority)")
+    print("  case7: arbiter -> three-way split keeps the grab (disclosed)")
+    print("  case8: load-bearing filter -> words/numbers grounded, structure not")
     return 0
 
 
@@ -672,25 +703,58 @@ def cmd_selftest(_args):
 # Quote-scoped grounding — the quote-scoped verification model (BACKLOG C1).
 #
 # Whole-document consensus drowns the signal in furniture noise. The fidelity
-# guarantee that matters is per-LOAD-BEARING-SPAN: confirm only the spans a node
-# quotes or cites. The `.txt` sibling is the authoritative grab (the spine);
-# Tesseract + PaddleOCR cross-check it; a quoted/cited span is grounded when
-# every token agrees with >=1 OCR engine or is image-adjudicated. Furniture is
-# never quoted -> never confirmed. Record: {stem}-quote-grounding.yaml
+# guarantee that matters is per-LOAD-BEARING-SPAN: confirm only the WORDS and
+# NUMBERS of the spans a node quotes or cites (structure is not compared — see
+# is_load_bearing). The `.txt` sibling is the authoritative grab (the spine);
+# Tesseract + PaddleOCR cross-check it. Each load-bearing contested token is
+# resolved by an automated arbiter (majority, then trust precedence VLM >
+# PaddleOCR > Tesseract) — no human step. Furniture is never quoted -> never
+# confirmed. Record: {stem}-quote-grounding.yaml
 # (meta/schema-quote-grounding.yaml). Gate: scripts/checks/quote_source_grounding.py.
 # ---------------------------------------------------------------------------
 _OCR_TYPES = {"ocr-scan", "extraction-lossy"}
 
-# Sibling-encoding markers that are NEVER source-literal text: a superscript
-# endnote/citation marker (`^N`) and citation/redaction brackets. No OCR engine
-# emits them, so they always land in `contested` — but they are sanctioned by
-# the preserved-marker convention, not load-bearing prose. `ground` auto-resolves
-# only these (method `markup-convention`, flagged NOT image-read). The set is
-# deliberately conservative: defect-prone glyphs a sibling can wrongly inject
-# (a stray middot, ordinary punctuation an OCR engine may have read correctly)
-# are EXCLUDED, so they still surface for human image-adjudication — which is how
-# the dird-01 inserted-middot defect was caught.
-SANCTIONED_MARKUP = {"^", "[", "]"}
+# Load-bearing tokens are the only thing `ground` compares: the WORDS and NUMBERS
+# of a quote. A token is load-bearing iff it carries a letter or digit, or it is
+# one of the numeric symbols (. - % $ °) sitting immediately beside a digit (a
+# decimal point, sign, range dash, percent/currency/degree unit). Everything else
+# — bare punctuation, bullets, brackets, markup `*`, banners, figure labels,
+# TOC dot-leaders — is document STRUCTURE, never source-literal prose, and is not
+# grounded. This is what keeps the whole-document furniture noise (the DIRD-16
+# ~1000 contested spans, ≈99% structure) out of the quoted-span grounding while
+# still catching every real defect (III→ITT, 81→82, Klyshko→Kiyshko, He³→He?).
+_LB_ALNUM = re.compile(r"[A-Za-z0-9]")
+_LB_NUM_SYMBOLS = {".", "-", "%", "$", "°"}
+
+
+def is_load_bearing(surface, text, cs, ce):
+    """True iff `surface` (the sibling token at text[cs:ce]) is a word/number we
+    must ground. Numeric symbols count only when adjacent to a digit, so a
+    sentence comma or a list hyphen stays structure but a `3.5` / `-40°` / `5%`
+    keeps its decimal/sign/unit."""
+    if not surface:
+        return False
+    if _LB_ALNUM.search(surface):
+        return True
+    if surface in _LB_NUM_SYMBOLS:
+        before = text[cs - 1] if cs > 0 else ""
+        after = text[ce] if ce < len(text) else ""
+        return before.isdigit() or after.isdigit()
+    return False
+
+
+def arbitrate(grab, tess, paddle):
+    """Resolve a load-bearing contested token with no human input. Returns
+    (resolution, method, note). Both OCR engines agreeing against the grab
+    override it (``ocr-majority`` — the grab misread a word/number); otherwise the
+    grab is kept and disclosed. Trust precedence VLM > PaddleOCR > Tesseract falls
+    out of what the grab is: a normal page's grab is the VLM read, a VLM-blocked
+    page's grab is the PaddleOCR fill, so keeping the grab keeps the higher
+    authority either way."""
+    if (tess is not None and paddle is not None
+            and norm_token(tess) == norm_token(paddle)):
+        return tess, "ocr-majority", "auto: both OCR engines agree against the grab"
+    return grab, "disclosed", "auto: three-way split — grab kept, disclosed"
 
 
 def _norm_for_locate(s):
@@ -777,9 +841,10 @@ def _partition_prior_spans(old, node_slug):
         node is re-grounded (the shared-source merge).
       - ``prior`` — ``{(ref, char_start): (resolution, method, session)}`` for THIS
         node's spans (and for untagged legacy v1 spans, which were single-node by
-        construction), so image-adjudications carry across the re-ground.
+        construction), so a contributor's optional manual override of a flagged
+        token carries across the re-ground.
 
-    Other nodes' adjudications stay intact because their whole span entries are
+    Other nodes' resolutions stay intact because their whole span entries are
     preserved in ``other_spans`` — they are never rebuilt, so never re-keyed.
     """
     prior, other = {}, []
@@ -851,7 +916,7 @@ def cmd_ground(args):
 
         collapsed, idxmap = _collapsed_index_map(sib_text)
         sib_tokens = tokenize(sib_text)
-        grounded, total_contested, unlocated, auto_markup = [], 0, 0, 0
+        grounded, total_contested, unlocated, overrides = [], 0, 0, 0
         for ref, kind, txt in spans:
             loc = locate_span(collapsed, idxmap, txt)
             if loc is None:
@@ -869,29 +934,38 @@ def cmd_ground(args):
                 # start-in-span — the same membership test as n_tokens, so
                 # confirmed = n_tokens - len(cin) is exact and never negative
                 # (quotes begin at a token boundary, so no token straddles qs).
-                if qs <= c["char_start"] < qe:
-                    sib_tok = c["candidates"]["vlm"]
-                    res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
-                    if res is None and sib_tok in SANCTIONED_MARKUP:
-                        # Sanctioned sibling-encoding marker — auto-confirm by
-                        # convention, flagged NOT image-read (see SANCTIONED_MARKUP).
-                        res, meth = sib_tok, "markup-convention"
-                        sess = (f"auto: sanctioned markup token {sib_tok!r} "
-                                f"(superscript/bracket marker, not source-literal text)")
-                        auto_markup += 1
-                    cin.append({
-                        "token_index": c["token_index"],
-                        "char_start": c["char_start"],
-                        "char_end": c["char_end"],
-                        "line": c["line"],
-                        "context": c["context"],
-                        "sibling": c["candidates"]["vlm"],
-                        "tesseract": c["candidates"]["tesseract"],
-                        "paddleocr": c["candidates"]["paddleocr"],
-                        "resolution": res,
-                        "resolution_method": meth,
-                        "adjudicator_session": sess,
-                    })
+                if not (qs <= c["char_start"] < qe):
+                    continue
+                sib_tok = c["candidates"]["vlm"]
+                # Only WORDS and NUMBERS are grounded; structure (punctuation,
+                # bullets, brackets, markup) is never source-literal prose -> skip.
+                if not is_load_bearing(sib_tok, sib_text, c["char_start"], c["char_end"]):
+                    continue
+                # Automated arbiter — no human step. A contributor's prior manual
+                # override persists; otherwise resolve by majority + trust
+                # precedence VLM > PaddleOCR > Tesseract:
+                #   - both OCR engines agree against the grab -> they override it
+                #     (the "grab misread a word/number" alarm; the gate flags it);
+                #   - otherwise keep the grab (highest authority) and disclose.
+                res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
+                if res is None:
+                    res, meth, sess = arbitrate(
+                        sib_tok, c["candidates"]["tesseract"], c["candidates"]["paddleocr"])
+                if meth == "ocr-majority":
+                    overrides += 1
+                cin.append({
+                    "token_index": c["token_index"],
+                    "char_start": c["char_start"],
+                    "char_end": c["char_end"],
+                    "line": c["line"],
+                    "context": c["context"],
+                    "sibling": sib_tok,
+                    "tesseract": c["candidates"]["tesseract"],
+                    "paddleocr": c["candidates"]["paddleocr"],
+                    "resolution": res,
+                    "resolution_method": meth,
+                    "adjudicator_session": sess,
+                })
             total_contested += len(cin)
             grounded.append({
                 "node": node_slug, "ref": ref, "kind": kind, "located": True,
@@ -915,15 +989,14 @@ def cmd_ground(args):
             "grounded_spans": other_spans + grounded,
         }
         write_yaml(record_path, record)
-        human = total_contested - auto_markup
+        disclosed = total_contested - overrides
         print(f"   -> {record_path}")
         msg = (f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
-               f"{total_contested} contested ({auto_markup} auto-resolved as "
-               f"sanctioned markup, {human} to image-adjudicate)")
-        if human:
-            msg += (" — read the page image at each unresolved token, fill "
-                    "`resolution` (= what the image shows) + resolution_method: "
-                    "image-adjudication + adjudicator_session.")
+               f"{total_contested} load-bearing contested "
+               f"({overrides} OCR-override, {disclosed} disclosed) — auto-arbitrated")
+        if overrides:
+            msg += (" — OCR-override means two engines agree the grab misread a "
+                    "word/number; the gate flags it to correct the quote.")
         print(msg)
 
     if skipped:

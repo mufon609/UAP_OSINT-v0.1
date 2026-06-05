@@ -397,6 +397,50 @@ sibling. `quote_source_grounding` stays `SEVERITY="warn"` and out of
    `assemble` still splices it; a future pass could slim `run` to emit only the
    sibling and drop `assemble` / `build_consensus_2`.
 
+#### 2026-06-04 session — grounding made fully automated; mandatory image-adjudication retired
+
+**Why.** Grounding had stalled: every backfill demanded a human image-adjudicate
+each contested token, and on figure/redaction-heavy DIRDs the contested pile was
+almost entirely *structure* (redaction brackets `[ ]`, list bullets `•`, markup
+`*`). dird-03 sat blocked on adjudicating bullet points. The guarantee level was
+never pinned down, so each prior session re-litigated it (single-agent →
+twin-agent → whole-document → quote-scoped). Settled this session with the
+maintainer.
+
+**The decided guarantee (now THE contract in `conventions.md`).**
+- Grounding compares only **load-bearing characters** — letters, digits, and the
+  numeric symbols `. - % $ °` (the latter only adjacent to a digit). Document
+  *structure* (punctuation, bullets, brackets, markup, banners, figure labels,
+  dot-leaders) is **never compared**. `is_load_bearing()` in `ocr-consensus.py`.
+- A load-bearing contested token is resolved by a **single automated arbiter — no
+  human step**: majority wins; with no majority, **trust precedence
+  `VLM > PaddleOCR > Tesseract`** decides. Both OCR engines agreeing against the
+  grab → they override it (`ocr-majority`, resolution ≠ sibling → gate flags it to
+  correct the *quote*, never the frozen sibling); a three-way split keeps the grab
+  (`disclosed`). `arbitrate()` in `ocr-consensus.py`.
+- **VLM-blocked pages** are now filled from **PaddleOCR** (not Tesseract — the
+  higher-trust fallback per the precedence); PaddleOCR is authoritative there.
+- The sibling is **frozen** (the VLM grab; never hand-corrected).
+- Guarantee = "the words and numbers of the quote rest on two uncorrelated reads,"
+  NOT a character-perfect page transcription.
+
+**Changed:** `ocr-consensus.py` (`is_load_bearing` + `arbitrate`; `cmd_ground`
+filters structure and auto-arbitrates; `SANCTIONED_MARKUP`/`auto_markup` removed;
+selftest now 8 cases), `quote_source_grounding.py` (gate → arbiter model),
+`schema-quote-grounding.yaml` (`resolution_method: ocr-majority | disclosed |
+image-adjudication`), `conventions.md`, `/prepare-ocr-sibling`.
+
+**dird-03 shipped as the proof (ship-before-rebuild).** Comma hand-edit to the
+sibling reverted (frozen-sibling rule); re-grounded clean: **23/23 spans located,
+0 load-bearing contested**. All 14 pre-commit gates green.
+
+**Supersedes above:** "image-adjudicate" in items 1–3 is now auto-arbitration; the
+backfill is mechanical (re-ground, mostly auto-clean). The **blocked-page noting
+mechanism** (track filled page ranges so a load-bearing Tesseract/PaddleOCR
+disagreement on a blocked-page span is recorded as noted — rule decided: PaddleOCR
+wins) is a remaining mechanical task, pairing with re-filling existing
+Tesseract-filled siblings from PaddleOCR. Gate-wiring (item 3) still pending backfill.
+
 **Blocks:** none.
 **Blocked by:** none.
 
