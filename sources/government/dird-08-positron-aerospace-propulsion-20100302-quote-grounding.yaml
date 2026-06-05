@@ -1,0 +1,2066 @@
+schema: quote-grounding/v2
+source_pdf: government/dird-08-positron-aerospace-propulsion-20100302.pdf
+sibling_txt: government/dird-08-positron-aerospace-propulsion-20100302.txt
+sibling_sha256: 9a055d4474fb5f32b86521772f3dd67ef884a39e76d92087418ff8e3423e5f63
+generated: '2026-06-05'
+confirming_engines:
+- name: tesseract
+  version: 5.5.0
+- name: paddleocr
+  version: 3.6.0
+grounded_spans:
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-cover-classification-banner
+  kind: quote
+  located: true
+  char_start: 0
+  char_end: 35
+  tokens: 5
+  confirmed: 1
+  contested:
+  - token_index: 3
+    char_start: 14
+    char_end: 17
+    line: 1
+    context: '...UNCLASSIFIED//‹FOR› OFFICIAL USE ONLY  [figure: D...'
+    sibling: FOR
+    tesseract: '@'
+    paddleocr: null
+    resolution: FOR
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 4
+    char_start: 18
+    char_end: 26
+    line: 1
+    context: '...UNCLASSIFIED//FOR ‹OFFICIAL› USE ONLY  [figure: DIA seal] ...'
+    sibling: OFFICIAL
+    tesseract: RaeGhhbG
+    paddleocr: null
+    resolution: OFFICIAL
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 5
+    char_start: 27
+    char_end: 30
+    line: 1
+    context: '...UNCLASSIFIED//FOR OFFICIAL ‹USE› ONLY  [figure: DIA seal]  Def...'
+    sibling: USE
+    tesseract: iG
+    paddleocr: null
+    resolution: USE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 6
+    char_start: 31
+    char_end: 35
+    line: 1
+    context: '...NCLASSIFIED//FOR OFFICIAL USE ‹ONLY›  [figure: DIA seal]  Defense ...'
+    sibling: ONLY
+    tesseract: Ohiee
+    paddleocr: null
+    resolution: ONLY
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-title-identity-block
+  kind: quote
+  located: true
+  char_start: 57
+  char_end: 207
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-prepared-by-author-redaction
+  kind: quote
+  located: true
+  char_start: 762
+  char_end: 860
+  tokens: 15
+  confirmed: 13
+  contested:
+  - token_index: 143
+    char_start: 776
+    char_end: 784
+    line: 36
+    context: '...ce Propulsion   Prepared by: [‹redacted›: (b)(3):10 USC 424] Defense I...'
+    sibling: redacted
+    tesseract: null
+    paddleocr: null
+    resolution: redacted
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 162
+    char_start: 843
+    char_end: 851
+    line: 40
+    context: '...Intelligence Agency  Author: [‹redacted›: (b)(6)]   Administrative Not...'
+    sibling: redacted
+    tesseract: null
+    paddleocr: null
+    resolution: redacted
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-copyright-warning
+  kind: quote
+  located: true
+  char_start: 884
+  char_end: 982
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-administrative-note-aawsa-provenance
+  kind: quote
+  located: true
+  char_start: 985
+  char_end: 1435
+  tokens: 73
+  confirmed: 70
+  contested:
+  - token_index: 210
+    char_start: 1108
+    char_end: 1116
+    line: 48
+    context: '...Defense Intelligence Agency, [‹redacted›: (b)(3):10 USC 424] Advanced ...'
+    sibling: redacted
+    tesseract: null
+    paddleocr: null
+    resolution: redacted
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 245
+    char_start: 1274
+    char_end: 1282
+    line: 48
+    context: '...ument should be addressed to [‹redacted›: (b)(3):10 USC 424;(b)(6)] AA...'
+    sibling: redacted
+    tesseract: null
+    paddleocr: null
+    resolution: redacted
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 276
+    char_start: 1369
+    char_end: 1377
+    line: 48
+    context: '...e Intelligence Agency, ATTN: [‹redacted›: (b)(3):10 USC 424] Bldg 6000...'
+    sibling: redacted
+    tesseract: null
+    paddleocr: null
+    resolution: redacted
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-intro-antimatter-energy-density
+  kind: quote
+  located: true
+  char_start: 6679
+  char_end: 6983
+  tokens: 47
+  confirmed: 47
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-intro-10-year-demonstration-scope
+  kind: quote
+  located: true
+  char_start: 7358
+  char_end: 7632
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-intro-positron-no-radiation-advantage
+  kind: quote
+  located: true
+  char_start: 8920
+  char_end: 9045
+  tokens: 16
+  confirmed: 16
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-antimatter-specific-energy
+  kind: quote
+  located: true
+  char_start: 9542
+  char_end: 9719
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-antimatter-two-barriers
+  kind: quote
+  located: true
+  char_start: 11727
+  char_end: 12260
+  tokens: 79
+  confirmed: 79
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-ptre-concept
+  kind: quote
+  located: true
+  char_start: 14468
+  char_end: 14604
+  tokens: 22
+  confirmed: 22
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-ptre-vs-combustion-turboramjet
+  kind: quote
+  located: true
+  char_start: 15603
+  char_end: 15753
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-uav-globe-circling-150ug
+  kind: quote
+  located: true
+  char_start: 16280
+  char_end: 16545
+  tokens: 50
+  confirmed: 50
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-ssrv-glow-43-percent
+  kind: quote
+  located: true
+  char_start: 21608
+  char_end: 21833
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-ssrv-positron-budget-86mg
+  kind: quote
+  located: true
+  char_start: 22288
+  char_end: 22591
+  tokens: 65
+  confirmed: 65
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-solid-core-isp-920
+  kind: quote
+  located: true
+  char_start: 26600
+  char_end: 26754
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-solid-core-mars-burn-positrons
+  kind: quote
+  located: true
+  char_start: 26922
+  char_end: 27063
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-gas-core-thrust-positrons
+  kind: quote
+  located: true
+  char_start: 30815
+  char_end: 31171
+  tokens: 69
+  confirmed: 69
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-sanger-photon-performance
+  kind: quote
+  located: true
+  char_start: 34345
+  char_end: 34737
+  tokens: 83
+  confirmed: 83
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-rocket-comparison-table-mars
+  kind: quote
+  located: true
+  char_start: 34774
+  char_end: 34921
+  tokens: 30
+  confirmed: 29
+  contested:
+  - token_index: 8959
+    char_start: 34905
+    char_end: 34907
+    line: 536
+    context: '...one-way transit to Mars using ‹ΔV› = 3.7 km/sec.  Table 5. Compa...'
+    sibling: ΔV
+    tesseract: AV
+    paddleocr: Δv
+    resolution: ΔV
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-positron-production-150ug-6-months
+  kind: quote
+  located: true
+  char_start: 46882
+  char_end: 47098
+  tokens: 38
+  confirmed: 37
+  contested:
+  - token_index: 11316
+    char_start: 46896
+    char_end: 46900
+    line: 679
+    context: '...ICIAL USE ONLY  Assuming that ‹10¹⁶› positrons/sec can be realized...'
+    sibling: 10¹⁶
+    tesseract: '1026'
+    paddleocr: '1016'
+    resolution: 10¹⁶
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-cost-positron-vs-antiproton-factor
+  kind: quote
+  located: true
+  char_start: 47874
+  char_end: 48012
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-cost-positron-per-microgram
+  kind: quote
+  located: true
+  char_start: 48869
+  char_end: 49244
+  tokens: 83
+  confirmed: 81
+  contested:
+  - token_index: 11810
+    char_start: 49060
+    char_end: 49067
+    line: 702
+    context: '...ic product (GDP). A 2000 NASA ‹study⁶³› on which this author collabor...'
+    sibling: study⁶³
+    tesseract: study
+    paddleocr: study63
+    resolution: study⁶³
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 11833
+    char_start: 49169
+    char_end: 49170
+    line: 702
+    context: '...T/g, consistent with the $333/‹J› figure in the second line of ...'
+    sibling: J
+    tesseract: ']'
+    paddleocr: ']'
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read '']'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-cost-150ug-flight-96-million
+  kind: quote
+  located: true
+  char_start: 49776
+  char_end: 49907
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 11956
+    char_start: 49802
+    char_end: 49804
+    line: 712
+    context: '...LY  Table 5, the required 150 ‹µg› for this epic flight could be...'
+    sibling: µg
+    tesseract: ug
+    paddleocr: pg
+    resolution: µg
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-storage-limit-picograms
+  kind: quote
+  located: true
+  char_start: 51165
+  char_end: 51383
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-storage-positronium-lifetime-results
+  kind: quote
+  located: true
+  char_start: 57080
+  char_end: 57243
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 13490
+    char_start: 57240
+    char_end: 57242
+    line: 782
+    context: '...ith 20-nm voids live up to 10 ‹µs›. This is somewhat longer than...'
+    sibling: µs
+    tesseract: ys
+    paddleocr: ps
+    resolution: µs
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-conclusions-requirements-range
+  kind: quote
+  located: true
+  char_start: 58990
+  char_end: 59324
+  tokens: 59
+  confirmed: 58
+  contested:
+  - token_index: 13836
+    char_start: 59132
+    char_end: 59136
+    line: 792
+    context: '...n to Mars. A positron-powered ‹SSRV› could take off from Earth hor...'
+    sibling: SSRV
+    tesseract: SSRY
+    paddleocr: Ssrv
+    resolution: SSRV
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-conclusions-cost-timeline
+  kind: quote
+  located: true
+  char_start: 59326
+  char_end: 59727
+  tokens: 68
+  confirmed: 67
+  contested:
+  - token_index: 13882
+    char_start: 59351
+    char_end: 59353
+    line: 794
+    context: '...ng.  Within 10 years, the 150 ‹µg› of positrons required for a g...'
+    sibling: µg
+    tesseract: yg
+    paddleocr: ug
+    resolution: µg
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: q-conclusions-storage-engineering
+  kind: quote
+  located: true
+  char_start: 59918
+  char_end: 60369
+  tokens: 73
+  confirmed: 71
+  contested:
+  - token_index: 13991
+    char_start: 59934
+    char_end: 59936
+    line: 802
+    context: '... encouraging. Lifetimes of 10 ‹µs› have been achieved, and tens-...'
+    sibling: µs
+    tesseract: us
+    paddleocr: us
+    resolution: µs
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''us'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 14018
+    char_start: 60077
+    char_end: 60081
+    line: 802
+    context: '...imits are due to interactions ‹with› the walls of the trap contain...'
+    sibling: with
+    tesseract: 'on'
+    paddleocr: 'on'
+    resolution: with
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''on'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw1
+  kind: cited_work
+  located: true
+  char_start: 60372
+  char_end: 60425
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw2
+  kind: cited_work
+  located: true
+  char_start: 60426
+  char_end: 60470
+  tokens: 8
+  confirmed: 8
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw3
+  kind: cited_work
+  located: true
+  char_start: 60471
+  char_end: 60556
+  tokens: 14
+  confirmed: 14
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw4
+  kind: cited_work
+  located: true
+  char_start: 60557
+  char_end: 60596
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw5
+  kind: cited_work
+  located: true
+  char_start: 60597
+  char_end: 60715
+  tokens: 17
+  confirmed: 17
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw6
+  kind: cited_work
+  located: true
+  char_start: 60716
+  char_end: 60853
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw7
+  kind: cited_work
+  located: true
+  char_start: 60854
+  char_end: 60948
+  tokens: 16
+  confirmed: 16
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw8
+  kind: cited_work
+  located: true
+  char_start: 60949
+  char_end: 61092
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw9
+  kind: cited_work
+  located: true
+  char_start: 61093
+  char_end: 61177
+  tokens: 14
+  confirmed: 14
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw10
+  kind: cited_work
+  located: true
+  char_start: 61178
+  char_end: 61218
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw11
+  kind: cited_work
+  located: true
+  char_start: 61219
+  char_end: 61363
+  tokens: 25
+  confirmed: 24
+  contested:
+  - token_index: 14372
+    char_start: 61317
+    char_end: 61323
+    line: 815
+    context: '...chnical Report, AFRL Contract ‹F08630›-00-C-0010, Eglin AFB, FL, Mar...'
+    sibling: F08630
+    tesseract: FO8630
+    paddleocr: FO8630
+    resolution: F08630
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''FO8630'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw19
+  kind: cited_work
+  located: true
+  char_start: 61427
+  char_end: 61562
+  tokens: 20
+  confirmed: 20
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw20
+  kind: cited_work
+  located: true
+  char_start: 61563
+  char_end: 61803
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw27
+  kind: cited_work
+  located: true
+  char_start: 62217
+  char_end: 62413
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw29
+  kind: cited_work
+  located: true
+  char_start: 62423
+  char_end: 62567
+  tokens: 24
+  confirmed: 23
+  contested:
+  - token_index: 14669
+    char_start: 62530
+    char_end: 62538
+    line: 833
+    context: '...ver)," LA-10062-H, Los Alamos ‹National› Laboratory, NM., May (1986). ...'
+    sibling: National
+    tesseract: null
+    paddleocr: Natlonal
+    resolution: National
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw31
+  kind: cited_work
+  located: true
+  char_start: 62765
+  char_end: 62825
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw32
+  kind: cited_work
+  located: true
+  char_start: 62826
+  char_end: 62905
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw33
+  kind: cited_work
+  located: true
+  char_start: 62985
+  char_end: 63157
+  tokens: 30
+  confirmed: 30
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw37
+  kind: cited_work
+  located: true
+  char_start: 63608
+  char_end: 63648
+  tokens: 7
+  confirmed: 0
+  contested:
+  - token_index: 14944
+    char_start: 63611
+    char_end: 63612
+    line: 848
+    context: '... 1, 2005 – March 31, 2006. ³⁷ ‹E›. Sänger, Ing. Arch. 21, 213 (...'
+    sibling: E
+    tesseract: §
+    paddleocr: Ibid
+    resolution: E
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14946
+    char_start: 63614
+    char_end: 63620
+    line: 848
+    context: '... 2005 – March 31, 2006. ³⁷ E. ‹Sänger›, Ing. Arch. 21, 213 (1953). ³...'
+    sibling: Sänger
+    tesseract: null
+    paddleocr: System
+    resolution: Sänger
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14948
+    char_start: 63622
+    char_end: 63625
+    line: 848
+    context: '...March 31, 2006. ³⁷ E. Sänger, ‹Ing›. Arch. 21, 213 (1953). ³⁸ G. ...'
+    sibling: Ing
+    tesseract: null
+    paddleocr: '"'
+    resolution: Ing
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14950
+    char_start: 63627
+    char_end: 63631
+    line: 848
+    context: '... 31, 2006. ³⁷ E. Sänger, Ing. ‹Arch›. 21, 213 (1953). ³⁸ G. A. Smi...'
+    sibling: Arch
+    tesseract: null
+    paddleocr: '-'
+    resolution: Arch
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14952
+    char_start: 63633
+    char_end: 63635
+    line: 848
+    context: '...006. ³⁷ E. Sänger, Ing. Arch. ‹21›, 213 (1953). ³⁸ G. A. Smith, ...'
+    sibling: '21'
+    tesseract: null
+    paddleocr: '-'
+    resolution: '21'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14954
+    char_start: 63637
+    char_end: 63640
+    line: 848
+    context: '... ³⁷ E. Sänger, Ing. Arch. 21, ‹213› (1953). ³⁸ G. A. Smith, "Posi...'
+    sibling: '213'
+    tesseract: null
+    paddleocr: Presented
+    resolution: '213'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 14956
+    char_start: 63642
+    char_end: 63646
+    line: 848
+    context: '.... Sänger, Ing. Arch. 21, 213 (‹1953›). ³⁸ G. A. Smith, "Positron P...'
+    sibling: '1953'
+    tesseract: null
+    paddleocr: '1998'
+    resolution: '1953'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw40
+  kind: cited_work
+  located: true
+  char_start: 63855
+  char_end: 64092
+  tokens: 37
+  confirmed: 0
+  contested:
+  - token_index: 15009
+    char_start: 63858
+    char_end: 63859
+    line: 851
+    context: '...– March 31, 2006. ³⁹ Ibid. ⁴⁰ ‹G›. Gaidos et al., "Antiproton-C...'
+    sibling: G
+    tesseract: null
+    paddleocr: null
+    resolution: G
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15011
+    char_start: 63861
+    char_end: 63867
+    line: 851
+    context: '...arch 31, 2006. ³⁹ Ibid. ⁴⁰ G. ‹Gaidos› et al., "Antiproton-Catalyzed...'
+    sibling: Gaidos
+    tesseract: null
+    paddleocr: null
+    resolution: Gaidos
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15012
+    char_start: 63868
+    char_end: 63870
+    line: 851
+    context: '..., 2006. ³⁹ Ibid. ⁴⁰ G. Gaidos ‹et› al., "Antiproton-Catalyzed Mi...'
+    sibling: et
+    tesseract: null
+    paddleocr: null
+    resolution: et
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15013
+    char_start: 63871
+    char_end: 63873
+    line: 851
+    context: '...006. ³⁹ Ibid. ⁴⁰ G. Gaidos et ‹al›., "Antiproton-Catalyzed Micro...'
+    sibling: al
+    tesseract: null
+    paddleocr: null
+    resolution: al
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15017
+    char_start: 63877
+    char_end: 63887
+    line: 851
+    context: '...⁹ Ibid. ⁴⁰ G. Gaidos et al., "‹Antiproton›-Catalyzed Microfission/fusion...'
+    sibling: Antiproton
+    tesseract: null
+    paddleocr: null
+    resolution: Antiproton
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15019
+    char_start: 63888
+    char_end: 63897
+    line: 851
+    context: '...G. Gaidos et al., "Antiproton-‹Catalyzed› Microfission/fusion Propulsio...'
+    sibling: Catalyzed
+    tesseract: null
+    paddleocr: null
+    resolution: Catalyzed
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15020
+    char_start: 63898
+    char_end: 63910
+    line: 851
+    context: '...et al., "Antiproton-Catalyzed ‹Microfission›/fusion Propulsion Systems for...'
+    sibling: Microfission
+    tesseract: null
+    paddleocr: null
+    resolution: Microfission
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15022
+    char_start: 63911
+    char_end: 63917
+    line: 851
+    context: '...proton-Catalyzed Microfission/‹fusion› Propulsion Systems for Explor...'
+    sibling: fusion
+    tesseract: null
+    paddleocr: null
+    resolution: fusion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15023
+    char_start: 63918
+    char_end: 63928
+    line: 851
+    context: '...Catalyzed Microfission/fusion ‹Propulsion› Systems for Exploration of th...'
+    sibling: Propulsion
+    tesseract: null
+    paddleocr: null
+    resolution: Propulsion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15024
+    char_start: 63929
+    char_end: 63936
+    line: 851
+    context: '...icrofission/fusion Propulsion ‹Systems› for Exploration of the Outer ...'
+    sibling: Systems
+    tesseract: null
+    paddleocr: null
+    resolution: Systems
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15025
+    char_start: 63937
+    char_end: 63940
+    line: 851
+    context: '...ion/fusion Propulsion Systems ‹for› Exploration of the Outer Sola...'
+    sibling: for
+    tesseract: null
+    paddleocr: null
+    resolution: for
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15026
+    char_start: 63941
+    char_end: 63952
+    line: 851
+    context: '...fusion Propulsion Systems for ‹Exploration› of the Outer Solar System and...'
+    sibling: Exploration
+    tesseract: null
+    paddleocr: null
+    resolution: Exploration
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15027
+    char_start: 63953
+    char_end: 63955
+    line: 851
+    context: '...lsion Systems for Exploration ‹of› the Outer Solar System and Be...'
+    sibling: of
+    tesseract: null
+    paddleocr: null
+    resolution: of
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15028
+    char_start: 63956
+    char_end: 63959
+    line: 851
+    context: '...on Systems for Exploration of ‹the› Outer Solar System and Beyond...'
+    sibling: the
+    tesseract: null
+    paddleocr: null
+    resolution: the
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15029
+    char_start: 63960
+    char_end: 63965
+    line: 851
+    context: '...ystems for Exploration of the ‹Outer› Solar System and Beyond," AIA...'
+    sibling: Outer
+    tesseract: null
+    paddleocr: null
+    resolution: Outer
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15030
+    char_start: 63966
+    char_end: 63971
+    line: 851
+    context: '... for Exploration of the Outer ‹Solar› System and Beyond," AIAA-98-3...'
+    sibling: Solar
+    tesseract: null
+    paddleocr: null
+    resolution: Solar
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15031
+    char_start: 63972
+    char_end: 63978
+    line: 851
+    context: '...xploration of the Outer Solar ‹System› and Beyond," AIAA-98-3589, Pr...'
+    sibling: System
+    tesseract: null
+    paddleocr: null
+    resolution: System
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15032
+    char_start: 63979
+    char_end: 63982
+    line: 851
+    context: '...ion of the Outer Solar System ‹and› Beyond," AIAA-98-3589, Presen...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15033
+    char_start: 63983
+    char_end: 63989
+    line: 851
+    context: '...of the Outer Solar System and ‹Beyond›," AIAA-98-3589, Presented at ...'
+    sibling: Beyond
+    tesseract: null
+    paddleocr: null
+    resolution: Beyond
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15036
+    char_start: 63992
+    char_end: 63996
+    line: 851
+    context: '...ter Solar System and Beyond," ‹AIAA›-98-3589, Presented at the 34t...'
+    sibling: AIAA
+    tesseract: null
+    paddleocr: null
+    resolution: AIAA
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15037
+    char_start: 63996
+    char_end: 63997
+    line: 851
+    context: '...Solar System and Beyond," AIAA‹-›98-3589, Presented at the 34th...'
+    sibling: '-'
+    tesseract: null
+    paddleocr: null
+    resolution: '-'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15038
+    char_start: 63997
+    char_end: 63999
+    line: 851
+    context: '...olar System and Beyond," AIAA-‹98›-3589, Presented at the 34th A...'
+    sibling: '98'
+    tesseract: null
+    paddleocr: null
+    resolution: '98'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15039
+    char_start: 63999
+    char_end: 64000
+    line: 851
+    context: '...ar System and Beyond," AIAA-98‹-›3589, Presented at the 34th AI...'
+    sibling: '-'
+    tesseract: null
+    paddleocr: null
+    resolution: '-'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15040
+    char_start: 64000
+    char_end: 64004
+    line: 851
+    context: '...r System and Beyond," AIAA-98-‹3589›, Presented at the 34th AIAA/A...'
+    sibling: '3589'
+    tesseract: null
+    paddleocr: null
+    resolution: '3589'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15042
+    char_start: 64006
+    char_end: 64015
+    line: 851
+    context: '...em and Beyond," AIAA-98-3589, ‹Presented› at the 34th AIAA/ASME/SAE/ASE...'
+    sibling: Presented
+    tesseract: null
+    paddleocr: null
+    resolution: Presented
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15043
+    char_start: 64016
+    char_end: 64018
+    line: 851
+    context: '...ond," AIAA-98-3589, Presented ‹at› the 34th AIAA/ASME/SAE/ASEE J...'
+    sibling: at
+    tesseract: null
+    paddleocr: null
+    resolution: at
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15044
+    char_start: 64019
+    char_end: 64022
+    line: 851
+    context: '...," AIAA-98-3589, Presented at ‹the› 34th AIAA/ASME/SAE/ASEE Joint...'
+    sibling: the
+    tesseract: null
+    paddleocr: null
+    resolution: the
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15045
+    char_start: 64023
+    char_end: 64027
+    line: 851
+    context: '...IAA-98-3589, Presented at the ‹34th› AIAA/ASME/SAE/ASEE Joint Prop...'
+    sibling: 34th
+    tesseract: null
+    paddleocr: null
+    resolution: 34th
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15046
+    char_start: 64028
+    char_end: 64032
+    line: 851
+    context: '...8-3589, Presented at the 34th ‹AIAA›/ASME/SAE/ASEE Joint Propulsio...'
+    sibling: AIAA
+    tesseract: null
+    paddleocr: null
+    resolution: AIAA
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15048
+    char_start: 64033
+    char_end: 64037
+    line: 851
+    context: '...9, Presented at the 34th AIAA/‹ASME›/SAE/ASEE Joint Propulsion Con...'
+    sibling: ASME
+    tesseract: null
+    paddleocr: null
+    resolution: ASME
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15050
+    char_start: 64038
+    char_end: 64041
+    line: 851
+    context: '...esented at the 34th AIAA/ASME/‹SAE›/ASEE Joint Propulsion Confere...'
+    sibling: SAE
+    tesseract: null
+    paddleocr: null
+    resolution: SAE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15052
+    char_start: 64042
+    char_end: 64046
+    line: 851
+    context: '...ted at the 34th AIAA/ASME/SAE/‹ASEE› Joint Propulsion Conference &...'
+    sibling: ASEE
+    tesseract: null
+    paddleocr: null
+    resolution: ASEE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15053
+    char_start: 64047
+    char_end: 64052
+    line: 851
+    context: '...t the 34th AIAA/ASME/SAE/ASEE ‹Joint› Propulsion Conference & Exhib...'
+    sibling: Joint
+    tesseract: null
+    paddleocr: null
+    resolution: Joint
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15054
+    char_start: 64053
+    char_end: 64063
+    line: 851
+    context: '...34th AIAA/ASME/SAE/ASEE Joint ‹Propulsion› Conference & Exhibit (1998). ...'
+    sibling: Propulsion
+    tesseract: null
+    paddleocr: null
+    resolution: Propulsion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15055
+    char_start: 64064
+    char_end: 64074
+    line: 851
+    context: '...SME/SAE/ASEE Joint Propulsion ‹Conference› & Exhibit (1998). ⁴¹ W. Lance...'
+    sibling: Conference
+    tesseract: null
+    paddleocr: null
+    resolution: Conference
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15057
+    char_start: 64077
+    char_end: 64084
+    line: 851
+    context: '...Joint Propulsion Conference & ‹Exhibit› (1998). ⁴¹ W. Lance Werthman,...'
+    sibling: Exhibit
+    tesseract: null
+    paddleocr: null
+    resolution: Exhibit
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15059
+    char_start: 64086
+    char_end: 64090
+    line: 851
+    context: '...pulsion Conference & Exhibit (‹1998›). ⁴¹ W. Lance Werthman, "Anti...'
+    sibling: '1998'
+    tesseract: null
+    paddleocr: null
+    resolution: '1998'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw41
+  kind: cited_work
+  located: true
+  char_start: 64093
+  char_end: 64248
+  tokens: 19
+  confirmed: 0
+  contested:
+  - token_index: 15063
+    char_start: 64096
+    char_end: 64097
+    line: 852
+    context: '...nference & Exhibit (1998). ⁴¹ ‹W›. Lance Werthman, "Antiproton-...'
+    sibling: W
+    tesseract: null
+    paddleocr: null
+    resolution: W
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15065
+    char_start: 64099
+    char_end: 64104
+    line: 852
+    context: '...rence & Exhibit (1998). ⁴¹ W. ‹Lance› Werthman, "Antiproton-Catalyz...'
+    sibling: Lance
+    tesseract: null
+    paddleocr: null
+    resolution: Lance
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15066
+    char_start: 64105
+    char_end: 64113
+    line: 852
+    context: '...& Exhibit (1998). ⁴¹ W. Lance ‹Werthman›, "Antiproton-Catalyzed Microf...'
+    sibling: Werthman
+    tesseract: null
+    paddleocr: null
+    resolution: Werthman
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15069
+    char_start: 64116
+    char_end: 64126
+    line: 852
+    context: '...1998). ⁴¹ W. Lance Werthman, "‹Antiproton›-Catalyzed Microfission/fusion...'
+    sibling: Antiproton
+    tesseract: null
+    paddleocr: null
+    resolution: Antiproton
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15071
+    char_start: 64127
+    char_end: 64136
+    line: 852
+    context: '.... Lance Werthman, "Antiproton-‹Catalyzed› Microfission/fusion Space Pro...'
+    sibling: Catalyzed
+    tesseract: null
+    paddleocr: null
+    resolution: Catalyzed
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15072
+    char_start: 64137
+    char_end: 64149
+    line: 852
+    context: '...rthman, "Antiproton-Catalyzed ‹Microfission›/fusion Space Propulsion", MS ...'
+    sibling: Microfission
+    tesseract: null
+    paddleocr: null
+    resolution: Microfission
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15074
+    char_start: 64150
+    char_end: 64156
+    line: 852
+    context: '...proton-Catalyzed Microfission/‹fusion› Space Propulsion", MS Thesis,...'
+    sibling: fusion
+    tesseract: null
+    paddleocr: null
+    resolution: fusion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15075
+    char_start: 64157
+    char_end: 64162
+    line: 852
+    context: '...Catalyzed Microfission/fusion ‹Space› Propulsion", MS Thesis, Dept....'
+    sibling: Space
+    tesseract: null
+    paddleocr: null
+    resolution: Space
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15076
+    char_start: 64163
+    char_end: 64173
+    line: 852
+    context: '...zed Microfission/fusion Space ‹Propulsion›", MS Thesis, Dept. of Aerospa...'
+    sibling: Propulsion
+    tesseract: null
+    paddleocr: null
+    resolution: Propulsion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15079
+    char_start: 64176
+    char_end: 64178
+    line: 852
+    context: '...ion/fusion Space Propulsion", ‹MS› Thesis, Dept. of Aerospace En...'
+    sibling: MS
+    tesseract: null
+    paddleocr: null
+    resolution: MS
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15080
+    char_start: 64179
+    char_end: 64185
+    line: 852
+    context: '.../fusion Space Propulsion", MS ‹Thesis›, Dept. of Aerospace Engineeri...'
+    sibling: Thesis
+    tesseract: null
+    paddleocr: null
+    resolution: Thesis
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15082
+    char_start: 64187
+    char_end: 64191
+    line: 852
+    context: '...Space Propulsion", MS Thesis, ‹Dept›. of Aerospace Engineering, Pe...'
+    sibling: Dept
+    tesseract: null
+    paddleocr: null
+    resolution: Dept
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15084
+    char_start: 64193
+    char_end: 64195
+    line: 852
+    context: '...Propulsion", MS Thesis, Dept. ‹of› Aerospace Engineering, Penn S...'
+    sibling: of
+    tesseract: null
+    paddleocr: null
+    resolution: of
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15085
+    char_start: 64196
+    char_end: 64205
+    line: 852
+    context: '...pulsion", MS Thesis, Dept. of ‹Aerospace› Engineering, Penn State Unive...'
+    sibling: Aerospace
+    tesseract: null
+    paddleocr: null
+    resolution: Aerospace
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15086
+    char_start: 64206
+    char_end: 64217
+    line: 852
+    context: '...MS Thesis, Dept. of Aerospace ‹Engineering›, Penn State University (1995)...'
+    sibling: Engineering
+    tesseract: null
+    paddleocr: null
+    resolution: Engineering
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15088
+    char_start: 64219
+    char_end: 64223
+    line: 852
+    context: '...pt. of Aerospace Engineering, ‹Penn› State University (1995). ⁴² G...'
+    sibling: Penn
+    tesseract: null
+    paddleocr: null
+    resolution: Penn
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15089
+    char_start: 64224
+    char_end: 64229
+    line: 852
+    context: '...f Aerospace Engineering, Penn ‹State› University (1995). ⁴² G. A. S...'
+    sibling: State
+    tesseract: null
+    paddleocr: null
+    resolution: State
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15090
+    char_start: 64230
+    char_end: 64240
+    line: 852
+    context: '...space Engineering, Penn State ‹University› (1995). ⁴² G. A. Smith, "High...'
+    sibling: University
+    tesseract: null
+    paddleocr: null
+    resolution: University
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15092
+    char_start: 64242
+    char_end: 64246
+    line: 852
+    context: '...ering, Penn State University (‹1995›). ⁴² G. A. Smith, "High Densi...'
+    sibling: '1995'
+    tesseract: null
+    paddleocr: null
+    resolution: '1995'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw42
+  kind: cited_work
+  located: true
+  char_start: 64249
+  char_end: 64383
+  tokens: 20
+  confirmed: 0
+  contested:
+  - token_index: 15096
+    char_start: 64252
+    char_end: 64253
+    line: 853
+    context: '...n State University (1995). ⁴² ‹G›. A. Smith, "High Density Stor...'
+    sibling: G
+    tesseract: null
+    paddleocr: null
+    resolution: G
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15098
+    char_start: 64255
+    char_end: 64256
+    line: 853
+    context: '...tate University (1995). ⁴² G. ‹A›. Smith, "High Density Storage...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15100
+    char_start: 64258
+    char_end: 64263
+    line: 853
+    context: '...e University (1995). ⁴² G. A. ‹Smith›, "High Density Storage of Ant...'
+    sibling: Smith
+    tesseract: null
+    paddleocr: null
+    resolution: Smith
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15103
+    char_start: 64266
+    char_end: 64270
+    line: 853
+    context: '...sity (1995). ⁴² G. A. Smith, "‹High› Density Storage of Antimatter...'
+    sibling: High
+    tesseract: null
+    paddleocr: null
+    resolution: High
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15104
+    char_start: 64271
+    char_end: 64278
+    line: 853
+    context: '...(1995). ⁴² G. A. Smith, "High ‹Density› Storage of Antimatter", Advan...'
+    sibling: Density
+    tesseract: null
+    paddleocr: null
+    resolution: Density
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15105
+    char_start: 64279
+    char_end: 64286
+    line: 853
+    context: '...⁴² G. A. Smith, "High Density ‹Storage› of Antimatter", Advanced High...'
+    sibling: Storage
+    tesseract: null
+    paddleocr: null
+    resolution: Storage
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15106
+    char_start: 64287
+    char_end: 64289
+    line: 853
+    context: '... Smith, "High Density Storage ‹of› Antimatter", Advanced High En...'
+    sibling: of
+    tesseract: null
+    paddleocr: null
+    resolution: of
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15107
+    char_start: 64290
+    char_end: 64300
+    line: 853
+    context: '...ith, "High Density Storage of ‹Antimatter›", Advanced High Energy Storag...'
+    sibling: Antimatter
+    tesseract: null
+    paddleocr: null
+    resolution: Antimatter
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15110
+    char_start: 64303
+    char_end: 64311
+    line: 853
+    context: '...nsity Storage of Antimatter", ‹Advanced› High Energy Storage Conferenc...'
+    sibling: Advanced
+    tesseract: null
+    paddleocr: null
+    resolution: Advanced
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15111
+    char_start: 64312
+    char_end: 64316
+    line: 853
+    context: '...rage of Antimatter", Advanced ‹High› Energy Storage Conference, MI...'
+    sibling: High
+    tesseract: null
+    paddleocr: null
+    resolution: High
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15112
+    char_start: 64317
+    char_end: 64323
+    line: 853
+    context: '...of Antimatter", Advanced High ‹Energy› Storage Conference, MITRE Cor...'
+    sibling: Energy
+    tesseract: null
+    paddleocr: null
+    resolution: Energy
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15113
+    char_start: 64324
+    char_end: 64331
+    line: 853
+    context: '...matter", Advanced High Energy ‹Storage› Conference, MITRE Corp., McLe...'
+    sibling: Storage
+    tesseract: null
+    paddleocr: null
+    resolution: Storage
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15114
+    char_start: 64332
+    char_end: 64342
+    line: 853
+    context: '... Advanced High Energy Storage ‹Conference›, MITRE Corp., McLean, VA, Aug...'
+    sibling: Conference
+    tesseract: null
+    paddleocr: null
+    resolution: Conference
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15116
+    char_start: 64344
+    char_end: 64349
+    line: 853
+    context: '...gh Energy Storage Conference, ‹MITRE› Corp., McLean, VA, Aug. 1 (20...'
+    sibling: MITRE
+    tesseract: null
+    paddleocr: null
+    resolution: MITRE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15117
+    char_start: 64350
+    char_end: 64354
+    line: 853
+    context: '...rgy Storage Conference, MITRE ‹Corp›., McLean, VA, Aug. 1 (2005). ...'
+    sibling: Corp
+    tesseract: null
+    paddleocr: null
+    resolution: Corp
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15120
+    char_start: 64357
+    char_end: 64363
+    line: 853
+    context: '...rage Conference, MITRE Corp., ‹McLean›, VA, Aug. 1 (2005). ⁴³ S. J. ...'
+    sibling: McLean
+    tesseract: null
+    paddleocr: null
+    resolution: McLean
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15122
+    char_start: 64365
+    char_end: 64367
+    line: 853
+    context: '...ference, MITRE Corp., McLean, ‹VA›, Aug. 1 (2005). ⁴³ S. J. Hoff...'
+    sibling: VA
+    tesseract: null
+    paddleocr: null
+    resolution: VA
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15124
+    char_start: 64369
+    char_end: 64372
+    line: 853
+    context: '...nce, MITRE Corp., McLean, VA, ‹Aug›. 1 (2005). ⁴³ S. J. Hoffman a...'
+    sibling: Aug
+    tesseract: null
+    paddleocr: null
+    resolution: Aug
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15126
+    char_start: 64374
+    char_end: 64375
+    line: 853
+    context: '...MITRE Corp., McLean, VA, Aug. ‹1› (2005). ⁴³ S. J. Hoffman and ...'
+    sibling: '1'
+    tesseract: null
+    paddleocr: null
+    resolution: '1'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15128
+    char_start: 64377
+    char_end: 64381
+    line: 853
+    context: '...RE Corp., McLean, VA, Aug. 1 (‹2005›). ⁴³ S. J. Hoffman and D. I. ...'
+    sibling: '2005'
+    tesseract: null
+    paddleocr: null
+    resolution: '2005'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw43
+  kind: cited_work
+  located: true
+  char_start: 64384
+  char_end: 64558
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw44
+  kind: cited_work
+  located: true
+  char_start: 64559
+  char_end: 64827
+  tokens: 42
+  confirmed: 42
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw46
+  kind: cited_work
+  located: true
+  char_start: 64963
+  char_end: 65063
+  tokens: 15
+  confirmed: 0
+  contested:
+  - token_index: 15281
+    char_start: 64966
+    char_end: 64967
+    line: 857
+    context: '...McLean, VA, Aug. 1 (2005). ⁴⁶ ‹J›. Dion, "Stirling Radioisotope...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15283
+    char_start: 64969
+    char_end: 64973
+    line: 857
+    context: '...ean, VA, Aug. 1 (2005). ⁴⁶ J. ‹Dion›, "Stirling Radioisotope Gener...'
+    sibling: Dion
+    tesseract: null
+    paddleocr: null
+    resolution: Dion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15286
+    char_start: 64976
+    char_end: 64984
+    line: 857
+    context: '..., Aug. 1 (2005). ⁴⁶ J. Dion, "‹Stirling› Radioisotope Generator", NASA...'
+    sibling: Stirling
+    tesseract: null
+    paddleocr: null
+    resolution: Stirling
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15287
+    char_start: 64985
+    char_end: 64997
+    line: 857
+    context: '...(2005). ⁴⁶ J. Dion, "Stirling ‹Radioisotope› Generator", NASA Glenn Resear...'
+    sibling: Radioisotope
+    tesseract: null
+    paddleocr: null
+    resolution: Radioisotope
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15288
+    char_start: 64998
+    char_end: 65007
+    line: 857
+    context: '... Dion, "Stirling Radioisotope ‹Generator›", NASA Glenn Research Center,...'
+    sibling: Generator
+    tesseract: null
+    paddleocr: null
+    resolution: Generator
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15291
+    char_start: 65010
+    char_end: 65014
+    line: 857
+    context: '...ling Radioisotope Generator", ‹NASA› Glenn Research Center, ME 388...'
+    sibling: NASA
+    tesseract: null
+    paddleocr: null
+    resolution: NASA
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15292
+    char_start: 65015
+    char_end: 65020
+    line: 857
+    context: '...Radioisotope Generator", NASA ‹Glenn› Research Center, ME 388R.2, S...'
+    sibling: Glenn
+    tesseract: null
+    paddleocr: null
+    resolution: Glenn
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15293
+    char_start: 65021
+    char_end: 65029
+    line: 857
+    context: '...sotope Generator", NASA Glenn ‹Research› Center, ME 388R.2, Spring (20...'
+    sibling: Research
+    tesseract: null
+    paddleocr: null
+    resolution: Research
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15294
+    char_start: 65030
+    char_end: 65036
+    line: 857
+    context: '...nerator", NASA Glenn Research ‹Center›, ME 388R.2, Spring (2005). ⁴⁷...'
+    sibling: Center
+    tesseract: null
+    paddleocr: null
+    resolution: Center
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15296
+    char_start: 65038
+    char_end: 65040
+    line: 857
+    context: '..., NASA Glenn Research Center, ‹ME› 388R.2, Spring (2005). ⁴⁷ Ibi...'
+    sibling: ME
+    tesseract: null
+    paddleocr: null
+    resolution: ME
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15297
+    char_start: 65041
+    char_end: 65045
+    line: 857
+    context: '...ASA Glenn Research Center, ME ‹388R›.2, Spring (2005). ⁴⁷ Ibid. ⁴⁸...'
+    sibling: 388R
+    tesseract: null
+    paddleocr: null
+    resolution: 388R
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15298
+    char_start: 65045
+    char_end: 65046
+    line: 857
+    context: '...Glenn Research Center, ME 388R‹.›2, Spring (2005). ⁴⁷ Ibid. ⁴⁸ ...'
+    sibling: .
+    tesseract: null
+    paddleocr: null
+    resolution: .
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15299
+    char_start: 65046
+    char_end: 65047
+    line: 857
+    context: '...lenn Research Center, ME 388R.‹2›, Spring (2005). ⁴⁷ Ibid. ⁴⁸ G...'
+    sibling: '2'
+    tesseract: null
+    paddleocr: null
+    resolution: '2'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15301
+    char_start: 65049
+    char_end: 65055
+    line: 857
+    context: '...n Research Center, ME 388R.2, ‹Spring› (2005). ⁴⁷ Ibid. ⁴⁸ G. A. Smi...'
+    sibling: Spring
+    tesseract: null
+    paddleocr: null
+    resolution: Spring
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15303
+    char_start: 65057
+    char_end: 65061
+    line: 857
+    context: '...ch Center, ME 388R.2, Spring (‹2005›). ⁴⁷ Ibid. ⁴⁸ G. A. Smith, "H...'
+    sibling: '2005'
+    tesseract: null
+    paddleocr: null
+    resolution: '2005'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw56
+  kind: cited_work
+  located: true
+  char_start: 66663
+  char_end: 66721
+  tokens: 11
+  confirmed: 8
+  contested:
+  - token_index: 15709
+    char_start: 66666
+    char_end: 66667
+    line: 867
+    context: '... 1, 2005 – March 31, 2006. ⁵⁶ ‹C›.A. Kapatankos, J. Synchrotron...'
+    sibling: C
+    tesseract: null
+    paddleocr: null
+    resolution: C
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15711
+    char_start: 66668
+    char_end: 66669
+    line: 867
+    context: '..., 2005 – March 31, 2006. ⁵⁶ C.‹A›. Kapatankos, J. Synchrotron R...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15713
+    char_start: 66671
+    char_end: 66681
+    line: 867
+    context: '...005 – March 31, 2006. ⁵⁶ C.A. ‹Kapatankos›, J. Synchrotron Rad. 3, 268-2...'
+    sibling: Kapatankos
+    tesseract: null
+    paddleocr: null
+    resolution: Kapatankos
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw57
+  kind: cited_work
+  located: true
+  char_start: 66722
+  char_end: 66867
+  tokens: 24
+  confirmed: 23
+  contested:
+  - token_index: 15730
+    char_start: 66725
+    char_end: 66728
+    line: 868
+    context: '...on Rad. 3, 268-271 (1996). ⁵⁷ ‹ILC› undulator-based source, www.i...'
+    sibling: ILC
+    tesseract: '?'
+    paddleocr: null
+    resolution: ILC
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw60
+  kind: cited_work
+  located: true
+  char_start: 66886
+  char_end: 66963
+  tokens: 10
+  confirmed: 9
+  contested:
+  - token_index: 15788
+    char_start: 66934
+    char_end: 66945
+    line: 871
+    context: '..., "Precision Experiments with ‹Antiprotons›", Feb. 24 (2003). ⁶¹ S. Howe ...'
+    sibling: Antiprotons
+    tesseract: Antipratons
+    paddleocr: null
+    resolution: Antiprotons
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw61
+  kind: cited_work
+  located: true
+  char_start: 66964
+  char_end: 67015
+  tokens: 10
+  confirmed: 8
+  contested:
+  - token_index: 15799
+    char_start: 66967
+    char_end: 66968
+    line: 872
+    context: '...iprotons", Feb. 24 (2003). ⁶¹ ‹S›. Howe et al., AIP Conf. Proc....'
+    sibling: S
+    tesseract: null
+    paddleocr: null
+    resolution: S
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15809
+    char_start: 66993
+    char_end: 66997
+    line: 872
+    context: '... ⁶¹ S. Howe et al., AIP Conf. ‹Proc›. 746, 520 (2005). ⁶² 14 MeV E...'
+    sibling: Proc
+    tesseract: Prac
+    paddleocr: null
+    resolution: Proc
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw62
+  kind: cited_work
+  located: true
+  char_start: 67016
+  char_end: 67191
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw63
+  kind: cited_work
+  located: true
+  char_start: 67192
+  char_end: 67257
+  tokens: 12
+  confirmed: 9
+  contested:
+  - token_index: 15862
+    char_start: 67195
+    char_end: 67196
+    line: 874
+    context: '...ams", IBA, Belgium, 1997). ⁶³ ‹G›. R. Schmidt et al., J. Propul...'
+    sibling: G
+    tesseract: '3'
+    paddleocr: null
+    resolution: G
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15864
+    char_start: 67198
+    char_end: 67199
+    line: 874
+    context: '...", IBA, Belgium, 1997). ⁶³ G. ‹R›. Schmidt et al., J. Propulsio...'
+    sibling: R
+    tesseract: null
+    paddleocr: null
+    resolution: R
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 15871
+    char_start: 67217
+    char_end: 67218
+    line: 874
+    context: '...97). ⁶³ G. R. Schmidt et al., ‹J›. Propulsion and Power, 16, 92...'
+    sibling: J
+    tesseract: ']'
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw64
+  kind: cited_work
+  located: true
+  char_start: 67258
+  char_end: 67311
+  tokens: 10
+  confirmed: 10
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw66
+  kind: cited_work
+  located: true
+  char_start: 67447
+  char_end: 67511
+  tokens: 12
+  confirmed: 11
+  contested:
+  - token_index: 15942
+    char_start: 67450
+    char_end: 67451
+    line: 877
+    context: '...McLean, VA, Aug. 1 (2005). ⁶⁶ ‹C›. M. Surko and R. G. Greaves, ...'
+    sibling: C
+    tesseract: ¢
+    paddleocr: null
+    resolution: C
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw67
+  kind: cited_work
+  located: true
+  char_start: 67591
+  char_end: 67747
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw69
+  kind: cited_work
+  located: true
+  char_start: 67757
+  char_end: 67950
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw70
+  kind: cited_work
+  located: true
+  char_start: 67951
+  char_end: 68121
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw73
+  kind: cited_work
+  located: true
+  char_start: 68468
+  char_end: 68622
+  tokens: 21
+  confirmed: 20
+  contested:
+  - token_index: 16197
+    char_start: 68471
+    char_end: 68472
+    line: 891
+    context: '...FB, FL, January 23 (2007). ⁷³ ‹J›. Lu, "Classical Trajectory Mo...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-08-positron-aerospace-propulsion
+  ref: cw75
+  kind: cited_work
+  located: true
+  char_start: 68632
+  char_end: 68696
+  tokens: 11
+  confirmed: 10
+  contested:
+  - token_index: 16243
+    char_start: 68656
+    char_end: 68657
+    line: 893
+    context: '...Ibid. ⁷⁵ K. Sudarshan et al., ‹J›. Phys: Condens. Matter 19, 38...'
+    sibling: J
+    tesseract: ']'
+    paddleocr: '1'
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
