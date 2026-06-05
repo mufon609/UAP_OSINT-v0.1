@@ -2,7 +2,7 @@ schema: quote-grounding/v2
 source_pdf: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
 sibling_txt: government/dird-16-quantum-entanglement-nonlocality-20100330.txt
 sibling_sha256: 5099267cba2a9d16607310749059b657d93a5798af0bf8a04f081238dc5ec24f
-generated: '2026-06-04'
+generated: '2026-06-05'
 confirming_engines:
 - name: tesseract
   version: 5.5.0
@@ -24,8 +24,8 @@ grounded_spans:
   located: true
   char_start: 3847
   char_end: 4242
-  tokens: 63
-  confirmed: 63
+  tokens: 54
+  confirmed: 54
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q3
@@ -33,8 +33,8 @@ grounded_spans:
   located: true
   char_start: 5009
   char_end: 5238
-  tokens: 42
-  confirmed: 42
+  tokens: 36
+  confirmed: 36
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q4
@@ -42,8 +42,8 @@ grounded_spans:
   located: true
   char_start: 5580
   char_end: 5914
-  tokens: 51
-  confirmed: 51
+  tokens: 45
+  confirmed: 45
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q5
@@ -51,8 +51,8 @@ grounded_spans:
   located: true
   char_start: 7966
   char_end: 8059
-  tokens: 13
-  confirmed: 13
+  tokens: 12
+  confirmed: 12
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q6
@@ -60,8 +60,8 @@ grounded_spans:
   located: true
   char_start: 8836
   char_end: 9112
-  tokens: 50
-  confirmed: 50
+  tokens: 47
+  confirmed: 47
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q7
@@ -69,8 +69,8 @@ grounded_spans:
   located: true
   char_start: 21542
   char_end: 21729
-  tokens: 34
-  confirmed: 34
+  tokens: 26
+  confirmed: 26
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q8
@@ -78,8 +78,8 @@ grounded_spans:
   located: true
   char_start: 22580
   char_end: 22879
-  tokens: 51
-  confirmed: 51
+  tokens: 44
+  confirmed: 44
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q9
@@ -87,8 +87,8 @@ grounded_spans:
   located: true
   char_start: 23384
   char_end: 23556
-  tokens: 34
-  confirmed: 34
+  tokens: 27
+  confirmed: 27
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q10
@@ -96,8 +96,8 @@ grounded_spans:
   located: true
   char_start: 25197
   char_end: 25501
-  tokens: 56
-  confirmed: 56
+  tokens: 47
+  confirmed: 47
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q11
@@ -105,8 +105,8 @@ grounded_spans:
   located: true
   char_start: 26239
   char_end: 26407
-  tokens: 31
-  confirmed: 31
+  tokens: 27
+  confirmed: 27
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q12
@@ -114,8 +114,8 @@ grounded_spans:
   located: true
   char_start: 29979
   char_end: 30212
-  tokens: 37
-  confirmed: 37
+  tokens: 32
+  confirmed: 32
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q13
@@ -123,8 +123,8 @@ grounded_spans:
   located: true
   char_start: 45685
   char_end: 45934
-  tokens: 41
-  confirmed: 41
+  tokens: 38
+  confirmed: 38
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q14
@@ -132,8 +132,8 @@ grounded_spans:
   located: true
   char_start: 54903
   char_end: 55069
-  tokens: 32
-  confirmed: 32
+  tokens: 25
+  confirmed: 25
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q15
@@ -141,8 +141,8 @@ grounded_spans:
   located: true
   char_start: 58788
   char_end: 58949
-  tokens: 24
-  confirmed: 24
+  tokens: 23
+  confirmed: 23
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q16
@@ -150,8 +150,8 @@ grounded_spans:
   located: true
   char_start: 64787
   char_end: 64969
-  tokens: 33
-  confirmed: 33
+  tokens: 26
+  confirmed: 26
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q17
@@ -159,8 +159,8 @@ grounded_spans:
   located: true
   char_start: 67170
   char_end: 67558
-  tokens: 74
-  confirmed: 74
+  tokens: 65
+  confirmed: 65
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q18
@@ -168,8 +168,8 @@ grounded_spans:
   located: true
   char_start: 68650
   char_end: 68881
-  tokens: 44
-  confirmed: 44
+  tokens: 36
+  confirmed: 36
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q19
@@ -177,8 +177,8 @@ grounded_spans:
   located: true
   char_start: 69473
   char_end: 69755
-  tokens: 43
-  confirmed: 43
+  tokens: 37
+  confirmed: 37
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q20
@@ -186,8 +186,8 @@ grounded_spans:
   located: true
   char_start: 72278
   char_end: 72480
-  tokens: 35
-  confirmed: 35
+  tokens: 30
+  confirmed: 30
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: q21
@@ -195,8 +195,8 @@ grounded_spans:
   located: true
   char_start: 72500
   char_end: 72710
-  tokens: 32
-  confirmed: 32
+  tokens: 29
+  confirmed: 29
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw1
@@ -204,8 +204,8 @@ grounded_spans:
   located: true
   char_start: 79721
   char_end: 79796
-  tokens: 28
-  confirmed: 28
+  tokens: 16
+  confirmed: 16
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw2
@@ -213,8 +213,8 @@ grounded_spans:
   located: true
   char_start: 79797
   char_end: 79949
-  tokens: 55
-  confirmed: 52
+  tokens: 29
+  confirmed: 28
   contested:
   - token_index: 14861
     char_start: 79810
@@ -225,38 +225,16 @@ grounded_spans:
     tesseract: ']'
     paddleocr: '1'
     resolution: J
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
-  - token_index: 14901
-    char_start: 79922
-    char_end: 79923
-    line: 1304
-    context: '...ibard, and G. Roger, Phys. Rev‹.› Letters, 49, 1804 (1982). 3 E...'
-    sibling: .
-    tesseract: ','
-    paddleocr: ','
-    resolution: .
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
-  - token_index: 14910
-    char_start: 79948
-    char_end: 79949
-    line: 1304
-    context: '... Rev. Letters, 49, 1804 (1982)‹.› 3 Erwin Schrödinger, Proc. of...'
-    sibling: .
-    tesseract: ','
-    paddleocr: ','
-    resolution: .
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw3
   kind: cited_work
   located: true
   char_start: 79950
   char_end: 80052
-  tokens: 29
-  confirmed: 29
+  tokens: 18
+  confirmed: 18
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw4
@@ -264,8 +242,8 @@ grounded_spans:
   located: true
   char_start: 80053
   char_end: 80131
-  tokens: 26
-  confirmed: 26
+  tokens: 15
+  confirmed: 15
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw5
@@ -273,8 +251,8 @@ grounded_spans:
   located: true
   char_start: 80132
   char_end: 80171
-  tokens: 15
-  confirmed: 13
+  tokens: 8
+  confirmed: 6
   contested:
   - token_index: 14966
     char_start: 80132
@@ -285,8 +263,8 @@ grounded_spans:
     tesseract: '>'
     paddleocr: null
     resolution: '5'
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
   - token_index: 14972
     char_start: 80150
     char_end: 80154
@@ -296,16 +274,16 @@ grounded_spans:
     tesseract: Nods
     paddleocr: No0s
     resolution: Noûs
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw6
   kind: cited_work
   located: true
   char_start: 80172
   char_end: 80315
-  tokens: 41
-  confirmed: 41
+  tokens: 26
+  confirmed: 26
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw7
@@ -313,8 +291,8 @@ grounded_spans:
   located: true
   char_start: 80316
   char_end: 80371
-  tokens: 23
-  confirmed: 23
+  tokens: 12
+  confirmed: 12
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw8
@@ -322,8 +300,8 @@ grounded_spans:
   located: true
   char_start: 80372
   char_end: 80454
-  tokens: 31
-  confirmed: 30
+  tokens: 16
+  confirmed: 15
   contested:
   - token_index: 15045
     char_start: 80372
@@ -334,16 +312,16 @@ grounded_spans:
     tesseract: ®
     paddleocr: B
     resolution: '8'
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw9
   kind: cited_work
   located: true
   char_start: 80455
   char_end: 80547
-  tokens: 33
-  confirmed: 33
+  tokens: 18
+  confirmed: 18
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw10
@@ -351,8 +329,8 @@ grounded_spans:
   located: true
   char_start: 80548
   char_end: 80609
-  tokens: 15
-  confirmed: 15
+  tokens: 10
+  confirmed: 10
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw11
@@ -360,8 +338,8 @@ grounded_spans:
   located: true
   char_start: 80610
   char_end: 80785
-  tokens: 51
-  confirmed: 50
+  tokens: 29
+  confirmed: 28
   contested:
   - token_index: 15124
     char_start: 80610
@@ -372,16 +350,16 @@ grounded_spans:
     tesseract: ‘
     paddleocr: i1
     resolution: '11'
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw12
   kind: cited_work
   located: true
   char_start: 80786
   char_end: 80848
-  tokens: 17
-  confirmed: 17
+  tokens: 10
+  confirmed: 10
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw13
@@ -389,8 +367,8 @@ grounded_spans:
   located: true
   char_start: 80849
   char_end: 81098
-  tokens: 82
-  confirmed: 81
+  tokens: 49
+  confirmed: 48
   contested:
   - token_index: 15193
     char_start: 80852
@@ -401,16 +379,16 @@ grounded_spans:
     tesseract: 3B
     paddleocr: p
     resolution: P
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw14
   kind: cited_work
   located: true
   char_start: 81099
   char_end: 81220
-  tokens: 31
-  confirmed: 31
+  tokens: 22
+  confirmed: 22
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw15
@@ -418,8 +396,8 @@ grounded_spans:
   located: true
   char_start: 81221
   char_end: 81333
-  tokens: 27
-  confirmed: 27
+  tokens: 19
+  confirmed: 19
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw16
@@ -427,8 +405,8 @@ grounded_spans:
   located: true
   char_start: 81334
   char_end: 81443
-  tokens: 41
-  confirmed: 41
+  tokens: 22
+  confirmed: 22
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw17
@@ -436,8 +414,8 @@ grounded_spans:
   located: true
   char_start: 81444
   char_end: 81551
-  tokens: 35
-  confirmed: 35
+  tokens: 19
+  confirmed: 19
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw18
@@ -445,8 +423,8 @@ grounded_spans:
   located: true
   char_start: 81552
   char_end: 81666
-  tokens: 47
-  confirmed: 46
+  tokens: 24
+  confirmed: 23
   contested:
   - token_index: 15408
     char_start: 81552
@@ -457,16 +435,16 @@ grounded_spans:
     tesseract: 1B
     paddleocr: '1'
     resolution: '18'
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw19
   kind: cited_work
   located: true
   char_start: 81667
   char_end: 81870
-  tokens: 53
-  confirmed: 53
+  tokens: 34
+  confirmed: 34
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw20
@@ -474,8 +452,8 @@ grounded_spans:
   located: true
   char_start: 81871
   char_end: 81973
-  tokens: 30
-  confirmed: 30
+  tokens: 17
+  confirmed: 17
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw21
@@ -483,8 +461,8 @@ grounded_spans:
   located: true
   char_start: 81974
   char_end: 82078
-  tokens: 27
-  confirmed: 27
+  tokens: 15
+  confirmed: 15
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw22
@@ -492,8 +470,8 @@ grounded_spans:
   located: true
   char_start: 82079
   char_end: 82153
-  tokens: 28
-  confirmed: 28
+  tokens: 16
+  confirmed: 16
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw23
@@ -501,8 +479,8 @@ grounded_spans:
   located: true
   char_start: 82154
   char_end: 82242
-  tokens: 31
-  confirmed: 31
+  tokens: 17
+  confirmed: 17
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw24
@@ -510,8 +488,8 @@ grounded_spans:
   located: true
   char_start: 82243
   char_end: 82293
-  tokens: 21
-  confirmed: 20
+  tokens: 12
+  confirmed: 11
   contested:
   - token_index: 15640
     char_start: 82282
@@ -522,16 +500,16 @@ grounded_spans:
     tesseract: '511'
     paddleocr: null
     resolution: '611'
-    resolution_method: image-adjudication
-    adjudicator_session: 2026-06-03 page-33 image read — independent agent transcription of References [1]-[26]; J. Dalibard, Noûs, 603-611, P. H. Eberhard and footnote numbers 5/8/11/18 confirmed against the page image
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw25
   kind: cited_work
   located: true
   char_start: 82294
   char_end: 82358
-  tokens: 17
-  confirmed: 17
+  tokens: 11
+  confirmed: 11
   contested: []
 - node: dird-16-quantum-entanglement-nonlocality
   ref: cw26
@@ -539,6 +517,6 @@ grounded_spans:
   located: true
   char_start: 82359
   char_end: 82425
-  tokens: 17
-  confirmed: 17
+  tokens: 11
+  confirmed: 11
   contested: []
