@@ -1,0 +1,1318 @@
+schema: quote-grounding/v2
+source_pdf: government/dird-09-iec-fusion-20100310.pdf
+sibling_txt: government/dird-09-iec-fusion-20100310.txt
+sibling_sha256: f2848f8e1e05d5b7cc475ddfa9c37ddeb3af836cc1da6efd918aae1c4531b45f
+generated: '2026-06-05'
+confirming_engines:
+- name: tesseract
+  version: 5.5.0
+- name: paddleocr
+  version: 3.6.0
+grounded_spans:
+- node: dird-09-iec-fusion
+  ref: q-classification-banner
+  kind: quote
+  located: true
+  char_start: 0
+  char_end: 52
+  tokens: 7
+  confirmed: 1
+  contested:
+  - token_index: 4
+    char_start: 15
+    char_end: 21
+    line: 1
+    context: '...UNCLASSIFIED//[‹struck› through] FOR OFFICIAL USE ONL...'
+    sibling: struck
+    tesseract: '='
+    paddleocr: null
+    resolution: struck
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 5
+    char_start: 22
+    char_end: 29
+    line: 1
+    context: '...UNCLASSIFIED//[struck ‹through›] FOR OFFICIAL USE ONLY  [DIA ...'
+    sibling: through
+    tesseract: aSE
+    paddleocr: null
+    resolution: through
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 7
+    char_start: 31
+    char_end: 34
+    line: 1
+    context: '...NCLASSIFIED//[struck through] ‹FOR› OFFICIAL USE ONLY  [DIA seal]...'
+    sibling: FOR
+    tesseract: ONET
+    paddleocr: null
+    resolution: FOR
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 8
+    char_start: 35
+    char_end: 43
+    line: 1
+    context: '...SSIFIED//[struck through] FOR ‹OFFICIAL› USE ONLY  [DIA seal]  Defense...'
+    sibling: OFFICIAL
+    tesseract: null
+    paddleocr: null
+    resolution: OFFICIAL
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 9
+    char_start: 44
+    char_end: 47
+    line: 1
+    context: '...[struck through] FOR OFFICIAL ‹USE› ONLY  [DIA seal]  Defense Int...'
+    sibling: USE
+    tesseract: null
+    paddleocr: null
+    resolution: USE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 10
+    char_start: 48
+    char_end: 52
+    line: 1
+    context: '...uck through] FOR OFFICIAL USE ‹ONLY›  [DIA seal]  Defense Intellig...'
+    sibling: ONLY
+    tesseract: null
+    paddleocr: null
+    resolution: ONLY
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-title-identity-block
+  kind: quote
+  located: true
+  char_start: 66
+  char_end: 251
+  tokens: 28
+  confirmed: 25
+  contested:
+  - token_index: 23
+    char_start: 135
+    char_end: 140
+    line: 11
+    context: '...  Acquisition Threat Support [‹black› redaction bar]  10 March 2010...'
+    sibling: black
+    tesseract: null
+    paddleocr: null
+    resolution: black
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 24
+    char_start: 141
+    char_end: 150
+    line: 11
+    context: '...isition Threat Support [black ‹redaction› bar]  10 March 2010 ICOD: 1 D...'
+    sibling: redaction
+    tesseract: null
+    paddleocr: null
+    resolution: redaction
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 25
+    char_start: 151
+    char_end: 154
+    line: 11
+    context: '...reat Support [black redaction ‹bar›]  10 March 2010 ICOD: 1 Decem...'
+    sibling: bar
+    tesseract: null
+    paddleocr: null
+    resolution: bar
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-prepared-by-author-block
+  kind: quote
+  located: true
+  char_start: 849
+  char_end: 927
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-copyright-warning
+  kind: quote
+  located: true
+  char_start: 950
+  char_end: 1048
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-aawsa-admin-note
+  kind: quote
+  located: true
+  char_start: 1050
+  char_end: 1470
+  tokens: 70
+  confirmed: 68
+  contested:
+  - token_index: 274
+    char_start: 1355
+    char_end: 1360
+    line: 52
+    context: '...to [(b)(3):10 USC 424;(b)(6)] ‹AAWSA› Program Manager, Defense Inte...'
+    sibling: AAWSA
+    tesseract: null
+    paddleocr: null
+    resolution: AAWSA
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 286
+    char_start: 1415
+    char_end: 1416
+    line: 53
+    context: '... Intelligence Agency, ATTN: [(‹b›)(3):10 USC 424] Bldg 6000, Wa...'
+    sibling: b
+    tesseract: 6X
+    paddleocr: null
+    resolution: b
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-preface-thesis-scope
+  kind: quote
+  located: true
+  char_start: 14102
+  char_end: 14440
+  tokens: 50
+  confirmed: 50
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-preface-aneutronic-claim
+  kind: quote
+  located: true
+  char_start: 14647
+  char_end: 14947
+  tokens: 49
+  confirmed: 48
+  contested:
+  - token_index: 7812
+    char_start: 14777
+    char_end: 14780
+    line: 225
+    context: '... burn aneutronic fuels like p-‹¹¹B› (hydrogen – Boron 11). In ane...'
+    sibling: ¹¹B
+    tesseract: 11B
+    paddleocr: 11B
+    resolution: ¹¹B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''11B'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-iec-basic-mechanism
+  kind: quote
+  located: true
+  char_start: 16866
+  char_end: 17127
+  tokens: 48
+  confirmed: 48
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-lawson-criterion
+  kind: quote
+  located: true
+  char_start: 19228
+  char_end: 19533
+  tokens: 56
+  confirmed: 54
+  contested:
+  - token_index: 8722
+    char_start: 19380
+    char_end: 19382
+    line: 294
+    context: '...eloped his famous "criterion" ‹nτ› = 10¹⁴ cm⁻³-sec at T > 15 keV...'
+    sibling: nτ
+    tesseract: nt
+    paddleocr: nt
+    resolution: nτ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''nt'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 8724
+    char_start: 19385
+    char_end: 19389
+    line: 294
+    context: '...d his famous "criterion" nτ = ‹10¹⁴› cm⁻³-sec at T > 15 keV for DT...'
+    sibling: 10¹⁴
+    tesseract: '10'
+    paddleocr: '1014'
+    resolution: 10¹⁴
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-farnsworth-origin
+  kind: quote
+  located: true
+  char_start: 24896
+  char_end: 25257
+  tokens: 52
+  confirmed: 52
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-miley-bussard-involvement
+  kind: quote
+  located: true
+  char_start: 26289
+  char_end: 26767
+  tokens: 84
+  confirmed: 84
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-bussard-military-funding-youtube
+  kind: quote
+  located: true
+  char_start: 27288
+  char_end: 27540
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-doe-no-funding-tokamak
+  kind: quote
+  located: true
+  char_start: 28215
+  char_end: 28586
+  tokens: 66
+  confirmed: 66
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-emc2-other-labs-scope-limit
+  kind: quote
+  located: true
+  char_start: 29683
+  char_end: 30060
+  tokens: 66
+  confirmed: 64
+  contested:
+  - token_index: 10741
+    char_start: 29882
+    char_end: 29886
+    line: 440
+    context: '...ng work by others, notably at ‹EMC²› on the Bussard Polywell devic...'
+    sibling: EMC²
+    tesseract: EMC
+    paddleocr: EMC2
+    resolution: EMC²
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 10752
+    char_start: 29946
+    char_end: 29953
+    line: 441
+    context: '...e or the advanced gridded IEC ‹neutron›/proton source development wor...'
+    sibling: neutron
+    tesseract: neuron
+    paddleocr: neuron
+    resolution: neutron
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''neuron'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-star-mode-modes
+  kind: quote
+  located: true
+  char_start: 41932
+  char_end: 42493
+  tokens: 88
+  confirmed: 88
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-miley-ion-injected-q-value
+  kind: quote
+  located: true
+  char_start: 53002
+  char_end: 53451
+  tokens: 79
+  confirmed: 78
+  contested:
+  - token_index: 15155
+    char_start: 53376
+    char_end: 53379
+    line: 788
+    context: '...hese results, an aggressive p-‹¹¹B› breakeven experiment using th...'
+    sibling: ¹¹B
+    tesseract: '!'
+    paddleocr: 11B
+    resolution: ¹¹B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-hirsch-record-neutron-rate
+  kind: quote
+  located: true
+  char_start: 57644
+  char_end: 57784
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-hirsch-fig22-neutron-yield
+  kind: quote
+  located: true
+  char_start: 58816
+  char_end: 59093
+  tokens: 58
+  confirmed: 55
+  contested:
+  - token_index: 16397
+    char_start: 58890
+    char_end: 58891
+    line: 897
+    context: '...IEC of Figure 2.1 Exceeded 10^‹9› DT n/s at 150 kV. For perspec...'
+    sibling: '9'
+    tesseract: null
+    paddleocr: null
+    resolution: '9'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 16424
+    char_start: 59004
+    char_end: 59005
+    line: 899
+    context: '... devices routinely produce 10^‹8› DD n/s at ~ 80 kV. This is sl...'
+    sibling: '8'
+    tesseract: null
+    paddleocr: null
+    resolution: '8'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 16435
+    char_start: 59030
+    char_end: 59032
+    line: 899
+    context: '... 10^8 DD n/s at ~ 80 kV. This ‹is› slightly above Hirsch''s resul...'
+    sibling: is
+    tesseract: Is
+    paddleocr: 1s
+    resolution: is
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-daimler-chrysler-naa
+  kind: quote
+  located: true
+  char_start: 66813
+  char_end: 66950
+  tokens: 22
+  confirmed: 22
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-section3-other-geometries-thesis
+  kind: quote
+  located: true
+  char_start: 76985
+  char_end: 77304
+  tokens: 52
+  confirmed: 52
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-cylindrical-iec-yields
+  kind: quote
+  located: true
+  char_start: 80274
+  char_end: 80561
+  tokens: 52
+  confirmed: 50
+  contested:
+  - token_index: 20756
+    char_start: 80485
+    char_end: 80486
+    line: 1247
+    context: '...t operation produces about 10^‹7› n/s (D-D) steady state while ...'
+    sibling: '7'
+    tesseract: null
+    paddleocr: null
+    resolution: '7'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20773
+    char_start: 80537
+    char_end: 80538
+    line: 1248
+    context: '...te while for pulsed output 10^‹9› n/s (D-D) is obtained.  In "t...'
+    sibling: '9'
+    tesseract: null
+    paddleocr: null
+    resolution: '9'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-jet-thruster-purpose
+  kind: quote
+  located: true
+  char_start: 81689
+  char_end: 82061
+  tokens: 62
+  confirmed: 62
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-jet-thruster-target-interrogation
+  kind: quote
+  located: true
+  char_start: 82746
+  char_end: 83056
+  tokens: 47
+  confirmed: 47
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-jet-thruster-disable-target
+  kind: quote
+  located: true
+  char_start: 85664
+  char_end: 85923
+  tokens: 44
+  confirmed: 44
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-jet-power-conversion
+  kind: quote
+  located: true
+  char_start: 88990
+  char_end: 89285
+  tokens: 55
+  confirmed: 55
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-daiec-description
+  kind: quote
+  located: true
+  char_start: 101419
+  char_end: 101679
+  tokens: 47
+  confirmed: 47
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-daiec-density-result
+  kind: quote
+  located: true
+  char_start: 105279
+  char_end: 105411
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-khachan-sydney-thruster
+  kind: quote
+  located: true
+  char_start: 109518
+  char_end: 109882
+  tokens: 55
+  confirmed: 55
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-nevins-pessimistic-q-021
+  kind: quote
+  located: true
+  char_start: 116962
+  char_end: 117315
+  tokens: 66
+  confirmed: 66
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-nevins-thorough-subtle-assumptions
+  kind: quote
+  located: true
+  char_start: 114932
+  char_end: 115097
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-chacon-bafp-large-gains
+  kind: quote
+  located: true
+  char_start: 119198
+  char_end: 119409
+  tokens: 37
+  confirmed: 35
+  contested:
+  - token_index: 28515
+    char_start: 119291
+    char_end: 119293
+    line: 1784
+    context: '...rostatic well is deep enough (‹E0› > 100 kV); 2) Ion confinement...'
+    sibling: E0
+    tesseract: Eo
+    paddleocr: Eo
+    resolution: E0
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Eo'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 28546
+    char_start: 119397
+    char_end: 119401
+    line: 1784
+    context: '... source strength is moderate (‹Ŝmax› < 300). Another important eff...'
+    sibling: Ŝmax
+    tesseract: Smax
+    paddleocr: Smax
+    resolution: Ŝmax
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Smax'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-chacon-bafp-conditions
+  kind: quote
+  located: true
+  char_start: 120718
+  char_end: 120975
+  tokens: 42
+  confirmed: 40
+  contested:
+  - token_index: 28803
+    char_start: 120787
+    char_end: 120789
+    line: 1787
+    context: '...rostatic well is deep enough (‹E0› ~ 100 kV); Ion confinement ti...'
+    sibling: E0
+    tesseract: Eo
+    paddleocr: Eo
+    resolution: E0
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Eo'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 28830
+    char_start: 120886
+    char_end: 120890
+    line: 1787
+    context: '... source strength is moderate (‹Ŝmax› < 300), while the ion injecti...'
+    sibling: Ŝmax
+    tesseract: Smax
+    paddleocr: Smax
+    resolution: Ŝmax
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Smax'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-parabolic-well-larger-q
+  kind: quote
+  located: true
+  char_start: 121432
+  char_end: 121594
+  tokens: 29
+  confirmed: 28
+  contested:
+  - token_index: 28955
+    char_start: 121543
+    char_end: 121545
+    line: 1789
+    context: '...lues 3 to 5 times larger (for ‹E0› ~ 150 kV) than those obtained...'
+    sibling: E0
+    tesseract: Eo
+    paddleocr: Eo
+    resolution: E0
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Eo'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-tzonev-deep-double-wells
+  kind: quote
+  located: true
+  char_start: 128297
+  char_end: 128572
+  tokens: 55
+  confirmed: 55
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-tzonev-summary-encouraging
+  kind: quote
+  located: true
+  char_start: 131894
+  char_end: 132205
+  tokens: 53
+  confirmed: 53
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-kim-window-of-stability
+  kind: quote
+  located: true
+  char_start: 134427
+  char_end: 134754
+  tokens: 58
+  confirmed: 58
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-kim-two-stream-stabilized
+  kind: quote
+  located: true
+  char_start: 140327
+  char_end: 140675
+  tokens: 58
+  confirmed: 58
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-rider-bremsstrahlung-prohibitive
+  kind: quote
+  located: true
+  char_start: 142864
+  char_end: 143088
+  tokens: 44
+  confirmed: 44
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-rider-response-maxwellian-bias
+  kind: quote
+  located: true
+  char_start: 144277
+  char_end: 144533
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-neutron-source-vs-power-design
+  kind: quote
+  located: true
+  char_start: 147900
+  char_end: 148197
+  tokens: 45
+  confirmed: 45
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-integrated-inspection-concept
+  kind: quote
+  located: true
+  char_start: 151948
+  char_end: 152119
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-inspection-detection-targets
+  kind: quote
+  located: true
+  char_start: 154224
+  char_end: 154596
+  tokens: 54
+  confirmed: 54
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-inspection-detection-categories
+  kind: quote
+  located: true
+  char_start: 157432
+  char_end: 157622
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-fusion-ship-ii-config
+  kind: quote
+  located: true
+  char_start: 169362
+  char_end: 169564
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-fusion-ship-ii-jupiter
+  kind: quote
+  located: true
+  char_start: 170795
+  char_end: 170970
+  tokens: 34
+  confirmed: 34
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-mcsa-concept
+  kind: quote
+  located: true
+  char_start: 174269
+  char_end: 174536
+  tokens: 36
+  confirmed: 35
+  contested:
+  - token_index: 39463
+    char_start: 174423
+    char_end: 174432
+    line: 2119
+    context: '...ntains the basic ion-injected ‹spherical› IEC reactor configuration but...'
+    sibling: spherical
+    tesseract: null
+    paddleocr: null
+    resolution: spherical
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-section-v-concluding-remarks
+  kind: quote
+  located: true
+  char_start: 182404
+  char_end: 182726
+  tokens: 48
+  confirmed: 48
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-section-vi-orders-below-breakeven
+  kind: quote
+  located: true
+  char_start: 184904
+  char_end: 185259
+  tokens: 67
+  confirmed: 67
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-vi-breakeven-small-core
+  kind: quote
+  located: true
+  char_start: 188201
+  char_end: 188579
+  tokens: 75
+  confirmed: 75
+  contested: []
+- node: dird-09-iec-fusion
+  ref: q-vi-p11b-lawson-requirement
+  kind: quote
+  located: true
+  char_start: 190511
+  char_end: 190743
+  tokens: 45
+  confirmed: 42
+  contested:
+  - token_index: 42615
+    char_start: 190594
+    char_end: 190597
+    line: 2202
+    context: '...r energy to break-even with p-‹¹¹B›, nτ ~ 10¹⁶ cm⁻³- sec (two ord...'
+    sibling: ¹¹B
+    tesseract: '!'
+    paddleocr: 11B
+    resolution: ¹¹B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 42617
+    char_start: 190599
+    char_end: 190601
+    line: 2202
+    context: '...rgy to break-even with p-¹¹B, ‹nτ› ~ 10¹⁶ cm⁻³- sec (two orders ...'
+    sibling: nτ
+    tesseract: nt
+    paddleocr: nt
+    resolution: nτ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''nt'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 42619
+    char_start: 190604
+    char_end: 190608
+    line: 2202
+    context: '...o break-even with p-¹¹B, nτ ~ ‹10¹⁶› cm⁻³- sec (two orders of magn...'
+    sibling: 10¹⁶
+    tesseract: '1016'
+    paddleocr: '1016'
+    resolution: 10¹⁶
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''1016'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: q-vi-12-gun-q-scaling
+  kind: quote
+  located: true
+  char_start: 196836
+  char_end: 197223
+  tokens: 70
+  confirmed: 68
+  contested:
+  - token_index: 43945
+    char_start: 197163
+    char_end: 197166
+    line: 2242
+    context: '... to prior gun experiment) of ~‹10⁸›, giving Q=1 ("breakeven") as ...'
+    sibling: 10⁸
+    tesseract: '108'
+    paddleocr: '10'
+    resolution: 10⁸
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 43962
+    char_start: 197213
+    char_end: 197216
+    line: 2242
+    context: '...eakeven") as required for a p-‹¹¹B› plasma (as noted earlier, thi...'
+    sibling: ¹¹B
+    tesseract: ''''
+    paddleocr: 11B
+    resolution: ¹¹B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-vi-hydrogen-simulation
+  kind: quote
+  located: true
+  char_start: 197854
+  char_end: 198031
+  tokens: 32
+  confirmed: 30
+  contested:
+  - token_index: 44106
+    char_start: 197978
+    char_end: 197980
+    line: 2244
+    context: '... diagnostics to show that the ‹nτ› and T corresponding to Q = 1 ...'
+    sibling: nτ
+    tesseract: nt
+    paddleocr: nt
+    resolution: nτ
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''nt'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 44117
+    char_start: 198013
+    char_end: 198016
+    line: 2244
+    context: '...d T corresponding to Q = 1 (p-‹¹¹B›) are obtained. (An alternate ...'
+    sibling: ¹¹B
+    tesseract: '"'
+    paddleocr: iiB
+    resolution: ¹¹B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: q-vi-no-show-stoppers
+  kind: quote
+  located: true
+  char_start: 199498
+  char_end: 199658
+  tokens: 29
+  confirmed: 29
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw1
+  kind: cited_work
+  located: true
+  char_start: 54978
+  char_end: 55132
+  tokens: 30
+  confirmed: 30
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw2
+  kind: cited_work
+  located: true
+  char_start: 55134
+  char_end: 55272
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw3
+  kind: cited_work
+  located: true
+  char_start: 55274
+  char_end: 55459
+  tokens: 34
+  confirmed: 34
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw4
+  kind: cited_work
+  located: true
+  char_start: 55461
+  char_end: 55691
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw5
+  kind: cited_work
+  located: true
+  char_start: 55693
+  char_end: 55896
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw6
+  kind: cited_work
+  located: true
+  char_start: 55898
+  char_end: 56118
+  tokens: 34
+  confirmed: 34
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw7
+  kind: cited_work
+  located: true
+  char_start: 56120
+  char_end: 56258
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw8
+  kind: cited_work
+  located: true
+  char_start: 56260
+  char_end: 56410
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw9
+  kind: cited_work
+  located: true
+  char_start: 56412
+  char_end: 56653
+  tokens: 41
+  confirmed: 41
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw10
+  kind: cited_work
+  located: true
+  char_start: 56655
+  char_end: 56721
+  tokens: 14
+  confirmed: 14
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw11
+  kind: cited_work
+  located: true
+  char_start: 56723
+  char_end: 56921
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw12
+  kind: cited_work
+  located: true
+  char_start: 56923
+  char_end: 57063
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw13
+  kind: cited_work
+  located: true
+  char_start: 74982
+  char_end: 75121
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw14
+  kind: cited_work
+  located: true
+  char_start: 75123
+  char_end: 75327
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw15
+  kind: cited_work
+  located: true
+  char_start: 75329
+  char_end: 75619
+  tokens: 48
+  confirmed: 48
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw16
+  kind: cited_work
+  located: true
+  char_start: 75621
+  char_end: 75819
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw17
+  kind: cited_work
+  located: true
+  char_start: 75821
+  char_end: 76125
+  tokens: 56
+  confirmed: 56
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw18
+  kind: cited_work
+  located: true
+  char_start: 76127
+  char_end: 76326
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw19
+  kind: cited_work
+  located: true
+  char_start: 76439
+  char_end: 76717
+  tokens: 44
+  confirmed: 44
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw20
+  kind: cited_work
+  located: true
+  char_start: 76719
+  char_end: 76952
+  tokens: 43
+  confirmed: 42
+  contested:
+  - token_index: 20035
+    char_start: 76827
+    char_end: 76830
+    line: 1190
+    context: '...n the        Development of a ‹³He› Ion Source for IEC Fusion", 7...'
+    sibling: ³He
+    tesseract: '#'
+    paddleocr: 3He
+    resolution: ³He
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-09-iec-fusion
+  ref: cw21
+  kind: cited_work
+  located: true
+  char_start: 110696
+  char_end: 110877
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw22
+  kind: cited_work
+  located: true
+  char_start: 111122
+  char_end: 111321
+  tokens: 41
+  confirmed: 41
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw23
+  kind: cited_work
+  located: true
+  char_start: 111323
+  char_end: 111558
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw24
+  kind: cited_work
+  located: true
+  char_start: 111560
+  char_end: 111874
+  tokens: 55
+  confirmed: 55
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw25
+  kind: cited_work
+  located: true
+  char_start: 111876
+  char_end: 112184
+  tokens: 51
+  confirmed: 51
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw26
+  kind: cited_work
+  located: true
+  char_start: 112186
+  char_end: 112293
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw27
+  kind: cited_work
+  located: true
+  char_start: 112295
+  char_end: 112663
+  tokens: 62
+  confirmed: 62
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw28
+  kind: cited_work
+  located: true
+  char_start: 112665
+  char_end: 112939
+  tokens: 54
+  confirmed: 54
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw29
+  kind: cited_work
+  located: true
+  char_start: 112941
+  char_end: 113161
+  tokens: 39
+  confirmed: 39
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw30
+  kind: cited_work
+  located: true
+  char_start: 113163
+  char_end: 113314
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw31
+  kind: cited_work
+  located: true
+  char_start: 113316
+  char_end: 113521
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw32
+  kind: cited_work
+  located: true
+  char_start: 113523
+  char_end: 113719
+  tokens: 34
+  confirmed: 34
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw33
+  kind: cited_work
+  located: true
+  char_start: 113778
+  char_end: 113931
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw34
+  kind: cited_work
+  located: true
+  char_start: 113933
+  char_end: 114060
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw35
+  kind: cited_work
+  located: true
+  char_start: 148693
+  char_end: 148860
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 34429
+    char_start: 148827
+    char_end: 148829
+    line: 1921
+    context: '...?" Phys. Plasmas, Vol. 2, No. ‹I0›, October (1995) pp. 3804-3819...'
+    sibling: I0
+    tesseract: '10'
+    paddleocr: '10'
+    resolution: I0
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''10'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-09-iec-fusion
+  ref: cw36
+  kind: cited_work
+  located: true
+  char_start: 148862
+  char_end: 149070
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw37
+  kind: cited_work
+  located: true
+  char_start: 149072
+  char_end: 149197
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw38
+  kind: cited_work
+  located: true
+  char_start: 149199
+  char_end: 149474
+  tokens: 46
+  confirmed: 46
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw39
+  kind: cited_work
+  located: true
+  char_start: 149476
+  char_end: 149640
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw40
+  kind: cited_work
+  located: true
+  char_start: 149642
+  char_end: 149911
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw41
+  kind: cited_work
+  located: true
+  char_start: 149913
+  char_end: 150056
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw42
+  kind: cited_work
+  located: true
+  char_start: 150058
+  char_end: 150280
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw43
+  kind: cited_work
+  located: true
+  char_start: 182907
+  char_end: 183162
+  tokens: 45
+  confirmed: 45
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw44
+  kind: cited_work
+  located: true
+  char_start: 183164
+  char_end: 183520
+  tokens: 61
+  confirmed: 61
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw45
+  kind: cited_work
+  located: true
+  char_start: 183633
+  char_end: 183913
+  tokens: 42
+  confirmed: 42
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw46
+  kind: cited_work
+  located: true
+  char_start: 183915
+  char_end: 184113
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-09-iec-fusion
+  ref: cw47
+  kind: cited_work
+  located: true
+  char_start: 184115
+  char_end: 184358
+  tokens: 43
+  confirmed: 43
+  contested: []
