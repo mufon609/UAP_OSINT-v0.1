@@ -1,60 +1,46 @@
 #!/usr/bin/env python3
-"""ocr-consensus.py — trustworthy OCR clean-text sibling via uncorrelated
-multi-engine consensus.
+"""ocr-consensus.py — produce a clean-text ``.txt`` sibling for an OCR-scan PDF,
+then confirm it against an uncorrelated tool.
 
 An OCR-scan PDF's pdftotext layer is corrupt, so verbatim quotes are matched
-against a clean-text ``.txt`` *sibling* instead. The old process trusted a
-single agent's "PASS" to certify that sibling against the page images — and it
-failed silently (DIRD-16's "verified" sibling carried `III→ITT`,
-`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`). This tool replaces
-that single point of failure with **three uncorrelated votes** per token:
+against a clean-text ``.txt`` *sibling* instead. The sibling is produced by a
+**VLM page-image read** (an agent reads the page images) — a high-fidelity
+modality, but one the content filter blocks on some pages, and one no single
+read can be trusted on alone (DIRD-16's first single-pass "PASS" sibling carried
+`III→ITT`, `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`).
 
-    A = Tesseract            (LSTM OCR; char-confusion failure mode)
-    B = PaddleOCR            (deep-learning OCR; DIFFERENT architecture)
-    C = VLM page-image read  (agent, high-abstraction; different MODALITY)
+So the sibling is **confirmed with a different tool**: PaddleOCR (a different
+modality — deep-learning OCR; not content-blocked) re-reads the pages and is
+diffed against the sibling on the **words and numbers only** (load-bearing
+tokens — see ``is_load_bearing``). Document structure (punctuation, bullets,
+brackets, banners, figure labels, dot-leaders) is never compared — that furniture
+is what drowned the retired whole-document consensus in ~99% noise. Each
+load-bearing divergence is printed for an agent to reconcile against the page
+image, correcting the sibling where the VLM misread. The corrected sibling is
+the artifact; **no receipt YAML is written**. (The final quote-vs-source check
+happens later, at node audit: an agent verifies the built node's quotes against
+the source page images — not the sibling. See meta/conventions.md "Producing the
+`.txt` sibling".)
 
-A token is accepted (CONSENSUS) only when **≥2 of the 3 votes agree**. Because the
-three engines have uncorrelated failure modes, the lone wrong read in each DIRD-16
-case loses the vote and is flagged rather than silently kept. See
-meta/conventions.md "Producing the `.txt` sibling".
-
-`run` PRODUCES the sibling (the VLM base is its readable spine). VERIFICATION is
-now **quote-scoped** (`ground`, below) — the whole-document gate
-(validate-ocr-sibling.py) and its record (`{stem}-ocr-verification.yaml`) were
-retired (BACKLOG C1): whole-document token consensus drowns the signal in
-non-prose furniture, so the gate confirms only the spans a node quotes/cites.
-
-The VLM transcription is the readable BASE of the sibling (best paragraph
-structure); Tesseract + PaddleOCR are the cross-check that corroborates each
-VLM token or flags it. The pdftotext layer is read only as a *contamination
-signal* (if an adjudication lands on the corrupt layer's reading where an OCR
-engine disagreed, that is flagged for extra scrutiny — the "seeded from corrupt
-OCR" smell).
+PaddleOCR is the higher-trust OCR engine; Tesseract is an available second
+opinion (a token is corroborated if EITHER engine agrees with the sibling, so a
+divergence flags only when both disagree). On a fully content-blocked source the
+VLM vote is skipped and the sibling is built from OCR alone (``--vlm-skipped``).
 
 Subcommands:
-  run        Rasterize + run Tesseract & PaddleOCR + ingest the VLM text,
-             align the three votes, write the draft sibling (VLM base) and the
-             verification YAML listing every CONTESTED span. Does NOT finalize.
-  assemble   After contested spans are adjudicated (resolutions filled in the
-             YAML), splice the resolutions into the sibling and stamp its
-             sha256 into the YAML. Idempotent.
-  ground     Quote-scoped grounding (the verification model that supersedes
-             whole-document consensus for the gate — BACKLOG C1): for a research
-             artifact, OCR each cited OCR-scan source, align to its `.txt`
-             sibling, and confirm ONLY the spans the node quotes/cites
-             (furniture is never quoted -> never adjudicated). Emits
-             {stem}-quote-grounding.yaml; gated by quote_source_grounding.py.
+  run        Write the ``.txt`` sibling from the VLM page-image read, then OCR
+             the pages (PaddleOCR + Tesseract) and print every load-bearing
+             divergence for the agent to reconcile. Writes only the sibling.
+  verify     Re-confirm an EXISTING sibling against the OCR engines (no
+             regeneration) — the same load-bearing divergence report. Use when
+             re-checking a sibling produced earlier.
   engines    Report which engines are available (diagnostic).
   --selftest Run the alignment/consensus logic on synthetic inputs (no OCR
              engines needed) — exercised by scripts/tests/.
 
-The `run`/`assemble` whole-document path still produces the VLM-base sibling; the
-gate now grounds per quoted/cited span (`ground`) rather than requiring the whole
-sibling to be consensus-clean.
-
 PaddleOCR lives in a project-local venv at .venv-ocr/ (run
 scripts/tools/setup-ocr-consensus.sh once). This tool auto-relaunches under that
-venv's Python for the `run` subcommand; `--help`, `--selftest`, and `assemble`
+venv's Python for the `run` / `verify` subcommands; `--help` and `--selftest`
 work without it (the heavy import is deferred).
 """
 
@@ -83,12 +69,9 @@ if (
 
 import argparse
 import difflib
-import hashlib
 import re
 import subprocess
 import tempfile
-
-import yaml
 
 SOURCES_DIR = _REPO_ROOT / "sources"
 
@@ -111,7 +94,7 @@ def norm_token(t):
     of lib._common.normalize_for_compare (smart quotes/dashes, hyphen strip)
     so two engines that differ only on those don't spuriously contest. Case is
     PRESERVED — a case disagreement is a real disagreement and stays contested
-    (conservative: over-flagging costs adjudication, under-flagging hides an
+    (conservative: over-flagging costs a reconcile, under-flagging hides an
     error)."""
     if t is None:
         return None
@@ -171,7 +154,7 @@ def line_of_offset(text, off):
 
 def snippet(text, start, end, radius=30):
     """A readable context window around [start,end), with the contested token
-    wrapped in guillemets for the adjudicator."""
+    wrapped in guillemets for the reviewer."""
     pre = text[max(0, start - radius):start].replace("\n", " ")
     tok = text[start:end]
     post = text[end:end + radius].replace("\n", " ")
@@ -215,10 +198,6 @@ def build_consensus(vlm_text, tess_text, paddle_text):
             "context": snippet(vlm_text, cs, ce),
             "candidates": {"vlm": v, "tesseract": t, "paddleocr": p},
             "note": note,
-            "status": "contested",
-            "resolution": None,
-            "resolution_method": None,
-            "adjudicator_session": None,
         })
 
     # Conservative omission signal: a token both OCR engines emit (agreeing)
@@ -243,8 +222,6 @@ def build_consensus(vlm_text, tess_text, paddle_text):
                 "line": line_of_offset(vlm_text, anchor),
                 "ocr_token": tok,
                 "note": "both OCR engines read this token; VLM base omits it",
-                "status": "advisory",
-                "resolution": None,
             })
 
     stats = {
@@ -259,11 +236,9 @@ def build_consensus(vlm_text, tess_text, paddle_text):
 # A contiguous run of OCR-corroborated tokens absent from the VLM base, anchored
 # at a single spine point this large, signals a whole paragraph/page the VLM
 # transcription dropped. possible_omissions is advisory and never splices into
-# the sibling, so without this the dropped region ships silently — and the
-# quote-scoped grounding gate confirms only quoted spans, never whole-sibling
-# completeness. This promotes the largest such run to a visible coverage_warning
-# at production time (a quote drawn from a dropped region would fail to locate in
-# `ground`, but the warning surfaces the gap earlier).
+# the sibling, so without this the dropped region ships silently. This promotes
+# the largest such run to a visible coverage_warning at production time, so a
+# dropped paragraph/page is recovered before the sibling is used.
 MAX_OMISSION_RUN = 40
 
 
@@ -290,19 +265,18 @@ def coverage_warning_from_omissions(omissions):
             f"{len(run)} OCR-corroborated tokens absent from the VLM base "
             f"cluster at one point (line {run[0]['line']}) — the VLM "
             f"transcription likely dropped a paragraph or page here. The "
-            f"sibling base must cover the whole document; confirm coverage "
-            f"before `assemble`."
+            f"sibling must cover the whole document; recover the dropped "
+            f"region before using the sibling."
         ),
     }
 
 
 def build_consensus_2(base_text, other_text):
-    """Two-engine consensus for the CBRN / content-filter fallback, where the
-    VLM vote is skipped. Tesseract is the readable base; PaddleOCR is the sole
-    cross-check. A token is CONSENSUS only when BOTH engines agree; any
-    disagreement is CONTESTED (the ≥2-OCR-engine floor still holds — nothing is
-    accepted on one read). Note that without a third vote there is no majority
-    tie-break, so disagreements lean on image adjudication more heavily."""
+    """Two-engine diff for the content-blocked fallback, where the VLM vote is
+    skipped (the OCR-only sibling). Tesseract is the readable base; PaddleOCR is
+    the sole cross-check. A token is corroborated only when both engines agree;
+    any disagreement is flagged for the reviewer to reconcile against the page
+    image (with no VLM read, a single OCR engine can't clear it on its own)."""
     base_tokens = tokenize(base_text)
     base_surfaces = [t[0] for t in base_tokens]
     other_surfaces = [m.group() for m in TOKEN_RE.finditer(other_text)]
@@ -325,10 +299,6 @@ def build_consensus_2(base_text, other_text):
             "context": snippet(base_text, cs, ce),
             "candidates": {"vlm": None, "tesseract": surf, "paddleocr": o},
             "note": "OCR engines disagree (VLM vote skipped)",
-            "status": "contested",
-            "resolution": None,
-            "resolution_method": None,
-            "adjudicator_session": None,
         })
     stats = {
         "base_tokens": len(base_tokens),
@@ -446,155 +416,136 @@ def paddleocr_version():
 
 
 # ---------------------------------------------------------------------------
-# Verification-YAML I/O
+# The load-bearing confirmation report — the "confirm with a different tool"
+# step. A token is reported only when it carries a letter/digit (or a numeric
+# symbol beside a digit) AND no OCR engine corroborates the sibling's reading.
+# Structure/furniture is filtered out (is_load_bearing), so the report is the
+# short list of words/numbers an agent must reconcile against the page image.
 # ---------------------------------------------------------------------------
-def rel_to_sources(p):
-    p = Path(p).resolve()
-    try:
-        return str(p.relative_to(SOURCES_DIR))
-    except ValueError:
-        return str(p)
+def confirm_report(sibling_text, tess_text, paddle_text, vlm_skipped=False):
+    """Return (divergences, possible_omissions): the load-bearing divergences
+    between the sibling and the OCR engines, plus the OCR-corroborated tokens the
+    sibling omits (for the coverage warning). When the VLM vote was skipped
+    (OCR-only sibling) the cross-check is the two engines against each other
+    (build_consensus_2, no omission signal); otherwise the sibling is the spine
+    and both OCR engines cross-check it (build_consensus)."""
+    if vlm_skipped:
+        _, contested, omissions = build_consensus_2(sibling_text, paddle_text)
+    else:
+        _, contested, omissions = build_consensus(sibling_text, tess_text, paddle_text)
+    divergences = [c for c in contested
+                   if is_load_bearing(c["candidates"]["vlm"] or c["candidates"]["tesseract"],
+                                      sibling_text, c["char_start"], c["char_end"])]
+    return divergences, omissions
 
 
-def write_yaml(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True, width=4096)
-
-
-def sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()
+def print_confirm_report(divergences, sibling):
+    """Print the load-bearing divergence report for the agent to reconcile."""
+    if not divergences:
+        print(f"\n  ✓ CONFIRMED: every load-bearing word/number in {sibling.name} is "
+              f"corroborated by an OCR engine. No divergences to reconcile.")
+        return
+    print(f"\n  {len(divergences)} load-bearing divergence(s) — read the page image at "
+          f"each and correct the sibling where it is wrong (leave it where the OCR "
+          f"engine is the one misreading):")
+    for c in divergences:
+        cand = c["candidates"]
+        if cand["vlm"] is None:          # OCR-only sibling (VLM skipped): base == tesseract
+            reads = f"sibling={cand['tesseract']!r}  paddleocr={cand['paddleocr']!r}"
+        else:
+            reads = (f"sibling={cand['vlm']!r}  tesseract={cand['tesseract']!r}  "
+                     f"paddleocr={cand['paddleocr']!r}")
+        print(f"    line {c['line']}: {reads}")
+        print(f"      {c['context']}")
 
 
 # ---------------------------------------------------------------------------
 # Subcommands
 # ---------------------------------------------------------------------------
-def cmd_run(args):
-    pdf = Path(args.pdf)
+def _ocr_pages(pdf, stem, dpi):
+    """Rasterize the PDF and run both OCR engines; return (tess_text, paddle_text)."""
+    with tempfile.TemporaryDirectory(prefix=f"ocr-{stem}-") as tmp:
+        images = rasterize(pdf, tmp, dpi)
+        print(f"      {len(images)} page image(s)")
+        print("      Tesseract (second opinion) ...")
+        tess_text = run_tesseract(images)
+        print("      PaddleOCR (primary cross-check) ...")
+        paddle_text = run_paddleocr(images)
+    return tess_text, paddle_text
+
+
+def _resolve_pdf(arg):
+    pdf = Path(arg)
     if not pdf.is_absolute() and not pdf.exists():
-        pdf = SOURCES_DIR / args.pdf
+        pdf = SOURCES_DIR / arg
     if not pdf.exists():
         raise SystemExit(f"PDF not found: {pdf}")
+    return pdf
+
+
+def cmd_run(args):
+    """Produce the .txt sibling from the VLM page-image read, then confirm it
+    against the OCR engines and print the load-bearing divergence report. Writes
+    only the sibling — no receipt YAML."""
+    pdf = _resolve_pdf(args.pdf)
     stem = pdf.with_suffix("").name
     sibling = pdf.with_suffix(".txt")
-    verification = pdf.parent / f"{stem}-ocr-verification.yaml"
 
     if sibling.exists() and not args.force:
         raise SystemExit(
             f"sibling already exists: {sibling}\n"
-            f"  pass --force to regenerate (backfill of an existing sibling)."
+            f"  pass --force to regenerate (backfill), or use `verify` to "
+            f"re-confirm the existing sibling without regenerating."
         )
 
     if not args.vlm and not args.vlm_skipped:
         raise SystemExit(
-            "provide --vlm PATH (the normal 3-engine path) or --vlm-skipped "
-            "REASON (CBRN / content-filter 2-engine fallback)."
+            "provide --vlm PATH (the normal VLM-grab path) or --vlm-skipped "
+            "REASON (fully content-blocked source → OCR-only 2-engine sibling)."
         )
-    vlm_text = Path(args.vlm).read_text(encoding="utf-8") if args.vlm else None
 
-    print(f"[1/4] Rasterizing {pdf.name} at {args.dpi} dpi ...")
-    with tempfile.TemporaryDirectory(prefix=f"ocr-{stem}-") as tmp:
-        images = rasterize(pdf, tmp, args.dpi)
-        print(f"      {len(images)} page image(s)")
-        print("[2/4] Tesseract (vote A) ...")
-        tess_text = run_tesseract(images)
-        print("[3/4] PaddleOCR (vote B) ...")
-        paddle_text = run_paddleocr(images)
+    print(f"[1/2] Rasterizing {pdf.name} at {args.dpi} dpi + OCR ...")
+    tess_text, paddle_text = _ocr_pages(pdf, stem, args.dpi)
 
-    engines = [
-        {"name": "tesseract", "version": tesseract_version()},
-        {"name": "paddleocr", "version": paddleocr_version()},
-    ]
-    coverage_warning = None
-    if vlm_text is not None:
-        print("[4/4] Aligning 3 votes + computing consensus ...")
-        stats, contested, omissions = build_consensus(vlm_text, tess_text, paddle_text)
-        base_text = vlm_text
-        engines.append({"name": "vlm", "note": f"agent page-image read; file: {args.vlm}"})
-        vlm_skipped = None
-        coverage_warning = coverage_warning_from_omissions(omissions)
+    print("[2/2] Writing the sibling + confirming load-bearing words/numbers ...")
+    if args.vlm:
+        base_text = Path(args.vlm).read_text(encoding="utf-8")
+        vlm_skipped = False
     else:
-        print("[4/4] VLM skipped — Tesseract+PaddleOCR 2-engine consensus ...")
-        stats, contested, omissions = build_consensus_2(tess_text, paddle_text)
-        base_text = tess_text  # Tesseract is the readable base in the fallback
-        vlm_skipped = args.vlm_skipped
+        base_text = tess_text   # OCR-only fallback: Tesseract is the readable base
+        vlm_skipped = True
 
-    sibling.write_text(base_text, encoding="utf-8")  # draft base
-    record = {
-        "schema": "ocr-verification/v1",
-        "source_pdf": rel_to_sources(pdf),
-        "sibling_txt": rel_to_sources(sibling),
-        "sibling_sha256": None,  # stamped by `assemble`
-        "generated": args.date,
-        "engines": engines,
-        "stats": stats,
-        "contested": contested,
-        "possible_omissions": omissions,
-        "contamination_flags": [],
-    }
-    if vlm_skipped:
-        record["vlm_skipped"] = vlm_skipped
-    if coverage_warning:
-        record["coverage_warning"] = coverage_warning
-    write_yaml(verification, record)
+    sibling.write_text(base_text, encoding="utf-8")
+    print(f"\n  sibling : {sibling}")
 
-    print(f"\n  draft sibling : {sibling}")
-    print(f"  verification  : {verification}")
-    print(f"  consensus     : {stats['consensus_tokens']}/{stats['base_tokens']} tokens")
-    print(f"  CONTESTED     : {stats['contested_count']}  (adjudicate against page images)")
-    print(f"  omissions(adv): {stats['possible_omission_count']}")
+    divergences, omissions = confirm_report(base_text, tess_text, paddle_text, vlm_skipped)
+    coverage_warning = coverage_warning_from_omissions(omissions)
     if coverage_warning:
         print(f"\n  ⚠ COVERAGE WARNING: {coverage_warning['omitted_token_count']} "
               f"OCR-corroborated tokens absent from the VLM base cluster at "
               f"line {coverage_warning['line']} — the base likely dropped a "
-              f"paragraph/page. Confirm whole-document coverage before assemble.")
-    if contested:
-        print("\n  Next: fill `resolution` for each contested span by reading the")
-        print("  page image, then run: ocr-consensus.py assemble", verification)
-    else:
-        print("\n  No contested spans. Run: ocr-consensus.py assemble", verification)
+              f"paragraph/page. Recover the dropped region before using the sibling.")
+
+    print_confirm_report(divergences, sibling)
 
 
-def cmd_assemble(args):
-    verification = Path(args.verification)
-    record = yaml.safe_load(verification.read_text(encoding="utf-8"))
-    sibling = SOURCES_DIR / record["sibling_txt"]
-    base = sibling.read_text(encoding="utf-8")
-
-    unresolved = [c["id"] for c in record.get("contested", [])
-                  if c.get("resolution") in (None, "")]
-    if unresolved:
+def cmd_verify(args):
+    """Re-confirm an EXISTING sibling against the OCR engines (no regeneration):
+    the same load-bearing divergence report `run` prints. Use when re-checking a
+    sibling that was produced earlier."""
+    pdf = _resolve_pdf(args.pdf)
+    stem = pdf.with_suffix("").name
+    sibling = pdf.with_suffix(".txt")
+    if not sibling.exists():
         raise SystemExit(
-            "cannot assemble — contested spans without a resolution: "
-            + ", ".join(unresolved)
-            + "\n  read the page image at each and fill `resolution` "
-              "(+ resolution_method: image-adjudication, + adjudicator_session)."
-        )
+            f"no sibling to verify: {sibling}\n"
+            f"  produce it first: ocr-consensus.py run {args.pdf} --vlm ...")
 
-    # Splice resolutions in reverse char order so earlier offsets stay valid.
-    edits = sorted(record.get("contested", []), key=lambda c: c["char_start"], reverse=True)
-    text = base
-    changed = 0
-    for c in edits:
-        cs, ce = c["char_start"], c["char_end"]
-        if base[cs:ce] != c["candidates"]["vlm"]:
-            raise SystemExit(
-                f"offset drift on {c['id']}: base[{cs}:{ce}]="
-                f"{base[cs:ce]!r} != recorded vlm {c['candidates']['vlm']!r}. "
-                f"Re-run `run`; do not hand-edit the draft."
-            )
-        if c["resolution"] != base[cs:ce]:
-            text = text[:cs] + c["resolution"] + text[ce:]
-            changed += 1
-        c["status"] = "adjudicated"
-    sibling.write_text(text, encoding="utf-8")
-    record["sibling_sha256"] = sha256_file(sibling)
-    write_yaml(verification, record)
-    print(f"  assembled {sibling}  ({changed} span(s) substituted)")
-    print(f"  sha256 {record['sibling_sha256']}")
+    print(f"Rasterizing {pdf.name} at {args.dpi} dpi + OCR (re-confirm) ...")
+    tess_text, paddle_text = _ocr_pages(pdf, stem, args.dpi)
+    sib_text = sibling.read_text(encoding="utf-8")
+    divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
+    print_confirm_report(divergences, sibling)
 
 
 def cmd_engines(_args):
@@ -639,7 +590,7 @@ def cmd_selftest(_args):
     if not contested3 or "all three" not in contested3[0]["note"]:
         failures.append(f"case3: expected 'all three votes differ', got {contested3}")
 
-    # Case 4: offsets are accurate (assemble relies on them).
+    # Case 4: char offsets are accurate (the divergence report locates by them).
     base = "foo bar baz"
     _, c4, _ = build_consensus(base, "foo XXX baz", "foo YYY baz")
     if not c4 or base[c4[0]["char_start"]:c4[0]["char_end"]] != "bar":
@@ -654,19 +605,7 @@ def cmd_selftest(_args):
     if any(c["candidates"]["vlm"] is not None for c in c5):
         failures.append("case5: 2-engine candidates.vlm should be None")
 
-    # Case 6: arbiter — the grab ALWAYS wins, every disagreement disclosed; the OCR
-    # engines never override (they share glyph-confusion failures, so even both
-    # agreeing is not evidence against the uncorrelated VLM grab). Covers
-    # both-OCR-agree (incl. the dird-05 false-override cases SiO2/Science/2nd) and
-    # three-way splits and a lone OCR read.
-    for grab, t, p in [("82", "81", "81"), ("SiO2", "SiOz", "SiOz"),
-                       ("Science", "Sclence", "Sclence"), ("Lím", "Lim", "Lim"),
-                       ("Kiyshko", "Klyshko", "Klyschko"), ("5", "5", None)]:
-        res, meth, _ = arbitrate(grab, t, p)
-        if (res, meth) != (grab, "disclosed"):
-            failures.append(f"case6: {grab!r} must be kept+disclosed, got {(res, meth)}")
-
-    # Case 8: load-bearing filter — words/numbers are grounded; structure is not.
+    # Case 8: load-bearing filter — words/numbers are confirmed; structure is not.
     lb = lambda s: is_load_bearing(s, s, 0, len(s))
     for tok in ("Section", "82", "AAWSA"):
         if not lb(tok):
@@ -689,44 +628,30 @@ def cmd_selftest(_args):
     print("  case1: VLM+1 OCR agreement -> no false contest")
     print("  case2: VLM wrong, OCR engines correct -> contested + flagged")
     print("  case3: three-way disagreement -> contested")
-    print("  case4: char offsets accurate for assemble")
+    print("  case4: char offsets accurate")
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
-    print("  case6: arbiter -> grab always kept + disclosed (OCR never overrides)")
-    print("  case8: load-bearing filter -> words/numbers grounded, structure not")
+    print("  case8: load-bearing filter -> words/numbers confirmed, structure not")
     return 0
 
 
 # ---------------------------------------------------------------------------
-# Quote-scoped grounding — the quote-scoped verification model (BACKLOG C1).
+# Load-bearing filter — what the confirmation report compares.
 #
-# Whole-document consensus drowns the signal in furniture noise. The fidelity
-# guarantee that matters is per-LOAD-BEARING-SPAN: confirm only the WORDS and
-# NUMBERS of the spans a node quotes or cites (structure is not compared — see
-# is_load_bearing). The `.txt` sibling is the authoritative grab (the spine);
-# Tesseract + PaddleOCR cross-check it. Each load-bearing contested token is
-# resolved by an automated arbiter — no human step: the grab always wins and the
-# disagreement is disclosed (the OCR engines confirm or flag, never override).
-# Furniture is never quoted -> never confirmed. Record: {stem}-quote-grounding.yaml
-# (meta/schema-quote-grounding.yaml). Gate: scripts/checks/quote_source_grounding.py.
-# ---------------------------------------------------------------------------
-_OCR_TYPES = {"ocr-scan", "extraction-lossy"}
-
-# Load-bearing tokens are the only thing `ground` compares: the WORDS and NUMBERS
-# of a quote. A token is load-bearing iff it carries a letter or digit, or it is
-# one of the numeric symbols (. - % $ °) sitting immediately beside a digit (a
-# decimal point, sign, range dash, percent/currency/degree unit). Everything else
-# — bare punctuation, bullets, brackets, markup `*`, banners, figure labels,
-# TOC dot-leaders — is document STRUCTURE, never source-literal prose, and is not
-# grounded. This is what keeps the whole-document furniture noise (the DIRD-16
-# ~1000 contested spans, ≈99% structure) out of the quoted-span grounding while
-# still catching every real defect (III→ITT, 81→82, Klyshko→Kiyshko, He³→He?).
+# A token is load-bearing iff it carries a letter or digit, or it is one of the
+# numeric symbols (. - % $ °) sitting immediately beside a digit (a decimal
+# point, sign, range dash, percent/currency/degree unit). Everything else —
+# bare punctuation, bullets, brackets, markup `*`, banners, figure labels, TOC
+# dot-leaders — is document STRUCTURE, never source-literal prose, and is not
+# compared. This is what keeps a whole-sibling diff from drowning in furniture
+# noise (~99% of a banner/figure-heavy government PDF) while still catching every
+# real defect (III→ITT, 81→82, Klyshko→Kiyshko, He³→He?).
 _LB_ALNUM = re.compile(r"[A-Za-z0-9]")
 _LB_NUM_SYMBOLS = {".", "-", "%", "$", "°"}
 
 
 def is_load_bearing(surface, text, cs, ce):
     """True iff `surface` (the sibling token at text[cs:ce]) is a word/number we
-    must ground. Numeric symbols count only when adjacent to a digit, so a
+    must confirm. Numeric symbols count only when adjacent to a digit, so a
     sentence comma or a list hyphen stays structure but a `3.5` / `-40°` / `5%`
     keeps its decimal/sign/unit."""
     if not surface:
@@ -740,311 +665,35 @@ def is_load_bearing(surface, text, cs, ce):
     return False
 
 
-def arbitrate(grab, tess, paddle):
-    """Resolve a load-bearing contested token with no human input: the VLM grab
-    ALWAYS wins and the disagreement is DISCLOSED (all three reads recorded).
-    Returns (resolution, method, note).
-
-    The OCR engines never override the grab. They are both glyph-recognition
-    models, so they share failure modes — accent-drop (`Lím`->`Lim`), `i`<->`cl`,
-    subscript-digit<->letter (`SiO2`->`SiOz`), dropped super/subscripts
-    (`2nd`->`2`). When BOTH misread the same way they agree with each other but are
-    *both wrong*, so "two OCR engines agree against the grab" is not reliable
-    evidence against the uncorrelated, higher-fidelity VLM grab (dird-05 backfill:
-    3/3 such "overrides" were OCR errors on a correct grab). Their role is to
-    CONFIRM (when they agree with the grab the token isn't contested) or to FLAG
-    (disagreement -> disclosed for an optional human look), never to override."""
-    if (tess is not None and paddle is not None
-            and norm_token(tess) == norm_token(paddle)):
-        note = (f"auto: both OCR engines read {tess!r} vs the grab — grab kept "
-                f"(OCR engines share glyph-confusion failures), disclosed")
-    else:
-        note = "auto: OCR engines disagree with the grab — grab kept, disclosed"
-    return grab, "disclosed", note
-
-
-def _norm_for_locate(s):
-    return (s.replace("“", '"').replace("”", '"')
-             .replace("‘", "'").replace("’", "'")
-             .replace("—", "-").replace("–", "-"))
-
-
-def _collapsed_index_map(text):
-    """Whitespace-collapsed, quote/dash-normalized view of `text` plus a map from
-    each collapsed-char index back to the original char offset — so a span
-    located in the normalized view is reported in original sibling coordinates
-    (the coordinate system the contested spans use). Whitespace after a hyphen is
-    dropped (a PDF line-wrap `quant-\\nph` joins to `quant-ph`), mirroring
-    lib._common.normalize_for_compare's ``-\\s+`` -> ``-`` so a reflowed citation
-    still locates."""
-    t = _norm_for_locate(text)
-    out, idxmap, prev_ws = [], [], False
-    for i, ch in enumerate(t):
-        if ch.isspace():
-            if out and out[-1] == "-":
-                continue  # hyphen line-wrap: join, drop the whitespace
-            if not prev_ws:
-                out.append(" "); idxmap.append(i); prev_ws = True
-        else:
-            out.append(ch); idxmap.append(i); prev_ws = False
-    return "".join(out), idxmap
-
-
-def _collapse_query(quote):
-    """Normalize a quote/citation the same way as _collapsed_index_map (quote/
-    dash fold, hyphen line-wrap join, whitespace collapse) so it matches."""
-    q = re.sub(r"-\s+", "-", _norm_for_locate(quote))
-    return re.sub(r"\s+", " ", q).strip()
-
-
-def locate_span(collapsed, idxmap, quote):
-    """Return (char_start, char_end) of `quote` in the original text, or None.
-    Exact normalized-substring first; head+tail fuzzy fallback for a quote that
-    crosses page furniture (a running banner spliced mid-paragraph)."""
-    q = _collapse_query(quote)
-    if not q:
-        return None
-    j = collapsed.find(q)
-    if j >= 0:
-        return idxmap[j], idxmap[j + len(q) - 1] + 1
-    head, tail = q[:25], q[-25:]
-    a = collapsed.find(head)
-    if a < 0:
-        return None
-    b = collapsed.find(tail, a)
-    if b < 0:
-        return None
-    return idxmap[a], idxmap[b + len(tail) - 1] + 1
-
-
-def collect_ocr_spans(data, ext_types):
-    """Map OCR-scan source path -> [(ref_id, kind, verbatim_text)] for every
-    quote and cited_work that cites it."""
-    spans = {}
-    for q in (data.get("quotes") or []):
-        if not isinstance(q, dict):
-            continue
-        rel = (q.get("source") or {}).get("path")
-        txt = q.get("text") or q.get("verbatim")
-        if rel and txt and ext_types.get(rel) in _OCR_TYPES:
-            spans.setdefault(rel, []).append((q.get("id"), "quote", txt))
-    for cw in (data.get("cited_works") or []):
-        if not isinstance(cw, dict):
-            continue
-        rel = (cw.get("source") or {}).get("path")
-        txt = cw.get("citation_verbatim")
-        if rel and txt and ext_types.get(rel) in _OCR_TYPES:
-            spans.setdefault(rel, []).append((cw.get("id"), "cited_work", txt))
-    return spans
-
-
-def _partition_prior_spans(old, node_slug):
-    """From an existing grounding record `old`, split its grounded_spans for a
-    re-ground of `node_slug`:
-
-      - ``other_spans`` — spans belonging to a DIFFERENT node; preserved verbatim
-        so a record that aggregates several citing nodes isn't clobbered when one
-        node is re-grounded (the shared-source merge).
-      - ``prior`` — ``{(ref, char_start): (resolution, method, session)}`` for THIS
-        node's **manual** (``image-adjudication``) overrides only, so a
-        contributor's optional hand-resolution of a flagged token carries across
-        the re-ground. The auto ``disclosed`` resolution is NOT carried — it is
-        deterministic from the engine reads, so it is recomputed by ``arbitrate()``
-        every ground (else a stale auto-resolution would shadow an arbiter change).
-
-    Other nodes' resolutions stay intact because their whole span entries are
-    preserved in ``other_spans`` — they are never rebuilt, so never re-keyed.
-    """
-    prior, other = {}, []
-    for gs in (old.get("grounded_spans") or []):
-        g_node = gs.get("node")
-        if g_node is not None and g_node != node_slug:
-            other.append(gs)
-            continue
-        for c in (gs.get("contested") or []):
-            if c.get("resolution_method") == "image-adjudication":
-                prior[(gs.get("ref"), c.get("char_start"))] = (
-                    c.get("resolution"), c.get("resolution_method"),
-                    c.get("adjudicator_session"))
-    return prior, other
-
-
-def cmd_ground(args):
-    sys.path.insert(0, str(_REPO_ROOT / "scripts"))
-    from lib._common import _load_extraction_types  # noqa: PLC0415
-
-    artifact = Path(args.artifact)
-    node_slug = artifact.stem  # spans are namespaced by node so two nodes' ids don't collide
-    data = yaml.safe_load(artifact.read_text(encoding="utf-8"))
-    spans_by_source = collect_ocr_spans(data, _load_extraction_types())
-    if not spans_by_source:
-        print("no quotes/cited_works cite an OCR-scan source — nothing to ground.")
-        return
-
-    skipped = []
-    for rel, spans in spans_by_source.items():
-        pdf = SOURCES_DIR / rel
-        sibling = pdf.with_suffix(".txt")
-        stem = pdf.with_suffix("").name
-        record_path = pdf.parent / f"{stem}-quote-grounding.yaml"
-        # Skip-and-warn rather than abort: a node often cites several OCR-scan
-        # sources, and one missing PDF/sibling must not block grounding the
-        # rest. A skipped source's spans stay ungrounded — the gate flags them.
-        if not pdf.exists():
-            print(f"   ! SKIP {rel}: source PDF not found — "
-                  f"{len(spans)} span(s) ungrounded")
-            skipped.append((rel, "source PDF not found"))
-            continue
-        if not sibling.exists():
-            print(f"   ! SKIP {rel}: no .txt sibling (produce it first: "
-                  f"ocr-consensus.py run --vlm ...) — {len(spans)} span(s) ungrounded")
-            skipped.append((rel, "no .txt sibling"))
-            continue
-        sib_text = sibling.read_text(encoding="utf-8")
-
-        print(f"[{rel}] {len(spans)} span(s) — rasterize + OCR cross-check ...")
-        with tempfile.TemporaryDirectory(prefix=f"ground-{stem}-") as tmp:
-            images = rasterize(pdf, tmp, args.dpi)
-            tess = run_tesseract(images)
-            paddle = run_paddleocr(images)
-        # The sibling is the authoritative grab (spine); the 2 OCR engines
-        # cross-check. contested = sibling tokens corroborated by neither engine.
-        _, contested, _ = build_consensus(sib_text, tess, paddle)
-        # Ground only WORDS and NUMBERS: drop document structure (punctuation,
-        # bullets, brackets, markup) from the contested set up front, so every
-        # recorded contested token is load-bearing and the per-span invariant
-        # tokens == confirmed + len(contested) holds honestly.
-        contested = [c for c in contested
-                     if is_load_bearing(c["candidates"]["vlm"], sib_text,
-                                        c["char_start"], c["char_end"])]
-
-        # Merge semantics: one record aggregates every node that cites this
-        # source. Re-grounding a node replaces only THAT node's spans and
-        # preserves the others (spans are namespaced by `node` so two nodes'
-        # identically-numbered ids — both "q4" — never collide). Carry prior
-        # adjudications for THIS node by (ref, char_start); a span with no
-        # `node` (legacy v1 record, single-node by construction) is treated as
-        # this node's prior, not another node's, so v1 -> v2 migrates in place.
-        prior, other_spans = {}, []
-        if record_path.exists():
-            old = yaml.safe_load(record_path.read_text(encoding="utf-8")) or {}
-            prior, other_spans = _partition_prior_spans(old, node_slug)
-
-        collapsed, idxmap = _collapsed_index_map(sib_text)
-        sib_tokens = tokenize(sib_text)
-        grounded, total_contested, unlocated = [], 0, 0
-        for ref, kind, txt in spans:
-            loc = locate_span(collapsed, idxmap, txt)
-            if loc is None:
-                unlocated += 1
-                grounded.append({"node": node_slug, "ref": ref, "kind": kind,
-                                 "located": False,
-                                 "note": "verbatim text not found in sibling — "
-                                         "re-check the quote/citation"})
-                print(f"   ! {ref}: NOT located in sibling")
-                continue
-            qs, qe = loc
-            # Count only LOAD-BEARING span tokens (words/numbers); `contested` is
-            # already filtered to load-bearing, so confirmed = n_tokens - len(cin)
-            # is exact and tokens == confirmed + len(contested) holds.
-            n_tokens = sum(1 for (s, cs, ce) in sib_tokens
-                           if qs <= cs < qe and is_load_bearing(s, sib_text, cs, ce))
-            cin = []
-            for c in contested:
-                # start-in-span membership (quotes begin at a token boundary, so no
-                # token straddles qs).
-                if not (qs <= c["char_start"] < qe):
-                    continue
-                sib_tok = c["candidates"]["vlm"]
-                # Automated arbiter — no human step: the VLM grab always wins and
-                # the disagreement is disclosed (the OCR engines confirm or flag,
-                # never override — see arbitrate()). A contributor's prior MANUAL
-                # override (image-adjudication) still persists.
-                res, meth, sess = prior.get((ref, c["char_start"]), (None, None, None))
-                if res is None:
-                    res, meth, sess = arbitrate(
-                        sib_tok, c["candidates"]["tesseract"], c["candidates"]["paddleocr"])
-                cin.append({
-                    "token_index": c["token_index"],
-                    "char_start": c["char_start"],
-                    "char_end": c["char_end"],
-                    "line": c["line"],
-                    "context": c["context"],
-                    "sibling": sib_tok,
-                    "tesseract": c["candidates"]["tesseract"],
-                    "paddleocr": c["candidates"]["paddleocr"],
-                    "resolution": res,
-                    "resolution_method": meth,
-                    "adjudicator_session": sess,
-                })
-            total_contested += len(cin)
-            grounded.append({
-                "node": node_slug, "ref": ref, "kind": kind, "located": True,
-                "char_start": qs, "char_end": qe,
-                "tokens": n_tokens, "confirmed": n_tokens - len(cin),
-                "contested": cin,
-            })
-            print(f"   - {ref} ({kind}): {n_tokens} tokens, "
-                  f"{'OK' if not cin else str(len(cin)) + ' contested'}")
-
-        record = {
-            "schema": "quote-grounding/v2",
-            "source_pdf": rel,
-            "sibling_txt": str(sibling.relative_to(SOURCES_DIR)),
-            "sibling_sha256": sha256_file(sibling),
-            "generated": args.date,
-            "confirming_engines": [
-                {"name": "tesseract", "version": tesseract_version()},
-                {"name": "paddleocr", "version": paddleocr_version()},
-            ],
-            "grounded_spans": other_spans + grounded,
-        }
-        write_yaml(record_path, record)
-        print(f"   -> {record_path}")
-        print(f"      {len(spans) - unlocated}/{len(spans)} span(s) located; "
-              f"{total_contested} load-bearing contested — all disclosed, grab kept "
-              f"(OCR engines confirm or flag, never override).")
-
-    if skipped:
-        print(f"\nSKIPPED {len(skipped)} source(s) — their spans remain ungrounded "
-              f"(produce the sibling, then re-run `ground`):")
-        for rel, why in skipped:
-            print(f"  - {rel}: {why}")
-
-
 def main():
     ap = argparse.ArgumentParser(
-        description="Multi-engine OCR consensus for trustworthy clean-text siblings.")
+        description="Produce a clean-text .txt sibling for an OCR-scan PDF (VLM "
+                    "page-image read) and confirm it against PaddleOCR + Tesseract.")
     ap.add_argument("--selftest", action="store_true",
                     help="run synthetic alignment/consensus tests and exit")
     sub = ap.add_subparsers(dest="cmd")
 
-    p_run = sub.add_parser("run", help="rasterize + 3-engine vote + emit draft sibling & verification YAML")
+    p_run = sub.add_parser(
+        "run", help="write the .txt sibling from the VLM read, then print the "
+                    "load-bearing divergence report against the OCR engines")
     p_run.add_argument("pdf", help="source PDF (path under sources/ or absolute)")
-    p_run.add_argument("--vlm", help="VLM page-image transcription (.txt) — vote C (normal path)")
+    p_run.add_argument("--vlm", help="VLM page-image transcription (.txt) — the sibling base")
     p_run.add_argument("--vlm-skipped", metavar="REASON",
-                       help="run the 2-engine fallback (Tesseract+PaddleOCR) and record this "
-                            "reason; for CBRN / content-filter-blocked sources only")
+                       help="build an OCR-only sibling (Tesseract base, PaddleOCR cross-check) "
+                            "and record this reason; for fully content-blocked sources only")
     p_run.add_argument("--dpi", type=int, default=300)
-    p_run.add_argument("--date", default=None, help="YYYY-MM-DD for the verification record")
     p_run.add_argument("--force", action="store_true", help="overwrite an existing sibling (backfill)")
     p_run.set_defaults(func=cmd_run)
 
-    p_asm = sub.add_parser("assemble", help="apply adjudicated resolutions -> final sibling + sha256")
-    p_asm.add_argument("verification", help="{stem}-ocr-verification.yaml")
-    p_asm.set_defaults(func=cmd_assemble)
+    p_vfy = sub.add_parser(
+        "verify", help="re-confirm an EXISTING sibling against the OCR engines "
+                       "(no regeneration) — same load-bearing divergence report")
+    p_vfy.add_argument("pdf", help="source PDF whose .txt sibling to re-confirm")
+    p_vfy.add_argument("--dpi", type=int, default=300)
+    p_vfy.set_defaults(func=cmd_verify)
 
     p_eng = sub.add_parser("engines", help="report engine availability")
     p_eng.set_defaults(func=cmd_engines)
-
-    p_grd = sub.add_parser(
-        "ground",
-        help="quote-scoped grounding: confirm a node's quoted/cited spans of an "
-             "OCR-scan source against the OCR engines -> {stem}-quote-grounding.yaml")
-    p_grd.add_argument("artifact", help="research artifact (meta/research/{node}.yaml)")
-    p_grd.add_argument("--dpi", type=int, default=300)
-    p_grd.add_argument("--date", default=None, help="YYYY-MM-DD for the grounding record")
-    p_grd.set_defaults(func=cmd_ground)
 
     args = ap.parse_args()
     if args.selftest:

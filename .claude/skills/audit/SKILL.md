@@ -24,7 +24,10 @@ Target: **$ARGUMENTS** (ask the user if empty).
 1. **Independent assessment.** Spawn the **auditor** subagent on the target for
    a fresh-context cold pass — it runs the full validators + the audit goals
    and returns findings + `adjacent_needs_update[]`. The independent read is
-   the point: the session that built a node can't reliably self-verify it.
+   the point: the session that built a node can't reliably self-verify it. **If
+   the node is backed by an `ocr-scan` / `extraction-lossy` source, this pass is
+   the final quote-vs-source check** (auditor goal 2): its quotes are verified
+   against the source PDF page images, not the `.txt` sibling.
 2. **Pre-audit under-extraction + source-form grounding:**
    `python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml`
    surfaces substantive paragraphs no quote references + capitalized terms

@@ -22,7 +22,13 @@ Audit goals:
    archived in `sources/` and registered in `sources/manifest.yaml`.
 2. **Verbatim** — `validate.py` covers the mechanical case; spot-check a few
    quotes for right-but-imprecise location refs (the substring check won't
-   catch that).
+   catch that). **For a node backed by an `ocr-scan` / `extraction-lossy`
+   source** (its quotes derive from a `.txt` sibling, not the PDF text layer),
+   this is the **final independent check**: verify each such quote against the
+   **source PDF page images**, not the sibling — a sibling error that reached a
+   quote is only caught against the original. Correct or remove any quote that
+   the page image doesn't bear out. (The sibling was confirmed against PaddleOCR
+   at prep time per `/prepare-ocr-sibling`; this is the second, uncorrelated read.)
 3. **Prose-drift** — re-run `validate-research.py`; the free-prose synthesis
    fields + `vouching_chain.attestation` are a zero-ungrounded-token hard gate.
    Each unmatched token resolves to source-matched prose OR is captured as

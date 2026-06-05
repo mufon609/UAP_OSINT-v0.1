@@ -267,7 +267,7 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — OCR-scan sibling fidelity: DIRD-16 fixed; whole-document consensus evaluated and rejected for **quote-scoped confirmation**; gate refactor + 31-sibling backfill remain
+### C1 — CLOSED (2026-06-05): OCR-scan sibling fidelity — grounding-record layer removed; replaced by a 4-step process (produce → confirm-with-different-tool → build → audit-vs-source)
 
 **The defect that started this.** OCR-scan PDFs are quoted against a clean-text
 `.txt` sibling, not the corrupt pdftotext layer. The original siblings were
@@ -466,6 +466,39 @@ honest counts.
 dird-05 grounded 56/56, 8 load-bearing contested, **all disclosed** (correct grabs
 kept: `SiO2`, `Science`, `2nd`, `Lütjering`, redactions). The other ungrounded DIRDs
 (06,07,08,09,10,11,12,13,14,18,24,26) remain a mechanical re-ground.
+
+#### 2026-06-05 session — CLOSED: the grounding-record layer was over-engineering; removed
+
+**Why.** The whole apparatus targeted the wrong goalpost. The gate that justified
+it — `scripts/checks/quote_source_grounding.py` — was **never wired in** (absent
+from `validate-research.py::_ARTIFACT_CHECKS` and `_phases.py`, never ran in
+`pre-commit.sh`, stayed `SEVERITY="warn"` throughout), so the 19
+`{stem}-quote-grounding.yaml` receipts, the `sibling_sha256` hash-binding, the
+`quote-grounding/v2` schema + `(node, ref)` cross-node namespacing, and the
+human image-adjudication hatch enforced nothing. Re-litigated five times
+(single-agent → twin-agent → whole-document consensus → quote-scoped grounding →
+auto-arbitration) without ever becoming a real gate.
+
+**What replaced it (the maintainer's 4-step process).** (1) Transcribe the PDF to
+a `.txt` sibling via a VLM page-image read (PaddleOCR fills content-blocked
+pages). (2) **Confirm the sibling with a different tool** — `ocr-consensus.py run`
+/ `verify` diffs PaddleOCR against the sibling on load-bearing words/numbers and
+prints the divergences; an agent reconciles each against the page image and
+corrects the sibling. No receipt YAML. (3) Build the node, quoting from the
+confirmed sibling. (4) **Final check at node audit:** `/audit` (auditor goal 2)
+verifies the built node's quotes against the **source PDF page images**, not the
+sibling. Two uncorrelated confirmations, zero persisted scaffolding.
+
+**Removed:** the 19 `*-quote-grounding.yaml` receipts, `meta/schema-quote-grounding.yaml`,
+`scripts/checks/quote_source_grounding.py`, and `ocr-consensus.py`'s `ground` +
+`assemble` subcommands and their helpers (`arbitrate`, span-location,
+`collect_ocr_spans`, …). `ocr-consensus.py` slimmed to `run` + `verify` +
+`engines`. **Supersedes** the "What remains" items above (wire the gate / flip
+SEVERITY / backfill the remaining siblings via `ground`): there is no gate to wire
+and no record to backfill. The 19 already-built DIRD nodes are **grandfathered** —
+they keep their siblings and quotes; each is re-verified under step 4 only when
+next audited. Skill (`/prepare-ocr-sibling`), `conventions.md`, `auditor.md`,
+`/audit` updated.
 
 **Blocks:** none.
 **Blocked by:** none.

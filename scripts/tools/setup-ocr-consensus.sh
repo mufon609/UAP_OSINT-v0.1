@@ -1,19 +1,19 @@
 #!/bin/bash
 # scripts/tools/setup-ocr-consensus.sh
 #
-# One-time setup for the second OCR engine behind the multi-engine consensus
-# pipeline (scripts/tools/ocr-consensus.py). The consensus pipeline produces a
-# trustworthy clean-text `.txt` sibling for OCR-scan sources by cross-checking
-# THREE uncorrelated votes — Tesseract (vote A), PaddleOCR (vote B), and a VLM
-# page-image read (vote C) — and flagging any token the engines disagree on for
-# image adjudication. Tesseract is the system OCR engine (apt: tesseract-ocr);
-# the VLM vote is produced by an agent. This script installs the missing piece:
-# PaddleOCR, a deep-learning OCR engine with a DIFFERENT architecture from
-# Tesseract, so the two have uncorrelated failure modes (the whole point — see
-# meta/conventions.md "Producing the `.txt` sibling").
+# One-time setup for the OCR engine behind scripts/tools/ocr-consensus.py. That
+# tool produces a clean-text `.txt` sibling for OCR-scan sources from a VLM
+# page-image read, then CONFIRMS it against the OCR engines: PaddleOCR (a
+# different modality from the VLM, and not content-blocked) re-reads the pages
+# and is diffed against the sibling on the words/numbers, flagging any the
+# engines disagree on for an agent to reconcile against the page image. PaddleOCR
+# is the better OCR engine; Tesseract is an available second opinion. This script
+# installs the missing piece: PaddleOCR, a deep-learning OCR engine with a
+# DIFFERENT architecture from Tesseract, so the two have uncorrelated failure
+# modes (the whole point — see meta/conventions.md "Producing the `.txt` sibling").
 #
 # What it puts in place:
-#   1. tesseract-ocr (apt) — vote A. Usually already present; installed if not.
+#   1. tesseract-ocr (apt) — second-opinion OCR. Usually present; installed if not.
 #   2. poppler-utils (apt) — pdftoppm rasterizer + pdftotext (the contamination
 #      signal). Assumed present (the repo already uses it); installed if not.
 #   3. python3-venv (apt) — required to create the project-local venv.
@@ -97,17 +97,6 @@ if [ ! -x "$VENV_DIR/bin/python3" ]; then
     "$PYTHON_BIN" -m venv --system-site-packages "$VENV_DIR"
 fi
 echo "  ✓ venv Python: $($VENV_DIR/bin/python3 --version)"
-# Informational only — ocr-consensus.py's sole third-party import is yaml, and
-# we pip-install pyyaml into the venv below, so this never gates (it would
-# otherwise mis-fire under a 3.11 fallback venv whose system-site is not 3.13's).
-"$VENV_DIR/bin/python3" - <<'PY'
-import importlib
-try:
-    importlib.import_module("yaml")
-    print("  ✓ yaml importable in venv (system-site)")
-except Exception:  # noqa: BLE001
-    print("  · yaml not in system-site — pip will add pyyaml to the venv below")
-PY
 echo
 
 # ---------------------------------------------------------------------------
@@ -125,8 +114,8 @@ echo "  Installing paddlepaddle (CPU)..."
   echo "      PYTHON_BIN=\"\$HOME/.pyenv/versions/3.11.9/bin/python\" scripts/tools/setup-ocr-consensus.sh"
   exit 1
 }
-echo "  Installing paddleocr + numpy + pyyaml..."
-"$VENV_DIR/bin/pip" install paddleocr numpy pyyaml
+echo "  Installing paddleocr + numpy..."
+"$VENV_DIR/bin/pip" install paddleocr numpy
 echo
 
 # ---------------------------------------------------------------------------
@@ -160,4 +149,4 @@ echo
 echo "  python3 scripts/tools/ocr-consensus.py run sources/government/NAME.pdf \\"
 echo "      --vlm /tmp/NAME-vlm.txt"
 echo
-echo "See the /prepare-ocr-sibling skill for the full producer→consensus→adjudicate flow."
+echo "See the /prepare-ocr-sibling skill for the full produce → confirm flow."

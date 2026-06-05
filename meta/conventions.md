@@ -222,75 +222,68 @@ When detection confirms `ocr-scan`, set the manifest entry's
 `extraction_type` accordingly. If the extracted text is clean enough
 to use, the validator falls back to `pdftotext` (per
 `extract_source_text` in `scripts/lib/_common.py`); otherwise produce
-a contributor-verified `.txt` sibling. The three-step contributor
-discipline below handles the per-quote case during the window before
-the sibling exists.
+a contributor-verified `.txt` sibling. The two-step contributor
+discipline below ("Per-quote contributor discipline …") handles the
+per-quote case during the window before the sibling exists.
 
-**Producing the `.txt` sibling, and grounding what the node quotes.**
-The `.txt` sibling is the **primary grab** — ideally a VLM page-image read, a
-modality *uncorrelated* with OCR, so an OCR engine's char-confusion cannot be
-silently reproduced by the grab. (The retired "single producer → single
-independent verifier" model failed silently: producer and verifier read the same
-image with the same kind of vision model and made the *same* misread, so
-"independent" (different session) was not independent in *failure mode* —
-DIRD-16's sibling was certified "verified — PASS" yet carried `III→ITT`,
-`communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.)
+**Producing the `.txt` sibling, then confirming it.** The sibling is built and
+checked in four steps, two of them independent reads by *different tools*:
 
-Trust is **quote-scoped** (BACKLOG C1). Whole-document token-by-token consensus on
-a banner/figure-heavy government PDF produces ~1000 CONTESTED spans, ~99% of them
-non-prose furniture (running classification banners, figure interiors, TOC
-dot-leaders) that no quote ever draws from — un-adjudicatable noise (the DIRD-16
-pilot: 1067 contested, **0** of them inside any of the 21 node quotes). So the
-gate confirms only the spans the node **quotes or cites**, and within them only the
-**load-bearing characters — letters, digits, and the numeric symbols `. - % $ °`**.
-Document *structure* (punctuation, bullets, brackets, markup `*`, banners, figure
-labels, dot-leaders) is **never compared**: it is not source-literal prose, and
-chasing it is what drowned the old whole-document pass in furniture noise. This is
-the guarantee — *the words and numbers of the quote are corroborated by two
-uncorrelated reads* — **not** a character-perfect transcription of the page.
+1. **Transcribe** the page images to the `.txt` sibling — a **VLM page-image
+   read** (per-page chunked, so a content-filter block costs one page, not the
+   run). It is the readable base: best paragraph structure, source spellings and
+   redaction markers preserved verbatim, figures/equations bracketed.
+2. **Confirm the sibling with a different tool.** PaddleOCR (a different modality
+   — deep-learning OCR, *not* content-blocked, and the better OCR engine)
+   re-reads the pages and is diffed against the sibling. A single read can't be
+   trusted on itself: the retired "one producer → one independent verifier" model
+   failed silently because both read the same image with the same kind of vision
+   model and made the *same* misread — DIRD-16's sibling was certified "PASS" yet
+   carried `III→ITT`, `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.
+   A different *modality* catches those instead of sharing them.
+3. **Build the node**, drawing quotes from the confirmed sibling.
+4. **Audit** the built node's quotes against the **source PDF page images** — not
+   the sibling (see "the final check" below).
 
-`scripts/tools/ocr-consensus.py ground <artifact>` re-OCRs each cited OCR-scan
-source with Tesseract + PaddleOCR, aligns to the sibling, and records — in
-`{stem}-quote-grounding.yaml` (spec `meta/schema-quote-grounding.yaml`) — each
-load-bearing span token as confirmed (an OCR engine corroborates the grab) or
-contested. A contested token is resolved by a **single automated arbiter, with no
-human step: the VLM grab always wins and the disagreement is disclosed** (all three
-reads recorded). The OCR engines **confirm or flag, never override** — Tesseract
-and PaddleOCR are both glyph-recognition models, so they share failure modes
-(accent-drop `Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter
-`SiO2`→`SiOz`, dropped super/subscripts `2nd`→`2`). When both make the *same* glyph
-error they agree with each other yet are both wrong, so "two OCR engines agree
-against the grab" is **not** evidence against the uncorrelated, higher-fidelity VLM
-grab (the dird-05 backfill: 3/3 such would-be overrides were OCR errors on a correct
-grab). A contributor MAY still manually image-adjudicate a flagged token if they
-judge the grab itself wrong; that is the only path that changes a quote. On a **VLM-blocked page** the grab is
-**PaddleOCR-fill** (PaddleOCR, not Tesseract, is the higher-trust fallback), so
-PaddleOCR is authoritative and a Tesseract disagreement resolves to PaddleOCR,
-noted. `scripts/checks/quote_source_grounding.py` is the gate: a quote/cited_work
-can never rest on an unconfirmed span or a sibling edited since grounding (sha256
-binding). cited_works are in scope — they are load-bearing verbatim citations and
-inherited the same OCR garble (DIRD-16 cw2/cw5/…/cw24). The whole-document
-verification gate (`validate-ocr-sibling.py`) and its `{stem}-ocr-verification.yaml`
-record were **retired**.
+The confirmation in step 2 compares only **load-bearing characters — letters,
+digits, and the numeric symbols `. - % $ °`**. Document *structure* (punctuation,
+bullets, brackets, markup `*`, banners, figure labels, dot-leaders) is **never
+compared**: it is not source-literal prose, and comparing it is what drowned the
+retired whole-document consensus in ~99% furniture noise (the DIRD-16 pilot: 1067
+contested spans, **0** of them inside any of the 21 node quotes). So the
+confirmation report is the short list of *words and numbers* where the sibling
+and the OCR engines disagree — each one read against the page image. The
+guarantee is *the words and numbers rest on two reads by different tools*, **not**
+a character-perfect transcription of the page.
 
-Produce + ground via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes
-the VLM base as the sibling (per-page chunked VLM production survives the content
-filter — the few pages it blocks are PaddleOCR-filled, confined to those pages),
-then `ocr-consensus.py ground` confirms the quoted spans and discloses any
-contested load-bearing token (grab kept). The **frozen-sibling rule**: the sibling
-is the VLM grab at creation and is **never hand-corrected** — if a contributor
-judges the grab itself wrong they manually image-adjudicate the token (fix the
-quote, re-ground), they do not silently edit the sibling. The **trust
-prerequisite**: the grab (sibling) must be uncorrelated with
-the confirming OCR engines, so a sibling produced by the retired OCR-then-correct
-process must be **regenerated as a VLM read before grounding** — otherwise an OCR
-engine rubber-stamps its own error class.
+Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes the VLM
+text as the sibling, then prints the load-bearing divergence report; an agent
+reconciles each divergence against the page image and **corrects the sibling**
+where the VLM misread (the sibling is canonical — fix it before any quote derives
+from it), leaving the divergences that are just OCR errors on a correct sibling.
+`ocr-consensus.py verify` re-confirms the on-disk sibling without regenerating it.
+The OCR engines are glyph-recognition models that share failure modes (accent-drop
+`Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
+dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree
+against the VLM is often the *OCR* being wrong — the agent decides by reading the
+image, not by vote. On a **content-blocked page** the sibling text is a
+**PaddleOCR-fill** (PaddleOCR, not Tesseract, is the better fallback); confirm
+those pages by eye against the image, since a PaddleOCR-vs-PaddleOCR diff surfaces
+nothing. No receipt file is written — the corrected sibling *is* the artifact.
 
-The four methods below are how an individual *vote* (a token-recognition
-pass) is produced. They are no longer interchangeable *substitutes for
-verification* — a single pass, however careful, is exactly what failed.
-Pick production methods that fit the document's shape; consensus across
-them is what makes the result canonical.
+**The final check (at node audit).** Quote-vs-source verification is not done at
+sibling-prep time and is not a persisted gate; it happens when the node is
+audited. `/audit` verifies the built node's quotes against the **source PDF page
+images**, not the sibling — so a sibling error that reached a quote is caught
+against the original. After that passes, the node and sibling are good to go.
+cited_works are in scope of that check too: they are load-bearing verbatim
+citations and inherit the same OCR garble (DIRD-16 cw2/cw5/…/cw24).
+
+The four methods below are alternative ways to produce a *read* (a
+token-recognition pass) — the VLM grab, or an OCR cross-check, or a recovered
+text layer. A single pass, however careful, is exactly what failed; pick
+production methods that fit the document's shape, and confirm the sibling with a
+read by a *different tool* (step 2 above) before it becomes canonical.
 
 1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
    despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
