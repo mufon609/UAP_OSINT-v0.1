@@ -1,0 +1,1421 @@
+schema: quote-grounding/v2
+source_pdf: government/dird-12-bci-controlling-external-devices-20100323.pdf
+sibling_txt: government/dird-12-bci-controlling-external-devices-20100323.txt
+sibling_sha256: b0807750d8d71269aed70fff1fe0c6b46167b24254af0d642a2c5c4c36ecee6b
+generated: '2026-06-05'
+confirming_engines:
+- name: tesseract
+  version: 5.5.0
+- name: paddleocr
+  version: 3.6.0
+grounded_spans:
+- node: dird-12-bci-controlling-external-devices
+  ref: q1
+  kind: quote
+  located: true
+  char_start: 0
+  char_end: 52
+  tokens: 7
+  confirmed: 4
+  contested:
+  - token_index: 5
+    char_start: 19
+    char_end: 27
+    line: 1
+    context: '...UNCLASSIFIED//[FOR ‹OFFICIAL› USE ONLY struck through]  Def...'
+    sibling: OFFICIAL
+    tesseract: R
+    paddleocr: '-'
+    resolution: OFFICIAL
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 8
+    char_start: 37
+    char_end: 43
+    line: 1
+    context: '...IFIED//[FOR OFFICIAL USE ONLY ‹struck› through]  Defense Intelligenc...'
+    sibling: struck
+    tesseract: OCNET
+    paddleocr: null
+    resolution: struck
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 9
+    char_start: 44
+    char_end: 51
+    line: 1
+    context: '...[FOR OFFICIAL USE ONLY struck ‹through›]  Defense Intelligence Refere...'
+    sibling: through
+    tesseract: null
+    paddleocr: null
+    resolution: through
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q2
+  kind: quote
+  located: true
+  char_start: 54
+  char_end: 292
+  tokens: 36
+  confirmed: 34
+  contested:
+  - token_index: 16
+    char_start: 96
+    char_end: 105
+    line: 8
+    context: '...lligence Reference Document  [‹redaction› bar] Acquisition Threat Suppo...'
+    sibling: redaction
+    tesseract: null
+    paddleocr: null
+    resolution: redaction
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 17
+    char_start: 106
+    char_end: 109
+    line: 8
+    context: '...eference Document  [redaction ‹bar›] Acquisition Threat Support  ...'
+    sibling: bar
+    tesseract: null
+    paddleocr: null
+    resolution: bar
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q3
+  kind: quote
+  located: true
+  char_start: 350
+  char_end: 793
+  tokens: 67
+  confirmed: 67
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q4
+  kind: quote
+  located: true
+  char_start: 952
+  char_end: 1033
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q4a
+  kind: quote
+  located: true
+  char_start: 1057
+  char_end: 1155
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q5
+  kind: quote
+  located: true
+  char_start: 1158
+  char_end: 1579
+  tokens: 70
+  confirmed: 70
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q6
+  kind: quote
+  located: true
+  char_start: 7637
+  char_end: 8386
+  tokens: 127
+  confirmed: 127
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q7
+  kind: quote
+  located: true
+  char_start: 8514
+  char_end: 9070
+  tokens: 77
+  confirmed: 77
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q8
+  kind: quote
+  located: true
+  char_start: 9951
+  char_end: 10349
+  tokens: 57
+  confirmed: 57
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q9
+  kind: quote
+  located: true
+  char_start: 12172
+  char_end: 12513
+  tokens: 59
+  confirmed: 59
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q10
+  kind: quote
+  located: true
+  char_start: 18415
+  char_end: 18882
+  tokens: 80
+  confirmed: 79
+  contested:
+  - token_index: 5162
+    char_start: 18415
+    char_end: 18419
+    line: 192
+    context: '...tive tasks (References 2-4).  ‹P300› is a term used to indicate a ...'
+    sibling: P300
+    tesseract: P3600
+    paddleocr: P3oo
+    resolution: P300
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q11
+  kind: quote
+  located: true
+  char_start: 21255
+  char_end: 21553
+  tokens: 45
+  confirmed: 45
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q12
+  kind: quote
+  located: true
+  char_start: 21555
+  char_end: 21785
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q13
+  kind: quote
+  located: true
+  char_start: 22056
+  char_end: 22470
+  tokens: 68
+  confirmed: 67
+  contested:
+  - token_index: 5862
+    char_start: 22386
+    char_end: 22393
+    line: 215
+    context: '...signals from the brain to the ‹current› state of a device, and a stim...'
+    sibling: current
+    tesseract: null
+    paddleocr: null
+    resolution: current
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q14
+  kind: quote
+  located: true
+  char_start: 24665
+  char_end: 25185
+  tokens: 89
+  confirmed: 88
+  contested:
+  - token_index: 6354
+    char_start: 25152
+    char_end: 25159
+    line: 229
+    context: '...ement to control a mechanical ‹device⁴› to achieve the same goal.  An...'
+    sibling: device⁴
+    tesseract: device
+    paddleocr: device4
+    resolution: device⁴
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q15
+  kind: quote
+  located: true
+  char_start: 28145
+  char_end: 28704
+  tokens: 76
+  confirmed: 76
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q16
+  kind: quote
+  located: true
+  char_start: 32236
+  char_end: 32657
+  tokens: 62
+  confirmed: 62
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q17
+  kind: quote
+  located: true
+  char_start: 34698
+  char_end: 35088
+  tokens: 54
+  confirmed: 54
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q18
+  kind: quote
+  located: true
+  char_start: 35280
+  char_end: 35624
+  tokens: 53
+  confirmed: 53
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q19a
+  kind: quote
+  located: true
+  char_start: 35902
+  char_end: 36139
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q19b
+  kind: quote
+  located: true
+  char_start: 36458
+  char_end: 36701
+  tokens: 44
+  confirmed: 44
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q20
+  kind: quote
+  located: true
+  char_start: 40849
+  char_end: 41326
+  tokens: 65
+  confirmed: 65
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q21
+  kind: quote
+  located: true
+  char_start: 41841
+  char_end: 42260
+  tokens: 61
+  confirmed: 61
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q22a
+  kind: quote
+  located: true
+  char_start: 42285
+  char_end: 42448
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q22b
+  kind: quote
+  located: true
+  char_start: 43598
+  char_end: 43840
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q23
+  kind: quote
+  located: true
+  char_start: 44143
+  char_end: 44569
+  tokens: 64
+  confirmed: 64
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q24a
+  kind: quote
+  located: true
+  char_start: 44991
+  char_end: 45189
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q24b
+  kind: quote
+  located: true
+  char_start: 45272
+  char_end: 45449
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q25
+  kind: quote
+  located: true
+  char_start: 54910
+  char_end: 55474
+  tokens: 85
+  confirmed: 85
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q26a
+  kind: quote
+  located: true
+  char_start: 57149
+  char_end: 57283
+  tokens: 20
+  confirmed: 15
+  contested:
+  - token_index: 12086
+    char_start: 57245
+    char_end: 57247
+    line: 425
+    context: '...mplant that could function as ‹an› autonomous battery operated d...'
+    sibling: an
+    tesseract: neural
+    paddleocr: neural
+    resolution: an
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''neural'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 12087
+    char_start: 57248
+    char_end: 57258
+    line: 425
+    context: '...ant that could function as an ‹autonomous› battery operated device. The ...'
+    sibling: autonomous
+    tesseract: prosthetic
+    paddleocr: prosthetic
+    resolution: autonomous
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''prosthetic'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 12088
+    char_start: 57259
+    char_end: 57266
+    line: 425
+    context: '...uld function as an autonomous ‹battery› operated device. The intrigui...'
+    sibling: battery
+    tesseract: to
+    paddleocr: to
+    resolution: battery
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''to'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 12089
+    char_start: 57267
+    char_end: 57275
+    line: 425
+    context: '...tion as an autonomous battery ‹operated› device. The intriguing part o...'
+    sibling: operated
+    tesseract: assist
+    paddleocr: assist
+    resolution: operated
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''assist'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 12090
+    char_start: 57276
+    char_end: 57282
+    line: 425
+    context: '...n autonomous battery operated ‹device›. The intriguing part of the F...'
+    sibling: device
+    tesseract: upper
+    paddleocr: upper
+    resolution: device
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''upper'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q26b
+  kind: quote
+  located: true
+  char_start: 57596
+  char_end: 57732
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q27
+  kind: quote
+  located: true
+  char_start: 61376
+  char_end: 61743
+  tokens: 54
+  confirmed: 54
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q28a
+  kind: quote
+  located: true
+  char_start: 67405
+  char_end: 67573
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q28b
+  kind: quote
+  located: true
+  char_start: 67872
+  char_end: 68007
+  tokens: 19
+  confirmed: 19
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q29
+  kind: quote
+  located: true
+  char_start: 70635
+  char_end: 71029
+  tokens: 62
+  confirmed: 62
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q30
+  kind: quote
+  located: true
+  char_start: 71896
+  char_end: 72058
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q31
+  kind: quote
+  located: true
+  char_start: 75940
+  char_end: 76313
+  tokens: 57
+  confirmed: 57
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q32
+  kind: quote
+  located: true
+  char_start: 79536
+  char_end: 79956
+  tokens: 66
+  confirmed: 66
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q33
+  kind: quote
+  located: true
+  char_start: 80000
+  char_end: 80373
+  tokens: 58
+  confirmed: 58
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q34
+  kind: quote
+  located: true
+  char_start: 80502
+  char_end: 80747
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q35a
+  kind: quote
+  located: true
+  char_start: 82597
+  char_end: 82907
+  tokens: 49
+  confirmed: 49
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q35b
+  kind: quote
+  located: true
+  char_start: 83633
+  char_end: 83766
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q36
+  kind: quote
+  located: true
+  char_start: 89681
+  char_end: 90189
+  tokens: 76
+  confirmed: 76
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q37
+  kind: quote
+  located: true
+  char_start: 91451
+  char_end: 91824
+  tokens: 62
+  confirmed: 61
+  contested:
+  - token_index: 18216
+    char_start: 91664
+    char_end: 91666
+    line: 601
+    context: '...cochlear is a realistic guide ‹to› innovation, the proximal elec...'
+    sibling: to
+    tesseract: of
+    paddleocr: of
+    resolution: to
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''of'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: q38
+  kind: quote
+  located: true
+  char_start: 91826
+  char_end: 91965
+  tokens: 22
+  confirmed: 22
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q39
+  kind: quote
+  located: true
+  char_start: 95416
+  char_end: 95878
+  tokens: 71
+  confirmed: 71
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q40a
+  kind: quote
+  located: true
+  char_start: 96145
+  char_end: 96296
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q40b
+  kind: quote
+  located: true
+  char_start: 96410
+  char_end: 96681
+  tokens: 40
+  confirmed: 40
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: q41
+  kind: quote
+  located: true
+  char_start: 96978
+  char_end: 97378
+  tokens: 63
+  confirmed: 62
+  contested:
+  - token_index: 19152
+    char_start: 97237
+    char_end: 97241
+    line: 645
+    context: '...ation. Peripheral connections ‹show› some theoretical promise, but...'
+    sibling: show
+    tesseract: have
+    paddleocr: have
+    resolution: show
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''have'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw1
+  kind: cited_work
+  located: true
+  char_start: 98180
+  char_end: 98264
+  tokens: 15
+  confirmed: 13
+  contested:
+  - token_index: 19312
+    char_start: 98203
+    char_end: 98210
+    line: 650
+    context: '...rol.   ¹ Alberts B. Molecular ‹biology› of the cell. 4th ed. New York...'
+    sibling: biology
+    tesseract: blology
+    paddleocr: blology
+    resolution: biology
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''blology'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 19324
+    char_start: 98250
+    char_end: 98257
+    line: 650
+    context: '...ll. 4th ed. New York: Garland ‹Science›; 2002. ² Polich J. Updating P...'
+    sibling: Science
+    tesseract: Sclence
+    paddleocr: Sclence
+    resolution: Science
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Sclence'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw2
+  kind: cited_work
+  located: true
+  char_start: 98265
+  char_end: 98373
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw3
+  kind: cited_work
+  located: true
+  char_start: 98374
+  char_end: 98526
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw4
+  kind: cited_work
+  located: true
+  char_start: 98527
+  char_end: 98656
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw5
+  kind: cited_work
+  located: true
+  char_start: 98657
+  char_end: 98805
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw6
+  kind: cited_work
+  located: true
+  char_start: 98806
+  char_end: 98936
+  tokens: 17
+  confirmed: 17
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw7
+  kind: cited_work
+  located: true
+  char_start: 98937
+  char_end: 99070
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw8
+  kind: cited_work
+  located: true
+  char_start: 99071
+  char_end: 99306
+  tokens: 43
+  confirmed: 43
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw9
+  kind: cited_work
+  located: true
+  char_start: 99307
+  char_end: 99440
+  tokens: 17
+  confirmed: 17
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw10
+  kind: cited_work
+  located: true
+  char_start: 99441
+  char_end: 99681
+  tokens: 42
+  confirmed: 42
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw11
+  kind: cited_work
+  located: true
+  char_start: 99682
+  char_end: 99785
+  tokens: 17
+  confirmed: 17
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw12
+  kind: cited_work
+  located: true
+  char_start: 99786
+  char_end: 99928
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw13
+  kind: cited_work
+  located: true
+  char_start: 99929
+  char_end: 100037
+  tokens: 20
+  confirmed: 20
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw14
+  kind: cited_work
+  located: true
+  char_start: 100038
+  char_end: 100216
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw15
+  kind: cited_work
+  located: true
+  char_start: 100217
+  char_end: 100385
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw16
+  kind: cited_work
+  located: true
+  char_start: 100499
+  char_end: 100646
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw17
+  kind: cited_work
+  located: true
+  char_start: 100647
+  char_end: 100891
+  tokens: 43
+  confirmed: 43
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw18
+  kind: cited_work
+  located: true
+  char_start: 100892
+  char_end: 101012
+  tokens: 19
+  confirmed: 19
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw19
+  kind: cited_work
+  located: true
+  char_start: 101013
+  char_end: 101120
+  tokens: 20
+  confirmed: 19
+  contested:
+  - token_index: 19968
+    char_start: 101045
+    char_end: 101052
+    line: 675
+    context: '... Davis P. Effects of acoustic ‹stimuli› on the waking human brain. Jo...'
+    sibling: stimuli
+    tesseract: stimull
+    paddleocr: stimull
+    resolution: stimuli
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''stimull'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw20
+  kind: cited_work
+  located: true
+  char_start: 101121
+  char_end: 101333
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw21
+  kind: cited_work
+  located: true
+  char_start: 101334
+  char_end: 101486
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw22
+  kind: cited_work
+  located: true
+  char_start: 101487
+  char_end: 101711
+  tokens: 39
+  confirmed: 28
+  contested:
+  - token_index: 20076
+    char_start: 101490
+    char_end: 101497
+    line: 678
+    context: '...ll 2001 May;127(3):358-75. ²² ‹Iversen› I, Ghanayim N, Kubler A, Neum...'
+    sibling: Iversen
+    tesseract: Bai
+    paddleocr: Bai
+    resolution: Iversen
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Bai'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 20077
+    char_start: 101498
+    char_end: 101499
+    line: 678
+    context: '...May;127(3):358-75. ²² Iversen ‹I›, Ghanayim N, Kubler A, Neuman...'
+    sibling: I
+    tesseract: O
+    paddleocr: O
+    resolution: I
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''O'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 20079
+    char_start: 101501
+    char_end: 101509
+    line: 678
+    context: '...;127(3):358-75. ²² Iversen I, ‹Ghanayim› N, Kubler A, Neumann N, Birba...'
+    sibling: Ghanayim
+    tesseract: Lin
+    paddleocr: Lin
+    resolution: Ghanayim
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Lin'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 20082
+    char_start: 101513
+    char_end: 101519
+    line: 678
+    context: '...75. ²² Iversen I, Ghanayim N, ‹Kubler› A, Neumann N, Birbaumer N, Ka...'
+    sibling: Kubler
+    tesseract: Hallett
+    paddleocr: Hallett
+    resolution: Kubler
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Hallett'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 20083
+    char_start: 101520
+    char_end: 101521
+    line: 678
+    context: '...Iversen I, Ghanayim N, Kubler ‹A›, Neumann N, Birbaumer N, Kais...'
+    sibling: A
+    tesseract: M
+    paddleocr: M
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''M'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+  - token_index: 20085
+    char_start: 101523
+    char_end: 101530
+    line: 678
+    context: '...rsen I, Ghanayim N, Kubler A, ‹Neumann› N, Birbaumer N, Kaiser J. A h...'
+    sibling: Neumann
+    tesseract: null
+    paddleocr: null
+    resolution: Neumann
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20086
+    char_start: 101531
+    char_end: 101532
+    line: 678
+    context: '...Ghanayim N, Kubler A, Neumann ‹N›, Birbaumer N, Kaiser J. A hig...'
+    sibling: N
+    tesseract: null
+    paddleocr: null
+    resolution: N
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20088
+    char_start: 101534
+    char_end: 101543
+    line: 678
+    context: '...nayim N, Kubler A, Neumann N, ‹Birbaumer› N, Kaiser J. A high performan...'
+    sibling: Birbaumer
+    tesseract: null
+    paddleocr: null
+    resolution: Birbaumer
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20089
+    char_start: 101544
+    char_end: 101545
+    line: 678
+    context: '...ubler A, Neumann N, Birbaumer ‹N›, Kaiser J. A high performance...'
+    sibling: N
+    tesseract: null
+    paddleocr: null
+    resolution: N
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20091
+    char_start: 101547
+    char_end: 101553
+    line: 678
+    context: '...er A, Neumann N, Birbaumer N, ‹Kaiser› J. A high performance sensori...'
+    sibling: Kaiser
+    tesseract: null
+    paddleocr: null
+    resolution: Kaiser
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 20092
+    char_start: 101554
+    char_end: 101555
+    line: 678
+    context: '...eumann N, Birbaumer N, Kaiser ‹J›. A high performance sensorimo...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw23
+  kind: cited_work
+  located: true
+  char_start: 101712
+  char_end: 101954
+  tokens: 36
+  confirmed: 35
+  contested:
+  - token_index: 20130
+    char_start: 101723
+    char_end: 101725
+    line: 679
+    context: '...08 Mar;5(1):24-35. ²³ Iversen ‹IH›, Ghanayim N, Kubler A, Neuman...'
+    sibling: IH
+    tesseract: I
+    paddleocr: I
+    resolution: IH
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''I'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw24
+  kind: cited_work
+  located: true
+  char_start: 101955
+  char_end: 102200
+  tokens: 39
+  confirmed: 39
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw25
+  kind: cited_work
+  located: true
+  char_start: 102201
+  char_end: 102419
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw26
+  kind: cited_work
+  located: true
+  char_start: 102420
+  char_end: 102616
+  tokens: 33
+  confirmed: 33
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw27
+  kind: cited_work
+  located: true
+  char_start: 102617
+  char_end: 102838
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw28
+  kind: cited_work
+  located: true
+  char_start: 102839
+  char_end: 102998
+  tokens: 28
+  confirmed: 28
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw29
+  kind: cited_work
+  located: true
+  char_start: 102999
+  char_end: 103178
+  tokens: 32
+  confirmed: 31
+  contested:
+  - token_index: 20436
+    char_start: 103051
+    char_end: 103060
+    line: 685
+    context: '...n O. Attention modulations of ‹posterior› alpha as a control signal for...'
+    sibling: posterior
+    tesseract: posterlor
+    paddleocr: posterlor
+    resolution: posterior
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''posterlor'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw30
+  kind: cited_work
+  located: true
+  char_start: 103179
+  char_end: 103339
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw31
+  kind: cited_work
+  located: true
+  char_start: 103340
+  char_end: 103473
+  tokens: 22
+  confirmed: 21
+  contested:
+  - token_index: 20538
+    char_start: 103447
+    char_end: 103459
+    line: 687
+    context: '... magnetic shield. Neurol Clin ‹Neurophysiol› 2004;2004:58. ³² Kraus RH, Jr...'
+    sibling: Neurophysiol
+    tesseract: Neurophysial
+    paddleocr: Neurophysial
+    resolution: Neurophysiol
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Neurophysial'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw32
+  kind: cited_work
+  located: true
+  char_start: 103474
+  char_end: 103638
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 20555
+    char_start: 103503
+    char_end: 103512
+    line: 688
+    context: '... ³² Kraus RH, Jr., Volegov P, ‹Matlachov› A, Espy M. Toward direct neur...'
+    sibling: Matlachov
+    tesseract: Matlachoy
+    paddleocr: null
+    resolution: Matlachov
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw33
+  kind: cited_work
+  located: true
+  char_start: 103639
+  char_end: 103830
+  tokens: 37
+  confirmed: 37
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw34
+  kind: cited_work
+  located: true
+  char_start: 103831
+  char_end: 104045
+  tokens: 38
+  confirmed: 38
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw35
+  kind: cited_work
+  located: true
+  char_start: 104046
+  char_end: 104183
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw36
+  kind: cited_work
+  located: true
+  char_start: 104184
+  char_end: 104251
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw37
+  kind: cited_work
+  located: true
+  char_start: 104252
+  char_end: 104459
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 20749
+    char_start: 104278
+    char_end: 104285
+    line: 693
+    context: '...71. ³⁷ Bailey L. New cochlear ‹implant› could improve hearing. Univer...'
+    sibling: implant
+    tesseract: Implant
+    paddleocr: Implant
+    resolution: implant
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Implant'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw38
+  kind: cited_work
+  located: true
+  char_start: 104460
+  char_end: 104708
+  tokens: 45
+  confirmed: 44
+  contested:
+  - token_index: 20800
+    char_start: 104479
+    char_end: 104481
+    line: 694
+    context: '.../r020606a. ³⁸ Cheng YC, Brown ‹NW›, Chung YC, Duerk JL, Fujita H...'
+    sibling: NW
+    tesseract: RW
+    paddleocr: null
+    resolution: NW
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw39
+  kind: cited_work
+  located: true
+  char_start: 104709
+  char_end: 104830
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw40
+  kind: cited_work
+  located: true
+  char_start: 104831
+  char_end: 104978
+  tokens: 28
+  confirmed: 27
+  contested:
+  - token_index: 20898
+    char_start: 104881
+    char_end: 104887
+    line: 696
+    context: '...F. Decoding seen and attended ‹motion› directions from activity in t...'
+    sibling: motion
+    tesseract: mation
+    paddleocr: null
+    resolution: motion
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw41
+  kind: cited_work
+  located: true
+  char_start: 104979
+  char_end: 105164
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw42
+  kind: cited_work
+  located: true
+  char_start: 105165
+  char_end: 105417
+  tokens: 44
+  confirmed: 44
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw43
+  kind: cited_work
+  located: true
+  char_start: 105418
+  char_end: 105484
+  tokens: 15
+  confirmed: 15
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw44
+  kind: cited_work
+  located: true
+  char_start: 105485
+  char_end: 105669
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw45
+  kind: cited_work
+  located: true
+  char_start: 105670
+  char_end: 105861
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw46
+  kind: cited_work
+  located: true
+  char_start: 105862
+  char_end: 105958
+  tokens: 18
+  confirmed: 18
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw47
+  kind: cited_work
+  located: true
+  char_start: 105959
+  char_end: 106145
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw48
+  kind: cited_work
+  located: true
+  char_start: 106259
+  char_end: 106484
+  tokens: 43
+  confirmed: 43
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw49
+  kind: cited_work
+  located: true
+  char_start: 106485
+  char_end: 106604
+  tokens: 23
+  confirmed: 23
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw50
+  kind: cited_work
+  located: true
+  char_start: 106605
+  char_end: 106875
+  tokens: 39
+  confirmed: 39
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw51
+  kind: cited_work
+  located: true
+  char_start: 106876
+  char_end: 107107
+  tokens: 38
+  confirmed: 37
+  contested:
+  - token_index: 21408
+    char_start: 107071
+    char_end: 107072
+    line: 714
+    context: '...acortical microwire implants. ‹J› Neural Eng 2009 Apr 15;6(3):3...'
+    sibling: J
+    tesseract: ']'
+    paddleocr: ']'
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read '']'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw52
+  kind: cited_work
+  located: true
+  char_start: 107108
+  char_end: 107322
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw53
+  kind: cited_work
+  located: true
+  char_start: 107323
+  char_end: 107513
+  tokens: 34
+  confirmed: 34
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw54
+  kind: cited_work
+  located: true
+  char_start: 107514
+  char_end: 107717
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw55
+  kind: cited_work
+  located: true
+  char_start: 107718
+  char_end: 107908
+  tokens: 35
+  confirmed: 34
+  contested:
+  - token_index: 21594
+    char_start: 107884
+    char_end: 107887
+    line: 718
+    context: '...with tetraplegia. Nature 2006 ‹Jul› 13;442(7099):164-71. ⁵⁶ Kuike...'
+    sibling: Jul
+    tesseract: Ju
+    paddleocr: 1ul
+    resolution: Jul
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw56
+  kind: cited_work
+  located: true
+  char_start: 107909
+  char_end: 108116
+  tokens: 36
+  confirmed: 36
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw57
+  kind: cited_work
+  located: true
+  char_start: 108117
+  char_end: 108234
+  tokens: 22
+  confirmed: 22
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw58
+  kind: cited_work
+  located: true
+  char_start: 108235
+  char_end: 108404
+  tokens: 32
+  confirmed: 32
+  contested: []
+- node: dird-12-bci-controlling-external-devices
+  ref: cw59
+  kind: cited_work
+  located: true
+  char_start: 108405
+  char_end: 108612
+  tokens: 41
+  confirmed: 40
+  contested:
+  - token_index: 21743
+    char_start: 108448
+    char_end: 108458
+    line: 722
+    context: '...zellas T, Huhn W, Kateriya S, ‹Adelshvili› N, Berthold P, et al. Channel...'
+    sibling: Adelshvili
+    tesseract: Adeishvili
+    paddleocr: Adeishvili
+    resolution: Adelshvili
+    resolution_method: disclosed
+    adjudicator_session: 'auto: both OCR engines read ''Adeishvili'' vs the grab — grab kept (OCR engines share glyph-confusion failures), disclosed'
+- node: dird-12-bci-controlling-external-devices
+  ref: cw60
+  kind: cited_work
+  located: true
+  char_start: 108613
+  char_end: 108799
+  tokens: 33
+  confirmed: 33
+  contested: []
