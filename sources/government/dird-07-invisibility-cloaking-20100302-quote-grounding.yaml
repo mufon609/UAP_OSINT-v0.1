@@ -1,0 +1,2055 @@
+schema: quote-grounding/v2
+source_pdf: government/dird-07-invisibility-cloaking-20100302.pdf
+sibling_txt: government/dird-07-invisibility-cloaking-20100302.txt
+sibling_sha256: 6907a9c270330ec51cac0d84c072432ea77463c3bf2e76572a464a9764def14d
+generated: '2026-06-05'
+confirming_engines:
+- name: tesseract
+  version: 5.5.0
+- name: paddleocr
+  version: 3.6.0
+grounded_spans:
+- node: dird-07-invisibility-cloaking
+  ref: q-title-classification-banner
+  kind: quote
+  located: true
+  char_start: 0
+  char_end: 51
+  tokens: 7
+  confirmed: 1
+  contested:
+  - token_index: 3
+    char_start: 14
+    char_end: 20
+    line: 1
+    context: '...UNCLASSIFIED/[‹struck› through] FOR OFFICIAL USE ONL...'
+    sibling: struck
+    tesseract: '5'
+    paddleocr: OFFIE
+    resolution: struck
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 4
+    char_start: 21
+    char_end: 28
+    line: 1
+    context: '...UNCLASSIFIED/[struck ‹through›] FOR OFFICIAL USE ONLY  Defen...'
+    sibling: through
+    tesseract: '@'
+    paddleocr: null
+    resolution: through
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 6
+    char_start: 30
+    char_end: 33
+    line: 1
+    context: '...UNCLASSIFIED/[struck through] ‹FOR› OFFICIAL USE ONLY  Defense In...'
+    sibling: FOR
+    tesseract: '-'
+    paddleocr: null
+    resolution: FOR
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 7
+    char_start: 34
+    char_end: 42
+    line: 1
+    context: '...ASSIFIED/[struck through] FOR ‹OFFICIAL› USE ONLY  Defense Intelligenc...'
+    sibling: OFFICIAL
+    tesseract: '@'
+    paddleocr: null
+    resolution: OFFICIAL
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 8
+    char_start: 43
+    char_end: 46
+    line: 1
+    context: '...[struck through] FOR OFFICIAL ‹USE› ONLY  Defense Intelligence Re...'
+    sibling: USE
+    tesseract: FEEGH
+    paddleocr: null
+    resolution: USE
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 9
+    char_start: 47
+    char_end: 51
+    line: 1
+    context: '...uck through] FOR OFFICIAL USE ‹ONLY›  Defense Intelligence Referen...'
+    sibling: ONLY
+    tesseract: '='
+    paddleocr: null
+    resolution: ONLY
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: q-title-page-id-block
+  kind: quote
+  located: true
+  char_start: 53
+  char_end: 241
+  tokens: 29
+  confirmed: 26
+  contested:
+  - token_index: 15
+    char_start: 95
+    char_end: 100
+    line: 8
+    context: '...lligence Reference Document  [‹black› redaction bar] Acquisition Th...'
+    sibling: black
+    tesseract: null
+    paddleocr: null
+    resolution: black
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 16
+    char_start: 101
+    char_end: 110
+    line: 8
+    context: '...ce Reference Document  [black ‹redaction› bar] Acquisition Threat Suppo...'
+    sibling: redaction
+    tesseract: null
+    paddleocr: null
+    resolution: redaction
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 17
+    char_start: 111
+    char_end: 114
+    line: 8
+    context: '...ce Document  [black redaction ‹bar›] Acquisition Threat Support  ...'
+    sibling: bar
+    tesseract: null
+    paddleocr: null
+    resolution: bar
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: q-prepared-by-author-redaction-block
+  kind: quote
+  located: true
+  char_start: 841
+  char_end: 920
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-copyright-warning
+  kind: quote
+  located: true
+  char_start: 943
+  char_end: 1041
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-administrative-note-aawsa
+  kind: quote
+  located: true
+  char_start: 1043
+  char_end: 1464
+  tokens: 70
+  confirmed: 69
+  contested:
+  - token_index: 231
+    char_start: 1185
+    char_end: 1193
+    line: 48
+    context: '...e Agency, [(b)(3):10 USC 424] ‹Advanced› Aerospace Weapon System Appli...'
+    sibling: Advanced
+    tesseract: null
+    paddleocr: null
+    resolution: Advanced
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: q-three-methods-of-invisibility
+  kind: quote
+  located: true
+  char_start: 6174
+  char_end: 6275
+  tokens: 12
+  confirmed: 12
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-cloaking-definition-universal-strategy
+  kind: quote
+  located: true
+  char_start: 14951
+  char_end: 15361
+  tokens: 68
+  confirmed: 67
+  contested:
+  - token_index: 4795
+    char_start: 14951
+    char_end: 14960
+    line: 292
+    context: '... OFFICIAL USE ONLY  Cloaking  ‹Cloaking⁴›, ⁵ is a universal strategy fo...'
+    sibling: Cloaking⁴
+    tesseract: Cloaking
+    paddleocr: Cloaking4
+    resolution: Cloaking⁴
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: q-transformation-optics-deforms-space
+  kind: quote
+  located: true
+  char_start: 19089
+  char_end: 19404
+  tokens: 55
+  confirmed: 55
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-two-groups-2006-science-express
+  kind: quote
+  located: true
+  char_start: 20792
+  char_end: 21006
+  tokens: 35
+  confirmed: 35
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-october-2006-first-cloak-microwave-roster
+  kind: quote
+  located: true
+  char_start: 21728
+  char_end: 22131
+  tokens: 63
+  confirmed: 63
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-microwave-prototype-split-ring-resonators
+  kind: quote
+  located: true
+  char_start: 22406
+  char_end: 22765
+  tokens: 61
+  confirmed: 60
+  contested:
+  - token_index: 6262
+    char_start: 22416
+    char_end: 22427
+    line: 419
+    context: '...ar.  Metamaterials  The first ‹prototype¹³› of a cloaking device was desi...'
+    sibling: prototype¹³
+    tesseract: prototype
+    paddleocr: prototypel3
+    resolution: prototype¹³
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: q-metamaterial-definition
+  kind: quote
+  located: true
+  char_start: 24963
+  char_end: 25102
+  tokens: 20
+  confirmed: 20
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-fundamental-problem-single-frequency
+  kind: quote
+  located: true
+  char_start: 34025
+  char_end: 34315
+  tokens: 43
+  confirmed: 43
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-speed-of-light-infinite-at-core
+  kind: quote
+  located: true
+  char_start: 35729
+  char_end: 35842
+  tokens: 20
+  confirmed: 20
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-broadband-non-euclidean-finite-distortion
+  kind: quote
+  located: true
+  char_start: 45794
+  char_end: 46229
+  tokens: 67
+  confirmed: 67
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-greatest-challenge-imagination-not-technology
+  kind: quote
+  located: true
+  char_start: 50569
+  char_end: 50687
+  tokens: 18
+  confirmed: 18
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: q-summary-perfect-cloaking-impossible
+  kind: quote
+  located: true
+  char_start: 53030
+  char_end: 53433
+  tokens: 65
+  confirmed: 65
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw1
+  kind: cited_work
+  located: true
+  char_start: 53888
+  char_end: 54014
+  tokens: 18
+  confirmed: 18
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw2
+  kind: cited_work
+  located: true
+  char_start: 54015
+  char_end: 54185
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw3
+  kind: cited_work
+  located: true
+  char_start: 54186
+  char_end: 54377
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw4
+  kind: cited_work
+  located: true
+  char_start: 54378
+  char_end: 54446
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw5
+  kind: cited_work
+  located: true
+  char_start: 54447
+  char_end: 54553
+  tokens: 16
+  confirmed: 16
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw6
+  kind: cited_work
+  located: true
+  char_start: 54554
+  char_end: 54660
+  tokens: 16
+  confirmed: 15
+  contested:
+  - token_index: 12324
+    char_start: 54611
+    char_end: 54626
+    line: 914
+    context: '... and D. R. Smith, Controlling ‹Electromagnetic› Fields, Science 312, 1780 (20...'
+    sibling: Electromagnetic
+    tesseract: Electramagnetic
+    paddleocr: null
+    resolution: Electromagnetic
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw7
+  kind: cited_work
+  located: true
+  char_start: 54661
+  char_end: 54802
+  tokens: 24
+  confirmed: 24
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw8
+  kind: cited_work
+  located: true
+  char_start: 54803
+  char_end: 54944
+  tokens: 24
+  confirmed: 1
+  contested:
+  - token_index: 12371
+    char_start: 54808
+    char_end: 54817
+    line: 917
+    context: '...r in Progress in Optics. ⁸ U. ‹Leonhardt› and T. G. Philbin, Transforma...'
+    sibling: Leonhardt
+    tesseract: null
+    paddleocr: null
+    resolution: Leonhardt
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12372
+    char_start: 54818
+    char_end: 54821
+    line: 917
+    context: '...ess in Optics. ⁸ U. Leonhardt ‹and› T. G. Philbin, Transformation...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12373
+    char_start: 54822
+    char_end: 54823
+    line: 917
+    context: '...in Optics. ⁸ U. Leonhardt and ‹T›. G. Philbin, Transformation O...'
+    sibling: T
+    tesseract: null
+    paddleocr: null
+    resolution: T
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12375
+    char_start: 54825
+    char_end: 54826
+    line: 917
+    context: '...Optics. ⁸ U. Leonhardt and T. ‹G›. Philbin, Transformation Opti...'
+    sibling: G
+    tesseract: null
+    paddleocr: null
+    resolution: G
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12377
+    char_start: 54828
+    char_end: 54835
+    line: 917
+    context: '...ics. ⁸ U. Leonhardt and T. G. ‹Philbin›, Transformation Optics and th...'
+    sibling: Philbin
+    tesseract: null
+    paddleocr: null
+    resolution: Philbin
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12379
+    char_start: 54837
+    char_end: 54851
+    line: 917
+    context: '... Leonhardt and T. G. Philbin, ‹Transformation› Optics and the Geometry of Li...'
+    sibling: Transformation
+    tesseract: null
+    paddleocr: null
+    resolution: Transformation
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12380
+    char_start: 54852
+    char_end: 54858
+    line: 917
+    context: '...T. G. Philbin, Transformation ‹Optics› and the Geometry of Light, pr...'
+    sibling: Optics
+    tesseract: null
+    paddleocr: null
+    resolution: Optics
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12381
+    char_start: 54859
+    char_end: 54862
+    line: 917
+    context: '...hilbin, Transformation Optics ‹and› the Geometry of Light, prepri...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12382
+    char_start: 54863
+    char_end: 54866
+    line: 917
+    context: '...in, Transformation Optics and ‹the› Geometry of Light, preprint a...'
+    sibling: the
+    tesseract: null
+    paddleocr: null
+    resolution: the
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12383
+    char_start: 54867
+    char_end: 54875
+    line: 917
+    context: '...Transformation Optics and the ‹Geometry› of Light, preprint arXiv:0805...'
+    sibling: Geometry
+    tesseract: null
+    paddleocr: null
+    resolution: Geometry
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12384
+    char_start: 54876
+    char_end: 54878
+    line: 917
+    context: '...ation Optics and the Geometry ‹of› Light, preprint arXiv:0805.47...'
+    sibling: of
+    tesseract: null
+    paddleocr: null
+    resolution: of
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12385
+    char_start: 54879
+    char_end: 54884
+    line: 917
+    context: '...on Optics and the Geometry of ‹Light›, preprint arXiv:0805.4778, to...'
+    sibling: Light
+    tesseract: null
+    paddleocr: null
+    resolution: Light
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12387
+    char_start: 54886
+    char_end: 54894
+    line: 917
+    context: '...cs and the Geometry of Light, ‹preprint› arXiv:0805.4778, to appear in...'
+    sibling: preprint
+    tesseract: null
+    paddleocr: null
+    resolution: preprint
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12388
+    char_start: 54895
+    char_end: 54900
+    line: 917
+    context: '...e Geometry of Light, preprint ‹arXiv›:0805.4778, to appear in Progr...'
+    sibling: arXiv
+    tesseract: null
+    paddleocr: null
+    resolution: arXiv
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12390
+    char_start: 54901
+    char_end: 54905
+    line: 917
+    context: '...etry of Light, preprint arXiv:‹0805›.4778, to appear in Progress i...'
+    sibling: 0805
+    tesseract: null
+    paddleocr: null
+    resolution: 0805
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12391
+    char_start: 54905
+    char_end: 54906
+    line: 917
+    context: '... of Light, preprint arXiv:0805‹.›4778, to appear in Progress in...'
+    sibling: .
+    tesseract: null
+    paddleocr: null
+    resolution: .
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12392
+    char_start: 54906
+    char_end: 54910
+    line: 917
+    context: '...of Light, preprint arXiv:0805.‹4778›, to appear in Progress in Opt...'
+    sibling: '4778'
+    tesseract: null
+    paddleocr: null
+    resolution: '4778'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12394
+    char_start: 54912
+    char_end: 54914
+    line: 917
+    context: '...ht, preprint arXiv:0805.4778, ‹to› appear in Progress in Optics....'
+    sibling: to
+    tesseract: null
+    paddleocr: null
+    resolution: to
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12395
+    char_start: 54915
+    char_end: 54921
+    line: 918
+    context: '... preprint arXiv:0805.4778, to ‹appear› in Progress in Optics. ⁹ U. L...'
+    sibling: appear
+    tesseract: null
+    paddleocr: null
+    resolution: appear
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12396
+    char_start: 54922
+    char_end: 54924
+    line: 918
+    context: '...nt arXiv:0805.4778, to appear ‹in› Progress in Optics. ⁹ U. Leon...'
+    sibling: in
+    tesseract: null
+    paddleocr: null
+    resolution: in
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12397
+    char_start: 54925
+    char_end: 54933
+    line: 918
+    context: '...arXiv:0805.4778, to appear in ‹Progress› in Optics. ⁹ U. Leonhardt, Op...'
+    sibling: Progress
+    tesseract: null
+    paddleocr: null
+    resolution: Progress
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12398
+    char_start: 54934
+    char_end: 54936
+    line: 918
+    context: '...5.4778, to appear in Progress ‹in› Optics. ⁹ U. Leonhardt, Optic...'
+    sibling: in
+    tesseract: null
+    paddleocr: null
+    resolution: in
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12399
+    char_start: 54937
+    char_end: 54943
+    line: 918
+    context: '...778, to appear in Progress in ‹Optics›. ⁹ U. Leonhardt, Optical Conf...'
+    sibling: Optics
+    tesseract: null
+    paddleocr: null
+    resolution: Optics
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw9
+  kind: cited_work
+  located: true
+  char_start: 54945
+  char_end: 55013
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw10
+  kind: cited_work
+  located: true
+  char_start: 55014
+  char_end: 55121
+  tokens: 16
+  confirmed: 16
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw11
+  kind: cited_work
+  located: true
+  char_start: 55122
+  char_end: 55307
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw12
+  kind: cited_work
+  located: true
+  char_start: 55308
+  char_end: 55377
+  tokens: 9
+  confirmed: 9
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw13
+  kind: cited_work
+  located: true
+  char_start: 55378
+  char_end: 55563
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw14
+  kind: cited_work
+  located: true
+  char_start: 55564
+  char_end: 55749
+  tokens: 31
+  confirmed: 31
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw15
+  kind: cited_work
+  located: true
+  char_start: 55750
+  char_end: 55935
+  tokens: 31
+  confirmed: 0
+  contested:
+  - token_index: 12637
+    char_start: 55753
+    char_end: 55754
+    line: 928
+    context: '..., Science 314, 977 (2006). ¹⁵ ‹D›. Schurig, J. J. Mock, B. J. J...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12639
+    char_start: 55756
+    char_end: 55763
+    line: 928
+    context: '...cience 314, 977 (2006). ¹⁵ D. ‹Schurig›, J. J. Mock, B. J. Justice, S...'
+    sibling: Schurig
+    tesseract: null
+    paddleocr: null
+    resolution: Schurig
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12641
+    char_start: 55765
+    char_end: 55766
+    line: 928
+    context: '...4, 977 (2006). ¹⁵ D. Schurig, ‹J›. J. Mock, B. J. Justice, S. A...'
+    sibling: J
+    tesseract: '77'
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12643
+    char_start: 55768
+    char_end: 55769
+    line: 928
+    context: '...977 (2006). ¹⁵ D. Schurig, J. ‹J›. Mock, B. J. Justice, S. A. C...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12645
+    char_start: 55771
+    char_end: 55775
+    line: 928
+    context: '... (2006). ¹⁵ D. Schurig, J. J. ‹Mock›, B. J. Justice, S. A. Cummer,...'
+    sibling: Mock
+    tesseract: null
+    paddleocr: null
+    resolution: Mock
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12647
+    char_start: 55777
+    char_end: 55778
+    line: 928
+    context: '...). ¹⁵ D. Schurig, J. J. Mock, ‹B›. J. Justice, S. A. Cummer, J....'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12649
+    char_start: 55780
+    char_end: 55781
+    line: 928
+    context: '...¹⁵ D. Schurig, J. J. Mock, B. ‹J›. Justice, S. A. Cummer, J. B....'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12651
+    char_start: 55783
+    char_end: 55790
+    line: 928
+    context: '...D. Schurig, J. J. Mock, B. J. ‹Justice›, S. A. Cummer, J. B. Pendry, ...'
+    sibling: Justice
+    tesseract: null
+    paddleocr: null
+    resolution: Justice
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12653
+    char_start: 55792
+    char_end: 55793
+    line: 928
+    context: '...g, J. J. Mock, B. J. Justice, ‹S›. A. Cummer, J. B. Pendry, A. ...'
+    sibling: S
+    tesseract: null
+    paddleocr: null
+    resolution: S
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12655
+    char_start: 55795
+    char_end: 55796
+    line: 928
+    context: '...J. J. Mock, B. J. Justice, S. ‹A›. Cummer, J. B. Pendry, A. F. ...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12657
+    char_start: 55798
+    char_end: 55804
+    line: 928
+    context: '...J. Mock, B. J. Justice, S. A. ‹Cummer›, J. B. Pendry, A. F. Starr, a...'
+    sibling: Cummer
+    tesseract: null
+    paddleocr: null
+    resolution: Cummer
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12659
+    char_start: 55806
+    char_end: 55807
+    line: 928
+    context: '... B. J. Justice, S. A. Cummer, ‹J›. B. Pendry, A. F. Starr, and ...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12661
+    char_start: 55809
+    char_end: 55810
+    line: 928
+    context: '... J. Justice, S. A. Cummer, J. ‹B›. Pendry, A. F. Starr, and D. ...'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12663
+    char_start: 55812
+    char_end: 55818
+    line: 928
+    context: '... Justice, S. A. Cummer, J. B. ‹Pendry›, A. F. Starr, and D. R. Smith...'
+    sibling: Pendry
+    tesseract: null
+    paddleocr: null
+    resolution: Pendry
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12665
+    char_start: 55820
+    char_end: 55821
+    line: 928
+    context: '..., S. A. Cummer, J. B. Pendry, ‹A›. F. Starr, and D. R. Smith, M...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12667
+    char_start: 55823
+    char_end: 55824
+    line: 928
+    context: '.... A. Cummer, J. B. Pendry, A. ‹F›. Starr, and D. R. Smith, Meta...'
+    sibling: F
+    tesseract: null
+    paddleocr: null
+    resolution: F
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12669
+    char_start: 55826
+    char_end: 55831
+    line: 928
+    context: '.... Cummer, J. B. Pendry, A. F. ‹Starr›, and D. R. Smith, Metamateria...'
+    sibling: Starr
+    tesseract: null
+    paddleocr: null
+    resolution: Starr
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12671
+    char_start: 55833
+    char_end: 55836
+    line: 928
+    context: '...r, J. B. Pendry, A. F. Starr, ‹and› D. R. Smith, Metamaterial Ele...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12672
+    char_start: 55837
+    char_end: 55838
+    line: 928
+    context: '.... B. Pendry, A. F. Starr, and ‹D›. R. Smith, Metamaterial Elect...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12674
+    char_start: 55840
+    char_end: 55841
+    line: 928
+    context: '.... Pendry, A. F. Starr, and D. ‹R›. Smith, Metamaterial Electrom...'
+    sibling: R
+    tesseract: null
+    paddleocr: null
+    resolution: R
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12676
+    char_start: 55843
+    char_end: 55848
+    line: 928
+    context: '...endry, A. F. Starr, and D. R. ‹Smith›, Metamaterial Electromagnetic...'
+    sibling: Smith
+    tesseract: null
+    paddleocr: null
+    resolution: Smith
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12678
+    char_start: 55850
+    char_end: 55862
+    line: 928
+    context: '...A. F. Starr, and D. R. Smith, ‹Metamaterial› Electromagnetic Cloak at Micr...'
+    sibling: Metamaterial
+    tesseract: null
+    paddleocr: null
+    resolution: Metamaterial
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12679
+    char_start: 55863
+    char_end: 55878
+    line: 929
+    context: '...and D. R. Smith, Metamaterial ‹Electromagnetic› Cloak at Microwave Frequencie...'
+    sibling: Electromagnetic
+    tesseract: null
+    paddleocr: null
+    resolution: Electromagnetic
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12680
+    char_start: 55879
+    char_end: 55884
+    line: 929
+    context: '... Metamaterial Electromagnetic ‹Cloak› at Microwave Frequencies, Sci...'
+    sibling: Cloak
+    tesseract: null
+    paddleocr: null
+    resolution: Cloak
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12681
+    char_start: 55885
+    char_end: 55887
+    line: 929
+    context: '...aterial Electromagnetic Cloak ‹at› Microwave Frequencies, Scienc...'
+    sibling: at
+    tesseract: null
+    paddleocr: null
+    resolution: at
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12682
+    char_start: 55888
+    char_end: 55897
+    line: 929
+    context: '...rial Electromagnetic Cloak at ‹Microwave› Frequencies, Science 314, 977...'
+    sibling: Microwave
+    tesseract: null
+    paddleocr: null
+    resolution: Microwave
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12683
+    char_start: 55898
+    char_end: 55909
+    line: 929
+    context: '...romagnetic Cloak at Microwave ‹Frequencies›, Science 314, 977 (2006). ¹⁶ ...'
+    sibling: Frequencies
+    tesseract: null
+    paddleocr: null
+    resolution: Frequencies
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12685
+    char_start: 55911
+    char_end: 55918
+    line: 929
+    context: '...oak at Microwave Frequencies, ‹Science› 314, 977 (2006). ¹⁶ D. Schuri...'
+    sibling: Science
+    tesseract: null
+    paddleocr: null
+    resolution: Science
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12686
+    char_start: 55919
+    char_end: 55922
+    line: 929
+    context: '...icrowave Frequencies, Science ‹314›, 977 (2006). ¹⁶ D. Schurig, J...'
+    sibling: '314'
+    tesseract: null
+    paddleocr: null
+    resolution: '314'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12688
+    char_start: 55924
+    char_end: 55927
+    line: 929
+    context: '...ave Frequencies, Science 314, ‹977› (2006). ¹⁶ D. Schurig, J. J. ...'
+    sibling: '977'
+    tesseract: null
+    paddleocr: null
+    resolution: '977'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12690
+    char_start: 55929
+    char_end: 55933
+    line: 929
+    context: '...requencies, Science 314, 977 (‹2006›). ¹⁶ D. Schurig, J. J. Mock, ...'
+    sibling: '2006'
+    tesseract: null
+    paddleocr: null
+    resolution: '2006'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw16
+  kind: cited_work
+  located: true
+  char_start: 55936
+  char_end: 56121
+  tokens: 31
+  confirmed: 0
+  contested:
+  - token_index: 12694
+    char_start: 55939
+    char_end: 55940
+    line: 930
+    context: '..., Science 314, 977 (2006). ¹⁶ ‹D›. Schurig, J. J. Mock, B. J. J...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12696
+    char_start: 55942
+    char_end: 55949
+    line: 930
+    context: '...cience 314, 977 (2006). ¹⁶ D. ‹Schurig›, J. J. Mock, B. J. Justice, S...'
+    sibling: Schurig
+    tesseract: null
+    paddleocr: null
+    resolution: Schurig
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12698
+    char_start: 55951
+    char_end: 55952
+    line: 930
+    context: '...4, 977 (2006). ¹⁶ D. Schurig, ‹J›. J. Mock, B. J. Justice, S. A...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12700
+    char_start: 55954
+    char_end: 55955
+    line: 930
+    context: '...977 (2006). ¹⁶ D. Schurig, J. ‹J›. Mock, B. J. Justice, S. A. C...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12702
+    char_start: 55957
+    char_end: 55961
+    line: 930
+    context: '... (2006). ¹⁶ D. Schurig, J. J. ‹Mock›, B. J. Justice, S. A. Cummer,...'
+    sibling: Mock
+    tesseract: null
+    paddleocr: null
+    resolution: Mock
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12704
+    char_start: 55963
+    char_end: 55964
+    line: 930
+    context: '...). ¹⁶ D. Schurig, J. J. Mock, ‹B›. J. Justice, S. A. Cummer, J....'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12706
+    char_start: 55966
+    char_end: 55967
+    line: 930
+    context: '...¹⁶ D. Schurig, J. J. Mock, B. ‹J›. Justice, S. A. Cummer, J. B....'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12708
+    char_start: 55969
+    char_end: 55976
+    line: 930
+    context: '...D. Schurig, J. J. Mock, B. J. ‹Justice›, S. A. Cummer, J. B. Pendry, ...'
+    sibling: Justice
+    tesseract: null
+    paddleocr: null
+    resolution: Justice
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12710
+    char_start: 55978
+    char_end: 55979
+    line: 930
+    context: '...g, J. J. Mock, B. J. Justice, ‹S›. A. Cummer, J. B. Pendry, A. ...'
+    sibling: S
+    tesseract: null
+    paddleocr: null
+    resolution: S
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12712
+    char_start: 55981
+    char_end: 55982
+    line: 930
+    context: '...J. J. Mock, B. J. Justice, S. ‹A›. Cummer, J. B. Pendry, A. F. ...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12714
+    char_start: 55984
+    char_end: 55990
+    line: 930
+    context: '...J. Mock, B. J. Justice, S. A. ‹Cummer›, J. B. Pendry, A. F. Starr, a...'
+    sibling: Cummer
+    tesseract: null
+    paddleocr: null
+    resolution: Cummer
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12716
+    char_start: 55992
+    char_end: 55993
+    line: 930
+    context: '... B. J. Justice, S. A. Cummer, ‹J›. B. Pendry, A. F. Starr, and ...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12718
+    char_start: 55995
+    char_end: 55996
+    line: 930
+    context: '... J. Justice, S. A. Cummer, J. ‹B›. Pendry, A. F. Starr, and D. ...'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12720
+    char_start: 55998
+    char_end: 56004
+    line: 930
+    context: '... Justice, S. A. Cummer, J. B. ‹Pendry›, A. F. Starr, and D. R. Smith...'
+    sibling: Pendry
+    tesseract: null
+    paddleocr: null
+    resolution: Pendry
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12722
+    char_start: 56006
+    char_end: 56007
+    line: 930
+    context: '..., S. A. Cummer, J. B. Pendry, ‹A›. F. Starr, and D. R. Smith, M...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12724
+    char_start: 56009
+    char_end: 56010
+    line: 930
+    context: '.... A. Cummer, J. B. Pendry, A. ‹F›. Starr, and D. R. Smith, Meta...'
+    sibling: F
+    tesseract: null
+    paddleocr: null
+    resolution: F
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12726
+    char_start: 56012
+    char_end: 56017
+    line: 930
+    context: '.... Cummer, J. B. Pendry, A. F. ‹Starr›, and D. R. Smith, Metamateria...'
+    sibling: Starr
+    tesseract: null
+    paddleocr: null
+    resolution: Starr
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12728
+    char_start: 56019
+    char_end: 56022
+    line: 930
+    context: '...r, J. B. Pendry, A. F. Starr, ‹and› D. R. Smith, Metamaterial Ele...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12729
+    char_start: 56023
+    char_end: 56024
+    line: 930
+    context: '.... B. Pendry, A. F. Starr, and ‹D›. R. Smith, Metamaterial Elect...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12731
+    char_start: 56026
+    char_end: 56027
+    line: 930
+    context: '.... Pendry, A. F. Starr, and D. ‹R›. Smith, Metamaterial Electrom...'
+    sibling: R
+    tesseract: null
+    paddleocr: null
+    resolution: R
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12733
+    char_start: 56029
+    char_end: 56034
+    line: 930
+    context: '...endry, A. F. Starr, and D. R. ‹Smith›, Metamaterial Electromagnetic...'
+    sibling: Smith
+    tesseract: null
+    paddleocr: null
+    resolution: Smith
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12735
+    char_start: 56036
+    char_end: 56048
+    line: 930
+    context: '...A. F. Starr, and D. R. Smith, ‹Metamaterial› Electromagnetic Cloak at Micr...'
+    sibling: Metamaterial
+    tesseract: null
+    paddleocr: null
+    resolution: Metamaterial
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12736
+    char_start: 56049
+    char_end: 56064
+    line: 931
+    context: '...and D. R. Smith, Metamaterial ‹Electromagnetic› Cloak at Microwave Frequencie...'
+    sibling: Electromagnetic
+    tesseract: null
+    paddleocr: null
+    resolution: Electromagnetic
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12737
+    char_start: 56065
+    char_end: 56070
+    line: 931
+    context: '... Metamaterial Electromagnetic ‹Cloak› at Microwave Frequencies, Sci...'
+    sibling: Cloak
+    tesseract: null
+    paddleocr: null
+    resolution: Cloak
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12738
+    char_start: 56071
+    char_end: 56073
+    line: 931
+    context: '...aterial Electromagnetic Cloak ‹at› Microwave Frequencies, Scienc...'
+    sibling: at
+    tesseract: null
+    paddleocr: null
+    resolution: at
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12739
+    char_start: 56074
+    char_end: 56083
+    line: 931
+    context: '...rial Electromagnetic Cloak at ‹Microwave› Frequencies, Science 314, 977...'
+    sibling: Microwave
+    tesseract: null
+    paddleocr: null
+    resolution: Microwave
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12740
+    char_start: 56084
+    char_end: 56095
+    line: 931
+    context: '...romagnetic Cloak at Microwave ‹Frequencies›, Science 314, 977 (2006). ¹⁷ ...'
+    sibling: Frequencies
+    tesseract: null
+    paddleocr: null
+    resolution: Frequencies
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12742
+    char_start: 56097
+    char_end: 56104
+    line: 931
+    context: '...oak at Microwave Frequencies, ‹Science› 314, 977 (2006). ¹⁷ F. E. Wag...'
+    sibling: Science
+    tesseract: null
+    paddleocr: null
+    resolution: Science
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12743
+    char_start: 56105
+    char_end: 56108
+    line: 931
+    context: '...icrowave Frequencies, Science ‹314›, 977 (2006). ¹⁷ F. E. Wagner,...'
+    sibling: '314'
+    tesseract: null
+    paddleocr: null
+    resolution: '314'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12745
+    char_start: 56110
+    char_end: 56113
+    line: 931
+    context: '...ave Frequencies, Science 314, ‹977› (2006). ¹⁷ F. E. Wagner, S. H...'
+    sibling: '977'
+    tesseract: null
+    paddleocr: null
+    resolution: '977'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12747
+    char_start: 56115
+    char_end: 56119
+    line: 931
+    context: '...requencies, Science 314, 977 (‹2006›). ¹⁷ F. E. Wagner, S. Haslbec...'
+    sibling: '2006'
+    tesseract: null
+    paddleocr: null
+    resolution: '2006'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw17
+  kind: cited_work
+  located: true
+  char_start: 56122
+  char_end: 56276
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw18
+  kind: cited_work
+  located: true
+  char_start: 56277
+  char_end: 56462
+  tokens: 31
+  confirmed: 9
+  contested:
+  - token_index: 12798
+    char_start: 56280
+    char_end: 56281
+    line: 934
+    context: '...s, Nature 407, 691 (2000). ¹⁸ ‹D›. Schurig, J. J. Mock, B. J. J...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12800
+    char_start: 56283
+    char_end: 56290
+    line: 934
+    context: '...Nature 407, 691 (2000). ¹⁸ D. ‹Schurig›, J. J. Mock, B. J. Justice, S...'
+    sibling: Schurig
+    tesseract: null
+    paddleocr: null
+    resolution: Schurig
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12802
+    char_start: 56292
+    char_end: 56293
+    line: 934
+    context: '...7, 691 (2000). ¹⁸ D. Schurig, ‹J›. J. Mock, B. J. Justice, S. A...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12804
+    char_start: 56295
+    char_end: 56296
+    line: 934
+    context: '...691 (2000). ¹⁸ D. Schurig, J. ‹J›. Mock, B. J. Justice, S. A. C...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12806
+    char_start: 56298
+    char_end: 56302
+    line: 934
+    context: '... (2000). ¹⁸ D. Schurig, J. J. ‹Mock›, B. J. Justice, S. A. Cummer,...'
+    sibling: Mock
+    tesseract: null
+    paddleocr: null
+    resolution: Mock
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12808
+    char_start: 56304
+    char_end: 56305
+    line: 934
+    context: '...). ¹⁸ D. Schurig, J. J. Mock, ‹B›. J. Justice, S. A. Cummer, J....'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12810
+    char_start: 56307
+    char_end: 56308
+    line: 934
+    context: '...¹⁸ D. Schurig, J. J. Mock, B. ‹J›. Justice, S. A. Cummer, J. B....'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12812
+    char_start: 56310
+    char_end: 56317
+    line: 934
+    context: '...D. Schurig, J. J. Mock, B. J. ‹Justice›, S. A. Cummer, J. B. Pendry, ...'
+    sibling: Justice
+    tesseract: null
+    paddleocr: null
+    resolution: Justice
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12814
+    char_start: 56319
+    char_end: 56320
+    line: 934
+    context: '...g, J. J. Mock, B. J. Justice, ‹S›. A. Cummer, J. B. Pendry, A. ...'
+    sibling: S
+    tesseract: null
+    paddleocr: null
+    resolution: S
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12816
+    char_start: 56322
+    char_end: 56323
+    line: 934
+    context: '...J. J. Mock, B. J. Justice, S. ‹A›. Cummer, J. B. Pendry, A. F. ...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12818
+    char_start: 56325
+    char_end: 56331
+    line: 934
+    context: '...J. Mock, B. J. Justice, S. A. ‹Cummer›, J. B. Pendry, A. F. Starr, a...'
+    sibling: Cummer
+    tesseract: null
+    paddleocr: null
+    resolution: Cummer
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12820
+    char_start: 56333
+    char_end: 56334
+    line: 934
+    context: '... B. J. Justice, S. A. Cummer, ‹J›. B. Pendry, A. F. Starr, and ...'
+    sibling: J
+    tesseract: null
+    paddleocr: null
+    resolution: J
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12822
+    char_start: 56336
+    char_end: 56337
+    line: 934
+    context: '... J. Justice, S. A. Cummer, J. ‹B›. Pendry, A. F. Starr, and D. ...'
+    sibling: B
+    tesseract: null
+    paddleocr: null
+    resolution: B
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12824
+    char_start: 56339
+    char_end: 56345
+    line: 934
+    context: '... Justice, S. A. Cummer, J. B. ‹Pendry›, A. F. Starr, and D. R. Smith...'
+    sibling: Pendry
+    tesseract: null
+    paddleocr: null
+    resolution: Pendry
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12826
+    char_start: 56347
+    char_end: 56348
+    line: 934
+    context: '..., S. A. Cummer, J. B. Pendry, ‹A›. F. Starr, and D. R. Smith, M...'
+    sibling: A
+    tesseract: null
+    paddleocr: null
+    resolution: A
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12828
+    char_start: 56350
+    char_end: 56351
+    line: 934
+    context: '.... A. Cummer, J. B. Pendry, A. ‹F›. Starr, and D. R. Smith, Meta...'
+    sibling: F
+    tesseract: null
+    paddleocr: null
+    resolution: F
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12830
+    char_start: 56353
+    char_end: 56358
+    line: 934
+    context: '.... Cummer, J. B. Pendry, A. F. ‹Starr›, and D. R. Smith, Metamateria...'
+    sibling: Starr
+    tesseract: null
+    paddleocr: null
+    resolution: Starr
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12832
+    char_start: 56360
+    char_end: 56363
+    line: 934
+    context: '...r, J. B. Pendry, A. F. Starr, ‹and› D. R. Smith, Metamaterial Ele...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12833
+    char_start: 56364
+    char_end: 56365
+    line: 934
+    context: '.... B. Pendry, A. F. Starr, and ‹D›. R. Smith, Metamaterial Elect...'
+    sibling: D
+    tesseract: null
+    paddleocr: null
+    resolution: D
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12835
+    char_start: 56367
+    char_end: 56368
+    line: 934
+    context: '.... Pendry, A. F. Starr, and D. ‹R›. Smith, Metamaterial Electrom...'
+    sibling: R
+    tesseract: null
+    paddleocr: null
+    resolution: R
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12837
+    char_start: 56370
+    char_end: 56375
+    line: 934
+    context: '...endry, A. F. Starr, and D. R. ‹Smith›, Metamaterial Electromagnetic...'
+    sibling: Smith
+    tesseract: null
+    paddleocr: null
+    resolution: Smith
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 12839
+    char_start: 56377
+    char_end: 56389
+    line: 934
+    context: '...A. F. Starr, and D. R. Smith, ‹Metamaterial› Electromagnetic Cloak at Micr...'
+    sibling: Metamaterial
+    tesseract: null
+    paddleocr: null
+    resolution: Metamaterial
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw19
+  kind: cited_work
+  located: true
+  char_start: 56463
+  char_end: 56594
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw20
+  kind: cited_work
+  located: true
+  char_start: 56595
+  char_end: 56726
+  tokens: 21
+  confirmed: 21
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw21
+  kind: cited_work
+  located: true
+  char_start: 56727
+  char_end: 56903
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw22
+  kind: cited_work
+  located: true
+  char_start: 56904
+  char_end: 57080
+  tokens: 26
+  confirmed: 26
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw23
+  kind: cited_work
+  located: true
+  char_start: 57081
+  char_end: 57238
+  tokens: 27
+  confirmed: 27
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw24
+  kind: cited_work
+  located: true
+  char_start: 57239
+  char_end: 57428
+  tokens: 30
+  confirmed: 28
+  contested:
+  - token_index: 13099
+    char_start: 57338
+    char_end: 57349
+    line: 946
+    context: '.... Bartal, and X. Zhang, Three-‹dimensional› optical metamaterial with a n...'
+    sibling: dimensional
+    tesseract: null
+    paddleocr: dimenslonal
+    resolution: dimensional
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13113
+    char_start: 57422
+    char_end: 57426
+    line: 947
+    context: '...ctive index, Nature 455, 376 (‹2008›). ²⁵ U. Leonhardt and T. G. P...'
+    sibling: '2008'
+    tesseract: null
+    paddleocr: 2o08
+    resolution: '2008'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw25
+  kind: cited_work
+  located: true
+  char_start: 57429
+  char_end: 57547
+  tokens: 18
+  confirmed: 18
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw26
+  kind: cited_work
+  located: true
+  char_start: 57548
+  char_end: 57725
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 13146
+    char_start: 57552
+    char_end: 57554
+    line: 949
+    context: '...of Physics 8, 247 (2006). ²⁶ [‹11›]   J. Yao, Z. Liu, Y. Liu, Y....'
+    sibling: '11'
+    tesseract: null
+    paddleocr: '1'
+    resolution: '11'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw27
+  kind: cited_work
+  located: true
+  char_start: 57836
+  char_end: 58025
+  tokens: 30
+  confirmed: 30
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw28
+  kind: cited_work
+  located: true
+  char_start: 58026
+  char_end: 58144
+  tokens: 18
+  confirmed: 18
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw29
+  kind: cited_work
+  located: true
+  char_start: 58145
+  char_end: 58247
+  tokens: 15
+  confirmed: 15
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw30
+  kind: cited_work
+  located: true
+  char_start: 58248
+  char_end: 58350
+  tokens: 15
+  confirmed: 0
+  contested:
+  - token_index: 13328
+    char_start: 58251
+    char_end: 58252
+    line: 961
+    context: '..., Science 323, 110 (2009). ³⁰ ‹U›. Leonhardt and T. Tyc, Broadb...'
+    sibling: U
+    tesseract: null
+    paddleocr: null
+    resolution: U
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13330
+    char_start: 58254
+    char_end: 58263
+    line: 961
+    context: '...cience 323, 110 (2009). ³⁰ U. ‹Leonhardt› and T. Tyc, Broadband Invisib...'
+    sibling: Leonhardt
+    tesseract: null
+    paddleocr: null
+    resolution: Leonhardt
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13331
+    char_start: 58264
+    char_end: 58267
+    line: 961
+    context: '..., 110 (2009). ³⁰ U. Leonhardt ‹and› T. Tyc, Broadband Invisibilit...'
+    sibling: and
+    tesseract: null
+    paddleocr: null
+    resolution: and
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13332
+    char_start: 58268
+    char_end: 58269
+    line: 961
+    context: '...0 (2009). ³⁰ U. Leonhardt and ‹T›. Tyc, Broadband Invisibility ...'
+    sibling: T
+    tesseract: null
+    paddleocr: null
+    resolution: T
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13334
+    char_start: 58271
+    char_end: 58274
+    line: 961
+    context: '...2009). ³⁰ U. Leonhardt and T. ‹Tyc›, Broadband Invisibility by No...'
+    sibling: Tyc
+    tesseract: null
+    paddleocr: null
+    resolution: Tyc
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13336
+    char_start: 58276
+    char_end: 58285
+    line: 961
+    context: '.... ³⁰ U. Leonhardt and T. Tyc, ‹Broadband› Invisibility by Non-Euclidean...'
+    sibling: Broadband
+    tesseract: null
+    paddleocr: null
+    resolution: Broadband
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13337
+    char_start: 58286
+    char_end: 58298
+    line: 961
+    context: '...onhardt and T. Tyc, Broadband ‹Invisibility› by Non-Euclidean Cloaking, Sc...'
+    sibling: Invisibility
+    tesseract: null
+    paddleocr: null
+    resolution: Invisibility
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13338
+    char_start: 58299
+    char_end: 58301
+    line: 961
+    context: '.... Tyc, Broadband Invisibility ‹by› Non-Euclidean Cloaking, Scien...'
+    sibling: by
+    tesseract: null
+    paddleocr: null
+    resolution: by
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13339
+    char_start: 58302
+    char_end: 58305
+    line: 961
+    context: '...yc, Broadband Invisibility by ‹Non›-Euclidean Cloaking, Science 3...'
+    sibling: Non
+    tesseract: null
+    paddleocr: null
+    resolution: Non
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13341
+    char_start: 58306
+    char_end: 58315
+    line: 961
+    context: '...Broadband Invisibility by Non-‹Euclidean› Cloaking, Science 323, 110 (2...'
+    sibling: Euclidean
+    tesseract: null
+    paddleocr: null
+    resolution: Euclidean
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13342
+    char_start: 58316
+    char_end: 58324
+    line: 961
+    context: '...Invisibility by Non-Euclidean ‹Cloaking›, Science 323, 110 (2009). ³¹ ...'
+    sibling: Cloaking
+    tesseract: null
+    paddleocr: null
+    resolution: Cloaking
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13344
+    char_start: 58326
+    char_end: 58333
+    line: 961
+    context: '...ty by Non-Euclidean Cloaking, ‹Science› 323, 110 (2009). ³¹ H. Chen a...'
+    sibling: Science
+    tesseract: null
+    paddleocr: null
+    resolution: Science
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13345
+    char_start: 58334
+    char_end: 58337
+    line: 961
+    context: '...n-Euclidean Cloaking, Science ‹323›, 110 (2009). ³¹ H. Chen and C...'
+    sibling: '323'
+    tesseract: null
+    paddleocr: null
+    resolution: '323'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13347
+    char_start: 58339
+    char_end: 58342
+    line: 961
+    context: '...lidean Cloaking, Science 323, ‹110› (2009). ³¹ H. Chen and C. T. ...'
+    sibling: '110'
+    tesseract: null
+    paddleocr: null
+    resolution: '110'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+  - token_index: 13349
+    char_start: 58344
+    char_end: 58348
+    line: 961
+    context: '...n Cloaking, Science 323, 110 (‹2009›). ³¹ H. Chen and C. T. Chan, ...'
+    sibling: '2009'
+    tesseract: null
+    paddleocr: null
+    resolution: '2009'
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw31
+  kind: cited_work
+  located: true
+  char_start: 58351
+  char_end: 58513
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw32
+  kind: cited_work
+  located: true
+  char_start: 58514
+  char_end: 58616
+  tokens: 15
+  confirmed: 15
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw33
+  kind: cited_work
+  located: true
+  char_start: 58617
+  char_end: 58708
+  tokens: 13
+  confirmed: 13
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw34
+  kind: cited_work
+  located: true
+  char_start: 58709
+  char_end: 58811
+  tokens: 15
+  confirmed: 15
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw35
+  kind: cited_work
+  located: true
+  char_start: 58812
+  char_end: 58914
+  tokens: 15
+  confirmed: 15
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw36
+  kind: cited_work
+  located: true
+  char_start: 58915
+  char_end: 59100
+  tokens: 31
+  confirmed: 30
+  contested:
+  - token_index: 13533
+    char_start: 59076
+    char_end: 59083
+    line: 969
+    context: '...oak at Microwave Frequencies, ‹Science› 314, 977 (2006). ³⁷ R. Liu, C...'
+    sibling: Science
+    tesseract: null
+    paddleocr: Sclence
+    resolution: Science
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw37
+  kind: cited_work
+  located: true
+  char_start: 59101
+  char_end: 59225
+  tokens: 25
+  confirmed: 25
+  contested: []
+- node: dird-07-invisibility-cloaking
+  ref: cw38
+  kind: cited_work
+  located: true
+  char_start: 59226
+  char_end: 59350
+  tokens: 25
+  confirmed: 24
+  contested:
+  - token_index: 13606
+    char_start: 59259
+    char_end: 59260
+    line: 972
+    context: '...R. Liu, C. Ji, J. J. Mock, J. ‹Y›. Chin, T. J. Cui, and D. R. S...'
+    sibling: Y
+    tesseract: ¥
+    paddleocr: null
+    resolution: Y
+    resolution_method: disclosed
+    adjudicator_session: 'auto: OCR engines disagree with the grab — grab kept, disclosed'
+- node: dird-07-invisibility-cloaking
+  ref: cw39
+  kind: cited_work
+  located: true
+  char_start: 59351
+  char_end: 59527
+  tokens: 26
+  confirmed: 26
+  contested: []
