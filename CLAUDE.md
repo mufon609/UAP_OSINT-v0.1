@@ -95,7 +95,7 @@ artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (34)
+### Documents (35)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -119,6 +119,7 @@ artifact-level warnings stand.
 | `/documents/dird-16-quantum-entanglement-nonlocality` | primary-source-confirmed | gov-doc |
 | `/documents/dird-17-maverick-inventor` | primary-source-confirmed | gov-doc |
 | `/documents/dird-18-traversable-wormholes` | primary-source-confirmed | gov-doc |
+| `/documents/dird-19-antigravity-aerospace` | primary-source-confirmed | gov-doc |
 | `/documents/dird-24-quantum-vacuum-energy-extraction` | primary-source-confirmed | gov-doc |
 | `/documents/dird-26-field-effects-biological-tissues` | primary-source-confirmed | gov-doc |
 | `/documents/elizondo-qfr-burlison-20241219` | primary-source-confirmed | gov-doc |
