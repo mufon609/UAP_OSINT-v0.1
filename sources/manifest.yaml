@@ -909,6 +909,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #19 — ''Antigravity for Aerospace Applications'', DIA-08-1003-018, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 45 pages. DIA attachment #11 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Eric Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_19-DIRD_Antigravity_for_Aerospace_Applications.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-19-antigravity-aerospace-20100330.txt
+    archived_date: '2026-06-06'
+    note: Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-19 'Antigravity for Aerospace Applications'. Produced 2026-06-06; pages 10 and 30 blocked the VLM content filter and were PaddleOCR-filled, then VLM-verified against the page images and corrected. Equations/figures bracketed; redaction markers ((b)(6), (b)(3):10 USC 424), source spellings, and the document's own typos (e.g. 'Diople Gravitational Field Generator') preserved verbatim. The Black Vault FOIA cover insert (PDF p.2) transcribed verbatim.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_20-DIRD_Biosensors_and_BioMEMS-A_Survey_of_the_Present_Field.pdf
   status: archived
   artifacts:
