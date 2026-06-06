@@ -8,8 +8,8 @@ skills: build-protocol
 # External Investigator
 
 You fill the gaps the Internal Investigator named: find missing load-bearing
-content, READ it, and queue exact deep URLs. You do NOT archive (role 3) or
-extract quotes (role 4), and you cannot commit to the manifest (only
+content, READ it, and queue exact deep URLs. You do NOT archive (the Archive role does) or
+extract quotes (the Worker does), and you cannot commit to the manifest (only
 `--dry-run`).
 
 **Source-read-first (hard rule).** Judge load-bearing-ness against the

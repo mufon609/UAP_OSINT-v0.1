@@ -11,9 +11,102 @@ the toolkit:
   fix-the-data, branches) → preloaded into every role from
   `.claude/skills/build-protocol/` (so no role restates it).
 
-This file carries only the **rationale**. The contract statements themselves —
+This file opens with an at-a-glance **map** of the pipeline (next section), then
+the **rationale** behind it. The contract statements themselves —
 source-read-first, the orchestration branches, the handoff schema — live once in
 `.claude/skills/build-protocol/SKILL.md` and are *cited* here, not restated.
+
+---
+
+## The shape — pipeline at a glance
+
+This section is a **map, not a contract**: it carries no normative content of its
+own. Every rule lives once in the file linked beside it; if this map ever
+disagrees with a linked source, the source wins. Read it to see the whole flow
+and find where each piece is defined — then follow the link for the detail.
+
+```text
+  user ▶ /build {type}/{slug} "<scope>"
+    │
+    ▼
+  ┌───────────────────────────┐
+  │  internal-investigator    │  reuse survey, read-only
+  └─────────────┬─────────────┘  ── all_internal (gaps:[]) ▶ skip the next two
+    │                              stages, jump to scaffold (sibling gate still runs)
+    ▼
+  ┌───────────────────────────┐
+  │  external-investigator    │  confirm each new source by reading it
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐
+  │  archive                  │  the only manifest writer
+  └─────────────┬─────────────┘
+    ▼
+  ╔═══════════════════════════╗
+  ║  scaffold  (once)         ║  orchestrator step, not a role
+  ╚═════════════╤═════════════╝
+    ▼
+  ╔═══════════════════════════╗
+  ║  sibling gate  4b / 4c    ║  OCR-scan or label-less transcript?
+  ╚═════════════╤═════════════╝  ▶ /prepare-*-sibling   (runs even on all_internal)
+    ▼
+  ┌───────────────────────────┐
+  │  worker  ×N  (parallel)   │  the single verbatim boundary; emits fragments
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐  merge → organize → link → render
+  │  builder                  │  ── on fail ▶ route_failure.py ▶ re-enter owning role
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐  fresh-context cold re-read
+  │  auditor                  │  ── adjacent flagged ▶ tightening loop:
+  └─────────────┬─────────────┘     re-enter worker / builder, skip ext + archive
+    ▼
+  health: pass & no adjacents  ▶  build-state.py --update  ▶  user commits (pre-commit gate)
+```
+
+`┌─┐` solid box = an **agent role** (a subagent in `.claude/agents/`).
+`╔═╗` double box = an **orchestrator-only step** (no role; the main thread runs it).
+
+### Stages — role ≠ step number
+
+The `/build` **step** numbers and the **role** numbers (roles 1–6, as numbered in
+each agent's description) deliberately diverge: step 4 is *scaffold* (no role),
+while role 4 is the *worker*. Read this table, not the numbers, to map one to the
+other.
+
+| `/build` step | Stage | Agent role | What it owns | Detail |
+|---|---|---|---|---|
+| 1 | survey | `internal-investigator` | reuse + gaps; read-only, no web, no manifest | [`agents/internal-investigator.md`](../.claude/agents/internal-investigator.md) |
+| 2 | source | `external-investigator` | confirm new sources by reading; no manifest commit | [`agents/external-investigator.md`](../.claude/agents/external-investigator.md) |
+| 3 | archive | `archive` | the only manifest writer; download · Wayback · extract | [`agents/archive.md`](../.claude/agents/archive.md) |
+| 4 | scaffold | — *orchestrator* | `new.py` + `research-scaffold.py`, once | [`build/SKILL.md`](../.claude/skills/build/SKILL.md) step 4 |
+| 4b / 4c | sibling gate | — *orchestrator* | OCR / label-less-transcript sibling readiness | [`build/SKILL.md`](../.claude/skills/build/SKILL.md) steps 4b–4c |
+| 5 | extract | `worker` ×N | the single verbatim boundary; emits fragments | [`agents/worker.md`](../.claude/agents/worker.md) |
+| 6 | synthesize | `builder` | merge → organize → link → render; the prose-drift surface | [`agents/builder.md`](../.claude/agents/builder.md) |
+| 7 | audit | `auditor` | fresh-context cold re-read; adjacent-node propagation | [`agents/auditor.md`](../.claude/agents/auditor.md) |
+| 8 | finalize | — *orchestrator* | refresh build-state; user commits at the gate | [`build/SKILL.md`](../.claude/skills/build/SKILL.md) step 8 |
+
+### Branches — when the straight line bends
+
+| Branch | Trigger | Effect | Defined in |
+|---|---|---|---|
+| all-internal | survey sets `all_internal: true` / `gaps: []` | skip steps 2–3 (no new bytes); sibling gate + scaffold still run | [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Orchestration branches" |
+| failure routing | builder returns `result: fail` | `route_failure.py` maps check → phase → role; re-enter that role, fix the **data**, rebuild | [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Fix the data, never the node body" |
+| tightening loop | auditor flags `adjacent_needs_update[]` | re-enter worker (extract) or builder (derived field), skip external + archive, re-audit | [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Partial re-entry" |
+| `/augment` | user-triggered maintenance change | same partial-re-entry contract, entered directly at the role the change needs | [`augment` skill](../.claude/skills/augment/SKILL.md) |
+
+### Cross-cutting contracts — true at every stage
+
+Defined once, obeyed everywhere; not restated per role:
+
+- **Gates read disk, not memory** — a fresh-context subagent can't fabricate a quote → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "The non-negotiable invariant"
+- **Source-read-first** — inclusion judged on source content, hard-enforced at `extract` → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Source-read-first"
+- **Handoff = return value** — each role returns its stub; no file is written for the handoff → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Handoff stubs" · [`stub-schemas.md`](../.claude/skills/build-protocol/stub-schemas.md)
+- **Fix the data, never the node body** — the body is regenerated, never hand-edited → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Fix the data, never the node body"
+- **References run downward** — the four-tier linking contract → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Tier linking contract" · [`conventions.md`](../meta/conventions.md) "Tier model and linking contract"
+- **One new synthesis-heavy node per session** — hook-enforced on the scaffolder → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "One new synthesis-heavy node per session"
+- **Phase vocabulary** — generated from `scripts/checks/_phases.py`, not memorized → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Build phases"
 
 ---
 

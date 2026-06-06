@@ -9,8 +9,8 @@ skills: build-protocol
 
 You archive the sources the External Investigator confirmed, extract them
 for the Worker, and report the registered paths. You download the bytes (the
-archival read); you do not judge load-bearing-ness (role 2 did) or extract
-quotes (role 4).
+archival read); you do not judge load-bearing-ness (the External Investigator did) or extract
+quotes (the Worker does).
 
 Input: `queued_sources[]` from the external-investigator stub (or the
 orchestrator directly, in the tightening loop).
@@ -33,7 +33,7 @@ orchestrator directly, in the tightening loop).
    verify it.
 
 You do **not** scaffold the artifact — the orchestrator scaffolds once
-(role 1's reused sources + yours, in a single `research-scaffold --sources`
+(the Internal Investigator's reused sources + yours, in a single `research-scaffold --sources`
 call) after you finish, before the Worker runs.
 
 After: confirm manifest health with

@@ -31,10 +31,15 @@ build before doing anything.
 
 ## Sequence
 
-> The numbered **steps** below are the orchestrator's sequence; the six dispatched
-> **roles** (internal-investigator … auditor, numbered 1–6 in their agent
-> descriptions) map to steps 1–3 and 5–7 — scaffolding is step 4 / 4b, finalization
-> step 8. A cross-reference to "role N" means the role, not the step number.
+> **Numbering note.** The numbers below are **step** numbers — this file's unit of
+> reference — and each step either dispatches a role (named in its `Agent(...)`
+> call) or is an *orchestrator-only* step (scaffold · sibling gate · finalize),
+> marked as such inline. Step numbers are **not** role numbers: the six roles are
+> numbered 1–6 in their own agent descriptions, and that count diverges from the
+> steps here because the orchestrator-only steps fall between the role steps. For
+> the explicit step ↔ role mapping, see the table in
+> `../../../prompts/topology.md` "The shape". This file refers to roles by **name**,
+> never by number.
 
 1. **`Agent(internal-investigator)`** with the target. Read its stub:
    `linked_nodes`, `reusable_sources`, `gaps`, `all_internal`.
@@ -49,7 +54,7 @@ build before doing anything.
    — a bare "read it" is not accepted (build-protocol → the non-negotiable invariant).
 3. **`Agent(archive)`** with the (validated) `queued_sources[]`. Read
    `archived[]` + the scratch paths.
-4. **Scaffold once, here** — only after sourcing has settled the node's
+4. **Scaffold once, here** *(orchestrator step — not a role)* — only after sourcing has settled the node's
    classification (person **archetype** / org **kind** / document **form**)
    and the full source set. Two commands, in order:
    - `python3 scripts/build/new.py {type} --slug {slug} --{archetype|kind|form} … --name "…"`
@@ -106,8 +111,9 @@ build before doing anything.
    does not write the artifact). Collect every fragment.
 6. **`Agent(builder)`** passing **all worker fragments + the `linked_nodes` /
    topic-relevance context from step 1** (this context is REQUIRED — the
-   builder judges relevance against it, not the source alone) + role 1's reuse
-   material. The builder merges the fragments, runs the extract check, then
+   builder judges relevance against it, not the source alone) + the
+   internal-investigator's reuse material (step 1). The builder merges the
+   fragments, runs the extract check, then
    organize → link → render. Read its stub.
    - **On `result: fail`:** run
      `python3 scripts/tools/route_failure.py {failing_check_names}`, re-enter
@@ -120,8 +126,8 @@ build before doing anything.
      already-archived scratch) or the Builder (shape b — a stale derived field,
      no extraction), rebuild, and re-audit. External + Archive are skipped (no
      new URL, no new bytes).
-8. **Done** when the auditor reports `health: pass` and
-   `adjacent_needs_update: []`. A node was added/changed, so refresh the
+8. **Finalize** *(orchestrator step — not a role)* — done when the auditor reports
+   `health: pass` and `adjacent_needs_update: []`. A node was added/changed, so refresh the
    build-state block (`python3 scripts/build/build-state.py --update`) — the
    build-state gate (`--check`) is otherwise red at commit. Report the built
    node and a short summary of each role's returned stub. (Stubs are return
