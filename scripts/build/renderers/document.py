@@ -110,6 +110,15 @@ def render_document_summary(artifact):
         rows.append(("Primary Source URL", ctx["primary_source_url"]))
     if path:
         rows.append(("Local Archive", f"[sources/{path}](../sources/{path})"))
+    # Content-block provenance for a sibling-backed (ocr-scan) source: which
+    # pages, if any, the VLM page-image read was content-filter-blocked on and
+    # PaddleOCR filled. A `Content Block` row in the Document Summary table so it
+    # greps as `Content Block`; present only when the artifact's source carries
+    # it (text-native sources omit it). See meta/schema-research-artifact.yaml.
+    content_block = (sources[0].get("content_block")
+                     if sources and isinstance(sources[0], dict) else None)
+    if content_block:
+        rows.append(("Content Block", content_block))
     if not rows:
         lines.append("<!-- TODO: populate `document_intrinsic` / `context_extrinsic` / `primary_sources` in the research artifact -->")
         return "\n".join(lines) + "\n"
@@ -117,16 +126,6 @@ def render_document_summary(artifact):
     lines.append("|---|---|")
     for k, v in rows:
         lines.append(f"| {k} | {v} |")
-    # Content-block provenance for a sibling-backed (ocr-scan) source: which
-    # pages, if any, the VLM page-image read was content-filter-blocked on and
-    # PaddleOCR filled. A labeled line (not a table row) so it greps as
-    # `Content Block:`; present only when the artifact's source carries it
-    # (text-native sources omit it). See meta/schema-research-artifact.yaml.
-    content_block = (sources[0].get("content_block")
-                     if sources and isinstance(sources[0], dict) else None)
-    if content_block:
-        lines.append("")
-        lines.append(f"**Content Block:** {content_block}")
     # Stated page-citation convention note for multi-page PDF sources that
     # actually carry `p. N` location refs. `p. N` refs are physical / PDF-viewer
     # pages (the Nth page of the file), which for composite documents — a cover,

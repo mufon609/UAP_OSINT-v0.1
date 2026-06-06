@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 58 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf |
 | Local Archive | [sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-
-**Content Block:** All pages produced via Tesseract OCR — the VLM page-image read was content-blocked.
+| Content Block | All pages produced via Tesseract OCR — the VLM page-image read was content-blocked. |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

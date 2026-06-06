@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 17 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_14-DIRD_The_Role_of_Superconductors_in_Gravity_Research.pdf |
 | Local Archive | [sources/government/dird-14-superconductors-gravity-20100323.pdf](../sources/government/dird-14-superconductors-gravity-20100323.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 ---
 

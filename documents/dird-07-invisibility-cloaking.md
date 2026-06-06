@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 30 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_07-DIRD_Invisibility_Cloaking-Theory_and_Experiments.pdf |
 | Local Archive | [sources/government/dird-07-invisibility-cloaking-20100302.pdf](../sources/government/dird-07-invisibility-cloaking-20100302.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

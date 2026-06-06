@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 33 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_04_DIRD_Biomaterials.pdf |
 | Local Archive | [sources/government/dird-04-biomaterials-20100107.pdf](../sources/government/dird-04-biomaterials-20100107.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

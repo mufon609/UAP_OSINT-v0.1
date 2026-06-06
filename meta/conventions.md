@@ -274,8 +274,8 @@ reproduction. Because the sibling there *is* PaddleOCR, the normal diff is silen
 so `ocr-consensus.py run --blocked-pages N,M` instead surfaces the
 PaddleOCR-vs-Tesseract disagreements on those pages, which the agent VLM-verifies
 against the image. The blocked-page outcome is recorded in the source's
-`content_block` (renders as `**Content Block:**` on the node — `None`, or which
-pages were filled — so it is greppable repo-wide). No receipt file is written —
+`content_block` (renders as a `Content Block` row in the node's Document Summary
+table — `None`, or which pages were filled — so it is greppable repo-wide). No receipt file is written —
 the corrected sibling *is* the artifact.
 
 **The final check (at node audit).** Quote-vs-source verification is not done at
