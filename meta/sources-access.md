@@ -362,6 +362,61 @@ paste demoted to last resort).
 
 ---
 
+## govinfo (govinfo.gov / api.govinfo.gov)
+
+The GPO's official federal-document repository — committee reports
+(CRPT), the Congressional Record (CREC), bills (BILLS), public laws
+(PLAW), hearings (CHRG), and agency reports (GOVPUB). govinfo content
+is **native digital text, never OCR**, so it is a preferred clean-text
+primary-source target. Two access modes:
+
+**1. Content permalinks — no key needed.** Stable `/content/pkg/...`
+URLs serve the document bytes directly and are curl-friendly (HTTP 200,
+no 403). These are the canonical archival targets — prefer them over
+agency-site copies (e.g. media.defense.gov, which 403s) and over
+re-OCR'd third-party mirrors (e.g. the Black Vault ABBYY copy of the
+AARO HRR). Pattern:
+```
+https://www.govinfo.gov/content/pkg/{PKGID}/pdf/{PKGID}.pdf
+https://www.govinfo.gov/content/pkg/{PKGID}/html/{PKGID}.htm
+```
+
+**2. Full-text search API — needs an api.data.gov key.** The
+`api.govinfo.gov/search` endpoint full-text-searches every collection
+(not just titles), which is how you discover a document that names a
+subject on page 80 without it in the title. The key lives in the
+git-ignored `meta/API_KEYS.txt` (never commit it; see `.gitignore`).
+Select it by service-id (`govinfo`) — the file is `<service-id> <key>`
+per line, so positional `head -1` would break once a second key is added.
+```
+KEY=$(awk '$1=="govinfo"{print $2; exit}' meta/API_KEYS.txt)
+curl -s -X POST "https://api.govinfo.gov/search?api_key=$KEY" \
+  -H 'Content-Type: application/json' \
+  -d '{"query":"AATIP","pageSize":20,"offsetMark":"*","sorts":[{"field":"relevancy","sortOrder":"DESC"}]}'
+```
+- `query` is full-text; quote a phrase for exact-phrase match
+  (`"Advanced Aerospace Threat Identification Program"`). Bare short
+  tokens match loosely — a `BAASS` query is swamped by `BAAs` / the
+  surname `Baas`, so trust phrase queries over bare acronyms.
+- The `collections` endpoint (`api.govinfo.gov/collections?api_key=$KEY`)
+  is the cheapest connectivity test — a 200 with 41 collections means
+  the key is live.
+- **`DEMO_KEY` caveat:** the shared public demo key is rate-limited to a
+  few dozen requests, then locks out. Use the registered key in
+  `meta/API_KEYS.txt` for any real sweep.
+
+**AAWSAP result (this corpus).** A full-text sweep across all
+collections for the program's aliases is **exhausted**: `AATIP` → 3 hits
+(the AARO HRR `GOVPUB`, the 2024-11-13 `CHRG`, and one 1936 false
+positive); `"Advanced Aerospace Threat Identification Program"` → 1 (the
+HRR); `"Bigelow Aerospace Advanced Space Studies"` → 0; `AAWSAP` → 3
+(HRR + two hearings). No federal document names the program under any
+alias that the repo does not already hold. The clean-text congressional
+vein for AAWSAP is genuinely dry — re-run the sweep only if new
+documents are published.
+
+---
+
 ## Media.defense.gov
 
 **Problem:** Returns 403 for automated PDF downloads.

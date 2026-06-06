@@ -74,3 +74,12 @@ sources/photo-identity-log/baseline-encodings.npz
 # Local-only spot-check comparison scratch (pHash-vs-embed CSVs). Working
 # evidence; the authoritative result lives in meta/BACKLOG.md's C1 table.
 sources/photo-identity-log/.compare/
+
+# API credentials — never commit. The api.data.gov / govinfo full-text search
+# key(s) live in meta/API_KEYS.txt (one provider per block; see that file's
+# header and meta/sources-access.md "govinfo"). The key authenticates only
+# rate-limited, read-only federal-document search, but it is still a credential
+# — keep it machine-local. The `*.api-keys.txt` glob is defense-in-depth for a
+# renamed copy.
+meta/API_KEYS.txt
+*.api-keys.txt

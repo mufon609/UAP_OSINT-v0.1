@@ -3180,6 +3180,26 @@
     archived_date: '2026-04-30'
     path: news/govconinabox-sancorp-profile-20260430.html
     note: 'GovConInABox federal contractor profile for Sancorp Consulting LLC (UEI GRYKNJ8BGFC8). Fetched 2026-04-30. Address: 3235 Valley Ln, Falls Church VA 22044-1740 (Congressional District VA-08). Total Contract Value: $61.47M across 185 awards. First Award: Apr 21, 2022 (likely first 8(a) sole-source award post-program-acceleration; pre-2022 contracts including HQ003419C0159 (Sept 2019) and HQ003420C0167 (Sept 2020) predate this). Last Award: Dec 2, 2025. Top NAICS: 541611 ($30.80M / 81 awards Administrative Management), 541690 ($14.21M / 25 Other Scientific & Technical Consulting), 541715 ($8.20M / 34 R&D in Physical/Engineering/Life Sciences).'
+- url: https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/html/CHRG-119hhrg61718.htm
+  status: archived
+  artifacts:
+  - format: html
+    path: government/chrg-119hhrg61718-uap-transparency-20250909.htm
+    archived_date: '2026-06-06'
+    note: 'House Oversight & Government Reform hearing "Restoring Public Trust Through UAP Transparency and Whistleblower Protection," 2025-09-09. GPO granule CHRG-119hhrg61718, HTML rendering. extraction_type text-native (clean GPO granule HTML, no OCR; companion to the native-text PDF granule — no OCR sibling needed). Dense AAWSAP coverage (AAWSAP/BAASS/Bigelow/Lacatski/Lockheed). George Knapp testimony names Dr. James Lacatski as AAWSAP initiator and AAWSAP as "the largest acknowledged UFO program ever funded by the U.S. Government"; documents the DIA->BAASS contractor relationship (Bigelow Aerospace Advanced Space Studies) and an on-record BAASS<->Lockheed Martin material-transfer negotiation (relevant to /investigations/lockheed-martin-uap-materials and /findings/lockheed-martin-non-denial-pattern). PDF companion: govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf.'
+    extraction_type: text-native
+  archive_status: 3
+  wayback_date: '2026-06-06'
+- url: https://www.govinfo.gov/content/pkg/CHRG-119hhrg61718/pdf/CHRG-119hhrg61718.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/chrg-119hhrg61718-uap-transparency-20250909.pdf
+    archived_date: '2026-06-06'
+    note: 'House Oversight & Government Reform hearing "Restoring Public Trust Through UAP Transparency and Whistleblower Protection," 2025-09-09. GPO granule CHRG-119hhrg61718, PDF rendering. extraction_type text-native (embedded NewCenturySchlbk-Roman/Cheltenham-Bold/DeVinne Type1C subset fonts via pdffonts = native GPO typesetting, NOT OCR; no OCR sibling needed). HTML companion: govinfo.gov/content/pkg/CHRG-119hhrg61718/html/CHRG-119hhrg61718.htm. Dense AAWSAP coverage (AAWSAP/BAASS/Bigelow/Lacatski/Lockheed). George Knapp testimony names Dr. James Lacatski as AAWSAP initiator and AAWSAP as "the largest acknowledged UFO program ever funded by the U.S. Government"; the DIA->BAASS contractor relationship and an on-record BAASS<->Lockheed Martin material-transfer negotiation (relevant to /investigations/lockheed-martin-uap-materials and /findings/lockheed-martin-non-denial-pattern).'
+    extraction_type: text-native
+  archive_status: 3
+  wayback_date: '2026-06-06'
 - url: https://www.govinfo.gov/content/pkg/CRPT-116srpt233/pdf/CRPT-116srpt233.pdf
   status: archived
   archive_status: 3
@@ -3189,6 +3209,16 @@
     archived_date: '2026-04-20'
     path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
     note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
+- url: https://www.govinfo.gov/content/pkg/GOVPUB-PREX28-PURL-gpo223327/pdf/GOVPUB-PREX28-PURL-gpo223327.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aaro-historical-record-report-vol1-202402.pdf
+    archived_date: '2026-06-06'
+    note: 'AARO Historical Record Report Volume I, DOPSR-2024-0263, released ~March 2024. govinfo GPO permalink (GOVPUB-PREX28-PURL-gpo223327) as the clean archival copy; canonical DoD origin media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF (403s to curl). extraction_type native-text (embedded TrueType/Type1 subset fonts via pdffonts; clean en-dash text e.g. "(2009-2012)" — confirmed NOT OCR; no OCR sibling needed). Do NOT use the Black Vault ABBYY re-OCR mirror. Contains a dedicated "Advanced Aerospace Weapons System Application Program (AAWSAP) (2009-2012)/AATIP" section (p.22) anchoring: the FY2008+FY2010 $22M DIA appropriation at SML Harry Reid (D-NV) direction; the 2009 standup of the DIA-managed program (also known AATIP) in coordination with OUSD(I); contract awarded to a private sector organization; 2012 termination upon completion of deliverables; the 24 June 2009 Reid letter to DepSecDef William Lynn III requesting AAWSAP be made a DoD Special Access Program, declined on the recommendation of USD(I) James R. Clapper Jr.; and the KONA BLUE successor (attempt to move the effort to DHS).'
+    extraction_type: text-native
+  archive_status: 3
+  wayback_date: '2026-06-06'
 - url: https://www.govinfo.gov/content/pkg/PLAW-107publ314/pdf/PLAW-107publ314.pdf
   status: archived
   archive_status: 3
