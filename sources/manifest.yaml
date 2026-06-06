@@ -3218,6 +3218,16 @@
     archived_date: '2026-04-20'
     path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
     note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
+- url: https://www.govinfo.gov/content/pkg/GOVPUB-D101-PURL-gpo136182/pdf/GOVPUB-D101-PURL-gpo136182.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/arl-sr-0358-modern-topics-energy-power-201608.pdf
+    archived_date: '2026-06-06'
+    extraction_type: text-native
+    note: 'US Army Research Laboratory Special Report ARL-SR-0358, August 2016, ''Modern Topics in Energy and Power Technical Meeting,'' authors Tsvetanka Zheleva, Edward Shaffer, Dennis Bushnell (NASA Langley Chief Scientist), and Nino Pereira; Sensors and Electron Devices Directorate, ARL. Approved for public release; distribution unlimited. Native-text PDF (74 pages, ~140,900 chars in text layer; pdffonts shows embedded Calibri/TimesNewRoman TrueType subsets, not a scan — no OCR sibling needed). govinfo GPO permalink (packageId GOVPUB-D101-PURL-gpo136182; details page https://www.govinfo.gov/app/details/GOVPUB-D101-PURL-gpo136182) is the clean archival copy. AAWSAP relevance: documents two AAWSAP principals in a public DoD record. (1) James Lacatski appears in the attendee roster (#26: DOD, james.lacatski@dia.mil, 202-231-4117) and on the distribution list (''(PDF) J LACATSKI'') — primary-source attestation that the AAWSAP program manager was still at DIA in August 2016, ~4 years after AAWSAP''s 2012 termination. (2) Dr. Eric W. Davis (Institute for Advanced Studies at Austin; AAWSAP DIRD author) organized and chaired the Day-Three session ''State-of-the-Art Applications of the Quantum Vacuum Energy'' and gave the lead talk ''Empty Space: the Multilayered, Multicolored Superconductor'' — same subject domain as /documents/dird-24-quantum-vacuum-energy-extraction. The report does NOT name AAWSAP/AATIP — biographical/corroborating, supporting the /people/james-lacatski affiliation timeline (DIA, 2016) and a prospective /people/eric-davis node, not a program-charter document.'
+  archive_status: 3
+  wayback_date: '2026-01-22'
 - url: https://www.govinfo.gov/content/pkg/GOVPUB-PREX28-PURL-gpo223327/pdf/GOVPUB-PREX28-PURL-gpo223327.pdf
   status: archived
   artifacts:

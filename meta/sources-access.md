@@ -405,15 +405,17 @@ curl -s -X POST "https://api.govinfo.gov/search?api_key=$KEY" \
   few dozen requests, then locks out. Use the registered key in
   `meta/API_KEYS.txt` for any real sweep.
 
-**AAWSAP result (this corpus).** A full-text sweep across all
-collections for the program's aliases is **exhausted**: `AATIP` → 3 hits
-(the AARO HRR `GOVPUB`, the 2024-11-13 `CHRG`, and one 1936 false
-positive); `"Advanced Aerospace Threat Identification Program"` → 1 (the
-HRR); `"Bigelow Aerospace Advanced Space Studies"` → 0; `AAWSAP` → 3
-(HRR + two hearings). No federal document names the program under any
-alias that the repo does not already hold. The clean-text congressional
-vein for AAWSAP is genuinely dry — re-run the sweep only if new
-documents are published.
+**Sibling api.data.gov corpora.** The same key authenticates other
+api.data.gov-gated APIs, but their search capabilities differ:
+- **Congress.gov** (`api.congress.gov/v3`) is structured-retrieval only —
+  its `query` param does **not** full-text-search (`/bill?query=…`
+  returns the full bill corpus regardless). Use it to fetch bills/reports
+  by id, not to discover by body text. (Its `User-Agent` filter rejects
+  bare `Python-urllib`; send a browser UA.)
+- **govinfo** `search` is the only API of the family that genuinely
+  full-text-searches federal-document *bodies* — reach for it, not
+  Congress.gov, when you need to find a term inside document text.
+- **FOIA.gov**'s report API is a different, unrelated endpoint.
 
 ---
 
