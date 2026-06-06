@@ -873,6 +873,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #17 — ''Maverick Inventor Versus Corporate Inventor'', DIA-08-1003-017, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 30 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 20 pages. DIA attachment #16 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. George Hathaway, Hathaway Consulting (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_17-DIRD_Maverick_Inventor_Versus_Corporate_Inventor-Where_Will_the_Next_major_Innovations_Arise.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-17-maverick-inventor-20100330.txt
+    archived_date: '2026-06-06'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR) of the OCR-scanned DIRD-17 ''Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise?'' (DIA-08-1003-017). Produced 2026-06-06; all 20 pages VLM-read, none content-blocked. The Black Vault FOIA distribution insert (physical page 2) preserved verbatim. Equations/figures/tables bracketed; redaction-code labels and struck-through UNCLASSIFIED//FOR OFFICIAL USE ONLY banners preserved verbatim as legible text; source spellings preserved. Two VLM misreads corrected against the page image (ref 3 index->Index, ref 4 iisb->ilsb).'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_18-DIRD_Traversible_Wormholes_Stargates_and_Negative_Energy.pdf
   status: archived
   artifacts:
