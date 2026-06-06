@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 17 pages |
 | Primary Source URL | https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf |
 | Local Archive | [sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

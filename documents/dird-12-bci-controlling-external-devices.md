@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 37 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_12-DIRD_Technological_Approaches_to_Controlling_External_Devices.pdf |
 | Local Archive | [sources/government/dird-12-bci-controlling-external-devices-20100323.pdf](../sources/government/dird-12-bci-controlling-external-devices-20100323.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 ---
 

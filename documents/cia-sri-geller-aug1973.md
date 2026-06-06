@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 31 pages |
 | Primary Source URL | https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000300030027-0.pdf |
 | Local Archive | [sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

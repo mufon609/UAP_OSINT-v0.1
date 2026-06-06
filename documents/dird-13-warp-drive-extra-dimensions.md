@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 34 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_13-DIRD_Warp_Drive_Dark_energy_and_the_Manipulation_of_Extra_Dimensions.pdf |
 | Local Archive | [sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf](../sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
 

@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 20 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_17-DIRD_Maverick_Inventor_Versus_Corporate_Inventor-Where_Will_the_Next_major_Innovations_Arise.pdf |
 | Local Archive | [sources/government/dird-17-maverick-inventor-20100330.pdf](../sources/government/dird-17-maverick-inventor-20100330.pdf) |
-
-**Content Block:** None
+| Content Block | None |
 
 ---
 

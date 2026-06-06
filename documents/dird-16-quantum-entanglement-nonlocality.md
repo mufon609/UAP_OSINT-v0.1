@@ -19,8 +19,7 @@ doc_form: technical-report
 | Format | PDF, 33 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_16-DIRD_The_Space_Communication_Implications_of_Quantum_Entanglement_and_Nonlocality.pdf |
 | Local Archive | [sources/government/dird-16-quantum-entanglement-nonlocality-20100330.pdf](../sources/government/dird-16-quantum-entanglement-nonlocality-20100330.pdf) |
-
-**Content Block:** Pages 12, 31 were content-blocked for the VLM; OCR-filled (Tesseract + PaddleOCR cross-check).
+| Content Block | Pages 12, 31 were content-blocked for the VLM; OCR-filled (Tesseract + PaddleOCR cross-check). |
 
 ---
 

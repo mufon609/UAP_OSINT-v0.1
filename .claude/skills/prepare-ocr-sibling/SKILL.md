@@ -146,8 +146,8 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
 5. **Record the `Content Block` provenance.** The blocked-page outcome becomes a
    durable, greppable field on the node. Note the value for the source's
    `content_block` (on its `primary_sources[]` entry in the research artifact —
-   `meta/schema-research-artifact.yaml`; renders as `**Content Block:**` on the
-   document node):
+   `meta/schema-research-artifact.yaml`; renders as a `Content Block` row in the
+   document node's Document Summary table):
    - every page VLM-read → `None`;
    - some pages PaddleOCR-filled → e.g. `Pages 12, 31 were content-blocked for the
      VLM; PaddleOCR-filled.`;
@@ -155,7 +155,7 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
      page-image read was content-blocked; produced via OCR.`
    When the node is built (`/build`) this goes on the primary source; the build
    pipeline's `primary_sources` stub carries `content_block`. An investigator can
-   then `grep -rn "Content Block:" documents/ | grep -v None` to find every node
+   then `grep -rn "Content Block" documents/ | grep -v None` to find every node
    with OCR-filled pages.
 
 The sibling is canonical once confirmed and registered; `extract-source.py` and
