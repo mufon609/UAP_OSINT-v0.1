@@ -14,7 +14,7 @@ hook-blocked, and failures route to data fixes (build-protocol → fix-the-data)
 then the node is rebuilt. You edit only `meta/research/*.yaml`.
 
 **Required input:** the merged artifact + all worker fragments + the
-`linked_nodes` / topic-relevance context from role 1. Relevance is judged
+`linked_nodes` / topic-relevance context from the Internal Investigator. Relevance is judged
 against that context, never the source alone — if it's missing, stop and ask
 the orchestrator for it.
 
