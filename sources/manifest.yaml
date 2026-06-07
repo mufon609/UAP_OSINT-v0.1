@@ -945,6 +945,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #21 — ''High-Frequency Gravitational Wave Communications'', DIA-08-1004-005, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. DIA attachment #9 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Robert Baker, GravWave (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_21-DIRD_High-Frequency_Gravitational_Wave_Communications.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-21-hfgw-communications-20100406.txt
+    archived_date: '2026-06-06'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-21 ''High-Frequency Gravitational Wave Communications'' PDF. Produced 2026-06-06; all 58 pages were VLM-read with zero content-filter blocks (no PaddleOCR-fill needed). Coverage clean (no dropped paragraphs); remaining engine divergences are OCR misreads on a correct sibling — Unicode/Greek math the engines flatten (Delta f, omega, mu, superscript exponents), subscript underscores, figure-interior diagram labels (bracketed [Figure N: ...]), and the struck-banner annotation. The Black Vault FOIA cover-insert (PDF p.2) preserved verbatim. Equations/figures/diagram interiors bracketed; redaction markers ([(b)(3):10 USC 424], [(b)(6)]) and source spellings/typos preserved verbatim. Struck banner rendered inline as [struck-through: FOR OFFICIAL USE ONLY].'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_22_Metamaterials_for_Aerospace_Applications.pdf
   status: archived
   artifacts:

@@ -1,0 +1,537 @@
+id: meta/research/dird-21-hfgw-communications
+type: research-artifact
+target_node: documents/dird-21-hfgw-communications
+status: active
+primary_sources:
+- path: government/dird-21-hfgw-communications-20100406.pdf
+  format: pdf
+  content_block: None
+document_intrinsic:
+  internal_title: High-Frequency Gravitational Wave Communications
+  internal_date: '2010-04-06'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: "UNCLASSIFIED//FOR OFFICIAL USE ONLY (struck-through banner on the cover and on every page); 'Defense Intelligence Reference Document' / 'Acquisition Threat Support' series on the cover; ICOD 1 December 2009; control number DIA-08-1004-005; on the title verso the document shows 'Prepared by:' [(b)(3):10 USC 424] / Defense Intelligence Agency and an 'Author:' line redacted under [(b)(6)]."
+  pages: 58
+context_extrinsic:
+  display_title: 'High-Frequency Gravitational Wave Communications — DIA Defense Intelligence Reference Document, AAWSAP, 6 April 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_21-DIRD_High-Frequency_Gravitational_Wave_Communications.pdf
+  quote_attribution: 'High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010'
+  extrinsic_authorship: 'The Author line on the document is redacted under FOIA (b)(6), so no author name appears on the document face. The DIA-to-Congress products list attributes the report to Dr. Robert Baker, GravWave (attachment 9, "High-Frequency Gravitational Wave Communications"). The document body corroborates this attribution: Appendix B names "Project Scientist Robert M L Baker, Jr." as the inventor of the Li-Baker HFGW Detector, and Section 2.2.1 attributes the detector to "R. M L Baker, Jr. of Transportation Sciences Corporation." The products-list affiliation (GravWave) and the in-document affiliation (Transportation Sciences Corporation, California, partnered with Louisiana State University) are both recorded; which is the company-of-record is not resolved here.'
+description: |-
+  High-Frequency Gravitational Wave Communications. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. The Prepared by line gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]); the Author line is [(b)(6)]. An Administrative Note states that the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], with comments or questions to be addressed to the AAWSA Program Manager. The DIA products document ([`/documents/dia-aatip-products-list-2018`]) gives the author as Dr. Robert Baker ([`/people/robert-baker`]), GravWave ([`/organizations/gravwave`]). Appendix B gives "Project Scientist Robert M L Baker, Jr." as the inventor of the Li-Baker HFGW Detector, and Section 2.2.1 gives the detector as "invented by R. M L Baker, Jr. of Transportation Sciences Corporation." Both GravWave (from the products document) and the Transportation Sciences Corporation / Louisiana State University partnership (from Appendix B) are given here, and which of the two companies is correct is left open.
+
+
+  Of the applications of high-frequency gravitational waves (HFGWs), communication appears to be the most important and most immediate. Gravitational waves have a very low cross section for absorption by normal matter, so high-frequency waves could in principle carry significant information content with effectively no absorption, unlike electromagnetic (EM) waves. HFGWs pass through all ordinary material things without attenuation and represent the ultimate wireless system — one could communicate directly through the Earth from Moscow to Caracas without fiber optic cables, microwave relays, or satellite transponders. Multi-channel HFGW communications can be point-to-point, for example to deeply submerged submarines, and point-to-multipoint, like cell phones. Because the communications are carried on an extremely narrow beam directly through the Earth, there is a very low probability of interception.
+
+
+  High-frequency gravitational waves, as defined by physicists Douglass and Braginsky (1979), are gravitational waves having frequencies higher than 100 kHz; in the report they are set apart from the low-frequency gravitational waves (LFGWs) detectable by interferometric GW detectors such as the Laser Interferometer Gravitational Observatory, or LIGO, which are not applicable to communications. On generation, fourteen laboratory HFGW generators have been proposed in peer-reviewed journal articles, all employing electromagnetic forces — more than 10³⁵ larger than gravitational forces — to drive the quadrupole equation first derived by Einstein in 1918. The report holds that the Piezoelectric Approach is best for a proof-of-concept test and the IR-excited Molecules Approach best for an operational communications HFGW transmitter. On detection, ten HFGW detectors have been proposed since 1978; the proposed Li-Baker detector, based on the Li-effect of Li, Tang and Zhao (1992) and its synchro-resonance condition, shows the most promise. It is photon-signal limited, not quantum-noise limited, with sufficient sensitivity to observe HFGWs of amplitude A ≈ 10⁻³² m/m, and is cooled below ~48 mK. Utilizing the IR-excited Molecules generator and the Li-Baker detector, the theoretical information-transfer rate over 7,000 km beamed directly through the Earth is about 1.9 × 10⁶ bits per second.
+
+
+  Beyond communications, the report holds that the most stunning advances will probably not be in communications but in remotely HFGW-generated nuclear fusion or mass disruption, in HFGW propulsion and control of the motion of objects such as missiles, spacecraft, and asteroids by changing the static gravitational field so a vehicle "falls" forward, and in HFGW surveillance — observing activities and materials in three dimensions, within and below structures and within the Earth and its oceans. Under "2050 and Beyond" the report goes as far as faster-than-light (FTL) HFGW propagation through the trispace model, in which gravitational waves may couple into a super-luminal "parallel universe" (Fontana, Meholic). The research of Gary Stephenson ([`/people/gary-stephenson`]), chief investigator for Seculine Consulting, is gratefully acknowledged as crucial to the study.
+quotes:
+- id: q1
+  added_date: '2026-06-06'
+  text: |-
+    High-Frequency Gravitational
+    Wave Communications
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'title-page identity block'
+  significance: Document title exactly as printed on the cover (line-broken across two lines); establishes subject and place in the AAWSA DIRD series.
+  statement_date: '2010-04-06'
+- id: q2
+  added_date: '2026-06-06'
+  text: |-
+    Defense
+    Intelligence
+    Reference
+    Document
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'title-page identity block'
+  significance: Series identity — Defense Intelligence Reference Document, the DIA DIRD series under which the AAWSAP advanced-technology reports were issued.
+  statement_date: '2010-04-06'
+- id: q3
+  added_date: '2026-06-06'
+  text: |-
+    6 April 2010
+
+    ICOD: 1 December 2009
+
+    DIA-08-1004-005
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'title-page identity block'
+  significance: Date, information cut-off date, and control number block — DIA-08-1004-005, fixing the document's provenance within the AAWSAP DIRD numbering.
+  statement_date: '2010-04-06'
+- id: q4
+  added_date: '2026-06-06'
+  text: |-
+    Prepared by:
+
+    [(b)(3):10 USC 424]
+
+    Defense Intelligence Agency
+
+    Author:
+
+    [(b)(6)]
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Prepared by / Author block'
+  significance: Provenance block; preparing component withheld [(b)(3):10 USC 424], Author withheld [(b)(6)] — authorship is extrinsic (DIA AAWSAP products list → Dr. Robert M L Baker, Jr. / GravWave). Bracketed redaction markers preserved verbatim.
+  statement_date: '2010-04-06'
+- id: q5
+  added_date: '2026-06-06'
+  text: 'COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Administrative Note'
+  significance: Standard AAWSA DIRD dissemination-control marker, identical boilerplate across the DIRD series.
+  statement_date: '2010-04-06'
+- id: q6
+  added_date: '2026-06-06'
+  text: >-
+    This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424:(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Administrative Note'
+  significance: 'Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld [(b)(3):10 USC 424:(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.'
+  statement_date: '2010-04-06'
+- id: q7
+  added_date: '2026-06-06'
+  text: >-
+    Of the applications of high-frequency gravitational waves (HFGWs), communication appears to be the most important and most immediate. Gravitational waves have a very low cross section for absorption by normal matter, so high-frequency waves could, in principle, carry significant information content with effectively no absorption unlike electromagnetic (EM) waves.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 1.1 Introduction'
+  significance: Thesis statement — HFGW communication as the most important, most immediate HFGW application, framed on the low-absorption advantage over EM waves.
+  statement_date: '2010-04-06'
+- id: q8
+  added_date: '2026-06-06'
+  text: >-
+    HFGWs pass through all ordinary material things without attenuation and represent the ultimate wireless system. One could communicate directly through the Earth from Moscow in Russia to Caracas in Venezuela—without the need for fiber optic cables, microwave relays, or satellite transponders.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 1.1 Introduction'
+  significance: Core capability claim — through-the-Earth, unattenuated point-to-point communication bypassing all conventional infrastructure ("the ultimate wireless system").
+  statement_date: '2010-04-06'
+- id: q9
+  added_date: '2026-06-06'
+  text: >-
+    Multi-channel HFGW communications can be both point-to-point (for example, to deeply submerged submarines) and point-to-multipoint, like cell phones.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 1.1 Introduction'
+  significance: Defense-relevant use case — communication to deeply submerged submarines, a long-standing hard problem for EM/RF; anchors the report's military-applications framing.
+  statement_date: '2010-04-06'
+- id: q10
+  added_date: '2026-06-06'
+  text: >-
+    High-frequency gravitational waves, as defined by physicists Douglass and Braginsky (1979), are gravitational waves having frequencies higher than 100 kHz.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 1.2 Definition of High-Frequency Gravitational Waves'
+  significance: Operative definition of HFGW — frequencies above 100 kHz, the term on which the entire report turns.
+  statement_date: '2010-04-06'
+- id: q11
+  added_date: '2026-06-06'
+  text: >-
+    Low-frequency gravitational waves (LFGWs), such as those detectable by interferometric GW detectors (for example, the Laser Interferometer Gravitational Observatory, or LIGO) are not applicable to communications due to their very long wavelengths, often thousands of kilometers in length and, even more importantly, the inability to generate them effectively in the laboratory. Furthermore LFGW detectors cannot detect HFGWs (Shawhan, P. S., 2004).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 1.2 Definition of High-Frequency Gravitational Waves'
+  significance: Demarcates HFGW from the LIGO/LFGW regime — why conventional gravitational-wave science is inapplicable, motivating the laboratory HFGW program.
+  statement_date: '2010-04-06'
+- id: q12
+  added_date: '2026-06-06'
+  text: >-
+    Fourteen laboratory high-frequency gravitational wave (HFGW) generators (or transmitters) have been proposed in the past 45 years in peer-reviewed journal articles.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Quantitative state-of-field claim — fourteen proposed HFGW generators over 45 years, establishing the literature base the report surveys.
+  statement_date: '2010-04-06'
+- id: q13
+  added_date: '2026-06-06'
+  text: >-
+    The Piezoelectric Approach to HFGW generation is best for the proof-of-concept test and the proposed IR-excited Molecules Approach is best for an operational communications HFGW transmitter.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Headline generation finding — piezoelectric (FBAR) for proof-of-concept, IR-excited molecules for an operational transmitter; the report's transmitter recommendation.
+  statement_date: '2010-04-06'
+- id: q14
+  added_date: '2026-06-06'
+  text: >-
+    Ten different HFGW detectors (or receivers) have been proposed since 1978 and reported in peer-reviewed journal articles.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Quantitative state-of-field claim for detectors — ten proposed HFGW receivers since 1978.
+  statement_date: '2010-04-06'
+- id: q15
+  added_date: '2026-06-06'
+  text: >-
+    Several different HFGW receivers can be utilized for communication, but the proposed Li-Baker detector (plans & specification development in Appendix B) shows the most promise (underlying concept in Appendix C).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Headline detection finding — the Li-Baker detector as the most promising HFGW receiver; the report's central detector recommendation (its design occupies Appendix B).
+  statement_date: '2010-04-06'
+- id: q16
+  added_date: '2026-06-06'
+  text: >-
+    Because HFGW communications are carried on an extremely narrow beam directly through the Earth, there is a very low probability of interception.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Defense-relevant property — low probability of interception (LPI) from narrow through-Earth beaming, a key military communications advantage.
+  statement_date: '2010-04-06'
+- id: q17
+  added_date: '2026-06-06'
+  text: >-
+    Theoretical results confirm that the Li-Baker detector is photon-signal limited, not quantum-noise limited—that is, the Standard Quantum Limit is so low that a properly designed Li-Baker detector can have sufficient sensitivity to observe HFGWs of amplitude A ≈ 10⁻³² m/m.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Central quantitative sensitivity claim — Li-Baker detector is photon-signal (not quantum-noise) limited, sensitive to strain A ≈ 10⁻³² m/m.
+  statement_date: '2010-04-06'
+- id: q18
+  added_date: '2026-06-06'
+  text: >-
+    Utilizing the IR-excited Molecules HFGW generator approach and the Li-Baker detector, the theoretical information-transfer rate over 7,000 km of distance, beamed directly through the Earth, is about 1.9 × 10⁶ bits per second.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Headline performance figure — ~1.9 × 10⁶ bps over 7,000 km through the Earth, the quantitative endpoint of the whole transmitter-plus-detector analysis.
+  statement_date: '2010-04-06'
+- id: q19
+  added_date: '2026-06-06'
+  text: >-
+    HFGW sources on the Earth, the Moon, and Mars may act as reference standards for interplanetary navigation, with the advantage that they cannot be shielded or shadowed by planetary masses.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Summary'
+  significance: Interplanetary-navigation application — HFGW beacons on Earth/Moon/Mars as unshieldable reference standards; the report's space-navigation thesis.
+  statement_date: '2010-04-06'
+- id: q20
+  added_date: '2026-06-06'
+  text: >-
+    Electromagnetic forces are more than 10³⁵ larger than gravitational forces and should be employed in laboratory GW generation.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.1.1 HFGW Generator Concepts'
+  significance: Foundational generation principle — using EM (not gravitational) forces, 10³⁵ stronger, to drive the mass "jerk" producing HFGWs in the lab.
+  statement_date: '2010-04-06'
+- id: q21
+  added_date: '2026-06-06'
+  text: >-
+    The first generation means is the same for gravitational waves (GWs) of all frequencies and is based upon the quadrupole equation first derived by Einstein in 1918.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.1.1 HFGW Generator Concepts'
+  significance: Theoretical basis — HFGW generation rests on Einstein's 1918 quadrupole equation (recast by Baker (2006) in terms of mass "jerk").
+  statement_date: '2010-04-06'
+- id: q22
+  added_date: '2026-06-06'
+  text: >-
+    In August of 1974 Chapline, Nuckolls and Woods suggested the generation of HFGWs by nuclear explosions.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.1.1 HFGW Generator Concepts'
+  significance: Notable historical generation concept — HFGW production by nuclear explosions, one of the high-energy generation approaches surveyed.
+  statement_date: '2010-04-06'
+- id: q23
+  added_date: '2026-06-06'
+  text: >-
+    The Li-Baker HFGW detector was invented by R. M L Baker, Jr. of Transportation Sciences Corporation, California and patented in P. R. China (Baker, 2001). Based upon the theory of Li, Tang and Zhao (1992) termed the Li-effect, the detector was proposed by Baker during the period 1999-2000, a patent for it was filed in 2001, subsequently granted (Baker, 2001), and preliminary details were published later by Baker, Stephenson and Li (2008a).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.2.1 Alternative Approaches'
+  significance: Provenance of the Li-Baker detector — invented by R. M L Baker, Jr. (Transportation Sciences Corporation), patented in P.R. China, built on the Li-effect (Li, Tang and Zhao 1992); links the document's extrinsic author to its central technology.
+  statement_date: '2010-04-06'
+- id: q24
+  added_date: '2026-06-06'
+  text: >-
+    With the Li-Effect, a gravitational wave transfers energy to a separately generated electromagnetic (EM) wave in the presence of a static magnetic field. That EM wave has the same frequency as the GW and moves in the same direction. This is the "synchro-resonance condition," in which the EM and GW waves are synchronized (move in the same direction and have the same frequency) and is unlike the Gertsenshtein-Effect.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.2.2 Concept (Li-Effect)'
+  significance: Core physics of detection — the Li-effect / synchro-resonance condition by which a GW transfers energy to a co-propagating EM wave in a static magnetic field, the principle the Li-Baker detector exploits.
+  statement_date: '2010-04-06'
+- id: q25
+  added_date: '2026-06-06'
+  text: >-
+    The detector, shown in Figure 14, has five major components:
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.2.4 Li-Baker HFGW Detector'
+  significance: Opens the Li-Baker detector hardware description — the five-component architecture (Gaussian beam, static B-field, fractal-membrane reflectors, shielded microwave receivers, sub-48 mK cooling).
+  statement_date: '2010-04-06'
+- id: q26
+  added_date: '2026-06-06'
+  text: >-
+    Interior noise from thermal photon generation is eliminated by cooling the Li-Baker detection apparatus to below ~ 48 mK (0.048 Kelvin).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 2.2.4 Li-Baker HFGW Detector'
+  significance: Key engineering parameter — cryogenic cooling below ~48 mK to suppress thermal-photon noise, one of the detector's defining operating requirements.
+  statement_date: '2010-04-06'
+- id: q28
+  added_date: '2026-06-06'
+  text: >-
+    Using C.E. Shannon's classical equation (1948), the maximum rate of information transfer, C, is given by:
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 3.2 Bandwidth'
+  significance: Basis for the headline ~1.9 × 10⁶ bps rate — the Shannon-capacity calculation (C = Blog₂(1+S/N)) underlying the report's quantitative communications claim.
+  statement_date: '2010-04-06'
+- id: q29
+  added_date: '2026-06-06'
+  text: >-
+    Thus, the HFGW FTS system could be used as a navigational aid, akin to the GPS system.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 3.3 Frequency and Time Standard'
+  significance: Frequency-Time-Standard application — an HFGW FTS as a GPS-like navigational aid, the report's near-term low-bandwidth use case.
+  statement_date: '2010-04-06'
+- id: q30
+  added_date: '2026-06-06'
+  text: >-
+    At this precision one could measure the time delay caused by changing once centimeter in height in the Earth's gravitational field.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 3.4 Possible Future Upgrades to the FTS Devices'
+  significance: Optical-lattice-clock precision claim (1 part in 10¹⁸); preserves the in-document typo "once centimeter" (for "one centimeter") verbatim per no-correction discipline.
+  statement_date: '2010-04-06'
+- id: q31
+  added_date: '2026-06-06'
+  text: >-
+    In the receiver all these same noise sources are duplicated in reverse, as shown on the right had side of Figure 16.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 3.1.1 Signal-to-Noise Ratio'
+  significance: Link-budget / SNR discussion; quoted to preserve the in-document typo "right had side" (for "right hand side") verbatim per no-correction discipline.
+  statement_date: '2010-04-06'
+- id: q32
+  added_date: '2026-06-06'
+  text: >-
+    The most stunning advances in HFGW applications will probably not be in communications, but in the remotely HFGW-generated nuclear fusion, HFGW propulsion and HFGW surveillance.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: Most UAP/weapons-relevant passage — the document's own forecast that the most stunning HFGW applications are remote-generated nuclear fusion, propulsion, and surveillance, not communications.
+  statement_date: '2010-04-06'
+- id: q33
+  added_date: '2026-06-06'
+  text: >-
+    If an ultra-high-intensity HFGW flux impinges on a nucleus, it is possible that it could initiate nuclear fusion at a remote location, or mass disruption.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: Remote-effects weapons concept — HFGW-initiated remote nuclear fusion or "mass disruption," a directed-energy-style application of interest to AAWSAP.
+  statement_date: '2010-04-06'
+- id: q34
+  added_date: '2026-06-06'
+  text: >-
+    HFGWs could theoretically be used for propulsion and control of the motion of objects such as missiles, missile warheads, spacecraft, and asteroids, and remote control of clouds of hazardous vapors.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: HFGW-propulsion / object-motion-control concept — propulsion and steering of missiles, spacecraft, and asteroids; a direct advanced-aerospace-weapons application thread.
+  statement_date: '2010-04-06'
+- id: q35
+  added_date: '2026-06-06'
+  text: >-
+    Gravitational field changes by one or more HFGW generators could urge a spacecraft in a given direction, causing a lower static gravitational field in front of a vehicle (it "falls" forward) and a higher one behind (providing a "push").
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: Field-propulsion mechanism — engineering a static-g-field gradient so a vehicle "falls forward," the report's gravitational-propulsion concept (cf. the antigravity/warp DIRDs).
+  statement_date: '2010-04-06'
+- id: q36
+  added_date: '2026-06-06'
+  text: >-
+    "Since it has definite energy, the gravitational wave is itself is the source of some additional gravitational field (static g-field).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: Quoted Landau & Lifshitz (1975) basis for HFGW propulsion; preserves the in-document typo "is itself is the source" verbatim per no-correction discipline.
+  statement_date: '2010-04-06'
+- id: q37
+  added_date: '2026-06-06'
+  text: >-
+    A novel means of imaging or HFGW surveillance might be developed in future to establish a system to allow for observing activities and materials in three dimensions, within and below structures and within the Earth and its oceans.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.4 Other Possible HFGW Applications'
+  significance: HFGW-surveillance concept — through-structure, through-Earth, through-ocean 3-D imaging; an intelligence/ISR application of interest to the AAWSAP program.
+  statement_date: '2010-04-06'
+- id: q38
+  added_date: '2026-06-06'
+  text: >-
+    The vast distances involved will require some form of communication that entails faster-than-light (FTL) propagation. While this is a highly speculative area, such schemes have been proposed for FTL HFGW. Both Fontana and Meholic (unpublished reports) have proposed models of the universe, such as the trispace model, in which subluminal or luminal gravitational waves may couple into a super-luminal "parallel universe" inside which FTL speeds are possible.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 4.5 2050 and Beyond'
+  significance: Most speculative forward-look — FTL HFGW communication via a "trispace"/parallel-universe coupling model (Fontana, Meholic); the report's far-future endpoint, characteristic of the AAWSAP DIRD theoretical reach.
+  statement_date: '2010-04-06'
+- id: q39
+  added_date: '2026-06-06'
+  text: >-
+    The research published in technical papers authored by Gary Stephenson, chief investigator for Seculine Consulting, (Stephenson, 2009a, Harper Stephenson (2007) and Stephenson (2009b)) were crucial in the preparation of this study and is gratefully acknowledged.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Section 5.0 Acknowledgements'
+  significance: Names Gary Stephenson (Seculine Consulting) as a key contributor whose papers underpin the study — an in-document collaborator attribution.
+  statement_date: '2010-04-06'
+- id: q40
+  added_date: '2026-06-06'
+  text: >-
+    The partnership consists of Louisiana State University (LSU) and Transportation Sciences Corporation (TSC) in California.
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Appendix B: Li-Baker HFGW Detector'
+  significance: Identifies the academia/industry partnership (LSU + Transportation Sciences Corporation) proposed to build the Li-Baker detector under continued funding.
+  statement_date: '2010-04-06'
+- id: q41
+  added_date: '2026-06-06'
+  text: >-
+    Use will primarily be made of "off-the-shelf" components, and components described in the open scientific literature and in the various patents issued to Project Scientist Robert M L Baker, Jr. (Baker, 1999, 2000, 2001, and Patents Pending) who is the inventor of the Li-Baker HFGW Detector (Baker, 2001).
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'Appendix B: Li-Baker HFGW Detector'
+  significance: In-document naming of "Project Scientist Robert M L Baker, Jr." as inventor of the Li-Baker detector — the closest the document body comes to attesting the (FOIA-redacted) authorship; corroborates the extrinsic Dr. Robert Baker / GravWave attribution.
+  statement_date: '2010-04-06'
+naming_quirks:
+- id: nq1
+  added_date: '2026-06-06'
+  observed: AAWSA
+  canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
+  location: 'Administrative Note — "Advanced Aerospace Weapon System Applications (AAWSA) Program" and "AAWSA Program Manager" (quoted in q6)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-06-06'
+  observed: '[(b)(6)]'
+  canonical: '[author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA AAWSAP products list is Dr. Robert M L Baker, Jr. / GravWave]'
+  location: 'Prepared by / Author block, Author line (quoted in q4)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-06-06'
+  observed: '[(b)(3):10 USC 424]'
+  canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
+  location: 'Prepared by / Author block and Administrative Note (quoted in q4, q6)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-06-06'
+  observed: once centimeter
+  canonical: one centimeter
+  location: 'Section 3.4 — "changing once centimeter in height" (quoted in q30)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-06-06'
+  observed: right had side
+  canonical: right hand side
+  location: 'Section 3.1.1 — "as shown on the right had side of Figure 16" (quoted in q31)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-06-06'
+  observed: is itself is the source
+  canonical: is itself the source
+  location: 'Section 4.4 — "the gravitational wave is itself is the source of some additional gravitational field" (quoted in q36)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq7
+  added_date: '2026-06-06'
+  observed: Boccalet
+  canonical: Boccaletti
+  location: '6.0 References — "Boccalet D., Desabbar V., Fortini P. and Gualdi C. (1970)" (captured in cited_works); the same author appears canonically as "Boccaletti et al." in Section 2.2.2'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq8
+  added_date: '2026-06-06'
+  observed: Meiville
+  canonical: Melville
+  location: '6.0 References — Fontana and Baker (2007), "American Institute of Physics Conference Proceedings Vol. 880, Meiville, NY" (captured in cited_works); the place name appears canonically as "Melville, NY" in other References entries'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq9
+  added_date: '2026-06-06'
+  observed: Cavlese
+  canonical: Cavalese
+  location: '6.0 References — Pinto and Rotoli (1988), "Cavlese (Trento)" (captured in cited_works)'
+  source_path: government/dird-21-hfgw-communications-20100406.pdf
+  resolution: preserve-as-sic-in-quotes
+cited_works:
+- id: cw1
+  added_date: '2026-06-06'
+  citation_key: 'Li, Tang and Zhao 1992'
+  author: 'Li, F. Y., Tang M. and Zhao P.'
+  citation_verbatim: 'Li, F. Y., Tang M. and Zhao P. (1992), "Interaction Between Narrow Wave Beam-Type High Frequency Gravitational Radiation and Electromagnetic Fields," Acta Physica Sinica 41 1919-1928'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 41, References'
+- id: cw2
+  added_date: '2026-06-06'
+  citation_key: 'Baker, Stephenson and Li 2008a'
+  author: 'Baker, R. M L, Jr., Stephenson, G. V. and Li, F.'
+  citation_verbatim: 'Baker, R. M L, Jr., Stephenson, G. V. and Li, F. (2008a), "Proposed Ultra-High Sensitivity HFGW Detector," Space Technology and Applications International Forum (STAIF-2008), edited by M. S. El-Genk, American Institute of Physics Conference Proceedings Vol. 969, Melville, NY, pp. 1045-1054.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 37, References'
+- id: cw3
+  added_date: '2026-06-06'
+  citation_key: 'Douglass and Braginsky 1979'
+  author: 'Douglass, D.H. and Braginsky, B.'
+  citation_verbatim: 'Douglass, D.H. and Braginsky, B. (1979), "Gravitational-radiation experiments," in "General relativity: an Einstein centenary survey" Ed. Hawking S.W. and Israel W. (CUP, UK), 90-137.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 39, References'
+- id: cw4
+  added_date: '2026-06-06'
+  citation_key: 'Eardley et al. 2008'
+  author: 'Eardley, et al.'
+  citation_verbatim: 'Eardley, et al. (2008) "High Frequency Gravitational Waves," JSR-08-506, October, the JASON defense science advisory panel and prepared for the Office of the Director of National Intelligence.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 39, References'
+- id: cw5
+  added_date: '2026-06-06'
+  citation_key: 'Boccalet et al. 1970'
+  author: 'Boccalet D., Desabbar V., Fortini P. and Gualdi C.'
+  citation_verbatim: 'Boccalet D., Desabbar V., Fortini P. and Gualdi C. (1970), "Conversion of Photons Into Gravitons and Vice Versa in a Static Electromagnetic Field," Il Nuovo Cimento B70, 129'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 38, References'
+- id: cw6
+  added_date: '2026-06-06'
+  citation_key: 'Fontana and Baker 2007'
+  author: 'Fontana, G. and Baker, R. M L Jr.'
+  citation_verbatim: 'Fontana, G. and Baker, R. M L Jr. (2007), "HFGW-Induced Nuclear Fusion," Space Technology and Applications International Forum (STAIF-2007), edited by M. S. El-Genk, American Institute of Physics Conference Proceedings Vol. 880, Meiville, NY, pp. 1156-1164.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 39, References'
+- id: cw7
+  added_date: '2026-06-06'
+  citation_key: 'Pinto and Rotoli 1988'
+  author: 'Pinto, I. P. and Rotoli, G.'
+  citation_verbatim: 'Pinto, I. P. and Rotoli, G. (1988), "Laboratory generation of gravitational waves?" Proceedings of the 8th Italian Conference on General Relativity and Gravitational Physics, Cavlese (Trento), August 30 to September 3, World Scientific-Singapore, pp. 560-573.'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 42, References'
+- id: cw8
+  added_date: '2026-06-06'
+  citation_key: 'Li et al. 2008'
+  author: 'Li F. Y., Baker R. M L, Jr., Fang Z., Stephenson G.V. and Chen, Z.'
+  citation_verbatim: 'Li F. Y., Baker R. M L, Jr., Fang Z., Stephenson G.V. and Chen, Z. (2008), "Perturbative Photon Fluxes Generated by High-Frequency Gravitational Waves and Their Physical Effects," European Phys. J. C 22, Nos. 18-19, 30 July'
+  source:
+    path: government/dird-21-hfgw-communications-20100406.pdf
+    location: 'p. 41, References'
