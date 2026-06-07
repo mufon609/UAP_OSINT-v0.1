@@ -68,13 +68,36 @@ from lib._common import (  # noqa: E402
 # Backtick-bracketed canonical path — same grammar associate.py reads.
 _LINK_RE = re.compile(r"\[`(/[^`]+)`\]")
 
+# The capitalized name phrase that sits immediately before a wrap IS the
+# entity's spelled-out form — "Defense Intelligence Agency ([`/.../dia`])",
+# "the Laser Interferometer Gravitational Observatory, or LIGO
+# ([`/.../ligo`])". Its words are already carried navigationally even when
+# the slug is an acronym (dia) or the target node is an unbuilt stub, so we
+# fold them into the covered set. Captures a run of Capitalized tokens
+# joined by lowercase connectors (of/the/for/and/&/de/von/van) or commas,
+# terminating at an optional "(" then the wrap.
+_NAME_BEFORE_WRAP_RE = re.compile(
+    r"((?:[A-Z][A-Za-z0-9'’.\-]*)"
+    r"(?:(?:[ \t]+(?:of|the|for|and|de|von|van|or)\b|,)?[ \t]+"
+    r"[A-Z][A-Za-z0-9'’.\-]*)*)"
+    r"[ \t]*\(?[ \t]*\[`/[^`]+`\]"
+)
+
 # Capitalized-token regex — shared shape with coverage-suggest.py: a word
 # starting uppercase + lowercase, 3+ chars, intra-word apostrophe/hyphen
 # allowed. Skips all-caps acronyms and short function words.
 _CAP_TOKEN_RE = re.compile(r"\b[A-Z][a-z][a-zA-Z\-']{1,}\b")
 
-# Title-case navigation / boilerplate noise (subset of coverage-suggest's
-# NAV_NOISE — the terms that recur in authored prose, plus months/days).
+# Trailing possessive — "Elizondo's" / "Elizondo’s" → "Elizondo" before the
+# covered/noise test, so a wrapped entity's possessive form isn't re-flagged.
+_POSSESSIVE_RE = re.compile(r"['’]s$")
+
+# Title-case navigation / boilerplate noise. The months/days + generic-noun
+# template words (DIRD cover pages, hearing boilerplate, synthesis scaffold)
+# that recur capitalized but are never a standalone entity. Spelled-out
+# ORG-name fragments (Defense / Intelligence / Agency …) are handled
+# structurally by _NAME_BEFORE_WRAP_RE, not here — so a genuinely unwrapped
+# org still surfaces.
 _NAV_NOISE = frozenset({
     "About", "All", "Also", "April", "August",
     "December", "February", "Friday",
@@ -82,6 +105,20 @@ _NAV_NOISE = frozenset({
     "March", "May", "Monday", "November",
     "October", "Other", "Saturday", "September", "Sunday",
     "The", "These", "This", "Thursday", "Tuesday", "Wednesday",
+    # Generic template / synthesis-scaffold nouns
+    "Administrative", "Appendix", "Application", "Applications",
+    "Author", "Board", "Bracketed", "Command", "Committee", "Core",
+    "Council", "Department", "Director", "Document", "Documents",
+    "Establishes", "Group", "Headline", "Manager", "Note", "Office",
+    "Operations", "Per", "Prepared", "Program", "Project", "Provenance",
+    "Quantitative", "Record", "Reference", "Report", "Scientist",
+    "Section", "Secretary", "Service", "Services", "Statement",
+    "Subcommittee", "Summary", "Support", "System",
+    # Template adjectives / scaffold descriptors (never a standalone entity)
+    "Advanced", "Anomalous", "Approach", "Beyond", "Central",
+    "First", "Foundational", "Frames", "New", "Opening", "Operative",
+    "Public", "Series", "Special", "Standard", "Theoretical",
+    "Thesis", "Unidentified", "Utilizing",
 })
 
 
@@ -137,15 +174,25 @@ def _slug_words(path):
 
 
 def linked_words(data, blob):
-    """All slug words already carried by a ``[`/path`]`` wrap (anywhere in
-    the artifact) plus the target node's own slug — the 'already covered'
-    set the candidate tokens are filtered against."""
+    """All words already carried navigationally — the 'already covered' set
+    the candidate tokens are filtered against. Three sources:
+
+      1. Slug words of every ``[`/path`]`` wrap (``gary-stephenson`` ->
+         {gary, stephenson}).
+      2. The spelled-out name phrase immediately before each wrap
+         (``Defense Intelligence Agency ([`/.../dia`])`` -> {defense,
+         intelligence, agency}) — covers acronym slugs and stub targets.
+      3. The target node's own slug (a node naming its own subject is not a
+         cross-reference).
+    """
     words = set()
     for path in _LINK_RE.findall(blob):
         words |= _slug_words(path)
-    # The artifact's whole text can hold wraps outside the prose blob
-    # (structured path fields); harvest those too so a token linked in a
-    # table isn't re-flagged as unlinked in prose.
+    for phrase in _NAME_BEFORE_WRAP_RE.findall(blob):
+        for w in re.split(r"[\s,]+", phrase):
+            w = w.strip(".'’-")
+            if w:
+                words.add(w.lower())
     target = data.get("target_node")
     if isinstance(target, str):
         words |= _slug_words(target)
@@ -156,8 +203,9 @@ def candidate_tokens(blob, covered):
     """Capitalized prose tokens not already covered by a wrap. Returns a
     Counter keyed by token (original casing)."""
     out = Counter()
-    for tok in _CAP_TOKEN_RE.findall(blob or ""):
-        if tok in _NAV_NOISE or tok.lower() in STOPWORDS:
+    for raw in _CAP_TOKEN_RE.findall(blob or ""):
+        tok = _POSSESSIVE_RE.sub("", raw)   # "Elizondo's" -> "Elizondo"
+        if not tok or tok in _NAV_NOISE or tok.lower() in STOPWORDS:
             continue
         if tok.lower() in covered:
             continue
