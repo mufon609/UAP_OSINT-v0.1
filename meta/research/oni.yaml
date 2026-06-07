@@ -130,14 +130,14 @@ timeline:
   event: Naval Intelligence Activity issues UAP Security Classification Guide (ID# 04-030); names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as the subject of its classification authority
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
-    location: p. 2, ¶1 (Purpose)
+    location: p. 8, ¶1 (Purpose)
 - id: t2
   added_date: '2026-05-05'
   date: '2020-06-17'
   event: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 supports "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence"
   source:
     path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
-    location: p. 12, Advanced Aerial Threats
+    location: p. 11, Advanced Aerial Threats
 - id: t3
   added_date: '2026-05-05'
   date: '2021-06-25'
@@ -175,7 +175,7 @@ org_relationships:
   relationship_type: other
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
-    location: p. 2, ¶1 (Purpose)
+    location: p. 8, ¶1 (Purpose)
 - id: or2
   added_date: '2026-05-05'
   organization_path: /organizations/us-navy

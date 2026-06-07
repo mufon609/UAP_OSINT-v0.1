@@ -384,7 +384,7 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 | Field | Value |
 |---|---|
-| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties" |
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's ([`/people/jay-stratton`]) account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties" |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [09:13]–[09:41] |
 
@@ -535,6 +535,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/hal-puthoff`]
 - [`/people/harry-reid`]
 - [`/people/james-ryder`]
+- [`/people/jay-stratton`]
 - [`/people/jeremy-corbell`]
 - [`/people/luis-elizondo`]
 - [`/people/robert-bigelow`]

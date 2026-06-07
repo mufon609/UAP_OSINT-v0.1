@@ -703,7 +703,7 @@ quotes:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[09:13]–[09:41]'
   significance: Lacatski's first-person attestation of Jay Stratton's role at DIA — head of the air-threats team ("air team"), possibly on assignment from ONI ([`/organizations/oni`]). Lacatski heads the parallel missile-threats team. Structural DIA-team detail not in prior transcripts.
-  context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties"
+  context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's ([`/people/jay-stratton`]) account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties"
 - id: q35
   claim_group: "Disclosure Stance"
   added_date: '2026-05-18'

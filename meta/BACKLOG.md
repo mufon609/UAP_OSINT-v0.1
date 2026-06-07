@@ -524,3 +524,38 @@ convention and record the rationale.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C3 — Correct the Kress-footnote date (OCR misread "June 17" → "June 27, 1972")
+
+A cold-context audit of `organizations/stanford-research-institute` rendered the
+Kress source PDF **page image** (the source is `extraction_type: ocr-scan` with
+**no verified `.txt` sibling** — the `pdftotext` layer is corrupt) and read the
+footnote date unambiguously as **"June 27, 1972"**. The quote was extracted from
+the corrupt text layer as "June '1:7," and carried as **"June 17"**, then
+propagated. A zero-tolerance verbatim defect, deferred here per the maintainer
+for a clean session (needs the OCR-sibling workflow, not a quick edit).
+
+Source: `sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf`
+(PDF page 7 / printed page 8, footnote 6).
+
+Steps:
+1. Produce + confirm the verified `.txt` sibling via `/prepare-ocr-sibling`
+   (this source feeds multiple quotes, so the sibling is owed regardless).
+2. Re-extract the footnote quote text — `stanford-research-institute` q36 and
+   `kit-green` q1 — from the verified sibling / page image: `…June 27, 1972.`
+3. Drop the now-pointless naming_quirks — SRI `nq14` and kit-green `nq1` (they
+   "preserve" a garble that lived only in the discarded text layer, never on the
+   page → correction-to-nothing).
+4. Retarget every derived `1972-06-17` field in `kit-green` (q1 `statement_date`,
+   `background`, `top_relevance`, timeline entry, affiliation `period_start`) to
+   `1972-06-27`.
+5. Rebuild both nodes; re-audit.
+
+Also verify while there: `uaptf` q22 shares the exact location string that q18
+carried ("UAPTF Charter, p.4, UAP Task Force Director responsibilities section");
+q18 was corrected to p.7 this session after a page-image check, but q22 was left
+unverified — confirm q22's page ref against the charter PDF (likely also p.7,
+same section) and correct if needed.
+
+**Blocks:** none.
+**Blocked by:** none.

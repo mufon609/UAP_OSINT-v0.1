@@ -377,7 +377,7 @@ naming_quirks:
     canonical: 'Wal Thornhill'
     location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [39:12]'
     source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
-    resolution: preserve-as-sic-in-quotes
+    resolution: off-node-variant
 timeline:
   - id: t1
     added_date: '2026-05-06'

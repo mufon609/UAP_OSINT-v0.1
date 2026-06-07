@@ -342,7 +342,6 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | put off | Puthoff | transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt |
 | pothos | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
 | thought of | Puthoff | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
-| wall thornhill | Wal Thornhill | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
 
 ---
 
@@ -353,6 +352,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 | Variant Form | Canonical | Source |
 |---|---|---|
 | Lockeed Martin | Lockheed Martin | news/lucistrust-garment-of-god-video-page-snapshot.html |
+| wall thornhill | Wal Thornhill | transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt |
 
 ---
 
