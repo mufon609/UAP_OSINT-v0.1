@@ -594,6 +594,16 @@
     archived_date: '2026-04-20'
     path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
     note: 'Michael Shellenberger written testimony for 2024-11-13 House Oversight + Cybersecurity/IT hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Contains detailed timeline referencing Skinwalker Ranch, BAASS/AAWSAP, Bigelow 2007 DIA letter, and Fugal 2022 purchase narrative. 214 pages.'
+- url: https://documents.theblackvault.com/documents/faa/FAA-BigelowBAASS-1.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/faa-bigelow-baass-correspondence.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'FAA<->Bigelow/BAASS correspondence (39 pages) documenting the NIDS->BAASS handoff of UFO-reporting guidelines: FAA UFO-reporting-guideline correspondence, the BAASS reporting hotline, and a Bigelow Aerospace Advanced Space Studies (BAASS) email chain. AAWSAP-program support document. Source archived via The Black Vault FOIA mirror; note host is documents.theblackvault.com (NOT documents2). extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2026-05-20'
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_01_Metallic_Glasses_for_Aerospace_Applications.pdf
   status: archived
   artifacts:
@@ -1116,6 +1126,16 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #37 — ''Aneutronic Fusion Propulsion II'' (DIA-letter title; the document title page reads ''Aneutronic Fusion Propulsion''), DIA-08-1011-004, ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 37 pages. DIA attachment #30 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. Culbreth, University of Nevada – Las Vegas (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/FOIA%2000159-2018.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-foia-00159-2018-dird-cover.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'DIA FOIA transmittal (FOIA 00159-2018, 5 pages) authenticating the 37-DIRD corpus — states DIA ''located 37 documents (1473 pages)'' responsive to a request covering the DIRDs created by Bigelow/BAASS/AATIP under AAWSAP. The provenance backbone for the DIRD document nodes. Source archived via The Black Vault DIA AAWSAP-DIRDs mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-01-10'
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP/20090624_Reid_to_DEPSECDEF_ref_AAITP_in_SAP.pdf
   status: archived
   artifacts:
@@ -1125,6 +1145,46 @@
     extraction_type: ocr-scan
     note: AAWSAP support document — letter from Senator Harry Reid to Deputy Secretary of Defense William J. Lynn III, dated 24 June 2009, requesting the Advanced Aerospace Threat Identification Program (AATIP / AAWSAP) be placed under 'Restricted Special Access Protection'. 5 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename 20090624_Reid_to_DEPSECDEF_ref_AAITP_in_SAP.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/Contract_Status_24Aug09.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aawsap-contract-status-20090824.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'Aerospace Contract Status memo (24 Aug 2009, 7 pages) reporting BAASS performance status — states BAASS is ''in full compliance with aerospace contract HHM402-08-C-0072''. AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-05-29'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/Contract_Status_Briefing.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aawsap-contract-status-briefing.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'AAWSAP status briefing deck (9-page slide deck) — DIA AAWSAP contract-status briefing. AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-01-10'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DI_Brief_2008.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aawsap-di-brief-2008.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'AAWSAP Contract Status briefing deck (10-page slide deck) — ''Advanced Aerospace Weapon System Applications Contract Status ... Contract HHM402-08-C-0072''. AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-01-09'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DI_Brief_2009.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aawsap-di-brief-2009.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'AAWSAP Contract Status briefing deck (2009, 12-page slide deck) — DIA AAWSAP contract-status briefing under Contract HHM402-08-C-0072. AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2022-04-06'
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP/DR_Reid_Brief_May09.pdf
   status: archived
   artifacts:
@@ -1179,6 +1239,16 @@
     extraction_type: ocr-scan
     note: AAWSAP support document — DIA FOIA response, request FOIA-00349-2018, response dated 13 October 2022. 25 pages. Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename FOIA-00349-2018.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/OUSDI_IM_on_AATIP_Final.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/ousdi-im-on-aatip-final.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'OUSD(I) information memorandum on AATIP (3 pages) to Director of Special Programs Honi Smith, reviewing Sen. Reid''s Special Access Program request for AAITP. This is a SEPARATE 3-page file, distinct from the held 18-page clapper-usdi-aatip-sap-recommendation packet (aawsap-clapper-usdi-aatip-sap-recommendation). AAWSAP/AATIP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-03-06'
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP/SOW_Aerospace.pdf
   status: archived
   artifacts:
@@ -1188,6 +1258,36 @@
     extraction_type: ocr-scan
     note: AAWSAP support document — Statement of Work / original bid solicitation for the Advanced Aerospace Weapon System Applications Program, DIA solicitation HHM402-08-R-0211, posted 18 August 2008. 8 pages. The sole bid was Bigelow Aerospace Advanced Space Studies (BAASS). Source archived via The Black Vault FOIA mirror (theblackvault.com), AAWSAP document set (filename SOW_Aerospace.pdf). PDF producer metadata 'Adobe Acrobat … Paper Capture Plug-in' — OCR'd document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/U-09-2660CE-IM-Review_of_Special_Access_Program_Request.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-u-09-2660ce-sap-request-review-20091113.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'DIA information memorandum U-09-2660CE-IM, ''Review of Special Access Program Request'' (13 Nov 2009, 4 pages) — DIA evaluation of Sen. Harry Reid''s request to establish a restricted Special Access Program for the AAWSAP contract (Reid''s ''AAITP''). AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2026-06-06'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/U-10-2552CE-IM-ATL.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-u-10-2552ce-im-atl-aatip-2010.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'DIA information memorandum U-10-2552CE-IM-ATL to USD(AT&L) on AATIP (2010, 3 pages) — names the FY2008 Defense Supplemental $10M Reid/Inouye congressional add for AATIP. AAWSAP/AATIP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2025-01-10'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP/U-429-09-DWO-IM.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/dia-u-429-09-baass-deliverable-review-20091030.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'DIA information memorandum U-429-09-DWO-IM (30 Oct 2009, 9 pages) reviewing the quality and value of the first-year technical reports delivered by BAASS under the AAWSAP contract (HHM402-08-C-0072). AAWSAP-program support document. Source archived via The Black Vault DIA AAWSAP mirror. extraction_type ocr-scan: PDF carries a HiddenHorzOCR text layer (Black Vault ABBYY scanner OCR overlay), confirmed via pdffonts this session — pdftotext output is OCR and unreliable; a clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2026-04-13'
 - url: https://documents2.theblackvault.com/documents/navy/DON-2021-003140.pdf
   status: archived
   archive_status: 3
@@ -2483,6 +2583,26 @@
   - format: pdf
     archived_date: '2026-04-20'
     path: government/aaro-phillips-timothy-bio-dec2023.pdf
+- url: https://www.aaro.mil/Portals/136/PDFs/UAP_RECORDS_RESEARCH/AARO_DHS_Kona_Blue.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/blackvault-aaro-dhs-kona-blue-proposal.pdf
+    archived_date: '2026-06-06'
+    extraction_type: ocr-scan
+    note: 'Full declassified DHS KONA BLUE Prospective Special Access Program (PSAP) proposal (58 pages) — the AAWSAP/AATIP successor effort proposed to DHS — including the 5 Feb 2024 DHS->Hicks declassification cover letter. The bundle also includes the History page; the standalone native-text History is archived separately (aaro-kona-blue-history-and-origin-20240416.pdf). Bytes pulled from the richer-text-layer Black Vault bundle at documents2.theblackvault.com/documents/osd/konablue-release1.pdf (live HTTP 200); canonical AARO origin recorded as primary_source_url (aaro.mil AARO_DHS_Kona_Blue.pdf). extraction_type ocr-scan: body prose legible but classification banners garbled; 11 HiddenHorzOCR layers present (pdffonts, this session). A clean-text .txt sibling, visually verified against the page images, is REQUIRED before any verbatim-quote derivation, per meta/conventions.md OCR-scan discipline.'
+  archive_status: 3
+  wayback_date: '2026-05-08'
+- url: https://www.aaro.mil/Portals/136/PDFs/UAP_RECORDS_RESEARCH/History_and_Origin_of_KONA_BLUE_FINAL_508.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aaro-kona-blue-history-and-origin-20240416.pdf
+    archived_date: '2026-06-06'
+    extraction_type: text-native
+    note: 'AARO''s ''History and Origin of KONA BLUE'' statement (1 page; 508-compliant), tracing KONA BLUE''s origin to AAWSAP/AATIP: DIA-managed 2009-2012, funded through congressional earmarks, Bigelow Aerospace as primary contractor; DIA terminated the program for cited lack of merit/utility; KONA BLUE was a Prospective Special Access Program proposed to DHS leadership but never approved or formally established, receiving no materials or funding. Successor-program context for the AAWSAP/AATIP node set. Live aaro.mil URL 403s to curl (edge bot-block); bytes pulled via Wayback id_ snapshot 20240420010705. extraction_type text-native: native embedded TimesNewRomanPSMT fonts, zero HiddenHorzOCR layer, clean en-dash text (e.g. ''2009-2012'') confirmed via pdffonts + pdftotext this session — NOT OCR; no clean-text .txt sibling needed.'
+  archive_status: 3
+  wayback_date: '2026-05-08'
 - url: https://www.afcea.org/event/sites/default/files/files/Kirkpatrick_Sean%20DR%20Bio.pdf
   status: archived
   archive_status: 3
