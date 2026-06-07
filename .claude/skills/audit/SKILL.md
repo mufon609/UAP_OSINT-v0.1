@@ -31,8 +31,20 @@ Target: **$ARGUMENTS** (ask the user if empty).
 2. **Pre-audit under-extraction + source-form grounding:**
    `python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml`
    surfaces substantive paragraphs no quote references + capitalized terms
-   absent from the artifact (suggestions; boilerplate is common — judge each),
-   and **ungrounded `## Source-Form Notes`** — `preserve-as-sic-in-quotes`
+   absent from the artifact. **Load-bearing triage is mandatory, not a skim:
+   classify every unreferenced *substantive* paragraph and record the call.**
+   Load-bearing for the node's subject → queue a verbatim quote; boilerplate /
+   navigation / figure-caption / tangential → mark ignored-with-reason. A
+   paragraph is load-bearing when it bounds or balances a claim the node
+   already makes — a limit on the node's own central thesis, a caveat that
+   fences an upside the node states, a present-tense fact where the node reads
+   all-future, or a result that beats a named incumbent. The mechanical gates
+   (verbatim, prose-drift, coverage) all read clean on a faithful-but-under-
+   extracted node, so a silent skip here is the one under-extraction failure
+   nothing downstream catches; carry the triage split (load-bearing vs.
+   ignored-with-reason) into the step-3 findings so it is reviewable.
+   coverage-suggest also reports **ungrounded `## Source-Form Notes`** —
+   `preserve-as-sic-in-quotes`
    entries whose `observed` form appears only in its own table row (an
    incidental source typo logged but never quoted → drop it; a deliberate
    not-on-node variant → reclassify `resolution: off-node-variant`, which

@@ -249,6 +249,114 @@ The document also discussed the significant limitations for aerospace applicatio
 
 ---
 
+### Joining limitation — structural use requires joining of components; welding, soldering, and brazing risk crystallization, and laboratory welding tests on glass-forming alloys gave mixed results
+
+> Structural applications inevitably require joining of components, for instance by mechanical fasteners or adhesives or by welding, soldering, or brazing. The use of fasteners and adhesives is much the same for metallic glasses as for any other metal. Techniques such as welding, soldering, and brazing are potentially problematic because they involve heating the glassy alloy, running the risk of crystallization (which could make the joint more brittle). In welding, for instance, the metal to be joined is actually melted and then resolidifies upon cooling. In the case of a metallic glass, care must be taken to ensure the cooling rate is fast enough to avoid crystallization. There is also a risk that the glassy material in the heat-affected zone (near to but not in the molten region) might crystallize. Laboratory tests of a variety of welding techniques have been performed on several glass-forming alloys with mixed results, and it is clear that much remains to be done in this area.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 12, ¶ (Joining) |
+
+---
+
+### Stiffness limitation — metallic glasses are 20-30 percent less stiff than crystalline alloys of similar composition, and for structural applications the low stiffness is a disadvantage
+
+> Stiffness is the resistance of a material to elastic deformation and is quantified by either the elastic modulus (for tensile or compressive loads) or the shear modulus (for shear loading). Metallic glasses tend to be somewhat (20-30 percent) less stiff than crystalline alloys of similar composition. The lower modulus is a consequence of the amorphous structure, in which atoms are (on average) slightly farther apart than in a crystalline alloy, enabling certain atomic relaxations that are not possible in a crystal. The lower modulus of amorphous alloys is clearly a concern in applications where stiffness is a primary criterion, but it does present some advantages. For instance, some applications (springs, for example) require the ability to store elastic strain energy (resilience), and here metallic glasses do quite well. Resilience is also a key figure of merit for snap-fit assembly of materials without fasteners. Overall, however, for structural applications, the low stiffness of metallic glasses is a disadvantage.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 13, ¶ (Stiffness: Elastic Deformation) |
+
+---
+
+### Embrittlement limitation — elevated temperatures (the welding heat-affected zone, or supercooled-liquid processing such as injection molding) can embrittle even reasonably tough glasses, with no known way to reverse it
+
+> Even some metallic glasses with reasonable toughness may be embrittled by exposure to elevated temperatures. This may occur in the heat-affected zone during welding (as discussed above), or it may be a by-product of processing in the supercooled liquid region (as in injection molding, for instance). The causes of embrittlement are also not well understood, and there is no known way to reverse embrittlement once it occurs.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 16, ¶ (Fracture Toughness) |
+
+---
+
+### Present-day application — one of the principal current markets for amorphous alloys is wear- and corrosion-resistant coatings for tools such as drill bits, with potential coatings on dry bearings for space applications
+
+> Because of their high yield strength, metallic glasses also have very high hardness. This, in turn, implies they might have good tribological behavior, which would be of particular interest when combined with the good corrosion resistance of some alloys (see below), opening up potential applications such as coatings on dry bearings for space applications.^20 However, the tendency of metallic glasses to form shear bands and (in some cases) partially crystallize owing to deformation means their wear resistance is perhaps not as good as their high hardness would suggest. Nevertheless, the wear resistance of metallic glasses can still be quite good, and in fact one of the principal current markets for amorphous alloys is as wear- and corrosion-resistant coatings for tools such as drill bits.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 17, ¶ (Wear Resistance) |
+
+---
+
+### Composite ductility — titanium-based in situ composites have been reported with tensile elongation as large as 12 percent, comparable to Ti-6Al-4V but in a material with about 30 percent greater strength
+
+> For instance, monolithic titanium-based metallic glasses (like all metallic glasses) have essentially zero tensile ductility, but in situ composites based on titanium have been reported with tensile elongation as large as 12 percent.^35 This is comparable to the ductility of Ti-6Al-4V (the most common conventional titanium alloy), but in a material with about 30 percent greater strength.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 23, ¶ (Strength and Ductility: Plastic Deformation) |
+
+---
+
+### Present-day application — ferromagnetic amorphous alloys with low coercivity and high electrical resistivity have long been exploited as high-efficiency electrical transformers, particularly at high frequencies
+
+> Finally, the magnetic properties of certain amorphous alloys have long been exploited. For instance, their low coercivity and high electrical resistivity make ferromagnetic amorphous alloys attractive as high-efficiency electrical transformers, particularly at high frequencies. Such applications are likely to continue well into the future.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 26, ¶ (Other Applications) |
+
+---
+
+### Alloy-design limitation — the best glass-forming alloys are either based on expensive elements (palladium) or contain toxic elements (beryllium in the best zirconium- and titanium-based alloys)
+
+> The best glass-forming alloys are either based on expensive elements (for example, palladium) or contain toxic elements (for example, beryllium in the best zirconium- and titanium-based alloys).
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 27, ¶ (Alloy Design) |
+
+---
+
+### Alloy-design limitation — all good iron-based metallic glasses contain considerable nonmetallic elements (carbon, boron, silicon, and/or phosphorus), thought to contribute to their very low fracture toughness
+
+> Similarly, all of the good iron-based metallic glasses contain considerable amounts of nonmetallic elements (notably carbon, boron, silicon, and/or phosphorus), which are thought to contribute to the very low fracture toughness of these alloys (Figure 9(b)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 27, ¶ (Alloy Design) |
+
+---
+
+### Composite limitation — the dendritic in situ composite approach has been demonstrated in only two, closely related alloys and does not appear to be a general phenomenon
+
+> At present, the most promising approach to producing composite materials with the proper microstructural length scale is the formation of dendritic composites, as discussed above. A critical limitation is that this process has been demonstrated in only two, closely related alloys and does not appear to be a general phenomenon.
+
+| Field | Value |
+|---|---|
+| Attributed to | Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009 |
+| Source | [archived source](../sources/government/dird-01-metallic-glasses-20091214.pdf) |
+| Location | p. 28, ¶ (Composites and the Quest for Ductility) |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
