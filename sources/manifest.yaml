@@ -973,6 +973,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #22 — ''Metamaterials for Aerospace Applications'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 28 pages. DIA attachment #18 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. G. Shvets, University of Texas – Austin (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). This is the Black Vault rendering (PDF producer ''Adobe Acrobat 9.55 Paper Capture Plug-in''); a separate dia.mil-sourced OCR rendering of the same DIRD is registered at government/dird-22-metamaterials-aerospace-diamil-20100406.pdf. OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_22_Metamaterials_for_Aerospace_Applications.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-22-metamaterials-aerospace-20100406.txt
+    archived_date: '2026-06-07'
+    note: 'Clean-text sibling (VLM page-image read, all 28 pages; confirmed against PaddleOCR + Tesseract via ocr-consensus.py) of the OCR-scanned Black Vault rendering of DIRD #22 ''Metamaterials for Aerospace Applications'' (Dr. G. Shvets, UT-Austin). Produced 2026-06-07; no pages content-blocked (all VLM-read). The FOIA-released PDF ends mid-sentence on p.23/printed (PDF p.28) — ''...1 m² of black surface at'' — with no references section; preserved verbatim. Equations/figures rendered as bracketed [Figure N]/[Equation N] placeholders; (b)(3)/(b)(6) redactions, the struck-through UNCLASSIFIED//FOR OFFICIAL USE ONLY banner, source spellings/typos, and The Black Vault distribution cover page preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_23-DIRD_State_of_the_Art_and_Evolution_of_High-Energy_Laser_Weapons.pdf
   status: archived
   artifacts:

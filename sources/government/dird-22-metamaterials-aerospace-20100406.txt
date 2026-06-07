@@ -1,0 +1,1076 @@
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Defense
+Intelligence
+Reference
+Document
+[REDACTED]
+Acquisition Threat Support
+
+6 April 2010
+
+ICOD: 1 December 2009
+
+DIA-08-1004-006
+
+Metamaterials for Aerospace
+Applications
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+This document is made available through the declassification efforts
+and research of John Greenewald, Jr., creator of:
+
+The Black Vault
+
+The Black Vault is the largest online Freedom of Information Act (FOIA)
+document clearinghouse in the world.  The research efforts here are
+responsible for the declassification of hundreds of thousands of pages
+released by the U.S. Government & Military.
+
+Discover the Truth at: http://www.theblackvault.com
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Metamaterials for Aerospace Applications
+
+Prepared by:
+
+[REDACTED: (b)(3):10 USC 424]
+
+Defense Intelligence Agency
+
+Author:
+
+[REDACTED: (b)(6)]
+
+Administrative Note
+
+COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+
+This product is one in a series of advanced technology reports produced in FY 2009
+under the Defense Intelligence Agency, [REDACTED: (b)(3):10 USC 424] Advanced Aerospace
+Weapon System Applications (AAWSA) Program. Comments or questions pertaining to
+this document should be addressed to [REDACTED: (b)(3):10 USC 424;(b)(6)] ., AAWSA Program
+Manager, Defense Intelligence Agency, ATTN: [REDACTED: (b)(3):10 USC 424] Bldg 6000, Washington,
+DC 20340-5100.
+
+ii
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Contents
+
+Definition of Metamaterials 1
+
+Applications to Sub-Diffraction Imaging: Super-Lens and Hyper-Lens 6
+
+Applications to Circuits and Waveguide Miniaturization: Slowing Down and
+Manipulating Electromagnetic Pulses (EMP) Using Advanced Metamaterials 16
+
+Metamaterials for Energy Harvesting 20
+
+Nonlinear Non-Reciprocal Chiral Metamaterials: For Developing Novel Optical
+Isolators and "One-Way" Microwave Mirrors 27
+
+Tunable Switchable Metamaterials 30
+
+Summary and Conclusions 31
+
+References 31
+
+
+Figures
+
+Figure 1. Example of a Metamaterial Component: The Magnetic Split Ring
+        Resonator (SRR) Design 2
+Figure 2. Example of Another Metamaterial Component: Electric Ring Resonator
+        (ERR) 2
+Figure 3. Geometry of Original Planar Metamaterial Unit Cells (OE1-OE6) and Their
+        Complements (CE1-CE6) 3
+Figure 4. Recent Optical Metamaterials for Telecommunication Wavelength and
+        Mid-Infrared Indefinite Permittivity Material 5
+Figure 5. Schematic of The Super-lens With n=-1 Refractive Index Corresponding
+        to ( Surrounded by Vacuum 7
+Figure 6. Schematic of the SiC-based Super-lens Which is Imaging Sub-wavelength
+        Holes Buried Under the SiO2 Layer 8
+Figure 7. Theoretical Concepts (left panel) and Experimental Implementation
+        (right panel) of an Optical Hyperlens Capable of Magnifying Sub-
+        Diffraction Objects to Observable (larger than Size 9
+Figure 8. Hyperlens Based on a Converging Array of Metal Wires 10
+Figure 9. Far-Field Super-lens (FSL) Based on an Indefinite Permittivity
+        Metamaterial Placed Between the Object and the Image-Releasing
+        Grating 12
+Figure 10. Tomographic Multi-Beam Multi-Detector Holography of Sub-Wavelength
+        Objects Using Indefinite Permittivity Medium (IPM) 12
+Figure 11. First Experimental Demonstration of Propagating Sub-Diffraction Waves
+        in the Indefinite Permittivity Medium (IPM) 13
+Figure 12. Schematic for 2-Beams/2-Detectors Interferometric Measurement
+        and Numerical Simulation. 14
+Figure 13. Experimental Setup for 2-Beams/2-Detectors Interferometric
+        Measurement in the Lab and Preliminary Experimental Results 15
+
+iii
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Figure 14. Schematic of Pulse Compression in Magnetized Plasma 16
+Figure 15. Trapped Rainbow: A Waveguide With Negative Index Core Can Stop
+        Light 17
+Figure 16. "Plasmonic Molecule" Exhibiting EIT 18
+Figure 17. True Multi-Layer Metamaterial With a Unit Cell Shown in Figure16:
+        Radiative Antenna (Single Metal Strip) Coupled to a Dark Antenna
+        (Two Perpendicular Metal Bars) 19
+Figure 18. "Perfect" Narrow-Band Microwave Absorber 20
+Figure 19. Wide-Angle Plasmonic Absorber Based on Negative Index
+        Metamaterial 21
+Figure 20. Specific Design of a Wide-Angle Plasmonic Absorber Based on Negative
+        Index Metamaterial Operating at λ=1550 nm 22
+Figure 21. Experimental Reflectivity vs. Wavelength and Theoretical Plot of
+        Reflectivity Contours 23
+Figure 22. Preliminary Attempts to Design a Better Absorber Using Complementary
+        MetaMaterials (U-shaped C-MM) 25
+Figure 23. Engineering the Complex Reflectivity Coefficient Using the Concept of a
+        MetaMirror. 26
+Figure 24. Example of a Generic Chiral Metamaterial 28
+Figure 25. Example of Time-Irreversibility of Light Propagation Inside the Twisted
+        Fiber Core. 29
+Figure 26. THz Properties of an Electric Split Ring Resonator 31
+
+iv
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Definition of Metamaterials
+
+A metamaterial is defined as an artificial medium whose properties (mechanical, optical,
+magnetic, or other) cannot be found in naturally-occurring materials. The emphasis of
+this study will be on electromagnetic and optical metamaterials. Such metamaterials
+can exhibit rather extreme properties, such as negative refractive index, which implies
+that both electric permittivity and magnetic permeability must be negative
+(ε < 0, μ < 0) (Reference 1). Such metamaterials used to be called "left-handed"
+because of the unusual phase relationship between the electric and magnetic fields.
+Specifically, in most (positive index, including vacuum) media one uses the right-hand
+rule to define the relationship between electric field (E⃗) magnetic field (H⃗), and the
+propagation wavenumber (k⃗). The physical basis of the right-hand rule is that the
+direction of energy propagation defined by the Poynting vector S⃗ = cE⃗ × H⃗/4π and the
+direction of the phase velocity (defined by the wavenumber k⃗) must coincide. That
+does not hold true for negative index metamaterials where the two directions are
+opposite, therefore, the left-handed relationship must hold for the three vectors.
+Nevertheless, the "left-handed" designation did not withstand the test of time because
+it was causing confusion and creating irrelevant allusions to helical (a.k.a. chiral)
+structures. Although chiral structures can indeed exhibit negative index behavior
+(Reference 2), chirality is not necessary.
+
+A typical metamaterial consists of resonant elements such as Split Ring Resonators
+(SRR). An example of an SRR is shown in Figure 1. The main function of the SRR is to
+enable strong magnetic response of the structure. A simple empirical formula exists for
+the magnetic permeability of a metamaterial comprised of the SRRs:
+
+[Equation 1: μ = 1 − Fω²_M / (ω² − ω²_M) < 0,]                                    (1)
+
+where ω_M is the resonant frequency of the SRR, and F is proportional to the volume
+filling factor of SRRs. It is noteworthy that SRRs are designed in such a way that it has
+a large capacitance. As the result, the resonant frequency of an SRR is small, (that is,
+the SRR-containing cell is very sub-wavelength). In the example shown in Figure 1
+(taken from Reference 6), the unit cell operated at ω/2π = 10 GHz is λ/10. In fact, the
+sub-wavelength size of the metamaterial is what distinguishes them from their close
+cousins: photonic crystals. By properly designing magnetic SRRs, it is possible to
+achieve any value of μ for any given frequency. Special challenges exist for optical
+structures, though, as will be explained below.
+
+1
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+[Figure 1: Diagram of a square split ring resonator unit cell, labeled with in-plane lattice parameter a_θ, ring edge length l, gap dimensions w and s, and trace parameter r. Accompanying table of cylinder parameters:]
+
+cyl.    r       s       μ_r
+1       0.260   1.654   0.003
+2       0.254   1.677   0.023
+3       0.245   1.718   0.052
+4       0.230   1.771   0.085
+5       0.208   1.825   0.120
+6       0.190   1.886   0.154
+7       0.173   1.951   0.188
+8       0.148   2.027   0.220
+9       0.129   2.110   0.250
+10      0.116   2.199   0.279
+
+Figure 1. Example of a Metamaterial Component: The Magnetic Split Ring Resonator (SRR) Design. The
+in-plane lattice parameters are a₁ = a₂ = 10/3 mm. The ring is square, with edge length l = 3 mm and tracewidth w
+= 0.2 mm. The substrate is 381 μm-thick Duroid 5870 (ε = 2.33, t_d = 0.0012 at 10 GHz, where t_d is the loss
+tangent). The Cu film, from which the SRRs are patterned, is 17 μm thick. The parameters r and s are given in the
+table together with the associated value of μ_r. (Reference 6)
+
+Electric properties of metamaterials can be similarly controlled. An example of a planar
+electrically-active metamaterial is shown in Figure 2.
+
+[Figure 2: Diagram of an Electric Ring Resonator (ERR) — a square outline enclosing two facing C-shaped/U-shaped conductive elements. Field-orientation axes shown below: E, x̂ (vertical), H, ŷ (horizontal), K (into page).]
+
+Figure 2. Example of Another Metamaterial Component: Electric
+Ring Resonator (ERR). This component provides tunable resonant
+electric response to the incident electromagnetic field, and can be
+utilized for engineering the frequency-dependent dielectric
+permittivity ε(ω) . Possible application: THz and microwave absorbers.
+(Reference 7)
+
+2
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+The electric response of such (or similar) metamaterial is given by
+
+[Equation 2: epsilon(omega) = 1 - omega_p^2 / (omega^2 - omega_R^2 + i*omega*gamma)]                    (2)
+
+
+where omega_R is the resonant frequency and gamma is the loss coefficient.
+
+
+Negative index metamaterials are by no means the only potentially useful metamedia.
+Several new concepts such as Indefinite Permittivity Metamaterials (IPM) (References
+3, 4) and Epsilon-Near-Zero (ENZ) metamaterials (Reference 5) have recently emerged
+and found some exciting applications that will be reviewed below. IPMs can be used as
+ultra-compact spatial filters (both high-pass and low-pass) whereas ENR metamaterials
+can be used for making sub-wavelength waveguides capable of coupling close to 100
+percent of the incident radiation (Reference 7), as well as directing it around tight
+bends with negligible bending losses. Yet another class of planar metamaterials,
+complementary metamaterials (CMMs), has recently emerged (Reference 7). Instead of
+using metallic structures deposited on a substrate (left panel of Figure 3), CMMs consist
+of slits in the continuous metal screen (right panel of Figure 3). The shape of the slits
+coincides with that of the materials themselves. Such complementary metamaterials
+have been recently used for making epsilon-near zero waveguides (Reference 8).
+
+[Figure 3: Geometry of Original Planar Metamaterial Unit Cells (OE1-OE6) and Their Complements
+(CE1-CE6). The polarization of normally incident electromagnetic radiation is configured as shown in OE1
+and CE1 for the original and complementary metamaterials, respectively. (Reference 9). A 3x2 grid of black-and-white unit-cell geometry images; right two columns labeled CE1, CE4 (top row), CE2, CE5 (middle row), CE3, CE6 (bottom row); H and E polarization axes marked near CE1/CE2.]
+
+3
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+In general, metamaterials offer a new way of designing electromagnetic structures with
+arbitrary values of permittivity/permeability tensors, as well as other parameters (such
+as bi-anisotropy coefficient). In many instances, metamaterials enable us to
+considerably minimize sizes of resonators, transmission lines, and so forth. Such
+miniaturization is possible due to the resonant nature of the individual unit cells.
+Specifically, the structures shown in Figure 3 have high capacitance; therefore, their
+individual sizes are very sub-wavelength. That enables arrangement within sub-
+wavelength units that can be densely packed and result in strongly miniaturized
+components. It is this miniaturization that makes metamaterials interesting for
+aerospace application where small weight and size are essential.
+
+While the most spectacular progress in the field of electromagnetic metamaterials has
+so far occurred in the microwave range, it is the optical (visible, infrared, mid-infrared)
+spectral regions that hold most promise for revolutionary applications. Electromagnetic
+metamaterials have a tremendous potential for revolutionizing propagation, storage,
+and conversion of electromagnetic waves across the entire Electromagnetic Spectrum.
+In our opinion, the most exciting applications that are relevant for aerospace
+applications include energy harvesting, developing novel optical devices with unusual
+yet practically important capabilities (for example, non-reciprocal devices), enhancing
+the efficiency of nonlinear optical devices, developing novel imaging modalities capable
+of breaking the diffraction limit (for example, super-lenses, hyper-lenses, far field
+super-lenses), and developing novel lithographic techniques.
+
+Optical metamaterials are still a very new area. Just a handful of experimental
+demonstrations of multi-layer (truly bulk) optical metamaterials exist at the moment.
+Among the most recent ones are (a) demonstration of the negative index optical
+metamaterial at the telecommunications wavelength (Reference 10) that used the so-
+called fishnet structure shaped as a prism for demonstrating Snell's Law, and (b)
+demonstration of the Indefinite Permittivity Material (IPM) and negative refraction
+(which, in the context of anisotropic metamaterials, is not the same as negative
+refractive index) in the mid-infrared part of the spectrum (Reference 11). These
+structures have the distinction of being multi-layer (or bulk). Most previous examples of
+optical metamaterials have dealt with single or double-layer substances which cannot
+be, strictly speaking, characterized as metamaterials. The difficulty in obtaining strong
+magnetic activity in optical metamaterials has been explained in several recent reviews
+(References 12, 13). In a nutshell, the issue is that the magnetic moment of most
+structures (including atomic systems) is very small, much smaller than the electric
+moment. Therefore, it is difficult to observe any optical effects that can be clearly
+assigned to magnetic activity. This is especially true for the structures that are much
+smaller than one wavelength. Exceptions, such as artificially constructed split rings, are
+possible. However, such structures cannot be operated at very high frequency because
+of the excitation of electrostatic resonances (Reference 12). In other words, when the
+resonant frequency is too high (or the dielectric permittivity of a metal is not sufficiently
+large), electrostatic resonances disrupt magnetic activity. More specifically, the energy
+inside and in the vicinity of a metamaterial element (for example, Split Ring Resonator)
+becomes predominantly electrostatic, (that is, in the form of the kinetic energy of
+oscillating electrons). The recently described multi-layer fishnet (Reference 10) is not
+an exception: its unit cell (that is, the lateral period) is only one-half of the operating
+wavelength.
+
+
+4
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+[Figure 4: Three panels. Panel (a) and (b) show SEM-style micrographs of multi-layer fishnet structures (labels P, a, b, Ag, scale bar ~1 µm). Right panel is a plot of figure of merit vs Wavelength (µm), x-axis 2 to 14, y-axis from -75 to 100, with horizontal banded inset.]
+
+Figure 4. Recent Optical Metamaterials for Telecommunication Wavelength λ = 1.5 µm (Left and
+Middle) and Mid-Infrared IPM. The multi-layer fishnet is made of silver films separated by a dielectric spacer. A
+focused ion beam was used to produce the prism-shaped fishnet. The IPM was obtained by depositing interleaved
+80 nm layers of In0.53Ga0.47As and Al0.48In0.52As. The layers, approximately 8.1 µm thick, grown by molecular beam
+epitaxy on lattice-matched InP substrates. The InGaAs layers were uniformly doped to create different values of
+permittivity in alternating layers. (Reference 10 and 11)
+
+
+That is not to say that there is not ongoing theoretical and experimental work on
+designing optical metamaterials for practical applications. The author's research group
+at UT- Austin, has designed the first Plasmonic Negative Index Metamaterials (P-NIM)
+super-lens (Reference 14), developed novel techniques for analyzing optical properties
+of plasmonic nanostructures, (including band-structure calculations of periodic
+nanostructures) (Reference 15) and quasi-static calculations of plasmonic resonances
+(Reference 16). The UT-Austin group has also designed a number of unique sub-
+wavelength P-NIMs in the optical part of the spectrum (References 14, 17, 18), and has
+recently published a review of optical P-NIMs (Reference 12). The group has also
+contributed to developing and experimentally implementing the concept of the "perfect
+lens" (Reference 19) based on plasmonic/polaritonic materials. A perfect lens enables
+imaging of sub-wavelength objects in the infrared part of the spectrum, including
+objects buried under the surface. Also developed is a Wide-Angle "Perfect" Absorber of
+Mid-Infrared Radiation (WAPAMIR) (Reference 20) based on the negative index
+metamaterial whose impedance is perfectly matched to vacuum.
+
+Below is a concise summary of various topics/applications that are especially suitable
+for the aerospace industry. This study concentrates on the facility of metamaterials to
+miniaturize various optical and microwave components. Metamaterials can also be used
+for imaging very small (sub-wavelength) objects without resorting to costly and space-
+consuming near-field scanning optical microscopy. Also described are the ongoing
+efforts in the field to make extremely compact metamaterials-based lasers. Smaller
+lasers mean smaller weight and more room for other diagnostic devices and useful
+payload within the confines of a space vehicle. Applications of metamaterials to photon
+harvesting is especially fitting for advanced aerospace platforms because of the
+necessity to collect electromagnetic energy for battery recharging, diagnostic
+spectroscopy, and other vital functions of a space vehicle.
+
+•   Complementary Metamaterials for Energy Harvesting. Development of ultra-
+    thin photovoltaic and thermo-photovoltaic cells is hampered by weak photon
+    absorption in semiconductors. Metamaterials can modify absorption making it
+    wavelength-selective (tunable), highly efficient, and, if desired, wide-angle. Recently
+    a way has been found for creating quarter-wavelength resonators backed by leaky
+    mirrors made out of CMMs.
+
+5
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+•   Far Field Super-Lens Based on the Interferometry of Sub-Diffraction Waves.
+    Sub-diffraction imaging has long been considered to be possible only using near-
+    field microscopes. Those are fairly complex, slow-scanning, and large devices that
+    are not appropriate for advanced aerospace platforms. Metamaterials enable new
+    imaging modalities: super-lenses, hyper-lenses, and far-field super-lenses. In
+    addition to a survey of the existing scientific literature, novel ideas on developing a
+    new interferometric Far-field Super-Lens (FSL) based on the multi-beam multi-
+    detector technique utilizing materials with Indefinite Permitivity Tensor are
+    presented. Fabrication of such Indefinite Permittivity Materials (IPMs) for the mid-
+    infrared part of the spectrum is achieved and demonstrates the capabilities of
+    transmitting electromagnetic waves with the spatial period much smaller than the
+    vacuum wavelength of light. Interference between sub-diffraction waves enables
+    disentangling multiple diffractive orders and extracting their amplitudes.
+
+•   Nonlinear Non-Reciprocal Chiral Metamaterials: Developing Novel Optical
+    Isolators and "One-Way" Microwave Mirrors. These developments are
+    motivated by the need to construct one-way "light diodes" for compact optical
+    isolators. Presently there are two approaches to optical isolation: the most common
+    using magnetic fields, and the less developed based on using nonlinearities. A
+    different approach relies on the phenomenon of adiabatic mode conversion in
+    nonlinear chiral metamaterials. Preliminary theoretical results for a simple chiral
+    fiber with a variable twist period (pitch) that enables full transmission of a tightly
+    confined core mode in the forward direction and full mode-conversion of the core
+    mode into a cladding mode for the backwards propagation is obtained.
+
+•   Slowing Down Light and Miniaturizing Optical Components Using the
+    Phenomenon of Electromagnetically Induced Transparency in
+    Metamaterials. The speed of light places a natural limit on the size of
+    optical/microwave components. Metamaterials offer an exciting opportunity to slow
+    down light. This has two major implications: (a) light can be stored/manipulated in
+    smaller volumes, and (b) nonlinear effects are strongly enhanced by the resulting
+    energy compression.
+
+
+Applications to Sub-Diffraction Imaging:  Super-Lens and
+Hyper-Lens
+
+The super-lens is one of the earliest applications of metamaterials (Reference 21), and
+its principle is shown in Figure 5. Without the super-lens, all information about sub-
+diffraction (or sub-wavelengths, which is equivalent) features of the periodic object
+would have been lost. The reason for the information loss is evanescent decay of the
+large spatial wavenumbers. The only method of accessing/measuring these features
+would be to scan the object using a near field scanning optical microscope. By inserting
+a super-lens between the object and the imaging plane, evanescent waves may be
+amplified and the image transferred forward. Unfortunately, this approach by itself does
+not remove the need for a near-field scanning device; the image that is recreated in the
+imaging plane is still sub-wavelength, and needs to be read out.
+
+
+
+
+6
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+[Figure 5: Schematic of a super-lens. Incoming plane waves from the left labeled λ > d with spacing d marked by a vertical double arrow; a hatched slab in the middle labeled n=-1; wavy rays converge and diverge through the slab to the right.]
+
+Figure 5. Schematic of the Super-Lens with n=-1 Refractive Index Corresponding to (ε = -1, µ = -1)
+Surrounded By Vacuum. Super-lens' presence enables imaging sub-diffraction objects such as the periodic
+grating shown here.
+
+There are, however, interesting circumstances when it is very important to transport
+the image towards the scanning device. One such special circumstance is spatially-
+resolved spectroscopy of small (for example, cellular) structures. One can envision
+space expeditions to other planets that could, potentially, result in finding some
+evidence of primitive cellular-level life. It would then be highly desirable to examine the
+structure of the living cell in its natural environment. In all likelihood, that environment
+would be liquid. Therefore, it would be very desirable to examine the cell without
+actually touching it with a tip of a near-field optical microscope. Thus, the sub-surface
+imaging of a small object which is buried underneath a liquid layer would be necessary.
+No such experiments have so far been conducted. However, several years ago there
+was an experiment demonstrating imaging of sub-diffraction objects buried under the
+layer of silicon dioxide.
+
+The schematic and experimental results from the experiment (Reference 19) are shown
+in Figure 6. In this experiment the sub-wavelength objects were simple holes that were
+milled in the metal using an FIB. They were buried underneath the super-lens
+consisting of SiC (negative epsilon material for mid-infrared frequencies) and silicon
+dioxide (positive epsilon material). Note that this configuration (materials with ε_1 > 0
+and ε_2 ≈ -ε_1 < 0 joined together: sandwiched or positioned next to each other) is typical
+for a near-field super-lens. The difference between the near-field super-lens shown in
+Figure 6 and the "ideal" super-lens shown in Figure 5 is that the ideal also requires a
+material with a negative value of magnetic permeability.
+
+
+
+
+7
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+[Figure 6: Panel (a) is a 3D schematic of a layered structure: an incoming/outgoing beam (arrows) and an NSOM tip at top; a SiO2 layer over a SiC layer labeled 400 nm, another SiO2 layer labeled 50 nm, and a gold (Au) base layer containing buried disk-shaped holes. Below are several imaging panels showing dark/light spots; the rightmost is labeled g.]
+
+Figure 6. Schematic of the SiC-Based Super-Lens Which is Imaging Sub-Wavelength Holes Buried Under
+the SiO2 Layer. The imaged objects are λ/20 holes milled in gold using FIB. The scattered signal is picked up by
+the tip of an NSOM and directed towards the IR detector. Depending on the imaging wavelength, either amplitude
+(e) or the phase (f,g) of the signal are prominent.
+
+As the laser beam scatters off the sub-wavelength holes, its electric field is picked up
+by the tip of a Near-Field Scattering Optical Microscope (NSOM) and re-scattered into
+the far-field. There it is interfered with the reference pulse and picked up by an infrared
+detector. Note that this interferometric technique enables one to extract both the phase
+and amplitude of the field, as shown in Figure 6. This significantly broadens the spectral
+range over which the super-lens yields meaningful information. For example, the
+amplitude contrast is highest at λ =10.85 µm shown in panel (e) while the phase
+contrasts are the highest at λ =11.03 µm and λ =10.65 µm.
+
+
+
+
+8
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+Despite the convenience of the near-field super-lens, (that is, its ability to transport the
+image) it still requires an NSOM to read out the image. Within the confines of an
+advanced aerospace platform such device (with its necessary auxiliaries) may not fit.
+Therefore, one has to consider alternative metamaterials-based ideas for sub-diffraction
+imaging. One such idea, the hyper-lens, has been proposed recently by two groups
+(References 22-24), and already experimentally tested by another group (Reference
+25). The principle of the hyper-lens is very simple: to use an indefinite permittivity
+medium (sometimes referred to as the hyperbolic medium because the relationship
+between the propagation wavenumbers and the frequency, also known as the constant
+frequency contour, has a hyperbolic nature) in a tapered format. Several conceptual
+implementations such as the spoke-like structure and the cylindrical multi-layer
+structure (see Figure 7, left panel) have been suggested. The hyper-lens works on two
+principles: (a) Indefinite permittivity materials (of which the super-lens is one example)
+are capable of propagating sub-diffraction waves, and (b) the expanding nature of the
+hyper-lens can magnify images to the λ/2 size, at which point they become observable
+in a conventional microscope. One recent experimental implementation of the hyper-
+lens in UV is shown in the right panel of Figure 7. The hyper-lens is made of 16 layers
+of Ag/Al2O3. This specific hyper-lens was used for imaging a line pair object with line
+width of 35 nm and spacing of 150 nm and was operated at λ =400 nm. The magnified
+image (350 nm spacing) can be clearly resolved with an optical microscope [numerical
+aperture (NA) = 1.4], thus demonstrating magnification and projection of a sub-
+diffraction-limited image into the far field.
+
+[Figure 7: Composite of six panels. Top-left (a) and (b): cylindrical multi-layer and spoke-like hyper-lens structures, captioned "Jacob, Alekseyev, Narimanov, Opt.Exp.'06". Bottom-left: a half-cylinder layered structure with arrows "To the far-field optics", captioned "Salandrino & Engheta, PRB'06". Bottom-center: panel (a) showing elongated spots and a triangular taper, captioned "Govyadinov & Podolsky, PRB'06". Right panel: a 3D cutaway diagram with labels Object Plane, Hyperlens, Hyperlens Image Plane, Quartz, Conventional Lens, Far field Image Plane, captioned "Liuet.al, Science'07".]
+
+Figure 7. Theoretical Concepts (left panel) and Experimental Implementation (right panel) of an Optical
+Hyper-lens Capable of Magnifying Sub-Diffraction Objects to Observable (larger than λ/2) Size
+
+
+9
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+Note that the hyper-lens concept does not require employing a bulky near-field
+scanning optical microscope. However, the practical implementation of the hyper-lens is
+by no means simple. The original implementation required depositing the sample on the
+curved surface of the hyper-lens. A more practical implementation of the super-lens has
+been theoretically proposed by another group (Reference 26). The concept is shown in
+Figure 8. The hyper-lens involves an array of thin metallic wires converging towards the
+tip. As is demonstrated, a dense array of metal wires separated by much less than the
+wavelength constitutes a metamaterial with the indefinite permittivity tensor.
+Specifically, the tensor component along the wires is given by:
+
+       [Equation 3: ε_zz = 1 − ω_p²/(ω² − k_z²c²)  and ε_⊥ = 1,]                          (3)
+
+where the z component is along the wires and perpendicular direction is normal to the
+wires. Because the only propagating waves are the TEM waves satisfying the
+ω² = k_z²c² dispersion relation, this meta-medium is strongly anisotropic and supports
+sub-wavelength waves which perform imaging. The spatial resolution is given by the
+spacing between wires. Figure 8 (right panel) shows the magnified image of a small
+(λ/25) object placed at the tip of the hyper-lens. The magnification factor is 5x.
+
+[Figure 8: Two-panel figure. Left panel: 3D schematic with axes ranging from −10 to 30
+showing a converging array of metal wires forming a cone; arrows point downward from a
+top plane labeled "Object" to a bottom plane labeled "Image". Right panel: black-and-white
+image plot with axes X/L_0 (−5 to 5) and Y/L_0 (−5 to 5) showing magnified white circular
+features with small arrows.]
+
+Figure 8. Hyper-Lens Based on a Converging Array of Metal Wires. A small object can be placed at the tip,
+illuminated from the top, and magnified by the expanding array of wires. Left panel: schematic. Right panel: λ/25
+object magnified by a factor 5x by the expanding hyper-lens. This hyper-lens can operate at mid-IR frequencies.
+(Reference 26)
+
+
+Another concept for sub-wavelength imaging employing metamaterials is the so-called
+Far-Field Super-Lens (FSL). The concept is pioneered in Reference 27. The idea is
+
+10
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+described in Figure 9. A sub-wavelength object (for example, two slits) is located at the
+bottom of a multi-layer super-lens. Another sub-wavelength grating is deposited on top
+of the super-lens. Because the super-lens (and for that matter, any indefinite
+permittivity material) is capable of propagating sub-diffraction waves, the
+electromagnetic perturbations created by the object are propagated through the super-
+lens upwards, until they encounter the sub-wavelength grating. At that point these sub-
+wavelength perturbations are diffracted on the image-releasing grating and converted
+into the far-field electromagnetic waves. Those far-field waves are collected by the
+objective of a microscope and observed through the eyepiece. The schematic is shown
+in Figure 9(a). Note that, again, there is no need for NSOM. The actual implementation
+of the FSL used the following object: a nanowire pair with 50 nm wide slit and 70 nm
+gap inscribed by focused ion beam on a 40 nm thick Cr film on the quartz substrate.
+Diffraction-limited image from a conventional optical microscope cannot resolve the two
+nanowires (NA = 1.4, λ_0 = 377 nm) as can be seen in Figure 9(c), but the FSL-equipped
+microscope can as shown in Figure 9(d).
+
+Despite the success of this demonstration, there are serious issues involved in imaging
+sub-wavelength objects. Specifically it is pointed out in Reference 27 that multiple
+diffractive orders can become entangled, (that is, launched in the same direction into
+the far field). Disentangling these diffraction orders is very important. The payoff would
+be imaging of fully 2-D (flat) objects with a resolution smaller than the period of the
+image-releasing grating. More precisely, this ambiguity is illustrated by the right panel
+in Figure 10. If the sub-wavelength object is represented by the continuous spectrum
+(blue line), then the spectrum can be sampled within the discrete set of "zones" which
+are defined by the diffractive orders of the image-releasing grating. The width of each
+zone is 2ω/c , and they are labeled as 1ˢᵗ order, 2ⁿᵈ order, and so forth. Wave numbers
+belonging to the different zones can be diffracted onto the same far-field detector as
+explained in Figure 10. In order to disentangle the 1ˢᵗ and the 2ⁿᵈ zones, a single
+detector cannot provide sufficient information. It turns out that using two detectors (A
+and B) and two laser beams (Beam A and Beam B) provides additional information that
+is sufficient to disentangle the two zones. This additional information is obtained by
+comparing the intensity on the two detectors A and B. Another advantage of this
+imaging technique is that it is interferometric in nature. Therefore, even if the
+contribution of some of these spectral zones' orders is very weak, it can still be
+detected because of the high sensitivity of the interferometric techniques. What makes
+this interference special is that it involves sub-diffractive waves propagating through
+the indefinite permittivity metamaterial. Below some of the experiments conducted in
+the laboratory that demonstrate such interference are discussed.
+
+
+11
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+[Figure 9: Multi-panel figure. Panel (a): schematic showing "Far field" with diffractive
+orders, an "Amplitude" plot, "FSL", "Near field", and an object. Panel: drawing of a
+"Detector" atop a "100 x Objective" microscope column over the FSL sample/specimen.
+Panels (b), (c), (d): grayscale microscope images (b at top showing resolved features,
+c and d showing dark squares). Panels (e), (f): (e) 3D schematic of stacked layers with
+upward arrows; (f) dark image with scattered bright dots and a scale bar.]
+
+Figure 9. FSL Based on an Indefinite Permittivity Metamaterial Placed Between the Object and the
+Image-Releasing Grating. The grating releases into the far field sub-diffraction waves produced by light
+scattering off the object. The role of the metamaterial is to propagate sub-diffraction waves from object to grating.
+(Reference 27)
+
+
+Ever since Merlin's invention (Reference 28) of the sub-diffraction near-field plate, it
+has become clear that the interference between sub-diffraction electromagnetic fields
+can result in the formation of a deeply sub-wavelength image. The near-field plate,
+however, is not an imaging device; its purpose is to create a well-defined image using
+an elaborate pre-fabricated sub-wavelength structure on the plate's surface. The goal
+for this study is to observe an a priori unknown sub-wavelength image using a near-
+field structure. In the past, successes (Reference 19) in retrieving images of sub-
+wavelength objects (such as λ/20 holes) using an NSOM for radiation detection are
+achieved. An NSOM is a near-field instrument, therefore, a much more desirable
+detection method would involve far-field detection. To advance this goal, and to
+develop a tool sometimes referred to as the FSL, we've initiated research on multi-
+beam multi-detector sub-wavelength holography illustrated in Figure 10.
+
+[Figure 10: Left panel: schematic showing two "Detectors" labeled B and A at top with
+upward arrows; an "Indefinite Permittivity Medium" block with period D; "Beam A" and
+"Beam B" incident from below; boxed equation k₁ − 2π/D = k₂ − 4π/D. Right panel: plot
+of intensity vs. wave number k showing a "Far field" envelope curve, a central dark band
+of width 2ω/c, dashed boxes labeled "1st order" and "2-nd order", markers 2π/D and 4π/D.]
+
+Figure 10. Tomographic Multi-Beam Multi-Detector Holography of Sub-Wavelength Objects Using
+Indefinite Permittivity Medium (IPM). Incident beam(s) scatter off the sub-λ object, propagate through the
+IPM, and then get re-scattered into the far field by the grating with the period D. The purpose of the multi-detector
+arrangement is to disentangle the k₁ and k₂ spatial wave numbers in the object's spectrum (shown in the left
+panel). Beams A and B are phase-shifted with respect to each other.
+
+12
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+Our implementation of the FSL utilizes an IPM whose dielectric permittivity tensor is
+anisotropic and contains positive and negative components: ε_⊥ > 0, ε_∥ < 0 , where parallel
+refers to the IPM/object interface. We have already fabricated such IPMs using SiO2-
+SiC-SiO2 multi-layer, and are investigating other approaches involving selectively-doped
+semiconductor multi-layers similar to the ones used by Gmachl's group at Princeton.
+SiO2-SiC-SiO2 multi-layers are produced in-house (with SiC films shipped by Professor
+Ferro from University of Lyons, France). The main function of the IPM is to propagate
+sub-diffraction waves ( k_∥ > ω/c ) with as little decay as possible. That happens because
+these sub-diffraction waves are no longer evanescent: k_⊥² ≈ −k_∥²ε_⊥/ε_∥ > 0 . It is
+demonstrated experimentally that there exists a frequency range for which sub-
+diffraction waves propagate through the IPM with less attenuation than the radiation-
+zone waves ( k_∥ < ω/c ), see Figure 11.
+
+[Figure 11: Left panel: experimental setup schematic showing "MCT detector on optical rail"
+with diffractive orders labeled −3ʳᵈ −2ⁿᵈ −1ˢᵗ 0ᵗʰ 1ˢᵗ 2ⁿᵈ 3ʳᵈ; D₁ = 2.74 µm; layer stack
+labeled 150 nm Au, 220 nm SiO₂, 440 nm SiC, 220 nm SiO₂, 130 nm Au; D₂ = 2.94 µm;
+500 nm; "Lock-in amplifier"; "Optical chopper"; a circular grating element; "Mid-IR CO₂
+laser 10.66 µm – 11.31 µm". Right panel: log-scale plot of Transmission (normalized to
+incident laser power) vs. Wavelength (µm) from 10.6 to 11.4, with curves labeled m=0, m=1,
+m=2, m=3; annotation k_⊥^(m) = 2πm/D₂; a "crossover" arrow; region markers ε_⊥ < 0,
+ε_∥ > 0 and ε_∥ > 0, ε_⊥ < 0.]
+
+Figure 11. First Experimental Demonstration of Propagating Sub-Diffraction Waves in the IPM. (Left):
+Experimental setup demonstrating how sub-diffraction waves are launched into the IPM using FIB-fabricated sub-
+wavelength grating. Because the periods of the bottom ("launching") and top ("transforming") gratings are
+different, far-field observation of different harmonics of the grating is enabled. (Right): Experimental
+results: the first sub-diffraction harmonic of the grating (green line) becomes stronger than the zeroth radiation-
+zone harmonic of the grating (blue line) in the region where ε_⊥ > 0, ε_∥ < 0 .
+
+
+Once sub-diffraction waves propagate through the IPM, they can diffract on the image-
+releasing grating (see Figure 10) and be radiated out into the far field. A detector array
+can be used to collect the signal and reconstruct the image. Unfortunately, different
+wave numbers k_∥ of the object are directed into the same detector and produce an
+ambiguity in extracting their respective amplitudes A(k_∥) . This ambiguity is illustrated
+by Figure 10: wave numbers k₁ = Δk + 2π/D and k₂ = Δk + 4π/D are directed to the
+same far-field detector. Simply put, a single number (intensity of light with the wave
+number Δk < ω/c incident on the detector) is insufficient for determining two scattering
+
+13
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+amplitudes ( A(k₁) and A(k₂) ). Therefore, a new concept has to be developed, and the
+multi-detector technique is such a concept.
+
+The concept requires two detectors and two coherent laser beams. The two beams are
+formed using a beam-splitter and a variable delay line imparting a phase shift to the
+two beams (see the actual experimental photograph in Figure 13 where the beam-
+splitter BS and the Delay Line are shown). We have theoretically demonstrated that the
+intensity dependences of the two detector intensities I₁(ψ) and I₂(ψ) as a function of
+the phase delay ψ provides enough information to recover both A(k₁) and A(k₂).
+
+[Figure 12: (Left) schematic diagram of a 2-beams/2-detectors interferometric setup showing detectors D₂ and D₁ at top, beams A, B, C, D, labeled spacings D₁ = 2.74 µm, 500 nm, and a layered material stack: 100 nm Au, 220 nm SiO₂, 440 nm SiC, 220 nm SiO₂, 100 nm Au, with D₂ = 2.94 µm and a Delay Line. (Right) plot titled "Unequal grating phase interference: 0ᵗʰ, 2ⁿᵈ orders" — detector intensity (normalized to 0ᵗʰ order transmission) on y-axis (0 to 2) vs. x-axis (0 to 240), showing two oscillating sinusoidal curves labeled "144 points r 360" and "24 points r 60", with annotations and "Input into MATLAB"; x-axis label "Example 'micrometer position' not correlated to phase"]
+
+Figure 12. (Left): Schematic for 2-Beams/2-Detectors Interferometric Measurement. (Right):
+Numerical Simulation: intensity on the two detectors as a function of the phase delay between beams A and B
+produced by the interference between the zeroth and first diffractive orders of the bottom diffractive grating
+(numerical simulation). The second detector provides the necessary second data point which is necessary for
+separating the contributions of different diffractive orders.
+
+Two sets of experiments demonstrating the feasibility of the concept are conducted.
+None of these experiments constitutes imaging per se. However, without demonstrating
+the two key milestones described below, proper imaging experiments cannot be
+attempted.
+
+The first milestone involves demonstrating that IPM indeed supports propagating (non-
+evanescent) sub-diffraction waves. Figure 11 shows the experimental schematic (left
+panel) and experimental results. The bottom grating "imprints" its Fourier components
+(zeroth, first, second, third, and so forth) onto the incident laser pulse thereby
+generating electromagnetic waves that are launched into the SiC-based IPM. The zeroth
+harmonic is inside the radiation zone (that is, it is not sub-diffraction), while the first,
+second, and so forth sub-diffraction. These EM waves scatter off the top grating having
+a slightly different period and are released into the far field. Because the direction in
+which waves are released depend on the Fourier harmonic's number, we can
+experimentally separate and measure them. Clearly, the relative magnitudes of these
+diffractive orders dramatically vary as a function of the laser wavelength. For example,
+the zeroth diffraction order clearly dominates in the ε⊥ < 0,ε∥ > 0 frequency range.
+However, in the ε⊥ > 0,ε∥ < 0 frequency range the first diffractive order becomes larger
+
+
+14
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//~~FOR OFFICIAL USE ONLY~~
+
+than the zeroth one. This confirms the recently predicted effect that for IPMs one can
+indeed observe a very counterintuitive effect: sub-diffraction waves can indeed
+propagate with less loss than the diffraction-limited ones.
+
+The second milestone involves demonstrating the possibility of observing the
+interference of sub-diffraction electromagnetic waves inside the IPM using the two-
+beam/two-detector technique. Figure 10 demonstrates this interference pattern which
+reveals the phase advance of the sub-diffraction waves inside the IPM. While we have
+so far demonstrated the interference between the first Fourier component of the grating
+(sub-diffraction) and the zeroth Fourier component, we see the possibility of interfering
+even more sub-diffraction waves (2nd and 3rd).
+
+[Figure 13 (Left): Photograph of an optical-bench experimental setup, labeled "Adjustment Mirror" and "Delay Line". (Right): Two stacked plots of interferometric scan results — top plot titled "Interference scan, 10.800 microns" with traces "Detector 2 - "+1" + "0" orders" and "Detector 1 - "0" + "-1" orders"; bottom plot titled "Interference scan, 11.310 microns" with x-axis "Delay line position, microns" and traces "Detector 2 (B) "+1" + "0" ord" and "Detector 1 (B) "0" + "-1" ord".]
+
+Figure 13. (Left): Experimental Setup for 2-Beams/2-Detectors Interferometric Measurement in Our
+Lab. (Right): Preliminary Experimental Results: infrared intensity on two detectors (red and black lines) are
+(i) different from each other; (ii) have a sinusoidal dependence on the delay line position (in microns), which is
+equivalent to the phase delay between the two beams; (iii) are shifted in phase by the amount equal to twice the
+phase difference between the 1st order (sub-diffraction) and 0th order (radiation zone) Fourier components of the
+bottom grating. Measurements taken at λ= 10.8 μm and λ= 11.3 μm.
+
+With these two milestones established, it is now possible to conduct true sub-
+wavelength imaging experiments using two (or more) far-field detectors and jointly
+processing their inputs.
+
+15
+
+UNCLASSIFIED//~~FOR OFFICIAL USE ONLY~~
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+
+Applications to Circuits and Waveguide Miniaturization:
+Slowing Down and Manipulating Electromagnetic Pulses
+(EMP) Using Advanced Metamaterials
+
+Given the space constraints of an advanced aerospace platform and the amount of the
+useful payload that has to be carried, it is very important that every optical and
+microwave component be as small as possible. Because of the very large speed of light,
+there is a natural limit to how small such components can be made. Any structure
+capable of processing EMPs (be those optical, THz, or microwave) of temporal duration
+τ must be at least L = cτ long. For example, a 1 ns microwave pulse can be
+manipulated inside a device that is at least 1 ft long. Pulse manipulation can be
+understood very broadly by pulse compression, frequency shifting, harmonics
+generation, or other. For aerospace communications systems, it may be very desirable
+to have the ability to manipulate the format of EMPs, (that is, to change their
+frequency, duration, and repetition rate). Slowing down or even stopping the EMP can
+circumvent the length requirement if the group velocity is reduced to vg << c, and thus
+the required length is L = vgτ .
+
+
+[Figure 14: Schematic diagram of a waveguide with metal top and bottom boundaries. From left, a pulse ω0 with group velocity propagation enters a region labeled CT, passes capacitor C, into a magnetized plasma region containing ω0 Vg0 and ω1 Vg1 with magnetic field B(t); labeled segments Vg0T and Vg0T flank the plasma; on the right, pulse ω1 exits past capacitor C with label (CT)Vg0/Vg1]
+
+Figure 14. Schematic of Pulse Compression in Magnetized Plasma. A radiation pulse with initial frequency
+ω0 and duration T slows down in the plasma to a group velocity Vg0 << c . Adiabatic spatially uniform variation
+of the magnetic field changes the radiation frequency to ω1 and increases the group velocity to Vg1 >> Vg0 . The
+emerging pulse is compressed to T1 = T Vg0/Vg1 . (Reference 29)
+
+
+An example of the pulse slowing down and subsequent manipulation is first discussed in
+Reference 29 in the somewhat esoteric context of magnetized plasma. Pulse duration,
+frequency, and (for multiple pulses) repetition rate can be controlled by storing (or
+slowing down) electromagnetic waves and subsequently changing the system's
+parameters. The essence of the compact pulse manipulator is shown in Figure 14. The
+pulse is slowed down inside the compact plasma device and manipulated by changing
+the magnitude of the magnetic field. The advantage of slowing the pulse down is
+three-fold. First, the device can be made smaller, resulting in size savings. Second, the
+temporal scale on which the system has to be manipulated is lengthened because the
+pulse is moving slowly. Finally, the potentially large ratio between vg1 >> vg0 results in
+the more dramatic dynamic range of possible pulse compression ratios. Plasma-based
+
+
+16
+                    UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+devices may not be appropriate in the aerospace context because of their large size,
+power requirements, large magnetic coils, and so forth.
+
+Fortunately, metamaterials offer some exciting opportunities for slowing down
+electromagnetic waves as has been recently recognized (Reference 30). Specifically,
+the authors have theoretically demonstrated that an axially varying heterostructure
+with a metamaterial core of negative refractive index can be used to efficiently and
+coherently bring light to a complete standstill. One of the most remarkable aspects of
+the approach is that it works for relatively broadband pulses. The broadband capability
+is achieved through "tapering" (or axial variation) of a metamaterial's parameters such
+as the effective ε and μ. Due to tapering, each frequency component of the wave
+packet is stopped at a different guide thickness, leading to the spatial separation of its
+spectrum and the formation of a 'trapped rainbow'. In Reference 30, the authors have
+actually opted for a physical tapering of the waveguide (that is, reducing the thickness
+of the NIM waveguide along the length of the waveguide), although other approaches
+such as varying ε and μ will also work.
+
+[Figure 15: Schematic diagram of a "Trapped Rainbow" waveguide. Labeled "Guided electromagnetic wave" at top. Axes labeled x, y, z and 2τ at left. Left portion labeled "Ordinary waveguide" with arrow β; regions marked ε_r3^RHH > 0, μ_r3^RHH > 0; ε_r1^RHH > 0, μ_r1^RHH > 0 with n > 0; ε_r2^RHH > 0, μ_r2^RHH > 0. Right portion labeled "Negative refractive index tapered waveguide" with arrow β (reversed); regions marked ε_r3^LHH > 0, μ_r3^LHH > 0; n < 0; ε_r2^LHH > 0, μ_r2^LHH > 0.]
+
+Figure 15. Trapped Rainbow: A Waveguide with Negative Index Core Can Stop Light. A guided wave
+packet is efficiently injected from the ordinary waveguide to the left-handed heterostructure LHH (see also Figure
+4), inside which it propagates smoothly owing to the slow (adiabatic) reduction in the thickness of the core. The
+smallest (red) frequency components of the wave are stopped at the smallest core thicknesses of the LHH, while
+the largest (blue) components stop at correspondingly larger core thicknesses. (Reference 30)
+
+The schematic of the light-stopping structure based on the waveguide with a negative
+index core (dubbed left-handed heterostructure, or LHH, in Reference 30 is shown in
+Figure 14. Although light stopping is possible in other guided configurations that do not
+necessarily require μ to be negative (for example, a metal-dielectric-metal waveguide
+would suffice), the key here is that perfect impedance matching can be achieved for the
+metamaterials-based waveguides with the negative index core. That is very important
+for maximizing the coupling efficiency from the regular waveguide to the LHH. Although
+Reference 30 does not present any specific ideas as to what could be done with the
+
+17
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+slowed down and/or stopped light, the schematic shown in Figure 13 provides some key
+ideas. Moreover, the prospect of producing a low-loss negative index material in the
+optical domain still remains somewhat distant. Therefore, it may be worthwhile to
+examine other approaches to slowing down light that have emerged in the past few
+years.
+
+Stopping and/or slowing down light is an old idea originating from the atomic concept of
+Electromagnetically Induced Transparency (EIT). The phenomenon has been considered
+to be purely quantum mechanical until several groups have demonstrated that it has
+some classical analogies (Reference 31). Remarkably, at least one group has
+demonstrated in the past year that EIT can be achieved using plasmonic metamaterials
+(Reference 32). The idea is to create a plasmonic "molecule" consisting of a radiative
+element coupled with a subradiant (dark) element. The plasmonic molecule showed
+electromagnetic response that closely resembles the electromagnetically induced
+transparency in an atomic system. Because of its subwavelength dimension, this
+electromagnetically induced transparency-like molecule was shown to be suitable as a
+building block to construct a "slow light" plasmonic metamaterial. The specific design of
+the plasmonic molecule is shown in Figure 15.
+
+[Figure 16: Two simulated field-distribution images on black background. Left: a single rounded rectangular bright "molecule" shape. Right: a paired structure with two short bright bars and a central dot. Color bar at right with values: 40.0, 36.5, 33.3, 30.0, 26.7, 23.5, 20.2, 16.9, 13.7, 10.4, 7.14, 3.88, 0.]
+
+Figure 16. "Plasmonic Molecule" Exhibiting EIT. Left: Radiative element (metal strip) by itself gets strongly
+polarized by the incident EM wave, resulting in weak transmission/strong reflection. Right: Radiative element
+coupled to the "dark" element (two strips). Dark element possesses a non-radiative quadrupole resonance which is
+excited by the radiative element and de-polarizes the radiative element. The result: vanishing reflection, high
+transmission. Color bar: |E| normalized to the incident laser field at λ = 700 nm. (Reference 32)
+
+This specific plasmonic molecule consists of the "dark state" (two parallel plasmonic
+antennas oriented perpendicular to the incident vertical electric field) and the "radiative
+state" (single plasmonic antenna oriented parallel to the electric field). The quality
+factor of the "dark antenna" state is an order of magnitude higher than that of the
+"radiative" antenna. When the "radiative" antenna is spatially separated from the "dark"
+antenna (or when the dark antennas are not present at all), all or most of the incident
+radiation is reflected from an array of "radiative" antennas whenever the resonance
+frequency of the antenna coincides with that of the laser. In this example, the long
+antenna is 128 nm long, and the resonance wavelength is at λ = 700 nm. The key
+effect here is that the resonance of the "dark" antenna should be at the same
+wavelength.
+
+18
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Because the exploited resonance has a quadrupole nature, it is slightly red-shifted. For
+that reason, the length of the "dark" antenna is 100 nm. When the two antennas are
+brought together, the radiative antenna polarizes the dark antenna, which, in turn,
+depolarizes the radiative antenna. As a result, the dipole moment of the coupled system
+is drastically reduced, the reflection drops and transmission increases to almost 100
+percent (limited only by losses). Most of the energy is now stored inside the non-
+radiative (dark) antenna.
+
+If multiple layers of dark/bright antennas are employed as shown in Figure 16, then
+one can achieve one of the most important manifestations of EIT; "slow" light. Slow
+light can have many interesting technological applications because (a) slow light is easy
+to manipulate by changing the structure's parameters (as described in the section on
+tunable metamaterials), and (b) slow light has a high field intensity (enhanced by the
+ratio of the free-space propagation speed to the slow propagation speed), therefore, all
+nonlinear processes are enhanced for slow light. Such nonlinear processes may include
+harmonics generation, optical diode action (see the section on non-reciprocal optical
+elements), and many others.
+
+[Figure 17: 3D stacked-layer diagram labeled "(a)". Several horizontal planar layers (with a vertical dot ellipsis between the upper stack and a bottom layer), each layer containing an array of dark/bright antenna unit cells (short bars). Field axes at left: E and H vectors, with k pointing downward.]
+
+Figure 17. True Multi-Layer Metamaterial With a Unit Cell Shown in Figure 15: radiative antenna (single
+metal strip) coupled to a dark antenna (two perpendicular metal bars). Such metamaterial exhibits "slow" light
+propagation along the incidence direction (slowed down by a factor 30 or more). (Reference 32)
+
+It is important to realize that the geometry suggested in Reference 32 is not unique.
+For example, the dark and radiative antennas need not reside in the same plane. Nor is
+the effect of EIT (and the related phenomenon of slow light) limited to the optical
+domain. Both infrared and microwave-range designs have started emerging. These
+frequency domains are likely to be of greater use for advanced aerospace platforms
+than the visible range targeted by most studies.
+
+19
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+Metamaterials for Energy Harvesting
+
+One of the most important applications of metamaterials is related to developing
+"perfect absorbers" of infrared electromagnetic radiation, be it in the mid-to-long
+infrared part of the spectrum (making it relevant for night vision, harvesting of the
+Earth glow mid-infrared radiation, and so forth) or in the near-to-mid-IR spectrum
+(making it relevant for day-time infrared photography of the earth terrain). For
+example, day-time infrared photography relies on the different sunlight reflectivities of
+surfaces (for example, snow, brick walls, concrete walls, grass, and so forth), and can
+easily distinguish between those surfaces. This reflectivity differential tends to be the
+greatest between 2-3 microns, and rapidly decays toward longer wavelengths. Open
+sky contains very little infrared radiation which explains why infrared
+imaging/photography is very important for aerial and satellite surveys. Because light
+scattering in the atmosphere scales as λ^-4, imaging through the atmosphere in the
+visible range is impossible, and infrared imaging becomes important. This is especially
+true for the 1 < λ < 4 μm range. For longer wavelengths (λ>10 μm) this brightness
+differential is largely gone because the emission spectrum is dominated by thermal
+emission. In fact, the Earth glow maximum is around λ>10 μm, with most of the
+energy contained in the 3 μm < λ < 14 μm range. This longer wavelength (mid-to-far
+IR) spectral range is also very important. It can be used for night-time energy
+scavenging by high-altitude satellites and other aerospace platforms.
+
+There has been a surge of activity in this area, first in the microwave/THz part of the
+electromagnetic spectrum (References 33, 34), and subsequently in mid-to-far infrared
+(Reference 20). The concept of narrow-band metamaterials-based absorbers introduced
+in Reference 33 has the potential for developing highly efficient bolometer arrays. When
+applied to the infrared part of the spectrum, it can be used for space navigation,
+especially when weak infrared signals from specific stellar objects need to be picked up
+and discriminated from other radiation sources. For such applications, the narrow-band
+"perfect" absorption is highly suitable. An array of such bolometers would reject
+(reflect) all undesirable frequencies and focus on the single wavelength characteristic of
+the source of interest. Moreover, if an array of different (for example, tuned to different
+frequencies) narrow band detectors can be deployed, then the hyper-spectral imaging
+capability could bring additional benefits. For example, absolute temperatures of a
+radiation source (that is, stellar bodies) could be accurately determined, and could
+improve the accuracy of space navigation further.
+
+[Figure 18: Left panel — unit cell design schematics labeled (a), (b), (c) showing metallic structures with dimensions t, G, H, W, L, a_x, and field axes E, k. Right panel — graph with Reflectance/Absorbance on left y-axis (0.0 to 1.0) and Transmission on right y-axis (0.00 to 0.05), x-axis Frequency (GHz) from 9 to 14; a sharp absorption resonance peak near 11.5 GHz.]
+
+Figure 18. "Perfect" Narrow-Band Microwave Absorber. (a–c): Unit cell design. Right panel: simulated
+absorption/transmission/reflection. (Reference 33)
+
+20
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+One possible design for the microwave frequency band is shown in Figure 17. High
+absorption is accomplished by reducing reflections to zero. This is accomplished by
+choosing metamaterials parameters such that ε_eff(ω_r) = μ_eff(ω_r) at the resonant
+frequency ω_r. Note that both the real and imaginary parts of the permittivity and
+permeability must be equal to each other, and that the imaginary parts don't
+necessarily need to be small for absorber applications. In fact, it is desirable that they
+are not too small, thereby enabling 100 percent absorption within a single layer of
+metamaterial. The above design can be scaled down to the THz range, as was later
+demonstrated in Reference 34. It is difficult to find strongly absorbing materials at THz
+frequencies that are compatible with standard photolithography. Thus, a potential
+application of these metamaterial structures is as absorbing elements in thermal
+detectors. A strong absorption coefficient is also necessary to have a small thermal
+mass. This is important for optimizing the temporal response of thermal detectors. The
+metamaterial presented here has a 6 micron thick film (that is, λ/50 thickness for THz
+radiation) and 70 percent absorptivity, which yields an absorption coefficient of 2000
+cm^-1.
+
+One drawback of the original design was the narrow angular range of the absorber. The
+absorption dropped dramatically when the incidence angle was as small as 20 degrees.
+The reason for this is a relatively large unit cell of the metamaterial. In fact, when the
+unit cell size is larger or comparable to λ/2n, where n is the refractive index of the
+substrate, it is inappropriate to call such structure a "metamaterial". A true impedance-
+matched metamaterial would, in fact, always have a very broad angular response.
+
+[Figure 19: Left panel — graph of absorption (1-|r|^2) on y-axis (0 to 1) vs. θ, deg on x-axis (0 to ~45). Three curves with legend: "PIMNIM" (solid), "Lx=∞, ε=μ=-1+i" (dashed), "L=200nm,ε=μ=-1+i" (dash-dot); an inset shows a unit-cell structure. Right panel — schematic of an absorption-measuring experiment showing incident H, E, axes X, Z, angle θ, ray r, and a hatched slab labeled "Metamaterial Absorber" with vertical extent Lx.]
+
+Figure 19. Wide-Angle Plasmonic Absorber Based on Negative Index Metamaterial. Right panel:
+schematic of an absorption-measuring experiment. A generic metamaterial with ε_yy = μ_zz = -1+i, μ_xx = 1 is
+assumed. Left panel: angular dependence of the absorption for a generic and specific (shown in the inset)
+metamaterial. Both exhibit wide-angle absorptivity. (Reference 20)
+
+This fact can be expressed by a simple formula for the absorption coefficient
+A (Reference 20):
+
+21
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+[Equation (4): A = 1 - | (cosθ - √(ε_yy/μ_zz - sin²θ/(μ_xx μ_zz))) / (cosθ + √(ε_yy/μ_zz - sin²θ/(μ_xx μ_zz))) |²]                    (4)
+
+where we've assumed that, for normal incidence, this metamaterial is impedance-
+matched: ε_yy = μ_zz = -1+i. Equation 4 can be simplified under the assumption
+of |ε_yy| >> 1, μ_xx = 1: A ≈ 1 - tan⁴(θ/2), implying that A ≈ 0.97 even for θ = π/6. The
+challenge, if course, is to design a true impedance-matched optical metamaterial.
+Success has been achieved in designing such a metamaterial (Reference 20).
+
+The recently published design is shown in Figure 19. The unit cell consists of two layers
+of plasmonic antennas; the cut-wire antenna that imparts magnetic (as well as some
+electric) response to this metamaterial, and the continuous-wire antennas that impart a
+purely electric response. It is found that the wide-angle capability could be very
+important for several applications. Wide-angle power absorption efficiency is desirable
+for miniaturizing photodetectors or microbolometers down to the wavelength size.
+
+[Figure 20: Left panel — 3D schematic of a silver-based plasmonic structure labeled "Continuous Silver Wires Control ε_eff", with stacked layers; dimensions 20 nm, 80 nm, 50 nm, 80 nm, 320 nm, 250 nm; a "cut" silver wires control μ_eff layer indicated. Right panel — graph of permittivity/permeability (y-axis -4 to 4) vs. Wavelength [nm] (x-axis 1450 to 1700); curves with legend: Re ε (solid), Im ε (dotted), Re μ (dash-dot), Im μ; annotation "Impedance Matching" with circle marking μ_re = ε_re = -1 near 1550 nm.]
+
+Figure 20. Specific Design of a Wide-Angle Plasmonic Absorber Based on Negative Index Metamaterial
+Operating at λ=1550 nm. Left panel: Schematic of the silver-based plasmonic structure. Right panel: Extracted
+permittivity and permeability for the normal incidence demonstrate impedance matching: ε_yy = μ_zz = -1+i.
+(Reference 20)
+
+For example, to focus light on a wavelength-sized photodetector or micro-bolometer
+requires high-NA optics (a NA=0.5 or higher). Therefore, a photodetector should be
+able to absorb light incident at 30 degree angle. For advanced aerospace platforms it is
+easy to envision a scenario where an airborne platform is powered by a high-power
+infrared laser source located on Earth. If the wavelength falls inside the transparency
+window of the atmosphere (between 3 and 4 μm, and also around 10 μm), then such a
+
+22
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
+
+prospect is not too farfetched because scattering in mid-infrared by atmospheric gases
+is essentially zero. For such a remote powering scenario to be feasible, one would need
+a highly efficient absorber at the specific wavelength corresponding to that of the
+source. Moreover, as the space platform is moving, it is desirable that the absorption
+remain high even for non-normal incidence angles.
+
+The second application is for thermophotovoltaics (TPV) (Reference 35). Some type of
+thermophotovoltaic converter will almost undoubtedly be installed on the advanced
+aerospace platforms of the future. Presently even advanced (experimental) electric cars
+are using TPV cells to convert the heat from their engines into electricity. Such
+converters have already been shown to be capable of increasing the range of electric
+vehicles by a factor of 3. We believe that metamaterials could play an important role in
+developing highly efficient TPV cells. By virtue of Kirchhoff's law, emissivity of a thermal
+emitter approaches the blackbody limit only if the absorptivity approaches unity.
+Moreover, wavelength-selective radiators can dramatically improve the efficiency of
+current generation in a TPV cell if their emission spectrum is matched to the bandgap of
+the TPV converter. For example, a typical TPV converter, GaSb, has the bandgap of EG
+= 0.7 eV that would be ideally suited to a wavelength-selective radiator operating in
+near infrared around λ = 1.7 μm.
+
+[Figure 21: Left panel — graph "Reflection from SiC on Au" of Reflectivity (y-axis ~0 to 0.9) vs. λ (cm^-1) (x-axis 600 to 1200); two curves with legend "Theory" (dashed) and "Experimenta data" (dotted), showing a sharp reflectivity dip. Right panel — "Absorption vs. n_r and n_i for λ=13μm (ω=760cm^-1)" graph of Imag(n) (y-axis 0 to 2.5) vs. Real(n) (x-axis 5.5 to 8); nested constant-reflectivity contour ovals labeled 0.2, 0.1, etc.; annotation "SiC [d=490nm]" hatched box and "n_SiC for ω~10cm^-1".]
+
+Figure 21. (Left) Experimental Result, Reflectivity Versus Wavelength, that Inspired the Proposed
+Effort: A Modestly Absorbing Material (SiC) Turns Into a "Perfect Mid-IR Absorber" When a λ/4 -Thick
+SiC Film Is Backed by a Metal Mirror. (Right): Theoretical Plot — Constant Reflectivity Contours Plotted
+in the (Real(n), Imag(n)) Space. High material absorptivity Imag(n) is required to achieve perfect absorption
+(R=0). Posed question: can a metamaterials-based semi-transparent mirror enhance absorption and result in an
+almost-perfect ultra-thin absorber?
+
+The perfect absorbers shown in Figures 17-19 may be too complex for practical
+applications. Metamaterials tend to be lossy because of the large field concentration in
+the metal. Therefore, work has recently started working on a new type of metamaterial
+(so-called CMMs mentioned in the Introduction), that could potentially make weakly-
+absorbing semiconductors (that is, Si in the visible) absorb much stronger. The goal
+here is to make a thin (although not necessarily a very sub-wavelength) absorber
+backed up by a sheet of CMMs which would prevent reflections and result in a very high
+absorption. Applications that are considered are essentially the same as for the
+"perfect" absorbers described above. For example, satellites can use the Earth glow for
+nighttime battery recharging. The collected power is quite high; 1 m² of black surface at
+
+23
+
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
