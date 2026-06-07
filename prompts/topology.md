@@ -196,3 +196,29 @@ blocked (the one-new-synthesis-node-per-session rule).
 The return-value-*is*-the-handoff mechanism (each role returns its stub per
 `build-protocol`'s *Handoff stubs* + `stub-schemas.md`; no file is written for it)
 keeps the durable record in one place — the manifest, artifact, and git.
+
+**The orchestrator relays, it does not author.** Because a subagent can't spawn
+a subagent, every handoff routes through the main-thread orchestrator — but its
+job is *transport only*: relay the closed input set named in the per-step table
+in [`build/SKILL.md`](../.claude/skills/build/SKILL.md) (named fields from the
+prior stub, the target, source paths) and nothing more. It must **not** restate,
+re-derive, or "clarify" a role's evidentiary / linking (stub-never-null) /
+quote-scope / relevance / prose-drift policy in the task prompt, because a
+subagent weights its just-issued prompt **above** its standing contract — so
+improvised policy silently overrides the contract. The observed failure: an
+authored Description dropped every source-attested entity link after the
+orchestrator imported the discretionary quote-relevance judgment ("judge
+load-bearing-ness") into the absolute entity-linking rule. The fix is the closed
+per-step input spec in `build/SKILL.md`, **not** a gate — the contracts already
+own the policy and are correct.
+
+A disk-stub transport (the pre-skills-migration `/tmp/handoff-{slug}-{role}.yaml`
+files) was evaluated and rejected as the fix: it transports stub *data*
+losslessly but does nothing to stop the orchestrator adding policy prose
+alongside the file path — it addresses data fidelity, not the policy-injection
+hazard — and it was originally dropped because the verbatim-boundary roles (the
+`worker` has no Write tool) cannot satisfy a role-written handoff file, so
+reintroducing it would either puncture that capability boundary or reverse the
+"no file is written for the handoff" principle for zero gain on the real hazard.
+Its one legitimate kernel — relay the stub verbatim, never paraphrase — is
+folded into the "relay, don't author" rule instead.

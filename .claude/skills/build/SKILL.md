@@ -25,6 +25,24 @@ to the next, and never hand-author the node. The shared contract
 (stub schemas, phases, branches, fix-the-data) is preloaded from
 `build-protocol`.
 
+**Relay, don't author — the one handoff rule.** Every role's policy —
+evidentiary discipline, entity-linking (stub-never-null), quote scope and
+voice, relevance judgment, prose-drift framing — already lives complete and
+correct in that role's contract (`build-protocol` + `.claude/agents/{role}.md`).
+At each handoff your job is to **relay the step's closed input set** (the
+`Pass:` column of the table below — named fields quoted verbatim from prior
+stubs, the target, source paths) and **nothing else**. Do not restate,
+summarize, re-derive, or "clarify" *how* a role should judge linking,
+relevance, quote scope, or prose-drift: a subagent weights its just-issued task
+prompt **above** its standing contract, so any policy you improvise into the
+prompt silently overrides the contract. The recurring failure this prevents: an
+authored Description dropped every source-attested entity link after the
+orchestrator imported the discretionary quote-relevance judgment ("judge
+load-bearing-ness") into the absolute entity-linking rule (BACKLOG / topology
+"Handoff"). If you feel the urge to explain how a role should decide something,
+stop — that judgment is the role's, and its contract already states it. Relay
+stub fields verbatim; do not paraphrase them.
+
 **Target.** `{type}/{slug}` + scope come from the user — per the project
 discipline, never invent a build target. If `$ARGUMENTS` is empty, ask what to
 build before doing anything.
@@ -40,6 +58,23 @@ build before doing anything.
 > the explicit step ↔ role mapping, see the table in
 > `../../../prompts/topology.md` "The shape". This file refers to roles by **name**,
 > never by number.
+
+**Per-step inputs (closed).** Pass exactly the `Pass:` cell — relay only, add no
+framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
+
+| Step → role | Pass (relay verbatim from prior stub / user) | Read back (stub) |
+|---|---|---|
+| 1 internal-investigator | target `{type}/{slug}` + scope (from user) | `linked_nodes`, `reusable_sources`, `gaps`, `blocking_prep`, `all_internal` |
+| 2 external-investigator | `gaps[]`, `linked_nodes` (step-1 stub) | `queued_sources[]` (confirming_span-checked), `unfilled_gaps` |
+| 3 archive | `queued_sources[]` (step-2 stub) | `archived[]` + scratch paths, `primary_sources_registered` |
+| 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `cross_ref_candidates`, `background_material`, `cited_works`) |
+| 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
+| 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `adjacent_needs_update[]` |
+
+These are inputs, not interpretation. `linked_nodes` is a **required input
+field** for the builder — check that it is present and relayed, not *how* the
+builder reads it; the contract owns that. (Step↔role numbering matches the table
+in `../../../prompts/topology.md` "The shape".)
 
 1. **`Agent(internal-investigator)`** with the target. Read its stub:
    `linked_nodes`, `reusable_sources`, `gaps`, `all_internal`.
@@ -109,12 +144,11 @@ build before doing anything.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.
-6. **`Agent(builder)`** passing **all worker fragments + the `linked_nodes` /
-   topic-relevance context from step 1** (this context is REQUIRED — the
-   builder judges relevance against it, not the source alone) + the
-   internal-investigator's reuse material (step 1). The builder merges the
-   fragments, runs the extract check, then
-   organize → link → render. Read its stub.
+6. **`Agent(builder)`** — Pass per the table: all worker fragments, plus
+   `linked_nodes` + `topic_relevance` + `reusable_sources` from the step-1 stub.
+   `linked_nodes` is a required *input* — relay it; do not describe how it is
+   used (the contract owns that). The builder merges the fragments, runs the
+   extract check, then organize → link → render. Read its stub.
    - **On `result: fail`:** run
      `python3 scripts/tools/route_failure.py {failing_check_names}`, re-enter
      the owning role it names (Worker for `extract`, Builder for
