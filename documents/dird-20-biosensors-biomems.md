@@ -1,0 +1,462 @@
+---
+id: documents/dird-20-biosensors-biomems
+type: document
+status: primary-source-confirmed
+kind: gov-doc
+doc_form: technical-report
+---
+
+# Biosensors and BioMEMS: A Survey of the Present Field — DIA Defense Intelligence Reference Document, AAWSAP, 31 March 2010
+
+## Document Summary
+
+| Field | Value |
+|---|---|
+| Title | Biosensors and BioMEMS: A Survey of the Present Field |
+| Authored Date (per document) | 2010-03-31 |
+| Author (per document) | [redacted per FOIA (b)(6)] |
+| Classification | UNCLASSIFIED//FOR OFFICIAL USE ONLY |
+| Format | PDF, 46 pages |
+| Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_20-DIRD_Biosensors_and_BioMEMS-A_Survey_of_the_Present_Field.pdf |
+| Local Archive | [sources/government/dird-20-biosensors-biomems-20100331.pdf](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Content Block | None |
+
+---
+
+## Description
+
+Biosensors and BioMEMS: A Survey of the Present Field. The Defense Intelligence Reference Document is 31 March 2010, with an ICOD of 1 December 2009 and control number DIA-08-1003-020, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the Prepared by and Author appear, the document gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]) and, on the Author line, [(b)(6)]. An Administrative Note records that the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The author appears not on the document but on a Defense Intelligence Agency products document ([`/documents/dia-aatip-products-list-2018`]), which gives Dr. Bruce Towe ([`/people/bruce-towe`]), University of Arizona; the document''s own research is by the present author and by colleagues at Arizona State University ([`/organizations/arizona-state-university`]), and "Towe et al. at Arizona State University." The record carries both the University of Arizona name and the Arizona State University name, and does not resolve which one is right.
+
+
+Biomedical sensors and implantable devices employing micro-electromechanical technology will be important to the future of biomedicine; the notion of a bionic man, once just science fiction, is now becoming a reality through the application of microscale technologies, and within the next two decades there may be as many medical treatments based on microdevices as there are pharmaceutical solutions today. BioMEMS stands for biomedical micro-electro-mechanical systems — biological and medical devices created using advanced fabrication processes, often the same photolithographic techniques used to make computer chips, whose applications include neuroprosthetics, sensors and actuators, and microchemistry systems. These devices operate on principles such as capillary force, van der Waals forces, and electric-field forces; in the realm of the very small, the force of gravity is far less important than electrical charge and viscosity.
+
+
+Implants are being developed which allow volitional (thought) control of machines: very small electrodes implanted into the cortex detect electrical activity associated with the volitional desire to move, and an array of implanted microelectrodes whose signals anticipate movement can in turn be used to control machines — the brain-machine interface (BMI), where computers interpret brain signals from implanted neural arrays. Among these technologies is a gear-driven micromachine made through collaboration between ASU and Sandia National Laboratories ([`/organizations/sandia-national-laboratories`]) using Sandia''s Ultraplanar Multi-level MEMS Technology process. The document then examines implantable MEMS drug-delivery pumps and biosensors for blood chemistry, recording that despite decades of work no continuous monitoring sensor that is self contained and implantable has been successful for long term usage, the human body being an exceptionally hostile environment for foreign materials. Towe et al. at Arizona State University have been working on blood glucose sensing through the Seebeck Effect.
+
+
+The military has been interested in the assessment of the state of readiness of a soldier as reflected in his blood chemistry, with remote electronic readout of biosensor information to a central command center presently the stuff of science fiction movies but which reflects real desires of the military. Since the early days of the space program NASA ([`/organizations/nasa`]) has been interested in noninvasively monitoring blood parameters in astronauts, and NASA has supported at Arizona State University the development of microfluidic systems for growing cell cultures on a chip to detect the effects of space flight and microgravity on living things at the cellular scale. Microcantilever biomolecular sensors with the ability to multiplex are being developed for cancer diagnostics, and the Conclusion looks toward nanomechanical systems (NEMS). On that same Defense Intelligence Agency products document, a further product in the series ([`/documents/dird-04-biomaterials`]) is attributed to Dr. Bruce Towe, University of Arizona.
+
+---
+
+## Key Passages
+
+### Document title exactly as printed (two-space gap after the colon preserved); establishes subject and place in the AAWSA DIRD series.
+
+> Biosensors and BioMEMS:  A Survey of the Present Field
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | title-page identity block |
+
+---
+
+### Provenance block; preparing entity withheld [(b)(3):10 USC 424], Author withheld [(b)(6)] — attribution is extrinsic (DIA AAWSA products list → Dr. Bruce Towe, University of Arizona). Bracketed redaction markers preserved verbatim.
+
+> Prepared by:
+>
+> [(b)(3):10 USC 424]
+>
+> Defense Intelligence Agency
+>
+> Author:
+>
+> [(b)(6)]
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | Prepared by / Author block |
+
+---
+
+### Standard AAWSA DIRD dissemination-control marker.
+
+> COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | Administrative Note |
+
+---
+
+### Program-provenance: FY 2009 DIA AAWSA Program series; Program Manager withheld [(b)(3):10 USC 424;(b)(6)]. Bracketed redaction markers preserved verbatim.
+
+> This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | Administrative Note |
+
+---
+
+### Thesis statement — biomedical micro-electromechanical implantables as the future of biomedicine; the "bionic man" framing.
+
+> Biomedical sensors and implantable devices employing micro-electromechanical technology will be important to the future of biomedicine. Once just science fiction, the notion of a bionic man is now becoming a reality through the application of microscale technologies.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | Introduction, ¶1 |
+
+---
+
+### Scope statement — the survey's framing as a review of recent and near-future BioMEMS/biosensor advances.
+
+> With the rapid pace of development, it is probable that within the next two decades we will have as many medical treatments based on microdevices as there are pharmaceutical solutions today. This paper examines some of the most recent advances in the field, as well as the technologies that are likely to appear in the next few years.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | Introduction, ¶2 |
+
+---
+
+### Core definition of BioMEMS — the document's central term.
+
+> BioMEMS stands for biomedical micro-electro-mechanical systems. It is a name applied to biological and medical devices that are created using advanced fabrication processes that allow the devices to be very small relative to comparable devices produced by traditional techniques. BioMEMS devices can also exploit the microscale to provide new functions that are not practical or possible in large-scale devices.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "What is BioMEMS?" |
+
+---
+
+### Maps the BioMEMS application space — neuroprosthetics, sensors/actuators, microchemistry (lab-on-a-chip).
+
+> The field of BioMEMS encompasses micro devices that are often but not exclusively made by the same photolithographic techniques used to make computer chips. Their applications include neuroprosthetics, sensors and actuators, and microchemistry systems.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "What is BioMEMS?" |
+
+---
+
+### Characterizes the microscale physics regime where surface/van-der-Waals/electric forces dominate over gravity.
+
+> These devices can operate on principles such as capillary force, van der Waals forces, and electric-field forces. These forces become relatively strong when the size scale reaches very small dimensions. In the realm of the very small, the force of gravity is far less important than electrical charge and viscosity.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Characteristics of BioMEMS" |
+
+---
+
+### Introduces the brain-machine-integration / thought-control-of-machines research direction (the neuroengineering thread).
+
+> Another promising field of research is directed towards integration of the human brain with microelectrical components. For example implants are being developed which allow volitional (thought) control of machines. Most of this effort is targeted towards rehabilitation of individuals who are quadriplegics in order to allow them some control over their environment.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Categories of BioMEMS" |
+
+---
+
+### First-person authorial voice ("the present author") + Arizona State University affiliation — anchors the extrinsic Dr. Bruce Towe (University of Arizona) attribution; author identity itself redacted on the document.
+
+> Several of these technologies have been the subject of research by the present author and by colleagues at Arizona State University.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Categories of BioMEMS" |
+
+---
+
+### Defines the brain-implanted microelectrode use case — detecting volitional motor intent in the cortex.
+
+> There are applications in biomedicine and research where very small electrodes are implanted into the brain. These microelectrodes are used in the cortex (surface layer) to detect electrical activity associated with the volitional desire to move some part of the body.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Brain-Implanted BioMEMS Micromachine Neuroelectrodes" |
+
+---
+
+### Core claim — recording motor intent from implanted electrode arrays to control machines (the BMI premise).
+
+> Thus in principle there is an ability to electrically record from the brain and determine a person's intent to move. Monitoring of the brain is accomplished by using an array of implanted microelectrodes whose signals anticipate movement of specific limbs. These signals can in turn be used to control machines.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Brain-Implanted BioMEMS Micromachine Neuroelectrodes" |
+
+---
+
+### Documents an ASU–Sandia National Laboratories collaboration on a gear-driven MEMS micromachine.
+
+> Figure 2 shows a photomicrograph of a gear-driven micromachine that was made through collaboration between ASU and Sandia National Laboratories. The device is driven by an electrostatic vibrating comb motor.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Brain-Implanted BioMEMS Micromachine Neuroelectrodes" |
+
+---
+
+### Names the specific Sandia SUMMiT V fabrication process underlying the micromachine.
+
+> The device is fabricated by using Sandia's Ultraplanar Multi-level MEMS Technology (SUMMiTV) process, a 5-layer polysilicon micromachining technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "BioMEMS Micromachines" |
+
+---
+
+### Drug-delivery-pump application breadth (diabetes, cancer, asthma); preserves source misspellings "5-fluoruracil" and "theophyline" verbatim (no-correction discipline).
+
+> Although the implantable MEMS pump was developed for diabetes, the pump has application to the slow measured delivery of many other drugs including 5-fluoruracil used for cancer therapy and theophyline for treatment of asthma.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Drug-Delivery Pumps" |
+
+---
+
+### States biosensing of blood chemistry as a primary BioMEMS application — pivots the survey into its biosensor half.
+
+> A primary application of BioMEMS is in the creation of sensors for blood chemistry and other biophysical parameters of the human body.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "What is a Biosensor?" |
+
+---
+
+### NASA / astronaut-physiology motivation for noninvasive implantable biosensors — a space-application relevance thread.
+
+> Since the early days of the space program NASA has been interested in ways of noninvasively monitoring these blood parameters in astronauts for the instant assessment of their physiological condition. Until recently, blood withdrawal was the only accurate and reliable way to obtain such information.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "BioMEMS Implantable Sensors" |
+
+---
+
+### Explicit defense-relevance passage — military interest in biosensor-based soldier readiness assessment and remote readout (preserves "solider" sic).
+
+> The military has also been interested in the assessment of the state of readiness of a soldier which is reflected in his blood chemistry. An exhausted solider will show a highly acidic blood pH (less than about 7.3). Remote electronic readout of biosensor information of a soldier to a central command center is presently the stuff of science fiction movies but reflects real desires of the military.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "BioMEMS Implantable Sensors" |
+
+---
+
+### Candid limitation assessment — no implantable continuous-monitoring biosensor yet succeeds long-term; the body as a hostile environment.
+
+> So far, despite decades of work, no continuous monitoring sensor that is self contained and implantable has been successful for long term usage. The human body is an exceptionally hostile environment for foreign materials. Even our most advanced biosensors fail over a period of days or weeks if continuously exposed to the body environment.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "BioMEMS Implantable Sensors" |
+
+---
+
+### Names "Towe et al." (ASU) thermopile glucose-sensing work in body prose — the author's own group's research, in third person despite the redacted authorship.
+
+> Towe et al. at Arizona State University have been working on an improved approach to blood glucose sensing. It depends on the fact that the glucose oxidase reaction generates a small amount of heat as indicated in the above chemical reaction.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Thermopile Implantable Glucose Sensors" |
+
+---
+
+### Operating principle of the ASU thermopile glucose sensor (Seebeck effect / thermoelectric).
+
+> This sensor employs what is known as the Seebeck Effect whereby dissimilar metals heated at their junction produce a voltage that is proportional to temperature.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Thermopile Implantable Glucose Sensors" |
+
+---
+
+### Make-or-break assessment of thought-controlled (BMI) devices — feasible in the lab but not yet practical; the electrode-interface bottleneck.
+
+> Crude forms of these thought-controlled devices have been shown in research laboratories to be feasible, even if they are at present not practical. Among other things, the electrode interface to the brain is not yet sufficiently developed to provide large numbers of functioning electrodes that can work over prolonged periods of time.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Microelectrode Array Fabrication" |
+
+---
+
+### Defines the brain-machine interface (BMI) — the survey's most defense/augmentation-relevant capability.
+
+> A specific development in MEMS based neuroengineering has been the brain-machine interface (BMI). These devices use computers to interpret brain signals from implanted neural arrays and then use the information to control machines and setup an automated environment.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Brain-Machine Interfaces" |
+
+---
+
+### Illustrates input/output BMI modalities — visual-cortex stimulation and motor-cortex recording.
+
+> For example, a visual prosthesis could potentially restore partial vision to a blind patient by stimulating neurons in the visual cortex using an input BMI. Signals could be recorded from the motor cortex using an output BMI in order to bypass a neural injury and restore some movement to a paralyzed patient.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Brain-Machine Interfaces" |
+
+---
+
+### ASU ultrasound-powered miniature neurostimulator research (Towe et al., Figure 28/29) — wireless-powered implant the size of a syringe lumen.
+
+> Research at Arizona State University has been directed towards overcoming the problems of bulk and need for battery replacement through an approach where the implanted neurostimulation devices are made exceptionally small and where they derive their power by a process of induction from the outside of the body.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Microscale in Therapeutic Neurostimulation" |
+
+---
+
+### NASA-funded ASU microfluidic cell-culture-on-a-chip for studying spaceflight/microgravity effects — the explicit space-application section.
+
+> NASA has supported at Arizona State University, the development of new types of microfluidic systems directed towards growing cell cultures on a chip. The specific application is detecting the effects of space flight and microgravity on living things at the cellular scale.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "NASA Space Applications for Microfluidic Systems" |
+
+---
+
+### Microcantilever multiplexed biomolecular sensing for cancer diagnostics — the cancer-diagnostics application thread.
+
+> Biomolecular sensors with the ability to "multiplex," or to detect a large number of different molecular species at the same time, are being developed for cancer diagnostics and therapy monitoring.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Microcantilever MEMs Sensors" |
+
+---
+
+### Opening conclusion statement (preserves "MEMs" casing variant verbatim).
+
+> MEMs are characterized by small dimensions, enabling new applications of physical principles to make sensors and actuators of superior characteristics.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Conclusion" |
+
+---
+
+### Closing forward-look — the trajectory toward NEMS (nanomechanical systems) as the next miniaturization frontier.
+
+> Advanced fabrication processes are still being discovered to further miniaturize electromechanical systems and to bring us into the realm of nanomechanical systems (NEMS). The new class of NEMS devices are expected to provide a higher performance in applications such as sensors, medical diagnostics and in the electronics industry.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Conclusion" |
+
+---
+
+### Final assessment sentence — the field as rapidly expanding worldwide.
+
+> This field is expanding rapidly. Searches of the scientific literature show new ideas being developed in a number of laboratories throughout the world.
+
+| Field | Value |
+|---|---|
+| Attributed to | Biosensors and BioMEMS: A Survey of the Present Field — DIA AAWSA Defense Intelligence Reference Document, 31 March 2010 |
+| Source | [archived source](../sources/government/dird-20-biosensors-biomems-20100331.pdf) |
+| Location | section "Conclusion" |
+
+---
+
+## Source-Form Notes
+
+Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
+
+| Source Form | Canonical | Source |
+|---|---|---|
+| AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-20-biosensors-biomems-20100331.pdf |
+| [(b)(6)] | [author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA products list is Dr. Bruce Towe, University of Arizona] | government/dird-20-biosensors-biomems-20100331.pdf |
+| [(b)(3):10 USC 424] | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-20-biosensors-biomems-20100331.pdf |
+| MEMs | MEMS (micro-electro-mechanical systems) | government/dird-20-biosensors-biomems-20100331.pdf |
+| 5-fluoruracil | 5-fluorouracil | government/dird-20-biosensors-biomems-20100331.pdf |
+| theophyline | theophylline | government/dird-20-biosensors-biomems-20100331.pdf |
+| solider | soldier | government/dird-20-biosensors-biomems-20100331.pdf |
+
+---
+
+## References
+
+*Source carries no reference list.*
+
+---
+
+## Associated Nodes
+
+### People
+
+- [`/people/bruce-towe`]
+
+### Organizations
+
+- [`/organizations/aawsap`]
+- [`/organizations/arizona-state-university`]
+- [`/organizations/dia`]
+- [`/organizations/nasa`]
+- [`/organizations/sandia-national-laboratories`]
+
+### Documents
+
+- [`/documents/dia-aatip-products-list-2018`]
+- [`/documents/dird-04-biomaterials`]

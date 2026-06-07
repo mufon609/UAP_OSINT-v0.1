@@ -927,6 +927,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #20 — ''BioSensors and BioMEMS'', DIA-08-1003-020, ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 31 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 46 pages. DIA attachment #6 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Bruce Towe, University of Arizona (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_20-DIRD_Biosensors_and_BioMEMS-A_Survey_of_the_Present_Field.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-20-biosensors-biomems-20100331.txt
+    archived_date: '2026-06-06'
+    note: Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-20 'Biosensors and BioMEMS' PDF. Produced 2026-06-06; all 46 pages were VLM-read with zero content-filter blocks (no PaddleOCR-fill needed). Consensus divergences were confined to figure-interior text and the struck-through 'FOR OFFICIAL USE ONLY' banner; no body-prose misreads. The Black Vault FOIA cover-insert is preserved verbatim. Equations/figures/diagram interiors bracketed; redaction markers ([(b)(3):10 USC 424], [(b)(6)]) and source spellings preserved verbatim.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_21-DIRD_High-Frequency_Gravitational_Wave_Communications.pdf
   status: archived
   artifacts:
