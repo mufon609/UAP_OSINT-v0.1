@@ -331,6 +331,78 @@ The paper discussed the critical technologies required to build a working HPM so
 
 ---
 
+### Commercial proliferation (Germany) — DIEHL Munitiossysteme manufactures several mesoband sources for sale to the public, including a suitcase-sized compact 600-kV Marx generator driving a tunable loop antenna radiating 70 kV/m at 2 meters.
+
+> DIEHL Munitiossysteme in Germany manufactures several mesoband sources for sale to the public. One is a suitcase-sized system using a compact 600-kV Marx generator to provide an impulse to a loop antenna. It is made tunable by changing the size of the loop antenna and can radiate a damped sinusoid at 70 kV/m at 2 meters' distance.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 34, ¶ Mesoband Sources |
+
+---
+
+### Commercial proliferation (UK) — BAE Systems also sells mesoband sources built from nonlinear transmission lines and solid-state modulators, repetition-rate operated to more than 1 kHz.
+
+> BAE Systems in the United Kingdom also sells mesoband sources made using nonlinear transmission lines and solid-state modulators. These are repetition-rate operated to more than 1 kHz.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 34, ¶ Mesoband Sources |
+
+---
+
+### Damage physics — semiconductor junctions fail when junction temperatures exceed 600° Kelvin; the threshold power for damage varies as 1/t for pulses shorter than 100 nanoseconds, as 1/t^1/2 between 100 nanoseconds and 10 microseconds, and as a constant power for pulses longer than 10 microseconds — the quantitative basis of the HPM threat model.
+
+> Failures in semiconductors owing to thermal effects occur when junction temperatures are raised above 600° Kelvin. Since thermal energy diffuses through the semiconductor, failure mechanisms depend on the microwave pulse duration. If the pulse duration is short compared with thermal diffusion times, then the temperature increases in proportion to the deposited energy. Pulse durations (t) shorter than about 100 nanoseconds fall into this regime, and the threshold power for damage varies as 1/t. Experimental testing has shown that for pulse durations between 100 nanoseconds and 10 microseconds, the power required for damage scales as 1/t^1/2. And for pulses longer than 10 microseconds, a steady state in which the thermal diffusion rate equals the rate of energy deposition and temperature is proportional to power, resulting in a constant power requirement for damage. In this case, the power requirement scales as t. The consequence of these scaling factors is that short pulses require very high power but little energy, while very long pulses require large amounts of energy but little power. This analysis results in a vast range of HPM sources capable of damaging semiconductor devices.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 8, ¶ (Summary, semiconductor susceptibility) |
+
+---
+
+### Program attribution — names the cathode program scientists the org-level attribution omits — the relativistic klystron oscillator (Kyle Hendricks, AFRL) and the reltron (Bruce Miller, SNL), alongside the magnetically insulated line oscillator (SNL) and super reltron.
+
+> The cathodes developed by these programs are to be used with the magnetically insulated line oscillator (Sandia National Laboratories [SNL]), the relativistic klystron oscillator (Kyle Hendricks, Air Force Research Laboratory [AFRL]), the reltron (Bruce Miller, SNL), and the super reltron, among others.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 19, ¶ Cesium Iodide Coated |
+
+---
+
+### Switching-research attribution — the most promising semiconductor-switch developments rest on physics pioneered by I. V. Grekhov and colleagues at the Ioffe Physical-Technical Institute in St. Petersburg, with whom the AFRL and the University of New Mexico collaborate on delayed breakdown devices, silicon avalanche shapers, and drift step recovery diodes.
+
+> The most promising new developments in semiconductor switches today are based on physics pioneered by I. V. Grekhov and colleagues at the Ioffe Physical-Technical Institute in St. Petersburg. The AFRL is currently collaborating with Dr. Grekhov and the University of New Mexico in studies of delayed breakdown devices, silicon avalanche shapers, and drift step recovery diodes in efforts to improve the performance of these devices.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 23, ¶ Solid-State Switching |
+
+---
+
+### Administrative Note — copyright warning that further dissemination of the photographs in this publication is not authorized; the standard AAWSAP DIRD dissemination-control marker carried across the series.
+
+> COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+
+| Field | Value |
+|---|---|
+| Attributed to | Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010 |
+| Source | [archived source](../sources/government/dird-03-pulsed-hpm-20100128.pdf) |
+| Location | p. 3, ¶ Administrative Note |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
@@ -341,6 +413,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | [(b)(3):10 USC 424] | [redacted per FOIA (b)(3):10 USC 424] | government/dird-03-pulsed-hpm-20100128.pdf |
 | Commanche | Comanche | government/dird-03-pulsed-hpm-20100128.pdf |
 | AAWSA | Advanced Aerospace Weapon System Applications Program (AAWSAP) | government/dird-03-pulsed-hpm-20100128.pdf |
+| Munitiossysteme | Diehl Munitionssysteme | government/dird-03-pulsed-hpm-20100128.pdf |
 
 ---
 
