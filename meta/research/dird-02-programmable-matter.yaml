@@ -225,6 +225,69 @@ quotes:
     location: 'p. 21, ¶ Conclusions'
   significance: Conclusions — if even a fraction of these possibilities became reality, the gains in energy efficiency, mass reduction, safety, comfort, and mission flexibility could be extremely significant and well worth pursuing
   statement_date: '2009-12-14'
+- id: q18
+  added_date: '2026-06-07'
+  text: |-
+    One such "impossible" material hypothesized is the nanostructured "metapolarizer." Where classical polarizers either reflect or absorb half the light that hits them (typically resulting in energy wastage of 50 percent or higher), a metapolarizer simply ignores one polarity of light and converts or rotates or "retards" the other. This principle can be harnessed, for example, to double the battery life of a laptop display or to double the brightness of a flat-screen TV.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 10, ¶ "Impossible" Materials'
+  significance: '"Impossible" materials — defines the nanostructured "metapolarizer," which ignores one polarity of light instead of absorbing half, and could double a laptop display battery life or a flat-screen TV brightness'
+  statement_date: '2009-12-14'
+- id: q19
+  added_date: '2026-06-07'
+  text: |-
+    A notional "Wellstone" fiber uses careful arrangements of conductors, semiconductors, and insulators to produce a long, flexible cylinder whose surface is studded with artificial atoms. When woven together, these fibers create a bulk material whose properties are programmable via external signals.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 11, ¶ Fig. 4 caption'
+  significance: Wellstone fiber — a notional "Wellstone" fiber of conductors, semiconductors, and insulators studded with artificial atoms; woven together they create a bulk material whose properties are programmable via external signals
+  statement_date: '2009-12-14'
+- id: q20
+  added_date: '2026-06-07'
+  text: |-
+    Buildings account for 40 percent of all energy consumed in the United States, including 71 percent of all electricity and 38 percent of all carbon dioxide emissions. Managing solar heat gain and controlling the building's thermal envelope are the most effective ways of reducing energy use.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 12, ¶ Advantages of Dynamic Materials'
+  significance: Building-energy framing — buildings account for 40 percent of all energy consumed in the United States, 71 percent of all electricity, and 38 percent of all carbon dioxide emissions
+  statement_date: '2009-12-14'
+- id: q21
+  added_date: '2026-06-07'
+  text: |-
+    RavenWindow film is transparent when cold and partially reflective when hot, allowing an SHGC range between 0.12 and 0.43—more than twice the range studied by LBNL. Studies performed by RavenBrick using LBNL tools show energy savings up to three times those of low-E glass alone.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 13, ¶ Early Commercialization of Smart Materials'
+  significance: RavenWindow performance — the film allows an SHGC range between 0.12 and 0.43 (more than twice the range studied by LBNL), with RavenBrick studies showing energy savings up to three times those of low-E glass alone
+  statement_date: '2009-12-14'
+- id: q22
+  added_date: '2026-06-07'
+  text: |-
+    Assuming a retail cost of $25 per square foot, for large buildings across multiple climate zones, the payback period is 5-10 years. Even faster return on investment is possible if the retail cost can be reduced, which seems likely given the relative simplicity of the technology.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 14, ¶ Early Commercialization of Smart Materials'
+  significance: RavenWindow economics — at an assumed retail cost of $25 per square foot, the payback period for large buildings across multiple climate zones is 5-10 years
+  statement_date: '2009-12-14'
+- id: q23
+  added_date: '2026-06-07'
+  text: |-
+    Fortunately, in 2001, scientists at the Research Triangle Institute in North Carolina used semiconductor superlattices to create a Peltier junction that operated at 2.5 times the efficiency and 23,000 times the speed of all previous designs. The electrically semiconductive superlattice materials were unusually good radiators—and unusually poor conductors—of heat.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 15, ¶ Thermal Management of Spacecraft'
+  significance: Thermal management — in 2001 the Research Triangle Institute used semiconductor superlattices to build a Peltier junction operating at 2.5 times the efficiency and 23,000 times the speed of all previous designs
+  statement_date: '2009-12-14'
+- id: q24
+  added_date: '2026-06-07'
+  text: |-
+    Quantum computing is another possibility. Qbits were first demonstrated in 1995 by the National Institute of Standards and Technology in Boulder, Colorado, and by the California Institute of Technology in Pasadena. Because computing power increases exponentially with the number of qbits (versus linearly with the number of binary bits), a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one.
+  source:
+    path: government/dird-02-programmable-matter-20091214.pdf
+    location: 'p. 18, ¶ Advanced Concepts in Programmable Materials'
+  significance: Quantum computing — qbits were first demonstrated in 1995 by NIST Boulder and Caltech; a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one
+  statement_date: '2009-12-14'
 cited_works:
   - id: cw1
     added_date: '2026-05-24'

@@ -247,6 +247,90 @@ On early commercialization, the document states that in the third quarter of 200
 
 ---
 
+### "Impossible" materials — defines the nanostructured "metapolarizer," which ignores one polarity of light instead of absorbing half, and could double a laptop display battery life or a flat-screen TV brightness
+
+> One such "impossible" material hypothesized is the nanostructured "metapolarizer." Where classical polarizers either reflect or absorb half the light that hits them (typically resulting in energy wastage of 50 percent or higher), a metapolarizer simply ignores one polarity of light and converts or rotates or "retards" the other. This principle can be harnessed, for example, to double the battery life of a laptop display or to double the brightness of a flat-screen TV.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 10, ¶ "Impossible" Materials |
+
+---
+
+### Wellstone fiber — a notional "Wellstone" fiber of conductors, semiconductors, and insulators studded with artificial atoms; woven together they create a bulk material whose properties are programmable via external signals
+
+> A notional "Wellstone" fiber uses careful arrangements of conductors, semiconductors, and insulators to produce a long, flexible cylinder whose surface is studded with artificial atoms. When woven together, these fibers create a bulk material whose properties are programmable via external signals.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 11, ¶ Fig. 4 caption |
+
+---
+
+### Building-energy framing — buildings account for 40 percent of all energy consumed in the United States, 71 percent of all electricity, and 38 percent of all carbon dioxide emissions
+
+> Buildings account for 40 percent of all energy consumed in the United States, including 71 percent of all electricity and 38 percent of all carbon dioxide emissions. Managing solar heat gain and controlling the building's thermal envelope are the most effective ways of reducing energy use.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 12, ¶ Advantages of Dynamic Materials |
+
+---
+
+### RavenWindow performance — the film allows an SHGC range between 0.12 and 0.43 (more than twice the range studied by LBNL), with RavenBrick studies showing energy savings up to three times those of low-E glass alone
+
+> RavenWindow film is transparent when cold and partially reflective when hot, allowing an SHGC range between 0.12 and 0.43—more than twice the range studied by LBNL. Studies performed by RavenBrick using LBNL tools show energy savings up to three times those of low-E glass alone.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 13, ¶ Early Commercialization of Smart Materials |
+
+---
+
+### RavenWindow economics — at an assumed retail cost of $25 per square foot, the payback period for large buildings across multiple climate zones is 5-10 years
+
+> Assuming a retail cost of $25 per square foot, for large buildings across multiple climate zones, the payback period is 5-10 years. Even faster return on investment is possible if the retail cost can be reduced, which seems likely given the relative simplicity of the technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 14, ¶ Early Commercialization of Smart Materials |
+
+---
+
+### Thermal management — in 2001 the Research Triangle Institute used semiconductor superlattices to build a Peltier junction operating at 2.5 times the efficiency and 23,000 times the speed of all previous designs
+
+> Fortunately, in 2001, scientists at the Research Triangle Institute in North Carolina used semiconductor superlattices to create a Peltier junction that operated at 2.5 times the efficiency and 23,000 times the speed of all previous designs. The electrically semiconductive superlattice materials were unusually good radiators—and unusually poor conductors—of heat.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 15, ¶ Thermal Management of Spacecraft |
+
+---
+
+### Quantum computing — qbits were first demonstrated in 1995 by NIST Boulder and Caltech; a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one
+
+> Quantum computing is another possibility. Qbits were first demonstrated in 1995 by the National Institute of Standards and Technology in Boulder, Colorado, and by the California Institute of Technology in Pasadena. Because computing power increases exponentially with the number of qbits (versus linearly with the number of binary bits), a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
+| Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
+| Location | p. 18, ¶ Advanced Concepts in Programmable Materials |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
