@@ -80,6 +80,7 @@ if (
     os.execv(str(_VENV_PYTHON), [str(_VENV_PYTHON)] + sys.argv)
 
 import argparse
+import bisect
 import difflib
 import re
 import subprocess
@@ -451,24 +452,84 @@ def confirm_report(sibling_text, tess_text, paddle_text, vlm_skipped=False):
     return divergences, omissions
 
 
-def print_confirm_report(divergences, sibling):
-    """Print the load-bearing divergence report for the agent to reconcile."""
-    if not divergences:
-        print(f"\n  ✓ CONFIRMED: every load-bearing word/number in {sibling.name} is "
-              f"corroborated by an OCR engine. No divergences to reconcile.")
-        return
-    print(f"\n  {len(divergences)} load-bearing divergence(s) — read the page image at "
-          f"each and correct the sibling where it is wrong (leave it where the OCR "
-          f"engine is the one misreading):")
-    for c in divergences:
+def _page_of_offset(page_starts, off):
+    """1-indexed page number for a base-text char offset, given the sorted list of
+    per-page start offsets (page_starts[k] = char offset where page k+1 begins).
+    Returns None when page boundaries are unknown (no --vlm-pages)."""
+    if not page_starts:
+        return None
+    return bisect.bisect_right(page_starts, off)
+
+
+def _is_high_signal(c):
+    """A divergence the reviewer MUST settle against the page image: both OCR
+    engines independently read the same token and it differs from the sibling
+    (``build_consensus`` note "both OCR engines agree against the VLM read"), OR
+    the VLM vote was skipped entirely (OCR-only sibling — every divergence is
+    two-engine with no VLM tiebreak). The complement ("all three votes differ")
+    is dominated by struck-through banners, bracketed [Figure]/[Equation]
+    placeholder text, and per-engine glyph noise — skim, not image-verify."""
+    if c["candidates"]["vlm"] is None:      # OCR-only sibling (VLM skipped)
+        return True
+    return c.get("note", "").startswith("both OCR engines agree")
+
+
+def _print_divergence_rows(rows, sibling, page_starts):
+    for c in rows:
         cand = c["candidates"]
         if cand["vlm"] is None:          # OCR-only sibling (VLM skipped): base == tesseract
             reads = f"sibling={cand['tesseract']!r}  paddleocr={cand['paddleocr']!r}"
         else:
             reads = (f"sibling={cand['vlm']!r}  tesseract={cand['tesseract']!r}  "
                      f"paddleocr={cand['paddleocr']!r}")
-        print(f"    line {c['line']}: {reads}")
+        page = _page_of_offset(page_starts, c["char_start"])
+        loc = f"p.{page} line {c['line']}" if page else f"line {c['line']}"
+        print(f"    {loc}: {reads}")
         print(f"      {c['context']}")
+
+
+def print_confirm_report(divergences, sibling, page_starts=None):
+    """Print the load-bearing divergence report, partitioned so the agent
+    image-verifies the right (small) set instead of skimming everything.
+
+    Two groups, by ``build_consensus`` note (see ``_is_high_signal``):
+      • HIGH-SIGNAL — both OCR engines agree against the sibling. EACH must be
+        settled against the PAGE IMAGE: it is either a VLM misread to fix, or a
+        shared OCR glyph-confusion where the sibling is right. The page-image read
+        is the ONLY way to tell them apart — surrounding-text plausibility is not,
+        because that re-trusts the VLM against itself (the exact failure PaddleOCR
+        exists to catch).
+      • weak — no single OCR reading corroborated (banners, bracketed figure/
+        equation placeholders, per-engine glyph noise). Skim; image-check only
+        where one lands on body prose.
+
+    Page numbers are shown when ``page_starts`` is supplied (``run --vlm-pages``)."""
+    if not divergences:
+        print(f"\n  ✓ CONFIRMED: every load-bearing word/number in {sibling.name} is "
+              f"corroborated by an OCR engine. No divergences to reconcile.")
+        return
+    high = [c for c in divergences if _is_high_signal(c)]
+    weak = [c for c in divergences if not _is_high_signal(c)]
+    loc_hint = "" if page_starts else (
+        "  (no page numbers — sibling produced without `run --vlm-pages`; locate "
+        "the line in the sibling to find its page.)")
+
+    print(f"\n  {len(high)} HIGH-SIGNAL divergence(s) — both OCR engines read the same "
+          f"token, differing from the sibling. OPEN THE PAGE IMAGE for each and decide "
+          f"the true reading there; do NOT infer it from the surrounding sibling text. "
+          f"Fix the sibling on a VLM misread; leave it on shared OCR glyph-confusion "
+          f"(e.g. µm→um, SiO2→SiOz).{loc_hint}")
+    if high:
+        _print_divergence_rows(high, sibling, page_starts)
+    else:
+        print("    (none)")
+
+    print(f"\n  {len(weak)} weak divergence(s) — no single OCR reading corroborated "
+          f"(struck-through banners, bracketed [Figure]/[Equation] placeholder text, "
+          f"per-engine glyph noise). Skim; open the page image only where one lands on "
+          f"body prose.")
+    if weak:
+        _print_divergence_rows(weak, sibling, page_starts)
 
 
 # ---------------------------------------------------------------------------
@@ -558,6 +619,32 @@ def _resolve_pdf(arg):
     return pdf
 
 
+def _concat_pages(pages_dir):
+    """Concatenate the per-page VLM scratch files (``pNN.txt``, zero-padded) into
+    the sibling base text, tracking each page's start offset.
+
+    This replaces the manual ``cat /tmp/{stem}/p*.txt`` step so the tool knows the
+    page boundaries — letting the divergence report tag each token with its page,
+    which makes the page-image verification step actually locatable. Each page is
+    newline-terminated before joining so pages can't glue together and every page
+    begins on a line boundary.
+
+    Returns ``(base_text, page_starts)`` where ``page_starts[k]`` is the char
+    offset at which page ``k+1`` begins."""
+    files = sorted(Path(pages_dir).glob("p*.txt"))
+    if not files:
+        raise SystemExit(f"--vlm-pages: no p*.txt files found in {pages_dir}")
+    parts, page_starts, off = [], [], 0
+    for f in files:
+        t = f.read_text(encoding="utf-8")
+        if not t.endswith("\n"):
+            t += "\n"
+        page_starts.append(off)
+        parts.append(t)
+        off += len(t)
+    return "".join(parts), page_starts
+
+
 def cmd_run(args):
     """Produce the .txt sibling from the VLM page-image read, then confirm it
     against the OCR engines and print the load-bearing divergence report. Writes
@@ -573,10 +660,12 @@ def cmd_run(args):
             f"re-confirm the existing sibling without regenerating."
         )
 
-    if not args.vlm and not args.vlm_skipped:
+    if not args.vlm and not args.vlm_pages and not args.vlm_skipped:
         raise SystemExit(
-            "provide --vlm PATH (the normal VLM-grab path) or --vlm-skipped "
-            "REASON (fully content-blocked source → OCR-only 2-engine sibling)."
+            "provide --vlm-pages DIR (per-page VLM scratch files — page-aware, "
+            "preferred), --vlm PATH (a pre-concatenated VLM file — no page "
+            "numbers), or --vlm-skipped REASON (fully content-blocked source → "
+            "OCR-only 2-engine sibling)."
         )
 
     blocked = parse_pages(args.blocked_pages)
@@ -584,7 +673,11 @@ def cmd_run(args):
     tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
 
     print("[2/2] Writing the sibling + confirming load-bearing words/numbers ...")
-    if args.vlm:
+    page_starts = None
+    if args.vlm_pages:
+        base_text, page_starts = _concat_pages(args.vlm_pages)
+        vlm_skipped = False
+    elif args.vlm:
         base_text = Path(args.vlm).read_text(encoding="utf-8")
         vlm_skipped = False
     else:
@@ -602,7 +695,7 @@ def cmd_run(args):
               f"line {coverage_warning['line']} — the base likely dropped a "
               f"paragraph/page. Recover the dropped region before using the sibling.")
 
-    print_confirm_report(divergences, sibling)
+    print_confirm_report(divergences, sibling, page_starts)
     print_blocked_report(blocked_report)
 
 
@@ -756,7 +849,13 @@ def main():
         "run", help="write the .txt sibling from the VLM read, then print the "
                     "load-bearing divergence report against the OCR engines")
     p_run.add_argument("pdf", help="source PDF (path under sources/ or absolute)")
-    p_run.add_argument("--vlm", help="VLM page-image transcription (.txt) — the sibling base")
+    p_run.add_argument("--vlm-pages", metavar="DIR",
+                       help="directory of per-page VLM scratch files (pNN.txt, zero-padded) — "
+                            "PREFERRED: the tool concatenates them itself and tags each "
+                            "divergence with its page number (p.N) so the page-image "
+                            "verification step is locatable")
+    p_run.add_argument("--vlm", help="pre-concatenated VLM transcription (.txt) — the sibling "
+                                     "base; no page numbers in the report (use --vlm-pages for those)")
     p_run.add_argument("--vlm-skipped", metavar="REASON",
                        help="build an OCR-only sibling (Tesseract base, PaddleOCR cross-check) "
                             "and record this reason; for fully content-blocked sources only")

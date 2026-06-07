@@ -256,12 +256,18 @@ and the OCR engines disagree — each one read against the page image. The
 guarantee is *the words and numbers rest on two reads by different tools*, **not**
 a character-perfect transcription of the page.
 
-Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm` writes the VLM
-text as the sibling, then prints the load-bearing divergence report; an agent
-reconciles each divergence against the page image and **corrects the sibling**
-where the VLM misread (the sibling is canonical — fix it before any quote derives
-from it), leaving the divergences that are just OCR errors on a correct sibling.
-`ocr-consensus.py verify` re-confirms the on-disk sibling without regenerating it.
+Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm-pages DIR` (the
+per-page scratch directory) concatenates the pages into the sibling and prints the
+load-bearing divergence report, **partitioned** into a small HIGH-SIGNAL set (both
+OCR engines agree against the sibling — each tagged with its `p.N` page) and a
+skim-only weak set (banners, bracketed figure/equation placeholders, per-engine
+glyph noise). The agent settles **every** high-signal divergence **against the
+page image** — not by surrounding-text plausibility, which re-trusts the VLM
+against itself — and **corrects the sibling** where the VLM misread (the sibling
+is canonical — fix it before any quote derives from it), leaving the divergences
+that are just OCR errors on a correct sibling. (Passing a pre-concatenated `--vlm
+FILE` still works but yields no page numbers.) `ocr-consensus.py verify`
+re-confirms the on-disk sibling without regenerating it.
 The OCR engines are glyph-recognition models that share failure modes (accent-drop
 `Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
 dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree

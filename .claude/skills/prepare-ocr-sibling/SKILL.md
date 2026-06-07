@@ -29,13 +29,17 @@ accurate.
 
 1. **Transcribe** the page images to a `.txt` sibling (a VLM page-image read).
 2. **Confirm the sibling with a different tool** — PaddleOCR re-reads the pages
-   and is diffed against the sibling on the **words and numbers**; an agent
-   reconciles each divergence against the page image and corrects the sibling.
-   *(This is this skill.)*
+   and is diffed against the sibling on the **words and numbers**. The report
+   splits into a small **HIGH-SIGNAL** set (both OCR engines agree against the
+   sibling) and a skim-only **weak** set; you settle every high-signal
+   divergence **against the page image** and correct the sibling where the VLM
+   misread. *(This is this skill.)*
 3. **Build the node**, pulling quotes from the confirmed sibling (`/build`).
 4. **Audit** — the auditor verifies the built node's quotes against the **source
-   PDF page images**, not the sibling. *(That final check lives in `/audit`, not
-   here.)*
+   PDF page images**, not the sibling — the final, independent backstop.
+   *(That check lives in `/audit`, not here.)* It is a backstop, **not** a
+   substitute for the page-image verification you do in step 2: do not defer the
+   image check to the audit.
 
 Why two different tools? A single read can't be trusted on itself: the VLM
 content filter blocks some pages, and one vision pass can misread silently
@@ -89,29 +93,49 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    reproduction, so it is not blocked — the high-fidelity check survives even
    though the high-fidelity *transcription* didn't.
 
-3. **Write the sibling + confirm it against PaddleOCR.** Concatenate the per-page
-   files in order (`cat /tmp/{stem}/p*.txt > /tmp/{stem}-vlm.txt`; zero-padding
-   sorts correctly). Then:
+3. **Write the sibling + confirm it against PaddleOCR.** Pass the **per-page
+   directory** so the tool concatenates it and can tag every divergence with its
+   page number — do **not** hand-`cat` the pages into one file (that throws away
+   the page boundaries the verification step needs). Redirect the report to a file
+   (it can be thousands of lines on a figure-heavy PDF) — **never pipe it through
+   `tail`/`head`**, which silently drops the bulk of the report:
    ```
    python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
-       --vlm /tmp/{stem}-vlm.txt [--blocked-pages 12,31] [--force]
+       --vlm-pages /tmp/{stem} [--blocked-pages 12,31] [--force] \
+       > /tmp/{stem}-confirm.txt 2>&1
    ```
    `run` writes the VLM text as the sibling `.txt`, then re-reads the pages with
    PaddleOCR + Tesseract and prints the **load-bearing divergence report**: every
    word/number where the sibling and the OCR engines disagree (document structure
-   — punctuation, bullets, banners, figure labels — is never compared, so the
-   report is short and load-bearing). Pass `--blocked-pages` the ledger from step 2
+   — punctuation, bullets, banners, figure labels — is never compared). `Read`
+   `/tmp/{stem}-confirm.txt`. Pass `--blocked-pages` the ledger from step 2
    (accepts ranges, e.g. `5-7,10,14-15`). `--force` regenerates an existing sibling
    (backfill). Heed any `⚠ COVERAGE WARNING`: a large contiguous run of
    OCR-corroborated tokens missing from the base means the VLM dropped a
    paragraph/page — recover it before proceeding.
 
-   **Reconcile each VLM-page divergence against the page image.** For every reported
-   token, open the page image at the given line and decide the true reading. Where
-   the VLM misread, **correct the sibling** with `Edit` (the sibling is the canonical
-   text — fix it now, before any quote derives from it). Where the VLM is right and
-   the OCR engines are wrong (common — they share glyph-confusion failures like
-   `SiO2→SiOz`, `Lím→Lim`), leave the sibling as-is.
+   **The report is partitioned — verify the HIGH-SIGNAL set against the page
+   images; skim the weak set.**
+   - **HIGH-SIGNAL** (`both OCR engines read the same token, differing from the
+     sibling`) is the set you MUST settle. Each row is **either** a VLM misread
+     to fix **or** a shared OCR glyph-confusion where the sibling is right
+     (`µm→um`, `SiO2→SiOz`, `λ_0→Ao`) — and **the page image is the only thing
+     that tells them apart.** For **every** high-signal row: `Read` the PDF at its
+     reported page (`pages: "N"` — the `p.N` in the row), find the token in the
+     image, and decide the true reading **from the image**. Where the VLM
+     misread, **correct the sibling** with `Edit` (it is the canonical text — fix
+     it now, before any quote derives from it); where the OCR engines share a
+     glyph error, leave the sibling as-is.
+   - **Do NOT decide a high-signal row from the surrounding sibling text or
+     grammatical plausibility.** That re-trusts the VLM against itself — exactly
+     the silent-misread failure (`81→82`, `Klyshko→Kiyshko`) PaddleOCR exists to
+     catch. "It reads fine in context" is not verification; opening the page
+     image is. This image pass happens **here**, not deferred to the node audit.
+   - **weak** (`no single OCR reading corroborated`) is dominated by
+     struck-through banners, bracketed `[Figure N: …]`/`[Equation N: …]`
+     placeholder text, and per-engine glyph noise. Skim it; open the page image
+     only where a weak row lands on **body prose** (a real word the sibling may
+     have dropped or mangled), not on banner/figure furniture.
 
    **VLM-verify each blocked page.** For a blocked page the sibling text *is* the
    PaddleOCR fill, so the sibling-vs-engines diff is silent there — `--blocked-pages`
