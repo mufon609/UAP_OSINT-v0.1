@@ -27,7 +27,7 @@ _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the
 
 ## Description
 
-High-Frequency Gravitational Wave Communications. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. The Prepared by line gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]); the Author line is [(b)(6)]. An Administrative Note states that the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], with comments or questions to be addressed to the AAWSA Program Manager. The DIA products document ([`/documents/dia-aatip-products-list-2018`]) gives the author as Dr. Robert Baker ([`/people/robert-baker`]), GravWave ([`/organizations/gravwave`]). Appendix B gives "Project Scientist Robert M L Baker, Jr." as the inventor of the Li-Baker HFGW Detector, and Section 2.2.1 gives the detector as "invented by R. M L Baker, Jr. of Transportation Sciences Corporation." Both GravWave (from the products document) and the Transportation Sciences Corporation / Louisiana State University partnership (from Appendix B) are given here, and which of the two companies is correct is left open.
+High-Frequency Gravitational Wave Communications. The Defense Intelligence Reference Document is 6 April 2010, with an ICOD of 1 December 2009 and control number DIA-08-1004-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY. The Prepared by line gives [(b)(3):10 USC 424] and Defense Intelligence Agency ([`/organizations/dia`]); the Author line is [(b)(6)]. An Administrative Note states that the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], with comments or questions to be addressed to the AAWSA Program Manager. The DIA products document ([`/documents/dia-aatip-products-list-2018`]) gives the author as Dr. Robert Baker ([`/people/robert-baker`]), GravWave ([`/organizations/gravwave`]). Appendix B gives "Project Scientist Robert M L Baker, Jr." as the inventor of the Li-Baker HFGW Detector, and Section 2.2.1 gives the detector as "invented by R. M L Baker, Jr. of Transportation Sciences Corporation." The document body gives only the Transportation Sciences Corporation / Louisiana State University partnership (Section 2.2.1 and Appendix B); GravWave is given only on the DIA products document ([`/documents/dia-aatip-products-list-2018`]). Both are given here, and which of the two companies is correct is left open.
 
 
 Of the applications of high-frequency gravitational waves (HFGWs), communication appears to be the most important and most immediate. Gravitational waves have a very low cross section for absorption by normal matter, so high-frequency waves could in principle carry significant information content with effectively no absorption, unlike electromagnetic (EM) waves. HFGWs pass through all ordinary material things without attenuation and represent the ultimate wireless system — one could communicate directly through the Earth from Moscow to Caracas without fiber optic cables, microwave relays, or satellite transponders. Multi-channel HFGW communications can be point-to-point, for example to deeply submerged submarines, and point-to-multipoint, like cell phones. Because the communications are carried on an extremely narrow beam directly through the Earth, there is a very low probability of interception.
@@ -531,6 +531,126 @@ Beyond communications, the report holds that the most stunning advances will pro
 | Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
 | Location | Appendix B: Li-Baker HFGW Detector |
+
+---
+
+### States the N²-scaling generation law — GW power grows as the square of the number of in-phase radiating elements — attributed to the Dehnen & Romero-Borja General Relativity analyses, the core mechanism motivating the large-N molecular generator.
+
+> This last effect enters as the square of the number of elements, N , as proved using General Relativity analyses by Dehnen and Romero-Borja's analyses (Romero and Dehnen, 1981; Dehnen and Romero, 2003). Such N² dependence also may be the key to successful laboratory generation of GWs, especially HFGWs.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.1 HFGW Generators |
+
+---
+
+### The geometric statement of the N²-flux scaling — stacked orbit planes give a GW flux proportional to N² up the stack axis — the design principle behind the stacked-waveguide-ring generator.
+
+> Next consider a number N of such orbit planes stacked one on top of another with the gravitational-wave (GW) radiation growing flux (Wm⁻²) proportional to N² as the GW moves up the axis of the N orbit planes as in Figure 5.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.1 HFGW Generators |
+
+---
+
+### The operational IR-molecule transmitter specification — 50,000Å IR, 12.5 m × 10 m cylinder, 10⁷ plates — yielding a 1.48×10¹⁴ Wm⁻² source flux confined to a 2.3×10⁻⁴ radian needle beam, the LPI beam-width and link-budget numerator.
+
+> For an operational 50,000Å infrared (IR), 12.5 meter long, 10-meter radius (10⁴ concentric rings per plate so Pᵢ = 1.29×10² Wm⁻² and 10⁷ plates) cylindrical HFGW generator (Woods and Baker, 2009), the flux at a one-meter distance from the generator is, according to Table 1 of Black and Baker (2009) for N = 10⁷, (1.146×10¹²) × (1.29×10²) = 1.48×10¹⁴ Wm⁻² (very large, but with a very narrow 2.3×10⁻⁴ radian half-power-point needle beam).
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.1 HFGW Generators (operational IR generator) |
+
+---
+
+### The 1/R² link budget — the 1.48×10¹⁴ Wm⁻² source flux falls to S ≈ 3 Wm⁻² received at 7,000 km — the figure feeding the report's bandwidth/Shannon-rate claim.
+
+> received signal, S, is (1.48×10¹⁴)/(7×10⁶)² = 3 Wm⁻², more than adequate for an effective communication system.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.1 HFGW Generators (link budget) |
+
+---
+
+### Fixes the generation carrier at twice the IR frequency, v_GW = 1.2×10¹⁴ s⁻¹ — orders of magnitude above the Li-Baker detector's ~10 GHz design band — and the resulting received amplitude A = 1.8×10⁻³² m/m the detector must resolve.
+
+> From Equation (2) the amplitude A of the HFGW at 7,000 km with the HFGW frequency (twice the IR frequency of v_GW = 1.2×10¹⁴ s⁻¹) given by: A = 1.28×10⁻¹⁸ (S/v_GW )½ = 1.8×10⁻³² (in dimensionless units or m/m), which would be detectable by the currently designed Li-Baker HFGW detector.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.1 HFGW Generators (carrier frequency) |
+
+---
+
+### The quantitative SQL detection floor — h_det = 1.8×10⁻³⁷ m/m — sitting roughly five orders of magnitude below the A ≈ 10⁻³² m/m signal, the margin establishing the detector is not quantum-noise limited.
+
+> h_det = 1.8×10^-37 m/m represents the lowest possible GW amplitude detectable by each RF receiver in the Li-Baker HFGW detector, limited by quantum back-action.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.2.3 Quantum Back-Action Limit |
+
+---
+
+### The skeptical-review item — the report concedes that the inverse Gertsenshtein effect used in prior HFGW detectors was found to have insufficient sensitivity per the JASON/ODNI assessment (Eardley et al., 2008), the finding motivating the Li-Baker design.
+
+> The resultant efficiency of detection of HFGWs is very much greater than from the inverse Gertsenshtein effect, which has been exploited in some previously proposed HFGW detectors and found to have insufficient sensitivity to HFGWs (Eardley, et al., 2008).
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.2.2 The Li-Effect |
+
+---
+
+### Names the real fabricated HFGW detectors — Birmingham University, INFN Genoa, and the Japanese instrument — while conceding their sensitivities fall orders of magnitude short of what HFGW detection requires, the state-of-the-art shortfall the Li-Baker detector is proposed to close.
+
+> In the past few years, HFGW detectors have been fabricated at Birmingham University, England, INFN Genoa, Italy and in Japan. These types of detectors may be promising for the detection of the HFGWs in the GHz band (MHz band for the Japanese) in the future, but currently, their sensitivities are orders of magnitude less than what is required for the detection of high-frequency relic gravitational waves (HFRGWs) from the big bang.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 2.2.1 Alternative Approaches |
+
+---
+
+### The emerging-technology magnet lever — a custom 35 T high-field magnet (vs. the ~3 T nominal baseline) would improve detector sensitivity by an order of magnitude, the headroom the program banks on for an operational receiver.
+
+> To this end we will investigate the feasibility of co-developing with a third-party (for example, National High Magnetic Field Laboratory, Tallahassee, Florida) a custom-made high-field design capable of up to 35T (Bird, 2004), which may be realizable during the construction phase of the Li-Baker detector. If successful, achieving this value of magnetic field would improve the sensitivity of the Li-Baker detector by an order of magnitude.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Appendix B: Li-Baker HFGW Detector (DD1.7.2 Emerging technology) |
+
+---
+
+### The report's stated economic justification — an HFGW frequency-time standard could yield multi-billion-dollar telecom savings over ten years (Harper and Stephenson, 2007) — the cost case for funding an HFGW communications program.
+
+> A timing standard alone, provided by HFGW stations around the globe, could result in a multi-billion dollar savings in conventional telecom systems over ten years, according to the recent analysis of Harper and Stephenson (2007).
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 1.1 Introduction |
 
 ---
 
