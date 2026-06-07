@@ -991,6 +991,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #23 — ''State of the Art and Evolution of High Energy Laser Weapons (U//FOUO version)'', ICOD 1 December 2009 (per DIRD set; verify against page 1 at sibling production), dated 31 March 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 32 pages. DIA attachment #38 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi); this is the U//FOUO version — DIA attachment #37 is a SECRET//NOFORN version of the same report, withheld and not in the repo. Author: J. Albertine, Directed Technologies (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_23-DIRD_State_of_the_Art_and_Evolution_of_High-Energy_Laser_Weapons.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-23-laser-weapons-20100331.txt
+    archived_date: '2026-06-07'
+    note: Clean-text sibling (VLM page-image read of all 32 pages, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-23 'State of the Art and Evolution of High-Energy Laser Weapons'. Produced 2026-06-07; no pages were content-blocked (PaddleOCR-fill not needed). The Black Vault FOIA distribution insert (p.2) is preserved verbatim. Equations/figures rendered as bracketed placeholders; the title-page (b)(6) author redaction, (b)(3):10 USC 424 markers, and the title-page blacked-out box ([REDACTED]) preserved verbatim. The struck-through-but-legible 'FOR OFFICIAL USE ONLY' caveat in the classification banner (a declassification/downgrade marking) is transcribed verbatim as legible text per OCR-scan discipline, not as a redaction. Source spellings/typos preserved verbatim (e.g. 'Mid-Infared' p.24 caption sic).
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf
   status: archived
   archive_status: 1
