@@ -26,7 +26,7 @@ kind: gov
 
 The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter states that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
 
-The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
+The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD ([`/organizations/dod`]) press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
 UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council." The input list in the Preliminary Assessment as published names "NGA" two times (once before NSA and once after NOAA); shown here as it appears in the source. Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
 
@@ -52,7 +52,7 @@ DoD Public Affairs statement from spokesperson Susan Gough ([`/people/sue-gough`
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/david-grusch`] | Member (in his National Reconnaissance Office reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/people/david-grusch`] | Member (in his National Reconnaissance Office ([`/organizations/nro`]) reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
 | [`/people/karl-nell`] | Army liaison for the UAP Task Force | 2021 – 2022 | news/thedebrief-grusch-2023.html |
 
 #### Advisors
@@ -394,7 +394,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/aaro`]
 - [`/organizations/aatip`]
 - [`/organizations/aoimsg`]
+- [`/organizations/dod`]
 - [`/organizations/nia`]
+- [`/organizations/nro`]
 - [`/organizations/odni`]
 - [`/organizations/oni`]
 - [`/organizations/osd`]

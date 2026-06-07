@@ -14,7 +14,7 @@ archetype: institutional-actor
 | Full Name | James A. Holly |
 | Aliases | James Holly |
 | Nationality | American |
-| Profession | U.S. Army veteran; Department of Defense official; Acting Director of the Influence and Perception Management Office (IPMO) |
+| Profession | U.S. Army veteran; Department of Defense ([`/organizations/dod`]) official; Acting Director of the Influence and Perception Management Office (IPMO) |
 
 ---
 
@@ -133,6 +133,7 @@ Among other roles, Holly has previously served as Director of Special Programs f
 
 ### Organizations
 
+- [`/organizations/dod`]
 - [`/organizations/ipmo`]
 - [`/organizations/jsoc`]
 - [`/organizations/ousd-is`]

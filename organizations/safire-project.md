@@ -334,7 +334,7 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
+### Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense ([`/organizations/dod`]) as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
 
 > Dr. Paul Anderson is a senior physical chemist working for the United States Department of Defense, serving as a lead scientist overseeing and researching the synthesis, formulation, and characterization of next-generation explosive and propellant systems.
 
@@ -706,6 +706,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 - [`/organizations/aureon-energy`]
 - [`/organizations/aurtas-international`]
+- [`/organizations/dod`]
 - [`/organizations/e-cat-world`]
 - [`/organizations/hathaway-consulting-services`]
 - [`/organizations/institute-for-advanced-studies-at-austin`]

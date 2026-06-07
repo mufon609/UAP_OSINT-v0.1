@@ -125,7 +125,7 @@ quotes:
   source:
     path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
     location: ¶ The department is committed to releasing a second volume
-  significance: 'Sue Gough''s direct quote committing the Department of Defense to a second volume of the Historical Record Report covering AARO''s findings on reports of potential pranks and inauthentic materials'
+  significance: 'Sue Gough''s direct quote committing the Department of Defense ([`/organizations/dod`]) to a second volume of the Historical Record Report covering AARO''s findings on reports of potential pranks and inauthentic materials'
   statement_date: '2025-06-06'
 - id: q12
   added_date: '2026-05-21'

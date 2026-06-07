@@ -208,7 +208,7 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: '¶8'
-  significance: Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
+  significance: Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense ([`/organizations/dod`]) as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
   context: 'Aureon Energy corporate team page'
 - id: q17
   added_date: '2026-05-07'

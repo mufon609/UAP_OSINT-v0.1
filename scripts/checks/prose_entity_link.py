@@ -41,6 +41,10 @@ Carve-outs (faithful to convention):
     canonical column is reference metadata, not the node arguing about the
     entity. Carrying that canonical navigationally is a separate renderer
     concern. A name appearing ONLY in a variant table does not fire.
+  - The ``## References`` (cited_works) section is excised — the
+    bibliographic / authorship-network layer is explicitly not a navigation
+    surface (the universal-stub carve-out). An entity named only in a
+    citation does not fire.
   - A self-reference (the node naming its own subject) is excluded.
   - If the entity's path is wrapped anywhere in the body, it is already
     linked → no issue, regardless of how many times the name also appears
@@ -107,7 +111,7 @@ _FRONTMATTER_RE = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
 # separate renderer concern; this check governs authored ARGUMENT prose, so
 # it excises these sections like it excises blockquotes.
 _METADATA_SECTION_RE = re.compile(
-    r"^## (?:Name Variants|Source-Form Notes)\s*$.*?(?=^## |\Z)",
+    r"^## (?:Name Variants|Source-Form Notes|References)\s*$.*?(?=^## |\Z)",
     re.MULTILINE | re.DOTALL,
 )
 

@@ -154,7 +154,7 @@ In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`])
 
 ---
 
-### Sue Gough's direct quote committing the Department of Defense to a second volume of the Historical Record Report covering AARO's findings on reports of potential pranks and inauthentic materials
+### Sue Gough's direct quote committing the Department of Defense ([`/organizations/dod`]) to a second volume of the Historical Record Report covering AARO's findings on reports of potential pranks and inauthentic materials
 
 > “The department is committed to releasing a second volume of its Historical Record Report, to include AARO’s findings on reports of potential pranks and inauthentic materials,” Gough said.
 
@@ -210,4 +210,5 @@ In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`])
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/dod`]
 - [`/organizations/tovima`]
