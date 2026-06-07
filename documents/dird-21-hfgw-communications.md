@@ -654,6 +654,42 @@ Beyond communications, the report holds that the most stunning advances will pro
 
 ---
 
+### Developmental roadmap — a suggested HFGW-communications development schedule and phasing timeline (Figure 24); near-term experimental work is held to be best done in a research university setting for at least the next ten years, until laboratory generation can be verified.
+
+> A suggested developmental roadmap schedule and phasing timeline is included as Figure 24. Theoretical research is always an ongoing enterprise, but it is especially important to encourage work in the development of experimental approaches aimed at demonstrating laboratory generation and sensing of gravitational waves for the next few years. This is the kind of academic work that is best done in a research university setting, at least for the next ten years or so, until laboratory experiments can verify laboratory generation. Without early confirmation the technology will not gain widespread acceptance and move forward.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 4.1 Developmental Roadmap |
+
+---
+
+### Funding-coordination model — a multi-university coordinated effort leveraging pre-existing assets, with the National Science Foundation named as the funding activity responsible for coordinating proposal review, contract awards, and progress reviews; the document's proposed funding structure.
+
+> The most benefit would come from a coordinated effort spread over a number of different universities. Wherever possible, pre-existing assets should be utilized to stretch funding as far as possible. For example, if synchrotron light is needed to verify the Gertsenshtein effect and the Li-effect, a survey of existing national synchrotron light facilities should be part of the funded effort to find an appropriate host facility. The funding activity—that is, the National Science Foundation—would have the overall responsibility to coordinate this activity in an ongoing manner, through proposal review, contract awards, and progress reviews, and the approach should be flexible enough to allow the redirection of funding should a particularly promising new technology or invention move to the forefront.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 4.1 Developmental Roadmap |
+
+---
+
+### Development timeline — assuming peer-reviewed positive laboratory results within a 10-to-12-year timeframe, the program phases into prototype development, then device development (industry's entry point), then full-scale systems-applications development; characterized in-document as a conservative timeline.
+
+> Assuming that positive laboratory results can be achieved and peer reviewed in a 10 to 12 year timeframe, the next step would call for a period of prototype development, in which the device physics and engineering needed to support the technology could be matured. As prototypes show promise they could be transitioned to device development, the first time that industry would likely enter the field. Once the individual devices required to support GW communication technology—for example, GW generators and GW sensors—are in place, at that point it will be possible to begin full-scale development of systems applications. This is a conservative timeline, based on scaling from the development of previous technologies. If breakthroughs materialize, or if the pace of technological development quickens, progress may certainly occur more quickly than this.
+
+| Field | Value |
+|---|---|
+| Attributed to | High-Frequency Gravitational Wave Communications — DIA AAWSA Defense Intelligence Reference Document, 6 April 2010 |
+| Source | [archived source](../sources/government/dird-21-hfgw-communications-20100406.pdf) |
+| Location | Section 4.1 Developmental Roadmap |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
