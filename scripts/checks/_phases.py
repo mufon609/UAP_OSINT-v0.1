@@ -136,6 +136,8 @@ CHECK_PHASE = {
     "boundary": "render",
     "description_token_drift": "render",
     "source_form_grounding": "render",
+    "prose_entity_link": "render",           # known-entity named-but-unwrapped in prose
+
     "phase_iii_inputs": "render",
     "governance_files": "render",
     "chronological_tables": "render",        # reads the RENDERED node body

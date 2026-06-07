@@ -18,7 +18,7 @@ kind: gov
 | Established | 2020-08-04 |
 | Terminated | 2021-11-23 (functional transfer to AOIMSG via Hicks AOIMSG-establishment memorandum); 2022-07-15 (formal disestablishment directive via Hicks AARO-establishment memorandum) |
 | Parent Organization | [`/organizations/nia`] |
-| Jurisdiction | Three-way governance — chartered by the Naval Intelligence Activity (NIA); Department of the Navy lead department; under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security (USD(I&S)) |
+| Jurisdiction | Three-way governance — chartered by the Naval Intelligence Activity (NIA); Department of the Navy lead department; under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) (USD(I&S)) |
 
 ---
 
@@ -398,6 +398,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/odni`]
 - [`/organizations/oni`]
 - [`/organizations/osd`]
+- [`/organizations/ousd-is`]
 - [`/organizations/uap-excom`]
 - [`/organizations/us-navy`]
 

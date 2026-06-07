@@ -79,7 +79,7 @@ document_intrinsic:
   terminated_date: 2021-11-23 (functional transfer to AOIMSG via Hicks AOIMSG-establishment memorandum); 2022-07-15 (formal disestablishment directive via Hicks AARO-establishment memorandum)
   parent_organization_path: /organizations/nia
   office_type: DoD task force
-  jurisdiction: Three-way governance — chartered by the Naval Intelligence Activity (NIA); Department of the Navy lead department; under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security (USD(I&S))
+  jurisdiction: Three-way governance — chartered by the Naval Intelligence Activity (NIA); Department of the Navy lead department; under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) (USD(I&S))
 context_extrinsic:
   display_title: UAPTF — Unidentified Aerial Phenomena Task Force
 quotes:

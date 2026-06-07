@@ -80,7 +80,7 @@ F2 (Pax River SCIF / SAP-F Fiscal-Data Triangulation) establishes three-source c
 
 **Status:** Not established; convergence across independent witness types makes coordinated fabrication low-probability but not ruled out.
 
-No primary source establishes fabrication. The Lacatski ([`/people/james-lacatski`]) / Elizondo ([`/people/luis-elizondo`]) / Grusch ([`/people/david-grusch`]) / Knapp ([`/people/george-knapp`]) / Sharp ([`/people/christopher-sharp`]) convergence spans independent witness types (DIA program leadership, DoD/AAWSAP, NGA/UAPTF, investigative journalism), distinct time periods (2011-event-attestation in 2023 SD004 through 2025-09-09 sworn testimony), and venues (DOPSR-cleared statement, signed QFR, Joe Rogan Experience podcast, House Oversight hearing, Liberation Times reporting). Coordinated information operation across these witness types and venues is structurally low-probability — each witness has independent professional standing and independent channels to attest. The structural Pax River fiscal-data triangulation (F2) further weights against fabrication: Hoyer's 2010 appropriation is independent of any UAP framing and predates the allegation chain by twelve years. The record does not, however, foreclose H0 — convergence across independent witnesses does not constitute primary-source evidence of the underlying physical-fact claim, only of the claim's presence in the public record at multiple tiers.
+No primary source establishes fabrication. The Lacatski ([`/people/james-lacatski`]) / Elizondo ([`/people/luis-elizondo`]) / Grusch ([`/people/david-grusch`]) / Knapp ([`/people/george-knapp`]) / Sharp ([`/people/christopher-sharp`]) convergence spans independent witness types (DIA program leadership, DoD/AAWSAP, NGA/UAPTF ([`/organizations/uaptf`]), investigative journalism), distinct time periods (2011-event-attestation in 2023 SD004 through 2025-09-09 sworn testimony), and venues (DOPSR-cleared statement, signed QFR, Joe Rogan Experience podcast, House Oversight hearing, Liberation Times reporting). Coordinated information operation across these witness types and venues is structurally low-probability — each witness has independent professional standing and independent channels to attest. The structural Pax River fiscal-data triangulation (F2) further weights against fabrication: Hoyer's 2010 appropriation is independent of any UAP framing and predates the allegation chain by twelve years. The record does not, however, foreclose H0 — convergence across independent witnesses does not constitute primary-source evidence of the underlying physical-fact claim, only of the claim's presence in the public record at multiple tiers.
 
 **Sources:**
 
@@ -149,6 +149,7 @@ AARO's ([`/organizations/aaro`]) Historical Record Report Volume I (2024-03-08) 
 - [`/organizations/aawsap`]
 - [`/organizations/bigelow-aerospace`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/uaptf`]
 
 ### Findings
 

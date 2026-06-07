@@ -110,6 +110,7 @@ from checks import manifest_files_present as ck_manifest_files_present
 from checks import manifest_extraction_type as ck_manifest_extraction_type
 from checks import manifest_parse as ck_manifest_parse
 from checks import manifest_value_enums as ck_manifest_value_enums
+from checks import prose_entity_link as ck_prose_entity_link
 from checks import required_sections as ck_required_sections
 from checks import section_rules as ck_section_rules
 from checks import status_archetype_kind as ck_status_archetype_kind
@@ -135,6 +136,7 @@ _NODE_CHECKS = [
     ck_chronological_tables,
     ck_link_resolution,            # writes to ctx.broken_links; yields no Issues
     ck_table_cell_word_budget,
+    ck_prose_entity_link,          # render phase — known-entity named-but-unwrapped
 ]
 
 

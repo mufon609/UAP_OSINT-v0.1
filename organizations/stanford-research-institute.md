@@ -122,7 +122,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of K. Green at OSI as the earliest named CIA-side recipient of Puthoff's June 17, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green's OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973. Source carries OCR artifact "'1:7," for "17," — preserved as-source per OCR-scan source-form-preservation discipline; see naming_quirks nq14.
+### CIA primary-source attestation of K. Green ([`/people/kit-green`]) at OSI as the earliest named CIA-side recipient of Puthoff's June 17, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green's OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973. Source carries OCR artifact "'1:7," for "17," — preserved as-source per OCR-scan source-form-preservation discipline; see naming_quirks nq14.
 
 > H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
 
@@ -727,6 +727,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/john-j-young-jr`]
 - [`/people/john-mcintire`]
 - [`/people/kenneth-kress`]
+- [`/people/kit-green`]
 - [`/people/pat-price`]
 - [`/people/raymond-hyman`]
 - [`/people/russell-targ`]
