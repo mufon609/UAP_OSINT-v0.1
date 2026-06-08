@@ -57,7 +57,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 |---|---|
 | Attributed to | Inertial Electrostatic Confinement Fusion — DIA AAWSAP Defense Intelligence Reference Document, 10 March 2010 |
 | Source | [archived source](../sources/government/dird-09-iec-fusion-20100310.pdf) |
-| Location | section "Section I. IEC Background and Basics" — "IEC Background", ¶1 ("Bussard's work continued with strong funding from the military") |
+| Location | section "Section I. IEC Background and Basics" — "IEC Background" (¶ "Bussard's work continued with strong funding from the military") |
 
 ---
 
