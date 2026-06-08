@@ -703,6 +703,54 @@ The document is a review of representative biomaterials and their applications, 
 
 ---
 
+### Biosensor resolution — the recent trend in medical biosensors is toward placing them outside the body, with newer sensors often based on optical principles to obviate the biocompatibility and biomaterial issues of placing sensors inside the human body
+
+> Rather, the recent trend in medical biosensors is toward placing them outside the body. Newer sensors are often based on optical principles in an effort to obviate the biocompatibility and biomaterial issues of placing sensors inside the human body.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
+| Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
+| Location | p. 7, ¶ Importance of Biocompatibility |
+
+---
+
+### Silicone exoneration — after reviewing years of evidence, the national Institute of Medicine found connective tissue diseases, cancer, neurological diseases and other systemic conditions no more common in women with breast implants than in women without, and Dow moved out of the medical silicone business
+
+> After reviewing years of evidence and research concerning silicone gel-filled breast implants, the national Institute of Medicine found that "evidence suggests diseases or conditions such as connective tissue diseases, cancer, neurological diseases or other systemic complaints or conditions are no more common in women with breast implants than in women without implants." Dow moved out of the medical silicone business and has since been replaced by an array of smaller companies offering specialized silicone products.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
+| Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
+| Location | p. 11, ¶ Biomedical Silicones |
+
+---
+
+### Biomaterial-associated infection — biomaterials can become colonized with infection-causing bacteria; some hospital microorganisms are extremely resistant to antibiotic therapy and infections cannot be fully resolved until the biomaterial is removed, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous
+
+> In addition to thrombus formation, biomaterials can become colonized with infection-causing bacteria. Some microorganisms found in hospitals are extremely resistant to antibiotic therapy, and infections cannot be fully resolved until the biomaterial is removed. This is particularly a problem with hip and knee implants, where there is poor blood flow near the joint and the body's immune system has limited access. Methicillin-resistant staphylococcus aureus infections are dangerous in these situations.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
+| Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
+| Location | p. 25, ¶ Cardiovascular Biomaterials |
+
+---
+
+### Summary thesis — existing implant materials are generally based on materials available for more than 20 years, and most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials
+
+> Existing materials for implants are generally based on materials that have been available for more than 20 years. Biodegradable materials, particularly the polylactide and glycolide, have a long history of safe and effective use. Building on this solid foundation, most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications. Thus, the markets are expanding for biomaterials, and physicians can look forward to new products that will help speed patient recovery.
+
+| Field | Value |
+|---|---|
+| Attributed to | DIRD #4 (Biomaterials), 7 January 2010 |
+| Source | [archived source](../sources/government/dird-04-biomaterials-20100107.pdf) |
+| Location | p. 33, ¶ Summary and Recommendations |
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

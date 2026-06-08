@@ -159,6 +159,18 @@ quotes:
     location: 'p. 7, ¶ Importance of Biocompatibility'
   significance: Implanted-biosensor track record — more than 600 reported studies since 1996 with the biocompatibility of biomaterials related to implanted biosensors have been poor, such that many companies have abandoned implantable sensor devices altogether
   statement_date: '2010-01-07'
+- id: q56
+  added_date: '2026-06-07'
+  text: |-
+    Rather, the recent trend in medical
+    biosensors is toward placing them outside the body. Newer sensors are often
+    based on optical principles in an effort to obviate the biocompatibility and
+    biomaterial issues of placing sensors inside the human body.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 7, ¶ Importance of Biocompatibility'
+  significance: Biosensor resolution — the recent trend in medical biosensors is toward placing them outside the body, with newer sensors often based on optical principles to obviate the biocompatibility and biomaterial issues of placing sensors inside the human body
+  statement_date: '2010-01-07'
 - id: q13
   added_date: '2026-05-24'
   text: |-
@@ -256,6 +268,21 @@ quotes:
     path: government/dird-04-biomaterials-20100107.pdf
     location: 'p. 11, ¶ Biomedical Silicones'
   significance: Silicone litigation — biomedical silicones attracted notoriety in 1995 when a class-action lawsuit against Dow Corning, Inc. brought a huge settlement over the supposed dangers of silicone breast implants
+  statement_date: '2010-01-07'
+- id: q57
+  added_date: '2026-06-07'
+  text: |-
+    After reviewing years of evidence and research concerning silicone gel-filled breast
+    implants, the national Institute of Medicine found that "evidence suggests diseases or
+    conditions such as connective tissue diseases, cancer, neurological diseases or other
+    systemic complaints or conditions are no more common in women with breast implants
+    than in women without implants." Dow moved out of the medical silicone business and
+    has since been replaced by an array of smaller companies offering specialized silicone
+    products.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 11, ¶ Biomedical Silicones'
+  significance: Silicone exoneration — after reviewing years of evidence, the national Institute of Medicine found connective tissue diseases, cancer, neurological diseases and other systemic conditions no more common in women with breast implants than in women without, and Dow moved out of the medical silicone business
   statement_date: '2010-01-07'
 - id: q22
   added_date: '2026-05-24'
@@ -475,6 +502,21 @@ quotes:
     location: 'p. 25, ¶ Cardiovascular Biomaterials'
   significance: Thrombus risk — a problem most materials cause in blood contact is that they trigger the rapid formation of thrombus, an aggregation of blood cells
   statement_date: '2010-01-07'
+- id: q58
+  added_date: '2026-06-07'
+  text: |-
+    In addition to thrombus formation, biomaterials can become colonized with
+    infection-causing bacteria. Some microorganisms found in hospitals are extremely
+    resistant to antibiotic therapy, and infections cannot be fully resolved until the
+    biomaterial is removed. This is particularly a problem with hip and knee implants,
+    where there is poor blood flow near the joint and the body's immune system has
+    limited access. Methicillin-resistant staphylococcus aureus infections are dangerous
+    in these situations.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 25, ¶ Cardiovascular Biomaterials'
+  significance: Biomaterial-associated infection — biomaterials can become colonized with infection-causing bacteria; some hospital microorganisms are extremely resistant to antibiotic therapy and infections cannot be fully resolved until the biomaterial is removed, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous
+  statement_date: '2010-01-07'
 - id: q42
   added_date: '2026-05-24'
   text: |-
@@ -621,6 +663,21 @@ quotes:
     path: government/dird-04-biomaterials-20100107.pdf
     location: 'p. 33, ¶ Summary and Recommendations'
   significance: Summary — the performance of biomaterials underlies the success of many medical devices that must be acceptable to body tissues
+  statement_date: '2010-01-07'
+- id: q59
+  added_date: '2026-06-07'
+  text: |-
+    Existing materials for implants are generally based on materials that have been
+    available for more than 20 years. Biodegradable materials, particularly the polylactide
+    and glycolide, have a long history of safe and effective use. Building on this solid
+    foundation, most of the innovation is occurring in devising new ways to embody the
+    materials and apply them to new applications. Thus, the markets are expanding for
+    biomaterials, and physicians can look forward to new products that will help speed
+    patient recovery.
+  source:
+    path: government/dird-04-biomaterials-20100107.pdf
+    location: 'p. 33, ¶ Summary and Recommendations'
+  significance: Summary thesis — existing implant materials are generally based on materials available for more than 20 years, and most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials
   statement_date: '2010-01-07'
 cited_works: NONE
 naming_quirks:
