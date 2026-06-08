@@ -559,3 +559,43 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C4 — Reconcile the sibling-backed (DIRD-family) locator convention; bring dird-25 into line
+
+`meta/conventions.md` "Quote location refs" says a **sibling-backed OCR-scan /
+extraction-lossy** source uses a **descriptive content anchor**, **not** `p. N` (the
+`.txt` sibling is markerless; the `quote_location_page` check skips sibling sources by
+design, so a `p. N` there is neither derivable nor mechanically verifiable). But the
+whole DIRD family — all 26 document nodes, including the newest,
+`dird-25-statistical-drake-equation` (built 2026-06-07) — carries physical `p. N`
+refs, copied from the `dird-24` exemplar that predates the convention. The newest
+build regressed to the superseded form: its worker first emitted *printed*-page `p. N`
+(off from physical), and the audit/build "corrected" them to *physical* `p. N` — still
+the old form, never noticing content anchors are the current rule. Root cause was the
+C4-class gap (the convention lived only in `conventions.md`, not in the role
+contracts), **now closed** by the worker/builder/auditor locator-rule edits (commit
+`2ce6677`) — so *future* builds follow `conventions.md`. This item is the **decision +
+reconciliation**, not the going-forward worker behavior.
+
+Decide one (mutually exclusive; the chosen form must end up consistent across
+`conventions.md` + the worker/builder/auditor contracts + the family):
+(a) **Content anchors** (as `conventions.md` reads today). The contracts already say
+    this. Migrate `dird-25` to content anchors; decide whether the 25 legacy `p. N`
+    DIRDs migrate too or stay (the convention's "not mass-migrated" clause lets them
+    stay, at the cost of a split family).
+(b) **Bless `p. N` = the document's *printed* page number**, grep-verifiable against
+    the sibling — the DIRD siblings transcribe their own page numbers as standalone
+    lines (confirmed: 48 in dird-25, 46 in dird-24, 31 in dird-26), so a printed `p. N`
+    *is* locatable in the markerless sibling. Amend `conventions.md`'s sibling-backed
+    row to allow `p. N`-as-printed-page for a sibling that carries its page numbers;
+    revise the worker/builder/auditor locator lines from "content anchor, not `p. N`"
+    to match; keep the family + `dird-25` on `p. N` (redefined as printed, not
+    physical). No node migration.
+
+Constraint: **no new validator/gate** — `quote_location_page` skips sibling sources by
+design; verification stays contributor/grep, not mechanical. Produce the recommended
+form, edit `conventions.md` + the contracts to agree, then bring `dird-25` (and per the
+decision, the family) into line.
+
+**Blocks:** none.
+**Blocked by:** none.
