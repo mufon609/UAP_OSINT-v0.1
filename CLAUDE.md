@@ -95,7 +95,7 @@ artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (43)
+### Documents (44)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -137,6 +137,7 @@ artifact-level warnings stand.
 | `/documents/nature-1974-targ-puthoff-information-transmission` | primary-source-confirmed | non-gov-doc |
 | `/documents/pentagon-uapda-revisions-2023-11` | primary-source-confirmed | gov-doc |
 | `/documents/tablet-spy-who-bent-a-million-spoons` | primary-source-confirmed | non-gov-doc |
+| `/documents/usaf-sign-flying-discs-1948-vol-1` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-fravor-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-grusch-2023` | primary-source-confirmed | gov-doc |
