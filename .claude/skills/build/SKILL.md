@@ -38,7 +38,7 @@ prompt **above** its standing contract, so any policy you improvise into the
 prompt silently overrides the contract. The recurring failure this prevents: an
 authored Description dropped every source-attested entity link after the
 orchestrator imported the discretionary quote-relevance judgment ("judge
-load-bearing-ness") into the absolute entity-linking rule (BACKLOG / topology
+load-bearing-ness") into the absolute entity-linking rule (topology
 "Handoff"). If you feel the urge to explain how a role should decide something,
 stop — that judgment is the role's, and its contract already states it. Relay
 stub fields verbatim; do not paraphrase them.

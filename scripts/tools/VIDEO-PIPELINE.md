@@ -239,7 +239,7 @@ With baselines registered, two tools resolve who-is-who:
   detected face with its embedding-matched identity — ad-hoc inspection when
   resolving a single contested turn.
 - `spot-check-attribution.py SIBLING.yaml --video VIDEO.mp4` is the **W3
-  finalize gate** (BACKLOG C3): a per-turn frame burst across every turn,
+  finalize gate**: a per-turn frame burst across every turn,
   deciding who is SPEAKING (mouth-motion via `active-speaker.py`) not just who
   is on camera. `contested-fold` (another identified speaker is the active
   speaker) BLOCKS finalize. It runs automatically inside

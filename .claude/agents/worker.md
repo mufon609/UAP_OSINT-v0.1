@@ -39,7 +39,7 @@ sufficient; the check verifies the bytes are in the source, not who said them.
 - **A reporting-verb paraphrase is not a quote** (a narrator's verb, no
   quotation marks) — capture it as a `cross_ref_candidate`.
 - **Transcript artifacts** carry every speaker, so the multi-speaker exclusion
-  does not apply. But the Worker does **not** hand-key `speaker_id` (C3-W1):
+  does not apply. But the Worker does **not** hand-key `speaker_id`:
   emit each quote's `text` + `[MM:SS]` location only. The Builder derives
   `speaker_id` from the verified attribution sibling via
   `scripts/build/stamp-speaker-id.py` — hand-keying is exactly the divergence
@@ -66,7 +66,7 @@ naming the metadata field, never a `quotes[]` entry.
    `quotes[]` (`id`, `text`, `source.{path,location}`, `significance`,
    `context`; `observation_type` direct|relayed and `statement_date` on person
    artifacts). On a transcript, do **not** emit `speaker_id` — the Builder
-   derives it from the sibling (C3-W1). For an about-the-subject /
+   derives it from the sibling. For an about-the-subject /
    institutional source, `quotes[]` is legitimately empty.
 2. Propose a `claim_group` label per quote (advisory; the builder normalizes).
 3. Emit `cross_ref_candidates[]` for **every** entity the source names — each

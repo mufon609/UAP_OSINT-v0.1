@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """stamp-speaker-id.py — derive transcript-quote speaker_id from the verified
-attribution sibling (BACKLOG C3-W1).
+attribution sibling.
 
 The sibling (`sources/transcripts/{slug}-attribution.yaml`) is the single
 source of truth for who speaks when. Instead of the Worker hand-keying

@@ -39,7 +39,7 @@ In order, with a check after each (build-protocol → run
    `validate-research.py --phase extract meta/research/{slug}.yaml` once — the
    verbatim boundary fires here on the merged result (it reads disk), covering
    `cited_works` `citation_verbatim` the same way it covers `quotes` text.
-0b. **Derive `speaker_id` (transcript artifacts only) — C3-W1.** The Worker
+0b. **Derive `speaker_id` (transcript artifacts only).** The Worker
    emits transcript quotes with `text` + `[MM:SS]` location but **no**
    `speaker_id`. Run `python3 scripts/build/stamp-speaker-id.py
    meta/research/{slug}.yaml` (dry run), then `--write`: it aligns the

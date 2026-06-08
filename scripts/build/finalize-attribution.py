@@ -27,7 +27,7 @@ derived deterministically from the source and are tamper-evident:
 `validate-speaker-attribution.py` recomputes and compares. Stamped in both
 --video and --no-video modes (pure source read).
 
-W3 fold gate (BACKLOG C3) — finalize is mechanically gated on the active-
+W3 fold gate — finalize is mechanically gated on the active-
 speaker spot-check. There is NO graceful skip: a sibling whose source has a
 recording cannot be finalized unless the spot-check runs clean.
 
