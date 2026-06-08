@@ -130,6 +130,15 @@ quotes:
   significance: Weapons application — Lightcraft as ground/sea/air-launched kinetic-kill anti-ballistic-missile interceptors, one of the explicitly considered military missions.
   statement_date: '2010-11-01'
 - id: q11
+  added_date: '2026-06-08'
+  text: |-
+    Very innovative near-term missions could also include deploying Lightcraft nano-/pico-satellites to form swarms of small spacecraft which cooperate coherently to form a real distributed system in which the whole is more than the sum of the parts.
+  source:
+    path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
+    location: 'Chapter 5: Conclusion'
+  significance: Mission application — coherent distributed-aperture satellite swarms, the third distinct military mission the Conclusion advances for laser-propelled Lightcraft alongside Earth/space-observing nano-/pico-satellites and kinetic-kill weapons.
+  statement_date: '2010-11-01'
+- id: q12
   added_date: '2026-06-07'
   text: |-
     TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas mixture laser is a multi-megawatt-class system that can be implemented now because this technology requires little or no additional R&D.
@@ -138,7 +147,7 @@ quotes:
     location: 'Chapter 5: Conclusion'
   significance: Names the specific near-term laser system — TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas-mixture laser — identified as deployable now. "CO₂" preserved verbatim (subscript form as in the sibling).
   statement_date: '2010-11-01'
-- id: q12
+- id: q13
   added_date: '2026-06-07'
   text: |-
     This author recommends that the Department of Defense, in collaboration with NASA, return laser Lightcraft propulsion R&D to the United States and restart the space launch test flight demonstration program of the Air Force X-50LR Lightcraft, which was originally proposed by Dr. Frank Mead [34].
@@ -159,14 +168,14 @@ naming_quirks:
   added_date: '2026-06-07'
   observed: CO2
   canonical: CO₂
-  location: 'Chapter 2 history passage — "infrared CO2 laser" (quoted in q6); the source renders the chemical-formula subscript inconsistently, with "CO₂" appearing elsewhere (q11, References [29])'
+  location: 'Chapter 2 history passage — "infrared CO2 laser" (quoted in q6); the source renders the chemical-formula subscript inconsistently, with "CO₂" appearing elsewhere (q12, References [29])'
   source_path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-07'
   observed: Frank Mead
   canonical: Franklin Mead (/people/franklin-mead)
-  location: 'Chapter 5 Conclusion closing paragraph — "originally proposed by Dr. Frank Mead [34]" (quoted in q12)'
+  location: 'Chapter 5 Conclusion closing paragraph — "originally proposed by Dr. Frank Mead [34]" (quoted in q13)'
   source_path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   resolution: preserve-as-sic-in-quotes
 description: |-

@@ -157,6 +157,18 @@ On cost, the system would reduce space launch costs by two to three orders of ma
 
 ---
 
+### Mission application — coherent distributed-aperture satellite swarms, the third distinct military mission the Conclusion advances for laser-propelled Lightcraft alongside Earth/space-observing nano-/pico-satellites and kinetic-kill weapons.
+
+> Very innovative near-term missions could also include deploying Lightcraft nano-/pico-satellites to form swarms of small spacecraft which cooperate coherently to form a real distributed system in which the whole is more than the sum of the parts.
+
+| Field | Value |
+|---|---|
+| Attributed to | Laser Lightcraft Nanosatellites — DIA AAWSA Defense Intelligence Reference Document #27, 1 November 2010 |
+| Source | [archived source](../sources/government/dird-27-laser-lightcraft-nanosatellites-2010.pdf) |
+| Location | Chapter 5: Conclusion |
+
+---
+
 ### Names the specific near-term laser system — TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas-mixture laser — identified as deployable now. "CO₂" preserved verbatim (subscript form as in the sibling).
 
 > TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas mixture laser is a multi-megawatt-class system that can be implemented now because this technology requires little or no additional R&D.
