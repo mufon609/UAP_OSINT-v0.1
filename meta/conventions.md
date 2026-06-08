@@ -226,7 +226,9 @@ a contributor-verified `.txt` sibling. The two-step contributor
 discipline below ("Per-quote contributor discipline …") handles the
 per-quote case during the window before the sibling exists.
 
-**Producing the `.txt` sibling, then confirming it.** The sibling is built and
+#### Producing the `.txt` sibling, then confirming it
+
+The sibling is built and
 checked in four steps, two of them independent reads by *different tools*:
 
 1. **Transcribe** the page images to the `.txt` sibling — a **VLM page-image

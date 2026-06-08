@@ -599,3 +599,28 @@ decision, the family) into line.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C5 — Resolve the dangling "Foreign content" citation in the speaker-attribution schema
+
+`meta/schema-speaker-attribution.yaml` (the `foreign_kind` comment block) cites
+`meta/conventions.md` "Foreign content" — a section that does not exist in
+`conventions.md` (the word "foreign" appears nowhere in it). The forward-reference was
+written ahead of the section it points at. The concept is already fully defined in that
+schema file's own `foreign_kind_values` block: content whose AUTHOR is outside the live
+speaker set (a show jingle, a third-party memo, an archival clip), distinct from
+`speakers[]`.
+
+Bundle with the next audio-to-text transcription / speaker-attribution build, where the
+foreign-content handling is in active use and the right wording is fresh. Decide one:
+(a) **Repoint the citation** to where the concept lives — the schema's own
+    `foreign_kind_values` block and/or `conventions.md` "Transcript quotes carry
+    structural speaker attribution". Minimal; no new content.
+(b) **Write the section** — add a short "Foreign content" subsection to
+    `conventions.md` so the long-promised anchor exists, then leave the citation.
+
+Same pass: the schema comment also references a BACKLOG id, which violates
+`conventions.md` "BACKLOG lifecycle discipline" (ids must not appear outside this file)
+— describe the work and drop the id.
+
+**Blocks:** none.
+**Blocked by:** none.
