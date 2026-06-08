@@ -126,7 +126,18 @@ naming the metadata field, never a `quotes[]` entry.
      `p. N, References`). `citation_verbatim` carries the same disk-read
      verbatim backstop `quotes[]` does
      (`scripts/checks/cited_works.py` substring-matches it against the
-     source), so copy it from the scratch, never from memory.
+     source), so copy it from the scratch, never from memory. **A
+     reference entry whose lines straddle a printed-page boundary** has
+     the UNCLASSIFIED/FOUO banner (or page footer/header) interposed
+     mid-entry in the markerless OCR sibling, so a single
+     `citation_verbatim` spanning the whole entry is not a contiguous
+     substring and trips the gate. Capture the contiguous span up to the
+     break as `citation_verbatim` and record the page-break-split
+     remainder in `location` (e.g. `p. N–N+1, References, entry [35]
+     (final line on p. N+1 after the page break)`) — do not splice
+     across the interposed banner. Mirrors the page-spanning-quote rule
+     (`meta/conventions.md` "Page-spanning quotes split at the page
+     boundary").
 
    Omit the block entirely for non-document sources (workers on
    transcript / media / etc. sources do not emit `cited_works`).

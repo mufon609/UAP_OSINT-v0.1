@@ -246,40 +246,60 @@ def build_consensus(vlm_text, tess_text, paddle_text):
     return stats, contested, possible_omissions
 
 
-# A contiguous run of OCR-corroborated tokens absent from the VLM base, anchored
-# at a single spine point this large, signals a whole paragraph/page the VLM
-# transcription dropped. possible_omissions is advisory and never splices into
-# the sibling, so without this the dropped region ships silently. This promotes
-# the largest such run to a visible coverage_warning at production time, so a
-# dropped paragraph/page is recovered before the sibling is used.
+# A cluster of OCR-corroborated tokens this large, anchored at a single spine
+# point AND genuinely absent elsewhere from the VLM base (see the present-set
+# partition in coverage_warning_from_omissions), signals a whole paragraph/page
+# the VLM transcription dropped. possible_omissions is advisory and never
+# splices into the sibling, so without this the dropped region ships silently.
+# This promotes the largest such absent cluster to a visible coverage_warning at
+# production time, so a dropped paragraph/page is recovered before the sibling is
+# used.
 MAX_OMISSION_RUN = 40
 
 
-def coverage_warning_from_omissions(omissions):
-    """Return a coverage-warning dict if OCR-corroborated tokens absent from the
-    VLM base cluster into a large contiguous run at one spine point (a likely
-    dropped paragraph/page), else None. A dropped page becomes one difflib
-    insertion block, so all its tokens share a single ``before_token_index`` —
-    grouping by that anchor and taking the largest group surfaces it."""
+def coverage_warning_from_omissions(omissions, base_text):
+    """Return a coverage-warning dict if a cluster of OCR-corroborated tokens is
+    genuinely ABSENT from the VLM base — a likely dropped paragraph/page — else
+    None. A dropped page becomes one difflib insertion block, so all its tokens
+    share a single ``before_token_index``; grouping by that anchor and taking the
+    largest group surfaces it.
+
+    The discriminator that separates a real drop from a benign reordering: a
+    dropped region's tokens appear NOWHERE in the sibling, whereas a 2-D table
+    the VLM rendered as bracketed inline prose (while the OCR engines linearized
+    it cell-by-cell in raster order) has every cell value present in the sibling
+    — just at a position difflib couldn't align, so it surfaces as one big
+    insertion cluster shaped exactly like a dropped page. So the largest
+    anchor-run is partitioned by presence elsewhere in ``base_text``, and the
+    ``MAX_OMISSION_RUN`` threshold is applied to the ABSENT count only: full
+    sensitivity to a real drop (its tokens are absent everywhere) without firing
+    on a reordered table/figure (its tokens are present elsewhere)."""
     if not omissions:
         return None
     by_anchor = {}
     for o in omissions:
         by_anchor.setdefault(o["before_token_index"], []).append(o)
     anchor, run = max(by_anchor.items(), key=lambda kv: len(kv[1]))
-    if len(run) < MAX_OMISSION_RUN:
+    present = {norm_token(surf) for surf, _cs, _ce in tokenize(base_text)}
+    absent = [o for o in run if norm_token(o["ocr_token"]) not in present]
+    if len(absent) < MAX_OMISSION_RUN:
         return None
+    elsewhere = len(run) - len(absent)
     return {
         "before_token_index": anchor,
-        "line": run[0]["line"],
-        "omitted_token_count": len(run),
+        "line": absent[0]["line"],
+        "absent_token_count": len(absent),
+        "present_elsewhere_count": elsewhere,
+        "run_token_count": len(run),
         "total_omitted_tokens": len(omissions),
         "note": (
-            f"{len(run)} OCR-corroborated tokens absent from the VLM base "
-            f"cluster at one point (line {run[0]['line']}) — the VLM "
-            f"transcription likely dropped a paragraph or page here. The "
-            f"sibling must cover the whole document; recover the dropped "
-            f"region before using the sibling."
+            f"{len(absent)} OCR-corroborated tokens at line {absent[0]['line']} "
+            f"are absent from the VLM sibling entirely — a candidate dropped "
+            f"paragraph/page. The sibling must cover the whole document; recover "
+            f"the dropped region before using the sibling."
+            + (f" ({elsewhere} other clustered tokens DO appear elsewhere in the "
+               f"sibling — likely a reordered table/figure, benign.)"
+               if elsewhere else "")
         ),
     }
 
@@ -349,6 +369,7 @@ def run_tesseract(images):
             capture_output=True, text=True,
         )
         pages.append(out.stdout)
+        print(f"      Tesseract p.{len(pages)}/{len(images)}", file=sys.stderr, flush=True)
     return "\n".join(pages)
 
 
@@ -417,6 +438,7 @@ def run_paddleocr(images):
                     except (IndexError, TypeError):
                         continue
         pages.append("\n".join(lines))
+        print(f"      PaddleOCR p.{len(pages)}/{len(images)}", file=sys.stderr, flush=True)
     return "\n".join(pages)
 
 
@@ -761,12 +783,16 @@ def cmd_run(args):
     print(f"\n  sibling : {sibling}")
 
     divergences, omissions = confirm_report(base_text, tess_text, paddle_text, vlm_skipped)
-    coverage_warning = coverage_warning_from_omissions(omissions)
+    coverage_warning = coverage_warning_from_omissions(omissions, base_text)
     if coverage_warning:
-        print(f"\n  ⚠ COVERAGE WARNING: {coverage_warning['omitted_token_count']} "
-              f"OCR-corroborated tokens absent from the VLM base cluster at "
-              f"line {coverage_warning['line']} — the base likely dropped a "
-              f"paragraph/page. Recover the dropped region before using the sibling.")
+        cw = coverage_warning
+        extra = (f" ({cw['present_elsewhere_count']} more clustered here appear "
+                 f"elsewhere in the sibling — likely a reordered table/figure, benign)"
+                 if cw["present_elsewhere_count"] else "")
+        print(f"\n  ⚠ COVERAGE WARNING: {cw['absent_token_count']} OCR-corroborated "
+              f"tokens at line {cw['line']} are absent from the VLM sibling entirely "
+              f"— a candidate dropped paragraph/page. Recover it before using the "
+              f"sibling.{extra}")
 
     print_confirm_report(divergences, sibling, page_starts)
     print_blocked_report(blocked_report)

@@ -97,7 +97,7 @@ def main():
     parser.add_argument("--kind", help="Organization/document/event/transcript/media kind")
     parser.add_argument("--form", help="Document form (doc_form)")
     parser.add_argument("--status", help="Status (default: type-specific)")
-    parser.add_argument("--archival-status", help="Document archival_status (required for doc_form=book)")
+    parser.add_argument("--archival-status", help="Document archival_status — required for doc_form=book, optional otherwise. Values: full-text-archived | excerpts-only | not-archived")
     parser.add_argument("--derivation-of", help="Media derivation_of: path to parent media node for derivative media")
     parser.add_argument("--source-medium", help="Transcript source_medium (free-text; e.g., youtube, podcast, broadcast)")
     parser.add_argument("--derived-from", help="Transcript derived_from: path to underlying media/document node")

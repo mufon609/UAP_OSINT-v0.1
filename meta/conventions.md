@@ -1417,6 +1417,19 @@ form-feed-adjacent page-number strip at extraction time); it is deliberately
 *not* extended to recognize page footers/headers, because boilerplate-stripping
 a quote would weaken the one exactness the verbatim gate is for.
 
+**The same split applies to a `cited_works` reference entry that straddles a
+page break.** A reference / endnote whose lines fall on either side of a printed
+page boundary has the UNCLASSIFIED/FOUO banner (or page footer/header)
+interposed mid-entry in the markerless `.txt` sibling, so a single
+`citation_verbatim` spanning the whole entry is not a contiguous substring of
+the source and trips the `cited_works` verbatim check
+(`scripts/checks/cited_works.py`) for the same reason a page-spanning quote
+would. Capture the contiguous span up to the break as `citation_verbatim` and
+record the page-break-split remainder in the entry's `location` anchor (e.g.
+`p. N–N+1, References, entry [35] (final line on p. N+1 after the page break)`)
+— do not splice across the interposed banner. The gate is behaving correctly;
+the entry's structure, not the check, is what the `location` note documents.
+
 ### Check naming
 
 Validator checks are referenced across the codebase by **topic name**,
