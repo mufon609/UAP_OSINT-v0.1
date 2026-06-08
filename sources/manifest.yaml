@@ -1063,6 +1063,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #27 — ''Laser Lightcraft Nanosatellites'', DIA-08-1011-001, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 78 pages. DIA attachment #31 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. E. Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_27-DIRD_Laser_Lightcraft_Nanosatellites.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-27-laser-lightcraft-nanosatellites-2010.txt
+    archived_date: '2026-06-07'
+    note: 'Clean-text sibling (VLM page-image read of all 78 pages, confirmed against PaddleOCR + Tesseract) of the OCR-scanned AAWSAP DIRD Black Vault #27 (''Laser Lightcraft Nanosatellites'', DIA-08-1011-001, Defense Futures series, 1 November 2010). Produced 2026-06-07; no pages were content-blocked for the VLM (every page VLM-read). Load-bearing word/number divergences settled against the page images: all but one were shared OCR glyph-confusion on a correct sibling (Greek/subscript/superscript glyphs, struck-through FOUO banners); one genuine VLM misread corrected — ''Lightcraft'' -> ''Lightsat'' at printed p.27/physical p.32 (the document''s contrasting conventionally-launched-satellite term). The Black Vault declassification-distribution insert (physical page 2) is preserved verbatim. Equations/figures bracketed/flagged; redactions ((b)(6), (b)(3):10 USC 424), source spellings, and source typos (e.g. ''NORAAD'', ''Brillion'', ''Bybrid'', ''AAWSA'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_28-DIRD_Cockpits_in_the_Era_of_Breakthrough_Flight.pdf
   status: archived
   artifacts:
