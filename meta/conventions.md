@@ -54,7 +54,8 @@ and with the reader.
 Corollary: an entity's relevance often cannot be judged from its own
 source in isolation — it is judged against the connected record. The
 build topology applies this at investigation time (see
-`prompts/topology.md` — "Load-bearing-ness is judged in context").
+`prompts/topology.md` "Source-read-first" — load-bearing-ness judged in
+context).
 
 ---
 
