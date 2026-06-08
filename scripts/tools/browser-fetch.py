@@ -13,6 +13,12 @@ wall on a landing page so the session token is minted, then runs ``fetch()``
 from INSIDE the page context — so the browser sends the token + correct
 ``sec-fetch``/referer headers, not us — and streams the bytes back.
 
+Some walls (notably Akamai) further fingerprint *headless* Chromium and 403 the
+fetch anyway. The escalation: retry with ``--headed`` (the full, headed Chromium
+clears it); on a display-less box the headed browser needs a virtual framebuffer,
+so wrap the whole command in ``xvfb-run -a``. The 403 / verify-fail messages
+restate this at the point of failure.
+
 This is the bot-wall analog of ``download-video.py`` (which wraps yt-dlp for
 media behind YouTube's JS challenge). Like that tool it lands the asset under
 ``sources/`` and registers it via ``manifest.py add`` so the same archival
@@ -241,8 +247,9 @@ def _fetch_via_page(page, url, out_path):
         res = page.evaluate(_JS_FETCH_ALL, url)
         if not res["ok"]:
             raise RuntimeError(
-                f"in-page fetch returned HTTP {res['status']} "
-                f"(bot-wall block? try --headed)")
+                f"in-page fetch returned HTTP {res['status']} (bot-wall block? "
+                f"headless is often fingerprinted — retry with --headed; on a "
+                f"display-less box wrap the command in `xvfb-run -a`)")
         with open(out_path, "wb") as fh:
             fh.write(base64.b64decode(res["b64"]))
 
@@ -324,7 +331,9 @@ def process_one(url, rel_path, fmt, args, page_fetch):
             head = out_path.read_bytes()[:80]
             print(
                 f"  FAIL verify: fetched bytes are not a valid {fmt} "
-                f"(got {head!r}…) — likely a bot-wall block page. Try --headed.",
+                f"(got {head!r}…) — likely a bot-wall block page. Retry with "
+                f"--headed (display-less box: `xvfb-run -a python3 "
+                f"scripts/tools/browser-fetch.py … --headed`).",
                 file=sys.stderr,
             )
             out_path.unlink()
@@ -379,7 +388,9 @@ def main():
     parser.add_argument(
         "--headed", action="store_true",
         help="Run the browser headed (visible). Fallback when a bot-wall "
-             "fingerprints headless Chromium and 403s the in-page fetch.")
+             "fingerprints headless Chromium and 403s the in-page fetch. On a "
+             "display-less box (no $DISPLAY) wrap the whole command in "
+             "`xvfb-run -a` so headed Chromium renders off-screen.")
     parser.add_argument(
         "--rate-delay", type=float, default=2.0,
         help="Seconds to pause between assets in --from-list mode (default 2.0).")
