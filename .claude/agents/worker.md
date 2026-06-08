@@ -118,8 +118,13 @@ naming the metadata field, never a `quotes[]` entry.
      `1` for `[1]` / `^1` / `1.`), `author` (source form preserved sic),
      `citation_verbatim` (the full reference line copied verbatim from
      the scratch, INCLUDING its own `[N]` marker + any OCR damage),
-     optional `year` / `title`, and a `location` anchor (e.g.
-     `p. N, References`). `citation_verbatim` carries the same disk-read
+     optional `year` / `title`, and a `location` anchor whose form follows
+     the **source's shape**, exactly as `quotes[]` locations do (the
+     location-form rule above): a paginated text-native PDF →
+     `p. N, References`; a sibling-backed OCR-scan / extraction-lossy source →
+     a descriptive reference-list anchor, **NOT `p. N`** (e.g.
+     `References, entry [3]` / `Endnotes, entry [3]` — the markerless `.txt`
+     sibling carries no page integer to cite). `citation_verbatim` carries the same disk-read
      verbatim backstop `quotes[]` does
      (`scripts/checks/cited_works.py` substring-matches it against the
      source), so copy it from the scratch, never from memory. **A
@@ -129,8 +134,10 @@ naming the metadata field, never a `quotes[]` entry.
      `citation_verbatim` spanning the whole entry is not a contiguous
      substring and trips the gate. Capture the contiguous span up to the
      break as `citation_verbatim` and record the page-break-split
-     remainder in `location` (e.g. `p. N–N+1, References, entry [35]
-     (final line on p. N+1 after the page break)`) — do not splice
+     remainder in `location` descriptively — this case is by definition the
+     markerless sibling, so the anchor is descriptive, never `p. N` (e.g.
+     `Endnotes, entry [35] (entry continues after an interposed page-banner;
+     final line captured after the break)`) — do not splice
      across the interposed banner. Mirrors the page-spanning-quote rule
      (`meta/conventions.md` "Page-spanning quotes split at the page
      boundary").
