@@ -175,7 +175,7 @@ speaker_entry:
   #   every live speaker MUST carry one (W4 — the authoritative identity
   #   join key downstream; kills honorific/name-matching fragility). A
   #   stub to an unbuilt node is the CORRECT value (per meta/conventions.md
-  #   "Cross-reference paths to unbuilt nodes — use a stub, never null");
+  #   "Cross-references" — the stub-never-null rule);
   #   the broken-link registry tracks it via the transcript node body, so
   #   target existence is NOT required here.
   # no_repo_node: true marks a live speaker with no resolvable repository

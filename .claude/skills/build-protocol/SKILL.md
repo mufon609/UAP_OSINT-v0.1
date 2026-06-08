@@ -93,17 +93,13 @@ is the same violation). When you add or carry a cross-reference, check its
 direction before emitting it. Full matrix: `meta/conventions.md` "Tier model
 and linking contract".
 
-**Create the link wherever the source attests the entity — the target node
-need not exist.** Within the entity ↔ entity fabric, every person,
-organization, program, and document the primary source names is cross-linked
-to its canonical `/{type}/{slug}` — including each named researcher in
-body/synthesis prose and the document's own author. A forward-link to an
-unbuilt node is the correct value, never null and never bare narration: the
-renderer wraps it `[`/path`]`, `associate.py` indexes it, and it auto-registers
-on the broken-link / Priority-Build-Queue. Dropping a source-attested person
-because no node exists yet is the under-linking failure. Full rule:
-`meta/conventions.md` "Cross-reference paths to unbuilt nodes — use a stub,
-never null".
+**Linking — name it, wrap it.** Every person, organization, program, and
+document the primary source names is cross-linked to its canonical
+`/{type}/{slug}`, stub even when that node doesn't exist yet — including each
+named researcher in body/synthesis prose and the document's own author. A
+forward-link to an unbuilt node is the correct value, never null and never bare
+narration. Full rule + the two carve-outs: `meta/conventions.md`
+"Cross-references".
 
 ## Build phases
 

@@ -1,7 +1,7 @@
 """prose_entity_link check — per-node NodeContext check.
 
-The universal-stub rule (see ``meta/conventions.md`` "## Associated
-Nodes"): every entity a node names **in its own authored prose** must be
+The universal-stub rule (see ``meta/conventions.md`` "Cross-references"):
+every entity a node names **in its own authored prose** must be
 carried navigationally as a ``[`/{type}/{slug}`]`` stub, so it reaches the
 auto-generated ``## Associated Nodes`` index and the broken-link registry.
 There is no "load-bearing vs. incidental" discretion — naming an entity
@@ -225,6 +225,6 @@ def check(ctx):
                 f"prose_entity_link: names existing entity {name!r} in prose "
                 f"but never wraps its stub {target} — add a [`{target}`] wrap "
                 f"so it reaches ## Associated Nodes (universal-stub rule; see "
-                f"meta/conventions.md '## Associated Nodes').",
+                f"meta/conventions.md 'Cross-references').",
                 check_name=CHECK_NAME,
             )

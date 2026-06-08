@@ -72,16 +72,12 @@ naming the metadata field, never a `quotes[]` entry.
 3. Emit `cross_ref_candidates[]` for **every** entity the source names — each
    person (every named researcher and cited author discussed in the prose, plus
    the document's own author), organization, program, and document — to its
-   canonical `/{type}/{slug}` **whether or not that node exists yet** (a
-   forward-link is the correct value; `meta/conventions.md` "Cross-reference
-   paths to unbuilt nodes — use a stub, never null"). A plainly-named person in
-   the prose is a cross-ref candidate, not mere narration; dropping one because
-   no node exists is the under-linking failure. An entity named under a
-   **non-canonical form** (idiosyncratic abbreviation, former name, misspelling)
-   *additionally* gets its source form flagged for a `naming_quirks` entry, so
-   the dropped-cross-reference + unflagged-variance failure does not recur
-   (`meta/conventions.md` "A source naming an entity under a non-canonical
-   form"). For an
+   canonical `/{type}/{slug}`, **stub even if that node doesn't exist yet**
+   (`meta/conventions.md` "Cross-references"; naming an entity without a link is
+   the under-linking failure). An entity named under a **non-canonical form**
+   (idiosyncratic abbreviation, former name, misspelling) *additionally* gets its
+   source form flagged for a `naming_quirks` entry (same convention, "A source
+   naming an entity under a non-canonical form"). For an
    about-the-subject source, also emit `background_material[]` — load-bearing
    facts with their **exact source phrasing** + location anchor — so the
    builder can write source-grounded prose (prose-drift tokenizes against this)
