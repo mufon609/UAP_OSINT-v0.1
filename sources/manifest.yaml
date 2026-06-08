@@ -4465,6 +4465,15 @@
     extraction_type: ocr-scan
     note: 'Dept. of War UFO/PURSUE release_1 (#18_6369445_General_1948_Vol_1), fetched via headed browser (Xvfb) past Akamai bot-detection (direct curl 403s). Image-only scan, no reliable text layer; clean-text .txt sibling required per /prepare-ocr-sibling. Landing: war.gov/UFO/.'
   archive_status: 1
+- url: https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/18_6369445_general_1948_vol_1.txt
+    archived_date: '2026-06-08'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR) of the OCR-scanned war.gov/UFO PURSUE release_1 document 18_6369445_General_1948_Vol_1.pdf (28pp Project SIGN-era USAF ''Flying Discs'' correspondence, 1947-1948). Produced 2026-06-08 via 4 parallel page-image producers (pages 1-7/8-14/15-21/22-28); all 28 pages VLM-read, none content-blocked. Independently settled against the page images by 4 verifier passes (2 fixes: source''s own mid-sentence capital ''Implementing'' restored on the two Comment No. 1 copies). Classification banners (SECRET/CONFIDENTIAL), struck-through stamps, and legible handwritten marginalia preserved verbatim; source spellings/typewriter irregularities preserved.'
+  archive_status: 1
 - url: https://www.westexec.com/kavandi-kirkpatrick/
   status: archived
   archive_status: 3
