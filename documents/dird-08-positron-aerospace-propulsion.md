@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -47,7 +45,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 3, Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -59,7 +57,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 7, Antimatter |
+| Location | section "Antimatter", ¶ ("specific energy by annihilation is 180 MJ/µg") |
 
 ---
 
@@ -71,7 +69,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 8, Antimatter |
+| Location | section "Antimatter", ¶ ("two reasons why positrons have yet to be used") |
 
 ---
 
@@ -83,7 +81,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 33, Conclusions |
+| Location | section "Conclusions", ¶ ("Within 10 years, the 150 µg of positrons ... could be made in 6 months at a cost of $69 million") |
 
 ---
 
@@ -95,7 +93,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 33, Conclusions |
+| Location | section "Conclusions", ¶ ("Positron requirements range from 150 micrograms") |
 
 ---
 
@@ -107,7 +105,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 34, Conclusions |
+| Location | section "Conclusions", ¶ ("Lifetimes of 10 µs have been achieved") |
 
 ---
 
@@ -119,7 +117,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 3, Administrative Note |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -131,7 +129,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 30, Positron Costs |
+| Location | section "Positron Costs", ¶ ("the required 150 µg for this epic flight could be manufactured in 6 months for $96 million") |
 
 ---
 
@@ -143,7 +141,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 29, Positron Costs |
+| Location | section "Positron Costs", ¶ ("the cost of positrons is projected to be $0.004/J") |
 
 ---
 
@@ -155,7 +153,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 29, Positron Costs |
+| Location | section "Positron Costs", ¶ ("positrons cost less than antiprotons by a factor of 1,000-100,000") |
 
 ---
 
@@ -167,7 +165,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 1, classification banner (cover) |
+| Location | classification banner |
 
 ---
 
@@ -179,7 +177,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 20, The Gas-Core Positron Rocket |
+| Location | section "THE GAS-CORE POSITRON ROCKET" |
 
 ---
 
@@ -191,7 +189,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 6, Introduction |
+| Location | section "Introduction", ¶ ("the first, modest demonstration of positron propulsive flight") |
 
 ---
 
@@ -203,7 +201,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 6, Introduction |
+| Location | section "Introduction", ¶ ("an extremely attractive fuel for aerospace propulsion") |
 
 ---
 
@@ -215,7 +213,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 6, Introduction |
+| Location | section "Introduction", ¶ ("present no radiation or environmental safety problems") |
 
 ---
 
@@ -227,7 +225,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 29, Positron Production |
+| Location | section "Positron Production" |
 
 ---
 
@@ -241,7 +239,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 3, Prepared-by / Author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -253,7 +251,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 9, Positron Air-Breathing Propulsion |
+| Location | section "Positron Air-Breathing Propulsion", ¶ ("tungsten shells are heated by gamma rays") |
 
 ---
 
@@ -265,7 +263,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 10, Positron Air-Breathing Propulsion |
+| Location | section "Positron Air-Breathing Propulsion", ¶ ("volume used for combustion heating is used by PTREs for convection heating") |
 
 ---
 
@@ -277,7 +275,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 23, Positron Rocket System Comparison |
+| Location | section "POSITRON ROCKET SYSTEM COMPARISON" |
 
 ---
 
@@ -289,7 +287,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 23, The Sänger Photon Positron Rocket |
+| Location | section "THE SÄNGER PHOTON POSITRON ROCKET" |
 
 ---
 
@@ -301,7 +299,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 18, The Solid-Core Positron Rocket |
+| Location | section "THE SOLID-CORE POSITRON ROCKET", ¶ ("specific impulse of 920 seconds is attainable") |
 
 ---
 
@@ -313,7 +311,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 19, The Solid-Core Positron Rocket |
+| Location | section "THE SOLID-CORE POSITRON ROCKET", ¶ ("three 72-kN solid-core engines would require 6-9 mg of positrons") |
 
 ---
 
@@ -325,7 +323,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 15, Single-Stage Reusable Vehicle (SSRV) |
+| Location | section "SINGLE-STAGE REUSABLE VEHICLE (SSRV)", ¶ ("GLOW of the positron SSRV is 43 percent less") |
 
 ---
 
@@ -337,7 +335,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 16, Single-Stage Reusable Vehicle (SSRV) |
+| Location | section "SINGLE-STAGE REUSABLE VEHICLE (SSRV)", ¶ ("positron mass budget for a 60,500-kg dry mass") |
 
 ---
 
@@ -349,7 +347,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 30, Positron Storage |
+| Location | section "Positron Storage" |
 
 ---
 
@@ -361,7 +359,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 32, Long-Term Storage of Positronium |
+| Location | section "LONG-TERM STORAGE OF POSITRONIUM" |
 
 ---
 
@@ -379,7 +377,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 1, title-page identity block |
+| Location | title-page identity block |
 
 ---
 
@@ -391,7 +389,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 |---|---|
 | Attributed to | Positron Aerospace Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 2 March 2010 |
 | Source | [archived source](../sources/government/dird-08-positron-aerospace-propulsion-20100302.pdf) |
-| Location | p. 11, PTRE Applications — Unmanned Aerial Vehicle (UAV) |
+| Location | section "UNMANNED AERIAL VEHICLE (UAV)" |
 
 ---
 

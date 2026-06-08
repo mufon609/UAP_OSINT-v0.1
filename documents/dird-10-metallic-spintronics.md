@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-10-metallic-spintronics-20100323.pdf](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 3, Administrative Note (AAWSA Program paragraph) |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -57,7 +55,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 6, Section 1 (Introduction), report-arrangement ¶ |
+| Location | section "Introduction", report-arrangement ¶ |
 
 ---
 
@@ -69,7 +67,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 19, Section 4 (Antiferromagnetic Metal Spintronics), ¶1 |
+| Location | section "Antiferromagnetic Metal Spintronics", ¶1 |
 
 ---
 
@@ -87,7 +85,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 2, Black Vault FOIA declassification insert |
+| Location | Black Vault FOIA declassification insert |
 
 ---
 
@@ -99,7 +97,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 1, classification banner |
+| Location | classification banner |
 
 ---
 
@@ -111,7 +109,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 23, Section 5 (Summary and Conclusions), aerospace ¶ |
+| Location | section "Summary and Conclusions", aerospace ¶ |
 
 ---
 
@@ -123,7 +121,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 22, Section 5 (Summary and Conclusions), ¶1 |
+| Location | section "Summary and Conclusions", ¶1 (Moore's-law power-density ¶) |
 
 ---
 
@@ -135,7 +133,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 23, Section 5 (Summary and Conclusions), ¶1 |
+| Location | section "Summary and Conclusions", ¶1 (Red Brick Wall ¶) |
 
 ---
 
@@ -147,7 +145,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 3, Administrative Note (Copyright Warning) |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -159,7 +157,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 9, Section 2.2 (GMR Applications), ¶1 |
+| Location | section "GMR Applications", ¶1 |
 
 ---
 
@@ -171,7 +169,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 7, Section 2.1 (GMR Basics), ¶2 |
+| Location | section "GMR Basics", ¶2 |
 
 ---
 
@@ -183,7 +181,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 5, Section 1 (Introduction), ¶2 |
+| Location | section "Introduction", ¶2 |
 
 ---
 
@@ -197,7 +195,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 3, prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -209,7 +207,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 18, Section 3.4 (STT-Driven Motion of Magnetic Domain Walls), racetrack ¶ |
+| Location | section "STT-Driven Motion of Magnetic Domain Walls", racetrack ¶ |
 
 ---
 
@@ -221,7 +219,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 5, Section 1 (Introduction), ¶1 |
+| Location | section "Introduction", ¶1 |
 
 ---
 
@@ -233,7 +231,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 17, Section 3.3 (STT Applications), STT-MRAM ¶ |
+| Location | section "STT Applications", STT-MRAM ¶ |
 
 ---
 
@@ -245,7 +243,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 10, Section 3 (Spin-Transfer-Torque), ¶1 |
+| Location | section "Spin-Transfer-Torque", ¶1 |
 
 ---
 
@@ -257,7 +255,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 10, Section 3.1 (STT Basics), ¶2 |
+| Location | section "STT Basics", ¶2 |
 
 ---
 
@@ -269,7 +267,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 10, Section 3.1 (STT Basics), ¶3 |
+| Location | section "STT Basics", ¶3 |
 
 ---
 
@@ -281,7 +279,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 16, Section 3.2 (STT Experiments), STXM/Figure 9 ¶ |
+| Location | section "STT Experiments", STXM/Figure 9 ¶ |
 
 ---
 
@@ -293,7 +291,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 15, Section 3.2 (STT Experiments), high-frequency precession ¶ |
+| Location | section "STT Experiments", high-frequency precession ¶ |
 
 ---
 
@@ -311,7 +309,7 @@ Section 4 discusses antiferromagnetic metal spintronics: MacDonald ([`/people/al
 |---|---|
 | Attributed to | Metallic Spintronics — DIA AAWSAP Defense Intelligence Reference Document, 23 March 2010 |
 | Source | [archived source](../sources/government/dird-10-metallic-spintronics-20100323.pdf) |
-| Location | p. 1, title-page identity block |
+| Location | title-page identity block |
 
 ---
 

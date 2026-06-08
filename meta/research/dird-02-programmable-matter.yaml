@@ -27,7 +27,7 @@ quotes:
     Programmable Matter
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 1, ¶ title'
+    location: 'title-page identity block'
   significance: Document title — verbatim; the AAWSAP products list carries the matching short title "Aerospace Applications of Programmable Matter"
   statement_date: '2009-12-14'
 - id: q2
@@ -39,7 +39,7 @@ quotes:
     Document
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 1, ¶ banner'
+    location: 'classification banner'
   significance: DIRD series identity — the cover banner naming the document a Defense Intelligence Reference Document
   statement_date: '2009-12-14'
 - id: q3
@@ -50,7 +50,7 @@ quotes:
     DIA-08-0911-016
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 1, ¶ date/control block'
+    location: 'date block'
   significance: Date, ICOD, and control number — dated 14 December 2009 with an information cut-off date of 1 December 2009 and DIA control number DIA-08-0911-016
   statement_date: '2009-12-14'
 - id: q4
@@ -65,7 +65,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 3, ¶ prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6), so no author name appears on the document
   statement_date: '2009-12-14'
 - id: q5
@@ -74,7 +74,7 @@ quotes:
     COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 3, ¶ Administrative Note'
+    location: 'Administrative Note (Copyright Warning)'
   significance: Administrative Note — a copyright warning that further dissemination of the photographs in the publication is not authorized
   statement_date: '2009-12-14'
 - id: q6
@@ -88,7 +88,7 @@ quotes:
     DC 20340-5100.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 3, ¶ Administrative Note'
+    location: 'Administrative Note (AAWSA Program paragraph)'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the document writes "AAWSA" (not the common "AAWSAP"), and the AAWSA Program Manager identity is withheld under FOIA exemption markers
   statement_date: '2009-12-14'
 - id: q7
@@ -99,7 +99,7 @@ quotes:
     failure or new mission requirement might be as simple as a software update.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 5, ¶ Introduction'
+    location: 'section "Introduction" (paragraph beginning "However, when sensors, filters, emitters")'
   significance: Core premise — when components are made of Programmable Matter smart materials, the solution to a component failure or new mission requirement might be as simple as a software update
   statement_date: '2009-12-14'
 - id: q8
@@ -111,7 +111,7 @@ quotes:
     deflection of laser beams, and even outright invisibility.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 5, ¶ Introduction'
+    location: 'section "Introduction" (paragraph beginning "Other advantages of dynamic materials")'
   significance: Defensive framing — smart materials can create new defensive capabilities such as chameleon-style camouflage, deflection of laser beams, and even outright invisibility
   statement_date: '2009-12-14'
 - id: q9
@@ -125,7 +125,7 @@ quotes:
     50 years.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 5, ¶ Introduction'
+    location: 'section "Introduction" (paragraph beginning "If it becomes possible to change")'
   significance: Scope statement — a white paper intended as a primer on the principles behind smart materials and their possible aerospace applications over the next 50 years
   statement_date: '2009-12-14'
 - id: q10
@@ -137,7 +137,7 @@ quotes:
     but infinite variety of material properties that can be summoned or dismissed at will.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 8, ¶ Quantum Dots'
+    location: 'section "Four Kinds of Atoms", subsection "QUANTUM DOTS"'
   significance: Mechanism — pumping electrons in and out of a quantum dot with electric fields creates a programmable material whose "atoms" can be changed on demand
   statement_date: '2009-12-14'
 - id: q11
@@ -149,7 +149,7 @@ quotes:
     ability to perform computations (a truly "smart" smart material).
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 11, ¶ after Fig. 4'
+    location: 'section "Advantages of Dynamic Materials" (paragraph beginning "In theory, a block of true Programmable Matter")'
   significance: Definition of true Programmable Matter — a block able to select any point on any property axis at any time, including the ability to perform computations
   statement_date: '2009-12-14'
 - id: q12
@@ -161,7 +161,7 @@ quotes:
     malicious hackers the keys to matter itself!
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 11, ¶ challenges'
+    location: 'section "Advantages of Dynamic Materials" (paragraph beginning "Although the smart matter of 2050", on the threat of hackers)'
   significance: Threat framing — the threat of hackers; the paper warns about handing malicious hackers the keys to matter itself
   statement_date: '2009-12-14'
 - id: q13
@@ -173,7 +173,7 @@ quotes:
     sun sensor, horizon sensor, or star sensor, as required.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 17, ¶ Advanced Concepts in Programmable Materials'
+    location: 'section "Advanced Concepts in Programmable Materials" (opening paragraph, on reconfiguring a single attitude sensor)'
   significance: Primary advantage — properties changed on demand, e.g. reconfiguring a single spacecraft attitude sensor to operate as a sun, horizon, or star sensor as required
   statement_date: '2009-12-14'
 - id: q14
@@ -182,7 +182,7 @@ quotes:
     In a pinch, the station can even turn "invisible," taking light and heat from one side and emitting a matching signal on the other side.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 18, ¶ Scenario for Possible Applications'
+    location: 'section "Scenario for Possible Applications"'
   significance: Scenario detail — in a pinch the station can turn "invisible," taking light and heat from one side and emitting a matching signal on the other
   statement_date: '2009-12-14'
 - id: q15
@@ -194,7 +194,7 @@ quotes:
     the most promising for research over the next 5 years.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 20, ¶ Directions for Future Research'
+    location: 'section "Directions for Future Research" (paragraph beginning "Therefore, near-term applications such as smart windows")'
   significance: Near-term research direction — smart windows and energy-saving metapolarizers, with immediate economic advantages, are the most promising for research over the next 5 years
   statement_date: '2009-12-14'
 - id: q16
@@ -208,7 +208,7 @@ quotes:
     commercial advantages of developing these will be considerable.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 20, ¶ Directions for Future Research'
+    location: 'section "Directions for Future Research" (paragraph beginning "However, the vast potential of programmable materials")'
   significance: Long-term potential — building and vehicle skins, sensors, and windows are three areas that particularly lend themselves to enhancement with multifunctional materials
   statement_date: '2009-12-14'
 - id: q17
@@ -222,7 +222,7 @@ quotes:
     underlying technologies.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 21, ¶ Conclusions'
+    location: 'section "Conclusions"'
   significance: Conclusions — if even a fraction of these possibilities became reality, the gains in energy efficiency, mass reduction, safety, comfort, and mission flexibility could be extremely significant and well worth pursuing
   statement_date: '2009-12-14'
 - id: q18
@@ -231,7 +231,7 @@ quotes:
     One such "impossible" material hypothesized is the nanostructured "metapolarizer." Where classical polarizers either reflect or absorb half the light that hits them (typically resulting in energy wastage of 50 percent or higher), a metapolarizer simply ignores one polarity of light and converts or rotates or "retards" the other. This principle can be harnessed, for example, to double the battery life of a laptop display or to double the brightness of a flat-screen TV.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 10, ¶ "Impossible" Materials'
+    location: 'section "\"Impossible\" Materials" (paragraph beginning "One such \"impossible\" material hypothesized")'
   significance: '"Impossible" materials — defines the nanostructured "metapolarizer," which ignores one polarity of light instead of absorbing half, and could double a laptop display battery life or a flat-screen TV brightness'
   statement_date: '2009-12-14'
 - id: q19
@@ -240,7 +240,7 @@ quotes:
     A notional "Wellstone" fiber uses careful arrangements of conductors, semiconductors, and insulators to produce a long, flexible cylinder whose surface is studded with artificial atoms. When woven together, these fibers create a bulk material whose properties are programmable via external signals.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 11, ¶ Fig. 4 caption'
+    location: 'section "Advantages of Dynamic Materials", Figure 4 caption (Wellstone Fiber)'
   significance: Wellstone fiber — a notional "Wellstone" fiber of conductors, semiconductors, and insulators studded with artificial atoms; woven together they create a bulk material whose properties are programmable via external signals
   statement_date: '2009-12-14'
 - id: q20
@@ -249,7 +249,7 @@ quotes:
     Buildings account for 40 percent of all energy consumed in the United States, including 71 percent of all electricity and 38 percent of all carbon dioxide emissions. Managing solar heat gain and controlling the building's thermal envelope are the most effective ways of reducing energy use.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 12, ¶ Advantages of Dynamic Materials'
+    location: 'section "Advantages of Dynamic Materials" (paragraph beginning "Although thermochromic building materials were very rare", on building energy consumption)'
   significance: Building-energy framing — buildings account for 40 percent of all energy consumed in the United States, 71 percent of all electricity, and 38 percent of all carbon dioxide emissions
   statement_date: '2009-12-14'
 - id: q21
@@ -258,7 +258,7 @@ quotes:
     RavenWindow film is transparent when cold and partially reflective when hot, allowing an SHGC range between 0.12 and 0.43—more than twice the range studied by LBNL. Studies performed by RavenBrick using LBNL tools show energy savings up to three times those of low-E glass alone.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 13, ¶ Early Commercialization of Smart Materials'
+    location: 'section "Early Commercialization of Smart Materials" (paragraph beginning "RavenWindow film is transparent when cold")'
   significance: RavenWindow performance — the film allows an SHGC range between 0.12 and 0.43 (more than twice the range studied by LBNL), with RavenBrick studies showing energy savings up to three times those of low-E glass alone
   statement_date: '2009-12-14'
 - id: q22
@@ -267,7 +267,7 @@ quotes:
     Assuming a retail cost of $25 per square foot, for large buildings across multiple climate zones, the payback period is 5-10 years. Even faster return on investment is possible if the retail cost can be reduced, which seems likely given the relative simplicity of the technology.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 14, ¶ Early Commercialization of Smart Materials'
+    location: 'section "Early Commercialization of Smart Materials" (paragraph beginning "Assuming a retail cost of $25 per square foot")'
   significance: RavenWindow economics — at an assumed retail cost of $25 per square foot, the payback period for large buildings across multiple climate zones is 5-10 years
   statement_date: '2009-12-14'
 - id: q23
@@ -276,7 +276,7 @@ quotes:
     Fortunately, in 2001, scientists at the Research Triangle Institute in North Carolina used semiconductor superlattices to create a Peltier junction that operated at 2.5 times the efficiency and 23,000 times the speed of all previous designs. The electrically semiconductive superlattice materials were unusually good radiators—and unusually poor conductors—of heat.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 15, ¶ Thermal Management of Spacecraft'
+    location: 'section "Thermal Management of Spacecraft" (paragraph beginning "Fortunately, in 2001, scientists at the Research Triangle Institute")'
   significance: Thermal management — in 2001 the Research Triangle Institute used semiconductor superlattices to build a Peltier junction operating at 2.5 times the efficiency and 23,000 times the speed of all previous designs
   statement_date: '2009-12-14'
 - id: q24
@@ -285,7 +285,7 @@ quotes:
     Quantum computing is another possibility. Qbits were first demonstrated in 1995 by the National Institute of Standards and Technology in Boulder, Colorado, and by the California Institute of Technology in Pasadena. Because computing power increases exponentially with the number of qbits (versus linearly with the number of binary bits), a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one.
   source:
     path: government/dird-02-programmable-matter-20091214.pdf
-    location: 'p. 18, ¶ Advanced Concepts in Programmable Materials'
+    location: 'section "Advanced Concepts in Programmable Materials" (paragraph beginning "Quantum computing is another possibility")'
   significance: Quantum computing — qbits were first demonstrated in 1995 by NIST Boulder and Caltech; a 64-qbit computer is roughly 18 billion billion times as powerful as a 64-bit binary one
   statement_date: '2009-12-14'
 cited_works:
@@ -298,7 +298,7 @@ cited_works:
       1. <en.wiktionary.org>: "atom"
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 1'
+      location: 'References, entry [1]'
   - id: cw2
     added_date: '2026-05-24'
     citation_key: '2'
@@ -309,7 +309,7 @@ cited_works:
       2. McCarthy, Wil: Hacking Matter, Basic Books, March 2003
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 2'
+      location: 'References, entry [2]'
   - id: cw3
     added_date: '2026-05-24'
     citation_key: '3'
@@ -320,7 +320,7 @@ cited_works:
       3. "Global Green Building Trends," McGraw-Hill Construction, 2008
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 3'
+      location: 'References, entry [3]'
   - id: cw4
     added_date: '2026-05-24'
     citation_key: '4'
@@ -331,7 +331,7 @@ cited_works:
       4. Graham-Rowe, Duncan: Cool colours, man, New Scientist, 21 April 2001
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 4'
+      location: 'References, entry [4]'
   - id: cw5
     added_date: '2026-05-24'
     citation_key: '5'
@@ -342,7 +342,7 @@ cited_works:
       Zero-Energy Homes," ASHRAE Transactions, Volume 109, Part 22003
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 5'
+      location: 'References, entry [5]'
   - id: cw6
     added_date: '2026-05-24'
     citation_key: '6'
@@ -351,7 +351,7 @@ cited_works:
       6. Internal research & modeling at RavenBrick LLC, 2006-2009
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 6'
+      location: 'References, entry [6]'
   - id: cw7
     added_date: '2026-05-24'
     citation_key: '7'
@@ -362,7 +362,7 @@ cited_works:
       <http://web.archive.org/web/20021121182945/http://www.isfilms.com/>
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 7'
+      location: 'References, entry [7]'
   - id: cw8
     added_date: '2026-05-24'
     citation_key: '8'
@@ -373,7 +373,7 @@ cited_works:
       8. "At a Crossroad," Window Film, Volume 12, Issue 4 - July/August 2008
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 8'
+      location: 'References, entry [8]'
   - id: cw9
     added_date: '2026-05-24'
     citation_key: '9'
@@ -382,27 +382,27 @@ cited_works:
       9. <http://www.articlesbase.com/environment-articles/the-most-efficient-solar-cell-in-the-world-853223.html>
     source:
       path: government/dird-02-programmable-matter-20091214.pdf
-      location: 'p. 21, References 9'
+      location: 'References, entry [9]'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-23'
   observed: (b)(6)
   canonical: '[author identity withheld under FOIA exemption (b)(6)]'
-  location: 'p. 3, Author line'
+  location: 'Prepared by / Author block, Author line'
   source_path: government/dird-02-programmable-matter-20091214.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-23'
   observed: (b)(3):10 USC 424
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'Prepared by / Author block and Administrative Note (AAWSA Program Manager lines)'
   source_path: government/dird-02-programmable-matter-20091214.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 3, Administrative Note — the document writes "AAWSA" not the common "AAWSAP"'
+  location: 'Administrative Note (AAWSA Program paragraph) — the document writes "AAWSA" not the common "AAWSAP"'
   source_path: government/dird-02-programmable-matter-20091214.pdf
   resolution: preserve-as-sic-in-quotes
 description: 'Aerospace Applications of Programmable Matter. UNCLASSIFIED//FOR OFFICIAL USE ONLY is struck through with a black strike line. An Administrative Note states this product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency [`/organizations/dia`], [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager. The document is one of this series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the document''s Author line carries only a FOIA redaction, so no author appears on the document, and the author ([`/people/w-mccarthy`]) appears instead in the DIA products document ([`/documents/dia-aatip-products-list-2018`]).

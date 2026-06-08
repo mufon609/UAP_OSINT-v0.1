@@ -35,7 +35,7 @@ quotes:
     Concepts for Extracting Energy From the Quantum Vacuum
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 3, ¶ title'
+    location: 'title-page identity block'
   significance: Document title — verbatim
   statement_date: '2010-04-06'
 - id: q2
@@ -51,7 +51,7 @@ quotes:
     (b)(6)
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 3, ¶ prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under a FOIA exemption marker on the Author line
   statement_date: '2010-04-06'
 - id: q3
@@ -67,7 +67,7 @@ quotes:
     DC 20340-5100.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 3, ¶ Administrative Note'
+    location: 'Administrative Note'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption markers
   statement_date: '2010-04-06'
 - id: q4
@@ -81,7 +81,7 @@ quotes:
     of otherwise empty space.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 6, ¶1 (Summary)'
+    location: 'section "I. Summary", ¶1'
   significance: Summary thesis — defines the electromagnetic quantum vacuum as the lowest energy state of otherwise empty space, filled with random-phase electromagnetic waves
   statement_date: '2010-04-06'
 - id: q5
@@ -96,7 +96,7 @@ quotes:
     is the focus of this paper.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 7, ¶1 (Summary)'
+    location: 'section "I. Summary", ¶3 ("foam atop the quantum vacuum sea")'
   significance: Core thesis — if the zero-point field is a real energy it can be tapped as a source of power or harnessed for a propulsive force; exchanging energy with the quantum vacuum is the focus of the paper
   statement_date: '2010-04-06'
 - id: q6
@@ -107,7 +107,7 @@ quotes:
     generate a propulsive force without carrying and ejecting propellant
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 7, ¶ (Summary)'
+    location: 'section "I. Summary", ¶4 ("The breakthrough desired in space travel")'
   significance: Propulsion framing — the breakthrough desired in space travel is to generate a propulsive force without carrying and ejecting propellant at all
   statement_date: '2010-04-06'
 - id: q7
@@ -117,7 +117,7 @@ quotes:
     not contradictory to the laws of thermodynamics.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 8, ¶ (II. Historical Concepts)'
+    location: 'section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("Cole and Puthoff (Reference 11) verified")'
   significance: Thermodynamics finding — Cole and Puthoff verified that generic ZPF energy-extraction schemes are not contradictory to the laws of thermodynamics
   statement_date: '2010-04-06'
 - id: q8
@@ -130,7 +130,7 @@ quotes:
     extraction of energy.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 9, ¶ (II. Historical Concepts)'
+    location: 'section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("Forward''s process cannot be cycled")'
   significance: Thermodynamic limit — a net cyclical Casimir process cannot continually extract energy without violating the second law; Forward's process cannot be cycled for continuous extraction
   statement_date: '2010-04-06'
 - id: q9
@@ -141,7 +141,7 @@ quotes:
     demonstrated in the laboratory.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 10, ¶ (II. Historical Concepts)'
+    location: 'section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("no practicable technique has been successfully demonstrated in the laboratory")'
   significance: Section II finding — although several novel ZPF energy-extraction mechanisms have been proposed, no practicable technique has been demonstrated in the laboratory
   statement_date: '2010-04-06'
 - id: q10
@@ -150,7 +150,7 @@ quotes:
     The basis of the ZPF is typically attributed to the Heisenberg Uncertainty Principle.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 11, ¶ (III. Origin of Zero-Point Field Energy — Elements of QED Theory)'
+    location: 'section "ELEMENTS OF QED THEORY" (under "III. Origin of Zero-Point Field Energy")'
   significance: QED origin of the ZPF — the basis of the zero-point field is typically attributed to the Heisenberg Uncertainty Principle
   statement_date: '2010-04-06'
 - id: q11
@@ -160,7 +160,7 @@ quotes:
     as a direct consequence of a classical ZPF background.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 13, ¶ (III. Origin of Zero-Point Field Energy — Elements of SED Theory)'
+    location: 'section "ELEMENTS OF SED THEORY" (under "III. Origin of Zero-Point Field Energy")'
   significance: SED origin of the ZPF — stochastic electrodynamics identifies the ZPF's origin as a direct consequence of a classical ZPF background
   statement_date: '2010-04-06'
 - id: q12
@@ -172,7 +172,7 @@ quotes:
     private communication, 2005).
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 14, ¶ (IV. Review of Selected Experiments)'
+    location: 'section "IV. Review of Selected Experiments" (opening)'
   significance: Lockheed-Martin involvement — a subset of the proposed energy-extraction concepts underwent preliminary evaluation by Lockheed-Martin review panels of internal R&D personnel and outside experts
   statement_date: '2010-04-06'
 - id: q13
@@ -183,7 +183,7 @@ quotes:
     measurable currents).
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 14, ¶ (IV. Review of Selected Experiments)'
+    location: 'section "VOLTAGE FLUCTUATIONS IN COILS INDUCED BY ZPF AT HIGH FREQUENCY" (under "IV. Review of Selected Experiments")'
   significance: Experimental corroboration — the Koch et al. voltage-fluctuation result is striking corroboration of the reality of the ZPF and proves the ZPF can do real work
   statement_date: '2010-04-06'
 - id: q14
@@ -196,7 +196,7 @@ quotes:
     state.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy)'
+    location: 'section "Summary: ZPF Modes and Vacuum Field Energy" ("the \"hardwired\" ZPF modes cannot be driven below the ground state")'
   significance: Theoretical finding — ZPF modes are only a placeholder for a quantum field's vacuum-state calculations; the hardwired modes cannot be driven below the ground state, only the overall renormalized vacuum state energy can
   statement_date: '2010-04-06'
 - id: q15
@@ -208,7 +208,7 @@ quotes:
     boundary conditions that perturb the ZPF modes of any quantum field under study.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy)'
+    location: 'section "Summary: ZPF Modes and Vacuum Field Energy" ("invent new boundary conditions")'
   significance: Research direction — the conjectured key to vacuum energy extraction is inventing new boundary conditions (or combinations/methods) that perturb a quantum field's ZPF modes
   statement_date: '2010-04-06'
 - id: q16
@@ -223,7 +223,7 @@ quotes:
     energy conversion must be given serious consideration.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 45, ¶1 (VI. Conclusion: The Way Forward)'
+    location: 'section "VI. Conclusion: The Way Forward" ("First, one sees that")'
   significance: Conclusion — second-quantized QED, based on an immutable, non-degradable vacuum, does not support the concept of continuous vacuum energy conversion
   statement_date: '2010-04-06'
 - id: q17
@@ -235,7 +235,7 @@ quotes:
     adequate tool for the assessment of potential vacuum energy conversion.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 45, ¶ (VI. Conclusion: The Way Forward)'
+    location: 'section "VI. Conclusion: The Way Forward" ("Second, SED as an alternative theory")'
   significance: Conclusion — SED has enough shortcomings in its current state that it is not at present an adequate tool for assessing potential vacuum energy conversion
   statement_date: '2010-04-06'
 - id: q18
@@ -246,7 +246,7 @@ quotes:
     vacuum squeezing, or gravitational redshifting.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 45, ¶ (VI. Conclusion: The Way Forward)'
+    location: 'section "VI. Conclusion: The Way Forward" ("It has been shown that the QED vacuum is in fact degradable")'
   significance: Conclusion — the QED vacuum is in fact degradable under a variety of Casimir effects, quantum-optical and gravitation-induced vacuum squeezing, and gravitational redshifting
   statement_date: '2010-04-06'
 - id: q19
@@ -261,7 +261,7 @@ quotes:
     (Vanderbilt Univ.), and P. C. W. Davies (Arizona State Univ.) for their very useful input.
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 48, ¶ (Acknowledgements)'
+    location: 'section "Acknowledgements"'
   significance: Acknowledgements — names H. E. Puthoff (EarthTech) and three Lockheed Martin personnel (V. Teofilo, J. Newmeyer, E. H. Allen) among the technical and useful-input contributors to the report
   statement_date: '2010-04-06'
 cited_works:
@@ -276,7 +276,7 @@ cited_works:
       19C, 1975, pp. 295-357.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [1]'
+      location: 'References, entry [1]'
   - id: cw2
     added_date: '2026-05-24'
     citation_key: '2'
@@ -289,7 +289,7 @@ cited_works:
       Cambridge, 1979, pp. 680-745.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [2]'
+      location: 'References, entry [2]'
   - id: cw3
     added_date: '2026-05-24'
     citation_key: '3'
@@ -303,7 +303,7 @@ cited_works:
       247-272.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [3]'
+      location: 'References, entry [3]'
   - id: cw4
     added_date: '2026-05-24'
     citation_key: '4'
@@ -315,7 +315,7 @@ cited_works:
       Univ. Press, Cambridge, 1984.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [4]'
+      location: 'References, entry [4]'
   - id: cw5
     added_date: '2026-05-24'
     citation_key: '5'
@@ -327,7 +327,7 @@ cited_works:
       Proc. Kon. Ned. Akad. Wetensch., Vol. 51, 1948, pp. 793-796.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [5]'
+      location: 'References, entry [5]'
   - id: cw6
     added_date: '2026-05-24'
     citation_key: '6'
@@ -339,7 +339,7 @@ cited_works:
       Physical Review Letters, Vol. 78, 1997, pp. 5-8.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [6]'
+      location: 'References, entry [6]'
   - id: cw7
     added_date: '2026-05-24'
     citation_key: '7'
@@ -351,7 +351,7 @@ cited_works:
       Physical Review Letters, Vol. 81, 1998, pp. 4549-4552.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [7]'
+      location: 'References, entry [7]'
   - id: cw8
     added_date: '2026-05-24'
     citation_key: '8'
@@ -363,7 +363,7 @@ cited_works:
       Quantification of errors and precision,” Physical Review A, Vol. 69, 2004, 022117.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [8]'
+      location: 'References, entry [8]'
   - id: cw9
     added_date: '2026-05-24'
     citation_key: '9'
@@ -376,7 +376,7 @@ cited_works:
       Report AFRPL TR-83-067, Edwards AFB, CA, 1983, pp. A1-A14.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [9]'
+      location: 'References, entry [9]'
   - id: cw10
     added_date: '2026-05-24'
     citation_key: '10'
@@ -388,7 +388,7 @@ cited_works:
       Charged Foliated Conductors,” Physical Review B, Vol. 30, 1984, pp. 1700-1702.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [10]'
+      location: 'References, entry [10]'
   - id: cw11
     added_date: '2026-05-24'
     citation_key: '11'
@@ -400,7 +400,7 @@ cited_works:
       Physical Review E, Vol. 48, 1993, pp. 1562-1565.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [11]'
+      location: 'References, entry [11]'
   - id: cw12
     added_date: '2026-05-24'
     citation_key: '12'
@@ -412,7 +412,7 @@ cited_works:
       “System for Converting Electromagnetic Radiation Energy to Electrical Energy,” 1996.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [12]'
+      location: 'References, entry [12]'
   - id: cw13
     added_date: '2026-05-24'
     citation_key: '13'
@@ -424,7 +424,7 @@ cited_works:
       1993.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [13]'
+      location: 'References, entry [13]'
   - id: cw14
     added_date: '2026-05-24'
     citation_key: '14'
@@ -436,7 +436,7 @@ cited_works:
       Electrodynamics, Academic Press, New York, 1994, Chaps. 1, 2, 8.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [14]'
+      location: 'References, entry [14]'
   - id: cw15
     added_date: '2026-05-24'
     citation_key: '15'
@@ -448,7 +448,7 @@ cited_works:
       p. 349.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [15]'
+      location: 'References, entry [15]'
   - id: cw16
     added_date: '2026-05-24'
     citation_key: '16'
@@ -460,7 +460,7 @@ cited_works:
       zero-point field,” Physical Review A, Vol. 54, 1996, pp. 2737-2744.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 51, References [16]'
+      location: 'References, entry [16]'
   - id: cw17
     added_date: '2026-05-24'
     citation_key: '17'
@@ -472,7 +472,7 @@ cited_works:
       Electrodynamics, Kluwer, Dordrecht, Holland, 1996.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [17]'
+      location: 'References, entry [17]'
   - id: cw18
     added_date: '2026-05-24'
     citation_key: '18'
@@ -485,7 +485,7 @@ cited_works:
       2132-2135.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [18]'
+      location: 'References, entry [18]'
   - id: cw19
     added_date: '2026-05-24'
     citation_key: '19'
@@ -498,7 +498,7 @@ cited_works:
       Letters, Vol. 47, 1981, pp. 1216-1219.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [19]'
+      location: 'References, entry [19]'
   - id: cw20
     added_date: '2026-05-24'
     citation_key: '20'
@@ -511,7 +511,7 @@ cited_works:
       87.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [20]'
+      location: 'References, entry [20]'
   - id: cw21
     added_date: '2026-05-24'
     citation_key: '21'
@@ -523,7 +523,7 @@ cited_works:
       circuits with inductance,” Physics Letters A, Vol. 282, 2001, pp. 349-356.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [21]'
+      location: 'References, entry [21]'
   - id: cw22
     added_date: '2026-05-24'
     citation_key: '22'
@@ -536,7 +536,7 @@ cited_works:
       pp. 790-808.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [22]'
+      location: 'References, entry [22]'
   - id: cw23
     added_date: '2026-05-24'
     citation_key: '23'
@@ -548,7 +548,7 @@ cited_works:
       state,” Physical Review D, Vol. 35, 1987, pp. 3266-3269.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [23]'
+      location: 'References, entry [23]'
   - id: cw24
     added_date: '2026-05-24'
     citation_key: '24'
@@ -560,7 +560,7 @@ cited_works:
       Obtained from Classical Electrodynamics,” Physics Letters A, Vol. 317, 2003, pp. 14-20.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [24]'
+      location: 'References, entry [24]'
   - id: cw25
     added_date: '2026-05-24'
     citation_key: '25'
@@ -573,7 +573,7 @@ cited_works:
       Physical Review E, Vol. 69, 2004, 016601.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [25]'
+      location: 'References, entry [25]'
   - id: cw26
     added_date: '2026-05-24'
     citation_key: '26'
@@ -585,7 +585,7 @@ cited_works:
       conducting rectangular cavities,” Physical Review A, Vol. 61, 2000, 052110.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [26]'
+      location: 'References, entry [26]'
   - id: cw27
     added_date: '2026-05-24'
     citation_key: '27'
@@ -597,7 +597,7 @@ cited_works:
       Patent No. 7,379,286 B2, May 2008.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [27]'
+      location: 'References, entry [27]'
   - id: cw28
     added_date: '2026-05-24'
     citation_key: '28'
@@ -611,7 +611,7 @@ cited_works:
       of Physics Related to Stochastic Electrodynamics, Boston University, 2001.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [28]'
+      location: 'References, entry [28]'
   - id: cw29
     added_date: '2026-05-24'
     citation_key: '29'
@@ -624,7 +624,7 @@ cited_works:
       (unpublished).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [29]'
+      location: 'References, entry [29]'
   - id: cw30
     added_date: '2026-05-24'
     citation_key: '30'
@@ -636,7 +636,7 @@ cited_works:
       1996, p. 182.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [30]'
+      location: 'References, entry [30]'
   - id: cw31
     added_date: '2026-05-24'
     citation_key: '31'
@@ -648,7 +648,7 @@ cited_works:
       Physical Review B, Vol. 60, 1999, pp. 14740-14755.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 52, References [31]'
+      location: 'References, entry [31]'
   - id: cw32
     added_date: '2026-05-24'
     citation_key: '32'
@@ -661,7 +661,7 @@ cited_works:
       2003, pp. 380-382.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [32]'
+      location: 'References, entry [32]'
   - id: cw33
     added_date: '2026-05-24'
     citation_key: '33'
@@ -674,7 +674,7 @@ cited_works:
       Solid State Communications, Vol. 135, 2005, pp. 618-626.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [33]'
+      location: 'References, entry [33]'
   - id: cw34
     added_date: '2026-05-24'
     citation_key: '34'
@@ -688,7 +688,7 @@ cited_works:
       Cleveland, 1999, pp. 51-54.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [34]'
+      location: 'References, entry [34]'
   - id: cw35
     added_date: '2026-05-24'
     citation_key: '35'
@@ -703,7 +703,7 @@ cited_works:
       Proc. Vol. 458, AIP Press, New York, 1999, pp. 968-973.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [35]'
+      location: 'References, entry [35]'
   - id: cw36
     added_date: '2026-05-24'
     citation_key: '36'
@@ -714,7 +714,7 @@ cited_works:
       [36] Shoulders, K. R., EV: A Tale of Discovery, Jupiter Technologies, Austin, TX, 1987.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [36]'
+      location: 'References, entry [36]'
   - id: cw37
     added_date: '2026-05-24'
     citation_key: '37'
@@ -726,7 +726,7 @@ cited_works:
       Academic/Plenum Publ., New York, 1999.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [37]'
+      location: 'References, entry [37]'
   - id: cw38
     added_date: '2026-05-24'
     citation_key: '38'
@@ -738,7 +738,7 @@ cited_works:
       Field,” Physical Review, Vol. 104, 1956, p. 292.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [38]'
+      location: 'References, entry [38]'
   - id: cw39
     added_date: '2026-05-24'
     citation_key: '39'
@@ -750,7 +750,7 @@ cited_works:
       1957, p. 404.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [39]'
+      location: 'References, entry [39]'
   - id: cw40
     added_date: '2026-05-24'
     citation_key: '40'
@@ -762,7 +762,7 @@ cited_works:
       Accelerator,” Physics of Fluids, Vol. 8, 1965, p. 745.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [40]'
+      location: 'References, entry [40]'
   - id: cw41
     added_date: '2026-05-24'
     citation_key: '41'
@@ -774,7 +774,7 @@ cited_works:
       p. 1016.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [41]'
+      location: 'References, entry [41]'
   - id: cw42
     added_date: '2026-05-24'
     citation_key: '42'
@@ -786,7 +786,7 @@ cited_works:
       1964, p. 826.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [42]'
+      location: 'References, entry [42]'
   - id: cw43
     added_date: '2026-05-24'
     citation_key: '43'
@@ -798,7 +798,7 @@ cited_works:
       Vol. 9, 1966, p. 1010.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [43]'
+      location: 'References, entry [43]'
   - id: cw44
     added_date: '2026-05-24'
     citation_key: '44'
@@ -810,7 +810,7 @@ cited_works:
       Electrodeless Plasma Gun,” Physics of Fluids, Vol. 6, 1963, p. 418.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [44]'
+      location: 'References, entry [44]'
   - id: cw45
     added_date: '2026-05-24'
     citation_key: '45'
@@ -822,7 +822,7 @@ cited_works:
       electron-beam filaments,” Physical Review A, Vol. 22, 1980, pp. 2211-2217.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [45]'
+      location: 'References, entry [45]'
   - id: cw46
     added_date: '2026-05-24'
     citation_key: '46'
@@ -835,7 +835,7 @@ cited_works:
       5862-5864.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 53, References [46]'
+      location: 'References, entry [46]'
   - id: cw47
     added_date: '2026-05-24'
     citation_key: '47'
@@ -847,7 +847,7 @@ cited_works:
       for production and manipulation of high density charge,” 1991.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [47]'
+      location: 'References, entry [47]'
   - id: cw48
     added_date: '2026-05-24'
     citation_key: '48'
@@ -859,7 +859,7 @@ cited_works:
       Vol. 19, 1953, pp. 846-849.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [48]'
+      location: 'References, entry [48]'
   - id: cw49
     added_date: '2026-05-24'
     citation_key: '49'
@@ -872,7 +872,7 @@ cited_works:
       http://arxiv.org/physics/papers/0408/0408114.pdf (cited Aug. 2004, revised 2005).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [49]'
+      location: 'References, entry [49]'
   - id: cw50
     added_date: '2026-05-24'
     citation_key: '50'
@@ -884,7 +884,7 @@ cited_works:
       International Journal of Theoretical Physics, Vol. 46, 2007, pp. 3005-3008.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [50]'
+      location: 'References, entry [50]'
   - id: cw51
     added_date: '2026-05-24'
     citation_key: '51'
@@ -896,7 +896,7 @@ cited_works:
       2003.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [51]'
+      location: 'References, entry [51]'
   - id: cw52
     added_date: '2026-05-24'
     citation_key: '52'
@@ -908,7 +908,7 @@ cited_works:
       Vacuum by a Magnetic Field,” Physical Review Letters, Vol. 96, 2006, 110406.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [52]'
+      location: 'References, entry [52]'
   - id: cw53
     added_date: '2026-05-24'
     citation_key: '53'
@@ -920,7 +920,7 @@ cited_works:
       American, Vol. 241, 1979, pp. 150-159.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [53]'
+      location: 'References, entry [53]'
   - id: cw54
     added_date: '2026-05-24'
     citation_key: '54'
@@ -932,7 +932,7 @@ cited_works:
       Verlag Harri Deutsch Publ., Frankfurt, Germany, 1985.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [54]'
+      location: 'References, entry [54]'
   - id: cw55
     added_date: '2026-05-24'
     citation_key: '55'
@@ -945,7 +945,7 @@ cited_works:
       Plenum Press, New York, 1991, pp. 1-28.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [55]'
+      location: 'References, entry [55]'
   - id: cw56
     added_date: '2026-05-24'
     citation_key: '56'
@@ -958,7 +958,7 @@ cited_works:
       York, 1973, pp. 35-81.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [56]'
+      location: 'References, entry [56]'
   - id: cw57
     added_date: '2026-05-24'
     citation_key: '57'
@@ -970,7 +970,7 @@ cited_works:
       John Wiley & Sons, New York, 1978.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [57]'
+      location: 'References, entry [57]'
   - id: cw58
     added_date: '2026-05-24'
     citation_key: '58'
@@ -982,7 +982,7 @@ cited_works:
       around for 10 billion years,” Physics Today, Vol. 66, 2007, pp. 21-25.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [58]'
+      location: 'References, entry [58]'
   - id: cw59
     added_date: '2026-05-24'
     citation_key: '59'
@@ -994,7 +994,7 @@ cited_works:
       Particle Physics, Vol. 33, 2006, pp. 210-232.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [59]'
+      location: 'References, entry [59]'
   - id: cw60
     added_date: '2026-05-24'
     citation_key: '60'
@@ -1009,7 +1009,7 @@ cited_works:
       May 2000).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [60]'
+      location: 'References, entry [60]'
   - id: cw61
     added_date: '2026-05-24'
     citation_key: '61'
@@ -1021,7 +1021,7 @@ cited_works:
       Modern Physics D, Vol. 15, 2006, pp. 1987-2010.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 54, References [61]'
+      location: 'References, entry [61]'
   - id: cw62
     added_date: '2026-05-24'
     citation_key: '62'
@@ -1033,7 +1033,7 @@ cited_works:
       World Scientific, Singapore, 2001, p. 13.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [62]'
+      location: 'References, entry [62]'
   - id: cw63
     added_date: '2026-05-24'
     citation_key: '63'
@@ -1045,7 +1045,7 @@ cited_works:
       Systems by the Casimir force,” Science, Vol. 291, 2001, pp. 1941-1944.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [63]'
+      location: 'References, entry [63]'
   - id: cw64
     added_date: '2026-05-24'
     citation_key: '64'
@@ -1057,7 +1057,7 @@ cited_works:
       of Gravitation,” Soviet Physics Doklady, Vol. 12, 1968, pp. 1040-1041.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [64]'
+      location: 'References, entry [64]'
   - id: cw65
     added_date: '2026-05-24'
     citation_key: '65'
@@ -1069,7 +1069,7 @@ cited_works:
       pp. 25-26.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [65]'
+      location: 'References, entry [65]'
   - id: cw66
     added_date: '2026-05-24'
     citation_key: '66'
@@ -1082,7 +1082,7 @@ cited_works:
       403.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [66]'
+      location: 'References, entry [66]'
   - id: cw67
     added_date: '2026-05-24'
     citation_key: '67'
@@ -1094,7 +1094,7 @@ cited_works:
       L. Mandel and E. Wolf, Plenum Press, New York, 1978, pp. 495-509.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [67]'
+      location: 'References, entry [67]'
   - id: cw68
     added_date: '2026-05-24'
     citation_key: '68'
@@ -1107,7 +1107,7 @@ cited_works:
       Vol. 13, 1976, pp. 2832-2845.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [68]'
+      location: 'References, entry [68]'
   - id: cw69
     added_date: '2026-05-24'
     citation_key: '69'
@@ -1119,7 +1119,7 @@ cited_works:
       Electrodynamics,” Journal of Mathematical Physics, Vol. 23, 1982, pp. 1315-1322.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [69]'
+      location: 'References, entry [69]'
   - id: cw70
     added_date: '2026-05-24'
     citation_key: '70'
@@ -1133,7 +1133,7 @@ cited_works:
       1254-1287.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [70]'
+      location: 'References, entry [70]'
   - id: cw71
     added_date: '2026-05-24'
     citation_key: '71'
@@ -1146,7 +1146,7 @@ cited_works:
       with Rayleigh-Jeans Radiation,” Physical Review D, Vol. 29, 1984, pp. 2240-2254.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [71]'
+      location: 'References, entry [71]'
   - id: cw72
     added_date: '2026-05-24'
     citation_key: '72'
@@ -1160,7 +1160,7 @@ cited_works:
       Conference Proceedings Vol. 810, No. 1, New York, 2005, pp. 99-113.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [72]'
+      location: 'References, entry [72]'
   - id: cw73
     added_date: '2026-05-24'
     citation_key: '73'
@@ -1172,7 +1172,7 @@ cited_works:
       Electrodynamics,” Foundations of Physics, Vol. 26, 1996, pp. 1559-1562.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [73]'
+      location: 'References, entry [73]'
   - id: cw74
     added_date: '2026-05-24'
     citation_key: '74'
@@ -1185,7 +1185,7 @@ cited_works:
       http://arxiv.org/PS_cache/quant-ph/pdf/0501/0501011.pdf (cited 4 Jan. 2005).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [74]'
+      location: 'References, entry [74]'
   - id: cw75
     added_date: '2026-05-24'
     citation_key: '75'
@@ -1198,7 +1198,7 @@ cited_works:
       3503.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 55, References [75]'
+      location: 'References, entry [75]'
   - id: cw76
     added_date: '2026-05-24'
     citation_key: '76'
@@ -1211,7 +1211,7 @@ cited_works:
       Review A, Vol. 32, 1985, pp. 3187-3195.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [76]'
+      location: 'References, entry [76]'
   - id: cw77
     added_date: '2026-05-24'
     citation_key: '77'
@@ -1223,7 +1223,7 @@ cited_works:
       electrodynamics,” Physical Review A, Vol. 45, 1992, pp. 7740-7745.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [77]'
+      location: 'References, entry [77]'
   - id: cw78
     added_date: '2026-05-24'
     citation_key: '78'
@@ -1235,7 +1235,7 @@ cited_works:
       Spontaneous emission in cavities,” Physical Review A, Vol. 36, 1987, pp. 649-654.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [78]'
+      location: 'References, entry [78]'
   - id: cw79
     added_date: '2026-05-24'
     citation_key: '79'
@@ -1248,7 +1248,7 @@ cited_works:
       Waals forces near boundaries,” Physical Review A, Vol. 36, 1987, pp. 2550-2556.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [79]'
+      location: 'References, entry [79]'
   - id: cw80
     added_date: '2026-05-24'
     citation_key: '80'
@@ -1261,7 +1261,7 @@ cited_works:
       Review A, Vol. 38, 1988, pp. 4405-4412.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [80]'
+      location: 'References, entry [80]'
   - id: cw81
     added_date: '2026-05-24'
     citation_key: '81'
@@ -1274,7 +1274,7 @@ cited_works:
       Review A, Vol. 39, 1989, pp. 2796-2805.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [81]'
+      location: 'References, entry [81]'
   - id: cw82
     added_date: '2026-05-24'
     citation_key: '82'
@@ -1286,7 +1286,7 @@ cited_works:
       of g-2," Zeitschrift für Naturforschung, Vol. A44, 1989, p. 1051.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [82]'
+      location: 'References, entry [82]'
   - id: cw83
     added_date: '2026-05-24'
     citation_key: '83'
@@ -1299,7 +1299,7 @@ cited_works:
       Review A, Vol. 41, 1990, pp. 2277-2283.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [83]'
+      location: 'References, entry [83]'
   - id: cw84
     added_date: '2026-05-24'
     citation_key: '84'
@@ -1313,7 +1313,7 @@ cited_works:
       A, Vol. 17, 2002, pp. 804-807.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [84]'
+      location: 'References, entry [84]'
   - id: cw85
     added_date: '2026-05-24'
     citation_key: '86'
@@ -1325,7 +1325,7 @@ cited_works:
       gravitational field,” Physics Letters A, Vol. 297, 2002, pp. 328-333.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [86]'
+      location: 'References, entry [86]'
   - id: cw86
     added_date: '2026-05-24'
     citation_key: '87'
@@ -1337,7 +1337,7 @@ cited_works:
       gravitational field,” Physical Review D, Vol. 74, 2006, 085011.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [87]'
+      location: 'References, entry [87]'
   - id: cw87
     added_date: '2026-05-24'
     citation_key: '88'
@@ -1349,7 +1349,7 @@ cited_works:
       in a weak gravitational field,” Physical Review D, Vol. 75, 2007, 089901(E).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [88]'
+      location: 'References, entry [88]'
   - id: cw88
     added_date: '2026-05-24'
     citation_key: '89'
@@ -1362,7 +1362,7 @@ cited_works:
       Theoretical, Vol. 41, 2008, 164056.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [89]'
+      location: 'References, entry [89]'
   - id: cw89
     added_date: '2026-05-24'
     citation_key: '90'
@@ -1374,7 +1374,7 @@ cited_works:
       Image Solution,” Physical Review, Vol. 184, 1969, pp. 1272-1279.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [90]'
+      location: 'References, entry [90]'
   - id: cw90
     added_date: '2026-05-24'
     citation_key: '91'
@@ -1386,7 +1386,7 @@ cited_works:
       Oxford University Press, Oxford, 2007,
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 56, References [91]'
+      location: 'References, entry [91]'
   - id: cw91
     added_date: '2026-05-24'
     citation_key: '92'
@@ -1398,7 +1398,7 @@ cited_works:
       Classical and Quantum Gravity, Vol. 2, 1985, pp. L37-L40.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [92]'
+      location: 'References, entry [92]'
   - id: cw92
     added_date: '2026-05-24'
     citation_key: '93'
@@ -1411,7 +1411,7 @@ cited_works:
       2691.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [93]'
+      location: 'References, entry [93]'
   - id: cw93
     added_date: '2026-05-24'
     citation_key: '94'
@@ -1423,7 +1423,7 @@ cited_works:
       Quantized Field Theories,” Nuovo Cimento, Vol. 36, 1965, pp. 1016-1022.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [94]'
+      location: 'References, entry [94]'
   - id: cw94
     added_date: '2026-05-24'
     citation_key: '95'
@@ -1435,7 +1435,7 @@ cited_works:
       Berlin, 2004.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [95]'
+      location: 'References, entry [95]'
   - id: cw95
     added_date: '2026-05-24'
     citation_key: '96'
@@ -1447,7 +1447,7 @@ cited_works:
       Mixing in an Optical Cavity,” Physical Review Letters, Vol. 55, 1985, pp. 2409-2412.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [96]'
+      location: 'References, entry [96]'
   - id: cw96
     added_date: '2026-05-24'
     citation_key: '97'
@@ -1459,7 +1459,7 @@ cited_works:
       1986, pp. 50-56.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [97]'
+      location: 'References, entry [97]'
   - id: cw97
     added_date: '2026-05-24'
     citation_key: '98'
@@ -1471,7 +1471,7 @@ cited_works:
       pp. 927-929.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [98]'
+      location: 'References, entry [98]'
   - id: cw98
     added_date: '2026-05-24'
     citation_key: '99'
@@ -1482,7 +1482,7 @@ cited_works:
       986, pp. 280-281.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [99]'
+      location: 'References, entry [99]'
   - id: cw99
     added_date: '2026-05-24'
     citation_key: '100'
@@ -1494,7 +1494,7 @@ cited_works:
       and Applied Optics, John Wiley & Sons, Inc., New York, 1991, pp. 414-416.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [100]'
+      location: 'References, entry [100]'
   - id: cw100
     added_date: '2026-05-24'
     citation_key: '101'
@@ -1506,7 +1506,7 @@ cited_works:
       D, Vol. 23, 1981, pp. 1693-1708.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [101]'
+      location: 'References, entry [101]'
   - id: cw101
     added_date: '2026-05-24'
     citation_key: '102'
@@ -1519,7 +1519,7 @@ cited_works:
       Medford, MA, 1998.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [102]'
+      location: 'References, entry [102]'
   - id: cw102
     added_date: '2026-05-24'
     citation_key: '103'
@@ -1531,7 +1531,7 @@ cited_works:
       Press, Oxford, 1991.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [103]'
+      location: 'References, entry [103]'
   - id: cw103
     added_date: '2026-05-24'
     citation_key: '104'
@@ -1543,7 +1543,7 @@ cited_works:
       [cited 15 April 2003).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [104]'
+      location: 'References, entry [104]'
   - id: cw104
     added_date: '2026-05-24'
     citation_key: '105'
@@ -1555,7 +1555,7 @@ cited_works:
       2001, pp. 211-215.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [105]'
+      location: 'References, entry [105]'
   - id: cw105
     added_date: '2026-05-24'
     citation_key: '106'
@@ -1567,7 +1567,7 @@ cited_works:
       2003, 013004.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [106]'
+      location: 'References, entry [106]'
   - id: cw106
     added_date: '2026-05-24'
     citation_key: '107'
@@ -1579,7 +1579,7 @@ cited_works:
       modes enhancement quantum model,” Phys. Lett. B, vol. 453, pp. 281-288.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 57, References [107]'
+      location: 'References, entry [107]'
   - id: cw107
     added_date: '2026-05-24'
     citation_key: '108'
@@ -1591,7 +1591,7 @@ cited_works:
       March 2008).
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [108]'
+      location: 'References, entry [108]'
   - id: cw108
     added_date: '2026-05-24'
     citation_key: '109'
@@ -1603,7 +1603,7 @@ cited_works:
       Scientific, New Jersey, 2002.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [109]'
+      location: 'References, entry [109]'
   - id: cw109
     added_date: '2026-05-24'
     citation_key: '110'
@@ -1615,7 +1615,7 @@ cited_works:
       2003.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [110]'
+      location: 'References, entry [110]'
   - id: cw110
     added_date: '2026-05-24'
     citation_key: '111'
@@ -1627,7 +1627,7 @@ cited_works:
       Basic Books, New York, 2008.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [111]'
+      location: 'References, entry [111]'
   - id: cw111
     added_date: '2026-05-24'
     citation_key: '112'
@@ -1639,7 +1639,7 @@ cited_works:
       Journal of Physics A: Mathematical and Theoretical, Vol. 41, 2008, 164037.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [112]'
+      location: 'References, entry [112]'
   - id: cw112
     added_date: '2026-05-24'
     citation_key: '113'
@@ -1651,7 +1651,7 @@ cited_works:
       metamaterials,” New Journal of Physics, Vol. 9, 2007, p. 254.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [113]'
+      location: 'References, entry [113]'
   - id: cw113
     added_date: '2026-05-24'
     citation_key: '114'
@@ -1663,12 +1663,12 @@ cited_works:
       Boundary,” Physical Review Letters, Vol. 73, 1994, pp. 1931-1934.
     source:
       path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-      location: 'p. 58, References [114]'
+      location: 'References, entry [114]'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 3, ¶ Administrative Note'
+  location: 'Administrative Note'
   source_path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
   resolution: preserve-as-sic-in-quotes

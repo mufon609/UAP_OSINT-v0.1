@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-06-bv-space-access-20100308.pdf](../sources/government/dird-06-bv-space-access-20100308.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -47,7 +45,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 3, Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -59,7 +57,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 47, ¶3 (Conclusion) |
+| Location | section "Conclusion", ¶3 ("We have known for 50 years how to create it") |
 
 ---
 
@@ -71,7 +69,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 47, ¶2 (Conclusion) |
+| Location | section "Conclusion", ¶2 ("The space business has it backwards") |
 
 ---
 
@@ -83,7 +81,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 46, ¶3 (Conclusion) |
+| Location | section "Conclusion", ¶3 ("But where is our space infrastructure?") |
 
 ---
 
@@ -95,7 +93,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 3, Administrative Note (Copyright Warning) |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -107,7 +105,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 18, ¶1 (Hypersonic Configuration Concepts) |
+| Location | section "Hypersonic Configuration Concepts", ¶1 ("The hypersonic glider based on the FDL-7C") |
 
 ---
 
@@ -119,7 +117,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 11, ¶2 (Hypersonic Configuration Concepts) |
+| Location | section "Hypersonic Configuration Concepts", ¶2 ("Two basic configuration types emerge") |
 
 ---
 
@@ -131,7 +129,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 41, ¶1 (Up-and-Down Operations) |
+| Location | section "Up-and-Down Operations", ¶1 ("Air breathers are not lighter than all-rocket!") |
 
 ---
 
@@ -143,7 +141,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 7, ¶ continued (Introduction) |
+| Location | section "Introduction", ¶ continued ("It was not a technology issue; it was a hardware issue") |
 
 ---
 
@@ -155,7 +153,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 6, ¶1 (Introduction) |
+| Location | section "Introduction", ¶1 |
 
 ---
 
@@ -167,7 +165,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 8, ¶2 (Introduction) |
+| Location | section "Introduction", ¶2 ("With the orbiting of Sputnik") |
 
 ---
 
@@ -187,7 +185,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 3, prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -199,7 +197,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 16, ¶3 (Hypersonic Configuration Concepts) |
+| Location | section "Hypersonic Configuration Concepts", ¶3 (Stephens 1965 weight-factor quotation) |
 
 ---
 
@@ -211,7 +209,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 1, classification banner |
+| Location | classification banner |
 
 ---
 
@@ -229,7 +227,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 1, title-page identity block |
+| Location | title-page identity block |
 
 ---
 
@@ -241,7 +239,7 @@ The Conclusion presents the question of where the space infrastructure is forty 
 |---|---|
 | Attributed to | Space Access: Where We've Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010 |
 | Source | [archived source](../sources/government/dird-06-bv-space-access-20100308.pdf) |
-| Location | p. 33, ¶2 (Rocket Propulsion) |
+| Location | section "Rocket Propulsion", ¶2 ("The XLR-129 was a shuttle-class engine") |
 
 ---
 

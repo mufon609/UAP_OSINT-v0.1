@@ -102,7 +102,7 @@ quotes:
     The purpose of this report is to provide an overview of the current state-of-the-art and potential evolution of megawatt (MW) class high-energy laser (HEL) weapons.  Implications for space vehicles in or beyond earth orbit will be addressed.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Introduction (p. 1)'
+    location: 'section "Introduction", ¶1'
   significance: Statement of purpose — an overview of the state of the art and potential evolution of megawatt-class high-energy laser (HEL) weapons, addressing implications for space vehicles in or beyond earth orbit.
   statement_date: '2010-03-31'
 - id: q9
@@ -111,7 +111,7 @@ quotes:
     The instantaneous measure of a focused laser beam's effectiveness is called "irradiance" and is measured in power per unit area over the laser spot (typically watts/cm2).  The beam's ability to inflict damage, by heating during a time interval, is called "fluence" and is typically measured in joules/cm2.  Fluence is simply irradiance × time and one joule is equal to one watt for one second.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Basic Attributes of Kinetic Energy and HEL Weapons (p. 1)'
+    location: 'section "Basic Attributes of Kinetic Energy and HEL Weapons", ¶2'
   significance: Defines the two governing physical quantities — irradiance (instantaneous power per unit area, watts/cm2) and fluence (damage-inflicting accumulated energy, joules/cm2; fluence = irradiance × time).
   statement_date: '2010-03-31'
 - id: q10
@@ -120,7 +120,7 @@ quotes:
     High Energy Laser (HEL) weapons, by contrast, begin delivering the laser beam's energy to the target at the speed of light.  However, they require a finite dwell time to accumulate enough thermal energy (heat) on the aim point to achieve the desired effect (similar to a blowtorch).  The strength of an HEL weapon is its ability to precisely deliver a limited quantity of energy to a small spot with little collateral damage to nearby objects or people.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Basic Attributes of Kinetic Energy and HEL Weapons (p. 1)'
+    location: 'section "Basic Attributes of Kinetic Energy and HEL Weapons", ¶2'
   significance: Contrasts HEL weapons with kinetic-energy weapons — speed-of-light energy delivery requiring a finite dwell time, with precision and low collateral damage as the defining strength.
   statement_date: '2010-03-31'
 - id: q11
@@ -129,7 +129,7 @@ quotes:
     The term "Laser" is an acronym for Light Amplification by Stimulated Emission of Radiation. It is a unique device that employs the quantum states of matter to store and convert energy into electromagnetic radiation. The resulting radiation is referred to as "coherent," meaning it is single wavelength or "monochromatic" and highly focusable due to its well controlled phase.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Laser Fundamentals (p. 3)'
+    location: 'section "Laser Fundamentals", ¶1'
   significance: Defines the laser acronym (Light Amplification by Stimulated Emission of Radiation) and the coherence property — single-wavelength, monochromatic, highly focusable radiation with well-controlled phase.
   statement_date: '2010-03-31'
 - id: q12
@@ -138,7 +138,7 @@ quotes:
     The principles behind the laser were first described by Basov and Prokhorov at the Soviet Lebedev Institute of Physics in 1952. The first concept demonstration was actually at microwave frequencies (24 GHz) in 1953 by Townes, Gordon, and Zeiger at Columbia University. They called their device a MASER for Microwave Amplification by Stimulated Emission of Radiation. The first working laser, initially called an "Optical MASER," produced milliwatts of visible light using a ruby rod as the gain medium. This was done in 1960 by Theodore Maiman at Hughes Research Laboratories in California.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Laser Fundamentals (p. 4)'
+    location: 'section "Laser Fundamentals", ¶2'
   significance: The laser lineage — principles described by Basov and Prokhorov (1952), the MASER demonstrated by Townes, Gordon, and Zeiger (1953), and the first working laser built by Theodore Maiman at Hughes Research Laboratories in 1960.
   statement_date: '2010-03-31'
 - id: q13
@@ -147,7 +147,7 @@ quotes:
     To-date, every laser which has been scaled to MW-class average power falls in the chemical category. They use large quantities of rapidly flowing chemicals to produce reactions which then release the required energy.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Chemical Lasers (p. 5)'
+    location: 'section "Chemical Lasers", ¶2'
   significance: The state-of-the-art constraint — as of 2010, every laser scaled to MW-class average power is a chemical laser, dependent on large quantities of rapidly flowing chemicals.
   statement_date: '2010-03-31'
 - id: q14
@@ -156,7 +156,7 @@ quotes:
     The newest chemical laser to be scaled to high power is the Chemical Oxygen Iodine Laser (COIL at 1.315 µm) which excites vibronic states (simultaneous change of vibrational and electronic quantum numbers) in monatomic iodine to achieve the near-infrared wavelength.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Chemical Lasers (p. 5)'
+    location: 'section "Chemical Lasers", ¶3'
   significance: Identifies the Chemical Oxygen Iodine Laser (COIL, 1.315 µm) — the newest high-power chemical laser and the device of choice for the Missile Defense Agency's Airborne Laser program.
   statement_date: '2010-03-31'
 - id: q15
@@ -165,7 +165,7 @@ quotes:
     The earliest and perhaps the most diverse laser category is the solid-state laser which uses specific atoms or molecules as a lasing gain medium (called the dopant) uniformly suspended in transparent crystalline or ceramic glass (called the host). For example, the familiar Nd:YAG laser uses a few percent of neodymium (Nd) atoms as the dopant suspended in a crystalline mix of yttrium, aluminum, and garnet (YAG).
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Solid-State Lasers (p. 6)'
+    location: 'section "Solid-State Lasers", ¶1'
   significance: Defines the solid-state laser category — dopant atoms (e.g. neodymium) suspended in a crystalline or ceramic host (e.g. yttrium, aluminum, garnet — Nd:YAG), the electrically powered alternative to chemical lasers.
   statement_date: '2010-03-31'
 - id: q16
@@ -174,7 +174,7 @@ quotes:
     Northrop-Grumman, under a DoD-funded program, recently produced 100 kW with good beam quality. This laboratory device, called the Joint High-Power Solid-State Laser (JHPSSL), uses a single Nd:YAG master-oscillator that feeds parallel, well-phased Nd:YAG power amplifiers.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Rod and Slab Lasers (p. 7)'
+    location: 'section "Rod and Slab Lasers", ¶3'
   significance: The solid-state milestone — Northrop-Grumman's DoD-funded Joint High-Power Solid-State Laser (JHPSSL) produced 100 kW with good beam quality from phased Nd:YAG amplifiers.
   statement_date: '2010-03-31'
 - id: q17
@@ -183,7 +183,7 @@ quotes:
     Free-electron lasers (FELs) are unique in that they are not limited to lasing only at specific wavelengths dictated by the characteristics of a specific solid, liquid, or gaseous gain medium.  FELs use a stream of "free" (unbound to atoms) electron bunches, moving at almost the speed of light, to provide the lasing medium.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Free-Electron Lasers (p. 11)'
+    location: 'section "Free-Electron Lasers", ¶1'
   significance: Defines the free-electron laser (FEL) — wavelength-tunable because it uses free relativistic electron bunches rather than a fixed gain medium, the other electrically powered route to MW-class power.
   statement_date: '2010-03-31'
 - id: q18
@@ -192,7 +192,7 @@ quotes:
     The Advanced Research Projects Agency led the way with studies on the use of lasers for strategic applications, such as anti-satellite and anti-ICBM, while each of the services began looking at more modest tactical applications and began building one-of-a-kind demonstrators.  By the mid-1970's, the Army had placed a 50 kW carbon-dioxide (CO₂) laser with a 40 cm beam director in a tracked vehicle called the Mobile Tactical Unit (MTU) and had shot down small drone aircraft.  The Air Force placed a larger CO₂ laser in a KC-135 (the Airborne Laser Laboratory or ALL) and, by the early 1980's, had used it to shoot down air-to-air missiles such as the AIM-9.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Brief History of DoD Laser Weapon Research (p. 16)'
+    location: 'section "Brief History of DoD Laser Weapon Research", ¶1'
   significance: Early DoD history — ARPA-led strategic studies (anti-satellite, anti-ICBM), the Army's Mobile Tactical Unit (MTU) downing drones in the mid-1970s, and the Air Force Airborne Laser Laboratory (ALL) downing air-to-air missiles by the early 1980s.
   statement_date: '2010-03-31'
 - id: q19
@@ -201,7 +201,7 @@ quotes:
     The Navy then used this technology to produce the nation's first MW-class HEL weapon test bed.  The Mid-InfraRed Advanced Chemical Laser (MIRACL, Figure 15) and the SeaLite Beam Director (SLBD, Figure 11) were installed and integrated at White Sands Missile Range in the mid-1980s and used for experiments by the Department of Defense.  Subsonic drones and multi-mach missiles as well as strapped down ICBM boosters were among the many targets successfully engaged.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Brief History of DoD Laser Weapon Research (p. 17)'
+    location: 'section "Brief History of DoD Laser Weapon Research", ¶3'
   significance: The first MW-class HEL test bed — MIRACL plus the SeaLite Beam Director at White Sands Missile Range in the mid-1980s, engaging drones, multi-mach missiles, and strapped-down ICBM boosters.
   statement_date: '2010-03-31'
 - id: q20
@@ -210,7 +210,7 @@ quotes:
     In 1983, President Reagan gave his "Star Wars" speech which resulted in the initiation of the Strategic Defense Initiative (SDI) and the start of a very ambitious set of HEL technology programs which peaked at a billion dollars per year.  These efforts produced significant advances but did not result in the fielding of any weapons or major demonstration systems.  By the mid-1990s, SDI (then the Missile Defense Agency) had terminated almost all of their HEL programs to better focus on missile development.  The sole surviving MDA HEL program is the Airborne Laser (ABL) which has accounted for $200M to $500M/yr over the last decade.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Brief History of DoD Laser Weapon Research (p. 18)'
+    location: 'section "Brief History of DoD Laser Weapon Research", ¶4'
   significance: The SDI era — Reagan's 1983 "Star Wars" speech launching the Strategic Defense Initiative's billion-dollar-per-year HEL programs, their wind-down by the Missile Defense Agency, and the surviving Airborne Laser (ABL).
   statement_date: '2010-03-31'
 - id: q21
@@ -219,7 +219,7 @@ quotes:
     Whole-body vulnerability -Spacecraft operate in a delicate thermal equilibrium which requires maintenance of an overall, long-term temperature fairly close to 70 °F for the survival of electronics and personnel.  They are heated by absorbed solar radiation, onboard electronics, mechanical and propulsion systems, internal heating systems, internal cooling systems, and any personnel on-board.  Because of the surrounding vacuum, black-body radiation and material ejection are the only available methods of removing heat.  If laser radiation were to permanently alter the solar absorption or black-body emission characteristics (referred to as the α/ε ratio) of a significant portion of the spacecraft's external surface, this thermal balance could be destroyed with slow, but catastrophic results.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Vulnerability of Spacecraft to Laser Radiation (p. 22)'
+    location: 'section "Vulnerability of Spacecraft to Laser Radiation", ¶ (Whole-body vulnerability bullet)'
   significance: The AAWSAP-relevant threat mechanism — spacecraft whole-body vulnerability through the solar-absorption/black-body-emission (α/ε) ratio, where altering a surface's thermal characteristics could destroy the spacecraft's thermal balance with catastrophic results.
   statement_date: '2010-03-31'
 - id: q22
@@ -228,7 +228,7 @@ quotes:
     Solid-state lasers will be the optimum candidate for power in the sub-MW to MW range due to their ruggedness and relative simplicity.  An FEL would be the prime candidate for power well above a MW.  This type of laser lends itself better to heat removal from the gain medium than a solid-state laser.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Projection of Future HEL Weapon Capability (p. 24)'
+    location: 'section "Projection of Future HEL Weapon Capability", ¶ (Solid-State and Free-Electron Lasers subsection)'
   significance: The future-capability projection — solid-state lasers as the optimum candidate for sub-MW to MW power, free-electron lasers as the prime candidate well above a MW because of superior heat removal.
   statement_date: '2010-03-31'
 - id: q23
@@ -237,7 +237,7 @@ quotes:
     If there are concerns about the potential vulnerability of future spacecraft to laser radiation, then the following recommendations are offered:
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Recommendations (p. 25)'
+    location: 'section "Recommendations", ¶1'
   significance: Recommendations preamble — frames the report's hardening guidance around concerns about the vulnerability of future spacecraft to laser radiation, the AAWSAP space-threat through-line.
   statement_date: '2010-03-31'
 - id: q24
@@ -246,7 +246,7 @@ quotes:
     Only one professional society in the United States is centered on development of high-energy laser and high-power microwave weapons and technologies:  the Directed Energy Professional Society (DEPS).  This organization holds a variety of conferences each year focused on various aspects of directed energy weapons.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
-    location: 'Sources of Further Information (p. 26)'
+    location: 'section "Sources of Further Information", ¶1'
   significance: Names the Directed Energy Professional Society (DEPS) as the sole US professional society centered on high-energy laser and high-power microwave weapons development — the document's only "further information" institutional pointer, not a reference list.
   statement_date: '2010-03-31'
 naming_quirks:

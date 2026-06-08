@@ -37,7 +37,7 @@ quotes:
     Human Biological Tissues
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 1, ¶ title'
+    location: 'title-page identity block'
   significance: Document title — verbatim; the AAWSAP products list carries the shorter form "Field Effects on Biological Tissues"
   statement_date: '2010-03-11'
 - id: q2
@@ -49,7 +49,7 @@ quotes:
     Document
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 1, ¶ banner'
+    location: 'Defense Intelligence Reference Document banner'
   significance: DIRD series identity — the cover banner naming the document a Defense Intelligence Reference Document
   statement_date: '2010-03-11'
 - id: q3
@@ -59,7 +59,7 @@ quotes:
     ICOD: 1 December 2009
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 1, ¶ date block'
+    location: 'date block'
   significance: Date and ICOD — the document is dated 11 March 2010 with an information cut-off date of 1 December 2009
   statement_date: '2010-03-11'
 - id: q4
@@ -75,7 +75,7 @@ quotes:
     [box: (b)(6) — author name redacted]
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 3, ¶ prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6), so no author name appears on the document
   statement_date: '2010-03-11'
 - id: q5
@@ -84,7 +84,7 @@ quotes:
     COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 3, ¶ Administrative Note'
+    location: 'Administrative Note (Copyright Warning)'
   significance: Administrative Note — a copyright warning that further dissemination of the photographs in the publication is not authorized
   statement_date: '2010-03-11'
 - id: q6
@@ -98,7 +98,7 @@ quotes:
     DC 20340-5100.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 3, ¶ Administrative Note'
+    location: 'Administrative Note (AAWSA Program paragraph)'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption markers
   statement_date: '2010-03-11'
 - id: q7
@@ -110,7 +110,7 @@ quotes:
     symptoms [acute and subacute effects].
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 6, ¶ PREFACE'
+    location: 'section "Preface", ¶1'
   significance: Preface anchor case — three previously fit and active individuals experienced an anomalous aerospace-related event and within 72 hours suffered acute and subacute medical signs and symptoms
   statement_date: '2010-03-11'
 - id: q8
@@ -124,7 +124,7 @@ quotes:
     UVB and UVC (Ultra Violet A, B, C)] centered at about 785 MHz.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 6, ¶ PREFACE'
+    location: 'section "Preface", exposure-characterization ¶'
   significance: Exposure characterization — the three were subjected to a near-field accidental exposure to a broad-band ultrahigh radiofrequency mixed radiation of RF, NIEMR, and microwave energies centered at about 785 MHz
   statement_date: '2010-03-11'
 - id: q9
@@ -137,7 +137,7 @@ quotes:
     exposures of from 1 –10 GHz at power densities of above 100 mW/cm².
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 6, ¶ PREFACE'
+    location: 'section "Preface", medical-literature-review ¶'
   significance: Case base — a medical-literature review added 42 peer-reviewed cases and an additional un-published 300 cases of mixed exposures of 1–10 GHz at power densities above 100 mW/cm²
   statement_date: '2010-03-11'
 - id: q10
@@ -151,7 +151,7 @@ quotes:
     may be a threat to United States interests.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 6, ¶ SUMMARY'
+    location: 'section "Summary", ¶1'
   significance: Summary thesis — the work can inform (e.g., reverse engineer), through clinical diagnoses, physical characteristics of possible future advanced aerospace systems from unknown provenance
   statement_date: '2010-03-11'
 - id: q11
@@ -162,7 +162,7 @@ quotes:
     already deployed, and opaque to full US understanding.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 7, ¶ Summary bullet'
+    location: 'section "Summary", deployment-hypothesis bullet'
   significance: Deployment hypothesis — incidents and medical data support a hypothesis that some advanced systems are already deployed and opaque to full US understanding
   statement_date: '2010-03-11'
 - id: q12
@@ -173,7 +173,7 @@ quotes:
     energy systems.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 8, ¶ Summary final bullet'
+    location: 'section "Summary", unconventional-energy-systems bullet'
   significance: Concluding summary claim — the medical analyses indicate the use of (to us) unconventional and advanced energy systems, without requiring an alternative biophysics
   statement_date: '2010-03-11'
 - id: q13
@@ -184,7 +184,7 @@ quotes:
     lengths.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 9, ¶ A'
+    location: 'section "What is addressed in this review", ¶3'
   significance: Scope of study — the most important bandwidth of interest, for tissue effects on humans, is from about 300 kHz to 300 GHz
   statement_date: '2010-03-11'
 - id: q14
@@ -195,7 +195,7 @@ quotes:
     seizures after one minute exposure, followed by 5 minutes of unconsciousness.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 15'
+    location: 'section "Field effects and hearing / communications", 915 MHz seizure ¶'
   significance: Injury mechanism — very high intensity RF pulses at 915 MHz raise brain temperature 8 °C, causing petit mal or grand mal seizures and 5 minutes of unconsciousness
   statement_date: '2010-03-11'
 - id: q15
@@ -212,7 +212,7 @@ quotes:
     W/kg (950 MHz) up to 1.0 W/kg (936 & 90 MHz) [13,14].
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 15'
+    location: 'section "Field effects and hearing / communications", stun-effect-threshold ¶'
   significance: Stun-effect threshold — the stun-effect threshold is 680 J; no adverse effects have been found at head SARs of 0.2–1.0 W/kg ("Specific Absorbed Rate" and "16mJ/kg" are the document's forms)
   statement_date: '2010-03-11'
 - id: q16
@@ -223,7 +223,7 @@ quotes:
     range 300 MHz-300 GHz.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 16, ¶ Ch. Three'
+    location: 'section "Chapter Three: How Damage Occurs", ¶1'
   significance: Terminology — radiofrequency covers 100 kHz–300 GHz and microwave covers 300 MHz–300 GHz of the electromagnetic spectrum
   statement_date: '2010-03-11'
 - id: q17
@@ -234,7 +234,7 @@ quotes:
     fat and bone.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 16'
+    location: 'section "Chapter Three: How Damage Occurs", absorption-by-tissue ¶'
   significance: Absorption physics — blood, skin, brain, and peripheral nerves absorb much more radiofrequency energy than fat and bone
   statement_date: '2010-03-11'
 - id: q18
@@ -246,7 +246,7 @@ quotes:
     the thresholds are on the order of 30 times less.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 17, ¶ A'
+    location: 'section "The effects that burn", heat-perception-threshold ¶'
   significance: Heat-perception thresholds — heat perception near 0.7 mW/cm² and pain at about 9.0 mW/cm² within one second ("non-liner" is the document's form for non-linear)
   statement_date: '2010-03-11'
 - id: q19
@@ -259,7 +259,7 @@ quotes:
     engineers and the Cash-Landrum cases.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 20, ¶ C'
+    location: 'section "Some thoughts on neurological correlates", antenna-engineers-vs-Cash-Landrum ¶'
   significance: Cross-case consistency — injury severity and patterns are highly consistent, with no significant differences between the three antenna engineers and the Cash-Landrum cases
   statement_date: '2010-03-11'
 - id: q20
@@ -269,7 +269,7 @@ quotes:
     propulsion systems of anomalous aerospace vehicles, independent of origin, based on
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 25, ¶ Ch. Five'
+    location: 'section "Chapter Five: Cognitive and Neural Injury Mechanisms and Effects", reverse-engineer-purpose ¶'
   significance: Stated purpose — the paper argues that data exists to reverse engineer propulsion systems of anomalous aerospace vehicles, independent of origin (the sentence continues "based on biology" across the p.17/p.18 boundary; quoted to the p.17 page edge)
   statement_date: '2010-03-11'
 - id: q21
@@ -281,7 +281,7 @@ quotes:
     physiological effects on humans during close encounters.
   source:
     path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-    location: 'p. 31, ¶ Appendix A'
+    location: 'section "Appendix A: Schuessler Catalog of UFO-Related Human Physiological Effects", ¶1'
   significance: Schuessler catalog — Appendix A reproduces the Schuessler catalog of 356 selected cases of UFO-induced physiological effects 1873–1994 ("complied" is the document's form for compiled)
   statement_date: '2010-03-11'
 cited_works:
@@ -296,7 +296,7 @@ cited_works:
       three antenna engineers" Occup. Environ. Med 1997;54;281-284
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [1]'
+      location: 'References, entry [1]'
   - id: cw2
     added_date: '2026-05-24'
     citation_key: '2'
@@ -308,7 +308,7 @@ cited_works:
       La Porte, TX, 1996).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [2]'
+      location: 'References, entry [2]'
   - id: cw3
     added_date: '2026-05-24'
     citation_key: '3'
@@ -323,7 +323,7 @@ cited_works:
       Books, New York, 2000).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [3]'
+      location: 'References, entry [3]'
   - id: cw4
     added_date: '2026-05-24'
     citation_key: '4'
@@ -335,7 +335,7 @@ cited_works:
       (November 1981).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [4]'
+      location: 'References, entry [4]'
   - id: cw5
     added_date: '2026-05-24'
     citation_key: '5'
@@ -348,7 +348,7 @@ cited_works:
       Report (1998).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [5]'
+      location: 'References, entry [5]'
   - id: cw6
     added_date: '2026-05-24'
     citation_key: '5-a'
@@ -357,7 +357,7 @@ cited_works:
       [5-a] http://www.wired.com/dangerroom/2008/03/shoe-zapping-ra/
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [5-a]'
+      location: 'References, entry [5-a]'
   - id: cw7
     added_date: '2026-05-24'
     citation_key: '5-b'
@@ -366,7 +366,7 @@ cited_works:
       [5-b] http://127.0.0.1:4664/cache?event_id=135227&schema_id=8&q=Bioengineering
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [5-b]'
+      location: 'References, entry [5-b]'
   - id: cw8
     added_date: '2026-05-24'
     citation_key: '5-c'
@@ -376,7 +376,7 @@ cited_works:
       neuroscience-research#rt4022
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [5-c]'
+      location: 'References, entry [5-c]'
   - id: cw9
     added_date: '2026-05-24'
     citation_key: '6'
@@ -388,7 +388,7 @@ cited_works:
       (Thomas Dunne Books, New York, 1999).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [6]'
+      location: 'References, entry [6]'
   - id: cw10
     added_date: '2026-05-24'
     citation_key: '7'
@@ -400,7 +400,7 @@ cited_works:
       1947-1987, the 40-Year Search for an Explanation (Fortean Times, London, 1987).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 27, References [7]'
+      location: 'References, entry [7]'
   - id: cw11
     added_date: '2026-05-24'
     citation_key: '8'
@@ -411,7 +411,7 @@ cited_works:
       [8] J. Vallee, Confrontations (Ballantine Books, New York, 1990).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [8]'
+      location: 'References, entry [8]'
   - id: cw12
     added_date: '2026-05-24'
     citation_key: '9'
@@ -423,7 +423,7 @@ cited_works:
       at the website: http://www.ufologie.net/htm/colaresgevaerd01.htm.
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [9]'
+      location: 'References, entry [9]'
   - id: cw13
     added_date: '2026-05-24'
     citation_key: '10'
@@ -435,7 +435,7 @@ cited_works:
       of microwave signals Proc IRE 44:2A
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [10]'
+      location: 'References, entry [10]'
   - id: cw14
     added_date: '2026-05-24'
     citation_key: '11'
@@ -447,7 +447,7 @@ cited_works:
       Bioelectromagnetics Supplement 6:S162-S173
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [11]'
+      location: 'References, entry [11]'
   - id: cw15
     added_date: '2026-05-24'
     citation_key: '12'
@@ -457,7 +457,7 @@ cited_works:
       [12] Green C. 2009 & 1983 {Unpublished Personal Archives}
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [12]'
+      location: 'References, entry [12]'
   - id: cw16
     added_date: '2026-05-24'
     citation_key: '13'
@@ -469,7 +469,7 @@ cited_works:
       brain Radio Science 17(5S):169S-178S
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [13]'
+      location: 'References, entry [13]'
   - id: cw17
     added_date: '2026-05-24'
     citation_key: '14'
@@ -481,7 +481,7 @@ cited_works:
       Exposure systems and preliminary results Radiat Environ Biophys 39:141-147
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [14]'
+      location: 'References, entry [14]'
   - id: cw18
     added_date: '2026-05-24'
     citation_key: '15'
@@ -494,7 +494,7 @@ cited_works:
       Forschungsgemeinschaft DFG 436 RUS 113/705/0-3}
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [15]'
+      location: 'References, entry [15]'
   - id: cw19
     added_date: '2026-05-24'
     citation_key: '16'
@@ -503,7 +503,7 @@ cited_works:
       [16] http://en.wikipedia.org/wiki/Ionizing_radiation
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [16]'
+      location: 'References, entry [16]'
   - id: cw20
     added_date: '2026-05-24'
     citation_key: '17'
@@ -515,7 +515,7 @@ cited_works:
       America (June 2007), p. 24.
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [17]'
+      location: 'References, entry [17]'
   - id: cw21
     added_date: '2026-05-24'
     citation_key: '18'
@@ -527,7 +527,7 @@ cited_works:
       - 2nd Edition (Academic Press, New York, 2005).
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [18]'
+      location: 'References, entry [18]'
   - id: cw22
     added_date: '2026-05-24'
     citation_key: '19'
@@ -539,7 +539,7 @@ cited_works:
       Cause and Effect Relationship Biol. Effects of ELF: 18th Hanford Con pps 258-276
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [19]'
+      location: 'References, entry [19]'
   - id: cw23
     added_date: '2026-05-24'
     citation_key: '20'
@@ -551,7 +551,7 @@ cited_works:
       occupational safety issues relating to surface heating Health Physics 78:170-81
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [20]'
+      location: 'References, entry [20]'
   - id: cw24
     added_date: '2026-05-24'
     citation_key: '21'
@@ -564,7 +564,7 @@ cited_works:
       Transactions Feb.
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [21]'
+      location: 'References, entry [21]'
   - id: cw25
     added_date: '2026-05-24'
     citation_key: '22'
@@ -576,7 +576,7 @@ cited_works:
       Radiation Research 37:323-333
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [22]'
+      location: 'References, entry [22]'
   - id: cw26
     added_date: '2026-05-24'
     citation_key: '23'
@@ -590,7 +590,7 @@ cited_works:
       Lecture Series No. 138
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [23]'
+      location: 'References, entry [23]'
   - id: cw27
     added_date: '2026-05-24'
     citation_key: '24'
@@ -600,7 +600,7 @@ cited_works:
       [24] Green C. 2009 & 1978 {Unpublished Personal Archives}
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 28, References [24]'
+      location: 'References, entry [24]'
   - id: cw28
     added_date: '2026-05-24'
     citation_key: '25'
@@ -612,7 +612,7 @@ cited_works:
       to oven microwaves Occup. Med 45:276-7
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [25]'
+      location: 'References, entry [25]'
   - id: cw29
     added_date: '2026-05-24'
     citation_key: '26'
@@ -624,7 +624,7 @@ cited_works:
       accident J. Microwave Power and electromagnetic energy 23:67-74
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [26]'
+      location: 'References, entry [26]'
   - id: cw30
     added_date: '2026-05-24'
     citation_key: '27'
@@ -636,7 +636,7 @@ cited_works:
       nerves after blockage of active transport Radiat Res  108:260-8
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [27]'
+      location: 'References, entry [27]'
   - id: cw31
     added_date: '2026-05-24'
     citation_key: '28'
@@ -648,7 +648,7 @@ cited_works:
       following acute microwave exposure
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [28]'
+      location: 'References, entry [28]'
   - id: cw32
     added_date: '2026-05-24'
     citation_key: '29'
@@ -660,7 +660,7 @@ cited_works:
       Hand Surgery 9A:132-5
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [29]'
+      location: 'References, entry [29]'
   - id: cw33
     added_date: '2026-05-24'
     citation_key: '30'
@@ -673,7 +673,7 @@ cited_works:
       29:257-67
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [30]'
+      location: 'References, entry [30]'
   - id: cw34
     added_date: '2026-05-24'
     citation_key: '31'
@@ -685,7 +685,7 @@ cited_works:
       Fields on the Fluctuations of Ionic Electric Currents in Blood Circulation
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [31]'
+      location: 'References, entry [31]'
   - id: cw35
     added_date: '2026-05-24'
     citation_key: '32'
@@ -697,7 +697,7 @@ cited_works:
       91:212-8
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [32]'
+      location: 'References, entry [32]'
   - id: cw36
     added_date: '2026-05-24'
     citation_key: '33'
@@ -709,7 +709,7 @@ cited_works:
       Muscular Devices: a Meta Review NATO RTO-EN-HFM-145: 2-1—2-7
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [33]'
+      location: 'References, entry [33]'
   - id: cw37
     added_date: '2026-05-24'
     citation_key: '34'
@@ -721,7 +721,7 @@ cited_works:
       electromagnetic fields Crit Rev Biomed Eng 17(5): 415-529
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [34]'
+      location: 'References, entry [34]'
   - id: cw38
     added_date: '2026-05-24'
     citation_key: '35'
@@ -734,7 +734,7 @@ cited_works:
       http://www.ncbi.nlm.nih.gov/sites/entrez
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [35]'
+      location: 'References, entry [35]'
   - id: cw39
     added_date: '2026-05-24'
     citation_key: '36'
@@ -747,7 +747,7 @@ cited_works:
       patients Psychol Med 6:997-1--6
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [36]'
+      location: 'References, entry [36]'
   - id: cw40
     added_date: '2026-05-24'
     citation_key: '37'
@@ -760,7 +760,7 @@ cited_works:
       for Electromagnetic Fields (ELF and RF)
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [37]'
+      location: 'References, entry [37]'
   - id: cw41
     added_date: '2026-05-24'
     citation_key: '38'
@@ -773,7 +773,7 @@ cited_works:
       .asp
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [38]'
+      location: 'References, entry [38]'
   - id: cw42
     added_date: '2026-05-24'
     citation_key: '39'
@@ -785,7 +785,7 @@ cited_works:
       migration, and invasion Bioelectromagnetics Dec. 29(8):615-25
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [39]'
+      location: 'References, entry [39]'
   - id: cw43
     added_date: '2026-05-24'
     citation_key: '40'
@@ -795,7 +795,7 @@ cited_works:
       [40] Green, CC 2001, 2009 Unpublished HIPPA files
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [40]'
+      location: 'References, entry [40]'
   - id: cw44
     added_date: '2026-05-24'
     citation_key: '41'
@@ -806,7 +806,7 @@ cited_works:
       [41] RF Injury and Brain literature Green C. 2009 8,006 citations
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 29, References [41]'
+      location: 'References, entry [41]'
   - id: cw45
     added_date: '2026-05-24'
     citation_key: '42'
@@ -819,7 +819,7 @@ cited_works:
       93-97
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [42]'
+      location: 'References, entry [42]'
   - id: cw46
     added_date: '2026-05-24'
     citation_key: '43'
@@ -831,7 +831,7 @@ cited_works:
       brain: a time-dependent study Toxicology 23891):23-33
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [43]'
+      location: 'References, entry [43]'
   - id: cw47
     added_date: '2026-05-24'
     citation_key: '44'
@@ -843,7 +843,7 @@ cited_works:
       field on the microcirculatory parameters in rat brain In Vivo 21(4):555-62
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [44]'
+      location: 'References, entry [44]'
   - id: cw48
     added_date: '2026-05-24'
     citation_key: '45'
@@ -856,7 +856,7 @@ cited_works:
       www.mapcruzin.com
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [45]'
+      location: 'References, entry [45]'
   - id: cw49
     added_date: '2026-05-24'
     citation_key: '46'
@@ -868,7 +868,7 @@ cited_works:
       relating to Wireless Communication Technology www.mapcruzin.com
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [46]'
+      location: 'References, entry [46]'
   - id: cw50
     added_date: '2026-05-24'
     citation_key: '47'
@@ -879,7 +879,7 @@ cited_works:
       Modification (ICD-10-CM) http://www.cdc.gov/nchs/about/otheract/icd9/abticd10.htm
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [47]'
+      location: 'References, entry [47]'
   - id: cw51
     added_date: '2026-05-24'
     citation_key: '48'
@@ -889,7 +889,7 @@ cited_works:
       [48] Vallee Classification System http://www.yawp.com/3rd-i/rsrc/gloss/v/vallee.html
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [48]'
+      location: 'References, entry [48]'
   - id: cw52
     added_date: '2026-05-24'
     citation_key: '49'
@@ -900,61 +900,61 @@ cited_works:
       http://www.medterms.com/script/main/art.asp?articlekey=31785
     source:
       path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
-      location: 'p. 30, References [49]'
+      location: 'References, entry [49]'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-23'
   observed: Field Effects on Biological Tissues
   canonical: Anomalous Acute and Subacute Field Effects on Human Biological Tissues
-  location: 'AAWSAP products list attachment 12 short title vs. p. 1 document title'
+  location: 'AAWSAP products list attachment 12 short title vs. title-page identity block document title'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: disputed
 - id: nq2
   added_date: '2026-05-23'
   observed: (b)(6)
   canonical: '[author identity withheld under FOIA exemption (b)(6)]'
-  location: 'p. 3, Author line'
+  location: 'Author line'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-23'
   observed: (b)(3):10 USC 424
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'Prepared-by / Administrative Note / AAWSA Program Manager lines'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-23'
   observed: non-liner
   canonical: non-linear
-  location: 'p. 17, ¶ A'
+  location: 'section "The effects that burn"'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5
   added_date: '2026-05-23'
   observed: complied
   canonical: compiled
-  location: 'p. 31, ¶ Appendix A'
+  location: 'section "Appendix A: Schuessler Catalog of UFO-Related Human Physiological Effects"'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq6
   added_date: '2026-05-23'
   observed: Specific Absorbed Rate
   canonical: Specific Absorption Rate
-  location: 'p. 15'
+  location: 'section "Field effects and hearing / communications"'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq7
   added_date: '2026-05-23'
   observed: parasthesiae
   canonical: paresthesiae
-  location: 'p. 6, ¶ PREFACE'
+  location: 'section "Preface"'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq8
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 3, Administrative Note'
+  location: 'Administrative Note (AAWSA Program paragraph)'
   source_path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   resolution: preserve-as-sic-in-quotes

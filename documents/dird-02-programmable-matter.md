@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-02-programmable-matter-20091214.pdf](../sources/government/dird-02-programmable-matter-20091214.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -47,7 +45,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 1, ¶ title |
+| Location | title-page identity block |
 
 ---
 
@@ -59,7 +57,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 1, ¶ banner |
+| Location | classification banner |
 
 ---
 
@@ -71,7 +69,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 1, ¶ date/control block |
+| Location | date block |
 
 ---
 
@@ -87,7 +85,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 3, ¶ prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -99,7 +97,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -111,7 +109,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -123,7 +121,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction" (paragraph beginning "However, when sensors, filters, emitters") |
 
 ---
 
@@ -135,7 +133,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction" (paragraph beginning "Other advantages of dynamic materials") |
 
 ---
 
@@ -147,7 +145,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction" (paragraph beginning "If it becomes possible to change") |
 
 ---
 
@@ -159,7 +157,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 8, ¶ Quantum Dots |
+| Location | section "Four Kinds of Atoms", subsection "QUANTUM DOTS" |
 
 ---
 
@@ -171,7 +169,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 11, ¶ after Fig. 4 |
+| Location | section "Advantages of Dynamic Materials" (paragraph beginning "In theory, a block of true Programmable Matter") |
 
 ---
 
@@ -183,7 +181,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 11, ¶ challenges |
+| Location | section "Advantages of Dynamic Materials" (paragraph beginning "Although the smart matter of 2050", on the threat of hackers) |
 
 ---
 
@@ -195,7 +193,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 17, ¶ Advanced Concepts in Programmable Materials |
+| Location | section "Advanced Concepts in Programmable Materials" (opening paragraph, on reconfiguring a single attitude sensor) |
 
 ---
 
@@ -207,7 +205,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 18, ¶ Scenario for Possible Applications |
+| Location | section "Scenario for Possible Applications" |
 
 ---
 
@@ -219,7 +217,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 20, ¶ Directions for Future Research |
+| Location | section "Directions for Future Research" (paragraph beginning "Therefore, near-term applications such as smart windows") |
 
 ---
 
@@ -231,7 +229,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 20, ¶ Directions for Future Research |
+| Location | section "Directions for Future Research" (paragraph beginning "However, the vast potential of programmable materials") |
 
 ---
 
@@ -243,7 +241,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 21, ¶ Conclusions |
+| Location | section "Conclusions" |
 
 ---
 
@@ -255,7 +253,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 10, ¶ "Impossible" Materials |
+| Location | section "\"Impossible\" Materials" (paragraph beginning "One such \"impossible\" material hypothesized") |
 
 ---
 
@@ -267,7 +265,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 11, ¶ Fig. 4 caption |
+| Location | section "Advantages of Dynamic Materials", Figure 4 caption (Wellstone Fiber) |
 
 ---
 
@@ -279,7 +277,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 12, ¶ Advantages of Dynamic Materials |
+| Location | section "Advantages of Dynamic Materials" (paragraph beginning "Although thermochromic building materials were very rare", on building energy consumption) |
 
 ---
 
@@ -291,7 +289,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 13, ¶ Early Commercialization of Smart Materials |
+| Location | section "Early Commercialization of Smart Materials" (paragraph beginning "RavenWindow film is transparent when cold") |
 
 ---
 
@@ -303,7 +301,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 14, ¶ Early Commercialization of Smart Materials |
+| Location | section "Early Commercialization of Smart Materials" (paragraph beginning "Assuming a retail cost of $25 per square foot") |
 
 ---
 
@@ -315,7 +313,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 15, ¶ Thermal Management of Spacecraft |
+| Location | section "Thermal Management of Spacecraft" (paragraph beginning "Fortunately, in 2001, scientists at the Research Triangle Institute") |
 
 ---
 
@@ -327,7 +325,7 @@ On early commercialization, the document states that in the third quarter of 200
 |---|---|
 | Attributed to | DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009 |
 | Source | [archived source](../sources/government/dird-02-programmable-matter-20091214.pdf) |
-| Location | p. 18, ¶ Advanced Concepts in Programmable Materials |
+| Location | section "Advanced Concepts in Programmable Materials" (paragraph beginning "Quantum computing is another possibility") |
 
 ---
 

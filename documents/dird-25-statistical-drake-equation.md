@@ -20,8 +20,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-25-statistical-drake-equation-2010.pdf](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
 | Content Block | Pages 9, 10, 11, 29, 30 were content-blocked for the VLM and PaddleOCR-filled (pages 9-11 reproduce a copyrighted Carl Sagan "Cosmos" excerpt; page 30 is the two-column "1. INTRODUCTION", column-split-filled). Blocked-page prose was image-verified. |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -46,7 +44,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note |
 
 ---
 
@@ -58,7 +56,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 12, ¶ 2 (Section 4) |
+| Location | section "The Drake Equation is Over-Simplified", ¶2 |
 
 ---
 
@@ -70,7 +68,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 12, ¶ 3 (Section 5) |
+| Location | section "The Statistical Drake Equation", ¶3 |
 
 ---
 
@@ -82,7 +80,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 13, ¶ ('There is a brilliant way...') (Section 5) |
+| Location | section "The Statistical Drake Equation", ¶ ('There is a brilliant way...') |
 
 ---
 
@@ -96,7 +94,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 14, ¶ (bulleted key steps) (Section 6) |
+| Location | section "Solving the Statistical Drake Equation By Virtue of the Central Limit Theorem (CLT) of Statistics", ¶ (bulleted key steps) |
 
 ---
 
@@ -108,7 +106,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 18, ¶ 1 (Section 7) |
+| Location | section "An Example Explaining the Statistical Drake Equation", ¶1 |
 
 ---
 
@@ -120,7 +118,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 24, ¶ ('In plain words...') (Section 8) |
+| Location | section "Finding the Probability Distribution of the Et-Distance By Virtue of the Statistical Drake Equation", ¶ ('In plain words...') |
 
 ---
 
@@ -132,7 +130,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 24, ¶ 2 (Section 10, Conclusions) |
+| Location | section "Conclusions", ¶2 |
 
 ---
 
@@ -144,7 +142,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 29, ¶ Appendix B title block |
+| Location | Appendix B title block |
 
 ---
 
@@ -156,7 +154,7 @@ For the example the statistical mean of N comes out at about 4590 communicating 
 |---|---|
 | Attributed to | An Introduction to the Statistical Drake Equation — DIA AAWSAP Defense Intelligence Reference Document, 11 March 2010 |
 | Source | [archived source](../sources/government/dird-25-statistical-drake-equation-2010.pdf) |
-| Location | p. 29, ¶ Abstract item 3 (Appendix B) |
+| Location | Appendix B, Abstract item 3 |
 
 ---
 

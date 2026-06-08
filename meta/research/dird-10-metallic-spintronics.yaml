@@ -36,7 +36,7 @@ quotes:
     UNCLASSIFIED//[struck through] FOR OFFICIAL USE ONLY
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 1, classification banner'
+    location: 'classification banner'
   significance: The classification marking on every page header and footer — FOR OFFICIAL USE ONLY struck through to UNCLASSIFIED on FOIA declassification
   statement_date: '2010-03-23'
 - id: q-title-page-identity-block
@@ -57,7 +57,7 @@ quotes:
     Metallic Spintronics
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 1, title-page identity block'
+    location: 'title-page identity block'
   significance: 'Establishes provenance as a DIA Defense Intelligence Reference Document, Acquisition Threat Support, 23 March 2010, ICOD 1 December 2009, control DIA-08-1003-011 — the AAWSAP DIRD identity block'
   statement_date: '2010-03-23'
 - id: q-blackvault-foia-insert
@@ -76,7 +76,7 @@ quotes:
     Discover the Truth at: http://www.theblackvault.com
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 2, Black Vault FOIA declassification insert'
+    location: 'Black Vault FOIA declassification insert'
   significance: Documents the FOIA declassification/release chain — the copy was released via FOIA and published through John Greenewald, Jr.'s Black Vault
   statement_date: '2010-03-23'
 - id: q-prepared-by-author-block
@@ -90,7 +90,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 3, prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: The document names no author — Prepared-by redacted under (b)(3):10 USC 424, Author under (b)(6); the Tsoi/UT-Austin attribution comes only from the external DIA products list
   statement_date: '2010-03-23'
 - id: q-copyright-warning
@@ -99,7 +99,7 @@ quotes:
     COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 3, Administrative Note (Copyright Warning)'
+    location: 'Administrative Note (Copyright Warning)'
   significance: Administrative Note copyright caveat — further dissemination of the publication's photographs is not authorized
   statement_date: '2010-03-23'
 - id: q-aawsa-program-paragraph
@@ -113,7 +113,7 @@ quotes:
     DC 20340-5100.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 3, Administrative Note (AAWSA Program paragraph)'
+    location: 'Administrative Note (AAWSA Program paragraph)'
   significance: The defining provenance paragraph — places the report in the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA/AAWSAP) Program series, program-manager contact redacted
   statement_date: '2010-03-23'
 - id: q-spintronics-thesis
@@ -128,7 +128,7 @@ quotes:
     conventional microchips, but by the electron's intrinsic spin.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 5, Section 1 (Introduction), ¶1'
+    location: 'section "Introduction", ¶1'
   significance: The report's central premise — spintronics encodes information in electron spin rather than charge
   statement_date: '2010-03-23'
 - id: q-gmr-stt-framing
@@ -147,7 +147,7 @@ quotes:
     magnetic field.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 5, Section 1 (Introduction), ¶2'
+    location: 'section "Introduction", ¶2'
   significance: Frames the report's two organizing phenomena — GMR (2007 Nobel Prize) and its inverse STT
   statement_date: '2010-03-23'
 - id: q-aerospace-section5-framing
@@ -157,7 +157,7 @@ quotes:
     spintronic technologies and their aerospace applications.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 6, Section 1 (Introduction), report-arrangement ¶'
+    location: 'section "Introduction", report-arrangement ¶'
   significance: The explicit tie between the science and the AAWSAP aerospace mandate — flags Section 5 as the aerospace-applications locus
   statement_date: '2010-03-23'
 - id: q-gmr-basics
@@ -168,7 +168,7 @@ quotes:
     as the resistance change in magnetic field relative to its peak value.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 7, Section 2.1 (GMR Basics), ¶2'
+    location: 'section "GMR Basics", ¶2'
   significance: The working definition of giant magnetoresistance anchoring Section 2
   statement_date: '2010-03-23'
 - id: q-gmr-applications
@@ -180,7 +180,7 @@ quotes:
     first large-scale commercial application of GMR.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 9, Section 2.2 (GMR Applications), ¶1'
+    location: 'section "GMR Applications", ¶1'
   significance: GMR's mature commercial footprint — hard-drive read heads, galvanic isolators, nonvolatile memory
   statement_date: '2010-03-23'
 - id: q-stt-definition
@@ -191,7 +191,7 @@ quotes:
     currents—one of the forefront and most exciting areas in magnetism research today.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 10, Section 3 (Spin-Transfer-Torque), ¶1'
+    location: 'section "Spin-Transfer-Torque", ¶1'
   significance: Defines STT — current-driven manipulation of magnetic moments in nanostructures — the report's forward-looking core
   statement_date: '2010-03-23'
 - id: q-stt-first-observation-tsoi
@@ -203,7 +203,7 @@ quotes:
     Co/Cu magnetic multilayer through a mechanical point contact.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 10, Section 3.1 (STT Basics), ¶2'
+    location: 'section "STT Basics", ¶2'
   significance: Credits the first experimental observation of spin transfer to "Tsoi et al." — the body's closest echo of the products-list authorship attribution, though the body never names Tsoi as the report's author
   statement_date: '2010-03-23'
 - id: q-stt-recording-oscillator
@@ -215,7 +215,7 @@ quotes:
     [MRAM]). This may lead to a smaller and faster magnetic memory.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 10, Section 3.1 (STT Basics), ¶3'
+    location: 'section "STT Basics", ¶3'
   significance: An early STT application — replacing the Oersted write field in MRAM for smaller, faster magnetic memory; preserves the source's "SST" typo for STT
   statement_date: '2010-03-23'
 - id: q-stt-tsoi-nature2000
@@ -228,7 +228,7 @@ quotes:
     spectrometer.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 15, Section 3.2 (STT Experiments), high-frequency precession ¶'
+    location: 'section "STT Experiments", high-frequency precession ¶'
   significance: The second Tsoi et al. attribution — credits the first unequivocal evidence of current-driven GHz precession to Tsoi et al. (Reference 9); echoes the external products-list authorship attribution while the body still never names the report's author
   statement_date: '2010-03-23'
 - id: q-stt-stxm-resolution
@@ -240,7 +240,7 @@ quotes:
     resolution.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 16, Section 3.2 (STT Experiments), STXM/Figure 9 ¶'
+    location: 'section "STT Experiments", STXM/Figure 9 ¶'
   significance: The Section 3.2 experimental endpoint — scanning transmission x-ray microscopy resolves the free CoFe layer magnetization vector field with ~100-picosond temporal resolution; source preserves the ~100-picosond spelling for ~100-picosecond
   statement_date: '2010-03-23'
 - id: q-stt-applications-oscillator
@@ -251,7 +251,7 @@ quotes:
     electrical current is driven directly through the storage element (MTJ or spin valve).
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 17, Section 3.3 (STT Applications), STT-MRAM ¶'
+    location: 'section "STT Applications", STT-MRAM ¶'
   significance: STT-MRAM as the scalable successor to conventional MRAM — drives the write current directly through the storage element, removing the Oersted-field scaling limit
   statement_date: '2010-03-23'
 - id: q-racetrack-memory
@@ -263,7 +263,7 @@ quotes:
     "racetrack" (Reference 83).
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 18, Section 3.4 (STT-Driven Motion of Magnetic Domain Walls), racetrack ¶'
+    location: 'section "STT-Driven Motion of Magnetic Domain Walls", racetrack ¶'
   significance: Introduces racetrack memory — current-driven domain-wall motion — as a third STT-enabled storage technology
   statement_date: '2010-03-23'
 - id: q-antiferromagnetic-prediction
@@ -274,7 +274,7 @@ quotes:
     the ferromagnetic (F) components are replaced by antiferromagnets (AFM).
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 19, Section 4 (Antiferromagnetic Metal Spintronics), ¶1'
+    location: 'section "Antiferromagnetic Metal Spintronics", ¶1'
   significance: Opens the antiferromagnetic-spintronics direction — GMR/STT analogues predicted when ferromagnets are replaced by antiferromagnets
   statement_date: '2010-03-23'
 - id: q-conclusions-moores-law
@@ -287,7 +287,7 @@ quotes:
     in ~40 MW/cm² of power dissipated on a chip.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 22, Section 5 (Summary and Conclusions), ¶1'
+    location: 'section "Summary and Conclusions", ¶1 (Moore''s-law power-density ¶)'
   significance: States the motivating problem — the Moore's-law power-density trend projecting ~40 MW/cm² dissipation by 2035
   statement_date: '2010-03-23'
 - id: q-conclusions-redbrickwall
@@ -299,7 +299,7 @@ quotes:
     some aspect of the semiconductor technology.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 23, Section 5 (Summary and Conclusions), ¶1'
+    location: 'section "Summary and Conclusions", ¶1 (Red Brick Wall ¶)'
   significance: Names the "Red Brick Wall" — the semiconductor-scaling collapse that motivates a charge-free, spin-based alternative
   statement_date: '2010-03-23'
 - id: q-conclusions-aerospace-radiation
@@ -313,7 +313,7 @@ quotes:
     retain the stored information even when not powered) of metallic spintronic devices.
   source:
     path: government/dird-10-metallic-spintronics-20100323.pdf
-    location: 'p. 23, Section 5 (Summary and Conclusions), aerospace ¶'
+    location: 'section "Summary and Conclusions", aerospace ¶'
   significance: The report's explicit aerospace/defense relevance — radiation resistance and low power consumption of metallic spintronic devices as advantages for onboard electronics on long space missions (the AAWSAP tie-in)
   statement_date: '2010-03-23'
 naming_quirks:
@@ -321,28 +321,28 @@ naming_quirks:
   added_date: '2026-05-26'
   observed: 'lithographycal'
   canonical: 'lithographic'
-  location: 'p. 11, Figure 4 labels'
+  location: 'Figure 4 labels'
   source_path: government/dird-10-metallic-spintronics-20100323.pdf
   resolution: use-canonical
 - id: nq2
   added_date: '2026-05-26'
   observed: '~100-picosond'
   canonical: '~100-picosecond'
-  location: 'p. 16, Section 3.2 (STT Experiments)'
+  location: 'section "STT Experiments"'
   source_path: government/dird-10-metallic-spintronics-20100323.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-26'
   observed: 'Forth Worth'
   canonical: 'Fort Worth'
-  location: 'p. 25, References (Reference 23)'
+  location: 'References, entry (23)'
   source_path: government/dird-10-metallic-spintronics-20100323.pdf
   resolution: use-canonical
 - id: nq4
   added_date: '2026-05-26'
   observed: 'SST'
   canonical: 'STT'
-  location: 'p. 10, Section 3.1 (STT Basics), ¶3'
+  location: 'section "STT Basics", ¶3'
   source_path: government/dird-10-metallic-spintronics-20100323.pdf
   resolution: preserve-as-sic-in-quotes
 cited_works:
@@ -355,7 +355,7 @@ cited_works:
       (1) Baibich, M. N., et al., Phys. Rev. Lett. 61, 2472 (1988).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (1)'
+      location: 'References, entry (1)'
   - id: cw2
     added_date: '2026-05-26'
     citation_key: '2'
@@ -365,7 +365,7 @@ cited_works:
       (2) Binasch, G., et al., Phys. Rev. B 39, 4828 (1989).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (2)'
+      location: 'References, entry (2)'
   - id: cw3
     added_date: '2026-05-26'
     citation_key: '3'
@@ -375,7 +375,7 @@ cited_works:
       (3) Slonczewski, J. C., J. Magn. Magn. Mater. 159, L1 (1996).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (3)'
+      location: 'References, entry (3)'
   - id: cw4
     added_date: '2026-05-26'
     citation_key: '4'
@@ -385,7 +385,7 @@ cited_works:
       (4) Berger, L., J. Appl. Phys. 81, 4880 (1997).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (4)'
+      location: 'References, entry (4)'
   - id: cw5
     added_date: '2026-05-26'
     citation_key: '5'
@@ -395,7 +395,7 @@ cited_works:
       (5) Tsoi, M., et al., Phys. Rev. Lett. 80, 4281 (1998).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (5)'
+      location: 'References, entry (5)'
   - id: cw6
     added_date: '2026-05-26'
     citation_key: '6'
@@ -405,7 +405,7 @@ cited_works:
       (6) Myers, E. B., et al., Science 285, 867 (1999).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (6)'
+      location: 'References, entry (6)'
   - id: cw7
     added_date: '2026-05-26'
     citation_key: '7'
@@ -415,7 +415,7 @@ cited_works:
       (7) Sun, J. Z., J. Magn. Magn. Mater. 202, 157 (1999).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (7)'
+      location: 'References, entry (7)'
   - id: cw8
     added_date: '2026-05-26'
     citation_key: '8'
@@ -425,7 +425,7 @@ cited_works:
       (8) Wegrowe, J.-E., et al., Europhys. Lett. 45, 626 (1999).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (8)'
+      location: 'References, entry (8)'
   - id: cw9
     added_date: '2026-05-26'
     citation_key: '9'
@@ -435,7 +435,7 @@ cited_works:
       (9) Tsoi, M., et al., Nature 406, 46 (2000).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (9)'
+      location: 'References, entry (9)'
   - id: cw10
     added_date: '2026-05-26'
     citation_key: '10'
@@ -445,7 +445,7 @@ cited_works:
       (10) Beach, G. S. D., et al., Phys. Rev. Lett. 97, 057203 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (10)'
+      location: 'References, entry (10)'
   - id: cw11
     added_date: '2026-05-26'
     citation_key: '11'
@@ -455,7 +455,7 @@ cited_works:
       (11) Beach, G. S. D., et al., Phys. Rev. Lett. 102, 067201 (2009).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (11)'
+      location: 'References, entry (11)'
   - id: cw12
     added_date: '2026-05-26'
     citation_key: '12'
@@ -468,7 +468,7 @@ cited_works:
       (Berlin: Springer, 1994), p.82.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (12)'
+      location: 'References, entry (12)'
   - id: cw13
     added_date: '2026-05-26'
     citation_key: '13'
@@ -480,7 +480,7 @@ cited_works:
       (Boston, London: Acad. Press, 1994), p.367.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (13)'
+      location: 'References, entry (13)'
   - id: cw14
     added_date: '2026-05-26'
     citation_key: '14'
@@ -490,7 +490,7 @@ cited_works:
       (14) Dieny, B., J. Magn. Mag. Mat. 136, 335 (1994).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (14)'
+      location: 'References, entry (14)'
   - id: cw15
     added_date: '2026-05-26'
     citation_key: '15'
@@ -500,7 +500,7 @@ cited_works:
       (15) Gijs, M. A.M., Bauer, G. E. W., Adv. Phys. 46, 285 (1997).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (15)'
+      location: 'References, entry (15)'
   - id: cw16
     added_date: '2026-05-26'
     citation_key: '16'
@@ -510,7 +510,7 @@ cited_works:
       (16) Ansermet, J.-Ph., J. Phys.: Cond. Mat. 10, 6027 (1998).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (16)'
+      location: 'References, entry (16)'
   - id: cw17
     added_date: '2026-05-26'
     citation_key: '17'
@@ -520,7 +520,7 @@ cited_works:
       (17) Bass, J., Pratt, W. P., Jr., J. Magn. Magn. Mat. 200, 274 (1999).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (17)'
+      location: 'References, entry (17)'
   - id: cw18
     added_date: '2026-05-26'
     citation_key: '18'
@@ -530,7 +530,7 @@ cited_works:
       (18) Fert, A., Piraux, L., J. Magn. Magn. Mat. 200, 338 (1999).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (18)'
+      location: 'References, entry (18)'
   - id: cw19
     added_date: '2026-05-26'
     citation_key: '19'
@@ -542,7 +542,7 @@ cited_works:
       and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.130.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 24, References (19)'
+      location: 'References, entry (19)'
   - id: cw20
     added_date: '2026-05-26'
     citation_key: '20'
@@ -554,7 +554,7 @@ cited_works:
       and Industrial Applications, ed. by U. Hartmann (Berlin: Springer, 2000), p.65.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (20)'
+      location: 'References, entry (20)'
   - id: cw21
     added_date: '2026-05-26'
     citation_key: '21'
@@ -566,7 +566,7 @@ cited_works:
       by K. H. J. Buschow (Amsterdam: Elsevier, 1999), p.1.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (21)'
+      location: 'References, entry (21)'
   - id: cw22
     added_date: '2026-05-26'
     citation_key: '22'
@@ -578,7 +578,7 @@ cited_works:
       Spaepen, Vol. 56 (Academic Press, 2001) pp.113-237.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (22)'
+      location: 'References, entry (22)'
   - id: cw23
     added_date: '2026-05-26'
     citation_key: '23'
@@ -590,7 +590,7 @@ cited_works:
       Worth, 1976).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (23)'
+      location: 'References, entry (23)'
   - id: cw24
     added_date: '2026-05-26'
     citation_key: '24'
@@ -602,7 +602,7 @@ cited_works:
       (Institute of Physics Publishing, Bristol, 1992), p. 253.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (24)'
+      location: 'References, entry (24)'
   - id: cw25
     added_date: '2026-05-26'
     citation_key: '25'
@@ -614,7 +614,7 @@ cited_works:
       Pennington, 1981).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (25)'
+      location: 'References, entry (25)'
   - id: cw26
     added_date: '2026-05-26'
     citation_key: '26'
@@ -624,7 +624,7 @@ cited_works:
       (26) Lashmore, D. S., Dariel, M. P., J. Electrochem. Soc. 135, 1218 (1988).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (26)'
+      location: 'References, entry (26)'
   - id: cw27
     added_date: '2026-05-26'
     citation_key: '27'
@@ -635,7 +635,7 @@ cited_works:
       (27) Ohring, M., The Materials Science of Thin Films (Academic, Boston, 1992).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (27)'
+      location: 'References, entry (27)'
   - id: cw28
     added_date: '2026-05-26'
     citation_key: '28'
@@ -646,7 +646,7 @@ cited_works:
       (1989).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (28)'
+      location: 'References, entry (28)'
   - id: cw29
     added_date: '2026-05-26'
     citation_key: '29'
@@ -656,7 +656,7 @@ cited_works:
       (29) Parkin, S. S. P., More, N., and Roche, K. P., Phys. Rev. Lett. 64, 2304 (1990).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (29)'
+      location: 'References, entry (29)'
   - id: cw30
     added_date: '2026-05-26'
     citation_key: '30'
@@ -666,7 +666,7 @@ cited_works:
       (30) Parkin, S. S. P., Bhadra, R., and Roche, K. P., Phys. Rev. Lett. 66, 2152 (1991).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (30)'
+      location: 'References, entry (30)'
   - id: cw31
     added_date: '2026-05-26'
     citation_key: '31'
@@ -676,7 +676,7 @@ cited_works:
       (31) Fert, A., Campbell, I. A., J. de Physique 32, C1-46 (1971).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (31)'
+      location: 'References, entry (31)'
   - id: cw32
     added_date: '2026-05-26'
     citation_key: '32'
@@ -687,7 +687,7 @@ cited_works:
       and Adv. Phys. 13, 325 (1964).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (32)'
+      location: 'References, entry (32)'
   - id: cw33
     added_date: '2026-05-26'
     citation_key: '33'
@@ -697,7 +697,7 @@ cited_works:
       (33) Pratt, W. P., Jr., et al., Phys. Rev. Lett. 66, 3060 (1991).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (33)'
+      location: 'References, entry (33)'
   - id: cw34
     added_date: '2026-05-26'
     citation_key: '34'
@@ -707,7 +707,7 @@ cited_works:
       (34) Dieny, B., et al. J. Appl. Phys. 69, 4774 (1991).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (34)'
+      location: 'References, entry (34)'
   - id: cw35
     added_date: '2026-05-26'
     citation_key: '35'
@@ -717,7 +717,7 @@ cited_works:
       (35) Piraux, L., et al., Appl. Phys. Lett. 65, 2484 (1994).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (35)'
+      location: 'References, entry (35)'
   - id: cw36
     added_date: '2026-05-26'
     citation_key: '36'
@@ -728,7 +728,7 @@ cited_works:
       (1994).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (36)'
+      location: 'References, entry (36)'
   - id: cw37
     added_date: '2026-05-26'
     citation_key: '37'
@@ -738,7 +738,7 @@ cited_works:
       (37) Tsoi, M., Jansen, A. G. M., Bass, J., J. Appl. Phys. 81, 5530 (1997).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (37)'
+      location: 'References, entry (37)'
   - id: cw38
     added_date: '2026-05-26'
     citation_key: '38'
@@ -749,7 +749,7 @@ cited_works:
       Birmingham, England, Jan. 22-23, 1997.
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (38)'
+      location: 'References, entry (38)'
   - id: cw39
     added_date: '2026-05-26'
     citation_key: '39'
@@ -759,7 +759,7 @@ cited_works:
       (39) Daughton, J. M., et al., IEEE Trans. Magn. 30, 4608 (1994).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 25, References (39)'
+      location: 'References, entry (39)'
   - id: cw40
     added_date: '2026-05-26'
     citation_key: '40'
@@ -769,7 +769,7 @@ cited_works:
       (40) Ji, Y., Chien, C. L., Stiles, M. D., Phys. Rev. Lett. 90, 106601 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (40)'
+      location: 'References, entry (40)'
   - id: cw41
     added_date: '2026-05-26'
     citation_key: '41'
@@ -780,7 +780,7 @@ cited_works:
       92, 27201 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (41)'
+      location: 'References, entry (41)'
   - id: cw42
     added_date: '2026-05-26'
     citation_key: '42'
@@ -791,7 +791,7 @@ cited_works:
       Lett. 84, 3149 (2000).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (42)'
+      location: 'References, entry (42)'
   - id: cw43
     added_date: '2026-05-26'
     citation_key: '43'
@@ -801,7 +801,7 @@ cited_works:
       (43) Grollier, J., et al., Appl. Phys. Lett. 78, 3663 (2001).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (43)'
+      location: 'References, entry (43)'
   - id: cw44
     added_date: '2026-05-26'
     citation_key: '44'
@@ -812,7 +812,7 @@ cited_works:
       (2003)
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (44)'
+      location: 'References, entry (44)'
   - id: cw45
     added_date: '2026-05-26'
     citation_key: '45'
@@ -823,7 +823,7 @@ cited_works:
       Express Lett. 43, L825 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (45)'
+      location: 'References, entry (45)'
   - id: cw46
     added_date: '2026-05-26'
     citation_key: '46'
@@ -833,7 +833,7 @@ cited_works:
       (46) Dieny, B., et al., Phys.Rev.B 43, 1297 (1991).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (46)'
+      location: 'References, entry (46)'
   - id: cw47
     added_date: '2026-05-26'
     citation_key: '47'
@@ -844,7 +844,7 @@ cited_works:
       12327 (2000)
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (47)'
+      location: 'References, entry (47)'
   - id: cw48
     added_date: '2026-05-26'
     citation_key: '48'
@@ -854,7 +854,7 @@ cited_works:
       (48) Braganca, P.M., et al., Appl. Phys. Lett. 87, 112507 (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (48)'
+      location: 'References, entry (48)'
   - id: cw49
     added_date: '2026-05-26'
     citation_key: '49'
@@ -864,7 +864,7 @@ cited_works:
       (49) Rippard, W. H., et al., Phys. Rev. Lett. 95, 067203 (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (49)'
+      location: 'References, entry (49)'
   - id: cw50
     added_date: '2026-05-26'
     citation_key: '50'
@@ -874,7 +874,7 @@ cited_works:
       (50) Kiselev, S. I., et al., Nature 425, 380 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (50)'
+      location: 'References, entry (50)'
   - id: cw51
     added_date: '2026-05-26'
     citation_key: '51'
@@ -884,7 +884,7 @@ cited_works:
       (51) Krivorotov, I. N., et al., Science 307, 228-231 (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (51)'
+      location: 'References, entry (51)'
   - id: cw52
     added_date: '2026-05-26'
     citation_key: '52'
@@ -894,7 +894,7 @@ cited_works:
       (52) Acremann, Y., et al., Phys. Rev. Lett. 96, 217202 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (52)'
+      location: 'References, entry (52)'
   - id: cw53
     added_date: '2026-05-26'
     citation_key: '53'
@@ -904,7 +904,7 @@ cited_works:
       (53) Kilcoyne, A. L. D., et al., J. Synchrotron Radiat. 10, 125 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (53)'
+      location: 'References, entry (53)'
   - id: cw54
     added_date: '2026-05-26'
     citation_key: '54'
@@ -914,7 +914,7 @@ cited_works:
       (54) Stöhr, J., et al., Science 259, 658 (1993).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (54)'
+      location: 'References, entry (54)'
   - id: cw55
     added_date: '2026-05-26'
     citation_key: '55'
@@ -925,7 +925,7 @@ cited_works:
       100406 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (55)'
+      location: 'References, entry (55)'
   - id: cw56
     added_date: '2026-05-26'
     citation_key: '56'
@@ -936,7 +936,7 @@ cited_works:
       465202 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (56)'
+      location: 'References, entry (56)'
   - id: cw57
     added_date: '2026-05-26'
     citation_key: '57'
@@ -946,7 +946,7 @@ cited_works:
       (57) Schneider, T., et al., Appl. Phys. Lett. 92, 022505 (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (57)'
+      location: 'References, entry (57)'
   - id: cw58
     added_date: '2026-05-26'
     citation_key: '58'
@@ -956,7 +956,7 @@ cited_works:
       (58) Driskill-Smith, A. A. G., Huai, Y., Future Fab Intl. 23, 28 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (58)'
+      location: 'References, entry (58)'
   - id: cw59
     added_date: '2026-05-26'
     citation_key: '59'
@@ -966,7 +966,7 @@ cited_works:
       (59) Berger, L., J. Appl. Phys. 49, 2156 (1978).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (59)'
+      location: 'References, entry (59)'
   - id: cw60
     added_date: '2026-05-26'
     citation_key: '60'
@@ -976,7 +976,7 @@ cited_works:
       (60) Berger, L., J. Appl. Phys. 55, 1954 (1984).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (60)'
+      location: 'References, entry (60)'
   - id: cw61
     added_date: '2026-05-26'
     citation_key: '61'
@@ -986,7 +986,7 @@ cited_works:
       (61) Berger, L., Phys. Rev. B 33, 1572 (1986).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 26, References (61)'
+      location: 'References, entry (61)'
   - id: cw62
     added_date: '2026-05-26'
     citation_key: '62'
@@ -996,7 +996,7 @@ cited_works:
       (62) Berger, L., J. Appl. Phys. 63, 1663 (1988).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (62)'
+      location: 'References, entry (62)'
   - id: cw63
     added_date: '2026-05-26'
     citation_key: '63'
@@ -1006,7 +1006,7 @@ cited_works:
       (63) Freitas, P. P., Berger, L., J. Appl. Phys. 57, 1266 (1985).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (63)'
+      location: 'References, entry (63)'
   - id: cw64
     added_date: '2026-05-26'
     citation_key: '64'
@@ -1016,7 +1016,7 @@ cited_works:
       (64) Hung, C.-Y., Berger, L., J. Appl. Phys. 63, 4276 (1988).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (64)'
+      location: 'References, entry (64)'
   - id: cw65
     added_date: '2026-05-26'
     citation_key: '65'
@@ -1026,7 +1026,7 @@ cited_works:
       (65) Hung, C.-Y., Berger, L., Shih, C.Y., J. Appl. Phys. 67, 5941 (1990).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (65)'
+      location: 'References, entry (65)'
   - id: cw66
     added_date: '2026-05-26'
     citation_key: '66'
@@ -1036,7 +1036,7 @@ cited_works:
       (66) Yamanouchi, M., Chiba, D., Matsukura, F., Ohno, H., Nature 428, 539 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (66)'
+      location: 'References, entry (66)'
   - id: cw67
     added_date: '2026-05-26'
     citation_key: '67'
@@ -1046,7 +1046,7 @@ cited_works:
       (67) Ravelosona, D., et al., Phys. Rev. Lett. 95, 117203 (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (67)'
+      location: 'References, entry (67)'
   - id: cw68
     added_date: '2026-05-26'
     citation_key: '68'
@@ -1056,7 +1056,7 @@ cited_works:
       (68) Tsoi, M., Fontana, R. E., Parkin, S. S. P., Appl. Phys. Lett. 83, 2617 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (68)'
+      location: 'References, entry (68)'
   - id: cw69
     added_date: '2026-05-26'
     citation_key: '69'
@@ -1066,7 +1066,7 @@ cited_works:
       (69) Grollier, J., et al., Appl. Phys. Lett. 83, 509 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (69)'
+      location: 'References, entry (69)'
   - id: cw70
     added_date: '2026-05-26'
     citation_key: '70'
@@ -1077,7 +1077,7 @@ cited_works:
       (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (70)'
+      location: 'References, entry (70)'
   - id: cw71
     added_date: '2026-05-26'
     citation_key: '71'
@@ -1088,7 +1088,7 @@ cited_works:
       2038 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (71)'
+      location: 'References, entry (71)'
   - id: cw72
     added_date: '2026-05-26'
     citation_key: '72'
@@ -1098,7 +1098,7 @@ cited_works:
       (72) Hayashi, M., et al., Phys. Rev. Lett. 96, 207205 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (72)'
+      location: 'References, entry (72)'
   - id: cw73
     added_date: '2026-05-26'
     citation_key: '73'
@@ -1108,7 +1108,7 @@ cited_works:
       (73) Hayashi, M., et al., Nat. Phys. 3, 21 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (73)'
+      location: 'References, entry (73)'
   - id: cw74
     added_date: '2026-05-26'
     citation_key: '74'
@@ -1118,7 +1118,7 @@ cited_works:
       (74) Klaui, M., et al., Appl. Phys. Lett. 83, 105 (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (74)'
+      location: 'References, entry (74)'
   - id: cw75
     added_date: '2026-05-26'
     citation_key: '75'
@@ -1129,7 +1129,7 @@ cited_works:
       (2003).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (75)'
+      location: 'References, entry (75)'
   - id: cw76
     added_date: '2026-05-26'
     citation_key: '76'
@@ -1140,7 +1140,7 @@ cited_works:
       Lett. 65, 526 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (76)'
+      location: 'References, entry (76)'
   - id: cw77
     added_date: '2026-05-26'
     citation_key: '77'
@@ -1150,7 +1150,7 @@ cited_works:
       (77) Laufenberg, M., et al., Phys. Rev. Lett. 97, 046602 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (77)'
+      location: 'References, entry (77)'
   - id: cw78
     added_date: '2026-05-26'
     citation_key: '78'
@@ -1160,7 +1160,7 @@ cited_works:
       (78) Thomas, L., et al., Nature 443, 197 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (78)'
+      location: 'References, entry (78)'
   - id: cw79
     added_date: '2026-05-26'
     citation_key: '79'
@@ -1170,7 +1170,7 @@ cited_works:
       (79) Yamaguchi, A., et al., Phys. Rev. Lett. 92, 077205 (2004).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (79)'
+      location: 'References, entry (79)'
   - id: cw80
     added_date: '2026-05-26'
     citation_key: '80'
@@ -1180,7 +1180,7 @@ cited_works:
       (80) Yamaguchi, A., et al., Phys. Rev. Lett. 96, 179904 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (80)'
+      location: 'References, entry (80)'
   - id: cw81
     added_date: '2026-05-26'
     citation_key: '81'
@@ -1190,7 +1190,7 @@ cited_works:
       (81) Klaui, M., et al., Phys. Rev. Lett. 95, 026601 (2005).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (81)'
+      location: 'References, entry (81)'
   - id: cw82
     added_date: '2026-05-26'
     citation_key: '82'
@@ -1200,7 +1200,7 @@ cited_works:
       (82) Meier, G., et al., Phys. Rev. Lett. 98, 187202 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (82)'
+      location: 'References, entry (82)'
   - id: cw83
     added_date: '2026-05-26'
     citation_key: '83'
@@ -1210,7 +1210,7 @@ cited_works:
       (83) Parkin, S. S. P., Hayashi, M., Thomas, L., Science 320, 190 (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (83)'
+      location: 'References, entry (83)'
   - id: cw84
     added_date: '2026-05-26'
     citation_key: '84'
@@ -1220,7 +1220,7 @@ cited_works:
       (84) Núñez, A. S., et al., Phys. Rev. B 73, 214426 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 27, References (84)'
+      location: 'References, entry (84)'
   - id: cw85
     added_date: '2026-05-26'
     citation_key: '85'
@@ -1230,7 +1230,7 @@ cited_works:
       (85) Xu, Y., Wang, S., Xia, K., Phys. Rev. Lett. 100, 226602 (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (85)'
+      location: 'References, entry (85)'
   - id: cw86
     added_date: '2026-05-26'
     citation_key: '86'
@@ -1240,7 +1240,7 @@ cited_works:
       (86) Gomonay, H., Loktev, V., Low Temp. Phys. 34, 198 (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (86)'
+      location: 'References, entry (86)'
   - id: cw87
     added_date: '2026-05-26'
     citation_key: '87'
@@ -1250,7 +1250,7 @@ cited_works:
       (87) Wei, Z., Sharma, A., Bass, J., Tsoi, M., J. Appl. Phys. 105, 07D113 (2009).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (87)'
+      location: 'References, entry (87)'
   - id: cw88
     added_date: '2026-05-26'
     citation_key: '88'
@@ -1260,7 +1260,7 @@ cited_works:
       (88) Meiklejohn, W. H., Bean, C. P., Phys. Rev. 102, 1413 (1956).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (88)'
+      location: 'References, entry (88)'
   - id: cw89
     added_date: '2026-05-26'
     citation_key: '89'
@@ -1272,7 +1272,7 @@ cited_works:
       (Springer Series in Solid-State Sciences, Vol. 152, Springer, 2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (89)'
+      location: 'References, entry (89)'
   - id: cw90
     added_date: '2026-05-26'
     citation_key: '90'
@@ -1283,7 +1283,7 @@ cited_works:
       054416 (2006).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (90)'
+      location: 'References, entry (90)'
   - id: cw91
     added_date: '2026-05-26'
     citation_key: '91'
@@ -1293,7 +1293,7 @@ cited_works:
       (91) Wei, Z., et al., Phys. Rev. Lett. 98, 116603 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (91)'
+      location: 'References, entry (91)'
   - id: cw92
     added_date: '2026-05-26'
     citation_key: '92'
@@ -1303,7 +1303,7 @@ cited_works:
       (92) Urazhdin, S., Anthony, N., Phys. Rev. Lett. 99, 046602 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (92)'
+      location: 'References, entry (92)'
   - id: cw93
     added_date: '2026-05-26'
     citation_key: '93'
@@ -1314,7 +1314,7 @@ cited_works:
       122504 (2007).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (93)'
+      location: 'References, entry (93)'
   - id: cw94
     added_date: '2026-05-26'
     citation_key: '94'
@@ -1324,7 +1324,7 @@ cited_works:
       (94) Dai, N. V., et al., Phys. Rev. B 77, 132406 (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (94)'
+      location: 'References, entry (94)'
   - id: cw95
     added_date: '2026-05-26'
     citation_key: '95'
@@ -1335,7 +1335,7 @@ cited_works:
       (2008).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (95)'
+      location: 'References, entry (95)'
   - id: cw96
     added_date: '2026-05-26'
     citation_key: '96'
@@ -1346,7 +1346,7 @@ cited_works:
       (2009).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (96)'
+      location: 'References, entry (96)'
   - id: cw97
     added_date: '2026-05-26'
     citation_key: '97'
@@ -1357,4 +1357,4 @@ cited_works:
       (97) Moore, G. E., Electronics Magazine (McGraw Hill, New York, 1965).
     source:
       path: government/dird-10-metallic-spintronics-20100323.pdf
-      location: 'p. 28, References (97)'
+      location: 'References, entry (97)'

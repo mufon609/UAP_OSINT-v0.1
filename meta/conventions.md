@@ -1376,9 +1376,12 @@ Fuel"`, `References, entry [8]`). The content anchor *is* the navigation handle
 viewer — and, unlike an unverifiable `p. N`, it cannot silently drift onto the
 wrong page. Page-precision was the only thing a sibling `p. N` ever offered and
 it was never checked; a content anchor is self-locating and honest about what
-the markerless extract supports. (Sibling-backed nodes built under the earlier
-convention may still carry `p. N` refs; those remain valid — the form checks
-still pass — and are not mass-migrated.)
+the markerless extract supports. (The sibling-backed DIRD document family was
+migrated to content anchors so the family reads uniformly; a `p. N` ref on a
+sibling-backed source is therefore a defect to convert, not a tolerated legacy
+form. The form checks still pass on a stray `p. N`, so the conversion rests on
+contributor/grep discipline, not a mechanical gate — `quote_location_page` skips
+sibling-backed sources by design.)
 
 A source that genuinely has no PDF pages uses a non-page anchor: an HTML filing
 or single-page memo uses `¶N` / a section heading, an audio/video transcript

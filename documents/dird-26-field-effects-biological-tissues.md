@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 1, ¶ title |
+| Location | title-page identity block |
 
 ---
 
@@ -57,7 +55,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 1, ¶ banner |
+| Location | Defense Intelligence Reference Document banner |
 
 ---
 
@@ -69,7 +67,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 1, ¶ date block |
+| Location | date block |
 
 ---
 
@@ -87,7 +85,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 3, ¶ prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -99,7 +97,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -111,7 +109,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -123,7 +121,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 6, ¶ PREFACE |
+| Location | section "Preface", ¶1 |
 
 ---
 
@@ -135,7 +133,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 6, ¶ PREFACE |
+| Location | section "Preface", exposure-characterization ¶ |
 
 ---
 
@@ -147,7 +145,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 6, ¶ PREFACE |
+| Location | section "Preface", medical-literature-review ¶ |
 
 ---
 
@@ -159,7 +157,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 6, ¶ SUMMARY |
+| Location | section "Summary", ¶1 |
 
 ---
 
@@ -171,7 +169,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 7, ¶ Summary bullet |
+| Location | section "Summary", deployment-hypothesis bullet |
 
 ---
 
@@ -183,7 +181,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 8, ¶ Summary final bullet |
+| Location | section "Summary", unconventional-energy-systems bullet |
 
 ---
 
@@ -195,7 +193,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 9, ¶ A |
+| Location | section "What is addressed in this review", ¶3 |
 
 ---
 
@@ -207,7 +205,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 15 |
+| Location | section "Field effects and hearing / communications", 915 MHz seizure ¶ |
 
 ---
 
@@ -219,7 +217,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 15 |
+| Location | section "Field effects and hearing / communications", stun-effect-threshold ¶ |
 
 ---
 
@@ -231,7 +229,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 16, ¶ Ch. Three |
+| Location | section "Chapter Three: How Damage Occurs", ¶1 |
 
 ---
 
@@ -243,7 +241,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 16 |
+| Location | section "Chapter Three: How Damage Occurs", absorption-by-tissue ¶ |
 
 ---
 
@@ -255,7 +253,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 17, ¶ A |
+| Location | section "The effects that burn", heat-perception-threshold ¶ |
 
 ---
 
@@ -267,7 +265,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 20, ¶ C |
+| Location | section "Some thoughts on neurological correlates", antenna-engineers-vs-Cash-Landrum ¶ |
 
 ---
 
@@ -279,7 +277,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 25, ¶ Ch. Five |
+| Location | section "Chapter Five: Cognitive and Neural Injury Mechanisms and Effects", reverse-engineer-purpose ¶ |
 
 ---
 
@@ -291,7 +289,7 @@ The most important bandwidth of interest is from about 300 kHz to 300 GHz, and t
 |---|---|
 | Attributed to | DIRD #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues), 11 March 2010 |
 | Source | [archived source](../sources/government/dird-26-field-effects-human-biological-tissues-2010.pdf) |
-| Location | p. 31, ¶ Appendix A |
+| Location | section "Appendix A: Schuessler Catalog of UFO-Related Human Physiological Effects", ¶1 |
 
 ---
 

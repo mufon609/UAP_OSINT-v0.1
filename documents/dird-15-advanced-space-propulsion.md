@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 1, ¶ title |
+| Location | title-page identity block |
 
 ---
 
@@ -63,7 +61,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 2, ¶ prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -75,7 +73,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 2, ¶ Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -87,7 +85,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 4, ¶1 |
+| Location | section "Preface and Introduction", ¶1 |
 
 ---
 
@@ -99,7 +97,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 4, ¶2 |
+| Location | section "Preface and Introduction", ¶2 |
 
 ---
 
@@ -111,7 +109,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 5, ¶ closing |
+| Location | section "Preface and Introduction", closing ¶ |
 
 ---
 
@@ -123,7 +121,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 6, ¶2 |
+| Location | section "I. Spacetime Modification – Metric Tensor Approach", ¶2 |
 
 ---
 
@@ -135,7 +133,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 13, ¶ Velocity of Light/Craft |
+| Location | section "Velocity of Light/Craft in Spacetime-Altered Regions", ¶2 |
 
 ---
 
@@ -147,7 +145,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 15, ¶ Gravity/Antigravity/Propulsion Effects |
+| Location | section "Gravity/Antigravity/Propulsion Effects" (Alcubierre warp-drive exemplar, "surfing on a wave") |
 
 ---
 
@@ -159,7 +157,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 15, ¶ Gravity/Antigravity/Propulsion Effects |
+| Location | section "Gravity/Antigravity/Propulsion Effects" (warp-bubble exotic-matter requirement) |
 
 ---
 
@@ -171,7 +169,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 16, ¶ Discussion opening |
+| Location | section "IV. Discussion", ¶1 (opening) |
 
 ---
 
@@ -183,7 +181,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 16, ¶ Discussion |
+| Location | section "IV. Discussion" (ideal-craft synthesis, right-hand column of Table 1) |
 
 ---
 
@@ -195,7 +193,7 @@ The analysis is a model-independent, "general relativity for engineers" approach
 |---|---|
 | Attributed to | Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — DIA AAWSAP technical report, 29 March 2010 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 17, ¶ Discussion |
+| Location | section "IV. Discussion" (ideal-craft feature list, sentence continuation after the page boundary) |
 
 ---
 

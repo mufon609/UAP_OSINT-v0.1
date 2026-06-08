@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-19-antigravity-aerospace-20100330.pdf](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
 | Content Block | Pages 10 and 30 were content-blocked for the VLM; PaddleOCR-filled. |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -50,7 +48,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 1, title page |
+| Location | title-page identity block |
 
 ---
 
@@ -70,7 +68,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 3, Prepared by / Author block (front matter, folio ii) |
+| Location | Prepared by / Author block (front matter, folio ii) |
 
 ---
 
@@ -82,7 +80,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 3, Administrative Note (front matter, folio ii) |
+| Location | Administrative Note (AAWSA Program paragraph) (front matter, folio ii) |
 
 ---
 
@@ -94,7 +92,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 3, Administrative Note (front matter, folio ii) |
+| Location | Administrative Note (Copyright Warning) (front matter, folio ii) |
 
 ---
 
@@ -106,7 +104,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 6, Foreword, ¶1 (front matter, folio v) |
+| Location | Foreword, ¶1 (front matter, folio v) |
 
 ---
 
@@ -118,7 +116,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 6, Foreword, ¶2 (front matter, folio v) |
+| Location | Foreword, ¶2 (front matter, folio v) |
 
 ---
 
@@ -130,7 +128,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 7, ¶ Introduction (opening) |
+| Location | section "I. Introduction" (opening) |
 
 ---
 
@@ -142,7 +140,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 7, ¶ Introduction (catalogue of topics) |
+| Location | section "I. Introduction" (catalogue of topics) |
 
 ---
 
@@ -154,7 +152,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 7, ¶ Introduction (caveat) |
+| Location | section "I. Introduction" (caveat) |
 
 ---
 
@@ -166,7 +164,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 8, ¶ Negating Newtonian Gravity |
+| Location | section "NEGATING NEWTONIAN GRAVITY" |
 
 ---
 
@@ -178,7 +176,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 10, ¶ Antigravity via Gravitomagnetic Forces / Historical Foundations |
+| Location | section "Historical Foundations" (under "ANTIGRAVITY VIA GRAVITOMAGNETIC FORCES") |
 
 ---
 
@@ -190,7 +188,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 10, ¶ Antigravity via Gravitomagnetic Forces |
+| Location | section "ANTIGRAVITY VIA GRAVITOMAGNETIC FORCES" |
 
 ---
 
@@ -202,7 +200,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 10, ¶ Forward's Dipole Gravitational Field Generator |
+| Location | section "Forward's Dipole Gravitational Field Generator" |
 
 ---
 
@@ -214,7 +212,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 11, Figure 1 caption |
+| Location | Figure 1 caption (under section "Forward's Dipole Gravitational Field Generator") |
 
 ---
 
@@ -226,7 +224,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 12, Figure 2 caption |
+| Location | Figure 2 caption (under section "Forward's Dipole Gravitational Field Generator") |
 
 ---
 
@@ -238,7 +236,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 12, ¶ Forward's Dipole Gravitational Field Generator |
+| Location | section "Forward's Dipole Gravitational Field Generator" (Equation (5) scale estimate) |
 
 ---
 
@@ -250,7 +248,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 13, Figure 3 caption |
+| Location | Figure 3 caption (under section "Forward's Dipole Gravitational Field Generator") |
 
 ---
 
@@ -262,7 +260,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 13, ¶ Felber's Relativistic Antigravity Effect |
+| Location | section "FELBER'S RELATIVISTIC ANTIGRAVITY EFFECT" |
 
 ---
 
@@ -274,7 +272,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 14, ¶ Felber's Relativistic Antigravity Effect (assessment) |
+| Location | section "FELBER'S RELATIVISTIC ANTIGRAVITY EFFECT" (assessment) |
 
 ---
 
@@ -286,7 +284,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 15, ¶ Negative Energy-Induced Antigravity |
+| Location | section "NEGATIVE ENERGY-INDUCED ANTIGRAVITY" |
 
 ---
 
@@ -298,7 +296,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 18, ¶ Toy Model Estimate for Negative Energy-Induced Antigravity |
+| Location | section "Toy Model Estimate for Negative Energy-Induced Antigravity" |
 
 ---
 
@@ -310,7 +308,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 20, ¶ Vacuum Energy of Einstein's Cosmological Constant |
+| Location | section "Vacuum Energy of Einstein's Cosmological Constant" |
 
 ---
 
@@ -322,7 +320,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 23, ¶ Antigravity Propulsion Application of Dark/Vacuum Energy |
+| Location | section "Antigravity Propulsion Application of Dark/Vacuum Energy" |
 
 ---
 
@@ -334,7 +332,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 24, ¶ IV. Quantum Antigravity Propulsion Concepts |
+| Location | section "IV. Quantum Antigravity Propulsion Concepts" (1984 Forward co-derivation) |
 
 ---
 
@@ -346,7 +344,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 24, ¶ IV. Quantum Antigravity Propulsion Concepts |
+| Location | section "IV. Quantum Antigravity Propulsion Concepts" (Equation (23) magnitude verdict) |
 
 ---
 
@@ -358,7 +356,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 25, ¶ Antigravity via Quantum Vacuum Zero-Point Fluctuation Force |
+| Location | section "ANTIGRAVITY VIA QUANTUM VACUUM ZERO-POINT FLUCTUATION FORCE" |
 
 ---
 
@@ -370,7 +368,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 26, ¶ Antigravity via Quantum Vacuum Zero-Point Fluctuation Force (assessment) |
+| Location | section "ANTIGRAVITY VIA QUANTUM VACUUM ZERO-POINT FLUCTUATION FORCE" (assessment) |
 
 ---
 
@@ -382,7 +380,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 27, ¶ Antigravity via Nonretarded Quantum Interatomic Dispersion Force |
+| Location | section "ANTIGRAVITY VIA NONRETARDED QUANTUM INTERATOMIC DISPERSION FORCE" (Pinto net-lifting-force introduction) |
 
 ---
 
@@ -394,7 +392,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 30, ¶ Antigravity via Nonretarded Quantum Interatomic Dispersion Force |
+| Location | section "ANTIGRAVITY VIA NONRETARDED QUANTUM INTERATOMIC DISPERSION FORCE" (proposed levitation propulsion thruster) |
 
 ---
 
@@ -406,7 +404,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 30, ¶ V. Conclusion: The Way Forward (opening) |
+| Location | section "V. Conclusion: The Way Forward" (opening) |
 
 ---
 
@@ -418,7 +416,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 30, ¶ V. Conclusion: The Way Forward |
+| Location | section "V. Conclusion: The Way Forward" (mechanical-embodiment barrier) |
 
 ---
 
@@ -430,7 +428,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 31, ¶ V. Conclusion: The Way Forward (continued) |
+| Location | section "V. Conclusion: The Way Forward" (continued) |
 
 ---
 
@@ -442,7 +440,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 31, ¶ Antigravity via Dipole Gravitational Field Generators (Way Forward item 1) |
+| Location | section "V. Conclusion: The Way Forward", "Antigravity via Dipole Gravitational Field Generators" item |
 
 ---
 
@@ -454,7 +452,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 33, ¶ Trapping and Storing Negative Energy (Way Forward) |
+| Location | section "V. Conclusion: The Way Forward", "Trapping and Storing Negative Energy" item |
 
 ---
 
@@ -466,7 +464,7 @@ The Conclusion: The Way Forward states that the report has reviewed and analyzed
 |---|---|
 | Attributed to | Antigravity for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 30 March 2010 |
 | Source | [archived source](../sources/government/dird-19-antigravity-aerospace-20100330.pdf) |
-| Location | p. 37, ¶ Quantum Vacuum Field Stress: Negative Energy From the Casimir Effect |
+| Location | section "QUANTUM VACUUM FIELD STRESS: NEGATIVE ENERGY FROM THE CASIMIR EFFECT" (Appendix A) |
 
 ---
 

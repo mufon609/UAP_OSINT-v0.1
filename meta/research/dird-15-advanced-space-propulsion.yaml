@@ -34,7 +34,7 @@ quotes:
     Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 1, ¶ title'
+    location: 'title-page identity block'
   significance: Document title — verbatim
   statement_date: '2010-03-29'
 - id: q2
@@ -55,7 +55,7 @@ quotes:
     Austin, Texas 78759
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 2, ¶ prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: Prepared-by and author provenance — DIA Defense Warning Office (DWO-3) prepared, H.E. Puthoff of EarthTech International authored
   statement_date: '2010-03-29'
 - id: q3
@@ -64,7 +64,7 @@ quotes:
     This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, Defense Warning Office's Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to James T. Lacatski, D.Eng., AAWSA Program Manager, Defense Intelligence Agency, ATTN: CLAR/DWO-3, Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 2, ¶ Administrative Note'
+    location: 'Administrative Note (AAWSA Program paragraph)'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series and James T. Lacatski, D.Eng. as AAWSA Program Manager
   statement_date: '2010-03-29'
 - id: q4
@@ -73,7 +73,7 @@ quotes:
     A theme that has come to the fore in advanced planning for long-range space exploration in the future is the concept that empty space itself (the quantum vacuum, or spacetime metric) might be engineered to provide energy/thrust for future space vehicles. Although far reaching, such a proposal is solidly grounded in modern physical theory, and therefore the possibility that matter/vacuum interactions might be engineered for spaceflight applications is not a priori ruled out (Reference 1).
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 4, ¶1'
+    location: 'section "Preface and Introduction", ¶1'
   significance: Thesis statement — empty space might be engineered to provide energy/thrust for future space vehicles
   statement_date: '2010-03-29'
 - id: q5
@@ -82,7 +82,7 @@ quotes:
     The concept of "engineering the vacuum" found its first expression in the mainstream physics literature when it was introduced by Nobelist T. D. Lee in his textbook Particle Physics and Introduction to Field Theory (Reference 7). There he stated, "The experimental method to alter the properties of the vacuum may be called vacuum engineering.... If indeed we are able to alter the vacuum, then we may encounter new phenomena, totally unexpected."
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 4, ¶2'
+    location: 'section "Preface and Introduction", ¶2'
   significance: Legitimization of the vacuum-engineering concept — traces it to Nobelist T. D. Lee's textbook
   statement_date: '2010-03-29'
 - id: q6
@@ -91,7 +91,7 @@ quotes:
     This paper introduces the underlying mathematical platform for investigating spacetime structure, the metric tensor approach. It then outlines the attendant physical effects that derive from alterations in the spacetime structure. Finally, the paper examines these effects as they would be exhibited in the presence of advanced aerospace craft technologies based on spacetime modification.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 5, ¶ closing'
+    location: 'section "Preface and Introduction", closing ¶'
   significance: Roadmap of the paper — metric tensor approach, attendant physical effects, advanced aerospace craft technologies
   statement_date: '2010-03-29'
 - id: q7
@@ -100,7 +100,7 @@ quotes:
     As a mathematical evaluation tool, the metric tensor that describes the measurement of spacetime intervals is used. Such an approach, well known from studies in general relativity (GR), has the advantage of being model independent—that is, it does not depend on knowledge of the specific mechanisms or dynamics that result in spacetime alterations but rather only assumes that a technology exists that can control and manipulate (that is, engineer) the spacetime metric to advantage.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 6, ¶2'
+    location: 'section "I. Spacetime Modification – Metric Tensor Approach", ¶2'
   significance: Methodological core — the model-independent metric tensor approach assumes a technology exists that can engineer the spacetime metric
   statement_date: '2010-03-29'
 - id: q8
@@ -109,7 +109,7 @@ quotes:
     Given that velocities in general in different coordinate systems scale as does the velocity of light—that is, v → √(g_00/-g_11) v —for exotic propulsion an engineered spacetime metric can in principle establish a condition in which the trajectory of a craft approaching the velocity of light in its own frame would be observed from an exterior frame to exceed light speed—that is, exhibit motion at superluminal speed. This opens up the possibility of transport at superluminal velocities (as measured by an external observer) without violation of the velocity-of-light constraint within the spacetime-altered region, a feature attractive for interstellar travel.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 13, ¶ Velocity of Light/Craft'
+    location: 'section "Velocity of Light/Craft in Spacetime-Altered Regions", ¶2'
   significance: Superluminal-transport mechanism — engineered metric permits apparent faster-than-light travel to an external observer without locally violating the velocity-of-light constraint
   statement_date: '2010-03-29'
 - id: q9
@@ -118,7 +118,7 @@ quotes:
     As one exemplar, consider Alcubierre's formulation of a "warp drive," a spacetime metric solution of Einstein's GR field equation (References 2, 22). Alcubierre derived a spacetime metric motivated by cosmological inflation that would allow arbitrarily short travel times between two distant points in space. The behavior of the warp drive metric provides for the simultaneous expansion of space behind the spacecraft and a corresponding contraction of space in front of the spacecraft (see Figure 3). The warp drive spacecraft would thus appear to be "surfing on a wave" of spacetime geometry.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 15, ¶ Gravity/Antigravity/Propulsion Effects'
+    location: 'section "Gravity/Antigravity/Propulsion Effects" (Alcubierre warp-drive exemplar, "surfing on a wave")'
   significance: Alcubierre warp drive exemplar — expansion of space behind and contraction in front of the craft, "surfing on a wave" of spacetime geometry
   statement_date: '2010-03-29'
 - id: q10
@@ -127,7 +127,7 @@ quotes:
     In order to implement a warp drive, one would have to construct a "warp bubble" that surrounded the spacecraft by generating a thin shell or surface layer of exotic matter—that is, a quantum field having negative energy and/or negative pressure. Although the technical requirements for such are unlikely to be met in the foreseeable future (Reference 22), the exercise nonetheless serves as a good example for showcasing attributes associated with manipulation of the spacetime metric at will.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 15, ¶ Gravity/Antigravity/Propulsion Effects'
+    location: 'section "Gravity/Antigravity/Propulsion Effects" (warp-bubble exotic-matter requirement)'
   significance: Warp-bubble requirement — a shell of exotic matter with negative energy and/or negative pressure, unlikely to be met in the foreseeable future
   statement_date: '2010-03-29'
 - id: q11
@@ -136,7 +136,7 @@ quotes:
     This paper has considered the possibility—even likelihood—that future developments with regard to advanced aerospace technologies will trend in the direction of manipulating the underlying spacetime structure of the vacuum of space itself by processes that can be called vacuum engineering or metric engineering. Far from being simply a fanciful concept, a significant literature exists in peer-reviewed, Tier 1 physics publications in which the topic is explored in detail.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 16, ¶ Discussion opening'
+    location: 'section "IV. Discussion", ¶1 (opening)'
   significance: Discussion thesis — advanced aerospace technologies will trend toward vacuum/metric engineering; the topic has a significant peer-reviewed literature
   statement_date: '2010-03-29'
 - id: q12
@@ -145,7 +145,7 @@ quotes:
     Of particular interest with regard to innovative forms of advanced aerospace craft are the features tabulated in the right-hand column of Table 1, features that presumably describe an ideal craft for interstellar travel: an ability to travel at superluminal speeds
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 16, ¶ Discussion'
+    location: 'section "IV. Discussion" (ideal-craft synthesis, right-hand column of Table 1)'
   significance: Ideal-craft synthesis — the right-hand column of Table 1 presumably describes an ideal craft for interstellar travel
   statement_date: '2010-03-29'
 - id: q13
@@ -154,7 +154,7 @@ quotes:
     relative to the reference frame of background space, energy bonds of materials strengthened (that is, hardened) relative to the background environment, a decrease in effective mass vis-à-vis the environment, an accelerated timeframe that would permit rapid trajectory changes relative to the background rest frame without undue internal stress, and the generation of gravity-like forces of arbitrary geometry—all on the basis of restructuring the vacuum spacetime variables.
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 17, ¶ Discussion'
+    location: 'section "IV. Discussion" (ideal-craft feature list, sentence continuation after the page boundary)'
   significance: Ideal-craft feature list (continued) — hardened materials, decreased effective mass, accelerated timeframe, and arbitrary gravity-like forces from restructuring the vacuum spacetime variables
   statement_date: '2010-03-29'
 cited_works:
@@ -168,7 +168,7 @@ cited_works:
       ^1 See, for example, a series of essays in the compendium Frontiers of Propulsion Science, Eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, Virginia (2009).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^1'
+      location: 'References, entry ^1'
   - id: cw2
     added_date: '2026-05-24'
     citation_key: '2'
@@ -179,7 +179,7 @@ cited_works:
       ^2 M. Alcubierre, "The warp drive: Hyper-fast travel within general relativity," Class. Quantum Grav. 11, p. L73 (1994).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^2'
+      location: 'References, entry ^2'
   - id: cw3
     added_date: '2026-05-24'
     citation_key: '3'
@@ -190,7 +190,7 @@ cited_works:
       ^3 H. E. Puthoff, "SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview," Physics Essays 9, p. 156 (1996).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^3'
+      location: 'References, entry ^3'
   - id: cw4
     added_date: '2026-05-24'
     citation_key: '4'
@@ -201,7 +201,7 @@ cited_works:
       ^4 M. S. Morris and K. S. Thorne, "Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity," Am. J. Phys. 56, pp. 395-412 (1988).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^4'
+      location: 'References, entry ^4'
   - id: cw5
     added_date: '2026-05-24'
     citation_key: '5'
@@ -212,7 +212,7 @@ cited_works:
       ^5 M. Visser, Lorentzian Wormholes: From Einstein to Hawking, AIP Press, New York, 1995.
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^5'
+      location: 'References, entry ^5'
   - id: cw6
     added_date: '2026-05-24'
     citation_key: '6'
@@ -223,7 +223,7 @@ cited_works:
       ^6 M. S. Morris, K. S. Thorne and U. Yurtsever, "Wormholes, time machines, and the weak energy condition," Phys. Rev. Lett. 61, p. 1446 (1988).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^6'
+      location: 'References, entry ^6'
   - id: cw7
     added_date: '2026-05-24'
     citation_key: '7'
@@ -234,7 +234,7 @@ cited_works:
       ^7 T. D. Lee, Particle Physics and Introduction to Field Theory, Harwood Academic Press, London (1988).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^7'
+      location: 'References, entry ^7'
   - id: cw8
     added_date: '2026-05-24'
     citation_key: '8'
@@ -245,7 +245,7 @@ cited_works:
       ^8 The Philosophy of Vacuum, Eds. S. Saunders and H. R. Brown, Clarendon Press, Oxford (1991).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^8'
+      location: 'References, entry ^8'
   - id: cw9
     added_date: '2026-05-24'
     citation_key: '9'
@@ -256,7 +256,7 @@ cited_works:
       ^9 F. Wilczek, The Lightness of Being: Mass, Ether and the Unification of Forces, Basic Books, New York (2008).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^9'
+      location: 'References, entry ^9'
   - id: cw10
     added_date: '2026-05-24'
     citation_key: '10'
@@ -267,7 +267,7 @@ cited_works:
       ^10 A. Logunov and M. Mestvirishvili, The Relativistic Theory of Gravitation, Mir Publ., Moscow (1989), p. 76.
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^10'
+      location: 'References, entry ^10'
   - id: cw11
     added_date: '2026-05-24'
     citation_key: '11'
@@ -276,7 +276,7 @@ cited_works:
       ^11 Op. cit., p. 83.
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^11'
+      location: 'References, entry ^11'
   - id: cw12
     added_date: '2026-05-24'
     citation_key: '12'
@@ -287,7 +287,7 @@ cited_works:
       ^12 S. M. Mahajan, A. Qadir and P. M. Valanju, "Reintroducing the concept of 'force' into relativity theory," Il Nuovo Cimento 65B, 404 (1981).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^12'
+      location: 'References, entry ^12'
   - id: cw13
     added_date: '2026-05-24'
     citation_key: '13'
@@ -298,7 +298,7 @@ cited_works:
       ^13 R. Klauber, "Physical components, coordinate components, and the speed of light," www.arXiv:gr-qc/0105071 v1 (18 May 2001).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^13'
+      location: 'References, entry ^13'
   - id: cw14
     added_date: '2026-05-24'
     citation_key: '14'
@@ -309,7 +309,7 @@ cited_works:
       ^14 F. de Felice, "On the gravitational field acting as an optical medium," Gen. Rel. and Grav. 2, 347 (1971).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^14'
+      location: 'References, entry ^14'
   - id: cw15
     added_date: '2026-05-24'
     citation_key: '15'
@@ -320,7 +320,7 @@ cited_works:
       ^15 K. K. Nandi and A. Islam, "On the optical-mechanical analogy in general relativity," Am. J. Phys. 63, 251 (1995).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^15'
+      location: 'References, entry ^15'
   - id: cw16
     added_date: '2026-05-24'
     citation_key: '16'
@@ -331,7 +331,7 @@ cited_works:
       ^16 H. E. Puthoff, "Polarizable-vacuum (PV) approach to general relativity," Found. Phys. 32, 927 (2002).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^16'
+      location: 'References, entry ^16'
   - id: cw17
     added_date: '2026-05-24'
     citation_key: '17'
@@ -342,7 +342,7 @@ cited_works:
       ^17 P. Boonserm et al., "Effective refractive index tensor for weak-field gravity," Class. Quant. Grav. 22, 1905 (2005).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^17'
+      location: 'References, entry ^17'
   - id: cw18
     added_date: '2026-05-24'
     citation_key: '18'
@@ -353,7 +353,7 @@ cited_works:
       ^18 X.-H. Ye and Q. Lin, "A simple optical analysis of gravitational lensing," J. Modern Optics 55, no. 7, 1119 (2008).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^18'
+      location: 'References, entry ^18'
   - id: cw19
     added_date: '2026-05-24'
     citation_key: '19'
@@ -364,7 +364,7 @@ cited_works:
       ^19 H. E. Puthoff, E. W. Davis and C. Maccone, "Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity," Gen. Relativ. Grav. 37, 483 (2005).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^19'
+      location: 'References, entry ^19'
   - id: cw20
     added_date: '2026-05-24'
     citation_key: '20'
@@ -375,7 +375,7 @@ cited_works:
       ^20 A. P. Lightman and D. P. Lee, "Restricted proof that the weak equivalence principle implies the Einstein equivalence principle," Phys. Rev. D 8, 364 (1973).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^20'
+      location: 'References, entry ^20'
   - id: cw21
     added_date: '2026-05-24'
     citation_key: '21'
@@ -386,7 +386,7 @@ cited_works:
       ^21 C. W. Misner, K. S. Thorne and J. A. Wheeler, Gravitation, Freeman, San Francisco (1973), p. 5.
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^21'
+      location: 'References, entry ^21'
   - id: cw22
     added_date: '2026-05-24'
     citation_key: '22'
@@ -397,12 +397,12 @@ cited_works:
       ^22 E. W. Davis, "Chapter 15: Faster-than-Light Approaches in General Relativity," Frontiers of Propulsion Science, Progress in Astronautics and Aeronautics Series, Vol. 227, eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, VA, pp. 473 (2009).
     source:
       path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-      location: 'p. 17, References ^22'
+      location: 'References, entry ^22'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 2, Administrative Note'
+  location: 'Administrative Note (AAWSA Program paragraph)'
   source_path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   resolution: preserve-as-sic-in-quotes

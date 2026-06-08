@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
 | Content Block | All pages produced via Tesseract OCR — the VLM page-image read was content-blocked. |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 3, ¶ title |
+| Location | title-page identity block |
 
 ---
 
@@ -63,7 +61,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 3, ¶ prepared-by/author block |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -79,7 +77,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note |
 
 ---
 
@@ -91,7 +89,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 6, ¶1 (Summary) |
+| Location | section "I. Summary", ¶1 |
 
 ---
 
@@ -103,7 +101,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 7, ¶1 (Summary) |
+| Location | section "I. Summary", ¶3 ("foam atop the quantum vacuum sea") |
 
 ---
 
@@ -115,7 +113,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 7, ¶ (Summary) |
+| Location | section "I. Summary", ¶4 ("The breakthrough desired in space travel") |
 
 ---
 
@@ -127,7 +125,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 8, ¶ (II. Historical Concepts) |
+| Location | section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("Cole and Puthoff (Reference 11) verified") |
 
 ---
 
@@ -139,7 +137,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 9, ¶ (II. Historical Concepts) |
+| Location | section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("Forward's process cannot be cycled") |
 
 ---
 
@@ -151,7 +149,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 10, ¶ (II. Historical Concepts) |
+| Location | section "II. Historical Concepts for Extracting Energy and Thermodynamic Considerations" ("no practicable technique has been successfully demonstrated in the laboratory") |
 
 ---
 
@@ -163,7 +161,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 11, ¶ (III. Origin of Zero-Point Field Energy — Elements of QED Theory) |
+| Location | section "ELEMENTS OF QED THEORY" (under "III. Origin of Zero-Point Field Energy") |
 
 ---
 
@@ -175,7 +173,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 13, ¶ (III. Origin of Zero-Point Field Energy — Elements of SED Theory) |
+| Location | section "ELEMENTS OF SED THEORY" (under "III. Origin of Zero-Point Field Energy") |
 
 ---
 
@@ -187,7 +185,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 14, ¶ (IV. Review of Selected Experiments) |
+| Location | section "IV. Review of Selected Experiments" (opening) |
 
 ---
 
@@ -199,7 +197,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 14, ¶ (IV. Review of Selected Experiments) |
+| Location | section "VOLTAGE FLUCTUATIONS IN COILS INDUCED BY ZPF AT HIGH FREQUENCY" (under "IV. Review of Selected Experiments") |
 
 ---
 
@@ -211,7 +209,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy) |
+| Location | section "Summary: ZPF Modes and Vacuum Field Energy" ("the \"hardwired\" ZPF modes cannot be driven below the ground state") |
 
 ---
 
@@ -223,7 +221,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 44, ¶ (Summary: ZPF Modes and Vacuum Field Energy) |
+| Location | section "Summary: ZPF Modes and Vacuum Field Energy" ("invent new boundary conditions") |
 
 ---
 
@@ -235,7 +233,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 45, ¶1 (VI. Conclusion: The Way Forward) |
+| Location | section "VI. Conclusion: The Way Forward" ("First, one sees that") |
 
 ---
 
@@ -247,7 +245,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 45, ¶ (VI. Conclusion: The Way Forward) |
+| Location | section "VI. Conclusion: The Way Forward" ("Second, SED as an alternative theory") |
 
 ---
 
@@ -259,7 +257,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 45, ¶ (VI. Conclusion: The Way Forward) |
+| Location | section "VI. Conclusion: The Way Forward" ("It has been shown that the QED vacuum is in fact degradable") |
 
 ---
 
@@ -271,7 +269,7 @@ The report reviews historical concepts for extracting energy from the vacuum, th
 |---|---|
 | Attributed to | Concepts for Extracting Energy from the Quantum Vacuum — DIA AAWSAP Defense Intelligence Reference Document, 6 April 2010 |
 | Source | [archived source](../sources/government/dird-24-quantum-vacuum-energy-extraction-2010.pdf) |
-| Location | p. 48, ¶ (Acknowledgements) |
+| Location | section "Acknowledgements" |
 
 ---
 

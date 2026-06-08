@@ -36,7 +36,7 @@ quotes:
   text: Antigravity for Aerospace Applications
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 1, title page'
+    location: title-page identity block
   significance: Document title exactly as printed; establishes subject and place in the AAWSA DIRD series.
   statement_date: '2010-03-30'
 - id: q2
@@ -53,7 +53,7 @@ quotes:
     (b)(6)
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 3, Prepared by / Author block (front matter, folio ii)'
+    location: 'Prepared by / Author block (front matter, folio ii)'
   significance: Provenance block; preparing entity withheld (b)(3):10 USC 424, Author withheld (b)(6) — attribution is extrinsic (DIA AAWSA products list).
   statement_date: '2010-03-30'
 - id: q3
@@ -67,7 +67,7 @@ quotes:
     (b)(3):10 USC 424 Bldg 6000, Washington, DC 20340-5100.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 3, Administrative Note (front matter, folio ii)'
+    location: 'Administrative Note (AAWSA Program paragraph) (front matter, folio ii)'
   significance: 'Program-provenance: FY 2009 DIA AAWSA Program series; Program Manager withheld (b)(3):10 USC 424;(b)(6).'
   statement_date: '2010-03-30'
 - id: q4
@@ -75,7 +75,7 @@ quotes:
   text: 'COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 3, Administrative Note (front matter, folio ii)'
+    location: 'Administrative Note (Copyright Warning) (front matter, folio ii)'
   significance: Standard AAWSA DIRD dissemination-control marker.
   statement_date: '2010-03-30'
 - id: q5
@@ -89,7 +89,7 @@ quotes:
     guiding this study.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 6, Foreword, ¶1 (front matter, folio v)'
+    location: 'Foreword, ¶1 (front matter, folio v)'
   significance: 'Thesis statement: review of theoretical approaches to controlling gravity for aerospace propulsion, framed by GR.'
   statement_date: '2010-03-30'
 - id: q6
@@ -101,7 +101,7 @@ quotes:
     the make-or-break issues that limit them.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 6, Foreword, ¶2 (front matter, folio v)'
+    location: 'Foreword, ¶2 (front matter, folio v)'
   significance: Completes scope; signals the quantum-gravity branch and the evaluative make-or-break assessment.
   statement_date: '2010-03-30'
 - id: q7
@@ -112,7 +112,7 @@ quotes:
     downward towards the Earth's surface.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 7, ¶ Introduction (opening)'
+    location: 'section "I. Introduction" (opening)'
   significance: Opening framing of the problem the report addresses.
   statement_date: '2010-03-30'
 - id: q8
@@ -127,7 +127,7 @@ quotes:
     (that is, in a background gravitational field).
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 7, ¶ Introduction (catalogue of topics)'
+    location: 'section "I. Introduction" (catalogue of topics)'
   significance: Catalogue of the antigravity theory families reviewed — the scope spine.
   statement_date: '2010-03-30'
 - id: q9
@@ -139,7 +139,7 @@ quotes:
     technological implementation of antigravity.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 7, ¶ Introduction (caveat)'
+    location: 'section "I. Introduction" (caveat)'
   significance: Authorial caveat — theoretical catalogue, not a near-term-feasibility claim.
   statement_date: '2010-03-30'
 - id: q10
@@ -152,7 +152,7 @@ quotes:
     gravitational (attractive) force of 1-g.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 8, ¶ Negating Newtonian Gravity'
+    location: 'section "NEGATING NEWTONIAN GRAVITY"'
   significance: Representative Newtonian-physics antigravity mechanism (Forward ultradense matter); astronomical-density theme.
   statement_date: '2010-03-30'
 - id: q11
@@ -168,7 +168,7 @@ quotes:
     antigravity.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 10, ¶ Antigravity via Gravitomagnetic Forces / Historical Foundations'
+    location: 'section "Historical Foundations" (under "ANTIGRAVITY VIA GRAVITOMAGNETIC FORCES")'
   significance: Historical-foundations for the gravitomagnetic/Lense-Thirring branch.
   statement_date: '2010-03-30'
 - id: q12
@@ -183,7 +183,7 @@ quotes:
     rotating bodies literally drag spacetime around themselves.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 10, ¶ Antigravity via Gravitomagnetic Forces'
+    location: 'section "ANTIGRAVITY VIA GRAVITOMAGNETIC FORCES"'
   significance: Definition of Lense-Thirring/frame-dragging.
   statement_date: '2010-03-30'
 - id: q13
@@ -196,7 +196,7 @@ quotes:
     electrical current flow in a wire-wound torus.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: "p. 10, ¶ Forward's Dipole Gravitational Field Generator"
+    location: 'section "Forward''s Dipole Gravitational Field Generator"'
   significance: Introduces Forward's Dipole Gravitational Field Generator.
   statement_date: '2010-03-30'
 - id: q14
@@ -204,7 +204,7 @@ quotes:
   text: Figure 1. Dipole Electric Field Generator (Reference 14)
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 11, Figure 1 caption'
+    location: 'Figure 1 caption (under section "Forward''s Dipole Gravitational Field Generator")'
   significance: Figure caption (source text) for the electric-field analog grounding Forward's gravitational-field generator.
   statement_date: '2010-03-30'
 - id: q15
@@ -212,7 +212,7 @@ quotes:
   text: Figure 2. Diople Gravitational Field Generator (Reference 14)
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 12, Figure 2 caption'
+    location: 'Figure 2 caption (under section "Forward''s Dipole Gravitational Field Generator")'
   significance: Figure caption; preserves the document's own 'Diople' typo verbatim (no-correction discipline).
   statement_date: '2010-03-30'
 - id: q16
@@ -224,7 +224,7 @@ quotes:
     order to produce an antigravity field
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: "p. 12, ¶ Forward's Dipole Gravitational Field Generator"
+    location: 'section "Forward''s Dipole Gravitational Field Generator" (Equation (5) scale estimate)'
   significance: Quantifies the daunting scale of Forward's dipole generator — anchors the Conclusion's kilometer/astronomical theme.
   statement_date: '2010-03-30'
 - id: q17
@@ -232,7 +232,7 @@ quotes:
   text: 'Figure 3. Dipole Gravitational Field Generator: Inside-Out Whirling Dense Matter Torus (Reference 5)'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 13, Figure 3 caption'
+    location: 'Figure 3 caption (under section "Forward''s Dipole Gravitational Field Generator")'
   significance: Figure caption for Forward's inside-out whirling dense-matter torus variant.
   statement_date: '2010-03-30'
 - id: q18
@@ -248,7 +248,7 @@ quotes:
     distant inertial observers.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: "p. 13, ¶ Felber's Relativistic Antigravity Effect"
+    location: 'section "FELBER''S RELATIVISTIC ANTIGRAVITY EFFECT"'
   significance: States Felber's relativistic antigravity effect (gravitational repulsion above a critical relativistic velocity).
   statement_date: '2010-03-30'
 - id: q19
@@ -262,7 +262,7 @@ quotes:
     appear in Einstein's general relativity theory.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: "p. 14, ¶ Felber's Relativistic Antigravity Effect (assessment)"
+    location: 'section "FELBER''S RELATIVISTIC ANTIGRAVITY EFFECT" (assessment)'
   significance: Authorial assessment dismissing Felber's effect as impractical — the plausible-mechanism/daunting-challenge pattern.
   statement_date: '2010-03-30'
 - id: q20
@@ -275,7 +275,7 @@ quotes:
     of "exotic matter."
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 15, ¶ Negative Energy-Induced Antigravity'
+    location: 'section "NEGATIVE ENERGY-INDUCED ANTIGRAVITY"'
   significance: Core premise of the negative-energy antigravity branch (exotic matter ↔ gravitational repulsion).
   statement_date: '2010-03-30'
 - id: q21
@@ -288,7 +288,7 @@ quotes:
     daunting.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 18, ¶ Toy Model Estimate for Negative Energy-Induced Antigravity'
+    location: 'section "Toy Model Estimate for Negative Energy-Induced Antigravity"'
   significance: 'Toy-model conclusion: dwarf/neutron-star energy densities required — astronomical-magnitude barrier (''daunting'').'
   statement_date: '2010-03-30'
 - id: q22
@@ -298,7 +298,7 @@ quotes:
     gradient would not be Lorentz invariant.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: "p. 20, ¶ Vacuum Energy of Einstein's Cosmological Constant"
+    location: 'section "Vacuum Energy of Einstein''s Cosmological Constant"'
   significance: Cosmological-constant / vacuum-energy identity underlying the dark-energy antigravity discussion.
   statement_date: '2010-03-30'
 - id: q23
@@ -310,7 +310,7 @@ quotes:
     energy to implement a useful antigravity propulsion system.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 23, ¶ Antigravity Propulsion Application of Dark/Vacuum Energy'
+    location: 'section "Antigravity Propulsion Application of Dark/Vacuum Energy"'
   significance: Authorial assessment ruling out dark/vacuum-energy antigravity propulsion as near-term infeasible.
   statement_date: '2010-03-30'
 - id: q24
@@ -322,7 +322,7 @@ quotes:
     seminar sponsored by the Hughes Research Labs in Malibu, CA.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 24, ¶ IV. Quantum Antigravity Propulsion Concepts'
+    location: 'section "IV. Quantum Antigravity Propulsion Concepts" (1984 Forward co-derivation)'
   significance: First-person authorial voice ('the author') — anchors extrinsic Davis attribution; 1984 Forward co-derivation under Feynman/Scadron at Hughes.
   statement_date: '2010-03-30'
 - id: q25
@@ -333,7 +333,7 @@ quotes:
     incredibly minute, only affecting bound quantum s-states.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 24, ¶ IV. Quantum Antigravity Propulsion Concepts'
+    location: 'section "IV. Quantum Antigravity Propulsion Concepts" (Equation (23) magnitude verdict)'
   significance: Make-or-break verdict on the quantum-gravity branch (correction terms too minute for macroscopic propulsion).
   statement_date: '2010-03-30'
 - id: q26
@@ -346,7 +346,7 @@ quotes:
     rigid Casimir cavity in a weak gravitational field.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 25, ¶ Antigravity via Quantum Vacuum Zero-Point Fluctuation Force'
+    location: 'section "ANTIGRAVITY VIA QUANTUM VACUUM ZERO-POINT FLUCTUATION FORCE"'
   significance: Introduces the Casimir / quantum-vacuum-ZPF antigravity mechanism (Calloni et al.).
   statement_date: '2010-03-30'
 - id: q27
@@ -361,7 +361,7 @@ quotes:
     concept that is ripe for further exploration.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 26, ¶ Antigravity via Quantum Vacuum Zero-Point Fluctuation Force (assessment)'
+    location: 'section "ANTIGRAVITY VIA QUANTUM VACUUM ZERO-POINT FLUCTUATION FORCE" (assessment)'
   significance: Authorial assessment of the Casimir-ZPF mechanism — feeble but macroscopic and 'ripe for further exploration'.
   statement_date: '2010-03-30'
 - id: q28
@@ -373,7 +373,7 @@ quotes:
     particles in a curved spacetime.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 27, ¶ Antigravity via Nonretarded Quantum Interatomic Dispersion Force'
+    location: 'section "ANTIGRAVITY VIA NONRETARDED QUANTUM INTERATOMIC DISPERSION FORCE" (Pinto net-lifting-force introduction)'
   significance: Introduces Pinto's nonretarded interatomic dispersion-force mechanism (basis for the levitation thruster).
   statement_date: '2010-03-30'
 - id: q29
@@ -385,7 +385,7 @@ quotes:
     the entire vehicle.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 30, ¶ Antigravity via Nonretarded Quantum Interatomic Dispersion Force'
+    location: 'section "ANTIGRAVITY VIA NONRETARDED QUANTUM INTERATOMIC DISPERSION FORCE" (proposed levitation propulsion thruster)'
   significance: Pinto's proposed levitation propulsion thruster (concrete device embodiment).
   statement_date: '2010-03-30'
 - id: q30
@@ -402,7 +402,7 @@ quotes:
     embodiments.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 30, ¶ V. Conclusion: The Way Forward (opening)'
+    location: 'section "V. Conclusion: The Way Forward" (opening)'
   significance: 'Central conclusion: plausible mechanisms in Newtonian/GR theory, but daunting challenges in each embodiment.'
   statement_date: '2010-03-30'
 - id: q31
@@ -413,7 +413,7 @@ quotes:
     extreme mass velocities and accelerations.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 30, ¶ V. Conclusion: The Way Forward'
+    location: 'section "V. Conclusion: The Way Forward" (mechanical-embodiment barrier)'
   significance: Headline technical-barrier statement of the Conclusion.
   statement_date: '2010-03-30'
 - id: q32
@@ -426,7 +426,7 @@ quotes:
     significant antigravity forces
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 31, ¶ V. Conclusion: The Way Forward (continued)'
+    location: 'section "V. Conclusion: The Way Forward" (continued)'
   significance: Conclusion's assessment of the negative-energy branch.
   statement_date: '2010-03-30'
 - id: q33
@@ -441,7 +441,7 @@ quotes:
     reported but not yet independently confirmed.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 31, ¶ Antigravity via Dipole Gravitational Field Generators (Way Forward item 1)'
+    location: 'section "V. Conclusion: The Way Forward", "Antigravity via Dipole Gravitational Field Generators" item'
   significance: Hathaway review + Martin Tajmar rotating-superconductor frame-dragging observations — same Hathaway/Tajmar cross-link as dird-17.
   statement_date: '2010-03-30'
 - id: q34
@@ -452,7 +452,7 @@ quotes:
     stored negative energy.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 33, ¶ Trapping and Storing Negative Energy (Way Forward)'
+    location: 'section "V. Conclusion: The Way Forward", "Trapping and Storing Negative Energy" item'
   significance: First-person authorial opinion ('the opinion of the author') — voice anchor + research-direction judgment.
   statement_date: '2010-03-30'
 - id: q35
@@ -462,7 +462,7 @@ quotes:
     generate negative energy in the lab.
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, ¶ Quantum Vacuum Field Stress: Negative Energy From the Casimir Effect'
+    location: 'section "QUANTUM VACUUM FIELD STRESS: NEGATIVE ENERGY FROM THE CASIMIR EFFECT" (Appendix A)'
   significance: Appendix-A characterization of the Casimir effect as the most accessible lab source of negative energy.
   statement_date: '2010-03-30'
 naming_quirks:
@@ -470,28 +470,28 @@ naming_quirks:
   added_date: '2026-06-06'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 3, Administrative Note — ''Advanced Aerospace Weapon System Applications (AAWSA) Program'' and ''AAWSA Program Manager'' lines'
+  location: 'Administrative Note (AAWSA Program paragraph) — ''Advanced Aerospace Weapon System Applications (AAWSA) Program'' and ''AAWSA Program Manager'' lines'
   source_path: government/dird-19-antigravity-aerospace-20100330.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-06-06'
   observed: (b)(6)
   canonical: '[author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA products list is Dr. Eric Davis, EarthTech International]'
-  location: 'p. 3, Author line'
+  location: 'Prepared by / Author block — Author line'
   source_path: government/dird-19-antigravity-aerospace-20100330.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-06-06'
   observed: (b)(3):10 USC 424
   canonical: '[DIA component withheld under (b)(3), 10 USC 424]'
-  location: 'p. 3, Prepared-by / Administrative Note lines'
+  location: 'Prepared by / Author block and Administrative Note lines'
   source_path: government/dird-19-antigravity-aerospace-20100330.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-06-06'
   observed: Diople Gravitational Field Generator
   canonical: Dipole Gravitational Field Generator
-  location: 'p. 12, Figure 2 caption (source typo ''Diople'' for ''Dipole''; corrected form attested by the document itself at the Figure 3 caption and in body prose)'
+  location: 'Figure 2 caption (under section "Forward''s Dipole Gravitational Field Generator") (source typo ''Diople'' for ''Dipole''; corrected form attested by the document itself at the Figure 3 caption and in body prose)'
   source_path: government/dird-19-antigravity-aerospace-20100330.pdf
   resolution: preserve-as-sic-in-quotes
 cited_works:
@@ -504,7 +504,7 @@ cited_works:
   citation_verbatim: '[2] Forward, R. L., Future Magic: How Today''s Science Fiction Will Become Tomorrow''s Reality, Avon Books, New York, 1988, pp. 103-132.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [2]'
 - id: cw2
   added_date: '2026-06-06'
   citation_key: '5'
@@ -514,7 +514,7 @@ cited_works:
   citation_verbatim: '[5] Forward, R. L., "Far Out Physics," Analog Science Fiction/Science Fact, Vol. 95, 1975, pp. 147-166.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [5]'
 - id: cw3
   added_date: '2026-06-06'
   citation_key: '6'
@@ -524,7 +524,7 @@ cited_works:
   citation_verbatim: '[6] Davis, E. W., "Advanced Propulsion Study," Air Force Research Laboratory, Final Report AFRL-PR ED-TR-2004-0024, Air Force Materiel Command, Edwards AFB, CA, 2004, pp. 2-5.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [6]'
 - id: cw4
   added_date: '2026-06-06'
   citation_key: '10'
@@ -534,7 +534,7 @@ cited_works:
   citation_verbatim: '[10] Thirring, H., and Lense, J., "Über den Einfluss der Eigenrotation der Zentralkörper auf die Bewegung der Planeten und Monde nach der Einsteinschen Gravitationstheorie," Physikalische Zeitschrift, Vol. 19, 1918, pp. 156-163.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [10]'
 - id: cw5
   added_date: '2026-06-06'
   citation_key: '14'
@@ -544,7 +544,7 @@ cited_works:
   citation_verbatim: '[14] Forward, R. L., "Guidelines to Antigravity," American Journal of Physics, Vol. 31, 1963, pp. 166-170.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [14]'
 - id: cw6
   added_date: '2026-06-06'
   citation_key: '15'
@@ -554,7 +554,7 @@ cited_works:
   citation_verbatim: '[15] Felber, F. S., "Exact Relativistic ''Antigravity'' Propulsion," Proceedings of the STAIF-2006: 3rd Symposium on New Frontiers and Future Concepts, edited by M. S. El-Genk, AIP Conf. Proc. Vol. 813, AIP Press, New York, 2006, pp. 1374-1381.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 34, References'
+    location: 'References, entry [15]'
 - id: cw7
   added_date: '2026-06-06'
   citation_key: '62'
@@ -564,7 +564,7 @@ cited_works:
   citation_verbatim: '[62] Calloni, E., et al., "Vacuum fluctuation force on a rigid Casimir cavity in a gravitational field," Physics Letters A, Vol. 297, 2002, pp. 328-333.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, References'
+    location: 'References, entry [62]'
 - id: cw8
   added_date: '2026-06-06'
   citation_key: '66'
@@ -574,7 +574,7 @@ cited_works:
   citation_verbatim: '[66] Pinto, F., "Progress in Quantum Vacuum Engineering Propulsion," Journal of the British Interplanetary Society, Vol. 59, 2006, pp. 247-256.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, References'
+    location: 'References, entry [66]'
 - id: cw9
   added_date: '2026-06-06'
   citation_key: '68'
@@ -584,7 +584,7 @@ cited_works:
   citation_verbatim: '[68] Puthoff, H. E., "Polarizable-Vacuum (PV) Approach to General Relativity," Foundations of Physics, Vol. 32, 2002, pp. 927-943.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, References'
+    location: 'References, entry [68]'
 - id: cw10
   added_date: '2026-06-06'
   citation_key: '69'
@@ -594,7 +594,7 @@ cited_works:
   citation_verbatim: '[69] Hathaway, G. D., "Chapter 5: Gravitational Experiments with Superconductors: History and Lessons," Frontiers of Propulsion Science, Progress in Astronautics and Aeronautics Series, Vol. 227, eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, VA, 2009, pp. 229-248.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, References'
+    location: 'References, entry [69]'
 - id: cw11
   added_date: '2026-06-06'
   citation_key: '70'
@@ -604,4 +604,4 @@ cited_works:
   citation_verbatim: '[70] Davis, E. W., "Chapter 15: Faster-than-Light Approaches in General Relativity," Frontiers of Propulsion Science, Progress in Astronautics and Aeronautics Series, Vol. 227, eds. M. G. Millis and E. W. Davis, AIAA Press, Reston, VA, 2009, pp. 473-509.'
   source:
     path: government/dird-19-antigravity-aerospace-20100330.pdf
-    location: 'p. 37, References'
+    location: 'References, entry [70]'

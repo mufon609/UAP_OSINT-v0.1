@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-23-laser-weapons-20100331.pdf](../sources/government/dird-23-laser-weapons-20100331.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -141,7 +139,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Introduction (p. 1) |
+| Location | section "Introduction", ¶1 |
 
 ---
 
@@ -153,7 +151,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Basic Attributes of Kinetic Energy and HEL Weapons (p. 1) |
+| Location | section "Basic Attributes of Kinetic Energy and HEL Weapons", ¶2 |
 
 ---
 
@@ -165,7 +163,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Basic Attributes of Kinetic Energy and HEL Weapons (p. 1) |
+| Location | section "Basic Attributes of Kinetic Energy and HEL Weapons", ¶2 |
 
 ---
 
@@ -177,7 +175,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Laser Fundamentals (p. 3) |
+| Location | section "Laser Fundamentals", ¶1 |
 
 ---
 
@@ -189,7 +187,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Laser Fundamentals (p. 4) |
+| Location | section "Laser Fundamentals", ¶2 |
 
 ---
 
@@ -201,7 +199,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Chemical Lasers (p. 5) |
+| Location | section "Chemical Lasers", ¶2 |
 
 ---
 
@@ -213,7 +211,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Chemical Lasers (p. 5) |
+| Location | section "Chemical Lasers", ¶3 |
 
 ---
 
@@ -225,7 +223,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Solid-State Lasers (p. 6) |
+| Location | section "Solid-State Lasers", ¶1 |
 
 ---
 
@@ -237,7 +235,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Rod and Slab Lasers (p. 7) |
+| Location | section "Rod and Slab Lasers", ¶3 |
 
 ---
 
@@ -249,7 +247,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Free-Electron Lasers (p. 11) |
+| Location | section "Free-Electron Lasers", ¶1 |
 
 ---
 
@@ -261,7 +259,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Brief History of DoD Laser Weapon Research (p. 16) |
+| Location | section "Brief History of DoD Laser Weapon Research", ¶1 |
 
 ---
 
@@ -273,7 +271,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Brief History of DoD Laser Weapon Research (p. 17) |
+| Location | section "Brief History of DoD Laser Weapon Research", ¶3 |
 
 ---
 
@@ -285,7 +283,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Brief History of DoD Laser Weapon Research (p. 18) |
+| Location | section "Brief History of DoD Laser Weapon Research", ¶4 |
 
 ---
 
@@ -297,7 +295,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Vulnerability of Spacecraft to Laser Radiation (p. 22) |
+| Location | section "Vulnerability of Spacecraft to Laser Radiation", ¶ (Whole-body vulnerability bullet) |
 
 ---
 
@@ -309,7 +307,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Projection of Future HEL Weapon Capability (p. 24) |
+| Location | section "Projection of Future HEL Weapon Capability", ¶ (Solid-State and Free-Electron Lasers subsection) |
 
 ---
 
@@ -321,7 +319,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Recommendations (p. 25) |
+| Location | section "Recommendations", ¶1 |
 
 ---
 
@@ -333,7 +331,7 @@ The most significant technical impediment to deployment may have been the large 
 |---|---|
 | Attributed to | State of the Art and Evolution of High-Energy Laser Weapons — DIA AAWSA Defense Intelligence Reference Document #23, 31 March 2010 |
 | Source | [archived source](../sources/government/dird-23-laser-weapons-20100331.pdf) |
-| Location | Sources of Further Information (p. 26) |
+| Location | section "Sources of Further Information", ¶1 |
 
 ---
 

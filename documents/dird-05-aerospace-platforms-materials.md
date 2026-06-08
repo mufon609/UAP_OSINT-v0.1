@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -57,7 +55,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 1, ¶ cover banner / control block |
+| Location | title-page identity block (cover banner / control block) |
 
 ---
 
@@ -77,7 +75,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 3, ¶ Prepared by / Author |
+| Location | Prepared by / Author block |
 
 ---
 
@@ -89,7 +87,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 3, ¶ Administrative Note |
+| Location | Administrative Note (AAWSA Program paragraph) |
 
 ---
 
@@ -101,7 +99,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 3, ¶ Administrative Note (copyright warning) |
+| Location | Administrative Note (Copyright Warning) |
 
 ---
 
@@ -113,7 +111,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction", ¶1 (scope / three-part subdivision) |
 
 ---
 
@@ -125,7 +123,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction", ¶1 ("clean sheet of paper design") |
 
 ---
 
@@ -137,7 +135,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction", ¶1 (National Aerospace Plane / Orient Express) |
 
 ---
 
@@ -149,7 +147,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 5, ¶ Introduction |
+| Location | section "Introduction", ¶2 (damage tolerance) |
 
 ---
 
@@ -161,7 +159,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 6, ¶ Introduction (closing) |
+| Location | section "Introduction", ¶3 (closing) |
 
 ---
 
@@ -173,7 +171,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 7, ¶ LAUNCH VEHICLES |
+| Location | section "LAUNCH VEHICLES", ¶1 (Al alloys and PMCs prime candidates below ~125 °C) |
 
 ---
 
@@ -185,7 +183,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 7, ¶ LAUNCH VEHICLES (Al fracture toughness) |
+| Location | section "LAUNCH VEHICLES", ¶2 (Al fracture toughness) |
 
 ---
 
@@ -197,7 +195,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 9, ¶ LAUNCH VEHICLES (friction stir welding summary) |
+| Location | section "LAUNCH VEHICLES", ¶7 (friction stir welding summary) |
 
 ---
 
@@ -209,7 +207,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 9, ¶ LAUNCH VEHICLES (PMC galvanic incompatibility) |
+| Location | section "LAUNCH VEHICLES", ¶8 (PMC galvanic incompatibility) |
 
 ---
 
@@ -221,7 +219,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 9, ¶ LAUNCH VEHICLES (composite fabrication methods) |
+| Location | section "LAUNCH VEHICLES", ¶9 (composite fabrication methods) |
 
 ---
 
@@ -233,7 +231,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 11, ¶ LAUNCH VEHICLES (GE90 PMC fan blades) |
+| Location | section "LAUNCH VEHICLES" (GE90 PMC fan blades) |
 
 ---
 
@@ -245,7 +243,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 12, ¶ LAUNCH VEHICLES (PMC temperature limits) |
+| Location | section "LAUNCH VEHICLES" (PMC temperature limits) |
 
 ---
 
@@ -257,7 +255,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 13, ¶ LAUNCH VEHICLES (Ti alloys) |
+| Location | section "LAUNCH VEHICLES" (Ti alloys) |
 
 ---
 
@@ -269,7 +267,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 14, ¶ LAUNCH VEHICLES (Ti reactivity) |
+| Location | section "LAUNCH VEHICLES" (Ti reactivity) |
 
 ---
 
@@ -281,7 +279,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 14, ¶ LAUNCH VEHICLES (section summary) |
+| Location | section "LAUNCH VEHICLES" (section summary) |
 
 ---
 
@@ -293,7 +291,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 14, ¶ LAUNCH VEHICLES (section summary, closing) |
+| Location | section "LAUNCH VEHICLES" (section summary, closing) |
 
 ---
 
@@ -305,7 +303,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 15, ¶ REUSABLE CREW MODULES |
+| Location | section "REUSABLE CREW MODULES", ¶1 (shuttle "cold structure" with insulating TPS) |
 
 ---
 
@@ -317,7 +315,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 15, ¶ REUSABLE CREW MODULES |
+| Location | section "REUSABLE CREW MODULES", ¶1 (C-CCs "age" / Columbia disaster) |
 
 ---
 
@@ -329,7 +327,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 15, ¶ REUSABLE CREW MODULES |
+| Location | section "REUSABLE CREW MODULES", ¶2 (integrated TPS and load-bearing structure) |
 
 ---
 
@@ -341,7 +339,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 16, ¶ Reusable Single-Stage-to-Orbit Vehicles |
+| Location | section "Reusable Single-Stage-to-Orbit Vehicles", ¶1 |
 
 ---
 
@@ -353,7 +351,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 17, ¶ Reusable Single-Stage-to-Orbit Vehicles (post-Table 1) |
+| Location | section "Reusable Single-Stage-to-Orbit Vehicles" (post-Table 1) |
 
 ---
 
@@ -365,7 +363,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 17, ¶ Advanced Al Alloys |
+| Location | section "Advanced Al Alloys", ¶1 |
 
 ---
 
@@ -377,7 +375,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 17, ¶ Polymer Matrix Composites |
+| Location | section "Polymer Matrix Composites", ¶1 |
 
 ---
 
@@ -389,7 +387,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 18, ¶ Al Matrix Composites |
+| Location | section "Al Matrix Composites", ¶1 |
 
 ---
 
@@ -401,7 +399,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 19, ¶ Ti Alloys (α case) |
+| Location | section "Ti Alloys" (α case) |
 
 ---
 
@@ -413,7 +411,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 20, ¶ Ti Alloys (α case questions) |
+| Location | section "Ti Alloys" (α case questions) |
 
 ---
 
@@ -425,7 +423,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 20, ¶ Ti Alloys (SR-71 precedent) |
+| Location | section "Ti Alloys" (SR-71 precedent) |
 
 ---
 
@@ -437,7 +435,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 21, ¶ Ti Matrix Composites |
+| Location | section "Ti Matrix Composites" (post-Table 2: why TMCs not in widespread use) |
 
 ---
 
@@ -449,7 +447,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 21, ¶ Ti Matrix Composites (SCS-6 fiber) |
+| Location | section "Ti Matrix Composites" (SCS-6 fiber) |
 
 ---
 
@@ -461,7 +459,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 22, ¶ Ti Matrix Composites (program outcome) |
+| Location | section "Ti Matrix Composites" (program outcome) |
 
 ---
 
@@ -473,7 +471,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 22, ¶ Ti Matrix Composites (lesson) |
+| Location | section "Ti Matrix Composites" (lesson) |
 
 ---
 
@@ -485,7 +483,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 22, ¶ Ni-base Alloys |
+| Location | section "Ni-base Alloys", ¶1 |
 
 ---
 
@@ -497,7 +495,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 23, ¶ Ni-base Alloys (low-α alloys) |
+| Location | section "Ni-base Alloys" (low-α alloys) |
 
 ---
 
@@ -509,7 +507,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 24, ¶ Refractory Metal Alloys |
+| Location | section "Refractory Metal Alloys", ¶1 |
 
 ---
 
@@ -521,7 +519,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 24, ¶ Ceramic Matrix Composites |
+| Location | section "Ceramic Matrix Composites", ¶1 |
 
 ---
 
@@ -533,7 +531,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 25, ¶ Ceramic Matrix Composites (assessment) |
+| Location | section "Ceramic Matrix Composites", ¶3 (assessment) |
 
 ---
 
@@ -545,7 +543,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 25, ¶ Carbon-Carbon Composites |
+| Location | section "Carbon-Carbon Composites", ¶1 |
 
 ---
 
@@ -557,7 +555,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 26, ¶ Titanium Aluminides |
+| Location | section "Titanium Aluminides", ¶1 |
 
 ---
 
@@ -569,7 +567,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 26, ¶ Titanium Aluminides (applications) |
+| Location | section "Titanium Aluminides", ¶3 (applications) |
 
 ---
 
@@ -581,7 +579,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 27, ¶ PROPULSION SYSTEMS |
+| Location | section "PROPULSION SYSTEMS", ¶1 (scope) |
 
 ---
 
@@ -593,7 +591,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 27, ¶ PROPULSION SYSTEMS (turbine / hydrogen) |
+| Location | section "PROPULSION SYSTEMS", ¶3 (turbine / hydrogen) |
 
 ---
 
@@ -605,7 +603,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 27, ¶ PROPULSION SYSTEMS (cryopump) |
+| Location | section "PROPULSION SYSTEMS", ¶4 (cryopump) |
 
 ---
 
@@ -617,7 +615,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 28, ¶ PROPULSION SYSTEMS (combustion chamber) |
+| Location | section "PROPULSION SYSTEMS", ¶5 (combustion chamber) |
 
 ---
 
@@ -629,7 +627,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 28, ¶ SUMMARY AND RECOMMENDATIONS |
+| Location | section "SUMMARY AND RECOMMENDATIONS", ¶1 (breadth-of-topic recap) |
 
 ---
 
@@ -641,7 +639,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 28, ¶ SUMMARY AND RECOMMENDATIONS |
+| Location | section "SUMMARY AND RECOMMENDATIONS", ¶1 (design-synthesis recommendation) |
 
 ---
 
@@ -653,7 +651,7 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 |---|---|
 | Attributed to | DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010 |
 | Source | [archived source](../sources/government/dird-05-bv-aerospace-platforms-materials-20100112.pdf) |
-| Location | p. 28, ¶ SUMMARY AND RECOMMENDATIONS (closing) |
+| Location | section "SUMMARY AND RECOMMENDATIONS", ¶2 (closing) |
 
 ---
 

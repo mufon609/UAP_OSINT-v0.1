@@ -39,7 +39,7 @@ quotes:
     UNCLASSIFIED/[struck through] FOR OFFICIAL USE ONLY
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 1, classification banner'
+    location: 'classification banner'
   significance: Classification banner — the cover marking is UNCLASSIFIED with FOR OFFICIAL USE ONLY struck through, the form preserved on every page header and footer
   statement_date: '2010-03-02'
 - id: q-title-page-id-block
@@ -60,7 +60,7 @@ quotes:
     and Experiments
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 1, title-page identity block'
+    location: 'title-page identity block'
   significance: 'Title-page identity block — Defense Intelligence Reference Document, Acquisition Threat Support, dated 2 March 2010, ICOD 1 December 2009, control number DIA-08-1003-001, full title "Invisibility Cloaking: Theory and Experiments"'
   statement_date: '2010-03-02'
 - id: q-prepared-by-author-redaction-block
@@ -75,7 +75,7 @@ quotes:
     [(b)(6)]
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 3, prepared-by/author block'
+    location: 'Prepared by / Author block'
   significance: Prepared-by and author provenance — Defense Intelligence Agency prepared; the author identity is withheld under FOIA exemption (b)(6)
   statement_date: '2010-03-02'
 - id: q-copyright-warning
@@ -84,7 +84,7 @@ quotes:
     COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 3, Administrative Note (Copyright Warning)'
+    location: 'Administrative Note (Copyright Warning)'
   significance: Copyright warning — further dissemination of the photographs in the publication is not authorized
   statement_date: '2010-03-02'
 - id: q-administrative-note-aawsa
@@ -98,7 +98,7 @@ quotes:
     DC 20340-5100.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 3, Administrative Note'
+    location: 'Administrative Note (AAWSA Program paragraph)'
   significance: AAWSA Program provenance — names the FY 2009 AAWSA Program series; the AAWSA Program Manager identity is withheld under FOIA exemption
   statement_date: '2010-03-02'
 - id: q-three-methods-of-invisibility
@@ -108,7 +108,7 @@ quotes:
     transparency, and cloaking.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 7, ¶1 (Camouflage)'
+    location: 'section "Camouflage", ¶1'
   significance: 'Invisibility taxonomy — the paper sets out three principal methods of invisibility: camouflage, transparency, and cloaking'
   statement_date: '2010-03-02'
 - id: q-cloaking-definition-universal-strategy
@@ -121,7 +121,7 @@ quotes:
     cloaking device is hidden and the act of hiding is concealed.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 11, ¶1 (Cloaking)'
+    location: 'section "Cloaking", ¶1'
   significance: Cloaking definition — cloaking is the universal strategy in which a transparent shell guides light around the hidden object as if it propagated through empty space, hiding both the object and the act of hiding
   statement_date: '2010-03-02'
 - id: q-transformation-optics-deforms-space
@@ -133,7 +133,7 @@ quotes:
     the virtual space, whereas in reality it is bent.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 14, ¶1 (Cloaking)'
+    location: 'section "Cloaking", ¶ ("The material acts like a transformation of space")'
   significance: Transformation-optics theory — an optical material acts like a transformation of space, creating the illusion that light propagates along straight lines through a virtual space while in reality it is bent
   statement_date: '2010-03-02'
 - id: q-two-groups-2006-science-express
@@ -144,7 +144,7 @@ quotes:
     were published back to back in Science magazine later on.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 14, ¶1 (Cloaking)'
+    location: 'section "Cloaking", ¶ ("put forward by two independent groups")'
   significance: Cloaking-theory origins — the coordinate-transformation idea was put forward by two independent groups whose theories appeared in Science Express on 25 May 2006
   statement_date: '2010-03-02'
 - id: q-october-2006-first-cloak-microwave-roster
@@ -157,7 +157,7 @@ quotes:
     among the top 50 policy, business, and research leaders of the year.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 14, ¶1 (Cloaking)'
+    location: 'section "Cloaking", ¶ ("In October 2006, the first cloaking device was demonstrated")'
   significance: Experimental result and inventor roster — in October 2006 the first cloaking device was demonstrated for microwaves, and Scientific American listed the inventors of cloaking devices as Sir John Pendry, David Smith, David Schurig, and Ulf Leonhardt
   statement_date: '2010-03-02'
 - id: q-microwave-prototype-split-ring-resonators
@@ -170,7 +170,7 @@ quotes:
     ring resonators.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 15, ¶ continued (Metamaterials)'
+    location: 'section "Metamaterials", ¶1'
   significance: Microwave prototype — the first prototype cloaking device operated in the microwave region for a wavelength of about 3 cm, built from rings of flexible circuit board etched into split-ring resonators
   statement_date: '2010-03-02'
 - id: q-metamaterial-definition
@@ -180,7 +180,7 @@ quotes:
     depends on structures much smaller than the wavelength is called a metamaterial.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 16, ¶1 (Metamaterials)'
+    location: 'section "Metamaterials", ¶ ("A material with electromagnetic or optical properties")'
   significance: Metamaterials definition — a material whose electromagnetic or optical properties depend on structures much smaller than the wavelength is called a metamaterial
   statement_date: '2010-03-02'
 - id: q-fundamental-problem-single-frequency
@@ -192,7 +192,7 @@ quotes:
     colors would be severely distorted.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 21, ¶1 (Fundamental Problem)'
+    location: 'section "Fundamental Problem", ¶1'
   significance: Cloaking limitation — the demonstrated microwave-cloaking device works correctly only for a single frequency; light of different colors would be severely distorted
   statement_date: '2010-03-02'
 - id: q-speed-of-light-infinite-at-core
@@ -202,7 +202,7 @@ quotes:
     of light must be infinitely large at the inner lining of the invisibility cloak.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 22, ¶1 (Fundamental Problem)'
+    location: 'section "Fundamental Problem", ¶ ("the speed of light must be infinitely large at the inner lining")'
   significance: Cloaking limitation — the speed of light must be infinitely large at the inner lining of the invisibility cloak, which the paper argues makes such Euclidean devices useless in practice
   statement_date: '2010-03-02'
 - id: q-broadband-non-euclidean-finite-distortion
@@ -216,7 +216,7 @@ quotes:
     spectrum.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 26, ¶1 (Broadband Invisibility)'
+    location: 'section "Broadband Invisibility", ¶ ("Why are such curved optical spaces of any practical advantage")'
   significance: Broadband invisibility — non-Euclidean curved-space cloaking keeps the distortion of space finite rather than infinite, so the required optical properties stay finite and such devices can in principle operate in a broad band of the spectrum
   statement_date: '2010-03-02'
 - id: q-greatest-challenge-imagination-not-technology
@@ -226,7 +226,7 @@ quotes:
     invisibility from an idea into a workable device is not technology but imagination.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 28, ¶1 (Optical Cloaking)'
+    location: 'section "Optical Cloaking", ¶ ("The greatest challenge for turning invisibility")'
   significance: Conclusion — the paper states the greatest challenge for turning invisibility from an idea into a workable device is not technology but imagination
   statement_date: '2010-03-02'
 - id: q-summary-perfect-cloaking-impossible
@@ -239,7 +239,7 @@ quotes:
     approaches infinity. Imperfect cloaking devices could be made.
   source:
     path: government/dird-07-invisibility-cloaking-20100302.pdf
-    location: 'p. 29, ¶1 (Summary)'
+    location: 'section "Summary", ¶1'
   significance: Summary — a cloaking device guides light around an object as if through empty space; perfect cloaking devices are impossible because they require the speed of light to approach infinity, but imperfect cloaking devices could be made
   statement_date: '2010-03-02'
 naming_quirks:
@@ -247,28 +247,28 @@ naming_quirks:
   added_date: '2026-05-25'
   observed: '[(b)(6)]'
   canonical: '[redacted per FOIA (b)(6)]'
-  location: 'p. 3, Author line'
+  location: 'Prepared by / Author block (Author line)'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-25'
   observed: '[(b)(3):10 USC 424]'
   canonical: '[redacted per FOIA (b)(3):10 USC 424]'
-  location: 'p. 3, Prepared-by / Administrative Note / AAWSA Program Manager lines'
+  location: 'Prepared by / Author block, Administrative Note (AAWSA Program Manager lines)'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-25'
   observed: AAWSA
   canonical: Advanced Aerospace Weapon System Applications Program (AAWSAP)
-  location: 'p. 3, Administrative Note'
+  location: 'Administrative Note (AAWSA Program paragraph)'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-25'
   observed: 'Invisibility Cloaking: Theory and Experiments'
   canonical: 'Invisibility Cloaking (AAWSAP products-list short form)'
-  location: 'p. 1, title vs. AAWSAP products list attachment 7'
+  location: 'title-page identity block vs. AAWSAP products list attachment 7'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: disputed
 cited_works:
@@ -283,7 +283,7 @@ cited_works:
       016623 (2005).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 1'
+      location: 'References, entry [1]'
   - id: cw2
     added_date: '2026-05-25'
     citation_key: '2'
@@ -295,7 +295,7 @@ cited_works:
       Proceedings of the Royal Society London A 462, 3027 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 2'
+      location: 'References, entry [2]'
   - id: cw3
     added_date: '2026-05-25'
     citation_key: '3'
@@ -307,7 +307,7 @@ cited_works:
       Distance Outside the Cloaking Shell, Physical Review Letters 102, 093901 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 3'
+      location: 'References, entry [3]'
   - id: cw4
     added_date: '2026-05-25'
     citation_key: '4'
@@ -318,7 +318,7 @@ cited_works:
       ⁴ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 4'
+      location: 'References, entry [4]'
   - id: cw5
     added_date: '2026-05-25'
     citation_key: '5'
@@ -329,7 +329,7 @@ cited_works:
       ⁵ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 5'
+      location: 'References, entry [5]'
   - id: cw6
     added_date: '2026-05-25'
     citation_key: '6'
@@ -340,7 +340,7 @@ cited_works:
       ⁶ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 6'
+      location: 'References, entry [6]'
   - id: cw7
     added_date: '2026-05-25'
     citation_key: '7'
@@ -351,7 +351,7 @@ cited_works:
       appear in Progress in Optics.
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 7'
+      location: 'References, entry [7]'
   - id: cw8
     added_date: '2026-05-25'
     citation_key: '8'
@@ -362,7 +362,7 @@ cited_works:
       appear in Progress in Optics.
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 8'
+      location: 'References, entry [8]'
   - id: cw9
     added_date: '2026-05-25'
     citation_key: '9'
@@ -373,7 +373,7 @@ cited_works:
       ⁹ U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 9'
+      location: 'References, entry [9]'
   - id: cw10
     added_date: '2026-05-25'
     citation_key: '10'
@@ -384,7 +384,7 @@ cited_works:
       ¹⁰ J. B. Pendry, D. Schurig, and D. R. Smith, Controlling Electromagnetic Fields, Science 312, 1780 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 10'
+      location: 'References, entry [10]'
   - id: cw11
     added_date: '2026-05-25'
     citation_key: '11'
@@ -396,7 +396,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 11'
+      location: 'References, entry [11]'
   - id: cw12
     added_date: '2026-05-25'
     citation_key: '12'
@@ -407,7 +407,7 @@ cited_works:
       ¹² U. Leonhardt, Optical Conformal Mapping, Science 312, 1777 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 12'
+      location: 'References, entry [12]'
   - id: cw13
     added_date: '2026-05-25'
     citation_key: '13'
@@ -419,7 +419,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 13'
+      location: 'References, entry [13]'
   - id: cw14
     added_date: '2026-05-25'
     citation_key: '14'
@@ -431,7 +431,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 14'
+      location: 'References, entry [14]'
   - id: cw15
     added_date: '2026-05-25'
     citation_key: '15'
@@ -443,7 +443,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 15'
+      location: 'References, entry [15]'
   - id: cw16
     added_date: '2026-05-25'
     citation_key: '16'
@@ -455,7 +455,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 16'
+      location: 'References, entry [16]'
   - id: cw17
     added_date: '2026-05-25'
     citation_key: '17'
@@ -467,7 +467,7 @@ cited_works:
       gold-ruby glass, Nature 407, 691 (2000).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 17'
+      location: 'References, entry [17]'
   - id: cw18
     added_date: '2026-05-25'
     citation_key: '18'
@@ -479,7 +479,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 18'
+      location: 'References, entry [18]'
   - id: cw19
     added_date: '2026-05-25'
     citation_key: '19'
@@ -491,7 +491,7 @@ cited_works:
       1, 224 (2007).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 19'
+      location: 'References, entry [19]'
   - id: cw20
     added_date: '2026-05-25'
     citation_key: '20'
@@ -503,7 +503,7 @@ cited_works:
       1, 224 (2007).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 20'
+      location: 'References, entry [20]'
   - id: cw21
     added_date: '2026-05-25'
     citation_key: '21'
@@ -515,7 +515,7 @@ cited_works:
       Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 21'
+      location: 'References, entry [21]'
   - id: cw22
     added_date: '2026-05-25'
     citation_key: '22'
@@ -527,7 +527,7 @@ cited_works:
       Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 22'
+      location: 'References, entry [22]'
   - id: cw23
     added_date: '2026-05-25'
     citation_key: '23'
@@ -539,7 +539,7 @@ cited_works:
       Metamaterials of Nanowires, Science 321, 930 (2008).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 23'
+      location: 'References, entry [23]'
   - id: cw24
     added_date: '2026-05-25'
     citation_key: '24'
@@ -551,7 +551,7 @@ cited_works:
       optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 24'
+      location: 'References, entry [24]'
   - id: cw25
     added_date: '2026-05-25'
     citation_key: '25'
@@ -562,7 +562,7 @@ cited_works:
       ²⁵ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 25'
+      location: 'References, entry [25]'
   - id: cw26
     added_date: '2026-05-25'
     citation_key: '26'
@@ -574,7 +574,7 @@ cited_works:
       Bulk Metamaterials of Nanowires, Science 321, 930 (2008).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 29, ref 26'
+      location: 'References, entry [26]'
   - id: cw27
     added_date: '2026-05-25'
     citation_key: '27'
@@ -586,7 +586,7 @@ cited_works:
       optical metamaterial with a negative refractive index, Nature 455, 376 (2008).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 27'
+      location: 'References, entry [27]'
   - id: cw28
     added_date: '2026-05-25'
     citation_key: '28'
@@ -597,7 +597,7 @@ cited_works:
       ²⁸ U. Leonhardt and T. G. Philbin, General relativity in electrical engineering, New Journal of Physics 8, 247 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 28'
+      location: 'References, entry [28]'
   - id: cw29
     added_date: '2026-05-25'
     citation_key: '29'
@@ -608,7 +608,7 @@ cited_works:
       ²⁹ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 29'
+      location: 'References, entry [29]'
   - id: cw30
     added_date: '2026-05-25'
     citation_key: '30'
@@ -619,7 +619,7 @@ cited_works:
       ³⁰ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 30'
+      location: 'References, entry [30]'
   - id: cw31
     added_date: '2026-05-25'
     citation_key: '31'
@@ -631,7 +631,7 @@ cited_works:
       Journal of Applied Physics 104, 033113 (2008).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 31'
+      location: 'References, entry [31]'
   - id: cw32
     added_date: '2026-05-25'
     citation_key: '32'
@@ -642,7 +642,7 @@ cited_works:
       ³² U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 32'
+      location: 'References, entry [32]'
   - id: cw33
     added_date: '2026-05-25'
     citation_key: '33'
@@ -653,7 +653,7 @@ cited_works:
       ³³ M. Born and E. Wolf, Principles of Optics (Cambridge University Press, Cambridge, 1999).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 33'
+      location: 'References, entry [33]'
   - id: cw34
     added_date: '2026-05-25'
     citation_key: '34'
@@ -664,7 +664,7 @@ cited_works:
       ³⁴ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 34'
+      location: 'References, entry [34]'
   - id: cw35
     added_date: '2026-05-25'
     citation_key: '35'
@@ -675,7 +675,7 @@ cited_works:
       ³⁵ U. Leonhardt and T. Tyc, Broadband Invisibility by Non-Euclidean Cloaking, Science 323, 110 (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 35'
+      location: 'References, entry [35]'
   - id: cw36
     added_date: '2026-05-25'
     citation_key: '36'
@@ -687,7 +687,7 @@ cited_works:
       Electromagnetic Cloak at Microwave Frequencies, Science 314, 977 (2006).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 36'
+      location: 'References, entry [36]'
   - id: cw37
     added_date: '2026-05-25'
     citation_key: '37'
@@ -699,7 +699,7 @@ cited_works:
       (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 37'
+      location: 'References, entry [37]'
   - id: cw38
     added_date: '2026-05-25'
     citation_key: '38'
@@ -711,7 +711,7 @@ cited_works:
       (2009).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 38'
+      location: 'References, entry [38]'
   - id: cw39
     added_date: '2026-05-25'
     citation_key: '39'
@@ -723,4 +723,4 @@ cited_works:
       Refractive Index at Optical Wavelengths, Science 315, 47 (2007).
     source:
       path: government/dird-07-invisibility-cloaking-20100302.pdf
-      location: 'p. 30, ref 39'
+      location: 'References, entry [39]'

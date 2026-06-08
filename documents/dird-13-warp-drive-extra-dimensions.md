@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf](../sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -341,7 +339,7 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 |---|---|
 | Attributed to | DIRD #13 (Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions), 2 April 2010 |
 | Source | [archived source](../sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf) |
-| Location | Section 7.3 Higher Dimensions and Stabilization, false-vacuum-minima paragraph (first half, p. 19) |
+| Location | Section 7.3 Higher Dimensions and Stabilization, false-vacuum-minima paragraph (first half) |
 
 ---
 
@@ -353,7 +351,7 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 |---|---|
 | Attributed to | DIRD #13 (Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions), 2 April 2010 |
 | Source | [archived source](../sources/government/dird-13-warp-drive-extra-dimensions-20100402.pdf) |
-| Location | Section 7.3 Higher Dimensions and Stabilization, false-vacuum-minima paragraph (second half, p. 20) |
+| Location | Section 7.3 Higher Dimensions and Stabilization, false-vacuum-minima paragraph (second half) |
 
 ---
 
