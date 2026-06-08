@@ -1975,6 +1975,11 @@ structured path field (`affiliations[].organization_path`,
 `relationships[].person_path`, a program / event path) exactly as in an
 inline prose wrap.
 
+A named theory, equation, or referenced work the prose *discusses* — as
+opposed to merely listing it in `## References` — is itself a document
+node: wrap it `[`/documents/{slug}`]` (e.g. the Drake equation →
+`/documents/drake-equation`).
+
 **Two carve-outs, and only two:**
 
 - **Verbatim `quote.text` is never wrapped** — a source's own words stay
