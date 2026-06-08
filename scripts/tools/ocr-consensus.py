@@ -553,6 +553,57 @@ def parse_pages(spec):
     return sorted(out)
 
 
+def _paddle_fill_page(pdf, page_num, two_column, dpi):
+    """PaddleOCR-fill one content-blocked page and return its text.
+
+    A blocked page is one the VLM content filter refused to *reproduce* (e.g. a
+    copyrighted excerpt or a flagged passage); PaddleOCR is a non-generative OCR
+    engine and is not content-blocked, so it reads the page image fine. A
+    two-column page is cropped into left/right halves and OCR'd in reading order —
+    a whole-page PaddleOCR pass interleaves the two columns into scrambled text."""
+    with tempfile.TemporaryDirectory(prefix=f"ocrfill-p{page_num}-") as tmp:
+        subprocess.run(
+            ["pdftoppm", "-png", "-r", str(dpi), "-f", str(page_num), "-l", str(page_num),
+             str(pdf), str(Path(tmp) / "pg")],
+            check=True, capture_output=True,
+        )
+        imgs = sorted(Path(tmp).glob("pg*.png"))
+        if not imgs:
+            raise SystemExit(f"blocked-page fill: page {page_num} produced no image")
+        if two_column:
+            from PIL import Image  # noqa: PLC0415
+            im = Image.open(imgs[0])
+            w, h = im.size
+            mid = int(w * 0.5)
+            left, right = Path(tmp) / "L.png", Path(tmp) / "R.png"
+            im.crop((0, 0, mid, h)).save(left)
+            im.crop((mid, 0, w, h)).save(right)
+            return run_paddleocr([left]) + "\n" + run_paddleocr([right])
+        return run_paddleocr([imgs[0]])
+
+
+def fill_blocked_pages(pdf, pages_dir, blocked, two_column, dpi):
+    """Write a PaddleOCR fill into ``{pages_dir}/pNN.txt`` for every blocked page
+    that has no (non-empty) per-page VLM file yet, and return the pages filled.
+
+    This is the step the VLM producer cannot do — the content filter blocks
+    *reproducing* a blocked page, so PaddleOCR fills its slice. Performing it here
+    (rather than leaving it a manual ``pdftoppm | paddle`` step the contributor
+    improvises) is what makes ``--blocked-pages`` safe: a blocked page can never be
+    silently absent from the assembled sibling. A page already produced by the VLM
+    (non-empty ``pNN.txt``) is left untouched."""
+    pages_dir = Path(pages_dir)
+    filled = []
+    for n in blocked:
+        target = pages_dir / f"p{n:02d}.txt"
+        if target.exists() and target.read_text(encoding="utf-8").strip():
+            continue
+        target.write_text(_paddle_fill_page(pdf, n, n in two_column, dpi) + "\n",
+                          encoding="utf-8")
+        filled.append(n)
+    return filled
+
+
 def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
     """Rasterize the PDF and run both OCR engines on the whole document.
 
@@ -669,6 +720,19 @@ def cmd_run(args):
         )
 
     blocked = parse_pages(args.blocked_pages)
+    two_column = set(parse_pages(getattr(args, "two_column_pages", None)))
+
+    # Fill any content-blocked page the VLM couldn't reproduce BEFORE assembling
+    # the sibling, so a blocked page is never silently missing (the footgun this
+    # closes). Only --vlm-pages mode has a per-page dir to fill into; a --vlm
+    # pre-concatenated base must already include its blocked pages.
+    if args.vlm_pages and blocked:
+        filled = fill_blocked_pages(pdf, args.vlm_pages, blocked, two_column, args.dpi)
+        if filled:
+            tc = sorted(two_column & set(filled))
+            print(f"      PaddleOCR-filled blocked page(s): {','.join(map(str, filled))}"
+                  + (f"  (two-column, column-split: {','.join(map(str, tc))})" if tc else ""))
+
     print(f"[1/2] Rasterizing {pdf.name} at {args.dpi} dpi + OCR ...")
     tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
 
@@ -677,6 +741,15 @@ def cmd_run(args):
     if args.vlm_pages:
         base_text, page_starts = _concat_pages(args.vlm_pages)
         vlm_skipped = False
+        # Footgun guard: every declared blocked page must now carry content, so the
+        # sibling cannot ship with a silent gap where the VLM was blocked.
+        gap = [n for n in blocked
+               if not (Path(args.vlm_pages) / f"p{n:02d}.txt").exists()
+               or not (Path(args.vlm_pages) / f"p{n:02d}.txt").read_text(encoding="utf-8").strip()]
+        if gap:
+            raise SystemExit(
+                f"blocked page(s) {gap} still have no content after fill — the sibling "
+                f"would ship with a gap. (Blocked-page fill needs --vlm-pages mode.)")
     elif args.vlm:
         base_text = Path(args.vlm).read_text(encoding="utf-8")
         vlm_skipped = False
@@ -862,9 +935,14 @@ def main():
     p_run.add_argument("--dpi", type=int, default=300)
     p_run.add_argument("--force", action="store_true", help="overwrite an existing sibling (backfill)")
     p_run.add_argument("--blocked-pages", metavar="SPEC", default=None,
-                       help="pages the VLM was content-blocked on and PaddleOCR filled "
-                            "(e.g. '5-7,10,14-15'); on each, print PaddleOCR-vs-Tesseract "
-                            "divergences (the only mechanical check on a paddle-filled page)")
+                       help="pages the VLM content filter blocked; the tool PaddleOCR-FILLS "
+                            "each into the --vlm-pages dir (so it is never silently dropped), "
+                            "then prints the PaddleOCR-vs-Tesseract check (e.g. '5-7,10,14-15'). "
+                            "Mark any two-column ones with --two-column-pages.")
+    p_run.add_argument("--two-column-pages", metavar="SPEC", default=None,
+                       help="subset of --blocked-pages that are two-column; each is "
+                            "column-split (left half then right) before the PaddleOCR fill so "
+                            "the two columns don't interleave into scrambled text (e.g. '30')")
     p_run.set_defaults(func=cmd_run)
 
     p_vfy = sub.add_parser(

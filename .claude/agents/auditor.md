@@ -29,6 +29,11 @@ Audit goals:
    quote is only caught against the original. Correct or remove any quote that
    the page image doesn't bear out. (The sibling was confirmed against PaddleOCR
    at prep time per `/prepare-ocr-sibling`; this is the second, uncorrelated read.)
+   Check the locator **form**, not just precision: a sibling-backed source's
+   `location` is a descriptive content anchor, **not** `p. N` — do not "correct" it
+   toward a physical-page integer (a markerless sibling has none to verify;
+   `meta/conventions.md` "Quote location refs"). Flag a `p. N` on a sibling-backed
+   quote as a form issue for the Builder, never page-image-hunt to make it precise.
 3. **Prose-drift** — re-run `validate-research.py`; the free-prose synthesis
    fields + `vouching_chain.attestation` are a zero-ungrounded-token hard gate.
    Each unmatched token resolves to source-matched prose OR is captured as

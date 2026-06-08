@@ -3,15 +3,13 @@ name: prepare-ocr-sibling
 description: Produce a clean-text .txt sibling for an OCR-scanned primary source via a VLM page-image read, then confirm it against PaddleOCR (a different tool). An OCR-scan source's pdftotext layer is corrupt, so verbatim quotes cannot be derived from it until a trustworthy sibling exists. Use before building or quoting a source flagged extraction_type ocr-scan / extraction-lossy that has no sibling; /build step 4b directs here.
 argument-hint: {category}/{filename}.pdf
 allowed-tools:
-  - Agent(general-purpose)
+  - Agent(ocr-page-producer, ocr-page-verifier)
   - Read
   - Edit
   - Bash(python3 scripts/tools/ocr-consensus.py *)
   - Bash(python3 scripts/tools/manifest.py *)
   - Bash(cat *)
   - Bash(pdfinfo *)
-  - Bash(pdftoppm *)
-  - Bash(tesseract *)
 ---
 
 # Prepare an OCR-scan clean-text sibling, then confirm it
@@ -61,37 +59,23 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    `.txt` sibling already exists. Note the parent URL (needed to register the
    pairing) and the page count (`pdfinfo`).
 
-2. **Produce the VLM page-image read — per-page chunked.** Dispatch
-   `Agent(general-purpose)` producers that read the source's page IMAGES (`Read`
-   with `pages: "N"` — **one page at a time**) and **write each page to its own
-   scratch file before reading the next** (e.g. `/tmp/{stem}/pNN.txt`,
-   zero-padded). Per-page writes are load-bearing: the content filter blocks model
-   *output* (reproducing a passage), and a block kills the agent turn — per-page
-   isolation means a block costs one page, not the whole run, and the set of
-   written files is a blocked-page ledger. Parallel producers can split disjoint
-   page ranges; for ranges that die mid-block, dispatch one producer **per missing
-   page** to find which pages block *in isolation*.
+2. **Produce the VLM page-image read.** Dispatch **`Agent(ocr-page-producer)`**,
+   one per disjoint page range, in a single message so they run concurrently. Pass
+   each, and only: the **source PDF path**, its **page range** `A–B`, and the
+   **output directory** (`/tmp/{stem}/`). The producer contract owns the rest —
+   the per-page-write-before-next isolation, the verbatim transcription discipline,
+   and the skip-a-blocked-page rule. Do **not** restate that discipline in the
+   dispatch (the contract is the source of truth; an improvised instruction would
+   override it).
 
-   Transcription discipline (per `meta/conventions.md` "Producing the `.txt`
-   sibling"): reproduce body prose character-for-character including the
-   document's own typos and spellings (do NOT correct); preserve redaction
-   markers and banners verbatim; render equations/figures/diagram interiors as
-   bracketed placeholders (`[Figure N: …]`); transcribe every physical page
-   including any third-party FOIA / distribution cover-insert (e.g. a Black Vault
-   page); reproduce TOC entries without dot-leader runs; no synthetic page-break
-   markers.
-
-   **Genuinely-blocked pages → PaddleOCR-fill (produce ≠ verify).** The content
-   filter blocks model *output* — *reproducing* a passage — so the VLM cannot
-   **produce** a blocked page. PaddleOCR can: rasterize that one page and fill its
-   slice from **PaddleOCR** (the better OCR engine, not content-blocked: `pdftoppm
-   -png -r 300 -f N -l N …`, then run that page through `ocr-consensus.py`'s
-   PaddleOCR path). **Keep the page numbers** — they are the blocked-page ledger,
-   needed for `--blocked-pages` in step 3 and the `Content Block` field in step 5.
-   The VLM still **verifies** these pages in step 3: judging PaddleOCR's pull
-   against the image (or pinpointing a wrong token) is a tiny output, not
-   reproduction, so it is not blocked — the high-fidelity check survives even
-   though the high-fidelity *transcription* didn't.
+   Read each producer's returned report (pages written vs. pages skipped). A
+   skipped page is content-blocked; **for ranges that died mid-block, re-dispatch
+   `Agent(ocr-page-producer)` one page per range** to find which pages block *in
+   isolation* (a producer turn ends when the content filter blocks its output, so a
+   range agent can't continue past a blocked page on its own). The set of written
+   `pNN.txt` files is the blocked-page ledger; collect the still-missing page
+   numbers — those are the `--blocked-pages` argument the tool fills in step 3. You
+   never `pdftoppm`/PaddleOCR-fill by hand: that is now the tool's job (step 3).
 
 3. **Write the sibling + confirm it against PaddleOCR.** Pass the **per-page
    directory** so the tool concatenates it and can tag every divergence with its
@@ -101,51 +85,41 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    `tail`/`head`**, which silently drops the bulk of the report:
    ```
    python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
-       --vlm-pages /tmp/{stem} [--blocked-pages 12,31] [--force] \
+       --vlm-pages /tmp/{stem} --blocked-pages 9-11,29-30 --two-column-pages 30 [--force] \
        > /tmp/{stem}-confirm.txt 2>&1
    ```
-   `run` writes the VLM text as the sibling `.txt`, then re-reads the pages with
-   PaddleOCR + Tesseract and prints the **load-bearing divergence report**: every
-   word/number where the sibling and the OCR engines disagree (document structure
-   — punctuation, bullets, banners, figure labels — is never compared). `Read`
-   `/tmp/{stem}-confirm.txt`. Pass `--blocked-pages` the ledger from step 2
-   (accepts ranges, e.g. `5-7,10,14-15`). `--force` regenerates an existing sibling
-   (backfill). Heed any `⚠ COVERAGE WARNING`: a large contiguous run of
-   OCR-corroborated tokens missing from the base means the VLM dropped a
-   paragraph/page — recover it before proceeding.
+   Pass `--blocked-pages` the ledger of pages the producers skipped (step 2; accepts
+   ranges, e.g. `5-7,10,14-15`), and `--two-column-pages` the subset of those that
+   are two-column. The tool **PaddleOCR-fills** each blocked page into the
+   `--vlm-pages` dir before assembling the sibling — column-splitting the two-column
+   ones (left half then right) so they don't interleave into scrambled text — so a
+   blocked page is **never silently dropped** (it hard-errors if a declared blocked
+   page would still be empty). It then writes the sibling, re-reads every page with
+   PaddleOCR + Tesseract, and prints the **load-bearing divergence report**: every
+   word/number where the sibling and the OCR engines disagree (document structure —
+   punctuation, bullets, banners, figure labels — is never compared). `--force`
+   regenerates an existing sibling (backfill). `Read` `/tmp/{stem}-confirm.txt`. A
+   `⚠ COVERAGE WARNING` now means the VLM dropped a region the tool did **not** fill
+   (a page missing from `--blocked-pages`, or a mid-page omission) — recover it
+   before proceeding.
 
-   **The report is partitioned — verify the HIGH-SIGNAL set against the page
-   images; skim the weak set.**
-   - **HIGH-SIGNAL** (`both OCR engines read the same token, differing from the
-     sibling`) is the set you MUST settle. Each row is **either** a VLM misread
-     to fix **or** a shared OCR glyph-confusion where the sibling is right
-     (`µm→um`, `SiO2→SiOz`, `λ_0→Ao`) — and **the page image is the only thing
-     that tells them apart.** For **every** high-signal row: `Read` the PDF at its
-     reported page (`pages: "N"` — the `p.N` in the row), find the token in the
-     image, and decide the true reading **from the image**. Where the VLM
-     misread, **correct the sibling** with `Edit` (it is the canonical text — fix
-     it now, before any quote derives from it); where the OCR engines share a
-     glyph error, leave the sibling as-is.
-   - **Do NOT decide a high-signal row from the surrounding sibling text or
-     grammatical plausibility.** That re-trusts the VLM against itself — exactly
-     the silent-misread failure (`81→82`, `Klyshko→Kiyshko`) PaddleOCR exists to
-     catch. "It reads fine in context" is not verification; opening the page
-     image is. This image pass happens **here**, not deferred to the node audit.
-   - **weak** (`no single OCR reading corroborated`) is dominated by
-     struck-through banners, bracketed `[Figure N: …]`/`[Equation N: …]`
-     placeholder text, and per-engine glyph noise. Skim it; open the page image
-     only where a weak row lands on **body prose** (a real word the sibling may
-     have dropped or mangled), not on banner/figure furniture.
+   **Settle the flagged divergences against the page images.** Dispatch
+   **`Agent(ocr-page-verifier)`**, one per disjoint page range that carries flagged
+   rows (HIGH-SIGNAL or blocked-page), in a single message so they run concurrently.
+   Pass each, and only: its **page range**, the **sibling path**, the **report
+   path** (`/tmp/{stem}-confirm.txt`), and the **source PDF path**. The verifier
+   contract owns the rest — the leave/fix decision (decide each token from the page
+   image, never from surrounding text), the blocked-page handling, and the
+   content-filter-safe posture (token-level only; a blocked page blocks the
+   verifier's output too if it reproduces a passage). Do **not** restate that
+   discipline in the dispatch.
 
-   **VLM-verify each blocked page.** For a blocked page the sibling text *is* the
-   PaddleOCR fill, so the sibling-vs-engines diff is silent there — `--blocked-pages`
-   instead prints the **PaddleOCR-vs-Tesseract** disagreements (the two engines'
-   highest-risk tokens). For each blocked page: read its page image and **verify**
-   PaddleOCR's fill (the VLM can judge it even though it couldn't produce it),
-   paying special attention to the flagged PaddleOCR-vs-Tesseract tokens; correct
-   the sibling where PaddleOCR misread. Re-run to confirm clean:
+   Each verifier returns a `LINE … | FIND: … | REPLACE: …` correction list. **You**
+   apply each with `Edit` on the sibling — centrally, so parallel verifiers never
+   race on the file — confirming each `FIND` matches exactly once first. Then re-run
+   to confirm clean:
    ```
-   python3 scripts/tools/ocr-consensus.py verify sources/{category}/{stem}.pdf [--blocked-pages 12,31]
+   python3 scripts/tools/ocr-consensus.py verify sources/{category}/{stem}.pdf [--blocked-pages 9-11,29-30]
    ```
    `verify` re-confirms the on-disk sibling without regenerating it. Repeat until
    the only remaining divergences are OCR errors on a correct sibling. The sibling

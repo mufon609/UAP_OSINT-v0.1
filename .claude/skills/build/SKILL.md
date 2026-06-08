@@ -70,11 +70,19 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 | 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `cross_ref_candidates`, `background_material`, `cited_works`) |
 | 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
 | 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `adjacent_needs_update[]` |
+| 4b/4c sibling gate *(Skill, not Agent)* | the `{source-path}` (4b) / `{slug}` (4c) — nothing more | a registered, verified sibling |
 
 These are inputs, not interpretation. `linked_nodes` is a **required input
 field** for the builder — check that it is present and relayed, not *how* the
 builder reads it; the contract owns that. (Step↔role numbering matches the table
 in `../../../prompts/topology.md` "The shape".)
+
+**The same rule applies to the sibling sub-skills (4b/4c).** Relay only the
+`{source-path}` / `{slug}` to `/prepare-ocr-sibling` / `/prepare-transcript-sibling`
+— the sub-skill **and its own agent contracts** (`ocr-page-producer`,
+`ocr-page-verifier`, the attribution agents) own the transcription, fill, and
+verification discipline. Do not re-author that discipline into the sub-skill
+invocation; the relay/contract split holds one level down too.
 
 1. **`Agent(internal-investigator)`** with the target. Read its stub:
    `linked_nodes`, `reusable_sources`, `gaps`, `all_internal`.

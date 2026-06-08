@@ -49,10 +49,15 @@ Input: `{slug}`, one `{source-path}`, its `/tmp/scratch-{slug}-N.txt`, and
 `worker_kind`.
 
 Location form follows the **source's shape, not the file extension**
-(`meta/conventions.md` "Quote location refs"): paginated pdf → `"p. N, ¶M"`;
-single-page memo → `¶N`; collapsed html block → `¶ <leading phrase>`
-(ctrl-F-able); caption → `"[MM:SS]"` (no `speaker_id` — the Builder derives it);
-foia → `¶N` / `p. N` /
+(`meta/conventions.md` "Quote location refs"): paginated text-native pdf →
+`"p. N, ¶M"`; **a sibling-backed OCR-scan / extraction-lossy source → a
+descriptive content anchor** (a named block, section title, or reference entry —
+e.g. `Administrative Note`, `section "…"`, `References, entry [3]`), **NOT
+`p. N`** — the `.txt` sibling is markerless, so a page integer can be neither read
+off it nor verified (read that convention's sibling-backed row; do not apply the
+`p. N` shortcut to a sibling source); single-page memo → `¶N`; collapsed html
+block → `¶ <leading phrase>` (ctrl-F-able); caption → `"[MM:SS]"` (no
+`speaker_id` — the Builder derives it); foia → `¶N` / `p. N` /
 `Doc N` with redaction + OCR artifacts preserved verbatim. A fact living only
 in extracted metadata (e.g. a PDF Author byline) is a `cross_ref_candidate`
 naming the metadata field, never a `quotes[]` entry.

@@ -25,7 +25,11 @@ In order, with a check after each (build-protocol → run
    each fragment's `quotes[]` + `background_material[]` + `cross_ref_candidates[]`
    + `cited_works` (document sources) into the scaffolded artifact in one
    deterministic pass (workers do not write it, so there's no race), introducing
-   only material a worker surfaced. **`cited_works` is the three-state
+   only material a worker surfaced. Pass each quote's `source.location` through as
+   the worker emitted it — do **not** "normalize" a sibling-backed OCR-scan
+   source's locator toward `p. N`; that source's form is a descriptive content
+   anchor by design (`meta/conventions.md` "Quote location refs"), and a markerless
+   sibling has no verifiable physical page. **`cited_works` is the three-state
    affirmation** (`meta/conventions.md` "cited_works affirmation"): a worker
    fragment may carry the scalar `NONE` / `IGNORED` instead of a list — pass
    the scalar through verbatim (no list-union semantics on a string). The
