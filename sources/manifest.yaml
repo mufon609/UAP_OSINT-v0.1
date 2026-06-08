@@ -1117,6 +1117,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #30 — ''Aneutronic Fusion Propulsion I'', DIA-08-1011-003, ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 50 pages. DIA attachment #26 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. V. Teofilo, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_30-DIRD_Aneutronic_Fusion_Propulsion.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-30-aneutronic-fusion-propulsion-2010.txt
+    archived_date: '2026-06-08'
+    note: Clean-text sibling (VLM page-image read of all 50 pages, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-30 'Aneutronic Fusion Propulsion I'. Produced 2026-06-08; no pages were content-blocked (all 50 VLM-read). One VLM misread corrected against the page image (p.29 'has'->'have' resulted); all other high-signal divergences settled as shared OCR glyph-confusion on a correct sibling (flattened sub/superscript nuclide notation, struck-through banner words, URL fragments). The struck-through 'UNCLASSIFIED//FOR OFFICIAL USE ONLY' banner is preserved verbatim as plain text (strikethrough styling not represented); equations and figures are bracketed as [Equation N]/[Figure N] placeholders; FOIA redaction markers ((b)(3):10 USC 424, (b)(6)), the Black Vault FOIA distribution insert, and source spellings/typos (e.g. 'U-355', 'magnetohydrodyanamic', 'Sakarov', 'holraum', 'VASMIR'/'VISMIR', 'Deadalus', 'Intersteller', 'Mofied', 'http;//', 'Error! Reference source not found.') preserved verbatim.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_31-DIRD_Detection_and_High_Resolution_Tracking_of_Vehicles_at_Hypersonic_Velocities.pdf
   status: archived
   artifacts:
