@@ -1027,6 +1027,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #25 — ''An Introduction to the Statistical Drake Equation'', ICOD 1 December 2009 (confirmed page 1; series ''Acquisition Threat Support''), dated 11 March 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 56 pages. DIA attachment #15 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. Claudio Maccone, International Academy of Astronautics (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_25-DIRD_An_Introduction_to_the_Statistical_Drake_Equation.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-25-statistical-drake-equation-2010.txt
+    archived_date: '2026-06-07'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned AAWSAP DIRD #25 ''An Introduction to the Statistical Drake Equation'' (DIA attachment 15; Dr. Claudio Maccone, International Academy of Astronautics). Produced 2026-06-07 via multimodal page-image read of all 56 pages. Pages 9, 10, 11, 29, 30 were content-blocked for the VLM (pages 9-11 reproduce a copyrighted Carl Sagan ''Cosmos'' excerpt; page 30 is the two-column formal ''1. INTRODUCTION'') and were PaddleOCR-filled instead -- page 30 was column-split (left column then right) to avoid two-column interleave; the blocked pages'' prose tokens were image-verified and corrected (e.g. Devised in 1960, ExtraTerrestrial, the Ns/fl/fc/fL factor variables, http://www.maccone.com, 350 billions, estimate, receiving). The Black Vault declassification-distribution insert (physical PDF p.2) is preserved verbatim. Remaining HIGH-SIGNAL OCR divergences are shared PaddleOCR/Tesseract glyph-confusions on a correct sibling (equation/cquation, area/arca, D_i subscripts OCR flattened). Equations/figures/tables rendered as bracketed placeholders; struck-through FOUO banners and source typos (''Bennet'' one-t in References) preserved verbatim. Validator (extract_source_text) prefers this same-stem .txt over the OCR-corrupted pdftotext layer.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_26-DIRD_Anomalous_Acute_and_Subacute_Field_Effects_on_Human_Biological_Tissues.pdf
   status: archived
   artifacts:
