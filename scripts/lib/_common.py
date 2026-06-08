@@ -938,14 +938,25 @@ def extract_source_text(source_path):
         except OSError:
             result = None
     if result is not None:
-        # Merge line-wrap hyphenation (`Geospatial-\nIntelligence`) but NEVER
-        # across a form feed. `\s` includes `\f`, so the old `-\s+` swallowed
-        # the page separator after a page-final hyphen — a footer page number
-        # (`- 1 -`) or a word hyphenated at the very bottom of a page —
-        # silently merging that page into the next and shifting every
-        # downstream `p. N` split. Whitespace-minus-form-feed keeps the merge
-        # but preserves page boundaries.
-        result = re.sub(r"-[ \t\r\n\v]+", "-", result)
+        # Merge line-wrap hyphenation (`Geospatial-\nIntelligence`) — but only
+        # when a line break actually separates the two halves, and NEVER across
+        # a form feed. Two failure modes this guards:
+        #   1. Form feed: `\s` includes `\f`, so a bare `-\s+` swallowed the page
+        #      separator after a page-final hyphen — a footer page number
+        #      (`- 1 -`) or a word hyphenated at the very bottom of a page —
+        #      silently merging that page into the next and shifting every
+        #      downstream `p. N` split.
+        #   2. Suspended hyphen: `-\s+` (and the form-feed-excluding
+        #      `-[ \t\r\n\v]+`) also ate the space in a same-line suspended
+        #      compound — "ground/sea- or airborne-launched" (= "sea-launched or
+        #      airborne-launched") collapsed to "sea-or", corrupting the scratch
+        #      and the prose-drift token pool while the hyphen-agnostic verbatim
+        #      matcher stayed silent (only an image re-read catches it).
+        # A real line-wrap hyphen is always followed by a newline; a suspended
+        # or compound hyphen mid-line is followed by a space. Gate the merge on
+        # an embedded line break (`[\r\n\v]`, never `\f`) so the wrap still joins
+        # but the same-line space survives.
+        result = re.sub(r"-[ \t]*[\r\n\v]+[ \t]*", "-", result)
     _source_text_cache[source_path] = result
     return result
 
