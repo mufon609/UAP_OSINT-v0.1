@@ -2037,27 +2037,6 @@ source content not reflected in the node, and `link-suggest.py`
 surfaces named entities in the prose not yet wrapped — both are
 contributor aids, not the discretion boundary.
 
-### Related cross-reference rules — pending review
-
-Three further rules are the same "name it, wrap it" principle applied to a
-recurring spot. They currently live inside other discussions and are
-slated for a proper review/condense into this section; **relocated here by
-reference 2026-06-08, not yet folded in.** Until then, find them at:
-
-- **A source naming an entity under a non-canonical form** — wrap the
-  canonical `/{type}/{slug}` path around the source's verbatim spelling (so
-  the prose-drift check still matches) and register a `naming_quirks`
-  entry. See the subsection *A source naming an entity under a
-  non-canonical form — flag it, stub it*.
-- **Extrinsic facts → carry navigationally** — a fact only an outside
-  source attests is carried by the cross-reference link, never asserted in
-  this node's `description` prose. See the paragraph *The pool is the
-  node's own source TEXT — extrinsic metadata is not credited*.
-- **Link direction — references run downward** — source → entity → finding
-  → investigation, with entity ↔ entity the lone same-tier exception. See
-  *Tier model and linking contract*, under *Three-layer evidentiary
-  architecture*.
-
 ---
 
 ## Primary sources and archival
