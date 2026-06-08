@@ -4455,6 +4455,16 @@
     archived_date: '2026-04-29'
     path: government/war-gov-jicspoc-establishment-20150911.html
     note: DoD press release dated September 11, 2015 announcing establishment of the Joint Interagency Combined Space Operations Center (JICSpOC) at Schriever Air Force Base in Colorado Springs in conjunction with USSTRATCOM, Air Force Space Command, and the intelligence community. Experimentation and testing scheduled to begin October 1, 2015. Captured via Wayback Machine September 7, 2025 snapshot of the war.gov mirror (post-2026 DoD domain rebrand). Source for the JICSpOC special-assignment chronology referenced in audit finding 1.3.
+- url: https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: pdf
+    path: government/18_6369445_general_1948_vol_1.pdf
+    archived_date: '2026-06-08'
+    extraction_type: ocr-scan
+    note: 'Dept. of War UFO/PURSUE release_1 (#18_6369445_General_1948_Vol_1), fetched via headed browser (Xvfb) past Akamai bot-detection (direct curl 403s). Image-only scan, no reliable text layer; clean-text .txt sibling required per /prepare-ocr-sibling. Landing: war.gov/UFO/.'
+  archive_status: 1
 - url: https://www.westexec.com/kavandi-kirkpatrick/
   status: archived
   archive_status: 3

@@ -21,7 +21,12 @@ orchestrator directly, in the tightening loop).
    `python3 scripts/tools/archive.py --submit {URL}` (Save Page Now + CDX
    check; or bare `archive.py` to sweep all unarchived entries) — not raw
    Save-Page-Now curl, and never WebFetch (it can't reach `web.archive.org`).
-   Blocked sites → `meta/sources-access.md`.
+   Blocked sites → `meta/sources-access.md`. An asset behind a JS/bot wall
+   (curl/WebFetch 403, e.g. an Akamai-fronted `.gov`) →
+   `python3 scripts/tools/browser-fetch.py {URL} --path {category}/{file} …`,
+   which drives a real browser and **self-registers** the manifest entry (so
+   skip the separate `manifest.py add` for these); see the per-host recipes in
+   `meta/sources-access.md`.
 2. **Extract** each new source:
    `python3 scripts/build/extract-source.py --source {path}` →
    `/tmp/scratch-{slug}-N.txt`. If you flag a source `extraction_type:

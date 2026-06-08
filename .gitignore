@@ -66,6 +66,12 @@ sources/photo-identity-log/index.csv
 # because PaddleOCR's footprint is heavy.
 .venv-ocr/
 
+# Project-local venv for Playwright + Chromium behind browser-fetch.py (the
+# bot-walled-asset fetcher). Created by setup-browser-fetch.sh; browser-fetch.py
+# auto-relaunches under .venv-browser/bin/python3 when it exists. Kept separate
+# because the bundled Chromium build is large.
+.venv-browser/
+
 # Derived baseline-encoding cache (128-d dlib embeddings of every baseline
 # crop). Rebuilt on demand from the committed baselines/ via a sha256
 # fingerprint — never authoritative, never committed.

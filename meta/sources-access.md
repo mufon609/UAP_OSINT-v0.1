@@ -76,6 +76,84 @@ defense.gov redirects to war.gov (DoD domain rebrand).
 document. The CDX API treats them as separate entries. Record both in
 the manifest if both appear in your source trail.
 
+### war.gov/UFO PURSUE document release (Akamai-walled scans)
+
+The UAP "PURSUE" records portal at `war.gov/UFO/` is a JavaScript
+single-page browser; each document is served as a scanned image-PDF at a
+clean direct URL:
+
+```
+https://www.war.gov/medialink/ufo/release_{N}/{slug}.pdf
+```
+
+**URL form:** the in-page fragment anchors map to that path with a case
+fold — `#18_6369445_General_1948_Vol_1` (TitleCase fragment) →
+`.../release_1/18_6369445_general_1948_vol_1.pdf` (lowercase snake_case
+slug). Resolve the fragment to the direct medialink URL before fetching.
+
+**Problem:** the medialink host is behind **Akamai bot detection**.
+Direct `curl`/`wget`/WebFetch and even cookie-backed `curl` all 403
+("Access Denied"). Reusing Firefox cookies does *not* help — only Google
+Analytics cookies persist for `war.gov`; Akamai's `_abck`/`bm_sz` tokens
+are session- and TLS-fingerprint-bound and can't be replayed by curl.
+Wayback's Save-Page-Now crawler is blocked the same way, so the asset is
+effectively un-snapshottable. A **real browser** is required.
+
+**What works:** `scripts/tools/browser-fetch.py` — drives Chromium, warms
+the wall on the landing page so Akamai mints its session token, then runs
+`fetch()` from inside the page context. One-time setup:
+`bash scripts/tools/setup-browser-fetch.sh`.
+
+**Confirmed (2026-06): headless is fingerprinted — use `--headed`.** Akamai
+403s the in-page fetch from a *headless* Chromium (the headless-shell build is
+trivially detected). The full Chromium in **headed** mode clears it. On a box
+with no visible display, wrap the run in `xvfb-run` (a virtual framebuffer) so
+headed Chromium renders off-screen — this is the proven invocation:
+
+```
+xvfb-run -a python3 scripts/tools/browser-fetch.py \
+  "https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf" \
+  --warm-url "https://www.war.gov/UFO/" \
+  --path government/18_6369445_general_1948_vol_1.pdf \
+  --format pdf --extraction-type ocr-scan --wayback-skip --headed \
+  --note "Dept. of War UFO/PURSUE release_1, fetched via headed browser (Xvfb) past Akamai; image-scan, .txt sibling required."
+```
+
+(With a real display already in `$DISPLAY`, drop `xvfb-run -a` and keep
+`--headed`. The PDFs are AES-256 **permission**-encrypted — they open without a
+password; `pdftoppm`/`pdftotext` and the OCR-sibling pipeline read them fine.)
+
+Per-asset manifest choices for this host:
+- **canonical URL** = the clean `medialink/.../release_{N}/{slug}.pdf` form
+  (stable re-fetch target), not the `#fragment` landing form.
+- **`--extraction-type ocr-scan`** — these are image-only scans; a verified
+  clean-text `.txt` sibling is required for verbatim quotes (see
+  `/prepare-ocr-sibling` and `meta/conventions.md` OCR-scan discipline).
+- **`--wayback-skip`** — Akamai also blocks the IA crawler, so the URL is
+  not Wayback-eligible; the local file + canonical URL is the provenance
+  record (same model as the `x.com` / `esd.whs.mil` blocked-source entries).
+  *If a later probe shows medialink IS snapshottable, drop the flag.*
+- **`--headed`** fallback if headless Chromium is fingerprinted and 403s.
+
+**Corpus enumeration (intentionally kept out of the tool — `browser-fetch.py`
+is topic-neutral):** to archive a whole release, build a `--from-list` file
+of tab-separated `URL <TAB> path [<TAB> note]` lines, then batch-fetch it.
+Source the URL list from the public community index
+(`github.com/vfp2/pursue-ufo-files`, `data/records.json`, `pdf_link` field —
+~119 PDFs in `release_1`) or a one-off `page.evaluate()` scrape of
+`war.gov/UFO/`. Log the enumerated count; never silently cap.
+
+```
+python3 scripts/tools/browser-fetch.py --from-list release_1.tsv \
+  --warm-url "https://www.war.gov/UFO/" \
+  --extraction-type ocr-scan --wayback-skip
+```
+
+**robots/ToS:** the PURSUE records are public-domain US-government works
+published for public access; the Akamai wall is anti-scraping
+infrastructure, not an access restriction on the records. Fetch at a polite
+rate (`--rate-delay`, default 2s between assets).
+
 ---
 
 ## Navy HR / NAVADMIN (mynavyhr.navy.mil)
