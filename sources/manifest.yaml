@@ -1099,6 +1099,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #29 — ''Negative Mass Propulsion'', DIA-08-1101-023, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 3 January 2011 (confirmed page 1; note the filename''s ''-2010'' is the corpus-year label, the document is dated January 2011), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 44 pages. DIA attachment #36 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. F. Winterberg, University of Nevada – Reno (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per meta/conventions.md OCR-scan discipline.'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_29-DIRD_Negative_mass_Propulsion.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-29-negative-mass-propulsion-2010.txt
+    archived_date: '2026-06-08'
+    note: Clean-text sibling (VLM page-image read of all 44 pages, confirmed against PaddleOCR + Tesseract) of the OCR-scanned DIRD-29 'Negative Mass Propulsion'. Produced 2026-06-08; no pages were content-blocked (all 44 VLM-read). The struck-through 'UNCLASSIFIED//FOR OFFICIAL USE ONLY' banner is preserved verbatim as plain text (strikethrough styling not represented); equations and figures are bracketed as [Equation N]/[Figure N] placeholders; FOIA redaction markers ((b)(3):10 USC 424, (b)(6)), the Black Vault FOIA distribution insert, and source spellings/typos (e.g. 'Galatic Halos', 'Einsteins's', lowercase sentence-initial 't') preserved verbatim. 83 high-signal OCR divergences all settled as shared OCR glyph-confusion (struck banner, math super/subscripts) on a correct sibling — zero sibling edits.
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_30-DIRD_Aneutronic_Fusion_Propulsion.pdf
   status: archived
   artifacts:
