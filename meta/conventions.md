@@ -31,7 +31,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
 - **Part V — Cross-references & archival**
   - [Cross-references](#cross-references)
-  - [Primary sources and archival](#primary-sources-and-archival)
 - **Part VII — Repository conventions & hygiene**
   - [Versioning](#versioning)
   - [Scope](#scope)
@@ -773,21 +772,6 @@ These wraps drive the broken-link registry and `## Associated Nodes`
 exactly as any other body wrap does (the universal rule above); the three
 classes are called out here only because a media appearance is where they
 are most often missed.
-
-### Primary sources and archival
-
-Every external URL cited in any node is archived locally in
-`/sources/{category}/{filename}` and registered in
-`/sources/manifest.yaml`. The local archive is the integrity guarantee;
-the Internet Archive Wayback Machine submission (via
-`scripts/tools/archive.py`) is insurance.
-
-Citations in prose are direct markdown links to the archived file or
-the manifest entry, not prose references to manifest row numbers.
-
-When a source is blocked or paywalled, the manifest entry records the
-block status and the archival route (if any) is documented on the
-entry. See `sources-access.md` for site-specific workarounds.
 
 #### Paired siblings — the parent is the primary source
 
