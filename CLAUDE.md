@@ -22,6 +22,7 @@ In order:
 2. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
 3. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
 4. `meta/topic/research-queue.md` — current priority build queue
+5. `meta/roadmap.md` + `meta/BACKLOG.md` — active work + deferred items; note anything relevant to this session
 
 Don't skip. Governance docs change between sessions.
 
@@ -244,8 +245,7 @@ their skills, not hand-run.
 Per-script reference — every script in all six subdirectories, with
 flags and design notes: `scripts/README.md`.
 
-Session start: run `/onboard`. **The default build path is the `/build`
-skill** — the orchestrator runs on the main thread and dispatches the
+**The default build path is the `/build` skill** — the orchestrator runs on the main thread and dispatches the
 role subagents in `.claude/agents/` (internal-investigator ·
 external-investigator · archive · worker · builder · auditor); never
 hand-author a node. The standalone skills: `/audit`, `/augment`,

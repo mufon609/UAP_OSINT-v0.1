@@ -1,8 +1,8 @@
 # Prompts
 
 The operational build workflow lives in the toolkit as **skills and
-subagents** under `.claude/` — invoke them (e.g. `/build`, `/onboard`,
-`/audit`), don't paste them. What remains here is the **Claude-Web briefs**
+subagents** under `.claude/` — invoke them (e.g. `/build`, `/audit`),
+don't paste them. What remains here is the **Claude-Web briefs**
 (a separate surface that has no `.claude/` skill). The pipeline map lives in
 `.claude/skills/build/SKILL.md` ("The shape"); the shared role contract is
 `.claude/skills/build-protocol/`.

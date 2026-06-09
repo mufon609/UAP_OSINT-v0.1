@@ -45,7 +45,7 @@ If you're doing anything related to this instance's topic, read
 
 | Your task | How |
 |---|---|
-| Start a session here | run `/onboard` |
+| Start a contributor session | read `CLAUDE.md` (auto-loaded for Claude Code) — the session-start checklist |
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `CLAUDE.md` → run `/build` |
 | Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |

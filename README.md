@@ -88,7 +88,7 @@ media/ locations/ findings/ investigations/
                             content nodes (human-readable narrative)
 
 .claude/
-  skills/                   invokable workflows — /build, /onboard, /audit,
+  skills/                   invokable workflows — /build, /audit,
                             /augment, /verify-transcript, /quote-relevance-audit,
                             /archive-sweep, /prepare-ocr-sibling,
                             /prepare-transcript-sibling, /fork-init — plus the
@@ -227,7 +227,6 @@ conventional.
 
 | Skill | What it does | Pipeline position |
 |---|---|---|
-| `/onboard` | Read the governing docs, health-check, report build state | Session start |
 | `/build` | Build or rebuild a node through the six-role pipeline | The pipeline orchestrator |
 | `/prepare-ocr-sibling` | Produce + verify a clean-text sibling for an OCR-scanned source | `/build` step-4b sibling gate; also standalone |
 | `/prepare-transcript-sibling` | Produce + verify a speaker-attribution sibling for a label-less transcript (auto-caption / Whisper) | `/build` step-4c sibling gate; also standalone |
