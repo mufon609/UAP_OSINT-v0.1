@@ -735,66 +735,6 @@ flagged token drives to one of two outcomes:
   row, a `quotes[]` entry — pick the surface that carries the
   variance's evidentiary meaning).
 
-**Resolution paths for common error shapes:**
-
-1. **Word-form variant** (`preparing` vs source `prepare`,
-   `staying` vs source `stay`, `flying` vs source `flown`):
-   rewrite prose to use the source morphology. "Was flown by" is
-   not awkward — it's what the source says.
-
-2. **Paraphrase or synonym substitution** (source `Statement` →
-   prose `written testimony`; source `took` → prose `captured`):
-   rewrite to use source vocabulary. Repo filenames like
-   `written-testimony-*.md` are repo-internal conventions; they
-   don't license substituting those conventions into content
-   prose. The wrapped link path renders canonically regardless of
-   the surrounding prose token.
-
-3. **Source-form vs canonical-form naming variance** (source `Sue`
-   vs canonical `Susan`; source `Halverson` vs canonical
-   `Halvorsen`; source `Petrakis` vs canonical `Petrakos`): wrap the
-   source form in the canonical link path — e.g., `Sue Halvorsen
-   ([`/people/susan-halvorsen`])`. The prose-drift check strips the
-   wrap before tokenizing, so the source token matches against
-   source while the canonical wrap provides navigability. Log the
-   variance in `naming_quirks` with a resolution that captures its
-   evidentiary meaning (alias-of-record, OCR artifact, auto-caption
-   typo, formal-vs-informal). For recurring source variants (2+
-   instances), the frequency makes it alias-of-record rather than
-   typo; the note should say so. See "Per-quote contributor
-   discipline" above for the full OCR / auto-caption workflow.
-
-4. **Hyphenated compound vs two-word form** (`mental-health` vs
-   `mental health`, `intelligence-committee` vs `intelligence
-   committee`): rewrite to match source token form. The tokenizer
-   treats `mental-health` as one compound token; `mental health`
-   as two. Source attestations almost always use two-word form;
-   hyphenation is synthesis drift.
-
-5. **Date tokens** (`2023-07-26` vs `July 26, 2023`): use the
-   form that appears in source. Testimony transcripts spell out
-   `July 26, 2023`; hyphenated ISO dates are contributor
-   vocabulary unless source uses that form (some FOIA letter
-   headers do).
-
-6. **Genuinely-necessary contributor vocabulary** — if a word
-   truly isn't in source and has no source synonym, either (a)
-   the sentence is making an inference the source doesn't
-   directly attest, in which case the inference drops or moves to
-   a structured evidentiary field with its own source attribution;
-   or (b) the word is a category-label (enum value, Category
-   column entry, structural descriptor) that shouldn't appear in
-   free prose anyway.
-
-There is no "documented residual" exemption: a flagged token cannot
-remain on the artifact. It is resolved at the root — reworded, or
-relocated to a structured evidentiary field whose own source
-attribution carries the variance (a `naming_quirks` entry for a
-source-form vs canonical-form name, and so on). A token that is absent only because
-of an extraction artifact (e.g. an HTML element-boundary concatenation,
-or a PDF page-number footer/header wedged into a page-spanning quote) is
-fixed at the extraction layer, never accepted as a standing error.
-
 **The pool is the node's own source TEXT — extrinsic metadata is not
 credited.** The prose-drift pool is built from the node's `primary_sources[]`
 text only; it deliberately does NOT include `document_intrinsic` values,
@@ -817,20 +757,6 @@ a fact of the *attesting* source's node, reached by the cross-reference.
 `check-vocab.py` surfaces the nearest source forms for an absent token (a
 morphology variant or typo), but it never credits metadata either — the floor
 is the same.
-
-**Corollary — a document `description` summarizes CONTENT, not provenance.** The
-recurring cost when grounding a document node's `description` is the *provenance
-trap*: drafting the document's date, control number, classification, series
-membership, or authorship into the description prose. That metadata lives on the
-cover / title page, not in the document's content prose, so the prose-drift pool
-(content text) never contains its vocabulary (`dated`, `redacted`, `producer`,
-`series`, an author name) — each such token then fails the gate, and the fix is
-always to *relocate*, not rephrase (the Document Summary table + Key Passages
-already render the provenance). Draft the `description` from the document's own
-substantive content — what it argues, finds, or proposes, in its own words — and
-let the structured surfaces carry the provenance. Check-vocab correctly
-returns "absent, no suggestion" for the provenance tokens, which is itself
-the signal to relocate rather than reword.
 
 ### Density is source-driven
 

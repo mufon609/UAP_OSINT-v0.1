@@ -76,9 +76,27 @@ In order, with a check after each (build-protocol → run
      fabricates a source claim.
    - **Document `description` provenance trap:** a document's `description` is
      prose-drift-checked against the source *body*, which never describes its
-     own date / outlet / paywall — keep that provenance in the structured
-     Document Summary fields and describe the document's *content* in source
-     vocabulary.
+     own date / outlet / control number / classification / authorship — keep
+     that provenance in the structured Document Summary fields and describe the
+     document's *content* in source vocabulary (check-vocab returning "absent,
+     no suggestion" for a provenance token is itself the signal to relocate it,
+     not reword).
+   - **Resolving a flagged prose-drift token.** Every flag drives to one of two
+     outcomes — reword to source vocabulary, or relocate the variance to a
+     structured field; there is no "documented residual" exemption. By shape:
+     *word-form* (`flying`→source `flown`), *paraphrase/synonym*
+     (`captured`→source `took`), *hyphenation* (`mental-health`→`mental health`),
+     and *date form* (`2023-07-26`→`July 26, 2023`) all rewrite to the source's
+     exact morphology. A *source-form vs canonical name* (`Sue`/`Halverson` vs
+     `Susan`/`Halvorsen`) wraps the source form in the canonical path — `Sue
+     Halvorsen ([`/people/susan-halvorsen`])`, the check strips the wrap before
+     tokenizing — plus a `naming_quirks` entry (the Link step). A
+     *genuinely-absent contributor word* is either an unattested inference (drop
+     it, or move it to a structured field with its own attribution) or a
+     category-label that doesn't belong in free prose. A token missing only from
+     an extraction artifact (HTML element-boundary concatenation, a page-footer
+     wedged into a page-spanning quote) is fixed at the extraction layer, never
+     accepted as a standing error.
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize **every** worker cross-ref candidate into a canonical
    `[`/path`]` link — in the structured field it belongs to (`relationships` /
