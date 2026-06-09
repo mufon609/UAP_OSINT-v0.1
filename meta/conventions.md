@@ -929,31 +929,16 @@ document renderer emits), and `pdf_page_count` errors when a document's declared
 sibling-backed sources included.
 
 For an **OCR-scan / extraction-lossy source** the canonical extract is the
-contributor's `.txt` sibling — a clean, full-text-searchable transcription that
-carries **no synthetic page markers**. *Never manufacture page structure in a
-sibling* (the insert / front-matter handling is a `/prepare-ocr-sibling`
-production detail; whatever a sibling transcribes, it is never delimited by an
-inserted page break).
-
-Because the sibling is markerless, a quote drawn from it does **not** carry a
-`p. N` physical-page ref. A page integer can be neither read off the extract nor
-verified: `quote_location_page` confirms `p. N` **only where the source's own
-extraction yields form feeds natively** (text-native PDFs via `pdftotext`) and
-skips a sibling-backed source **by design**. Instead the `source.location` is a
-**descriptive content anchor** drawn from the document's own structure — a named
-block, a section title, or a reference entry (e.g. `title-page identity block`,
-`Administrative Note`, `section "Deuterium as the Preferred Nuclear Rocket
-Fuel"`, `References, entry [8]`). The content anchor *is* the navigation handle
-— the sibling is full-text-searchable and the PDF's pages are navigable in any
-viewer — and, unlike an unverifiable `p. N`, it cannot silently drift onto the
-wrong page. Page-precision was the only thing a sibling `p. N` ever offered and
-it was never checked; a content anchor is self-locating and honest about what
-the markerless extract supports. (The sibling-backed DIRD document family was
-migrated to content anchors so the family reads uniformly; a `p. N` ref on a
-sibling-backed source is therefore a defect to convert, not a tolerated legacy
-form. The form checks still pass on a stray `p. N`, so the conversion rests on
-contributor/grep discipline, not a mechanical gate — `quote_location_page` skips
-sibling-backed sources by design.)
+contributor's markerless `.txt` sibling, so a quote drawn from it carries a
+**descriptive content anchor** (the table's sibling-backed row), **never**
+`p. N`: the sibling has no page integer to read off or verify, and
+`quote_location_page` skips sibling-backed sources **by design** (it confirms
+`p. N` only where the source's own extraction yields native form feeds). Unlike
+an unverifiable `p. N`, a content anchor cannot silently drift onto the wrong
+page. *Never manufacture page structure in a sibling* — the insert / front-matter
+handling is a `/prepare-ocr-sibling` production detail; a `p. N` on a
+sibling-backed quote is a defect to convert, which the Auditor flags
+(`auditor.md` goal 2).
 
 A source that genuinely has no PDF pages uses a non-page anchor: an HTML filing
 or single-page memo uses `¶N` / a section heading, an audio/video transcript
@@ -991,19 +976,6 @@ markdown block-quote markers, dashes, and whitespace (plus the conservative
 form-feed-adjacent page-number strip at extraction time); it is deliberately
 *not* extended to recognize page footers/headers, because boilerplate-stripping
 a quote would weaken the one exactness the verbatim gate is for.
-
-**The same split applies to a `cited_works` reference entry that straddles a
-page break.** A reference / endnote whose lines fall on either side of a printed
-page boundary has the UNCLASSIFIED/FOUO banner (or page footer/header)
-interposed mid-entry in the markerless `.txt` sibling, so a single
-`citation_verbatim` spanning the whole entry is not a contiguous substring of
-the source and trips the `cited_works` verbatim check
-(`scripts/checks/cited_works.py`) for the same reason a page-spanning quote
-would. Capture the contiguous span up to the break as `citation_verbatim` and
-record the page-break-split remainder in the entry's `location` anchor (e.g.
-`p. N–N+1, References, entry [35] (final line on p. N+1 after the page break)`)
-— do not splice across the interposed banner. The gate is behaving correctly;
-the entry's structure, not the check, is what the `location` note documents.
 
 ---
 
