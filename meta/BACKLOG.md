@@ -9,6 +9,11 @@ Deferred work items — real, concrete, and would be lost otherwise. Not
 on the active roadmap. Items leave when (a) promoted to a roadmap phase,
 (b) addressed, or (c) superseded.
 
+**This file is self-governing.** The rules in this header and in the
+**§ Lifecycle** section at the foot are the root, authoritative definition
+of how the BACKLOG is written, identified, and closed — nothing outside
+this file governs it.
+
 Open items are partitioned into three sections by dependency shape:
 **A — Priority sequence** (ordering / coupling constraints),
 **B — Parallel batch** (renderer-pass items that ship together),
@@ -21,7 +26,7 @@ and ultimately the whole BACKLOG, is cleared, numbering restarts from 1.
 Because an ID is transient and reused, never reference it from outside
 this file — not in code, docs, prompts, commit messages, or `git log`
 searches. Describe the work; the commit diff + message are the record.
-See `meta/conventions.md` "BACKLOG lifecycle discipline".
+(Full close-and-open discipline: **§ Lifecycle** at the foot.)
 
 **Default focus: Section C.** C items have no upstream dependencies
 and can be picked up and finished in a single pass. A and B items
@@ -154,3 +159,34 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+---
+
+## Lifecycle
+
+The goal is to REMOVE items, not accumulate annotations referencing them.
+
+**Closing an entry:**
+
+- Delete the entry's block in full. No retirement marker, no placeholder.
+  The commit that ships the closure carries the implementation diff and a
+  message describing what shipped — that is the canonical record.
+- IDs are positional working labels, NOT stable identifiers. A new entry
+  takes the lowest section number not currently in use, so numbers
+  **recycle**; when a section — and ultimately the whole BACKLOG — is
+  cleared, numbering restarts from 1. An ID therefore must never appear
+  outside this file: not in code, docs, prompts, commit messages, or
+  `git log` searches. Reference the work, never the ticket.
+- Sweep code comments that referenced the closed entry's identifier —
+  either delete the comment (if its resolution is now reflected in the
+  code itself) or rewrite to describe current behavior without the
+  BACKLOG anchor. This sweep is part of closing the entry, not follow-up
+  work.
+
+**Open entries** describe the work to be done and why it matters —
+forward-looking, prescriptive. An entry does NOT carry "Surfaced from",
+"introduced by audit X on date Y", commit hashes pinning when the need
+was identified, or other past-work narrative. Where the audit / session /
+commit that surfaced the work lives is in git log, retrievable via
+`git log --grep <ID>` once the entry is named in any commit message. The
+entry itself describes only the work.

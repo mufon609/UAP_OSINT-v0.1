@@ -2324,8 +2324,9 @@ Three durable surfaces, three places working notes must not land:
 
 Where the record actually lives: **git history** owns the narrative of
 what changed and why (commit messages, PR descriptions), and
-`meta/BACKLOG.md` owns deferred work — see `### BACKLOG lifecycle
-discipline`. An issue found mid-session is fixed now or filed in BACKLOG;
+`meta/BACKLOG.md` owns deferred work — and is self-governing (its own
+`## Lifecycle` section is the root discipline for how entries are written
+and closed). An issue found mid-session is fixed now or filed in BACKLOG;
 it is never left behind as a comment or a node-body aside.
 
 For build work specifically, this is the mechanism the role pipeline
@@ -2356,6 +2357,12 @@ it* lives. The code comment is where the *why it is the way it is*
 lives, and only when that why is non-obvious from the identifiers
 and structure.
 
+The same describe-current-state rule extends beyond comments to every
+governance file — retiring a validator check, deleting a renderer
+dispatch branch, removing a conventions section or an obsolete template:
+the file describes current state and pending work, not past evolution.
+Git log carries the evolution.
+
 #### NO BANDAIDS rule
 
 Any issue found during an audit either gets fixed immediately or
@@ -2371,43 +2378,6 @@ BACKLOG entries become stale pointers when the entry is removed.
 "Origin / Migration / Anchor pattern" docstrings accumulate as
 refactor cycles compound, eventually drowning the description of
 what the code currently does.
-
-#### BACKLOG lifecycle discipline
-
-The goal is to REMOVE items from BACKLOG, not accumulate annotations
-referencing them. When a BACKLOG entry closes:
-
-- Delete the entry's block from `meta/BACKLOG.md` in full. No
-  retirement marker, no placeholder. The commit that ships the closure
-  carries the implementation diff and a message describing what
-  shipped — that is the canonical record.
-- IDs are positional working labels, NOT stable identifiers. A new
-  entry takes the lowest section number not currently in use, so
-  numbers **recycle**; when a section — and ultimately the whole
-  BACKLOG — is cleared, numbering restarts from 1. An ID therefore
-  must never appear outside `meta/BACKLOG.md`: not in code, docs,
-  prompts, commit messages, or `git log` searches. Reference the
-  work, never the ticket.
-- Sweep code comments that referenced the closed entry's
-  identifier — either delete the comment entirely (if the entry's
-  resolution is now reflected in the code itself) or rewrite to
-  describe current behavior without the BACKLOG anchor.
-- This sweep is part of closing the entry, not follow-up work.
-
-Open BACKLOG entries follow the same describe-current-state rule.
-The entry text describes the work to be done and why it matters —
-forward-looking, prescriptive. It does NOT carry "Surfaced from",
-"introduced by audit X on date Y", commit hashes pinning when the
-need was identified, or other past-work narrative. Where the
-audit / session / commit that surfaced the work lives is in git
-log, retrievable via `git log --grep <ID>` once the entry is named
-in any commit message. The entry itself describes only the work.
-
-Same rule extends to retirement of validator checks, deletion of
-renderer dispatch branches, removal of conventions sections, and
-removal of obsolete templates: the file should describe current
-state and pending work, not past evolution. Git log carries the
-evolution.
 
 #### What TO keep in comments
 
