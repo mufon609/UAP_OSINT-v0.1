@@ -991,8 +991,8 @@ def normalize_for_compare(text):
     # from a .txt source) the \u00bd glyph (U+00BD) is encoded so that pdftotext
     # extracts it as \u2021 (U+2021). Fold the extracted \u2021 back to \u00bd so a true
     # "11\u00bd" quote matches the source bytes without hand-transcribing the
-    # document (meta/conventions.md "a sibling must be proportionate to the
-    # damage"). Both quote and source pass through here, so a genuine \u2021
+    # document (a sibling must be proportionate to the damage \u2014 see the
+    # extraction_type doc in schema.yaml). Both quote and source pass through here, so a genuine \u2021
     # still matches a genuine \u2021 (both fold to \u00bd).
     text = text.replace("\u2021", "\u00bd")
     # YouTube-caption timestamp markers — strip [MM:SS] and [H:MM:SS].

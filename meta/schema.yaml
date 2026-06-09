@@ -692,10 +692,9 @@ artifact_entry:
   #   ocr-scan         — text layer absent or unreliable because the source
   #                      is a scanned image; OCR was needed to produce any
   #                      text at all. The PDF's text layer IS the OCR output.
-  #                      Failure mode (character-level corruption) + detection
-  #                      signals + per-quote audit discipline: see
-  #                      meta/conventions.md "Confirmation is a precondition
-  #                      for inclusion".
+  #                      Failure mode (character-level corruption); detection
+  #                      signals + production: /prepare-ocr-sibling; per-quote
+  #                      audit discipline (page-image re-read): /audit.
   #   extraction-lossy — text layer is present and was NOT produced by OCR
   #                      (author native / court-reporting software /
   #                      Acrobat Distiller from `.txt`), but pdftotext
@@ -711,8 +710,8 @@ artifact_entry:
   #                      pdftotext is canonical, the glyph is handled at the
   #                      quote (re-derive it, or normalize the confusable),
   #                      never by hand-transcribing the document. A sibling
-  #                      must be proportionate to the damage; see
-  #                      meta/conventions.md.
+  #                      must be proportionate to the damage — reserve it for
+  #                      extraction broken throughout, not a single bad glyph.
   # Operational handling (both ocr-scan and extraction-lossy): the validator
   # prefers a same-stem `.txt` sibling over pdftotext output when the field
   # is set to any non-text-native value. The sibling is a contributor-

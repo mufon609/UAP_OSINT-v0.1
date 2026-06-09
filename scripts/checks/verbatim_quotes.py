@@ -11,8 +11,7 @@ the source is a precondition for inclusion at the artifact layer, not
 a marker the contributor opts into; the rendered node body inherits
 the verified quote text from the artifact by construction. The check
 has no rendered counterpart (no "Verified" row) by design — the source
-link IS the evidence for readers. See ``meta/conventions.md``
-"Confirmation is a precondition for inclusion" for the rationale.
+link IS the evidence for readers.
 
 Failure messages name the artifact, the quote's id + index, the cited
 source path, and a preview of the unmatched text — enough for a
