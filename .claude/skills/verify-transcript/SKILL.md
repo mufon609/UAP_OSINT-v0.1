@@ -34,6 +34,17 @@ quotes against sources and fixing or removing any that don't match.
    - **Not in the source at all** — investigate: wrong citation (repoint),
      wrong appearance (move to the right transcript node), or fabricated
      (remove + surface to the user). Don't keep an unconfirmable quote.
+   - **Auto-caption source-level artifact** (`transcript_provenance:
+     auto-caption`) — distinct from the above: a name the captioner
+     mis-transcribed (`Halverson` for `Halvorsen`, `Petrakis` for `Petrakos`)
+     sits identically in the quote *and* the caption file, so the word-for-word
+     check passes on a wrong word — the auto-caption blind spot. Screen suspect
+     tokens (proper nouns, uncommon names, OCR-style cluster swaps `rn`↔`m` /
+     `cl`↔`d`, phoneme-substitution drift) and confirm any anomaly against the
+     **audio**, never the caption text; register a confirmed artifact as a
+     `naming_quirks` entry. A source with a clean spot-checked track record
+     needs no blanket audio pass — the caption substring-match suffices; note
+     the verification approach in the manifest.
 5. When replacing an entry that differs substantively, preserve the original
    via `superseded_by` / `contradicted_by` pointers; typo fixes edit in place.
 6. **Speaker attribution.** Each transcript quote carries a structural

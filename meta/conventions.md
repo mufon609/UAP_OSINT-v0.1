@@ -1238,34 +1238,13 @@ Rizzo`). When both quote text and caption file carry the same
 machine artifact, the verbatim-quote check passes trivially — the
 textbook auto-caption blind spot. The `transcript_provenance` value
 `auto-caption` marks these sources; the underlying audio/video is
-the canonical original. Audit handling mirrors `ocr-scan`:
-
-- **Known caption artifacts** registered as `naming_quirks` entries
-  (same workflow as OCR-scan source-form preservation), resolved by the
-  grounding test in *Off-node variants* above.
-
-- **Programmatic suspect-pattern scan** on caption files: same
-  character-cluster heuristics that detect OCR mis-reads
-  (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, etc.) plus caption-specific
-  patterns (single-syllable proper-noun mis-spellings, phoneme-
-  substitution drift on uncommon names).
-
-- **Audio confirmation** for any quote whose programmatic / contextual
-  review surfaces an anomaly. For an auto-caption source with a
-  documented track record of clean output across spot-checked
-  passages, programmatic + naming_quirks discipline is substantively
-  meaningful — the exception case parallels the
-  ocr-scan-with-clean-extract pattern (validator's caption-file
-  substring match suffices; document the verification approach in
-  the manifest note).
-
-- **Contributor-produced clean-text sibling** is the analog of the
-  ocr-scan `.txt` sibling for auto-caption sources where systemic
-  drift is observed. The sibling is a contributor transcription of
-  the audio (or a human-corrected version of the caption file)
-  with its own manifest entry; the `transcript_provenance`
-  value moves from `auto-caption` to `human-corrected-caption` once
-  the correction step is documented.
+the canonical original. Screening a suspected caption artifact and
+confirming it against the audio is the verification skills' operating
+manual (`/verify-transcript`); a source with systemic drift gets a
+contributor-corrected sibling — a contributor transcription of the audio
+or a human-corrected caption file, with its own manifest entry — which
+moves its `transcript_provenance` from `auto-caption` to
+`human-corrected-caption`.
 
 **Hybrid sources** — auto-caption files contributor-corrected
 against audio playback — flag as `human-corrected-caption`. Once
@@ -1274,7 +1253,7 @@ transcript classes.
 
 The five-value `transcript_provenance` enum is the schema layer
 (see `manifest_entry.transcript_provenance_values` in
-`schema.yaml`). The audit discipline above is the contributor layer.
+`schema.yaml`). The handling discipline (the verification skills) is the contributor layer.
 
 **Label-less attribution is confirm-against-source.** Provenance also
 determines *how speakers are known*. Where a source carries speaker labels
