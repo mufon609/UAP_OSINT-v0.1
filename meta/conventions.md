@@ -1381,15 +1381,10 @@ corresponding `timeline[].event` text):
   before the transcript node is built. The broken-link registry
   surfaces the unbuilt transcript as a Phase 2 build candidate.
 
-The body wrap is the load-bearing mechanism: `[`/path`]` wraps drive
-the broken-link registry (the Priority Build Queue) and the
-auto-generated `## Associated Nodes` section, both of which read the
-rendered body. There is no load-bearing-vs.-incidental discretion: an
-entity the node names in its own authored prose is wrapped, full stop
-(see the rule above). `coverage-suggest.py` surfaces
-source content not reflected in the node, and `link-suggest.py`
-surfaces named entities in the prose not yet wrapped — both are
-contributor aids, not the discretion boundary.
+These wraps drive the broken-link registry and `## Associated Nodes`
+exactly as any other body wrap does (the universal rule above); the three
+classes are called out here only because a media appearance is where they
+are most often missed.
 
 ### Primary sources and archival
 
