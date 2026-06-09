@@ -5,7 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
   format: pdf
-  content_block: 'None — all 50 pages were VLM page-image read; no pages content-blocked (PaddleOCR + Tesseract-confirmed sibling, one VLM misread corrected: p.29 has→have).'
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Aneutronic Fusion Propulsion'
   internal_date: '2010-11-01'

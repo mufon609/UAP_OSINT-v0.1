@@ -683,6 +683,28 @@ def print_blocked_report(blocked_report):
             print(f"      {d['context']}")
 
 
+def format_content_block(blocked, vlm_skipped):
+    """The artifact's ``content_block`` value, generated from this run's
+    blocked-page facts (not hand-narrated). The three returns below are the
+    canonical forms — every other surface pastes this verbatim."""
+    if vlm_skipped:
+        return "All pages — VLM page-image read was content-blocked; produced via OCR."
+    if blocked:
+        noun = "Page" if len(blocked) == 1 else "Pages"
+        verb = "was" if len(blocked) == 1 else "were"
+        pages = ", ".join(str(p) for p in blocked)
+        return f"{noun} {pages} {verb} content-blocked for the VLM; PaddleOCR-filled."
+    return "None"
+
+
+def print_content_block(blocked, vlm_skipped):
+    """Emit the paste-ready ``content_block`` line for the author to copy."""
+    val = format_content_block(blocked, vlm_skipped)
+    print("\n  content_block — paste verbatim onto the source's "
+          "primary_sources[] entry:")
+    print(f"      content_block: '{val}'")
+
+
 def _resolve_pdf(arg):
     pdf = Path(arg)
     if not pdf.is_absolute() and not pdf.exists():
@@ -796,6 +818,7 @@ def cmd_run(args):
 
     print_confirm_report(divergences, sibling, page_starts)
     print_blocked_report(blocked_report)
+    print_content_block(blocked, vlm_skipped)
 
 
 def cmd_verify(args):
@@ -817,6 +840,11 @@ def cmd_verify(args):
     divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
     print_confirm_report(divergences, sibling)
     print_blocked_report(blocked_report)
+    # Re-emit the canonical value from the blocked-page facts. verify doesn't
+    # track --vlm-skipped (it re-checks, it doesn't produce), so a whole-doc
+    # OCR-only sibling takes its value from the original `run`; the common
+    # None / page-list cases derive correctly here.
+    print_content_block(blocked, vlm_skipped=False)
 
 
 def cmd_engines(_args):

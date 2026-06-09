@@ -19,7 +19,7 @@ doc_form: technical-report
 | Format | PDF, 44 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_29-DIRD_Negative_mass_Propulsion.pdf |
 | Local Archive | [sources/government/dird-29-negative-mass-propulsion-2010.pdf](../sources/government/dird-29-negative-mass-propulsion-2010.pdf) |
-| Content Block | None — all 44 pages were VLM page-image read; no pages content-blocked (PaddleOCR-confirmed sibling, zero sibling edits). |
+| Content Block | None |
 
 ---
 

@@ -5,7 +5,7 @@ status: active
 primary_sources:
 - path: government/dird-29-negative-mass-propulsion-2010.pdf
   format: pdf
-  content_block: 'None — all 44 pages were VLM page-image read; no pages content-blocked (PaddleOCR-confirmed sibling, zero sibling edits).'
+  content_block: 'None'
 document_intrinsic:
   internal_title: 'Negative Mass Propulsion'
   internal_date: '2011-01-03'

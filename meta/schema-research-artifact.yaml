@@ -506,19 +506,13 @@ primary_sources_entry:
   optional: [pdf_metadata, content_block]
   # path: relative to sources/, must appear in sources/manifest.yaml
   #
-  # content_block: extraction provenance for a sibling-backed (ocr-scan /
+  # content_block: the blocked-pages indicator for a sibling-backed (ocr-scan /
   #   extraction-lossy) PDF — which pages, if any, the VLM page-image read was
-  #   content-filter-blocked on and PaddleOCR therefore filled. A short string:
-  #     "None"  — every page VLM-read;
-  #     "Pages 12, 31 were content-blocked for the VLM; PaddleOCR-filled." — some pages;
-  #     "All pages — VLM page-image read was content-blocked; produced via OCR." — whole doc.
-  #   Renders on the document node as a `Content Block` row in the Document
-  #   Summary table (renderers/document.py), so an investigator can grep
-  #   `Content Block` repo-wide and spot any value other than None
-  #   (`grep -rn "Content Block" documents/ | grep -v None`). Present only on
-  #   sibling-backed sources;
-  #   text-native sources never had a VLM/OCR question and omit it. Set at sibling
-  #   prep (`/prepare-ocr-sibling` step 5) and carried onto the node at build.
+  #   content-filter-blocked on. A short string pasted verbatim from the line
+  #   ocr-consensus.py emits at sibling prep (`format_content_block` is the
+  #   canonical form; never hand-composed). Renders as a `Content Block` row on
+  #   the document node (renderers/document.py). Present only on sibling-backed
+  #   sources; text-native sources omit it.
 
 # --- Entry shapes per top-level list section ---
 

@@ -19,7 +19,7 @@ doc_form: technical-report
 | Format | PDF, 50 pages |
 | Primary Source URL | https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_30-DIRD_Aneutronic_Fusion_Propulsion.pdf |
 | Local Archive | [sources/government/dird-30-aneutronic-fusion-propulsion-2010.pdf](../sources/government/dird-30-aneutronic-fusion-propulsion-2010.pdf) |
-| Content Block | None — all 50 pages were VLM page-image read; no pages content-blocked (PaddleOCR + Tesseract-confirmed sibling, one VLM misread corrected: p.29 has→have). |
+| Content Block | None |
 
 ---
 

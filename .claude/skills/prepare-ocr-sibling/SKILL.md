@@ -141,20 +141,9 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
    surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources, so
    quotes derive verbatim text from it but cite the PDF path in `source.path`.
 
-5. **Record the `Content Block` provenance.** The blocked-page outcome becomes a
-   durable, greppable field on the node. Note the value for the source's
-   `content_block` (on its `primary_sources[]` entry in the research artifact —
-   `meta/schema-research-artifact.yaml`; renders as a `Content Block` row in the
-   document node's Document Summary table):
-   - every page VLM-read → `None`;
-   - some pages PaddleOCR-filled → e.g. `Pages 12, 31 were content-blocked for the
-     VLM; PaddleOCR-filled.`;
-   - whole document content-blocked (`--vlm-skipped`) → `All pages — VLM
-     page-image read was content-blocked; produced via OCR.`
-   When the node is built (`/build`) this goes on the primary source; the build
-   pipeline's `primary_sources` stub carries `content_block`. An investigator can
-   then `grep -rn "Content Block" documents/ | grep -v None` to find every node
-   with OCR-filled pages.
+5. **Record the `content_block` value.** `run`/`verify` print a `content_block:`
+   line at the end — paste it verbatim onto the source's `primary_sources[]` entry.
+   Don't hand-write it; that's the field's whole point.
 
 The sibling is canonical once confirmed and registered; `extract-source.py` and
 the verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

@@ -16,8 +16,8 @@ reusable_sources:
     covers: ["{claim-group label}"]
     extraction_type: text-native   # text-native | ocr-scan | extraction-lossy (from manifest)
     # ocr-scan / extraction-lossy → the artifact's primary_sources entry also carries
-    # `content_block` (None, or which pages the VLM was blocked on + PaddleOCR filled),
-    # recorded at sibling prep (/prepare-ocr-sibling step 5); renders as a `Content Block` table row.
+    # `content_block`, pasted verbatim from ocr-consensus.py's emitted line at sibling
+    # prep (/prepare-ocr-sibling step 5). Renders as a `Content Block` row.
 topic_relevance: "<one line: how the subject connects to the topic via linked_nodes>"
 gaps: ["{what the record is missing}"]
 blocking_prep: []              # source-prep prerequisites the orchestrator must clear before the Worker
