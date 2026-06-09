@@ -869,7 +869,11 @@ contract_entry:
   #   contract recipient (typically the node this contract sits on, but
   #   explicit for sub-contract or joint-venture cases).
   # period_start / period_end: YYYY-MM-DD; period_end may be absent
-  #   for ongoing or open-ended contracts.
+  #   for ongoing or open-ended contracts. For multi-year indefinite-
+  #   delivery vehicles (BPA, IDV, GSA-FSS), populate period_end from the
+  #   source's ordering-period end when attested, even when the prose layer
+  #   doesn't call out the close — otherwise the contract's establishment has
+  #   no structured counterpart for its closure.
   # subject: short descriptor of the contract's stated purpose (1-6
   #   words; e.g., "Advanced Aerospace Weapon System Applications",
   #   "Cockpit video system integration"). Scanned by the prose-drift check against

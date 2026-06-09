@@ -142,11 +142,11 @@ the content can simply live in its home; gate chain green per move.
 The maintainer wants `## Description` to read as a well-defined summary that may
 surface select salient items also living in a structured section (a key
 relationship, timeline event, contract, finding). The current convention pushes
-the other way — `meta/conventions.md` "Date precision: orientation-grade in prose,
-field-precise in tables" states *Description should not duplicate field-precise
-dates from a structured surface* and *eliminating duplication removes a drift
-surface*. That anti-drift rationale is load-bearing, so a relaxation could easily
-go bad; it is deferred for investigation, not changed in place.
+the other way — the builder's date-grade discipline (`.claude/agents/builder.md`,
+"Date grade + period fields") states *don't restate in prose a field-precise date
+the table already carries* because *that duplication is a drift surface*. That
+anti-drift rationale is load-bearing, so a relaxation could easily go bad; it is
+deferred for investigation, not changed in place.
 
 Avenues to weigh before any edit: (a) survey how built nodes actually use
 Description today — is the overlap pressure real or rare?; (b) whether the

@@ -81,6 +81,20 @@ In order, with a check after each (build-protocol → run
      document's *content* in source vocabulary (check-vocab returning "absent,
      no suggestion" for a provenance token is itself the signal to relocate it,
      not reword).
+   - **Date grade + period fields.** `description` carries orientation-grade
+     dates anchored to semantic events ("announced", "issued", "filed", "took
+     office"); field-precise contract / period dates live in their structured
+     surface (Primary Contracts, Timeline, Key Personnel, Ownership Timeline),
+     source-attested per row — don't restate in prose a field-precise date the
+     table already carries (that duplication is a drift surface; description =
+     landscape, table = field-precise, Key Passages = verbatim). For the
+     `period_*` fields themselves: an absent `period_end` renders as just
+     `{start}` and is NOT read as "ongoing" — a still-current role and a role
+     ended on an unattested date both legitimately lack it, so the end-status
+     lives in the entry's `role` / descriptor text ("…; ended, end date
+     unattested" vs "…; present"), as does an "active-by" `period_start` that
+     isn't a confirmed start. (A structured `ongoing` sentinel was declined as
+     over-engineering for this edge case.)
    - **Resolving a flagged prose-drift token.** Every flag drives to one of two
      outcomes — reword to source vocabulary, or relocate the variance to a
      structured field; there is no "documented residual" exemption. By shape:

@@ -29,7 +29,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Hearing events as venues](#hearing-events-as-venues)
   - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
   - [Density is source-driven](#density-is-source-driven)
-  - [Date precision: orientation-grade in prose, field-precise in tables](#date-precision-orientation-grade-in-prose-field-precise-in-tables)
 - **Part III — Source extraction & provenance**
   - [OCR-scan sources: source-form fidelity and the `.txt` sibling](#ocr-scan-sources-source-form-fidelity-and-the-txt-sibling)
   - [Transcript provenance and audit discipline](#transcript-provenance-and-audit-discipline)
@@ -542,51 +541,6 @@ entries a captured list then yields. The same holds for every
 required-but-emptyable source-anchored section: an empty list is
 correct only when the source genuinely lacks that material, never as a
 discretionary skip.
-
-### Date precision: orientation-grade in prose, field-precise in tables
-
-Description prose carries orientation-grade dates anchored to semantic
-events ("announced", "issued", "filed", "took office", "established").
-Field-precise contract / period dates live in their structured surface
-(Primary Contracts, Timeline, Key Personnel, Ownership Timeline) where
-they are source-attested per row. Description should not duplicate
-field-precise dates from a structured surface; if a date is in the
-table, the description can refer to the event without re-stating the
-field.
-
-The two layers serve different roles. Description orients the reader
-to the document or entity at narrative grade; the structured table is
-the authoritative surface for field-level data. Eliminating duplication
-removes a drift surface between the two and lets the layered-precision
-principle work — three layers, three roles: description for landscape,
-structured table for field-precise data, Key Passages for verbatim
-source.
-
-**Inverse case — multi-year contract `period_end`.** The "table is
-authoritative" rule only works when the table actually carries the
-field. Multi-year contract rows with explicit ordering-period end
-dates in the source — typical of BPA, IDV, GSA-FSS, and other
-indefinite-delivery vehicles — populate `period_end` from
-`period_of_performance.end_date` when the source attests it, even
-when the prose layer doesn't explicitly call out the end. Otherwise
-the description's reference to the contract's establishment has no
-structured-surface counterpart for the contract's closure, and the
-layered-precision principle breaks for that class of contracts.
-
-**Open `period_end` — ongoing vs. ended-but-undated.** An absent `period_end`
-renders as just `{start}` (and an absent `period_start` as `– {end}`); it is
-**not** read as "ongoing." Both a still-current role and a role known to have
-ended on an unattested date legitimately lack a `period_end`, so the end-status
-lives in the entry's `role` / descriptor text, not the period field: a role
-known to have ended with no attested end date says so (e.g. "…; ended, end date
-unattested"); a genuinely current role says "present" / "ongoing" in its
-descriptor. The inverse — an attested "active-by" year used as `period_start`
-when the true start is unattested — carries the same kind of role-text caveat
-(e.g. "…the article-attested active-by year, not a confirmed start"). A
-structured `period_*` sentinel or `ongoing` flag was considered and declined:
-adding schema + renderer machinery for this edge case is over-engineering, and
-the role text is the source-grounded surface that already carries the
-distinction.
 
 ---
 
