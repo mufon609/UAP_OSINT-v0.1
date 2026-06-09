@@ -104,35 +104,49 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Relocate skill/agent-specific protocol out of conventions.md into self-contained homes
+### C1 — Distribute conventions.md to its consumers (in progress)
 
-`meta/conventions.md` still carries operating-manual content that belongs in the
-skill / agent it governs, leaving those homes non-self-contained and conventions
-bloated. Relocate it — don't centralize-and-point — so each home is self-contained
-and only cross-cutting evidentiary rules stay central.
+**Why.** `meta/conventions.md` became the repo's ad-hoc hub — ~200 references
+across ~55 files pointed *into* it as the authority. A rule everything cites from
+a central rationale file is not co-located with the tool that applies it. Goal:
+each rule lives with the consumer that uses it (skill / agent / check / schema /
+README / memory); nothing needs to point at conventions.md, which shrinks toward
+zero.
 
-- **OCR-sibling protocol.** The "Producing the `.txt` sibling, then confirming it"
-  section is a protocol+evidentiary tangle. Move the production protocol (four-step
-  flow, confirmation walkthrough, the four production methods + ladder + CBRN
-  pre-screen, OCR-engine fidelity discipline, provenance recording,
-  final-audit-check) into `.claude/skills/prepare-ocr-sibling/SKILL.md` — already
-  self-contained for the core flow, so add only the genuinely-unique bits (CBRN
-  pre-screen, production-method fallbacks) and nothing is lost. KEEP in conventions,
-  relocated to their proper homes, the cross-cutting evidentiary rules:
-  parent-in-`primary_sources[]` (→ Part V "Primary sources and archival"), the
-  per-quote `naming_quirks` discipline + the preserve-sic-vs-correct-OCR-mangle
-  distinction, and the silent-sibling-lookup invariant. Repoint the two refs that
-  point at the section for protocol — `.claude/agents/ocr-page-producer.md` and
-  `scripts/tools/ocr-consensus.py` — to the skill.
-- **Transcript cluster.** "Transcript provenance and audit discipline" and
-  "Transcript quotes carry structural speaker attribution" are largely the manual
-  for `/prepare-transcript-sibling` / `/verify-transcript` /
-  `scripts/tools/VIDEO-PIPELINE.md`; same protocol-vs-principle triage (the
-  `transcript_provenance` enum and the equivalent-footing principle are cross-cutting
-  and stay).
+**Cautions — verify, don't trust (this is the point of the item).**
+- Prove a section's true owner with line-level evidence *before* touching it. A
+  section is delete-already-owned ONLY when the owner already states it; a
+  genuinely-unique claim is moved to its owner; redundant rationale is dropped.
+- Prefer defining a rule into the PRODUCING role (worker / producer / skill), not
+  an after-the-fact check — front-load, don't backstop.
+- De-reference every inbound pointer to a removed section atomically (no dangling
+  "see conventions.md X"). Nothing mechanical reads conventions.md (every ref is
+  prose; `governance_files` needs only frontmatter), so moves can't break the
+  pipeline at runtime — but the pointers must still be fixed.
+- Show before→after per move, gate (`scripts/tests/pre-commit.sh` green), commit
+  per owner-cluster.
 
-Each move: relocate the bytes (don't retype), update refs, leave no pointer where
-the content can simply live in its home; gate chain green per move.
+**Start here, next session — investigate before continuing.** Read the commit
+series first (`git log --oneline --grep='docs(conventions)'`) to see what was
+moved where, then INVESTIGATE IT FOR FLAWS: re-verify each move landed in the
+right home, that nothing load-bearing was lost or mis-housed, and that no pointer
+dangles (`grep -rn 'conventions' --include='*.py' --include='*.md' --include='*.yaml'`).
+Do not resume on trust — find the mistakes first, then continue; everything is
+investigated before it is altered.
+
+**Done.** Phase A (checks): prose-drift, cited_works, location-refs,
+check-naming + validator-design, source-form + off-node. Phase B (schema):
+manifest-shape, type-views, news-articles, key-passages-ordering, date-precision
+(BACKLOG C2 redirected). Phase C: OCR-fidelity (pure delete — owned by the OCR
+producer/verifier roles). conventions.md 1841 → ~1200 lines; refs 200 → ~162.
+
+**Next.** Rest of Phase C (transcript-provenance, paired-siblings, comparability +
+passage-rubric, key-testimony, hearing-as-venue, cross-references,
+interview-contract, archival, statements-as-primitive, confirmation-precondition);
+Phase D (repo-layout / scripts-tiers / meta-tiers / scope / versioning → README /
+meta-README / CLAUDE); Phase E (NO-BANDAIDS / comments / working-notes / density →
+meta/memory.md); Phase F (~67 manifest `note:` re-citations + templates); Phase G
+(Part I epistemic axioms — decide: slim essay vs README vs memory).
 
 **Blocks:** none.
 **Blocked by:** none.
