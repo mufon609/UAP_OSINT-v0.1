@@ -2,8 +2,8 @@
 """Cross-reference link-coverage aid for a research artifact.
 
 Read-only diagnostic — the heuristic complement to the mechanical
-``prose_entity_link`` validator check. The universal-stub rule (see
-``meta/conventions.md`` "Cross-references") requires every entity a
+``prose_entity_link`` validator check. The universal-stub rule (name it,
+wrap it) requires every entity a
 node names **in its own authored prose** to carry a ``[`/{type}/{slug}`]``
 stub so it reaches the ``## Associated Nodes`` index. The validator check
 enforces that for entities that ALREADY have a node (people /

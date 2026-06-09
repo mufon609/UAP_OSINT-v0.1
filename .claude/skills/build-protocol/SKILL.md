@@ -92,13 +92,36 @@ is the same violation). When you add or carry a cross-reference, check its
 direction before emitting it. Full matrix: `meta/conventions.md` "Tier model
 and linking contract".
 
-**Linking — name it, wrap it.** Every person, organization, program, and
-document the primary source names is cross-linked to its canonical
-`/{type}/{slug}`, stub even when that node doesn't exist yet — including each
-named researcher in body/synthesis prose and the document's own author. A
-forward-link to an unbuilt node is the correct value, never null and never bare
-narration. Full rule + the two carve-outs: `meta/conventions.md`
-"Cross-references".
+**Linking — name it, wrap it.** Every entity a node names in its own authored
+prose — person, organization, program, event, document, location, finding — is
+wrapped as a `[`/{type}/{slug}`]` link, stub even when that node doesn't exist
+yet (the unbuilt-node stub is what populates `## Associated Nodes` and the
+broken-link / Priority-Build registry). No "load-bearing vs. incidental"
+judgment — if the prose names it, wrap it. A forward-link to an unbuilt node is
+the correct value, never null and never bare narration, in a structured path
+field (`affiliations[].organization_path`, `relationships[].person_path`, a
+program/event path) exactly as in an inline prose wrap. A named theory /
+equation / referenced work the prose *discusses* (vs. merely listing it in
+`## References`) is itself a document node → `[`/documents/{slug}`]`. **Two
+carve-outs only:** (1) verbatim `quote.text` is never wrapped — an entity
+appearing only inside a quote is carried by wrapping the canonical form in the
+surrounding prose (the form the prose-drift check matches); (2) a bare
+`## References` / `cited_works` entry is not wrapped — the bibliography is an
+authorship-network dimension, not navigation — unless that work is *also*
+discussed in argument prose. `## Associated Nodes` is auto-generated from the
+wraps by `associate.py` (never hand-edited); `prose_entity_link` (blocking
+check) catches an unwrapped entity already in the repo, and `link-suggest.py`
+(read-only aid) surfaces the not-yet-built ones.
+
+**Interview-derived testimony** — when a node cites a long-form media appearance
+(podcast, broadcast, panel, conference talk, streamed interview) as evidence,
+three classes must appear as `[`/path`]` wraps (usually inside the
+`timeline[].event` text): the **venue** (host/distributor org →
+`/organizations/{slug}`), the **host / interviewer / moderator**
+(→ `/people/{slug}`, structurally distinct from the appearance's subject), and
+the **transcript-to-be** (the `/transcripts/{slug}` where the verbatim evidence
+will live, forward-linked before it is built). Called out because a media
+appearance is where they are most often missed.
 
 ## Build phases
 

@@ -1,6 +1,6 @@
 """prose_entity_link check — per-node NodeContext check.
 
-The universal-stub rule (see ``meta/conventions.md`` "Cross-references"):
+The universal-stub rule (name it, wrap it):
 every entity a node names **in its own authored prose** must be
 carried navigationally as a ``[`/{type}/{slug}`]`` stub, so it reaches the
 auto-generated ``## Associated Nodes`` index and the broken-link registry.

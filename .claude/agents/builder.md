@@ -124,7 +124,7 @@ In order, with a check after each (build-protocol → run
    synthesis prose (a document `description`, a `background`), wrapped inline at
    its first mention (`Name ([`/people/slug`])`, source token left verbatim so
    prose-drift still matches). Stub even when the node does not exist yet
-   (`meta/conventions.md` "Cross-references"). Populate `naming_quirks`. A
+   (the build-protocol "name it, wrap it" contract). Populate `naming_quirks`. A
    cross-ref the worker flagged as a **non-canonical source form** *additionally*
    gets a `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
    canonical. Register

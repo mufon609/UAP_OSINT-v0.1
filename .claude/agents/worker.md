@@ -100,8 +100,9 @@ naming the metadata field, never a `quotes[]` entry.
    person (every named researcher and cited author discussed in the prose, plus
    the document's own author), organization, program, and document — to its
    canonical `/{type}/{slug}`, **stub even if that node doesn't exist yet**
-   (`meta/conventions.md` "Cross-references"; naming an entity without a link is
-   the under-linking failure). An entity named under a **non-canonical form**
+   (naming an entity without a link is the under-linking failure; the full
+   linking rule is the build-protocol "name it, wrap it" contract). An entity
+   named under a **non-canonical form**
    (idiosyncratic abbreviation, former name, misspelling) *additionally* gets its
    source form flagged for a `naming_quirks` entry — stub the canonical node and
    flag the variant even when that node does not exist yet. For an

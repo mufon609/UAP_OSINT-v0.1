@@ -668,6 +668,16 @@ artifact_entry:
   #     byte-identical to the parent auto-caption file)
   # Both register under the parent transcript URL with fragment
   # `#speaker-attribution` + `--wayback-skip` (derived, non-fetchable).
+  # A fragment-marked entry (`#clean-text-transcription` for an OCR sibling,
+  # `#speaker-attribution` for an attribution sibling) is a SIBLING, not a
+  # parent — an extraction surface only. An artifact's `primary_sources[]`
+  # always lists the PARENT (the PDF, or the auto-caption file), never the
+  # sibling: the OCR sibling REPLACES the parent's corrupt text layer for
+  # verbatim-quote extraction; the speaker-attribution sibling COEXISTS with
+  # the parent (validate.py matches quote.text against the parent caption,
+  # speaker_attribution_consistency matches speaker_id against the sibling's
+  # turns). Production + registration: /prepare-ocr-sibling,
+  # /prepare-transcript-sibling.
   extraction_type_values: [text-native, ocr-scan, extraction-lossy]
   # `extraction_type` classifies how the archived file yields text. Optional;
   # defaults to `text-native` when absent (legacy entries pre-field). The
