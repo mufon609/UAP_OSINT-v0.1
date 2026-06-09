@@ -42,7 +42,7 @@ The rules are enforced by `meta/schema.yaml` + the validators in `scripts/checks
 
 ```
 README.md                   this file — public-facing overview
-AGENT.md                    first-read for AI agents querying the repo
+AGENTS.md                   first-read for AI agents querying the repo
 CLAUDE.md                   session-start checklist for contributors
 
 meta/
@@ -116,7 +116,7 @@ User-Agent, etc.); the toolkit reads them via
 Everything not deleted by the steps above — the rest of
 `meta/` (schema, memory, templates, …), all of
 `scripts/` and `prompts/`, the `.claude/` skills + subagents + hooks +
-`settings.json`, and root-level governance (`CLAUDE.md`, `AGENT.md`,
+`settings.json`, and root-level governance (`CLAUDE.md`, `AGENTS.md`,
 this `README.md`) — is topic-neutral toolkit and survives the fork.
 
 **Three organizing principles, one per tier.** Investigator-facing
@@ -237,7 +237,7 @@ preloaded into each role; it is not a skill you invoke.
 commit gate (runs `pre-commit.sh`), a block on hand-editing rendered node
 bodies, and a one-new-synthesis-node-per-session cap.
 
-Deeper detail: `AGENT.md` ("Route by task") maps a goal to the right skill;
+Deeper detail: `AGENTS.md` ("Route by task") maps a goal to the right skill;
 `prompts/topology.md` is the design rationale for the role decomposition; the
 contract itself lives in `.claude/skills/build-protocol/`.
 

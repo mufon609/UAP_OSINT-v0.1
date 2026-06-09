@@ -8,11 +8,9 @@ Read this file at the start of every Claude Code session that involves
 **building, auditing, or iterating** on repository content.
 
 **If you are instead *querying* the repo to answer a user's question** —
-not modifying content — read `AGENT.md` at the repo root first. AGENT.md
-is the consumer-agent entry point; it documents the query protocol, the
-research-artifact layer, and how to route to the right data without
-invoking the build pipeline. CLAUDE.md below assumes a contributor
-session.
+not modifying content — read `AGENTS.md` at the repo root first: the
+consumer-agent entry point (query protocol, research-artifact layer,
+task routing). CLAUDE.md below assumes a contributor session.
 
 ---
 
