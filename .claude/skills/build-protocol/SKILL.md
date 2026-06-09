@@ -90,6 +90,53 @@ A node in a serially-released set is slugged `{corpus}-{release#}-{short-title}`
 with NO date (siblings then sort + cross-reference by release number; the date
 lives in `internal_date` / the manifest).
 
+## Density is source-driven — no count targets
+
+The passage rubric above is the document-corpus case of a repo-wide rule:
+templates, prompts, and audits do not impose count targets on artifact
+content. This applies uniformly to two surfaces:
+
+- **Entry lists** — `quotes`, `naming_quirks`, `affiliations`,
+  `relationships`, `corroboration_items`, `program_involvement`,
+  `publication_record`, `vouching_chain`, `participants`,
+  `witnesses_testimony`, `timeline`, `key_personnel`, `org_relationships`,
+  `contracts`, `media_versioning`, and any other entry-list section the
+  schema defines.
+- **Free-prose fields** — `description`, `background`, `top_relevance`,
+  `credibility_notes`.
+
+Populate each surface with what archived primary sources support — no
+more, no less. The source produces the count: one entry is correct if the
+source supports one, fifty if it supports fifty. Validators check each
+entry's traceability to source, never counts.
+
+Count targets ("aim for ~10 quotes", "1-2 paragraphs", "~6-10 entries",
+"2-4 sentences", "~50 words per paragraph") create pressure that splits
+two ways under real source variance: filler entries when the source
+doesn't support the count, or hallucinated content when the model fills
+the gap from training knowledge. The surface that introduces a count
+target is where these failure modes originate — the rule applies
+prospectively to template authoring, prompt drafting, and
+scope-at-session-start. Comparison framings count as targets too ("this
+section seems sparse"; "comparable nodes have N entries, this has fewer —
+anything to add?"): flag specific entries that look unsupported by source,
+never aggregate counts.
+
+**Density governs count, not capture.** The rule bars count *targets*; it
+does not license declining to capture a class of source material the
+source actually carries. Whether the source has a reference list for
+`cited_works`, whether a passage is load-bearing, whether a contradiction
+is attested are source-*presence* questions answered by reading the
+source, not density questions. The misread to refuse is "these references
+aren't load-bearing, so leave `cited_works` empty": a source-attested
+reference list is captured *because the source carries it* (the passage
+rubric above names References as a capture category), and the three-state
+`cited_works` affirmation (`NONE | IGNORED | non-empty list`) rejects a
+bare `[]` outright. Density governs only how many entries a captured list
+then yields. The same holds for every required-but-emptyable
+source-anchored section: an empty list is correct only when the source
+genuinely lacks that material, never as a discretionary skip.
+
 ## Tier linking contract — references run downward (check before you link)
 
 Four tiers; a node references only *lower* tiers, never a greater one. The

@@ -32,7 +32,7 @@ Scope + firing:
 
 This detects the BINARY presence of an unaffirmed list, never a count:
 it does not compare entry counts or peer nodes (that pressure is what
-``### Density is source-driven`` prohibits). Verbatim fidelity of
+build-protocol "Density is source-driven" prohibits). Verbatim fidelity of
 populated entries is the ``cited_works`` check; cross-layer node-body
 coverage is ``coverage``. OCR-scan PDFs are read through their verified
 ``.txt`` sibling via ``extract_source_text``.

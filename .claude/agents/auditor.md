@@ -92,7 +92,7 @@ Audit goals:
    (`meta/research/{peer}.yaml`); no tooling needed for a handful of peers.
    **Recommend-only, and a source re-check — never a count match.** A peer
    carrying a section is not license to add entries until the target
-   "matches" (that is the pressure `### Density is source-driven` forbids);
+   "matches" (that is the pressure build-protocol "Density is source-driven" forbids);
    add an entry only if the target's source attests it, and if it doesn't,
    the asymmetry is correct. Synthesis sections (Description, Background,
    Credibility Notes) are out of scope. Emit any candidates in the auditor

@@ -25,7 +25,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Neutrality](#neutrality)
 - **Part II — The evidentiary primitive: quotes**
   - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
-  - [Density is source-driven](#density-is-source-driven)
 - **Part IV — The synthesis layer**
   - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
 
@@ -270,60 +269,6 @@ Eliminating the prose claim layer eliminates the drift surface. Other
 nodes that cite facts from a source link to the source-bearing node
 (document / transcript / media) and reference the specific passage —
 no intermediate paraphrase exists to drift.
-
-### Density is source-driven
-
-Templates and prompts do not impose count targets on artifact content.
-This applies uniformly to two surfaces:
-
-- **Entry lists.** `quotes`, `naming_quirks`,
-  `affiliations`, `relationships`, `corroboration_items`,
-  `program_involvement`, `publication_record`, `vouching_chain`,
-  `participants`, `witnesses_testimony`, `timeline`, `key_personnel`,
-  `org_relationships`, `contracts`, `media_versioning`, and any
-  other entry-list section the schema defines.
-- **Free-prose fields.** `description`, `background`, `top_relevance`,
-  and `credibility_notes`.
-
-Contributors populate each surface with what archived primary sources
-support — no more, no less. The source produces the count. If a
-section ends up with one entry, that's correct. If it ends up with
-fifty, that's correct. Validators don't check counts; they check
-each entry's traceability to source.
-
-Count targets ("aim for ~10 quotes", "1-2 paragraphs",
-"approximately 6-10 substantive entries", "2-4 sentences",
-"~50 words per paragraph") create pressure that splits two ways under
-real source variance: filler entries when the source doesn't support
-the count, or hallucinated content when the model fills the gap from
-training knowledge. The contributor surface that introduces a count
-target is the surface where these failure modes originate — the rule
-applies prospectively to template authoring, prompt drafting, and
-scope-at-session-start.
-
-Comparison framings also count as targets and should be avoided:
-"this section seems sparse", "comparable nodes have N entries; this
-one has fewer — anything to add?". Only flag specific entries that
-look unsupported by source; never flag aggregate counts.
-
-**Density governs count, not capture.** The rule bars count *targets*;
-it does not license declining to capture a class of source material the
-source actually carries. Whether the source has a reference list to
-record in `cited_works`, whether a passage is a load-bearing quote,
-whether a contradiction is attested — those are source-*presence*
-questions, answered by reading the source, not density questions. The
-misread to refuse is "these references aren't load-bearing, so leave
-`cited_works` empty": a source-attested reference list is captured
-*because the source carries it* (the build-protocol document-extraction
-rubric names References as a capture category). For `cited_works`
-specifically, the empty-state ambiguity is closed by the three-state
-`cited_works` affirmation (`NONE | IGNORED | non-empty list`) — a bare `[]` is
-rejected outright, so the contributor cannot quietly drop a captured
-list on "not load-bearing" grounds. Density governs only how many
-entries a captured list then yields. The same holds for every
-required-but-emptyable source-anchored section: an empty list is
-correct only when the source genuinely lacks that material, never as a
-discretionary skip.
 
 ---
 
