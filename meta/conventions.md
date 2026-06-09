@@ -467,43 +467,8 @@ feeds), and the isolated glyph is handled at the point of use —
 re-derive the affected quote, or add the specific Unicode-confusable
 to `normalize_for_compare` — never by transcribing the whole document.
 Reserve the sibling for extraction that is broken throughout; the test
-is the OCR-producer / pervasive-noise signal below, not the presence
-of any single bad character.
-
-**Detecting a new OCR-scan source.** A PDF whose Producer / Creator
-metadata names an OCR engine (OmniPage, AINSLIB.OCR, ABBYY,
-Tesseract) or whose text layer was demonstrably reconstructed from
-page images needs the `ocr-scan` flag even when its `pdftotext`
-output looks clean on a casual read. The signals to check:
-
-- **Visual diff.** Compare `pdftotext` output of any page against
-  the rendered PDF page. Clean text-native extractions don't show
-  character-level divergences from visible content; OCR sources do.
-- **Character-cluster transpositions.** Common OCR misreads cluster
-  in predictable pairs — `rt`↔`tr`, `ar`↔`at`, `re`↔`te`, `ll`↔`11`,
-  `cl`↔`d`, `rn`↔`m`. Grep for words containing these in positions
-  where they don't make English sense (`telated`, `compatrtmented`,
-  `appatently`) as a fast first-pass screen.
-- **Unicode-mapping artifacts.** Substitution at the PDF-generation
-  layer can produce nonsense glyphs (`‡` for `½`, `®` for `©`) that
-  the extractor reproduces faithfully. These look correct on text-
-  navigation tools but wrong against visible content.
-- **Producer-string heuristic.** Run `pdfinfo` on the PDF and check
-  the Producer / Creator fields. OmniPage CSDK, AINSLIB.OCR, ABBYY
-  FineReader, and Tesseract producers all warrant inspection even
-  when the extract looks clean. (Some PDFs have a clean extract
-  despite OCR producer metadata; that's the
-  exception case — flagged `ocr-scan` with a verification note
-  instead of producing a `.txt` sibling. Most OCR-produced PDFs need
-  the sibling.)
-
-When detection confirms `ocr-scan`, set the manifest entry's
-`extraction_type` accordingly. If the extracted text is clean enough
-to use, the validator falls back to `pdftotext` (per
-`extract_source_text` in `scripts/lib/_common.py`); otherwise produce
-a contributor-verified `.txt` sibling. The two-step contributor
-discipline below ("Per-quote contributor discipline …") handles the
-per-quote case during the window before the sibling exists.
+is the OCR-producer / pervasive-noise signal (the detection signals in
+`archive.md`), not the presence of any single bad character.
 
 ### Type-specialized views of `quotes[]`
 

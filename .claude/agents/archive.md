@@ -37,6 +37,20 @@ orchestrator directly, in the tightening loop).
    the sibling's manifest entry when handed one, but you do not produce or
    verify it.
 
+   **Flagging `ocr-scan` / `extraction-lossy` — the detection signals.** A PDF
+   whose text layer was reconstructed from page images needs the flag even when
+   its `pdftotext` looks clean on a casual read. Check: a **visual diff** of
+   `pdftotext` against the rendered page (OCR sources show character-level
+   divergences from the visible content; clean text-native ones don't);
+   **character-cluster transpositions** (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`,
+   `ll`↔`11` — grep for nonsense like `telated`, `compatrtmented`);
+   **Unicode-mapping artifacts** (`‡` for `½`, `®` for `©` — correct on text
+   tools, wrong against the page); and the **producer string** (`pdfinfo`
+   Producer / Creator naming OmniPage, AINSLIB.OCR, ABBYY, Tesseract). A clean
+   extract despite OCR producer metadata is the exception — flag `ocr-scan` with
+   a verification note and no sibling; otherwise the verified `.txt` sibling
+   follows at `/build` step 4b.
+
 You do **not** scaffold the artifact — the orchestrator scaffolds once
 (the Internal Investigator's reused sources + yours, in a single `research-scaffold --sources`
 call) after you finish, before the Worker runs.
