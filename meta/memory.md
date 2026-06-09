@@ -25,7 +25,11 @@ home when one emerges.
 
 ## What does NOT go here
 
-- Evidentiary discipline or structural rules → `meta/conventions.md`.
+- Evidentiary discipline or structural rules → their owner: the
+  enforcing `scripts/checks/` module, `meta/schema.yaml` /
+  `meta/schema-research-artifact.yaml`, a `.claude/skills/` + `agents/`
+  contract, or `meta/conventions.md` for the cross-cutting epistemic
+  principles.
 - Schema-level field semantics → `meta/schema.yaml` and
   `meta/schema-research-artifact.yaml` comments.
 - Session workflows → `.claude/skills/` (invokable as `/build`, `/onboard`,
@@ -39,9 +43,9 @@ home when one emerges.
 One H3 per pattern. Lead with the rule. Add a short `Why` paragraph
 only when the rationale is non-obvious from the rule. Skip dates,
 commit hashes, and incident references — those belong in git log.
-When a more specific home for an entry emerges (a conventions
-section, a schema comment, a prompt), promote the entry there and
-delete the H3 from this file.
+When a more specific home for an entry emerges (a conventions section, a
+schema comment, a skill/agent contract, a prompt), promote the entry
+there and delete the H3 from this file.
 
 ---
 
@@ -97,7 +101,11 @@ problem, say so and offer the lean alternative.
 
 ### NO BANDAIDS, in practice
 
-The `NO BANDAIDS` rule (`conventions.md`) as day-to-day contributor
+Any issue found during an audit either gets fixed immediately (preferred
+for mechanical issues, missing checks, hygiene gaps) or filed in
+`meta/BACKLOG.md` for later (design questions, convention-level changes,
+items needing consensus). A comment parking the issue (`// known issue: X
+never fires under condition Y`) is not a third option. The day-to-day
 reflexes:
 
 - **Fix the cause, not a backstop.** Fix a failure at its source
@@ -124,14 +132,17 @@ incorrect or half-finished work; record genuinely load-bearing
 removals in BACKLOG. An agent with no more context defaults to
 hedging, and an unsourced hedge degrades the repo.
 
-### Check conventions.md before treating an "inconsistency" as open
+### Check the governing docs before treating an "inconsistency" as open
 
-`meta/conventions.md` usually already settles what looks like an open
-design question. Grep it for the governing rule first; if a standard
-exists, bring the data into compliance rather than inventing tooling
-or a parallel scheme. A check often *silently skips* a non-compliant
-form, so a violation can read green and look like "no standard
-exists."
+The governing surfaces usually already settle what looks like an open
+design question: `meta/conventions.md` for the epistemic principles,
+`meta/schema.yaml` / `meta/schema-research-artifact.yaml` for
+field/structure semantics, `.claude/skills/` + `.claude/agents/` for
+build discipline, and `scripts/checks/` for what is mechanically
+enforced. Grep them for the governing rule first; if a standard exists,
+bring the data into compliance rather than inventing tooling or a
+parallel scheme. A check often *silently skips* a non-compliant form, so
+a violation can read green and look like "no standard exists."
 
 ### Drive node builds through the agent topology
 
@@ -196,3 +207,55 @@ over inventing the number.
 contain no information — the reader cannot tell what was measured
 from what was guessed, and the artifact decays as more sessions
 accumulate fake-precise predictions that nothing tests.
+
+### Working notes are a report, not a residue
+
+An agent's — or contributor's — analysis, intermediate reasoning, and
+findings are a **deliverable**: handed to the user, or returned up the
+build pipeline as a handoff. They are never persisted into the
+repository's durable surfaces. The repo records *what the sources say*
+and *what the code does*, not the working process that produced either.
+
+Three durable surfaces, three places working notes must not land:
+
+- **Node bodies** — renderer output, regenerated from the
+  `meta/research/` artifact; source-anchored content, not commentary
+  about how it was assembled. The `block_node_body_edit.sh` hook enforces
+  this; bodies are not hand-edited at all.
+- **Code comments** — what the code does and the non-obvious why, not who
+  changed it or what an audit found (see "Comments describe code, not
+  refactor history" below).
+- **Stray files** — no scratch notes, status logs, or "summary of this
+  session" files committed to the tree.
+
+The record lives in **git history** (commit messages, PR descriptions).
+For build work this is the mechanism the role pipeline already runs on —
+each role returns a handoff stub rather than writing shared state
+(`prompts/topology.md`); see "Drive node builds through the agent
+topology" above.
+
+### Comments describe code, not refactor history
+
+Code comments describe what a function or script does and any non-obvious
+why — invariants, layering rules, surprising behavior — not refactor
+history. Forbidden in comments: BACKLOG identifiers (`per BACKLOG C21`),
+commit hashes (`migrated at af5f789`), dated audit notes
+(`2026-05-05 audit surfaced …`), phase/cluster markers (F.5b, D.4),
+`Origin:` / `Migration:` / `Anchor pattern:` blocks, "previously X, now
+Z" reframings, and "mirror X exactly" sync reminders for code since
+centralized. The commit message carries *why we changed it*; the comment
+carries *why it is the way it is*, and only when non-obvious. This
+describe-current-state rule extends to every governance file — retiring a
+check, removing a conventions section, deleting a template: the file
+describes current state and pending work, not past evolution. Git log
+carries the evolution.
+
+**What TO keep:** functional descriptions, plus non-obvious why notes
+anchored on still-live concepts — a durable governance anchor (a
+surviving `meta/conventions.md` section name, a `meta/schema.yaml` /
+`meta/schema-research-artifact.yaml` field path, a `.claude/skills/` or
+`.claude/agents/` contract name), a `meta/roadmap.md` mention when scoping
+a "not yet implemented" check, or a layering invariant (e.g.
+"presence-guard, not truthy — opens a gap with `frontmatter_required` if
+loosened"). Anchor on durable concepts, never transient ones (specific
+commits, dated audits, phase markers).
