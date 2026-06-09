@@ -2,7 +2,7 @@
 #
 # Single source of truth for node types, required sections, vocabularies,
 # and structural rules. Read by scripts/build/validate.py and scripts/build/new.py.
-# Human-readable rationale lives in meta/conventions.md.
+# Human-readable rationale lives in README.md, build-protocol, and per-check docstrings.
 
 # ---------------------------------------------------------------------------
 # Cross-cutting vocabularies
@@ -16,7 +16,7 @@ quote_verification_fields:
   required: [Attributed to, Source, Verified]
   optional: [Location, Note]
 
-# Three-layer evidentiary architecture (see meta/conventions.md).
+# Three-layer evidentiary architecture (see architecture_layers below).
 # Entity-layer types carry facts; the finding layer documents multi-source
 # patterns over those facts; the investigation layer evaluates hypotheses
 # over findings + entity facts. The flow is one-directional. Consumed by
@@ -498,8 +498,8 @@ types:
   #
   # Findings are distinguished from FACTS (single-source attestations
   # naming another entity), which continue to live structurally on
-  # entity nodes. See meta/conventions.md "Three-layer evidentiary
-  # architecture" for the full bright line.
+  # entity nodes. See architecture_layers above (the four-tier
+  # contract) for the full bright line.
   finding:
     path: findings
     description_required: true
@@ -602,7 +602,7 @@ types:
 
   # --- META ---------------------------------------------------------------
   meta:
-    description: "Governing documents (conventions.md, topic/research-queue.md) — no enforced node structure"
+    description: "Governing documents (README.md, meta/*.md, topic/research-queue.md) — no enforced node structure"
     frontmatter:
       required: [id, type]
 

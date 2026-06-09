@@ -118,7 +118,7 @@ def mark_pages(text):
     byte-identical to what the verbatim / prose-drift checks see — the markers
     sit only at page boundaries, exactly where a quote must not span (a
     page-spanning passage splits into two ≤1-page quotes per
-    ``meta/conventions.md``), so a within-page quote copied from the scratch
+    ``meta/schema-research-artifact.yaml`` quote_source), so a within-page quote copied from the scratch
     still matches. Returns the text unchanged when it carries no form feeds
     (HTML / TXT / single-page PDFs / ``.txt`` siblings)."""
     if "\f" not in text:

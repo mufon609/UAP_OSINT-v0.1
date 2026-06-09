@@ -54,8 +54,8 @@ archival_status: {{archival_status}}
 
 <!-- Document nodes have no "What This Establishes" synthesis section by
      design. The document IS the fact record. Evidentiary content is
-     verbatim source passages in Key Passages. See meta/conventions.md
-     "Statements as the universal evidentiary primitive" for the
+     verbatim source passages in Key Passages. See meta/schema-research-artifact.yaml quotes[]
+     (the universal evidentiary primitive) for the
      repo-wide statements-only discipline. -->
 
 ## Key Passages

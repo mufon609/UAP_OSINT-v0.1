@@ -3,7 +3,7 @@
 Enforces the three-layer evidentiary architecture conservation rule:
 findings DUPLICATE primary-source content from entity nodes; the entity
 node is updated first before the finding can use it. Per
-``meta/conventions.md`` "Three-layer evidentiary architecture":
+``meta/schema.yaml`` architecture_layers (the four-tier contract):
 
     Findings DUPLICATE primary-source content from entity nodes BY
     DESIGN. If a finding cites material the relevant entity node
@@ -61,7 +61,7 @@ def check(ctx):
                 ctx.rel, "error",
                 f"quotes[{i}] ({q.get('id')!r}): source path {path!r} is "
                 f"not cited in any entity-type research artifact's "
-                f"primary_sources[]. Per meta/conventions.md \"Three-"
+                f"primary_sources[]. Per meta/schema.yaml architecture_layers, \"Three-"
                 f"layer evidentiary architecture\", findings duplicate "
                 f"primary-source content from entity nodes; the entity "
                 f"node is updated first before the finding can use it. "

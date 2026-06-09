@@ -104,7 +104,7 @@ Defined once, obeyed everywhere; not restated per role:
 - **Source-read-first** — inclusion judged on source content, hard-enforced at `extract` → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Source-read-first"
 - **Handoff = return value** — each role returns its stub; no file is written for the handoff → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Handoff stubs" · [`stub-schemas.md`](../.claude/skills/build-protocol/stub-schemas.md)
 - **Fix the data, never the node body** — the body is regenerated, never hand-edited → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Fix the data, never the node body"
-- **References run downward** — the four-tier linking contract → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Tier linking contract" · [`conventions.md`](../meta/conventions.md) "Tier model and linking contract"
+- **References run downward** — the four-tier linking contract → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Tier linking contract"
 - **One new synthesis-heavy node per session** — hook-enforced on the scaffolder → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "One new synthesis-heavy node per session"
 - **Phase vocabulary** — generated from `scripts/checks/_phases.py`, not memorized → [`build-protocol`](../.claude/skills/build-protocol/SKILL.md) "Build phases"
 

@@ -82,8 +82,8 @@ outputs_produced:
     - fact: "{fact}"
       source_phrasing: "<exact words from source — prose-drift grounding>"
       location: "<location anchor>"
-  # cited_works (DOCUMENT sources only — conventions.md "cited_works
-  # affirmation"; omit entirely for non-document sources). Pick exactly ONE
+  # cited_works (DOCUMENT sources only — the three-state cited_works
+  # affirmation; omit entirely for non-document sources). Pick exactly ONE
   # of three shapes; bare [] is REJECTED.
   #
   # Shape A — source has no reference list (EOs, news items, hearing

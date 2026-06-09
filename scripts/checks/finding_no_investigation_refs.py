@@ -70,7 +70,7 @@ def check(ctx):
             f"finding artifact references an investigation at "
             f"{field_path!r} ({hit}): {value[:80]!r}. Findings must stay "
             f"cluster-neutral; investigations cite findings, not the other "
-            f"way around — even by bare slug in prose (see meta/conventions.md "
-            f"'Tier model and linking contract').",
+            f"way around — even by bare slug in prose (see the build-protocol "
+            f"'Tier linking contract').",
             check_name=CHECK_NAME,
         )

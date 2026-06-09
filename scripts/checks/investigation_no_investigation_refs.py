@@ -3,7 +3,7 @@
 Same-tier prohibition (Tier 4): an investigation never references **another**
 investigation. Investigations are the top of the iceberg — they consume findings
 (Tier 3) and entity facts (Tier 2); nothing references an investigation,
-including other investigations. Per ``meta/conventions.md`` "Tier model and
+including other investigations. Per the build-protocol "Tier
 linking contract".
 
 For an investigation artifact, walks every string leaf and flags any reference
@@ -68,7 +68,7 @@ def check(ctx):
                 f"{field_path!r} (slug {m.group(1)!r}): {value[:80]!r}. An "
                 f"investigation is the top tier — nothing references an "
                 f"investigation, including other investigations (Tier-4 same-tier "
-                f"prohibition). See meta/conventions.md 'Tier model and linking "
+                f"prohibition). See the build-protocol 'Tier linking "
                 f"contract'.",
                 check_name=CHECK_NAME,
             )

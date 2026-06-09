@@ -214,7 +214,7 @@ def _render_attribution_block(quote, artifact):
     block carries no verification marker — confirmation against the
     underlying source is a precondition for inclusion (enforced
     artifact-side by the verbatim-quote check), not a rendered claim.
-    See meta/conventions.md."""
+    Enforced by the verbatim-quote check (scripts/checks/verbatim_quotes.py)."""
     attributed_to = _compose_attributed_to(
         quote.get("context"), quote.get("statement_date")
     )

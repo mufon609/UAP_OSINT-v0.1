@@ -52,7 +52,7 @@ Carve-outs (faithful to convention):
 
 The bibliographic ``cited_works`` / ``## References`` layer is out of
 scope by design — it is an authorship-network dimension, not a navigation
-surface (see the document renderer + ``meta/conventions.md``).
+surface (see the document renderer + the cited_works schema).
 """
 
 import re

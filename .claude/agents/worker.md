@@ -167,8 +167,8 @@ naming the metadata field, never a `quotes[]` entry.
      `Endnotes, entry [35] (entry continues after an interposed page-banner;
      final line captured after the break)`) — do not splice
      across the interposed banner. Mirrors the page-spanning-quote rule
-     (`meta/conventions.md` "Page-spanning quotes split at the page
-     boundary").
+     (`meta/schema-research-artifact.yaml` quote_source — page-spanning quotes split at the page
+     boundary).
 
    Omit the block entirely for non-document sources (workers on
    transcript / media / etc. sources do not emit `cited_works`).

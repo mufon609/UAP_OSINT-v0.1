@@ -117,7 +117,7 @@ def _check_sources_list(rel, container, container_label, check_name):
             f"{container_label}: missing or empty 'sources' rollup. "
             f"Each speculation-tolerant prose surface must list the "
             f"findings or entity-node anchors it draws on (see "
-            f"meta/conventions.md 'Three-layer evidentiary architecture').",
+            f"the build-protocol 'Tier linking contract').",
             check_name=check_name,
         )
         return

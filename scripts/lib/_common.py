@@ -3,7 +3,7 @@
 The verbatim-quote check (validate.py), prose-drift check
 (validate-research.py), and description-drift check (review-coverage.py)
 must see identical source bytes under identical normalization or the
-"confirmation against source" guarantee in `meta/conventions.md` breaks
+"confirmation against source" guarantee in build-protocol (source-read-first) breaks
 silently. This module is the single implementation the three import.
 """
 
@@ -145,7 +145,7 @@ def content_node_types():
 
 def entity_type_names():
     """Set of entity-layer type names per the three-layer evidentiary
-    architecture (see meta/conventions.md). Derived from schema's
+    architecture (see meta/schema.yaml architecture_layers). Derived from schema's
     ``architecture_layers.entity`` list — the directional-contract
     checks (entity_no_finding_or_investigation_refs,
     finding_source_in_entity_node) gate on this so adding a new entity
@@ -437,7 +437,7 @@ def load_source_to_artifacts_index():
 
     Entity types only — finding / investigation / meta artifacts are
     excluded since they're the consumers, not the canonical-fact homes.
-    Per ``meta/conventions.md`` "Three-layer evidentiary architecture",
+    Per ``meta/schema.yaml`` architecture_layers,
     findings DUPLICATE primary-source content from entity nodes; the
     entity node is updated first. The
     ``finding_source_in_entity_node`` check uses this index to enforce
@@ -811,7 +811,7 @@ def _strip_pdf_page_number_lines(text):
 def _strip_sibling_form_feeds(text):
     r"""A `.txt` sibling is a clean transcription that carries **no synthetic
     page markers** — never manufacture page structure in a sibling (see
-    ``meta/conventions.md``). Strip any stray form feed so a sibling-backed
+    the /prepare-ocr-sibling sibling rules). Strip any stray form feed so a sibling-backed
     source has no `\f` page structure: ``quote_location_page`` then skips it by
     design — its `p. N` refs are verbatim-anchored navigation hints, not
     machine-checked against a fabricated page split. Text-native PDFs keep the
@@ -882,7 +882,7 @@ def extract_source_text(source_path):
     fragment plus an orphan word that never matches a contributor's
     canonical-form prose token. Centralizing the merge here keeps the
     three lockstep helpers (verbatim-quote, prose-drift, description-
-    drift) seeing the same bytes per `meta/conventions.md`'s lockstep
+    drift) seeing the same bytes per the scripts/lib lockstep
     principle. Idempotent for `normalize_for_compare`, which still
     applies its own merge as defense-in-depth on quote text.
 

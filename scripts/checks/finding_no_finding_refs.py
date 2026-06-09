@@ -3,7 +3,7 @@
 Same-tier prohibition (Tier 3): a finding never references **another** finding.
 Findings are independent, cluster-neutral multi-source patterns; cross-finding
 synthesis belongs on an investigation (Tier 4), not inside a finding. Per
-``meta/conventions.md`` "Tier model and linking contract".
+the build-protocol "Tier linking contract".
 
 For a finding artifact, walks every string leaf and flags any reference to
 another finding's node slug (from ``ctx.synthesis_slugs['finding']`` minus this
@@ -68,7 +68,7 @@ def check(ctx):
                 f"(slug {m.group(1)!r}): {value[:80]!r}. Findings are independent "
                 f"and cluster-neutral — a finding never references another finding "
                 f"(Tier-3 same-tier prohibition; cross-finding synthesis belongs on "
-                f"an investigation). See meta/conventions.md 'Tier model and "
+                f"an investigation). See the build-protocol 'Tier "
                 f"linking contract'.",
                 check_name=CHECK_NAME,
             )

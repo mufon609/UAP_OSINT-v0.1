@@ -18,8 +18,8 @@ behind each node. They capture:
   evidentiary primitive across all node types, filtered at render time
   for type-specific section rendering (`## Statements` on person,
   `## Key Testimony` on hearings, `## Key Passages` elsewhere). See
-  `meta/conventions.md` "Statements as the universal evidentiary
-  primitive" for the rationale.
+  `meta/schema-research-artifact.yaml` quotes[] (the universal evidentiary
+  primitive) for the rationale.
 - Entities referenced (person, org, event, doc, transcript, media,
   location, finding)
 - Naming quirks in the sources (typos, alt spellings)

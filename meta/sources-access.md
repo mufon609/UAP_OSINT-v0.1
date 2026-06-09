@@ -128,7 +128,7 @@ Per-asset manifest choices for this host:
   (stable re-fetch target), not the `#fragment` landing form.
 - **`--extraction-type ocr-scan`** — these are image-only scans; a verified
   clean-text `.txt` sibling is required for verbatim quotes (see
-  `/prepare-ocr-sibling` and `meta/conventions.md` OCR-scan discipline).
+  the `/prepare-ocr-sibling` OCR-scan discipline).
 - **`--wayback-skip`** — Akamai also blocks the IA crawler, so the URL is
   not Wayback-eligible; the local file + canonical URL is the provenance
   record (same model as the `x.com` / `esd.whs.mil` blocked-source entries).

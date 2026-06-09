@@ -6,8 +6,8 @@ section:
   - ``prose_only``: section must not contain a markdown table
   - ``split: [...]``: section must carry the listed H3 subsections.
     ``### Confirmed`` is required when listed; ``### Flagged`` is
-    omitted when empty by convention (``meta/conventions.md``
-    "Confirmed vs Flagged"), so the walker skips Flagged even when
+    omitted when empty by convention (README
+    "Status markers"), so the walker skips Flagged even when
     the schema's split rule names it.
   - ``requires_quote_attribution``: any block-quote in the section
     must be paired with an attribution ``| Source | … |`` row.

@@ -4,7 +4,7 @@ Enforces the three-layer evidentiary architecture directional contract
 from the entity side: entity nodes do not reference findings or
 investigations. Facts flow up to the synthesis layer; the synthesis
 layer does not flow back into the fact substrate. Per
-``meta/conventions.md`` "Three-layer evidentiary architecture":
+``meta/schema.yaml`` architecture_layers (the four-tier contract):
 
     Entity nodes carry facts. Findings consume entity-node facts to
     document multi-source patterns. Investigations consume findings
@@ -89,6 +89,6 @@ def check(ctx):
             f"facts; findings and investigations consume them. The flow is "
             f"one-directional — entity nodes must not reference findings or "
             f"investigations, even by bare slug in prose (see "
-            f"meta/conventions.md 'Tier model and linking contract').",
+            f"the build-protocol 'Tier linking contract').",
             check_name=CHECK_NAME,
         )

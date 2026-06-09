@@ -3,7 +3,7 @@
 Verifies every artifact ``quotes[].text`` appears in the target node's
 rendered body (whitespace / punctuation normalized via the same
 ``normalize_for_compare`` the verbatim-quote check uses, so the lockstep
-guarantee per ``meta/conventions.md`` holds).
+guarantee per the scripts/lib lockstep holds).
 
 Pairs with ``verbatim_quotes`` to bracket the evidentiary chain:
 

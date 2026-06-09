@@ -285,8 +285,8 @@ def render_body_document(artifact, node_kind):
     ``---`` separator between H1 and first H2. Document nodes have no
     What This Establishes synthesis section: the document IS the fact
     record, and Key Passages carries the verbatim evidentiary content.
-    See meta/conventions.md "Statements as the universal evidentiary
-    primitive"."""
+    See meta/schema-research-artifact.yaml quotes[] (the universal evidentiary
+    primitive)."""
     title = render_title(artifact).rstrip("\n") + "\n"
     sections = [
         render_document_summary(artifact),

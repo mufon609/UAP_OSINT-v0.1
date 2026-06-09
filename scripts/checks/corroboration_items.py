@@ -8,7 +8,7 @@ Each entry: required {observer_path, observation_type, source},
 optional {observed_event_ref, confirms}.
 
 Cross-reference surface, NOT a statement surface — per
-``meta/conventions.md``, archetype-specific sections (Corroboration
+``meta/schema.yaml`` archetypes, archetype-specific sections (Corroboration
 / Claim Inventory / Program Involvement / Publication Record) are
 cross-reference / metadata surfaces. The ``confirms`` field describes
 *what* the corroboration confirms (e.g., "Other F/A-18F pilot in

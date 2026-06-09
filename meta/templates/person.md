@@ -90,8 +90,8 @@ archetype: {{archetype}}
        Attributed to / Source / Location.
      Source field renders as a markdown link to the archived source
      (e.g., `[archived source](../sources/government/some.pdf)`). See
-     `meta/conventions.md` "Statements as the universal evidentiary
-     primitive" for the canonical shape. -->
+     `meta/schema-research-artifact.yaml` quotes[] (the universal evidentiary
+     primitive) for the canonical shape. -->
 
 
 ### Direct Observations
@@ -207,7 +207,7 @@ archetype: {{archetype}}
 <!-- Analytical paragraphs grounded in primary sources. For eyewitnesses,
      include an observational framing note. When a discrete finding
      spans 3+ entity nodes or otherwise meets the finding-node creation
-     threshold (see meta/conventions.md "Bright line — fact vs finding"),
+     threshold (see the finding template, the fact/finding bright line),
      promote it to a finding node. -->
 
 ---
