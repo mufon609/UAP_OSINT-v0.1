@@ -738,9 +738,9 @@ artifact_entry:
   #                             with no human correction. The caption file
   #                             IS the machine output. Failure mode
   #                             (character-level mis-transcription, same
-  #                             shape as ocr-scan) + audit discipline: see
-  #                             meta/conventions.md "Transcript provenance
-  #                             and audit discipline".
+  #                             shape as ocr-scan); screening + confirming
+  #                             against the audio is the /verify-transcript
+  #                             skill's operating manual.
   #   unknown                 — provenance not yet classified.
   # `wayback_skip: true` (URL-level) marks entries where Wayback archival
   # is not applicable — synthetic deep-link URLs that require session

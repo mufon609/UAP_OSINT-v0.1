@@ -29,8 +29,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Hearing events as venues](#hearing-events-as-venues)
   - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
   - [Density is source-driven](#density-is-source-driven)
-- **Part III — Source extraction & provenance**
-  - [Transcript provenance and audit discipline](#transcript-provenance-and-audit-discipline)
 - **Part IV — The synthesis layer**
   - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
 - **Part V — Cross-references & archival**
@@ -288,8 +286,8 @@ sections rendered by `scripts/build/renderers/_universal.py` plus the document
 - `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
 - `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
 - `## References` (document `cited_works` — UNIVERSAL on documents via the
-  three-state affirmation NONE / IGNORED / list, see "cited_works
-  affirmation" above; the comparability question shifts from "does the peer
+  three-state affirmation NONE / IGNORED / list (the `cited_works` check +
+  schema); the comparability question shifts from "does the peer
   carry the section?" to "is the affirmation correct against the peer's
   source?")
 
@@ -415,8 +413,9 @@ depends on the transcript's provenance: human-produced transcripts
 human editorial review) ARE the primary source; auto-caption files
 (YouTube auto-captions, Otter.ai, Whisper output) are machine
 extractions of the underlying audio/video, and the underlying media
-is the original source. See "Transcript provenance and audit
-discipline" below for the per-provenance verification path.
+is the original source. The per-provenance verification path lives in
+the `transcript_provenance` enum (`schema.yaml`) and the
+`/verify-transcript` skill.
 
 **When a source gets a `.txt` sibling — the rule.** A `.txt` sibling
 exists *if and only if* the source's default extraction is not a
@@ -540,73 +539,6 @@ entries a captured list then yields. The same holds for every
 required-but-emptyable source-anchored section: an empty list is
 correct only when the source genuinely lacks that material, never as a
 discretionary skip.
-
----
-
-## Part III — Source extraction & provenance
-
-### Transcript provenance and audit discipline
-
-Transcripts of speech sources split into two evidentiary classes by
-how the audio-to-text transcription happened:
-
-**Human-produced transcripts** (accredited stenographic court
-reporting; outlet-published transcripts with human editorial review
-against audio — a national news outlet's or wire service's transcript
-service, broadcast transcripts where the outlet's process
-includes audio confirmation). The human has already done the audio-
-to-text confirmation. These are equivalent-footing primary sources —
-the validator's substring match against the transcript file is
-substantively meaningful, no additional audio verification required.
-The `transcript_provenance` values `stenographic` and
-`published-transcript` mark these classes.
-
-**Auto-caption transcripts** (YouTube auto-captions, Otter.ai,
-Whisper output, any other machine-generated caption file with no
-human correction step). The caption file IS the machine extraction
-of an underlying audio/video signal — structurally the same shape as
-the OCR text layer of a scanned PDF. Failure mode: character-level
-mis-transcription (`Halverson` for `Halvorsen`, `acme widgits` for
-`Acme Widgets`, `Petrakis` for `Petrakos`, `Dan ricco` for `Dan
-Rizzo`). When both quote text and caption file carry the same
-machine artifact, the verbatim-quote check passes trivially — the
-textbook auto-caption blind spot. The `transcript_provenance` value
-`auto-caption` marks these sources; the underlying audio/video is
-the canonical original. Screening a suspected caption artifact and
-confirming it against the audio is the verification skills' operating
-manual (`/verify-transcript`); a source with systemic drift gets a
-contributor-corrected sibling — a contributor transcription of the audio
-or a human-corrected caption file, with its own manifest entry — which
-moves its `transcript_provenance` from `auto-caption` to
-`human-corrected-caption`.
-
-**Hybrid sources** — auto-caption files contributor-corrected
-against audio playback — flag as `human-corrected-caption`. Once
-corrected, equivalent-footing with stenographic and published-
-transcript classes.
-
-The five-value `transcript_provenance` enum is the schema layer
-(see `manifest_entry.transcript_provenance_values` in
-`schema.yaml`). The handling discipline (the verification skills) is the contributor layer.
-
-**Label-less attribution is confirm-against-source.** Provenance also
-determines *how speakers are known*. Where a source carries speaker labels
-(`stenographic`, `published-transcript`, label-preserving
-`human-corrected-caption`) the labels are the attribution — populate
-`speakers[]` and each quote's `speaker_id` from them, and the substring-verify
-check already covers the text. Where a source carries none (`auto-caption`,
-Whisper output — words and timestamps, no labels), the speaker of every quote
-must be **reconstructed and confirmed against the recording**, never inferred
-from textual cues (register, who-addresses-whom, question-then-answer shape).
-Inference from text alone is the exact process that produces misattributions —
-a line assigned to the wrong participant, a two-party exchange collapsed onto
-one speaker — and is no more permissible than deriving a verbatim quote from
-memory. A boundary the recording genuinely cannot settle takes the honest
-mixed-exchange form (`speaker_id` as a list of 2+ ids), never a fabricated
-split. Selecting and running that reconstruction — image path vs. content
-text-pass, the tooling each needs — is the operating manual of the transcript
-skills (`/prepare-transcript-sibling`, `/verify-transcript`), not a central
-rule.
 
 ---
 
