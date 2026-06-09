@@ -566,6 +566,14 @@ quote_entry:
   #   the attestation lives in).
   # text: verbatim quote, YAML literal block (|) preserves multi-line
   # source: object with path + location (single source per quote)
+  # significance: short H3 header summarizing why this quote matters;
+  #   renders as the quote's heading above the blockquote. When a quote's
+  #   evidentiary weight is below the artifact's median (claim-of-record,
+  #   self-attested, secondary-source, contested) and chronological order
+  #   would otherwise promote it without caveat, carry an explicit hedge
+  #   phrase here so the epistemic framing is read before the quote — e.g.
+  #   "Self-attested capacity, contested by the official record" or
+  #   "Claim-of-record — secondary-source attestation only".
   # context: where / when / under what circumstances the speaker
   #   made the statement. Composed into the Attributed-to line of
   #   the rendered verification block. Required on person artifacts
@@ -589,12 +597,13 @@ quote_entry:
   #   section chronologically (ascending by date) — person Statements,
   #   hearing Key Testimony, and Key Passages on documents / transcripts
   #   / media / organizations / locations. Entries without
-  #   statement_date fall through to artifact-entry order. Partial
-  #   population produces mixed ordering and is the failure mode the
-  #   convention warns against (see meta/conventions.md "Key Passages
-  #   ordering"). Populate whenever the source attests a date; quotes
-  #   from legitimately undated material (some location quotes, some
-  #   reference documents) may omit the field.
+  #   statement_date fall through to artifact-entry order. Populate
+  #   whenever the source attests a date; quotes from legitimately undated
+  #   material (some location quotes, some reference documents) may omit
+  #   the field. Partial population (some quotes dated, some not) produces
+  #   mixed ordering — the failure mode to avoid: either populate every
+  #   attestable quote (the undated ones trail in artifact-entry order) or
+  #   leave the field blank on all quotes in the section.
   # speaker_id: references speakers[*].id on the same artifact.
   #   Required on every quote when target_node type is `transcript`
   #   (enforced by scripts/checks/quotes.py) — structural attribution
