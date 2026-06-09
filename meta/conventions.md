@@ -27,7 +27,6 @@ fields, valid vocabularies, required sections per node type — lives in
 - **Part II — The evidentiary primitive: quotes**
   - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
   - [Type-specialized views of `quotes[]`](#type-specialized-views-of-quotes)
-  - [Statements speaker-attribution — quotes BY the person, not ABOUT](#statements-speaker-attribution--quotes-by-the-person-not-about)
   - [Key Passages ordering](#key-passages-ordering)
   - [Hearing events as venues](#hearing-events-as-venues)
   - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
@@ -546,52 +545,6 @@ breaks and list-item structure. So a contributor may author quote text as a
 `|` block (fidelity to the source's layout) without producing a blockquote
 broken mid-sentence; verification is unaffected (the verbatim-quote check
 normalizes whitespace).
-
-### Statements speaker-attribution — quotes BY the person, not ABOUT
-
-A person artifact's `quotes[]` section carries verbatim statements *by*
-the subject — the speaker is the node's subject. Quotes by other
-parties about the subject do not belong in Statements; they belong on
-the speaker's own artifact and on the subject's structured cross-
-reference surfaces (`affiliations[]`, `relationships[]`,
-`program_involvement[]`, `timeline[]` rows) with the speaker's
-source cited.
-
-The bright lines:
-
-- **First-person utterance.** "I saw the object"; "I was the cofounder
-  of …"; a press-release quote attributed to the subject. Belongs in
-  Statements.
-- **Co-authored academic publications.** The subject is named in the
-  author byline and the passage is collectively-authored prose.
-  Belongs in Statements when the substantive content is the subject's
-  own research, position, or institutional claim (a co-authored
-  journal abstract reporting the subject's experimental results: yes).
-  May be skipped when the byline is the only subject-relevant fact and
-  the passage's substance is technical content unrelated to the subject
-  as a person (a co-authored technical paper on an unrelated topic:
-  byline establishes affiliation, but the prose isn't meaningful as a
-  statement by the subject). Either way, the publication itself
-  remains the primary-source attestation of the affiliation — captured
-  via the corresponding `affiliations[]` / `timeline[]` row pointing
-  at the paper.
-- **Self-attestation on the subject's own publication** (personal
-  website, signed bio, authored book). Belongs in Statements even when
-  written in third person — the subject is the publisher.
-- **Quotes by others about the subject.** A reporter narrating, a
-  voucher attesting, a supervisor describing the subject. *Not*
-  Statements. Capture via a `relationships[]`, `program_involvement[]`,
-  `affiliations[]`, or `timeline[]` row on the subject's artifact,
-  citing the third party's source. If the speaker has their own
-  artifact, the same quote belongs in that speaker's `quotes[]`.
-
-Borderline calls — corporate filings the subject signed, interview
-transcripts where the host asks leading questions, ghostwritten op-eds
-under the subject's byline — should be resolved by asking *whose voice
-the source records*. When the voice is the subject's (even with
-others' assistance), it's a Statement. When the voice is the
-attesting third party (even when about the subject), it's a cross-
-reference.
 
 ### Key Passages ordering
 

@@ -32,10 +32,22 @@ sufficient; the check verifies the bytes are in the source, not who said them.
 - **Person artifacts** — `quotes[]` = statements **BY the subject**, never
   ABOUT them. In a multi-speaker source, extract only the subject's lines;
   every other speaker is a `cross_ref_candidate`. A document the subject
-  authored/signed is their voice. A biography / news narration / institutional
-  document ABOUT the subject yields **zero** `quotes[]` — `quotes: []` is the
-  correct output; route its content to `background_material[]` +
-  `cross_ref_candidates[]`.
+  authored/signed/published is their voice — including a signed bio or authored
+  book written in the third person (the subject is the publisher). A biography /
+  news narration / institutional document ABOUT the subject yields **zero**
+  `quotes[]` — `quotes: []` is the correct output; route its content to
+  `background_material[]` + `cross_ref_candidates[]`.
+  - **Co-authored academic publications:** a quote is the subject's voice when
+    its substance is the subject's own research, position, or institutional
+    claim (a co-authored abstract reporting the subject's results). Skip it when
+    the byline is the only subject-relevant fact and the prose is unrelated
+    technical content — the byline still attests the affiliation, captured via an
+    `affiliations[]` / `timeline[]` row pointing at the paper, not a quote.
+  - **Borderline calls** (a filing the subject signed, a leading-question
+    interview, a ghostwritten op-ed under their byline) resolve by *whose voice
+    the source records*: the subject's voice (even with others' help) is a
+    Statement; an attesting third party's voice (even when about the subject) is
+    a cross-reference.
 - **A reporting-verb paraphrase is not a quote** (a narrator's verb, no
   quotation marks) — capture it as a `cross_ref_candidate`.
 - **Transcript artifacts** carry every speaker, so the multi-speaker exclusion
