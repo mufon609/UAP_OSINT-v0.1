@@ -5,46 +5,47 @@ type: meta
 
 # BACKLOG
 
-Deferred work items — real, concrete, and would be lost otherwise. Not
-on the active roadmap. Items leave when (a) promoted to a roadmap phase,
-(b) addressed, or (c) superseded.
+Deferred work — real, concrete, and would be lost otherwise; not on the
+active roadmap. An item leaves when promoted to a roadmap phase, addressed,
+or superseded.
 
-**This file is self-governing.** The rules in this header and in the
-**§ Lifecycle** section at the foot are the root, authoritative definition
-of how the BACKLOG is written, identified, and closed — nothing outside
-this file governs it.
+## How this file works
 
-Open items are partitioned into three sections by dependency shape:
+**This file is self-governing** — it is the root authority for how the
+BACKLOG is written, identified, and closed. Nothing outside it governs it.
+
+**Sections.** Open items are partitioned by dependency shape:
 **A — Priority sequence** (ordering / coupling constraints),
 **B — Parallel batch** (renderer-pass items that ship together),
-and **C — Anytime** (no upstream blockers). Item identifiers within
-each section (A1, A2, …, B1, …, C1, C2, …) are positional working
-labels, not stable identifiers. A closed item's block is deleted in
-full — no marker, no placeholder. A new entry takes the lowest section
-number not currently in use, so **numbers recycle**; once a section,
-and ultimately the whole BACKLOG, is cleared, numbering restarts from 1.
-Because an ID is transient and reused, never reference it from outside
-this file — not in code, docs, prompts, commit messages, or `git log`
-searches. Describe the work; the commit diff + message are the record.
-(Full close-and-open discipline: **§ Lifecycle** at the foot.)
+**C — Anytime** (no upstream blockers). **Default focus is C:** no
+dependencies, finishable in one pass. Reserve A and B for sessions scoped
+to them — starting a constrained item out of order half-bakes it and
+clutters the file. Cross-reference entries with `**Blocks:**` /
+`**Blocked by:**` lines so the dependency graph stays inline.
 
-**Default focus: Section C.** C items have no upstream dependencies
-and can be picked up and finished in a single pass. A and B items
-carry ordering or coupling constraints — starting one without its
-dependencies risks half-baked implementations and leaves the BACKLOG
-cluttered with partial work. For ad-hoc sessions, prefer C work.
-Reserve A and B for sessions explicitly scoped to those tracks.
+**Identifiers** (A1, B1, C1…) are positional working labels, not stable
+IDs. A new entry takes the lowest unused number in its section, so numbers
+**recycle**; once a section — and ultimately the whole BACKLOG — is cleared,
+numbering restarts from 1. Because an ID is transient, **never reference it
+outside this file** — not in code, docs, prompts, commit messages, or
+`git log` searches. Describe the work; the commit diff + message are the
+record.
 
-Items waiting on an external event the repo can't drive (FOIA
-resolution, registry access, third-party publication) and that are
-**topic-specific** to the current investigation live in
-`meta/topic/research-queue.md` "Externally blocked" — that's the fork-
-boundary-correct home for them. If a genuinely toolkit-neutral
-externally-blocked item ever surfaces (rare), reinstate the
-"Externally blocked" heading at the bottom of this file.
+**Opening an entry.** Write it forward-looking and prescriptive: the work
+and why it matters. No "Surfaced from", audit/session label, or commit hash
+pinning when the need arose — that history lives in `git log`.
 
-Cross-references between entries use `**Blocks:**` / `**Blocked by:**`
-lines so the dependency graph is visible inline.
+**Closing an entry.** The goal is to REMOVE items, not annotate them.
+Delete the block in full — no retirement marker, no placeholder; the
+shipping commit's diff + message is the canonical record. Then sweep any
+code comments that cited the closed ID (delete them, or rewrite to describe
+current behavior) — that sweep is part of closing, not follow-up.
+
+**Externally-blocked items** waiting on an event the repo can't drive (FOIA
+resolution, registry access, third-party publication) live, when
+topic-specific, in `meta/topic/research-queue.md` "Externally blocked". If a
+genuinely toolkit-neutral one ever surfaces (rare), reinstate an "Externally
+blocked" heading at the foot of this file.
 
 ---
 
@@ -192,34 +193,3 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
-
----
-
-## Lifecycle
-
-The goal is to REMOVE items, not accumulate annotations referencing them.
-
-**Closing an entry:**
-
-- Delete the entry's block in full. No retirement marker, no placeholder.
-  The commit that ships the closure carries the implementation diff and a
-  message describing what shipped — that is the canonical record.
-- IDs are positional working labels, NOT stable identifiers. A new entry
-  takes the lowest section number not currently in use, so numbers
-  **recycle**; when a section — and ultimately the whole BACKLOG — is
-  cleared, numbering restarts from 1. An ID therefore must never appear
-  outside this file: not in code, docs, prompts, commit messages, or
-  `git log` searches. Reference the work, never the ticket.
-- Sweep code comments that referenced the closed entry's identifier —
-  either delete the comment (if its resolution is now reflected in the
-  code itself) or rewrite to describe current behavior without the
-  BACKLOG anchor. This sweep is part of closing the entry, not follow-up
-  work.
-
-**Open entries** describe the work to be done and why it matters —
-forward-looking, prescriptive. An entry does NOT carry "Surfaced from",
-"introduced by audit X on date Y", commit hashes pinning when the need
-was identified, or other past-work narrative. Where the audit / session /
-commit that surfaced the work lives is in git log, retrievable via
-`git log --grep <ID>` once the entry is named in any commit message. The
-entry itself describes only the work.
