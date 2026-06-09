@@ -300,6 +300,18 @@ types:
   # (witness → oath status → transcript/document nodes) — no
   # contributor-prose synthesis at the event-node level. Synthesis
   # spanning multiple witnesses belongs on finding nodes.
+  #
+  # The hearing `Key Testimony` section is the highlights reel — the
+  # distinctive evidentiary moments (specific factual claims, the strongest
+  # cross-witness corroborations / contradictions, most-cited press moments,
+  # a Member's bipartisan or closing frame), NOT procedural scaffolding
+  # already captured by structured fields: gavel timings (event_intrinsic
+  # start/end + Timeline), oath (witnesses_testimony.oath_status), routine
+  # recognize / yield / submit-for-the-record exchanges — unless the
+  # procedural act is itself novel (e.g. unanimous consent to classify). It
+  # may overlap a witness's transcript / document Key Passages — expected;
+  # the event is a self-contained reel and the renderer does not deduplicate
+  # across nodes.
   event:
     path: events
     status_values: [documented, in-progress]

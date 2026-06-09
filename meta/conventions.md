@@ -26,8 +26,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Neutrality](#neutrality)
 - **Part II — The evidentiary primitive: quotes**
   - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
-  - [Hearing events as venues](#hearing-events-as-venues)
-  - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
   - [Density is source-driven](#density-is-source-driven)
 - **Part IV — The synthesis layer**
   - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
@@ -455,36 +453,6 @@ to `normalize_for_compare` — never by transcribing the whole document.
 Reserve the sibling for extraction that is broken throughout; the test
 is the OCR-producer / pervasive-noise signal (the detection signals in
 `archive.md`), not the presence of any single bad character.
-
-### Hearing events as venues
-
-An event is a venue, not a speaker. Hearings carry a `Witnesses &
-Testimony` cross-reference table pointing at each witness's transcript
-and written-testimony nodes. What a hearing "established" is the verbatim
-record those linked nodes carry; the event node navigates to them
-rather than paraphrasing.
-
-### Key Testimony selection — substantive over procedural
-
-The hearing-event `## Key Testimony` section (and the analogous
-`## Key Passages` on a hearing transcript) highlights the distinctive
-evidentiary moments that make the hearing worth archiving — not
-procedural scaffolding. Skip what a structured field already captures:
-convening / adjournment / gavel timings (`event_intrinsic.start_time` /
-`end_time` + Timeline), oath administration and "I do" affirmations
-(`witnesses_testimony[].oath_status: sworn`), and routine procedural
-exchanges (recognizing a Member, yielding time, submitting for the
-record) — unless the procedural act is itself evidentiarily novel (e.g.
-unanimous consent to classify). Prefer the specific factual claims
-witnesses assert, the strongest corroborations or contradictions between
-witnesses, the most-cited post-hearing press moments, and a Member's
-quotable bipartisan or closing frame. Procedural weight lives in the
-structural fields; the Key Testimony section is the highlights reel.
-
-Event-level Key Testimony may overlap the witness-specific transcript or
-document Key Passages, and that is expected: an event stands as a
-self-contained highlights reel an investigator can read without clicking
-through, and the renderer does not deduplicate across nodes.
 
 ### Density is source-driven
 
