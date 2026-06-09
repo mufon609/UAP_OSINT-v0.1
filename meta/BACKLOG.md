@@ -103,6 +103,39 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
+### C1 — Relocate skill/agent-specific protocol out of conventions.md into self-contained homes
+
+`meta/conventions.md` still carries operating-manual content that belongs in the
+skill / agent it governs, leaving those homes non-self-contained and conventions
+bloated. Relocate it — don't centralize-and-point — so each home is self-contained
+and only cross-cutting evidentiary rules stay central.
+
+- **OCR-sibling protocol.** The "Producing the `.txt` sibling, then confirming it"
+  section is a protocol+evidentiary tangle. Move the production protocol (four-step
+  flow, confirmation walkthrough, the four production methods + ladder + CBRN
+  pre-screen, OCR-engine fidelity discipline, provenance recording,
+  final-audit-check) into `.claude/skills/prepare-ocr-sibling/SKILL.md` — already
+  self-contained for the core flow, so add only the genuinely-unique bits (CBRN
+  pre-screen, production-method fallbacks) and nothing is lost. KEEP in conventions,
+  relocated to their proper homes, the cross-cutting evidentiary rules:
+  parent-in-`primary_sources[]` (→ Part V "Primary sources and archival"), the
+  per-quote `naming_quirks` discipline + the preserve-sic-vs-correct-OCR-mangle
+  distinction, and the silent-sibling-lookup invariant. Repoint the two refs that
+  point at the section for protocol — `.claude/agents/ocr-page-producer.md` and
+  `scripts/tools/ocr-consensus.py` — to the skill.
+- **Transcript cluster.** "Transcript provenance and audit discipline" and
+  "Transcript quotes carry structural speaker attribution" are largely the manual
+  for `/prepare-transcript-sibling` / `/verify-transcript` /
+  `scripts/tools/VIDEO-PIPELINE.md`; same protocol-vs-principle triage (the
+  `transcript_provenance` enum and the equivalent-footing principle are cross-cutting
+  and stay).
+
+Each move: relocate the bytes (don't retype), update refs, leave no pointer where
+the content can simply live in its home; gate chain green per move.
+
+**Blocks:** none.
+**Blocked by:** none.
+
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may

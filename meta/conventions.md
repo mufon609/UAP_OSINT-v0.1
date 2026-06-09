@@ -2324,10 +2324,9 @@ Three durable surfaces, three places working notes must not land:
 
 Where the record actually lives: **git history** owns the narrative of
 what changed and why (commit messages, PR descriptions), and
-`meta/BACKLOG.md` owns deferred work — and is self-governing (its own
-`## Lifecycle` section is the root discipline for how entries are written
-and closed). An issue found mid-session is fixed now or filed in BACKLOG;
-it is never left behind as a comment or a node-body aside.
+`meta/BACKLOG.md` owns deferred work. An issue found mid-session is fixed
+now or filed in BACKLOG; it is never left behind as a comment or a
+node-body aside.
 
 For build work specifically, this is the mechanism the role pipeline
 already runs on: each role returns a handoff stub to the orchestrator
