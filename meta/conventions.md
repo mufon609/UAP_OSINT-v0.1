@@ -444,28 +444,14 @@ is a text-native PDF whose extracted *bytes* are wrong (not an image,
 but corrupted at the content-stream / extraction layer). Sibling
 existence keys on extraction faithfulness, not on file type.
 
-OCR-scanned sources are a known blind spot: when both the quote text
-and the source extract carry the same OCR corruption, the
-verbatim-quote check passes despite the quote not matching the
-original document. The `extraction_type: ocr-scan` field on
-manifest entries flags such sources to ingestion-pipeline discipline
-(text-layer pull, modern OCR, VLM on page images, or visual
-verification against the original) before quotes are derived. The
-validator does not close the OCR-corruption gap; the ingestion
-pipeline does.
-
 The same `.txt`-sibling preference handles `extraction_type:
 extraction-lossy` sources — text-native PDFs whose extracted text is
 **pervasively** unreliable for non-OCR reasons: stenographic-format
 noise (inline line-number prefixes and page-footer triplets on every
-line, as in court-reporter transcripts) or
-systematic Unicode-mapping corruption across the document.
-Evaluation of the Unicode-mapping failure mode (`11½`
-encoded as byte `\x87` → U+2021 in the embedded font's CMap) confirmed
-the corruption lives in the source PDF's content stream itself:
-`pdftotext`, `mutool`, and `pypdf` all faithfully reproduce the same
-bytes because the PDF tells every compliant reader that the glyph is
-`‡`. Switching extraction tools is not a path forward.
+line, as in court-reporter transcripts) or systematic Unicode-mapping
+corruption across the document. Such corruption lives in the source
+PDF's content stream itself, so switching extraction tools is not a
+path forward — the recovery is the sibling.
 
 **A sibling must be proportionate to the damage.** The recovery for a
 *pervasively* corrupted extract is the contributor-produced clean
