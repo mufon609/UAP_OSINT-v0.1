@@ -38,14 +38,97 @@ prompt **above** its standing contract, so any policy you improvise into the
 prompt silently overrides the contract. The recurring failure this prevents: an
 authored Description dropped every source-attested entity link after the
 orchestrator imported the discretionary quote-relevance judgment ("judge
-load-bearing-ness") into the absolute entity-linking rule (topology
-"Handoff"). If you feel the urge to explain how a role should decide something,
+load-bearing-ness") into the absolute entity-linking rule. If you feel the
+urge to explain how a role should decide something,
 stop — that judgment is the role's, and its contract already states it. Relay
 stub fields verbatim; do not paraphrase them.
+
+A disk-stub transport (the pre-skills-migration `/tmp/handoff-{slug}-{role}.yaml`
+files) was evaluated and **rejected** as the fix for this hazard: it transports
+stub *data* losslessly but does nothing to stop the orchestrator adding policy
+prose alongside the file path — it addresses data fidelity, not the
+policy-injection hazard — and the verbatim-boundary roles (the worker has no
+Write tool) cannot satisfy a role-written handoff file, so reintroducing it
+would either puncture that capability boundary or reverse the "no file is
+written for the handoff" principle for zero gain on the real hazard. Its one
+legitimate kernel — relay the stub verbatim, never paraphrase — is the rule
+above.
 
 **Target.** `{type}/{slug}` + scope come from the user — per the project
 discipline, never invent a build target. If `$ARGUMENTS` is empty, ask what to
 build before doing anything.
+
+## The shape — pipeline at a glance
+
+A **map, not a contract**: it carries no normative content of its own. Every
+rule lives once in the file linked beside it; if this map ever disagrees with a
+linked source, the source wins.
+
+```text
+  user ▶ /build {type}/{slug} "<scope>"
+    │
+    ▼
+  ┌───────────────────────────┐
+  │  internal-investigator    │  reuse survey, read-only
+  └─────────────┬─────────────┘  ── all_internal (gaps:[]) ▶ skip the next two
+    │                              stages, jump to scaffold (sibling gate still runs)
+    ▼
+  ┌───────────────────────────┐
+  │  external-investigator    │  confirm each new source by reading it
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐
+  │  archive                  │  the only manifest writer
+  └─────────────┬─────────────┘
+    ▼
+  ╔═══════════════════════════╗
+  ║  scaffold  (once)         ║  orchestrator step, not a role
+  ╚═════════════╤═════════════╝
+    ▼
+  ╔═══════════════════════════╗
+  ║  sibling gate  4b / 4c    ║  OCR-scan or label-less transcript?
+  ╚═════════════╤═════════════╝  ▶ /prepare-*-sibling   (runs even on all_internal)
+    ▼
+  ┌───────────────────────────┐
+  │  worker  ×N  (parallel)   │  the single verbatim boundary; emits fragments
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐  merge → organize → link → render
+  │  builder                  │  ── on fail ▶ route_failure.py ▶ re-enter owning role
+  └─────────────┬─────────────┘
+    ▼
+  ┌───────────────────────────┐  fresh-context cold re-read
+  │  auditor                  │  ── adjacent flagged ▶ tightening loop:
+  └─────────────┬─────────────┘     re-enter worker / builder, skip ext + archive
+    ▼
+  health: pass & no adjacents  ▶  build-state.py --update  ▶  user commits (pre-commit gate)
+```
+
+`┌─┐` solid box = an **agent role** (a subagent in `.claude/agents/`).
+`╔═╗` double box = an **orchestrator-only step** (no role; the main thread runs it).
+
+### Stages — role ≠ step number
+
+| Step | Stage | Agent role | What it owns | Detail |
+|---|---|---|---|---|
+| 1 | survey | `internal-investigator` | reuse + gaps; read-only, no web, no manifest | [`agents/internal-investigator.md`](../../agents/internal-investigator.md) |
+| 2 | source | `external-investigator` | confirm new sources by reading; no manifest commit | [`agents/external-investigator.md`](../../agents/external-investigator.md) |
+| 3 | archive | `archive` | the only manifest writer; download · Wayback · extract | [`agents/archive.md`](../../agents/archive.md) |
+| 4 | scaffold | — *orchestrator* | `new.py` + `research-scaffold.py`, once | step 4 below |
+| 4b / 4c | sibling gate | — *orchestrator* | OCR / label-less-transcript sibling readiness | steps 4b–4c below |
+| 5 | extract | `worker` ×N | the single verbatim boundary; emits fragments | [`agents/worker.md`](../../agents/worker.md) |
+| 6 | synthesize | `builder` | merge → organize → link → render; the prose-drift surface | [`agents/builder.md`](../../agents/builder.md) |
+| 7 | audit | `auditor` | fresh-context cold re-read; adjacent-node propagation | [`agents/auditor.md`](../../agents/auditor.md) |
+| 8 | finalize | — *orchestrator* | refresh build-state; user commits at the gate | step 8 below |
+
+### Branches — when the straight line bends
+
+| Branch | Trigger | Effect | Defined in |
+|---|---|---|---|
+| all-internal | survey sets `all_internal: true` / `gaps: []` | skip steps 2–3 (no new bytes); sibling gate + scaffold still run | [`build-protocol`](../build-protocol/SKILL.md) "Orchestration branches" |
+| failure routing | builder returns `result: fail` | `route_failure.py` maps check → phase → role; re-enter that role, fix the **data**, rebuild | [`build-protocol`](../build-protocol/SKILL.md) "Fix the data, never the node body" |
+| tightening loop | auditor flags `adjacent_needs_update[]` | re-enter worker (extract) or builder (derived field), skip external + archive, re-audit | [`build-protocol`](../build-protocol/SKILL.md) "Partial re-entry" |
+| `/augment` | user-triggered maintenance change | same partial-re-entry contract, entered directly at the role the change needs | [`augment` skill](../augment/SKILL.md) |
 
 ## Sequence
 
@@ -55,9 +138,8 @@ build before doing anything.
 > marked as such inline. Step numbers are **not** role numbers: the six roles are
 > numbered 1–6 in their own agent descriptions, and that count diverges from the
 > steps here because the orchestrator-only steps fall between the role steps. For
-> the explicit step ↔ role mapping, see the table in
-> `../../../prompts/topology.md` "The shape". This file refers to roles by **name**,
-> never by number.
+> the explicit step ↔ role mapping, see the "Stages" table in "The shape"
+> above. This file refers to roles by **name**, never by number.
 
 **Per-step inputs (closed).** Pass exactly the `Pass:` cell — relay only, add no
 framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
@@ -74,8 +156,8 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 
 These are inputs, not interpretation. `linked_nodes` is a **required input
 field** for the builder — check that it is present and relayed, not *how* the
-builder reads it; the contract owns that. (Step↔role numbering matches the table
-in `../../../prompts/topology.md` "The shape".)
+builder reads it; the contract owns that. (Step↔role numbering matches the
+"Stages" table in "The shape" above.)
 
 **The same rule applies to the sibling sub-skills (4b/4c).** Relay only the
 `{source-path}` / `{slug}` to `/prepare-ocr-sibling` / `/prepare-transcript-sibling`
