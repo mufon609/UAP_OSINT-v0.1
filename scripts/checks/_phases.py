@@ -4,8 +4,8 @@ Maps each check (by ``CHECK_NAME``) to the build-pipeline phase whose
 output it validates, so an agent can run a phase-scoped pass
 (``--phase {archive|extract|organize|link|render}``) for fast feedback
 on what it just produced, rather than the full check sweep. A phase
-token is named after the role whose output it validates — see the agent
-topology in ``prompts/topology.md``. (One-line phase descriptions are not
+token is named after the role whose output it validates — see the
+pipeline map in ``.claude/skills/build/SKILL.md`` ("The shape"). (One-line phase descriptions are not
 restated here; they live in ``PHASE_DESC`` below, surfaced via
 ``--list-phases``.) The phase -> owning role:
 
@@ -148,7 +148,8 @@ CHECK_PHASE = {
 # One-line description of what each phase validates — the single
 # human-readable source for them, surfaced via ``--list-phases`` and the
 # build-protocol skill injection. Not restated in prose elsewhere: the
-# docstring above and prompts/topology.md carry the phase tokens only.
+# docstring above and .claude/skills/build-protocol/SKILL.md carry the
+# phase tokens only.
 PHASE_DESC = {
     "preflight": "parse / structure / version — always-on, runs in every phase",
     "archive": "manifest integrity + primary_sources + doc_form_archival_status",

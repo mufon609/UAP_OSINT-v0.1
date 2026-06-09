@@ -61,7 +61,7 @@ without transforming content.
 | `finalize-attribution.py` | Deterministic finalizer for a verifier-passed attribution sibling — sets `verification_status: verified` + `verifier_session` and strips draft-phase scaffolding (`rationale` / `verifier_notes` / `needs_image_verification`), leaving a structured-only committed artifact. Idempotent on an already-verified sibling. **W3 fold gate:** requires `--video PATH` (runs `spot-check-attribution.py` across all turns; any `contested-fold` BLOCKS finalize and routes back) or `--no-video` (explicit opt-out for a genuinely audio-only source) — no graceful skip by omission. |
 | `associate.py` | Regenerate `## Associated Nodes` sections from body links |
 | `build-state.py` | Refresh CLAUDE.md's build-state block |
-| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `topology.md` |
+| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `.claude/skills/build-protocol/SKILL.md` |
 | `renderer-coverage.py` | Coverage gate — every schema required/optional/conditional section is renderer-producible (schema sections ⊆ renderer `EMITS`). A blocking gate in `pre-commit.sh`. |
 
 ---

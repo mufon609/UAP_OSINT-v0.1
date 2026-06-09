@@ -435,7 +435,7 @@ def main():
         "--phase", choices=PHASE_CHOICES, default=None, metavar="PHASE",
         help="Run only one build-pipeline phase's checks (plus the always-on "
              "preflight checks) instead of the full sweep — scoped agent "
-             "feedback per prompts/topology.md. Phases: "
+             "feedback per the build-protocol skill (.claude/skills/build-protocol/). Phases: "
              "archive / extract / organize / link / render. "
              "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()

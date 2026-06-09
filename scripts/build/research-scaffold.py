@@ -393,7 +393,7 @@ def main():
     rel = out_path.relative_to(REPO_ROOT)
     print(f"✓ Created {rel}")
     print()
-    print("Next steps (Phase I — single-session; multi-agent: prompts/topology.md):")
+    print("Next steps (Phase I — single-session; multi-agent: the /build skill):")
     print(f"  1. Extract primary sources to plaintext:")
     if source_paths:
         print(f"     python3 scripts/build/extract-source.py --artifact {rel}")

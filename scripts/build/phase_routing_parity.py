@@ -11,8 +11,8 @@ keeps those references from drifting:
      typo (`--phase extarct`) or a reference to a phase that was renamed or
      removed in _phases.py.
   2. Every canonical phase (PHASES) is documented at least once in
-     prompts/topology.md — so a phase newly added to _phases.py cannot ship
-     undocumented.
+     .claude/skills/build-protocol/SKILL.md ("Build phases") — so a phase
+     newly added to _phases.py cannot ship undocumented.
 
 Modeled on build-md-spec.py: prints detail unless --quiet; exits non-zero
 on any mismatch (wired into pre-commit.sh).
@@ -36,7 +36,7 @@ _PHASE_REF = re.compile(r"--phase[= ]+([a-z][a-z-]*)")
 
 # Where phase tokens are referenced in prose.
 _SCAN_DIRS = ("prompts", ".claude")
-_TOPOLOGY = REPO_ROOT / "prompts" / "topology.md"
+_PROTOCOL = REPO_ROOT / ".claude" / "skills" / "build-protocol" / "SKILL.md"
 
 
 def _iter_files():
@@ -63,17 +63,18 @@ def check():
                         f"(accepted: {', '.join(PHASE_CHOICES)})"
                     )
 
-    # 2. every canonical phase is documented in topology.md
-    if _TOPOLOGY.is_file():
-        topo = _TOPOLOGY.read_text(encoding="utf-8")
+    # 2. every canonical phase is documented in build-protocol
+    if _PROTOCOL.is_file():
+        proto = _PROTOCOL.read_text(encoding="utf-8")
         for phase in PHASES:
-            if not re.search(rf"\b{re.escape(phase)}\b", topo):
+            if not re.search(rf"\b{re.escape(phase)}\b", proto):
                 errors.append(
-                    f"prompts/topology.md: canonical phase '{phase}' "
-                    f"(from _phases.PHASES) is not documented"
+                    f".claude/skills/build-protocol/SKILL.md: canonical phase "
+                    f"'{phase}' (from _phases.PHASES) is not documented"
                 )
     else:
-        errors.append("prompts/topology.md missing — cannot verify phase documentation")
+        errors.append(".claude/skills/build-protocol/SKILL.md missing — "
+                      "cannot verify phase documentation")
 
     return errors
 

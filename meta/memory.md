@@ -231,8 +231,8 @@ Three durable surfaces, three places working notes must not land:
 The record lives in **git history** (commit messages, PR descriptions).
 For build work this is the mechanism the role pipeline already runs on —
 each role returns a handoff stub rather than writing shared state
-(`prompts/topology.md`); see "Drive node builds through the agent
-topology" above.
+(build-protocol "Handoff stubs"); see "Drive node builds through the
+agent topology" above.
 
 ### Comments describe code, not refactor history
 

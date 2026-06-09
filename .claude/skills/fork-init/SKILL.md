@@ -81,7 +81,7 @@ Topic-neutral toolkit — do not modify during fork-init:
 
 - `meta/schema.yaml`, `meta/templates/` — spec + templates.
 - `scripts/` — validators, renderer, scaffolders, source tooling, hook guards.
-- `prompts/` — the kept design docs (`topology.md`, `web-claude-*`).
+- `prompts/` — the kept Claude-Web briefs (`web-claude-*`).
 - **`.claude/skills/`, `.claude/agents/`, `.claude/settings.json`** — the
   skills, role subagents, and hook wiring. These encode *how to build any
   node*, not *what this instance investigates*; keep them placeholder-only.

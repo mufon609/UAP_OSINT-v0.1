@@ -35,7 +35,8 @@
 #                                              + .claude/ is valid per
 #                                              scripts/checks/_phases.py, and
 #                                              every canonical phase is
-#                                              documented in topology.md
+#                                              documented in build-protocol/
+#                                              SKILL.md
 #  11. scripts/tests/skills-check.sh         — .claude/ skills + subagents have
 #                                              valid frontmatter, hard-code no
 #                                              topic token (fork-portable), and

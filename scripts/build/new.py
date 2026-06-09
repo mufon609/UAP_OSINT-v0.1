@@ -265,7 +265,7 @@ def main():
     print(f"✓ Created {rel_path}")
     print()
     print("Next steps — build via the /build skill (the multi-agent pipeline;")
-    print("design rationale in prompts/topology.md).")
+    print("pipeline map in .claude/skills/build/SKILL.md \"The shape\").")
     print(f"  1. Register every primary source:  python3 scripts/tools/manifest.py add URL --path PATH")
     print(f"  2. Scaffold the research artifact:")
     print(f"     python3 scripts/build/research-scaffold.py --target {TYPE_DIRS[args.type]}/{args.slug} \\")

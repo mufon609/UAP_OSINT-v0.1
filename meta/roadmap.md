@@ -24,8 +24,8 @@ block in `CLAUDE.md` is the authoritative count of what shipped.
 
 Blocked on: multiple artifacts with overlapping evidentiary claims. Can't
 build propagation tooling without a real propagation case — likely after
-~10 nodes through the full pipeline. The build topology's Audit role
-(`prompts/topology.md`) already runs a manual adjacent-node propagation
+~10 nodes through the full pipeline. The build pipeline's Audit role
+(`.claude/agents/auditor.md`) already runs a manual adjacent-node propagation
 pass; this item is the *mechanical* layer it lacks: tooling that detects
 when an update to one artifact should propagate to the linked artifacts.
 (Cross-artifact ref *integrity* is already covered — `corroborated_by` /

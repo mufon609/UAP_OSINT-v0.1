@@ -99,8 +99,8 @@ media/ locations/ findings/ investigations/
                             node-body-edit block, one-new-synthesis-node cap
   settings.json             hook wiring (committed; topic-neutral)
 
-prompts/                    design docs (topology.md) + Claude-Web
-                            briefs — see prompts/README.md for the index
+prompts/                    Claude-Web briefs — see prompts/README.md
+                            for the index
 ```
 
 **Forking for a different topic.** Delete `meta/topic/`,
@@ -238,7 +238,8 @@ commit gate (runs `pre-commit.sh`), a block on hand-editing rendered node
 bodies, and a one-new-synthesis-node-per-session cap.
 
 Deeper detail: `AGENTS.md` ("Route by task") maps a goal to the right skill;
-`prompts/topology.md` is the design rationale for the role decomposition; the
+the pipeline map + role rationale live in `.claude/skills/build/SKILL.md`
+("The shape") and `.claude/skills/build-protocol/`; the
 contract itself lives in `.claude/skills/build-protocol/`.
 
 ---

@@ -114,7 +114,7 @@ If you're doing anything related to this instance's topic, read
 | `sources/manifest.yaml` | Source archival index | YAML |
 | `sources/{category}/*` | Archived primary sources | PDF / HTML / TXT / other |
 | `scripts/{build,tools}/*.py` | Toolkit scripts (build pipeline + utilities; reference: `scripts/README.md`) | Python |
-| `prompts/*.md` | Design docs (topology) + paste-ready Claude-Web briefs | Markdown |
+| `prompts/*.md` | Paste-ready Claude-Web briefs | Markdown |
 
 ---
 

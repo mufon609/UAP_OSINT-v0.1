@@ -55,7 +55,7 @@ Items with ordering or coupling constraints.
 
 ### A1 — Exercise the pipeline paths the first whole run didn't hit
 
-The six-role pipeline (`prompts/topology.md`) has been run *whole* on one
+The six-role pipeline (the `/build` skill + `.claude/agents/`) has been run *whole* on one
 real node build — a user-directed, all-internal institutional-actor build:
 Internal Investigator → Worker (×N) → Build → Audit, with handoff stubs
 captured and friction tightened in place. The **External Investigator
