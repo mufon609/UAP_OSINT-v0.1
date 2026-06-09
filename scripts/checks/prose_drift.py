@@ -12,17 +12,25 @@ appear in the referenced primary-source text:
     prose carries no licence to introduce vocabulary the cited sources
     don't attest. Resolution is to rewrite to source vocabulary or
     relocate the variance to a structured evidentiary field
-    (naming_quirks, timeline, quotes) — never a standing
-    residual. See conventions.md "Prose-drift discipline on synthesis
-    surfaces".
+    (naming_quirks, timeline, quotes) — never a standing residual.
 
 Scope is CONTRIBUTOR PROSE: top-level free-prose synthesis fields
 (``description``, ``background``, ``top_relevance``, ``credibility_notes``)
 and the per-entry ``vouching_chain.attestation``. Applied to
-renderer-supported types EXCEPT investigation — see below. See
-``meta/conventions.md`` "Prose-drift discipline on synthesis surfaces"
-for the principle of record before proposing any field-specific
-threshold tuning.
+renderer-supported types EXCEPT investigation — see below. The floor is
+uniform by design: no field-specific threshold tuning. A per-field
+tolerance would implicitly categorize fields as "allowed more drift,"
+and that categorization is itself editorial bias — every scoped field
+is held to the same per-token presence floor.
+
+A second question rides alongside the token floor at drafting time:
+*does the prose read as natural English?* Source-vocabulary discipline
+applies token-by-token; English-grammar discipline applies to the
+rendered prose. When the two collide — iterating to satisfy the floor
+yields a stilted construction (a source-attested participle stretched
+for an absent finite verb, "is containing" for "contains") —
+restructure the sentence rather than ship broken phrasing. The
+contributor aid for this is ``scripts/tools/check-vocab.py``.
 
 OUT of scope: compact label / descriptor cells (role titles, short
 relationship descriptors, ``timeline[].event``, ``use_status``,
@@ -49,6 +57,21 @@ A voucher's claim is legitimately referenced across multiple attestation
 venues, so per-entry pooling would over-fire; the union pool still
 surfaces fabrication — vocabulary attested by NO cited source still
 produces unmatched tokens.
+
+The pool is the node's own SOURCE TEXT, never its metadata. Tokens match
+only against ``primary_sources[]`` extracted text (via
+``load_source_tokens``) — deliberately NOT ``document_intrinsic`` values,
+``naming_quirks.canonical``, or ``context_extrinsic``. Crediting metadata
+vocabulary would admit words the source itself never states, inverting
+the gate. A fact attested only extrinsically (a separate source, or
+structured metadata) therefore cannot be asserted in this node's
+``description`` prose — carry it navigationally: a cross-reference to the
+node/source that does attest it, plus a structured field
+(``context_extrinsic``, ``naming_quirks``) that holds it out of
+prose-drift scope. E.g. a ``(b)(6)``-redacted author identified only in a
+separate agency index is carried by the link and held in
+``context_extrinsic``, never named in the description; the document's own
+``authors_per_document`` records the redaction verbatim and stops.
 """
 
 from checks import Issue

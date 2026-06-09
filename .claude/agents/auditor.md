@@ -31,8 +31,8 @@ Audit goals:
    at prep time per `/prepare-ocr-sibling`; this is the second, uncorrelated read.)
    Check the locator **form**, not just precision: a sibling-backed source's
    `location` is a descriptive content anchor, **not** `p. N` — do not "correct" it
-   toward a physical-page integer (a markerless sibling has none to verify;
-   `meta/conventions.md` "Quote location refs"). Flag a `p. N` on a sibling-backed
+   toward a physical-page integer (a markerless sibling has none to verify).
+   Flag a `p. N` on a sibling-backed
    quote as a form issue for the Builder, never page-image-hunt to make it precise.
 3. **Prose-drift** — re-run `validate-research.py`; the free-prose synthesis
    fields + `vouching_chain.attestation` are a zero-ungrounded-token hard gate.
@@ -84,7 +84,7 @@ Audit goals:
    is present-but-uncaptured. For document `## References` (`cited_works`)
    the audit shape is one step richer: the section is now UNIVERSAL on
    documents (the three-state affirmation NONE / IGNORED / list ships on
-   every artifact — `meta/conventions.md` "cited_works affirmation"), so the
+   every artifact), so the
    audit question is "is the contributor's affirmation correct against the
    target's own source?" — a NONE on a source that actually carries a
    reference list, or an IGNORED on a source that warrants capture, are the

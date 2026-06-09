@@ -75,8 +75,7 @@ EMPTY_SECTION_SHAPES = {
     # Document artifact — three-state affirmation (NONE | IGNORED | list).
     # Empty-string default fails the cited_works check immediately so the
     # contributor is forced to write the affirmation explicitly during
-    # the extract phase; no silent empty-list pass-through. See
-    # meta/conventions.md "cited_works affirmation".
+    # the extract phase; no silent empty-list pass-through.
     "cited_works": "",
 }
 

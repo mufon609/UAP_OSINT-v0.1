@@ -5,8 +5,8 @@ Surveys the corpus for location refs that depend on extraction-version
 line numbers (``lines N-M`` and ``line N`` forms), and for each such
 quote reports where the quote text actually lives in the current source
 extract. Contributors use the report to convert refs to canonical forms
-(``p. N, ¶M``, ``¶N``, ``[MM:SS]``, ``p. N``) per ``meta/conventions.md``
-"Quote location refs: source-anchored, not extraction-anchored".
+(``p. N, ¶M``, ``¶N``, ``[MM:SS]``, ``p. N``) per the canonical-form
+catalogue in ``meta/schema-research-artifact.yaml``::quote_source.
 
 Read-only — does not modify any artifact. The boundary-inclusion class
 (contributor-authored ranges that include adjoining material) requires a

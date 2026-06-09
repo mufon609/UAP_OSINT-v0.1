@@ -31,11 +31,8 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Hearing events as venues](#hearing-events-as-venues)
   - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
   - [News articles and books](#news-articles-and-books)
-  - [Prose-drift discipline on synthesis surfaces](#prose-drift-discipline-on-synthesis-surfaces)
   - [Density is source-driven](#density-is-source-driven)
-  - [`cited_works` affirmation — three-state discipline](#cited_works-affirmation--three-state-discipline)
   - [Date precision: orientation-grade in prose, field-precise in tables](#date-precision-orientation-grade-in-prose-field-precise-in-tables)
-  - [Quote location refs: source-anchored, not extraction-anchored](#quote-location-refs-source-anchored-not-extraction-anchored)
 - **Part III — Source extraction & provenance**
   - [OCR-scan sources: source-form fidelity and the `.txt` sibling](#ocr-scan-sources-source-form-fidelity-and-the-txt-sibling)
   - [A source naming an entity under a non-canonical form — flag it, stub it](#a-source-naming-an-entity-under-a-non-canonical-form--flag-it-stub-it)
@@ -588,80 +585,6 @@ Stored as `document` nodes (kind `non-gov-doc`, doc_form `article` or
 author's person node or the publisher's organization node, not on the
 document.
 
-### Prose-drift discipline on synthesis surfaces
-
-Nodes carry contributor-prose surfaces that sit alongside the verbatim
-`quotes[]` content: per-node `description` / `background` /
-`top_relevance` / `credibility_notes` paragraphs, and the whistleblower
-`vouching_chain.attestation`. These are labeled synthesis that frames
-the evidentiary content, and contributor prose introduces a real
-failure mode: unstated premises, paraphrase drift, and content widening
-even when every referenced quote is verbatim-clean.
-
-`validate-research.py`'s prose-drift check verifies
-that significant words in these prose fields appear in the referenced
-primary-source text. Every unmatched token is an ERROR (commit-
-blocking): synthesis prose carries no licence to introduce vocabulary
-the cited sources don't attest, so token-level presence/absence is a
-mathematical floor applied uniformly to every scoped field and node
-type. The contributor resolves each flagged token by asking — *does
-this token introduce a fact or premise the source doesn't attest?* —
-and then either rewriting to source vocabulary or relocating the
-variance to a structured evidentiary field (below). There is no warn
-tier and no "below threshold" tolerance: an ungrounded token in
-synthesis prose is a defect, not a per-case judgment.
-
-The contributor review also asks a second question: *does the prose
-read as natural English?* Iterating against `check-vocab.py` until
-every significant token passes can produce stilted constructions —
-a source-attested participle stretched to substitute for an absent
-finite verb (`is containing` instead of `contains`), source-attested
-compound nouns where a single synthesis word would read better.
-Source-vocabulary discipline applies token-by-token; English-grammar
-discipline applies to the rendered prose. When the two collide,
-restructure the sentence — don't ship the broken phrasing.
-
-The prose-drift check is explicitly scoped to contributor synthesis
-prose. Compact label / descriptor cells (role titles, short
-relationship descriptors, `timeline[].event`, the corroboration
-`confirms` cell) are out of scope — token-match misfires on those
-surfaces; fabrication there is Phase III semantic-review territory.
-
-**Zero ungrounded tokens on scoped fields — a hard gate, not a
-target.** Calling a flagged token "legitimate synthesis vocabulary"
-and leaving it in place is exactly the rationalization the error
-blocks; an evidentiary precision tool is not a stylistic nag. Every
-flagged token drives to one of two outcomes:
-
-- The prose is rewritten to use source vocabulary exactly, OR
-- The source-vs-prose variance is captured as structured evidentiary
-  data (a `naming_quirks` entry, a `timeline[]`
-  row, a `quotes[]` entry — pick the surface that carries the
-  variance's evidentiary meaning).
-
-**The pool is the node's own source TEXT — extrinsic metadata is not
-credited.** The prose-drift pool is built from the node's `primary_sources[]`
-text only; it deliberately does NOT include `document_intrinsic` values,
-`naming_quirks.canonical`, or `context_extrinsic`. Crediting metadata
-vocabulary would let words the source itself never states into the description
-prose — inverting the gate's purpose. A fact attested only *extrinsically* —
-by a separate source, or by structured metadata, rather than by this node's own
-primary-source text — therefore cannot be asserted in this node's `description`
-prose. Carry it navigationally instead: a cross-reference link to the node or
-source that *does* attest it, plus a structured field (`context_extrinsic`,
-`naming_quirks`) that records it out of the prose-drift scope. Example: a
-document whose author line is `(b)(6)`-redacted on the source but identified
-in a separate agency index — the author is carried by the link
-(`[/people/…]`, `[/documents/{agency-index-slug}]`) and held in
-`context_extrinsic`, never named in the description prose.
-The document's own `authors_per_document` records the redaction verbatim
-(`['[redacted per FOIA (b)(6)]']`) and stops — never substitute the
-externally-attested name into this document's intrinsic authorship; that name is
-a fact of the *attesting* source's node, reached by the cross-reference.
-`check-vocab.py` surfaces the nearest source forms for an absent token (a
-morphology variant or typo), but it never credits metadata either — the floor
-is the same.
-
 ### Density is source-driven
 
 Templates and prompts do not impose count targets on artifact content.
@@ -716,66 +639,6 @@ required-but-emptyable source-anchored section: an empty list is
 correct only when the source genuinely lacks that material, never as a
 discretionary skip.
 
-### `cited_works` affirmation — three-state discipline
-
-`cited_works` is required on every document artifact, and must take one
-of three valid shapes — never a bare `cited_works: []`. The empty list
-was historically ambiguous (it meant BOTH "source carries no reference
-list" AND "source carries one but nobody captured it yet"); the
-affirmation closes that ambiguity by recording the contributor's
-positive judgment in the artifact.
-
-- **`cited_works: NONE`** — the source carries no formal reference
-  list at all. Executive orders, news items, hearing transcripts,
-  short documents whose argument doesn't cite outside work. Renders a
-  one-line `## References` affirmation: *Source carries no reference
-  list.* Greppable across the corpus via
-  `grep -l '^cited_works: NONE$' meta/research/*.yaml`.
-
-- **`cited_works: IGNORED`** — the source HAS a reference list, but
-  the contributor judged it low-value and deliberately did not capture
-  it. Release valve, *not* a routine skip path: the discretionary
-  judgment is recorded reader-visibly (the rendered node carries a
-  one-line `## References` affirmation: *Source's reference list
-  deliberately not captured (low-value).*) and is greppable via
-  `grep -l '^cited_works: IGNORED$' meta/research/*.yaml`. The value
-  exists so the structural gate doesn't become a productivity block
-  on edge cases; it is observed and tuned retroactively — if it
-  accumulates on documents that arguably should be captured, the
-  contract tightens (typed sub-enum, required justification field,
-  or removal). The `cited_works_uncaptured` cross-check deliberately
-  does NOT warn on `IGNORED` because signal-in-source is the
-  *expected* state there.
-
-- **non-empty list of `cited_work_entry`** — the source carries a
-  reference list and it is captured below. Renders the full
-  `## References` entries view. The bibliographic split fields
-  (`citation_key` / `author` / optional `year` / `title`) are the
-  authorship-network dimension (recurring cited authors across the
-  corpus); `citation_verbatim` is the fidelity anchor that the
-  `cited_works` check substring-matches against the source.
-
-The `cited_works_uncaptured` check is the cross-check on a false
-`NONE` affirmation: it WARNS when `cited_works: NONE` is set but a
-reference-list signal is detected in the source's extracted text — a
-likely-wrong affirmation that the contributor should re-verify (then
-either capture the entries or flip to `IGNORED`). It is a backstop,
-not the primary gate; the structural three-state machine carries the
-load.
-
-Structural thresholds are different and remain in force. The finding-
-node creation threshold (~200 words, 3+ entity nodes, or text about
-to be written into 3+ different nodes — see "Bright line — fact vs
-finding" below) governs WHEN analysis should move to a
-different node, not HOW LONG a field's prose should be. Cross-
-reference brevity — entity nodes citing a finding carry a brief
-summary plus link back, with the canonical narrative living on the
-finding node — is structural rather than length-prescribed.
-
-Templates describe the WHAT of each field (subject, scope, what to
-capture); they do not prescribe the HOW LONG or HOW MANY. New
-templates and new prompt sections follow the same rule.
-
 ### Date precision: orientation-grade in prose, field-precise in tables
 
 Description prose carries orientation-grade dates anchored to semantic
@@ -820,113 +683,6 @@ structured `period_*` sentinel or `ongoing` flag was considered and declined:
 adding schema + renderer machinery for this edge case is over-engineering, and
 the role text is the source-grounded surface that already carries the
 distinction.
-
-### Quote location refs: source-anchored, not extraction-anchored
-
-Each quote in a research artifact carries a `source.location` field —
-the navigation handle from the quote to its precise place in the cited
-source. The handle is useful only if it remains correct across
-re-extractions of the source and tight enough that following it lands
-on the quote, not on the adjoining material.
-
-`lines N-M` refs (where N and M are line numbers in a particular
-pdftotext output of the source) violate both constraints. Line
-numbers are properties of one extraction, not properties of the
-source document — when the source is re-extracted (clean-text sibling
-production for `ocr-scan` / `extraction-lossy` PDFs, tool change,
-format conversion), the line numbers shift and the ref silently
-misnavigates. The verbatim-quote check still passes because the
-quote's bytes still appear *somewhere* in the source, but the
-location ref no longer points at where they appear.
-
-The canonical form anchors to properties of the source document
-itself:
-
-| Source shape | Canonical location form |
-|---|---|
-| Text-native paginated PDF (hearing transcript, government report, written testimony) whose `pdftotext` extract carries native form-feed page breaks | `p. N, ¶M` |
-| Unpaginated short document (HTML article, single-page memo) | `¶N` |
-| Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
-| Multi-page document where paragraph anchors aren't available — either the document lacks paragraph structure, or `pdftotext -layout` collapses visually-distinct paragraphs on a page into a single block (in which case ¶1 would overstate the precision the extract can deliver) | `p. N` |
-| OCR-scan / extraction-lossy PDF whose canonical extract is a clean-text `.txt` sibling (markerless — see below) | A **descriptive content anchor** drawn from the document's own structure: a named block, section title, or reference entry — e.g. `title-page identity block`, `Administrative Note`, `section "Deuterium as the Preferred Nuclear Rocket Fuel"`, `References, entry [8]`. **Not** `p. N` — the sibling carries no page markers, so a physical-page integer can be neither read off the extract nor verified. |
-| FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers. Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
-| The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
-
-**`p. N` is the physical page** — the page a PDF viewer's counter shows,
-equivalently the Nth form-feed-delimited block of the `pdftotext` extract. It
-is *not* the printed page number a composite document carries on its face: a
-cover letter, a questions attachment, an unnumbered first page, or roman
-front matter (`p. ii`) all push the printed number out of step with the
-physical page, and the printed number is not mechanically recoverable from the
-extract. Anchoring to the physical page makes the ref both reproducible (open
-the PDF to page N) and verifiable. `extract-source.py` writes `--- page N ---`
-markers at the form-feed boundaries so the physical page is read straight off
-the scratch, and the `quote_location_page` check enforces it: every `p. N`
-quote must sit on physical page N (the check splits the extract on form feeds
-and confirms the quote text is on the cited page). The check covers every
-section that carries a `p. N` ref: a **quote**'s `text` and a **naming-quirk**'s
-verbatim `observed` token are both verified to be ON page N. A **timeline**
-entry's `event` is a contributor paraphrase, not verbatim source text, so only
-page *existence* is mechanically checkable there (page N must exist); a
-timeline `p. N` that is off by a few has no verbatim anchor and rests on
-contributor care.
-
-Two companion checks enforce the ref's *form* regardless of extraction type:
-`location_format` errors on a roman-numeral page ref (`p. ii`) or a `printed
-p. N` dual annotation wherever a `p. N` is used (physical pages are integers;
-the convention is physical-only with a node-level stated note, which the
-document renderer emits), and `pdf_page_count` errors when a document's declared
-`pages` ≠ the source PDF's `pdfinfo` page count. Both run on every artifact,
-sibling-backed sources included.
-
-For an **OCR-scan / extraction-lossy source** the canonical extract is the
-contributor's markerless `.txt` sibling, so a quote drawn from it carries a
-**descriptive content anchor** (the table's sibling-backed row), **never**
-`p. N`: the sibling has no page integer to read off or verify, and
-`quote_location_page` skips sibling-backed sources **by design** (it confirms
-`p. N` only where the source's own extraction yields native form feeds). Unlike
-an unverifiable `p. N`, a content anchor cannot silently drift onto the wrong
-page. *Never manufacture page structure in a sibling* — the insert / front-matter
-handling is a `/prepare-ocr-sibling` production detail; a `p. N` on a
-sibling-backed quote is a defect to convert, which the Auditor flags
-(`auditor.md` goal 2).
-
-A source that genuinely has no PDF pages uses a non-page anchor: an HTML filing
-or single-page memo uses `¶N` / a section heading, an audio/video transcript
-uses `[MM:SS]`, and a FOIA email release uses `Doc N` (its `DOCUMENT N` markers —
-intrinsic document-collection structure, the one place a marker is *content*,
-not manufactured pagination). A page-spanning quote on a text-native PDF sits on
-no single page and fails the check — split it at the boundary (below).
-
-Plain `lines N-M` is not a valid permanent ref. Three layers serve
-distinct roles: `source.path` names the archived file (the ground
-truth); `source.location` navigates within that file using anchors
-the file itself provides; line numbers in any one extraction are a
-fourth, transient layer that depends on which extractor ran and when
-— useful for debugging, never the right anchor for a permanent ref.
-
-A location ref also has a tightness constraint: the range covers
-the quote's bounds, no more, no less. Including adjoining material
-(an interrupting speaker turn following the quote, a page footer
-ending the page) makes the ref land on a region that mixes quote
-with not-quote and defeats the navigation purpose. When converting
-`lines N-M` to a canonical form, the contributor verifies the new
-ref's range against the source page itself, not just against the
-extract.
-
-**Page-spanning quotes split at the page boundary.** When a single passage runs
-across a printed-page boundary, the page footer + page number + next-page header
-sit wedged in the middle of the extracted text. Rather than teach the
-verbatim-quote check to strip that boilerplate — which is one keystroke away
-from masking the real content mismatches the check exists to catch — split the
-passage into two adjacent Key Passages at the boundary, each anchored to its own
-page (`p. N`, then `p. N+1`). Each quote is then ≤ one page, so no
-footer/header/page-number boilerplate falls inside a quote and the verbatim
-check matches cleanly. `normalize_for_compare` strips caption timestamps,
-markdown block-quote markers, dashes, and whitespace (plus the conservative
-form-feed-adjacent page-number strip at extraction time); it is deliberately
-*not* extended to recognize page footers/headers, because boilerplate-stripping
-a quote would weaken the one exactness the verbatim gate is for.
 
 ---
 
@@ -1304,6 +1060,14 @@ A finding is justified when the multi-source convergence pattern
 emerges — typically when 3+ independent sources converge on (or
 diverge on) a single question. The pattern-shape is what matters,
 not the entity count.
+
+These structural thresholds govern WHEN analysis moves to a different
+node, not HOW LONG a field's prose should be. The finding-node creation
+threshold (~200 words, 3+ entity nodes, or text about to be written into
+3+ different nodes — see "Bright line — fact vs finding" above) is one
+such gate; cross-reference brevity — entity nodes citing a finding carry
+a brief summary plus link back, with the canonical narrative living on
+the finding node — is likewise structural rather than length-prescribed.
 
 ---
 

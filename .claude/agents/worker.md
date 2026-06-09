@@ -75,7 +75,8 @@ Input: `{slug}`, one `{source-path}`, its `/tmp/scratch-{slug}-N.txt`, and
 `worker_kind`.
 
 Location form follows the **source's shape, not the file extension**
-(`meta/conventions.md` "Quote location refs"): paginated text-native pdf →
+(the canonical-form catalogue lives in `meta/schema-research-artifact.yaml`
+::quote_source): paginated text-native pdf →
 `"p. N, ¶M"`; **a sibling-backed OCR-scan / extraction-lossy source → a
 descriptive content anchor** (a named block, section title, or reference entry —
 e.g. `Administrative Note`, `section "…"`, `References, entry [3]`), **NOT

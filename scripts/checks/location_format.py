@@ -1,9 +1,8 @@
 """location_format check — per-artifact ResearchContext check.
 
-Enforces the physical-page citation convention on every ``location`` field
-(meta/conventions.md "Quote location refs: source-anchored, not extraction-
-anchored"). A page ref is ``p. N`` where N is the **physical / PDF-viewer
-page** — an integer, the Nth page of the file. Two deviations are banned:
+Enforces the physical-page citation convention on every ``location`` field.
+A page ref is ``p. N`` where N is the **physical / PDF-viewer page** — an
+integer, the Nth page of the file. Two deviations are banned:
 
   - **roman-numeral page refs** (``p. ii``, ``p. v``, ``pp. iv-v``) — these
     are the printed front-matter folio a composite document carries on its

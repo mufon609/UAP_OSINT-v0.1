@@ -58,7 +58,7 @@ Target: **$ARGUMENTS** (ask the user if empty).
    the target's OWN sources for the same class of material — a source
    re-check, never adding entries to match a peer's count. **`## References`
    is universal on documents** via the three-state `cited_works` affirmation
-   (`conventions.md` "cited_works affirmation"); the audit question there is
+   (NONE / IGNORED / non-empty list); the audit question there is
    not "does the section exist?" but "is the affirmation
    (NONE / IGNORED / list) correct against the target's own source?"
 3. **Present findings before changing anything** — the mechanical results, the

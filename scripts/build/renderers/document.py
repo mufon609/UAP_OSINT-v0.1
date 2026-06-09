@@ -50,7 +50,7 @@ def render_title(artifact):
 
 # Physical-page ref detector: a `p. N` / `pp. N` location naming an integer page.
 # A sibling-backed (markerless OCR) source carries descriptive content-anchor
-# locations and NO `p. N` refs (meta/conventions.md "Quote location refs"); the
+# locations and NO `p. N` refs; the
 # page-citation note in render_document_summary is suppressed for such a node so
 # it never advertises a citation form it does not use.
 _PAGE_REF = re.compile(r"\bpp?\.\s*\d")
@@ -134,7 +134,7 @@ def render_document_summary(artifact):
     # reader following `p. N` opens the PDF to page N rather than hunting the
     # printed folio. A
     # sibling-backed (markerless OCR) source uses descriptive content-anchor
-    # locations and no `p. N` (meta/conventions.md "Quote location refs"), so the
+    # locations and no `p. N`, so the
     # note is suppressed — the node would otherwise advertise a form it never uses.
     src_fmt = (sources[0].get("format") if sources and isinstance(sources[0], dict) else None)
     try:
@@ -194,7 +194,7 @@ def render_key_passages(artifact):
 def render_cited_works(artifact):
     """Document References — the three-state cited_works affirmation.
 
-    Three valid shapes (see meta/conventions.md "cited_works affirmation"):
+    Three valid shapes (see scripts/checks/cited_works.py):
 
       - ``cited_works: NONE``    — source carries no reference list. Render
                                    a one-line "Source carries no reference

@@ -2,8 +2,7 @@
 
 Document artifacts MUST set ``cited_works`` to one of three valid
 shapes — the three-state affirmation that resolves the historical
-empty-list ambiguity (see ``meta/conventions.md`` "cited_works
-affirmation"):
+empty-list ambiguity:
 
   - ``cited_works: NONE`` (string sentinel) — the source carries no
     reference list. Renders a one-line affirmation; no entry
@@ -89,8 +88,7 @@ def check(ctx):
             ctx.rel, "error",
             f"cited_works string value {value!r} is not a valid sentinel — "
             f"must be one of {sentinels} (or a non-empty list of "
-            f"cited_work_entry). See meta/conventions.md 'cited_works "
-            f"affirmation'.",
+            f"cited_work_entry).",
             check_name=CHECK_NAME,
         )
         return
@@ -108,8 +106,7 @@ def check(ctx):
             ctx.rel, "error",
             f"cited_works is an empty list — bare [] is no longer valid. "
             f"Use one of {sentinels} to affirm the source's reference-list "
-            f"state, or populate with cited_work_entry objects. See "
-            f"meta/conventions.md 'cited_works affirmation'.",
+            f"state, or populate with cited_work_entry objects.",
             check_name=CHECK_NAME,
         )
         return

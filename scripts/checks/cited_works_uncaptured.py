@@ -1,8 +1,8 @@
 """cited-works-uncaptured check — cross-check on the NONE affirmation.
 
 WARN-level cross-check, paired with the explicit three-state affirmation
-on ``cited_works`` (see ``meta/conventions.md`` "cited_works affirmation"
-and the ``cited_works`` check). The primary enforcement is now structural:
+on ``cited_works`` (see the ``cited_works`` check). The primary
+enforcement is now structural:
 a document artifact's ``cited_works`` must be ``NONE`` (source has no
 reference list), ``IGNORED`` (source has one, deliberately not captured),
 or a non-empty list of entries; a bare ``cited_works: []`` is rejected
@@ -144,8 +144,7 @@ def check(ctx):
                 f"list, but a References / Bibliography signal was detected "
                 f"in sources/{rel_source} — likely a false affirmation. "
                 f"Re-verify the source, then either capture the entries or "
-                f"flip the affirmation to IGNORED (deliberate skip). See "
-                f"meta/conventions.md 'cited_works affirmation'.",
+                f"flip the affirmation to IGNORED (deliberate skip).",
                 check_name=CHECK_NAME,
             )
             return  # one diagnostic per artifact

@@ -8,11 +8,11 @@ canonical tokenizer + extraction layer from `scripts/lib/_common.py`
 script output reflects what the validator would see byte-for-byte.
 
 Use case: drafting `description` / `background` / `top_relevance` /
-`credibility_notes` prose (or `vouching_chain.attestation`). Per
-`meta/conventions.md` "Prose-drift discipline on synthesis surfaces",
-every significant token in those fields should be source-attested.
-This script lets a contributor pre-flight a draft's vocabulary
-against the source pool in a single tool call rather than iterating
+`credibility_notes` prose (or `vouching_chain.attestation`). Every
+significant token in those fields must be source-attested — the
+prose_drift check (validate-research.py) errors on any that isn't. This
+script lets a contributor pre-flight a draft's vocabulary against the
+source pool in a single tool call rather than iterating
 draft → validate → fix.
 
 The canonical workflow is still iterative — draft prose, run

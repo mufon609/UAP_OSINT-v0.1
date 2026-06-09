@@ -280,8 +280,8 @@ types:
     # disputed / off-node-variant respectively (auto-suppressed when empty).
     # References is UNIVERSAL on document artifacts via the three-state
     # ``cited_works`` affirmation (NONE / IGNORED / non-empty list — see
-    # ``meta/conventions.md`` "cited_works affirmation" + schema-research-
-    # artifact.yaml::cited_works): NONE / IGNORED render a one-line
+    # ``schema-research-artifact.yaml``::cited_works): NONE / IGNORED
+    # render a one-line
     # affirmation, captured entries render the entries view, and a bare
     # ``cited_works: []`` is rejected by the cited_works check. No
     # frontmatter gate, so no conditionally_required entry; the

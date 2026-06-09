@@ -271,7 +271,7 @@ def run_research(label: str, target: str, steps: tuple) -> list:
 
     # Document fixtures: the scaffolder writes `cited_works: ""` so the
     # contributor is forced to choose the affirmation (NONE | IGNORED |
-    # entries) — see meta/conventions.md "cited_works affirmation". The
+    # entries). The
     # smoke test mirrors that minimum-population step by flipping the
     # placeholder to NONE before validate-research runs; the per-fixture
     # smoke contract is "scaffold + minimum population → validate

@@ -15,7 +15,7 @@ broader:
                           so only page EXISTENCE is mechanically checkable: page N
                           must exist in the source. A timeline `p. N` that is
                           off-by-a-few has no verbatim anchor to verify against and
-                          rests on contributor care (see meta/conventions.md).
+                          rests on contributor care.
 
 `p. N` is the **physical** page a PDF viewer shows: the Nth form-feed-delimited
 block of the extract. This check verifies `p. N` **only where the source's own
@@ -29,7 +29,7 @@ page markers** — never manufacture page structure in a sibling — so its extr
 has no form feeds and this check skips it **by design**, not as a silent defect.
 For such a source `p. N` is a verbatim-anchored navigation hint: the
 verbatim-quote check confirms the text is in the source, and page-precision
-rests on contributor care (see meta/conventions.md).
+rests on contributor care.
 
 Eligibility is one signal: does the extract carry form-feed page separators?
 Everything else is skipped, so the check never false-fails: locations that
@@ -40,7 +40,11 @@ sibling-backed sources — any stray form feed is stripped by
 
 A quote (or observed token) on no single page straddles a page boundary —
 page-spanning quotes split at the boundary into two ≤1-page quotes — and is
-reported as such.
+reported as such. The split is deliberate: rather than teach the verbatim
+check to strip the footer/header/page-number boilerplate wedged at the
+boundary (one keystroke from masking the real content mismatches the check
+exists to catch), each ≤1-page quote anchors to its own page and matches
+cleanly.
 """
 
 import re

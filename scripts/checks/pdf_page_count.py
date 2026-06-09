@@ -21,8 +21,7 @@ another document's page — and printed-folio drift itself *undercounts*, so it
 would not even catch the pattern this cleanup targets. ``location_format``
 (roman / printed-folio refs) and this declared-count guard cover that;
 content-on-page correctness for OCR-scan sources stays uncheckable mechanically
-and rests on contributor care + the source-image re-verification pass
-(meta/conventions.md).
+and rests on contributor care + the source-image re-verification pass.
 """
 
 from checks import Issue
