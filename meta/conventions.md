@@ -1019,87 +1019,18 @@ creation, and treat the manifest-paths verifier (`scripts/tools/manifest.py
 verify-paths`) plus pre-commit as the only safe orphan-cleanup gate
 for sibling files.
 
-**Per-quote contributor discipline when an OCR-scan source's `.txt`
-sibling hasn't been produced yet.** *(Scope: the `/build` pipeline
-produces the verified sibling **before** the Worker — step 4b, "OCR-scan
-sibling readiness"; build-protocol → source-read-first — so a correctly
-run `/build` does not reach this state. But that is role discipline, not
-a hard gate: the verbatim-quote check is structurally blind to a
-sibling-less OCR quote (it passes — see below), so this discipline is the
-safety net whenever a quote does reach the artifact before its sibling —
-an out-of-pipeline manual edit, an `/augment`, or a `/build` where step 4b
-was skipped.)* A new OCR-scan
-source may enter the corpus before a contributor produces its clean-text
-sibling — the
-validator falls back to `pdftotext` output of the OCR'd PDF in that
-case, and OCR character-corruptions (`telated` for `related`,
-`compatrtmented` for `compartmented`, `appatently` for `apparently`) pass the
-verbatim-quote check because both the quote text and the source extract
-carry the same corruption. The check is mechanically correct but reader-
-misleading — confirmation against the OCR-corrupted extract is not
-confirmation against the original document. Two contributor steps,
-both required, when authoring a quote from such a source:
-
-1. **Log each artifact as a `naming_quirks` entry** with resolution
-   `preserve-as-sic-in-quotes` — observed form, canonical form, source
-   path, and a note explaining the variance (`OCR artifact`, `auto-
-   caption typo`, etc.). Multiple artifacts from one source produce
-   multiple entries (one per observed→canonical mapping).
-2. **Preserve the source form verbatim in `quote.text`.** Silent
-   substitution of the canonical form would make the verbatim-quote
-   check fail AND erase the source-form-as-archived discipline. When
-   the canonical form needs to appear in prose elsewhere, wrap a
-   backtick-bracket path on the canonical target — e.g., `"acme
-   widgits" [`/organizations/acme-widgets`]` — the prose-drift check
-   strips the bracket wrap before tokenizing, so the source-verbatim
-   token matches against source while the canonical wrap provides
-   navigability.
-
-Reader-visibility is automatic from there — the Phase II body
-renderer emits a `## Source-Form Notes` section near
-the foot of every node body (just before `## Associated Nodes`) that
-tables every `naming_quirks` entry whose resolution is
-`preserve-as-sic-in-quotes`. Columns: Source Form, Canonical, Source,
-Note. The section is auto-suppressed when no such entries exist on
-the artifact. A reader encountering a source-form token in quoted
-text has a reference table directly on the node body — no separate
-prose flag required. Adding a one-sentence prose flag in
-`credibility_notes` / `description` remains optional when the
-source-form pattern is particularly load-bearing for a specific
-evidentiary claim, but
-is not the primary reader-visibility mechanism.
-
-After registering the naming_quirks entries, re-grep **the passages
-you are quoting** for additional artifact patterns matching those
-already logged — drafting the registrations often surfaces artifacts
-not caught in the initial scan.
-
-Scope that re-grep to quoted text (and the `significance` / `location`
-that frame a quote). A `preserve-as-sic-in-quotes` entry exists to
-annotate a source form the reader **encounters on the node**, so its
-`observed` form must appear somewhere the reader meets it — inside a
-quote, or in the heading / locator describing one. Do **not** sweep
-the entire source extract and log every OCR typo: an incidental
-misspelling sitting in body text you never quote has no on-node
-referent, and the entry then renders as a correction to nothing — an
-*orphan* source-form note. Scan fidelity as a whole is recorded by the
-manifest entry's `extraction_type` (`ocr-scan` / `extraction-lossy`),
-not by one `naming_quirks` row per source typo. **Source-Form Notes
-stays strictly grounded — it carries no orphans.** Resolve every
-ungrounded `preserve-as-sic-in-quotes` entry per the grounding test in
-*Off-node variants* below — drop an incidental typo (scan fidelity is
-the `extraction_type`'s job), reclassify a navigation-worthy variant as
-`off-node-variant`. At audit time `scripts/tools/coverage-suggest.py`
-and the `review-coverage.py` grounding gate flag any ungrounded
-`preserve-as-sic-in-quotes` entry — a hard signal, no longer a
-judge-each carve-out.
-
-The discipline is a per-quote workaround, not a substitute for
-producing the `.txt` sibling. Once the sibling exists and the manifest
-entry's `extraction_type` is set to `ocr-scan`, the validator extracts
-from the sibling rather than the corrupted PDF text layer; the
-naming_quirks entries continue to record the original artifacts as
-provenance and continue rendering via the Source-Form Notes section.
+**Before the sibling exists — the out-of-pipeline stopgap.** `/build` produces
+and verifies the `.txt` sibling **before** the Worker (step 4b), so a correctly
+run build never quotes the corrupt text layer; a quote reaches the artifact
+sibling-less only out-of-pipeline — a manual edit, an `/augment`, or a build
+where 4b was skipped — where the validator falls back to the corrupt
+`pdftotext` output. The same fidelity discipline applies there: carry the
+source form verbatim into `quote.text` and log a `naming_quirks`
+`preserve-as-sic-in-quotes` entry (the three-way handling and grounding test
+are *A source naming an entity under a non-canonical form* and *Off-node
+variants* below; the Auditor's grounding gate flags orphans). A stopgap, never
+a substitute — once the sibling exists the validator extracts from it, and the
+`naming_quirks` entries remain as provenance.
 
 ### A source naming an entity under a non-canonical form — flag it, stub it
 
