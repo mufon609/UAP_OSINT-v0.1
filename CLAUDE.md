@@ -1,5 +1,9 @@
 # CLAUDE.md — Session-start checklist
 
+*Contributor session checklist for Claude Code — read order, health
+check, build state, session rules, enforcement warnings. No reference
+tables; those live with their owners.*
+
 Read this file at the start of every Claude Code session that involves
 **building, auditing, or iterating** on repository content.
 
@@ -16,7 +20,7 @@ session.
 
 In order:
 
-1. `README.md` — what this repository is (incl. the evidentiary philosophy + Status markers)
+1. `README.md` — what this repository is / is not (the epistemic standard + Status markers)
 2. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
 3. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
 4. `meta/topic/research-queue.md` — current priority build queue
@@ -225,130 +229,42 @@ scratch files (the `/build` worker role; build-protocol source-read-first).
 
 ---
 
-## 5. Core scripts — quick reference
+## 5. Scripts — a build session in order
 
-`scripts/` is organized by caller and role, not by file type: every
-script lives in exactly one of six subdirectories — no Python script
-sits directly in `scripts/` itself (the no-loose-scripts rule keeps the
-top of `scripts/` scannable as six role-labeled directories). New
-scripts land at the tier that matches who invokes them and what role
-they play:
+A typical build session touches the toolkit in this order:
+`scripts/build/extract-source.py` (primary sources → scratch plaintext)
+→ `new.py` + `research-scaffold.py` (scaffold node + artifact, once) →
+`build-from-research.py` (render the node body from the artifact) →
+`validate.py` / `validate-research.py` / `review-coverage.py` (gate each
+phase) → `associate.py` (regenerate Associated Nodes) →
+`build-state.py --update` (refresh §3) →
+`bash scripts/tests/pre-commit.sh` (the commit gate). Archival runs
+through `scripts/tools/manifest.py` + `scripts/tools/archive.py`; the
+sibling pipelines (OCR clean-text, speaker attribution) are driven by
+their skills, not hand-run.
 
-- **`build/`** — the scaffold → render → validate pipeline + the
-  validators that gate each phase (contributor-facing). Per-type
-  renderers live under `build/renderers/`.
-- **`tools/`** — standalone utilities, integrations, and diagnostics;
-  contributor-facing but *not* part of the content-transformation
-  pipeline (manifest CLI, Wayback, transcription, read-only diagnostics).
-  A tool with environmental prerequisites (binaries, env vars, modules,
-  browser session) fails fast at `main()` entry with a contributor-
-  friendly install hint rather than deferring the check to first use.
-- **`checks/`** — per-check modules; the validators under `build/` are
-  thin orchestrators that import and dispatch these via explicit step
-  lists. Each check is individually importable for single-check debugging.
-- **`tests/`** — gate-internal infrastructure existing only to support
-  the pre-commit chain (`pre-commit.sh` + its regression tests). No
-  contributor invokes these directly.
-- **`lib/`** — shared cross-cutting helpers imported across `build/`,
-  `tools/`, and `checks/`; kept separate so the cross-script lockstep
-  (same `extract_source_text`, same `STOPWORDS`) is mechanical, not
-  comment-discipline-based.
-- **`scratch/`** — contributor landing zone for in-progress exploratory
-  queries; gitignored. When a query class repeats across sessions,
-  graduate it to `tools/` as a proper subcommand — the bridge between
-  inline scripting and a first-class CLI, not a permanent home.
+Per-script reference — every script in all six subdirectories, with
+flags and design notes: `scripts/README.md`.
 
-The `build/`-vs-`tools/` split is produces/transforms vs assists:
-`build/` scaffolds, renders, or validates the content layer; `tools/`
-syncs the manifest, archives sources, or reports read-only diagnostics
-without transforming content.
-
-### Build pipeline — `scripts/build/`
-
-| Script | Purpose |
-|---|---|
-| `new.py` | Scaffold a node from template |
-| `research-scaffold.py` | Scaffold an empty research artifact for a node |
-| `extract-source.py` | Extract a primary source to plaintext (Phase I) |
-| `build-from-research.py` | Regenerate a node from its research artifact (Phase II — document / person / event / transcript / media / organization / location / finding / investigation). Per-type renderers live at `scripts/build/renderers/{type}.py`; `build-from-research.py` is the orchestrator. |
-| `stamp-speaker-id.py` | Derive transcript-quote `speaker_id` from the verified attribution sibling — the Builder runs this instead of the Worker hand-keying. Resolves each quote's `[MM:SS]` → sibling turn → speaker, aligns the artifact's `speakers[]` ids + node_links to the sibling (killing the id-divergence hazard), and stamps `speaker_id`. Transcript artifacts → derive mode; person/org → confirm mode (warn-only). Reuses the `speaker_attribution_consistency` resolution helpers; ruamel round-trip keeps unchanged artifacts byte-identical. Dry run by default; `--write` applies. |
-| `review-coverage.py` | Coverage / boundary / stub-linking / description-drift review (Phase III) |
-| `validate.py` | Schema, structural, and verbatim-quote validation |
-| `validate-research.py` | Research-artifact structural validation |
-| `validate-speaker-attribution.py` | Structural validator for speaker-attribution YAML siblings (`{slug}-attribution.yaml`) — slug/source-line-count consistency, enums, speaker/node-link refs, full line-range coverage partition, and the verified-structured-only invariant (a verified sibling carries no draft scaffolding). Gated in `pre-commit.sh`. |
-| `finalize-attribution.py` | Deterministic finalizer for a verifier-passed attribution sibling — sets `verification_status: verified` + `verifier_session` and strips draft-phase scaffolding (`rationale` / `verifier_notes` / `needs_image_verification`), leaving a structured-only committed artifact. Idempotent on an already-verified sibling. **W3 fold gate:** requires `--video PATH` (runs `spot-check-attribution.py` across all turns; any `contested-fold` BLOCKS finalize and routes back) or `--no-video` (explicit opt-out for a genuinely audio-only source) — no graceful skip by omission. |
-| `associate.py` | Regenerate `## Associated Nodes` sections from body links |
-| `build-state.py` | Refresh this file's build-state block |
-| `phase_routing_parity.py` | Parity gate — every `--phase` token in `prompts/` + `.claude/` is valid per `scripts/checks/_phases.py`, and every canonical phase is documented in `topology.md` |
-| `renderer-coverage.py` | Coverage gate — every schema required/optional/conditional section is renderer-producible (schema sections ⊆ renderer `EMITS`). A blocking gate in `pre-commit.sh`. |
-
-### Tools — `scripts/tools/`
-
-| Script | Purpose |
-|---|---|
-| `manifest.py` | Manage `sources/manifest.yaml` (add, verify-paths, …) |
-| `archive.py` | Submit URLs to the Wayback Machine |
-| `transcribe.py` | Download YouTube captions to `sources/transcripts/`. Tries `youtube-transcript-api` first; falls back to yt-dlp automatically when blocked. `--cookies -` reads cookies from stdin (canonical memory-only workflow; see `extract-firefox-cookies.py`). |
-| `extract-firefox-cookies.py` | Extract Firefox cookies and emit Netscape-format content to stdout for use with `transcribe.py --cookies -`. Reads `cookies.sqlite` in read-only + `immutable=1` mode so Firefox can stay open; no browser extension, no manual paste, no disk write. Auto-detects the default-esr profile. Capture into a shell variable (`COOKIES=$(...)`) for multi-video sessions; `unset COOKIES` when done. See `meta/sources-access.md` "YouTube" for the Firefox prereqs + full canonical workflow. |
-| `normalize-locations.py` | Diagnostic for quote `source.location` refs — surfaces deprecated `lines N-M` forms with actual line ranges and canonical-form proposals (read-only) |
-| `check-vocab.py` | Pre-flight vocabulary check for prose-drift discipline — pools an artifact's primary-source significant tokens (shares `lib/_common.py`'s prose-drift tokenizer with `validate-research.py`) and reports per-input-token presence. Contributor convenience for drafting `description` / `background` / `top_relevance` / `credibility_notes` / per-entry residue `.note` fields against source vocabulary. |
-| `coverage-suggest.py` | Source-coverage audit aid — for each primary source on an artifact, surfaces (a) substantive source paragraphs that no quote references and (b) capitalized terms that appear in the source but nowhere in the artifact. Forward-direction complement of the verbatim-quote check; flags likely under-extraction candidates. Read-only; contributor judges what's load-bearing vs. boilerplate. Useful at audit time on already-built nodes. |
-| `link-suggest.py` | Cross-reference link-coverage aid — surfaces capitalized names in a research artifact's **authored prose** (description, significance, timeline events, synthesis fields; never verbatim `quote.text`) that are not yet wrapped as `[`/path`]` stubs. The heuristic, read-only companion to the blocking `prose_entity_link` check (the universal stub-linking rule, "name it, wrap it"): the check catches prose that names an entity already in the repo without linking it; this aid catches the other direction — named entities with no node yet (a cited physicist, a program named once). Contributor judges each candidate. |
-| `route_failure.py` | Route a failing validator check to the role that owns its data fix (check → phase → role, via `scripts/checks/_phases.py`). The dissolved Error agent — consumed by the `/build` orchestrator loop; the fix target is always artifact data, never the node body. |
-| `download-video.py` | Canonical video archival for the speaker-identification pipeline. yt-dlp wrapper with `--cookies-from-browser firefox` (in-memory; no cookies file ever touches disk), JS-challenge solver via `--remote-components ejs:github`, 480p mp4 default. Lands at `sources/video/{slug}.mp4`, registers via `manifest.py add`. Slugs auto-lowercased on input to tolerate uppercase YouTube IDs. |
-| `extract-frames.py` | ffmpeg-based frame extraction for speaker identification. Four modes: `anchor` (8 frames spread across video duration at 5%/15%/25%/35%/50%/65%/80%/95% — overridable with `--timestamps`), `burst` (N frames over T seconds at named timestamps, tiled contact-sheet output), `sweep` (periodic bursts across a range), `transcript` (burst at each `[MM:SS]` tick of a transcript file). Always writes `index.md` for the output directory. |
-| `detect-faces.py` | dlib HOG face detection + ResNet 128-d face-embedding matching + persistent identity-baseline log under `sources/photo-identity-log/`. Four subcommands: `detect` (process frames → 256×256 jpg crops, embedding-dedup + auto identity-hint), `register` (promote a labeled crop to `baselines/{identity}/ref_NN.jpg` + manifest entry), `prune` (remove crops in `crops/` matching no baseline identity), `encode-baselines` (rebuild the cached `baseline-encodings.npz`). Embeddings replaced the old Haar+pHash engine — the same/different-person distance gap eliminates the look-alike false positives pHash threshold-tuning couldn't. Auto-relaunches under `.venv-face/` (`setup-face-embeddings.sh`). The accumulating baseline set makes who-is-who mechanically resolvable across the corpus. |
-| `render-speaker-transcript.py` | Deterministic markdown renderer for a speaker-attribution sibling — reads the verified `{slug}-attribution.yaml` and emits `{slug}-attributed.md`, wrapping the verbatim source bytes (by line range) with speaker labels and foreign-content markers. The YAML is source-of-truth; the `.md` is a derived view, re-runnable as a pure function of (YAML, source). |
-| `spot-check-attribution.py` | Mechanical turn-by-turn cross-check of a finished speaker-attribution sibling against the source video. Samples a per-turn frame **burst** across the turn's time window and decides by **who is speaking**, not mere presence: the dlib HOG + embedding engine (via `detect-faces.py`) resolves WHO each on-screen face is, and the active-speaker engine (`active-speaker.py`, `--asd mar`, default) resolves WHICH face is talking (mouth-motion). Verdicts: `confirmed` / `confirmed-with-footnote` / `contested-fold` (another in-transcript speaker is the active speaker — the wrong-label signal) / `contested-other` / `honestly-unverified` (off-camera/voiceover speaker, or no on-camera speaker) / `inconclusive` / `no-baseline` / `n/a-foreign`. Two false-positive guards: a `MIN_FOLD_FRAMES`/`MIN_FOLD_SECONDS` floor (a brief turn can't fold) and off-camera-role awareness. CSV + stdout summary; `--frames`, `--asd`, `--mar-talk-range`, `--silence-rms`, `--embed-threshold`. Auto-relaunches under `.venv-face/`. `--asd none` falls back to the presence/dominance test. |
-| `active-speaker.py` | Mouth-aspect-ratio (MAR) active-speaker detection — answers WHICH on-screen face is talking during a turn so the spot-check verifies the *speaking* attribution, not on-camera presence (the two-shot / cutaway / voiceover false-positive killer). Per frame: dlib HOG detect + 128-d ResNet embedding (identity, feeds `detect-faces.identify`) + 68-point lip MAR; across a burst, a face whose MAR *range* exceeds threshold is speaking. Window-level audio-RMS gate separates speech from b-roll/silence. Pure CPU, no GPU, no model download beyond what `face_recognition` bundles. A library for `spot-check-attribution.py`; small CLI for MAR calibration. Auto-relaunches under `.venv-face/`. |
-| `setup-photo-identity.sh` | One-time idempotent installer for the frame-handling side of the video pipeline: `ffmpeg`/`ffprobe`, `python3-pil`, `yt-dlp`, a JS runtime. The dlib matching engine is a separate install (`setup-face-embeddings.sh`). Reports any missing pieces; re-runnable. |
-| `setup-face-embeddings.sh` | One-time idempotent installer for the dlib face-embedding matcher behind `detect-faces.py` / `spot-check-attribution.py`: apt-installs `cmake`, creates `.venv-face/` with `--system-site-packages`, builds `dlib` from source + installs `face_recognition` + `numpy`, warms the ResNet model. Separate from `setup-photo-identity.sh` because dlib's C++ footprint is heavy and PEP 668 requires a venv. |
-
-Full video-pipeline walk-through: see `scripts/tools/VIDEO-PIPELINE.md`
-for the four-step workflow (download → extract frames → detect faces →
-register baselines), then `spot-check-attribution.py` to cross-check an
-attribution sibling against the video.
-
-Session start + build walk-through: run `/onboard`. **The default build path is
-the `/build` skill** — the orchestrator runs on the main thread and dispatches
-the role subagents in `.claude/agents/` (internal-investigator · external-
-investigator · archive · worker · builder · auditor); the shared contract is
-preloaded from `.claude/skills/build-protocol/`. `prompts/topology.md` is the
-design rationale for that decomposition; the build mechanics each role applies
-live in `meta/schema.yaml` + `.claude/skills/build-protocol/` (the evidentiary discipline) and the role
-subagents themselves. Standalone workflows are skills too: `/audit`, `/augment`,
+Session start: run `/onboard`. **The default build path is the `/build`
+skill** — the orchestrator runs on the main thread and dispatches the
+role subagents in `.claude/agents/` (internal-investigator ·
+external-investigator · archive · worker · builder · auditor); never
+hand-author a node. The standalone skills: `/audit`, `/augment`,
 `/verify-transcript`, `/quote-relevance-audit`, `/archive-sweep`,
 `/prepare-ocr-sibling`, `/prepare-transcript-sibling`, `/fork-init`.
 
-Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:
-
-```
-bash scripts/tests/help-check.sh
-```
-
-Confirms every `scripts/{build,tools}/*.py --help` exits 0 with no
-traceback — catches syntax errors, import errors, and argparse
-regressions.
-
-**Recovering 404'd primary sources via Wayback** — if an audit hits a
-manifest entry with `status: pending` plus `wayback_date` set (live URL
-dead, Wayback has a snapshot), use the fuzzy-timestamp pull workflow
-in `meta/sources-access.md` "Wayback Machine fetch — fuzzy-timestamp
-URLs bypass anti-bot challenge". Exact-timestamp Wayback URLs trigger
-an anti-bot challenge; fuzzy-timestamp URLs (`/web/{year}/{url}`)
-redirect to the nearest snapshot and serve directly.
-
 ---
 
-## 6. What this repository is not
+## 6. Hand-edits to node bodies are blocked
 
-- Not a place for speculation or secondary-source summaries
-- Not advocacy for any conclusion
-- Not a debunking resource
-- Not a place that cleans or corrects sources — primary-source artifacts
-  (OCR errors, typos, garbled-but-legible scan regions) are preserved
-  verbatim and flagged, never silently fixed
-- Does not adjudicate between conflicting primary sources — documents
-  both, flags the disagreement, lets the reader judge
-
-See `README.md` ("What this is" / "What this is not") for the epistemic standard.
+Rendered node bodies (`/people/`, `/organizations/`, `/documents/`, …)
+are regenerated from their research artifacts — never hand-edited. A
+committed `settings.json` deny rule plus a PreToolUse hook block the
+Edit/Write path. To change a node: fix the artifact under
+`meta/research/` and re-render with `build-from-research.py`, or run
+`/augment` for a targeted maintenance change. `git commit` runs the full
+pre-commit chain and blocks on any red gate (un-bypassable by
+`--no-verify`); scaffolding a second uncommitted new
+person/organization node is also hook-blocked (the
+one-new-synthesis-node rule, §4).

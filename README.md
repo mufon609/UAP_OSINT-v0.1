@@ -60,64 +60,15 @@ meta/
     working-notes/          in-progress synthesis docs awaiting integration into content nodes
 
 scripts/
-  build/                    build pipeline + validators (contributor-facing)
-    new.py                  scaffolder — produces empty node from template
-    research-scaffold.py    scaffold the research artifact backing a node
-    extract-source.py       extract primary sources to plaintext (Phase I)
-    build-from-research.py  orchestrator — regenerates node body from artifact (Phase II)
-    renderers/              per-type renderer modules dispatched by
-                            build-from-research.py — _common.py, _universal.py,
-                            and one module per node type
-                            (document / person / event / transcript / media /
-                            organization / location / finding / investigation)
-    review-coverage.py      Phase III coverage / boundary / stub-linking / description-drift review
-    validate.py             node structural + verbatim-quote + source-integrity validation
-    validate-research.py    research-artifact structural validation
-    associate.py            auto-generate Associated Nodes sections
-    build-state.py          refresh CLAUDE.md build state
-  tools/                    standalone utilities + diagnostics
-    manifest.py             manifest CLI (add, verify-paths, …)
-    archive.py              Wayback Machine submission
-    transcribe.py           YouTube caption download (auto-fallback to yt-dlp; --cookies - reads from stdin)
-    extract-firefox-cookies.py  Firefox cookies → stdout (memory-only; pipe into transcribe.py --cookies -)
-    check-vocab.py          pre-flight prose-drift token check (contributor diagnostic)
-    coverage-suggest.py     source-coverage audit aid (read-only; surfaces under-extraction candidates)
-    normalize-locations.py  quote `source.location` ref diagnostic (read-only)
-    download-video.py       canonical video archival (yt-dlp wrapper; 480p mp4 default; manifest registration)
-    extract-frames.py       ffmpeg frame extraction — anchor / burst / sweep / transcript modes
-    detect-faces.py         dlib HOG face detection + ResNet face-embedding matching + persistent baselines/manifest
-    spot-check-attribution.py  mechanical turn-by-turn cross-check of an attribution sibling against the video (embedding match)
-    setup-photo-identity.sh one-time installer for the frame side of the video pipeline (ffmpeg, Pillow, yt-dlp, JS runtime)
-    setup-face-embeddings.sh one-time installer for the dlib face-embedding matcher (cmake, dlib, face_recognition; .venv-face)
-    VIDEO-PIPELINE.md       four-step workflow doc (download → extract → detect → register; then spot-check)
-  checks/                   per-check modules — every named validator check
-                            lives here as its own file; build/validate.py /
-                            build/validate-research.py / build/review-coverage.py
-                            are thin orchestrators that import and dispatch
-                            them via explicit step lists
-  lib/                      shared cross-script helpers (source extraction,
-                            HTML cleanup, quote normalization, frontmatter
-                            parse) — imported by both the orchestrators and
-                            the per-check modules; keeps mechanical lockstep
-                            across them
-
-scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains every gate:
-                            help-check / test_stopwords / smoke / build/validate.py /
-                            build/validate-research.py / build/review-coverage.py /
-                            build/build-state.py --check / build/associate.py --check /
-                            build/renderer-coverage.py /
-                            phase-routing-parity / skills-check / file-size-check /
-                            cookies-check)
-  help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
-  test_stopwords.py         STOPWORDS shape + content-word regression test
-  smoke.py                  fixture-based new.py + validator smoke tests
-                            (single-process; ProcessPoolExecutor over fork)
-  file-size-check.sh        warn 50MB / error 100MB on git-tracked files
-                            (per meta/sources-access.md large-file discipline)
-  cookies-check.sh          block commits containing Netscape cookies content
-                            or Google session cookies in Netscape-shape rows
-                            (defensive backstop to .gitignore patterns)
+  README.md                 canonical per-script reference (all six subdirectories)
+  build/                    scaffold → render → validate pipeline + the per-phase validators
+  tools/                    standalone utilities + diagnostics (manifest, archival,
+                            transcription, video/OCR pipelines)
+  checks/                   per-check modules — every named validator check,
+                            dispatched by the build/ validators
+  tests/                    pre-commit gate chain + its regression tests
+  lib/                      shared cross-script helpers
+  scratch/                  gitignored landing zone for exploratory queries
 
 sources/
   manifest.yaml             source-archival index (YAML)
@@ -142,6 +93,8 @@ media/ locations/ findings/ investigations/
                             subagents
   agents/                   the six build role subagents (internal-investigator,
                             external-investigator, archive, worker, builder, auditor)
+                            + the two OCR page agents (ocr-page-producer,
+                            ocr-page-verifier) dispatched by /prepare-ocr-sibling
   hooks/                    PreToolUse guards — commit gate (runs pre-commit.sh),
                             node-body-edit block, one-new-synthesis-node cap
   settings.json             hook wiring (committed; topic-neutral)
