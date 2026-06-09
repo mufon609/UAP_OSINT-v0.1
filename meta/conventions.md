@@ -42,7 +42,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [A source naming an entity under a non-canonical form — flag it, stub it](#a-source-naming-an-entity-under-a-non-canonical-form--flag-it-stub-it)
   - [Off-node variants — catalogued, not on the node](#off-node-variants--catalogued-not-on-the-node)
   - [Transcript provenance and audit discipline](#transcript-provenance-and-audit-discipline)
-  - [Transcript quotes carry structural speaker attribution](#transcript-quotes-carry-structural-speaker-attribution)
 - **Part IV — The synthesis layer**
   - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
 - **Part V — Cross-references & archival**
@@ -1398,132 +1397,24 @@ The five-value `transcript_provenance` enum is the schema layer
 (see `manifest_entry.transcript_provenance_values` in
 `schema.yaml`). The audit discipline above is the contributor layer.
 
-**Speaker attribution: source format selects the method.** Provenance
-classifies *text* fidelity; it also determines *how speakers are known*. A
-transcript's speaker labels are either carried by the source or absent — and
-the absent case must be *reconstructed against the recording*, never inferred
-from text alone. Inferring a speaker from textual cues (register, who-
-addresses-whom, question-then-answer shape) is a hypothesis, not a
-conclusion: it is the exact process that produces misattributions — a line
-delivered by one participant assigned to the other, or a two-party exchange
-collapsed onto one speaker. Speaker attribution on a label-less source is
-**confirm-against-source** — the audio/video analog of the verbatim
-source-read-first rule.
-
-- **Labeled sources** (`stenographic`, `published-transcript`, and
-  `human-corrected-caption` where the corrector preserved labels): speakers
-  come from the source's own attribution. Populate `speakers[]` and each
-  quote's `speaker_id` directly from the labels; the substring-verify check
-  already covers the text. No diarization or face work.
-
-- **Label-less sources** (`auto-caption`, Whisper output — words and
-  timestamps but no speaker labels): the speaker of every quote must be
-  reconstructed and confirmed against the recording. Select the method by
-  what the source provides:
-    - *Video with visible faces* → the **image path** (preferred). Extract
-      frames at each quote's timestamp (`extract-frames.py`), match faces
-      against the persistent baseline registry (`detect-faces.py`; register a
-      baseline first when a speaker has none), and **confirm by eye** —
-      seeing the mouth move, or the non-speaker shown listening, against a
-      registered face is a stronger identity check than telling similar
-      voices apart by ear. A human verifies the frames before a `speaker_id`
-      is trusted.
-    - *Audio-only* (no usable faces) → resolve speakers from **content**, via
-      the agent text-pass (`/prepare-transcript-sibling`): anchor each turn to
-      a name using a self-introduction, one participant naming another, or the
-      dominant speaker on a known monologue, and confirm against both sides of
-      every turn boundary. A turn the text genuinely can't settle takes the
-      mixed-exchange form below; never guess from a transition cue alone.
-    - *Genuinely unresolvable boundary* (overlapping turns, or a handoff the
-      recording can't cleanly settle) → the **mixed-exchange** form:
-      `speaker_id` as a list of 2+ ids (`[s1, s2]`), rendering a `Speakers —
-      mixed exchange` row. It marks the boundary honestly without fabricating
-      a split; use it only when the turns are genuinely not separable, not to
-      skip attribution work where they are.
-
-When an attribution issue surfaces, route it to the proper tool, never an
-ad-hoc workaround: a source recording missing from the checkout → re-fetch
-with `download-video.py` (its bytes are gitignored; the manifest is the
-record); a speaker with no baseline → `detect-faces.py register`; a caption
-mis-transcription, or a name the machine spelled inconsistently (e.g.
-`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a frame match that doesn't
-clearly resolve → human frame-verification or the mixed-exchange form.
-
-The per-method tool sequence and its dependency prerequisites — and the rule
-that a *missing but needed* dependency (the `.venv-face` dlib stack, browser
-cookies, a face baseline) must stop the run with a remedy, while a
-satisfied-or-unneeded one proceeds — live in
-`scripts/tools/VIDEO-PIPELINE.md`.
-
-**Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
-files (produced by `scripts/tools/transcribe.py`) carry a `[MM:SS]`
-marker on every caption line — one tick per 2–5 seconds of speech.
-The validator's `normalize_for_compare` (in `lib/_common.py`) strips
-`[MM:SS]` and `[H:MM:SS]` markers from BOTH the quote text and the
-extracted source before substring comparison, so the verification
-check is timestamp-blind. The contributor convention:
-
-- Write each quote as one continuous single-line prose string in
-  YAML (single-quoted scalar style; never `|` literal block which
-  preserves caption-line breaks as rendered newlines).
-- Include AT MOST ONE leading `[MM:SS]` anchor at the start of each
-  quote, matching the source line where the quote's first content
-  word appears. Reader clicking the anchor lands on the start of the
-  quote, not several seconds in.
-- Drop all intermediate timestamps from quote text. They normalize
-  away at comparison time, so preserving them adds visual noise (a
-  15-second quote could carry 9–15 intermediate ticks) without
-  evidentiary value.
-- Auto-caption typos stay verbatim — handle via `naming_quirks` per
-  the per-quote contributor discipline above; don't silently correct.
-
-The source file in `sources/transcripts/` keeps every caption tick
-(that's its primary-source form). Stripping happens at the artifact
-authoring layer for readability, and at the normalization layer for
-verification.
-
-### Transcript quotes carry structural speaker attribution
-
-On a transcript artifact, the speaker of each quote is a structural
-reference, not contributor prose. Every entry in `quotes[]` carries
-`speaker_id` (required on transcript artifacts; enforced by
-`scripts/checks/quotes.py`), pointing at one of the artifact's
-`speakers[*].id` values. The renderer's attribution block emits a
-`Speaker` row above `Attributed to`, populated from the matched
-speakers entry — `Name ([`/people/slug`])` when the speaker has a
-`node_link`, or just `Name` when not (anonymized audience members,
-unidentified panelists).
-
-The bright line: `context` carries circumstance prose (venue, format,
-neighboring exchange — "opening statement", "Q&A exchange with a
-committee member", "the witness continuing his prepared statement"); `speaker_id`
-carries who-said-it. Two contributors authoring quotes from the same
-source can disagree on circumstance phrasing without diverging on the
-attribution — the structural reference is what validates and renders.
-
-Three failure modes the structural reference closes:
-
-- **Prose-attribution drift.** Different sessions could disagree on
-  who said line 2:00 of a podcast and both be wrong with no mechanical
-  check. The `quotes` check now fails when `speaker_id` doesn't
-  resolve to a real `speakers[].id`.
-- **Re-author ambiguity.** Six months later a contributor re-reading
-  the artifact had to re-trace the frame + baseline match to recover
-  the speaker assignment. The structural reference makes the
-  assignment self-documenting.
-- **Renderer inconsistency.** Hand-formatted Attributed-to strings
-  varied in how they named speakers ("Halvorsen" vs "Dr. Jane
-  Halvorsen" vs "Dr. Halvorsen"). Mechanical lookup from `speakers[]`
-  produces one consistent rendered form per identity.
-
-The accompanying `speaker_baseline_consistency` check
-(`scripts/checks/speaker_baseline_consistency.py`) catches the next
-link of the chain: every `speakers[].node_link` that points at
-`/people/{slug}` should have a baseline at
-`sources/photo-identity-log/baselines/{slug}/` so the video-pipeline
-tools (`scripts/tools/detect-faces.py`,
-`scripts/tools/spot-check-attribution.py`) can mechanically resolve the
-speaker on future videos.
+**Label-less attribution is confirm-against-source.** Provenance also
+determines *how speakers are known*. Where a source carries speaker labels
+(`stenographic`, `published-transcript`, label-preserving
+`human-corrected-caption`) the labels are the attribution — populate
+`speakers[]` and each quote's `speaker_id` from them, and the substring-verify
+check already covers the text. Where a source carries none (`auto-caption`,
+Whisper output — words and timestamps, no labels), the speaker of every quote
+must be **reconstructed and confirmed against the recording**, never inferred
+from textual cues (register, who-addresses-whom, question-then-answer shape).
+Inference from text alone is the exact process that produces misattributions —
+a line assigned to the wrong participant, a two-party exchange collapsed onto
+one speaker — and is no more permissible than deriving a verbatim quote from
+memory. A boundary the recording genuinely cannot settle takes the honest
+mixed-exchange form (`speaker_id` as a list of 2+ ids), never a fabricated
+split. Selecting and running that reconstruction — image path vs. content
+text-pass, the tooling each needs — is the operating manual of the transcript
+skills (`/prepare-transcript-sibling`, `/verify-transcript`), not a central
+rule.
 
 ---
 

@@ -83,9 +83,10 @@ be reconstructed against the recording:
 | `auto-caption` / Whisper, **audio-only** (no usable faces) | no | **agent text-pass + manual anchoring** — `/prepare-transcript-sibling` resolves speakers from content (self-intro, one speaker naming another, dominant monologue); the contributor anchors any turn the text can't settle. No on-disk faces to match, so this pipeline doesn't apply. |
 | genuinely unresolvable boundary (overlap / rapid crosstalk) | n/a | `speaker_id: [s1, s2]` **mixed-exchange** — never fabricate a split. |
 
-Faces do the naming on the image path; the discipline (confirm-against-source,
-never text-cue guesswork) lives in `meta/conventions.md` "Speaker attribution:
-source format selects the method."
+Faces do the naming on the image path; the discipline is
+confirm-against-source — the speaker is reconstructed against the recording,
+never inferred from text-cue guesswork (register, who-addresses-whom), which is
+the misattribution failure mode.
 
 **Dependency gating.** The image path needs a subset of the tooling. Check
 before you run: a *missing but needed* dependency must stop the run with its

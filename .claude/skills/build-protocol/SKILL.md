@@ -51,8 +51,7 @@ failure mode (it is invisible to its author).
 - **Label-less transcripts** (`transcript_provenance: auto-caption` /
   `human-corrected-caption` without inline labels): the caption text is fine
   but speaker labels are absent — `speaker_id` cannot be derived from the
-  caption file alone, only against the recording (`meta/conventions.md`
-  "Speaker attribution: source format selects the method"). Its canonical
+  caption file alone, only against the recording. Its canonical
   attribution is a same-stem stitched sibling, produced by the video pipeline.
   Sibling-readiness step: **`/build` step 4c** via
   `/prepare-transcript-sibling`. *The sibling adds an attribution layer

@@ -38,9 +38,7 @@ quotes against sources and fixing or removing any that don't match.
    via `superseded_by` / `contradicted_by` pointers; typo fixes edit in place.
 6. **Speaker attribution.** Each transcript quote carries a structural
    `speaker_id` → `speakers[*].id` (a single id, or a list of 2+ ids for a
-   mixed exchange). The method follows the source format — see
-   `meta/conventions.md` "Speaker attribution: source format selects the
-   method":
+   mixed exchange). The method follows the source format:
    - **Labeled source** (`stenographic` / `published-transcript`): take the
      speaker from the source's own labels and confirm the match against the
      caption file.

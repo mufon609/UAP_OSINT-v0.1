@@ -44,6 +44,20 @@ sufficient; the check verifies the bytes are in the source, not who said them.
   `speaker_id` from the verified attribution sibling via
   `scripts/build/stamp-speaker-id.py` — hand-keying is exactly the divergence
   hazard that tool exists to remove.
+- **Caption-tick timestamps in a caption quote's `text`.** YouTube-caption
+  source files (from `scripts/tools/transcribe.py`) carry a `[MM:SS]` marker on
+  every caption line. The verbatim-quote check is timestamp-blind — its
+  `normalize_for_compare` strips `[MM:SS]` / `[H:MM:SS]` from both sides before
+  comparison — so write the quote for the reader, not the raw caption shape:
+  one continuous **single-line** YAML scalar (single-quoted; never a `|`
+  literal block, which bakes caption-line breaks into rendered newlines);
+  **at most one** leading `[MM:SS]` anchor, matching the source line where the
+  quote's first content word appears; **drop every intermediate tick** (they
+  normalize away — a 15-second quote would otherwise carry 9–15 of them as pure
+  noise). Auto-caption typos stay **verbatim** — never silently correct;
+  register them as `naming_quirks` per the source-form discipline. The source
+  file keeps every tick (that is its primary-source form); the stripping is an
+  authoring-layer readability choice.
 
 Input: `{slug}`, one `{source-path}`, its `/tmp/scratch-{slug}-N.txt`, and
 `worker_kind`.

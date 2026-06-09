@@ -50,6 +50,18 @@ In order, with a check after each (build-protocol → run
    wrong) — resolve it before proceeding. Requires a finalized sibling (the W3
    gate passed); the `speaker_attribution_consistency` check is then
    defense-in-depth that should never fire.
+   - `speaker_id` is a **structural reference** (resolves to a `speakers[*].id`;
+     required on every transcript quote, enforced by `scripts/checks/quotes.py`),
+     not contributor prose — it renders a `Speaker` row above `Attributed to`
+     (`Name ([`/people/slug`])` when the speaker has a `node_link`, else bare
+     `Name`). Hold the bright line: `context` carries circumstance (venue,
+     format, neighboring exchange); `speaker_id` carries who-said-it. The
+     structural reference is what validates and renders, so two authors can
+     differ on circumstance phrasing without diverging on attribution.
+   - `speaker_baseline_consistency` (`scripts/checks/`) closes the next link:
+     every `speakers[].node_link` → `/people/{slug}` should have a baseline at
+     `sources/photo-identity-log/baselines/{slug}/`, so the video-pipeline tools
+     can mechanically resolve that speaker on future recordings.
 1. **Organize.** Cluster quotes into the final `claim_group`; derive the
    primary/pointer split via `corroborated_by` (prefer sworn > written >
    interview > podcast; tie-break earliest `statement_date`). Write the
