@@ -74,8 +74,8 @@ Audit goals:
    populates automatically from existing tier-2 cross-links. If the adjacent
    node's source carries no attestation of the connection, the asymmetry is
    correct; do not emit.
-8. **Family comparability (source-anchored).** Per `meta/conventions.md`
-   "Comparability standard", compare the target against its family peers —
+8. **Family comparability (source-anchored).** Compare the target against
+   its family peers —
    same `type`, and within type the same `archetype` (people) or `kind`
    (organizations / documents / events). For each **source-anchored** optional
    section a peer populates that the target lacks — `## Source-Form Notes` /

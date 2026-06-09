@@ -71,6 +71,25 @@ error (a build once inherited a sibling's wrong cross-link by mirroring it);
 the exemplar may be wrong, and the gate that catches it is your re-read of the
 source, not the exemplar's apparent authority.
 
+## Document-corpus extraction — the passage rubric
+
+A commissioned-program / serially-released document is extracted against a
+category checklist, so density falls out of consistent selection rather than
+each worker re-judging "load-bearing" afresh. Capture, where the source contains
+it: **provenance / front matter** (title, authors, preparing org, date, contract
+markings); **thesis and scope**; **each major section's finding** (the
+load-bearing result of every numbered section — the category most often
+dropped); **methods / approach**; **conclusions / recommendations**;
+**acknowledgements** (named contributors / institutions — an authorship-network
+signal); and **references** (the citation list, captured as `cited_works[]`, not
+`quotes[]`). The rubric names what to *consider*; the source decides what is
+*present* — it is not a quote-count target. `scripts/tools/coverage-suggest.py`
+surfaces uncovered source paragraphs to read against this rubric.
+
+A node in a serially-released set is slugged `{corpus}-{release#}-{short-title}`
+with NO date (siblings then sort + cross-reference by release number; the date
+lives in `internal_date` / the manifest).
+
 ## Tier linking contract — references run downward (check before you link)
 
 Four tiers; a node references only *lower* tiers, never a greater one. The

@@ -50,8 +50,8 @@ Target: **$ARGUMENTS** (ask the user if empty).
    not-on-node variant → reclassify `resolution: off-node-variant`, which
    renders in `## Name Variants` — resolve each, Source-Form Notes carries no
    orphans).
-   Then weigh the auditor's **family-comparability** pass (goal 8): per
-   `meta/conventions.md` "Comparability standard", does a same-`type` /
+   Then weigh the auditor's **family-comparability** pass (goal 8): does a
+   same-`type` /
    `kind` / `archetype` peer carry a source-anchored optional section this
    target lacks (`## Primary-Source Contradictions`, `## Public-Record Claims`,
    `## Source-Form Notes` / `## Preserved Disagreements`)? If so, re-check

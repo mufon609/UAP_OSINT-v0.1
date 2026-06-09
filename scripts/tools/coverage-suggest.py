@@ -28,8 +28,9 @@ cannot catch:
      logged but never surfaced. Reverse-direction complement of the
      verbatim-quote check: verbatim-quote confirms quotes are in the
      source; this confirms quirk entries are grounded on the node.
-     See `meta/conventions.md` (the `preserve-as-sic-in-quotes`
-     discipline: the source form "lives only inside verbatim quotes").
+     The grounding rule (the source form "lives only inside verbatim
+     quotes") is enforced by the `source_form_grounding` check; the
+     resolution enum is specified in schema `naming_quirk_entry`.
 
 Contributor judges each candidate manually — the tool surfaces
 audit targets, never asserts they're under-extraction. Boilerplate,
@@ -495,8 +496,8 @@ def main():
         print("  - Boilerplate / navigation / tangential? → ignore (no action needed)")
         print()
         print("[¶~N] indices are paragraph-numbers in the EXTRACTED scratch text")
-        print("(blank-line-delimited). Tightness convention for actual quote")
-        print("location refs lives in meta/conventions.md.")
+        print("(blank-line-delimited). Canonical quote-location forms + the")
+        print("tightness convention live in schema-research-artifact.yaml::quote_source.")
 
     return 0
 

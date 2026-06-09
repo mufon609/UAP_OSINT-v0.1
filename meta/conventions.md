@@ -22,7 +22,6 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Sworn testimony vs claim verification](#sworn-testimony-vs-claim-verification)
   - [Source priority — anchoring when multiple sources attest](#source-priority--anchoring-when-multiple-sources-attest)
   - [Contradictions](#contradictions)
-  - [Comparability standard — same source-anchored treatment across a family](#comparability-standard--same-source-anchored-treatment-across-a-family)
   - [Neutrality](#neutrality)
 - **Part II — The evidentiary primitive: quotes**
   - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
@@ -248,103 +247,6 @@ The Confirmed/Flagged binary is unchanged by contradictions —
 from their respective origins; the evidentiary disagreement is
 documented separately.
 
-### Comparability standard — same source-anchored treatment across a family
-
-Two nodes of the same kind get built in different sessions by different
-workers, and a source-anchored section one of them carries can quietly go
-missing on the other — not because the second node's sources lack the material,
-but because no one checked. One member of a family may carry a `## Source-Form
-Notes` section its sources support while a peer that should be checked for the
-same class of material never was — and nothing in the build or audit flow asked
-whether it should. That gap is the failure this standard closes.
-
-**The principle.** Members of a comparable node family receive the same
-*source-anchored treatment*. When one member carries a source-anchored optional
-section or dimension, every peer is obliged to be checked — at build time and at
-audit time — for the same class of material against its own archived sources.
-The standard governs the *checking*, never the *output*: presence stays
-content-driven. A peer emits the section if and only if its sources support it.
-A node whose sources attest no non-canonical name form correctly carries no
-`## Source-Form Notes` section, and that is not a defect.
-
-**Family axes.** "Comparable" means same `type`, and within type the same
-`archetype` (people) or `kind` (organizations, documents, events) — the grouping
-the schema already uses to decide conditional sections. No separate "family"
-field exists or is needed. The `gov` organizations are one family; the
-`eyewitness` people another.
-
-**In scope — source-anchored surfaces only.** The treatment that must converge
-is the evidentiary handling of source material, which surfaces as the optional
-sections rendered by `scripts/build/renderers/_universal.py` plus the document
-`cited_works` dimension:
-
-- `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
-- `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
-- `## References` (document `cited_works` — UNIVERSAL on documents via the
-  three-state affirmation NONE / IGNORED / list (the `cited_works` check +
-  schema); the comparability question shifts from "does the peer
-  carry the section?" to "is the affirmation correct against the peer's
-  source?")
-
-**Out of scope — synthesis prose, and the lighter-surface node types.** The
-synthesis fields (`description`, `background`, `top_relevance`,
-`credibility_notes`, free-prose timeline) are never convergence candidates;
-their shape is the contributor's judgment of one node's evidence, not a
-cross-node obligation. Likewise the deliberate decision that document /
-transcript / event / media / location nodes omit synthesis-heavy sections to
-minimize prose-drift surface is correct and is not a divergence to "fix."
-
-**This is not a count target.** Read this standard alongside `### Density is
-source-driven` above. That section forbids comparison framings like "comparable
-nodes have N entries; this one has fewer — anything to add?" This standard does
-not reopen them. It operates one level up, on *presence-class* — whether a peer
-treats a category of source material at all — not on entry counts. The correct
-response to a surfaced asymmetry is to re-check the lagging node's sources for
-the same class of material, and to add an entry only if a source attests it.
-"Peer X has this section; add entries until this node matches" is exactly the
-pressure the density rule prohibits, and it stays prohibited.
-
-#### Document-corpus extraction — the passage rubric
-
-The same principle governs *within* a document corpus, where the unit of
-divergence is not a section but a category of passage. Commissioned-program
-documents built one per session drift to wide ranges in extraction density
-when each worker judges "load-bearing" afresh with no shared selection rule.
-The rubric below replaces that judgment with a category checklist, so density
-falls out of consistent selection rather than becoming a target in its own
-right.
-
-**Slug convention for a serially-released corpus.** A node in a numbered set of
-released documents (e.g. a FOIA-released set) is slugged
-`{corpus}-{release#}-{short-title}` with NO date: siblings then sort and
-cross-reference by release number, and inbound stub references reconcile to
-that one form. The date lives in `internal_date` / the manifest, not the slug.
-
-Every node in such a corpus captures, where the source contains it:
-
-- **Provenance / front matter** — title, author(s), preparing organization,
-  date, contract/administrative markings.
-- **Thesis and scope** — the document's stated purpose and the boundary of what
-  it surveys.
-- **Each major section's finding** — the load-bearing claim or result of every
-  numbered section, not only the summary. This is the category most often
-  dropped; capturing it is what levels an under-extracted node up.
-- **Methods / approach** — how the work the document characterizes was or would
-  be done, where the source describes it.
-- **Conclusions / recommendations** — the document's closing assessment and any
-  recommended next steps.
-- **Acknowledgements** — named contributors and collaborating institutions (an
-  authorship-network signal).
-- **References** — the formal citation list, captured as `cited_works[]` (see
-  the document-artifact schema), not as `quotes[]`.
-
-`scripts/tools/coverage-suggest.py` is the forward-coverage aid: it surfaces
-substantive source paragraphs that no quote references, which the contributor
-reads against this rubric to find a section finding that was skipped. The rubric
-names what must be *considered*; the source still decides what is *present*. It
-is not a quote-count target — a short document with few sections yields few
-quotes, and that is correct.
-
 ### Neutrality
 
 The repository documents observed facts from primary sources and does
@@ -494,10 +396,10 @@ whether a contradiction is attested — those are source-*presence*
 questions, answered by reading the source, not density questions. The
 misread to refuse is "these references aren't load-bearing, so leave
 `cited_works` empty": a source-attested reference list is captured
-*because the source carries it* (the passage rubric below names
-References as a capture category). For `cited_works` specifically, the
-empty-state ambiguity is closed by the three-state affirmation below
-(`cited_works: NONE | IGNORED | non-empty list`) — a bare `[]` is
+*because the source carries it* (the build-protocol document-extraction
+rubric names References as a capture category). For `cited_works`
+specifically, the empty-state ambiguity is closed by the three-state
+`cited_works` affirmation (`NONE | IGNORED | non-empty list`) — a bare `[]` is
 rejected outright, so the contributor cannot quietly drop a captured
 list on "not load-bearing" grounds. Density governs only how many
 entries a captured list then yields. The same holds for every
