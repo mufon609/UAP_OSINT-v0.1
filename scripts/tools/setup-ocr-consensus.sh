@@ -10,7 +10,7 @@
 # is the better OCR engine; Tesseract is an available second opinion. This script
 # installs the missing piece: PaddleOCR, a deep-learning OCR engine with a
 # DIFFERENT architecture from Tesseract, so the two have uncorrelated failure
-# modes (the whole point — see meta/conventions.md "Producing the `.txt` sibling").
+# modes (the whole point — see .claude/skills/prepare-ocr-sibling/SKILL.md).
 #
 # What it puts in place:
 #   1. tesseract-ocr (apt) — second-opinion OCR. Usually present; installed if not.

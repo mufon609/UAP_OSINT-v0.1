@@ -623,8 +623,8 @@ quote_entry:
   #   Ignored on non-transcript artifacts (renderer omits the row).
   #   How to CHOOSE single vs. list, and how to confirm attribution on a
   #   label-less source (confirm-against-source, never text-cue guesswork),
-  #   is the process in meta/conventions.md "Speaker attribution: source
-  #   format selects the method"; tool sequence in scripts/tools/VIDEO-PIPELINE.md.
+  #   is the process in .claude/skills/prepare-transcript-sibling/SKILL.md;
+  #   tool sequence in scripts/tools/VIDEO-PIPELINE.md.
   # claim_group: free-text label (NOT a synthesized claim — a structural
   #   grouping key, like `category`, and prose-drift-exempt for the same
   #   reason). On PERSON artifacts the renderer groups every quote sharing

@@ -23,8 +23,8 @@
 # Provenance contract: this sibling is regeneratable from
 # (source_path, agent producer, agent verifier). It is NOT hand-curated.
 # Contributor edits go through the skill's re-run path, not direct
-# editing — same discipline as the OCR sibling (meta/conventions.md
-# "Producing the `.txt` sibling").
+# editing — same discipline as the OCR sibling
+# (.claude/skills/prepare-ocr-sibling/SKILL.md).
 #
 # Structural twist vs the OCR sibling: the OCR sibling REPLACES a corrupt
 # pdftotext layer for verbatim-quote matching; the attribution sibling
@@ -309,8 +309,8 @@ turn_entry:
 # prose note. The mechanical face-detection machinery
 # (scripts/tools/detect-faces.py, sources/photo-identity-log/baselines/)
 # is preserved as the higher-confidence backstop — see
-# meta/conventions.md "Speaker attribution: source format selects the
-# method" for the image-path discipline.
+# .claude/skills/prepare-transcript-sibling/SKILL.md for the image-path
+# discipline.
 
 image_verification_entry:
   required: [turn_line_range, resolution, resolved_speaker_id, resolved_by]
