@@ -12,7 +12,57 @@ fields, valid vocabularies, required sections per node type — lives in
 
 ---
 
-## Core principle
+## Contents
+
+- **Part I — Core epistemic principles**
+  - [Core principle](#core-principle)
+  - [Relevance can be relational](#relevance-can-be-relational)
+  - [Structure reflects evidence type](#structure-reflects-evidence-type)
+  - [Confirmed vs Flagged](#confirmed-vs-flagged)
+  - [Sworn testimony vs claim verification](#sworn-testimony-vs-claim-verification)
+  - [Source priority — anchoring when multiple sources attest](#source-priority--anchoring-when-multiple-sources-attest)
+  - [Contradictions](#contradictions)
+  - [Comparability standard — same source-anchored treatment across a family](#comparability-standard--same-source-anchored-treatment-across-a-family)
+  - [Neutrality](#neutrality)
+- **Part II — The evidentiary primitive: quotes**
+  - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
+  - [Type-specialized views of `quotes[]`](#type-specialized-views-of-quotes)
+  - [Statements speaker-attribution — quotes BY the person, not ABOUT](#statements-speaker-attribution--quotes-by-the-person-not-about)
+  - [Key Passages ordering](#key-passages-ordering)
+  - [Hearing events as venues](#hearing-events-as-venues)
+  - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
+  - [News articles and books](#news-articles-and-books)
+  - [Prose-drift discipline on synthesis surfaces](#prose-drift-discipline-on-synthesis-surfaces)
+  - [Density is source-driven](#density-is-source-driven)
+  - [`cited_works` affirmation — three-state discipline](#cited_works-affirmation--three-state-discipline)
+  - [Date precision: orientation-grade in prose, field-precise in tables](#date-precision-orientation-grade-in-prose-field-precise-in-tables)
+  - [Quote location refs: source-anchored, not extraction-anchored](#quote-location-refs-source-anchored-not-extraction-anchored)
+- **Part III — Source extraction & provenance**
+  - [Producing the `.txt` sibling, then confirming it](#producing-the-txt-sibling-then-confirming-it)
+  - [A source naming an entity under a non-canonical form — flag it, stub it](#a-source-naming-an-entity-under-a-non-canonical-form--flag-it-stub-it)
+  - [Off-node variants — catalogued, not on the node](#off-node-variants--catalogued-not-on-the-node)
+  - [Transcript provenance and audit discipline](#transcript-provenance-and-audit-discipline)
+  - [Transcript quotes carry structural speaker attribution](#transcript-quotes-carry-structural-speaker-attribution)
+- **Part IV — The synthesis layer**
+  - [Three-layer evidentiary architecture](#three-layer-evidentiary-architecture)
+- **Part V — Cross-references & archival**
+  - [Cross-references](#cross-references)
+  - [Primary sources and archival](#primary-sources-and-archival)
+- **Part VI — Validators & checks**
+  - [Check naming](#check-naming)
+  - [Validator design — impartial reporting](#validator-design--impartial-reporting)
+- **Part VII — Repository conventions & hygiene**
+  - [Versioning](#versioning)
+  - [Scope](#scope)
+  - [Repository layout — content flat, tooling organized](#repository-layout--content-flat-tooling-organized)
+  - [Working notes are a report, not a residue](#working-notes-are-a-report-not-a-residue)
+  - [Comments describe code, not refactor history](#comments-describe-code-not-refactor-history)
+
+---
+
+## Part I — Core epistemic principles
+
+### Core principle
 
 Every claim is anchored to a primary source or explicitly flagged as
 unverified. Contradictions are preserved, not reconciled. Testimony under
@@ -31,9 +81,7 @@ preserved as-is and flagged (`naming_quirks` / sic), never silently
 fixed. Recovering the human-visible text of a garbled scan is
 preservation; deleting or altering it is not.
 
----
-
-## Relevance can be relational
+### Relevance can be relational
 
 An entity earns a node when it has a primary-source-documented connection
 to the investigation's subject — and that connection may live in the
@@ -57,9 +105,7 @@ build topology applies this at investigation time (see
 `prompts/topology.md` "Source-read-first" — load-bearing-ness judged in
 context).
 
----
-
-## Structure reflects evidence type
+### Structure reflects evidence type
 
 Evidentiary categories are separated structurally, not hidden in cells.
 
@@ -86,9 +132,257 @@ The same principle applies to organizations (government vs.
 government-contractor vs. private), events (proceeding vs. observed
 incident), and documents (government vs. non-government).
 
+### Confirmed vs Flagged
+
+Any structured section that mixes primary-source-supported entries with
+secondary-source-only or unverified entries splits into `### Confirmed`
+and `### Flagged` subsections.
+
+- **Confirmed** — established from a primary source linked in the row
+- **Flagged** — cited in secondary sources only; requires primary-source
+  confirmation before treating as established
+
+Empty Flagged subsections are omitted, not filled with placeholder text.
+Presence of `### Flagged` with no rows is a schema violation; absence
+indicates no flagged items.
+
+The distinction records source quality, not truth. A Flagged item may
+well be true; it hasn't been verified against a primary source yet.
+
+### Sworn testimony vs claim verification
+
+Testimony given under oath is a confirmed fact regardless of whether
+the underlying claim is independently verified. These are two distinct
+facts and must not be merged into a single statement.
+
+**Correct**: "✅ Confirmed as sworn testimony — claim not independently verified"
+**Incorrect**: "Claimed that..." (implies testimony is unconfirmed)
+**Incorrect**: "Testified that X is true" (conflates testimony with verification)
+
+When an authoritative body later denies a sworn claim, the denial is
+logged as a separate dated entry. The sworn testimony row stays confirmed.
+Both facts coexist because both are true.
+
+Q&A testimony under oath carries the same evidentiary weight as prepared
+written testimony. Oral and written versions of a witness's testimony are
+preserved as independent primary records — the hearing transcript node
+holds the oral record; the written testimony document node holds the
+written record. Cross-entity comparison between the two (where a claim
+appears and how the placements differ) is a synthesis finding and
+belongs on a finding node, not on either primary record.
+
+### Source priority — anchoring when multiple sources attest
+
+When multiple primary sources attest a fact about a subject (rank,
+role, capacity, sequence of events, framing of significance), the
+contributor anchors on the source closest to the subject's own
+first-person attestation:
+
+1. **Subject's own verbatim words** — highest authority for facts
+   about themselves. First-person statements, self-published bios,
+   filings the subject signed.
+2. **Other primary witnesses' attestations** — first-hand observers
+   describing the subject. Direct testimony from someone who was
+   present.
+3. **Media narrator / outlet framing** — lowest priority. The
+   outlet's editorial summary or characterization is one step
+   removed from the witness's own words.
+
+This applies whether or not sources strictly disagree — the hierarchy
+governs which source to cite as the anchor for any fact, not only
+which to "believe" in a contradiction.
+
+How to apply per case:
+
+- **Facts about the subject** (rank, role, identity, motivation,
+  internal state during an event): prefer the subject's verbatim
+  quotes. Fall back to primary witnesses, then outlet framing.
+- **Facts about external events the subject observed** (radar
+  acquisitions, what other personnel did, command structure):
+  prefer whichever primary source has direct attestation —
+  typically the institutional source (military document,
+  after-action report) over witness recall.
+- **When outlet narrator says X but the subject's own quote says
+  Y:** anchor on Y. Record the narrator divergence in
+  `naming_quirks` if recurring or material; otherwise in the
+  relevant entry's `note` field.
+- **When a primary witness attests something about the subject
+  that the subject hasn't themselves attested:** cite the witness's
+  attestation as the source, marking observation_type appropriately.
+- **Don't synthesize across sources to produce a "best of both"
+  composite fact.** Pick one source as the anchor; if the alternate
+  carries material content, capture it as a separate entry with its
+  own source attribution and let the divergence stand.
+
+This rule complements [Contradictions](#contradictions) below — the
+hierarchy decides which source the contributor anchors on; the
+Contradictions framing decides how the divergence itself is documented
+when sources directly conflict.
+
+### Contradictions
+
+Two markers distinguish evidentiary disagreement by the quality of
+evidence on each side:
+
+- **`⚠ Disputed — unknown`** — both parties assert opposing claims;
+  neither has primary-source evidence beyond their own authority to
+  speak. Document what each side says; link to both sources. The
+  repository does not adjudicate.
+- **`❌ Contradiction`** — positions directly contradict **and at
+  least one side is backed by primary-source evidence**. Two shapes:
+  (a) both sides have primary-source evidence that conflicts (e.g.,
+  an agency report's finding vs. a FOIA-released document);
+  (b) one side has primary-source evidence, the other rests on
+  self-attestation or on-record claim alone (e.g., DoD PA official
+  denial vs. individual's self-reported role). In either shape, each
+  source remains confirmed from its own origin; the primary-source
+  asymmetry (if any) is noted in the row; the disagreement itself is
+  the analytical finding.
+
+When an authoritative source formally contradicts a confirmed claim, the
+contradiction is documented on the **synthesis node where the
+disagreement gains analytical meaning** — not on the source document
+nodes themselves. Document nodes record each source's statement
+verbatim in Key Passages; cross-document contradictions are a synthesis
+finding, not a property of either document.
+
+| Situation | Where |
+|---|---|
+| Post-event denial | `Node Versioning` on the relevant person / event / organization node |
+| Institutional self-contradiction | `Credibility Notes` on the person / organization node |
+| One document's statement contradicts another's | `Institutional Assessment` on the relevant organization node (when an agency finding contradicts a cited claim), or a finding node spanning the conflicting sources |
+| Written vs. oral testimony divergence | Finding node spanning the two primary records (transcript + companion written testimony document) |
+| Contested affiliation | `Flagged` subsection of `Affiliations` |
+| Source-form disagreement (two sources attest opposing forms of the same fact, contributor does not adjudicate) | `naming_quirks` entry with `resolution: disputed`; auto-rendered as `## Preserved Disagreements` near the foot of the node body |
+
+A person stating opposing things across their own statements ("I did" /
+"I didn't") is NOT a cross-source contradiction and stays on the person
+node: under the `claim_group` grouping of `## Statements` (see
+`quote_entry.claim_group`), the two statements sit adjacently in the same
+claim group as separate verbatim quotes — both shown, no marker, no
+finding. The grouping is pure organization of a single entity's own
+statements; it carries no `❌`/`⚠` and no `/findings/` link. Cross-entity
+contradictions (one source vs. a *different* entity's source) remain a
+finding per the table above — that boundary is unchanged.
+
+The Confirmed/Flagged binary is unchanged by contradictions —
+"contradicted" is not a third status. Both sources remain confirmed
+from their respective origins; the evidentiary disagreement is
+documented separately.
+
+### Comparability standard — same source-anchored treatment across a family
+
+Two nodes of the same kind get built in different sessions by different
+workers, and a source-anchored section one of them carries can quietly go
+missing on the other — not because the second node's sources lack the material,
+but because no one checked. One member of a family may carry a `## Source-Form
+Notes` section its sources support while a peer that should be checked for the
+same class of material never was — and nothing in the build or audit flow asked
+whether it should. That gap is the failure this standard closes.
+
+**The principle.** Members of a comparable node family receive the same
+*source-anchored treatment*. When one member carries a source-anchored optional
+section or dimension, every peer is obliged to be checked — at build time and at
+audit time — for the same class of material against its own archived sources.
+The standard governs the *checking*, never the *output*: presence stays
+content-driven. A peer emits the section if and only if its sources support it.
+A node whose sources attest no non-canonical name form correctly carries no
+`## Source-Form Notes` section, and that is not a defect.
+
+**Family axes.** "Comparable" means same `type`, and within type the same
+`archetype` (people) or `kind` (organizations, documents, events) — the grouping
+the schema already uses to decide conditional sections. No separate "family"
+field exists or is needed. The `gov` organizations are one family; the
+`eyewitness` people another.
+
+**In scope — source-anchored surfaces only.** The treatment that must converge
+is the evidentiary handling of source material, which surfaces as the optional
+sections rendered by `scripts/build/renderers/_universal.py` plus the document
+`cited_works` dimension:
+
+- `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
+- `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
+- `## References` (document `cited_works` — UNIVERSAL on documents via the
+  three-state affirmation NONE / IGNORED / list, see "cited_works
+  affirmation" above; the comparability question shifts from "does the peer
+  carry the section?" to "is the affirmation correct against the peer's
+  source?")
+
+**Out of scope — synthesis prose, and the lighter-surface node types.** The
+synthesis fields (`description`, `background`, `top_relevance`,
+`credibility_notes`, free-prose timeline) are never convergence candidates;
+their shape is the contributor's judgment of one node's evidence, not a
+cross-node obligation. Likewise the deliberate decision that document /
+transcript / event / media / location nodes omit synthesis-heavy sections to
+minimize prose-drift surface is correct and is not a divergence to "fix."
+
+**This is not a count target.** Read this standard alongside `### Density is
+source-driven` above. That section forbids comparison framings like "comparable
+nodes have N entries; this one has fewer — anything to add?" This standard does
+not reopen them. It operates one level up, on *presence-class* — whether a peer
+treats a category of source material at all — not on entry counts. The correct
+response to a surfaced asymmetry is to re-check the lagging node's sources for
+the same class of material, and to add an entry only if a source attests it.
+"Peer X has this section; add entries until this node matches" is exactly the
+pressure the density rule prohibits, and it stays prohibited.
+
+#### Document-corpus extraction — the passage rubric
+
+The same principle governs *within* a document corpus, where the unit of
+divergence is not a section but a category of passage. Commissioned-program
+documents built one per session drift to wide ranges in extraction density
+when each worker judges "load-bearing" afresh with no shared selection rule.
+The rubric below replaces that judgment with a category checklist, so density
+falls out of consistent selection rather than becoming a target in its own
+right.
+
+**Slug convention for a serially-released corpus.** A node in a numbered set of
+released documents (e.g. a FOIA-released set) is slugged
+`{corpus}-{release#}-{short-title}` with NO date: siblings then sort and
+cross-reference by release number, and inbound stub references reconcile to
+that one form. The date lives in `internal_date` / the manifest, not the slug.
+
+Every node in such a corpus captures, where the source contains it:
+
+- **Provenance / front matter** — title, author(s), preparing organization,
+  date, contract/administrative markings.
+- **Thesis and scope** — the document's stated purpose and the boundary of what
+  it surveys.
+- **Each major section's finding** — the load-bearing claim or result of every
+  numbered section, not only the summary. This is the category most often
+  dropped; capturing it is what levels an under-extracted node up.
+- **Methods / approach** — how the work the document characterizes was or would
+  be done, where the source describes it.
+- **Conclusions / recommendations** — the document's closing assessment and any
+  recommended next steps.
+- **Acknowledgements** — named contributors and collaborating institutions (an
+  authorship-network signal).
+- **References** — the formal citation list, captured as `cited_works[]` (see
+  the document-artifact schema), not as `quotes[]`.
+
+`scripts/tools/coverage-suggest.py` is the forward-coverage aid: it surfaces
+substantive source paragraphs that no quote references, which the contributor
+reads against this rubric to find a section finding that was skipped. The rubric
+names what must be *considered*; the source still decides what is *present*. It
+is not a quote-count target — a short document with few sections yields few
+quotes, and that is correct.
+
+### Neutrality
+
+The repository documents observed facts from primary sources and does
+not adjudicate intent, motivation, or compliance with norms external to
+the documentary record. Analytical sections (Institutional Assessment,
+Credibility Notes, findings) frame observations in neutral terms.
+
+This principle is repository-wide. Individual nodes and sections do not
+need to recite neutrality language per cell — the principle stated here
+governs the entire repository.
+
 ---
 
-## Statements as the universal evidentiary primitive
+## Part II — The evidentiary primitive: quotes
+
+### Statements as the universal evidentiary primitive
 
 The evidentiary content of every node rests on `quotes[]` in the
 research artifact — verbatim passages from primary sources. No
@@ -103,7 +397,7 @@ nodes that cite facts from a source link to the source-bearing node
 (document / transcript / media) and reference the specific passage —
 no intermediate paraphrase exists to drift.
 
-### Confirmation is a precondition for inclusion
+#### Confirmation is a precondition for inclusion
 
 Quotes appear in node bodies only after confirmation against the
 underlying primary source. Confirmation is a precondition for
@@ -227,555 +521,6 @@ a contributor-verified `.txt` sibling. The two-step contributor
 discipline below ("Per-quote contributor discipline …") handles the
 per-quote case during the window before the sibling exists.
 
-#### Producing the `.txt` sibling, then confirming it
-
-The sibling is built and
-checked in four steps, two of them independent reads by *different tools*:
-
-1. **Transcribe** the page images to the `.txt` sibling — a **VLM page-image
-   read** (per-page chunked, so a content-filter block costs one page, not the
-   run). It is the readable base: best paragraph structure, source spellings and
-   redaction markers preserved verbatim, figures/equations bracketed.
-2. **Confirm the sibling with a different tool.** PaddleOCR (a different modality
-   — deep-learning OCR, *not* content-blocked, and the better OCR engine)
-   re-reads the pages and is diffed against the sibling. A single read can't be
-   trusted on itself: the retired "one producer → one independent verifier" model
-   failed silently because both read the same image with the same kind of vision
-   model and made the *same* misread — DIRD-16's sibling was certified "PASS" yet
-   carried `III→ITT`, `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.
-   A different *modality* catches those instead of sharing them.
-3. **Build the node**, drawing quotes from the confirmed sibling.
-4. **Audit** the built node's quotes against the **source PDF page images** — not
-   the sibling (see "the final check" below).
-
-The confirmation in step 2 compares only **load-bearing characters — letters,
-digits, and the numeric symbols `. - % $ °`**. Document *structure* (punctuation,
-bullets, brackets, markup `*`, banners, figure labels, dot-leaders) is **never
-compared**: it is not source-literal prose, and comparing it is what drowned the
-retired whole-document consensus in ~99% furniture noise (the DIRD-16 pilot: 1067
-contested spans, **0** of them inside any of the 21 node quotes). So the
-confirmation report is the short list of *words and numbers* where the sibling
-and the OCR engines disagree — each one read against the page image. The
-guarantee is *the words and numbers rest on two reads by different tools*, **not**
-a character-perfect transcription of the page.
-
-Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm-pages DIR` (the
-per-page scratch directory) concatenates the pages into the sibling and prints the
-load-bearing divergence report, **partitioned** into a small HIGH-SIGNAL set (both
-OCR engines agree against the sibling — each tagged with its `p.N` page) and a
-skim-only weak set (banners, bracketed figure/equation placeholders, per-engine
-glyph noise). The agent settles **every** high-signal divergence **against the
-page image** — not by surrounding-text plausibility, which re-trusts the VLM
-against itself — and **corrects the sibling** where the VLM misread (the sibling
-is canonical — fix it before any quote derives from it), leaving the divergences
-that are just OCR errors on a correct sibling. (Passing a pre-concatenated `--vlm
-FILE` still works but yields no page numbers.) `ocr-consensus.py verify`
-re-confirms the on-disk sibling without regenerating it.
-The OCR engines are glyph-recognition models that share failure modes (accent-drop
-`Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
-dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree
-against the VLM is often the *OCR* being wrong — the agent decides by reading the
-image, not by vote. On a **content-blocked page** the VLM **cannot produce** the
-text (the filter blocks reproduction) so the sibling is a **PaddleOCR-fill**
-(PaddleOCR, not Tesseract, is the better fallback) — but the VLM **can still
-verify** it: judging the fill against the page image is a tiny output, not
-reproduction. Because the sibling there *is* PaddleOCR, the normal diff is silent,
-so `ocr-consensus.py run --blocked-pages N,M` instead surfaces the
-PaddleOCR-vs-Tesseract disagreements on those pages, which the agent VLM-verifies
-against the image. The blocked-page outcome is recorded in the source's
-`content_block` (renders as a `Content Block` row in the node's Document Summary
-table — `None`, or which pages were filled — so it is greppable repo-wide). No receipt file is written —
-the corrected sibling *is* the artifact.
-
-**The final check (at node audit).** Quote-vs-source verification is not done at
-sibling-prep time and is not a persisted gate; it happens when the node is
-audited. `/audit` verifies the built node's quotes against the **source PDF page
-images**, not the sibling — so a sibling error that reached a quote is caught
-against the original. After that passes, the node and sibling are good to go.
-cited_works are in scope of that check too: they are load-bearing verbatim
-citations and inherit the same OCR garble (DIRD-16 cw2/cw5/…/cw24).
-
-The four methods below are alternative ways to produce a *read* (a
-token-recognition pass) — the VLM grab, or an OCR cross-check, or a recovered
-text layer. A single pass, however careful, is exactly what failed; pick
-production methods that fit the document's shape, and confirm the sibling with a
-read by a *different tool* (step 2 above) before it becomes canonical.
-
-1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
-   despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
-   the output against the rendered page, and copy to the sibling
-   path if clean. Lowest effort; only viable when the layer happens
-   to be reliable. The validator's `extract_source_text` already
-   prefers the sibling when present, so the workflow is strictly
-   one-shot.
-
-2. **Modern OCR.** Tesseract / Google Cloud Vision / Azure Read API
-   on rasterized pages. Output requires page-by-page contributor
-   review against the source PDF — OCR introduces character-level
-   corruption (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, `ll`↔`11`) that the
-   contributor must correct before the sibling becomes canonical.
-   The contributor IS the independent verifier here; reading both
-   the OCR output and the source page closes the trust gap. Best for
-   batch-processing long documents where per-character review at
-   scale is more practical than full retyping.
-
-3. **VLM page-image read.** A multimodal LLM reads the source's
-   page images directly and produces transcribed text in one pass
-   (e.g., Claude's Read tool with `pages: N-M`, max 20 pages per
-   request). Per-character OCR corruptions don't appear because the
-   model isn't reading character-glyph features — it's reading the
-   image at a higher level of abstraction. Failure mode is different:
-   the model may *hallucinate* over ambiguous content (faded ink,
-   redactions, marginal handwriting, signature glyphs) where OCR
-   would simply garble.
-
-   *Independent verification by a different agent — a human
-   contributor or a different model session — is required before the
-   sibling becomes canonical.* The producing session cannot self-
-   verify hallucinations; the failure mode is invisible to the agent
-   that produced it. Practical for short documents (single-digit
-   page counts) where chunking overhead is low and human spot-check
-   is fast. For documents > 20 pages, track the chunk boundaries
-   explicitly (e.g., `pages: 1-20`, `pages: 21-40`) so re-runs land
-   on the same page sets.
-
-4. **Manual transcription.** The contributor reads the source page
-   directly and types the transcription. Highest fidelity for very
-   short documents (1-3 pages, e.g., the SD004 page-1 Q&A). The
-   contributor is both producer and verifier; the visual reading
-   that produces the text IS the verification. No second-agent step
-   needed.
-
-For all four paths, the canonical sibling lands at `<same-stem>.txt`
-adjacent to the source. The validator's `extraction_type: ocr-scan`
-or `extraction-lossy` flag tells `extract_source_text` to prefer the
-sibling over the underlying PDF text layer. The sibling itself is a
-manifest entry (matching the parent PDF entry); it is **NOT** listed
-in any artifact's `primary_sources[]` — the parent PDF is the
-primary source, the sibling is only the extraction surface. Quotes
-derive their verbatim text from the sibling but cite the PDF path in
-`source.path`.
-
-**The parent-in-`primary_sources[]` rule generalizes to every paired
-sibling — OCR clean-text and speaker-attribution alike.** Both flavors
-register as a manifest entry whose URL carries a fragment marker
-distinguishing it from its parent — `#clean-text-transcription` for an
-OCR sibling, `#speaker-attribution` for the speaker-attribution sibling
-produced by `/prepare-transcript-sibling` (agent-based attribution
-pipeline; the photo-identity-log machinery at
-`scripts/tools/VIDEO-PIPELINE.md` is the conditional image-verification
-backstop, not the spine). In both cases `primary_sources[]` lists the
-**parent** (the PDF for an OCR-scan source, the auto-caption /
-human-corrected-caption file for a label-less transcript), never the
-sibling. The structural twist between the two flavors is what the
-sibling does to its parent: the OCR sibling **replaces** the parent's
-corrupt text layer (quotes derive verbatim text from the sibling); the
-attribution sibling **coexists with** the parent, adding the speaker-
-attribution layer (a YAML indexed by line range into the source file —
-see `meta/schema-speaker-attribution.yaml`) that
-`validate-research.py` matches `speaker_id` against (the
-`speaker_attribution_consistency` check, which resolves each quote's
-`[MM:SS]` anchor to the covering turn) while the auto-caption file
-remains the verbatim source `validate.py` matches `quote.text` against. The fragment-marker pattern is the manifest's
-signal that an entry is a sibling, not a parent.
-
-**Sibling-production method standard.** The four paths above are
-interchangeable on fidelity, but they are NOT interchangeable on
-*uniformity*: the VLM (vision-language model) path runs through the
-model provider's *generative* content-safety filter — a platform-level
-guardrail on the model's output, entirely separate from this
-repository's topic scope and editorial rules. It can fire unpredictably
-mid-transcription, and its trigger is opaque: in practice it has blocked
-one source while transcribing another of comparable subject matter
-cleanly, so it does NOT track this repository's topic scope and is never
-a signal about a source's relevance. The one predictable case is content
-the model's policy treats as sensitive to *reproduce* — plainly CBRN /
-weapons-design-sensitive material reliably trips the generative filter,
-which is why such a source skips the VLM step (pre-screen below). A
-dedicated OCR engine
-does text *recognition*, not generation, so it is filter-immune and
-uniformly applicable. The standard method
-ladder for every OCR-scan / extraction-lossy sibling:
-
-0. **Pre-screen — plainly CBRN / weapons-design-sensitive?** Judge from the
-   title / table of contents. If so, **skip the VLM step and start at the OCR
-   engine** (step 2): a model reproducing such a passage as its own tokens
-   hard-terminates on the content filter, wasting the attempt. The
-   `/prepare-ocr-sibling` skill applies this route check first.
-1. **Default — VLM page-image read** (path 3): highest fidelity on
-   degraded scans (contextual glyph restoration, equation/table
-   handling). Use whenever it completes.
-2. **Filter fallback — a dedicated OCR engine** (path 2), filter-immune:
-   **Tesseract 5** (`sudo apt install tesseract-ocr`; rasterize with the
-   already-present `pdftoppm`) as the free/local default, or a **cloud
-   Document-OCR API** (Google Document AI / Azure Document Intelligence)
-   for higher fidelity on math / Greek / layout. The chosen engine is a
-   project dependency for completing the OCR-scan corpus.
-3. **Manual transcription** (path 4): last resort for short documents an
-   engine mangles.
-
-**Fidelity discipline for OCR-engine output — preserve, don't strip or
-fix.** An OCR engine renders body prose reliably but mangles regions
-that are hard to recognize mechanically yet legible to a human
-(struck-through classification banners, equations, Greek / subscripts,
-degraded figure labels, third-party distribution inserts). Do NOT delete
-or mechanically "correct" these — deleting loses information a human can
-read off the source image, and altering the document's own words erases
-the source-form record. The sibling stays faithful and complete: the
-engine's clean prose stands; regions it garbles are left in place; the
-document's own typos are preserved sic. **When a quote is drawn from a
-region carrying a special or garbled glyph — a superscript / subscript,
-Greek, math symbol, or isotope (He³, 10¹³), which an OCR engine drops to
-a baseline digit or to `?` — that passage MUST be checked against the
-source page image before the quote is finalized.** The verbatim-quote
-gate compares quote↔sibling, never sibling↔document, so it cannot catch a
-glyph mangled identically in both. Distinguish the two cases that check
-resolves: the **document's own** non-canonical form — a real printed typo
-(`lithographycal`, `Tokomak`) — is carried verbatim into `quote.text` and
-logged as a `naming_quirks` entry (`preserve-as-sic-in-quotes`); an **OCR
-mangle** of a glyph the document rendered correctly (He³ → `He?`) is
-**corrected** to the document's reading in both the sibling and the quote,
-never logged as sic, because it is not the source's form. Draw verbatim
-quotes from the clean prose.
-
-**Provenance + verification are mandatory regardless of method.** Record
-the production method (VLM / Tesseract / cloud-OCR / manual) in the
-sibling's manifest note. Verify before canonical: an independent agent
-session for VLM / clean output; **contributor (human) page-by-page
-review for OCR-engine output** (the path-2 reviewer — also the robust
-choice when an independent-agent verifier would itself hit the content
-filter on the source's images). The recorded method keeps per-sibling
-fidelity transparent and lets the method improve over time without
-re-litigation.
-
-**Silent-sibling lookup.** `extract_source_text` finds a `.txt`
-sibling by *path stem*, not by manifest registration. A
-`<same-stem>.txt` file adjacent to the source PDF gets used by the
-validator's verbatim-quote check whenever the parent PDF's manifest
-entry has `extraction_type: ocr-scan` or `extraction-lossy`,
-regardless of whether the sibling itself has a manifest entry. The
-discipline: file and manifest entry are created together. A
-sibling-on-disk-but-not-in-manifest is a silent dependency —
-quote-verification depends on a file the manifest doesn't record,
-and deleting the file (e.g., as "orphan
-cleanup") silently breaks the build by reverting extract output to
-the PDF's unusable text layer. Register the sibling at the moment of
-creation, and treat the manifest-paths verifier (`scripts/tools/manifest.py
-verify-paths`) plus pre-commit as the only safe orphan-cleanup gate
-for sibling files.
-
-**Per-quote contributor discipline when an OCR-scan source's `.txt`
-sibling hasn't been produced yet.** *(Scope: the `/build` pipeline
-produces the verified sibling **before** the Worker — step 4b, "OCR-scan
-sibling readiness"; build-protocol → source-read-first — so a correctly
-run `/build` does not reach this state. But that is role discipline, not
-a hard gate: the verbatim-quote check is structurally blind to a
-sibling-less OCR quote (it passes — see below), so this discipline is the
-safety net whenever a quote does reach the artifact before its sibling —
-an out-of-pipeline manual edit, an `/augment`, or a `/build` where step 4b
-was skipped.)* A new OCR-scan
-source may enter the corpus before a contributor produces its clean-text
-sibling — the
-validator falls back to `pdftotext` output of the OCR'd PDF in that
-case, and OCR character-corruptions (`telated` for `related`,
-`compatrtmented` for `compartmented`, `appatently` for `apparently`) pass the
-verbatim-quote check because both the quote text and the source extract
-carry the same corruption. The check is mechanically correct but reader-
-misleading — confirmation against the OCR-corrupted extract is not
-confirmation against the original document. Two contributor steps,
-both required, when authoring a quote from such a source:
-
-1. **Log each artifact as a `naming_quirks` entry** with resolution
-   `preserve-as-sic-in-quotes` — observed form, canonical form, source
-   path, and a note explaining the variance (`OCR artifact`, `auto-
-   caption typo`, etc.). Multiple artifacts from one source produce
-   multiple entries (one per observed→canonical mapping).
-2. **Preserve the source form verbatim in `quote.text`.** Silent
-   substitution of the canonical form would make the verbatim-quote
-   check fail AND erase the source-form-as-archived discipline. When
-   the canonical form needs to appear in prose elsewhere, wrap a
-   backtick-bracket path on the canonical target — e.g., `"acme
-   widgits" [`/organizations/acme-widgets`]` — the prose-drift check
-   strips the bracket wrap before tokenizing, so the source-verbatim
-   token matches against source while the canonical wrap provides
-   navigability.
-
-Reader-visibility is automatic from there — the Phase II body
-renderer emits a `## Source-Form Notes` section near
-the foot of every node body (just before `## Associated Nodes`) that
-tables every `naming_quirks` entry whose resolution is
-`preserve-as-sic-in-quotes`. Columns: Source Form, Canonical, Source,
-Note. The section is auto-suppressed when no such entries exist on
-the artifact. A reader encountering a source-form token in quoted
-text has a reference table directly on the node body — no separate
-prose flag required. Adding a one-sentence prose flag in
-`credibility_notes` / `description` remains optional when the
-source-form pattern is particularly load-bearing for a specific
-evidentiary claim, but
-is not the primary reader-visibility mechanism.
-
-After registering the naming_quirks entries, re-grep **the passages
-you are quoting** for additional artifact patterns matching those
-already logged — drafting the registrations often surfaces artifacts
-not caught in the initial scan.
-
-Scope that re-grep to quoted text (and the `significance` / `location`
-that frame a quote). A `preserve-as-sic-in-quotes` entry exists to
-annotate a source form the reader **encounters on the node**, so its
-`observed` form must appear somewhere the reader meets it — inside a
-quote, or in the heading / locator describing one. Do **not** sweep
-the entire source extract and log every OCR typo: an incidental
-misspelling sitting in body text you never quote has no on-node
-referent, and the entry then renders as a correction to nothing — an
-*orphan* source-form note. Scan fidelity as a whole is recorded by the
-manifest entry's `extraction_type` (`ocr-scan` / `extraction-lossy`),
-not by one `naming_quirks` row per source typo. **Source-Form Notes
-stays strictly grounded — it carries no orphans.** Resolve every
-ungrounded `preserve-as-sic-in-quotes` entry one of two ways: an
-incidental source typo in body text you never quote is **dropped**
-(scan fidelity is the `extraction_type`'s job, above); a deliberate
-non-canonical variant kept for navigation / identity resolution — an
-auto-caption name mangling, an idiosyncratic source abbreviation whose
-specific instance you did not quote — is **reclassified
-`off-node-variant`**, which renders in the node's separate
-`## Name Variants` section (see *Off-node variants* below) rather than
-Source-Form Notes. At audit time `scripts/tools/coverage-suggest.py`
-and the `review-coverage.py` grounding gate flag any ungrounded
-`preserve-as-sic-in-quotes` entry — a hard signal, no longer a
-judge-each carve-out.
-
-The discipline is a per-quote workaround, not a substitute for
-producing the `.txt` sibling. Once the sibling exists and the manifest
-entry's `extraction_type` is set to `ocr-scan`, the validator extracts
-from the sibling rather than the corrupted PDF text layer; the
-naming_quirks entries continue to record the original artifacts as
-provenance and continue rendering via the Source-Form Notes section.
-
-### A source naming an entity under a non-canonical form — flag it, stub it
-
-The `preserve-as-sic-in-quotes` mechanism above is not only for OCR
-corruption and caption typos. It applies equally when a source names a
-known entity — a person, organization, program, or place — under a
-**non-canonical form**: an idiosyncratic abbreviation, a former name, or
-a misspelling. Such a reference is handled three ways at once, all
-required:
-
-1. **Preserve the source form verbatim in `quote.text`** — never silently
-   substitute the canonical form. The source form lives **only** inside
-   verbatim quotes (and the `location` / `significance` that describe them).
-   Every *synthesized* surface the repo authors in its own voice —
-   `display_title`, `quote_attribution`, the `description` prose,
-   cross-reference labels, and the canonical node name — uses the **canonical**
-   form (say, "Advanced Materials Research Program (AMRP)"). The repo never
-   adopts a source's idiosyncratic abbreviation as its own label: a
-   `display_title` that reads "AMR Program" instead of "AMRP" is the deeper
-   version of this defect — the variant leaking out of the verbatim layer into
-   the repo's own naming. The quote still carries "AMR Program" verbatim and is
-   still flagged (below); canonicalizing the synthesized surfaces does not
-   remove that need, it just stops the variant from masquerading as the repo's
-   chosen name.
-2. **Register a `naming_quirks` entry** mapping the observed source
-   form → canonical name + source path. Choose the resolution by
-   whether the variant is quoted on this node: when the source form
-   appears in a quote (or its heading / locator), use
-   `preserve-as-sic-in-quotes` and it renders in `## Source-Form
-   Notes`; when the entity is stub-linked but its variant form is not
-   quoted on the node, use `off-node-variant` and it renders in
-   `## Name Variants` (see *Off-node variants* below). Either way the
-   variance is catalogued and the canonical is carried navigationally.
-3. **Carry the canonical entity navigationally** — a stub cross-reference
-   to its canonical `/{type}/{slug}`, **even when that node is not yet
-   built** (per *Cross-references* — the stub-never-null rule). In prose,
-   wrap the source-verbatim form with the
-   canonical bracket path so the prose-drift check still matches the
-   source token — e.g. `Advanced Materials Research (AMR) Program
-   [`/organizations/amrp`]`.
-
-The failure mode this closes: a source's own abbreviation reads as
-legitimate document text, so it slips past the OCR-artifact radar (it is
-not a corruption), and because its canonical node isn't built there is no
-name-match to trigger a cross-reference — so the reference is dropped and
-the variance goes unflagged. **An entity referenced under a variant form
-is not glossed over because its node doesn't exist yet; it is stubbed and
-flagged.**
-
-### Off-node variants — catalogued, not on the node
-
-`off-node-variant` is the `naming_quirks` resolution for a non-canonical
-form the source attests but that **does not appear in any quote on the
-node** — an auto-caption mangling of a name, an OCR variant, or an
-entity abbreviation whose specific instance you catalogued for
-navigation / identity resolution but did not quote. It is the
-deliberate counterpart to an orphan: the same not-on-node shape, but
-declared rather than accidental.
-
-Such entries render in their own `## Name Variants` section (Variant
-Form → Canonical → Source), parallel to how `disputed` renders in
-`## Preserved Disagreements`. This keeps `## Source-Form Notes`
-strictly grounded — every row there is a form the reader meets in
-quoted text — while the off-node catalogue (caption manglings kept for
-speaker-identity resolution; entity variants that are stub-linked but
-not quoted) stays reader-visible and greppable without polluting the
-grounded table. Choose the resolution by one test: **does the
-`observed` form appear in quoted text (or the heading / locator
-framing a quote) on this node?** Yes → `preserve-as-sic-in-quotes`
-(Source-Form Notes). No, but worth keeping for navigation →
-`off-node-variant` (Name Variants). Neither — an incidental typo of no
-navigational value → drop the entry.
-
-### Transcript provenance and audit discipline
-
-Transcripts of speech sources split into two evidentiary classes by
-how the audio-to-text transcription happened:
-
-**Human-produced transcripts** (accredited stenographic court
-reporting; outlet-published transcripts with human editorial review
-against audio — a national news outlet's or wire service's transcript
-service, broadcast transcripts where the outlet's process
-includes audio confirmation). The human has already done the audio-
-to-text confirmation. These are equivalent-footing primary sources —
-the validator's substring match against the transcript file is
-substantively meaningful, no additional audio verification required.
-The `transcript_provenance` values `stenographic` and
-`published-transcript` mark these classes.
-
-**Auto-caption transcripts** (YouTube auto-captions, Otter.ai,
-Whisper output, any other machine-generated caption file with no
-human correction step). The caption file IS the machine extraction
-of an underlying audio/video signal — structurally the same shape as
-the OCR text layer of a scanned PDF. Failure mode: character-level
-mis-transcription (`Halverson` for `Halvorsen`, `acme widgits` for
-`Acme Widgets`, `Petrakis` for `Petrakos`, `Dan ricco` for `Dan
-Rizzo`). When both quote text and caption file carry the same
-machine artifact, the verbatim-quote check passes trivially — the
-textbook auto-caption blind spot. The `transcript_provenance` value
-`auto-caption` marks these sources; the underlying audio/video is
-the canonical original. Audit handling mirrors `ocr-scan`:
-
-- **Known caption artifacts** registered as `naming_quirks` entries
-  (same workflow as OCR-scan source-form preservation).
-  Resolution by the grounding test above: a mangling that appears in a
-  quoted passage on the node is `preserve-as-sic-in-quotes` (renders in
-  Source-Form Notes); a mangling catalogued for speaker-identity
-  resolution but not present in any on-node quote is `off-node-variant`
-  (renders in Name Variants — see *Off-node variants* above).
-
-- **Programmatic suspect-pattern scan** on caption files: same
-  character-cluster heuristics that detect OCR mis-reads
-  (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, etc.) plus caption-specific
-  patterns (single-syllable proper-noun mis-spellings, phoneme-
-  substitution drift on uncommon names).
-
-- **Audio confirmation** for any quote whose programmatic / contextual
-  review surfaces an anomaly. For an auto-caption source with a
-  documented track record of clean output across spot-checked
-  passages, programmatic + naming_quirks discipline is substantively
-  meaningful — the exception case parallels the
-  ocr-scan-with-clean-extract pattern (validator's caption-file
-  substring match suffices; document the verification approach in
-  the manifest note).
-
-- **Contributor-produced clean-text sibling** is the analog of the
-  ocr-scan `.txt` sibling for auto-caption sources where systemic
-  drift is observed. The sibling is a contributor transcription of
-  the audio (or a human-corrected version of the caption file)
-  with its own manifest entry; the `transcript_provenance`
-  value moves from `auto-caption` to `human-corrected-caption` once
-  the correction step is documented.
-
-**Hybrid sources** — auto-caption files contributor-corrected
-against audio playback — flag as `human-corrected-caption`. Once
-corrected, equivalent-footing with stenographic and published-
-transcript classes.
-
-The five-value `transcript_provenance` enum is the schema layer
-(see `manifest_entry.transcript_provenance_values` in
-`schema.yaml`). The audit discipline above is the contributor layer.
-
-**Speaker attribution: source format selects the method.** Provenance
-classifies *text* fidelity; it also determines *how speakers are known*. A
-transcript's speaker labels are either carried by the source or absent — and
-the absent case must be *reconstructed against the recording*, never inferred
-from text alone. Inferring a speaker from textual cues (register, who-
-addresses-whom, question-then-answer shape) is a hypothesis, not a
-conclusion: it is the exact process that produces misattributions — a line
-delivered by one participant assigned to the other, or a two-party exchange
-collapsed onto one speaker. Speaker attribution on a label-less source is
-**confirm-against-source** — the audio/video analog of the verbatim
-source-read-first rule.
-
-- **Labeled sources** (`stenographic`, `published-transcript`, and
-  `human-corrected-caption` where the corrector preserved labels): speakers
-  come from the source's own attribution. Populate `speakers[]` and each
-  quote's `speaker_id` directly from the labels; the substring-verify check
-  already covers the text. No diarization or face work.
-
-- **Label-less sources** (`auto-caption`, Whisper output — words and
-  timestamps but no speaker labels): the speaker of every quote must be
-  reconstructed and confirmed against the recording. Select the method by
-  what the source provides:
-    - *Video with visible faces* → the **image path** (preferred). Extract
-      frames at each quote's timestamp (`extract-frames.py`), match faces
-      against the persistent baseline registry (`detect-faces.py`; register a
-      baseline first when a speaker has none), and **confirm by eye** —
-      seeing the mouth move, or the non-speaker shown listening, against a
-      registered face is a stronger identity check than telling similar
-      voices apart by ear. A human verifies the frames before a `speaker_id`
-      is trusted.
-    - *Audio-only* (no usable faces) → resolve speakers from **content**, via
-      the agent text-pass (`/prepare-transcript-sibling`): anchor each turn to
-      a name using a self-introduction, one participant naming another, or the
-      dominant speaker on a known monologue, and confirm against both sides of
-      every turn boundary. A turn the text genuinely can't settle takes the
-      mixed-exchange form below; never guess from a transition cue alone.
-    - *Genuinely unresolvable boundary* (overlapping turns, or a handoff the
-      recording can't cleanly settle) → the **mixed-exchange** form:
-      `speaker_id` as a list of 2+ ids (`[s1, s2]`), rendering a `Speakers —
-      mixed exchange` row. It marks the boundary honestly without fabricating
-      a split; use it only when the turns are genuinely not separable, not to
-      skip attribution work where they are.
-
-When an attribution issue surfaces, route it to the proper tool, never an
-ad-hoc workaround: a source recording missing from the checkout → re-fetch
-with `download-video.py` (its bytes are gitignored; the manifest is the
-record); a speaker with no baseline → `detect-faces.py register`; a caption
-mis-transcription, or a name the machine spelled inconsistently (e.g.
-`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a frame match that doesn't
-clearly resolve → human frame-verification or the mixed-exchange form.
-
-The per-method tool sequence and its dependency prerequisites — and the rule
-that a *missing but needed* dependency (the `.venv-face` dlib stack, browser
-cookies, a face baseline) must stop the run with a remedy, while a
-satisfied-or-unneeded one proceeds — live in
-`scripts/tools/VIDEO-PIPELINE.md`.
-
-**Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
-files (produced by `scripts/tools/transcribe.py`) carry a `[MM:SS]`
-marker on every caption line — one tick per 2–5 seconds of speech.
-The validator's `normalize_for_compare` (in `lib/_common.py`) strips
-`[MM:SS]` and `[H:MM:SS]` markers from BOTH the quote text and the
-extracted source before substring comparison, so the verification
-check is timestamp-blind. The contributor convention:
-
-- Write each quote as one continuous single-line prose string in
-  YAML (single-quoted scalar style; never `|` literal block which
-  preserves caption-line breaks as rendered newlines).
-- Include AT MOST ONE leading `[MM:SS]` anchor at the start of each
-  quote, matching the source line where the quote's first content
-  word appears. Reader clicking the anchor lands on the start of the
-  quote, not several seconds in.
-- Drop all intermediate timestamps from quote text. They normalize
-  away at comparison time, so preserving them adds visual noise (a
-  15-second quote could carry 9–15 intermediate ticks) without
-  evidentiary value.
-- Auto-caption typos stay verbatim — handle via `naming_quirks` per
-  the per-quote contributor discipline above; don't silently correct.
-
-The source file in `sources/transcripts/` keeps every caption tick
-(that's its primary-source form). Stripping happens at the artifact
-authoring layer for readability, and at the normalization layer for
-verification.
-
 ### Type-specialized views of `quotes[]`
 
 Each node type renders a filtered view of the same universal primitive:
@@ -802,49 +547,6 @@ breaks and list-item structure. So a contributor may author quote text as a
 `|` block (fidelity to the source's layout) without producing a blockquote
 broken mid-sentence; verification is unaffected (the verbatim-quote check
 normalizes whitespace).
-
-### Transcript quotes carry structural speaker attribution
-
-On a transcript artifact, the speaker of each quote is a structural
-reference, not contributor prose. Every entry in `quotes[]` carries
-`speaker_id` (required on transcript artifacts; enforced by
-`scripts/checks/quotes.py`), pointing at one of the artifact's
-`speakers[*].id` values. The renderer's attribution block emits a
-`Speaker` row above `Attributed to`, populated from the matched
-speakers entry — `Name ([`/people/slug`])` when the speaker has a
-`node_link`, or just `Name` when not (anonymized audience members,
-unidentified panelists).
-
-The bright line: `context` carries circumstance prose (venue, format,
-neighboring exchange — "opening statement", "Q&A exchange with a
-committee member", "the witness continuing his prepared statement"); `speaker_id`
-carries who-said-it. Two contributors authoring quotes from the same
-source can disagree on circumstance phrasing without diverging on the
-attribution — the structural reference is what validates and renders.
-
-Three failure modes the structural reference closes:
-
-- **Prose-attribution drift.** Different sessions could disagree on
-  who said line 2:00 of a podcast and both be wrong with no mechanical
-  check. The `quotes` check now fails when `speaker_id` doesn't
-  resolve to a real `speakers[].id`.
-- **Re-author ambiguity.** Six months later a contributor re-reading
-  the artifact had to re-trace the frame + baseline match to recover
-  the speaker assignment. The structural reference makes the
-  assignment self-documenting.
-- **Renderer inconsistency.** Hand-formatted Attributed-to strings
-  varied in how they named speakers ("Halvorsen" vs "Dr. Jane
-  Halvorsen" vs "Dr. Halvorsen"). Mechanical lookup from `speakers[]`
-  produces one consistent rendered form per identity.
-
-The accompanying `speaker_baseline_consistency` check
-(`scripts/checks/speaker_baseline_consistency.py`) catches the next
-link of the chain: every `speakers[].node_link` that points at
-`/people/{slug}` should have a baseline at
-`sources/photo-identity-log/baselines/{slug}/` so the video-pipeline
-tools (`scripts/tools/detect-faces.py`,
-`scripts/tools/spot-check-attribution.py`) can mechanically resolve the
-speaker on future videos.
 
 ### Statements speaker-attribution — quotes BY the person, not ABOUT
 
@@ -975,15 +677,6 @@ Event-level Key Testimony may overlap the witness-specific transcript or
 document Key Passages, and that is expected: an event stands as a
 self-contained highlights reel an investigator can read without clicking
 through, and the renderer does not deduplicate across nodes.
-
-### Contributor prose is labeled and drift-checked
-
-Contributor prose sits on labeled synthesis fields (`description`,
-`background`, `top_relevance`, `credibility_notes`) plus the
-whistleblower `vouching_chain.attestation`. The prose-drift check
-tokenizes each against the primary-source text and errors on every
-unmatched significant token: synthesis prose must use source
-vocabulary.
 
 ### News articles and books
 
@@ -1434,6 +1127,926 @@ record the page-break-split remainder in the entry's `location` anchor (e.g.
 — do not splice across the interposed banner. The gate is behaving correctly;
 the entry's structure, not the check, is what the `location` note documents.
 
+---
+
+## Part III — Source extraction & provenance
+
+### Producing the `.txt` sibling, then confirming it
+
+The sibling is built and
+checked in four steps, two of them independent reads by *different tools*:
+
+1. **Transcribe** the page images to the `.txt` sibling — a **VLM page-image
+   read** (per-page chunked, so a content-filter block costs one page, not the
+   run). It is the readable base: best paragraph structure, source spellings and
+   redaction markers preserved verbatim, figures/equations bracketed.
+2. **Confirm the sibling with a different tool.** PaddleOCR (a different modality
+   — deep-learning OCR, *not* content-blocked, and the better OCR engine)
+   re-reads the pages and is diffed against the sibling. A single read can't be
+   trusted on itself: the retired "one producer → one independent verifier" model
+   failed silently because both read the same image with the same kind of vision
+   model and made the *same* misread — DIRD-16's sibling was certified "PASS" yet
+   carried `III→ITT`, `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.
+   A different *modality* catches those instead of sharing them.
+3. **Build the node**, drawing quotes from the confirmed sibling.
+4. **Audit** the built node's quotes against the **source PDF page images** — not
+   the sibling (see "the final check" below).
+
+The confirmation in step 2 compares only **load-bearing characters — letters,
+digits, and the numeric symbols `. - % $ °`**. Document *structure* (punctuation,
+bullets, brackets, markup `*`, banners, figure labels, dot-leaders) is **never
+compared**: it is not source-literal prose, and comparing it is what drowned the
+retired whole-document consensus in ~99% furniture noise (the DIRD-16 pilot: 1067
+contested spans, **0** of them inside any of the 21 node quotes). So the
+confirmation report is the short list of *words and numbers* where the sibling
+and the OCR engines disagree — each one read against the page image. The
+guarantee is *the words and numbers rest on two reads by different tools*, **not**
+a character-perfect transcription of the page.
+
+Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm-pages DIR` (the
+per-page scratch directory) concatenates the pages into the sibling and prints the
+load-bearing divergence report, **partitioned** into a small HIGH-SIGNAL set (both
+OCR engines agree against the sibling — each tagged with its `p.N` page) and a
+skim-only weak set (banners, bracketed figure/equation placeholders, per-engine
+glyph noise). The agent settles **every** high-signal divergence **against the
+page image** — not by surrounding-text plausibility, which re-trusts the VLM
+against itself — and **corrects the sibling** where the VLM misread (the sibling
+is canonical — fix it before any quote derives from it), leaving the divergences
+that are just OCR errors on a correct sibling. (Passing a pre-concatenated `--vlm
+FILE` still works but yields no page numbers.) `ocr-consensus.py verify`
+re-confirms the on-disk sibling without regenerating it.
+The OCR engines are glyph-recognition models that share failure modes (accent-drop
+`Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
+dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree
+against the VLM is often the *OCR* being wrong — the agent decides by reading the
+image, not by vote. On a **content-blocked page** the VLM **cannot produce** the
+text (the filter blocks reproduction) so the sibling is a **PaddleOCR-fill**
+(PaddleOCR, not Tesseract, is the better fallback) — but the VLM **can still
+verify** it: judging the fill against the page image is a tiny output, not
+reproduction. Because the sibling there *is* PaddleOCR, the normal diff is silent,
+so `ocr-consensus.py run --blocked-pages N,M` instead surfaces the
+PaddleOCR-vs-Tesseract disagreements on those pages, which the agent VLM-verifies
+against the image. The blocked-page outcome is recorded in the source's
+`content_block` (renders as a `Content Block` row in the node's Document Summary
+table — `None`, or which pages were filled — so it is greppable repo-wide). No receipt file is written —
+the corrected sibling *is* the artifact.
+
+**The final check (at node audit).** Quote-vs-source verification is not done at
+sibling-prep time and is not a persisted gate; it happens when the node is
+audited. `/audit` verifies the built node's quotes against the **source PDF page
+images**, not the sibling — so a sibling error that reached a quote is caught
+against the original. After that passes, the node and sibling are good to go.
+cited_works are in scope of that check too: they are load-bearing verbatim
+citations and inherit the same OCR garble (DIRD-16 cw2/cw5/…/cw24).
+
+The four methods below are alternative ways to produce a *read* (a
+token-recognition pass) — the VLM grab, or an OCR cross-check, or a recovered
+text layer. A single pass, however careful, is exactly what failed; pick
+production methods that fit the document's shape, and confirm the sibling with a
+read by a *different tool* (step 2 above) before it becomes canonical.
+
+1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
+   despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
+   the output against the rendered page, and copy to the sibling
+   path if clean. Lowest effort; only viable when the layer happens
+   to be reliable. The validator's `extract_source_text` already
+   prefers the sibling when present, so the workflow is strictly
+   one-shot.
+
+2. **Modern OCR.** Tesseract / Google Cloud Vision / Azure Read API
+   on rasterized pages. Output requires page-by-page contributor
+   review against the source PDF — OCR introduces character-level
+   corruption (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, `ll`↔`11`) that the
+   contributor must correct before the sibling becomes canonical.
+   The contributor IS the independent verifier here; reading both
+   the OCR output and the source page closes the trust gap. Best for
+   batch-processing long documents where per-character review at
+   scale is more practical than full retyping.
+
+3. **VLM page-image read.** A multimodal LLM reads the source's
+   page images directly and produces transcribed text in one pass
+   (e.g., Claude's Read tool with `pages: N-M`, max 20 pages per
+   request). Per-character OCR corruptions don't appear because the
+   model isn't reading character-glyph features — it's reading the
+   image at a higher level of abstraction. Failure mode is different:
+   the model may *hallucinate* over ambiguous content (faded ink,
+   redactions, marginal handwriting, signature glyphs) where OCR
+   would simply garble.
+
+   *Independent verification by a different agent — a human
+   contributor or a different model session — is required before the
+   sibling becomes canonical.* The producing session cannot self-
+   verify hallucinations; the failure mode is invisible to the agent
+   that produced it. Practical for short documents (single-digit
+   page counts) where chunking overhead is low and human spot-check
+   is fast. For documents > 20 pages, track the chunk boundaries
+   explicitly (e.g., `pages: 1-20`, `pages: 21-40`) so re-runs land
+   on the same page sets.
+
+4. **Manual transcription.** The contributor reads the source page
+   directly and types the transcription. Highest fidelity for very
+   short documents (1-3 pages, e.g., the SD004 page-1 Q&A). The
+   contributor is both producer and verifier; the visual reading
+   that produces the text IS the verification. No second-agent step
+   needed.
+
+For all four paths, the canonical sibling lands at `<same-stem>.txt`
+adjacent to the source. The validator's `extraction_type: ocr-scan`
+or `extraction-lossy` flag tells `extract_source_text` to prefer the
+sibling over the underlying PDF text layer. The sibling itself is a
+manifest entry (matching the parent PDF entry); it is **NOT** listed
+in any artifact's `primary_sources[]` — the parent PDF is the
+primary source, the sibling is only the extraction surface. Quotes
+derive their verbatim text from the sibling but cite the PDF path in
+`source.path`.
+
+**The parent-in-`primary_sources[]` rule generalizes to every paired
+sibling — OCR clean-text and speaker-attribution alike.** Both flavors
+register as a manifest entry whose URL carries a fragment marker
+distinguishing it from its parent — `#clean-text-transcription` for an
+OCR sibling, `#speaker-attribution` for the speaker-attribution sibling
+produced by `/prepare-transcript-sibling` (agent-based attribution
+pipeline; the photo-identity-log machinery at
+`scripts/tools/VIDEO-PIPELINE.md` is the conditional image-verification
+backstop, not the spine). In both cases `primary_sources[]` lists the
+**parent** (the PDF for an OCR-scan source, the auto-caption /
+human-corrected-caption file for a label-less transcript), never the
+sibling. The structural twist between the two flavors is what the
+sibling does to its parent: the OCR sibling **replaces** the parent's
+corrupt text layer (quotes derive verbatim text from the sibling); the
+attribution sibling **coexists with** the parent, adding the speaker-
+attribution layer (a YAML indexed by line range into the source file —
+see `meta/schema-speaker-attribution.yaml`) that
+`validate-research.py` matches `speaker_id` against (the
+`speaker_attribution_consistency` check, which resolves each quote's
+`[MM:SS]` anchor to the covering turn) while the auto-caption file
+remains the verbatim source `validate.py` matches `quote.text` against. The fragment-marker pattern is the manifest's
+signal that an entry is a sibling, not a parent.
+
+**Sibling-production method standard.** The four paths above are
+interchangeable on fidelity, but they are NOT interchangeable on
+*uniformity*: the VLM (vision-language model) path runs through the
+model provider's *generative* content-safety filter — a platform-level
+guardrail on the model's output, entirely separate from this
+repository's topic scope and editorial rules. It can fire unpredictably
+mid-transcription, and its trigger is opaque: in practice it has blocked
+one source while transcribing another of comparable subject matter
+cleanly, so it does NOT track this repository's topic scope and is never
+a signal about a source's relevance. The one predictable case is content
+the model's policy treats as sensitive to *reproduce* — plainly CBRN /
+weapons-design-sensitive material reliably trips the generative filter,
+which is why such a source skips the VLM step (pre-screen below). A
+dedicated OCR engine
+does text *recognition*, not generation, so it is filter-immune and
+uniformly applicable. The standard method
+ladder for every OCR-scan / extraction-lossy sibling:
+
+0. **Pre-screen — plainly CBRN / weapons-design-sensitive?** Judge from the
+   title / table of contents. If so, **skip the VLM step and start at the OCR
+   engine** (step 2): a model reproducing such a passage as its own tokens
+   hard-terminates on the content filter, wasting the attempt. The
+   `/prepare-ocr-sibling` skill applies this route check first.
+1. **Default — VLM page-image read** (path 3): highest fidelity on
+   degraded scans (contextual glyph restoration, equation/table
+   handling). Use whenever it completes.
+2. **Filter fallback — a dedicated OCR engine** (path 2), filter-immune:
+   **Tesseract 5** (`sudo apt install tesseract-ocr`; rasterize with the
+   already-present `pdftoppm`) as the free/local default, or a **cloud
+   Document-OCR API** (Google Document AI / Azure Document Intelligence)
+   for higher fidelity on math / Greek / layout. The chosen engine is a
+   project dependency for completing the OCR-scan corpus.
+3. **Manual transcription** (path 4): last resort for short documents an
+   engine mangles.
+
+**Fidelity discipline for OCR-engine output — preserve, don't strip or
+fix.** An OCR engine renders body prose reliably but mangles regions
+that are hard to recognize mechanically yet legible to a human
+(struck-through classification banners, equations, Greek / subscripts,
+degraded figure labels, third-party distribution inserts). Do NOT delete
+or mechanically "correct" these — deleting loses information a human can
+read off the source image, and altering the document's own words erases
+the source-form record. The sibling stays faithful and complete: the
+engine's clean prose stands; regions it garbles are left in place; the
+document's own typos are preserved sic. **When a quote is drawn from a
+region carrying a special or garbled glyph — a superscript / subscript,
+Greek, math symbol, or isotope (He³, 10¹³), which an OCR engine drops to
+a baseline digit or to `?` — that passage MUST be checked against the
+source page image before the quote is finalized.** The verbatim-quote
+gate compares quote↔sibling, never sibling↔document, so it cannot catch a
+glyph mangled identically in both. Distinguish the two cases that check
+resolves: the **document's own** non-canonical form — a real printed typo
+(`lithographycal`, `Tokomak`) — is carried verbatim into `quote.text` and
+logged as a `naming_quirks` entry (`preserve-as-sic-in-quotes`); an **OCR
+mangle** of a glyph the document rendered correctly (He³ → `He?`) is
+**corrected** to the document's reading in both the sibling and the quote,
+never logged as sic, because it is not the source's form. Draw verbatim
+quotes from the clean prose.
+
+**Provenance + verification are mandatory regardless of method.** Record
+the production method (VLM / Tesseract / cloud-OCR / manual) in the
+sibling's manifest note. Verify before canonical: an independent agent
+session for VLM / clean output; **contributor (human) page-by-page
+review for OCR-engine output** (the path-2 reviewer — also the robust
+choice when an independent-agent verifier would itself hit the content
+filter on the source's images). The recorded method keeps per-sibling
+fidelity transparent and lets the method improve over time without
+re-litigation.
+
+**Silent-sibling lookup.** `extract_source_text` finds a `.txt`
+sibling by *path stem*, not by manifest registration. A
+`<same-stem>.txt` file adjacent to the source PDF gets used by the
+validator's verbatim-quote check whenever the parent PDF's manifest
+entry has `extraction_type: ocr-scan` or `extraction-lossy`,
+regardless of whether the sibling itself has a manifest entry. The
+discipline: file and manifest entry are created together. A
+sibling-on-disk-but-not-in-manifest is a silent dependency —
+quote-verification depends on a file the manifest doesn't record,
+and deleting the file (e.g., as "orphan
+cleanup") silently breaks the build by reverting extract output to
+the PDF's unusable text layer. Register the sibling at the moment of
+creation, and treat the manifest-paths verifier (`scripts/tools/manifest.py
+verify-paths`) plus pre-commit as the only safe orphan-cleanup gate
+for sibling files.
+
+**Per-quote contributor discipline when an OCR-scan source's `.txt`
+sibling hasn't been produced yet.** *(Scope: the `/build` pipeline
+produces the verified sibling **before** the Worker — step 4b, "OCR-scan
+sibling readiness"; build-protocol → source-read-first — so a correctly
+run `/build` does not reach this state. But that is role discipline, not
+a hard gate: the verbatim-quote check is structurally blind to a
+sibling-less OCR quote (it passes — see below), so this discipline is the
+safety net whenever a quote does reach the artifact before its sibling —
+an out-of-pipeline manual edit, an `/augment`, or a `/build` where step 4b
+was skipped.)* A new OCR-scan
+source may enter the corpus before a contributor produces its clean-text
+sibling — the
+validator falls back to `pdftotext` output of the OCR'd PDF in that
+case, and OCR character-corruptions (`telated` for `related`,
+`compatrtmented` for `compartmented`, `appatently` for `apparently`) pass the
+verbatim-quote check because both the quote text and the source extract
+carry the same corruption. The check is mechanically correct but reader-
+misleading — confirmation against the OCR-corrupted extract is not
+confirmation against the original document. Two contributor steps,
+both required, when authoring a quote from such a source:
+
+1. **Log each artifact as a `naming_quirks` entry** with resolution
+   `preserve-as-sic-in-quotes` — observed form, canonical form, source
+   path, and a note explaining the variance (`OCR artifact`, `auto-
+   caption typo`, etc.). Multiple artifacts from one source produce
+   multiple entries (one per observed→canonical mapping).
+2. **Preserve the source form verbatim in `quote.text`.** Silent
+   substitution of the canonical form would make the verbatim-quote
+   check fail AND erase the source-form-as-archived discipline. When
+   the canonical form needs to appear in prose elsewhere, wrap a
+   backtick-bracket path on the canonical target — e.g., `"acme
+   widgits" [`/organizations/acme-widgets`]` — the prose-drift check
+   strips the bracket wrap before tokenizing, so the source-verbatim
+   token matches against source while the canonical wrap provides
+   navigability.
+
+Reader-visibility is automatic from there — the Phase II body
+renderer emits a `## Source-Form Notes` section near
+the foot of every node body (just before `## Associated Nodes`) that
+tables every `naming_quirks` entry whose resolution is
+`preserve-as-sic-in-quotes`. Columns: Source Form, Canonical, Source,
+Note. The section is auto-suppressed when no such entries exist on
+the artifact. A reader encountering a source-form token in quoted
+text has a reference table directly on the node body — no separate
+prose flag required. Adding a one-sentence prose flag in
+`credibility_notes` / `description` remains optional when the
+source-form pattern is particularly load-bearing for a specific
+evidentiary claim, but
+is not the primary reader-visibility mechanism.
+
+After registering the naming_quirks entries, re-grep **the passages
+you are quoting** for additional artifact patterns matching those
+already logged — drafting the registrations often surfaces artifacts
+not caught in the initial scan.
+
+Scope that re-grep to quoted text (and the `significance` / `location`
+that frame a quote). A `preserve-as-sic-in-quotes` entry exists to
+annotate a source form the reader **encounters on the node**, so its
+`observed` form must appear somewhere the reader meets it — inside a
+quote, or in the heading / locator describing one. Do **not** sweep
+the entire source extract and log every OCR typo: an incidental
+misspelling sitting in body text you never quote has no on-node
+referent, and the entry then renders as a correction to nothing — an
+*orphan* source-form note. Scan fidelity as a whole is recorded by the
+manifest entry's `extraction_type` (`ocr-scan` / `extraction-lossy`),
+not by one `naming_quirks` row per source typo. **Source-Form Notes
+stays strictly grounded — it carries no orphans.** Resolve every
+ungrounded `preserve-as-sic-in-quotes` entry per the grounding test in
+*Off-node variants* below — drop an incidental typo (scan fidelity is
+the `extraction_type`'s job), reclassify a navigation-worthy variant as
+`off-node-variant`. At audit time `scripts/tools/coverage-suggest.py`
+and the `review-coverage.py` grounding gate flag any ungrounded
+`preserve-as-sic-in-quotes` entry — a hard signal, no longer a
+judge-each carve-out.
+
+The discipline is a per-quote workaround, not a substitute for
+producing the `.txt` sibling. Once the sibling exists and the manifest
+entry's `extraction_type` is set to `ocr-scan`, the validator extracts
+from the sibling rather than the corrupted PDF text layer; the
+naming_quirks entries continue to record the original artifacts as
+provenance and continue rendering via the Source-Form Notes section.
+
+### A source naming an entity under a non-canonical form — flag it, stub it
+
+The `preserve-as-sic-in-quotes` mechanism above is not only for OCR
+corruption and caption typos. It applies equally when a source names a
+known entity — a person, organization, program, or place — under a
+**non-canonical form**: an idiosyncratic abbreviation, a former name, or
+a misspelling. Such a reference is handled three ways at once, all
+required:
+
+1. **Preserve the source form verbatim in `quote.text`** — never silently
+   substitute the canonical form. The source form lives **only** inside
+   verbatim quotes (and the `location` / `significance` that describe them).
+   Every *synthesized* surface the repo authors in its own voice —
+   `display_title`, `quote_attribution`, the `description` prose,
+   cross-reference labels, and the canonical node name — uses the **canonical**
+   form (say, "Advanced Materials Research Program (AMRP)"). The repo never
+   adopts a source's idiosyncratic abbreviation as its own label: a
+   `display_title` that reads "AMR Program" instead of "AMRP" is the deeper
+   version of this defect — the variant leaking out of the verbatim layer into
+   the repo's own naming. The quote still carries "AMR Program" verbatim and is
+   still flagged (below); canonicalizing the synthesized surfaces does not
+   remove that need, it just stops the variant from masquerading as the repo's
+   chosen name.
+2. **Register a `naming_quirks` entry** mapping the observed source
+   form → canonical name + source path, with the resolution
+   (`preserve-as-sic-in-quotes` vs `off-node-variant`) chosen per the
+   grounding test in *Off-node variants* below. Either way the variance
+   is catalogued and the canonical is carried navigationally.
+3. **Carry the canonical entity navigationally** — a stub cross-reference
+   to its canonical `/{type}/{slug}`, **even when that node is not yet
+   built** (per *Cross-references* — the stub-never-null rule). In prose,
+   wrap the source-verbatim form with the
+   canonical bracket path so the prose-drift check still matches the
+   source token — e.g. `Advanced Materials Research (AMR) Program
+   [`/organizations/amrp`]`.
+
+The failure mode this closes: a source's own abbreviation reads as
+legitimate document text, so it slips past the OCR-artifact radar (it is
+not a corruption), and because its canonical node isn't built there is no
+name-match to trigger a cross-reference — so the reference is dropped and
+the variance goes unflagged. **An entity referenced under a variant form
+is not glossed over because its node doesn't exist yet; it is stubbed and
+flagged.**
+
+### Off-node variants — catalogued, not on the node
+
+`off-node-variant` is the `naming_quirks` resolution for a non-canonical
+form the source attests but that **does not appear in any quote on the
+node** — an auto-caption mangling of a name, an OCR variant, or an
+entity abbreviation whose specific instance you catalogued for
+navigation / identity resolution but did not quote. It is the
+deliberate counterpart to an orphan: the same not-on-node shape, but
+declared rather than accidental.
+
+Such entries render in their own `## Name Variants` section (Variant
+Form → Canonical → Source), parallel to how `disputed` renders in
+`## Preserved Disagreements`. This keeps `## Source-Form Notes`
+strictly grounded — every row there is a form the reader meets in
+quoted text — while the off-node catalogue (caption manglings kept for
+speaker-identity resolution; entity variants that are stub-linked but
+not quoted) stays reader-visible and greppable without polluting the
+grounded table. Choose the resolution by one test: **does the
+`observed` form appear in quoted text (or the heading / locator
+framing a quote) on this node?** Yes → `preserve-as-sic-in-quotes`
+(Source-Form Notes). No, but worth keeping for navigation →
+`off-node-variant` (Name Variants). Neither — an incidental typo of no
+navigational value → drop the entry.
+
+### Transcript provenance and audit discipline
+
+Transcripts of speech sources split into two evidentiary classes by
+how the audio-to-text transcription happened:
+
+**Human-produced transcripts** (accredited stenographic court
+reporting; outlet-published transcripts with human editorial review
+against audio — a national news outlet's or wire service's transcript
+service, broadcast transcripts where the outlet's process
+includes audio confirmation). The human has already done the audio-
+to-text confirmation. These are equivalent-footing primary sources —
+the validator's substring match against the transcript file is
+substantively meaningful, no additional audio verification required.
+The `transcript_provenance` values `stenographic` and
+`published-transcript` mark these classes.
+
+**Auto-caption transcripts** (YouTube auto-captions, Otter.ai,
+Whisper output, any other machine-generated caption file with no
+human correction step). The caption file IS the machine extraction
+of an underlying audio/video signal — structurally the same shape as
+the OCR text layer of a scanned PDF. Failure mode: character-level
+mis-transcription (`Halverson` for `Halvorsen`, `acme widgits` for
+`Acme Widgets`, `Petrakis` for `Petrakos`, `Dan ricco` for `Dan
+Rizzo`). When both quote text and caption file carry the same
+machine artifact, the verbatim-quote check passes trivially — the
+textbook auto-caption blind spot. The `transcript_provenance` value
+`auto-caption` marks these sources; the underlying audio/video is
+the canonical original. Audit handling mirrors `ocr-scan`:
+
+- **Known caption artifacts** registered as `naming_quirks` entries
+  (same workflow as OCR-scan source-form preservation), resolved by the
+  grounding test in *Off-node variants* above.
+
+- **Programmatic suspect-pattern scan** on caption files: same
+  character-cluster heuristics that detect OCR mis-reads
+  (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, etc.) plus caption-specific
+  patterns (single-syllable proper-noun mis-spellings, phoneme-
+  substitution drift on uncommon names).
+
+- **Audio confirmation** for any quote whose programmatic / contextual
+  review surfaces an anomaly. For an auto-caption source with a
+  documented track record of clean output across spot-checked
+  passages, programmatic + naming_quirks discipline is substantively
+  meaningful — the exception case parallels the
+  ocr-scan-with-clean-extract pattern (validator's caption-file
+  substring match suffices; document the verification approach in
+  the manifest note).
+
+- **Contributor-produced clean-text sibling** is the analog of the
+  ocr-scan `.txt` sibling for auto-caption sources where systemic
+  drift is observed. The sibling is a contributor transcription of
+  the audio (or a human-corrected version of the caption file)
+  with its own manifest entry; the `transcript_provenance`
+  value moves from `auto-caption` to `human-corrected-caption` once
+  the correction step is documented.
+
+**Hybrid sources** — auto-caption files contributor-corrected
+against audio playback — flag as `human-corrected-caption`. Once
+corrected, equivalent-footing with stenographic and published-
+transcript classes.
+
+The five-value `transcript_provenance` enum is the schema layer
+(see `manifest_entry.transcript_provenance_values` in
+`schema.yaml`). The audit discipline above is the contributor layer.
+
+**Speaker attribution: source format selects the method.** Provenance
+classifies *text* fidelity; it also determines *how speakers are known*. A
+transcript's speaker labels are either carried by the source or absent — and
+the absent case must be *reconstructed against the recording*, never inferred
+from text alone. Inferring a speaker from textual cues (register, who-
+addresses-whom, question-then-answer shape) is a hypothesis, not a
+conclusion: it is the exact process that produces misattributions — a line
+delivered by one participant assigned to the other, or a two-party exchange
+collapsed onto one speaker. Speaker attribution on a label-less source is
+**confirm-against-source** — the audio/video analog of the verbatim
+source-read-first rule.
+
+- **Labeled sources** (`stenographic`, `published-transcript`, and
+  `human-corrected-caption` where the corrector preserved labels): speakers
+  come from the source's own attribution. Populate `speakers[]` and each
+  quote's `speaker_id` directly from the labels; the substring-verify check
+  already covers the text. No diarization or face work.
+
+- **Label-less sources** (`auto-caption`, Whisper output — words and
+  timestamps but no speaker labels): the speaker of every quote must be
+  reconstructed and confirmed against the recording. Select the method by
+  what the source provides:
+    - *Video with visible faces* → the **image path** (preferred). Extract
+      frames at each quote's timestamp (`extract-frames.py`), match faces
+      against the persistent baseline registry (`detect-faces.py`; register a
+      baseline first when a speaker has none), and **confirm by eye** —
+      seeing the mouth move, or the non-speaker shown listening, against a
+      registered face is a stronger identity check than telling similar
+      voices apart by ear. A human verifies the frames before a `speaker_id`
+      is trusted.
+    - *Audio-only* (no usable faces) → resolve speakers from **content**, via
+      the agent text-pass (`/prepare-transcript-sibling`): anchor each turn to
+      a name using a self-introduction, one participant naming another, or the
+      dominant speaker on a known monologue, and confirm against both sides of
+      every turn boundary. A turn the text genuinely can't settle takes the
+      mixed-exchange form below; never guess from a transition cue alone.
+    - *Genuinely unresolvable boundary* (overlapping turns, or a handoff the
+      recording can't cleanly settle) → the **mixed-exchange** form:
+      `speaker_id` as a list of 2+ ids (`[s1, s2]`), rendering a `Speakers —
+      mixed exchange` row. It marks the boundary honestly without fabricating
+      a split; use it only when the turns are genuinely not separable, not to
+      skip attribution work where they are.
+
+When an attribution issue surfaces, route it to the proper tool, never an
+ad-hoc workaround: a source recording missing from the checkout → re-fetch
+with `download-video.py` (its bytes are gitignored; the manifest is the
+record); a speaker with no baseline → `detect-faces.py register`; a caption
+mis-transcription, or a name the machine spelled inconsistently (e.g.
+`Lauren`↔`Lawrence`) → a `naming_quirks` entry; a frame match that doesn't
+clearly resolve → human frame-verification or the mixed-exchange form.
+
+The per-method tool sequence and its dependency prerequisites — and the rule
+that a *missing but needed* dependency (the `.venv-face` dlib stack, browser
+cookies, a face baseline) must stop the run with a remedy, while a
+satisfied-or-unneeded one proceeds — live in
+`scripts/tools/VIDEO-PIPELINE.md`.
+
+**Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
+files (produced by `scripts/tools/transcribe.py`) carry a `[MM:SS]`
+marker on every caption line — one tick per 2–5 seconds of speech.
+The validator's `normalize_for_compare` (in `lib/_common.py`) strips
+`[MM:SS]` and `[H:MM:SS]` markers from BOTH the quote text and the
+extracted source before substring comparison, so the verification
+check is timestamp-blind. The contributor convention:
+
+- Write each quote as one continuous single-line prose string in
+  YAML (single-quoted scalar style; never `|` literal block which
+  preserves caption-line breaks as rendered newlines).
+- Include AT MOST ONE leading `[MM:SS]` anchor at the start of each
+  quote, matching the source line where the quote's first content
+  word appears. Reader clicking the anchor lands on the start of the
+  quote, not several seconds in.
+- Drop all intermediate timestamps from quote text. They normalize
+  away at comparison time, so preserving them adds visual noise (a
+  15-second quote could carry 9–15 intermediate ticks) without
+  evidentiary value.
+- Auto-caption typos stay verbatim — handle via `naming_quirks` per
+  the per-quote contributor discipline above; don't silently correct.
+
+The source file in `sources/transcripts/` keeps every caption tick
+(that's its primary-source form). Stripping happens at the artifact
+authoring layer for readability, and at the normalization layer for
+verification.
+
+### Transcript quotes carry structural speaker attribution
+
+On a transcript artifact, the speaker of each quote is a structural
+reference, not contributor prose. Every entry in `quotes[]` carries
+`speaker_id` (required on transcript artifacts; enforced by
+`scripts/checks/quotes.py`), pointing at one of the artifact's
+`speakers[*].id` values. The renderer's attribution block emits a
+`Speaker` row above `Attributed to`, populated from the matched
+speakers entry — `Name ([`/people/slug`])` when the speaker has a
+`node_link`, or just `Name` when not (anonymized audience members,
+unidentified panelists).
+
+The bright line: `context` carries circumstance prose (venue, format,
+neighboring exchange — "opening statement", "Q&A exchange with a
+committee member", "the witness continuing his prepared statement"); `speaker_id`
+carries who-said-it. Two contributors authoring quotes from the same
+source can disagree on circumstance phrasing without diverging on the
+attribution — the structural reference is what validates and renders.
+
+Three failure modes the structural reference closes:
+
+- **Prose-attribution drift.** Different sessions could disagree on
+  who said line 2:00 of a podcast and both be wrong with no mechanical
+  check. The `quotes` check now fails when `speaker_id` doesn't
+  resolve to a real `speakers[].id`.
+- **Re-author ambiguity.** Six months later a contributor re-reading
+  the artifact had to re-trace the frame + baseline match to recover
+  the speaker assignment. The structural reference makes the
+  assignment self-documenting.
+- **Renderer inconsistency.** Hand-formatted Attributed-to strings
+  varied in how they named speakers ("Halvorsen" vs "Dr. Jane
+  Halvorsen" vs "Dr. Halvorsen"). Mechanical lookup from `speakers[]`
+  produces one consistent rendered form per identity.
+
+The accompanying `speaker_baseline_consistency` check
+(`scripts/checks/speaker_baseline_consistency.py`) catches the next
+link of the chain: every `speakers[].node_link` that points at
+`/people/{slug}` should have a baseline at
+`sources/photo-identity-log/baselines/{slug}/` so the video-pipeline
+tools (`scripts/tools/detect-faces.py`,
+`scripts/tools/spot-check-attribution.py`) can mechanically resolve the
+speaker on future videos.
+
+---
+
+## Part IV — The synthesis layer
+
+### Three-layer evidentiary architecture
+
+The repository carries three distinct evidentiary node layers sitting on
+the source substrate. Each has a different role; the boundaries are
+load-bearing for the discipline.
+
+#### Tier model and linking contract
+
+Counting the source substrate, the architecture is **four tiers**.
+References run **downward** — a node may reference a *lower* tier, never a
+*greater* one — with exactly one same-tier exception (entity ↔ entity). This
+is the directional contract: facts flow up to synthesis; synthesis never
+flows back into the fact substrate.
+
+| Tier | Node types | May reference | Must NOT reference |
+|---|---|---|---|
+| **1 — Sources** | archived files under `sources/` | — (the evidentiary floor; it is referenced *by* nodes and references nothing) | anything |
+| **2 — Entity** | person · organization · document · event · transcript · media · location | Tier 1 (sources) **and Tier 2 (other entity nodes, laterally)** | Tier 3 (findings), Tier 4 (investigations) |
+| **3 — Findings** | finding | Tier 1 (sources) + Tier 2 (entity nodes) | Tier 3 (other findings), Tier 4 (investigations) |
+| **4 — Investigations** | investigation | Tier 1 + Tier 2 + Tier 3 (findings) | Tier 4 (other investigations) |
+
+Two consequences are worth stating outright:
+
+- **Same-tier links exist only at Tier 2.** Entity nodes cross-reference
+  each other — Affiliations → org, Speakers → person, Participants → person,
+  transcript `derived_from` → event — and that lateral web is the navigational
+  fabric (`## Associated Nodes`). The synthesis tiers do not cross-link at
+  their own level: a finding never references another finding (it stays
+  cluster-neutral, citable from multiple investigations), and an investigation
+  never references another investigation.
+- **Nothing references a Tier-4 investigation.** It is the top of the
+  iceberg — discoverable from the priority queue and inter-node paths, never
+  by a lower tier pointing up at it.
+
+A reference *up* a tier — an entity node naming a finding, a finding naming
+an investigation — inverts the flow and is a defect **even in prose, even
+when the target exists**: a bare-slug prose mention ("the {slug} finding")
+is the same violation as a `/findings/…` path. Four checks enforce the
+contract directionally, each catching both the path form and the bare-slug
+form (via the finding/investigation node-slug index, `ctx.synthesis_slugs`):
+`entity_no_finding_or_investigation_refs` (Tier 2 → 3/4),
+`finding_no_investigation_refs` (Tier 3 → 4), `finding_no_finding_refs`
+(Tier 3 → 3, same-tier), and `investigation_no_investigation_refs`
+(Tier 4 → 4, same-tier). The same-tier checks exclude the node's own slug,
+so a self-reference in `id` / `target_node` is not a violation.
+
+#### Entity nodes — facts
+
+Entity nodes (people, organizations, documents, events, transcripts,
+media, locations) carry **facts**: single-source attestations,
+including load-bearing facts that name other entities. The fact
+"witness W on transcript T named organization O as the contractor
+they reported to investigators" is a fact about W — it lives on
+W's person node, on T's transcript node, and (because it's
+load-bearing for O) on O's organization node. Same primary source;
+three entity-side fact records. None of
+them speculates beyond what the source attests.
+
+Entity nodes keep cross-node links, `## Associated Nodes`, structural
+cross-references (Affiliations rows pointing at orgs, Speakers
+pointing at persons, transcript `derived_from`, etc.), and prose-
+section references to other entities where the primary source
+attests them. Those are facts, not findings.
+
+#### Finding nodes — multi-source patterns
+
+A finding documents a **pattern that becomes visible only by reading
+multiple primary sources together**. No single source attests the
+pattern; the synthesis-of-reading-together produces information not
+present in any constituent attestation. Multi-source convergence
+(or divergence on a single question) is what makes it a finding,
+not the number of entities it touches.
+
+Findings cite primary sources DIRECTLY via `evidence[].source.path`,
+never entity-node markdown files. The `attestor_path` field on each
+evidence row captures who attested; the citation itself goes to the
+source.
+
+Findings duplicate primary-source content from entity nodes BY
+DESIGN. If a finding cites material the relevant entity node
+doesn't yet attest, the entity node is updated first (primary
+source confirmed + archived) before the finding can use it. The
+`finding-source-in-entity-node` check enforces this directionally:
+every `quotes[].source.path` on a finding artifact must appear in
+at least one entity-type research artifact's `primary_sources[]`.
+Findings can't introduce sources the entity layer doesn't already
+attest.
+
+Findings DO NOT REFERENCE the investigations that consume them —
+directional contract enforced by the `finding_no_investigation_refs`
+check. Findings stay cluster-neutral so they can be cited from
+multiple investigations.
+
+Entity nodes (person / organization / document / event / transcript /
+media / location) DO NOT REFERENCE findings or investigations —
+symmetric directional contract enforced by the
+`entity_no_finding_or_investigation_refs` check. Facts flow up to the
+synthesis layer; the synthesis layer does not flow back into the
+fact substrate. The Ryder person node attesting that he was named in
+the SD004 statement is a fact; pointing the Ryder node at the
+finding that synthesizes the multi-source authorship-chain pattern
+would invert the flow. Findings and investigations are discoverable
+from the priority queue, the research-queue cross-references, and
+inter-finding / inter-investigation paths — not from the entity
+layer pointing at them.
+
+Findings are not verdicts. They document the multi-source pattern
+and stop there — what the convergence establishes, what it doesn't
+establish, where it diverges. Hypothesis evaluation belongs on
+investigation nodes.
+
+#### Investigation nodes — speculation-tolerant hypothesis evaluation
+
+An investigation pursues an open question or hypothesis by consuming
+findings and entity-node facts. Investigations are
+**speculation-tolerant** — the layer where hypotheses are evaluated
+against the primary-source record. Per-hypothesis status verdicts
+capture the current evidentiary standing as free-text phrases
+("Substantiated as allegation on record"; "Not established by
+primary sources"; etc.).
+
+Investigations link to and summarize findings via `cited_findings[]`
+and per-hypothesis `sources[]` rollups; findings do not link back.
+Investigations build cases — proving, disproving, or further
+pursuing the question.
+
+Investigation prose surfaces (hypothesis_evaluation, best_current_answer,
+counter_evidence, open_questions, closure_path) are NOT subject to
+the prose-drift check (speculation by design). Instead, the
+`investigation_hypothesis_citation` check requires each
+hypothesis subsection to carry a non-empty `sources[]` rollup
+naming the findings or entity-node anchors the contributor drew on.
+
+#### Bright line — fact vs finding
+
+A **fact** = a single attestation from a single primary source. Lives
+on the relevant entity nodes (speaker's node, named-subject's node,
+document / transcript / event node where attested). May reference
+other entities (because the source names them) but doesn't synthesize
+across sources.
+
+A **finding** = a pattern that becomes visible only when multiple
+primary sources are read together. No single source establishes the
+pattern; the synthesis is the cross-source convergence (or
+divergence on a single question).
+
+A witness on a single podcast naming a contractor = fact (one source,
+one statement). A company's consistent refusal to deny across three
+news outlets' inquiries over a year = finding (three sources, the
+pattern is the consistency). A person authored a document
+anonymously (named in a separate filing, entered into the public
+record) = finding (three-source chain establishing authorship).
+
+#### Promotion thresholds
+
+An open question or caveat below the investigation threshold stays
+structurally encoded on the entity node — empty period_end fields
+with prose hedges, naming_quirks with `resolution: disputed`, etc.
+Don't track sub-investigation items in a workflow surface; the
+entity node is the canonical record of what the corpus knows.
+
+An open question becomes an investigation when it picks up ANY of:
+active pursuit (someone gathering primary sources to answer it),
+cross-entity scope (≥2 entity nodes), competing answers being
+weighed (≥2 hypotheses with primary-source backing on different
+sides), or analytical content requiring sustained evaluation
+(≥ ~100 words).
+
+A finding is justified when the multi-source convergence pattern
+emerges — typically when 3+ independent sources converge on (or
+diverge on) a single question. The pattern-shape is what matters,
+not the entity count.
+
+---
+
+## Part V — Cross-references & archival
+
+### Cross-references
+
+The one rule for linking, stated once. Everything below is this rule
+applied; the role prompts and the schema point here rather than restating
+it.
+
+**Name it, wrap it.** Every entity a node names in its own authored prose
+— person, organization, event, document, location, finding — is wrapped
+as a `[`/{type}/{slug}`]` link, **even when that node doesn't exist yet.**
+The unbuilt-node stub is the whole point: it is what populates the
+auto-generated `## Associated Nodes` index and the broken-link registry
+(the Priority Build Queue). There is no "load-bearing vs. incidental"
+judgment — that hatch is exactly what let linking drift node-to-node and
+within a node. If the prose names it, wrap it; a bare name is a dropped
+cross-reference, reaching neither the index nor the build queue. A stub
+path is the correct value, never `null` and never a blank — in a
+structured path field (`affiliations[].organization_path`,
+`relationships[].person_path`, a program / event path) exactly as in an
+inline prose wrap.
+
+A named theory, equation, or referenced work the prose *discusses* — as
+opposed to merely listing it in `## References` — is itself a document
+node: wrap it `[`/documents/{slug}`]` (e.g. the Drake equation →
+`/documents/drake-equation`).
+
+**Two carve-outs, and only two:**
+
+- **Verbatim `quote.text` is never wrapped** — a source's own words stay
+  source-faithful. An entity that appears *only* inside a quote is carried
+  by wrapping the canonical form in the surrounding authored prose (the
+  same form the prose-drift check matches), not by editing the quote.
+- **A bare `## References` / `cited_works` entry is not wrapped** — the
+  bibliography is an authorship-network dimension, not a navigation
+  surface; a reference-list author is not stub-linked merely for being
+  cited. If that same person or work is *also* discussed in the node's
+  argument prose, the prose mention is wrapped under the rule above.
+
+`## Associated Nodes` is auto-generated from the body wraps by
+`scripts/build/associate.py`, grouped by target type (Events, Documents,
+Transcripts, News, Organizations, People, Findings). Do not hand-edit it.
+
+**Two mechanical aids, split by what is decidable.**
+`scripts/checks/prose_entity_link.py` (a blocking validator check) catches
+the one case a validator can prove — prose that names an entity **already
+in the repo** (a person or organization, by canonical display name or
+registered alias) without wrapping it; zero-false-positive by construction
+(multi-token names / acronyms only, blockquotes and self-references
+excluded). `scripts/tools/link-suggest.py` (a read-only aid) surfaces the
+other direction — capitalized names in the authored prose not yet wrapped
+that likely have **no node yet** (the cited physicist, the program named
+once); heuristic, so the contributor judges each.
+
+#### Cross-reference contract for interview-derived testimony
+
+When a node cites long-form media appearances as primary-source
+evidence — podcasts, broadcasts, panels, conference talks,
+streamed interviews — three classes of entity must appear as
+`[`/path`]` body wraps somewhere in the node (typically inside the
+corresponding `timeline[].event` text):
+
+- **Venue** — the organization that hosts or distributes the
+  appearance (a podcast or video show → `/organizations/{slug}`;
+  a foundation's symposium → `/organizations/{slug}`).
+- **Host / interviewer / moderator** — the person conducting the
+  appearance (the show's host on each episode, the panel moderator
+  at a symposium). Structurally distinct from the subject of the
+  appearance.
+- **Transcript-to-be** — the transcript node where the verbatim
+  evidence will live, wrapped with its forward-looking path even
+  before the transcript node is built. The broken-link registry
+  surfaces the unbuilt transcript as a Phase 2 build candidate.
+
+The body wrap is the load-bearing mechanism: `[`/path`]` wraps drive
+the broken-link registry (the Priority Build Queue) and the
+auto-generated `## Associated Nodes` section, both of which read the
+rendered body. There is no load-bearing-vs.-incidental discretion: an
+entity the node names in its own authored prose is wrapped, full stop
+(see the rule above). `coverage-suggest.py` surfaces
+source content not reflected in the node, and `link-suggest.py`
+surfaces named entities in the prose not yet wrapped — both are
+contributor aids, not the discretion boundary.
+
+### Primary sources and archival
+
+Every external URL cited in any node is archived locally in
+`/sources/{category}/{filename}` and registered in
+`/sources/manifest.yaml`. The local archive is the integrity guarantee;
+the Internet Archive Wayback Machine submission (via
+`scripts/tools/archive.py`) is insurance.
+
+Citations in prose are direct markdown links to the archived file or
+the manifest entry, not prose references to manifest row numbers.
+
+When a source is blocked or paywalled, the manifest entry records the
+block status and the archival route (if any) is documented on the
+entry. See `sources-access.md` for site-specific workarounds.
+
+#### Manifest shape — URL is canonical, artifacts are renderings
+
+`sources/manifest.yaml` models each source URL as one entry. The URL
+is the canonical thing being archived; the `artifacts` list under it
+records each archived rendering of the URL's content.
+
+URL-level fields describe the source itself:
+
+- `url` — the canonical source URL
+- `status` — `archived` | `403-blocked` | `402-blocked` | `pending`
+- `archive_status` — 2-bit indicator: bit 0 = locally archived
+  (status==archived AND artifacts non-empty); bit 1 = Wayback present
+- `wayback_date` — Wayback snapshot date when bit 1 is set
+- `wayback_skip: true` — URL is structurally unarchivable to Wayback
+  (synthetic deep-links, session-bound URLs)
+- `note` — description of the source itself
+
+Artifact-level fields describe one archived rendering:
+
+- `format` — `pdf` | `html` | `txt` | `audio` | `image` | `video` | `transcript`
+- `path` — relative path under `sources/`
+- `archived_date` — date this rendering was downloaded
+- `extraction_type` — `text-native` | `ocr-scan` | `extraction-lossy`
+  (applies to PDF; drives same-stem `.txt` sibling preference)
+- `transcript_provenance` — `stenographic` | `published-transcript` |
+  `human-corrected-caption` | `auto-caption` | `unknown` (applies to
+  `format: transcript`)
+- `note` — description of this specific rendering (extraction
+  caveats, transcription corrections, etc.)
+
+**Dual-artifact pattern.** A source URL whose content has been
+archived twice — most commonly an audio/video URL with both the
+underlying media and a derived transcript — gets ONE URL entry with
+TWO entries in its `artifacts` list (e.g., `format: video` + `format:
+transcript`). The transcript's `transcript_provenance` records how it
+was produced from the underlying media; readers and tools can walk
+the renderings under a URL to find the right one to verify against.
+
+**`manifest.py add` semantics.** `manifest.py add URL --path PATH
+--format FMT` creates a new URL entry on first call, appends a new
+artifact to the existing URL entry on subsequent calls (different
+paths under the same URL). Idempotent when the (URL, path) tuple
+already matches an existing artifact. Errors loudly if the supplied
+path is already registered under a different URL (path uniqueness
+across the whole manifest).
+
+**Invariants** enforced by
+`scripts/checks/manifest_artifact_shape.py`:
+
+1. Every URL is unique (one entry per source URL).
+2. Every artifact path is unique across the whole manifest (no two
+   URLs claim the same archived file).
+3. `artifacts` is non-empty when `status == archived`.
+4. `artifacts` is empty (or absent) when `status != archived`.
+
+---
+
+## Part VI — Validators & checks
+
 ### Check naming
 
 Validator checks are referenced across the codebase by **topic name**,
@@ -1506,440 +2119,9 @@ surfaces" above. The two pair: uniform gate → rigorous resolution.
 
 ---
 
-## Confirmed vs Flagged
+## Part VII — Repository conventions & hygiene
 
-Any structured section that mixes primary-source-supported entries with
-secondary-source-only or unverified entries splits into `### Confirmed`
-and `### Flagged` subsections.
-
-- **Confirmed** — established from a primary source linked in the row
-- **Flagged** — cited in secondary sources only; requires primary-source
-  confirmation before treating as established
-
-Empty Flagged subsections are omitted, not filled with placeholder text.
-Presence of `### Flagged` with no rows is a schema violation; absence
-indicates no flagged items.
-
-The distinction records source quality, not truth. A Flagged item may
-well be true; it hasn't been verified against a primary source yet.
-
----
-
-## Sworn testimony vs claim verification
-
-Testimony given under oath is a confirmed fact regardless of whether
-the underlying claim is independently verified. These are two distinct
-facts and must not be merged into a single statement.
-
-**Correct**: "✅ Confirmed as sworn testimony — claim not independently verified"
-**Incorrect**: "Claimed that..." (implies testimony is unconfirmed)
-**Incorrect**: "Testified that X is true" (conflates testimony with verification)
-
-When an authoritative body later denies a sworn claim, the denial is
-logged as a separate dated entry. The sworn testimony row stays confirmed.
-Both facts coexist because both are true.
-
-Q&A testimony under oath carries the same evidentiary weight as prepared
-written testimony. Oral and written versions of a witness's testimony are
-preserved as independent primary records — the hearing transcript node
-holds the oral record; the written testimony document node holds the
-written record. Cross-entity comparison between the two (where a claim
-appears and how the placements differ) is a synthesis finding and
-belongs on a finding node, not on either primary record.
-
----
-
-## Source priority — anchoring when multiple sources attest
-
-When multiple primary sources attest a fact about a subject (rank,
-role, capacity, sequence of events, framing of significance), the
-contributor anchors on the source closest to the subject's own
-first-person attestation:
-
-1. **Subject's own verbatim words** — highest authority for facts
-   about themselves. First-person statements, self-published bios,
-   filings the subject signed.
-2. **Other primary witnesses' attestations** — first-hand observers
-   describing the subject. Direct testimony from someone who was
-   present.
-3. **Media narrator / outlet framing** — lowest priority. The
-   outlet's editorial summary or characterization is one step
-   removed from the witness's own words.
-
-This applies whether or not sources strictly disagree — the hierarchy
-governs which source to cite as the anchor for any fact, not only
-which to "believe" in a contradiction.
-
-How to apply per case:
-
-- **Facts about the subject** (rank, role, identity, motivation,
-  internal state during an event): prefer the subject's verbatim
-  quotes. Fall back to primary witnesses, then outlet framing.
-- **Facts about external events the subject observed** (radar
-  acquisitions, what other personnel did, command structure):
-  prefer whichever primary source has direct attestation —
-  typically the institutional source (military document,
-  after-action report) over witness recall.
-- **When outlet narrator says X but the subject's own quote says
-  Y:** anchor on Y. Record the narrator divergence in
-  `naming_quirks` if recurring or material; otherwise in the
-  relevant entry's `note` field.
-- **When a primary witness attests something about the subject
-  that the subject hasn't themselves attested:** cite the witness's
-  attestation as the source, marking observation_type appropriately.
-- **Don't synthesize across sources to produce a "best of both"
-  composite fact.** Pick one source as the anchor; if the alternate
-  carries material content, capture it as a separate entry with its
-  own source attribution and let the divergence stand.
-
-This rule complements [Contradictions](#contradictions) below — the
-hierarchy decides which source the contributor anchors on; the
-Contradictions framing decides how the divergence itself is documented
-when sources directly conflict.
-
----
-
-## Contradictions
-
-Two markers distinguish evidentiary disagreement by the quality of
-evidence on each side:
-
-- **`⚠ Disputed — unknown`** — both parties assert opposing claims;
-  neither has primary-source evidence beyond their own authority to
-  speak. Document what each side says; link to both sources. The
-  repository does not adjudicate.
-- **`❌ Contradiction`** — positions directly contradict **and at
-  least one side is backed by primary-source evidence**. Two shapes:
-  (a) both sides have primary-source evidence that conflicts (e.g.,
-  an agency report's finding vs. a FOIA-released document);
-  (b) one side has primary-source evidence, the other rests on
-  self-attestation or on-record claim alone (e.g., DoD PA official
-  denial vs. individual's self-reported role). In either shape, each
-  source remains confirmed from its own origin; the primary-source
-  asymmetry (if any) is noted in the row; the disagreement itself is
-  the analytical finding.
-
-When an authoritative source formally contradicts a confirmed claim, the
-contradiction is documented on the **synthesis node where the
-disagreement gains analytical meaning** — not on the source document
-nodes themselves. Document nodes record each source's statement
-verbatim in Key Passages; cross-document contradictions are a synthesis
-finding, not a property of either document.
-
-| Situation | Where |
-|---|---|
-| Post-event denial | `Node Versioning` on the relevant person / event / organization node |
-| Institutional self-contradiction | `Credibility Notes` on the person / organization node |
-| One document's statement contradicts another's | `Institutional Assessment` on the relevant organization node (when an agency finding contradicts a cited claim), or a finding node spanning the conflicting sources |
-| Written vs. oral testimony divergence | Finding node spanning the two primary records (transcript + companion written testimony document) |
-| Contested affiliation | `Flagged` subsection of `Affiliations` |
-| Source-form disagreement (two sources attest opposing forms of the same fact, contributor does not adjudicate) | `naming_quirks` entry with `resolution: disputed`; auto-rendered as `## Preserved Disagreements` near the foot of the node body |
-
-A person stating opposing things across their own statements ("I did" /
-"I didn't") is NOT a cross-source contradiction and stays on the person
-node: under the `claim_group` grouping of `## Statements` (see
-`quote_entry.claim_group`), the two statements sit adjacently in the same
-claim group as separate verbatim quotes — both shown, no marker, no
-finding. The grouping is pure organization of a single entity's own
-statements; it carries no `❌`/`⚠` and no `/findings/` link. Cross-entity
-contradictions (one source vs. a *different* entity's source) remain a
-finding per the table above — that boundary is unchanged.
-
-The Confirmed/Flagged binary is unchanged by contradictions —
-"contradicted" is not a third status. Both sources remain confirmed
-from their respective origins; the evidentiary disagreement is
-documented separately.
-
----
-
-## Comparability standard — same source-anchored treatment across a family
-
-Two nodes of the same kind get built in different sessions by different
-workers, and a source-anchored section one of them carries can quietly go
-missing on the other — not because the second node's sources lack the material,
-but because no one checked. One member of a family may carry a `## Source-Form
-Notes` section its sources support while a peer that should be checked for the
-same class of material never was — and nothing in the build or audit flow asked
-whether it should. That gap is the failure this standard closes.
-
-**The principle.** Members of a comparable node family receive the same
-*source-anchored treatment*. When one member carries a source-anchored optional
-section or dimension, every peer is obliged to be checked — at build time and at
-audit time — for the same class of material against its own archived sources.
-The standard governs the *checking*, never the *output*: presence stays
-content-driven. A peer emits the section if and only if its sources support it.
-A node whose sources attest no non-canonical name form correctly carries no
-`## Source-Form Notes` section, and that is not a defect.
-
-**Family axes.** "Comparable" means same `type`, and within type the same
-`archetype` (people) or `kind` (organizations, documents, events) — the grouping
-the schema already uses to decide conditional sections. No separate "family"
-field exists or is needed. The `gov` organizations are one family; the
-`eyewitness` people another.
-
-**In scope — source-anchored surfaces only.** The treatment that must converge
-is the evidentiary handling of source material, which surfaces as the optional
-sections rendered by `scripts/build/renderers/_universal.py` plus the document
-`cited_works` dimension:
-
-- `## Source-Form Notes` (`naming_quirks[].resolution: preserve-as-sic-in-quotes`)
-- `## Preserved Disagreements` (`naming_quirks[].resolution: disputed`)
-- `## References` (document `cited_works` — UNIVERSAL on documents via the
-  three-state affirmation NONE / IGNORED / list, see "cited_works
-  affirmation" above; the comparability question shifts from "does the peer
-  carry the section?" to "is the affirmation correct against the peer's
-  source?")
-
-**Out of scope — synthesis prose, and the lighter-surface node types.** The
-synthesis fields (`description`, `background`, `top_relevance`,
-`credibility_notes`, free-prose timeline) are never convergence candidates;
-their shape is the contributor's judgment of one node's evidence, not a
-cross-node obligation. Likewise the deliberate decision that document /
-transcript / event / media / location nodes omit synthesis-heavy sections to
-minimize prose-drift surface is correct and is not a divergence to "fix."
-
-**This is not a count target.** Read this standard alongside `### Density is
-source-driven` above. That section forbids comparison framings like "comparable
-nodes have N entries; this one has fewer — anything to add?" This standard does
-not reopen them. It operates one level up, on *presence-class* — whether a peer
-treats a category of source material at all — not on entry counts. The correct
-response to a surfaced asymmetry is to re-check the lagging node's sources for
-the same class of material, and to add an entry only if a source attests it.
-"Peer X has this section; add entries until this node matches" is exactly the
-pressure the density rule prohibits, and it stays prohibited.
-
-### Document-corpus extraction — the passage rubric
-
-The same principle governs *within* a document corpus, where the unit of
-divergence is not a section but a category of passage. Commissioned-program
-documents built one per session drift to wide ranges in extraction density
-when each worker judges "load-bearing" afresh with no shared selection rule.
-The rubric below replaces that judgment with a category checklist, so density
-falls out of consistent selection rather than becoming a target in its own
-right.
-
-**Slug convention for a serially-released corpus.** A node in a numbered set of
-released documents (e.g. a FOIA-released set) is slugged
-`{corpus}-{release#}-{short-title}` with NO date: siblings then sort and
-cross-reference by release number, and inbound stub references reconcile to
-that one form. The date lives in `internal_date` / the manifest, not the slug.
-
-Every node in such a corpus captures, where the source contains it:
-
-- **Provenance / front matter** — title, author(s), preparing organization,
-  date, contract/administrative markings.
-- **Thesis and scope** — the document's stated purpose and the boundary of what
-  it surveys.
-- **Each major section's finding** — the load-bearing claim or result of every
-  numbered section, not only the summary. This is the category most often
-  dropped; capturing it is what levels an under-extracted node up.
-- **Methods / approach** — how the work the document characterizes was or would
-  be done, where the source describes it.
-- **Conclusions / recommendations** — the document's closing assessment and any
-  recommended next steps.
-- **Acknowledgements** — named contributors and collaborating institutions (an
-  authorship-network signal).
-- **References** — the formal citation list, captured as `cited_works[]` (see
-  the document-artifact schema), not as `quotes[]`.
-
-`scripts/tools/coverage-suggest.py` is the forward-coverage aid: it surfaces
-substantive source paragraphs that no quote references, which the contributor
-reads against this rubric to find a section finding that was skipped. The rubric
-names what must be *considered*; the source still decides what is *present*. It
-is not a quote-count target — a short document with few sections yields few
-quotes, and that is correct.
-
----
-
-## Three-layer evidentiary architecture
-
-The repository carries three distinct evidentiary node layers sitting on
-the source substrate. Each has a different role; the boundaries are
-load-bearing for the discipline.
-
-### Tier model and linking contract
-
-Counting the source substrate, the architecture is **four tiers**.
-References run **downward** — a node may reference a *lower* tier, never a
-*greater* one — with exactly one same-tier exception (entity ↔ entity). This
-is the directional contract: facts flow up to synthesis; synthesis never
-flows back into the fact substrate.
-
-| Tier | Node types | May reference | Must NOT reference |
-|---|---|---|---|
-| **1 — Sources** | archived files under `sources/` | — (the evidentiary floor; it is referenced *by* nodes and references nothing) | anything |
-| **2 — Entity** | person · organization · document · event · transcript · media · location | Tier 1 (sources) **and Tier 2 (other entity nodes, laterally)** | Tier 3 (findings), Tier 4 (investigations) |
-| **3 — Findings** | finding | Tier 1 (sources) + Tier 2 (entity nodes) | Tier 3 (other findings), Tier 4 (investigations) |
-| **4 — Investigations** | investigation | Tier 1 + Tier 2 + Tier 3 (findings) | Tier 4 (other investigations) |
-
-Two consequences are worth stating outright:
-
-- **Same-tier links exist only at Tier 2.** Entity nodes cross-reference
-  each other — Affiliations → org, Speakers → person, Participants → person,
-  transcript `derived_from` → event — and that lateral web is the navigational
-  fabric (`## Associated Nodes`). The synthesis tiers do not cross-link at
-  their own level: a finding never references another finding (it stays
-  cluster-neutral, citable from multiple investigations), and an investigation
-  never references another investigation.
-- **Nothing references a Tier-4 investigation.** It is the top of the
-  iceberg — discoverable from the priority queue and inter-node paths, never
-  by a lower tier pointing up at it.
-
-A reference *up* a tier — an entity node naming a finding, a finding naming
-an investigation — inverts the flow and is a defect **even in prose, even
-when the target exists**: a bare-slug prose mention ("the {slug} finding")
-is the same violation as a `/findings/…` path. Four checks enforce the
-contract directionally, each catching both the path form and the bare-slug
-form (via the finding/investigation node-slug index, `ctx.synthesis_slugs`):
-`entity_no_finding_or_investigation_refs` (Tier 2 → 3/4),
-`finding_no_investigation_refs` (Tier 3 → 4), `finding_no_finding_refs`
-(Tier 3 → 3, same-tier), and `investigation_no_investigation_refs`
-(Tier 4 → 4, same-tier). The same-tier checks exclude the node's own slug,
-so a self-reference in `id` / `target_node` is not a violation.
-
-### Entity nodes — facts
-
-Entity nodes (people, organizations, documents, events, transcripts,
-media, locations) carry **facts**: single-source attestations,
-including load-bearing facts that name other entities. The fact
-"witness W on transcript T named organization O as the contractor
-they reported to investigators" is a fact about W — it lives on
-W's person node, on T's transcript node, and (because it's
-load-bearing for O) on O's organization node. Same primary source;
-three entity-side fact records. None of
-them speculates beyond what the source attests.
-
-Entity nodes keep cross-node links, `## Associated Nodes`, structural
-cross-references (Affiliations rows pointing at orgs, Speakers
-pointing at persons, transcript `derived_from`, etc.), and prose-
-section references to other entities where the primary source
-attests them. Those are facts, not findings.
-
-### Finding nodes — multi-source patterns
-
-A finding documents a **pattern that becomes visible only by reading
-multiple primary sources together**. No single source attests the
-pattern; the synthesis-of-reading-together produces information not
-present in any constituent attestation. Multi-source convergence
-(or divergence on a single question) is what makes it a finding,
-not the number of entities it touches.
-
-Findings cite primary sources DIRECTLY via `evidence[].source.path`,
-never entity-node markdown files. The `attestor_path` field on each
-evidence row captures who attested; the citation itself goes to the
-source.
-
-Findings duplicate primary-source content from entity nodes BY
-DESIGN. If a finding cites material the relevant entity node
-doesn't yet attest, the entity node is updated first (primary
-source confirmed + archived) before the finding can use it. The
-`finding-source-in-entity-node` check enforces this directionally:
-every `quotes[].source.path` on a finding artifact must appear in
-at least one entity-type research artifact's `primary_sources[]`.
-Findings can't introduce sources the entity layer doesn't already
-attest.
-
-Findings DO NOT REFERENCE the investigations that consume them —
-directional contract enforced by the `finding_no_investigation_refs`
-check. Findings stay cluster-neutral so they can be cited from
-multiple investigations.
-
-Entity nodes (person / organization / document / event / transcript /
-media / location) DO NOT REFERENCE findings or investigations —
-symmetric directional contract enforced by the
-`entity_no_finding_or_investigation_refs` check. Facts flow up to the
-synthesis layer; the synthesis layer does not flow back into the
-fact substrate. The Ryder person node attesting that he was named in
-the SD004 statement is a fact; pointing the Ryder node at the
-finding that synthesizes the multi-source authorship-chain pattern
-would invert the flow. Findings and investigations are discoverable
-from the priority queue, the research-queue cross-references, and
-inter-finding / inter-investigation paths — not from the entity
-layer pointing at them.
-
-Findings are not verdicts. They document the multi-source pattern
-and stop there — what the convergence establishes, what it doesn't
-establish, where it diverges. Hypothesis evaluation belongs on
-investigation nodes.
-
-### Investigation nodes — speculation-tolerant hypothesis evaluation
-
-An investigation pursues an open question or hypothesis by consuming
-findings and entity-node facts. Investigations are
-**speculation-tolerant** — the layer where hypotheses are evaluated
-against the primary-source record. Per-hypothesis status verdicts
-capture the current evidentiary standing as free-text phrases
-("Substantiated as allegation on record"; "Not established by
-primary sources"; etc.).
-
-Investigations link to and summarize findings via `cited_findings[]`
-and per-hypothesis `sources[]` rollups; findings do not link back.
-Investigations build cases — proving, disproving, or further
-pursuing the question.
-
-Investigation prose surfaces (hypothesis_evaluation, best_current_answer,
-counter_evidence, open_questions, closure_path) are NOT subject to
-the prose-drift check (speculation by design). Instead, the
-`investigation_hypothesis_citation` check requires each
-hypothesis subsection to carry a non-empty `sources[]` rollup
-naming the findings or entity-node anchors the contributor drew on.
-
-### Bright line — fact vs finding
-
-A **fact** = a single attestation from a single primary source. Lives
-on the relevant entity nodes (speaker's node, named-subject's node,
-document / transcript / event node where attested). May reference
-other entities (because the source names them) but doesn't synthesize
-across sources.
-
-A **finding** = a pattern that becomes visible only when multiple
-primary sources are read together. No single source establishes the
-pattern; the synthesis is the cross-source convergence (or
-divergence on a single question).
-
-A witness on a single podcast naming a contractor = fact (one source,
-one statement). A company's consistent refusal to deny across three
-news outlets' inquiries over a year = finding (three sources, the
-pattern is the consistency). A person authored a document
-anonymously (named in a separate filing, entered into the public
-record) = finding (three-source chain establishing authorship).
-
-### Promotion thresholds
-
-An open question or caveat below the investigation threshold stays
-structurally encoded on the entity node — empty period_end fields
-with prose hedges, naming_quirks with `resolution: disputed`, etc.
-Don't track sub-investigation items in a workflow surface; the
-entity node is the canonical record of what the corpus knows.
-
-An open question becomes an investigation when it picks up ANY of:
-active pursuit (someone gathering primary sources to answer it),
-cross-entity scope (≥2 entity nodes), competing answers being
-weighed (≥2 hypotheses with primary-source backing on different
-sides), or analytical content requiring sustained evaluation
-(≥ ~100 words).
-
-A finding is justified when the multi-source convergence pattern
-emerges — typically when 3+ independent sources converge on (or
-diverge on) a single question. The pattern-shape is what matters,
-not the entity count.
-
----
-
-## Neutrality
-
-The repository documents observed facts from primary sources and does
-not adjudicate intent, motivation, or compliance with norms external to
-the documentary record. Analytical sections (Institutional Assessment,
-Credibility Notes, findings) frame observations in neutral terms.
-
-This principle is repository-wide. Individual nodes and sections do not
-need to recite neutrality language per cell — the principle stated here
-governs the entire repository.
-
----
-
-## Versioning
+### Versioning
 
 Nodes are never closed and source data is never overwritten.
 
@@ -1954,165 +2136,7 @@ Nodes are never closed and source data is never overwritten.
 Git log is the edit-history record. In-document changelogs are not
 maintained — `git log --follow` on the node file is authoritative.
 
----
-
-## Cross-references
-
-The one rule for linking, stated once. Everything below is this rule
-applied; the role prompts and the schema point here rather than restating
-it.
-
-**Name it, wrap it.** Every entity a node names in its own authored prose
-— person, organization, event, document, location, finding — is wrapped
-as a `[`/{type}/{slug}`]` link, **even when that node doesn't exist yet.**
-The unbuilt-node stub is the whole point: it is what populates the
-auto-generated `## Associated Nodes` index and the broken-link registry
-(the Priority Build Queue). There is no "load-bearing vs. incidental"
-judgment — that hatch is exactly what let linking drift node-to-node and
-within a node. If the prose names it, wrap it; a bare name is a dropped
-cross-reference, reaching neither the index nor the build queue. A stub
-path is the correct value, never `null` and never a blank — in a
-structured path field (`affiliations[].organization_path`,
-`relationships[].person_path`, a program / event path) exactly as in an
-inline prose wrap.
-
-A named theory, equation, or referenced work the prose *discusses* — as
-opposed to merely listing it in `## References` — is itself a document
-node: wrap it `[`/documents/{slug}`]` (e.g. the Drake equation →
-`/documents/drake-equation`).
-
-**Two carve-outs, and only two:**
-
-- **Verbatim `quote.text` is never wrapped** — a source's own words stay
-  source-faithful. An entity that appears *only* inside a quote is carried
-  by wrapping the canonical form in the surrounding authored prose (the
-  same form the prose-drift check matches), not by editing the quote.
-- **A bare `## References` / `cited_works` entry is not wrapped** — the
-  bibliography is an authorship-network dimension, not a navigation
-  surface; a reference-list author is not stub-linked merely for being
-  cited. If that same person or work is *also* discussed in the node's
-  argument prose, the prose mention is wrapped under the rule above.
-
-`## Associated Nodes` is auto-generated from the body wraps by
-`scripts/build/associate.py`, grouped by target type (Events, Documents,
-Transcripts, News, Organizations, People, Findings). Do not hand-edit it.
-
-**Two mechanical aids, split by what is decidable.**
-`scripts/checks/prose_entity_link.py` (a blocking validator check) catches
-the one case a validator can prove — prose that names an entity **already
-in the repo** (a person or organization, by canonical display name or
-registered alias) without wrapping it; zero-false-positive by construction
-(multi-token names / acronyms only, blockquotes and self-references
-excluded). `scripts/tools/link-suggest.py` (a read-only aid) surfaces the
-other direction — capitalized names in the authored prose not yet wrapped
-that likely have **no node yet** (the cited physicist, the program named
-once); heuristic, so the contributor judges each.
-
-### Cross-reference contract for interview-derived testimony
-
-When a node cites long-form media appearances as primary-source
-evidence — podcasts, broadcasts, panels, conference talks,
-streamed interviews — three classes of entity must appear as
-`[`/path`]` body wraps somewhere in the node (typically inside the
-corresponding `timeline[].event` text):
-
-- **Venue** — the organization that hosts or distributes the
-  appearance (a podcast or video show → `/organizations/{slug}`;
-  a foundation's symposium → `/organizations/{slug}`).
-- **Host / interviewer / moderator** — the person conducting the
-  appearance (the show's host on each episode, the panel moderator
-  at a symposium). Structurally distinct from the subject of the
-  appearance.
-- **Transcript-to-be** — the transcript node where the verbatim
-  evidence will live, wrapped with its forward-looking path even
-  before the transcript node is built. The broken-link registry
-  surfaces the unbuilt transcript as a Phase 2 build candidate.
-
-The body wrap is the load-bearing mechanism: `[`/path`]` wraps drive
-the broken-link registry (the Priority Build Queue) and the
-auto-generated `## Associated Nodes` section, both of which read the
-rendered body. There is no load-bearing-vs.-incidental discretion: an
-entity the node names in its own authored prose is wrapped, full stop
-(see the rule above). `coverage-suggest.py` surfaces
-source content not reflected in the node, and `link-suggest.py`
-surfaces named entities in the prose not yet wrapped — both are
-contributor aids, not the discretion boundary.
-
----
-
-## Primary sources and archival
-
-Every external URL cited in any node is archived locally in
-`/sources/{category}/{filename}` and registered in
-`/sources/manifest.yaml`. The local archive is the integrity guarantee;
-the Internet Archive Wayback Machine submission (via
-`scripts/tools/archive.py`) is insurance.
-
-Citations in prose are direct markdown links to the archived file or
-the manifest entry, not prose references to manifest row numbers.
-
-When a source is blocked or paywalled, the manifest entry records the
-block status and the archival route (if any) is documented on the
-entry. See `sources-access.md` for site-specific workarounds.
-
-### Manifest shape — URL is canonical, artifacts are renderings
-
-`sources/manifest.yaml` models each source URL as one entry. The URL
-is the canonical thing being archived; the `artifacts` list under it
-records each archived rendering of the URL's content.
-
-URL-level fields describe the source itself:
-
-- `url` — the canonical source URL
-- `status` — `archived` | `403-blocked` | `402-blocked` | `pending`
-- `archive_status` — 2-bit indicator: bit 0 = locally archived
-  (status==archived AND artifacts non-empty); bit 1 = Wayback present
-- `wayback_date` — Wayback snapshot date when bit 1 is set
-- `wayback_skip: true` — URL is structurally unarchivable to Wayback
-  (synthetic deep-links, session-bound URLs)
-- `note` — description of the source itself
-
-Artifact-level fields describe one archived rendering:
-
-- `format` — `pdf` | `html` | `txt` | `audio` | `image` | `video` | `transcript`
-- `path` — relative path under `sources/`
-- `archived_date` — date this rendering was downloaded
-- `extraction_type` — `text-native` | `ocr-scan` | `extraction-lossy`
-  (applies to PDF; drives same-stem `.txt` sibling preference)
-- `transcript_provenance` — `stenographic` | `published-transcript` |
-  `human-corrected-caption` | `auto-caption` | `unknown` (applies to
-  `format: transcript`)
-- `note` — description of this specific rendering (extraction
-  caveats, transcription corrections, etc.)
-
-**Dual-artifact pattern.** A source URL whose content has been
-archived twice — most commonly an audio/video URL with both the
-underlying media and a derived transcript — gets ONE URL entry with
-TWO entries in its `artifacts` list (e.g., `format: video` + `format:
-transcript`). The transcript's `transcript_provenance` records how it
-was produced from the underlying media; readers and tools can walk
-the renderings under a URL to find the right one to verify against.
-
-**`manifest.py add` semantics.** `manifest.py add URL --path PATH
---format FMT` creates a new URL entry on first call, appends a new
-artifact to the existing URL entry on subsequent calls (different
-paths under the same URL). Idempotent when the (URL, path) tuple
-already matches an existing artifact. Errors loudly if the supplied
-path is already registered under a different URL (path uniqueness
-across the whole manifest).
-
-**Invariants** enforced by
-`scripts/checks/manifest_artifact_shape.py`:
-
-1. Every URL is unique (one entry per source URL).
-2. Every artifact path is unique across the whole manifest (no two
-   URLs claim the same archived file).
-3. `artifacts` is non-empty when `status == archived`.
-4. `artifacts` is empty (or absent) when `status != archived`.
-
----
-
-## Scope
+### Scope
 
 The repository is a general-purpose primary-source investigation
 toolkit; the schema and structure are topic-neutral. Any
@@ -2120,9 +2144,7 @@ investigation grounded in primary sources — historical event, legal
 case, policy decision, scientific controversy — can use the same
 structure.
 
----
-
-## Repository layout — content flat, tooling organized
+### Repository layout — content flat, tooling organized
 
 Three tiers, each with a different organizing principle:
 
@@ -2154,7 +2176,7 @@ extrapolate the content-layer rule onto the tooling or governance
 layer — and don't extrapolate organized-by-role onto the content
 layer.
 
-### Inside `/scripts/` — six tiers by caller / role
+#### Inside `/scripts/` — six tiers by caller / role
 
 `/scripts/` is organized by caller and role rather than by file type.
 Every script lives in exactly one of six subdirectories — no Python
@@ -2239,7 +2261,7 @@ rule (every script in exactly one subdir) keeps the top of
 `scripts/` scannable as six role-labeled directories rather than a
 flat heap.
 
-### Inside `/meta/` — root vs subdirs
+#### Inside `/meta/` — root vs subdirs
 
 `/meta/` itself follows a sub-rule that grew implicitly and is
 codified here. New governance items land at the tier that matches
@@ -2278,9 +2300,7 @@ topic-specific items in `/meta/topic/` (governance) or
 `meta/README.md` is a friendly-face index of the directory's
 contents; this section is the rule of record.
 
----
-
-## Working notes are a report, not a residue
+### Working notes are a report, not a residue
 
 An agent's — or contributor's — analysis, intermediate reasoning, and
 findings are a **deliverable**: handed to the user, or returned up the
@@ -2314,9 +2334,7 @@ rather than writing shared state (`prompts/topology.md`), and
 `meta/memory.md` records the drive-builds-through-the-topology discipline
 that keeps it that way.
 
----
-
-## Comments describe code, not refactor history
+### Comments describe code, not refactor history
 
 Code comments describe what a function or script does and any
 non-obvious why — invariants, layering rules, surprising behavior.
@@ -2338,7 +2356,7 @@ it* lives. The code comment is where the *why it is the way it is*
 lives, and only when that why is non-obvious from the identifiers
 and structure.
 
-### NO BANDAIDS rule
+#### NO BANDAIDS rule
 
 Any issue found during an audit either gets fixed immediately or
 filed in BACKLOG for later. Never document the issue as a comment
@@ -2354,7 +2372,7 @@ BACKLOG entries become stale pointers when the entry is removed.
 refactor cycles compound, eventually drowning the description of
 what the code currently does.
 
-### BACKLOG lifecycle discipline
+#### BACKLOG lifecycle discipline
 
 The goal is to REMOVE items from BACKLOG, not accumulate annotations
 referencing them. When a BACKLOG entry closes:
@@ -2391,7 +2409,7 @@ removal of obsolete templates: the file should describe current
 state and pending work, not past evolution. Git log carries the
 evolution.
 
-### What TO keep in comments
+#### What TO keep in comments
 
 Functional descriptions of what the code does, plus non-obvious
 why notes that anchor on still-live concepts:
