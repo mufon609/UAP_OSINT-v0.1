@@ -228,13 +228,41 @@ scratch files (the `/build` worker role; `meta/conventions.md`).
 
 ## 5. Core scripts — quick reference
 
-`scripts/` has two contributor-facing tiers: `build/` for the
-scaffold → render → validate pipeline (including the validators that
-gate each phase), and `tools/` for standalone utilities (archive,
-transcribe, manifest, diagnostics). `scripts/checks/` holds the
-per-check modules dispatched by the validators; `scripts/lib/` holds
-shared helpers. See `meta/conventions.md` "Inside `/scripts/`" for the
-landing rules.
+`scripts/` is organized by caller and role, not by file type: every
+script lives in exactly one of six subdirectories — no Python script
+sits directly in `scripts/` itself (the no-loose-scripts rule keeps the
+top of `scripts/` scannable as six role-labeled directories). New
+scripts land at the tier that matches who invokes them and what role
+they play:
+
+- **`build/`** — the scaffold → render → validate pipeline + the
+  validators that gate each phase (contributor-facing). Per-type
+  renderers live under `build/renderers/`.
+- **`tools/`** — standalone utilities, integrations, and diagnostics;
+  contributor-facing but *not* part of the content-transformation
+  pipeline (manifest CLI, Wayback, transcription, read-only diagnostics).
+  A tool with environmental prerequisites (binaries, env vars, modules,
+  browser session) fails fast at `main()` entry with a contributor-
+  friendly install hint rather than deferring the check to first use.
+- **`checks/`** — per-check modules; the validators under `build/` are
+  thin orchestrators that import and dispatch these via explicit step
+  lists. Each check is individually importable for single-check debugging.
+- **`tests/`** — gate-internal infrastructure existing only to support
+  the pre-commit chain (`pre-commit.sh` + its regression tests). No
+  contributor invokes these directly.
+- **`lib/`** — shared cross-cutting helpers imported across `build/`,
+  `tools/`, and `checks/`; kept separate so the cross-script lockstep
+  (same `extract_source_text`, same `STOPWORDS`) is mechanical, not
+  comment-discipline-based.
+- **`scratch/`** — contributor landing zone for in-progress exploratory
+  queries; gitignored. When a query class repeats across sessions,
+  graduate it to `tools/` as a proper subcommand — the bridge between
+  inline scripting and a first-class CLI, not a permanent home.
+
+The `build/`-vs-`tools/` split is produces/transforms vs assists:
+`build/` scaffolds, renders, or validates the content layer; `tools/`
+syncs the manifest, archives sources, or reports read-only diagnostics
+without transforming content.
 
 ### Build pipeline — `scripts/build/`
 

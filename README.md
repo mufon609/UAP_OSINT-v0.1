@@ -167,6 +167,18 @@ Everything not deleted by the steps above — the rest of
 `settings.json`, and root-level governance (`CLAUDE.md`, `AGENT.md`,
 this `README.md`) — is topic-neutral toolkit and survives the fork.
 
+**Three organizing principles, one per tier.** Investigator-facing
+content (`/people/`, `/organizations/`, … and `/sources/`) is **flat by
+design** — `/{type}/{slug}.md`, found one click in, with no
+archetype/sub-category nesting; the frontmatter (archetype, kind,
+status) carries the categorization hierarchy would otherwise impose.
+Backend tooling (`/scripts/`) is organized for **engineering hygiene**,
+and governance + structured-data backing (`/meta/`) is organized **by
+role** (templates / topic / research). The flatness rule is about
+content the investigator reads — don't extrapolate it onto the tooling
+or governance layer, and don't extrapolate organized-by-role onto the
+content layer.
+
 ---
 
 ## Node types

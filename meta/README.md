@@ -26,17 +26,25 @@ or scripts (`/scripts/`).
 
 ## Root vs subdirs
 
-The split is codified in `conventions.md` under "Repository layout —
-content flat, tooling organized" (sub-section "Inside `/meta/` — root
-vs subdirs"). Briefly:
+`/meta/` splits by the character of each item, and new governance items
+land at the tier that matches what they are:
 
-- **Root** holds stable specs and forward-looking work registers
-  (rules + active agenda).
-- **`topic/`** and **`research/`** are the subdirs that fork-delete
-  (`topic/` carries topic-specific governance; `research/` carries
-  topic-specific structured facts). Everything else is topic-neutral
-  toolkit and survives a fork.
+- **Root** — stable governance specs + forward-looking work registers
+  (the rules and the active agenda): `conventions.md`, `schema.yaml`,
+  `schema-research-artifact.yaml`, `sources-access.md`, `memory.md`,
+  `BACKLOG.md`, `roadmap.md`. Topic-neutral; survives a fork.
+- **`templates/`** — mechanical scaffolding (one per node type), consumed
+  by `scripts/build/new.py`. Topic-neutral; survives a fork.
+- **`topic/`** and **`research/`** — the fork-deleting subdirs: `topic/`
+  carries topic-specific governance (research queue, overview, working
+  notes); `research/` carries the topic-specific structured-fact
+  artifacts (one `{slug}.yaml` per content node — topic-specific in
+  content but governance-neutral in shape: the schema governs shape, the
+  topic determines entries).
 
-New governance items should land at the right tier on first author.
-When in doubt, consult `conventions.md` for the principle and
-existing files in each subdir as analogues.
+**The fork boundary is load-bearing.** A contributor forking the toolkit
+to a different investigation deletes `topic/`, `research/`, and the
+content directories; everything else under `/meta/` survives because it
+is topic-neutral toolkit. Items therefore land at the right tier on
+first author — topic-specific in `topic/` or `research/`, toolkit-neutral
+at `meta/`-direct.

@@ -519,8 +519,11 @@ primary_sources_entry:
 entry_lifecycle_fields:
   required: [id, added_date]
   optional:
-    - superseded_by           # entry id within this artifact, or external ref
-    - contradicted_by         # same
+    - superseded_by           # entry id (within this artifact) or external ref
+                              #   of a FORMAL CORRECTION that replaces this entry;
+                              #   the original is kept, never deleted
+    - contradicted_by         # same shape, but for an ACTIVE DISAGREEMENT — both
+                              #   entries stand; neither replaces the other
     - corroborated_by         # list of entry ids or external refs
   # Content-lifecycle fields above support the Node Versioning
   # discipline (originals preserved; corrections added alongside
