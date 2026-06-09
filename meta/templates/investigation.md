@@ -39,8 +39,17 @@ question: '{{question}}'
      drew on. The investigation_hypothesis_citation check requires
      a non-empty Sources rollup per hypothesis.
 
-     See meta/conventions.md "Three-layer evidentiary architecture"
-     for the full bright line. -->
+     The open-question → investigation threshold: an open question or
+     caveat becomes its own investigation node when it picks up ANY of —
+     active pursuit; cross-entity scope (2+ entity nodes); competing
+     answers (2+ hypotheses with primary-source backing); or substantial
+     analytical content (~100+ words). Below that, a small caveat stays
+     structurally encoded on the entity node (an open period_end + a
+     prose hedge), not tracked in a workflow surface. The fact / finding
+     bright line is in the finding template; the tier model (an
+     investigation, Tier 4, references findings + entity nodes + sources,
+     never another investigation) is meta/schema.yaml architecture_layers
+     + the build-protocol "Tier linking contract". -->
 
 ## Question
 

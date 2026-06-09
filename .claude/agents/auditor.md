@@ -62,9 +62,9 @@ Audit goals:
    Investigator (material already archived). Emit `adjacent_needs_update[]`
    with each node + its shape + scratch path.
 
-   **Both shapes are source-rooted; there is no third shape.** Per
-   `meta/conventions.md` "Entity nodes — facts" (prose-section references to
-   other entities only "**where the primary source attests them**"), a topical
+   **Both shapes are source-rooted; there is no third shape.** Per the
+   build-protocol Tier-2 contract (prose-section references to other entities
+   only "**where the primary source attests them**"), a topical
    similarity between two entity nodes — same subject, overlapping technical
    material, products of the same program — is **not** a propagation candidate
    unless the adjacent node's primary source attests the connection (a

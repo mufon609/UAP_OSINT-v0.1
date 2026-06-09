@@ -145,7 +145,10 @@ sole same-tier exception is entity ↔ entity (the navigational fabric).
 - **Tier 1 — sources** (`sources/`): referenced *by* nodes; references nothing.
 - **Tier 2 — entity** (person / organization / document / event / transcript /
   media / location): reference sources + other entity nodes; **never** a
-  finding or investigation.
+  finding or investigation. Entity nodes carry single-source FACTS that may
+  name other entities — but a prose or cross-link reference to another entity is
+  made only **where the primary source attests the connection**; topical
+  similarity (same subject, same program) is not a reference.
 - **Tier 3 — findings**: reference sources + entity nodes; **never** another
   finding or an investigation.
 - **Tier 4 — investigations**: reference findings + entity nodes + sources;
@@ -155,8 +158,7 @@ A reference *up* a tier — or a finding/investigation referencing its own tier 
 is a defect **even in prose**, not only as a `/findings/` or `/investigations/`
 path link (a bare-slug mention like "the {slug} finding" inside an entity node
 is the same violation). When you add or carry a cross-reference, check its
-direction before emitting it. Full matrix: `meta/conventions.md` "Tier model
-and linking contract".
+direction before emitting it.
 
 **Linking — name it, wrap it.** Every entity a node names in its own authored
 prose — person, organization, program, event, document, location, finding — is

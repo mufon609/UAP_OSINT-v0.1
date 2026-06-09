@@ -67,6 +67,43 @@ In order, with a check after each (build-protocol → run
    interview > podcast; tie-break earliest `statement_date`). Write the
    free-prose fields (`description` / `background` / `top_relevance` /
    `credibility_notes`, per type); run `check-vocab.py` while drafting.
+   - **Source anchoring — which source to feature when multiple attest.** When
+     multiple primary sources attest the same fact (rank, role, capacity,
+     sequence, framing), anchor on the source closest to the subject's own
+     first-person attestation: (1) the subject's own verbatim words (self-
+     statements, self-published bios, signed filings) > (2) other primary
+     witnesses' first-hand attestations > (3) media-narrator / outlet framing
+     (one step removed). The hierarchy governs which source to cite as the
+     anchor for *any* fact, not only which to believe in a conflict. Per case:
+     facts *about the subject* (rank, role, motivation, internal state) prefer
+     the subject's quotes; facts about *external events the subject observed*
+     (radar acquisitions, others' actions, command structure) prefer the source
+     with direct attestation — typically the institutional record over witness
+     recall; when an outlet narrator says X but the subject's quote says Y,
+     anchor on Y and record the divergence in `naming_quirks` (recurring /
+     material) or the entry's `note`; when a witness attests something about the
+     subject the subject hasn't, cite the witness with the right
+     `observation_type`. **Never synthesize a "best of both" composite** — pick
+     one anchor; if the alternate carries material content, capture it as a
+     separate entry with its own source attribution and let the divergence
+     stand.
+   - **Contradiction placement — where each disagreement type lives.** Document
+     a contradiction on the node where it gains analytical meaning, never on the
+     source-document nodes (those record each statement verbatim in Key
+     Passages): post-event denial of a confirmed claim → `Node Versioning` on
+     the person / event / organization node (the denial is a separate dated
+     entry; the original row stays confirmed); institutional self-contradiction
+     → `Credibility Notes`; one document's statement vs another's →
+     `Institutional Assessment` on the organization node, or a finding spanning
+     the sources; written vs oral testimony divergence → a finding spanning the
+     two primary records; contested affiliation → the `Flagged` subsection of
+     `Affiliations`; source-form disagreement (opposing forms, no adjudication)
+     → a `naming_quirks` entry with `resolution: disputed` (renders as
+     `## Preserved Disagreements`). A person stating opposing things across
+     their *own* statements is NOT a cross-source contradiction — the two sit
+     adjacently in one `claim_group` as separate verbatim quotes, no marker, no
+     finding. (How the conflict itself is marked — `⚠ Disputed — unknown` /
+     `❌ Contradiction` — is the auditor's contradiction-marker step.)
    - **The topic-token trap:** `top_relevance` renders under the
      `{display_name} Relevance` header, but the subject word itself is
      frequently absent from the sources — describe the relevance in source

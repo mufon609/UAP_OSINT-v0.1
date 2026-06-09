@@ -35,8 +35,25 @@ type: finding
      Findings stay cluster-neutral so they can be cited from multiple
      investigations.
 
-     See meta/conventions.md "Three-layer evidentiary architecture"
-     for the full bright line between fact / finding / investigation. -->
+     The BRIGHT LINE — fact vs finding: a FACT is a single-source
+     attestation (lives on the entity node; may name other entities but
+     synthesizes nothing). A FINDING is a pattern visible only across
+     MULTIPLE sources read together. Worked examples: a witness on one
+     podcast naming a contractor = fact (entity node); a company's
+     consistent non-denial across three outlets over a year = finding
+     (the pattern is the convergence); an anonymous authorship named in a
+     separate filing and entered into the public record = finding (two
+     sources combine). Findings document the pattern and STOP — verdicts
+     belong on investigations. A finding is justified at multi-source
+     convergence, typically 3+ independent sources, or when the same
+     material is about to be written into 3+ entity nodes; a written-vs-
+     oral testimony divergence (oral on the transcript node, written on
+     the companion document node, equal evidentiary weight) is a finding
+     spanning the two primary records. -->
+<!-- Tier model: a finding (Tier 3) references sources + entity nodes,
+     never another finding or an investigation. The machine-readable
+     tier definition is meta/schema.yaml architecture_layers; the
+     directional rule is the build-protocol "Tier linking contract". -->
 
 ## Pattern Statement
 
