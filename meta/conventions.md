@@ -2323,10 +2323,7 @@ Three durable surfaces, three places working notes must not land:
   session" files committed to the tree.
 
 Where the record actually lives: **git history** owns the narrative of
-what changed and why (commit messages, PR descriptions), and
-`meta/BACKLOG.md` owns deferred work. An issue found mid-session is fixed
-now or filed in BACKLOG; it is never left behind as a comment or a
-node-body aside.
+what changed and why (commit messages, PR descriptions).
 
 For build work specifically, this is the mechanism the role pipeline
 already runs on: each role returns a handoff stub to the orchestrator
