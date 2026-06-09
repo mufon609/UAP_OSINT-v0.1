@@ -24,7 +24,7 @@ investigation grounded in primary sources.
   gov-doc, non-gov-doc) are separated structurally so a reader sees the
   evidentiary distinction before reading the content
 
-See `meta/conventions.md` for the full philosophy.
+The rules are enforced by `meta/schema.yaml` + the validators in `scripts/checks/`; the build discipline lives in `.claude/skills/build-protocol/`.
 
 ---
 
@@ -50,7 +50,6 @@ meta/
   BACKLOG.md                deferred work items (not on active roadmap)
   roadmap.md                active work + design decisions that shaped the codebase
   schema.yaml               machine-readable spec (source of truth)
-  conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
   templates/                scaffolding templates (9 files, one per node type)
   research/                 YAML research artifacts backing each node
@@ -162,7 +161,7 @@ section headers like `## {topic_display_name} Relevance`, archiver
 User-Agent, etc.); the toolkit reads them via
 `load_topic()`. Run `/fork-init` for the bootstrap walk-through.
 Everything not deleted by the steps above — the rest of
-`meta/` (schema, conventions, memory, templates, …), all of
+`meta/` (schema, memory, templates, …), all of
 `scripts/` and `prompts/`, the `.claude/` skills + subagents + hooks +
 `settings.json`, and root-level governance (`CLAUDE.md`, `AGENT.md`,
 this `README.md`) — is topic-neutral toolkit and survives the fork.
@@ -209,8 +208,8 @@ content layer.
   findings + entity-node facts. Speculation-tolerant; per-hypothesis
   status verdicts; cited findings + per-hypothesis sources rollups
 
-Full specification in `meta/schema.yaml`. See `meta/conventions.md`
-"Three-layer evidentiary architecture" for the fact / finding /
+Full specification in `meta/schema.yaml` (`architecture_layers`) for the
+fact / finding /
 investigation bright line.
 
 ---
@@ -250,8 +249,7 @@ distinguish the cases by evidence quality:
 | `❌ Contradiction` | Positions conflict and at least one side is backed by primary-source evidence |
 
 These frame how a finding is written; the repository documents both
-sides and does not adjudicate. See `meta/conventions.md`
-("Confirmed vs Flagged", "Contradictions") for the full discipline.
+sides and does not adjudicate.
 
 ---
 

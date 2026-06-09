@@ -25,18 +25,17 @@ python3 scripts/build/build-state.py --check
 
 1. `CLAUDE.md` — session-start checklist + current build state.
 2. `README.md` — what this repository is.
-3. `meta/conventions.md` — the evidentiary discipline.
-4. `meta/schema.yaml` — node types, required sections, vocabularies; and
+3. `meta/schema.yaml` — node types, required sections, vocabularies; and
    `meta/schema-research-artifact.yaml` — the research-artifact spec that drives
    `validate-research.py`.
-5. `meta/roadmap.md` — active work + the architectural corrections that shaped
+4. `meta/roadmap.md` — active work + the architectural corrections that shaped
    the codebase.
-6. `meta/topic/research-queue.md` — current priority queue.
-7. `meta/BACKLOG.md` — deferred items; note any relevant to this session.
-8. `meta/memory.md` — cross-cutting contributor working knowledge. Then review
+5. `meta/topic/research-queue.md` — current priority queue.
+6. `meta/BACKLOG.md` — deferred items; note any relevant to this session.
+7. `meta/memory.md` — cross-cutting contributor working knowledge. Then review
    the personal memory directory (`MEMORY.md` is auto-loaded; referenced files
    live under `~/.claude/projects/<sanitized-project-path>/memory/`). Durable
-   evidentiary rules live in `meta/conventions.md`, not memory.
+   evidentiary rules live with their owners (`meta/schema.yaml`, `.claude/skills/build-protocol/`, `scripts/checks/`), not memory.
 
 ## Health check
 

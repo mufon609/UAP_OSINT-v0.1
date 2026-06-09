@@ -16,11 +16,10 @@ session.
 
 In order:
 
-1. `README.md` — what this repository is
-2. `meta/conventions.md` — evidentiary discipline and structural rationale
-3. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
-4. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
-5. `meta/topic/research-queue.md` — current priority build queue
+1. `README.md` — what this repository is (incl. the evidentiary philosophy + Status markers)
+2. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
+3. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
+4. `meta/topic/research-queue.md` — current priority build queue
 
 Don't skip. Governance docs change between sessions.
 
@@ -222,7 +221,7 @@ read for HTML/TXT). Not training knowledge. The verbatim-quote check in
 `scripts/build/validate.py` mechanically verifies this — but write the
 node correctly to begin with by following the source-read-first
 discipline — extract sources, then populate quotes verbatim from the
-scratch files (the `/build` worker role; `meta/conventions.md`).
+scratch files (the `/build` worker role; build-protocol source-read-first).
 
 ---
 
@@ -316,7 +315,7 @@ the role subagents in `.claude/agents/` (internal-investigator · external-
 investigator · archive · worker · builder · auditor); the shared contract is
 preloaded from `.claude/skills/build-protocol/`. `prompts/topology.md` is the
 design rationale for that decomposition; the build mechanics each role applies
-live in `meta/conventions.md` (the evidentiary discipline) and the role
+live in `meta/schema.yaml` + `.claude/skills/build-protocol/` (the evidentiary discipline) and the role
 subagents themselves. Standalone workflows are skills too: `/audit`, `/augment`,
 `/verify-transcript`, `/quote-relevance-audit`, `/archive-sweep`,
 `/prepare-ocr-sibling`, `/prepare-transcript-sibling`, `/fork-init`.
@@ -352,4 +351,4 @@ redirect to the nearest snapshot and serve directly.
 - Does not adjudicate between conflicting primary sources — documents
   both, flags the disagreement, lets the reader judge
 
-See `meta/conventions.md` for the full epistemic standard.
+See `README.md` ("What this is" / "What this is not") for the epistemic standard.

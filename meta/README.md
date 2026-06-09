@@ -15,7 +15,6 @@ or scripts (`/scripts/`).
 | Path | Role |
 |---|---|
 | `BACKLOG.md` | Deferred work register — items partitioned A (priority sequence) / B (parallel batch) / C (anytime) |
-| `conventions.md` | Evidentiary discipline + structural rationale (the *why* behind every rule) |
 | `memory.md` | Cross-cutting contributor working knowledge that doesn't fit a more specific surface (behavioral patterns, session-conduct discipline) |
 | `roadmap.md` | Active toolkit-development work + completed phases |
 | `schema.yaml` | Machine-readable spec — node types, archetypes, kinds, required sections, vocabularies |
@@ -30,7 +29,7 @@ or scripts (`/scripts/`).
 land at the tier that matches what they are:
 
 - **Root** — stable governance specs + forward-looking work registers
-  (the rules and the active agenda): `conventions.md`, `schema.yaml`,
+  (the rules and the active agenda): `schema.yaml`,
   `schema-research-artifact.yaml`, `sources-access.md`, `memory.md`,
   `BACKLOG.md`, `roadmap.md`. Topic-neutral; survives a fork.
 - **`templates/`** — mechanical scaffolding (one per node type), consumed

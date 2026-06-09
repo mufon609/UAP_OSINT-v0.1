@@ -44,7 +44,7 @@ If you're doing anything related to this instance's topic, read
 |---|---|
 | Start a session here | run `/onboard` |
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
-| Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → run `/build` |
+| Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `CLAUDE.md` → run `/build` |
 | Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |
 | Prepare a clean-text sibling for an OCR source | run `/prepare-ocr-sibling {category}/{filename}.pdf` (before quoting an OCR-scanned source) |
 | Prepare a speaker-attributed sibling for a label-less transcript | run `/prepare-transcript-sibling {slug}` (before quoting an auto-caption / Whisper / human-corrected-caption source) |
@@ -62,7 +62,7 @@ If you're doing anything related to this instance's topic, read
 | What | Where |
 |---|---|
 | Node structure spec | `meta/schema.yaml` (nodes) · `meta/schema-research-artifact.yaml` (research artifacts) |
-| Epistemic standard (why the rules exist) | `meta/conventions.md` |
+| Epistemic standard (why the rules exist) | `README.md` ("What this is" / "Status markers"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
 | Contributor working knowledge (cross-cutting behavioral patterns) | `meta/memory.md` |
 | Node templates (one per type) | `meta/templates/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
@@ -89,7 +89,7 @@ If you're doing anything related to this instance's topic, read
 
 ---
 
-## Hard rules (summary — see `meta/conventions.md` for the full rationale)
+## Hard rules (summary — the rationale lives with each rule's owner: `README.md`, `meta/schema.yaml`, `.claude/skills/build-protocol/`)
 
 - Every `✅ Confirmed` claim traces to a linked primary source.
 - Verbatim quotes must match source character-for-character; `validate.py` checks this mechanically.
@@ -119,7 +119,7 @@ If you're doing anything related to this instance's topic, read
 
 ## If you're uncertain about anything
 
-- Default to reading `meta/conventions.md` for the epistemic standard.
+- Default to reading `README.md` ("What this is" / "Status markers") + `meta/schema.yaml` for the epistemic standard.
 - Default to `meta/schema.yaml` for structural rules.
 - If a question isn't answered by governance docs, ask the user before
   making assumptions that will enter content.

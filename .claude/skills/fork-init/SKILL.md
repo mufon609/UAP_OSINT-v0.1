@@ -15,13 +15,13 @@ allowed-tools:
 # Fork-init
 
 Bootstrap a fresh fork for a new topic. The toolkit is topic-neutral by design
-(schema, scripts, conventions, templates, validators, test suite, **and the
+(schema, scripts, templates, validators, test suite, **and the
 `.claude/` skills + subagents + settings**). What's NOT neutral is the content
 layer (`meta/research/`, the content-node directories, `sources/`) and the
 topic-identity file (`meta/topic/overview.md`), whose `display_name` flows into
 every UI surface that names the subject.
 
-First read `CLAUDE.md`, `README.md` (the "Forking" paragraph), `meta/conventions.md`,
+First read `CLAUDE.md`, `README.md` (the "Forking" paragraph),
 `meta/schema.yaml`, and the existing `meta/topic/overview.md`. Confirm what
 stays (toolkit) vs. goes (content + topic-identity) before the wipe.
 
@@ -79,7 +79,7 @@ Subsequent sessions use `/build` (the multi-agent pipeline).
 
 Topic-neutral toolkit — do not modify during fork-init:
 
-- `meta/schema.yaml`, `meta/conventions.md`, `meta/templates/` — spec, discipline, templates.
+- `meta/schema.yaml`, `meta/templates/` — spec + templates.
 - `scripts/` — validators, renderer, scaffolders, source tooling, hook guards.
 - `prompts/` — the kept design docs (`topology.md`, `web-claude-*`).
 - **`.claude/skills/`, `.claude/agents/`, `.claude/settings.json`** — the

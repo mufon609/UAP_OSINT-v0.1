@@ -6,7 +6,7 @@ type: meta
 # Contributor memory
 
 Durable behavioral patterns and working knowledge that span sessions
-but don't fit a more specific surface (`conventions.md`, `schema.yaml`,
+but don't fit a more specific surface (`schema.yaml`,
 templates, prompts). Keep short. Promote entries to a more specific
 home when one emerges.
 
@@ -17,8 +17,8 @@ home when one emerges.
 - Cross-cutting working patterns that affect how a contributor
   approaches the repo, not what the repo contains.
 - Behavioral discipline around session conduct, audit shape, recovery
-  from failure modes that don't map cleanly to a single rule in
-  `conventions.md`.
+  from failure modes that don't map cleanly to a single owner doc
+  (schema / build-protocol / a check).
 - Pointers to patterns that already live in repo files, when the
   pointer itself is the load-bearing thing a contributor needs to
   carry between sessions.
@@ -28,7 +28,7 @@ home when one emerges.
 - Evidentiary discipline or structural rules → their owner: the
   enforcing `scripts/checks/` module, `meta/schema.yaml` /
   `meta/schema-research-artifact.yaml`, a `.claude/skills/` + `agents/`
-  contract, or `meta/conventions.md` for the cross-cutting epistemic
+  contract, or `README.md` for the cross-cutting epistemic
   principles.
 - Schema-level field semantics → `meta/schema.yaml` and
   `meta/schema-research-artifact.yaml` comments.
@@ -43,7 +43,7 @@ home when one emerges.
 One H3 per pattern. Lead with the rule. Add a short `Why` paragraph
 only when the rationale is non-obvious from the rule. Skip dates,
 commit hashes, and incident references — those belong in git log.
-When a more specific home for an entry emerges (a conventions section, a
+When a more specific home for an entry emerges (a
 schema comment, a skill/agent contract, a prompt), promote the entry
 there and delete the H3 from this file.
 
@@ -135,7 +135,7 @@ hedging, and an unsourced hedge degrades the repo.
 ### Check the governing docs before treating an "inconsistency" as open
 
 The governing surfaces usually already settle what looks like an open
-design question: `meta/conventions.md` for the epistemic principles,
+design question: `README.md` for the epistemic principles,
 `meta/schema.yaml` / `meta/schema-research-artifact.yaml` for
 field/structure semantics, `.claude/skills/` + `.claude/agents/` for
 build discipline, and `scripts/checks/` for what is mechanically
@@ -246,13 +246,13 @@ Z" reframings, and "mirror X exactly" sync reminders for code since
 centralized. The commit message carries *why we changed it*; the comment
 carries *why it is the way it is*, and only when non-obvious. This
 describe-current-state rule extends to every governance file — retiring a
-check, removing a conventions section, deleting a template: the file
+check, removing a schema field, deleting a template: the file
 describes current state and pending work, not past evolution. Git log
 carries the evolution.
 
 **What TO keep:** functional descriptions, plus non-obvious why notes
 anchored on still-live concepts — a durable governance anchor (a
-surviving `meta/conventions.md` section name, a `meta/schema.yaml` /
+`meta/schema.yaml` /
 `meta/schema-research-artifact.yaml` field path, a `.claude/skills/` or
 `.claude/agents/` contract name), a `meta/roadmap.md` mention when scoping
 a "not yet implemented" check, or a layering invariant (e.g.
