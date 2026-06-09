@@ -40,11 +40,13 @@ quotes against sources and fixing or removing any that don't match.
      sits identically in the quote *and* the caption file, so the word-for-word
      check passes on a wrong word — the auto-caption blind spot. Screen suspect
      tokens (proper nouns, uncommon names, OCR-style cluster swaps `rn`↔`m` /
-     `cl`↔`d`, phoneme-substitution drift) and confirm any anomaly against the
-     **audio**, never the caption text; register a confirmed artifact as a
-     `naming_quirks` entry. A source with a clean spot-checked track record
-     needs no blanket audio pass — the caption substring-match suffices; note
-     the verification approach in the manifest.
+     `cl`↔`d`, phoneme-substitution drift) and flag any anomaly for confirmation
+     against the **audio** — the caption can't confirm itself — surfacing it to
+     the user when the recording is the only arbiter. Preserve the source form
+     verbatim and register a confirmed artifact as a `naming_quirks` entry. A
+     source with a clean spot-checked track record needs no blanket audio pass —
+     the caption substring-match suffices; note the verification approach in the
+     manifest.
 5. When replacing an entry that differs substantively, preserve the original
    via `superseded_by` / `contradicted_by` pointers; typo fixes edit in place.
 6. **Speaker attribution.** Each transcript quote carries a structural
