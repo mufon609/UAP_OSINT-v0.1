@@ -41,7 +41,8 @@ incidental source typo never quoted → drop the entry; a deliberately-
 cataloged source/name variant (e.g. how auto-captions mangle a name,
 kept for identity resolution) → reclassify `resolution:
 off-node-variant`, which renders in the node's `## Name Variants`
-section instead. See `meta/conventions.md` "Off-node variants".
+section instead (the resolution enum is specified in schema
+`naming_quirk_entry`).
 
 Usage:
     coverage-suggest.py meta/research/{slug}.yaml

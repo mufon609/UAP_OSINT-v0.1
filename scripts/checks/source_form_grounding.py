@@ -10,8 +10,8 @@ This is the gate promotion of the long-standing
 ``coverage-suggest.py`` diagnostic (``report_quirk_grounding``): both
 share ``lib._common.body_outside_source_form_notes`` +
 ``normalize_for_compare`` so the grounding definition is identical. An
-ungrounded entry is an ERROR with a two-way fix, per
-``meta/conventions.md`` "Off-node variants":
+ungrounded entry is an ERROR with a two-way fix (the resolution enum and
+each value's meaning live in schema ``naming_quirk_entry``):
 
   - incidental source typo never quoted  → drop the entry
   - deliberate not-on-node variant kept for navigation / identity
@@ -52,7 +52,6 @@ def check(ctx):
                 f"only in its own ## Source-Form Notes row — ungrounded. Drop "
                 f"it (incidental typo) or reclassify resolution: "
                 f"off-node-variant (deliberate not-on-node variant; renders "
-                f"in ## Name Variants). See meta/conventions.md "
-                f'"Off-node variants".',
+                f"in ## Name Variants).",
                 check_name=CHECK_NAME,
             )

@@ -90,7 +90,13 @@ In order, with a check after each (build-protocol → run
      exact morphology. A *source-form vs canonical name* (`Sue`/`Halverson` vs
      `Susan`/`Halvorsen`) wraps the source form in the canonical path — `Sue
      Halvorsen ([`/people/susan-halvorsen`])`, the check strips the wrap before
-     tokenizing — plus a `naming_quirks` entry (the Link step). A
+     tokenizing — plus a `naming_quirks` entry (the Link step). The source form
+     stays in the verbatim layer (quote text + that wrap); every surface the repo
+     authors in its own voice — `display_title`, `quote_attribution`,
+     cross-reference label text, the canonical node name — uses the **canonical**
+     form, never the source's idiosyncratic abbreviation (a `display_title`
+     reading "AMR Program" instead of "AMRP" is the variant leaking out of the
+     verbatim layer into the repo's own naming). A
      *genuinely-absent contributor word* is either an unattested inference (drop
      it, or move it to a structured field with its own attribution) or a
      category-label that doesn't belong in free prose. A token missing only from
@@ -107,8 +113,7 @@ In order, with a check after each (build-protocol → run
    (`meta/conventions.md` "Cross-references"). Populate `naming_quirks`. A
    cross-ref the worker flagged as a **non-canonical source form** *additionally*
    gets a `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
-   canonical (same convention, "A source naming an entity under a non-canonical
-   form"). Register
+   canonical. Register
    `preserve-as-sic-in-quotes` **only** for a form that appears on the node —
    inside a quote, or the `significance` / `location` framing one; never sweep
    the source and log incidental typos in unquoted body text (orphan

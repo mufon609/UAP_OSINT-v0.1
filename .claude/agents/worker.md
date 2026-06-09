@@ -103,8 +103,8 @@ naming the metadata field, never a `quotes[]` entry.
    (`meta/conventions.md` "Cross-references"; naming an entity without a link is
    the under-linking failure). An entity named under a **non-canonical form**
    (idiosyncratic abbreviation, former name, misspelling) *additionally* gets its
-   source form flagged for a `naming_quirks` entry (same convention, "A source
-   naming an entity under a non-canonical form"). For an
+   source form flagged for a `naming_quirks` entry — stub the canonical node and
+   flag the variant even when that node does not exist yet. For an
    about-the-subject source, also emit `background_material[]` — load-bearing
    facts with their **exact source phrasing** + location anchor — so the
    builder can write source-grounded prose (prose-drift tokenizes against this)

@@ -1129,8 +1129,8 @@ naming_quirk_entry:
   #   to stub the canonical entity. Renders in its own ## Name Variants section
   #   (parallel to disputed → ## Preserved Disagreements), keeping Source-Form
   #   Notes strictly grounded. scripts/tools/coverage-suggest.py and the
-  #   review-coverage grounding gate flag any ungrounded preserve-as-sic entry.
-  #   See meta/conventions.md (the preserve-as-sic-in-quotes discipline).
+  #   review-coverage grounding gate (source_form_grounding) flag any
+  #   ungrounded preserve-as-sic entry.
 
 cited_work_entry:
   required: [citation_key, author, citation_verbatim, source]

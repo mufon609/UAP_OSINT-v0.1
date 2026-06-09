@@ -9,10 +9,11 @@ Use case: when a source uses a non-canonical form (auto-caption typo,
 OCR artifact, alias-of-record), silently substituting the canonical
 form in ``quotes.text`` would break the verbatim-quote check. The
 naming_quirks entry preserves the variance so the contributor-
-discipline workflow has structured backing. The discipline itself
-(when to preserve-as-sic vs use-canonical, when to add a reader-
-visible prose flag) lives in ``meta/conventions.md`` and the
-feedback memories.
+discipline workflow has structured backing. The discipline itself is
+applied by the worker / builder agents (flag the source form, wrap the
+canonical path, keep synthesized labels canonical) and grounded by the
+``source_form_grounding`` check; each resolution value's meaning is
+specified in schema ``naming_quirk_entry``.
 
 This check enforces the entry-shape and resolution-enum.
 """
