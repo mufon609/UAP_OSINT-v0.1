@@ -36,6 +36,37 @@ Preflight checks (``frontmatter_parse``, ``artifact_parse``,
 ``phase_iii_inputs``) handle parse / load diagnostics. Orchestrators
 dispatch them against a minimal-shape Context before the main step list
 and short-circuit the chain on any fatal Issue.
+
+Naming — topic, not number. Checks are referenced across the codebase by
+topic name (``the verbatim-quote check``, ``the prose-drift check``), never
+by a positional number. Numbered lists in module docstrings, if any, are
+at-a-glance summaries only and are not referenced externally. Rationale:
+numeric identifiers (``check #11``) couple every external reference to
+ordering, so retiring a check forces a numbering gap or a mass renumber;
+topic names decouple references from position — retiring a check deletes
+the function and its topic-named refs together, no placeholder, no
+renumber. Names are stable interfaces: a rename ripples like any API rename
+(find-replace across refs). Name a check for what it verifies, not how it
+is implemented.
+
+Design — impartial reporting. Checks surface drift signals impartially;
+they do not bake in category-tuned thresholds that encode editorial
+judgment about which fields are "allowed" more drift or which patterns are
+"expected noise" (bias dressed as pragmatism). Favored shapes: presence /
+absence floors (a token present-or-absent in source is an observation, not
+a stylistic judgment); single uniform rules across field types, including
+severity — a signal that is definitionally a defect is an ERROR on every
+scoped field, and warn level is reserved for genuine per-case contributor
+judgment. Disfavored: thresholds calibrated from "expected noise" in
+specific fields; aggregate percentage cutoffs ("tolerate up to N%
+unmatched") that smuggle a tolerance in as a number; any "synthesis-heavy
+fields tolerate higher rates" language. Noise-reduction extensions
+(stemming, whitelists, n-gram adjacency) apply uniformly across all scoped
+fields — scoping one to "fields we expect to be synthesis-heavy"
+reintroduces the category judgment in another layer. This validator-side
+discipline pairs with the contributor-side resolution discipline in
+``prose_drift.py`` (resolve every flagged token structurally, never
+rationalize it away): uniform gate → rigorous resolution.
 """
 
 from collections import defaultdict

@@ -60,7 +60,7 @@ Usage:
 
 Cross-referencing: other docs / scripts refer to these checks by topic
 name (e.g., `the verbatim-quote check`, `the prose-drift check` in
-validate-research.py). See meta/conventions.md "Check naming".
+validate-research.py) — see the naming convention in scripts/checks/__init__.py.
 """
 
 import argparse
