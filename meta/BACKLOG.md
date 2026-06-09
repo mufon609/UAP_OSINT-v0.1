@@ -123,6 +123,11 @@ zero.
   "see conventions.md X"). Nothing mechanical reads conventions.md (every ref is
   prose; `governance_files` needs only frontmatter), so moves can't break the
   pipeline at runtime — but the pointers must still be fixed.
+- **Sweep INTERNAL conventions.md cross-refs too** — `above` / `below` / `see "X"`
+  — after every delete, not just external files. Phase C found six latent
+  dangling refs earlier external-only sweeps had missed (inside conventions.md
+  itself + `coverage-suggest.py`); a deleted section's in-file "see X below" is as
+  dangling as an external pointer.
 - Show before→after per move, gate (`scripts/tests/pre-commit.sh` green), commit
   per owner-cluster.
 
@@ -134,19 +139,25 @@ dangles (`grep -rn 'conventions' --include='*.py' --include='*.md' --include='*.
 Do not resume on trust — find the mistakes first, then continue; everything is
 investigated before it is altered.
 
-**Done.** Phase A (checks): prose-drift, cited_works, location-refs,
+**Done (Phases A–C).** Phase A (checks): prose-drift, cited_works, location-refs,
 check-naming + validator-design, source-form + off-node. Phase B (schema):
 manifest-shape, type-views, news-articles, key-passages-ordering, date-precision
-(BACKLOG C2 redirected). Phase C: OCR-fidelity (pure delete — owned by the OCR
-producer/verifier roles). conventions.md 1841 → ~1200 lines; refs 200 → ~162.
+(BACKLOG C2 redirected). Phase C (skills/agents): OCR-fidelity,
+transcript-provenance + label-less, hearing-as-venue + key-testimony,
+primary-sources-archival, cross-references + interview-contract, paired-siblings,
+comparability + passage-rubric, confirmation-precondition. conventions.md
+1841 → 794 lines; all commits pushed (`git log --grep='docs(conventions)'`).
 
-**Next.** Rest of Phase C (transcript-provenance, paired-siblings, comparability +
-passage-rubric, key-testimony, hearing-as-venue, cross-references,
-interview-contract, archival, statements-as-primitive, confirmation-precondition);
-Phase D (repo-layout / scripts-tiers / meta-tiers / scope / versioning → README /
-meta-README / CLAUDE); Phase E (NO-BANDAIDS / comments / working-notes / density →
-meta/memory.md); Phase F (~67 manifest `note:` re-citations + templates); Phase G
-(Part I epistemic axioms — decide: slim essay vs README vs memory).
+**Next.** Phase D (repo-layout / scripts-six-tiers / meta-root-vs-subdirs / scope /
+versioning → README / meta-README / CLAUDE); Phase E (NO-BANDAIDS /
+comments-describe-code / what-to-keep / working-notes / density → meta/memory.md);
+Phase F (~67 manifest `note:` re-citations + templates → cite the new owner or
+drop). Then Phase G — a **DECISION for the maintainer**, not a mechanical move:
+the residue is the cross-cutting epistemic axioms with no single code owner
+(core-principle, relevance-relational, structure-reflects-evidence,
+confirmed/flagged, sworn-testimony, source-priority, contradictions, neutrality),
+plus statements-as-primitive and the Part IV three-layer / tier block. Decide:
+keep a slim unreferenced essay, fold into README, or fold into meta/memory.md.
 
 **Blocks:** none.
 **Blocked by:** none.
