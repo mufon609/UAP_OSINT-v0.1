@@ -1,5 +1,8 @@
 # Primary-Source Investigation Toolkit
 
+*The human entry point: what this repository is and why, plus the catalog
+of the skills and agents that operate it.*
+
 A structured, versioned knowledge base where every claim is anchored to a
 verifiable primary source. Topic-neutral; the current instance documents
 UAP public-record material, but the same structure works for any
@@ -165,6 +168,13 @@ Full specification in `meta/schema.yaml` (`architecture_layers`) for the
 fact / finding /
 investigation bright line.
 
+**From schema to rendered node.** `meta/schema.yaml` defines each type's
+required and optional sections; `meta/templates/{type}.md` scaffolds them
+(via `scripts/build/new.py`); `scripts/build/renderers/{type}.py`
+regenerates the node body from its research artifact (via
+`build-from-research.py`). `scripts/build/renderer-coverage.py` gates the
+chain at every commit: every schema section must be renderer-producible.
+
 ---
 
 ## Status markers
@@ -209,38 +219,39 @@ sides and does not adjudicate.
 ## Skills and agents
 
 Work in this repository runs through **skills** and **role subagents**,
-defined under `.claude/`.
+defined under `.claude/`. A **skill** is an invokable workflow you start
+with `/name`; it runs on the main thread and may dispatch subagents. A
+**role subagent** is a capability-bounded worker a skill dispatches; its
+tool set *is* its discipline — the boundaries are mechanical, not
+conventional.
 
-A **skill** is an invokable workflow you start with `/name`; it runs on the
-main thread and may dispatch subagents. The user-facing skills:
+| Skill | What it does | Pipeline position |
+|---|---|---|
+| `/onboard` | Read the governing docs, health-check, report build state | Session start |
+| `/build` | Build or rebuild a node through the six-role pipeline | The pipeline orchestrator |
+| `/prepare-ocr-sibling` | Produce + verify a clean-text sibling for an OCR-scanned source | `/build` step-4b sibling gate; also standalone |
+| `/prepare-transcript-sibling` | Produce + verify a speaker-attribution sibling for a label-less transcript (auto-caption / Whisper) | `/build` step-4c sibling gate; also standalone |
+| `/audit` | Health-check a built node for evidentiary integrity and consistency | Standalone maintenance on built nodes (reactive) |
+| `/augment` | Targeted maintenance change without re-scaffolding | Standalone maintenance on built nodes (proactive; partial re-entry) |
+| `/verify-transcript` | Verify a transcript node's quotes word-for-word against the archived source | Standalone maintenance on built nodes |
+| `/quote-relevance-audit` | Check each quote is load-bearing for the node's subject | Standalone maintenance on built nodes |
+| `/archive-sweep` | Verify local archives; recover dead URLs; submit missing to Wayback | Periodic / end-of-session health pass |
+| `/fork-init` | Bootstrap the toolkit for a different topic | One-time, destructive |
+| `build-protocol` | Shared contract preloaded into every build role | Not invokable |
 
-- `/onboard` — orient at session start (read governing docs, health-check, report state)
-- `/build` — build or rebuild a node through the full multi-agent pipeline
-- `/audit` — health-check a built node for evidentiary integrity and consistency
-- `/augment` — make a targeted maintenance change to a built node without re-scaffolding
-- `/verify-transcript` — verify a transcript node's quotes against the archived source, word-for-word
-- `/quote-relevance-audit` — check that each quote is load-bearing for the node's subject
-- `/archive-sweep` — verify every cited URL is archived locally and recover/submit what's missing
-- `/prepare-ocr-sibling` — produce and verify a clean-text sibling for an OCR-scanned source before quoting it
-- `/prepare-transcript-sibling` — produce and verify a speaker-attributed sibling for a label-less transcript (auto-caption / Whisper) before quoting it
-- `/fork-init` — bootstrap the toolkit for a different topic
-
-A **role subagent** is a capability-bounded worker the `/build` orchestrator
-dispatches in sequence — internal-investigator → external-investigator →
-archive → worker → builder → auditor. The boundaries are mechanical, not
-conventional: only `archive` writes the source manifest, only `worker`
-introduces verbatim quotes, and the builder edits the research artifact
-rather than the rendered node. `build-protocol` is the shared contract
-preloaded into each role; it is not a skill you invoke.
+The `/build` orchestrator dispatches the six role subagents in sequence —
+internal-investigator → external-investigator → archive → worker (×N) →
+builder → auditor: only `archive` writes the source manifest, only `worker`
+introduces verbatim quotes, and the builder edits the research artifact,
+never the rendered node. `/prepare-ocr-sibling` dispatches the two OCR page
+agents (ocr-page-producer, ocr-page-verifier). The pipeline map — steps,
+stages, branches — is `.claude/skills/build/SKILL.md` ("The shape"); the
+role-boundary rationale and the shared contract are
+`.claude/skills/build-protocol/`.
 
 `.claude/hooks/` enforce the discipline at the tool level: an un-bypassable
 commit gate (runs `pre-commit.sh`), a block on hand-editing rendered node
 bodies, and a one-new-synthesis-node-per-session cap.
-
-Deeper detail: `AGENTS.md` ("Route by task") maps a goal to the right skill;
-the pipeline map + role rationale live in `.claude/skills/build/SKILL.md`
-("The shape") and `.claude/skills/build-protocol/`; the
-contract itself lives in `.claude/skills/build-protocol/`.
 
 ---
 
