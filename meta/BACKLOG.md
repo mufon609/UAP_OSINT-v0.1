@@ -131,33 +131,47 @@ zero.
 - Show before→after per move, gate (`scripts/tests/pre-commit.sh` green), commit
   per owner-cluster.
 
-**Start here, next session — investigate before continuing.** Read the commit
-series first (`git log --oneline --grep='docs(conventions)'`) to see what was
-moved where, then INVESTIGATE IT FOR FLAWS: re-verify each move landed in the
-right home, that nothing load-bearing was lost or mis-housed, and that no pointer
-dangles (`grep -rn 'conventions' --include='*.py' --include='*.md' --include='*.yaml'`).
-Do not resume on trust — find the mistakes first, then continue; everything is
-investigated before it is altered.
+**A–C audit (done this session).** Re-read the `docs(conventions)` commit series
+for flaws before continuing. Found + fixed six latent dangling pointers in
+non-prose surfaces no gate parses (worker.md cited_works + source-form refs;
+schema-speaker-attribution.yaml; sources-access.md transcript-provenance — itself
+a dangle, not the owner; prose_entity_link.py *live error text*;
+validate-speaker-attribution.py) plus one load-bearing loss (the sibling
+orphan-cleanup hazard, restored to /prepare-ocr-sibling). Every "already-owned"
+drop verified to genuinely live in its claimed owner.
 
-**Done (Phases A–C).** Phase A (checks): prose-drift, cited_works, location-refs,
-check-naming + validator-design, source-form + off-node. Phase B (schema):
+**Done (Phases A–F).** A (checks): prose-drift, cited_works, location-refs,
+check-naming + validator-design, source-form + off-node. B (schema):
 manifest-shape, type-views, news-articles, key-passages-ordering, date-precision
-(BACKLOG C2 redirected). Phase C (skills/agents): OCR-fidelity,
-transcript-provenance + label-less, hearing-as-venue + key-testimony,
-primary-sources-archival, cross-references + interview-contract, paired-siblings,
-comparability + passage-rubric, confirmation-precondition. conventions.md
-1841 → 794 lines; all commits pushed (`git log --grep='docs(conventions)'`).
+(C2 redirected). C (skills/agents): OCR-fidelity, transcript-provenance,
+hearing-as-venue + key-testimony, primary-sources-archival, cross-references +
+interview-contract, paired-siblings, comparability + passage-rubric,
+confirmation-precondition. D (layout): versioning + scope (delete-already-owned by
+README/schema), repo-layout principle → README, scripts six-tiers → CLAUDE §5,
+meta root-vs-subdirs → meta/README. E (hygiene): working-notes +
+comments-describe-code + what-to-keep → memory.md, NO-BANDAIDS merged into memory;
+Density → build-protocol. F: 67 manifest + 1 schema conventions pointers re-cited
+to /prepare-ocr-sibling, schema extraction_type / transcript_provenance_values,
+verbatim_quotes.py. conventions.md 1841 → 457 lines.
 
-**Next.** Phase D (repo-layout / scripts-six-tiers / meta-root-vs-subdirs / scope /
-versioning → README / meta-README / CLAUDE); Phase E (NO-BANDAIDS /
-comments-describe-code / what-to-keep / working-notes / density → meta/memory.md);
-Phase F (~67 manifest `note:` re-citations + templates → cite the new owner or
-drop). Then Phase G — a **DECISION for the maintainer**, not a mechanical move:
-the residue is the cross-cutting epistemic axioms with no single code owner
+Two corrections to the prior Next-line routing, both confirmed against the code:
+Versioning was delete-already-owned (README + schema), not Phase-G residue;
+Density went to build-protocol, not memory.md (memory's charter excludes
+structural rules, and it had named code/template anchor consumers). One open
+item surfaced in F: the manifest entry for FOIA 24-F-0266 cited a
+"FOIA-email-release convention" with no owner anywhere in the repo — de-dangled
+to a self-describing form; a formal owner can be created later if wanted.
+
+**Next — Phase G, a DECISION for the maintainer (not a mechanical move).** The
+residue is the cross-cutting epistemic axioms with no single code owner: Part I
 (core-principle, relevance-relational, structure-reflects-evidence,
 confirmed/flagged, sworn-testimony, source-priority, contradictions, neutrality),
-plus statements-as-primitive and the Part IV three-layer / tier block. Decide:
-keep a slim unreferenced essay, fold into README, or fold into meta/memory.md.
+Part II statements-as-primitive, and the Part IV three-layer / tier block.
+Decide: keep a slim unreferenced essay, fold into README, or fold into
+meta/memory.md. Coupled to ~10 surviving "epistemic-standard" pointers that must
+be retargeted per the decision (AGENT.md, README.md, CLAUDE.md,
+onboard/SKILL.md). Until decided, conventions.md remains the valid home for these
+axioms and the pointers resolve.
 
 **Blocks:** none.
 **Blocked by:** none.
