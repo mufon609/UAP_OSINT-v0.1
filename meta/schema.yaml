@@ -723,7 +723,8 @@ artifact_entry:
   # quotes derived from the source land in any node. Quotes in node bodies
   # are not flagged with the source's extraction_type — confirmation against
   # the underlying original is a precondition for inclusion, not a rendered
-  # claim. See meta/conventions.md for the principle.
+  # claim. Enforced by scripts/checks/verbatim_quotes.py (source-read-first;
+  # see .claude/skills/build-protocol/SKILL.md).
   transcript_provenance_values:
     - stenographic
     - published-transcript
