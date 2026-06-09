@@ -332,7 +332,7 @@ def check_node_links(data, rpt):
     In a VERIFIED sibling every live speaker must carry a `/people/{slug}`
     node_link, OR be explicitly marked `no_repo_node: true` (an anonymous /
     unlinkable participant). A stub to an unbuilt node is the CORRECT value
-    (meta/conventions.md "stub, never null") — target existence is NOT
+    (build-protocol "name it, wrap it") — target existence is NOT
     checked here; the broken-link registry tracks it via the transcript node
     body. Draft siblings may still be filling links in, so the requirement
     binds only once verified."""

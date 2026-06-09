@@ -58,8 +58,8 @@ on_camera_role_values:
 # the live speaker set: a jingle composed by the show, a memo authored by
 # a third party, an archival clip recorded in a different context. The kinds
 # are enumerated in `foreign_kind_values` below; for how foreign content sits
-# alongside the live speaker set on a transcript artifact, see meta/conventions.md
-# "Transcript quotes carry structural speaker attribution".
+# alongside the live speaker set on a transcript artifact, see
+# meta/schema-research-artifact.yaml quote `speaker_id` field.
 foreign_kind_values:
   - foreign-jingle        # show-intro lyric/music with brand identifier
   - foreign-intro         # third-person framing voiceover (NOT a speaker)

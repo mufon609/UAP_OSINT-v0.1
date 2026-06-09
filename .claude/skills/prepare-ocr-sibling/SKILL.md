@@ -173,7 +173,13 @@ or replace it:
    ```
    `#clean-text-transcription` + `--wayback-skip` mark it derived and
    non-fetchable, paired to the parent PDF entry. Confirm with `manifest.py
-   verify-paths`. **Do not list the sibling in any artifact's `primary_sources[]`**
+   verify-paths`. **Register the sibling at the moment of creation** — a
+   sibling-on-disk-but-not-in-manifest is a silent dependency: quote
+   verification depends on a file the manifest doesn't record, and deleting it
+   (e.g. as "orphan cleanup") silently reverts `extract-source.py` to the PDF's
+   unusable text layer and breaks the build. Treat `manifest.py verify-paths`
+   plus pre-commit as the only safe orphan-cleanup gate for sibling files;
+   never delete an unregistered sibling on sight. **Do not list the sibling in any artifact's `primary_sources[]`**
    — the parent PDF is the primary source; the sibling is only the extraction
    surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources, so
    quotes derive verbatim text from it but cite the PDF path in `source.path`.

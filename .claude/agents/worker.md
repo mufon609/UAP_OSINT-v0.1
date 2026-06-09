@@ -116,8 +116,8 @@ naming the metadata field, never a `quotes[]` entry.
    reader meets on the node — inside a `quotes[]` span you emit, or a
    `cited_works` `citation_verbatim` you capture. A quirk for a form sitting in
    unquoted body or an uncaptured reference has no on-node referent and is
-   dropped as an *orphan* by the grounding gate (`meta/conventions.md`
-   "Source-Form Notes stays strictly grounded"); whole-scan fidelity is the
+   dropped as an *orphan* by the grounding gate
+   (`scripts/checks/source_form_grounding.py`); whole-scan fidelity is the
    manifest `extraction_type`'s job, not one row per typo. And `canonical`
    records only a form the source itself supports — **never assert a correction
    the source does not attest.** When the intended form is not derivable (a
@@ -127,8 +127,8 @@ naming the metadata field, never a `quotes[]` entry.
    discipline exists to prevent.
 4. **Document source — emit `cited_works` in one of three valid shapes.**
    `cited_works` is required on every document artifact; the shape carries an
-   affirmation about the source's reference-list state (`meta/conventions.md`
-   "cited_works affirmation"). A bare `cited_works: []` is REJECTED. Pick
+   affirmation about the source's reference-list state (NONE / IGNORED /
+   non-empty list). A bare `cited_works: []` is REJECTED. Pick
    exactly one based on what the source actually carries:
 
    - **`cited_works: NONE`** — the source has no formal reference list at

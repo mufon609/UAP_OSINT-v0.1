@@ -413,8 +413,8 @@ noting the manual-paste origin and the cleanup applied.
   downstream tooling (verbatim-quote check, prose-drift tokenizer)
   treats them indistinguishably.
 - The audio-vs-caption-as-source-of-record framing is governed by
-  the `transcript_provenance` convention (see `meta/conventions.md`
-  "Transcript provenance and audit discipline"); cookies-
+  the `transcript_provenance` convention (see `meta/schema.yaml`
+  `transcript_provenance_values`); cookies-
   authenticated yt-dlp output is `auto-caption` provenance, same
   as the API path and the manual-paste fallback.
 

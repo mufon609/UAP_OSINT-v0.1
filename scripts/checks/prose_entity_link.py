@@ -225,6 +225,6 @@ def check(ctx):
                 f"prose_entity_link: names existing entity {name!r} in prose "
                 f"but never wraps its stub {target} — add a [`{target}`] wrap "
                 f"so it reaches ## Associated Nodes (universal-stub rule; see "
-                f"meta/conventions.md 'Cross-references').",
+                f"build-protocol 'name it, wrap it').",
                 check_name=CHECK_NAME,
             )
