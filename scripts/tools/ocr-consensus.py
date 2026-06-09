@@ -19,8 +19,8 @@ load-bearing divergence is printed for an agent to reconcile against the page
 image, correcting the sibling where the VLM misread. The corrected sibling is
 the artifact; **no receipt YAML is written**. (The final quote-vs-source check
 happens later, at node audit: an agent verifies the built node's quotes against
-the source page images — not the sibling. See meta/conventions.md "Producing the
-`.txt` sibling".)
+the source page images — not the sibling. See the prepare-ocr-sibling skill
+(.claude/skills/prepare-ocr-sibling/SKILL.md).)
 
 PaddleOCR is the higher-trust OCR engine; Tesseract is an available second
 opinion (a token is corroborated if EITHER engine agrees with the sibling, so a

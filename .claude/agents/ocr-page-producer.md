@@ -37,7 +37,7 @@ missing files are the blocked-page ledger; `ocr-consensus.py` PaddleOCR-fills th
 pages mechanically afterward (PaddleOCR is non-generative, so it is not blocked).
 Report which pages you wrote and which you skipped.
 
-## Transcription discipline (per `meta/conventions.md` "Producing the `.txt` sibling")
+## Transcription discipline (per `.claude/skills/prepare-ocr-sibling/SKILL.md`)
 
 - Reproduce body prose **character-for-character**, including the document's own
   typos and spellings — do **NOT** correct them.

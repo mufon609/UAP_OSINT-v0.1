@@ -38,7 +38,7 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Date precision: orientation-grade in prose, field-precise in tables](#date-precision-orientation-grade-in-prose-field-precise-in-tables)
   - [Quote location refs: source-anchored, not extraction-anchored](#quote-location-refs-source-anchored-not-extraction-anchored)
 - **Part III — Source extraction & provenance**
-  - [Producing the `.txt` sibling, then confirming it](#producing-the-txt-sibling-then-confirming-it)
+  - [OCR-scan sources: source-form fidelity and the `.txt` sibling](#ocr-scan-sources-source-form-fidelity-and-the-txt-sibling)
   - [A source naming an entity under a non-canonical form — flag it, stub it](#a-source-naming-an-entity-under-a-non-canonical-form--flag-it-stub-it)
   - [Off-node variants — catalogued, not on the node](#off-node-variants--catalogued-not-on-the-node)
   - [Transcript provenance and audit discipline](#transcript-provenance-and-audit-discipline)
@@ -1131,192 +1131,17 @@ the entry's structure, not the check, is what the `location` note documents.
 
 ## Part III — Source extraction & provenance
 
-### Producing the `.txt` sibling, then confirming it
+### OCR-scan sources: source-form fidelity and the `.txt` sibling
 
-The sibling is built and
-checked in four steps, two of them independent reads by *different tools*:
-
-1. **Transcribe** the page images to the `.txt` sibling — a **VLM page-image
-   read** (per-page chunked, so a content-filter block costs one page, not the
-   run). It is the readable base: best paragraph structure, source spellings and
-   redaction markers preserved verbatim, figures/equations bracketed.
-2. **Confirm the sibling with a different tool.** PaddleOCR (a different modality
-   — deep-learning OCR, *not* content-blocked, and the better OCR engine)
-   re-reads the pages and is diffed against the sibling. A single read can't be
-   trusted on itself: the retired "one producer → one independent verifier" model
-   failed silently because both read the same image with the same kind of vision
-   model and made the *same* misread — DIRD-16's sibling was certified "PASS" yet
-   carried `III→ITT`, `communication→cammunication`, `81→82`, `Klyshko→Kiyshko`.
-   A different *modality* catches those instead of sharing them.
-3. **Build the node**, drawing quotes from the confirmed sibling.
-4. **Audit** the built node's quotes against the **source PDF page images** — not
-   the sibling (see "the final check" below).
-
-The confirmation in step 2 compares only **load-bearing characters — letters,
-digits, and the numeric symbols `. - % $ °`**. Document *structure* (punctuation,
-bullets, brackets, markup `*`, banners, figure labels, dot-leaders) is **never
-compared**: it is not source-literal prose, and comparing it is what drowned the
-retired whole-document consensus in ~99% furniture noise (the DIRD-16 pilot: 1067
-contested spans, **0** of them inside any of the 21 node quotes). So the
-confirmation report is the short list of *words and numbers* where the sibling
-and the OCR engines disagree — each one read against the page image. The
-guarantee is *the words and numbers rest on two reads by different tools*, **not**
-a character-perfect transcription of the page.
-
-Run it via `/prepare-ocr-sibling`: `ocr-consensus.py run --vlm-pages DIR` (the
-per-page scratch directory) concatenates the pages into the sibling and prints the
-load-bearing divergence report, **partitioned** into a small HIGH-SIGNAL set (both
-OCR engines agree against the sibling — each tagged with its `p.N` page) and a
-skim-only weak set (banners, bracketed figure/equation placeholders, per-engine
-glyph noise). The agent settles **every** high-signal divergence **against the
-page image** — not by surrounding-text plausibility, which re-trusts the VLM
-against itself — and **corrects the sibling** where the VLM misread (the sibling
-is canonical — fix it before any quote derives from it), leaving the divergences
-that are just OCR errors on a correct sibling. (Passing a pre-concatenated `--vlm
-FILE` still works but yields no page numbers.) `ocr-consensus.py verify`
-re-confirms the on-disk sibling without regenerating it.
-The OCR engines are glyph-recognition models that share failure modes (accent-drop
-`Lím`→`Lim`, `i`→`cl` `Science`→`Sclence`, subscript-digit→letter `SiO2`→`SiOz`,
-dropped super/subscripts `2nd`→`2`), so a divergence where both OCR engines agree
-against the VLM is often the *OCR* being wrong — the agent decides by reading the
-image, not by vote. On a **content-blocked page** the VLM **cannot produce** the
-text (the filter blocks reproduction) so the sibling is a **PaddleOCR-fill**
-(PaddleOCR, not Tesseract, is the better fallback) — but the VLM **can still
-verify** it: judging the fill against the page image is a tiny output, not
-reproduction. Because the sibling there *is* PaddleOCR, the normal diff is silent,
-so `ocr-consensus.py run --blocked-pages N,M` instead surfaces the
-PaddleOCR-vs-Tesseract disagreements on those pages, which the agent VLM-verifies
-against the image. The blocked-page outcome is recorded in the source's
-`content_block` (renders as a `Content Block` row in the node's Document Summary
-table — `None`, or which pages were filled — so it is greppable repo-wide). No receipt file is written —
-the corrected sibling *is* the artifact.
-
-**The final check (at node audit).** Quote-vs-source verification is not done at
-sibling-prep time and is not a persisted gate; it happens when the node is
-audited. `/audit` verifies the built node's quotes against the **source PDF page
-images**, not the sibling — so a sibling error that reached a quote is caught
-against the original. After that passes, the node and sibling are good to go.
-cited_works are in scope of that check too: they are load-bearing verbatim
-citations and inherit the same OCR garble (DIRD-16 cw2/cw5/…/cw24).
-
-The four methods below are alternative ways to produce a *read* (a
-token-recognition pass) — the VLM grab, or an OCR cross-check, or a recovered
-text layer. A single pass, however careful, is exactly what failed; pick
-production methods that fit the document's shape, and confirm the sibling with a
-read by a *different tool* (step 2 above) before it becomes canonical.
-
-1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
-   despite OCR-suggesting producer metadata. Run `pdftotext -layout source.pdf`, diff
-   the output against the rendered page, and copy to the sibling
-   path if clean. Lowest effort; only viable when the layer happens
-   to be reliable. The validator's `extract_source_text` already
-   prefers the sibling when present, so the workflow is strictly
-   one-shot.
-
-2. **Modern OCR.** Tesseract / Google Cloud Vision / Azure Read API
-   on rasterized pages. Output requires page-by-page contributor
-   review against the source PDF — OCR introduces character-level
-   corruption (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, `ll`↔`11`) that the
-   contributor must correct before the sibling becomes canonical.
-   The contributor IS the independent verifier here; reading both
-   the OCR output and the source page closes the trust gap. Best for
-   batch-processing long documents where per-character review at
-   scale is more practical than full retyping.
-
-3. **VLM page-image read.** A multimodal LLM reads the source's
-   page images directly and produces transcribed text in one pass
-   (e.g., Claude's Read tool with `pages: N-M`, max 20 pages per
-   request). Per-character OCR corruptions don't appear because the
-   model isn't reading character-glyph features — it's reading the
-   image at a higher level of abstraction. Failure mode is different:
-   the model may *hallucinate* over ambiguous content (faded ink,
-   redactions, marginal handwriting, signature glyphs) where OCR
-   would simply garble.
-
-   *Independent verification by a different agent — a human
-   contributor or a different model session — is required before the
-   sibling becomes canonical.* The producing session cannot self-
-   verify hallucinations; the failure mode is invisible to the agent
-   that produced it. Practical for short documents (single-digit
-   page counts) where chunking overhead is low and human spot-check
-   is fast. For documents > 20 pages, track the chunk boundaries
-   explicitly (e.g., `pages: 1-20`, `pages: 21-40`) so re-runs land
-   on the same page sets.
-
-4. **Manual transcription.** The contributor reads the source page
-   directly and types the transcription. Highest fidelity for very
-   short documents (1-3 pages, e.g., the SD004 page-1 Q&A). The
-   contributor is both producer and verifier; the visual reading
-   that produces the text IS the verification. No second-agent step
-   needed.
-
-For all four paths, the canonical sibling lands at `<same-stem>.txt`
-adjacent to the source. The validator's `extraction_type: ocr-scan`
-or `extraction-lossy` flag tells `extract_source_text` to prefer the
-sibling over the underlying PDF text layer. The sibling itself is a
-manifest entry (matching the parent PDF entry); it is **NOT** listed
-in any artifact's `primary_sources[]` — the parent PDF is the
-primary source, the sibling is only the extraction surface. Quotes
-derive their verbatim text from the sibling but cite the PDF path in
-`source.path`.
-
-**The parent-in-`primary_sources[]` rule generalizes to every paired
-sibling — OCR clean-text and speaker-attribution alike.** Both flavors
-register as a manifest entry whose URL carries a fragment marker
-distinguishing it from its parent — `#clean-text-transcription` for an
-OCR sibling, `#speaker-attribution` for the speaker-attribution sibling
-produced by `/prepare-transcript-sibling` (agent-based attribution
-pipeline; the photo-identity-log machinery at
-`scripts/tools/VIDEO-PIPELINE.md` is the conditional image-verification
-backstop, not the spine). In both cases `primary_sources[]` lists the
-**parent** (the PDF for an OCR-scan source, the auto-caption /
-human-corrected-caption file for a label-less transcript), never the
-sibling. The structural twist between the two flavors is what the
-sibling does to its parent: the OCR sibling **replaces** the parent's
-corrupt text layer (quotes derive verbatim text from the sibling); the
-attribution sibling **coexists with** the parent, adding the speaker-
-attribution layer (a YAML indexed by line range into the source file —
-see `meta/schema-speaker-attribution.yaml`) that
-`validate-research.py` matches `speaker_id` against (the
-`speaker_attribution_consistency` check, which resolves each quote's
-`[MM:SS]` anchor to the covering turn) while the auto-caption file
-remains the verbatim source `validate.py` matches `quote.text` against. The fragment-marker pattern is the manifest's
-signal that an entry is a sibling, not a parent.
-
-**Sibling-production method standard.** The four paths above are
-interchangeable on fidelity, but they are NOT interchangeable on
-*uniformity*: the VLM (vision-language model) path runs through the
-model provider's *generative* content-safety filter — a platform-level
-guardrail on the model's output, entirely separate from this
-repository's topic scope and editorial rules. It can fire unpredictably
-mid-transcription, and its trigger is opaque: in practice it has blocked
-one source while transcribing another of comparable subject matter
-cleanly, so it does NOT track this repository's topic scope and is never
-a signal about a source's relevance. The one predictable case is content
-the model's policy treats as sensitive to *reproduce* — plainly CBRN /
-weapons-design-sensitive material reliably trips the generative filter,
-which is why such a source skips the VLM step (pre-screen below). A
-dedicated OCR engine
-does text *recognition*, not generation, so it is filter-immune and
-uniformly applicable. The standard method
-ladder for every OCR-scan / extraction-lossy sibling:
-
-0. **Pre-screen — plainly CBRN / weapons-design-sensitive?** Judge from the
-   title / table of contents. If so, **skip the VLM step and start at the OCR
-   engine** (step 2): a model reproducing such a passage as its own tokens
-   hard-terminates on the content filter, wasting the attempt. The
-   `/prepare-ocr-sibling` skill applies this route check first.
-1. **Default — VLM page-image read** (path 3): highest fidelity on
-   degraded scans (contextual glyph restoration, equation/table
-   handling). Use whenever it completes.
-2. **Filter fallback — a dedicated OCR engine** (path 2), filter-immune:
-   **Tesseract 5** (`sudo apt install tesseract-ocr`; rasterize with the
-   already-present `pdftoppm`) as the free/local default, or a **cloud
-   Document-OCR API** (Google Document AI / Azure Document Intelligence)
-   for higher fidelity on math / Greek / layout. The chosen engine is a
-   project dependency for completing the OCR-scan corpus.
-3. **Manual transcription** (path 4): last resort for short documents an
-   engine mangles.
+An OCR-scanned source (manifest `extraction_type: ocr-scan` /
+`extraction-lossy`) has a corrupt text layer; quotes cannot be drawn from it
+until a trustworthy same-stem `.txt` **sibling** exists. That sibling is produced
+and confirmed via `/prepare-ocr-sibling` — the production protocol (the VLM
+page-image read, the PaddleOCR cross-check on load-bearing words and numbers, the
+four production-method ladder, and the CBRN pre-screen) lives in the skill, and
+the final quote-vs-source page-image check lives in `/audit`. The cross-cutting
+evidentiary rules that govern such a source — wherever its sibling is produced —
+stay here.
 
 **Fidelity discipline for OCR-engine output — preserve, don't strip or
 fix.** An OCR engine renders body prose reliably but mangles regions
@@ -1341,16 +1166,6 @@ mangle** of a glyph the document rendered correctly (He³ → `He?`) is
 **corrected** to the document's reading in both the sibling and the quote,
 never logged as sic, because it is not the source's form. Draw verbatim
 quotes from the clean prose.
-
-**Provenance + verification are mandatory regardless of method.** Record
-the production method (VLM / Tesseract / cloud-OCR / manual) in the
-sibling's manifest note. Verify before canonical: an independent agent
-session for VLM / clean output; **contributor (human) page-by-page
-review for OCR-engine output** (the path-2 reviewer — also the robust
-choice when an independent-agent verifier would itself hit the content
-filter on the source's images). The recorded method keeps per-sibling
-fidelity transparent and lets the method improve over time without
-re-litigation.
 
 **Silent-sibling lookup.** `extract_source_text` finds a `.txt`
 sibling by *path stem*, not by manifest registration. A
@@ -2042,6 +1857,39 @@ across the whole manifest).
    URLs claim the same archived file).
 3. `artifacts` is non-empty when `status == archived`.
 4. `artifacts` is empty (or absent) when `status != archived`.
+
+#### Paired siblings — the parent is the primary source
+
+Some sources are quoted through a **paired sibling**, not directly: an OCR-scan
+PDF through its clean-text `.txt` sibling (`/prepare-ocr-sibling`), a label-less
+transcript through its speaker-attribution YAML (`/prepare-transcript-sibling`).
+The sibling is the *extraction surface*, never the primary source: it registers
+as its own manifest entry, but an artifact's `primary_sources[]` lists the
+**parent**, and quotes cite the parent's path in `source.path` while deriving
+their verbatim text from the sibling.
+
+**This rule generalizes to every paired sibling — OCR clean-text and
+speaker-attribution alike.** Both flavors
+register as a manifest entry whose URL carries a fragment marker
+distinguishing it from its parent — `#clean-text-transcription` for an
+OCR sibling, `#speaker-attribution` for the speaker-attribution sibling
+produced by `/prepare-transcript-sibling` (agent-based attribution
+pipeline; the photo-identity-log machinery at
+`scripts/tools/VIDEO-PIPELINE.md` is the conditional image-verification
+backstop, not the spine). In both cases `primary_sources[]` lists the
+**parent** (the PDF for an OCR-scan source, the auto-caption /
+human-corrected-caption file for a label-less transcript), never the
+sibling. The structural twist between the two flavors is what the
+sibling does to its parent: the OCR sibling **replaces** the parent's
+corrupt text layer (quotes derive verbatim text from the sibling); the
+attribution sibling **coexists with** the parent, adding the speaker-
+attribution layer (a YAML indexed by line range into the source file —
+see `meta/schema-speaker-attribution.yaml`) that
+`validate-research.py` matches `speaker_id` against (the
+`speaker_attribution_consistency` check, which resolves each quote's
+`[MM:SS]` anchor to the covering turn) while the auto-caption file
+remains the verbatim source `validate.py` matches `quote.text` against. The fragment-marker pattern is the manifest's
+signal that an entry is a sibling, not a parent.
 
 ---
 

@@ -45,8 +45,8 @@ failure mode (it is invisible to its author).
 - **OCR-scanned documents** (`extraction_type: ocr-scan` / `extraction-lossy`):
   the `pdftotext` layer is corrupt, so quotes pulled from it would be garbage
   or fail the verbatim gate. Its canonical text is a same-stem `.txt` sibling,
-  produced by VLM page-image read (`meta/conventions.md` "Producing the `.txt`
-  sibling"). Sibling-readiness step: **`/build` step 4b** via
+  produced by VLM page-image read (see `/prepare-ocr-sibling`).
+  Sibling-readiness step: **`/build` step 4b** via
   `/prepare-ocr-sibling`. *The sibling replaces the corrupt text layer.*
 - **Label-less transcripts** (`transcript_provenance: auto-caption` /
   `human-corrected-caption` without inline labels): the caption text is fine

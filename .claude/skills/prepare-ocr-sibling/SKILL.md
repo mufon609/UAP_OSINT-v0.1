@@ -53,6 +53,43 @@ few libs). `ocr-consensus.py run` / `verify` auto-relaunch under that venv.
 
 ---
 
+**Production methods, pre-screen, and fallbacks.** The default path below is the
+VLM page-image read confirmed against PaddleOCR. Two things can select against it
+or replace it:
+
+- **CBRN pre-screen — do this first.** The VLM runs through the model provider's
+  *generative* content-safety filter — a platform guardrail, separate from this
+  repo's topic scope. It fires unpredictably (it has blocked one source while
+  cleanly transcribing another of comparable subject) and is never a signal about
+  a source's relevance. Its one *predictable* trip is content the model's policy
+  treats as sensitive to **reproduce**: plainly CBRN / weapons-design-sensitive
+  material hard-terminates the VLM mid-transcription. Judge from the title / table
+  of contents; if the source is plainly CBRN, **skip the VLM step and start at a
+  dedicated OCR engine** — a recognition model, not generative, so it is
+  filter-immune.
+- **Production-method ladder.** A *read* (a token-recognition pass) can come from
+  any of four passes; a single pass — however careful — is exactly what failed, so
+  whichever you use, confirm it against a read by a *different tool* before it
+  becomes canonical:
+  1. **Text-layer pull** — `pdftotext -layout`; only when the buried layer happens
+     to be clean (diff against the rendered page first).
+  2. **VLM page-image read** (default) — highest fidelity on degraded scans
+     (contextual glyph restoration, equation/table handling); the
+     producer → PaddleOCR flow below. Use whenever it completes.
+  3. **Dedicated OCR engine** (filter fallback, filter-immune) — **Tesseract 5**
+     (`sudo apt install tesseract-ocr`; rasterize with `pdftoppm`) as the
+     free/local default, or a cloud Document-OCR API (Google Document AI / Azure
+     Document Intelligence) for math / Greek / layout. Output requires
+     page-by-page contributor review against the source PDF — the contributor is
+     the independent verifier here.
+  4. **Manual transcription** — last resort for short documents an engine mangles
+     (the visual read that produces the text is its own verification).
+- **Record the method** (VLM / Tesseract / cloud-OCR / manual) in the sibling's
+  manifest note (step 4), so per-sibling fidelity stays transparent and the method
+  can improve over time without re-litigation.
+
+---
+
 1. **Confirm the need.** Read the source's manifest entry (`python3
    scripts/tools/manifest.py status {url}`, or grep `sources/manifest.yaml`).
    Proceed only if flagged `ocr-scan` / `extraction-lossy` AND no same-stem
