@@ -26,11 +26,9 @@ fields, valid vocabularies, required sections per node type — lives in
   - [Neutrality](#neutrality)
 - **Part II — The evidentiary primitive: quotes**
   - [Statements as the universal evidentiary primitive](#statements-as-the-universal-evidentiary-primitive)
-  - [Type-specialized views of `quotes[]`](#type-specialized-views-of-quotes)
   - [Key Passages ordering](#key-passages-ordering)
   - [Hearing events as venues](#hearing-events-as-venues)
   - [Key Testimony selection — substantive over procedural](#key-testimony-selection--substantive-over-procedural)
-  - [News articles and books](#news-articles-and-books)
   - [Density is source-driven](#density-is-source-driven)
   - [Date precision: orientation-grade in prose, field-precise in tables](#date-precision-orientation-grade-in-prose-field-precise-in-tables)
 - **Part III — Source extraction & provenance**
@@ -462,33 +460,6 @@ Reserve the sibling for extraction that is broken throughout; the test
 is the OCR-producer / pervasive-noise signal (the detection signals in
 `archive.md`), not the presence of any single bad character.
 
-### Type-specialized views of `quotes[]`
-
-Each node type renders a filtered view of the same universal primitive:
-
-- **Person** → `## Statements`, split by `observation_type` (Direct
-  Observations / Other Statements) and sorted by `statement_date`.
-- **Person (whistleblower)** → additionally `## Claim Inventory`, a
-  render-time projection of quotes tagged `category: filed-claim`.
-  A filter, not a separate data structure — the filed claim IS the
-  quote.
-- **Event (hearing)** → `## Key Testimony`, verbatim passages sorted
-  by `statement_date`, surfacing evidentiarily-distinctive moments.
-- **Document / transcript / media / organization / location** →
-  `## Key Passages`, verbatim excerpts of what the source says about
-  its subject — sorted by `statement_date` (see "Key Passages
-  ordering" below).
-
-Every quote surface above renders its blockquote through one shared helper
-(`renderers/_common.py::_render_blockquote`) that **reflows soft-wrap
-newlines** — quote text copied verbatim from a YAML `|` literal block keeps
-the source's physical ~80-col line-wrapping, which the helper rejoins into one
-`> ` line per paragraph at display time, preserving blank-line paragraph
-breaks and list-item structure. So a contributor may author quote text as a
-`|` block (fidelity to the source's layout) without producing a blockquote
-broken mid-sentence; verification is unaffected (the verbatim-quote check
-normalizes whitespace).
-
 ### Key Passages ordering
 
 Chronological-by-`statement_date` is the corpus default for every
@@ -572,13 +543,6 @@ Event-level Key Testimony may overlap the witness-specific transcript or
 document Key Passages, and that is expected: an event stands as a
 self-contained highlights reel an investigator can read without clicking
 through, and the renderer does not deduplicate across nodes.
-
-### News articles and books
-
-Stored as `document` nodes (kind `non-gov-doc`, doc_form `article` or
-`book`). Credibility analysis of the author/publisher lives on the
-author's person node or the publisher's organization node, not on the
-document.
 
 ### Density is source-driven
 
@@ -1091,61 +1055,6 @@ the manifest entry, not prose references to manifest row numbers.
 When a source is blocked or paywalled, the manifest entry records the
 block status and the archival route (if any) is documented on the
 entry. See `sources-access.md` for site-specific workarounds.
-
-#### Manifest shape — URL is canonical, artifacts are renderings
-
-`sources/manifest.yaml` models each source URL as one entry. The URL
-is the canonical thing being archived; the `artifacts` list under it
-records each archived rendering of the URL's content.
-
-URL-level fields describe the source itself:
-
-- `url` — the canonical source URL
-- `status` — `archived` | `403-blocked` | `402-blocked` | `pending`
-- `archive_status` — 2-bit indicator: bit 0 = locally archived
-  (status==archived AND artifacts non-empty); bit 1 = Wayback present
-- `wayback_date` — Wayback snapshot date when bit 1 is set
-- `wayback_skip: true` — URL is structurally unarchivable to Wayback
-  (synthetic deep-links, session-bound URLs)
-- `note` — description of the source itself
-
-Artifact-level fields describe one archived rendering:
-
-- `format` — `pdf` | `html` | `txt` | `audio` | `image` | `video` | `transcript`
-- `path` — relative path under `sources/`
-- `archived_date` — date this rendering was downloaded
-- `extraction_type` — `text-native` | `ocr-scan` | `extraction-lossy`
-  (applies to PDF; drives same-stem `.txt` sibling preference)
-- `transcript_provenance` — `stenographic` | `published-transcript` |
-  `human-corrected-caption` | `auto-caption` | `unknown` (applies to
-  `format: transcript`)
-- `note` — description of this specific rendering (extraction
-  caveats, transcription corrections, etc.)
-
-**Dual-artifact pattern.** A source URL whose content has been
-archived twice — most commonly an audio/video URL with both the
-underlying media and a derived transcript — gets ONE URL entry with
-TWO entries in its `artifacts` list (e.g., `format: video` + `format:
-transcript`). The transcript's `transcript_provenance` records how it
-was produced from the underlying media; readers and tools can walk
-the renderings under a URL to find the right one to verify against.
-
-**`manifest.py add` semantics.** `manifest.py add URL --path PATH
---format FMT` creates a new URL entry on first call, appends a new
-artifact to the existing URL entry on subsequent calls (different
-paths under the same URL). Idempotent when the (URL, path) tuple
-already matches an existing artifact. Errors loudly if the supplied
-path is already registered under a different URL (path uniqueness
-across the whole manifest).
-
-**Invariants** enforced by
-`scripts/checks/manifest_artifact_shape.py`:
-
-1. Every URL is unique (one entry per source URL).
-2. Every artifact path is unique across the whole manifest (no two
-   URLs claim the same archived file).
-3. `artifacts` is non-empty when `status == archived`.
-4. `artifacts` is empty (or absent) when `status != archived`.
 
 #### Paired siblings — the parent is the primary source
 
