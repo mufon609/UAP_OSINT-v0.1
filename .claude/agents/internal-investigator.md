@@ -33,14 +33,12 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
 4. **Name the gaps** — load-bearing topics not covered internally. If nothing
    is missing, set `all_internal: true` (the orchestrator then skips the
    External Investigator + Archive and goes straight to the Worker).
-   - **`blocking_prep` ≠ a gap.** A reused source flagged `ocr-scan` /
-     `extraction-lossy` that lacks a verified `.txt` sibling is **not** a Worker
-     gap and not an external-sourcing gap — the Worker cannot produce it (it has
-     no Write tool). Record it as a `blocking_prep` item: the orchestrator's
-     sibling-readiness step (`/build` step 4b) must produce + independently
-     verify + register the sibling before the Worker. `all_internal` can stay
-     `true` (no external fetch); `blocking_prep` is about source-prep, not
-     sourcing.
+   - **`blocking_prep` — source-prep, not sourcing.** Record each reused
+     source flagged `ocr-scan` / `extraction-lossy` that lacks a verified
+     `.txt` sibling as a `blocking_prep` item: the orchestrator must run the
+     sibling-readiness step (`/build` step 4b) before the Worker. It is not a
+     gap — nothing needs fetching — so `all_internal` stays `true` when the
+     reused sources themselves suffice.
 
 Return the internal-investigator stub (build-protocol → stub-schemas.md) as
 your final message — the orchestrator reads it to drive the next role.

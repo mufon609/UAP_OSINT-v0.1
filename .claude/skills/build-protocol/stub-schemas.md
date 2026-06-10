@@ -1,8 +1,8 @@
 # Handoff-stub schemas
 
 One stub per role. Each role reads only its own. A stub is a role's **return
-value** — the final message it returns to the orchestrator (no file is
-written). Every example value is a placeholder — keep this file topic-neutral.
+value** — the final message it returns to the orchestrator (you write no file
+for it). Every example value is a placeholder — keep this file topic-neutral.
 
 ```yaml
 # internal-investigator — returned stub

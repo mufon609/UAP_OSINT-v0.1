@@ -25,45 +25,35 @@ to the next, and never hand-author the node. The shared contract
 (stub schemas, phases, branches, fix-the-data) is preloaded from
 `build-protocol`.
 
-**Relay, don't author — the one handoff rule.** Every role's policy —
-evidentiary discipline, entity-linking (stub-never-null), quote scope and
-voice, relevance judgment, prose-drift framing — already lives complete and
-correct in that role's contract (`build-protocol` + `.claude/agents/{role}.md`).
-At each handoff your job is to **relay the step's closed input set** (the
-`Pass:` column of the table below — named fields quoted verbatim from prior
-stubs, the target, source paths) and **nothing else**. Do not restate,
-summarize, re-derive, or "clarify" *how* a role should judge linking,
-relevance, quote scope, or prose-drift: a subagent weights its just-issued task
-prompt **above** its standing contract, so any policy you improvise into the
-prompt silently overrides the contract. The recurring failure this prevents: an
-authored Description dropped every source-attested entity link after the
-orchestrator imported the discretionary quote-relevance judgment ("judge
-load-bearing-ness") into the absolute entity-linking rule. If you feel the
-urge to explain how a role should decide something,
-stop — that judgment is the role's, and its contract already states it. Relay
-stub fields verbatim; do not paraphrase them.
+**Relay, don't author — the three handoff rules.**
 
-A disk-stub transport (the pre-skills-migration `/tmp/handoff-{slug}-{role}.yaml`
-files) was evaluated and **rejected** as the fix for this hazard: it transports
-stub *data* losslessly but does nothing to stop the orchestrator adding policy
-prose alongside the file path — it addresses data fidelity, not the
-policy-injection hazard — and the verbatim-boundary roles (the worker has no
-Write tool) cannot satisfy a role-written handoff file, so reintroducing it
-would either puncture that capability boundary or reverse the "no file is
-written for the handoff" principle for zero gain on the real hazard. Its one
-legitimate kernel — relay the stub verbatim, never paraphrase — is the rule
-above.
+1. **Relay each step's closed input set verbatim** — the `Pass:` column of the
+   table below (named fields quoted verbatim from prior stubs, the target,
+   source paths) — and **nothing else**.
+2. **Never restate, summarize, or "clarify" a role's policy** — evidentiary
+   discipline, entity-linking, quote scope and voice, relevance judgment,
+   prose-drift framing. It lives complete in that role's contract
+   (`build-protocol` + `.claude/agents/{role}.md`), and a subagent weights its
+   just-issued task prompt **above** its standing contract, so any policy you
+   improvise into the prompt silently overrides the contract. If you feel the
+   urge to explain how a role should decide something, stop — its contract
+   already states it.
+3. **Never relay a truncated stub.** A role return above the harness
+   context-injection cap never arrives whole: the harness persists the full
+   return to a session file (`tool-results/*.json`) and hands back a short
+   preview plus the path. `Read` the persisted file, confirm it is the
+   complete stub, and relay the **path** verbatim (alongside the step's other
+   named input fields) — never the preview. The next role `Read`s the same
+   bytes.
 
-One disk path does exist, and it is **not** the rejected design: the
-**harness itself** persists an oversized role return to a session file
-(`tool-results/*.json`) and hands back a short preview plus the path — a
-return value above the context-injection cap never arrives whole in-context.
-When that happens, **never relay the truncated preview as if it were the
-stub**: `Read` the persisted file, confirm it is the complete fragment, and
-relay the persisted path verbatim (alongside the step's other named input
-fields) to the next role, which `Read`s the same bytes. The relay stays
-byte-identical, no role wrote a file, and the orchestrator authored nothing —
-both principles above hold.
+Why these rules: the failure rule 2 prevents actually happened — an authored
+Description dropped every source-attested entity link after the orchestrator
+imported the discretionary quote-relevance judgment into the absolute
+entity-linking rule. A disk-stub transport (the pre-skills-migration
+`/tmp/handoff-{slug}-{role}.yaml` files) was evaluated and **rejected**: it
+fixes data fidelity, which was never the hazard — rule 2's policy injection
+is. No role or orchestrator ever writes a handoff file; rule 3's persisted
+file is written by the harness.
 
 **Target.** `{type}/{slug}` + scope come from the user — per the project
 discipline, never invent a build target. If `$ARGUMENTS` is empty, ask what to
@@ -197,50 +187,34 @@ invocation; the relay/contract split holds one level down too.
      (it writes fresh and cannot append, so every source goes in this one call)
    - then `python3 scripts/build/validate-research.py --phase archive meta/research/{slug}.yaml`
      (the artifact's first validation).
-   - *(The scaffolder is hook-gated: a second uncommitted new person/org node
-     in one session is blocked. Lighter types may batch. Don't work around it.)*
-4b. **OCR-scan sibling readiness — gate before the Worker.** A primary source
-   flagged `extraction_type: ocr-scan` / `extraction-lossy` (manifest) is **not
-   worker-ready**: its extract layer is corrupt, so a quote pulled from it is
-   garbage or trips the verbatim gate (the why + the
-   produce→independently-verify→register contract: build-protocol →
-   "Some primary sources need a verified sibling"). Read the manifest entry for
-   each primary source; any ocr-scan / extraction-lossy source lacking a
-   verified same-stem `.txt` sibling MUST get one before the Worker. This is the
-   orchestrator's responsibility, **never the Worker's** (the Worker has no Write
-   tool), and it runs **regardless of the all-internal branch** — all-internal
-   skips new-bytes sourcing (external + archive), not source-prep. The remedy is
-   the **`/prepare-ocr-sibling`** skill, which produces, independently verifies,
-   and registers the sibling: **invoke `/prepare-ocr-sibling {source-path}` via
-   the Skill tool — you are the main thread, so you can.** Only if your
-   environment cannot dispatch a skill from here, **HALT** and direct the user to
-   run it. Either way, do it before handing the Worker a corrupt extract. Once
-   every ocr-scan source has a verified sibling, the canonical scratch comes from
-   `extract-source.py --artifact` (it prefers the sibling). Text-native sources
-   need no sibling.
-4c. **Transcript sibling readiness — gate before the Worker.** A primary source
-   flagged `transcript_provenance: auto-caption` / `human-corrected-caption`
-   (label-less; no inline speaker labels) is **not worker-ready for `speaker_id`**:
-   the caption file carries the verbatim text but no built-in attribution, so
-   `speaker_id` on quotes cannot be derived from it alone (the why + the
-   produce→independently-verify→register contract: build-protocol →
-   "Some primary sources need a verified sibling"). Read the manifest entry for
-   each primary source; any label-less transcript source lacking a verified
-   `-attribution.yaml` sibling MUST get one before the Worker. Same shape as 4b:
-   orchestrator's responsibility, **never the Worker's**, and it runs
-   **regardless of the all-internal branch**. The remedy is the
-   **`/prepare-transcript-sibling`** skill, which runs the agent-based
-   attribution pipeline (semantic parse → structural validate → independent
-   verify → conditional image-verification backstop) and registers the paired
-   sibling: **invoke `/prepare-transcript-sibling {slug}` via the Skill tool
-   — you are the main thread, so you can.** Only if your environment cannot
-   dispatch a skill from here, **HALT** and direct the user to run it.
-   Either way, do it before the Worker emits a speaker-attributed quote.
-   Unlike 4b, the verbatim source is unchanged — `extract-source.py
-   --artifact` still pulls from the auto-caption file; the sibling YAML adds
-   the attribution layer `validate-research.py` matches `speaker_id` against
-   (indexed by line range into the source file). Labeled sources
-   (`stenographic` / `published-transcript`) need no sibling.
+   - *(The scaffolder is hook-gated: one new person/org node per session; all
+     other types may batch — build-protocol → "One new synthesis-heavy node per
+     session" enumerates them. Don't work around it.)*
+4b. **OCR-scan sibling gate** *(orchestrator step — before any Worker)*. Read
+   the manifest entry for each primary source. A source flagged
+   `extraction_type: ocr-scan` / `extraction-lossy` without a verified
+   same-stem `.txt` sibling is **not worker-ready** (its extract layer is
+   corrupt): **invoke `/prepare-ocr-sibling {source-path}` via the Skill
+   tool**; if that invocation fails, **HALT** and direct the user to run it
+   (the why + the produce→independently-verify→register contract:
+   build-protocol → "Some primary sources need a verified sibling"). This gate
+   runs **regardless of the all-internal branch** — all-internal skips
+   new-bytes sourcing, not source-prep. Once every ocr-scan source has a
+   verified sibling, the canonical scratch comes from
+   `extract-source.py --artifact` (it prefers the sibling). Text-native
+   sources need no sibling.
+4c. **Transcript sibling gate** *(orchestrator step — same shape as 4b)*. A
+   source flagged `transcript_provenance: auto-caption` /
+   `human-corrected-caption` (label-less) without a verified
+   `-attribution.yaml` sibling is **not worker-ready for `speaker_id`** (the
+   caption carries verbatim text but no attribution): **invoke
+   `/prepare-transcript-sibling {slug}` via the Skill tool**; if that
+   invocation fails, **HALT** and direct the user to run it. Runs regardless
+   of the all-internal branch. Unlike 4b the verbatim source is unchanged —
+   `extract-source.py --artifact` still pulls from the caption file; the
+   sibling adds the attribution layer `validate-research.py` matches
+   `speaker_id` against. Labeled sources (`stenographic` /
+   `published-transcript`) need no sibling.
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.
@@ -265,9 +239,7 @@ invocation; the relay/contract split holds one level down too.
    build-state block (`python3 scripts/build/build-state.py --update`) — the
    build-state gate (`--check`) is otherwise red at commit. Report the built
    node and a short summary of each role's returned stub. (Stubs are return
-   values — the orchestrator reads each as it goes; no role or orchestrator
-   writes a handoff file. The one disk case is a harness-persisted oversized
-   return — relay the persisted path, never the preview; see the transport
-   note after the disk-stub-rejection paragraph above.)
+   values the orchestrator reads as it goes — handoff rules in "Relay, don't
+   author" above.)
 
 The user commits when ready (the pre-commit gate runs at the commit boundary).

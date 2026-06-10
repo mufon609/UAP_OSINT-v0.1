@@ -64,6 +64,9 @@ Producing + verifying + registering each sibling is the **orchestrator's** job,
 never the Worker's: the Worker has no Write tool and emits a fragment, not a
 file. This keeps source-read-first + attribution-against-source honest instead
 of letting a corrupt extract or label-less caption masquerade as worker-ready.
+The orchestrator dispatches the prep skill via the Skill tool; if that
+invocation fails, it **HALTs** and directs the user to run the skill — it
+never hands the Worker an unprepared source.
 
 **Exemplars give shape, not facts.** A built node handed to you as a structural
 model (a sibling document, an archetype peer) supplies SHAPE only — section set,
