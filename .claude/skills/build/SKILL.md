@@ -54,6 +54,17 @@ written for the handoff" principle for zero gain on the real hazard. Its one
 legitimate kernel — relay the stub verbatim, never paraphrase — is the rule
 above.
 
+One disk path does exist, and it is **not** the rejected design: the
+**harness itself** persists an oversized role return to a session file
+(`tool-results/*.json`) and hands back a short preview plus the path — a
+return value above the context-injection cap never arrives whole in-context.
+When that happens, **never relay the truncated preview as if it were the
+stub**: `Read` the persisted file, confirm it is the complete fragment, and
+relay the persisted path verbatim (alongside the step's other named input
+fields) to the next role, which `Read`s the same bytes. The relay stays
+byte-identical, no role wrote a file, and the orchestrator authored nothing —
+both principles above hold.
+
 **Target.** `{type}/{slug}` + scope come from the user — per the project
 discipline, never invent a build target. If `$ARGUMENTS` is empty, ask what to
 build before doing anything.
@@ -266,7 +277,9 @@ invocation; the relay/contract split holds one level down too.
    build-state block (`python3 scripts/build/build-state.py --update`) — the
    build-state gate (`--check`) is otherwise red at commit. Report the built
    node and a short summary of each role's returned stub. (Stubs are return
-   values — the orchestrator reads each as it goes; nothing is written to disk
-   for the handoff.)
+   values — the orchestrator reads each as it goes; no role or orchestrator
+   writes a handoff file. The one disk case is a harness-persisted oversized
+   return — relay the persisted path, never the preview; see the transport
+   note after the disk-stub-rejection paragraph above.)
 
 The user commits when ready (the pre-commit gate runs at the commit boundary).
