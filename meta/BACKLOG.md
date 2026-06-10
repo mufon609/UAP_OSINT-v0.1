@@ -76,7 +76,11 @@ manifest). Both behaved per contract. Paths still unverified end-to-end:
   rather than manufacturing one.
 - **error routing** (`route_failure.py`) — no validator failure has needed
   routing on a clean run (the caption build was clean; its audit findings were
-  applied via builder re-entry, not a routed check failure).
+  applied via builder re-entry, not a routed check failure; the dird-32 build
+  repeated that shape — clean run, one recommend-only locator fix via builder
+  re-entry). The dird-32 build did newly exercise the **OCR sibling gate (4b)
+  inside a full `/build`** end-to-end (producers → consensus → verifiers →
+  registration), so that path no longer needs a dedicated run.
 
 Drive a build that forces these paths (a target with an external-source
 gap + a caption/FOIA source); confirm each `--phase X` fires exactly the
@@ -206,6 +210,48 @@ restrict the verifier to `Read` (it must check the producer's read of the same
 evidence, never write), and scope the producer to `Read` + `Write` on its
 `/tmp/attribution-{slug}/` draft. Weigh against the cost of a second contract
 surface that must stay in sync with the skill's orchestration text.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C5 — Settle two handoff-stub contract gaps the dird-32 instrumented build surfaced
+
+Two related underspecifications in the role-return / relay contract
+(`build-protocol` stub-schemas + the `/build` relay rules):
+
+1. **Advisory prose beyond the stub.** All three synthesizing roles returned
+   free-text notes outside their closed stub fields (survey "notes for the
+   orchestrator", worker "notes for the builder", builder "key judgments").
+   The notes were accurate and genuinely useful downstream — but no contract
+   says they are permitted, what weight they carry, or whether the
+   orchestrator should relay them (this build relayed the worker's notes to
+   the builder verbatim). Decide: bless an optional, explicitly non-normative
+   `notes` block in the stub schemas (orchestrator MAY relay alongside the
+   named fields), or forbid extra-stub prose. Either way the relay rules
+   should name the decision.
+
+2. **Stale survey-era scratch paths at relay time.** The step-1 stub's
+   `reusable_sources[].scratch` paths are survey-only basename extracts; for
+   a sibling-backed OCR source they are corrupt and superseded by the
+   canonical `extract-source.py --artifact` scratches produced at the 4b
+   gate. The relay-verbatim rule still hands the stale path to the builder
+   inside `reusable_sources`, forcing the orchestrator to improvise an
+   annotation. Decide the canonical handling: drop `scratch` from the relayed
+   step-6 fields, or have the survey stub mark them survey-only by
+   construction.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C6 — ocr-consensus.py `verify` should carry page tags like `run`
+
+`run --vlm-pages` tags every divergence row with its page number; `verify`
+re-confirms the on-disk sibling without the per-page directory and prints
+"(no page numbers — sibling produced without `run --vlm-pages`)", so locating
+a flagged row means searching the sibling by line number. The page boundaries
+are recoverable at verify time (the tool rasterizes and re-reads each page),
+so the row→page mapping could be preserved in verify mode too. Quality-of-life
+for the verifier dispatch loop; no correctness impact.
 
 **Blocks:** none.
 **Blocked by:** none.

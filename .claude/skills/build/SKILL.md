@@ -240,6 +240,10 @@ invocation; the relay/contract split holds one level down too.
    built node only, and it is recommend-only as a build role
    (`agents/auditor.md`): relay its findings to the user in the final report.
    A failing check routes through `route_failure.py` exactly as in step 6.
+   An auditor recommendation that fails **no** check (e.g. a locator-precision
+   note) is applied by re-entering the Builder with the finding relayed
+   verbatim; green gates on the re-render close it — no fresh audit pass (the
+   fix's wording originated with the auditor).
    Any change to a node *other than the one being built* is out of scope for
    a build — it runs as its own user-directed `/augment` session.
 8. **Finalize** *(orchestrator step — not a role)* — done when the auditor reports

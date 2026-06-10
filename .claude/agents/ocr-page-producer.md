@@ -43,9 +43,15 @@ Report which pages you wrote and which you skipped.
   typos and spellings — do **NOT** correct them.
 - Preserve redaction markers (`(b)(3):10 USC 424`, `(b)(6)`) and classification
   banners **verbatim** as they appear, struck-through or not.
-- Render equations, figures, charts, tables, and diagram interiors as **bracketed
-  placeholders** — `[Equation N]`, `[Figure N: caption]`, `[Table N: …]`. Never
-  transcribe an equation symbol-by-symbol; never invent numeric data from a figure.
+- Render figures, charts, tables, diagram interiors, and complex display math as
+  **bracketed placeholders** — `[Equation N]`, `[Figure N: caption]`, `[Table N: …]`.
+  Never invent numeric data from a figure. **But a short typeset equation whose
+  characters are plainly legible as ordinary text (e.g. `C = εA/d`) is body
+  content — transcribe it character-for-character like any other line.** The
+  placeholder is for math you cannot reproduce faithfully (multi-line derivations,
+  integrals, dense symbol stacks), never a substitute for legible text: a
+  placeholder over legible characters is a fidelity loss the consensus check
+  will flag as a divergence against both OCR engines.
 - Transcribe **every physical page**, including any third-party FOIA / distribution
   cover-insert (e.g. a Black Vault declassification page — often physical page 2).
   It is part of the released copy and is preserved, not hidden.
