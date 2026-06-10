@@ -281,8 +281,10 @@ demands; the cheapest correct path). The shared rules:
 
 Two entry points share this contract:
 
-- **tightening loop** (auditor-triggered, adjacent node) — the audit flags
-  `adjacent_needs_update[]` with `skip_external: true` → re-enter at the role the
+- **tightening loop** (auditor-flagged, user-directed, adjacent node) — the
+  audit flags `adjacent_needs_update[]` with `skip_external: true`; the
+  orchestrator reports the entries to the user, and **on the user's
+  direction** re-enters at the role the
   change needs (the Worker for shape a — extract spans from the already-archived
   scratch; the Builder for shape b — a stale derived field, no extraction), rebuild,
   re-audit until no adjacent node flags. External + Archive are skipped (material
