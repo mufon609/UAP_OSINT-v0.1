@@ -189,7 +189,7 @@ _HASH_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
 
 
 def check_content_hash(data, rpt):
-    """W2 — source_content_hash is the strong drift detector (source_line_count
+    """source_content_hash is the strong drift detector (source_line_count
     is a cheap pre-check; this catches any byte change under a constant line
     count). Computed by finalize-attribution.py; required once verified
     (parallels verifier_session). Recompute and compare — a mismatch means the
@@ -222,7 +222,7 @@ def check_content_hash(data, rpt):
 
 
 def check_turn_timestamps(data, rpt):
-    """W2 — per-turn start_ts/end_ts are derived, tamper-evident fields. They
+    """Per-turn start_ts/end_ts are derived, tamper-evident fields. They
     must equal the value recomputed from (source, line_range), so they cannot be
     hand-edited to drift (mirrors check_source_existence recomputing
     source_line_count). On a verified sibling a turn whose line_range covers a

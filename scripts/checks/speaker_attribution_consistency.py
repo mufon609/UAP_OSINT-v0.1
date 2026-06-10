@@ -138,10 +138,10 @@ def build_line_ts_map(src_path):
     continuations) are absent from the map.
 
     The single line→seconds source of truth shared by
-    ``scripts/build/finalize-attribution.py`` (W2 — stamps per-turn
+    ``scripts/build/finalize-attribution.py`` (stamps per-turn
     ``start_ts``/``end_ts``), ``scripts/build/validate-speaker-attribution.py``
     (recompute-and-compare), and ``scripts/tools/spot-check-attribution.py``
-    (the W3 fold gate's burst windows — previously ``[MM:SS]``-only, which
+    (the active-speaker fold gate's burst windows — previously ``[MM:SS]``-only, which
     silently dropped hour-format turns)."""
     try:
         lines = src_path.read_text(encoding="utf-8", errors="replace").splitlines()
@@ -183,15 +183,15 @@ def turn_ts_range(line_ts_map, lo, hi):
 # Empirically calibrated against the line-based resolver: swept 0–5s over every
 # sibling-backed quote in the repo, 2s is the value at which the per-turn-
 # timestamp span EXACTLY reproduces the old line-based span (0 divergences); 0–1s
-# drop a boundary speaker, ≥3s start over-including. This is the differential
-# gate from the W2 follow-on. (`anchor_turn` is ε-independent — it matches the
+# drop a boundary speaker, ≥3s start over-including. This is the calibration's
+# differential gate. (`anchor_turn` is ε-independent — it matches the
 # old nearest-preceding resolution at every ε.)
 ANCHOR_TOLERANCE_S = 2
 
 
 def resolve_anchor_turns(sibling, start_secs, end_secs):
     """Resolve a quote's ``[start_secs, end_secs]`` anchor to the sibling turn(s)
-    it touches, purely from the per-turn ``start_ts`` (W2) — no source re-read.
+    it touches, purely from the per-turn ``start_ts`` — no source re-read.
 
     Returns ``(anchor_turn, span_turns, status)``:
       - ``anchor_turn`` — the turn whose contiguous interval owns ``start_secs``
@@ -327,7 +327,7 @@ def check(ctx):
 
     # Per-sibling speaker lookup (id → speaker dict), built once per path.
     # Resolution itself reads no source file — it runs off the sibling's
-    # per-turn start_ts (W2), which validate-speaker-attribution.py has already
+    # per-turn start_ts, which validate-speaker-attribution.py has already
     # proven matches the source in the same gate chain.
     sib_speakers_cache = {}
 

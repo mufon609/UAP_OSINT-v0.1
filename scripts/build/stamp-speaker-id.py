@@ -78,7 +78,7 @@ def _collapse(ids):
 
 def _anchor_speakers(q, sibling, spath):
     """(anchor_live_ids, span_live_ids, status) for a quote, resolving its
-    `[MM:SS]` location against the sibling's per-turn timestamps (W2) via the
+    `[MM:SS]` location against the sibling's per-turn timestamps via the
     shared `resolve_anchor_turns`. `span` carries the boundary slop (sub-line /
     lead-in) the old ±1-line pad provided — the same resolver the consistency
     check uses, so derive and cross-validate agree by construction. No source

@@ -20,14 +20,14 @@ Kept: all structured fields, `confidence`, `referenced_source`, speaker
 `notes`, `image_verification` (turn_line_range / resolution /
 resolved_speaker_id / resolved_by).
 
-Computed (W2): a top-level `source_content_hash` (sha256 of the raw source
+Computed: a top-level `source_content_hash` (sha256 of the raw source
 bytes — the strong drift detector) and per-turn `start_ts`/`end_ts` (the
 caption-tick span of each turn's line_range, hour-format aware). Both are
 derived deterministically from the source and are tamper-evident:
 `validate-speaker-attribution.py` recomputes and compares. Stamped in both
 --video and --no-video modes (pure source read).
 
-W3 fold gate — finalize is mechanically gated on the active-
+Active-speaker fold gate — finalize is mechanically gated on the active-
 speaker spot-check. There is NO graceful skip: a sibling whose source has a
 recording cannot be finalized unless the spot-check runs clean.
 
@@ -85,17 +85,17 @@ HEADER = (
 
 
 def run_fold_gate(sibling_path: Path, video_path: Path) -> list:
-    """W3 gate — run the active-speaker spot-check across all turns and return
+    """Fold gate — run the active-speaker spot-check across all turns and return
     the list of `contested-fold` rows (empty = clean). Exits non-zero if the
     spot-check itself cannot run (missing video / .venv-face): no graceful
     skip — an unrunnable gate blocks finalize rather than passing silently."""
     out_csv = Path(tempfile.mkdtemp(prefix="finalize-foldgate-")) / "spot-check.csv"
     cmd = [sys.executable, str(SPOT_CHECK), str(sibling_path),
            "--video", str(video_path), "--output", str(out_csv)]
-    print("W3 fold gate: running active-speaker spot-check across all turns…")
+    print("Active-speaker fold gate: running spot-check across all turns…")
     if subprocess.run(cmd).returncode != 0 or not out_csv.is_file():
         sys.exit(
-            "error: W3 fold gate could not run the spot-check (video + .venv-face "
+            "error: active-speaker fold gate could not run the spot-check (video + .venv-face "
             "are required; no graceful skip). Fix the environment, or use "
             "--no-video for a genuinely audio-only source."
         )
@@ -153,7 +153,7 @@ def _set_after(d: dict, anchor_key: str, new_key: str, value) -> None:
 
 
 def stamp_computed_fields(source_path: Path, data: dict) -> dict:
-    """W2 — stamp the derived, tamper-evident fields from the source file:
+    """Stamp the derived, tamper-evident fields from the source file:
     a top-level `source_content_hash` (sha256 of the raw bytes) and per-turn
     `start_ts`/`end_ts` (the caption-tick span of each turn's line_range, via
     the shared hour-aware `build_line_ts_map`/`turn_ts_range`). Both are
@@ -191,7 +191,7 @@ def main() -> None:
                     help="verifier agent session id (sets status=verified). "
                          "Optional when the sibling is already verified.")
     gate = ap.add_mutually_exclusive_group(required=True)
-    gate.add_argument("--video", help="source recording — runs the W3 active-speaker "
+    gate.add_argument("--video", help="source recording — runs the active-speaker "
                                       "fold gate; contested-fold blocks finalize")
     gate.add_argument("--no-video", action="store_true",
                       help="explicit opt-out for a genuinely audio-only source "
@@ -202,7 +202,7 @@ def main() -> None:
     if not path.is_file():
         sys.exit(f"error: not found: {path}")
 
-    # W3 fold gate — runs before any mutation, so a blocked finalize leaves the
+    # Active-speaker fold gate — runs before any mutation, so a blocked finalize leaves the
     # sibling untouched for the producer/verifier to fix and re-run.
     if args.video:
         video = Path(args.video)
@@ -210,13 +210,13 @@ def main() -> None:
             sys.exit(f"error: --video not found: {video}")
         contested = run_fold_gate(path, video)
         if contested:
-            print("\nW3 GATE BLOCKED — contested-fold turn(s); finalize refused. "
+            print("\nACTIVE-SPEAKER GATE BLOCKED — contested-fold turn(s); finalize refused. "
                   "Fix attribution (relabel) and re-run:", file=sys.stderr)
             for r in contested:
                 print(f"  lines {r.get('line_range'):>12} "
                       f"(assigned {r.get('speaker_id')}): {r.get('notes')}", file=sys.stderr)
             sys.exit(2)
-        print("W3 fold gate: clean (0 contested-fold).")
+        print("Active-speaker fold gate: clean (0 contested-fold).")
 
     with path.open() as f:
         data = strict_yaml_load(f)
@@ -225,7 +225,7 @@ def main() -> None:
 
     counts = finalize(data, args.verifier_session)
 
-    # W2 — stamp derived fields (content hash + per-turn timestamps) from the
+    # Stamp derived fields (content hash + per-turn timestamps) from the
     # source. Pure source read, so it runs in both --video and --no-video modes.
     source_path = REPO_ROOT / data.get("source_path", "")
     if not source_path.is_file():
