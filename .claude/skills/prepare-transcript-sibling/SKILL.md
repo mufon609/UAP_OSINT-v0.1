@@ -69,8 +69,12 @@ contrast, replaces a corrupt text layer.
 Read the transcript's manifest entry (`python3 scripts/tools/manifest.py
 status {url}`, or grep `sources/manifest.yaml`). Proceed only if:
 
-- `transcript_provenance ∈ {auto-caption, human-corrected-caption}` — the
-  label-less classes. **Skip entirely** for `stenographic` /
+- `transcript_provenance ∉ {stenographic, published-transcript}` — the
+  label-less classes (`auto-caption` / `human-corrected-caption`), plus an
+  explicit `unknown` or an absent flag: an unclassified transcript is
+  treated as label-less. Determine and set its real provenance via
+  `manifest.py edit` while here, then proceed unless it turned out to be
+  one of the labeled classes. **Skip entirely** for `stenographic` /
   `published-transcript` sources; their bytes carry speaker labels and
   only the verbatim-quote check applies. Skip also if a same-stem
   `{slug}-attribution.yaml` is already registered (the sibling exists).

@@ -51,8 +51,10 @@ failure mode (it is invisible to its author).
   produced by VLM page-image read (see `/prepare-ocr-sibling`).
   Sibling-readiness step: **`/build` step 4b** via
   `/prepare-ocr-sibling`. *The sibling replaces the corrupt text layer.*
-- **Label-less transcripts** (`transcript_provenance: auto-caption` /
-  `human-corrected-caption` without inline labels): the caption text is fine
+- **Label-less transcripts** (any `transcript_provenance` other than
+  `stenographic` / `published-transcript` — `auto-caption`,
+  `human-corrected-caption`, an explicit `unknown`, or an absent flag; only
+  the two human-attested labeled classes skip): the caption text is fine
   but speaker labels are absent — `speaker_id` cannot be derived from the
   caption file alone, only against the recording. Its canonical
   attribution is a same-stem stitched sibling, produced by the video pipeline.

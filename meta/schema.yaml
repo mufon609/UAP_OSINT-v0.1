@@ -763,7 +763,13 @@ artifact_entry:
   #                             shape as ocr-scan); screening + confirming
   #                             against the audio is the /verify-transcript
   #                             skill's operating manual.
-  #   unknown                 — provenance not yet classified.
+  #   unknown                 — provenance not yet classified. The sibling
+  #                             gates treat `unknown` (and an absent flag)
+  #                             as label-less: only stenographic /
+  #                             published-transcript skip attribution-
+  #                             sibling prep, so an unclassified source
+  #                             fails closed (transcript_sibling_presence
+  #                             check) — classify it before building.
   # `wayback_skip: true` (URL-level) marks entries where Wayback archival
   # is not applicable — synthetic deep-link URLs that require session
   # state (e.g., government records-portal deep-links) and therefore

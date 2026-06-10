@@ -35,7 +35,8 @@ Per-artifact checks (after parse + ResearchContext construction):
     vouching_chain                    — archetype/kind-conditional
   - affiliations, relationships       — person-conditional
   - participants, witnesses_testimony — event-conditional
-  - speakers                          — transcript-conditional
+  - speakers, transcript_sibling_presence
+                                       — transcript-conditional
   - media_versioning                  — media-conditional
   - key_personnel, org_relationships, contracts
                                        — organization / gov-contractor
@@ -75,7 +76,8 @@ from lib._common import (
     strict_yaml_load,
     REPO_ROOT,
     content_type_dirs,
-    load_manifest_paths,
+    iter_artifacts,
+    load_manifest,
     load_schema,
     load_source_to_artifacts_index,
     load_synthesis_slugs,
@@ -137,6 +139,7 @@ from checks import speaker_attribution_consistency as ck_speaker_attribution_con
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
+from checks import transcript_sibling_presence as ck_transcript_sibling_presence
 from checks import top_scope_activity as ck_top_scope_activity
 from checks import verbatim_quotes as ck_verbatim_quotes
 from checks import vouching_chain as ck_vouching_chain
@@ -261,6 +264,7 @@ _ARTIFACT_CHECKS = [
     ck_speakers,
     ck_speaker_baseline_consistency,
     ck_speaker_attribution_consistency,
+    ck_transcript_sibling_presence,
     ck_media_versioning,
     ck_key_personnel,
     ck_org_relationships,
@@ -444,11 +448,20 @@ def main():
     _PHASE = args.phase
 
     schema = load_schema()
-    manifest_paths = load_manifest_paths()
+    # One manifest parse serves both shapes: the path-existence set and
+    # the full entries list (transcript_sibling_presence reads artifact
+    # transcript_provenance — an empty manifest_entries would silently
+    # no-op it).
+    manifest_entries = load_manifest()
+    manifest_paths = {
+        a.get("path") for _, a in iter_artifacts(manifest_entries)
+        if a.get("path")
+    }
     source_to_artifacts = load_source_to_artifacts_index()
     synthesis_slugs = load_synthesis_slugs()
     base_ctx = BaseContext(
         schema=schema, manifest_paths=manifest_paths,
+        manifest_entries=manifest_entries,
         source_to_artifacts=source_to_artifacts,
         synthesis_slugs=synthesis_slugs,
     )

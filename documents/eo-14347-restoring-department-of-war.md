@@ -17,7 +17,7 @@ doc_form: executive-order
 | Author (per document) | The President |
 | Classification | unclassified |
 | Format | TXT, 2 pages |
-| Primary Source URL | https://www.federalregister.gov/documents/2025/09/10/2025-17508/restoring-the-united-states-department-of-war |
+| Primary Source URL | https://www.federalregister.gov/documents/full_text/text/2025/09/10/2025-17508.txt |
 | Local Archive | [sources/government/eo-14347-restoring-department-of-war-20250910.txt](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
 
 ---

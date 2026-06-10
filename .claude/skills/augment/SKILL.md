@@ -92,8 +92,10 @@ a verified sibling"). Two flavors:
   worker-ready**. Invoke `/prepare-ocr-sibling {source}` via the Skill tool; if that invocation
   fails, **HALT** and direct the user to run it. Resume once the verified sibling is registered —
   `extract-source.py --artifact` then prefers it.
-- **Label-less transcript (`auto-caption` / `human-corrected-caption`) without a verified
-  `-attribution.yaml` sibling** → `speaker_id` is not derivable from the caption alone. Invoke
+- **Label-less transcript without a verified `-attribution.yaml` sibling** — any
+  `transcript_provenance` other than `stenographic` / `published-transcript`, including an explicit
+  `unknown` or an absent flag (classify it in the manifest while here) → `speaker_id` is not
+  derivable from the caption alone. Invoke
   `/prepare-transcript-sibling {slug}` via the Skill tool; same HALT-on-failure rule. Resume once
   registered; the verbatim source is unchanged (the sibling adds the attribution layer indexed by
   line range — see `meta/schema-speaker-attribution.yaml` — that `validate-research.py` matches

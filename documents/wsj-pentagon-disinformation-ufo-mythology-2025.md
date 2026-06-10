@@ -17,7 +17,7 @@ doc_form: article
 | Author (per document) | Joel Schectman; Aruna Viswanatha |
 | Classification | published |
 | Format | HTML |
-| Primary Source URL | https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e |
+| Primary Source URL | https://www.tovima.com/wsj/the-pentagon-disinformation-that-fueled-americas-ufo-mythology/ |
 | Local Archive | [sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
 
 ---

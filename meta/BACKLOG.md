@@ -104,18 +104,28 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Close the `transcript_provenance: unknown` bypass in the sibling gates
+### C1 — Backfill the four sibling-less weaponized attribution siblings, then promote transcript_sibling_presence to error
 
-`transcript_provenance` is optional and defaults to `unknown` when absent
-(`meta/schema.yaml`). The transcript sibling gates — `/build` step 4c,
-`/augment` §4, and `/prepare-transcript-sibling` step 1 — trigger only on the
-two explicit label-less values (`auto-caption` / `human-corrected-caption`),
-so a transcript source that was never classified (flagged `unknown`, or
-carrying no flag at all) passes every gate unprepared, and the build later
-hits the `speaker_id` requirement with no sibling and no documented route.
-Decide the convention — likely: a transcript source with `unknown`/absent
-provenance HALTs the gate for classification before the build proceeds — and
-add that line to the three gate surfaces (plus a check if warranted).
+Four transcript nodes carry hand-attributed `speaker_id` quotes on
+auto-caption sources with no verified attribution sibling — built before
+the sibling gate existed, so the one mechanical attribution check
+(`speaker_attribution_consistency`) silently skips them:
+
+- `transcripts/weaponized-038-lacatski-kelleher-2023`
+- `transcripts/weaponized-096-lacatski-part1-2025`
+- `transcripts/weaponized-097-lacatski-part2-2025`
+- `transcripts/weaponized-114-lacatski-future-visions-2026`
+
+For each: run `/prepare-transcript-sibling {slug}` (video download →
+producer → structural validator → independent verifier → mandatory
+active-speaker fold gate), then confirm each node's existing `speaker_id`
+values against the verified sibling (`stamp-speaker-id.py` dry run) and
+correct any divergence — hand-keyed attribution is exactly the divergence
+hazard the sibling exists to remove.
+
+When all four are verified, promote `scripts/checks/
+transcript_sibling_presence.py` from `warn` to `error` (its documented
+end state) and update its docstring's severity paragraph.
 
 **Blocks:** none.
 **Blocked by:** none.

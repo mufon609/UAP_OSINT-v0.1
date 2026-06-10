@@ -208,9 +208,12 @@ invocation; the relay/contract split holds one level down too.
    writes the `/tmp/scratch-{slug}-N.txt` path for every primary source
    (these are the scratch paths relayed to the workers) and prefers the
    verified `.txt` sibling for an ocr-scan source.
-4c. **Transcript sibling gate** *(orchestrator step — same shape as 4b)*. A
-   source flagged `transcript_provenance: auto-caption` /
-   `human-corrected-caption` (label-less) without a verified
+4c. **Transcript sibling gate** *(orchestrator step — same shape as 4b)*.
+   Only `transcript_provenance: stenographic` / `published-transcript`
+   sources carry trustworthy inline labels and skip this gate. **Every
+   other transcript source** — `auto-caption`, `human-corrected-caption`,
+   an explicit `unknown`, or an absent flag (classify an unclassified
+   source in the manifest while here) — without a verified
    `-attribution.yaml` sibling is **not worker-ready for `speaker_id`** (the
    caption carries verbatim text but no attribution): **invoke
    `/prepare-transcript-sibling {slug}` via the Skill tool**; if that
@@ -218,8 +221,8 @@ invocation; the relay/contract split holds one level down too.
    of the all-internal branch. Unlike 4b the verbatim source is unchanged —
    `extract-source.py --artifact` still pulls from the caption file; the
    sibling adds the attribution layer `validate-research.py` matches
-   `speaker_id` against. Labeled sources (`stenographic` /
-   `published-transcript`) need no sibling.
+   `speaker_id` against (the `transcript_sibling_presence` check is the
+   commit-boundary backstop for this gate).
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
    in a single message so they run concurrently; each returns a fragment (it
    does not write the artifact). Collect every fragment.
