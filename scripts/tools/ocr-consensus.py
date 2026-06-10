@@ -82,11 +82,14 @@ if (
 import argparse
 import bisect
 import difflib
+import hashlib
+import json
 import re
 import subprocess
 import tempfile
 
 SOURCES_DIR = _REPO_ROOT / "sources"
+ENGINE_CACHE_ROOT = Path(tempfile.gettempdir()) / "ocr-consensus-cache"
 
 # Word tokens and standalone punctuation. Splitting punctuation off words keeps
 # "communication," from spuriously disagreeing with "communication" across
@@ -684,8 +687,10 @@ def fill_blocked_pages(pdf, pages_dir, blocked, two_column, dpi):
     return filled
 
 
-def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
-    """Rasterize the PDF and run both OCR engines on the whole document.
+def _ocr_pages(pdf, stem, dpi, blocked_pages=(), use_cache=True):
+    """Rasterize the PDF and run both OCR engines on the whole document —
+    or load the main-pass reads from the engine cache (``_engine_cache_dir``)
+    when present; ``use_cache=False`` (``--no-cache``) forces recompute.
 
     Returns ``(tess_text, paddle_text, blocked_report, tess_starts)``.
     ``tess_starts`` is the per-page start-offset list of the Tesseract join
@@ -698,20 +703,38 @@ def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
     load-bearing token the two engines read differently (PaddleOCR is the fill /
     sibling spine; Tesseract cross-checks)."""
     blocked_report = []
+    cache = _engine_cache_dir(pdf, dpi)
+    t_f, p_f, s_f = cache / "tess.txt", cache / "paddle.txt", cache / "starts.json"
+    cached = use_cache and t_f.exists() and p_f.exists() and s_f.exists()
     with tempfile.TemporaryDirectory(prefix=f"ocr-{stem}-") as tmp:
-        images = rasterize(pdf, tmp, dpi)
-        print(f"      {len(images)} page image(s)")
-        print("      Tesseract (second opinion) ...")
-        tess_text, tess_starts = run_tesseract(images)
-        print("      PaddleOCR (primary cross-check) ...")
-        paddle_text, _ = run_paddleocr(images)
+        if cached:
+            print(f"      (cached engine reads: {cache})")
+            tess_text = t_f.read_text(encoding="utf-8")
+            paddle_text = p_f.read_text(encoding="utf-8")
+            tess_starts = json.loads(s_f.read_text(encoding="utf-8"))
+            images = None
+            n_pages = len(tess_starts)
+        else:
+            images = rasterize(pdf, tmp, dpi)
+            print(f"      {len(images)} page image(s)")
+            print("      Tesseract (second opinion) ...")
+            tess_text, tess_starts = run_tesseract(images)
+            print("      PaddleOCR (primary cross-check) ...")
+            paddle_text, _ = run_paddleocr(images)
+            n_pages = len(images)
+            if use_cache:
+                cache.mkdir(parents=True, exist_ok=True)
+                t_f.write_text(tess_text, encoding="utf-8")
+                p_f.write_text(paddle_text, encoding="utf-8")
+                s_f.write_text(json.dumps(tess_starts), encoding="utf-8")
         for n in blocked_pages:
-            if not (1 <= n <= len(images)):
-                print(f"      ! blocked page {n} out of range (1..{len(images)}) — skipped")
+            if not (1 <= n <= n_pages):
+                print(f"      ! blocked page {n} out of range (1..{n_pages}) — skipped")
                 continue
             print(f"      blocked page {n}: PaddleOCR fill vs Tesseract ...")
-            p_txt, _ = run_paddleocr([images[n - 1]])
-            t_txt, _ = run_tesseract([images[n - 1]])
+            img = images[n - 1] if images else _rasterize_one(pdf, n, dpi, tmp)
+            p_txt, _ = run_paddleocr([img])
+            t_txt, _ = run_tesseract([img])
             # PaddleOCR is the fill (the sibling on this page) → it is the spine;
             # build_consensus_2 hardcodes candidates.tesseract=base, .paddleocr=other,
             # so normalize the keys to true engine names here.
@@ -773,6 +796,34 @@ def _resolve_pdf(arg):
     if not pdf.exists():
         raise SystemExit(f"PDF not found: {pdf}")
     return pdf
+
+
+def _engine_cache_dir(pdf, dpi):
+    """Cache directory for this PDF's engine reads. The key covers every input
+    the reads depend on — the PDF bytes, the dpi, and both engine versions —
+    and deliberately NOT the sibling: engine output is a pure function of the
+    page images, so sibling corrections between `run` and `verify` can never
+    stale a hit (the comparison against the sibling is recomputed every call).
+    Lives under the system temp dir — derived state, never a repo artifact."""
+    h = hashlib.sha256()
+    h.update(Path(pdf).read_bytes())
+    h.update(f"|dpi={dpi}|tess={tesseract_version()}|paddle={paddleocr_version()}"
+             .encode("utf-8"))
+    return ENGINE_CACHE_ROOT / h.hexdigest()[:24]
+
+
+def _rasterize_one(pdf, page_num, dpi, out_dir):
+    """Rasterize a single page — the cached-engine path still needs page images
+    for the per-blocked-page engine re-checks."""
+    subprocess.run(
+        ["pdftoppm", "-png", "-r", str(dpi), "-f", str(page_num), "-l", str(page_num),
+         str(pdf), str(Path(out_dir) / f"only-p{page_num}")],
+        check=True, capture_output=True,
+    )
+    imgs = sorted(Path(out_dir).glob(f"only-p{page_num}*.png"))
+    if not imgs:
+        raise SystemExit(f"page {page_num}: rasterize produced no image")
+    return imgs[0]
 
 
 def _concat_pages(pages_dir):
@@ -839,7 +890,8 @@ def cmd_run(args):
                   + (f"  (two-column, column-split: {','.join(map(str, tc))})" if tc else ""))
 
     print(f"[1/2] Rasterizing {pdf.name} at {args.dpi} dpi + OCR ...")
-    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(pdf, stem, args.dpi, blocked)
+    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(
+        pdf, stem, args.dpi, blocked, use_cache=not args.no_cache)
 
     print("[2/2] Writing the sibling + confirming load-bearing words/numbers ...")
     page_starts, derived = None, False
@@ -901,7 +953,8 @@ def cmd_verify(args):
 
     blocked = parse_pages(args.blocked_pages)
     print(f"Rasterizing {pdf.name} at {args.dpi} dpi + OCR (re-confirm) ...")
-    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(pdf, stem, args.dpi, blocked)
+    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(
+        pdf, stem, args.dpi, blocked, use_cache=not args.no_cache)
     sib_text = sibling.read_text(encoding="utf-8")
     divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
     page_starts = derive_page_starts(sib_text, tess_text, tess_starts)
@@ -1074,6 +1127,9 @@ def main():
                        help="build an OCR-only sibling (Tesseract base, PaddleOCR cross-check) "
                             "and record this reason; for fully content-blocked sources only")
     p_run.add_argument("--dpi", type=int, default=300)
+    p_run.add_argument("--no-cache", action="store_true",
+                       help="recompute the engine reads even when cached (cache key: "
+                            "PDF bytes + dpi + engine versions, under the system temp dir)")
     p_run.add_argument("--force", action="store_true", help="overwrite an existing sibling (backfill)")
     p_run.add_argument("--blocked-pages", metavar="SPEC", default=None,
                        help="pages the VLM content filter blocked; the tool PaddleOCR-FILLS "
@@ -1092,6 +1148,9 @@ def main():
                        "with derived ~p.N page tags")
     p_vfy.add_argument("pdf", help="source PDF whose .txt sibling to re-confirm")
     p_vfy.add_argument("--dpi", type=int, default=300)
+    p_vfy.add_argument("--no-cache", action="store_true",
+                       help="recompute the engine reads even when cached (cache key: "
+                            "PDF bytes + dpi + engine versions, under the system temp dir)")
     p_vfy.add_argument("--blocked-pages", metavar="SPEC", default=None,
                        help="pages filled by PaddleOCR (e.g. '5-7,10'); print the "
                             "PaddleOCR-vs-Tesseract check for each")
