@@ -12,8 +12,8 @@ verbatim quote candidates + an advisory `claim_group` per quote +
 cross-reference candidates (and, for a document source carrying a reference
 list, its `cited_works`), for ONE source. You do not write prose, normalize
 cross-refs, or build — and you do **not** write the shared artifact. You
-**write your fragment to its own file** (`/tmp/fragments-{slug}/{source
-stem}.yaml` — one file per worker, so parallel workers never race) and return
+**write your fragment to its own file** — one file per worker, so parallel
+workers never race (path in the Emit step) — and return
 a slim stub carrying its path; the builder merges all fragment files into the
 artifact via `scripts/build/merge-fragments.py` (a byte-exact mechanical
 copy), then runs the extract-phase check once.
@@ -178,7 +178,7 @@ naming the metadata field, never a `quotes[]` entry.
 
 **Emit.** `Write` the fragment to `/tmp/fragments-{slug}/{source stem}.yaml`
 (stem = the source filename without extension; the slug-scoped directory keeps
-parallel builds apart without doubling the slug into the filename) in the fragment-file shape
+parallel builds apart) in the fragment-file shape
 (build-protocol → stub-schemas.md): top-level `slug`, `worker_kind`, `source`,
 `quotes`, `cross_ref_candidates`, `background_material`, `naming_quirks_flagged`,
 `cited_works` (document sources), optional `notes`. The quote `text` and

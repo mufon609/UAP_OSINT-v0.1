@@ -305,37 +305,3 @@ caught the DIRD-16 silent misreads and the dird-32 equation placeholders).
 **Blocks:** none.
 **Blocked by:** none.
 
-### C7 — Investigate: the worker fragment-path instruction reads as two options / a band-aid
-
-Investigation entry — **read `.claude/agents/worker.md` and the related
-contract surfaces, decide what the single clean instruction is, then fix it.**
-
-The worker contract states where to write the fragment file in **two
-places**, which reads as two options / a patched-over instruction rather than
-one authoritative rule:
-- the intro paragraph: "*write your fragment to its own file
-  (`/tmp/fragments-{slug}/{source stem}.yaml` — one file per worker, so
-  parallel workers never race)*";
-- the `**Emit.**` step: "*`Write` the fragment to
-  `/tmp/fragments-{slug}/{source stem}.yaml` (stem = the source filename
-  without extension; the slug-scoped directory keeps parallel builds apart
-  without doubling the slug into the filename) …*".
-
-The same path template appears twice (a drift surface — the two can diverge),
-and the second mention carries a parenthetical about *not* doubling the slug,
-which is the residue of the earlier `fragment-{slug}-{stem}` naming changed in
-commit `6bab6f6`. Together they make a one-line mechanical instruction read
-like a worked-around decision.
-
-Questions to settle: should the path be stated once (where — the contract
-intro, the Emit step, or only the stub schema in `stub-schemas.md`, with the
-others referencing it)? Is the "without doubling the slug" parenthetical still
-earning its place now that the naming is fixed, or is it explaining a problem
-that no longer exists? Resolve to a single, non-apologetic statement of where
-the fragment goes, and confirm the other surfaces (`stub-schemas.md`,
-`build-protocol` SKILL.md, `merge-fragments.py` docstring) agree without
-re-stating it.
-
-**Blocks:** none.
-**Blocked by:** none.
-
