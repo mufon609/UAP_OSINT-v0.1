@@ -106,15 +106,14 @@ For **each affected node, once** (not per-fact):
    artifact-only field never surfaces; move it to a rendered surface).
 3. `python3 scripts/build/review-coverage.py --all` clean.
 4. **Audit** — `Agent(auditor)` for a fresh-context cold read: **required** for Shape B / C (new
-   evidentiary material is exactly the adjacent-propagation trigger), **optional** for a pure Shape A
+   evidentiary material warrants the independent re-read), **optional** for a pure Shape A
    fix (the reader-grep + validators suffice). The auditor is **recommend-only**; you apply any
-   approved fix (a Shape-A edit) and re-validate.
+   user-approved fix (a Shape-A edit) and re-validate.
 5. If a node's **status or type changed**, refresh build-state: `python3 scripts/build/build-state.py --update`.
 
 The user commits (the full pre-commit chain runs at the boundary, un-bypassable). In a **multi-node
 batch**, commit each node's result **before** dispatching the next node's auditor — an auditor's
-effective Bash can `git restore` uncommitted work. An auditor `adjacent_needs_update[]` is a fresh
-augment cycle on that node, run until it reports none.
+effective Bash can `git restore` uncommitted work.
 
 Do not: scaffold (use `/build` for a new node); hand-edit the node body; introduce a quote outside a
 worker / the `extract` phase; remove a source-backed item without a contradicting source; or

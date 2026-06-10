@@ -23,7 +23,7 @@ Target: **$ARGUMENTS** (ask the user if empty).
 
 1. **Independent assessment.** Spawn the **auditor** subagent on the target for
    a fresh-context cold pass — it runs the full validators + the audit goals
-   and returns findings + `adjacent_needs_update[]`. The independent read is
+   and returns findings. The independent read is
    the point: the session that built a node can't reliably self-verify it. **If
    the node is backed by an `ocr-scan` / `extraction-lossy` source, this pass is
    the final quote-vs-source check** (auditor goal 2): its quotes are verified
@@ -50,7 +50,7 @@ Target: **$ARGUMENTS** (ask the user if empty).
    not-on-node variant → reclassify `resolution: off-node-variant`, which
    renders in `## Name Variants` — resolve each, Source-Form Notes carries no
    orphans).
-   Then weigh the auditor's **family-comparability** pass (goal 8): does a
+   Then weigh the auditor's **family-comparability** pass (goal 7): does a
    same-`type` /
    `kind` / `archetype` peer carry a source-anchored optional section this
    target lacks (`## Primary-Source Contradictions`, `## Public-Record Claims`,

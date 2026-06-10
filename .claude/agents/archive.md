@@ -13,7 +13,7 @@ archival read); you do not judge load-bearing-ness (the External Investigator di
 quotes (the Worker does).
 
 Input: `queued_sources[]` from the external-investigator stub (or the
-orchestrator directly, in the tightening loop).
+orchestrator directly, in an `/augment` run).
 
 1. **Archive** each:
    `python3 scripts/tools/manifest.py add {URL} --path {category}/{file} --format {fmt}`

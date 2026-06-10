@@ -124,11 +124,5 @@ agent: auditor
 slug: {slug}
 node: {type}/{slug}.md
 health: pass
-adjacent_needs_update:
-  - node: /{type}/{related}
-    reason: "<a new source attests something this adjacent node should carry>"
-    material_in_hand: /tmp/scratch-{slug}-2.txt
-    skip_external: true        # external skipped — material already archived
-propagation_loop: [/{type}/{related}]
 validator_findings: []
 ```

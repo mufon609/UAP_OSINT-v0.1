@@ -108,11 +108,11 @@ linked source, the source wins.
   │  builder                  │  ── on fail ▶ route_failure.py ▶ re-enter owning role
   └─────────────┬─────────────┘
     ▼
-  ┌───────────────────────────┐  fresh-context cold re-read
-  │  auditor                  │  ── adjacent flagged ▶ report to user; tightening
-  └─────────────┬─────────────┘     loop only on user direction (skip ext + archive)
+  ┌───────────────────────────┐
+  │  auditor                  │  fresh-context cold re-read; the built node only
+  └─────────────┬─────────────┘
     ▼
-  health: pass  ▶  report adjacents to user  ▶  build-state.py --update  ▶  user commits (pre-commit gate)
+  health: pass  ▶  build-state.py --update  ▶  user commits (pre-commit gate)
 ```
 
 `┌─┐` solid box = an **agent role** (a subagent in `.claude/agents/`).
@@ -129,7 +129,7 @@ linked source, the source wins.
 | 4b / 4c | sibling gate | — *orchestrator* | OCR / label-less-transcript sibling readiness | steps 4b–4c below |
 | 5 | extract | `worker` ×N | the single verbatim boundary; emits fragments | [`agents/worker.md`](../../agents/worker.md) |
 | 6 | synthesize | `builder` | merge → organize → link → render; the prose-drift surface | [`agents/builder.md`](../../agents/builder.md) |
-| 7 | audit | `auditor` | fresh-context cold re-read; adjacent-node propagation | [`agents/auditor.md`](../../agents/auditor.md) |
+| 7 | audit | `auditor` | fresh-context cold re-read of the built node | [`agents/auditor.md`](../../agents/auditor.md) |
 | 8 | finalize | — *orchestrator* | refresh build-state; user commits at the gate | step 8 below |
 
 ### Branches — when the straight line bends
@@ -138,8 +138,7 @@ linked source, the source wins.
 |---|---|---|---|
 | all-internal | survey sets `all_internal: true` / `gaps: []` | skip steps 2–3 (no new bytes); sibling gate + scaffold still run | [`build-protocol`](../build-protocol/SKILL.md) "Orchestration branches" |
 | failure routing | builder returns `result: fail` | `route_failure.py` maps check → phase → role; re-enter that role, fix the **data**, rebuild | [`build-protocol`](../build-protocol/SKILL.md) "Fix the data, never the node body" |
-| tightening loop | auditor flags `adjacent_needs_update[]` **and the user directs the fix** | re-enter worker (extract) or builder (derived field), skip external + archive, re-audit | [`build-protocol`](../build-protocol/SKILL.md) "Partial re-entry" |
-| `/augment` | user-triggered maintenance change | same partial-re-entry contract, entered directly at the role the change needs | [`augment` skill](../augment/SKILL.md) |
+| `/augment` | user-triggered maintenance change | partial re-entry: skip scaffold, enter directly at the role the change needs | [`augment` skill](../augment/SKILL.md) |
 
 ## Sequence
 
@@ -162,7 +161,7 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 | 3 archive | `queued_sources[]` (step-2 stub) | `archived[]` + scratch paths, `primary_sources_registered` |
 | 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `cross_ref_candidates`, `background_material`, `cited_works`) |
 | 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
-| 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `adjacent_needs_update[]` |
+| 7 auditor | the rendered node path `{type}/{slug}.md` | `health` |
 | 4b/4c sibling gate *(Skill, not Agent)* | the `{source-path}` (4b) / `{slug}` (4c) — nothing more | a registered, verified sibling |
 
 These are inputs, not interpretation. `linked_nodes` is a **required input
@@ -255,25 +254,14 @@ invocation; the relay/contract split holds one level down too.
      the owning role it names (Worker for `extract`, Builder for
      `organize`/`link`/`render`, Archive for `archive`), apply the data fix,
      and rebuild. (This is the dissolved Error agent — a lookup, not a role.)
-7. **`Agent(auditor)`** on the rendered node.
-   - **Adjacent flags are recommendations, not work orders.** The auditor is
-     recommend-only as build role 6 (`agents/auditor.md`): relay its
-     `adjacent_needs_update[]` entries to the user in the final report and
-     stop — do not enter the tightening loop on your own. A cross-node sweep
-     is a scope decision the user owns, and an auditor premise can be wrong
-     (a flagged 26-node gap once proved 24/26 already-correct on the
-     builder's disk re-check); the entries lose nothing by waiting in the
-     report.
-   - **tightening-loop branch (user-directed only):** when the user directs a
-     flagged fix, for each `adjacent_needs_update[]` entry with
-     `skip_external: true`, re-enter at the Worker (shape a — extract from the
-     already-archived scratch) or the Builder (shape b — a stale derived field,
-     no extraction), rebuild, and re-audit. External + Archive are skipped (no
-     new URL, no new bytes). A sweep wider than the built node's immediate
-     adjacents runs as its own user-directed `/augment` session instead.
+7. **`Agent(auditor)`** on the rendered node. The auditor's scope is the
+   built node only, and it is recommend-only as a build role
+   (`agents/auditor.md`): relay its findings to the user in the final report.
+   A failing check routes through `route_failure.py` exactly as in step 6.
+   Any change to a node *other than the one being built* is out of scope for
+   a build — it runs as its own user-directed `/augment` session.
 8. **Finalize** *(orchestrator step — not a role)* — done when the auditor reports
-   `health: pass`; any `adjacent_needs_update[]` entries ride in the final
-   report for the user to direct and do not block finalize. A node was added/changed, so refresh the
+   `health: pass`. A node was added/changed, so refresh the
    build-state block (`python3 scripts/build/build-state.py --update`) — the
    build-state gate (`--check`) is otherwise red at commit. Report the built
    node and a short summary of each role's returned stub. (Stubs are return

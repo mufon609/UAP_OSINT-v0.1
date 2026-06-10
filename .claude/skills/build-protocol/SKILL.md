@@ -279,16 +279,8 @@ demands; the cheapest correct path). The shared rules:
    is added alongside via `superseded_by` / `contradicted_by` /
    `corroborated_by`, never overwritten.
 
-Two entry points share this contract:
+The entry point sharing this contract:
 
-- **tightening loop** (auditor-flagged, user-directed, adjacent node) — the
-  audit flags `adjacent_needs_update[]` with `skip_external: true`; the
-  orchestrator reports the entries to the user, and **on the user's
-  direction** re-enters at the role the
-  change needs (the Worker for shape a — extract spans from the already-archived
-  scratch; the Builder for shape b — a stale derived field, no extraction), rebuild,
-  re-audit until no adjacent node flags. External + Archive are skipped (material
-  already archived; no new URL, no new bytes).
 - **`/augment`** (user-triggered, primary node) — a maintenance change to an
   existing node (add a recovered quote, re-source a dead citation, correct a
   data field), classified into the role subset above; the proactive counterpart
