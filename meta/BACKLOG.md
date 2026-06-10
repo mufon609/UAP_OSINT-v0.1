@@ -186,3 +186,26 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C4 — Review: dedicated attribution-producer / attribution-verifier agents
+
+`/prepare-transcript-sibling` dispatches its producer and independent verifier
+as the harness built-in `Agent(general-purpose)`, with their contracts written
+inline in the SKILL.md — while the parallel OCR pipeline carries dedicated
+agent files (`.claude/agents/ocr-page-producer.md` / `ocr-page-verifier.md`)
+with per-role tool allowlists. The asymmetry is not a defect (the inline
+contracts are detailed and the pipeline has passed three pilot runs), but
+general-purpose dispatch means the attribution roles inherit the full tool
+set instead of a restricted one.
+
+Candidate change, for review before adopting: create
+`.claude/agents/attribution-producer.md` and
+`.claude/agents/attribution-verifier.md` mirroring the ocr-page-* pair — move
+the producer/verifier discipline out of the skill into the agent contracts,
+restrict the verifier to `Read` (it must check the producer's read of the same
+evidence, never write), and scope the producer to `Read` + `Write` on its
+`/tmp/attribution-{slug}/` draft. Weigh against the cost of a second contract
+surface that must stay in sync with the skill's orchestration text.
+
+**Blocks:** none.
+**Blocked by:** none.

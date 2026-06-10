@@ -4562,7 +4562,7 @@
   - format: yaml
     path: transcripts/jre-2194-elizondo-2024-attribution.yaml
     archived_date: '2026-05-28'
-    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/jre-2194-elizondo-2024-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based attribution pipeline; first end-to-end pilot of the redesigned skill). Verified 2026-05-28 by independent verifier (separate agent session) — PASS with 4 corrections applied (reported-speech-inside-monologue, multi-interjection-confidence-downgrade, 2× image-verification-overprescription). 145 turns covering source_line_count=3660. Image verification: 7 turns retain needs_image_verification flag for future contributor review.'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/jre-2194-elizondo-2024-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based attribution pipeline; first end-to-end pilot of the redesigned skill). Verified 2026-05-28 by independent verifier (separate agent session) — PASS with 4 corrections applied (reported-speech-inside-monologue, multi-interjection-confidence-downgrade, 2× image-verification-overprescription). 145 turns covering source_line_count=3660. Image verification: 7 turns were flagged needs_image_verification in draft; finalize strips the flag (validator-enforced) — the durable record is each turn''s confidence marker plus the sibling''s image_verification[] entries (2 corrected turns).'
   - format: md
     path: transcripts/jre-2194-elizondo-2024-attributed.md
     archived_date: '2026-05-28'
@@ -4614,7 +4614,7 @@
   - format: yaml
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-attribution.yaml
     archived_date: '2026-05-29'
-    note: Speaker-attribution sibling of the label-less transcript at transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; 3rd pilot — structurally hardest BACKLOG case, news-package format with reporter narration + interview clips + studio anchor handoff). Verified 2026-05-29 by independent verifier — REJECT with 1 correction (lines 135-136 boundary off-by-one); orchestrator applied the fix. Verifier successfully exercised the content-check-on-both-sides rule (added after the 2026-05-28 mysterywire confabulation). 19 turns covering source_line_count=140. 1 turn flagged needs_image_verification (line 140 anchor identity).
+    note: Speaker-attribution sibling of the label-less transcript at transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; 3rd pilot — structurally hardest BACKLOG case, news-package format with reporter narration + interview clips + studio anchor handoff). Verified 2026-05-29 by independent verifier — REJECT with 1 correction (lines 135-136 boundary off-by-one); orchestrator applied the fix. Verifier successfully exercised the content-check-on-both-sides rule (added after the 2026-05-28 mysterywire confabulation). 19 turns covering source_line_count=140. 1 turn (line 140 anchor identity) was flagged needs_image_verification in draft; finalize stripped the flag (validator-enforced) — the turn's confidence marker is the durable uncertainty record.
   - format: md
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-attributed.md
     archived_date: '2026-05-29'
@@ -4700,7 +4700,7 @@
   - format: yaml
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-attribution.yaml
     archived_date: '2026-05-28'
-    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; re-pilot run with updated brief — first to pass producer + validator first try with no overlap cleanup). Verified 2026-05-28 by independent verifier (separate agent session) — returned PASS but confabulated on 9-38/39-60 boundary; orchestrator override applied lines 26-38 correction (Lacatski answer-start). 18 turns covering source_line_count=429. Image verification: 1 turn (closing mixed-exchange 427-428) retains needs_image_verification flag.'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md. Produced 2026-05-28 via /prepare-transcript-sibling (agent-based; re-pilot run with updated brief — first to pass producer + validator first try with no overlap cleanup). Verified 2026-05-28 by independent verifier (separate agent session) — returned PASS but confabulated on 9-38/39-60 boundary; orchestrator override applied lines 26-38 correction (Lacatski answer-start). 18 turns covering source_line_count=429. Image verification: 1 turn (closing mixed-exchange 427-428) was flagged needs_image_verification in draft; finalize stripped the flag (validator-enforced) — the turn''s confidence marker is the durable uncertainty record.'
   - format: md
     path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-attributed.md
     archived_date: '2026-05-28'

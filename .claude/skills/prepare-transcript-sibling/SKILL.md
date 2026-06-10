@@ -29,7 +29,7 @@ attribution is a **same-stem sibling YAML** indexing into the source file by
 by a semantic-parse agent, validated by a structural gate script,
 independently verified by a separate agent session, and — for a video source —
 **gated at finalize by a systematic active-speaker spot-check across every
-turn** (§4b; a `contested-fold` blocks finalize). The agent does the patient
+turn** (§5; a `contested-fold` blocks finalize). The agent does the patient
 text-parsing; the image gate mechanically catches the boundary call that is
 confidently wrong and slips past the text verifier.
 
@@ -37,12 +37,12 @@ confidently wrong and slips past the text verifier.
 (2026-05-28, see `meta/BACKLOG.md` A2 "Test-evidence accumulated") showed
 agents catch failure modes a mechanical turn-finder cannot — document
 recitation mid-conversation, prepared-statement reading, narrator vs
-in-room-speaker distinction — that a mechanical turn-finder cannot. The agent
+in-room-speaker distinction. The agent
 pass is the attribution *spine*. The Yes Theory / Grusch documentary scan made
 the failure mode concrete: a naive mechanical face-vote across that transcript
 would have silently misattributed ~22 minutes of host narration to the
 whistleblower as first-person experiential claims — which is why the image gate
-(§4b) decides who is SPEAKING (mouth-motion), not who is on camera. For a video
+(§5) decides who is SPEAKING (mouth-motion), not who is on camera. For a video
 source that gate is a mandatory finalize step, so the dlib engine + the source
 recording are prerequisites at finalize (not at draft time). (The earlier
 diarize+stitch pipeline this replaced was removed once the agent pass proved
@@ -234,14 +234,14 @@ The verifier returns:
   `python3 scripts/build/finalize-attribution.py {draft}.yaml
   --verifier-session {id} --video sources/video/{recording}` (or `--no-video`
   ONLY for a genuinely audio-only source). Finalize first runs the
-  active-speaker spot-check across EVERY turn (§4b); any `contested-fold`
+  active-speaker spot-check across EVERY turn (§5); any `contested-fold`
   BLOCKS finalize and routes back to producer/verifier — no graceful skip. On a
   clean gate it sets `verification_status:
   verified` + `verifier_session` AND **strips the verification scaffolding**:
   every turn's `rationale` + `verifier_notes` + `needs_image_verification`, and
   the top-level `verifier_notes`. The committed sibling is structured-only —
   `rationale` did its job (gave the verifier a cue to check) and
-  `needs_image_verification` did its (routed the turn to step 4b); on a verified
+  `needs_image_verification` did its (routed the turn to §5); on a verified
   sibling they're dead scaffolding that renders into / clutters the `.md`, so
   they're removed. The
   structural validator then FATALs if any scaffolding remains, so the strip is
@@ -259,7 +259,7 @@ The verifier never asserts speaker identities from outside the source
 text — they're checking the producer's read of the same evidence, not
 introducing new evidence.
 
-## 4b. Image verification — the MANDATORY pre-finalize active-speaker fold gate.
+## 5. Image verification — the MANDATORY pre-finalize active-speaker fold gate.
 
 **Not optional, not gated by the producer's self-doubt.** `finalize-attribution.py
 --video` runs `spot-check-attribution.py` across EVERY turn of a video-source
@@ -311,7 +311,7 @@ and rely on this gate to catch the worst cases. A turn that is genuinely a fast
 two-speaker exchange takes a mixed-exchange `[s1, s2]` label, which the gate
 treats as crosstalk (not a fold).
 
-## 5. Register + render.
+## 6. Register + render.
 
 Once `verification_status: verified`, two artifacts land in the repo:
 

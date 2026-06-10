@@ -46,12 +46,16 @@ In order, with a check after each (build-protocol → run
 0b. **Derive `speaker_id` (transcript artifacts only).** The Worker
    emits transcript quotes with `text` + `[MM:SS]` location but **no**
    `speaker_id`. Run `python3 scripts/build/stamp-speaker-id.py
-   meta/research/{slug}.yaml` (dry run), then `--write`: it aligns the
+   meta/research/{slug}.yaml` (dry run), then `--write` **only when the dry run
+   is clean**: it aligns the
    artifact's `speakers[]` ids + node_links to the verified attribution sibling
    and stamps each quote's `speaker_id` from the sibling anchor turn — the
    sibling is the single source of truth, no hand-keying. A `CORRECTED` or
-   unmatched-speaker `WARN` is a data signal (the quote anchor or the sibling is
-   wrong) — resolve it before proceeding. Requires a finalized sibling (the
+   unmatched-speaker `WARN` on the dry run is a data signal — never `--write`
+   over it. If the quote's anchor is wrong, fix the artifact quote's `location`
+   and re-run the dry run; if the sibling itself is wrong, stop and report to
+   the orchestrator (a sibling is repaired via `/prepare-transcript-sibling`,
+   never by this role). Requires a finalized sibling (the
    active-speaker fold gate passed); the `speaker_attribution_consistency` check is then
    defense-in-depth that should never fire.
    - `speaker_id` is a **structural reference** (resolves to a `speakers[*].id`;
