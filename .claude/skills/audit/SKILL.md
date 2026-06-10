@@ -70,8 +70,10 @@ Target: **$ARGUMENTS** (ask the user if empty).
    then grep the regenerated body to confirm the change actually surfaces (a
    fix that lands only in an artifact-only lifecycle field never renders — move
    it to a rendered surface).
-6. **Re-validate:** `review-coverage.py --all` must pass clean; then the
-   full pre-commit chain. The user commits.
+6. **Re-validate:** `review-coverage.py --all` must pass clean. The user
+   commits — the commit hook runs the full pre-commit chain at the boundary
+   (un-bypassable), so a separate manual chain run beforehand is redundant;
+   run it manually only to diagnose a red gate.
 
 For quote-heavy nodes (transcripts, hearings, podcast-heavy people), follow
 with `/quote-relevance-audit` — the content-relevance layer mechanical checks

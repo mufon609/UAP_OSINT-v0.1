@@ -174,8 +174,10 @@ triage, not building.
 ### Commit directly to main
 
 In this repo, commit (and push) straight to `main` — do not branch
-first. Standard discipline still holds: `pre-commit` green before
-committing, and commit only when asked.
+first. Standard discipline still holds: the gates must be green to commit —
+the commit hook runs the full pre-commit chain at the boundary
+(un-bypassable), so don't pay a separate manual chain run first; run it
+manually only to diagnose a red gate. Commit only when asked.
 
 ### Commit before auditing, in multi-agent batches
 

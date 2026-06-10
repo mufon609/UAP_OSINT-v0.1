@@ -49,7 +49,8 @@ the broken-link registry surfaces it as a build candidate.
 6. On approval: edit the artifact (drop / consolidate / add `timeline[]` with a
    `[`/path`]` wrap for any future-node entity; fold dropped siblings'
    `significance`/`context` into the surviving quote), re-render, re-run
-   `review-coverage.py`, then the full pre-commit chain. The user commits.
+   `review-coverage.py`. The user commits — the commit hook runs the full
+   pre-commit chain at the boundary; no separate manual chain run needed.
 
 If the same over-extraction shape recurs across many nodes, surface it as a
 candidate convention or BACKLOG entry.
