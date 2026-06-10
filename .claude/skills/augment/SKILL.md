@@ -15,6 +15,7 @@ allowed-tools:
   - Bash(python3 scripts/build/validate.py *)
   - Bash(python3 scripts/build/validate-research.py *)
   - Bash(python3 scripts/build/review-coverage.py *)
+  - Bash(python3 scripts/build/stamp-speaker-id.py *)
   - Bash(python3 scripts/build/associate.py *)
   - Bash(python3 scripts/build/build-state.py *)
   - Bash(python3 scripts/tools/coverage-suggest.py *)
@@ -61,6 +62,10 @@ anything** (mirrors `/audit`). The shape is never chosen silently.
   invariant) → `Agent(archive)` (downloads, writes the manifest, submits to Wayback, extracts the
   scratch — the only manifest writer) → §4 OCR gate → `Agent(worker)` → you merge → `validate-
   research.py --phase extract`.
+
+On a **transcript artifact** (Shape B or C), derive the merged quote's `speaker_id` after the merge
+and before validating: `python3 scripts/build/stamp-speaker-id.py meta/research/{slug}.yaml` (dry
+run, then `--write`) — the verified attribution sibling is the source of truth; never hand-key it.
 
 On any failing check, `python3 scripts/tools/route_failure.py {check}` names the owning role; apply
 the fix to the artifact and re-validate. The fix target is always artifact data.

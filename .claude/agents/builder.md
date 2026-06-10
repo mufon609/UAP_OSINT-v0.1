@@ -51,8 +51,8 @@ In order, with a check after each (build-protocol → run
    and stamps each quote's `speaker_id` from the sibling anchor turn — the
    sibling is the single source of truth, no hand-keying. A `CORRECTED` or
    unmatched-speaker `WARN` is a data signal (the quote anchor or the sibling is
-   wrong) — resolve it before proceeding. Requires a finalized sibling (the W3
-   gate passed); the `speaker_attribution_consistency` check is then
+   wrong) — resolve it before proceeding. Requires a finalized sibling (the
+   active-speaker fold gate passed); the `speaker_attribution_consistency` check is then
    defense-in-depth that should never fire.
    - `speaker_id` is a **structural reference** (resolves to a `speakers[*].id`;
      required on every transcript quote, enforced by `scripts/checks/quotes.py`),

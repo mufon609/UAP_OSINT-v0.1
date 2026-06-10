@@ -33,7 +33,7 @@ home when one emerges.
 - Schema-level field semantics → `meta/schema.yaml` and
   `meta/schema-research-artifact.yaml` comments.
 - Session workflows → `.claude/skills/` (invokable as `/build`, `/audit`,
-  `/audit`, …); build design rationale + fallback → `prompts/`.
+  `/augment`, …); the Claude-Web briefs → `prompts/`.
 - Per-script behavior → that script's docstring.
 - Past-work narrative, dated incidents, BACKLOG IDs, commit hashes
   → git log only.

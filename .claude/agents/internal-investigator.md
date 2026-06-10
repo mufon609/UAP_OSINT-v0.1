@@ -22,7 +22,7 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
    against this context, not the source alone (build-protocol → source-read-first).
 2. **Re-extract reusable sources** already archived:
    `python3 scripts/build/extract-source.py --source {path}` →
-   `/tmp/scratch-{slug}-N.txt`. For a source flagged `extraction_type:
+   `/tmp/scratch-{basename}.txt`. For a source flagged `extraction_type:
    ocr-scan` / `extraction-lossy` (manifest), this raw extract is **corrupt**
    and serves only as a survey aid (reading the document's intrinsic facts) —
    it is NOT the text quotes get derived from. The canonical clean scratch
@@ -32,7 +32,8 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
    `python3 scripts/tools/manifest.py verify-paths`.
 4. **Name the gaps** — load-bearing topics not covered internally. If nothing
    is missing, set `all_internal: true` (the orchestrator then skips the
-   External Investigator + Archive and goes straight to the Worker).
+   External Investigator + Archive and proceeds to scaffold; the
+   sibling-readiness gate still runs before the Worker).
    - **`blocking_prep` — source-prep, not sourcing.** Record each reused
      source flagged `ocr-scan` / `extraction-lossy` that lacks a verified
      `.txt` sibling as a `blocking_prep` item: the orchestrator must run the

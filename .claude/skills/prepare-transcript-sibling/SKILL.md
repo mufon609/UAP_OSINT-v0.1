@@ -1,6 +1,6 @@
 ---
 name: prepare-transcript-sibling
-description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption / Whisper / human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → mandatory active-speaker fold gate at finalize for video sources). The photo-identity-log baselines + mouth-motion engine decide who is SPEAKING, not who is on camera. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
+description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption — incl. Whisper-class machine output — or human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → mandatory active-speaker fold gate at finalize for video sources). The photo-identity-log baselines + mouth-motion engine decide who is SPEAKING, not who is on camera. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
 argument-hint: {transcript-slug}
 allowed-tools:
   - Agent(general-purpose)
@@ -226,7 +226,7 @@ against the actual source file, not against the producer's rationale
 prose.**
 
 The verifier returns:
-- **PASS** — the orchestrator finalizes **through the W3 fold gate**:
+- **PASS** — the orchestrator finalizes **through the active-speaker fold gate**:
   `python3 scripts/build/finalize-attribution.py {draft}.yaml
   --verifier-session {id} --video sources/video/{recording}` (or `--no-video`
   ONLY for a genuinely audio-only source). Finalize first runs the
@@ -255,7 +255,7 @@ The verifier never asserts speaker identities from outside the source
 text — they're checking the producer's read of the same evidence, not
 introducing new evidence.
 
-## 4b. Image verification — the MANDATORY pre-finalize fold gate (W3).
+## 4b. Image verification — the MANDATORY pre-finalize active-speaker fold gate.
 
 **Not optional, not gated by the producer's self-doubt.** `finalize-attribution.py
 --video` runs `spot-check-attribution.py` across EVERY turn of a video-source
@@ -300,7 +300,7 @@ Setup the gate needs: the source recording on disk
 (`.venv-face/`, via `setup-face-embeddings.sh`). If either is missing the gate
 cannot run and finalize refuses — that IS the no-graceful-skip rule, not a bug.
 
-**Residual (W5) — sub-line transitions.** When a turn-end and the next turn-start
+**Residual — sub-line transitions.** When a turn-end and the next turn-start
 are packed onto one `[MM:SS]` line, the line-range schema cannot split them;
 assign the line to the speaker who dominates its content (`confidence: medium`)
 and rely on this gate to catch the worst cases. A turn that is genuinely a fast

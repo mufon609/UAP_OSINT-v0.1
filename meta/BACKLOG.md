@@ -104,6 +104,22 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
+### C1 — Close the `transcript_provenance: unknown` bypass in the sibling gates
+
+`transcript_provenance` is optional and defaults to `unknown` when absent
+(`meta/schema.yaml`). The transcript sibling gates — `/build` step 4c,
+`/augment` §4, and `/prepare-transcript-sibling` step 1 — trigger only on the
+two explicit label-less values (`auto-caption` / `human-corrected-caption`),
+so a transcript source that was never classified (flagged `unknown`, or
+carrying no flag at all) passes every gate unprepared, and the build later
+hits the `speaker_id` requirement with no sibling and no documented route.
+Decide the convention — likely: a transcript source with `unknown`/absent
+provenance HALTs the gate for classification before the build proceeds — and
+add that line to the three gate surfaces (plus a check if warranted).
+
+**Blocks:** none.
+**Blocked by:** none.
+
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may

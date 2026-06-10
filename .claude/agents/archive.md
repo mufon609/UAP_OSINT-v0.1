@@ -29,7 +29,7 @@ orchestrator directly, in an `/augment` run).
    `meta/sources-access.md`.
 2. **Extract** each new source:
    `python3 scripts/build/extract-source.py --source {path}` →
-   `/tmp/scratch-{slug}-N.txt`. If you flag a source `extraction_type:
+   `/tmp/scratch-{basename}.txt`. If you flag a source `extraction_type:
    ocr-scan` / `extraction-lossy`, that scratch is **corrupt** and is not
    worker-ready: its canonical text is a verified `.txt` sibling, produced by
    the orchestrator's sibling-readiness step (`/build` step 4b — VLM read +

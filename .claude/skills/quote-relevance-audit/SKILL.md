@@ -8,6 +8,7 @@ allowed-tools:
   - Bash(python3 scripts/build/build-from-research.py *)
   - Bash(python3 scripts/build/validate-research.py *)
   - Bash(python3 scripts/build/review-coverage.py *)
+  - Bash(bash scripts/tests/pre-commit.sh)
 ---
 
 # Quote-relevance audit

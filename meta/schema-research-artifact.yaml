@@ -665,6 +665,9 @@ quote_source:
   #                     folio — enforced by the quote_location_page check.
   #     - `¶N`        — unpaginated short document (HTML, single-page memo)
   #                     or a section heading.
+  #     - `¶ <leading phrase>` — collapsed HTML block / unpaginated prose:
+  #                     the paragraph's leading words (ctrl-F-able in the
+  #                     source).
   #     - `[MM:SS]`   — caption / audio / video transcript (`[MM:SS]–[MM:SS]`
   #                     for a long quote).
   #     - `p. N`      — multi-page doc with no usable paragraph anchor.

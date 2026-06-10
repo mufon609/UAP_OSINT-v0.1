@@ -8,6 +8,7 @@ allowed-tools:
   - Skill(prepare-transcript-sibling)
   - Read
   - Bash(python3 scripts/build/new.py *)
+  - Bash(python3 scripts/build/extract-source.py *)
   - Bash(python3 scripts/build/research-scaffold.py *)
   - Bash(python3 scripts/build/validate-research.py *)
   - Bash(python3 scripts/build/build-state.py *)
@@ -146,12 +147,12 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 
 | Step → role | Pass (relay verbatim from prior stub / user) | Read back (stub) |
 |---|---|---|
-| 1 internal-investigator | target `{type}/{slug}` + scope (from user) | `linked_nodes`, `reusable_sources`, `gaps`, `blocking_prep`, `all_internal` |
+| 1 internal-investigator | target `{type}/{slug}` + scope (from user) | `linked_nodes`, `reusable_sources`, `topic_relevance`, `gaps`, `blocking_prep`, `all_internal` |
 | 2 external-investigator | `gaps[]`, `linked_nodes` (step-1 stub) | `queued_sources[]` (confirming_span-checked), `unfilled_gaps` |
 | 3 archive | `queued_sources[]` (step-2 stub) | `archived[]` + scratch paths, `primary_sources_registered` |
-| 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `cross_ref_candidates`, `background_material`, `cited_works`) |
+| 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `claim_groups_proposed`, `cross_ref_candidates`, `background_material`, `cited_works`) |
 | 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
-| 7 auditor | the rendered node path `{type}/{slug}.md` | `health` |
+| 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `validator_findings` |
 | 4b/4c sibling gate *(Skill, not Agent)* | the `{source-path}` (4b) / `{slug}` (4c) — nothing more | a registered, verified sibling |
 
 These are inputs, not interpretation. `linked_nodes` is a **required input
@@ -167,7 +168,8 @@ verification discipline. Do not re-author that discipline into the sub-skill
 invocation; the relay/contract split holds one level down too.
 
 1. **`Agent(internal-investigator)`** with the target. Read its stub:
-   `linked_nodes`, `reusable_sources`, `gaps`, `all_internal`.
+   `linked_nodes`, `reusable_sources`, `topic_relevance`, `gaps`,
+   `blocking_prep`, `all_internal`.
    - **all-internal branch:** if `all_internal: true` / `gaps: []`, skip
      steps 2–3 (no new-bytes sourcing); scaffold from the reused sources and go
      to step 4. Source-**prep** is not skipped: step 4b (OCR-scan sibling
@@ -199,10 +201,13 @@ invocation; the relay/contract split holds one level down too.
    (the why + the produce→independently-verify→register contract:
    build-protocol → "Some primary sources need a verified sibling"). This gate
    runs **regardless of the all-internal branch** — all-internal skips
-   new-bytes sourcing, not source-prep. Once every ocr-scan source has a
-   verified sibling, the canonical scratch comes from
-   `extract-source.py --artifact` (it prefers the sibling). Text-native
-   sources need no sibling.
+   new-bytes sourcing, not source-prep. Text-native sources need no sibling. Once the
+   sibling gates (4b/4c) clear, produce the canonical worker scratches —
+   an orchestrator action, one run:
+   `python3 scripts/build/extract-source.py --artifact meta/research/{slug}.yaml`
+   writes the `/tmp/scratch-{slug}-N.txt` path for every primary source
+   (these are the scratch paths relayed to the workers) and prefers the
+   verified `.txt` sibling for an ocr-scan source.
 4c. **Transcript sibling gate** *(orchestrator step — same shape as 4b)*. A
    source flagged `transcript_provenance: auto-caption` /
    `human-corrected-caption` (label-less) without a verified
