@@ -53,11 +53,16 @@ to the next, and never hand-author the node. The shared contract
 Why these rules: the failure rule 2 prevents actually happened — an authored
 Description dropped every source-attested entity link after the orchestrator
 imported the discretionary quote-relevance judgment into the absolute
-entity-linking rule. A disk-stub transport (the pre-skills-migration
-`/tmp/handoff-{slug}-{role}.yaml` files) was evaluated and **rejected**: it
-fixes data fidelity, which was never the hazard — rule 2's policy injection
-is. No role or orchestrator ever writes a handoff file; rule 3's persisted
-file is written by the harness.
+entity-linking rule. The hazard these rules guard is **policy injection**,
+never data transport: the worker writes its fragment **file** and
+`scripts/build/merge-fragments.py` copies the verbatim payload into the
+artifact byte-exactly, schema fields only — mechanical data transport that
+removes the retyping drift surface the verbatim check exists to catch. (An
+earlier blanket rejection of disk handoffs conflated the two; policy stays
+governed by rule 2, the stub `notes` contract — stub-schemas.md "Advisory
+notes" — and the merge script's field filter, which ignores everything a
+fragment carries beyond the schema.) No role or orchestrator ever writes a
+*policy* handoff file; rule 3's persisted file is written by the harness.
 
 **Target.** `{type}/{slug}` + scope come from the user — per the project
 discipline, never invent a build target. If `$ARGUMENTS` is empty, ask what to
@@ -153,8 +158,8 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 | 1 internal-investigator | target `{type}/{slug}` + scope (from user) | `linked_nodes`, `reusable_sources`, `topic_relevance`, `gaps`, `blocking_prep`, `all_internal` |
 | 2 external-investigator | `gaps[]`, `linked_nodes` (step-1 stub) | `queued_sources[]` (confirming_span-checked), `unfilled_gaps` |
 | 3 archive | `queued_sources[]` (step-2 stub) | `archived[]`, `primary_sources_registered` |
-| 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `claim_groups_proposed`, `cross_ref_candidates`, `background_material`, `cited_works`) |
-| 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
+| 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the slim stub (`fragment_path` + `counts`; the fragment file carries the payload) |
+| 6 builder | all worker `fragment_path`s; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
 | 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `validator_findings` |
 | 4b/4c sibling gate *(Skill, not Agent)* | the `{source-path}` (4b) / `{slug}` (4c) — nothing more | a registered, verified sibling |
 
@@ -227,12 +232,14 @@ invocation; the relay/contract split holds one level down too.
    `speaker_id` against (the `transcript_sibling_presence` check is the
    commit-boundary backstop for this gate).
 5. **`Agent(worker)` once per source, in parallel** — issue the worker calls
-   in a single message so they run concurrently; each returns a fragment (it
-   does not write the artifact). Collect every fragment.
-6. **`Agent(builder)`** — Pass per the table: all worker fragments, plus
+   in a single message so they run concurrently; each writes its fragment
+   file and returns a slim stub (`fragment_path` + `counts` — it does not
+   write the artifact). Collect every fragment path.
+6. **`Agent(builder)`** — Pass per the table: all worker fragment paths, plus
    `linked_nodes` + `topic_relevance` + `reusable_sources` from the step-1 stub.
    `linked_nodes` is a required *input* — relay it; do not describe how it is
-   used (the contract owns that). The builder merges the fragments, runs the
+   used (the contract owns that). The builder merges the fragment files via
+   `merge-fragments.py` (byte-exact mechanical transport), runs the
    extract check, then organize → link → render. Read its stub.
    - **On `result: fail`:** run
      `python3 scripts/tools/route_failure.py {failing_check_names}`, re-enter

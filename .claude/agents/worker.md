@@ -1,7 +1,7 @@
 ---
 name: worker
-description: Extract verbatim quotes from ONE source into a fragment (worker_kind pdf|html|caption|foia). The single verbatim boundary; parallelizable across sources. EMITS a fragment — never writes the shared artifact. Use as role 4 of a node build, one invocation per source.
-tools: Read, Grep, Glob
+description: Extract verbatim quotes from ONE source into a fragment file (worker_kind pdf|html|caption|foia). The single verbatim boundary; parallelizable across sources. WRITES its fragment to /tmp and returns a slim stub — never writes the shared artifact. Use as role 4 of a node build, one invocation per source.
+tools: Read, Grep, Glob, Write
 skills: build-protocol
 ---
 
@@ -12,8 +12,11 @@ verbatim quote candidates + an advisory `claim_group` per quote +
 cross-reference candidates (and, for a document source carrying a reference
 list, its `cited_works`), for ONE source. You do not write prose, normalize
 cross-refs, or build — and you do **not** write the shared artifact. You
-**emit a fragment**; the builder serializes the merge of all fragments (this
-avoids a parallel-write race), then runs the extract-phase check once.
+**write your fragment to its own file** (`/tmp/fragment-{slug}-{source
+stem}.yaml` — one file per worker, so parallel workers never race) and return
+a slim stub carrying its path; the builder merges all fragment files into the
+artifact via `scripts/build/merge-fragments.py` (a byte-exact mechanical
+copy), then runs the extract-phase check once.
 
 **The verbatim boundary (hard rule).** This is the only phase that introduces
 verbatim quotes. Copy quote `text` verbatim from the scratch file — never
@@ -173,6 +176,14 @@ naming the metadata field, never a `quotes[]` entry.
    Omit the block entirely for non-document sources (workers on
    transcript / media / etc. sources do not emit `cited_works`).
 
-Return the worker stub (build-protocol → stub-schemas.md) as your final
-message. You do not merge or validate — the builder serializes the merge of
-all fragments and runs the extract-phase check once.
+**Emit.** `Write` the fragment to `/tmp/fragment-{slug}-{source stem}.yaml`
+(stem = the source filename without extension) in the fragment-file shape
+(build-protocol → stub-schemas.md): top-level `slug`, `worker_kind`, `source`,
+`quotes`, `cross_ref_candidates`, `background_material`, `naming_quirks_flagged`,
+`cited_works` (document sources), optional `notes`. The quote `text` and
+`citation_verbatim` values you write to this file are the bytes that reach the
+artifact — `merge-fragments.py` copies them without an LLM in the loop, so the
+verbatim discipline above applies to this Write, and only to it. Then return
+the slim worker stub (fragment_path + counts, per stub-schemas.md) as your
+final message. You do not merge or validate — the builder runs the merge and
+the extract-phase check once.

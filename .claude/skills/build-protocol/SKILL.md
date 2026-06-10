@@ -63,8 +63,8 @@ failure mode (it is invisible to its author).
   alongside the unchanged verbatim source.*
 
 Producing + verifying + registering each sibling is the **orchestrator's** job,
-never the Worker's: the Worker has no Write tool and emits a fragment, not a
-file. This keeps source-read-first + attribution-against-source honest instead
+never the Worker's: the Worker's only Write surface is its own fragment file —
+it never produces siblings or sources. This keeps source-read-first + attribution-against-source honest instead
 of letting a corrupt extract or label-less caption masquerade as worker-ready.
 The orchestrator dispatches the prep skill via the Skill tool; if that
 invocation fails, it **HALTs** and directs the user to run the skill — it
@@ -259,8 +259,11 @@ one-new-synthesis-node-per-session rule).
 Your output is your **return value**: return your role's stub (per the schema
 in [stub-schemas.md](stub-schemas.md)) as your final message. That return value
 is the handoff the orchestrator reads to drive the next role — you write no file
-for it. The durable record is the manifest + artifact + git. Read only the stub
-schema for your own role.
+for it, with one exception: the **worker writes its fragment file**
+(`/tmp/fragment-{slug}-{source stem}.yaml`, stub-schemas.md) and its stub
+carries the path; `merge-fragments.py` transports the verbatim payload from
+that file into the artifact byte-exactly. The durable record is the manifest +
+artifact + git. Read only the stub schema for your own role.
 
 ## Orchestration branches
 
@@ -311,8 +314,8 @@ mechanical — the separation *is* the enforcement:
 | `internal-investigator` | read-only; no web tools, no manifest-write → an "archived-only" reuse survey that can't quietly pull from the web |
 | `external-investigator` | web-enabled, but no manifest commit; its read is re-checkable (returns a verbatim `confirming_span`, not a bare "I read it") |
 | `archive` | the only role that writes the manifest |
-| `worker` | the single phase that introduces verbatim quotes; emits a fragment, never writes the shared artifact (so parallel workers can't race) |
-| `builder` | the synthesis / prose-drift surface; edits only the artifact, never the node body; serializes the worker-fragment merge |
+| `worker` | the single phase that introduces verbatim quotes; writes its own fragment file + slim stub, never the shared artifact (one file per worker, so parallel workers can't race) |
+| `builder` | the synthesis / prose-drift surface; edits only the artifact, never the node body; owns the fragment merge (mechanical, via merge-fragments.py) |
 | `auditor` | a fresh-context cold re-read — the independent verifier the producing role can't be |
 
 Two former roles **dissolved**: the Orchestrator (a control loop, now the

@@ -1,7 +1,7 @@
 ---
 name: builder
-description: Organize merged worker fragments → link cross-references → render the node. The synthesis role and the prose-drift surface. Edits only the research artifact, never the node body; failures route to data fixes. Use as role 5 of a node build, after the worker fragments are merged.
-tools: Read, Edit, Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *)
+description: Merge worker fragment files mechanically → organize → link cross-references → render the node. The synthesis role and the prose-drift surface. Edits only the research artifact, never the node body; failures route to data fixes. Use as role 5 of a node build, after the workers emit their fragment files.
+tools: Read, Edit, Bash(python3 scripts/build/merge-fragments.py *), Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *)
 skills: build-protocol
 ---
 
@@ -13,7 +13,7 @@ surface (re-run the Worker instead). You never hand-edit the node body — it is
 hook-blocked, and failures route to data fixes (build-protocol → fix-the-data),
 then the node is rebuilt. You edit only `meta/research/*.yaml`.
 
-**Required input:** the merged artifact + all worker fragments + the
+**Required input:** the scaffolded artifact + every worker fragment **path** + the
 `linked_nodes` / topic-relevance context from the Internal Investigator. Relevance is judged
 against that context, never the source alone — if it's missing, stop and ask
 the orchestrator for it.
@@ -21,20 +21,22 @@ the orchestrator for it.
 In order, with a check after each (build-protocol → run
 `scripts/checks/_phases.py --check-phase <name>` for any check's phase):
 
-0. **Merge.** You are the single serializer of the worker fragments — merge
-   each fragment's `quotes[]` + `background_material[]` + `cross_ref_candidates[]`
-   + `cited_works` (document sources) into the scaffolded artifact in one
-   deterministic pass (workers do not write it, so there's no race), introducing
-   only material a worker surfaced. Pass each quote's `source.location` through as
-   the worker emitted it — do **not** "normalize" a sibling-backed OCR-scan
-   source's locator toward `p. N`; that source's form is a descriptive content
-   anchor by design (`meta/schema-research-artifact.yaml`::quote_source), and a markerless
-   sibling has no verifiable physical page. **`cited_works` is the three-state
-   affirmation** (NONE / IGNORED / non-empty list): a worker
-   fragment may carry the scalar `NONE` / `IGNORED` instead of a list — pass
-   the scalar through verbatim (no list-union semantics on a string). The
-   per-document expectation is exactly one `cited_works` shape across the
-   merged artifact; conflicting fragments are a data defect, never yours to
+0. **Merge — mechanical, never typed.** You own the merge invocation, but the
+   verbatim payload never passes through your keyboard: run
+   `python3 scripts/build/merge-fragments.py meta/research/{slug}.yaml
+   {fragment paths, in source order}` — it copies every fragment's `quotes[]` +
+   `cited_works` into the scaffolded artifact **byte-exactly** (ids, dates, and
+   `source.{path,location}` stamped mechanically; locations passed through
+   untouched, so a sibling-backed OCR-scan source's descriptive anchor is never
+   "normalized" toward `p. N`). Retyping verbatim data is the drift surface the
+   verbatim check exists to catch — you MUST NOT hand-copy quote or citation
+   text into the artifact, ever. Then `Read` each fragment file for the
+   judgment payload the script deliberately does not transport:
+   `cross_ref_candidates[]`, `background_material[]`, `naming_quirks_flagged[]`,
+   `notes` — those feed your organize/link work below, introducing only
+   material a worker surfaced. **`cited_works` shape conflicts** (fragments
+   mixing NONE / IGNORED / list) make the script exit nonzero with
+   `cited_works_shape_conflict`: that is a data defect, never yours to
    reconcile — adjudicating between shapes asserts what a source's reference
    list contains, which only a Worker read may do. Stop and return
    `result: fail` with `routed: [cited_works_shape_conflict]` and the

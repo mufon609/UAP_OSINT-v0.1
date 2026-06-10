@@ -11,6 +11,7 @@ allowed-tools:
   - Glob
   - Edit
   - Bash(python3 scripts/build/extract-source.py *)
+  - Bash(python3 scripts/build/merge-fragments.py *)
   - Bash(python3 scripts/build/build-from-research.py *)
   - Bash(python3 scripts/build/validate.py *)
   - Bash(python3 scripts/build/validate-research.py *)
@@ -53,10 +54,11 @@ anything** (mirrors `/audit`). The shape is never chosen silently.
   remove an *unattested* string): **no role**. Edit the **artifact** (`meta/research/{slug}.yaml`)
   directly, exactly as `/audit` step 4 does. See §3 for what may and may not be removed.
 - **Shape B — quote from an already-archived source**: §4 OCR gate → `Agent(worker)` on that one
-  source (`worker_kind` per its format) → the worker returns a fragment, and **you merge it** into
-  the existing artifact (the worker has no Write tool — this is the builder's deterministic single-
-  writer merge, safe on the main thread) → `validate-research.py --phase extract` (the verbatim
-  boundary; re-reads disk).
+  source (`worker_kind` per its format) → the worker writes its fragment file and returns the slim
+  stub → merge it with `python3 scripts/build/merge-fragments.py --append meta/research/{slug}.yaml
+  {fragment_path}` (`--append` is the maintenance mode: it allows the populated artifact and
+  continues qN/cwN numbering — never hand-copy the verbatim payload) →
+  `validate-research.py --phase extract` (the verbatim boundary; re-reads disk).
 - **Shape C — needs a new or re-pulled source**: `Agent(external-investigator)` with the gap +
   `linked_nodes` (**reject any queued source lacking a `confirming_span`** — the non-negotiable
   invariant) → `Agent(archive)` (downloads, writes the manifest, submits to Wayback, extracts the
