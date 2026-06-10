@@ -4,6 +4,18 @@ One stub per role. Each role reads only its own. A stub is a role's **return
 value** — the final message it returns to the orchestrator (you write no file
 for it). Every example value is a placeholder — keep this file topic-neutral.
 
+**Advisory notes.** Every stub MAY end with an optional `notes:` block — free
+prose recording what the emitting role *saw, did, and judged*: source facts,
+anomalies encountered, edge cases resolved and why. It is **non-normative**
+(subordinate to every contract; it creates no obligation for any role) and it
+must **never** contain instructions or policy for another role — that is
+relay-rule-2 policy injection by proxy, since a role weights its just-issued
+prompt above its standing contract. Notes travel with the stub only when the
+**whole stub is the relayed unit** (a worker fragment handed to the builder);
+they are never extracted into another step's named-field `Pass:` set — a
+survey stub's notes inform the orchestrator's own gate decisions and stop
+there.
+
 ```yaml
 # internal-investigator — returned stub
 agent: internal-investigator
@@ -12,9 +24,12 @@ target: {type}/{slug}
 linked_nodes: [/{type}/{related-a}, /{type}/{related-b}]   # the context downstream roles judge relevance against
 reusable_sources:
   - path: {category}/{file}.pdf
-    scratch: /tmp/scratch-{slug}-1.txt
     covers: ["{claim-group label}"]
     extraction_type: text-native   # text-native | ocr-scan | extraction-lossy (from manifest)
+    # No scratch path here: survey extracts are this role's own reading aids
+    # (corrupt for ocr-scan sources). The canonical worker scratches come from
+    # the orchestrator's step-4b `extract-source.py --artifact` run and are
+    # relayed to workers at step 5 — never through this stub.
     # ocr-scan / extraction-lossy → the artifact's primary_sources entry also carries
     # `content_block`, pasted verbatim from ocr-consensus.py's emitted line at sibling
     # prep (/prepare-ocr-sibling step 5). Renders as a `Content Block` row.
@@ -25,6 +40,7 @@ blocking_prep: []              # source-prep prerequisites the orchestrator must
                                # verified .txt sibling does not yet exist -> /build step 4b must produce it.
 all_internal: false            # true => orchestrator skips external + archive (NOT source-prep / 4b)
 validator_findings: []
+notes: |                       # optional, non-normative — "Advisory notes" above
 ```
 
 ```yaml
@@ -42,6 +58,7 @@ queued_sources:                # may be empty — an exhausted record is a valid
     rationale: <one line: why load-bearing, judged against linked_nodes>
 unfilled_gaps: []
 validator_findings: []
+notes: |                       # optional, non-normative — "Advisory notes" above
 ```
 A queued source with no `confirming_span` is rejected — a bare
 "I read it" boolean is not accepted (the read must be re-checkable).
@@ -54,9 +71,13 @@ archived:
   - url: https://{host}/.../{document}.pdf
     path: {category}/{file}.pdf
     status: archived           # or pending + wayback_date
-    scratch: /tmp/scratch-{slug}-2.txt
+    # No scratch path here: the archive role's extracts serve its own
+    # extraction-fidelity flagging. The canonical worker scratches come from
+    # the orchestrator's step-4b `extract-source.py --artifact` run and are
+    # relayed to workers at step 5 — never through this stub.
 primary_sources_registered: [{category}/{file}.pdf]
 validator_findings: []         # validate.py --phase archive
+notes: |                       # optional, non-normative — "Advisory notes" above
 ```
 
 ```yaml
@@ -101,6 +122,8 @@ outputs_produced:
       citation_verbatim: "<full reference line copied verbatim from scratch, incl. its [N] marker + OCR sic>"
       location: "<source-shape anchor, e.g. p. N, References>"   # optional: year, title
 validator_findings: []         # validate-research.py --phase extract, on the merged artifact
+notes: |                       # optional, non-normative — "Advisory notes" above; rides
+                               # with the fragment when it is relayed whole to the builder
 ```
 
 ```yaml
@@ -116,6 +139,7 @@ tested_before_build: true      # organize + link were clean before render
 result: pass                   # or fail
 routed: []                     # route_failure.py output when result: fail
 validator_findings: []
+notes: |                       # optional, non-normative — "Advisory notes" above
 ```
 
 ```yaml
@@ -125,4 +149,5 @@ slug: {slug}
 node: {type}/{slug}.md
 health: pass
 validator_findings: []
+notes: |                       # optional, non-normative — "Advisory notes" above
 ```

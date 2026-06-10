@@ -30,7 +30,10 @@ to the next, and never hand-author the node. The shared contract
 
 1. **Relay each step's closed input set verbatim** — the `Pass:` column of the
    table below (named fields quoted verbatim from prior stubs, the target,
-   source paths) — and **nothing else**.
+   source paths) — and **nothing else**. A stub's optional `notes` block
+   (build-protocol → stub-schemas.md "Advisory notes") travels only when the
+   whole stub is the relayed unit (e.g. a worker fragment); never extract it
+   into another step's named-field set.
 2. **Never restate, summarize, or "clarify" a role's policy** — evidentiary
    discipline, entity-linking, quote scope and voice, relevance judgment,
    prose-drift framing. It lives complete in that role's contract
@@ -149,7 +152,7 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 |---|---|---|
 | 1 internal-investigator | target `{type}/{slug}` + scope (from user) | `linked_nodes`, `reusable_sources`, `topic_relevance`, `gaps`, `blocking_prep`, `all_internal` |
 | 2 external-investigator | `gaps[]`, `linked_nodes` (step-1 stub) | `queued_sources[]` (confirming_span-checked), `unfilled_gaps` |
-| 3 archive | `queued_sources[]` (step-2 stub) | `archived[]` + scratch paths, `primary_sources_registered` |
+| 3 archive | `queued_sources[]` (step-2 stub) | `archived[]`, `primary_sources_registered` |
 | 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the fragment (`quotes`, `claim_groups_proposed`, `cross_ref_candidates`, `background_material`, `cited_works`) |
 | 6 builder | all worker fragments; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
 | 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `validator_findings` |
@@ -180,7 +183,7 @@ invocation; the relay/contract split holds one level down too.
    `queued_sources[]`. **Reject any queued source lacking a `confirming_span`**
    — a bare "read it" is not accepted (build-protocol → the non-negotiable invariant).
 3. **`Agent(archive)`** with the (validated) `queued_sources[]`. Read
-   `archived[]` + the scratch paths.
+   `archived[]`.
 4. **Scaffold once, here** *(orchestrator step — not a role)* — only after sourcing has settled the node's
    classification (person **archetype** / org **kind** / document **form**)
    and the full source set. Two commands, in order:

@@ -343,8 +343,20 @@ def build_consensus_2(base_text, other_text):
 
 
 # ---------------------------------------------------------------------------
-# Engine adapters (only invoked by `run`)
+# Engine adapters
 # ---------------------------------------------------------------------------
+def _join_pages(pages):
+    """``"\\n".join(pages)`` plus the char offset where each page begins in the
+    joined text — the engine-side analogue of ``_concat_pages``'s page_starts,
+    so page boundaries are recoverable from any engine read (``verify`` derives
+    sibling-side page tags from them; see ``derive_page_starts``)."""
+    starts, off = [], 0
+    for p in pages:
+        starts.append(off)
+        off += len(p) + 1   # the joining "\n"
+    return "\n".join(pages), starts
+
+
 def rasterize(pdf_path, out_dir, dpi=300):
     subprocess.run(
         ["pdftoppm", "-png", "-r", str(dpi), str(pdf_path), str(Path(out_dir) / "page")],
@@ -370,7 +382,7 @@ def run_tesseract(images):
         )
         pages.append(out.stdout)
         print(f"      Tesseract p.{len(pages)}/{len(images)}", file=sys.stderr, flush=True)
-    return "\n".join(pages)
+    return _join_pages(pages)
 
 
 def run_paddleocr(images):
@@ -439,7 +451,7 @@ def run_paddleocr(images):
                         continue
         pages.append("\n".join(lines))
         print(f"      PaddleOCR p.{len(pages)}/{len(images)}", file=sys.stderr, flush=True)
-    return "\n".join(pages)
+    return _join_pages(pages)
 
 
 def paddleocr_version():
@@ -483,6 +495,42 @@ def _page_of_offset(page_starts, off):
     return bisect.bisect_right(page_starts, off)
 
 
+def derive_page_starts(base_text, engine_text, engine_page_starts):
+    """Sibling-side page start offsets, derived by aligning an engine read's
+    per-page boundaries onto the sibling base text.
+
+    Computed fresh from the PDF on every call — deliberately NO persisted page
+    metadata: token-level verifier corrections edit the sibling between ``run``
+    and ``verify``, so any stored offsets would be stale exactly when ``verify``
+    runs. A single difflib pass over ``tokenize()`` output collects confident
+    ('equal'-opcode) (engine_offset, base_offset) pairs — both coordinates
+    monotone because difflib opcodes advance both streams monotonically — then
+    each engine page start bisects to the nearest matched pair's base offset.
+    Boundary-adjacent rows can therefore land one page off (an empty engine
+    page collapses its boundary onto the next); derived tags print as ``~p.N``.
+    Returns None when alignment finds no confident pairs (no tags beat wrong
+    tags)."""
+    base_tokens = tokenize(base_text)
+    eng_tokens = tokenize(engine_text)
+    sm = difflib.SequenceMatcher(
+        a=[norm_token(t[0]) for t in base_tokens],
+        b=[norm_token(t[0]) for t in eng_tokens], autojunk=False)
+    pairs = []   # (engine_char_off, base_char_off), 'equal' blocks only -> monotone
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal":
+            for k in range(i2 - i1):
+                pairs.append((eng_tokens[j1 + k][1], base_tokens[i1 + k][1]))
+    if not pairs:
+        return None
+    eng_offs = [p[0] for p in pairs]
+    starts = [0]
+    for ps in engine_page_starts[1:]:
+        idx = bisect.bisect_left(eng_offs, ps)
+        base_off = pairs[idx][1] if idx < len(pairs) else len(base_text)
+        starts.append(max(base_off, starts[-1]))   # keep monotone for bisect
+    return starts
+
+
 def _is_high_signal(c):
     """A divergence the reviewer MUST settle against the page image: both OCR
     engines independently read the same token and it differs from the sibling
@@ -496,7 +544,8 @@ def _is_high_signal(c):
     return c.get("note", "").startswith("both OCR engines agree")
 
 
-def _print_divergence_rows(rows, sibling, page_starts):
+def _print_divergence_rows(rows, sibling, page_starts, derived=False):
+    tag = "~p." if derived else "p."
     for c in rows:
         cand = c["candidates"]
         if cand["vlm"] is None:          # OCR-only sibling (VLM skipped): base == tesseract
@@ -505,12 +554,12 @@ def _print_divergence_rows(rows, sibling, page_starts):
             reads = (f"sibling={cand['vlm']!r}  tesseract={cand['tesseract']!r}  "
                      f"paddleocr={cand['paddleocr']!r}")
         page = _page_of_offset(page_starts, c["char_start"])
-        loc = f"p.{page} line {c['line']}" if page else f"line {c['line']}"
+        loc = f"{tag}{page} line {c['line']}" if page else f"line {c['line']}"
         print(f"    {loc}: {reads}")
         print(f"      {c['context']}")
 
 
-def print_confirm_report(divergences, sibling, page_starts=None):
+def print_confirm_report(divergences, sibling, page_starts=None, derived=False):
     """Print the load-bearing divergence report, partitioned so the agent
     image-verifies the right (small) set instead of skimming everything.
 
@@ -525,16 +574,25 @@ def print_confirm_report(divergences, sibling, page_starts=None):
         equation placeholders, per-engine glyph noise). Skim; image-check only
         where one lands on body prose.
 
-    Page numbers are shown when ``page_starts`` is supplied (``run --vlm-pages``)."""
+    Page numbers are shown when ``page_starts`` is supplied — exact ``p.N`` from
+    ``run --vlm-pages``, or ``~p.N`` when ``derived`` (boundaries aligned onto
+    the sibling from the Tesseract page reads; see ``derive_page_starts``)."""
     if not divergences:
         print(f"\n  ✓ CONFIRMED: every load-bearing word/number in {sibling.name} is "
               f"corroborated by an OCR engine. No divergences to reconcile.")
         return
     high = [c for c in divergences if _is_high_signal(c)]
     weak = [c for c in divergences if not _is_high_signal(c)]
-    loc_hint = "" if page_starts else (
-        "  (no page numbers — sibling produced without `run --vlm-pages`; locate "
-        "the line in the sibling to find its page.)")
+    if page_starts and derived:
+        loc_hint = (
+            "  (page tags ~p.N derived by aligning OCR page boundaries onto the "
+            "sibling — boundary-adjacent rows may be off by one page.)")
+    elif page_starts:
+        loc_hint = ""
+    else:
+        loc_hint = (
+            "  (no page numbers — page boundaries could not be aligned; locate "
+            "the line in the sibling to find its page.)")
 
     print(f"\n  {len(high)} HIGH-SIGNAL divergence(s) — both OCR engines read the same "
           f"token, differing from the sibling. OPEN THE PAGE IMAGE for each and decide "
@@ -542,7 +600,7 @@ def print_confirm_report(divergences, sibling, page_starts=None):
           f"Fix the sibling on a VLM misread; leave it on shared OCR glyph-confusion "
           f"(e.g. µm→um, SiO2→SiOz).{loc_hint}")
     if high:
-        _print_divergence_rows(high, sibling, page_starts)
+        _print_divergence_rows(high, sibling, page_starts, derived)
     else:
         print("    (none)")
 
@@ -551,7 +609,7 @@ def print_confirm_report(divergences, sibling, page_starts=None):
           f"per-engine glyph noise). Skim; open the page image only where one lands on "
           f"body prose.")
     if weak:
-        _print_divergence_rows(weak, sibling, page_starts)
+        _print_divergence_rows(weak, sibling, page_starts, derived)
 
 
 # ---------------------------------------------------------------------------
@@ -600,8 +658,8 @@ def _paddle_fill_page(pdf, page_num, two_column, dpi):
             left, right = Path(tmp) / "L.png", Path(tmp) / "R.png"
             im.crop((0, 0, mid, h)).save(left)
             im.crop((mid, 0, w, h)).save(right)
-            return run_paddleocr([left]) + "\n" + run_paddleocr([right])
-        return run_paddleocr([imgs[0]])
+            return run_paddleocr([left])[0] + "\n" + run_paddleocr([right])[0]
+        return run_paddleocr([imgs[0]])[0]
 
 
 def fill_blocked_pages(pdf, pages_dir, blocked, two_column, dpi):
@@ -629,7 +687,10 @@ def fill_blocked_pages(pdf, pages_dir, blocked, two_column, dpi):
 def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
     """Rasterize the PDF and run both OCR engines on the whole document.
 
-    Returns ``(tess_text, paddle_text, blocked_report)``. ``blocked_report`` is
+    Returns ``(tess_text, paddle_text, blocked_report, tess_starts)``.
+    ``tess_starts`` is the per-page start-offset list of the Tesseract join
+    (the page authority for derived sibling-side tags; see
+    ``derive_page_starts``). ``blocked_report`` is
     ``[(page_number, [divergence, ...]), ...]`` for the content-blocked pages:
     on such a page the sibling text IS the PaddleOCR fill (the VLM couldn't
     produce it), so the only mechanical check is PaddleOCR-vs-Tesseract on that
@@ -641,16 +702,16 @@ def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
         images = rasterize(pdf, tmp, dpi)
         print(f"      {len(images)} page image(s)")
         print("      Tesseract (second opinion) ...")
-        tess_text = run_tesseract(images)
+        tess_text, tess_starts = run_tesseract(images)
         print("      PaddleOCR (primary cross-check) ...")
-        paddle_text = run_paddleocr(images)
+        paddle_text, _ = run_paddleocr(images)
         for n in blocked_pages:
             if not (1 <= n <= len(images)):
                 print(f"      ! blocked page {n} out of range (1..{len(images)}) — skipped")
                 continue
             print(f"      blocked page {n}: PaddleOCR fill vs Tesseract ...")
-            p_txt = run_paddleocr([images[n - 1]])
-            t_txt = run_tesseract([images[n - 1]])
+            p_txt, _ = run_paddleocr([images[n - 1]])
+            t_txt, _ = run_tesseract([images[n - 1]])
             # PaddleOCR is the fill (the sibling on this page) → it is the spine;
             # build_consensus_2 hardcodes candidates.tesseract=base, .paddleocr=other,
             # so normalize the keys to true engine names here.
@@ -662,7 +723,7 @@ def _ocr_pages(pdf, stem, dpi, blocked_pages=()):
                    if is_load_bearing(c["candidates"]["tesseract"], p_txt,
                                       c["char_start"], c["char_end"])]
             blocked_report.append((n, div))
-    return tess_text, paddle_text, blocked_report
+    return tess_text, paddle_text, blocked_report, tess_starts
 
 
 def print_blocked_report(blocked_report):
@@ -778,12 +839,12 @@ def cmd_run(args):
                   + (f"  (two-column, column-split: {','.join(map(str, tc))})" if tc else ""))
 
     print(f"[1/2] Rasterizing {pdf.name} at {args.dpi} dpi + OCR ...")
-    tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
+    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(pdf, stem, args.dpi, blocked)
 
     print("[2/2] Writing the sibling + confirming load-bearing words/numbers ...")
-    page_starts = None
+    page_starts, derived = None, False
     if args.vlm_pages:
-        base_text, page_starts = _concat_pages(args.vlm_pages)
+        base_text, page_starts = _concat_pages(args.vlm_pages)   # exact tags
         vlm_skipped = False
         # Footgun guard: every declared blocked page must now carry content, so the
         # sibling cannot ship with a silent gap where the VLM was blocked.
@@ -797,9 +858,12 @@ def cmd_run(args):
     elif args.vlm:
         base_text = Path(args.vlm).read_text(encoding="utf-8")
         vlm_skipped = False
+        page_starts = derive_page_starts(base_text, tess_text, tess_starts)
+        derived = True
     else:
         base_text = tess_text   # OCR-only fallback: Tesseract is the readable base
         vlm_skipped = True
+        page_starts = tess_starts   # base IS the Tesseract join — exact tags
 
     sibling.write_text(base_text, encoding="utf-8")
     print(f"\n  sibling : {sibling}")
@@ -816,15 +880,17 @@ def cmd_run(args):
               f"— a candidate dropped paragraph/page. Recover it before using the "
               f"sibling.{extra}")
 
-    print_confirm_report(divergences, sibling, page_starts)
+    print_confirm_report(divergences, sibling, page_starts, derived)
     print_blocked_report(blocked_report)
     print_content_block(blocked, vlm_skipped)
 
 
 def cmd_verify(args):
     """Re-confirm an EXISTING sibling against the OCR engines (no regeneration):
-    the same load-bearing divergence report `run` prints. Use when re-checking a
-    sibling that was produced earlier."""
+    the same load-bearing divergence report `run` prints, with derived ``~p.N``
+    page tags (page boundaries aligned onto the sibling from the Tesseract
+    reads — fresh each run, since verifier corrections shift sibling offsets).
+    Use when re-checking a sibling that was produced earlier."""
     pdf = _resolve_pdf(args.pdf)
     stem = pdf.with_suffix("").name
     sibling = pdf.with_suffix(".txt")
@@ -835,10 +901,11 @@ def cmd_verify(args):
 
     blocked = parse_pages(args.blocked_pages)
     print(f"Rasterizing {pdf.name} at {args.dpi} dpi + OCR (re-confirm) ...")
-    tess_text, paddle_text, blocked_report = _ocr_pages(pdf, stem, args.dpi, blocked)
+    tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(pdf, stem, args.dpi, blocked)
     sib_text = sibling.read_text(encoding="utf-8")
     divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
-    print_confirm_report(divergences, sibling)
+    page_starts = derive_page_starts(sib_text, tess_text, tess_starts)
+    print_confirm_report(divergences, sibling, page_starts, derived=True)
     print_blocked_report(blocked_report)
     # Re-emit the canonical value from the blocked-page facts. verify doesn't
     # track --vlm-skipped (it re-checks, it doesn't produce), so a whole-doc
@@ -904,6 +971,24 @@ def cmd_selftest(_args):
     if any(c["candidates"]["vlm"] is not None for c in c5):
         failures.append("case5: 2-engine candidates.vlm should be None")
 
+    # Case 6: derived page starts — engine pages aligned onto a base text that
+    # diverges by one mutated and one deleted token; each derived start must hit
+    # the base offset of that page's first token, and an empty middle page must
+    # not break monotonicity.
+    eng_pages = ["alpha bravo charlie", "delta echo foxtrot", "", "golf hotel india"]
+    eng_text, eng_starts = _join_pages(eng_pages)
+    base6 = "alpha bravo charlie delta XXXXX foxtrot golf india"  # echo mutated, hotel deleted
+    starts6 = derive_page_starts(base6, eng_text, eng_starts)
+    if not starts6 or len(starts6) != 4:
+        failures.append(f"case6: expected 4 derived starts, got {starts6}")
+    else:
+        if starts6[0] != 0 or starts6[1] != base6.index("delta"):
+            failures.append(f"case6: page-2 start should be base offset of 'delta', got {starts6}")
+        if starts6 != sorted(starts6):
+            failures.append(f"case6: derived starts not monotone: {starts6}")
+        if _page_of_offset(starts6, base6.index("golf")) != 4:
+            failures.append(f"case6: 'golf' should tag page 4, got {_page_of_offset(starts6, base6.index('golf'))}")
+
     # Case 8: load-bearing filter — words/numbers are confirmed; structure is not.
     lb = lambda s: is_load_bearing(s, s, 0, len(s))
     for tok in ("Section", "82", "AAWSA"):
@@ -929,6 +1014,7 @@ def cmd_selftest(_args):
     print("  case3: three-way disagreement -> contested")
     print("  case4: char offsets accurate")
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
+    print("  case6: derived page starts -> engine boundaries land on base offsets, monotone")
     print("  case8: load-bearing filter -> words/numbers confirmed, structure not")
     return 0
 
@@ -982,7 +1068,8 @@ def main():
                             "divergence with its page number (p.N) so the page-image "
                             "verification step is locatable")
     p_run.add_argument("--vlm", help="pre-concatenated VLM transcription (.txt) — the sibling "
-                                     "base; no page numbers in the report (use --vlm-pages for those)")
+                                     "base; report rows get derived ~p.N tags (use --vlm-pages "
+                                     "for exact ones)")
     p_run.add_argument("--vlm-skipped", metavar="REASON",
                        help="build an OCR-only sibling (Tesseract base, PaddleOCR cross-check) "
                             "and record this reason; for fully content-blocked sources only")
@@ -1001,7 +1088,8 @@ def main():
 
     p_vfy = sub.add_parser(
         "verify", help="re-confirm an EXISTING sibling against the OCR engines "
-                       "(no regeneration) — same load-bearing divergence report")
+                       "(no regeneration) — same load-bearing divergence report, "
+                       "with derived ~p.N page tags")
     p_vfy.add_argument("pdf", help="source PDF whose .txt sibling to re-confirm")
     p_vfy.add_argument("--dpi", type=int, default=300)
     p_vfy.add_argument("--blocked-pages", metavar="SPEC", default=None,

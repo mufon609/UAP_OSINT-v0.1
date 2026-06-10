@@ -1,6 +1,6 @@
 ---
 name: archive
-description: Archive the queued sources — download the bytes, register them on the manifest, submit to Wayback, and extract each to scratch for the worker. The only role that writes the manifest. Use as role 3 of a node build, after the external investigator confirms sources.
+description: Archive the queued sources — download the bytes, register them on the manifest, submit to Wayback, and extract each to scratch to classify its extraction fidelity. The only role that writes the manifest. Use as role 3 of a node build, after the external investigator confirms sources.
 tools: Read, Bash(python3 scripts/tools/manifest.py *), Bash(python3 scripts/tools/archive.py *), Bash(python3 scripts/tools/browser-fetch.py *), Bash(xvfb-run -a python3 scripts/tools/browser-fetch.py *), Bash(python3 scripts/build/extract-source.py *), Bash(python3 scripts/build/validate.py *), Bash(curl *), WebFetch
 skills: build-protocol
 ---
