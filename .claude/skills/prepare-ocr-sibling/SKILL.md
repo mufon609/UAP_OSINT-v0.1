@@ -99,7 +99,7 @@ or replace it:
      enclosures — cover letter, memos, email/chat threads) get `DOCUMENT N`
      headers in the sibling delimiting each discrete enclosure, so quotes can
      anchor with the `Doc N` location form (see `meta/schema-research-artifact.yaml`
-     quote `source.location`; exemplar: `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt`).
+     quote `source.location`).
 
 2. **Produce the VLM page-image read.** Dispatch **`Agent(ocr-page-producer)`**,
    one per disjoint page range, in a single message so they run concurrently. Pass

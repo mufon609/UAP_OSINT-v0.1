@@ -68,14 +68,16 @@ The orchestrator dispatches the prep skill via the Skill tool; if that
 invocation fails, it **HALTs** and directs the user to run the skill — it
 never hands the Worker an unprepared source.
 
-**Exemplars give shape, not facts.** A built node handed to you as a structural
-model (a sibling document, an archetype peer) supplies SHAPE only — section set,
-field layout, quote-density feel. Every fact, every cross-reference link, and
-every quote is confirmed against THIS node's own source, never carried over from
-the exemplar. Copying a fact or link from an exemplar is a fabrication-class
-error (a build once inherited a sibling's wrong cross-link by mirroring it);
-the exemplar may be wrong, and the gate that catches it is your re-read of the
-source, not the exemplar's apparent authority.
+**No built node is an example.** Shape comes from the contracts, never from a
+peer: `meta/schema.yaml` + `meta/templates/` define the section set and field
+layout, `research-scaffold.py` scaffolds it, and the render-phase checks
+(`required_sections`, `section_rules`) enforce it. Do not open another built
+node or artifact as a structural model — peer-derived shape varies with
+whichever peer a session picks, so builds stop being reproducible across
+sessions and forks, and a peer's error propagates by mirroring (a build once
+inherited a sibling document's wrong cross-link exactly this way — a
+fabrication-class error). Every fact, link, and quote on this node comes from
+this node's own archived sources.
 
 ## Document-corpus extraction — the passage rubric
 
