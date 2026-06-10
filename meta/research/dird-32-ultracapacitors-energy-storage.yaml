@@ -1,0 +1,768 @@
+id: meta/research/dird-32-ultracapacitors-energy-storage
+type: research-artifact
+target_node: documents/dird-32-ultracapacitors-energy-storage
+status: active
+primary_sources:
+- path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+  format: pdf
+  content_block: 'None'
+document_intrinsic:
+  internal_title: 'Ultracapacitors as Energy and Power Storage Devices for Commercial and Military Applications'
+  internal_date: '01 November 2010'
+  icod: '20 July 2010'
+  control_number: 'DIA-08-1011-005'
+  series: 'Defense Intelligence Reference Document — Defense Futures'
+  authors_per_document: 'Authors: (b)(6) — redacted; Prepared by: (b)(3):10 USC 424, Defense Intelligence Agency'
+  classification: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY'
+  pages: 35
+context_extrinsic:
+  display_title: 'Ultracapacitors as Energy and Power Storage Devices for Commercial and Military Applications — DIA Defense Intelligence Reference Document, AAWSAP, 1 November 2010'
+  primary_source_url: 'https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_32-DIRD_Ultracapacitators_as_Energy_and_Power_Storage_Devices.pdf'
+  quote_attribution: 'Defense Intelligence Agency — AAWSAP Defense Intelligence Reference Document (institutional voice; preparing office redacted under 10 USC 424, authors redacted under FOIA (b)(6))'
+  extrinsic_authorship: 'Dr. J. Golightly, Lockheed Martin — per the DIA AAWSAP products list (/documents/dia-aatip-products-list-2018, attachment 35); the released document''s own Author line is redacted under (b)(6), so authorship is extrinsic-only and is not asserted in this node''s prose'
+  foia_release: 'Released via The Black Vault FOIA mirror (theblackvault.com); the mirror filename misspells "Ultracapacitators"'
+quotes:
+- id: q1
+  added_date: '2026-06-10'
+  text: 'Defense Intelligence Reference Document Defense Futures 01 November 2010 ICOD: 20 July 2010 DIA-08-1011-005 Ultracapacitors as Energy and Power Storage Devices for Commercial and Military Applications'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'title-page identity block'
+  significance: 'Document identity — DIRD series banner, Defense Futures line, 1 November 2010 publication date, ICOD 20 July 2010, DIA control number DIA-08-1011-005, full title'
+  context: 'Cover page of the Defense Intelligence Reference Document.'
+  claim_group: document-identity
+- id: q2
+  added_date: '2026-06-10'
+  text: 'This document is made available through the declassification efforts and research of John Greenewald, Jr., creator of: The Black Vault'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Black Vault cover insert'
+  significance: 'Release provenance — the archived copy reached the public via John Greenewald''s Black Vault FOIA clearinghouse'
+  context: 'FOIA-release cover page prepended to the DIA document.'
+  claim_group: foia-provenance
+- id: q3
+  added_date: '2026-06-10'
+  text: 'The Defense Intelligence Reference Document provides nonsubstantive but authoritative reference information related to intelligence topics or methodologies.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'inside cover, document-type statement'
+  significance: 'The document''s own definition of the DIRD product type'
+  context: 'Standard DIRD inside-cover language beneath the title.'
+  claim_group: document-identity
+- id: q4
+  added_date: '2026-06-10'
+  text: 'Prepared by: (b)(3):10 USC 424 Defense Intelligence Agency Authors: (b)(6)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'inside cover, Prepared by / Authors block'
+  significance: 'Preparing office redacted under 10 USC 424; author names redacted under FOIA (b)(6) — authorship is unattributable from the released document; the extrinsic-authorship chain runs through the DIA products list ([`/documents/dia-aatip-products-list-2018`])'
+  context: 'Redacted attribution block on the inside cover.'
+  claim_group: authorship-redaction
+- id: q5
+  added_date: '2026-06-10'
+  text: 'This product is one of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapons System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to (b)(3):10 USC 424;(b)(6) AAWSA Program Manager, Defense Intelligence Agency, ATTN: (b)(3):10 USC 424 Bldg 6000, Washington D.C. 20340-5100'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'inside cover, AAWSA series statement'
+  significance: 'Places the document inside the FY 2010 AAWSAP DIRD series; program-manager identity redacted'
+  context: 'The series provenance statement common to the AAWSAP DIRD corpus.'
+  claim_group: aawsap-provenance
+- id: q6
+  added_date: '2026-06-10'
+  text: 'Ultracapacitors (ultracaps) are energy storage devices capable of extremely rapid charge and discharge rates with the ability to be cycled hundreds of thousands of times. These unique capabilities make ultracaps attractive for a number of applications. The advantages over lithium ion batteries are somewhat mitigated by the fact that they have less than 10% of the specific energy (Wh/kg) and require a power converter to regulate their voltage.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Summary, opening paragraph'
+  significance: 'The document''s thesis — what ultracapacitors are and their tradeoff against lithium-ion batteries'
+  context: 'Opening of the Summary section.'
+  claim_group: technology-thesis
+- id: q7
+  added_date: '2026-06-10'
+  text: 'Due to their durability, their use in aerospace has been for munitions fusing and missile power load leveling. Ultimately, application will be pulsed power storage and delivery for electric propulsion and directed-energy weapons.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Summary, opening paragraph (aerospace applications)'
+  significance: 'The summary''s military endpoint — pulsed power for electric propulsion and directed-energy weapons'
+  context: 'Closing sentences of the Summary''s first paragraph.'
+  claim_group: military-applications
+- id: q8
+  added_date: '2026-06-10'
+  text: 'Magnetic capacitors are a recent development, manufactured using semiconductor processes on silicon wafers. They possess a different storage mechanism and will transform energy storage and pulsed-power applications.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Summary, second paragraph'
+  significance: 'The summary-level claim for magnetic capacitors as transformative for energy storage and pulsed power'
+  context: 'Summary paragraph on recent developments.'
+  claim_group: magnetic-capacitors
+- id: q9
+  added_date: '2026-06-10'
+  text: 'The real advantage of an ultracapacitor is the ability to deliver or accept bursts of power in a short time.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 1: Concept Overview, opening section'
+  significance: 'Chapter 1''s core finding on the technology''s defining advantage'
+  context: 'Concept-overview discussion of charge/discharge behavior.'
+  claim_group: technology-thesis
+- id: q10
+  added_date: '2026-06-10'
+  text: 'The unique signature of ultracapacitors must be understood for aerospace and military applications.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 1: Concept Overview, second paragraph'
+  significance: 'Early statement of the intelligence interest — device signatures for aerospace/military applications'
+  context: 'Concept-overview paragraph on market growth and military relevance.'
+  claim_group: signatures-vulnerabilities
+- id: q11
+  added_date: '2026-06-10'
+  text: 'In 1966, Standard Oil Company of Ohio (SOHIO) invented the device in the format now commonly used, which forms the basis for hundreds of patents and thousands of journal articles.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 1, History section'
+  significance: 'Origin claim — SOHIO''s 1966 invention of the modern ultracapacitor format'
+  context: 'History section of Chapter 1.'
+  claim_group: history
+- id: q12
+  added_date: '2026-06-10'
+  text: 'NEC introduced the SuperCapacitor™ in 1978 under license from SOHIO.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 1, History section'
+  significance: 'First commercialization — NEC''s 1978 SuperCapacitor under SOHIO license'
+  context: 'History section, immediately after the SOHIO origin claim (separated by a figure reference sentence).'
+  claim_group: history
+- id: q13
+  added_date: '2026-06-10'
+  text: 'In the 1980s, Matsushita Electric Company developed a method of manufacturing ultracapacitors with improved electrodes.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 1, History section'
+  significance: 'Manufacturing-era milestone in the technology''s evolution'
+  context: 'History section paragraph on design generations.'
+  claim_group: history
+- id: q14
+  added_date: '2026-06-10'
+  text: 'In the second generation of electrochemical capacitors, the use of organic electrolyte led to an increase of the rated cell voltage from about 0.9 V/cell to 2.3-2.7 V/cell. Today, ultracapacitors using an organic electrolyte are the most popular.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 2: Materials Technology, opening section'
+  significance: 'Chapter 2''s electrolyte finding — the generational voltage jump from organic electrolytes'
+  context: 'Materials-technology overview before the Electrolytes subsection.'
+  claim_group: materials-technology
+- id: q15
+  added_date: '2026-06-10'
+  text: 'Ruthenium oxide (RuO₂) has been shown to give capacitance of as high as 1300 F/cm³. By comparison, carbonaceous materials in an aqueous electrolyte have a capacitance of 110-125 F/cm³.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 2, Electrodes section'
+  significance: 'Chapter 2''s electrode finding — order-of-magnitude capacitance gain from asymmetric metal-oxide electrodes'
+  context: 'Electrodes subsection discussion of asymmetric designs.'
+  claim_group: materials-technology
+- id: q16
+  added_date: '2026-06-10'
+  text: 'Earliest uses of ultracapacitors were in motor startup for tanks and submarines. Early adoption by the military led to cost reductions, which was a critical enabler for incorporation into diesel trucks and railroad locomotives.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 3, Transportation section'
+  significance: 'Military-first adoption history driving commercial cost reduction'
+  context: 'Transportation applications subsection.'
+  claim_group: military-applications
+- id: q17
+  added_date: '2026-06-10'
+  text: 'Extremely high power delivery makes ultracapacitors a potential vehicle for delivering the power required for directed-energy weapons.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 3, Aerospace section'
+  significance: 'Chapter 3''s aerospace finding — directed-energy weapons as the high-power application'
+  context: 'Aerospace applications subsection.'
+  claim_group: military-applications
+- id: q18
+  added_date: '2026-06-10'
+  text: 'As mentioned above, ultracapacitors could be important in the development of ultrawideband energy weapons. Previously, this market has been dominated by bulk acoustic semiconductor switch (BASS) devices, but by stringing several capacitors together in parallel, a more formidable discharge can be created. Because ultracapacitors have very high discharge rates, they will emit a distinctive broadband RF signature when discharged. A modest wideband receiver may be able to detect this discharge; its proximity will depend upon the construction of the target device.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 3, Signatures and Vulnerabilities block'
+  significance: 'The document''s distinctive intelligence-collection angle — detectable broadband RF discharge signatures of adversary devices'
+  context: '"Signatures and Vulnerabilities" block closing Chapter 3.'
+  claim_group: signatures-vulnerabilities
+- id: q19
+  added_date: '2026-06-10'
+  text: 'Depending on the application and the implementation and construction of ultracaps in sensitive or destructive applications, vulnerabilities likely exist and warrant study in areas of research such as circuit vulnerability analysis, reversible manufacturing and construction techniques used in fabrication, stimulation of nondestructive and controlled discharge evaluations, and laboratory stimulated discharge experiments.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 3, Stimulated Discharge block'
+  significance: 'Recommends a counter-device research agenda — stimulated-discharge and circuit-vulnerability study of adversary ultracapacitor systems'
+  context: '"Stimulated Discharge" block, the second intelligence-facing block of Chapter 3.'
+  claim_group: signatures-vulnerabilities
+- id: q20
+  added_date: '2026-06-10'
+  text: 'Figure 7 shows a vertically aligned CNT forest produced at Lockheed Martin''s Advanced Technology Center (LMATC). Lockheed Martin has worked with a number of catalysts and surfaces to grow tailored CNT forests for a variety of applications. Select locations throughout Lockheed Martin have been developing CNT-based technologies, utilizing vertically aligned CNTs, CNTs dispersed onto surfaces, and CNTs dispersed into other media. LMATC possesses expertise in CNT growth processes and characterization and has capabilities for both materials development and ultracap testing. Lockheed Martin''s NEARLab facility produces CNT-coated glass fibers, which may provide a cost-effective power storage solution that has structural elements built in. Ultracaps assembled from CNT forests appear extremely promising for use in microelectronics.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, CNTs and Advanced Carbons section'
+  significance: 'Names Lockheed Martin facilities (LMATC, NEARLab) and capabilities at length inside a DIA AAWSAP product — a corporate-involvement signal in the DIRD corpus'
+  context: 'Recent-developments discussion of CNT forest electrodes, keyed to Figure 7 (a CNT forest grown in Lockheed Martin''s laboratories).'
+  claim_group: lockheed-martin-involvement
+- id: q21
+  added_date: '2026-06-10'
+  text: 'Lockheed Martin is actively engaged in research investigating graphene and applications where graphene could be a critical differentiator.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, CNTs and Advanced Carbons section (graphene discussion)'
+  significance: 'Second Lockheed Martin research attribution, on graphene'
+  context: 'Graphene paragraph of the recent-developments chapter.'
+  claim_group: lockheed-martin-involvement
+- id: q22
+  added_date: '2026-06-10'
+  text: 'The discoveries at Drexel University that utilize the fine control to create tailored porous carbon structures can maximize specific capacitance for a given ultracapacitor system.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, CNTs and Advanced Carbons section (carbide-derived carbons)'
+  significance: 'Credits Drexel University''s carbide-derived-carbon pore-size discoveries'
+  context: 'Carbide-derived carbon discussion keyed to Figure 9.'
+  claim_group: materials-technology
+- id: q23
+  added_date: '2026-06-10'
+  text: 'However, since 2007, Northern Lights Semiconductor Corp. (NLSC) has been developing a magnetic capacitor (MCap) that utilizes a material which exhibits the GMC above 300K.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, Magnetic Capacitors section'
+  significance: 'Identifies NLSC as developer of the room-temperature giant-magneto-capacitance device the chapter promotes'
+  context: 'Magnetic Capacitors subsection opening.'
+  claim_group: magnetic-capacitors
+- id: q24
+  added_date: '2026-06-10'
+  text: 'Coupled with Lockheed Martin''s extensive nanomaterials and device physics experience, it is likely that NLSC will be able to use its MRAM development expertise to accomplish this.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, Magnetic Capacitors section'
+  significance: 'Pairs NLSC with Lockheed Martin''s nanomaterials/device-physics experience — a third Lockheed mention, here as prospective partner'
+  context: 'MCap module-packaging paragraph.'
+  claim_group: lockheed-martin-involvement
+- id: q25
+  added_date: '2026-06-10'
+  text: 'Over the last year, NLSC has had MCap structures and nanocells tested by independent parties with results shown in Figure 13. These unbiased tests demonstrate the validity of the high-capacitance claims.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, Experimental Results block'
+  significance: 'The document''s vouching for NLSC''s claims via independent testing (Figure 13 credits Taiyo Yuden ([`/organizations/taiyo-yuden`]))'
+  context: 'Experimental Results block of the Magnetic Capacitors section.'
+  claim_group: magnetic-capacitors
+- id: q26
+  added_date: '2026-06-10'
+  text: 'The mass production target of MCaps on a wafer of f_GMC of ~10⁹ would enable the achievement of exceeding the specific energy of lithium ion batteries at a significantly reduced cost. MCaps at these production targets would disrupt both the lithium ion battery and the ultracapacitor market.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 4, Magnetic Capacitors section (production targets)'
+  significance: 'The chapter''s market-disruption projection for MCaps'
+  context: 'Closing paragraph of Chapter 4, keyed to Figure 15 (NLSC''s own cost/energy estimates).'
+  claim_group: magnetic-capacitors
+- id: q27
+  added_date: '2026-06-10'
+  text: 'Beyond 2030 it is difficult to project the future developments of ultracapacitors since materials science is experiencing a nanomaterials revolution. It can be expected, however, that nearly all microelectronic circuitry will incorporate thin-film ultracaps or MCaps, and laptop computers will become the size of an iPhone with mostly voice-activated functions.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 5: Future Developments, beyond-2030 paragraph (penultimate)'
+  significance: 'The Defense Futures projection horizon — the document''s beyond-2030 forecast'
+  context: 'Future Developments chapter, long-range projection keyed to Figure 16.'
+  claim_group: future-projections
+- id: q28
+  added_date: '2026-06-10'
+  text: 'Early adoption of ultracaps by the military was an important differentiator for vehicle performance and a technology driver.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 6: Conclusions, first paragraph'
+  significance: 'Conclusions restate the military''s role as technology driver'
+  context: 'Opening paragraph of the Conclusions chapter.'
+  claim_group: military-applications
+- id: q29
+  added_date: '2026-06-10'
+  text: 'Power management and generation for military systems will see increasing uses for ultracaps. Their unique capabilities will enable future designs. Their specific performance capabilities must be optimally utilized and we must have a keen understanding and awareness of the unique spectral signatures these devices generate when storing high power and in charge or discharge modes. Development of these advanced ultracaps must be performed, understood, and adopted by the U.S. government and those who are developing the systems to be used by the government.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 6: Conclusions, final paragraph'
+  significance: 'The document''s closing recommendation — U.S. government adoption plus signature-awareness for intelligence purposes'
+  context: 'Final paragraph of the Conclusions chapter.'
+  claim_group: signatures-vulnerabilities
+naming_quirks:
+- id: nq1
+  added_date: '2026-06-10'
+  observed: 'Advanced Aerospace Weapons System Applications (AAWSA) Program'
+  canonical: 'Advanced Aerospace Weapon System Applications Program (AAWSAP)'
+  location: 'inside cover, AAWSA series statement'
+  source_path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-06-10'
+  observed: 'P. simon'
+  canonical: 'P. Simon'
+  location: 'Chapter 7: Endnotes, entries 20 and 34'
+  source_path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+  resolution: off-node-variant
+- id: nq3
+  added_date: '2026-06-10'
+  observed: 'MicroporousMesoporous Mater.'
+  canonical: null
+  location: 'Chapter 7: Endnotes, entry 39'
+  source_path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+  resolution: unresolved
+- id: nq4
+  added_date: '2026-06-10'
+  observed: 'J.g Dong'
+  canonical: null
+  location: 'Chapter 7: Endnotes, entry 47'
+  source_path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+  resolution: unresolved
+description: 'One of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]), Advanced Aerospace Weapons System Applications (AAWSA) Program ([`/organizations/aawsap`]). The document covers ultracapacitors — energy storage devices capable of extremely rapid charge and discharge rates, with the ability to be cycled hundreds of thousands of times — for commercial and military applications, contrasting them with lithium ion batteries: less than 10% of the specific energy, but ideal where power is to be delivered or received quickly.
+
+  In 1966, Standard Oil Company of Ohio (SOHIO) ([`/organizations/sohio`]) invented the device in the format now commonly used; NEC ([`/organizations/nec`]) introduced the SuperCapacitor™ in 1978 under license from SOHIO, and in the 1980s Matsushita Electric Company ([`/organizations/matsushita-electric`]) developed a method of manufacturing ultracapacitors with improved electrodes. Application has expanded from electronics and telecommunications to industrial load leveling and transportation; earliest uses of ultracapacitors were in motor startup for tanks and submarines, and early adoption by the military led to cost reductions. Ultimately, application will be pulsed power storage and delivery for electric propulsion and directed-energy weapons. Chapter 3 addresses "Signatures and Vulnerabilities" and "Stimulated Discharge" — because ultracapacitors have very high discharge rates, they will emit a distinctive broadband RF signature when discharged, and vulnerabilities likely exist and warrant study.
+
+  Chapter 4 describes a vertically aligned CNT forest produced at Lockheed Martin''s ([`/organizations/lockheed-martin`]) Advanced Technology Center (LMATC) and CNT-coated glass fibers from the NEARLab facility; graphene, where Lockheed Martin is actively engaged in research; the discoveries at Drexel University ([`/organizations/drexel-university`]) in carbide-derived carbons; and the magnetic capacitor (MCap) that Northern Lights Semiconductor Corp. (NLSC) ([`/organizations/northern-lights-semiconductor`]) has been developing since 2007 — at its mass production target, MCaps would disrupt both the lithium ion battery and the ultracapacitor market. Per the Conclusions, development of these advanced ultracaps "must be performed, understood, and adopted by the U.S. government" and we "must have a keen understanding and awareness of the unique spectral signatures these devices generate."
+
+  This document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]), the largest online Freedom of Information Act (FOIA) document clearinghouse in the world.'
+cited_works:
+- id: cw1
+  added_date: '2026-06-10'
+  citation_key: '1'
+  author: 'Tecate Group'
+  citation_verbatim: '¹ Tecate Group website'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 1'
+- id: cw2
+  added_date: '2026-06-10'
+  citation_key: '2'
+  author: 'B. E Conway'
+  year: 1999
+  title: 'Electrochemical Supercapacitors: Scientific, Fundamentals, and Technological Applications'
+  citation_verbatim: '² B. E Conway, Electrochemical Supercapacitors: Scientific, Fundamentals, and Technological Applications, Kluwer, New York (1999).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 2'
+- id: cw3
+  added_date: '2026-06-10'
+  citation_key: '3'
+  author: 'Wikipedia Commons'
+  citation_verbatim: '³ Wikipedia Commons'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 3'
+- id: cw4
+  added_date: '2026-06-10'
+  citation_key: '4'
+  author: 'J. R. Miller, P. Simon'
+  year: 2008
+  title: 'Fundamentals of Electrochemical Capacitor Design and Operation'
+  citation_verbatim: '⁴ J. R. Miller, P. Simon, Fundamentals of Electrochemical Capacitor Design and Operation; ECS Interface, 17, Spr. 2008, 31-33'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 4'
+- id: cw5
+  added_date: '2026-06-10'
+  citation_key: '5'
+  author: 'EPCOS'
+  citation_verbatim: '⁵ EPCOS White Paper on UltraCap Technology'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 5'
+- id: cw6
+  added_date: '2026-06-10'
+  citation_key: '6'
+  author: 'P. Simon, A. Burke'
+  year: 2008
+  title: 'Nanostructured Carbons: Double-Layer Capacitance and More'
+  citation_verbatim: '⁶ P. Simon, A. Burke, Nanostructured Carbons: Double-Layer Capacitance and More; ECS Interface, 17, Spr. 2008, 38-43'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 6'
+- id: cw7
+  added_date: '2026-06-10'
+  citation_key: '7'
+  author: 'EPCOS'
+  citation_verbatim: '⁷ EPCOS White Paper on UltraCap Technology'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 7'
+- id: cw8
+  added_date: '2026-06-10'
+  citation_key: '8'
+  author: 'D. Tuite'
+  year: 2007
+  title: 'Get the Lowdown On Ultracapacitors'
+  citation_verbatim: '⁸ D. Tuite, Get the Lowdown On Ultracapacitors; Electronic Design, Nov 2007.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 8'
+- id: cw9
+  added_date: '2026-06-10'
+  citation_key: '9'
+  author: 'J. R. Miller, A. F. Burke'
+  year: 2008
+  title: 'Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications'
+  citation_verbatim: '⁹ J. R. Miller, A. F. Burke, Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications; ECS Interface, 17, Spr. 2008, 53-57'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 9'
+- id: cw10
+  added_date: '2026-06-10'
+  citation_key: '10'
+  author: 'J. R. Miller, A. F. Burke'
+  year: 2008
+  title: 'Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications'
+  citation_verbatim: '¹⁰ J. R. Miller, A. F. Burke, Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications; ECS Interface, 17, Spr. 2008, 53-57'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 10'
+- id: cw11
+  added_date: '2026-06-10'
+  citation_key: '11'
+  author: 'J. R. Miller, A. F. Burke'
+  year: 2008
+  title: 'Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications'
+  citation_verbatim: '¹¹ J. R. Miller, A. F. Burke, Electrochemical Capacitors: Challenges and Opportunities for Real-World Applications; ECS Interface, 17, Spr. 2008, 53-57'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 11'
+- id: cw12
+  added_date: '2026-06-10'
+  citation_key: '12'
+  author: 'K. Naoi, P. Simon'
+  year: 2008
+  title: 'New Materials and New Configurations for Advanced Electrochemical Capacitors'
+  citation_verbatim: '¹² K. Naoi, P. Simon, New Materials and New Configurations for Advanced Electrochemical Capacitors; ECS Interface, 17, Spr. 2008, 34-37'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 12'
+- id: cw13
+  added_date: '2026-06-10'
+  citation_key: '13'
+  author: 'Burke'
+  year: 2009
+  title: 'Ultracapacitor Technologies and Application in Hybrid and Electric Vehicles'
+  citation_verbatim: '¹³ Burke, Ultracapacitor Technologies and Application in Hybrid and Electric Vehicles; International Journal of Energy Research; July 2009'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 13'
+- id: cw14
+  added_date: '2026-06-10'
+  citation_key: '14'
+  author: 'J. R. Miller, P. Simon'
+  year: 2008
+  title: 'Fundamentals of Electrochemical Capacitor Design and Operation'
+  citation_verbatim: '¹⁴ J. R. Miller, P. Simon, Fundamentals of Electrochemical Capacitor Design and Operation; ECS Interface, 17, Spr. 2008, 31-33'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 14'
+- id: cw15
+  added_date: '2026-06-10'
+  citation_key: '15'
+  author: 'P. Simon, A. Burke'
+  year: 2008
+  title: 'Nanostructured Carbons: Double-Layer Capacitance and More'
+  citation_verbatim: '¹⁵ P. Simon, A. Burke, Nanostructured Carbons: Double-Layer Capacitance and More; ECS Interface, 17, Spr. 2008, 38-43'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 15'
+- id: cw16
+  added_date: '2026-06-10'
+  citation_key: '16'
+  author: 'EPCOS'
+  citation_verbatim: '¹⁶ EPCOS White Paper on UltraCap Technology'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 16'
+- id: cw17
+  added_date: '2026-06-10'
+  citation_key: '17'
+  author: 'P. Simon, Y. Gogotsi'
+  year: 2010
+  title: 'Charge Storage Mechanism in Nanoporous Carbons and Its Consequence for Electrical Double Layer Capacitors'
+  citation_verbatim: '¹⁷ P. Simon, Y. Gogotsi, Charge Storage Mechanism in Nanoporous Carbons and Its Consequence for Electrical Double Layer Capacitors, Phil. Trans. R. Soc. A, 368, 3457 (2010)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 17'
+- id: cw18
+  added_date: '2026-06-10'
+  citation_key: '18'
+  author: 'C. N. R. Rao, A. K. Sood, R. Voggu, K. S. Subrahmanyam'
+  year: 2010
+  title: 'Some Novel Attributes of Graphene'
+  citation_verbatim: '¹⁸ C. N. R. Rao, A. K. Sood, R. Voggu, K. S. Subrahmanyam, Some Novel Attributes of Graphene, J. Phys. Chem. Lett., 1, 572 (2010)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 18'
+- id: cw19
+  added_date: '2026-06-10'
+  citation_key: '19'
+  author: 'S. Park, R. Ruoff'
+  year: 2009
+  title: 'Chemical Methods for the Production of Graphenes'
+  citation_verbatim: '¹⁹ S. Park, R. Ruoff, Chemical Methods for the Production of Graphenes; Nature Nanotechnology; 4, 217 (2009)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 19'
+- id: cw20
+  added_date: '2026-06-10'
+  citation_key: '20'
+  author: 'J. Chmiola, G. Yushin, Y. Gogotsi, C. Portet, P. simon, P. L. Taberna'
+  year: 2006
+  title: 'Anomalous Increase in Carbon Capacitance at Pore Sizes Less than 1 Nanometer'
+  citation_verbatim: '²⁰ J. Chmiola, G. Yushin, Y. Gogotsi, C. Portet, P. simon, P. L. Taberna, Anomalous Increase in Carbon Capacitance at Pore Sizes Less than 1 Nanometer; Science, 313, 1760 (2006)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 20'
+- id: cw21
+  added_date: '2026-06-10'
+  citation_key: '21'
+  author: 'P. Simon, A. Burke'
+  year: 2008
+  title: 'Nanostructured Carbons: Double-Layer Capacitance and More'
+  citation_verbatim: '²¹ P. Simon, A. Burke, Nanostructured Carbons: Double-Layer Capacitance and More; ECS Interface, 17, Spr. 2008, 38-43'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 21'
+- id: cw22
+  added_date: '2026-06-10'
+  citation_key: '22'
+  author: 'D. Tuite'
+  year: 2007
+  title: 'Get the Lowdown On Ultracapacitors'
+  citation_verbatim: '²² D. Tuite, Get the Lowdown On Ultracapacitors; Electronic Design, Nov 2007.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 22'
+- id: cw23
+  added_date: '2026-06-10'
+  citation_key: '23'
+  author: 'D. Tuite'
+  year: 2007
+  title: 'Get the Lowdown On Ultracapacitors'
+  citation_verbatim: '²³ D. Tuite, Get the Lowdown On Ultracapacitors; Electronic Design, Nov 2007.'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 23'
+- id: cw24
+  added_date: '2026-06-10'
+  citation_key: '24'
+  author: 'A. S. Aricò, P. Bruce, B. Scrosati, J.-M. Tarascon,W. van Schalkwijk'
+  year: 2005
+  citation_verbatim: '²⁴ A. S. Aricò, P. Bruce, B. Scrosati, J.-M. Tarascon,W. van Schalkwijk, Nat. Mater. 4, 366 (2005).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 24'
+- id: cw25
+  added_date: '2026-06-10'
+  citation_key: '25'
+  author: 'S. W. Lee, B.-S. Kim, S. Chen, Y. Shao-Horn, P. T. Hammond'
+  year: 2009
+  citation_verbatim: '²⁵ S. W. Lee, B.-S. Kim, S. Chen, Y. Shao-Horn, P. T. Hammond, J. Am. Chem. Soc. 131, 671 (2009).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 25'
+- id: cw26
+  added_date: '2026-06-10'
+  citation_key: '26'
+  author: 'D. Pech et al.'
+  year: 2010
+  citation_verbatim: '²⁶ D. Pech et al., J. Power Sources 195, 1266 (2010).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 26'
+- id: cw27
+  added_date: '2026-06-10'
+  citation_key: '27'
+  author: 'W. Sun, X. Y. Chen'
+  year: 2009
+  citation_verbatim: '²⁷ W. Sun, X. Y. Chen, Microelectron. Eng. 86, 1307 (2009).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 27'
+- id: cw28
+  added_date: '2026-06-10'
+  citation_key: '28'
+  author: 'J. Wang, J. Polleux, J. Lim, B. Dunn'
+  year: 2007
+  citation_verbatim: '²⁸ J. Wang, J. Polleux, J. Lim, B. Dunn, J. Phys. Chem. C 111, 14925 (2007).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 28'
+- id: cw29
+  added_date: '2026-06-10'
+  citation_key: '29'
+  author: 'K. Naoi, P. Simon'
+  year: 2008
+  title: 'New Materials and New Configurations for Advanced Electrochemical Capacitors'
+  citation_verbatim: '²⁹ K. Naoi, P. Simon, New Materials and New Configurations for Advanced Electrochemical Capacitors; ECS Interface, 17, Spr. 2008, 34-37'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 29'
+- id: cw30
+  added_date: '2026-06-10'
+  citation_key: '30'
+  author: 'H. J. Ahn, W. B. Kim, T. Y. Seong'
+  year: 2008
+  citation_verbatim: '³⁰ H. J. Ahn, W. B. Kim, T. Y. Seong, Electrochem. Commun. 10, 1284 (2008).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 30'
+- id: cw31
+  added_date: '2026-06-10'
+  citation_key: '31'
+  author: 'C. N. R. Rao, A. K. Sood, R. Voggu, K. S. Subrahmanyam'
+  year: 2010
+  title: 'Some Novel Attributes of Graphene'
+  citation_verbatim: '³¹ C. N. R. Rao, A. K. Sood, R. Voggu, K. S. Subrahmanyam, Some Novel Attributes of Graphene, J. Phys. Chem. Lett., 1, 572 (2010)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 31'
+- id: cw32
+  added_date: '2026-06-10'
+  citation_key: '32'
+  author: 'M. D. Stoller, S. Park, Y. Zhu, J. An, R. S. Ruoff'
+  year: 2008
+  title: 'Graphene-Based Ultracapacitors'
+  citation_verbatim: '³² M. D. Stoller, S. Park, Y. Zhu, J. An, R. S. Ruoff, Graphene-Based Ultracapacitors, Nano Lett, 8, 3498 (2008)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 32'
+- id: cw33
+  added_date: '2026-06-10'
+  citation_key: '33'
+  author: 'M. D. Stoller, S. Park, Y. Zhu, J. An, R. S. Ruoff'
+  year: 2008
+  title: 'Graphene-Based Ultracapacitors'
+  citation_verbatim: '³³ M. D. Stoller, S. Park, Y. Zhu, J. An, R. S. Ruoff, Graphene-Based Ultracapacitors, Nano Lett, 8, 3498 (2008)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 33'
+- id: cw34
+  added_date: '2026-06-10'
+  citation_key: '34'
+  author: 'J. Chmiola, G. Yushin, Y. Gogotsi, C. Portet, P. simon, P. L. Taberna'
+  year: 2006
+  title: 'Anomalous Increase in Carbon Capacitance at Pore Sizes Less than 1 Nanometer'
+  citation_verbatim: '³⁴ J. Chmiola, G. Yushin, Y. Gogotsi, C. Portet, P. simon, P. L. Taberna, Anomalous Increase in Carbon Capacitance at Pore Sizes Less than 1 Nanometer; Science, 313, 1760 (2006)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 34'
+- id: cw35
+  added_date: '2026-06-10'
+  citation_key: '35'
+  author: 'D. Pech et al.'
+  year: 2010
+  citation_verbatim: '³⁵ D. Pech et al., J. Power Sources 195, 1266 (2010).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 35'
+- id: cw36
+  added_date: '2026-06-10'
+  citation_key: '36'
+  author: 'J. Leis, M. Arulepp, A. Kuura, M. Latt, E. Lust'
+  year: 2006
+  citation_verbatim: '³⁶ J. Leis, M. Arulepp, A. Kuura, M. Latt, E. Lust, Carbon 44, 2122 (2006).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 36'
+- id: cw37
+  added_date: '2026-06-10'
+  citation_key: '37'
+  author: 'A. Jänes, E. Lust'
+  year: 2006
+  citation_verbatim: '³⁷ A. Jänes, E. Lust, J. Electrochem. Soc. 153, A113 (2006).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 37'
+- id: cw38
+  added_date: '2026-06-10'
+  citation_key: '38'
+  author: 'E. N. Hoffman, G. Yushin, B. G. Wendler, M. W. Barsoum,Y. Gogotsi'
+  year: 2008
+  citation_verbatim: '³⁸ E. N. Hoffman, G. Yushin, B. G. Wendler, M. W. Barsoum,Y. Gogotsi, Mater. Chem. Phys. 112, 587 (2008).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 38'
+- id: cw39
+  added_date: '2026-06-10'
+  citation_key: '39'
+  author: 'R. K. Dash, G. Yushin, Y. Gogotsi'
+  year: 2005
+  citation_verbatim: '³⁹ R. K. Dash, G. Yushin, Y. Gogotsi, MicroporousMesoporous Mater. 86, 50 (2005).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 39'
+- id: cw40
+  added_date: '2026-06-10'
+  citation_key: '40'
+  author: 'Z. G. Cambaz, G. N. Yushin, Y. Gogotsi, K. L. Vyshnyakova, L. N. Pereselentseva'
+  year: 2006
+  citation_verbatim: '⁴⁰ Z. G. Cambaz, G. N. Yushin, Y. Gogotsi, K. L. Vyshnyakova, L. N. Pereselentseva, J. Am. Ceram. Soc. 89, 509 (2006)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 40'
+- id: cw41
+  added_date: '2026-06-10'
+  citation_key: '41'
+  author: 'J. Chmiola, C. Largeot, P. Taberna, P.Simon, Y.Gogotsi'
+  year: 2010
+  title: 'Monolithic Carbide-Derived Carbon Films for Micro-Supercapacitors'
+  citation_verbatim: '⁴¹ J. Chmiola, C. Largeot, P. Taberna, P.Simon, Y.Gogotsi, Monolithic Carbide-Derived Carbon Films for Micro-Supercapacitors, Science,328, 480 (2010)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 41'
+- id: cw42
+  added_date: '2026-06-10'
+  citation_key: '42'
+  author: 'A. Jänes, E. Lust'
+  year: 2006
+  citation_verbatim: '⁴² A. Jänes, E. Lust, J. Electrochem. Soc. 153, A113 (2006).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 42'
+- id: cw43
+  added_date: '2026-06-10'
+  citation_key: '43'
+  author: 'J. Leis, M. Arulepp, A. Kuura, M. Latt, E. Lust'
+  year: 2006
+  citation_verbatim: '⁴³ J. Leis, M. Arulepp, A. Kuura, M. Latt, E. Lust, Carbon 44, 2122 (2006).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 43 (first entry after the interposed page banner following entry 42)'
+- id: cw44
+  added_date: '2026-06-10'
+  citation_key: '44'
+  author: 'T. Goto, T. Kimura, G. Lawes, et. al.'
+  year: 2004
+  title: 'Ferroelectricity and Giant Magnetocapacitance in Perovskite Rare-earth Manganites'
+  citation_verbatim: '⁴⁴ T. Goto, T. Kimura, G. Lawes, et. al. Ferroelectricity and Giant Magnetocapacitance in Perovskite Rare-earth Manganites. Physical Review Letters, 92, 257201 (2004).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 44'
+- id: cw45
+  added_date: '2026-06-10'
+  citation_key: '45'
+  author: 'N. Hur, S. Park, P. A. Sharma, S. Guha, and S-W. Cheong'
+  year: 2004
+  title: 'Colossal Magnetodielectric Effects in DyMn2O5'
+  citation_verbatim: '⁴⁵ N. Hur, S. Park, P. A. Sharma, S. Guha, and S-W. Cheong, Colossal Magnetodielectric Effects in DyMn2O5, Physical Review, Lett. 93, 107207 (2004).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 45'
+- id: cw46
+  added_date: '2026-06-10'
+  citation_key: '46'
+  author: 'R. F. Mamin, T. Egami, Z. Marton, and S. A. Migachev'
+  year: 2007
+  title: 'Giant dielectric permittivity and Magnetocapacitance in La0.875Sr0.125MnO3 Single Crystals'
+  citation_verbatim: '⁴⁶ R. F. Mamin, T. Egami, Z. Marton, and S. A. Migachev, Giant dielectric permittivity and Magnetocapacitance in La0.875Sr0.125MnO3 Single Crystals, Phys. Rev. B 75, 115129 (2007).'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 46'
+- id: cw47
+  added_date: '2026-06-10'
+  citation_key: '47'
+  author: 'J. Wan, Qi Lu, Bo Chen, Fengqi Song, J. Liu, J.g Dong, and G.Wang'
+  year: 2009
+  title: 'Giant Room-Temperature Magnetocapacitance in Co2+ Doped SnO2 Dielectric Films'
+  citation_verbatim: '⁴⁷ J. Wan, Qi Lu, Bo Chen, Fengqi Song, J. Liu, J.g Dong, and G.Wang, Giant Room-Temperature Magnetocapacitance in Co2+ Doped SnO2 Dielectric Films, Applied Physics Letters, 95, 152901 (2009)'
+  source:
+    path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
+    location: 'Chapter 7: Endnotes, entry 47'

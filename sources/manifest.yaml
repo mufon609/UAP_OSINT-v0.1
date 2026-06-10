@@ -1153,6 +1153,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #32 — ''Ultracapacitors as Energy and Power Storage Devices'', DIA-08-1011-005 (recovered from page-1 image read; pdftotext did not surface it), ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 35 pages. DIA attachment #35 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. J. Golightly, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com); the mirror filename misspells ''Ultracapacitators''. PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_32-DIRD_Ultracapacitators_as_Energy_and_Power_Storage_Devices.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-32-ultracapacitors-energy-storage-2010.txt
+    archived_date: '2026-06-10'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract via ocr-consensus.py) of the OCR-scanned DIRD #32 ''Ultracapacitors as Energy and Power Storage Devices for Commercial and Military Applications''. Produced 2026-06-10; no pages content-blocked by the VLM filter. 2 VLM placeholder substitutions corrected against page images (p.8 typeset equations restored verbatim). Black Vault FOIA-mirror insert (p.2) preserved verbatim. Figures bracketed as placeholders; redactions ((b)(3):10 USC 424 / (b)(6)) + source spellings preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_33-DIRD_MHD_Air_Breathing_Propulsion_and_Power_for_Aerospace_Applications.pdf
   status: archived
   artifacts:
