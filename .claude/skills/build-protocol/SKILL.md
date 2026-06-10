@@ -260,7 +260,7 @@ Your output is your **return value**: return your role's stub (per the schema
 in [stub-schemas.md](stub-schemas.md)) as your final message. That return value
 is the handoff the orchestrator reads to drive the next role — you write no file
 for it, with one exception: the **worker writes its fragment file**
-(`/tmp/fragment-{slug}-{source stem}.yaml`, stub-schemas.md) and its stub
+(`/tmp/fragments-{slug}/{source stem}.yaml`, stub-schemas.md) and its stub
 carries the path; `merge-fragments.py` transports the verbatim payload from
 that file into the artifact byte-exactly. The durable record is the manifest +
 artifact + git. Read only the stub schema for your own role.

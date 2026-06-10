@@ -82,7 +82,7 @@ notes: |                       # optional, non-normative — "Advisory notes" ab
 
 ```yaml
 # worker — returned stub (one per source)
-# The worker WRITES its fragment to /tmp/fragment-{slug}-{source stem}.yaml
+# The worker WRITES its fragment to /tmp/fragments-{slug}/{source stem}.yaml
 # (shape below) and returns this slim stub. The builder runs
 # scripts/build/merge-fragments.py on the fragment files — a byte-exact
 # mechanical copy of the verbatim payload, no LLM retyping — then reads
@@ -92,7 +92,7 @@ worker_kind: pdf               # pdf | html | caption | foia
 slug: {slug}
 source: {category}/{file}.pdf
 inputs_consumed: [/tmp/scratch-{slug}-2.txt]
-fragment_path: /tmp/fragment-{slug}-{stem}.yaml
+fragment_path: /tmp/fragments-{slug}/{stem}.yaml
 counts:                        # what the fragment carries — the orchestrator's sanity surface
   quotes: 0
   cited_works: NONE            # NONE | IGNORED | <entry count>
@@ -105,7 +105,7 @@ notes: |                       # optional, non-normative — "Advisory notes" ab
 ```
 
 ```yaml
-# worker — fragment FILE (/tmp/fragment-{slug}-{source stem}.yaml, one per source)
+# worker — fragment FILE (/tmp/fragments-{slug}/{source stem}.yaml, one per source)
 # Two payloads, two consumers:
 #   verbatim payload (quotes, cited_works) — transported into the artifact by
 #     merge-fragments.py, byte-exact, SCHEMA FIELDS ONLY (anything else in the
