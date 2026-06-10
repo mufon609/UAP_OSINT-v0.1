@@ -214,3 +214,128 @@ surface that must stay in sync with the skill's orchestration text.
 **Blocks:** none.
 **Blocked by:** none.
 
+### C5 — Commit-gate timing redesign (option A) — needs the user in the loop
+
+The commit gate (`.claude/hooks/block_commit_if_red.sh`) runs the entire
+pre-commit chain at **PreToolUse time** — before the Bash command executes —
+so a compound `fix && git commit` command is gated against its **pre-fix**
+state and blocked even when the fix would have turned the chain green
+(observed live on the 2026-06-10 dird-33 build:
+`build-state.py --update && git commit` was blocked because the gate ran
+before the `--update`). The gate content is correct; the evaluation moment is
+wrong.
+
+The approved approach (session "option A", 2026-06-10):
+1. A repo-versioned `.githooks/pre-commit` that runs the chain **at commit
+   execution time** — inside the `git commit` invocation, after any chained
+   fix has run — activated via `git config core.hooksPath .githooks`. Compound
+   fix-then-commit works; manual terminal commits gain a gate they currently
+   lack.
+2. `block_commit_if_red.sh` becomes an **anti-bypass guard only**:
+   auto-installs `core.hooksPath` on the first commit attempt (fresh clones
+   included), denies `--no-verify` / a short-flag cluster carrying `-n` / a
+   `core.hooksPath` override, and falls back to running the chain in-place if
+   `.githooks/pre-commit` is ever missing (the floor never drops). The
+   bypass-flag scan must shlex-tokenize the command with **heredoc bodies
+   stripped first**, because commit messages routinely discuss these flags
+   ("un-bypassable by `--no-verify`") and message prose must never trip the
+   scan.
+
+Every existing doc claim ("a `git commit` runs the full pre-commit chain,
+un-bypassable by `--no-verify`") stays literally true — only the mechanism and
+timing move. The doc surfaces that describe the current hook
+(`CLAUDE.md` §2 + §6, `build-protocol` SKILL.md "How the block actually holds")
+must be updated in lockstep.
+
+The 2026-06-10 auto-mode classifier **correctly blocked** the session from
+rewriting its own enforcement hook without explicit authorization — that is
+the right boundary, do not work around it. Implementing this needs the user
+present to approve the enforcement-hook edit. No partial state exists on disk
+(the draft `.githooks/pre-commit` was removed after the classifier block).
+
+**Blocks:** none.
+**Blocked by:** explicit user authorization of the enforcement-hook edit.
+
+### C6 — Investigate thoroughly: did the OCR sibling-confirmation process change in a way that weakens the multi-engine cross-check?
+
+Investigation entry — **settle this by reading the current
+`scripts/tools/ocr-consensus.py` and re-running it, not from prior session
+claims.** State findings with evidence; do not assume the change was safe
+because a commit message said so.
+
+What changed on 2026-06-10 (two commits to `ocr-consensus.py`): `verify`
+gained derived `~p.N` page tags, and an **engine-read cache** was added —
+keyed on `sha256(PDF bytes) + dpi + tesseract_version + paddleocr_version`,
+storing the Tesseract and PaddleOCR text under the system temp dir; on a cache
+hit `_ocr_pages` loads the stored text instead of rasterizing and re-running
+the engines (measured `verify` 8m25s → ~3s on the dird-33 source).
+
+The multi-engine design exists for one reason: PaddleOCR and Tesseract were
+chosen as **uncorrelated** readers so each engine's errors — and the VLM
+sibling's — are caught by being diffed against the others. A cache that serves
+stored engine output changes *when* the engines run, and possibly *whether*
+they run on a given invocation.
+
+Questions the next session must answer, each with evidence from the code and a
+live re-run:
+- Are **both** OCR engines still actually executing and being compared against
+  the sibling on the path that matters — the `run` that produces a sibling,
+  and the `verify` that re-confirms it after corrections? Or does a cache hit
+  substitute stored bytes for one or both engine reads?
+- The cache key includes the PDF, dpi, and engine versions but **not** the
+  sibling. The sibling is edited between `run` and `verify`. Confirm from the
+  code that the sibling-vs-engine comparison is genuinely recomputed against
+  the *current* sibling on every `verify`, and that the cache only ever short-
+  circuits the engine reads, never the diff. Prove it (e.g. edit a sibling
+  token, re-run `verify`, confirm the divergence set reflects the edit).
+- Could a stale or colliding cache entry ever feed the comparison engine text
+  that does not correspond to the PDF actually on disk? Examine the key's
+  collision resistance and what happens on an engine upgrade mid-corpus.
+- Does the cache change the **independence** guarantee in any way — i.e., is
+  there any path where the sibling is now confirmed against bytes derived from
+  the sibling itself, rather than two independent engine reads of the page
+  images?
+- Re-derive the timing claim and the "byte-identical report" claim
+  independently; do not trust the prior session's numbers.
+
+If any answer shows the cross-check is weakened, the cache must be fixed or
+reverted — fidelity over speed (the multi-engine design is load-bearing; it
+caught the DIRD-16 silent misreads and the dird-32 equation placeholders).
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C7 — Investigate: the worker fragment-path instruction reads as two options / a band-aid
+
+Investigation entry — **read `.claude/agents/worker.md` and the related
+contract surfaces, decide what the single clean instruction is, then fix it.**
+
+The worker contract states where to write the fragment file in **two
+places**, which reads as two options / a patched-over instruction rather than
+one authoritative rule:
+- the intro paragraph: "*write your fragment to its own file
+  (`/tmp/fragments-{slug}/{source stem}.yaml` — one file per worker, so
+  parallel workers never race)*";
+- the `**Emit.**` step: "*`Write` the fragment to
+  `/tmp/fragments-{slug}/{source stem}.yaml` (stem = the source filename
+  without extension; the slug-scoped directory keeps parallel builds apart
+  without doubling the slug into the filename) …*".
+
+The same path template appears twice (a drift surface — the two can diverge),
+and the second mention carries a parenthetical about *not* doubling the slug,
+which is the residue of the earlier `fragment-{slug}-{stem}` naming changed in
+commit `6bab6f6`. Together they make a one-line mechanical instruction read
+like a worked-around decision.
+
+Questions to settle: should the path be stated once (where — the contract
+intro, the Emit step, or only the stub schema in `stub-schemas.md`, with the
+others referencing it)? Is the "without doubling the slug" parenthetical still
+earning its place now that the naming is fixed, or is it explaining a problem
+that no longer exists? Resolve to a single, non-apologetic statement of where
+the fragment goes, and confirm the other surfaces (`stub-schemas.md`,
+`build-protocol` SKILL.md, `merge-fragments.py` docstring) agree without
+re-stating it.
+
+**Blocks:** none.
+**Blocked by:** none.
+
