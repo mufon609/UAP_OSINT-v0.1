@@ -176,7 +176,7 @@ naming the metadata field, never a `quotes[]` entry.
    Omit the block entirely for non-document sources (workers on
    transcript / media / etc. sources do not emit `cited_works`).
 
-**Emit.** `Write` the fragment to `/tmp/fragments-{slug}/{source stem}.yaml`
+**Emit.** `Write` the fragment to `/tmp/fragments-{slug}/{stem}.yaml`
 (stem = the source filename without extension; the slug-scoped directory keeps
 parallel builds apart) in the fragment-file shape
 (build-protocol → stub-schemas.md): top-level `slug`, `worker_kind`, `source`,

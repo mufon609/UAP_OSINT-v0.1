@@ -2,8 +2,8 @@
 """merge-fragments.py — mechanical transport of worker-fragment verbatim data
 into a research artifact.
 
-The worker emits its fragment as a YAML file (``/tmp/fragments-{slug}/{source
-stem}.yaml`` — `.claude/agents/worker.md`); this script copies the **verbatim
+The worker emits its fragment as a YAML file (``/tmp/fragments-{slug}/{stem}.yaml``
+— `.claude/agents/worker.md`); this script copies the **verbatim
 payload** — ``quotes[]`` and ``cited_works`` — into the artifact byte-exactly.
 An LLM retyping verbatim spans into the artifact is a drift surface the
 verbatim-quote check exists to catch (and was the builder's single largest
