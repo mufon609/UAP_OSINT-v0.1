@@ -1135,6 +1135,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #31 — ''Detection and High Resolution Tracking of Vehicles at Hypersonic Velocities'', DIA-08-1012-001, ICOD 30 August 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 20 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 47 pages. DIA attachment #29 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. Culbreth, University of Nevada – Las Vegas (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_31-DIRD_Detection_and_High_Resolution_Tracking_of_Vehicles_at_Hypersonic_Velocities.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-31-hypersonic-detection-tracking-2010.txt
+    archived_date: '2026-06-09'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract via ocr-consensus.py) of the OCR-scanned DIRD #31 ''Detection and High Resolution Tracking of Vehicles at Hypersonic Velocities''. Produced 2026-06-09; no pages content-filter-blocked (47/47 VLM-transcribed). 28 residual high-signal divergences all settled against page images as shared OCR glyph-confusion (sibling correct); one VLM silent correction reverted to preserve the source typo ''Vehicle Altitute.'' (p.38). Black Vault FOIA insert (p.2) preserved verbatim. Equations/figures bracketed; redactions + source spellings preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_32-DIRD_Ultracapacitators_as_Energy_and_Power_Storage_Devices.pdf
   status: archived
   artifacts:
