@@ -104,35 +104,6 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
-### C1 — Strip goal 7 (family comparability) from the build auditor — Stage 2 of the cross-node strip
-
-Stage 1 shipped 2026-06-09: the pipeline-docs consistency audit was run
-(fresh-context, findings approved per item by the maintainer) and the
-auditor's adjacent-node propagation goal + tightening loop were **deleted
-repo-wide** — a build pays attention to the built node and nothing else;
-cross-node updates happen only via user-directed `/augment` (record:
-roadmap E.3 + the commit series). The maintainer's end state removes
-**family comparability** (now goal 7 of `.claude/agents/auditor.md`; was
-goal 8) from the *build* as well — it reasons from peer nodes ("the peers
-carry section X") during a build, the inward mirror of the deleted
-propagation fallacy — but slowly and deliberately, not bundled into
-Stage 1.
-
-Stage 2 must settle, with the maintainer:
-
-- Remove goal 7 from the build-role pass. Does comparability survive in
-  **standalone `/audit`** (its step 2 leans on it), or go entirely?
-- Goal 6 (cross-node consistency — the built node's claims don't
-  contradict the nodes it references) **stays**; it verifies the built
-  node only.
-
-(The Stage-1 audit's parked conflicting-`cited_works` item is resolved:
-`cited_works_shape_conflict` is a routed name in `_phases.py` —
-extract / Worker — and the builder contract names the mechanism.)
-
-**Blocks:** none.
-**Blocked by:** maintainer direction on the two questions above.
-
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may

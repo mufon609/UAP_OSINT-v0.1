@@ -53,32 +53,11 @@ Audit goals:
    deliberate not-on-node variant (e.g. an auto-caption name mangling kept for
    identity resolution) → reclassify `resolution: off-node-variant` (renders in
    `## Name Variants`, not Source-Form Notes). Resolve each, don't leave it.
+   On a document node, also re-check the `cited_works` affirmation against the
+   target's own source: a NONE on a source that actually carries a reference
+   list, or an IGNORED on a source that warrants capture, are defects to flag.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
-7. **Family comparability (source-anchored).** Compare the target against
-   its family peers —
-   same `type`, and within type the same `archetype` (people) or `kind`
-   (organizations / documents / events). For each **source-anchored** optional
-   section a peer populates that the target lacks — `## Source-Form Notes` /
-   `## Preserved Disagreements` (`naming_quirks[].resolution`) — read the
-   target's OWN archived sources and ask whether the same class of material
-   is present-but-uncaptured. For document `## References` (`cited_works`)
-   the audit shape is one step richer: the section is now UNIVERSAL on
-   documents (the three-state affirmation NONE / IGNORED / list ships on
-   every artifact), so the
-   audit question is "is the contributor's affirmation correct against the
-   target's own source?" — a NONE on a source that actually carries a
-   reference list, or an IGNORED on a source that warrants capture, are the
-   defects to flag. Read the peer artifacts directly
-   (`meta/research/{peer}.yaml`); no tooling needed for a handful of peers.
-   **Recommend-only, and a source re-check — never a count match.** A peer
-   carrying a section is not license to add entries until the target
-   "matches" (that is the pressure build-protocol "Density is source-driven" forbids);
-   add an entry only if the target's source attests it, and if it doesn't,
-   the asymmetry is correct. Synthesis sections (Description, Background,
-   Credibility Notes) are out of scope. Emit any candidates in the auditor
-   stub.
-
 Recover a 404'd source before calling it lost: a manifest entry with
 `status: pending` + `wayback_date` set is recoverable via the fuzzy-timestamp
 pull (`meta/sources-access.md`).
