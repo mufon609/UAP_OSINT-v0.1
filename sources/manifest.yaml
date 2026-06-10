@@ -1171,6 +1171,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #33 — ''Magnetohydrodynamics (MHD) Air Breathing Propulsion and Power for Aerospace Applications'', DIA-08-1011-006 (recovered from page-1 image read; pdftotext did not surface it), ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 21 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 33 pages. DIA attachment #32 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. S. Macheret, Lockheed Martin (per that DIA list); relevant to /investigations/lockheed-martin-uap-materials. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_33-DIRD_MHD_Air_Breathing_Propulsion_and_Power_for_Aerospace_Applications.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-33-mhd-air-breathing-propulsion-2010.txt
+    archived_date: '2026-06-10'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract via ocr-consensus.py) of the OCR-scanned DIRD #33 ''Magnetohydrodynamics (MHD) Air Breathing Propulsion and Power for Aerospace Applications''. Produced 2026-06-10; no pages content-blocked by the VLM filter; 23 HIGH-SIGNAL divergences image-verified, all shared OCR glyph-confusion — zero sibling corrections needed (legible inline equations transcribed as text per the producer contract; placeholders only on the two dense multi-line derivation blocks, p.11). Black Vault FOIA-mirror insert (p.2) preserved verbatim. Figures bracketed as placeholders; redactions ((b)(3):10 USC 424 / (b)(6)) + source spellings (e.g. ''Magnethydrodynamic'', ''obits'', ''Kelplerian'') preserved verbatim.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_34-DIRD_Cognitive_Limits_on_Simultaneous_Control_of_Multiple_Unmanned_Spacecraft.pdf
   status: archived
   artifacts:
