@@ -34,8 +34,12 @@ In order, with a check after each (build-protocol → run
    fragment may carry the scalar `NONE` / `IGNORED` instead of a list — pass
    the scalar through verbatim (no list-union semantics on a string). The
    per-document expectation is exactly one `cited_works` shape across the
-   merged artifact; conflicting fragments are a data defect to route, not to
-   reconcile. Then run
+   merged artifact; conflicting fragments are a data defect, never yours to
+   reconcile — adjudicating between shapes asserts what a source's reference
+   list contains, which only a Worker read may do. Stop and return
+   `result: fail` with `routed: [cited_works_shape_conflict]` and the
+   conflicting source named; the orchestrator re-enters the Worker on that
+   source (`route_failure.py` maps the name to extract / Worker). Then run
    `validate-research.py --phase extract meta/research/{slug}.yaml` once — the
    verbatim boundary fires here on the merged result (it reads disk), covering
    `cited_works` `citation_verbatim` the same way it covers `quotes` text.

@@ -126,11 +126,9 @@ Stage 2 must settle, with the maintainer:
   contradict the nodes it references) **stays**; it verifies the built
   node only.
 
-Also parked from the Stage-1 audit, separate decision: the builder's
-"conflicting `cited_works` fragments are a data defect to route" names no
-route (`.claude/agents/builder.md`, Merge step). Proposed mechanism the
-maintainer has not yet approved: builder returns `result: fail` naming the
-conflict; orchestrator re-enters the Worker on that source.
+(The Stage-1 audit's parked conflicting-`cited_works` item is resolved:
+`cited_works_shape_conflict` is a routed name in `_phases.py` —
+extract / Worker — and the builder contract names the mechanism.)
 
 **Blocks:** none.
 **Blocked by:** maintainer direction on the two questions above.

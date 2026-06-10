@@ -77,6 +77,14 @@ CHECK_PHASE = {
     "document_quote_source": "extract",
     "cited_works": "extract",
     "cited_works_uncaptured": "extract",
+    # Builder-detected at merge, no disk validator: worker fragments that
+    # disagree on the per-document cited_works shape (NONE / IGNORED / list)
+    # never reach the artifact, so no check module can see the conflict.
+    # The entry exists so route_failure recognizes the name and routes the
+    # fix to the Worker (a fresh read of the conflicting source), instead
+    # of defaulting to render/builder — the builder must never adjudicate
+    # what a source's reference list contains.
+    "cited_works_shape_conflict": "extract",
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
     "speaker_attribution_consistency": "extract",  # quote speaker_id ↔ attribution sibling at the [MM:SS] anchor
