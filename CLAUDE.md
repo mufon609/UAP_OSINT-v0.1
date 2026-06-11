@@ -97,7 +97,7 @@ artifact-level warnings stand.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (48)
+### Documents (49)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -136,6 +136,7 @@ artifact-level warnings stand.
 | `/documents/dird-31-hypersonic-detection-tracking` | primary-source-confirmed | gov-doc |
 | `/documents/dird-32-ultracapacitors-energy-storage` | primary-source-confirmed | gov-doc |
 | `/documents/dird-33-mhd-air-breathing-propulsion` | primary-source-confirmed | gov-doc |
+| `/documents/dird-34-cognitive-limits-unmanned-spacecraft` | primary-source-confirmed | gov-doc |
 | `/documents/elizondo-qfr-burlison-20241219` | primary-source-confirmed | gov-doc |
 | `/documents/eo-14347-restoring-department-of-war` | primary-source-confirmed | gov-doc |
 | `/documents/hoyer-fy2011-milcon-southern-maryland-20100728` | primary-source-confirmed | gov-doc |

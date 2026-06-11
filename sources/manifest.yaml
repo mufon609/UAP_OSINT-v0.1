@@ -1189,6 +1189,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #34 — ''Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft'', DIA-08-1101-001 (recovered from page-1 image read; pdftotext did not surface it), ICOD 8 September 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 15 December 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 31 pages. DIA attachment #28 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_34-DIRD_Cognitive_Limits_on_Simultaneous_Control_of_Multiple_Unmanned_Spacecraft.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-34-cognitive-limits-unmanned-spacecraft-2010.txt
+    archived_date: '2026-06-11'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR) of the OCR-scanned DIRD #34. Produced 2026-06-11; zero pages content-blocked (no PaddleOCR fill needed). Black Vault FOIA insert (p.2) preserved verbatim. Figures/tables bracketed as placeholders with captions transcribed; redactions ((b)(3):10 USC 424, (b)(6)) + source spellings/typos preserved verbatim; 16 HIGH-SIGNAL consensus divergences all image-verified as shared OCR glyph-flattening (superscript footnote markers, TOC dot-leaders, struck banners) — zero sibling corrections.'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_35-DIRD_Quantum_Computing_and_Utilizing_Organic_Molecules_in_Automation_Technology.pdf
   status: archived
   artifacts:
