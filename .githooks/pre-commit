@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Repo pre-commit hook — runs the full gate chain at COMMIT EXECUTION time,
+# inside the `git commit` invocation, after any chained fix in a compound
+# command (`fix && git commit`) has already run.
+#
+# Armed via `git config core.hooksPath .githooks`. The PreToolUse guard
+# (.claude/hooks/block_commit_if_red.sh) auto-installs that config on every
+# agent commit attempt and denies the bypass routes (`--no-verify`, `-n`
+# clusters, core.hooksPath manipulation); manual terminal commits are gated
+# here too. Nonzero exit blocks the commit.
+set -u
+cd "$(git rev-parse --show-toplevel)"
+exec bash scripts/tests/pre-commit.sh

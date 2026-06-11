@@ -37,7 +37,7 @@ python3 scripts/build/validate.py            # node structure + verbatim quotes
 python3 scripts/build/validate-research.py    # artifact structure + prose-drift
 python3 scripts/build/review-coverage.py --all  # cross-layer coverage/boundary/description-drift
 python3 scripts/build/build-state.py --check  # this file's build-state block
-bash scripts/tests/pre-commit.sh             # full gate chain (subsumes the four above + more); ALSO the blocking commit hook (un-bypassable by --no-verify)
+bash scripts/tests/pre-commit.sh             # full gate chain (subsumes the four above + more); ALSO runs inside `git commit` via .githooks/pre-commit (auto-armed; bypass routes denied — un-bypassable by --no-verify)
 ```
 
 Exit 0 on all = repo healthy. Any errors → fix first. Don't stop at
@@ -266,7 +266,9 @@ committed `settings.json` deny rule plus a PreToolUse hook block the
 Edit/Write path. To change a node: fix the artifact under
 `meta/research/` and re-render with `build-from-research.py`, or run
 `/augment` for a targeted maintenance change. `git commit` runs the full
-pre-commit chain and blocks on any red gate (un-bypassable by
-`--no-verify`); scaffolding a second uncommitted new
+pre-commit chain at commit execution time (`.githooks/pre-commit`,
+auto-armed by the commit guard, which denies `--no-verify` and the other
+bypass routes — so a compound fix-then-commit is gated on its post-fix
+state); scaffolding a second uncommitted new
 person/organization node is also hook-blocked (the
 one-new-synthesis-node rule, §4).

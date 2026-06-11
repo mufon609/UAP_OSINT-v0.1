@@ -249,10 +249,17 @@ carrying the fix-pointing message. (The hook alone is insufficient: a
 `settings.json` `PreToolUse` hook does **not** fire for a *subagent's* tool
 call, so the deny rule is what actually gates the builder.) Two more hooks
 back the discipline — and these gate main-thread actions, so the hook
-mechanism is sufficient: a `git commit` runs the full pre-commit chain and
-blocks on any red gate (un-bypassable by `--no-verify`), and scaffolding a
-second uncommitted new person/organization node is blocked (the
-one-new-synthesis-node-per-session rule).
+mechanism is sufficient: a `git commit` runs the full pre-commit chain **at
+commit execution time** and blocks on any red gate — the repo githook
+`.githooks/pre-commit` runs the chain after any chained fix in a compound
+`fix && git commit` has run, and the `block_commit_if_red.sh` PreToolUse
+guard keeps that floor un-droppable (arms `core.hooksPath` on every commit
+attempt, denies the bypass routes — `--no-verify` and abbreviations, `-n`
+short-flag clusters, `core.hooksPath` manipulation — with heredoc-stripped
+token scanning so commit-message prose never trips it, and falls back to
+running the chain at PreToolUse time if the githook is ever missing). And
+scaffolding a second uncommitted new person/organization node is blocked
+(the one-new-synthesis-node-per-session rule).
 
 ## Handoff stubs
 
