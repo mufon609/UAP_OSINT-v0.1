@@ -113,19 +113,44 @@ No upstream blockers; safe to pick up in any session. Default-focus tier.
 Four transcript nodes carry hand-attributed `speaker_id` quotes on
 auto-caption sources with no verified attribution sibling — built before
 the sibling gate existed, so the one mechanical attribution check
-(`speaker_attribution_consistency`) silently skips them:
+(`speaker_attribution_consistency`) silently skips them. Per-slug state
+(drafts preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/` — /tmp is
+periodically cleaned and has already eaten one scratch file; copy a draft
+back to its `/tmp/attribution-{slug}/` path before resuming its pipeline):
 
-- `transcripts/weaponized-038-lacatski-kelleher-2023`
-- `transcripts/weaponized-096-lacatski-part1-2025`
-- `transcripts/weaponized-097-lacatski-part2-2025`
-- `transcripts/weaponized-114-lacatski-future-visions-2026`
+- `weaponized-097-lacatski-part2-2025` — FURTHEST. Draft r3 (216 turns)
+  passed the structural validator and an independent verification
+  (verifier session `attribution-verifier-2026-06-11-weaponized-097-r3`;
+  two content corrections from the r1 rejection applied and re-checked).
+  Video on disk at `sources/video/weaponized-097-lacatski-part2-2025.mp4`.
+  Remaining: the mandatory active-speaker fold gate
+  (`finalize-attribution.py --verifier-session
+  attribution-verifier-2026-06-11-weaponized-097-r3 --video …`) was started
+  and stopped mid-run (clean: it writes nothing until it passes) — re-run
+  it, settle any `contested-fold`, then register + render (skill §6) and
+  `stamp-speaker-id.py` dry-run-confirm the node's hand-keyed values.
+- `weaponized-114-lacatski-future-visions-2026` — draft written (213
+  turns, full coverage) but FATALs the structural validator: YAML parse
+  error at draft line 114 col 5 (unquoted scalar class). Route to a
+  producer for the repair, then validator → verifier → gate → register.
+- `weaponized-038-lacatski-kelleher-2023` (2373 lines) and
+  `weaponized-096-lacatski-part1-2025` (1476 lines) — no draft yet. Two
+  producer attempts failed on harness limits: one request timeout
+  (~69 min), two hit the 64k single-response output cap mid-draft (the
+  successful 097/114 producers emitted their YAML across multiple
+  writes). If the cap recurs, that is producer-contract friction —
+  consider directing incremental section-by-section Write/Edit emission
+  in the contract rather than one full-file emission.
+- Videos for 038/096/114 are not yet on disk — fetch with
+  `download-video.py {manifest url} --slug {slug} --skip-manifest`
+  before each finalize (the gate refuses to run without the recording;
+  `.venv-face` is installed and working).
 
-For each: run `/prepare-transcript-sibling {slug}` (video download →
-producer → structural validator → independent verifier → mandatory
-active-speaker fold gate), then confirm each node's existing `speaker_id`
-values against the verified sibling (`stamp-speaker-id.py` dry run) and
-correct any divergence — hand-keyed attribution is exactly the divergence
-hazard the sibling exists to remove.
+For each: finish the `/prepare-transcript-sibling` pipeline as above, then
+confirm each node's existing `speaker_id` values against the verified
+sibling (`stamp-speaker-id.py` dry run) and correct any divergence —
+hand-keyed attribution is exactly the divergence hazard the sibling
+exists to remove.
 
 When all four are verified, promote `scripts/checks/
 transcript_sibling_presence.py` from `warn` to `error` (its documented
