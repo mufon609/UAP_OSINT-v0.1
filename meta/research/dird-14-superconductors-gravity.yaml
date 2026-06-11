@@ -6,6 +6,7 @@ primary_sources:
   - path: government/dird-14-superconductors-gravity-20100323.pdf
     format: pdf
     content_block: 'None'
+    quote_corroboration: '2026-06-11: 20 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q10 ‹Advanced› (line 646), q10 ‹serious› (line 646), q15 ‹Redacted› (line 49) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:e26ea8076592'
 document_intrinsic:
   internal_title: The Role of Superconductors in Gravity Research
   internal_date: '2010-03-23'

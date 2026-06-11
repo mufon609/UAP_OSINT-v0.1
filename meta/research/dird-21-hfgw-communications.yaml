@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-21-hfgw-communications-20100406.pdf
   format: pdf
   content_block: None
+  quote_corroboration: '2026-06-11: 53 quote(s) corroborated against the OCR engine reads; 34 contested token(s): q4 ‹Defense› (line 41), q18 ‹10⁶› (line 185), q20 ‹10³⁵› (line 300), q42 ‹N²› (line 392), q43 ‹N²› (line 548), q44 ‹000Å› (line 619), q44 ‹10⁴› (line 619), q44 ‹Pᵢ› (line 620), q44 ‹29› (line 620), q44 ‹10²› (line 620), q44 ‹10⁷› (line 620), q44 ‹10⁷› (line 622), q44 ‹146› (line 622), q44 ‹10¹²› (line 622), q44 ‹29› (line 623), q44 ‹10²› (line 623), q44 ‹48› (line 623), q44 ‹10¹⁴› (line 623), q44 ‹3› (line 623), q44 ‹10› (line 623), q45 ‹48› (line 634), q45 ‹10¹⁴› (line 634), q45 ‹7› (line 634), q45 ‹10⁶› (line 634), q46 ‹v_GW› (line 642), q46 ‹2› (line 642), q46 ‹10¹⁴› (line 642), q46 ‹28› (line 642), q46 ‹10› (line 642), q46 ‹v_GW› (line 642), q46 ‹8› (line 643), q48 ‹h_det› (line 992), q48 ‹8› (line 992), q48 ‹10› (line 992) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:22ec3adbb5ff'
 document_intrinsic:
   internal_title: High-Frequency Gravitational Wave Communications
   internal_date: '2010-04-06'

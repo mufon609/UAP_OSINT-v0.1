@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-04-biomaterials-20100107.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 59 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q5 ‹ATTN› (line 53), q47 ‹Lím› (line 1133), q51 ‹Brånemark› (line 1258) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:234b92ebf3a1'
 document_intrinsic:
   internal_title: Biomaterials
   internal_date: '2010-01-07'

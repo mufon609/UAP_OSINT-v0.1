@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-03-pulsed-hpm-20100128.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 29 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q26 ‹1› (line 219) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:db4b6cda0b21'
 document_intrinsic:
   internal_title: Pulsed High-Power Microwave Source Technology
   internal_date: '2010-01-28'

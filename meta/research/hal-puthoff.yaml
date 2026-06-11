@@ -8,6 +8,7 @@ primary_sources:
   format: pdf
 - path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   format: pdf
+  content_block: 'None'
 - path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   format: pdf
 - path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
@@ -50,12 +51,15 @@ primary_sources:
   format: transcript
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 3 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:becf7ae93852'
 - path: government/aaro-supplement-to-ornl-analysis-202407.pdf
   format: pdf
 - path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
   format: html
 - path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
   format: pdf
+  content_block: 'All pages — VLM page-image read was content-blocked; produced via OCR.'
 - path: news/earthtech-team-20260516.html
   format: html
 

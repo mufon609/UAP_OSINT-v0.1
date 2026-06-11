@@ -143,9 +143,9 @@ The most significant technical impediment to deployment may have been the large 
 
 ---
 
-### Defines the two governing physical quantities — irradiance (instantaneous power per unit area, watts/cm2) and fluence (damage-inflicting accumulated energy, joules/cm2; fluence = irradiance × time).
+### Defines the two governing physical quantities — irradiance (instantaneous power per unit area, watts/cm²) and fluence (damage-inflicting accumulated energy, joules/cm²; fluence = irradiance × time).
 
-> The instantaneous measure of a focused laser beam's effectiveness is called "irradiance" and is measured in power per unit area over the laser spot (typically watts/cm2).  The beam's ability to inflict damage, by heating during a time interval, is called "fluence" and is typically measured in joules/cm2.  Fluence is simply irradiance × time and one joule is equal to one watt for one second.
+> The instantaneous measure of a focused laser beam's effectiveness is called "irradiance" and is measured in power per unit area over the laser spot (typically watts/cm²).  The beam's ability to inflict damage, by heating during a time interval, is called "fluence" and is typically measured in joules/cm².  Fluence is simply irradiance × time and one joule is equal to one watt for one second.
 
 | Field | Value |
 |---|---|

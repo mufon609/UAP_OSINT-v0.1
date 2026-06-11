@@ -392,7 +392,7 @@ Applications to Sub-Diffraction Imaging:  Super-Lens and
 Hyper-Lens
 
 The super-lens is one of the earliest applications of metamaterials (Reference 21), and
-its principle is shown in Figure 5. Without the super-lens, all information about sub-
+its principle is shown is Figure 5. Without the super-lens, all information about sub-
 diffraction (or sub-wavelengths, which is equivalent) features of the periodic object
 would have been lost. The reason for the information loss is evanescent decay of the
 large spatial wavenumbers. The only method of accessing/measuring these features

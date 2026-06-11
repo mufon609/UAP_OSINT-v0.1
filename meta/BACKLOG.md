@@ -191,64 +191,23 @@ same section) and correct if needed.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C4 — Backfill the OCR-sibling debt the presence check surfaced, then promote it to error
+### C4 — Promote the two OCR-pipeline backstop checks to error once the Kress backfill lands
 
-The `ocr_sibling_presence` check (warn tier — the 4b gate's commit-boundary
-backstop, twin of `transcript_sibling_presence`) fires on two legacy
-categories, all from builds that predate the 4b gate or the `content_block`
-field:
+The legacy worklists of `ocr_sibling_presence` and `quote_ocr_corroboration`
+(both warn tier) are cleared: every quoted ocr-scan / extraction-lossy PDF
+except the Kress source carries a verified sibling, a stamped
+`content_block`, and a fresh `quote_corroboration`, with every contested
+token the stamps enumerate settled against the page images. The one
+remaining debt is the Kress source (4 artifacts, no sibling) — its sibling
+is produced as step 1 of the Kress-footnote entry, after which those
+artifacts need their `content_block` + `quote_corroboration` stamps
+(`verify --stamp-artifact`, then `corroborate-quotes`; both seconds on the
+engine cache once the sibling exists).
 
-**Sibling owed** — quoted ocr-scan PDFs with no verified `.txt` sibling at
-all; each needs a full `/prepare-ocr-sibling` run (VLM read → PaddleOCR
-consensus → image verification → registration), then re-verification of the
-quotes that derive from it:
-
-- `government/cia-kress-parapsychology-…-1977-declassified-1996.pdf`
-  (4 artifacts) — sequenced under the Kress-footnote date entry, which
-  produces this sibling as its step 1.
-- `government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf`
-  (3 artifacts).
-- `government/blackvault-grusch-dopsr-23-F-0946.pdf` (1 artifact).
-
-**Entry unstamped** — the sibling exists and is verified, but the artifact's
-`primary_sources[]` entry predates the `content_block` field. Mechanical fix
-per (source, artifact) pair:
-`ocr-consensus.py verify {pdf} --blocked-pages {as recorded in the sibling's
-manifest note, if any} --stamp-artifact meta/research/{slug}.yaml` — the
-first run per PDF pays the engine read (cold cache), repeats are seconds.
-~14 sources / ~27 artifact entries; the check's output is the authoritative
-worklist.
-
-**Also investigate while here:** what the sibling story is for an
-`extraction-lossy` **HTML** source (e.g. the CBS 60-Minutes transcript page)
-— `content_block` is a page-image concept, so the check scopes to PDF and
-HTML is currently unchecked by design. Decide whether lossy HTML needs its
-own sibling form or a manifest reclassification.
-
-When both categories are empty, promote `scripts/checks/
-ocr_sibling_presence.py` from `warn` to `error` (its documented end state)
-and update its docstring's severity paragraph.
+When the Kress artifacts are stamped and both checks report zero rows,
+promote `scripts/checks/ocr_sibling_presence.py` and `scripts/checks/
+quote_ocr_corroboration.py` from `warn` to `error` (their documented end
+state) and update each docstring's severity paragraph.
 
 **Blocks:** none.
-**Blocked by:** none (the Kress rows close via the Kress-footnote entry).
-
-### C5 — Backfill the quote-corroboration stamps, then promote the check to error
-
-The `quote_ocr_corroboration` check (warn tier — the quote-level sibling of
-`ocr_sibling_presence`; build step 6b's commit-boundary backstop) fires on
-every (quoted lossy source, artifact) pair whose entry predates the
-`quote_corroboration` field — the check's output is the authoritative
-worklist. Mechanical fix per pair, after that source's `content_block` is
-stamped (sequence behind the C4 stamping rows where they overlap):
-`ocr-consensus.py corroborate-quotes {pdf} --artifact
-meta/research/{slug}.yaml` — the first run per PDF pays the engine read
-(cold cache), repeats are seconds. Any contested / PaddleOCR-filled-page
-tokens the stamps enumerate are page-image work: settle each (fix the quote
-+ sibling, or confirm the sibling against the image) before counting the
-pair done. When the worklist is empty, promote `scripts/checks/
-quote_ocr_corroboration.py` from `warn` to `error` (its documented end
-state) and update its docstring's severity paragraph.
-
-**Blocks:** none.
-**Blocked by:** the C4 sibling-owed + unstamped rows for the overlapping
-sources (a stamp needs the sibling on disk and `content_block` on the entry).
+**Blocked by:** the Kress-footnote entry (the sibling it produces).

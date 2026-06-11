@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-23-laser-weapons-20100331.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 24 quote(s) corroborated against the OCR engine reads; 5 contested token(s): q5 ‹Bldg› (line 80), q14 ‹µm› (line 422), q16 ‹JHPSSL› (line 516), q18 ‹CO₂› (line 862), q18 ‹CO₂› (line 864) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:bed0eafab004'
 document_intrinsic:
   internal_title: State of the Art and Evolution of High-Energy Laser Weapons
   internal_date: '2010-03-31'
@@ -108,11 +109,11 @@ quotes:
 - id: q9
   added_date: '2026-06-07'
   text: >-
-    The instantaneous measure of a focused laser beam's effectiveness is called "irradiance" and is measured in power per unit area over the laser spot (typically watts/cm2).  The beam's ability to inflict damage, by heating during a time interval, is called "fluence" and is typically measured in joules/cm2.  Fluence is simply irradiance × time and one joule is equal to one watt for one second.
+    The instantaneous measure of a focused laser beam's effectiveness is called "irradiance" and is measured in power per unit area over the laser spot (typically watts/cm²).  The beam's ability to inflict damage, by heating during a time interval, is called "fluence" and is typically measured in joules/cm².  Fluence is simply irradiance × time and one joule is equal to one watt for one second.
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
     location: 'section "Basic Attributes of Kinetic Energy and HEL Weapons", ¶2'
-  significance: Defines the two governing physical quantities — irradiance (instantaneous power per unit area, watts/cm2) and fluence (damage-inflicting accumulated energy, joules/cm2; fluence = irradiance × time).
+  significance: Defines the two governing physical quantities — irradiance (instantaneous power per unit area, watts/cm²) and fluence (damage-inflicting accumulated energy, joules/cm²; fluence = irradiance × time).
   statement_date: '2010-03-31'
 - id: q10
   added_date: '2026-06-07'

@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
   format: pdf
   content_block: 'All pages produced via Tesseract OCR — the VLM page-image read was content-blocked.'
+  quote_corroboration: '2026-06-11: 19 quote(s) corroborated against the OCR engine reads; 10 contested token(s): q3 ‹USC› (line 53), q3 ‹USC› (line 55), q3 ‹USC› (line 57), q9 ‹ZPF› (line 368), q10 ‹ZPF› (line 386), q12 ‹2005› (line 567), q15 ‹ZPF› (line 2019), q16 ‹QED› (line 2041), q16 ‹QED› (line 2044), q17 ‹SED› (line 2048) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:649971484801'
 document_intrinsic:
   internal_title: Concepts for Extracting Energy from the Quantum Vacuum
   internal_date: '2010-04-06'

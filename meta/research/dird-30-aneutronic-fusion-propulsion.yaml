@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 9 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q7 ‹¹¹B› (line 1717) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:b5dddc2e9c9e'
 document_intrinsic:
   internal_title: 'Aneutronic Fusion Propulsion'
   internal_date: '2010-11-01'

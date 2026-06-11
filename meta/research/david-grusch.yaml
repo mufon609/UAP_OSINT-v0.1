@@ -25,8 +25,12 @@ primary_sources:
     pages: 4
 - path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 6 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:5674ba388bad'
 - path: government/blackvault-grusch-dopsr-23-F-0946.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:9fed7fcffbb5'
 - path: government/burchett-house-gov-post-hearing-statement-20230726.html
   format: html
 - path: government/burlison-house-gov-grusch-advisor-20250327.html
@@ -35,6 +39,8 @@ primary_sources:
   format: pdf
 - path: government/grusch-ppd-19-procedural-filing.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 4 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:be09443c672e'
 - path: news/newsnation-burchett-sickening-grusch-202308.html
   format: html
 - path: news/newsnation-rubio-not-the-only-one-202306.html

@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-20-biosensors-biomems-20100331.pdf
   format: pdf
   content_block: None
+  quote_corroboration: '2026-06-11: 31 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q4 ‹b› (line 61), q4 ‹3› (line 61), q28 ‹monitoring› (line 1838) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:2eb7833efb84'
 document_intrinsic:
   internal_title: 'Biosensors and BioMEMS: A Survey of the Present Field'
   internal_date: '2010-03-31'

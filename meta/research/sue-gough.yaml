@@ -12,6 +12,8 @@ primary_sources:
   format: html
 - path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 4 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:18271da4341d'
 - path: news/defensescoop-aaro-foc-briefing-20241205.html
   format: html
 - path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html

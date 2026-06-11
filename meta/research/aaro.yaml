@@ -120,14 +120,19 @@ primary_sources:
   format: pdf
 - path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
   format: pdf
+  content_block: 'None'
 - path: government/usaspending-hq003422c0064.txt
   format: txt
 - path: news/thedebrief-mellon-aaro-report-flawed-20240412.html
   format: html
 - path: government/foia-23-f-0905-doc-1-released.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 1 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:58247a15910e'
 - path: government/foia-23-f-0905-doc-2-released.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 1 quote(s) corroborated against the OCR engine reads; 2 contested token(s): q14 ‹Thursday› (line 11), q14 ‹September› (line 11) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:e5a9068c830f'
 - path: government/usaspending-hq003422c0094.txt
   format: txt
 - path: government/usaspending-hq003424c0096.txt
@@ -144,6 +149,8 @@ primary_sources:
   format: html
 - path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 6 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:23a79c03cbdb'
 - path: government/armed-services-senate-gov-sasc-aaro-event-20241119.html
   format: html
 - path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
@@ -172,6 +179,8 @@ primary_sources:
   format: html
 - path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 10 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:18271da4341d'
 - path: government/osd-op5-fy24-20260501.pdf
   format: pdf
 - path: government/osd-op5-fy25-20260501.pdf
@@ -188,6 +197,7 @@ primary_sources:
   format: pdf
 - path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   format: pdf
+  content_block: 'None'
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
   statutory_authority: '50 U.S.C. § 3373 — § 1683 of P.L. 117-81 (NDAA FY 2022); amended by P.L. 117-263 § 1673(c) (NDAA FY 2023 Div A) + § 6802(a) (IAA FY 2023 Div F); P.L. 118-31 § 7341 (NDAA FY 2024 — (k)(1) heading + (k)(1)(A) text); P.L. 119-60 §§ 1671(a)+1672(b) (NDAA FY 2026 — (f)(1)(A)+(l))'

@@ -407,7 +407,7 @@ experimental testing.
 
 4
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
-UNCLASSIFIED / /POR"OPPtCREUSE-GNE
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 III. Nonlocality Versus Special Relativity?
 
@@ -462,7 +462,7 @@ out to be a very useful way of generating photon pairs entangled in either the
 polarization or the momentum domains. In this process, a photon from a “pump laser”
 
 5
-UNCLASSIFIED -(F@R9@FE265A- U6 ONE
+UNCLASSIFIED//FOR OFFICIAL USE ONLY
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 interacts with a nonlinear crystal and is transformed into two photons with energies and

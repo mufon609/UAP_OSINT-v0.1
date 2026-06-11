@@ -79,7 +79,7 @@ What is exotic about this matter is that it must have negative energy density an
 
 ### Administrative Note — places the report in the FY 2009 DIA AAWSA Program advanced-technology report series; the AAWSA Program Manager identity and mailing details are withheld under FOIA exemption markers
 
-> This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to (b)(3):10 USC 424:(b)(6) AAWSA Program Manager, Defense Intelligence Agency, ATTN (b)(3):10 USC 424 Bldg 6000, Washington, DC 20340-5160.
+> This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to (b)(3):10 USC 424:(b)(6) AAWSA Program Manager, Defense Intelligence Agency, ATTN (b)(3):10 USC 424 Bldg 6000, Washington, DC 20340-5100.
 
 | Field | Value |
 |---|---|
@@ -115,7 +115,7 @@ What is exotic about this matter is that it must have negative energy density an
 
 ### Section II.A — the source matter for a traversable wormhole must have zero or negative energy density and/or an outward radial tension (negative pressure) larger than the magnitude of the energy density
 
-> By inserting Equation (1) into the Einstein field equation and cranking through the math, one can derive the density and flux of energy and momentum (a.k.a. pressure) encoded by 7, for the source of matter that is required to produce the traversable wormhole. The results show that the source of matter must have zero or negative energy density and/or an outward radial tension (negative pressure) that is larger than the magnitude of the energy density (Reference 1-3).
+> By inserting Equation (1) into the Einstein field equation and cranking through the math, one can derive the density and flux of energy and momentum (a.k.a. pressure) encoded by Tμν, for the source of matter that is required to produce the traversable wormhole. The results show that the source of matter must have zero or negative energy density and/or an outward radial tension (negative pressure) that is larger than the magnitude of the energy density (Reference 1-3).
 
 | Field | Value |
 |---|---|
@@ -355,7 +355,7 @@ What is exotic about this matter is that it must have negative energy density an
 
 ### Section IV.A — the equivalent mass (OCR-rendered ‘Mun’) is not the total mass seen by remote observers; the non-linearity of the general relativistic field equation dictates that the total mass is zero
 
-> After being alarmed by the magnitude of the results, one should note that Mun is not the total mass of the wormhole as seen by remote observers. The non-linearity of the general relativistic field equation dictates that the total mass is zero
+> After being alarmed by the magnitude of the results, one should note that Mwh is not the total mass of the wormhole as seen by remote observers. The non-linearity of the general relativistic field equation dictates that the total mass is zero
 
 | Field | Value |
 |---|---|
@@ -523,7 +523,7 @@ What is exotic about this matter is that it must have negative energy density an
 
 ### Section V Conclusion — or a completely new theory for the quantum vacuum and its related spacetime physics, such as “emergent” spacetime/gravity theories
 
-> or a completely new theory for the quantum vacuum and its related spacetime physics (e.q., “emergent” spacetime/gravity theories (Reference 73, 74)).
+> or a completely new theory for the quantum vacuum and its related spacetime physics (e.g., “emergent” spacetime/gravity theories (Reference 73, 74)).
 
 | Field | Value |
 |---|---|
@@ -537,7 +537,7 @@ What is exotic about this matter is that it must have negative energy density an
 
 > Going forward toward the demonstration of a traversable wormhole will require the following:
 >
-> e Generating Negative Energy in the Lab: Our assessment concludes that we already make small amounts of negative energy in the lab, but we do not yet know if we can access larger amounts for extended periods of time over extended spatial distributions for the purpose of engineering a traversable wormhole.
+> • Generating Negative Energy in the Lab: Our assessment concludes that we already make small amounts of negative energy in the lab, but we do not yet know if we can access larger amounts for extended periods of time over extended spatial distributions for the purpose of engineering a traversable wormhole.
 
 | Field | Value |
 |---|---|

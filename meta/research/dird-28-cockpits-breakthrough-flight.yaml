@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-28-cockpits-breakthrough-flight-20101101.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 14 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:63e724c4b1c8'
 document_intrinsic:
   internal_title: Cockpits in the Era of Breakthrough Flight
   internal_date: '2010-11-01'

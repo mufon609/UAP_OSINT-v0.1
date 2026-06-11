@@ -6,6 +6,7 @@ primary_sources:
   - path: government/dird-17-maverick-inventor-20100330.pdf
     format: pdf
     content_block: 'None'
+    quote_corroboration: '2026-06-11: 13 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:03c29d974cfc'
 document_intrinsic:
   internal_title: 'Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise?'
   internal_date: '2010-03-30'

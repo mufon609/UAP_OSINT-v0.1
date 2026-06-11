@@ -99,10 +99,16 @@ primary_sources:
     format: txt
   - path: government/foia-23-f-0905-doc-1-released.pdf
     format: pdf
+    content_block: 'None'
+    quote_corroboration: '2026-06-11: 4 quote(s) corroborated against the OCR engine reads; 14 contested token(s): q18 ‹HQ003422C0094› (line 14), q18 ‹HQ003422R0192› (line 15), q18 ‹DATE› (line 17), q18 ‹ISSUED› (line 17), q18 ‹07› (line 17), q18 ‹Jul› (line 17), q18 ‹2022› (line 17), q18 ‹CODE› (line 22), q18 ‹HQ0034› (line 22), q19 ‹28› (line 518), q29 ‹ADDRESS› (line 54), q29 ‹OFFEROR› (line 54), q29 ‹CODE› (line 55), q29 ‹7NZQ9› (line 55) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:58247a15910e'
   - path: government/foia-23-f-0905-doc-2-released.pdf
     format: pdf
+    content_block: 'None'
+    quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 2 contested token(s): q22 ‹Thursday› (line 11), q22 ‹September› (line 11) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:e5a9068c830f'
   - path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
     format: pdf
+    content_block: 'None'
+    quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:16bda7077059'
 document_intrinsic:
   contracting_agency: 'Washington Headquarters Services'
   period_of_performance: '2018-09-27 — ongoing'

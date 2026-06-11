@@ -49,6 +49,8 @@ primary_sources:
   format: pdf
 - path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 5 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:c626b3e5bf73'
 - path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   format: pdf
 

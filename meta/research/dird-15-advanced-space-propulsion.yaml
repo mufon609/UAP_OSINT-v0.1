@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 13 quote(s) corroborated against the OCR engine reads; 4 contested token(s): q8 ‹v› (line 299), q8 ‹g_00› (line 299), q8 ‹g_11› (line 299), q8 ‹v› (line 299) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:becf7ae93852'
 document_intrinsic:
   internal_title: Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
   internal_date: '2010-03-29'

@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-25-statistical-drake-equation-2010.pdf
   format: pdf
   content_block: 'Pages 9, 10, 11, 29, 30 were content-blocked for the VLM and PaddleOCR-filled (pages 9-11 reproduce a copyrighted Carl Sagan "Cosmos" excerpt; page 30 is the two-column "1. INTRODUCTION", column-split-filled). Blocked-page prose was image-verified.'
+  quote_corroboration: '2026-06-11: 10 quote(s) corroborated against the OCR engine reads; 4 contested token(s): q1 ‹AAWSA› (line 61), q6 ‹Equation› (line 605), q7 ‹assumed› (line 771), q9 ‹http› (line 933) — sibling kept against the engines; page-image-verify each at audit; on PaddleOCR-filled page(s): q9 (p.29), q10 (p.29) — single-engine text; page-image-verify at audit; sibling sha256:44ca962e7d9a'
 document_intrinsic:
   internal_title: An Introduction to the Statistical Drake Equation
   internal_date: '2010-03-11'

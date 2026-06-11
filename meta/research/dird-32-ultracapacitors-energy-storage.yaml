@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-32-ultracapacitors-energy-storage-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 29 quote(s) corroborated against the OCR engine reads; 5 contested token(s): q15 ‹RuO₂› (line 587), q15 ‹cm³› (line 588), q15 ‹cm³› (line 589), q26 ‹f_GMC› (line 1033), q26 ‹10⁹› (line 1033) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:8cf9c824de6d'
 document_intrinsic:
   internal_title: 'Ultracapacitors as Energy and Power Storage Devices for Commercial and Military Applications'
   internal_date: '01 November 2010'

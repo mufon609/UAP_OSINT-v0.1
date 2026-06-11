@@ -6,6 +6,7 @@ primary_sources:
 - path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 11 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q8 ‹11› (line 175) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:437f66fcea45'
   pdf_metadata:
     title: CIA-RDP96-00787R000100220001-8.TIF
     creator: Adobe Acrobat 15.16

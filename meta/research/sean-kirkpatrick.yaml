@@ -22,6 +22,8 @@ primary_sources:
   format: pdf
 - path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 7 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:86b440bc56b4'
 - path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
   format: pdf
 - path: government/defense-gov-kirkpatrick-departure-20231120.html
@@ -98,8 +100,12 @@ primary_sources:
   format: html
 - path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:5674ba388bad'
 - path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 1 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:18271da4341d'
 - path: government/war-gov-jicspoc-establishment-20150911.html
   format: html
 - path: news/spacenews-jicspoc-nsdc-rename-20170404.html

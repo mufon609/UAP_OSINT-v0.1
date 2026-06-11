@@ -99,7 +99,7 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 
 ### Storage conclusion — positronium lifetimes of 10 µs have been achieved and the paper concludes that, with stabilization in crossed fields settled, very long lifetimes are a matter of engineering
 
-> Lifetimes of 10 µs have been achieved, and tens-of-millisecond lifetimes are expected in the next round of experiments. Present limits are due to interactions with the walls of the trap container. Application of oscillating gradient electric fields to the huge electric dipole moment of the stable Ps atom should mitigate this problem. With the issue of stabilization in crossed fields now settled, very long lifetimes are but a matter of engineering!
+> Lifetimes of 10 µs have been achieved, and tens-of-millisecond lifetimes are expected in the next round of experiments. Present limits are due to interactions on the walls of the trap container. Application of oscillating gradient electric fields to the huge electric dipole moment of the stable Ps atom should mitigate this problem. With the issue of stabilization in crossed fields now settled, very long lifetimes are but a matter of engineering!
 
 | Field | Value |
 |---|---|

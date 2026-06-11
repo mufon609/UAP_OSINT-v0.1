@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-29-negative-mass-propulsion-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 9 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:69343109fb0d'
 document_intrinsic:
   internal_title: 'Negative Mass Propulsion'
   internal_date: '2011-01-03'

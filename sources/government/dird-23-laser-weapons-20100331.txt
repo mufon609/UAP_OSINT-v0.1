@@ -244,8 +244,8 @@ effect (similar to a blowtorch).  The strength of an HEL weapon is its ability t
 deliver a limited quantity of energy to a small spot with little collateral damage to
 nearby objects or people.  The instantaneous measure of a focused laser beam's
 effectiveness is called "irradiance" and is measured in power per unit area over the
-laser spot (typically watts/cm2).  The beam's ability to inflict damage, by heating during
-a time interval, is called "fluence" and is typically measured in joules/cm2.  Fluence is
+laser spot (typically watts/cm²).  The beam's ability to inflict damage, by heating during
+a time interval, is called "fluence" and is typically measured in joules/cm².  Fluence is
 simply irradiance × time and one joule is equal to one watt for one second.
 
 Speed-of-light energy transfer, coupled with precision tracking, allows HEL weapons to

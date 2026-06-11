@@ -939,7 +939,7 @@ Statistics. In loose terms, the CLT states that the sum of any number of indepen
 which may be ARBITRARILY distributed, approaches a Gaussian (i.e. normal) random variable. This is called
 the Lyapunov Form of the CLT. or the Lindeberg Form of the CLT. depending on the mathematical constraints
 assumed on the third moments of the various probability distributions. In conclusion, we show that:
-I) The new random variable N, yielding the number of communicating civilizations in the Galaxy, follows the
+1) The new random variable N, yielding the number of communicating civilizations in the Galaxy, follows the
 LOGNORMAL distribution. Then, as a consequence. the mean value of this lognormal distribution is the
 ordinary N in the Drake equation. The standard deviation, mode, and all the moments of this lognormal N
 are found also.

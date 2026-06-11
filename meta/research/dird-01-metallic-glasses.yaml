@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-01-metallic-glasses-20091214.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 26 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q3 ‹Bldg› (line 49), q13 ‹1› (line 458), q21 ‹20› (line 350) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:f0e7db39ad1a'
 document_intrinsic:
   internal_title: 'Metallic Glasses: Status and Prospects for Aerospace Applications'
   internal_date: '2009-12-14'

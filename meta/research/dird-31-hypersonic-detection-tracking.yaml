@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-31-hypersonic-detection-tracking-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 27 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q1 ‹Bldg› (line 57), q1 ‹6000› (line 57), q23 ‹199931› (line 952) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:7540c8c8f488'
 document_intrinsic:
   internal_title: 'Detection and High Resolution Tracking of Vehicles at Hypersonic Velocities'
   internal_date: '2010-11-20'

@@ -171,7 +171,7 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ### Scope limitation — the report largely provides details based on the author's own IEC work over the last decade, and will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology
 
-> One other limitation of this report is that it largely provides details based on the author's work on IECs over the last decade. Thus it will not do justice to the ongoing work by others, notably at EMC² on the Bussard Polywell device or the advanced gridded IEC neutron/proton source development work at the U of Wisconsin, Kyoto University, and Tokyo Institute of Technology.
+> One other limitation of this report is that it largely provides details based on the author's work on IECs over the last decade. Thus it will not do justice to the ongoing work by others, notably at EMC² on the Bussard Polywell device or the advanced gridded IEC neuron/proton source development work at the U of Wisconsin, Kyoto University, and Tokyo Institute of Technology.
 
 | Field | Value |
 |---|---|
@@ -385,9 +385,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### MCSA concept — the Magnetically-Channeled Spherical IEC Array maintains the basic ion-injected spherical IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products
+### MCSA concept — the Magnetically-Channeled Spherical IEC Array maintains the basic ion-injected IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products
 
-> The Magnetically-Channeled Spherical IEC Array (MCSA) concept for a hybrid magnetic assisted spherical IEC configuration maintains the basic ion-injected spherical IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products.
+> The Magnetically-Channeled Spherical IEC Array (MCSA) concept for a hybrid magnetic assisted spherical IEC configuration maintains the basic ion-injected IEC reactor configuration but adds magnetic channels for coupling exhaust plasma and reaction products.
 
 | Field | Value |
 |---|---|
@@ -693,6 +693,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Tokomak | Tokamak | government/dird-09-iec-fusion-20100310.pdf |
 | Hirsh | Hirsch | government/dird-09-iec-fusion-20100310.pdf |
 | shown if Figure 2.1 | shown in Figure 2.1 | government/dird-09-iec-fusion-20100310.pdf |
+| neuron | neutron | government/dird-09-iec-fusion-20100310.pdf |
 
 ---
 

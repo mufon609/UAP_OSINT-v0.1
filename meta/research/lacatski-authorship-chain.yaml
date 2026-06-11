@@ -12,6 +12,8 @@ pattern_statement: 'Three-source attestation chain (SD004 page-1 statement with 
 primary_sources:
 - path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 7 contested token(s): q1 ‹CLEARED› (line 54), q1 ‹For› (line 55), q1 ‹Open› (line 55), q1 ‹Publication› (line 55), q1 ‹Sep› (line 56), q1 ‹06› (line 56), q1 ‹2023› (line 56) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:7826fa73b6bb'
 - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   format: pdf
 

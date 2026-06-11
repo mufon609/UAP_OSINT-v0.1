@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 50 quote(s) corroborated against the OCR engine reads; 5 contested token(s): q1 ‹redacted› (line 10), q1 ‹black› (line 10), q1 ‹box› (line 10), q3 ‹AAWSA› (line 53), q41 ‹SiO2› (line 422) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:750bf319df0f'
 document_intrinsic:
   internal_title: Materials for Advanced Aerospace Platforms
   internal_date: '2010-01-12'

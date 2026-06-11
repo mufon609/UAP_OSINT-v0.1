@@ -6,6 +6,7 @@ primary_sources:
   - path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
     format: pdf
     content_block: 'None'
+    quote_corroboration: '2026-06-11: 34 quote(s) corroborated against the OCR engine reads; 30 contested token(s): q3 ‹10› (line 60), q11 ‹v_warp› (line 429), q11 ‹M_ship› (line 432), q11 ‹10⁶› (line 432), q11 ‹v_warp› (line 432), q12 ‹is› (line 444), q16 ‹cm²› (line 622), q16 ‹μm› (line 622), q18 ‹of› (line 824), q18 ‹Λ_eff› (line 824), q18 ‹8π› (line 824), q18 ‹M› (line 824), q18 ‹²_Pl› (line 824), q18 ‹a⁴› (line 824), q18 ‹cm› (line 826), q19 ‹2kr_c› (line 885), q23 ‹energy¹⁶› (line 1040), q27 ‹10⁸› (line 1353), q27 ‹m³› (line 1354), q29 ‹10¹⁵› (line 1397), q29 ‹10²⁷› (line 1397), q29 ‹m³› (line 1397), q29 ‹10¹⁶› (line 1398), q29 ‹m³› (line 1398), q29 ‹used› (line 1399), q29 ‹v_warp› (line 1402), q31 ‹M_D› (line 1472), q31 ‹from› (line 1474), q31 ‹M_C› (line 1476), q31 ‹M_C› (line 1477) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:cef008bdd790'
 document_intrinsic:
   internal_title: Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions
   internal_date: '2010-04-02'

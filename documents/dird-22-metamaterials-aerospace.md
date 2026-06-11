@@ -330,7 +330,7 @@ On circuits and waveguide miniaturization, the speed of light sets a size limit 
 
 ### Introduces the super-lens as one of the earliest metamaterial applications and its purpose — recovering sub-diffraction (sub-wavelength) information that would otherwise be lost.
 
-> The super-lens is one of the earliest applications of metamaterials (Reference 21), and its principle is shown in Figure 5. Without the super-lens, all information about sub-diffraction (or sub-wavelengths, which is equivalent) features of the periodic object would have been lost.
+> The super-lens is one of the earliest applications of metamaterials (Reference 21), and its principle is shown is Figure 5. Without the super-lens, all information about sub-diffraction (or sub-wavelengths, which is equivalent) features of the periodic object would have been lost.
 
 | Field | Value |
 |---|---|
@@ -650,6 +650,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | [REDACTED: (b)(6)] | [author identity withheld under FOIA exemption (b)(6); extrinsic attribution per the DIA AAWSAP products list is Dr. G. Shvets / University of Texas–Austin] | government/dird-22-metamaterials-aerospace-20100406.pdf |
 | [REDACTED: (b)(3):10 USC 424] | [DIA component withheld under (b)(3), 10 USC 424] | government/dird-22-metamaterials-aerospace-20100406.pdf |
 | if course | of course | government/dird-22-metamaterials-aerospace-20100406.pdf |
+| shown is Figure 5 | shown in Figure 5 | government/dird-22-metamaterials-aerospace-20100406.pdf |
 
 ---
 

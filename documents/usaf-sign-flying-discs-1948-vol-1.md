@@ -186,7 +186,7 @@ Other pages concern German tailless aircraft, relating the Horten brothers to th
 
 ### Notes that flying-disc reports came predominantly from civilian sources, a recurring early-USAF characterization of the sighting population.
 
-> It is doubtful if fighter aircraft would be able to follow up reports emanating, for the most part, from civilian sources.
+> It is doubtful if fighter aircraft would be able to follow up reports emnating, for the most part, from civilian sources.
 
 | Field | Value |
 |---|---|
@@ -205,6 +205,16 @@ Other pages concern German tailless aircraft, relating the Horten brothers to th
 | Attributed to | USAF "Flying Discs" correspondence file (Project SIGN), General 1948 Vol. 1 — war.gov UFO/PURSUE release_1 #18_6369445 |
 | Source | [archived source](../sources/government/18_6369445_general_1948_vol_1.pdf) |
 | Location | Letter, Headquarters Eleventh Air Force to Chief of Staff USAF, subj: Report of "Flying Discs", ¶1 |
+
+---
+
+## Source-Form Notes
+
+Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
+
+| Source Form | Canonical | Source |
+|---|---|---|
+| emnating | emanating | government/18_6369445_general_1948_vol_1.pdf |
 
 ---
 

@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-26-field-effects-human-biological-tissues-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 21 quote(s) corroborated against the OCR engine reads; 14 contested token(s): q4 ‹box› (line 40), q4 ‹remainder› (line 40), q4 ‹of› (line 40), q4 ‹box› (line 40), q4 ‹redacted› (line 40), q4 ‹box› (line 45), q4 ‹author› (line 45), q4 ‹name› (line 45), q4 ‹redacted› (line 45), q9 ‹cm²› (line 151), q15 ‹kJ› (line 598), q15 ‹and› (line 599), q15 ‹16mJ› (line 600), q18 ‹cm²› (line 718) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:cf6ac7a54147'
 document_intrinsic:
   internal_title: Anomalous Acute and Subacute Field Effects on Human Biological Tissues
   internal_date: '2010-03-11'

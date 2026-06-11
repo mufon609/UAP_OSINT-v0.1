@@ -9,6 +9,7 @@ primary_sources:
   format: transcript
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
+  content_block: 'None'
 - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   format: pdf
 - path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md

@@ -13,6 +13,8 @@ primary_sources:
   format: html
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:33dbe5da2e5b'
 
 document_intrinsic:
   full_name: Uri Geller

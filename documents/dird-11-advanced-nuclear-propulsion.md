@@ -63,11 +63,11 @@ Two concepts are of great importance for the envisioned deuterium fusion-driven 
 
 ### Feasibility claim that the required pressures for forming the conjectured superexplosives are reachable with existing technology, enumerating the proposed routes — preserves the bracketed [equation] placeholder and the OCR "e" bullet artifacts verbatim.
 
-> A pressure of [equation] can be reached with existing technology in sufficiently large volumes, with at least three possibilities:
+> A pressure of p ≈ 100 megabars (Mb) = 10¹⁴ dyn/cm² can be reached with existing technology in sufficiently large volumes, with at least three possibilities:
 >
-> e Bombardment of a solid target with an intense relativistic electron or ion beam.
+> • Bombardment of a solid target with an intense relativistic electron or ion beam.
 >
-> e Hypervelocity impact.
+> • Hypervelocity impact.
 
 | Field | Value |
 |---|---|
@@ -205,7 +205,7 @@ Two concepts are of great importance for the envisioned deuterium fusion-driven 
 
 ### The quantitative energy-balance case for deuterium — 62 percent into (magnetically deflectable) charged fusion products vs. 38 percent into neutrons — the central feasibility metric distinguishing the DD concept from DT.
 
-> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He3 and T reaction products from D-D fusion. Taking these reactions into account, one obtains from 6 deuterium nuclei an energy of 26.8 megaelectronvolts (MeV) in charged fusion products, made up of He3 and H, and an energy of 16.55 MeV in neutrons. This means 62 percent of the energy is released into charged fusion products and 38 percent into neutrons—a substantial improvement over the DT reaction, in which only 20 percent of the energy goes into He⁴.
+> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He³ and T reaction products from D-D fusion. Taking these reactions into account, one obtains from 6 deuterium nuclei an energy of 26.8 megaelectronvolts (MeV) in charged fusion products, made up of He³ and H, and an energy of 16.55 MeV in neutrons. This means 62 percent of the energy is released into charged fusion products and 38 percent into neutrons—a substantial improvement over the DT reaction, in which only 20 percent of the energy goes into He⁴.
 
 | Field | Value |
 |---|---|
@@ -217,7 +217,7 @@ Two concepts are of great importance for the envisioned deuterium fusion-driven 
 
 ### The propulsion thesis stated plainly — deuterium is framed as the preferred and abundantly available nuclear rocket fuel
 
-> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He3 and T reaction products from D-D fusion.
+> To appreciate the importance of deuterium as the preferred and abundantly available nuclear rocket fuel, one must consider the secondary reactions with D of the He³ and T reaction products from D-D fusion.
 
 | Field | Value |
 |---|---|

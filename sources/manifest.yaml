@@ -169,6 +169,15 @@
     archived_date: '2026-05-15'
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     note: '''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL), Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 30 April 1993 (29 pages). CIA Reading Room document CIA-RDP96-00789R002800180001-2 (Approved For Release 2000/08/08); mirrored via Internet Archive (URL embedded in PDF metadata Keywords field). DIA internal program-overview briefing of STAR GATE — the umbrella designation for the remote-viewing investigation that ran at SRI International (Menlo Park, CA) from 1970 to 1990 and at Princeton University. Attests: ''1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA'' program window; CIA initiation followed by DIA continuation of funding; the SRI program discontinued in 1990; eleven years of work ''headed by Dr. H. Puthoff.'' Primary-source attestation of the formal Stargate program designation and the SRI funding chain (CIA → DIA). Attests the CIA/DIA-funded SRI psychic-abilities investigation (Stargate Project, 1972-1995). OCR-scan PDF (Internet Archive''s pymupdf + mupdf rendering of typewritten 1993 CIA scans); visible spacing/character artifacts on headings and tables consistent with typewriter-scan OCR.'
+- url: https://archive.org/details/cia-readingroom-document-cia-rdp96-00789r002800180001-2#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.txt
+    archived_date: '2026-06-11'
+    note: Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned STAR GATE overview briefing document. Produced 2026-06-11; zero pages content-blocked. Zero HIGH-SIGNAL consensus divergences; engine-silent regions (release-line stamp overprints, dark briefing-slide reproductions pp.16-17,19, rotated figure pages) image-verified at the weak-skim. SG1A/SG1G redaction markers + exemption sheets preserved verbatim; figure/chart interiors bracketed with legible titles/labels/captions transcribed; source typos preserved (e.g. 'Miamonides', 'Urquardt', 'do not effect results').
+  archive_status: 1
 - url: https://archive.org/download/army_ttsa_crada/ARMY_text.pdf
   status: archived
   archive_status: 1
@@ -1415,6 +1424,15 @@
     archived_date: '2026-04-22'
     path: government/blackvault-grusch-dopsr-23-F-0946.pdf
     note: DOPSR pre-publication review request materials, Grusch written testimony (FOIA 23-F-0946); esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. Producer chain OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan per BACKLOG A2 discipline (Tier 5a survey 2026-05-13 surfaced the OCR producer; prior manifest entry omitted extraction_type, defaulting to text-native). Extraction verified clean 2026-05-13 via visual VLM page reads on pp. 4-8, 12-16 — pdftotext output is faithful across cover letter, Grusch DOPSR-submission emails, DD Form 1910, DOPSR Action sheets, and the cleared Speaker/Author Summary cover; no character-level OCR corruption surfaced. Both cited quotes (david-grusch q154 on PDF p. 5, q155 on PDF p. 16) verified verbatim against rendered pages. No `.txt` sibling produced — this is the documented "OCR producer with clean extract" exception case per `meta/schema.yaml` extraction_type — ocr-scan (validator's extract_source_text falls back to pdftotext, which is substantively meaningful here). Future contributors adding quotes from this PDF should visually verify against the rendered source page since OCR artifacts can surface on previously-unread regions.
+- url: https://documents2.theblackvault.com/documents/osd/23-F-0946.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/blackvault-grusch-dopsr-23-F-0946.txt
+    archived_date: '2026-06-11'
+    note: Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned Black Vault FOIA 23-F-0946 release (Grusch DOPSR clearance records, 18 pp.). Produced 2026-06-11; zero pages content-blocked. Zero HIGH-SIGNAL consensus divergences; engine-silent regions (CLEARED stamp overprints on the Q&A pages, digital-signature micro-text, DD-1910/SD-403 form fields) image-verified at the weak-skim. (b)(6) redaction markers + CLEARED For Open Publication stamps preserved verbatim; source typos preserved (e.g. doubled opening quote p.9, 'Grusch. David C' p.12).
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/osd/23-F-1114.pdf
   status: archived
   archive_status: 3

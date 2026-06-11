@@ -6,6 +6,7 @@ primary_sources:
 - path: government/fas-org-aatip-list-20210808.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 6 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q2 ‹Energy› (line 61) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:f8303909efca'
 document_intrinsic:
   internal_title: (U) List of Attachments
   internal_date: '2018-01-09'

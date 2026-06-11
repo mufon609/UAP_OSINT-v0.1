@@ -6,6 +6,7 @@ primary_sources:
 - path: government/18_6369445_general_1948_vol_1.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 14 quote(s) corroborated against the OCR engine reads; 42 contested token(s): q1 ‹Inclosed› (line 196), q1 ‹herewith› (line 196), q1 ‹Royal› (line 196), q1 ‹Aircraft› (line 197), q1 ‹Establishment› (line 197), q1 ‹tailless› (line 198), q1 ‹aircraft› (line 198), q2 ‹recent› (line 229), q2 ‹report› (line 229), q2 ‹the› (line 229), q2 ‹USSR› (line 229), q2 ‹dated› (line 230), q2 ‹1947› (line 230), q2 ‹1800› (line 230), q2 ‹aircraft› (line 230), q2 ‹directly› (line 230), q2 ‹indirectly› (line 230), q2 ‹Horten› (line 231), q2 ‹VIII› (line 231), q2 ‹design› (line 231), q2 ‹pusher› (line 231), q2 ‹spread› (line 231), q2 ‹131› (line 232), q2 ‹feet› (line 232), q2 ‹and› (line 232), q2 ‹approximately› (line 232), q2 ‹thousand› (line 232), q2 ‹built› (line 233), q5 ‹phenomena› (line 541), q5 ‹atmosphere› (line 542), q6 ‹government› (line 489), q6 ‹the› (line 546), q6 ‹government› (line 547), q6 ‹information› (line 547), q6 ‹mena› (line 548), q7 ‹been› (line 555), q11 ‹McCoy› (line 731), q11 ‹maintained› (line 732), q12 ‹Force› (line 743), q14 ‹Brown› (line 56), q14 ‹Investigation› (line 56), q14 ‹Ohio› (line 57) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:1ed03c65450f'
 document_intrinsic:
   internal_title: 'Report of "Flying Discs" / Flying Discs (Project SIGN correspondence file)'
   internal_date: '1947-09-24/1948-06-15'
@@ -167,7 +168,7 @@ quotes:
   added_date: '2026-06-08'
   text: |-
     It is doubtful if fighter aircraft would be able to
-    follow up reports emanating, for the most part, from civilian sources.
+    follow up reports emnating, for the most part, from civilian sources.
   source:
     path: government/18_6369445_general_1948_vol_1.pdf
     location: 'Letter, AFOIR-CO-5 to CG Air Materiel Command, subj: Flying Discs, 17 Mar 1948, ¶2c'
@@ -186,7 +187,14 @@ quotes:
     location: 'Letter, Headquarters Eleventh Air Force to Chief of Staff USAF, subj: Report of "Flying Discs", ¶1'
   significance: Shows the FBI-to-Air-Force reporting channel for flying-disc sightings and the Eleventh Air Force's decision not to investigate the Hobson, Ohio sighting.
   statement_date: '1948-06-15'
-naming_quirks: []
+naming_quirks:
+- id: nq1
+  added_date: '2026-06-11'
+  observed: 'emnating'
+  canonical: 'emanating'
+  location: '17 March 1948 McDonald letter, final paragraph'
+  source_path: government/18_6369445_general_1948_vol_1.pdf
+  resolution: preserve-as-sic-in-quotes
 description: |-
   A file of Air Force correspondence on "Flying Discs," from 24 September 1947 to 15 June 1948, for Project "SIGN." Its Disposition Form, Routing and Record Sheet, letter, and CORRESPONDENCE REFERENCE FORM pages, the SECRET / CONFIDENTIAL / RESTRICTED security classification on each, the "000.9 Phenomena" file stamp, and the "DECLASSIFIED / Authority: NND 760191" stamp are set out below.
 

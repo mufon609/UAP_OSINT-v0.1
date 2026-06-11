@@ -1,0 +1,863 @@
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+
+
+STAR GATE PROJECT:  AN OVERVIEW
+
+SHORT TITLE:  DTI-S-1056-SL
+
+
+Date of Publication
+30 April 1993
+
+This document was prepared by the
+Directorate for Scientific and Technical Intelligence,
+Defense Intelligence Agency.
+
+
+
+
+
+
+
+
+
+REPRODUCTION REQUIRES
+APPROVAL OF ORIGINATOR
+OR HIGHER DOD AUTHORITY
+
+FURTHER DISSEMINATION
+ONLY AS DIRECTED BY DT
+OR HIGHER DOD AUTHORITY
+
+WARNING NOTICE-INTELLIGENCE
+SOURCES OR METHODS INVOLVED
+
+
+
+CLASSIFIED BY:  DIA/DT
+DECLASSIFY ON:  OADR
+
+
+
+
+
+
+
+
+NOT RELEASABLE TO FOREIGN NATIONALS
+SECRET
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+(U)  PREFACE:
+
+     (U)  This document provides a broad overview of the three
+main activity areas, (foreign assessment, external research, in-
+house investigations) of the STAR GATE program.  It is intended
+to provide background for the upcoming briefing on 5 May 1993 to
+the DEPSECDEF.
+
+     (S/NF/SG/LIMDIS)  Primary focus of the STAR GATE effort is
+on anomalous phenomena, to include parapsychological and related
+biophysical interactions (e.g., telepathy, remote viewing,
+psychokinesis).  Historical material and current activity updates
+are included, with back-up details in the appendix.  This
+material supplements the briefing charts and related documents
+that are also supplied for background.
+
+     (U)  A discussion of terms and definitions useful for review
+of this area is in Appendix A.
+
+
+i
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+UNCLASSIFIED
+
+
+CONTENTS
+
+PAGE
+
+PREFACE  i
+
+I  RECENT DIA DIRECTION  1
+
+II  BRIEF HISTORY OF PHENOMENOLOGICAL RESEARCH  2
+
+III  APPLICATION INVESTIGATIONS  10
+
+IV  FOREIGN ASSESSMENTS  14
+
+
+
+
+APPENDIX
+
+A. TERMINOLOGY  A-1
+
+B. SCIENCE PANEL REPORT  B-1
+
+SG1G [redacted line]
+
+
+ii
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+UNCLASSIFIED
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+
+UNCLASSIFIED
+
+
+LIST OF FIGURES
+
+
+No.  TITLE  PAGE
+
+1.  KEY U.S. RESEARCH EFFORTS  3
+
+2.  CLOSE LOCATION - REAL TIME BEACONING  5
+
+3.  CLOSE-IN SHIELDED VIEWING  6
+
+4.  LONG DISTANCE-RETROCOGNITIVE  7
+
+5.  LONG DISTANCE-PRECOGNITIVE  8
+
+6.  RECENT REVIEWS  9
+
+7.  PROJECTS WORKED (1986-1989)  12
+
+8.  OVERALL DATA CORRELATIONS  13
+
+9.  SPECIAL COUNTERNARCOTICS TEST-1990  15
+
+SG1A [redacted block]
+
+
+iii
+
+UNCLASSIFIED
+
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+STAR GATE PROJECT:  AN OVERVIEW
+
+
+I.  (U)  RECENT DIA DIRECTION
+
+     (S/NF/SG/LIMDIS)  In the FY 1991 Defense Authorization Act,
+the Defense Intelligence Agency (DIA) was identified as executive
+agent for initiating a new program to investigate
+parapsychological/ anomalous phenomena.  A funding level of $2
+million was authorized for DIA to undertake specific research and
+other activities relative to this activity.  Objectives of this
+authorization were to enable a systematic and scientifically
+sound approach to the R&D effort, to permit wider and more
+systematic review of potential intelligence applications, and to
+assess foreign developments in this area.
+
+     (S/NF/SG/LIMDIS)  Consequently, DIA developed a
+scientifically rigorous research and investigative program.
+Basic and applied research projects were initiated with the
+objectives of phenomena understanding and improving application
+capabilities for potential operational areas.  Collection
+requirements were levied and foreign data bases were compiled in
+order to assess and better understand foreign achievements and
+their potential impact on U.S. security interests.  Limited
+applied research projects were also conducted.  This activity was
+formally established as a limited dissemination (LIMDIS) project
+early-on and given the official project name, STAR GATE.
+
+     (S/NF/SG/LIMDIS)  A variety of project reports were
+subsequently published that documented key STAR GATE activities,
+foreign assessments, research plans and protocols, proficiency
+testing procedures and other methodological needs.  A
+Congressionally requested Long-Range Comprehensive Plan was
+prepared.  This report identified near- and long-term activities
+for optimizing research and application investigation in this
+phenomenological area.
+
+     (S/NF)  A plan for external assistance was also developed and
+an external contract for basic and applied research in this area
+was negotiated with the Systems Applications International
+Corporation (SAIC).
+
+     (S/NF/SG/LIMDIS)  The FY 1992 Defense Appropriations Act
+provided DIA with an additional $2 million in R&D research funds
+to further enhance Project STAR GATE research and other
+activities.  The Act stressed that DIA develop an even balance
+with foreign assessment, research, and operational activities.
+Foreign assessments should emphasize Russia, China, and other
+country efforts, and operational activity should identify
+specific users, to include special operational areas.
+
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+
+     (S/NF)  The FY 1992 Act called for an effort to identify
+possible foreign weaponization activity in this area.  This is a
+new requirement that is receiving high priority, and is
+approached from the viewpoint of unconventional or non-lethal
+weapons technology.
+
+     (S/NF)  The FY 1992 Act directed DIA to realign 10 civilian
+billets so that project staffing could be continued in order to
+satisfy all project objectives.  It also called for a 2-year
+architecture plan that was subsequently prepared.
+
+II. (U) BRIEF HISTORY OF PHENOMENOLOGICAL RESEARCH
+
+     (U)  In the mid-late 1800's, investigations into anomalous
+mental phenomena were initiated by a very limited number of
+researches working essentially independent of one another in
+various countries.  The early investigators were motivated to
+examine this area due to evidence suggested by a wide variety of
+anecdotal accounts of spontaneous occurrences.  Many of these
+early investigations focused on case study collection and
+analysis; some were aimed at phenomena demonstration under
+controlled conditions and were based on the psychological
+perspectives of that time-period.  Formal research efforts were
+initiated by leading physicists, and investigation societies were
+established in 1892 (London) and 1896 (New York).
+
+     (U)  Figure 1 lists the major U.S. research efforts on this
+topic and their time-frame of activity.  The most well know early
+U.S. researcher was Dr. J.B. Rhine at Duke University, Durham,
+N.C.; he explored proof-of-principle of extra-sensory perception
+(ESP) by use of simple experimental targets (5 symbols) and well-
+established statistical methods.  His work led to considerable
+publicity and to a general acceptance that laboratory experiments
+had in fact reasonably demonstrated the existence of "telepathy,
+clairvoyance, and psychokinesis".  His laboratory eventually
+moved to a private foundation (Foundation for Research on the
+Nature of Man (FRNM)), in Durham, N.C.
+
+     (U)  In the 1960's, new U.S. work began in New York, N.Y.,
+and San Antonio, TX that examined psychological variables and
+psychological states; this new work incorporated a wide variety
+of target material in the experimental set-up.  Emphasis was on a
+"free-response" (not forced choice card guessing) approach that
+examined how well a subject could draw concealed pictorial
+material.  Various psychological conditions (altered states),
+such as deep relaxation or sleep, were explored and methodologies
+for evaluating results were developed.  A different statistical
+approach was required, since the target possibilities were no
+longer from a small fixed set that could be easily evaluated.
+
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+
+
+
+KEY US RESEARCH EFFORTS
+
+
+1930-1960     -- DUKE UNIV, DURHAM, NC
+1950-PRESENT  -- PARAPSYCHOLOGY FOUNDATION, NY, NY
+1960-PRESENT  -- FRNM, DURHAM, NC
+1960-PRESENT  -- MIND SCIENCE FOUNDATION,
+                 SAN ANTONIO, TX
+1970-1980     -- MAIMONIDES MEDICAL CENTER, NY, NY
+1970-1990     -- SRI INTERNATIONAL, MENLO PARK, CA
+1980-1990     -- PSYCHOPHYSICAL RESEARCH LAB,
+                 PRINCETON, NJ
+1980-PRESENT  -- ANOMALIES RESEARCH LAB,
+                 PRINCETON UNIV, PRINCETON, NJ
+
+OTHERS:
+  SEVERAL UNIVERSITY RESEARCHERS
+  PRIVATE FOUNDATIONS
+
+
+
+3
+
+FIGURE 1
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+
+     (U)  Results from these efforts were publicized and led to a
+greater awareness of some of the psychological factors that are
+conducive to enhancing parapsychological effects.  The most
+productive research team (Miamonides Medical Center) eventually
+moved to the Princeton, N.J. area and formed the Psychophysical
+Research Laboratory.  New work also began in an academic setting
+when Dr. Robert Jahn, Dean of the Aerospace Science Department,
+established a small parapsychological team at Princeton
+University, N.J.  His effort continues to this day and explores
+psychokinesis, precognition, and remote viewing.
+
+     (U)  However, none of the early research examined application
+potential of this area, and very little of it examined distance
+effects of the phenomena.
+
+     (U)  Some of the early parapsychological effort (i.e., remote
+viewing) at SRI International and at Princeton University did,
+however, examine the potential for describing geographic targets
+at various distances.  Figure 2 and Figure 3  are San Francisco
+Bay area targets that showed a remote viewer could produce
+reasonable overall description of features at near-by geographic
+locations.  Some experiments showed that a remote viewer could
+also describe the interior contents of target facilities.  These
+descriptions were usually reliable when only shape/form
+correlations and not analysis/interpretations were considered.
+Figure 4 and Figure 5 are examples of Dr. Jahn's remote viewing
+investigations where long distance (thousand of miles) and time
+factors (prediction, past event description) were explored.
+
+     (U)  Research findings in this area are sometimes not readily
+accepted, regardless of adequacy of experimental controls or
+integrity of the investigators.  Consequently, a variety of views
+can be found concerning the same data.  Some of these have had a
+retarding effect of the field and on funding.  Part of the
+controversy lies in the difficulty of agreement between "proof-
+of-principle" and "reasonable demonstration" demands.  A listing
+of recent publications that illustrate various perspectives on
+this research is shown on Figure 6.
+
+     (U)  The Behavioral and Brain Sciences (1987) publication
+presented a balanced view of the research; some of the articles
+presented reasonable cases for "anomaly demonstration".  A
+National Research Council (NRC) report in 1988, however, took a
+negative stance in general, even though it reviewed a very
+limited aspect of the field.  Recent publications (Statistical
+Science (1991) and Psychological Bulletin (1993)) provide good
+evidence that paranormal/parapsychological effects have in fact
+been demonstrated and are replicable.
+
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+CLOSE LOCATION - REAL TIME BEACONING
+VIEWER'S DESCRIPTION
+
+[Figure: drawing of stacked rectangular framework with chevron shapes above]
+
+[Figure: drawing of a low domed circular structure on a gridded ground plane with an arrow at right]
+
+"SOME KIND OF DIAGONAL TROUGH
+UP IN THE AIR"
+
+"BUILDING IS AN AEREATOR"
+
+[Figure: photograph of an arched tunnel interior]
+
+WALKWAY
+
+[Figure: photograph of a facility structure]
+
+SYLVANIA FACILITY
+
+5
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+CLOSE-IN SHIELDED
+VIEWING
+
+[Figure: photograph of a large circular accelerator facility interior]
+
+BERKELEY BEVATRON
+
+[Figure: hand-drawn sketch of curved crosshatched arcs with a spiral at lower left]
+
+VIEWERS DESCRIPTION
+
+"THIS IS AN ENERGY EXPANDER. IT HUMS.
+IT'S SOME VERY STRONG ELECTRICAL ENERGY
+GOING AROUND THERE. . . .PURE ENERGY
+CIRCULATING."
+
+21PU6718.50JP
+
+6
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 3
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+LONG DISTANCE - RETROCOGNITIVE (14 HRS)
+VIEWER'S DESCRIPTION
+
+" . . ROCKS . . . UNEVEN HOLES . . ., ON
+MOUNTAIN OVER WATER . . . .A LIGHTHOUSE? . . .
+TALL STRUCTURE WITH CONICAL ROOF . . .
+SIMILAR TO A CASTLE . . . MUSTY . . .
+HIGH LARGE CAVERNOUS HALL . . .
+. . A CASTLE."
+
+TARGET PHOTO
+
+[Figure: photograph of a castle ruin on a hill over water]
+
+URQUARDT CASTLE,
+LOCH NESS,
+SCOTLAND
+
+21PS6718.49JP
+
+7
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 4
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+LONG DISTANCE - PRECOGNITIVE (24 HRS)
+VIEWER'S DESCRIPTION
+
+" . . (BEACON) IS SOMEWHERE NEAR WATER . .
+. . MAY BE BOATS . . . SEVERAL VERTICAL LINES,
+LIKE NARROW POLES . . . A LARGE ROUND THING,
+LIKE A DISC . . . WITH HEIGHT . . . BUILDINGS ON
+ONE SIDE . . . LIKE A BOARDWALK . . . VERTICAL
+LINES ALONG THE WALKWAY
+
+TARGET PHOTO
+
+[Figure: photograph of a bridge over a river with a tall pylon topped by a disc-shaped structure]
+
+DANUBE RIVER AREA,
+BRATISLAVA,
+CZECHOSLOVAKIA
+
+19PS6718.48JP
+
+8
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 5
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+RECENT REVIEWS
+
+* "THE ANOMALY CALLED PSI: RECENT RESEARCH
+  AND CRITICISM"; BEHAVIORAL AND BRAIN
+  SCIENCES, NOVEMBER 1987
+
+* "ENHANCING HUMAN PERFORMANCE", NATIONAL
+  RESEARCH COUNCIL; 1988
+
+* "REPLICATION AND META-ANALYSIS IN
+  PARAPSYCHOLOGY"; STATISTICAL SCIENCE;
+  VOL 6, No. 4; 1991
+
+* "DOES PSI EXIST? REPLICABLE EVIDENCE
+  FOR AN ANOMALOUS PROCESS OF INFORMATION
+  TRANSFER"; PSYCHOLOGY BULLETIN (PENDING)
+
+9
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 6
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+     (S/NF)  Several important basic and application-related
+findings resulted from the later SRI investigations.  These were:
+(1) distance/shielding do not effect results; (2) some people
+have an innate capability to perform well; (3) goal orientation
+is more important then psychological factors/states or the nature
+of the target; and (4) a potential correlation between remote
+viewing capability and certain brain area activity may exist.
+These findings were based on research procedures and techniques
+that received critical review by an expert nine-person Scientific
+Oversight Committee.  The research approach and procedures were
+judged scientifically sound.  Some of the procedural problems
+associated with early work in this field had been resolved and
+corrected.
+
+     (U)  Appendix B contains specific comments from a research
+panel that reviewed some of this work in the 1983-1984 time-
+frame.  This Science Panel review led to later research efforts
+that included a variety of basic and applied research objectives.
+
+     (S/NF)  The effort at SRI was discontinued in 1990.  However,
+as a result of Congressional direction in FY 1991 for DIA, new
+research in this area was established with the Systems
+Applications International Corporation (SAIC), in Menlo Park, CA.
+
+III. (U)  APPLICATION INVESTIGATIONS
+
+SG1A
+
+[Redacted block]
+
+     (S/NF)  In the early 1970's, U.S. researchers at SRI-
+International, Menlo Park, CA, also initiated research into
+phenomena understanding and application pursuits.  This work,
+centering on "remote viewing (RV)" came to the attention of the
+CIA.  CIA then provided funding to SRI for continuing RV
+research.  Then funding was discontinued in 1975; subsequent
+funding for RV investigation at SRI was provided by DIA and some
+of DIA's service support elements with occasional support from
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+10
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+various R&D organizations. DIA's interest in funding this area
+was primarily from a threat assessment point-of-view in order to
+help understand the Soviet work.
+
+     (S/NF/SG/LIMDIS)  The successful long distance SRI remote
+viewing experiments from the 1970's generated interest in
+operational pursuits with in-house government personnel.  In the
+late 1970's, HQDA/INSCOM established a small unit for
+"development of a community capability' in RV.  This unit was
+transferred to DIA in 1986 when 12 billets were authorized in the
+GDIP budget for this activity.  A Special Access Program (SAP),
+SUN STREAK, was established in order to protect identity of the
+individuals and due to the nature of some of the projects
+examined.
+
+     (S/NF/SG/LIMDIS)  A variety of potential operational projects
+were investigated over the next few years; in 1989 the Military
+Intelligence Board (MIB) agreed to examine the utility of the
+project under field conditions involving counternarcotics
+projects.  The MIB reviewed results of this test period in
+September, 1990.  Subsequently, STAR GATE was established to
+expand on earlier efforts and to permit systematic and
+scientifically sound investigations to continue.  All STAR GATE
+activities are conducted in accordance with appropriate
+scientific procedures and methodologies.
+
+     (S/NF/SG/LIMDIS)  Over-all, STAR GATE activity is based on
+both a concurrent research and application philosophy.  It is
+recognized that formal scientific proof of this phenomena may yet
+be available, even though "anomaly demonstration" may be granted
+in some academic areas.  Although formal scientific acceptance
+could be helpful, the history of application investigations in
+this field demonstrates that at least some level of application
+reliability can be achieved for some types of projects.  The
+issue is how to improve overall data quality/reliability so that
+wider use can be made of this potential capability.
+
+     (S/NF/SG/LIMDIS)  In addition to recent research reviews
+(Figure 6), formal reviews of operational potential or activity
+have also been conducted.  One review examined a four-year
+investigation period and was summarized in a briefing given to
+the Military Intelligence Board (MIB) in 1989. Overall findings
+are shown as Figure 7 and Figure 8.  Key points from this review
+were:
+
+     -  Potential applications exist for certain projects types:
+        --  Counternarcotics (CN)
+        --  Counterterrorism (CT)
+        --  Counterintelligence (CI)
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+11
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+[Figure 7: Briefing slide "PROJECTS WORKED 1986-1989" — TOTAL PROJECTS = 192. Bar chart of PROJECTS (y-axis, 0-70) by PROJECT TYPE (x-axis: S/T, CT, CN, CI, DOC CONTENTS, PRED.), with legend: KNOWN, PARTIALLY KNOWN, NOT KNOWN. Slide markings: SECRET (struck through, upper right), SECRET NOFORN (struck through, lower left), SP5353.04. CIA seal at upper left. Marginal page number "12".]
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 7
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+[Figure 8: Briefing slide "OVERALL DATA CORRELATIONS" — bar chart of PERCENT OF DATA CORRELATION (y-axis, 0-80) by PROJECT TYPE (x-axis: S/T, CT, CN, CI, DOC. CONTENTS, PRED.), with legend: LARGE SCALE (TEST FACILITY, AIRFIELD), SMALL SCALE (LASER TEST, ANTENNA DISH). Slide markings: SECRET (struck through, upper right), SECRET NOFORN (struck through, lower left), SP5353.02. CIA seal at upper left. Marginal page number "13".]
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 8
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+     -  Limited potential exists for detailed data:
+        -- S/T parameters
+        -- Precise locations
+
+     -  Low potential exists for predictive tasks
+
+     -  Individuals' performance:
+        -- Correlates with project tasks
+        -- Can improve with high demands/needs and strong goal
+           orientation.
+
+     (S/NF/SG/LIMDIS)  Another review occurred in 1990.  This
+followed from an earlier MIB recommendation that operational
+investigations focus on counternarcotics projects.  Figure 9
+shows results of this effort.  Overall, about one third of all
+projects were judged to have provided data of good quality.  This
+was based on evaluation of 32 projects.  Although 104 projects
+were conducted, weather/operational constraints prevented follow-
+up for ground truth on the majority of those projects.
+
+IV.  (U) FOREIGN ASSESSMENTS
+
+     A.  (U)  INTRODUCTION
+
+          (S/NF)  The FY 1991 Defense Authorization Act identified
+DIA as executive agent of a new program for examining
+parapsychological phenomena.  As part of this program, DIA was
+directed to develop an integrated foreign data base on               SG1A
+parapsychological activities [redacted]
+SG1A [large redacted block covering the remainder of the page text]
+
+SECRET/NOFORN/WNINTEL/LIMDIS
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+14
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+[Figure 9: Briefing slide "SPECIAL U.S. ARMY COUNTERNARCOTICS TEST-1990" — SECRET marking upper right, CIA seal upper left. Bullet text: ON-SITE SUPPORT TO JOINT TASK FORCE (JTF); 395 TOTAL SESSIONS; 104 OPERATIONAL PROJECTS; 72 NOT EVALUATED (WEATHER, TIMING, OTHER); 32 EVALUATED. Pie chart of 32 EVALUATED PROJECTS with segments labeled SOME CORRELATION (10), NO CORRELATION (11), STRONG CORRELATION (11). Slide markings: SECRET NOFORN LIMDIS (lower left), S6718.11RVG. Marginal page number "15".]
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+FIGURE 9
+SG1A
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+Next 10 Page(s) In Document Exempt
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+A P P E N D I X
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+UNCLASSIFIED
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+APPENDIX A
+
+TERMINOLOGY
+
+     (U)  The investigations described in this report involve a
+class of human capabilities generally referred to as
+parapsychological or paranormal phenomena.  There are two general
+types, informational and energetic.
+
+     (U)  Informational aspects include the ability to describe
+remote or concealed data without the use of known sensory
+systems.  This aspect is generally referred to as remote viewing
+(RV) or extrasensory perception (ESP).  Another term, anomalous
+cognition (AC), is also currently used by researchers in this
+field.  The ability to predict future events is usually referred
+to as precognition.
+
+     (U)  The energetic aspect refers to the mental ability to
+influence material or biological systems via unknown mechanisms.
+This aspect is sometimes referred to as psychokinesis (PK).
+
+     (U)  Soviet researchers generally use the term
+"psychoenergetics" to identify this research area.  Chinese
+researchers prefer the terms "extraordinary human body functions"
+or "somatic science" for similar functions.
+
+     (U)  A variety of other terms have, and probably will, be
+used to describe specific aspects of the basic phenomena.
+
+A-1
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+UNCLASSIFIED
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+SECRET
+
+APPENDIX B
+
+SCIENCE PANEL REPORT
+
+SRI STUDIES IN REMOTE VIEWING:
+A PROGRAM REVIEW
+
+1 MARCH 1984
+
+B-1
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+WARNING NOTICE — SENSITIVE INTELLIGENCE
+SOURCES AND METHODS INVOLVED
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+SRI STUDIES IN REMOTE VIEWING:  A PROGRAM REVIEW
+
+     For the past eleven years, a small group headed by Dr. H. Puthoff has
+sought evidence that would support the case for extrasensory perception.  In
+recent years, the focus of these studies has centered on "remote viewing" by
+subjects claiming to visualize the scene at a point beyond the field of vision,
+and in many cases, in a remote part of the world, typically not known to them
+by actual experience.  The implication of success in remote viewing, if it
+exists, are revolutionary; since as described to the review team, it is mani-
+festly incompatible with currently accepted scientific principles.  Remote view-
+ing of future events--"precognition"--evidently violates causality; real time
+remote viewing clearly requires a transmission mechanism other than any known
+process:  electromagnetic, gravitational, etc.
+
+     The lack of a physical model should not be taken to preclude the existence
+of the capability to view a remote location.  However, this circumstance has
+thus far limited application of the classic methods of scientific investiga-
+tion to less cogent issues, such as controls for inadvertent cueing, statistical
+evaluation of the incidence of positive findings, estimation of false-positive
+and false-negative responses, and in particular, the design of experiments that
+would limit as far as possible intrusion of extraneous factors relating to
+personal interaction and observer biases.
+
+     The evidence shown to us is too impressive to dismiss as mere coincidence.
+Certain similarities between the SRI and Princeton results, obtained in very
+different circumstances by unrelated investigators, are particularly compelling.
+The Princeton work is somewhat more quantitative than that at SRI and leads to
+an estimate by Dr. R. Jahn that the phenomena he has observed could be
+B-2
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+WARNING NOTICE - INTELLIGENCE
+SOURCES AND METHODS INVOLVED
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+explained by a transfer of information above noise at a level of about one bit
+per thousand.  This of course raises the question of how much information is
+required to construct the impressions gained by remote viewing, a question
+which the investigators cannot presently answer.  Therefore, the review team
+feels that remote viewing is either real or due to some sort of experimental
+interference from one or some of the participants; something one might describe
+as "inadvertent cueing."  Although, on the basis of our brief exposure to the
+SRI program, we found no obvious evidence of cueing or collusion between the
+viewer and the experiment monitors.
+
+     The briefings strongly emphasized the investigator's ability to train
+others in their techniques.  This training program has developed over the past
+five years through the dedicated participation of Mr. Ingo Swann.  His diverse
+talents have been devoted to self-training which he now feels competent to
+impart to others.  Approximately a dozen trainees have completed instruction to
+various levels of claimed competence.  An important aspect of Swann's contribu-
+tions relates to his dissection of separate elements in the perceptual process.
+Under his guidance, the technique centers around the use of a coordinate method
+to describe the remote location, expressed in degrees of latitude and longitude.
+It is here that any attempt at a rational understanding of the perceptual
+process is lost.  Since the significance of the coordinates so expressed is
+unknown to the viewer in most instances, it is impossible to understand why
+such a method should be translated in the viewing process into a precise delin-
+eation of geographic characteristics of the target site.  The arbitrariness of
+this approach has not escaped the investigators, but repeated attempts to
+
+B-3
+SECRET
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+elicit a rational basis for this procedure, or to secure definitive informa-
+tion about possible success or failures with other methods that they may have
+tried, were uniformly unsuccessful.  The investigators' attitude was that since
+they had found the coordinate method to work, they were not disposed to query
+the mechanistic basis of its applications, nor to seek an appraisal of other
+potentially successful methods.
+
+     Mr. Swann has distinguished three phases in his subjective interpretation
+of his viewing capabilities.  The initial percept appears very rapidly with a
+latency stated to be as short as 1/50 of a second.  Thereafter, for a period
+that may persist for several minutes, increasing detail may be added.  There-
+after, and only after as much material has been added to the initial percept as
+possible, is the subject encouraged to examine his subjective image in a crit-
+ical way, or to make syntheses or judgments about the significance of the
+perceived material.  Swann pointed out that intrusion of a judgmental or inter-
+pretive attitude too early in the building of the percept was generally
+destructive, and to be discouraged in the course of training others.
+
+     A considerable variety of material was presented with photographic backup
+in support of the validity of the perceptual method.  Much of this was highly
+impressive.  The data showed the effects of training on the success rate,
+which typically reached a sustained plateau at a level higher than prior to
+training, both for groups of subjects as well as for individual trainees.
+
+     What then may be anticipated if the program is continued?  In the absence
+of a physical model for the perceptual process, no predictions are possible
+about higher success rates in larger groups of viewers concentrating on the
+same target, nor about the effect on success rates to be expected if the
+
+B-4
+SECRET
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SECRET
+
+technique were extended to those with special intellectual abilities or
+professional backgrounds.
+
+     Exploration of the phenomenon should not be restricted to specific
+applications.  Rather, remote viewing should be studied as a scientific
+research program aimed at establishing the existence or non-existence of the
+phenomenon.  In this way, a comprehensive and credible evaluation of the
+phenomenon should be available from continuing effort over the next five
+to ten years.  The potential impact of this phenomenon is clearly profound.
+Therefore, a mandatory requirement would be the existence of independent but
+related programs conducted by others, with the free exchange of techniques
+and results.  Only through independent reproducibility can a phenomenon so
+unconventional ever become accepted.
+
+     It is our conclusion that Dr. Puthoff's team warrants cautious continued
+fiscal support, and that the research should be conducted as much as possible
+in an open unclassified mode so that its reproducibility and accuracy can be
+independently verified by others.
+
+                                        W. ROSS ADEY  [signature]
+
+                                        DONALD M. KERR  [signature]
+
+                                        F. ZACHARIASEN  [signature]
+                                        1 March 1984
+
+B-5
+SECRET
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+SOURCES AND METHODS INVOLVED
+SG1G
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+Next 2 Page(s) In Document Exempt
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2
+
+SECRET
+
+SECRET/NOFORN/LIMDIS/WNINTEL
+STAR GATE
+
+Approved For Release 2000/08/08 : CIA-RDP96-00789R002800180001-2

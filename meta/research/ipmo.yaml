@@ -22,6 +22,8 @@ primary_sources:
   format: pdf
 - path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:16bda7077059'
 - path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
   format: pdf
 - path: news/nsi-speaker-series-ipmo-holly-20250401.html

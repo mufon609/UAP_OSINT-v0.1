@@ -22,14 +22,22 @@ primary_sources:
   format: pdf
 - path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:c626b3e5bf73'
 - path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   format: pdf
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 4 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q18 ‹result› (line 11) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:33dbe5da2e5b'
 - path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 3 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q21 ‹S› (line 28) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:4d407461f834'
 - path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 1 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:437f66fcea45'
 
 document_intrinsic:
   full_name: 'Russell Targ'

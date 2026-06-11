@@ -6,6 +6,7 @@ primary_sources:
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 12 quote(s) corroborated against the OCR engine reads; 4 contested token(s): q4 ‹result› (line 11), q5 ‹refrigerator› (line 13), q6 ‹experimenters› (line 29), q8 ‹experimenters› (line 51) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:33dbe5da2e5b'
   pdf_metadata:
     title: CIA-RDP79-00999A000300030027-0.TIF
     creator: Adobe Acrobat 15.16

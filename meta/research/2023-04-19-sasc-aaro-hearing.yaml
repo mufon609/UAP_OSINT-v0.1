@@ -17,6 +17,8 @@ description: 'Subcommittee on Emerging Threats and Capabilities of the Senate Co
 primary_sources:
 - path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-11: 12 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:86b440bc56b4'
 - path: government/armed-services-senate-gov-sasc-aaro-event-20230419.html
   format: html
 - path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf

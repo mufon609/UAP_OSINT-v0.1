@@ -799,7 +799,7 @@ UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
 UNCLASSIFIED//FOR OFFICIAL USE ONLY
 
-New developments in stabilizing and storing positronium atoms in a matrix of dilute materials are encouraging. Lifetimes of 10 µs have been achieved, and tens-of-millisecond lifetimes are expected in the next round of experiments. Present limits are due to interactions with the walls of the trap container. Application of oscillating gradient electric fields to the huge electric dipole moment of the stable Ps atom should mitigate this problem. With the issue of stabilization in crossed fields now settled, very long lifetimes are but a matter of engineering!
+New developments in stabilizing and storing positronium atoms in a matrix of dilute materials are encouraging. Lifetimes of 10 µs have been achieved, and tens-of-millisecond lifetimes are expected in the next round of experiments. Present limits are due to interactions on the walls of the trap container. Application of oscillating gradient electric fields to the huge electric dipole moment of the stable Ps atom should mitigate this problem. With the issue of stabilization in crossed fields now settled, very long lifetimes are but a matter of engineering!
 
 
 ¹ P. A. M. Dirac, Proc. Roy. Soc. A .126, 360 (1930).

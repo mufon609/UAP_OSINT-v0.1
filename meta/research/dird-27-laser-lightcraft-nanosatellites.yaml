@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 13 quote(s) corroborated against the OCR engine reads; 3 contested token(s): q1 ‹b› (line 57), q12 ‹CO₂› (line 2762), q13 ‹50LR› (line 2778) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:efd84e539b3c'
 document_intrinsic:
   internal_title: Laser Lightcraft Nanosatellites
   internal_date: '2010-11-01'

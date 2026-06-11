@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-19-antigravity-aerospace-20100330.pdf
   format: pdf
   content_block: 'Pages 10 and 30 were content-blocked for the VLM; PaddleOCR-filled.'
+  quote_corroboration: '2026-06-11: 35 quote(s) corroborated against the OCR engine reads; 11 contested token(s): q10 ‹10› (line 319), q10 ‹11› (line 319), q10 ‹10› (line 320), q10 ‹18› (line 320), q10 ‹3› (line 320), q18 ‹v_crit› (line 528), q18 ‹3› (line 528), q18 ‹1› (line 528), q18 ‹v_crit› (line 528), q21 ‹δr› (line 768), q27 ‹FCGexp› (line 1234) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:d83bb43ccbae'
 document_intrinsic:
   internal_title: Antigravity for Aerospace Applications
   internal_date: '2010-03-30'
