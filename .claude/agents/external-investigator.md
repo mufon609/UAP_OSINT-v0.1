@@ -19,8 +19,9 @@ from the fetched body) + its location anchor for every queued source. A bare
 "I read it" boolean is not accepted — a queued source with no `confirming_span`
 is rejected (build-protocol → the non-negotiable invariant).
 
-Input: `gaps[]` + `linked_nodes` from the internal-investigator stub (plus
-optional Claude-Web leads — candidates only, never decisions).
+Input: `gaps[]` + `linked_nodes` from the internal-investigator stub (or the
+orchestrator directly, in an `/augment` run; plus optional Claude-Web leads —
+candidates only, never decisions).
 
 1. For each gap, find candidate primary sources; fetch and **read** each.
    **Never conclude a source is unreachable from a WebFetch failure alone** —

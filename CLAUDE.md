@@ -236,6 +236,7 @@ scratch files (the `/build` worker role; build-protocol source-read-first).
 A typical build session touches the toolkit in this order:
 `scripts/build/extract-source.py` (primary sources → scratch plaintext)
 → `new.py` + `research-scaffold.py` (scaffold node + artifact, once) →
+`merge-fragments.py` (worker fragments → artifact, byte-exact) →
 `build-from-research.py` (render the node body from the artifact) →
 `validate.py` / `validate-research.py` / `review-coverage.py` (gate each
 phase) → `associate.py` (regenerate Associated Nodes) →

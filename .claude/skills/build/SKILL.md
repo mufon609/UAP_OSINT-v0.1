@@ -159,7 +159,7 @@ framing. Field names are the stub fields from `build-protocol/stub-schemas.md`.
 | 2 external-investigator | `gaps[]`, `linked_nodes` (step-1 stub) | `queued_sources[]` (confirming_span-checked), `unfilled_gaps` |
 | 3 archive | `queued_sources[]` (step-2 stub) | `archived[]`, `primary_sources_registered` |
 | 5 worker (×N, parallel) | one `{source-path}`, its scratch path, `worker_kind`, `{slug}` | the slim stub (`fragment_path` + `counts`; the fragment file carries the payload) |
-| 6 builder | all worker `fragment_path`s; `linked_nodes`, `topic_relevance`, `reusable_sources` (step-1 stub) | `result`, `claim_groups`, `validator_findings` |
+| 6 builder | all worker `fragment_path`s; `linked_nodes`, `topic_relevance` (step-1 stub) | `result`, `routed`, `claim_groups`, `validator_findings` |
 | 7 auditor | the rendered node path `{type}/{slug}.md` | `health`, `validator_findings` |
 | 4b/4c sibling gate *(Skill, not Agent)* | the `{source-path}` (4b) / `{slug}` (4c) — nothing more | a registered, verified sibling |
 
@@ -236,7 +236,7 @@ invocation; the relay/contract split holds one level down too.
    file and returns a slim stub (`fragment_path` + `counts` — it does not
    write the artifact). Collect every fragment path.
 6. **`Agent(builder)`** — Pass per the table: all worker fragment paths, plus
-   `linked_nodes` + `topic_relevance` + `reusable_sources` from the step-1 stub.
+   `linked_nodes` + `topic_relevance` from the step-1 stub.
    `linked_nodes` is a required *input* — relay it; do not describe how it is
    used (the contract owns that). The builder merges the fragment files via
    `merge-fragments.py` (byte-exact mechanical transport), runs the

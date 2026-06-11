@@ -53,7 +53,8 @@ anything** (mirrors `/audit`). The shape is never chosen silently.
 - **Shape A — data-correctness fix** (re-date, correct a field, fix a relationship descriptor,
   remove an *unattested* string): **no role**. Edit the **artifact** (`meta/research/{slug}.yaml`)
   directly, exactly as `/audit` step 4 does. See §3 for what may and may not be removed.
-- **Shape B — quote from an already-archived source**: §4 OCR gate → `Agent(worker)` on that one
+- **Shape B — quote from an already-archived source**: §4 OCR gate → canonical scratch via
+  `extract-source.py --artifact meta/research/{slug}.yaml` → `Agent(worker)` on that one
   source (`worker_kind` per its format) → the worker writes its fragment file and returns the slim
   stub → merge it with `python3 scripts/build/merge-fragments.py --append meta/research/{slug}.yaml
   {fragment_path}` (`--append` is the maintenance mode: it allows the populated artifact and

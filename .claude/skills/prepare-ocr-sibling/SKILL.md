@@ -23,7 +23,7 @@ verbatim-quote gate. Its canonical text is a same-stem `.txt` **sibling** — an
 because future quotes and research derive from that sibling, it has to be
 accurate.
 
-**The process is four steps, two of them independent checks:**
+**The lifecycle is four stages, two of them independent checks:**
 
 1. **Transcribe** the page images to a `.txt` sibling (a VLM page-image read).
 2. **Confirm the sibling with a different tool** — PaddleOCR re-reads the pages
@@ -36,7 +36,7 @@ accurate.
 4. **Audit** — the auditor verifies the built node's quotes against the **source
    PDF page images**, not the sibling — the final, independent backstop.
    *(That check lives in `/audit`, not here.)* It is a backstop, **not** a
-   substitute for the page-image verification you do in step 2: do not defer the
+   substitute for the page-image verification you do in stage 2: do not defer the
    image check to the audit.
 
 Why two different tools? A single read can't be trusted on itself: the VLM

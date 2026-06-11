@@ -327,7 +327,7 @@ def check_speakers(data, rpt):
 
 
 def check_node_links(data, rpt):
-    """W4 — node_link is the authoritative identity join key.
+    """node_link is the authoritative identity join key.
 
     In a VERIFIED sibling every live speaker must carry a `/people/{slug}`
     node_link, OR be explicitly marked `no_repo_node: true` (an anonymous /
