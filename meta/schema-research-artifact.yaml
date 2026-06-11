@@ -512,7 +512,7 @@ primary_sources_entry:
   #   row on the document node (renderers/document.py). Present only on
   #   sibling-backed sources; text-native sources omit it. Presence is
   #   backstopped at the commit boundary by the ocr_sibling_presence check
-  #   (warn until the legacy backfill completes; see the BACKLOG entry).
+  #   (error — every quoted lossy PDF carries a sibling + stamp).
   #
   # quote_corroboration: the post-extraction quote-level corroboration record
   #   for a quoted sibling-backed (ocr-scan / extraction-lossy) PDF — every

@@ -122,13 +122,13 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of K. Green ([`/people/kit-green`]) at OSI as the earliest named CIA-side recipient of Puthoff's June 17, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green's OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973. Source carries OCR artifact "'1:7," for "17," — preserved as-source per OCR-scan source-form-preservation discipline; see naming_quirks nq14.
+### CIA primary-source attestation of K. Green ([`/people/kit-green`]) at OSI as the earliest named CIA-side recipient of Puthoff's June 27, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green's OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973.
 
-> H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
+> H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June 27, 1972.
 
 | Field | Value |
 |---|---|
-| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8. 1972-06-17 |
+| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8. 1972-06-27 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 7, footnote |
 
@@ -158,9 +158,9 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### Foundational CIA primary-source attestation that Targ and Puthoff (the two laser physicists) re-awakened CIA research in parapsychology — the institutional inception of the CIA-funded SRI investigation. Source carries OCR-scan artifacts (Adobe Acrobat Paper Capture Plug-in): "lasqr" for "laser"; "parapsv- chology" for "parapsychology" (PDF line-wrap rendering); "scientir'ic" for "scientific" — preserved as-source per OCR-scan discipline; see naming_quirks nq2-nq4.
+### Foundational CIA primary-source attestation that Targ and Puthoff (the two laser physicists) re-awakened CIA research in parapsychology — the institutional inception of the CIA-funded SRI investigation.
 
-> Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
+> Two laser physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsy- chology for most of his adult life. As an experimentalist, he was interested in scientific observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
 
 | Field | Value |
 |---|---|
@@ -170,9 +170,9 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of the April 1972 Targ-CIA OSI meeting and of Targ as having "recently joined the Stanford Research Institute (SRI)" as of that meeting — the earliest archived attestation of the CIA-SRI parapsychology engagement. Source carries OCR artifacts: "tum" for "turn"; "ORO" for "ORD" (recurring) — preserved as-source; see naming_quirks nq5, nq7.
+### CIA primary-source attestation of the April 1972 Targ-CIA OSI meeting and of Targ as having "recently joined the Stanford Research Institute (SRI)" as of that meeting — the earliest archived attestation of the CIA-SRI parapsychology engagement.
 
-> In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in tum, contacted personnel from the Office of Research and Development (ORO) and OTS. An ORO Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
+> In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in turn, contacted personnel from the Office of Research and Development (ORD) and OTS. An ORD Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
 
 | Field | Value |
 |---|---|
@@ -182,9 +182,9 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### CIA primary-source attestation of the first formal CIA contract at SRI: an August 1972 $874 OTS project-officer demonstration contract with Targ and Puthoff. Source carries OCR artifacts: "ORO" for "ORD"; "19i2" for "1972" — preserved as-source; see naming_quirks nq5, nq6.
+### CIA primary-source attestation of the first formal CIA contract at SRI: an August 1972 $874 OTS project-officer demonstration contract with Targ and Puthoff.
 
-> The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORO representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 19i2.
+> The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORD representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 1972.
 
 | Field | Value |
 |---|---|
@@ -202,19 +202,19 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 14, ¶1 |
+| Location | p. 14, final ¶ |
 
 ---
 
-### CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described in q14. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ's IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.
+### CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described in q14. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ's IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus.
 
-> Interest was translated into action when ORD requested an increase in the scope of the effort and transferred funds to OTS. S About this time. a third sensitive subject. Pat Price. became a~ailable at SRI. and the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest.
+> Interest was translated into action when ORD requested an increase in the scope of the effort and transferred funds to OTS. About this time, a third sensitive subject, Pat Price, became available at SRI, and the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest.
 
 | Field | Value |
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶1 |
+| Location | p. 8, ¶2 |
 
 ---
 
@@ -290,9 +290,9 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound previously referenced parenthetically in q12 significance to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 (q8) — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset. Source-form artifact: the Figure 1 row spans multiple visual columns in the source PDF; the default pdftotext extraction renders the row with "--SRI" (no space between dashes and SRI) and the verbatim form is preserved as-source per source-form-preservation discipline.
+### DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound previously referenced parenthetically in q12 significance to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 (q8) — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.
 
-> 1970-1990 --SRI INTERNATIONAL, MENLO PARK, CA
+> 1970-1990     -- SRI INTERNATIONAL, MENLO PARK, CA
 
 | Field | Value |
 |---|---|
@@ -690,19 +690,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| lasqr | laser | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| parapsv- chology | parapsychology | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| scientir'ic | scientific | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| ORO | ORD | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| 19i2 | 1972 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| tum | turn | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
 | SRI-International | SRI International | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
-| a~ailable | available | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
 | 1020 | 10^20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |
 | 10-20 | 10^-20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |
 | Systems Applications International Corporation | Science Applications International Corporation | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
-| --SRI | -- SRI | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
-| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
 | International Augmentation Research Center | Augmentation Research Center | government/solfoundation-vallee-people-page-20260517.html |
 
 ---

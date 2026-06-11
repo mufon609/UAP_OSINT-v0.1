@@ -56,7 +56,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
 | Location | p. 2, ¶ Section A Introduction |
 
-> In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in tum, contacted personnel from the Office of Research and Development (ORO) and OTS. An ORO Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
+> In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in turn, contacted personnel from the Office of Research and Development (ORD) and OTS. An ORD Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
 
 | Field | Value |
 |---|---|
@@ -64,7 +64,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 7, ¶2 |
 
-> The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORO representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 19i2.
+> The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORD representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 1972.
 
 | Field | Value |
 |---|---|
@@ -154,7 +154,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 
 ### SRI Psychic-Research Cofounder Role
 
-> Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
+> Two laser physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsy- chology for most of his adult life. As an experimentalist, he was interested in scientific observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
 
 | Field | Value |
 |---|---|
@@ -339,12 +339,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| lasqr | laser | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| parapsv- chology | parapsychology | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| scientir'ic | scientific | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| ORO | ORD | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| 19i2 | 1972 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| tum | turn | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| SRI-International | SRI International | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
+| Systems Applications International Corporation | Science Applications International Corporation | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |
 
 ---
 

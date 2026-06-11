@@ -26,22 +26,22 @@ Two findings, one invariant (a sibling-backed source is fully prepped):
 
 Scope: PDF sources only. ``content_block`` is a page-image concept
 (which pages the VLM read was content-filter-blocked on, schema
-``primary_sources_entry``); what a verified sibling even means for an
-``extraction-lossy`` HTML source is an open design question tracked in
-the BACKLOG, so non-PDF formats are out of scope here rather than
-half-checked.
+``primary_sources_entry``). No lossy-flagged non-PDF source exists in
+the manifest today; if one ever appears, decide its sibling story
+before extending this check rather than half-checking it.
 
 Phase: extract — sibling presence is a precondition of verbatim quote
 derivation. It fires once the artifact exists with its source set,
 after the ``/build`` 4b gate has had its chance to produce the sibling;
 the archive phase would fire at scaffold time, before 4b runs.
 
-Severity: warn, not error — artifacts built before the 4b gate existed
-quote sibling-less lossy sources, and a backfill via
-``/prepare-ocr-sibling`` is the only honest fix (see the BACKLOG
-backfill item). Promote to error once every quoted ocr-scan /
-extraction-lossy PDF carries a verified, stamped sibling; a missing
-sibling is definitionally a defect, so error is this check's end state.
+Severity: error — the documented end state, reached once the legacy
+backfill completed: every quoted ocr-scan / extraction-lossy PDF in the
+corpus carries a verified sibling and a stamped ``content_block``. A
+missing sibling or stamp is definitionally a defect (quotes deriving
+from a corrupt text layer, or production facts unrecorded), and the fix
+is mechanical (``/prepare-ocr-sibling``; ``verify --stamp-artifact``),
+so nothing legitimate is blocked.
 """
 
 from checks import Issue
@@ -71,15 +71,16 @@ def check(ctx):
         if artifact is None:
             continue  # unregistered path is primary_sources' finding
         if artifact.get("format") != "pdf":
-            continue  # content_block is a page-image concept; non-PDF lossy
-            # sources are a BACKLOG design question, not a half-check here
+            continue  # content_block is a page-image concept; no lossy
+            # non-PDF source exists today — decide its sibling story before
+            # extending this check
         if artifact.get("extraction_type") not in _LOSSY:
             continue
 
         sibling = (SOURCES_DIR / path).with_suffix(".txt")
         if not sibling.exists():
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: source {path!r} is "
                 f"extraction_type: {artifact.get('extraction_type')} with no "
                 f"verified .txt sibling on disk — quotes citing it derive "
@@ -89,7 +90,7 @@ def check(ctx):
             )
         elif "content_block" not in src:
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: source {path!r} has a verified "
                 f"sibling but the entry carries no content_block — the node "
                 f"renders without its Content Block row. Stamp it "

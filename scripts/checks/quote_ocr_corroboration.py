@@ -43,8 +43,8 @@ page-image read covers that. The stamp's contested/filled lists are
 that read's target list.
 
 Scope: PDF sources only, same boundary as ``ocr_sibling_presence``
-(``content_block`` / page-image concepts don't apply to lossy HTML —
-open BACKLOG design question). Fires only when the sibling exists
+(``content_block`` / page-image concepts don't apply to non-PDF
+formats; no lossy-flagged non-PDF source exists in the manifest today). Fires only when the sibling exists
 (``ocr_sibling_presence`` owns the missing-sibling finding) and at
 least one quote cites the source (an unquoted source owes nothing).
 
@@ -52,12 +52,13 @@ Phase: extract — corroboration is a property of the extracted quote
 set, so it fires once quotes exist, after the ``/build`` 4b gate and
 the worker have run.
 
-Severity: warn, not error — artifacts built before corroborate-quotes
-existed carry no stamp, and a backfill sweep is the only honest fix
-(see the BACKLOG backfill item). Promote to error once every quoted
-ocr-scan / extraction-lossy PDF carries a fresh stamp; an uncorroborated
-quoted span is definitionally unfinished prep, so error is this check's
-end state.
+Severity: error — the documented end state, reached once the legacy
+backfill completed: every quoted ocr-scan / extraction-lossy PDF in the
+corpus carries a fresh ``quote_corroboration`` stamp with its contested
+tokens page-image-settled. An uncorroborated quoted span is
+definitionally unfinished prep, and the fix is mechanical
+(``corroborate-quotes`` on the engine cache), so nothing legitimate is
+blocked.
 """
 
 import hashlib
@@ -116,7 +117,7 @@ def check(ctx):
         val = src.get("quote_corroboration")
         if not val or not isinstance(val, str):
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: {n_cited} quote(s) cite {path!r} "
                 f"(extraction_type: {artifact.get('extraction_type')}) but the "
                 f"entry carries no quote_corroboration — the quoted spans were "
@@ -132,7 +133,7 @@ def check(ctx):
         count_m = _COUNT_RE.search(val)
         if not sha_m or not count_m:
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: quote_corroboration on {path!r} lacks "
                 f"the canonical anchors (quote count / sha256) — only "
                 f"ocr-consensus.py corroborate-quotes writes this value; "
@@ -144,7 +145,7 @@ def check(ctx):
         actual_sha = hashlib.sha256(sibling.read_bytes()).hexdigest()
         if not actual_sha.startswith(recorded_sha):
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: the sibling for {path!r} was edited "
                 f"after its quotes were corroborated (sha256:{recorded_sha} "
                 f"recorded, sibling now {actual_sha[:12]}) — the stamped "
@@ -156,7 +157,7 @@ def check(ctx):
         recorded_count = int(count_m.group(1))
         if recorded_count != n_cited:
             yield Issue(
-                ctx.rel, "warn",
+                ctx.rel, "error",
                 f"primary_sources[{i}]: {n_cited} quote(s) now cite {path!r} "
                 f"but quote_corroboration recorded {recorded_count} — quotes "
                 f"were added or removed after corroboration. Re-run: "

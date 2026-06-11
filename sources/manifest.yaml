@@ -2988,6 +2988,15 @@
     archived_date: '2026-05-15'
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     note: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence (CIA in-house journal), 1977; Sanitized Copy Approved for Release 2011/06/23 (document ID CIA-RDP88G01116R000600690003-8). Named primary-source author Kenneth A. Kress, CIA Operations Officer in the Office of Technical Service (OTS), recounts CIA''s mid-1970s engagement with the SRI parapsychology program. Verbatim: ''Two laser physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology''; documents the April 1972 Targ-CIA OSI meeting; Targ having ''recently joined the Stanford Research Institute (SRI)''; the August 1972 OTS contract ($874) with Targ and Puthoff; the 9 November 1973 SRI experiment; the 12 December 1974 OTS SRI Experiment memo. Foundational primary-source attestation of the CIA funding chain for the Targ + Puthoff SRI psychic-abilities investigation (CIA / Stargate funding) by direct first-party CIA attestation. OCR-scan PDF (typewritten 1977 original scanned during CIA declassification): visible character-corruption examples include ''lasqr physicists'' (→ ''laser physicists''), ''Tug'' (→ ''Targ''), ''Pen:eptual'' (→ ''Perceptual''), ''ORO'' (→ ''ORD''), ''parapsv-chology'' (→ ''parapsychology''). Per the OCR-scan source-form discipline (naming_quirks preserve-as-sic; /prepare-ocr-sibling), quotes drawing on this source preserve source-form artifacts verbatim and register them as naming_quirks entries; a .txt sibling production may be warranted before heavy quote extraction.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP88G01116R000600690003-8.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.txt
+    archived_date: '2026-06-11'
+    note: 'Clean-text sibling of the OCR-scanned Kress ''Parapsychology in Intelligence'' (Studies in Intelligence 1977). Hybrid production per the /prepare-ocr-sibling method ladder: VLM page-image read for pages 1-5, 12, 17; pages 6-11 and 13-16 were content-filter-blocked for the VLM (the paper''s body prose trips the generative filter even single-page) and were PaddleOCR-filled, Tesseract-cross-checked, and token-level VLM-image-verified — 51 fill corrections applied (CIA/DCI/SRI glyph-case, 12 margin-noise tokens dropped, footnote text incl. the ''June 27, 1972'' Puthoff-to-Green letter date confirmed against the page image). Two residual engine divergences (Wilhelm vs shared ''Wilbelm'' misread) image-verified sibling-correct. Sanitization banners, SECRET/NOFORN blocks, 25X1 markers, and the Page Denied insert (p.17, ''Next 3 Page(s) In Document Denied'') preserved verbatim.'
+  archive_status: 1
 - url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100180001-3.pdf
   status: archived
   archive_status: 1
