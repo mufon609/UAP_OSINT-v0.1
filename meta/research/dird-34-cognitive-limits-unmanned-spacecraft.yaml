@@ -6,6 +6,7 @@ primary_sources:
 - path: government/dird-34-cognitive-limits-unmanned-spacecraft-2010.pdf
   format: pdf
   content_block: 'None'
+  quote_corroboration: '2026-06-11: 24 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q10 ‹transitioni› (line 525) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:851776fc8d8b'
 document_intrinsic:
   internal_title: Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft
   internal_date: '2010-12-15'

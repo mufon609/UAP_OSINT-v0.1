@@ -200,9 +200,21 @@ or replace it:
    `ocr-consensus.py verify {pdf} --stamp-artifact {yaml}` (seconds on the
    engine cache). Never hand-type the value; that's the field's whole point.
 
+6. **Corroborate already-extracted quotes — backfill case only.** If the
+   target's artifact *already carries quotes* citing this source (this skill ran
+   as a backfill on a built node, or the sibling was re-edited under existing
+   quotes), follow the `content_block` stamp with
+   `python3 scripts/tools/ocr-consensus.py corroborate-quotes {pdf} --artifact
+   meta/research/{slug}.yaml` — it re-checks just the quoted spans against the
+   engine reads and stamps `quote_corroboration` (the auditor's page-image
+   target list; the `quote_ocr_corroboration` check is its commit-boundary
+   backstop). On the normal `/build` path quotes don't exist yet — the
+   orchestrator runs this at build step 6b instead.
+
 The sibling is canonical once confirmed and registered; `extract-source.py` and
 the verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to
 extract the clean scratch and run the Worker. **The final independent check is at
 node audit:** `/audit` verifies the built node's quotes against the source PDF
 page images — not the sibling — so a sibling error that reached a quote is caught
-against the original. After that passes, the node and sibling are good to go.
+against the original; the `quote_corroboration` stamp enumerates the tokens that
+read must settle first. After that passes, the node and sibling are good to go.

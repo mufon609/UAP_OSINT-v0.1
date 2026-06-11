@@ -501,7 +501,7 @@ conditional_keys:
 # Primary-source list entries
 primary_sources_entry:
   required: [path, format]
-  optional: [pdf_metadata, content_block]
+  optional: [pdf_metadata, content_block, quote_corroboration]
   # path: relative to sources/, must appear in sources/manifest.yaml
   #
   # content_block: the blocked-pages indicator for a sibling-backed (ocr-scan /
@@ -513,6 +513,21 @@ primary_sources_entry:
   #   sibling-backed sources; text-native sources omit it. Presence is
   #   backstopped at the commit boundary by the ocr_sibling_presence check
   #   (warn until the legacy backfill completes; see the BACKLOG entry).
+  #
+  # quote_corroboration: the post-extraction quote-level corroboration record
+  #   for a quoted sibling-backed (ocr-scan / extraction-lossy) PDF — every
+  #   load-bearing token the artifact quotes from this source was checked
+  #   against the OCR engine reads, with the exceptions enumerated (contested
+  #   tokens the sibling holds against both engines; quotes on PaddleOCR-filled
+  #   pages) as the auditor's page-image target list. Stamped mechanically by
+  #   ocr-consensus.py corroborate-quotes (`format_quote_corroboration` is the
+  #   canonical form; never hand-composed or hand-pasted). Artifact-only
+  #   metadata — not rendered; the audit-facing record, not reader-facing
+  #   evidence. Carries the corroboration date, the quote count, and the
+  #   sibling's sha256 prefix; presence + freshness are backstopped at the
+  #   commit boundary by the quote_ocr_corroboration check (warn until the
+  #   legacy backfill completes; see the BACKLOG entry). Present only on
+  #   quoted sibling-backed sources; unquoted or text-native sources omit it.
 
 # --- Entry shapes per top-level list section ---
 

@@ -31,6 +31,16 @@ Audit goals:
    quote is only caught against the original. Correct or remove any quote that
    the page image doesn't bear out. (The sibling was confirmed against PaddleOCR
    at prep time per `/prepare-ocr-sibling`; this is the second, uncorrelated read.)
+   **Start from the entry's `quote_corroboration` stamp** — your machine-generated
+   target list: every token it enumerates (contested tokens the sibling holds
+   against both OCR engines; quotes on PaddleOCR-filled pages) is single-perception
+   text and **must** be settled against its page image, before any free
+   spot-checking. A stamp reading `0 contested` narrows your page-image work to
+   the one failure mode no engine count catches — a correlated misread shared by
+   the VLM and both engines — so still spot-check, but spend the depth on the
+   enumerated items. No stamp on a quoted sibling-backed source = the
+   `quote_ocr_corroboration` check is warning; flag it (fix:
+   `ocr-consensus.py corroborate-quotes {pdf} --artifact {yaml}`).
    Check the locator **form**, not just precision: a sibling-backed source's
    `location` is a descriptive content anchor, **not** `p. N` — do not "correct" it
    toward a physical-page integer (a markerless sibling has none to verify).

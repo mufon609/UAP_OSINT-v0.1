@@ -22,6 +22,17 @@ happens later, at node audit: an agent verifies the built node's quotes against
 the source page images — not the sibling. See the prepare-ocr-sibling skill
 (.claude/skills/prepare-ocr-sibling/SKILL.md).)
 
+After extraction, ``corroborate-quotes`` re-applies the same consensus rule to
+just the spans an artifact actually quotes from this source, and stamps the
+result (``quote_corroboration``) onto the artifact's ``primary_sources[]``
+entry — the durable, machine-written record that every load-bearing quoted
+token is engine-corroborated, enumerating the exceptions (tokens the sibling
+holds against both engines, and quotes on PaddleOCR-filled pages) the auditor
+must settle against the page images. The ``quote_ocr_corroboration`` check
+backstops the stamp's presence/freshness at the commit boundary; engines never
+run at commit time. What no layer can catch: a correlated misread shared by the
+VLM and both OCR engines — only the audit-phase page-image read covers that.
+
 PaddleOCR is the higher-trust OCR engine; Tesseract is an available second
 opinion (a token is corroborated if EITHER engine agrees with the sibling, so a
 divergence flags only when both disagree). On a fully content-blocked source the
@@ -46,6 +57,12 @@ Subcommands:
              regeneration) — the same load-bearing divergence report (and
              ``--blocked-pages`` check). Use when re-checking a sibling produced
              earlier.
+  corroborate-quotes
+             Check every artifact quote citing this PDF against the engine
+             reads (each load-bearing quote token must be corroborated by an
+             OCR engine; contested tokens and PaddleOCR-filled-page quotes are
+             enumerated as the audit target list) and stamp the canonical
+             ``quote_corroboration`` value onto the artifact entry.
   engines    Report which engines are available (diagnostic).
   --selftest Run the alignment/consensus logic on synthetic inputs (no OCR
              engines needed) — exercised by scripts/tests/.
@@ -81,6 +98,7 @@ if (
 
 import argparse
 import bisect
+import datetime
 import difflib
 import hashlib
 import json
@@ -791,6 +809,27 @@ def print_content_block(blocked, vlm_skipped):
     print(f"      content_block: '{val}'")
 
 
+def _locate_source_entry(lines, artifact, pdf_name, flag):
+    """(entry_start, entry_end) line bounds of the artifact's primary_sources[]
+    entry whose ``path:`` basename matches the PDF — shared by the surgical
+    stampers (``stamp_content_block`` / ``stamp_quote_corroboration``).
+    ``entry_end`` is one past the entry's last ``  field:`` line."""
+    entry_start = None
+    for i, ln in enumerate(lines):
+        m = re.match(r"^- path:\s*(\S+)\s*$", ln)
+        if m and Path(m.group(1)).name == pdf_name:
+            entry_start = i
+            break
+    if entry_start is None:
+        raise SystemExit(
+            f"{flag}: no primary_sources entry with path basename "
+            f"{pdf_name!r} in {artifact}")
+    entry_end = entry_start + 1
+    while entry_end < len(lines) and lines[entry_end].startswith("  "):
+        entry_end += 1
+    return entry_start, entry_end
+
+
 def stamp_content_block(artifact_path, pdf_name, val):
     """Write ``content_block: '<val>'`` onto the artifact's primary_sources[]
     entry whose ``path:`` basename matches the PDF — a surgical line edit (no
@@ -805,21 +844,8 @@ def stamp_content_block(artifact_path, pdf_name, val):
     if not artifact.exists():
         raise SystemExit(f"--stamp-artifact: artifact not found: {artifact}")
     lines = artifact.read_text(encoding="utf-8").splitlines(keepends=True)
-
-    entry_start = None
-    for i, ln in enumerate(lines):
-        m = re.match(r"^- path:\s*(\S+)\s*$", ln)
-        if m and Path(m.group(1)).name == pdf_name:
-            entry_start = i
-            break
-    if entry_start is None:
-        raise SystemExit(
-            f"--stamp-artifact: no primary_sources entry with path basename "
-            f"{pdf_name!r} in {artifact}")
-
-    entry_end = entry_start + 1          # one past the entry's last "  field:" line
-    while entry_end < len(lines) and lines[entry_end].startswith("  "):
-        entry_end += 1
+    entry_start, entry_end = _locate_source_entry(
+        lines, artifact, pdf_name, "--stamp-artifact")
 
     new_line = f"  content_block: '{val}'\n"
     for j in range(entry_start + 1, entry_end):
@@ -847,6 +873,137 @@ def stamp_content_block(artifact_path, pdf_name, val):
     lines.insert(insert_at, new_line)
     artifact.write_text("".join(lines), encoding="utf-8")
     print(f"  content_block stamped on {artifact}: '{val}'")
+
+
+# ---------------------------------------------------------------------------
+# Quote corroboration — the same consensus rule, scoped to the spans an
+# artifact actually quotes from this source. Sibling production confirms the
+# whole document once; this re-derives the verdict for exactly the text that
+# became quotes, and stamps it durably so the commit gate can verify the run
+# happened (and the auditor gets an enumerated target list instead of free
+# spot-checking).
+# ---------------------------------------------------------------------------
+def _find_token_runs(haystack, needle):
+    """Every start index where ``needle`` occurs as a contiguous run in
+    ``haystack`` (both lists of normalized tokens). All occurrences matter:
+    when a quote's text appears twice in the sibling, the artifact doesn't
+    record which occurrence it was drawn from, so a contested token in ANY
+    occurrence must flag (corroborating only the first would under-flag)."""
+    n, m = len(haystack), len(needle)
+    if m == 0 or m > n:
+        return []
+    first = needle[0]
+    return [k for k in range(n - m + 1)
+            if haystack[k] == first and haystack[k:k + m] == needle]
+
+
+def corroborate_quote_spans(sib_text, quote_items, divergences):
+    """Locate each quote's load-bearing token run in the sibling and intersect
+    it with the document's contested tokens.
+
+    ``quote_items`` is ``[(qid, quote_text), ...]``; ``divergences`` is
+    ``confirm_report``'s output (already load-bearing-filtered, ``token_index``
+    keyed into ``tokenize(sib_text)``). Matching is on the load-bearing tokens
+    only, normalized exactly as the consensus normalizes them — punctuation,
+    hyphenation and smart quotes can't break the match, mirroring how the
+    verbatim-quote check's ``normalize_for_compare`` already matched this
+    quote into this sibling.
+
+    Returns ``(per_quote, not_located)``. Each per-quote dict carries the
+    matched sibling token indices (all occurrences unioned), their char
+    starts (for page mapping), and the contested divergences that fall inside
+    the quote. A quote in ``not_located`` means the token-run search failed —
+    either the verbatim-quote check is not green for this artifact, or the
+    quote has no load-bearing tokens at all; corroboration cannot proceed."""
+    sib_tokens = tokenize(sib_text)
+    lb_idx, lb_norm = [], []
+    for i, (surf, cs, ce) in enumerate(sib_tokens):
+        if is_load_bearing(surf, sib_text, cs, ce):
+            lb_idx.append(i)
+            lb_norm.append(norm_token(surf))
+    div_by_tok = {d["token_index"]: d for d in divergences}
+    per_quote, not_located = [], []
+    for qid, text in quote_items:
+        q_lb = [norm_token(surf) for (surf, cs, ce) in tokenize(text)
+                if is_load_bearing(surf, text, cs, ce)]
+        runs = _find_token_runs(lb_norm, q_lb)
+        if not runs:
+            not_located.append(qid)
+            continue
+        token_indices = sorted({i for k in runs for i in lb_idx[k:k + len(q_lb)]})
+        per_quote.append({
+            "qid": qid,
+            "lb_token_count": len(q_lb),
+            "occurrences": len(runs),
+            "char_starts": [sib_tokens[i][1] for i in token_indices],
+            "contested": [div_by_tok[i] for i in token_indices if i in div_by_tok],
+        })
+    return per_quote, not_located
+
+
+def _blocked_pages_from_content_block(val):
+    """Recover the blocked page list from a stamped ``content_block`` value
+    (the recorded production fact — ``format_content_block`` is its only
+    writer, so this parse is the inverse of that canonical form)."""
+    m = re.match(r"^Pages? ([0-9, ]+) (?:was|were) content-blocked", val or "")
+    if not m:
+        return []
+    return sorted(int(p) for p in m.group(1).split(",") if p.strip())
+
+
+def format_quote_corroboration(date, n_quotes, contested_items, filled_items, sha12):
+    """The artifact's ``quote_corroboration`` value, generated from this run's
+    facts (never hand-narrated) — the canonical form every other surface
+    pastes verbatim. The ``quote_ocr_corroboration`` check parses the quote
+    count, the contested count, and the sibling hash back out of it, so those
+    three anchors are stable interfaces."""
+    parts = [f"{date}: {n_quotes} quote(s) corroborated against the OCR engine reads"]
+    if contested_items:
+        parts.append(f"{len(contested_items)} contested token(s): "
+                     + ", ".join(contested_items)
+                     + " — sibling kept against the engines; page-image-verify each at audit")
+    else:
+        parts.append("0 contested")
+    if filled_items:
+        parts.append("on PaddleOCR-filled page(s): " + ", ".join(filled_items)
+                     + " — single-engine text; page-image-verify at audit")
+    parts.append(f"sibling sha256:{sha12}")
+    return "; ".join(parts)
+
+
+def stamp_quote_corroboration(artifact_path, pdf_name, val):
+    """Write ``quote_corroboration: '<val>'`` onto the artifact's matching
+    primary_sources[] entry — the same surgical line edit as
+    ``stamp_content_block`` (no YAML reflow; the value never passes through a
+    hand-paste). Replaces an existing line, else inserts after the entry's
+    ``content_block`` line (the prep-time stamp this one builds on), falling
+    back to ``format:`` / ``path:``."""
+    artifact = Path(artifact_path)
+    if not artifact.exists():
+        raise SystemExit(f"corroborate-quotes: artifact not found: {artifact}")
+    lines = artifact.read_text(encoding="utf-8").splitlines(keepends=True)
+    entry_start, entry_end = _locate_source_entry(
+        lines, artifact, pdf_name, "corroborate-quotes")
+
+    new_line = f"  quote_corroboration: '{val}'\n"
+    for j in range(entry_start + 1, entry_end):
+        m = re.match(r"^  quote_corroboration:\s*'?(.*?)'?\s*$", lines[j])
+        if m:
+            if m.group(1) == val:
+                print(f"  quote_corroboration already stamped on {artifact} (unchanged)")
+                return
+            lines[j] = new_line
+            artifact.write_text("".join(lines), encoding="utf-8")
+            print(f"  quote_corroboration updated on {artifact}: {val!r}")
+            return
+
+    insert_at = entry_start + 1
+    for j in range(entry_start + 1, entry_end):
+        if re.match(r"^  (format|content_block):", lines[j]):
+            insert_at = j + 1   # last of format:/content_block: wins
+    lines.insert(insert_at, new_line)
+    artifact.write_text("".join(lines), encoding="utf-8")
+    print(f"  quote_corroboration stamped on {artifact}: '{val}'")
 
 
 def _resolve_pdf(arg):
@@ -1019,18 +1176,124 @@ def cmd_verify(args):
     tess_text, paddle_text, blocked_report, tess_starts = _ocr_pages(
         pdf, stem, args.dpi, blocked, use_cache=not args.no_cache)
     sib_text = sibling.read_text(encoding="utf-8")
-    divergences, _ = confirm_report(sib_text, tess_text, paddle_text, vlm_skipped=False)
+    vlm_skipped = bool(args.vlm_skipped)
+    divergences, _ = confirm_report(sib_text, tess_text, paddle_text,
+                                    vlm_skipped=vlm_skipped)
     page_starts = derive_page_starts(sib_text, tess_text, tess_starts)
     print_confirm_report(divergences, sibling, page_starts, derived=True)
     print_blocked_report(blocked_report)
-    # Re-emit the canonical value from the blocked-page facts. verify doesn't
-    # track --vlm-skipped (it re-checks, it doesn't produce), so a whole-doc
-    # OCR-only sibling takes its value from the original `run`; the common
-    # None / page-list cases derive correctly here.
-    print_content_block(blocked, vlm_skipped=False)
+    # The canonical value derives from this run's recorded production facts:
+    # --blocked-pages for the common partial-block case, --vlm-skipped for a
+    # whole-doc OCR-only sibling (verify cannot detect that itself — it
+    # re-checks, it doesn't produce — so the operator supplies the recorded
+    # fact, exactly as with --blocked-pages).
+    print_content_block(blocked, vlm_skipped)
     if args.stamp_artifact:
         stamp_content_block(args.stamp_artifact, pdf.name,
-                            format_content_block(blocked, vlm_skipped=False))
+                            format_content_block(blocked, vlm_skipped))
+
+
+def cmd_corroborate(args):
+    """Corroborate every artifact quote citing this PDF against the engine
+    reads, then stamp the canonical ``quote_corroboration`` value onto the
+    artifact's entry. The consensus rule is the sibling-production one, scoped
+    to quoted spans: a load-bearing quoted token passes when an OCR engine
+    corroborates the sibling's reading; the exceptions — contested tokens
+    (sibling against both engines) and quotes on PaddleOCR-filled pages
+    (single-engine text) — are enumerated for the auditor to settle against
+    the page images. Production facts (``vlm_skipped``, blocked pages) derive
+    from the entry's stamped ``content_block``, so the operator re-supplies
+    nothing. Refuses to stamp when any quote cannot be located in the sibling
+    (the verbatim-quote check must be green first)."""
+    pdf = _resolve_pdf(args.pdf)
+    stem = pdf.with_suffix("").name
+    sibling = pdf.with_suffix(".txt")
+    if not sibling.exists():
+        raise SystemExit(
+            f"no sibling to corroborate against: {sibling}\n"
+            f"  produce + confirm one first via /prepare-ocr-sibling")
+    artifact = Path(args.artifact)
+    if not artifact.exists():
+        raise SystemExit(f"corroborate-quotes: artifact not found: {artifact}")
+    import yaml  # noqa: PLC0415  (deferred, like the engine imports)
+    data = yaml.safe_load(artifact.read_text(encoding="utf-8")) or {}
+    sources = data.get("primary_sources") or []
+    entry = next((s for s in sources if isinstance(s, dict)
+                  and Path(s.get("path") or "").name == pdf.name), None)
+    if entry is None:
+        raise SystemExit(
+            f"corroborate-quotes: no primary_sources entry with path basename "
+            f"{pdf.name!r} in {artifact}")
+    content_block = entry.get("content_block")
+    if not content_block:
+        raise SystemExit(
+            f"corroborate-quotes: the entry carries no content_block — stamp the "
+            f"production facts first:\n"
+            f"  ocr-consensus.py verify {args.pdf} --stamp-artifact {artifact}")
+    vlm_skipped = content_block.startswith("All pages")
+    blocked = _blocked_pages_from_content_block(content_block)
+
+    quote_items = []
+    for i, q in enumerate(data.get("quotes") or []):
+        if not isinstance(q, dict) or not isinstance(q.get("text"), str):
+            continue
+        src = q.get("source")
+        path = src.get("path") if isinstance(src, dict) else None
+        if path and Path(path).name == pdf.name:
+            quote_items.append((q.get("id") or f"quotes[{i}]", q["text"]))
+    if not quote_items:
+        print(f"no quotes in {artifact} cite {pdf.name} — nothing to corroborate; "
+              f"no stamp written")
+        return
+
+    print(f"Corroborating {len(quote_items)} quote(s) citing {pdf.name} "
+          f"against the OCR engine reads ...")
+    tess_text, paddle_text, _, tess_starts = _ocr_pages(
+        pdf, stem, args.dpi, (), use_cache=not args.no_cache)
+    sib_text = sibling.read_text(encoding="utf-8")
+    divergences, _ = confirm_report(sib_text, tess_text, paddle_text,
+                                    vlm_skipped=vlm_skipped)
+    per_quote, not_located = corroborate_quote_spans(sib_text, quote_items, divergences)
+    page_starts = derive_page_starts(sib_text, tess_text, tess_starts)
+
+    contested_items, filled_items = [], []
+    for pq in per_quote:
+        occ = f" ({pq['occurrences']} occurrences, unioned)" if pq["occurrences"] > 1 else ""
+        on_blocked = sorted({p for cs in pq["char_starts"]
+                             for p in [_page_of_offset(page_starts, cs)]
+                             if p in blocked}) if blocked and page_starts else []
+        if not pq["contested"] and not on_blocked:
+            print(f"  ✓ {pq['qid']}: {pq['lb_token_count']} load-bearing token(s), "
+                  f"every one engine-corroborated{occ}")
+            continue
+        if pq["contested"]:
+            print(f"  ⚠ {pq['qid']}: {len(pq['contested'])} contested token(s) — the "
+                  f"sibling holds these against the engines; settle each against the "
+                  f"PAGE IMAGE{occ}:")
+            _print_divergence_rows(pq["contested"], sibling, page_starts, derived=True)
+            for c in pq["contested"]:
+                surf = c["candidates"]["vlm"] or c["candidates"]["tesseract"]
+                contested_items.append(f"{pq['qid']} ‹{surf}› (line {c['line']})")
+        if on_blocked:
+            pages = ", ".join(f"p.{p}" for p in on_blocked)
+            print(f"  ◍ {pq['qid']}: spans PaddleOCR-filled {pages} — the sibling "
+                  f"there IS the fill (single-engine text); page-image-verify at audit")
+            filled_items.append(f"{pq['qid']} ({pages})")
+    if not_located:
+        raise SystemExit(
+            f"corroborate-quotes: {len(not_located)} quote(s) could not be located "
+            f"in the sibling token stream: {', '.join(not_located)}\n"
+            f"  run the verbatim-quote check first (validate-research.py --phase "
+            f"extract {artifact}) — corroboration stamps nothing until every "
+            f"quote locates.")
+
+    sha12 = hashlib.sha256(sibling.read_bytes()).hexdigest()[:12]
+    val = format_quote_corroboration(
+        datetime.date.today().isoformat(), len(quote_items),
+        contested_items, filled_items, sha12)
+    print(f"\n  {len(quote_items)} quote(s): {len(contested_items)} contested "
+          f"token(s), {len(filled_items)} on PaddleOCR-filled pages.")
+    stamp_quote_corroboration(artifact, pdf.name, val)
 
 
 def cmd_engines(_args):
@@ -1160,6 +1423,80 @@ def cmd_selftest(_args):
     finally:
         art.unlink()
 
+    # Case 10: quote corroboration — locate each quote's load-bearing token run
+    # in the sibling, intersect with the document's contested tokens. A clean
+    # quote reports zero contested; a quote containing the document's contested
+    # token inherits exactly that divergence; punctuation/smart-quote drift
+    # between quote and sibling can't break the match; a repeated phrase unions
+    # all occurrences; an absent quote refuses to locate.
+    sib10 = ('Report alpha bravo, volume 82 by Klyshko and Shih. '
+             'The phrase delta echo recurs; delta echo closes it.')
+    tess10 = sib10.replace("82", "81")
+    paddle10 = sib10.replace("82", "81")
+    div10, _ = confirm_report(sib10, tess10, paddle10)
+    pq, nl = corroborate_quote_spans(
+        sib10,
+        [("q1", "alpha bravo"),                      # clean
+         ("q2", 'volume 82 by "Klyshko"'),           # contains the contested token
+         ("q3", "delta echo"),                       # two occurrences
+         ("q4", "never in the document")],           # must refuse to locate
+        div10)
+    by_id = {p["qid"]: p for p in pq}
+    if nl != ["q4"]:
+        failures.append(f"case10: expected only q4 not-located, got {nl}")
+    if "q1" not in by_id or by_id["q1"]["contested"]:
+        failures.append(f"case10: q1 should locate with 0 contested, got {by_id.get('q1')}")
+    q2 = by_id.get("q2")
+    if not q2 or len(q2["contested"]) != 1 or q2["contested"][0]["candidates"]["vlm"] != "82":
+        failures.append(f"case10: q2 should inherit the ‹82› divergence, got {q2}")
+    if not by_id.get("q3") or by_id["q3"]["occurrences"] != 2:
+        failures.append(f"case10: q3 should union 2 occurrences, got {by_id.get('q3')}")
+
+    # Case 11: quote_corroboration stamp — canonical value carries the three
+    # parse anchors (quote count / contested count / sibling hash); the stamp
+    # inserts after content_block, is idempotent, and updates in place leaving
+    # every other byte alone.
+    v_clean = format_quote_corroboration("2026-06-11", 3, [], [], "abc123def456")
+    for anchor in ("3 quote(s) corroborated", "0 contested", "sha256:abc123def456"):
+        if anchor not in v_clean:
+            failures.append(f"case11: clean value missing anchor {anchor!r}: {v_clean}")
+    v_cont = format_quote_corroboration(
+        "2026-06-11", 3, ["q2 ‹82› (line 1)"], ["q5 (p.9)"], "abc123def456")
+    if "1 contested token(s): q2 ‹82› (line 1)" not in v_cont or "q5 (p.9)" not in v_cont:
+        failures.append(f"case11: contested/filled value malformed: {v_cont}")
+    art_body11 = ("id: meta/research/example\n"
+                  "primary_sources:\n"
+                  "- path: government/example-2010.pdf\n"
+                  "  format: pdf\n"
+                  "  content_block: 'None'\n"
+                  "quotes: []\n")
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as tf:
+        tf.write(art_body11)
+        art11 = Path(tf.name)
+    try:
+        stamp_quote_corroboration(art11, "example-2010.pdf", v_clean)
+        t1 = art11.read_text(encoding="utf-8")
+        if f"  content_block: 'None'\n  quote_corroboration: '{v_clean}'\n" not in t1:
+            failures.append(f"case11: insert-after-content_block failed:\n{t1}")
+        stamp_quote_corroboration(art11, "example-2010.pdf", v_clean)   # idempotent
+        if art11.read_text(encoding="utf-8") != t1:
+            failures.append("case11: re-stamp with same value changed the file")
+        stamp_quote_corroboration(art11, "example-2010.pdf", v_cont)    # update
+        t2 = art11.read_text(encoding="utf-8")
+        if v_cont not in t2 or v_clean in t2:
+            failures.append("case11: update of existing value failed")
+        if t2.replace(f"  quote_corroboration: '{v_cont}'\n", "") != art_body11:
+            failures.append("case11: stamp touched bytes outside the quote_corroboration line")
+    finally:
+        art11.unlink()
+    # content_block parse round-trip (the recorded production facts).
+    if _blocked_pages_from_content_block(format_content_block([5, 6], False)) != [5, 6]:
+        failures.append("case11: blocked-pages round-trip through content_block failed")
+    if _blocked_pages_from_content_block(format_content_block([], True)) != []:
+        failures.append("case11: vlm-skipped sentinel should parse to no blocked pages")
+    if _blocked_pages_from_content_block("None") != []:
+        failures.append("case11: 'None' should parse to no blocked pages")
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -1175,6 +1512,10 @@ def cmd_selftest(_args):
     print("  case8: load-bearing filter -> words/numbers confirmed, structure not")
     print("  case9: content_block stamp -> insert/idempotent/update surgical, "
           "vlm-skipped sentinel preserved")
+    print("  case10: quote corroboration -> located, contested-intersected, "
+          "occurrences unioned, absent quote refused")
+    print("  case11: quote_corroboration stamp -> canonical anchors, surgical "
+          "insert/idempotent/update, content_block fact round-trip")
     return 0
 
 
@@ -1264,11 +1605,35 @@ def main():
     p_vfy.add_argument("--blocked-pages", metavar="SPEC", default=None,
                        help="pages filled by PaddleOCR (e.g. '5-7,10'); print the "
                             "PaddleOCR-vs-Tesseract check for each")
+    p_vfy.add_argument("--vlm-skipped", action="store_true",
+                       help="the sibling is a whole-doc OCR-only production (the VLM read "
+                            "was content-blocked at prep, per the sibling's manifest note) — "
+                            "derives the 'All pages' content_block sentinel and frames the "
+                            "report as the 2-engine comparison it actually is")
     p_vfy.add_argument("--stamp-artifact", metavar="YAML",
                        help="research artifact whose matching primary_sources[] entry gets "
                             "the content_block value written mechanically (a vlm-skipped "
-                            "sentinel from the original run is never overwritten)")
+                            "sentinel from the original run is never overwritten by a "
+                            "derived value)")
     p_vfy.set_defaults(func=cmd_verify)
+
+    p_cor = sub.add_parser(
+        "corroborate-quotes",
+        help="check every artifact quote citing this PDF against the engine "
+             "reads and stamp the canonical quote_corroboration value onto "
+             "the artifact entry (contested tokens + PaddleOCR-filled-page "
+             "quotes enumerated as the audit target list)")
+    p_cor.add_argument("pdf", help="source PDF whose quoted spans to corroborate")
+    p_cor.add_argument("--artifact", metavar="YAML", required=True,
+                       help="research artifact whose quotes cite this PDF; its "
+                            "matching primary_sources[] entry must already carry "
+                            "content_block (verify --stamp-artifact) and receives "
+                            "the quote_corroboration stamp")
+    p_cor.add_argument("--dpi", type=int, default=300)
+    p_cor.add_argument("--no-cache", action="store_true",
+                       help="recompute the engine reads even when cached (cache key: "
+                            "PDF bytes + dpi + engine versions, under the system temp dir)")
+    p_cor.set_defaults(func=cmd_corroborate)
 
     p_eng = sub.add_parser("engines", help="report engine availability")
     p_eng.set_defaults(func=cmd_engines)

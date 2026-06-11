@@ -41,6 +41,11 @@ Per-artifact checks (after parse + ResearchContext construction):
                                          extraction-lossy PDF sources:
                                          verified sibling on disk +
                                          content_block stamped)
+  - quote_ocr_corroboration           — whole-artifact (quoted sibling-
+                                         backed PDF sources: fresh
+                                         quote_corroboration stamp from
+                                         ocr-consensus.py
+                                         corroborate-quotes)
   - media_versioning                  — media-conditional
   - key_personnel, org_relationships, contracts
                                        — organization / gov-contractor
@@ -144,6 +149,7 @@ from checks import speaker_baseline_consistency as ck_speaker_baseline_consisten
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
 from checks import ocr_sibling_presence as ck_ocr_sibling_presence
+from checks import quote_ocr_corroboration as ck_quote_ocr_corroboration
 from checks import transcript_sibling_presence as ck_transcript_sibling_presence
 from checks import top_scope_activity as ck_top_scope_activity
 from checks import verbatim_quotes as ck_verbatim_quotes
@@ -271,6 +277,7 @@ _ARTIFACT_CHECKS = [
     ck_speaker_attribution_consistency,
     ck_transcript_sibling_presence,
     ck_ocr_sibling_presence,
+    ck_quote_ocr_corroboration,
     ck_media_versioning,
     ck_key_personnel,
     ck_org_relationships,

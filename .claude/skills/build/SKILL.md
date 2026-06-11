@@ -252,6 +252,17 @@ invocation; the relay/contract split holds one level down too.
      the owning role it names (Worker for `extract`, Builder for
      `organize`/`link`/`render`, Archive for `archive`), apply the data fix,
      and rebuild. (This is the dissolved Error agent — a lookup, not a role.)
+6b. **Quote-corroboration stamp** *(orchestrator step — after the builder,
+   before the auditor)*. For each sibling-backed source the artifact now
+   quotes (every 4b source), run
+   `python3 scripts/tools/ocr-consensus.py corroborate-quotes {source-path}
+   --artifact meta/research/{slug}.yaml` — it re-checks just the quoted spans
+   against the engine reads (seconds on the cache 4b warmed) and stamps the
+   canonical `quote_corroboration` value, enumerating the contested /
+   PaddleOCR-filled-page tokens the auditor must settle against the page
+   images. The `quote_ocr_corroboration` check is the commit-boundary
+   backstop; the stamp is the auditor's target list, so it must land before
+   step 7.
 7. **`Agent(auditor)`** on the rendered node. The auditor's scope is the
    built node only, and it is recommend-only as a build role
    (`agents/auditor.md`): relay its findings to the user in the final report.

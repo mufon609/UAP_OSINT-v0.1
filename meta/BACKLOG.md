@@ -231,3 +231,24 @@ and update its docstring's severity paragraph.
 
 **Blocks:** none.
 **Blocked by:** none (the Kress rows close via the Kress-footnote entry).
+
+### C5 — Backfill the quote-corroboration stamps, then promote the check to error
+
+The `quote_ocr_corroboration` check (warn tier — the quote-level sibling of
+`ocr_sibling_presence`; build step 6b's commit-boundary backstop) fires on
+every (quoted lossy source, artifact) pair whose entry predates the
+`quote_corroboration` field — the check's output is the authoritative
+worklist. Mechanical fix per pair, after that source's `content_block` is
+stamped (sequence behind the C4 stamping rows where they overlap):
+`ocr-consensus.py corroborate-quotes {pdf} --artifact
+meta/research/{slug}.yaml` — the first run per PDF pays the engine read
+(cold cache), repeats are seconds. Any contested / PaddleOCR-filled-page
+tokens the stamps enumerate are page-image work: settle each (fix the quote
++ sibling, or confirm the sibling against the image) before counting the
+pair done. When the worklist is empty, promote `scripts/checks/
+quote_ocr_corroboration.py` from `warn` to `error` (its documented end
+state) and update its docstring's severity paragraph.
+
+**Blocks:** none.
+**Blocked by:** the C4 sibling-owed + unstamped rows for the overlapping
+sources (a stamp needs the sibling on disk and `content_block` on the entry).
