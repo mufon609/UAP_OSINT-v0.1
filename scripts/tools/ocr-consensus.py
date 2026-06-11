@@ -810,24 +810,35 @@ def print_content_block(blocked, vlm_skipped):
 
 
 def _locate_source_entry(lines, artifact, pdf_name, flag):
-    """(entry_start, entry_end) line bounds of the artifact's primary_sources[]
-    entry whose ``path:`` basename matches the PDF — shared by the surgical
-    stampers (``stamp_content_block`` / ``stamp_quote_corroboration``).
-    ``entry_end`` is one past the entry's last ``  field:`` line."""
+    """(entry_start, entry_end, field_indent) of the artifact's
+    primary_sources[] entry whose ``path:`` basename matches the PDF — shared
+    by the surgical stampers (``stamp_content_block`` /
+    ``stamp_quote_corroboration``). ``entry_end`` is one past the entry's last
+    field line. ``field_indent`` is the entry's own field indentation
+    (list-item indent + 2): artifacts in the corpus carry both column-0
+    (``- path:``) and nested (``  - path:``) list styles, so the indent is
+    derived from the matched entry, never assumed."""
     entry_start = None
+    item_indent = ""
     for i, ln in enumerate(lines):
-        m = re.match(r"^- path:\s*(\S+)\s*$", ln)
-        if m and Path(m.group(1)).name == pdf_name:
-            entry_start = i
+        m = re.match(r"^(\s*)- path:\s*(\S+)\s*$", ln)
+        if m and Path(m.group(2)).name == pdf_name:
+            entry_start, item_indent = i, m.group(1)
             break
     if entry_start is None:
         raise SystemExit(
             f"{flag}: no primary_sources entry with path basename "
             f"{pdf_name!r} in {artifact}")
+    field_indent = item_indent + "  "
     entry_end = entry_start + 1
-    while entry_end < len(lines) and lines[entry_end].startswith("  "):
+    while entry_end < len(lines):
+        ln = lines[entry_end]
+        if ln.startswith(item_indent + "- "):   # next sibling list item
+            break
+        if not ln.startswith(field_indent):     # left the entry's field block
+            break
         entry_end += 1
-    return entry_start, entry_end
+    return entry_start, entry_end, field_indent
 
 
 def stamp_content_block(artifact_path, pdf_name, val):
@@ -844,12 +855,12 @@ def stamp_content_block(artifact_path, pdf_name, val):
     if not artifact.exists():
         raise SystemExit(f"--stamp-artifact: artifact not found: {artifact}")
     lines = artifact.read_text(encoding="utf-8").splitlines(keepends=True)
-    entry_start, entry_end = _locate_source_entry(
+    entry_start, entry_end, ind = _locate_source_entry(
         lines, artifact, pdf_name, "--stamp-artifact")
 
-    new_line = f"  content_block: '{val}'\n"
+    new_line = f"{ind}content_block: '{val}'\n"
     for j in range(entry_start + 1, entry_end):
-        m = re.match(r"^  content_block:\s*'?(.*?)'?\s*$", lines[j])
+        m = re.match(rf"^{ind}content_block:\s*'?(.*?)'?\s*$", lines[j])
         if m:
             existing = m.group(1)
             if existing == val:
@@ -867,7 +878,7 @@ def stamp_content_block(artifact_path, pdf_name, val):
 
     insert_at = entry_start + 1
     for j in range(entry_start + 1, entry_end):
-        if re.match(r"^  format:", lines[j]):
+        if re.match(rf"^{ind}format:", lines[j]):
             insert_at = j + 1
             break
     lines.insert(insert_at, new_line)
@@ -919,13 +930,21 @@ def corroborate_quote_spans(sib_text, quote_items, divergences):
     lb_idx, lb_norm = [], []
     for i, (surf, cs, ce) in enumerate(sib_tokens):
         if is_load_bearing(surf, sib_text, cs, ce):
+            norm = norm_token(surf)
+            if not norm:
+                continue  # hyphen-class token: normalizes to nothing, so there
+                # is nothing to corroborate — and its load-bearing verdict is
+                # whitespace-context-sensitive (`10^11 -10^18` in a quote vs the
+                # sibling's line-wrapped `-\n10^18`), so keeping it desyncs the
+                # two streams and breaks the run match for a verbatim-green quote
             lb_idx.append(i)
-            lb_norm.append(norm_token(surf))
+            lb_norm.append(norm)
     div_by_tok = {d["token_index"]: d for d in divergences}
     per_quote, not_located = [], []
     for qid, text in quote_items:
-        q_lb = [norm_token(surf) for (surf, cs, ce) in tokenize(text)
-                if is_load_bearing(surf, text, cs, ce)]
+        q_lb = [n for (surf, cs, ce) in tokenize(text)
+                if is_load_bearing(surf, text, cs, ce)
+                and (n := norm_token(surf))]
         runs = _find_token_runs(lb_norm, q_lb)
         if not runs:
             not_located.append(qid)
@@ -982,12 +1001,12 @@ def stamp_quote_corroboration(artifact_path, pdf_name, val):
     if not artifact.exists():
         raise SystemExit(f"corroborate-quotes: artifact not found: {artifact}")
     lines = artifact.read_text(encoding="utf-8").splitlines(keepends=True)
-    entry_start, entry_end = _locate_source_entry(
+    entry_start, entry_end, ind = _locate_source_entry(
         lines, artifact, pdf_name, "corroborate-quotes")
 
-    new_line = f"  quote_corroboration: '{val}'\n"
+    new_line = f"{ind}quote_corroboration: '{val}'\n"
     for j in range(entry_start + 1, entry_end):
-        m = re.match(r"^  quote_corroboration:\s*'?(.*?)'?\s*$", lines[j])
+        m = re.match(rf"^{ind}quote_corroboration:\s*'?(.*?)'?\s*$", lines[j])
         if m:
             if m.group(1) == val:
                 print(f"  quote_corroboration already stamped on {artifact} (unchanged)")
@@ -999,7 +1018,7 @@ def stamp_quote_corroboration(artifact_path, pdf_name, val):
 
     insert_at = entry_start + 1
     for j in range(entry_start + 1, entry_end):
-        if re.match(r"^  (format|content_block):", lines[j]):
+        if re.match(rf"^{ind}(format|content_block):", lines[j]):
             insert_at = j + 1   # last of format:/content_block: wins
     lines.insert(insert_at, new_line)
     artifact.write_text("".join(lines), encoding="utf-8")
@@ -1423,6 +1442,34 @@ def cmd_selftest(_args):
     finally:
         art.unlink()
 
+    # Case 9b: nested-indent list style ("  - path:") — the corpus carries both
+    # styles, so the stampers derive the entry's field indent instead of
+    # assuming column-0 (the assumption that broke four backfill stamps).
+    art_body9b = ("id: meta/research/example\n"
+                  "primary_sources:\n"
+                  "  - path: government/example-2010.pdf\n"
+                  "    format: pdf\n"
+                  "  - path: government/other.pdf\n"
+                  "    format: pdf\n"
+                  "quotes: []\n")
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as tf:
+        tf.write(art_body9b)
+        art9b = Path(tf.name)
+    try:
+        stamp_content_block(art9b, "example-2010.pdf", "None")
+        t9b = art9b.read_text(encoding="utf-8")
+        if ("  - path: government/example-2010.pdf\n    format: pdf\n"
+                "    content_block: 'None'\n  - path:") not in t9b:
+            failures.append(f"case9b: nested-indent insert failed:\n{t9b}")
+        if t9b.count("content_block") != 1:
+            failures.append("case9b: stamped the wrong entry too")
+        stamp_quote_corroboration(art9b, "example-2010.pdf", "test-value")
+        t9b2 = art9b.read_text(encoding="utf-8")
+        if "    content_block: 'None'\n    quote_corroboration: 'test-value'\n" not in t9b2:
+            failures.append(f"case9b: nested-indent quote_corroboration insert failed:\n{t9b2}")
+    finally:
+        art9b.unlink()
+
     # Case 10: quote corroboration — locate each quote's load-bearing token run
     # in the sibling, intersect with the document's contested tokens. A clean
     # quote reports zero contested; a quote containing the document's contested
@@ -1451,6 +1498,18 @@ def cmd_selftest(_args):
         failures.append(f"case10: q2 should inherit the ‹82› divergence, got {q2}")
     if not by_id.get("q3") or by_id["q3"]["occurrences"] != 2:
         failures.append(f"case10: q3 should union 2 occurrences, got {by_id.get('q3')}")
+
+    # Case 10b: whitespace-context hyphen asymmetry — a numeric-sign hyphen is
+    # load-bearing in the quote (`-10^18`) but line-wrap makes it structure in
+    # the sibling (`-` + space); tokens that normalize to nothing are dropped
+    # from both streams, so the verbatim-green quote still locates.
+    sib10b = "density of (~ 10^11\n- 10^18 kg/m^3), having a diameter"
+    q10b = [("q1", "density of (~ 10^11 -10^18 kg/m^3), having")]
+    pq10b, nl10b = corroborate_quote_spans(sib10b, q10b, [])
+    if nl10b:
+        failures.append(f"case10b: hyphen-asymmetric quote failed to locate: {nl10b}")
+    elif pq10b[0]["contested"]:
+        failures.append("case10b: clean quote should carry no contested tokens")
 
     # Case 11: quote_corroboration stamp — canonical value carries the three
     # parse anchors (quote count / contested count / sibling hash); the stamp
@@ -1512,6 +1571,10 @@ def cmd_selftest(_args):
     print("  case8: load-bearing filter -> words/numbers confirmed, structure not")
     print("  case9: content_block stamp -> insert/idempotent/update surgical, "
           "vlm-skipped sentinel preserved")
+    print("  case9b: nested-indent list style -> both stampers derive the "
+          "entry's field indent")
+    print("  case10b: hyphen load-bearing asymmetry -> empty-normalized tokens "
+          "dropped from both streams, verbatim-green quote locates")
     print("  case10: quote corroboration -> located, contested-intersected, "
           "occurrences unioned, absent quote refused")
     print("  case11: quote_corroboration stamp -> canonical anchors, surgical "
