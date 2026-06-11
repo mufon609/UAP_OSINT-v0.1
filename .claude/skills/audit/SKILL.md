@@ -15,7 +15,6 @@ allowed-tools:
   - Bash(python3 scripts/build/associate.py *)
   - Bash(python3 scripts/tools/coverage-suggest.py *)
   - Bash(python3 scripts/tools/route_failure.py *)
-  - Bash(bash scripts/tests/pre-commit.sh)
 ---
 
 # Audit a node

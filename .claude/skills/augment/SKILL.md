@@ -19,7 +19,6 @@ allowed-tools:
   - Bash(python3 scripts/build/stamp-speaker-id.py *)
   - Bash(python3 scripts/build/associate.py *)
   - Bash(python3 scripts/build/build-state.py *)
-  - Bash(python3 scripts/tools/coverage-suggest.py *)
   - Bash(python3 scripts/tools/route_failure.py *)
 ---
 
