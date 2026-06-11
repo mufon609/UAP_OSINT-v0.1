@@ -189,9 +189,16 @@ or replace it:
    surface. `extract-source.py` auto-prefers the sibling for OCR-scan sources, so
    quotes derive verbatim text from it but cite the PDF path in `source.path`.
 
-5. **Record the `content_block` value.** `run`/`verify` print a `content_block:`
-   line at the end — paste it verbatim onto the source's `primary_sources[]` entry.
-   Don't hand-write it; that's the field's whole point.
+5. **Record the `content_block` value — mechanically.** When the target's
+   research artifact exists (the `/build` path: 4b runs after scaffold), pass
+   `--stamp-artifact meta/research/{slug}.yaml` on the `run` (or the final
+   `verify`) — the tool writes the value onto the matching `primary_sources[]`
+   entry itself (surgical line edit; a vlm-skipped sentinel from the original
+   `run` is never overwritten by `verify`). No artifact yet (standalone
+   backfill)? The printed `content_block:` line is the canonical value; stamp
+   it once the artifact exists via
+   `ocr-consensus.py verify {pdf} --stamp-artifact {yaml}` (seconds on the
+   engine cache). Never hand-type the value; that's the field's whole point.
 
 The sibling is canonical once confirmed and registered; `extract-source.py` and
 the verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

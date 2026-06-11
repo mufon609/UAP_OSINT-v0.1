@@ -506,11 +506,11 @@ primary_sources_entry:
   #
   # content_block: the blocked-pages indicator for a sibling-backed (ocr-scan /
   #   extraction-lossy) PDF — which pages, if any, the VLM page-image read was
-  #   content-filter-blocked on. A short string pasted verbatim from the line
-  #   ocr-consensus.py emits at sibling prep (`format_content_block` is the
-  #   canonical form; never hand-composed). Renders as a `Content Block` row on
-  #   the document node (renderers/document.py). Present only on sibling-backed
-  #   sources; text-native sources omit it.
+  #   content-filter-blocked on. Stamped mechanically by ocr-consensus.py
+  #   --stamp-artifact at sibling prep (`format_content_block` is the canonical
+  #   form; never hand-composed or hand-pasted). Renders as a `Content Block`
+  #   row on the document node (renderers/document.py). Present only on
+  #   sibling-backed sources; text-native sources omit it.
 
 # --- Entry shapes per top-level list section ---
 

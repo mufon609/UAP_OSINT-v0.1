@@ -190,3 +190,31 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C4 — Close the content_block gap for builds that reuse an existing OCR sibling
+
+A build whose ocr-scan source already has a verified `.txt` sibling satisfies
+the 4b gate without running `ocr-consensus.py`, so nothing lands
+`content_block` on the freshly scaffolded artifact — the field is
+schema-optional and no validator notices the omission, so the node silently
+renders without its `Content Block` row.
+
+Two complementary closures to weigh:
+
+- **Stamp on reuse:** at the 4b gate, when the sibling already exists, run
+  `ocr-consensus.py verify {pdf} --stamp-artifact meta/research/{slug}.yaml`
+  (seconds on the engine cache; also re-confirms the sibling against the
+  engines as a side benefit). One sentence in `/build` step 4b +
+  `/prepare-ocr-sibling` step 5 would carry it.
+- **Presence check:** a validator warning when an artifact's
+  `primary_sources[]` entry is `extraction_type: ocr-scan` /
+  `extraction-lossy` in the manifest but carries no `content_block` — the
+  `transcript_sibling_presence` shape, applied to the OCR sibling pipeline.
+
+The check makes the omission visible; the stamp-on-reuse makes it
+self-healing. Decide whether one or both are warranted, then update the
+schema comment (`meta/schema-research-artifact.yaml` `content_block`) if the
+field's presence contract changes.
+
+**Blocks:** none.
+**Blocked by:** none.

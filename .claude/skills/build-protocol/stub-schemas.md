@@ -31,8 +31,8 @@ reusable_sources:
     # the orchestrator's step-4b `extract-source.py --artifact` run and are
     # relayed to workers at step 5 — never through this stub.
     # ocr-scan / extraction-lossy → the artifact's primary_sources entry also carries
-    # `content_block`, pasted verbatim from ocr-consensus.py's emitted line at sibling
-    # prep (/prepare-ocr-sibling step 5). Renders as a `Content Block` row.
+    # `content_block`, stamped mechanically by ocr-consensus.py --stamp-artifact at
+    # sibling prep (/prepare-ocr-sibling step 5). Renders as a `Content Block` row.
 topic_relevance: "<one line: how the subject connects to the topic via linked_nodes>"
 gaps: ["{what the record is missing}"]
 blocking_prep: []              # source-prep prerequisites the orchestrator must clear before the Worker

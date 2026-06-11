@@ -782,11 +782,71 @@ def format_content_block(blocked, vlm_skipped):
 
 
 def print_content_block(blocked, vlm_skipped):
-    """Emit the paste-ready ``content_block`` line for the author to copy."""
+    """Emit the canonical ``content_block`` line (mechanically stamped onto an
+    artifact via --stamp-artifact; printed for siblings prepped before any
+    artifact exists)."""
     val = format_content_block(blocked, vlm_skipped)
-    print("\n  content_block — paste verbatim onto the source's "
-          "primary_sources[] entry:")
+    print("\n  content_block — canonical value for the source's "
+          "primary_sources[] entry (--stamp-artifact writes it):")
     print(f"      content_block: '{val}'")
+
+
+def stamp_content_block(artifact_path, pdf_name, val):
+    """Write ``content_block: '<val>'`` onto the artifact's primary_sources[]
+    entry whose ``path:`` basename matches the PDF — a surgical line edit (no
+    YAML reflow), so the value never passes through a hand-paste.
+
+    Replaces an existing ``content_block`` line in the entry, else inserts one
+    after the entry's ``format:`` line (or the ``path:`` line). Refuses to
+    overwrite a ``vlm_skipped`` sentinel ("All pages — ...") with a derived
+    value: ``verify`` cannot know the sibling was OCR-only, so the original
+    ``run``'s value stands (see cmd_verify's note)."""
+    artifact = Path(artifact_path)
+    if not artifact.exists():
+        raise SystemExit(f"--stamp-artifact: artifact not found: {artifact}")
+    lines = artifact.read_text(encoding="utf-8").splitlines(keepends=True)
+
+    entry_start = None
+    for i, ln in enumerate(lines):
+        m = re.match(r"^- path:\s*(\S+)\s*$", ln)
+        if m and Path(m.group(1)).name == pdf_name:
+            entry_start = i
+            break
+    if entry_start is None:
+        raise SystemExit(
+            f"--stamp-artifact: no primary_sources entry with path basename "
+            f"{pdf_name!r} in {artifact}")
+
+    entry_end = entry_start + 1          # one past the entry's last "  field:" line
+    while entry_end < len(lines) and lines[entry_end].startswith("  "):
+        entry_end += 1
+
+    new_line = f"  content_block: '{val}'\n"
+    for j in range(entry_start + 1, entry_end):
+        m = re.match(r"^  content_block:\s*'?(.*?)'?\s*$", lines[j])
+        if m:
+            existing = m.group(1)
+            if existing == val:
+                print(f"  content_block already stamped on {artifact} (unchanged)")
+                return
+            if existing.startswith("All pages"):
+                print(f"  content_block NOT overwritten on {artifact}: existing "
+                      f"vlm-skipped value {existing!r} is owned by the original "
+                      f"run (verify derives only from --blocked-pages)")
+                return
+            lines[j] = new_line
+            artifact.write_text("".join(lines), encoding="utf-8")
+            print(f"  content_block updated on {artifact}: {existing!r} -> {val!r}")
+            return
+
+    insert_at = entry_start + 1
+    for j in range(entry_start + 1, entry_end):
+        if re.match(r"^  format:", lines[j]):
+            insert_at = j + 1
+            break
+    lines.insert(insert_at, new_line)
+    artifact.write_text("".join(lines), encoding="utf-8")
+    print(f"  content_block stamped on {artifact}: '{val}'")
 
 
 def _resolve_pdf(arg):
@@ -935,6 +995,9 @@ def cmd_run(args):
     print_confirm_report(divergences, sibling, page_starts, derived)
     print_blocked_report(blocked_report)
     print_content_block(blocked, vlm_skipped)
+    if args.stamp_artifact:
+        stamp_content_block(args.stamp_artifact, pdf.name,
+                            format_content_block(blocked, vlm_skipped))
 
 
 def cmd_verify(args):
@@ -965,6 +1028,9 @@ def cmd_verify(args):
     # OCR-only sibling takes its value from the original `run`; the common
     # None / page-list cases derive correctly here.
     print_content_block(blocked, vlm_skipped=False)
+    if args.stamp_artifact:
+        stamp_content_block(args.stamp_artifact, pdf.name,
+                            format_content_block(blocked, vlm_skipped=False))
 
 
 def cmd_engines(_args):
@@ -1056,6 +1122,44 @@ def cmd_selftest(_args):
     if is_load_bearing(".", "end. Next", 3, 4):
         failures.append("case8: sentence '.' should NOT be load-bearing")
 
+    # Case 9: content_block stamping — insert, idempotent re-stamp, update, and
+    # the vlm-skipped overwrite refusal; surgical edit leaves every other byte.
+    import tempfile
+    art_body = ("id: meta/research/example\n"
+                "primary_sources:\n"
+                "- path: government/example-2010.pdf\n"
+                "  format: pdf\n"
+                "- path: government/other.pdf\n"
+                "  format: pdf\n"
+                "quotes: []\n")
+    with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as tf:
+        tf.write(art_body)
+        art = Path(tf.name)
+    try:
+        stamp_content_block(art, "example-2010.pdf", "None")
+        t1 = art.read_text(encoding="utf-8")
+        if "- path: government/example-2010.pdf\n  format: pdf\n  content_block: 'None'\n" not in t1:
+            failures.append(f"case9: insert-after-format failed:\n{t1}")
+        if t1.count("content_block") != 1:
+            failures.append("case9: stamped the wrong entry too")
+        stamp_content_block(art, "example-2010.pdf", "None")          # idempotent
+        if art.read_text(encoding="utf-8") != t1:
+            failures.append("case9: re-stamp with same value changed the file")
+        stamp_content_block(art, "example-2010.pdf",
+                            "Pages 5, 6 were content-blocked for the VLM; PaddleOCR-filled.")
+        if "Pages 5, 6" not in art.read_text(encoding="utf-8"):
+            failures.append("case9: update of existing value failed")
+        sentinel = "All pages — VLM page-image read was content-blocked; produced via OCR."
+        stamp_content_block(art, "example-2010.pdf", sentinel)        # run may set it
+        stamp_content_block(art, "example-2010.pdf", "None")          # verify must not clobber
+        if sentinel not in art.read_text(encoding="utf-8"):
+            failures.append("case9: vlm-skipped sentinel was overwritten by a derived value")
+        if art.read_text(encoding="utf-8").replace(
+                f"  content_block: '{sentinel}'\n", "") != art_body:
+            failures.append("case9: stamp touched bytes outside the content_block line")
+    finally:
+        art.unlink()
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -1069,6 +1173,8 @@ def cmd_selftest(_args):
     print("  case5: 2-engine fallback (VLM skipped) -> OCR disagreement contested")
     print("  case6: derived page starts -> engine boundaries land on base offsets, monotone")
     print("  case8: load-bearing filter -> words/numbers confirmed, structure not")
+    print("  case9: content_block stamp -> insert/idempotent/update surgical, "
+          "vlm-skipped sentinel preserved")
     return 0
 
 
@@ -1140,6 +1246,10 @@ def main():
                        help="subset of --blocked-pages that are two-column; each is "
                             "column-split (left half then right) before the PaddleOCR fill so "
                             "the two columns don't interleave into scrambled text (e.g. '30')")
+    p_run.add_argument("--stamp-artifact", metavar="YAML",
+                       help="research artifact whose matching primary_sources[] entry gets "
+                            "the content_block value written mechanically (surgical line "
+                            "edit; replaces the hand-paste)")
     p_run.set_defaults(func=cmd_run)
 
     p_vfy = sub.add_parser(
@@ -1154,6 +1264,10 @@ def main():
     p_vfy.add_argument("--blocked-pages", metavar="SPEC", default=None,
                        help="pages filled by PaddleOCR (e.g. '5-7,10'); print the "
                             "PaddleOCR-vs-Tesseract check for each")
+    p_vfy.add_argument("--stamp-artifact", metavar="YAML",
+                       help="research artifact whose matching primary_sources[] entry gets "
+                            "the content_block value written mechanically (a vlm-skipped "
+                            "sentinel from the original run is never overwritten)")
     p_vfy.set_defaults(func=cmd_verify)
 
     p_eng = sub.add_parser("engines", help="report engine availability")
