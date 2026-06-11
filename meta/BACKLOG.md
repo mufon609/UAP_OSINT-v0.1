@@ -190,36 +190,3 @@ same section) and correct if needed.
 
 **Blocks:** none.
 **Blocked by:** none.
-
-### C4 — Review: dedicated attribution-producer / attribution-verifier agents
-
-`/prepare-transcript-sibling` dispatches its producer and independent verifier
-as the harness built-in `Agent(general-purpose)`, with their contracts written
-inline in the SKILL.md — while the parallel OCR pipeline carries dedicated
-agent files (`.claude/agents/ocr-page-producer.md` / `ocr-page-verifier.md`)
-with per-role tool allowlists. The asymmetry is not a defect (the inline
-contracts are detailed and the pipeline has passed three pilot runs), but
-general-purpose dispatch means the attribution roles inherit the full tool
-set instead of a restricted one.
-
-Candidate change, for review before adopting: create
-`.claude/agents/attribution-producer.md` and
-`.claude/agents/attribution-verifier.md` mirroring the ocr-page-* pair — move
-the producer/verifier discipline out of the skill into the agent contracts,
-restrict the verifier to `Read` (it must check the producer's read of the same
-evidence, never write), and scope the producer to `Read` + `Write` on its
-`/tmp/attribution-{slug}/` draft. Weigh against the cost of a second contract
-surface that must stay in sync with the skill's orchestration text.
-
-**2026-06-10 skills/agents audit observation:** a contract-symmetry pass found
-no instruction conflicts between the two sibling pipelines — the inline
-attribution contracts do not contradict any pipeline-wide rule the dedicated
-ocr-page-* agent files establish (producer-never-edits-the-sibling,
-verifier-reports-corrections-only, disjoint-range parallelism all hold in
-both), and the 4b/4c trigger conditions (`extraction_type` values,
-`transcript_provenance` allowlist) are stated identically across both skills,
-`build`/`build-protocol`, and `scripts/checks/transcript_sibling_presence.py`.
-The asymmetry remains tool-scoping only, as described above.
-
-**Blocks:** none.
-**Blocked by:** none.
