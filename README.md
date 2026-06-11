@@ -98,9 +98,18 @@ media/ locations/ findings/ investigations/
                             external-investigator, archive, worker, builder, auditor)
                             + the two OCR page agents (ocr-page-producer,
                             ocr-page-verifier) dispatched by /prepare-ocr-sibling
-  hooks/                    PreToolUse guards — commit gate (runs pre-commit.sh),
-                            node-body-edit block, one-new-synthesis-node cap
+                            + the two attribution agents (attribution-producer,
+                            attribution-verifier) dispatched by
+                            /prepare-transcript-sibling
+  hooks/                    PreToolUse guards — commit anti-bypass guard (arms
+                            .githooks/pre-commit, which runs pre-commit.sh at
+                            commit time), node-body-edit block,
+                            one-new-synthesis-node cap
   settings.json             hook wiring (committed; topic-neutral)
+
+.githooks/
+  pre-commit                runs the full gate chain inside `git commit`
+                            (armed via core.hooksPath by the commit guard)
 
 prompts/                    Claude-Web briefs — see prompts/README.md
                             for the index
@@ -243,14 +252,18 @@ internal-investigator → external-investigator → archive → worker (×N) →
 builder → auditor: only `archive` writes the source manifest, only `worker`
 introduces verbatim quotes, and the builder edits the research artifact,
 never the rendered node. `/prepare-ocr-sibling` dispatches the two OCR page
-agents (ocr-page-producer, ocr-page-verifier). The pipeline map — steps,
+agents (ocr-page-producer, ocr-page-verifier); `/prepare-transcript-sibling`
+dispatches the two attribution agents (attribution-producer,
+attribution-verifier). The pipeline map — steps,
 stages, branches — is `.claude/skills/build/SKILL.md` ("The shape"); the
 role-boundary rationale and the shared contract are
 `.claude/skills/build-protocol/`.
 
 `.claude/hooks/` enforce the discipline at the tool level: an un-bypassable
-commit gate (runs `pre-commit.sh`), a block on hand-editing rendered node
-bodies, and a one-new-synthesis-node-per-session cap.
+commit gate (`.githooks/pre-commit` runs `pre-commit.sh` inside `git commit`;
+the PreToolUse guard arms it and denies the bypass routes), a block on
+hand-editing rendered node bodies, and a one-new-synthesis-node-per-session
+cap.
 
 ---
 

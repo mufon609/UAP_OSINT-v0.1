@@ -171,7 +171,7 @@ builder reads it; the contract owns that. (Step↔role numbering matches the
 **The same rule applies to the sibling sub-skills (4b/4c).** Relay only the
 `{source-path}` / `{slug}` to `/prepare-ocr-sibling` / `/prepare-transcript-sibling`
 — the sub-skill **and its own agent contracts** (`ocr-page-producer`,
-`ocr-page-verifier`, the attribution agents) own the transcription, fill, and
+`ocr-page-verifier`; `attribution-producer`, `attribution-verifier`) own the transcription, fill, and
 verification discipline. Do not re-author that discipline into the sub-skill
 invocation; the relay/contract split holds one level down too.
 
