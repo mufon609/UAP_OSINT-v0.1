@@ -211,6 +211,16 @@ evidence, never write), and scope the producer to `Read` + `Write` on its
 `/tmp/attribution-{slug}/` draft. Weigh against the cost of a second contract
 surface that must stay in sync with the skill's orchestration text.
 
+**2026-06-10 skills/agents audit observation:** a contract-symmetry pass found
+no instruction conflicts between the two sibling pipelines — the inline
+attribution contracts do not contradict any pipeline-wide rule the dedicated
+ocr-page-* agent files establish (producer-never-edits-the-sibling,
+verifier-reports-corrections-only, disjoint-range parallelism all hold in
+both), and the 4b/4c trigger conditions (`extraction_type` values,
+`transcript_provenance` allowlist) are stated identically across both skills,
+`build`/`build-protocol`, and `scripts/checks/transcript_sibling_presence.py`.
+The asymmetry remains tool-scoping only, as described above.
+
 **Blocks:** none.
 **Blocked by:** none.
 
@@ -252,6 +262,13 @@ rewriting its own enforcement hook without explicit authorization — that is
 the right boundary, do not work around it. Implementing this needs the user
 present to approve the enforcement-hook edit. No partial state exists on disk
 (the draft `.githooks/pre-commit` was removed after the classifier block).
+
+**2026-06-10 skills/agents audit observation:** the lockstep-update list above
+is confirmed complete — a governing-doc sweep found exactly three surfaces
+describing the current hook mechanism (`CLAUDE.md` §2 line ~40, `CLAUDE.md` §6,
+`build-protocol` SKILL.md "How the block actually holds"); no other skill,
+agent, or script doc states the PreToolUse timing, so no additional surface
+needs touching when this lands.
 
 **Blocks:** none.
 **Blocked by:** explicit user authorization of the enforcement-hook edit.
@@ -301,6 +318,19 @@ live re-run:
 If any answer shows the cross-check is weakened, the cache must be fixed or
 reverted — fidelity over speed (the multi-engine design is load-bearing; it
 caught the DIRD-16 silent misreads and the dird-32 equation placeholders).
+
+**2026-06-10 skills/agents audit observation (code-read only — the live re-run
+above is still required):** reading `ocr-consensus.py` as committed found no
+weakening on paper. `_engine_cache_dir` keys on the full PDF bytes + dpi + both
+engine versions and its docstring states the sibling is deliberately excluded
+because engine output is a pure function of the page images; the cache stores
+engine text only (`tess.txt`, `paddle.txt`, `starts.json`); on `verify` the
+sibling is re-read from disk (`sibling.read_text`) and `confirm_report(sib_text,
+tess_text, paddle_text)` recomputes the comparison on every call, so a cache hit
+short-circuits the engine *reads*, not the diff, and no code path feeds the
+sibling back as engine input. This answers the code-evidence half of the
+questions above; the live-edit re-run, collision/engine-upgrade probing, and
+independent timing re-derivation remain open.
 
 **Blocks:** none.
 **Blocked by:** none.
