@@ -191,30 +191,43 @@ same section) and correct if needed.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C4 — Close the content_block gap for builds that reuse an existing OCR sibling
+### C4 — Backfill the OCR-sibling debt the presence check surfaced, then promote it to error
 
-A build whose ocr-scan source already has a verified `.txt` sibling satisfies
-the 4b gate without running `ocr-consensus.py`, so nothing lands
-`content_block` on the freshly scaffolded artifact — the field is
-schema-optional and no validator notices the omission, so the node silently
-renders without its `Content Block` row.
+The `ocr_sibling_presence` check (warn tier — the 4b gate's commit-boundary
+backstop, twin of `transcript_sibling_presence`) fires on two legacy
+categories, all from builds that predate the 4b gate or the `content_block`
+field:
 
-Two complementary closures to weigh:
+**Sibling owed** — quoted ocr-scan PDFs with no verified `.txt` sibling at
+all; each needs a full `/prepare-ocr-sibling` run (VLM read → PaddleOCR
+consensus → image verification → registration), then re-verification of the
+quotes that derive from it:
 
-- **Stamp on reuse:** at the 4b gate, when the sibling already exists, run
-  `ocr-consensus.py verify {pdf} --stamp-artifact meta/research/{slug}.yaml`
-  (seconds on the engine cache; also re-confirms the sibling against the
-  engines as a side benefit). One sentence in `/build` step 4b +
-  `/prepare-ocr-sibling` step 5 would carry it.
-- **Presence check:** a validator warning when an artifact's
-  `primary_sources[]` entry is `extraction_type: ocr-scan` /
-  `extraction-lossy` in the manifest but carries no `content_block` — the
-  `transcript_sibling_presence` shape, applied to the OCR sibling pipeline.
+- `government/cia-kress-parapsychology-…-1977-declassified-1996.pdf`
+  (4 artifacts) — sequenced under the Kress-footnote date entry, which
+  produces this sibling as its step 1.
+- `government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf`
+  (3 artifacts).
+- `government/blackvault-grusch-dopsr-23-F-0946.pdf` (1 artifact).
 
-The check makes the omission visible; the stamp-on-reuse makes it
-self-healing. Decide whether one or both are warranted, then update the
-schema comment (`meta/schema-research-artifact.yaml` `content_block`) if the
-field's presence contract changes.
+**Entry unstamped** — the sibling exists and is verified, but the artifact's
+`primary_sources[]` entry predates the `content_block` field. Mechanical fix
+per (source, artifact) pair:
+`ocr-consensus.py verify {pdf} --blocked-pages {as recorded in the sibling's
+manifest note, if any} --stamp-artifact meta/research/{slug}.yaml` — the
+first run per PDF pays the engine read (cold cache), repeats are seconds.
+~14 sources / ~27 artifact entries; the check's output is the authoritative
+worklist.
+
+**Also investigate while here:** what the sibling story is for an
+`extraction-lossy` **HTML** source (e.g. the CBS 60-Minutes transcript page)
+— `content_block` is a page-image concept, so the check scopes to PDF and
+HTML is currently unchecked by design. Decide whether lossy HTML needs its
+own sibling form or a manifest reclassification.
+
+When both categories are empty, promote `scripts/checks/
+ocr_sibling_presence.py` from `warn` to `error` (its documented end state)
+and update its docstring's severity paragraph.
 
 **Blocks:** none.
-**Blocked by:** none.
+**Blocked by:** none (the Kress rows close via the Kress-footnote entry).

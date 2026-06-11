@@ -89,6 +89,7 @@ CHECK_PHASE = {
     "speaker_baseline_consistency": "extract",
     "speaker_attribution_consistency": "extract",  # quote speaker_id ↔ attribution sibling at the [MM:SS] anchor
     "transcript_sibling_presence": "extract",  # label-less / unclassified transcript source ⇒ verified sibling must exist
+    "ocr_sibling_presence": "extract",  # ocr-scan / extraction-lossy PDF ⇒ verified sibling + stamped content_block
 
     # organize (role 5) — free-prose synthesis (incl. claim-group quote organization)
     "top_scope_activity": "organize",

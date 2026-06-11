@@ -207,7 +207,13 @@ invocation; the relay/contract split holds one level down too.
    corrupt): **invoke `/prepare-ocr-sibling {source-path}` via the Skill
    tool**; if that invocation fails, **HALT** and direct the user to run it
    (the why + the produce→independently-verify→register contract:
-   build-protocol → "Some primary sources need a verified sibling"). This gate
+   build-protocol → "Some primary sources need a verified sibling"). A source
+   whose verified sibling **already exists** (a reuse) still gets one command:
+   `python3 scripts/tools/ocr-consensus.py verify {source-path} --stamp-artifact
+   meta/research/{slug}.yaml` — it lands `content_block` on the fresh artifact
+   mechanically and re-confirms the sibling against the engines (seconds on
+   the engine cache; the `ocr_sibling_presence` check is the commit-boundary
+   backstop). This gate
    runs **regardless of the all-internal branch** — all-internal skips
    new-bytes sourcing, not source-prep. Text-native sources need no sibling. Once the
    sibling gates (4b/4c) clear, produce the canonical worker scratches —

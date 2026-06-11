@@ -510,7 +510,9 @@ primary_sources_entry:
   #   --stamp-artifact at sibling prep (`format_content_block` is the canonical
   #   form; never hand-composed or hand-pasted). Renders as a `Content Block`
   #   row on the document node (renderers/document.py). Present only on
-  #   sibling-backed sources; text-native sources omit it.
+  #   sibling-backed sources; text-native sources omit it. Presence is
+  #   backstopped at the commit boundary by the ocr_sibling_presence check
+  #   (warn until the legacy backfill completes; see the BACKLOG entry).
 
 # --- Entry shapes per top-level list section ---
 
