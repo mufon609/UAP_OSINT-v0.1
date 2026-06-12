@@ -156,8 +156,32 @@ When all four are verified, promote `scripts/checks/
 transcript_sibling_presence.py` from `warn` to `error` (its documented
 end state) and update its docstring's severity paragraph.
 
-**Blocks:** none.
+**Blocks:** C3 (its recorded resume state pins the `/tmp` draft paths).
 **Blocked by:** none.
+
+### C3 — Move expensive agent-draft scratch out of /tmp to a durable workspace
+
+The sibling pipelines direct their agent producers to emit drafts under
+`/tmp` (`/tmp/attribution-{slug}/…` for transcript attribution,
+`/tmp/{stem}/` page files for OCR). `/tmp` is periodically cleaned, and a
+multi-hour semantic parse is the most expensive artifact these pipelines
+produce — losing a draft to cleanup forces a full producer re-run, and the
+interim mitigation (hand-copying drafts to an out-of-repo handoff
+directory) is contributor discipline, not pipeline design. Establish a
+durable git-ignored scratch root inside the repo (e.g. `.scratch/`), route
+the draft/page-file output paths there in the
+`prepare-transcript-sibling` + `prepare-ocr-sibling` SKILL.md files and
+the `attribution-producer` / `ocr-page-producer` contracts, and sweep
+every other doc reference to the old paths (grep `/tmp/attribution-`,
+`/tmp/{stem}`). Cheap regenerable scratch (`extract-source.py` plaintext,
+worker fragments) may stay in `/tmp` — the boundary is regeneration cost,
+not uniformity. The gate scripts already take paths as arguments, so this
+is a docs/contract retarget, not a code change. Retire the ad-hoc handoff
+directory once the retarget lands.
+
+**Blocks:** none.
+**Blocked by:** the in-flight transcript-sibling backfill above (don't
+retarget paths under a mid-flight run that resumes from them).
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 

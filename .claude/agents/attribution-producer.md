@@ -78,8 +78,24 @@ output to the rendered sibling can alter source bytes).
   is reserved for content whose AUTHOR is outside the live participant set
   (jingles, archival third-party clips, recited documents from non-present
   authors).
+- **Quote any scalar that OPENS with a quote character.** A `rationale` that
+  begins with quoted source text — `rationale: ">>"-marked reply …` — parses
+  as a complete quoted scalar plus trailing garbage and FATALs the whole
+  file. Wrap the full value in single quotes (doubling any internal `'`):
+  `rationale: '">>"-marked reply …'`. Same class of trap as the `line_range`
+  rule above; the validator catches it only as an opaque parse error.
 - Output goes to `/tmp/attribution-{slug}/{stem}-attribution.yaml`. You never
   write to `sources/`.
+
+## Emission mechanics
+
+**Emit the draft incrementally — never the whole file in one response.** On
+long transcripts a single full-file emission has hit the harness's
+per-response output cap mid-draft, losing the run. First Write the YAML
+header + `speakers[]`, then append turns in batches (a few hundred source
+lines of coverage per Write/Edit call), writing each batch before parsing
+the next section. Parse → write → parse → write; the draft on disk is your
+working state, not a final dump.
 
 ## Report back
 
