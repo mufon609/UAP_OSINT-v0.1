@@ -125,7 +125,12 @@ BASELINE_ENCODINGS_PATH = LOG_DIR / "baseline-encodings.npz"
 
 CROP_SIZE = 256        # px, square
 JPEG_QUALITY = 85
-MIN_FACE_SIZE = 80     # px, minimum face box to keep — filters tiny background faces
+MIN_FACE_SIZE = 60     # px, minimum face box to keep — filters tiny background
+                       # faces. 60 (not 80): a 480p three-tile grid renders
+                       # side-tile faces at 74-75px that identify at 0.24-0.34
+                       # Euclidean; the embed-distance threshold is the
+                       # precision gate, this floor only screens background
+                       # faces. Keep matched with active-speaker.py.
 PADDING_FRAC = 0.30    # bbox padding (fraction of face dimension) added before crop
 
 # Face-embedding distance thresholds (Euclidean / L2 over dlib's 128-d ResNet

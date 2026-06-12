@@ -1,6 +1,6 @@
 ---
 name: prepare-transcript-sibling
-description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption — incl. Whisper-class machine output — or human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → mandatory active-speaker fold gate at finalize for video sources). The photo-identity-log baselines + mouth-motion engine decide who is SPEAKING, not who is on camera. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
+description: Produce, independently verify, and register a speaker-attribution sibling for a label-less primary-source transcript (auto-caption — incl. Whisper-class machine output — or human-corrected-caption without speaker labels). The caption file carries verbatim text but no speaker labels; speaker_id on transcript-artifact quotes cannot be derived from it until a verified attribution sibling exists. Uses the agent-based attribution pipeline (semantic parse → structural validate → independent verify → mandatory active-speaker fold gate at finalize for video sources). The photo-identity-log baselines decide WHO each face is; mouth-motion decides who is SPEAKING where the face is large enough to carry that signal, presence/dominance decides elsewhere. Use before building or quoting a transcript flagged transcript_provenance auto-caption / human-corrected-caption that has no sibling; /build step 4c directs here.
 argument-hint: {transcript-slug}
 allowed-tools:
   - Agent(attribution-producer, attribution-verifier)
@@ -180,16 +180,22 @@ turns, not only the ones the producer flagged. (`needs_image_verification` is
 now draft-only scaffolding, stripped on finalize; the systematic spot-check is
 the gate.)
 
-What the gate decides — **who is SPEAKING, not who is on camera.** It samples a
-per-turn frame burst, resolves WHO each on-screen face is (dlib embeddings via
-`detect-faces.py`) and WHICH face is talking (`active-speaker.py` mouth-motion),
-and folds only when another identified speaker is the active speaker over a
-long-enough window. Framing false-positives (two-shots, reaction cutaways,
-voiceover, brief turns) are absorbed by the dominance + active-speaker +
-duration guards — but the engine can still mis-fire where those guards can't
-see (sub-100px remote-guest tiles, listener mouth motion over a long window),
-so a `contested-fold` means *either a wrong label or an engine miss*; a frame
-read settles which. Verdicts that
+What the gate decides — **who is SPEAKING where the footage can show it, who
+is consistently on camera elsewhere.** It samples a per-turn frame burst and
+resolves WHO each on-screen face is (dlib embeddings via `detect-faces.py`).
+Mouth-motion (`active-speaker.py` MAR) decides the verdict only where it is
+*admissible* — faces of at least `MAR_MIN_FACE` px, because measured at
+podcast resolutions a listener's landmark jitter is indistinguishable from
+speech; below that floor the verdict is the presence/dominance test (a fold =
+the assigned speaker NEVER seen while exactly one other transcript speaker is
+seen consistently over a long-enough, non-silent window). Framing
+false-positives (two-shots, reaction cutaways, voiceover, brief turns) are
+absorbed by the dominance + duration + audio guards — but the engine can
+still mis-fire, so a `contested-fold` means *either a wrong label or an
+engine miss*; a frame read settles which. The honest limitation below the
+admissibility floor: a wrong label with both speakers continuously on camera
+(grid layout) is invisible to this gate — the independent text-side verifier
+carries that case. Verdicts that
 do NOT block — recorded honestly, never a pass-by-omission: `confirmed` /
 `confirmed-with-footnote`, `honestly-unverified` (off-camera/voiceover speaker,
 or no on-camera speaker), `inconclusive`, `no-baseline` (e.g. a moderator with

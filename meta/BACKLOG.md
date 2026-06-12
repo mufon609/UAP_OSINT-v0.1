@@ -94,75 +94,31 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A2 — Make the active-speaker fold gate trustworthy on grid-layout remote-guest video
-
-The fold gate (`finalize-attribution.py` → `spot-check-attribution.py` +
-`active-speaker.py`) returned 14 contested-fold verdicts on a
-verifier-PASSED draft whose labels frame-level reads confirm are mostly
-correct — engine false-positives, with at most one likely genuine label
-error among them. Reproduced on the `weaponized-114` video (persistent
-three-tile grid, remote guest in a low-quality middle tile); evidence
-preserved at `.scratch/handoff/` (`finalize-114.log`,
-`spot-check-114.csv`; probe crops registered in
-`sources/photo-identity-log/`). A dedicated session should investigate
-ONLY this, before any further attribution finalize.
-
-The settlement path is in place: the gate honors `image_verification[]`
-adjudications (`--resolve-turn` writes them; a contested-fold turn whose
-entry still matches its `speaker_id` is reported as settled, not
-blocking; stale entries re-block), so the one likely genuine label error
-can settle durably once frame-read. Do NOT bulk-adjudicate the ~13
-engine false-positives through that path — entries record frame-settled
-judgments, not engine noise; the engine itself is what this entry fixes.
-Failure mechanics:
-
-- **Detection/identification recall on small tiles.** The assigned
-  speaker (Lacatski, middle tile) matched in 0–3 of 7 frames per turn
-  while clearly present — `detect-faces.py` standalone identified him
-  correctly on probe frames at the same timestamps. Compare the two
-  paths' detection parameters (HOG upsampling, extracted frame size);
-  consider upsampling or the CNN model for sub-100px faces.
-- **MAR "active speaker" false positives over long windows.** The
-  active-speaker signal is the MAR range (max−min) across burst frames
-  sampled seconds apart; over a 30–60 s window a listener's smile or
-  laugh crosses the 0.06 `mar_talk_range` default, so a visibly static
-  listener reads as the talker (Corbell: MAR range 0.10–0.31 while
-  motionless in the bursts). Lip motion is only meaningful across
-  adjacent frames (~100 ms); range-across-a-sparse-burst is structurally
-  noisy — rethink the sampling (adjacent-frame pairs per sample point)
-  or the metric.
-- Validate any fix against BOTH the 114 grid layout and the clean 097
-  run (same trio, 0 contested across 226 turns) so the gate keeps its
-  discriminative power, and design for the 038 case (one speaker
-  genuinely audio-only, `on_camera_role: off-camera`). Then re-run the
-  114 finalize as the acceptance test.
-
-**Blocks:** A3 (every remaining attribution finalize runs this gate).
-**Blocked by:** none.
-
 ### A3 — Finish the transcript-sibling backfill, then promote transcript_sibling_presence to error
 
 One of the four sibling-less transcript nodes is done
 (`weaponized-097-lacatski-part2-2025`: verified sibling registered +
 rendered, node speaker ids stamped). The remaining three have completed
-or near-completed text-side pipelines; every finalize is gated on A2.
+or near-completed text-side pipelines.
 Drafts live at their durable pipeline paths
 (`.scratch/attribution-{slug}/{stem}-attribution.yaml`); fold-gate
-evidence and the 096 correction list are under `.scratch/handoff/`. All
+evidence (`spot-check-114-v2.{csv,log}`, `spot-check-097-v2.{csv,log}`)
+and the 096 correction list are under `.scratch/`. All
 source videos are on disk under `sources/video/` (038 at its
 manifest-registered suffixed filename).
 
 - `weaponized-114-lacatski-future-visions-2026` — draft verifier-PASSED
   (independent session `claude-fable-5-verifier-2026-06-11-weaponized-114`;
-  structural validator clean). Remaining: the fold gate (BLOCKED by A2 —
-  its run returned the 14 contested-fold verdicts A2 investigates), then
-  register + render + `stamp-speaker-id.py` confirm (the 097 shape).
-  When re-gating, adjudicate `2336-2343` specifically — the one
-  contested turn whose frame read (Lacatski mid-speech on a
-  Knapp-assigned turn) suggests a genuine label error.
+  structural validator clean). The rebuilt fold-gate engine returns
+  exactly ONE contested-fold: `2336-2343` (assigned s1/Knapp never on
+  camera across the 17 s window while Lacatski is seen 7/7 — frame read
+  suggests a genuine label error). Remaining: settle that turn from
+  frames (`finalize-attribution.py --resolve-turn`), re-run finalize
+  through the gate, then register + render + `stamp-speaker-id.py`
+  confirm (the 097 shape).
 - `weaponized-096-lacatski-part1-2025` — structurally-valid draft;
   independent verifier REJECTED with two cold-open boundary corrections
-  (full list: `.scratch/handoff/096-verifier-corrections.md`). Route
+  (full list: `.scratch/096-verifier-corrections.md`). Route
   to a producer, re-validate, fresh verification; then gate → register
   → stamp.
 - `weaponized-038-lacatski-kelleher-2023` — structurally-valid draft
@@ -180,7 +136,7 @@ transcript_sibling_presence.py` from `warn` to `error` (its documented
 end state) and update its docstring's severity paragraph.
 
 **Blocks:** none.
-**Blocked by:** A2 (every remaining finalize runs the fold gate).
+**Blocked by:** none.
 
 ---
 

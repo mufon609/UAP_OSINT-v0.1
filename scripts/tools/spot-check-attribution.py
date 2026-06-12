@@ -31,6 +31,20 @@ This pass keeps the identity engine but changes what the verdict means:
       * an assigned speaker whose `on_camera_role` is voiceover / off-camera /
         mixed, not seen on camera → honestly-unverified (expected), never a fold.
 
+Two evidence tiers (--asd mar)
+------------------------------
+Mouth-motion (MAR) active-speech evidence is ADMISSIBLE only on faces of at
+least MAR_MIN_FACE px — measured at podcast resolutions (480p grid tiles,
+74-130px), listener landmark jitter is indistinguishable from speech, so
+small-face MAR decides nothing (it is still recorded in the CSV for
+calibration). Where speech evidence is admissible it decides the verdict
+(who is TALKING); everywhere else the verdict is the presence/dominance test
+above, with contested-fold additionally guarded by window length
+(MIN_FOLD_SECONDS) and the audio gate (a near-silent window is b-roll).
+The honest limitation below the admissibility floor: a wrong label where
+both speakers are continuously on camera (grid layout) is invisible to this
+gate — the independent text-side verifier carries that case.
+
 Per-turn verdict:
   - confirmed              — assigned speaker dominates the face-frames (co-present
                              others, if any, noted as two-shot/cutaway).
@@ -116,6 +130,19 @@ MIN_SPAN_S = 2.0
 # fold. `mixed` is included because the speaker alternates on/off camera, so a
 # not-seen window is ambiguous, not evidence of a wrong label.
 OFF_CAMERA_ROLES = {"voiceover", "off-camera", "mixed"}
+
+# Minimum face box size (min(w, h), px) for a MAR observation to count as
+# ACTIVE-SPEECH EVIDENCE. Measured on the weaponized-114 480p grid (74-130px
+# faces): listener landmark jitter alone produces MAR ranges to 0.19 and
+# adjacent-frame (125-250ms) deltas to 0.14 — indistinguishable from speech
+# (speaker median delta 0.044 vs listener 0.037), so below this floor MAR
+# carries no speaking signal under ANY sampling design and verdicts ride on
+# presence/dominance instead. No footage in the corpus has faces large enough
+# to measure where separation begins; 200 is a conservative placeholder —
+# recalibrate against known speaker/listener turns (the active-speaker.py CLI)
+# before trusting MAR on higher-resolution footage. Inadmissible MAR is still
+# recorded in the CSV active_speakers column for calibration.
+MAR_MIN_FACE = 200
 
 # Minimum number of recognized face-frames required before "assigned never seen,
 # another seen consistently" is allowed to fold. A single recognized face-frame
@@ -379,27 +406,38 @@ def verdict_for_turn(expected: set, has_baseline: bool, matches_per_frame: list,
 
 
 def verdict_for_turn_asd(expected: set, has_baseline: bool, mar_by_identity: dict,
-                         matched_frames: int, audio_rms, yaml_speaker_identities: set,
+                         matches_per_frame: list, audio_rms, yaml_speaker_identities: set,
                          defined_baselines: set, assigned_roles: set,
                          mar_talk_range: float, silence_rms: float,
                          window_span: float = 0.0):
-    """Speaking-aware verdict (Stage 2): decide by WHO is actually talking, not
-    who is on screen.
+    """Speaking-aware verdict (Stage 2): active-speech evidence decides where
+    it is ADMISSIBLE; presence/dominance decides everywhere else.
 
-    mar_by_identity — {identity: [MAR values across frames where recognized]};
-                      a face is *actively speaking* when its MAR RANGE (max-min)
-                      over ≥2 observations is ≥ mar_talk_range.
-    matched_frames  — frames that recognized any baseline face.
+    mar_by_identity — {identity: [MAR values from ADMISSIBLE faces only —
+                      min(w,h) >= MAR_MIN_FACE; the caller filters]}; a face is
+                      *actively speaking* when its MAR RANGE (max-min) over ≥2
+                      observations is ≥ mar_talk_range. Measured at podcast
+                      resolutions (see MAR_MIN_FACE), small-face MAR is
+                      landmark jitter, indistinguishable from speech — letting
+                      it decide verdicts is what produced the weaponized-114
+                      false folds, so it carries no verdict weight.
+    matches_per_frame — per-frame identity lists (presence evidence).
     audio_rms       — window mean int16 RMS (None = unknown); below silence_rms
                       the window is treated as b-roll/music/dead air.
 
-    A listening face on screen is NOT a wrong-label signal — only another
-    identified person *speaking* in the assigned span is a fold."""
+    With admissible speech evidence: a listening face on screen is NOT a
+    wrong-label signal — only another identified person *speaking* in the
+    assigned span folds. Without it, the verdict delegates to the
+    presence/dominance test (`verdict_for_turn`), whose fold (assigned NEVER
+    seen, another seen consistently) is additionally guarded here by window
+    length (a brief window proves nothing about who is off-camera) and the
+    audio gate (a near-silent window is b-roll, not evidence)."""
     if not has_baseline:
         return "no-baseline", "no baseline directory for assigned speaker(s)"
 
     off_camera_ok = bool(assigned_roles & OFF_CAMERA_ROLES)
     audio_present = audio_rms is not None and audio_rms >= silence_rms
+    matched_frames = sum(1 for f in matches_per_frame if f)
 
     talking = {}
     for slug, mars in mar_by_identity.items():
@@ -415,21 +453,9 @@ def verdict_for_turn_asd(expected: set, has_baseline: bool, mar_by_identity: dic
                 f"{sorted(assigned_roles)} may be off-camera/voiceover")
         return "inconclusive", "no faces detected or no baseline matches"
 
-    if not talking:
-        # Faces present but no mouth is moving → the speaker is off-camera (or
-        # mouth motion below threshold). A listening face is benign, never a fold.
-        if audio_present:
-            return "honestly-unverified", (
-                f"on-camera face(s) present but none actively speaking "
-                f"(MAR range < {mar_talk_range}); speaker likely off-camera")
-        return "inconclusive", (
-            "no active on-camera speaker and window near-silent (b-roll/music/dead air)")
-
     assigned_talking = sorted(s for s in talking if s in expected)
     other_yaml_talking = sorted(
         s for s in talking if s in yaml_speaker_identities and s not in expected)
-    other_outside_talking = sorted(
-        s for s in talking if s in defined_baselines and s not in yaml_speaker_identities)
 
     if assigned_talking:
         if other_yaml_talking:
@@ -462,12 +488,23 @@ def verdict_for_turn_asd(expected: set, has_baseline: bool, mar_by_identity: dic
         return "contested-fold", (
             f"active on-camera speakers {other_yaml_talking} ≠ assigned — likely wrong label")
 
-    if other_outside_talking:
-        return "contested-other", (
-            f"active speaker is a non-YAML identity "
-            f"(b-roll/archival interview clip): {other_outside_talking}")
-
-    return "inconclusive", "active speaker could not be resolved to a baseline identity"
+    # No admissible active-speech evidence → presence/dominance decides, with
+    # the fold additionally guarded by window length + the audio gate.
+    verdict, notes = verdict_for_turn(
+        expected, has_baseline, matches_per_frame, defined_baselines,
+        yaml_speaker_identities, assigned_roles)
+    if verdict == "contested-fold":
+        if window_span < MIN_FOLD_SECONDS:
+            return "inconclusive", (
+                f"assigned speaker not seen, but the turn window is only "
+                f"{window_span:.0f}s — too brief to confirm they are off-camera "
+                f"(camera may not have cut to them)")
+        if audio_rms is not None and not audio_present:
+            return "inconclusive", (
+                "assigned speaker not seen but window near-silent "
+                "(b-roll/music/dead air) — presence proves nothing here")
+        notes += " (presence signature; no admissible mouth-motion evidence at this face size)"
+    return verdict, notes
 
 
 # Verdict bookkeeping — order drives the summary print + CSV summary key set.
@@ -484,7 +521,8 @@ VERDICTS = (
 def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
                scratch_root: Path = None, embed_threshold: float = 0.50,
                num_samples: int = NUM_SAMPLES, asd_engine: str = "mar",
-               mar_talk_range: float = 0.06, silence_rms: float = 200.0):
+               mar_talk_range: float = 0.06, silence_rms: float = 200.0,
+               mar_min_face: int = MAR_MIN_FACE):
     with yaml_path.open() as f:
         data = yaml.safe_load(f)
 
@@ -553,7 +591,8 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
         window = sample_window(beg_ts, end_ts)
 
         matches_per_frame = []
-        mar_by_identity: dict = {}
+        mar_by_identity: dict = {}       # admissible faces only — verdict evidence
+        mar_all_by_identity: dict = {}   # every face — CSV calibration record
         n_frames = 0
         audio_rms = None
         if window is not None:
@@ -566,12 +605,14 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
                 audio_rms = asd_mod.window_audio_rms(video_path, start, span)
                 for fp in frames:
                     idents = []
-                    for _bbox, enc, mar in asd_mod.analyze_frame(fp):
+                    for bbox, enc, mar in asd_mod.analyze_frame(fp):
                         slug = detect_faces_mod.identify(enc, baseline_index, embed_threshold)
                         if slug:
                             idents.append(slug)
                             if mar is not None:
-                                mar_by_identity.setdefault(slug, []).append(mar)
+                                mar_all_by_identity.setdefault(slug, []).append(mar)
+                                if min(bbox[2], bbox[3]) >= mar_min_face:
+                                    mar_by_identity.setdefault(slug, []).append(mar)
                     matches_per_frame.append(idents)
             else:
                 for fp in frames:
@@ -584,7 +625,7 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
 
         if asd_mod is not None:
             verdict, notes = verdict_for_turn_asd(
-                expected, has_baseline, mar_by_identity, matched_frames, audio_rms,
+                expected, has_baseline, mar_by_identity, matches_per_frame, audio_rms,
                 yaml_speaker_identities, defined_baselines, roles,
                 mar_talk_range, silence_rms,
                 window_span=(window[1] if window is not None else 0.0))
@@ -600,9 +641,11 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
                 if ident not in expected:
                     others_count[ident] = others_count.get(ident, 0) + 1
         others_seen = ",".join(f"{k}:{v}" for k, v in sorted(others_count.items()))
+        # CSV records ALL MAR ranges (admissible or not) for calibration; only
+        # the admissible subset (mar_by_identity) carried verdict weight.
         active_speakers = ",".join(
             f"{k}:{(max(v) - min(v)):.3f}"
-            for k, v in sorted(mar_by_identity.items()) if len(v) >= 2)
+            for k, v in sorted(mar_all_by_identity.items()) if len(v) >= 2)
 
         win_str = ""
         if window is not None:
@@ -680,6 +723,14 @@ def main():
              "actively speaking (default 0.06; --asd mar only)",
     )
     ap.add_argument(
+        "--mar-min-face", type=int, default=MAR_MIN_FACE,
+        help="minimum face box size (min(w,h), px) for MAR to count as active-"
+             f"speech evidence (default {MAR_MIN_FACE}); below it, small-face "
+             "landmark jitter is indistinguishable from speech, so verdicts "
+             "ride on presence/dominance and MAR is recorded for calibration "
+             "only (--asd mar only)",
+    )
+    ap.add_argument(
         "--silence-rms", type=float, default=200.0,
         help="window int16 audio RMS below which the window is treated as "
              "silent/b-roll (default 200; --asd mar only)",
@@ -702,7 +753,8 @@ def main():
 
     spot_check(yaml_path, video_path, output, embed_threshold=args.embed_threshold,
                num_samples=args.frames, asd_engine=args.asd,
-               mar_talk_range=args.mar_talk_range, silence_rms=args.silence_rms)
+               mar_talk_range=args.mar_talk_range, silence_rms=args.silence_rms,
+               mar_min_face=args.mar_min_face)
 
 
 if __name__ == "__main__":

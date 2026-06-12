@@ -55,7 +55,13 @@ if (
 
 import argparse  # noqa: E402
 
-MIN_FACE_SIZE = 80  # px; match detect-faces.py so the same faces are kept
+# px; match detect-faces.py so the same faces are kept. 60 (not 80): a 480p
+# three-tile grid (weaponized-114) renders side-tile faces at 74-75px, which
+# HOG detects and the embedding engine identifies at 0.24-0.34 Euclidean —
+# well inside the 0.50 match threshold — so an 80 floor silently dropped
+# correctly-identifiable speakers. identify()'s distance threshold, not this
+# floor, is the precision gate; the floor only screens background faces.
+MIN_FACE_SIZE = 60
 
 # A face must move its mouth by at least this much MAR (range across the burst)
 # to count as actively speaking. Calibrated against the sibling corpus; exposed
