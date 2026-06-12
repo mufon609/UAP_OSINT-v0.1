@@ -103,7 +103,8 @@ If you're doing anything related to this instance's topic, read
 | What | Where |
 |---|---|
 | Node structure spec | `meta/schema.yaml` (nodes) · `meta/schema-research-artifact.yaml` (research artifacts) |
-| Epistemic standard (why the rules exist) | `README.md` ("What this is" / "Status markers"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
+| Epistemic standard (why the rules exist) | `README.md` ("What this is"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
+| How to use the repo as an investigator | `INVESTIGATOR.md` (why grounding beats an untrained model; reading evidentiary state) |
 | Node templates (one per type) | `meta/templates/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
 | Build-state snapshot | `meta/build-state.md` (auto-generated) |
@@ -158,7 +159,7 @@ If you're doing anything related to this instance's topic, read
 
 ## If you're uncertain about anything
 
-- Default to reading `README.md` ("What this is" / "Status markers") + `meta/schema.yaml` for the epistemic standard.
+- Default to reading `README.md` ("What this is") + `meta/schema.yaml` for the epistemic standard.
 - Default to `meta/schema.yaml` for structural rules.
 - If a question isn't answered by governance docs, ask the user before
   making assumptions that will enter content.

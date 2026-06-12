@@ -21,7 +21,7 @@ task routing). CLAUDE.md below assumes a contributor session.
 
 In order:
 
-1. `README.md` — what this repository is / is not (the epistemic standard + Status markers)
+1. `README.md` — what this repository is / is not (the epistemic standard)
 2. `meta/schema.yaml` — machine-readable node spec (types, kinds, archetypes, required sections, vocabularies); `meta/schema-research-artifact.yaml` — the research-artifact spec (drives `validate-research.py`)
 3. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
 4. `meta/topic/research-queue.md` — current priority build queue
@@ -131,6 +131,7 @@ one-new-synthesis-node rule, §4).
 
 ```
 README.md                   public-facing what-and-why overview
+INVESTIGATOR.md             how to use the repo once it holds nodes (consumer guide)
 AGENTS.md                   consumer entry point — how to query the repo
 CLAUDE.md                   this file — contributor session checklist + reference
 
@@ -225,8 +226,8 @@ etc.); the toolkit reads them via `load_topic()`. Run `/fork-init` for
 the bootstrap walk-through. Everything not deleted by those steps — the
 rest of `meta/` (schema, memory, templates, …), all of `scripts/` and
 `prompts/`, the `.claude/` skills + subagents + hooks + `settings.json`,
-and root-level governance (`CLAUDE.md`, `AGENTS.md`, `README.md`) — is
-topic-neutral toolkit and survives the fork.
+and root-level governance (`CLAUDE.md`, `AGENTS.md`, `README.md`,
+`INVESTIGATOR.md`) — is topic-neutral toolkit and survives the fork.
 
 ---
 

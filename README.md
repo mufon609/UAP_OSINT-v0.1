@@ -1,9 +1,10 @@
 # Primary-Source Investigation Toolkit
 
-*The human entry point: what this repository is, why it exists, and how an
-investigator reads it. Contributor mechanics — repository layout, the
-end-to-end build pipeline, the skills/agents map — live in `CLAUDE.md`; the
-consumer query protocol lives in `AGENTS.md`.*
+*The human entry point: what this repository is and why it exists. How to
+use it once it holds nodes — and how to read a node's evidentiary state —
+is `INVESTIGATOR.md`; the consumer query protocol is `AGENTS.md`;
+contributor mechanics (repository layout, the build pipeline, the
+skills/agents map) are `CLAUDE.md`.*
 
 A structured, versioned knowledge base where every claim is anchored to a
 verifiable primary source. Topic-neutral; the current instance documents
@@ -91,53 +92,18 @@ workflow").
 
 ---
 
-## Status markers
-
-The repository records evidentiary state structurally, not with inline
-emoji on every row. Two mechanisms carry it.
-
-**Confirmed vs. Flagged splits.** Any section that mixes
-primary-source-supported entries with secondary-source-only ones —
-affiliations, relationships, organization key-personnel, event
-participants — splits into `### Confirmed` and `### Flagged`
-subsections:
-
-| Subsection | Meaning |
-|---|---|
-| `### Confirmed` | Established from a primary source linked in the row |
-| `### Flagged` | Cited in secondary sources only; awaiting primary-source confirmation |
-
-`### Flagged` is omitted entirely when empty (a present-but-empty
-Flagged subsection is a schema violation). The split records source
-quality, not truth: a Flagged item may well be true — it just hasn't
-been verified against a primary source yet. On finding nodes, each
-evidence row's weight comes from a structured `attestation_tier` field
-(`sworn-oath`, `dopsr-cleared`, `on-record`, `self-attested`, …) rather
-than a marker.
-
-**Cross-source disagreement.** Where sources conflict, the disagreement
-is documented on the synthesis/finding node where it gains analytical
-meaning, under `## Apparent Contradictions`. Two doctrinal labels
-distinguish the cases by evidence quality:
-
-| Label | Meaning |
-|---|---|
-| `⚠ Disputed — unknown` | Both sides assert; neither has primary-source evidence beyond its own authority to speak |
-| `❌ Contradiction` | Positions conflict and at least one side is backed by primary-source evidence |
-
-These frame how a finding is written; the repository documents both
-sides and does not adjudicate.
-
----
-
 ## Where the mechanics live
 
-This README is the what-and-why. The how lives in three places:
+This README is the what-and-why. The how lives alongside it:
 
+- **`INVESTIGATOR.md`** — how to use the repo once it holds nodes: why
+  primary-source grounding beats an untrained model, how to wield it, and
+  how to read a node's evidentiary state (`### Confirmed` vs `### Flagged`).
+- **`AGENTS.md`** — the consumer query reference: how an investigator
+  queries the corpus (node composition + the structured research-artifact
+  protocol).
 - **`CLAUDE.md`** — the contributor reference: repository layout, the
   end-to-end build pipeline (source → node), and the skills/agents map.
-- **`AGENTS.md`** — the consumer reference: how an investigator queries
-  the corpus (node composition + the structured research-artifact protocol).
 - **`scripts/README.md`** · **`meta/schema.yaml`** · the `.claude/` SKILLs
   — per-script, per-field, and per-role depth.
 
