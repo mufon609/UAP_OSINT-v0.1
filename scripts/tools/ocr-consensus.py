@@ -57,6 +57,11 @@ Subcommands:
              regeneration) — the same load-bearing divergence report (and
              ``--blocked-pages`` check). Use when re-checking a sibling produced
              earlier.
+  apply      Mechanically apply a verifier's correction list (``LINE <n> |
+             FIND: ... | REPLACE: ...``, the ocr-page-verifier output grammar)
+             to the sibling — all-or-nothing, each FIND must match exactly once
+             on its stated line, dry-run by default. Replaces the orchestrator
+             hand-applying each correction with the Edit tool.
   corroborate-quotes
              Check every artifact quote citing this PDF against the engine
              reads (each load-bearing quote token must be corroborated by an
@@ -1212,6 +1217,106 @@ def cmd_verify(args):
                             format_content_block(blocked, vlm_skipped))
 
 
+# ---------------------------------------------------------------------------
+# apply — mechanically apply a verifier's correction list to the sibling.
+# The ocr-page-verifier agents REPORT corrections (they never edit); applying
+# them used to be the orchestrator's hand-Edit step. A script applying the same
+# grammar enforces the "each FIND matches exactly once" rule mechanically and
+# keeps the whole sibling lifecycle on the agents-judge / scripts-mutate line.
+# ---------------------------------------------------------------------------
+
+CORRECTION_RE = re.compile(r"^LINE (\d+) \| FIND: (.+?) \| REPLACE: (.+)$")
+
+
+def parse_corrections(text):
+    """Parse a verifier correction list — one ``LINE <n> | FIND: ... |
+    REPLACE: ...`` per line, the exact grammar the ocr-page-verifier contract
+    emits. Any other non-blank line is a hard error: feed corrections only,
+    never the verifier's prose or its end-of-run summary line. Returns
+    ``[(line_no, find, replace), ...]`` in input order; raises ValueError on
+    any grammar violation (no-op FIND==REPLACE, duplicate LINE+FIND, junk)."""
+    corrections, seen = [], set()
+    for raw in text.splitlines():
+        line = raw.rstrip()
+        if not line.strip():
+            continue
+        m = CORRECTION_RE.match(line)
+        if not m:
+            raise ValueError(
+                "unparseable correction line (expected "
+                f"'LINE <n> | FIND: ... | REPLACE: ...'):\n  {line}")
+        n, find, replace = int(m.group(1)), m.group(2), m.group(3)
+        if find == replace:
+            raise ValueError(f"LINE {n}: FIND and REPLACE are identical: {find!r}")
+        key = (n, find)
+        if key in seen:
+            raise ValueError(f"LINE {n}: duplicate correction for FIND: {find!r}")
+        seen.add(key)
+        corrections.append((n, find, replace))
+    if not corrections:
+        raise ValueError("empty correction list")
+    return corrections
+
+
+def apply_corrections(sib_text, corrections):
+    """Apply parsed corrections to the sibling text, all-or-nothing. Each FIND
+    must occur exactly once on its stated 1-indexed line (0 or >1 is an error
+    and NOTHING is applied). Same-line corrections apply in input order against
+    the already-corrected line. REPLACE is single-line by grammar, so the line
+    count is invariant and later line numbers never shift. Returns
+    ``(new_text, report_lines)``; raises ValueError listing every violation."""
+    lines = sib_text.splitlines(keepends=True)
+    errors, report = [], []
+    for n, find, replace in corrections:
+        if not 1 <= n <= len(lines):
+            errors.append(f"LINE {n}: out of range (sibling has {len(lines)} lines)")
+            continue
+        body = lines[n - 1]
+        count = body.count(find)
+        if count != 1:
+            errors.append(
+                f"LINE {n}: FIND must match exactly once on the line, "
+                f"found {count}: {find!r}")
+            continue
+        lines[n - 1] = body.replace(find, replace, 1)
+        report.append(f"LINE {n}: {find!r} -> {replace!r}")
+    if errors:
+        raise ValueError("\n".join(errors))
+    return "".join(lines), report
+
+
+def cmd_apply(args):
+    """Mechanically apply a verifier correction list to the EXISTING sibling
+    (read from stdin), then point at `verify` to re-confirm. Dry run by
+    default; --write applies. All-or-nothing: any violation writes nothing."""
+    pdf = _resolve_pdf(args.pdf)
+    sibling = pdf.with_suffix(".txt")
+    if not sibling.exists():
+        raise SystemExit(
+            f"no sibling to correct: {sibling}\n"
+            f"  produce it first: ocr-consensus.py run {args.pdf} --vlm-pages ...")
+    if not args.stdin:
+        raise SystemExit(
+            "apply reads the correction list from stdin: pass --stdin and feed "
+            "the verifier's LINE/FIND/REPLACE lines (heredoc)")
+    try:
+        corrections = parse_corrections(sys.stdin.read())
+        new_text, report = apply_corrections(
+            sibling.read_text(encoding="utf-8"), corrections)
+    except ValueError as e:
+        raise SystemExit(f"apply: nothing written —\n{e}")
+    for r in report:
+        print(r)
+    if args.write:
+        sibling.write_text(new_text, encoding="utf-8")
+        print(f"\nApplied {len(report)} correction(s) to {sibling}")
+        print(f"Re-confirm: ocr-consensus.py verify {args.pdf} "
+              f"[--blocked-pages ...]")
+    else:
+        print(f"\nDRY RUN — {len(report)} correction(s) parse clean and each "
+              f"FIND matches exactly once; pass --write to apply")
+
+
 def cmd_corroborate(args):
     """Corroborate every artifact quote citing this PDF against the engine
     reads, then stamp the canonical ``quote_corroboration`` value onto the
@@ -1556,6 +1661,46 @@ def cmd_selftest(_args):
     if _blocked_pages_from_content_block("None") != []:
         failures.append("case11: 'None' should parse to no blocked pages")
 
+    # Case 12: apply — the verifier-correction grammar + the all-or-nothing
+    # application rules (exactly-once FIND, line-count invariance, same-line
+    # sequencing, junk/duplicate/no-op rejection, out-of-range rejection).
+    sib12 = "alpha cstimate of the beta\nthe Kiyshko paper\nplain line\n"
+    cs12 = parse_corrections(
+        "LINE 1 | FIND: cstimate of the | REPLACE: estimate of the\n"
+        "\n"
+        "LINE 2 | FIND: Kiyshko | REPLACE: Klyshko\n")
+    new12, rep12 = apply_corrections(sib12, cs12)
+    if "estimate of the" not in new12 or "Klyshko" not in new12 or len(rep12) != 2:
+        failures.append(f"case12: corrections not applied: {new12!r}")
+    if new12.count("\n") != sib12.count("\n"):
+        failures.append("case12: line count changed (REPLACE must be single-line)")
+    # same-line corrections apply in order against the corrected line
+    new12b, _ = apply_corrections(
+        "aa bb\n", [(1, "aa", "cc"), (1, "bb", "aa")])
+    if new12b != "cc aa\n":
+        failures.append(f"case12: same-line sequencing wrong: {new12b!r}")
+    for bad, why in [
+            ("fixed 3 tokens, left 2\n", "junk (summary) line accepted"),
+            ("LINE 1 | FIND: x | REPLACE: x\n", "no-op FIND==REPLACE accepted"),
+            ("LINE 1 | FIND: a | REPLACE: b\nLINE 1 | FIND: a | REPLACE: b\n",
+             "duplicate LINE+FIND accepted"),
+            ("", "empty list accepted")]:
+        try:
+            parse_corrections(bad)
+            failures.append(f"case12: {why}")
+        except ValueError:
+            pass
+    for bad_cs, why in [
+            ([(1, "absent", "x")], "0-match FIND applied"),
+            ([(1, "a", "x")], "ambiguous (multi-match) FIND applied"),
+            ([(1, "cstimate", "estimate"), (99, "x", "y")],
+             "all-or-nothing violated (good correction + out-of-range)")]:
+        try:
+            apply_corrections(sib12, bad_cs)
+            failures.append(f"case12: {why}")
+        except ValueError:
+            pass
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -1579,6 +1724,8 @@ def cmd_selftest(_args):
           "occurrences unioned, absent quote refused")
     print("  case11: quote_corroboration stamp -> canonical anchors, surgical "
           "insert/idempotent/update, content_block fact round-trip")
+    print("  case12: apply -> verifier grammar parsed strictly, exactly-once "
+          "FIND, all-or-nothing, line count invariant")
     return 0
 
 
@@ -1679,6 +1826,20 @@ def main():
                             "sentinel from the original run is never overwritten by a "
                             "derived value)")
     p_vfy.set_defaults(func=cmd_verify)
+
+    p_app = sub.add_parser(
+        "apply", help="mechanically apply a verifier correction list "
+                      "(LINE <n> | FIND: ... | REPLACE: ..., from stdin) to the "
+                      "EXISTING sibling — all-or-nothing, each FIND must match "
+                      "exactly once on its stated line; dry run by default")
+    p_app.add_argument("pdf", help="source PDF whose .txt sibling to correct")
+    p_app.add_argument("--stdin", action="store_true", required=True,
+                       help="read the correction list from stdin (heredoc) — "
+                            "correction lines only, never the verifier's prose "
+                            "or summary line")
+    p_app.add_argument("--write", action="store_true",
+                       help="apply the corrections (default: dry run / report only)")
+    p_app.set_defaults(func=cmd_apply)
 
     p_cor = sub.add_parser(
         "corroborate-quotes",

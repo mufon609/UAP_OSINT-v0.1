@@ -56,6 +56,11 @@ For each real **fix** (omit leave-cases), one per line, exactly:
 LINE <sibling_line_number> | FIND: <short exact current substring + a couple words of unique context> | REPLACE: <corrected substring>
 ```
 
-Make each `FIND` substring unique enough to match exactly once on that line. End
-with a one-line summary: tokens checked, left, fixed. Leave-cases (sibling already
-matches the image; OCR engines merely share a glyph error) produce **no** line.
+Your list is **machine-applied** (`ocr-consensus.py apply` parses exactly this
+grammar): `FIND`/`REPLACE` are literal substrings of the sibling line — no
+ellipses, no added quotes or brackets, no multi-line `REPLACE` — and a correction
+line carries nothing besides the grammar. Make each `FIND` substring unique
+enough to match exactly once on that line (the tool hard-errors otherwise). End
+with a one-line summary on its own line: tokens checked, left, fixed. Leave-cases
+(sibling already matches the image; OCR engines merely share a glyph error)
+produce **no** line.

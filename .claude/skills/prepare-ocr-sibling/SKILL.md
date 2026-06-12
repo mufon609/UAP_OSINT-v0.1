@@ -5,7 +5,6 @@ argument-hint: {category}/{filename}.pdf
 allowed-tools:
   - Agent(ocr-page-producer, ocr-page-verifier)
   - Read
-  - Edit
   - Bash(python3 scripts/tools/ocr-consensus.py *)
   - Bash(python3 scripts/tools/manifest.py *)
   - Bash(cat *)
@@ -156,10 +155,18 @@ or replace it:
    verifier's output too if it reproduces a passage). Do **not** restate that
    discipline in the dispatch.
 
-   Each verifier returns a `LINE … | FIND: … | REPLACE: …` correction list. **You**
-   apply each with `Edit` on the sibling — centrally, so parallel verifiers never
-   race on the file — confirming each `FIND` matches exactly once first. Then re-run
-   to confirm clean:
+   Each verifier returns a `LINE … | FIND: … | REPLACE: …` correction list. Apply
+   the lists **mechanically** — centrally, so parallel verifiers never race on the
+   file — by feeding the correction lines (only those lines; never the verifier's
+   prose or summary) to the tool, which enforces the each-`FIND`-matches-exactly-once
+   rule and applies all-or-nothing (dry run first, then `--write`):
+   ```
+   python3 scripts/tools/ocr-consensus.py apply sources/{category}/{stem}.pdf --stdin --write <<'EOF'
+   LINE 412 | FIND: cstimate of the | REPLACE: estimate of the
+   EOF
+   ```
+   Never hand-edit the sibling — the corrections are agent judgment, the write is
+   the tool's (agents judge; scripts mutate). Then re-run to confirm clean:
    ```
    python3 scripts/tools/ocr-consensus.py verify sources/{category}/{stem}.pdf [--blocked-pages 9-11,29-30]
    ```
@@ -167,17 +174,22 @@ or replace it:
    the only remaining divergences are OCR errors on a correct sibling. The sibling
    is now confirmed and canonical.
 
-4. **Register the paired manifest entry.**
+4. **Register the paired manifest entry — mechanically.**
    ```
-   python3 scripts/tools/manifest.py add {parent_url}#clean-text-transcription \
-       --path {category}/{stem}.txt --format txt --wayback-skip \
-       --note "Clean-text sibling (VLM page-image read, confirmed against PaddleOCR)
-       of the OCR-scanned <source>. Produced <date>; pages it blocked on the content
-       filter PaddleOCR-filled (<list>). <FOIA/distribution insert preserved verbatim>.
-       Equations/figures bracketed; redactions + source spellings preserved verbatim."
+   python3 scripts/tools/manifest.py add-sibling clean-text \
+       --parent-path {category}/{stem}.pdf \
+       --method "VLM page-image read, confirmed against PaddleOCR + Tesseract" \
+       [--blocked-pages "9-11, 29-30"] \
+       --details "<the editorial remainder: FOIA/distribution insert preserved
+       verbatim; equations/figures bracketed; redactions + source spellings
+       preserved verbatim; source typos kept (list)>"
    ```
-   `#clean-text-transcription` + `--wayback-skip` mark it derived and
-   non-fetchable, paired to the parent PDF entry. Confirm with `manifest.py
+   The tool derives the anchor URL (`{parent_url}#clean-text-transcription`),
+   `wayback_skip`, the sibling path from the parent stem, and the note skeleton
+   (method + produced date + blocked-pages clause) — and **errors if the parent
+   isn't registered**, so the pairing is checked, not remembered. `--method` is
+   required (record VLM / Tesseract / cloud-OCR / manual deliberately); only the
+   genuinely editorial remainder rides `--details`. Confirm with `manifest.py
    verify-paths`. **Register the sibling at the moment of creation** — a
    sibling-on-disk-but-not-in-manifest is a silent dependency: quote
    verification depends on a file the manifest doesn't record, and deleting it

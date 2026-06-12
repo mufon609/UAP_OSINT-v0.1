@@ -12,6 +12,13 @@ spec.
 
 Commands:
   manifest.py add URL --path PATH [--format FMT] [--note TEXT]
+  manifest.py add-sibling {clean-text|speaker-attribution} \
+              (--parent-path PATH | --parent-url URL) ...
+                                       # register a derived sibling: anchor URL,
+                                       # wayback_skip, paths, formats, and the
+                                       # note skeleton all derived; pairing with
+                                       # the parent entry is checked, not
+                                       # remembered
   manifest.py status URL               # show URL entry with all artifacts
   manifest.py pending                  # list URLs needing archival
   manifest.py usage URL                # list nodes citing URL
@@ -373,8 +380,162 @@ def cmd_edit(args):
         print(f"  {field}: {old!r} -> {new!r}")
 
 
+# Sibling-kind table: anchor fragment + which parent artifacts qualify.
+# clean-text pairs to an OCR-scan/extraction-lossy PDF; speaker-attribution
+# pairs to a label-less transcript (anything but the two labeled classes).
+SIBLING_KINDS = {
+    "clean-text": {
+        "fragment": "clean-text-transcription",
+        "gate_field": "extraction_type",
+        "gate_ok": lambda v: v in ("ocr-scan", "extraction-lossy"),
+        "gate_msg": "parent is not flagged ocr-scan / extraction-lossy",
+        "parent_suffixes": (".pdf",),
+    },
+    "speaker-attribution": {
+        "fragment": "speaker-attribution",
+        "gate_field": "transcript_provenance",
+        "gate_ok": lambda v: v not in ("stenographic", "published-transcript"),
+        "gate_msg": "parent is a labeled-class transcript (stenographic / "
+                    "published-transcript) — it needs no attribution sibling",
+        "parent_suffixes": (".md", ".txt"),
+    },
+}
+
+
+def _resolve_parent(entries, kind, parent_url, parent_path):
+    """Resolve the parent (entry, artifact) a sibling pairs to. By --parent-path
+    when given (paths are manifest-unique); by --parent-url otherwise, picking
+    the entry's single kind-eligible artifact — ambiguity is an error directing
+    the caller to --parent-path. Erroring when no parent exists is the point:
+    the sibling↔parent pairing invariant is checked, not remembered."""
+    spec = SIBLING_KINDS[kind]
+    if parent_path:
+        rel = normalize_source_rel_path(parent_path)
+        for e in entries:
+            for a in e.get("artifacts") or []:
+                if a.get("path") == rel:
+                    return e, a
+        print(f"ERROR: no registered artifact with path: sources/{rel} — "
+              f"a sibling pairs to an already-registered parent (register the "
+              f"parent first via `manifest.py add`)", file=sys.stderr)
+        sys.exit(1)
+    entry = _find_entry(entries, parent_url)
+    if entry is None:
+        print(f"ERROR: parent URL not in manifest: {parent_url} — a sibling "
+              f"pairs to an already-registered parent (register the parent "
+              f"first via `manifest.py add`)", file=sys.stderr)
+        sys.exit(1)
+    candidates = [a for a in entry.get("artifacts") or []
+                  if str(a.get("path", "")).endswith(spec["parent_suffixes"])]
+    if len(candidates) != 1:
+        print(f"ERROR: {parent_url} carries {len(candidates)} artifact(s) "
+              f"eligible as a {kind} parent — disambiguate with --parent-path",
+              file=sys.stderr)
+        sys.exit(1)
+    return entry, candidates[0]
+
+
+def _add_via_cmd_add(url, path, fmt, note, archived_date, dry_run):
+    """Register one sibling artifact through cmd_add — the single manifest
+    write path (path-uniqueness, sorted insert, archive_status, save)."""
+    cmd_add(argparse.Namespace(
+        url=url, path=path, format=fmt, note=note,
+        extraction_type=None, transcript_provenance=None,
+        wayback_skip=True, archived_date=archived_date, dry_run=dry_run))
+
+
+def cmd_add_sibling(args):
+    """Register a derived sibling on the manifest with every mechanical part
+    derived instead of hand-composed: the synthetic anchor URL (parent URL +
+    kind fragment), wayback_skip, the sibling path(s) from the parent stem
+    (speaker-attribution registers the .yaml source-of-truth AND the rendered
+    -attributed.md view in one call), formats, archived_date, and the note
+    skeleton (the genuinely editorial remainder rides --details verbatim).
+    The parent must already be registered (pairing checked, not remembered);
+    the sibling file(s) must exist on disk (register at the moment of
+    creation — an unregistered sibling is a silent dependency)."""
+    kind = args.kind
+    spec = SIBLING_KINDS[kind]
+    if not args.parent_url and not args.parent_path:
+        print("ERROR: pass --parent-path or --parent-url", file=sys.stderr)
+        sys.exit(1)
+    if kind == "clean-text" and not args.method:
+        print("ERROR: clean-text requires --method (VLM page-image read / "
+              "Tesseract / cloud-OCR / manual — recording the production "
+              "method is deliberate, so there is no default)", file=sys.stderr)
+        sys.exit(1)
+    if kind == "speaker-attribution" and not args.image_verification:
+        print("ERROR: speaker-attribution requires --image-verification "
+              "('none (mandatory active-speaker fold gate clean — 0 "
+              "contested-fold across N turns)' or 'N turns resolved ...')",
+              file=sys.stderr)
+        sys.exit(1)
+
+    entries = load_manifest()
+    entry, parent = _resolve_parent(entries, kind, args.parent_url,
+                                    args.parent_path)
+    parent_rel = parent["path"]
+    gate_val = parent.get(spec["gate_field"])
+    if not spec["gate_ok"](gate_val):
+        print(f"WARNING: {spec['gate_msg']} "
+              f"({spec['gate_field']}: {gate_val!r} on sources/{parent_rel})",
+              file=sys.stderr)
+
+    anchor = f"{entry['url']}#{spec['fragment']}"
+    produced = args.produced or date.today().isoformat()
+    details = f" {args.details}" if args.details else ""
+
+    if kind == "clean-text":
+        sib_rel = str(Path(parent_rel).with_suffix(".txt"))
+        blocked = (f"pages content-blocked for the VLM PaddleOCR-filled "
+                   f"({args.blocked_pages})" if args.blocked_pages
+                   else "zero pages content-blocked")
+        note = (f"Clean-text sibling ({args.method}) of the OCR-scanned "
+                f"{Path(parent_rel).name} (paired entry; same path stem). "
+                f"Produced {produced}; {blocked}.{details}")
+        siblings = [(sib_rel, "txt", note)]
+    else:
+        stem = Path(parent_rel).stem
+        parent_dir = Path(parent_rel).parent
+        yaml_rel = str(parent_dir / f"{stem}-attribution.yaml")
+        md_rel = str(parent_dir / f"{stem}-attributed.md")
+        verified = args.verified or date.today().isoformat()
+        session = f" (session {args.verify_session})" if args.verify_session else ""
+        yaml_note = (f"Speaker-attribution sibling of the label-less transcript "
+                     f"at {parent_rel}. Produced {produced} via "
+                     f"/prepare-transcript-sibling (agent-based). Verified "
+                     f"{verified} by a separate agent session — PASS{session}. "
+                     f"Image-verification: {args.image_verification}.{details}")
+        md_note = (f"Human-readable rendering of the speaker-attribution "
+                   f"sibling ({Path(yaml_rel).name}) over the source caption "
+                   f"bytes. Derived view; the YAML is the source-of-truth.")
+        siblings = [(yaml_rel, "yaml", yaml_note), (md_rel, "md", md_note)]
+
+    missing = [rel for rel, _f, _n in siblings
+               if not (SOURCES_DIR / rel).exists()]
+    if missing:
+        for rel in missing:
+            print(f"ERROR: sibling file not on disk: sources/{rel} — produce "
+                  f"it first (register at the moment of creation, not before)",
+                  file=sys.stderr)
+        sys.exit(1)
+
+    print(f"Derived registration ({kind}):")
+    print(f"  anchor URL:    {anchor}")
+    print(f"  paired parent: sources/{parent_rel}")
+    for rel, fmt, note in siblings:
+        print(f"  artifact:      sources/{rel}  format: {fmt!r}")
+        print(f"    note: {note}")
+    print()
+    for rel, fmt, note in siblings:
+        _add_via_cmd_add(anchor, rel, fmt, note, produced, args.dry_run)
+    if not args.dry_run:
+        print(f"\n✓ {kind} sibling registered under {anchor}")
+
+
 COMMANDS = {
     "add": cmd_add,
+    "add-sibling": cmd_add_sibling,
     "edit": cmd_edit,
     "set": cmd_edit,
     "status": cmd_status,
@@ -429,6 +590,51 @@ def main():
              "report what would change, without writing the manifest. Lets the "
              "External Investigator self-check a lead before the Archive agent "
              "commits it.")
+
+    p = subparsers.add_parser(
+        "add-sibling",
+        help="register a derived sibling (clean-text .txt or speaker-"
+             "attribution .yaml + rendered .md) with anchor URL, wayback_skip, "
+             "paths, and note skeleton derived; parent pairing checked")
+    p.add_argument("kind", choices=sorted(SIBLING_KINDS),
+                   help="sibling flavor (decides the anchor fragment, derived "
+                        "paths, and note template)")
+    p.add_argument("--parent-path",
+                   help="registered path of the parent artifact the sibling "
+                        "pairs to (paths are manifest-unique)")
+    p.add_argument("--parent-url",
+                   help="parent entry URL (works when it has exactly one "
+                        "kind-eligible artifact; otherwise use --parent-path)")
+    p.add_argument("--produced",
+                   help="date the sibling was produced (YYYY-MM-DD; default "
+                        "today) — also the artifacts' archived_date")
+    p.add_argument("--method",
+                   help="(clean-text, required) production method for the note "
+                        "— e.g. 'VLM page-image read, confirmed against "
+                        "PaddleOCR + Tesseract', 'Tesseract 5, contributor-"
+                        "reviewed', 'manual transcription'")
+    p.add_argument("--blocked-pages",
+                   help="(clean-text) content-blocked pages PaddleOCR-filled, "
+                        "as prose for the note (e.g. '9-11, 29-30'); omit when "
+                        "zero pages blocked")
+    p.add_argument("--verified",
+                   help="(speaker-attribution) independent-verification date "
+                        "(YYYY-MM-DD; default today)")
+    p.add_argument("--verify-session",
+                   help="(speaker-attribution) verifier session id recorded in "
+                        "the note")
+    p.add_argument("--image-verification",
+                   help="(speaker-attribution, required) fold-gate outcome for "
+                        "the note — 'none (mandatory active-speaker fold gate "
+                        "clean — 0 contested-fold across N turns)' or 'N turns "
+                        "resolved against photo-identity-log baselines'")
+    p.add_argument("--details",
+                   help="editorial remainder appended verbatim to the note "
+                        "(preserved typos, redaction handling, FOIA inserts, "
+                        "draft/iteration specifics)")
+    p.add_argument("--dry-run", action="store_true",
+                   help="validate + report the derived entry without writing "
+                        "the manifest")
 
     p = subparsers.add_parser(
         "edit", aliases=["set"],

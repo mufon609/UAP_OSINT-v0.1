@@ -194,12 +194,21 @@ no baseline), `contested-other` (b-roll/archival identity).
 
 On a `contested-fold` (gate blocked):
 1. Read the turn's source lines + the spot-check note (which identity is the
-   active speaker) and confirm against the transcript text.
-2. Relabel the turn's `speaker_id` to the correct speaker (or split it / mark a
-   mixed exchange), and record an `image_verification[]` entry
-   (`resolution: corrected`, `resolved_speaker_id`, `resolved_by: agent-verifier`;
-   use `resolution: ambiguous` + `resolved_by: contributor` when a human must
-   adjudicate).
+   active speaker) and confirm against the transcript text. The judgment of who
+   is speaking is yours/the contributor's; the write is the tool's:
+2. Apply the adjudication **mechanically** — relabels the turn's `speaker_id`
+   and records the structured `image_verification[]` entry in one validated
+   write (dry run first, then `--write`; a mixed exchange takes
+   `--speaker s1,s2`; use `--resolution ambiguous --resolved-by contributor`
+   when a human must adjudicate):
+   ```
+   python3 scripts/build/finalize-attribution.py {draft}.yaml \
+       --resolve-turn {line_range} --speaker s2 \
+       --resolution corrected --resolved-by agent-verifier --write
+   ```
+   Never hand-edit the draft YAML for this — the tool validates the turn
+   exists, the ids are in `speakers[]`, and the resolution agrees with the
+   relabel (agents judge; scripts mutate).
 3. Re-run `validate-speaker-attribution.py`, then re-run finalize — the gate
    must come back clean (0 `contested-fold`) before the sibling is verified.
 
@@ -219,29 +228,30 @@ treats as crosstalk (not a fold).
 
 Once `verification_status: verified`, two artifacts land in the repo:
 
-1. **The YAML sibling** at `sources/transcripts/{stem}-attribution.yaml`
-   via manifest:
-   ```
-   python3 scripts/tools/manifest.py add \
-       {parent_url}#speaker-attribution \
-       --path transcripts/{stem}-attribution.yaml --format yaml \
-       --wayback-skip \
-       --note "Speaker-attribution sibling of the label-less transcript
-       at {original_path}. Produced YYYY-MM-DD via /prepare-transcript-
-       sibling (agent-based). Verified YYYY-MM-DD by a separate agent
-       session — PASS. Image-verification: {none | N turns resolved
-       against photo-identity-log baselines}."
-   ```
-2. **The human-readable rendering** at `sources/transcripts/{stem}-
+1. **Render the human-readable view first** at `sources/transcripts/{stem}-
    attributed.md`, generated deterministically by the renderer:
    ```
    python3 scripts/tools/render-speaker-transcript.py \
        sources/transcripts/{stem}-attribution.yaml \
        --output sources/transcripts/{stem}-attributed.md
    ```
-   Same `#speaker-attribution` parent + `--wayback-skip` on its
-   manifest entry. The rendered .md is a derived view; the YAML is
-   the source-of-truth.
+   The rendered .md is a derived view; the YAML is the source-of-truth.
+2. **Register both on the manifest in one call — mechanically:**
+   ```
+   python3 scripts/tools/manifest.py add-sibling speaker-attribution \
+       --parent-path transcripts/{original_stem}.md \
+       --verified YYYY-MM-DD --verify-session {verifier_session_id} \
+       --image-verification "none (mandatory active-speaker fold gate clean
+       — 0 contested-fold across N turns) | N turns resolved against
+       photo-identity-log baselines" \
+       [--details "<iteration specifics, e.g. draft r3>"]
+   ```
+   The tool derives the anchor URL (`{parent_url}#speaker-attribution`),
+   `wayback_skip`, both sibling paths from the parent stem (the `.yaml`
+   source-of-truth AND the rendered `.md` — the pair is registered atomically,
+   never one forgotten), and both note skeletons — and **errors if the parent
+   isn't registered or either file is missing on disk**, so the pairing is
+   checked, not remembered.
 
 Confirm with `python3 scripts/tools/manifest.py verify-paths`.
 

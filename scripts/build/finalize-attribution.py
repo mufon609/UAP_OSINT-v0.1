@@ -49,6 +49,23 @@ On an already-verified sibling (re-finalize / migration), --verifier-session
 may be omitted — the existing one is kept; the fold gate still runs. Run
 `validate-speaker-attribution.py` afterwards; a verified sibling that still
 carries scaffolding is a FATAL there (this tool is what clears it).
+
+Fold-gate adjudication — `--resolve-turn`. When the gate blocks (or an
+image check otherwise settles a turn), the *judgment* of who is speaking is
+the agent's / contributor's, but the *write* is this tool's (agents emit/
+judge; scripts mutate — the sibling skill carries no Edit tool on purpose):
+
+  ./finalize-attribution.py SIBLING.yaml --resolve-turn 478-512 \
+      --speaker s2 --resolution corrected --resolved-by agent-verifier --write
+
+Relabels the turn's `speaker_id` (for corrected/ambiguous; `--speaker`
+accepts `s2`, a `foreign-*` kind, or a mixed-exchange list `s1,s2`) and
+records the structured `image_verification[]` entry (replacing an earlier
+entry for the same turn on re-adjudication). Validates the turn exists, the
+speaker ids are in `speakers[]`, and the resolution agrees with the relabel
+(corrected must change the label; confirmed must not). Dry run by default;
+`--write` applies. Then re-run `validate-speaker-attribution.py` and
+re-finalize — the gate must come back clean.
 """
 
 import argparse
@@ -183,6 +200,99 @@ def stamp_computed_fields(source_path: Path, data: dict) -> dict:
     return counts
 
 
+def _parse_speaker_spec(data: dict, spec: str):
+    """Parse `--speaker` into a turn-shaped speaker_id value: a speakers[].id
+    string, a `foreign-*` kind, or a 2+ mixed-exchange list (`s1,s2` — ids
+    only, per the schema). Validates every token against speakers[]."""
+    speaker_ids = {s.get("id") for s in data.get("speakers") or []
+                   if isinstance(s, dict)}
+    tokens = [t.strip() for t in spec.split(",") if t.strip()]
+    if not tokens:
+        sys.exit("error: --speaker is empty")
+    if len(tokens) == 1:
+        tok = tokens[0]
+        if tok not in speaker_ids and not tok.startswith("foreign-"):
+            sys.exit(f"error: --speaker {tok!r} matches no speakers[].id "
+                     f"({sorted(speaker_ids)}) and is not a foreign-* kind")
+        return tok
+    bad = [t for t in tokens if t not in speaker_ids]
+    if bad:
+        sys.exit(f"error: mixed-exchange list may contain only speakers[].id "
+                 f"({sorted(speaker_ids)}); not: {bad}")
+    return tokens
+
+
+def resolve_turn(data: dict, line_range: str, resolved, resolution: str,
+                 resolved_by: str):
+    """Apply one fold-gate adjudication: relabel the turn's `speaker_id` (for
+    corrected/ambiguous) and upsert the structured `image_verification[]`
+    entry for that turn. The judgment is the caller's; this is only the write.
+    Returns (old_speaker_id, replaced_existing_entry)."""
+    turn = next((t for t in data.get("turns") or []
+                 if isinstance(t, dict)
+                 and str(t.get("line_range")) == line_range), None)
+    if turn is None:
+        sys.exit(f"error: no turn with line_range {line_range!r} "
+                 f"(it must match a turns[].line_range exactly — the form the "
+                 f"fold gate prints)")
+    current = turn.get("speaker_id")
+    if resolution == "corrected" and current == resolved:
+        sys.exit(f"error: resolution=corrected but the turn already carries "
+                 f"{current!r} — use confirmed for image evidence that "
+                 f"supports the existing label")
+    if resolution == "confirmed" and current != resolved:
+        sys.exit(f"error: resolution=confirmed but the turn carries "
+                 f"{current!r}, not {resolved!r} — use corrected to relabel")
+    if resolution in ("corrected", "ambiguous"):
+        turn["speaker_id"] = resolved
+    entry = {"turn_line_range": line_range, "resolution": resolution,
+             "resolved_speaker_id": resolved, "resolved_by": resolved_by}
+    ivs = data.setdefault("image_verification", [])
+    for i, e in enumerate(ivs):
+        if isinstance(e, dict) and e.get("turn_line_range") == line_range:
+            ivs[i] = entry
+            return current, True
+    ivs.append(entry)
+    return current, False
+
+
+def cmd_resolve(args, path: Path) -> None:
+    """`--resolve-turn` mode — the draft-phase adjudication write."""
+    for val, name in ((args.speaker, "--speaker"),
+                      (args.resolution, "--resolution"),
+                      (args.resolved_by, "--resolved-by")):
+        if not val:
+            sys.exit(f"error: --resolve-turn requires {name}")
+    if args.video or args.no_video or args.verifier_session:
+        sys.exit("error: --resolve-turn is the adjudication write only — it "
+                 "takes no gate/session flags (re-run finalize afterwards)")
+    with path.open() as f:
+        data = strict_yaml_load(f)
+    if not isinstance(data, dict):
+        sys.exit("error: sibling is not a YAML mapping")
+
+    resolved = _parse_speaker_spec(data, args.speaker)
+    old, replaced = resolve_turn(data, args.resolve_turn, resolved,
+                                 args.resolution, args.resolved_by)
+
+    print(f"Turn {args.resolve_turn}: speaker_id {old!r} -> {resolved!r} "
+          f"({args.resolution}, by {args.resolved_by})")
+    print(f"image_verification[]: entry "
+          f"{'replaced for re-adjudication' if replaced else 'appended'}")
+    if not args.write:
+        print("\nDRY RUN — nothing written; pass --write to apply, then re-run "
+              "validate-speaker-attribution.py + finalize")
+        return
+    body = yaml.safe_dump(data, sort_keys=False, default_flow_style=False,
+                          allow_unicode=True, width=4096)
+    prefix = HEADER + "\n" if data.get("verification_status") == "verified" else ""
+    with path.open("w") as f:
+        f.write(prefix + body)
+    print(f"\nApplied to {path}")
+    print("Next: validate-speaker-attribution.py, then re-run finalize — the "
+          "fold gate must come back clean")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -190,17 +300,42 @@ def main() -> None:
     ap.add_argument("--verifier-session",
                     help="verifier agent session id (sets status=verified). "
                          "Optional when the sibling is already verified.")
-    gate = ap.add_mutually_exclusive_group(required=True)
+    gate = ap.add_mutually_exclusive_group(required=False)
     gate.add_argument("--video", help="source recording — runs the active-speaker "
                                       "fold gate; contested-fold blocks finalize")
     gate.add_argument("--no-video", action="store_true",
                       help="explicit opt-out for a genuinely audio-only source "
                            "(no recording to verify against)")
+    ap.add_argument("--resolve-turn", metavar="LINE_RANGE",
+                    help="fold-gate adjudication write: relabel this turn (by "
+                         "its exact line_range) + record the structured "
+                         "image_verification[] entry, instead of finalizing. "
+                         "Requires --speaker / --resolution / --resolved-by; "
+                         "dry run unless --write.")
+    ap.add_argument("--speaker",
+                    help="(resolve) final speaker_id — a speakers[].id, a "
+                         "foreign-* kind, or a mixed-exchange list 's1,s2'")
+    ap.add_argument("--resolution", choices=["confirmed", "corrected", "ambiguous"],
+                    help="(resolve) image-evidence verdict per the schema")
+    ap.add_argument("--resolved-by", choices=["agent-verifier", "contributor"],
+                    help="(resolve) who made the adjudication call")
+    ap.add_argument("--write", action="store_true",
+                    help="(resolve) apply the adjudication (default: dry run)")
     args = ap.parse_args()
 
     path = Path(args.path)
     if not path.is_file():
         sys.exit(f"error: not found: {path}")
+
+    if args.resolve_turn:
+        cmd_resolve(args, path)
+        return
+    if args.write or args.speaker or args.resolution or args.resolved_by:
+        sys.exit("error: --speaker/--resolution/--resolved-by/--write belong "
+                 "to --resolve-turn mode")
+    if not args.video and not args.no_video:
+        ap.error("one of --video / --no-video is required to finalize "
+                 "(the fold gate is not skippable by omission)")
 
     # Active-speaker fold gate — runs before any mutation, so a blocked finalize leaves the
     # sibling untouched for the producer/verifier to fix and re-run.
