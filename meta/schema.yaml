@@ -235,6 +235,9 @@ types:
         # the document and cite the specific passage. No contributor-prose
         # synthesis layer sits between the source and the reader; drift
         # surfaces cannot exist where contributor prose cannot rephrase.
+        # Credibility analysis of the author or publisher belongs on that
+        # person's / organization's node (credibility_notes is a person-only
+        # section), never on the document — the document IS the fact record.
         required_sections:
           - Document Summary
           - Description

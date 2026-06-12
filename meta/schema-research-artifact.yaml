@@ -525,8 +525,8 @@ primary_sources_entry:
   #   metadata — not rendered; the audit-facing record, not reader-facing
   #   evidence. Carries the corroboration date, the quote count, and the
   #   sibling's sha256 prefix; presence + freshness are backstopped at the
-  #   commit boundary by the quote_ocr_corroboration check (warn until the
-  #   legacy backfill completes; see the BACKLOG entry). Present only on
+  #   commit boundary by the quote_ocr_corroboration check (error — every
+  #   quoted sibling-backed PDF carries a fresh stamp). Present only on
   #   quoted sibling-backed sources; unquoted or text-native sources omit it.
 
 # --- Entry shapes per top-level list section ---
