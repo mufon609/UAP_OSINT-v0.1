@@ -59,20 +59,20 @@ context_extrinsic:
 speakers:
 - id: s1
   added_date: '2026-05-17'
-  name: George Knapp
-  role: Co-Host
-  node_link: /people/george-knapp
-  source:
-    path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
-    location: '[2:43]'
-- id: s2
-  added_date: '2026-05-17'
   name: Jeremy Corbell
   role: Co-Host
   node_link: /people/jeremy-corbell
   source:
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     location: '[1:04]'
+- id: s2
+  added_date: '2026-05-17'
+  name: George Knapp
+  role: Co-Host
+  node_link: /people/george-knapp
+  source:
+    path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
+    location: '[2:43]'
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski

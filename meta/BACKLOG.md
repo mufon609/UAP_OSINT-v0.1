@@ -94,6 +94,93 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
+### A2 — Make the active-speaker fold gate trustworthy on grid-layout remote-guest video
+
+The fold gate (`finalize-attribution.py` → `spot-check-attribution.py` +
+`active-speaker.py`) returned 14 contested-fold verdicts on a
+verifier-PASSED draft whose labels frame-level reads confirm are mostly
+correct — engine false-positives, with at most one likely genuine label
+error among them. Reproduced on the `weaponized-114` video (persistent
+three-tile grid, remote guest in a low-quality middle tile); evidence
+preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/` (`finalize-114.log`,
+`spot-check-114.csv`; probe crops registered in
+`sources/photo-identity-log/`). A dedicated session should investigate
+ONLY this, before any further attribution finalize. Failure mechanics:
+
+- **Detection/identification recall on small tiles.** The assigned
+  speaker (Lacatski, middle tile) matched in 0–3 of 7 frames per turn
+  while clearly present — `detect-faces.py` standalone identified him
+  correctly on probe frames at the same timestamps. Compare the two
+  paths' detection parameters (HOG upsampling, extracted frame size);
+  consider upsampling or the CNN model for sub-100px faces.
+- **MAR "active speaker" false positives over long windows.** The
+  active-speaker signal is the MAR range (max−min) across burst frames
+  sampled seconds apart; over a 30–60 s window a listener's smile or
+  laugh crosses the 0.06 `mar_talk_range` default, so a visibly static
+  listener reads as the talker (Corbell: MAR range 0.10–0.31 while
+  motionless in the bursts). Lip motion is only meaningful across
+  adjacent frames (~100 ms); range-across-a-sparse-burst is structurally
+  noisy — rethink the sampling (adjacent-frame pairs per sample point)
+  or the metric.
+- **The adjudication design gap.** `meta/schema-speaker-attribution.yaml`
+  defines `image_verification[]` (resolution: confirmed / corrected /
+  ambiguous) as the durable fold-settlement record, and the skill's §5
+  directs recording it and re-running finalize — but `run_fold_gate()`
+  reads only the CSV verdicts, so a settled keep-verdict can never clear
+  the gate. Decide the intended behavior (honor adjudication entries
+  with explicit reporting, vs. engine-must-agree) and align tool, skill,
+  and schema.
+- Validate any fix against BOTH the 114 grid layout and the clean 097
+  run (same trio, 0 contested across 226 turns) so the gate keeps its
+  discriminative power, and design for the 038 case (one speaker
+  genuinely audio-only, `on_camera_role: off-camera`). Then re-run the
+  114 finalize as the acceptance test.
+
+**Blocks:** A3 (every remaining attribution finalize runs this gate).
+**Blocked by:** none.
+
+### A3 — Finish the transcript-sibling backfill, then promote transcript_sibling_presence to error
+
+One of the four sibling-less transcript nodes is done
+(`weaponized-097-lacatski-part2-2025`: verified sibling registered +
+rendered, node speaker ids stamped). The remaining three have completed
+or near-completed text-side pipelines; every finalize is gated on A2.
+Drafts + evidence preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/`
+(`/tmp` is periodically cleaned and has eaten drafts twice; copy a draft
+back to its `/tmp/attribution-{slug}/` path before resuming its
+pipeline). All source videos are on disk under `sources/video/` (038 at
+its manifest-registered suffixed filename).
+
+- `weaponized-114-lacatski-future-visions-2026` — draft verifier-PASSED
+  (independent session `claude-fable-5-verifier-2026-06-11-weaponized-114`;
+  structural validator clean). Remaining: the fold gate (BLOCKED by A2 —
+  its run returned the 14 contested-fold verdicts A2 investigates), then
+  register + render + `stamp-speaker-id.py` confirm (the 097 shape).
+  When re-gating, adjudicate `2336-2343` specifically — the one
+  contested turn whose frame read (Lacatski mid-speech on a
+  Knapp-assigned turn) suggests a genuine label error.
+- `weaponized-096-lacatski-part1-2025` — structurally-valid draft;
+  independent verifier REJECTED with two cold-open boundary corrections
+  (full list: `096-verifier-corrections.md` in the handoff dir). Route
+  to a producer, re-validate, fresh verification; then gate → register
+  → stamp.
+- `weaponized-038-lacatski-kelleher-2023` — structurally-valid draft
+  (200 turns, produced via the contract's incremental emission; Knapp is
+  audio-only this episode, `on_camera_role: off-camera`). Needs its
+  independent verification; then gate → register → stamp.
+
+For each: after registration, confirm the node's existing `speaker_id`
+values against the verified sibling (`stamp-speaker-id.py`) and correct
+any divergence — hand-keyed attribution is exactly the divergence hazard
+the sibling exists to remove.
+
+When all four are verified, promote `scripts/checks/
+transcript_sibling_presence.py` from `warn` to `error` (its documented
+end state) and update its docstring's severity paragraph.
+
+**Blocks:** C3 (its recorded resume state pins the `/tmp` draft paths).
+**Blocked by:** A2 (every remaining finalize runs the fold gate).
+
 ---
 
 ## B. Parallel batch (renderer pass)
@@ -107,57 +194,6 @@ _(none)_
 ## C. Anytime (no dependencies)
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
-
-### C1 — Backfill the four sibling-less weaponized attribution siblings, then promote transcript_sibling_presence to error
-
-Four transcript nodes carry hand-attributed `speaker_id` quotes on
-auto-caption sources with no verified attribution sibling — built before
-the sibling gate existed, so the one mechanical attribution check
-(`speaker_attribution_consistency`) silently skips them. Per-slug state
-(drafts preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/` — /tmp is
-periodically cleaned and has already eaten one scratch file; copy a draft
-back to its `/tmp/attribution-{slug}/` path before resuming its pipeline):
-
-- `weaponized-097-lacatski-part2-2025` — FURTHEST. Draft r3 (216 turns)
-  passed the structural validator and an independent verification
-  (verifier session `attribution-verifier-2026-06-11-weaponized-097-r3`;
-  two content corrections from the r1 rejection applied and re-checked).
-  Video on disk at `sources/video/weaponized-097-lacatski-part2-2025.mp4`.
-  Remaining: the mandatory active-speaker fold gate
-  (`finalize-attribution.py --verifier-session
-  attribution-verifier-2026-06-11-weaponized-097-r3 --video …`) was started
-  and stopped mid-run (clean: it writes nothing until it passes) — re-run
-  it, settle any `contested-fold`, then register + render (skill §6) and
-  `stamp-speaker-id.py` dry-run-confirm the node's hand-keyed values.
-- `weaponized-114-lacatski-future-visions-2026` — draft written (213
-  turns, full coverage) but FATALs the structural validator: YAML parse
-  error at draft line 114 col 5 (unquoted scalar class). Route to a
-  producer for the repair, then validator → verifier → gate → register.
-- `weaponized-038-lacatski-kelleher-2023` (2373 lines) and
-  `weaponized-096-lacatski-part1-2025` (1476 lines) — no draft yet. Two
-  producer attempts failed on harness limits: one request timeout
-  (~69 min), two hit the 64k single-response output cap mid-draft (the
-  successful 097/114 producers emitted their YAML across multiple
-  writes). If the cap recurs, that is producer-contract friction —
-  consider directing incremental section-by-section Write/Edit emission
-  in the contract rather than one full-file emission.
-- Videos for 038/096/114 are not yet on disk — fetch with
-  `download-video.py {manifest url} --slug {slug} --skip-manifest`
-  before each finalize (the gate refuses to run without the recording;
-  `.venv-face` is installed and working).
-
-For each: finish the `/prepare-transcript-sibling` pipeline as above, then
-confirm each node's existing `speaker_id` values against the verified
-sibling (`stamp-speaker-id.py` dry run) and correct any divergence —
-hand-keyed attribution is exactly the divergence hazard the sibling
-exists to remove.
-
-When all four are verified, promote `scripts/checks/
-transcript_sibling_presence.py` from `warn` to `error` (its documented
-end state) and update its docstring's severity paragraph.
-
-**Blocks:** C3 (its recorded resume state pins the `/tmp` draft paths).
-**Blocked by:** none.
 
 ### C3 — Move expensive agent-draft scratch out of /tmp to a durable workspace
 
@@ -180,8 +216,8 @@ is a docs/contract retarget, not a code change. Retire the ad-hoc handoff
 directory once the retarget lands.
 
 **Blocks:** none.
-**Blocked by:** the in-flight transcript-sibling backfill above (don't
-retarget paths under a mid-flight run that resumes from them).
+**Blocked by:** A3 (its recorded resume state pins the `/tmp` draft
+paths — don't retarget under a paused run that resumes from them).
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 

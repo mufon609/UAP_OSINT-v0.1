@@ -4780,6 +4780,19 @@
     transcript_provenance: auto-caption
     path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
     note: 'WEAPONIZED ''The Government UFO Boss - Monsters, Men in Black & UFO Crashes: Dr. James Lacatski (PART 2)'', published 2025-11-11. Runtime ~1h 16m (1787 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. Continuation of the 2025-11-05 PART 1 interview. Topics: slow pace of disclosure, government entities discrediting official investigation, Lacatski''s own encounters with the unknown, current theories about UFO crashes and recovered bodies, whether the Tic Tac objects were ''one of ours''.'
+- url: https://www.youtube.com/watch?v=cggMuAjFJcI#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/weaponized-097-lacatski-part2-2025-downloaded-attribution.yaml
+    archived_date: '2026-06-11'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/weaponized-097-lacatski-part2-2025-downloaded.md. Produced 2026-06-11 via /prepare-transcript-sibling (agent-based, draft r3). Verified 2026-06-11 by a separate agent session — PASS (session attribution-verifier-2026-06-11-weaponized-097-r3). Image-verification: none (mandatory active-speaker fold gate clean — 0 contested-fold across 226 turns).'
+  - format: md
+    path: transcripts/weaponized-097-lacatski-part2-2025-downloaded-attributed.md
+    archived_date: '2026-06-11'
+    note: Human-readable rendering of the speaker-attribution sibling (weaponized-097-lacatski-part2-2025-downloaded-attribution.yaml) over the source caption bytes. Derived view; the YAML is the source-of-truth.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   status: archived
   artifacts:

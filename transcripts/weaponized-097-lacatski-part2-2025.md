@@ -51,8 +51,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Name | Role | Node Link |
 |---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] |
 | Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
+| George Knapp | Co-Host | [`/people/george-knapp`] |
 | Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
 
 ---
