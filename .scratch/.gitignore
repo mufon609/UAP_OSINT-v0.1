@@ -9,5 +9,13 @@
 # are working state, never committed; only this .gitignore is tracked, so the
 # directory exists for new sessions. (Distinct from scripts/scratch/, the
 # throwaway exploratory-query tier.)
+#
+# Lifecycle — durable, not immortal: an entry lives while it is referenced by
+# path from meta/BACKLOG.md / meta/roadmap.md (parked cross-session work named
+# by the open item that owns it) or modified within the grace window; the
+# scratch-hygiene pre-commit gate (scripts/tests/scratch-hygiene.sh) blocks
+# the commit on anything else. Closing a work item includes sweeping its
+# scratch — deletion stays human (age-based auto-deletion is the /tmp failure
+# this directory exists to prevent).
 *
 !.gitignore

@@ -131,6 +131,7 @@ steps=(
     $'phase-routing-parity\tpython3 scripts/build/phase_routing_parity.py --quiet'
     $'skills-check\tbash scripts/tests/skills-check.sh'
     $'file-size-check\tbash scripts/tests/file-size-check.sh'
+    $'scratch-hygiene\tbash scripts/tests/scratch-hygiene.sh'
     $'cookies-check\tbash scripts/tests/cookies-check.sh'
 )
 
