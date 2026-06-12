@@ -17,8 +17,9 @@ kept as records.**
 
 Ongoing entity-node builds driven by the priority queue. Cluster status,
 build candidates, and per-node rationale live in
-`meta/topic/research-queue.md` (canonical); the auto-generated build-state
-block in `CLAUDE.md` is the authoritative count of what shipped.
+`meta/topic/research-queue.md` (canonical); the auto-generated snapshot
+at `meta/build-state.md` records what shipped (node frontmatter is the
+underlying authority).
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 

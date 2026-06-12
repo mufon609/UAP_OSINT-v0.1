@@ -27,7 +27,7 @@ investigation grounded in primary sources.
   gov-doc, non-gov-doc) are separated structurally so a reader sees the
   evidentiary distinction before reading the content
 
-The rules are enforced by `meta/schema.yaml` + the validators in `scripts/checks/`; the build discipline lives in `.claude/skills/build-protocol/`.
+The rules are enforced by `meta/schema.yaml` + the validators in `scripts/build/` (dispatching the per-check modules in `scripts/checks/`); the build discipline lives in `.claude/skills/build-protocol/`.
 
 ---
 

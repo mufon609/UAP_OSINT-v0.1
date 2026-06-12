@@ -275,7 +275,8 @@ invocation; the relay/contract split holds one level down too.
    a build — it runs as its own user-directed `/augment` session.
 8. **Finalize** *(orchestrator step — not a role)* — done when the auditor reports
    `health: pass`. A node was added/changed, so refresh the
-   build-state block (`python3 scripts/build/build-state.py --update`) — the
+   build-state snapshot at `meta/build-state.md`
+   (`python3 scripts/build/build-state.py --update`) — the
    build-state gate (`--check`) is otherwise red at commit. Report the built
    node and a short summary of each role's returned stub. (Stubs are return
    values the orchestrator reads as it goes — handoff rules in "Relay, don't

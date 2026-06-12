@@ -66,6 +66,9 @@ Queue). An empty body is fine on day 1.
 
 ## Step 5 — Health check
 
+First refresh the snapshot for the now-empty corpus:
+`python3 scripts/build/build-state.py --update` (rewrites
+`meta/build-state.md`). Then
 `python3 scripts/build/validate.py`, `python3 scripts/build/build-state.py --check`,
 `bash scripts/tests/pre-commit.sh` — all should exit clean on an empty corpus.
 If any validator errors, the bootstrap is broken; fix before adding content.

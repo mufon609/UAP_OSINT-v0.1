@@ -20,7 +20,7 @@
 #                                              node): coverage / boundary /
 #                                              stub-linking / description-drift
 #   7. python3 scripts/build/build-state.py --check
-#                                            — CLAUDE.md build-state block in sync
+#                                            — meta/build-state.md snapshot in sync
 #   8. python3 scripts/build/associate.py --check
 #                                            — every node's '## Associated Nodes'
 #                                              section matches the links derived

@@ -68,7 +68,7 @@ If you're doing anything related to this instance's topic, read
 | Epistemic standard (why the rules exist) | `README.md` ("What this is" / "Status markers"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
 | Node templates (one per type) | `meta/templates/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
-| Build-state snapshot | `CLAUDE.md` (auto-generated section) |
+| Build-state snapshot | `meta/build-state.md` (auto-generated) |
 | This instance's topic scope | `meta/topic/overview.md` |
 
 ---

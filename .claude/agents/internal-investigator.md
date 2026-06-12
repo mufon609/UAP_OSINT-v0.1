@@ -14,9 +14,11 @@ tools, and you do not extract quotes or build.
 
 Input: `{type}/{slug}` + scope (from the orchestrator).
 
-1. **Survey linked nodes + the manifest.** Which existing nodes
-   (`[`/path`]`), `meta/research/*.yaml`, and `sources/manifest.yaml` entries
-   bear on this target. `manifest.py usage {URL}` / `manifest.py orphans`
+1. **Survey linked nodes + the manifest.** Orient with
+   `meta/build-state.md` (the auto-generated corpus index — every node
+   with status and archetype/kind), then verify against disk: which
+   existing nodes (`[`/path`]`), `meta/research/*.yaml`, and
+   `sources/manifest.yaml` entries bear on this target. `manifest.py usage {URL}` / `manifest.py orphans`
    show what's archived and cited. Assemble the `linked_nodes` set + a
    one-line topic-relevance framing — downstream roles judge load-bearing-ness
    against this context, not the source alone (build-protocol → source-read-first).
