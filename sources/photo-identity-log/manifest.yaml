@@ -136,6 +136,45 @@
   - 200
   added_date: '2026-05-19'
   note: Manually cropped from 16-23 anchor TR quadrant — Haar cascade missed Knapp at every anchor + burst extraction in this video (leaning-back / hand-to-chin poses across the quad-layout segments are not Haar-friendly). Crop region (x=475,y=20,w=200,h=200) resized to 256x256 via PIL.LANCZOS. Older white-haired man, dark button-up shirt, file-box bookshelves (Las Vegas KLAS-TV / Mystery Wire office). Co-host with Jeremy Corbell on WEAPONIZED podcast (confirmed by 54-36 banner 'JEREMY CORBELL & GEORGE KNAPP'). Same manual-crop workflow used for james-ryder/ref_03.
+- identity: george-knapp
+  path: baselines/george-knapp/ref_02.jpg
+  sha256: 2d4b994660e527f4367eded79c54e423f342457b4dce9fe6865ce2fedcc60d6e
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: 00:40
+  bbox:
+  - 283
+  - 160
+  - 186
+  - 185
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Solo close-up, Weaponized ep. 114 intro (Knapp''s archive room, AATIP/AAWSAP boxes visible). Identity: embedding-matched to existing ref_01 + host-of-show visual continuity. Recall enrichment: Knapp had one baseline ref and measured weakest face-frame recall (77%) on the ep. 114 grid run.'
+- identity: george-knapp
+  path: baselines/george-knapp/ref_03.jpg
+  sha256: ea728ef8dab28bd01c17abdd2e8842abadfc0817758aabecb00282f65979300b
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: 02:30
+  bbox:
+  - 304
+  - 184
+  - 155
+  - 155
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Solo close-up, second angle/expression from the ep. 114 intro monologue. Identity: embedding-matched + same-shot continuity with the 00:40 ref. Recall enrichment (see ref_02 note).'
+- identity: george-knapp
+  path: baselines/george-knapp/ref_04.jpg
+  sha256: b6e67f82838f5b8587995300d5369442c677e32a3ad79dcf7a1fb8fcb3e2f03d
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: '57:57'
+  bbox:
+  - 643
+  - 196
+  - 75
+  - 75
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Right tile of the ep. 114 three-tile remote grid (75px face at 854x480) — same-domain reference so future small-tile grid frames match closer than crisp solo refs do. Identity: embedding-matched + tile-position continuity with Knapp''s solo shots throughout the episode.'
 - identity: jacky-rosen
   path: baselines/jacky-rosen/ref_01.jpg
   sha256: 78ad5f3882e22d837c9aba3f7b8d7702c5600e425858455e95379d7482829786
@@ -299,6 +338,45 @@
   - 102
   added_date: '2026-05-19'
   note: Frontal close-up, neutral expression; American Security safe + red lamp backdrop (Corbell's WEAPONIZED studio setup). Co-host with George Knapp on WEAPONIZED podcast (confirmed by 54-36 banner 'JEREMY CORBELL & GEORGE KNAPP'). Speaker recurring across WEAPONIZED-038/114/part1/part2 transcripts.
+- identity: jeremy-corbell
+  path: baselines/jeremy-corbell/ref_02.jpg
+  sha256: 2cdf2c886654057504c003918afbe3e7f2088e08d1676712aa6d34934cbe5167
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: '13:50'
+  bbox:
+  - 340
+  - 93
+  - 223
+  - 223
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Solo close-up, Weaponized ep. 114 (co-host, American Security safe backdrop). Identity: embedding-matched to existing ref_01 + host-of-show visual continuity. Recall enrichment: Corbell had one baseline ref (92% face-frame recall on the ep. 114 run).'
+- identity: jeremy-corbell
+  path: baselines/jeremy-corbell/ref_03.jpg
+  sha256: 34c3a3a08994a0f15481297ac1332ef81263848a5f7de78dd19c866582e425d0
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: '33:00'
+  bbox:
+  - 366
+  - 98
+  - 185
+  - 186
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Solo close-up, second angle/expression, ep. 114. Identity: embedding-matched + same-set continuity with the 13:50 ref. Recall enrichment (see ref_02 note).'
+- identity: jeremy-corbell
+  path: baselines/jeremy-corbell/ref_04.jpg
+  sha256: f3dc9e5c1f39295bb4452c2226de783f455583cc81b6b09ea03ddb151185a43e
+  source_video_path: sources/video/weaponized-114-lacatski-future-visions-2026.mp4
+  source_timestamp: '57:57'
+  bbox:
+  - 103
+  - 175
+  - 108
+  - 108
+  added_date: '2026-06-12'
+  source_video_url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  note: 'Left tile of the ep. 114 three-tile remote grid (108px face at 854x480) — same-domain reference for small-tile grid matching. Identity: embedding-matched + tile-position continuity with Corbell''s solo shots throughout the episode.'
 - identity: jesse-michels
   path: baselines/jesse-michels/ref_01.jpg
   sha256: 4f1186fc96cd6d350ae3fc8348a83cb683636d44677a570ab91c984061a072d5
