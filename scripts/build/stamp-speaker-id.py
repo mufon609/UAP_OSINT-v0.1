@@ -182,17 +182,35 @@ def _derive(art, sibling, spath, changes, warnings):
                                 f"({status}) and none was keyed — left unset")
         elif old_set and (old_set & set(span)):
             new = _collapse(old_set)  # consistent — renumber only
-        else:
-            derived = anchor_live or span
-            if not derived:
-                warnings.append(f"quote {q.get('id')!r}: anchor lands in a "
-                                f"non-speaker turn — left unchanged")
-                continue
-            new = _collapse(derived)
+        elif anchor_live:
+            # The anchor turn is a LIVE turn naming a different speaker — the
+            # genuine wrong-label signal (the weaponized-114 q16 case).
+            new = _collapse(anchor_live)
             if old_set:
                 warnings.append(f"quote {q.get('id')!r}: CORRECTED speaker_id "
                                 f"{_collapse(old_set)!r} -> {new!r} "
                                 f"(was inconsistent with the sibling)")
+        else:
+            # The anchor turn is a non-speaker (foreign-*) turn: the quoted
+            # content is recited/read material whose attribution is the
+            # READER's, an editorial call the sibling cannot confirm — and a
+            # live neighbor that only enters `span` through the boundary-slop
+            # tolerance does not own it (deriving from the slop neighbor is
+            # what mis-corrected the weaponized-096 AARO-email-aside quote).
+            # The roster remap must still apply to a keyed value: writing the
+            # remapped id keeps the quote on the same PERSON; skipping the
+            # write while speakers[] gets renumbered would silently flip the
+            # quote to whoever now holds its literal id.
+            if not old_set:
+                warnings.append(f"quote {q.get('id')!r}: anchor lands in a "
+                                f"non-speaker turn and none was keyed — left "
+                                f"unset (reader attribution is editorial)")
+                continue
+            new = _collapse(old_set)
+            warnings.append(f"quote {q.get('id')!r}: anchor lands in a "
+                            f"non-speaker turn — renumbered only, not "
+                            f"sibling-confirmed (reader attribution is "
+                            f"editorial)")
 
         if new is not None and new != old:
             changes.append(f"quote {q.get('id')!r}: speaker_id {old!r} -> {new!r}")

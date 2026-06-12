@@ -395,6 +395,25 @@ def check(ctx):
         anchor_sid = anchor_turn.get("speaker_id") if anchor_turn else None
         anchor_lr = anchor_turn.get("line_range") if anchor_turn else None
 
+        # Anchor turn is foreign-*: the quoted content is recited/read
+        # material whose attribution is the READER's — an editorial call the
+        # sibling cannot confirm. A live neighbor that only enters the span
+        # through the boundary-slop tolerance does not own the quote, so
+        # comparing against it would manufacture a false error (the
+        # weaponized-096 AARO-email-aside quote). Warn, never error.
+        if isinstance(anchor_sid, str) and anchor_sid.startswith("foreign-"):
+            yield Issue(
+                ctx.rel, "warn",
+                f"quotes[{i}] ({q.get('id')!r}): anchor {loc} lands in a "
+                f"foreign-* turn ({anchor_sid!r}, lines {anchor_lr}) — "
+                f"recited/read content; the declared speaker_id is the reader "
+                f"attribution (editorial), not auto-cross-checked"
+                + (f"; live speaker(s) within boundary slop: "
+                   f"{sorted(set(live_sibling_ids))}" if live_sibling_ids else ""),
+                check_name=CHECK_NAME,
+            )
+            continue
+
         if not live_sibling_ids:
             yield Issue(
                 ctx.rel, "warn",
