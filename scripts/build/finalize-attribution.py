@@ -35,11 +35,20 @@ recording cannot be finalized unless the spot-check runs clean.
   ./finalize-attribution.py SIBLING.yaml --verifier-session SESSION_ID --no-video
 
   - `--video PATH`  runs scripts/tools/spot-check-attribution.py across ALL
-    turns; any `contested-fold` verdict (another in-transcript speaker is the
-    active on-camera speaker) BLOCKS finalize and routes back to the producer/
-    verifier. The verdict is trustworthy: framing false-positives (two-shots,
-    cutaways, voiceover) are handled by the dominance + active-speaker +
-    duration guards, so a fold means a likely wrong label.
+    turns; any UNSETTLED `contested-fold` verdict (another in-transcript
+    speaker is the active on-camera speaker) BLOCKS finalize and routes back
+    to the producer/verifier. Framing false-positives (two-shots, cutaways,
+    voiceover) are handled by the dominance + active-speaker + duration
+    guards — but the engine can still mis-fire where those guards can't see
+    (sub-100px remote-guest tiles, listener mouth motion over a long window),
+    so a fold means EITHER a wrong label or an engine miss. The settlement
+    record is `image_verification[]` (the schema's durable fold-settlement
+    record, written via `--resolve-turn`): a contested-fold turn whose
+    line_range carries an entry that still matches the turn's current
+    `speaker_id` is SETTLED — reported with its resolution + resolver, not
+    blocking. A frame-level adjudication outranks the engine heuristic; an
+    entry that no longer matches the turn is STALE and blocks until
+    re-adjudicated.
   - `--no-video`  the explicit, honest opt-out for a genuinely audio-only
     source (no recording to verify against). Recorded as the contributor's
     assertion; the source's `confidence` markers carry the residual.
@@ -65,7 +74,12 @@ entry for the same turn on re-adjudication). Validates the turn exists, the
 speaker ids are in `speakers[]`, and the resolution agrees with the relabel
 (corrected must change the label; confirmed must not). Dry run by default;
 `--write` applies. Then re-run `validate-speaker-attribution.py` and
-re-finalize — the gate must come back clean.
+re-finalize — the recorded adjudication settles that turn's engine verdict
+(reported, never silent), so the gate blocks only on unadjudicated or
+stale folds.
+
+`--selftest` runs the gate's partition logic (settled / stale / blocking)
+on synthetic rows — no video or .venv-face needed.
 """
 
 import argparse
@@ -101,10 +115,45 @@ HEADER = (
 )
 
 
-def run_fold_gate(sibling_path: Path, video_path: Path) -> list:
-    """Fold gate — run the active-speaker spot-check across all turns and return
-    the list of `contested-fold` rows (empty = clean). Exits non-zero if the
-    spot-check itself cannot run (missing video / .venv-face): no graceful
+def _partition_contested(contested: list, data: dict) -> tuple:
+    """Split the engine's `contested-fold` rows into (blocking, settled)
+    against the sibling's recorded `image_verification[]` adjudications.
+
+    A frame-level adjudication outranks the engine heuristic: a row whose
+    line_range carries an entry is SETTLED — reported, never blocking —
+    provided the entry still describes the turn (its `resolved_speaker_id`
+    equals the turn's current `speaker_id`; a mismatch means the turn was
+    relabeled after the adjudication, so the entry is STALE and the row
+    blocks until re-adjudicated). Every resolution settles (confirmed /
+    corrected / ambiguous): each is a recorded frame read, and `confidence`
+    on the turn stays the durable uncertainty marker.
+
+    Returns (blocking, settled): blocking is [(row, stale_entry_or_None)],
+    settled is [(row, entry)]."""
+    turns = {str(t.get("line_range")): t
+             for t in data.get("turns") or [] if isinstance(t, dict)}
+    entries = {str(e.get("turn_line_range")): e
+               for e in data.get("image_verification") or []
+               if isinstance(e, dict)}
+    blocking, settled = [], []
+    for row in contested:
+        lr = str(row.get("line_range"))
+        entry = entries.get(lr)
+        if entry is None:
+            blocking.append((row, None))
+        elif (turns.get(lr) or {}).get("speaker_id") != entry.get("resolved_speaker_id"):
+            blocking.append((row, entry))
+        else:
+            settled.append((row, entry))
+    return blocking, settled
+
+
+def run_fold_gate(sibling_path: Path, video_path: Path) -> tuple:
+    """Fold gate — run the active-speaker spot-check across all turns and
+    partition the `contested-fold` rows against the sibling's recorded
+    `image_verification[]` adjudications (`_partition_contested`). Returns
+    (blocking, settled); any blocking row refuses finalize. Exits non-zero if
+    the spot-check itself cannot run (missing video / .venv-face): no graceful
     skip — an unrunnable gate blocks finalize rather than passing silently."""
     out_csv = Path(tempfile.mkdtemp(prefix="finalize-foldgate-")) / "spot-check.csv"
     cmd = [sys.executable, str(SPOT_CHECK), str(sibling_path),
@@ -117,7 +166,14 @@ def run_fold_gate(sibling_path: Path, video_path: Path) -> list:
             "--no-video for a genuinely audio-only source."
         )
     with out_csv.open() as f:
-        return [r for r in csv.DictReader(f) if r.get("verdict") == "contested-fold"]
+        contested = [r for r in csv.DictReader(f) if r.get("verdict") == "contested-fold"]
+    if not contested:
+        return [], []
+    with sibling_path.open() as f:
+        data = strict_yaml_load(f)
+    if not isinstance(data, dict):
+        sys.exit("error: sibling is not a YAML mapping")
+    return _partition_contested(contested, data)
 
 
 def finalize(data: dict, verifier_session: str | None) -> dict:
@@ -290,13 +346,72 @@ def cmd_resolve(args, path: Path) -> None:
         f.write(prefix + body)
     print(f"\nApplied to {path}")
     print("Next: validate-speaker-attribution.py, then re-run finalize — the "
-          "fold gate must come back clean")
+          "recorded adjudication settles this turn's engine verdict (reported, "
+          "never silent); the gate blocks only on unadjudicated/stale folds")
+
+
+def cmd_selftest() -> int:
+    """Exercise `_partition_contested` on synthetic rows — settled (all three
+    resolutions), stale, unadjudicated, and list-valued speaker_id — with no
+    video / .venv-face dependency."""
+    failures = []
+    data = {
+        "turns": [
+            {"line_range": "10-20", "speaker_id": "s1"},
+            {"line_range": "30-40", "speaker_id": "s2"},
+            {"line_range": "50-60", "speaker_id": ["s1", "s2"]},
+            {"line_range": "70-80", "speaker_id": "s1"},
+            {"line_range": "90-99", "speaker_id": "s2"},
+        ],
+        "image_verification": [
+            {"turn_line_range": "10-20", "resolution": "confirmed",
+             "resolved_speaker_id": "s1", "resolved_by": "contributor"},
+            {"turn_line_range": "30-40", "resolution": "corrected",
+             "resolved_speaker_id": "s2", "resolved_by": "agent-verifier"},
+            {"turn_line_range": "50-60", "resolution": "ambiguous",
+             "resolved_speaker_id": ["s1", "s2"], "resolved_by": "contributor"},
+            {"turn_line_range": "70-80", "resolution": "corrected",
+             "resolved_speaker_id": "s2", "resolved_by": "contributor"},
+        ],
+    }
+    rows = [{"line_range": lr, "verdict": "contested-fold"}
+            for lr in ("10-20", "30-40", "50-60", "70-80", "90-99")]
+    blocking, settled = _partition_contested(rows, data)
+
+    settled_lrs = {r.get("line_range") for r, _ in settled}
+    if settled_lrs != {"10-20", "30-40", "50-60"}:
+        failures.append(f"settled set wrong: {sorted(settled_lrs)} "
+                        f"(expected confirmed + corrected + ambiguous matches, "
+                        f"incl. the list-valued speaker_id)")
+    by_lr = {r.get("line_range"): stale for r, stale in blocking}
+    if set(by_lr) != {"70-80", "90-99"}:
+        failures.append(f"blocking set wrong: {sorted(by_lr)}")
+    # 70-80: entry says s2 but the turn carries s1 → stale, entry returned
+    if not isinstance(by_lr.get("70-80"), dict):
+        failures.append("stale adjudication did not return its entry")
+    # 90-99: no entry at all → blocking with None
+    if by_lr.get("90-99", "missing") is not None:
+        failures.append("unadjudicated row should block with entry=None")
+    # no contested rows → trivially clean partition
+    if _partition_contested([], data) != ([], []):
+        failures.append("empty contested list should partition to ([], [])")
+
+    if failures:
+        print(f"SELFTEST FAILED ({len(failures)}):")
+        for msg in failures:
+            print(f"  - {msg}")
+        return 1
+    print("selftest: 6 partition expectations green (settled confirmed/"
+          "corrected/ambiguous + list speaker_id; stale + unadjudicated block)")
+    return 0
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("path", help="path to {slug}-attribution.yaml")
+    ap.add_argument("path", nargs="?",
+                    help="path to {slug}-attribution.yaml (required except "
+                         "with --selftest)")
     ap.add_argument("--verifier-session",
                     help="verifier agent session id (sets status=verified). "
                          "Optional when the sibling is already verified.")
@@ -321,8 +436,15 @@ def main() -> None:
                     help="(resolve) who made the adjudication call")
     ap.add_argument("--write", action="store_true",
                     help="(resolve) apply the adjudication (default: dry run)")
+    ap.add_argument("--selftest", action="store_true",
+                    help="run the fold-gate partition logic on synthetic rows "
+                         "(no video / .venv-face needed) and exit")
     args = ap.parse_args()
 
+    if args.selftest:
+        sys.exit(cmd_selftest())
+    if not args.path:
+        ap.error("path to {slug}-attribution.yaml is required (or --selftest)")
     path = Path(args.path)
     if not path.is_file():
         sys.exit(f"error: not found: {path}")
@@ -343,15 +465,31 @@ def main() -> None:
         video = Path(args.video)
         if not video.is_file():
             sys.exit(f"error: --video not found: {video}")
-        contested = run_fold_gate(path, video)
-        if contested:
-            print("\nACTIVE-SPEAKER GATE BLOCKED — contested-fold turn(s); finalize refused. "
-                  "Fix attribution (relabel) and re-run:", file=sys.stderr)
-            for r in contested:
-                print(f"  lines {r.get('line_range'):>12} "
-                      f"(assigned {r.get('speaker_id')}): {r.get('notes')}", file=sys.stderr)
+        blocking, settled = run_fold_gate(path, video)
+        for row, entry in settled:
+            print(f"  lines {row.get('line_range'):>12} engine contested-fold — settled by "
+                  f"image_verification[] ({entry.get('resolution')}, "
+                  f"by {entry.get('resolved_by')}; "
+                  f"speaker_id {entry.get('resolved_speaker_id')!r})")
+        if blocking:
+            print("\nACTIVE-SPEAKER GATE BLOCKED — unsettled contested-fold turn(s); finalize "
+                  "refused. Fix attribution (relabel), or adjudicate from frames "
+                  "(--resolve-turn) if the engine is wrong, and re-run:", file=sys.stderr)
+            for row, stale in blocking:
+                note = ""
+                if stale is not None:
+                    note = (f" [STALE adjudication: entry resolved_speaker_id "
+                            f"{stale.get('resolved_speaker_id')!r} no longer matches the "
+                            f"turn — re-adjudicate]")
+                print(f"  lines {row.get('line_range'):>12} "
+                      f"(assigned {row.get('speaker_id')}): {row.get('notes')}{note}",
+                      file=sys.stderr)
             sys.exit(2)
-        print("Active-speaker fold gate: clean (0 contested-fold).")
+        if settled:
+            print(f"Active-speaker fold gate: clean ({len(settled)} contested-fold "
+                  f"verdict(s) settled by recorded adjudication; 0 unsettled).")
+        else:
+            print("Active-speaker fold gate: clean (0 contested-fold).")
 
     with path.open() as f:
         data = strict_yaml_load(f)

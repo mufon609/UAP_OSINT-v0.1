@@ -186,21 +186,28 @@ per-turn frame burst, resolves WHO each on-screen face is (dlib embeddings via
 and folds only when another identified speaker is the active speaker over a
 long-enough window. Framing false-positives (two-shots, reaction cutaways,
 voiceover, brief turns) are absorbed by the dominance + active-speaker +
-duration guards, so a `contested-fold` is a *likely wrong label*. Verdicts that
+duration guards — but the engine can still mis-fire where those guards can't
+see (sub-100px remote-guest tiles, listener mouth motion over a long window),
+so a `contested-fold` means *either a wrong label or an engine miss*; a frame
+read settles which. Verdicts that
 do NOT block — recorded honestly, never a pass-by-omission: `confirmed` /
 `confirmed-with-footnote`, `honestly-unverified` (off-camera/voiceover speaker,
 or no on-camera speaker), `inconclusive`, `no-baseline` (e.g. a moderator with
 no baseline), `contested-other` (b-roll/archival identity).
 
 On a `contested-fold` (gate blocked):
-1. Read the turn's source lines + the spot-check note (which identity is the
-   active speaker) and confirm against the transcript text. The judgment of who
-   is speaking is yours/the contributor's; the write is the tool's:
-2. Apply the adjudication **mechanically** — relabels the turn's `speaker_id`
-   and records the structured `image_verification[]` entry in one validated
-   write (dry run first, then `--write`; a mixed exchange takes
-   `--speaker s1,s2`; use `--resolution ambiguous --resolved-by contributor`
-   when a human must adjudicate):
+1. Settle the turn **from the frames** (`extract-frames.py` at the turn's
+   timestamps + `detect-faces.py` against the photo-identity-log baselines),
+   reading the turn's source lines + the spot-check note (which identity the
+   engine says is the active speaker). The judgment of who is speaking is
+   yours/the contributor's; the write is the tool's:
+2. Apply the adjudication **mechanically** — records the structured
+   `image_verification[]` entry (the schema's durable fold-settlement record)
+   and, for `corrected`/`ambiguous`, relabels the turn's `speaker_id`, in one
+   validated write (dry run first, then `--write`; `--resolution confirmed`
+   when the frames show the existing label is right and the engine mis-fired;
+   a mixed exchange takes `--speaker s1,s2`; use `--resolution ambiguous
+   --resolved-by contributor` when a human must adjudicate):
    ```
    python3 scripts/build/finalize-attribution.py {draft}.yaml \
        --resolve-turn {line_range} --speaker s2 \
@@ -209,8 +216,14 @@ On a `contested-fold` (gate blocked):
    Never hand-edit the draft YAML for this — the tool validates the turn
    exists, the ids are in `speakers[]`, and the resolution agrees with the
    relabel (agents judge; scripts mutate).
-3. Re-run `validate-speaker-attribution.py`, then re-run finalize — the gate
-   must come back clean (0 `contested-fold`) before the sibling is verified.
+3. Re-run `validate-speaker-attribution.py`, then re-run finalize. The gate
+   honors the recorded adjudication: a contested-fold turn whose
+   `image_verification[]` entry still matches the turn's `speaker_id` is
+   reported as *settled* (resolution + resolver printed, never silent) and
+   does not block; the gate blocks only on unadjudicated folds and on stale
+   entries (turn relabeled after adjudication — re-adjudicate). A frame-level
+   adjudication outranks the engine heuristic; the engine is the systematic
+   screen, the recorded frame read is the settlement.
 
 Setup the gate needs: the source recording on disk
 (`download-video.py {parent_url} --slug {slug}`) and the dlib engine

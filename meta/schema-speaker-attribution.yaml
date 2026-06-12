@@ -133,9 +133,11 @@ optional_keys:
                           # count. validate-speaker-attribution.py recomputes
                           # and compares; mismatch = re-run finalize. Not
                           # hand-authored.
-  - image_verification    # list of image_verification_entry (only for
-                          # turns whose `needs_image_verification` was
-                          # resolved against the photo-identity-log)
+  - image_verification    # list of image_verification_entry — the durable
+                          # fold-settlement record, written by
+                          # finalize-attribution.py --resolve-turn and
+                          # honored by the fold gate (see the entry's
+                          # section below)
 
 # ---------------------------------------------------------------------------
 # speaker_entry — one per live in-room participant
@@ -295,18 +297,25 @@ turn_entry:
   #   finalize; forbidden on a verified sibling.
 
 # ---------------------------------------------------------------------------
-# image_verification_entry — record of conditional image-verification
-# resolution for low-confidence turns
+# image_verification_entry — the durable fold-settlement record
 # ---------------------------------------------------------------------------
 #
 # Optional top-level `image_verification: []` list. One entry per turn
-# whose `needs_image_verification: true` was resolved against the photo-
-# identity-log. Records the durable outcome — which turn, what the
-# resolution was, who confirmed (agent verifier vs. contributor), and a
-# prose note. Extraction frames are transient /tmp working files and are
-# NOT recorded (committing /tmp paths produces dead references the moment
-# the dir is cleared); the timestamps live in the resolved turn and the
-# prose note. The mechanical face-detection machinery
+# settled against the source frames + photo-identity-log baselines —
+# written by `finalize-attribution.py --resolve-turn` (typically when the
+# active-speaker fold gate contests the turn, or whenever a frame read
+# otherwise settles a boundary). Records the durable outcome — which
+# turn, what the resolution was, who resolved (agent verifier vs.
+# contributor). THE FOLD GATE HONORS THESE ENTRIES: a `contested-fold`
+# engine verdict on a turn whose entry still matches the turn's current
+# `speaker_id` is settled — reported with its resolution + resolver,
+# never blocking — because a recorded frame-level adjudication outranks
+# the engine heuristic. An entry whose `resolved_speaker_id` no longer
+# matches the turn (relabeled after adjudication) is stale and blocks
+# finalize until re-adjudicated. Extraction frames are transient working
+# files and are NOT recorded (committing scratch paths produces dead
+# references the moment the dir is cleared); the timestamps live in the
+# resolved turn. The mechanical face-detection machinery
 # (scripts/tools/detect-faces.py, sources/photo-identity-log/baselines/)
 # is preserved as the higher-confidence backstop — see
 # .claude/skills/prepare-transcript-sibling/SKILL.md for the image-path

@@ -105,7 +105,16 @@ three-tile grid, remote guest in a low-quality middle tile); evidence
 preserved at `.scratch/handoff/` (`finalize-114.log`,
 `spot-check-114.csv`; probe crops registered in
 `sources/photo-identity-log/`). A dedicated session should investigate
-ONLY this, before any further attribution finalize. Failure mechanics:
+ONLY this, before any further attribution finalize.
+
+The settlement path is in place: the gate honors `image_verification[]`
+adjudications (`--resolve-turn` writes them; a contested-fold turn whose
+entry still matches its `speaker_id` is reported as settled, not
+blocking; stale entries re-block), so the one likely genuine label error
+can settle durably once frame-read. Do NOT bulk-adjudicate the ~13
+engine false-positives through that path — entries record frame-settled
+judgments, not engine noise; the engine itself is what this entry fixes.
+Failure mechanics:
 
 - **Detection/identification recall on small tiles.** The assigned
   speaker (Lacatski, middle tile) matched in 0–3 of 7 frames per turn
@@ -122,14 +131,6 @@ ONLY this, before any further attribution finalize. Failure mechanics:
   adjacent frames (~100 ms); range-across-a-sparse-burst is structurally
   noisy — rethink the sampling (adjacent-frame pairs per sample point)
   or the metric.
-- **The adjudication design gap.** `meta/schema-speaker-attribution.yaml`
-  defines `image_verification[]` (resolution: confirmed / corrected /
-  ambiguous) as the durable fold-settlement record, and the skill's §5
-  directs recording it and re-running finalize — but `run_fold_gate()`
-  reads only the CSV verdicts, so a settled keep-verdict can never clear
-  the gate. Decide the intended behavior (honor adjudication entries
-  with explicit reporting, vs. engine-must-agree) and align tool, skill,
-  and schema.
 - Validate any fix against BOTH the 114 grid layout and the clean 097
   run (same trio, 0 contested across 226 turns) so the gate keeps its
   discriminative power, and design for the 038 case (one speaker
