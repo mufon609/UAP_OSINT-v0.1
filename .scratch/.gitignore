@@ -1,21 +1,47 @@
-# Durable agent-draft scratch — expensive in-progress pipeline artifacts that
-# must survive between sessions (attribution-sibling drafts, OCR page files):
-# a multi-hour producer run is the costliest artifact the sibling pipelines
-# emit, and /tmp cleanup has destroyed drafts before. The boundary is
-# regeneration cost, not uniformity — cheap regenerable scratch
-# (extract-source.py plaintext, worker fragments) stays in /tmp. Owners of the
-# output paths: the prepare-transcript-sibling / prepare-ocr-sibling SKILL.md
-# files and the attribution-producer / ocr-page-producer contracts. Contents
-# are working state, never committed; only this .gitignore is tracked, so the
-# directory exists for new sessions. (Distinct from scripts/scratch/, the
-# throwaway exploratory-query tier.)
+# Single scratch tree — all machine-local working state, in three lifecycle
+# tiers. Only this .gitignore and the per-tier .gitkeep files are tracked, so
+# the tree exists on fresh clones; everything else is local, never committed.
 #
-# Lifecycle — durable, not immortal: an entry lives while it is referenced by
-# path from meta/BACKLOG.md / meta/roadmap.md (parked cross-session work named
-# by the open item that owns it) or modified within the grace window; the
-# scratch-hygiene pre-commit gate (scripts/tests/scratch-hygiene.sh) blocks
-# the commit on anything else. Closing a work item includes sweeping its
-# scratch — deletion stays human (age-based auto-deletion is the /tmp failure
-# this directory exists to prevent).
+#   drafts/   durable agent-draft DATA — expensive in-progress pipeline
+#             artifacts that must survive between sessions: attribution
+#             sibling drafts at drafts/attribution-{slug}/, OCR page reads +
+#             confirm log at drafts/ocr-{stem}/. A multi-hour producer run is
+#             the costliest artifact the sibling pipelines emit, and /tmp
+#             cleanup has destroyed drafts before (/tmp is tmpfs — erased on
+#             every reboot — plus a 10-day age purge). Owners of the output
+#             paths: the prepare-transcript-sibling / prepare-ocr-sibling
+#             SKILL.md files and the attribution-producer / ocr-page-producer
+#             contracts.
+#   queries/  throwaway exploratory query SCRIPTS — the contributor landing
+#             zone (see scripts/README.md). When a query class repeats across
+#             sessions, graduate it to scripts/tools/ as a proper subcommand.
+#   cache/    regenerable-but-EXPENSIVE derived state (ocr-consensus engine
+#             reads, keyed by pdf+dpi+engine versions). Prune-safe anytime —
+#             the owning tool recomputes on a miss — but costly enough that
+#             /tmp cleanup must not silently evict it.
+#
+# The boundary is regeneration cost, not uniformity: cheap regenerable scratch
+# (extract-source.py plaintext, worker fragments, extracted frames, renders)
+# stays in /tmp.
+#
+# Lifecycle — durable, not immortal: a top-level entry in drafts/ or queries/
+# lives while it is referenced by path from meta/BACKLOG.md / meta/roadmap.md
+# (parked cross-session work named by the open item that owns it) or modified
+# within the grace window; the scratch-hygiene pre-commit gate
+# (scripts/tests/scratch-hygiene.sh) blocks the commit on anything else, and
+# on any top-level entry that is not one of the three tiers. cache/ is exempt
+# from referenced-or-fresh (a content-addressed cache is not parked work); the
+# gate reports its size when it grows large. Closing a work item includes
+# sweeping its scratch — deletion stays human (age-based auto-deletion is the
+# /tmp failure this tree exists to prevent).
 *
 !.gitignore
+!drafts/
+drafts/*
+!drafts/.gitkeep
+!queries/
+queries/*
+!queries/.gitkeep
+!cache/
+cache/*
+!cache/.gitkeep

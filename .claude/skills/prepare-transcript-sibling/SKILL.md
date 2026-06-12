@@ -89,7 +89,7 @@ Note the parent manifest URL (the registration step needs it).
 
 Dispatch the producer with, and only: the source transcript path, the exact
 `source_line_count`, the schema path (`meta/schema-speaker-attribution.yaml`),
-and the output path `.scratch/attribution-{slug}/{stem}-attribution.yaml`. The
+and the output path `.scratch/drafts/attribution-{slug}/{stem}-attribution.yaml`. The
 parse discipline (line-ranges-only, quoted `line_range` scalars, coverage,
 reported speech, interjection confidence, `on_camera_role`, …) is the agent
 contract's (`.claude/agents/attribution-producer.md`) — do not re-author it
@@ -108,7 +108,7 @@ Mechanical gate; no LLM. Runs the 13-check chain from
 
 ```
 python3 scripts/build/validate-speaker-attribution.py \
-    .scratch/attribution-{slug}/{stem}-attribution.yaml
+    .scratch/drafts/attribution-{slug}/{stem}-attribution.yaml
 ```
 
 Exit 0 = structural pass; the verifier sees a well-formed file. Any

@@ -63,7 +63,7 @@ meta/
     working-notes/          in-progress synthesis docs awaiting integration into content nodes
 
 scripts/
-  README.md                 canonical per-script reference (all six subdirectories)
+  README.md                 canonical per-script reference (all five subdirectories)
   build/                    scaffold → render → validate pipeline + the per-phase validators
   tools/                    standalone utilities + diagnostics (manifest, archival,
                             transcription, video/OCR pipelines)
@@ -71,7 +71,13 @@ scripts/
                             dispatched by the build/ validators
   tests/                    pre-commit gate chain + its regression tests
   lib/                      shared cross-script helpers
-  scratch/                  gitignored landing zone for exploratory queries
+
+.scratch/                   machine-local working state (gitignored; lifecycle
+                            contract in .scratch/.gitignore, policed by the
+                            scratch-hygiene pre-commit gate)
+  drafts/                   durable agent drafts — attribution siblings, OCR page reads
+  queries/                  throwaway exploratory query scripts
+  cache/                    regenerable-but-expensive caches (ocr-consensus engine reads)
 
 sources/
   manifest.yaml             source-archival index (YAML)

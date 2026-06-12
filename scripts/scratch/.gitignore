@@ -1,9 +1,0 @@
-# Scratch directory — in-progress exploratory queries (see scripts/README.md —
-# the scratch tier). Contents are throwaway; only this .gitignore is tracked,
-# so the directory exists for new sessions. Lifecycle: an entry must be
-# referenced from meta/BACKLOG.md / meta/roadmap.md or modified within the
-# grace window — the scratch-hygiene pre-commit gate
-# (scripts/tests/scratch-hygiene.sh) blocks the commit on anything else, so
-# exploratory leftovers cannot outlive the work that made them.
-*
-!.gitignore

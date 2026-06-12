@@ -112,7 +112,7 @@ import subprocess
 import tempfile
 
 SOURCES_DIR = _REPO_ROOT / "sources"
-ENGINE_CACHE_ROOT = Path(tempfile.gettempdir()) / "ocr-consensus-cache"
+ENGINE_CACHE_ROOT = _REPO_ROOT / ".scratch" / "cache" / "ocr-consensus"
 
 # Word tokens and standalone punctuation. Splitting punctuation off words keeps
 # "communication," from spuriously disagreeing with "communication" across
@@ -1045,7 +1045,9 @@ def _engine_cache_dir(pdf, dpi):
     and deliberately NOT the sibling: engine output is a pure function of the
     page images, so sibling corrections between `run` and `verify` can never
     stale a hit (the comparison against the sibling is recomputed every call).
-    Lives under the system temp dir — derived state, never a repo artifact."""
+    Lives under .scratch/cache/ — derived state, never committed, but expensive
+    enough to recompute that it must survive /tmp cleanup (the regeneration-cost
+    boundary; see .scratch/.gitignore)."""
     h = hashlib.sha256()
     h.update(Path(pdf).read_bytes())
     h.update(f"|dpi={dpi}|tess={tesseract_version()}|paddle={paddleocr_version()}"
@@ -1071,7 +1073,7 @@ def _concat_pages(pages_dir):
     """Concatenate the per-page VLM scratch files (``pNN.txt``, zero-padded) into
     the sibling base text, tracking each page's start offset.
 
-    This replaces the manual ``cat .scratch/{stem}/p*.txt`` step so the tool knows the
+    This replaces the manual ``cat .scratch/drafts/ocr-{stem}/p*.txt`` step so the tool knows the
     page boundaries — letting the divergence report tag each token with its page,
     which makes the page-image verification step actually locatable. Each page is
     newline-terminated before joining so pages can't glue together and every page

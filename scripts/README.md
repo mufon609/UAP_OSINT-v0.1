@@ -5,12 +5,12 @@ directories and point here; per-script detail lives only in this file.
 
 ---
 
-## Layout — six role-labeled directories
+## Layout — five role-labeled directories
 
 `scripts/` is organized by caller and role, not by file type: every
-script lives in exactly one of six subdirectories — no Python script
+script lives in exactly one of five subdirectories — no Python script
 sits directly in `scripts/` itself (the no-loose-scripts rule keeps the
-top of `scripts/` scannable as six role-labeled directories). New
+top of `scripts/` scannable as five role-labeled directories). New
 scripts land at the tier that matches who invokes them and what role
 they play:
 
@@ -33,10 +33,12 @@ they play:
   `tools/`, and `checks/`; kept separate so the cross-script lockstep
   (same `extract_source_text`, same `STOPWORDS`) is mechanical, not
   comment-discipline-based.
-- **`scratch/`** — contributor landing zone for in-progress exploratory
-  queries; gitignored. When a query class repeats across sessions,
-  graduate it to `tools/` as a proper subcommand — the bridge between
-  inline scripting and a first-class CLI, not a permanent home.
+In-progress exploratory queries land at `.scratch/queries/` (the
+repo-root scratch tree's throwaway tier — see `.scratch/.gitignore`),
+not under `scripts/`. When a query class repeats across sessions,
+graduate it to `tools/` as a proper subcommand — the queries tier is the
+bridge between inline scripting and a first-class CLI, not a permanent
+home.
 
 The `build/`-vs-`tools/` split is produces/transforms vs assists:
 `build/` scaffolds, renders, or validates the content layer; `tools/`

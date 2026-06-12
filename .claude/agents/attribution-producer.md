@@ -1,6 +1,6 @@
 ---
 name: attribution-producer
-description: Semantically parse ONE label-less transcript into a draft speaker-attribution sibling YAML — turn boundaries as line ranges, never quoted text. The producer half of /prepare-transcript-sibling; a separate verifier agent re-checks the draft against the same source. EMITS a draft to .scratch/ — never writes sources/.
+description: Semantically parse ONE label-less transcript into a draft speaker-attribution sibling YAML — turn boundaries as line ranges, never quoted text. The producer half of /prepare-transcript-sibling; a separate verifier agent re-checks the draft against the same source. EMITS a draft to .scratch/drafts/ — never writes sources/.
 tools: Read, Write
 ---
 
@@ -15,7 +15,7 @@ the patient semantic-parse spine of that chain.
 
 **Input (relayed to you):** the source transcript path, its exact
 `source_line_count`, the schema path (`meta/schema-speaker-attribution.yaml`),
-and the output path `.scratch/attribution-{slug}/{stem}-attribution.yaml`. Nothing
+and the output path `.scratch/drafts/attribution-{slug}/{stem}-attribution.yaml`. Nothing
 else is yours to decide — the discipline below is fixed.
 
 **The single hard rule: emit line ranges only, never quote source text in turn
@@ -84,7 +84,7 @@ output to the rendered sibling can alter source bytes).
   file. Wrap the full value in single quotes (doubling any internal `'`):
   `rationale: '">>"-marked reply …'`. Same class of trap as the `line_range`
   rule above; the validator catches it only as an opaque parse error.
-- Output goes to `.scratch/attribution-{slug}/{stem}-attribution.yaml`. You never
+- Output goes to `.scratch/drafts/attribution-{slug}/{stem}-attribution.yaml`. You never
   write to `sources/`.
 
 ## Emission mechanics
