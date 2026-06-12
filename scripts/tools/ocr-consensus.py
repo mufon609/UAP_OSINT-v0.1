@@ -1071,7 +1071,7 @@ def _concat_pages(pages_dir):
     """Concatenate the per-page VLM scratch files (``pNN.txt``, zero-padded) into
     the sibling base text, tracking each page's start offset.
 
-    This replaces the manual ``cat /tmp/{stem}/p*.txt`` step so the tool knows the
+    This replaces the manual ``cat .scratch/{stem}/p*.txt`` step so the tool knows the
     page boundaries — letting the divergence report tag each token with its page,
     which makes the page-image verification step actually locatable. Each page is
     newline-terminated before joining so pages can't glue together and every page

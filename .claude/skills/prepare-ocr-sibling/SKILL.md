@@ -103,7 +103,7 @@ or replace it:
 2. **Produce the VLM page-image read.** Dispatch **`Agent(ocr-page-producer)`**,
    one per disjoint page range, in a single message so they run concurrently. Pass
    each, and only: the **source PDF path**, its **page range** `A–B`, and the
-   **output directory** (`/tmp/{stem}/`). The producer contract owns the rest —
+   **output directory** (`.scratch/{stem}/`). The producer contract owns the rest —
    the per-page-write-before-next isolation, the verbatim transcription discipline,
    and the skip-a-blocked-page rule. Do **not** restate that discipline in the
    dispatch (the contract is the source of truth; an improvised instruction would
@@ -126,8 +126,8 @@ or replace it:
    `tail`/`head`**, which silently drops the bulk of the report:
    ```
    python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
-       --vlm-pages /tmp/{stem} --blocked-pages 9-11,29-30 --two-column-pages 30 [--force] \
-       > /tmp/{stem}-confirm.txt 2>&1
+       --vlm-pages .scratch/{stem} --blocked-pages 9-11,29-30 --two-column-pages 30 [--force] \
+       > .scratch/{stem}-confirm.txt 2>&1
    ```
    Pass `--blocked-pages` the ledger of pages the producers skipped (step 2; accepts
    ranges, e.g. `5-7,10,14-15`), and `--two-column-pages` the subset of those that
@@ -139,7 +139,7 @@ or replace it:
    PaddleOCR + Tesseract, and prints the **load-bearing divergence report**: every
    word/number where the sibling and the OCR engines disagree (document structure —
    punctuation, bullets, banners, figure labels — is never compared). `--force`
-   regenerates an existing sibling (backfill). `Read` `/tmp/{stem}-confirm.txt`. A
+   regenerates an existing sibling (backfill). `Read` `.scratch/{stem}-confirm.txt`. A
    `⚠ COVERAGE WARNING` now means the VLM dropped a region the tool did **not** fill
    (a page missing from `--blocked-pages`, or a mid-page omission) — recover it
    before proceeding.
@@ -148,7 +148,7 @@ or replace it:
    **`Agent(ocr-page-verifier)`**, one per disjoint page range that carries flagged
    rows (HIGH-SIGNAL or blocked-page), in a single message so they run concurrently.
    Pass each, and only: its **page range**, the **sibling path**, the **report
-   path** (`/tmp/{stem}-confirm.txt`), and the **source PDF path**. The verifier
+   path** (`.scratch/{stem}-confirm.txt`), and the **source PDF path**. The verifier
    contract owns the rest — the leave/fix decision (decide each token from the page
    image, never from surrounding text), the blocked-page handling, and the
    content-filter-safe posture (token-level only; a blocked page blocks the

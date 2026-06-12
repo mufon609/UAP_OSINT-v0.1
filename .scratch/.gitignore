@@ -1,0 +1,13 @@
+# Durable agent-draft scratch — expensive in-progress pipeline artifacts that
+# must survive between sessions (attribution-sibling drafts, OCR page files):
+# a multi-hour producer run is the costliest artifact the sibling pipelines
+# emit, and /tmp cleanup has destroyed drafts before. The boundary is
+# regeneration cost, not uniformity — cheap regenerable scratch
+# (extract-source.py plaintext, worker fragments) stays in /tmp. Owners of the
+# output paths: the prepare-transcript-sibling / prepare-ocr-sibling SKILL.md
+# files and the attribution-producer / ocr-page-producer contracts. Contents
+# are working state, never committed; only this .gitignore is tracked, so the
+# directory exists for new sessions. (Distinct from scripts/scratch/, the
+# throwaway exploratory-query tier.)
+*
+!.gitignore

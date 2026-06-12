@@ -102,7 +102,7 @@ verifier-PASSED draft whose labels frame-level reads confirm are mostly
 correct — engine false-positives, with at most one likely genuine label
 error among them. Reproduced on the `weaponized-114` video (persistent
 three-tile grid, remote guest in a low-quality middle tile); evidence
-preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/` (`finalize-114.log`,
+preserved at `.scratch/handoff/` (`finalize-114.log`,
 `spot-check-114.csv`; probe crops registered in
 `sources/photo-identity-log/`). A dedicated session should investigate
 ONLY this, before any further attribution finalize. Failure mechanics:
@@ -145,11 +145,11 @@ One of the four sibling-less transcript nodes is done
 (`weaponized-097-lacatski-part2-2025`: verified sibling registered +
 rendered, node speaker ids stamped). The remaining three have completed
 or near-completed text-side pipelines; every finalize is gated on A2.
-Drafts + evidence preserved at `~/Desktop/claude/UAP_OSINT-c1-handoff/`
-(`/tmp` is periodically cleaned and has eaten drafts twice; copy a draft
-back to its `/tmp/attribution-{slug}/` path before resuming its
-pipeline). All source videos are on disk under `sources/video/` (038 at
-its manifest-registered suffixed filename).
+Drafts live at their durable pipeline paths
+(`.scratch/attribution-{slug}/{stem}-attribution.yaml`); fold-gate
+evidence and the 096 correction list are under `.scratch/handoff/`. All
+source videos are on disk under `sources/video/` (038 at its
+manifest-registered suffixed filename).
 
 - `weaponized-114-lacatski-future-visions-2026` — draft verifier-PASSED
   (independent session `claude-fable-5-verifier-2026-06-11-weaponized-114`;
@@ -161,7 +161,7 @@ its manifest-registered suffixed filename).
   Knapp-assigned turn) suggests a genuine label error.
 - `weaponized-096-lacatski-part1-2025` — structurally-valid draft;
   independent verifier REJECTED with two cold-open boundary corrections
-  (full list: `096-verifier-corrections.md` in the handoff dir). Route
+  (full list: `.scratch/handoff/096-verifier-corrections.md`). Route
   to a producer, re-validate, fresh verification; then gate → register
   → stamp.
 - `weaponized-038-lacatski-kelleher-2023` — structurally-valid draft
@@ -178,7 +178,7 @@ When all four are verified, promote `scripts/checks/
 transcript_sibling_presence.py` from `warn` to `error` (its documented
 end state) and update its docstring's severity paragraph.
 
-**Blocks:** C3 (its recorded resume state pins the `/tmp` draft paths).
+**Blocks:** none.
 **Blocked by:** A2 (every remaining finalize runs the fold gate).
 
 ---
@@ -194,30 +194,6 @@ _(none)_
 ## C. Anytime (no dependencies)
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
-
-### C3 — Move expensive agent-draft scratch out of /tmp to a durable workspace
-
-The sibling pipelines direct their agent producers to emit drafts under
-`/tmp` (`/tmp/attribution-{slug}/…` for transcript attribution,
-`/tmp/{stem}/` page files for OCR). `/tmp` is periodically cleaned, and a
-multi-hour semantic parse is the most expensive artifact these pipelines
-produce — losing a draft to cleanup forces a full producer re-run, and the
-interim mitigation (hand-copying drafts to an out-of-repo handoff
-directory) is contributor discipline, not pipeline design. Establish a
-durable git-ignored scratch root inside the repo (e.g. `.scratch/`), route
-the draft/page-file output paths there in the
-`prepare-transcript-sibling` + `prepare-ocr-sibling` SKILL.md files and
-the `attribution-producer` / `ocr-page-producer` contracts, and sweep
-every other doc reference to the old paths (grep `/tmp/attribution-`,
-`/tmp/{stem}`). Cheap regenerable scratch (`extract-source.py` plaintext,
-worker fragments) may stay in `/tmp` — the boundary is regeneration cost,
-not uniformity. The gate scripts already take paths as arguments, so this
-is a docs/contract retarget, not a code change. Retire the ad-hoc handoff
-directory once the retarget lands.
-
-**Blocks:** none.
-**Blocked by:** A3 (its recorded resume state pins the `/tmp` draft
-paths — don't retarget under a paused run that resumes from them).
 
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
