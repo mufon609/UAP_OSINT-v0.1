@@ -34,13 +34,17 @@ Sibling resolution is shared with ``speaker_attribution_consistency``
 ``source_path``), so "present" here is exactly "will not be skipped
 there".
 
-Severity: warn, not error — transcript nodes built before this gate
-existed carry hand-attributed quotes on sibling-less sources, and a
-backfill via ``/prepare-transcript-sibling`` is the only honest fix
-(see the BACKLOG backfill item). Promote to error once every
-label-less transcript source in the corpus carries a verified sibling;
-a missing sibling is definitionally a defect, so error is this check's
-end state.
+Severity: error — a missing sibling is definitionally a defect: the
+node's ``speaker_id`` values cannot be derived and
+``speaker_attribution_consistency`` would silently skip the source.
+Shipped as warn while pre-gate transcript nodes carried
+hand-attributed quotes on sibling-less sources; promoted once the
+backfill closed (every label-less transcript source in the corpus
+carries a verified sibling — the backfill itself caught a hand-keyed
+roster divergence in three of the four artifacts, which is the hazard
+this check fences). A new label-less source's build path produces its
+sibling via ``/prepare-transcript-sibling`` (``/build`` step 4c)
+before quotes are drawn.
 """
 
 from checks import Issue
@@ -86,7 +90,7 @@ def check(ctx):
         if path in siblings:
             continue
         yield Issue(
-            ctx.rel, "warn",
+            ctx.rel, "error",
             f"primary_sources[{i}]: transcript source {path!r} "
             f"(transcript_provenance: "
             f"{provenance if provenance is not None else 'absent — unclassified'}) "

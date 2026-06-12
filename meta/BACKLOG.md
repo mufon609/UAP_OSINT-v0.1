@@ -94,50 +94,6 @@ surfacing of top-level prose drift proves annoying.
 **Blocks:** none.
 **Blocked by:** a user-directed build with an external-source gap.
 
-### A3 — Finish the transcript-sibling backfill, then promote transcript_sibling_presence to error
-
-One of the four sibling-less transcript nodes is done
-(`weaponized-097-lacatski-part2-2025`: verified sibling registered +
-rendered, node speaker ids stamped). The remaining three have completed
-or near-completed text-side pipelines.
-Drafts live at their durable pipeline paths
-(`.scratch/attribution-{slug}/{stem}-attribution.yaml`); fold-gate
-evidence (`spot-check-114-v2.{csv,log}`, `spot-check-097-v2.{csv,log}`)
-and the 096 correction list are under `.scratch/`. All
-source videos are on disk under `sources/video/` (038 at its
-manifest-registered suffixed filename).
-
-- `weaponized-114-lacatski-future-visions-2026` — draft verifier-PASSED
-  (independent session `claude-fable-5-verifier-2026-06-11-weaponized-114`;
-  structural validator clean). The rebuilt fold-gate engine returns
-  exactly ONE contested-fold: `2336-2343` (assigned s1/Knapp never on
-  camera across the 17 s window while Lacatski is seen 7/7 — frame read
-  suggests a genuine label error). Remaining: settle that turn from
-  frames (`finalize-attribution.py --resolve-turn`), re-run finalize
-  through the gate, then register + render + `stamp-speaker-id.py`
-  confirm (the 097 shape).
-- `weaponized-096-lacatski-part1-2025` — structurally-valid draft;
-  independent verifier REJECTED with two cold-open boundary corrections
-  (full list: `.scratch/096-verifier-corrections.md`). Route
-  to a producer, re-validate, fresh verification; then gate → register
-  → stamp.
-- `weaponized-038-lacatski-kelleher-2023` — structurally-valid draft
-  (200 turns, produced via the contract's incremental emission; Knapp is
-  audio-only this episode, `on_camera_role: off-camera`). Needs its
-  independent verification; then gate → register → stamp.
-
-For each: after registration, confirm the node's existing `speaker_id`
-values against the verified sibling (`stamp-speaker-id.py`) and correct
-any divergence — hand-keyed attribution is exactly the divergence hazard
-the sibling exists to remove.
-
-When all four are verified, promote `scripts/checks/
-transcript_sibling_presence.py` from `warn` to `error` (its documented
-end state) and update its docstring's severity paragraph.
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ---
 
 ## B. Parallel batch (renderer pass)
