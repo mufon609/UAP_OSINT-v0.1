@@ -41,9 +41,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Name | Role | Node Link |
 |---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] |
 | Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
 | Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
+| George Knapp | Co-Host | [`/people/george-knapp`] |
 
 ---
 
@@ -149,7 +149,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading the closing of the AARO email, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
-| Location | [13:09]–[13:22] |
+| Location | [13:03]–[13:20] |
 
 ---
 

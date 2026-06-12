@@ -4694,6 +4694,19 @@
     transcript_provenance: auto-caption
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     note: 'WEAPONIZED ''He Ran The Pentagon''s Secret UFO Program - And Says We''ve Been Played: Dr. James Lacatski (PART 1)'', published 2025-11-05. Runtime ~50m (1468 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. New material 2 years after EP 38: explicit claims about Kona Blue (KBP) program, deliberate AARO disinformation campaign, and a recovered UFO craft where U.S. teams breached the hull. Auto-caption variants: ''AASAP'' for AAWSAP; proper-name ''Lacatski'' renders correctly in this transcript (cleaner ASR than EP 38).'
+- url: https://www.youtube.com/watch?v=Qu8pudJk_-A#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/weaponized-096-lacatski-part1-2025-downloaded-attribution.yaml
+    archived_date: '2026-06-12'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/weaponized-096-lacatski-part1-2025-downloaded.md. Produced 2026-06-12 via /prepare-transcript-sibling (agent-based). Verified 2026-06-12 by a separate agent session — PASS (session verifier-claude-fable-5-2026-06-12-w096p1). Image-verification: mandatory active-speaker fold gate clean — 0 contested-fold across 131 turns | 0 turns required frame adjudication. REJECT cycle r1: two cold-open boundary corrections applied by producer fix-pass; fresh independent verification r2 PASS'
+  - format: md
+    path: transcripts/weaponized-096-lacatski-part1-2025-downloaded-attributed.md
+    archived_date: '2026-06-12'
+    note: Human-readable rendering of the speaker-attribution sibling (weaponized-096-lacatski-part1-2025-downloaded-attribution.yaml) over the source caption bytes. Derived view; the YAML is the source-of-truth.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=R8TqBrrqL4U
   status: archived
   archive_status: 3
