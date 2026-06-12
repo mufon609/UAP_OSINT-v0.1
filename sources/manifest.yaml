@@ -4853,6 +4853,19 @@
     transcript_provenance: auto-caption
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     note: 'WEAPONIZED Episode #114 ''Dr. James Lacatski - This Is UFO Disclosure, As Far As It Can Go'', published 2026-04-08 (Weaponized site) / 2026-04-09 UTC (Apple Podcasts). Runtime ~1h 48m (2581 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. Most recent Lacatski material; discusses his fourth book ''Future Visions'' (draws from unreleased AAWSAP files). Carries the Lacatski ''wide open'' assertion: ''The government doesn''t know much more [than the general public]. There are people that think they know more, but they don''t. That this is wide open.'' Cleaner auto-captions than EP 38 (proper-name capitalization: ''Dr. Lacatski'', ''Future Visions'').'
+- url: https://www.youtube.com/watch?v=rW02-PuPMJ8#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded-attribution.yaml
+    archived_date: '2026-06-12'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md. Produced 2026-06-12 via /prepare-transcript-sibling (agent-based). Verified 2026-06-12 by a separate agent session — PASS (session claude-fable-5-verifier-2026-06-11-weaponized-114). Image-verification: mandatory active-speaker fold gate clean — 0 contested-fold across 213 turns | 1 turn (2336-2343) resolved against photo-identity-log baselines (corrected s1→s3, agent-verifier). draft verifier-PASSED 2026-06-11; fold-gate adjudication corrected 2336-2343 from frame reads; finalized 2026-06-12 on the presence-primary engine'
+  - format: md
+    path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded-attributed.md
+    archived_date: '2026-06-12'
+    note: Human-readable rendering of the speaker-attribution sibling (weaponized-114-lacatski-future-visions-2026-downloaded-attribution.yaml) over the source caption bytes. Derived view; the YAML is the source-of-truth.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=ribyo1XCtRo
   status: archived
   archive_status: 3

@@ -252,14 +252,14 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct affirmative attestation on the AAWSAP findings — "These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world." Documents his explicit "It's real. It's happening" framing of the UAP phenomenon as established by AAWSAP investigation.
+### Knapp's on-air summary characterization of the co-authored four books' content, put to Lacatski — "These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world." — closing that everything written across the four books "is approved in a sense" (the cleared-for-publication framing). Knapp's words per the verified attribution sibling (turn 652-675), not Lacatski's own attestation; Lacatski's affirmations follow in his ensuing answers.
 
 > [28:50] Everything that's in these books was thoroughly investigated. All the cases, all the incidents, all the locations, uh, and you know, you you've got some general themes throughout. These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world. And everything that you've written in these four books is approved in a sense.
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
-| Attributed to | Lacatski in WEAPONIZED EP 114 summarizing the four-book content, 2026-04-08 |
+| Speaker | George Knapp ([`/people/george-knapp`]) |
+| Attributed to | Knapp in WEAPONIZED EP 114 summarizing the four-book content to Lacatski, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [28:50]–[29:16] |
 
