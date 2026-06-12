@@ -41,8 +41,8 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Name | Role | Node Link |
 |---|---|---|
-| George Knapp | Co-Host | [`/people/george-knapp`] |
 | Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] |
+| George Knapp | Co-Host | [`/people/george-knapp`] |
 | Dr. James Lacatski | Guest | [`/people/james-lacatski`] |
 | Dr. Colm Kelleher | Guest | [`/people/colm-kelleher`] |
 
@@ -206,14 +206,14 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts.
+### Kelleher clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts. (Kelleher per the verified attribution sibling, turn 1122-1146 — the BAASS-side contract timeline; previously hand-keyed to Lacatski.)
 
 > [51:59] well I can tell you George that as you know um those events in 2011 occurred after the the oap program was shut down so o assap was officially sort of stopped in terms of funding being received um in September of 2010 uh by December member of 2010 we had a 90-day no cost extension and at that stage the program was over there was a lot of interaction between different departments and different agencies subsequent to that regarding additional funding what you are referencing in the Skin Walkers at the Pentagon occurred after the oap program officially was terminated and it would it involved a lot of negotiation and back and forth between different organizations one of those organizations that we uh worked with was DHS as it says in that book and those those elements within DHS did their own version of due diligence
 
 | Field | Value |
 |---|---|
-| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
-| Attributed to | Lacatski responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS, 2023-10-16 |
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
+| Attributed to | Kelleher responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [51:59]–[53:08] |
 

@@ -4856,6 +4856,19 @@
   - format: video
     path: video/weaponized-038-lacatski-kelleher-2023-ow7fqiegixq.mp4
     archived_date: '2026-05-19'
+- url: https://www.youtube.com/watch?v=ow7FqiegixQ#speaker-attribution
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: yaml
+    path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded-attribution.yaml
+    archived_date: '2026-06-12'
+    note: 'Speaker-attribution sibling of the label-less transcript at transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md. Produced 2026-06-12 via /prepare-transcript-sibling (agent-based). Verified 2026-06-12 by a separate agent session — PASS (session verifier-claude-fable-5-2026-06-12-weaponized-038-rev2). Image-verification: mandatory active-speaker fold gate clean — 1 contested-fold settled by recorded adjudication (turn 638-643 confirmed s1 from frame reads: held reaction shot on a laughing Lacatski through Corbell''s quip), 0 unsettled across 199 turns | Knapp audio-only (on_camera_role: off-camera), 20 turns honestly-unverified by design. REJECT cycle r1: 2 of 8 corrections applied (s4 fragment fold + rationale fix); 6 declined as verifier line-numbering off-by-one, confirmed against source bytes; fresh anchored verification r2 PASS'
+  - format: md
+    path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded-attributed.md
+    archived_date: '2026-06-12'
+    note: Human-readable rendering of the speaker-attribution sibling (weaponized-038-lacatski-kelleher-2023-downloaded-attribution.yaml) over the source caption bytes. Derived view; the YAML is the source-of-truth.
+  archive_status: 1
 - url: https://www.youtube.com/watch?v=rW02-PuPMJ8
   status: archived
   archive_status: 3

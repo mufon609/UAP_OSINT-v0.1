@@ -44,20 +44,20 @@ context_extrinsic:
 speakers:
 - id: s1
   added_date: '2026-05-17'
-  name: George Knapp
-  role: Co-Host
-  node_link: /people/george-knapp
-  source:
-    path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
-    location: '[0:38]'
-- id: s2
-  added_date: '2026-05-17'
   name: Jeremy Corbell
   role: Co-Host
   node_link: /people/jeremy-corbell
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[0:43]'
+- id: s2
+  added_date: '2026-05-17'
+  name: George Knapp
+  role: Co-Host
+  node_link: /people/george-knapp
+  source:
+    path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
+    location: '[0:38]'
 - id: s3
   added_date: '2026-05-17'
   name: Dr. James Lacatski
@@ -131,7 +131,7 @@ quotes:
   significance: Lacatski on Elizondo ("Lou") handling AATIP — "I was not prived because it was mainly spun up as I was getting ready to retire." Lacatski's stated retirement date is 2016. References were "electronically specifically scanned in electronically at DIA" when he left; cannot speak to what happened post-2016. Establishes the structural separation between AAWSAP (Lacatski) and AATIP (Elizondo) per Lacatski's first-person account.
   context: Lacatski explaining his lack of direct involvement with AATIP and his 2016 retirement
 - id: q6
-  speaker_id: s2
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -142,7 +142,7 @@ quotes:
   significance: The centerpiece of the interview — Corbell reads verbatim from chapter 9 of the book the 2011 Capitol building meeting where Lacatski posed the "craft of unknown origin" question to a US senator and agency under secretary. Lacatski affirms "the wording that you read is correct" and confirms the meeting happened and "it's true yes." Establishes the on-record affirmation by Lacatski (the named director of AAWSAP) that the meeting occurred — separate from the truth of the underlying claim (which is sworn-claim equivalent in Lacatski's voice but not independently corroborated).
   context: Corbell reading verbatim from chapter 9 of "Inside the US Government Covert UFO Program" with Lacatski responding line by line
 - id: q7
-  speaker_id: s2
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -186,7 +186,7 @@ quotes:
   significance: Lacatski's on-record position on David Grusch's allegations — "what he's saying is credible," "it's reasonable what he's saying" regarding reverse engineering and biologicals; but Lacatski "never witnessed any what I would consider illegal activities I saw security procedures that are Paramount but not illegal activities so I don't concur with that." Distinguishes credible from witnessed; affirms Grusch's reverse-engineering and biologicals claims as "reasonable" without first-person attestation. Auto-caption "colum" preserved for Colm Kelleher per naming_quirks.
   context: Lacatski's response to George Knapp's question about David Grusch ("david grush" in auto-caption)
 - id: q11
-  speaker_id: s2
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -208,7 +208,7 @@ quotes:
   significance: Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q4 ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
   context: Lacatski responding to a discussion of alleged forged documents that had circulated about AAWSAP — re-emphasizing the closed program structure
 - id: q13
-  speaker_id: s3
+  speaker_id: s4
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -216,8 +216,8 @@ quotes:
   source:
     path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
     location: '[51:59]–[53:08]'
-  significance: Lacatski clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts.
-  context: Lacatski responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS
+  significance: Kelleher clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts. (Kelleher per the verified attribution sibling, turn 1122-1146 — the BAASS-side contract timeline; previously hand-keyed to Lacatski.)
+  context: Kelleher responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS
 - id: q14
   speaker_id: s3
   added_date: '2026-05-17'
@@ -241,7 +241,7 @@ quotes:
   significance: Lacatski's first-person statement that he is "not going out there and interviewing with everybody to say what I really feel" — only saying "what's been approved." Establishes a structural distinction between Lacatski's media discipline and other disclosure-era figures (Elizondo, Grusch) who have given numerous unscripted public interviews. Self-attests media restraint as deliberate.
   context: Corbell pressing Lacatski on whether he is advocating for disclosure
 - id: q16
-  speaker_id: s2
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
