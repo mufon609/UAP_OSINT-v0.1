@@ -1,7 +1,9 @@
 # Primary-Source Investigation Toolkit
 
-*The human entry point: what this repository is and why, plus the catalog
-of the skills and agents that operate it.*
+*The human entry point: what this repository is, why it exists, and how an
+investigator reads it. Contributor mechanics — repository layout, the
+end-to-end build pipeline, the skills/agents map — live in `CLAUDE.md`; the
+consumer query protocol lives in `AGENTS.md`.*
 
 A structured, versioned knowledge base where every claim is anchored to a
 verifiable primary source. Topic-neutral; the current instance documents
@@ -41,111 +43,12 @@ The rules are enforced by `meta/schema.yaml` + the validators in `scripts/build/
 
 ---
 
-## Repository layout
+## Node types — the investigator's working set
 
-```
-README.md                   this file — public-facing overview
-AGENTS.md                   first-read for AI agents querying the repo
-CLAUDE.md                   session-start checklist for contributors
-
-meta/
-  README.md                 friendly-face index of the directory
-  BACKLOG.md                deferred work items (not on active roadmap)
-  roadmap.md                active work + design decisions that shaped the codebase
-  schema.yaml               machine-readable spec (source of truth)
-  sources-access.md         site-specific archival workarounds
-  templates/                scaffolding templates (9 files, one per node type)
-  research/                 YAML research artifacts backing each node
-                            (structured facts; one per content node)
-  topic/                    THIS INSTANCE'S topic-specific content
-    overview.md             topic statement, scope, corpora
-    research-queue.md       priority investigation queue
-    working-notes/          in-progress synthesis docs awaiting integration into content nodes
-
-scripts/
-  README.md                 canonical per-script reference (all six subdirectories)
-  build/                    scaffold → render → validate pipeline + the per-phase validators
-  tools/                    standalone utilities + diagnostics (manifest, archival,
-                            transcription, video/OCR pipelines)
-  checks/                   per-check modules — every named validator check,
-                            dispatched by the build/ validators
-  tests/                    pre-commit gate chain + its regression tests
-  lib/                      shared cross-script helpers
-  scratch/                  gitignored landing zone for exploratory queries
-
-sources/
-  manifest.yaml             source-archival index (YAML)
-  government/               government primary sources (PDFs, HTML)
-  news/                     news article HTML snapshots (news articles
-                            are stored here as source material; content
-                            nodes live under /documents/)
-  social/                   social media post snapshots
-  transcripts/              downloaded YouTube / broadcast transcripts
-  video/                    video-adjacent content
-
-people/ organizations/ documents/ events/ transcripts/
-media/ locations/ findings/ investigations/
-                            content nodes (human-readable narrative)
-
-.claude/
-  skills/                   invokable workflows — /build, /audit,
-                            /augment, /verify-transcript, /quote-relevance-audit,
-                            /archive-sweep, /prepare-ocr-sibling,
-                            /prepare-transcript-sibling, /fork-init — plus the
-                            build-protocol contract preloaded into the role
-                            subagents
-  agents/                   the six build role subagents (internal-investigator,
-                            external-investigator, archive, worker, builder, auditor)
-                            + the two OCR page agents (ocr-page-producer,
-                            ocr-page-verifier) dispatched by /prepare-ocr-sibling
-                            + the two attribution agents (attribution-producer,
-                            attribution-verifier) dispatched by
-                            /prepare-transcript-sibling
-  hooks/                    PreToolUse guards — commit anti-bypass guard (arms
-                            .githooks/pre-commit, which runs pre-commit.sh at
-                            commit time), node-body-edit block,
-                            one-new-synthesis-node cap
-  settings.json             hook wiring (committed; topic-neutral)
-
-.githooks/
-  pre-commit                runs the full gate chain inside `git commit`
-                            (armed via core.hooksPath by the commit guard)
-
-prompts/                    Claude-Web briefs — see prompts/README.md
-                            for the index
-```
-
-**Forking for a different topic.** Delete `meta/topic/`,
-`meta/research/`, and the contents of `/people/`, `/organizations/`,
-`/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
-`/findings/`, `/investigations/`, and `sources/{category}/` (keep the
-directories themselves); empty `sources/manifest.yaml`. Create your own
-`meta/topic/overview.md` — its frontmatter `topic` and `display_name`
-fields drive every UI surface that names the subject (rendered
-section headers like `## {topic_display_name} Relevance`, archiver
-User-Agent, etc.); the toolkit reads them via
-`load_topic()`. Run `/fork-init` for the bootstrap walk-through.
-Everything not deleted by the steps above — the rest of
-`meta/` (schema, memory, templates, …), all of
-`scripts/` and `prompts/`, the `.claude/` skills + subagents + hooks +
-`settings.json`, and root-level governance (`CLAUDE.md`, `AGENTS.md`,
-this `README.md`) — is topic-neutral toolkit and survives the fork.
-
-**Three organizing principles, one per tier.** Investigator-facing
-content (`/people/`, `/organizations/`, … and `/sources/`) is **flat by
-design** — `/{type}/{slug}.md`, found one click in, with no
-archetype/sub-category nesting; the frontmatter (archetype, kind,
-status) carries the categorization hierarchy would otherwise impose.
-Backend tooling (`/scripts/`) is organized for **engineering hygiene**,
-and governance + structured-data backing (`/meta/`) is organized **by
-role** (templates / topic / research). The flatness rule is about
-content the investigator reads — don't extrapolate it onto the tooling
-or governance layer, and don't extrapolate organized-by-role onto the
-content layer.
-
----
-
-## Node types
+The repository's content is a set of **nodes**: human-readable narrative
+files an investigator reads directly and composes in queries. Each type
+separates an evidentiary category structurally, so a reader sees the
+distinction before reading the content.
 
 - **person** — named individuals (4 archetypes: eyewitness,
   whistleblower, institutional-actor, reporter)
@@ -174,15 +77,17 @@ content layer.
   status verdicts; cited findings + per-hypothesis sources rollups
 
 Full specification in `meta/schema.yaml` (`architecture_layers`) for the
-fact / finding /
-investigation bright line.
+fact / finding / investigation bright line.
 
-**From schema to rendered node.** `meta/schema.yaml` defines each type's
-required and optional sections; `meta/templates/{type}.md` scaffolds them
-(via `scripts/build/new.py`); `scripts/build/renderers/{type}.py`
-regenerates the node body from its research artifact (via
-`build-from-research.py`). `scripts/build/renderer-coverage.py` gates the
-chain at every commit: every schema section must be renderer-producible.
+**Nodes are a composable working set.** The fastest way to use the corpus
+is to point the CLI at one or more node files and ask a synthesis question
+— `@people/{a} @people/{b} — what do they share in common?`, or
+`@events/{e} @transcripts/{t} — does the testimony match the event
+record?` Each node carries an `## Associated Nodes` section linking the
+related people, organizations, documents, and events, so one node fans out
+to its neighbours. The full consumer workflow — node composition vs. the
+structured research-artifact query — is `AGENTS.md` ("The investigator
+workflow").
 
 ---
 
@@ -225,61 +130,35 @@ sides and does not adjudicate.
 
 ---
 
-## Skills and agents
+## Where the mechanics live
 
-Work in this repository runs through **skills** and **role subagents**,
-defined under `.claude/`. A **skill** is an invokable workflow you start
-with `/name`; it runs on the main thread and may dispatch subagents. A
-**role subagent** is a capability-bounded worker a skill dispatches; its
-tool set *is* its discipline — the boundaries are mechanical, not
-conventional.
+This README is the what-and-why. The how lives in three places:
 
-| Skill | What it does | Pipeline position |
-|---|---|---|
-| `/build` | Build or rebuild a node through the six-role pipeline | The pipeline orchestrator |
-| `/prepare-ocr-sibling` | Produce + verify a clean-text sibling for an OCR-scanned source | `/build` step-4b sibling gate; also standalone |
-| `/prepare-transcript-sibling` | Produce + verify a speaker-attribution sibling for a label-less transcript (auto-caption / Whisper) | `/build` step-4c sibling gate; also standalone |
-| `/audit` | Health-check a built node for evidentiary integrity and consistency | Standalone maintenance on built nodes (reactive) |
-| `/augment` | Targeted maintenance change without re-scaffolding | Standalone maintenance on built nodes (proactive; partial re-entry) |
-| `/verify-transcript` | Verify a transcript node's quotes word-for-word against the archived source | Standalone maintenance on built nodes |
-| `/quote-relevance-audit` | Check each quote is load-bearing for the node's subject | Standalone maintenance on built nodes |
-| `/archive-sweep` | Verify local archives; recover dead URLs; submit missing to Wayback | Periodic / end-of-session health pass |
-| `/fork-init` | Bootstrap the toolkit for a different topic | One-time, destructive |
-| `build-protocol` | Shared contract preloaded into every build role | Not invokable |
+- **`CLAUDE.md`** — the contributor reference: repository layout, the
+  end-to-end build pipeline (source → node), and the skills/agents map.
+- **`AGENTS.md`** — the consumer reference: how an investigator queries
+  the corpus (node composition + the structured research-artifact protocol).
+- **`scripts/README.md`** · **`meta/schema.yaml`** · the `.claude/` SKILLs
+  — per-script, per-field, and per-role depth.
 
-The `/build` orchestrator dispatches the six role subagents in sequence —
-internal-investigator → external-investigator → archive → worker (×N) →
-builder → auditor: only `archive` writes the source manifest, only `worker`
-introduces verbatim quotes, and the builder edits the research artifact,
-never the rendered node. `/prepare-ocr-sibling` dispatches the two OCR page
-agents (ocr-page-producer, ocr-page-verifier); `/prepare-transcript-sibling`
-dispatches the two attribution agents (attribution-producer,
-attribution-verifier). The pipeline map — steps,
-stages, branches — is `.claude/skills/build/SKILL.md` ("The shape"); the
-role-boundary rationale and the shared contract are
-`.claude/skills/build-protocol/`.
-
-`.claude/hooks/` enforce the discipline at the tool level: an un-bypassable
-commit gate (`.githooks/pre-commit` runs `pre-commit.sh` inside `git commit`;
-the PreToolUse guard arms it and denies the bypass routes), a block on
-hand-editing rendered node bodies, and a one-new-synthesis-node-per-session
-cap.
+**Source preservation.** Every cited URL is preserved two independent
+ways: a local archive under `/sources/` registered in
+`sources/manifest.yaml` (the integrity guarantee) and a Wayback Machine
+snapshot (insurance). See `meta/sources-access.md` for site-specific
+workarounds when a source blocks automated retrieval.
 
 ---
 
-## Source preservation
+## Forking for a different topic
 
-Every external URL cited in any node is preserved through two
-independent mechanisms:
-
-1. **Local archive** — downloaded file in `/sources/{category}/` and
-   registered in `sources/manifest.yaml`
-2. **Wayback Machine** — submitted via `scripts/tools/archive.py`
-
-The local archive is the integrity guarantee; Wayback is insurance.
-
-See `meta/sources-access.md` for site-specific workarounds when a
-source blocks automated retrieval (SEC, defense.gov, Twitter/X, etc).
+The structure is deliberately topic-neutral — any investigation grounded
+in primary sources can use it. Forking to a new topic deletes the content
+layer and this instance's topic files (`meta/topic/`, `meta/research/`,
+and the node directories), keeping the toolkit (`scripts/`, `.claude/`,
+the schema, templates, and the root governance docs), then declares a new
+subject in `meta/topic/overview.md`. Run `/fork-init` for the bootstrap
+walk-through; the exact delete-list and the layout it operates on are in
+`CLAUDE.md` ("Repository layout").
 
 ---
 
