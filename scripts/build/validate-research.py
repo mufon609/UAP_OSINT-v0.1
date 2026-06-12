@@ -87,6 +87,7 @@ from lib._common import (
     content_type_dirs,
     iter_artifacts,
     load_manifest,
+    load_manifest_paths,
     load_schema,
     load_source_to_artifacts_index,
     load_synthesis_slugs,
@@ -161,9 +162,9 @@ from checks import witnesses_testimony as ck_witnesses_testimony
 # Constants
 # =============================================================================
 #
-# REPO_ROOT, load_schema, load_manifest_paths, content_type_dirs() come
-# from lib._common — shared with every other script that walks the
-# content layer.
+# REPO_ROOT, load_schema, load_manifest, load_manifest_paths,
+# iter_artifacts, content_type_dirs() come from lib._common — shared
+# with every other script that walks the content layer.
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
@@ -466,10 +467,7 @@ def main():
     # transcript_provenance — an empty manifest_entries would silently
     # no-op it).
     manifest_entries = load_manifest()
-    manifest_paths = {
-        a.get("path") for _, a in iter_artifacts(manifest_entries)
-        if a.get("path")
-    }
+    manifest_paths = load_manifest_paths(manifest_entries)
     source_to_artifacts = load_source_to_artifacts_index()
     synthesis_slugs = load_synthesis_slugs()
     base_ctx = BaseContext(

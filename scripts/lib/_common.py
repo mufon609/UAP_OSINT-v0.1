@@ -418,14 +418,20 @@ def save_manifest(entries):
         raise
 
 
-def load_manifest_paths():
+def load_manifest_paths(entries=None):
     """Return the set of ``path`` strings registered in
     ``sources/manifest.yaml`` — across every URL's ``artifacts`` list.
     Convenience wrapper for callers that only need path-existence
     checks (validate-research.py + review-coverage.py both use this
-    shape)."""
+    shape).
+
+    Pass an already-parsed ``entries`` list to derive the path set from
+    it without re-reading the manifest — keeps the single-parse callers
+    (validate-research loads the full entries once) on one definition."""
+    if entries is None:
+        entries = load_manifest()
     return {
-        a.get("path") for _, a in iter_artifacts(load_manifest())
+        a.get("path") for _, a in iter_artifacts(entries)
         if a.get("path")
     }
 

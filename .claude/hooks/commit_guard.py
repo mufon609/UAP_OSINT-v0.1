@@ -46,6 +46,30 @@ def is_git(tok):
     return tok == "git" or tok.endswith("/git")
 
 
+# core.hooksPath read-only inspection flags — `git config --get core.hooksPath`
+# and friends are reads, not manipulation, and must not be denied.
+CONFIG_READ_FLAGS = {"--get", "--get-all", "--get-regexp", "--list", "-l"}
+
+
+def sets_hookspath(seg, i):
+    """True when token ``seg[i]`` (which contains ``core.hooksPath``) is
+    actually *setting* the value rather than reading it. The set forms:
+    ``-c core.hooksPath=VALUE`` / env ``GIT_CONFIG_*=…core.hooksPath`` (the
+    ``key=value`` shape always carries ``=``), and ``git config [opts]
+    core.hooksPath VALUE`` (a value token follows the key, and no read-mode
+    flag is present). A bare ``git config core.hooksPath`` / ``--get
+    core.hooksPath`` is a read."""
+    tok = seg[i]
+    if "core.hooksPath=" in tok:
+        return True  # -c key=val / GIT_CONFIG env injection
+    if "config" not in seg[:i]:
+        return False  # not a `git config` invocation — can't be a config set
+    if any(f in seg for f in CONFIG_READ_FLAGS):
+        return False  # explicit read mode
+    rest = seg[i + 1:]
+    return any(not t.startswith("-") for t in rest)  # a value follows the key
+
+
 def verdict(cmd):
     if not ("git" in cmd and ("commit" in cmd or "core.hooksPath" in cmd)):
         return "allow"
@@ -71,10 +95,12 @@ def verdict(cmd):
         gi = next((i for i, t in enumerate(seg) if is_git(t)), None)
         if gi is None:
             continue
-        # core.hooksPath manipulation in any git segment (config set, -c
-        # override, GIT_CONFIG_* env) is reserved to the guard itself.
+        # core.hooksPath *manipulation* in any git segment (config set, -c
+        # override, GIT_CONFIG_* env) is reserved to the guard itself; a bare
+        # read (`git config --get core.hooksPath`) is left alone.
         for i, t in enumerate(seg):
-            if "core.hooksPath" in t and (i == 0 or seg[i - 1] not in MESSAGE_FLAGS):
+            if ("core.hooksPath" in t and (i == 0 or seg[i - 1] not in MESSAGE_FLAGS)
+                    and sets_hookspath(seg, i)):
                 return "deny core.hooksPath manipulation is reserved to the commit guard"
         rest = seg[gi + 1:]
         if "commit" not in rest:
@@ -97,8 +123,11 @@ def verdict(cmd):
         return "commit"
     # `git` + `commit` substrings present but no parseable git-commit segment
     # (e.g. quoted `sh -c 'git commit …'`): fail closed on a bypass substring,
-    # otherwise treat as a commit so the wrapper arms the githook.
-    if "--no-verify" in stripped or "core.hooksPath" in stripped:
+    # otherwise treat as a commit so the wrapper arms the githook. Match the
+    # core.hooksPath *set* form (`-c core.hooksPath=` / GIT_CONFIG env) only —
+    # a bare `core.hooksPath` substring here is a read (`grep`/`--get`), not a
+    # bypass, and must not be denied.
+    if "--no-verify" in stripped or "core.hooksPath=" in stripped:
         return ("deny a bypass flag appears in an unparseable position — "
                 "rewrite the commit as a plain `git commit` invocation")
     return "commit"

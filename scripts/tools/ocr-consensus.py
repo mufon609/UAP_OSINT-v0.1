@@ -876,6 +876,12 @@ def stamp_content_block(artifact_path, pdf_name, val):
                       f"vlm-skipped value {existing!r} is owned by the original "
                       f"run (verify derives only from --blocked-pages)")
                 return
+            if val == "None" and existing.startswith(("Pages", "Page ")):
+                print(f"  content_block NOT overwritten on {artifact}: refusing to "
+                      f"downgrade a recorded block {existing!r} to 'None' — re-run "
+                      f"with --blocked-pages to restate the blocked pages, or edit "
+                      f"the artifact directly if the block is genuinely cleared")
+                return
             lines[j] = new_line
             artifact.write_text("".join(lines), encoding="utf-8")
             print(f"  content_block updated on {artifact}: {existing!r} -> {val!r}")
