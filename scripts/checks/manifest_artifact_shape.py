@@ -10,8 +10,8 @@ Enforces the four C29 invariants on ``sources/manifest.yaml``:
   4. ``artifacts`` is empty when ``status != archived`` (pending /
      blocked URLs have nothing archived yet).
 
-The check is structural — it does NOT verify file integrity (that's
-``manifest_checksums``), state-bit consistency (``manifest_archive_status``),
+The check is structural — it does NOT verify on-disk file presence (that's
+``manifest_files_present``), state-bit consistency (``manifest_archive_status``),
 or enum membership (``manifest_value_enums`` / ``manifest_extraction_type``).
 This check covers the invariants those four pre-existing checks don't
 enforce: the URL ↔ artifacts primary/derived discipline.

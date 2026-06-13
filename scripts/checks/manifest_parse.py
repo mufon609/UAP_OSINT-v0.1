@@ -8,7 +8,7 @@ of entries. Two fatal cases:
 
 Missing manifest is silent (manifest is optional in toolkit shape; a
 fresh fork-target may not have one yet). The three manifest-integrity
-checks (``manifest_checksums``, ``manifest_archive_status``,
+checks (``manifest_files_present``, ``manifest_archive_status``,
 ``manifest_extraction_type``) no-op on an empty ``manifest_entries``,
 so silent absence is correct behavior.
 
