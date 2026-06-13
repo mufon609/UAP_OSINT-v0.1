@@ -10,7 +10,6 @@ import sys
 
 from ._common import (
     SECTION_SEP,
-    _escape_table_cell,
     _render_statement_block,
     _wrap_path,
     sort_by_date,
@@ -126,7 +125,7 @@ def render_event_summary(artifact, kind):
         row("Instruments Involved", ei.get("instruments_involved"))
 
     if not rows_emitted:
-        lines.append("|  |  |")
+        lines.append("|  |  |  |")
     return "\n".join(lines) + "\n"
 
 
@@ -154,7 +153,7 @@ def render_participants_encounter(artifact):
         for e in confirmed:
             lines.append(_participant_row(e))
     else:
-        lines.append("|  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
                   "| Participant | Role | Source |",
@@ -187,7 +186,7 @@ def render_participants_hearing(artifact):
             for e in subsection_entries:
                 lines.append(_participant_row(e))
         else:
-            lines.append("|  |  |")
+            lines.append("|  |  |  |")
 
     known = set(_HEARING_CAPACITY_ORDER)
     other_confirmed = [e for e in confirmed if e.get("capacity") not in known]

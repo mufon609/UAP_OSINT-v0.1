@@ -14,6 +14,7 @@ no entity-node references in the directional contract (enforced by
 
 from ._common import (
     SECTION_SEP,
+    _compose_attributed_to,
     _render_blockquote,
     _wrap_path,
     sort_by_date,
@@ -96,13 +97,9 @@ def render_finding_evidence(artifact):
         lines.append("")
 
         # Verification block, extended with Tier + Attestor rows
-        ctx = q.get("context") or ""
-        date = q.get("statement_date") or ""
-        if date and date in ctx:
-            attributed_to = ctx
-        else:
-            parts = [p for p in [ctx, date] if p]
-            attributed_to = ", ".join(parts) if parts else ""
+        attributed_to = _compose_attributed_to(
+            q.get("context"), q.get("statement_date")
+        )
         src = q.get("source") or {}
         src_path = src.get("path") or ""
         src_link = f"[archived source](../sources/{src_path})" if src_path else ""

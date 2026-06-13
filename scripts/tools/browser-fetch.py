@@ -216,10 +216,8 @@ def _total_length(page, url):
         tail = cr.rsplit("/", 1)[-1]
         if tail.isdigit():
             return int(tail)
-    cl = res.get("cl")
-    if cl and str(cl).isdigit():
-        # With a bytes=0-0 range the CL is 1; only trust it absent a range echo.
-        return None
+    # Content-Length is unreliable here: a bytes=0-0 probe range makes the CL
+    # 1, so only Content-Range (above) carries a trustworthy total.
     return None
 
 

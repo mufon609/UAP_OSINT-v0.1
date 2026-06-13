@@ -54,9 +54,19 @@ def check(ctx):
     if is_person and any(
         isinstance(q, dict) and q.get("claim_group") for q in quotes
     ):
+        # Mirror the renderer's per-claim-group scoping (renderers/person.py):
+        # a quote is only demoted to a pointer when the corroborated_by naming
+        # it comes from a quote in the *same* group. A cross-group (or
+        # ungrouped-source) reference does not demote the target, so the
+        # target still renders in full and must keep its full-text check.
+        group_of = {
+            q.get("id"): q.get("claim_group")
+            for q in quotes if isinstance(q, dict)
+        }
         pointer_ids = {
-            cid for q in quotes if isinstance(q, dict)
+            cid for q in quotes if isinstance(q, dict) and q.get("claim_group")
             for cid in (q.get("corroborated_by") or [])
+            if group_of.get(cid) == q.get("claim_group")
         }
 
     for q in quotes:

@@ -611,7 +611,10 @@ def parse_date_tuple(s):
             right = right.strip()
             s = left if left else right
             break
-    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
+    # Month bounded to 01-12 so a bare-hyphen year range ("2004-2005") that
+    # slips past _DATE_RANGE_SEPARATORS degrades to its leftmost year rather
+    # than parsing the second year's leading digits as an impossible month.
+    m = re.match(r"^(\d{4})(?:-(0[1-9]|1[0-2])(?:-(\d{1,2}))?)?", s)
     if m:
         y = int(m.group(1))
         mo = int(m.group(2)) if m.group(2) else 0

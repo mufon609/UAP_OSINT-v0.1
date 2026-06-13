@@ -47,22 +47,14 @@ def _table_cell_overages(section_text, budget):
     most recent header row preceding each data row)."""
     out = []
     note_columns = set()
-    pending_header = False
     for line in section_text.splitlines():
         if not _is_table_row(line):
             # Reset Note-column map when leaving a table (e.g., blank line)
             note_columns = set()
-            pending_header = False
             continue
         cells = _split_cells(line)
         if _is_separator_row(line):
-            pending_header = False
             continue
-        if pending_header:
-            # The most recent non-separator table row was a candidate header;
-            # this current row could be a data row OR another header (a new
-            # table starting without intervening prose). Re-evaluate.
-            pass
         # Decide whether this row is a header. Heuristic: if any cell name
         # in this row case-insensitively equals 'note' AND every cell is a
         # short non-prose label, treat as header. Conservative: just check
@@ -70,7 +62,6 @@ def _table_cell_overages(section_text, budget):
         if any(c.strip().lower() == "note" for c in cells):
             note_columns = {i for i, c in enumerate(cells)
                             if c.strip().lower() == "note"}
-            pending_header = True
             continue
         # Data row — apply word budget to non-Note columns
         for i, cell in enumerate(cells):

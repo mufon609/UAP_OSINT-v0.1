@@ -669,8 +669,15 @@ def spot_check(yaml_path: Path, video_path: Path, output_csv: Path,
 
     # Write CSV
     output_csv.parent.mkdir(parents=True, exist_ok=True)
+    # Explicit field order — both row shapes share these keys — so an empty
+    # sibling writes a header-only CSV instead of an IndexError on rows[0].
+    fields = [
+        "line_range", "speaker_id", "on_camera_role", "window",
+        "n_frames", "n_face_frames", "assigned_frames", "others_seen",
+        "active_speakers", "audio_rms", "verdict", "notes",
+    ]
     with output_csv.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
 

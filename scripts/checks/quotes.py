@@ -258,6 +258,18 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         if ctx.target_type == "person":
+            if q.get("corroborated_by") and not cg:
+                # An ungrouped quote is rendered in its own singleton group, so
+                # its corroborated_by can never demote a target to a pointer —
+                # the reference is inert in the renderer yet still suppresses
+                # the target's coverage check. Reject it at the source.
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): corroborated_by is set but "
+                    f"the quote has no claim_group — a corroboration pointer "
+                    f"only renders within a claim_group",
+                    check_name=CHECK_NAME,
+                )
             for cid in (q.get("corroborated_by") or []):
                 if cid not in quote_ids:
                     yield Issue(

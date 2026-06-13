@@ -11,7 +11,6 @@ from lib._common import load_topic
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
-    _escape_table_cell,
     _format_period,
     _render_attribution_block,
     _wrap_path,

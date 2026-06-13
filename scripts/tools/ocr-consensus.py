@@ -401,10 +401,19 @@ def tesseract_version():
 def run_tesseract(images):
     pages = []
     for img in images:
-        out = subprocess.run(
-            ["tesseract", str(img), "stdout", "--psm", "1", "-l", "eng"],
-            capture_output=True, text=True,
-        )
+        try:
+            out = subprocess.run(
+                ["tesseract", str(img), "stdout", "--psm", "1", "-l", "eng"],
+                check=True, capture_output=True, text=True,
+            )
+        except subprocess.CalledProcessError as exc:
+            # A silent Tesseract failure (missing `eng` traineddata, OOM, bad
+            # image) would zero out one engine and collapse the two-engine
+            # corroboration guarantee to PaddleOCR-only. Fail loudly instead.
+            raise SystemExit(
+                f"Tesseract failed on {img} (exit {exc.returncode}): "
+                f"{(exc.stderr or '').strip()}"
+            ) from exc
         pages.append(out.stdout)
         print(f"      Tesseract p.{len(pages)}/{len(images)}", file=sys.stderr, flush=True)
     return _join_pages(pages)
