@@ -7,6 +7,12 @@
 #   2. scripts/tests/test_stopwords.py       — STOPWORDS shape + no content-word
 #                                              contamination (lib/_common.py)
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
+#      python3 scripts/build/merge-fragments.py --selftest
+#      python3 scripts/build/finalize-attribution.py --selftest
+#      python3 scripts/tools/ocr-consensus.py --selftest
+#                                            — per-script unit selftests on
+#                                              synthetic inputs (no corpus, no
+#                                              OCR engines / video needed)
 #   4. python3 scripts/build/validate.py     — structural + verbatim-quote +
 #                                              governance-file + conditionally_required
 #   5. python3 scripts/build/validate-research.py
@@ -121,6 +127,9 @@ steps=(
     $'help-check\tbash scripts/tests/help-check.sh'
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
+    $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
+    $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'
+    $'ocr-consensus --selftest\tpython3 scripts/tools/ocr-consensus.py --selftest'
     $'validate.py\tpython3 scripts/build/validate.py'
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
     $'validate-speaker-attribution.py\tpython3 scripts/build/validate-speaker-attribution.py --quiet'
