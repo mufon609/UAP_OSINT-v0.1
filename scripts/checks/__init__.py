@@ -136,7 +136,7 @@ class BaseContext:
     disk *and* whose path is git-ignored (the large primary-source media
     deliberately kept out of the git remote per ``.gitignore`` —
     ``sources/video/``). On a fresh clone these are expected-absent, not
-    corrupt, so ``manifest_checksums`` records them here (keyed
+    corrupt, so ``manifest_files_present`` records them here (keyed
     ``sources/<path>`` → source URL) and yields no Issue. A genuinely
     *tracked* file gone missing still errors. Orchestrator prints the
     registry so a fresh checkout sees what to recover (source URL /
@@ -166,7 +166,7 @@ class BaseContext:
         # directional checks to catch bare-slug prose references the
         # /findings/ // /investigations/ path needles miss.
         self.synthesis_slugs = synthesis_slugs if synthesis_slugs is not None else {"finding": frozenset(), "investigation": frozenset()}
-        # Out-of-band registry, populated by manifest_checksums for
+        # Out-of-band registry, populated by manifest_files_present for
         # git-ignored archived artifacts missing on disk (expected-absent
         # on a fresh clone). Keyed sources/<path> → source URL. Only the
         # global manifest check writes it (against the base context), so —

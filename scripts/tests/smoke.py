@@ -81,8 +81,10 @@ _common.load_schema()
 with open(MANIFEST_PATH) as f:
     _MANIFEST = strict_yaml_load(f) or []
 _common.load_manifest = lambda: _MANIFEST
-_common.load_manifest_paths = lambda: {
-    a.get("path") for _, a in iter_artifacts(_MANIFEST) if a.get("path")
+_common.load_manifest_paths = lambda entries=None: {
+    a.get("path")
+    for _, a in iter_artifacts(_MANIFEST if entries is None else entries)
+    if a.get("path")
 }
 
 # ── No-op manifest integrity + governance checks for the smoke run ─────

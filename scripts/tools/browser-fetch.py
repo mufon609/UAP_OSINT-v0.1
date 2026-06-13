@@ -345,7 +345,8 @@ def process_one(url, rel_path, fmt, args, page_fetch):
     if args.skip_manifest:
         return True
     return register(url, rel_path, fmt, extraction_type=args.extraction_type,
-                    note=args.note, wayback_skip=args.wayback_skip)
+                    note=args.note, wayback_skip=args.wayback_skip,
+                    dry_run=args.dry_run)
 
 
 def main():

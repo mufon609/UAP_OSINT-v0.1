@@ -15,7 +15,7 @@ the field's value, when present, is one of the schema's enum members;
 unknown values fail loudly so typos can't silently disable downstream
 OCR-handling logic.
 
-Together with ``manifest_checksums`` (content-byte integrity) and
+Together with ``manifest_files_present`` (on-disk file presence) and
 ``manifest_archive_status`` (state-bit consistency), this check guards
 a third manifest invariant — enum discipline on ingestion-pipeline
 metadata.

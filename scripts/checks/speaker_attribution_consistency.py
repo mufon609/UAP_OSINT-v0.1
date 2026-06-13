@@ -49,6 +49,7 @@ import yaml
 
 from checks import Issue
 from checks._research_utils import entries
+from lib._common import strict_yaml_load
 
 
 CHECK_NAME = "speaker_attribution_consistency"
@@ -266,7 +267,7 @@ def _load_siblings():
         return out
     for path in sorted(_TRANSCRIPTS_DIR.glob("*-attribution.yaml")):
         try:
-            data = yaml.safe_load(path.read_text(encoding="utf-8"))
+            data = strict_yaml_load(path.read_text(encoding="utf-8"))
         except (OSError, yaml.YAMLError):
             continue
         if not isinstance(data, dict):

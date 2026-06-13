@@ -29,10 +29,11 @@ fresh corroboration stamp):
     longer matches the stamped count (quotes were added or removed
     after corroboration). Re-run corroborate-quotes.
 
-The stamp's three parse anchors (quote count / contested count /
+The stamp's machine anchors (quote count / contested count /
 ``sha256:`` hash) are written only by ``format_quote_corroboration`` in
-``ocr-consensus.py`` — a value missing them was hand-typed and is
-flagged as such. Engines never run here: the heavy perception work
+``ocr-consensus.py``; this check keys off two of them — the quote count
+and the ``sha256:`` hash — so a value missing those was hand-typed and
+is flagged as such. Engines never run here: the heavy perception work
 happened at corroborate-quotes time; the commit boundary only reads the
 stamp, exactly as ``ocr_sibling_presence`` reads ``content_block``.
 

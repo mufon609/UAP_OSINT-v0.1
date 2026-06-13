@@ -24,6 +24,43 @@ layers:
 The toolkit itself is topic-neutral. The current instance investigates
 a specific topic — see `meta/topic/overview.md` for scope.
 
+The fastest way to query these two layers is **node composition** — see
+"The investigator workflow" below.
+
+---
+
+## The investigator workflow — composing nodes
+
+The repository's content is a set of **nodes** — human-readable narrative
+files (`/people/`, `/organizations/`, `/documents/`, `/events/`,
+`/transcripts/`, `/media/`, `/locations/`, `/findings/`,
+`/investigations/`). They are a **composable working set**: the fastest
+way to use the corpus is to point the CLI at one or more node files and
+ask a synthesis question.
+
+- `@people/{a} @people/{b} — what do they share in common?`
+- `@events/{e} @transcripts/{t} — does the testimony match the event record?`
+- `@findings/{f} — which primary sources back each side of the dispute?`
+- `@organizations/{o} — who are its confirmed personnel, and where else in the corpus do they appear?`
+
+Each node carries an `## Associated Nodes` section linking the related
+people, organizations, documents, and events — so a single @-mentioned
+node fans out to its neighbours, and you can pull those in too.
+
+**Two modes, two precisions:**
+
+| Mode | Use when | What you get |
+|---|---|---|
+| **Node composition** (@-mention node files) | cross-entity synthesis, comparison, "what connects these?" | a narrative answer grounded in the rendered nodes + their Associated-Nodes links |
+| **Research-artifact query** (search `meta/research/*.yaml`) | exact fact lookup, quote provenance, uncertainty flags | a per-quote answer with quote ID, `target_node`, and `source.path` to the primary source (the protocol below) |
+
+The rendered node is the readable narrative; the research artifact behind
+it (`meta/research/{slug}.yaml`) is the structured fact layer. Compose
+nodes to see the picture; drop to the artifact when you need the exact
+quote and its primary-source path. Both honour the same evidentiary
+framing (Confirmed / Flagged / Disputed / Contradicted) — surface it in
+any answer, and cite the primary source so the user can verify.
+
 ---
 
 ## What this instance covers
@@ -47,6 +84,7 @@ If you're doing anything related to this instance's topic, read
 |---|---|
 | Start a contributor session | read `CLAUDE.md` (auto-loaded for Claude Code) — the session-start checklist |
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
+| Compare or synthesize across nodes | @-mention the node files and ask — `@people/{a} @events/{e} what do they share?` — see *The investigator workflow* above |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `CLAUDE.md` → run `/build` |
 | Build a new node | run `/build {type}/{slug}` (the multi-agent pipeline). One *new* person/org node per session. |
 | Prepare a clean-text sibling for an OCR source | run `/prepare-ocr-sibling {category}/{filename}.pdf` (before quoting an OCR-scanned source) |
@@ -65,7 +103,8 @@ If you're doing anything related to this instance's topic, read
 | What | Where |
 |---|---|
 | Node structure spec | `meta/schema.yaml` (nodes) · `meta/schema-research-artifact.yaml` (research artifacts) |
-| Epistemic standard (why the rules exist) | `README.md` ("What this is" / "Status markers"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
+| Epistemic standard (why the rules exist) | `README.md` ("What this is"), `meta/schema.yaml`, `.claude/skills/build-protocol/` |
+| How to use the repo as an investigator | `INVESTIGATOR.md` (why grounding beats an untrained model; reading evidentiary state) |
 | Node templates (one per type) | `meta/templates/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
 | Build-state snapshot | `meta/build-state.md` (auto-generated) |
@@ -120,7 +159,7 @@ If you're doing anything related to this instance's topic, read
 
 ## If you're uncertain about anything
 
-- Default to reading `README.md` ("What this is" / "Status markers") + `meta/schema.yaml` for the epistemic standard.
+- Default to reading `README.md` ("What this is") + `meta/schema.yaml` for the epistemic standard.
 - Default to `meta/schema.yaml` for structural rules.
 - If a question isn't answered by governance docs, ask the user before
   making assumptions that will enter content.
