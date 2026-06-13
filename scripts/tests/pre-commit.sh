@@ -6,6 +6,8 @@
 #   1. scripts/tests/help-check.sh           — scripts/**/*.py --help doesn't crash
 #   2. scripts/tests/test_stopwords.py       — STOPWORDS shape + no content-word
 #                                              contamination (lib/_common.py)
+#      scripts/tests/test_location_bans.py   — page-range ban + sibling-`p.N` ban
+#                                              fire on bad data, no false positives
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -129,6 +131,7 @@ run_step() {
 steps=(
     $'help-check\tbash scripts/tests/help-check.sh'
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
+    $'test_location_bans\tpython3 scripts/tests/test_location_bans.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'

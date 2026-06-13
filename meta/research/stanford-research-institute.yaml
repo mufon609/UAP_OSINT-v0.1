@@ -990,7 +990,7 @@ key_personnel:
   period_start: '1972-04'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
 
 - id: kp3
   added_date: '2026-05-15'
@@ -1001,7 +1001,7 @@ key_personnel:
   period_end: '1990'
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 22, ¶1'
+    location: '¶ "In the early 1970''s, U.S. researchers"'
 
 - id: kp4
   added_date: '2026-05-15'
@@ -1012,7 +1012,7 @@ key_personnel:
   period_end: '1990'
   source:
     path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
-    location: 'p. 3-2'
+    location: 'p. 25'
 
 - id: kp5
   added_date: '2026-05-15'
@@ -1032,7 +1032,7 @@ key_personnel:
   period_start: '1973'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 9, ¶1'
+    location: '¶ "one of whom was Pat Price"'
 
 - id: kp7
   added_date: '2026-05-15'
@@ -1173,7 +1173,7 @@ org_relationships:
   relationship_type: contracting-agency
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
 
 - id: or5
   added_date: '2026-05-15'
@@ -1181,7 +1181,7 @@ org_relationships:
   relationship_type: contracting-agency
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 10, ¶3'
+    location: '¶ "The effort at SRI was discontinued"'
 
 - id: or6
   added_date: '2026-05-15'
@@ -1189,4 +1189,4 @@ org_relationships:
   relationship_type: successor
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 10, ¶3'
+    location: '¶ "The effort at SRI was discontinued"'

@@ -49,7 +49,7 @@ affiliations:
   period_end: '2016'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: p. 1, Administrative Note
+    location: 'Administrative Note'
 relationships:
 - id: r1
   added_date: '2026-05-17'
@@ -106,7 +106,7 @@ relationships:
   relationship: 'Author of the AAWSAP DIRD on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — produced under Lacatski''s AAWSA Program Management at DIA in FY 2009'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: p. 1, Administrative Note
+    location: 'Administrative Note'
 - id: r9
   added_date: '2026-05-17'
   person_path: /people/dylan-borland
@@ -132,7 +132,7 @@ program_involvement:
   confidence: high
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: p. 1, Administrative Note
+    location: 'Administrative Note'
 - id: pi2
   added_date: '2026-05-17'
   program: Kona Blue Program (KBP) ([`/organizations/kona-blue`])

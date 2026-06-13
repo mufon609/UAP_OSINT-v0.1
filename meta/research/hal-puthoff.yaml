@@ -616,7 +616,7 @@ relationships:
   relationship: 'CIA Project Officer for the SRI parapsychology investigation contracts (1972 onward); author of the 1977 Studies in Intelligence paper that is the foundational CIA-side primary-source attestation of the Targ + Puthoff SRI program'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶1-4'
+    location: '¶ "Two laser physicists, Dr. Russell Targ"'
 
 - id: r8
   added_date: '2026-05-16'
@@ -632,7 +632,7 @@ relationships:
   relationship: 'AAWSA Program Manager who administered the AAWSAP DIRD series of which Puthoff''s 2010-03-29 DIA-08-1003-015 ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' is one report; named on the DIRD attribution page as the point of contact for comments or questions'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 2'
+    location: 'title-page identity block'
 
 program_involvement:
 - id: p1
@@ -656,7 +656,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
 
 - id: p3
   added_date: '2026-05-16'
@@ -689,7 +689,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 2'
+    location: 'title-page identity block'
 
 - id: p6
   added_date: '2026-05-16'
@@ -701,4 +701,4 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 41, ¶1'
+    location: 'title-page identity block'

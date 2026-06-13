@@ -21,8 +21,6 @@ doc_form: article
 | Local Archive | [sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description

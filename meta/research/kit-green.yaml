@@ -300,7 +300,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8 and p. 10 footnotes'
+    location: 'footnotes (Puthoff letter to K. Green/OSI; K. Green LSD/OSI Memorandum for the Record)'
 
 - id: pi2
   added_date: '2026-05-17'
@@ -423,7 +423,7 @@ relationships:
   confidence: confirmed
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8 footnote (q1) + p. 10 footnote (q2) + p. 8 ¶2 body narrative'
+    location: 'footnotes (q1, q2) + body narrative ¶ "In April of 1972, Targ met"'
 
 - id: rel3
   added_date: '2026-05-17'

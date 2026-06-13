@@ -78,7 +78,7 @@ affiliations:
   period_end: '1973-08'
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ title'
+    location: '¶ title'
 
 - id: a3
   added_date: '2026-05-16'
@@ -148,7 +148,7 @@ program_involvement:
   period_end: '1973-08'
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ title'
+    location: '¶ title'
 
 - id: pi2
   added_date: '2026-05-16'
@@ -565,7 +565,7 @@ relationships:
   relationship: Co-SRI-subject named alongside Geller in the 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] — Targ-Puthoff identify Price as the second-study subject in double-blind experiments measuring his ability to describe remote outdoor scenes many miles from his physical location, while Geller is the first-study subject in the SRI shielded-room picture-drawing experiments
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 2, ¶ studies-overview'
+    location: '¶ studies-overview'
 
 - id: r22
   added_date: '2026-05-16'

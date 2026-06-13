@@ -169,7 +169,7 @@ cited_works:
     Perception after Sixty Years (Henry Holt, New York, 1940).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 1'
+    location: 'References 1'
 - id: cw2
   added_date: '2026-05-26'
   citation_key: '2'
@@ -181,7 +181,7 @@ cited_works:
     Faber, London, 1954).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 2'
+    location: 'References 2'
 - id: cw3
   added_date: '2026-05-26'
   citation_key: '3'
@@ -193,7 +193,7 @@ cited_works:
     Hampshire, England, 1963).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 3'
+    location: 'References 3'
 - id: cw4
   added_date: '2026-05-26'
   citation_key: '4'
@@ -203,7 +203,7 @@ cited_works:
     4 Musso, J. R. , and Granero, M. , J. Parapsychology , 37, 13-37 (1973).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 4'
+    location: 'References 4'
 - id: cw5
   added_date: '2026-05-26'
   citation_key: '5'
@@ -213,7 +213,7 @@ cited_works:
     5 Osis, K. , ASPR Newsletter, No. 14 (1972).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 5'
+    location: 'References 5'
 - id: cw6
   added_date: '2026-05-26'
   citation_key: '6'
@@ -225,7 +225,7 @@ cited_works:
     Y, No. 4 (1963).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 6'
+    location: 'References 6'
 - id: cw7
   added_date: '2026-05-26'
   citation_key: '7'
@@ -235,7 +235,7 @@ cited_works:
     7 Dean, E. D. , Int. J. Neuropsychiatry, 2 (1966).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 7'
+    location: 'References 7'
 - id: cw8
   added_date: '2026-05-26'
   citation_key: '8'
@@ -249,7 +249,7 @@ cited_works:
     Various Aspects (Macmillan, New York, 196 3).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 8'
+    location: 'References 8'
 - id: cw9
   added_date: '2026-05-26'
   citation_key: '9'
@@ -261,5 +261,5 @@ cited_works:
     (McGraw-Hill, New York, 1956).
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, References 9'
+    location: 'References 9'
 naming_quirks: []

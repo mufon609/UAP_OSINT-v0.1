@@ -26,10 +26,15 @@ count) is caught here instead of passing silently.
 
 A sibling-backed source (OCR-scan / extraction-lossy) carries **no synthetic
 page markers** — never manufacture page structure in a sibling — so its extract
-has no form feeds and this check skips it **by design**, not as a silent defect.
-For such a source `p. N` is a verbatim-anchored navigation hint: the
-verbatim-quote check confirms the text is in the source, and page-precision
-rests on contributor care.
+has no form feeds and page-against-form-feed verification is impossible. Rather
+than skip silently, this check now **errors** when such a source carries a
+physical-page location (`p. N` / `pp. N-M`): the markerless sibling has no
+verifiable page integer, so the schema requires a descriptive content anchor
+there (`¶ "<leading phrase>"`, a section title, a named block). That guard
+(`_walk_source_locations` → the sibling-page ban) is **universal** — it covers
+every section's `source.location`, not just the quote-bearing three, because
+relationship / personnel / cited-works refs carry the same trap. The form-feed
+page verification below runs only on text-native paginated sources.
 
 Eligibility is one signal: does the extract carry form-feed page separators?
 Everything else is skipped, so the check never false-fails: locations that
@@ -51,7 +56,12 @@ import re
 
 from checks import Issue
 from checks._research_utils import entries
-from lib._common import SOURCES_DIR, extract_source_text, normalize_for_compare
+from lib._common import (
+    SOURCES_DIR,
+    _load_extraction_types,
+    extract_source_text,
+    normalize_for_compare,
+)
 
 
 CHECK_NAME = "quote_location_page"
@@ -59,6 +69,9 @@ CHECK_NAME = "quote_location_page"
 # Leading `p. N` / `p.N` with an integer page. Roman numerals (`p. ii`),
 # `¶N`, `[MM:SS]`, and `Doc N` carry no physical-page claim and don't match.
 _PAGE_REF = re.compile(r"^\s*p\.\s*(\d+)\b")
+# Any leading physical-page claim, `p. N` or `pp. N-M` — used only to flag a
+# page ref on a sibling-backed source (where no page integer is verifiable).
+_PAGEISH = re.compile(r"^\s*pp?\.\s*\d+")
 
 
 def _cited_page(location):
@@ -67,6 +80,38 @@ def _cited_page(location):
         return None
     m = _PAGE_REF.match(location)
     return int(m.group(1)) if m else None
+
+
+def _is_sibling_backed(rel_source):
+    """True when the source is OCR-scan / extraction-lossy AND has a clean-text
+    `.txt` sibling — the canonical extract is the markerless sibling, which
+    carries no verifiable page integer, so a `p. N` location is unanchorable."""
+    et = _load_extraction_types().get(rel_source)
+    if not et or et == "text-native":
+        return False
+    return (SOURCES_DIR / rel_source).with_suffix(".txt").exists()
+
+
+def _walk_source_locations(obj, path=""):
+    """Yield (jsonpath, rel_source, location) for every source-ref location in
+    the artifact — both the `source: {path, location}` shape and the flat
+    `source_path` + `location` shape (naming_quirks) — so the sibling-page guard
+    covers EVERY section, not just the quote-bearing three. A bare `location`
+    with no associated source (e.g. a hearing's physical room) is not a source
+    ref and is skipped."""
+    if isinstance(obj, dict):
+        loc = obj.get("location")
+        if isinstance(loc, str):
+            rel = obj.get("path") if isinstance(obj.get("path"), str) else None
+            if rel is None and isinstance(obj.get("source_path"), str):
+                rel = obj["source_path"]
+            if rel:
+                yield path or "location", rel, loc
+        for k, v in obj.items():
+            yield from _walk_source_locations(v, f"{path}.{k}" if path else k)
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            yield from _walk_source_locations(v, f"{path}[{i}]")
 
 
 def _pages(rel_source):
@@ -112,6 +157,21 @@ def _verify_on_page(ctx, section, i, eid, rel_source, page, pages, text,
 
 
 def check(ctx):
+    # Sibling-page ban — universal across every section: a physical-page ref on
+    # an OCR-scan / extraction-lossy source whose canonical extract is a
+    # markerless sibling names a page nothing can verify. The schema requires a
+    # descriptive content anchor there.
+    for jpath, rel_source, location in _walk_source_locations(ctx.data):
+        if _PAGEISH.match(location) and _is_sibling_backed(rel_source):
+            yield Issue(
+                ctx.rel, "error",
+                f"{jpath}: physical-page location \"{location}\" on sibling-backed "
+                f"source sources/{rel_source} — the markerless .txt sibling has no "
+                f"verifiable page integer; use a descriptive content anchor "
+                f"(¶ \"<leading phrase>\", section title, named block)",
+                check_name=CHECK_NAME,
+            )
+
     # quotes[] — the quote text must be on the cited physical page
     for i, q in enumerate(entries(ctx.data, "quotes")):
         if not isinstance(q, dict):

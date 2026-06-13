@@ -11,6 +11,13 @@ integer, the Nth page of the file. Two deviations are banned:
     32-33``) — the per-quote printed-folio annotation. The convention is
     physical-only location refs with a single node-level stated note (emitted
     by the document renderer), not dual annotation.
+  - **page-range refs** (``p. 9-37``, ``pp. 1-33``) — a location anchors a
+    quote to its bounds, no more, no less; a quote sits on a single page (a
+    boundary-spanning passage splits into two ≤1-page quotes). A range is a
+    section span-cite masquerading as a page anchor — cite the single page the
+    text actually sits on. timeline/existence refs name the single attesting
+    page likewise. Anchored at the start so a descriptive tail that merely
+    contains a hyphenated token (``DFARS 252.219-7009``) never matches.
 
 This is the guard ``quote_location_page`` structurally cannot be: that check
 skips sibling-backed OCR-scan sources (their canonical extract has no form
@@ -43,6 +50,9 @@ _ROMAN_WELLFORMED = re.compile(
 )
 # A printed-folio dual annotation: "printed p. N" / "(printed pp. N-M)".
 _PRINTED = re.compile(r"\bprinted\s+pp?\.", re.IGNORECASE)
+# A leading integer page-range: `p. 9-37` / `pp. 1-33` (hyphen / en- / em-dash).
+# Anchored at the start so `Section I ... DFARS 252.219-7009` never matches.
+_RANGE = re.compile(r"^\s*pp?\.\s*\d+\s*[-–—]\s*\d+")
 
 
 def check(ctx):
@@ -68,5 +78,14 @@ def check(ctx):
                 f"physical-page-only location refs plus a single node-level "
                 f"stated note, not per-quote printed-folio annotation: "
                 f"\"{loc}\"",
+                check_name=CHECK_NAME,
+            )
+        if _RANGE.match(loc):
+            yield Issue(
+                ctx.rel, "error",
+                f"{loc_path}: page-range location \"{loc}\" — a quote anchors to "
+                f"a single page (a boundary-spanning passage splits into two "
+                f"≤1-page quotes); cite the single page the text sits on, not a "
+                f"section span",
                 check_name=CHECK_NAME,
             )

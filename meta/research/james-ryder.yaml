@@ -618,7 +618,7 @@ program_involvement:
     confidence: medium
     source:
       path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-      location: 'p. 1, ¶6'
+      location: 'top-right corner stamp'
   - id: pi3
     added_date: '2026-05-06'
     program: 'UAP SAP Federation gatekeeper (per Knapp 2025-09-09 sworn testimony)'
@@ -769,7 +769,7 @@ relationships:
     relationship: 'Per the SD004 page-1 author Q&A, the CIA Directorate of Science and Technology — while Glenn Gaffney was in that position — disapproved Ryder''s proposed Technology Transfer Agreement at a meeting; per Christopher Sharp at Liberation Times, the same Directorate, then led by Gaffney, coordinated the actions that thwarted the 2011 transfer.'
     source:
       path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-      location: 'p. 1, ¶6'
+      location: 'top-right corner stamp'
   - id: rel2
     added_date: '2026-05-06'
     person_path: '/people/james-lacatski'

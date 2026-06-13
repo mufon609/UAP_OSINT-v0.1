@@ -634,7 +634,7 @@ affiliations:
   period_start: '1972'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
 
 - id: a2
   added_date: '2026-05-14'
@@ -703,7 +703,7 @@ relationships:
   relationship: 'CIA Project Officer for the SRI parapsychology investigation contracts (1972 onward); chronicler of Targ-CIA engagement in the 1977 Studies in Intelligence paper'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶1-4'
+    location: '¶ "Two laser physicists, Dr. Russell Targ"'
 
 - id: r5
   added_date: '2026-05-16'
@@ -711,7 +711,7 @@ relationships:
   relationship: 'Test subject Targ co-conducted at SRI under contract 1471(S)73 Task 3 (nine-day field measurement program in November-December 1972) and the Aug 4-11, 1973 SRI eight-day session [`/documents/cia-sri-geller-aug1973`]; named alongside Targ as first-study subject in the 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] Targ co-authored'
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ title'
+    location: '¶ title'
 
 - id: r6
   added_date: '2026-05-16'
@@ -719,7 +719,7 @@ relationships:
   relationship: 'Test subject Targ co-conducted in the 1974 Nature paper''s second study — double-blind experiments measuring Price''s ability to describe remote outdoor scenes many miles from his physical location'
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 2, ¶ studies-overview'
+    location: '¶ studies-overview'
 
 - id: r7
   added_date: '2026-05-16'
@@ -727,7 +727,7 @@ relationships:
   relationship: 'Consultant on SRI Tasks 1 and 2 (two-week field measurement program, 14-28 August 1972) Targ co-conducted under contract 1471(S)73, per the Puthoff-Targ Feb 1973 progress report (q21); the program-initiating engagement that preceded the August 1972 OTS demonstration contract'
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
-    location: 'p. 2, Section A'
+    location: 'Section A'
 
 program_involvement:
 - id: p1
@@ -739,7 +739,7 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
 
 - id: p2
   added_date: '2026-05-14'
@@ -775,4 +775,4 @@ program_involvement:
   confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
