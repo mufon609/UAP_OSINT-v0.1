@@ -815,7 +815,7 @@ timeline:
   category: other
   source:
     path: government/pentagon-uapda-proposed-revisions-202311.pdf
-    location: pp. 1-33
+    location: 'p. 1'
 - id: t33
   added_date: '2026-04-29'
   date: '2023-12-01'
@@ -831,7 +831,7 @@ timeline:
   category: affiliation
   source:
     path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
-    location: p. 1-3
+    location: 'p. 2'
 - id: t35
   added_date: '2026-04-29'
   date: '2024-01-19'
@@ -879,7 +879,7 @@ timeline:
   category: other
   source:
     path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
-    location: p. 1-3
+    location: 'p. 2'
 - id: t41
   added_date: '2026-04-29'
   date: '2024'

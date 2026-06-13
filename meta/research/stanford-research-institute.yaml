@@ -843,7 +843,7 @@ timeline:
   event: 'Puthoff [`/people/hal-puthoff`] and Targ [`/people/russell-targ`] publish [`/documents/sri-perceptual-augmentation-techniques-final-report-1975`] "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute Final Report, cited by AIR 1995.'
   source:
     path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
-    location: 'p. 3-30 (bibliography)'
+    location: 'p. 51, References'
 
 - id: tl9
   added_date: '2026-05-15'

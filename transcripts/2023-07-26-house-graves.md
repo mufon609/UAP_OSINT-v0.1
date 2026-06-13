@@ -475,7 +475,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 | Speaker | Ryan Graves ([`/people/ryan-graves`]) |
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | p. 33-43 |
+| Location | p. 43 |
 
 ---
 
