@@ -529,7 +529,7 @@ timeline:
   event: 'In April 1972, Targ meets with CIA ([`/organizations/cia`]) personnel from the Office of Scientific Intelligence (OSI) and discusses paranormal abilities, having recently joined the Stanford Research Institute ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper (q10). First documented Targ-CIA contact initiating the CIA-funded SRI parapsychology investigation.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
   category: role
   node_link: '/organizations/cia'
 
@@ -539,7 +539,7 @@ timeline:
   event: 'August 1972 $874 CIA ([`/organizations/cia`]) Office of Technical Service demonstration contract with Targ and Puthoff at SRI ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper (q11). First formal CIA contract for the SRI parapsychology investigation; OTS subsequently approves $2,500 + $50,000 expanded work orders (OTS Contract 8473, 1 October 1972).'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
   category: other
   node_link: '/organizations/cia'
 
@@ -549,7 +549,7 @@ timeline:
   event: 'Jointly funded CIA ([`/organizations/cia`]) Office of Research and Development and Office of Technical Service program at SRI begins in February 1974 per the 1977 Kress paper. Kenneth A. Kress ([`/people/kenneth-kress`]) is CIA Project Officer for the SRI work.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 10, ¶1'
+    location: '¶ "A jointly funded ORD and"'
   category: other
   node_link: '/organizations/cia'
 
@@ -568,7 +568,7 @@ timeline:
   event: 'In November 1976, Director of Central Intelligence George Bush becomes aware that official Soviets are visiting and questioning Puthoff and Targ at SRI ([`/organizations/stanford-research-institute`]) about their work in parapsychology, and Bush requests a briefing on CIA''s ([`/organizations/cia`]) parapsychology investigations per the 1977 Kress paper (q12). Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976).'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 15, ¶1'
+    location: '¶ "Director George Bush became aware"'
   category: other
   node_link: '/organizations/cia'
 
@@ -578,7 +578,7 @@ timeline:
   event: 'SRI ([`/organizations/stanford-research-institute`]) parapsychology investigation discontinued in 1990 per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview (q14); FY 1991 Congressional direction establishes new research at SAIC ([`/organizations/saic`]) in Menlo Park. Targ''s individual SRI tenure end is not attested but precedes his 1991 Lockheed affiliation (a2).'
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 10, ¶3'
+    location: '¶ "The effort at SRI was discontinued"'
   category: other
 
 - id: t15
@@ -587,7 +587,7 @@ timeline:
   event: 'Two-week field measurement program with consultant Ingo Swann ([`/people/ingo-swann`]) at SRI under contract 1471(S)73 Tasks 1 and 2 (14-28 August 1972) Targ co-conducted; per the Puthoff-Targ Feb 1973 progress report (q21)'
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
-    location: 'p. 2, Section A'
+    location: 'Section A'
   category: testimony
 
 - id: t16
@@ -596,7 +596,7 @@ timeline:
   event: 'Nine-day field measurement program with consultant Uri Geller ([`/people/uri-geller`]) at SRI under contract 1471(S)73 Task 3 within the time period 1 December 1972 to 15 January 1973 Targ co-conducted; per the Puthoff-Targ Feb 1973 progress report (q21) Section III describes the experiments as conducted in November-December 1972'
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
-    location: 'p. 2, Section A + p. 11, Section III'
+    location: 'Section A; Section III'
   category: testimony
 
 - id: t17
@@ -605,7 +605,7 @@ timeline:
   event: 'Puthoff-Targ "Technical Memorandum: A Progress Report on Contract Number 1471(S)73" (CIA-RDP96-00787R000100180001-3) co-authored and dated; page-1 byline places Targ at the "Senior Research Physicist, Electronics and Bioengineering Laboratory" title level at SRI — earliest primary-source attestation placing Targ at this title at SRI (q21-q23)'
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
-    location: 'p. 1, ¶ cover'
+    location: '¶ cover'
   category: publication
 
 - id: t18
@@ -614,7 +614,7 @@ timeline:
   event: 'SRI eight-day Geller session begins (August 4-11, 1973) — Targ co-conducted the picture-drawing experiments at SRI Life Sciences Division shielded room (Aug 4-8) and Engineering Building Faraday cage (Aug 9-11) [`/documents/cia-sri-geller-aug1973`]'
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1'
+    location: '¶ title'
   category: testimony
 
 - id: t19
@@ -623,7 +623,7 @@ timeline:
   event: 'R. Targ sole-authored cover memo "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973" (CIA-RDP79-00999A000300030027-0 [`/documents/cia-sri-geller-aug1973`]) dated; carries Targ''s load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner" (q18)'
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ cover'
+    location: '¶ cover'
   category: publication
 
 affiliations:

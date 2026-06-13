@@ -265,7 +265,7 @@ timeline:
   event: 'In April 1972, Targ ([`/people/russell-targ`]) meets with CIA ([`/organizations/cia`]) personnel from the Office of Scientific Intelligence (OSI) and proposes that some psychokinetic verification investigations could be done at SRI ([`/organizations/stanford-research-institute`]) in conjunction with Puthoff per the 1977 Kress paper. First documented Targ + Puthoff CIA-engagement antecedent.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
   category: role
   node_link: '/organizations/cia'
 
@@ -275,7 +275,7 @@ timeline:
   event: 'August 1972 $874 CIA ([`/organizations/cia`]) Office of Technical Service demonstration contract with Targ and Puthoff at SRI ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper. First formal CIA contract with Puthoff at SRI; OTS subsequently approves $2,500 + $50,000 expanded work orders (OTS Contract 8473, 1 October 1972).'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
   category: other
   node_link: '/organizations/cia'
 
@@ -285,7 +285,7 @@ timeline:
   event: 'Jointly funded CIA ([`/organizations/cia`]) Office of Research and Development and Office of Technical Service program at SRI ([`/organizations/stanford-research-institute`]) begins in February 1974 per the 1977 Kress paper. Kenneth A. Kress ([`/people/kenneth-kress`]) is CIA Project Officer.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 10, ¶1'
+    location: '¶ "A jointly funded ORD and"'
   category: other
   node_link: '/organizations/cia'
 
@@ -314,7 +314,7 @@ timeline:
   event: 'In November 1976, Director of Central Intelligence George Bush becomes aware that official Soviets are visiting and questioning Puthoff and Targ ([`/people/russell-targ`]) at SRI ([`/organizations/stanford-research-institute`]) about their work in parapsychology, and Bush requests a briefing on CIA''s ([`/organizations/cia`]) investigations into parapsychology per the 1977 Kress paper.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 15, ¶1'
+    location: '¶ "Director George Bush became aware"'
   category: other
   node_link: '/organizations/cia'
 
@@ -334,7 +334,7 @@ timeline:
   event: 'SRI ([`/organizations/stanford-research-institute`]) parapsychology investigation discontinued per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview. The 1984 internal review (Appendix B) describes the SRI program as ''a small group headed by Dr. H. Puthoff''. Program-level outer bound on Puthoff''s individual SRI tenure.'
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 10, ¶3'
+    location: '¶ "The effort at SRI was discontinued"'
   category: other
 
 - id: t10
@@ -403,7 +403,7 @@ timeline:
   event: 'Puthoff publishes [`/documents/dird-15-advanced-space-propulsion`] — Defense Intelligence Reference Document DIA-08-1003-015, ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'' — under the DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]); Program Manager James T. Lacatski ([`/people/james-lacatski`]), D.Eng. Author affiliation: EarthTech International ([`/organizations/earthtech-international`]), Austin, Texas.'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: 'p. 2'
+    location: 'title-page identity block'
   category: publication
   node_link: '/documents/dird-15-advanced-space-propulsion'
 
@@ -433,7 +433,7 @@ timeline:
   event: 'Davis ([`/people/eric-davis`]) publishes [`/documents/dird-24-quantum-vacuum-energy-extraction-2010`] — Defense Intelligence Reference Document DIA-08-1004-007, ''Concepts for Extracting Energy From the Quantum Vacuum'' — under the same DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]) as Puthoff''s DIRD. Acknowledgements name Puthoff (EarthTech ([`/organizations/earthtech-international`])) first among the colleagues credited for technical contributions.'
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
-    location: 'p. 41, ¶1'
+    location: 'title-page identity block'
   category: publication
   node_link: '/documents/dird-24-quantum-vacuum-energy-extraction-2010'
 

@@ -167,7 +167,7 @@ timeline:
   event: Puthoff's AAWSAP DIRD on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — Lacatski named "AAWSA Program Manager" on the Administrative Note (page 1)
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
-    location: p. 1, Administrative Note
+    location: 'Administrative Note'
   category: publication
   node_link: /documents/dird-15-advanced-space-propulsion
 - id: t3

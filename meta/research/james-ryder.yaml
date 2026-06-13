@@ -410,7 +410,7 @@ timeline:
     event: 'SD004 entered into the 13 November 2024 House Oversight UAP hearing record. Page-1 Q&A names Ryder as the proposer of an alleged UAP material divestment plan to AAWSAP leadership.'
     source:
       path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-      location: 'p. 1, ¶6'
+      location: 'top-right corner stamp'
     category: filing
   - id: t5
     added_date: '2026-05-06'

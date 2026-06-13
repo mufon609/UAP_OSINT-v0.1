@@ -771,7 +771,7 @@ timeline:
   event: 'Russell Targ [`/people/russell-targ`] meets with CIA [`/organizations/cia`] personnel from the Office of Scientific Intelligence (OSI), having "recently joined the Stanford Research Institute (SRI)". First documented CIA-SRI contact initiating the parapsychology investigation.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶2'
+    location: '¶ "In April of 1972, Targ met"'
 
 - id: tl4
   added_date: '2026-05-15'
@@ -780,7 +780,7 @@ timeline:
   event: 'OTS project officer contracts for $874 demonstration with Targ [`/people/russell-targ`] and Harold E. Puthoff [`/people/hal-puthoff`] at SRI. First formal CIA contract for the SRI parapsychology investigation.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶4'
+    location: '¶ "For a cost of $874, one OTS"'
 
 - id: tl4b
   added_date: '2026-05-15'
@@ -798,7 +798,7 @@ timeline:
   event: 'OTS Contract 8473 ($50,000 expanded effort with Targ [`/people/russell-targ`] and Puthoff [`/people/hal-puthoff`] at SRI) per Kress 1977 footnote 4.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, footnote 4'
+    location: 'footnote 4'
 
 - id: tl5b
   added_date: '2026-05-15'
@@ -807,7 +807,7 @@ timeline:
   event: 'Pat Price [`/people/pat-price`] arrives at SRI in early-to-mid 1973 per Kress 1977 narrative ordering (specific arrival date not attested) as the third sensitive subject; "the remote viewing experiments... began in earnest". Per Targ IRVA 2002, Price was a "retired police commissioner".'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 9, ¶1'
+    location: '¶ "one of whom was Pat Price"'
 
 - id: tl6
   added_date: '2026-05-15'
@@ -816,7 +816,7 @@ timeline:
   event: 'Jointly funded ORD and OTS program at SRI begins with Targ [`/people/russell-targ`] and Puthoff [`/people/hal-puthoff`] per Kress 1977. Expansion of the 1972 OTS-only funding line.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 8, ¶5'
+    location: '¶ "A jointly funded ORD and"'
 
 - id: tl6b
   added_date: '2026-05-15'
@@ -852,7 +852,7 @@ timeline:
   event: 'DCI George Bush [`/people/george-h-w-bush`] becomes aware of Soviet visits to Puthoff [`/people/hal-puthoff`] and Targ [`/people/russell-targ`] at SRI; requests and receives briefing on CIA''s [`/organizations/cia`] parapsychology investigations.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 15, ¶1'
+    location: '¶ "Director George Bush became aware"'
 
 - id: tl9a
   added_date: '2026-05-15'
@@ -888,7 +888,7 @@ timeline:
   event: 'SRI parapsychology investigation discontinued. FY 1991 Congressional direction for DIA [`/organizations/dia`] establishes successor research at SAIC [`/organizations/saic`] in Menlo Park, CA.'
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'p. 10, ¶3'
+    location: '¶ "The effort at SRI was discontinued"'
 
 - id: tl12
   added_date: '2026-05-15'

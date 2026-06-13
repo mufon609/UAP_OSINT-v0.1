@@ -205,7 +205,7 @@ timeline:
   event: 'Recipient at OSI of [`/people/hal-puthoff`]''s letter from [`/organizations/stanford-research-institute`] documenting the SRI magnetometer demonstration of the previously-described subject per Kress 1977 footnote at printed page 8 (q1) — earliest archived attestation of Green''s OSI role in the SRI-CIA parapsychology engagement.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 7, footnote'
+    location: '¶ "H. E. Puthoff; Stanford Research Institute; Letter to K. Green"'
 
 - id: tl3
   added_date: '2026-05-17'
@@ -214,7 +214,7 @@ timeline:
   event: 'Authors at LSD/OSI (Life Sciences Division of OSI) a Memorandum for the Record on Verification of Remote Viewing Experiments at [`/organizations/stanford-research-institute`] per Kress 1977 footnote at printed page 10 (q2) — second archived Kress 1977 attestation of Green''s OSI role.'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
-    location: 'p. 9, footnote'
+    location: '¶ "K. Green; LSD/OSI; Memorandum for the"'
 
 - id: tl4
   added_date: '2026-05-17'

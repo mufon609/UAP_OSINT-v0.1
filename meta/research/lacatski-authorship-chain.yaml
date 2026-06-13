@@ -111,7 +111,7 @@ timeline:
   category: clearance
   source:
     path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-    location: 'p. 1, top-right corner stamp'
+    location: 'top-right corner stamp'
 
 - id: t2
   added_date: '2026-05-13'

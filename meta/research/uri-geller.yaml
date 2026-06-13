@@ -368,7 +368,7 @@ timeline:
   category: affiliation
   source:
     path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
-    location: 'p. 2, Section A + p. 11, Section III'
+    location: 'Section A; Section III'
 
 - id: t23
   added_date: '2026-05-16'
@@ -377,7 +377,7 @@ timeline:
   category: testimony
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1'
+    location: '¶ title'
 
 - id: t24
   added_date: '2026-05-16'
@@ -386,7 +386,7 @@ timeline:
   category: publication
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 1'
+    location: '¶ title'
 
 - id: t25
   added_date: '2026-05-16'
