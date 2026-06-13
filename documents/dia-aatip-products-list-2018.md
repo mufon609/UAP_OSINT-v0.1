@@ -21,8 +21,6 @@ doc_form: letter
 | Local Archive | [sources/government/fas-org-aatip-list-20210808.pdf](../sources/government/fas-org-aatip-list-20210808.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 3, transmittal letter ¶1 (U-18-0001/OCC1) |
+| Location | transmittal letter ¶1 (U-18-0001/OCC1) |
 
 ---
 
@@ -57,7 +55,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 3, transmittal letter ¶2 (U-18-0001/OCC1) |
+| Location | transmittal letter ¶2 (U-18-0001/OCC1) |
 
 ---
 
@@ -69,7 +67,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 3, transmittal letter signature block |
+| Location | transmittal letter signature block |
 
 ---
 
@@ -107,7 +105,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 5, "(U) List of Attachments" (attachments 1-13) |
+| Location | "(U) List of Attachments" (attachments 1-13) |
 
 ---
 
@@ -141,7 +139,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 6, "(U) List of Attachments" (attachments 14-25) |
+| Location | "(U) List of Attachments" (attachments 14-25) |
 
 ---
 
@@ -177,7 +175,7 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 |---|---|
 | Attributed to | DIA Congressional Relations Division letter U-18-0001/OCC1 to the Committee on Armed Services, United States Senate, 9 January 2018 |
 | Source | [archived source](../sources/government/fas-org-aatip-list-20210808.pdf) |
-| Location | p. 7, "(U) List of Attachments" (attachments 26-38) |
+| Location | "(U) List of Attachments" (attachments 26-38) |
 
 ---
 

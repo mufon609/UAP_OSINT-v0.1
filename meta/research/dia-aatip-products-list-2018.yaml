@@ -35,7 +35,7 @@ quotes:
     Based on interest from your staff regarding the Defense Intelligence Agency (DIA)'s role in the Advanced Aerospace Threat and Identification Program (AATIP) please find attached a list of all products produced under the AATIP contract for DIA to publish.  The purpose of AATIP was to investigate foreign advanced aerospace weapon threats from the present out to the next 40 years.
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 3, transmittal letter ¶1 (U-18-0001/OCC1)'
+    location: 'transmittal letter ¶1 (U-18-0001/OCC1)'
   significance: Transmittal statement — DIA transmits to the SASC the list of all products produced under the AATIP contract; states AATIP's purpose
   statement_date: '2018-01-09'
 - id: q2
@@ -44,7 +44,7 @@ quotes:
     There are 38 reports associated with DIA's involvement in the program documented in the list. All are UNCLASSIFIED//FOR OFFICIAL USE ONLY except for attachment 37 which is a SECRET//NOFORN version of attachment 38 *State of the Art and Evolution of High Energy Laser Weapons.*  All are available for Congressional staff access on the Capitol Network (CapNet) except for attachments 12 and 15, respectively titled *Field Effects on Biological Tissues* and *An Introduction to the Statistical Drake Equation.*  We are also happy to provide them directly upon request.
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 3, transmittal letter ¶2 (U-18-0001/OCC1)'
+    location: 'transmittal letter ¶2 (U-18-0001/OCC1)'
   significance: Count and classification disposition — 38 reports; att.37 is the SECRET//NOFORN version of att.38; att.12 and att.15 are the two not on CapNet
   statement_date: '2018-01-09'
 - id: q3
@@ -55,7 +55,7 @@ quotes:
     DIA Congressional Relations Division
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 3, transmittal letter signature block'
+    location: 'transmittal letter signature block'
   significance: Signature block — Christine Kapnisi, Chief, DIA Congressional Relations Division, is the letter's signer
   statement_date: '2018-01-09'
 - id: q4
@@ -90,7 +90,7 @@ quotes:
     13. *Positron Aerospace Propulsion*, Dr. Gerald Smith, Positronics Research (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 5, "(U) List of Attachments" (attachments 1-13)'
+    location: '"(U) List of Attachments" (attachments 1-13)'
   significance: 'List of Attachments, attachments 1-13 — the authoritative roster of AATIP/AAWSAP products with title, producer, and affiliation, including att.5 Dr. Hal Puthoff, EarthTech International (DIRD "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering") and att.12 Dr. Kit Green, Wayne State Univ.'
   statement_date: '2018-01-09'
 - id: q5
@@ -121,7 +121,7 @@ quotes:
     25. *Space-Communication Implications of Quantum Entanglement and Nonlocality*, Dr. J. Cramer, Univ. of Washington (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 6, "(U) List of Attachments" (attachments 14-25)'
+    location: '"(U) List of Attachments" (attachments 14-25)'
   significance: 'List of Attachments, attachments 14-25 — including att.14 Dr. Eric Davis, EarthTech International (DIRD "Concepts for Extracting Energy from the Quantum Vacuum"), att.15 the CapNet-excepted "An Introduction to the Statistical Drake Equation", and att.22 Dr. T. Hufnagel, John Hopkins Univ. (DIRD "Metallic Glasses")'
   statement_date: '2018-01-09'
 - id: q6
@@ -154,7 +154,7 @@ quotes:
     38. *State of the Art and Evolution of High Energy Laser Weapons*, J. Albertine, Directed Technologies (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
   source:
     path: government/fas-org-aatip-list-20210808.pdf
-    location: 'p. 7, "(U) List of Attachments" (attachments 26-38)'
+    location: '"(U) List of Attachments" (attachments 26-38)'
   significance: 'List of Attachments, attachments 26-38 — including the three Lockheed Martin products att.26 (Dr. V. Teofilo), att.32 (Dr. S. Macheret), and att.35 (Dr. J. Golightly), att.36 Dr. F. Winterberg, Univ. of Nevada – Reno ("Negative Mass Propulsion" [`/documents/dird-29-negative-mass-propulsion`]), and att.37/38, the SECRET//NOFORN and UNCLASSIFIED//FOR OFFICIAL USE ONLY versions of the same J. Albertine ([`/people/j-albertine`]), Directed Technologies ([`/organizations/directed-technologies`]) report (att.38 [`/documents/dird-23-high-energy-laser-weapons`])'
   statement_date: '2018-01-09'
 cited_works: NONE
@@ -163,27 +163,27 @@ naming_quirks:
   added_date: '2026-05-21'
   observed: John Hopkins Univ.
   canonical: Johns Hopkins University
-  location: 'p. 6, List of Attachments att.22'
+  location: 'List of Attachments att.22'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-05-21'
   observed: Univ. Of Illinois
   canonical: University of Illinois
-  location: 'p. 5, List of Attachments att.1'
+  location: 'List of Attachments att.1'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq3
   added_date: '2026-05-21'
   observed: Univ. Of Nevada – Las Vegas
   canonical: University of Nevada, Las Vegas
-  location: 'p. 7, List of Attachments att.30'
+  location: 'List of Attachments att.30'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq4
   added_date: '2026-05-21'
   observed: Dr. R.Genik
   canonical: Dr. R. Genik
-  location: 'p. 7, List of Attachments att.28'
+  location: 'List of Attachments att.28'
   source_path: government/fas-org-aatip-list-20210808.pdf
   resolution: preserve-as-sic-in-quotes

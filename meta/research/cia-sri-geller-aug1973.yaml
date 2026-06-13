@@ -42,7 +42,7 @@ quotes:
     EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ title'
+    location: '¶ title'
   significance: Document title — verbatim internal-title attestation
   statement_date: '1973-08-13'
 - id: q2
@@ -51,7 +51,7 @@ quotes:
     The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ OBJECTIVE'
+    location: '¶ OBJECTIVE'
   significance: Stated objective of the experimental program
   statement_date: '1973-08-13'
 - id: q3
@@ -60,7 +60,7 @@ quotes:
     In each of the eight days of this experimental period we conducted picture drawing experiments. In these experiments Geller was separated from the target material either by an electrically isolated shielded room or by the isolation provided by having the targets drawn on the East Coast.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ EXPERIMENTAL PROGRAM'
+    location: '¶ EXPERIMENTAL PROGRAM'
   significance: Experimental-period framing — eight days, shielded-room isolation or East Coast remote-target isolation
   statement_date: '1973-08-13'
 - id: q4
@@ -69,7 +69,7 @@ quotes:
     As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ EXPERIMENTAL PROGRAM'
+    location: '¶ EXPERIMENTAL PROGRAM'
   significance: SRI experimenter conclusion on the eight-day period — the load-bearing quote cited by Geller's biography and downstream Stargate-history accounts
   statement_date: '1973-08-13'
 - id: q5
@@ -78,7 +78,7 @@ quotes:
     Saturday, August 4. Two drawing experiments were conducted this day. In both of these, Geller was closeted in an opaque, acoustically and electrically shielded room. This room is the double-walled shielded room used for EEG research in the Life Sciences Division of SRI. It is locked by means of an inner and outer door, each of which is secured with a refrigerator-type locking mechanism.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 1, ¶ Saturday, August 4'
+    location: '¶ Saturday, August 4'
   significance: Shielded-room facility description — double-walled EEG-research room, Life Sciences Division SRI; refrigerator-type locking mechanism
   statement_date: '1973-08-13'
 - id: q6
@@ -87,7 +87,7 @@ quotes:
     In this work the target picture is never discussed by the experimenters after the picture is drawn or brought near the shielded room. The intercom operates only from the inside of the room to the outside, except when the push-to-talk switch is depressed on the outside of the room. In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 3, ¶4'
+    location: '¶ "In this work the target picture"'
   significance: Protocol-controls attestation — one-way intercom, no sensory leakage found in detailed examination
   statement_date: '1973-08-13'
 - id: q7
@@ -96,7 +96,7 @@ quotes:
     Sunday, August 5. Geller is locked in the shielded room and the target is drawn in the experimenter's office about a half mile away. The target selected from the dictionary was an outline drawing of a man, which evolved through the drawing process into a devil with a trident. To start the experiment, Puthoff, who was with Geller, called Targ, who was with the drawing.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 3, ¶ Sunday, August 5'
+    location: '¶ Sunday, August 5'
   significance: Per-day narrative — Puthoff with Geller, Targ with drawing (half-mile separation); primary attestation of the SRI experimenter roles
   statement_date: '1973-08-13'
 - id: q8
@@ -105,7 +105,7 @@ quotes:
     Monday, August 6. The experiment to be done this day was a pure clairvoyance task. A picture was drawn by a scientist outside of the usual experimental group. The picture was locked in the shielded room before Geller's arrival at SRI. Geller was then led by the experimenters to the shielded room, and asked to draw the picture inside the room. He drew a number of pictures, all of which he rejected as not being applicable. He said that he got no clear impression and passed.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 8, ¶ Monday, August 6'
+    location: '¶ Monday, August 6'
   significance: Per-day narrative — clairvoyance task with target drawn by outside-of-group scientist; Geller passed on the rabbit target
   statement_date: '1973-08-13'
 - id: q9
@@ -114,7 +114,7 @@ quotes:
     Tuesday, August 7. This day two target pictures were attempted with Geller in the shielded room. He was connected to an EEG apparatus to allow measurement of his brain waves at the time that he was attempting to perceive a hidden picture. The two target pictures were a tree and an envelope. He experienced difficulty, did not make a drawing that corresponded to either drawing and passed.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 8, ¶ Tuesday, August 7'
+    location: '¶ Tuesday, August 7'
   significance: Per-day narrative — EEG apparatus session; tree and envelope targets; Geller passed on both
   statement_date: '1973-08-13'
 - id: q10
@@ -123,7 +123,7 @@ quotes:
     In these experiments conducted with this shielded room, six day's work was done. Good results were obtained on the four days when there was no openly skeptical observer (except the experimenters whom Geller has learned to accept).
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 16, ¶5'
+    location: '¶ "In these experiments conducted with this"'
   significance: Six-day summary — four success days when no openly skeptical observer present (Targ note on observer effect)
   statement_date: '1973-08-13'
 - id: q11
@@ -132,7 +132,7 @@ quotes:
     Thursday, August 9. We moved the experiments to a new shielded room from the Life Science to the Engineering building in order to make use of the computer facilities available there.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 16, ¶ Thursday, August 9'
+    location: '¶ Thursday, August 9'
   significance: Facility transition — Life Sciences shielded room to Engineering-building shielded room for computer-target experiments
   statement_date: '1973-08-13'
 - id: q12
@@ -141,7 +141,7 @@ quotes:
     These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
-    location: 'p. 27, ¶4'
+    location: '¶ "These latter two experiments admit of"'
   significance: Mechanism-hypothesis framing — Targ identifies two competing mechanisms (clairvoyance vs telepathy) the computer-storage experiments cannot distinguish
   statement_date: '1973-08-13'
 cited_works: NONE

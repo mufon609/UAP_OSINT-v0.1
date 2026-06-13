@@ -54,7 +54,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
-| Location | p. 2, ¶ Section A Introduction |
+| Location | ¶ Section A Introduction |
 
 > In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in turn, contacted personnel from the Office of Research and Development (ORD) and OTS. An ORD Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
 
@@ -62,7 +62,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶2 |
+| Location | ¶ "In April of 1972, Targ met" |
 
 > The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORD representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 1972.
 
@@ -70,7 +70,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶4 |
+| Location | ¶ "The Office of Technical Services took" |
 
 > During November of 1976, Director George Bush became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI about their work in parapsychology. Mr. Bush requested and received a briefing on CIA's investigations into parapsychology.
 
@@ -78,7 +78,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 14, ¶1 |
+| Location | ¶ "During November of 1976, Director George" |
 
 ### SRI Experimental Methodology and Controls
 
@@ -88,7 +88,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
-| Location | p. 3, ¶ Section C Protocol #1 |
+| Location | ¶ Section C Protocol #1 |
 
 > The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
 
@@ -96,7 +96,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ OBJECTIVE |
+| Location | ¶ OBJECTIVE |
 
 > In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
 
@@ -104,7 +104,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶4 |
+| Location | ¶ "In our detailed examination of the" |
 
 ### 1973 SRI Subject-Experiment Findings
 
@@ -114,7 +114,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973, 1973-02-22 |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf) |
-| Location | p. 16, ¶ Section IV Summary |
+| Location | ¶ Section IV Summary |
 
 > As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
 
@@ -122,7 +122,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ EXPERIMENTAL PROGRAM |
+| Location | ¶ EXPERIMENTAL PROGRAM |
 
 > These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
 
@@ -130,7 +130,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`], 1973-08-13 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 27, ¶4 |
+| Location | ¶ "These latter two experiments admit of" |
 
 ### Nature 1974 Sensory-Shielding Findings
 
@@ -150,7 +150,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ co-authored "Information transmission under conditions of sensory shielding", Nature 251, 602-607, 18 October 1974 [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror CIA-RDP96-00787R000100220001-8), 1974-10-18 |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 13, ¶ conclusion |
+| Location | ¶ conclusion |
 
 ### SRI Psychic-Research Cofounder Role
 
@@ -160,7 +160,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8) |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶1 |
+| Location | ¶ "Two laser physicists, Dr. Russell Targ" |
 
 > Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
 
@@ -206,7 +206,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 14, ¶1 |
+| Location | ¶ "In the early 1970's, U.S. researchers" |
 
 > The effort at SRI was discontinued in 1990. However, as a result of Congressional direction in FY 1991 for DIA, new research in this area was established with the Systems Applications International Corporation (SAIC), in Menlo Park, CA.
 
@@ -214,7 +214,7 @@ Targ is the cofounder of the Stanford Research Institute investigation into psyc
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 14, ¶3 |
+| Location | ¶ "The effort at SRI was discontinued" |
 
 ### SRI Program Scope and Evaluation
 

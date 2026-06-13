@@ -71,7 +71,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 |---|---|
 | Attributed to | Preface and Introduction opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015, 'Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering' (29 March 2010; ICOD 1 December 2009; U//FOUO). Author: H.E. Puthoff, EarthTech International, Austin, Texas. DIA AAWSA Program Manager: James T. Lacatski, D.Eng. 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 4, ¶1 |
+| Location | ¶ "A theme that has come to" |
 
 > This paper has considered the possibility—even likelihood—that future developments with regard to advanced aerospace technologies will trend in the direction of manipulating the underlying spacetime structure of the vacuum of space itself by processes that can be called vacuum engineering or metric engineering. Far from being simply a fanciful concept, a significant literature exists in peer-reviewed, Tier 1 physics publications in which the topic is explored in detail.
 
@@ -79,7 +79,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 |---|---|
 | Attributed to | Section IV (Discussion) opening paragraph of Defense Intelligence Reference Document DIA-08-1003-015 — Puthoff's restatement of the thesis after Sections I-III. Footnote (^3) directs to Reference 1, Frontiers of Propulsion Science (Eds. M. G. Millis and E. W. Davis, AIAA Press, 2009), 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 16, ¶1 |
+| Location | ¶ "This paper has considered the possibility—even" |
 
 > Despite the challenges, sample calculations as presented herein indicate the direction of potentially useful trends derivable on the basis of the application of GR principles as embodied in a metric engineering approach, with the results constrained only by what is achievable practically in an engineering sense. The latter is, however, a daunting constraint. At this point in the consideration of such nascent concepts, given our present level of technological evolution, it is premature to even guess about an optimum strategy, let alone attempt to form a critical path for the engineering development of such technologies. Nonetheless, only through rigorous inquiry into such concepts can one hope to arrive at a proper assessment of the possibilities inherent in the evolution of advanced spaceflight technologies.
 
@@ -87,7 +87,7 @@ Puthoff is a co-founder, former Director, and current Advisory Board member of [
 |---|---|
 | Attributed to | Section IV (Discussion) closing paragraph of Defense Intelligence Reference Document DIA-08-1003-015 — Puthoff's methodological conclusion framing the analysis as direction-of-trend identification rather than near-term technological prescription, 2010-03-29 |
 | Source | [archived source](../sources/government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf) |
-| Location | p. 17, ¶1 |
+| Location | ¶ "Despite the challenges, sample calculations as" |
 
 ### UAP Material Analysis
 

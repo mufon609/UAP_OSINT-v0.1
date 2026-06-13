@@ -50,7 +50,7 @@ quotes:
     SENSORY SHIELDING
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 1, ¶ title'
+    location: '¶ title'
   significance: Paper title — verbatim
   statement_date: '1974-10'
 - id: q2
@@ -59,7 +59,7 @@ quotes:
     Dr. Harold E. Puthoff and Russell Targ
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 1, ¶ author byline'
+    location: '¶ author byline'
   significance: Paper author byline
   statement_date: '1974-10'
 - id: q3
@@ -68,7 +68,7 @@ quotes:
     Published in NATURE Magazine, October, 1974
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 1, ¶ publication-line'
+    location: '¶ publication-line'
   significance: Publication attestation on the title page
   statement_date: '1974-10'
 - id: q4
@@ -81,7 +81,7 @@ quotes:
     environment, although this information is not presented to any known sense.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 1, ¶ abstract'
+    location: '¶ abstract'
   significance: Paper abstract / opening — the existence-of-perceptual-modalities framing
   statement_date: '1974-10'
 - id: q5
@@ -92,7 +92,7 @@ quotes:
     pictures drawn by experimenters located at remote locations.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 2, ¶ studies-overview'
+    location: '¶ studies-overview'
   significance: First-of-three studies — Geller experiments framing — primary Nature-paper attestation that names Geller as the subject of the foundational SRI parapsychology experiments
   statement_date: '1974-10'
 - id: q6
@@ -102,7 +102,7 @@ quotes:
     ability to describe remote outdoor scenes many miles from his physical location.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 2, ¶ studies-overview'
+    location: '¶ studies-overview'
   significance: Second-of-three studies — Pat Price experiments framing — primary Nature-paper attestation that names Pat Price as a second SRI subject (alongside Geller) in the foundational paper
   statement_date: '1974-10'
 - id: q7
@@ -112,7 +112,7 @@ quotes:
     10 were carried out using a shielded room in SRI's facility for EEG research.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 2, ¶ shielded-room-protocol'
+    location: '¶ shielded-room-protocol'
   significance: Shielded-room protocol description for Geller experiments 1-10 — same facility as the August 1973 CIA-RDP79-00999A000300030027-0 SRI report
   statement_date: '1974-10'
 - id: q8
@@ -122,7 +122,7 @@ quotes:
     to make use of the computer facilities available there.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 3, ¶ engineering-building-protocol'
+    location: '¶ engineering-building-protocol'
   significance: Engineering Building protocol for Geller experiments 11-13 — corresponds to the August 9-10 1973 sessions in the CIA Aug 1973 SRI report
   statement_date: '1974-10'
 - id: q9
@@ -132,7 +132,7 @@ quotes:
     by means of an as yet unidentified perceptual modality.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, ¶ conclusion'
+    location: '¶ conclusion'
   significance: Paper's formal conclusion sentence — the 'channel exists' framing — the load-bearing claim that downstream Geller-bio invocations cite as the Nature-paper endorsement
   statement_date: '1974-10'
 - id: q10
@@ -144,7 +144,7 @@ quotes:
     to replicate these findings.
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, ¶ closing'
+    location: '¶ closing'
   significance: Paper's closing methodological framing — paranormal phenomena can be scientifically conducted; call for replication
   statement_date: '1974-10'
 - id: q11
@@ -154,7 +154,7 @@ quotes:
     Institute of Noetic Sciences
   source:
     path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
-    location: 'p. 13, ¶ acknowledgements'
+    location: '¶ acknowledgements'
   significance: 'Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).'
   statement_date: '1974-10'
 cited_works:

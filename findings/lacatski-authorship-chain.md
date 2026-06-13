@@ -29,7 +29,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 | Tier | dopsr-cleared |
 | Attestor | [`/organizations/dopsr`] |
 | Source | [archived source](../sources/government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf) |
-| Location | p. 1, top-right corner stamp |
+| Location | top-right corner stamp |
 
 ---
 
@@ -43,7 +43,7 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 | Tier | dopsr-cleared |
 | Attestor | [`/people/james-lacatski`] |
 | Source | [archived source](../sources/government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf) |
-| Location | p. 1, Q&A content following DOPSR clearance stamp |
+| Location | Q&A content following DOPSR clearance stamp |
 
 ---
 

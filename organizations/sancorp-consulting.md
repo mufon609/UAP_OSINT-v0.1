@@ -125,7 +125,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | IPMO Performance Work Statement title block, FOIA 23-F-0906 release, 2022-04-25 |
 | Source | [archived source](../sources/government/foia-23-f-0906-sancorp-ipmo-pws.pdf) |
-| Location | p. 1, PWS title block |
+| Location | PWS title block |
 
 ---
 
@@ -191,7 +191,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-07-07 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
-| Location | p. 1 of 34, SF 33 Solicitation, Offer and Award form (header) |
+| Location | SF 33 Solicitation, Offer and Award form (header) |
 
 ---
 
@@ -279,7 +279,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
-| Location | p. 34 of 34, Section J Attachment Table of Contents |
+| Location | Section J Attachment Table of Contents |
 
 ---
 
@@ -295,7 +295,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
-| Location | p. 33 of 34, Section I Contract Clauses, DFARS 252.219-7009 Section 8(a) Direct Award full-text clause |
+| Location | Section I Contract Clauses, DFARS 252.219-7009 Section 8(a) Direct Award full-text clause |
 
 ---
 
@@ -307,7 +307,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-2-released.pdf) |
-| Location | p. 1 of 1, contracting-officer email signature block (September 1, 2022 contract-award notification) |
+| Location | contracting-officer email signature block (September 1, 2022 contract-award notification) |
 
 ---
 
@@ -319,7 +319,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-2-released.pdf) |
-| Location | p. 1 of 1, email header |
+| Location | email header |
 
 ---
 
@@ -333,7 +333,7 @@ _No personnel attested in primary sources to date._
 |---|---|
 | Attributed to | 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
-| Location | p. 1 of 34, SF 33 Block 15A NAME AND ADDRESS OF OFFEROR + Block 15B TELEPHONE NO. |
+| Location | SF 33 Block 15A NAME AND ADDRESS OF OFFEROR + Block 15B TELEPHONE NO. |
 
 ---
 

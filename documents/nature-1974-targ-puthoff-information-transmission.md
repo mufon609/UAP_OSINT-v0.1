@@ -49,7 +49,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 1, ¶ title |
+| Location | ¶ title |
 
 ---
 
@@ -61,7 +61,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 1, ¶ author byline |
+| Location | ¶ author byline |
 
 ---
 
@@ -73,7 +73,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 1, ¶ publication-line |
+| Location | ¶ publication-line |
 
 ---
 
@@ -89,7 +89,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 1, ¶ abstract |
+| Location | ¶ abstract |
 
 ---
 
@@ -101,7 +101,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 2, ¶ studies-overview |
+| Location | ¶ studies-overview |
 
 ---
 
@@ -113,7 +113,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 2, ¶ studies-overview |
+| Location | ¶ studies-overview |
 
 ---
 
@@ -125,7 +125,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 2, ¶ shielded-room-protocol |
+| Location | ¶ shielded-room-protocol |
 
 ---
 
@@ -137,7 +137,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 3, ¶ engineering-building-protocol |
+| Location | ¶ engineering-building-protocol |
 
 ---
 
@@ -149,7 +149,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 13, ¶ conclusion |
+| Location | ¶ conclusion |
 
 ---
 
@@ -161,7 +161,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 13, ¶ closing |
+| Location | ¶ closing |
 
 ---
 
@@ -173,7 +173,7 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 |---|---|
 | Attributed to | Dr. Harold E. Puthoff and Russell Targ, 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING', Nature 251, 602-607 (October 1974) |
 | Source | [archived source](../sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf) |
-| Location | p. 13, ¶ acknowledgements |
+| Location | ¶ acknowledgements |
 
 ---
 

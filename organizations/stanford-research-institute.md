@@ -130,7 +130,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8. 1972-06-27 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, footnote |
+| Location | ¶ "H. E. Puthoff; Stanford Research Institute;" |
 
 ---
 
@@ -166,7 +166,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8) |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶1 |
+| Location | ¶ "Two laser physicists, Dr. Russell Targ" |
 
 ---
 
@@ -178,7 +178,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶2 |
+| Location | ¶ "In April of 1972, Targ met" |
 
 ---
 
@@ -190,7 +190,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶4 |
+| Location | ¶ "The Office of Technical Services took" |
 
 ---
 
@@ -202,7 +202,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 14, final ¶ |
+| Location | final ¶ |
 
 ---
 
@@ -214,7 +214,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 8, ¶2 |
+| Location | ¶ "Interest was translated into action when" |
 
 ---
 
@@ -226,7 +226,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977; footnote 4 cites the contract: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)" |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
-| Location | p. 7, ¶6 |
+| Location | ¶ "By October, 1972, I was the" |
 
 ---
 
@@ -262,7 +262,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 14, ¶1 |
+| Location | ¶ "In the early 1970's, U.S. researchers" |
 
 ---
 
@@ -274,7 +274,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 14, ¶3 |
+| Location | ¶ "The effort at SRI was discontinued" |
 
 ---
 
@@ -286,7 +286,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from q11, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 14, ¶1 (continuation) |
+| Location | ¶ "Then funding was discontinued in 1975;" |
 
 ---
 
@@ -310,7 +310,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993 — Section on SRI Studies in Remote Viewing: A Program Review, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | p. 24, ¶1 |
+| Location | ¶ "For the past eleven years, a" |
 
 ---
 

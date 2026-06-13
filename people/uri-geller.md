@@ -98,7 +98,7 @@ _Direct observation._
 |---|---|
 | Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶ Saturday-August-4-firecracker |
+| Location | ¶ Saturday-August-4-firecracker |
 
 _Direct observation._
 
@@ -108,7 +108,7 @@ _Direct observation._
 |---|---|
 | Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the grapes experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶ Saturday-August-4-grapes |
+| Location | ¶ Saturday-August-4-grapes |
 
 _Direct observation._
 

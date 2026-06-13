@@ -226,7 +226,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Sancorp AARO Support Services contract HQ003422C0094 award-notification email, 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-2-released.pdf) |
-| Location | p. 1 of 1, email header |
+| Location | email header |
 
 ---
 
@@ -730,7 +730,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Jonathan Kosloski first SASC Subcommittee on Emerging Threats and Capabilities hearing testimony, November 19, 2024, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 14, lines 9-13 |
+| Location | ¶ "A case that we thought would" |
 
 ---
 
@@ -742,7 +742,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, Puerto Rico case-resolution explanation, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 15, lines 4-7 |
+| Location | ¶ "So we assessed that the object," |
 
 ---
 
@@ -754,7 +754,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, GOFAST case-resolution explanation, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 15, lines 9-15 |
+| Location | ¶ "The GOFAST captured the public attention" |
 
 ---
 
@@ -766,7 +766,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, Mt. Etna case-resolution introduction, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 15, lines 22-25 to p. 16, line 1 |
+| Location | ¶ "An interesting case, which I do" |
 
 ---
 
@@ -778,7 +778,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, Mt. Etna case-resolution, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 16, lines 2-8 |
+| Location | ¶ "This was a rather difficult case" |
 
 ---
 
@@ -790,7 +790,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, framing remarks following the Mt. Etna case-resolution, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 16, lines 9-11 |
+| Location | ¶ "And to be clear, AARO does" |
 
 ---
 

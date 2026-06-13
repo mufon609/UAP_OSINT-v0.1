@@ -21,8 +21,6 @@ doc_form: technical-report
 | Local Archive | [sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
 | Content Block | None |
 
-_Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the file, counting any cover and front matter — which run ahead of the printed page number the document shows on the page itself._
-
 ---
 
 ## Description
@@ -45,7 +43,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ title |
+| Location | ¶ title |
 
 ---
 
@@ -57,7 +55,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ OBJECTIVE |
+| Location | ¶ OBJECTIVE |
 
 ---
 
@@ -69,7 +67,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ EXPERIMENTAL PROGRAM |
+| Location | ¶ EXPERIMENTAL PROGRAM |
 
 ---
 
@@ -81,7 +79,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ EXPERIMENTAL PROGRAM |
+| Location | ¶ EXPERIMENTAL PROGRAM |
 
 ---
 
@@ -93,7 +91,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 1, ¶ Saturday, August 4 |
+| Location | ¶ Saturday, August 4 |
 
 ---
 
@@ -105,7 +103,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶4 |
+| Location | ¶ "In this work the target picture" |
 
 ---
 
@@ -117,7 +115,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 3, ¶ Sunday, August 5 |
+| Location | ¶ Sunday, August 5 |
 
 ---
 
@@ -129,7 +127,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 8, ¶ Monday, August 6 |
+| Location | ¶ Monday, August 6 |
 
 ---
 
@@ -141,7 +139,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 8, ¶ Tuesday, August 7 |
+| Location | ¶ Tuesday, August 7 |
 
 ---
 
@@ -153,7 +151,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 16, ¶5 |
+| Location | ¶ "In these experiments conducted with this" |
 
 ---
 
@@ -165,7 +163,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 16, ¶ Thursday, August 9 |
+| Location | ¶ Thursday, August 9 |
 
 ---
 
@@ -177,7 +175,7 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 |---|---|
 | Attributed to | R. Targ, 'EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973', CIA-RDP79-00999A000300030027-0, August 13, 1973 |
 | Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
-| Location | p. 27, ¶4 |
+| Location | ¶ "These latter two experiments admit of" |
 
 ---
 

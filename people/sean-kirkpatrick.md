@@ -218,7 +218,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis), 2023-06-13 |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
-| Location | p. 8, ¶8 |
+| Location | ¶ "All of that is both absurd" |
 
 > And yes, you are defending and adjudicating, and you're undermining the very organization you purported to help establish for this purpose.
 
@@ -226,7 +226,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO, 2023-06-13 |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
-| Location | p. 9, ¶14 |
+| Location | ¶ "And yes, you are defending and" |
 
 ### Departure and Self-Assessment
 

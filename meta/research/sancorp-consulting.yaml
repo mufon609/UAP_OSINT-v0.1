@@ -305,7 +305,7 @@ quotes:
          CODE: HQ0034
     source:
       path: government/foia-23-f-0905-doc-1-released.pdf
-      location: 'p. 1 of 34, SF 33 Solicitation, Offer and Award form (header)'
+      location: 'SF 33 Solicitation, Offer and Award form (header)'
     significance: 'AARO contract SF 33 header — Contract HQ003422C0094, Solicitation HQ003422R0192, Type Negotiated RFP, Date Issued July 7, 2022. Issued by WHS Acquisition Directorate (DODAAC HQ0034), 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.'
     statement_date: '2022-07-07'
   - id: q19
@@ -321,7 +321,7 @@ quotes:
       Attachment 3    Form DD 254                       11      21-JUN-2022
     source:
       path: government/foia-23-f-0905-doc-1-released.pdf
-      location: 'p. 34 of 34, Section J Attachment Table of Contents'
+      location: 'Section J Attachment Table of Contents'
     significance: 'AARO contract Section J attachment list — 28-page Performance Work Statement (11-JUL-2022), 5-page NDA OCI (21-JUN-2022), and 11-page Form DD 254 Department of Defense Contract Security Classification Specification (21-JUN-2022).'
     statement_date: '2022-09-01'
   - id: q20
@@ -341,7 +341,7 @@ quotes:
                             Richmond, VA 23219
     source:
       path: government/foia-23-f-0905-doc-1-released.pdf
-      location: 'p. 33 of 34, Section I Contract Clauses, DFARS 252.219-7009 Section 8(a) Direct Award full-text clause'
+      location: 'Section I Contract Clauses, DFARS 252.219-7009 Section 8(a) Direct Award full-text clause'
     significance: 'AARO contract Section I clause DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD — names the Small Business Administration as the prime contractor under the SBA-DoD Partnership Agreement, with the Richmond District Office (400 N 8th Street, Suite 1150, Richmond VA 23219) as the cognizant SBA district office.'
     statement_date: '2022-09-01'
   - id: q21
@@ -357,7 +357,7 @@ quotes:
       Email: jacqueline.g.verrine.civ@mail.mil
     source:
       path: government/foia-23-f-0905-doc-2-released.pdf
-      location: 'p. 1 of 1, contracting-officer email signature block (September 1, 2022 contract-award notification)'
+      location: 'contracting-officer email signature block (September 1, 2022 contract-award notification)'
     significance: 'AARO contract-award notification email signature block (September 1, 2022) — identifies Jacqueline Verrine as Team Lead/Contracting Officer in Technical Analysis Branch (TAB), Enterprise Office Secretary of Defense (EOSD), Washington Headquarters Services (WHS), Acquisition Directorate (AD).'
     statement_date: '2022-09-01'
   - id: q22
@@ -371,7 +371,7 @@ quotes:
       Attachments: B02 HQ003422C0094_AARO.pdf
     source:
       path: government/foia-23-f-0905-doc-2-released.pdf
-      location: 'p. 1 of 1, email header'
+      location: 'email header'
     significance: 'AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject Award: HQ003422C0094_AARO.'
     statement_date: '2022-09-01'
   - id: q23
@@ -481,7 +481,7 @@ quotes:
       15B. TELEPHONE NO.: 404-840-9330
     source:
       path: government/foia-23-f-0905-doc-1-released.pdf
-      location: 'p. 1 of 34, SF 33 Block 15A NAME AND ADDRESS OF OFFEROR + Block 15B TELEPHONE NO.'
+      location: 'SF 33 Block 15A NAME AND ADDRESS OF OFFEROR + Block 15B TELEPHONE NO.'
     significance: 'AARO contract SF 33 Block 15A NAME AND ADDRESS OF OFFEROR — Code 7NZQ9, address 3235 Valley Ln, Falls Church VA 22044-1740. Block 15B telephone 404-840-9330. Block 15A second line is (b)(6)-redacted.'
     statement_date: '2022-09-01'
   - id: q32
@@ -525,7 +525,7 @@ quotes:
     text: 'PERFORMANCE WORK STATEMENT (PWS) April 25,2022 Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO) Office of the Under Secretary of Defense for Intelligence and Security'
     source:
       path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
-      location: 'p. 1, PWS title block'
+      location: 'PWS title block'
     significance: 'IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). Both PWSs were drafted in the same Washington Headquarters Services Acquisition Directorate template environment as 8(a) sole-source procurements with Sancorp as the awardee. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).'
     context: 'IPMO Performance Work Statement title block, FOIA 23-F-0906 release'
     statement_date: '2022-04-25'
