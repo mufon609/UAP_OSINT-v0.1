@@ -5,7 +5,8 @@ Each entry: required {organization_path, relationship_type, source},
 optional {flagged}.
 
 CLOSED relationship_type enum {parent, subsidiary, predecessor,
-successor, contractor, contracting-agency, partner, other} — same
+successor, contractor, contracting-agency, funder, fund-administrator,
+partner, other} — same
 pattern as ``participants.capacity``. ERROR on unknown values;
 ``other`` is the fixed miscellaneous bucket, not an extensibility
 escape.

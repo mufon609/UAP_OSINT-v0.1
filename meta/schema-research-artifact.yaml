@@ -568,12 +568,12 @@ quote_entry:
   optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id, claim_group]
   observation_type_values: [direct, relayed]
   attestation_tier_values:
-    - sworn-oath
-    - sworn-perjury
-    - dopsr-cleared
-    - on-record
-    - self-attested
-    - secondary-source
+    - sworn-oath           # under-oath congressional testimony
+    - sworn-perjury        # 18 U.S.C. § 1001 legal filing
+    - dopsr-cleared        # DoD/IC pre-publication-reviewed
+    - on-record            # interview, podcast, broadcast — no oath
+    - self-attested        # subject asserts about themselves; no external corroboration
+    - secondary-source     # journalistic reporting, third-party narration
   # attestation_tier: scoped to finding artifacts. Renderer surfaces
   #   the tier in the evidence row's verification block so readers
   #   see evidentiary weight across mixed-tier convergence. Ignored
@@ -925,7 +925,7 @@ org_relationship_entry:
   # organization_path: /organizations/... path of the other org
   # relationship_type: enum — one of
   #   [parent, subsidiary, predecessor, successor, contractor,
-  #    contracting-agency, partner, other]
+  #    contracting-agency, funder, fund-administrator, partner, other]
   #     parent               — the other org is this org's parent
   #     subsidiary           — the other org is a subsidiary of this
   #     predecessor          — the other org preceded this one
@@ -935,6 +935,8 @@ org_relationship_entry:
   #                            (this is the contracting agency)
   #     contracting-agency   — the other org is this org's contracting
   #                            agency (this is the contractor)
+  #     funder               — the other org funds this org
+  #     fund-administrator   — the other org administers funding for this
   #     partner              — joint venture / partnership
   #     other                — doesn't fit above
   # flagged: bool (default false); routes to `### Flagged`

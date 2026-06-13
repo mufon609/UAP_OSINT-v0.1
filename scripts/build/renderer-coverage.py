@@ -55,8 +55,7 @@ from renderers.investigation import EMITS as INVESTIGATION_EMITS  # noqa: E402
 
 
 # Renderer ``EMITS`` keyed by content-type name. The nine content types;
-# meta / research-artifact / attestation_tier are not content types and
-# carry no renderer.
+# meta / research-artifact are not content types and carry no renderer.
 RENDERER_EMITS = {
     "document": DOCUMENT_EMITS,
     "person": PERSON_EMITS,

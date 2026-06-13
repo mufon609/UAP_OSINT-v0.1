@@ -12,10 +12,6 @@ limits:
   table_cell_words_soft: 55  # table cells exceeding this should promote to
                               # a ### subsection or a finding node
 
-quote_verification_fields:
-  required: [Attributed to, Source, Verified]
-  optional: [Location, Note]
-
 # Three-layer evidentiary architecture (see architecture_layers below).
 # Entity-layer types carry facts; the finding layer documents multi-source
 # patterns over those facts; the investigation layer evaluates hypotheses
@@ -64,7 +60,7 @@ types:
         - [vouching_chain, attestation]
     frontmatter:
       required: [id, type, status, archetype]
-      optional: [authored_works]  # list of /documents/... paths (doc_form: book)
+      optional: []
     archetypes:
       eyewitness:
         description: "Someone who personally observed a documented event"
@@ -589,19 +585,9 @@ types:
       # empty, no frontmatter gate, no conditionally_required entry.
       "Closure Path": "status == paused"
 
-  # --- ATTESTATION TIER ---------------------------------------------------
-  # Per-attestation evidentiary tier carried on finding evidence[] rows.
-  # Renderer surfaces the tier in each evidence row's verification block
-  # so readers see the evidentiary weight of each attestation when
-  # convergence spans mixed tiers. Scoped to finding evidence[] only;
-  # entity-node quotes[] do not adopt this enum.
-  attestation_tier_values:
-    - sworn-oath           # under-oath congressional testimony
-    - sworn-perjury        # 18 U.S.C. § 1001 legal filing
-    - dopsr-cleared        # DoD/IC pre-publication-reviewed
-    - on-record            # interview, podcast, broadcast — no oath
-    - self-attested        # subject asserts about themselves; no external corroboration
-    - secondary-source     # journalistic reporting, third-party narration
+  # The per-attestation evidentiary tier (attestation_tier on finding
+  # evidence rows) and its enum live with the field that carries it:
+  # research-artifact quote_entry.attestation_tier_values.
 
   # --- META ---------------------------------------------------------------
   meta:

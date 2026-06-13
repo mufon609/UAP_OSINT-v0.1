@@ -8,8 +8,7 @@ quotes additionally require:
     Direct Observations vs Other Statements subsection split.
   - ``context`` — composed with ``statement_date`` into the
     Attributed-to row of the rendered verification block; both empty
-    would omit the row and violate
-    ``schema.yaml::quote_verification_fields.required``.
+    would omit a row the verification block requires.
 
 Transcript-artifact quotes additionally require:
 
@@ -145,8 +144,8 @@ def check(ctx):
         # observation_type + context — required on every quote when
         # target_type is person; ignored otherwise. The person renderer
         # composes the Attributed-to row from `context` + `statement_date`;
-        # a quote missing context renders without an Attributed-to row,
-        # violating the schema's quote_verification_fields requirement.
+        # a quote missing context renders without the Attributed-to row the
+        # verification block requires.
         if ctx.target_type == "person":
             obs = q.get("observation_type")
             if not obs:

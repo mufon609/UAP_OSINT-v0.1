@@ -126,7 +126,7 @@ def render_media_versioning(artifact, fm):
         node-body validator's required-section check passes.
       - When `derivation_of` is absent, the section is omitted entirely
         (empty string returned; caller drops it from the body).
-    Columns: Aspect / Parent / This / Source / Note.
+    Columns: Aspect / Parent / This / Source.
     """
     items = sort_by_id([
         e for e in (artifact.get("media_versioning") or []) if isinstance(e, dict)
