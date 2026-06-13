@@ -27,9 +27,11 @@ def section_in_scope(ctx, section_name):
     research artifact per ``schema-research-artifact.yaml::conditional_keys`` rules.
 
     Reads ``ctx.schema.types.research-artifact.conditional_keys`` and
-    evaluates the section's ``required_when_any_of`` list against
-    ``ctx.target_type`` / ``target_archetype`` / ``target_kind``. The
-    list is OR-combined; each rule's fields are AND-combined.
+    evaluates the section's ``required_when_any_of`` / ``optional_when_any_of``
+    lists against ``ctx.target_type`` / ``target_archetype`` /
+    ``target_kind``. Each list is OR-combined; each rule's fields are
+    AND-combined. In scope means EITHER list matches — a section that is
+    optional-but-allowed here still validates its entries when present.
 
     Return values:
       - ``True``  — section is in scope; check should run per-entry validation
@@ -55,8 +57,13 @@ def section_in_scope(ctx, section_name):
     if ctx.target_type is None:
         return False
 
-    return evaluate_required_when(
-        rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+    return (
+        evaluate_required_when(
+            rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+        )
+        or evaluate_optional_when(
+            rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+        )
     )
 
 
@@ -83,7 +90,36 @@ def evaluate_required_when(rules, target_type, target_archetype=None, target_kin
     scaffolder, validator orchestrator, and per-section checks agree
     on which rules match.
     """
-    rule_list = rules.get("required_when_any_of") or []
+    return _evaluate_when_any_of(
+        rules, "required_when_any_of", target_type, target_archetype, target_kind,
+    )
+
+
+def evaluate_optional_when(rules, target_type, target_archetype=None, target_kind=None):
+    """Evaluate a section's ``optional_when_any_of`` list — the
+    present-but-not-required scope. Same rule grammar as
+    ``evaluate_required_when``; True if any rule matches.
+
+    A section may carry ``required_when_any_of`` and/or
+    ``optional_when_any_of``. ``iff_section`` requires presence only when a
+    required rule matches; a matching optional rule makes presence
+    *allowed* (no missing error, no should-not-be-present error). Mirrors
+    the schema's rendered-side ``optional_sections`` so the artifact-side
+    gate matches: finding ``contradictions``; investigation
+    ``counter_evidence`` / ``closure_path`` / ``resolution_history`` (the
+    paused-requiredness of closure_path is owned by the separate
+    ``investigation_closure_path_when_paused`` check, not this scope).
+    """
+    return _evaluate_when_any_of(
+        rules, "optional_when_any_of", target_type, target_archetype, target_kind,
+    )
+
+
+def _evaluate_when_any_of(rules, key, target_type, target_archetype=None, target_kind=None):
+    """OR-combine the section's ``<key>`` rule list against the target
+    type / archetype / kind. Each rule's fields AND-combine; a fieldless
+    rule is treated as non-matching (avoids silent over-fire on a typo)."""
+    rule_list = rules.get(key) or []
     if not isinstance(rule_list, list):
         return False
     for rule in rule_list:

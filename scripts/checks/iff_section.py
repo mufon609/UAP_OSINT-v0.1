@@ -6,8 +6,17 @@ emits placement errors:
   - ``required X key missing`` — when a section's
     ``required_when_any_of`` rules match the artifact's target context
     but the section is absent
-  - ``X key should not be present`` — when no rule matches but the
-    section is present anyway
+  - ``X key should not be present`` — when neither the
+    ``required_when_any_of`` nor the ``optional_when_any_of`` rules match
+    but the section is present anyway
+
+A section may declare ``optional_when_any_of`` (present-allowed-but-not-
+required) alongside or instead of ``required_when_any_of`` — mirroring the
+schema's rendered-side ``optional_sections`` (finding Apparent
+Contradictions; investigation Counter-Evidence / Closure Path / Resolution
+History). A matching optional rule suppresses BOTH the missing error and
+the should-not-be-present error; only ``required_when_any_of`` forces
+presence.
 
 The schema is the single source of truth for which sections belong on
 which artifacts: per-section checks call ``section_in_scope`` for the
@@ -31,7 +40,7 @@ encounter-event" disjunction.
 """
 
 from checks import Issue
-from checks._research_utils import evaluate_required_when
+from checks._research_utils import evaluate_optional_when, evaluate_required_when
 
 
 CHECK_NAME = "iff_section"
@@ -71,12 +80,15 @@ def check(ctx):
     conditional_keys = ctx.schema["types"]["research-artifact"]["conditional_keys"]
 
     for section_name, rules in conditional_keys.items():
-        in_scope = evaluate_required_when(
+        required = evaluate_required_when(
+            rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+        )
+        optional = evaluate_optional_when(
             rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
         )
         present = section_name in ctx.data
 
-        if in_scope and not present:
+        if required and not present:
             condition = _format_condition(rules)
             yield Issue(
                 ctx.rel, "error",
@@ -87,7 +99,7 @@ def check(ctx):
                 f"target_kind={ctx.target_kind!r}",
                 check_name=CHECK_NAME,
             )
-        elif not in_scope and present:
+        elif present and not (required or optional):
             yield Issue(
                 ctx.rel, "error",
                 f"{section_name!r} key should not be present — schema "

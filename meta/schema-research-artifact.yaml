@@ -422,7 +422,7 @@ conditional_keys:
     # what the record DOES NOT carry. Renders as the `## What the
     # Record Doesn't Establish` section as a bullet list.
   contradictions:
-    required_when_any_of:
+    optional_when_any_of:
       - target_node_type_in: [finding]
     # Optional list of structured divergences within the finding's
     # scope. Each entry: question, positions[] (with evidence_id +
@@ -475,7 +475,7 @@ conditional_keys:
     # rollup parallel to hypothesis_evaluation entries. Renders as
     # the `## Best-Current Answer` section.
   counter_evidence:
-    required_when_any_of:
+    optional_when_any_of:
       - target_node_type_in: [investigation]
     # Optional list of structured counter-evidence entries — when
     # active findings contradict the investigation's hypotheses.
@@ -483,14 +483,17 @@ conditional_keys:
     # buried in Hypothesis Evaluation prose. Entry shape:
     # counter_evidence_entry below.
   closure_path:
-    required_when_any_of:
+    optional_when_any_of:
       - target_node_type_in: [investigation]
-    # Required when investigation status == paused (externally
-    # blocked); optional otherwise. Documents what event would
-    # unblock the investigation. Entry shape: closure_path_entry
-    # below.
+    # Optional at the placement layer (iff_section); the paused-status
+    # requiredness ("Required when investigation status == paused,
+    # externally blocked; optional otherwise") is enforced separately by
+    # the investigation_closure_path_when_paused check, which reads
+    # frontmatter status — a dimension conditional_keys can't express.
+    # Documents what event would unblock the investigation. Entry shape:
+    # closure_path_entry below.
   resolution_history:
-    required_when_any_of:
+    optional_when_any_of:
       - target_node_type_in: [investigation]
     # Optional list of evolution entries — when hypotheses have been
     # added, refuted, or superseded over time. Most investigations
