@@ -16,8 +16,11 @@ integer, the Nth page of the file. Two deviations are banned:
     boundary-spanning passage splits into two ≤1-page quotes). A range is a
     section span-cite masquerading as a page anchor — cite the single page the
     text actually sits on. timeline/existence refs name the single attesting
-    page likewise. Anchored at the start so a descriptive tail that merely
-    contains a hyphenated token (``DFARS 252.219-7009``) never matches.
+    page likewise. Matched ANYWHERE in the string, because a descriptive prefix
+    does not exempt the range (``Q&A with Rep. Burchett, p. 24-25``,
+    ``Federal Register …, pp. 43893-43894`` are still ranges); the ``p.``/``pp.``
+    prefix requirement is what keeps a bare hyphenated token that has no ``p.``
+    before it (``DFARS 252.219-7009``) from matching.
 
 This is the guard ``quote_location_page`` structurally cannot be: that check
 skips sibling-backed OCR-scan sources (their canonical extract has no form
@@ -50,9 +53,12 @@ _ROMAN_WELLFORMED = re.compile(
 )
 # A printed-folio dual annotation: "printed p. N" / "(printed pp. N-M)".
 _PRINTED = re.compile(r"\bprinted\s+pp?\.", re.IGNORECASE)
-# A leading integer page-range: `p. 9-37` / `pp. 1-33` (hyphen / en- / em-dash).
-# Anchored at the start so `Section I ... DFARS 252.219-7009` never matches.
-_RANGE = re.compile(r"^\s*pp?\.\s*\d+\s*[-–—]\s*\d+")
+# An integer page-range `p. 9-37` / `pp. 1-33` (hyphen / en- / em-dash),
+# matched ANYWHERE in the location — a descriptive prefix doesn't exempt it
+# (`Q&A with Rep. Burchett, p. 24-25` is a range). The `\b`-anchored `p.`/`pp.`
+# prefix is what keeps `Section I ... DFARS 252.219-7009` (no `p.` before the
+# hyphenated token) from matching.
+_RANGE = re.compile(r"\bpp?\.\s*\d+\s*[-–—]\s*\d+")
 
 
 def check(ctx):
@@ -80,7 +86,7 @@ def check(ctx):
                 f"\"{loc}\"",
                 check_name=CHECK_NAME,
             )
-        if _RANGE.match(loc):
+        if _RANGE.search(loc):
             yield Issue(
                 ctx.rel, "error",
                 f"{loc_path}: page-range location \"{loc}\" — a quote anchors to "

@@ -69,9 +69,12 @@ CHECK_NAME = "quote_location_page"
 # Leading `p. N` / `p.N` with an integer page. Roman numerals (`p. ii`),
 # `¶N`, `[MM:SS]`, and `Doc N` carry no physical-page claim and don't match.
 _PAGE_REF = re.compile(r"^\s*p\.\s*(\d+)\b")
-# Any leading physical-page claim, `p. N` or `pp. N-M` — used only to flag a
-# page ref on a sibling-backed source (where no page integer is verifiable).
-_PAGEISH = re.compile(r"^\s*pp?\.\s*\d+")
+# Any physical-page claim, `p. N` or `pp. N-M`, ANYWHERE in the location —
+# used only to flag a page ref on a sibling-backed source (where no page
+# integer is verifiable). Not start-anchored: a descriptive prefix
+# (`Figure 1 …, p. 7`, `PWS title block, p. 1`) doesn't exempt it. The
+# `\b`-anchored `p.`/`pp.` prefix keeps bare hyphenated tokens out.
+_PAGEISH = re.compile(r"\bpp?\.\s*\d+")
 
 
 def _cited_page(location):
@@ -162,7 +165,7 @@ def check(ctx):
     # markerless sibling names a page nothing can verify. The schema requires a
     # descriptive content anchor there.
     for jpath, rel_source, location in _walk_source_locations(ctx.data):
-        if _PAGEISH.match(location) and _is_sibling_backed(rel_source):
+        if _PAGEISH.search(location) and _is_sibling_backed(rel_source):
             yield Issue(
                 ctx.rel, "error",
                 f"{jpath}: physical-page location \"{location}\" on sibling-backed "

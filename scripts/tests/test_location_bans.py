@@ -69,6 +69,20 @@ def run():
                              "source": {"path": "government/foo.pdf", "location": "pp. 1-33"}}]})
     record("range-ban fires on 'pp. 1-33' (timeline)", _has(m, "page-range location"))
 
+    # a descriptive PREFIX does not exempt the range — these escaped the old
+    # start-anchored regex and are exactly the class that re-accumulated
+    m = _msgs(location_format.check,
+              {"quotes": [{"id": "q1", "text": "x",
+                           "source": {"path": "government/foo.pdf",
+                                      "location": "Q&A with Rep. Burchett, p. 24-25"}}]})
+    record("range-ban fires on prefixed 'Q&A …, p. 24-25'", _has(m, "page-range location"))
+
+    m = _msgs(location_format.check,
+              {"quotes": [{"id": "q1", "text": "x",
+                           "source": {"path": "government/foo.pdf",
+                                      "location": "Federal Register Vol. 90, pp. 43893-43894, EO 14347"}}]})
+    record("range-ban fires on prefixed 'pp. 43893-43894'", _has(m, "page-range location"))
+
     # negative: a descriptive tail merely CONTAINING a hyphenated token
     m = _msgs(location_format.check,
               {"quotes": [{"id": "q1", "text": "x",
@@ -82,6 +96,15 @@ def run():
               {"quotes": [{"id": "q1", "text": "x",
                            "source": {"path": SIBLING_SRC, "location": "p. 8, ¶2"}}]})
     record("sibling-ban fires on sibling-backed 'p. 8, ¶2' (quotes)",
+           _has(m, "sibling-backed source"))
+
+    # a descriptive PREFIX does not exempt the sibling-page ref either — these
+    # escaped the old start-anchored regex (`Figure 1 …, p. 7`, `… title block, p. 1`)
+    m = _msgs(quote_location_page.check,
+              {"quotes": [{"id": "q1", "text": "x",
+                           "source": {"path": SIBLING_SRC,
+                                      "location": "Figure 1 (KEY US RESEARCH EFFORTS table), p. 7"}}]})
+    record("sibling-ban fires on prefixed 'Figure 1 …, p. 7'",
            _has(m, "sibling-backed source"))
 
     # universal: same trap in a NON-quote section must also fire
