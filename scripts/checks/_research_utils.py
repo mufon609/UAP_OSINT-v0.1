@@ -169,7 +169,7 @@ def check_lifecycle_fields(rel, entry, section_name, i, check_name):
     """Every entry requires id + added_date. Yields Issues for any
     missing field."""
     for field in ("id", "added_date"):
-        if field not in entry:
+        if field not in entry or not str(entry.get(field) or "").strip():
             yield Issue(
                 rel, "error",
                 f"{section_name}[{i}] ({entry.get('id', '?')!r}): "

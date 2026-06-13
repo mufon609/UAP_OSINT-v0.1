@@ -124,7 +124,7 @@ def _check_governance_doc_frontmatter(rel, text):
 
     # Required fields
     for field in _REQUIRED_META_FIELDS:
-        if field not in fm:
+        if field not in fm or not str(fm.get(field) or "").strip():
             yield Issue(rel, "error",
                 f"Missing required frontmatter field {field!r} "
                 f"(meta/ files require "
@@ -147,7 +147,7 @@ def _check_governance_doc_frontmatter(rel, text):
     # fields.
     if str(rel) == "meta/topic/overview.md":
         for field in ("topic", "display_name"):
-            if field not in fm:
+            if field not in fm or not str(fm.get(field) or "").strip():
                 yield Issue(rel, "error",
                     f"meta/topic/overview.md frontmatter missing "
                     f"required topic-config field {field!r} (topic + "

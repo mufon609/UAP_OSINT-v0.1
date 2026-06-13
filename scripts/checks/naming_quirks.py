@@ -40,8 +40,15 @@ def check(ctx):
         if not isinstance(nq, dict):
             continue
         yield from check_lifecycle_fields(ctx.rel, nq, "naming_quirks", i, CHECK_NAME)
+        resolution = nq.get("resolution")
         for field in required_fields:
-            if field not in nq:
+            # `canonical` is legitimately null for an `unresolved` quirk — the
+            # correction hasn't been determined yet (the variant is recorded
+            # contributor-side, pending resolution; see renderers/_universal.py
+            # "use-canonical and unresolved stay contributor-side"). Presence is
+            # still required; non-emptiness is waived for that one pair.
+            empty_ok = (field == "canonical" and resolution == "unresolved")
+            if field not in nq or (not empty_ok and not str(nq.get(field) or "").strip()):
                 yield Issue(
                     ctx.rel, "error",
                     f"naming_quirks[{i}] ({nq.get('id')!r}): missing required {field!r}",

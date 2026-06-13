@@ -52,7 +52,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "location_relationships", i, CHECK_NAME)
         for field in ("entity_path", "relationship"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"location_relationships[{i}] ({e.get('id')!r}): "

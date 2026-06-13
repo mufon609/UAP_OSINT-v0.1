@@ -51,7 +51,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "program_involvement", i, CHECK_NAME)
         for field in ("program", "role", "evidentiary_basis", "confidence"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"program_involvement[{i}] ({e.get('id')!r}): "

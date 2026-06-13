@@ -37,7 +37,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "publication_record", i, CHECK_NAME)
         for field in ("publication", "outlet", "date"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"publication_record[{i}] ({e.get('id')!r}): "

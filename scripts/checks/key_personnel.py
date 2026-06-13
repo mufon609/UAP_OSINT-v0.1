@@ -52,7 +52,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "key_personnel", i, CHECK_NAME)
         for field in ("person_path", "role"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"key_personnel[{i}] ({e.get('id')!r}): missing required {field!r}",
