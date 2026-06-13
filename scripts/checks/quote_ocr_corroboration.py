@@ -85,7 +85,10 @@ def check(ctx):
 
     cited = {}
     for q in entries(ctx.data, "quotes"):
-        if not isinstance(q, dict):
+        # Same predicate the stamper counts by (ocr-consensus.py builds
+        # quote_items with isinstance(text, str)) — so a text-less quote can't
+        # inflate n_cited past the recorded count and spuriously trip drift.
+        if not isinstance(q, dict) or not isinstance(q.get("text"), str):
             continue
         src = q.get("source")
         path = src.get("path") if isinstance(src, dict) else None

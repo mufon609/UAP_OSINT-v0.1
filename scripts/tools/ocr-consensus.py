@@ -1517,7 +1517,6 @@ def cmd_selftest(_args):
 
     # Case 9: content_block stamping — insert, idempotent re-stamp, update, and
     # the vlm-skipped overwrite refusal; surgical edit leaves every other byte.
-    import tempfile
     art_body = ("id: meta/research/example\n"
                 "primary_sources:\n"
                 "- path: government/example-2010.pdf\n"

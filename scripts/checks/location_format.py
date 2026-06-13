@@ -34,6 +34,13 @@ CHECK_NAME = "location_format"
 # `p. <roman>` / `pp. <roman>` — front-matter printed folio (physical pages
 # are integers). The trailing \b stops "p. vs" / "p. version" from matching.
 _ROMAN = re.compile(r"\bpp?\.\s*([ivxlcdm]+)\b", re.IGNORECASE)
+# A candidate run of roman letters is only a page ref if it is a *well-formed*
+# roman numeral — otherwise the broad scan above false-flags ordinary words
+# made entirely of i/v/x/l/c/d/m ("p. civil", "p. mid", "p. dim").
+_ROMAN_WELLFORMED = re.compile(
+    r"^m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})$",
+    re.IGNORECASE,
+)
 # A printed-folio dual annotation: "printed p. N" / "(printed pp. N-M)".
 _PRINTED = re.compile(r"\bprinted\s+pp?\.", re.IGNORECASE)
 
@@ -43,8 +50,9 @@ def check(ctx):
     if not isinstance(data, dict):
         return
     for loc_path, loc in walk_locations(data):
-        m = _ROMAN.search(loc)
-        if m:
+        for m in _ROMAN.finditer(loc):
+            if not _ROMAN_WELLFORMED.match(m.group(1)):
+                continue  # an all-roman-letter word, not a numeral
             yield Issue(
                 ctx.rel, "error",
                 f"{loc_path}: roman-numeral page ref \"p. {m.group(1)}\" — "
@@ -52,6 +60,7 @@ def check(ctx):
                 f"not the printed front-matter folio: \"{loc}\"",
                 check_name=CHECK_NAME,
             )
+            break
         if _PRINTED.search(loc):
             yield Issue(
                 ctx.rel, "error",

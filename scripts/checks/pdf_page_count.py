@@ -31,15 +31,20 @@ CHECK_NAME = "pdf_page_count"
 
 
 def _pdf_source(data):
-    """Return (rel_path, abs_path) of the first PDF primary source, or None."""
+    """Return (rel_path, abs_path) of the *sole* PDF primary source, or None.
+
+    Skips when there is no PDF, or more than one: ``document_intrinsic.pages``
+    is a single value with no per-source field to say which PDF it describes,
+    so a multi-PDF artifact cannot be checked against one PDF unambiguously."""
     srcs = data.get("primary_sources")
     if not isinstance(srcs, list):
         return None
-    for s in srcs:
-        if (isinstance(s, dict) and isinstance(s.get("path"), str)
-                and s["path"].lower().endswith(".pdf")):
-            return s["path"], SOURCES_DIR / s["path"]
-    return None
+    pdfs = [s["path"] for s in srcs
+            if isinstance(s, dict) and isinstance(s.get("path"), str)
+            and s["path"].lower().endswith(".pdf")]
+    if len(pdfs) != 1:
+        return None
+    return pdfs[0], SOURCES_DIR / pdfs[0]
 
 
 def check(ctx):

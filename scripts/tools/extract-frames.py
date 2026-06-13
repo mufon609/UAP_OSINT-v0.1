@@ -251,6 +251,10 @@ def extract_burst_individual(
     output layout. Useful when the contributor wants per-frame inspection
     rather than (or alongside) the tiled composite."""
     out_dir.mkdir(parents=True, exist_ok=True)
+    # A reused {ts}_frames dir can hold higher-numbered frames from a prior
+    # larger --count run; clear them so the returned glob is this run's only.
+    for stale in out_dir.glob("frame_*.jpg"):
+        stale.unlink()
     fps = count / max(span, 0.001)
     pattern = str(out_dir / "frame_%02d.jpg")
     cmd = [

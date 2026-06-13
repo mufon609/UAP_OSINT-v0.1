@@ -30,8 +30,9 @@ CHECK_NAME = "naming_quirks"
 
 
 def check(ctx):
-    valid_resolutions = ctx.schema["types"]["research-artifact"][
-        "naming_quirk_entry"]["resolution_values"]
+    entry_schema = ctx.schema["types"]["research-artifact"]["naming_quirk_entry"]
+    valid_resolutions = entry_schema["resolution_values"]
+    required_fields = entry_schema["required"]
 
     items = entries(ctx.data, "naming_quirks")
     yield from check_unique_ids(ctx.rel, items, "naming_quirks", CHECK_NAME)
@@ -39,7 +40,7 @@ def check(ctx):
         if not isinstance(nq, dict):
             continue
         yield from check_lifecycle_fields(ctx.rel, nq, "naming_quirks", i, CHECK_NAME)
-        for field in ("observed", "canonical", "location", "source_path", "resolution"):
+        for field in required_fields:
             if field not in nq:
                 yield Issue(
                     ctx.rel, "error",
