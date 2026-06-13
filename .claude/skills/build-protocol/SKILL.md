@@ -188,8 +188,7 @@ surrounding prose (the form the prose-drift check matches); (2) a bare
 authorship-network dimension, not navigation — unless that work is *also*
 discussed in argument prose. `## Associated Nodes` is auto-generated from the
 wraps by `associate.py` (never hand-edited); `prose_entity_link` (blocking
-check) catches an unwrapped entity already in the repo, and `link-suggest.py`
-(read-only aid) surfaces the not-yet-built ones.
+check) catches an unwrapped entity already in the repo.
 
 **Interview-derived testimony** — when a node cites a long-form media appearance
 (podcast, broadcast, panel, conference talk, streamed interview) as evidence,

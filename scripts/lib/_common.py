@@ -779,8 +779,8 @@ def _strip_pdf_page_number_lines(text):
     removed. Digits inside body text, numbered-list items, and
     court-reporter line numbers (which carry following text on the same
     line) never match. Form feeds themselves are preserved and the ``\f``
-    count is unchanged, so ``normalize-locations.py`` page-number
-    computation is unaffected. This is the PDF analog of the HTML
+    count is unchanged, so page-number computation off form-feed
+    boundaries is unaffected. This is the PDF analog of the HTML
     standalone-datum handling above — presentation noise removed once at
     the extraction layer, so all three source-grounded consumers
     (verbatim-quote, prose-drift, description-drift) benefit with no

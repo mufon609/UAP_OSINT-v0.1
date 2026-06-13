@@ -537,7 +537,6 @@ COMMANDS = {
     "add": cmd_add,
     "add-sibling": cmd_add_sibling,
     "edit": cmd_edit,
-    "set": cmd_edit,
     "status": cmd_status,
     "pending": cmd_pending,
     "usage": cmd_usage,
@@ -637,7 +636,7 @@ def main():
                         "the manifest")
 
     p = subparsers.add_parser(
-        "edit", aliases=["set"],
+        "edit",
         help="correct a registered artifact in place (target by --path); set a "
              "field, rewrite the note, or --new-path to rename the registered path")
     p.add_argument("--path", required=True,

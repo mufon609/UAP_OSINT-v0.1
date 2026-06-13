@@ -68,7 +68,6 @@ Subcommands:
              OCR engine; contested tokens and PaddleOCR-filled-page quotes are
              enumerated as the audit target list) and stamp the canonical
              ``quote_corroboration`` value onto the artifact entry.
-  engines    Report which engines are available (diagnostic).
   --selftest Run the alignment/consensus logic on synthetic inputs (no OCR
              engines needed) — exercised by scripts/tests/.
 
@@ -1428,16 +1427,6 @@ def cmd_corroborate(args):
     stamp_quote_corroboration(artifact, pdf.name, val)
 
 
-def cmd_engines(_args):
-    def have(cmd):
-        from shutil import which
-        return which(cmd) is not None
-    print("tesseract :", "OK " + tesseract_version() if have("tesseract") else "MISSING")
-    print("pdftoppm  :", "OK" if have("pdftoppm") else "MISSING")
-    print("paddleocr :", paddleocr_version())
-    print("venv      :", ".venv-ocr present" if _VENV_PYTHON.is_file() else "MISSING (run setup-ocr-consensus.sh)")
-
-
 def cmd_selftest(_args):
     """Exercise the alignment/consensus on synthetic streams replaying the four
     DIRD-16 errors. The VLM base is correct here; the failure case that matters
@@ -1866,9 +1855,6 @@ def main():
                        help="recompute the engine reads even when cached (cache key: "
                             "PDF bytes + dpi + engine versions, under the system temp dir)")
     p_cor.set_defaults(func=cmd_corroborate)
-
-    p_eng = sub.add_parser("engines", help="report engine availability")
-    p_eng.set_defaults(func=cmd_engines)
 
     args = ap.parse_args()
     if args.selftest:

@@ -8,9 +8,8 @@ There is no "load-bearing vs. incidental" discretion — naming an entity
 without linking it drops a real cross-reference on the floor.
 
 This check is the *mechanical, zero-false-positive* half of enforcing
-that rule. It cannot detect arbitrary names (that would need NER — the
-read-only ``scripts/tools/link-suggest.py`` aid surfaces those candidates
-heuristically). What it CAN do reliably is catch the concrete drift:
+that rule. It cannot detect arbitrary names (that would need NER). What
+it CAN do reliably is catch the concrete drift:
 
   **a node names an entity that ALREADY EXISTS in the repo (by its
   canonical display name or a registered alias) without wrapping it.**
@@ -29,8 +28,8 @@ investigation nodes carry *descriptive* titles ("DIA Defense Intelligence
 Reference Document", "Warp Drive / Extra Dimensions", a release date), not
 proper names; harvesting those produces generic-phrase false positives.
 Those reference classes are governed by the same convention but caught by
-the read-only ``link-suggest.py`` aid + the structured cross-reference
-fields the renderer already wraps, not by this mechanical guard.
+the structured cross-reference fields the renderer already wraps, not by
+this mechanical guard.
 
 Carve-outs (faithful to convention):
   - Verbatim ``quote.text`` (rendered as ``>`` blockquote lines) is never
