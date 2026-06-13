@@ -327,7 +327,7 @@ quotes:
     1970-1990     -- SRI INTERNATIONAL, MENLO PARK, CA
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
-    location: 'Figure 1 (KEY US RESEARCH EFFORTS table), p. 7'
+    location: 'Figure 1 (KEY US RESEARCH EFFORTS table)'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Figure 1 (KEY US RESEARCH EFFORTS table) row entry for SRI International'
   statement_date: '1993-04-30'
   significance: 'DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound previously referenced parenthetically in q12 significance to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 (q8) — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.'
@@ -607,7 +607,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'SRI-International'
   canonical: 'SRI International'
-  location: '¶ "SRI-International"'
+  location: '¶ "In the early 1970''s, U.S. researchers"'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -632,7 +632,7 @@ naming_quirks:
   added_date: '2026-05-15'
   observed: 'Systems Applications International Corporation'
   canonical: 'Science Applications International Corporation'
-  location: '¶ "Systems Applications International Corporation"'
+  location: '¶ "The effort at SRI was discontinued"'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 

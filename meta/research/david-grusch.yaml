@@ -1401,7 +1401,7 @@ quotes:
   text: Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 24-25
+    location: p. 24, Q&A with Rep. Burchett
   significance: Sworn retaliation/reprisal claim with active PPD-19 investigation status — "brutal and very unfortunate" tactics used both professionally and personally.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1471,7 +1471,7 @@ quotes:
   text: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance, their reputation to climb the ladder, and
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin, p. 26-27
+    location: p. 26, Q&A with Rep. Raskin
   significance: Grusch's named framing ("administrative terrorism") for the retaliation pattern used against career IC personnel.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1505,7 +1505,7 @@ quotes:
   text: Unfortunately, I cannot read his mind. I wish he did. I was happy to give sage counsel to him on where to look when he took the helm of AARO.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 27-28
+    location: p. 27, Q&A with Rep. Luna
   significance: Grusch's on-record characterization of the advice he offered Kirkpatrick and Kirkpatrick's non-follow-up.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1550,7 +1550,7 @@ quotes:
   text: Based on conventional advanced tech I was briefed to the preponderance of the Defense Department’s both space and aerospace compartmented programs. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 29-30
+    location: p. 30, Q&A with Rep. Moskowitz
   significance: Grusch's representation of his conventional advanced tech access — "preponderance" of DoD space and aerospace compartmented programs.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1607,7 +1607,7 @@ quotes:
   text: I cannot discuss that in an open session.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 30-31
+    location: p. 30, Q&A with Rep. Moskowitz
   significance: Grusch declines to confirm/deny in open session whether the imagery he reviewed includes crash-site imagery.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1686,7 +1686,7 @@ quotes:
   text: It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Gaetz / Rep. Burchett, p. 34-35
+    location: p. 35, Q&A with Rep. Gaetz / Rep. Burchett
   significance: Technical clarification under oath — Grusch cites EO 13526 as authoritative on classification levels, addressing public confusion about what is "above Top Secret."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1754,7 +1754,7 @@ quotes:
   text: For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ocasio-Cortez, p. 36-37
+    location: p. 36, Q&A with Rep. Ocasio-Cortez
   significance: Technical expansion — Grusch describes how contractor IR&D funds escape congressional oversight by being internal to contractors.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1853,7 +1853,7 @@ quotes:
   text: To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 40-41
+    location: p. 40, Q&A with Rep. Burlison
   significance: Grusch's theoretical framework for why non-human craft would crash — also explicit statement "I am here as a fact witness and not an expert" bounding his epistemic role.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -2011,7 +2011,7 @@ quotes:
   text: By external observation, sure, that could be a fair assessment. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ogles, p. 47-48
+    location: p. 48, Q&A with Rep. Ogles
   significance: Grusch's hedged affirmative that UAPs show interest in U.S. nuclear technology — framed as external-observation assessment.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -2068,7 +2068,7 @@ quotes:
   text: Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 48-49
+    location: p. 49, Q&A with Rep. Burchett
   significance: Grusch asserts other reverse-engineering program insiders would testify under closed-door, retaliation-proof protections.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -2101,7 +2101,7 @@ quotes:
   text: You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive. What I would recommend—and I tried to get access but I got a wall of silence at the White House—was those specific incidents when those—message traffic was used. I think some scholarship on that would open the door to a further investigation using those publicly available information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 49-50
+    location: p. 49, Q&A with Rep. Luna
   significance: Grusch points to the 1971 US-USSR nuclear-war-risk agreement, specifically Article 3 — claims it covers UAP incidents. Cites the George Washington University National Security Archive 2013 declassification. Also claims he sought specific-incident records but "got a wall of silence at the White House."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -2112,7 +2112,7 @@ quotes:
   text: I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 49-50
+    location: p. 50, Q&A with Rep. Luna
   significance: Grusch's sworn claim of potential FAR violations (federal contracting law) in connection with the alleged programs.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed

@@ -298,7 +298,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 |---|---|
 | Attributed to | Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 'STAR GATE PROJECT: AN OVERVIEW' (DTI-S-1056-SL), 30 April 1993 — Figure 1 (KEY US RESEARCH EFFORTS table) row entry for SRI International, 1993-04-30 |
 | Source | [archived source](../sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf) |
-| Location | Figure 1 (KEY US RESEARCH EFFORTS table), p. 7 |
+| Location | Figure 1 (KEY US RESEARCH EFFORTS table) |
 
 ---
 

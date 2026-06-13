@@ -293,7 +293,7 @@ timeline:
   category: contract
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
-    location: 'PWS title block, p. 1'
+    location: 'PWS title block'
 - id: t3
   added_date: '2026-05-02'
   date: '2022-05-27'

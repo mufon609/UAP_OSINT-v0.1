@@ -432,7 +432,7 @@ naming_quirks:
   added_date: '2026-06-11'
   observed: 'SRI-International'
   canonical: 'SRI International'
-  location: '¶ "SRI-International"'
+  location: '¶ "In the early 1970''s, U.S. researchers"'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 
@@ -440,7 +440,7 @@ naming_quirks:
   added_date: '2026-06-11'
   observed: 'Systems Applications International Corporation'
   canonical: 'Science Applications International Corporation'
-  location: '¶ "Systems Applications International Corporation"'
+  location: '¶ "The effort at SRI was discontinued"'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
 

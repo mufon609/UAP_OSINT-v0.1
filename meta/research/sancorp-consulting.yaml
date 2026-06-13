@@ -831,7 +831,7 @@ timeline:
     category: contract
     source:
       path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
-      location: 'IPMO PWS title block, p. 1'
+      location: 'IPMO PWS title block'
   - id: t10
     added_date: '2026-04-30'
     date: '2022-06-09'
@@ -967,7 +967,7 @@ timeline:
     category: government-action
     source:
       path: government/eo-14347-restoring-department-of-war-20250910.txt
-      location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), pp. 43893-43894, EO 14347'
+      location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), EO 14347'
   - id: t27
     added_date: '2026-04-30'
     date: '2025-09-11'

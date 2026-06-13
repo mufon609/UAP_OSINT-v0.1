@@ -490,7 +490,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I, KONA BLUE finding, 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Location | HRR Vol I, p. 34-35 |
+| Location | p. 35, HRR Vol I |
 
 ---
 

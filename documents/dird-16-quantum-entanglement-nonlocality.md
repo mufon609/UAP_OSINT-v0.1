@@ -215,7 +215,7 @@ Section XII describes another path, nonlinear quantum mechanics: the no-signal "
 |---|---|
 | Attributed to | DIRD #16 (The Space-Communication Implications of Quantum Entanglement and Nonlocality), 30 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the external DIA-to-Congress products list attributes the report to Dr. John G. Cramer. |
 | Source | [archived source](../sources/government/dird-16-quantum-entanglement-nonlocality-20100330.pdf) |
-| Location | §VIII. Superluminal and Retrocausal Nonlocal Communication, ¶ "Now consider that the sending detector" |
+| Location | ¶ "This would be a direct demonstration of retrocausal signaling using" |
 
 ---
 
