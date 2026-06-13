@@ -111,7 +111,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 13-14 |
+| Location | ¶ "I should also state clearly for" |
 
 **Also attested:**
 
@@ -144,7 +144,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC oversight hearing, Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 13 |
+| Location | ¶ "In other words, AARO's mission is" |
 
 > The AARO team of more than three dozen experts is organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications.
 
@@ -152,7 +152,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC oversight hearing, Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 9-37 |
+| Location | ¶ "The AARO team of more than" |
 
 > There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
 
@@ -160,7 +160,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A with Senators Rosen and Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 31 |
+| Location | ¶ "There are some authorities that we" |
 
 ### UAP Caseload and Morphology
 
@@ -170,7 +170,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A with Senator Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 21 |
+| Location | ¶ "So as of this week we" |
 
 > Over half, about 52 percent, of what has been reported to us are round or spheres.
 
@@ -178,7 +178,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC chart presentation following oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 16 |
+| Location | ¶ "Over half, about 52 percent, of" |
 
 > all over the world and we see these in making very interesting apparent maneuvers
 
@@ -204,7 +204,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | p. 42 |
+| Location | ¶ "In 1979 Carl Sagan said extraordinary" |
 
 **Also attested:**
 

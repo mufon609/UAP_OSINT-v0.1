@@ -1140,7 +1140,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 13-14"
+    location: '¶ "I should also state clearly for"'
   significance: The most-cited single line from Kirkpatrick's tenure. The institutional NHI-avoidance script preserved nearly verbatim by his successor Jon Kosloski
   context: Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing
 - id: q5
@@ -1153,7 +1153,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 13"
+    location: '¶ "In other words, AARO''s mission is"'
   significance: Kirkpatrick's rhetorical framing of AARO's mission as a hand-off operation
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q6
@@ -1166,7 +1166,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 9-37"
+    location: '¶ "The AARO team of more than"'
   significance: Kirkpatrick's description of AARO's structure including a strategic communications function as one of four functional areas
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q7
@@ -1179,7 +1179,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 21"
+    location: '¶ "So as of this week we"'
   significance: AARO case-load count at the time of the April 19 2023 hearing
   context: SASC Q&A with Senator Gillibrand
 - id: q8
@@ -1192,7 +1192,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 16"
+    location: '¶ "Over half, about 52 percent, of"'
   significance: Kirkpatrick's public morphology breakdown — about 52 percent of UAP reports are round or spheres
   context: SASC chart presentation following oral statement
 - id: q9
@@ -1205,7 +1205,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 31"
+    location: '¶ "There are some authorities that we"'
   significance: Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities
   context: SASC Q&A with Senators Rosen and Gillibrand
 - id: q10
@@ -1219,7 +1219,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: "p. 42"
+    location: '¶ "In 1979 Carl Sagan said extraordinary"'
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation from extraordinary evidence to extraordinary science
   context: SASC Q&A on academic community collaboration and the NASA UAP independent study
 - id: q11
