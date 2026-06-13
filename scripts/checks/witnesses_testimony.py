@@ -52,7 +52,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "witnesses_testimony", i, CHECK_NAME)
         for field in ("witness_path", "oath_status"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"witnesses_testimony[{i}] ({e.get('id')!r}): "
@@ -60,7 +60,7 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         wp = e.get("witness_path")
-        if wp and not wp.startswith("/"):
+        if wp and (not isinstance(wp, str) or not wp.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"witnesses_testimony[{i}] ({e.get('id')!r}): "
@@ -77,7 +77,7 @@ def check(ctx):
             )
         for optional_path_field in ("transcript_node", "written_testimony_node"):
             v = e.get(optional_path_field)
-            if v and not v.startswith("/"):
+            if v and (not isinstance(v, str) or not v.startswith("/")):
                 yield Issue(
                     ctx.rel, "error",
                     f"witnesses_testimony[{i}] ({e.get('id')!r}): "

@@ -128,12 +128,13 @@ descriptions.
 
 | Script | Purpose |
 |---|---|
-| `pre-commit.sh` | Canonical all-gates health check — chains every gate: help-check / test_stopwords / smoke / `build/validate.py` / `build/validate-research.py` / `build/validate-speaker-attribution.py` / `build/review-coverage.py` / `build/build-state.py --check` / `build/associate.py --check` / `build/renderer-coverage.py` / phase-routing-parity / skills-check / file-size-check / cookies-check. Also the blocking commit hook (un-bypassable by `--no-verify`). |
+| `pre-commit.sh` | Canonical all-gates health check — chains every gate: help-check / test_stopwords / smoke / `merge-fragments --selftest` / `finalize-attribution --selftest` / `ocr-consensus --selftest` / `build/validate.py` / `build/validate-research.py` / `build/validate-speaker-attribution.py` / `build/review-coverage.py` / `build/build-state.py --check` / `build/associate.py --check` / `build/renderer-coverage.py` / phase-routing-parity / skills-check / file-size-check / scratch-hygiene / cookies-check. Also the blocking commit hook (un-bypassable by `--no-verify`). |
 | `help-check.sh` | Confirms every `scripts/{build,tools}/*.py --help` exits 0 with no traceback — catches syntax errors, import errors, and argparse regressions. |
 | `skills-check.sh` | Lint for the `.claude/` toolkit surface (skills, subagents, settings): frontmatter shape (`description:` on every SKILL.md, `name:`+`description:` on every agent), topic-neutrality (no skill/agent body hard-codes this instance's topic token — read dynamically from `meta/topic/overview.md`, so `.claude/` survives `/fork-init`), and `settings.json` validity. |
 | `test_stopwords.py` | `STOPWORDS` shape + content-word regression test. |
 | `smoke.py` | Fixture-based `new.py` + validator smoke tests (single-process; `ProcessPoolExecutor` over fork). |
 | `file-size-check.sh` | Warn 50MB / error 100MB on git-tracked files (per `meta/sources-access.md` large-file discipline). |
+| `scratch-hygiene.sh` | Verify `.scratch/` tier structure and that every entry is referenced-or-fresh — no stray top-level entry and no unreferenced entry older than the grace window. |
 | `cookies-check.sh` | Block commits containing Netscape cookies content or Google session cookies in Netscape-shape rows (defensive backstop to `.gitignore` patterns). |
 
 Before adding or modifying a script, run:

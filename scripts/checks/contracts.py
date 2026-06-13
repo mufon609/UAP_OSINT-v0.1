@@ -54,7 +54,7 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         pcp = e.get("primary_counterparty_path")
-        if pcp and not pcp.startswith("/"):
+        if pcp and (not isinstance(pcp, str) or not pcp.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"contracts[{i}] ({e.get('id')!r}): "

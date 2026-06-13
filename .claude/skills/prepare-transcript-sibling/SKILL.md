@@ -103,7 +103,7 @@ format, etc.).
 
 ## 3. Structural validator — `validate-speaker-attribution.py`.
 
-Mechanical gate; no LLM. Runs the 13-check chain from
+Mechanical gate; no LLM. Runs the 16-check chain from
 `scripts/build/validate-speaker-attribution.py`:
 
 ```

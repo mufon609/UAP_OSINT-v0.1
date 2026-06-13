@@ -50,7 +50,10 @@
 #  12. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
-#  13. scripts/tests/cookies-check.sh        — no tracked file contains
+#  13. scripts/tests/scratch-hygiene.sh      — .scratch/ tier structure +
+#                                              every entry referenced-or-fresh
+#                                              (no stray / no unreferenced stale)
+#  14. scripts/tests/cookies-check.sh        — no tracked file contains
 #                                              Netscape cookies content or
 #                                              Google session cookies in
 #                                              Netscape-shape rows (defensive

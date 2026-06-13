@@ -55,7 +55,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "vouching_chain", i, CHECK_NAME)
         for field in ("voucher_path", "attestation"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"vouching_chain[{i}] ({e.get('id')!r}): "
@@ -63,7 +63,7 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         vp = e.get("voucher_path")
-        if vp and not vp.startswith("/"):
+        if vp and (not isinstance(vp, str) or not vp.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"vouching_chain[{i}] ({e.get('id')!r}): "

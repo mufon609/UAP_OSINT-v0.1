@@ -110,6 +110,20 @@ def check(ctx):
                 )
             continue
         norm_quote = normalize_for_compare(text)
+        if not norm_quote:
+            # Empty after normalization (text is only markers/punctuation like
+            # "---" or "[00:00]"): `"" in source` is always True, so the
+            # substring test below would pass against ANY source. A quote with
+            # no verifiable content is an error, not a silent pass.
+            preview = text[:80] + ("..." if len(text) > 80 else "")
+            yield Issue(
+                ctx.rel, "error",
+                f'quotes[{i}] ({qid!r}): text normalizes to empty — no '
+                f'verifiable content after stripping markers/punctuation: '
+                f'"{preview}"',
+                check_name=CHECK_NAME,
+            )
+            continue
         norm_source = normalize_for_compare(source_text)
         if norm_quote not in norm_source:
             preview = text[:80] + ("..." if len(text) > 80 else "")

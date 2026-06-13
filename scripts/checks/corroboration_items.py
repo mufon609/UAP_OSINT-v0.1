@@ -54,7 +54,7 @@ def check(ctx):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "corroboration_items", i, CHECK_NAME)
         for field in ("observer_path", "observation_type"):
-            if field not in e:
+            if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
                     f"corroboration_items[{i}] ({e.get('id')!r}): "
@@ -70,7 +70,7 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         op = e.get("observer_path")
-        if op and not op.startswith("/"):
+        if op and (not isinstance(op, str) or not op.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"corroboration_items[{i}] ({e.get('id')!r}): "

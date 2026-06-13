@@ -59,7 +59,7 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         pp = e.get("person_path")
-        if pp and not pp.startswith("/"):
+        if pp and (not isinstance(pp, str) or not pp.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"key_personnel[{i}] ({e.get('id')!r}): "

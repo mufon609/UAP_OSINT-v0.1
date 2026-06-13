@@ -52,7 +52,7 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         op = e.get("organization_path")
-        if op and not op.startswith("/"):
+        if op and (not isinstance(op, str) or not op.startswith("/")):
             yield Issue(
                 ctx.rel, "error",
                 f"org_relationships[{i}] ({e.get('id')!r}): "
