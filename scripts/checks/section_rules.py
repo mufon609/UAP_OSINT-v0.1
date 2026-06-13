@@ -65,11 +65,17 @@ def _count_quote_blocks_and_attributions(section_text):
     source_rows = sum(
         1 for line in lines if line.strip().startswith("| Source |")
     )
-    italic_lines = 0
-    for line in lines:
-        s = line.strip()
-        if len(s) > 2 and s.startswith("_") and s.endswith("_"):
-            italic_lines += 1
+    # Only the compact-quote renderer's attribution line counts — it always
+    # carries the `[archived source](../sources/…)` link (_common.py
+    # _render_compact_statement_block). Plain italic lines the renderer also
+    # emits — `_Direct observation._`, `_No … documented._` placeholders —
+    # are NOT attribution surfaces and must not inflate the count (which would
+    # mask an unattributed block-quote).
+    italic_lines = sum(
+        1 for line in lines
+        if (s := line.strip()).startswith("_") and s.endswith("_")
+        and "archived source" in s
+    )
     return blocks, source_rows + italic_lines
 
 

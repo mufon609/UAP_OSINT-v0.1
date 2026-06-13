@@ -64,8 +64,10 @@ if [ -f "$OVERVIEW" ]; then
         [ -n "$token" ] || continue
         for dir in .claude/skills .claude/agents .claude/hooks; do
             [ -d "$dir" ] || continue
-            # case-insensitive whole-word match for the subject token in any body
-            hits="$(grep -riwn -- "$token" "$dir" 2>/dev/null || true)"
+            # case-insensitive whole-word match for the subject token in any
+            # body. -F (literal): a forked topic may contain regex metachars
+            # (C++, A.B) — without it the token is a pattern and mis-matches.
+            hits="$(grep -riwnF -- "$token" "$dir" 2>/dev/null || true)"
             if [ -n "$hits" ]; then
                 err "topic token '$token' hard-coded in toolkit files (use the {display_name} placeholder so .claude/ survives a fork):"
                 printf '%s\n' "$hits" | sed 's/^/        /'
