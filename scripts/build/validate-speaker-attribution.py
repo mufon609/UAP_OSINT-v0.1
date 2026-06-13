@@ -510,6 +510,12 @@ def check_turn_coverage(data, rpt):
             continue
         ranges.append((lo, hi, i))
     if not ranges:
+        if total >= 1:
+            rpt.fatal(
+                "turns",
+                f"no valid line_range coverage but source_line_count is {total}"
+                f" — all {total} line(s) uncovered (empty or all-malformed turns)",
+            )
         return
     # Sorted-ascending check + gap/overlap detection
     expected_start = 1

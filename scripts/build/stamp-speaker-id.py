@@ -146,11 +146,10 @@ def _derive(art, sibling, spath, changes, warnings):
             remap[aid] = aid
         else:
             remap[aid] = sid
-    matched = [v for k, v in remap.items() if k != v or v in sib_by_id]
-    if len(set(matched)) != len([v for v in remap.values()]):
-        # collision: two artifact speakers map to one sibling id
-        if len(set(remap.values())) != len(remap):
-            sys.exit(f"error: speaker-id remap is not 1:1 ({remap}); manual review")
+    # The remap must be 1:1 — two artifact speakers collapsing to one sibling
+    # id would silently mis-stamp speaker_id on quotes.
+    if len(set(remap.values())) != len(remap):
+        sys.exit(f"error: speaker-id remap is not 1:1 ({remap}); manual review")
 
     for a in art_speakers:
         old = a.get("id")

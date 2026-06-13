@@ -12,15 +12,22 @@
 set -u
 REPO_ROOT="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "$0")/../.." && pwd)}"
 
-fp="$(python3 -c 'import sys, json
+# Normalize to a clean repo-relative path in Python (collapses ./, //, .., and
+# a trailing slash on REPO_ROOT) — a literal prefix-strip alone leaves forms
+# like ./people/foo.md or /repo//people/foo.md unmatched by the case below.
+rel="$(REPO_ROOT="$REPO_ROOT" python3 -c 'import sys, json, os
 try:
     d = json.load(sys.stdin)
 except Exception:
     d = {}
-print(d.get("tool_input", {}).get("file_path", ""))')"
+fp = d.get("tool_input", {}).get("file_path", "")
+if not fp:
+    sys.exit(0)
+root = os.path.normpath(os.environ["REPO_ROOT"])
+ap = os.path.normpath(fp if os.path.isabs(fp) else os.path.join(root, fp))
+print(os.path.relpath(ap, root))')"
 
-[ -n "$fp" ] || exit 0
-rel="${fp#"$REPO_ROOT"/}"   # normalize absolute -> repo-relative
+[ -n "$rel" ] || exit 0
 
 case "$rel" in
     people/*.md|organizations/*.md|documents/*.md|events/*.md|transcripts/*.md|media/*.md|locations/*.md|findings/*.md|investigations/*.md)

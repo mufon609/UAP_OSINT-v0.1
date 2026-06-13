@@ -61,7 +61,10 @@ def sets_hookspath(seg, i):
     core.hooksPath`` is a read."""
     tok = seg[i]
     if "core.hooksPath=" in tok:
-        return True  # -c key=val / GIT_CONFIG env injection
+        return True  # -c core.hooksPath=VALUE
+    if re.match(r"GIT_CONFIG_KEY_\d+=core\.hooksPath$", tok):
+        return True  # GIT_CONFIG_KEY_N=core.hooksPath env injection (the
+        #            paired GIT_CONFIG_VALUE_N overrides local core.hooksPath)
     if "config" not in seg[:i]:
         return False  # not a `git config` invocation — can't be a config set
     if any(f in seg for f in CONFIG_READ_FLAGS):
@@ -127,7 +130,8 @@ def verdict(cmd):
     # core.hooksPath *set* form (`-c core.hooksPath=` / GIT_CONFIG env) only —
     # a bare `core.hooksPath` substring here is a read (`grep`/`--get`), not a
     # bypass, and must not be denied.
-    if "--no-verify" in stripped or "core.hooksPath=" in stripped:
+    if ("--no-verify" in stripped or "core.hooksPath=" in stripped
+            or re.search(r"GIT_CONFIG_KEY_\d+=core\.hooksPath", stripped)):
         return ("deny a bypass flag appears in an unparseable position — "
                 "rewrite the commit as a plain `git commit` invocation")
     return "commit"

@@ -89,11 +89,15 @@ def generate_section(groups):
 
 
 def replace_section(text, new_section):
-    """Replace existing Associated Nodes section, or append at end of body.
+    """Replace the `## Associated Nodes` section in place, or append it at
+    end-of-body if absent.
 
-    `new_section` is expected to end with a trailing '---\\n\\n' separator.
-    Any existing separator preceding the next H2 is consumed as part of the
-    replaced block so we don't duplicate separators.
+    `new_section` carries no separator of its own (`generate_section` ends with
+    `.rstrip() + "\\n"`). The `---` that precedes `## Associated Nodes` in a
+    rendered node lives in `text[:start]` and is preserved by `prefix`. The
+    section is the node's final section by the directional contract, so in
+    practice `next_h2` is None and `end` is end-of-text; the next-H2 branch is
+    a guard for the unexpected mid-body case.
     """
     match = re.search(r"^## Associated Nodes\s*$", text, re.MULTILINE)
     if match:
