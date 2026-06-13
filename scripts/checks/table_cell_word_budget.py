@@ -9,12 +9,15 @@ Markdown link wraps (``[`/path`]``) and emphasis markers are stripped
 before counting so a cell carrying many cross-reference links isn't
 flagged just for them.
 
-``Note`` columns are exempt — they're designed to carry 1-3 sentences
-of source-attested nuance. The word-budget is a promote-to-subsection
-heuristic for terse label cells (org names, role titles, dates); it
-doesn't apply to columns whose purpose is prose. The check tracks the
-most recent table header row in the section to identify Note-column
-positions.
+Prose-purpose columns are exempt — the word-budget is a
+promote-to-subsection heuristic for terse label cells (org names, role
+titles, dates) and doesn't apply to columns whose purpose is prose. Two
+such columns: a ``Note`` column (designed to carry 1-3 sentences of
+source-attested nuance), and the ``Value`` column of a ``| Field | Value |``
+key-value table (the attribution block, Document Summary, Media Versioning,
+etc.) — a key's value is whatever it is, with no promote-to-subsection
+remedy. The check tracks the most recent table header row in the section to
+identify these column positions.
 
 The budget value is read via direct subscript so schema drift fails
 loudly rather than silently degrading.
@@ -43,29 +46,30 @@ def _is_table_row(line):
 def _table_cell_overages(section_text, budget):
     """Return list of (cell_preview, word_count) for cells exceeding the
     budget. Strips markdown link syntax and emphasis markers before
-    counting words. Skips cells in ``Note`` columns (identified by the
-    most recent header row preceding each data row)."""
+    counting words. Skips cells in prose-purpose columns — a ``Note`` column
+    or the ``Value`` column of a ``| Field | Value |`` key-value table —
+    identified by the most recent header row preceding each data row."""
     out = []
-    note_columns = set()
+    prose_columns = set()
     for line in section_text.splitlines():
         if not _is_table_row(line):
-            # Reset Note-column map when leaving a table (e.g., blank line)
-            note_columns = set()
+            # Reset the prose-column map when leaving a table (e.g., blank line)
+            prose_columns = set()
             continue
         cells = _split_cells(line)
         if _is_separator_row(line):
             continue
-        # Decide whether this row is a header. Heuristic: if any cell name
-        # in this row case-insensitively equals 'note' AND every cell is a
-        # short non-prose label, treat as header. Conservative: just check
-        # for 'Note' cell.
-        if any(c.strip().lower() == "note" for c in cells):
-            note_columns = {i for i, c in enumerate(cells)
-                            if c.strip().lower() == "note"}
+        lowered = [c.strip().lower() for c in cells]
+        # Header detection: a 'Note' label column, or a 'Field | Value'
+        # key-value header whose Value column is a prose/value column by
+        # design (same rationale as Note — not a terse-label column).
+        if "note" in lowered or lowered == ["field", "value"]:
+            prose_columns = {i for i, c in enumerate(lowered)
+                             if c in ("note", "value")}
             continue
-        # Data row — apply word budget to non-Note columns
+        # Data row — apply word budget to non-prose columns
         for i, cell in enumerate(cells):
-            if i in note_columns:
+            if i in prose_columns:
                 continue
             stripped = re.sub(r"\[`[^`]+`\]", "", cell)
             stripped = re.sub(r"[*_`]", "", stripped)
