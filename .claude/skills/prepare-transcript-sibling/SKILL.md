@@ -20,6 +20,21 @@ allowed-tools:
 Target transcript: **$ARGUMENTS** — the slug used by the existing auto-caption
 file at `sources/transcripts/{slug}*.{txt,md}`. Ask the user if empty.
 
+**Source timestamp format — check before parsing.** The source transcript's
+inline `[…]` timestamps must be the corpus-canonical grammar:
+**un-padded leading field**, `[M:SS]` under an hour, `[H:MM:SS]` at/over an
+hour (`scripts/tools/transcribe.py::format_timestamp` is the reference) —
+never zero-padded `[MM:SS]` / `[HH:MM:SS]`. YouTube captions via
+`transcribe.py` already conform; a transcript produced by another path (an
+external **Whisper** run for a non-YouTube source — the common case here —
+or a different downloader) must be normalized to this format *before* it
+lands in `sources/transcripts/`, because the producer's `line_range` parse
+and every downstream quote `[MM:SS]` anchor mirror the source verbatim.
+Three legacy files (`lucistrust-rending-veils-ryder-2017`, `nell-salt-2024`,
+`nell-sol-foundation-2023`) predate this convention and zero-pad; they are
+grandfathered — do not retro-edit them (their timestamps are baked into
+machine-computed `source_content_hash` + research-artifact anchors).
+
 A label-less transcript (manifest `transcript_provenance: auto-caption` /
 `human-corrected-caption` without inline speaker labels) carries the verbatim
 text but **no built-in speaker attribution**: `speaker_id` on transcript-
