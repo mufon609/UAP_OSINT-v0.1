@@ -736,7 +736,6 @@ program_involvement:
   role: 'Cofounder (per Targ''s ESP Research site self-attestation); co-author of the 1974 Nature paper and the 1975 Stanford Research Institute Final Report "Perceptual Augmentation Techniques: Part Two — Research Report" that anchor the program''s peer-reviewed and SRI-internal primary-source record'
   period_start: '1972'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: '¶ "In April of 1972, Targ met"'
@@ -748,7 +747,6 @@ program_involvement:
   period_start: '1991'
   period_end: '1997'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: "author byline"
@@ -760,7 +758,6 @@ program_involvement:
   period_start: '1983'
   period_end: '1984'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶2'
@@ -772,7 +769,6 @@ program_involvement:
   period_start: '1972-08'
   period_end: '1975'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: '¶ "For a cost of $874, one OTS"'

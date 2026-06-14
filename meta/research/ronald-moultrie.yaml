@@ -340,7 +340,6 @@ program_involvement:
   program: All-domain Anomaly Resolution Office (AARO)
   role: Cognizant senior advisor at AARO establishment (July 20 2022); selected Sean Kirkpatrick as inaugural Director; chaired AARO Executive Council across most of Kirkpatrick's directorship; reporting chain transitioned from OUSD(I&S) to Deputy Secretary of Defense in late July 2023
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2022-07-20'
   period_end: '2024-02-29'
   source:
@@ -351,7 +350,6 @@ program_involvement:
   program: Defense Intelligence and Security Enterprise oversight
   role: Principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; exercised authority, direction, and control over NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2021-06-01'
   period_end: '2024-02-29'
   source:
@@ -362,7 +360,6 @@ program_involvement:
   program: Director of Defense Intelligence (dual-hat ODNI role)
   role: Reported to the Director of National Intelligence in this capacity
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2021-06-01'
   period_end: '2024-02-29'
   source:
@@ -373,7 +370,6 @@ program_involvement:
   program: NSA Director of Operations
   role: Final pre-retirement role at NSA; retired from the DoD in 2015 as NSA's Director of Operations
   evidentiary_basis: primary-source
-  confidence: high
   period_end: '2015'
   source:
     path: government/wargov-moultrie-biography.html
@@ -383,7 +379,6 @@ program_involvement:
   program: CIA Senior Intelligence Service / Directorate of Science & Technology
   role: Senior member of the CIA Senior Intelligence Service (SIS) responsible for a major office within the Directorate of Science & Technology
   evidentiary_basis: primary-source
-  confidence: high
   source:
     path: government/wargov-moultrie-biography.html
     location: ¶ Mr. Moultrie's previous NIC roles
@@ -392,7 +387,6 @@ program_involvement:
   program: Department of the Navy Comprehensive Cybersecurity Review
   role: Senior Advisor to the Secretary of the Navy; led the crafting of a digital roadmap to better optimize the Department's focus on cybersecurity, data analytics and infrastructure, and emerging technologies such as AI/Machine Learning, 5 and 6G, and Quantum computing
   evidentiary_basis: primary-source
-  confidence: high
   source:
     path: government/wargov-moultrie-biography.html
     location: ¶ More recently, Mr. Moultrie was a Senior Advisor
@@ -401,7 +395,6 @@ program_involvement:
   program: President's Intelligence Advisory Board (PIAB) and President's Intelligence Oversight Board (IOB)
   role: Appointed Board Member; served until January 2025
   evidentiary_basis: primary-source
-  confidence: high
   period_end: '2025-01'
   source:
     path: news/umd-moultrie-faculty-bio.html

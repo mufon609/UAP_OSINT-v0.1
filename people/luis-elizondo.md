@@ -235,13 +235,13 @@ _Direct observation._
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| Director of National Intelligence integration role (pre-AATIP) | civilian intelligence official; integration of national-level intelligence into state/local/tribal law enforcement post-9/11 | 2008 – 2009 | self-attested | medium | transcripts/jre-2194-elizondo-2024-downloaded.md |
-| [`/organizations/aatip`] | senior ranking person (per QFR Q1 self-attestation); Counter Intelligence and security lead at recruitment per JRE #2194 | 2009 – 2017-10 | sworn-testimony | high | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
-| [`/organizations/aatip`] | led the Pentagon UAP investigation effort until October 2017 (per NYT 2017 third-party reporting) | 2009 – 2017-10 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
-| [`/organizations/aawsap`] | institutional adjacency to AAWSAP via overlapping AATIP context; per QFR Q1, AAWSAP/AATIP custody-of-material question was a joint matter; per QFR Q11, $22M figure described as the AAWSAP/AATIP funding | 2009 – 2017-10 | sworn-testimony | medium | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
-| [`/organizations/ttsa`] | post-resignation co-founder / public-figure association per NYT December 16, 2017 | 2017 | secondary | high | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| Director of National Intelligence integration role (pre-AATIP) | civilian intelligence official; integration of national-level intelligence into state/local/tribal law enforcement post-9/11 | 2008 – 2009 | self-attested | transcripts/jre-2194-elizondo-2024-downloaded.md |
+| [`/organizations/aatip`] | senior ranking person (per QFR Q1 self-attestation); Counter Intelligence and security lead at recruitment per JRE #2194 | 2009 – 2017-10 | sworn-testimony | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| [`/organizations/aatip`] | led the Pentagon UAP investigation effort until October 2017 (per NYT 2017 third-party reporting) | 2009 – 2017-10 | secondary | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
+| [`/organizations/aawsap`] | institutional adjacency to AAWSAP via overlapping AATIP context; per QFR Q1, AAWSAP/AATIP custody-of-material question was a joint matter; per QFR Q11, $22M figure described as the AAWSAP/AATIP funding | 2009 – 2017-10 | sworn-testimony | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| [`/organizations/ttsa`] | post-resignation co-founder / public-figure association per NYT December 16, 2017 | 2017 | secondary | news/nyt-glowing-auras-pentagon-ufo-20171216.html |
 
 ---
 

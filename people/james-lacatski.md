@@ -458,11 +458,11 @@ Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and ge
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| AAWSAP — Advanced Aerospace Weapon System Applications Program ([`/organizations/aawsap`]) | Program Manager / Director (Defense Warning Office, DIA) | 2008-09 – 2016 | primary-source | high | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf |
-| SD004 Page-1 DOPSR-Cleared Statement (entered into 2024-11-13 House Oversight UAP hearing record) | Author of the September 6, 2023 DOPSR-cleared statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder | 2023-09-06 | sworn-testimony | high | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
-| Kona Blue Program (KBP) ([`/organizations/kona-blue`]) | Creator and DIA program manager (the follow-on program to AAWSAP) |  | on-record | medium | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| AAWSAP — Advanced Aerospace Weapon System Applications Program ([`/organizations/aawsap`]) | Program Manager / Director (Defense Warning Office, DIA) | 2008-09 – 2016 | primary-source | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf |
+| SD004 Page-1 DOPSR-Cleared Statement (entered into 2024-11-13 House Oversight UAP hearing record) | Author of the September 6, 2023 DOPSR-cleared statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder | 2023-09-06 | sworn-testimony | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |
+| Kona Blue Program (KBP) ([`/organizations/kona-blue`]) | Creator and DIA program manager (the follow-on program to AAWSAP) |  | on-record | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md |
 
 ---
 

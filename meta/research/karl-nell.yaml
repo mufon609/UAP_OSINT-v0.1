@@ -274,7 +274,6 @@ program_involvement:
   period_start: '2021'
   period_end: '2022'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: news/thedebrief-grusch-2023.html
     location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'

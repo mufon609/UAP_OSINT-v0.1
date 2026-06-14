@@ -299,10 +299,10 @@ def render_program_involvement(artifact):
         fallback_key="period_end",
     )
     lines = ["## Program Involvement", "",
-             "| Program | Role | Period | Evidentiary Basis | Confidence | Source |",
-             "|---|---|---|---|---|---|"]
+             "| Program | Role | Period | Evidentiary Basis | Source |",
+             "|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -314,7 +314,6 @@ def render_program_involvement(artifact):
             f"{e.get('role') or ''} | "
             f"{period} | "
             f"{e.get('evidentiary_basis') or ''} | "
-            f"{e.get('confidence') or ''} | "
             f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"

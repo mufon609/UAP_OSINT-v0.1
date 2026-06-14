@@ -308,11 +308,11 @@ _Direct observation._
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| CIA-sponsored Stanford Research Institute parapsychology investigation | Test subject | 1972-12 – 1973-08 | primary-source | high | government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf |
-| FBI / CIA post-SRI collaboration (self-attested per biography) | Per biography ¶9, work that has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty |  | self-attested | low | news/urigeller-com-biography-20260516.html |
-| US Senate / National Security Executives Capitol Building briefing | Briefer — addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington per biography ¶10 |  | self-attested | low | news/urigeller-com-biography-20260516.html |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| CIA-sponsored Stanford Research Institute parapsychology investigation | Test subject | 1972-12 – 1973-08 | primary-source | government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf |
+| FBI / CIA post-SRI collaboration (self-attested per biography) | Per biography ¶9, work that has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty |  | self-attested | news/urigeller-com-biography-20260516.html |
+| US Senate / National Security Executives Capitol Building briefing | Briefer — addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington per biography ¶10 |  | self-attested | news/urigeller-com-biography-20260516.html |
 
 ---
 

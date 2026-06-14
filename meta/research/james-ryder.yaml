@@ -604,7 +604,6 @@ program_involvement:
     period_start: '2005-05'
     period_end: '2011-02'
     evidentiary_basis: primary-source
-    confidence: high
     source:
       path: news/ivsci-leadership-snapshot.html
       location: '¶3'
@@ -615,7 +614,6 @@ program_involvement:
     period_start: '2011'
     period_end: '2011'
     evidentiary_basis: on-record
-    confidence: medium
     source:
       path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
       location: 'top-right corner stamp'
@@ -624,7 +622,6 @@ program_involvement:
     program: 'UAP SAP Federation gatekeeper (per Knapp 2025-09-09 sworn testimony)'
     role: 'Specific gatekeeper at Lockheed within the root cell of the UAP SAP Federation'
     evidentiary_basis: sworn-testimony
-    confidence: low
     source:
       path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
       location: '[2:02:14]'
@@ -634,7 +631,6 @@ program_involvement:
     role: 'Founder and Chairman of the Board'
     period_end: '2018-05'
     evidentiary_basis: primary-source
-    confidence: high
     source:
       path: news/cyclostationarity-gardner-biography-snapshot.html
       location: '¶3'
@@ -643,7 +639,6 @@ program_involvement:
     program: 'SAFIRE Project Science Review Team'
     role: 'Science Review Team member (alongside Hal Puthoff, Eric W. Davis, William A. Gardner)'
     evidentiary_basis: primary-source
-    confidence: high
     source:
       path: news/safireproject-team-snapshot.html
       location: '¶4'

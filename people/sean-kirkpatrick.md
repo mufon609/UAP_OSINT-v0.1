@@ -532,16 +532,16 @@ _Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI) | Department of Defense's counterpart to the National Intelligence Manager for Science and Technology | 2012 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| Joint Interagency Combined Space Operations Center (now National Space Defense Center) | Special assignment to Principal Deputy Director of National Intelligence leading IC support | 2015 – 2016 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| U.S. Strategic Command (Deputy Director of Intelligence) | Deputy Director of Intelligence | 2016 – 2017 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| National Security Council | Director, National Security Strategy | 2017 – 2018 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| USSPACECOM Intelligence Enterprise | Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led) | 2019 – 2021 | primary-source | high | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| All-domain Anomaly Resolution Office (AARO) | Inaugural Director | 2022-07-20 – 2023-12-01 | primary-source | high | government/defense-gov-kirkpatrick-departure-20231120.html |
-| ORNL National Security Sciences Directorate | Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs | 2023-12 | primary-source | high | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |
-| NSSA Moorman Center for Space Studies | Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers | 2024 | primary-source | high | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI) | Department of Defense's counterpart to the National Intelligence Manager for Science and Technology | 2012 – 2016 | primary-source | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| Joint Interagency Combined Space Operations Center (now National Space Defense Center) | Special assignment to Principal Deputy Director of National Intelligence leading IC support | 2015 – 2016 | primary-source | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| U.S. Strategic Command (Deputy Director of Intelligence) | Deputy Director of Intelligence | 2016 – 2017 | primary-source | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| National Security Council | Director, National Security Strategy | 2017 – 2018 | primary-source | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| USSPACECOM Intelligence Enterprise | Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led) | 2019 – 2021 | primary-source | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| All-domain Anomaly Resolution Office (AARO) | Inaugural Director | 2022-07-20 – 2023-12-01 | primary-source | government/defense-gov-kirkpatrick-departure-20231120.html |
+| ORNL National Security Sciences Directorate | Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs | 2023-12 | primary-source | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |
+| NSSA Moorman Center for Space Studies | Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers | 2024 | primary-source | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |
 
 ---
 

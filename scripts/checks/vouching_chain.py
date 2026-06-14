@@ -1,18 +1,15 @@
 """vouching-chain check — archetype-conditional research-artifact check.
 
 Present on whistleblower person artifacts. Each entry: required
-{voucher_path, attestation, source}, optional {evidentiary_basis,
-confidence}.
+{voucher_path, attestation, source}, optional {evidentiary_basis}.
 
-Closed enums shared with ``program_involvement`` (the toolkit's
+Closed enum shared with ``program_involvement`` (the toolkit's
 common evidentiary-quality classification across credibility-
 attestation cross-references):
 
   - ``evidentiary_basis``: {primary-source, sworn-testimony,
     on-record, self-attested, secondary} — categorizes how the
     voucher knows what they're attesting.
-  - ``confidence``: {high, medium, low} — contributor's evidentiary
-    confidence in the vouching.
 
 Vouching Chain renders as a standalone ``## Vouching Chain`` H2
 section between Credibility Notes and Associated Nodes (see
@@ -42,11 +39,10 @@ def check(ctx):
     if "vouching_chain" not in ctx.data:
         return
 
-    # Shared research-artifact-level enums (also consumed by
+    # Shared research-artifact-level enum (also consumed by
     # program_involvement).
     research_artifact = ctx.schema["types"]["research-artifact"]
     valid_evidentiary_basis = research_artifact["evidentiary_basis_values"]
-    valid_confidence = research_artifact["confidence_values"]
 
     items = entries(ctx.data, "vouching_chain")
     yield from check_unique_ids(ctx.rel, items, "vouching_chain", CHECK_NAME)
@@ -76,14 +72,6 @@ def check(ctx):
                 ctx.rel, "error",
                 f"vouching_chain[{i}] ({e.get('id')!r}): "
                 f"evidentiary_basis {eb!r} not in {sorted(valid_evidentiary_basis)}",
-                check_name=CHECK_NAME,
-            )
-        conf = e.get("confidence")
-        if conf and conf not in valid_confidence:
-            yield Issue(
-                ctx.rel, "error",
-                f"vouching_chain[{i}] ({e.get('id')!r}): "
-                f"confidence {conf!r} not in {sorted(valid_confidence)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

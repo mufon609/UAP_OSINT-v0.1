@@ -350,7 +350,6 @@ program_involvement:
   program: All-domain Anomaly Resolution Office (AARO)
   role: Inaugural Director
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2022-07-20'
   period_end: '2023-12-01'
   source:
@@ -361,7 +360,6 @@ program_involvement:
   program: USSPACECOM Intelligence Enterprise
   role: Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led)
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2019'
   period_end: '2021'
   source:
@@ -372,7 +370,6 @@ program_involvement:
   program: Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI)
   role: Department of Defense's counterpart to the National Intelligence Manager for Science and Technology
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2012'
   period_end: '2016'
   source:
@@ -383,7 +380,6 @@ program_involvement:
   program: Joint Interagency Combined Space Operations Center (now National Space Defense Center)
   role: Special assignment to Principal Deputy Director of National Intelligence leading IC support
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2015'
   period_end: '2016'
   source:
@@ -394,7 +390,6 @@ program_involvement:
   program: U.S. Strategic Command (Deputy Director of Intelligence)
   role: Deputy Director of Intelligence
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2016'
   period_end: '2017'
   source:
@@ -405,7 +400,6 @@ program_involvement:
   program: National Security Council
   role: Director, National Security Strategy
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2017'
   period_end: '2018'
   source:
@@ -416,7 +410,6 @@ program_involvement:
   program: ORNL National Security Sciences Directorate
   role: Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2023-12'
   source:
     path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
@@ -426,7 +419,6 @@ program_involvement:
   program: NSSA Moorman Center for Space Studies
   role: Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2024'
   source:
     path: news/nssa-shelton-kirkpatrick-sda-20241105.pdf

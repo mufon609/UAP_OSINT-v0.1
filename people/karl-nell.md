@@ -180,9 +180,9 @@ Karl Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | high | news/thedebrief-grusch-2023.html |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| [`/organizations/uaptf`] | Army director / Army liaison | 2021 – 2022 | primary-source | news/thedebrief-grusch-2023.html |
 
 ---
 

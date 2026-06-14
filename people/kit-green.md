@@ -182,13 +182,13 @@ _Direct observation._
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| CIA SRI parapsychology investigation (precursor program to Stargate) | OSI / LSD-OSI program officer at the SRI-CIA engagement inception | 1972-06-27 – 1973-11-09 | primary-source | high | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
-| Fugal-era Skinwalker Ranch project (post-2016) | Scientific consultant | 2016 | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html |
-| CIA Remote Viewing research program | First analyst and program manager (IRVA self-attested) |  | self-attested | medium | news/irva-kit-green-wayback-20241212.html |
-| AAWSAP (Advanced Aerospace Weapon System Applications Program) | Scientific consultant (Vice-attested) |  | on-record | medium | news/vice-fugal-skinwalker-owner-20200310.html |
-| CIA biological terrorism and chemical warfare intelligence | CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances |  | on-record | medium | news/pbs-umbrella-assassin-green-interview-20260517.html |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| CIA SRI parapsychology investigation (precursor program to Stargate) | OSI / LSD-OSI program officer at the SRI-CIA engagement inception | 1972-06-27 – 1973-11-09 | primary-source | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |
+| Fugal-era Skinwalker Ranch project (post-2016) | Scientific consultant | 2016 | on-record | news/vice-fugal-skinwalker-owner-20200310.html |
+| CIA Remote Viewing research program | First analyst and program manager (IRVA self-attested) |  | self-attested | news/irva-kit-green-wayback-20241212.html |
+| AAWSAP (Advanced Aerospace Weapon System Applications Program) | Scientific consultant (Vice-attested) |  | on-record | news/vice-fugal-skinwalker-owner-20200310.html |
+| CIA biological terrorism and chemical warfare intelligence | CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances |  | on-record | news/pbs-umbrella-assassin-green-interview-20260517.html |
 
 ---
 

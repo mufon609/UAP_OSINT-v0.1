@@ -11,11 +11,11 @@ path_prefix: meta/research/
 format: yaml
 
 # Closed-enum values for the artifact itself. ``status_values`` covers
-# the artifact's own ``status`` field. ``evidentiary_basis_values`` and
-# ``confidence_values`` are shared classifications used by both
-# ``program_involvement_entry`` and ``vouching_chain_entry`` — declared
-# once here so the two consumers read from a single source rather than
-# duplicating the lists in each entry definition.
+# the artifact's own ``status`` field. ``evidentiary_basis_values`` is a
+# shared classification used by both ``program_involvement_entry`` and
+# ``vouching_chain_entry`` — declared once here so the two consumers read
+# from a single source rather than duplicating the list in each entry
+# definition.
 status_values: [active, archived]
 evidentiary_basis_values:
   - primary-source
@@ -23,7 +23,6 @@ evidentiary_basis_values:
   - on-record
   - self-attested
   - secondary
-confidence_values: [high, medium, low]
 # Sentinel values permitted for ``cited_works`` on document artifacts in
 # place of an entry list. ``NONE`` affirms the source carries no
 # reference list; ``IGNORED`` affirms the source HAS one but the
@@ -757,7 +756,7 @@ corroboration_entry:
   #   as the "What It Confirms" column of the Corroboration table
 
 program_involvement_entry:
-  required: [program, role, evidentiary_basis, confidence, source]
+  required: [program, role, evidentiary_basis, source]
   optional: [period_start, period_end]
   # program: program name (free-text or /organizations/... path)
   # role: the person's role in the program
@@ -771,7 +770,6 @@ program_involvement_entry:
   #                    top_scope_activity_entry).
   # evidentiary_basis: primary-source / sworn-testimony / on-record /
   #                    self-attested / secondary
-  # confidence: high | medium | low
   # source: object with path + location
 
 publication_record_entry:
@@ -786,7 +784,7 @@ publication_record_entry:
 
 vouching_chain_entry:
   required: [voucher_path, attestation, source]
-  optional: [evidentiary_basis, confidence]
+  optional: [evidentiary_basis]
   # voucher_path: /people/... or /organizations/... of the voucher
   # attestation: verbatim or paraphrased statement of vouching.
   #   When the attestation is a verbatim quote, the contributor may
@@ -794,7 +792,7 @@ vouching_chain_entry:
   #   person's own research artifact and link to that person node
   #   here via voucher_path.
   # source: object with path + location
-  # evidentiary_basis / confidence: same vocabulary as program_involvement
+  # evidentiary_basis: same vocabulary as program_involvement
 
 affiliation_entry:
   required: [organization_path, role, source]
@@ -1231,7 +1229,7 @@ invariants:
   # vocabularies). Listed here for at-a-glance discovery; the
   # ``*_values`` lists on each ``*_entry`` definition (and on the
   # research-artifact root for ``status_values`` /
-  # ``evidentiary_basis_values`` / ``confidence_values``) are what
+  # ``evidentiary_basis_values``) are what
   # the validator actually reads.
   - "research-artifact.status: status_values (active | archived)"
   - "quote_entry.observation_type: quote_entry.observation_type_values"
@@ -1243,7 +1241,6 @@ invariants:
   - "naming_quirk_entry.resolution: naming_quirk_entry.resolution_values"
   - "media_versioning_entry.aspect: media_versioning_entry.aspect_values (warn on unknown; ``other`` permitted)"
   - "program_involvement_entry.evidentiary_basis + vouching_chain_entry.evidentiary_basis: research-artifact.evidentiary_basis_values"
-  - "program_involvement_entry.confidence + vouching_chain_entry.confidence: research-artifact.confidence_values"
 
   # Other field-shape rules
   - "context (quotes) required on person artifacts; optional on document / transcript / media"

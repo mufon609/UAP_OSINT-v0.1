@@ -263,7 +263,6 @@ program_involvement:
   program: AARO Public Affairs portfolio at OSD(PA)
   role: Department of Defense Public Affairs spokesperson with the AARO portfolio
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '2022-06'
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf

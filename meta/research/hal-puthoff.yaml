@@ -641,7 +641,6 @@ program_involvement:
   role: 'Head of the SRI investigation per the 1993 DIA STAR GATE Project Overview (Appendix B 1984 internal review: ''a small group headed by Dr. H. Puthoff''); co-investigator with Russell Targ; co-author of the 1974 Nature paper and the 1975 SRI Final Report ''Perceptual Augmentation Techniques: Part Two''.'
   period_start: '1972-04'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. B-2'
@@ -653,7 +652,6 @@ program_involvement:
   period_start: '1972-08'
   period_end: '1975'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: '¶ "For a cost of $874, one OTS"'
@@ -663,7 +661,6 @@ program_involvement:
   program: 'Advanced Aerospace Threat Identification Program (AATIP)'
   role: 'Former Senior Advisor and Subcontractor (per the 2018-07-26 TTSA ADAM Research Project announcement) and contractor for the program (per the 2017-12-16 NYT article)'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: news/ttsa-blog-adam-research-project-intro-20180727.html
     location: '¶ on TTSA-EarthTech ADAM contract'
@@ -674,7 +671,6 @@ program_involvement:
   role: 'Project leader (per the 2018-07-26 TTSA blog post: ''Under the leadership of Dr. Harold E. Puthoff''); also continues in the role of VP of Technology for TTS Academy at the time of the announcement'
   period_start: '2018-07-26'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: news/ttsa-blog-adam-research-project-intro-20180727.html
     location: '¶ on TTSA-EarthTech ADAM contract'
@@ -686,7 +682,6 @@ program_involvement:
   period_start: '2010-03-29'
   period_end: '2010-03-29'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: 'title-page identity block'
@@ -698,7 +693,6 @@ program_involvement:
   period_start: '2010-04-06'
   period_end: '2010-04-06'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
     location: 'title-page identity block'

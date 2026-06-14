@@ -297,7 +297,6 @@ program_involvement:
   period_start: '1972-06-27'
   period_end: '1973-11-09'
   evidentiary_basis: 'primary-source'
-  confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'footnotes (Puthoff letter to K. Green/OSI; K. Green LSD/OSI Memorandum for the Record)'
@@ -307,7 +306,6 @@ program_involvement:
   program: 'CIA Remote Viewing research program'
   role: 'First analyst and program manager (IRVA self-attested)'
   evidentiary_basis: 'self-attested'
-  confidence: 'medium'
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶2'
@@ -317,7 +315,6 @@ program_involvement:
   program: 'AAWSAP (Advanced Aerospace Weapon System Applications Program)'
   role: 'Scientific consultant (Vice-attested)'
   evidentiary_basis: 'on-record'
-  confidence: 'medium'
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
@@ -327,7 +324,6 @@ program_involvement:
   program: 'CIA biological terrorism and chemical warfare intelligence'
   role: 'CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances'
   evidentiary_basis: 'on-record'
-  confidence: 'medium'
   source:
     path: news/pbs-umbrella-assassin-green-interview-20260517.html
     location: '¶4 (narrator-authored)'
@@ -338,7 +334,6 @@ program_involvement:
   role: 'Scientific consultant'
   period_start: '2016'
   evidentiary_basis: 'on-record'
-  confidence: 'medium'
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
@@ -351,7 +346,6 @@ affiliations:
   role: 'Senior Division Analyst for neurosciences; later Branch Chief; Deputy Division Director; Assistant National Intelligence Officer for Science and Technology'
   period_start: '1969'
   period_end: '1985'
-  confidence: confirmed
   source:
     path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
     location: 'Appendix A, Christopher C. Green entry'
@@ -362,7 +356,6 @@ affiliations:
   role: 'Head of Life, Materials and Environmental Sciences / Biomedical Sciences Research; Executive Director Technology Intelligence / Global Technology Policy / Materials and Environmental Sciences Lab; Chief Technology Officer GM Asia Pacific Operations'
   period_start: '1985'
   period_end: '2004'
-  confidence: confirmed
   source:
     path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
     location: 'Appendix A, Christopher C. Green entry'
@@ -372,7 +365,6 @@ affiliations:
   organization_path: /organizations/wayne-state-school-of-medicine
   role: 'Faculty member; Professor in Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences; later Assistant Dean (Asia Pacific) — preceded by executive director for emergent technology research for the SOM/DMC per NCBI (q5)'
   period_start: '2002'
-  confidence: confirmed
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
@@ -382,7 +374,6 @@ affiliations:
   organization_path: /organizations/national-academies
   role: 'Founder of NRC Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER); Chair of 2008 Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research; Chair of the Board on Army Science and Technology; Lifetime National Associate'
   period_start: '1985'
-  confidence: confirmed
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
@@ -391,7 +382,6 @@ affiliations:
   added_date: '2026-05-17'
   organization_path: /organizations/chinese-academy-of-sciences
   role: 'Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science'
-  confidence: confirmed
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶1'
@@ -400,7 +390,6 @@ affiliations:
   added_date: '2026-05-17'
   organization_path: /organizations/us-army
   role: 'Chair, Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters'
-  confidence: confirmed
   source:
     path: news/irva-kit-green-wayback-20241212.html
     location: '¶3'
@@ -411,7 +400,6 @@ relationships:
   added_date: '2026-05-17'
   person_path: /people/hal-puthoff
   relationship: 'CIA OSI program officer (Green) and SRI parapsychology cofounder (Puthoff) at the 1972-1973 SRI-CIA engagement inception; later co-consultants on Bigelow AAWSAP and Fugal Skinwalker projects'
-  confidence: confirmed
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
@@ -420,7 +408,6 @@ relationships:
   added_date: '2026-05-17'
   person_path: /people/russell-targ
   relationship: 'CIA OSI program officer (Green) and SRI parapsychology cofounder (Targ) at the 1972-1973 SRI-CIA engagement inception'
-  confidence: confirmed
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'footnotes (q1, q2) + body narrative ¶ "In April of 1972, Targ met"'
@@ -429,7 +416,6 @@ relationships:
   added_date: '2026-05-17'
   person_path: /people/robert-bigelow
   relationship: 'Bigelow''s AAWSAP DIA-funded project participant per Vice 2020 (q7)'
-  confidence: confirmed
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'
@@ -438,7 +424,6 @@ relationships:
   added_date: '2026-05-17'
   person_path: /people/brandon-fugal
   relationship: 'Scientific consultant on Fugal''s post-2016 Skinwalker Ranch project; Fugal-Green friendship attested post-shutdown'
-  confidence: confirmed
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: '¶49'

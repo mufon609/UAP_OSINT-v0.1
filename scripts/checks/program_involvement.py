@@ -1,18 +1,16 @@
 """program-involvement check — archetype-conditional research-artifact check.
 
 Present on institutional-actor person artifacts. Each entry: required
-{program, role, evidentiary_basis, confidence, source}, optional
+{program, role, evidentiary_basis, source}, optional
 {period_start, period_end}.
 
-Closed enums shared with ``vouching_chain`` (the toolkit's common
+Closed enum shared with ``vouching_chain`` (the toolkit's common
 evidentiary-quality classification, applied wherever a credibility-
 attestation cross-reference exists):
 
   - ``evidentiary_basis``: {primary-source, sworn-testimony,
     on-record, self-attested, secondary} — classifies how the
     contributor knows about the program involvement.
-  - ``confidence``: {high, medium, low} — contributor's evidentiary
-    confidence in the involvement record.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
@@ -37,12 +35,10 @@ def check(ctx):
     if "program_involvement" not in ctx.data:
         return
 
-    # ``evidentiary_basis_values`` and ``confidence_values`` are
-    # research-artifact-level shared classifications (also consumed by
-    # vouching_chain).
+    # ``evidentiary_basis_values`` is a research-artifact-level shared
+    # classification (also consumed by vouching_chain).
     research_artifact = ctx.schema["types"]["research-artifact"]
     valid_evidentiary_basis = research_artifact["evidentiary_basis_values"]
-    valid_confidence = research_artifact["confidence_values"]
 
     items = entries(ctx.data, "program_involvement")
     yield from check_unique_ids(ctx.rel, items, "program_involvement", CHECK_NAME)
@@ -50,7 +46,7 @@ def check(ctx):
         if not isinstance(e, dict):
             continue
         yield from check_lifecycle_fields(ctx.rel, e, "program_involvement", i, CHECK_NAME)
-        for field in ("program", "role", "evidentiary_basis", "confidence"):
+        for field in ("program", "role", "evidentiary_basis"):
             if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
@@ -64,14 +60,6 @@ def check(ctx):
                 ctx.rel, "error",
                 f"program_involvement[{i}] ({e.get('id')!r}): "
                 f"evidentiary_basis {eb!r} not in {sorted(valid_evidentiary_basis)}",
-                check_name=CHECK_NAME,
-            )
-        conf = e.get("confidence")
-        if conf and conf not in valid_confidence:
-            yield Issue(
-                ctx.rel, "error",
-                f"program_involvement[{i}] ({e.get('id')!r}): "
-                f"confidence {conf!r} not in {sorted(valid_confidence)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

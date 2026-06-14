@@ -303,13 +303,13 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| Lockheed Martin Advanced Technology Center (now STAR) | Head — leading the Advanced Technology Center for Lockheed Martin Space Systems Company and the parent Lockheed Martin Corporation | 2005-05 – 2011-02 | primary-source | high | news/ivsci-leadership-snapshot.html |
-| AAWSAP UAP material divestment plan (alleged) | Lockheed Martin Space Systems Vice President proposing the divestment | 2011 – 2011 | on-record | medium | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
-| International Science Foundation (ISF) | Founder and Chairman of the Board | – 2018-05 | primary-source | high | news/cyclostationarity-gardner-biography-snapshot.html |
-| UAP SAP Federation gatekeeper (per Knapp 2025-09-09 sworn testimony) | Specific gatekeeper at Lockheed within the root cell of the UAP SAP Federation |  | sworn-testimony | low | transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt |
-| SAFIRE Project Science Review Team | Science Review Team member (alongside Hal Puthoff, Eric W. Davis, William A. Gardner) |  | primary-source | high | news/safireproject-team-snapshot.html |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| Lockheed Martin Advanced Technology Center (now STAR) | Head — leading the Advanced Technology Center for Lockheed Martin Space Systems Company and the parent Lockheed Martin Corporation | 2005-05 – 2011-02 | primary-source | news/ivsci-leadership-snapshot.html |
+| AAWSAP UAP material divestment plan (alleged) | Lockheed Martin Space Systems Vice President proposing the divestment | 2011 – 2011 | on-record | government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf |
+| International Science Foundation (ISF) | Founder and Chairman of the Board | – 2018-05 | primary-source | news/cyclostationarity-gardner-biography-snapshot.html |
+| UAP SAP Federation gatekeeper (per Knapp 2025-09-09 sworn testimony) | Specific gatekeeper at Lockheed within the root cell of the UAP SAP Federation |  | sworn-testimony | transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt |
+| SAFIRE Project Science Review Team | Science Review Team member (alongside Hal Puthoff, Eric W. Davis, William A. Gardner) |  | primary-source | news/safireproject-team-snapshot.html |
 
 ---
 

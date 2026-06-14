@@ -111,9 +111,9 @@ Holly leads a staff to oversee the development of strategy, policy, plans, and g
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| Influence and Perception Management Office (IPMO) directorship | First Acting Director; leads a staff overseeing development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | primary-source | high | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| Influence and Perception Management Office (IPMO) directorship | First Acting Director; leads a staff overseeing development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities | 2022-03 | primary-source | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |
 
 ---
 

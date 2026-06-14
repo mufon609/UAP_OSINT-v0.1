@@ -2431,7 +2431,6 @@ vouching_chain:
     path: news/thedebrief-grusch-2023.html
     location: paragraph beginning "Karl E. Nell, a recently retired Army Colonel"
   evidentiary_basis: primary-source
-  confidence: high
 - id: vc2
   added_date: '2026-04-22'
   voucher_path: /people/karl-nell
@@ -2442,7 +2441,6 @@ vouching_chain:
     path: news/thedebrief-grusch-2023.html
     location: paragraph beginning '"His assertion concerning the existence of a terrestrial arms race"'
   evidentiary_basis: primary-source
-  confidence: high
 - id: vc3
   added_date: '2026-04-22'
   voucher_path: /people/tim-burchett
@@ -2453,7 +2451,6 @@ vouching_chain:
     path: government/burchett-house-gov-post-hearing-statement-20230726.html
     location: body-content paragraph beginning '"I think it went really well"'
   evidentiary_basis: on-record
-  confidence: high
 - id: vc4
   added_date: '2026-04-22'
   voucher_path: /people/tim-burchett
@@ -2464,7 +2461,6 @@ vouching_chain:
     path: news/newsnation-burchett-sickening-grusch-202308.html
     location: paragraph beginning '"It doesn't matter," Rep. Tim Burchett'
   evidentiary_basis: on-record
-  confidence: high
 - id: vc5
   added_date: '2026-04-22'
   voucher_path: /people/tim-burchett
@@ -2475,7 +2471,6 @@ vouching_chain:
     path: news/newsnation-burchett-sickening-grusch-202308.html
     location: paragraph beginning '"This man served his country"'
   evidentiary_basis: on-record
-  confidence: high
 - id: vc6
   added_date: '2026-04-22'
   voucher_path: /people/eric-burlison
@@ -2486,7 +2481,6 @@ vouching_chain:
     path: government/burlison-house-gov-grusch-advisor-20250327.html
     location: evo-press-release body paragraph beginning '"The American people deserve answers"'
   evidentiary_basis: on-record
-  confidence: high
 - id: vc7
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2497,7 +2491,6 @@ vouching_chain:
     path: news/newsnation-rubio-not-the-only-one-202306.html
     location: paragraph beginning "Rubio told NewsNation on Monday"
   evidentiary_basis: on-record
-  confidence: high
 - id: vc8
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2508,7 +2501,6 @@ vouching_chain:
     path: news/newsnation-rubio-not-the-only-one-202306.html
     location: paragraph beginning '"There are people that have come forward"'
   evidentiary_basis: on-record
-  confidence: high
 - id: vc9
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2519,7 +2511,6 @@ vouching_chain:
     path: news/newsnation-rubio-not-the-only-one-202306.html
     location: paragraph beginning "Rubio said that some of the officials"
   evidentiary_basis: on-record
-  confidence: high
 - id: vc10
   added_date: '2026-04-22'
   voucher_path: /people/marco-rubio
@@ -2530,7 +2521,6 @@ vouching_chain:
     path: news/newsnation-rubio-not-the-only-one-202306.html
     location: paragraph beginning "Rubio did not comment"
   evidentiary_basis: on-record
-  confidence: medium
 naming_quirks:
 - id: nq1
   added_date: '2026-04-24'

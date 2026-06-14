@@ -129,7 +129,6 @@ program_involvement:
   period_start: '2008-09'
   period_end: '2016'
   evidentiary_basis: primary-source
-  confidence: high
   source:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: 'Administrative Note'
@@ -138,7 +137,6 @@ program_involvement:
   program: Kona Blue Program (KBP) ([`/organizations/kona-blue`])
   role: Creator and DIA program manager (the follow-on program to AAWSAP)
   evidentiary_basis: on-record
-  confidence: medium
   source:
     path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
     location: '[2:00]–[2:22]'
@@ -148,7 +146,6 @@ program_involvement:
   role: Author of the September 6, 2023 DOPSR-cleared statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder
   period_start: '2023-09-06'
   evidentiary_basis: sworn-testimony
-  confidence: high
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: p. 2, Q1 response

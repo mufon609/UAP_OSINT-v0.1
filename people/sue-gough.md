@@ -186,9 +186,9 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
+| Program | Role | Period | Evidentiary Basis | Source |
+|---|---|---|---|---|
+| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
 
 ---
 

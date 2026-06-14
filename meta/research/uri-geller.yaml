@@ -143,7 +143,6 @@ program_involvement:
   program: CIA-sponsored Stanford Research Institute parapsychology investigation
   role: Test subject
   evidentiary_basis: primary-source
-  confidence: high
   period_start: '1972-12'
   period_end: '1973-08'
   source:
@@ -155,7 +154,6 @@ program_involvement:
   program: FBI / CIA post-SRI collaboration (self-attested per biography)
   role: Per biography ¶9, work that has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty
   evidentiary_basis: self-attested
-  confidence: low
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
@@ -165,7 +163,6 @@ program_involvement:
   program: US Senate / National Security Executives Capitol Building briefing
   role: Briefer — addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington per biography ¶10
   evidentiary_basis: self-attested
-  confidence: low
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶10"
