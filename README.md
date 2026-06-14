@@ -109,8 +109,11 @@ This README is the what-and-why. The how lives alongside it:
 
 **Source preservation.** Every cited URL is preserved two independent
 ways: a local archive under `/sources/` registered in
-`sources/manifest.yaml` (the integrity guarantee) and a Wayback Machine
-snapshot (insurance). See `meta/sources-access.md` for site-specific
+`sources/manifest.yaml` by its source URL (the integrity guarantee —
+byte-stable, and re-verifiable by anyone who re-fetches the URL) and a
+Wayback Machine snapshot (insurance). Integrity here is *reproducibility*,
+not a stored checksum: the two independent preservation paths are the
+check. See `meta/sources-access.md` for site-specific
 workarounds when a source blocks automated retrieval.
 
 ---

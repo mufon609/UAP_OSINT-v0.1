@@ -5,8 +5,8 @@ __pycache__/
 # the per-machine local overrides (settings.local.json) are ignored.
 .claude/settings.local.json
 
-# Video primary sources — kept locally per manifest entries (URL + sha256)
-# but excluded from git remote due to file-size limits. Already-tracked
+# Video primary sources — kept locally per manifest entries (source URL,
+# Wayback-backed; re-fetchable) but excluded from git remote due to file-size limits. Already-tracked
 # small videos (e.g., the 5.6 MB FLIR1 file) stay tracked because
 # gitignore does not retroactively untrack files; new additions need
 # `git add -f` to override this rule.

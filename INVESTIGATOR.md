@@ -55,6 +55,62 @@ That grounding lets you:
 
 ---
 
+## What "verified" actually means — the path from source to quote
+
+The verbatim-quote policy above rests on a specific, mechanical process.
+Knowing it exactly is what lets you trust a `✅ Confirmed` quote without
+re-checking it yourself.
+
+**1. The source is archived, not just cited.** Every cited URL is fetched
+and stored under `/sources/`, registered in `sources/manifest.yaml` by its
+source URL, and submitted to the Wayback Machine. The local copy is the
+integrity guarantee; Wayback is insurance for when the URL dies.
+
+**2. Integrity means reproducibility, not a stored hash.** The repository
+does not rely on a checksum locked in the same repo as the file it would
+protect — that proves nothing a determined editor couldn't forge alongside
+it. The guarantee is instead that the source is *re-derivable*: anyone can
+re-fetch from the manifest's source URL (or the Wayback snapshot) and
+compare it against the archived copy. The two independent preservation
+paths are the check.
+
+**3. Quotes are read from the archived bytes, never from memory.** A quote
+enters a node only after a contributor extracts it from the archived source
+text *in-session*. The verbatim-quote check then re-reads that source file
+from disk on every validation run and confirms the quote is present in it
+character-for-character. A quote that has drifted from its source — by a
+word, a digit, a negation — fails the build. The model's training knowledge
+never substitutes for the file.
+
+**4. The source is quoted warts and all.** Source artifacts — OCR errors,
+typos, mistranscriptions — are preserved verbatim and notated, never
+silently corrected (see `README.md`, "What this is"). So a `✅ Confirmed`
+quote matches the archived source *as it actually reads*, flaws included;
+the flaw is part of the record, and smoothing it would be the corruption.
+
+**5. Degraded sources are verified twice.** When a source can't be trusted
+to extract cleanly — a scanned PDF whose text layer is garbage, a transcript
+with no speaker labels — a *verified companion file* (a "sibling") is
+produced first: a clean-text transcription confirmed against independent OCR
+engines, or a speaker-attribution map confirmed against the source video.
+Quotes are drawn from that sibling, and the verbatim check then re-confirms
+the node's quote against it. The sibling is verified at creation; the node
+quote is verified against the sibling — two checks, not one, before a
+degraded source is allowed to speak.
+
+**What this does and does not guarantee.** "Verified" means *the quote is
+faithful to the archived primary source* — nothing more, nothing less. It
+does **not** mean the source is telling the truth. Whether a witness is
+credible, whether two sources agree, whether a claim is established — those
+are the reader's to weigh, which is why nodes **show and do not adjudicate**
+(`README.md`, "What this is not") and split source quality into
+`### Confirmed` / `### Flagged` rather than ruling on it. The verbatim policy
+guarantees the floor: that what you are reading is what the source actually
+said. The contributor-side mechanics — the build pipeline, the validators,
+the sibling tools — live in `CLAUDE.md` and `scripts/README.md`.
+
+---
+
 ## What it's for
 
 The structure makes a subject's own record legible and comparable:

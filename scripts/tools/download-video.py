@@ -6,8 +6,11 @@ Wraps yt-dlp with the known-good invocation discovered the hard way:
 
   --cookies-from-browser firefox     YouTube requires authenticated cookies on
                                      residential / VPN IPs. This flag reads
-                                     directly from Firefox's profile in memory;
-                                     no cookies file ever touches disk. The
+                                     directly from Firefox's profile rather than
+                                     a cookies file — this tool writes none.
+                                     (yt-dlp itself can still persist auth-bearing
+                                     cache/temp state depending on version; see the
+                                     `.gitignore` `*.part` / `*.ytdl` note.) The
                                      bare `--cookies -` form is dangerous —
                                      yt-dlp writes refreshed cookies back to
                                      the path argument, and `-` becomes a
