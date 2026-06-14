@@ -74,6 +74,7 @@ CHECK_PHASE = {
     "context_extrinsic_url": "extract",  # context_extrinsic.primary_source_url ↔ manifest entry url
     "quote_location_page": "extract",
     "location_format": "extract",  # roman / printed-folio location-ref guard
+    "anchor_resolves": "extract",  # `¶ "<phrase>"` anchor must resolve to exactly one spot
     "document_quote_source": "extract",
     "cited_works": "extract",
     "cited_works_uncaptured": "extract",

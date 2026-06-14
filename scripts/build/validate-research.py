@@ -106,6 +106,7 @@ from checks import artifact_parse as ck_artifact_parse
 
 # Per-artifact checks (after parse)
 from checks import affiliations as ck_affiliations
+from checks import anchor_resolves as ck_anchor_resolves
 from checks import artifact_top_level as ck_artifact_top_level
 from checks import cited_findings as ck_cited_findings
 from checks import cited_works as ck_cited_works
@@ -258,6 +259,7 @@ _ARTIFACT_CHECKS = [
     ck_verbatim_quotes,
     ck_quote_location_page,
     ck_location_format,   # roman / printed-folio location-ref guard (runs on OCR sources too)
+    ck_anchor_resolves,   # `¶ "<phrase>"` anchors must resolve to exactly one spot
     ck_pdf_page_count,     # declared pages == PDF physical pages; no p.N over-range
     ck_naming_quirks,
     # Type-conditional entry-list checks

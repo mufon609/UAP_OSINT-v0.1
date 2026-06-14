@@ -687,7 +687,10 @@ quote_source:
   #                     or a section heading.
   #     - `¶ <leading phrase>` — collapsed HTML block / unpaginated prose:
   #                     the paragraph's leading words (ctrl-F-able in the
-  #                     source).
+  #                     source). Written `¶ "<phrase>"`; the quoted phrase must
+  #                     occur EXACTLY ONCE in the source extract (0 = dead
+  #                     handle, 2+ = ambiguous) — enforced by the
+  #                     anchor_resolves check, every section's location.
   #     - `[MM:SS]`   — caption / audio / video transcript (`[MM:SS]–[MM:SS]`
   #                     for a long quote).
   #     - `p. N`      — multi-page doc with no usable paragraph anchor.
