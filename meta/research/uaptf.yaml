@@ -194,7 +194,7 @@ quotes:
   text: I also direct the Secretary of the Navy to disestablish the Unidentified Aerial Phenomena Task Force (UAPTF) no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
   significance: UAPTF disestablishment directive — Secretary of the Navy to disestablish UAPTF and transfer data to AARO
   context: Hicks AARO establishment memorandum, July 15, 2022
   statement_date: '2022-07-15'
@@ -264,7 +264,7 @@ quotes:
     Provide periodic updates, via the chain of command, to the UAP Executive Steering Committee (EXCOM), and to the committee's designated representatives. to support the EXCOMs oversight mission.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: UAPTF Charter, p.7, UAP Task Force Director responsibilities section
+    location: UAPTF Charter, p. 7, UAP Task Force Director responsibilities section
   significance: UAPTF Charter — UAP Executive Steering Committee (EXCOM) as senior oversight body above UAPTF
   context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "EXCOMs" for "EXCOM's")
   statement_date: '2020-09-01'
@@ -360,21 +360,21 @@ org_relationships:
   relationship_type: other
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: or3
   added_date: '2026-04-20'
   organization_path: /organizations/odni
   relationship_type: partner
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
-    location: p.3
+    location: p. 3
 - id: or4
   added_date: '2026-04-22'
   organization_path: /organizations/nia
   relationship_type: parent
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.1 / p.3 Charter
+    location: p. 1 / p. 3 Charter
 - id: or5
   added_date: '2026-04-22'
   organization_path: /organizations/us-navy
@@ -395,7 +395,7 @@ org_relationships:
   relationship_type: other
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
-    location: Purpose, p.1
+    location: Purpose, p. 1
 - id: or8
   added_date: '2026-04-22'
   organization_path: /organizations/aatip
@@ -409,7 +409,7 @@ org_relationships:
   relationship_type: other
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: UAPTF Charter, p.4, UAP Task Force Director responsibilities section
+    location: UAPTF Charter, p. 4, UAP Task Force Director responsibilities section
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -418,7 +418,7 @@ timeline:
   category: other
   source:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
-    location: p.1
+    location: p. 1
 - id: t2
   added_date: '2026-04-20'
   date: '2020-08-04'
@@ -442,7 +442,7 @@ timeline:
   category: other
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
-    location: p.1
+    location: p. 1
 - id: t4b
   added_date: '2026-04-22'
   date: '2020-09-23'
@@ -458,7 +458,7 @@ timeline:
   category: other
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
-    location: p.1
+    location: p. 1
   node_link: /documents/odni-preliminary-assessment-2021
 - id: t6
   added_date: '2026-04-20'
@@ -492,7 +492,7 @@ timeline:
   category: leadership-transition
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: t9
   added_date: '2026-04-20'
   date: '2022-07-20'
@@ -521,7 +521,7 @@ naming_quirks:
   added_date: '2026-04-22'
   observed: identifYing
   canonical: identifying
-  location: UAP Security Classification Guide (ID# 04-030), p.1 Purpose statement
+  location: UAP Security Classification Guide (ID# 04-030), p. 1 Purpose statement
   source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq5

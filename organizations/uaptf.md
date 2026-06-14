@@ -157,7 +157,7 @@ DoD Public Affairs statement from spokesperson Susan Gough ([`/people/sue-gough`
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "EXCOMs" for "EXCOM's"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Location | UAPTF Charter, p.7, UAP Task Force Director responsibilities section |
+| Location | UAPTF Charter, p. 7, UAP Task Force Director responsibilities section |
 
 ---
 
@@ -229,7 +229,7 @@ DoD Public Affairs statement from spokesperson Susan Gough ([`/people/sue-gough`
 |---|---|
 | Attributed to | Hicks AARO establishment memorandum, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Location | p.1 |
+| Location | p. 1 |
 
 ---
 

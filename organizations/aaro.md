@@ -106,7 +106,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Location | p.1 |
+| Location | p. 1 |
 
 ---
 
@@ -118,7 +118,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Location | p.1 |
+| Location | p. 1 |
 
 ---
 
@@ -130,7 +130,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Location | p.2 |
+| Location | p. 2 |
 
 ---
 
@@ -142,7 +142,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Location | p.2 |
+| Location | p. 2 |
 
 ---
 
@@ -442,7 +442,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Location | Executive Summary, p.7 |
+| Location | Executive Summary, p. 7 |
 
 ---
 
@@ -454,7 +454,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Location | Executive Summary, p.7 |
+| Location | Executive Summary, p. 7 |
 
 ---
 

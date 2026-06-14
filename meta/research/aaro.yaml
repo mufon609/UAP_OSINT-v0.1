@@ -215,7 +215,7 @@ quotes:
     '
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
   significance: Mission statement (Hicks establishment memo)
   context: Hicks memo establishing AARO, July 15, 2022
   statement_date: '2022-07-15'
@@ -224,7 +224,7 @@ quotes:
   text: This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
   significance: Scope — domains covered (Hicks memo)
   context: Hicks memo establishing AARO, July 15, 2022
   statement_date: '2022-07-15'
@@ -233,7 +233,7 @@ quotes:
   text: The AARO will serve as the authoritative office of the Unidentified Aerial Phenomena (UAP) and UAP-related activities for the DoD.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.2
+    location: p. 2
   significance: Authoritative office designation (Hicks memo)
   context: Hicks memo establishing AARO, July 15, 2022
   statement_date: '2022-07-15'
@@ -242,7 +242,7 @@ quotes:
   text: The AARO is the DoD focal point for all UAP and UAP-related activities and may represent the Department for such activities to the interagency, Congress, media, and public, in coordination with the Assistant Secretary of Defense for Legislative Affairs and Assistant to the Secretary of Defense for Public Affairs.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.2
+    location: p. 2
   significance: DoD focal point role + external-representation authority (Hicks memo)
   context: Hicks memo establishing AARO, July 15, 2022
   statement_date: '2022-07-15'
@@ -287,7 +287,7 @@ quotes:
   text: AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology.
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
-    location: Executive Summary, p.7
+    location: Executive Summary, p. 7
   significance: HRR Vol I top-line finding — no confirmed extraterrestrial UAP sightings in prior USG investigations
   context: AARO Historical Record Report Volume I Executive Summary, March 2024
   statement_date: '2024-03-08'
@@ -296,7 +296,7 @@ quotes:
   text: AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
-    location: Executive Summary, p.7
+    location: Executive Summary, p. 7
   significance: HRR Vol I top-line finding — no empirical evidence for USG reverse-engineering claims
   context: AARO Historical Record Report Volume I Executive Summary, March 2024
   statement_date: '2024-03-08'
@@ -1067,7 +1067,7 @@ key_personnel:
   leadership_class: director
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
-    location: p.1
+    location: p. 1
 - id: kp2
   added_date: '2026-04-20'
   person_path: /people/tim-phillips
@@ -1076,7 +1076,7 @@ key_personnel:
   leadership_class: deputy
   source:
     path: government/aaro-phillips-timothy-bio-dec2023.pdf
-    location: p.1
+    location: p. 1
 - id: kp2b
   added_date: '2026-05-03'
   person_path: /people/tim-phillips
@@ -1086,7 +1086,7 @@ key_personnel:
   leadership_class: deputy
   source:
     path: government/aaro-phillips-timothy-bio-dec2023.pdf
-    location: p.1 (title block)
+    location: p. 1 (title block)
 - id: kp3
   added_date: '2026-04-20'
   person_path: /people/jonathan-kosloski
@@ -1103,7 +1103,7 @@ org_relationships:
   relationship_type: parent
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: or2
   added_date: '2026-04-20'
   organization_path: /organizations/aoimsg
@@ -1117,14 +1117,14 @@ org_relationships:
   relationship_type: predecessor
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: or4
   added_date: '2026-04-20'
   organization_path: /organizations/odni
   relationship_type: partner
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: or5
   added_date: '2026-04-30'
   organization_path: /organizations/ousd-is
@@ -1184,7 +1184,7 @@ timeline:
   category: founding
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
-    location: p.1
+    location: p. 1
 - id: t4
   added_date: '2026-04-20'
   date: '2022-07-20'
@@ -1192,7 +1192,7 @@ timeline:
   category: leadership-transition
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
-    location: p.1
+    location: p. 1
 - id: t5
   added_date: '2026-04-20'
   date: '2023-08-31'
@@ -1208,7 +1208,7 @@ timeline:
   category: leadership-transition
   source:
     path: government/aaro-phillips-timothy-bio-dec2023.pdf
-    location: p.1
+    location: p. 1
 - id: t7
   added_date: '2026-04-20'
   date: '2023-11-20'
@@ -1232,7 +1232,7 @@ timeline:
   category: other
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
-    location: Cleared for Open Publication, p.1
+    location: Cleared for Open Publication, p. 1
   node_link: /documents/aaro-historical-record-report-vol-i
 - id: t10
   added_date: '2026-04-20'
@@ -1463,14 +1463,14 @@ naming_quirks:
   added_date: '2026-05-03'
   observed: fulfi lled
   canonical: fulfilled
-  location: Hicks establishment memo p.1 — "The All-domain Anomaly Resolution Office (AARO) will be established to carry out the duties that were to be fulfi lled by the AOIMSG"
+  location: Hicks establishment memo p. 1 — "The All-domain Anomaly Resolution Office (AARO) will be established to carry out the duties that were to be fulfi lled by the AOIMSG"
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq2
   added_date: '2026-04-20'
   observed: Airborne Object Identification and Management Group
   canonical: Airborne Object Identification and Management Synchronization Group
-  location: Hicks memo p.1
+  location: Hicks memo p. 1
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
 - id: nq6
