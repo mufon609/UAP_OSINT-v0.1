@@ -123,7 +123,11 @@ or replace it:
    page number — do **not** hand-`cat` the pages into one file (that throws away
    the page boundaries the verification step needs). Redirect the report to a file
    (it can be thousands of lines on a figure-heavy PDF) — **never pipe it through
-   `tail`/`head`**, which silently drops the bulk of the report:
+   `tail`/`head`**, which silently drops the bulk of the report. The PaddleOCR +
+   Tesseract re-read runs minutes per dozen pages; on a large source (roughly 35+
+   pages) it overruns a foreground command's timeout ceiling, so **run it detached**
+   (in the background) rather than blocking on it — the redirect file is the result
+   to read once it finishes:
    ```
    python3 scripts/tools/ocr-consensus.py run sources/{category}/{stem}.pdf \
        --vlm-pages .scratch/drafts/ocr-{stem} --blocked-pages 9-11,29-30 --two-column-pages 30 [--force] \

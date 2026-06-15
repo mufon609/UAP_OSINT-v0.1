@@ -170,3 +170,25 @@ convention and record the rationale.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C3 — Decide whether the document renderer should surface `extrinsic_authorship`
+
+A document research artifact can carry author attribution — and `[[wraps]]` to the
+person/source that attests it — in `context_extrinsic.extrinsic_authorship`, used
+when the author is redacted in the document body and known only from an external
+index (the redacted-author convention in `scripts/checks/prose_drift.py`). But
+`scripts/build/renderers/document.py` does not consume that field, so any node link
+wrapped there never reaches the rendered body or `## Associated Nodes`. On a
+redacted-author DIRD the `[/people/...]` author wrap and sibling-document wrap placed
+in `extrinsic_authorship` are silently dropped; the authorship stays reachable
+navigationally via the rendered attesting-document link, so the node is not wrong —
+but the wraps are dead weight that reads as a working link.
+
+Decide one of: (a) teach `document.py` to surface `extrinsic_authorship` so its wraps
+feed `associate.py` corpus-wide — weighed against the redacted-author convention's
+intent that such an author is *carried by the link*, not asserted on the node; or
+(b) confirm the field is structured-metadata-only and add a guard/lint so
+contributors don't wrap links there expecting them to render.
+
+**Blocks:** none.
+**Blocked by:** none.
