@@ -194,6 +194,7 @@ invocation; the relay/contract split holds one level down too.
    classification (person **archetype** / org **kind** / document **form**)
    and the full source set. Two commands, in order:
    - `python3 scripts/build/new.py {type} --slug {slug} --{archetype|kind|form} … --name "…"`
+     (the literal `archetype` / `kind` / `doc_form` vocabulary for the type is in `meta/schema.yaml`)
    - `python3 scripts/build/research-scaffold.py --target {type}/{slug} --sources {ALL reuse + archived paths}`
      (it writes fresh and cannot append, so every source goes in this one call)
    - then `python3 scripts/build/validate-research.py --phase archive meta/research/{slug}.yaml`

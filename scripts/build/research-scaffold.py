@@ -393,21 +393,18 @@ def main():
     rel = out_path.relative_to(REPO_ROOT)
     print(f"✓ Created {rel}")
     print()
-    print("Next steps (Phase I — single-session; multi-agent: the /build skill):")
-    print(f"  1. Extract primary sources to plaintext:")
+    print("Next — this is /build step 4 (scaffold). The orchestrator extracts the")
     if source_paths:
-        print(f"     python3 scripts/build/extract-source.py --artifact {rel}")
-        print(f"     (writes /tmp/scratch-{slug}-N.txt — one per primary source)")
+        print(f"sources (extract-source.py --artifact {rel}); the worker + builder roles")
     else:
-        print(f"     (add sources to primary_sources in {rel}, or re-scaffold with --sources)")
-    print(f"  2. Populate the artifact's content sections from the extracted text.")
-    print(f"     The per-type field set — document_intrinsic / context_extrinsic, the")
-    print(f"     synthesis prose fields, quotes, and any type-conditional sections — is")
-    print(f"     documented in meta/schema.yaml (and `research-scaffold.py")
-    print(f"     --explain FIELD` prints any list field's entry shape). Source-read-first:")
-    print(f"     every quote copied verbatim from the scratch files; density is")
-    print(f"     source-driven — no count targets (see build-protocol 'Density is source-driven').")
-    print(f"  3. Validate: python3 scripts/build/validate-research.py {rel}")
+        print(f"sources once added to primary_sources in {rel}; the worker + builder roles")
+    print("then populate + render. See .claude/skills/build/SKILL.md \"The shape\".")
+    print()
+    print("Artifact field reference (per-type) — document_intrinsic / context_extrinsic,")
+    print("synthesis prose, quotes, type-conditional sections — is in meta/schema.yaml")
+    print("(`research-scaffold.py --explain FIELD` prints any list field's entry shape).")
+    print("Source-read-first: every quote verbatim from the scratch; density is")
+    print("source-driven — no count targets (build-protocol 'Density is source-driven').")
 
 
 if __name__ == "__main__":

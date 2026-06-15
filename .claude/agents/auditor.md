@@ -68,6 +68,13 @@ Audit goals:
    list, or an IGNORED on a source that warrants capture, are defects to flag.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
+   A cross-node inconsistency is a defect **only if the missing claim is
+   attested by this node's own sources** — never import into this node's prose
+   an attribution a sibling carries because *that sibling's source* states it.
+   A `(b)(6)`-redacted or otherwise externally-attested author is carried by the
+   link and held in `context_extrinsic`, never named in this node's description
+   (`scripts/checks/prose_drift.py` redacted-author carve-out); recommending it
+   into prose only earns a prose-drift rejection.
 Recover a 404'd source before calling it lost: a manifest entry with
 `status: pending` + `wayback_date` set is recoverable via the fuzzy-timestamp
 pull (`meta/sources-access.md`).
