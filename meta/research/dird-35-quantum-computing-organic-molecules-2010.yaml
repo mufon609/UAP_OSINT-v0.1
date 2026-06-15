@@ -1,0 +1,1547 @@
+id: meta/research/dird-35-quantum-computing-organic-molecules-2010
+type: research-artifact
+target_node: documents/dird-35-quantum-computing-organic-molecules-2010
+status: active
+primary_sources:
+- path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+  format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-15: 36 quote(s) corroborated against the OCR engine reads; 1 contested token(s): q1 ‹methodologies› (line 40) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:dd7eed4c182a'
+document_intrinsic:
+  internal_title: Quantum Computing and Utilizing Organic Molecules in Automation Technology
+  internal_date: '2010-12-10'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6)]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: UNCLASSIFIED//FOR OFFICIAL USE ONLY (header and footer banners throughout; the title-page banner is struck through)
+  pages: 55
+  control_number: DIA-08-1102-005
+  icod: '2010-12-10'
+  series: Defense Futures
+context_extrinsic:
+  display_title: Quantum Computing and Utilizing Organic Molecules in Automation Technology — DIA Defense Intelligence Reference Document, AAWSAP, 10 December 2010
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_35-DIRD_Quantum_Computing_and_Utilizing_Organic_Molecules_in_Automation_Technology.pdf
+  quote_attribution: Defense Intelligence Agency — AAWSAP Defense Intelligence Reference Document (institutional voice; preparing office redacted under 10 USC 424, author redacted under FOIA (b)(6))
+  extrinsic_authorship: 'The Author line on the title-verso page is redacted under FOIA (b)(6) and the preparing component under 10 USC 424; the document itself names no author. The DIA-to-Congress products list (U-18-0001/OCC1, 9 January 2018) attributes the report to Dr. R. Genik, Wayne State Univ. (attachment 33, "Quantum Computing and Utilizing Organic Molecules in Automation Technology") — the same Dr. R. Genik ([`/people/richard-genik`]) credited with the sibling DIRD-34 ([`/documents/dird-34-cognitive-limits-unmanned-spacecraft`]).'
+quotes:
+- id: q1
+  added_date: '2026-06-15'
+  text: 'The Defense Intelligence Reference Document provides non-substantive but authoritative reference information related to intelligence topics or methodologies.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'DIRD-series descriptor banner, front matter'
+  significance: Standard DIRD-series self-description establishing the document class.
+  context: Banner under the title on the front-matter page.
+  claim_group: dird-series-provenance
+- id: q2
+  added_date: '2026-06-15'
+  text: 'This product is one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency, (b)(3):10 USC 424          Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to (b)(3):10 USC 424;(b)(6)        AAWSA Program Manager, Defense Intelligence Agency, ATTN: (b)(3):10 USC 424      Bldg 6000, Washington, DC 20340-5100.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'Administrative block, title-verso front matter'
+  significance: Ties the document to the DIA AAWSAP DIRD series; program-office identifiers redacted under 10 USC 424 and (b)(6).
+  context: Administrative block on the title-verso page; "Advanced Aerospace Weapon System Applications (AAWSA)" is the source's form (sic — singular "Weapon", "AAWSA").
+  claim_group: dird-series-provenance
+- id: q3
+  added_date: '2026-06-15'
+  text: 'COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'Administrative block, title-verso front matter'
+  significance: Dissemination restriction on the document's photographs.
+  context: Copyright warning line on the title-verso page.
+  claim_group: dird-series-provenance
+- id: q4
+  added_date: '2026-06-15'
+  text: 'Powerful onboard computing hardware is a desired option for future space travel. Without large data processing capability, the copious amounts of data acquired during flight from astronomical sensors as well as crew and vehicle sensors will need to be sent back to earthbound machines for processing, introducing delays measured in hours for routine calculations. Current commercial computer hardware trajectories in silicon substrate semiconductors are not likely to produce a radiation-hard or small and portable supercomputer without significant mission-specific alteration. Alternatives to traditional computing technology include computers based on entangled quantum states and molecular computing hardware based on DNA molecules.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Summary", opening paragraph'
+  significance: Thesis/scope — frames the motivating problem (onboard space supercomputing) and the two alternative architectures the report surveys (quantum and DNA computing).
+  context: Opening paragraph of the Summary.
+  claim_group: thesis-and-scope
+- id: q5
+  added_date: '2026-06-15'
+  text: 'Included in this review is significant introduction to the necessary elements of quantum computing and a summary of the state-of-the-art technologies. Following is background on DNA and production of engineered DNA chains. Finally, DNA logic gates are presented along with a treatment of nanomachines that will repair DNA circuitry. Forecasts of technology development in the 10-20 and 40-year horizons are included along the way, as well as summary discussion and a conclusion.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Summary", second paragraph'
+  significance: Document roadmap — names the 10-20 and 40-year forecast horizons matching the AATIP/AAWSAP "out to the next 40 years" framing.
+  context: Second paragraph of the Summary.
+  claim_group: thesis-and-scope
+- id: q6
+  added_date: '2026-06-15'
+  text: 'The first operating quantum computers capable of solving real-world problems will commence within 10 years and be based on ion trap technology. This is entirely based on the amount of research resources dedicated to the problem and the fact that there appear to only be engineering challenges remaining. Atomic and ion traps require very substantial cryogenic and EM shielding systems and are not practical for space travel.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Summary", forecast paragraph'
+  significance: Core forecast — ion-trap quantum computers within 10 years, but impractical for space travel due to cryogenic/EM shielding needs.
+  context: Forecast paragraph of the Summary (restated near-verbatim in the Discussion).
+  claim_group: technology-forecasts
+- id: q7
+  added_date: '2026-06-15'
+  text: 'Hybrid designs utilizing arrays of quantum dots and photon communication channels will be an option for space travel supercomputing on the 40-year timescale. These systems operate at attainable temperatures without cryonics, and require no more shielding than humans. It is likely that spintronics will be an essential ingredient.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Summary", 40-year-hybrid paragraph'
+  significance: 40-year forecast — quantum-dot/photon hybrid designs as the viable space-travel supercomputing path, with spintronics essential.
+  context: Summary paragraph on the 40-year hybrid-design horizon.
+  claim_group: technology-forecasts
+- id: q8
+  added_date: '2026-06-15'
+  text: 'Simple organic computing based on DNA tiles will be realized in the next 20 years. On the 40-year time horizon, useful DNA-based devices will be essential space exploration tools. These could take the form of orbital-delivered wireless sensors searching planetary/asteroid features or for essential compounds such as high concentrations of water. DNA computers will also be realized on the 40-year timeline. Their advantage over solid state devices will be the ability to repair nanoscale elements damaged in normal use or by cosmic radiation.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Summary", DNA-forecast paragraph'
+  significance: DNA-computing forecast — DNA-tile computing in 20 years; DNA devices as space-exploration tools at 40 years, with self-repair against cosmic radiation the key advantage.
+  context: Summary paragraph on the DNA-computing horizon.
+  claim_group: technology-forecasts
+- id: q9
+  added_date: '2026-06-15'
+  text: 'The quest for faster computing can be accomplished by making current hardware architecture faster, or by designing new hardware based on different architecture that solves the calculation in fewer steps. The current treatise concentrates on the latter, dramatically changing the architecture of modern computers to perform calculations in a different manner. Two methods are explored: that of creating logic gates, and that of creating a general Turing machine. The second of these is explored in the context of quantum computing with an emphasis on organic molecules as a core technology.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "INTRODUCTION", architecture-approach paragraph'
+  significance: Methods/approach statement — defines the report's focus on new architectures (logic gates and a general Turing machine via quantum computing), emphasizing organic molecules.
+  context: Introduction paragraph stating the report's analytical approach.
+  claim_group: thesis-and-scope
+- id: q10
+  added_date: '2026-06-15'
+  text: 'The history of manned spaceflight does not include powerful computers as integrated companions; space-borne supercomputers have so far been reserved to the world of science fiction. The main issue on space stations has been radiation hardness, while the main issue on vehicles such as the space shuttle has been safety. The amount of testing required for a microprocessor to be certified for space precludes the most current technology from becoming astro-worthy. Indeed, the most powerful general purpose computers riding in the shuttle are the laptops the astronauts bring with them.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "ULTRAFAST COMPUTING POWER IN AEROSPACE APPLICATIONS", opening paragraph'
+  significance: Framing finding — no powerful onboard space computers exist to date; radiation hardness and certification testing are the limiting factors.
+  context: Opening paragraph of the aerospace-applications section.
+  claim_group: aerospace-computing-context
+- id: q11
+  added_date: '2026-06-15'
+  text: "George's group at the University of Florida pursued this approach with earthbound success.(2, 3) A good question arises that if 50 years of space travel hasn't required one onboard supercomputer, why start now? It seems NASA asked this question as well and, after years of preparation, cancelled the space test of the technology in late 2009."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "ULTRAFAST COMPUTING POWER IN AEROSPACE APPLICATIONS", radiation-hardness paragraph'
+  significance: Names the University of Florida (George's group) COTS-parallel approach and the late-2009 NASA cancellation of the space test — an authorship/institutional signal.
+  context: Paragraph on radiation-induced computation errors and parallel COTS architectures.
+  claim_group: aerospace-computing-context
+- id: q12
+  added_date: '2026-06-15'
+  text: 'Although smaller circuitry and supercomputing is a motivator, the driving application behind quantum computing is cryptography. First, there is cracking cipher codes. The vast majority of secured communications utilize a method known as public-key cryptography.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "APPLICATIONS OF QUANTUM COMPUTERS", opening paragraph'
+  significance: Key finding of the applications section — cryptography (codebreaking) is the driving application of quantum computing.
+  context: Opening of the quantum-computer-applications section.
+  claim_group: quantum-computing-applications
+- id: q13
+  added_date: '2026-06-15'
+  text: 'However, in 1994 Shor presented a quantum algorithm that would only require a polynomial number of steps, thus dramatically decreasing the required time to factor, assuming a quantum computer would ever be physically realized. (6) This speedup is primarily due to the nature of quantum waves; specifically, they can follow several parallel paths instead of the usual stepwise procedural execution of instructions.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "APPLICATIONS OF QUANTUM COMPUTERS", Shor-algorithm paragraph'
+  significance: Names Shor's 1994 polynomial-time factoring algorithm as the basis for quantum codebreaking.
+  context: Paragraph explaining the cryptographic threat from quantum factoring.
+  claim_group: quantum-computing-applications
+- id: q14
+  added_date: '2026-06-15'
+  text: 'A fundamental principle of quantum mechanics is that any external influence on a system necessarily disturbs the state of that system. This influence could be external disruption or internal leakage − either interaction will change the internal quantum state. This destructive process is known as decoherence. External influences will disturb the system and thus the circuits need to be isolated from the rest of the universe, also known as the ''closed box'' requirement.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "THE CLOSED BOX AND FAULT TOLERANCE", decoherence paragraph'
+  significance: Defines decoherence and the closed-box isolation requirement — a load-bearing constraint on all quantum-computing hardware in the report.
+  context: Section explaining the fault-tolerance and isolation requirements of quantum circuits.
+  claim_group: closed-box-fault-tolerance
+- id: q15
+  added_date: '2026-06-15'
+  text: 'In 1925, Austrian physicist Wolfgang Pauli proposed that an electron in a quantum state can assume only one of two states-"spin-up" or "spin down." (21) One approach to manipulate spin state and electrical charge independently for use in quantum computing has arisen in the quantum dot.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "The Quantum Dot Approach", electron-spin paragraph'
+  significance: Names Pauli's 1925 two-state electron spin as the physical basis for spin qubits and the quantum-dot approach.
+  context: Introduction to the quantum-dot approach to qubit manipulation.
+  claim_group: quantum-dot-approach
+- id: q16
+  added_date: '2026-06-15'
+  text: 'The graphene form of carbon, a hexagonal sheet array single atom thick, is a candidate substrate for quantum dots. However, two fundamental challenges need to be overcome before graphene can be used to form and operate spin qubits.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Electrostatic Quantum Dots in Graphene", opening paragraph'
+  significance: Section finding — graphene as a candidate qubit substrate and the two fundamental obstacles to its use.
+  context: Opening of the graphene quantum-dot section.
+  claim_group: graphene-quantum-dots
+- id: q17
+  added_date: '2026-06-15'
+  text: 'Recently, researchers at Princeton University discovered how to manipulate a single electron without disrupting any surrounding electrons (78). By utilizing an interferometer technique where one or two electrons are trapped in microscopic corrals that are created by applying voltage to miniscule electrodes, "spin qubits" were formed. This effort is ground-breaking in that previous research utilized techniques where the electrons were exposed to microwave radiation.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Spin Relaxation Due to Spin-orbit Interaction", Princeton-research paragraph'
+  significance: Names Princeton University single-electron interferometer spin-qubit research as a ground-breaking result — institutional/authorship signal.
+  context: Paragraph on superposition spin states and single-electron manipulation.
+  claim_group: graphene-quantum-dots
+- id: q18
+  added_date: '2026-06-15'
+  text: 'Recently, Ladd reviewed inorganic technologies. (5) Ladd proposes that ion traps are the most probable technology based on their long T2, but then concludes that a comparison between the technologies is incomplete without further development on all fronts. The current treatise concentrates on organic technology but summarizes here the work of Ladd and others for completeness.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "SUMMARY OF ADDITIONAL INORGANIC TECHNOLOGIES", opening paragraph'
+  significance: Frames the inorganic-technologies survey on Ladd's review (reference 5) and reiterates the report's organic-technology emphasis.
+  context: Opening of the inorganic-technologies summary section.
+  claim_group: inorganic-technologies-summary
+- id: q19
+  added_date: '2026-06-15'
+  text: 'More detail of such hurdles in trap technologies is revealed in a year earlier (much longer) review by Haffner. (81) Ion-trap-based gate operations are shown to have arbitrarily high fidelity, or higher fidelity than required for fault-tolerant computation.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Ion and Atomic Trap Technologies", Haffner paragraph'
+  significance: Names Haffner's ion-trap review (reference 81) as the source for trap-technology hurdle analysis.
+  context: Discussion of ion- and atomic-trap technology hurdles.
+  claim_group: inorganic-technologies-summary
+- id: q20
+  added_date: '2026-06-15'
+  text: "The most logical solution to overcome this restriction in silicon-based integrated circuit architectures resides within our own bodies, deoxyribonucleic acid (DNA). Living organisms also carry out complex physical processes under the direction of digital information. Biochemical reactions and ultimately an entire organism's operation are ruled by instructions stored in its genome, encoded in sequences of nucleic acids."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA-BASED DESIGNS FOR MOLECULAR COMPUTERS", opening paragraph'
+  significance: Thesis of the DNA-computing half of the report — DNA as the natural alternative medium when silicon reaches atomic limits.
+  context: Opening of the DNA-based molecular-computers section.
+  claim_group: dna-computing-thesis
+- id: q21
+  added_date: '2026-06-15'
+  text: 'Watson and Crick may have never realized the full potential of the double helical structure they identified nearly 60 years ago, (83) for little was known about this amazing molecule that harnesses life.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Background", opening paragraph'
+  significance: Names Watson and Crick's double-helix structure (reference 83) as the foundation of the DNA-background narrative.
+  context: Opening of the DNA background subsection.
+  claim_group: dna-background
+- id: q22
+  added_date: '2026-06-15'
+  text: "But, it wasn't until 1977 that Fred Sanger developed the first dideoxynucleotide chain termination bottom up assembly method for DNA. (84) This technique would usher in a new age of nucleic acid research and open the door for the modern era of biotechnology."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Background", Sanger paragraph'
+  significance: Names Fred Sanger's 1977 chain-termination DNA sequencing method (reference 84) as a foundational biotechnology enabler.
+  context: DNA background subsection, on the history of DNA sequencing.
+  claim_group: dna-background
+- id: q23
+  added_date: '2026-06-15'
+  text: 'In 1996, Winfree devised a theoretical proposal that addressed how crystal morphology and patterning can be programmed by tile design in an inherently asynchronous assembly process, in which it was addressed by the abstract Tile Assembly Model (aTAM). (90) Winfree explored how physical parameters, such as tile concentration and temperature, affect crystal growth and influence error rates, based on reversible tile association and dissociation rates (91).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Background", aTAM/Winfree paragraph'
+  significance: Names Winfree's 1996 abstract Tile Assembly Model (aTAM) (references 90, 91) — a load-bearing concept and authorship signal for the DNA-tile self-assembly section.
+  context: DNA background subsection, on algorithmic self-assembly via the aTAM.
+  claim_group: dna-self-assembly
+- id: q24
+  added_date: '2026-06-15'
+  text: 'Later collaboration between Winfree and Seeman resulted in the first successful fabrication of a two-dimensional DNA lattice structure that utilized the mathematical principle of tiling (94). The self named DX (double crossover) molecule has two double helical motifs that are rigidly bound together by several single strands that are organized in a double crossover pattern forming a rigid structure of DNA.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Background", DX-molecule paragraph'
+  significance: Names the Winfree-Seeman collaboration (reference 94) producing the first 2D DNA lattice via the DX molecule.
+  context: DNA background subsection, on the double-crossover (DX) DNA tile.
+  claim_group: dna-self-assembly
+- id: q25
+  added_date: '2026-06-15'
+  text: 'However, the error suppression models Protected Tile Mechanism (PTM) and Layered Tile Mechanism (LTM) proposed by Fujibayashi and Murata can suppress all three error types illustrated in Figure 15. (98)(99).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Error Suppression Mechanisms in DNA Self-Assembly", PTM/LTM paragraph'
+  significance: Names the Fujibayashi-Murata PTM and LTM error-suppression models (references 98, 99) as suppressing all three DNA-tile error types.
+  context: Error-suppression subsection, on tile-assembly error correction.
+  claim_group: dna-self-assembly
+- id: q26
+  added_date: '2026-06-15'
+  text: 'To overcome these restraints, researchers in Tokyo devised a microfluidic device specially designed for DNA tile assembly (105).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Self-assembly with DNA-based Microfluidic Devices", microfluidic paragraph'
+  significance: Names the Tokyo-group microfluidic DNA-tile self-assembler (reference 105).
+  context: Microfluidic-devices subsection.
+  claim_group: dna-self-assembly
+- id: q27
+  added_date: '2026-06-15'
+  text: "Single-stranded origami such as William Shih's octahedron (113) cannot, by definition, suffer from this problem."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Origami", Shih-octahedron paragraph'
+  significance: Names William Shih's single-stranded DNA octahedron (reference 113) as a DNA-origami exemplar.
+  context: DNA origami subsection, on single-stranded versus scaffolded origami.
+  claim_group: dna-origami
+- id: q28
+  added_date: '2026-06-15'
+  text: 'Recently, Seeman and colleagues at New York University have found a clever new way to tease DNA strands into mimicking exclusive OR (XOR) logic gates (117).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Engineering DNA-Based Logic Gates", Seeman-NYU paragraph'
+  significance: Names Seeman and colleagues at New York University (reference 117) for DNA-strand XOR logic gates — institutional/authorship signal.
+  context: DNA logic-gates section, on DNA-based XOR gates.
+  claim_group: dna-logic-gates
+- id: q29
+  added_date: '2026-06-15'
+  text: 'The deoxyribozyme logic gates were applied to the construction of the first DNA-based Boolean automata capable of autonomously responding to human inputs: "MAYAs" are automata playing a game of tic-tac-toe against a human player.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Deoxyribozyme-based Boolean Automata", opening paragraph'
+  significance: Section finding — the MAYA deoxyribozyme-based automata playing tic-tac-toe as the first DNA Boolean automata responding to human inputs.
+  context: Opening of the deoxyribozyme Boolean-automata section.
+  claim_group: dna-logic-gates
+- id: q30
+  added_date: '2026-06-15'
+  text: 'To exhibit these capabilities, a team of scientists from Columbia University, Arizona State University, the University of Michigan, and the California Institute of Technology (Caltech) (123) have programmed an autonomous molecular "robot" made out of DNA to start, move, turn, and stop while following a DNA track.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "Robotic Bases (The DNA Robot)", molecular-robot paragraph'
+  significance: Names the multi-institution team (Columbia, Arizona State, Michigan, Caltech — reference 123) that built the autonomous DNA molecular robot — a multi-institution authorship signal.
+  context: DNA-robot section, on the autonomous molecular robot following a DNA track.
+  claim_group: dna-robots
+- id: q31
+  added_date: '2026-06-15'
+  text: 'The next level in complexity were "remotely-controlled" walkers introduced by Seeman and Pierce, as they were based on a series of successive unidirectional conformational changes driven by strand displacement.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Nanomotors", remotely-controlled-walkers paragraph'
+  significance: Names Seeman and Pierce as introducers of remotely-controlled DNA walkers.
+  context: DNA-nanomotors section, on the progression of DNA molecular motors.
+  claim_group: dna-nanomotors
+- id: q32
+  added_date: '2026-06-15'
+  text: 'The team from the University of Florida built a new type of "molecular nanomotor" driven only by photons, or particles of light. While it is not the first photon-driven nanomotor, the almost infinitesimal device is the first built entirely with a single molecule of DNA, offering a simplicity that increases its potential for development, manufacture and real-world applications in areas ranging from medicine to manufacturing.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "DNA Nanomotors", light-powered-nanomotor paragraph'
+  significance: Names the University of Florida light-powered single-DNA-molecule nanomotor (reference 128) — institutional/authorship signal.
+  context: DNA-nanomotors section, on the first single-DNA-molecule light-powered nanomotor.
+  claim_group: dna-nanomotors
+- id: q33
+  added_date: '2026-06-15'
+  text: 'A simple cargo carrying robot was demonstrated by Gu. (129) Spiders follow a designated path placed on a surface, picking up gold atoms as they pass over them. Such a device could be used to collect samples from asteroid or planetary surfaces. On a massive scale, they could collect mission critical materials from an exploration site.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "The Nano Walker; a Spider-like Approach", Gu paragraph'
+  significance: Names Gu's cargo-carrying DNA nanowalker (reference 129) and ties it to asteroid/planetary sample collection — a space-mission application.
+  context: Nano-walker section opening, on the cargo-carrying spider robot.
+  claim_group: dna-nanomotors
+- id: q34
+  added_date: '2026-06-15'
+  text: 'In a different approach, a nano-scale molecular proto-robot with a potential for integration with computing and sensing (i.e., into a real molecular robot), (130) was introduced by Stojanovic:'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "The Nano Walker; a Spider-like Approach", Stojanovic paragraph'
+  significance: Names Stojanovic's deoxyribozyme-based molecular proto-robot (reference 130).
+  context: Nano-walker section, on the self-repelling-random-walk spider robot.
+  claim_group: dna-nanomotors
+- id: q35
+  added_date: '2026-06-15'
+  text: 'We have presented an introduction to quantum computing and the technologies that comprise the current state-of-the-art. In the 10-20 year horizon, we will see optical and DNA-based computers realized on small production scales, but their readiness level for space travel will be lacking. On the 40-year horizon four major advances in space-ready technology will be seen: devices developed for optical computing will allow an all-optical computer to augment or replace general purpose computers; optical communication will play an essential role in hybrid designs of space-based quantum computers along with quantum dots; DNA devices will perform simple distributed sensor data analyses; and fault tolerant DNA computers will be available for mission-critical analysis tasks.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'section "CONCLUSION", sole paragraph'
+  significance: The document's formal conclusion — the four 40-year space-ready advances (all-optical computers, optical communication in hybrid quantum designs, DNA distributed sensor analysis, fault-tolerant DNA computers).
+  context: Conclusion section, single paragraph.
+  claim_group: conclusion
+- id: q36
+  added_date: '2026-06-15'
+  text: 'This document is made available through the declassification efforts and research of John Greenewald, Jr., creator of:'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'The Black Vault provenance banner, title page'
+  significance: Provenance — the FOIA release is attributed to John Greenewald, Jr. and The Black Vault.
+  context: Black Vault provenance banner on the title page (the released-copy provenance stamp).
+  claim_group: foia-release-provenance
+naming_quirks:
+- id: nq1
+  added_date: '2026-06-15'
+  observed: 'AAWSA'
+  canonical: 'AAWSAP'
+  location: 'Administrative block, title-verso front matter — "Advanced Aerospace Weapon System Applications (AAWSA) Program"'
+  source_path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-06-15'
+  observed: 'Weapon System'
+  canonical: 'Weapons System'
+  location: 'Administrative block, title-verso front matter — the source reads singular "Advanced Aerospace Weapon System Applications"; the canonical program name and sibling DIRDs use plural "Weapons System"'
+  source_path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+description: 'Quantum Computing and Utilizing Organic Molecules in Automation Technology. This Defense Intelligence Reference Document in the Defense Futures series, 10 December 2010, with an ICOD of 10 December 2010 and document number DIA-08-1102-005, UNCLASSIFIED//FOR OFFICIAL USE ONLY, is one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]) Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]). The Prepared by and Author lines read (b)(3):10 USC 424 and (b)(6); the author is identified on another Defense Intelligence Agency document ([`/documents/dia-aatip-products-list-2018`]). This document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]).
+
+
+  Powerful onboard computing hardware is a desired option for future space travel: without large data processing capability, the copious amounts of data acquired during flight from astronomical sensors as well as crew and vehicle sensors will need to be sent back to earthbound machines for processing, introducing delays measured in hours for routine calculations, and current commercial computer hardware trajectories in silicon substrate semiconductors are not likely to produce a radiation-hard or small and portable supercomputer without significant mission-specific alteration. Against that motivator the treatise concentrates on alternatives to traditional computing technology — computers based on entangled quantum states and molecular computing hardware based on DNA molecules — through new architectures (logic gates and a general Turing machine) explored in the context of quantum computing with an emphasis on organic molecules as a core technology. The review includes a significant introduction to the necessary elements of quantum computing and a summary of the state-of-the-art technologies, then background on DNA and production of engineered DNA chains, DNA logic gates, and nanomachines that will repair DNA circuitry, with forecasts at the 10-20 and 40-year horizons.
+
+
+  The quantum material moves through the closed box and fault tolerance requirement (decoherence, the destructive process by which any external influence disturbs the state of a quantum system, requires circuits to be isolated from the rest of the universe), the quantum dot approach built on Pauli''s two-state electron spin, electrostatic quantum dots in graphene, and a summary of additional inorganic technologies (ion and atomic traps). It then turns to DNA-based designs for molecular computers — DNA as the most logical solution that resides within our own bodies when silicon-based integrated circuit architectures reach their restriction — across DNA background, self-assembly, DNA origami, engineering DNA-based logic gates, deoxyribozyme-based Boolean automata, the DNA robot, and DNA nanomotors, with cryptography (cracking cipher codes) the driving application behind quantum computing. The forecasts hold that the first operating quantum computers capable of solving real-world problems will commence within 10 years and be based on ion trap technology but are not practical for space travel due to cryogenic and EM shielding needs; that hybrid designs utilizing arrays of quantum dots and photon communication channels will be an option for space travel supercomputing on the 40-year timescale, with spintronics likely an essential ingredient; and that simple organic computing based on DNA tiles will be realized in the next 20 years, with useful DNA-based devices as essential space exploration tools at 40 years, their advantage over solid state devices being the ability to repair nanoscale elements damaged in normal use or by cosmic radiation.
+
+
+  The Conclusion sets out four major advances in space-ready technology to be seen on the 40-year horizon: devices developed for optical computing allowing an all-optical computer to augment or replace general purpose computers; optical communication playing an essential role in hybrid designs of space-based quantum computers along with quantum dots; DNA devices performing simple distributed sensor data analyses; and fault tolerant DNA computers available for mission-critical analysis tasks. The body reports results from outside research groups — among them a NASA space test of the technology cancelled in late 2009, single electron spin qubit research, the autonomous molecular robot made out of DNA, light-powered and cargo carrying DNA nanomotors, and the MAYA deoxyribozyme automata that play a game of tic-tac-toe against a human player — and a numbered References section of 130 entries.'
+cited_works:
+- id: cw1
+  added_date: '2026-06-15'
+  citation_key: '1'
+  author: 'Turing A.'
+  year: '1937'
+  title: 'On Computable Numbers, with an Application to the Entscheidungsproblem'
+  citation_verbatim: '1. Turing A. On Computable Numbers, with an Application to the Entscheidungsproblem. Proceedings of the London Mathematical Society 1937;42:230-65.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [1]'
+- id: cw2
+  added_date: '2026-06-15'
+  citation_key: '2'
+  author: 'Cho K, George AD, Subramaniyan R.'
+  year: '2005'
+  citation_verbatim: '2. Cho K, George AD, Subramaniyan R. Fault-tolerant parallel algorithms for adaptive matched-field processing on distributed array systems. Journal of Computational Acoustics. 2005;13(4):667-87.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [2]'
+- id: cw3
+  added_date: '2026-06-15'
+  citation_key: '3'
+  author: 'Cho K, George AD, Subramaniyan R, Kim K.'
+  year: '2006'
+  citation_verbatim: '3. Cho K, George AD, Subramaniyan R, Kim K. Fault-tolerant matched-field processing in the presence of element failures. Journal of Computational Acoustics. 2006;14(3):299-319.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [3]'
+- id: cw4
+  added_date: '2026-06-15'
+  citation_key: '4'
+  author: 'Einstein A.'
+  year: '1917'
+  citation_verbatim: '4. Einstein A. Zur Quantentheorie der Strahlung (On the Quantum Theory of Radiation). Physikalische Zeitschrift. 1917;18:121-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [4]'
+- id: cw5
+  added_date: '2026-06-15'
+  citation_key: '5'
+  author: "Ladd TD, Jelezko F, Laflamme R, Nakamura Y, Monroe C, O'Brien JL."
+  year: '2010'
+  title: 'Quantum computers'
+  citation_verbatim: "5. Ladd TD, Jelezko F, Laflamme R, Nakamura Y, Monroe C, O'Brien JL. Quantum computers. Nature. 2010 Mar 4;464(7285):45-53."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [5]'
+- id: cw6
+  added_date: '2026-06-15'
+  citation_key: '6'
+  author: 'Shor PW.'
+  year: '1994'
+  citation_verbatim: '6. Shor PW, editor. Algorithms for Quantum Computation: Discrete Logarithms and Factoring. 35th Annual Symposium on the Foundations of Computer Science; 1994: IEEE Computer Society Press, Los Alamitos, CA.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [6]'
+- id: cw7
+  added_date: '2026-06-15'
+  citation_key: '7'
+  author: 'Grover LK.'
+  year: '1997'
+  citation_verbatim: '7. Grover LK. Quantum mechanics helps in searching for a needle in a haystack. Physical Review Letters. 1997 Jul;79(2):325-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [7]'
+- id: cw8
+  added_date: '2026-06-15'
+  citation_key: '8'
+  author: 'Grover LK.'
+  year: '2005'
+  citation_verbatim: '8. Grover LK. Fixed-point quantum search. Physical Review Letters. 2005 Oct;95(15).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [8]'
+- id: cw9
+  added_date: '2026-06-15'
+  citation_key: '9'
+  author: 'Bennett CH, Brassard G, Popescu S, Schumacher B, Smolin JA, Wootters WK.'
+  year: '1996'
+  citation_verbatim: '9. Bennett CH, Brassard G, Popescu S, Schumacher B, Smolin JA, Wootters WK. Purification of noisy entanglement and faithful teleportation via noisy channels. Physical Review Letters. 1996 Jan;76(5):722-5.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [9]'
+- id: cw10
+  added_date: '2026-06-15'
+  citation_key: '10'
+  author: 'Gottesman D, Chuang IL.'
+  year: '1999'
+  citation_verbatim: '10. Gottesman D, Chuang IL. Demonstrating the viability of universal quantum computation using teleportation and single-qubit operations. Nature. 1999 Nov;402(6760):390-3.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [10]'
+- id: cw11
+  added_date: '2026-06-15'
+  citation_key: '11'
+  author: 'Feynman RP.'
+  year: '1982'
+  citation_verbatim: '11. Feynman RP. Simulating Physics with Computers. International Journal of Theoretical Physics. 1982;21(6-7):467-88.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [11]'
+- id: cw12
+  added_date: '2026-06-15'
+  citation_key: '12'
+  author: 'Ortiz G, Gubernatis JE, Knill E, Laflamme R.'
+  year: '2002'
+  citation_verbatim: '12. Ortiz G, Gubernatis JE, Knill E, Laflamme R. Simulating fermions on a quantum computer. Computer Physics Communications. 2002;146(3):302-16.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [12]'
+- id: cw13
+  added_date: '2026-06-15'
+  citation_key: '13'
+  author: 'Knill E, Laflamme R.'
+  year: '1997'
+  citation_verbatim: '13. Knill E, Laflamme R. Theory of quantum error-correcting codes. Phys Rev A. [Article]. 1997 Feb;55(2):900-11.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [13]'
+- id: cw14
+  added_date: '2026-06-15'
+  citation_key: '14'
+  author: 'Li YF, Dumer I, Pryadko LP.'
+  year: '2010'
+  citation_verbatim: '14. Li YF, Dumer I, Pryadko LP. Clustered Error Correction of Codeword-Stabilized Quantum Codes. Physical Review Letters. [Article]. 2010 May;104(19):4.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [14]'
+- id: cw15
+  added_date: '2026-06-15'
+  citation_key: '15'
+  author: 'Mizel A, Lidar DA, Mitchell M.'
+  year: '2007'
+  citation_verbatim: '15. Mizel A, Lidar DA, Mitchell M. Simple proof of equivalence between adiabatic quantum computation and the circuit model. Physical Review Letters. 2007 Aug;99(7).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [15]'
+- id: cw16
+  added_date: '2026-06-15'
+  citation_key: '16'
+  author: 'Raussendorf R, Briegel HJ.'
+  year: '2001'
+  citation_verbatim: '16. Raussendorf R, Briegel HJ. A one-way quantum computer. Physical Review Letters. 2001 May;86(22):5188-91.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [16]'
+- id: cw17
+  added_date: '2026-06-15'
+  citation_key: '17'
+  author: 'Raussendorf R, Harrington J, Goyal K.'
+  year: '2006'
+  citation_verbatim: '17. Raussendorf R, Harrington J, Goyal K. A fault-tolerant one-way quantum computer. Annals of Physics. 2006 Sep;321(9):2242-70.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [17]'
+- id: cw18
+  added_date: '2026-06-15'
+  citation_key: '18'
+  author: 'B. Trauzettel, D.V. Bulaev, D. Loss, G. Burkard.'
+  year: '2007'
+  citation_verbatim: '18. B. Trauzettel, D.V. Bulaev, D. Loss, G. Burkard. Spin qubits in graphene quantum dots, Nat Phys 3, 192–196 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [18]'
+- id: cw19
+  added_date: '2026-06-15'
+  citation_key: '19'
+  author: 'WeinsteinY S, Hellberg C S and Levy J'
+  year: '2005'
+  citation_verbatim: '19. WeinsteinY S, Hellberg C S and Levy J 2005 Quantum-dot cluster-state computing with encoded qubits Phys. Rev. A 72 020304.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [19] (author "WeinsteinY" sic — OCR-joined initial)'
+- id: cw20
+  added_date: '2026-06-15'
+  citation_key: '20'
+  author: 'A.N. Jordan, B. Trauzettel, G. Burkard.'
+  year: '2007'
+  citation_verbatim: '20. A.N. Jordan, B. Trauzettel, G. Burkard. Weak-measurement theory of quantum-dot spin qubits, Phys. Rev. B 76, 155324 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [20]'
+- id: cw21
+  added_date: '2026-06-15'
+  citation_key: '21'
+  author: 'W. Pauli'
+  year: '1925'
+  citation_verbatim: '21. W. Pauli, Z. Physik, 31 (1925) 373.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [21]'
+- id: cw22
+  added_date: '2026-06-15'
+  citation_key: '22'
+  author: 'Kouwenhoven LP, Sch¨on G, and Sohn LL'
+  year: '1997'
+  citation_verbatim: '22. Kouwenhoven LP`, Sch¨on G`, and Sohn LL`, in Mesoscopic Electron Transport`, NATO ASI Series E`, Vol. 345 (Kluwer Academic Publishers`, Dordrecht`, 1997).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [22] (stray backtick-apostrophe characters and umlaut artifact "Sch¨on" preserved sic from OCR)'
+- id: cw23
+  added_date: '2026-06-15'
+  citation_key: '23'
+  author: 'Wolf SA, Awschalom DD, Buhrman RA, Daughton JM, vonMoln´ar S, Roukes ML, Chtchelkanova AY, and Treger DM'
+  year: '2001'
+  citation_verbatim: '23. Wolf SA, Awschalom DD, Buhrman RA, Daughton JM, vonMoln´ar S, Roukes ML, Chtchelkanova AY, and Treger DM, Science 294, 1488 (2001).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [23] ("vonMoln´ar" OCR artifact preserved sic)'
+- id: cw24
+  added_date: '2026-06-15'
+  citation_key: '24'
+  author: 'Recher P, Sukhorukov EV, and Loss D'
+  year: '2000'
+  citation_verbatim: '24. Recher P, Sukhorukov EV, and Loss D, Phys. Rev. Lett. 85, 1962 (2000).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [24]'
+- id: cw25
+  added_date: '2026-06-15'
+  citation_key: '25'
+  author: 'Folk JA, Potok RM, Marcus CM, and Umansky V'
+  year: '2003'
+  citation_verbatim: '25. Folk JA, Potok RM, Marcus CM, and Umansky V, Science 299, 679 (2003).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [25]'
+- id: cw26
+  added_date: '2026-06-15'
+  citation_key: '26'
+  author: 'Hanson R, Vandersypen LMK, Willems van Beveren LH, Elzerman JM, Vink IT, and Kouwenhoven LP'
+  year: '2004'
+  citation_verbatim: '26. Hanson R, Vandersypen LMK, Willems van Beveren LH, Elzerman JM, Vink IT, and Kouwenhoven LP, Phys. Rev. B 70, 241304 (2004).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [26]'
+- id: cw27
+  added_date: '2026-06-15'
+  citation_key: '27'
+  author: 'Ono K, Austing DG, Tokura Y, and Tarucha S'
+  year: '2002'
+  citation_verbatim: '27. Ono K, Austing DG, Tokura Y, and Tarucha S, Science 297, 1313 (2002).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [27]'
+- id: cw28
+  added_date: '2026-06-15'
+  citation_key: '28'
+  author: 'Cerletti V, Coish WA, Gywat O, and Loss D'
+  year: '2005'
+  citation_verbatim: '28. For a comprehensive recent review on the topic, see Cerletti V, Coish WA, Gywat O, and Loss D, Nanotechnology 16, R27 (2005).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [28]'
+- id: cw29
+  added_date: '2026-06-15'
+  citation_key: '29'
+  author: 'Hanson R, Kouwenhoven LP, Petta JR, Tarucha S, and Vandersypen LMK'
+  year: '2007'
+  citation_verbatim: '29. Hanson R, Kouwenhoven LP, Petta JR, Tarucha S, and Vandersypen LMK, Rev. Mod. Phys. 79, 1217 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [29]'
+- id: cw30
+  added_date: '2026-06-15'
+  citation_key: '30'
+  author: 'Novoselov, K.S. et al.'
+  year: '2004'
+  citation_verbatim: '30. Novoselov, K.S. et al. Electric field effect in atomically thin carbon films. Science 306, 666-669 (2004).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [30]'
+- id: cw31
+  added_date: '2026-06-15'
+  citation_key: '31'
+  author: 'Novoselov, K.S. et al.'
+  year: '2005'
+  citation_verbatim: '31. Novoselov, K.S. et al. Two-dimensional gas of massless Dirac fermions in graphene. Nature 438, 197-200 (2005).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [31]'
+- id: cw32
+  added_date: '2026-06-15'
+  citation_key: '32'
+  author: 'Zhang, Y., Tan, Y.-W., Stormer, H.L. & Kim, P.'
+  year: '2005'
+  citation_verbatim: "32. Zhang, Y., Tan, Y.-W., Stormer, H.L. & Kim, P. Experimental observation of the quantum Hall effect and Berry's phase in graphene. Nature 438, 201-204 (2005)."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [32]'
+- id: cw33
+  added_date: '2026-06-15'
+  citation_key: '33'
+  author: "Cheianov, V.V. & Fal'ko, V.I."
+  year: '2006'
+  citation_verbatim: "33. Cheianov, V.V. & Fal'ko, V.I. Selective transmission of Dirac electrons and ballistic magnetoresistance of n − p junctions in graphene. Phys. Rev. B 74, 041403(R) (2006)."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [33]'
+- id: cw34
+  added_date: '2026-06-15'
+  citation_key: '34'
+  author: 'Dombay, N.& Calogeracos, A.'
+  year: '1999'
+  citation_verbatim: '34. Dombay, N.& Calogeracos, A. Seventy years of the Klein paradox. Phys. Rep. 315, 41–58 (1999).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [34]'
+- id: cw35
+  added_date: '2026-06-15'
+  citation_key: '35'
+  author: 'Katsnelson, M.I., Novoselov, K.S.& Geim, A.K.'
+  year: '2006'
+  citation_verbatim: '35. Katsnelson, M.I., Novoselov, K.S.& Geim, A.K. Klein paradox in graphene. Nature Phys. 2, 620–625 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [35]'
+- id: cw36
+  added_date: '2026-06-15'
+  citation_key: '36'
+  author: 'McClure, J.W.'
+  year: '1956'
+  citation_verbatim: '36. McClure, J.W. Diamagnetism of graphite. Phys. Rev. 104, 666-671 (1956).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [36]'
+- id: cw37
+  added_date: '2026-06-15'
+  citation_key: '37'
+  author: 'Semenoff, G.W.'
+  year: '1984'
+  citation_verbatim: '37. Semenoff, G.W. Condensed-matter simulation of a threedimensional anomaly. Phys. Rev. Lett. 53, 2449-2452 (1984).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [37]'
+- id: cw38
+  added_date: '2026-06-15'
+  citation_key: '38'
+  author: 'DiVincenzo, D.P. & Mele, E.J.'
+  year: '1984'
+  citation_verbatim: '38. DiVincenzo, D.P. & Mele, E.J. Self-consistent effective-mass theory for intralayer screening in graphite intercalation compounds. Phys. Rev. B 29, 1685–1694 (1984).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [38]'
+- id: cw39
+  added_date: '2026-06-15'
+  citation_key: '39'
+  author: 'Silvestrov, P.G. & Efetov, K.B.'
+  year: '2007'
+  citation_verbatim: '39. Silvestrov, P.G. & Efetov, K.B. Quantum dots in graphene. Phys. Rev. Lett. 98, 016802 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [39]'
+- id: cw40
+  added_date: '2026-06-15'
+  citation_key: '40'
+  author: 'Nilsson, J., Castro Neto, A.H., Guinea, F. & Peres, N.M.R.'
+  year: '2010'
+  citation_verbatim: '40. Nilsson, J., Castro Neto, A.H., Guinea, F. & Peres, N.M.R. Transmission through a biased graphene bilayer barrier. Preprint at www.arXiv.org/cond-mat/0607343 (2010).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [40]'
+- id: cw41
+  added_date: '2026-06-15'
+  citation_key: '41'
+  author: "De Martino, A., Dell'Anna, L. & Egger, R."
+  year: '2010'
+  citation_verbatim: "41. De Martino, A., Dell'Anna, L. & Egger, R. Magnetic confinement of massless Dirac fermions in graphene. Preprint at www.arXiv.org/cond-mat/0610290 (2010)."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [41]'
+- id: cw42
+  added_date: '2026-06-15'
+  citation_key: '42'
+  author: 'Silvestrov, P.G. & Efetov, K.B.'
+  year: '2007'
+  citation_verbatim: '42. Silvestrov, P.G. & Efetov, K.B. Quantum dots in graphene. Phys. Rev. Lett. 98, 016802 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [42]'
+- id: cw43
+  added_date: '2026-06-15'
+  citation_key: '43'
+  author: 'Hanson R, Kouwenhoven LP, Petta JR, Tarucha S, and Vandersypen LMK'
+  year: '2007'
+  citation_verbatim: '43. Hanson R, Kouwenhoven LP, Petta JR, Tarucha S, and Vandersypen LMK, Rev. Mod. Phys. 79,1217 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [43]'
+- id: cw44
+  added_date: '2026-06-15'
+  citation_key: '44'
+  author: 'Nakada K, Fujita M, Dresselhaus G, and Dresselhaus MS'
+  year: '1996'
+  citation_verbatim: '44. Nakada K, Fujita M, Dresselhaus G, and Dresselhaus MS, Phys. Rev. B 54, 17954 (1996).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [44]'
+- id: cw45
+  added_date: '2026-06-15'
+  citation_key: '45'
+  author: 'Brey L and Fertig HA'
+  year: '2006'
+  citation_verbatim: '45. Brey L and Fertig HA, Phys. Rev. B 73, 235411 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [45]'
+- id: cw46
+  added_date: '2026-06-15'
+  citation_key: '46'
+  author: 'Son Y-W, Cohen ML, and Louie SG'
+  year: '2006'
+  citation_verbatim: '46. Son Y-W, Cohen ML, and Louie SG, Phys. Rev. Lett. 97, 216803 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [46]'
+- id: cw47
+  added_date: '2026-06-15'
+  citation_key: '47'
+  author: 'Giovannetti G, Khomyakov PA, Brocks G, Kelly PJ, and van den Brink J'
+  year: '2007'
+  citation_verbatim: '47. Giovannetti G, Khomyakov PA, Brocks G, Kelly PJ, and van den Brink J, Phys. Rev. B 76, 073103 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [47]'
+- id: cw48
+  added_date: '2026-06-15'
+  citation_key: '48'
+  author: 'Zhou SY, Gweon GH, Fedorov AV, First PN, de Heer WA, Lee DH, Guinea F, Castro Neto AH, Lanzara A'
+  year: '2007'
+  citation_verbatim: '48. Zhou SY, Gweon GH, Fedorov AV, First PN, de Heer WA, Lee DH, Guinea F, Castro Neto AH, Lanzara A, Nature Mater. 6, 770 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [48]'
+- id: cw49
+  added_date: '2026-06-15'
+  citation_key: '49'
+  author: 'Enderlein C, Kim YS, Bostwick A, Rotenberg E, and Horn K'
+  year: '2010'
+  citation_verbatim: '49. Enderlein C, Kim YS, Bostwick A, Rotenberg E, and Horn K, New Journal of Phys. 12, 033014 (2010).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [49]'
+- id: cw50
+  added_date: '2026-06-15'
+  citation_key: '50'
+  author: 'Trauzettel B, Bulaev DV, Loss D, and Burkard G'
+  year: '2007'
+  citation_verbatim: '50. Trauzettel B, Bulaev DV, Loss D, and Burkard G, Nature Phys. 3 192 (2007).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [50]'
+- id: cw51
+  added_date: '2026-06-15'
+  citation_key: '51'
+  author: 'Recher P, Nilsson J, Burkard G, and Trauzettel B'
+  year: '2009'
+  citation_verbatim: '51. Recher P, Nilsson J, Burkard G, and Trauzettel B, Phys. Rev. B 79, 085407 (2009).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [51]'
+- id: cw52
+  added_date: '2026-06-15'
+  citation_key: '52'
+  author: 'F. Muñoz-Rojas, D. Jacob, J. Fernández-Rossier, and J. Palacios'
+  year: '2006'
+  citation_verbatim: '52. F. Muñoz-Rojas, D. Jacob, J. Fernández-Rossier, and J. Palacios, Coherent transport in graphene nanoconstrictions. PRB 74, 195417 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [52]'
+- id: cw53
+  added_date: '2026-06-15'
+  citation_key: '53'
+  author: 'Reddy, C.D., Ramasubramaniam, A., Shenoy, V.B. & Zhang, Y.-W.'
+  year: '2009'
+  citation_verbatim: '53. Reddy, C.D., Ramasubramaniam, A., Shenoy, V.B. & Zhang, Y.-W. Edge elastic properties of defect-free single-layer graphene sheets. Applied Physics Letters 94, 101904 (2009).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [53]'
+- id: cw54
+  added_date: '2026-06-15'
+  citation_key: '54'
+  author: 'Han, M. Y.;O¨ zyilmaz, B.; Zhang, Y.; Kim, P.'
+  year: '2007'
+  citation_verbatim: '54. Han, M. Y.;O¨ zyilmaz, B.; Zhang, Y.; Kim, P. Phys. ReV. Lett. 2007, 98, 206805.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [54] ("O¨ zyilmaz" OCR umlaut artifact and "ReV." sic)'
+- id: cw55
+  added_date: '2026-06-15'
+  citation_key: '55'
+  author: 'Chen, Z. H.; Lin, Y. M.; Rooks, M. J.; Avouris, P.'
+  year: '2007'
+  citation_verbatim: '55. Chen, Z. H.; Lin, Y. M.; Rooks, M. J.; Avouris, P. Physica E 2007, 40, 228–232.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [55]'
+- id: cw56
+  added_date: '2026-06-15'
+  citation_key: '56'
+  author: 'Geim AK, Novoselov KS.'
+  year: '2007'
+  citation_verbatim: '56. Geim AK, Novoselov KS. The rise of graphene. Nat Mater. 2007 Mar;6(3):183-91.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [56]'
+- id: cw57
+  added_date: '2026-06-15'
+  citation_key: '57'
+  author: 'Geim AK, Novoselov KS.'
+  year: '2007'
+  citation_verbatim: '57. Geim AK, Novoselov KS. The rise of graphene. Nat Mater. 2007 Mar;6(3):183-91.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [57]'
+- id: cw58
+  added_date: '2026-06-15'
+  citation_key: '58'
+  author: 'Trauzettel B, Bulaev D V, Loss D and Burkard G'
+  year: '2007'
+  citation_verbatim: '58. Trauzettel B, Bulaev D V, Loss D and Burkard G 2007 Nat. Phys. 3 192.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [58]'
+- id: cw59
+  added_date: '2026-06-15'
+  citation_key: '59'
+  author: 'Schnez A, Ensslin K, Sigrist M and Ihn T'
+  year: '2008'
+  citation_verbatim: '59. Schnez A, Ensslin K, Sigrist M and Ihn T 2008 arXiv:0810.3216v1.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [59]'
+- id: cw60
+  added_date: '2026-06-15'
+  citation_key: '60'
+  author: 'Peres N M R, Rodriquez J N B, Stauber T and Lopes dos Santos J M B'
+  year: '2008'
+  citation_verbatim: '60. Peres N M R, Rodriquez J N B, Stauber T and Lopes dos Santos J M B 2008 arXiv:0810.4768v'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [60]'
+- id: cw61
+  added_date: '2026-06-15'
+  citation_key: '61'
+  author: 'Chen H-Y, Apalkov V and Chakraborty T'
+  year: '2007'
+  citation_verbatim: '61. Chen H-Y, Apalkov V and Chakraborty T 2007 Phys. Rev. Lett. 98 186803.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [61]'
+- id: cw62
+  added_date: '2026-06-15'
+  citation_key: '62'
+  author: "De Martino A, Dell'Anna L and Egger R"
+  year: '2007'
+  citation_verbatim: "62. De Martino A, Dell'Anna L and Egger R 2007 Phys. Rev. Lett. 98."
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [62]'
+- id: cw63
+  added_date: '2026-06-15'
+  citation_key: '63'
+  author: 'Engel H-A and Loss D'
+  year: '2001'
+  citation_verbatim: '63. Engel H-A and Loss D, Phys. Rev. Lett. 86, 4648 (2001).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [63]'
+- id: cw64
+  added_date: '2026-06-15'
+  citation_key: '64'
+  author: 'Borhani M, Golovach VN, and Loss D'
+  year: '2006'
+  citation_verbatim: '64. Borhani M, Golovach VN, and Loss D, Phys. Rev. B 73, 155311 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [64]'
+- id: cw65
+  added_date: '2026-06-15'
+  citation_key: '65'
+  author: 'Koppens FHL, Buizert C, Tielrooij KJ, Vink IT, Nowack KC, Meunier T, Kouwenhoven LP, and Vandersypen LMK'
+  year: '2006'
+  citation_verbatim: '65. Koppens FHL, Buizert C, Tielrooij KJ, Vink IT, Nowack KC, Meunier T, Kouwenhoven LP, and Vandersypen LMK, Nature 442, 766 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [65]'
+- id: cw66
+  added_date: '2026-06-15'
+  citation_key: '66'
+  author: 'Hanson R, Witkamp B, Vandersypen LMK, Willems van Beveren LH, Elzerman JM, and Kouwenhoven LP'
+  year: '2003'
+  citation_verbatim: '66. Hanson R, Witkamp B, Vandersypen LMK, Willems van Beveren LH, Elzerman JM, and Kouwenhoven LP, Phys. Rev. Lett. 91, 192802 (2003).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [66]'
+- id: cw67
+  added_date: '2026-06-15'
+  citation_key: '67'
+  author: 'Engel HA, Loss D.'
+  year: '2001'
+  citation_verbatim: '67. Engel HA, Loss D. Detection of single spin decoherence in a quantum dot via charge currents. Physical Review Letters. 2001 May;86(20):4648-51.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [67]'
+- id: cw68
+  added_date: '2026-06-15'
+  citation_key: '68'
+  author: 'Nielsen MA and Chuang IL'
+  year: '2000'
+  citation_verbatim: '68. Nielsen MA and Chuang IL, Quantum Computation and Quantum Information, Cambridge University Press (2000).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [68]'
+- id: cw69
+  added_date: '2026-06-15'
+  citation_key: '69'
+  author: 'Burkard G, Loss D, and DiVincenzo DP'
+  year: '1999'
+  citation_verbatim: '69. Burkard G, Loss D, and DiVincenzo DP, Phys. Rev. B 59, 2070 (1999).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [69]'
+- id: cw70
+  added_date: '2026-06-15'
+  citation_key: '70'
+  author: 'Burkard G, Loss D, and DiVincenzo DP'
+  year: '1999'
+  citation_verbatim: '70. Burkard G, Loss D, and DiVincenzo DP, Phys. Rev. B 59, 2070 (1999).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [70]'
+- id: cw71
+  added_date: '2026-06-15'
+  citation_key: '71'
+  author: 'Recher P, Nilsson J, Burkard G, Trauzettel B.'
+  year: '2009'
+  citation_verbatim: '71. Recher P, Nilsson J, Burkard G, Trauzettel B. Bound states and magnetic field induced valley splitting in gate-tunable graphene quantum dots. Physical Review B. 2009 Feb;79(8).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [71]'
+- id: cw72
+  added_date: '2026-06-15'
+  citation_key: '72'
+  author: 'Svore KM, Terhal BM, and DiVincenzo DP'
+  year: '2005'
+  citation_verbatim: '72. Svore KM, Terhal BM, and DiVincenzo DP, Phys. Rev. A 72, 022317 (2005).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [72]'
+- id: cw73
+  added_date: '2026-06-15'
+  citation_key: '73'
+  author: 'Ando T'
+  year: '2000'
+  citation_verbatim: '73. Ando T, J. Phys. Soc. Jpn. 69, 1757 (2000).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [73]'
+- id: cw74
+  added_date: '2026-06-15'
+  citation_key: '74'
+  author: 'Huertas-Hernando D, Guinea F, and Brataas A'
+  year: '2006'
+  citation_verbatim: '74. Huertas-Hernando D, Guinea F, and Brataas A, Phys. Rev. B 74, 155426 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [74]'
+- id: cw75
+  added_date: '2026-06-15'
+  citation_key: '75'
+  author: 'Bulaev DV, Trauzettel B, and Loss D'
+  year: '2008'
+  citation_verbatim: '75. Bulaev DV, Trauzettel B, and Loss D, Phys. Rev. B 77, 235301 (2008).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [75]'
+- id: cw76
+  added_date: '2026-06-15'
+  citation_key: '76'
+  author: 'Kuemmeth F, Ilani S, Ralph D, and McEuen PL'
+  year: '2008'
+  citation_verbatim: '76. Kuemmeth F, Ilani S, Ralph D, and McEuen PL, Nature 452, 448 (2008).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [76]'
+- id: cw77
+  added_date: '2026-06-15'
+  citation_key: '77'
+  author: 'Huertas-Hernando D, Guinea F, and Brataas A'
+  year: '2006'
+  citation_verbatim: '77. Huertas-Hernando D, Guinea F, and Brataas A, Phys. Rev. B 74, 155426 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [77]'
+- id: cw78
+  added_date: '2026-06-15'
+  citation_key: '78'
+  author: 'Petta J. R., et al.'
+  year: '2010'
+  citation_verbatim: '78. Petta J. R., et al. A Coherent Beam Splitter for Electronic Spin States, Science 327, 669 (2010)'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [78]'
+- id: cw79
+  added_date: '2026-06-15'
+  citation_key: '79'
+  author: 'Taylor, J. M. et al.'
+  year: '2005'
+  citation_verbatim: '79. Taylor, J. M. et al., Phys. Rev. Lett. 94, 236803 (2005).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [79]'
+- id: cw80
+  added_date: '2026-06-15'
+  citation_key: '80'
+  author: 'Knill E, Laflamme R, Milburn GJ.'
+  year: '2001'
+  citation_verbatim: '80. Knill E, Laflamme R, Milburn GJ. A scheme for efficient quantum computation with linear optics. Nature. 2001 Jan;409(6816):46-52.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [80]'
+- id: cw81
+  added_date: '2026-06-15'
+  citation_key: '81'
+  author: 'Haffner H, Roos CF, Blatt R.'
+  year: '2008'
+  citation_verbatim: '81. Haffner H, Roos CF, Blatt R. Quantum computing with trapped ions. Physics Reports-Review Section of Physics Letters. 2008 Dec;469(4):155-203.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [81]'
+- id: cw82
+  added_date: '2026-06-15'
+  citation_key: '82'
+  author: 'Bath J. and Turberfield A.J.'
+  year: '2007'
+  citation_verbatim: '82. Bath J. and Turberfield A.J. DNA nanomachines. Nature Nanotechnology, VOL 2 : MAY 2007.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [82]'
+- id: cw83
+  added_date: '2026-06-15'
+  citation_key: '83'
+  author: 'Watson JD, Crick FH.'
+  year: '1953'
+  citation_verbatim: '83. Watson JD, Crick FH. Molecular structure of nucleic acids; a structure for deoxyribose nucleic acid. Nature. 1953 Apr 25;171(4356):737-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [83]'
+- id: cw84
+  added_date: '2026-06-15'
+  citation_key: '84'
+  author: 'Sanger F, Nicklen S, Coulson AR.'
+  year: '1977'
+  citation_verbatim: '84. Sanger F, Nicklen S, Coulson AR. DNA sequencing with chain-terminating inhibitors. Proc Natl Acad Sci U S A. 1977 Dec;74(12):5463-7.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [84]'
+- id: cw85
+  added_date: '2026-06-15'
+  citation_key: '85'
+  author: 'Saiki RK, Scharf S, Faloona F, Mullis KB, Horn GT, Erlich HA, et al.'
+  year: '1985'
+  citation_verbatim: '85. Saiki RK, Scharf S, Faloona F, Mullis KB, Horn GT, Erlich HA, et al. Enzymatic amplification of beta-globin genomic sequences and restriction site analysis for diagnosis of sickle cell anemia. Science. 1985 Dec 20;230(4732):1350-4.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [85]'
+- id: cw86
+  added_date: '2026-06-15'
+  citation_key: '86'
+  author: 'Mao, C and Yu, H.'
+  year: '2006'
+  citation_verbatim: '86. Mao, C and Yu, H. Growing millimeter-sized DNA crystals. SPIE Newsroom, April 2006.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [86]'
+- id: cw87
+  added_date: '2026-06-15'
+  citation_key: '87'
+  author: 'Seeman N C.'
+  year: '1982'
+  citation_verbatim: '87. Seeman N C. Nucleic acid junctions and lattices J. Theor. Biol. 99 237–47, 1982.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [87]'
+- id: cw88
+  added_date: '2026-06-15'
+  citation_key: '88'
+  author: 'Seeman, N. C.'
+  year: '1990'
+  citation_verbatim: '88. Seeman, N. C. De novo design of sequences for nucleic acid structural engineering. J. Biomol. Struct. Dyns 8, 573–581, 1990.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [88]'
+- id: cw89
+  added_date: '2026-06-15'
+  citation_key: '89'
+  author: 'Carbone A., Seeman NC.'
+  citation_verbatim: '89. Carbone A., Seeman NC. Molecular Tiling and DNA Self-assembly. Aspects of Molecular Computing. 61-83,'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [89] (no year printed in source)'
+- id: cw90
+  added_date: '2026-06-15'
+  citation_key: '90'
+  author: 'Winfree E, Yang X, Seeman NC'
+  year: '1998'
+  citation_verbatim: '90. Winfree E, Yang X, Seeman NC (1998b) Universal computation via self-assembly of DNA: Some theory and experiments. In: Landweber LF, Baum EB, editors. DNA-based computers II. Providence, Rhode Island: American Mathematical Society. pp. 191–213.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [90]'
+- id: cw91
+  added_date: '2026-06-15'
+  citation_key: '91'
+  author: 'Winfree E'
+  year: '1998'
+  citation_verbatim: '91. Winfree E Simulations of computing by self-assembly. Technical report CS-TR:1998.22. Pasadena, California: California Institute of Technology. 1998.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [91]'
+- id: cw92
+  added_date: '2026-06-15'
+  citation_key: '92'
+  author: 'Wang H.'
+  year: '1961'
+  citation_verbatim: '92. Wang H. Proving theorems by pattern recognition II. Bell System Tech J 40: 1–42, 1961.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [92]'
+- id: cw93
+  added_date: '2026-06-15'
+  citation_key: '93'
+  author: 'Wang H'
+  year: '1962'
+  citation_verbatim: '93. Wang H An unsolvable problem on dominoes. Technical report BL-30 (II-15). Cambridge, Massachusetts: Harvard Computation Laboratory.1962.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [93]'
+- id: cw94
+  added_date: '2026-06-15'
+  citation_key: '94'
+  author: 'Winfree E., Liu F., Wenzler L A, Seeman N C.'
+  year: '1998'
+  citation_verbatim: '94. Winfree E., Liu F., Wenzler L A, Seeman N C. Design and Self-Assembly of Two-Dimensional DNA Crystals, Nature, VOL 394 6 AUGUST, 1998.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [94]'
+- id: cw95
+  added_date: '2026-06-15'
+  citation_key: '95'
+  author: 'Winfree, E.'
+  year: '2000'
+  citation_verbatim: '95. Winfree, E. Algorithmic Self-Assembly of DNA: Theoretical Motivations and 2D Assembly Experiments. Journal of Biomolecular Structure and Dynamics 11: 263–270, 2000.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [95]'
+- id: cw96
+  added_date: '2026-06-15'
+  citation_key: '96'
+  author: 'Winfree E. and Bekbolatov R.'
+  year: '2003'
+  citation_verbatim: '96. Winfree E. and Bekbolatov R. Proofreading tile sets: Error correction for algorithmic self-assembly. In Proceedings of the Ninth International Meeting on DNA Based Computers. Madison, Wisconsin, June 2003.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [96]'
+- id: cw97
+  added_date: '2026-06-15'
+  citation_key: '97'
+  author: 'Reif, J.H., Sahu, S. and Yin, P.'
+  year: '2006'
+  citation_verbatim: '97. Reif, J.H., Sahu, S. and Yin, P. "Compact Error-Resilient Computational DNA Tilings," Nanotechnology Science and Computation (Chen, J. et al. Eds.), Springer-Verlag, Berlin Heidelberg, pp. 79-103, 2006.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [97]'
+- id: cw98
+  added_date: '2026-06-15'
+  citation_key: '98'
+  author: 'Fujibayashi, K., Murata, S.'
+  year: '2005'
+  citation_verbatim: '98. Fujibayashi, K., Murata, S. "A method of error suppression for self-assembling DNA tiles," DNA Computing 10 (Ferretti et al. Eds.), LNCS 3384, Springer- Verlag Berlin Heidelberg, pp. 113-127, 2005.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [98]'
+- id: cw99
+  added_date: '2026-06-15'
+  citation_key: '99'
+  author: 'Fujibayashi, Yu Zhang D., Winfree E., Murata S.'
+  year: '2008'
+  citation_verbatim: '99. Fujibayashi, Yu Zhang D., Winfree E., Murata S. Error Suppression Mechanisms for DNA Tile Self-Assembly and their Simulations. Nat Comput. Springer, 2008.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [99]'
+- id: cw100
+  added_date: '2026-06-15'
+  citation_key: '100'
+  author: 'Adleman, L.'
+  year: '1994'
+  citation_verbatim: '100. Adleman, L.: Molecular Computation of Solutions to Combinatorial Problems, Science, Vol.266, pp.1021-1024, 1994.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [100]'
+- id: cw101
+  added_date: '2026-06-15'
+  citation_key: '101'
+  author: 'Winfree, E.'
+  year: '1998'
+  citation_verbatim: '101. Winfree, E.: Algorithmic Self-Assembly of DNA, Ph.D Thesis, California Institute of Technology, 1998.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [101]'
+- id: cw102
+  added_date: '2026-06-15'
+  citation_key: '102'
+  author: 'Winfree, E., Yang, X. and Seeman, N. C.'
+  year: '1999'
+  citation_verbatim: '102. Winfree, E., Yang, X. and Seeman, N. C.: Universal Computation via Self-assembly of DNA : Some Theory and Experiments, DNA based Computers 2, DIMACS Series in Discrete Mathematics and Theoretical Computer Science, Vol.44, pp.191-213,1999.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [102]'
+- id: cw103
+  added_date: '2026-06-15'
+  citation_key: '103'
+  author: 'Winfree, E., Liu, F., Wenzler, L., Seeman, N.C.'
+  year: '1998'
+  citation_verbatim: '103. Winfree, E., Liu, F., Wenzler, L., Seeman, N.C.: Design and self-assembly of two-dimensional DNA crystals, Nature, Vol. 394, pp.539-544, 1998.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [103]'
+- id: cw104
+  added_date: '2026-06-15'
+  citation_key: '104'
+  author: 'C. Ferretti, et. al (Eds.)'
+  year: '2004'
+  citation_verbatim: '104. Several papers related to error suppression of DNA tiles are presented in: Preliminary Proceedings of Tenth International Meeting on DNA Computing (Edtors. C. Ferretti, et. al), Milan, 2004.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [104] ("Edtors." sic)'
+- id: cw105
+  added_date: '2026-06-15'
+  citation_key: '105'
+  author: 'Somei, K., Kaneda, S., Fujii, T., and S. Murata'
+  year: '2006'
+  citation_verbatim: '105. Somei, K., Kaneda, S., Fujii, T., and S. Murata, "A microfluidic device for DNA tile self-assembly," DNA Computing 11 (A. Carbone and N.A. Pierce Eds.), LNCS 3892, Springer-Verlag Berlin Heidelberg, pp. 325-335, 2006.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [105]'
+- id: cw106
+  added_date: '2026-06-15'
+  citation_key: '106'
+  author: 'Somei, K., Kaneda, S., Fujii, T., and S. Murata'
+  year: '2006'
+  citation_verbatim: '106. Somei, K., Kaneda, S., Fujii, T., and S. Murata, "A microfluidic device for DNA tile self-assembly," DNA Computing 11 (A. Carbone and N.A. Pierce Eds.), LNCS 3892, Springer-Verlag Berlin Heidelberg, pp. 325-335, 2006.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [106]'
+- id: cw107
+  added_date: '2026-06-15'
+  citation_key: '107'
+  author: 'Huang,M.C., Ye,H., Kuan,Y.K., Li,M.H. and Ying,J.Y.'
+  year: '2009'
+  citation_verbatim: '107. Huang,M.C., Ye,H., Kuan,Y.K., Li,M.H. and Ying,J.Y. (2009) Integrated two-step gene synthesis in a microfluidic device. Lab. Chip, 9, 276–285.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [107]'
+- id: cw108
+  added_date: '2026-06-15'
+  citation_key: '108'
+  author: 'Mueller,S., Coleman,J.R. and Wimmer,E.'
+  year: '2009'
+  citation_verbatim: '108. Mueller,S., Coleman,J.R. and Wimmer,E. (2009) Putting synthesis into biology: a viral view of genetic engineering through de novo gene and genome synthesis. Chem. Biol., 16, 337–347.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [108]'
+- id: cw109
+  added_date: '2026-06-15'
+  citation_key: '109'
+  author: 'Lee CC, Snyder TM, Quake SR.'
+  year: '2010'
+  citation_verbatim: '109. Lee CC, Snyder TM, Quake SR. A microfluidic oligonucleotide synthesizer. Nucleic Acids Res. 2010 May;38(8):2514-21. Epub 2010 Feb 21.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [109]'
+- id: cw110
+  added_date: '2026-06-15'
+  citation_key: '110'
+  author: 'LaBean T.H., Yan H., Kopatsch J., Liu F., Winfree E, Reif J.H., and Seeman N.C.'
+  year: '2000'
+  citation_verbatim: '110. LaBean T.H., Yan H., Kopatsch J., Liu F., Winfree E, Reif J.H., and Seeman N.C. Construction, analysis, ligation, and self-assembly of DNA triple crossover complexes. Journal of the American Chemical Society, 122:1848–1860, 2000.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [110]'
+- id: cw111
+  added_date: '2026-06-15'
+  citation_key: '111'
+  author: 'Yan H, Zhang X, Shen Z, Seeman NC.'
+  year: '2002'
+  citation_verbatim: '111. Yan H, Zhang X, Shen Z, Seeman NC. A robust DNA mechanical device controlled by hybridization topology. Nature. 2002 Jan 3;415(6867):62-5.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [111]'
+- id: cw112
+  added_date: '2026-06-15'
+  citation_key: '112'
+  author: 'Rothemund PW.'
+  year: '2006'
+  citation_verbatim: '112. Rothemund PW. Folding DNA to create nanoscale shapes and patterns. Nature. 2006 Mar 16;440(7082):297-302.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [112]'
+- id: cw113
+  added_date: '2026-06-15'
+  citation_key: '113'
+  author: 'Shih W.M., Quispe J.D., and . Joyce G.F.'
+  year: '2004'
+  citation_verbatim: '113. Shih W.M., Quispe J.D., and . Joyce G.F. A 1.7-kilobase single-stranded DNA that folds into a nanoscale octahedron. Nature, 427(6453):618–621, 2004.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [113] (stray ". " before Joyce sic)'
+- id: cw114
+  added_date: '2026-06-15'
+  citation_key: '114'
+  author: 'Rothemund P.W.K.'
+  year: '2006'
+  citation_verbatim: '114. Rothemund P.W.K., Scaffolded DNA origami: From generalized multicrossovers to polygonal networks Nanotechnology: Science and Computation, pp 3-21 (2006).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [114]'
+- id: cw115
+  added_date: '2026-06-15'
+  citation_key: '115'
+  author: 'Seelig, G., Soloveichi, D., Zhang, D.Y. and Winfree, E.'
+  year: '2006'
+  citation_verbatim: '115. Seelig, G., Soloveichi, D., Zhang, D.Y. and Winfree, E., "Enzyme-Free Nucleic Acid Logic Circuits," Science, 314, pp. 1585-1588, 2006.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [115]'
+- id: cw116
+  added_date: '2026-06-15'
+  citation_key: '116'
+  author: 'Adleman, L.'
+  year: '1994'
+  citation_verbatim: '116. Adleman, L.: Molecular Computation of Solutions to Combinatorial Problems, Science, Vol.266, pp.1021-1024, 1994.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [116]'
+- id: cw117
+  added_date: '2026-06-15'
+  citation_key: '117'
+  author: 'N. C. Seeman, C. D. Mao, T. LaBean, and J. H. Reif'
+  year: '2001'
+  citation_verbatim: '117. N. C. Seeman, C. D. Mao, T. LaBean, and J. H. Reif, "XOR operations by algorithmic assembly of DNA tiles," Biophys. J., pt. 2, vol. 80, no. 1, p. 45, Jan. 2001.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [117]'
+- id: cw118
+  added_date: '2026-06-15'
+  citation_key: '118'
+  author: 'Stojanovic MN, Stefanovic D.'
+  year: '2003'
+  citation_verbatim: '118. Stojanovic MN, Stefanovic D. Deoxyribozyme-based half-adder. Journal of the American Chemical Society. 2003 Jun;125(22):6673-6.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [118]'
+- id: cw119
+  added_date: '2026-06-15'
+  citation_key: '119'
+  author: 'Stojanovic, M.N., Nikic, D.B. and Stefanivic, D.'
+  year: '2003'
+  citation_verbatim: '119. Stojanovic, M.N., Nikic, D.B. and Stefanivic, D. Implicit OR tiling of deoxyribozymes: construction of molecular scale OR, NAND and four input logic gates. J. Serb. Chem Soc. 68, 321-326 (2003).'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [119] ("Stefanivic" sic)'
+- id: cw120
+  added_date: '2026-06-15'
+  citation_key: '120'
+  author: 'Stojanovic MN, Stefanovic D.'
+  year: '2003'
+  citation_verbatim: '120. Stojanovic MN, Stefanovic D. A deoxyribozyme-based molecular automaton. Nat Biotechnol. 2003 Sep;21(9):1069-74.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [120]'
+- id: cw121
+  added_date: '2026-06-15'
+  citation_key: '121'
+  author: 'Stojanovic MN, Mitchell TE, Stefanovic D.'
+  year: '2002'
+  citation_verbatim: '121. Stojanovic MN, Mitchell TE, Stefanovic D. Deoxyribozyme-based logic gates. Journal of the American Chemical Society. 2002 Apr;124(14):3555-61.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [121]'
+- id: cw122
+  added_date: '2026-06-15'
+  citation_key: '122'
+  author: 'Macdonald J, Li Y, Sutovic M, Lederman H, Pendri K, Lu WH, et al.'
+  year: '2006'
+  citation_verbatim: '122. Macdonald J, Li Y, Sutovic M, Lederman H, Pendri K, Lu WH, et al. Medium scale integration of molecular logic gates in an automaton. Nano Letters. 2006 Nov;6(11):2598-603.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [122]'
+- id: cw123
+  added_date: '2026-06-15'
+  citation_key: '123'
+  author: 'Lund K, Manzo AJ, Dabby N, Michelotti N, Johnson-Buck A, Nangreave J, et al.'
+  year: '2010'
+  citation_verbatim: '123. Lund K, Manzo AJ, Dabby N, Michelotti N, Johnson-Buck A, Nangreave J, et al. Molecular robots guided by prescriptive landscapes. Nature. 2010 May 13;465(7295):206-10.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [123]'
+- id: cw124
+  added_date: '2026-06-15'
+  citation_key: '124'
+  author: 'Li JWJ, Tan WH.'
+  year: '2002'
+  citation_verbatim: '124. Li JWJ, Tan WH. A single DNA molecule nanomotor. Nano Letters. 2002 Apr;2(4):315-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [124]'
+- id: cw125
+  added_date: '2026-06-15'
+  citation_key: '125'
+  author: 'Mao CD, Sun WQ, Shen ZY, Seeman NC.'
+  year: '1999'
+  citation_verbatim: '125. Mao CD, Sun WQ, Shen ZY, Seeman NC. A nanomechanical device based on the B-Z transition of DNA. Nature. 1999 Jan;397(6715):144-6.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [125]'
+- id: cw126
+  added_date: '2026-06-15'
+  citation_key: '126'
+  author: 'Yurke B, Turberfield AJ, Mills AP, Jr., Simmel FC, Neumann JL.'
+  year: '2000'
+  citation_verbatim: '126. Yurke B, Turberfield AJ, Mills AP, Jr., Simmel FC, Neumann JL. A DNA-fuelled molecular machine made of DNA. Nature. 2000 Aug 10;406(6796):605-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [126]'
+- id: cw127
+  added_date: '2026-06-15'
+  citation_key: '127'
+  author: 'Tian Y, He Y, Chen Y, Yin P, Mao CD.'
+  year: '2005'
+  citation_verbatim: '127. Tian Y, He Y, Chen Y, Yin P, Mao CD. Molecular devices - A DNAzyme that walks processively and autonomously along a one-dimensional track. Angewandte Chemie-International Edition. 2005;44(28):4355-8.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [127]'
+- id: cw128
+  added_date: '2026-06-15'
+  citation_key: '128'
+  author: 'Kang HZ, Liu HP, Phillips JA, Cao ZH, Kim Y, Chen Y, et al.'
+  year: '2009'
+  citation_verbatim: '128. Kang HZ, Liu HP, Phillips JA, Cao ZH, Kim Y, Chen Y, et al. Single-DNA Molecule Nanomotor Regulated by Photons. Nano Letters. 2009 Jul;9(7):2690-6.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [128]'
+- id: cw129
+  added_date: '2026-06-15'
+  citation_key: '129'
+  author: 'Gu HZ, Chao J, Xiao SJ, Seeman NC.'
+  year: '2010'
+  citation_verbatim: '129. Gu HZ, Chao J, Xiao SJ, Seeman NC. A proximity-based programmable DNA nanoscale assembly line. Nature. 2010 May;465(7295):202-U86.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [129]'
+- id: cw130
+  added_date: '2026-06-15'
+  citation_key: '130'
+  author: 'Pei R, Taylor SK, Stefanovic D, Rudchenko S, Mitchell TE, Stojanovic MN.'
+  year: '2006'
+  citation_verbatim: '130. Pei R, Taylor SK, Stefanovic D, Rudchenko S, Mitchell TE, Stojanovic MN. Behavior of polycatalytic assemblies in a substrate-displaying matrix. Journal of the American Chemical Society. 2006 Oct;128(39):12693-9.'
+  source:
+    path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
+    location: 'References, entry [130]'

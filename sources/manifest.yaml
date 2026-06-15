@@ -1216,6 +1216,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #35 — ''Quantum Computing and Utilizing Organic Molecules in Automation Technology'', DIA-08-1102-005 (recovered from page-1 image read; pdftotext did not surface it), ICOD 10 December 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 10 December 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 55 pages. DIA attachment #33 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. R. Genik, Wayne State University (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_35-DIRD_Quantum_Computing_and_Utilizing_Organic_Molecules_in_Automation_Technology.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-35-quantum-computing-organic-molecules-2010.txt
+    archived_date: '2026-06-15'
+    note: 'Clean-text sibling (VLM page-image read (5 disjoint ranges), confirmed against PaddleOCR + Tesseract; 38 high-signal divergences all settled as shared-OCR-error leave-cases against the page images (0 sibling fixes)) of the OCR-scanned dird-35-quantum-computing-organic-molecules-2010.pdf (paired entry; same path stem). Produced 2026-06-15; zero pages content-blocked. Black Vault FOIA declassification cover-insert (p2) preserved verbatim. Struck-through ''//FOR OFFICIAL USE ONLY'' classification banner transcribed verbatim (strikethrough is presentation, not character content). Figures rendered as bracketed [Figure N: caption] placeholders with legible typeset captions/panel prose transcribed; figure-interior DNA sequences folded into placeholders. Legible inline equations transcribed as body text with Unicode sub/superscripts (e.g. f_Rabi = gu_BB_ac/2h). Redaction markers preserved verbatim: (b)(3):10 USC 424, (b)(6). Source typos kept uncorrected: ''publically'' (p12), ''grapheme'' for graphene (p16), ''miniscule'' (p22), ''threedimensional'', and reference-list OCR/diacritic artifacts (vonMoln''ar, O''''zyilmaz, ''WeinsteinY S'', ''Stefanivic'', ''Edtors.'').'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_36-DIRD_Quantum_Tomography_of_Negative_Energy_States_in_the_Vacuum.pdf
   status: archived
   artifacts:
