@@ -32,10 +32,16 @@ inside one speaker's turn but is attributed to the other still fails.
 Severity.
   - clean live-vs-live mismatch → **error** (schema: "Drift = data error
     routed by route_failure.py to the artifact-data fix role").
+  - anchor landing in a ``foreign-prepared`` / ``foreign-recitation`` turn
+    (an in-room speaker reading their own statement / a document aloud) →
+    the quote's speaker_id IS that known reader, so it is **accepted**; it
+    becomes an **error** only when the read-aloud span is unambiguously
+    bracketed by a single in-room speaker who is NOT the attributed one
+    (a genuine misattribution).
   - unresolvable anchor (timestamp absent / not a caption tick), speaker
-    unmappable between layers, or anchor landing in a ``foreign-*`` /
-    non-conversational turn → **warn** (can't confirm; don't block a commit
-    on resolution ambiguity).
+    unmappable between layers, or anchor landing in a non-speaker foreign
+    turn (music / ad-read / intro / archival / …) → **warn** (can't confirm;
+    don't block a commit on resolution ambiguity).
 
 A quote whose source has no verified attribution sibling is skipped —
 sibling-*presence* is a separate concern (the ``/prepare-transcript-sibling``
@@ -290,6 +296,35 @@ def _id_name(art_id, art_speakers):
     return str(art_id)
 
 
+def _live_ids(speaker_id):
+    """The non-foreign (in-room) speaker ids of a turn's ``speaker_id``
+    (string or mixed-exchange list), or ``[]`` for a foreign-* turn."""
+    vals = speaker_id if isinstance(speaker_id, list) else [speaker_id]
+    return [v for v in vals if isinstance(v, str) and not v.startswith("foreign-")]
+
+
+def _bracketing_live_ids(sibling, anchor_turn):
+    """Sibling-side speaker ids of the nearest live (non-foreign) turn on each
+    side of ``anchor_turn`` — the in-room speaker(s) whose own speech brackets
+    a read-aloud span. A single shared id means one speaker unambiguously owns
+    the surrounding speech (the reader of an OWN-statement/recited span);
+    two means the span sits at a hand-off and the reader is ambiguous from
+    structure alone. Empty when no live neighbor exists on either side."""
+    turns = sibling.get("turns") or []
+    try:
+        idx = next(i for i, t in enumerate(turns) if t is anchor_turn)
+    except StopIteration:
+        return set()
+    out = set()
+    for side in (reversed(turns[:idx]), turns[idx + 1:]):
+        for t in side:
+            live = _live_ids(t.get("speaker_id")) if isinstance(t, dict) else []
+            if live:
+                out.update(live)
+                break
+    return out
+
+
 def check(ctx):
     if ctx.target_type != "transcript":
         return
@@ -395,22 +430,50 @@ def check(ctx):
 
         anchor_sid = anchor_turn.get("speaker_id") if anchor_turn else None
         anchor_lr = anchor_turn.get("line_range") if anchor_turn else None
+        q_ids = set(sid_q if isinstance(sid_q, list) else [sid_q])
 
-        # Anchor turn is foreign-*: the quoted content is recited/read
-        # material whose attribution is the READER's — an editorial call the
-        # sibling cannot confirm. A live neighbor that only enters the span
-        # through the boundary-slop tolerance does not own the quote, so
-        # comparing against it would manufacture a false error (the
-        # weaponized-096 AARO-email-aside quote). Warn, never error.
+        # Anchor turn is foreign-*. `foreign-prepared` (an in-room speaker
+        # reading their OWN written statement) and `foreign-recitation` (an
+        # in-room speaker reading a document aloud) are SPOKEN by a known
+        # in-room person: the quote's speaker_id IS that reader — a declared
+        # speaker (quotes.py enforces that), not an unknown/foreign voice.
+        # Knowing who is reading is the whole point, so there is nothing
+        # editorial to flag — accept it. The one real fault is a contradiction:
+        # the read-aloud span is unambiguously bracketed by a single in-room
+        # speaker who is NOT the attributed one — a genuine misattribution,
+        # which errors like any live mismatch.
         if isinstance(anchor_sid, str) and anchor_sid.startswith("foreign-"):
+            if anchor_sid in ("foreign-prepared", "foreign-recitation"):
+                bracket_art = set()
+                for b in _bracketing_live_ids(sibling, anchor_turn):
+                    art_id = _map_to_artifact(sib_speakers.get(b))
+                    if art_id is not None:
+                        bracket_art.add(art_id)
+                if len(bracket_art) == 1 and not (bracket_art & q_ids):
+                    reader = next(iter(bracket_art))
+                    yield Issue(
+                        ctx.rel, "error",
+                        f"quotes[{i}] ({q.get('id')!r}): anchor {loc} lands in a "
+                        f"{anchor_sid} span (lines {anchor_lr}) read by "
+                        f"{reader} ({_id_name(reader, art_speakers)}), but the "
+                        f"quote is attributed to "
+                        + ", ".join(
+                            f"{e} ({_id_name(e, art_speakers)})"
+                            for e in sorted(q_ids)
+                        ),
+                        check_name=CHECK_NAME,
+                    )
+                continue
+            # Genuinely non-in-room foreign content (music / ad-read / intro /
+            # outro / narration / jingle / archival / other): no in-room
+            # speaker owns these words, so an in-room speaker_id anchored here
+            # points at the wrong tick. Worth a look, not a hard error.
             yield Issue(
                 ctx.rel, "warn",
                 f"quotes[{i}] ({q.get('id')!r}): anchor {loc} lands in a "
-                f"foreign-* turn ({anchor_sid!r}, lines {anchor_lr}) — "
-                f"recited/read content; the declared speaker_id is the reader "
-                f"attribution (editorial), not auto-cross-checked"
-                + (f"; live speaker(s) within boundary slop: "
-                   f"{sorted(set(live_sibling_ids))}" if live_sibling_ids else ""),
+                f"non-speaker foreign turn ({anchor_sid!r}, lines {anchor_lr}) "
+                f"— verify the [MM:SS] anchor points at in-room speech, not "
+                f"{anchor_sid} content",
                 check_name=CHECK_NAME,
             )
             continue
@@ -442,7 +505,6 @@ def check(ctx):
             )
             continue
 
-        q_ids = set(sid_q if isinstance(sid_q, list) else [sid_q])
         if expected & q_ids:
             continue  # consistent
 
