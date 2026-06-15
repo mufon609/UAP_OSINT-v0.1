@@ -10,6 +10,9 @@
 #                                              fire on bad data, no false positives
 #      scripts/tests/test_anchor_resolves.py — `¶ "<phrase>"` anchors resolve to
 #                                              exactly one spot (0x / 2+ both error)
+#      scripts/tests/test_quote_source_declared.py — every quotes[].source.path
+#                                              is in primary_sources[] (no double-
+#                                              fire with the manifest check)
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -135,6 +138,7 @@ steps=(
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
     $'test_location_bans\tpython3 scripts/tests/test_location_bans.py'
     $'test_anchor_resolves\tpython3 scripts/tests/test_anchor_resolves.py'
+    $'test_quote_source_declared\tpython3 scripts/tests/test_quote_source_declared.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'

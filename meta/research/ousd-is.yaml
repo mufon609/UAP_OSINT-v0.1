@@ -87,6 +87,8 @@ primary_sources:
   format: html
 - path: government/dvids-kozik-portrait-page-20260501.html
   format: html
+- path: news/nsi-speaker-series-ipmo-holly-20250401.html
+  format: html
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
   statutory_authority: 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020)

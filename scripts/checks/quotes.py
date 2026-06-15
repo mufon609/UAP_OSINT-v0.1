@@ -91,6 +91,24 @@ def check(ctx):
         for cid in (q.get("corroborated_by") or [])
     }
 
+    # Sources this artifact declares it draws on. Every quote's source.path
+    # must be one of them: a quote IS the artifact drawing on a source
+    # (schema: primary_sources = "sources this artifact draws on"), so a
+    # quoted path absent from primary_sources[] is an undeclared source.
+    # Beyond the consistency defect, an undeclared path routes the source
+    # around the primary_sources-keyed sibling gate (ocr_sibling_presence /
+    # transcript_sibling_presence iterate primary_sources[], NOT quotes[]) —
+    # a degraded source quoted but not declared never gets its mandatory
+    # sibling, so verbatim_quotes falls back to the corrupt text layer and
+    # the quote matches itself. Empty set => primary_sources is missing /
+    # malformed; primary_sources.py owns that diagnostic, so the membership
+    # test below is skipped in that case (guarded inline) rather than piling
+    # a per-quote error onto a single top-level defect.
+    primary_source_paths = {
+        s.get("path") for s in entries(ctx.data, "primary_sources")
+        if isinstance(s, dict) and s.get("path")
+    }
+
     for i, q in enumerate(quotes):
         if not isinstance(q, dict):
             continue
@@ -117,13 +135,29 @@ def check(ctx):
                 f"'path' and 'location'",
                 check_name=CHECK_NAME,
             )
-        if src.get("path") and src["path"] not in ctx.manifest_paths:
-            yield Issue(
-                ctx.rel, "error",
-                f"quotes[{i}] ({q.get('id')!r}): source.path "
-                f"{src['path']!r} not in sources/manifest.yaml",
-                check_name=CHECK_NAME,
-            )
+        path = src.get("path")
+        if path:
+            if path not in ctx.manifest_paths:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): source.path "
+                    f"{path!r} not in sources/manifest.yaml",
+                    check_name=CHECK_NAME,
+                )
+            elif primary_source_paths and path not in primary_source_paths:
+                # Registered source, but not declared in THIS artifact's
+                # primary_sources[]. if/elif (not a second independent if)
+                # so a path absent from the manifest fires once, not twice —
+                # the manifest miss is the more fundamental defect and wins.
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): source.path {path!r} is "
+                    f"not in this artifact's primary_sources[] — a quote may "
+                    f"only draw on a declared primary source. Add it to "
+                    f"primary_sources[] (which also subjects a degraded "
+                    f"source to the sibling gate), or correct the path.",
+                    check_name=CHECK_NAME,
+                )
 
         # Reject extraction-anchored location forms. Canonical forms are
         # source-anchored: ``p. N, ¶M``, ``¶N``, ``[MM:SS]``, ``p. N``.

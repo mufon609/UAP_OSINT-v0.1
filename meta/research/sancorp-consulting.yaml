@@ -109,6 +109,10 @@ primary_sources:
     format: pdf
     content_block: 'None'
     quote_corroboration: '2026-06-11: 2 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:16bda7077059'
+  - path: government/usaspending-hq003424a0023.txt
+    format: txt
+  - path: government/usaspending-hq003425a0001.txt
+    format: txt
 document_intrinsic:
   contracting_agency: 'Washington Headquarters Services'
   period_of_performance: '2018-09-27 — ongoing'

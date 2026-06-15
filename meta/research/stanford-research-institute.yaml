@@ -55,6 +55,8 @@ primary_sources:
   quote_corroboration: '2026-06-11: 5 quote(s) corroborated against the OCR engine reads; 0 contested; sibling sha256:c626b3e5bf73'
 - path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   format: pdf
+- path: government/solfoundation-vallee-people-page-20260517.html
+  format: html
 
 document_intrinsic:
   founded_date: '1946'
