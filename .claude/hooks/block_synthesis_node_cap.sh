@@ -28,7 +28,7 @@ case "$cmd" in
     *) exit 0 ;;
 esac
 
-uncommitted="$(cd "$REPO_ROOT" && git status --porcelain -- people organizations 2>/dev/null \
+uncommitted="$(cd "$REPO_ROOT" && git status --porcelain -uall -- people organizations 2>/dev/null \
     | grep -E '^(\?\?|A.) (people|organizations)/[^/]+\.md$')"
 
 if [ -n "$uncommitted" ]; then

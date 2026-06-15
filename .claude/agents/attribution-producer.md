@@ -1,7 +1,7 @@
 ---
 name: attribution-producer
 description: Semantically parse ONE label-less transcript into a draft speaker-attribution sibling YAML — turn boundaries as line ranges, never quoted text. The producer half of /prepare-transcript-sibling; a separate verifier agent re-checks the draft against the same source. EMITS a draft to .scratch/drafts/ — never writes sources/.
-tools: Read, Write
+tools: Read, Write, Edit
 ---
 
 # Attribution producer

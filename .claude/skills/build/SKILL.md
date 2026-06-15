@@ -12,6 +12,7 @@ allowed-tools:
   - Bash(python3 scripts/build/research-scaffold.py *)
   - Bash(python3 scripts/build/validate-research.py *)
   - Bash(python3 scripts/build/build-state.py *)
+  - Bash(python3 scripts/tools/ocr-consensus.py *)
   - Bash(python3 scripts/tools/route_failure.py *)
   - Bash(python3 scripts/checks/_phases.py *)
 ---
