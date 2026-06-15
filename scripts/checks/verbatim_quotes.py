@@ -31,10 +31,12 @@ Requires ``pdftotext`` for PDF sources (poppler-utils on Linux);
 HTML / TXT sources read directly via ``lib._common.extract_source_text``.
 PDFs flagged ``extraction_type: ocr-scan`` / ``extraction-lossy`` in
 ``sources/manifest.yaml`` prefer a same-stem ``.txt`` sibling (clean
-transcription) over ``pdftotext`` output. Binary-by-design sources
-(``image`` / ``video`` / ``audio`` per manifest format) warn rather
-than error — the check can't substring-match against bytes that
-aren't text.
+transcription) over ``pdftotext`` output; an ``image`` source reads a
+same-stem ``.txt`` sibling when one is committed (a book delivered as
+page images, transcribed). An ``image`` source WITHOUT a sibling is
+**accepted** as a non-text reference — the archived image is the
+reference and the ``image`` format tag labels it. ``video`` / ``audio``
+**warn** (quote them via a companion transcript, not the binary).
 """
 
 from checks import Issue
@@ -86,14 +88,21 @@ def check(ctx):
             continue
         source_text = extract_source_text(source_file)
         if source_text is None:
-            # Distinguish binary-by-design (per BINARY_FORMATS) from
-            # extraction-infrastructure failure. pdftotext didn't fail
-            # on a .mp4; it was never going to run. Binary-source-citing
-            # quotes require manual contributor verification — the
-            # validator can't substring-match against bytes that aren't
-            # text. Frame the warning accordingly.
+            # source_text is None for three distinct reasons; they are NOT the
+            # same severity. (A committed .txt sibling would have made an
+            # image / ocr-scan source non-None and verified the quote above.)
             fmt = manifest_format(rel_source)
+            if fmt == "image":
+                # An archived image is a legitimate non-text reference. Without
+                # a committed sibling the quote is ACCEPTED as an image
+                # reference — the `image` format tag labels it and the bytes are
+                # archived, so a permanent unclearable warn is pure noise. (A
+                # book delivered as page images is a different route: it earns a
+                # real text sibling and is verified, not accepted on faith.)
+                continue
             if fmt in BINARY_FORMATS:
+                # video / audio: quote it via a companion transcript, not the
+                # binary directly — the validator can't substring-match bytes.
                 yield Issue(
                     ctx.rel, "warn",
                     f"quotes[{i}] ({qid!r}): cites sources/{rel_source} "
@@ -102,6 +111,8 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
             else:
+                # Extraction-infrastructure failure: pdftotext missing/failed on
+                # a format that SHOULD have yielded text.
                 yield Issue(
                     ctx.rel, "warn",
                     f"quotes[{i}] ({qid!r}): cites sources/{rel_source} but "

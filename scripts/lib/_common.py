@@ -902,6 +902,8 @@ def extract_source_text(source_path):
       - .json           raw read (e.g., archived X.com tweet payloads —
                         the JSON contains tweet body text as string fields
                         that the tokenizer can pull meaningful tokens from)
+      - image           same-stem .txt sibling if one is committed (a verified
+                        transcription); otherwise None (no text layer)
     Returns None for any other extension or extraction failure.
     """
     if source_path in _source_text_cache:
@@ -946,6 +948,21 @@ def extract_source_text(source_path):
             result = source_path.read_text(encoding="utf-8", errors="replace")
         except OSError:
             result = None
+    elif FORMAT_BY_EXT.get(suffix) == "image":
+        # An image carries no text layer. If a contributor has committed a
+        # same-stem `.txt` sibling — a verified transcription, e.g. a book
+        # delivered as page images and transcribed to one text file — read
+        # that. Otherwise return None: the caller (verbatim_quotes) treats the
+        # archived image as a non-text reference and accepts the quote rather
+        # than warning forever; it does NOT manufacture a sibling.
+        sibling = source_path.with_suffix(".txt")
+        if sibling.exists():
+            try:
+                result = _strip_sibling_form_feeds(
+                    sibling.read_text(encoding="utf-8", errors="replace")
+                )
+            except OSError:
+                result = None
     if result is not None:
         # Merge line-wrap hyphenation (`Geospatial-\nIntelligence`) — but only
         # when a line break actually separates the two halves, and NEVER across

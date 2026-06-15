@@ -159,6 +159,11 @@ def check(ctx):
         source_text = extract_source_text(source_file)
         if source_text is None:
             fmt = manifest_format(rel_source)
+            if fmt == "image":
+                # Archived image = a legitimate non-text reference; accept it
+                # (see verbatim_quotes for the rationale). A committed .txt
+                # sibling would have verified the citation above.
+                continue
             if fmt in BINARY_FORMATS:
                 yield Issue(
                     ctx.rel, "warn",

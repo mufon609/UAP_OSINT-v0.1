@@ -16,6 +16,8 @@
 #      scripts/tests/test_speaker_attribution_consistency.py — foreign-prepared/
 #                                              recitation accepted (known reader),
 #                                              contradiction errors, music/etc. warn
+#      scripts/tests/test_image_source_disposition.py — image w/o sibling accepted,
+#                                              w/ .txt sibling verified, video warns
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -143,6 +145,7 @@ steps=(
     $'test_anchor_resolves\tpython3 scripts/tests/test_anchor_resolves.py'
     $'test_quote_source_declared\tpython3 scripts/tests/test_quote_source_declared.py'
     $'test_speaker_attribution_consistency\tpython3 scripts/tests/test_speaker_attribution_consistency.py'
+    $'test_image_source_disposition\tpython3 scripts/tests/test_image_source_disposition.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'
