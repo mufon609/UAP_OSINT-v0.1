@@ -98,6 +98,19 @@ the node's quote against it. The sibling is verified at creation; the node
 quote is verified against the sibling — two checks, not one, before a
 degraded source is allowed to speak.
 
+**6. Image sources are referenced, not text-matched.** Some sources are
+images — a photograph, a screenshot of a profile, a scanned page. An image
+has no text layer, so a quote drawn from one cannot be substring-checked: it
+rests on the archived image itself, read in-session, and the `image` format
+tag in the citation is the label that says so. The verbatim check therefore
+**accepts** such a quote rather than flagging it on every run — it is
+*faithful to the image*, not machine-verified — so when a quote cites a
+`.jpg` / `.png`, the image is the thing to open and weigh. Two deliberate
+exceptions: a book or long document delivered as page images earns a verified
+text transcription (a sibling, per point 5) whose quotes *are*
+substring-checked against it; and video / audio quotes are expected to cite a
+companion transcript, not the binary itself.
+
 **What this does and does not guarantee.** "Verified" means *the quote is
 faithful to the archived primary source* — nothing more, nothing less. It
 does **not** mean the source is telling the truth. Whether a witness is
