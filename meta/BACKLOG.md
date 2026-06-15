@@ -108,6 +108,47 @@ _(none)_
 
 No upstream blockers; safe to pick up in any session. Default-focus tier.
 
+### C1 — Ingest a book delivered as page images into a verified text transcription
+
+A book (or any long document) delivered as a directory of page images — cover,
+back, and each non-blank page — should become a single verified `.txt`
+transcription that serves as the citeable primary source. This is far more
+content than the repo ingests today (single sources, not multi-hundred-page
+collections), so the route must be deliberate, not an afterthought.
+
+The transcription machinery already exists and is reusable: the VLM page-image
+read + dual-OCR consensus (`scripts/tools/ocr-consensus.py`) and the
+`ocr-page-producer` / `ocr-page-verifier` agents, which already read page
+IMAGES one at a time and settle divergences against them. What is missing is
+image-directory input: `ocr-consensus.py` is bound to PDF (`pdfinfo` for page
+count, `pdftoppm` to rasterize). Generalize it to accept a directory/list of
+page images (skip rasterization; page count from the file list), and generalize
+the `/prepare-ocr-sibling` skill (or add a sibling skill) to dispatch the
+producers across image-file ranges the way it fans out over PDF page ranges.
+`extract_source_text` already reads a committed `.txt` sibling for an image
+source, and such a transcription earns real verification (a quote that does not
+match the sibling errors), so the quote-citation rail is already in place.
+
+Open design considerations to settle before building:
+- **Assembly target.** After transcribing, consider combining the pages into a
+  text-layer (searchable) PDF, which would then ingest through the existing
+  text-native PDF route and sidestep any image-collection manifest schema.
+  Weigh this against registering the `.txt` as the primary source with the
+  page-image directory as archived provenance.
+- **Manifest convention.** No "collection" entry exists today (the manifest
+  registers single artifacts). Decide: txt-as-primary + image-dir provenance, a
+  new image-collection entry, or the text-PDF above.
+- **Scale.** OCR cost is per-page; a multi-hundred-page book is a long consensus
+  run with content-filter blocks handled per page — confirm the scratch layout,
+  caching, and single-sibling assumptions hold at that size before committing to
+  a real book.
+- **Location grammar.** The transcription is flat text (no synthetic page
+  markers), so book quotes anchor via the `¶ "<leading phrase>"` descriptive
+  form that resolves against the sibling.
+
+**Blocks:** none.
+**Blocked by:** none.
+
 ### C2 — Investigate whether the Description "no-duplication" convention should relax
 
 The maintainer wants `## Description` to read as a well-defined summary that may
