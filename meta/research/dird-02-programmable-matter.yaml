@@ -20,6 +20,23 @@ context_extrinsic:
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_02-DIRD_Aerospace_Applications_of_Programmable_Matter.pdf
   quote_attribution: 'DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. W. McCarthy, Programmable Matter Corporation (attachment 23, short title "Aerospace Applications of Programmable Matter").'
+associated_entities:
+- /organizations/aawsap
+- /organizations/ashrae
+- /organizations/california-institute-of-technology
+- /organizations/dia
+- /organizations/doe
+- /organizations/ibm
+- /organizations/lawrence-berkeley-national-laboratory
+- /organizations/nasa
+- /organizations/national-institute-of-standards-and-technology
+- /organizations/ravenbrick
+- /organizations/research-triangle-institute
+- /organizations/the-black-vault
+- /people/john-greenewald
+- /people/r-bacon
+- /people/w-mccarthy
+- /documents/dia-aatip-products-list-2018
 quotes:
 - id: q1
   added_date: '2026-05-23'

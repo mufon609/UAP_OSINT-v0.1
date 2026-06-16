@@ -361,14 +361,24 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/john-greenewald`]
+- [`/people/r-bacon`]
 - [`/people/w-mccarthy`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/ashrae`]
+- [`/organizations/california-institute-of-technology`]
 - [`/organizations/dia`]
+- [`/organizations/doe`]
+- [`/organizations/ibm`]
 - [`/organizations/lawrence-berkeley-national-laboratory`]
+- [`/organizations/nasa`]
+- [`/organizations/national-institute-of-standards-and-technology`]
 - [`/organizations/ravenbrick`]
+- [`/organizations/research-triangle-institute`]
+- [`/organizations/the-black-vault`]
 
 ### Documents
 
