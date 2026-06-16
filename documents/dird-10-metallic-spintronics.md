@@ -433,14 +433,30 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### People
 
 - [`/people/allan-macdonald`]
+- [`/people/gilbert`]
+- [`/people/h-gomonay`]
+- [`/people/j-slonczewski`]
 - [`/people/john-greenewald`]
+- [`/people/luc-berger`]
 - [`/people/maxim-tsoi`]
+- [`/people/n-anthony`]
+- [`/people/n-dai`]
+- [`/people/n-mott`]
+- [`/people/s-kiselev`]
+- [`/people/s-urazhdin`]
+- [`/people/v-loktev`]
+- [`/people/w-rippard`]
+- [`/people/x-tang`]
+- [`/people/y-xu`]
+- [`/people/z-wei`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
+- [`/organizations/international-technology-roadmap-for-semiconductors`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/university-of-texas-at-austin`]
 
 ### Documents
 
