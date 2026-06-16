@@ -35,7 +35,11 @@ reasoning — the independence is the discipline. Read the `description` + every
 - **Over-inclusion.** Flag any producer entry that violates a carve-out: a bare
   reference-list-only citation (named in `## References` but NOT discussed in
   narrative), an entity the source does not actually name, or a "named thing"
-  the schema has no node-type to host (a material/device/vehicle model). NOTE:
+  the schema has no node-type to host (a material/device/vehicle model; or an
+  **eponym-only namesake** — a person named only inside a principle / effect /
+  equation / lens / projection or a device/vehicle/artifact name, e.g. "Fermat's
+  principle" / "Maxwell's fish-eye lens" / "the Horten VIII", who neither acts in
+  the narrative nor is a discussed cited author). NOTE:
   a redacted / externally-attested author and the institution attributed to it
   in `extrinsic_authorship` are NOT over-inclusions — they ARE associated
   entities (ingesting the attribution is the relevance decision). Likewise an

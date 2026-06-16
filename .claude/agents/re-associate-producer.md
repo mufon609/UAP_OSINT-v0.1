@@ -65,8 +65,14 @@ quote text), so without this field they vanish from `## Associated Nodes`.
   bare citation — it is in.
 - **No host node-type.** Drop a named thing ONLY when the schema has no node type
   to host it — a bare material/alloy, a device/product/vehicle MODEL, a named
-  algorithm/software with no `/documents/` discussion. This is the ONLY ground
-  besides the bibliography. A named organization or person in body prose is
+  algorithm/software with no `/documents/` discussion, or an **eponym-only
+  namesake** (a real person named ONLY inside an eponymous term — a
+  principle/effect/equation/law/lens/projection, or a device/vehicle/artifact
+  named after them: "Fermat's principle", "Maxwell's fish-eye lens", "the Horten
+  VIII" — who neither acts in the narrative nor is a discussed cited author; the
+  surname labels the thing, not the person, so link nothing. A person who acts —
+  "Pauli proposed…", "Shor presented…" — or whose cited work the prose discusses
+  IS linked). This is the ONLY ground besides the bibliography. A named organization or person in body prose is
   ALWAYS linked, however incidental the mention ("Even NASA's…" and "as IBM's…"
   alike) — there is **no "illustrative comparator / name-drop / not
   node-worthy"** filter; that framing is the editorial bias this pass removes. A

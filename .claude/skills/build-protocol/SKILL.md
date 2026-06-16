@@ -212,7 +212,13 @@ quote; (2) a bare `## References` / `cited_works` entry is not exploded into
 per-citation links — the bibliography is an authorship-network dimension, not
 navigation — UNLESS that work / author is *also* discussed in argument prose (a
 discussed cited author is a `/people/` entity; a discussed work is a
-`/documents/` node). `## Associated Nodes` is auto-generated (never hand-edited)
+`/documents/` node). The same discussed-vs-label line governs an **eponymous
+term**: a person named ONLY as the namesake of a principle / effect / equation /
+lens / projection — or of a device / vehicle / artifact ("Maxwell's fish-eye
+lens", "the Horten VIII", a "Loedding Flying Disc" drawing) — is NOT a `/people/`
+entity when they neither act in the narrative nor are a discussed cited author;
+the surname labels the thing (which itself has no host node-type), it does not
+engage the person. `## Associated Nodes` is auto-generated (never hand-edited)
 by `associate.py` from the inline wraps ∪ `associated_entities`;
 `prose_entity_link` (blocking check) is the narrow mechanical guard for an
 already-built entity named in prose but left unwrapped.
