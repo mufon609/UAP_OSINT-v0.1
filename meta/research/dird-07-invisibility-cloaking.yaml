@@ -272,6 +272,22 @@ naming_quirks:
   location: 'title-page identity block vs. AAWSAP products list attachment 7'
   source_path: government/dird-07-invisibility-cloaking-20100302.pdf
   resolution: disputed
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /organizations/aawsap
+- /organizations/british-museum
+- /organizations/dia
+- /organizations/science
+- /organizations/scientific-american
+- /organizations/the-black-vault
+- /organizations/university-of-st-andrews
+- /organizations/university-of-tokyo
+- /people/david-schurig
+- /people/david-smith
+- /people/h-wells
+- /people/john-greenewald
+- /people/john-pendry
+- /people/ulf-leonhardt
 cited_works:
   - id: cw1
     added_date: '2026-05-25'

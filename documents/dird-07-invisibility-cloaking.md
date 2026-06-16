@@ -323,12 +323,23 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/david-schurig`]
+- [`/people/david-smith`]
+- [`/people/h-wells`]
+- [`/people/john-greenewald`]
+- [`/people/john-pendry`]
 - [`/people/ulf-leonhardt`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/british-museum`]
 - [`/organizations/dia`]
+- [`/organizations/science`]
+- [`/organizations/scientific-american`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-st-andrews`]
+- [`/organizations/university-of-tokyo`]
 
 ### Documents
 
