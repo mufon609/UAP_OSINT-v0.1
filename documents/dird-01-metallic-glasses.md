@@ -428,12 +428,15 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/john-greenewald`]
 - [`/people/t-hufnagel`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/darpa`]
 - [`/organizations/dia`]
+- [`/organizations/the-black-vault`]
 
 ### Documents
 
