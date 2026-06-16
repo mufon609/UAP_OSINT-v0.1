@@ -205,25 +205,25 @@ list of every source-named entity), unioned into `## Associated Nodes` by
 `associate.py` and validated by `scripts/checks/associated_entities.py`. It
 exists because an entity named only inside a verbatim quote can't be wrapped
 (the verbatim check rejects a link in `quote.text`), so a thin `description`
-used to silently drop it. DIRD-33/34/35 are re-swept. **Two things remain, both
+used to silently drop it. DIRD-33/34/35 are re-swept, and the **`/re-associate`
+skill + `re-associate-producer` / `re-associate-verifier` agents are built** —
+the link-layer-only pass (re-read source → producer enumerates the complete
+source-named-entity set → independent verifier challenges completeness/correctness
+→ apply to `associated_entities` → re-render). **Two things remain, both
 corpus-scale:**
 
-**1. Sweep the rest of the corpus.** Every node built before the field
+**1. Run the sweep across the corpus.** Every node built before the field
 under-links — the gap is corpus-wide and homogeneous (the DIRD series alone ran
-0–14 people-links across documents of the same kind). A narrow, standalone agent
-(and `/re-associate` skill) whose entire job is the link layer: take one
-already-built node, re-read its archived primary source, and populate
-`associated_entities` with the COMPLETE set of every load-bearing entity the
-source names — institutions plus every researcher / cited author the prose
-*discusses* (NOT bare reference-list entries; References stay alone) — then
-re-render so `associate.py` regenerates `## Associated Nodes`. It changes nothing
-else: no quotes, no facts, no prose rewording. It edits only the artifact's
-`associated_entities` field (plus an inline wrap for any entity it also names in
-`description`), never the node body (render-only, CLAUDE.md §6) and never the
-`## Associated Nodes` section directly. Verbatim + prose-drift gates read clean
-before and after. The standing tool for keeping new ingests honest, too —
-including the recent government-document releases, which are the same shape
-(name-dense PDFs) and must be ingested under this rule from the start.
+0–14 people-links across documents of the same kind). Run `/re-associate` against
+each pre-rule node, one at a time, committing each before the next (an agent's
+effective Bash can `git restore` uncommitted work). The skill changes nothing but
+the link layer: no quotes, no facts, no prose rewording; it edits only the
+artifact's `associated_entities` field (plus an inline wrap for any entity the
+`description` already names), never the node body and never the `## Associated
+Nodes` section directly; verbatim + prose-drift gates read clean before and after.
+The same skill is the standing pass for keeping new ingests honest — including the
+recent government-document releases (same name-dense-PDF shape; ingest under this
+rule from the start).
 
 **2. Flip the field to required.** Once the corpus is swept, make
 `associated_entities` REQUIRED on document / transcript / media target types
