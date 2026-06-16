@@ -652,6 +652,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/organizations/the-black-vault`]
 - [`/organizations/university-of-florida`]
 - [`/organizations/university-of-michigan`]
+- [`/organizations/wayne-state-university`]
 
 ### Documents
 

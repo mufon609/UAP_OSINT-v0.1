@@ -416,6 +416,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/wayne-state-university`]
 
 ### Documents
 

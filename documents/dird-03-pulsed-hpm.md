@@ -450,6 +450,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/organizations/dia`]
 - [`/organizations/diehl-munitionssysteme`]
 - [`/organizations/ioffe-physical-technical-institute`]
+- [`/organizations/jw-enterprises`]
 - [`/organizations/power-spectra`]
 - [`/organizations/sandia-national-laboratories`]
 - [`/organizations/the-black-vault`]
