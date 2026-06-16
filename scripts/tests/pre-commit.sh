@@ -10,6 +10,8 @@
 #                                              fire on bad data, no false positives
 #      scripts/tests/test_anchor_resolves.py — `¶ "<phrase>"` anchors resolve to
 #                                              exactly one spot (0x / 2+ both error)
+#      scripts/tests/test_associated_entities.py — associated_entities shape +
+#                                              prose-wrap superset (silent absent)
 #      scripts/tests/test_quote_source_declared.py — every quotes[].source.path
 #                                              is in primary_sources[] (no double-
 #                                              fire with the manifest check)
@@ -143,6 +145,7 @@ steps=(
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
     $'test_location_bans\tpython3 scripts/tests/test_location_bans.py'
     $'test_anchor_resolves\tpython3 scripts/tests/test_anchor_resolves.py'
+    $'test_associated_entities\tpython3 scripts/tests/test_associated_entities.py'
     $'test_quote_source_declared\tpython3 scripts/tests/test_quote_source_declared.py'
     $'test_speaker_attribution_consistency\tpython3 scripts/tests/test_speaker_attribution_consistency.py'
     $'test_image_source_disposition\tpython3 scripts/tests/test_image_source_disposition.py'

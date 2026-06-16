@@ -255,6 +255,22 @@ naming_quirks:
   location: 'Chapter 3, "Lamoureaux researched in 1999" paragraph (after Figure 3); the source''s own reference entry [26] gives "Lamoureux, T."'
   source_path: government/dird-34-cognitive-limits-unmanned-spacecraft-2010.pdf
   resolution: preserve-as-sic-in-quotes
+associated_entities:
+- /organizations/aawsap
+- /organizations/dia
+- /organizations/the-black-vault
+- /people/c-boag
+- /people/f-graydon
+- /people/g-wilson
+- /people/john-greenewald
+- /people/kit-green
+- /people/m-cummings
+- /people/r-armstrong
+- /people/richard-genik
+- /people/ruff
+- /people/s-dixon
+- /people/t-lamoureux
+- /documents/dia-aatip-products-list-2018
 description: 'Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft. This Defense Intelligence Reference Document in the Defense Futures series, 15 December 2010, with an ICOD of 8 September 2010 and document number DIA-08-1101-001, UNCLASSIFIED//FOR OFFICIAL USE ONLY, is one of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]) Advanced Aerospace Weapons System Applications (AAWSA) Program ([`/organizations/aawsap`]). The Prepared by and Author lines read (b)(3):10 USC 424 and (b)(6); the author is identified on another Defense Intelligence Agency document ([`/documents/dia-aatip-products-list-2018`]). This document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]).
 
 
@@ -264,7 +280,7 @@ description: 'Cognitive Limits on Simultaneous Control of Multiple Unmanned Spac
   Mental workload in a subject performing a primary task is measured by three approaches — subjective evaluation, performance measures, and real-time physiological measures, with increased workload exhibited by changes in the autonomic nervous system (ANS) — and the research progress is shown in studies of cognitive workload for air traffic controllers and in command of multiple semi-automated vehicles. The cognitive limits on the number of craft capable of simultaneous control are 16 for simple destination selection, 7 for moderately complex piloting and/or mission task completion, and 4 for complex heterogeneous craft. The number of four is consistent with standard estimates of human working memory being able to handle three to five disparate objects at a time, and the most effective augmentations hold information for quick visual retrieval that the brain would otherwise keep in working memory. Perceived complexity is the number one factor in determining workload; physiological states near high workload can be classified as operational or overloaded in more than 98% of the cases; and alerts need to contain a level of noise (false alarms) of 20-25% to avoid automation bias.
 
 
-  The Conclusions state there is a lack of research in the area of cognitive limits on the number of spacecraft one pilot could control given any mission scenario, and that future research may increase the automation component of aircraft and mission control, but there is no evidence to date that a complete mental picture can be maintained, even with external working memory augmentation, for more than about 16 objects at one time. Physiological variables can be objectively employed to indicate overload, with this classification to be achieved with near perfect accuracy within five years of specific studies being commenced, and the 5-year timeframe should see spacecraft-specific simulator studies begin to appear in major peer-reviewed journals. The Discussion points to the cognitive organization of multitasking as the major advance to come in the next 40 years. The body''s one generation-after-next reference, "see Genik12", points to a 2005 paper on cognitive avionics and watching spaceflight crews think by Genik, R. J., 2nd ([`/people/richard-genik`]), with Green, C. C. ([`/people/kit-green`]), Graydon, F. X., and Armstrong, R. E.'
+  The Conclusions state there is a lack of research in the area of cognitive limits on the number of spacecraft one pilot could control given any mission scenario, and that future research may increase the automation component of aircraft and mission control, but there is no evidence to date that a complete mental picture can be maintained, even with external working memory augmentation, for more than about 16 objects at one time. Physiological variables can be objectively employed to indicate overload, with this classification to be achieved with near perfect accuracy within five years of specific studies being commenced, and the 5-year timeframe should see spacecraft-specific simulator studies begin to appear in major peer-reviewed journals. The Discussion points to the cognitive organization of multitasking as the major advance to come in the next 40 years. The body''s one generation-after-next reference, "see Genik12", points to a 2005 paper on cognitive avionics and watching spaceflight crews think by Genik, R. J., 2nd ([`/people/richard-genik`]), with Green, C. C. ([`/people/kit-green`]), Graydon, F. X. ([`/people/f-graydon`]), and Armstrong, R. E. ([`/people/r-armstrong`]).'
 cited_works:
 - id: cw1
   added_date: '2026-06-11'

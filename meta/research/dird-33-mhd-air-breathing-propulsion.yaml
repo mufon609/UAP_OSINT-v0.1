@@ -363,6 +363,26 @@ naming_quirks:
   location: 'Endnotes, entries [25] and [26]'
   source_path: government/dird-33-mhd-air-breathing-propulsion-2010.pdf
   resolution: preserve-as-sic-in-quotes
+associated_entities:
+- /organizations/aawsap
+- /organizations/aerojet
+- /organizations/aiaa
+- /organizations/dia
+- /organizations/jet-propulsion-laboratory
+- /organizations/leninetz
+- /organizations/lockheed-martin
+- /organizations/nasa
+- /organizations/nasa-ames-research-center
+- /organizations/princeton-university
+- /organizations/the-black-vault
+- /organizations/university-of-michigan
+- /people/a-korabelnikov
+- /people/a-kuranov
+- /people/d-riggins
+- /people/john-greenewald
+- /documents/jpp-special-section-weakly-ionized-plasmas-2008
+- /documents/kuranov-korabelnikov-ajax-jpp-2008
+- /documents/riggins-mhd-energy-bypass-jpp-2004
 description: 'A Defense Intelligence Reference Document in the Defense Futures series — one of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]) Advanced Aerospace Weapons System Applications (AAWSA) Program ([`/organizations/aawsap`]). The paper reviews novel propulsion concepts utilizing plasmas (ionized gases) and magnetohydrodynamics (MHD): a review devoted to a group of emerging technologies centering on weakly ionized plasmas for propulsion and power, from electric (plasma) thrusters for spacecraft to air-breathing MHD engines, MHD energy bypass, and MHD applications to reentry and near-orbital flight.
 
 

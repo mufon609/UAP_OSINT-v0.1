@@ -141,6 +141,45 @@ required_keys:
 # fields (superseded_by / contradicted_by / corroborated_by) provide
 # content-versioning pointers that remain independent of edit history.
 
+# Optional universal top-level keys — permitted on any artifact, required
+# on none (so existing nodes don't break when the field is introduced;
+# absence is silent).
+optional_keys:
+  associated_entities:
+    # The complete, authoritative list of EVERY load-bearing entity the
+    # node's primary source(s) NAME — people, organizations, documents,
+    # events, locations — as canonical ``/{type}/{slug}`` paths, deduped
+    # (one entry per entity no matter how many quotes name it), stub even
+    # when the target node doesn't exist yet. ``scripts/build/associate.py``
+    # UNIONS these paths into the link set it harvests from body ``[`/...`]``
+    # wraps, so an entity that the source names ONLY inside a verbatim quote
+    # — which can never be wrapped (the verbatim-quote check rejects a link
+    # injected into ``quote.text``) — still reaches ``## Associated Nodes``
+    # WITHOUT depending on whether the author re-named it in the
+    # ``description`` prose. This is the mechanism that makes "the decision
+    # to ingest a source IS the relevance decision" mechanical instead of
+    # prose-contingent: see the build-protocol "name it, wrap it" contract.
+    #
+    # Scope of the list: the COMPLETE set — entities already wrapped inline
+    # in ``description`` prose ARE listed here too (the field is the single
+    # auditable record of everything the document names; associate.py dedups
+    # the overlap). Carve-out unchanged: a bare ``cited_works`` / References
+    # entry is NOT an associated entity (the bibliography is an authorship-
+    # network dimension, not navigation) — only a cited author/work the
+    # source DISCUSSES in narrative prose counts. An externally-attested
+    # redacted author (named on another document, not this source) stays
+    # OUT — it is carried by ``context_extrinsic.extrinsic_authorship`` and
+    # the redacted-author convention, not here.
+    #
+    # Enforced by ``scripts/checks/associated_entities.py`` (only when the
+    # field is present — optional during the corpus-wide rollout): each path
+    # well-formed + every ``description`` prose-wrap is a member (the field
+    # must be a superset of the inline wraps), plus a best-effort WARN when a
+    # multi-token proper noun in ``quotes[].text`` looks un-captured. Shape:
+    # a flat list of ``/{type}/{slug}`` strings. (A future step makes the
+    # field REQUIRED on document / transcript / media once the existing
+    # corpus is swept — see meta/BACKLOG.md C5.)
+
 # Type-conditional keys — present only on research artifacts whose
 # target_node type / archetype / kind matches the declared rule(s).
 # Consumed by scripts/checks/iff_section.py (placement-error emitter)

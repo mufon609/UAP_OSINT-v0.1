@@ -66,6 +66,18 @@ Audit goals:
    On a document node, also re-check the `cited_works` affirmation against the
    target's own source: a NONE on a source that actually carries a reference
    list, or an IGNORED on a source that warrants capture, are defects to flag.
+   **`associated_entities` completeness** — the field is the complete, auditable
+   record of every entity the source NAMES (build-protocol "Linking — ingest is
+   the relevance decision"). Re-read the source and confirm each load-bearing
+   named entity — every institution, and every researcher / cited author the
+   prose *discusses* (not bare reference-list entries) — is present, including
+   entities named only inside a verbatim quote (the case the field exists for).
+   `coverage-suggest.py`'s capitalized-terms output is the mechanical aid; judge
+   each (boilerplate / generic terms are noise). A source-named load-bearing
+   entity absent from the field is an under-linking defect to flag (fix: add it
+   to `associated_entities`, builder re-renders). `associated_entities.py` has
+   already confirmed shape + that every inline prose-wrap is a member; your job
+   is the completeness judgment a mechanical check can't make.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
    A cross-node inconsistency is a defect **only if the missing claim is

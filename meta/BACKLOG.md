@@ -193,48 +193,48 @@ contributors don't wrap links there expecting them to render.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C4 — Establish a black-and-white "link every load-bearing reference" rule
+### C4 — Finish the `associated_entities` rollout across the corpus
 
-**The issue.** A node's `## Associated Nodes` is derived (by `associate.py`) from
-the `[/.../]` links in its rendered body, which come from the entities the builder
-wrapped in the artifact's prose (chiefly `description`). There is no written rule
-for *which* source-named entities get wrapped, so each build re-derives it by feel
-and the result varies wildly. DIRD-33 wraps every institution, researcher, and
-related work its survey names (4 people / 12 orgs / 3 docs); DIRD-34 and DIRD-35
-wrap only the provenance boilerplate (DIA / AAWSAP / The Black Vault / Greenewald /
-products-list), even though their own sources name load-bearing entities that
-already exist elsewhere in the corpus — DIRD-35's body credits NASA, Princeton,
-Columbia, Arizona State, and the University of Michigan (among others) with specific
-work and wraps none of them. The builder/auditor are left to judge "is this
-node-worthy / topically relevant," and that editorial judgment is itself the bias
-the repo exists to avoid.
+**Shipped already (the rule + mechanism).** The black-and-white linking rule —
+*the decision to ingest a source IS the relevance decision; every load-bearing
+entity the source names reaches `## Associated Nodes`, no "node-worthy /
+topically relevant" filter* — is codified in build-protocol ("Linking — ingest
+is the relevance decision") and the worker / builder / auditor roles. The
+mechanism is the `associated_entities` artifact field (the complete, deduped
+list of every source-named entity), unioned into `## Associated Nodes` by
+`associate.py` and validated by `scripts/checks/associated_entities.py`. It
+exists because an entity named only inside a verbatim quote can't be wrapped
+(the verbatim check rejects a link in `quote.text`), so a thin `description`
+used to silently drop it. DIRD-33/34/35 are re-swept. **Two things remain, both
+corpus-scale:**
 
-**The rule to establish.** The contributor's decision to ingest a source *is* the
-relevance decision. Every load-bearing entity a source names in the node's
-body/narrative — person, organization, related work — gets a wrap, with no second
-filter for perceived topical relevance or "node-worthiness." Stub links (to
-not-yet-built nodes) are expected. Then codify it where every build reads it
-(`build-protocol`, `.claude/agents/builder.md`, `.claude/agents/auditor.md`, and/or
-`meta/schema.yaml`) so it is mechanical, not per-build taste — and re-sweep at least
-DIRD-33/34/35 to a consistent state.
+**1. Sweep the rest of the corpus.** Every node built before the field
+under-links — the gap is corpus-wide and homogeneous (the DIRD series alone ran
+0–14 people-links across documents of the same kind). A narrow, standalone agent
+(and `/re-associate` skill) whose entire job is the link layer: take one
+already-built node, re-read its archived primary source, and populate
+`associated_entities` with the COMPLETE set of every load-bearing entity the
+source names — institutions plus every researcher / cited author the prose
+*discusses* (NOT bare reference-list entries; References stay alone) — then
+re-render so `associate.py` regenerates `## Associated Nodes`. It changes nothing
+else: no quotes, no facts, no prose rewording. It edits only the artifact's
+`associated_entities` field (plus an inline wrap for any entity it also names in
+`description`), never the node body (render-only, CLAUDE.md §6) and never the
+`## Associated Nodes` section directly. Verbatim + prose-drift gates read clean
+before and after. The standing tool for keeping new ingests honest, too —
+including the recent government-document releases, which are the same shape
+(name-dense PDFs) and must be ingested under this rule from the start.
 
-**Scope carve-out — References stay alone.** The back-matter References / citations
-section is NOT exploded into a per-citation node-link graph: references remain
-verbatim citations, living alone, to mitigate noise. The rule governs entities named
-in the node's narrative, not each numbered academic citation. (Entities a node's own
-source does NOT name — e.g. an externally-attested redacted author — stay out of
-scope here; they are handled by the redacted-author convention and C3.)
-
-The maintainer's framing, verbatim:
-
-> If AAWSAP wrote these DIRDs; everything is connected DIRECTLY to AAWSAP.
->
-> You may not think it's relevant now; but thats what an investigation is about, putting all the puzzle peices together. then the picture becomes clear.
->
-> There needs to be a black and white rule. If the investigator/repo author wants to ingest something, it becomes relevant to the topic by proxy. considering we don't know what is really important; we should be linking all load-bearing references not being oponionated and picking and choosing. clearly that is not working and it also breaks the entire point of a non-bias repo.
+**2. Flip the field to required.** Once the corpus is swept, make
+`associated_entities` REQUIRED on document / transcript / media target types
+(error on absence in `associated_entities.py` / `artifact_top_level.py`) — the
+final mechanical lock that turns "mandatory by build discipline" into "mandatory
+by gate." Until then the field stays optional so un-swept nodes hold the
+0-warning clean baseline.
 
 **Blocks:** none.
-**Blocked by:** none.
-**Related:** C3 — the same "a wrapped link doesn't reach `## Associated Nodes`"
-family, from the opposite direction (there a field isn't rendered; here the entity
-is never wrapped at all).
+**Blocked by:** none (rule + mechanism shipped).
+**Related:** C3 — the `extrinsic_authorship`-not-rendered gap a re-associate pass
+would surface on redacted-author nodes; the existing `/augment` skill, which the
+re-associate agent narrows to the link layer alone. The principle is the
+[[link-all-load-bearing-references]] working-memory note.

@@ -22,7 +22,7 @@ from collections import defaultdict
 # `from lib._common` resolves from this nested location.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from lib._common import REPO_ROOT, content_dirs
+from lib._common import REPO_ROOT, content_dirs, RESEARCH_DIR, strict_yaml_load
 
 CONTENT_DIRS = content_dirs()
 
@@ -113,6 +113,33 @@ def replace_section(text, new_section):
     return text.rstrip() + "\n\n" + new_section
 
 
+def artifact_associated_entities(node_path, self_id):
+    """Read the backing research artifact's optional ``associated_entities``
+    list and return it as a link set, so an entity the source names ONLY
+    inside a verbatim quote (un-wrappable — the verbatim-quote check rejects
+    a link injected into ``quote.text``) still reaches ``## Associated
+    Nodes`` without depending on the author re-naming it in prose. See
+    ``schema-research-artifact.yaml::optional_keys.associated_entities`` and
+    the build-protocol "name it, wrap it" contract. The artifact stem is the
+    node stem (1:1 by slug). Missing field / missing artifact / parse error
+    all yield the empty set — associate is non-authoritative, so a bad read
+    just adds no extra links rather than breaking the run."""
+    artifact = RESEARCH_DIR / f"{node_path.stem}.yaml"
+    if not artifact.is_file():
+        return set()
+    try:
+        data = strict_yaml_load(artifact.read_text()) or {}
+    except Exception:
+        return set()
+    out = set()
+    for p in (data.get("associated_entities") or []):
+        if isinstance(p, str) and p.startswith("/"):
+            out.add(p)
+    out.discard(self_id)
+    out.discard(f"/{self_id}")
+    return out
+
+
 def associate_node(node_path, dry_run=False):
     text = node_path.read_text()
     self_id = str(node_path.relative_to(REPO_ROOT)).removesuffix(".md")
@@ -127,6 +154,7 @@ def associate_node(node_path, dry_run=False):
         scan_text = text[:existing.start()] + text[existing.end():]
 
     links = extract_links(scan_text, exclude_self=self_id)
+    links |= artifact_associated_entities(node_path, self_id)
     groups = group_links(links)
     new_section = generate_section(groups)
     new_text = replace_section(text, new_section)

@@ -107,6 +107,7 @@ from checks import artifact_parse as ck_artifact_parse
 # Per-artifact checks (after parse)
 from checks import affiliations as ck_affiliations
 from checks import anchor_resolves as ck_anchor_resolves
+from checks import associated_entities as ck_associated_entities
 from checks import artifact_top_level as ck_artifact_top_level
 from checks import cited_findings as ck_cited_findings
 from checks import cited_works as ck_cited_works
@@ -307,6 +308,7 @@ _ARTIFACT_CHECKS = [
     ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks
     ck_cross_refs,
+    ck_associated_entities,  # optional associated_entities field: shape + prose-wrap superset
     ck_prose_drift,
 ]
 

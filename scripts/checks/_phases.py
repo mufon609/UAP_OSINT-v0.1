@@ -121,6 +121,7 @@ CHECK_PHASE = {
     "location_relationships": "link",
     "media_versioning": "link",
     "naming_quirks": "link",
+    "associated_entities": "link",  # optional associated_entities field: shape + prose-wrap superset
     "cross_refs": "link",
     "cited_findings": "link",
     "contradictions": "link",

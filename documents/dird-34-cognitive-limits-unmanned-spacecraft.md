@@ -31,7 +31,7 @@ The paper begins from a scenario of space exploration 40 years into the future t
 
 Mental workload in a subject performing a primary task is measured by three approaches — subjective evaluation, performance measures, and real-time physiological measures, with increased workload exhibited by changes in the autonomic nervous system (ANS) — and the research progress is shown in studies of cognitive workload for air traffic controllers and in command of multiple semi-automated vehicles. The cognitive limits on the number of craft capable of simultaneous control are 16 for simple destination selection, 7 for moderately complex piloting and/or mission task completion, and 4 for complex heterogeneous craft. The number of four is consistent with standard estimates of human working memory being able to handle three to five disparate objects at a time, and the most effective augmentations hold information for quick visual retrieval that the brain would otherwise keep in working memory. Perceived complexity is the number one factor in determining workload; physiological states near high workload can be classified as operational or overloaded in more than 98% of the cases; and alerts need to contain a level of noise (false alarms) of 20-25% to avoid automation bias.
 
-The Conclusions state there is a lack of research in the area of cognitive limits on the number of spacecraft one pilot could control given any mission scenario, and that future research may increase the automation component of aircraft and mission control, but there is no evidence to date that a complete mental picture can be maintained, even with external working memory augmentation, for more than about 16 objects at one time. Physiological variables can be objectively employed to indicate overload, with this classification to be achieved with near perfect accuracy within five years of specific studies being commenced, and the 5-year timeframe should see spacecraft-specific simulator studies begin to appear in major peer-reviewed journals. The Discussion points to the cognitive organization of multitasking as the major advance to come in the next 40 years. The body's one generation-after-next reference, "see Genik12", points to a 2005 paper on cognitive avionics and watching spaceflight crews think by Genik, R. J., 2nd ([`/people/richard-genik`]), with Green, C. C. ([`/people/kit-green`]), Graydon, F. X., and Armstrong, R. E.
+The Conclusions state there is a lack of research in the area of cognitive limits on the number of spacecraft one pilot could control given any mission scenario, and that future research may increase the automation component of aircraft and mission control, but there is no evidence to date that a complete mental picture can be maintained, even with external working memory augmentation, for more than about 16 objects at one time. Physiological variables can be objectively employed to indicate overload, with this classification to be achieved with near perfect accuracy within five years of specific studies being commenced, and the 5-year timeframe should see spacecraft-specific simulator studies begin to appear in major peer-reviewed journals. The Discussion points to the cognitive organization of multitasking as the major advance to come in the next 40 years. The body's one generation-after-next reference, "see Genik12", points to a 2005 paper on cognitive avionics and watching spaceflight crews think by Genik, R. J., 2nd ([`/people/richard-genik`]), with Green, C. C. ([`/people/kit-green`]), Graydon, F. X. ([`/people/f-graydon`]), and Armstrong, R. E. ([`/people/r-armstrong`]).
 
 ---
 
@@ -399,9 +399,17 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/c-boag`]
+- [`/people/f-graydon`]
+- [`/people/g-wilson`]
 - [`/people/john-greenewald`]
 - [`/people/kit-green`]
+- [`/people/m-cummings`]
+- [`/people/r-armstrong`]
 - [`/people/richard-genik`]
+- [`/people/ruff`]
+- [`/people/s-dixon`]
+- [`/people/t-lamoureux`]
 
 ### Organizations
 

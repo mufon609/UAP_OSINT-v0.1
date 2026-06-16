@@ -104,7 +104,14 @@ naming the metadata field, never a `quotes[]` entry.
    the document's own author), organization, program, and document — to its
    canonical `/{type}/{slug}`, **stub even if that node doesn't exist yet**
    (naming an entity without a link is the under-linking failure; the full
-   linking rule is the build-protocol "name it, wrap it" contract). An entity
+   linking rule is the build-protocol "Linking — ingest is the relevance
+   decision" contract). This is the complete-coverage boundary: a source-named
+   entity you DON'T surface here is one the builder can't link, so it silently
+   vanishes from `## Associated Nodes` — emit them all, including entities named
+   ONLY inside a quote you extract (the builder lands those in
+   `associated_entities`, since quote text itself can never be wrapped). No
+   "is this node-worthy / topically relevant" filter — if the source names it,
+   surface it. An entity
    named under a **non-canonical form**
    (idiosyncratic abbreviation, former name, misspelling) *additionally* gets its
    source form flagged for a `naming_quirks` entry — stub the canonical node and

@@ -1,15 +1,21 @@
 """prose_entity_link check — per-node NodeContext check.
 
-The universal-stub rule (name it, wrap it):
-every entity a node names **in its own authored prose** must be
-carried navigationally as a ``[`/{type}/{slug}`]`` stub, so it reaches the
-auto-generated ``## Associated Nodes`` index and the broken-link registry.
-There is no "load-bearing vs. incidental" discretion — naming an entity
-without linking it drops a real cross-reference on the floor.
+The linking rule (build-protocol "Linking — ingest is the relevance
+decision"): every load-bearing entity a source NAMES reaches the node's
+auto-generated ``## Associated Nodes`` index, with no "load-bearing vs.
+incidental" discretion. An entity gets there by EITHER mechanism
+``associate.py`` unions: an inline ``[`/{type}/{slug}`]`` wrap in the node's
+own authored prose, OR membership in the structured ``associated_entities``
+field (the complete record, and the ONLY home for an entity named solely
+inside a verbatim quote — quote text can never be wrapped). The full
+source-named coverage is therefore the contributor's job via
+``associated_entities`` (auditor-verified, aided by ``coverage-suggest.py``);
+``associated_entities.py`` checks that field's shape + superset.
 
-This check is the *mechanical, zero-false-positive* half of enforcing
-that rule. It cannot detect arbitrary names (that would need NER). What
-it CAN do reliably is catch the concrete drift:
+This check is a NARROW, *mechanical, zero-false-positive* guard on the
+inline-wrap mechanism only — not the full rule. It cannot detect arbitrary
+names (that would need NER). What it CAN do reliably is catch the concrete
+drift:
 
   **a node names an entity that ALREADY EXISTS in the repo (by its
   canonical display name or a registered alias) without wrapping it.**
@@ -34,7 +40,10 @@ this mechanical guard.
 Carve-outs (faithful to convention):
   - Verbatim ``quote.text`` (rendered as ``>`` blockquote lines) is never
     wrapped — it stays source-faithful — so blockquote lines are excised
-    before the scan. A name appearing ONLY inside a quote does not fire.
+    before the scan. A name appearing ONLY inside a quote does not fire here;
+    it is carried to ``## Associated Nodes`` by the ``associated_entities``
+    field instead (the mechanism that exists precisely for the un-wrappable
+    quote-only case).
   - The renderer-generated ``## Name Variants`` / ``## Source-Form Notes``
     sections are excised — they tabulate how *sources* mangle a name; the
     canonical column is reference metadata, not the node arguing about the

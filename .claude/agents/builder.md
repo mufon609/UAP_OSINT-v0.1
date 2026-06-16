@@ -171,7 +171,17 @@ In order, with a check after each (build-protocol → run
    synthesis prose (a document `description`, a `background`), wrapped inline at
    its first mention (`Name ([`/people/slug`])`, source token left verbatim so
    prose-drift still matches). Stub even when the node does not exist yet
-   (the build-protocol "name it, wrap it" contract). Populate `naming_quirks`. A
+   (the build-protocol "Linking — ingest is the relevance decision" contract).
+   **Then populate `associated_entities`** — the COMPLETE, deduped list of every
+   source-named entity (every worker cross-ref candidate), as `/{type}/{slug}`
+   paths. This is non-negotiable and is NOT the same as the inline wraps: an
+   entity the source names only inside a verbatim quote has no inline-wrap home
+   (quote text is never wrapped), so without this field it vanishes from
+   `## Associated Nodes` — the historical under-linking bias. The field is the
+   complete superset, so it also lists the entities you wrapped inline;
+   `scripts/checks/associated_entities.py` verifies every inline wrap is a
+   member. Do NOT drop a candidate on a "node-worthy / topically relevant"
+   judgment — that filter is the bias. Populate `naming_quirks`. A
    cross-ref the worker flagged as a **non-canonical source form** *additionally*
    gets a `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
    canonical. Register

@@ -170,25 +170,52 @@ path link (a bare-slug mention like "the {slug} finding" inside an entity node
 is the same violation). When you add or carry a cross-reference, check its
 direction before emitting it.
 
-**Linking — name it, wrap it.** Every entity a node names in its own authored
-prose — person, organization, program, event, document, location, finding — is
-wrapped as a `[`/{type}/{slug}`]` link, stub even when that node doesn't exist
-yet (the unbuilt-node stub is what populates `## Associated Nodes` and the
-broken-link / Priority-Build registry). No "load-bearing vs. incidental"
-judgment — if the prose names it, wrap it. A forward-link to an unbuilt node is
-the correct value, never null and never bare narration, in a structured path
-field (`affiliations[].organization_path`, `relationships[].person_path`, a
-program/event path) exactly as in an inline prose wrap. A named theory /
-equation / referenced work the prose *discusses* (vs. merely listing it in
-`## References`) is itself a document node → `[`/documents/{slug}`]`. **Two
-carve-outs only:** (1) verbatim `quote.text` is never wrapped — an entity
-appearing only inside a quote is carried by wrapping the canonical form in the
-surrounding prose (the form the prose-drift check matches); (2) a bare
-`## References` / `cited_works` entry is not wrapped — the bibliography is an
-authorship-network dimension, not navigation — unless that work is *also*
-discussed in argument prose. `## Associated Nodes` is auto-generated from the
-wraps by `associate.py` (never hand-edited); `prose_entity_link` (blocking
-check) catches an unwrapped entity already in the repo.
+**Linking — ingest is the relevance decision.** The contributor's decision to
+ingest a source *is* the relevance decision. EVERY load-bearing entity the
+source names — person, organization, program, event, document, location,
+finding — reaches the node's `## Associated Nodes`, stub even when that node
+doesn't exist yet (the unbuilt-node stub is what populates `## Associated Nodes`
+and the broken-link / Priority-Build registry). There is NO second
+"load-bearing vs. incidental" or "node-worthy / topically relevant" filter:
+picking and choosing which source-named entities to link is editorial bias and
+breaks the repo's non-bias standard. If the source names it, it is linked. (If
+AAWSAP wrote a DIRD, everything that DIRD names connects to AAWSAP by proxy —
+you do not yet know which pieces matter; the picture only emerges once all are
+connected. When unsure whether something is load-bearing, link it.)
+
+An entity reaches `## Associated Nodes` by EITHER of two mechanisms, which
+`associate.py` unions:
+
+- **Inline wrap** — an entity a node names in its OWN authored prose
+  (`description` / `background` / …) is wrapped at first mention as a
+  `[`/{type}/{slug}`]` link (source token left verbatim so prose-drift still
+  matches). A forward-link to an unbuilt node is the correct value, never null
+  and never bare narration, in a structured path field
+  (`affiliations[].organization_path`, `relationships[].person_path`, a
+  program/event path) exactly as in an inline prose wrap. A named theory /
+  equation / referenced work the prose *discusses* (vs. merely listing it in
+  `## References`) is itself a document node → `[`/documents/{slug}`]`.
+- **`associated_entities`** — the COMPLETE, deduped structured list of every
+  entity the source names, as `/{type}/{slug}` paths. This is the mechanism for
+  an entity named ONLY inside a verbatim quote: such an entity CANNOT be wrapped
+  (the verbatim-quote check rejects a `[`/…`]` injected into `quote.text`), so a
+  thin `description` that omits it would silently drop it — the historical bias
+  this field closes. The field is the complete superset: entities already
+  wrapped inline ARE listed here too, so it is the single auditable record of
+  everything the node names. (`scripts/checks/associated_entities.py` enforces
+  shape + that every inline wrap is a member; the field is optional during the
+  corpus-wide rollout, mandatory by build discipline — see `meta/BACKLOG.md` C5.)
+
+**Two carve-outs only:** (1) verbatim `quote.text` is never wrapped — a
+quote-named entity is carried by `associated_entities`, never by editing the
+quote; (2) a bare `## References` / `cited_works` entry is not exploded into
+per-citation links — the bibliography is an authorship-network dimension, not
+navigation — UNLESS that work / author is *also* discussed in argument prose (a
+discussed cited author is a `/people/` entity; a discussed work is a
+`/documents/` node). `## Associated Nodes` is auto-generated (never hand-edited)
+by `associate.py` from the inline wraps ∪ `associated_entities`;
+`prose_entity_link` (blocking check) is the narrow mechanical guard for an
+already-built entity named in prose but left unwrapped.
 
 **Interview-derived testimony** — when a node cites a long-form media appearance
 (podcast, broadcast, panel, conference talk, streamed interview) as evidence,

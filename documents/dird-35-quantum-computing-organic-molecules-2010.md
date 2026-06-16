@@ -621,13 +621,36 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/e-winfree`]
+- [`/people/f-crick`]
+- [`/people/fred-sanger`]
+- [`/people/h-gu`]
+- [`/people/h-haffner`]
+- [`/people/j-watson`]
 - [`/people/john-greenewald`]
+- [`/people/k-fujibayashi`]
+- [`/people/m-stojanovic`]
+- [`/people/n-pierce`]
+- [`/people/n-seeman`]
+- [`/people/p-shor`]
+- [`/people/s-murata`]
+- [`/people/t-ladd`]
+- [`/people/william-shih`]
+- [`/people/wolfgang-pauli`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/arizona-state-university`]
+- [`/organizations/california-institute-of-technology`]
+- [`/organizations/columbia-university`]
 - [`/organizations/dia`]
+- [`/organizations/nasa`]
+- [`/organizations/new-york-university`]
+- [`/organizations/princeton-university`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/university-of-florida`]
+- [`/organizations/university-of-michigan`]
 
 ### Documents
 
