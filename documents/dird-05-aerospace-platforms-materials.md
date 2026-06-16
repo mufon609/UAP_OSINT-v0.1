@@ -684,13 +684,36 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### People
 
 - [`/people/j-williams`]
+- [`/people/john-greenewald`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/air-force-materials-and-manufacturing-directorate`]
+- [`/organizations/aircraft-structural-integrity-program`]
+- [`/organizations/basf`]
+- [`/organizations/boeing`]
 - [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/dupont`]
+- [`/organizations/dynasoar`]
+- [`/organizations/engine-structural-integrity-program`]
+- [`/organizations/ge-plastics`]
 - [`/organizations/general-electric`]
+- [`/organizations/mitsubishi`]
+- [`/organizations/nasa`]
+- [`/organizations/national-aerospace-plane`]
+- [`/organizations/ohio-state-university`]
+- [`/organizations/pratt-whitney`]
+- [`/organizations/rolls-royce`]
+- [`/organizations/sbir`]
 - [`/organizations/textron-specialty-materials`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/us-air-force`]
+
+### Events
+
+- [`/events/columbia-disaster`]
 
 ### Documents
 

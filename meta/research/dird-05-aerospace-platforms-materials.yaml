@@ -20,6 +20,33 @@ context_extrinsic:
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_05_Materials_for_Advanced_Aerospace_Platforms.pdf
   quote_attribution: 'DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. J. Williams, Ohio State Univ. (attachment 21, short title "Materials for Advanced Aerospace Platforms").'
+associated_entities:
+- /organizations/aawsap
+- /organizations/air-force-materials-and-manufacturing-directorate
+- /organizations/aircraft-structural-integrity-program
+- /organizations/basf
+- /organizations/boeing
+- /organizations/dia
+- /organizations/dod
+- /organizations/dupont
+- /organizations/dynasoar
+- /organizations/engine-structural-integrity-program
+- /organizations/ge-plastics
+- /organizations/general-electric
+- /organizations/mitsubishi
+- /organizations/nasa
+- /organizations/national-aerospace-plane
+- /organizations/ohio-state-university
+- /organizations/pratt-whitney
+- /organizations/rolls-royce
+- /organizations/sbir
+- /organizations/textron-specialty-materials
+- /organizations/the-black-vault
+- /organizations/us-air-force
+- /people/j-williams
+- /people/john-greenewald
+- /events/columbia-disaster
+- /documents/dia-aatip-products-list-2018
 description: 'Materials for Advanced Aerospace Platforms. The Defense Intelligence Reference Document carries the Acquisition Threat Support series, control number DIA-08-0912-008, 12 January 2010, ICOD 1 December 2009, and UNCLASSIFIED//FOR OFFICIAL USE ONLY. An Administrative Note states the product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program [`/organizations/aawsap`], and that comments or questions should be addressed to the AAWSA Program Manager ([`/organizations/dia`]). It is one of a series of FY 2009 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]); the Author is redacted under (b)(6), so the author ([`/people/j-williams`]) is named there and not on the document itself.
 
 
