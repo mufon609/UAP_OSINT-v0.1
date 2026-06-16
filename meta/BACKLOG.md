@@ -264,3 +264,24 @@ canonical slug and re-render. Could fold into the `/re-associate` corpus sweep
 **Blocked by:** none.
 **Related:** C4 (the re-associate sweep that surfaces these); the
 `link_resolution` broken-link registry is the natural input.
+
+### C6 — Sweep named places into `/locations/` nodes (corpus-wide)
+
+The `associated_entities` sweep (C4) links people / organizations / programs /
+events / documents but **defers places**. The black-and-white linking rule covers
+a named place as much as any other entity — a place has a host node-type
+(`/locations/`) — but the corpus today holds essentially one location node
+(`skinwalker-ranch`), and the sweep is being run with places held out, so applying
+it mid-sweep would leave the corpus half-converted. Run a dedicated places pass
+once the entity sweep is complete: settle the line between a **substantive named
+place** (a discussed site → `/locations/` node) and a **bare locative qualifier**
+(merely situating an org/event — "the institute in St. Petersburg", "efforts in
+Japan"), then apply it uniformly across ALL nodes, including every node the entity
+sweep already touched (`dird-01..05`, `30`, `33`, `34`, `35`, and the rest). The
+re-associate producer/verifier definitions already state "a named place →
+`/locations/`"; this pass is where that clause is exercised and the
+place/locative boundary is settled.
+
+**Blocks:** none.
+**Blocked by:** the C4 entity sweep (run places after it, for uniformity).
+**Related:** C4 (the entity sweep that defers places).
