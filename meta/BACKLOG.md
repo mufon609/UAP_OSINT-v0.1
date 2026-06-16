@@ -209,8 +209,16 @@ used to silently drop it. DIRD-33/34/35 are re-swept, and the **`/re-associate`
 skill + `re-associate-producer` / `re-associate-verifier` agents are built** —
 the link-layer-only pass (re-read source → producer enumerates the complete
 source-named-entity set → independent verifier challenges completeness/correctness
-→ apply to `associated_entities` → re-render). **Two things remain, both
-corpus-scale:**
+→ apply to `associated_entities` → re-render). The extrinsic-author carve-out
+that originally contradicted the rule has since been removed from every enforcing
+surface (the `associated_entities.py` gate, `schema-research-artifact.yaml`, the
+`/re-associate` skill, and both its agents): the externally-attested redacted
+author AND the institution attributed to it in `extrinsic_authorship` are
+associated entities like any other source-named entity, and there is no
+"source-body vs. extrinsic" or "illustrative comparator / not node-worthy"
+filter. The only carve-out left is a bare `cited_works` citation the prose does
+not discuss, or a thing the schema has no node-type to host (a material, a
+device/vehicle model). **Two things remain, both corpus-scale:**
 
 **1. Run the sweep across the corpus.** Every node built before the field
 under-links — the gap is corpus-wide and homogeneous (the DIRD series alone ran
@@ -223,7 +231,10 @@ artifact's `associated_entities` field (plus an inline wrap for any entity the
 Nodes` section directly; verbatim + prose-drift gates read clean before and after.
 The same skill is the standing pass for keeping new ingests honest — including the
 recent government-document releases (same name-dense-PDF shape; ingest under this
-rule from the start).
+rule from the start). **Named places are deferred to C6** — this sweep links
+people / organizations / programs / events / documents but not `/locations/`; the
+places pass runs corpus-wide afterward. Track remaining un-swept nodes with
+`grep -L '^associated_entities:' meta/research/*.yaml`.
 
 **2. Flip the field to required.** Once the corpus is swept, make
 `associated_entities` REQUIRED on document / transcript / media target types
