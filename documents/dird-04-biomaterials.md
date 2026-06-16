@@ -774,6 +774,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### People
 
 - [`/people/bruce-towe`]
+- [`/people/drahoslav-lim`]
+- [`/people/john-greenewald`]
+- [`/people/otto-wichterle`]
 - [`/people/per-ingvar-branemark`]
 
 ### Organizations
@@ -781,6 +784,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
 - [`/organizations/dow-corning`]
+- [`/organizations/gore`]
+- [`/organizations/institute-of-medicine`]
+- [`/organizations/polysciences`]
+- [`/organizations/the-black-vault`]
 
 ### Documents
 

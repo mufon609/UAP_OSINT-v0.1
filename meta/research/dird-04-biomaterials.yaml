@@ -20,6 +20,20 @@ context_extrinsic:
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_04_DIRD_Biomaterials.pdf
   quote_attribution: 'DIRD #4 (Biomaterials), 7 January 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. Bruce Towe, University of Arizona (attachment 17, short title "Biomaterials").'
+associated_entities:
+- /organizations/aawsap
+- /organizations/dia
+- /organizations/dow-corning
+- /organizations/gore
+- /organizations/institute-of-medicine
+- /organizations/polysciences
+- /organizations/the-black-vault
+- /people/bruce-towe
+- /people/drahoslav-lim
+- /people/john-greenewald
+- /people/otto-wichterle
+- /people/per-ingvar-branemark
+- /documents/dia-aatip-products-list-2018
 quotes:
 - id: q1
   added_date: '2026-05-24'
