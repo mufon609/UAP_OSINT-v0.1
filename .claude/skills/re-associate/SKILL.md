@@ -77,11 +77,16 @@ completeness guarantee a self-checking single read cannot give):
    path(s), and the producer's proposed list. It returns `PASS`, or `REJECT`
    with an ADD / REMOVE / slug-FIX correction list.
 
-On `REJECT`, re-dispatch the producer with the verifier's correction list
-verbatim, then re-verify. Loop until `PASS` (or a genuinely ambiguous case the
-verifier flags for the user). `coverage-suggest.py meta/research/{slug}.yaml`
-(capitalized-terms output) is an extra mechanical net you may consult to
-double-check completeness — judge each (boilerplate / generic terms are noise).
+On `REJECT`: if the corrections are **purely mechanical** — slug FIXes only, no
+ADD / REMOVE and no judgment call the verifier flags for the user — apply them
+yourself directly (the verifier already named the exact fix; a producer
+round-trip for a deterministic one-token slug change is wasted spawns across a
+corpus sweep). If the corrections include an **ADD / REMOVE or a judgment call**,
+re-dispatch the producer with the verifier's correction list verbatim, then
+re-verify. Loop until `PASS` (or a genuinely ambiguous case the verifier flags
+for the user). `coverage-suggest.py meta/research/{slug}.yaml` (capitalized-terms
+output) is an extra mechanical net you may consult to double-check completeness —
+judge each (boilerplate / generic terms are noise).
 
 ## 4. Report before applying
 

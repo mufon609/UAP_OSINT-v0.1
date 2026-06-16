@@ -41,8 +41,9 @@ reasoning — the independence is the discipline. Read the `description` + every
   this entity (so the producer should reuse its slug, not mint a parallel
   stub)? `Glob`/`Grep` `people/` + `organizations/` and check H1 / `Full Name` /
   `Aliases`. Is a minted stub slug faithful to the source's own form (no
-  training-knowledge full name the source omits)? Is the list deduped and every
-  path well-formed `/{type}/{slug}`?
+  training-knowledge full name the source omits; person stubs use the FIRST
+  given-name initial only — `V. S. Belyaev` → `v-belyaev`, not `vs-belyaev`)? Is
+  the list deduped and every path well-formed `/{type}/{slug}`?
 - **Superset integrity.** Every entity wrapped inline in the `description` must
   appear in the list (the field is the complete record).
 

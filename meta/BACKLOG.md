@@ -238,3 +238,29 @@ by gate." Until then the field stays optional so un-swept nodes hold the
 would surface on redacted-author nodes; the existing `/augment` skill, which the
 re-associate agent narrows to the link layer alone. The principle is the
 [[link-all-load-bearing-references]] working-memory note.
+
+### C5 — Dedupe stub slugs that name the same entity across artifacts
+
+**The issue.** Two artifacts can mint *different* stub slugs for the same
+not-yet-built entity, because the only reuse check (in the worker and the
+`re-associate-producer`) matches against *built* nodes — an unbuilt stub another
+artifact already coined is invisible. Surfaced by the dird-30 re-associate run:
+`/people/v-teofilo` (dird-30 `extrinsic_authorship`) vs `/people/vincent-teofilo`
+(dird-24) name the same person (V. Teofilo / Vincent Teofilo, Lockheed Martin).
+The broken-link / Priority-Build registry then carries two entries for one
+person; whichever node is built first orphans the other reference.
+
+**The work.** A reconcile pass over the broken-link registry / all artifacts that
+groups stub paths likely naming one entity (surname + initials match, alias
+overlap) and canonicalizes each cluster to a single slug — preferring the fullest
+source-attested form (`vincent-teofilo` over `v-teofilo` when a source attests
+"Vincent"). Mechanically: a diagnostic that lists candidate duplicate-stub
+clusters for contributor judgment (NER-free, like `prose_entity_link`'s
+whole-phrase matching), then edit the losing artifacts' wraps/fields to the
+canonical slug and re-render. Could fold into the `/re-associate` corpus sweep
+(the producer gains an "existing stubs across artifacts" index) or stand alone.
+
+**Blocks:** none.
+**Blocked by:** none.
+**Related:** C4 (the re-associate sweep that surfaces these); the
+`link_resolution` broken-link registry is the natural input.

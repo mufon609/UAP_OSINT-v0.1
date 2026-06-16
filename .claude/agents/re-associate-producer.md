@@ -75,7 +75,10 @@ quote text), so without this field they vanish from `## Associated Nodes`.
      (`D. Riggins` → `d-riggins`; bare-surname prose `Shor` with reference
      `Shor PW` → `p-shor`); use the full given name when the prose gives it
      (`Wolfgang Pauli` → `wolfgang-pauli`, `William Shih` → `william-shih`).
-     Never assert a full name training knowledge supplies but the source omits.
+     **Use only the FIRST given-name initial — drop any subsequent initials /
+     patronymics** (`V. S. Belyaev` → `v-belyaev`, not `vs-belyaev`; matches the
+     corpus forms `a-kuranov` / `a-korabelnikov`). Never assert a full name
+     training knowledge supplies but the source omits.
    - Organization / document / event / location: kebab-case of the canonical
      name the source uses (`Columbia University` → `columbia-university`).
    A minted stub is correct and expected — it grows the broken-link /
