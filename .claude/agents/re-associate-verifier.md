@@ -1,6 +1,6 @@
 ---
 name: re-associate-verifier
-description: Independently re-read a node's primary source(s) + narrative and challenge the producer's proposed `associated_entities` list — missed entities (the completeness failure that is the whole point), over-inclusions (bare-citation / non-source / extrinsic), and wrong/duplicate slugs. The verification half of /re-associate, run as a SEPARATE session from the producer. EMITS a PASS/REJECT verdict + correction list — never edits any file.
+description: Independently re-read a node's primary source(s) + narrative and challenge the producer's proposed `associated_entities` list — missed entities (the completeness failure that is the whole point), over-inclusions (bare-citation / non-source), and wrong/duplicate slugs. The verification half of /re-associate, run as a SEPARATE session from the producer. EMITS a PASS/REJECT verdict + correction list — never edits any file.
 tools: Read, Grep, Glob
 ---
 
@@ -34,9 +34,13 @@ reasoning — the independence is the discipline. Read the `description` + every
   the pass exists to kill, so hunt for it deliberately.
 - **Over-inclusion.** Flag any producer entry that violates a carve-out: a bare
   reference-list-only citation (named in `## References` but NOT discussed in
-  narrative), an entity the source does not actually name, or an
-  externally-attested redacted author that belongs in `extrinsic_authorship`,
-  not here.
+  narrative), an entity the source does not actually name, or a "named thing"
+  the schema has no node-type to host (a material/device/vehicle model). NOTE:
+  a redacted / externally-attested author and the institution attributed to it
+  in `extrinsic_authorship` are NOT over-inclusions — they ARE associated
+  entities (ingesting the attribution is the relevance decision). Likewise an
+  incidental-but-named org/person ("Even NASA…", "as IBM's…") is NOT an
+  over-inclusion — there is no "illustrative / not-node-worthy" carve-out.
 - **Slug correctness.** For each entry: does an existing built node already cover
   this entity (so the producer should reuse its slug, not mint a parallel
   stub)? `Glob`/`Grep` `people/` + `organizations/` and check H1 / `Full Name` /

@@ -91,6 +91,27 @@ def run():
     })
     record("excludes self-reference from superset", not m, repr(m))
 
+    # extrinsic_authorship is part of the superset (no "redacted author stays
+    # out" carve-out): a wrapped extrinsic author/institution NOT in the field
+    # → ERROR
+    m = _msgs({
+        "target_node": "documents/x",
+        "associated_entities": ["/organizations/dia"],
+        "extrinsic_authorship": "Attributed to Dr. V. Teofilo "
+                                "([`/people/v-teofilo`]) of Lockheed Martin.",
+    })
+    record("fires on extrinsic_authorship wrap missing from field",
+           _has(m, "v-teofilo") and _has(m, "absent from"))
+
+    # extrinsic_authorship wrap that IS a field member → clean
+    m = _msgs({
+        "target_node": "documents/x",
+        "associated_entities": ["/people/v-teofilo"],
+        "extrinsic_authorship": "Attributed to Dr. V. Teofilo "
+                                "([`/people/v-teofilo`]).",
+    })
+    record("clean when extrinsic_authorship wrap is a member", not m, repr(m))
+
 
 def main():
     print("=" * 70)

@@ -20,7 +20,8 @@ When the field IS present this check enforces:
      deduped by contract).
   2. Completeness superset — every entity a node wraps inline in its OWN
      authored prose (``description`` / ``background`` / ``top_relevance``
-     / ``credibility_notes``) MUST also appear in ``associated_entities``.
+     / ``credibility_notes`` / ``extrinsic_authorship``) MUST also appear in
+     ``associated_entities``.
      The field is the single auditable record of everything the node
      names; an inline wrap that isn't in the field means the field is no
      longer complete. (associate.py still renders the wrap correctly via
@@ -46,10 +47,21 @@ CHECK_NAME = "associated_entities"
 # Same wrap form associate.py harvests: [`/type/slug`].
 _WRAP = re.compile(r"\[`(/[^`]+)`\]")
 
-# Authored-prose fields a node may wrap entities in. extrinsic_authorship
-# is intentionally excluded — an externally-attested redacted author is
-# carried by the redacted-author convention, not associated_entities.
-_PROSE_FIELDS = ("description", "background", "top_relevance", "credibility_notes")
+# Authored-prose fields a node may wrap entities in — every wrap must be a
+# field member (the field is the complete superset). extrinsic_authorship is
+# INCLUDED: the externally-attested author and the institution attributed to it
+# (carried from the products-list attribution) ARE associated entities —
+# ingesting that attribution is itself the relevance decision, so a wrap there
+# is a field member like any other prose wrap. There is no "redacted author
+# stays out" carve-out; the only entity a node names but does not list is a bare
+# cited_works / References citation the narrative does not discuss.
+_PROSE_FIELDS = (
+    "description",
+    "background",
+    "top_relevance",
+    "credibility_notes",
+    "extrinsic_authorship",
+)
 
 
 def _valid_path(p, valid_types):

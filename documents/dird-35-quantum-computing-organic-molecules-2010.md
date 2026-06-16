@@ -633,6 +633,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/n-pierce`]
 - [`/people/n-seeman`]
 - [`/people/p-shor`]
+- [`/people/richard-genik`]
 - [`/people/s-murata`]
 - [`/people/t-ladd`]
 - [`/people/william-shih`]
@@ -655,3 +656,4 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+- [`/documents/dird-34-cognitive-limits-unmanned-spacecraft`]

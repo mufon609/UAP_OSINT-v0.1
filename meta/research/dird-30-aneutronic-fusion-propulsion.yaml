@@ -153,6 +153,7 @@ associated_entities:
 - /organizations/darpa
 - /organizations/dia
 - /organizations/emc2
+- /organizations/lockheed-martin
 - /organizations/nasa
 - /organizations/nasa-glenn-research-center
 - /organizations/the-black-vault
@@ -160,6 +161,7 @@ associated_entities:
 - /people/john-greenewald
 - /people/robert-bussard
 - /people/v-belyaev
+- /people/v-teofilo
 - /documents/dia-aatip-products-list-2018
 description: 'Aneutronic Fusion Propulsion. The Defense Intelligence Reference Document, 01 November 2010, with an ICOD of 20 July 2010 and the number DIA-08-1011-003, in the Defense Futures series, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the document shows Prepared by and Author, it shows (b)(3):10 USC 424 and (b)(6). The Administrative Notes place the product as one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]), (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]), with a (U) COPYRIGHT WARNING that further dissemination of the photographs in this publication is not authorized, and that comments or questions pertaining to this document should be addressed to the AAWSA Program Manager, Defense Intelligence Agency. The document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]). It is one of the FY 2010 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
 

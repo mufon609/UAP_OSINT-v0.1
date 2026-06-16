@@ -38,10 +38,16 @@ Every entity the source NAMES in its narrative — read the `description` and th
 - **People** — every named person whose work or statement the prose *discusses*:
   named researchers, cited authors the narrative engages by name ("In 1994 Shor
   presented…", "Watson and Crick…", "as pointed out by D. Riggins"), the
-  document's own (non-redacted) author, named officials.
+  document's author (redacted or not — a redacted author attributed via the
+  products list in `context_extrinsic.extrinsic_authorship` counts), named
+  officials.
 - **Documents / events / locations** — a referenced work the prose *discusses as
   a work* (not merely lists) is a `/documents/` node; a named event a
   `/events/` node; a named place a `/locations/` node.
+- **Extrinsic authorship** — the author AND the institution named in
+  `context_extrinsic.extrinsic_authorship` (e.g. "Dr. T. Hufnagel, Johns Hopkins
+  Univ.") are both associated entities: ingesting that products-list attribution
+  is the relevance decision.
 
 The field is the COMPLETE superset: include entities already wrapped inline in
 the `description` (DIA, AAWSAP, the FOIA releaser, etc.) **as well as** the ones
@@ -49,20 +55,24 @@ that appear only inside verbatim quotes. The quote-only entities are the whole
 point — they cannot be wrapped inline (the verbatim check rejects a link in
 quote text), so without this field they vanish from `## Associated Nodes`.
 
-## Carve-outs (do NOT include)
+## Carve-outs (the only grounds for NOT including a named thing)
 
 - **Bare reference-list / `cited_works` entries.** The bibliography is an
   authorship-network dimension, not navigation. A cited author/work counts ONLY
   when the narrative *discusses* it (Shor's algorithm is discussed → `/people/`;
-  reference [37] that appears only in the numbered list is not).
-- **An externally-attested redacted author** — a `(b)(6)`-redacted author named
-  on *another* document (carried in `context_extrinsic.extrinsic_authorship`),
-  not by this source. It is out of scope here (redacted-author convention / C3).
-- **Generic illustrative mentions that are not entities** — a country named as a
-  capability comparator ("Russia, China, and Japan"), a vehicle/mission used as
-  a reference point ("the space shuttle", "Apollo") when the node has no
-  corresponding entity-node convention. When genuinely unsure, lean include and
-  flag it for the verifier rather than silently dropping.
+  reference [37] that appears only in the numbered list is not). The document's
+  own author (incl. a redacted author attributed via the products list) is NOT a
+  bare citation — it is in.
+- **No host node-type.** Drop a named thing ONLY when the schema has no node type
+  to host it — a bare material/alloy, a device/product/vehicle MODEL, a named
+  algorithm/software with no `/documents/` discussion. This is the ONLY ground
+  besides the bibliography. A named organization or person in body prose is
+  ALWAYS linked, however incidental the mention ("Even NASA's…" and "as IBM's…"
+  alike) — there is **no "illustrative comparator / name-drop / not
+  node-worthy"** filter; that framing is the editorial bias this pass removes. A
+  named place → `/locations/`; a named event → `/events/`; a named program →
+  `/organizations/` (hosted like AAWSAP). When genuinely unsure, include and flag
+  it for the verifier — never silently drop.
 
 ## Slug discipline (canonical, reuse-first)
 

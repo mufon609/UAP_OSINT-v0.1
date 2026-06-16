@@ -163,18 +163,20 @@ optional_keys:
     # Scope of the list: the COMPLETE set — entities already wrapped inline
     # in ``description`` prose ARE listed here too (the field is the single
     # auditable record of everything the document names; associate.py dedups
-    # the overlap). Carve-out unchanged: a bare ``cited_works`` / References
+    # the overlap). The ONE carve-out: a bare ``cited_works`` / References
     # entry is NOT an associated entity (the bibliography is an authorship-
     # network dimension, not navigation) — only a cited author/work the
-    # source DISCUSSES in narrative prose counts. An externally-attested
-    # redacted author (named on another document, not this source) stays
-    # OUT — it is carried by ``context_extrinsic.extrinsic_authorship`` and
-    # the redacted-author convention, not here.
+    # source DISCUSSES in narrative prose counts. The externally-attested
+    # author AND the institution attributed to it in
+    # ``context_extrinsic.extrinsic_authorship`` (carried from the products-
+    # list attribution) ARE associated entities — ingesting that attribution
+    # is the relevance decision, so they are listed here like any other entity.
     #
     # Enforced by ``scripts/checks/associated_entities.py`` (only when the
     # field is present — optional during the corpus-wide rollout): each path
-    # well-formed + every ``description`` prose-wrap is a member (the field
-    # must be a superset of the inline wraps), plus a best-effort WARN when a
+    # well-formed + every prose-wrap (``description`` … ``extrinsic_authorship``)
+    # is a member (the field must be a superset of the inline wraps), plus a
+    # best-effort WARN when a
     # multi-token proper noun in ``quotes[].text`` looks un-captured. Shape:
     # a flat list of ``/{type}/{slug}`` strings. (A future step makes the
     # field REQUIRED on document / transcript / media once the existing

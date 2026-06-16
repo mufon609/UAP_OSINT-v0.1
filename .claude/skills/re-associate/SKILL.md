@@ -125,9 +125,11 @@ uncommitted work).
 - **References stay alone.** Do not explode the `cited_works` / `## References`
   list into per-citation links — only a cited author/work the narrative
   *discusses* becomes an entity (the producer/verifier enforce this carve-out).
-- **Redacted / externally-attested author** stays out — it lives in
-  `context_extrinsic.extrinsic_authorship` (redacted-author convention / C3),
-  not `associated_entities`.
+- **Redacted / externally-attested author + attributed institution** — the
+  author and the institution named in `context_extrinsic.extrinsic_authorship`
+  (carried from the products-list attribution) ARE associated entities and go in
+  the field; ingesting the attribution is the relevance decision. There is no
+  "redacted author stays out" carve-out.
 - This is the corpus-sweep tool for BACKLOG C4 (bring every pre-rule node up to
   standard) and the standing pass for keeping new ingests — including the
   government-document releases — honest from the start. Run it against one node

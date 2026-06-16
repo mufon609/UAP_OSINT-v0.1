@@ -193,6 +193,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/john-greenewald`]
 - [`/people/robert-bussard`]
 - [`/people/v-belyaev`]
+- [`/people/v-teofilo`]
 
 ### Organizations
 
@@ -200,6 +201,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/organizations/darpa`]
 - [`/organizations/dia`]
 - [`/organizations/emc2`]
+- [`/organizations/lockheed-martin`]
 - [`/organizations/nasa`]
 - [`/organizations/nasa-glenn-research-center`]
 - [`/organizations/the-black-vault`]
