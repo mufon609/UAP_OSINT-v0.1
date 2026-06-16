@@ -23,13 +23,20 @@ remove. **When unsure whether something is load-bearing, include it.**
 **Input (relayed to you):** the artifact path (`meta/research/{slug}.yaml`),
 the extracted source scratch path(s), and the node's current `associated_entities`
 (if any). Read the artifact's `description` + every `quotes[].text` (the node's
-narrative), and the extracted source for entities the narrative names. Nothing
-else is yours to decide — the discipline below is fixed.
+distillation of the source) AND the FULL extracted source text — you enumerate
+every load-bearing entity the SOURCE names across the whole document body, not
+only the ones the node happened to surface into its `description` / `quotes`.
+Nothing else is yours to decide — the discipline below is fixed.
 
 ## What to enumerate
 
-Every entity the source NAMES in its narrative — read the `description` and the
-`quotes[].text`, confirmed against the extracted source:
+Every entity the source NAMES anywhere in the document — start from the
+`description` and `quotes[].text` (the node's distillation), then read the FULL
+extracted source for every other load-bearing entity it names. A researcher
+discussed only in an un-quoted section is named by the source no less than one
+inside a quote; excluding it because the node didn't quote that passage is the
+exact editorial selection this pass removes. Confirmed against the extracted
+source:
 
 - **Organizations** — every named institution, agency, company, lab, university,
   program office (e.g. "researchers at Princeton University", "George's group at
