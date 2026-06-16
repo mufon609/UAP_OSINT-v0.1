@@ -354,6 +354,45 @@ naming_quirks:
   location: 'section "Positron Costs" vs section "Conclusions"'
   source_path: government/dird-08-positron-aerospace-propulsion-20100302.pdf
   resolution: disputed
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /organizations/aawsap
+- /organizations/afrl
+- /organizations/aircraft-nuclear-propulsion
+- /organizations/atomic-energy-commission
+- /organizations/boeing
+- /organizations/cern
+- /organizations/dia
+- /organizations/dod
+- /organizations/fermilab
+- /organizations/international-linear-collider
+- /organizations/kek
+- /organizations/lawrence-berkeley-national-laboratory
+- /organizations/lawrence-livermore-national-laboratory
+- /organizations/max-planck-institute
+- /organizations/nasa
+- /organizations/nasa-glenn-research-center
+- /organizations/nasa-institute-for-advanced-concepts
+- /organizations/national-ignition-facility
+- /organizations/naval-research-laboratory
+- /organizations/nuclear-energy-for-propulsion-of-aircraft
+- /organizations/penn-state-university
+- /organizations/pluto-program
+- /organizations/positronics-research
+- /organizations/rutherford-appleton-laboratory
+- /organizations/slam-supersonic-low-altitude-missile
+- /organizations/the-black-vault
+- /organizations/university-of-bielefeld
+- /organizations/university-of-michigan
+- /organizations/us-air-force
+- /organizations/us-navy
+- /people/c-anderson
+- /people/charles-lindbergh
+- /people/eugen-sanger
+- /people/gerald-smith
+- /people/john-greenewald
+- /people/m-kuriki
+- /people/p-dirac
 cited_works:
 - id: cw1
   added_date: '2026-05-26'

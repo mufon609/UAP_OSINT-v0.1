@@ -466,15 +466,46 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/c-anderson`]
 - [`/people/charles-lindbergh`]
 - [`/people/eugen-sanger`]
 - [`/people/gerald-smith`]
+- [`/people/john-greenewald`]
+- [`/people/m-kuriki`]
+- [`/people/p-dirac`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/afrl`]
+- [`/organizations/aircraft-nuclear-propulsion`]
+- [`/organizations/atomic-energy-commission`]
+- [`/organizations/boeing`]
+- [`/organizations/cern`]
 - [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/fermilab`]
+- [`/organizations/international-linear-collider`]
+- [`/organizations/kek`]
+- [`/organizations/lawrence-berkeley-national-laboratory`]
+- [`/organizations/lawrence-livermore-national-laboratory`]
+- [`/organizations/max-planck-institute`]
+- [`/organizations/nasa`]
+- [`/organizations/nasa-glenn-research-center`]
+- [`/organizations/nasa-institute-for-advanced-concepts`]
+- [`/organizations/national-ignition-facility`]
+- [`/organizations/naval-research-laboratory`]
+- [`/organizations/nuclear-energy-for-propulsion-of-aircraft`]
+- [`/organizations/penn-state-university`]
+- [`/organizations/pluto-program`]
 - [`/organizations/positronics-research`]
+- [`/organizations/rutherford-appleton-laboratory`]
+- [`/organizations/slam-supersonic-low-altitude-missile`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-bielefeld`]
+- [`/organizations/university-of-michigan`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-navy`]
 
 ### Documents
 
