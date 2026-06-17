@@ -547,6 +547,35 @@ description: 'A Defense Intelligence Reference Document produced under the Defen
   The invasive technologies discussion presents the cochlear implant — the most prolific human invasive BMI, an open loop stimulation system through a peripheral connection — then the direct cortical array, penetrating cortical electrodes and their scar tissue response, MEMS/ECoG/PSoC chips that fuse biological to physical circuitry external to the body, the Fetz ([`/people/eberhard-fetz`]) autonomous battery operated neural implant, chronic neural implants with fMRI, new electrode designs that are MR compatible, and hybrid neuro-robotic systems including a lamprey brain stem closed loop pointing to cerebellar interface points. Trials using human subjects present the ethical dilemma of implanting normal volunteers and a 2002 median nerve self-experimenter trial whose connection lasted 3 months before it deteriorated beyond use; optical stimulation that uses light to gate action potentials through a locally inserted LED is presented as a path with no contact between the physical circuits and neurons, avoiding scar tissue. The Discussion states that any successful BMI relies on brain plasticity through user training, neural decoding by a machine learning algorithm, and neuroscience knowledge, and the Conclusions state that noninvasive electrical sensors that rely primarily on EMG signals will dominate near term real-world applications and surpass traditional electro-mechanical interfaces within 5 years, while the far term high-bandwidth (5-20 bits/second) path is an invasive approach using interfaces with single neurons in the cortex or cerebellum, with optical interfaces and ex-vivo electrode arrays encased in engineered neural tissue the two most promising research paths.
 
   '
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /organizations/aawsap
+- /organizations/advanced-telecommunication-research
+- /organizations/dia
+- /organizations/dobelle-institute
+- /organizations/duke-university
+- /organizations/emotiv
+- /organizations/jst
+- /organizations/k-team
+- /organizations/neurosky
+- /organizations/ocz-technology
+- /organizations/pfizer
+- /organizations/the-black-vault
+- /organizations/wayne-state-university
+- /people/b-blankertz
+- /people/deliagina
+- /people/eberhard-fetz
+- /people/f-popescu
+- /people/g-schalk
+- /people/h-kim
+- /people/h-parikh
+- /people/jens-naumann
+- /people/john-greenewald
+- /people/l-hochberg
+- /people/mussa-ivaldi
+- /people/r-clement
+- /people/richard-genik
+- /people/t-blakely
 cited_works:
   - id: cw1
     added_date: '2026-05-27'

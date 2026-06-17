@@ -734,14 +734,36 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/b-blankertz`]
+- [`/people/deliagina`]
 - [`/people/eberhard-fetz`]
+- [`/people/f-popescu`]
+- [`/people/g-schalk`]
+- [`/people/h-kim`]
+- [`/people/h-parikh`]
+- [`/people/jens-naumann`]
 - [`/people/john-greenewald`]
+- [`/people/l-hochberg`]
+- [`/people/mussa-ivaldi`]
+- [`/people/r-clement`]
+- [`/people/richard-genik`]
+- [`/people/t-blakely`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/advanced-telecommunication-research`]
 - [`/organizations/dia`]
+- [`/organizations/dobelle-institute`]
+- [`/organizations/duke-university`]
+- [`/organizations/emotiv`]
+- [`/organizations/jst`]
+- [`/organizations/k-team`]
+- [`/organizations/neurosky`]
+- [`/organizations/ocz-technology`]
+- [`/organizations/pfizer`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/wayne-state-university`]
 
 ### Documents
 
