@@ -31,7 +31,7 @@ Antigravity for Aerospace Applications. The Defense Intelligence Reference Docum
 The Foreword states that antigravity effects can be implemented by manipulating spacetime, and that the paper reviews several different theoretical approaches for exploring the possibility of controlling gravity by generating forces that counteract, or otherwise modify, gravity for the purpose of aerospace propulsion, with Einstein's General Theory of Relativity as the theoretical framework guiding the study; the paper also reviews other antigravity approaches via the interaction of quantum theory with gravitation, and explores which method or technique is best suited for aerospace applications and evaluates the make-or-break issues that limit them. The Introduction states the theoretical possibility of antigravity also appears in quantum gravity theories, cosmological vacuum or dark energy, and quantum field theory, and that the report reviews the production of antigravity (self-lifting) forces induced by quantum vacuum zero-point energy and by nonretarded quantum interatomic dispersion forces in a curved spacetime; the reader should bear in mind that many of these concepts are nowhere near having any form of practicable engineering implementation.
 
 
-The report reviews antigravity within Newtonian physics — Forward's ([`/people/robert-forward`]) ball of ultradense compact matter at dwarf star or neutron star densities — and antigravity within general relativity via gravitomagnetic forces, where Heaviside ([`/people/oliver-heaviside`]) (in 1883), Einstein, Thirring ([`/people/hans-thirring`]), and Thirring and Lense ([`/people/josef-lense`]) showed general relativity provides ways to generate non-Newtonian gravitational forces by the splitting of gravitation into electric and magnetic field type components, giving the Lense-Thirring or rotational frame dragging effect and Forward's Dipole Gravitational Field Generator. It reviews Felber's ([`/people/franklin-felber`]) exact relativistic antigravity effect (gravitational repulsion above a critical velocity), Negative Energy-Induced Antigravity via exotic matter, the vacuum energy of Einstein's cosmological constant and dark/vacuum energy, a quantum antigravity correction term derived in 1984 by R. L. Forward and the author with instruction provided by R. P. Feynman ([`/people/richard-feynman`]) and M. Scadron ([`/people/michael-scadron`]) during a summer quantum gravity seminar sponsored by the Hughes Research Labs ([`/organizations/hughes-research-labs`]), the quantum vacuum zero-point fluctuation force (Calloni et al.), and Pinto's ([`/people/fabrizio-pinto`]) nonretarded quantum interatomic dispersion force levitation propulsion thruster. The Polarizable-Vacuum approach of H. E. Puthoff ([`/people/hal-puthoff`]) (Reference 68) and concepts incorporating rotating superconductors reviewed by Hathaway ([`/people/george-hathaway`]) (Reference 69) — together with the apparent frame-dragging effect observed by Martin Tajmar ([`/people/martin-tajmar`]) near super-cooled rotating rings — are cited, the same Hathaway and Tajmar material that appears in a related Defense Intelligence Reference Document ([`/documents/dird-17-maverick-inventor`]).
+The report reviews antigravity within Newtonian physics — Forward's ([`/people/robert-forward`]) ball of ultradense compact matter at dwarf star or neutron star densities — and antigravity within general relativity via gravitomagnetic forces, where Heaviside ([`/people/oliver-heaviside`]) (in 1883), Einstein, Thirring ([`/people/hans-thirring`]), and Thirring and Lense ([`/people/josef-lense`]) showed general relativity provides ways to generate non-Newtonian gravitational forces by the splitting of gravitation into electric and magnetic field type components, giving the Lense-Thirring or rotational frame dragging effect and Forward's Dipole Gravitational Field Generator. It reviews Felber's ([`/people/franklin-felber`]) exact relativistic antigravity effect (gravitational repulsion above a critical velocity), Negative Energy-Induced Antigravity via exotic matter, the vacuum energy of Einstein's cosmological constant and dark/vacuum energy, a quantum antigravity correction term derived in 1984 by R. L. Forward and the author with instruction provided by R. P. Feynman ([`/people/richard-feynman`]) and M. Scadron ([`/people/michael-scadron`]) during a summer quantum gravity seminar sponsored by the Hughes Research Labs ([`/organizations/hughes-research-laboratories`]), the quantum vacuum zero-point fluctuation force (Calloni et al.), and Pinto's ([`/people/fabrizio-pinto`]) nonretarded quantum interatomic dispersion force levitation propulsion thruster. The Polarizable-Vacuum approach of H. E. Puthoff ([`/people/hal-puthoff`]) (Reference 68) and concepts incorporating rotating superconductors reviewed by Hathaway ([`/people/george-hathaway`]) (Reference 69) — together with the apparent frame-dragging effect observed by Martin Tajmar ([`/people/martin-tajmar`]) near super-cooled rotating rings — are cited, the same Hathaway and Tajmar material that appears in a related Defense Intelligence Reference Document ([`/documents/dird-17-maverick-inventor`]).
 
 
 The Conclusion: The Way Forward states that the report has reviewed and analyzed a number of antigravity concepts found within Newtonian gravity theory, General Relativity Theory, semi-classical quantum gravity theory, quantum field theory, and nonretarded quantum interatomic dispersion force theory, and that plausible mechanisms exist within Newtonian and general relativistic theories whereby one could embody a realistic device that produces a significant antigravity force; however, there are daunting technical challenges that arise in each of the proposed embodiments — mechanical embodiments require kilometer-sized apparatus, astronomical-sized masses and densities, or extreme mass velocities and accelerations, and the negative energy produced in the lab in very small quantities is produced using nascent technologies. The negative energy and exotic matter material and the reference to the author also appear in the related Defense Intelligence Reference Document on traversable wormholes and negative energy ([`/documents/dird-18-traversable-wormholes`]) and on the quantum vacuum ([`/documents/dird-24-quantum-vacuum-energy-extraction`]).
@@ -503,25 +503,58 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/a-riess`]
+- [`/people/albert-einstein`]
+- [`/people/c-caves`]
+- [`/people/c-misner`]
+- [`/people/d-hochberg`]
+- [`/people/e-calloni`]
+- [`/people/e-fermi`]
 - [`/people/eric-davis`]
 - [`/people/fabrizio-pinto`]
 - [`/people/franklin-felber`]
+- [`/people/g-bimonte`]
+- [`/people/g-ellis`]
 - [`/people/george-hathaway`]
+- [`/people/h-ohanian`]
 - [`/people/hal-puthoff`]
 - [`/people/hans-thirring`]
+- [`/people/i-ciufolini`]
+- [`/people/j-rabeau`]
+- [`/people/j-ries`]
+- [`/people/j-wheeler`]
+- [`/people/john-greenewald`]
 - [`/people/josef-lense`]
+- [`/people/kip-thorne`]
+- [`/people/l-ford`]
 - [`/people/martin-tajmar`]
+- [`/people/matt-visser`]
+- [`/people/michael-morris`]
 - [`/people/michael-scadron`]
 - [`/people/oliver-heaviside`]
+- [`/people/p-marecki`]
+- [`/people/r-ruffini`]
 - [`/people/richard-feynman`]
 - [`/people/robert-forward`]
+- [`/people/s-hawking`]
+- [`/people/s-perlmutter`]
+- [`/people/t-kephart`]
+- [`/people/t-roman`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
 - [`/organizations/earthtech-international`]
-- [`/organizations/hughes-research-labs`]
+- [`/organizations/higher-z-team`]
+- [`/organizations/hughes-research-laboratories`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/us-air-force`]
+- [`/organizations/virgo`]
+
+### Events
+
+- [`/events/1984-hughes-quantum-gravity-seminar`]
 
 ### Documents
 
