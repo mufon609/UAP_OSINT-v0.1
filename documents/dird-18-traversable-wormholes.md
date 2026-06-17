@@ -673,16 +673,46 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/a-borde`]
+- [`/people/a-ottewill`]
+- [`/people/c-caves`]
+- [`/people/c-fewster`]
 - [`/people/carl-sagan`]
+- [`/people/d-hochberg`]
+- [`/people/enrico-fermi`]
 - [`/people/eric-davis`]
+- [`/people/g-ellis`]
+- [`/people/j-rabeau`]
+- [`/people/j-ries`]
+- [`/people/john-greenewald`]
 - [`/people/kip-thorne`]
+- [`/people/l-ford`]
+- [`/people/leo-szilard`]
 - [`/people/matt-visser`]
 - [`/people/michael-morris`]
+- [`/people/p-davies`]
+- [`/people/p-marecki`]
+- [`/people/s-hawking`]
+- [`/people/s-krasnikov`]
+- [`/people/t-kephart`]
+- [`/people/t-roman`]
+- [`/people/the-curies`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/california-institute-of-technology`]
 - [`/organizations/dia`]
+- [`/organizations/earthtech-international`]
+- [`/organizations/slac`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-chicago`]
+- [`/organizations/university-of-melbourne`]
+
+### Events
+
+- [`/events/first-nuclear-bomb-test-new-mexico`]
+- [`/events/first-nuclear-reactor-chicago-1939`]
 
 ### Documents
 
