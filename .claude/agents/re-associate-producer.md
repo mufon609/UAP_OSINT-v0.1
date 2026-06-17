@@ -50,7 +50,20 @@ source:
   officials.
 - **Documents / events / locations** — a referenced work the prose *discusses as
   a work* (not merely lists) is a `/documents/` node; a named event a
-  `/events/` node; a named place a `/locations/` node.
+  `/events/` node; a named place a `/locations/` node. A place is linked when the
+  body names it free-standing — in prose, a table location column, a figure
+  caption, or the address block — even an incidental locative ("the lab in
+  Malibu, CA", "efforts in Japan"), AND a named celestial body used as a concrete
+  referent (Earth, the Moon, Mars, the Sun, a named star / nebula as a mission
+  destination). Two place-specific exclusions on top of the carve-outs below: a
+  place that appears ONLY as a sub-string of an organization's proper name
+  ("University of Illinois" → Illinois; "Boston University" → Boston — the org
+  node carries it, never mint the bare place), and a pure geographic scale-word
+  with no discrete referent ("space", "earth orbit", "the universe"). Slug: a US
+  city → `{city}-{state}` (spell the state out; infer it for an unambiguous US
+  city); a foreign city → bare if an unambiguous major city, else
+  `{city}-{country}`; a country / region / celestial body → its canonical bare
+  name; reuse an existing corpus `/locations/` slug.
 - **Extrinsic authorship** — the author AND the institution named in
   `context_extrinsic.extrinsic_authorship` (e.g. "Dr. T. Hufnagel, Johns Hopkins
   Univ.") are both associated entities: ingesting that products-list attribution
