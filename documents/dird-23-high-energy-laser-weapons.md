@@ -31,7 +31,7 @@ State of the Art and Evolution of High Energy Laser Weapons. This Defense Intell
 The purpose of this report is to provide an overview of the current state-of-the-art and potential evolution of megawatt (MW) class high-energy laser (HEL) weapons, with implications for space vehicles in or beyond earth orbit. High Energy Laser weapons, by contrast with kinetic energy weapons, begin delivering the laser beam's energy to the target at the speed of light but require a finite dwell time, and their strength is the ability to precisely deliver a limited quantity of energy to a small spot with little collateral damage. The report gave the two measures of a beam's effect — irradiance (watts/cm2) and fluence (joules/cm2) — and the meaning of the term "Laser" (Light Amplification by Stimulated Emission of Radiation), then the principles first described by Basov ([`/people/basov`]) and Prokhorov ([`/people/prokhorov`]) at the Soviet Lebedev Institute of Physics ([`/organizations/lebedev-institute-of-physics`]) in 1952, the MASER demonstrated by Townes ([`/people/townes`]), Gordon ([`/people/gordon`]), and Zeiger ([`/people/zeiger`]) at Columbia University ([`/organizations/columbia-university`]) in 1953, and the first working laser produced by Theodore Maiman ([`/people/theodore-maiman`]) at Hughes Research Laboratories ([`/organizations/hughes-research-laboratories`]) in 1960.
 
 
-The most significant technical impediment to deployment may have been the large quantities of expensive and hazardous chemicals required by the only available high-average-power lasers; this is now changing with recent advances in electrically powered solid-state and free-electron lasers, which as they mature will enable practical military weapons at power levels ranging from kilowatts to megawatts. To-date, every laser scaled to MW-class average power falls in the chemical category, including the Chemical Oxygen Iodine Laser (COIL); the report also covers the solid-state laser (the Nd:YAG dopant suspended in a crystalline host, and Northrop-Grumman's ([`/organizations/northrop-grumman`]) 100 kW Joint High-Power Solid-State Laser, JHPSSL) and the free-electron laser (FEL), which is not limited to lasing only at specific wavelengths. A brief history of DoD laser weapon research began with the Advanced Research Projects Agency ([`/organizations/arpa`]), the Army Mobile Tactical Unit and the Air Force Airborne Laser Laboratory, the nation's first MW-class test bed (the Mid-InfraRed Advanced Chemical Laser and the SeaLite Beam Director at White Sands Missile Range ([`/locations/white-sands-missile-range`])), the Strategic Defense Initiative that followed President Reagan's ([`/people/ronald-reagan`]) 1983 "Star Wars" speech, and the sole surviving MDA ([`/organizations/missile-defense-agency`]) program, the Airborne Laser. Space offers the ideal environment for laser beam propagation — there is no atmosphere to attenuate or spread the beam — so initial spacecraft laser weapons are conceivable within the next 20 years; the report covers the vulnerability of spacecraft to laser radiation, including whole-body vulnerability through the solar absorption and black-body emission (α/ε) ratio, and offers recommendations on the potential vulnerability of future spacecraft. Its Sources of Further Information gave the Directed Energy Professional Society ([`/organizations/deps`]) as the only professional society in the United States centered on development of high-energy laser and high-power microwave weapons.
+The most significant technical impediment to deployment may have been the large quantities of expensive and hazardous chemicals required by the only available high-average-power lasers; this is now changing with recent advances in electrically powered solid-state and free-electron lasers, which as they mature will enable practical military weapons at power levels ranging from kilowatts to megawatts. To-date, every laser scaled to MW-class average power falls in the chemical category, including the Chemical Oxygen Iodine Laser (COIL); the report also covers the solid-state laser (the Nd:YAG dopant suspended in a crystalline host, and Northrop-Grumman's ([`/organizations/northrop-grumman`]) 100 kW Joint High-Power Solid-State Laser, JHPSSL) and the free-electron laser (FEL), which is not limited to lasing only at specific wavelengths. A brief history of DoD laser weapon research began with the Advanced Research Projects Agency ([`/organizations/arpa`]), the Army Mobile Tactical Unit and the Air Force Airborne Laser Laboratory, the nation's first MW-class test bed (the Mid-InfraRed Advanced Chemical Laser and the SeaLite Beam Director at White Sands Missile Range ([`/locations/white-sands-missile-range`])), the Strategic Defense Initiative that followed President Reagan's ([`/people/reagan`]) 1983 "Star Wars" speech, and the sole surviving MDA ([`/organizations/mda`]) program, the Airborne Laser. Space offers the ideal environment for laser beam propagation — there is no atmosphere to attenuate or spread the beam — so initial spacecraft laser weapons are conceivable within the next 20 years; the report covers the vulnerability of spacecraft to laser radiation, including whole-body vulnerability through the solar absorption and black-body emission (α/ε) ratio, and offers recommendations on the potential vulnerability of future spacecraft. Its Sources of Further Information gave the Directed Energy Professional Society ([`/organizations/deps`]) as the only professional society in the United States centered on development of high-energy laser and high-power microwave weapons.
 
 ---
 
@@ -358,8 +358,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/basov`]
 - [`/people/gordon`]
 - [`/people/j-albertine`]
+- [`/people/john-greenewald`]
+- [`/people/orson-wells`]
 - [`/people/prokhorov`]
-- [`/people/ronald-reagan`]
+- [`/people/reagan`]
 - [`/people/theodore-maiman`]
 - [`/people/townes`]
 - [`/people/zeiger`]
@@ -367,19 +369,41 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/aiaa`]
+- [`/organizations/air-force-institute-of-technology`]
+- [`/organizations/airborne-laser`]
+- [`/organizations/ansi`]
 - [`/organizations/arpa`]
 - [`/organizations/columbia-university`]
 - [`/organizations/deps`]
 - [`/organizations/dia`]
 - [`/organizations/directed-technologies`]
+- [`/organizations/dod`]
 - [`/organizations/hughes-research-laboratories`]
+- [`/organizations/international-test-evaluation-association`]
 - [`/organizations/lebedev-institute-of-physics`]
-- [`/organizations/missile-defense-agency`]
+- [`/organizations/mda`]
 - [`/organizations/northrop-grumman`]
+- [`/organizations/sdi`]
+- [`/organizations/socom`]
+- [`/organizations/spie`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/thomas-jefferson-national-accelerator-facility`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-army`]
+- [`/organizations/us-navy`]
+
+### Events
+
+- [`/events/photonics-west`]
+- [`/events/star-wars-speech`]
 
 ### Documents
 
+- [`/documents/1980-geneva-convention`]
 - [`/documents/dia-aatip-products-list-2018`]
+- [`/documents/star-wars`]
+- [`/documents/war-of-the-worlds`]
 
 ### Locations
 
