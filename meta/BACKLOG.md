@@ -225,16 +225,20 @@ detail; this is the summary):
   FOIA-releaser pair (Greenewald / The Black Vault); a named program →
   `/organizations/` (program-org stub, hosted like AAWSAP); a named event of ANY
   kind → `/events/` (a weapons test, conference, disaster — not only
-  hearing/encounter; the kind binds only at build time, see C7).
+  hearing/encounter; the kind binds only at build time, see C7); a named place →
+  `/locations/`, like any other entity.
 - CARVE-OUTS — the only grounds for not linking a named thing: (a) a bare
   `cited_works` / References entry the prose does not discuss; (b) a thing with
   no host node-type (a bare material/alloy, a device/vehicle MODEL); (c) an
   eponym-only namesake — a person named ONLY as the namesake of a
   principle/effect/equation/law/lens/device ("Fermat's principle", "Maxwell's
   fish-eye lens"), neither an actor in the narrative nor a discussed cited author.
-- DEFERRED to C6: named places — this sweep links people / organizations /
-  programs / events / documents but NOT `/locations/`; the places pass runs
-  corpus-wide afterward.
+- Locations and events are first-class associated entities, linked under the same
+  full-source-scope rule as people / organizations — there is NO places
+  carve-out (only the universal "no host node-type" one, e.g. a generic
+  geographic scale-word like "space"). The early C4 batches were run with places
+  held out, so those nodes still need their `/locations/` backfilled — see C6;
+  new sweeps link places from the start.
 
 **Two things remain, both corpus-scale:**
 
@@ -266,7 +270,7 @@ by gate." Until then the field stays optional so un-swept nodes hold the
 **Related:** C3 (the `extrinsic_authorship`-not-rendered gap a re-associate pass
 surfaces on redacted-author nodes; the `/augment` skill the re-associate agents
 narrow to the link layer alone); C5 (duplicate stub slugs the sweep surfaces);
-C6 (the deferred named-places pass); C7 (the build-time `other` event-kind
+C6 (backfilling locations into nodes swept before places were first-class); C7 (the build-time `other` event-kind
 plumbing this sweep's event stubs need). The principle is the
 [[link-all-load-bearing-references]] working-memory note.
 
@@ -299,26 +303,26 @@ canonical slug and re-render. Could fold into the `/re-associate` corpus sweep
 **Related:** C4 (the re-associate sweep that surfaces these); the
 `link_resolution` broken-link registry is the natural input.
 
-### C6 — Sweep named places into `/locations/` nodes (corpus-wide)
+### C6 — Backfill named places into nodes swept before locations were first-class
 
-The `associated_entities` sweep (C4) links people / organizations / programs /
-events / documents but **defers places**. The black-and-white linking rule covers
-a named place as much as any other entity — a place has a host node-type
-(`/locations/`) — but the corpus today holds essentially one location node
-(`skinwalker-ranch`), and the sweep is being run with places held out, so applying
-it mid-sweep would leave the corpus half-converted. Run a dedicated places pass
-once the entity sweep is complete: settle the line between a **substantive named
-place** (a discussed site → `/locations/` node) and a **bare locative qualifier**
-(merely situating an org/event — "the institute in St. Petersburg", "efforts in
-Japan"), then apply it uniformly across ALL nodes, including every node the entity
-sweep already touched. The
-re-associate producer/verifier definitions already state "a named place →
-`/locations/`"; this pass is where that clause is exercised and the
-place/locative boundary is settled.
+Named places are first-class `associated_entities`, linked like any other entity
+under the C4 full-source-scope rule (a named place → `/locations/`); the
+re-associate producer/verifier already enumerate them, so new sweeps include
+places from the start. The residue is historical: the early C4 batches were run
+with places held out, so those nodes link people / organizations / programs /
+events / documents but not yet their `/locations/`. Backfill the places into
+every node swept before the rule applied, minting the `/locations/` stubs (the
+corpus today holds essentially one location node, `skinwalker-ranch`). The one
+place-specific judgment is the universal no-host-type line — a named site / city /
+region is a `/locations/` node, a generic geographic scale-word ("space", "earth
+orbit") is not — applied the same way the entity rule treats a generic term, NOT
+as a relevance filter (a place named in the body is linked, however incidental,
+exactly as an incidentally-named org is).
 
 **Blocks:** none.
-**Blocked by:** the C4 entity sweep (run places after it, for uniformity).
-**Related:** C4 (the entity sweep that defers places).
+**Blocked by:** none.
+**Related:** C4 (the entity sweep — now inclusive of places); C5 (duplicate stub
+slugs the backfill will also surface for `/locations/`).
 
 ### C7 — Add an `other` event kind (+ renderer branch) for non-hearing/encounter events
 
