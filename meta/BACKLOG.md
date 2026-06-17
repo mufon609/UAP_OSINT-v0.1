@@ -195,30 +195,42 @@ contributors don't wrap links there expecting them to render.
 
 ### C4 — Finish the `associated_entities` rollout across the corpus
 
-**Shipped already (the rule + mechanism).** The black-and-white linking rule —
-*the decision to ingest a source IS the relevance decision; every load-bearing
-entity the source names reaches `## Associated Nodes`, no "node-worthy /
-topically relevant" filter* — is codified in build-protocol ("Linking — ingest
-is the relevance decision") and the worker / builder / auditor roles. The
-mechanism is the `associated_entities` artifact field (the complete, deduped
-list of every source-named entity), unioned into `## Associated Nodes` by
-`associate.py` and validated by `scripts/checks/associated_entities.py`. It
-exists because an entity named only inside a verbatim quote can't be wrapped
-(the verbatim check rejects a link in `quote.text`), so a thin `description`
-used to silently drop it. DIRD-33/34/35 are re-swept, and the **`/re-associate`
-skill + `re-associate-producer` / `re-associate-verifier` agents are built** —
-the link-layer-only pass (re-read source → producer enumerates the complete
-source-named-entity set → independent verifier challenges completeness/correctness
-→ apply to `associated_entities` → re-render). The extrinsic-author carve-out
-that originally contradicted the rule has since been removed from every enforcing
-surface (the `associated_entities.py` gate, `schema-research-artifact.yaml`, the
-`/re-associate` skill, and both its agents): the externally-attested redacted
-author AND the institution attributed to it in `extrinsic_authorship` are
-associated entities like any other source-named entity, and there is no
-"source-body vs. extrinsic" or "illustrative comparator / not node-worthy"
-filter. The only carve-out left is a bare `cited_works` citation the prose does
-not discuss, or a thing the schema has no node-type to host (a material, a
-device/vehicle model). **Two things remain, both corpus-scale:**
+**The rule + mechanism (shipped).** The decision to ingest a source IS the
+relevance decision: EVERY load-bearing entity the source names — across the FULL
+source body, not only what a node surfaced into its `description` / `quotes` —
+reaches `## Associated Nodes`, with no "node-worthy / topically-relevant /
+source-body-vs-extrinsic / illustrative" filter. Codified in build-protocol
+("Linking — ingest is the relevance decision"), the worker / builder / auditor
+roles, and the `re-associate-producer` / `re-associate-verifier` agents. The
+mechanism is the `associated_entities` artifact field — the complete, deduped
+superset of every source-named entity (entities already wrapped inline in prose
+are listed here too) — unioned into `## Associated Nodes` by `associate.py` and
+validated by `scripts/checks/associated_entities.py`. It exists because an entity
+named only inside a verbatim quote can't be wrapped (the verbatim check rejects a
+link in `quote.text`), so a thin `description` silently dropped it. The pass is
+the `/re-associate` skill: re-read source → producer enumerates the complete
+source-named-entity set → independent verifier challenges
+completeness/correctness → apply to `associated_entities` → re-render.
+
+**What links, what is carved out** (the enforcing surfaces above carry the full
+detail; this is the summary):
+- IN, like any other entity: the externally-attested redacted author AND the
+  institution attributed to it in `context_extrinsic.extrinsic_authorship`; the
+  FOIA-releaser pair (Greenewald / The Black Vault); a named program →
+  `/organizations/` (program-org stub, hosted like AAWSAP); a named event of ANY
+  kind → `/events/` (a weapons test, conference, disaster — not only
+  hearing/encounter; the kind binds only at build time, see C7).
+- CARVE-OUTS — the only grounds for not linking a named thing: (a) a bare
+  `cited_works` / References entry the prose does not discuss; (b) a thing with
+  no host node-type (a bare material/alloy, a device/vehicle MODEL); (c) an
+  eponym-only namesake — a person named ONLY as the namesake of a
+  principle/effect/equation/law/lens/device ("Fermat's principle", "Maxwell's
+  fish-eye lens"), neither an actor in the narrative nor a discussed cited author.
+- DEFERRED to C6: named places — this sweep links people / organizations /
+  programs / events / documents but NOT `/locations/`; the places pass runs
+  corpus-wide afterward.
+
+**Two things remain, both corpus-scale:**
 
 **1. Run the sweep across the corpus.** Every node built before the field
 under-links — the gap is corpus-wide and homogeneous (the DIRD series alone ran
@@ -231,10 +243,10 @@ artifact's `associated_entities` field (plus an inline wrap for any entity the
 Nodes` section directly; verbatim + prose-drift gates read clean before and after.
 The same skill is the standing pass for keeping new ingests honest — including the
 recent government-document releases (same name-dense-PDF shape; ingest under this
-rule from the start). **Named places are deferred to C6** — this sweep links
-people / organizations / programs / events / documents but not `/locations/`; the
-places pass runs corpus-wide afterward. Track remaining un-swept nodes with
-`grep -L '^associated_entities:' meta/research/*.yaml`.
+rule from the start). Track remaining un-swept nodes with
+`grep -L '^associated_entities:' meta/research/*.yaml`. The sweep may be run as
+parallel sessions over disjoint node sets — each commits only its own nodes, and
+no session edits the shared toolkit (agents / skills / schema / checks) mid-run.
 
 **2. Flip the field to required.** Once the corpus is swept, make
 `associated_entities` REQUIRED on document / transcript / media target types
@@ -245,9 +257,11 @@ by gate." Until then the field stays optional so un-swept nodes hold the
 
 **Blocks:** none.
 **Blocked by:** none (rule + mechanism shipped).
-**Related:** C3 — the `extrinsic_authorship`-not-rendered gap a re-associate pass
-would surface on redacted-author nodes; the existing `/augment` skill, which the
-re-associate agent narrows to the link layer alone. The principle is the
+**Related:** C3 (the `extrinsic_authorship`-not-rendered gap a re-associate pass
+surfaces on redacted-author nodes; the `/augment` skill the re-associate agents
+narrow to the link layer alone); C5 (duplicate stub slugs the sweep surfaces);
+C6 (the deferred named-places pass); C7 (the build-time `other` event-kind
+plumbing this sweep's event stubs need). The principle is the
 [[link-all-load-bearing-references]] working-memory note.
 
 ### C5 — Dedupe stub slugs that name the same entity across artifacts
