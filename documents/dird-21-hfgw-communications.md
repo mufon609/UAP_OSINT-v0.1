@@ -31,10 +31,10 @@ High-Frequency Gravitational Wave Communications. The Defense Intelligence Refer
 Of the applications of high-frequency gravitational waves (HFGWs), communication appears to be the most important and most immediate. Gravitational waves have a very low cross section for absorption by normal matter, so high-frequency waves could in principle carry significant information content with effectively no absorption, unlike electromagnetic (EM) waves. HFGWs pass through all ordinary material things without attenuation and represent the ultimate wireless system — one could communicate directly through the Earth from Moscow to Caracas without fiber optic cables, microwave relays, or satellite transponders. Multi-channel HFGW communications can be point-to-point, for example to deeply submerged submarines, and point-to-multipoint, like cell phones. Because the communications are carried on an extremely narrow beam directly through the Earth, there is a very low probability of interception.
 
 
-High-frequency gravitational waves, as defined by physicists Douglass ([`/people/david-douglass`]) and Braginsky ([`/people/vladimir-braginsky`]) (1979), are gravitational waves having frequencies higher than 100 kHz; in the report they are set apart from the low-frequency gravitational waves (LFGWs) detectable by interferometric GW detectors such as the Laser Interferometer Gravitational Observatory, or LIGO ([`/organizations/ligo`]), which are not applicable to communications. On generation, fourteen laboratory HFGW generators have been proposed in peer-reviewed journal articles, all employing electromagnetic forces — more than 10³⁵ larger than gravitational forces — to drive the quadrupole equation first derived by Einstein ([`/people/albert-einstein`]) in 1918. The report holds that the Piezoelectric Approach is best for a proof-of-concept test and the IR-excited Molecules Approach best for an operational communications HFGW transmitter. On detection, ten HFGW detectors have been proposed since 1978; the proposed Li-Baker detector, based on the Li-effect of Li ([`/people/fangyu-li`]), Tang ([`/people/mengxi-tang`]) and Zhao ([`/people/pengfei-zhao`]) (1992) and its synchro-resonance condition, shows the most promise. It is photon-signal limited, not quantum-noise limited, with sufficient sensitivity to observe HFGWs of amplitude A ≈ 10⁻³² m/m, and is cooled below ~48 mK. Utilizing the IR-excited Molecules generator and the Li-Baker detector, the theoretical information-transfer rate over 7,000 km beamed directly through the Earth is about 1.9 × 10⁶ bits per second.
+High-frequency gravitational waves, as defined by physicists Douglass ([`/people/d-douglass`]) and Braginsky ([`/people/v-braginsky`]) (1979), are gravitational waves having frequencies higher than 100 kHz; in the report they are set apart from the low-frequency gravitational waves (LFGWs) detectable by interferometric GW detectors such as the Laser Interferometer Gravitational Observatory, or LIGO ([`/organizations/ligo`]), which are not applicable to communications. On generation, fourteen laboratory HFGW generators have been proposed in peer-reviewed journal articles, all employing electromagnetic forces — more than 10³⁵ larger than gravitational forces — to drive the quadrupole equation first derived by Einstein ([`/people/albert-einstein`]) in 1918. The report holds that the Piezoelectric Approach is best for a proof-of-concept test and the IR-excited Molecules Approach best for an operational communications HFGW transmitter. On detection, ten HFGW detectors have been proposed since 1978; the proposed Li-Baker detector, based on the Li-effect of Li ([`/people/fangyu-li`]), Tang ([`/people/m-tang`]) and Zhao ([`/people/p-zhao`]) (1992) and its synchro-resonance condition, shows the most promise. It is photon-signal limited, not quantum-noise limited, with sufficient sensitivity to observe HFGWs of amplitude A ≈ 10⁻³² m/m, and is cooled below ~48 mK. Utilizing the IR-excited Molecules generator and the Li-Baker detector, the theoretical information-transfer rate over 7,000 km beamed directly through the Earth is about 1.9 × 10⁶ bits per second.
 
 
-Beyond communications, the report holds that the most stunning advances will probably not be in communications but in remotely HFGW-generated nuclear fusion or mass disruption, in HFGW propulsion and control of the motion of objects such as missiles, spacecraft, and asteroids by changing the static gravitational field so a vehicle "falls" forward, and in HFGW surveillance — observing activities and materials in three dimensions, within and below structures and within the Earth and its oceans. Under "2050 and Beyond" the report goes as far as faster-than-light (FTL) HFGW propagation through the trispace model, in which gravitational waves may couple into a super-luminal "parallel universe" (Fontana ([`/people/giorgio-fontana`]), Meholic ([`/people/gregory-meholic`])). The research of Gary Stephenson ([`/people/gary-stephenson`]), chief investigator for Seculine Consulting ([`/organizations/seculine-consulting`]), is gratefully acknowledged as crucial to the study.
+Beyond communications, the report holds that the most stunning advances will probably not be in communications but in remotely HFGW-generated nuclear fusion or mass disruption, in HFGW propulsion and control of the motion of objects such as missiles, spacecraft, and asteroids by changing the static gravitational field so a vehicle "falls" forward, and in HFGW surveillance — observing activities and materials in three dimensions, within and below structures and within the Earth and its oceans. Under "2050 and Beyond" the report goes as far as faster-than-light (FTL) HFGW propagation through the trispace model, in which gravitational waves may couple into a super-luminal "parallel universe" (Fontana ([`/people/giorgio-fontana`]), Meholic ([`/people/meholic`])). The research of Gary Stephenson ([`/people/gary-stephenson`]), chief investigator for Seculine Consulting ([`/organizations/seculine-consulting`]), is gratefully acknowledged as crucial to the study.
 
 ---
 
@@ -725,26 +725,96 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/a-clerk`]
+- [`/people/a-cruise`]
 - [`/people/albert-einstein`]
-- [`/people/david-douglass`]
+- [`/people/b-laurent`]
+- [`/people/c-black`]
+- [`/people/c-harper`]
+- [`/people/c-misner`]
+- [`/people/c-shannon`]
+- [`/people/d-douglass`]
+- [`/people/d-kleppner`]
+- [`/people/e-lifshitz`]
+- [`/people/f-nuckolls`]
+- [`/people/f-pegoraro`]
+- [`/people/f-romero-borja`]
 - [`/people/fangyu-li`]
+- [`/people/g-chapline`]
+- [`/people/g-rotoli`]
 - [`/people/gary-stephenson`]
 - [`/people/giorgio-fontana`]
-- [`/people/gregory-meholic`]
-- [`/people/mengxi-tang`]
-- [`/people/pengfei-zhao`]
+- [`/people/h-dehnen`]
+- [`/people/i-pinto`]
+- [`/people/j-kraus`]
+- [`/people/j-weber`]
+- [`/people/j-wheeler`]
+- [`/people/john-greenewald`]
+- [`/people/k-wegter-mcnelly`]
+- [`/people/kip-thorne`]
+- [`/people/l-grishchuk`]
+- [`/people/l-halpern`]
+- [`/people/l-landau`]
+- [`/people/m-sazhin`]
+- [`/people/m-tang`]
+- [`/people/m-tobar`]
+- [`/people/meholic`]
+- [`/people/n-kolosnitsyn`]
+- [`/people/p-zhao`]
+- [`/people/r-chiao`]
+- [`/people/r-li`]
+- [`/people/r-woods`]
 - [`/people/robert-baker`]
-- [`/people/vladimir-braginsky`]
+- [`/people/s-minter`]
+- [`/people/v-braginsky`]
+- [`/people/v-rudenko`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/arc-technologies`]
+- [`/organizations/birmingham-university`]
+- [`/organizations/cryofab`]
+- [`/organizations/cryogenic-ltd`]
+- [`/organizations/cuming-microwave`]
 - [`/organizations/dia`]
+- [`/organizations/edwards-high-vacuum`]
+- [`/organizations/etm-electromatic`]
+- [`/organizations/ets-lindgren`]
+- [`/organizations/ge-healthcare`]
 - [`/organizations/gravwave`]
+- [`/organizations/hong-kong-university-of-science-and-technology`]
+- [`/organizations/infn-genoa`]
+- [`/organizations/kimball-physics`]
+- [`/organizations/kyoto-university`]
 - [`/organizations/ligo`]
 - [`/organizations/louisiana-state-university`]
+- [`/organizations/meyer-tool-manufacturing`]
+- [`/organizations/microwave-power`]
+- [`/organizations/millimeter-wave-technology`]
+- [`/organizations/mitre-corporation`]
+- [`/organizations/nasa`]
+- [`/organizations/national-astronomical-observatory-of-japan`]
+- [`/organizations/national-high-magnetic-field-laboratory`]
+- [`/organizations/national-science-foundation`]
+- [`/organizations/orban-microwave`]
+- [`/organizations/oxford-instruments`]
+- [`/organizations/rozendal-associates`]
+- [`/organizations/scientific-magnetics`]
 - [`/organizations/seculine-consulting`]
+- [`/organizations/siemens`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/toshiba-electron-tube-devices`]
 - [`/organizations/transportation-sciences-corporation`]
+- [`/organizations/us-naval-observatory`]
+- [`/organizations/varian`]
+- [`/organizations/yale-university`]
+
+### Events
+
+- [`/events/2003-hfgw-working-group-conference`]
+- [`/events/2007-hfgw-working-group-conference`]
+- [`/events/2009-3rd-hfgw-workshop-huntsville`]
 
 ### Documents
 
