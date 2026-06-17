@@ -180,7 +180,7 @@ optional_keys:
     # multi-token proper noun in ``quotes[].text`` looks un-captured. Shape:
     # a flat list of ``/{type}/{slug}`` strings. (A future step makes the
     # field REQUIRED on document / transcript / media once the existing
-    # corpus is swept — see meta/BACKLOG.md C5.)
+    # corpus is swept.)
 
 # Type-conditional keys — present only on research artifacts whose
 # target_node type / archetype / kind matches the declared rule(s).
