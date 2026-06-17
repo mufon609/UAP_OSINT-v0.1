@@ -536,21 +536,34 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### People
 
 - [`/people/albert-einstein`]
+- [`/people/edwin-hubble`]
 - [`/people/eric-davis`]
 - [`/people/francisco-lobo`]
 - [`/people/gia-dvali`]
+- [`/people/h-casimir`]
+- [`/people/john-greenewald`]
 - [`/people/lisa-randall`]
 - [`/people/matt-visser`]
+- [`/people/miguel-alcubierre`]
 - [`/people/nima-arkani-hamed`]
+- [`/people/nordstrom`]
+- [`/people/oskar-klein`]
 - [`/people/r-obousy`]
 - [`/people/raman-sundrum`]
+- [`/people/riemann`]
 - [`/people/savas-dimopoulos`]
+- [`/people/schrodinger`]
+- [`/people/t-kaluza`]
+- [`/people/weyl`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/cern`]
 - [`/organizations/dia`]
 - [`/organizations/obousy-consultants`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/washington-university`]
 
 ### Documents
 
