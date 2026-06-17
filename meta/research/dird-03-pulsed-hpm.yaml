@@ -21,6 +21,16 @@ context_extrinsic:
   quote_attribution: 'Pulsed High-Power Microwave Source Technology — DIA AAWSAP Defense Intelligence Reference Document, 28 January 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. James Wells, JW Enterprises (attachment 3, short title "Pulsed High-Power Microwave Technology").'
 associated_entities:
+- /locations/albany-new-york
+- /locations/earth
+- /locations/germany
+- /locations/hawaii
+- /locations/new-york
+- /locations/pacific-ocean
+- /locations/st-petersburg-russia
+- /locations/united-kingdom
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/afrl
 - /organizations/bae-systems

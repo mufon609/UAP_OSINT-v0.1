@@ -21,6 +21,21 @@ context_extrinsic:
   quote_attribution: 'DIRD #2 (Aerospace Applications of Programmable Matter), 14 December 2009'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. W. McCarthy, Programmable Matter Corporation (attachment 23, short title "Aerospace Applications of Programmable Matter").'
 associated_entities:
+- /locations/boston-massachusetts
+- /locations/boulder-colorado
+- /locations/denver-colorado
+- /locations/earth
+- /locations/houston-texas
+- /locations/jacksonville-florida
+- /locations/kansas-city-missouri
+- /locations/north-carolina
+- /locations/pasadena-california
+- /locations/phoenix-arizona
+- /locations/sacramento-california
+- /locations/seattle-washington
+- /locations/sun
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/ashrae
 - /organizations/california-institute-of-technology

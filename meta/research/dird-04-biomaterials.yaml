@@ -21,6 +21,9 @@ context_extrinsic:
   quote_attribution: 'DIRD #4 (Biomaterials), 7 January 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. Bruce Towe, University of Arizona (attachment 17, short title "Biomaterials").'
 associated_entities:
+- /locations/flagstaff-arizona
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/dia
 - /organizations/dow-corning

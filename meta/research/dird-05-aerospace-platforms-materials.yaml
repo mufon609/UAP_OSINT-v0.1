@@ -21,6 +21,13 @@ context_extrinsic:
   quote_attribution: 'DIRD #5 (Materials for Advanced Aerospace Platforms), 12 January 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. J. Williams, Ohio State Univ. (attachment 21, short title "Materials for Advanced Aerospace Platforms").'
 associated_entities:
+- /locations/austria
+- /locations/earth
+- /locations/japan
+- /locations/lowell-massachusetts
+- /locations/united-kingdom
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/air-force-materials-and-manufacturing-directorate
 - /organizations/aircraft-structural-integrity-program

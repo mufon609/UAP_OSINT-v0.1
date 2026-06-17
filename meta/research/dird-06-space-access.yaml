@@ -22,6 +22,45 @@ context_extrinsic:
   quote_attribution: 'Space Access: Where We''ve Been . . . and Where We Could Go — DIA AAWSAP Defense Intelligence Reference Document, 8 March 2010'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. P. Czysz, HyperTech (attachment 4, short title "Space Access"). The name is independently attested within the document''s own endnotes, which self-cite "Bruno, Claudio A.; Czysz, Paul" and "Czysz, Paul A." among the cited works.'
 associated_entities:
+- /locations/baikonur
+- /locations/bonneville-salt-flats
+- /locations/bordeaux
+- /locations/butte-montana
+- /locations/california
+- /locations/cape-canaveral
+- /locations/chicago-illinois
+- /locations/china
+- /locations/dayton-ohio
+- /locations/denver-colorado
+- /locations/earth
+- /locations/edwards-afb
+- /locations/europe
+- /locations/florida
+- /locations/houston-texas
+- /locations/huntington-beach-california
+- /locations/huntsville
+- /locations/india
+- /locations/japan
+- /locations/kazakhstan
+- /locations/los-angeles-california
+- /locations/moon
+- /locations/north-america
+- /locations/russia
+- /locations/saudi-arabia
+- /locations/seattle-washington
+- /locations/sendai
+- /locations/south-pacific
+- /locations/soviet-union
+- /locations/st-joseph-missouri
+- /locations/st-louis-missouri
+- /locations/taiwan
+- /locations/tullahoma-tennessee
+- /locations/united-kingdom
+- /locations/united-states
+- /locations/vandenberg-afb
+- /locations/washington-dc
+- /locations/white-sands-missile-range
+- /locations/wright-patterson-afb
 - /organizations/aawsap
 - /organizations/aerojet
 - /organizations/aerospace-corporation

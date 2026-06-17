@@ -384,3 +384,21 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/boston-massachusetts`]
+- [`/locations/boulder-colorado`]
+- [`/locations/denver-colorado`]
+- [`/locations/earth`]
+- [`/locations/houston-texas`]
+- [`/locations/jacksonville-florida`]
+- [`/locations/kansas-city-missouri`]
+- [`/locations/north-carolina`]
+- [`/locations/pasadena-california`]
+- [`/locations/phoenix-arizona`]
+- [`/locations/sacramento-california`]
+- [`/locations/seattle-washington`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

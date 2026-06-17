@@ -21,6 +21,10 @@ context_extrinsic:
   quote_attribution: 'Metallic Glasses: Status and Prospects for Aerospace Applications — DIA AAWSAP Defense Intelligence Reference Document, 14 December 2009'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under FOIA (b)(6). The DIA-to-Congress products list attributes the report to Dr. T. Hufnagel, John Hopkins Univ. (attachment 22, short title "Metallic Glasses").'
 associated_entities:
+- /locations/china
+- /locations/japan
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/darpa
 - /organizations/dia

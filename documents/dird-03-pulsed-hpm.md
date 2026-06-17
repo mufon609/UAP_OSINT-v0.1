@@ -464,3 +464,16 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/albany-new-york`]
+- [`/locations/earth`]
+- [`/locations/germany`]
+- [`/locations/hawaii`]
+- [`/locations/new-york`]
+- [`/locations/pacific-ocean`]
+- [`/locations/st-petersburg-russia`]
+- [`/locations/united-kingdom`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
