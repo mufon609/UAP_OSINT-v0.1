@@ -595,6 +595,45 @@ description: 'Advanced Nuclear Propulsion for Manned Deep Space Missions. The De
   Two concepts are of great importance for the envisioned deuterium fusion-driven starship: the concept of magnetic insulation, which permits the attainment of ultrahigh voltages in high vacuum, and the concept of inductive charging, by which a magnetically insulated conductor can be charged up to very high electric potentials — the spacecraft, acting as a capacitor, charged up to GeV potentials in the ultrahigh vacuum of space. To lift large payloads into Earth orbit remains the most difficult task, because magnetic insulation inside the Earth''s atmosphere fails; for that step a different technique is suggested, one the author had first proposed in a classified report dated January 1970, declassified in July 2007. For testing the deuterium microdetonation concept, an alternative is proposed: replacing the huge spaceship used as a large capacitor with a Super Marx generator, which can achieve on Earth what the spaceship can achieve in space, without radioactive fallout. An Appendix presents Conjectured Metastable Superexplosives Formed Under High Pressure for Thermonuclear Ignition. The Conclusion states that if large-scale manned spaceflight has any future, a high-specific-impulse, high-thrust propulsion system is needed, that the only known propulsion concept with this property is nuclear bomb propulsion, and that using deuterium as the nuclear rocket fuel would make manned space flight to the Oort cloud possible, at a distance at about one-tenth of one light year.
 
   '
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /documents/oberth-rocket-into-planetary-space-1923
+- /documents/project-orion-the-true-story-of-the-atomic-spaceship
+- /events/2nd-un-conference-peaceful-use-atomic-energy
+- /events/centurion-halite-experiment
+- /events/mike-test
+- /organizations/aawsap
+- /organizations/atomic-energy-commission
+- /organizations/british-interplanetary-society
+- /organizations/dia
+- /organizations/los-alamos-national-laboratory
+- /organizations/max-planck-institute
+- /organizations/operation-paperclip
+- /organizations/project-daedalus
+- /organizations/project-orion
+- /organizations/the-black-vault
+- /organizations/university-of-nevada-reno
+- /organizations/university-of-stuttgart
+- /people/b-muller
+- /people/claudio-maccone
+- /people/f-winterberg
+- /people/freeman-dyson
+- /people/george-dyson
+- /people/guderley
+- /people/hahn
+- /people/heisenberg
+- /people/hermann-oberth
+- /people/j-rafelski
+- /people/john-greenewald
+- /people/r-kidder
+- /people/robert-goddard
+- /people/s-fuelling
+- /people/stanislaw-ulam
+- /people/strassmann
+- /people/ted-taylor
+- /people/von-weizsacker
+- /people/w-greiner
+- /people/wernher-von-braun
 cited_works:
   - id: cw1
     added_date: '2026-05-26'

@@ -590,12 +590,52 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ## Associated Nodes
 
+### People
+
+- [`/people/b-muller`]
+- [`/people/claudio-maccone`]
+- [`/people/f-winterberg`]
+- [`/people/freeman-dyson`]
+- [`/people/george-dyson`]
+- [`/people/guderley`]
+- [`/people/hahn`]
+- [`/people/heisenberg`]
+- [`/people/hermann-oberth`]
+- [`/people/j-rafelski`]
+- [`/people/john-greenewald`]
+- [`/people/r-kidder`]
+- [`/people/robert-goddard`]
+- [`/people/s-fuelling`]
+- [`/people/stanislaw-ulam`]
+- [`/people/strassmann`]
+- [`/people/ted-taylor`]
+- [`/people/von-weizsacker`]
+- [`/people/w-greiner`]
+- [`/people/wernher-von-braun`]
+
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/atomic-energy-commission`]
+- [`/organizations/british-interplanetary-society`]
 - [`/organizations/dia`]
+- [`/organizations/los-alamos-national-laboratory`]
+- [`/organizations/max-planck-institute`]
+- [`/organizations/operation-paperclip`]
+- [`/organizations/project-daedalus`]
+- [`/organizations/project-orion`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/university-of-nevada-reno`]
+- [`/organizations/university-of-stuttgart`]
+
+### Events
+
+- [`/events/2nd-un-conference-peaceful-use-atomic-energy`]
+- [`/events/centurion-halite-experiment`]
+- [`/events/mike-test`]
 
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+- [`/documents/oberth-rocket-into-planetary-space-1923`]
+- [`/documents/project-orion-the-true-story-of-the-atomic-spaceship`]
