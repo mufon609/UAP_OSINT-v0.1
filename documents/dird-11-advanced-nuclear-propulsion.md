@@ -639,3 +639,18 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/documents/dia-aatip-products-list-2018`]
 - [`/documents/oberth-rocket-into-planetary-space-1923`]
 - [`/documents/project-orion-the-true-story-of-the-atomic-spaceship`]
+
+### Locations
+
+- [`/locations/berlin`]
+- [`/locations/earth`]
+- [`/locations/germany`]
+- [`/locations/goettingen`]
+- [`/locations/jupiter`]
+- [`/locations/moon`]
+- [`/locations/nevada-test-site`]
+- [`/locations/oort-cloud`]
+- [`/locations/san-diego-california`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

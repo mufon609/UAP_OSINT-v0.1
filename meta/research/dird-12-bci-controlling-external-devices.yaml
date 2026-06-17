@@ -549,6 +549,14 @@ description: 'A Defense Intelligence Reference Document produced under the Defen
   '
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/earth
+- /locations/japan
+- /locations/lincoln-memorial
+- /locations/lisbon-portugal
+- /locations/new-york
+- /locations/toronto
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/advanced-telecommunication-research
 - /organizations/dia

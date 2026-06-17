@@ -814,3 +814,13 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/australia`]
+- [`/locations/germany`]
+- [`/locations/idaho`]
+- [`/locations/japan`]
+- [`/locations/jupiter`]
+- [`/locations/santa-fe-new-mexico`]
+- [`/locations/washington-dc`]

@@ -348,6 +348,7 @@ naming_quirks:
   resolution: preserve-as-sic-in-quotes
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/dia
 - /organizations/international-technology-roadmap-for-semiconductors

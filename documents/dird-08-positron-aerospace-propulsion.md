@@ -510,3 +510,20 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/atlanta-georgia`]
+- [`/locations/earth`]
+- [`/locations/edwards-afb`]
+- [`/locations/eglin-afb`]
+- [`/locations/florida`]
+- [`/locations/georgia`]
+- [`/locations/germany`]
+- [`/locations/japan`]
+- [`/locations/mars`]
+- [`/locations/munich`]
+- [`/locations/nevada-test-site`]
+- [`/locations/united-kingdom`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

@@ -274,6 +274,9 @@ naming_quirks:
   resolution: disputed
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/earth
+- /locations/tokyo
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/british-museum
 - /organizations/dia
