@@ -364,6 +364,18 @@ naming_quirks:
   source_path: government/dird-33-mhd-air-breathing-propulsion-2010.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:
+- /locations/china
+- /locations/earth
+- /locations/europe
+- /locations/japan
+- /locations/jupiter
+- /locations/leningrad
+- /locations/mars
+- /locations/russia
+- /locations/soviet-union
+- /locations/st-petersburg-russia
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/aerojet
 - /organizations/aiaa

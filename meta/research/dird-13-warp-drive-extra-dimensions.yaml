@@ -542,6 +542,15 @@ naming_quirks:
     resolution: preserve-as-sic-in-quotes
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/alpha-centauri
+- /locations/earth
+- /locations/epsilon-eridani
+- /locations/jupiter
+- /locations/mars
+- /locations/neptune
+- /locations/orion-nebula
+- /locations/sun
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/cern
 - /organizations/dia

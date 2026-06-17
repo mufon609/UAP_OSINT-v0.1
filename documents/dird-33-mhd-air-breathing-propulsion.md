@@ -504,3 +504,18 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/documents/jpp-special-section-weakly-ionized-plasmas-2008`]
 - [`/documents/kuranov-korabelnikov-ajax-jpp-2008`]
 - [`/documents/riggins-mhd-energy-bypass-jpp-2004`]
+
+### Locations
+
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/europe`]
+- [`/locations/japan`]
+- [`/locations/jupiter`]
+- [`/locations/leningrad`]
+- [`/locations/mars`]
+- [`/locations/russia`]
+- [`/locations/soviet-union`]
+- [`/locations/st-petersburg-russia`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

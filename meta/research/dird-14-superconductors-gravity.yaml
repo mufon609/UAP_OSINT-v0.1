@@ -334,6 +334,19 @@ naming_quirks:
     resolution: preserve-as-sic-in-quotes
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/austin-texas
+- /locations/california
+- /locations/china
+- /locations/earth
+- /locations/finland
+- /locations/germany
+- /locations/holland
+- /locations/japan
+- /locations/moon
+- /locations/moscow
+- /locations/russia
+- /locations/toronto
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/american-physical-society
 - /organizations/asea-brown-boveri

@@ -149,6 +149,27 @@ naming_quirks:
   source_path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:
+- /locations/alpha-centauri
+- /locations/arctic
+- /locations/barnard-star
+- /locations/canada
+- /locations/earth
+- /locations/germany
+- /locations/jupiter
+- /locations/livermore-california
+- /locations/mars
+- /locations/moon
+- /locations/nevada-test-site
+- /locations/proxima-centauri
+- /locations/russia
+- /locations/santa-fe-new-mexico
+- /locations/saturn
+- /locations/silverpeak-nevada
+- /locations/soviet-union
+- /locations/sun
+- /locations/united-states
+- /locations/washington-dc
+- /locations/webster-texas
 - /organizations/aawsap
 - /organizations/darpa
 - /organizations/dia

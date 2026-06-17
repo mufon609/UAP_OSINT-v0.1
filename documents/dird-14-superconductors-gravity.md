@@ -381,3 +381,19 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/austin-texas`]
+- [`/locations/california`]
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/finland`]
+- [`/locations/germany`]
+- [`/locations/holland`]
+- [`/locations/japan`]
+- [`/locations/moon`]
+- [`/locations/moscow`]
+- [`/locations/russia`]
+- [`/locations/toronto`]
+- [`/locations/washington-dc`]

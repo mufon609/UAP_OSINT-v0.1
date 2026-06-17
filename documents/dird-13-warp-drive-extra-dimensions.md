@@ -568,3 +568,15 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/alpha-centauri`]
+- [`/locations/earth`]
+- [`/locations/epsilon-eridani`]
+- [`/locations/jupiter`]
+- [`/locations/mars`]
+- [`/locations/neptune`]
+- [`/locations/orion-nebula`]
+- [`/locations/sun`]
+- [`/locations/washington-dc`]

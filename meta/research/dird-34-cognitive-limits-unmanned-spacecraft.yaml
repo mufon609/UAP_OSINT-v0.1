@@ -256,6 +256,17 @@ naming_quirks:
   source_path: government/dird-34-cognitive-limits-unmanned-spacecraft-2010.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:
+- /locations/afghanistan
+- /locations/fayetteville-arkansas
+- /locations/france
+- /locations/iraq
+- /locations/lyon
+- /locations/minneapolis-saint-paul
+- /locations/oklahoma-city-oklahoma
+- /locations/potomac
+- /locations/roswell-new-mexico
+- /locations/united-states
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/dia
 - /organizations/the-black-vault

@@ -210,3 +210,27 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/alpha-centauri`]
+- [`/locations/arctic`]
+- [`/locations/barnard-star`]
+- [`/locations/canada`]
+- [`/locations/earth`]
+- [`/locations/germany`]
+- [`/locations/jupiter`]
+- [`/locations/livermore-california`]
+- [`/locations/mars`]
+- [`/locations/moon`]
+- [`/locations/nevada-test-site`]
+- [`/locations/proxima-centauri`]
+- [`/locations/russia`]
+- [`/locations/santa-fe-new-mexico`]
+- [`/locations/saturn`]
+- [`/locations/silverpeak-nevada`]
+- [`/locations/soviet-union`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
+- [`/locations/webster-texas`]

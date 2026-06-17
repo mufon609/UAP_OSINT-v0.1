@@ -421,3 +421,17 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/afghanistan`]
+- [`/locations/fayetteville-arkansas`]
+- [`/locations/france`]
+- [`/locations/iraq`]
+- [`/locations/lyon`]
+- [`/locations/minneapolis-saint-paul`]
+- [`/locations/oklahoma-city-oklahoma`]
+- [`/locations/potomac`]
+- [`/locations/roswell-new-mexico`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

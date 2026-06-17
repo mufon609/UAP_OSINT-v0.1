@@ -364,6 +364,13 @@ naming_quirks:
   source_path: government/dird-35-quantum-computing-organic-molecules-2010.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:
+- /locations/earth
+- /locations/jupiter
+- /locations/mars
+- /locations/moon
+- /locations/neptune
+- /locations/tokyo
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/arizona-state-university
 - /organizations/california-institute-of-technology

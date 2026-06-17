@@ -658,3 +658,13 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 - [`/documents/dia-aatip-products-list-2018`]
 - [`/documents/dird-34-cognitive-limits-unmanned-spacecraft`]
+
+### Locations
+
+- [`/locations/earth`]
+- [`/locations/jupiter`]
+- [`/locations/mars`]
+- [`/locations/moon`]
+- [`/locations/neptune`]
+- [`/locations/tokyo`]
+- [`/locations/washington-dc`]
