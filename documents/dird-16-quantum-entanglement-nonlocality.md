@@ -338,16 +338,42 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/a-aspect`]
 - [`/people/albert-einstein`]
+- [`/people/anthony-leggett`]
+- [`/people/anton-zeilinger`]
+- [`/people/b-saleh`]
+- [`/people/birgit-dopfer`]
+- [`/people/boris-podolsky`]
+- [`/people/c-wu`]
+- [`/people/i-shanknov`]
+- [`/people/j-clauser`]
+- [`/people/j-wheeler`]
+- [`/people/john-bell`]
 - [`/people/john-cramer`]
+- [`/people/john-greenewald`]
 - [`/people/joseph-polchinski`]
+- [`/people/kip-thorne`]
+- [`/people/n-gisin`]
+- [`/people/nathan-rosen`]
+- [`/people/r-feynman`]
+- [`/people/s-freedman`]
+- [`/people/schrodinger`]
+- [`/people/stephen-hawking`]
 - [`/people/steven-weinberg`]
 - [`/people/yanhua-shih`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/boston-university`]
 - [`/organizations/dia`]
+- [`/organizations/iqoqi`]
+- [`/organizations/swiss-telephone-system`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-illinois`]
+- [`/organizations/university-of-innsbruck`]
+- [`/organizations/university-of-washington`]
 
 ### Documents
 
