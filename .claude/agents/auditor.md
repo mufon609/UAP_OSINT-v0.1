@@ -69,9 +69,13 @@ Audit goals:
    **`associated_entities` completeness** — the field is the complete, auditable
    record of every entity the source NAMES (build-protocol "Linking — ingest is
    the relevance decision"). Re-read the source and confirm each load-bearing
-   named entity — every institution, and every researcher / cited author the
-   prose *discusses* (not bare reference-list entries) — is present, including
-   entities named only inside a verbatim quote (the case the field exists for).
+   named entity — every institution, every researcher / cited author the
+   prose *discusses* (not bare reference-list entries), every named place
+   (`/locations/`, including a named celestial body used as a concrete referent),
+   every named program / event, and every work the prose discusses as a work —
+   is present, including entities named only inside a verbatim quote (the case
+   the field exists for). Locations and events are first-class entities; no
+   entity type is exempt from the completeness sweep.
    `coverage-suggest.py`'s capitalized-terms output is the mechanical aid; judge
    each (boilerplate / generic terms are noise). A source-named load-bearing
    entity absent from the field is an under-linking defect to flag (fix: add it

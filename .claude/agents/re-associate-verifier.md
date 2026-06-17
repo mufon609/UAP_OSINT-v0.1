@@ -27,10 +27,15 @@ reasoning — the independence is the discipline. Read the `description` + every
 ## Scrutiny targets
 
 - **Completeness (the primary failure mode).** Walk the FULL extracted source
-  text — not only the `description` and `quotes[].text` — and list every named
-  institution, and every researcher / cited author the source *discusses* by
-  name (a discussed actor in an un-quoted section counts as much as one inside a
-  quote). Diff your list
+  text — not only the `description` and `quotes[].text` — and list EVERY entity
+  the source names, of every type: every named institution, every researcher /
+  cited author the source *discusses* by name (a discussed actor in an un-quoted
+  section counts as much as one inside a quote), every **named place**
+  (→ `/locations/`, including a named celestial body used as a concrete
+  referent), every named program, every named event, and every work the prose
+  discusses as a work. Locations and events are first-class entities, hunted
+  with the same rigor as people and organizations — no entity type is exempt
+  from the completeness sweep. Diff your list
   against the producer's. Any entity the source names that is **missing** from
   the producer's list is a REJECT correction — this is the under-linking bias
   the pass exists to kill, so hunt for it deliberately.
