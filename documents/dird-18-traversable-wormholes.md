@@ -717,3 +717,12 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/earth`]
+- [`/locations/jupiter`]
+- [`/locations/new-mexico`]
+- [`/locations/sun`]
+- [`/locations/times-square`]
+- [`/locations/washington-dc`]

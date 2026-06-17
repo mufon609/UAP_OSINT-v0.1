@@ -273,6 +273,13 @@ associated_entities:
 - /documents/war-of-the-worlds
 - /events/photonics-west
 - /events/star-wars-speech
+- /locations/california
+- /locations/china
+- /locations/earth
+- /locations/moon
+- /locations/russia
+- /locations/sun
+- /locations/united-states
 - /locations/white-sands-missile-range
 - /organizations/aawsap
 - /organizations/aiaa

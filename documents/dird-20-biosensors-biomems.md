@@ -489,3 +489,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 - [`/documents/dia-aatip-products-list-2018`]
 - [`/documents/dird-04-biomaterials`]
+
+### Locations
+
+- [`/locations/europe`]
+- [`/locations/switzerland`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]

@@ -267,6 +267,11 @@ quotes:
   statement_date: '2010-04-06'
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/california
+- /locations/earth
+- /locations/edwards-afb
+- /locations/sun
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/afrl
 - /organizations/arizona-state-university

@@ -160,6 +160,9 @@ quotes:
   statement_date: '2010-03-29'
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/austin-texas
+- /locations/sun
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/dia
 - /organizations/earthtech-international

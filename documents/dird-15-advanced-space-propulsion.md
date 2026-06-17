@@ -260,3 +260,9 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/austin-texas`]
+- [`/locations/sun`]
+- [`/locations/washington-dc`]

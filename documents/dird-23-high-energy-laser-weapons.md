@@ -407,4 +407,11 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### Locations
 
+- [`/locations/california`]
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/moon`]
+- [`/locations/russia`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
 - [`/locations/white-sands-missile-range`]

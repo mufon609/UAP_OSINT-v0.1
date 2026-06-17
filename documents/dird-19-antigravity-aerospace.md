@@ -562,3 +562,10 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/documents/dird-17-maverick-inventor`]
 - [`/documents/dird-18-traversable-wormholes`]
 - [`/documents/dird-24-quantum-vacuum-energy-extraction`]
+
+### Locations
+
+- [`/locations/earth`]
+- [`/locations/malibu-california`]
+- [`/locations/sun`]
+- [`/locations/washington-dc`]

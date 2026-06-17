@@ -172,6 +172,24 @@ naming_quirks:
 associated_entities:
 - /documents/dia-aatip-products-list-2018
 - /documents/dird-14-superconductors-gravity
+- /locations/albuquerque-new-mexico
+- /locations/arlington-virginia
+- /locations/austin-texas
+- /locations/brook-park-ohio
+- /locations/cambridge-massachusetts
+- /locations/columbus-ohio
+- /locations/cypress-california
+- /locations/europe
+- /locations/livermore-california
+- /locations/menlo-park-california
+- /locations/murray-hill-new-jersey
+- /locations/palmdale-california
+- /locations/palo-alto-california
+- /locations/seibersdorf-austria
+- /locations/upton-new-york
+- /locations/warren-michigan
+- /locations/washington-dc
+- /locations/waterloo-canada
 - /organizations/aawsap
 - /organizations/alcatel-lucent
 - /organizations/alltop

@@ -378,3 +378,14 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/bern`]
+- [`/locations/earth`]
+- [`/locations/geneva`]
+- [`/locations/mars`]
+- [`/locations/moon`]
+- [`/locations/neptune`]
+- [`/locations/vienna`]
+- [`/locations/washington-dc`]

@@ -682,3 +682,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/earth`]
+- [`/locations/france`]
+- [`/locations/washington-dc`]

@@ -295,6 +295,14 @@ quotes:
     claim_group: conclusion_experimental_resolution
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/bern
+- /locations/earth
+- /locations/geneva
+- /locations/mars
+- /locations/moon
+- /locations/neptune
+- /locations/vienna
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/boston-university
 - /organizations/dia

@@ -525,6 +525,9 @@ description: |-
   On circuits and waveguide miniaturization, the speed of light sets a size limit (a structure processing a pulse of duration τ must be at least L = cτ long, so a 1 ns microwave pulse needs a device at least 1 ft long), which metamaterials circumvent by slowing down light: an axially varying heterostructure with a negative refractive index core can bring light to a complete standstill, with waveguide tapering forming a 'trapped rainbow' (Figure 15). Electromagnetically Induced Transparency (EIT) is shown using a plasmonic "molecule" coupling a radiative element with a subradiant (dark) element, and multiple layers of dark/bright antennas can achieve one of the most important manifestations of EIT, "slow" light. On energy harvesting, "perfect absorbers" of infrared radiation collect the Earth glow (maximum around λ>10 μm, most energy in 3 μm < λ < 14 μm) for night-time energy scavenging by high-altitude satellites; narrow-band absorbers can be used as bolometer arrays for space navigation off stellar infrared; an airborne platform could be powered by a high-power infrared laser source located on Earth; and a thermophotovoltaic (TPV) converter (for example GaSb, bandgap E_G = 0.7 eV near λ = 1.7 μm) is given for the advanced aerospace platforms of the future. The released document is cut off on its page 23 — satellites using the Earth glow for nighttime battery recharging, the collected power given as high, "...1 m² of black surface at" — without a References section, although the Contents page shows one.
 associated_entities:
 - /documents/dia-aatip-products-list-2018
+- /locations/earth
+- /locations/france
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/dia
 - /organizations/princeton-university

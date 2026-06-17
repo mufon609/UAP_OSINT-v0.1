@@ -651,6 +651,12 @@ associated_entities:
 - /documents/dia-aatip-products-list-2018
 - /events/first-nuclear-bomb-test-new-mexico
 - /events/first-nuclear-reactor-chicago-1939
+- /locations/earth
+- /locations/jupiter
+- /locations/new-mexico
+- /locations/sun
+- /locations/times-square
+- /locations/washington-dc
 - /organizations/aawsap
 - /organizations/california-institute-of-technology
 - /organizations/dia
