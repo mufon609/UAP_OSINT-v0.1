@@ -447,14 +447,43 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### People
 
 - [`/people/bruce-towe`]
+- [`/people/donoghue`]
+- [`/people/eric-guilbeau`]
+- [`/people/fofonoff`]
+- [`/people/galvani`]
+- [`/people/hatsopoulos`]
+- [`/people/hunter`]
+- [`/people/j-muthuswamy`]
+- [`/people/john-greenewald`]
+- [`/people/martel`]
+- [`/people/valerie-stout`]
+- [`/people/volta`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/acara-biosciences`]
+- [`/organizations/advanced-biosensors`]
+- [`/organizations/affymetrix`]
+- [`/organizations/agilent`]
 - [`/organizations/arizona-state-university`]
+- [`/organizations/boston-retinal-implant-project`]
+- [`/organizations/caliper-technologies`]
+- [`/organizations/debiotech`]
 - [`/organizations/dia`]
+- [`/organizations/duke-university`]
+- [`/organizations/food-and-drug-administration`]
+- [`/organizations/medtronic`]
+- [`/organizations/nanogen`]
 - [`/organizations/nasa`]
+- [`/organizations/national-institutes-of-health`]
+- [`/organizations/neuronexus`]
+- [`/organizations/nexus-task-force`]
 - [`/organizations/sandia-national-laboratories`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-arizona`]
+- [`/organizations/university-of-utah`]
+- [`/organizations/wikipedia`]
 
 ### Documents
 
