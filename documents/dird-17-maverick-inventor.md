@@ -248,8 +248,10 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### People
 
 - [`/people/dean-kamen`]
+- [`/people/flynn`]
 - [`/people/george-hathaway`]
 - [`/people/guy-kawasaki`]
+- [`/people/john-greenewald`]
 - [`/people/konstantin-tsiolkovsky`]
 - [`/people/marc-millis`]
 - [`/people/martin-tajmar`]
@@ -261,9 +263,31 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/alcatel-lucent`]
+- [`/organizations/alltop`]
+- [`/organizations/apple`]
+- [`/organizations/austrian-research-centres`]
+- [`/organizations/battelle-memorial-institute`]
+- [`/organizations/bell-labs`]
+- [`/organizations/brookhaven-national-laboratory`]
+- [`/organizations/darpa`]
 - [`/organizations/dia`]
+- [`/organizations/electric-power-research-institute`]
+- [`/organizations/general-motors`]
 - [`/organizations/hathaway-consulting`]
+- [`/organizations/institute-for-advanced-studies-at-austin`]
+- [`/organizations/lawrence-livermore-national-laboratory`]
+- [`/organizations/manhattan-district`]
+- [`/organizations/mit`]
+- [`/organizations/nasa`]
+- [`/organizations/perimeter-institute-for-theoretical-physics`]
+- [`/organizations/radlab`]
+- [`/organizations/sandia-national-laboratories`]
+- [`/organizations/sara`]
+- [`/organizations/skunk-works`]
 - [`/organizations/stanford-research-institute`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/youtube`]
 
 ### Documents
 

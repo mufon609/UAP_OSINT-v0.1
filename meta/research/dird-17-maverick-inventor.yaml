@@ -169,6 +169,47 @@ naming_quirks:
     location: title-page Prepared-by line / Administrative Note (Document Summary classification markings; quote q1)
     source_path: government/dird-17-maverick-inventor-20100330.pdf
     resolution: preserve-as-sic-in-quotes
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /documents/dird-14-superconductors-gravity
+- /organizations/aawsap
+- /organizations/alcatel-lucent
+- /organizations/alltop
+- /organizations/apple
+- /organizations/austrian-research-centres
+- /organizations/battelle-memorial-institute
+- /organizations/bell-labs
+- /organizations/brookhaven-national-laboratory
+- /organizations/darpa
+- /organizations/dia
+- /organizations/electric-power-research-institute
+- /organizations/general-motors
+- /organizations/hathaway-consulting
+- /organizations/institute-for-advanced-studies-at-austin
+- /organizations/lawrence-livermore-national-laboratory
+- /organizations/manhattan-district
+- /organizations/mit
+- /organizations/nasa
+- /organizations/perimeter-institute-for-theoretical-physics
+- /organizations/radlab
+- /organizations/sandia-national-laboratories
+- /organizations/sara
+- /organizations/skunk-works
+- /organizations/stanford-research-institute
+- /organizations/the-black-vault
+- /organizations/youtube
+- /people/dean-kamen
+- /people/flynn
+- /people/george-hathaway
+- /people/guy-kawasaki
+- /people/john-greenewald
+- /people/konstantin-tsiolkovsky
+- /people/marc-millis
+- /people/martin-tajmar
+- /people/michael-faraday
+- /people/nikola-tesla
+- /people/robert-goddard
+- /people/stanley-ovshinsky
 cited_works:
   - id: cw1
     added_date: '2026-06-06'
