@@ -188,6 +188,20 @@ revert an uncommitted batch; a committed change is immune. A
 regression caught after the commit is a cheap follow-up — far cheaper
 than lost work.
 
+### An additions-only diff is not a completeness proof
+
+A clean diff — additions-only, verbatim/prose-drift/coverage gates green —
+proves a change *broke nothing*. It says nothing about *completeness*: a
+missed entity is an absence, invisible to the diff and to every mechanical
+gate. So the independent verifier (the cold second read the build and
+`/re-associate` skills mandate as producer→verifier) is not optional, and
+"this pass is mechanical / the diff is provably additions-only" is not an
+exemption from it — that rationalization is exactly how a completeness miss
+ships. The under-linking miss the sweep exists to catch is invisible until
+an independent reader re-enumerates from the source; run the verifier even
+when the change feels trivial. A follow-up verify pass is cheap; a silently
+dropped entity in a committed node is not.
+
 ### No speculative estimates — name the work, not its size
 
 Work plans, BACKLOG entries, and status reports state what needs to
