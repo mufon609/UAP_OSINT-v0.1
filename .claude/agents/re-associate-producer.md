@@ -83,8 +83,11 @@ quote text), so without this field they vanish from `## Associated Nodes`.
   ALWAYS linked, however incidental the mention ("Even NASA's…" and "as IBM's…"
   alike) — there is **no "illustrative comparator / name-drop / not
   node-worthy"** filter; that framing is the editorial bias this pass removes. A
-  named place → `/locations/`; a named event → `/events/`; a named program →
-  `/organizations/` (hosted like AAWSAP). When genuinely unsure, include and flag
+  named place → `/locations/`; a named event → `/events/` (a weapons/nuclear test,
+  accident/disaster, conference, or any discrete gathering — NOT only a
+  hearing/encounter; the `hearing|encounter|…` kind is settled at build time, the
+  stub is always valid — cf. `/events/starfish-prime`, `/events/1988-paris-air-show`);
+  a named program → `/organizations/` (hosted like AAWSAP). When genuinely unsure, include and flag
   it for the verifier — never silently drop.
 
 ## Slug discipline (canonical, reuse-first)

@@ -41,7 +41,14 @@ reasoning — the independence is the discipline. Read the `description` + every
   **eponym-only namesake** — a person named only inside a principle / effect /
   equation / lens / projection or a device/vehicle/artifact name, e.g. "Fermat's
   principle" / "Maxwell's fish-eye lens" / "the Horten VIII", who neither acts in
-  the narrative nor is a discussed cited author). NOTE:
+  the narrative nor is a discussed cited author). A named EVENT is NEVER a "no
+  host node-type" exclusion: a weapons/nuclear test, an accident/disaster, a
+  conference, or any other discrete gathering — not only a hearing or encounter —
+  has `/events/` as its host node-type and is a valid stub (the corpus already
+  mints `/events/starfish-prime`, `/events/columbia-disaster`,
+  `/events/1988-paris-air-show`). The `hearing|encounter|…` kind is settled when
+  the node is BUILT, not in the link layer — never reject an event stub for
+  lacking a matching kind. NOTE:
   a redacted / externally-attested author and the institution attributed to it
   in `extrinsic_authorship` are NOT over-inclusions — they ARE associated
   entities (ingesting the attribution is the relevance decision). Likewise an

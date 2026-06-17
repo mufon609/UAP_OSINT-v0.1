@@ -296,3 +296,29 @@ place/locative boundary is settled.
 **Blocks:** none.
 **Blocked by:** the C4 entity sweep (run places after it, for uniformity).
 **Related:** C4 (the entity sweep that defers places).
+
+### C7 — Add an `other` event kind (+ renderer branch) for non-hearing/encounter events
+
+The corpus links discrete events that are neither congressional hearings nor
+sighting/encounter incidents — nuclear/weapons tests, accidents/disasters,
+conferences, air shows. These already exist as `associated_entities` stubs in
+swept nodes (`/events/starfish-prime` — a 1962 nuclear test; `/events/columbia-disaster`;
+`/events/1988-paris-air-show`; plus dird-11's `/events/mike-test`,
+`/events/centurion-halite-experiment`, `/events/2nd-un-conference-peaceful-use-atomic-energy`).
+The `associated_entities` gate is kind-agnostic, so the STUBS are valid — but the
+`event` node type declares only two kinds (`hearing`, `encounter`,
+`meta/schema.yaml`), so the moment one of these stubs is BUILT it has no valid
+`kind`, and `event` `frontmatter.required` includes `kind`.
+
+Add an `other` event kind mirroring the transcript type's `other` catch-all
+(`description: "Discrete event that is not a formal proceeding or a
+sighting/encounter — a weapons/nuclear test, accident/disaster, conference,
+exhibition, or other gathering"`), with a minimal `required_sections` set (Event
+Summary, Description, Participants, Timeline, Associated Nodes), and the matching
+branch in `scripts/build/renderers/event.py` (currently hearing/encounter only)
+so `renderer-coverage.py` stays green. No `other`-kind event node is built yet,
+so this is unblocked build-time plumbing, not a content change.
+
+**Blocks:** building any of the above event stubs.
+**Blocked by:** none.
+**Related:** C4 (the entity sweep that mints these event stubs).
