@@ -310,6 +310,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/locations/palmdale-california`]
 - [`/locations/palo-alto-california`]
 - [`/locations/seibersdorf-austria`]
+- [`/locations/sun`]
 - [`/locations/upton-new-york`]
 - [`/locations/warren-michigan`]
 - [`/locations/washington-dc`]
