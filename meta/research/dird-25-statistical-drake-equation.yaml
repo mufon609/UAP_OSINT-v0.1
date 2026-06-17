@@ -141,6 +141,61 @@ description: |-
 
 
   For the example the statistical mean of N comes out at about 4590 communicating civilizations now in the galaxy, higher than the 3500 provided by the classical Drake equation, which the author reads as increasing the hope of finding an extraterrestrial civilization. Assuming the ET civilizations are uniformly distributed throughout the galaxy volume, the report works out the probability distribution of the distance to the nearest ET civilization — a density Paul Davies ([`/people/paul-davies`]) dubbed the "Maccone distribution" — and finds that, with 75 percent probability, the nearest extraterrestrial civilization is located between the distances of 1361 and 3979 light years from us under the example inputs. The Conclusions present a "Data Enrichment Principle": in the long run the Statistical Drake equation might become a huge computer code growing in size and in the depth of the scientific information it contains, so that it would be Humanity's first "Encyclopaedia Galactica." Appendix B reproduced in full the author's original 2008 IAC paper #IAC-08-A4.1.4, "The Statistical Drake Equation," with the name of Claudio Maccone, Co-Vice Chair of the SETI Permanent Study Group of the International Academy of Astronautics.
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /events/59th-international-astronautical-congress
+- /locations/51-peg
+- /locations/arecibo
+- /locations/earth
+- /locations/france
+- /locations/glasgow
+- /locations/italy
+- /locations/jupiter
+- /locations/mars
+- /locations/milky-way
+- /locations/phoenix-arizona
+- /locations/saturn
+- /locations/scotland
+- /locations/sun
+- /locations/titan
+- /locations/turin
+- /locations/united-kingdom
+- /locations/united-states
+- /locations/uranus
+- /locations/washington-dc
+- /organizations/aawsap
+- /organizations/beyond-center
+- /organizations/cornell-university
+- /organizations/dia
+- /organizations/fulbright-program
+- /organizations/international-academy-of-astronautics
+- /organizations/observatoire-de-haute-provence
+- /organizations/polytechnic-institute-of-new-york
+- /organizations/seti-institute
+- /organizations/seti-permanent-study-group
+- /organizations/the-black-vault
+- /organizations/university-of-arizona
+- /people/alexandr-lyapunov
+- /people/athanasios-papoulis
+- /people/carl-sagan
+- /people/carol-oliver
+- /people/claude-shannon
+- /people/claudio-maccone
+- /people/dan-werthimer
+- /people/didier-queloz
+- /people/doug-vakoch
+- /people/frank-drake
+- /people/jarl-lindeberg
+- /people/jill-tarter
+- /people/john-greenewald
+- /people/kathryn-denning
+- /people/marconi
+- /people/michel-mayor
+- /people/paul-davies
+- /people/paul-shuch
+- /people/s-pillai
+- /people/seth-shostak
+- /people/tom-pierson
 cited_works:
 - id: cw1
   added_date: '2026-06-07'

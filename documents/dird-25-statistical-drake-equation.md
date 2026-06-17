@@ -184,16 +184,69 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/alexandr-lyapunov`]
+- [`/people/athanasios-papoulis`]
+- [`/people/carl-sagan`]
+- [`/people/carol-oliver`]
 - [`/people/claude-shannon`]
 - [`/people/claudio-maccone`]
+- [`/people/dan-werthimer`]
+- [`/people/didier-queloz`]
+- [`/people/doug-vakoch`]
+- [`/people/frank-drake`]
+- [`/people/jarl-lindeberg`]
+- [`/people/jill-tarter`]
 - [`/people/john-greenewald`]
+- [`/people/kathryn-denning`]
+- [`/people/marconi`]
+- [`/people/michel-mayor`]
 - [`/people/paul-davies`]
+- [`/people/paul-shuch`]
+- [`/people/s-pillai`]
+- [`/people/seth-shostak`]
+- [`/people/tom-pierson`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/beyond-center`]
+- [`/organizations/cornell-university`]
 - [`/organizations/dia`]
+- [`/organizations/fulbright-program`]
+- [`/organizations/international-academy-of-astronautics`]
+- [`/organizations/observatoire-de-haute-provence`]
+- [`/organizations/polytechnic-institute-of-new-york`]
+- [`/organizations/seti-institute`]
+- [`/organizations/seti-permanent-study-group`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/university-of-arizona`]
+
+### Events
+
+- [`/events/59th-international-astronautical-congress`]
 
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/51-peg`]
+- [`/locations/arecibo`]
+- [`/locations/earth`]
+- [`/locations/france`]
+- [`/locations/glasgow`]
+- [`/locations/italy`]
+- [`/locations/jupiter`]
+- [`/locations/mars`]
+- [`/locations/milky-way`]
+- [`/locations/phoenix-arizona`]
+- [`/locations/saturn`]
+- [`/locations/scotland`]
+- [`/locations/sun`]
+- [`/locations/titan`]
+- [`/locations/turin`]
+- [`/locations/united-kingdom`]
+- [`/locations/united-states`]
+- [`/locations/uranus`]
+- [`/locations/washington-dc`]
