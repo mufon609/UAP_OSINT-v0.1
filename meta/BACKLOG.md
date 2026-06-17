@@ -177,21 +177,27 @@ A document research artifact can carry author attribution — and `[[wraps]]` to
 person/source that attests it — in `context_extrinsic.extrinsic_authorship`, used
 when the author is redacted in the document body and known only from an external
 index (the redacted-author convention in `scripts/checks/prose_drift.py`). But
-`scripts/build/renderers/document.py` does not consume that field, so any node link
-wrapped there never reaches the rendered body or `## Associated Nodes`. On a
-redacted-author DIRD the `[/people/...]` author wrap and sibling-document wrap placed
-in `extrinsic_authorship` are silently dropped; the authorship stays reachable
-navigationally via the rendered attesting-document link, so the node is not wrong —
-but the wraps are dead weight that reads as a working link.
+`scripts/build/renderers/document.py` does not consume that field, so a `[[wrap]]`
+placed in `extrinsic_authorship` never renders in the body. **The C4 sweep has since
+closed the navigational gap**: the externally-attested author AND the attributed
+institution now go in `associated_entities`, so they reach `## Associated Nodes`
+like any other entity, independent of the renderer. What remains is narrower — the
+`[/people/...]` author wrap and sibling-document wrap placed *inside*
+`extrinsic_authorship` are still silently dropped, and are now redundant with the
+`associated_entities` link: dead weight that reads as a working link.
 
-Decide one of: (a) teach `document.py` to surface `extrinsic_authorship` so its wraps
-feed `associate.py` corpus-wide — weighed against the redacted-author convention's
-intent that such an author is *carried by the link*, not asserted on the node; or
-(b) confirm the field is structured-metadata-only and add a guard/lint so
-contributors don't wrap links there expecting them to render.
+Decide one of: (a) teach `document.py` to surface `extrinsic_authorship` in the body
+prose — weighed against the redacted-author convention's intent that such an author
+is *carried by the link*, not asserted on the node, and now also against the
+duplication with the `associated_entities` link; or (b) confirm the field is
+structured-metadata-only and add a guard/lint so contributors don't wrap links there
+expecting them to render. The sweep makes (b) the cleaner default: reachability is
+already handled by `associated_entities`, leaving only whether the attribution
+should *display* in body prose.
 
 **Blocks:** none.
 **Blocked by:** none.
+**Related:** C4 (the sweep that closes the reachability gap and makes (b) cleaner).
 
 ### C4 — Finish the `associated_entities` rollout across the corpus
 
@@ -273,7 +279,10 @@ artifact already coined is invisible. Surfaced by the dird-30 re-associate run:
 `/people/v-teofilo` (dird-30 `extrinsic_authorship`) vs `/people/vincent-teofilo`
 (dird-24) name the same person (V. Teofilo / Vincent Teofilo, Lockheed Martin).
 The broken-link / Priority-Build registry then carries two entries for one
-person; whichever node is built first orphans the other reference.
+person; whichever node is built first orphans the other reference. The parallel
+C4 sweep amplifies this: concurrent sessions minting stubs cannot see each
+other's just-coined slugs (the reuse check greps *built* nodes only), so one
+entity can pick up divergent stubs across batches that all land on `main`.
 
 **The work.** A reconcile pass over the broken-link registry / all artifacts that
 groups stub paths likely naming one entity (surname + initials match, alias
@@ -302,7 +311,7 @@ once the entity sweep is complete: settle the line between a **substantive named
 place** (a discussed site → `/locations/` node) and a **bare locative qualifier**
 (merely situating an org/event — "the institute in St. Petersburg", "efforts in
 Japan"), then apply it uniformly across ALL nodes, including every node the entity
-sweep already touched (`dird-01..05`, `30`, `33`, `34`, `35`, and the rest). The
+sweep already touched. The
 re-associate producer/verifier definitions already state "a named place →
 `/locations/`"; this pass is where that clause is exercised and the
 place/locative boundary is settled.
