@@ -181,7 +181,11 @@ In order, with a check after each (build-protocol → run
    complete superset, so it also lists the entities you wrapped inline;
    `scripts/checks/associated_entities.py` verifies every inline wrap is a
    member. Do NOT drop a candidate on a "node-worthy / topically relevant"
-   judgment — that filter is the bias. Populate `naming_quirks`. A
+   judgment — that filter is the bias. Before finalizing, confirm the source's
+   **structural-framing** entities are present — the conducting / issuing body
+   (committee + subcommittee), the convening venue (`/locations/`), the masthead /
+   address / CC block, and a date-as-event — the front-matter class the worker
+   most often under-surfaces. Populate `naming_quirks`. A
    cross-ref the worker flagged as a **non-canonical source form** *additionally*
    gets a `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
    canonical. Register

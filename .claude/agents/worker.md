@@ -111,7 +111,11 @@ naming the metadata field, never a `quotes[]` entry.
    ONLY inside a quote you extract (the builder lands those in
    `associated_entities`, since quote text itself can never be wrapped). No
    "is this node-worthy / topically relevant" filter — if the source names it,
-   surface it. An entity
+   surface it. This explicitly includes the source's **structural-framing**
+   entities — its issuing / conducting body (a hearing's committee AND
+   subcommittee), the convening venue (→ `/locations/`), the masthead / address /
+   CC-distribution block, and a date-as-event — front-matter that reads as
+   boilerplate and is the single most-missed class. An entity
    named under a **non-canonical form**
    (idiosyncratic abbreviation, former name, misspelling) *additionally* gets its
    source form flagged for a `naming_quirks` entry — stub the canonical node and

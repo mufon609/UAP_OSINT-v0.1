@@ -76,6 +76,15 @@ Audit goals:
    is present, including entities named only inside a verbatim quote (the case
    the field exists for). Locations and events are first-class entities; no
    entity type is exempt from the completeness sweep.
+   Run this as a **structural pass distinct from the enumeration** — do not just
+   re-confirm `coverage-suggest.py`'s frequency-ranked tokens (that repeats the
+   producing role's prose scan and inherits its blind spot). Walk the source's
+   *framing* directly: title page / convening statement → issuing / conducting
+   body (committee + subcommittee); dateline / venue → `/locations/` (the
+   convening city); signature / masthead / CC block → recipient bodies; treat a
+   single-occurrence proper noun as a *more* likely miss than a frequent one. The
+   conducting body and the convening city are the entities this pass most often
+   recovers.
    `coverage-suggest.py`'s capitalized-terms output is the mechanical aid; judge
    each (boilerplate / generic terms are noise). A source-named load-bearing
    entity absent from the field is an under-linking defect to flag (fix: add it

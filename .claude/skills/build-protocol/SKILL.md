@@ -229,6 +229,17 @@ by `associate.py` from the inline wraps ∪ `associated_entities`;
 `prose_entity_link` (blocking check) is the narrow mechanical guard for an
 already-built entity named in prose but left unwrapped.
 
+**Structural-framing entities — look past the substantive prose.** The
+enumeration's systematic blind spot is the source's own *framing*, not its
+argument: the issuing / conducting body (a hearing's committee AND subcommittee,
+a memo's originating office), the convening venue / dateline (→ `/locations/` —
+e.g. the city a hearing sits in), the masthead / letterhead / address /
+CC-distribution block, and a date-as-named-event. These are load-bearing
+entities the rule already covers — but they live in title pages, convening
+statements, and signature blocks that read as boilerplate, so enumerate them
+*deliberately, as a pass distinct from the prose scan*. The conducting committee
+and the convening city are the entities most often missed.
+
 **Interview-derived testimony** — when a node cites a long-form media appearance
 (podcast, broadcast, panel, conference talk, streamed interview) as evidence,
 three classes must appear as `[`/path`]` wraps (usually inside the
