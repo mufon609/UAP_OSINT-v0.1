@@ -298,10 +298,14 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/congress`]
 - [`/organizations/dod`]
 - [`/organizations/doe`]
 - [`/organizations/nasa`]
 - [`/organizations/sasc`]
+- [`/organizations/tiger-team`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-navy`]
 
 ### Events
 
@@ -310,3 +314,8 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 ### Transcripts
 
 - [`/transcripts/2023-04-19-sasc-kirkpatrick`]
+
+### Locations
+
+- [`/locations/china`]
+- [`/locations/united-states`]

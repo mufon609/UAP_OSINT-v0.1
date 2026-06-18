@@ -2,6 +2,23 @@ id: meta/research/written-testimony-kirkpatrick-2023
 type: research-artifact
 target_node: documents/written-testimony-kirkpatrick-2023
 status: active
+associated_entities:
+- /events/2023-04-19-sasc-aaro-hearing
+- /locations/china
+- /locations/united-states
+- /organizations/aaro
+- /organizations/congress
+- /organizations/dod
+- /organizations/doe
+- /organizations/nasa
+- /organizations/sasc
+- /organizations/tiger-team
+- /organizations/us-air-force
+- /organizations/us-navy
+- /people/joni-ernst
+- /people/kirsten-gillibrand
+- /people/sean-kirkpatrick
+- /transcripts/2023-04-19-sasc-kirkpatrick
 description: 'Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) Statement for the Record, Senate Armed Services Committee on Emerging Threats and Capabilities ([`/organizations/sasc`]), April 19, 2023 ([`/events/2023-04-19-sasc-aaro-hearing`]) ([`/transcripts/2023-04-19-sasc-kirkpatrick`]).
 
 
