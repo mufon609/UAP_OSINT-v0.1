@@ -378,19 +378,89 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ---
 
+## Reproduced Datasets
+
+Bulk tabular data the source reproduces wholesale (appendix indices, catalogs, frequency tables), captured as a queryable CSV data sibling — the catalog linked as one object, not exploded into per-row entity links. The row data lives in the linked file.
+
+### Appendix B — Green/Morris ICD Case Index
+
+A reproduced case index — the document's "Green/Morris Example to Show the Global Breadth of Available Older ICD Case Inputs From Multiple Data Sources" — of 96 numbered UFO close-encounter cases (the listed rows span 1952–1971), each row carrying a date and the country / US-state and locality of the case. Captured here as a CSV data sibling: its case localities are catalog rows the document's argument does not engage individually, so they live in this dataset rather than exploded into the node's Associated Nodes link layer.
+
+- **Rows:** 96
+- **Columns:** case_no, date, country_or_us_state, locality, entry_verbatim
+- **Source:** Appendix B (Green/Morris ICD Case Index)
+- **Data:** [government/dird-26-field-effects-human-biological-tissues-2010-appendix-b-case-index.csv](../sources/government/dird-26-field-effects-human-biological-tissues-2010-appendix-b-case-index.csv)
+
+---
+
 ## Associated Nodes
 
 ### People
 
+- [`/people/d-mcree`]
+- [`/people/h-wachtel`]
+- [`/people/john-greenewald`]
 - [`/people/john-schuessler`]
 - [`/people/kit-green`]
+- [`/people/morris`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/airborne-instruments-laboratory`]
+- [`/organizations/american-cancer-society`]
+- [`/organizations/ansi`]
+- [`/organizations/armstrong-brooks-usaf-laboratory`]
+- [`/organizations/bogoliubov-laboratory-of-theoretical-physics`]
+- [`/organizations/cdc`]
+- [`/organizations/dhhs`]
 - [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/faculty-of-physics-tashkent`]
+- [`/organizations/fbi`]
+- [`/organizations/fcc`]
+- [`/organizations/ieee`]
 - [`/organizations/inscom`]
+- [`/organizations/institut-fur-physik-rostock`]
+- [`/organizations/joint-institute-for-nuclear-research`]
+- [`/organizations/mit`]
+- [`/organizations/motorola`]
+- [`/organizations/mufon`]
+- [`/organizations/national-academy-of-sciences`]
+- [`/organizations/national-center-for-health-statistics`]
+- [`/organizations/national-institutes-of-health`]
+- [`/organizations/national-science-foundation`]
+- [`/organizations/nato`]
+- [`/organizations/ncrp`]
+- [`/organizations/oak-ridge-national-laboratory`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/us-army`]
+- [`/organizations/us-navy`]
+- [`/organizations/us-secret-service`]
+- [`/organizations/wayne-state-university`]
+- [`/organizations/who`]
+
+### Events
+
+- [`/events/cash-landrum`]
+- [`/events/cold-war`]
+- [`/events/philadelphia-experiment`]
 
 ### Documents
 
+- [`/documents/bioeffects-of-selected-nonlethal-weapons`]
 - [`/documents/dia-aatip-products-list-2018`]
+- [`/documents/ufo-related-human-physiological-effects`]
+
+### Locations
+
+- [`/locations/bethesda-maryland`]
+- [`/locations/brooks-afb`]
+- [`/locations/dubna`]
+- [`/locations/mineola-new-york`]
+- [`/locations/rostock`]
+- [`/locations/russia`]
+- [`/locations/soviet-union`]
+- [`/locations/tashkent`]
+- [`/locations/united-states`]
