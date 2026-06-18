@@ -147,9 +147,21 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 ### Organizations
 
 - [`/organizations/arlo-solutions`]
+- [`/organizations/congress`]
 - [`/organizations/department-of-the-navy`]
 - [`/organizations/department-of-war-historical`]
 - [`/organizations/dod`]
 - [`/organizations/omb`]
 - [`/organizations/osd`]
 - [`/organizations/sancorp-consulting`]
+
+### Events
+
+- [`/events/war-of-1812`]
+- [`/events/world-war-i`]
+- [`/events/world-war-ii`]
+
+### Locations
+
+- [`/locations/united-states`]
+- [`/locations/white-house`]

@@ -146,5 +146,18 @@ quotes:
     location: 'Section 2 (Implementation) subsection (g) (lines 93-100 of the extracted source)'
   significance: 'Section 2(g) — 60-day permanent-renaming recommendation: proposed legislative and executive actions required to permanently change the Department of Defense to the Department of War. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.'
   statement_date: '2025-09-05'
+associated_entities:
+- /events/war-of-1812
+- /events/world-war-i
+- /events/world-war-ii
+- /locations/united-states
+- /locations/white-house
+- /organizations/congress
+- /organizations/department-of-the-navy
+- /organizations/department-of-war-historical
+- /organizations/dod
+- /organizations/omb
+- /organizations/osd
+- /people/george-washington
 cited_works: NONE
 naming_quirks: []
