@@ -309,6 +309,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/people/alex-dietrich`]
 - [`/people/christopher-mellon`]
 - [`/people/david-fravor`]
+- [`/people/david-grusch`]
 - [`/people/helene-cooper`]
 - [`/people/jay-stratton`]
 - [`/people/leslie-kean`]
@@ -319,9 +320,13 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Organizations
 
+- [`/organizations/aatip`]
 - [`/organizations/carrier-airwing-eleven`]
 - [`/organizations/dod`]
+- [`/organizations/the-new-york-times`]
 - [`/organizations/ttsa`]
+- [`/organizations/united-states-house-of-representatives`]
+- [`/organizations/united-states-senate`]
 - [`/organizations/us-navy`]
 - [`/organizations/uss-nimitz`]
 - [`/organizations/uss-princeton`]
@@ -332,3 +337,16 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/events/2004-nimitz-encounter`]
 - [`/events/2023-07-26-house-uap-hearing`]
+
+### Documents
+
+- [`/documents/ndaa`]
+- [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
+- [`/documents/unofficial-official-report`]
+- [`/documents/whistleblower-protection-act`]
+
+### Locations
+
+- [`/locations/iraq`]
+- [`/locations/persian-gulf`]
+- [`/locations/united-states`]

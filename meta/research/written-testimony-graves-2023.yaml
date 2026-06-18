@@ -238,6 +238,42 @@ quotes:
     location: ¶29
   significance: PRC spy balloon context; NORAD filter recalibration; 3 UAP shot down as civilian-traffic threat
   context: declassification argument
+associated_entities:
+- /documents/ndaa
+- /documents/odni-preliminary-assessment-2021
+- /events/2023-07-26-house-uap-hearing
+- /events/february-2023-north-american-shootdowns
+- /events/operation-enduring-freedom
+- /events/operation-inherent-resolve
+- /locations/china
+- /locations/east-coast
+- /locations/hawaii
+- /locations/north-atlantic
+- /locations/virginia-beach-virginia
+- /locations/warning-area-w-72
+- /locations/west-virginia
+- /media/gimbal-declassified
+- /media/go-fast
+- /organizations/aaro
+- /organizations/aiaa
+- /organizations/americans-for-safe-aerospace
+- /organizations/faa
+- /organizations/fleet-forces-command
+- /organizations/house-oversight
+- /organizations/nasa
+- /organizations/noaa
+- /organizations/norad
+- /organizations/subcommittee-on-national-security-the-border-and-foreign-affairs
+- /organizations/uaptf
+- /organizations/us-navy
+- /organizations/vfa-11
+- /people/anna-paulina-luna
+- /people/glenn-grothman
+- /people/robert-garcia
+- /people/ryan-graves
+- /people/sean-kirkpatrick
+- /people/tim-burchett
+- /people/tim-gallaudet
 cited_works: NONE
 naming_quirks:
 - id: nq1

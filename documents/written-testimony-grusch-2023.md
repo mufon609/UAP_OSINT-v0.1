@@ -222,6 +222,7 @@ Grusch's Closing Statement: a conviction to expose what Grusch viewed as a grave
 
 - [`/organizations/aaro`]
 - [`/organizations/icig`]
+- [`/organizations/intelligence-community`]
 - [`/organizations/nga`]
 - [`/organizations/nro`]
 - [`/organizations/uaptf`]
