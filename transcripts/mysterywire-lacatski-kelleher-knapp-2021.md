@@ -234,10 +234,24 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/afosi`]
 - [`/organizations/baass`]
 - [`/organizations/bigelow-aerospace`]
+- [`/organizations/congress`]
 - [`/organizations/dia`]
 - [`/organizations/dod`]
 - [`/organizations/klas-tv`]
+- [`/organizations/nasa`]
+- [`/organizations/the-new-york-times`]
+
+### Events
+
+- [`/events/2004-nimitz-encounter`]
 
 ### Documents
 
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
+
+### Locations
+
+- [`/locations/bend-oregon`]
+- [`/locations/las-vegas-nevada`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
