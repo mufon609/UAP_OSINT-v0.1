@@ -330,44 +330,94 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 - [`/people/anna-paulina-luna`]
 - [`/people/bob-lazar`]
+- [`/people/brandon-fugal`]
 - [`/people/colm-kelleher`]
 - [`/people/david-grusch`]
 - [`/people/donald-trump`]
 - [`/people/dylan-borland`]
+- [`/people/eric-burlison`]
 - [`/people/george-knapp`]
+- [`/people/hal-puthoff`]
 - [`/people/harry-reid`]
+- [`/people/jacques-vallee`]
 - [`/people/james-lacatski`]
 - [`/people/jay-stratton`]
 - [`/people/jeremy-corbell`]
 - [`/people/luis-elizondo`]
 - [`/people/michio-kaku`]
+- [`/people/musser-kelly`]
+- [`/people/robert-bigelow`]
 - [`/people/tim-burchett`]
+- [`/people/wigans`]
 
 ### Organizations
 
+- [`/organizations/aaro`]
 - [`/organizations/aatip`]
 - [`/organizations/aawsap`]
+- [`/organizations/amazon`]
 - [`/organizations/baass`]
 - [`/organizations/bigelow-aerospace`]
+- [`/organizations/congress`]
 - [`/organizations/dhs`]
 - [`/organizations/dia`]
 - [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/fbi`]
 - [`/organizations/klas-tv`]
 - [`/organizations/kona-blue`]
+- [`/organizations/lockheed-martin`]
+- [`/organizations/mufon`]
+- [`/organizations/nasa`]
+- [`/organizations/national-academy-of-sciences`]
+- [`/organizations/nids`]
+- [`/organizations/northern-tier`]
+- [`/organizations/oak-ridge`]
+- [`/organizations/odni`]
 - [`/organizations/oni`]
+- [`/organizations/project-javelin`]
+- [`/organizations/university-of-tennessee`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-navy`]
 - [`/organizations/weaponized-podcast`]
+
+### Events
+
+- [`/events/2004-nimitz-encounter`]
 
 ### Documents
 
 - [`/documents/future-visions-2026`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/new-insights-2024`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
+- [`/documents/thread-3`]
 
 ### Transcripts
 
 - [`/transcripts/weaponized-096-lacatski-part1-2025`]
 - [`/transcripts/weaponized-097-lacatski-part2-2025`]
 
+### Media
+
+- [`/media/disclosure-day`]
+- [`/media/star-trek`]
+- [`/media/star-wars`]
+
 ### Locations
 
+- [`/locations/brazil`]
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/florida`]
+- [`/locations/israel`]
+- [`/locations/knolls-atomic-power-plant`]
+- [`/locations/las-vegas-nevada`]
+- [`/locations/papoose-lake`]
+- [`/locations/patuxent-river-nas`]
+- [`/locations/russia`]
+- [`/locations/schenectady-new-york`]
 - [`/locations/skinwalker-ranch`]
+- [`/locations/soviet-union`]
+- [`/locations/uintah-basin`]
+- [`/locations/united-states`]

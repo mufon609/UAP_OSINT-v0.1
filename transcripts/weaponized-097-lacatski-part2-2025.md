@@ -318,37 +318,85 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 ### People
 
+- [`/people/avi-loeb`]
+- [`/people/brandon-fugal`]
 - [`/people/colm-kelleher`]
 - [`/people/david-grusch`]
 - [`/people/dylan-borland`]
 - [`/people/george-knapp`]
 - [`/people/harry-reid`]
 - [`/people/james-lacatski`]
+- [`/people/james-ryder`]
 - [`/people/jay-stratton`]
 - [`/people/jeremy-corbell`]
+- [`/people/luis-elizondo`]
 - [`/people/robert-bigelow`]
 
 ### Organizations
 
+- [`/organizations/aaro`]
 - [`/organizations/aatip`]
 - [`/organizations/aawsap`]
+- [`/organizations/afosi`]
 - [`/organizations/baass`]
+- [`/organizations/bigelow-aerospace`]
+- [`/organizations/cia`]
+- [`/organizations/congress`]
 - [`/organizations/dhs`]
 - [`/organizations/dia`]
 - [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/dopsr`]
+- [`/organizations/fbi`]
 - [`/organizations/kona-blue`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/mufon`]
+- [`/organizations/northern-tier`]
+- [`/organizations/sdi`]
+- [`/organizations/us-air-force`]
 - [`/organizations/weaponized-podcast`]
+- [`/organizations/yankee-blue`]
+- [`/organizations/zodiac`]
+
+### Events
+
+- [`/events/2004-nimitz-encounter`]
 
 ### Documents
 
+- [`/documents/hunt-for-the-skinwalker-2005`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/new-insights-2024`]
+- [`/documents/rise-and-fall-of-the-third-reich`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
+- [`/documents/war-and-peace`]
 
 ### Transcripts
 
 - [`/transcripts/weaponized-096-lacatski-part1-2025`]
 
+### Media
+
+- [`/media/star-trek`]
+- [`/media/the-x-files`]
+
 ### Locations
 
+- [`/locations/3i-atlas`]
+- [`/locations/area-51`]
+- [`/locations/brazil`]
+- [`/locations/california`]
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/georgia`]
+- [`/locations/kansas`]
+- [`/locations/las-vegas-nevada`]
+- [`/locations/maryland`]
+- [`/locations/moon`]
+- [`/locations/russia`]
 - [`/locations/skinwalker-ranch`]
+- [`/locations/sun`]
+- [`/locations/texas`]
+- [`/locations/union-station`]
+- [`/locations/virginia`]
+- [`/locations/washington-dc`]
