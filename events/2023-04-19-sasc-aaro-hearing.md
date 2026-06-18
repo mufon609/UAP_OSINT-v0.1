@@ -205,6 +205,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 ### People
 
+- [`/people/carl-sagan`]
 - [`/people/david-norquist`]
 - [`/people/david-spergel`]
 - [`/people/glen-vanherck`]
@@ -214,26 +215,67 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/kirsten-gillibrand`]
 - [`/people/lloyd-austin`]
 - [`/people/marco-rubio`]
+- [`/people/neil-degrasse-tyson`]
 - [`/people/sean-kirkpatrick`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/afosi`]
+- [`/organizations/congress`]
+- [`/organizations/darpa`]
 - [`/organizations/dod`]
 - [`/organizations/doe`]
+- [`/organizations/fbi`]
+- [`/organizations/intelligence-community`]
 - [`/organizations/joint-staff`]
+- [`/organizations/lockheed-martin`]
 - [`/organizations/nasa`]
+- [`/organizations/norad`]
 - [`/organizations/northcom`]
+- [`/organizations/nsc-working-group`]
 - [`/organizations/odni`]
+- [`/organizations/osd`]
 - [`/organizations/ousd-is`]
+- [`/organizations/raytheon`]
+- [`/organizations/sandia-national-laboratories`]
 - [`/organizations/sasc`]
+- [`/organizations/tiger-team`]
 - [`/organizations/uaptf`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-navy`]
 - [`/organizations/usspacecom`]
+- [`/organizations/white-house`]
+
+### Events
+
+- [`/events/february-2023-north-american-shootdowns`]
 
 ### Documents
 
+- [`/documents/nasa-uap-independent-study`]
+- [`/documents/ndaa-fy2023`]
 - [`/documents/written-testimony-kirkpatrick-2023`]
 
 ### Transcripts
 
 - [`/transcripts/2023-04-19-sasc-kirkpatrick`]
+
+### Locations
+
+- [`/locations/albuquerque-new-mexico`]
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/east-coast`]
+- [`/locations/kirtland-afb`]
+- [`/locations/middle-east`]
+- [`/locations/nas-fallon`]
+- [`/locations/nellis-afb`]
+- [`/locations/nevada`]
+- [`/locations/nevada-test-and-training-range`]
+- [`/locations/north-america`]
+- [`/locations/ohio`]
+- [`/locations/russia`]
+- [`/locations/south-asia`]
+- [`/locations/united-states`]
+- [`/locations/west-coast`]
