@@ -558,9 +558,22 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/alexandria-ocasio-cortez`]
+- [`/people/andrew-ogles`]
+- [`/people/andy-biggs`]
+- [`/people/anna-paulina-luna`]
 - [`/people/david-fravor`]
 - [`/people/david-grusch`]
+- [`/people/glenn-grothman`]
+- [`/people/jamie-raskin`]
+- [`/people/jared-moskowitz`]
+- [`/people/john-kirby`]
+- [`/people/matt-gaetz`]
+- [`/people/maxwell-frost`]
+- [`/people/nancy-mace`]
+- [`/people/robert-garcia`]
 - [`/people/ryan-graves`]
+- [`/people/tim-burchett`]
 
 ### Organizations
 
@@ -568,13 +581,24 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/aiaa`]
 - [`/organizations/americans-for-safe-aerospace`]
 - [`/organizations/boeing`]
+- [`/organizations/darpa`]
+- [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/faa`]
+- [`/organizations/house-armed-services-committee`]
 - [`/organizations/nas-oceana`]
+- [`/organizations/nasa`]
+- [`/organizations/nsc`]
+- [`/organizations/the-new-york-times`]
 - [`/organizations/us-navy`]
 - [`/organizations/vfa-11`]
 
 ### Events
 
 - [`/events/2023-07-26-house-uap-hearing`]
+- [`/events/february-2023-north-american-shootdowns`]
+- [`/events/operation-enduring-freedom`]
+- [`/events/operation-inherent-resolve`]
 
 ### Documents
 
@@ -584,7 +608,17 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Media
 
 - [`/media/gimbal-declassified`]
+- [`/media/go-fast`]
 
 ### Locations
 
+- [`/locations/east-coast`]
+- [`/locations/eglin-afb`]
+- [`/locations/gulf-of-mexico`]
+- [`/locations/hawaii`]
+- [`/locations/north-atlantic`]
+- [`/locations/roswell-new-mexico`]
+- [`/locations/south-carolina`]
 - [`/locations/vandenberg-afb`]
+- [`/locations/virginia-beach-virginia`]
+- [`/locations/warning-area-w-72`]

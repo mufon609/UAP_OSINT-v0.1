@@ -2,6 +2,56 @@ id: meta/research/2023-07-26-house-graves
 type: research-artifact
 target_node: transcripts/2023-07-26-house-graves
 status: active
+associated_entities:
+- /documents/nyt-glowing-auras-pentagon-ufo-2017
+- /documents/written-testimony-graves-2023
+- /events/2023-07-26-house-uap-hearing
+- /events/february-2023-north-american-shootdowns
+- /events/operation-enduring-freedom
+- /events/operation-inherent-resolve
+- /locations/east-coast
+- /locations/eglin-afb
+- /locations/gulf-of-mexico
+- /locations/hawaii
+- /locations/north-atlantic
+- /locations/roswell-new-mexico
+- /locations/south-carolina
+- /locations/vandenberg-afb
+- /locations/virginia-beach-virginia
+- /locations/warning-area-w-72
+- /media/gimbal-declassified
+- /media/go-fast
+- /organizations/aaro
+- /organizations/aiaa
+- /organizations/americans-for-safe-aerospace
+- /organizations/boeing
+- /organizations/darpa
+- /organizations/dod
+- /organizations/doe
+- /organizations/faa
+- /organizations/house-armed-services-committee
+- /organizations/nas-oceana
+- /organizations/nasa
+- /organizations/nsc
+- /organizations/the-new-york-times
+- /organizations/us-navy
+- /organizations/vfa-11
+- /people/alexandria-ocasio-cortez
+- /people/andrew-ogles
+- /people/andy-biggs
+- /people/anna-paulina-luna
+- /people/david-fravor
+- /people/david-grusch
+- /people/glenn-grothman
+- /people/jamie-raskin
+- /people/jared-moskowitz
+- /people/john-kirby
+- /people/matt-gaetz
+- /people/maxwell-frost
+- /people/nancy-mace
+- /people/robert-garcia
+- /people/ryan-graves
+- /people/tim-burchett
 description: 'Ryan Graves''s ([`/people/ryan-graves`]) sworn oral testimony at the July 26, 2023 House Oversight Subcommittee on National Security, the Border, and Foreign Affairs hearing on unidentified anomalous phenomena ([`/events/2023-07-26-house-uap-hearing`]). Graves is one of three witnesses sworn at the hearing; David Fravor ([`/people/david-fravor`]) and David Grusch ([`/people/david-grusch`]) also testified. Graves''s written testimony ([`/documents/written-testimony-graves-2023`]) was also submitted for the record.
 
 
