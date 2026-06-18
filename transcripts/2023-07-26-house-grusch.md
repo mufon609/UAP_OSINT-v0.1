@@ -650,28 +650,49 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/alexandria-ocasio-cortez`]
+- [`/people/andrew-ogles`]
+- [`/people/andy-biggs`]
+- [`/people/anna-paulina-luna`]
 - [`/people/david-fravor`]
 - [`/people/david-grusch`]
+- [`/people/eric-burlison`]
+- [`/people/glenn-grothman`]
+- [`/people/jamie-raskin`]
+- [`/people/jared-moskowitz`]
+- [`/people/john-kirby`]
+- [`/people/matt-gaetz`]
+- [`/people/nancy-mace`]
+- [`/people/robert-garcia`]
 - [`/people/ryan-graves`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/tim-burchett`]
+- [`/people/virginia-foxx`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
 - [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/gang-of-8`]
 - [`/organizations/gwu-national-security-archive`]
 - [`/organizations/hasc`]
 - [`/organizations/icig`]
 - [`/organizations/newsnation`]
 - [`/organizations/nga`]
 - [`/organizations/nro`]
+- [`/organizations/nsc`]
 - [`/organizations/sasc`]
 - [`/organizations/uaptf`]
+- [`/organizations/united-nations`]
 - [`/organizations/us-air-force`]
+- [`/organizations/white-house`]
 
 ### Events
 
 - [`/events/2023-07-26-house-uap-hearing`]
+- [`/events/february-2023-north-american-shootdowns`]
+- [`/events/phoenix-lights`]
 
 ### Documents
 
@@ -679,6 +700,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/documents/executive-order-13526`]
 - [`/documents/federal-acquisition-regulations`]
 - [`/documents/icd-120`]
+- [`/documents/ndaa`]
 - [`/documents/ppd-19`]
 - [`/documents/uap-scg-2019`]
 - [`/documents/written-testimony-grusch-2023`]
+
+### Locations
+
+- [`/locations/area-51`]
+- [`/locations/barry-goldwater-range`]
+- [`/locations/earth`]
+- [`/locations/eglin-afb`]
+- [`/locations/luke-afb`]
+- [`/locations/phoenix-arizona`]
+- [`/locations/roswell-new-mexico`]
+- [`/locations/russia`]
+- [`/locations/south-carolina`]
