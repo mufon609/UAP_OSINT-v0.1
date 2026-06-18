@@ -145,8 +145,8 @@ def cmd_add(args):
             entry["note"] = args.note
         entry["artifacts"] = []
         # Insert at the URL-sorted position so the write touches only this new
-        # entry. save_manifest no longer globally re-sorts (that churned
-        # unrelated entries on every write); a sorted manifest stays sorted,
+        # entry. save_manifest does not globally re-sort — that would churn
+        # unrelated entries on every write; a sorted manifest stays sorted,
         # and a drifted one still gets a clean single-entry diff.
         pos = next((i for i, e in enumerate(entries)
                     if e.get("url", "") > args.url), len(entries))

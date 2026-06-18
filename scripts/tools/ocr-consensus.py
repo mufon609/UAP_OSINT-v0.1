@@ -1235,10 +1235,10 @@ def cmd_verify(args):
 
 # ---------------------------------------------------------------------------
 # apply — mechanically apply a verifier's correction list to the sibling.
-# The ocr-page-verifier agents REPORT corrections (they never edit); applying
-# them used to be the orchestrator's hand-Edit step. A script applying the same
-# grammar enforces the "each FIND matches exactly once" rule mechanically and
-# keeps the whole sibling lifecycle on the agents-judge / scripts-mutate line.
+# The ocr-page-verifier agents REPORT corrections (they never edit); this script
+# applies them, enforcing the "each FIND matches exactly once" rule mechanically
+# and keeping the whole sibling lifecycle on the agents-judge / scripts-mutate
+# line.
 # ---------------------------------------------------------------------------
 
 CORRECTION_RE = re.compile(r"^LINE (\d+) \| FIND: (.+?) \| REPLACE: (.+)$")

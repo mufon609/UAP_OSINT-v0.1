@@ -178,10 +178,10 @@ person/source that attests it — in `context_extrinsic.extrinsic_authorship`, u
 when the author is redacted in the document body and known only from an external
 index (the redacted-author convention in `scripts/checks/prose_drift.py`). But
 `scripts/build/renderers/document.py` does not consume that field, so a `[[wrap]]`
-placed in `extrinsic_authorship` never renders in the body. **The C4 sweep has since
-closed the navigational gap**: the externally-attested author AND the attributed
-institution now go in `associated_entities`, so they reach `## Associated Nodes`
-like any other entity, independent of the renderer. What remains is narrower — the
+placed in `extrinsic_authorship` never renders in the body. **Reachability is
+already handled**: the externally-attested author AND the attributed institution
+go in `associated_entities`, so they reach `## Associated Nodes` like any other
+entity, independent of the renderer. What remains is narrower — the
 `[/people/...]` author wrap and sibling-document wrap placed *inside*
 `extrinsic_authorship` are still silently dropped, and are now redundant with the
 `associated_entities` link: dead weight that reads as a working link.
@@ -197,7 +197,7 @@ should *display* in body prose.
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C4 (the sweep that closes the reachability gap and makes (b) cleaner).
+**Related:** C4 (the `associated_entities` field that handles reachability, making (b) the cleaner default).
 
 ### C4 — Finish the `associated_entities` rollout across the corpus
 
@@ -260,15 +260,14 @@ principle is the [[link-all-load-bearing-references]] working-memory note.
 
 **The issue.** Two artifacts can mint *different* stub slugs for the same
 not-yet-built entity, because the only reuse check (the build pipeline's worker)
-matches against *built* nodes — an unbuilt stub another
-artifact already coined is invisible. Surfaced by the dird-30 sweep:
-`/people/v-teofilo` (dird-30 `extrinsic_authorship`) vs `/people/vincent-teofilo`
-(dird-24) name the same person (V. Teofilo / Vincent Teofilo, Lockheed Martin).
-The broken-link / Priority-Build registry then carries two entries for one
-person; whichever node is built first orphans the other reference. The parallel
-C4 sweep amplifies this: concurrent sessions minting stubs cannot see each
-other's just-coined slugs (the reuse check greps *built* nodes only), so one
-entity can pick up divergent stubs across batches that all land on `main`.
+matches against *built* nodes — an unbuilt stub another artifact already coined
+is invisible. For example `/people/v-teofilo` (dird-30 `extrinsic_authorship`)
+and `/people/vincent-teofilo` (dird-24) name the same person (V. Teofilo /
+Vincent Teofilo, Lockheed Martin). The broken-link / Priority-Build registry then
+carries two entries for one person; whichever node is built first orphans the
+other reference. Concurrent or independent authoring amplifies it: two artifacts
+minting stubs cannot see each other's just-coined slugs (the reuse check greps
+*built* nodes only), so one entity picks up divergent stubs.
 
 **The work.** A reconcile pass over the broken-link registry / all artifacts that
 groups stub paths likely naming one entity (surname + initials match, alias
@@ -282,15 +281,15 @@ canonical slug and re-render. Could fold into the build pipeline's reuse check
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C4 (the sweep that surfaces these); the
+**Related:** C4 (the `associated_entities` rollout); the
 `link_resolution` broken-link registry is the natural input.
 
 ### C7 — Add an `other` event kind (+ renderer branch) for non-hearing/encounter events
 
 The corpus links discrete events that are neither congressional hearings nor
 sighting/encounter incidents — nuclear/weapons tests, accidents/disasters,
-conferences, air shows. These already exist as `associated_entities` stubs in
-swept nodes (`/events/starfish-prime` — a 1962 nuclear test; `/events/columbia-disaster`;
+conferences, air shows. These already exist as `associated_entities` stubs
+(`/events/starfish-prime` — a 1962 nuclear test; `/events/columbia-disaster`;
 `/events/1988-paris-air-show`; plus dird-11's `/events/mike-test`,
 `/events/centurion-halite-experiment`, `/events/2nd-un-conference-peaceful-use-atomic-energy`).
 The `associated_entities` gate is kind-agnostic, so the STUBS are valid — but the
@@ -309,4 +308,4 @@ so this is unblocked build-time plumbing, not a content change.
 
 **Blocks:** building any of the above event stubs.
 **Blocked by:** none.
-**Related:** C4 (the entity sweep that mints these event stubs).
+**Related:** C4 (the `associated_entities` rollout these event stubs belong to).
