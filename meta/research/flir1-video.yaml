@@ -30,6 +30,17 @@ context_extrinsic:
   primary_source_url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
   release_statement_url: https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
   release_venue: Naval Air Systems Command FOIA Reading Room (https://www.navair.navy.mil/foia/documents)
+associated_entities:
+- /documents/written-testimony-fravor-2023
+- /events/2004-nimitz-encounter
+- /organizations/dod
+- /organizations/navair
+- /organizations/ttsa
+- /organizations/us-navy
+- /organizations/uss-nimitz
+- /people/alex-dietrich
+- /people/david-fravor
+- /transcripts/2023-07-26-house-fravor
 quotes: []
 naming_quirks: []
 media_versioning: []

@@ -47,6 +47,7 @@ One of three unclassified Navy ([`/organizations/us-navy`]) videos the Departmen
 ### Organizations
 
 - [`/organizations/dod`]
+- [`/organizations/navair`]
 - [`/organizations/ttsa`]
 - [`/organizations/us-navy`]
 - [`/organizations/uss-nimitz`]
