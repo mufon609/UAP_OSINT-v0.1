@@ -22,6 +22,7 @@ associated_entities:
 - /locations/russia
 - /locations/south-asia
 - /locations/united-states
+- /locations/washington-dc
 - /locations/west-coast
 - /organizations/aaro
 - /organizations/afosi
@@ -43,6 +44,7 @@ associated_entities:
 - /organizations/raytheon
 - /organizations/sandia-national-laboratories
 - /organizations/sasc
+- /organizations/subcommittee-on-emerging-threats-and-capabilities
 - /organizations/tiger-team
 - /organizations/uaptf
 - /organizations/us-air-force

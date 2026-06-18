@@ -240,6 +240,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/raytheon`]
 - [`/organizations/sandia-national-laboratories`]
 - [`/organizations/sasc`]
+- [`/organizations/subcommittee-on-emerging-threats-and-capabilities`]
 - [`/organizations/tiger-team`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-air-force`]
@@ -278,4 +279,5 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/locations/russia`]
 - [`/locations/south-asia`]
 - [`/locations/united-states`]
+- [`/locations/washington-dc`]
 - [`/locations/west-coast`]
