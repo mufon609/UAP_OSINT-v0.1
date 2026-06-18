@@ -154,6 +154,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 - [`/organizations/omb`]
 - [`/organizations/osd`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/white-house`]
 
 ### Events
 
@@ -164,4 +165,3 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 ### Locations
 
 - [`/locations/united-states`]
-- [`/locations/white-house`]

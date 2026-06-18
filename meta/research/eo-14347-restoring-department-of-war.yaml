@@ -151,13 +151,13 @@ associated_entities:
 - /events/world-war-i
 - /events/world-war-ii
 - /locations/united-states
-- /locations/white-house
 - /organizations/congress
 - /organizations/department-of-the-navy
 - /organizations/department-of-war-historical
 - /organizations/dod
 - /organizations/omb
 - /organizations/osd
+- /organizations/white-house
 - /people/george-washington
 cited_works: NONE
 naming_quirks: []
