@@ -359,8 +359,12 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/anna-paulina-luna`]
+- [`/people/glenn-grothman`]
+- [`/people/robert-garcia`]
 - [`/people/ryan-graves`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/tim-burchett`]
 - [`/people/tim-gallaudet`]
 
 ### Organizations
@@ -369,7 +373,12 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/aiaa`]
 - [`/organizations/americans-for-safe-aerospace`]
 - [`/organizations/faa`]
+- [`/organizations/fleet-forces-command`]
+- [`/organizations/house-oversight`]
+- [`/organizations/nasa`]
 - [`/organizations/noaa`]
+- [`/organizations/norad`]
+- [`/organizations/subcommittee-on-national-security-the-border-and-foreign-affairs`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]
 - [`/organizations/vfa-11`]
@@ -377,3 +386,26 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Events
 
 - [`/events/2023-07-26-house-uap-hearing`]
+- [`/events/february-2023-north-american-shootdowns`]
+- [`/events/operation-enduring-freedom`]
+- [`/events/operation-inherent-resolve`]
+
+### Documents
+
+- [`/documents/ndaa`]
+- [`/documents/odni-preliminary-assessment-2021`]
+
+### Media
+
+- [`/media/gimbal-declassified`]
+- [`/media/go-fast`]
+
+### Locations
+
+- [`/locations/china`]
+- [`/locations/east-coast`]
+- [`/locations/hawaii`]
+- [`/locations/north-atlantic`]
+- [`/locations/virginia-beach-virginia`]
+- [`/locations/warning-area-w-72`]
+- [`/locations/west-virginia`]
