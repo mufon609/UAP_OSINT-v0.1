@@ -302,11 +302,14 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 - [`/people/colm-kelleher`]
 - [`/people/dylan-borland`]
+- [`/people/eric-davis`]
 - [`/people/george-knapp`]
 - [`/people/harry-reid`]
 - [`/people/james-lacatski`]
 - [`/people/jay-stratton`]
 - [`/people/jeremy-corbell`]
+- [`/people/luis-elizondo`]
+- [`/people/robert-bigelow`]
 - [`/people/tara-otoole`]
 
 ### Organizations
@@ -315,17 +318,47 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/aatip`]
 - [`/organizations/aawsap`]
 - [`/organizations/baass`]
+- [`/organizations/cbs-news`]
+- [`/organizations/cia`]
+- [`/organizations/cnn`]
+- [`/organizations/congress`]
 - [`/organizations/dhs`]
 - [`/organizations/dia`]
 - [`/organizations/dod`]
+- [`/organizations/dod-inspector-general`]
+- [`/organizations/dopsr`]
+- [`/organizations/fox-news`]
+- [`/organizations/house-oversight`]
 - [`/organizations/kona-blue`]
+- [`/organizations/nsa`]
+- [`/organizations/politico`]
+- [`/organizations/state-department`]
+- [`/organizations/the-new-york-times`]
+- [`/organizations/uaptf`]
+- [`/organizations/washington-post`]
 - [`/organizations/weaponized-podcast`]
 
 ### Documents
 
+- [`/documents/future-visions-2026`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/new-insights-2024`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
 
 ### Transcripts
 
 - [`/transcripts/weaponized-038-lacatski-kelleher-2023`]
+
+### Media
+
+- [`/media/the-twilight-zone`]
+- [`/media/the-x-files`]
+
+### Locations
+
+- [`/locations/china`]
+- [`/locations/earth`]
+- [`/locations/iraq`]
+- [`/locations/russia`]
+- [`/locations/skinwalker-ranch`]
+- [`/locations/washington-dc`]
