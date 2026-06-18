@@ -329,3 +329,100 @@ so this is unblocked build-time plumbing, not a content change.
 **Blocks:** building any of the above event stubs.
 **Blocked by:** none.
 **Related:** C4 (the entity sweep that mints these event stubs).
+
+### C8 — Encode the `associated_entities` scope: source-backed nodes only
+
+**The issue.** No surface defines *which* node types the field/sweep applies to.
+`/re-associate` framed its job as "bring **every pre-rule node** up to standard"
+(no restriction); the build-protocol "Linking" contract, the agents, and the
+schema likewise never state it. A parallel C4 session was consequently
+mis-assigned 10 person nodes (plus orgs, a location, findings, an investigation)
+— none an ingested source, so "ingest is the relevance decision" has no
+ingestion unit for them. Caught only by the owner's question, not by any surface.
+
+**The work.** State the scope where the rule lives: the field's subject is a node
+that **IS an ingested primary source** — `document` / `transcript` / `media` +
+hearing-`event` nodes (the full-hearing union home). OUT: `person` /
+`organization` / `location` (link *targets*), `finding` / `investigation`
+(synthesis), and encounter-`event` nodes (reconstruction, no single source body).
+Encode in the build-protocol "Linking — ingest is the relevance decision"
+contract and the schema's `associated_entities` comment. Prose/contract encoding
+only — a mechanical scope gate was considered and dropped (premature while the
+field stays optional during rollout).
+
+**Blocks:** none.
+**Blocked by:** none.
+**Related:** C4 (the sweep this scope governs); the re-associate-vs-build-pipeline
+agent-consolidation question (the re-associate agents may be retired post-sweep);
+[[c4-sweep-scope-source-backed-nodes]].
+
+### C9 — Teach the onboarding pipeline to enumerate structural-framing entities
+
+**The issue.** The entity-enumeration roles reliably miss **structural-framing
+entities** — those in a source's front-matter rather than its substantive prose:
+the issuing/conducting body (a hearing's committee + subcommittee), the convening
+venue / dateline (→ `/locations/`), the masthead / address / CC block, the
+date-as-named-event. On the 2023-07-26 House hearing the `re-associate-producer`
+AND the first verifier both missed `house-oversight`, its subcommittee, and
+`washington-dc`; the gap had already shipped on the SASC node. The producer
+agent's model is DIRD-shaped (researchers/orgs in technical prose) with no
+framing examples — and the **build pipeline's worker / builder / auditor share
+the omission**, so new ingests inherit it.
+
+**The work.** Add a mandatory **structural-framing enumeration step** to the
+go-forward onboarding pipeline (the build roles — worker surfaces, builder links,
+auditor verifies) and the build-protocol "Linking" contract: explicitly
+enumerate the conducting/issuing body, the venue/dateline, the masthead /
+address / CC block, and any date-as-event. Add a hearing/testimony example beside
+the DIRD ones. Target the durable build pipeline (the onboarding process), not the
+backfill-era re-associate agents.
+
+**Blocks:** none.
+**Blocked by:** none.
+**Related:** C8 (scope); the agent-consolidation question (diverse-verification);
+C10; [[c4-sweep-scope-source-backed-nodes]].
+
+### C10 — Tune `coverage-suggest.py` to surface framing entities
+
+**The issue.** `coverage-suggest.py` — the one mechanical completeness aid —
+frequency-ranks capitalized tokens (top-N) and skips heading/boilerplate
+paragraphs. So a once-named convening city ("Washington") or a title-page
+conducting body ("COMMITTEE ON OVERSIGHT") is buried under high-frequency noise
+("Thank", "Audience") or skipped as front-matter — exactly the entities that get
+missed (C9). Run on the hearing events, it surfaced only noise.
+
+**The work.** Don't frequency-rank away single-occurrence proper nouns (a
+once-named entity is the *more* likely miss, not less); surface the source's
+structural front-matter (title page, convening statement, masthead) as a
+dedicated bucket rather than skipping it as boilerplate. Read-only diagnostic, so
+low risk.
+
+**Blocks:** none.
+**Blocked by:** none.
+**Related:** C9 (the framing entities this aid should surface).
+
+### C11 — Resolve the schema-vs-convention conflict on events carrying `associated_entities`
+
+**The issue.** Two governing surfaces disagree on whether `event` nodes are in
+the field's scope. The schema's `associated_entities` future-REQUIRED list names
+`document` / `transcript` / `media` and omits events; but the
+transcript-re-association convention designates a **hearing-event node as the
+home for the full-hearing entity union** (per-witness transcript nodes carry only
+witness-scope slices), and the two hearing events are now swept under that
+convention. The schema comment predates the convention (schema line 2026-06-15;
+convention 2026-06-18). So the "flip to required" step (C4 item 2) has no answer
+for events.
+
+**The work.** Investigate and clear up the root question: is a hearing-`event`
+node formally in the `associated_entities` scope? If yes (the swept state says
+yes), add `event`-hearing to the future-REQUIRED list and reconcile the schema
+comment, the build-protocol "Linking" contract, and the transcript-re-association
+convention so all three agree; fold into C4 item 2. Distinguish hearing-events
+(union home, IN) from encounter-events (reconstruction, OUT) in whatever surface
+settles it.
+
+**Blocks:** C4 item 2 (flip-to-required can't enumerate the required types until
+this is settled).
+**Blocked by:** none.
+**Related:** C4, C8 (scope), C7 (`other` event kind);
+[[c4-sweep-scope-source-backed-nodes]], [[transcript-reassoc-conventions]].
