@@ -2,6 +2,55 @@ id: meta/research/lucistrust-rending-veils-ryder-2017
 type: research-artifact
 target_node: transcripts/lucistrust-rending-veils-ryder-2017
 status: active
+associated_entities:
+- /documents/the-bible
+- /events/first-world-war
+- /events/rendlesham-forest-incident
+- /locations/andromeda
+- /locations/arizona
+- /locations/australia
+- /locations/central-america
+- /locations/chauvet
+- /locations/china
+- /locations/dordogne
+- /locations/earth
+- /locations/egypt
+- /locations/england
+- /locations/fatima
+- /locations/france
+- /locations/geneva
+- /locations/glastonbury
+- /locations/ireland
+- /locations/lourdes
+- /locations/pyrenees
+- /locations/scotland
+- /locations/south-africa
+- /locations/south-america
+- /locations/sun
+- /locations/united-states
+- /locations/utah
+- /locations/york
+- /organizations/advanced-technology-center
+- /organizations/institute-for-venture-science
+- /organizations/international-science-foundation
+- /organizations/lockheed-martin
+- /organizations/lockheed-martin-space-systems-company
+- /organizations/lucis-trust
+- /organizations/lucis-trust-arcane-school
+- /organizations/max-planck-institute
+- /organizations/safire-project
+- /organizations/storm-and-tornado-research-organization
+- /organizations/wikipedia
+- /people/birkeland
+- /people/chambers
+- /people/graham-hancock
+- /people/jacques-vallee
+- /people/james-ryder
+- /people/joan-of-arc
+- /people/jung
+- /people/lawrence-lucis-trust-moderator
+- /people/lee-blackburn
+- /people/stephen-phillips
 description: 'A fascinating discussion of "fairies, devas, and unidentified aerial phenomena" by James ([`/people/james-ryder`]). Lawrence ([`/people/lawrence-lucis-trust-moderator`]) said James is "a retired Vice President of Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Company and former head of the Advanced Technology Centre," "Chairman of the Board for the International Science Foundation ([`/organizations/international-science-foundation`])," which funds the SAFIRE Project ([`/organizations/safire-project`]), and "Chairman of the Board for the Institute for Venture Science ([`/organizations/institute-for-venture-science`])." Lawrence said "we had to go for either a Druid from Glastonbury or a Lockheed guy."
 
 

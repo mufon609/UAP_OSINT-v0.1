@@ -146,12 +146,20 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Organizations
 
+- [`/organizations/aatip`]
 - [`/organizations/aawsap`]
 - [`/organizations/baass`]
 - [`/organizations/bigelow-aerospace`]
+- [`/organizations/congress`]
 - [`/organizations/dia`]
 - [`/organizations/klas-tv`]
 - [`/organizations/kona-blue`]
+- [`/organizations/mysterywire`]
+- [`/organizations/the-new-york-times`]
+
+### Events
+
+- [`/events/2018-03-aatip-revelation-meeting`]
 
 ### Documents
 
@@ -166,4 +174,8 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 ### Locations
 
+- [`/locations/area-51`]
+- [`/locations/las-vegas-nevada`]
+- [`/locations/nevada`]
 - [`/locations/skinwalker-ranch`]
+- [`/locations/washington-dc`]
