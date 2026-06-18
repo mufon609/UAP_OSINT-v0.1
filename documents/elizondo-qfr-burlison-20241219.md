@@ -215,9 +215,14 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 - [`/people/christopher-sharp`]
 - [`/people/eric-burlison`]
+- [`/people/gerald-connolly`]
+- [`/people/glenn-grothman`]
 - [`/people/james-lacatski`]
 - [`/people/james-ryder`]
 - [`/people/luis-elizondo`]
+- [`/people/mallory-cogar`]
+- [`/people/nancy-mace`]
+- [`/people/robert-garcia`]
 - [`/people/steny-hoyer`]
 
 ### Organizations
@@ -226,13 +231,36 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/aawsap`]
 - [`/organizations/bigelow-aerospace`]
 - [`/organizations/cia`]
+- [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/dopsr`]
+- [`/organizations/house-oversight`]
+- [`/organizations/intelligence-community`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/noaa`]
+- [`/organizations/odni`]
+- [`/organizations/subcommittee-on-cybersecurity-information-technology-and-government-innovation`]
+- [`/organizations/subcommittee-on-national-security-the-border-and-foreign-affairs`]
+- [`/organizations/united-states-house-of-representatives`]
 - [`/organizations/us-air-force`]
+- [`/organizations/us-navy`]
+- [`/organizations/white-house`]
 
 ### Events
 
 - [`/events/2024-11-13-house-oversight-uap-hearing`]
+- [`/events/global-war-on-terror`]
+- [`/events/september-11-attacks`]
+
+### Documents
+
+- [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]
+- [`/documents/uap-collection-requirements`]
+- [`/documents/uap-security-classification-guide`]
 
 ### Locations
 
+- [`/locations/buffalo-wyoming`]
+- [`/locations/las-vegas-nevada`]
 - [`/locations/patuxent-river-nas`]
+- [`/locations/washington-dc`]

@@ -196,6 +196,46 @@ quotes:
   significance: 'Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in q3 / q7 names the program as the destination context but not as the funding source for the transfer itself.'
   statement_date: '2024-12-19'
 
+associated_entities:
+- /documents/docs-house-gov-hhrg-118-go12-20241113-sd004
+- /documents/uap-collection-requirements
+- /documents/uap-security-classification-guide
+- /events/2024-11-13-house-oversight-uap-hearing
+- /events/global-war-on-terror
+- /events/september-11-attacks
+- /locations/buffalo-wyoming
+- /locations/las-vegas-nevada
+- /locations/patuxent-river-nas
+- /locations/washington-dc
+- /organizations/aatip
+- /organizations/aawsap
+- /organizations/bigelow-aerospace
+- /organizations/cia
+- /organizations/dia
+- /organizations/dod
+- /organizations/dopsr
+- /organizations/house-oversight
+- /organizations/intelligence-community
+- /organizations/lockheed-martin
+- /organizations/noaa
+- /organizations/odni
+- /organizations/subcommittee-on-cybersecurity-information-technology-and-government-innovation
+- /organizations/subcommittee-on-national-security-the-border-and-foreign-affairs
+- /organizations/united-states-house-of-representatives
+- /organizations/us-air-force
+- /organizations/us-navy
+- /organizations/white-house
+- /people/christopher-sharp
+- /people/eric-burlison
+- /people/gerald-connolly
+- /people/glenn-grothman
+- /people/james-lacatski
+- /people/james-ryder
+- /people/luis-elizondo
+- /people/mallory-cogar
+- /people/nancy-mace
+- /people/robert-garcia
+- /people/steny-hoyer
 cited_works: NONE
 naming_quirks:
 - id: nq1
