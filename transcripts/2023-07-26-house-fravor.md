@@ -649,6 +649,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/events/2004-nimitz-encounter`]
 - [`/events/2023-07-26-house-uap-hearing`]
+- [`/events/february-2023-north-american-shootdowns`]
 - [`/events/phoenix-lights`]
 
 ### Documents
