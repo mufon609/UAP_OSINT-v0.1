@@ -585,7 +585,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/dod`]
 - [`/organizations/doe`]
 - [`/organizations/faa`]
-- [`/organizations/house-armed-services-committee`]
+- [`/organizations/hasc`]
 - [`/organizations/nas-oceana`]
 - [`/organizations/nasa`]
 - [`/organizations/nsc`]
