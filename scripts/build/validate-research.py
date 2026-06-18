@@ -153,6 +153,7 @@ from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
 from checks import ocr_sibling_presence as ck_ocr_sibling_presence
 from checks import quote_ocr_corroboration as ck_quote_ocr_corroboration
+from checks import reproduced_datasets as ck_reproduced_datasets
 from checks import transcript_sibling_presence as ck_transcript_sibling_presence
 from checks import top_scope_activity as ck_top_scope_activity
 from checks import verbatim_quotes as ck_verbatim_quotes
@@ -309,6 +310,7 @@ _ARTIFACT_CHECKS = [
     # Whole-artifact analytical checks
     ck_cross_refs,
     ck_associated_entities,  # optional associated_entities field: shape + prose-wrap superset
+    ck_reproduced_datasets,  # optional reproduced_datasets field: shape + manifest/CSV-sibling presence
     ck_prose_drift,
 ]
 

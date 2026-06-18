@@ -32,6 +32,7 @@ EMITS = frozenset({
     "Preserved Disagreements",
     "Name Variants",
     "References",
+    "Reproduced Datasets",
     "Associated Nodes",
 })
 
@@ -280,6 +281,58 @@ def render_cited_works(artifact):
     return "\n".join(lines) + "\n"
 
 
+def render_reproduced_datasets(artifact):
+    """Document Reproduced Datasets — bulk tabular data the source
+    reproduces wholesale (an appendix case index, a frequency table, any
+    reproduced catalog), surfaced as a summary + a link to its CSV data
+    sibling rather than exploded into per-row entity links. The
+    references-stay-alone carve-out applied to a reproduced table: the node
+    links the catalog as ONE object; the row data — including any place
+    column — lives in the CSV, queryable, not in ``## Associated Nodes``.
+    See meta/schema-research-artifact.yaml::optional_keys.reproduced_datasets.
+
+    Returns ``""`` when the field is absent / empty / malformed, so every
+    document without a reproduced dataset renders byte-identical (the
+    boundary check stays green)."""
+    value = artifact.get("reproduced_datasets")
+    if not isinstance(value, list):
+        return ""
+    datasets = [d for d in value if isinstance(d, dict)]
+    if not datasets:
+        return ""
+
+    lines = ["## Reproduced Datasets", ""]
+    lines.append(
+        "Bulk tabular data the source reproduces wholesale (appendix indices, "
+        "catalogs, frequency tables), captured as a queryable CSV data sibling "
+        "— the catalog linked as one object, not exploded into per-row entity "
+        "links. The row data lives in the linked file."
+    )
+    lines.append("")
+    for d in sort_by_id(datasets):
+        title = str(d.get("title") or "Dataset").strip()
+        lines.append(f"### {title}")
+        lines.append("")
+        desc = str(d.get("description") or "").strip()
+        if desc:
+            lines.append(desc)
+            lines.append("")
+        row_count = d.get("row_count")
+        if row_count is not None:
+            lines.append(f"- **Rows:** {row_count}")
+        cols = d.get("columns")
+        if isinstance(cols, list) and cols:
+            lines.append(f"- **Columns:** {', '.join(str(c) for c in cols)}")
+        src = d.get("source")
+        if isinstance(src, dict) and src.get("location"):
+            lines.append(f"- **Source:** {src.get('location')}")
+        path = str(d.get("dataset_path") or "").strip()
+        if path:
+            lines.append(f"- **Data:** [{path}](../sources/{path})")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def render_body_document(artifact, node_kind):
     """Document-type body composition. H1 title stands alone — no
     ``---`` separator between H1 and first H2. Document nodes have no
@@ -298,6 +351,7 @@ def render_body_document(artifact, node_kind):
         render_preserved_disagreements(artifact),
         render_name_variants(artifact),
         render_cited_works(artifact),
+        render_reproduced_datasets(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
