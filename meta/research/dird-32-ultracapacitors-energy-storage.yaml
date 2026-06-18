@@ -320,6 +320,22 @@ description: 'One of a series of advanced technology reports produced in FY 2010
   Chapter 4 describes a vertically aligned CNT forest produced at Lockheed Martin''s ([`/organizations/lockheed-martin`]) Advanced Technology Center (LMATC) and CNT-coated glass fibers from the NEARLab facility; graphene, where Lockheed Martin is actively engaged in research; the discoveries at Drexel University ([`/organizations/drexel-university`]) in carbide-derived carbons; and the magnetic capacitor (MCap) that Northern Lights Semiconductor Corp. (NLSC) ([`/organizations/northern-lights-semiconductor`]) has been developing since 2007 — at its mass production target, MCaps would disrupt both the lithium ion battery and the ultracapacitor market. Per the Conclusions, development of these advanced ultracaps "must be performed, understood, and adopted by the U.S. government" and we "must have a keen understanding and awareness of the unique spectral signatures these devices generate."
 
   This document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]), the largest online Freedom of Information Act (FOIA) document clearinghouse in the world.'
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /locations/united-states
+- /locations/washington-dc
+- /organizations/aawsap
+- /organizations/dia
+- /organizations/drexel-university
+- /organizations/lockheed-martin
+- /organizations/matsushita-electric
+- /organizations/nec
+- /organizations/northern-lights-semiconductor
+- /organizations/sohio
+- /organizations/taiyo-yuden
+- /organizations/the-black-vault
+- /people/j-golightly
+- /people/john-greenewald
 cited_works:
 - id: cw1
   added_date: '2026-06-10'

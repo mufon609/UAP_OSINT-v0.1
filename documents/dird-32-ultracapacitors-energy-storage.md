@@ -460,6 +460,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/j-golightly`]
 - [`/people/john-greenewald`]
 
 ### Organizations
@@ -478,3 +479,8 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
