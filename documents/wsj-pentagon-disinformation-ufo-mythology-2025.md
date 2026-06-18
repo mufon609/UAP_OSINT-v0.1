@@ -202,7 +202,10 @@ In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`])
 
 - [`/people/aruna-viswanatha`]
 - [`/people/avril-haines`]
+- [`/people/h-wells`]
+- [`/people/joe-biden`]
 - [`/people/joel-schectman`]
+- [`/people/nancy-mace`]
 - [`/people/robert-salas`]
 - [`/people/sean-kirkpatrick`]
 - [`/people/sue-gough`]
@@ -210,5 +213,39 @@ In a statement, Defense Department spokeswoman Sue Gough ([`/people/sue-gough`])
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/congress`]
 - [`/organizations/dod`]
+- [`/organizations/house-oversight`]
+- [`/organizations/house-uap-caucus`]
+- [`/organizations/intelligence-community`]
+- [`/organizations/missile-and-space-intelligence-center`]
+- [`/organizations/odni`]
 - [`/organizations/tovima`]
+- [`/organizations/us-air-force`]
+- [`/organizations/wall-street-journal`]
+- [`/organizations/yankee-blue`]
+
+### Events
+
+- [`/events/2024-11-13-house-oversight-uap-hearing`]
+
+### Documents
+
+- [`/documents/aaro-historical-record-report-vol-i`]
+- [`/documents/aaro-historical-record-report-vol-ii`]
+- [`/documents/war-of-the-worlds`]
+
+### Locations
+
+- [`/locations/andromeda`]
+- [`/locations/area-51`]
+- [`/locations/china`]
+- [`/locations/las-vegas-nevada`]
+- [`/locations/montana`]
+- [`/locations/nevada`]
+- [`/locations/redstone-arsenal`]
+- [`/locations/russia`]
+- [`/locations/south-carolina`]
+- [`/locations/soviet-union`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
