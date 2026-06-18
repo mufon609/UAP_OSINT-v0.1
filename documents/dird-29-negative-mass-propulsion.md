@@ -179,12 +179,46 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ## Associated Nodes
 
+### People
+
+- [`/people/a-papapetrou`]
+- [`/people/d-bohm`]
+- [`/people/einstein`]
+- [`/people/f-hund`]
+- [`/people/f-winterberg`]
+- [`/people/g-breit`]
+- [`/people/g-builder`]
+- [`/people/goudsmit`]
+- [`/people/h-bondi`]
+- [`/people/h-honl`]
+- [`/people/john-greenewald`]
+- [`/people/lorentz`]
+- [`/people/mach`]
+- [`/people/newton`]
+- [`/people/poincare`]
+- [`/people/r-forward`]
+- [`/people/s-prokhovnik`]
+- [`/people/schrodinger`]
+- [`/people/uhlenbeck`]
+- [`/people/v-vysin`]
+- [`/people/y-aharonov`]
+
 ### Organizations
 
 - [`/organizations/aawsap`]
 - [`/organizations/dia`]
 - [`/organizations/the-black-vault`]
+- [`/organizations/university-of-nevada-reno`]
 
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/austria`]
+- [`/locations/earth`]
+- [`/locations/graz`]
+- [`/locations/moon`]
+- [`/locations/sun`]
+- [`/locations/washington-dc`]
