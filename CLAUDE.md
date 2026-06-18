@@ -95,7 +95,7 @@ session* — never training knowledge. The verbatim-quote check in
 on the main thread and dispatches the role subagents in
 `.claude/agents/` (internal-investigator · external-investigator ·
 archive · worker · builder · auditor); never hand-author a node. The
-standalone skills: `/audit`, `/augment`, `/re-associate`,
+standalone skills: `/audit`, `/augment`,
 `/verify-transcript`, `/quote-relevance-audit`, `/archive-sweep`,
 `/prepare-ocr-sibling`, `/prepare-transcript-sibling`, `/fork-init`.
 
@@ -182,7 +182,7 @@ media/ locations/ findings/ investigations/
 
 .claude/
   skills/                   invokable workflows — /build, /audit,
-                            /augment, /re-associate, /verify-transcript,
+                            /augment, /verify-transcript,
                             /quote-relevance-audit, /archive-sweep,
                             /prepare-ocr-sibling, /prepare-transcript-sibling,
                             /fork-init — plus the build-protocol contract
@@ -194,8 +194,6 @@ media/ locations/ findings/ investigations/
                             + the two attribution agents (attribution-producer,
                             attribution-verifier) dispatched by
                             /prepare-transcript-sibling
-                            + the two re-associate agents (re-associate-producer,
-                            re-associate-verifier) dispatched by /re-associate
   hooks/                    PreToolUse guards — commit anti-bypass guard (arms
                             .githooks/pre-commit, which runs pre-commit.sh at
                             commit time), node-body-edit block,
@@ -307,7 +305,6 @@ with each owner.
 | `/prepare-transcript-sibling` | Produce + verify a speaker-attribution sibling for a label-less transcript | `/build` step-4c gate; also standalone |
 | `/audit` | Health-check a built node for evidentiary integrity and consistency | Standalone maintenance (reactive) |
 | `/augment` | Targeted maintenance change without re-scaffolding | Standalone maintenance (proactive; partial re-entry) |
-| `/re-associate` | Sweep a node's link layer — populate `associated_entities` so every source-named entity reaches `## Associated Nodes` (link-layer only) | Standalone maintenance (BACKLOG C4 corpus sweep; keeps new ingests honest) |
 | `/verify-transcript` | Verify a transcript node's quotes word-for-word against the source | Standalone maintenance |
 | `/quote-relevance-audit` | Check each quote is load-bearing for the node's subject | Standalone maintenance |
 | `/archive-sweep` | Verify local archives; recover dead URLs; submit missing to Wayback | Periodic / end-of-session health pass |
@@ -330,12 +327,6 @@ transcription) + **ocr-page-verifier** (settle flagged divergences against
 the page image). `/prepare-transcript-sibling` dispatches
 **attribution-producer** (semantic parse → draft sibling) +
 **attribution-verifier** (independent re-check, separate session).
-`/re-associate` dispatches **re-associate-producer** (re-read source +
-narrative → enumerate the complete source-named-entity set) +
-**re-associate-verifier** (independent completeness/correctness re-check,
-separate session); the link-layer-only maintenance pass that brings a
-node's `associated_entities` up to the "ingest is the relevance decision"
-rule.
 
 The role-boundary rationale and the shared contract are
 `.claude/skills/build-protocol/`; the step/stage/branch map is

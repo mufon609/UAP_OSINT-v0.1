@@ -193,8 +193,8 @@ than lost work.
 A clean diff — additions-only, verbatim/prose-drift/coverage gates green —
 proves a change *broke nothing*. It says nothing about *completeness*: a
 missed entity is an absence, invisible to the diff and to every mechanical
-gate. So the independent verifier (the cold second read the build and
-`/re-associate` skills mandate as producer→verifier) is not optional, and
+gate. So the independent verifier (the cold second read the build pipeline
+mandates — the auditor's fresh-context completeness re-read) is not optional, and
 "this pass is mechanical / the diff is provably additions-only" is not an
 exemption from it — that rationalization is exactly how a completeness miss
 ships. The under-linking miss the sweep exists to catch is invisible until

@@ -207,16 +207,17 @@ source body, not only what a node surfaced into its `description` / `quotes` —
 reaches `## Associated Nodes`, with no "node-worthy / topically-relevant /
 source-body-vs-extrinsic / illustrative" filter. Codified in build-protocol
 ("Linking — ingest is the relevance decision"), the worker / builder / auditor
-roles, and the `re-associate-producer` / `re-associate-verifier` agents. The
+roles. The
 mechanism is the `associated_entities` artifact field — the complete, deduped
 superset of every source-named entity (entities already wrapped inline in prose
 are listed here too) — unioned into `## Associated Nodes` by `associate.py` and
 validated by `scripts/checks/associated_entities.py`. It exists because an entity
 named only inside a verbatim quote can't be wrapped (the verbatim check rejects a
-link in `quote.text`), so a thin `description` silently dropped it. The pass is
-the `/re-associate` skill: re-read source → producer enumerates the complete
-source-named-entity set → independent verifier challenges
-completeness/correctness → apply to `associated_entities` → re-render.
+link in `quote.text`), so a thin `description` silently dropped it. The build
+pipeline owns the field at ingest — the builder populates it, the auditor verifies
+completeness as an independent cold re-read; link-layer maintenance on a built
+node routes through `/audit` (the auditor flags under-linking) + `/augment`
+(applies the fix).
 
 **What links, what is carved out** (the enforcing surfaces above carry the full
 detail; this is the summary):
@@ -241,46 +242,40 @@ detail; this is the summary):
   its `/locations/`; new sweeps link places from the start (the producer
   enumerates them, the verifier and auditor hunt for them).
 
-**Two things remain, both corpus-scale:**
+**Status — the corpus sweep is COMPLETE.** Every source-backed node
+(`document` / `transcript` / `media` + the hearing-`event` union nodes) carries
+`associated_entities`. The one-time backfill is done; the field is now owned at
+ingest by the build pipeline (the builder populates it, the auditor verifies
+completeness), so a new source is honest from the start. Link-layer maintenance
+on a built node routes through `/audit` (the auditor flags under-linking) +
+`/augment` (applies the fix); the dedicated backfill skill that ran the sweep is
+retired.
 
-**1. Run the sweep across the corpus.** Every node built before the field
-under-links — the gap is corpus-wide and homogeneous (the DIRD series alone ran
-0–14 people-links across documents of the same kind). Run `/re-associate` against
-each pre-rule node, one at a time, committing each before the next (an agent's
-effective Bash can `git restore` uncommitted work). The skill changes nothing but
-the link layer: no quotes, no facts, no prose rewording; it edits only the
-artifact's `associated_entities` field (plus an inline wrap for any entity the
-`description` already names), never the node body and never the `## Associated
-Nodes` section directly; verbatim + prose-drift gates read clean before and after.
-The same skill is the standing pass for keeping new ingests honest — including the
-recent government-document releases (same name-dense-PDF shape; ingest under this
-rule from the start). Track remaining un-swept nodes with
-`grep -L '^associated_entities:' meta/research/*.yaml`. The sweep may be run as
-parallel sessions over disjoint node sets — each commits only its own nodes, and
-no session edits the shared toolkit (agents / skills / schema / checks) mid-run.
+**One thing remains:**
 
-**2. Flip the field to required.** Once the corpus is swept, make
-`associated_entities` REQUIRED on document / transcript / media target types
-(error on absence in `associated_entities.py` / `artifact_top_level.py`) — the
-final mechanical lock that turns "mandatory by build discipline" into "mandatory
-by gate." Until then the field stays optional so un-swept nodes hold the
-0-warning clean baseline.
+**Flip the field to required.** Make `associated_entities` REQUIRED on the
+source-backed target types (error on absence in `associated_entities.py` /
+`artifact_top_level.py`) — the final mechanical lock that turns "mandatory by
+build discipline" into "mandatory by gate." Blocked by C11: the exact
+required-type set (whether hearing-`event` nodes join `document` / `transcript` /
+`media`) must be settled first. Until the flip, the field stays optional so any
+not-yet-required type holds the 0-warning clean baseline.
 
 **Blocks:** none.
-**Blocked by:** none (rule + mechanism shipped).
-**Related:** C3 (the `extrinsic_authorship`-not-rendered gap a re-associate pass
-surfaces on redacted-author nodes; the `/augment` skill the re-associate agents
-narrow to the link layer alone); C5 (duplicate stub slugs the sweep surfaces);
-C7 (the build-time `other` event-kind
-plumbing this sweep's event stubs need). The principle is the
-[[link-all-load-bearing-references]] working-memory note.
+**Blocked by:** C11 (the events-in-scope question must settle the required-type
+set before the flip-to-required).
+**Related:** C3 (the `extrinsic_authorship`-not-rendered gap on redacted-author
+nodes); C5 (duplicate stub slugs the sweep surfaced); C7 (the build-time `other`
+event-kind plumbing this sweep's event stubs need); C8 (the source-backed scope),
+C11 (the events-in-scope question gating the flip-to-required). The principle is
+the [[link-all-load-bearing-references]] working-memory note.
 
 ### C5 — Dedupe stub slugs that name the same entity across artifacts
 
 **The issue.** Two artifacts can mint *different* stub slugs for the same
-not-yet-built entity, because the only reuse check (in the worker and the
-`re-associate-producer`) matches against *built* nodes — an unbuilt stub another
-artifact already coined is invisible. Surfaced by the dird-30 re-associate run:
+not-yet-built entity, because the only reuse check (the build pipeline's worker)
+matches against *built* nodes — an unbuilt stub another
+artifact already coined is invisible. Surfaced by the dird-30 sweep:
 `/people/v-teofilo` (dird-30 `extrinsic_authorship`) vs `/people/vincent-teofilo`
 (dird-24) name the same person (V. Teofilo / Vincent Teofilo, Lockheed Martin).
 The broken-link / Priority-Build registry then carries two entries for one
@@ -296,12 +291,12 @@ source-attested form (`vincent-teofilo` over `v-teofilo` when a source attests
 "Vincent"). Mechanically: a diagnostic that lists candidate duplicate-stub
 clusters for contributor judgment (NER-free, like `prose_entity_link`'s
 whole-phrase matching), then edit the losing artifacts' wraps/fields to the
-canonical slug and re-render. Could fold into the `/re-associate` corpus sweep
-(the producer gains an "existing stubs across artifacts" index) or stand alone.
+canonical slug and re-render. Could fold into the build pipeline's reuse check
+(the worker / builder gain an "existing stubs across artifacts" index) or stand alone.
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C4 (the re-associate sweep that surfaces these); the
+**Related:** C4 (the sweep that surfaces these); the
 `link_resolution` broken-link registry is the natural input.
 
 ### C7 — Add an `other` event kind (+ renderer branch) for non-hearing/encounter events
@@ -332,10 +327,10 @@ so this is unblocked build-time plumbing, not a content change.
 
 ### C8 — Encode the `associated_entities` scope: source-backed nodes only
 
-**The issue.** No surface defines *which* node types the field/sweep applies to.
-`/re-associate` framed its job as "bring **every pre-rule node** up to standard"
-(no restriction); the build-protocol "Linking" contract, the agents, and the
-schema likewise never state it. A parallel C4 session was consequently
+**The issue.** No surface defines *which* node types the field applies to (the
+now-retired `/re-associate` skill had framed its job as "every pre-rule node");
+the build-protocol "Linking" contract, the build agents, and the schema likewise
+never state it. A parallel C4 session was consequently
 mis-assigned 10 person nodes (plus orgs, a location, findings, an investigation)
 — none an ingested source, so "ingest is the relevance decision" has no
 ingestion unit for them. Caught only by the owner's question, not by any surface.
@@ -352,35 +347,8 @@ field stays optional during rollout).
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C4 (the sweep this scope governs); the re-associate-vs-build-pipeline
-agent-consolidation question (the re-associate agents may be retired post-sweep);
-[[c4-sweep-scope-source-backed-nodes]].
-
-### C9 — Teach the onboarding pipeline to enumerate structural-framing entities
-
-**The issue.** The entity-enumeration roles reliably miss **structural-framing
-entities** — those in a source's front-matter rather than its substantive prose:
-the issuing/conducting body (a hearing's committee + subcommittee), the convening
-venue / dateline (→ `/locations/`), the masthead / address / CC block, the
-date-as-named-event. On the 2023-07-26 House hearing the `re-associate-producer`
-AND the first verifier both missed `house-oversight`, its subcommittee, and
-`washington-dc`; the gap had already shipped on the SASC node. The producer
-agent's model is DIRD-shaped (researchers/orgs in technical prose) with no
-framing examples — and the **build pipeline's worker / builder / auditor share
-the omission**, so new ingests inherit it.
-
-**The work.** Add a mandatory **structural-framing enumeration step** to the
-go-forward onboarding pipeline (the build roles — worker surfaces, builder links,
-auditor verifies) and the build-protocol "Linking" contract: explicitly
-enumerate the conducting/issuing body, the venue/dateline, the masthead /
-address / CC block, and any date-as-event. Add a hearing/testimony example beside
-the DIRD ones. Target the durable build pipeline (the onboarding process), not the
-backfill-era re-associate agents.
-
-**Blocks:** none.
-**Blocked by:** none.
-**Related:** C8 (scope); the agent-consolidation question (diverse-verification);
-C10; [[c4-sweep-scope-source-backed-nodes]].
+**Related:** C4 (the sweep this scope governs); the build-protocol "Linking"
+contract (where the scope statement belongs); [[c4-sweep-scope-source-backed-nodes]].
 
 ### C10 — Tune `coverage-suggest.py` to surface framing entities
 
@@ -388,8 +356,9 @@ C10; [[c4-sweep-scope-source-backed-nodes]].
 frequency-ranks capitalized tokens (top-N) and skips heading/boilerplate
 paragraphs. So a once-named convening city ("Washington") or a title-page
 conducting body ("COMMITTEE ON OVERSIGHT") is buried under high-frequency noise
-("Thank", "Audience") or skipped as front-matter — exactly the entities that get
-missed (C9). Run on the hearing events, it surfaced only noise.
+("Thank", "Audience") or skipped as front-matter — exactly the structural-framing
+entities (build-protocol "Linking") that get missed. Run on the hearing events, it
+surfaced only noise.
 
 **The work.** Don't frequency-rank away single-occurrence proper nouns (a
 once-named entity is the *more* likely miss, not less); surface the source's
@@ -399,7 +368,8 @@ low risk.
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C9 (the framing entities this aid should surface).
+**Related:** C8 (scope); the build-protocol "Linking" structural-framing contract
+(the entities this aid should surface).
 
 ### C11 — Resolve the schema-vs-convention conflict on events carrying `associated_entities`
 
