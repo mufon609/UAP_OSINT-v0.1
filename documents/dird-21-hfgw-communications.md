@@ -732,7 +732,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/c-black`]
 - [`/people/c-harper`]
 - [`/people/c-misner`]
-- [`/people/c-shannon`]
+- [`/people/claude-shannon`]
 - [`/people/d-douglass`]
 - [`/people/d-kleppner`]
 - [`/people/e-lifshitz`]

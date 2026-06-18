@@ -509,7 +509,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/c-misner`]
 - [`/people/d-hochberg`]
 - [`/people/e-calloni`]
-- [`/people/e-fermi`]
+- [`/people/enrico-fermi`]
 - [`/people/eric-davis`]
 - [`/people/fabrizio-pinto`]
 - [`/people/franklin-felber`]
@@ -536,8 +536,8 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/r-ruffini`]
 - [`/people/richard-feynman`]
 - [`/people/robert-forward`]
-- [`/people/s-hawking`]
 - [`/people/s-perlmutter`]
+- [`/people/stephen-hawking`]
 - [`/people/t-kephart`]
 - [`/people/t-roman`]
 

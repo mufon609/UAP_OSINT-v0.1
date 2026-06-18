@@ -293,8 +293,8 @@ associated_entities:
 - /people/a-cetto
 - /people/a-ringwald
 - /people/a-rueda
-- /people/a-sakharov
 - /people/albert-einstein
+- /people/andrei-sakharov
 - /people/b-haisch
 - /people/b-miller
 - /people/c-caves
@@ -328,9 +328,9 @@ associated_entities:
 - /people/m-piestrup
 - /people/marshall
 - /people/nernst
-- /people/p-davies
 - /people/p-dirac
 - /people/p-marecki
+- /people/paul-davies
 - /people/planck
 - /people/r-blanco
 - /people/r-koch

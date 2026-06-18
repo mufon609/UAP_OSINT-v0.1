@@ -20,7 +20,7 @@ context_extrinsic:
   display_title: 'Aneutronic Fusion Propulsion — DIA Defense Intelligence Reference Document, AAWSAP, 01 November 2010'
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_30-DIRD_Aneutronic_Fusion_Propulsion.pdf
   quote_attribution: 'Aneutronic Fusion Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 01 November 2010'
-  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress AAWSAP products list attributes the report to Dr. V. Teofilo ([`/people/v-teofilo`]) of Lockheed Martin ([`/organizations/lockheed-martin`]) at attachment #26. The document''s own body does not carry the name on its face. Cross-reference [`/documents/dia-aatip-products-list-2018`]. Nothing is asserted beyond what the products list states and the document face shows.'
+  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress AAWSAP products list attributes the report to Dr. V. Teofilo of Lockheed Martin at attachment #26. The document''s own body does not carry the name on its face. Nothing is asserted beyond what the products list states and the document face shows.'
 quotes:
 - id: q1
   added_date: '2026-06-08'
@@ -149,6 +149,7 @@ naming_quirks:
   source_path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
   resolution: preserve-as-sic-in-quotes
 associated_entities:
+- /documents/dia-aatip-products-list-2018
 - /locations/alpha-centauri
 - /locations/arctic
 - /locations/barnard-star
@@ -182,8 +183,7 @@ associated_entities:
 - /people/john-greenewald
 - /people/robert-bussard
 - /people/v-belyaev
-- /people/v-teofilo
-- /documents/dia-aatip-products-list-2018
+- /people/vincent-teofilo
 description: 'Aneutronic Fusion Propulsion. The Defense Intelligence Reference Document, 01 November 2010, with an ICOD of 20 July 2010 and the number DIA-08-1011-003, in the Defense Futures series, UNCLASSIFIED//FOR OFFICIAL USE ONLY. Where the document shows Prepared by and Author, it shows (b)(3):10 USC 424 and (b)(6). The Administrative Notes place the product as one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]), (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]), with a (U) COPYRIGHT WARNING that further dissemination of the photographs in this publication is not authorized, and that comments or questions pertaining to this document should be addressed to the AAWSA Program Manager, Defense Intelligence Agency. The document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]). It is one of the FY 2010 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]).
 
 

@@ -356,7 +356,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/kip-thorne`]
 - [`/people/n-gisin`]
 - [`/people/nathan-rosen`]
-- [`/people/r-feynman`]
+- [`/people/richard-feynman`]
 - [`/people/s-freedman`]
 - [`/people/schrodinger`]
 - [`/people/stephen-hawking`]

@@ -1,7 +1,7 @@
 ---
 name: auditor
 description: Independent global health pass for a just-built or existing node. A fresh-context cold re-read — the independent verifier the producing role can't be. Recommend-only when run as build role 6. Use after a build, or to audit any existing node.
-tools: Read, Grep, Glob, Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/tools/coverage-suggest.py *), Bash(python3 scripts/tools/manifest.py *), Bash(python3 scripts/build/associate.py *)
+tools: Read, Grep, Glob, Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/tools/coverage-suggest.py *), Bash(python3 scripts/tools/stub-reconcile.py *), Bash(python3 scripts/tools/manifest.py *), Bash(python3 scripts/build/associate.py *)
 skills: build-protocol
 ---
 
@@ -91,6 +91,12 @@ Audit goals:
    to `associated_entities`, builder re-renders). `associated_entities.py` has
    already confirmed shape + that every inline prose-wrap is a member; your job
    is the completeness judgment a mechanical check can't make.
+   **Divergent-stub check.** Run `python3 scripts/tools/stub-reconcile.py`
+   (sweep) and scan its candidate clusters for any slug THIS node coined: if it
+   names an entity another artifact already stubbed under a different slug
+   (`/people/v-teofilo` vs `/people/vincent-teofilo`), flag it to canonicalize
+   to the fullest source-attested form. A same-surname-different-person cluster
+   (President Ford vs physicist L. H. Ford) is expected noise — leave it.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
    A cross-node inconsistency is a defect **only if the missing claim is

@@ -171,141 +171,48 @@ convention and record the rationale.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C3 — Decide whether the document renderer should surface `extrinsic_authorship`
+### C3 — Reconcile the duplicate-stub clusters `stub-reconcile.py` surfaces
 
-A document research artifact can carry author attribution — and `[[wraps]]` to the
-person/source that attests it — in `context_extrinsic.extrinsic_authorship`, used
-when the author is redacted in the document body and known only from an external
-index (the redacted-author convention in `scripts/checks/prose_drift.py`). But
-`scripts/build/renderers/document.py` does not consume that field, so a `[[wrap]]`
-placed in `extrinsic_authorship` never renders in the body. **Reachability is
-already handled**: the externally-attested author AND the attributed institution
-go in `associated_entities`, so they reach `## Associated Nodes` like any other
-entity, independent of the renderer. What remains is narrower — the
-`[/people/...]` author wrap and sibling-document wrap placed *inside*
-`extrinsic_authorship` are still silently dropped, and are now redundant with the
-`associated_entities` link: dead weight that reads as a working link.
+The mechanism is shipped. An initial people pass reconciled the
+initials-vs-full-name duplicates (`/people/v-teofilo` → `vincent-teofilo`, plus
+the cited-physicist pairs Fermi / Feynman / Forward / Hawking / Sakharov /
+Shannon / Davies). The standing tool + pipeline integration then followed:
+`scripts/tools/stub-reconcile.py` computes the complete coined-stub set (built
+∪ every artifact's references) and surfaces candidate duplicate clusters
+(NER-free; *initials* rule for people, generic-word-guarded *subset* rule for
+orgs); it is wired into the internal-investigator reuse survey, the builder's
+slug-coinage step, and the auditor's cold re-read. The root cause — the reuse
+survey seeing only *built* nodes — is closed to the extent it can be: the tool
+surfaces an existing unbuilt stub at coinage, but it is a judgment aid, not a
+gate (same-surname-different-person is legitimate).
 
-Decide one of: (a) teach `document.py` to surface `extrinsic_authorship` in the body
-prose — weighed against the redacted-author convention's intent that such an author
-is *carried by the link*, not asserted on the node, and now also against the
-duplication with the `associated_entities` link; or (b) confirm the field is
-structured-metadata-only and add a guard/lint so contributors don't wrap links there
-expecting them to render. The sweep makes (b) the cleaner default: reachability is
-already handled by `associated_entities`, leaving only whether the attribution
-should *display* in body prose.
+What remains is **running the sweep and applying per-cluster judgment** — the
+work the tool can't do itself:
 
-**Blocks:** none.
-**Blocked by:** none.
-**Related:** C4 (the `associated_entities` field that handles reachability, making (b) the cleaner default).
-
-### C4 — Finish the `associated_entities` rollout across the corpus
-
-**The rule + mechanism (shipped).** The decision to ingest a source IS the
-relevance decision: EVERY load-bearing entity the source names — across the FULL
-source body, not only what a node surfaced into its `description` / `quotes` —
-reaches `## Associated Nodes`, with no "node-worthy / topically-relevant /
-source-body-vs-extrinsic / illustrative" filter. Codified in build-protocol
-("Linking — ingest is the relevance decision"), the worker / builder / auditor
-roles. The mechanism is the `associated_entities` artifact field — the complete,
-deduped superset of every source-named entity (entities already wrapped inline in
-prose
-are listed here too) — unioned into `## Associated Nodes` by `associate.py` and
-validated by `scripts/checks/associated_entities.py`. It exists because an entity
-named only inside a verbatim quote can't be wrapped (the verbatim check rejects a
-link in `quote.text`), so a thin `description` silently dropped it. The build
-pipeline owns the field at ingest — the builder populates it, the auditor verifies
-completeness as an independent cold re-read; link-layer maintenance on a built
-node routes through `/audit` (the auditor flags under-linking) + `/augment`
-(applies the fix).
-
-**What links, what is carved out** (the enforcing surfaces above carry the full
-detail; this is the summary):
-- IN, like any other entity: the externally-attested redacted author AND the
-  institution attributed to it in `context_extrinsic.extrinsic_authorship`; the
-  FOIA-releaser pair (Greenewald / The Black Vault); a named program →
-  `/organizations/` (program-org stub, hosted like AAWSAP); a named event of ANY
-  kind → `/events/` (a weapons test, conference, disaster — not only
-  hearing/encounter; the kind binds only at build time, see C7); a named place →
-  `/locations/`, like any other entity.
-- CARVE-OUTS — the only grounds for not linking a named thing: (a) a bare
-  `cited_works` / References entry the prose does not discuss; (b) a thing with
-  no host node-type (a bare material/alloy, a device/vehicle MODEL); (c) an
-  eponym-only namesake — a person named ONLY as the namesake of a
-  principle/effect/equation/law/lens/device ("Fermat's principle", "Maxwell's
-  fish-eye lens"), neither an actor in the narrative nor a discussed cited author.
-- Locations and events are first-class associated entities, linked under the same
-  full-source-scope rule as people / organizations — there is NO places
-  carve-out (only the universal "no host node-type" one, e.g. a generic
-  geographic scale-word like "space").
-
-**Remaining work — flip the field to required.** Make `associated_entities`
-REQUIRED on the source-backed types — type-level on `document` / `transcript` /
-`media` (mirroring `description_required`, enforced in `artifact_top_level.py`),
-kind-conditional on `event` (`hearing` only, NOT `encounter` / `other`) via the
-schema's existing `target_node_kind_in` grammar. Error on absence — the final
-lock that turns "mandatory by build discipline" into "mandatory by gate." The
-scope it locks is defined in the build-protocol "Linking" contract and the schema
-`associated_entities` comment. Until the flip, the field stays optional so a
-not-yet-required node holds the 0-warning baseline.
+- **Candidate clusters the sweep surfaces — source-confirm each before
+  merging; slug-shape confidence is NOT entity confidence.** A spot check
+  already disproved several "obvious" merges: `aircraft-nuclear-propulsion` and
+  `nuclear-energy-for-propulsion-of-aircraft` are the *distinct* predecessor
+  (NEPA) and successor (ANP) programs, not one entity; `/people/morris` (a
+  biology-DIRD reference) is almost certainly not the wormhole physicist
+  `michael-morris`; `/people/einstein` and `newton` appear in eponym
+  constructions ("Einstein's field theory"), so the eponym carve-out may apply
+  rather than a merge. Candidates that still look clean but need the same
+  per-source confirmation: `/people/carter` → `jimmy-carter`, `ratcliffe` →
+  `john-ratcliffe`; `/organizations/mitre` → `mitre-corporation`, `oak-ridge` →
+  `oak-ridge-national-laboratory`, `house-of-representatives` →
+  `united-states-house-of-representatives`, the two `institute-for-advanced-
+  studies-(at-)austin` slugs. Canonicalize a confirmed-same-entity cluster to
+  the fullest source-attested form and re-render; leave the rest.
+- **Genuinely ambiguous / part-whole clusters** that must be ruled on, not
+  merged: distinct people sharing a surname (`gerald-ford` / `l-ford` [physicist
+  L. H. Ford] / `lonye-ford`; `d-brown` / `dean-brown`; the bare `smith` /
+  `johnson` / `sherman` hubs); and org part-whole pairs that are *not*
+  duplicates (`boeing` / `boeing-phantom-works`; the NASA centers; `us-air-force`
+  / `us-air-force-academy`; `university-of-alabama` / `…-huntsville`).
 
 **Blocks:** none.
 **Blocked by:** none.
-**Related:** C3 (the `extrinsic_authorship` rendering question on redacted-author
-nodes); C5 (duplicate stub slugs); C7 (the `other` event-kind plumbing — `other`
-events are out of the required set, so it and this flip are independent). The
-principle is the [[link-all-load-bearing-references]] working-memory note.
-
-### C5 — Dedupe stub slugs that name the same entity across artifacts
-
-**The issue.** Two artifacts can mint *different* stub slugs for the same
-not-yet-built entity, because the only reuse check (the build pipeline's worker)
-matches against *built* nodes — an unbuilt stub another artifact already coined
-is invisible. For example `/people/v-teofilo` (dird-30 `extrinsic_authorship`)
-and `/people/vincent-teofilo` (dird-24) name the same person (V. Teofilo /
-Vincent Teofilo, Lockheed Martin). The broken-link / Priority-Build registry then
-carries two entries for one person; whichever node is built first orphans the
-other reference. Concurrent or independent authoring amplifies it: two artifacts
-minting stubs cannot see each other's just-coined slugs (the reuse check greps
-*built* nodes only), so one entity picks up divergent stubs.
-
-**The work.** A reconcile pass over the broken-link registry / all artifacts that
-groups stub paths likely naming one entity (surname + initials match, alias
-overlap) and canonicalizes each cluster to a single slug — preferring the fullest
-source-attested form (`vincent-teofilo` over `v-teofilo` when a source attests
-"Vincent"). Mechanically: a diagnostic that lists candidate duplicate-stub
-clusters for contributor judgment (NER-free, like `prose_entity_link`'s
-whole-phrase matching), then edit the losing artifacts' wraps/fields to the
-canonical slug and re-render. Could fold into the build pipeline's reuse check
-(the worker / builder gain an "existing stubs across artifacts" index) or stand alone.
-
-**Blocks:** none.
-**Blocked by:** none.
-**Related:** C4 (the `associated_entities` rollout); the
-`link_resolution` broken-link registry is the natural input.
-
-### C7 — Add an `other` event kind (+ renderer branch) for non-hearing/encounter events
-
-The corpus links discrete events that are neither congressional hearings nor
-sighting/encounter incidents — nuclear/weapons tests, accidents/disasters,
-conferences, air shows. These already exist as `associated_entities` stubs
-(`/events/starfish-prime` — a 1962 nuclear test; `/events/columbia-disaster`;
-`/events/1988-paris-air-show`; plus dird-11's `/events/mike-test`,
-`/events/centurion-halite-experiment`, `/events/2nd-un-conference-peaceful-use-atomic-energy`).
-The `associated_entities` gate is kind-agnostic, so the STUBS are valid — but the
-`event` node type declares only two kinds (`hearing`, `encounter`,
-`meta/schema.yaml`), so the moment one of these stubs is BUILT it has no valid
-`kind`, and `event` `frontmatter.required` includes `kind`.
-
-Add an `other` event kind mirroring the transcript type's `other` catch-all
-(`description: "Discrete event that is not a formal proceeding or a
-sighting/encounter — a weapons/nuclear test, accident/disaster, conference,
-exhibition, or other gathering"`), with a minimal `required_sections` set (Event
-Summary, Description, Participants, Timeline, Associated Nodes), and the matching
-branch in `scripts/build/renderers/event.py` (currently hearing/encounter only)
-so `renderer-coverage.py` stays green. No `other`-kind event node is built yet,
-so this is unblocked build-time plumbing, not a content change.
-
-**Blocks:** building any of the above event stubs.
-**Blocked by:** none.
-**Related:** C4 (the `associated_entities` rollout these event stubs belong to).
+**Related:** the [[link-all-load-bearing-references]] working-memory note;
+`scripts/tools/stub-reconcile.py` is the tool; the `link_resolution` broken-link
+registry is the data it reads.

@@ -193,7 +193,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/john-greenewald`]
 - [`/people/robert-bussard`]
 - [`/people/v-belyaev`]
-- [`/people/v-teofilo`]
+- [`/people/vincent-teofilo`]
 
 ### Organizations
 

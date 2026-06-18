@@ -1,9 +1,11 @@
 """Event-type renderer.
 
-Renders event nodes across both kinds (hearing, encounter). Hearings
-emit a sub-grouped Participants section (by capacity) + Key Testimony
-+ Witnesses & Testimony; encounters emit a flat Confirmed/Flagged
-Participants table + Corroboration.
+Renders event nodes across all kinds (hearing, encounter, other).
+Hearings emit a sub-grouped Participants section (by capacity) + Key
+Testimony + Witnesses & Testimony; encounters emit a flat
+Confirmed/Flagged Participants table + Corroboration; `other` events
+(weapons test, accident/disaster, conference, exhibition) emit the flat
+Participants table with no kind-specific evidentiary section.
 """
 
 import sys
@@ -25,9 +27,11 @@ from ._universal import (
 )
 
 # Renderer-coverage contract — canonical H2 section titles render_body_event
-# can emit (across both kinds). Hearings emit Key Testimony + Witnesses &
-# Testimony; encounters emit Corroboration. Checked against schema-required
-# sections by renderer-coverage.py.
+# can emit (across all kinds). Hearings emit Key Testimony + Witnesses &
+# Testimony; encounters emit Corroboration; `other` events emit only the
+# universal Event Summary / Description / Participants / Timeline / Associated
+# Nodes (all already in this set). Checked against schema-required sections by
+# renderer-coverage.py.
 EMITS = frozenset({
     "Event Summary",
     "Description",
@@ -117,12 +121,16 @@ def render_event_summary(artifact, kind):
         row("Location",        ei.get("location"))
         row("Chair",           ei.get("chair"))
         row("Ranking Member",  ei.get("ranking_member"))
-    else:  # encounter
+    elif kind == "encounter":
         row("Date",            ei.get("date"))
         row("Location",        _wrap_path(ei.get("location_path")) or ei.get("location"))
         row("Duration",        ei.get("duration"))
         row("Weather",         ei.get("weather"))
         row("Instruments Involved", ei.get("instruments_involved"))
+    else:  # other — minimal generic event metadata (empty keys skipped)
+        row("Full Title",      ei.get("title") or ei.get("display_title"))
+        row("Date",            ei.get("date"))
+        row("Location",        _wrap_path(ei.get("location_path")) or ei.get("location"))
 
     if not rows_emitted:
         lines.append("|  |  |  |")
@@ -140,8 +148,10 @@ def _participant_row(e):
     )
 
 
-def render_participants_encounter(artifact):
-    """Flat Confirmed/Flagged split for encounter events."""
+def render_participants_flat(artifact):
+    """Flat Confirmed/Flagged Participants split — used by both encounter
+    and `other` events (the non-hearing kinds, which carry no capacity
+    sub-grouping)."""
     items = artifact.get("participants") or []
     confirmed = [e for e in items if isinstance(e, dict) and not e.get("flagged")]
     flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
@@ -245,10 +255,11 @@ def render_witnesses_testimony(artifact):
 
 def render_body_event(artifact, kind):
     """Event-type body composition. Section order matches the schema's
-    required_sections for the given kind. Hearing and encounter diverge
-    after the universal Event Summary / Description / Participants /
-    Timeline opener — hearings emit Key Testimony + Witnesses &
-    Testimony; encounters emit Corroboration.
+    required_sections for the given kind. The kinds diverge after the
+    universal Event Summary / Description / Participants / Timeline
+    opener — hearings emit Key Testimony + Witnesses & Testimony;
+    encounters emit Corroboration; `other` events emit nothing further
+    (Participants + Timeline carry their structure).
     """
     title = render_title_event(artifact).rstrip("\n") + "\n"
     sections = [
@@ -264,9 +275,14 @@ def render_body_event(artifact, kind):
         ])
     elif kind == "encounter":
         sections.extend([
-            render_participants_encounter(artifact),
+            render_participants_flat(artifact),
             render_timeline(artifact),
             render_corroboration(artifact),
+        ])
+    elif kind == "other":
+        sections.extend([
+            render_participants_flat(artifact),
+            render_timeline(artifact),
         ])
     else:
         sys.exit(f"ERROR: render_body_event: unknown event kind {kind!r}")

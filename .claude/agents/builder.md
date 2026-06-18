@@ -1,7 +1,7 @@
 ---
 name: builder
 description: Merge worker fragment files mechanically → organize → link cross-references → render the node. The synthesis role and the prose-drift surface. Edits only the research artifact, never the node body; failures route to data fixes. Use as role 5 of a node build, after the workers emit their fragment files.
-tools: Read, Edit, Bash(python3 scripts/build/merge-fragments.py *), Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *)
+tools: Read, Edit, Bash(python3 scripts/build/merge-fragments.py *), Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *), Bash(python3 scripts/tools/stub-reconcile.py *)
 skills: build-protocol
 ---
 
@@ -185,7 +185,13 @@ In order, with a check after each (build-protocol → run
    **structural-framing** entities are present — the conducting / issuing body
    (committee + subcommittee), the convening venue (`/locations/`), the masthead /
    address / CC block, and a date-as-event — the front-matter class the worker
-   most often under-surfaces. Populate `naming_quirks`. A
+   most often under-surfaces. **Before coining a NEW person/org stub slug,
+   check for an existing one** — run `python3 scripts/tools/stub-reconcile.py
+   --name "<name>"`; if a stub already exists (built, or coined by another
+   artifact) for the same entity, REUSE its slug (prefer the fullest
+   source-attested form) rather than minting a divergent one. The node-survey
+   reuse check sees only built nodes, so this is the only guard against
+   `/people/v-teofilo` vs `/people/vincent-teofilo`. Populate `naming_quirks`. A
    cross-ref the worker flagged as a **non-canonical source form** *additionally*
    gets a `naming_quirks` `preserve-as-sic-in-quotes` entry mapping source-form →
    canonical. Register

@@ -196,7 +196,7 @@ Reference list carried by the source document, transcribed verbatim (source spel
 - [`/people/mach`]
 - [`/people/newton`]
 - [`/people/poincare`]
-- [`/people/r-forward`]
+- [`/people/robert-forward`]
 - [`/people/s-prokhovnik`]
 - [`/people/schrodinger`]
 - [`/people/uhlenbeck`]

@@ -340,6 +340,20 @@ types:
           - Timeline
           - Corroboration
           - Associated Nodes
+      other:
+        description: "Discrete event that is not a formal proceeding or a sighting/encounter — a weapons/nuclear test, accident/disaster, conference, exhibition, or other gathering"
+        # Catch-all event kind, mirroring the transcript type's `other`.
+        # Minimal section set: no Key Testimony (hearing-only) and no
+        # Corroboration (encounter-only) — an `other` event is a venue/
+        # occurrence convergence point, not a sworn proceeding or a
+        # multiply-attested sighting. Participants + Timeline carry its
+        # structure; cross-source synthesis belongs on finding nodes.
+        required_sections:
+          - Event Summary
+          - Description
+          - Participants
+          - Timeline
+          - Associated Nodes
     section_rules:
       Participants: {split: [Confirmed, Flagged]}
       Key Testimony: {requires_quote_attribution: true}

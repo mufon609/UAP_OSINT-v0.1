@@ -114,16 +114,17 @@ def replace_section(text, new_section):
 
 
 def artifact_associated_entities(node_path, self_id):
-    """Read the backing research artifact's optional ``associated_entities``
-    list and return it as a link set, so an entity the source names ONLY
-    inside a verbatim quote (un-wrappable — the verbatim-quote check rejects
-    a link injected into ``quote.text``) still reaches ``## Associated
-    Nodes`` without depending on the author re-naming it in prose. See
-    ``schema-research-artifact.yaml::optional_keys.associated_entities`` and
-    the build-protocol "name it, wrap it" contract. The artifact stem is the
-    node stem (1:1 by slug). Missing field / missing artifact / parse error
-    all yield the empty set — associate is non-authoritative, so a bad read
-    just adds no extra links rather than breaking the run."""
+    """Read the backing research artifact's ``associated_entities`` list and
+    return it as a link set, so an entity the source names ONLY inside a
+    verbatim quote (un-wrappable — the verbatim-quote check rejects a link
+    injected into ``quote.text``) still reaches ``## Associated Nodes``
+    without depending on the author re-naming it in prose. See
+    ``schema-research-artifact.yaml::conditional_keys.associated_entities``
+    and the build-protocol "name it, wrap it" contract. The field is required
+    on the source-backed types and absent on the rest; associate is
+    non-authoritative and type-agnostic, so a missing field / missing
+    artifact / parse error all yield the empty set rather than breaking the
+    run (the artifact stem is the node stem, 1:1 by slug)."""
     artifact = RESEARCH_DIR / f"{node_path.stem}.yaml"
     if not artifact.is_file():
         return set()

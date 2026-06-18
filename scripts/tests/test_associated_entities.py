@@ -2,14 +2,16 @@
 """Regression guard for the associated-entities check
 (`scripts/checks/associated_entities.py`).
 
-The optional ``associated_entities`` field is the complete, deduped list of
-every entity a source names, unioned into ``## Associated Nodes`` by
-associate.py — the mechanism that carries an entity named only inside a verbatim
-quote (un-wrappable) without depending on the ``description`` prose. The check
-is silent when the field is absent (optional during rollout); when present it
-enforces shape (well-formed ``/type/slug``, no dupes, list type) and the
-completeness superset (every inline prose-wrap is a member). See the
-build-protocol "Linking — ingest is the relevance decision" contract.
+The ``associated_entities`` field is the complete, deduped list of every
+entity a source names, unioned into ``## Associated Nodes`` by associate.py —
+the mechanism that carries an entity named only inside a verbatim quote
+(un-wrappable) without depending on the ``description`` prose. The field is
+required on the source-backed types and forbidden elsewhere (enforced by
+iff_section from the schema conditional_keys rule); THIS check is the content
+validator — silent when the field is absent (iff_section owns presence), and
+when present it enforces shape (well-formed ``/type/slug``, no dupes, list
+type) and the completeness superset (every inline prose-wrap is a member). See
+the build-protocol "Linking — ingest is the relevance decision" contract.
 """
 
 import sys
@@ -91,26 +93,22 @@ def run():
     })
     record("excludes self-reference from superset", not m, repr(m))
 
-    # extrinsic_authorship is part of the superset (no "redacted author stays
-    # out" carve-out): a wrapped extrinsic author/institution NOT in the field
-    # → ERROR
+    # extrinsic_authorship is METADATA-ONLY and lives nested under
+    # context_extrinsic — it is NOT one of the scanned prose fields, so a wrap
+    # there is the extrinsic_authorship check's concern, not the superset's.
+    # The superset must NOT fire on it (the historical bug read it at top level
+    # and so never matched a real artifact; that path is gone). The externally-
+    # attested author IS still listed in the field directly, as prose without a
+    # wrap.
     m = _msgs({
         "target_node": "documents/x",
-        "associated_entities": ["/organizations/dia"],
-        "extrinsic_authorship": "Attributed to Dr. V. Teofilo "
-                                "([`/people/v-teofilo`]) of Lockheed Martin.",
+        "associated_entities": ["/people/vincent-teofilo"],
+        "context_extrinsic": {
+            "extrinsic_authorship": "Attributed to Dr. V. Teofilo of "
+                                    "Lockheed Martin per the products list.",
+        },
     })
-    record("fires on extrinsic_authorship wrap missing from field",
-           _has(m, "v-teofilo") and _has(m, "absent from"))
-
-    # extrinsic_authorship wrap that IS a field member → clean
-    m = _msgs({
-        "target_node": "documents/x",
-        "associated_entities": ["/people/v-teofilo"],
-        "extrinsic_authorship": "Attributed to Dr. V. Teofilo "
-                                "([`/people/v-teofilo`]).",
-    })
-    record("clean when extrinsic_authorship wrap is a member", not m, repr(m))
+    record("superset ignores extrinsic_authorship (metadata-only)", not m, repr(m))
 
 
 def main():

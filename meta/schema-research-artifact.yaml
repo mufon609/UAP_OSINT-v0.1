@@ -142,54 +142,10 @@ required_keys:
 # content-versioning pointers that remain independent of edit history.
 
 # Optional universal top-level keys — permitted on any artifact, required
-# on none (so existing nodes don't break when the field is introduced;
-# absence is silent).
-optional_keys:
-  associated_entities:
-    # The complete, authoritative list of EVERY load-bearing entity the
-    # node's primary source(s) NAME — people, organizations, documents,
-    # events, locations — as canonical ``/{type}/{slug}`` paths, deduped
-    # (one entry per entity no matter how many quotes name it), stub even
-    # when the target node doesn't exist yet. ``scripts/build/associate.py``
-    # UNIONS these paths into the link set it harvests from body ``[`/...`]``
-    # wraps, so an entity that the source names ONLY inside a verbatim quote
-    # — which can never be wrapped (the verbatim-quote check rejects a link
-    # injected into ``quote.text``) — still reaches ``## Associated Nodes``
-    # WITHOUT depending on whether the author re-named it in the
-    # ``description`` prose. This is the mechanism that makes "the decision
-    # to ingest a source IS the relevance decision" mechanical instead of
-    # prose-contingent: see the build-protocol "name it, wrap it" contract.
-    #
-    # Scope of the list: the COMPLETE set — entities already wrapped inline
-    # in ``description`` prose ARE listed here too (the field is the single
-    # auditable record of everything the document names; associate.py dedups
-    # the overlap). The ONE carve-out: a bare ``cited_works`` / References
-    # entry is NOT an associated entity (the bibliography is an authorship-
-    # network dimension, not navigation) — only a cited author/work the
-    # source DISCUSSES in narrative prose counts. The externally-attested
-    # author AND the institution attributed to it in
-    # ``context_extrinsic.extrinsic_authorship`` (carried from the products-
-    # list attribution) ARE associated entities — ingesting that attribution
-    # is the relevance decision, so they are listed here like any other entity.
-    #
-    # Which nodes carry the field: a node that IS an ingested primary source —
-    # the node whose source body the rule enumerates. That is ``document`` /
-    # ``transcript`` / ``media`` and the ``event``-kind ``hearing`` node (which
-    # is the hearing record — its quotes come from the transcript, and it is the
-    # sole home for the full-hearing entity union). NOT a link-target node
-    # (``person`` / ``organization`` / ``location``), a synthesis node
-    # (``finding`` / ``investigation``), or an ``event`` that reconstructs an
-    # occurrence from sources that are their own nodes (``encounter`` / ``other``).
-    #
-    # Enforced by ``scripts/checks/associated_entities.py`` (only when the
-    # field is present — optional for now): each path well-formed + every
-    # prose-wrap (``description`` … ``extrinsic_authorship``) is a member (the
-    # field must be a superset of the inline wraps). Shape: a flat list of
-    # ``/{type}/{slug}`` strings. A future step makes the field REQUIRED on the
-    # source-backed types — type-level on ``document`` / ``transcript`` /
-    # ``media``, kind-conditional (``hearing`` only) on ``event`` — via the same
-    # per-type / ``target_node_kind_in`` machinery the schema already uses; until
-    # then it is optional so not-yet-required nodes hold the 0-warning baseline.
+# on none. NONE currently: ``associated_entities`` was the sole member
+# until it became REQUIRED on the source-backed types and moved into
+# ``conditional_keys`` below (the iff_section mechanism enforces both its
+# presence on those types and its absence everywhere else).
 
 # Type-conditional keys — present only on research artifacts whose
 # target_node type / archetype / kind matches the declared rule(s).
@@ -218,6 +174,58 @@ optional_keys:
 # OR encounter-event). The any-of-list grammar handles both shapes
 # uniformly.
 conditional_keys:
+  associated_entities:
+    required_when_any_of:
+      - target_node_type_in: [document, transcript, media]
+      - target_node_type_in: [event]
+        target_node_kind_in: [hearing]
+    # The complete, authoritative list of EVERY load-bearing entity the
+    # node's primary source(s) NAME — people, organizations, documents,
+    # events, locations — as canonical ``/{type}/{slug}`` paths, deduped
+    # (one entry per entity no matter how many quotes name it), stub even
+    # when the target node doesn't exist yet. ``scripts/build/associate.py``
+    # UNIONS these paths into the link set it harvests from body ``[`/...`]``
+    # wraps, so an entity that the source names ONLY inside a verbatim quote
+    # — which can never be wrapped (the verbatim-quote check rejects a link
+    # injected into ``quote.text``) — still reaches ``## Associated Nodes``
+    # WITHOUT depending on whether the author re-named it in the
+    # ``description`` prose. This is the mechanism that makes "the decision
+    # to ingest a source IS the relevance decision" mechanical instead of
+    # prose-contingent: see the build-protocol "name it, wrap it" contract.
+    #
+    # Scope of the list: the COMPLETE set — entities already wrapped inline
+    # in ``description`` prose ARE listed here too (the field is the single
+    # auditable record of everything the document names; associate.py dedups
+    # the overlap). The ONE carve-out: a bare ``cited_works`` / References
+    # entry is NOT an associated entity (the bibliography is an authorship-
+    # network dimension, not navigation) — only a cited author/work the
+    # source DISCUSSES in narrative prose counts. The externally-attested
+    # author AND the institution attributed to it in
+    # ``context_extrinsic.extrinsic_authorship`` (carried from the products-
+    # list attribution) ARE associated entities — ingesting that attribution
+    # is the relevance decision, so they are listed here like any other entity.
+    # They are reached via THIS field, never via a wrap inside the
+    # extrinsic_authorship prose: that field is structured metadata that
+    # renders nowhere and carries no ``[`/…`]`` wraps (the
+    # ``extrinsic_authorship`` check bans them).
+    #
+    # Which nodes carry the field — the ``required_when_any_of`` rule above:
+    # a node that IS an ingested primary source, the node whose source body the
+    # rule enumerates. That is ``document`` / ``transcript`` / ``media`` and the
+    # ``event``-kind ``hearing`` node (which is the hearing record — its quotes
+    # come from the transcript, and it is the sole home for the full-hearing
+    # entity union). It is FORBIDDEN (iff_section "should not be present") on a
+    # link-target node (``person`` / ``organization`` / ``location``), a
+    # synthesis node (``finding`` / ``investigation``), or an ``event`` that
+    # reconstructs an occurrence from sources that are their own nodes
+    # (``encounter`` / ``other``).
+    #
+    # iff_section enforces BOTH presence on the required set AND absence
+    # elsewhere. ``scripts/checks/associated_entities.py`` additionally
+    # validates, when present: each path well-formed, no duplicates, and every
+    # rendered-prose wrap (``description`` / ``background`` / ``top_relevance``
+    # / ``credibility_notes``) is a member (the field is a superset of the
+    # inline wraps). Shape: a flat list of ``/{type}/{slug}`` strings.
   cited_works:
     required_when_any_of:
       - target_node_type_in: [document]
@@ -336,6 +344,10 @@ conditional_keys:
     #              date, location, chair
     #   encounter: location_path, date, duration, weather,
     #              instruments_involved
+    #   other:     title (or display_title), date, location (or
+    #              location_path) — a minimal set for a weapons test /
+    #              accident / conference / exhibition; renderer skips
+    #              empty keys.
     # Every entry is a fact the primary source(s) attest. Renders
     # into the `## Event Summary` table.
   participants:

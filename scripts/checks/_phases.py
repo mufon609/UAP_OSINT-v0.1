@@ -121,7 +121,8 @@ CHECK_PHASE = {
     "location_relationships": "link",
     "media_versioning": "link",
     "naming_quirks": "link",
-    "associated_entities": "link",  # optional associated_entities field: shape + prose-wrap superset
+    "associated_entities": "link",  # associated_entities content: shape + prose-wrap superset (presence via iff_section)
+    "extrinsic_authorship": "link",  # ban link wraps inside the metadata-only field
     "cross_refs": "link",
     "cited_findings": "link",
     "contradictions": "link",

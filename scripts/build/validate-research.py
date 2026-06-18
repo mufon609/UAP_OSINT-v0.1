@@ -120,6 +120,7 @@ from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import does_not_establish as ck_does_not_establish
 from checks import entity_no_finding_or_investigation_refs as ck_entity_no_finding_or_investigation_refs
+from checks import extrinsic_authorship as ck_extrinsic_authorship
 from checks import establishes as ck_establishes
 from checks import finding_no_finding_refs as ck_finding_no_finding_refs
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
@@ -308,7 +309,8 @@ _ARTIFACT_CHECKS = [
     ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks
     ck_cross_refs,
-    ck_associated_entities,  # optional associated_entities field: shape + prose-wrap superset
+    ck_associated_entities,  # associated_entities content: shape + prose-wrap superset (presence via iff_section)
+    ck_extrinsic_authorship,  # context_extrinsic.extrinsic_authorship carries no link wraps (metadata-only)
     ck_prose_drift,
 ]
 

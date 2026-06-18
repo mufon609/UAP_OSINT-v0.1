@@ -327,6 +327,7 @@ PHASE1_SCAFFOLDS = [
     ("document social-post",       ["document", "--kind", "non-gov-doc", "--form", "social-post", "--slug", "__smoke-doc-social"]),
     ("event hearing",              ["event", "--kind", "hearing",   "--slug", "__smoke-event-hearing"]),
     ("event encounter",            ["event", "--kind", "encounter", "--slug", "__smoke-event-encounter"]),
+    ("event other",                ["event", "--kind", "other",     "--slug", "__smoke-event-other"]),
     ("transcript hearing",         ["transcript", "--kind", "hearing", "--slug", "__smoke-trans-hearing"]),
     ("media photo",                ["media", "--kind", "photo",         "--slug", "__smoke-media-photo"]),
     ("media video",                ["media", "--kind", "video",         "--slug", "__smoke-media-video"]),

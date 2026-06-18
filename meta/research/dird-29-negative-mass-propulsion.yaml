@@ -20,7 +20,7 @@ context_extrinsic:
   display_title: 'Negative Mass Propulsion — DIA Defense Intelligence Reference Document, AAWSAP, 03 January 2011'
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_29-DIRD_Negative_mass_Propulsion.pdf
   quote_attribution: 'Negative Mass Propulsion — DIA AAWSAP Defense Intelligence Reference Document, 03 January 2011'
-  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424, which shows only "Defense Intelligence Agency." The DIA-to-Congress AAWSAP products list attributes the report to Dr. F. Winterberg of the University of Nevada – Reno (attachment #36). The document''s own body does not carry the name on its face, but it intrinsically echoes that attribution: the References repeatedly cite "F. Winterberg" (entries [7], [8], [15], [17]); the Conclusion self-cites "(but also see Winterberg [17])"; and a first-person footnote in section 2 recounts the author personally meeting Prof. Bondi on a flight from Graz in 1993, consistent with single-author authorship while the byline stays FOIA-redacted. Cross-reference [`/documents/dia-aatip-products-list-2018`]. Nothing about specific reference co-authorship is asserted beyond what is visible in the body.'
+  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424, which shows only "Defense Intelligence Agency." The DIA-to-Congress AAWSAP products list attributes the report to Dr. F. Winterberg of the University of Nevada – Reno (attachment #36). The document''s own body does not carry the name on its face, but it intrinsically echoes that attribution: the References repeatedly cite "F. Winterberg" (entries [7], [8], [15], [17]); the Conclusion self-cites "(but also see Winterberg [17])"; and a first-person footnote in section 2 recounts the author personally meeting Prof. Bondi on a flight from Graz in 1993, consistent with single-author authorship while the byline stays FOIA-redacted. Nothing about specific reference co-authorship is asserted beyond what is visible in the body.'
 quotes:
 - id: q1
   added_date: '2026-06-08'
@@ -195,7 +195,7 @@ associated_entities:
 - /people/mach
 - /people/newton
 - /people/poincare
-- /people/r-forward
+- /people/robert-forward
 - /people/s-prokhovnik
 - /people/schrodinger
 - /people/uhlenbeck

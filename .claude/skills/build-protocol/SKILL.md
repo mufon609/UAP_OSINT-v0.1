@@ -203,9 +203,9 @@ An entity reaches `## Associated Nodes` by EITHER of two mechanisms, which
   this field closes. The field is the complete superset: entities already
   wrapped inline ARE listed here too, so it is the single auditable record of
   everything the node names. (`scripts/checks/associated_entities.py` enforces
-  shape + that every inline wrap is a member; the field is optional for now —
-  mandatory by build discipline, and slated to become a hard gate on the
-  source-backed types.)
+  shape + that every inline wrap is a member; the field is a HARD GATE —
+  REQUIRED on the source-backed types and forbidden elsewhere, via the schema
+  `conditional_keys` rule that `iff_section` enforces both ways.)
 
 **Which nodes carry the field.** `associated_entities` lives on a node that *is
 itself an ingested primary source* — the node whose source body the rule
@@ -242,6 +242,16 @@ engage the person. `## Associated Nodes` is auto-generated (never hand-edited)
 by `associate.py` from the inline wraps ∪ `associated_entities`;
 `prose_entity_link` (blocking check) is the narrow mechanical guard for an
 already-built entity named in prose but left unwrapped.
+
+**Coining a stub slug — reuse before you mint.** When you stub a not-yet-built
+entity, a *divergent* slug for an entity another artifact already stubbed
+(`/people/v-teofilo` vs `/people/vincent-teofilo`) splits one entity across two
+registry entries. The reuse survey sees only *built* nodes, so an unbuilt stub
+is invisible to it; `scripts/tools/stub-reconcile.py` is the read-only aid that
+closes the gap — `--name "<entity>"` at coinage to find an existing stub to
+reuse (prefer the fullest source-attested form), or the corpus sweep to surface
+candidate duplicate clusters for judgment. It is never a gate: same-surname-
+different-person is legitimate, so it surfaces candidates, never auto-merges.
 
 **Structural-framing entities — look past the substantive prose.** The
 enumeration's systematic blind spot is the source's own *framing*, not its

@@ -1,32 +1,43 @@
 """associated-entities check — research-artifact ResearchContext check.
 
-Validates the optional ``associated_entities`` top-level field: the
-complete, authoritative list of every load-bearing entity the node's
-primary source(s) name, as canonical ``/{type}/{slug}`` paths.
+Validates the ``associated_entities`` top-level field: the complete,
+authoritative list of every load-bearing entity the node's primary
+source(s) name, as canonical ``/{type}/{slug}`` paths.
 ``scripts/build/associate.py`` unions these into the ``## Associated
 Nodes`` link set it harvests from body wraps — the mechanism that lets
 an entity named ONLY inside a verbatim quote (which can never be wrapped:
 the verbatim-quote check rejects a link injected into ``quote.text``)
 reach Associated Nodes WITHOUT depending on the author re-naming it in
 ``description`` prose. See the build-protocol "name it, wrap it" contract
-and ``schema-research-artifact.yaml::optional_keys.associated_entities``.
+and ``schema-research-artifact.yaml::conditional_keys.associated_entities``.
 
-The field is OPTIONAL during the corpus-wide rollout (absence is silent,
-so existing un-swept nodes don't break — they are the C5 backlog queue).
-When the field IS present this check enforces:
+The field is REQUIRED on the source-backed types — ``document`` /
+``transcript`` / ``media`` and the ``hearing``-kind ``event`` — and
+FORBIDDEN elsewhere; both are enforced by ``iff_section`` from the schema
+``conditional_keys`` rule (the required-presence and should-not-be-present
+placement errors). This check is the field's CONTENT validator: it runs
+only when the field is present (absence is iff_section's concern) and
+enforces:
 
   1. Shape — a flat list of well-formed ``/{type}/{slug}`` strings whose
      ``{type}`` is a real content directory; no duplicates (the list is
      deduped by contract).
   2. Completeness superset — every entity a node wraps inline in its OWN
-     authored prose (``description`` / ``background`` / ``top_relevance``
-     / ``credibility_notes`` / ``extrinsic_authorship``) MUST also appear in
+     authored, RENDERED prose (``description`` / ``background`` /
+     ``top_relevance`` / ``credibility_notes``) MUST also appear in
      ``associated_entities``.
      The field is the single auditable record of everything the node
      names; an inline wrap that isn't in the field means the field is no
      longer complete. (associate.py still renders the wrap correctly via
      its body scan — this guards the field's integrity, not the rendered
      section.)
+
+     ``context_extrinsic.extrinsic_authorship`` is NOT scanned here: it is
+     structured metadata that renders nowhere, so it carries no link wraps
+     at all (the ``extrinsic_authorship`` check bans them). The externally-
+     attested redacted author + its institution ARE associated entities and
+     are listed in this field like any other entity — but reached via the
+     field, never via a wrap in the metadata prose.
 
 The fuzzy "is some quote-named institution missing from the field?"
 discovery is deliberately NOT a gate WARN here (it cannot be made
@@ -47,20 +58,20 @@ CHECK_NAME = "associated_entities"
 # Same wrap form associate.py harvests: [`/type/slug`].
 _WRAP = re.compile(r"\[`(/[^`]+)`\]")
 
-# Authored-prose fields a node may wrap entities in — every wrap must be a
-# field member (the field is the complete superset). extrinsic_authorship is
-# INCLUDED: the externally-attested author and the institution attributed to it
-# (carried from the products-list attribution) ARE associated entities —
-# ingesting that attribution is itself the relevance decision, so a wrap there
-# is a field member like any other prose wrap. There is no "redacted author
-# stays out" carve-out; the only entity a node names but does not list is a bare
-# cited_works / References citation the narrative does not discuss.
+# Authored, RENDERED prose fields a node may wrap entities in — every wrap must
+# be a field member (the field is the complete superset). All four are
+# top-level artifact keys. ``context_extrinsic.extrinsic_authorship`` is
+# deliberately ABSENT: it is structured metadata that renders nowhere, so it
+# carries no link wraps (the ``extrinsic_authorship`` check bans them). The
+# externally-attested author + its institution ARE associated entities — but
+# they are listed in the field directly, never wrapped in the metadata prose.
+# The only entity a node names but does not list is a bare cited_works /
+# References citation the narrative does not discuss.
 _PROSE_FIELDS = (
     "description",
     "background",
     "top_relevance",
     "credibility_notes",
-    "extrinsic_authorship",
 )
 
 
@@ -74,7 +85,8 @@ def _valid_path(p, valid_types):
 def check(ctx):
     data = ctx.data
     if "associated_entities" not in data:
-        return  # optional; absence is silent (C5 rollout)
+        return  # presence/absence is iff_section's concern; this check
+                # validates the field's CONTENT only when it is present
 
     ae = data.get("associated_entities")
     if not isinstance(ae, list):

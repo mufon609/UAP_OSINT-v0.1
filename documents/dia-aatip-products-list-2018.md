@@ -231,7 +231,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/steven-aftergood`]
 - [`/people/t-hufnagel`]
 - [`/people/ulf-leonhardt`]
-- [`/people/v-teofilo`]
+- [`/people/vincent-teofilo`]
 - [`/people/w-culbreth`]
 - [`/people/w-mccarthy`]
 

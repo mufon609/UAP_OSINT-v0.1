@@ -1,7 +1,7 @@
 ---
 name: internal-investigator
 description: Survey the already-archived in-repo material a node build can reuse and name the gaps that remain. Read-only — has no web tools and cannot write the manifest. Use as role 1 of a node build, before any external sourcing.
-tools: Read, Grep, Glob, Bash(python3 scripts/build/extract-source.py *), Bash(python3 scripts/tools/manifest.py *)
+tools: Read, Grep, Glob, Bash(python3 scripts/build/extract-source.py *), Bash(python3 scripts/tools/manifest.py *), Bash(python3 scripts/tools/stub-reconcile.py *)
 skills: build-protocol
 ---
 
@@ -22,6 +22,14 @@ Input: `{type}/{slug}` + scope (from the orchestrator).
    show what's archived and cited. Assemble the `linked_nodes` set + a
    one-line topic-relevance framing — downstream roles judge load-bearing-ness
    against this context, not the source alone (build-protocol → source-read-first).
+   **Unbuilt stubs count as reusable, too.** `meta/build-state.md` + the node
+   files show only BUILT nodes — but another artifact may have already coined a
+   stub for an entity this build will name, under a divergent slug
+   (`/people/v-teofilo` vs `/people/vincent-teofilo`). Run
+   `python3 scripts/tools/stub-reconcile.py` (sweep, or `--name "<entity>"` for a
+   known in-scope person/org) and carry any existing stub into the reuse set, so
+   the build reuses the coined slug instead of minting a new one — the only thing
+   that surfaces an existing UNBUILT stub (the node survey can't see it).
 2. **Re-extract reusable sources** already archived:
    `python3 scripts/build/extract-source.py --source {path}` →
    `/tmp/scratch-{basename}.txt`. For a source flagged `extraction_type:
