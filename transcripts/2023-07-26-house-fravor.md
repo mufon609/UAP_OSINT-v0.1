@@ -594,22 +594,52 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 ### People
 
 - [`/people/alex-dietrich`]
+- [`/people/alexandria-ocasio-cortez`]
+- [`/people/andrew-ogles`]
+- [`/people/andy-biggs`]
 - [`/people/christopher-mellon`]
 - [`/people/david-fravor`]
 - [`/people/david-grusch`]
+- [`/people/george-knapp`]
+- [`/people/glenn-grothman`]
 - [`/people/helene-cooper`]
+- [`/people/jamie-raskin`]
+- [`/people/jared-moskowitz`]
 - [`/people/jay-stratton`]
+- [`/people/john-kirby`]
 - [`/people/leslie-kean`]
 - [`/people/luis-elizondo`]
+- [`/people/matt-gaetz`]
+- [`/people/maxwell-frost`]
+- [`/people/nancy-mace`]
+- [`/people/nick-langworthy`]
 - [`/people/ralph-blumenthal`]
+- [`/people/robert-garcia`]
 - [`/people/ryan-graves`]
 - [`/people/steve-justice`]
+- [`/people/tim-burchett`]
 - [`/people/tom-delonge`]
 
 ### Organizations
 
+- [`/organizations/aatip`]
 - [`/organizations/carrier-airwing-eleven`]
+- [`/organizations/darpa`]
+- [`/organizations/dod`]
+- [`/organizations/doe`]
+- [`/organizations/history-channel`]
+- [`/organizations/house-armed-services-committee`]
+- [`/organizations/mufon`]
+- [`/organizations/norad`]
+- [`/organizations/nsc`]
+- [`/organizations/project-blue-book`]
+- [`/organizations/the-new-york-times`]
 - [`/organizations/ttsa`]
+- [`/organizations/united-states-house-of-representatives`]
+- [`/organizations/united-states-marine-corps`]
+- [`/organizations/united-states-naval-academy`]
+- [`/organizations/united-states-senate`]
+- [`/organizations/university-of-houston`]
 - [`/organizations/us-navy`]
 - [`/organizations/uss-nimitz`]
 - [`/organizations/uss-princeton`]
@@ -619,7 +649,32 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/events/2004-nimitz-encounter`]
 - [`/events/2023-07-26-house-uap-hearing`]
+- [`/events/phoenix-lights`]
 
 ### Documents
 
+- [`/documents/ndaa`]
+- [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
+- [`/documents/unofficial-official-report`]
+- [`/documents/whistleblower-protection-act`]
 - [`/documents/written-testimony-fravor-2023`]
+
+### Media
+
+- [`/media/breaking-area-51`]
+- [`/media/flir1-video`]
+
+### Locations
+
+- [`/locations/barry-goldwater-range`]
+- [`/locations/california`]
+- [`/locations/east-coast`]
+- [`/locations/eglin-afb`]
+- [`/locations/gulf-of-mexico`]
+- [`/locations/hawaii`]
+- [`/locations/luke-afb`]
+- [`/locations/pacific-ocean`]
+- [`/locations/phoenix-arizona`]
+- [`/locations/roswell-new-mexico`]
+- [`/locations/san-diego-california`]
+- [`/locations/south-carolina`]
