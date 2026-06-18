@@ -272,9 +272,7 @@ types:
       - Preserved Disagreements
       - Name Variants
       - References
-      - Reproduced Datasets
     # Source-Form Notes / Preserved Disagreements / Name Variants / References
-    # / Reproduced Datasets
     # are rendered conditionally by the renderer from artifact-side content:
     # Source-Form Notes / Preserved Disagreements / Name Variants from
     # ``naming_quirks`` entries with resolution preserve-as-sic-in-quotes /
@@ -288,11 +286,6 @@ types:
     # frontmatter gate, so no conditionally_required entry; the
     # optional_sections list declares acceptability (mirrors the finding
     # type, and matches renderer EMITS via renderer-coverage.py).
-    # Reproduced Datasets renders from artifact-side ``reproduced_datasets``
-    # (a bulk table the source reproduces — e.g. an appendix case index —
-    # surfaced as a summary + a link to its CSV data sibling; auto-suppressed
-    # when the field is absent). See ``schema-research-artifact.yaml``::
-    # optional_keys.reproduced_datasets.
     section_rules:
       Key Passages: {requires_quote_attribution: true}
 
@@ -654,7 +647,7 @@ manifest_entry:
 artifact_entry:
   required: [format, path, archived_date]
   optional: [extraction_type, transcript_provenance, note]
-  format_values: [pdf, html, txt, audio, image, video, transcript, yaml, md, csv]
+  format_values: [pdf, html, txt, audio, image, video, transcript, yaml, md]
   # `yaml` and `md` were added for the speaker-attribution sibling pair
   # (see meta/schema-speaker-attribution.yaml + /prepare-transcript-sibling):
   #   - yaml — the {slug}-attribution.yaml sibling, source-of-truth for

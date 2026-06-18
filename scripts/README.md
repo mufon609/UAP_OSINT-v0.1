@@ -132,7 +132,6 @@ descriptions.
 | `help-check.sh` | Confirms every `scripts/{build,tools}/*.py --help` exits 0 with no traceback — catches syntax errors, import errors, and argparse regressions. |
 | `skills-check.sh` | Lint for the `.claude/` toolkit surface (skills, subagents, settings): frontmatter shape (`description:` on every SKILL.md, `name:`+`description:` on every agent), topic-neutrality (no skill/agent body hard-codes this instance's topic token — read dynamically from `meta/topic/overview.md`, so `.claude/` survives `/fork-init`), and `settings.json` validity. |
 | `test_stopwords.py` | `STOPWORDS` shape + content-word regression test. |
-| `test_reproduced_datasets.py` | Regression guard for the `reproduced_datasets` check — silent when the field is absent; fires on shape / required-field / duplicate-id errors and on a `source.path` or CSV `dataset_path` that is unregistered, missing on disk, or row-count-mismatched. |
 | `smoke.py` | Fixture-based `new.py` + validator smoke tests (single-process; `ProcessPoolExecutor` over fork). |
 | `file-size-check.sh` | Warn 50MB / error 100MB on git-tracked files (per `meta/sources-access.md` large-file discipline). |
 | `scratch-hygiene.sh` | Verify `.scratch/` tier structure and that every entry is referenced-or-fresh — no stray top-level entry and no unreferenced entry older than the grace window. |

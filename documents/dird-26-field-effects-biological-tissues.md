@@ -378,21 +378,6 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ---
 
-## Reproduced Datasets
-
-Bulk tabular data the source reproduces wholesale (appendix indices, catalogs, frequency tables), captured as a queryable CSV data sibling — the catalog linked as one object, not exploded into per-row entity links. The row data lives in the linked file.
-
-### Appendix B — Green/Morris ICD Case Index
-
-A reproduced case index — the document's "Green/Morris Example to Show the Global Breadth of Available Older ICD Case Inputs From Multiple Data Sources" — of 96 numbered UFO close-encounter cases (the listed rows span 1952–1971), each row carrying a date and the country / US-state and locality of the case. Captured here as a CSV data sibling: its case localities are catalog rows the document's argument does not engage individually, so they live in this dataset rather than exploded into the node's Associated Nodes link layer.
-
-- **Rows:** 96
-- **Columns:** case_no, date, country_or_us_state, locality, entry_verbatim
-- **Source:** Appendix B (Green/Morris ICD Case Index)
-- **Data:** [government/dird-26-field-effects-human-biological-tissues-2010-appendix-b-case-index.csv](../sources/government/dird-26-field-effects-human-biological-tissues-2010-appendix-b-case-index.csv)
-
----
-
 ## Associated Nodes
 
 ### People

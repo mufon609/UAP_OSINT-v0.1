@@ -181,27 +181,6 @@ optional_keys:
     # a flat list of ``/{type}/{slug}`` strings. (A future step makes the
     # field REQUIRED on document / transcript / media once the existing
     # corpus is swept.)
-  reproduced_datasets:
-    # Bulk structured datasets the primary source REPRODUCES wholesale — a
-    # case index, a frequency table, any tabular catalog carried in an
-    # appendix — captured as a queryable CSV "data sibling" under
-    # ``sources/`` rather than EXPLODED into per-row entity links. This is
-    # the references-stay-alone carve-out applied to a reproduced table: the
-    # citing node links the catalog/dataset as ONE thing (and lists the
-    # catalog's distinct source work in ``associated_entities`` when there is
-    # one), while the row data — including any place column — lives in the
-    # CSV. A reproduced 96-row case index is the place-analogue of a
-    # bibliography: its localities are catalog rows the document's argument
-    # never engages, so they belong in the data sibling, not exploded into
-    # ``## Associated Nodes``. This is relocation, not relevance filtering.
-    #
-    # Optional / absence-silent. When present, a flat list of
-    # ``reproduced_dataset_entry`` (shape below). Renders the
-    # ``## Reproduced Datasets`` section (one summary + a link to the CSV per
-    # entry). Enforced by ``scripts/checks/reproduced_datasets.py``: shape +
-    # required fields, ``source.path`` registered in the manifest, and the
-    # ``dataset_path`` CSV present on disk + parseable (``row_count`` matched
-    # when given).
 
 # Type-conditional keys — present only on research artifacts whose
 # target_node type / archetype / kind matches the declared rule(s).
@@ -1270,28 +1249,6 @@ cited_work_entry:
   #   "p. 56, References").
   # No `note` / `significance` / free-prose field by design — bibliographic
   # facts + the verbatim anchor only.
-
-reproduced_dataset_entry:
-  required: [id, title, description, dataset_path, source]
-  optional: [row_count, columns]
-  # id: unique within the artifact's reproduced_datasets list.
-  # title: display name of the dataset as the source labels it, e.g.
-  #   "Appendix B — Green/Morris ICD Case Index". Rendered as the H3.
-  # description: one- or two-sentence prose summary of what the dataset
-  #   contains and where it sits in the source (the reader-visible blurb
-  #   under the H3).
-  # dataset_path: path under sources/ to the CSV data sibling (registered in
-  #   sources/manifest.yaml, format: csv). Same-directory-as-parent
-  #   convention with a descriptive stem suffix (a source may reproduce more
-  #   than one dataset). The renderer links it as
-  #   [`sources/{dataset_path}`](../sources/{dataset_path}) — a file link,
-  #   NOT a [`/type/slug`] wrap, so it never enters ## Associated Nodes.
-  # source: object with path + location (path in manifest; location anchors
-  #   the dataset within the primary source, e.g. "Appendix B, pp. 25-26").
-  # row_count: optional integer — the CSV's data-row count; when set, the
-  #   check confirms it matches the CSV on disk (a transcription guard).
-  # columns: optional list of the CSV's column headers, for at-a-glance
-  #   schema discovery.
 
 # --- Validation invariants (enforced by scripts/build/validate-research.py) ---
 

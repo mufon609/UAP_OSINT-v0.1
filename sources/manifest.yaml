@@ -1063,15 +1063,6 @@
     archived_date: '2026-05-23'
     note: 'Clean-text sibling of the OCR-scanned DIRD Black Vault #26 (Anomalous Acute and Subacute Field Effects on Human Biological Tissues). Produced 2026-05-23 via multimodal page-image read of all 39 pages; independently verified 2026-05-23 by a separate agent session — PASS (one Appendix-B item-30 location discrepancy, ITALY/ISOLA->VENEZUELA/VALENCIA, caught and corrected before registration). The Black Vault declassification-distribution insert (physical page 2) is preserved verbatim. Equations/figures and the rotated low-res Appendix-C data matrix (pp. 29-31) are bracketed/flagged; redactions (b)(6)/(b)(3):10 USC 424, source spellings, and source typos (e.g. ''1054'', ''parasthesiae'') preserved verbatim.'
   archive_status: 1
-- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_26-DIRD_Anomalous_Acute_and_Subacute_Field_Effects_on_Human_Biological_Tissues.pdf#reproduced-data-appendix-b-case-index
-  status: archived
-  wayback_skip: true
-  artifacts:
-  - format: csv
-    path: government/dird-26-field-effects-human-biological-tissues-2010-appendix-b-case-index.csv
-    archived_date: '2026-06-17'
-    note: 'Reproduced dataset: Appendix B ''Green/Morris ICD Case Index'' from DIRD-26 — 96 UFO-case rows (columns: case_no, date, country_or_us_state, locality, entry_verbatim). Transcribed from the verified clean-text sibling and independently verified row-for-row 2026-06-17; entry_verbatim is the fidelity anchor.'
-  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_27-DIRD_Laser_Lightcraft_Nanosatellites.pdf
   status: archived
   artifacts:

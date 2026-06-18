@@ -122,7 +122,6 @@ CHECK_PHASE = {
     "media_versioning": "link",
     "naming_quirks": "link",
     "associated_entities": "link",  # optional associated_entities field: shape + prose-wrap superset
-    "reproduced_datasets": "link",  # optional reproduced_datasets field: shape + manifest/CSV-sibling presence
     "cross_refs": "link",
     "cited_findings": "link",
     "contradictions": "link",
