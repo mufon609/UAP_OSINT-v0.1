@@ -213,14 +213,63 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/birkeland`]
+- [`/people/chambers`]
 - [`/people/graham-hancock`]
 - [`/people/jacques-vallee`]
 - [`/people/james-ryder`]
+- [`/people/joan-of-arc`]
+- [`/people/jung`]
 - [`/people/lawrence-lucis-trust-moderator`]
+- [`/people/lee-blackburn`]
+- [`/people/stephen-phillips`]
 
 ### Organizations
 
+- [`/organizations/advanced-technology-center`]
 - [`/organizations/institute-for-venture-science`]
 - [`/organizations/international-science-foundation`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/lockheed-martin-space-systems-company`]
+- [`/organizations/lucis-trust`]
+- [`/organizations/lucis-trust-arcane-school`]
+- [`/organizations/max-planck-institute`]
 - [`/organizations/safire-project`]
+- [`/organizations/storm-and-tornado-research-organization`]
+- [`/organizations/wikipedia`]
+
+### Events
+
+- [`/events/first-world-war`]
+- [`/events/rendlesham-forest-incident`]
+
+### Documents
+
+- [`/documents/the-bible`]
+
+### Locations
+
+- [`/locations/andromeda`]
+- [`/locations/arizona`]
+- [`/locations/australia`]
+- [`/locations/central-america`]
+- [`/locations/chauvet`]
+- [`/locations/china`]
+- [`/locations/dordogne`]
+- [`/locations/earth`]
+- [`/locations/egypt`]
+- [`/locations/england`]
+- [`/locations/fatima`]
+- [`/locations/france`]
+- [`/locations/geneva`]
+- [`/locations/glastonbury`]
+- [`/locations/ireland`]
+- [`/locations/lourdes`]
+- [`/locations/pyrenees`]
+- [`/locations/scotland`]
+- [`/locations/south-africa`]
+- [`/locations/south-america`]
+- [`/locations/sun`]
+- [`/locations/united-states`]
+- [`/locations/utah`]
+- [`/locations/york`]
