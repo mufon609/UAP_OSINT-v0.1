@@ -51,9 +51,11 @@ source:
 - **Documents / events / locations** — a referenced work the prose *discusses as
   a work* (not merely lists) is a `/documents/` node; a named event a
   `/events/` node; a named place a `/locations/` node. A place is linked when the
-  body names it free-standing — in prose, a table location column, a figure
-  caption, or the address block — even an incidental locative ("the lab in
-  Malibu, CA", "efforts in Japan"), AND a named celestial body used as a concrete
+  body names it free-standing — in prose, a substantive argument table's
+  location column, a figure caption, or the address block (NOT a row of a
+  wholesale-reproduced bulk catalog — see the carve-out below) — even an
+  incidental locative ("the lab in Malibu, CA", "efforts in Japan"), AND a named
+  celestial body used as a concrete
   referent (Earth, the Moon, Mars, the Sun, a named star / nebula as a mission
   destination). Two place-specific exclusions on top of the carve-outs below: a
   place that appears ONLY as a sub-string of an organization's proper name
@@ -83,6 +85,17 @@ quote text), so without this field they vanish from `## Associated Nodes`.
   reference [37] that appears only in the numbered list is not). The document's
   own author (incl. a redacted author attributed via the products list) is NOT a
   bare citation — it is in.
+- **Reproduced bulk catalog / dataset.** When the source *reproduces an external
+  dataset wholesale* — an appendix case index, a frequency table, any data dump
+  presented as a single exhibit drawn from outside sources — its individual rows
+  are NOT exploded into per-row links, exactly as a `## References` list is not.
+  The data stays in the archived source (and its OCR / clean-text sibling) — the
+  integrity guarantee, so nothing is lost. Link only the entities the document's
+  own *narrative* engages, plus the catalog itself if a discrete named work
+  (`/documents/`). This does NOT cover a *substantive argument table* (a results
+  / limits / spec table the analysis discusses row-by-row) — those named entities
+  ARE in scope. The test: does the argument *engage the rows*, or treat the table
+  as a *wholesale-reproduced exhibit*?
 - **No host node-type.** Drop a named thing ONLY when the schema has no node type
   to host it — a bare material/alloy, a device/product/vehicle MODEL, a named
   algorithm/software with no `/documents/` discussion, or an **eponym-only

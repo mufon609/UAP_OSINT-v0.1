@@ -122,9 +122,14 @@ uncommitted work).
 
 ## Scope notes
 
-- **References stay alone.** Do not explode the `cited_works` / `## References`
-  list into per-citation links — only a cited author/work the narrative
-  *discusses* becomes an entity (the producer/verifier enforce this carve-out).
+- **References — and a reproduced bulk catalog — stay alone.** Do not explode the
+  `cited_works` / `## References` list into per-citation links — only a cited
+  author/work the narrative *discusses* becomes an entity. The same holds for a
+  dataset the source reproduces *wholesale* (an appendix case index, a frequency
+  table): its rows are not exploded into per-row links — link the catalog as a
+  `/documents/` node (if a discrete work) plus the narrative-engaged entities; the
+  rows live in the archived source / sibling (the producer/verifier enforce this
+  carve-out).
 - **Redacted / externally-attested author + attributed institution** — the
   author and the institution named in `context_extrinsic.extrinsic_authorship`
   (carried from the products-list attribution) ARE associated entities and go in

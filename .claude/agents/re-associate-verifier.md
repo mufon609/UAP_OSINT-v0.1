@@ -41,7 +41,11 @@ reasoning — the independence is the discipline. Read the `description` + every
   the pass exists to kill, so hunt for it deliberately.
 - **Over-inclusion.** Flag any producer entry that violates a carve-out: a bare
   reference-list-only citation (named in `## References` but NOT discussed in
-  narrative), an entity the source does not actually name, or a "named thing"
+  narrative); a per-row entity of a **wholesale-reproduced bulk catalog / dataset**
+  (an appendix case index, a frequency table) exploded into per-row links — the
+  place-analogue of the bibliography, so link only the narrative-engaged entities
+  (plus the catalog as a `/documents/` node), never its rows; an entity the
+  source does not actually name; or a "named thing"
   the schema has no node-type to host (a material/device/vehicle model; or an
   **eponym-only namesake** — a person named only inside a principle / effect /
   equation / lens / projection or a device/vehicle/artifact name, e.g. "Fermat's

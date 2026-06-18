@@ -212,8 +212,14 @@ quote; (2) a bare `## References` / `cited_works` entry is not exploded into
 per-citation links — the bibliography is an authorship-network dimension, not
 navigation — UNLESS that work / author is *also* discussed in argument prose (a
 discussed cited author is a `/people/` entity; a discussed work is a
-`/documents/` node). The same discussed-vs-label line governs an **eponymous
-term**: a person named ONLY as the namesake of a principle / effect / equation /
+`/documents/` node). The same not-exploded treatment covers a **reproduced bulk
+catalog / dataset** — a case index, a frequency table, any external dataset the
+source reproduces *wholesale* as a single exhibit (vs. a substantive argument
+table the analysis engages row-by-row): its rows are not exploded into per-row
+links; the data stays in the archived source / sibling (the integrity
+guarantee), and only the narrative-engaged entities — plus the catalog itself,
+if a discrete named work → `/documents/` — are linked. The same
+discussed-vs-label line governs an **eponymous term**: a person named ONLY as the namesake of a principle / effect / equation /
 lens / projection — or of a device / vehicle / artifact ("Maxwell's fish-eye
 lens", "the Horten VIII", a "Loedding Flying Disc" drawing) — is NOT a `/people/`
 entity when they neither act in the narrative nor are a discussed cited author;
