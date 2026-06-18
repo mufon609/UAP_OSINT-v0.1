@@ -302,34 +302,80 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 ### People
 
+- [`/people/brad-sparks`]
+- [`/people/chris-sharp`]
 - [`/people/colm-kelleher`]
 - [`/people/david-grusch`]
 - [`/people/eric-davis`]
 - [`/people/george-knapp`]
 - [`/people/harry-reid`]
+- [`/people/jacques-vallee`]
 - [`/people/james-lacatski`]
 - [`/people/jeremy-corbell`]
+- [`/people/jim-bell`]
+- [`/people/john-keel`]
+- [`/people/kit-green`]
 - [`/people/luis-elizondo`]
+- [`/people/rick-doty`]
 - [`/people/robert-bigelow`]
+- [`/people/sasha`]
+- [`/people/sean-kirkpatrick`]
+- [`/people/whitley-strieber`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
 - [`/organizations/aatip`]
 - [`/organizations/aawsap`]
+- [`/organizations/afosi`]
+- [`/organizations/aoimsg`]
 - [`/organizations/baass`]
 - [`/organizations/bigelow-aerospace`]
+- [`/organizations/cia`]
+- [`/organizations/congress`]
 - [`/organizations/dhs`]
 - [`/organizations/dia`]
 - [`/organizations/dod`]
+- [`/organizations/nasa`]
+- [`/organizations/norad`]
+- [`/organizations/nsa`]
+- [`/organizations/ousd-is`]
+- [`/organizations/project-blue-book`]
+- [`/organizations/the-new-york-times`]
+- [`/organizations/uaptf`]
+- [`/organizations/uss-nimitz`]
+- [`/organizations/uss-princeton`]
 - [`/organizations/weaponized-podcast`]
+
+### Events
+
+- [`/events/1957-rb-47-encounter`]
+- [`/events/2004-nimitz-encounter`]
+- [`/events/2011-capitol-craft-of-unknown-origin-meeting`]
+- [`/events/raf-lakenheath-encounter`]
 
 ### Documents
 
 - [`/documents/dird-01-metallic-glasses`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/operation-trojan-horse-keel`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
 
 ### Transcripts
 
 - [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]
+
+### Locations
+
+- [`/locations/brazil`]
+- [`/locations/capitol-hill`]
+- [`/locations/earth`]
+- [`/locations/louisiana`]
+- [`/locations/new-york`]
+- [`/locations/raf-lakenheath`]
+- [`/locations/skinwalker-ranch`]
+- [`/locations/south-america`]
+- [`/locations/texas`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
+- [`/locations/wright-patterson-afb`]
