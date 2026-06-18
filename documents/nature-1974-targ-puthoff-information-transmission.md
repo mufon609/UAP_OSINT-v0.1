@@ -196,13 +196,36 @@ Reference list carried by the source document, transcribed verbatim (source spel
 ### People
 
 - [`/people/bonnar-cox`]
+- [`/people/charles-tart`]
+- [`/people/david-galin`]
+- [`/people/dean-brown`]
+- [`/people/earle-jones`]
 - [`/people/edgar-mitchell`]
 - [`/people/hal-puthoff`]
+- [`/people/jean-mayo`]
 - [`/people/judith-skutch`]
+- [`/people/k-osis`]
 - [`/people/pat-price`]
+- [`/people/robert-ornstein`]
 - [`/people/russell-targ`]
+- [`/people/s-siegel`]
 - [`/people/uri-geller`]
 
 ### Organizations
 
+- [`/organizations/ampex`]
+- [`/organizations/electronics-and-bioengineering-laboratory`]
+- [`/organizations/foundation-for-parasensory-investigation`]
+- [`/organizations/grass`]
+- [`/organizations/information-science-and-engineering-division`]
+- [`/organizations/institute-of-noetic-sciences`]
+- [`/organizations/langley-porter-neuropsychiatric-institute`]
 - [`/organizations/stanford-research-institute`]
+- [`/organizations/university-of-california`]
+
+### Locations
+
+- [`/locations/california`]
+- [`/locations/menlo-park-california`]
+- [`/locations/new-york-city`]
+- [`/locations/san-francisco-bay-area`]
