@@ -29,7 +29,7 @@ _Page citations (`p. N`) are physical / PDF-viewer pages — the Nth page of the
 
 The document is the Senate-passed bill text with line-by-line revisions. The §9003(13) NON-HUMAN INTELLIGENCE definition — "any sentient intelligent non-human lifeform regardless of nature or ultimate origin" — is preserved without revisions. Revisions to the disclosure machinery include: "confirmed" inserted before "unidentified anomalous phenomena" at the §9002(a) findings; replacement of the independent UAP Records Review Board with the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) (AARO) at §9005(b)(1) and §9005(c)(2)(H); addition of §9006(3) Senior Agency Official authority to withdraw records "not related to unidentified anomalous phenomena and properly classified"; "all unclassified" inserted at §9004(a)(1)(C), restricted to "all unclassified U.S. Government, Government provided, or Government funded agency records"; replacement of "shall" with "should" at §9010(a) eminent domain; replacement of §9006(2) personal privacy language with the broader Privacy Act of 1974 (5 U.S.C. § 552a); and §9005(c)(2)(H) revised so agency transmission of records to the Office of the Director of National Intelligence ([`/organizations/odni`]) goes "via the All-domain Anomaly Resolution Office".
 
-Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis ([`/news/douglas-johnson-uapda-pentagon-rewrite-20240724`]), the OUSD(I&S) document was transmitted to congressional negotiators on Capitol Hill in late November 2023, in the final stages of negotiations over what UAP language would survive in the final FY 2024 NDAA. The Department's advice was largely heeded: the final enacted language reflected the Department's basic viewpoint on major points, although not on every detail. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), Director of AARO at the time, in a July 17, 2024 interview with Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) cited in the Johnson analysis: "we convinced Congress last year not to go down that road". Kirkpatrick by email to Johnson: "No one from the White House, EOP [Executive Office of the President], NSC [National Security Council], or any other 'higher authority' called me or my boss to put pressure on me to soften my position on the UAPDA."
+Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis ([`/documents/douglas-johnson-uapda-pentagon-rewrite-20240724`]), the OUSD(I&S) document was transmitted to congressional negotiators on Capitol Hill in late November 2023, in the final stages of negotiations over what UAP language would survive in the final FY 2024 NDAA. The Department's advice was largely heeded: the final enacted language reflected the Department's basic viewpoint on major points, although not on every detail. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), Director of AARO at the time, in a July 17, 2024 interview with Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) cited in the Johnson analysis: "we convinced Congress last year not to go down that road". Kirkpatrick by email to Johnson: "No one from the White House, EOP [Executive Office of the President], NSC [National Security Council], or any other 'higher authority' called me or my boss to put pressure on me to soften my position on the UAPDA."
 
 ---
 
@@ -189,14 +189,80 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ### People
 
+- [`/people/chuck-schumer`]
 - [`/people/douglas-johnson`]
+- [`/people/jake-sullivan`]
+- [`/people/joe-biden`]
+- [`/people/kathleen-hicks`]
+- [`/people/kayla-guo`]
 - [`/people/marik-von-rennenkampff`]
+- [`/people/mike-rounds`]
+- [`/people/ronald-moultrie`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/tonya-wilkerson`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/air-force-office-of-special-investigations`]
+- [`/organizations/american-historical-association`]
+- [`/organizations/atomic-energy-commission`]
+- [`/organizations/cia`]
+- [`/organizations/congress`]
+- [`/organizations/department-of-energy`]
+- [`/organizations/department-of-the-air-force`]
+- [`/organizations/department-of-the-army`]
+- [`/organizations/department-of-the-navy`]
+- [`/organizations/department-of-war-historical`]
+- [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/energy-research-and-development-administration`]
+- [`/organizations/eop`]
+- [`/organizations/faa`]
+- [`/organizations/fbi`]
+- [`/organizations/federal-acquisition-service`]
+- [`/organizations/general-services-administration`]
+- [`/organizations/house-oversight`]
 - [`/organizations/isoo`]
+- [`/organizations/library-of-congress`]
+- [`/organizations/manhattan-project`]
 - [`/organizations/nara`]
+- [`/organizations/nasa`]
+- [`/organizations/national-academy-of-sciences`]
+- [`/organizations/national-declassification-center`]
+- [`/organizations/national-security-program-office`]
+- [`/organizations/nga`]
+- [`/organizations/noaa`]
+- [`/organizations/nro`]
+- [`/organizations/nsa`]
+- [`/organizations/nsc`]
 - [`/organizations/odni`]
+- [`/organizations/office-of-government-ethics`]
+- [`/organizations/office-of-strategic-services`]
 - [`/organizations/ousd-is`]
+- [`/organizations/senate`]
+- [`/organizations/senate-armed-services-committee`]
+- [`/organizations/senate-homeland-security-governmental-affairs-committee`]
+- [`/organizations/the-new-york-times`]
+- [`/organizations/uap-records-review-board`]
+- [`/organizations/white-house`]
+
+### Documents
+
+- [`/documents/atomic-energy-act-1954`]
+- [`/documents/douglas-johnson-uapda-pentagon-rewrite-20240724`]
+- [`/documents/eo-13526`]
+- [`/documents/freedom-of-information-act`]
+- [`/documents/jfk-assassination-records-collection-act`]
+- [`/documents/ndaa-fy2022`]
+- [`/documents/ndaa-fy2023`]
+- [`/documents/ndaa-fy2024`]
+- [`/documents/ndaa-fy2025`]
+- [`/documents/nyt-congress-orders-ufo-records-released-2023`]
+- [`/documents/privacy-act-1974`]
+- [`/documents/uap-disclosure-act-2024`]
+
+### Locations
+
+- [`/locations/capitol-hill`]
+- [`/locations/united-states`]
