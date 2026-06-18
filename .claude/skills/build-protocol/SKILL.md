@@ -203,8 +203,22 @@ An entity reaches `## Associated Nodes` by EITHER of two mechanisms, which
   this field closes. The field is the complete superset: entities already
   wrapped inline ARE listed here too, so it is the single auditable record of
   everything the node names. (`scripts/checks/associated_entities.py` enforces
-  shape + that every inline wrap is a member; the field is optional during the
-  corpus-wide rollout, mandatory by build discipline — see `meta/BACKLOG.md` C5.)
+  shape + that every inline wrap is a member; the field is optional for now —
+  mandatory by build discipline, and slated to become a hard gate on the
+  source-backed types.)
+
+**Which nodes carry the field.** `associated_entities` lives on a node that *is
+itself an ingested primary source* — the node whose source body the rule
+enumerates: a `document`, `transcript`, or `media` node, and an `event`-kind
+`hearing` node (which *is* the hearing record — its quotes come from the
+transcript, and it is the sole home for the full-hearing entity union, the
+per-witness transcript nodes carrying only their own slice). It does NOT live on
+a node that is a link *target* or a synthesis of other sources: `person` /
+`organization` / `location` (the entities other nodes link *to*), `finding` /
+`investigation` (multi-source synthesis), or an `event` that *reconstructs* an
+occurrence from sources that are their own nodes (`encounter`; the `other` kind —
+a test, conference, disaster). The test is single: does the node *ingest* a
+source, or *reference* one?
 
 **Two carve-outs only:** (1) verbatim `quote.text` is never wrapped — a
 quote-named entity is carried by `associated_entities`, never by editing the

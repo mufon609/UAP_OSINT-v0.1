@@ -207,9 +207,9 @@ source body, not only what a node surfaced into its `description` / `quotes` —
 reaches `## Associated Nodes`, with no "node-worthy / topically-relevant /
 source-body-vs-extrinsic / illustrative" filter. Codified in build-protocol
 ("Linking — ingest is the relevance decision"), the worker / builder / auditor
-roles. The
-mechanism is the `associated_entities` artifact field — the complete, deduped
-superset of every source-named entity (entities already wrapped inline in prose
+roles. The mechanism is the `associated_entities` artifact field — the complete,
+deduped superset of every source-named entity (entities already wrapped inline in
+prose
 are listed here too) — unioned into `## Associated Nodes` by `associate.py` and
 validated by `scripts/checks/associated_entities.py`. It exists because an entity
 named only inside a verbatim quote can't be wrapped (the verbatim check rejects a
@@ -237,38 +237,24 @@ detail; this is the summary):
 - Locations and events are first-class associated entities, linked under the same
   full-source-scope rule as people / organizations — there is NO places
   carve-out (only the universal "no host node-type" one, e.g. a generic
-  geographic scale-word like "space"). The early C4 batches were run with places
-  held out and have since been backfilled — every entity-swept node now carries
-  its `/locations/`; new sweeps link places from the start (the producer
-  enumerates them, the verifier and auditor hunt for them).
+  geographic scale-word like "space").
 
-**Status — the corpus sweep is COMPLETE.** Every source-backed node
-(`document` / `transcript` / `media` + the hearing-`event` union nodes) carries
-`associated_entities`. The one-time backfill is done; the field is now owned at
-ingest by the build pipeline (the builder populates it, the auditor verifies
-completeness), so a new source is honest from the start. Link-layer maintenance
-on a built node routes through `/audit` (the auditor flags under-linking) +
-`/augment` (applies the fix); the dedicated backfill skill that ran the sweep is
-retired.
-
-**One thing remains:**
-
-**Flip the field to required.** Make `associated_entities` REQUIRED on the
-source-backed target types (error on absence in `associated_entities.py` /
-`artifact_top_level.py`) — the final mechanical lock that turns "mandatory by
-build discipline" into "mandatory by gate." Blocked by C11: the exact
-required-type set (whether hearing-`event` nodes join `document` / `transcript` /
-`media`) must be settled first. Until the flip, the field stays optional so any
-not-yet-required type holds the 0-warning clean baseline.
+**Remaining work — flip the field to required.** Make `associated_entities`
+REQUIRED on the source-backed types — type-level on `document` / `transcript` /
+`media` (mirroring `description_required`, enforced in `artifact_top_level.py`),
+kind-conditional on `event` (`hearing` only, NOT `encounter` / `other`) via the
+schema's existing `target_node_kind_in` grammar. Error on absence — the final
+lock that turns "mandatory by build discipline" into "mandatory by gate." The
+scope it locks is defined in the build-protocol "Linking" contract and the schema
+`associated_entities` comment. Until the flip, the field stays optional so a
+not-yet-required node holds the 0-warning baseline.
 
 **Blocks:** none.
-**Blocked by:** C11 (the events-in-scope question must settle the required-type
-set before the flip-to-required).
-**Related:** C3 (the `extrinsic_authorship`-not-rendered gap on redacted-author
-nodes); C5 (duplicate stub slugs the sweep surfaced); C7 (the build-time `other`
-event-kind plumbing this sweep's event stubs need); C8 (the source-backed scope),
-C11 (the events-in-scope question gating the flip-to-required). The principle is
-the [[link-all-load-bearing-references]] working-memory note.
+**Blocked by:** none.
+**Related:** C3 (the `extrinsic_authorship` rendering question on redacted-author
+nodes); C5 (duplicate stub slugs); C7 (the `other` event-kind plumbing — `other`
+events are out of the required set, so it and this flip are independent). The
+principle is the [[link-all-load-bearing-references]] working-memory note.
 
 ### C5 — Dedupe stub slugs that name the same entity across artifacts
 
@@ -324,75 +310,3 @@ so this is unblocked build-time plumbing, not a content change.
 **Blocks:** building any of the above event stubs.
 **Blocked by:** none.
 **Related:** C4 (the entity sweep that mints these event stubs).
-
-### C8 — Encode the `associated_entities` scope: source-backed nodes only
-
-**The issue.** No surface defines *which* node types the field applies to (the
-now-retired `/re-associate` skill had framed its job as "every pre-rule node");
-the build-protocol "Linking" contract, the build agents, and the schema likewise
-never state it. A parallel C4 session was consequently
-mis-assigned 10 person nodes (plus orgs, a location, findings, an investigation)
-— none an ingested source, so "ingest is the relevance decision" has no
-ingestion unit for them. Caught only by the owner's question, not by any surface.
-
-**The work.** State the scope where the rule lives: the field's subject is a node
-that **IS an ingested primary source** — `document` / `transcript` / `media` +
-hearing-`event` nodes (the full-hearing union home). OUT: `person` /
-`organization` / `location` (link *targets*), `finding` / `investigation`
-(synthesis), and encounter-`event` nodes (reconstruction, no single source body).
-Encode in the build-protocol "Linking — ingest is the relevance decision"
-contract and the schema's `associated_entities` comment. Prose/contract encoding
-only — a mechanical scope gate was considered and dropped (premature while the
-field stays optional during rollout).
-
-**Blocks:** none.
-**Blocked by:** none.
-**Related:** C4 (the sweep this scope governs); the build-protocol "Linking"
-contract (where the scope statement belongs); [[c4-sweep-scope-source-backed-nodes]].
-
-### C10 — Tune `coverage-suggest.py` to surface framing entities
-
-**The issue.** `coverage-suggest.py` — the one mechanical completeness aid —
-frequency-ranks capitalized tokens (top-N) and skips heading/boilerplate
-paragraphs. So a once-named convening city ("Washington") or a title-page
-conducting body ("COMMITTEE ON OVERSIGHT") is buried under high-frequency noise
-("Thank", "Audience") or skipped as front-matter — exactly the structural-framing
-entities (build-protocol "Linking") that get missed. Run on the hearing events, it
-surfaced only noise.
-
-**The work.** Don't frequency-rank away single-occurrence proper nouns (a
-once-named entity is the *more* likely miss, not less); surface the source's
-structural front-matter (title page, convening statement, masthead) as a
-dedicated bucket rather than skipping it as boilerplate. Read-only diagnostic, so
-low risk.
-
-**Blocks:** none.
-**Blocked by:** none.
-**Related:** C8 (scope); the build-protocol "Linking" structural-framing contract
-(the entities this aid should surface).
-
-### C11 — Resolve the schema-vs-convention conflict on events carrying `associated_entities`
-
-**The issue.** Two governing surfaces disagree on whether `event` nodes are in
-the field's scope. The schema's `associated_entities` future-REQUIRED list names
-`document` / `transcript` / `media` and omits events; but the
-transcript-re-association convention designates a **hearing-event node as the
-home for the full-hearing entity union** (per-witness transcript nodes carry only
-witness-scope slices), and the two hearing events are now swept under that
-convention. The schema comment predates the convention (schema line 2026-06-15;
-convention 2026-06-18). So the "flip to required" step (C4 item 2) has no answer
-for events.
-
-**The work.** Investigate and clear up the root question: is a hearing-`event`
-node formally in the `associated_entities` scope? If yes (the swept state says
-yes), add `event`-hearing to the future-REQUIRED list and reconcile the schema
-comment, the build-protocol "Linking" contract, and the transcript-re-association
-convention so all three agree; fold into C4 item 2. Distinguish hearing-events
-(union home, IN) from encounter-events (reconstruction, OUT) in whatever surface
-settles it.
-
-**Blocks:** C4 item 2 (flip-to-required can't enumerate the required types until
-this is settled).
-**Blocked by:** none.
-**Related:** C4, C8 (scope), C7 (`other` event kind);
-[[c4-sweep-scope-source-backed-nodes]], [[transcript-reassoc-conventions]].

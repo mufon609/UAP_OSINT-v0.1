@@ -172,15 +172,24 @@ optional_keys:
     # list attribution) ARE associated entities — ingesting that attribution
     # is the relevance decision, so they are listed here like any other entity.
     #
+    # Which nodes carry the field: a node that IS an ingested primary source —
+    # the node whose source body the rule enumerates. That is ``document`` /
+    # ``transcript`` / ``media`` and the ``event``-kind ``hearing`` node (which
+    # is the hearing record — its quotes come from the transcript, and it is the
+    # sole home for the full-hearing entity union). NOT a link-target node
+    # (``person`` / ``organization`` / ``location``), a synthesis node
+    # (``finding`` / ``investigation``), or an ``event`` that reconstructs an
+    # occurrence from sources that are their own nodes (``encounter`` / ``other``).
+    #
     # Enforced by ``scripts/checks/associated_entities.py`` (only when the
-    # field is present — optional during the corpus-wide rollout): each path
-    # well-formed + every prose-wrap (``description`` … ``extrinsic_authorship``)
-    # is a member (the field must be a superset of the inline wraps), plus a
-    # best-effort WARN when a
-    # multi-token proper noun in ``quotes[].text`` looks un-captured. Shape:
-    # a flat list of ``/{type}/{slug}`` strings. (A future step makes the
-    # field REQUIRED on document / transcript / media once the existing
-    # corpus is swept.)
+    # field is present — optional for now): each path well-formed + every
+    # prose-wrap (``description`` … ``extrinsic_authorship``) is a member (the
+    # field must be a superset of the inline wraps). Shape: a flat list of
+    # ``/{type}/{slug}`` strings. A future step makes the field REQUIRED on the
+    # source-backed types — type-level on ``document`` / ``transcript`` /
+    # ``media``, kind-conditional (``hearing`` only) on ``event`` — via the same
+    # per-type / ``target_node_kind_in`` machinery the schema already uses; until
+    # then it is optional so not-yet-required nodes hold the 0-warning baseline.
 
 # Type-conditional keys — present only on research artifacts whose
 # target_node type / archetype / kind matches the declared rule(s).
