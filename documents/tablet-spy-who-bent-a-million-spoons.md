@@ -165,11 +165,30 @@ Other things in the article: Geller's role in knocking out radar stations ahead 
 ### People
 
 - [`/people/aharon-yariv`]
+- [`/people/benjamin-netanyahu`]
+- [`/people/daniel`]
+- [`/people/elizabeth-taylor`]
+- [`/people/elton-john`]
+- [`/people/elvis-presley`]
+- [`/people/george-clooney`]
 - [`/people/golda-meir`]
+- [`/people/hanna`]
 - [`/people/james-randi`]
+- [`/people/john-lennon`]
 - [`/people/johnny-carson`]
+- [`/people/johnny-cash`]
+- [`/people/keanu-reeves`]
+- [`/people/kenny-rogers`]
 - [`/people/meir-amit`]
+- [`/people/merv-griffin`]
 - [`/people/michael-jackson`]
+- [`/people/micheline-calmy-rey`]
+- [`/people/mohamed-al-fayed`]
+- [`/people/natalie`]
+- [`/people/ramon-green`]
+- [`/people/robert-deniro`]
+- [`/people/ron`]
+- [`/people/sarah-netanyahu`]
 - [`/people/shmuley-boteach`]
 - [`/people/tal-kra-oz`]
 - [`/people/uri-geller`]
@@ -178,7 +197,66 @@ Other things in the article: Geller's role in knocking out radar stations ahead 
 
 ### Organizations
 
+- [`/organizations/ata`]
 - [`/organizations/bbc`]
+- [`/organizations/cia`]
+- [`/organizations/fbi`]
+- [`/organizations/harrods`]
+- [`/organizations/idf`]
+- [`/organizations/international-red-cross`]
+- [`/organizations/israel-air-force`]
+- [`/organizations/kelloggs`]
+- [`/organizations/magen-david-adom`]
 - [`/organizations/mossad`]
+- [`/organizations/red-crescent`]
 - [`/organizations/stanford-research-institute`]
+- [`/organizations/sunday-times`]
 - [`/organizations/tablet-magazine`]
+- [`/organizations/the-telegraph`]
+- [`/organizations/white-house`]
+
+### Events
+
+- [`/events/1967-arab-israeli-war`]
+- [`/events/entebbe-raid`]
+- [`/events/magen-david-adom-red-cross-signing-2005`]
+- [`/events/september-11-attacks`]
+
+### Documents
+
+- [`/documents/1987-nuclear-reduction-treaty`]
+- [`/documents/magen-david-adom-red-cross-agreement-2005`]
+- [`/documents/men-who-stare-at-goats`]
+
+### Media
+
+- [`/media/men-who-stare-at-goats-film`]
+- [`/media/secret-life-of-uri-geller-psychic-spy`]
+- [`/media/the-matrix`]
+
+### Locations
+
+- [`/locations/canaan`]
+- [`/locations/cyprus`]
+- [`/locations/damascus`]
+- [`/locations/egypt`]
+- [`/locations/england`]
+- [`/locations/entebbe`]
+- [`/locations/iran`]
+- [`/locations/israel`]
+- [`/locations/jaffa`]
+- [`/locations/jordan`]
+- [`/locations/london`]
+- [`/locations/long-island`]
+- [`/locations/los-angeles`]
+- [`/locations/mexico`]
+- [`/locations/nicosia`]
+- [`/locations/russia`]
+- [`/locations/shenkin-street`]
+- [`/locations/sonning`]
+- [`/locations/switzerland`]
+- [`/locations/tel-aviv`]
+- [`/locations/thames`]
+- [`/locations/uganda`]
+- [`/locations/united-states`]
+- [`/locations/west-bank`]
