@@ -187,6 +187,58 @@ description: |-
 
 
   On cost, the system would reduce space launch costs by two to three orders of magnitude below today's levels, with estimated launch costs of $20/kg to $600/kg of payload. Preliminary life-cycle cost estimates made during the AFRL study by Froning ([`/people/hugh-froning`]) and Davis (reference [26], Froning, H. D., and Davis, E. W., 2006) indicated that transportation system costs for placing 10 kg, 5.0 kg, and 1.0 kg of mass into orbit using Lightcraft and ground-based lasers would be approximately 3, 5, and 15 times less than with conventional rockets. The Conclusion gives the most promising military mission as the placement of Earth and space observing nano-/pico-satellites of up to 3 kg mass into LEO, with other potential missions including ground/sea- or airborne-launched kinetic kill weapons to shoot down enemy ballistic missiles. Launching such satellites requires megawatt-class lasers; the report gives TEXTRON Systems Corporation's ([`/organizations/textron-systems`]) proposed 10 MW electron gun-driven CO₂/gas mixture laser as a multi-megawatt-class system that can be implemented now, while the emerging Bulk Slab Solid-State, high-power Fiber, and Free-Electron laser technologies — Northrop Grumman's ([`/organizations/northrop-grumman`]) Joint High Power Solid-State Laser and the DARPA ([`/organizations/darpa`]) High Energy Liquid Laser Area Defense System among them — offer lower system and infrastructure cost. The Conclusion states, "This author recommends that the Department of Defense, in collaboration with NASA, return laser Lightcraft propulsion R&D to the United States" and restart the space launch test flight demonstration program of the Air Force X-50LR Lightcraft, which was originally proposed by Dr. Frank Mead ([`/people/franklin-mead`]). The document is followed by a References section of 35 references.
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /locations/dayton-ohio
+- /locations/earth
+- /locations/edwards-afb
+- /locations/kirtland-afb
+- /locations/monterey-california
+- /locations/sun
+- /locations/troy-new-york
+- /locations/united-states
+- /locations/washington-dc
+- /locations/white-sands-missile-range
+- /organizations/aawsap
+- /organizations/afosr
+- /organizations/afrl
+- /organizations/brazilian-air-force
+- /organizations/darpa
+- /organizations/de-ews
+- /organizations/deps
+- /organizations/dia
+- /organizations/dod
+- /organizations/earthtech-international
+- /organizations/general-atomics
+- /organizations/ipg-photonics
+- /organizations/jhpssl
+- /organizations/lockheed-martin
+- /organizations/moog
+- /organizations/nasa
+- /organizations/national-nanotechnology-initiative
+- /organizations/national-science-foundation
+- /organizations/naval-postgraduate-school
+- /organizations/navsea
+- /organizations/northrop-grumman
+- /organizations/rensselaer-polytechnic-institute
+- /organizations/sdio
+- /organizations/textron-systems
+- /organizations/the-black-vault
+- /organizations/us-air-force
+- /organizations/us-army
+- /organizations/us-navy
+- /people/d-kiel
+- /people/eric-davis
+- /people/franklin-mead
+- /people/hugh-froning
+- /people/i-bekey
+- /people/j-albertine
+- /people/john-greenewald
+- /people/leik-myrabo
+- /people/p-saunders
+- /people/p-zarubin
+- /people/robert-goddard
+- /people/v-hasson
 cited_works:
 - id: cw1
   added_date: '2026-06-07'

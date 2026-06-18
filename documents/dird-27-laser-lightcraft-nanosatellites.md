@@ -251,23 +251,63 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/d-kiel`]
 - [`/people/eric-davis`]
 - [`/people/franklin-mead`]
 - [`/people/hugh-froning`]
+- [`/people/i-bekey`]
+- [`/people/j-albertine`]
+- [`/people/john-greenewald`]
 - [`/people/leik-myrabo`]
+- [`/people/p-saunders`]
+- [`/people/p-zarubin`]
+- [`/people/robert-goddard`]
+- [`/people/v-hasson`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/afosr`]
 - [`/organizations/afrl`]
+- [`/organizations/brazilian-air-force`]
 - [`/organizations/darpa`]
+- [`/organizations/de-ews`]
+- [`/organizations/deps`]
 - [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/earthtech-international`]
+- [`/organizations/general-atomics`]
+- [`/organizations/ipg-photonics`]
+- [`/organizations/jhpssl`]
+- [`/organizations/lockheed-martin`]
+- [`/organizations/moog`]
 - [`/organizations/nasa`]
+- [`/organizations/national-nanotechnology-initiative`]
+- [`/organizations/national-science-foundation`]
+- [`/organizations/naval-postgraduate-school`]
+- [`/organizations/navsea`]
 - [`/organizations/northrop-grumman`]
 - [`/organizations/rensselaer-polytechnic-institute`]
 - [`/organizations/sdio`]
 - [`/organizations/textron-systems`]
+- [`/organizations/the-black-vault`]
+- [`/organizations/us-air-force`]
+- [`/organizations/us-army`]
+- [`/organizations/us-navy`]
 
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
+
+### Locations
+
+- [`/locations/dayton-ohio`]
+- [`/locations/earth`]
+- [`/locations/edwards-afb`]
+- [`/locations/kirtland-afb`]
+- [`/locations/monterey-california`]
+- [`/locations/sun`]
+- [`/locations/troy-new-york`]
+- [`/locations/united-states`]
+- [`/locations/washington-dc`]
+- [`/locations/white-sands-missile-range`]
