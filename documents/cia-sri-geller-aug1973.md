@@ -195,4 +195,9 @@ The experimenters consider, 'as a result of Geller's success in this experimenta
 
 ### Organizations
 
+- [`/organizations/cia`]
 - [`/organizations/stanford-research-institute`]
+
+### Locations
+
+- [`/locations/east-coast`]

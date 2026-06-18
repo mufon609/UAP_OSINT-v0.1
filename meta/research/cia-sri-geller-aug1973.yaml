@@ -144,5 +144,12 @@ quotes:
     location: '¶ "These latter two experiments admit of"'
   significance: Mechanism-hypothesis framing — Targ identifies two competing mechanisms (clairvoyance vs telepathy) the computer-storage experiments cannot distinguish
   statement_date: '1973-08-13'
+associated_entities:
+- /locations/east-coast
+- /organizations/cia
+- /organizations/stanford-research-institute
+- /people/hal-puthoff
+- /people/russell-targ
+- /people/uri-geller
 cited_works: NONE
 naming_quirks: []
