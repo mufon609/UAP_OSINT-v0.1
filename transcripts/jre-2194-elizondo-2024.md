@@ -377,7 +377,6 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/events/bay-of-pigs-invasion`]
 - [`/events/colares-incident`]
 - [`/events/echo-flight`]
-- [`/events/roswell-incident`]
 
 ### Documents
 
@@ -385,7 +384,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/documents/elizondo-qfr-burlison-20241219`]
 - [`/documents/fbi-flying-discs-savannah-river-1952`]
 - [`/documents/new-mexico-aerial-phenomena-summary-1950`]
-- [`/documents/nyt-2017-glowing-auras`]
+- [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
 
 ### Media
 
@@ -421,6 +420,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/locations/north-dakota`]
 - [`/locations/patagonia`]
 - [`/locations/puerto-rico`]
+- [`/locations/roswell-new-mexico`]
 - [`/locations/russia`]
 - [`/locations/saint-louis-missouri`]
 - [`/locations/savannah-river-plant`]

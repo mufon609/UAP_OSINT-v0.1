@@ -7,13 +7,12 @@ associated_entities:
 - /documents/elizondo-qfr-burlison-20241219
 - /documents/fbi-flying-discs-savannah-river-1952
 - /documents/new-mexico-aerial-phenomena-summary-1950
-- /documents/nyt-2017-glowing-auras
+- /documents/nyt-glowing-auras-pentagon-ufo-2017
 - /events/2004-nimitz-encounter
 - /events/aguadilla-incident
 - /events/bay-of-pigs-invasion
 - /events/colares-incident
 - /events/echo-flight
-- /events/roswell-incident
 - /locations/afghanistan
 - /locations/argentina
 - /locations/baltimore-maryland
@@ -42,6 +41,7 @@ associated_entities:
 - /locations/north-dakota
 - /locations/patagonia
 - /locations/puerto-rico
+- /locations/roswell-new-mexico
 - /locations/russia
 - /locations/saint-louis-missouri
 - /locations/savannah-river-plant
