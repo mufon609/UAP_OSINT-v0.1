@@ -112,19 +112,46 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 ### People
 
 - [`/people/christopher-sharp`]
+- [`/people/donald-trump`]
 - [`/people/eric-burlison`]
+- [`/people/jeremy-corbell`]
 - [`/people/luis-elizondo`]
 - [`/people/matt-laslo`]
+- [`/people/piers-morgan`]
 - [`/people/robert-bigelow`]
+- [`/people/salvatore-pais`]
 - [`/people/steny-hoyer`]
+- [`/people/stephen-diener`]
 
 ### Organizations
 
+- [`/organizations/aatip`]
 - [`/organizations/bigelow-aerospace`]
 - [`/organizations/cia`]
+- [`/organizations/congress`]
+- [`/organizations/dod`]
+- [`/organizations/house-oversight`]
 - [`/organizations/liberation-times`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/lockheed-martin-skunk-works`]
+- [`/organizations/mitre`]
+- [`/organizations/navair`]
+- [`/organizations/white-house`]
+
+### Events
+
+- [`/events/2024-11-13-house-oversight-uap-hearing`]
+
+### Documents
+
+- [`/documents/elizondo-qfr-burlison-20241219`]
+
+### Media
+
+- [`/media/gimbal-declassified`]
+- [`/media/go-fast`]
 
 ### Locations
 
+- [`/locations/maryland`]
 - [`/locations/patuxent-river-nas`]

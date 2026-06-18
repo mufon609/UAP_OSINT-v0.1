@@ -78,5 +78,35 @@ quotes:
   significance: 'Sharp''s reproduction of Elizondo''s QFR Q7 funding sentence verbatim (preserves "approximately $10 million" and the Hoyer-requested attribution), paired with Matt Laslo''s ([`/people/matt-laslo`]) prior interview asking Hoyer about the $10 million hangar at Pax River and Hoyer''s "private — public partner" response indicating he did not remember the specifics.'
   statement_date: '2026-03-06'
 
+associated_entities:
+- /documents/elizondo-qfr-burlison-20241219
+- /events/2024-11-13-house-oversight-uap-hearing
+- /locations/maryland
+- /locations/patuxent-river-nas
+- /media/gimbal-declassified
+- /media/go-fast
+- /organizations/aatip
+- /organizations/bigelow-aerospace
+- /organizations/cia
+- /organizations/congress
+- /organizations/dod
+- /organizations/house-oversight
+- /organizations/liberation-times
+- /organizations/lockheed-martin
+- /organizations/lockheed-martin-skunk-works
+- /organizations/mitre
+- /organizations/navair
+- /organizations/white-house
+- /people/christopher-sharp
+- /people/donald-trump
+- /people/eric-burlison
+- /people/jeremy-corbell
+- /people/luis-elizondo
+- /people/matt-laslo
+- /people/piers-morgan
+- /people/robert-bigelow
+- /people/salvatore-pais
+- /people/stephen-diener
+- /people/steny-hoyer
 cited_works: NONE
 naming_quirks: []
