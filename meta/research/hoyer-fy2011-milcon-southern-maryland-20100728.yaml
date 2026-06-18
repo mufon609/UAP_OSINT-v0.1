@@ -72,5 +72,23 @@ quotes:
   significance: 'Hoyer''s own pull-quote framing the four line items as continued military investment in Pax River and Indian Head. The general framing — military investment in highly valued facilities — gives no UAP-specific or SCIF-specific motivation; the press release attests the SCIF specification in q3 as a routine Atlantic Test Range addition feature.'
   statement_date: '2010-07-28'
 
+associated_entities:
+- /documents/fy2011-milcon-va-appropriations-act
+- /locations/agile-chemical-facility
+- /locations/atlantic-test-range
+- /locations/bams-test-and-evaluation-facility
+- /locations/east-coast
+- /locations/indian-head-maryland
+- /locations/patuxent-river-nas
+- /locations/southern-maryland
+- /locations/tactical-uas-facility
+- /locations/washington-dc
+- /locations/webster-field
+- /organizations/army-national-guard
+- /organizations/broad-area-maritime-surveillance-program
+- /organizations/house-of-representatives
+- /organizations/naval-surface-warfare-center-indian-head
+- /organizations/us-navy
+- /people/steny-hoyer
 cited_works: NONE
 naming_quirks: []
