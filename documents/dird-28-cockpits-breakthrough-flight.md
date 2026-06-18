@@ -281,16 +281,33 @@ Reference list carried by the source document, transcribed verbatim (source spel
 
 ### People
 
+- [`/people/a-szames`]
 - [`/people/eric-davis`]
+- [`/people/h-seifert`]
+- [`/people/john-greenewald`]
+- [`/people/m-cherfi`]
 - [`/people/marc-millis`]
 
 ### Organizations
 
 - [`/organizations/aawsap`]
+- [`/organizations/airbus`]
+- [`/organizations/boeing`]
 - [`/organizations/dia`]
+- [`/organizations/nasa`]
 - [`/organizations/tau-zero`]
+- [`/organizations/the-black-vault`]
 
 ### Documents
 
 - [`/documents/dia-aatip-products-list-2018`]
 - [`/documents/dird-12-bci-controlling-external-devices`]
+- [`/documents/frontiers-of-propulsion-science`]
+- [`/documents/space-technology-seifert-1959`]
+
+### Locations
+
+- [`/locations/alpha-centauri`]
+- [`/locations/earth`]
+- [`/locations/sun`]
+- [`/locations/washington-dc`]

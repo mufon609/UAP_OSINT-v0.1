@@ -181,6 +181,28 @@ description: |-
 
 
   The human-machine interface chapter applies human-factors lessons, with one exception made when considering emerging technologies: brain implants for BMIs and reengineering humans (transhumanism) are not considered, the cockpit instead accommodating the norms and limitations of human perception. A brain-machine interface for issuing commands with thoughts is assumed fully matured but constrained to non-invasive techniques (avoiding the need to modify the pilots) — citing at Endnote 19 the Defense Intelligence Reference Document on controlling external devices in the absence of limb-operated interfaces ([`/documents/dird-12-bci-controlling-external-devices`]). As a provisional baseline the report chooses a pair of six-degree-of-freedom joysticks at the edge of the cockpit chair's arm rests for the full six degrees of freedom of a breakthrough vehicle. The Future Work chapter adds a caveat that advances in cockpits for breakthrough flight might be further advanced by taking advantage of the gaming industry or through science fiction speculation. The document is followed by an Annotated Bibliography (Appendix A) and an Endnotes section of 52 endnotes (Appendix B).
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /documents/dird-12-bci-controlling-external-devices
+- /documents/frontiers-of-propulsion-science
+- /documents/space-technology-seifert-1959
+- /locations/alpha-centauri
+- /locations/earth
+- /locations/sun
+- /locations/washington-dc
+- /organizations/aawsap
+- /organizations/airbus
+- /organizations/boeing
+- /organizations/dia
+- /organizations/nasa
+- /organizations/tau-zero
+- /organizations/the-black-vault
+- /people/a-szames
+- /people/eric-davis
+- /people/h-seifert
+- /people/john-greenewald
+- /people/m-cherfi
+- /people/marc-millis
 cited_works:
 - id: cw1
   added_date: '2026-06-08'
