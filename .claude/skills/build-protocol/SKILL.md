@@ -386,8 +386,10 @@ scaffolder — do not work around it.
 
 ## Why these roles — capability boundaries, not feedback granularity
 
-Each role is a distinct **capability boundary** that makes the discipline
-mechanical — the separation *is* the enforcement:
+Each role is a distinct **capability boundary** — the design intent each role's
+tool set expresses. How much of that intent is *mechanically* enforced vs. role
+discipline is the subject of "Mechanical enforcement vs. role discipline" just
+below; read the two together. The boundaries:
 
 | Role (subagent) | Capability boundary it enforces |
 |---|---|
@@ -404,15 +406,34 @@ Two former roles **dissolved**: the Orchestrator (a control loop, now the
 
 ### Mechanical enforcement vs. role discipline
 
-(Verified.) Whole-tool *absence* from a role's `tools:` binds hard — the
-worker genuinely has no Write/Bash; the investigators have no
-WebFetch/WebSearch. But **per-command scoping inside `tools:` is advisory**
-in the current Claude Code environment: a role carrying any `Bash(...)`
-entry effectively gets full Bash, so the "no manifest-write" /
-"no web-via-curl" lines above rest on **role discipline**, not a hard gate
-(empirically, roles asked to cross those lines could). The mechanical floor
-is therefore *not* the per-command `tools:` scoping but: (1) committed
-`settings.json` `permissions.deny` rules, which **do** bind for subagents
-and hot-reload; and (2) the disk-truth gate (verbatim + prose-drift)
-enforced un-bypassably at the commit boundary (the non-negotiable
-invariant above).
+(Verified — re-confirmed by direct probe: a fresh `internal-investigator`,
+whose `tools:` grants only three scoped `Bash(python3 …)` patterns, ran `git`,
+`test`, and `ls` unblocked.) The boundary that actually binds is the
+**presence or absence of a whole tool**, never the per-command pattern inside
+it:
+
+- **Whole-tool absence binds — but only for a capability with no shell
+  equivalent.** The worker has no `Bash` at all, so it genuinely cannot run a
+  script, `curl`, or `git` — a real floor. But "no `WebFetch`/`WebSearch`" does
+  **not** block the web for a role that holds any `Bash(...)`: `curl` reaches
+  it. A Bash-holding role can likewise write files (`>`, `sed -i`, `python3
+  -c`), mutate git (`git restore`), or write the manifest (`manifest.py …`),
+  whatever its declared patterns.
+- **Per-command scoping inside `tools:` is advisory.** A role carrying any
+  `Bash(...)` entry effectively gets full Bash. So every capability-boundary
+  line in the table above — "read-only", "no manifest-write", "no web", "the
+  only manifest writer" — is **role discipline the agent is asked to keep**,
+  not a gate that stops it; a misbehaving role *could* cross any of them.
+
+The mechanical floor is therefore *not* the `tools:` scoping but two things:
+(1) committed `settings.json` `permissions.deny` rules, which **do** bind for
+subagents and hot-reload (today: `Edit`+`Write` on the node-body directories,
+and `Write` on `meta/research/` — the latter mechanically floors the worker's
+only artifact-write path, the Write tool, while leaving the builder's `Edit`
+open); and (2) the
+disk-truth gate (verbatim + prose-drift) enforced un-bypassably at the commit
+boundary (the non-negotiable invariant above). The roles are an organization of
+labor and a context-isolation structure (fresh-context independence, parallel
+workers), **not** a sandbox: the disk-truth gate is what makes the porous
+boundaries safe — a rogue web-pull or manifest-write still cannot yield a
+passing-but-false node, because the gate re-derives truth from disk.

@@ -3,7 +3,7 @@ name: augment
 description: Orchestrate a maintenance change to an existing node — add a recovered quote, re-source a dead citation, or correct a data field — without re-scaffolding. The proactive counterpart to reactive /audit; runs on the main thread and dispatches the minimal role subset. Use to maintain a built node, not to build a new one.
 argument-hint: {type}/{slug} "<what to change>"
 allowed-tools:
-  - Agent(external-investigator, archive, worker, auditor)
+  - Agent(external-investigator, archive, worker, builder, auditor)
   - Skill(prepare-ocr-sibling)
   - Skill(prepare-transcript-sibling)
   - Read
@@ -11,12 +11,10 @@ allowed-tools:
   - Glob
   - Edit
   - Bash(python3 scripts/build/extract-source.py *)
-  - Bash(python3 scripts/build/merge-fragments.py *)
   - Bash(python3 scripts/build/build-from-research.py *)
   - Bash(python3 scripts/build/validate.py *)
   - Bash(python3 scripts/build/validate-research.py *)
   - Bash(python3 scripts/build/review-coverage.py *)
-  - Bash(python3 scripts/build/stamp-speaker-id.py *)
   - Bash(python3 scripts/build/associate.py *)
   - Bash(python3 scripts/build/build-state.py *)
   - Bash(python3 scripts/tools/route_failure.py *)
@@ -55,19 +53,24 @@ anything** (mirrors `/audit`). The shape is never chosen silently.
 - **Shape B — quote from an already-archived source**: §4 OCR gate → canonical scratch via
   `extract-source.py --artifact meta/research/{slug}.yaml` → `Agent(worker)` on that one
   source (`worker_kind` per its format) → the worker writes its fragment file and returns the slim
-  stub → merge it with `python3 scripts/build/merge-fragments.py --append meta/research/{slug}.yaml
-  {fragment_path}` (`--append` is the maintenance mode: it allows the populated artifact and
-  continues qN/cwN numbering — never hand-copy the verbatim payload) →
-  `validate-research.py --phase extract` (the verbatim boundary; re-reads disk).
+  stub → **`Agent(builder)` in maintenance re-entry** (builder.md "Maintenance re-entry"), relaying
+  the `fragment_path` + the node's `linked_nodes` / topic-relevance. The builder merges `--append`
+  (byte-exact, continues qN/cwN numbering — never hand-copied), organizes the new quote into the
+  existing claim structure, links its source-named entities (the full `associated_entities`
+  discipline), stamps `speaker_id` (transcript) / `quote_corroboration` (OCR-sibling source), and
+  renders. You do **not** merge, stamp, organize, or link on the main thread — re-implementing the
+  builder's discipline here is exactly how the `associated_entities` linking silently drops and a
+  stale `quote_corroboration` goes unrefreshed.
 - **Shape C — needs a new or re-pulled source**: `Agent(external-investigator)` with the gap +
   `linked_nodes` (**reject any queued source lacking a `confirming_span`** — the non-negotiable
   invariant) → `Agent(archive)` (downloads, writes the manifest, submits to Wayback, extracts the
-  scratch — the only manifest writer) → §4 OCR gate → `Agent(worker)` → you merge → `validate-
-  research.py --phase extract`.
+  scratch — the only manifest writer) → §4 OCR gate → `Agent(worker)` → `Agent(builder)` in
+  maintenance re-entry (as Shape B).
 
-On a **transcript artifact** (Shape B or C), derive the merged quote's `speaker_id` after the merge
-and before validating: `python3 scripts/build/stamp-speaker-id.py meta/research/{slug}.yaml` (dry
-run, then `--write`) — the verified attribution sibling is the source of truth; never hand-key it.
+The builder owns the merge/organize/link and the post-merge stamps for Shape B/C, including a
+**transcript** quote's `speaker_id` (builder.md step 0b) — derived from the verified attribution
+sibling, never hand-keyed. It is part of the builder's maintenance re-entry, not a separate
+main-thread step.
 
 On any failing check, `python3 scripts/tools/route_failure.py {check}` names the owning role; apply
 the fix to the artifact and re-validate. The fix target is always artifact data.
@@ -107,8 +110,12 @@ a verified sibling"). Two flavors:
 
 For **each affected node, once** (not per-fact):
 
-1. `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml` — regenerates the body,
-   runs `associate.py` (cross-refs), and validates.
+1. **Render.** For a **Shape A** main-thread edit, run
+   `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml` yourself — it
+   regenerates the body, runs `associate.py` (cross-refs), and validates. For **Shape B/C** the
+   builder already rendered as the last step of its maintenance re-entry: read its stub
+   (`result: pass`; on `result: fail`, run `route_failure.py {checks}` and re-enter the named role,
+   exactly as `/build` step 6 does — do not re-render a builder-rendered node).
 2. Confirm the change **renders** — grep the regenerated body (an edit that lands only in an
    artifact-only field never surfaces; move it to a rendered surface).
 3. `python3 scripts/build/review-coverage.py --all` clean.
@@ -122,6 +129,7 @@ The user commits (the full pre-commit chain runs at the boundary, un-bypassable)
 batch**, commit each node's result **before** dispatching the next node's auditor — an auditor's
 effective Bash can `git restore` uncommitted work.
 
-Do not: scaffold (use `/build` for a new node); hand-edit the node body; introduce a quote outside a
-worker / the `extract` phase; remove a source-backed item without a contradicting source; or
-overwrite a contradicted claim instead of preserving both.
+Do not: scaffold (use `/build` for a new node); hand-edit the node body; merge / organize / link /
+stamp on the main thread for a new quote (dispatch the builder — Shape B/C); introduce a quote
+outside a worker / the `extract` phase; remove a source-backed item without a contradicting source;
+or overwrite a contradicted claim instead of preserving both.

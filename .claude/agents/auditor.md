@@ -39,8 +39,9 @@ Audit goals:
    the one failure mode no engine count catches — a correlated misread shared by
    the VLM and both engines — so still spot-check, but spend the depth on the
    enumerated items. No stamp on a quoted sibling-backed source = the
-   `quote_ocr_corroboration` check is warning; flag it (fix:
-   `ocr-consensus.py corroborate-quotes {pdf} --artifact {yaml}`).
+   `quote_ocr_corroboration` check **errors** at commit; flag it to the builder
+   (which stamps it at builder.md step 0c: `ocr-consensus.py corroborate-quotes
+   {pdf} --artifact {yaml}`).
    Check the locator **form**, not just precision: a sibling-backed source's
    `location` is a descriptive content anchor, **not** `p. N` — do not "correct" it
    toward a physical-page integer (a markerless sibling has none to verify).

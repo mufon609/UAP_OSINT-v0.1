@@ -319,8 +319,13 @@ manifest writer) → **worker** ×N parallel (extract verbatim quotes from
 one source into a fragment file; the *only* role that introduces quotes)
 → **builder** (merge fragments → organize → link → render; edits the
 artifact, *never* the node body) → **auditor** (fresh-context cold
-re-read; recommend-only as a build role). The boundaries are mechanical —
-each role's tool set enforces them, not convention.
+re-read; recommend-only as a build role). These role boundaries are **role
+discipline backed by two mechanical floors**, not per-command tool-set
+enforcement: the `settings.json` `permissions.deny` rules (which bind subagents
+— today they gate node-body edits) and the disk-truth commit gate (verbatim +
+prose-drift re-derived from disk, so nothing false commits regardless of which
+role touched what). Per-command `Bash(...)` scoping in a role's `tools:` is
+advisory — see `build-protocol` "Mechanical enforcement vs. role discipline".
 
 `/prepare-ocr-sibling` dispatches **ocr-page-producer** (VLM page-image
 transcription) + **ocr-page-verifier** (settle flagged divergences against

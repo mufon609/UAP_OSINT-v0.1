@@ -216,16 +216,20 @@ or replace it:
    `ocr-consensus.py verify {pdf} --stamp-artifact {yaml}` (seconds on the
    engine cache). Never hand-type the value; that's the field's whole point.
 
-6. **Corroborate already-extracted quotes — backfill case only.** If the
-   target's artifact *already carries quotes* citing this source (this skill ran
-   as a backfill on a built node, or the sibling was re-edited under existing
-   quotes), follow the `content_block` stamp with
-   `python3 scripts/tools/ocr-consensus.py corroborate-quotes {pdf} --artifact
-   meta/research/{slug}.yaml` — it re-checks just the quoted spans against the
-   engine reads and stamps `quote_corroboration` (the auditor's page-image
-   target list; the `quote_ocr_corroboration` check is its commit-boundary
-   backstop). On the normal `/build` path quotes don't exist yet — the
-   orchestrator runs this at build step 6b instead.
+6. **Quotes already extracted? Hand back to `/augment` to re-corroborate.** If
+   the target's artifact *already carries quotes* citing this source (this skill
+   ran as a backfill on a built node, or the sibling was re-edited under existing
+   quotes), the sibling's bytes just changed, so the `quote_corroboration` stamp
+   on those quotes is now stale and the `quote_ocr_corroboration` check (error
+   severity) fails on the recorded sha. Re-corroboration is the **builder's**
+   step (builder.md step 0c), not this skill's — a changed sibling under a built
+   node is a node-maintenance event, so hand back to
+   `/augment {type}/{slug} "re-corroborate quotes after sibling re-prep"`, which
+   re-enters the builder to re-stamp (and re-runs the auditor's page-image read —
+   exactly what a sibling change warrants). Do **not** run `corroborate-quotes`
+   here; this skill owns the sibling + its `content_block`, never the quote
+   stamp. On the normal `/build` path quotes don't exist when this skill runs —
+   the builder corroborates them at step 0c after extraction.
 
 The sibling is canonical once confirmed and registered; `extract-source.py` and
 the verbatim-quote check prefer it. Hand back to `/build` (or the contributor) to

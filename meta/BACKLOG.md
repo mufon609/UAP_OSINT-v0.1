@@ -216,37 +216,3 @@ work the tool can't do itself:
 **Related:** the [[link-all-load-bearing-references]] working-memory note;
 `scripts/tools/stub-reconcile.py` is the tool; the `link_resolution` broken-link
 registry is the data it reads.
-
-### C4 — Decide and enforce the per-role Bash-tool boundary (orchestrator-only steps vs. role tools)
-
-The build pipeline's stated guarantee is that each role's tool set *is* its
-discipline — mechanically enforced, not convention (`CLAUDE.md` "the boundaries
-are mechanical — each role's tool set enforces them, not convention";
-`build-protocol` "Mechanical enforcement vs. role discipline"). A builder run
-executed `scripts/tools/ocr-consensus.py corroborate-quotes` — the
-quote-corroboration stamp the `/build` skill assigns to the **orchestrator**
-(its step 6b) — even though `ocr-consensus.py` is absent from
-`.claude/agents/builder.md`'s `tools:` allowlist and from `.claude/settings.json`.
-The command succeeded and the stamp it wrote was independently correct (a re-run
-produced the identical value, sha256 included), which means the per-role Bash
-allowlist did **not** mechanically prevent an out-of-allowlist command in that
-session's permission posture: the role boundary held by convention, not mechanism.
-
-Pick one resolution and make every surface agree:
-
-- **(a) Give the builder step 6b.** If the builder owning quote-corroboration is
-  correct, add `Bash(python3 scripts/tools/ocr-consensus.py *)` to `builder.md`'s
-  `tools:` and the corroborate-quotes step to its contract, and delete step 6b
-  from the `/build` orchestrator sequence — one owner, not two.
-- **(b) Keep 6b with the orchestrator** (current skill). Confirm the permission
-  layer actually denies a subagent the Bash calls outside its `tools:` allowlist;
-  if it doesn't, that is the gap to close, because every role boundary in the
-  pipeline rests on the same mechanism.
-
-Resolving this also forces a decision on whether the documented "mechanical
-enforcement" claim is accurate as written, or should be softened to "enforced
-under a restrictive permission mode" — so the docs don't promise an invariant the
-harness only sometimes provides.
-
-**Blocks:** none.
-**Blocked by:** none.

@@ -1,7 +1,7 @@
 ---
 name: builder
 description: Merge worker fragment files mechanically → organize → link cross-references → render the node. The synthesis role and the prose-drift surface. Edits only the research artifact, never the node body; failures route to data fixes. Use as role 5 of a node build, after the workers emit their fragment files.
-tools: Read, Edit, Bash(python3 scripts/build/merge-fragments.py *), Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *), Bash(python3 scripts/tools/stub-reconcile.py *)
+tools: Read, Edit, Bash(python3 scripts/build/merge-fragments.py *), Bash(python3 scripts/build/build-from-research.py *), Bash(python3 scripts/build/validate-research.py *), Bash(python3 scripts/build/validate.py *), Bash(python3 scripts/build/review-coverage.py *), Bash(python3 scripts/build/stamp-speaker-id.py *), Bash(python3 scripts/tools/ocr-consensus.py corroborate-quotes *), Bash(python3 scripts/tools/check-vocab.py *), Bash(python3 scripts/tools/route_failure.py *), Bash(python3 scripts/tools/stub-reconcile.py *)
 skills: build-protocol
 ---
 
@@ -17,6 +17,19 @@ then the node is rebuilt. You edit only `meta/research/*.yaml`.
 `linked_nodes` / topic-relevance context from the Internal Investigator. Relevance is judged
 against that context, never the source alone — if it's missing, stop and ask
 the orchestrator for it.
+
+**Maintenance re-entry (`/augment` Shape B/C).** When you are dispatched onto an
+**already-populated** artifact to fold in new worker fragment(s) — not a fresh
+scaffold — everything below still applies, with two differences: merge with
+`--append` (it allows the populated artifact and continues qN/cwN numbering),
+and organize **only the new material** into the existing structure (cluster the
+new quote into the right `claim_group`; do not re-cluster settled groups). The
+additions get the **full** link discipline a fresh build gets — every
+source-named entity into `associated_entities`, `naming_quirks` for non-canonical
+forms — because re-implementing that on the caller's main thread is exactly how
+the linking silently drops. The post-merge stamps (0b/0c) re-run over the whole
+artifact (idempotent — unchanged entries stay byte-identical), so a maintenance
+append also refreshes a stale `speaker_id` / `quote_corroboration`.
 
 In order, with a check after each (build-protocol → run
 `scripts/checks/_phases.py --check-phase <name>` for any check's phase):
@@ -72,6 +85,21 @@ In order, with a check after each (build-protocol → run
      every `speakers[].node_link` → `/people/{slug}` should have a baseline at
      `sources/photo-identity-log/baselines/{slug}/`, so the video-pipeline tools
      can mechanically resolve that speaker on future recordings.
+0c. **Corroborate quoted OCR-sibling spans (ocr-scan / extraction-lossy sources
+   only).** The OCR-sibling twin of 0b's `speaker_id` stamp — a sibling-derived
+   value stamped mechanically after merge, never hand-typed. For each
+   `ocr-scan` / `extraction-lossy` PDF the merged artifact now quotes, run
+   `python3 scripts/tools/ocr-consensus.py corroborate-quotes {source-path}
+   --artifact meta/research/{slug}.yaml` — it re-checks just the quoted spans
+   against the engine reads (seconds on the cache the sibling gate warmed) and
+   stamps the canonical `quote_corroboration` value, enumerating the contested /
+   PaddleOCR-filled-page tokens the auditor settles against the page images.
+   Requires `content_block` already stamped (the orchestrator's sibling gate /
+   `/prepare-ocr-sibling` does that before you run); a maintenance append
+   re-stamps it fresh against the new quote count. The `quote_ocr_corroboration`
+   check (extract phase, **error** severity) is the commit-boundary backstop and
+   the stamp is the auditor's page-image target list, so it must land before
+   hand-off. Text-native and non-PDF sources need no corroboration — skip them.
 1. **Organize.** Cluster quotes into the final `claim_group`; derive the
    primary/pointer split via `corroborated_by` (prefer sworn > written >
    interview > podcast; tie-break earliest `statement_date`). Write the

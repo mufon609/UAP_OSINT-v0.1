@@ -18,7 +18,8 @@
       "Edit(/findings/**)",
       "Write(/findings/**)",
       "Edit(/investigations/**)",
-      "Write(/investigations/**)"
+      "Write(/investigations/**)",
+      "Write(/meta/research/**)"
     ]
   },
   "hooks": {
