@@ -1252,6 +1252,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #37 — ''Aneutronic Fusion Propulsion II'' (DIA-letter title; the document title page reads ''Aneutronic Fusion Propulsion''), DIA-08-1011-004, ICOD 20 July 2010 (confirmed page 1; later ''Defense Futures'' series, not the 1 December 2009 cutoff of the original DIRD batch), dated 1 November 2010 (confirmed page 1), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 37 pages. DIA attachment #30 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. W. Culbreth, University of Nevada – Las Vegas (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_37-DIRD_Aneutronic_Fusion_Propulsion_II.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.txt
+    archived_date: '2026-06-19'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned dird-37-aneutronic-fusion-propulsion-ii-2010.pdf (paired entry; same path stem). Produced 2026-06-19; zero pages content-blocked. Black Vault FOIA declassification cover-insert (physical p2) preserved verbatim. Struck-through //FOR OFFICIAL USE ONLY classification banner transcribed verbatim (strikethrough is presentation, not character content). Authors block redacted; redaction markers preserved verbatim: (b)(6), (b)(3):10 USC 424, and compound (b)(3):10 USC 424;(b)(6). Figures (1-20) and low-resolution data Tables (1-3) rendered as bracketed [Figure N]/[Table N] placeholders with legible typeset captions and cell text transcribed; figure-interior plots/diagrams/schematics not reproduced as text (Tables 4-5 cell text legible and reproduced). Legible inline notation transcribed as body text with Unicode/inline forms (sigma-v, I_sp subscript, (p,11B), 3He, exponent digits). Source typos preserved verbatim: tokomak/Tokomak (for tokamak) throughout, doubled that (printed p1), import for important (printed p25), endnote typos (doubled period, missing opening quotation mark, run-on dates). PaddleOCR+Tesseract consensus flagged 18 high-signal divergences: one VLM misread corrected against the page images (a phrase bled from the adjacent Helicon paragraph into the VASIMR third-stage sentence, printed p15 — restored to: converts the thermal energy of the plasma into thrust); the remaining 15 settled as shared OCR glyph-confusion leave-cases (struck banner words, Greek sigma, flattened Isp subscripts, dropped 41st/31st ordinals, TriAlpha).'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/FOIA%2000159-2018.pdf
   status: archived
   artifacts:

@@ -1,0 +1,928 @@
+id: meta/research/dird-37-aneutronic-fusion-propulsion-ii
+type: research-artifact
+target_node: documents/dird-37-aneutronic-fusion-propulsion-ii
+status: active
+primary_sources:
+- path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  format: pdf
+  content_block: 'None'
+  quote_corroboration: '2026-06-19: 38 quote(s) corroborated against the OCR engine reads; 2 contested token(s): q2 ‹AAWSA› (line 57), q33 ‹TriAlpha› (line 941) — sibling kept against the engines; page-image-verify each at audit; sibling sha256:9c83ea46f292'
+document_intrinsic:
+  internal_title: 'Aneutronic Fusion Propulsion'
+  internal_date: '2010-11-01'
+  authors_per_document:
+  - '[redacted per FOIA (b)(6) / (b)(3):10 USC 424]'
+  classification: UNCLASSIFIED//FOR OFFICIAL USE ONLY
+  classification_markings_on_document: 'UNCLASSIFIED//FOR OFFICIAL USE ONLY (running header and footer banner on every page); a COPYRIGHT WARNING that further dissemination of the photographs in this publication is not authorized.'
+  control_number: DIA-08-1011-004
+  pages: 37
+context_extrinsic:
+  display_title: 'Aneutronic Fusion Propulsion II — DIA Defense Intelligence Reference Document, AAWSAP, 01 November 2010'
+  primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_37-DIRD_Aneutronic_Fusion_Propulsion_II.pdf
+  quote_attribution: 'Aneutronic Fusion Propulsion II — DIA AAWSAP Defense Intelligence Reference Document, 01 November 2010 (institutional voice; preparing office redacted under 10 USC 424, authors redacted under FOIA (b)(6))'
+  extrinsic_authorship: 'No author is named on the document itself — the Author line is redacted under FOIA exemption (b)(6) and the Prepared by line under (b)(3):10 USC 424. The DIA-to-Congress AAWSAP products list attributes the report to Dr. W. Culbreth of the University of Nevada – Las Vegas at attachment #30 (titled "Aneutronic Fusion Propulsion II"). The document''s own body does not carry the name on its face. Nothing is asserted beyond what the products list states and the document face shows.'
+quotes:
+- id: q1
+  added_date: '2026-06-19'
+  text: >-
+    This product is one of a series of advanced technology reports produced in FY 2010 under the Defense
+    Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapons System Applications
+    (AAWSA) Program.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Front matter, "Prepared by" block'
+  significance: >-
+    Establishes the document's provenance — one of the FY 2010 AAWSA Program advanced-technology
+    reports (the DIRD series), prepared by the DIA. The (b)(3):10 USC 424 and (b)(6) redactions
+    mark the program manager / author identities withheld under statute.
+  context: >-
+    Front-matter authorship block on the title-verso page, beneath "Prepared by: Defense Intelligence Agency."
+  claim_group: provenance-aawsa-program
+- id: q2
+  added_date: '2026-06-19'
+  text: >-
+    Comments or questions pertaining to this document should be addressed to
+    (b)(3):10 USC 424;(b)(6) AAWSA Program Manager, Defense Intelligence Agency, ATTN: (b)(3):10 USC 424
+    (b)(3):10 USC 424 Bldg 6000, Washington D.C. 20340-5100.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Front matter, "Prepared by" block'
+  significance: >-
+    Routes the document to the AAWSA Program Manager at the DIA, Bldg 6000, Washington D.C. — the
+    issuing-office address block, with the program manager's name redacted under (b)(3)/(b)(6).
+  context: >-
+    Front-matter contact / routing block, immediately following the AAWSA Program series statement.
+  claim_group: provenance-aawsa-program
+- id: q3
+  added_date: '2026-06-19'
+  text: >-
+    The Defense Intelligence Reference Document provides nonsubstantive but
+    authoritative reference information related to intelligence topics or methodologies.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Front matter, document-type statement'
+  significance: >-
+    The DIRD series' self-description / disclaimer — the standard boilerplate characterizing a
+    Defense Intelligence Reference Document as "nonsubstantive but authoritative."
+  context: >-
+    Front-matter document-type statement directly under the "(U) Aneutronic Fusion Propulsion" title line.
+  claim_group: provenance-dird-series
+- id: q4
+  added_date: '2026-06-19'
+  text: >-
+    Such "aneutronic" fusion fuels, such as hydrogen fusing with Boron-11, have been studied
+    extensively for space propulsion applications since the 1980s.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Summary'
+  significance: >-
+    States the document's central premise — aneutronic fuels (notably p-B11) avoid the fast-neutron
+    shielding and tritium-breeding burdens of D-T fusion and have a long (since-1980s) space-propulsion
+    research lineage.
+  context: >-
+    Opening Summary paragraph framing why aneutronic fusion is attractive for propulsion.
+  claim_group: thesis-aneutronic-advantage
+- id: q5
+  added_date: '2026-06-19'
+  text: >-
+    This report reviews the basic fusion plasma physics, design concepts that
+    apply aneutronic fusion for propulsion, and the requirements for transitioning
+    to space. The predominant concepts studied include magnetic field reversed
+    configuration, dense plasma focus and inertial electrostatic confinement.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Summary'
+  significance: >-
+    The report's scope statement, naming the three predominant aneutronic confinement concepts it
+    assesses — field-reversed configuration (FRC), dense plasma focus (DPF), and inertial electrostatic
+    confinement (IEC).
+  context: >-
+    Second Summary paragraph stating scope and the concepts reviewed.
+  claim_group: thesis-scope
+- id: q6
+  added_date: '2026-06-19'
+  text: >-
+    The future technology development of aneutronic fusion propulsion will
+    initially be motivated by the very large GEO satellites that will be developed in
+    the next 20 years for commercial and military broadband communication.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Summary'
+  significance: >-
+    Identifies the near-term driver for the technology — large GEO broadband communication satellites
+    (commercial and military) — tying a speculative propulsion concept to a concrete projected need.
+  context: >-
+    Closing Summary paragraph on the technology's motivating application.
+  claim_group: applications-driver
+- id: q7
+  added_date: '2026-06-19'
+  text: >-
+    When Lyman Spitzer invented the Stellarator in 1951, it was expected to take
+    only 5 years of concentrated plasma physics experiments to harness the fusion of
+    hydrogen ions confined by magnetic fields.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 1: Concept Overview'
+  significance: >-
+    Historical framing crediting Lyman Spitzer with the 1951 invention of the Stellarator and the
+    original (over-optimistic) 5-year timeline for controlled fusion.
+  context: >-
+    Opening of Chapter 1, recounting the 60-year history of controlled-fusion aspiration.
+  claim_group: history-fusion-development
+- id: q8
+  added_date: '2026-06-19'
+  text: >-
+    In 1983, a rediscovery was made by Robert Bussard of a fusion device invented by
+    Robert Hirsch in his 1966 Ph.D. thesis. The Fusor, as Hirsch named it with his thesis
+    advisor and famous inventor Philo Farnsworth, simply used spherically concentric
+    electrodes in a vacuum chamber.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 1: Concept Overview'
+  significance: >-
+    Traces the IEC lineage — Robert Hirsch's 1966 Ph.D.-thesis Fusor (named with advisor Philo
+    Farnsworth), rediscovered by Robert Bussard in 1983 — the device family underpinning the report's
+    aneutronic propulsion concepts.
+  context: >-
+    Chapter 1 historical narrative on the origin of inertial electrostatic confinement.
+  claim_group: history-fusor-iec-lineage
+- id: q9
+  added_date: '2026-06-19'
+  text: >-
+    This resurgence of alternate confinement concepts was immediately applied to fusion space
+    propulsion since it was recognized that there would be an advantage over nuclear
+    fission propulsion with its costly safety requirements. For mitigating shielding mass and
+    tritium fuel launch-safety concerns, non-neutron-generating "aneutronic" fusion fuels
+    were also adopted.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 1: Concept Overview'
+  significance: >-
+    Articulates the rationale for aneutronic fusion propulsion over fission — avoiding shielding mass and
+    tritium launch-safety burdens — the core argument motivating the whole report.
+  context: >-
+    Chapter 1 paragraph on why alternate-confinement aneutronic concepts were applied to space propulsion.
+  claim_group: thesis-aneutronic-advantage
+- id: q10
+  added_date: '2026-06-19'
+  text: >-
+    Despite the attention propulsion has gotten from the scientific community, the problem
+    has been insufficiently addressed by the space science community.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 1: Concept Overview'
+  significance: >-
+    The report's gap claim — fusion propulsion is studied by physicists but under-addressed by the space
+    science community, motivating the report's call to introduce launch / assembly / operations concerns
+    early in design.
+  context: >-
+    Chapter 1 closing argument on the need for space-application focus.
+  claim_group: thesis-gap
+- id: q11
+  added_date: '2026-06-19'
+  text: >-
+    This concept is being pursued in the United States by the Office of Fusion Energy
+    Sciences of the Department of Energy. Currently there are two classes: High-gain magneto-inertial fusion (MIF) and low-to-intermediate-gain magneto-inertial fusion.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 2, section "MAGNETO-INERTIAL CONFINEMENT"'
+  significance: >-
+    Attributes the U.S. magneto-inertial fusion (MIF) program to the DOE Office of Fusion Energy
+    Sciences and distinguishes its two gain classes — load-bearing for the program-mapping dimension.
+  context: >-
+    Chapter 2 finding on magneto-inertial confinement, naming the sponsoring DOE office.
+  claim_group: section-finding-magneto-inertial
+- id: q12
+  added_date: '2026-06-19'
+  text: >-
+    Such is the case for the Magnetized Target Fusion experiment being performed at LANL
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 2, section "MAGNETO-INERTIAL CONFINEMENT" (Low-to-Intermediate MIF)'
+  significance: >-
+    Names the Magnetized Target Fusion experiment at Los Alamos National Laboratory (LANL) as the
+    low-to-intermediate-gain MIF exemplar — a concrete program / facility reference.
+  context: >-
+    Chapter 2 subsection on low-to-intermediate-gain MIF, referencing Figure 6.
+  claim_group: section-finding-magneto-inertial
+- id: q13
+  added_date: '2026-06-19'
+  text: >-
+    Controlled nuclear fusion reactors have been seriously studied since the late 1960s after tokomaks demonstrated a very promising improvement in temperature and confinement time that had potential to become power-producing reactors.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "FUSION REACTORS FOR PROPULSION"'
+  significance: >-
+    Opens the fusion-propulsion history (note the recurring "tokomak" spelling), dating serious
+    controlled-fusion-reactor study to the late 1960s.
+  context: >-
+    Chapter 3 lead paragraph framing the propulsion-reactor research history.
+  claim_group: section-finding-fusion-propulsion
+- id: q14
+  added_date: '2026-06-19'
+  text: >-
+    Only (D,3He) (deuterium helium-3) and (p,11B) (hydrogen boron) fuels have been considered because of the higher specific powers achievable for air and space flight.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "FUSION REACTORS FOR PROPULSION"'
+  significance: >-
+    The key fuel-selection finding — only D-He3 and p-B11 are considered for propulsion, because of the
+    higher specific powers and to avoid the 14-MeV-neutron shielding and tritium-breeding burdens of DT.
+  context: >-
+    Chapter 3 paragraph explaining why propulsion studies abandoned DT fuels.
+  claim_group: section-finding-fusion-propulsion
+- id: q15
+  added_date: '2026-06-19'
+  text: >-
+    (U) The seminal study on fusion propulsion that developed specific design parameters was performed in 1993.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "Field-Reversed Configuration Reactors"'
+  significance: >-
+    Designates the 1993 study (endnote 10, Santarius and Logan) as the seminal fusion-propulsion design
+    study — the (U) marking attests this sentence is portion-marked Unclassified.
+  context: >-
+    Chapter 3, opening the Field-Reversed Configuration Reactors subsection (cites endnote 10).
+  claim_group: section-finding-frc-reactors
+- id: q16
+  added_date: '2026-06-19'
+  text: >-
+    Optimization of this conceptual design using the FRC plasma confinement using colliding beams has led to a much more compact configuration of 33 Mg producing 100 MW (shown in Figure 9).
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "Field-Reversed Configuration Reactors"'
+  significance: >-
+    Reports the colliding-beam FRC optimization result — a 33-metric-ton, 100-MW reactor (endnote 11,
+    Wessel/Binderbauer/Rostoker et al.) — a quantitative design milestone the report builds on.
+  context: >-
+    Chapter 3 FRC reactor subsection (cites endnote 11; Figure 9).
+  claim_group: section-finding-frc-reactors
+- id: q17
+  added_date: '2026-06-19'
+  text: >-
+    A parametric analysis by Knecht12 has shown that a system of 16 to 24 Mg can produce 400-900 MW of power with thrusts of 500-1000 kN at Isp of 1,500-2,000 seconds.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "Dense Plasma Focus Reactors"'
+  significance: >-
+    The DPF reactor performance finding (Knecht, endnote 12) — a 16-24 Mg p-B11 system producing
+    400-900 MW and 500-1000 kN thrust — central to the report's claim that DPF is the lightest concept.
+  context: >-
+    Chapter 3 Dense Plasma Focus Reactors subsection (cites endnote 12; the marker "Knecht12" is the
+    inline endnote-12 reference).
+  claim_group: section-finding-dpf-reactors
+- id: q18
+  added_date: '2026-06-19'
+  text: >-
+    The DPF reactor is the lightest concept at 16 Mg (16 metric tons) and could
+    produce 800 MW of power with thrust levels of 1000 kN for space propulsion through
+    ejection of high-energy ions.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "AIR PROPULSION"'
+  significance: >-
+    States the headline comparative result — DPF is the lightest reactor concept (16 Mg, 800 MW,
+    1000 kN) — while the same paragraph shows it is still far too heavy for ground-to-hypersonic aircraft lift.
+  context: >-
+    Chapter 3 Air Propulsion section, contrasting space-propulsion adequacy against aircraft-lift shortfall.
+  claim_group: section-finding-air-propulsion
+- id: q19
+  added_date: '2026-06-19'
+  text: >-
+    The European Space Agency (ESA) has tested this design using argon
+    gas and found that the double layer is stable enough to reliably accelerate ions. ESA is
+    currently pursuing this technology for possible use in future missions.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "PLASMA THRUSTER" (Helicon Double Layer)'
+  significance: >-
+    Attributes helicon-double-layer thruster testing (argon gas) to the European Space Agency — an active
+    international program reference.
+  context: >-
+    Chapter 3 Helicon Double Layer subsection.
+  claim_group: section-finding-plasma-thruster
+- id: q20
+  added_date: '2026-06-19'
+  text: >-
+    AdAstra is currently testing the VX-200 engine (a
+    200-kW engine).
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "PLASMA THRUSTER" (VASIMR Thruster)'
+  significance: >-
+    Names AdAstra (Ad Astra Rocket Company) as the developer testing the 200-kW VX-200 VASIMR engine
+    — a privately funded program reference, with NASA's planned ISS test in the same passage.
+  context: >-
+    Chapter 3 VASIMR Thruster subsection.
+  claim_group: section-finding-plasma-thruster
+- id: q21
+  added_date: '2026-06-19'
+  text: >-
+    NASA intends
+    to test this engine on the International Space Station using a large battery to power it
+    during the tests.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 3, section "PLASMA THRUSTER" (VASIMR Thruster)'
+  significance: >-
+    Reports NASA's stated intent to test the VX-200 VASIMR engine aboard the International Space Station
+    — links the propulsion concept to a concrete planned NASA/ISS demonstration.
+  context: >-
+    Chapter 3 VASIMR Thruster subsection, immediately following the AdAstra / VX-200 description.
+  claim_group: section-finding-plasma-thruster
+- id: q22
+  added_date: '2026-06-19'
+  text: >-
+    High-power Hall Current Thrusters
+    (HCT) that electrostatically accelerate Xe ions have been developed by NASA with
+    discharge power levels ranging from 6.4 kilowatts to 72.5 kilowatts.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 4, section "EARTH ORBIT"'
+  significance: >-
+    Attributes high-power Hall Current Thruster development (Xe ions, 6.4-72.5 kW) to NASA — the
+    baseline technology aneutronic-fusion-enhanced ion thrusters would supersede.
+  context: >-
+    Chapter 4 Earth Orbit section (cites endnote 16, DeGrys et al.).
+  claim_group: section-finding-earth-orbit
+- id: q23
+  added_date: '2026-06-19'
+  text: >-
+    More recently, AeroJet together with Lockheed Martin Space Systems
+    Company have qualified a 4.5-kW Hall Thruster Propulsion System (HTPS) that
+    demonstrated 244 mN of thrust with a specific impulse of 1,981 seconds incorporating
+    a 400-volt acceleration potential. These thrusters were flown in 2010 on military
+    communication and surveillance satellites.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 4, section "EARTH ORBIT"'
+  significance: >-
+    Names AeroJet and Lockheed Martin Space Systems Company as qualifiers of the 4.5-kW HTPS Hall
+    thruster flown in 2010 on military communication and surveillance satellites — a contractor / fielded-system reference.
+  context: >-
+    Chapter 4 Earth Orbit section, on the current state of qualified Hall thrusters.
+  claim_group: section-finding-earth-orbit
+- id: q24
+  added_date: '2026-06-19'
+  text: >-
+    However, in 1960 Robert Bussard
+    proposed the use of magnetic fields to scoop interstellar hydrogen to fuel a fusion
+    rocket to propel a spacecraft now know as the Bussard Ram Jet (shown in Figure 16).
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 4, section "INTERSTELLAR"'
+  significance: >-
+    Credits Robert Bussard's 1960 interstellar-ramjet proposal (endnote 20) — the namesake "Bussard Ram
+    Jet" concept — while the report judges the scoop and power requirements make it unlikely to be realized.
+  context: >-
+    Chapter 4 Interstellar section (cites endnote 20). Note "now know as" sic in source.
+  claim_group: section-finding-interstellar
+- id: q25
+  added_date: '2026-06-19'
+  text: >-
+    The current U.S. Department of Energy fusion program is administered by the Office of
+    Fusion Energy Sciences (http://www.science.doe.gov/ofes/). The FY2010 budget was
+    $421 million, with over half devoted to tokomak plasma physics and experimental
+    facilities at Princeton Plasma Physics Lab, MIT, and General Atomics.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
+  significance: >-
+    The DOE program-mapping finding — the $421M FY2010 fusion budget under the Office of Fusion Energy
+    Sciences, concentrated at Princeton Plasma Physics Lab, MIT, and General Atomics. Names multiple institutions.
+  context: >-
+    Chapter 5 U.S. DOE Programs section, opening the recent-developments survey.
+  claim_group: section-finding-doe-programs
+- id: q26
+  added_date: '2026-06-19'
+  text: >-
+    The Advanced
+    Concepts and High-Energy-Density Laboratory Plasma Physics (HEDLPP) programs,
+    which support plasma confinement theory and experiments for innovative fusion reactor
+    concepts and fusion propulsion, are funded at ~$20 million.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
+  significance: >-
+    Names the DOE Advanced Concepts and High-Energy-Density Laboratory Plasma Physics (HEDLPP)
+    program (~$20M) as the funding line supporting innovative-concept and fusion-propulsion research.
+  context: >-
+    Chapter 5 U.S. DOE Programs section, identifying the relevant funding line.
+  claim_group: section-finding-doe-programs
+- id: q27
+  added_date: '2026-06-19'
+  text: >-
+    Technology development funding is directed toward tokomak-related reactors with $135
+    million contributed to ITER. The National Ignition Test Facility is funded by DOE's
+    National Nuclear Security Administration and is dedicated for nuclear weapons
+    simulation. The NNSA-funded research also includes Magneto Target Fusion
+    experiments at Sandia and Lawrence Berkeley National Labs.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
+  significance: >-
+    Maps the remaining DOE technology funding — $135M to ITER, the NIF funded by NNSA for nuclear-weapons simulation, and NNSA Magneto Target Fusion at Sandia and Lawrence Berkeley National Labs. Dense with institution references.
+  context: >-
+    Chapter 5 U.S. DOE Programs section, closing the program-funding breakdown.
+  claim_group: section-finding-doe-programs
+- id: q28
+  added_date: '2026-06-19'
+  text: >-
+    The International Thermonuclear Experimental Reactor (ITER) is a joint undertaking of
+    the European Union, China, India, Japan, Korea, Russia, and the United States.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "INTERNATIONAL PROGRAMS"'
+  significance: >-
+    Identifies ITER and its seven-party membership (EU, China, India, Japan, Korea, Russia, United States)
+    — the principal international fusion undertaking the report tracks.
+  context: >-
+    Chapter 5 International Programs section, opening the ITER discussion.
+  claim_group: section-finding-international-programs
+- id: q29
+  added_date: '2026-06-19'
+  text: >-
+    It has since been downscaled in
+    operating requirements due to the cost and problems associated with tritium fuel and
+    containment with a 2025 operating date and cost of $25B.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "INTERNATIONAL PROGRAMS"'
+  significance: >-
+    Reports ITER's schedule slip and cost growth — downscaled to a 2025 operating date at $25B because of
+    tritium-fuel and containment problems — evidence in the report's argument against DT-tokamak power.
+  context: >-
+    Chapter 5 International Programs section, on ITER's revised schedule and budget.
+  claim_group: section-finding-international-programs
+- id: q30
+  added_date: '2026-06-19'
+  text: >-
+    The issues of tokomaks as a potential source of fusion power are dramatized by the
+    recent graphic (Figure 18) published in the American Nuclear Society's Fusion Energy
+    Division Newsletter (Dec 2007) depicting the GE Next-Generation Boiling-Water Reactor
+    (Economic Simplified BWR).
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "INTERNATIONAL PROGRAMS"'
+  significance: >-
+    Cites the American Nuclear Society Fusion Energy Division Newsletter (Dec 2007) and the GE ESBWR
+    comparison to argue a tokamak power plant could not compete economically with fission.
+  context: >-
+    Chapter 5 International Programs section, introducing the tokamak-vs-BWR cost comparison (Figure 18).
+  claim_group: section-finding-international-programs
+- id: q31
+  added_date: '2026-06-19'
+  text: >-
+    From 1995 until 2002, NASA had funded advanced space propulsion studies through
+    Marshall Space Flight Center. These studies included the application of fusion and
+    matter-antimatter propulsion for space exploration missions.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "NASA PROGRAMS"'
+  significance: >-
+    Records NASA's 1995-2002 advanced-propulsion funding through Marshall Space Flight Center (including
+    fusion and matter-antimatter propulsion) — a historical NASA program reference.
+  context: >-
+    Chapter 5 NASA Programs section, opening the NASA-history paragraph.
+  claim_group: section-finding-nasa-programs
+- id: q32
+  added_date: '2026-06-19'
+  text: >-
+    Recently, NASA has
+    initiated a 5-year high-power electric propulsion demonstration program to develop the
+    technologies for manned missions to Mars in a 20-plus-year timeframe.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "NASA PROGRAMS"'
+  significance: >-
+    Reports NASA's then-new 5-year high-power electric propulsion demonstration program targeting manned
+    Mars missions — a program the report flags as a possible vehicle for p-B11 fusion-assisted propulsion.
+  context: >-
+    Chapter 5 NASA Programs section, on the current NASA program.
+  claim_group: section-finding-nasa-programs
+- id: q33
+  added_date: '2026-06-19'
+  text: >-
+    Both Lawrenceville
+    Plasma Physics (which uses DPF, dense plasma focus,  confinement) and TriAlpha
+    (which uses beam-heated FRC, field reversed configuration) have been shown
+    conceptually to have low-mass aneutronic fusion propulsion systems that could use
+    direct conversion for power and plasma ion for propulsion.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 5, section "PRIVATELY FUNDED PROGRAMS"'
+  significance: >-
+    Singles out Lawrenceville Plasma Physics (DPF) and TriAlpha (beam-heated FRC) among the privately
+    funded startups as the two with conceptually demonstrated low-mass aneutronic propulsion potential.
+  context: >-
+    Chapter 5 Privately Funded Programs section, highlighting two of the Table 4 companies.
+  claim_group: section-finding-private-programs
+- id: q34
+  added_date: '2026-06-19'
+  text: >-
+    This
+    transition, however, may depend upon the success of the developments of privately
+    funded ventures attempting to develop terrestrial power.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 7: Conclusions'
+  significance: >-
+    Key conclusion — the transition of aneutronic fusion propulsion to space may hinge on privately funded
+    terrestrial-power ventures, since military / space applications have a lower ROI threshold than terrestrial power.
+  context: >-
+    Chapter 7 Conclusions, on the dependence on private-sector progress.
+  claim_group: conclusions
+- id: q35
+  added_date: '2026-06-19'
+  text: >-
+    Pulsed-powered DPF or IEC aneutronic fusion thrusters may have near-term
+    applications to replace current satellite ion thrusters. This could be extended to the very
+    high-power domain of beam-assisted FRC for manned interplanetary flight.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 7: Conclusions'
+  significance: >-
+    The headline conclusion on application sequencing — near-term DPF/IEC thrusters replacing satellite ion
+    thrusters, extending to beam-assisted FRC for manned interplanetary flight.
+  context: >-
+    Chapter 7 Conclusions, summarizing the near-to-far application path.
+  claim_group: conclusions
+- id: q36
+  added_date: '2026-06-19'
+  text: >-
+    Aneutronic fusion propulsion will not be
+    practical beyond the solar system unless breakthrough propulsion physics is developed
+    that can assist the flight to the next stellar system where fusion thrusters can then be
+    used.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 7: Conclusions'
+  significance: >-
+    The report's interstellar limit — aneutronic fusion alone cannot reach beyond the solar system absent
+    "breakthrough propulsion physics," echoing the Summary's bullet caveat.
+  context: >-
+    Chapter 7 Conclusions, on the interstellar boundary of the technology.
+  claim_group: conclusions
+- id: q37
+  added_date: '2026-06-19'
+  text: >-
+    The future
+    needs to be focused more on science and engineering and less on science fiction.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 7: Conclusions'
+  significance: >-
+    The closing exhortation — physicists who pioneered the technology must now work with space-systems
+    companies, refocusing "less on science fiction" — the report's rhetorical capstone.
+  context: >-
+    Final sentence of Chapter 7 Conclusions.
+  claim_group: conclusions
+- id: q38
+  added_date: '2026-06-19'
+  text: >-
+    COPYRIGHT WARNING: Further dissemination of the photographs in this publication is not authorized.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Front matter, copyright warning'
+  significance: >-
+    The publication's dissemination restriction on its photographs — a handling marking distinct from the
+    UNCLASSIFIED//FOR OFFICIAL USE ONLY banner.
+  context: >-
+    Front-matter copyright warning, between the authors block and the AAWSA Program series statement.
+  claim_group: provenance-handling-markings
+naming_quirks:
+- id: nq1
+  added_date: '2026-06-19'
+  observed: 'AAWSA'
+  canonical: 'AAWSAP'
+  location: 'Front matter, "Prepared by" block'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-06-19'
+  observed: 'tokomak'
+  canonical: 'tokamak'
+  location: 'Chapter 3, section "FUSION REACTORS FOR PROPULSION"'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-06-19'
+  observed: 'National Ignition Test Facility'
+  canonical: 'National Ignition Facility (NIF)'
+  location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-06-19'
+  observed: 'AdAstra'
+  canonical: 'Ad Astra Rocket Company'
+  location: 'Chapter 3, section "PLASMA THRUSTER" (VASIMR Thruster)'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-06-19'
+  observed: 'AeroJet'
+  canonical: 'Aerojet'
+  location: 'Chapter 4, section "EARTH ORBIT"'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-06-19'
+  observed: 'TriAlpha'
+  canonical: 'Tri Alpha Energy'
+  location: 'Chapter 5, section "PRIVATELY FUNDED PROGRAMS"'
+  source_path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+  resolution: preserve-as-sic-in-quotes
+description: 'A Defense Intelligence Reference Document in the Defense Futures series — one of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency ([`/organizations/dia`]), (b)(3):10 USC 424 Advanced Aerospace Weapons System Applications (AAWSA) Program ([`/organizations/aawsap`]). Where the document shows Prepared by and Authors, it shows (b)(3):10 USC 424 and (b)(6); a COPYRIGHT WARNING states that further dissemination of the photographs in this publication is not authorized, and comments or questions pertaining to the document are to be addressed to the AAWSA Program Manager, Defense Intelligence Agency, Bldg 6000, Washington D.C. The document is made available through the declassification efforts and research of John Greenewald, Jr. ([`/people/john-greenewald`]), creator of The Black Vault ([`/organizations/the-black-vault`]). It is one of the FY 2010 AAWSA Program advanced technology reports ([`/documents/dia-aatip-products-list-2018`]), and is Part II to Aneutronic Fusion Propulsion ([`/documents/dird-30-aneutronic-fusion-propulsion`]).
+
+
+  The report reviews the basic fusion plasma physics, design concepts that apply aneutronic fusion for propulsion, and the requirements for transitioning to space. Such aneutronic fusion fuels, such as hydrogen fusing with Boron-11, have been studied extensively for space propulsion applications since the 1980s, since non-neutron-generating fuels are adopted for mitigating shielding mass and tritium fuel launch-safety concerns over fission propulsion with its costly safety requirements. The predominant concepts studied include magnetic field reversed configuration, dense plasma focus and inertial electrostatic confinement. Controlled fusion energy production has been under development for 60 years — from Lyman Spitzer''s 1951 Stellarator, through the Fusor invented by Robert Hirsch in his 1966 Ph.D. thesis (named with his thesis advisor Philo Farnsworth) and a 1983 rediscovery by Robert Bussard — and the report covers current government and privately funded programs, among them the U.S. Department of Energy Office of Fusion Energy Sciences fusion program, the international ITER undertaking, NASA''s high-power electric propulsion work, and the privately funded ventures of Lawrenceville Plasma Physics (which uses dense plasma focus) and TriAlpha ([`/organizations/tri-alpha-energy`]) (which uses beam-heated field reversed configuration).
+
+
+  The future technology development of aneutronic fusion propulsion will initially be motivated by the very large GEO satellites that will be developed for commercial and military broadband communication. Of the concepts studied, the dense plasma focus reactor is the lightest concept at 16 metric tons and could produce 800 MW of power with 1000 kN of thrust, though the application of this fusion reactor for propelling aircraft from ground to hypersonic speeds would be very difficult. In the Conclusions, pulsed-powered DPF or IEC aneutronic fusion thrusters may have near-term applications to replace current satellite ion thrusters, which could be extended to the very high-power domain of beam-assisted FRC for manned interplanetary flight; this transition may depend upon the success of the developments of privately funded ventures attempting to develop terrestrial power; aneutronic fusion propulsion will not be practical beyond the solar system unless breakthrough propulsion physics is developed; and the future needs to be focused more on science and engineering and less on science fiction.
+
+  '
+associated_entities:
+- /documents/dia-aatip-products-list-2018
+- /documents/dird-30-aneutronic-fusion-propulsion
+- /locations/alpha-centauri
+- /locations/mars
+- /locations/washington-dc
+- /organizations/aawsap
+- /organizations/ad-astra-rocket-company
+- /organizations/aerojet
+- /organizations/american-nuclear-society
+- /organizations/department-of-energy
+- /organizations/dia
+- /organizations/doe-office-of-fusion-energy-sciences
+- /organizations/electron-power-systems
+- /organizations/emc2
+- /organizations/european-space-agency
+- /organizations/general-atomics
+- /organizations/general-electric
+- /organizations/general-fusion
+- /organizations/iter
+- /organizations/lawrence-berkeley-national-laboratory
+- /organizations/lawrenceville-plasma-physics
+- /organizations/lockheed-martin-space-systems-company
+- /organizations/los-alamos-national-laboratory
+- /organizations/marshall-space-flight-center
+- /organizations/massachusetts-institute-of-technology
+- /organizations/nasa
+- /organizations/national-ignition-facility
+- /organizations/national-nuclear-security-administration
+- /organizations/princeton-plasma-physics-laboratory
+- /organizations/sandia-national-laboratories
+- /organizations/the-black-vault
+- /organizations/tri-alpha-energy
+- /organizations/university-of-nevada-las-vegas
+- /people/john-greenewald
+- /people/lyman-spitzer
+- /people/philo-farnsworth
+- /people/robert-bussard
+- /people/robert-hirsch
+- /people/stephen-knecht
+- /people/w-culbreth
+cited_works:
+- id: cw1
+  added_date: '2026-06-19'
+  citation_key: '1'
+  author: 'Elmore, W.C., J.L. Tuck, and K.M. Watson'
+  year: 1959
+  title: 'On the inertial-electrostatic confinement of a plasma'
+  citation_verbatim: >-
+    1 Elmore, W.C., J.L. Tuck, and K.M. Watson, "On the inertial-electrostatic confinement of a plasma," Phys. Fluids, 2,
+    239, 1959.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [1]'
+- id: cw2
+  added_date: '2026-06-19'
+  citation_key: '2'
+  author: 'Farnsworth, P.T.'
+  year: 1966
+  title: 'Electric Discharge Device for Producing Interactions Between Nuclei (U.S. Patent No. 3,358,402)'
+  citation_verbatim: >-
+    2 Farnsworth, P.T., "Electric Discharge Device for Producing Interactions Between Nuclei, U.S. Patent No. 3,358,402,
+    issued June 28, 1966, initially filed May 5, 1956, reviewed Oct. 18, 1960, filed Jan. 11, 1962.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [2]'
+- id: cw3
+  added_date: '2026-06-19'
+  citation_key: '3'
+  author: 'Hirsch, R.L.'
+  year: 1968
+  title: 'Experimental studies of a deep, negative, electrostatic potential well in spherical geometry'
+  citation_verbatim: >-
+    3 Hirsch, R.L., Experimental studies of a deep, negative, electrostatic potential well in spherical geometry," Phys.
+    Fluids, 11, 2486, 1968.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [3]'
+- id: cw4
+  added_date: '2026-06-19'
+  citation_key: '4'
+  author: 'Rider, T.H.'
+  year: 1995
+  title: 'A general critique of inertial-electrostatic confinement fusion systems'
+  citation_verbatim: >-
+    4 Rider, T.H., "A general critique of inertial-electrostatic confinement fusion systems," Phys. Plasmas 2 (6), 1853,
+    1995.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [4]'
+- id: cw5
+  added_date: '2026-06-19'
+  citation_key: '5'
+  author: 'Bussard, R.W.'
+  year: 1991
+  title: 'Some physics considerations of magnetic inertial-electrostatic confinement: A new concept for spherical converging-flow fusion'
+  citation_verbatim: >-
+    5 Bussard, R.W., "Some physics considerations of magnetic inertial-electrostatic confinement: A new concept for
+    spherical converging-flow fusion," Fusion Tech., 19, 273, 1991.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [5]'
+- id: cw6
+  added_date: '2026-06-19'
+  citation_key: '6'
+  author: 'Barnes, D.C., R.A. Nebel, and L. Turner'
+  year: 1993
+  title: 'Production and application of dense Penning trap plasmas'
+  citation_verbatim: >-
+    6 Barnes, D.C., R.A. Nebel, and L. Turner, "Production and application of dense Penning trap plasmas," Phys. Fluids,
+    B 5, 3651, 1993.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [6]'
+- id: cw7
+  added_date: '2026-06-19'
+  citation_key: '7'
+  author: 'Nebel, R.A. and D.C. Barnes'
+  year: 1998
+  title: 'The periodically oscillating plasma sphere'
+  citation_verbatim: >-
+    7 Nebel, R.A. and D.C. Barnes, "The periodically oscillating plasma sphere," Fusion Tech., 38, 28, 1998.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [7]'
+- id: cw8
+  added_date: '2026-06-19'
+  citation_key: '8'
+  author: 'Park, J., R.A. Nebel, S. Stange, and S. Krupakar Murali'
+  year: 2005
+  title: 'Experimental observation of a periodically oscillating plasma sphere in a gridded inertial electrostatic confinement device'
+  citation_verbatim: >-
+    8 Park, J., R.A. Nebel, S. Stange, and S. Krupakar Murali, "Experimental observation of a periodically oscillating
+    plasma sphere in a gridded inertial electrostatic confinement device," Phys. Rev. Lett., doi: 10.1103/Phys. Rev
+    Lett., 95.015003, 2005.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [8]'
+- id: cw9
+  added_date: '2026-06-19'
+  citation_key: '9'
+  author: 'Thio, Y.C.F.'
+  year: 2008
+  title: 'Status of the US program in magneto-inertial fusion'
+  citation_verbatim: >-
+    9 Thio, Y.C.F., "Status of the US program in magneto-inertial fusion," J. Phys.: Conf. Ser. 112 042084, doi:
+    10.1088/1742-6596/112/4/042084, 2008.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [9]'
+- id: cw10
+  added_date: '2026-06-19'
+  citation_key: '10'
+  author: 'J.F. Santarius and B.G. Logan'
+  year: 1998
+  title: 'Generic Magnetic Fusion Rocket Model'
+  citation_verbatim: >-
+    10 J.F. Santarius and B.G. Logan, "Generic Magnetic Fusion Rocket Model," Journal of Propulsion and Power 14, 519
+    (1998); Propulsion and Power 14, 519 (1998);UFDM-914 April 1993 presented at 29th AIAA Joint Propulsion Conf,
+    paper AIAA-93-2029, June28-30, 1993. Monterey, CA
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [10]'
+- id: cw11
+  added_date: '2026-06-19'
+  citation_key: '11'
+  author: "F.J. Wessel, M.W. Binderbauer, N. Rostoker, H.U. Rahman, and J.O'Toole"
+  year: 2000
+  title: 'Colliding Beam Fusion Reactor Space Propulsion System'
+  citation_verbatim: >-
+    11 F.J. Wessel, M.W. Binderbauer, N. Rostoker, H.U. Rahman, and J.O'Toole, "Colliding Beam Fusion Reactor Space
+    Propulsion System," Space Technology and Applications International Forum--2000 (American Institute of Physics,
+    Albuquerque, NM, 2000), p. 1425.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [11]'
+- id: cw12
+  added_date: '2026-06-19'
+  citation_key: '12'
+  author: 'Knecht, S.D., R.H. Thomas, F.B. Mead, G. H. Miley and D. Froning'
+  title: 'Propulsion and Power Density Capabilities of Dense Plasma Focus (DPF) Fusion Systems for Military Aerospace Vehicles'
+  citation_verbatim: >-
+    12 Knecht, S.D., R.H. Thomas, F.B. Mead , G. H. Miley and D. Froning, "Propulsion and Power Density Capabilities of
+    Dense Plasma Focus (DPF) Fusion Systems for Military Aerospace Vehicles," in Proceedings of Space Technology
+    and Applications International Forum (STAIF-006), edited by M. El-Genk, AIP Conference Proceedings, p. 1232-1239.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [12]'
+- id: cw13
+  added_date: '2026-06-19'
+  citation_key: '13'
+  author: 'Thomas, R., Yang, Y., Miley, G.H., Mead, F.B.'
+  year: 2005
+  title: 'Advancements in Dense Plasma Focus for Space Propulsion'
+  citation_verbatim: >-
+    13 Thomas, R., Yang, Y., Miley, G.H., Mead, F.B.., "Advancements in Dense Plasma Focus for Space Propulsion," in
+    Proceedings of Space Technology and Applications International Forum (STAIF-005), edited by M. El-Genk, AIP
+    Conference Proceedings 746, Melville, New York, 2005 pp. 536-543.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [13]'
+- id: cw14
+  added_date: '2026-06-19'
+  citation_key: '14'
+  author: 'J. Slough, R. Milroy, T. Ziemba and S. Woodruff'
+  year: 2007
+  title: 'Compression, Heating and Fusion of Colliding Plasmoids by a Z-theta Driven Plasma Liner'
+  citation_verbatim: >-
+    14 J. Slough, R. Milroy, T. Ziemba and S. Woodruff., "Compression, Heating and Fusion of Colliding Plasmoids by a
+    Z-theta Driven Plasma Liner," J. of Fusion Energy 26, 191, (June 2007).
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [14]'
+- id: cw15
+  added_date: '2026-06-19'
+  citation_key: '15'
+  author: 'H. Froning'
+  year: 2006
+  title: 'Combining MHD Air breathing and Aneutronic Fusion for Aerospace Plane Power and Propulsion'
+  citation_verbatim: >-
+    15 H. Froning, "Combining MHD Air breathing and Aneutronic Fusion for Aerospace Plane Power and Propulsion,"
+    14th AIAA/AHI Space Planes and Hypersonic Systems and Technologies Conference, June 2006.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [15]'
+- id: cw16
+  added_date: '2026-06-19'
+  citation_key: '16'
+  author: 'K. DeGrys, B. Welander, J. Dimicco, S. Wenzel, B. Kay, V. Khayms, and J. Paisley'
+  year: 2005
+  title: '4.5 kW Hall Thruster System Qualification Status'
+  citation_verbatim: >-
+    16 K. DeGrys, B. Welander, J. Dimicco, S. Wenzel, B. Kay, V. Khayms, and J. Paisley "4.5 kW Hall Thruster System
+    Qualification Status," Proc. 41st AIAA/ASME-SAE-ASEE Joint Propulsion Conference, July, 2005
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [16]'
+- id: cw17
+  added_date: '2026-06-19'
+  citation_key: '17'
+  author: 'G. Miley, H. Momota, L. Wu, M. Reilley, V. Teofilo, R. Dell, and R. Hargus'
+  year: 2009
+  title: 'Space Probe Application of IEC Thrusters'
+  citation_verbatim: >-
+    17 G. Miley, H. Momota, L. Wu, M. Reilley, V. Teofilo, R. Dell, and R. Hargus, "Space Probe Application of IEC
+    Thrusters," Fusion Science and Technology 56 1, 533-539 July 2009.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [17]'
+- id: cw18
+  added_date: '2026-06-19'
+  citation_key: '18'
+  author: 'F. Thio et al.'
+  year: 2001
+  title: 'A Summary of the NASA Fusion Propulsion Workshop 2000'
+  citation_verbatim: >-
+    18 F. Thio et al., "A Summary of the NASA Fusion Propulsion Workshop 2000", Proc. 37th AIAA/ASME/SAE/ASEE
+    Joint Propulsion Conference , July 2001.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [18]'
+- id: cw19
+  added_date: '2026-06-19'
+  citation_key: '19'
+  author: 'J. Santarius and F. Thio'
+  year: 2000
+  title: 'Fusion Propulsion: Attractiveness and Issues'
+  citation_verbatim: >-
+    19 J. Santarius and F. Thio, "Fusion Propulsion: Attractiveness and Issues," Proc. of 31st AIAA Plasmadynamics and
+    Lasers Conference, June 2000.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [19]'
+- id: cw20
+  added_date: '2026-06-19'
+  citation_key: '20'
+  author: 'Bussard, R. W.'
+  year: 1960
+  title: 'Galactic Matter and Interstellar Flight'
+  citation_verbatim: >-
+    20 Bussard, R. W., "Galactic Matter and Interstellar Flight," Astronautica Acta, 6, 179-194, 1960.
+  source:
+    path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
+    location: 'Chapter 8: Endnotes, entry [20]'

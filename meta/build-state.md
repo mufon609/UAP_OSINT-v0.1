@@ -53,7 +53,7 @@ Regenerate after any node add / remove / status change:
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (51)
+### Documents (52)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -95,6 +95,7 @@ Regenerate after any node add / remove / status change:
 | `/documents/dird-34-cognitive-limits-unmanned-spacecraft` | primary-source-confirmed | gov-doc |
 | `/documents/dird-35-quantum-computing-organic-molecules-2010` | primary-source-confirmed | gov-doc |
 | `/documents/dird-36-quantum-tomography-negative-energy` | primary-source-confirmed | gov-doc |
+| `/documents/dird-37-aneutronic-fusion-propulsion-ii` | primary-source-confirmed | gov-doc |
 | `/documents/elizondo-qfr-burlison-20241219` | primary-source-confirmed | gov-doc |
 | `/documents/eo-14347-restoring-department-of-war` | primary-source-confirmed | gov-doc |
 | `/documents/hoyer-fy2011-milcon-southern-maryland-20100728` | primary-source-confirmed | gov-doc |
