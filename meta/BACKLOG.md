@@ -216,3 +216,67 @@ work the tool can't do itself:
 **Related:** the [[link-all-load-bearing-references]] working-memory note;
 `scripts/tools/stub-reconcile.py` is the tool; the `link_resolution` broken-link
 registry is the data it reads.
+
+### C4 — Harden the Worker extraction step against large-source timeouts and over-exploration
+
+The Worker role (one invocation per source, the verbatim-extraction boundary)
+showed two robustness gaps on a large OCR-scan source (a 37-page DIRD yielding 38
+quotes + 20 `cited_works`):
+
+- **The monolithic fragment Write is stall-prone.** The Worker emits its entire
+  fragment (all quotes + `cited_works`) in a single `Write` tool-call. On a large
+  source that payload runs tens of KB, and generating it in one shot after a heavy
+  read context can stall the model long enough to trip the stream-idle-timeout —
+  losing the whole extraction, because no incremental progress is saved. The same
+  source extracted cleanly on one Worker run and stalled mid-final-Write on a
+  second (idle-aborted after the work was effectively done). Investigate an
+  incremental / checkpointed fragment write (append per page or per section, so a
+  stall costs one chunk, not the run), a larger agent timeout for large sources, or
+  an explicit size threshold above which the source is chunked — weigh against the
+  byte-exact `merge-fragments.py` transport contract, which assumes one fragment
+  file per source.
+- **The Worker over-explores beyond its assigned source.** Despite the
+  build-protocol "No built node is an example" rule, a Worker read a sibling
+  node's full research artifact (the Part I DIRD) unprompted, plus ran several
+  greps/globs — inflating its context (worsening the stall above) and crossing the
+  no-example boundary. The Worker's job is to extract from its ONE assigned source
+  + scratch; the reuse/precedent survey is the internal-investigator's, threaded
+  forward via `linked_nodes`. Decide whether to tighten the Worker contract and/or
+  add a guard so it reads only its assigned source + scratch. (Per-command Bash /
+  Read scoping is advisory — see `build-protocol` "Mechanical enforcement vs. role
+  discipline" — so a hard guard may not be mechanizable; a contract tightening may
+  be the realistic lever.)
+
+**Related:** the two-scratch footgun — `extract-source.py --source`
+(internal-investigator survey aid) and `--artifact` (Worker scratch) leave a
+corrupt extract and the clean sibling-backed extract side-by-side in `/tmp`; the
+orchestrator must relay the `--artifact` (`-0.txt`, sibling-backed) path, never the
+corrupt survey aid.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C5 — Close the Wayback-submission gap on the all-internal build branch
+
+The `/build` all-internal branch (every load-bearing source already archived
+in-repo, `gaps: []`) skips the External Investigator and **Archive** roles. The
+Archive role is the only step that submits a source to the Wayback Machine
+(`archive.py --submit`), so a node built entirely from reused in-repo sources is
+**never Wayback-submitted** — its manifest entry stays `archive_status: 1` (local
+copy only). The build pipeline alone never closes this; the only closer today is a
+manual `/archive-sweep` at session end, which is easy to forget — so the gap
+accumulates silently across every all-internal build (the DIRD set, built from the
+in-repo Black Vault mirror, sits this way).
+
+The local `/sources/` copy is the integrity guarantee, so this is not data loss —
+but Wayback submission is the insurance the archival discipline promises, and the
+all-internal branch silently skips it.
+
+Decide where the pipeline closes it — a `/build` finalize step that submits any
+`archive_status: 1` source the build touched, an archive-readiness gate that flags
+unsubmitted sources before finalize, or making the end-of-session `/archive-sweep`
+mechanical rather than discipline — then run one sweep to submit the backlog of
+all-internal-built sources already sitting at `archive_status: 1`.
+
+**Blocks:** none.
+**Blocked by:** none.
