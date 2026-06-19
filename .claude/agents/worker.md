@@ -93,9 +93,13 @@ in extracted metadata (e.g. a PDF Author byline) is a `cross_ref_candidate`
 naming the metadata field, never a `quotes[]` entry.
 
 1. Pull the subject's load-bearing verbatim spans (per the voice gate) into
-   `quotes[]` (`id`, `text`, `source.{path,location}`, `significance`,
-   `context`; `observation_type` direct|relayed and `statement_date` on person
-   artifacts). On a transcript, do **not** emit `speaker_id` — the Builder
+   `quotes[]` in the fragment-FILE shape (build-protocol → stub-schemas.md): each
+   quote carries `text` + a top-level `location` string (the source-shape anchor)
+   + optional `significance`, `context`, `claim_group`, `observation_type`
+   direct|relayed, and `statement_date` (person artifacts). Do **not** nest a
+   per-quote `source:` object or hand-key `id` — the bare-string top-level
+   `source:` carries the path, and `merge-fragments.py` stamps each artifact
+   quote's `id` + `source: {path, location}` mechanically. On a transcript, do **not** emit `speaker_id` — the Builder
    derives it from the sibling. For an about-the-subject /
    institutional source, `quotes[]` is legitimately empty.
 2. Propose a `claim_group` label per quote (advisory; the builder normalizes).
