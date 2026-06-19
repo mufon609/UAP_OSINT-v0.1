@@ -1234,6 +1234,15 @@
     extraction_type: ocr-scan
     note: 'AAWSAP DIRD Black Vault #36 — ''Quantum Tomography of Negative Energy States in the Vacuum'', DIA-08-1102-007, ICOD per page 1 (verify at sibling production; this is a ''Defense Futures''-series DIRD dated January 2011, so the 1 December 2009 cutoff of the original batch does NOT apply — the later DIRDs carry mid-2010/late-2010 ICODs), dated 11 January 2011 (per filename), UNCLASSIFIED//FOR OFFICIAL USE ONLY. 52 pages. DIA attachment #34 per the DIA→Congress list (U-18-0001/OCC1, 9 Jan 2018, signed Christine Kapnisi). Author: Dr. E. Davis, EarthTech International (per that DIA list). Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata ''Adobe Acrobat … Paper Capture Plug-in'' — OCR''d document; clean-text .txt sibling required for verbatim-quote derivation per /prepare-ocr-sibling (OCR-scan discipline).'
   archive_status: 1
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_36-DIRD_Quantum_Tomography_of_Negative_Energy_States_in_the_Vacuum.pdf#clean-text-transcription
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: government/dird-36-quantum-tomography-negative-energy-20110111.txt
+    archived_date: '2026-06-19'
+    note: 'Clean-text sibling (VLM page-image read, confirmed against PaddleOCR + Tesseract) of the OCR-scanned dird-36-quantum-tomography-negative-energy-20110111.pdf (paired entry; same path stem). Produced 2026-06-19; zero pages content-blocked in the delivered sibling (one ~11-page range tripped the VLM generative content filter cumulatively mid-transcription, but all three affected pages — physical 20-22 — transcribed cleanly when re-dispatched one page per range, so no page was PaddleOCR-filled). All 54 high-signal PaddleOCR+Tesseract divergences settled against the page images as shared OCR glyph-confusion leave-cases (0 sibling fixes). Black Vault FOIA declassification cover-insert (physical p2) preserved verbatim. Struck-through ''//FOR OFFICIAL USE ONLY'' classification banner transcribed verbatim (strikethrough is presentation, not character content). Figures (3-20) rendered as bracketed [Figure N: caption] placeholders with legible typeset captions transcribed; figure-interior plots/diagrams/schematic prose not reproduced as text. Multi-line display equations rendered as [Equation N] placeholders; legible inline equations transcribed as body text with Unicode operators and sub/superscripts (e.g. iħ, q̂_θ, 10⁸ m/s, μm, 4πc, Ê_i, ρE). Redaction markers preserved verbatim: (b)(3):10 USC 424, (b)(6), and compound (b)(3):10 USC 424;(b)(6).'
+  archive_status: 1
 - url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_37-DIRD_Aneutronic_Fusion_Propulsion_II.pdf
   status: archived
   artifacts:
