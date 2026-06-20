@@ -318,7 +318,7 @@ affiliations:
     location: ¶ board appointment
 - id: a30
   added_date: '2026-04-30'
-  organization_path: /organizations/mitre
+  organization_path: /organizations/mitre-corporation
   role: Senior Adviser — role active as of the September 2, 2020 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested (2020 is the article-attested active-by year, not a confirmed start), end date no later than the June 1 2021 USD(I&S) confirmation
   period_start: '2020'
   period_end: '2021-06'

@@ -20,7 +20,7 @@ context_extrinsic:
   primary_source_url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_17-DIRD_Maverick_Inventor_Versus_Corporate_Inventor-Where_Will_the_Next_major_Innovations_Arise.pdf
   quote_attribution: 'DIRD #17 (Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise?), 30 March 2010 — released via John Greenewald, Jr. / The Black Vault. No author is named on the document (Author line redacted under (b)(6)); the document''s first-person voice ("we will concentrate", "We can draw") is the redacted author.'
   extrinsic_authorship: 'No author is named on the document — the Author line is redacted under (b)(6). The DIA-to-Congress 2018 products list attributes the report to Dr. George Hathaway, Hathaway Consulting (attachment #16). The attribution is corroborated internally only by the document''s own self-citations: Reference 10 (Zinsser, in Hathaway (ed.), the 1981 Non-Conventional Energy Technology symposium proceedings) and Reference 27 (Hathaway, "Nightmares of the Art of Measuring"), which match the first-person "we will concentrate" / "We can draw" voice the document carries.'
-description: 'Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise? is an analysis of where the next major innovations in energy and propulsion are most likely to arise — from the lone "maverick" inventor or from the "corporate" inventor who is a part of a large organization. It is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency ([`/organizations/dia`]), Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]); on the program''s list of these reports ([`/documents/dia-aatip-products-list-2018`]) the author is given as Hathaway ([`/people/george-hathaway`], [`/organizations/hathaway-consulting`]), the document itself carrying no author. Reference 10 and Reference 27 are works by that same author. It is related to [`/documents/dird-14-superconductors-gravity`], carrying no author given, the same AAWSA Administrative Note, and released by the same Black Vault FOIA clearinghouse.
+description: 'Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise? is an analysis of where the next major innovations in energy and propulsion are most likely to arise — from the lone "maverick" inventor or from the "corporate" inventor who is a part of a large organization. It is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency ([`/organizations/dia`]), Advanced Aerospace Weapon System Applications (AAWSA) Program ([`/organizations/aawsap`]); on the program''s list of these reports ([`/documents/dia-aatip-products-list-2018`]) the author is given as Hathaway ([`/people/george-hathaway`], [`/organizations/hathaway-consulting-services`]), the document itself carrying no author. Reference 10 and Reference 27 are works by that same author. It is related to [`/documents/dird-14-superconductors-gravity`], carrying no author given, the same AAWSA Administrative Note, and released by the same Black Vault FOIA clearinghouse.
 
   The Introduction examines how, in the early 20th century, the solitary maverick inventor was responsible for the bedrock of most of today''s industrial and commercial enterprises, but as those enterprises grew larger they could afford their own research and development departments where improvements to the current technologies were tightly managed rather than true innovation, and the university, the government think tank, and the military research and development department arose as additional institutions where true innovation is fostered. The paper concentrates on two areas where solutions have been particularly hard to come by — energy, and propulsion, in particular aerospace and space propulsion — and considers that new and exotic materials and the capital outlay required to probe the limits of current high technology in search of a breakthrough are the major reasons for the shift in focus from the lone maverick inventor to the corporate inventor.
 
@@ -203,9 +203,10 @@ associated_entities:
 - /organizations/dia
 - /organizations/electric-power-research-institute
 - /organizations/general-motors
-- /organizations/hathaway-consulting
+- /organizations/hathaway-consulting-services
 - /organizations/institute-for-advanced-studies-at-austin
 - /organizations/lawrence-livermore-national-laboratory
+- /organizations/lockheed-martin-skunk-works
 - /organizations/manhattan-district
 - /organizations/mit
 - /organizations/nasa
@@ -213,7 +214,6 @@ associated_entities:
 - /organizations/radlab
 - /organizations/sandia-national-laboratories
 - /organizations/sara
-- /organizations/skunk-works
 - /organizations/stanford-research-institute
 - /organizations/the-black-vault
 - /organizations/youtube

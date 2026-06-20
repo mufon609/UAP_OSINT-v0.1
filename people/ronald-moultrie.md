@@ -57,7 +57,7 @@ Per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 
 | [`/organizations/yahya-technologies-y-tech`] | Advisory Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
 | [`/organizations/auburn-seminary`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
 | [`/organizations/vibrant-emotional-health`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/mitre`] | Senior Adviser — role active as of the September 2, 2020 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested (2020 is the article-attested active-by year, not a confirmed start), end date no later than the June 1 2021 USD(I&S) confirmation | 2020 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
+| [`/organizations/mitre-corporation`] | Senior Adviser — role active as of the September 2, 2020 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested (2020 is the article-attested active-by year, not a confirmed start), end date no later than the June 1 2021 USD(I&S) confirmation | 2020 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
 | [`/organizations/pallas`] | Senior Adviser — role active as of the September 2, 2020 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested (2020 is the article-attested active-by year, not a confirmed start), end date no later than the June 1 2021 USD(I&S) confirmation | 2020 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
 | [`/organizations/bluevoyant`] | Vice Chairman, Advisory Board — appointment announced September 2, 2020 (per the ExecutiveBiz article 'BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board', published September 2, 2020); end date no later than the June 1 2021 USD(I&S) confirmation | 2020-09 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
 | [`/organizations/ousd-is`] | Under Secretary of Defense for Intelligence and Security (Senate-confirmed presidential appointment); principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; managed a portfolio of over $30 billion and 225,000 global civilian and uniformed personnel | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
@@ -327,7 +327,7 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 - [`/organizations/iob`]
 - [`/organizations/itc-global-advisors`]
 - [`/organizations/leolabs`]
-- [`/organizations/mitre`]
+- [`/organizations/mitre-corporation`]
 - [`/organizations/national-cryptologic-foundation`]
 - [`/organizations/national-intelligence-university`]
 - [`/organizations/nga`]

@@ -244,7 +244,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/federation-of-american-scientists`]
 - [`/organizations/gravwave`]
 - [`/organizations/hasc`]
-- [`/organizations/hathaway-consulting`]
+- [`/organizations/hathaway-consulting-services`]
 - [`/organizations/house-appropriations-committee`]
 - [`/organizations/hpsci`]
 - [`/organizations/hypertech`]

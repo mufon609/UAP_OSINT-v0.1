@@ -176,7 +176,14 @@ convention and record the rationale.
 The mechanism is shipped. An initial people pass reconciled the
 initials-vs-full-name duplicates (`/people/v-teofilo` → `vincent-teofilo`, plus
 the cited-physicist pairs Fermi / Feynman / Forward / Hawking / Sakharov /
-Shannon / Davies). The standing tool + pipeline integration then followed:
+Shannon / Davies); a later source-confirmed pass canonicalized `ratcliffe` →
+`john-ratcliffe`, `mitre` → `mitre-corporation`, `oak-ridge` →
+`oak-ridge-national-laboratory`, `house-of-representatives` →
+`united-states-house-of-representatives`, the two
+`institute-for-advanced-studies-(at-)austin` slugs, `skunk-works` →
+`lockheed-martin-skunk-works`, and `hathaway-consulting` →
+`hathaway-consulting-services`. The standing tool + pipeline
+integration then followed:
 `scripts/tools/stub-reconcile.py` computes the complete coined-stub set (built
 ∪ every artifact's references) and surfaces candidate duplicate clusters
 (NER-free; *initials* rule for people, generic-word-guarded *subset* rule for
@@ -186,36 +193,54 @@ survey seeing only *built* nodes — is closed to the extent it can be: the tool
 surfaces an existing unbuilt stub at coinage, but it is a judgment aid, not a
 gate (same-surname-different-person is legitimate).
 
-What remains is **running the sweep and applying per-cluster judgment** — the
-work the tool can't do itself:
+The current sweep is now fully adjudicated. Beyond the canonicalizations above,
+the source+web pass ruled every remaining candidate cluster DISTINCT — including
+two slug-shape traps this rule exists to catch: `/people/carter` ≠ `jimmy-carter`
+(the JRE "carter" is Howard Carter the archaeologist, in a King-Tut analogy) and
+`/people/b-miller` ≠ `bruce-miller` (the dird-24 "Miller, B." is Berndt Müller,
+theoretical-physics co-author of *The Structured Vacuum*, not the Sandia
+pulsed-power engineer Bruce Miller). **Standing rule for future sweeps:
+source-confirm each candidate before merging — slug-shape confidence is NOT
+entity confidence — and where the person or context is not obvious from the
+artifact alone, confirm it BOTH at the source document AND on the web before
+ruling.**
 
-- **Candidate clusters the sweep surfaces — source-confirm each before
-  merging; slug-shape confidence is NOT entity confidence.** A spot check
-  already disproved several "obvious" merges: `aircraft-nuclear-propulsion` and
-  `nuclear-energy-for-propulsion-of-aircraft` are the *distinct* predecessor
-  (NEPA) and successor (ANP) programs, not one entity; `/people/morris` (a
-  biology-DIRD reference) is almost certainly not the wormhole physicist
-  `michael-morris`; `/people/einstein` and `newton` appear in eponym
-  constructions ("Einstein's field theory"), so the eponym carve-out may apply
-  rather than a merge. Candidates that still look clean but need the same
-  per-source confirmation: `/people/carter` → `jimmy-carter`, `ratcliffe` →
-  `john-ratcliffe`; `/organizations/mitre` → `mitre-corporation`, `oak-ridge` →
-  `oak-ridge-national-laboratory`, `house-of-representatives` →
-  `united-states-house-of-representatives`, the two `institute-for-advanced-
-  studies-(at-)austin` slugs. Canonicalize a confirmed-same-entity cluster to
-  the fullest source-attested form and re-render; leave the rest.
-- **Genuinely ambiguous / part-whole clusters** that must be ruled on, not
-  merged: distinct people sharing a surname (`gerald-ford` / `l-ford` [physicist
-  L. H. Ford] / `lonye-ford`; `d-brown` / `dean-brown`; the bare `smith` /
-  `johnson` / `sherman` hubs); and org part-whole pairs that are *not*
-  duplicates (`boeing` / `boeing-phantom-works`; the NASA centers; `us-air-force`
-  / `us-air-force-academy`; `university-of-alabama` / `…-huntsville`).
+Ruled DISTINCT / part-whole / eponym — left as expected sweep noise:
+
+- distinct people sharing a surname or initial: `carter` [Howard Carter,
+  archaeologist] ≠ `jimmy-carter`; `b-miller` [Berndt Müller] ≠ `bruce-miller`;
+  `a-robinson` [A. L. Robinson, Science writer] ≠ `art-robinson`; `c-anderson`
+  [positron-physics citation] ≠ `charles-a-anderson` [SRI president]; `h-j-kim`
+  [IEC-fusion physicist] ≠ `h-kim`; `d-brown` [1948 FBI agent D. K. Brown] ≠
+  `dean-brown` [SRI parapsychology associate]; `daniel` [Uri Geller's son] ≠
+  `daniel-kimmage` [State Dept GEC]; `/people/morris` [biology-DIRD] ≠
+  `michael-morris` [wormhole physicist]; `gerald-ford` / `l-ford` [physicist
+  L. H. Ford] / `lonye-ford`; the bare `smith` / `johnson` / `sherman` hubs.
+- eponym constructions: `einstein`, `newton` in "Einstein's field theory".
+- distinct institutions the subset rule false-positives:
+  `university-of-washington` [Seattle] ≠ `washington-university` [St. Louis];
+  `general-electric` ≠ `pacific-general-electric-company` [1948 Bakersfield
+  utility]; `aircraft-nuclear-propulsion` [ANP] ≠
+  `nuclear-energy-for-propulsion-of-aircraft` [NEPA].
+- org part-whole pairs that are *not* duplicates: `boeing` /
+  `boeing-phantom-works`; the NASA centers; `us-air-force` /
+  `us-air-force-academy`; `lockheed-martin` / `lockheed-martin-skunk-works` /
+  `…-space-systems-company`; `university-of-alabama` / `…-huntsville`;
+  `lucis-trust` / `lucis-trust-arcane-school`; `ousd-is` / `ousd-is-exdir` /
+  `ousd-is-sasp`.
+
+One item remains before this closes: decide whether to add an adjudicated-distinct
+ledger so the sweep stops re-surfacing the ruled clusters above to the
+internal-investigator and auditor on every run (the alternative is to accept the
+recurring noise).
 
 **Blocks:** none.
 **Blocked by:** none.
 **Related:** the [[link-all-load-bearing-references]] working-memory note;
-`scripts/tools/stub-reconcile.py` is the tool; the `link_resolution` broken-link
-registry is the data it reads.
+`scripts/tools/stub-reconcile.py` is the tool — it independently reconstructs the
+complete reference set from the research artifacts + built nodes (it does NOT read
+the `link_resolution` broken-link registry, which is computed separately at
+validation time).
 
 ### C4 — Harden the Worker extraction step against large-source timeouts and over-exploration
 

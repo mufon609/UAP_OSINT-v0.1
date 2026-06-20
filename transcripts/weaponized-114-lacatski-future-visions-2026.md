@@ -372,7 +372,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/national-academy-of-sciences`]
 - [`/organizations/nids`]
 - [`/organizations/northern-tier`]
-- [`/organizations/oak-ridge`]
+- [`/organizations/oak-ridge-national-laboratory`]
 - [`/organizations/odni`]
 - [`/organizations/oni`]
 - [`/organizations/project-javelin`]

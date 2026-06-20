@@ -105,8 +105,8 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 - [`/organizations/army-national-guard`]
 - [`/organizations/broad-area-maritime-surveillance-program`]
-- [`/organizations/house-of-representatives`]
 - [`/organizations/naval-surface-warfare-center-indian-head`]
+- [`/organizations/united-states-house-of-representatives`]
 - [`/organizations/us-navy`]
 
 ### Documents

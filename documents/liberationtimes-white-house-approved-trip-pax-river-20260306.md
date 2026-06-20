@@ -134,7 +134,7 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 - [`/organizations/liberation-times`]
 - [`/organizations/lockheed-martin`]
 - [`/organizations/lockheed-martin-skunk-works`]
-- [`/organizations/mitre`]
+- [`/organizations/mitre-corporation`]
 - [`/organizations/navair`]
 - [`/organizations/white-house`]
 
