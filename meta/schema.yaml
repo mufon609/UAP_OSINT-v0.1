@@ -155,7 +155,8 @@ types:
     description_required: true
     prose_drift_fields:
       top_level: [description]
-      per_entry: []
+      per_entry:
+        - [org_relationships, notes]
     frontmatter:
       required: [id, type, status, kind]
     kinds:

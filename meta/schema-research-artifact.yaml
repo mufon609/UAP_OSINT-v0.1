@@ -982,7 +982,7 @@ contract_entry:
 
 org_relationship_entry:
   required: [organization_path, relationship_type, source]
-  optional: [flagged]
+  optional: [flagged, notes]
   relationship_type_values:
     - parent
     - subsidiary
@@ -1012,7 +1012,13 @@ org_relationship_entry:
   #     partner              — joint venture / partnership
   #     other                — doesn't fit above
   # flagged: bool (default false); routes to `### Flagged`
-  # source: object with path + location attesting the relationship
+  # notes: optional non-empty string — why a Flagged relationship is
+  #   flagged (the basis and its limits). Rendered as the `Note` column of
+  #   the `### Flagged` table only; scanned by the prose-drift check
+  #   (schema.yaml organization prose_drift_fields). Keep the qualifier
+  #   here, not in source.location.
+  # source: object with path + location attesting the relationship;
+  #   location is a real locator in the cited file (field, section, ¶)
 
 ownership_timeline_entry:
   required: [period_start, owner, use_status, source]

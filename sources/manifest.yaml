@@ -1755,6 +1755,46 @@
     archived_date: '2026-05-01'
     path: government/gough-usawc-perception-management-wayback-20260501.pdf
     note: Susan I. Gough, 'The Evolution of Strategic Influence', U.S. Army War College Strategy Research Project, 7 April 2003. 3-page paper (truncated/abbreviated form on FAS mirror). Doctrinal background context for Gough's later role as DoD/AARO UAP spokesperson — the same Gough whose March 2024 emails appear in FOIA 24-F-0894 ('We do not want to see sUAS added to AARO's portfolio!'). Direct irp.fas.org returned HTTP 202 on 2026-05-01 (likely Cloudflare interstitial); fetched via Wayback Machine snapshot 20250817175726 with --compressed.
+- url: https://job-boards.greenhouse.io/arlosolutionsllc
+  status: archived
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-board-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job board index page, title 'Jobs at Arlo Solutions LLC'. Bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082534), downloaded 2026-09-25; the board URL is live but this artifact records its 2026-02-27 state. The capture's embedded jobPosts object reports count 50, total 50, total_pages 1.
+  archive_status: 3
+  wayback_date: '2026-02-27'
+- url: https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4601751007
+  status: archived
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-469-cpe-allied-action-officer-wayback-20250428.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (469) Commonwealth Partners Mission Integration Office – Allied Action Officer at Arlo Solutions LLC'. Live URL returns 302 as of 2026-09-25; bytes are the Wayback Machine raw (id_) capture of 2025-04-28 (timestamp 20250428052125, the only CDX capture), downloaded 2026-09-25. Embedded job-post JSON published_at 2025-03-12T10:52:20-04:00.
+  archive_status: 3
+  wayback_date: '2025-04-28'
+- url: https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4991377007
+  status: archived
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (617) Staff Officer V at Arlo Solutions LLC'. Live URL returns 302 as of 2026-09-25; bytes are the Wayback Machine raw (id_) capture of 2025-12-17 (timestamp 20251217135543), downloaded 2026-09-25. CDX lists 200 captures at 20251217135543, 20251228114724, and 20260119124238. Embedded job-post JSON published_at 2025-11-25T07:32:47-05:00.
+  - format: html
+    path: news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (617) Staff Officer V at Arlo Solutions LLC'. Live URL returns 302 as of 2026-09-25; bytes are the Wayback Machine raw (id_) capture of 2026-01-19 (timestamp 20260119124238), downloaded 2026-09-25. CDX lists 200 captures at 20251217135543, 20251228114724 (not downloaded), and 20260119124238. Embedded job-post JSON published_at 2025-11-25T07:32:47-05:00.
+  archive_status: 3
+  wayback_date: '2026-01-19'
+- url: https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4993204007
+  status: archived
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (619) Security Officer IV at Arlo Solutions LLC'. Live URL returns 302 as of 2026-09-25; bytes are the Wayback Machine raw (id_) capture of 2026-01-19 (timestamp 20260119124832, the only CDX capture), downloaded 2026-09-25. Embedded job-post JSON published_at 2025-11-28T08:26:04-05:00.
+  archive_status: 3
+  wayback_date: '2026-01-19'
 - url: https://leolabs.space/blog/ron-moultrie-leolabs-board-of-directors/
   status: archived
   archive_status: 3
@@ -2710,6 +2750,33 @@
     archived_date: '2026-04-28'
     path: news/westexec-kirkpatrick-bio.html
     note: Sean Kirkpatrick's bio page on WestExec Advisors website — post-government affiliation as Senior Advisor following his December 2023 retirement from federal service
+- url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions/9200929679065_1?cid=32186ff8-408c-44a6-a407-bfefe4f2d0ad&ccId=19000101_000003&lang=en_US&locale=en_US
+  status: archived
+  artifacts:
+  - format: txt
+    path: news/sancorp-adp-req1206-field-ops-sensor-sme-iv-20260925.json
+    archived_date: '2026-09-25'
+    note: Sancorp Consulting ADP Workforce Now career-center job-requisition API record (JSON, saved as served), fetched 2026-09-25. itemID 9200929679065_1; requisitionTitle 'Field Operations & Sensor Support SME IV/ Action Officer'; clientRequisitionID 1206; ExternalJobID 544829; postDate 2026-09-04.
+  archive_status: 3
+  wayback_date: '2026-09-25'
+- url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions/9201061914753_1?cid=32186ff8-408c-44a6-a407-bfefe4f2d0ad&ccId=19000101_000003&lang=en_US&locale=en_US
+  status: archived
+  artifacts:
+  - format: txt
+    path: news/sancorp-adp-req1258-staff-officer-iii-20260925.json
+    archived_date: '2026-09-25'
+    note: Sancorp Consulting ADP Workforce Now career-center job-requisition API record (JSON, saved as served), fetched 2026-09-25. itemID 9201061914753_1; requisitionTitle 'Staff Officer III'; clientRequisitionID 1258; ExternalJobID 551919; postDate 2026-08-10.
+  archive_status: 3
+  wayback_date: '2026-09-25'
+- url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions/9201062973611_1?cid=32186ff8-408c-44a6-a407-bfefe4f2d0ad&ccId=19000101_000003&lang=en_US&locale=en_US
+  status: archived
+  artifacts:
+  - format: txt
+    path: news/sancorp-adp-req1260-budget-analyst-iii-20260925.json
+    archived_date: '2026-09-25'
+    note: Sancorp Consulting ADP Workforce Now career-center job-requisition API record (JSON, saved as served), fetched 2026-09-25. itemID 9201062973611_1; requisitionTitle 'Budget Analyst III'; clientRequisitionID 1260; ExternalJobID 552090; postDate 2026-08-14.
+  archive_status: 3
+  wayback_date: '2026-09-25'
 - url: https://www.aaro.mil/Portals/136/PDFs/Dr_Jon_Kosloski_Statement_for_the_Record_SASC_Open_Hearing_Nov2024.pdf
   status: archived
   archive_status: 3
@@ -4418,7 +4485,15 @@
   - format: txt
     archived_date: '2026-04-30'
     path: government/usaspending-hq003424c0096.txt
-    note: 'USAspending JSON record for Sancorp Consulting LLC AARO follow-on contract HQ003424C0096. Description: ''EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC'' (matches original AARO PWS scope per FOIA 23-F-1114). Total obligation: $3,471,829.40. Signed 2024-08-23 → end 2026-01-31. Awarded by DoD/Washington Headquarters Services. Per-handoff classification ''AARO follow-on'' confirmed.'
+    note: USAspending API award record (JSON), captured 2026-04-30. PIID HQ003424C0096, DEFINITIVE CONTRACT; recipient SANCORP CONSULTING, LLC; description 'EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC'; total_obligation 3471829.4 as of this 2026-04-30 capture; date signed 2024-08-23; period of performance end 2026-01-31; awarding agency DoD / Washington Headquarters Services (WHS). This base award record does not name AARO; the AARO label appears on this contract's transaction records from modification P00005 (2025-07-10) — see government/usaspending-hq003424c0096-transactions-20260925.txt.
+  - format: txt
+    path: government/usaspending-hq003424c0096-20260925.txt
+    archived_date: '2026-09-25'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), re-fetched 2026-09-25. PIID HQ003424C0096, DEFINITIVE CONTRACT; recipient SANCORP CONSULTING, LLC; description 'EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC'; awarding sub-tier Washington Headquarters Services; date signed 2024-08-23; period of performance 2024-08-23 to 2026-01-31; total_obligation 3415374.79 in this fetch (the 2026-04-30 artifact records 3471829.4).
+  - format: txt
+    path: government/usaspending-hq003424c0096-transactions-20260925.txt
+    archived_date: '2026-09-25'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE-, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-25. 8 transaction records; page_metadata hasNext false.
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003424F0411_9700_47QRAA22D00C4_4732
   status: archived
   archive_status: 3
@@ -4428,6 +4503,19 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003424f0411.txt
     note: 'USAspending JSON record for Sancorp ''LABOR'' task order HQ003424F0411 (parent vehicle 47QRAA22D00C4 — GSA OASIS-type IDV). Total obligation: $11,214,091 (largest single Sancorp award to date). Signed 2024-07-23 → end 2026-12-31. Per Sancorp Past Performance page this contract supports ''Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.'''
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE174_9700_HQ003425A0001_9700
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003425fe174.txt
+    archived_date: '2026-09-25'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-25. PIID HQ003425FE174, BPA CALL under parent HQ003425A0001; recipient SANCORP CONSULTING, LLC; description 'TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.'; awarding sub-tier Washington Headquarters Services; date signed 2025-06-20; period of performance 2025-06-20 to 2026-06-30; total_obligation 866143.48.
+  - format: txt
+    path: government/usaspending-hq003425fe174-transactions.txt
+    archived_date: '2026-09-25'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003425FE174_9700_HQ003425A0001_9700, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-25. 2 transaction records; page_metadata hasNext false.
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE388_9700_HQ003425A0001_9700
   status: archived
   archive_status: 3
@@ -4437,6 +4525,10 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003425fe388.txt
     note: 'USAspending JSON record for Sancorp Consulting LLC CL&S POABO Support Services contract HQ003425FE388 (task order under parent IDIQ HQ003425A0001 — the OASD S&T contract). Description: ''NON-PERSONAL SERVICES CONTRACT TO PROVIDE POLICY, OPERATIONS, ANALYTIC AND BUSINESS OPERATIONS (POABO) SUPPORT SERVICES TO THE COUNTERINTELLIGENCE, LAW ENFORCEMENT AND SECURITY (CLS).'' Total obligation: $3,746,273.44 (NOT $15M as handoff §3 estimated). Signed 2025-09-11 → end 2026-09-13. Note: Sancorp''s own Past Performance page mislabels this contract as OUSW(I&S) direct support; USAspending shows the actual scope is CL&S.'
+  - format: txt
+    path: government/usaspending-hq003425fe388-20260926.txt
+    archived_date: '2026-09-26'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-26. PIID HQ003425FE388, BPA CALL under parent HQ003425A0001; recipient SANCORP CONSULTING, LLC; total_obligation 6666866.85; base_and_all_options 13857326.08; period of performance end_date 2027-09-13; last_modified_date 2026-06-16.
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE405_9700_47QRAA22D00C4_4732
   status: archived
   archive_status: 3
@@ -4446,6 +4538,19 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003425fe405.txt
     note: 'USAspending JSON record for Sancorp Office Management and Executive Support task order HQ003425FE405 (parent 47QRAA22D00C4). Total obligation: $8,410,283. Signed 2025-09-30 → end 2030-06-15. Awarded by DoD/Washington Headquarters Services. Per Sancorp Past Performance: ''Office of the Under Secretary of War for Policy, Office Management & Executive Support Services'' — the OUSW Policy contract (post-EO 14347 OUSD→OUSW rebrand reflected in scope title).'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003426fe050.txt
+    archived_date: '2026-09-25'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-25. PIID HQ003426FE050, BPA CALL under parent HQ003425A0001; recipient SANCORP CONSULTING, LLC; description 'ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES'; awarding sub-tier Washington Headquarters Services; date signed 2026-01-28; period of performance 2026-01-28 to 2027-07-31; total_obligation 5317041.31.
+  - format: txt
+    path: government/usaspending-hq003426fe050-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26. 5 transaction records; page_metadata hasNext false.
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700
   status: archived
   archive_status: 3
@@ -4491,6 +4596,24 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003425a0001.txt
     note: 'USAspending JSON record for parent IDIQ HQ003425A0001 (Sancorp). Description: ''TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.'' Period: 2025-02-14 → 2030-02-14. Awarded by DoD/Washington Headquarters Services. Total obligation $0 (IDIQ vehicle; HQ003425FE388 CL&S POABO is a task order under this parent; HQ003426FE050 also references this parent).'
+- url: https://www.usaspending.gov/award/CONT_IDV_HQ003425A0002_9700
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003425a0002.txt
+    archived_date: '2026-09-25'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-25. PIID HQ003425A0002, BPA (IDV); recipient COMPREHENSIVE APPROACH LLC; description 'TECHNICAL ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY ENTERPRISE'; awarding sub-tier Washington Headquarters Services; date signed 2025-02-14; period of performance 2025-02-15 to 2030-02-14.
+  archive_status: 3
+  wayback_date: '2026-09-26'
+- url: https://www.usaspending.gov/award/CONT_IDV_HQ003425A0003_9700
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003425a0003.txt
+    archived_date: '2026-09-25'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-25. PIID HQ003425A0003, BPA (IDV); recipient PREMIER ENTERPRISE SOLUTIONS, LLC; description 'TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD (I&S) ENTERPRISE'; awarding sub-tier Washington Headquarters Services; date signed 2025-02-14; period of performance 2025-02-15 to 2030-02-14.
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://www.vice.com/en/article/brandon-fugal-owner-of-skinwalker-ranch/
   status: archived
   archive_status: 3

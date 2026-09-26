@@ -860,6 +860,54 @@ def pdf_physical_page_count(source_path):
     return int(m.group(1)) if m else None
 
 
+# A run of backslashes followed by `u` + 4 hex digits. The run's parity
+# decides whether the `\u` is a live escape: an odd run ends in the escape's
+# own backslash; an even run is all escaped backslashes (`\\u0026` is a
+# literal backslash followed by the text "u0026").
+_JSON_U_ESCAPE_RE = re.compile(r"(\\+)u([0-9a-fA-F]{4})")
+
+
+def decode_json_unicode_escapes(text):
+    """Decode JSON ``\\uXXXX`` escapes in raw JSON text, leaving everything
+    else byte-for-byte.
+
+    Only ``\\uXXXX`` is decoded — never ``\\"``, ``\\\\``, ``\\n`` etc., and
+    no JSON parsing — so quotes that deliberately carry raw JSON syntax
+    (``"description":"…"``) keep matching. A surrogate pair
+    (``\\ud83d\\ude00``) decodes to its one code point; a lone surrogate is
+    left as written (it has no UTF-8 form). A ``\\u`` preceded by an escaped
+    backslash (``\\\\u0026``) is not an escape and stays literal.
+    """
+    out = []
+    pos = 0
+    pending_high = None  # (start offset of its "\u", code unit) awaiting a low surrogate
+    for m in _JSON_U_ESCAPE_RE.finditer(text):
+        run = m.group(1)
+        if len(run) % 2 == 0:
+            continue  # escaped backslash(es) + literal "uXXXX"
+        esc_start = m.start(1) + len(run) - 1  # offset of the escape's own backslash
+        unit = int(m.group(2), 16)
+        if pending_high is not None:
+            hi_start, hi_unit = pending_high
+            pending_high = None
+            if esc_start == hi_start + 6 and 0xDC00 <= unit <= 0xDFFF:
+                out.append(text[pos:hi_start])
+                out.append(chr(0x10000 + ((hi_unit - 0xD800) << 10) + (unit - 0xDC00)))
+                pos = m.end()
+                continue
+            # High surrogate without an adjacent low one: leave it literal.
+        if 0xD800 <= unit <= 0xDBFF:
+            pending_high = (esc_start, unit)
+            continue
+        if 0xDC00 <= unit <= 0xDFFF:
+            continue  # lone low surrogate: leave literal
+        out.append(text[pos:esc_start])
+        out.append(chr(unit))
+        pos = m.end()
+    out.append(text[pos:])
+    return "".join(out)
+
+
 def extract_source_text(source_path):
     """Extract plain text from a source file. Returns None if unavailable.
     Cached for the duration of one validator run.
@@ -901,7 +949,13 @@ def extract_source_text(source_path):
       - .txt / .md      raw read
       - .json           raw read (e.g., archived X.com tweet payloads —
                         the JSON contains tweet body text as string fields
-                        that the tokenizer can pull meaningful tokens from)
+                        that the tokenizer can pull meaningful tokens from),
+                        then JSON ``\\uXXXX`` escapes (incl. surrogate
+                        pairs) decoded via decode_json_unicode_escapes —
+                        Gson-style payloads store "&" as ``\\u0026``, which a
+                        quote can't reproduce. Every other JSON escape
+                        (``\\"`` ``\\\\`` ``\\n`` …) and all JSON syntax stay
+                        raw, so quotes spanning ``"key":"value"`` still match.
       - image           same-stem .txt sibling if one is committed (a verified
                         transcription); otherwise None (no text layer)
     Returns None for any other extension or extraction failure.
@@ -948,6 +1002,8 @@ def extract_source_text(source_path):
             result = source_path.read_text(encoding="utf-8", errors="replace")
         except OSError:
             result = None
+        if result is not None and suffix == ".json":
+            result = decode_json_unicode_escapes(result)
     elif FORMAT_BY_EXT.get(suffix) == "image":
         # An image carries no text layer. If a contributor has committed a
         # same-stem `.txt` sibling — a verified transcription, e.g. a book

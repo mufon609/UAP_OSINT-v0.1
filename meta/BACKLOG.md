@@ -348,3 +348,29 @@ drafts; the committed incident evidence remains the record.
 
 **Blocks:** none.
 **Blocked by:** none.
+
+### C7 — Separate the requiring (customer) office from the contracting agency in `org_relationships`
+
+`org_relationship_entry.relationship_type_values` (`meta/schema-research-artifact.yaml`)
+has one value for the government side of a contract: `contracting-agency`, defined
+as "the other org is this org's contracting agency". The corpus uses it for two
+different things. On contractor nodes it tags the **office the work is for** (AARO,
+IPMO, USSOUTHCOM, CDAO, …) and, separately, the **office that awarded the
+contract** (WHS). Its mirror value `contractor` has the same conflation on the
+customer side: AARO's node lists Sancorp as `contractor`, although WHS awarded the
+contract. A reader of the Relationships table cannot tell which office contracted
+and which office was served — and the distinction matters, because the requiring
+office is often the evidentiary question (the award record names only the
+contracting and funding offices).
+
+Add a value for the requiring office (e.g. `customer` or `requiring-office`, with
+a mirror such as `supplier-to` if needed), define both it and `contracting-agency`
+precisely in the schema comment block, and update the `org_relationships` check's
+closed enum. Then migrate every affected row corpus-wide — list them with
+`grep -n "relationship_type: contracting-agency\|relationship_type: contractor" meta/research/*.yaml`
+— deciding each from its cited source: keep `contracting-agency` only where the
+source names the awarding office, and move customer offices to the new value.
+Flagged rows migrate the same way. Re-render the affected organization nodes.
+
+**Blocks:** none.
+**Blocked by:** none.

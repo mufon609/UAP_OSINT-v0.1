@@ -2,7 +2,9 @@
 
 Org-to-org structured relationships. Present on organization artifacts.
 Each entry: required {organization_path, relationship_type, source},
-optional {flagged}.
+optional {flagged, notes}. ``notes``, when present, must be a non-empty
+string — the qualifier a Flagged row renders in its ``Note`` column
+(prose-drift scoped via schema.yaml; checked there, not here).
 
 CLOSED relationship_type enum {parent, subsidiary, predecessor,
 successor, contractor, contracting-agency, funder, fund-administrator,
@@ -65,6 +67,14 @@ def check(ctx):
                 ctx.rel, "error",
                 f"org_relationships[{i}] ({e.get('id')!r}): "
                 f"relationship_type {rt!r} not in {sorted(valid_relationship_type)}",
+                check_name=CHECK_NAME,
+            )
+        if "notes" in e and (not isinstance(e["notes"], str)
+                             or not e["notes"].strip()):
+            yield Issue(
+                ctx.rel, "error",
+                f"org_relationships[{i}] ({e.get('id')!r}): "
+                f"notes must be a non-empty string when present",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

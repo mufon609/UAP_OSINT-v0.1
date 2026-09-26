@@ -332,11 +332,14 @@ def render_org_relationships(artifact):
     else:
         lines.append("|  |  |  |")
     if flagged:
+        # Flagged rows carry a Note column: the entry's `notes` (why it is
+        # flagged — basis and limits), so the qualifier reaches the reader.
         lines += ["", "### Flagged", "",
-                  "| Organization | Relationship | Source |",
-                  "|---|---|---|"]
+                  "| Organization | Relationship | Source | Note |",
+                  "|---|---|---|---|"]
         for e in flagged:
-            lines.append(row(e))
+            note = " ".join(str(e.get("notes") or "").split()).replace("|", "\\|")
+            lines.append(f"{row(e)} {note} |")
     return "\n".join(lines) + "\n"
 
 

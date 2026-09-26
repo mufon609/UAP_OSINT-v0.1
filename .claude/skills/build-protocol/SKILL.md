@@ -279,7 +279,7 @@ appearance is where they are most often missed.
 The phase vocabulary is generated from the routing source of truth
 (`scripts/checks/_phases.py`) — run it rather than memorizing a list:
 
-```!
+```bash
 python3 scripts/checks/_phases.py --list-phases
 ```
 

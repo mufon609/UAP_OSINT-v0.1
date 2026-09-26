@@ -30,7 +30,13 @@ The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 b
 
 Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023 and additionally took on Acting Director duties in December 2023 following Kirkpatrick's departure; his Acting Director duties ended when Kosloski arrived on August 26, 2024, while his Deputy Director departure date is not documented in archived primary sources. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC ([`/organizations/aaroexec`]) to the AARO Executive Council — its mission, per the memorandum, is "to provide oversight and direction to the AARO."
 
-AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The HQ003424C0096 period of performance ended on January 31, 2026; no Sancorp follow-on or successor AARO Support Services contract is documented in archived primary sources as of May 3, 2026. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
+AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) was awarded prime contracts HQ003422C0094 ("AARO Support Services"; period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The HQ003422C0094 Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the HQ003422C0094 Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
+
+The HQ003424C0096 award record describes the work as "EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC". Its transaction records carry the description "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from modification P00005 (July 10, 2025) forward; the base award and the P00001 through P00004 descriptions do not carry that label. The HQ003424C0096 period of performance ended on January 31, 2026. No retrieved award record names a Sancorp AARO support contract after HQ003424C0096 as of September 25, 2026; HQ003426FE050 is not confirmed as AARO support. Modification P00007 (May 6, 2026) records a federal action obligation of -$56454.61; the September 25, 2026 award record reports a total obligation of $3415374.79 with the period of performance ending January 31, 2026, and the April 30, 2026 capture of the same record had reported $3471829.4. The funding agency on the record is the Immediate Office of the Secretary of Defense ([`/organizations/osd`]), funding office "OSD OUSD(I)".
+
+HQ003426FE050, signed January 28, 2026, is a BPA CALL to Sancorp under HQ003425A0001 for "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES", funding office "OSD OUSD(I)", place of performance Washington, DC ([`/locations/washington-dc`]), recipient address Falls Church, Virginia ([`/locations/falls-church-virginia`]). Sancorp's own job requisition 1258 for a Staff Officer III, posted August 10, 2026, uses the same services phrase "in direct support to Research, Development, Test & Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) All-Domain Anomaly Resolution Office (AARO)"; the posting names no contract number. Its listed responsibilities include assisting "AARO leadership in the development and promulgation of strategy, plans, and policy", approximately six OSD staff packages a week, and reports and briefings on AARO-related operations for Congressional and Senior Executive Branch officials; its location is the National Capital Region ([`/locations/national-capital-region`]), with requisition location Arlington, VA ([`/locations/arlington-virginia`]), and it describes Sancorp as "an SDVOSB and SBA 8(a) company", SBA being the Small Business Administration ([`/organizations/sba`]). Any link between HQ003426FE050 and AARO is not confirmed: it is based only on the requisition 1258 services phrase. Neither the HQ003426FE050 award record nor any of its five transaction records names AARO. The "OSD OUSD(I)" funding office is not specific to AARO: it appears on the HQ003424C0096 record and also on the HQ003422C0064 record, whose award description is "IPMO SUPPORT SERVICES" ([`/organizations/ipmo`]).
+
+Arlo Solutions LLC ([`/organizations/arlo-solutions`]) posted positions that it described as supporting AARO on its Greenhouse job board. Its "(617) Staff Officer V" posting, in archived copies captured December 17, 2025 and January 19, 2026, states "The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" and "This key personnel position serves as a senior-level SME"; its listed responsibilities include reports and briefings on AARO operations for Congress ([`/organizations/congress`]), working relationships with the Office of the Director of National Intelligence, analysis of intelligence related activities against the National Defense Strategy ([`/documents/national-defense-strategy`]), and support for development of DOW and Intelligence Community ([`/organizations/intelligence-community`])-wide processes and procedures to enable operational and intelligence reporting of airborne objects of interest including UAP. Its "(619) Security Officer IV" posting, in an archived copy captured January 19, 2026, describes "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))", including coordination with the Defense Counterintelligence & Security Agency ([`/organizations/dcsa`]) and compliance with DoD Manual 5205.07 ([`/documents/dod-manual-5205-07`]) and DoD Manual 5105.21 ([`/documents/dod-manual-5105-21`]). Both positions are located in Arlington, VA. These dates are capture dates of the archived copies; the rendered page text displays no posting date. Neither posting names a contract, and no award record in these sources names Arlo for AARO work.
 
 The FY 2024 OSD OP-5 budget submission (released March 20, 2023) named the OUSD(I&S) subordinate office "All-domain Anomaly Resolution Office (AARO)" with mission language drawn from the Hicks establishment memorandum; the FY 2025 OSD OP-5 (released March 11, 2024) is the first budget submission to name an OUSD(I&S) subordinate office "Advanced Intelligence Capabilities (AIC)" with mission language and statutory reporting line that match AARO's per the Hicks memorandum and 50 U.S.C. § 3373 (reporting to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence). The FY 2026 OSD OP-5 (released July 7, 2025) retains the AIC name. The public-facing aaro.mil website and subsequent DoD press releases continue to use the AARO name; no public DoD announcement of an AARO renaming has been issued.
 
@@ -97,6 +103,18 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 ---
 
 ## Key Passages
+
+### The USAspending record for contract HQ003422C0064 ("IPMO SUPPORT SERVICES"; recipient "SANCORP CONSULTING, LLC"; date_signed 2022-06-09) lists the funding subtier as the Immediate Office of the Secretary of Defense (SECDEF, code 97AD) and the funding office as "OSD OUSD(I)", the same funding office string that appears on the HQ003424C0096 and HQ003426FE050 records. The HQ003422C0064 record does not name AARO; the funding office is therefore not specific to AARO.
+
+> "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
+
+| Field | Value |
+|---|---|
+| Attributed to | Span sits inside the "funding_agency" object (id 1215; toptier Department of Defense / DOD) and occurs once in the record. The separate "awarding_agency" object (id 1231) names subtier "Washington Headquarters Services" (WHS, 97F5) and office_agency_name "WASHINGTON HEADQUARTERS SERVICES". 2022-06-09 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0064.txt) |
+| Location | "funding_agency" object — subtier_agency / office_agency_name, CONT_AWD_HQ003422C0064_9700_-NONE-_-NONE- |
+
+---
 
 ### Mission statement (Hicks establishment memo)
 
@@ -878,6 +896,18 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00004, action_date 2025-04-21, action type M (OTHER ADMINISTRATIVE ACTION). This is the last transaction record before P00005, and its description does not carry the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" label.
+
+> "action_date":"2025-04-21","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, OPERATIONS, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING, AND EXECUTION (PPBE) SUPPORT."
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending.gov transactions API record (all 8 transaction records for award HQ003424C0096, archived 2026-09-25). 2025-04-21 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-transactions-20260925.txt) |
+| Location | transaction P00004 ("action_date"/"action_type"/"modification_number"/"description"), HQ003424C0096 |
+
+---
+
 ### AARO Volume II preview reporting (Wall Street Journal, June 6, 2025) — verbatim attestation that a now-retired Air Force colonel confessed to AARO investigators in 2023 that he had doctored flying-saucer photos in the 1980s as a cover for F-117 stealth-fighter testing at Area 51. Documents an AARO investigative-interview output: a primary-source disinformation confession.
 
 > The photos were doctored, the now-retired officer confessed to the Pentagon investigators in 2023. The whole exercise was a ruse to protect what was really going on at Area 51: The Air Force was using the site to develop top-secret stealth fighters, viewed as a critical edge against the Soviet Union.
@@ -902,6 +932,30 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00005, action_date 2025-07-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. It is the first of the contract's 8 transaction records whose description begins "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)"; the base award and P00001-P00004 descriptions do not carry that label. From this modification on, the federal record describes the contract's support services under the AARO name.
+
+> "action_date":"2025-07-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00005","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES"
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending.gov transactions API record (all 8 transaction records for award HQ003424C0096, archived 2026-09-25). 2025-07-10 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-transactions-20260925.txt) |
+| Location | transaction P00005 ("action_date"/"action_type"/"modification_number"/"description"), HQ003424C0096 |
+
+---
+
+### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00006, action_date 2025-07-31, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 1212262.2, under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description.
+
+> "action_date":"2025-07-31","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00006","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES","federal_action_obligation":1212262.2
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending.gov transactions API record (all 8 transaction records for award HQ003424C0096, archived 2026-09-25). 2025-07-31 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-transactions-20260925.txt) |
+| Location | transaction P00006 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0096 |
+
+---
+
 ### FOIA 24-F-0894 cover letter (August 26, 2025) attesting five Initial Denial Authorities signed off on the 14-page release — Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.
 
 > The personnel listed below, in their capacity as an Initial Denial Authority, have determined that the pages contained information exempt from mandatory public release.
@@ -911,6 +965,330 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Attributed to | FOIA 24-F-0894 cover letter dated August 26, 2025, signed by Pamela Andrews, Chief, FOIA, OSD/JS Freedom of Information Division, 2025-08-26 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Cover letter, ¶3 |
+
+---
+
+### Arlo Solutions LLC posted, on its Greenhouse job board, a position it described as supporting AARO; the posting places AARO under OUSD(I&S). The posting names no contract number or contract vehicle. 2025-12-17 is the Wayback capture date; the rendered page text displays no posting date.
+
+> The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Opening sentence of the "Position Description" block of the Arlo Solutions Greenhouse posting "(617) Staff Officer V" (Arlington, VA); Wayback capture 2025-12-17; live URL returns 302 as of 2026-09-25 (per the manifest note). |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ The Staff Officer V will support |
+
+---
+
+### The posting describes the AARO-support role as a "key personnel position"; it names no contract number. Wayback capture date 2025-12-17.
+
+> This key personnel position serves as a senior-level SME responsible for providing advanced technical knowledge and analysis of highly specialized applications and operational environments for AARO operations, activities, and investments.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second sentence of the "Position Description" block. 2025-12-17 |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ This key personnel position serves as a senior-level SME |
+
+---
+
+### Posted responsibility for cataloging and curating UAP incident reporting, including multi-platform sensor data at multiple classification levels. Wayback capture date 2025-12-17.
+
+> Provide technical expertise, advice, and support required to ensure that UAP incident reporting is appropriately cataloged, stored, curated, and maintained, to include sensor data from multiple platforms and data at multiple classification levels.
+
+| Field | Value |
+|---|---|
+| Attributed to | Listed under "Data Management and Operational Reporting" in the "Responsibilities and/or Success Factors" section. 2025-12-17 |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Provide technical expertise, advice, and support required to ensure that UAP incident reporting |
+
+---
+
+### Posted responsibility for reports and briefings on AARO operations, activities and investments for Congress and senior Executive Branch officials. Wayback capture date 2025-12-17.
+
+> Support the daily production, coordination, and dissemination of reports and briefings that detail AARO operations, activities and investments for Congress and Senior Executive Branch officials.
+
+| Field | Value |
+|---|---|
+| Attributed to | Listed under "Data Management and Operational Reporting"; the next listed item is support for "congressionally directed actions and reporting requirements.", 2025-12-17 |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Support the daily production, coordination, and dissemination of reports and briefings |
+
+---
+
+### Names the offices the posted staff officer is to work with (the OUSW(I&S) Special Access Program Central Office, the Special Security Office, ODNI, and the Combat Support Agencies). Wayback capture date 2025-12-17.
+
+> Develop and establish positive working relationships with the OUSW(I&S) Special Access Program Central Office, the Special Security Office, the Office of the Director of National Intelligence, and the Combat Support Agencies.
+
+| Field | Value |
+|---|---|
+| Attributed to | Listed under "Leadership Support and Coordination". 2025-12-17 |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Develop and establish positive working relationships with the OUSW(I&S) Special Access Program Central Office |
+
+---
+
+### Listed as a desired (not minimum) qualification. The posting expands UAP as "Unidentified Aerial Phenomena". Wayback capture date 2025-12-17.
+
+> Experience with AARO mission and Unidentified Aerial Phenomena (UAP) research activities
+
+| Field | Value |
+|---|---|
+| Attributed to | Listed under "Desired Qualifications". 2025-12-17 |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Experience with AARO mission and Unidentified Aerial Phenomena |
+
+---
+
+### Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Strategic Program Development and Analysis", analysis of intelligence-related activities against the National Defense Strategy and the priorities of the Secretary of War and Under Secretary of War for Intelligence and Security.
+
+> Analyze intelligence related activities against the National Defense Strategy and the priorities of the Secretary of War and Under Secretary of War for Intelligence and Security Technical Advisory and Guidance.
+
+| Field | Value |
+|---|---|
+| Attributed to | Greenhouse job posting by Arlo Solutions LLC for a (617) Staff Officer V position (Arlington, VA) that, per its Position Description, "will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))"; Wayback capture dated 2025-12-17. |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Analyze intelligence related activities against the National Defense Strategy |
+
+---
+
+### Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Policy and Procedural Development", support for DOW and Intelligence Community-wide processes and procedures for operational and intelligence reporting of airborne objects of interest including UAP.
+
+> Support development of DOW and Intelligence Community-wide processes and procedures to enable operational and intelligence reporting of airborne objects of interest including UAP.
+
+| Field | Value |
+|---|---|
+| Attributed to | Same Arlo Solutions (617) Staff Officer V Greenhouse posting (Wayback capture 2025-12-17); the posting expands "Department of War (DOW)" earlier in its responsibilities list. |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
+| Location | ¶ Support development of DOW and Intelligence Community-wide processes |
+
+---
+
+### The FY2020 NDAA (Sec. 1621, P.L. 116-92) redesignated USD(I) as USD(I&S), so the USAspending funding-office string "OSD OUSD(I)" reads as the pre-redesignation name of OUSD(I&S).
+
+> Congress redesignated the position of Under Secretary of Defense for Intelligence (USD(I)) as the Under Secretary of Defense for Intelligence and Security in the National Defense Authorization Act (NDAA) for Fiscal Year 2020 (Section 1621 of P.L. 116-92).
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-16 |
+| Source | [archived source](../sources/government/crs-if10523-defense-primer-usdis.html) |
+| Location | ¶ Congress redesignated the position |
+
+---
+
+### The 2026-01-19 Wayback capture still carries the Arlo Solutions posting "(617) Staff Officer V" — the same posting captured on 2025-12-17 was still live on this date.
+
+> Job Application for (617) Staff Officer V at Arlo Solutions LLC
+
+| Field | Value |
+|---|---|
+| Attributed to | Page title / heading of the Arlo Solutions LLC Greenhouse job board posting, Wayback capture dated 2026-01-19. |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html) |
+| Location | ¶ Job Application for (617) Staff Officer V |
+
+---
+
+### The same AARO-support posting text is present in the 2026-01-19 Wayback capture: the position is stated to support AARO under OUSD(I&S). The posting names no contract number; 2026-01-19 is the Wayback capture date.
+
+> The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Opening sentence of the "Position Description" block of the Arlo Solutions Greenhouse posting, Wayback capture dated 2026-01-19. |
+| Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html) |
+| Location | ¶ The Staff Officer V will support |
+
+---
+
+### An Arlo Solutions LLC job posting (Greenhouse, "(619) Security Officer IV", Arlington, VA) describes the role as providing security support for AARO and places AARO within OUSW(I&S). The posting names no contract number or vehicle.
+
+> The Security Officer IV serves as the primary security professional responsible for managing comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Opening sentence of the "Position Description" section. 2026-01-19 is the Wayback capture date (the only capture); the rendered page text displays no posting date. The live URL returns 302 as of 2026-09-25 (per the manifest note). |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ The Security Officer IV serves as the primary security professional |
+
+---
+
+### The posting states the security role covers information related to unidentified anomalous phenomena (UAP) across personnel, physical, operations, and information security domains.
+
+> This position provides expert-level security management across personnel, physical, operations, and information security domains to safeguard highly sensitive information related to unidentified anomalous phenomena (UAP) and other sensitive national security matters.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second sentence of the "Position Description" section (same paragraph as the opening sentence). 2026-01-19 is the Wayback capture date. |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ This position provides expert-level security management |
+
+---
+
+### The posting assigns the position the role of primary security point of contact for AARO, coordinating with OUSW(I&S) security offices.
+
+> Serve as the primary security point of contact for AARO, coordinating with OUSW(I&S) security offices and other relevant security organizations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Bullet under "Responsibilities and/or Success Factors" → "Security Program Management". 2026-01-19 is the Wayback capture date. |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ Serve as the primary security point of contact for AARO |
+
+---
+
+### The posting states contractor personnel (in the AARO personnel-security context) are required to hold Top Secret clearances with SCI eligibility and SAP access.
+
+> Ensure all contractor personnel maintain required Top Secret clearances with SCI eligibility and SAP access.
+
+| Field | Value |
+|---|---|
+| Attributed to | Bullet under "Personnel Security", following "Monitor and track clearance status for all AARO personnel and contractors." 2026-01-19 is the Wayback capture date. |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ Ensure all contractor personnel maintain required Top Secret clearances |
+
+---
+
+### The posting states contractors support AARO missions, with the position coordinating their security requirements under the industrial security program.
+
+> Coordinate security requirements with contractors supporting AARO missions.
+
+| Field | Value |
+|---|---|
+| Attributed to | Bullet under "Industrial Security", following the DD254 (Contract Security Classification Specification) review bullet. 2026-01-19 is the Wayback capture date. |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ Coordinate security requirements with contractors supporting AARO missions |
+
+---
+
+### Arlo Solutions LLC's (619) Security Officer IV posting (Greenhouse job board; Wayback capture date 2026-01-19) lists, under the "Personnel Security" responsibilities of a role the posting describes as providing security support for AARO, coordination with the Defense Counterintelligence & Security Agency (DCSA) on personnel clearance matters.
+
+> Coordinate with Defense Counterintelligence & Security Agency (DCSA) on personnel clearance matters.
+
+| Field | Value |
+|---|---|
+| Attributed to | Personnel Security bullet list of the posting, following "Process security nomination packages for AARO personnel, ensuring timely submission and proper documentation." and preceding "Monitor and track clearance status for all AARO personnel and contractors.", 2026-01-19 |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ Coordinate with Defense Counterintelligence & Security Agency (DCSA) |
+
+---
+
+### The same posting (Wayback capture date 2026-01-19) names DoD Manual 5205.07 and DoD Manual 5105.21 as the security publications the Security Officer IV (a role the posting describes as providing security support for AARO) must ensure compliance with.
+
+> Ensure compliance with applicable security publications including DoD Manual 5205.07, DoD Manual 5105.21, and other relevant directives.
+
+| Field | Value |
+|---|---|
+| Attributed to | Under the "Security Documentation and Compliance:" heading of the posting's Responsibilities section. 2026-01-19 |
+| Source | [archived source](../sources/news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html) |
+| Location | ¶ Ensure compliance with applicable security publications including DoD Manual 5205.07 |
+
+---
+
+### USAspending award record for HQ003426FE050 (a BPA call order to SANCORP CONSULTING, LLC) describes the work as Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services. The record does not name AARO or any requiring office; the only office-level attribution it carries is the funding office "OSD OUSD(I)".
+
+> ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "description" field, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### HQ003426FE050 date_signed 2026-01-28; total_obligation $5,317,041.31; base_exercised_options $6,444,156.68; base_and_all_options $20,115,030.67; subaward_count 0. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+
+> "total_obligation":5317041.31,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2026-01-28","base_exercised_options":6444156.68,"base_and_all_options":20115030.67
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | top-level "total_obligation" / "date_signed" / "base_and_all_options" fields, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### HQ003426FE050 period of performance: start 2026-01-28, current end 2027-07-31, potential end 2030-07-31; record last modified 2026-06-04. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+
+> "period_of_performance":{"start_date":"2026-01-28","end_date":"2027-07-31","last_modified_date":"2026-06-04","potential_end_date":"2030-07-31 00:00:00"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "period_of_performance" object, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### HQ003426FE050 funding agency: subtier Immediate Office of the Secretary of Defense (code 97AD, abbreviation SECDEF), funding office "OSD OUSD(I)". This is the most specific office attribution in the record; it does not name AARO or any requiring office below "OSD OUSD(I)".
+
+> "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "funding_agency" object — subtier_agency / office_agency_name, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### HQ003426FE050 competition data: number_of_offers_received 4; extent_competed code F; set-aside type 8A, described as 8A COMPETED; solicitation_procedures code SP1. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+
+> "solicitation_procedures":"SP1","number_of_offers_received":"4","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "latest_transaction_contract_data" object — solicitation / offers / set-aside fields, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### HQ003426FE050 recipient is SANCORP CONSULTING, LLC, UEI GRYKNJ8BGFC8. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+
+> "recipient_name":"SANCORP CONSULTING, LLC","recipient_uei":"GRYKNJ8BGFC8"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "recipient" object — recipient_name / recipient_uei, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### USAspending record identifies HQ003426FE050 as a contract of type A, BPA CALL (a call order against a blanket purchase agreement). The award record does not name AARO.
+
+> "piid":"HQ003426FE050","category":"contract","type":"A","type_description":"BPA CALL"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | top-level "piid" / "type_description" fields, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### Parent award of HQ003426FE050 is IDV HQ003425A0001, a BPA described as MULTIPLE AWARD. The award record does not name AARO.
+
+> "generated_unique_award_id":"CONT_IDV_HQ003425A0001_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0001"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050.txt) |
+| Location | "parent_award" object, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700 |
+
+---
+
+### USAspending transaction record for HQ003426FE050 base award (modification_number "0"), type BPA CALL, action_date 2026-01-28, action_type null, federal_action_obligation 2064311.0. The description field reads "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES" and does not name AARO or any requiring office.
+
+> "action_date":"2026-01-28","action_type":null,"action_type_description":null,"modification_number":"0","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":2064311.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-01-28 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050-transactions.txt) |
+| Location | transaction 0 / base award ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003426FE050 |
 
 ---
 
@@ -1062,6 +1440,150 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00007, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -56454.61 (a negative obligation), under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description. It is the latest of the 8 transaction records in the file.
+
+> "action_date":"2026-05-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00007","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES","federal_action_obligation":-56454.61
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending.gov transactions API record (all 8 transaction records for award HQ003424C0096, archived 2026-09-25). 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-transactions-20260925.txt) |
+| Location | transaction P00007 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0096 |
+
+---
+
+### USAspending transaction record for HQ003426FE050 modification P00004 (the latest of the five transaction records), action_date 2026-06-04, action type C (FUNDING ONLY ACTION), federal_action_obligation 142521.2. The description field is unchanged from the base award. None of the five transaction descriptions (base award 0, P00001, P00002, P00003, P00004) names AARO or any requiring office; all five carry the identical description string.
+
+> "action_date":"2026-06-04","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":142521.2
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-06-04 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe050-transactions.txt) |
+| Location | transaction P00004 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003426FE050 |
+
+---
+
+### Sancorp Consulting job requisition 1258 (Staff Officer III) describes the position as providing Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services "in direct support to Research, Development, Test & Evaluation Activities" within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting names no contract number.
+
+> SANCORP is seeking a Staff Officer III to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) All-Domain Anomaly Resolution Office (AARO).
+
+| Field | Value |
+|---|---|
+| Attributed to | Opening sentence of the Responsibilities block of the ADP job-requisition record; followed by "The following are examples of responsibilities:" and a four-item bullet list. 2026-08-10 |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | "requisitionDescription" field, Responsibilities, ¶ SANCORP is seeking a Staff Officer III |
+
+---
+
+### Posted duty for the Sancorp Staff Officer III: assisting AARO leadership in developing and promulgating strategy, plans, and policy for AARO operations, activities, and investments across all lines of effort.
+
+> Assist AARO leadership in the development and promulgation of strategy, plans, and policy for AARO operations, activities, and investments across all lines of effort on a daily basis.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-08-10 |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | "requisitionDescription" field, Responsibilities, bullet 1 (Assist AARO leadership…) |
+
+---
+
+### Posted duty: producing reports, briefings and other products detailing AARO-related operations, activities, and investments, disseminated after Government approval to Congressional and Senior Executive Branch officials.
+
+> Produce and coordinate annual, monthly, and weekly reports, briefings and other products that detail AARO-related operations, activities, and investments and disseminate, following Government approval, for Congressional and Senior Executive Branch officials.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-08-10 |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | "requisitionDescription" field, Responsibilities, bullet 3 (Produce and coordinate annual, monthly, and weekly reports…) |
+
+---
+
+### Record metadata: requisition title "Staff Officer III", posted 2026-08-10.
+
+> "requisitionTitle":"Staff Officer III","postDate":"2026-08-10T21:31:00.000-04:00"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-08-10 |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | top-level "requisitionTitle" / "postDate" fields, ADP requisition record (clientRequisitionID 1258) |
+
+---
+
+### Posted duty of a contractor Staff Officer III position described as supporting AARO: approximately six OSD staff packages a week for Senior Leader support and approval.
+
+> Develop and coordinate approximately six OSD staff packages a week, including for time-sensitive requirements, for Senior Leader support and approval.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second bullet of the Responsibilities list in Sancorp Consulting job requisition 1258 (Staff Officer III), whose opening Responsibilities sentence places the work within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting cites no contract number. 2026-08-10 |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | "requisitionDescription" field, Responsibilities bullet 2 |
+
+---
+
+### Sancorp, in the closing boilerplate of requisition 1258, describes itself as an SDVOSB and SBA 8(a) company.
+
+> Sancorp Consulting, LLC, is an SDVOSB and SBA 8(a) company seeking highly motivated and qualified professionals
+
+| Field | Value |
+|---|---|
+| Attributed to | Closing boilerplate paragraph of Sancorp Consulting job requisition 1258 (Staff Officer III), posted 2026-08-10. |
+| Source | [archived source](../sources/news/sancorp-adp-req1258-staff-officer-iii-20260925.json) |
+| Location | "requisitionDescription" field, closing boilerplate ¶2 |
+
+---
+
+### In the 2026-09-25 capture of the HQ003424C0096 award record, total obligation, base-exercised-options, and base-and-all-options each read $3,415,374.79 (date signed 2024-08-23). The earlier 2026-04-30 capture (government/usaspending-hq003424c0096.txt) recorded a total of $3,471,829.40; the two captures differ by $56,454.61.
+
+> "total_obligation":3415374.79,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2024-08-23","base_exercised_options":3415374.79,"base_and_all_options":3415374.79
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-09-25 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-20260925.txt) |
+| Location | "total_obligation" / "base_and_all_options" fields, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture) |
+
+---
+
+### HQ003424C0096 period of performance: start 2024-08-23, end 2026-01-31, potential end 2026-01-31; the record was last modified 2026-05-06, after the performance period ended.
+
+> "period_of_performance":{"start_date":"2024-08-23","end_date":"2026-01-31","last_modified_date":"2026-05-06","potential_end_date":"2026-01-31 00:00:00"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-09-25 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-20260925.txt) |
+| Location | "period_of_performance" object, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture) |
+
+---
+
+### The recipient of award HQ003424C0096 is SANCORP CONSULTING, LLC.
+
+> "recipient_name":"SANCORP CONSULTING, LLC"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-09-25 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-20260925.txt) |
+| Location | "recipient" object — recipient_name, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture) |
+
+---
+
+### HQ003424C0096 funding office is "OSD OUSD(I)" (funding subtier: Immediate Office of the Secretary of Defense, 97AD / SECDEF); the awarding subtier and office are Washington Headquarters Services (97F5 / WHS). Both sit under the Department of Defense.
+
+> "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"},"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-09-25 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0096-20260925.txt) |
+| Location | "funding_agency" / "awarding_agency" objects, CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE- (2026-09-25 capture) |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -1086,21 +1608,27 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | 2024-03-07 | David A. Kozik replies that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", attributing the Gillibrand framing to "a prep failure on our part for ASD HD&HA". Documents direct operational coordination between AARO Public Affairs and OUSD(I&S) Congressional Activities at email-thread level (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-08 | AARO Historical Record Report Volume I released | other | government/aaro-hrr-volume-1-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
 | 2024-06-15 | Section 6802(j) HRR statutory deadline (540 days after IAA FY 2023 enactment). HRR Vol I (March 8, 2024) published before deadline, satisfying "a written report" requirement. HRR Vol I §III states "AARO will publish Volume II in accordance with the date established in Section 6802"; Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/aaro-hrr-volume-1-20240308.pdf |  |
-| 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
+| 2024-08-23 | Contract HQ003424C0096 ("EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC") awarded to Sancorp Consulting by Washington Headquarters Services; period of performance through January 31, 2026. Total obligation \$3,415,374.79 per the 2026-09-25 award record (2026-04-30 capture: \$3,471,829.40). Transaction descriptions carry the AARO name from modification P00005 (2025-07-10). | contract | government/usaspending-hq003424c0096-20260925.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
 | 2024-11-13 | House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth". Disclosure-side written testimony submitted by Shellenberger ([`/people/michael-shellenberger`]), Gallaudet ([`/people/tim-gallaudet`]), Mike Gold ([`/people/michael-gold`]), and Luis Elizondo ([`/people/luis-elizondo`]) characterizes AARO's historical and analytic work critically — Gallaudet describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff. | hearing | government/oversight-house-gov-uap-hearing-page-20241113.html |  |
 | 2024-11-14 | AARO publishes Fiscal Year 2024 Consolidated Annual Report on UAP. 757 UAP reports for the May 1 2023 – June 1 2024 period; 49 case resolutions, 21 cases meriting further analysis based on anomalous characteristics. GREMLIN prototype sensor system (Georgia Tech Research Institute) disclosed. | report-publication | government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf |  |
 | 2024-11-19 | Kosloski's first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Cases: Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax; object closer to 13,000 ft), Mt. Etna 2018 (slide deck: 170 km from volcano, moderate confidence; oral: 170 m from plume; nq4 disputed). | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf |  |
 | 2024-12-05 | DefenseScoop (Brandi Vincent) reports AARO reached Full Operational Capability as of October 1, 2024 — start of FY 2025. DOD spokesperson Sue Gough: AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". Precedes Kosloski's December 6 closed-door House Oversight briefing. | announcement | news/defensescoop-aaro-foc-briefing-20241205.html |  |
 | 2025-06-06 | Wall Street Journal (Schectman ([`/people/joel-schectman`]), Viswanatha ([`/people/aruna-viswanatha`])) publishes "The Pentagon Disinformation That Fueled America's UFO Mythology" — previews AARO Volume II findings: a 1980s F-117 cover via doctored Area 51 photos (Air Force colonel confessed to AARO investigators in 2023), and the long-running "Yankee Blue" induction-briefing ritual. | publication | news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html |  |
+| 2025-07-10 | HQ003424C0096 modification P00005 — first transaction description reading "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ..."; the base award and P00001–P00004 descriptions do not carry the AARO label. | contract | government/usaspending-hq003424c0096-transactions-20260925.txt | [`/organizations/sancorp-consulting`] |
 | 2025-08-26 | DoD FOID releases FOIA 24-F-0894 (14 pages) covering OASD/PA records on the AARO HRR Vol I rollout (Feb 1 – Mar 7, 2024 email range). Five Initial Denial Authorities — Plescow (OSD/I&S), Lane (OASD/LA), Morrison (ODNI), Rose (OSD/PA), Shockley (OUSD/Policy) — signed off; cover letter signed by Pamela Andrews ([`/people/pamela-andrews`]), Chief, FOIA, OSD/JS. | foia | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 ([`/documents/eo-14347-restoring-department-of-war`]) — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO's parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2025-09-09 | House Oversight Task Force on the Declassification of Federal Secrets hearing — "Restoring Public Trust Through UAP Transparency and Whistleblower Protection" (119th Congress, HVC-210). Per the Task Force's subsequent March 31, 2026 letter (footnote 1), whistleblowers at this hearing informed the Task Force that AARO possesses additional video records of potential UAP sightings. | hearing | government/oversight-house-gov-uap-request-letter-luna-20260331.pdf |  |
+| 2025-12-17 | Wayback capture (capture date) of the Arlo Solutions ([`/organizations/arlo-solutions`]) Greenhouse posting "(617) Staff Officer V" — states the position will support AARO under OUSD(I&S); "key personnel position"; onsite Arlington, VA ([`/locations/arlington-virginia`]). No contract named. | hiring | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html | [`/organizations/arlo-solutions`] |
+| 2026-01-19 | Wayback capture (capture date) of the Arlo Solutions "(617) Staff Officer V" posting — the AARO-support text is still present. No contract named. | hiring | news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html | [`/organizations/arlo-solutions`] |
+| 2026-01-19 | Wayback capture (capture date) of the Arlo Solutions Greenhouse posting "(619) Security Officer IV" — describes security support for AARO within OUSW(I&S); onsite Arlington, VA. No contract named. | hiring | news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html | [`/organizations/arlo-solutions`] |
 | 2026-02-19 | Trump TRUTH Social post (status ID 116100300268316472) directs the Secretary of War and other Departments and Agencies "to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". Underlies Hegseth's February 25, 2026 full-compliance commitment. | government-action | social/trumpstruth-statuses-36826-uap-disclosure-20260219.html |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
 | 2026-03-31 | Task Force on the Declassification of Federal Secrets — Chair Anna Paulina Luna (R-Fla.) — letter to Secretary of War Hegseth requesting 46 UAP video files by April 14, 2026. Letter finds AARO responses "less than adequate" and cites whistleblowers on "additional video records of potential UAP sightings". | government-action | government/oversight-house-gov-uap-request-letter-luna-20260331.pdf |  |
 | 2026-04-16 | Luna ([`/people/anna-paulina-luna`]) tells NewsNation she is prepared to compel production if "institutional resistance continues" and to work with House Oversight Chairman James Comer ([`/people/james-comer`]) to exercise subpoena authority. Luna also called for removal of the unelected official she said failed to route her March 31 letter. | announcement | news/newsnation-luna-uap-video-deadline-subpoena-20260416.html |  |
 | 2026-04-18 | Defense Department spokesperson statement to NBC News (Saturday) on AARO disclosure-coordination posture — AARO working in close coordination with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information. | other | news/nbcnews-trump-ufo-files-interesting-documents-20260418.html |  |
+| 2026-05-06 | HQ003424C0096 modification P00007 (OTHER ADMINISTRATIVE ACTION) — federal_action_obligation -\$56,454.61, recorded after the period of performance ended January 31, 2026; the 2026-09-25 award record reports total obligation \$3,415,374.79. | contract | government/usaspending-hq003424c0096-transactions-20260925.txt | [`/organizations/sancorp-consulting`] |
+| 2026-08-10 | Sancorp Consulting job requisition 1258 (Staff Officer III) posted — support to Research, Development, Test & Evaluation Activities within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO); no contract number cited. Location: National Capital Region ([`/locations/national-capital-region`]). | hiring | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | [`/organizations/sancorp-consulting`] |
 
 ---
 
@@ -1120,6 +1648,13 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
 
+### Flagged
+
+| Organization | Relationship | Source | Note |
+|---|---|---|---|
+| [`/organizations/sancorp-consulting`] | contractor | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | Not confirmed. The link is based only on Sancorp requisition 1258, which uses the HQ003426FE050 award description phrase within OUSW(I&S) AARO and names no contract number. Neither the HQ003426FE050 award record nor any of its five transaction records names AARO. The "OSD OUSD(I)" funding office is not specific to AARO: it also appears on HQ003424C0096 and HQ003422C0064 (IPMO SUPPORT SERVICES). |
+| [`/organizations/arlo-solutions`] | contractor | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html | Not confirmed. Arlo described a (617) Staff Officer V position and a (619) Security Officer IV position as supporting AARO. No contract is named in the (617) or the (619) posting, and no award record cited here names Arlo for AARO work. |
+
 ---
 
 ## Source-Form Notes
@@ -1133,6 +1668,14 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/defense-gov-aaro-establishment-20220720.html |
+| OUSDIS | OUSD(I&S) | government/usaspending-hq003424c0096-transactions-20260925.txt |
+| OSD OUSD(I) | OUSD(I&S) | government/usaspending-hq003426fe050.txt |
+| OUSW(I&S) | OUSD(I&S) | news/sancorp-adp-req1258-staff-officer-iii-20260925.json |
+| Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)) | Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)) | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
+| Unidentified Aerial Phenomena | unidentified anomalous phenomena | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
+| DOW | Department of Defense (DoD) | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
+| Secretary of War | Secretary of Defense | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
+| Under Secretary of War for Intelligence and Security | Under Secretary of Defense for Intelligence and Security | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
 
 ---
 
@@ -1202,9 +1745,12 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/organizations/aaroexec`]
 - [`/organizations/aoimsg`]
+- [`/organizations/arlo-solutions`]
 - [`/organizations/c-uas-task-force`]
+- [`/organizations/congress`]
 - [`/organizations/cp-wmd`]
 - [`/organizations/da-m`]
+- [`/organizations/dcsa`]
 - [`/organizations/dhs`]
 - [`/organizations/dia`]
 - [`/organizations/disclosure-foundation`]
@@ -1212,6 +1758,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/organizations/dod`]
 - [`/organizations/gao`]
 - [`/organizations/gtri`]
+- [`/organizations/intelligence-community`]
 - [`/organizations/ipmo`]
 - [`/organizations/le-oversight-compliance-directorate`]
 - [`/organizations/nasa`]
@@ -1219,10 +1766,12 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/organizations/northcom`]
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
+- [`/organizations/osd`]
 - [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
 - [`/organizations/oversight-task-force-declassification`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/sba`]
 - [`/organizations/scpo`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]
@@ -1237,8 +1786,11 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/documents/aaro-fy24-consolidated-annual-report-uap-2024`]
 - [`/documents/aaro-historical-record-report-vol-i`]
 - [`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`]
+- [`/documents/dod-manual-5105-21`]
+- [`/documents/dod-manual-5205-07`]
 - [`/documents/eo-14347-restoring-department-of-war`]
 - [`/documents/hicks-aaro-establishment-memo-2022`]
+- [`/documents/national-defense-strategy`]
 - [`/documents/oversight-house-uap-request-letter-luna-2026`]
 - [`/documents/thedebrief-mellon-aaro-report-flawed-2024`]
 - [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`]
@@ -1246,3 +1798,10 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 ### Transcripts
 
 - [`/transcripts/2023-04-19-sasc-kirkpatrick`]
+
+### Locations
+
+- [`/locations/arlington-virginia`]
+- [`/locations/falls-church-virginia`]
+- [`/locations/national-capital-region`]
+- [`/locations/washington-dc`]

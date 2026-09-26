@@ -23,6 +23,9 @@
 #                                              contradiction errors, music/etc. warn
 #      scripts/tests/test_image_source_disposition.py — image w/o sibling accepted,
 #                                              w/ .txt sibling verified, video warns
+#      scripts/tests/test_json_unicode_escapes.py — .json source reader decodes
+#                                              \uXXXX (surrogate pairs too), leaves
+#                                              escaped backslash + other escapes raw
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -153,6 +156,7 @@ steps=(
     $'test_quote_source_declared\tpython3 scripts/tests/test_quote_source_declared.py'
     $'test_speaker_attribution_consistency\tpython3 scripts/tests/test_speaker_attribution_consistency.py'
     $'test_image_source_disposition\tpython3 scripts/tests/test_image_source_disposition.py'
+    $'test_json_unicode_escapes\tpython3 scripts/tests/test_json_unicode_escapes.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'
