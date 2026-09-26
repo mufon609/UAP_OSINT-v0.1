@@ -64,7 +64,7 @@ Written 2026-09-26.
   funding office ("OSD OUSD(I)" on the award records) and overlapping WHS
   contracting staff.
 
-## 2. SASP: the first award never performed [E]; Arlo's March 2026 "win" is probably a second award [I]
+## 2. SASP: the first award never performed; the incumbent kept SASP until Arlo's second award took over in May 2026 [E]
 
 - **[E]** Arlo's SASP order F0104 and Premier's EXDIR order F0105 were signed
   the same day, 2025-02-21. **F0105 performed.** Obligations accumulate, an
@@ -84,17 +84,59 @@ Written 2026-09-26.
   and denied its EXDIR challenge (`government/gao-b-422985-wayback-20250708.html`).
   GAO held that "because Sancorp had actual knowledge of the unavailability
   of X, the protester was obligated to advise the agency."
-- **[I]** Arlo's "OUSW (I&S) SASP Incumbent" posting (Greenhouse job
-  5055636007, first_published 2026-02-18) asked applicants for their
-  title, division, government lead, company lead, contract start date and
-  CAC expiration. The posting is in the board snapshot
+- **[E]** SASP support stayed with the incumbent, IEA (later EverWatch),
+  after the bridge. Its order HQ003419F0506 (under TEAMS BPA HQ003415A0010;
+  "ADMINISTRATIVE AND ANALYTICAL SUPPORT") was never cut off at 2025-07-27.
+  From 2025-07-25 its transactions carry the description **"SENSITIVE
+  ACTIVITIES AND SPECIAL PROGRAMS"**:
+
+  | Date | Mod | Action | Amount |
+  |---|---|---|---|
+  | 2025-07-25 | P00035 | CHANGE ORDER | $1,977,626.47 |
+  | 2025-09-02 | P00036 | SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE | $4,127,105.22 |
+  | 2025-09-16 to 2026-04-01 | P00037–P00040 | FUNDING ONLY ACTION | ≈$0.96M in total |
+
+  Its period of performance runs to **2026-05-27**. USAspending records the
+  recipient as "IAN EVAN & ALEXANDER CORP"; the March 2025 bridge notice
+  names Booz Allen as the incumbent on the same task order. (Raw USAspending
+  responses, fetched 2026-09-26 and not yet archived in `sources/`:
+  `.scratch/drafts/contractor-postings-20260925/usaspending-sasp/usaspending-award-HQ003419F0506-*.json`
+  and `usaspending-hq003419f0506-transactions-*.json`.)
+- **[E]** SASP was **re-awarded to Arlo** as HQ003426FE011, a child of BPA
+  HQ003425A0004. It was signed 2026-02-17; its period of performance is
+  2026-05-13 → 2026-11-27, potentially to 2030-11-27; base and all options
+  are $59,372,513.73; $5,694,229.63 is obligated. The description reads
+  "…OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)". A0004 has
+  exactly two child orders, F0104 and FE011. (Raw:
+  `…/usaspending-sasp/usaspending-award-HQ003426FE011-*.json`,
+  `usaspending-hq003426fe011-transactions-*.json`,
+  `usaspending-idv-children-HQ003425A0004-fixed-*.json`; not yet archived.)
+- **[E + I]** The sequence of events:
+
+  | Date | Event |
+  |---|---|
+  | 2025-07-25 | F0506 gets a SASP change order |
+  | 2025-07-27 | The bridge period ends |
+  | 2025-07-28 | F0104 is fully deobligated |
+  | 2025-08-19 | F0104 is terminated for convenience |
+  | 2026-02-17 | FE011 is signed |
+  | 2026-02-18 | Arlo posts its "OUSW (I&S) SASP Incumbent" job, which fits capture of F0506's staff [I] |
+  | 2026-05-13 | FE011 performance begins |
+  | 2026-05-27 | F0506 ends |
+
+  The job posting (Greenhouse job 5055636007) is in the board snapshot
   `meta/topic/incidents/2026-09-24-wayback-capture-loss/evidence/local-copies/board-20260924T023141Z.json`.
-  That pattern is incumbent capture of **another contractor's** staff.
-  Together with Arlo's 2026-03-16 "more than $85 million" SASP announcement
-  (`news/arlo-press-85m-sasp-20260503.html`), it points to a **second SASP
-  award to Arlo in early 2026** under a PIID not yet retrieved.
-- **[O]** Who performed SASP from 2025-07-28 to early 2026? Why was F0104
-  terminated rather than started?
+  The whole sequence shows the government keeping the incumbent on SASP
+  and re-issuing the SASP order to Arlo, rather than transitioning to F0104.
+- **[O]** Why F0104 was terminated and re-issued rather than started. FPDS
+  was unavailable when checked, so no reason-for-modification text is in
+  hand; USAspending gives only "TERMINATE FOR CONVENIENCE (COMPLETE OR
+  PARTIAL)".
+- **[O]** Why Arlo's 2026-03-16 release says "more than $85 million"
+  (`news/arlo-press-85m-sasp-20260503.html`) when FE011's base and all
+  options are $59,372,513.73.
+- **[O]** The IEA versus Booz Allen recipient mismatch on F0506. A
+  corporate acquisition would explain it; no source for that is archived.
 
 ## 3. The contractor map was reshuffled [E + I]
 
@@ -198,8 +240,9 @@ document states it.
 
 ## 8. Next moves (tracked in `meta/topic/research-queue.md`)
 
-1. Arlo's child awards under HQ003425A0004 after 2025-08: the second SASP
-   order (§2).
+1. Archive the FE011 and F0506 USAspending records into `sources/`, and add
+   them to `organizations/arlo-solutions` (and a future IEA/EverWatch node)
+   (§2). The FPDS termination reason for F0104 P00004 is still to fetch.
 2. The 23-F-0377 and 23-F-0446 releases and OIG release DODOIG-2023-000021:
    Tipton and the IG UAP evaluation in the agency's own words (§4).
 3. HQ003424C0046's transaction history and IPMO's post-May-2026 support (§3).
