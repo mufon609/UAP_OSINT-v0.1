@@ -394,20 +394,13 @@ proves error-prone.
 
 ### C9 — Fix the gaps the first `foia` builds exposed
 
-Building the first two `foia` nodes exposed three defects:
+Building the first two `foia` nodes exposed defects; one remains open:
 
-1. **`merge-fragments.py` copies `cited_works` onto `foia` artifacts.** The foia
-   checks reject that field, so builders have to remove it by hand after every
-   merge. Make the merge type-aware, dropping or refusing fields the target
-   type's schema doesn't allow, and add a smoke fixture.
-2. **`government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` is not flagged
+1. **`government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` is not flagged
    `ocr-scan`,** although pp. 4–117 are an OCR layer. Quotes already drawn from
    it (AARO and Sancorp nodes) were verified against unverified OCR text.
    Produce a verified sibling with `/prepare-ocr-sibling`, set the flag, then
    re-verify the existing quotes via `/augment`.
-3. **The MuckRock 23-F-0906 manifest entry's `wayback_date` (2023-05-20) doesn't
-   match its archived 2026-04-30 capture.** Re-derive the date from CDX and
-   correct the entry.
 
 **Blocks:** none.
 **Blocked by:** none.

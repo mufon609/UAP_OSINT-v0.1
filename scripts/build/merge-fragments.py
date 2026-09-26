@@ -15,6 +15,15 @@ file and exercises contract-owned judgment.
 Policy-injection defense: only the schema fields below are copied; anything
 else in a fragment file is ignored. Prose cannot ride the transport.
 
+Type-aware transport: ``cited_works`` is only merged when the target
+artifact's type (read from ``target_node``, e.g. ``foia/x`` -> ``foia``)
+allows the field per ``meta/schema-research-artifact.yaml``
+(``required_keys`` + ``conditional_keys``, matched on type — archetype/kind
+aren't known at merge time). A fragment carrying ``cited_works`` for a
+target type that doesn't allow it (e.g. ``foia``, which the checks reject
+it on) has the field dropped with a printed warning naming it, never
+merged silently.
+
 Fragment file shape (one per source; the worker stub carries its path):
   slug: {slug}
   worker_kind: pdf            # pdf | html | caption | foia
@@ -61,6 +70,13 @@ import sys
 from pathlib import Path
 
 from ruamel.yaml import YAML
+
+# scripts/build/merge-fragments.py — put the scripts/ parent on sys.path
+# so `from lib._common` / `from checks._research_utils` resolve
+# regardless of invocation cwd (mirrors validate-research.py).
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from lib._common import content_type_dirs, load_schema
+from checks._research_utils import evaluate_required_when, evaluate_optional_when
 
 QUOTE_OPTIONAL = ("significance", "context", "claim_group", "statement_date",
                   "observation_type", "category")
@@ -152,6 +168,37 @@ def merge_cited_works(fragments):
           "— route to the owning role")
 
 
+def _target_type(art):
+    """Content type of the artifact's ``target_node`` (e.g. ``foia/x`` ->
+    ``foia``), or ``None`` when ``target_node`` is missing/malformed or its
+    leading directory isn't a registered content type."""
+    target_node = art.get("target_node")
+    if not isinstance(target_node, str) or "/" not in target_node:
+        return None
+    dir_name = target_node.split("/", 1)[0]
+    dir_to_type = {d: t for t, d in content_type_dirs().items()}
+    return dir_to_type.get(dir_name)
+
+
+def _field_allowed(field, target_type):
+    """True if ``field`` may appear as a top-level key on a research
+    artifact targeting ``target_type``, per
+    ``meta/schema-research-artifact.yaml``: universal ``required_keys``
+    are always allowed; a ``conditional_keys`` field is allowed only when
+    a ``required_when_any_of`` / ``optional_when_any_of`` rule matches on
+    type (archetype/kind aren't available at merge time — a rule that
+    also constrains them is evaluated on type alone, same as every other
+    field this script ever transports)."""
+    ra_schema = load_schema()["types"]["research-artifact"]
+    if field in (ra_schema.get("required_keys") or []):
+        return True
+    rules = (ra_schema.get("conditional_keys") or {}).get(field)
+    if rules is None or target_type is None:
+        return False
+    return (evaluate_required_when(rules, target_type)
+            or evaluate_optional_when(rules, target_type))
+
+
 def _next_n(entries, prefix):
     """1 + the highest existing {prefix}N id (0 base when none)."""
     top = 0
@@ -195,6 +242,14 @@ def merge(artifact_path, fragment_paths, today=None, append=False):
 
     cited = merge_cited_works(fragments)
     cited_desc = "untouched (no fragment carried cited_works)"
+    if cited is not None and not _field_allowed("cited_works", _target_type(art)):
+        ttype = _target_type(art)
+        print(f"merge-fragments: WARNING — dropping fragment field "
+              f"`cited_works`: not an allowed field for target type "
+              f"{ttype!r} (target_node={art.get('target_node')!r}); "
+              f"merge continues without it", file=sys.stderr)
+        cited = None
+        cited_desc = f"dropped (cited_works not allowed for target type {ttype!r})"
     if isinstance(cited, str):
         existing = art.get("cited_works")
         if append and isinstance(existing, list) and existing:

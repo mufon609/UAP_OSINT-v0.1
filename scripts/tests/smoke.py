@@ -49,7 +49,11 @@ check no-ops. Three phases sequence by data dependency:
             request_state_consistency fixture set (request_state ↔
             released_records[] cross-check — error / warn / clean cases)
             and the foia_letter_url_convention fixture set (synthetic
-            '#foia/' anchor URL ↔ wayback_skip + directory-slug match)
+            '#foia/' anchor URL ↔ wayback_skip + directory-slug match);
+            plus merge-fragments.py's type-aware transport (a fragment
+            carrying `cited_works` into a foia artifact must have the
+            field dropped with a printed warning, and the artifact must
+            still validate)
 
 Cleanup is pattern-based on the ``__smoke-*`` slug convention. Fires
 at startup (clears debris from a prior crashed run) and on exit.
@@ -166,6 +170,7 @@ _MODULES = {
     "build-from-research": _load_module("build_from_research_module", "scripts/build/build-from-research.py"),
     "review-coverage": _load_module("review_coverage_module", "scripts/build/review-coverage.py"),
     "associate": _load_module("associate_module", "scripts/build/associate.py"),
+    "merge-fragments": _load_module("merge_fragments_module", "scripts/build/merge-fragments.py"),
 }
 
 
@@ -695,6 +700,79 @@ def run_foia_letter_url_convention() -> list:
     return results
 
 
+# ── merge-fragments.py type-aware transport fixture ─────────────────────
+#
+# ``cited_works`` is required-on-document / forbidden-elsewhere (schema-
+# research-artifact.yaml conditional_keys). A worker fragment that still
+# carries it for a foia target must have the field dropped with a printed
+# warning naming it — never merged silently — and the artifact must
+# still validate afterward. Exercised against a real scaffolded foia
+# artifact (not a synthetic dict) so the drop is proven through the same
+# path a real build takes.
+
+_MERGE_FOIA_SLUG = "__smoke-merge-foia"
+
+
+def run_merge_fragments_type_aware() -> list:
+    """merge-fragments.py must drop a fragment's `cited_works` when
+    merging into a foia artifact (the foia schema doesn't allow the
+    field), printing a warning naming it, and the artifact must still
+    validate cleanly afterward."""
+    import shutil
+    import tempfile
+    import yaml
+
+    label = "merge-fragments type-aware (foia drops cited_works)"
+    target = f"foia/{_MERGE_FOIA_SLUG}"
+    artifact = f"meta/research/{_MERGE_FOIA_SLUG}.yaml"
+
+    rc, out, err = _call_main("new", [
+        "foia", "--kind", "foia", "--request-state", "submitted",
+        "--slug", _MERGE_FOIA_SLUG,
+    ])
+    if rc != 0:
+        return [Result(label, False, f"node scaffold failed (rc={rc}): {_err_summary(out, err)}")]
+
+    rc, out, err = _call_main("research-scaffold", ["--target", target])
+    if rc != 0:
+        return [Result(label, False, f"research-scaffold failed (rc={rc}): {_err_summary(out, err)}")]
+
+    frag_dir = Path(tempfile.mkdtemp(prefix="smoke-merge-frag-"))
+    try:
+        fragment = frag_dir / "frag.yaml"
+        yaml.safe_dump({
+            "slug": _MERGE_FOIA_SLUG, "worker_kind": "foia",
+            "source": _FOIA_LETTER, "quotes": [],
+            "cited_works": [{
+                "citation_key": "1", "author": "Example Author",
+                "citation_verbatim": "¹ Example Author, citation",
+                "location": "¶1",
+            }],
+        }, fragment.open("w", encoding="utf-8"), sort_keys=False, allow_unicode=True)
+
+        rc, out, err = _call_main("merge-fragments", [artifact, str(fragment)])
+    finally:
+        shutil.rmtree(frag_dir, ignore_errors=True)
+
+    if rc != 0:
+        return [Result(label, False, f"merge-fragments failed (rc={rc}): {_err_summary(out, err)}")]
+    combined = out + err
+    if "cited_works" not in combined:
+        return [Result(label, False,
+                       f"expected a dropped-field warning naming cited_works, got: {combined!r}")]
+
+    data = yaml.safe_load(Path(artifact).read_text(encoding="utf-8"))
+    if data.get("cited_works"):
+        return [Result(label, False,
+                       f"cited_works was merged onto the foia artifact: {data.get('cited_works')!r}")]
+
+    rc, out, err = _call_main("validate-research", [artifact, "--quiet"])
+    if rc != 0:
+        return [Result(label, False, f"validate-research failed after drop: {_err_summary(out, err)}")]
+
+    return [Result(label, True)]
+
+
 # ── Orchestration ──────────────────────────────────────────────────────
 
 def _run_phase(executor, jobs) -> list:
@@ -737,6 +815,7 @@ def main() -> int:
                 (run_foia_roundtrip,),
                 (run_request_state_consistency,),
                 (run_foia_letter_url_convention,),
+                (run_merge_fragments_type_aware,),
             ]))
     finally:
         cleanup_fixtures()
