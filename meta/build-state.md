@@ -30,7 +30,7 @@ Regenerate after any node add / remove / status change:
 | `/people/sue-gough` | active | institutional-actor |
 | `/people/uri-geller` | active | institutional-actor |
 
-### Organizations (10)
+### Organizations (11)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -39,6 +39,7 @@ Regenerate after any node add / remove / status change:
 | `/organizations/ipmo` | active | gov |
 | `/organizations/oni` | active | gov |
 | `/organizations/ousd-is` | active | gov |
+| `/organizations/premier-enterprise-solutions` | active | gov-contractor |
 | `/organizations/safire-project` | active | private |
 | `/organizations/sancorp-consulting` | active | gov-contractor |
 | `/organizations/stanford-research-institute` | active | private |

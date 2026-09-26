@@ -1164,6 +1164,16 @@ _Oral testimony Q&A (response to "Do you have any personal knowledge of someone 
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | Q&A with Rep. Mace, p. 43 |
 
+> This included photographs and video of the [recovery] operations including the craft and the non-human occupants. And I’ve seen this evidence with my own two eyes
+
+| Field | Value |
+|---|---|
+| Attributed to | New York Post, 2026-09-19. Attributed "he said" (Grusch), following the reporter's paraphrase "Grusch said evidence he has seen is jaw-dropping." The bracketed "[recovery]" is the Post's editorial insertion, preserved verbatim. The article does not state whether this line comes from the Fox-released video; statement_date is the publication date. His 2023-07-26 sworn statement "I have actually never seen anything personally" answered a question about personally experiencing a UAP, not about viewing evidence; his sworn opening statement that day said individuals had "shared compelling evidence in the form of photography" with him. |
+| Source | [archived source](../sources/news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html) |
+| Location | ¶ “This included photographs and video of the [recovery] operations |
+
+_Direct observation._
+
 ### 2019 SAPs/CAPs Tasking by UAPTF Director
 
 > In 2019, the UAPTF director tasked me to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission.
@@ -1300,6 +1310,24 @@ _Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
 | Location | [53:57] |
 
+### NDA-Waiver Appeal to President Trump (2026)
+
+> Mr. President, give us the authorization and we’re ready to go
+
+| Field | Value |
+|---|---|
+| Attributed to | New York Post (Shane Galvin), 2026-09-19. Attribution in the same paragraph: "Grusch said in a video released by Fox." (James Fox). The article does not give the video's recording date; statement_date is the article's publication date (Sep. 19, 2026). |
+| Source | [archived source](../sources/news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html) |
+| Location | ¶ “Mr. President, give us the authorization |
+
+> I am prepared to provide a full historical accounting to the National Security Council . . . and the White House Chief of Staff and make any supporting public statements that are authorized.
+
+| Field | Value |
+|---|---|
+| Attributed to | New York Post, 2026-09-19. Stand-alone quoted paragraph immediately following the Grusch-attributed "he said" paragraph, with no new speaker tag — attribution to Grusch is by continuation. The " . . . " is the Post's own elision mark and is present in the source text (single contiguous span, not a worker-joined splice). statement_date is the publication date. |
+| Source | [archived source](../sources/news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html) |
+| Location | ¶ “I am prepared to provide a full historical accounting |
+
 ---
 
 ## Timeline
@@ -1338,7 +1366,10 @@ _Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-
 | 2023-11 | OUSD(I&S) submits proposed revisions to the UAP Disclosure Act of 2023 ([`/documents/pentagon-uapda-revisions-2023-11`]) to congressional negotiators — institutional Pentagon response to the disclosure framework Grusch's July 26 testimony catalyzed. Per Kirkpatrick's July 17, 2024 von Rennenkampff interview, AARO "convinced Congress last year not to go down that road" | other | government/pentagon-uapda-proposed-revisions-202311.pdf |  |
 | 2023-11-17 | Delivers closing remarks at the Sol Foundation ([`/organizations/sol-foundation`]) Inaugural Symposium, Stanford University, alongside co-founders Garry Nolan ([`/people/garry-nolan`]) and Peter Skafish ([`/people/peter-skafish`]) and UAPTF colleague Karl Nell ([`/people/karl-nell`]); transcript [`/transcripts/grusch-sol-2023-closing`] | publication | transcripts/grusch-sol-2023-closing-downloaded.md |  |
 | 2023-11-21 | Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) episode #2065 with Joe Rogan ([`/people/joe-rogan`]) and Ross Coulthart ([`/people/ross-coulthart`]); transcript [`/transcripts/jre-2065-grusch-2023`] | publication | transcripts/jre-2065-grusch-2023-downloaded.md |  |
-| 2025-03-27 | Rep. Eric Burlison ([`/people/eric-burlison`]) names Grusch Special Advisor to the House Task Force on the Declassification of Federal Secrets ([`/organizations/house-uap-caucus`]); announcement [`/documents/burlison-grusch-advisor-announcement-2025`] | role | government/burlison-house-gov-grusch-advisor-20250327.html |  |
+| 2025-03-27 | Rep. Eric Burlison ([`/people/eric-burlison`]) names Grusch Special Advisor to the House Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]); announcement [`/documents/burlison-grusch-advisor-announcement-2025`] | role | government/burlison-house-gov-grusch-advisor-20250327.html |  |
+| 2026-09-19 | New York Post ([`/organizations/new-york-post`]) exclusive by Shane Galvin ([`/people/shane-galvin`]): Grusch, Dylan Borland ([`/people/dylan-borland`]) and Matthew Brown ([`/people/matthew-brown`]) ask President Trump ([`/people/donald-trump`]) to waive their government nondisclosure agreements; Grusch's appeal is from a video released by James Fox ([`/people/james-fox`]) ([`/media/james-fox-whistleblower-nda-waiver-video-2026`]); article [`/documents/nypost-grusch-borland-brown-nda-waiver-appeal-20260919`] | publication | news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html |  |
+| 2026-09-19 | Same article: the administration's new legal waiver permits reporting only through the Presidential Unsealing and Reporting System for UAP Encounters ([`/organizations/pursue`]), not disclosure to the public; Rep. Eric Burlison ([`/people/eric-burlison`]) supports the group; Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]) chairs the House Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]) | publication | news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html |  |
+| 2026-09-19 | James Fox ([`/people/james-fox`]) posts on X ([`/organizations/x-corp`]) urging President Trump ([`/people/donald-trump`]) (tagged @POTUS) to "Waive their NDAs" and "let the American people hear the classified details", linking the New York Post ([`/organizations/new-york-post`]) article whose link card names Grusch, Dylan Borland ([`/people/dylan-borland`]) and Matthew Brown ([`/people/matthew-brown`]) | publication | social/x-jamescfox-2101321904627851749-20260919.json |  |
 
 ---
 
@@ -1356,6 +1387,9 @@ _Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-
 | [`/people/eric-burlison`] | U.S. Representative (R-MO) who hired Grusch as Special Advisor to the House Task Force on Declassification of Federal Secrets on 2025-03-27 |
 | [`/people/tim-burchett`] | U.S. Representative (R-TN), House Oversight UAP Subcommittee member who presided over Grusch's 2023-07-26 sworn testimony and has publicly defended Grusch against discrediting attempts |
 | [`/people/jesse-michels`] | Long-form UAP journalist who produced the American Alchemy / Yes Theory "72 hrs With Grusch" documentary (~October 2023) |
+| [`/people/dylan-borland`] | Fellow member (with Matthew Brown) of the UFO whistleblower coalition asking President Trump to waive their government nondisclosure agreements (2026-09-19); Air Force veteran who testified to Congress in 2024 |
+| [`/people/matthew-brown`] | Fellow member (with Dylan Borland) of the UFO whistleblower coalition asking President Trump to waive their government nondisclosure agreements (2026-09-19); was an independent contractor for the defense industry |
+| [`/people/james-fox`] | Filmmaker and disclosure advocate who released the video carrying Grusch's appeal to President Trump for authorization to disclose (2026-09-19) |
 
 ---
 
@@ -1436,7 +1470,9 @@ Context. Under oath on July 26, 2023, Grusch testified that he "asked my informa
 
 AARO position. Under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), AARO ([`/organizations/aaro`]) correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]); Kirkpatrick wrote he was "not judging the claims" and was "not taking a position on ... the underlying claim of recovered materials," stating of Grusch that "he is sincere and credible and his and other claims, which I expressly called 'allegations,' warrant investigation." Grusch declined AARO interview invitations. Christopher Mellon ([`/people/christopher-mellon`]) described in the Debrief that "a number of potential sources do not trust the leadership of the All-Domain Anomaly Resolution Office established by Congress." In November 2023, OUSD(I&S) ([`/organizations/ousd-is`]) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per Douglas Johnson's ([`/people/douglas-johnson`]) analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) interview, Kirkpatrick said of the revisions, "we convinced Congress last year not to go down that road."
 
-Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept's story on Grusch's military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus House UAP Caucus members Burchett, Burlison ([`/people/eric-burlison`]), Luna ([`/people/anna-paulina-luna`]), and Sen. Rubio ([`/people/marco-rubio`]).
+Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept's story on Grusch's military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus Rep. Burchett, Rep. Burlison ([`/people/eric-burlison`]), and Sen. Rubio ([`/people/marco-rubio`]).
+
+NDA waiver appeal. On Sep. 19, 2026, the New York Post ([`/organizations/new-york-post`]) reported that Dylan Borland ([`/people/dylan-borland`]), David Grusch and Matthew Brown ([`/people/matthew-brown`]) formed a coalition to ask President Trump ([`/people/donald-trump`]) to waive their government nondisclosure agreements; they "say they accumulated the information while working in highly classified government programs and are legally barred from discussing it publicly without White House intervention" ([`/organizations/white-house`]). Per the same article, the administration's new legal waiver allows reporting UFO and alien-related information to the federal government "only through the Presidential Unsealing and Reporting System for UAP Encounters, not for disclosure to the public" ([`/organizations/pursue`]). Grusch's appeal came in "a video released by Fox" — filmmaker and disclosure advocate James Fox ([`/people/james-fox`]); in the same article Grusch said he is "prepared to provide a full historical accounting to the National Security Council" ([`/organizations/nsc`]) "and the White House Chief of Staff and make any supporting public statements that are authorized."
 
 [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
 
@@ -1482,10 +1518,13 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/christopher-mellon`]
 - [`/people/chuck-schumer`]
 - [`/people/david-abba`]
+- [`/people/donald-trump`]
 - [`/people/douglas-johnson`]
+- [`/people/dylan-borland`]
 - [`/people/eric-burlison`]
 - [`/people/garry-nolan`]
 - [`/people/harry-reid`]
+- [`/people/james-fox`]
 - [`/people/james-lacatski`]
 - [`/people/jay-stratton`]
 - [`/people/jesse-michels`]
@@ -1497,6 +1536,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/luis-elizondo`]
 - [`/people/marco-rubio`]
 - [`/people/marik-von-rennenkampff`]
+- [`/people/matthew-brown`]
 - [`/people/mike-rounds`]
 - [`/people/peter-skafish`]
 - [`/people/ralph-blumenthal`]
@@ -1504,6 +1544,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/ronald-moultrie`]
 - [`/people/ross-coulthart`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/shane-galvin`]
 - [`/people/tim-burchett`]
 
 ### Organizations
@@ -1516,21 +1557,26 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/blue-sky-innovators`]
 - [`/organizations/dod`]
 - [`/organizations/hasc`]
-- [`/organizations/house-uap-caucus`]
 - [`/organizations/hpsci`]
 - [`/organizations/icig`]
 - [`/organizations/joe-rogan-experience`]
 - [`/organizations/lockheed-martin`]
+- [`/organizations/new-york-post`]
 - [`/organizations/newsnation`]
 - [`/organizations/nga`]
 - [`/organizations/nro`]
+- [`/organizations/nsc`]
 - [`/organizations/ousd-is`]
+- [`/organizations/oversight-task-force-declassification`]
+- [`/organizations/pursue`]
 - [`/organizations/sasc`]
 - [`/organizations/sol-foundation`]
 - [`/organizations/the-debrief`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-air-force`]
 - [`/organizations/us-air-force-academy`]
+- [`/organizations/white-house`]
+- [`/organizations/x-corp`]
 
 ### Events
 
@@ -1544,6 +1590,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/documents/grusch-bio-2023`]
 - [`/documents/grusch-dopsr-request-2023`]
 - [`/documents/grusch-ppd-19-procedural-filing`]
+- [`/documents/nypost-grusch-borland-brown-nda-waiver-appeal-20260919`]
 - [`/documents/pentagon-uapda-revisions-2023-11`]
 - [`/documents/ppd-19`]
 - [`/documents/written-testimony-grusch-2023`]
@@ -1555,3 +1602,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/transcripts/grusch-sol-2023-closing`]
 - [`/transcripts/jre-2065-grusch-2023`]
 - [`/transcripts/newsnation-coulthart-grusch-2023`]
+
+### Media
+
+- [`/media/james-fox-whistleblower-nda-waiver-video-2026`]

@@ -1,0 +1,1476 @@
+id: meta/research/premier-enterprise-solutions
+type: research-artifact
+target_node: organizations/premier-enterprise-solutions
+status: active
+primary_sources:
+- path: government/usaspending-hq003425a0003.txt
+  format: txt
+- path: government/usaspending-hq003425f0105.txt
+  format: txt
+- path: government/usaspending-hq003425f0105-transactions.txt
+  format: txt
+- path: government/gao-b-422985-wayback-20250708.html
+  format: html
+- path: government/samgov-tr011720251116-notice.json
+  format: txt
+- path: news/premier-about-20260926.html
+  format: html
+- path: news/premier-home-20260926.html
+  format: html
+- path: news/samdaily-fbo-06693814-hq003423c0061.html
+  format: html
+- path: government/usaspending-hq003423c0061.txt
+  format: txt
+document_intrinsic:
+  full_name: Premier Enterprise Solutions, LLC
+  contracting_agency: Washington Headquarters Services (WHS)
+  period_of_performance: 2025-02-15 to 2030-02-14 (BPA HQ003425A0003)
+  primary_counterparty_path: /organizations/ousd-is
+  registered_status: 'UEI SN5KHDCRNDM5; 8(a) Program Participant; Service Disabled Veteran Owned Business; Women Owned Small Business'
+  cage_code: 6RM79
+context_extrinsic:
+  display_title: Premier Enterprise Solutions, LLC
+quotes:
+- id: q1
+  added_date: '2026-09-26'
+  text: '"generated_unique_award_id":"CONT_IDV_HQ003425A0003_9700","piid":"HQ003425A0003","category":"idv","type":"IDV_E","type_description":"BPA"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: 'top-level "generated_unique_award_id" / "piid" / "category" / "type" / "type_description" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'USAspending award identity: PIID HQ003425A0003, category idv, type IDV_E, type_description BPA — a Blanket Purchase Agreement vehicle.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q2
+  added_date: '2026-09-26'
+  text: '"description":"TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD (I&S) ENTERPRISE"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: 'top-level "description" field, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Stated purpose of the BPA: technical, administrative and professional support services to the OUSD(I&S) Enterprise. The source description carries an unbalanced parenthesis ("(OUSD (I&S) ENTERPRISE"), preserved verbatim.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q3
+  added_date: '2026-09-26'
+  text: '"total_obligation":0.0,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2025-02-14","base_exercised_options":null,"base_and_all_options":1856000000.0'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: 'top-level "total_obligation" / "subaward_count" / "date_signed" / "base_and_all_options" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'BPA signed 2025-02-14; base_and_all_options recorded as 1856000000.0; total_obligation on the BPA record itself 0.0; no subawards. The record does not say whether the base-and-all-options figure is a per-vendor ceiling or an aggregate. The GAO decision in B-422985.4/.5 separately gives a "good faith estimate amount" of $856 million for all BPAs under RFQ HQ003424R0178; the two figures carry different labels, neither source relates one to the other, and they are not treated as a contradiction.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q4
+  added_date: '2026-09-26'
+  text: '"period_of_performance":{"start_date":"2025-02-15","end_date":"2030-02-14","last_modified_date":"2026-02-12","potential_end_date":null}'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"period_of_performance" object, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Ordering period 2025-02-15 through 2030-02-14; record last modified 2026-02-12.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q5
+  added_date: '2026-09-26'
+  text: '"solicitation_identifier":null,"solicitation_procedures":null,"number_of_offers_received":null,"extent_competed":null,"type_set_aside":null'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "solicitation_identifier" / "number_of_offers_received" / "extent_competed" / "type_set_aside" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'The BPA record leaves solicitation identifier, number of offers, extent competed, and set-aside type all null — this record does not name the underlying solicitation or its competition terms.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q6
+  added_date: '2026-09-26'
+  text: '"small_business_competitive":false,"product_or_service_code":"R499","naics":"541611","naics_description":"ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "small_business_competitive" / "product_or_service_code" / "naics" / "naics_description" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'PSC R499 (Support - Professional: Other); NAICS 541611 (administrative management and general management consulting services); small_business_competitive false.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q7
+  added_date: '2026-09-26'
+  text: '"multiple_or_single_award_description":"MULTIPLE AWARD"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "multiple_or_single_award_description" field, CONT_IDV_HQ003425A0003_9700'
+  significance: 'HQ003425A0003 is recorded as a multiple-award vehicle; this record names no other awardee.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q8
+  added_date: '2026-09-26'
+  text: '"commercial_item_acquisition_description":"COMMERCIAL PRODUCTS/SERVICES"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "commercial_item_acquisition_description" field, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Commercial products/services acquisition.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q9
+  added_date: '2026-09-26'
+  text: '"consolidated_contract_description":"CONSOLIDATED REQUIREMENTS","type_of_contract_pricing_description":"FIRM FIXED PRICE"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "consolidated_contract_description" / "type_of_contract_pricing_description" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Firm fixed price; consolidated requirements.'
+  claim_group: 'BPA HQ003425A0003 award record'
+  statement_date: '2026-02-12'
+- id: q10
+  added_date: '2026-09-26'
+  text: '"funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"funding_agency" object, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Funding agency: Department of Defense, subtier Immediate Office of the Secretary of Defense (SECDEF); funding office recorded as "OSD OUSD(I)".'
+  claim_group: 'Funding and awarding offices'
+  statement_date: '2026-02-12'
+  corroborated_by: [q26]
+- id: q11
+  added_date: '2026-09-26'
+  text: '"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"awarding_agency" object, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Awarding agency: Department of Defense, subtier and office Washington Headquarters Services (WHS).'
+  claim_group: 'Funding and awarding offices'
+  statement_date: '2026-02-12'
+  corroborated_by: [q27]
+- id: q12
+  added_date: '2026-09-26'
+  text: '"recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","recipient_uei":"SN5KHDCRNDM5","recipient_unique_id":null,"parent_recipient_hash":"dec4b805-420d-1eed-8610-17379f5cd80a-P","parent_recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","parent_recipient_uei":"SN5KHDCRNDM5"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"recipient" object, "recipient_name" / "recipient_uei" / "parent_recipient_*" fields, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Recipient: PREMIER ENTERPRISE SOLUTIONS, LLC, UEI SN5KHDCRNDM5; the parent recipient is recorded as the same entity (same name and UEI) — no separate parent company.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-02-12'
+  corroborated_by: [q29]
+- id: q13
+  added_date: '2026-09-26'
+  text: '"business_categories":["8(a) Program Participant","Black American Owned Business","Category Business","Corporate Entity Not Tax Exempt","DoT Certified Disadvantaged Business Enterprise","Economically Disadvantaged Women Owned Small Business","Limited Liability Corporation","Minority Owned Business","Self-Certified Small Disadvantaged Business","Service Disabled Veteran Owned Business","Small Business","Special Designations","U.S.-Owned Business","Veteran Owned Business","Woman Owned Business","Women Owned Small Business"]'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"recipient" object, "business_categories" array, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Business categories recorded for Premier: 8(a) Program Participant; Black American Owned; DoT Certified Disadvantaged Business Enterprise; Economically Disadvantaged Women Owned Small Business; LLC; Minority Owned; Self-Certified Small Disadvantaged Business; Service Disabled Veteran Owned; Small Business; U.S.-Owned; Veteran Owned; Woman Owned; Women Owned Small Business.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-02-12'
+  corroborated_by: [q30]
+- id: q14
+  added_date: '2026-09-26'
+  text: '"state_code":"MD","state_name":"MARYLAND","city_name":"UPPER MARLBORO","county_code":"033","county_name":"PRINCE GEORGE''S","address_line1":"9701 APOLLO DR STE 410","address_line2":null,"address_line3":null,"congressional_code":"04","zip4":"4791","zip5":"20774"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"recipient" object, "location" sub-object, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Recipient business address: 9701 Apollo Dr Ste 410, Upper Marlboro, Prince George''s County, Maryland 20774-4791; congressional district 04.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-02-12'
+  corroborated_by: [q31]
+- id: q15
+  added_date: '2026-09-26'
+  text: '"domestic_or_foreign_entity_description":"U.S. OWNED BUSINESS"'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"latest_transaction_contract_data" object, "domestic_or_foreign_entity_description" field, CONT_IDV_HQ003425A0003_9700'
+  significance: 'Recipient recorded as a U.S.-owned business.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-02-12'
+  corroborated_by: [q25]
+- id: q16
+  added_date: '2026-09-26'
+  text: '"executive_details":{"officers":[{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null}]}'
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"executive_details" object, CONT_IDV_HQ003425A0003_9700'
+  significance: 'No executive-compensation officer names are recorded for the recipient on this award record.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-02-12'
+  corroborated_by: [q33]
+- id: q17
+  added_date: '2026-09-26'
+  text: '"generated_unique_award_id":"CONT_AWD_HQ003425F0105_9700_HQ003425A0003_9700","piid":"HQ003425F0105","category":"contract","type":"A","type_description":"BPA CALL","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES."'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "generated_unique_award_id" … "description"'
+  significance: 'Identifies HQ003425F0105 as a BPA CALL order under HQ003425A0003 and records its description.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q18
+  added_date: '2026-09-26'
+  text: '"total_obligation":16658158.42,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2025-02-21","base_exercised_options":16878644.1,"base_and_all_options":73719023.85,"total_account_outlay":0,"total_account_obligation":0'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "total_obligation" … "total_account_obligation"'
+  significance: 'Award value: total obligation, base and exercised options, base and all options; signed 2025-02-21; no subawards.'
+  context: 'As published, base_exercised_options (16878644.1) exceeds total_obligation (16658158.42).'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q19
+  added_date: '2026-09-26'
+  text: '"parent_award":{"agency_id":1173,"agency_name":"Department of Defense","agency_slug":"department-of-defense","sub_agency_id":"9700","sub_agency_name":"Department of Defense","award_id":351318426,"generated_unique_award_id":"CONT_IDV_HQ003425A0003_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0003"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "parent_award"'
+  significance: 'Parent vehicle is BPA HQ003425A0003, a MULTIPLE AWARD BPA under the Department of Defense.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q20
+  added_date: '2026-09-26'
+  text: '"solicitation_identifier":"HQ003424R0178","solicitation_procedures":"SP1","number_of_offers_received":"1","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.solicitation_identifier" … "type_set_aside_description"'
+  significance: 'Solicitation HQ003424R0178; one offer received; 8(a) competed set-aside. The GAO decision in B-422985.4/.5 states that the agency received quotations from nine vendors under the same RFQ and reports reevaluation results for Sancorp and Premier on call order 1; neither source explains the difference, and both are kept as published.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+  contradicted_by: q117
+- id: q21
+  added_date: '2026-09-26'
+  text: '"solicitation_procedures_description":"SIMPLIFIED ACQUISITION","extent_competed_description":"COMPETED UNDER SAP"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.solicitation_procedures_description" / "extent_competed_description"'
+  significance: 'Competed under simplified acquisition procedures.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q22
+  added_date: '2026-09-26'
+  text: '"product_or_service_code":"R408","naics":"541611","naics_description":"ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.product_or_service_code" / "naics" / "naics_description"'
+  significance: 'PSC R408 and NAICS 541611 classification of the work.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q23
+  added_date: '2026-09-26'
+  text: '"product_or_service_description":"SUPPORT- PROFESSIONAL: PROGRAM MANAGEMENT/SUPPORT"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.product_or_service_description"'
+  significance: 'PSC description: program management/support.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q24
+  added_date: '2026-09-26'
+  text: '"type_of_contract_pricing_description":"FIRM FIXED PRICE"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.type_of_contract_pricing_description"'
+  significance: 'Pricing type.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q25
+  added_date: '2026-09-26'
+  text: '"domestic_or_foreign_entity_description":"U.S. OWNED BUSINESS"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "latest_transaction_contract_data.domestic_or_foreign_entity_description"'
+  significance: 'Recipient recorded as a U.S.-owned business.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-04-23'
+- id: q26
+  added_date: '2026-09-26'
+  text: '"funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "funding_agency"'
+  significance: 'Funding agency is the Immediate Office of the Secretary of Defense; funding office "OSD OUSD(I)".'
+  claim_group: 'Funding and awarding offices'
+  statement_date: '2026-04-23'
+- id: q27
+  added_date: '2026-09-26'
+  text: '"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "awarding_agency"'
+  significance: 'Awarding agency is Washington Headquarters Services.'
+  claim_group: 'Funding and awarding offices'
+  statement_date: '2026-04-23'
+- id: q28
+  added_date: '2026-09-26'
+  text: '"period_of_performance":{"start_date":"2025-02-21","end_date":"2026-12-27","last_modified_date":"2026-04-23","potential_end_date":"2029-12-27 00:00:00"}'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "period_of_performance"'
+  significance: 'Performance 2025-02-21 to 2026-12-27, potential end 2029-12-27; record last modified 2026-04-23.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q29
+  added_date: '2026-09-26'
+  text: '"recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","recipient_uei":"SN5KHDCRNDM5","recipient_unique_id":null,"parent_recipient_hash":"dec4b805-420d-1eed-8610-17379f5cd80a-P","parent_recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","parent_recipient_uei":"SN5KHDCRNDM5"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "recipient.recipient_name" … "parent_recipient_uei"'
+  significance: 'Recipient name and UEI; parent recipient is the same entity.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-04-23'
+- id: q30
+  added_date: '2026-09-26'
+  text: '"business_categories":["8(a) Program Participant","Black American Owned Business","Category Business","Corporate Entity Not Tax Exempt","DoT Certified Disadvantaged Business Enterprise","Economically Disadvantaged Women Owned Small Business","Limited Liability Corporation","Minority Owned Business","Self-Certified Small Disadvantaged Business","Service Disabled Veteran Owned Business","Small Business","Special Designations","U.S.-Owned Business","Veteran Owned Business","Woman Owned Business","Women Owned Small Business"]'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "recipient.business_categories"'
+  significance: 'Recipient business categories, including 8(a) Program Participant, service-disabled veteran owned, and woman owned.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-04-23'
+- id: q31
+  added_date: '2026-09-26'
+  text: '"location":{"location_country_code":"USA","country_name":"UNITED STATES","state_code":"MD","state_name":"MARYLAND","city_name":"UPPER MARLBORO","county_code":"033","county_name":"PRINCE GEORGE''S","address_line1":"9701 APOLLO DR STE 410","address_line2":null,"address_line3":null,"congressional_code":"04","zip4":"4791","zip5":"20774"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "recipient.location"'
+  significance: 'Recipient address in Upper Marlboro, Prince George''s County, Maryland.'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-04-23'
+- id: q32
+  added_date: '2026-09-26'
+  text: '"place_of_performance":{"location_country_code":"USA","country_name":"UNITED STATES","county_code":"001","county_name":"DISTRICT OF COLUMBIA","city_name":"WASHINGTON","state_code":"DC","state_name":"DISTRICT OF COLUMBIA","congressional_code":"98","zip4":"1155","zip5":"20301"'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "place_of_performance"'
+  significance: 'Place of performance Washington, DC 20301.'
+  claim_group: 'BPA call HQ003425F0105 award record'
+  statement_date: '2026-04-23'
+- id: q33
+  added_date: '2026-09-26'
+  text: '"executive_details":{"officers":[{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null},{"name":null,"amount":null}]}'
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "executive_details.officers"'
+  significance: 'The record names no officers (all five officer entries null).'
+  claim_group: 'Recipient identity and registered business profile'
+  statement_date: '2026-04-23'
+- id: q34
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003425F0105_0_HQ003425A0003_0","type":"A","type_description":"BPA CALL","action_date":"2025-02-21","action_type":null,"action_type_description":null,"modification_number":"0","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.","federal_action_obligation":2967685.81'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_0_HQ003425A0003_0 (modification_number "0") — "id" through "federal_action_obligation" fields'
+  significance: 'USAspending transaction history for task order HQ003425F0105: the base action (modification 0) is a BPA CALL whose transaction id pairs HQ003425F0105 with BPA HQ003425A0003; action_date 2025-02-21; description PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.; federal_action_obligation 2967685.81.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-02-21'
+- id: q35
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-03-13","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00001","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.","federal_action_obligation":0.0'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00001_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00001 (2025-03-13): OTHER ADMINISTRATIVE ACTION, zero obligation.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-03-13'
+- id: q36
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-06-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00002","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.","federal_action_obligation":0.0'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00002_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00002 (2025-06-10): OTHER ADMINISTRATIVE ACTION, zero obligation.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-06-10'
+- id: q37
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-07-11","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00003","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.","federal_action_obligation":1501186.19'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00003_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00003 (2025-07-11): recorded as OTHER ADMINISTRATIVE ACTION yet carries a federal_action_obligation of 1501186.19.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-07-11'
+- id: q38
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-07-25","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00004","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":177411.83'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00004_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00004 (2025-07-25): SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE, obligation 177411.83. First transaction whose description names the customer: OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE. Every later transaction carries the same description.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-07-25'
+- id: q39
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-09-26","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00005","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":-41442.95'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00005_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00005 (2025-09-26): SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE with a negative obligation (deobligation) of -41442.95.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-09-26'
+- id: q40
+  added_date: '2026-09-26'
+  text: '"action_date":"2025-12-26","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00006","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":10466026.2'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00006_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00006 (2025-12-26): EXERCISE AN OPTION, obligation 10466026.2 — the largest single action in the transaction history.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2025-12-26'
+- id: q41
+  added_date: '2026-09-26'
+  text: '"action_date":"2026-02-26","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00007","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":393982.76'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00007_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00007 (2026-02-26): FUNDING ONLY ACTION, obligation 393982.76.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2026-02-26'
+- id: q42
+  added_date: '2026-09-26'
+  text: '"action_date":"2026-02-27","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00008","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":1166494.62'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00008_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00008 (2026-02-27): SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE, obligation 1166494.62.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2026-02-27'
+- id: q43
+  added_date: '2026-09-26'
+  text: '"action_date":"2026-04-14","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00009","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":26813.96'
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00009_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  significance: 'HQ003425F0105 modification P00009 (2026-04-14): FUNDING ONLY ACTION, obligation 26813.96 — the latest transaction in the captured history.'
+  claim_group: 'HQ003425F0105 transaction history'
+  statement_date: '2026-04-14'
+- id: q44
+  added_date: '2026-09-26'
+  text: 'Sancorp Consulting, LLC, a small business of Falls Church, Virginia, protests the issuance of orders to Premier Enterprise Solutions, LLC, a small business of Upper Marlboro, Maryland, and Arlo Solutions, LLC, a small business of Washington, D.C., under request for quotations (RFQ) No. HQ003424R0178, issued by the Department of Defense, Washington Headquarters Service (WHS), for technical, administrative, and professional support services.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DECISION section, ¶1 (same sentence also reproduced in the page''s Highlights summary)'
+  significance: 'GAO identifies Premier Enterprise Solutions, LLC as a small business of Upper Marlboro, Maryland, and as a recipient of an order under DoD/WHS RFQ HQ003424R0178 that Sancorp protested.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+- id: q45
+  added_date: '2026-09-26'
+  text: 'The RFQ, set aside for 8(a) small businesses and issued under Federal Acquisition Regulation (FAR) subpart 8.4, sought quotations to establish multiple award blanket purchase agreement (BPAs) with vendors to provide technical, administrative, and professional support services to the Office of the Under Secretary of Defense for Intelligent & Security (OUSD(I&S)) enterprise.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency issued the RFQ on May 23, 2024"'
+  significance: 'Scope of the solicitation under which Premier competed: an 8(a) set-aside for multiple-award BPAs supporting the OUSD(I&S) enterprise.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+- id: q46
+  added_date: '2026-09-26'
+  text: 'The “good faith estimate amount” for all BPAs is $856 million.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency issued the RFQ on May 23, 2024"'
+  significance: 'Aggregate estimate across all BPAs under the RFQ, not a Premier-specific value. The USAspending record for Premier''s BPA HQ003425A0003 separately records base_and_all_options of 1856000000.0; the two figures carry different labels and neither source relates one to the other.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+- id: q47
+  added_date: '2026-09-26'
+  text: 'Under call order 1, the awardee is to provide services to the I&S Executive Directorate (EXDIR).'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The RFQ provided a performance work statement"'
+  significance: 'Defines the EXDIR call order (call order 1) that the reevaluation awarded to Premier.'
+  claim_group: 'Reevaluation and award of the EXDIR call order to Premier'
+  statement_date: '2025-06-11'
+- id: q48
+  added_date: '2026-09-26'
+  text: 'In September, WHS established a BPA with, and issued call order 1 (EXDIR) to, Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions. COS/MOL at 5. At the same time, WHS established a BPA with, and issued call order 2 (SASP) to, Sancorp. Id. Following notification of the awards, Arlo and Premier filed protests with our Office, challenging the agency’s evaluation and award decisions. Arlo Sols., LLC, B‑422985, B-422985.2, Oct. 16, 2024 (unpublished decision); Premier Enter. Sols., LLC, B-422985.3, Oct. 16, 2024 (unpublished decision). In response, the agency advised our office that it intended to take corrective action; specifically, the agency stated that it would terminate the BPAs and call orders, reevaluate quotations, and make new award decisions. Id. We dismissed the protests as academic on October 16. Id.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+  significance: 'Premier protested the initial September 2024 awards (B-422985.3); WHS took corrective action and GAO dismissed the protest as academic on October 16, 2024.'
+  claim_group: 'Premier protest B-422985.3 and WHS corrective action'
+  statement_date: '2025-06-11'
+- id: q49
+  added_date: '2026-09-26'
+  text: 'Call Order 1 (EXDIR) Sancorp Premier Technical Good Outstanding Past performance Satisfactory Confidence Satisfactory Confidence Price $99,312,935 $94,819,501'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, reevaluation results table for Call Order 1 (EXDIR)'
+  significance: 'Reevaluated ratings: Premier rated Outstanding (technical) and Satisfactory Confidence (past performance) at a price of $94,819,501 for the EXDIR call order, versus Sancorp Good / Satisfactory Confidence / $99,312,935.'
+  claim_group: 'Reevaluation and award of the EXDIR call order to Premier'
+  statement_date: '2025-06-11'
+  contradicted_by: q20
+- id: q50
+  added_date: '2026-09-26'
+  text: 'The contracting officer, who was the source selection authority (SSA), determined that WHS would establish BPAs with four vendors, including Sancorp, Premier, and Arlo. COS/MOL at 6. Relevant here, the SSA found that Premier’s quotation represented the best value for the EXDIR call order, and that Arlo’s quotation represented the best value for the SASP call order, and the agency issued the orders accordingly.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "AR, Tab 45, Source Selection Decision Document"'
+  significance: 'Premier received one of four BPAs and was found to represent the best value for the EXDIR call order, which was issued to it.'
+  claim_group: 'Reevaluation and award of the EXDIR call order to Premier'
+  statement_date: '2025-06-11'
+- id: q51
+  added_date: '2026-09-26'
+  text: 'Sancorp also challenges the agency’s evaluation of Premier’s technical quotation for the EXDIR call order. According to the protester, the agency “missed flaws”--failures to comply with material solicitation requirements--in the awardee’s quotation.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DISCUSSION section — Premier’s Quotation, ¶ "Sancorp also challenges the agency’s evaluation of Premier’s"'
+  significance: 'Sancorp''s allegation that WHS missed flaws in Premier''s technical quotation.'
+  claim_group: 'Sancorp challenge to Premier''s EXDIR technical quotation'
+  statement_date: '2025-06-11'
+- id: q52
+  added_date: '2026-09-26'
+  text: 'Premier’s quotation addressed the administrative and human resources support task, identifying the following “four overarching needs” that shaped the firm’s approach for all work, including electronic records: technical expertise, systems thinking, emotional intelligence, and reality testing. AR, Tab 27, Premier Technical Quotations at 15-16. Specific to the executive secretariat support, Premier acknowledges the need for personnel to have “a holistic sense” of the organization and applicable policies and procedures and discusses how it will apply its approach to records management.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DISCUSSION section — Premier’s Quotation, ¶ "Premier’s quotation addressed the administrative"'
+  significance: 'GAO''s description of Premier''s technical approach, relaying phrases from Premier''s own technical quotation ("four overarching needs", "a holistic sense").'
+  claim_group: 'Sancorp challenge to Premier''s EXDIR technical quotation'
+  statement_date: '2025-06-11'
+- id: q53
+  added_date: '2026-09-26'
+  text: 'The protester contends the awardee’s technical quotation fails to demonstrate “experience in maintaining and posting electronic archives” and does not specifically address National Archives and Records Administration (NARA) standards for such archives. Comments & Supp. Protest at 13. The agency responds that the evaluators reasonably found that Premier proposed a comprehensive technical approach to the executive secretariat support work, including electronic archives.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DISCUSSION section — Premier’s Quotation, ¶ "The protester contends the awardee’s technical quotation"'
+  significance: 'The representative example GAO discusses: the electronic-archives / NARA-standards challenge to Premier''s quotation and the agency''s response.'
+  claim_group: 'Sancorp challenge to Premier''s EXDIR technical quotation'
+  statement_date: '2025-06-11'
+- id: q54
+  added_date: '2026-09-26'
+  text: 'Here, the record reflects that WHS found that Premier’s quotation met the requirements for this subtask. AR, Tab 36, Premier EXDIR TEB Report at 5. According to the evaluators, Premier’s quotation detailed an adequate approach to the work.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DISCUSSION section — Premier’s Quotation, ¶ "Here, the record reflects that WHS found"'
+  significance: 'The WHS technical evaluation board found Premier''s quotation met the executive secretariat subtask requirements.'
+  claim_group: 'Sancorp challenge to Premier''s EXDIR technical quotation'
+  statement_date: '2025-06-11'
+- id: q55
+  added_date: '2026-09-26'
+  text: 'To the extent the protester’s objection is that the contemporaneous record includes a very limited examination of Premier’s approach to electronic records, our Office has consistently explained that agencies need not document all determinations of adequacy. Allied Tech. Grp., Inc., B-412434, B-412434.2, Feb. 10, 2016, 2016 CPD ¶ 74 at 13 (finding an agency is not required to document why a quotation did not receive a weakness for a particular item). This argument--and the similar arguments Sancorp raises about other elements of the awardee’s quotation--are therefore denied.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DISCUSSION section — Premier’s Quotation, ¶ "To the extent the protester’s objection"'
+  significance: 'GAO notes the contemporaneous record contains only a very limited examination of Premier''s electronic-records approach, and denies the challenges to Premier''s quotation.'
+  claim_group: 'Sancorp challenge to Premier''s EXDIR technical quotation'
+  statement_date: '2025-06-11'
+- id: q56
+  added_date: '2026-09-26'
+  text: '1. Protests challenging the technical evaluation of first call order are denied where the record shows that the evaluation was reasonable and consistent with the terms of the solicitation.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'DIGEST, ¶ "1. Protests challenging the technical evaluation"'
+  significance: 'GAO holding on the first (EXDIR) call order awarded to Premier: protests denied.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+- id: q57
+  added_date: '2026-09-26'
+  text: 'Jonathan D. Perrone, Esq., Joshua M. Sather, Esq., and Timothy J. Turner, Esq., Whitcomb, Selinsky, P.C., and Sharon O. Steele, Esq., Steele Law Offices, LLC, for Premier Enterprise Solutions, LLC, the intervenors.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'Decision header — counsel-of-record block, ¶ "Olivia L. Lynch, Esq., Cherie J. Owen"'
+  significance: 'Premier appeared as an intervenor in B-422985.4/.5, represented by Whitcomb, Selinsky, P.C. and Steele Law Offices, LLC.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+- id: q58
+  added_date: '2026-09-26'
+  text: '5) Award a short-term, sole source extension to the incumbent contractor, Premier Enterprise Solutions, LLC [CAGE Code: 6RM79; 9701 Apollo Drive, Ste 410, Upper Marlboro, MD 20774-4791]. The Contractor is currently performing services under contract HQ003422C0127, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025. The anticipated award will be made under the authority of Federal Acquisition Regulation (FAR) 6.302-1(a)(2)(iii)(A), Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements.'
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ 5) Award a short-term, sole source extension to the incumbent contractor, Premier Enterprise Solutions, LLC'
+  significance: 'WHS names Premier Enterprise Solutions, LLC as incumbent on HQ003422C0127 and announces a four-month sole-source bridge (March 28 to July 27, 2025) under FAR 6.302-1. The notice also records the firm''s CAGE code (6RM79) and its Upper Marlboro, MD address.'
+  context: 'Item 5 of five sole-source bridge extensions in WHS Acquisition Directorate notice of intent TR011720251116, posted 2025-03-11. The others go to Booz Allen Hamilton (items 1-2), Digital Forensics Services (item 3), and Sancorp Consulting (item 4).'
+  claim_group: '2025 sole-source bridge extension of HQ003422C0127'
+  statement_date: '2025-03-11'
+- id: q59
+  added_date: '2026-09-26'
+  text: 'These Contractors are required to provide technical, administrative and professional support services to the OUSD(I&amp;S) Enterprise requirements. Currently, the Government has established an Enterprise Blanket Purchase Agreement for OUSD (I&amp;S), and the requirements are going through the procurement process for award.'
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ These Contractors are required to provide technical, administrative and professional support services'
+  significance: 'States the scope of work Premier and the other four incumbents perform for OUSD(I&S): technical, administrative and professional support services. It also frames the bridges as interim, pending award under a newly established OUSD(I&S) Enterprise Blanket Purchase Agreement.'
+  context: 'Follows items 1-5; applies to all five incumbents including Premier. The notice gives no BPA number.'
+  claim_group: '2025 sole-source bridge extension of HQ003422C0127'
+  statement_date: '2025-03-11'
+- id: q60
+  added_date: '2026-09-26'
+  text: 'This is not a request for quote/proposal. Pursuant to FAR 5.203(a), Washington Headquarters Services, Acquisition Directorate, on behalf of the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&amp;S)) I&amp;S Enterprise, intends to do the following:'
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ This is not a request for quote/proposal'
+  significance: 'Identifies the contracting office (WHS Acquisition Directorate) and the requiring activity (OUSD(I&S) I&S Enterprise) for Premier''s bridge extension.'
+  context: 'Opening paragraph of the notice of intent; introduces the five numbered awards.'
+  claim_group: '2025 sole-source bridge extension of HQ003422C0127'
+  statement_date: '2025-03-11'
+- id: q61
+  added_date: '2026-09-26'
+  text: 'Premier’s founders envisioned a revolutionary approach to business, rooted in the belief that change starts from within and radiates outward, redefining what it means to serve others and deliver value.  “We live this principle daily, ensuring it’s at the core of everything we do by fostering a culture of dedication and excellence for everyone we serve.” – Michael R. Lopez, Co-founder and COO'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier’s founders envisioned"'
+  significance: The company's own About page names Michael R. Lopez as Co-founder and COO and quotes him on the founders' principle.
+  context: About Us page, intro block under the "True success is measured by what you give" banner.
+  claim_group: 'Company self-description'
+- id: q62
+  added_date: '2026-09-26'
+  text: 'JACQUELINE K. LOPEZ, President'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "JACQUELINE K. LOPEZ, President"'
+  significance: Leadership-roster header naming the company's President in full form.
+  context: '"Our Leadership" section, first entry.'
+  claim_group: 'Leadership'
+- id: q63
+  added_date: '2026-09-26'
+  text: 'Jacqueline Lopez is an innovative and results-driven IT executive who is the visionary force behind Premier, leading the strategic direction, business planning, development, and sales.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Jacqueline Lopez is an innovative"'
+  significance: The company describes its President as the "visionary force behind Premier" who leads strategic direction, business planning, development, and sales.
+  claim_group: 'Leadership'
+- id: q64
+  added_date: '2026-09-26'
+  text: 'An Air Force veteran who advocates for women veteran initiatives, she is an accomplished leader with a proven record of success leading both public and private enterprises.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "An Air Force veteran who advocates"'
+  significance: President's bio states she is an Air Force veteran.
+  claim_group: 'Leadership'
+- id: q65
+  added_date: '2026-09-26'
+  text: 'Jacqueline previously served as the Director of Defense Department programs at the Federal Systems and Integration Center (FEDSIM), U.S. General Services Administration where she oversaw the annual sales, acquisition, and administration of $120 million of information technology contracts.  She also served as a Senior Account Manager for the GSA Office of Sales where she developed strategic relationships with Federal Departmental executives and Agency decision-makers.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "An Air Force veteran who advocates", sentence "Jacqueline previously served"'
+  significance: President's prior GSA career — Director of Defense Department programs at FEDSIM ($120 million of IT contracts) and Senior Account Manager, GSA Office of Sales.
+  claim_group: 'Leadership'
+- id: q66
+  added_date: '2026-09-26'
+  text: 'Jacqueline served ten years as an officer with the U.S. Air Force.  One of her notable assignments included serving as the Branch Chief for the Pentagon’s Top Secret Air Force Operations Network and the technical manager for the $80 million command center upgrade.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "An Air Force veteran who advocates", sentence "Jacqueline served ten years"'
+  significance: President's ten-year U.S. Air Force officer service, including Branch Chief for the Pentagon's Top Secret Air Force Operations Network.
+  claim_group: 'Leadership'
+- id: q67
+  added_date: '2026-09-26'
+  text: 'Jacqueline received the GSA Administrators Exceptional Service award and is an ACT-IAC Fellow. She is a 2015 graduate of Montgomery County’s Veterans Institute for Procurement Grow Program and a 2016 graduate of SBA’s Emerging Leaders Program.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Jacqueline received the GSA"'
+  significance: President's awards, ACT-IAC fellowship, and dated small-business program graduations (2015 VIP Grow; 2016 SBA Emerging Leaders).
+  claim_group: 'Leadership'
+- id: q68
+  added_date: '2026-09-26'
+  text: 'Jacqueline holds a Bachelors of Science in Computer Technology from the University of Southern Mississippi.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Jacqueline holds a Bachelors"'
+  significance: President's education.
+  claim_group: 'Leadership'
+- id: q69
+  added_date: '2026-09-26'
+  text: 'MICHAEL R. LOPEZ, Chief Operating Officer'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "MICHAEL R. LOPEZ, Chief Operating Officer"'
+  significance: Leadership-roster header naming the company's COO.
+  context: '"Our Leadership" section, second entry.'
+  claim_group: 'Leadership'
+- id: q70
+  added_date: '2026-09-26'
+  text: 'As Chief Operating Officer of Premier Enterprise Solutions, he leads all aspects of operations—including financial strategy, contract execution, compliance, and program performance—ensuring mission-critical outcomes for defense and civilian government clients.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "As Chief Operating Officer of Premier"'
+  significance: COO's remit, including contract execution and compliance for defense and civilian government clients.
+  claim_group: 'Leadership'
+- id: q71
+  added_date: '2026-09-26'
+  text: 'With more than 35 years of acquisition and program management experience at the U.S. General Services Administration (GSA), Michael brings unparalleled insight into federal contracting. He held several senior leadership roles, including Director of Network Services for GSA’s National Capital Region, where he managed the $1.8 billion Washington Interagency Telecommunications System, the largest local telecommunications network in the federal government. He also served as Director of Assisted Acquisition Services, overseeing $250 million in annual IT and commodity contracts, and was a longtime contracting officer with an unlimited warrant.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "With more than 35 years"'
+  significance: COO's 35+ years at GSA — Director of Network Services (National Capital Region), Director of Assisted Acquisition Services, contracting officer with an unlimited warrant.
+  claim_group: 'Leadership'
+- id: q72
+  added_date: '2026-09-26'
+  text: 'Michael R. Chambers, Vice President of Service Delivery'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Michael R. Chambers, Vice President"'
+  significance: Leadership-roster header naming the VP of Service Delivery.
+  context: '"Our Leadership" section, third entry.'
+  claim_group: 'Leadership'
+- id: q73
+  added_date: '2026-09-26'
+  text: 'Mike Chambers, a seasoned leader with a proven track record of excellence in both military and corporate arenas, serves as Vice President of Service Delivery at Premier Enterprise Solutions LLC.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Mike Chambers, a seasoned leader"'
+  significance: 'Company bio of its Vice President of Service Delivery (source form "Mike Chambers").'
+  claim_group: 'Leadership'
+- id: q74
+  added_date: '2026-09-26'
+  text: 'As a retired U.S. Army Colonel with over 25 years of distinguished service, Mike brings unparalleled expertise in executive management, information technology, and strategic program oversight—skills honed through roles such as Battalion Commander and Director for Combat Support Evaluations.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "As a retired U.S. Army Colonel"'
+  significance: VP of Service Delivery is a retired U.S. Army Colonel (Battalion Commander; Director for Combat Support Evaluations).
+  claim_group: 'Leadership'
+- id: q75
+  added_date: '2026-09-26'
+  text: 'Christopher J. Miller, Vice President of Growth and Strategy'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Christopher J. Miller, Vice President"'
+  significance: Leadership-roster header naming the VP of Growth and Strategy.
+  context: '"Our Leadership" section, fourth entry.'
+  claim_group: 'Leadership'
+- id: q76
+  added_date: '2026-09-26'
+  text: 'Christopher Miller is Vice President of Growth and Strategy at Premier, where he is responsible for driving revenue growth by increasing corporate capabilities, enhancing partnerships, and executing Premier’s strategic plan.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Christopher Miller is Vice President"'
+  significance: 'Remit of the Vice President of Growth and Strategy: revenue growth, partnerships, and the company''s strategic plan.'
+  claim_group: 'Leadership'
+- id: q77
+  added_date: '2026-09-26'
+  text: 'Prior to Premier, he served as Senior Vice President of Business Development and Strategic Partnerships at Exiger Government Solutions, and VP of Service Delivery and Chief Operating Officer at ProSphere. Chris moved to the private sector following nine-years of military service in the U.S. Army as an Infantry and Special Forces Officer'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Chris is leveraging"'
+  significance: VP of Growth and Strategy's prior roles at Exiger Government Solutions and ProSphere (the Veritium JV partner), and nine years as a U.S. Army Infantry and Special Forces Officer.
+  claim_group: 'Leadership'
+- id: q78
+  added_date: '2026-09-26'
+  text: 'Over 30% of our growing team has served in the United States of America’s armed forces. We are committed to hiring veterans and providing support to a variety of non-profit organizations who assist veterans and their families.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Over 30% of our growing team"'
+  context: '"Salute to America''s Veterans" section.'
+  significance: 'Company states that over 30% of its team has served in the U.S. armed forces.'
+  claim_group: 'Company self-description'
+- id: q79
+  added_date: '2026-09-26'
+  text: 'As a Service-Disabled Veteran-Owned Small Business, we are committed to ensuring Veteran-Owned Small Businesses have equal access to the information and resources necessary for growth and sustainability.    As an Air Force veteran, Premier’s President, Jackie Lopez is a leading advocate for VOSB and women veteran entrepreneurs and business leaders.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "As a Service-Disabled Veteran-Owned Small Business"'
+  significance: The company self-identifies as a Service-Disabled Veteran-Owned Small Business.
+  claim_group: 'Company self-description'
+- id: q80
+  added_date: '2026-09-26'
+  text: 'She is a sought out speaker and featured panelist for notable veteran initiatives, organizations and events such as,  VA Reverse Industry Day, Veterans Institute for Procurement'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "As a Service-Disabled Veteran-Owned Small Business", sentence "She is a sought out speaker"'
+  significance: 'President''s speaking and panel roles at veteran initiatives, including VA Reverse Industry Day and the Veterans Institute for Procurement.'
+  claim_group: 'Leadership'
+- id: q81
+  added_date: '2026-09-26'
+  text: 'As the demand for Premier’s services increases, we want to be more accessible to you. Premier is a prime contract holder for multiple OASIS+ contracts, SeaPort NxG, GSA 8(a) Stars III, GSA MAS Information Technology and Professional Services, and eFAST FAA and that allows us to better serve our customers.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "As the demand for Premier’s services"'
+  significance: The company's own summary of the prime contract vehicles it holds.
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q82
+  added_date: '2026-09-26'
+  text: '8(a) STARS III – Contract No. 47QTCB21D0275'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "8(a) STARS III – Contract No."'
+  significance: 'Self-published 8(a) STARS III contract number.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q83
+  added_date: '2026-09-26'
+  text: '8(a) STARS III, a small business set-aside Government-wide Acquisition Contract (GWAC), provides federal agencies access to best-in-class IT and emerging technologies solutions:'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "8(a) STARS III, a small business set-aside"'
+  significance: 'Company''s description of 8(a) STARS III as a small business set-aside GWAC.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q84
+  added_date: '2026-09-26'
+  text: 'Premier Enterprise Solutions LLC – DUNS No. 620185996 – CAGE Code 6RM79'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier Enterprise Solutions LLC – DUNS No."'
+  significance: The company's self-published DUNS and CAGE identifiers.
+  claim_group: 'Recipient identity and registered business profile'
+- id: q85
+  added_date: '2026-09-26'
+  text: 'eFAST FAA 693KA9-22-A-00114'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "eFAST FAA 693KA9"'
+  significance: 'Self-published eFAST FAA contract number.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q86
+  added_date: '2026-09-26'
+  text: 'Premier''s FAA eFast Functional Areas: Business Administration & Managment (BAM), Research & Development (R&D), Engineering Services (ES), Computer/Information Systems Development (CSD), Computer Systems Support (CSS), and Documentation & Training (D&T)'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier''s FAA eFast Functional Areas"'
+  significance: 'Company''s eFAST functional areas (source spelling "Managment" preserved).'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q87
+  added_date: '2026-09-26'
+  text: 'Premier was awarded four separate OASIS+ MACs and qualified in the Management and Advisory (M&A) domain.    Small Business (SB): 47QRCA25DSD70  SBA-Certified Women-Owned Small Business (WOSB): 47QRCA24DW247  SBA-Certified Service-Disabled Veteran-Owned Small Business (SDVOSB): 47QRCA24DV299  SBA-Certified 8(a) Small Business (8a): 47QRCA25DA083'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier was awarded four separate OASIS+ MACs"'
+  significance: Four OASIS+ contract numbers across SB, WOSB, SDVOSB, and 8(a) pools; qualified in the Management and Advisory domain. Also self-attests SBA WOSB, SDVOSB, and 8(a) certifications.
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q88
+  added_date: '2026-09-26'
+  text: 'GSA MAS - Contract No. 47QTCA18D0040'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "GSA MAS - Contract No. 47QTCA18D0040"'
+  significance: 'Self-published GSA MAS contract number.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q89
+  added_date: '2026-09-26'
+  text: 'Premier currently holds the following SINs under Contract No. 47QTCA18D0040:  o Information Technology SIN 54151S  o Health Care IT Professional Services SIN 54151HEAL  o Professional Services/Mgmnt/Business SIN 541611'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier currently holds the following SINs"'
+  significance: 'SINs the company holds under GSA MAS contract 47QTCA18D0040.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q90
+  added_date: '2026-09-26'
+  text: 'SeaPort NxG – Contract No. N0017825D7705'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "SeaPort NxG – Contract No."'
+  significance: 'Self-published SeaPort NxG contract number.'
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q91
+  added_date: '2026-09-26'
+  text: 'Seaport Next Generation (NxG) is an Indefinite Delivery Indefinite Quantity (IDIQ) Multiple Award Contract (MAC) with an ordering period through January 1, 2029.  The Department of the Navy, Naval Sea Systems Command sponsors this contract vehicle.'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Seaport Next Generation (NxG)"'
+  significance: SeaPort NxG ordering period (through January 1, 2029) and sponsor (Department of the Navy, Naval Sea Systems Command).
+  claim_group: 'Contract vehicles (self-attested)'
+- id: q92
+  added_date: '2026-09-26'
+  text: 'Veritium Ingenuity (Veritium), a joint venture between ProSphere Tek, Inc. (ProSphere) and Premier Enterprise Solutions, LLC, is an Information Technology Management Consulting firm headquartered in the Washington D.C. Metropolitan area.  With more than 450 employees in 24 states, Veritium delivers Enterprise PMO full lifecycle systems development, cybersecurity, health IT, and IT services for 14 Federal Government agencies  ProSphere is a wholly owned subsidiary of Planned Systems International (PSI).'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Veritium Ingenuity (Veritium), a joint venture"'
+  significance: The company's joint venture Veritium Ingenuity with ProSphere Tek, Inc., itself a wholly owned subsidiary of Planned Systems International (PSI).
+  context: '"Partnerships & Joint Ventures" section.'
+  claim_group: 'Joint venture'
+- id: q93
+  added_date: '2026-09-26'
+  text: '9701 Apollo Drive, Suite 410  Upper Marlboro, MD 20774'
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "9701 Apollo Drive"'
+  significance: Company address from the site footer "Contact Us" block.
+  claim_group: 'Recipient identity and registered business profile'
+- id: q94
+  added_date: '2026-09-26'
+  text: 'Premier Enterprise Solutions delivers mission-critical support to the nation’s most sensitive programs.   As an SBA 8(a) certified contractor with proven expertise across Defense and Civilian agencies, we provide the specialized capabilities your mission demands.'
+  source:
+    path: news/premier-home-20260926.html
+    location: '¶ Premier Enterprise Solutions delivers mission-critical support'
+  significance: 'Company self-description on its own homepage: "mission-critical support to the nation’s most sensitive programs," SBA 8(a) certified, expertise across Defense and Civilian agencies.'
+  context: 'Homepage body block following the "Our Leadership" heading and preceding the "Contract Vehicles" / "Business Designations" block; company-published website (subject voice).'
+  claim_group: 'Company self-description'
+- id: q95
+  added_date: '2026-09-26'
+  text: 'As former government technology and acquisition professionals who understand the landscape our clients navigate, we bring an enterprise-wide perspective to every engagement.'
+  source:
+    path: news/premier-home-20260926.html
+    location: '¶ True problem solving occurs when the best minds collaborate'
+  significance: 'Company states its principals are former government technology and acquisition professionals.'
+  context: 'Homepage block following the "Why Premier?" heading and the line "Finding the right business that delivers superior value and premier service can be challenging."'
+  claim_group: 'Company self-description'
+- id: q96
+  added_date: '2026-09-26'
+  text: 'Premier’s practical and effective solutions enable our clients to realize the full potential of their information technology assets, optimize their supply chain and workforce productivity and manage critical infrastructure projects.'
+  source:
+    path: news/premier-home-20260926.html
+    location: '¶ Explore Our Services — Premier’s practical and effective solutions'
+  significance: 'Company summary of its service scope: IT assets, supply chain and workforce productivity, critical infrastructure projects.'
+  context: 'Homepage "Explore Our Services" block, followed by service tiles: Cybersecurity, Cloud Services, Supply Chain & Workforce Productivity, Enterprise Operations, Program Management.'
+  claim_group: 'Company self-description'
+- id: q97
+  added_date: '2026-09-26'
+  text: 'Washington Headquarters Services/Acquisition Directorate (WHS/AD) awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO.'
+  source:
+    path: news/samdaily-fbo-06693814-hq003423c0061.html
+    location: '¶ Description'
+  significance: 'The only Premier-naming passage in the HQ003423C0061 award notice. The Description prose names Premier Enterprise Solutions, LLC as the recipient of the IPMO support-services 8(a) direct award, but the same notice''s structured Awardee field names Sancorp Consulting, LLC. The notice contradicts itself and does not attest a Premier IPMO contract.'
+  context: 'SAM.gov Award Notice for award number HQ003423C0061, award date 05/25/2023, from the Washington Headquarters Services contracting office, republished in SAMDaily issue of May 27, 2023 (SAM #7851). Span stops before a U+FFFD replacement character that follows "IPMO." in the source.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+  statement_date: '2023-05-25'
+  contradicted_by: q99
+- id: q98
+  added_date: '2026-09-26'
+  text: 'Sancorp Consulting, LLC VA 22044-1740 USA'
+  source:
+    path: news/samdaily-fbo-06693814-hq003423c0061.html
+    location: '¶ Awardee'
+  significance: 'The structured Awardee field of the same HQ003423C0061 notice names Sancorp Consulting, LLC, contradicting the Description prose that names Premier Enterprise Solutions, LLC.'
+  context: 'Awardee field of the SAM.gov Award Notice for HQ003423C0061 (Award Amount 4181853.92; Award Date 05/25/2023).'
+  claim_group: 'HQ003423C0061 award notice and award record'
+  statement_date: '2023-05-25'
+  contradicted_by: q97
+  corroborated_by: [q99, q107]
+- id: q99
+  added_date: '2026-09-26'
+  text: '"recipient_name":"SANCORP CONSULTING, LLC","recipient_uei":"GRYKNJ8BGFC8","recipient_unique_id":null,"parent_recipient_hash":"153a11b0-8299-0b9d-ae16-ca5cfde7d7fc-P","parent_recipient_name":"SANCORP CONSULTING, LLC","parent_recipient_uei":"GRYKNJ8BGFC8"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"recipient" object, "recipient_name" / "recipient_uei" / "parent_recipient_*" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'The USAspending award record for PIID HQ003423C0061 names SANCORP CONSULTING, LLC (UEI GRYKNJ8BGFC8) as recipient, with the same entity as parent recipient. It agrees with the Awardee field of the SAM.gov award notice for HQ003423C0061 and contradicts that notice''s Description prose, which names Premier Enterprise Solutions, LLC. This record does not name Premier anywhere.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+  contradicted_by: q97
+- id: q100
+  added_date: '2026-09-26'
+  text: '"generated_unique_award_id":"CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-","piid":"HQ003423C0061","category":"contract","type":"D","type_description":"DEFINITIVE CONTRACT","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: 'top-level "generated_unique_award_id" / "piid" / "category" / "type" / "type_description" / "description" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Award identity: PIID HQ003423C0061, a definitive contract with no parent vehicle. Its description repeats the service title in the SAM.gov notice Description (specialized and sensitive administrative, policy, operations, and analytic support services). The record does not name the IPMO.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q101
+  added_date: '2026-09-26'
+  text: '"solicitation_identifier":"HQ003423R0148","solicitation_procedures":"SSS","number_of_offers_received":"1","extent_competed":"B","type_set_aside":"8AN","type_set_aside_description":"8(A) SOLE SOURCE"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"latest_transaction_contract_data" object, "solicitation_identifier" … "type_set_aside_description" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Solicitation HQ003423R0148 is the same solicitation number the SAM.gov award notice for HQ003423C0061 carries, which ties this record to that notice. One offer received; 8(a) sole source, consistent with the notice''s "8(a) direct award" wording.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q102
+  added_date: '2026-09-26'
+  text: '"solicitation_procedures_description":"ONLY ONE SOURCE","extent_competed_description":"NOT AVAILABLE FOR COMPETITION","other_than_full_and_open":"OTH","other_than_full_and_open_description":"AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"latest_transaction_contract_data" object, "solicitation_procedures_description" … "other_than_full_and_open_description" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Only one source; not available for competition; other than full and open competition authorized by statute under FAR 6.302-5(a)(2)(i).'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q103
+  added_date: '2026-09-26'
+  text: '"total_obligation":3021082.38,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2023-05-25","base_exercised_options":3021082.38,"base_and_all_options":3021082.38,"total_account_outlay":0.0,"total_account_obligation":-380379.82'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: 'top-level "total_obligation" … "total_account_obligation" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Signed 2023-05-25, the same date as the notice''s Award Date. Total obligation and base-and-all-options are both 3021082.38; no subawards; total_account_obligation -380379.82. The SAM.gov notice''s Award Amount is 4181853.92, a figure this record does not show.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q104
+  added_date: '2026-09-26'
+  text: '"period_of_performance":{"start_date":"2023-06-10","end_date":"2024-06-09","last_modified_date":"2025-07-16","potential_end_date":"2024-06-09 00:00:00"}'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"period_of_performance" object, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Performance 2023-06-10 to 2024-06-09; the potential end date is the same as the end date; record last modified 2025-07-16.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q105
+  added_date: '2026-09-26'
+  text: '"funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"funding_agency" object, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Funding agency for HQ003423C0061 (a Sancorp award): Department of Defense, subtier Immediate Office of the Secretary of Defense (SECDEF); funding office recorded as "OSD OUSD(I)", the same funding office as on the Premier BPA and call-order records.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q106
+  added_date: '2026-09-26'
+  text: '"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"awarding_agency" object, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Awarding agency for HQ003423C0061: Department of Defense, subtier and office Washington Headquarters Services (WHS). This is the contracting office named in the SAM.gov notice.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q107
+  added_date: '2026-09-26'
+  text: '"location":{"location_country_code":"USA","country_name":"UNITED STATES","state_code":"VA","state_name":"VIRGINIA","city_name":"FALLS CHURCH","county_code":"059","county_name":"FAIRFAX","address_line1":"3235 VALLEY LN","address_line2":null,"address_line3":null,"congressional_code":"08","zip4":"1740","zip5":"22044"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"recipient" object, "location" sub-object, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Recipient address: 3235 Valley Ln, Falls Church, Fairfax County, Virginia 22044-1740. It matches the "VA 22044-1740" in the SAM.gov notice''s Awardee field, not Premier''s Upper Marlboro, Maryland address.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q108
+  added_date: '2026-09-26'
+  text: '"business_categories":["8(a) Program Participant","Category Business","Corporate Entity Not Tax Exempt","DoT Certified Disadvantaged Business Enterprise","Hispanic American Owned Business","Limited Liability Corporation","Minority Owned Business","Self-Certified Small Disadvantaged Business","Service Disabled Veteran Owned Business","Small Business","Special Designations","U.S.-Owned Business","Veteran Owned Business"]'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"recipient" object, "business_categories" array, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Business categories recorded for the HQ003423C0061 recipient (Sancorp), including 8(a) Program Participant, which is consistent with the 8(a) sole-source award type.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q109
+  added_date: '2026-09-26'
+  text: '"product_or_service_code":"R499","naics":"541611","naics_description":"ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"latest_transaction_contract_data" object, "product_or_service_code" / "naics" / "naics_description" fields, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'PSC R499 (Support - Professional: Other); NAICS 541611.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q110
+  added_date: '2026-09-26'
+  text: '"place_of_performance":{"location_country_code":"USA","country_name":"UNITED STATES","county_code":"001","county_name":"DISTRICT OF COLUMBIA","city_name":"WASHINGTON","state_code":"DC","state_name":"DISTRICT OF COLUMBIA","congressional_code":"98","zip4":"1400","zip5":"20301"'
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"place_of_performance" object, CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-'
+  significance: 'Place of performance: Washington, DC 20301-1400.'
+  claim_group: 'HQ003423C0061 award notice and award record'
+- id: q111
+  added_date: '2026-09-26'
+  text: '"I send sincere gratitude for the professional support, exemplary performance and dedication of the Premier Team. The team meticulously assisted to ensure accuracy, completion and timely submission." Air National Guard'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "I send sincere gratitude for the professional support"'
+  significance: 'Premier publishes on its own homepage a testimonial it attributes to "Air National Guard". This is a self-attested client relationship. No individual is named, and the page gives no contract, date or corroboration.'
+  context: 'First entry in the homepage testimonial carousel. The testimonial text is followed by the attribution line "Air National Guard" with no title. The span includes the attribution so that the attested client name is in the quote.'
+  claim_group: 'Client testimonials (self-published)'
+- id: q112
+  added_date: '2026-09-26'
+  text: '"I could not be happier with the team and the product produced, despite being early on departures. I am very appreciative of the caliber of people you hire." Department of Defense Project Director'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "I could not be happier with the team and the product produced"'
+  significance: 'Premier publishes a testimonial it attributes to a "Department of Defense" "Project Director". This is a self-attested client relationship. No individual or component is named.'
+  context: 'Second entry in the homepage testimonial carousel. The attribution line reads "Department of Defense", followed by the title "Project Director".'
+  claim_group: 'Client testimonials (self-published)'
+- id: q113
+  added_date: '2026-09-26'
+  text: '“We are up to 51% bi-directional engagement of NPIs, which is outstanding! We really appreciate the work Premier is doing for us.” TMF Project Director'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "We are up to 51% bi-directional engagement of NPIs"'
+  significance: 'Premier publishes a testimonial it attributes to a "TMF" "Project Director". "TMF" and "NPIs" are not expanded anywhere on the page, so they are kept in source form.'
+  context: 'Third entry in the homepage testimonial carousel. The attribution line reads "TMF", followed by the title "Project Director".'
+  claim_group: 'Client testimonials (self-published)'
+- id: q114
+  added_date: '2026-09-26'
+  text: '"Premier Enterprise Solutions, LLC is a professional, loyal business partner providing superior service. I am proud to have them directly interface with and support my customer." Large Telecommunications Industry Partner'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "Premier Enterprise Solutions, LLC is a professional, loyal business partner"'
+  significance: 'Premier publishes a testimonial from an unnamed "Large Telecommunications Industry Partner". The partner says Premier supports "my customer", which describes a teaming or subcontract arrangement. The partner is not identified.'
+  context: 'Fourth entry in the homepage testimonial carousel. The attribution line reads "Large Telecommunications Industry Partner" with no title.'
+  claim_group: 'Client testimonials (self-published)'
+- id: q115
+  added_date: '2026-09-26'
+  text: '"My Functionals have expressed how ‘crazy smart’ you guys are and appreciate what you are bringing to the table…  so Thank You!!!!” Veteran Affairs Project Lead'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "My Functionals have expressed how ‘crazy smart’ you guys are"'
+  significance: 'Premier publishes a testimonial it attributes to a "Veteran Affairs" "Project Lead". This is a self-attested client relationship. The page uses the source form "Veteran Affairs" and never writes "Veterans Affairs".'
+  context: 'Fifth and last entry in the homepage testimonial carousel. The attribution line reads "Veteran Affairs", followed by the title "Project Lead". The source opens the testimonial with a straight double quote and closes it with a curly one; both are kept verbatim.'
+  claim_group: 'Client testimonials (self-published)'
+- id: q116
+  added_date: '2026-09-26'
+  text: 'Business Designations SDVOSB WOSB/EDWOSB MDOT MBE Certification'
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Business Designations block'
+  significance: 'In its own voice, the company lists three business designations: SDVOSB, WOSB/EDWOSB, and "MDOT MBE Certification". The page does not expand MDOT.'
+  context: 'The "Business Designations" heading follows the "Contract Vehicles" heading. Three tiles come after it. In the extracted text the tiles are separated only by whitespace, and the span joins them with single spaces.'
+  claim_group: 'Business designations (self-attested)'
+- id: q117
+  added_date: '2026-09-26'
+  text: 'The agency received quotations from nine vendors by the July 17, deadline for receipt of quotations. Contracting Officer’s Statement and Memorandum of Law (COS/MOL) at 5.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+  significance: 'GAO records that WHS received quotations from nine vendors under RFQ HQ003424R0178 by the July 17 deadline. This conflicts with the HQ003425F0105 USAspending award record, which reports number_of_offers_received "1" for the same solicitation.'
+  context: 'Opening sentence of the BACKGROUND paragraph that continues with the September 2024 awards and the Arlo and Premier protests.'
+  claim_group: 'RFQ HQ003424R0178 orders and the Sancorp protest'
+  statement_date: '2025-06-11'
+  contradicted_by: q20
+naming_quirks:
+- id: nq1
+  added_date: '2026-09-26'
+  observed: Premier Enter. Sols., LLC
+  canonical: Premier Enterprise Solutions, LLC
+  location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+  source_path: government/gao-b-422985-wayback-20250708.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-09-26'
+  observed: Arlo Sols., LLC
+  canonical: Arlo Solutions, LLC
+  location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+  source_path: government/gao-b-422985-wayback-20250708.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-09-26'
+  observed: Office of the Under Secretary of Defense for Intelligent & Security
+  canonical: Office of the Under Secretary of Defense for Intelligence and Security
+  location: 'BACKGROUND section, ¶ "The agency issued the RFQ on May 23, 2024"'
+  source_path: government/gao-b-422985-wayback-20250708.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-09-26'
+  observed: Washington Headquarters Service (WHS)
+  canonical: Washington Headquarters Services
+  location: DECISION section, ¶1
+  source_path: government/gao-b-422985-wayback-20250708.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-09-26'
+  observed: (OUSD (I&S) ENTERPRISE
+  canonical: OUSD(I&S) Enterprise
+  location: 'top-level "description" field, CONT_IDV_HQ003425A0003_9700'
+  source_path: government/usaspending-hq003425a0003.txt
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-09-26'
+  observed: OUSD (I&S)
+  canonical: OUSD(I&S)
+  location: '¶ These Contractors are required to provide technical, administrative and professional support services'
+  source_path: government/samgov-tr011720251116-notice.json
+  resolution: preserve-as-sic-in-quotes
+- id: nq7
+  added_date: '2026-09-26'
+  observed: OSD OUSD(I)
+  canonical: OUSD(I&S)
+  location: '"funding_agency" object, CONT_IDV_HQ003425A0003_9700'
+  source_path: government/usaspending-hq003425a0003.txt
+  resolution: unresolved
+- id: nq8
+  added_date: '2026-09-26'
+  observed: Jackie Lopez
+  canonical: Jacqueline K. Lopez
+  location: '¶ "As a Service-Disabled Veteran-Owned Small Business"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq9
+  added_date: '2026-09-26'
+  observed: Mike Chambers
+  canonical: Michael R. Chambers
+  location: '¶ "Mike Chambers, a seasoned leader"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq10
+  added_date: '2026-09-26'
+  observed: Chris
+  canonical: Christopher J. Miller
+  location: '¶ "Chris is leveraging"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq11
+  added_date: '2026-09-26'
+  observed: ProSphere
+  canonical: ProSphere Tek, Inc.
+  location: '¶ "Chris is leveraging"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq12
+  added_date: '2026-09-26'
+  observed: GSA 8(a) Stars III
+  canonical: 8(a) STARS III
+  location: '¶ "As the demand for Premier’s services"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq13
+  added_date: '2026-09-26'
+  observed: Seaport Next Generation (NxG)
+  canonical: SeaPort NxG
+  location: '¶ "Seaport Next Generation (NxG)"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq14
+  added_date: '2026-09-26'
+  observed: eFast
+  canonical: eFAST
+  location: '¶ "Premier''s FAA eFast Functional Areas"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq15
+  added_date: '2026-09-26'
+  observed: Managment
+  canonical: Management
+  location: '¶ "Premier''s FAA eFast Functional Areas"'
+  source_path: news/premier-about-20260926.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq16
+  added_date: '2026-09-26'
+  observed: Veteran Affairs
+  canonical: Department of Veterans Affairs
+  location: 'Testimonial carousel, ¶ "My Functionals have expressed how ‘crazy smart’ you guys are"'
+  source_path: news/premier-home-20260926.html
+  resolution: preserve-as-sic-in-quotes
+description: 'Premier Enterprise Solutions, LLC is a small business of Upper Marlboro, Maryland ([`/locations/upper-marlboro-maryland`]) that provides technical, administrative and professional support services to the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Its awards are made by Washington Headquarters Services ([`/organizations/whs`]) of the Department of Defense ([`/organizations/dod`]). The award record for BPA call HQ003425F0105 has the place of performance in Washington, DC ([`/locations/washington-dc`]).
+
+  Premier holds one of the multiple award blanket purchase agreements that WHS established under request for quotations HQ003424R0178 ([`/documents/rfq-hq003424r0178`]), an 8(a) set-aside for support to the OUSD(I&S) enterprise. In September, WHS first issued call order 1 (EXDIR) to Comprehensive Approach Solutions ([`/organizations/comprehensive-approach-solutions`]). Premier and Arlo Solutions ([`/organizations/arlo-solutions`]) filed protests, the agency advised that it would take corrective action, and the Government Accountability Office ([`/organizations/gao`]) dismissed Premier''s protest, B-422985.3 ([`/documents/gao-b-422985-3-premier-enterprise-solutions`]), as academic on October 16, 2024. On reevaluation the source selection authority found that Premier''s quotation represented the best value for call order 1, which serves the I&S Executive Directorate ([`/organizations/ousd-is-exdir`]); GAO cited the Source Selection Decision Document ([`/documents/ssdd-hq003424r0178`]) for this finding.
+
+  Sancorp Consulting ([`/organizations/sancorp-consulting`]) filed a protest of the EXDIR call order, challenging the evaluation of its own and Premier''s technical quotations. Premier was an intervenor, represented by Jonathan D. Perrone ([`/people/jonathan-d-perrone`]), Joshua M. Sather ([`/people/joshua-m-sather`]) and Timothy J. Turner ([`/people/timothy-j-turner`]) of Whitcomb, Selinsky, P.C. ([`/organizations/whitcomb-selinsky`]), and Sharon O. Steele ([`/people/sharon-o-steele`]) of Steele Law Offices, LLC ([`/organizations/steele-law-offices`]). GAO denied the protest in B-422985.4 and B-422985.5 ([`/documents/gao-b-422985-4-sancorp-consulting`]), finding the technical evaluation reasonable.
+
+  In the award record for BPA HQ003425A0003, the recipient of a MULTIPLE AWARD BPA for support to the OUSD(I&S) Enterprise is Premier. The record for BPA call HQ003425F0105 under it has solicitation identifier HQ003424R0178 and an 8(a) competed set-aside; from modification P00004, its transaction description is professional, technical and administrative support to the Executive Directorate. Both records name the funding office as OSD OUSD(I) under the Immediate Office of the Secretary of Defense ([`/organizations/osd`]). The HQ003425F0105 record has the number of offers received as 1, while the GAO decision states that the agency received quotations from nine vendors and reports technical, past performance and price results for both Sancorp and Premier on call order 1.
+
+  A March 2025 notice of intent ([`/documents/samgov-tr011720251116-notice`]) from the Washington Headquarters Services Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that Premier is the incumbent contractor on contract HQ003422C0127, with services concluding on March 27, 2025, and that the agency intends to award it a short-term, sole source extension. The notice states only an anticipated award; no archived source shows that the extension was awarded. Booz Allen Hamilton ([`/organizations/booz-allen-hamilton`]), Digital Forensics Services ([`/organizations/digital-forensics-services`]) and Sancorp are the other incumbent contractors in the same notice, while the requirements for an Enterprise Blanket Purchase Agreement for OUSD(I&S) were going through the procurement process for award.
+
+  The company''s own website states that it is an SBA ([`/organizations/sba`]) 8(a) certified contractor and a Service-Disabled Veteran-Owned Small Business, with Jacqueline K. Lopez ([`/people/jacqueline-k-lopez`]) as President and Michael R. Lopez ([`/people/michael-r-lopez`]) as Co-founder and COO. According to the website, Veritium Ingenuity ([`/organizations/veritium-ingenuity`]) is a joint venture between ProSphere Tek, Inc. ([`/organizations/prosphere-tek`]) and Premier, and ProSphere is a wholly owned subsidiary of Planned Systems International ([`/organizations/planned-systems-international`]). It states that Premier is a prime contract holder for OASIS+, SeaPort NxG (which the Department of the Navy ([`/organizations/department-of-the-navy`]), Naval Sea Systems Command ([`/organizations/navsea`]) sponsors), 8(a) STARS III and GSA MAS from the General Services Administration ([`/organizations/gsa`]), and eFAST FAA ([`/organizations/faa`]). The website has statements about Premier''s work from the Air National Guard ([`/organizations/air-national-guard`]), a Department of Defense Project Director, a TMF ([`/organizations/tmf`]) Project Director and a Veteran Affairs ([`/organizations/va`]) Project Lead, and its Business Designations are SDVOSB, WOSB/EDWOSB and MDOT ([`/organizations/mdot`]) MBE Certification.
+
+  The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDaily ([`/documents/samdaily-fbo-06693814-hq003423c0061`]), states that WHS/AD awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide support services to the IPMO ([`/organizations/ipmo`]), while the Awardee on the same notice is Sancorp Consulting, LLC. The award record for HQ003423C0061, under solicitation HQ003423R0148 ([`/documents/solicitation-hq003423r0148`]), has SANCORP CONSULTING, LLC as recipient, with an address in Falls Church ([`/locations/falls-church-virginia`]), Fairfax County ([`/locations/fairfax-county-virginia`]), Virginia.'
+timeline:
+- id: tl1
+  added_date: '2026-09-26'
+  date: '2023-05-25'
+  event: 'SAM.gov award notice for HQ003423C0061 from Washington Headquarters Services: the Description names Premier Enterprise Solutions, LLC as recipient of an 8(a) direct award for support services to the IPMO; the Awardee is Sancorp Consulting, LLC.'
+  category: contract
+  source:
+    path: news/samdaily-fbo-06693814-hq003423c0061.html
+    location: ¶ Description
+  node_link: /documents/samdaily-fbo-06693814-hq003423c0061
+- id: tl2
+  added_date: '2026-09-26'
+  date: '2024-05-23'
+  event: WHS issued RFQ HQ003424R0178, an 8(a) set-aside to establish multiple award BPAs for OUSD(I&S) enterprise support services.
+  category: contract
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency issued the RFQ on May 23, 2024"'
+  node_link: /documents/rfq-hq003424r0178
+- id: tl3
+  added_date: '2026-09-26'
+  date: '2024-10-16'
+  event: GAO dismissed Premier's protest B-422985.3 of the September call order 1 (EXDIR) award to Comprehensive Approach Solutions as academic, after the agency stated it would terminate the BPAs and call orders and reevaluate quotations.
+  category: filing
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+  node_link: /documents/gao-b-422985-3-premier-enterprise-solutions
+- id: tl4
+  added_date: '2026-09-26'
+  date: '2025-02-14'
+  event: BPA HQ003425A0003 signed with Premier Enterprise Solutions, LLC by Washington Headquarters Services (MULTIPLE AWARD).
+  category: contract
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: 'top-level "total_obligation" / "subaward_count" / "date_signed" / "base_and_all_options" fields, CONT_IDV_HQ003425A0003_9700'
+- id: tl5
+  added_date: '2026-09-26'
+  date: '2025-02-21'
+  event: BPA call HQ003425F0105 under HQ003425A0003 signed, for professional, technical & administrative support services (solicitation HQ003424R0178).
+  category: contract
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "total_obligation" … "total_account_obligation"'
+- id: tl6
+  added_date: '2026-09-26'
+  date: '2025-03-11'
+  event: WHS Acquisition Directorate notice of intent TR011720251116 names Premier Enterprise Solutions, LLC as incumbent contractor on HQ003422C0127, with services concluding on March 27, 2025, and an anticipated (intended, not attested as awarded) short-term, sole source extension from March 28, 2025, to July 27, 2025.
+  category: contract
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ 5) Award a short-term, sole source extension to the incumbent contractor, Premier Enterprise Solutions, LLC'
+  node_link: /documents/samgov-tr011720251116-notice
+- id: tl7
+  added_date: '2026-09-26'
+  date: '2025-06-11'
+  event: GAO denied Sancorp Consulting's protest (B-422985.4; B-422985.5) of the orders to Premier and Arlo; Premier was an intervenor.
+  category: filing
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: DECISION section, ¶1
+  node_link: /documents/gao-b-422985-4-sancorp-consulting
+- id: tl8
+  added_date: '2026-09-26'
+  date: '2025-07-25'
+  event: HQ003425F0105 modification P00004, a supplemental agreement for work within scope; its description names professional, technical and administrative support to the Executive Directorate of the Office of the Under Secretary of Defense for Intelligence and Security.
+  category: contract
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00004_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+  node_link: /organizations/ousd-is-exdir
+- id: tl9
+  added_date: '2026-09-26'
+  date: '2025-12-26'
+  event: HQ003425F0105 modification P00006 exercised an option, obligating 10466026.2.
+  category: contract
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00006_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+- id: tl10
+  added_date: '2026-09-26'
+  date: '2026-04-14'
+  event: HQ003425F0105 modification P00009, a funding only action of 26813.96, the latest transaction on the record.
+  category: contract
+  source:
+    path: government/usaspending-hq003425f0105-transactions.txt
+    location: '"results" entry CONT_TX_9700_9700_HQ003425F0105_P00009_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields'
+key_personnel:
+- id: kp1
+  added_date: '2026-09-26'
+  person_path: /people/jacqueline-k-lopez
+  role: President
+  leadership_class: director
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "JACQUELINE K. LOPEZ, President"'
+- id: kp2
+  added_date: '2026-09-26'
+  person_path: /people/michael-r-lopez
+  role: Co-founder and COO
+  leadership_class: deputy
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Premier’s founders envisioned"'
+- id: kp3
+  added_date: '2026-09-26'
+  person_path: /people/michael-r-chambers
+  role: Vice President of Service Delivery
+  leadership_class: staff
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Michael R. Chambers, Vice President"'
+- id: kp4
+  added_date: '2026-09-26'
+  person_path: /people/christopher-j-miller
+  role: Vice President of Growth and Strategy
+  leadership_class: staff
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Christopher J. Miller, Vice President"'
+contracts:
+- id: ct1
+  added_date: '2026-09-26'
+  contract_number: HQ003425A0003
+  contracting_agency: WHS
+  period_start: '2025-02-15'
+  period_end: '2030-02-14'
+  primary_counterparty_path: /organizations/premier-enterprise-solutions
+  subject: technical, administrative and professional support services
+  value: 1856000000.0 (base and all options)
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"period_of_performance" object, CONT_IDV_HQ003425A0003_9700'
+- id: ct2
+  added_date: '2026-09-26'
+  contract_number: HQ003425F0105
+  contracting_agency: WHS
+  period_start: '2025-02-21'
+  period_end: '2026-12-27'
+  primary_counterparty_path: /organizations/premier-enterprise-solutions
+  subject: professional, technical & administrative support services
+  value: 16658158.42 (total obligation); 73719023.85 (base and all options)
+  source:
+    path: government/usaspending-hq003425f0105.txt
+    location: 'field "period_of_performance"'
+org_relationships:
+- id: or1
+  added_date: '2026-09-26'
+  organization_path: /organizations/whs
+  relationship_type: contracting-agency
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"awarding_agency" object, CONT_IDV_HQ003425A0003_9700'
+- id: or2
+  added_date: '2026-09-26'
+  organization_path: /organizations/whs-acquisition-directorate
+  relationship_type: contracting-agency
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ This is not a request for quote/proposal'
+- id: or3
+  added_date: '2026-09-26'
+  organization_path: /organizations/dod
+  relationship_type: contracting-agency
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: DECISION section, ¶1
+- id: or4
+  added_date: '2026-09-26'
+  organization_path: /organizations/osd
+  relationship_type: funder
+  source:
+    path: government/usaspending-hq003425a0003.txt
+    location: '"funding_agency" object, CONT_IDV_HQ003425A0003_9700'
+- id: or5
+  added_date: '2026-09-26'
+  organization_path: /organizations/ousd-is
+  relationship_type: other
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: '¶ This is not a request for quote/proposal'
+- id: or6
+  added_date: '2026-09-26'
+  organization_path: /organizations/ousd-is-exdir
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The RFQ provided a performance work statement"'
+- id: or7
+  added_date: '2026-09-26'
+  organization_path: /organizations/sancorp-consulting
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: DECISION section, ¶1
+- id: or8
+  added_date: '2026-09-26'
+  organization_path: /organizations/arlo-solutions
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "AR, Tab 45, Source Selection Decision Document"'
+- id: or9
+  added_date: '2026-09-26'
+  organization_path: /organizations/comprehensive-approach-solutions
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'BACKGROUND section, ¶ "The agency received quotations from nine vendors"'
+- id: or10
+  added_date: '2026-09-26'
+  organization_path: /organizations/whitcomb-selinsky
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'Decision header — counsel-of-record block, ¶ "Olivia L. Lynch, Esq., Cherie J. Owen"'
+- id: or11
+  added_date: '2026-09-26'
+  organization_path: /organizations/steele-law-offices
+  relationship_type: other
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: 'Decision header — counsel-of-record block, ¶ "Olivia L. Lynch, Esq., Cherie J. Owen"'
+- id: or12
+  added_date: '2026-09-26'
+  organization_path: /organizations/veritium-ingenuity
+  relationship_type: partner
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Veritium Ingenuity (Veritium), a joint venture"'
+- id: or13
+  added_date: '2026-09-26'
+  organization_path: /organizations/prosphere-tek
+  relationship_type: partner
+  source:
+    path: news/premier-about-20260926.html
+    location: '¶ "Veritium Ingenuity (Veritium), a joint venture"'
+- id: or14
+  added_date: '2026-09-26'
+  organization_path: /organizations/sba
+  relationship_type: other
+  source:
+    path: news/premier-home-20260926.html
+    location: '¶ Premier Enterprise Solutions delivers mission-critical support'
+- id: or15
+  added_date: '2026-09-26'
+  organization_path: /organizations/ipmo
+  relationship_type: other
+  flagged: true
+  notes: 'The Description in the HQ003423C0061 award notice states that WHS/AD awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC for support services to the IPMO, but the Awardee on the same notice is Sancorp Consulting, LLC; the notice does not state which is the awardee of record. Other award data for HQ003423C0061 has Sancorp Consulting, LLC as awardee, with no IPMO or Premier.'
+  source:
+    path: news/samdaily-fbo-06693814-hq003423c0061.html
+    location: ¶ Description
+- id: or16
+  added_date: '2026-09-26'
+  organization_path: /organizations/air-national-guard
+  relationship_type: other
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "I send sincere gratitude for the professional support"'
+- id: or17
+  added_date: '2026-09-26'
+  organization_path: /organizations/va
+  relationship_type: other
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "My Functionals have expressed how ‘crazy smart’ you guys are"'
+- id: or18
+  added_date: '2026-09-26'
+  organization_path: /organizations/tmf
+  relationship_type: other
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Testimonial carousel, ¶ "We are up to 51% bi-directional engagement of NPIs"'
+- id: or19
+  added_date: '2026-09-26'
+  organization_path: /organizations/mdot
+  relationship_type: other
+  source:
+    path: news/premier-home-20260926.html
+    location: 'Business Designations block'

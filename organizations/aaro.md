@@ -48,7 +48,7 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 Historical Record Report Volume I describes itself as "provided by DoD in response to a requirement established in the National Defense Authorization Act (NDAA) for FY 2023, Section 6802(j)", which requires the Director of the Office to submit to the congressional defense committees, the congressional intelligence committees and the congressional leadership "a written report detailing the historical record of the United States Government relating to unidentified anomalous phenomena" "Not later than 540 days after the date of the enactment of the Intelligence Authorization Act for Fiscal Year 2023" (i.e., approximately June 15, 2024). Historical Record Report Volume I (March 8, 2024) was published before that statutory deadline, satisfying the Section 6802(j) "a written report" requirement; the same Volume I §III states that "AARO will provide its findings to Congress in two volumes" — Volume I containing AARO's findings "from 1945 to 31 October 2023" and Volume II ("any findings resulting from interviews and research completed from 1 November 2023 to 15 April 2024") — and states that "AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023", applying the same June 15, 2024 date Volume I had already satisfied. As of February 25, 2026 (per archived DefenseScoop coverage), AARO has not published Volume II — approximately 20 months past the June 15, 2024 date AARO drew from Section 6802 for its Vol II commitment.
 
-Beyond § 3373's section text, three additional statutory notes codified AARO obligations. P.L. 117-263 § 6803 (IAA FY 2023, Div F, December 23, 2022) — as amended by P.L. 118-159 § 6802 (IAA FY 2025, Div F, December 23, 2024) — directs the Comptroller General of the United States to identify Government Accountability Office ([`/organizations/gao`]) personnel to audit the historical record report process and to verbally brief the congressional intelligence committees, the congressional defense committees, and congressional leadership semiannually until 180 days after the final volume of the Historical Record Report. P.L. 118-159 § 1089 (NDAA FY 2025, Div A, December 23, 2024) directs the Director of the All-Domain Anomaly Resolution Office to designate one or more employees to act as a liaison with the Counter Unmanned Aerial Systems Task Force ([`/organizations/c-uas-task-force`]) for information sharing on identified or suspected Unmanned Aerial Systems events, joint development of sensing and response capabilities, and coordinated tactics, techniques, and procedures. P.L. 119-60 §§ 1671(b) and 1673(a) (NDAA FY 2026, Div A, December 18, 2025) require — for the first briefing under § 3373(l)(5) after enactment — inclusion of unidentified anomalous phenomena intercepts conducted by the North American Aerospace Defense Command ([`/organizations/norad`]) or the United States Northern Command ([`/organizations/northcom`]) not previously provided that occurred during the period beginning on January 1, 2004, and an accounting by the Director of security classification guides that apply to information used for reports and investigations of unidentified anomalous phenomena.
+Beyond § 3373's section text, three additional statutory notes codified AARO obligations. P.L. 117-263 § 6803 (IAA FY 2023, Div F, December 23, 2022) — as amended by P.L. 118-159 § 6802 (IAA FY 2025, Div F, December 23, 2024) — directs the Comptroller General of the United States to identify Government Accountability Office ([`/organizations/gao`]) personnel to audit the historical record report process and to verbally brief the congressional intelligence committees, the congressional defense committees, and congressional leadership semiannually until 180 days after the final volume of the Historical Record Report. P.L. 118-159 § 1089 (NDAA FY 2025, Div A, December 23, 2024) directs the Director of the All-domain Anomaly Resolution Office to designate one or more employees to act as a liaison with the Counter Unmanned Aerial Systems Task Force ([`/organizations/c-uas-task-force`]) for information sharing on identified or suspected Unmanned Aerial Systems events, joint development of sensing and response capabilities, and coordinated tactics, techniques, and procedures. P.L. 119-60 §§ 1671(b) and 1673(a) (NDAA FY 2026, Div A, December 18, 2025) require — for the first briefing under § 3373(l)(5) after enactment — inclusion of unidentified anomalous phenomena intercepts conducted by the North American Aerospace Defense Command ([`/organizations/norad`]) or the United States Northern Command ([`/organizations/northcom`]) not previously provided that occurred during the period beginning on January 1, 2004, and an accounting by the Director of security classification guides that apply to information used for reports and investigations of unidentified anomalous phenomena.
 
 FOIA case 24-F-0894 ([`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`]) (released August 26, 2025; 14 pages responsive across five Initial Denial Authorities — Plescow, Lane, Morrison, Rose, and Shockley, drawn from Intelligence and Security, Legislative Affairs, the Office of the Director of National Intelligence, Public Affairs, and the Under Secretary of Defense for Policy) documents Pentagon internal coordination on the March 8, 2024 AARO Historical Record Report Volume I rollout. On March 5, 2024, Pentagon spokesperson Sue Gough ([`/people/sue-gough`]) emailed her ODNI counterpart asking whether DNI/ODNI should be referenced in the press release given that "Dir, AARO reports to PDDNI, too" per 50 U.S.C. § 3373; the ODNI counterpart replied "Confirming that we're good without any ODNI mention" — the public rollout omitted any ODNI reference, with the omission agreed by both Pentagon and ODNI Public Affairs offices.
 
@@ -64,7 +64,7 @@ At the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing
 
 AARO's FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena ([`/documents/aaro-fy24-consolidated-annual-report-uap-2024`]), dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors." The same report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute ([`/organizations/gtri`]), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
 
-On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director. His Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date and stated, "to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology." Kosloski presented three case resolutions: the 2013 Puerto Rico transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (a balloon drifting with the wind, with the slide deck stating "approximately 170 kilometers from the volcano" and the stenographic transcript of Kosloski's oral testimony stating "170 meters away from the plume"). All three case resolutions were presented at high or moderate confidence with the support of IC and S&T partners.
+On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director. His Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date and stated, "to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology." Kosloski presented three case resolutions: the 2013 Puerto Rico ([`/locations/puerto-rico`]) transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (a balloon drifting with the wind, with the slide deck stating "approximately 170 kilometers from the volcano" and the stenographic transcript of Kosloski's oral testimony stating "170 meters away from the plume"). All three case resolutions were presented at high or moderate confidence with the support of IC and S&T partners.
 
 AARO officially reached Full Operational Capability (FOC) as of October 1, 2024 — the start of Fiscal Year 2025. DefenseScoop exclusively confirmed the FOC status on Thursday, December 5, 2024; DOD spokesperson Sue Gough stated AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". The DefenseScoop article comes as Director Kosloski prepares to participate in a classified briefing with the House Oversight and Accountability Committee on Friday, December 6, 2024 — Subcommittee on National Security, the Border, and Foreign Affairs Chairman Glenn Grothman (R-Wis.) requested the briefing.
 
@@ -79,6 +79,18 @@ On February 19, 2026, President Donald J. Trump posted to TRUTH Social directing
 On March 31, 2026, the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]), Chairwoman Anna Paulina Luna ([`/people/anna-paulina-luna`]) (R-Fla.), wrote to Secretary of War Hegseth ([`/documents/oversight-house-uap-request-letter-luna-2026`]) requesting delivery of 46 UAP video files "as soon as possible but no later than April 14, 2026". The letter states that "Whistleblowers informed the Task Force that AARO possesses additional video records of potential UAP sightings" and that "The Task Force has found responses from AARO, when questioned about UAP sightings and provided data, less than adequate." The list includes UAP clips referenced by callsign and date — spherical UAP, transmedium UAP, MQ-9 sightings, and the February 12, 2023 USAF ANG F-16C "shoots down UAP over Lake Huron". Cc: the Honorable Jasmine Crockett ([`/people/jasmine-crockett`]), Ranking Member of the Task Force.
 
 The April 14 deadline passed without delivery of the requested videos. On April 16, 2026, Luna told NewsNation she is prepared to compel production of the footage if "institutional resistance continues" and to work with House Oversight Committee Chairman James Comer ([`/people/james-comer`]) to exercise the committee's subpoena authority. Luna described Hegseth as a close working partner aligned with President Donald Trump's directive on UAP disclosure and said she intends to work directly with him to secure the footage; she also called for the removal of the unelected official she said was responsible for failing to route her March 31 letter to the appropriate authorities within the department. On April 18, 2026, a Defense Department spokesperson stated to NBC News that AARO is "working in close coordination with the White House and across federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information." The statement added "We welcome the president's initiative to supercharge these efforts and make more UAP information available to the public as soon as possible."
+
+AARO's Fiscal Year 2025 Consolidated Annual Report on Unidentified Anomalous Phenomena ([`/documents/aaro-fy25-consolidated-annual-report-uap`]) carries "DEPARTMENT OF WAR" above "ALL-DOMAIN ANOMALY RESOLUTION OFFICE" on its title page, with an information cut off of May 30, 2025; the report does not state a publication date. It covers UAP-related events from June 2, 2024, to May 30, 2025, and states that AARO drafted it in coordination with the Military Services, DoW, and Intelligence Community partners. AARO received 319 reports of UAP-related events during that period, and as of May 30, 2025, AARO's case holdings contain 1,870 reports. AARO resolved 114 of the 319 UAP reports and 256 cases reported in a previous period, for 370 resolved cases during the reporting period; the report assesses that all resolved cases are attributable to prosaic objects and that none indicate advanced foreign adversarial capabilities or breakthrough technologies. It gives 238 reported UAP resolved as satellite flaring with a new analytic capability, and in a separate section 44 UAP-related events resolved as satellite flaring during the reporting period; the report does not explain the difference between the two figures. Civilian pilot estimates of phenomenon altitudes tended to range from 45,000 to 60,000 feet, and AARO resolved many of these reports as satellite flaring based on their reported characteristics. AARO transferred 191 of the 319 cases to its active archive and identified nine reports meriting further analysis by its IC and science and technology partners. Of the 44 space-domain reports, 42 originated from civilian pilot reports via the Federal Aviation Administration ([`/organizations/faa`]) and two from ground-based U.S. Space Command ([`/organizations/usspacecom`]) sensors. The single maritime domain case involved a report from U.S. Navy ([`/organizations/us-navy`]) assets operating off the coast of Virginia ([`/locations/virginia`]) describing approximately 100 airborne UAP, which AARO is actively investigating. AARO received 50 reports from the Administrator for Nuclear Security ([`/organizations/national-nuclear-security-administration`]) and Chairman of the Nuclear Regulatory Commission ([`/organizations/nuclear-regulatory-commission`]) regarding unmanned aerial systems (UAS) incidents near U.S. nuclear infrastructure, weapons, and launch sites; none of these incidents were reported as UAP. The report states that, to date, no evidence suggests that a USG or private entity has ever captured or exploited UAP-derived materials.
+
+The FY 2025 report also states that AARO, as the DoW's mission manager for UAP response, aims to fully implement the Joint Staff's ([`/organizations/joint-staff`]) classified UAP GENADMIN from February 2025 ([`/documents/joint-staff-uap-genadmin-2025`]), and that AARO's deputy director, who is not named, presented a mission briefing to the Defense Geospatial Intelligence conference ([`/events/defense-geospatial-intelligence-conference`]) in London ([`/locations/london`]), United Kingdom ([`/locations/united-kingdom`]). Between June 2, 2024, and May 30, 2025, 262 individuals contacted AARO via the secure reporting mechanism on its website; AARO determined that 255 were out-of-scope and identified 7 whose claims warranted a request for a follow-on interview. The report names Dr. Jon Kosloski as AARO Director. It states that AARO has published case resolutions for the case known to the public as "Go Fast" ([`/media/go-fast`]) and for a UAP event occurring in Aguadilla, Puerto Rico, in 2013 ([`/events/aguadilla-incident`]), and that AARO launched an Electronic Freedom of Information Act (E-FOIA) Reading Room ([`/documents/aaro-e-foia-reading-room`]).
+
+On July 22, 2026, per the Congressional Record ([`/documents/crec-20260722-house-hr8800-ndaa-fy2027`]), the House of Representatives ([`/organizations/united-states-house-of-representatives`]), in the Committee of the Whole House on the state of the Union, agreed to amendments en bloc No. 5 ([`/events/2026-07-22-house-ndaa-fy2027-en-bloc-5`]) to H.R. 8800 ([`/documents/ndaa-fy2027`]), the National Defense Authorization Act for Fiscal Year 2027. The package, offered by Mr. Rogers of Alabama ([`/people/mike-rogers`]) and printed in part A of House Report 119-755 ([`/documents/house-report-119-755`]), included Amendment No. 315 offered by Mr. Burlison of Missouri ([`/people/eric-burlison`]) ([`/documents/ndaa-fy2027-amendment-315-burlison`]), a new subtitle for an Unidentified Anomalous Phenomena Records Collection at the National Archives and Records Administration ([`/organizations/nara`]). Two of its provisions name the All-domain Anomaly Resolution Office, identified as established pursuant to section 1683 of the National Defense Authorization Act for Fiscal Year 2022 ([`/documents/ndaa-fy2022`]). Under SEC. 1746(f)(6), the Unidentified Anomalous Phenomena Records Review Board ([`/organizations/uap-records-review-board`]) shall brief the Office, or any successor Office established by law, on the Controlled Disclosure Campaign Plan ([`/documents/controlled-disclosure-campaign-plan`]), classified appendix, and postponed disclosures. Under SEC. 1750(b)(2), the Office, or its successor as subsequently designated by Act of Congress ([`/organizations/congress`]), shall develop standardized unidentified anomalous phenomena declassification guidance for records generated by originating bodies subsequent to termination of the Review Board. The Committee rose that day having come to no resolution on H.R. 8800; the Record does not show passage of the bill.
+
+On July 31, 2026, Washington Headquarters Services ([`/organizations/whs`]), on behalf of AARO, posted a notice of intent to sole source ([`/documents/samgov-nufohrc-20260731-notice`]; solicitation NUFOHRC_20260731) for a multi-year subscription service for digital access to data, metadata, and analytical products from the National Unidentified Flying Object Historic Records Center (NUFOHRC; [`/organizations/nufohrc`]) of Rio Rancho, NM ([`/locations/rio-rancho-new-mexico`]). The proposed contract structure is a one-year base period with four one-year option periods, and the stated purpose is to gain insights into UAP through the analysis of historical cases (pre-1990). The notice cites 10 U.S.C. 3204(a)(1) ([`/documents/10-usc-3204`]) as implemented by FAR 6.302-1 ([`/documents/far-6-302-1`]), states that NUFOHRC is considered the only source capable of satisfying the requirement, and lists Tiffany Reddick ([`/people/tiffany-reddick`]) and Jacqueline Patierno ([`/people/jacqueline-patierno`]) as primary and secondary contacts; responses were due August 17, 2026. It is a notice of intent to award, not an award, and no award is confirmed in these sources. DefenseScoop (Brandi Vincent ([`/people/brandi-vincent`]), September 2, 2026) reported the plan and quoted a source who asked to be referred to as a War Department official, who declined to disclose the DOD's estimated total cost. Per the article, NUFOHRC was founded and is led by David Marler ([`/people/david-marler`]), and its holdings include rare personal files once belonging to Dr. J. Allen Hynek ([`/people/j-hynek`]), who worked for the Air Force's Project Blue Book ([`/organizations/project-blue-book`]). The article also ties the purchase to congressional requirements, including the fiscal 2023 NDAA ([`/documents/ndaa-fy2023`]), which it says directed AARO to compile a comprehensive historical record report on the U.S. government's UAP-related intelligence and military engagements and assets from 1945 onward, and the fiscal 2024 NDAA ([`/documents/ndaa-fy2024`]) mandate for the UAP Records Collection at the National Archives and Records Administration ([`/organizations/nara`]).
+
+In TIME's August 6, 2026 article by Jeffrey Kluger ([`/people/jeffrey-kluger`]), which states that AARO was established in 2022 "to detect, identify and attribute objects of interest," Jon Kosloski, "director of AARO", says "Great claims require great evidence". The same article reports that the White House ([`/organizations/white-house`]) established the UAP Science Advisory Council ([`/organizations/uap-science-advisory-council`]), a body led by Avi Loeb ([`/people/avi-loeb`]); Loeb told TIME he was tasked to create a panel for the White House, AARO, the Director of National Intelligence ([`/organizations/odni`]), the FBI ([`/organizations/fbi`]), and related agencies. A TIME image caption states that on April 19, 2023, Sean Kirkpatrick, director of AARO, shared a video ([`/media/aaro-metallic-orb-video-2023`]) that depicts an apparent silver, orblike object, and that Kirkpatrick said the "metallic orbs" are the most common type of UAP and are reported from "all over the world."
+
+On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a formal waiver ([`/documents/dow-pursue-uap-disclosure-waiver-2026`]) that supersedes civil and administrative enforcement provisions contained within Non-Disclosure Agreements (NDAs) and Special Access Program Indoctrination Agreements (SAPIAs), strictly for communications with the PURSUE team — representatives authorized under the Trump administration's Presidential Unsealing and Reporting System for UAP Encounters (PURSUE; [`/organizations/pursue`]) project, which President Donald Trump ([`/people/donald-trump`]) unveiled earlier in 2026. The article describes AARO as an information-gathering body that investigates the Pentagon's ever-growing caseload of UAP incidents and synchronizes military data sharing with other parts of the federal government, and names no AARO role in PURSUE or in the waiver. In it, Disclosure Foundation ([`/organizations/disclosure-foundation`]) executive director Jordan Flowers ([`/people/jordan-flowers`]) said that binding law protects individuals who share information with AARO and now PURSUE against lawsuit, prosecution, and retaliation regardless of an NDA.
 
 ---
 
@@ -1464,6 +1476,210 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### House-adopted statutory text (Amendment No. 315 to H.R. 8800, carried in amendments en bloc No. 5) directing the proposed UAP Records Review Board to brief AARO, or any successor office established by law, on the Controlled Disclosure Campaign Plan, its classified appendix, and postponed disclosures; identifies AARO by its establishment authority, sec. 1683 of the FY2022 NDAA (50 U.S.C. 3373).
+
+> (6) Briefing the all-domain anomaly resolution office.--Coincident with the provision in paragraph (5), if not accomplished earlier under paragraph (4), the Review Board shall brief the All-domain Anomaly Resolution Office established pursuant to section 1683 of the National Defense Authorization Act for Fiscal Year 2022 (50 U.S.C. 3373), or any successor Office established by law, on the Controlled Disclosure Campaign Plan, classified appendix, and postponed disclosures.
+
+| Field | Value |
+|---|---|
+| Attributed to | Amendment No. 315 offered by Mr. Burlison of Missouri to H.R. 8800 (FY2027 NDAA), one of the amendments comprising amendments en bloc No. 5 offered by Mr. Rogers of Alabama and agreed to in the Committee of the Whole, Congressional Record (House), July 22, 2026. Paragraph (5) is the Review Board's 90-day advance written notice of termination; paragraph (4) is its periodic copies-and-briefs duty to the President, the Archivist, congressional leadership and committees. 2026-07-22 |
+| Source | [archived source](../sources/government/crec-20260722-house-hr8800-ndaa-fy2027.htm) |
+| Location | ¶ "Briefing the all-domain anomaly resolution office" (Amendment No. 315, SEC. 1746(f)(6); Record page H5120) |
+
+---
+
+### House-adopted statutory text assigning AARO (or its successor designated by Act of Congress) a continuing post-Review-Board role: develop standardized UAP declassification guidance for all UAP records generated after the Review Board terminates, consistent with the Controlled Disclosure Campaign Plan; paragraph (1) keeps the non-Review-Board provisions in force until the Archivist certifies all UAP records public.
+
+> (b) Other Provisions.--(1) The remaining provisions of this subtitle shall continue in effect until such time as the Archivist certifies to the President and Congress that all unidentified anomalous phenomena records have been made available to the public in accordance with this subtitle. (2) In facilitation of the provision in paragraph (1), the All-domain Anomaly Resolution Office established pursuant to section 1683 of the National Defense Authorization Act for Fiscal Year 2022 (50 U.S.C. 3373), or its successor as subsequently designated by Act of Congress, shall develop standardized unidentified anomalous phenomena declassification guidance applicable to any and all unidentified anomalous phenomena records generated by originating bodies subsequent to termination of the Review Board consistent with the requirements and intent of the Controlled Disclosure Campaign Plan with respect to unidentified anomalous phenomena records originated prior to Review Board termination.
+
+| Field | Value |
+|---|---|
+| Attributed to | Amendment No. 315 offered by Mr. Burlison of Missouri to H.R. 8800 (FY2027 NDAA), one of the amendments comprising amendments en bloc No. 5 offered by Mr. Rogers of Alabama and agreed to in the Committee of the Whole, Congressional Record (House), July 22, 2026. Under SEC. 1744(l)(1) the Review Board terminates on September 30, 2030. 2026-07-22 |
+| Source | [archived source](../sources/government/crec-20260722-house-hr8800-ndaa-fy2027.htm) |
+| Location | ¶ "(b) Other Provisions" (Amendment No. 315, SEC. 1750(b); Record page H5121) |
+
+---
+
+### The Clerk's designation of amendments en bloc No. 5 lists amendment No. 315 (the UAP records amendment containing both AARO provisions) among its components, tying the AARO text to the en bloc package whose disposition is recorded below.
+
+> Amendments en bloc No. 5 consisting of amendment Nos. 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 317, 318, 319, and 320 printed in part A of House Report 119-755, offered by Mr. Rogers of Alabama:
+
+| Field | Value |
+|---|---|
+| Attributed to | Designated by the Clerk after Mr. Rogers of Alabama offered the amendments en bloc pursuant to House Resolution 1438, in the Committee of the Whole House on the state of the Union, Congressional Record (House), July 22, 2026. Amendment No. 316 is not in the package; it was considered separately afterwards. 2026-07-22 |
+| Source | [archived source](../sources/government/crec-20260722-house-hr8800-ndaa-fy2027.htm) |
+| Location | ¶ "Amendments en bloc No. 5 consisting of" (Clerk's designation under heading "Amendments En Bloc No. 5 Offered by Mr. Rogers of Alabama"; Record page H5077) |
+
+---
+
+### Records that amendments en bloc No. 5 — and so amendment No. 315 with its two AARO provisions — were agreed to in the Committee of the Whole on July 22, 2026. This is adoption of the amendment only: the same day the Committee rose having come to no resolution on H.R. 8800, so the Record does not show passage of the bill.
+
+> The Acting CHAIR. The question is on the amendments en bloc offered by the gentleman from Alabama (Mr. Rogers). The en bloc amendments were agreed to.
+
+| Field | Value |
+|---|---|
+| Attributed to | Closes the en bloc No. 5 debate (Mr. ROGERS of Alabama and Mr. SMITH of Washington urged support; Mr. THOMPSON of Pennsylvania, Mr. HILL of Arkansas, Mr. SMITH of New Jersey and Mr. WALKINSHAW spoke on other component amendments). The identical sentence pair appears three earlier times in this Record, closing en bloc Nos. 2, 3 and 4 (each immediately before the heading of the next en bloc package); this is the only occurrence after the en bloc No. 5 heading, and the last en bloc package offered that day. 2026-07-22 |
+| Source | [archived source](../sources/government/crec-20260722-house-hr8800-ndaa-fy2027.htm) |
+| Location | disposition of amendments en bloc No. 5 — the Acting CHAIR's question and result immediately following ¶ "I urge my collegues to support this amendment" (Mr. WALKINSHAW's closing sentence, the last en bloc No. 5 debate remark) and immediately before heading "Amendment No. 316 Offered by Mr. Grothman"; Record page H5123 |
+
+---
+
+### SAM.gov notice title: sole-source intent for a historical UAP data and analysis subscription
+
+> Notice of Intent to Sole Source: Historical UAP Data and Analysis Subscription
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "data2" object — "title" field, SAM.gov opportunity a1b98934796e4bb3bb7215780ce82131 (solicitation NUFOHRC_20260731) |
+
+---
+
+### Notice of intent to award a sole-source, firm-fixed-price contract
+
+> This is a notice of intent to award a sole-source, firm-fixed-price contract to the
+
+| Field | Value |
+|---|---|
+| Attributed to | The sentence continues with the awardee name (quoted separately below) and its Rio Rancho, NM address. 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "This is a notice of intent to award" |
+
+---
+
+### Named intended awardee: NUFOHRC
+
+> National Unidentified Flying Object Historic Records Center (NUFOHRC)
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "This is a notice of intent to award" |
+
+---
+
+### WHS acting on behalf of AARO; multi-year NUFOHRC subscription, one base year plus four option years
+
+> The Washington Headquarters Services, on behalf of the All-Domain Anomaly Resolution Office (AARO), requires a multi-year subscription service for digital access to unique, proprietary data, metadata, and analytical products from NUFOHRC. The proposed contract structure consists of a one-year base period with four (4) subsequent one-year option periods.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "The Washington Headquarters Services, on behalf of" |
+
+---
+
+### Stated purpose: historical (pre-1990) UAP case analysis; a data subscription, not labor or advisory services
+
+> The purpose of this action is to acquire a commercial data subscription to gain unique insights into Unidentified Anomalous Phenomena (UAP) through the analysis of historical cases (pre-1990). The subscription service will provide AARO with access to a pre-existing, proprietary commercial data subscription and is not for professional labor or advisory services.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "The purpose of this action is to acquire" |
+
+---
+
+### Cited sole-source authority: 10 U.S.C. 3204(a)(1) / FAR 6.302-1
+
+> The statutory authority permitting other than full and open competition is 10 U.S.C. 3204(a)(1) as implemented by FAR 6.302-1, &quot;Only one responsible source and no other supplies or services will satisfy agency requirements.&quot;
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, "Authority and Justification:" block, ¶ "The statutory authority permitting" |
+
+---
+
+### Sole-source justification as stated in the notice: collection size and analytic expertise attributed to NUFOHRC
+
+> NUFOHRC is considered the only source capable of satisfying this requirement. The vendor possesses the world&rsquo;s largest private collection of UAP-related historical records, including hundreds of thousands of unique case files that exist exclusively within its archives and are not available in any other public or private repository. Furthermore, NUFOHRC has unparalleled, specialized expertise in analyzing this specific data, demonstrated by its staff&#39;s proven ability to generate the high-quality, science-driven analytical studies required by the government.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "NUFOHRC is considered the only source" |
+
+---
+
+### Market-research basis for the only-one-source determination
+
+> Market research conducted to date indicates that no other organization possesses the historical depth, volume of unique records, and specialized analytical expertise to meet the government&#39;s minimum needs. Consequently, NUFOHRC is currently identified as the only source capable of satisfying this requirement.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-07-31 |
+| Source | [archived source](../sources/government/samgov-nufohrc-20260731-notice.json) |
+| Location | "description" body, ¶ "Market research conducted to date" |
+
+---
+
+### The sitting AARO director, speaking to TIME in the office's official capacity, states AARO's evidentiary position on the extraordinary-origin reading of UAP reports as of the article's August 2026 publication.
+
+> “Great claims require great evidence,” says Jon Kosloski, director of AARO, “and the evidence just isn’t there yet.”
+
+| Field | Value |
+|---|---|
+| Attributed to | TIME news feature by Jeffrey Kluger (published Aug 6, 2026, updated Aug 7, 2026); the quote opens the article's skeptics passage ("Not everyone is persuaded by the reports.") and is followed by former astronaut Scott Kelly's skepticism. The contiguous span includes TIME's attribution clause identifying Kosloski as "director of AARO". 2026-08-06 |
+| Source | [archived source](../sources/news/time-america-taking-extraterrestrials-seriously-20260806.html) |
+| Location | ¶ Not everyone is persuaded by the reports. |
+
+---
+
+### TIME narration giving AARO's 2022 establishment and its mission phrase ("to detect, identify and attribute objects of interest"), which the article puts in quotation marks without attributing it to a speaker or document.
+
+> In 2022, the All-domain Anomaly Resolution Office (AARO) was established “to detect, identify and attribute objects of interest.”
+
+| Field | Value |
+|---|---|
+| Attributed to | TIME news feature by Jeffrey Kluger (published Aug 6, 2026, updated Aug 7, 2026). The sentence sits in the article's government-response paragraph, between "Congressional hearings into the origins of the sightings were held in 2022 and 2023." and the December 2023 signing of the Unidentified Anomalous Phenomena Disclosure Act. The quoted mission phrase has no named source in the article. 2026-08-06 |
+| Source | [archived source](../sources/news/time-america-taking-extraterrestrials-seriously-20260806.html) |
+| Location | ¶ Congressional hearings into the origins of the sightings |
+
+---
+
+### TIME narration reporting that the White House set up the UAP Science Advisory Council, led by Avi Loeb. This is the body that, in Loeb's quote in the next paragraph, he was "tasked to create" for the White House, AARO, the DNI, the FBI, and related agencies.
+
+> At about the same time, the White House established the UAP Science Advisory Council, a body led by Harvard astrophysicist and cosmologist Avi Loeb to study the national-security risks posed by UAPs.
+
+| Field | Value |
+|---|---|
+| Attributed to | "At about the same time" refers to the June 12 (2026) release of Steven Spielberg's film Disclosure Day, named in the same paragraph. TIME news feature by Jeffrey Kluger (Aug 6, 2026). 2026-08-06 |
+| Source | [archived source](../sources/news/time-america-taking-extraterrestrials-seriously-20260806.html) |
+| Location | ¶ On June 12, capturing the global hunger |
+
+---
+
+### Avi Loeb, chair of the White House UAP Science Advisory Council, names AARO as one of the agencies his panel was set up to connect, alongside the White House, the Director of National Intelligence, and the FBI. This is Loeb's voice as quoted by TIME, not AARO's. It supports the claim that Loeb "was tasked to create a panel for the White House, AARO, the Director of National Intelligence, the FBI".
+
+> “I was tasked to create a panel for the White House, AARO, the Director of National Intelligence, the FBI, and related agencies, so that all of these organizations are in contact [about UAPs],” says Loeb.
+
+| Field | Value |
+|---|---|
+| Attributed to | Loeb speaking to TIME (Jeffrey Kluger, Aug 6, 2026), in the paragraph right after the one reporting the White House's establishment of the UAP Science Advisory Council. The bracketed "[about UAPs]" is TIME's editorial insertion and is kept verbatim. The same paragraph goes on to a second Loeb quote ("It’s clear, based on much better sensors...") that does not name AARO and is not part of this span. 2026-08-06 |
+| Source | [archived source](../sources/news/time-america-taking-extraterrestrials-seriously-20260806.html) |
+| Location | ¶ “I was tasked to create a panel |
+
+---
+
+### A TIME image caption identifying Sean Kirkpatrick as AARO director on April 19, 2023. It reports that he shared a video of a silver, orb-like object and that he described "metallic orbs" as the most common UAP type, reported "all over the world". It is AARO's characterization as relayed by TIME.
+
+> On April 19, 2023, Sean Kirkpatrick, director of the All-domain Anomaly Resolution Office (AARO), shared a video that depicts an apparent silver, orblike object crossing a video sensor’s field of view. Kirkpatrick said the “metallic orbs” are the most common type of UAP and are reported from “all over the world.”
+
+| Field | Value |
+|---|---|
+| Attributed to | Photo/video caption in the TIME feature (Jeffrey Kluger, Aug 6, 2026), followed by the credit line "U.S. Department of War (DOW)—The appearance of U.S. DOW visual information does not imply or constitute DOW endorsement." The span is TIME's caption narration. Only the two quoted fragments ("metallic orbs", "all over the world.") are Kirkpatrick's words, so neither sentence is a direct Kirkpatrick quote. The caption gives the date but does not name where the video was shown. 2026-08-06 |
+| Source | [archived source](../sources/news/time-america-taking-extraterrestrials-seriously-20260806.html) |
+| Location | ¶ On April 19, 2023, Sean Kirkpatrick (image caption) |
+
+---
+
 ### Sancorp Consulting job requisition 1258 (Staff Officer III) describes the position as providing Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services "in direct support to Research, Development, Test & Evaluation Activities" within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting names no contract number.
 
 > SANCORP is seeking a Staff Officer III to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) All-Domain Anomaly Resolution Office (AARO).
@@ -1536,6 +1752,90 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### Department characterization of the AARO–NUFOHRC procurement as a commercial data subscription, not a labor or advisory-services contract.
+
+> The subscription service will provide AARO with access to a pre-existing, proprietary commercial data subscription and is not for professional labor or advisory services
+
+| Field | Value |
+|---|---|
+| Attributed to | Relayed by DefenseScoop (Brandi Vincent, published 2026-09-02); spoken by an unnamed "source who asked to be referred to as a War Department official" — a Department of Defense official speaking about AARO's procurement, not a named AARO spokesperson. |
+| Source | [archived source](../sources/news/defensescoop-aaro-nufohrc-subscription-20260902.html) |
+| Location | ¶ “The subscription service will provide AARO with access |
+
+---
+
+### The sole-source rationale for contracting with NUFOHRC.
+
+> Market research conducted to date indicates that no other organization possesses the historical depth, volume of unique records, and specialized analytical expertise to meet the government’s minimum needs.
+
+| Field | Value |
+|---|---|
+| Attributed to | Same unnamed War Department official, same paragraph; relayed by DefenseScoop. 2026-09-02 |
+| Source | [archived source](../sources/news/defensescoop-aaro-nufohrc-subscription-20260902.html) |
+| Location | ¶ “The subscription service will provide AARO with access |
+
+---
+
+### Official characterization of the NUFOHRC holdings AARO seeks to access.
+
+> NUFOHRC possesses the world’s largest private collection of UAP-related historical records, including hundreds of thousands of unique case files that exist exclusively within its archives and are not available in any other public or private repository.
+
+| Field | Value |
+|---|---|
+| Attributed to | Unnamed War Department official, told DefenseScoop "this week" (week of the 2026-09-02 article); the reporter notes it echoes the DOD contracting notice. |
+| Source | [archived source](../sources/news/defensescoop-aaro-nufohrc-subscription-20260902.html) |
+| Location | ¶ Echoing DOD’s recent contracting notice |
+
+---
+
+### Passage
+
+> Furthermore, NUFOHRC has unparalleled, specialized expertise in analyzing this specific data, demonstrated by its staff’s proven ability to generate the high-quality, science-driven analytical studies required by the government
+
+| Field | Value |
+|---|---|
+| Attributed to | Unnamed War Department official ("the official said"); relayed by DefenseScoop. 2026-09-02 |
+| Source | [archived source](../sources/news/defensescoop-aaro-nufohrc-subscription-20260902.html) |
+| Location | ¶ “Furthermore, NUFOHRC has unparalleled |
+
+---
+
+### Official statement of AARO's ongoing historical + contemporary records work with outside partners.
+
+> AARO continues to work with a wide range of partners to identify, analyze, and contextualize both historical and contemporary UAP records
+
+| Field | Value |
+|---|---|
+| Attributed to | Unnamed War Department official; relayed by DefenseScoop. The same official then "declined to disclose the DOD’s estimated total cost for this work.", 2026-09-02 |
+| Source | [archived source](../sources/news/defensescoop-aaro-nufohrc-subscription-20260902.html) |
+| Location | ¶ “AARO continues to work with a wide range of partners |
+
+---
+
+### Disclosure Foundation Executive Director Jordan Flowers, to DefenseScoop, says "binding law" protects individuals who share information with AARO and now PURSUE against lawsuit, prosecution, and retaliation "regardless of an NDA" — the protection attaches to the individuals who share information, not to AARO or PURSUE; this is the one passage in the article that names AARO alongside the new PURSUE pathway as a place individuals share information.
+
+> Binding law protects individuals who share information with AARO and now PURSUE against lawsuit, prosecution, and retaliation regardless of an NDA — or any other restraint
+
+| Field | Value |
+|---|---|
+| Attributed to | Flowers statement to DefenseScoop ("he told DefenseScoop"), DefenseScoop article by Brandi Vincent, September 14, 2026, on the Pentagon PURSUE NDA/SAPIA waiver, 2026-09-14 |
+| Source | [archived source](../sources/news/defensescoop-pursue-waiver-legal-relief-20260914.html) |
+| Location | ¶ “Binding law protects individuals who share information with AARO |
+
+---
+
+### The article's only description of what AARO does: an information-gathering body that investigates the Pentagon's UAP caseload and synchronizes military data sharing with other parts of the federal government. The article assigns AARO no role in the PURSUE disclosure pathway or the waiver, and this sentence is its whole account of AARO's function. It backs the timeline's "names no AARO role in PURSUE" framing.
+
+> It operates as an information-gathering body that investigates the Pentagon’s ever-growing caseload of UAP incidents and synchronizes military data sharing with other parts of the federal government.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop narration (article by Brandi Vincent, September 14, 2026, on the Pentagon PURSUE NDA/SAPIA waiver), directly following the sentence that says Congress's mandate led the Biden administration to set up AARO in 2022, and directly before the paragraph that introduces the broader PURSUE effort. This is the publication's own characterization of AARO, not a statement by AARO. 2026-09-14 |
+| Source | [archived source](../sources/news/defensescoop-pursue-waiver-legal-relief-20260914.html) |
+| Location | ¶ It operates as an information-gathering body |
+
+---
+
 ### In the 2026-09-25 capture of the HQ003424C0096 award record, total obligation, base-exercised-options, and base-and-all-options each read $3,415,374.79 (date signed 2024-08-23). The earlier 2026-04-30 capture (government/usaspending-hq003424c0096.txt) recorded a total of $3,471,829.40; the two captures differ by $56,454.61.
 
 > "total_obligation":3415374.79,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2024-08-23","base_exercised_options":3415374.79,"base_and_all_options":3415374.79
@@ -1584,6 +1884,513 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+### Title-page provenance: AARO's FY2025 consolidated annual UAP report, issued under the Department of War masthead, information cut-off May 30, 2025.
+
+> DEPARTMENT OF WAR ALL-DOMAIN ANOMALY RESOLUTION OFFICE Fiscal Year 2025 Consolidated Annual Report on Unidentified Anomalous Phenomena Information Cut Off: May 30, 2025
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 1, title block |
+
+---
+
+### Statutory basis (50 U.S.C. 3373) and reporting window (June 2, 2024 to May 30, 2025) of the FY2025 report.
+
+> The Department of War (DoW) provides this report pursuant to a requirement established under section 3373k of Title 50, United States Code. This document contains all reported unidentified anomalous phenomena (UAP)-related events occurring from June 2, 2024, to May 30, 2025, and UAP-related events occurring within any previous period not covered in a previous report.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶1 |
+
+---
+
+### Scope section's fuller statutory citation, 3373(k)(1)(A), for the annual report requirement.
+
+> The DoW provides this report pursuant to a requirement established under section 3373(k)(1)(A) of Title 50, United States Code
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶10 |
+
+---
+
+### Authorship and coordination statement: AARO drafted the report with Military Services, DoW, and IC partners.
+
+> AARO drafted this report in coordination with the Military Services, DoW, and Intelligence Community (IC) partners across the United States Government (USG).
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 5, ¶6 |
+
+---
+
+### Headline FY2025 case statistics: 319 reports received, 114 resolved, plus 256 prior-period resolutions for 370 total.
+
+> The All-domain Anomaly Resolution Office (AARO) received 319 reports of UAP-related events. Of those, 284 feature UAP-related events occurring during the reporting period and 35 reports feature UAP-related events occurring outside the reporting period. AARO resolved 114 of the 319 UAP reports. In addition, AARO resolved 256 cases reported in a previous period, bringing the total number of resolved cases during the reporting period to 370.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶2 |
+
+---
+
+### Cumulative case holdings (1,870) and domain breakdown of the 319 FY2025 reports (274 air, 44 space, 1 maritime).
+
+> As of May 30, 2025, AARO’s case holdings contain 1,870 reports. From June 2, 2024, to May 30, 2025, AARO received 319 UAP reports, of which 284 featured UAP-related events occurring during the reporting period and 35 featured UAP-related events that occurred between 2010 and 2024. Of these, AARO assesses that 274 UAP reports occurred in the air domain, 44 in the space domain, and one in the maritime domain.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 5, ¶7 |
+
+---
+
+### AARO's assessment that every resolved case was prosaic, including one rocket launch and one manned jet pack.
+
+> AARO assesses that all resolved cases are attributable to prosaic objects such as balloons, satellites, birds, aircraft, and unmanned aerial systems (UAS). AARO also assesses that one case is attributable to a commercial rocket launch and one to a manned jet pack.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶3 |
+
+---
+
+### Section-level restatement of the 114 prosaic resolutions, plus three further closures pending director authorization.
+
+> AARO resolved 114 of the 319 UAP reports, each attributable to various prosaic objects such as balloons, birds, satellites, aircraft, UAS, and a single instance each of a rocket launch and a manned jet pack. Pending review and director authorization, AARO’s analytic team recommends the closure of three additional cases.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶4 |
+
+---
+
+### Balloons remain a major category of prosaic resolution.
+
+> AARO continues to resolve many UAP-related events as balloons of various kinds, ranging from latex or reflective foil “party balloons” to large research balloons carrying tethered payloads.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 9, ¶2 |
+
+---
+
+### AARO's finding that no resolved case indicated foreign adversary capabilities or breakthrough technology.
+
+> None of the cases AARO resolved indicate advanced foreign adversarial capabilities or breakthrough technologies in any domain.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶8 |
+
+---
+
+### Sourcing of the 44 space-domain reports: 42 civilian-pilot reports via FAA and two from U.S. Space Command ground-based sensors.
+
+> None of AARO’s space-domain case assessments originated from space-based sensors. Forty-two UAP reports originated from civilian pilot reports via the Federal Aviation Administration (FAA), and two originated from ground-based U.S. Space Command sensors.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 5, ¶8 |
+
+---
+
+### The space-domain cases were each assessed with high confidence as satellite flaring (the '1' is an inline footnote marker, preserved verbatim).
+
+> AARO applied all-source analysis 1 techniques and three-dimensional modeling to render a high-confidence assessment for each of these cases as being attributable to satellite flaring.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶1 (continues p. 5, ¶8 across the page break) |
+
+---
+
+### Passage
+
+> The flaring phenomenon is responsible for a growing number of AARO’s total case resolutions as the office’s modeling techniques improve and reports increase.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶2 |
+
+---
+
+### Section IV.C figure of 44 satellite-flaring resolutions, which sits alongside the 238 figure given on p. 3 and p. 12.
+
+> AARO resolved 44 UAP-related events as attributable to satellite flaring during the reporting period.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 9, ¶1 |
+
+---
+
+### New 3-D modeling and simulation capability credited with resolving 238 reported UAP as satellite flaring.
+
+> During this reporting period, AARO onboarded a new analytic capability that has significantly improved the office’s ability to efficiently determine when UAP reports are attributable to satellite flaring. This capability, consisting of advanced three-dimensional modeling and simulation applications, enabled analysts to resolve 238 reported UAP as satellite flaring.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶1 |
+
+---
+
+### The sole maritime-domain case: a U.S. Navy report off Virginia describing about 100 airborne UAP and two likely uncrewed surface systems, still under active investigation.
+
+> The single maritime domain UAP case AARO received involved a report from U.S. Navy assets operating off the coast of Virginia. The report described approximately 100 airborne UAP and two, likely uncrewed, surface systems. AARO is actively investigating this event in coordination with the reporting unit.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶3 |
+
+---
+
+### Nine reports referred to IC and S&T partners for further analysis.
+
+> AARO identified nine reports meriting further analysis by its IC and science and technology (S&T) partners with relevant technical and domain expertise.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶5 |
+
+---
+
+### 191 of 319 FY2025 cases moved to the active archive for insufficient data.
+
+> AARO transferred 191 of the 319 UAP cases to its active archive pending the future discovery of corroborating data sources. The active archive is a category of UAP reports with insufficient data to assess whether the performance characteristics of the underlying event are consistent with those of natural phenomena or exceed the known state-of-the-art for technological systems.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 6, ¶6 |
+
+---
+
+### Passage
+
+> As previously reported, a collection bias favoring the continental United States, its littoral waters, and global U.S. military operational areas, influences AARO’s UAP case holdings. Locations with a higher density of U.S. military sensors and assets tend to submit more UAP reports.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶8 |
+
+---
+
+### AARO's statement that a lack of timely, actionable sensor data continues to constrain case resolution.
+
+> A lack of timely and actionable sensor data continues to constrain AARO’s ability to resolve cases. AARO has worked alongside its military and technical partners to mitigate these constraints by clearly articulating optimal sensor requirements, information-sharing processes, and the essential elements of information that inform high-quality UAP reporting. AARO also continues to expand engagement, information-sharing, and collaboration with foreign partners.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶9 |
+
+---
+
+### FAA civilian-aviator reports made up 21 percent of incoming reporting.
+
+> FAA UAP reports from civilian aviators constituted 21 percent of AARO’s incoming reporting. These reports, although less data-rich on an individual basis than most DoW reporting, provide AARO invaluable access to a much broader pool of reporting for potentially anomalous incidents over the continental United States and its littoral waters.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 7, ¶1 |
+
+---
+
+### Morphology distribution: spheroidal objects 40 percent and lights 33 percent. The in-text figure reference (Figure 3) does not match the morphology chart, which is captioned Figure 2 on p. 8.
+
+> Reporting trends for UAP morphologies remain consistent with historical patterns. In incidents where reporters provided a description of the phenomenon’s distinct visual characteristics, lights (33 percent) and spheroidal objects (40 percent) were the most reported morphologies (Figure 3).
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 7, ¶2 |
+
+---
+
+### Passage
+
+> Of the reports AARO analyzed, 77 of the 319 UAP reports (24.13 percent) contained insufficient information to render an analytic conclusion on the phenomenon’s morphological characteristics.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 8, ¶1 |
+
+---
+
+### Altitude trend compared with the FY2024 annual report: reports above 45,000 feet fell from 27 to 4 percent, which AARO attributes to a prior FAA-derived collection bias.
+
+> Airborne UAP-related events were predominately reported between 10,000 and 35,000 feet. UAP-related events reported above 45,000 feet fell from 27 percent of reports to 4 percent since AARO’s FY 2024 annual report. AARO assesses that this notable difference in reported altitudes stems from a collection bias in the previous reporting period having favored a batch of FAA-derived reports of higher-altitude phenomena.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 8, ¶2 |
+
+---
+
+### Passage
+
+> No reports indicated a flight safety concern during this reporting period.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 9, ¶3 |
+
+---
+
+### Passage
+
+> To date, AARO has not received a UAP report in which a reporter described sustaining adverse health effects associated with their experience.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 10, ¶6 |
+
+---
+
+### Two reports of electronic/avionic interference attributed to UAP near an operational aircraft; no determination yet. Section IV.E (p. 10, ¶2) restates this in near-identical words.
+
+> Two UAP reports described electronic or avionic interference as attributable to UAP in proximity to an operational aircraft. AARO has not yet rendered a determination on whether, and to what extent, the reported effects are attributable to UAP.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 3, ¶6 |
+
+---
+
+### AARO acknowledges narrative reports near national-security sites that suggest performance beyond the known state of the art. It says they would be a 'currently unmitigated threat vector' if validated, though no technical data accompanied them.
+
+> AARO received and analyzed several reports describing UAP in or near national security sites or critical infrastructure. Some narrative reports were suggestive of phenomena whose performance characteristics exceed the known state-of-the-art within a given domain. No technical data accompanied these reports. If validated, the attendant phenomena underlying these reports may represent a currently unmitigated threat vector.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 10, ¶1 |
+
+---
+
+### 50 UAS incidents near nuclear sites reported through the Administrator for Nuclear Security and NRC Chairman, up from 18 in FY2024. None were reported as UAP.
+
+> AARO received 50 reports from the Administrator for Nuclear Security and Chairman of the Nuclear Regulatory Commission regarding unmanned aerial systems (UAS) incidents near U.S. nuclear infrastructure, weapons, and launch sites, a 177.8 percent increase over the 18 reported in AARO’s FY 2024 annual report. None of these incidents were reported as UAP.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 10, ¶3 |
+
+---
+
+### Passage
+
+> During the reporting period, 33 of 50 (66 percent) incidents occurring near nuclear infrastructure involved one UAS, with the other 17 involving between 2 and 7 UAS. Most cases – 47 of the 50 – occurred between 1700 and 0500 local time.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 10, ¶4 |
+
+---
+
+### AARO's FY2025 position that no evidence suggests any USG or private entity has captured or exploited UAP-derived materials. It is also developing a formal handling process for such materials.
+
+> To date, no evidence suggests that a USG or private entity has ever captured or exploited UAP-derived materials. AARO is currently developing a formalized process for handling UAP-derived materials by an appropriate line organization, should such materials ever come into the possession of the USG. AARO’s development process draws on established USG capabilities and operating procedures governing the recovery of foreign materiel.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 10, ¶5 |
+
+---
+
+### Foreign-partner engagement, including the (unnamed) AARO deputy director's mission briefing at the Defense Geospatial Intelligence conference in London.
+
+> During the reporting period, AARO continued to engage with international partners to exchange information and best practices for UAP reporting, analysis, and response. AARO’s deputy director presented a mission briefing to the Defense Geospatial Intelligence conference in London, United Kingdom.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶1–¶2 |
+
+---
+
+### AARO describes itself as the DoW's mission manager for UAP response and names the Joint Staff's classified February 2025 UAP GENADMIN.
+
+> AARO works closely with the military Services, Combatant Commands, and the relevant cognizant authorities in each operational area or domain to develop coordinated UAP mitigation and response plans, including robust reporting processes. As the DoW’s mission manager for UAP response, AARO aims to fully implement the Joint Staff’s classified UAP GENADMIN from February 2025.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶3 |
+
+---
+
+### Passage
+
+> The military Services’ counterintelligence, law enforcement, and security agencies are the cognizant authorities responsible for responding to UAP incidents and incursions on all DoW installations and ranges.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶4 |
+
+---
+
+### Passage
+
+> AARO hosts a secure reporting mechanism on its public website, www.aaro.mil. This mechanism enables and encourages individuals claiming first-hand knowledge of a USG UAP-related program or activity dating back to 1945 to report information to AARO.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶5 |
+
+---
+
+### AARO's statement of its legal authority to receive UAP information at any classification level, and that non-disclosure agreements generally do not bar disclosure to AARO.
+
+> AARO is authorized by law to receive all UAP-related information, including any classified national security information involving military or intelligence related activities, at any level of classification, regardless of any restrictive access controls, special access controls, or compartmented access programs. Generally, no restrictions, including non-disclosure agreements, prevent AARO from receiving UAP-related information, regardless of the organizational affiliation of the original classification authority within the DoW, the IC, or any other USG department or agency.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶6 |
+
+---
+
+### Authorized-disclosure statistics: 262 contacts, 255 out of scope, 7 warranting follow-on interview requests.
+
+> Between June 2, 2024, and May 30, 2025, 262 individuals contacted AARO via the secure reporting mechanism on its website. AARO determined that 255 were out-of-scope and identified 7 individuals whose claims warranted a request for a follow-on interview. AARO prioritizes interviewing current or former USG employees, contractors, or service members claiming to have first-hand knowledge of a USG UAP-related program per the eligibility requirement for a report to qualify as an authorized disclosure.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 11, ¶7 |
+
+---
+
+### Passage
+
+> In FY2025, AARO launched several multi-domain, multi-modal sensor and algorithmic prototyping initiatives to detect, track, characterize, identify and potentially attribute anomalous detections.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶2 |
+
+---
+
+### Names Dr. Jon Kosloski as AARO Director and describes his on-camera media engagement in the FY2025 period.
+
+> AARO Director Dr. Jon Kosloski participated in several on-camera interviews with national-level audiences, including both traditional television and new media formats. AARO’s effort to engage with a broad audience supports the office’s objectives to destigmatize UAP reporting, emphasize the national security implications associated with domain awareness gaps, and inform the public on what information is most valuable when making a UAP report.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶3 |
+
+---
+
+### AARO names its published resolutions of the 'Go Fast' case, which it characterizes as originally released via unauthorized disclosure in 2017, and of the 2013 Aguadilla, Puerto Rico event.
+
+> AARO has published case resolutions, imagery, calculations, and modeling associated with some of the UAP cases best known to the public. These include the case known to the public as “Go Fast,” originally released via unauthorized disclosure in 2017, and a well-known UAP event occurring in Aguadilla, Puerto Rico, in 2013. Responding to public interest, AARO also published newly declassified imagery associated with unresolved UAP reports that lack sufficient technical data for analysis.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶5 |
+
+---
+
+### Passage
+
+> AARO launched an “Electronic Freedom of Information Act (E-FOIA) Reading Room” containing responsive documents to FOIA requests relating to AARO since its establishment.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶6 |
+
+---
+
+### Passage
+
+> AARO will continue to develop partnerships across the USG, academia, and commercial communities. AARO seeks to capitalize on a diverse set of sensor technology capabilities and intelligence analytic tradecraft through these partnerships to improve the USG’s effort to investigate and respond to UAP in the air, maritime, and space domains at scale and speed.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 12, ¶7 |
+
+---
+
+### Way Forward: a multi-year investment strategy toward real-time UAP detection and identification.
+
+> AARO is implementing a multi-year investment strategy to improve awareness across the space, air, and maritime domains. These investments focus on augmenting existing USG sensor architectures, prototyping and field-testing new technologies, and developing novel analytic techniques using proven technologies and methodologies. Collectively, these initiatives aim to deliver real-time UAP detection and identification capabilities (i.e. domain awareness), thereby enabling USG organizations to more effectively respond to UAP, tactically and nationally.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 13, ¶1 |
+
+---
+
+### AARO's glossary definition of UAP in the FY2025 report.
+
+> Unidentified Anomalous Phenomenon (UAP): Sources of anomalous detections in one or more domain (i.e., airborne, maritime, spaceborne, and/or transmedium) that are not attributable to known actors and that demonstrate behaviors that are not readily understood by sensors or observers. “Anomalous detections” include but are not limited to phenomena that demonstrate apparent capabilities or material that exceed known performance envelopes.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 14, ¶2 |
+
+---
+
+### Passage
+
+> UAP Incursion: Any UAP incident occurring in, on, or near U.S. military installations, operating areas, training areas, special use airspace, proximity operations, or other national security areas of interest such as U.S. critical infrastructure, IC equities, or the national defense equities of U.S. defense partners, military allies, and intelligence coalitions (e.g., FVEY).
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 14, ¶9 |
+
+---
+
+### Closing sentences of the altitude paragraph (continuing the q158 span): civilian pilot altitude estimates of 45,000 to 60,000 feet, many of which AARO resolved as satellite flaring. Context for the satellite-flaring figures reported elsewhere in the report (238 resolved via the new modeling capability, pp. 3 and 12; 44 UAP-related events in the reporting period, p. 9); the report itself does not reconcile the two counts.
+
+> Civilian pilot estimates of phenomenon altitudes tended to range from 45,000 to 60,000 feet. However, AARO resolved many of these reports as satellite flaring based on their reported characteristics.
+
+| Field | Value |
+|---|---|
+| Attributed to | Section IV.B, Reported Altitudes for Airborne UAP; immediately follows the collection-bias sentence about FAA-derived higher-altitude reports. |
+| Source | [archived source](../sources/government/aaro-fy25-consolidated-annual-report-uap.pdf) |
+| Location | p. 8, ¶2 |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -1607,6 +2414,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | 2024-03-06 | Pentagon spokesperson Sue Gough emails David A. Kozik (OUSD(I&S) Director Congressional Activities) at 1:45 PM with "Importance: High": "We do not want to see sUAS added to AARO's portfolio!" Formal AARO PA position contesting Sen. Gillibrand's same-day request that AARO catalog sUAS incursions (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-07 | David A. Kozik replies that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", attributing the Gillibrand framing to "a prep failure on our part for ASD HD&HA". Documents direct operational coordination between AARO Public Affairs and OUSD(I&S) Congressional Activities at email-thread level (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-08 | AARO Historical Record Report Volume I released | other | government/aaro-hrr-volume-1-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
+| 2024-06-02 | Reporting period of AARO's Fiscal Year 2025 Consolidated Annual Report on Unidentified Anomalous Phenomena ([`/documents/aaro-fy25-consolidated-annual-report-uap`]) — AARO received 319 UAP reports and resolved 114 of them; as of May 30, 2025, AARO's case holdings contain 1,870 reports. The report does not state a publication date. | reporting-period | government/aaro-fy25-consolidated-annual-report-uap.pdf | [`/documents/aaro-fy25-consolidated-annual-report-uap`] |
 | 2024-06-15 | Section 6802(j) HRR statutory deadline (540 days after IAA FY 2023 enactment). HRR Vol I (March 8, 2024) published before deadline, satisfying "a written report" requirement. HRR Vol I §III states "AARO will publish Volume II in accordance with the date established in Section 6802"; Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/aaro-hrr-volume-1-20240308.pdf |  |
 | 2024-08-23 | Contract HQ003424C0096 ("EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC") awarded to Sancorp Consulting by Washington Headquarters Services; period of performance through January 31, 2026. Total obligation \$3,415,374.79 per the 2026-09-25 award record (2026-04-30 capture: \$3,471,829.40). Transaction descriptions carry the AARO name from modification P00005 (2025-07-10). | contract | government/usaspending-hq003424c0096-20260925.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
@@ -1628,7 +2436,12 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | 2026-04-16 | Luna ([`/people/anna-paulina-luna`]) tells NewsNation she is prepared to compel production if "institutional resistance continues" and to work with House Oversight Chairman James Comer ([`/people/james-comer`]) to exercise subpoena authority. Luna also called for removal of the unelected official she said failed to route her March 31 letter. | announcement | news/newsnation-luna-uap-video-deadline-subpoena-20260416.html |  |
 | 2026-04-18 | Defense Department spokesperson statement to NBC News (Saturday) on AARO disclosure-coordination posture — AARO working in close coordination with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information. | other | news/nbcnews-trump-ufo-files-interesting-documents-20260418.html |  |
 | 2026-05-06 | HQ003424C0096 modification P00007 (OTHER ADMINISTRATIVE ACTION) — federal_action_obligation -\$56,454.61, recorded after the period of performance ended January 31, 2026; the 2026-09-25 award record reports total obligation \$3,415,374.79. | contract | government/usaspending-hq003424c0096-transactions-20260925.txt | [`/organizations/sancorp-consulting`] |
+| 2026-07-22 | The House ([`/organizations/united-states-house-of-representatives`]), in the Committee of the Whole, agrees to amendments en bloc No. 5 ([`/events/2026-07-22-house-ndaa-fy2027-en-bloc-5`]) to H.R. 8800 ([`/documents/ndaa-fy2027`]), including Amendment No. 315 ([`/documents/ndaa-fy2027-amendment-315-burlison`]), whose SEC. 1746(f)(6) and SEC. 1750(b)(2) name the All-domain Anomaly Resolution Office. The Record does not show passage of the bill. | government-action | government/crec-20260722-house-hr8800-ndaa-fy2027.htm | [`/documents/ndaa-fy2027-amendment-315-burlison`] |
+| 2026-07-31 | Washington Headquarters Services ([`/organizations/whs`]), on behalf of AARO, posts a notice of intent to sole source (solicitation NUFOHRC_20260731) for a multi-year historical UAP data and analysis subscription from the National Unidentified Flying Object Historic Records Center ([`/organizations/nufohrc`]); responses due August 17, 2026. Notice of intent only; no award is confirmed in these sources. | contract | government/samgov-nufohrc-20260731-notice.json | [`/documents/samgov-nufohrc-20260731-notice`] |
+| 2026-08-06 | In TIME (Jeffrey Kluger ([`/people/jeffrey-kluger`])), Jon Kosloski ([`/people/jonathan-kosloski`]), "director of AARO", says "Great claims require great evidence". | publication | news/time-america-taking-extraterrestrials-seriously-20260806.html | [`/people/jonathan-kosloski`] |
 | 2026-08-10 | Sancorp Consulting job requisition 1258 (Staff Officer III) posted — support to Research, Development, Test & Evaluation Activities within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO); no contract number cited. Location: National Capital Region ([`/locations/national-capital-region`]). | hiring | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | [`/organizations/sancorp-consulting`] |
+| 2026-09-02 | DefenseScoop (Brandi Vincent ([`/people/brandi-vincent`])) reports AARO's plan to buy a commercial data subscription to NUFOHRC's archives, quoting a source who asked to be referred to as a War Department official; the official declined to disclose the DOD's estimated total cost. | publication | news/defensescoop-aaro-nufohrc-subscription-20260902.html | [`/organizations/nufohrc`] |
+| 2026-09-14 | Per DefenseScoop, the Pentagon issues a formal waiver ([`/documents/dow-pursue-uap-disclosure-waiver-2026`]) superseding enforcement provisions of NDAs and SAPIAs, strictly for communications with the PURSUE team ([`/organizations/pursue`]). The article names no AARO role in PURSUE or the waiver; Jordan Flowers ([`/people/jordan-flowers`]) is quoted that binding law protects individuals who share information with AARO and now PURSUE. | other | news/defensescoop-pursue-waiver-legal-relief-20260914.html | [`/organizations/pursue`] |
 
 ---
 
@@ -1654,6 +2467,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|---|---|
 | [`/organizations/sancorp-consulting`] | contractor | news/sancorp-adp-req1258-staff-officer-iii-20260925.json | Not confirmed. The link is based only on Sancorp requisition 1258, which uses the HQ003426FE050 award description phrase within OUSW(I&S) AARO and names no contract number. Neither the HQ003426FE050 award record nor any of its five transaction records names AARO. The "OSD OUSD(I)" funding office is not specific to AARO: it also appears on HQ003424C0096 and HQ003422C0064 (IPMO SUPPORT SERVICES). |
 | [`/organizations/arlo-solutions`] | contractor | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html | Not confirmed. Arlo described a (617) Staff Officer V position and a (619) Security Officer IV position as supporting AARO. No contract is named in the (617) or the (619) posting, and no award record cited here names Arlo for AARO work. |
+| [`/organizations/nufohrc`] | contractor | government/samgov-nufohrc-20260731-notice.json | Not confirmed. The Washington Headquarters Services notice NUFOHRC_20260731, on behalf of AARO, is a notice of intent to award a sole-source, firm-fixed-price contract to NUFOHRC for a data subscription; it is not a request for competitive proposals, and it does not record an award. |
 
 ---
 
@@ -1663,7 +2477,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source |
 |---|---|---|
-| All-domain | All-Domain | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| All-Domain | All-domain | government/samgov-nufohrc-20260731-notice.json |
 | stand-up | stand up | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | fulfi lled | fulfilled | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | Airborne Object Identification and Management Group | Airborne Object Identification and Management Synchronization Group | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
@@ -1676,6 +2490,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | DOW | Department of Defense (DoD) | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
 | Secretary of War | Secretary of Defense | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
 | Under Secretary of War for Intelligence and Security | Under Secretary of Defense for Intelligence and Security | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
+| section 3373k | section 3373(k) | government/aaro-fy25-consolidated-annual-report-uap.pdf |
+| (Figure 3) | Figure 2 | government/aaro-fy25-consolidated-annual-report-uap.pdf |
+| Department of War (DoW) | Department of Defense (DoD) | government/aaro-fy25-consolidated-annual-report-uap.pdf |
+| all-domain anomaly resolution office | All-domain Anomaly Resolution Office | government/crec-20260722-house-hr8800-ndaa-fy2027.htm |
 
 ---
 
@@ -1695,22 +2513,28 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/people/anna-paulina-luna`]
 - [`/people/aruna-viswanatha`]
+- [`/people/avi-loeb`]
 - [`/people/avril-haines`]
 - [`/people/becky-zimmerman`]
 - [`/people/brandi-vincent`]
 - [`/people/christopher-meagher`]
 - [`/people/christopher-mellon`]
 - [`/people/david-kozik`]
+- [`/people/david-marler`]
 - [`/people/david-norquist`]
 - [`/people/donald-trump`]
+- [`/people/eric-burlison`]
 - [`/people/eric-schmitt`]
 - [`/people/gary-peters`]
 - [`/people/glenn-grothman`]
 - [`/people/heather-king`]
+- [`/people/j-hynek`]
 - [`/people/jack-reed`]
+- [`/people/jacqueline-patierno`]
 - [`/people/james-comer`]
 - [`/people/jasmine-crockett`]
 - [`/people/jeanne-shaheen`]
+- [`/people/jeffrey-kluger`]
 - [`/people/joe-manchin`]
 - [`/people/joel-schectman`]
 - [`/people/jonathan-kosloski`]
@@ -1724,6 +2548,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/people/mark-kelly`]
 - [`/people/michael-gold`]
 - [`/people/michael-shellenberger`]
+- [`/people/mike-rogers`]
 - [`/people/mike-rounds`]
 - [`/people/nancy-mace`]
 - [`/people/pamela-andrews`]
@@ -1735,6 +2560,7 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/people/sherman`]
 - [`/people/spedero`]
 - [`/people/sue-gough`]
+- [`/people/tiffany-reddick`]
 - [`/people/tim-gallaudet`]
 - [`/people/tim-kaine`]
 - [`/people/tim-phillips`]
@@ -1756,42 +2582,74 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 - [`/organizations/disclosure-foundation`]
 - [`/organizations/dmdpo`]
 - [`/organizations/dod`]
+- [`/organizations/faa`]
+- [`/organizations/fbi`]
 - [`/organizations/gao`]
 - [`/organizations/gtri`]
 - [`/organizations/intelligence-community`]
 - [`/organizations/ipmo`]
+- [`/organizations/joint-staff`]
 - [`/organizations/le-oversight-compliance-directorate`]
+- [`/organizations/nara`]
 - [`/organizations/nasa`]
+- [`/organizations/national-nuclear-security-administration`]
 - [`/organizations/norad`]
 - [`/organizations/northcom`]
 - [`/organizations/nsa`]
+- [`/organizations/nuclear-regulatory-commission`]
+- [`/organizations/nufohrc`]
 - [`/organizations/odni`]
 - [`/organizations/osd`]
 - [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
 - [`/organizations/oversight-task-force-declassification`]
+- [`/organizations/project-blue-book`]
+- [`/organizations/pursue`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/sba`]
 - [`/organizations/scpo`]
+- [`/organizations/uap-records-review-board`]
+- [`/organizations/uap-science-advisory-council`]
 - [`/organizations/uaptf`]
+- [`/organizations/united-states-house-of-representatives`]
 - [`/organizations/us-navy`]
+- [`/organizations/usspacecom`]
+- [`/organizations/white-house`]
 - [`/organizations/whs`]
 
 ### Events
 
 - [`/events/2004-nimitz-encounter`]
+- [`/events/2026-07-22-house-ndaa-fy2027-en-bloc-5`]
+- [`/events/aguadilla-incident`]
+- [`/events/defense-geospatial-intelligence-conference`]
 
 ### Documents
 
+- [`/documents/10-usc-3204`]
+- [`/documents/aaro-e-foia-reading-room`]
 - [`/documents/aaro-fy24-consolidated-annual-report-uap-2024`]
+- [`/documents/aaro-fy25-consolidated-annual-report-uap`]
 - [`/documents/aaro-historical-record-report-vol-i`]
 - [`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`]
+- [`/documents/controlled-disclosure-campaign-plan`]
+- [`/documents/crec-20260722-house-hr8800-ndaa-fy2027`]
 - [`/documents/dod-manual-5105-21`]
 - [`/documents/dod-manual-5205-07`]
+- [`/documents/dow-pursue-uap-disclosure-waiver-2026`]
 - [`/documents/eo-14347-restoring-department-of-war`]
+- [`/documents/far-6-302-1`]
 - [`/documents/hicks-aaro-establishment-memo-2022`]
+- [`/documents/house-report-119-755`]
+- [`/documents/joint-staff-uap-genadmin-2025`]
 - [`/documents/national-defense-strategy`]
+- [`/documents/ndaa-fy2022`]
+- [`/documents/ndaa-fy2023`]
+- [`/documents/ndaa-fy2024`]
+- [`/documents/ndaa-fy2027`]
+- [`/documents/ndaa-fy2027-amendment-315-burlison`]
 - [`/documents/oversight-house-uap-request-letter-luna-2026`]
+- [`/documents/samgov-nufohrc-20260731-notice`]
 - [`/documents/thedebrief-mellon-aaro-report-flawed-2024`]
 - [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`]
 
@@ -1799,9 +2657,19 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 
 - [`/transcripts/2023-04-19-sasc-kirkpatrick`]
 
+### Media
+
+- [`/media/aaro-metallic-orb-video-2023`]
+- [`/media/go-fast`]
+
 ### Locations
 
 - [`/locations/arlington-virginia`]
 - [`/locations/falls-church-virginia`]
+- [`/locations/london`]
 - [`/locations/national-capital-region`]
+- [`/locations/puerto-rico`]
+- [`/locations/rio-rancho-new-mexico`]
+- [`/locations/united-kingdom`]
+- [`/locations/virginia`]
 - [`/locations/washington-dc`]

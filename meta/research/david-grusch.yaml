@@ -63,6 +63,10 @@ primary_sources:
   format: html
 - path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
   format: html
+- path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+  format: html
+- path: social/x-jamescfox-2101321904627851749-20260919.json
+  format: txt
 document_intrinsic:
   full_name: David Charles Grusch
   aliases:
@@ -71,12 +75,10 @@ document_intrinsic:
   profession: Senior intelligence and strategic engagement advisor; former USAF intelligence officer (Major) and NGA Senior Geospatial Intelligence Officer; Whistleblower
 context_extrinsic:
   display_title: David Grusch
-background: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet). March 2016 – November 2021: Corporate Security Officer (CSO) / DoD-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating
-  Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
+background: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet). March 2016 – November 2021: Corporate Security Officer (CSO) / DoD-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
 
   '
-top_relevance: 'From 2019 to 2021, in his [`/organizations/nro`] reservist capacity, Grusch was a member of the [`/organizations/uaptf`]. From 2021 to 2023, as [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, he reported to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch''s testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given
-  by individuals with a longstanding track record of legitimacy and service to this country.
+top_relevance: 'From 2019 to 2021, in his [`/organizations/nro`] reservist capacity, Grusch was a member of the [`/organizations/uaptf`]. From 2021 to 2023, as [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, he reported to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch''s testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
 
   '
 credibility_notes: 'Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]); the formal filing [`/documents/grusch-ppd-19-procedural-filing`]. Per the Debrief ([`/documents/debrief-grusch-2023`]): "The Intelligence Community Inspector General found his complaint *credible and urgent* in July 2022"; per the same article, "a summary was immediately submitted to the Director of National Intelligence, Avril Haines ([`/people/avril-haines`]); the Senate Select Committee on Intelligence; and the House Permanent Select Committee on Intelligence" ([`/organizations/hpsci`]). Grusch''s July 26, 2023 written testimony received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and under oath described it: "I call it administrative terrorism" — career threats against himself and colleagues who corroborated the allegations.
@@ -88,7 +90,10 @@ credibility_notes: 'Grusch testified under oath that he is "speaking to the fact
   AARO position. Under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), AARO ([`/organizations/aaro`]) correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]); Kirkpatrick wrote he was "not judging the claims" and was "not taking a position on ... the underlying claim of recovered materials," stating of Grusch that "he is sincere and credible and his and other claims, which I expressly called ''allegations,'' warrant investigation." Grusch declined AARO interview invitations. Christopher Mellon ([`/people/christopher-mellon`]) described in the Debrief that "a number of potential sources do not trust the leadership of the All-Domain Anomaly Resolution Office established by Congress." In November 2023, OUSD(I&S) ([`/organizations/ousd-is`]) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per Douglas Johnson''s ([`/people/douglas-johnson`]) analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) interview, Kirkpatrick said of the revisions, "we convinced Congress last year not to go down that road."
 
 
-  Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept''s story on Grusch''s military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus House UAP Caucus members Burchett, Burlison ([`/people/eric-burlison`]), Luna ([`/people/anna-paulina-luna`]), and Sen. Rubio ([`/people/marco-rubio`]).
+  Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept''s story on Grusch''s military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus Rep. Burchett, Rep. Burlison ([`/people/eric-burlison`]), and Sen. Rubio ([`/people/marco-rubio`]).
+
+
+  NDA waiver appeal. On Sep. 19, 2026, the New York Post ([`/organizations/new-york-post`]) reported that Dylan Borland ([`/people/dylan-borland`]), David Grusch and Matthew Brown ([`/people/matthew-brown`]) formed a coalition to ask President Trump ([`/people/donald-trump`]) to waive their government nondisclosure agreements; they "say they accumulated the information while working in highly classified government programs and are legally barred from discussing it publicly without White House intervention" ([`/organizations/white-house`]). Per the same article, the administration''s new legal waiver allows reporting UFO and alien-related information to the federal government "only through the Presidential Unsealing and Reporting System for UAP Encounters, not for disclosure to the public" ([`/organizations/pursue`]). Grusch''s appeal came in "a video released by Fox" — filmmaker and disclosure advocate James Fox ([`/people/james-fox`]); in the same article Grusch said he is "prepared to provide a full historical accounting to the National Security Council" ([`/organizations/nsc`]) "and the White House Chief of Staff and make any supporting public statements that are authorized."
 
 
   [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
@@ -232,6 +237,27 @@ relationships:
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
     location: full documentary
+- id: r9
+  added_date: '2026-09-26'
+  person_path: /people/dylan-borland
+  relationship: Fellow member (with Matthew Brown) of the UFO whistleblower coalition asking President Trump to waive their government nondisclosure agreements (2026-09-19); Air Force veteran who testified to Congress in 2024
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ "Dylan Borland, David Grusch and Matthew Brown"; ¶ "Dylan Borland, an Air Force veteran, testified to Congress in 2024"'
+- id: r10
+  added_date: '2026-09-26'
+  person_path: /people/matthew-brown
+  relationship: Fellow member (with Dylan Borland) of the UFO whistleblower coalition asking President Trump to waive their government nondisclosure agreements (2026-09-19); was an independent contractor for the defense industry
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ "Dylan Borland, David Grusch and Matthew Brown"; ¶ "Matthew Brown was an independent contractor for the defense industry"'
+- id: r11
+  added_date: '2026-09-26'
+  person_path: /people/james-fox
+  relationship: Filmmaker and disclosure advocate who released the video carrying Grusch's appeal to President Trump for authorization to disclose (2026-09-19)
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ "Mr. President, give us the authorization"'
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -461,7 +487,7 @@ timeline:
 - id: t26
   added_date: '2026-04-22'
   date: '2025-03-27'
-  event: Rep. Eric Burlison ([`/people/eric-burlison`]) names Grusch Special Advisor to the House Task Force on the Declassification of Federal Secrets ([`/organizations/house-uap-caucus`]); announcement [`/documents/burlison-grusch-advisor-announcement-2025`]
+  event: Rep. Eric Burlison ([`/people/eric-burlison`]) names Grusch Special Advisor to the House Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]); announcement [`/documents/burlison-grusch-advisor-announcement-2025`]
   category: role
   source:
     path: government/burlison-house-gov-grusch-advisor-20250327.html
@@ -498,6 +524,30 @@ timeline:
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
     location: lines 394-400 (around [15:41]-[15:57])
+- id: t31
+  added_date: '2026-09-26'
+  date: '2026-09-19'
+  event: 'New York Post ([`/organizations/new-york-post`]) exclusive by Shane Galvin ([`/people/shane-galvin`]): Grusch, Dylan Borland ([`/people/dylan-borland`]) and Matthew Brown ([`/people/matthew-brown`]) ask President Trump ([`/people/donald-trump`]) to waive their government nondisclosure agreements; Grusch''s appeal is from a video released by James Fox ([`/people/james-fox`]) ([`/media/james-fox-whistleblower-nda-waiver-video-2026`]); article [`/documents/nypost-grusch-borland-brown-nda-waiver-appeal-20260919`]'
+  category: publication
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ "The world’s most prominent UFO whistleblowers"'
+- id: t31a
+  added_date: '2026-09-26'
+  date: '2026-09-19'
+  event: 'Same article: the administration''s new legal waiver permits reporting only through the Presidential Unsealing and Reporting System for UAP Encounters ([`/organizations/pursue`]), not disclosure to the public; Rep. Eric Burlison ([`/people/eric-burlison`]) supports the group; Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]) chairs the House Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`])'
+  category: publication
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ "The administration announced a new legal waiver"'
+- id: t32
+  added_date: '2026-09-26'
+  date: '2026-09-19'
+  event: 'James Fox ([`/people/james-fox`]) posts on X ([`/organizations/x-corp`]) urging President Trump ([`/people/donald-trump`]) (tagged @POTUS) to "Waive their NDAs" and "let the American people hear the classified details", linking the New York Post ([`/organizations/new-york-post`]) article whose link card names Grusch, Dylan Borland ([`/people/dylan-borland`]) and Matthew Brown ([`/people/matthew-brown`])'
+  category: publication
+  source:
+    path: social/x-jamescfox-2101321904627851749-20260919.json
+    location: tweet.text; tweet.card.description
 quotes:
 - id: q1
   claim_group: "Identity, Rank & Career"
@@ -1887,7 +1937,7 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 43
-  significance: Sworn statement — Grusch has never personally seen a UAP. Grounds his entire testimony as relayed, not observational.
+  significance: 'Sworn statement — Grusch has never personally seen a UAP. The answer responds to Rep. Mace''s question about "your experiences with a UAP" (a personal sighting); it does not address whether he has viewed evidence such as the photography and official documentation he says individuals shared with him.'
   context: Oral testimony Q&A (response to "when you reported your experiences with a UAP did any of you face any repercussions with your superiors?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -2310,9 +2360,7 @@ quotes:
 - id: q157
   claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
-  text: 'Thank you for sending these items. As a former agency-level SAPMO and CAPCO I take security policies very seriously. In the DoD SAPCO memo, the term "UAP-related" is not defined. FY23 NDAA Sec. 1673 Subsection B defines it as the following: "any activity or program by a department or agency of the Federal Government or a contractor of such a department or agency relating to unidentified anomalous phenomena, including with respect to material retrieval, material analysis, reverse engineering, research and development, detection and tracking, developmental or operational testing, and security protections and enforcement." The key issue here is that many of these activities have conventional classified and compartmented Security Classification Guides that also cover non-UAP activities as well. To discuss the UAP-related activities would also expose these conventional SAP mission areas. An oral history interview subject must also be absolved of this obligation to protect this information
-    as well, some of it may be bigoted or WAIVED (IAW DODI 5205.11 and 10 USC Sec 119). Furthermore, as discussed Friday, I am seeking a ODNI CAPCO determination to absolve an oral history interview subject of any NDA''s relating to UAP-related and adjacent (as stated above) IC CAP information. Additionally, in my particular case, in order to horizontally protect a portion of my oral history testimony previously provided to ICIG and the intelligence committees, we would need to conduct the interview at the HCS-Operations (O) Restricted Handling (RH) level (IAW DNI CAPCO manual Sec. 4). Has the CIA Office of Security (OS) or Directorate of Operations (DO) provided a memo in this regard for oral history interview subjects? Has the OS provided a memo to also cover managed-need-to-know (MNTK) projects not directly reported to ODNI CAPCO? Lastly, what signed policy does AARO have to receive non-title-10 SAPs (ie, DOE and NSC)? Has the EOP NSC Security Director, Director National Program Management
-    Staff OUSD(I&S), or DOE SAPCO/SAPOC provided a memo similar to the DoD SAPCO memo you provided? v/r, DG'
+  text: 'Thank you for sending these items. As a former agency-level SAPMO and CAPCO I take security policies very seriously. In the DoD SAPCO memo, the term "UAP-related" is not defined. FY23 NDAA Sec. 1673 Subsection B defines it as the following: "any activity or program by a department or agency of the Federal Government or a contractor of such a department or agency relating to unidentified anomalous phenomena, including with respect to material retrieval, material analysis, reverse engineering, research and development, detection and tracking, developmental or operational testing, and security protections and enforcement." The key issue here is that many of these activities have conventional classified and compartmented Security Classification Guides that also cover non-UAP activities as well. To discuss the UAP-related activities would also expose these conventional SAP mission areas. An oral history interview subject must also be absolved of this obligation to protect this information as well, some of it may be bigoted or WAIVED (IAW DODI 5205.11 and 10 USC Sec 119). Furthermore, as discussed Friday, I am seeking a ODNI CAPCO determination to absolve an oral history interview subject of any NDA''s relating to UAP-related and adjacent (as stated above) IC CAP information. Additionally, in my particular case, in order to horizontally protect a portion of my oral history testimony previously provided to ICIG and the intelligence committees, we would need to conduct the interview at the HCS-Operations (O) Restricted Handling (RH) level (IAW DNI CAPCO manual Sec. 4). Has the CIA Office of Security (OS) or Directorate of Operations (DO) provided a memo in this regard for oral history interview subjects? Has the OS provided a memo to also cover managed-need-to-know (MNTK) projects not directly reported to ODNI CAPCO? Lastly, what signed policy does AARO have to receive non-title-10 SAPs (ie, DOE and NSC)? Has the EOP NSC Security Director, Director National Program Management Staff OUSD(I&S), or DOE SAPCO/SAPOC provided a memo similar to the DoD SAPCO memo you provided? v/r, DG'
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2023-11-13 12:24 PM from David Grusch (Subject: "Re: Contact Request")'
@@ -2420,6 +2468,39 @@ quotes:
   observation_type: relayed
   category: filed-claim
   statement_date: '2022-05-25'
+- id: q166
+  added_date: '2026-09-26'
+  text: 'Mr. President, give us the authorization and we’re ready to go'
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ “Mr. President, give us the authorization'
+  significance: 'Grusch''s direct public appeal to the President to authorize disclosure — part of the coalition (Grusch, Dylan Borland, Matthew Brown) asking Trump to waive their government nondisclosure agreements.'
+  context: 'New York Post (Shane Galvin), 2026-09-19. Attribution in the same paragraph: "Grusch said in a video released by Fox." (James Fox). The article does not give the video''s recording date; statement_date is the article''s publication date (Sep. 19, 2026).'
+  claim_group: "NDA-Waiver Appeal to President Trump (2026)"
+  statement_date: '2026-09-19'
+  observation_type: relayed
+- id: q167
+  added_date: '2026-09-26'
+  text: 'This included photographs and video of the [recovery] operations including the craft and the non-human occupants. And I’ve seen this evidence with my own two eyes'
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ “This included photographs and video of the [recovery] operations'
+  significance: 'Grusch asserts he personally viewed photographic and video evidence of recovery operations, including craft and "non-human occupants".'
+  context: 'New York Post, 2026-09-19. Attributed "he said" (Grusch), following the reporter''s paraphrase "Grusch said evidence he has seen is jaw-dropping." The bracketed "[recovery]" is the Post''s editorial insertion, preserved verbatim. The article does not state whether this line comes from the Fox-released video; statement_date is the publication date. His 2023-07-26 sworn statement "I have actually never seen anything personally" answered a question about personally experiencing a UAP, not about viewing evidence; his sworn opening statement that day said individuals had "shared compelling evidence in the form of photography" with him.'
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
+  statement_date: '2026-09-19'
+  observation_type: direct
+- id: q168
+  added_date: '2026-09-26'
+  text: 'I am prepared to provide a full historical accounting to the National Security Council . . . and the White House Chief of Staff and make any supporting public statements that are authorized.'
+  source:
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    location: '¶ “I am prepared to provide a full historical accounting'
+  significance: 'Grusch states the channel and scope of the disclosure he offers — a full historical accounting to the National Security Council and White House Chief of Staff, plus authorized public statements.'
+  context: 'New York Post, 2026-09-19. Stand-alone quoted paragraph immediately following the Grusch-attributed "he said" paragraph, with no new speaker tag — attribution to Grusch is by continuation. The " . . . " is the Post''s own elision mark and is present in the source text (single contiguous span, not a worker-joined splice). statement_date is the publication date.'
+  claim_group: "NDA-Waiver Appeal to President Trump (2026)"
+  statement_date: '2026-09-19'
+  observation_type: relayed
 vouching_chain:
 - id: vc1
   added_date: '2026-04-22'

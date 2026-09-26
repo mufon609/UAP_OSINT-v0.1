@@ -144,6 +144,12 @@ primary_sources:
   format: html
 - path: news/muckrock-foia-23-f-0905-wayback-20260430.html
   format: html
+- path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+  format: txt
+- path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+  format: html
+- path: news/abcnews-pentagon-begins-release-ufo-files-kirkpatrick-statement-20260508.html
+  format: html
 document_intrinsic:
   full_name: Sean Michael Kirkpatrick
   aliases:
@@ -167,7 +173,7 @@ background: 'Dr. Sean M. Kirkpatrick was born in Columbus, Georgia to an Army fa
   Per the AFCEA biography, Kirkpatrick''s wife Amy is a State Department officer and his daughter Maya was in college as of the AFCEA bio (~2019).
 
   '
-top_relevance: 'Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie`]) of OUSD(I&S) ([`/organizations/ousd-is`]) to stand up and lead AARO ([`/organizations/aaro`]) — the successor to the Navy-led UAP Task Force ([`/organizations/uaptf`]) — in early 2022. He was the inaugural Director of AARO from July 20, 2022 through December 1, 2023. He was the witness at the April 19, 2023 Senate Armed Services Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO ([`/events/2023-04-19-sasc-aaro-hearing`]), at which he said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. The hearing record is preserved in his oral testimony transcript ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) and his Statement for the Record submitted before the hearing ([`/documents/written-testimony-kirkpatrick-2023`]). One of his last acts before retiring was to sign AARO''s Historical Record Report Volume 1; AARO publicly released the report March 8, 2024 under his successor Tim Phillips ([`/people/tim-phillips`]). After his retirement Kirkpatrick has been a continuing public voice on UAP across three Scientific American articles, a Peter Bergen ([`/people/peter-bergen`]) podcast appearance, and several jointly written papers with NSSA Moorman Center colleagues and a CSIS commentary.
+top_relevance: 'Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie`]) of OUSD(I&S) ([`/organizations/ousd-is`]) to stand up and lead AARO ([`/organizations/aaro`]) — the successor to the Navy-led UAP Task Force ([`/organizations/uaptf`]) — in early 2022. He was the inaugural Director of AARO from July 20, 2022 through December 1, 2023. He was the witness at the April 19, 2023 Senate Armed Services Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO ([`/events/2023-04-19-sasc-aaro-hearing`]), at which he said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. The hearing record is preserved in his oral testimony transcript ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) and his Statement for the Record submitted before the hearing ([`/documents/written-testimony-kirkpatrick-2023`]). One of his last acts before retiring was to sign AARO''s Historical Record Report Volume 1; AARO publicly released the report March 8, 2024 under his successor Tim Phillips ([`/people/tim-phillips`]). After his retirement Kirkpatrick has been a continuing public voice on UAP across three Scientific American articles, a Peter Bergen ([`/people/peter-bergen`]) podcast appearance, and several jointly written papers with NSSA Moorman Center colleagues and a CSIS commentary. In 2026 he commented publicly on President Trump''s ([`/people/donald-trump`]) order to release UFO files: written answers to Steven Greenstreet ([`/people/steven-greenstreet`]) posted on X February 20, 2026, remarks in a May 3, 2026 Associated Press article, and a May 8, 2026 statement to ABC News on the Pentagon''s release of declassified UFO files.
 
   '
 affiliations:
@@ -550,6 +556,13 @@ relationships:
   source:
     path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
     location: ¶ memorandum + figure caption
+- id: r19
+  added_date: '2026-09-26'
+  person_path: /people/steven-greenstreet
+  relationship: 'Journalist; posed the questions ("SG") Kirkpatrick answered ("KP") in his February 20, 2026 X post on President Trump''s order to release the "alien" files; the post lists his New York Post ([`/organizations/new-york-post`]) reports 2023 - The UFO Lie ([`/documents/nypost-ufo-believing-pentagon-bosses-missed-spy-craft-20230321`]), 2024 - Kirkpatrick and the "UFO Religion" ([`/media/nypost-ufo-religion-influencing-congress-kirkpatrick-2024`]), and 2025 - The Pentagon''s Ghostbusters ([`/media/nypost-pentagons-ghostbusters-2025`])'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ So what does Sean Kirkpatrick think about all this?; closing list of reports'
 timeline:
 - id: t1
   added_date: '2026-04-29'
@@ -1068,19 +1081,59 @@ timeline:
 - id: t63
   added_date: '2026-04-29'
   date: '2025-06-06'
-  event: Wall Street Journal publishes 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Schectman + Viswanatha) drawing on extensive on-record interviews with Kirkpatrick; documents two AARO Vol II findings — Cold War Air Force deception programs around F-117 stealth testing at Area 51, and the 'Yankee Blue' induction hazing ritual
+  event: Wall Street Journal publishes 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Schectman + Viswanatha) drawing on extensive on-record interviews with Kirkpatrick; documents two AARO Vol II findings — Cold War Air Force deception programs around F-117 stealth testing at Area 51 ([`/locations/area-51`]), and the 'Yankee Blue' induction hazing ritual
   category: testimony
   source:
     path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
     location: article body
+- id: t67
+  added_date: '2026-09-26'
+  date: '2026-02-20'
+  event: 'Steven Greenstreet ([`/people/steven-greenstreet`]) posts on X ([`/organizations/x-corp`]) Kirkpatrick''s answers on President Trump''s ([`/people/donald-trump`]) order to release the "alien" files ([`/documents/trump-uap-files-directive-2026-02`]): most files of interest have been released, including the ones he had declassified on Kona Blue ([`/organizations/kona-blue`]), after work with the National Archives ([`/organizations/nara`]) in accordance with Congressional direction ([`/organizations/congress`])'
+  category: testimony
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ So what does Sean Kirkpatrick think about all this?; ¶ KP: Most files of interest'
+- id: t71
+  added_date: '2026-09-26'
+  date: '2026-02-20'
+  event: 'In the same X post, Kirkpatrick says only the truly naïve and rationally challenged would claim the release order is an admission, and calls it a distraction from an impending attack on Iran ([`/locations/iran`]) and a response to Obama''s ([`/people/barack-obama`]) public attention'
+  category: testimony
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ KP: Only the truly naïve and rationally challenged'
 - id: t64
   added_date: '2026-04-29'
   date: '2026-04-09'
-  event: First public reappearance after roughly two years of relative silence — National Capital Area Skeptics (NCAS) Arlington VA event 'AARO; a Duality in Mission Regarding UAPs' hosted by NCAS president Scott Snell. Kirkpatrick restates the no-aliens / no-legacy-program conclusion ('I'll just cut to the chase, there is no alien technology')
+  event: National Capital Area Skeptics (NCAS) Arlington VA event 'AARO; a Duality in Mission Regarding UAPs' hosted by NCAS president Scott Snell. Kirkpatrick restates the no-aliens / no-legacy-program conclusion ('I'll just cut to the chase, there is no alien technology')
   category: testimony
   source:
     path: transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md
     location: '[11:34]'
+- id: t68
+  added_date: '2026-09-26'
+  date: '2026-05-03'
+  event: 'Associated Press ([`/organizations/associated-press`]) article by Collin Binkley ([`/people/collin-binkley`]) on Boston.com ([`/organizations/boston-com`]): Kirkpatrick, a physicist and former career intelligence officer who led the office until 2023, said Trump''s promises were bluster, a "shiny object" to distract Americans from the war with Iran ([`/events/us-iran-war`]), and that he believes there are no bombshell revelations to be found'
+  category: testimony
+  source:
+    path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+    location: '¶ The office’s previous director, however'
+- id: t70
+  added_date: '2026-09-26'
+  date: '2026-05-03'
+  event: 'Same Associated Press ([`/organizations/associated-press`]) article: Kirkpatrick said videos purporting to show alien technology tend to have mundane explanations — modern infrared cameras used by the U.S. military often capture jet engines and other hot objects in a long thermal bloom, which explains viral videos of speedy, pill-shaped objects'
+  category: testimony
+  source:
+    path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+    location: '¶ Videos purporting to show alien technology'
+- id: t69
+  added_date: '2026-09-26'
+  date: '2026-05-08'
+  event: 'Statement to ABC News ([`/organizations/abc-news`]), quoted in an article by Luis Martinez ([`/people/luis-martinez`]) and Steven Beynon ([`/people/steven-beynon`]), on the Pentagon''s release that day of declassified UFO files from various federal agencies ([`/events/2026-05-08-pentagon-uap-files-release`]); Kirkpatrick, the former head of the Pentagon''s All-domain Anomaly Resolution Office, cautioned against jumping to conclusions with the new release'
+  category: testimony
+  source:
+    path: news/abcnews-pentagon-begins-release-ufo-files-kirkpatrick-statement-20260508.html
+    location: '¶ However, Sean Kirkpatrick, the former head of the Pentagon''s All-domain Anomaly Resolution Office'
 quotes:
 - id: q1
   claim_group: "AARO Selection and Appointment"
@@ -1589,7 +1642,7 @@ quotes:
   source:
     path: transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md
     location: '[11:34]'
-  significance: Kirkpatrick's most direct restatement of the no-aliens / no-legacy-program conclusion at his April 9 2026 NCAS reappearance — first public talk after roughly two years of relative silence following his March 2024 op-eds
+  significance: Kirkpatrick's most direct restatement of the no-aliens / no-legacy-program conclusion at the April 9 2026 National Capital Area Skeptics (NCAS) event
   context: National Capital Area Skeptics Arlington VA event 'AARO; a Duality in Mission Regarding UAPs', host NCAS president Scott Snell
 - id: q40
   claim_group: "2018 Skinwalker Ranch Briefing and Pre-AARO Involvement"
@@ -1639,6 +1692,116 @@ quotes:
     location: 'Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023'
   significance: 'Verbatim Kirkpatrick LinkedIn statement (July 28, 2023, in personal capacity) issued two days after David Grusch''s House Oversight testimony. The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
   context: 'Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage'
+- id: q44
+  added_date: '2026-09-26'
+  text: 'Most files of interest have been released including the ones I had declassified on Kona Blue. We worked hard among the National Archives and all of the supporting archives to find and release the documents in accordance with Congressional direction.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ KP: Most files of interest'
+  significance: Kirkpatrick states he personally had the Kona Blue files declassified and that AARO worked with the National Archives to release documents per Congressional direction; asserts most files of interest are already released.
+  context: Written answer ("KP:") to Steven Greenstreet's question ("SG:") on what the public can expect if/when UFO "files" are released following President Trump's announced release order; published in Greenstreet's long-form X post of 20 Feb 2026 (answers given on or before that date).
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q45
+  added_date: '2026-09-26'
+  text: 'The public will likely see just as much new response as when Congress passed further legislation instructing industry to come clean on the alien tech they were supposedly hiding.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ The public will likely see just as much new response'
+  significance: Kirkpatrick analogizes the expected yield of the release order to prior congressional legislation directed at industry, which he frames as having produced nothing.
+  context: Continuation of the same written answer on what the public can expect from a files release.
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q46
+  added_date: '2026-09-26'
+  text: 'The public shouldn’t expect any further revelations as there really aren’t any. Sometimes the truth isn’t what you want to believe.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ The public shouldn’t expect any further revelations'
+  significance: Kirkpatrick's categorical assertion that there are no further revelations to be released — the former AARO director's bottom-line position on the release order.
+  context: Closing paragraph of the first written answer.
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q47
+  added_date: '2026-09-26'
+  text: 'Only the truly naïve and rationally challenged would claim this is an admission. This is both a distraction and a diversion from the fact that we’re about attack Iran and a response to Obama’s public attention on the matter.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ KP: Only the truly naïve and rationally challenged'
+  significance: Kirkpatrick rejects the claim that the release announcement is a government admission of extraterrestrial visitation and characterizes it as a distraction tied to Iran and a response to Obama's remarks.
+  context: Written answer to Greenstreet's question on UFO believers "claiming victory" at Trump's announcement. "we’re about attack Iran" is verbatim as published (apparent dropped word).
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q48
+  added_date: '2026-09-26'
+  text: 'I expected this would eventually happen for a variety of reasons. I think this is a further waste of taxpayer money and valuable time when we have far more existential matters to worry about. When no new revelations occur, there with be an outcry of conspiracy and cover up.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ KP: I expected this would eventually happen'
+  significance: Kirkpatrick calls the release a waste of taxpayer money and predicts conspiracy/cover-up claims when no new revelations occur.
+  context: Written answer to "Any other thoughts on this new development?" "there with be" is verbatim as published (apparent typo).
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q49
+  added_date: '2026-09-26'
+  text: 'When videos are released without analysis or explanation, there will be a flurry of pseudoscience and uneducated speculation to fill the gaps.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ When videos are released without analysis or explanation'
+  significance: Kirkpatrick predicts that unanalyzed video releases will fuel pseudoscientific speculation.
+  context: Continuation of the final written answer.
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q50
+  added_date: '2026-09-26'
+  text: 'We are rapidly slipping back into the dark ages and out of enlightenment, and our leadership is leading the way.'
+  source:
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    location: '¶ We are rapidly slipping back into the dark ages'
+  significance: Kirkpatrick's direct criticism of current national leadership in connection with the UFO-files release.
+  context: Closing paragraph of the final written answer.
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-02-20'
+  observation_type: direct
+- id: q51
+  added_date: '2026-09-26'
+  text: 'Readers should not get their hopes up that there’s going to be some document with photos, interviewing the aliens when they came down'
+  source:
+    path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+    location: '¶ “Readers should not get their hopes up'
+  significance: 'Kirkpatrick, as AARO''s former director, publicly tempers expectations for the Trump administration''s promised UFO-files release, asserting from his own review of government records that no such alien-encounter documentation exists.'
+  context: 'Relayed direct quote in an Associated Press article by Collin Binkley (Boston.com syndication, dated May 3, 2026; statement given on or before that date). The quote is followed by the narrator tag "he said" and a second quoted sentence (emitted separately).'
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-05-03'
+  observation_type: relayed
+- id: q52
+  added_date: '2026-09-26'
+  text: 'Because that just doesn’t exist.'
+  source:
+    path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+    location: '¶ “Readers should not get their hopes up'
+  significance: 'Categorical denial by the former AARO director that documentation of alien contact exists in government records.'
+  context: 'Second sentence of the same relayed quote, after the narrator tag "he said" in the AP article dated May 3, 2026 (statement given on or before that date).'
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-05-03'
+  observation_type: relayed
+- id: q53
+  added_date: '2026-09-26'
+  text: 'There’s nothing unexpected in the release, and without any analysis or context, will only serve to fuel more speculation, conspiracy and arm-chair pseudoscience, particularly from the playhouse politics theater company'
+  source:
+    path: news/abcnews-pentagon-begins-release-ufo-files-kirkpatrick-statement-20260508.html
+    location: '¶ “There’s nothing unexpected in the release'
+  significance: 'Kirkpatrick''s on-record assessment, as former AARO head, of the May 8, 2026 Pentagon UAP-files release: that it contains "nothing unexpected" and, absent analysis or context, will fuel speculation, conspiracy and "arm-chair pseudoscience" — a post-tenure public position on the disclosure effort.'
+  context: 'Statement to ABC News, quoted in the ABC News article "Pentagon releases declassified UFO files from various federal agencies" by Luis Martinez and Steven Beynon (May 8, 2026), reacting to the Pentagon''s May 8, 2026 release of declassified UAP files. The article identifies Kirkpatrick as "the former head of the Pentagon''s All-domain Anomaly Resolution Office".'
+  claim_group: "2026 UFO Files Release Commentary"
+  statement_date: '2026-05-08'
+  observation_type: relayed
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'
@@ -1651,6 +1814,9 @@ credibility_notes: 'This section documents specific patterns in the public recor
 
 
   AARO new-start count. The DoD bio released at AARO establishment (July 20 2022) identifies the USSPACECOM Intelligence Enterprise as the fifth IC new-start organization Kirkpatrick led; the WestExec bio after his retirement identifies AARO as the sixth. The DoD, AFCEA, HandWiki, and Potomac Officers Club bio pages also identify the JICSpOC IC support assignment about 2014 to 2016 as a similar new-start effort, putting three of six explicitly named. The remaining three are not named in any retrieved bio. The count of six comes only from the WestExec bio, a curated source written after his retirement; the DoD bio''s count at the time of writing in mid-2022 is five.
+
+
+  AARO tenure end date. The February 20 2026 X post by Steven Greenstreet ([`/people/steven-greenstreet`]) says Kirkpatrick served as director of AARO "2022 - 2024" and that "He retired in December 2024". These dates are Greenstreet''s own framing; Kirkpatrick''s answers in the post give no dates. Department of Defense spokesperson Sue Gough ([`/people/sue-gough`]) told DefenseScoop that "Friday, Dec. 1, is Dr. Kirkpatrick''s last day in the office", and the May 3 2026 Associated Press article says Kirkpatrick "led the office until 2023".
 
 
   Group A — Affiliations after AARO with unusual documentation patterns. Multiple title forms are used for his ORNL role. Per DOE Office of Hearings and Appeals decision FIA-24-0036, the UT-Battelle FOIA Coordinator memorandum identifies Kirkpatrick by the internal title "Chief Operating Officer for the National Security Sciences Directorate". An archived 2023 capture of his ORNL staff profile used "Chief Technology Officer for Defense and Intelligence Programs". The November 7 2024 NSSA Space Domain Awareness Forum agenda used "Chief Technology Officer, National Security Programs". The October 31 2024 CSIS author bio described him only by his USSPACECOM tenure with no mention of AARO or ORNL, and the WestExec and Elara Nova bio pages do not mention ORNL. The ORNL staff profile page at ornl.gov was live in early November 2023, six days before the Hicks departure announcement of November 8 2023; the page was live again on December 8 2024 but became 404 by December 22 2024 and was still 404 on August 4 2025. Other ORNL staff named Kirkpatrick still have a live profile.

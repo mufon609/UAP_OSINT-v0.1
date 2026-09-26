@@ -474,3 +474,60 @@ to infer on aarch64, or document that the consensus pass runs off-box.
 
 **Blocks:** C9 on the ARM64 box.
 **Blocked by:** none.
+
+### C11 — Define `contracts[].period_start` and migrate every organization row to it
+
+`period_start` on organization-artifact `contracts[]` rows has no defined
+source field, and rows disagree: in `meta/research/sancorp-consulting.yaml`
+most rows carry the USAspending `date_signed`, while others carry
+`period_of_performance.start_date` — and the two can differ by days
+(HQ003424C0046: signed 2024-05-31, performance start 2024-06-10) or by years
+(HQ003424A0023: signed 2024-09-18, performance start 2020-09-18). A reader
+cannot tell which date a row means. Decide which field `period_start` stands
+for (and whether a second field is needed), document it in
+`meta/schema-research-artifact.yaml`, and migrate every organization
+artifact's `contracts[]` rows to the one rule against their archived award
+records. Also decide how a row records an unattested start date:
+`scripts/checks/contracts.py` requires `period_start`, while the renderer's
+`_format_period` already supports an end-only form — so today a contract
+known only by its end date (e.g. a bridge-notice incumbent) cannot be a row
+without inventing a start.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C12 — Make `setup-browser-fetch.sh` survive a broken system Playwright
+
+`scripts/tools/setup-browser-fetch.sh` builds `.venv-browser/` with
+`--system-site-packages`, so pip reports the Debian `python3-playwright`
+package as "already satisfied" and installs nothing into the venv. That
+package's bundled Node driver is broken (`python -m playwright install`
+fails with `MODULE_NOT_FOUND`) and the venv gets no `playwright` CLI, so
+the script's browser-download step fails on both paths. What worked:
+`.venv-browser/bin/pip install --ignore-installed playwright`, then
+`.venv-browser/bin/python -m playwright install chromium`. Make the script
+install Playwright into the venv regardless of the system copy (or build the
+venv isolated, alongside C10), and verify by running an actual fetch rather
+than by import.
+
+**Blocks:** none.
+**Blocked by:** none.
+
+### C13 — Scope the Worker's "institutional source → empty `quotes[]`" line to person targets
+
+`.claude/agents/worker.md` step 1 ends "For an about-the-subject /
+institutional source, `quotes[]` is legitimately empty." The sentence
+follows the person-artifact voice gate but is not scoped to it, and Workers
+dispatched on **organization** targets read it inconsistently: on the same
+kind of source (a SAM.gov notice, a Department of War release, a news article
+about the organization) some emit Key Passages about the organization and
+others return `quotes: []`. The built organization artifacts (e.g.
+`meta/research/sancorp-consulting.yaml`, `arlo-solutions.yaml`) quote
+USAspending records and GAO decisions — institutional sources about the
+subject — so corpus practice is the former. State the voice rule per target
+type in `worker.md` (person: the subject's own voice; organization / other
+types: verbatim passages about the subject, judged for relevance), so the
+outcome no longer depends on which reading a Worker picks.
+
+**Blocks:** none.
+**Blocked by:** none.

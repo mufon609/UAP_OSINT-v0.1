@@ -52,6 +52,15 @@
     archived_date: '2026-04-30'
     path: government/defense-gov-cambone-usdi-bio-200709.html
     note: 'Defense.gov (defenselink.mil) biography of Dr. Stephen A. Cambone, the first Under Secretary of Defense for Intelligence. ''Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003.'' Prior roles: Director, Program Analysis and Evaluation, OSD (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002); Special Assistant to the Secretary and Deputy Secretary of Defense (January 2001 - July 2001); Staff Director for the Commission to Assess United States National Security Space Management and Organization (July 2000 - January 2001); Director of Research at INSS/NDU (August 1998 - July 2000); Staff Director for Rumsfeld Commission on Ballistic Missile Threat (January 1998 - July 1998); CSIS Senior Fellow Political-Military Studies (1993 - 1998). Wayback capture from 2007-09-29 (defenselink.mil bio updated 2006-01-13).'
+- url: https://abcnews.com/Politics/pentagon-begins-release-decades-unresolved-ufo-files/story?id=132780534
+  status: archived
+  artifacts:
+  - format: html
+    path: news/abcnews-pentagon-begins-release-ufo-files-kirkpatrick-statement-20260508.html
+    archived_date: '2026-09-26'
+    note: 'ABC News article by Luis Martinez and Steven Beynon (archived byline: ''Luis Martinez and Steven Beynon''; JSON-LD author list and authorsStr ''Luis Martinez, Steven Beynon''), published 2026-05-08 (publishedDate 2026-05-08T21:15:00Z; modifiedDate 2026-06-24T21:26:17Z), ''Pentagon releases declassified UFO files from various federal agencies'' (served h1; URL slug ''pentagon-begins-release-decades-unresolved-ufo-files''). Carries Sean Kirkpatrick''s statement to ABC News on the release. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.'
+  archive_status: 3
+  wayback_date: '2026-09-09'
 - url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700/
   status: archived
   archive_status: 3
@@ -61,6 +70,22 @@
     archived_date: '2026-05-03'
     path: government/usaspending-arlo-hq003425f0104.json
     note: USAspending API record for Arlo SASP BPA Call Order HQ003425F0104 ($78.5M base-and-all-options ceiling, signed 2025-02-21, parent BPA HQ003425A0004, awarded by WHS, funded by OSD OUSD(I)).
+  - format: txt
+    path: government/usaspending-hq003425f0104-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26. 5 transaction records (0 on 2025-02-21 through P00004 on 2025-08-19, action_type F 'TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL)'); P00003 (2025-07-28) deobligates -6327156.07; page_metadata hasNext false. POST response - not Wayback-capturable.
+- url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003425F0105_9700_HQ003425A0003_9700/
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003425f0105.txt
+    archived_date: '2026-09-26'
+    note: USAspending API award record (GET api/v2/awards/{generated_unique_award_id}; JSON saved as served), fetched 2026-09-26. BPA Call HQ003425F0105, 'PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.', recipient PREMIER ENTERPRISE SOLUTIONS, LLC (UEI SN5KHDCRNDM5), parent BPA HQ003425A0003, signed 2025-02-21, awarding subtier Washington Headquarters Services, funding subtier Immediate Office of the Secretary of Defense; total_obligation 16658158.42; period of performance 2025-02-21 to 2026-12-27 (potential end 2029-12-27).
+  - format: txt
+    path: government/usaspending-hq003425f0105-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003425F0105_9700_HQ003425A0003_9700, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26. 10 transaction records (0 on 2025-02-21 through P00009 on 2026-04-14); P00004 (2025-07-25) description names OUSD(I&S) professional, technical and administrative support to the Executive Directorate; P00006 (2025-12-26) exercises an option; page_metadata hasNext false. POST response - not Wayback-capturable.
+  archive_status: 1
 - url: https://api.usaspending.gov/api/v2/awards/CONT_IDV_HQ003425A0004_9700/
   status: archived
   archive_status: 3
@@ -537,6 +562,24 @@
     archived_date: '2026-04-30'
     path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
     note: 'Brandi Vincent, DefenseScoop, Feb 25, 2026 — AARO publication blackout, Sue Gough caseload statement (>2,000 cases), Hegseth full-compliance quote re: forthcoming Trump UAP-disclosure executive order'
+- url: https://defensescoop.com/2026/09/02/pentagon-seeks-access-to-vast-private-ufo-records-collection/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/defensescoop-aaro-nufohrc-subscription-20260902.html
+    archived_date: '2026-09-26'
+    note: DefenseScoop article by Brandi Vincent, published 2026-09-02, headline 'Pentagon seeks access to vast private UFO records collection.' Reports AARO's plan to buy a commercial data subscription to the National Unidentified Flying Object Historic Records Center's archives (pre-1990 materials). Secondary / lead-only; the primary record is the SAM.gov notice NUFOHRC_20260731. Fetched 2026-09-26 via curl with browser UA.
+  archive_status: 3
+  wayback_date: '2026-09-15'
+- url: https://defensescoop.com/2026/09/14/pentagon-legal-relief-uap-whistleblowers-trump-project/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/defensescoop-pursue-waiver-legal-relief-20260914.html
+    archived_date: '2026-09-26'
+    note: DefenseScoop article by Brandi Vincent, published 2026-09-14, 'Pentagon offers new targeted legal relief for UAP whistleblowers supporting Trump's PURSUE work' (the PURSUE NDA/SAPIA waiver). Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2026-09-23'
 - url: https://dl.astm.org/stps/book/1040/chapter-abstract/147417/Effect-of-Compression-on-Fatigue-Properties-of-a
   status: pending
   archive_status: 0
@@ -2006,6 +2049,14 @@
   - format: html
     archived_date: '2026-04-23'
     path: news/nymag-underwood-2019.html
+- url: https://nypost.com/2026/09/19/us-news/ufo-whistleblowers-want-ok-from-trump-to-reveal-secrets-to-public/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/nypost-grusch-borland-brown-nda-waiver-appeal-20260919.html
+    archived_date: '2026-09-26'
+    note: 'New York Post article by Shane Galvin, published 2026-09-19, ''‘We are not alone:’ Coalition of UFO whistleblowers call on Trump to let them publicly reveal secrets'' (served headline: h1, og:title and JSON-LD headline; the HTML <title> element and URL slug instead read ''UFO whistleblowers want OK from Trump to reveal secrets to public''). Covers the Grusch / Borland / Brown NDA-waiver appeal and quotes the Fox video. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.'
+  archive_status: 1
 - url: https://omva.nd.edu/assets/474472/ipmo_nd_memo_cao_27may2022_cleared_1_.pdf
   status: archived
   archive_status: 3
@@ -2164,6 +2215,15 @@
     archived_date: '2026-04-29'
     path: social/fugal-skinwalker-ranch-senate-briefing-photo-20180419.jpg
     note: Photo attached to Brandon Fugal's May 9 2024 X post (status/1788708348340187605) showing the April 19 2018 SSCI/SASC Skinwalker Ranch briefing room, with Sean Kirkpatrick visible at the head of the table while Fugal's team presented. 2048x1806 JPEG. Per Fugal's subsequent post, EXIF metadata anchors the capture to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Twitter's pbs.twimg.com media CDN serves the original via ?name=orig. wayback_skip:true — Twitter media CDN URLs are not Wayback-friendly.
+- url: https://pbs.twimg.com/media/HBozgsbbgAEt3Qa.jpg?name=orig
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: image
+    path: social/x-middleofmayhem-status-2024987837503021203-photo.jpg
+    archived_date: '2026-09-26'
+    note: Photo attached to X post https://x.com/MiddleOfMayhem/status/2024987837503021203 (media id 2024987619231498241, 4096x2477 JPEG, full resolution via ?name=orig). Fetched 2026-09-26.
+  archive_status: 1
 - url: https://pjmedia.com/rick-moran/2025/06/07/the-disinformation-campaign-to-hide-secret-technology-led-to-the-creation-of-myths-about-ufos-n4940545
   status: archived
   archive_status: 3
@@ -2317,6 +2377,24 @@
     archived_date: '2026-05-07'
     path: news/safireproject-phase-two-snapshot.html
     note: SAFIRE Project Phase Two corporate self-attestation. Names Montgomery Childs and Jason Lickver. References Autodesk design software, OIPTS (Open Issues and Project Tracking System), and 500°C gas temperature in the apparatus. Phase Two start/end dates not given on the page; per the Aureon Energy history page, SAFIRE II was in lab in 2019. Phase Two corresponds to the full-scale plasma reactor buildout described elsewhere on the SAFIRE Project site.
+- url: https://sam.gov/api/prod/opps/v2/opportunities/351736e27bfe4ab597191c3761e77c31
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/samgov-tr011720251116-notice.json
+    archived_date: '2026-09-26'
+    note: SAM.gov opportunities API record (GET api/prod/opps/v2/opportunities/{id}, unauthenticated, browser UA; JSON saved as served), fetched 2026-09-26. The public view page https://sam.gov/opp/351736e27bfe4ab597191c3761e77c31/view is a JS shell; this API JSON is the readable body. Solicitation number TR011720251116, title 'Support Services for the Office of the Under Secretary of Defense for Intelligence & Security'; special notice posted 2025-03-11 by WHS Acquisition Directorate on behalf of OUSD(I&S) announcing intent to award short-term sole-source bridge extensions (March 28 to July 27, 2025) to incumbents incl. Booz Allen Hamilton, Digital Forensics Services, and Sancorp Consulting, LLC (contract HQ003424C0046). description[0].body is HTML-in-JSON with raw entities (&amp;, &nbsp;) and <p> tags.
+  archive_status: 3
+  wayback_date: '2026-09-26'
+- url: https://sam.gov/api/prod/opps/v2/opportunities/a1b98934796e4bb3bb7215780ce82131
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/samgov-nufohrc-20260731-notice.json
+    archived_date: '2026-09-26'
+    note: 'SAM.gov opportunities API record (GET api/prod/opps/v2/opportunities/{id}, unauthenticated, browser UA; JSON saved as served), fetched 2026-09-26. Public view page https://sam.gov/opp/a1b98934796e4bb3bb7215780ce82131/view is a JS shell. Solicitation number NUFOHRC_20260731, title ''Notice of Intent to Sole Source: Historical UAP Data and Analysis Subscription''; posted 2026-07-31, response deadline 2026-08-17. WHS on behalf of AARO intends a sole-source firm-fixed-price multi-year subscription (one-year base + four one-year options) to data from the National Unidentified Flying Object Historic Records Center (NUFOHRC), Rio Rancho, NM; authority 10 U.S.C. 3204(a)(1) / FAR 6.302-1. description[0].body is HTML-in-JSON with raw entities (&nbsp;, &quot;, &rsquo;, &#39;) and <p>/<strong> tags.'
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://spacenews.com/the-jicspoc-is-dead-long-live-the-national-space-defense-center/
   status: archived
   archive_status: 1
@@ -2445,6 +2523,14 @@
   - format: pdf
     archived_date: '2026-04-22'
     path: government/solfoundation-ufo-enigma-nell-2025.pdf
+- url: https://time.com/article/2026/08/06/america-taking-extraterrestrials-seriously/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/time-america-taking-extraterrestrials-seriously-20260806.html
+    archived_date: '2026-09-26'
+    note: TIME article by Jeffrey Kluger, published 2026-08-06, 'America Is Finally Taking Extraterrestrials Seriously'; quotes AARO director Jon Kosloski. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 1
 - url: https://trumpstruth.org/statuses/36826
   status: archived
   archive_status: 3
@@ -2786,6 +2872,14 @@
     archived_date: '2026-05-01'
     path: government/aaro-kosloski-sfr-sasc-20241119.pdf
     note: AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024 — companion to the SASC stenographic transcript already archived. Hosted on aaro.mil/Portals/136. Documents AARO's >1,600 cumulative UAP holdings, framework for rigorous analysis, three flagship case resolutions (Puerto Rico, GOFAST, Mt. Etna) presented in conjunction with slide-deck visuals. Wayback capture from 2024-11-20 (one day after the hearing).
+- url: https://www.aaro.mil/Portals/136/PDFs/FY25%20UAP%20Annual%20Report/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/aaro-fy25-consolidated-annual-report-uap.pdf
+    archived_date: '2026-09-26'
+    note: AARO FY2025 Consolidated Annual Report on Unidentified Anomalous Phenomena, published on aaro.mil. Fetched 2026-09-26 via headed Chromium (Xvfb) past the Akamai wall with scripts/tools/browser-fetch.py.
+  archive_status: 1
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   status: archived
   archive_status: 3
@@ -2992,6 +3086,15 @@
     archived_date: '2026-04-29'
     path: government/battelle-990-fy2021.pdf
     note: Battelle Memorial Institute IRS Form 990 + 990-T for FY ending September 30, 2021. Public corporate-disclosure financial filing. Used per the April 2026 architecture investigation to rule out Moultrie's presence on Battelle Board of Directors during this fiscal year. URL contains triple hyphen (literal '---'), not em-dash.
+- url: https://www.boston.com/news/national-news/2026/05/03/trump-hints-at-whats-coming-in-a-new-batch-of-ufo-files/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/boston-com-ap-trump-hints-new-batch-ufo-files-kirkpatrick-20260503.html
+    archived_date: '2026-09-26'
+    note: Associated Press article syndicated on Boston.com, published 2026-05-03, 'Trump hints at what's coming in a new batch of UFO files'. Reports the office's previous director (Kirkpatrick) calling Trump's promises bluster / a 'shiny object'. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2026-05-14'
 - url: https://www.businesswire.com/news/home/20171212005613/en/
   status: archived
   archive_status: 3
@@ -3037,6 +3140,15 @@
     archived_date: '2026-04-21'
     path: news/cbsnews-ufo-sighting-60min-2021-08-29.html
     note: CBS News follow-up article to the May 16, 2021 60 Minutes Dietrich/Fravor broadcast, republished on the August 29, 2021 60 Minutes rebroadcast. Same Dietrich/Fravor source material in past tense ('had never before spoken publicly').
+- url: https://www.cbsnews.com/news/ufo-files-uap-pentagon-6th-release/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/cbs-pursue-sixth-release-aawsap-20260918.html
+    archived_date: '2026-09-26'
+    note: CBS News article by Stefan Becket, published 2026-09-18, 'Pentagon releases more UFO files, including documents on secretive military program' (PURSUE sixth release; 37 AAWSAP DIRDs). Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2026-09-22'
 - url: https://www.cbsnews.com/news/ufo-hearing-congress-uap-takeaways-whistleblower-conference-david-grusch-2023/
   status: archived
   archive_status: 3
@@ -3648,6 +3760,32 @@
     extraction_type: text-native
   archive_status: 3
   wayback_date: '2026-06-06'
+- url: https://www.govinfo.gov/content/pkg/CREC-2026-07-22/html/CREC-2026-07-22-pt1-PgH5029-6.htm
+  status: archived
+  artifacts:
+  - format: html
+    path: government/crec-20260722-house-hr8800-ndaa-fy2027.htm
+    archived_date: '2026-09-26'
+    note: 'Congressional Record, House, 2026-07-22, Vol. 172 No. 120, pages H5029-H5127, govinfo CREC granule HTML rendition (single <pre> text block): consideration of H.R. 8800 (FY2027 NDAA) amendments, incl. Amendment No. 315 offered by Mr. Burlison of Missouri (UAP Records Collection at NARA; Review Board briefing of the All-domain Anomaly Resolution Office). Same granule and text as government/crec-20260722-house-hr8800-ndaa-fy2027.pdf, but in single-column reading order, so it avoids the PDF''s three-column interleave. Casing differs from the PDF: GPO HTML sets the small-caps headings in lowercase (''amendment no. 315 offered by mr. burlison of missouri''; ''(6) Briefing the all-domain anomaly resolution office.--''), where the PDF shows them in uppercase. Quotes drawn from this rendition must use the HTML casing. Line-wrapped at about 70 columns; section breaks use ''--'' where the PDF has an em dash. Fetched 2026-09-26 via curl (HTTP 200, 1056828 bytes).'
+  archive_status: 1
+- url: https://www.govinfo.gov/content/pkg/CREC-2026-07-22/pdf/CREC-2026-07-22-dailydigest.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/crec-20260722-daily-digest.pdf
+    archived_date: '2026-09-26'
+    note: 'Congressional Record Daily Digest, 2026-07-22, govinfo PDF (18 pages); summarizes House action on H.R. 8800 amendments incl. Burlison (No. 315) strengthening the UAP Records Collection at NARA. govinfo native text layer (iText, GPO), NOT OCR. Flagged extraction-lossy: multi-column page layout - pdftotext -layout interleaves the columns line by line, so passages wrapping within a column are non-contiguous in the extract (the investigator''s span ''Burlison (No. 315) that strengthens the Unidentified Anomalous Phenomena Records Collection at the National Archives and Records Administration'' wraps as ''Phe-/nomena'' and fails the verbatim matcher against the default extract). Plain pdftotext (reading order, no -layout) matches it. Verified .txt sibling required (/build step 4b). Fetched 2026-09-26 via curl.'
+    extraction_type: extraction-lossy
+  archive_status: 1
+- url: https://www.govinfo.gov/content/pkg/CREC-2026-07-22/pdf/CREC-2026-07-22-pt1-PgH5029-6.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/crec-20260722-house-hr8800-ndaa-fy2027.pdf
+    archived_date: '2026-09-26'
+    note: 'Congressional Record, House, 2026-07-22 (pages from H5029), govinfo CREC granule PDF: consideration of H.R. 8800 (FY2027 NDAA) amendments, incl. Amendment No. 315 offered by Mr. Burlison of Missouri (UAP Records Collection). 99 pages; govinfo native text layer (iText, GPO), NOT OCR. Flagged extraction-lossy: three-column page layout - pdftotext -layout interleaves the columns line by line, so any passage wrapping within a column is non-contiguous in the extract and the line-wrap hyphen merge joins right-column hyphen halves to the next line''s left column (e.g. p.1 ''leg-the world''); the investigator''s span ''AMENDMENT NO. 315 OFFERED BY MR. BURLISON OF MISSOURI'' fails the verbatim matcher against the default extract. Plain pdftotext (reading order, no -layout) matches it; govinfo also serves an HTML rendition at /content/pkg/CREC-2026-07-22/html/CREC-2026-07-22-pt1-PgH5029-6.htm (HTTP 200 on 2026-09-26). Verified .txt sibling required (/build step 4b). Fetched 2026-09-26 via curl.'
+    extraction_type: extraction-lossy
+  archive_status: 1
 - url: https://www.govinfo.gov/content/pkg/CRPT-116srpt233/pdf/CRPT-116srpt233.pdf
   status: archived
   archive_status: 3
@@ -4049,6 +4187,24 @@
     archived_date: '2026-05-16'
     path: news/pbs-umbrella-assassin-green-interview-20260517.html
     note: PBS 'Secrets of the Dead' interview with Dr. Christopher C. Green, episode 'Umbrella Assassin' (Season 5 Ep 5, 2006). Green discusses the 1978 forensic investigation of the Georgi Markov assassination (ricin pellet from umbrella). First documented public attestation of Green's CIA identity (his identity as a CIA officer was reportedly secret until 2007 per third-party sources). Substantive first-person Green statements on his CIA career, forensic medicine specialty, and current academic work in brain imaging/decision-making. Identifies him as 'investigative officer with the Central Intelligence Agency' for a twenty-year career; current Wayne State professor; M.D., Ph.D.; Fellow in Clinical Imaging; Fellow in American Academy of Forensic Sciences; continues as CIA consultant.
+- url: https://www.pesolutions-it.com/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/premier-home-20260926.html
+    archived_date: '2026-09-26'
+    note: Premier Enterprise Solutions corporate home page (self-attestation; SBA 8(a) certified contractor, Defense and Civilian agencies). Page metadata datePublished 2022-06-14. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2025-07-26'
+- url: https://www.pesolutions-it.com/about/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/premier-about-20260926.html
+    archived_date: '2026-09-26'
+    note: Premier Enterprise Solutions corporate 'Who We Are' page (self-attestation; contract-vehicle holdings incl. OASIS+, SeaPort NxG, GSA 8(a) STARS III, GSA MAS, eFAST). Page metadata datePublished 2022-02-09. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2025-07-25'
 - url: https://www.physast.uga.edu/academic_programs/grad/graduate-awards
   status: archived
   archive_status: 3
@@ -4749,6 +4905,24 @@
     archived_date: '2026-04-30'
     path: government/wargov-clapper-sworn-in-photo-20070413.html
     note: 'war.gov photo gallery page for Clapper swearing-in. Caption: ''SWORN IN — Retired U.S. Air Force Lt. Gen. James R. Clapper (left) is sworn-in as under secretary of defense for intelligence by Secretary of Defense Robert M. Gates (right) during a private ceremony in the Pentagon on April 13, 2007. Clapper''s wife holds the Bible as the oath of office is administered.'' VIRIN 193973-E-CAZ91-588.jpg. Wayback capture 2026-01-28. Establishes Clapper''s USD(I) sworn-in date as April 13, 2007 (Senate confirmation was April 11, 2007).'
+- url: https://www.war.gov/News/Releases/Release/Article/4600020/department-of-war-issues-legal-waiver-to-authorize-unidentified-anomalous-pheno/
+  status: archived
+  artifacts:
+  - format: html
+    path: government/war-gov-pursue-uap-disclosure-waiver-20260914.html
+    archived_date: '2026-09-26'
+    note: Department of War press release, 2026-09-14, 'Department of War Issues Legal Waiver to Authorize Unidentified Anomalous Phenomena ...' (PURSUE UAP-disclosure NDA/SAPIA waiver). Fetched 2026-09-26 via headed Chromium (Xvfb) past the Akamai wall with scripts/tools/browser-fetch.py; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2026-09-17'
+- url: https://www.war.gov/News/Releases/Release/Article/4604795/department-of-war-publishes-sixth-release-of-unidentified-anomalous-phenomena-f/
+  status: archived
+  artifacts:
+  - format: html
+    path: government/war-gov-pursue-sixth-release-20260918.html
+    archived_date: '2026-09-26'
+    note: Department of War press release, 2026-09-18, 'Department of War Publishes Sixth Release of Unidentified Anomalous Phenomena Files' (PURSUE). Fetched 2026-09-26 via headed Chromium (Xvfb) past the Akamai wall with scripts/tools/browser-fetch.py; HTML saved as served.
+  archive_status: 3
+  wayback_date: '2026-09-20'
 - url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
   status: archived
   archive_status: 3
@@ -5196,6 +5370,15 @@
     archived_date: '2026-04-29'
     path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
     note: 'Christopher Sharp (@ChrisUKSharp) X post photo: 4K-resolution screenshot of Ronald Moultrie''s LinkedIn profile printout dated 6/27/2018 (URL https://www.linkedin.com/in/ronald-ron-moultrie-849b76112/), pages 1-2 of 5 visible. Page 2 attests Battelle — Advisory Board Member — Jul 2016 to Apr 2018 (1 yr 10 mos). Tweet ID 1965182535358456276.'
+- url: https://x.com/MiddleOfMayhem/status/2024987837503021203
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: social/x-middleofmayhem-status-2024987837503021203-kirkpatrick-qa-20260220.json
+    archived_date: '2026-09-26'
+    note: X post by @MiddleOfMayhem, created 2026-02-20T23:21:37Z, long-form note_tweet (is_note_tweet true) carrying a Kirkpatrick ('KP') Q&A. Full text retrieved from https://api.fxtwitter.com/MiddleOfMayhem/status/2024987837503021203 (HTTP 200, full tweet.text); cdn.syndication.twimg.com returns only the truncated 280-char text for note tweets. JSON saved as served, fetched 2026-09-26. x.com is not Wayback-capturable (SPN 523; React-shell only) per meta/sources-access.md X section. One attached photo archived separately (pbs.twimg.com/media/HBozgsbbgAEt3Qa.jpg).
+  archive_status: 1
 - url: https://x.com/RepEricBurlison/status/1905254661847687610
   status: archived
   archive_status: 3
@@ -5205,6 +5388,15 @@
     archived_date: '2026-04-22'
     path: social/burlison-x-grusch-advisor-20250327.html
     note: Rep. Eric Burlison X/Twitter post announcing Grusch hire as UAP Caucus advisor (2025-03-27); fetched via Wayback Machine (20260102 snapshot); x.com blocks direct automated retrieval.
+- url: https://x.com/jamescfox/status/2101321904627851749
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: social/x-jamescfox-2101321904627851749-20260919.json
+    archived_date: '2026-09-26'
+    note: X post by @jamescfox, created 2026-09-19T14:45:57Z, urging @POTUS to waive the whistleblowers' NDAs. Retrieved via https://api.fxtwitter.com/jamescfox/status/2101321904627851749 (HTTP 200); JSON saved as served, fetched 2026-09-26. No attached media. x.com is not Wayback-capturable per meta/sources-access.md X section.
+  archive_status: 1
 - url: https://youtu.be/54TA6fyC5Pw
   status: archived
   archive_status: 1

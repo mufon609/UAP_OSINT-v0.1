@@ -35,6 +35,8 @@ On April 19, 2023, AARO ([`/organizations/aaro`]) director Dr. Sean Kirkpatrick 
 
 On February 14, 2025 Washington Headquarters Services ([`/organizations/whs`]) signed three BPAs numbered HQ003425A0001, HQ003425A0002, and HQ003425A0003, each recorded as a MULTIPLE AWARD vehicle: HQ003425A0001 to Sancorp, HQ003425A0002 to COMPREHENSIVE APPROACH LLC ([`/organizations/comprehensive-approach-solutions`]) of Fairfax, Virginia ([`/locations/fairfax-virginia`]), and HQ003425A0003 to PREMIER ENTERPRISE SOLUTIONS, LLC ([`/organizations/premier-enterprise-solutions`]) of Upper Marlboro, Maryland ([`/locations/upper-marlboro-maryland`]). The HQ003425A0002 and HQ003425A0003 records describe technical, administrative and professional support services to the Under Secretary of Defense for Intelligence & Security enterprise, and all three records list the funding office as "OSD OUSD(I)". Sancorp's AARO Support Services contract HQ003422C0094 lists the same "OSD OUSD(I)" funding office as the Counterintelligence, Law Enforcement and Security call order HQ003425FE388. Congress ([`/organizations/congress`]) redesignated the position of Under Secretary of Defense for Intelligence (USD(I)) as the Under Secretary of Defense for Intelligence and Security in the National Defense Authorization Act (NDAA) for Fiscal Year 2020 (Section 1621 of P.L. 116-92), per the Congressional Research Service; the award records do not expand the abbreviation. In GAO decision B-422985.4, B-422985.5, the contracting officer, as source selection authority, determined that WHS would establish BPAs with four vendors, including Sancorp, Premier, and Arlo; the decision gives no BPA numbers; Sancorp does not challenge the establishment of the BPAs. Three BPA CALL orders under Sancorp's HQ003425A0001 are in the retrieved USAspending records: HQ003425FE174, HQ003425FE388 (Counterintelligence, Law Enforcement and Security), and HQ003426FE050. HQ003425FE174, signed June 20, 2025 with place of performance Alexandria, Virginia ([`/locations/alexandria-virginia`]), lists the funding office as "OUSD(AT & L)" ([`/organizations/ousd-atl`]); its P00001 modification of July 24, 2025 states "THE OASD(ST) REQUIRES ANALYTICAL, TECHNICAL, ADMINISTRATIVE, AND PROGRAMMATIC SUPPORT", naming the Office of the Assistant Secretary of Defense for Science and Technology ([`/organizations/oasd-st`]) as the requiring office.
 
+SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]), "Support Services for the Office of the Under Secretary of Defense for Intelligence & Security", is a notice of intent by Washington Headquarters Services, Acquisition Directorate, on behalf of the Office of the Under Secretary of Defense for Intelligence and Security, pursuant to FAR 5.203(a) ([`/documents/federal-acquisition-regulations`]), to award short-term, sole source extension contracts to the incumbent contractors. Item 4) names Sancorp Consulting, LLC, performing services under contract HQ003424C0046 concluding on March 27, 2025, with an anticipated period of performance for the bridge contracts of four months, from March 28, 2025, to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A), Only One Responsible Source. The notice's March 27, 2025 conclusion date differs from the period of performance end in the HQ003424C0046 USAspending award record (Primary Contracts). The other incumbent contractors are Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) (WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, and HQ003424C0050), Digital Forensics Services ([`/organizations/digital-forensics-services`]) of Greenbelt Maryland ([`/locations/greenbelt-maryland`]) (HQ003421C0050), and Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) of Upper Marlboro, MD ([`/locations/upper-marlboro-maryland`]) (HQ003422C0127). The notice states that the Government has established an Enterprise Blanket Purchase Agreement for OUSD(I&S) and that the requirements are going through the procurement process for award; it gives no BPA number. Its place of performance is Washington, District of Columbia ([`/locations/washington-dc`]); the primary contact is Lawan Ferguson ([`/people/lawan-ferguson`]) and the secondary contact is Syreeta A. Donald ([`/people/syreeta-a-donald`]).
+
 HQ003426FE050, signed January 28, 2026, is a BPA CALL under HQ003425A0001 for "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES". Its period of performance is 2026-01-28 to 2027-07-31, with a potential end date of 2030-07-31; the record reports a total obligation of $5317041.31 and base and all options of $20115030.67, with 4 offers received and extent competed "COMPETED UNDER SAP". The awarding agency is Washington Headquarters Services; the funding agency is the Immediate Office of the Secretary of Defense ([`/organizations/osd`]), funding office "OSD OUSD(I)" ([`/organizations/ousd-is`]); the place of performance is Washington, DC ([`/locations/washington-dc`]). The HQ003426FE050 award record does not name AARO ([`/organizations/aaro`]). Any link between HQ003426FE050 and AARO is not confirmed, and Relationships lists it separately from the confirmed entries.
 
 Sancorp's own job requisition 1258 for a Staff Officer III, posted August 10, 2026, uses the same services phrase: Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) All-Domain Anomaly Resolution Office (AARO). Its requisition location is Arlington, VA ([`/locations/arlington-virginia`]) and its work location is the National Capital Region ([`/locations/national-capital-region`]). Requisition 1260 (Budget Analyst III, posted August 14, 2026) and requisition 1206 (Field Operations & Sensor Support SME IV/ Action Officer, posted September 4, 2026) use the same phrase but name OUSW(I&S) only, not AARO; requisition 1206 also calls for experience across the Intelligence Community ([`/organizations/intelligence-community`]) and with the National Defense Strategy ([`/documents/national-defense-strategy`]). None of the three job posting records names a contract number. The phrase in requisition 1258 is the only basis in these sources for any link between HQ003426FE050 and AARO, and the evidence limits it: the same "OSD OUSD(I)" funding office also appears on HQ003425FE388 (Counterintelligence, Law Enforcement and Security), HQ003424C0096, and HQ003422C0094; all five HQ003426FE050 transaction records (the base award through modification P00004, June 4, 2026) carry the same description and none names AARO; and two of the three job posting records that use the phrase do not name AARO. Each of the three describes Sancorp as "an SDVOSB and SBA 8(a) company", SBA being the Small Business Administration ([`/organizations/sba`]).
@@ -762,6 +764,42 @@ _No personnel attested in primary sources to date._
 | Attributed to | Span is inside "funding_agency" (id 1215), not "awarding_agency" — the awarding block (id 1231) names subtier "Washington Headquarters Services" (WHS, 97F5) and office "WASHINGTON HEADQUARTERS SERVICES", so this span is unique in the record. 2025-02-14 |
 | Source | [archived source](../sources/government/usaspending-hq003425a0001.txt) |
 | Location | "funding_agency" object — subtier_agency / office_agency_name, CONT_IDV_HQ003425A0001_9700 |
+
+---
+
+### Framing paragraph of SAM.gov notice TR011720251116: Washington Headquarters Services, Acquisition Directorate issues the notice of intent under FAR 5.203(a) on behalf of OUSD(I&S) I&S Enterprise — the requiring activity for the Sancorp extension in item 4.
+
+> This is not a request for quote/proposal. Pursuant to FAR 5.203(a), Washington Headquarters Services, Acquisition Directorate, on behalf of the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&amp;S)) I&amp;S Enterprise, intends to do the following:
+
+| Field | Value |
+|---|---|
+| Attributed to | SAM.gov opportunity notice TR011720251116, postedDate 2025-03-11; five numbered sole-source bridge extensions follow this paragraph. |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | "description[0].body" field, ¶ This is not a request for quote/proposal. Pursuant to FAR 5.203(a) |
+
+---
+
+### Names Sancorp Consulting, LLC (CAGE 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740) as an incumbent OUSD(I&S) support contractor under contract HQ003424C0046 (services concluding March 27, 2025) and announces an intended four-month sole-source bridge extension, March 28 to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A).
+
+> 4) Award a short-term, sole source extension to the incumbent contractor, Sancorp Consulting, LLC [CAGE Code: 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740]. The Contractor is currently performing services under contract HQ003424C0046, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025. The anticipated award will be made under the authority of Federal Acquisition Regulation (FAR) 6.302-1(a)(2)(iii)(A), Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements.
+
+| Field | Value |
+|---|---|
+| Attributed to | Item 4 of five sole-source bridge extensions in the notice; items 1-2 are Booz Allen Hamilton, item 3 Digital Forensics Services, item 5 Premier Enterprise Solutions. 2025-03-11 |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | "description[0].body" field, ¶ 4) Award a short-term, sole source extension to the incumbent contractor, Sancorp Consulting |
+
+---
+
+### States the service scope of the five incumbents including Sancorp (technical, administrative and professional support services to OUSD(I&S) Enterprise requirements) and that an OUSD(I&S) Enterprise Blanket Purchase Agreement had been established with requirements then in procurement for award — the stated reason for the short-term bridges.
+
+> These Contractors are required to provide technical, administrative and professional support services to the OUSD(I&amp;S) Enterprise requirements. Currently, the Government has established an Enterprise Blanket Purchase Agreement for OUSD (I&amp;S), and the requirements are going through the procurement process for award.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-11 |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | "description[0].body" field, ¶ These Contractors are required to provide technical, administrative and professional support services |
 
 ---
 
@@ -2029,6 +2067,7 @@ _No personnel attested in primary sources to date._
 | 2025-02-14 | BPA HQ003425A0002 signed with Comprehensive Approach LLC ([`/organizations/comprehensive-approach-solutions`]) — MULTIPLE AWARD; support services to the Under Secretary of Defense for Intelligence & Security enterprise; funding office "OSD OUSD(I)". Same signing date as Sancorp's HQ003425A0001. | contract | government/usaspending-hq003425a0002.txt |  |
 | 2025-02-14 | BPA HQ003425A0003 signed with Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) — MULTIPLE AWARD; support services to the OUSD(I&S) enterprise; funding office "OSD OUSD(I)". Same signing date as Sancorp's HQ003425A0001. | contract | government/usaspending-hq003425a0003.txt |  |
 | 2025-02-14 | X's last official day at Sancorp, per X's resignation letter ("my last official day will be 14 February 2025"); GAO: X "subsequently left Sancorp’s employ later that month" (q158). The protester asserts that X had "left Sancorp amicably" (q157). | personnel | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-03-11 | SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) for OUSD(I&S) ([`/organizations/ousd-is`]): intent to award Sancorp a short-term, sole source extension of HQ003424C0046 (services concluding March 27, 2025), March 28 to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A) ([`/documents/federal-acquisition-regulations`]) (q160, q161, q162). | contract | government/samgov-tr011720251116-notice.json |  |
 | 2025-06-11 | GAO B-422985.4, B-422985.5 on Sancorp's protest under RFQ No. HQ003424R0178 ([`/documents/rfq-hq003424r0178`]): "The protest is denied." Call Order 1 (EXDIR, Premier Enterprise Solutions) challenges denied; SASP call order (Call Order 2, Arlo Solutions) challenges dismissed — Sancorp's quotation was rendered unacceptable because Sancorp knew key person "X" was unavailable and failed to advise the agency (q154–q159). | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-11 | Counsel for the protester (Sancorp) in GAO B-422985.4, B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]) (q153). | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-20 | HQ003425FE174 awarded — BPA CALL under HQ003425A0001; Technical, Analytical, Administrative, and Professional Program Support Services; funding office "OUSD(AT & L)" ([`/organizations/ousd-atl`]); 3 offers, COMPETED UNDER SAP; $866,143.48 obligated. | contract | government/usaspending-hq003425fe174.txt |  |
@@ -2072,6 +2111,10 @@ _No personnel attested in primary sources to date._
 | [`/organizations/comprehensive-approach-solutions`] | other | government/usaspending-hq003425a0002.txt |
 | [`/organizations/ousd-atl`] | funder | government/usaspending-hq003425fe174.txt |
 | [`/organizations/fox-rothschild`] | other | government/gao-b-422985-wayback-20250708.html |
+| [`/organizations/whs-acquisition-directorate`] | contracting-agency | government/samgov-tr011720251116-notice.json |
+| [`/organizations/booz-allen-hamilton`] | other | government/samgov-tr011720251116-notice.json |
+| [`/organizations/digital-forensics-services`] | other | government/samgov-tr011720251116-notice.json |
+| [`/organizations/premier-enterprise-solutions`] | other | government/samgov-tr011720251116-notice.json |
 
 ### Flagged
 
@@ -2104,6 +2147,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | OUSW(I&S) | OUSD(I&S) | news/sancorp-adp-req1258-staff-officer-iii-20260925.json |
 | DoW | DoD | news/sancorp-adp-req1206-field-ops-sensor-sme-iv-20260925.json |
 | USD(I) | USD(I&S) | government/crs-if10523-defense-primer-usdis.html |
+| OUSD (I&S) | OUSD(I&S) | government/samgov-tr011720251116-notice.json |
 
 ---
 
@@ -2126,14 +2170,17 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/people/james-holly`]
 - [`/people/jane-jung-hyoun-han`]
 - [`/people/keeley-a-mccarty`]
+- [`/people/lawan-ferguson`]
 - [`/people/rainie-wells`]
 - [`/people/robert-skvarla`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/syreeta-a-donald`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
 - [`/organizations/arlo-solutions`]
+- [`/organizations/booz-allen-hamilton`]
 - [`/organizations/cdao`]
 - [`/organizations/comprehensive-approach-solutions`]
 - [`/organizations/congress`]
@@ -2141,6 +2188,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/department-of-justice`]
 - [`/organizations/department-of-the-army`]
 - [`/organizations/department-of-the-navy`]
+- [`/organizations/digital-forensics-services`]
 - [`/organizations/dod`]
 - [`/organizations/fox-rothschild`]
 - [`/organizations/gao`]
@@ -2168,11 +2216,13 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 
 - [`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]
 - [`/documents/eo-14347-restoring-department-of-war`]
+- [`/documents/federal-acquisition-regulations`]
 - [`/documents/foia-23-f-0906-sancorp-ipmo-pws`]
 - [`/documents/insa-naming-convention-2022`]
 - [`/documents/ipmo-notre-dame-memo-2022`]
 - [`/documents/national-defense-strategy`]
 - [`/documents/rfq-hq003424r0178`]
+- [`/documents/samgov-tr011720251116-notice`]
 
 ### Locations
 
@@ -2180,6 +2230,8 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/locations/arlington-virginia`]
 - [`/locations/fairfax-virginia`]
 - [`/locations/falls-church-virginia`]
+- [`/locations/greenbelt-maryland`]
+- [`/locations/mclean-virginia`]
 - [`/locations/national-capital-region`]
 - [`/locations/upper-marlboro-maryland`]
 - [`/locations/washington-dc`]
