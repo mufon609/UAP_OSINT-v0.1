@@ -3440,6 +3440,56 @@
     archived_date: '2026-04-30'
     path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
     note: 'DoD Directive 5143.01 — ''Under Secretary of Defense for Intelligence and Security (USD(I&S))'', original publication October 24, 2014, incorporating Change 2 April 6, 2020. The directive is the office''s organizational charter: enumerates USD(I&S) authority, direction, and control over the Defense Intelligence Agency, National Geospatial-Intelligence Agency, National Security Agency/Central Security Service, National Reconnaissance Office, and Defense Counterintelligence and Security Agency. Issued under SecDef authority per 10 U.S.C. §§ 113, 137. USD(I&S) serves as Principal Staff Assistant for Defense Intelligence, Counterintelligence, Security, sensitive activities, and dual-hatted Director of Defense Intelligence to ODNI. Wayback capture from 2026-01-17; esd.whs.mil direct returns 403 (Akamai-blocked per sources-access.md).'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_A23-DD_254_v2.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0906-sancorp-ipmo-dd254.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: FOIA 23-F-0906 release — DD Form 254 (contract security classification specification, v2) for the IPMO support requirement (A23); Reading Room file name 23-F-0906_A23-DD_254_v2.pdf, posted to the WHS FOIA Reading Room (Reading Room/Contracts/) alongside the already-archived 23-F-0906_Performance_Work_Statement.pdf (government/foia-23-f-0906-sancorp-ipmo-pws.pdf). esd.whs.mil returns 403 (Akamai) to automated clients; bytes retrieved from Wayback id_ capture 20260201224348 (SHA-1 matches the CDX digest; the 20241010 capture is truncated and was not used). SHA-256 df6f39b02ff4f26ec8c6f557f3ea329e8a5571ddc698d69c57e4f77e88bc4a68. 11 pages. pdfinfo Creator 'OmniPage CSDK 20' / Producer 'AINSLIB.OCR' (OCR-reconstructed text layer) -> flagged ocr-scan; the pdftotext extract is not worker-ready — a verified same-stem .txt sibling is required before quotes are drawn (/build step 4b / /prepare-ocr-sibling). No sibling produced in this archive run.
+  archive_status: 3
+  wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_A23_Final_RFQ.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0906-sancorp-ipmo-final-rfq.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: FOIA 23-F-0906 release — final request for quotation (RFQ) for IPMO support services (A23); Reading Room file name 23-F-0906_A23_Final_RFQ.pdf, posted to the WHS FOIA Reading Room (Reading Room/Contracts/) alongside the already-archived 23-F-0906_Performance_Work_Statement.pdf (government/foia-23-f-0906-sancorp-ipmo-pws.pdf). esd.whs.mil returns 403 (Akamai) to automated clients; bytes retrieved from Wayback id_ capture 20260201224522 (SHA-1 matches the CDX digest; the 20241010 capture is truncated and was not used). SHA-256 2dfe59f9fab2b5f306c6dd3f837978dc7470ce00d4d659ae52f793750a149aa7. 50 pages. pdfinfo Creator 'OmniPage CSDK 20' / Producer 'AINSLIB.OCR' (OCR-reconstructed text layer) -> flagged ocr-scan; the pdftotext extract is not worker-ready — a verified same-stem .txt sibling is required before quotes are drawn (/build step 4b / /prepare-ocr-sibling). No sibling produced in this archive run.
+  archive_status: 3
+  wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_A23_NDA-NPI.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0906-sancorp-ipmo-nda-npi.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: FOIA 23-F-0906 release — non-disclosure agreement for nonpublic information (NDA-NPI) under contract HQ0034-22-C-(0064) (A23); Reading Room file name 23-F-0906_A23_NDA-NPI.pdf, posted to the WHS FOIA Reading Room (Reading Room/Contracts/) alongside the already-archived 23-F-0906_Performance_Work_Statement.pdf (government/foia-23-f-0906-sancorp-ipmo-pws.pdf). esd.whs.mil returns 403 (Akamai) to automated clients; bytes retrieved from Wayback id_ capture 20260201224400 (SHA-1 matches the CDX digest; the 20241010 capture is truncated and was not used). SHA-256 c7480c5e59c76311927b1e09c8349b24ffcb17e52e57c70f7341c89780d9f09a. 3 pages. pdfinfo Creator 'OmniPage CSDK 20' / Producer 'AINSLIB.OCR' (OCR-reconstructed text layer) -> flagged ocr-scan; the pdftotext extract is not worker-ready — a verified same-stem .txt sibling is required before quotes are drawn (/build step 4b / /prepare-ocr-sibling). No sibling produced in this archive run.
+  archive_status: 3
+  wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_HQ0034-22-C-0064_Award_Notification.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0906-sancorp-ipmo-award-notification.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: FOIA 23-F-0906 release — award notification for contract HQ0034-22-C-0064 (IPMO Support Services); Reading Room file name 23-F-0906_HQ0034-22-C-0064_Award_Notification.pdf, posted to the WHS FOIA Reading Room (Reading Room/Contracts/) alongside the already-archived 23-F-0906_Performance_Work_Statement.pdf (government/foia-23-f-0906-sancorp-ipmo-pws.pdf). esd.whs.mil returns 403 (Akamai) to automated clients; bytes retrieved from Wayback id_ capture 20260201224551 (SHA-1 matches the CDX digest; the 20241010 capture is truncated and was not used). SHA-256 80f5f63e537725de2d88cafb57ac916b7c9697d1a255ab780af7991be9c271e8. 1 pages. pdfinfo Creator 'OmniPage CSDK 20' / Producer 'AINSLIB.OCR' (OCR-reconstructed text layer) -> flagged ocr-scan; the pdftotext extract is not worker-ready — a verified same-stem .txt sibling is required before quotes are drawn (/build step 4b / /prepare-ocr-sibling). No sibling produced in this archive run.
+  archive_status: 3
+  wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_HQ0034-22-C-0064_Contract.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0906-sancorp-ipmo-contract.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: FOIA 23-F-0906 release — contract HQ0034-22-C-0064 (Sancorp Consulting LLC, Influence & Perception Management Office (IPMO) support services); Reading Room file name 23-F-0906_HQ0034-22-C-0064_Contract.pdf, posted to the WHS FOIA Reading Room (Reading Room/Contracts/) alongside the already-archived 23-F-0906_Performance_Work_Statement.pdf (government/foia-23-f-0906-sancorp-ipmo-pws.pdf). esd.whs.mil returns 403 (Akamai) to automated clients; bytes retrieved from Wayback id_ capture 20260201224534 (SHA-1 matches the CDX digest; the 20241010 capture is truncated and was not used). SHA-256 8dfc6947523f3c7ba415164b8a833804a13fefa86a62013eed39b51517f5077c. 29 pages. pdfinfo Creator 'OmniPage CSDK 20' / Producer 'AINSLIB.OCR' (OCR-reconstructed text layer) -> flagged ocr-scan; the pdftotext extract is not worker-ready — a verified same-stem .txt sibling is required before quotes are drawn (/build step 4b / /prepare-ocr-sibling). No sibling produced in this archive run.
+  archive_status: 3
+  wayback_date: '2026-02-01'
 - url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_Performance_Work_Statement.pdf
   status: archived
   archive_status: 3
@@ -3459,6 +3509,28 @@
     archived_date: '2026-05-13'
     path: government/foia-23-f-0906-sancorp-ipmo-pws.txt
     note: 'Contributor-produced clean-text sibling for the 21-page Sancorp/IPMO PWS PDF (paired entry above, same path stem; flagged extraction_type=ocr-scan, OmniPage CSDK 20 / AINSLIB.OCR producer chain). Production methodology: pdftotext -layout output used as base; visually verified against rendered page images for all 21 pages (Read tool, pages 1-21); body content extracts faithfully; targeted corrections applied for 5 confirmed OCR character-confusions in section headings and one body cell — "Obiectives" → "Objectives" (§1.3 heading; j→i), "Oualitv Control" → "Quality Control" (§1.6.1 heading; Q→O, y→v), "Recoenized Holidays" → "Recognized Holidays" (§1.6.3 heading; g→e), "1.6.16-7 Phase out Period" → "1.6.16 Phase out Period" (§1.6.16 heading; stray "-7" suffix dropped — visible page image shows "1.6.16" only), "reqiiirements stipulated in para 1.6.164" → "requirements stipulated in para 1.6.16" (Technical Exhibit 1 PRS #6 cell; u→ii, stray "4" digit dropped). All 4 quotes citing this source (ipmo q6, q7; sancorp-consulting q35, q36) reference clean body content unaffected by these corrections. PDF contains draft markup (red strikethroughs, WNNCWA tracked-change comments in margins) which pdftotext renders literally and the sibling preserves verbatim — these are real document features, not OCR artifacts. Validator (extract_source_text in scripts/lib/_common.py) prefers this same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. Registered 2026-05-13 to close the missing-sibling defect surfaced during BACKLOG A2 investigation.'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/FOIA_Log/FOID_FOIA_Log-FY23.xlsx
+  status: archived
+  artifacts:
+  - format: xlsx
+    path: government/whs-foid-foia-log-fy23.xlsx
+    archived_date: '2026-09-26'
+    note: 'DoD Freedom of Information Division (WHS/ESD FOID) FOIA request log for FY2023, as published in the WHS FOIA Reading Room (FOIA_Log folder). Original .xlsx bytes (SHA-256 e2375a8c2842d8478983de0075230d326b932509554aca7c8085e7d540af97f4), retrieved from Wayback capture https://web.archive.org/web/20240929123352id_/https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/FOIA_Log/FOID_FOIA_Log-FY23.xlsx because esd.whs.mil returns 403 (Akamai) to automated clients. Single sheet ''FOID_FOIA_Log-FY23''; columns: #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition, Request Description. Row for 23-F-0906 is log # 1244 (spreadsheet row 1245); row for 23-F-1114 is log # 1518 (spreadsheet row 1519). No text layer the extractor parses: the same-stem .txt artifact in this entry (government/whs-foid-foia-log-fy23.txt) is the cell-for-cell rendering that extract_source_text reads.'
+  - format: txt
+    path: government/whs-foid-foia-log-fy23.txt
+    archived_date: '2026-09-26'
+    note: 'Cell-for-cell plain-text rendering of the same-stem .xlsx artifact in this entry (the canonical text read by extract_source_text for the spreadsheet). SHA-256 1f8033c2cd932d8ff0ef1b896c8cc06fe174bb2fc2b73d129065839374e8d5ef. Rendering method: openpyxl 3.1.5, load_workbook(read_only=True, data_only=True); one line per spreadsheet row, preceded by a ''# sheet: {title}'' line; cells joined by TAB; None -> empty string; datetime cells -> ISO YYYY-MM-DD; CR/LF/TAB inside a cell each replaced by a single space; trailing empty cells dropped; UTF-8 (file ends with a newline). Produced by the orchestrator; independently re-rendered by the archive role 2026-09-26 with the same method and matched byte-for-byte (same SHA-256). Because of the ''# sheet:'' header line, text line N+1 holds spreadsheet row N (e.g. 23-F-0906 at text line 1246, 23-F-1114 at text line 1520).'
+  archive_status: 3
+  wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Records-Declass/FOIA/Reading-Room/Reading-Room-List_2/Contracts/
+  status: archived
+  artifacts:
+  - format: html
+    path: government/whs-foid-reading-room-contracts-index.html
+    archived_date: '2026-09-26'
+    note: 'WHS FOIA Reading Room ''Contracts'' list page (page title ''Contracts''): the link index of contract records released under DoD FOIA cases, including the six 23-F-0906 files (Final_RFQ, NDA-NPI, DD_254_v2, Award_Notification, Contract, Performance_Work_Statement), each linking to /Portals/54/Documents/FOID/Reading%20Room/Contracts/{file}. esd.whs.mil returns 403 (Akamai) to automated clients; raw HTML retrieved from Wayback id_ capture 20260511031049 (earliest capture 20250327134820). SHA-256 67ae2f92c227570652aac204a98c8739dd7c4b4962b41ee664d27e7b19a722f3.'
+  archive_status: 3
+  wayback_date: '2026-05-11'
 - url: https://www.everycrsreport.com/reports/IF10523.html
   status: archived
   archive_status: 3
@@ -4342,6 +4414,15 @@
     archived_date: '2026-04-28'
     path: news/blackvault-aaro-establishment-release-20220720.html
     note: Black Vault republication of the DoD July 20 2022 press release announcing AARO establishment + Kirkpatrick's appointment as inaugural director
+- url: https://www.theblackvault.com/documentarchive/dod-releases-contracts-with-sancorp-outlining-work-for-ufo-office-aaro/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    archived_date: '2026-09-26'
+    note: The Black Vault article 'DoD Releases Contracts with SANCORP Outlining Work For UFO Office AARO' (datePublished 2023-09-11T19:48:04+00:00, dateModified 2024-05-16T16:30:15+00:00), reporting the release to John Greenewald under FOIA 23-F-1114 of the Sancorp Consulting contract (HQ003422C0094). Queued as a secondary, lead-only source. Fetched live from theblackvault.com (HTTP 200) on 2026-09-26; Wayback captures exist from 20230911195225. SHA-256 2861bda3c7c4943f9463927669657926acf24b17a10dc48188906c3170f19da5.
+  archive_status: 3
+  wayback_date: '2026-02-14'
 - url: https://www.theblackvault.com/documentarchive/foia-documents-reveal-aaros-authorized-and-repeated-attempts-to-engage-with-david-grusch/
   status: archived
   archive_status: 3

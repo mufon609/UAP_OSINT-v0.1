@@ -526,6 +526,18 @@ with any user-agent.
 - Note `23-F-0946` appears in the canonical path as
   `23-F-0946-0958-1317-David_Grusch_DOPSR_Request_09-15-23.pdf` on
   esd.whs.mil but as simply `23-F-0946.pdf` on The Black Vault mirror.
+- **Wayback `id_` captures** — Reading Room assets (PDFs under
+  `Reading%20Room/Contracts/`, the `.xlsx` logs under
+  `Reading%20Room/FOIA_Log/`) and the `Records-Declass/FOIA/Reading-Room/...`
+  list pages are captured by the IA crawler and replay raw with HTTP 200:
+  ```
+  curl -sSL -A "Mozilla/5.0" "https://web.archive.org/web/{timestamp}id_/{original_url}"
+  ```
+  Pick the timestamp from CDX (`fl=timestamp,statuscode,length,digest`) and
+  verify the download's base32 SHA-1 against the CDX `digest` field. Some
+  captures are truncated (e.g. ~1 MB captures of multi-MB PDFs, with a
+  different digest from the other captures). Skip them and use a capture
+  whose digest matches the majority.
 
 ---
 

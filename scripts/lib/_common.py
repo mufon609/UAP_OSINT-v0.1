@@ -649,7 +649,7 @@ def parse_date_tuple(s):
 
 # Extension → manifest ``format`` value. Coverage matches the schema's
 # ``manifest_entry.format_values`` vocabulary (pdf / html / txt /
-# transcript / audio / image / video). Unknown extensions fall back to
+# transcript / audio / image / video / xlsx). Unknown extensions fall back to
 # ``html`` — intentional for web scraping where the source's extension
 # is often absent or generic.
 FORMAT_BY_EXT = {
@@ -658,6 +658,8 @@ FORMAT_BY_EXT = {
     ".htm": "html",
     ".txt": "txt",
     ".md": "transcript",
+    # Spreadsheet — read via its same-stem .txt rendering (extract_source_text).
+    ".xlsx": "xlsx",
     # Video extensions — schema format_values supports `video`.
     ".mp4": "video",
     ".m4v": "video",
@@ -982,6 +984,10 @@ def extract_source_text(source_path):
                         raw, so quotes spanning ``"key":"value"`` still match.
       - image           same-stem .txt sibling if one is committed (a verified
                         transcription); otherwise None (no text layer)
+      - .xlsx           same-stem .txt sibling (the cell-for-cell rendering
+                        registered beside it); otherwise None — unlike an
+                        image, xlsx is not in BINARY_FORMATS, so a missing
+                        sibling surfaces as an extraction failure
     Returns None for any other extension or extraction failure.
     """
     if source_path in _source_text_cache:
@@ -1028,6 +1034,15 @@ def extract_source_text(source_path):
             result = None
         if result is not None and suffix == ".json":
             result = decode_json_unicode_escapes(result)
+    elif suffix == ".xlsx":
+        # A spreadsheet has no text layer this reader parses; its same-stem
+        # `.txt` sibling is the registered cell-for-cell rendering.
+        sibling = source_path.with_suffix(".txt")
+        if sibling.exists():
+            try:
+                result = sibling.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                result = None
     elif FORMAT_BY_EXT.get(suffix) == "image":
         # An image carries no text layer. If a contributor has committed a
         # same-stem `.txt` sibling — a verified transcription, e.g. a book

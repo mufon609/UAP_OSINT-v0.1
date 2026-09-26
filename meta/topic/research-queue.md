@@ -41,7 +41,9 @@ Two backlogs live here, distinguished by origin:
 
 ## Priority Build Queue
 
-_Empty._
+| Item | Source | Found In | Priority | Status |
+|---|---|---|---|---|
+| The five unbuilt 23-F-0906 release documents — build **DD 254 first**, then contract, final RFQ, NDA-NPI, award notification: `/documents/foia-23-f-0906-sancorp-ipmo-{dd254,contract,final-rfq,nda-npi,award-notification}` | Archived under `sources/government/foia-23-f-0906-sancorp-ipmo-*.pdf` (WHS FOIA Reading Room, Contracts; 11 / 29 / 50 / 3 / 1 pp.). All five are `extraction_type: ocr-scan` with no sibling yet — each needs `/prepare-ocr-sibling` before any quote. The DD 254 is where the IPMO contract's (HQ003422C0064) classification and access requirements would become quotable (its block 1a and block 9 were read only off the unverified OCR layer during sourcing) | [`/foia/dod-23-f-0906`] `released_records` rr2–rr6 (attested by the Reading Room index) | Medium | Pending |
 
 ---
 

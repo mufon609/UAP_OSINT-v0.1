@@ -1,0 +1,773 @@
+id: meta/research/dod-23-f-0906
+type: research-artifact
+target_node: foia/dod-23-f-0906
+status: active
+primary_sources:
+- path: government/foia-23-f-0906-request-description.pdf
+  format: pdf
+- path: government/foia-23-f-0906-interim-response.pdf
+  format: pdf
+- path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+  format: html
+- path: government/whs-foid-foia-log-fy23.xlsx
+  format: xlsx
+- path: government/whs-foid-reading-room-contracts-index.html
+  format: html
+document_intrinsic:
+  requester: 'Robert Skvarla, Jr.'
+  requester_path: /people/robert-skvarla
+  agency: Department of Defense
+  agency_path: /organizations/dod
+  component: 'OUSD(I&S)'
+  component_path: /organizations/ousd-is
+  tracking_number: 23-F-0906
+  submitted_date: '2023-05-19'
+  fee_waiver: 'Requested as a member of the news media; the interim response (May 24, 2023) defers the fee waiver determination to the conclusion of the search'
+context_extrinsic:
+  display_title: 'DoD FOIA 23-F-0906'
+  primary_source_url: https://cdn.muckrock.com/foia_files/2023/05/24/23-F-0906_Request_Description.pdf
+quotes:
+- id: q1
+  added_date: '2026-09-26'
+  text: 'You are receiving this correspondence as a request under the Freedom of Information Act, 5 U.S.C. subsection 552. I am requesting the following:'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, ¶1'
+  significance: 'Opening of the request letter: states the statutory basis (the Freedom of Information Act, 5 U.S.C. 552) for the filing.'
+  context: 'Request letter addressed "Dear FOIA officer:"; DoD tracking number 23-F-0906 stamped at the top of p. 1.'
+  claim_group: request-framing
+  corroborated_by: [q26]
+- id: q2
+  added_date: '2026-09-26'
+  text: 'Copies of records for a definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC (UEI: GRYKNJ8BGFC8). This contract has an action date of June 10, 2022, and is funded by the Department of Defense through the Office of the Under Secretary of Defense For Intelligence and Security for support services in the Influence and Perception Management Office (IPMO). This request includes, but is not limited to:'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, ¶2'
+  significance: 'The scope of the request: records for contract HQ003422C0064 awarded to Sancorp Consulting, LLC, with the requester''s statement of the action date (June 10, 2022), the funding path (DoD through OUSD(I&S)), and the purpose (support services in the IPMO).'
+  claim_group: records-sought-scope
+  corroborated_by: [q27, q40]
+- id: q3
+  added_date: '2026-09-26'
+  text: |-
+    - Correspondence (internal emails, physical mail, etc.)
+    - Requests for Proposals
+    - Requests for Information
+    - Statements of Work
+    - Memorandum(s) of Understanding
+    - Letters of Interest
+    - Award Letters
+    - Task Letters
+    - Privacy Impact Assessments
+    - Invoices
+    - Purchase and/or Change Orders
+    - Project Budgets and/or Budget Proposals
+    - Evaluation Reports
+    - Presentations by Sancorp Consulting, LLC
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+  significance: 'The fourteen record categories the request enumerates ("includes, but is not limited to").'
+  claim_group: records-sought-scope
+  corroborated_by: [q41]
+- id: q4
+  added_date: '2026-09-26'
+  text: 'I am asking you waive any fees associated with this request. I am a member of the news media and request classification as such. My bylines, which include Creem Magazine, Covert Action Magazine, and the Geopolitical Economy Report, can be found in both print and electronic publications. Please take note of the Office of Management and Budget guidelines published March 27, 1987 (52 FR 10012) that include electronic publications and other nontraditional publishers as representatives of the news media.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶1'
+  significance: 'The fee-waiver request and the news-media fee-category claim, with the requester''s named bylines and the OMB fee guidelines he cites (52 FR 10012).'
+  claim_group: fee-waiver-and-fee-category
+  corroborated_by: [q28]
+- id: q5
+  added_date: '2026-09-26'
+  text: 'A fee waiver is appropriate in situations where "disclosure of the requested information is in the public interest because it is likely to contribute significantly to public understanding of the operations and activities of the government, and is not primarily in the commercial interest of the requester,” 5 U.S.C. § 552(a)(4)(iii). This request would contribute significantly to public understanding of the operations and activities of government with regard to work being done by the IPMO and its contractors.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶2'
+  significance: 'The statutory public-interest fee-waiver standard as the letter quotes it, applied to the IPMO and its contractors.'
+  claim_group: fee-waiver-and-fee-category
+- id: q6
+  added_date: '2026-09-26'
+  text: 'On May 17, 2023, Ken Klippenstein of The Intercept reported on the creation of a new perception management office, identified as the IPMO:'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶2'
+  significance: 'The letter names the May 17, 2023 Intercept report by Ken Klippenstein as the public reporting on the IPMO. The letter gives the article URL on the next line (https://theintercept.com/2023/05/17/pentagon-perception-management-office/).'
+  claim_group: public-interest-justification
+  corroborated_by: [q29]
+- id: q7
+  added_date: '2026-09-26'
+  text: 'A subsequent review of public contracting sites revealed that Sancorp was awarded a contract with this office in June of last year. Sancorp''s contract would provide the public with a clearer understanding of the role and functions of the IPMO.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶3'
+  significance: 'How the requester found the contract: a review of public contracting sites after the Intercept report showed Sancorp was awarded a contract with the IPMO "in June of last year".'
+  claim_group: public-interest-justification
+  corroborated_by: [q30]
+- id: q8
+  added_date: '2026-09-26'
+  text: 'According a document produced by the office, and covered in The Intercept article, "the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of [Department of Defense] activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests." Work of this nature, while sensitive, is of immense public interest due to both the nature of the work itself and the non-governmental parties like Sancorp being recruited to assist in such work.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶3'
+  significance: 'The letter quotes the IPMO mission statement from "a document produced by the office" that the Intercept article covered. It argues public interest because of the work itself and because non-governmental parties such as Sancorp take part in it.'
+  context: 'The "[Department of Defense]" in square brackets is the letter''s own editorial insertion inside the quoted passage. "According a document" is reproduced as written (sic).'
+  claim_group: public-interest-justification
+  corroborated_by: [q31, q32]
+- id: q9
+  added_date: '2026-09-26'
+  text: 'There is no risk of interfering with ongoing operations or disclosure of sensitive materials. Sancorp already lists the contract on their publicly-accessible website:'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶4'
+  significance: 'The requester says release carries no operational risk because Sancorp already lists the contract on its public website. The letter gives the Sancorp-hosted PDF URL on the next lines.'
+  claim_group: public-interest-justification
+  corroborated_by: [q33]
+- id: q10
+  added_date: '2026-09-26'
+  text: 'In the event that there are fees, I am willing to pay up to $100. I would prefer the request filled electronically, by e-mail attachment if available or CD-ROM if not.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶5'
+  significance: 'The fee ceiling the requester agreed to ($100) and the delivery format he preferred.'
+  claim_group: fee-waiver-and-fee-category
+  corroborated_by: [q34]
+- id: q11
+  added_date: '2026-09-26'
+  text: 'This request is not being made for commercial purposes. All documents will be provided to the general public without charge.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶6'
+  significance: 'The non-commercial-use statement that supports the fee-waiver and fee-category claims.'
+  claim_group: fee-waiver-and-fee-category
+  corroborated_by: [q35]
+- id: q12
+  added_date: '2026-09-26'
+  text: 'I look forward to your response within 20 working days, as the statute requires. If access to the records I am requesting will take longer, please contact me with information about when I might expect copies or the ability to inspect the requested records.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 3, ¶1'
+  significance: 'The requester invokes the 20-working-day statutory response window. The agency''s later interim response, citing "unusual circumstances", answers this window.'
+  claim_group: request-framing
+- id: q13
+  added_date: '2026-09-26'
+  text: 'If you deny any or all of this request, please cite each specific exemption you feel justifies the refusal to release the information and notify me of the appeal procedures available to me under the law.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 3, ¶2'
+  significance: 'The requester asks that any denial cite each specific exemption and include notice of appeal procedures.'
+  claim_group: request-framing
+- id: q14
+  added_date: '2026-09-26'
+  text: 'Robert Skvarla, Jr.'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 3, signature block'
+  significance: 'Signature block that identifies the requester, below "Sincerely,".'
+  claim_group: request-framing
+- id: q15
+  added_date: '2026-09-26'
+  text: 'This is an interim response to your May 21, 2023 Freedom of Information Act (FOIA) request, a copy of which is enclosed for your convenience. We received your request on May 22, 2023, and assigned it FOIA case number 23-F-0906.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶1'
+  significance: 'Agency-attested request date (May 21, 2023), receipt date (May 22, 2023), and assignment of FOIA case number 23-F-0906; identifies the letter as an interim response.'
+  context: 'Opening paragraph of the DoD Freedom of Information Division interim response dated May 24, 2023, addressed to Dr. Robert Skvarla at MuckRock News.'
+  claim_group: 'request-dates-and-case-number'
+- id: q16
+  added_date: '2026-09-26'
+  text: 'Although we have already begun processing your request, we will not be able to respond within the FOIA''s 20-day statutory time period as there are unusual circumstances which impact our ability to quickly process your request.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶2'
+  significance: 'Agency invokes FOIA unusual circumstances and states it cannot meet the 20-day statutory response period.'
+  claim_group: 'unusual-circumstances-delay'
+- id: q17
+  added_date: '2026-09-26'
+  text: 'While this office handles FOIA requests for the Office of the Secretary of Defense (OSD), the Joint Staff (JS) and other component offices, we do not actually hold their records and our office is not geographically located with these organizations.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶2'
+  significance: 'Processing office states it handles FOIA for OSD, the Joint Staff and other components but does not hold their records — the records sit with a separate component.'
+  claim_group: 'unusual-circumstances-delay'
+- id: q18
+  added_date: '2026-09-26'
+  text: 'As we do not hold the records, until the required record searches are complete, we are unable to estimate the potential volume of records or the number of consultations that will be required to make a release determination.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶2'
+  significance: 'The agency says that until the required record searches are complete it is unable to estimate the potential volume of records or the number of consultations required to make a release determination.'
+  claim_group: 'unusual-circumstances-delay'
+- id: q19
+  added_date: '2026-09-26'
+  text: 'Your request has been placed in our complex processing queue and is being worked based on the order in which the request was received. Our current administrative workload is approximately 3,501 open requests.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶3'
+  significance: 'Request placed in the complex processing queue; agency backlog stated as approximately 3,501 open requests as of May 24, 2023.'
+  claim_group: 'processing-queue'
+- id: q20
+  added_date: '2026-09-26'
+  text: 'If you have requested a fee waiver, please note that decisions to waive or reduce fees are made on a case-by-case basis, and we will make a determination concerning your fee waiver request at the conclusion of the search and assessment of responsive records, should they exist.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶4'
+  significance: 'Fee-waiver determination deferred to the conclusion of the search; no fee category assigned in this letter.'
+  claim_group: 'fees'
+- id: q21
+  added_date: '2026-09-26'
+  text: 'However, this office will only assess fees if we provide the final response to your FOIA request within the statutory time allotted by the FOIA or if the responsive records total more than 5,000 pages, even after a good faith effort on our part to limit the scope of your request.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶4'
+  significance: 'The two conditions under which this office will assess fees: a final response within the statutory time allotted by the FOIA, or responsive records totaling more than 5,000 pages.'
+  claim_group: 'fees'
+- id: q22
+  added_date: '2026-09-26'
+  text: 'If you wish to narrow the scope of your request or have questions about the foregoing, please do not hesitate to contact your Action Officer, Tyra Howard, at tyra.d.howard.civ@mail.mil or 571-372-0467.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 2, ¶1'
+  significance: 'Names Tyra Howard as the Action Officer assigned to FOIA 23-F-0906.'
+  claim_group: 'agency-contacts'
+- id: q23
+  added_date: '2026-09-26'
+  text: 'Should you wish to inquire about mediation services, you may contact the OSD/JS FOIA Public Liaison, Toni Fuentes, at 571-372-0462 or by email at OSD.FOIALiaison@mail.mil.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 2, ¶3'
+  significance: 'Names Toni Fuentes as the OSD/JS FOIA Public Liaison.'
+  claim_group: 'agency-contacts'
+- id: q24
+  added_date: '2026-09-26'
+  text: 'You may also contact the Office of Government Information Services (OGIS) at the National Archives and Records Administration.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 2, ¶3'
+  significance: 'Names the Office of Government Information Services (OGIS) at the National Archives and Records Administration as a further contact, after the OSD/JS FOIA Public Liaison, for mediation services.'
+  claim_group: 'agency-contacts'
+- id: q25
+  added_date: '2026-09-26'
+  text: 'Subject: Freedom of Information Act Request: OUSD(I&S) 2 5.19.23'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ Subject: Freedom of Information Act Request (05/19/2023 request letter header)'
+  significance: The request as sent carries the requester's own title for it, naming the Office of the Under Secretary of Defense for Intelligence and Security by its abbreviation.
+  context: Subject line of the 05/19/2023 communication from Robert Skvarla, Jr., sent via Portal.
+  claim_group: request-framing
+- id: q26
+  added_date: '2026-09-26'
+  text: 'You are receiving this correspondence as a request under the Freedom of Information Act, 5 U.S.C. subsection 552. I am requesting the following:'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ You are receiving this correspondence as a request (05/19/2023 request letter)'
+  significance: States the legal basis the request invokes.
+  context: Opening of the 05/19/2023 request letter, following "Dear FOIA officer:".
+  claim_group: request-framing
+- id: q27
+  added_date: '2026-09-26'
+  text: 'Copies of records for a definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC (UEI: GRYKNJ8BGFC8). This contract has an action date of June 10, 2022, and is funded by the Department of Defense through the Office of the Under Secretary of Defense For Intelligence and Security for support services in the Influence and Perception Management Office (IPMO). This request includes, but is not limited to:'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ Copies of records for a definitive contract (05/19/2023 request letter)'
+  significance: The core ask — records of award HQ003422C0064 to Sancorp Consulting, LLC, which the requester describes as OUSD(I&S)-funded support services to the IPMO, with an action date of June 10, 2022.
+  context: Precedes the itemized list of record types (the items are listed under Records Sought).
+  claim_group: records-sought-scope
+- id: q28
+  added_date: '2026-09-26'
+  text: 'I am asking you waive any fees associated with this request. I am a member of the news media and request classification as such. My bylines, which include Creem Magazine, Covert Action Magazine, and the Geopolitical Economy Report, can be found in both print and electronic publications.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ I am asking you waive any fees (05/19/2023 request letter)'
+  significance: Fee-waiver request and news-media fee-category claim, with the requester's self-stated bylines.
+  claim_group: fee-waiver-and-fee-category
+- id: q29
+  added_date: '2026-09-26'
+  text: 'This request would contribute significantly to public understanding of the operations and activities of government with regard to work being done by the IPMO and its contractors. On May 17, 2023, Ken Klippenstein of The Intercept reported on the creation of a new perception management office, identified as the IPMO: https://theintercept.com/2023/05/17/pentagon-perception-management-office/'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ A fee waiver is appropriate in situations (05/19/2023 request letter; sentences following the 5 U.S.C. citation)'
+  significance: Ties the request to The Intercept's May 17, 2023 reporting on the IPMO — the stated trigger for the request, filed two days later.
+  claim_group: public-interest-justification
+- id: q30
+  added_date: '2026-09-26'
+  text: 'A subsequent review of public contracting sites revealed that Sancorp was awarded a contract with this office in June of last year. Sancorp''s contract would provide the public with a clearer understanding of the role and functions of the IPMO.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ A subsequent review of public contracting sites (05/19/2023 request letter)'
+  significance: Requester's account of how the Sancorp–IPMO contract was identified (public contracting sites) and why it bears on the IPMO's role.
+  claim_group: public-interest-justification
+- id: q31
+  added_date: '2026-09-26'
+  text: 'According a document produced by the office, and covered in The Intercept article, "the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of [Department of Defense] activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests."'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ A subsequent review of public contracting sites (05/19/2023 request letter; third sentence)'
+  significance: The request relays the IPMO's own mission language as quoted in The Intercept article (bracketed insertion "[Department of Defense]" is the requester's).
+  context: Source reads "According a document" (missing "to") — preserved verbatim.
+  claim_group: public-interest-justification
+- id: q32
+  added_date: '2026-09-26'
+  text: 'Work of this nature, while sensitive, is of immense public interest due to both the nature of the work itself and the non-governmental parties like Sancorp being recruited to assist in such work.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ A subsequent review of public contracting sites (05/19/2023 request letter; final sentence)'
+  significance: The requester's public-interest argument, as the request appears on the MuckRock page — the nature of the work itself and the non-governmental parties like Sancorp being recruited to assist in such work.
+  claim_group: public-interest-justification
+- id: q33
+  added_date: '2026-09-26'
+  text: 'There is no risk of interfering with ongoing operations or disclosure of sensitive materials. Sancorp already lists the contract on their publicly-accessible website: https://www.sancorpconsulting.com/_files/ugd/7aeb19_0c37a59d213b4d68a043ef83b56edc9a.pdf'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ There is no risk of interfering with ongoing operations (05/19/2023 request letter)'
+  significance: Requester asserts the contract was already publicly listed by Sancorp itself, citing a sancorpconsulting.com PDF.
+  claim_group: public-interest-justification
+- id: q34
+  added_date: '2026-09-26'
+  text: 'In the event that there are fees, I am willing to pay up to $100. I would prefer the request filled electronically, by e-mail attachment if available or CD-ROM if not.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ In the event that there are fees (05/19/2023 request letter)'
+  significance: The fee ceiling the requester agreed to ($100) and the delivery format he preferred, as the request appears on the MuckRock page.
+  claim_group: fee-waiver-and-fee-category
+- id: q35
+  added_date: '2026-09-26'
+  text: 'This request is not being made for commercial purposes. All documents will be provided to the general public without charge.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ This request is not being made for commercial purposes (05/19/2023 request letter)'
+  significance: The non-commercial-purposes statement, as the request appears on the MuckRock page.
+  claim_group: fee-waiver-and-fee-category
+- id: q36
+  added_date: '2026-09-26'
+  text: 'Case Number 23-F-0906 has been assigned to the request you submitted. In all future correspondence regarding this request please reference case number 23-F-0906.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ Case Number 23-F-0906 has been assigned (05/21/2023 agency message, subject "PAL Acknowledgement by OSD/JS FOIA Office")'
+  significance: Agency acknowledgment assigning case number 23-F-0906; signed "OSD/JS FOIA Requester Service Center".
+  claim_group: agency-processing
+- id: q37
+  added_date: '2026-09-26'
+  text: 'The status of your FOIA request #23-F-0906 has been updated to the following status ''Received''.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ Dear Robert Skvarla,  The status of your FOIA request (05/21/2023 agency message, subject "Status Update for Request #23-F-0906")'
+  significance: The agency status message of 05/21/2023 updating the status of request 23-F-0906 to Received.
+  claim_group: agency-processing
+- id: q38
+  added_date: '2026-09-26'
+  text: 'Please find the interim response attached for your recent FOIA Request that was requested on May 21, 2023. The case number for this request is 23-F-0906, please refer to this number and the action officer mentioned in the interim response in any future correspondence regarding this case.'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: '¶ Please find the interim response attached (05/24/2023 agency message, subject "OSD/JS FOIA 23-F-0906")'
+  significance: Transmits the interim response (signed Jessica Jordan, FOIA Analyst, OSD / JS FOIA Office). Gives the request date as May 21, 2023, whereas the MuckRock communication header shows the request letter sent 05/19/2023 via Portal and the MuckRock "Submitted" field gives May 19, 2023 (the request letter itself carries no date) — a date divergence within the correspondence.
+  claim_group: agency-processing
+- id: q39
+  added_date: '2026-09-26'
+  text: "1244\t23-F-0906\tSkvarla, Robert\t-\tPAL\t2023-05-22\t2023-07-28\tGranted / Denied in Part"
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 1244 (Request ID 23-F-0906), cells # through Final Disposition'
+  significance: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): requester Skvarla, Robert; no organization ("-"); received via PAL on 2023-05-22; closed 2023-07-28; final disposition Granted / Denied in Part.'
+  context: 'Agency-kept FOIA log published in the WHS FOID Reading Room (FOIA_Log folder); the row is the agency record of the request, not requester correspondence.'
+  claim_group: request-log-disposition
+- id: q40
+  added_date: '2026-09-26'
+  text: 'Copies of records for a definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC (UEI: GRYKNJ8BGFC8). This contract has an action date of June 10, 2022, and is funded by the Department of Defense through the Office of the Under Secretary of Defense For Intelligence and Security for support services in the Influence and Perception Management Office (IPMO).'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 1244 (Request ID 23-F-0906), Request Description cell'
+  significance: 'Identifies the contract whose records are sought: award ID HQ003422C0064 to Sancorp Consulting, LLC (UEI GRYKNJ8BGFC8), action date June 10, 2022, funded through OUSD(I&S) for IPMO support services.'
+  context: 'Request Description column of the agency log, reproducing the description of the request as logged.'
+  claim_group: records-sought-scope
+- id: q41
+  added_date: '2026-09-26'
+  text: 'This request includes, but is not limited to: - Correspondence (internal emails, physical mail, etc.) - Requests for Proposals - Requests for Information - Statements of Work - Memorandum(s) of Understanding - Letters of Interest - Award Letters - Task Letters - Privacy Impact Assessments - Invoices - Purchase and/or Change Orders - Project Budgets and/or Budget Proposals - Evaluation Reports - Presentations by Sancorp Consulting, LLC'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 1244 (Request ID 23-F-0906), Request Description cell'
+  significance: 'The enumerated record categories the request seeks (records_sought scope), as logged by the agency.'
+  context: 'Continues directly after the contract-identification sentences in the same Request Description cell (the cell ends here).'
+  claim_group: records-sought-scope
+- id: q42
+  added_date: '2026-09-26'
+  text: '23-F-0906_A23_Final_RFQ.pdf 23-F-0906_A23_NDA-NPI.pdf 23-F-0906_A23-DD_254_v2.pdf 23-F-0906_HQ0034-22-C-0064_Award_Notification.pdf 23-F-0906_HQ0034-22-C-0064_Contract.pdf 23-F-0906_Performance_Work_Statement.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, ¶ 23-F-0906_A23_Final_RFQ.pdf'
+  significance: 'The WHS FOIA Reading Room "Contracts" list publishes exactly six files under the case number 23-F-0906, contiguous in the list: the Final RFQ, the NDA-NPI, the DD 254 (v2), the Award Notification and the Contract for HQ0034-22-C-0064, and a Performance Work Statement. The file names carry the case number 23-F-0906 and tie the contract number HQ0034-22-C-0064 to the case.'
+  context: 'Collapsed link index on the WHS Executive Services Directorate Reading Room "Contracts" page (Wayback id_ capture 20260511031049). Each file name is a link to /Portals/54/Documents/FOID/Reading%20Room/Contracts/{file} (href only, not in the extracted text).'
+  claim_group: 'released-records-23-f-0906'
+- id: q43
+  added_date: '2026-09-26'
+  text: 'The FOIA defines unusual circumstances as (a) the need to search for and collect records from a facility geographically separated from this office; (b) the potential volume of records responsive to your request; and (c) the need for consultation with one or more other agencies or DoD components having a substantial interest in either the determination or the subject matter of the records. At least one, if not more of these scenarios applies or would likely apply to your request.'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶2'
+  significance: 'The agency''s stated basis for the delay: it lists the three FOIA unusual-circumstances grounds, (a) records held at a geographically separated facility, (b) potential volume, (c) consultation with other agencies or DoD components, and says at least one applies or would likely apply to this request. It does not say which one.'
+  context: 'Follows the sentence invoking unusual circumstances and precedes the sentence saying the office does not hold the records of the Office of the Secretary of Defense (OSD) and the Joint Staff (JS) (p. 1, ¶2 of the May 24, 2023 interim response).'
+  claim_group: 'unusual-circumstances-delay'
+naming_quirks:
+- id: nq1
+  added_date: '2026-09-26'
+  observed: 'OSD/JS FOIA Office'
+  canonical: 'Freedom of Information Division'
+  location: 'q36 location (subject "PAL Acknowledgement by OSD/JS FOIA Office"); agency messages of 05/21/2023 and 05/24/2023'
+  source_path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-09-26'
+  observed: 'FOID'
+  canonical: 'Freedom of Information Division'
+  location: 'Sheet title FOID_FOIA_Log-FY23; framed in q39 / q40 / q41 location'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-09-26'
+  observed: 'OUSD(I&S)'
+  canonical: 'Office of the Under Secretary of Defense for Intelligence and Security'
+  location: 'q25 (request title in the Subject line)'
+  source_path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-09-26'
+  observed: 'Office of the Under Secretary of Defense For Intelligence and Security'
+  canonical: 'Office of the Under Secretary of Defense for Intelligence and Security'
+  location: 'q2 / q27 / q40 (capitalized "For" in the request scope paragraph)'
+  source_path: government/foia-23-f-0906-request-description.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-09-26'
+  observed: 'Sancorp'
+  canonical: 'Sancorp Consulting, LLC'
+  location: 'q7 / q8 / q9 (short form in the public-interest paragraphs)'
+  source_path: government/foia-23-f-0906-request-description.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-09-26'
+  observed: '5 U.S.C. subsection 552'
+  canonical: '5 U.S.C. § 552'
+  location: 'q1 / q26 (the same letter uses the § form at p. 2, ¶2)'
+  source_path: government/foia-23-f-0906-request-description.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq7
+  added_date: '2026-09-26'
+  observed: 'Skvarla, Robert'
+  canonical: 'Robert Skvarla, Jr.'
+  location: 'q39 (FOID log # 1244, Requester Name cell, surname-first)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq8
+  added_date: '2026-09-26'
+  observed: 'Dr. Robert Skvarla'
+  canonical: 'Robert Skvarla, Jr.'
+  location: 'q15 context (interim response address block); the requester signs his own letter "Robert Skvarla, Jr." without an honorific'
+  source_path: government/foia-23-f-0906-interim-response.pdf
+  resolution: preserve-as-sic-in-quotes
+- id: nq9
+  added_date: '2026-09-26'
+  observed: 'Status: Awaiting Response (MuckRock request page, Status field)'
+  canonical: 'Final Disposition: Granted / Denied in Part, Closed Date 2023-07-28 (FOID FY23 log # 1244, government/whs-foid-foia-log-fy23.xlsx)'
+  location: 'MuckRock page header, Status field; FOID_FOIA_Log-FY23, log # 1244 Closed Date + Final Disposition cells'
+  source_path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+  resolution: disputed
+- id: nq10
+  added_date: '2026-09-26'
+  observed: 'Request date May 21, 2023 (interim response, p. 1, ¶1; 05/24/2023 agency message on the MuckRock page)'
+  canonical: 'Submitted May 19, 2023 (MuckRock request page, Submitted field; request letter sent 05/19/2023 via Portal)'
+  location: 'interim response p. 1, ¶1; MuckRock page header, Submitted field'
+  source_path: government/foia-23-f-0906-interim-response.pdf
+  resolution: disputed
+description: |-
+  Robert Skvarla, Jr. ([`/people/robert-skvarla`]) filed this request under the Freedom of Information Act ([`/documents/freedom-of-information-act`]) through MuckRock ([`/organizations/muckrock`]) with the Department of Defense ([`/organizations/dod`]), Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). It requests copies of records for a definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) for support services in the Influence and Perception Management Office ([`/organizations/ipmo`]), including, but not limited to, correspondence, statements of work, award letters, invoices and presentations by Sancorp Consulting, LLC. The letter points to the May 17, 2023 report by Ken Klippenstein ([`/people/ken-klippenstein`]) of The Intercept ([`/organizations/the-intercept`]) on the IPMO, requests a fee waiver as a member of the news media, and says Sancorp already lists the contract on their publicly-accessible website.
+
+  The Freedom of Information Division ([`/organizations/dod-freedom-of-information-division`]), which handles FOIA requests for the Office of the Secretary of Defense ([`/organizations/osd`]) and the Joint Staff ([`/organizations/joint-staff`]), assigned case number 23-F-0906. Its interim response of May 24, 2023, signed by Stephanie L. Carr ([`/people/stephanie-carr`]), Chief, cited unusual circumstances, placed the request in the complex processing queue and named Tyra Howard ([`/people/tyra-howard`]) as the Action Officer. The agency correspondence gives the request date as May 21, 2023, while the MuckRock page gives Submitted May 19, 2023.
+
+  The agency FOIA log ([`/documents/whs-foid-foia-log-fy23`]) records the request as received via PAL on 2023-05-22 and closed on 2023-07-28 with the Final Disposition Granted / Denied in Part; the MuckRock page for the same request shows Status Awaiting Response. The MuckRock page counts 7 Communications, but the archived page shows four of them, and the correspondence here does not include the final response. The Washington Headquarters Services ([`/organizations/whs`]) Contracts page lists files under 23-F-0906: the Final RFQ ([`/documents/foia-23-f-0906-sancorp-ipmo-final-rfq`]), the NDA-NPI ([`/documents/foia-23-f-0906-sancorp-ipmo-nda-npi`]), the DD 254 ([`/documents/foia-23-f-0906-sancorp-ipmo-dd254`]), the Award Notification ([`/documents/foia-23-f-0906-sancorp-ipmo-award-notification`]) and Contract ([`/documents/foia-23-f-0906-sancorp-ipmo-contract`]) for HQ0034-22-C-0064, and the Performance Work Statement ([`/documents/foia-23-f-0906-sancorp-ipmo-pws`]).
+associated_entities:
+- /people/robert-skvarla
+- /people/stephanie-carr
+- /people/tyra-howard
+- /people/toni-fuentes
+- /people/jessica-jordan
+- /people/ken-klippenstein
+- /organizations/dod
+- /organizations/ousd-is
+- /organizations/ipmo
+- /organizations/sancorp-consulting
+- /organizations/dod-freedom-of-information-division
+- /organizations/osd-js-foia-public-liaison
+- /organizations/osd
+- /organizations/joint-staff
+- /organizations/ogis
+- /organizations/nara
+- /organizations/whs
+- /organizations/executive-services-directorate
+- /organizations/department-of-war-information-activity
+- /organizations/muckrock
+- /organizations/the-intercept
+- /organizations/omb
+- /organizations/creem-magazine
+- /organizations/covert-action-magazine
+- /organizations/geopolitical-economy-report
+- /locations/pentagon
+- /locations/washington-dc
+- /locations/boston-massachusetts
+- /locations/college-park-maryland
+- /locations/united-states
+- /documents/freedom-of-information-act
+- /documents/omb-foia-fee-guidelines-1987
+- /documents/intercept-pentagon-ipmo-20230517
+- /documents/ipmo-notre-dame-memo-2022
+- /documents/sancorp-website-ipmo-contract-listing
+- /documents/whs-foid-foia-log-fy23
+- /documents/foia-23-f-0906-sancorp-ipmo-pws
+- /documents/foia-23-f-0906-sancorp-ipmo-contract
+- /documents/foia-23-f-0906-sancorp-ipmo-award-notification
+- /documents/foia-23-f-0906-sancorp-ipmo-dd254
+- /documents/foia-23-f-0906-sancorp-ipmo-nda-npi
+- /documents/foia-23-f-0906-sancorp-ipmo-final-rfq
+timeline:
+- id: t1
+  added_date: '2026-09-26'
+  date: '2022-06-10'
+  event: 'Action date of the definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC, as the request letter states it'
+  category: contract
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, ¶2'
+  node_link: /documents/foia-23-f-0906-sancorp-ipmo-contract
+- id: t2
+  added_date: '2026-09-26'
+  date: '2023-05-17'
+  event: 'Ken Klippenstein of The Intercept reports on the creation of a new perception management office, identified as the IPMO (the report the request letter points to)'
+  category: publication
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 2, ¶2'
+  node_link: /documents/intercept-pentagon-ipmo-20230517
+- id: t3
+  added_date: '2026-09-26'
+  date: '2023-05-22'
+  event: 'Agency receives the request and assigns it FOIA case number 23-F-0906, as the interim response states it'
+  category: foia
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, ¶1'
+- id: t4
+  added_date: '2026-09-26'
+  date: '2023-06-20'
+  event: 'Due date shown on the MuckRock request page'
+  category: foia
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: 'Page header, Due field'
+- id: t5
+  added_date: '2026-09-26'
+  date: '2023-07-28'
+  event: 'Request closed with Final Disposition Granted / Denied in Part (FOID FY23 log # 1244); the MuckRock page still shows Status Awaiting Response (see Preserved Disagreements)'
+  category: foia
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 1244 (Request ID 23-F-0906), Closed Date + Final Disposition cells'
+  node_link: /documents/whs-foid-foia-log-fy23
+records_sought:
+- id: rs1
+  added_date: '2026-09-26'
+  description: 'Copies of records for a definitive contract awarded to Sancorp Consulting, LLC, funded by the Department of Defense through the Office of the Under Secretary of Defense for Intelligence and Security for support services in the Influence and Perception Management Office (IPMO); the request includes, but is not limited to, the items below'
+  identifiers:
+  - scheme: piid
+    value: HQ003422C0064
+  - scheme: other
+    value: 'UEI: GRYKNJ8BGFC8'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, ¶2'
+- id: rs2
+  added_date: '2026-09-26'
+  description: 'Correspondence (internal emails, physical mail, etc.)'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs3
+  added_date: '2026-09-26'
+  description: 'Requests for Proposals'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs4
+  added_date: '2026-09-26'
+  description: 'Requests for Information'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs5
+  added_date: '2026-09-26'
+  description: 'Statements of Work'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs6
+  added_date: '2026-09-26'
+  description: 'Memorandum(s) of Understanding'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs7
+  added_date: '2026-09-26'
+  description: 'Letters of Interest'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs8
+  added_date: '2026-09-26'
+  description: 'Award Letters'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs9
+  added_date: '2026-09-26'
+  description: 'Task Letters'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs10
+  added_date: '2026-09-26'
+  description: 'Privacy Impact Assessments'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs11
+  added_date: '2026-09-26'
+  description: 'Invoices'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs12
+  added_date: '2026-09-26'
+  description: 'Purchase and/or Change Orders'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs13
+  added_date: '2026-09-26'
+  description: 'Project Budgets and/or Budget Proposals'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs14
+  added_date: '2026-09-26'
+  description: 'Evaluation Reports'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+- id: rs15
+  added_date: '2026-09-26'
+  description: 'Presentations by Sancorp Consulting, LLC'
+  source:
+    path: government/foia-23-f-0906-request-description.pdf
+    location: 'p. 1, bulleted list following ¶2'
+correspondence:
+- id: c1
+  added_date: '2026-09-26'
+  date: '2023-05-19'
+  letter_type: request
+  sender: 'Robert Skvarla, Jr.'
+  sender_path: /people/robert-skvarla
+  recipient: 'FOIA officer, Department of Defense, Under Secretary Of Defense For Intelligence And Security (via MuckRock Portal)'
+  recipient_path: /organizations/ousd-is
+  summary: 'Request for copies of records for a definitive contract (award ID: HQ003422C0064) awarded to Sancorp Consulting, LLC, with a fee waiver request as a member of the news media'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: 'Communications, 05/19/2023 (Portal), From: Robert Skvarla, Jr.'
+- id: c2
+  added_date: '2026-09-26'
+  date: '2023-05-21'
+  letter_type: acknowledgment
+  sender: 'OSD/JS FOIA Requester Service Center'
+  sender_path: /organizations/dod-freedom-of-information-division
+  recipient: 'Robert Skvarla'
+  recipient_path: /people/robert-skvarla
+  summary: 'Case Number 23-F-0906 has been assigned to the request'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: 'Communications, 05/21/2023, Subject: PAL Acknowledgement by OSD/JS FOIA Office'
+- id: c3
+  added_date: '2026-09-26'
+  date: '2023-05-21'
+  letter_type: status-update
+  sender: 'OSD/JS FOIA Requester Service Center'
+  sender_path: /organizations/dod-freedom-of-information-division
+  recipient: 'Robert Skvarla'
+  recipient_path: /people/robert-skvarla
+  summary: 'Status of FOIA request #23-F-0906 updated to Received'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: 'Communications, 05/21/2023, Subject: Status Update for Request #23-F-0906'
+- id: c4
+  added_date: '2026-09-26'
+  date: '2023-05-24'
+  letter_type: interim-response
+  sender: 'Freedom of Information Division (Stephanie L. Carr, Chief)'
+  sender_path: /organizations/dod-freedom-of-information-division
+  recipient: 'Dr. Robert Skvarla, MuckRock News'
+  recipient_path: /people/robert-skvarla
+  summary: 'Interim response: unusual circumstances; request placed in the complex processing queue; fee waiver determination at the conclusion of the search; Action Officer Tyra Howard'
+  source:
+    path: government/foia-23-f-0906-interim-response.pdf
+    location: 'p. 1, reference/date block'
+- id: c5
+  added_date: '2026-09-26'
+  date: '2023-05-24'
+  letter_type: other
+  sender: 'Jessica Jordan, FOIA Analyst, Freedom of Information Division, OSD / JS FOIA Office'
+  sender_path: /people/jessica-jordan
+  recipient: 'Dr. Skvarla'
+  recipient_path: /people/robert-skvarla
+  summary: 'Email with the interim response attached; gives the request date as May 21, 2023'
+  source:
+    path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+    location: 'Communications, 05/24/2023, Subject: OSD/JS FOIA 23-F-0906'
+released_records:
+- id: rr1
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-final-rfq
+  release_label: '23-F-0906_A23_Final_RFQ.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_A23_Final_RFQ.pdf'
+- id: rr2
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-nda-npi
+  release_label: '23-F-0906_A23_NDA-NPI.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_A23_NDA-NPI.pdf'
+- id: rr3
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-dd254
+  release_label: '23-F-0906_A23-DD_254_v2.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_A23-DD_254_v2.pdf'
+- id: rr4
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-award-notification
+  release_label: '23-F-0906_HQ0034-22-C-0064_Award_Notification.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_HQ0034-22-C-0064_Award_Notification.pdf'
+- id: rr5
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-contract
+  release_label: '23-F-0906_HQ0034-22-C-0064_Contract.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_HQ0034-22-C-0064_Contract.pdf'
+- id: rr6
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0906-sancorp-ipmo-pws
+  release_label: '23-F-0906_Performance_Work_Statement.pdf'
+  source:
+    path: government/whs-foid-reading-room-contracts-index.html
+    location: 'Contracts file list, 23-F-0906_Performance_Work_Statement.pdf'

@@ -1,0 +1,389 @@
+id: meta/research/dod-23-f-1114
+type: research-artifact
+target_node: foia/dod-23-f-1114
+status: active
+primary_sources:
+- path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+  format: pdf
+- path: government/whs-foid-foia-log-fy23.xlsx
+  format: xlsx
+- path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+  format: html
+document_intrinsic:
+  requester: 'Mr. John Greenewald, Jr (The Black Vault, Inc.)'
+  requester_path: /people/john-greenewald
+  agency: Department of Defense
+  agency_path: /organizations/dod
+  component: Freedom of Information Division
+  component_path: /organizations/dod-freedom-of-information-division
+  tracking_number: 23-F-1114
+  submitted_date: '2023-07-19'
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-09-26'
+  text: 'DEPARTMENT OF DEFENSE FREEDOM OF INFORMATION DIVISION 1155 DEFENSE PENTAGON WASHINGTON, DC 20301-1155'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, letterhead'
+  significance: 'Issuing office of the final response: the DoD Freedom of Information Division at the Pentagon.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: letter-provenance
+  statement_date: '2023-09-11'
+- id: q2
+  added_date: '2026-09-26'
+  text: 'Ref: 23-F-1114 September 11, 2023'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, reference and date line'
+  significance: 'Case number and date of the final response letter.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: letter-provenance
+  statement_date: '2023-09-11'
+- id: q3
+  added_date: '2026-09-26'
+  text: 'Mr. John Greenewald, Jr The Black Vault, Inc. 27305 W. Live Oak Rd. Suite #1203 Castaic, CA 91384'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, addressee block'
+  significance: 'Identifies the requester and his organization.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: requester
+  statement_date: '2023-09-11'
+- id: q4
+  added_date: '2026-09-26'
+  text: 'This is a final response to your July 19, 2023 Freedom of Information Act (FOIA) request, a copy of which is enclosed for your convenience. We received your request on July 19, 2023, and assigned it FOIA case number 23-F-1114.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶1'
+  significance: 'Request date, receipt date, and case-number assignment; marks this letter as the final response.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: request-receipt-and-case-number
+  statement_date: '2023-09-11'
+- id: q5
+  added_date: '2026-09-26'
+  text: 'The Washington Headquarters Services, Acquisition Directorate, a component of the Office of the Secretary of Defense, conducted a search of their records systems and located 125 pages determined to be responsive to your request.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶2'
+  significance: 'Names the component that searched (WHS Acquisition Directorate) and the responsive page count (125).'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: search-and-responsive-records
+  statement_date: '2023-09-11'
+- id: q6
+  added_date: '2026-09-26'
+  text: 'Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives, in her capacity as an Initial Denial Authority (IDA), has also determined that the responsive records contain information exempt from public release, including 11 pages withheld in their entirety pursuant to 5 U.S.C. § 552 (b)(5), inter- and intra- agency memoranda which are deliberative in nature; this exemption is appropriate for internal documents which are part of the decision-making process, and contain subjective evaluations, opinions and recommendations.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶2'
+  significance: 'Initial Denial Authority named; 11 pages withheld in full under (b)(5).'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: exemptions-and-withholdings
+  statement_date: '2023-09-11'
+- id: q7
+  added_date: '2026-09-26'
+  text: 'The aforementioned IDA determined that portions of the remaining 114 responsive pages are exempt from release pursuant to 5 U.S.C. § 552 (b)(4), trade secrets and commercial or financial information obtained from a person and privileged or confidential and (b)(6), disclosure of which would constitute a clearly unwarranted invasion of the personal privacy of individuals. We have considered the foreseeable harm standard when reviewing records and applying exemptions under the FOIA in the processing of this request.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶3'
+  significance: 'The remaining 114 pages released in part with (b)(4) and (b)(6) redactions.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: exemptions-and-withholdings
+  statement_date: '2023-09-11'
+- id: q8
+  added_date: '2026-09-26'
+  text: 'In this instance, fees for processing your request were below the threshold for requiring payment. Please note that fees may be assessed on future requests.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶4'
+  significance: 'No fee charged; the letter does not state a fee category.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: fees
+  statement_date: '2023-09-11'
+- id: q9
+  added_date: '2026-09-26'
+  text: 'If you have any questions or concerns about the foregoing or about the processing of your request, please do not hesitate to contact the Action Officer assigned to your request, Kayla Webster,'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶5'
+  significance: 'Names the FOID Action Officer assigned to the case.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: points-of-contact
+  statement_date: '2023-09-11'
+- id: q10
+  added_date: '2026-09-26'
+  text: 'You have the right to appeal to the appellate authority, Ms. Joo Chung, Assistant to the Secretary of Defense for Privacy, Civil Liberties, and Transparency (PCLT), Office of the Secretary of Defense,'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 2, ¶2 (appeal rights)'
+  significance: 'Names the appellate authority for this determination.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: appeal-rights
+  statement_date: '2023-09-11'
+- id: q11
+  added_date: '2026-09-26'
+  text: 'Your appeal must be postmarked within 90 calendar days of the date of this response.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 2, ¶3 (appeal deadline)'
+  significance: 'Appeal window: 90 calendar days from September 11, 2023.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: appeal-rights
+  statement_date: '2023-09-11'
+- id: q12
+  added_date: '2026-09-26'
+  text: 'Sincerely, Stephanie L. Carr Chief'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 2, signature block'
+  significance: 'Signatory of the final response.'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: letter-provenance
+  statement_date: '2023-09-11'
+- id: q13
+  added_date: '2026-09-26'
+  text: 'Enclosures: As stated'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 2, enclosure line'
+  significance: 'The letter states that the request copy is enclosed, but the archived PDF does not carry it (p. 3 is a Black Vault attribution page; the released record begins p. 4).'
+  context: 'Final response letter, DoD Freedom of Information Division to Mr. John Greenewald, Jr (The Black Vault, Inc.), FOIA case 23-F-1114.'
+  claim_group: letter-provenance
+  statement_date: '2023-09-11'
+- id: q14
+  added_date: '2026-09-26'
+  text: 'I respectfully request a copy of the contract HQ003422C0094, made between the DoD and SANCORP CONSULTING, LLC 3235 VALLEY LN FALLS CHURCH, VA 22044-1740 UNITED STATES. More details about this contract are found here: https://www.usaspending.gov/award/CONT_AWD_HQ003422C0094_9700_-NONE-_-NONE-'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Request Description cell, opening sentences'
+  significance: 'Request as logged by DoD FOID: the contract sought is identified by PIID HQ003422C0094 and contractor (Sancorp Consulting, LLC, Falls Church VA address), with a USAspending award-record pointer'
+  context: 'Request Description cell of the WHS FOID FY2023 FOIA log row for 23-F-1114 (requester Greenewald, John / The Black Vault, Inc.; received via PAL 2023-07-19). The text is the request wording as reproduced in the agency log.'
+  claim_group: records-sought-contract
+  statement_date: '2023-07-19'
+- id: q15
+  added_date: '2026-09-26'
+  text: 'I ask that you include all details and records generated about this contract, including but not limited to, the contract itself, the submitted proposal, any status reports, updates, and amendments. Please search all unclassified and classified records, if applicable, for responsive records. (Date Range for Record Search: From 1/1/2022 To 7/19/2023)'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Request Description cell, closing sentences (immediately following the USAspending URL; the parenthetical date-range clause is part of the cell text)'
+  significance: 'Scope of the request as logged: contract, submitted proposal, status reports, updates, amendments; unclassified and classified records; search window 1/1/2022 to 7/19/2023'
+  context: 'Request Description cell of the Freedom of Information Division FY2023 FOIA log row for 23-F-1114 (requester Greenewald, John / The Black Vault, Inc.); the request wording as reproduced in the agency log.'
+  claim_group: records-sought-scope-and-search-window
+  statement_date: '2023-07-19'
+- id: q16
+  added_date: '2026-09-26'
+  text: 'The Department of Defense (DoD) contracted Sancorp to provide support services to the All-Domain Anomaly Resolution Office (AARO).'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The Department of Defense (DoD) contracted Sancorp'
+  significance: 'The requester-publisher''s one-line characterization of what the 23-F-1114 release documents: a DoD support-services contract with Sancorp for AARO.'
+  context: 'Lead sentence of the Black Vault article (John Greenewald, September 11, 2023) announcing the release.'
+  claim_group: release-announcement-contract-scope
+  statement_date: '2023-09-11'
+- id: q17
+  added_date: '2026-09-26'
+  text: 'The key tasks outlined in the Performance Work Statement (PWS) included establishing and maintaining administrative, security, policy, analytic, and operational support necessary for AARO’s functions.'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The key tasks outlined in the Performance Work Statement (PWS)'
+  significance: 'Identifies the Performance Work Statement as a released record and summarizes its task scope.'
+  context: 'Black Vault summary of the released PWS; secondary characterization of the record, not the PWS text itself.'
+  claim_group: release-announcement-contract-scope
+  statement_date: '2023-09-11'
+- id: q18
+  added_date: '2026-09-26'
+  text: 'Specific services required included executive administrative support, strategy, plans, and policy support, congressional and public affairs, and FOIA support, data architecture support, planning, programming, budgeting, and execution (PPBE) support, reporting support, and operations support.'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The key tasks outlined in the Performance Work Statement (PWS)'
+  significance: 'Black Vault summary of the specific services the released contract documents required, including congressional and public affairs and FOIA support.'
+  context: 'The Black Vault article by John Greenewald announcing the release; secondary characterization of the released records, not the record text itself.'
+  claim_group: release-announcement-contract-scope
+  statement_date: '2023-09-11'
+- id: q19
+  added_date: '2026-09-26'
+  text: 'The contract also emphasized the importance of developing quality control and quality assurance programs to ensure high standards of service delivery.'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The key tasks outlined in the Performance Work Statement (PWS)'
+  significance: 'Black Vault summary: the contract emphasized quality control and quality assurance programs.'
+  context: 'The Black Vault article by John Greenewald announcing the release; secondary characterization of the released records, not the record text itself.'
+  claim_group: release-announcement-contract-scope
+  statement_date: '2023-09-11'
+- id: q20
+  added_date: '2026-09-26'
+  text: 'The contractor was expected to synchronize DoD efforts to address airborne objects of interest, including unidentified aerial phenomena (UAP), through operational surveillance, research and development, intelligence and analysis, mitigation and defeat strategies, and science and technology.'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The key tasks outlined in the Performance Work Statement (PWS)'
+  significance: 'Black Vault summary of the mission-synchronization scope in the released contract documents.'
+  context: 'The Black Vault article by John Greenewald announcing the release; secondary characterization of the released records, not the record text itself.'
+  claim_group: release-announcement-contract-scope
+  statement_date: '2023-09-11'
+- id: q21
+  added_date: '2026-09-26'
+  text: 'The contract between the Department of Defense (DoD) and Sancorp Consulting, LLC, was valued at $1,915,834.08'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ The contract between the Department of Defense (DoD) and Sancorp Consulting, LLC (span ends at the dollar figure, before two zero-width U+200B characters and the closing period)'
+  significance: 'Contract value as reported by The Black Vault.'
+  context: 'The Black Vault article by John Greenewald announcing the release; secondary characterization of the released records, not the record text itself.'
+  claim_group: release-announcement-contract-value
+  statement_date: '2023-09-11'
+- id: q22
+  added_date: '2026-09-26'
+  text: 'DoD Releases Contracts with SANCORP Outlining Work For UFO Office AARO [116 Pages, 20MB] – This is a combined PDF of all documents released. They are marked with ‘bookmarks’ inside of the PDF file for easy reference.'
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: '¶ DoD Releases Contracts with SANCORP Outlining Work For UFO Office AARO [116 Pages, 20MB] (entry links to documents2.theblackvault.com/documents/osd/23-F-1114.pdf; href metadata, not in the extracted text)'
+  significance: 'Describes the released record set as one 116-page combined PDF of all documents released, bookmarked internally — the release as the requester published it.'
+  context: 'The Black Vault article by John Greenewald announcing the release, Document Archive block beneath the article body.'
+  claim_group: released-records-compilation
+  statement_date: '2023-09-11'
+- id: q23
+  added_date: '2026-09-26'
+  text: "1518\t23-F-1114\tGreenewald, John\tThe Black Vault, Inc.\tPAL\t2023-07-19\t2023-08-24\tGranted / Denied in Part"
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Closed Date and Final Disposition cells'
+  significance: 'Final disposition of case 23-F-1114 as logged: closed 2023-08-24, Granted / Denied in Part.'
+  context: 'Freedom of Information Division FY2023 FOIA log, agency-entered row for 23-F-1114 (cells in sheet-header order: #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition).'
+  claim_group: logged-disposition
+  statement_date: '2023-08-24'
+naming_quirks:
+- id: nq1
+  added_date: '2026-09-26'
+  observed: SANCORP
+  canonical: Sancorp Consulting, LLC
+  location: 'q22 (Document Archive entry title); headline'
+  source_path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-09-26'
+  observed: UFO Office AARO
+  canonical: All-Domain Anomaly Resolution Office (AARO)
+  location: 'q22 (Document Archive entry title); headline'
+  source_path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-09-26'
+  observed: FOID
+  canonical: Freedom of Information Division
+  location: 'Sheet title "FOID_FOIA_Log-FY23"'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: off-node-variant
+- id: nq4
+  added_date: '2026-09-26'
+  observed: SANCORP CONSULTING, LLC
+  canonical: Sancorp Consulting, LLC
+  location: 'q14 (Request Description cell, Log # 1518)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+description: 'A Freedom of Information Act (FOIA) ([`/documents/freedom-of-information-act`]) request by John Greenewald ([`/people/john-greenewald`]) of The Black Vault, Inc. ([`/organizations/the-black-vault`]) for a copy of the contract HQ003422C0094, made between the DoD ([`/organizations/dod`]) and Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]), together with all details and records generated about the contract: the contract itself, the submitted proposal, any status reports, updates, and amendments, across unclassified and classified records, with a date range for record search from 1/1/2022 to 7/19/2023. The request was received July 19, 2023 and assigned FOIA case number 23-F-1114. In a final response dated September 11, 2023, the Freedom of Information Division ([`/organizations/dod-freedom-of-information-division`]) stated that the Washington Headquarters Services, Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]), a component of the Office of the Secretary of Defense ([`/organizations/osd`]), located 125 pages responsive to the request. An Initial Denial Authority withheld 11 pages in their entirety under (b)(5) and found portions of the remaining 114 pages exempt under (b)(4) and (b)(6); fees were below the threshold for requiring payment. The FOIA log ([`/documents/whs-foid-foia-log-fy23`]) for the case records a final disposition of Granted / Denied in Part. The Black Vault published the release as a combined PDF of all documents released ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]). The Black Vault summary of the release states that the DoD contracted Sancorp to provide support services to the All-Domain Anomaly Resolution Office (AARO) ([`/organizations/aaro`]), and that the specific services required in the Performance Work Statement (PWS) included congressional and public affairs and FOIA support.'
+associated_entities:
+- /people/john-greenewald
+- /people/paulette-creighton
+- /people/kayla-webster
+- /people/toni-fuentes
+- /people/joo-chung
+- /people/stephanie-carr
+- /organizations/dod
+- /organizations/dod-freedom-of-information-division
+- /organizations/the-black-vault
+- /organizations/whs
+- /organizations/whs-acquisition-directorate
+- /organizations/osd
+- /organizations/enterprise-acquisition-policy-strategic-initiatives
+- /organizations/osd-js-foia-public-liaison
+- /organizations/ogis
+- /organizations/nara
+- /organizations/pclt
+- /organizations/pclfd
+- /organizations/sancorp-consulting
+- /organizations/aaro
+- /organizations/usaspending-gov
+- /locations/pentagon
+- /locations/washington-dc
+- /locations/castaic-california
+- /locations/college-park-maryland
+- /locations/mark-center
+- /locations/alexandria-virginia
+- /locations/falls-church-virginia
+- /documents/freedom-of-information-act
+- /documents/blackvault-sancorp-23-f-1114-aaro-pws
+- /documents/whs-foid-foia-log-fy23
+timeline:
+- id: t1
+  added_date: '2026-09-26'
+  date: '2023-07-19'
+  event: 'Request received by the Freedom of Information Division and assigned FOIA case number 23-F-1114.'
+  category: foia
+  node_link: /organizations/dod-freedom-of-information-division
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶1'
+- id: t2
+  added_date: '2026-09-26'
+  date: '2023-08-24'
+  event: 'The FY2023 FOIA log records the request as closed, with a final disposition of Granted / Denied in Part.'
+  category: foia
+  node_link: /documents/whs-foid-foia-log-fy23
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Closed Date and Final Disposition cells'
+- id: t3
+  added_date: '2026-09-26'
+  date: '2023-09-11'
+  event: 'The Black Vault published "DoD Releases Contracts with SANCORP Outlining Work For UFO Office AARO", with a combined PDF of all documents released.'
+  category: publication
+  node_link: /organizations/the-black-vault
+  source:
+    path: news/blackvault-dod-releases-contracts-sancorp-aaro-20230911.html
+    location: 'header byline ("By John Greenewald September 11, 2023") and Document Archive block'
+records_sought:
+- id: rs1
+  added_date: '2026-09-26'
+  description: 'A copy of the contract HQ003422C0094, made between the DoD and Sancorp Consulting, LLC.'
+  identifiers:
+  - scheme: piid
+    value: HQ003422C0094
+  date_range: 'From 1/1/2022 To 7/19/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Request Description cell, opening sentences'
+- id: rs2
+  added_date: '2026-09-26'
+  description: 'All details and records generated about this contract, including the contract itself, the submitted proposal, any status reports, updates, and amendments, searched across all unclassified and classified records, if applicable.'
+  identifiers:
+  - scheme: piid
+    value: HQ003422C0094
+  date_range: 'From 1/1/2022 To 7/19/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'Log # 1518 (Request ID 23-F-1114), Request Description cell, closing sentences'
+correspondence:
+- id: c1
+  added_date: '2026-09-26'
+  date: '2023-09-11'
+  letter_type: final-response
+  sender: 'Department of Defense, Freedom of Information Division (Stephanie L. Carr, Chief)'
+  sender_path: /organizations/dod-freedom-of-information-division
+  recipient: 'Mr. John Greenewald, Jr, The Black Vault, Inc.'
+  recipient_path: /people/john-greenewald
+  summary: 'Final response: 125 pages located as responsive; 11 pages withheld in their entirety under (b)(5); portions of the remaining 114 pages exempt under (b)(4) and (b)(6); fees below the threshold for requiring payment; appeal rights to the appellate authority within 90 calendar days.'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, letterhead and reference/date line'
+released_records:
+- id: rr1
+  added_date: '2026-09-26'
+  document_path: /documents/blackvault-sancorp-23-f-1114-aaro-pws
+  release_date: '2023-09-11'
+  disposition: released-in-part
+  exemptions:
+  - (b)(4)
+  - (b)(6)
+  pages: '114'
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'p. 1, ¶2-¶3'

@@ -746,7 +746,13 @@ manifest_entry:
 artifact_entry:
   required: [format, path, archived_date]
   optional: [extraction_type, transcript_provenance, note]
-  format_values: [pdf, html, txt, audio, image, video, transcript, yaml, md]
+  format_values: [pdf, html, txt, audio, image, video, transcript, yaml, md, xlsx]
+  # `xlsx` — a spreadsheet as the agency published it (e.g. a FOIA office's
+  #   request log). It has no text layer the extractor reads: register its
+  #   cell-for-cell `.txt` rendering as a same-stem sibling artifact in the
+  #   same URL entry, and `extract_source_text` reads that sibling. Without
+  #   the sibling the source has no extractable text, so quotes from it fail
+  #   the verbatim check (xlsx is NOT in BINARY_FORMATS).
   # `yaml` and `md` were added for the speaker-attribution sibling pair
   # (see meta/schema-speaker-attribution.yaml + /prepare-transcript-sibling):
   #   - yaml — the {slug}-attribution.yaml sibling, source-of-truth for

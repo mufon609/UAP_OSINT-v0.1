@@ -110,9 +110,12 @@ Regenerate after any node add / remove / status change:
 | `/documents/written-testimony-kirkpatrick-2023` | primary-source-confirmed | gov-doc |
 | `/documents/wsj-pentagon-disinformation-ufo-mythology-2025` | primary-source-confirmed | non-gov-doc |
 
-### FOIA (0)
+### FOIA (2)
 
-*No nodes yet.*
+| Node | Status | Kind |
+|---|---|---|
+| `/foia/dod-23-f-0906` | documented | foia |
+| `/foia/dod-23-f-1114` | documented | foia |
 
 ### Transcripts (12)
 
