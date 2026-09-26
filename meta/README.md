@@ -22,7 +22,7 @@ or scripts (`/scripts/`).
 | `sources-access.md` | Site-specific archival workarounds (SEC, defense.gov, Twitter/X, etc.) |
 | `templates/` | Scaffolding templates per node type — consumed by `scripts/build/new.py` |
 | `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build/build-from-research.py`; fork-deletes |
-| `topic/` | Topic-specific governance — priority research queue, topic overview, in-progress working notes, incident records (`incidents/`: dated write-ups of events affecting the evidentiary record, with committed evidence); fork-deletes when toolkit is forked to a different investigation |
+| `topic/` | Topic-specific governance — priority research queue, topic overview, in-progress working notes, the FOIA queue (`foia-queue.md` + `foia-drafts/`: requests planned but not yet sent), incident records (`incidents/`: dated write-ups of events affecting the evidentiary record, with committed evidence); fork-deletes when toolkit is forked to a different investigation |
 
 ## Root vs subdirs
 
