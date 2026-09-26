@@ -100,6 +100,7 @@ from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
 from checks import document_quote_source as ck_document_quote_source
+from checks import foia_letter_url_convention as ck_foia_letter_url_convention
 from checks import frontmatter_parse as ck_frontmatter_parse
 from checks import frontmatter_required as ck_frontmatter_required
 from checks import governance_files as ck_governance_files
@@ -309,15 +310,18 @@ def main():
         if not any(i.fatal for i in manifest_parse_issues):
             # Manifest-integrity family — file presence (archived files
             # exist on disk; git-ignored media exempted), closed enums
-            # (status / format / extraction_type / archive_status), and the
+            # (status / format / extraction_type / archive_status), the
             # artifact-shape invariants (URL uniqueness, artifact-path
-            # uniqueness, status / artifacts alignment). A shape violation
-            # means the URL ↔ artifacts model is silently drifting from schema.
+            # uniqueness, status / artifacts alignment), and the
+            # synthetic-URL FOIA letter convention (wayback_skip + anchor
+            # slug ↔ directory). A shape violation means the URL ↔
+            # artifacts model is silently drifting from schema.
             all_issues.extend(ck_manifest_files_present.check(base_ctx))
             all_issues.extend(ck_manifest_archive_status.check(base_ctx))
             all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
             all_issues.extend(ck_manifest_value_enums.check(base_ctx))
             all_issues.extend(ck_manifest_artifact_shape.check(base_ctx))
+            all_issues.extend(ck_foia_letter_url_convention.check(base_ctx))
 
     # Governance-file validation (render phase). Runs regardless of
     # --path argument since template drift propagates to every node

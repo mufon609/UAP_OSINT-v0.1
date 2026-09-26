@@ -64,6 +64,7 @@ CHECK_PHASE = {
     "manifest_files_present": "archive",
     "manifest_extraction_type": "archive",
     "manifest_artifact_shape": "archive",
+    "foia_letter_url_convention": "archive",  # synthetic FOIA-letter anchor URL ↔ directory convention
     "primary_sources": "archive",
     "doc_form_archival_status": "archive",
     "pdf_page_count": "archive",  # declared pages vs the source PDF's physical count
@@ -122,6 +123,7 @@ CHECK_PHASE = {
     "correspondence": "link",
     "released_records": "link",
     "released_via_consistency": "link",  # document released_via ↔ foia released_records
+    "request_state_consistency": "link",  # foia request_state ↔ released_records[]
     "ownership_timeline": "link",
     "location_relationships": "link",
     "media_versioning": "link",

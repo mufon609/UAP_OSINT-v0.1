@@ -256,7 +256,7 @@ class ResearchContext(BaseContext):
                  parse_error=None,
                  target_type=None, target_archetype=None,
                  target_kind=None, target_derivation_of=None,
-                 target_status=None,
+                 target_status=None, target_request_state=None,
                  node_path=None, node_text=None, source_text=None):
         super().__init__(
             schema=base.schema,
@@ -276,6 +276,11 @@ class ResearchContext(BaseContext):
         self.target_kind = target_kind
         self.target_derivation_of = target_derivation_of
         self.target_status = target_status
+        # foia-only: the target node's frontmatter ``request_state`` value
+        # (None for every non-foia type, and for foia when the target node
+        # is unbuilt/unreadable). Used by request_state_consistency to
+        # cross-check request_state against released_records[].
+        self.target_request_state = target_request_state
         # Cross-layer fields used by review-coverage.py checks (Phase III).
         # Populated by the review-coverage orchestrator after target-node
         # resolution + source extraction; left None for validate-research.py

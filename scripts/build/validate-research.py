@@ -51,6 +51,8 @@ Per-artifact checks (after parse + ResearchContext construction):
                                        — organization / gov-contractor
   - foia_overview, records_sought, correspondence, released_records
                                        — foia-conditional
+  - request_state_consistency         — foia-conditional; frontmatter
+                                         request_state ↔ released_records[]
   - ownership_timeline, top_scope_activity, location_relationships
                                        — location-conditional
   - cross_refs, prose_drift           — whole-artifact
@@ -153,6 +155,7 @@ from checks import quotes as ck_quotes
 from checks import records_sought as ck_records_sought
 from checks import relationships as ck_relationships
 from checks import released_records as ck_released_records
+from checks import request_state_consistency as ck_request_state_consistency
 from checks import resolution_history as ck_resolution_history
 from checks import speaker_attribution_consistency as ck_speaker_attribution_consistency
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
@@ -204,19 +207,23 @@ def _read_target_frontmatter(target_path):
 
 def _discover_target(data):
     """Discover target_type / target_archetype / target_kind /
-    target_derivation_of / target_status from the artifact's
-    target_node and the target node's frontmatter. Returns 5-tuple
-    of None when target_node isn't set or doesn't resolve.
+    target_derivation_of / target_status / target_request_state from the
+    artifact's target_node and the target node's frontmatter. Returns
+    6-tuple of None when target_node isn't set or doesn't resolve.
 
     ``target_status`` is the node's frontmatter ``status`` value
     (e.g., ``open`` / ``paused`` / ``closed`` for investigation); ``None``
     for types that carry no status field, such as findings. Used by checks
     that gate on the node's status — currently
     ``investigation_closure_path_when_paused``.
+
+    ``target_request_state`` is the node's frontmatter ``request_state``
+    value, populated only when ``target_type == "foia"``; ``None``
+    otherwise. Used by ``request_state_consistency``.
     """
     target_node = data.get("target_node") or ""
     if "/" not in target_node:
-        return None, None, None, None, None
+        return None, None, None, None, None, None
 
     content_dir_name = target_node.split("/", 1)[0]
     reverse_map = {v: k for k, v in content_type_dirs().items()}
@@ -224,7 +231,7 @@ def _discover_target(data):
 
     target_path = REPO_ROOT / f"{target_node}.md"
     if not target_path.exists():
-        return target_type, None, None, None, None
+        return target_type, None, None, None, None, None
 
     fm = _read_target_frontmatter(target_path)
     target_archetype = fm.get("archetype") if target_type == "person" else None
@@ -233,8 +240,10 @@ def _discover_target(data):
     )
     target_derivation_of = fm.get("derivation_of") if target_type == "media" else None
     target_status = fm.get("status")
+    target_request_state = fm.get("request_state") if target_type == "foia" else None
 
-    return target_type, target_archetype, target_kind, target_derivation_of, target_status
+    return (target_type, target_archetype, target_kind, target_derivation_of,
+            target_status, target_request_state)
 
 
 # =============================================================================
@@ -297,6 +306,7 @@ _ARTIFACT_CHECKS = [
     ck_records_sought,
     ck_correspondence,
     ck_released_records,
+    ck_request_state_consistency,  # foia request_state ↔ released_records[] cross-check
     ck_ownership_timeline,
     ck_top_scope_activity,
     ck_location_relationships,
@@ -391,7 +401,8 @@ def validate_artifact(path, base_ctx):
 
     # Target discovery (reads target node's frontmatter)
     (target_type, target_archetype, target_kind,
-     target_derivation_of, target_status) = _discover_target(data)
+     target_derivation_of, target_status,
+     target_request_state) = _discover_target(data)
 
     # Full ResearchContext for per-artifact checks. Reuses the parsed
     # data from above — single parse per artifact.
@@ -400,7 +411,7 @@ def validate_artifact(path, base_ctx):
         parse_error=parse_error,
         target_type=target_type, target_archetype=target_archetype,
         target_kind=target_kind, target_derivation_of=target_derivation_of,
-        target_status=target_status,
+        target_status=target_status, target_request_state=target_request_state,
     )
 
     for check_module in _ARTIFACT_CHECKS:

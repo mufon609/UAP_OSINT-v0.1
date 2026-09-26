@@ -45,7 +45,11 @@ check no-ops. Three phases sequence by data dependency:
             through build-from-research → associate → validate, both
             directions (foia → document wrap; document ``released_via``
             → foia back-link), against a synthetic correspondence source
-            injected into the in-memory manifest
+            injected into the in-memory manifest; plus the
+            request_state_consistency fixture set (request_state ↔
+            released_records[] cross-check — error / warn / clean cases)
+            and the foia_letter_url_convention fixture set (synthetic
+            '#foia/' anchor URL ↔ wayback_skip + directory-slug match)
 
 Cleanup is pattern-based on the ``__smoke-*`` slug convention. Fires
 at startup (clears debris from a prior crashed run) and on exit.
@@ -138,6 +142,12 @@ for _check_mod in (
     governance_files,
 ):
     _check_mod.check = _noop_check
+
+# ``foia_letter_url_convention`` is NOT no-op'd — its own fixture
+# (``run_foia_letter_url_convention``) exercises it directly against
+# synthetic BaseContext manifest entries, never the live corpus manifest.
+from checks import BaseContext
+from checks import foia_letter_url_convention
 
 # ── Load each build script as a module ─────────────────────────────────
 
@@ -532,6 +542,159 @@ def run_foia_roundtrip() -> list:
     return [Result(label, True)]
 
 
+# ── request_state / released_records consistency fixtures ──────────────
+#
+# request_state in {released, partial-release} requires >=1 released_records
+# entry (error otherwise); request_state in {denied, no-records} with
+# released_records entries warns (not errors) rather than blocks. Four
+# sub-cases: the two trigger cases plus a clean case each side.
+
+_RSC_CASES = [
+    # (slug, request_state, populate_records, expect_error, expect_warn)
+    ("__smoke-foia-rsc-released-empty", "released", False, True,  False),
+    ("__smoke-foia-rsc-denied-warn",     "denied",   True,  False, True),
+    ("__smoke-foia-rsc-denied-clean",    "denied",   False, False, False),
+]
+
+
+def _populate_rsc_released_record(artifact):
+    import yaml
+    p = Path(artifact)
+    d = yaml.safe_load(p.read_text(encoding="utf-8"))
+    d["released_records"] = [{
+        "id": "rr1", "added_date": "2026-01-01",
+        "document_path": "/documents/__smoke-doc-gov", "release_date": "2026-01-01",
+        "disposition": "released-in-part", "exemptions": ["(b)(6)"],
+        "source": {"path": _FOIA_LETTER, "location": "¶3"},
+    }]
+    p.write_text(yaml.safe_dump(d, sort_keys=False, allow_unicode=True, width=9999),
+                 encoding="utf-8")
+
+
+def run_request_state_consistency() -> list:
+    """Fixture set for the request_state_consistency check. Each of
+    ``_RSC_CASES`` scaffolds its own foia node (a distinct request_state)
+    + research artifact, optionally populates one released_records entry,
+    then runs validate-research and confirms the check fired (or didn't)
+    exactly as expected. Each sub-case is its own Result."""
+    results: list = []
+
+    for slug, state, populate, expect_error, expect_warn in _RSC_CASES:
+        label = f"request-state consistency ({state}{'+records' if populate else ''})"
+        target = f"foia/{slug}"
+        artifact = f"meta/research/{slug}.yaml"
+
+        rc, out, err = _call_main("new", [
+            "foia", "--kind", "foia", "--request-state", state, "--slug", slug,
+        ])
+        if rc != 0:
+            results.append(Result(label, False, f"node scaffold failed (rc={rc}): {_err_summary(out, err)}"))
+            continue
+
+        rc, out, err = _call_main("research-scaffold", ["--target", target])
+        if rc != 0:
+            results.append(Result(label, False, f"research-scaffold failed (rc={rc}): {_err_summary(out, err)}"))
+            continue
+
+        if populate:
+            _populate_rsc_released_record(artifact)
+
+        rc, out, err = _call_main("validate-research", [artifact])
+        combined = out + err
+        fired_error = any(
+            "request_state" in l and "[ERROR]" in l for l in combined.splitlines()
+        )
+        fired_warn = any(
+            "request_state" in l and "[WARN " in l for l in combined.splitlines()
+        )
+
+        if fired_error != expect_error:
+            results.append(Result(label, False,
+                                  f"expected check-error={expect_error}, got {fired_error} "
+                                  f"(rc={rc}): {_err_summary(out, err)}"))
+            continue
+        if fired_warn != expect_warn:
+            results.append(Result(label, False,
+                                  f"expected check-warn={expect_warn}, got {fired_warn} "
+                                  f"(rc={rc})"))
+            continue
+        # rc must reflect ONLY the error expectation — a warn-only or
+        # clean case must still exit 0.
+        if expect_error and rc == 0:
+            results.append(Result(label, False, "expected non-zero rc on error case, got 0"))
+            continue
+        if not expect_error and rc != 0:
+            results.append(Result(label, False, f"expected rc=0 on non-error case, got {rc}: {_err_summary(out, err)}"))
+            continue
+
+        results.append(Result(label, True))
+
+    return results
+
+
+# ── FOIA synthetic-letter-URL convention fixtures ───────────────────────
+#
+# A sources/foia/ artifact whose URL carries a '#foia/' fragment must be
+# wayback_skip, and the fragment's {foia-node-slug} must match the
+# artifact's own directory. Exercised directly against synthetic
+# BaseContext manifest entries — no file needed (manifest_files_present
+# is no-op'd above), and no write to sources/manifest.yaml or any live
+# content directory.
+
+def _foia_letter_entry(path, url, wayback_skip):
+    return [{
+        "url": url,
+        "status": "archived",
+        "archive_status": 1,
+        "wayback_skip": wayback_skip,
+        "artifacts": [{"format": "txt", "path": path, "archived_date": "2026-01-01"}],
+    }]
+
+
+_FLU_CASES = [
+    ("clean — matching slug + wayback_skip", _foia_letter_entry(
+        "foia/__smoke-flu-agency/2026-01-01-final-response.txt",
+        "https://example.invalid/agency-foia#foia/__smoke-flu-agency/2026-01-01/final-response",
+        True,
+    ), False),
+    ("missing wayback_skip", _foia_letter_entry(
+        "foia/__smoke-flu-agency/2026-01-01-final-response.txt",
+        "https://example.invalid/agency-foia#foia/__smoke-flu-agency/2026-01-01/final-response",
+        False,
+    ), True),
+    ("anchor slug doesn't match directory", _foia_letter_entry(
+        "foia/__smoke-flu-agency/2026-01-01-final-response.txt",
+        "https://example.invalid/agency-foia#foia/__smoke-flu-other/2026-01-01/final-response",
+        True,
+    ), True),
+    ("real public URL — convention out of scope, clean", _foia_letter_entry(
+        "foia/__smoke-flu-agency/2026-01-01-request.txt",
+        "https://example.invalid/reading-room/case123",
+        False,
+    ), False),
+]
+
+
+def run_foia_letter_url_convention() -> list:
+    """Fixture set for ``foia_letter_url_convention``. Each of
+    ``_FLU_CASES`` is a synthetic manifest-entries list fed straight to
+    the check function; asserts error-or-not against ``expect_error``.
+    Each sub-case is its own Result."""
+    results: list = []
+    schema = _common.load_schema()
+    for label, manifest_entries, expect_error in _FLU_CASES:
+        ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
+        issues = list(foia_letter_url_convention.check(ctx))
+        got_error = any(i.level == "error" for i in issues)
+        ok = got_error == expect_error
+        results.append(Result(
+            f"foia letter-url convention: {label}", ok,
+            None if ok else
+            f"expected error={expect_error}, got {[i.message for i in issues]}",
+        ))
+    return results
+
+
 # ── Orchestration ──────────────────────────────────────────────────────
 
 def _run_phase(executor, jobs) -> list:
@@ -570,7 +733,11 @@ def main() -> int:
                            for label, target, steps in PHASE3_RESEARCH]
             all_results.extend(_run_phase(exe, phase3_jobs))
 
-            all_results.extend(_run_phase(exe, [(run_foia_roundtrip,)]))
+            all_results.extend(_run_phase(exe, [
+                (run_foia_roundtrip,),
+                (run_request_state_consistency,),
+                (run_foia_letter_url_convention,),
+            ]))
     finally:
         cleanup_fixtures()
 

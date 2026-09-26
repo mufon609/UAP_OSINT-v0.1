@@ -121,13 +121,35 @@ Once the bytes are local:
 3. **Extract to read** — `python3 scripts/build/extract-source.py --source {category}/{file}` renders the source to `/tmp/scratch-*.txt` with `--- page N ---` markers. **Every verbatim quote is read from this extracted text, never from training knowledge** — the source-read-first invariant, checked mechanically by `validate.py`.
 
 **Request correspondence (`sources/foia/`).** Register each letter under
-the URL it was obtained from (an agency reading room, a request-tracking
-portal, a third-party requester's posting). A letter with no public URL —
-correspondence received by email or post — needs a stable synthetic URL
-registered with `--wayback-skip` (the same mechanism derived siblings
-use), since Wayback cannot capture it; the local copy is then the only
-archive, so the URL convention should be settled before the first one
-lands.
+the URL it was obtained from — an agency reading room, a request-tracking
+portal case page, or a third-party requester's posting (MuckRock, The
+Black Vault) — when one exists.
+
+A letter with no public URL — correspondence received by email or post —
+needs a stable synthetic URL, since Wayback cannot capture it and the
+local copy is then the only archive. The convention:
+
+- **URL:** `{agency FOIA office public URL}#foia/{foia-node-slug}/{YYYY-MM-DD}/{letter-type}`
+  — the agency's own FOIA-office public URL as the anchor base (the same
+  "real base + synthetic fragment" shape a derived sibling's anchor URL
+  uses, §5), with `letter-type` drawn from the existing correspondence
+  vocabulary (`meta/schema-research-artifact.yaml` `correspondence_entry.letter_type_values`).
+  Register it with `manifest.py add --wayback-skip` — a synthetic anchor
+  never resolves at archive time.
+- **File:** the original as received (`.eml` or `.pdf`, never retyped)
+  lands at `sources/foia/{foia-node-slug}/{YYYY-MM-DD}-{letter-type}.{ext}`
+  — the one deliberate exception to the flat one-click-per-category rule
+  above, since the synthetic URL carries no natural path of its own the
+  way a real reading-room URL would; nesting by `foia-node-slug` keeps
+  letters from two different requests from colliding on the same
+  date + letter-type.
+- **Manifest note:** records the file's SHA-256, since the synthetic URL
+  can't be re-fetched to confirm the local copy later.
+
+`scripts/checks/foia_letter_url_convention.py` enforces the two cheap
+structural invariants mechanically: a `sources/foia/` artifact whose URL
+carries a `#foia/` fragment must be `wayback_skip`, and the fragment's
+`{foia-node-slug}` must match the artifact's own directory.
 
 The archival guarantee is the **local copy**; Wayback is insurance. A
 source is only fully archived at `archive_status: 3` (both).

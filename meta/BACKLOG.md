@@ -377,20 +377,10 @@ Flagged rows migrate the same way. Re-render the affected organization nodes.
 
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 
-The `foia` type is in the schema, renderer and validators and is covered by smoke
-fixtures, but three things are needed before real FOIA nodes can be built
-cleanly:
+The `foia` type is in the schema, renderer and validators and is covered by
+smoke fixtures. One thing remains before real FOIA nodes can be built cleanly:
 
-1. **Source URLs for letters with no public URL.** Many FOIA letters exist only as
-   emails or portal messages: the request as sent, acknowledgments, fee letters.
-   `sources/README.md` flags this but doesn't decide it. Settle a convention:
-   use the agency portal case URL where one exists; otherwise use a documented
-   synthetic identifier registered with `manifest.py --wayback-skip`. Confirm the
-   validators accept it.
-2. **A check that request state agrees with released records.** Add a check that
-   `request_state: released` or `partial-release` has at least one
-   `released_records` entry. Consider the reverse for `denied` and `no-records`.
-3. **Back-pointers on existing FOIA-derived documents.** When the first `foia`
+1. **Back-pointers on existing FOIA-derived documents.** When the first `foia`
    nodes are built for the third-party requests already behind corpus documents
    (e.g. FOIA 23-F-0906, 23-F-1114), add `released_via` to those `document` nodes
    and re-run `associate.py`.
@@ -399,5 +389,5 @@ Changing `request_state` after creation uses the same path as `status` today
 (`new.py --force`, then re-render). No separate tool is needed unless that path
 proves error-prone.
 
-**Blocks:** building real `foia` nodes (1 and 3).
+**Blocks:** building real `foia` nodes.
 **Blocked by:** none.

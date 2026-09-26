@@ -576,7 +576,11 @@ def main():
         "--wayback-skip",
         action="store_true",
         help="Mark the URL entry as ineligible for Wayback submission "
-             "(synthetic deep-link URLs that won't resolve at archive time)")
+             "(synthetic deep-link URLs that won't resolve at archive time — "
+             "derived siblings' anchor URLs, and a FOIA/MDR letter with no "
+             "public URL registered under its synthetic "
+             "'{agency URL}#foia/{slug}/{date}/{letter-type}' anchor; see "
+             "sources/README.md §3 'Request correspondence')")
     p.add_argument(
         "--archived-date",
         help="Archival date (YYYY-MM-DD) for the artifact; defaults to today. "
