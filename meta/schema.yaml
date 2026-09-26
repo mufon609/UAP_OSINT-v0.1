@@ -21,7 +21,7 @@ limits:
 # load_source_to_artifacts_index — adding a new content-node type only
 # requires listing it here for the directional contract to extend to it.
 architecture_layers:
-  entity:        [person, organization, document, event, transcript, media, location]
+  entity:        [person, organization, document, event, transcript, media, location, foia]
   finding:       [finding]
   investigation: [investigation]
 
@@ -213,10 +213,17 @@ types:
       per_entry: []
     frontmatter:
       required: [id, type, status, kind, doc_form]
-      optional: [archival_status]
+      optional: [archival_status, released_via]
       # archival_status: applies to non-gov-doc doc_forms where the full
       #   text may not be archived locally. Required when doc_form is
       #   `book`; optional for `article` and other non-gov-doc forms.
+      # released_via: back-pointer to the `/foia/{slug}` node (or a list of
+      #   them) whose release produced this document — the node-path
+      #   pointer pattern of transcript.derived_from / media.derivation_of.
+      #   Set it only when the foia node's research artifact lists this
+      #   document in `released_records[]` (enforced by the
+      #   released_via_consistency check). associate.py harvests it into
+      #   `## Associated Nodes`; link_resolution registers an unbuilt target.
     archival_status_values:
       - full-text-archived
       - excerpts-only
@@ -549,6 +556,83 @@ types:
     # off-node-variant). No frontmatter
     # gate, so no conditionally_required entry — section auto-suppressed
     # by renderer; optional_sections list above declares acceptability.
+
+  # --- FOIA ---------------------------------------------------------------
+  # One records request — a FOIA request (5 U.S.C. § 552) or a Mandatory
+  # Declassification Review request (E.O. 13526 § 3.5) — ours or a third
+  # party's. The node is the request's record: who asked which agency /
+  # component for what (itemized, with identifiers such as contract PIIDs),
+  # the correspondence that moved it, where it stands, and the `document`
+  # nodes its release produced. Appeals are tracked inside the node (appeal
+  # letters are `correspondence` entries; `appealed` is a request_state),
+  # not as a separate kind.
+  #
+  # Every structured claim is anchored to archived correspondence under
+  # `sources/foia/` (the request as sent, acknowledgment, fee letters,
+  # interim / final responses, appeal letters) or to the release itself.
+  # A foia node is Tier-2 entity: it ingests its correspondence as primary
+  # sources, so it carries `associated_entities` like a document.
+  #
+  # `status` keeps the repo-wide node-status meaning (the node's build
+  # state). Where the REQUEST stands lives in the separate `request_state`
+  # frontmatter field — closed vocabulary below, enforced by the
+  # request_state check, mirrored into the rendered Overview.
+  foia:
+    path: foia
+    status_values: [documented, in-progress]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry:
+        - [records_sought, description]
+        - [correspondence, summary]
+    frontmatter:
+      required: [id, type, status, kind, request_state]
+    request_state_values:
+      - submitted         # request sent; no agency response archived yet
+      - acknowledged      # agency acknowledged receipt / assigned a tracking number
+      - processing        # search / review / fee or scope correspondence under way
+      - released          # final response released the records sought in full
+      - partial-release   # final or interim response released records in part (redacted / partially withheld)
+      - denied            # final response withheld the records in full
+      - no-records        # final response: search located no responsive records
+      - appealed          # an administrative appeal is pending
+      - closed            # request closed without release (withdrawn, administratively closed, appeal decided without release)
+    kinds:
+      foia:
+        description: "Freedom of Information Act request — 5 U.S.C. § 552"
+        required_sections:
+          - Overview
+          - Description
+          - Records Sought
+          - Correspondence
+          - Key Passages
+          - Released Records
+          - Timeline
+          - Associated Nodes
+      mdr:
+        description: "Mandatory Declassification Review request — E.O. 13526 § 3.5"
+        required_sections:
+          - Overview
+          - Description
+          - Records Sought
+          - Correspondence
+          - Key Passages
+          - Released Records
+          - Timeline
+          - Associated Nodes
+    optional_sections:
+      - Source-Form Notes
+      - Preserved Disagreements
+      - Name Variants
+    # Source-Form Notes / Preserved Disagreements / Name Variants render
+    # conditionally from naming_quirks resolutions (auto-suppressed when
+    # empty), as on documents.
+    section_rules:
+      Key Passages: {requires_quote_attribution: true}
+      Correspondence: {chronological: true}
+      Released Records: {chronological: true}
+      Timeline: {chronological: true}
 
   # --- INVESTIGATION ------------------------------------------------------
   # An investigation pursues an OPEN QUESTION or hypothesis by consuming

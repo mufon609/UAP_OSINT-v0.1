@@ -37,10 +37,15 @@ Concurrency: ``ProcessPoolExecutor`` with the ``fork`` mp_context.
 Workers inherit the parent's pre-loaded modules, caches, and the
 check no-ops. Three phases sequence by data dependency:
 
-  Phase 1 — 21 independent scaffolds (no inter-deps)
-  Phase 2 — 2 dependent scaffolds (transcript-other → doc-gov;
-            media-deriv → media-video)
-  Phase 3 — 14 research-artifact pipelines (independent per artifact)
+  Phase 1 — independent scaffolds (no inter-deps)
+  Phase 2 — dependent scaffolds (transcript-other → doc-gov;
+            media-deriv → media-video; doc-foia-release → foia-release)
+  Phase 3 — research-artifact pipelines (independent per artifact)
+  Phase 4 — the populated foia round trip: a released-records link
+            through build-from-research → associate → validate, both
+            directions (foia → document wrap; document ``released_via``
+            → foia back-link), against a synthetic correspondence source
+            injected into the in-memory manifest
 
 Cleanup is pattern-based on the ``__smoke-*`` slug convention. Fires
 at startup (clears debris from a prior crashed run) and on exit.
@@ -80,6 +85,28 @@ from lib._common import MANIFEST_PATH, iter_artifacts, strict_yaml_load
 _common.load_schema()
 with open(MANIFEST_PATH) as f:
     _MANIFEST = strict_yaml_load(f) or []
+
+# Synthetic correspondence source for the Phase 4 foia round trip. Lives
+# in the in-memory manifest only (never written to sources/manifest.yaml);
+# the file itself is written at startup and removed by cleanup_fixtures(),
+# so the fixture never depends on (fork-deleted) corpus content.
+_FOIA_LETTER = "foia/__smoke-foia-letter.txt"
+_FOIA_LETTER_TEXT = """Ref: 99-F-0001
+
+Dear Requester:
+
+This is the final response to your Freedom of Information Act request for
+records of contract HQ0000-99-C-0001.
+
+The enclosed record is released in part under exemption (b)(6).
+"""
+_MANIFEST = list(_MANIFEST) + [{
+    "url": "https://example.invalid/__smoke-foia-letter",
+    "status": "archived",
+    "archive_status": 1,
+    "artifacts": [{"format": "txt", "path": _FOIA_LETTER,
+                   "archived_date": "2026-01-01"}],
+}]
 _common.load_manifest = lambda: _MANIFEST
 _common.load_manifest_paths = lambda entries=None: {
     a.get("path")
@@ -128,6 +155,7 @@ _MODULES = {
     "validate-research": _load_module("validate_research_module", "scripts/build/validate-research.py"),
     "build-from-research": _load_module("build_from_research_module", "scripts/build/build-from-research.py"),
     "review-coverage": _load_module("review_coverage_module", "scripts/build/review-coverage.py"),
+    "associate": _load_module("associate_module", "scripts/build/associate.py"),
 }
 
 
@@ -197,7 +225,9 @@ _FIXTURE_GLOBS = [
     "locations/__smoke-*.md",
     "findings/__smoke-*.md",
     "investigations/__smoke-*.md",
+    "foia/__smoke-*.md",
     "meta/research/__smoke-*.yaml",
+    "sources/foia/__smoke-*",
 ]
 
 
@@ -336,6 +366,9 @@ PHASE1_SCAFFOLDS = [
     ("location",                   ["location",      "--slug", "__smoke-location"]),
     ("finding",                    ["finding",       "--slug", "__smoke-finding"]),
     ("investigation",              ["investigation", "--slug", "__smoke-investigation", "--question", "Does the test question resolve?"]),
+    ("foia foia",                  ["foia", "--kind", "foia", "--request-state", "submitted",  "--slug", "__smoke-foia-foia"]),
+    ("foia mdr",                   ["foia", "--kind", "mdr",  "--request-state", "processing", "--slug", "__smoke-foia-mdr"]),
+    ("foia release",               ["foia", "--kind", "foia", "--request-state", "partial-release", "--slug", "__smoke-foia-release"]),
 ]
 
 # Phase 2 — scaffolds that reference Phase 1 outputs. transcript-other
@@ -351,6 +384,11 @@ PHASE2_SCAFFOLDS = [
         "media", "--kind", "video",
         "--derivation-of", "/media/__smoke-media-video",
         "--slug", "__smoke-media-deriv",
+    ]),
+    ("document released-via", [
+        "document", "--kind", "gov-doc", "--form", "letter",
+        "--released-via", "/foia/__smoke-foia-release",
+        "--slug", "__smoke-doc-foia-release",
     ]),
 ]
 
@@ -374,7 +412,124 @@ PHASE3_RESEARCH = [
     ("org-private",    "organizations/__smoke-org-private",        ("build", "coverage")),
     ("finding",        "findings/__smoke-finding",                 ("build",)),
     ("investigation",  "investigations/__smoke-investigation",     ("build",)),
+    ("foia-foia",      "foia/__smoke-foia-foia",                   ("build", "coverage")),
+    ("foia-mdr",       "foia/__smoke-foia-mdr",                    ("build", "coverage")),
 ]
+
+
+# Phase 4 — populated foia round trip. The artifact below is the minimum a
+# real release carries: an itemized ask with an identifier, the letter,
+# a verbatim passage, and a released-records link to a document node that
+# points back via ``released_via``.
+_FOIA_RT = "__smoke-foia-release"
+_FOIA_RT_DOC = "/documents/__smoke-doc-foia-release"
+
+
+def _populate_foia_roundtrip(artifact):
+    import yaml
+    p = Path(artifact)
+    d = yaml.safe_load(p.read_text(encoding="utf-8"))
+    src = {"path": _FOIA_LETTER, "location": "¶2"}
+    d["document_intrinsic"] = {"tracking_number": "99-F-0001",
+                               "fee_category": "other"}
+    d["description"] = ("Freedom of Information Act request for records of "
+                        "contract HQ0000-99-C-0001.")
+    d["associated_entities"] = [_FOIA_RT_DOC]
+    d["records_sought"] = [{
+        "id": "rs1", "added_date": "2026-01-01",
+        "description": "records of contract HQ0000-99-C-0001",
+        "identifiers": [{"scheme": "piid", "value": "HQ0000-99-C-0001"}],
+        "source": src,
+    }]
+    d["correspondence"] = [{
+        "id": "c1", "added_date": "2026-01-01", "date": "2026-01-01",
+        "letter_type": "final-response", "tracking_number": "99-F-0001",
+        "source": {"path": _FOIA_LETTER, "location": "¶1"},
+    }]
+    d["released_records"] = [{
+        "id": "rr1", "added_date": "2026-01-01",
+        "document_path": _FOIA_RT_DOC, "release_date": "2026-01-01",
+        "disposition": "released-in-part", "exemptions": ["(b)(6)"],
+        "source": {"path": _FOIA_LETTER, "location": "¶3"},
+    }]
+    d["quotes"] = [{
+        "id": "q1", "added_date": "2026-01-01",
+        "text": "The enclosed record is released in part under exemption (b)(6).",
+        "significance": "Partial release",
+        "source": {"path": _FOIA_LETTER, "location": "¶3"},
+    }]
+    p.write_text(yaml.safe_dump(d, sort_keys=False, allow_unicode=True, width=9999),
+                 encoding="utf-8")
+
+
+def _section(text, title):
+    """Body of the ``## {title}`` section ('' when absent)."""
+    head = f"## {title}\n"
+    if head not in text:
+        return ""
+    return text.split(head, 1)[1].split("\n## ", 1)[0]
+
+
+def run_foia_roundtrip() -> list:
+    """build-from-research → associate → validate on a foia node with a
+    released-records link, then associate + validate the released document
+    (its ``released_via`` back-link must reach ## Associated Nodes and agree
+    with the foia artifact). Each step is its own Result."""
+    label = "foia round-trip"
+    target = f"foia/{_FOIA_RT}"
+    artifact = f"meta/research/{_FOIA_RT}.yaml"
+    node = f"{target}.md"
+    doc_node = _FOIA_RT_DOC.lstrip("/") + ".md"
+
+    def fail(step, rc, out, err):
+        return Result(f"{label} {step}", False, f"rc={rc}: {_err_summary(out, err)}")
+
+    rc, out, err = _call_main("research-scaffold", ["--target", target,
+                                                    "--sources", _FOIA_LETTER])
+    if rc != 0:
+        return [fail("scaffold", rc, out, err)]
+    _populate_foia_roundtrip(artifact)
+
+    rc, out, err = _call_main("validate-research", [artifact, "--quiet"])
+    if rc != 0:
+        return [fail("validate-research", rc, out, err)]
+    # --no-validate: the orchestrator's pre-flight / post-build validators
+    # run as subprocesses reading the on-disk manifest, which never carries
+    # the synthetic letter; both validators run in-process around it.
+    rc, out, err = _call_main("build-from-research", [artifact, "--no-validate"])
+    if rc != 0:
+        return [fail("build-from-research", rc, out, err)]
+    rc, out, err = _call_main("associate", [node])
+    if rc != 0:
+        return [fail("associate", rc, out, err)]
+    rc, out, err = _call_main("validate", [node, "--quiet"])
+    if rc != 0:
+        return [fail("validate", rc, out, err)]
+    rc, out, err = _call_main("review-coverage", [artifact])
+    if rc != 0:
+        return [fail("review-coverage", rc, out, err)]
+
+    body = Path(node).read_text(encoding="utf-8")
+    wrap = f"[`{_FOIA_RT_DOC}`]"
+    if wrap not in _section(body, "Released Records"):
+        return [Result(f"{label} released-records link", False,
+                       f"{wrap} missing from ## Released Records")]
+    if wrap not in _section(body, "Associated Nodes"):
+        return [Result(f"{label} forward association", False,
+                       f"{wrap} missing from ## Associated Nodes")]
+
+    rc, out, err = _call_main("associate", [doc_node])
+    if rc != 0:
+        return [fail("associate document", rc, out, err)]
+    back = f"[`/{target}`]"
+    doc_assoc = _section(Path(doc_node).read_text(encoding="utf-8"), "Associated Nodes")
+    if "### FOIA Requests" not in doc_assoc or back not in doc_assoc:
+        return [Result(f"{label} back-link", False,
+                       f"{back} missing from the document's ## Associated Nodes")]
+    rc, out, err = _call_main("validate", [doc_node, "--quiet"])
+    if rc != 0:
+        return [fail("validate document", rc, out, err)]
+    return [Result(label, True)]
 
 
 # ── Orchestration ──────────────────────────────────────────────────────
@@ -392,6 +547,9 @@ def _run_phase(executor, jobs) -> list:
 
 def main() -> int:
     cleanup_fixtures()
+    letter = REPO_ROOT / "sources" / _FOIA_LETTER
+    letter.parent.mkdir(parents=True, exist_ok=True)
+    letter.write_text(_FOIA_LETTER_TEXT, encoding="utf-8")
 
     ctx = mp.get_context("fork")
     # nproc = 4 on the dev machine; ProcessPoolExecutor defaults to
@@ -411,6 +569,8 @@ def main() -> int:
             phase3_jobs = [(run_research, label, target, steps)
                            for label, target, steps in PHASE3_RESEARCH]
             all_results.extend(_run_phase(exe, phase3_jobs))
+
+            all_results.extend(_run_phase(exe, [(run_foia_roundtrip,)]))
     finally:
         cleanup_fixtures()
 

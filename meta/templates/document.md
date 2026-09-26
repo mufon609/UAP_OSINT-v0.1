@@ -9,6 +9,11 @@ doc_form: {{doc_form}}
      excerpts-only, not-archived.
 archival_status: {{archival_status}}
 -->
+<!-- RELEASED_VIA: optional back-pointer to the /foia/{slug} node whose
+     release produced this document (new.py --released-via). The foia node's
+     research artifact must list this document in released_records[].
+released_via: /foia/{slug}
+-->
 ---
 
 # {{display_name}}

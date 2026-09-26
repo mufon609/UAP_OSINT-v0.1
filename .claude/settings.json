@@ -19,6 +19,7 @@
       "Write(/findings/**)",
       "Edit(/investigations/**)",
       "Write(/investigations/**)",
+      "Edit(/foia/**)",
       "Write(/meta/research/**)"
     ]
   },

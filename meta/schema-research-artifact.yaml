@@ -123,6 +123,17 @@ required_keys:
   #                skipped. Location has no kinds, so a single key set.
   #                Status comes from frontmatter; contributors don't
   #                duplicate it into document_intrinsic.)
+  #     foia:      requester, requester_path, agency, agency_path,
+  #                component, component_path, tracking_number,
+  #                submitted_date, fee_category (closed vocabulary —
+  #                foia_fee_category_values below), fee_waiver
+  #                (free-text as the correspondence states it)
+  #                (renders as the `## Overview` fact table; empty keys
+  #                skipped. Free-text and `_path` forms coexist: the
+  #                text is the party as the correspondence names it, the
+  #                path its repo node (wrapped). The request's state is
+  #                frontmatter `request_state`, mirrored into the Overview
+  #                by the renderer — never duplicated here.)
   #   Every key is a fact the primary source(s) attest to. Facts not
   #   attested in a primary source don't belong here — they belong in
   #   `description` (synthesis, labeled) or don't enter the record.
@@ -176,7 +187,7 @@ required_keys:
 conditional_keys:
   associated_entities:
     required_when_any_of:
-      - target_node_type_in: [document, transcript, media]
+      - target_node_type_in: [document, transcript, media, foia]
       - target_node_type_in: [event]
         target_node_kind_in: [hearing]
     # The complete, authoritative list of EVERY load-bearing entity the
@@ -211,7 +222,8 @@ conditional_keys:
     #
     # Which nodes carry the field — the ``required_when_any_of`` rule above:
     # a node that IS an ingested primary source, the node whose source body the
-    # rule enumerates. That is ``document`` / ``transcript`` / ``media`` and the
+    # rule enumerates. That is ``document`` / ``transcript`` / ``media`` /
+    # ``foia`` (which ingests its request correspondence) and the
     # ``event``-kind ``hearing`` node (which is the hearing record — its quotes
     # come from the transcript, and it is the sole home for the full-hearing
     # entity union). It is FORBIDDEN (iff_section "should not be present") on a
@@ -265,7 +277,7 @@ conditional_keys:
     # ``research-artifact.cited_works_sentinel_values`` (above).
   timeline:
     required_when_any_of:
-      - target_node_type_in: [person, organization, event, finding]
+      - target_node_type_in: [person, organization, event, finding, foia]
     # Aggregated chronological dated facts about the node's subject.
     # On finding artifacts, the timeline list may be empty (non-
     # temporal patterns omit it; renderer auto-suppresses the
@@ -278,6 +290,11 @@ conditional_keys:
     # publication / clearance / incident / filing / other). Node
     # renderer emits in chronological order; the chronological-ordering check
     # confirms the rendered Timeline table is earliest-first.
+    # On foia artifacts the rendered Timeline merges this list with one
+    # row per ``correspondence[]`` entry (date + letter_type), so a letter's
+    # date is recorded once, on its correspondence entry; ``timeline[]``
+    # carries only the dated facts that are NOT a letter (the records' own
+    # dates, a reading-room posting, litigation). May be empty.
   corroboration_items:
     required_when_any_of:
       - target_node_archetype_in: [eyewitness]
@@ -460,6 +477,31 @@ conditional_keys:
     # (org-to-org) by virtue of the heterogeneous entity_path field.
     # Renders as the `## Relationships` section with Confirmed /
     # Flagged split. Entry shape: location_relationship_entry below.
+  records_sought:
+    required_when_any_of:
+      - target_node_type_in: [foia]
+    # The request's itemized asks — one entry per item the request letter
+    # enumerates, each carrying the identifiers the letter names (contract
+    # PIIDs, document / report / case numbers). Renders as the
+    # `## Records Sought` table. Entry shape: records_sought_entry below.
+  correspondence:
+    required_when_any_of:
+      - target_node_type_in: [foia]
+    # Every archived letter that moved the request — the request as sent,
+    # acknowledgment, fee letters, interim / final responses, appeal and
+    # appeal-determination letters. Each entry cites its archived source
+    # (``source.path`` in the manifest, normally under ``sources/foia/``).
+    # Renders as the `## Correspondence` table (chronological) and feeds
+    # the rendered Timeline. Entry shape: correspondence_entry below.
+  released_records:
+    required_when_any_of:
+      - target_node_type_in: [foia]
+    # The records the agency released under this request, each a
+    # ``/documents/{slug}`` node (stub permitted — an unbuilt target lands
+    # on the broken-link registry). The document node points back via its
+    # optional frontmatter ``released_via``. Empty list while nothing has
+    # been released. Renders as the `## Released Records` table. Entry
+    # shape: released_record_entry below.
   pattern_statement:
     required_when_any_of:
       - target_node_type_in: [finding]
@@ -1069,6 +1111,95 @@ location_relationship_entry:
 
 # --- Finding entry shapes ---
 
+records_sought_entry:
+  required: [description, source]
+  optional: [identifiers, date_range, item_label]
+  # description: contributor wording of the item the request asks for
+  #   (scanned by the prose-drift check — per_entry [records_sought,
+  #   description] — against the primary_sources token pool, so it is
+  #   written in the request letter's own vocabulary).
+  # identifiers: list of {scheme, value} — the identifiers the request
+  #   names for this item. ``scheme`` is closed vocabulary
+  #   (identifier_scheme_values); ``value`` is the identifier exactly as
+  #   the cited source prints it — enforced by the records_sought check,
+  #   which matches it against the extracted ``source.path`` text (the
+  #   same normalize_for_compare substring match cited_works applies).
+  # date_range: free-text span of the records sought as the letter states
+  #   it (e.g. "2008-2012").
+  # item_label: the letter's own item marker (e.g. "Item 3", "(a)").
+  # source: object with path + location — the request letter (or the
+  #   agency's restatement of scope) attesting the item.
+  identifier_scheme_values:
+    - piid                  # procurement instrument identifier (contract / order number, FAR 4.1601)
+    - solicitation-number
+    - document-number       # a document's own control / serial number
+    - report-number
+    - case-number           # another request / appeal / litigation case number
+    - other
+
+correspondence_entry:
+  required: [date, letter_type, source]
+  optional: [sender, recipient, sender_path, recipient_path, tracking_number, summary]
+  # date: YYYY-MM-DD the letter bears (YYYY-MM tolerated when only the month
+  #   is attested).
+  # letter_type: closed vocabulary (letter_type_values). Direction is
+  #   implied by the type (request / appeal / status-inquiry go requester →
+  #   agency; the rest agency → requester) — no separate direction field.
+  # sender / recipient: free-text as the letter names them;
+  #   sender_path / recipient_path: optional /people/ or /organizations/
+  #   node paths (wrapped in the rendered table).
+  # tracking_number: the number this letter carries when it differs from
+  #   the Overview's (an appeal number, a referral's new number).
+  # summary: optional one-line contributor gloss of what the letter does;
+  #   prose-drift scanned (per_entry [correspondence, summary]).
+  # source: object with path + location — the archived letter itself.
+  letter_type_values:
+    - request
+    - acknowledgment
+    - clarification-request
+    - clarification-response
+    - fee-letter
+    - fee-waiver-determination
+    - status-inquiry
+    - status-update
+    - referral-notice
+    - interim-response
+    - final-response
+    - appeal
+    - appeal-acknowledgment
+    - appeal-determination
+    - other
+
+released_record_entry:
+  required: [document_path, source]
+  optional: [release_date, disposition, exemptions, pages, release_label]
+  # document_path: /documents/{slug} node the release produced (stub
+  #   permitted). Wrapped in the rendered table, so associate.py links it.
+  # release_date: YYYY-MM-DD of the response that released it — sorts the
+  #   rendered table (its `Date Released` column is chronologically checked).
+  # disposition: closed vocabulary (disposition_values).
+  # exemptions: list of exemption citations exactly as the response cites
+  #   them (e.g. "(b)(6)", "(b)(3)", "25X1") — free strings; FOIA and MDR
+  #   cite different authorities.
+  # pages: page count released, as the response states it.
+  # release_label: the response's own marker for the record (e.g. "Doc 1",
+  #   "Enclosure 2").
+  # source: object with path + location — the response letter (or the
+  #   release package) attesting the release.
+  disposition_values:
+    - released-in-full
+    - released-in-part
+
+foia_fee_category_values:
+  # document_intrinsic.fee_category on foia artifacts — the fee category the
+  # agency assigned (5 U.S.C. § 552(a)(4)(A)(ii)). Absent when the
+  # correspondence does not state one (MDR requests commonly do not).
+  - commercial
+  - educational
+  - noncommercial-scientific
+  - news-media
+  - other
+
 contradiction_entry:
   required: [id, question, positions]
   optional: []
@@ -1316,7 +1447,7 @@ invariants:
 
   # Conditional sections
   - "cited_works section present iff target_node type == document; value is 'NONE' | 'IGNORED' | non-empty list of cited_work_entry (bare [] REJECTED — see cited_works check)"
-  - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
+  - "timeline section present if target_node type in [person, organization, event, finding, foia]; absent otherwise"
   - "corroboration_items section present iff target_node archetype == eyewitness"
   - "program_involvement section present iff target_node archetype == institutional-actor"
   - "publication_record section present iff target_node archetype == reporter"
@@ -1329,6 +1460,12 @@ invariants:
   - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
   - "key_personnel and org_relationships sections present iff target_node type == organization"
   - "contracts section present iff target_node type == organization AND kind == gov-contractor"
+  - "records_sought / correspondence / released_records sections present iff target_node type == foia (released_records may be empty until a release)"
+  - "records_sought_entry.identifiers[].value appears verbatim in the entry's source — enforced by records_sought"
+  - "correspondence_entry.letter_type: correspondence_entry.letter_type_values"
+  - "released_record_entry.disposition (when set): released_record_entry.disposition_values"
+  - "foia document_intrinsic.fee_category (when set): foia_fee_category_values"
+  - "document frontmatter released_via → the foia artifact's released_records lists the document — enforced by released_via_consistency"
   - "ownership_timeline, top_scope_activity, location_relationships sections present iff target_node type == location"
   - "pattern_statement / establishes / does_not_establish sections present iff target_node type == finding"
   - "contradictions section present iff target_node type == finding (empty list permitted; populated drives the Apparent Contradictions section)"

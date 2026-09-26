@@ -81,6 +81,7 @@ from lib._common import (  # noqa: E402
     SOURCES_DIR,
     STOPWORDS,
     body_outside_quirk_tables,
+    content_dirs,
     extract_source_text,
     normalize_for_compare,
     strict_yaml_load,
@@ -302,13 +303,11 @@ def paragraph_coverage(paragraphs, quotes_for_source, min_chars):
 
 
 # Rendered-node type directories, relative to REPO_ROOT — where a
-# built node lands by type. The grounding check resolves an artifact
-# `meta/research/{slug}.yaml` to its rendered `{type}/{slug}.md` by
-# stem; slugs are unique across the corpus, so the first match wins.
-_NODE_TYPE_DIRS = (
-    "documents", "people", "organizations", "events", "transcripts",
-    "media", "locations", "findings", "investigations",
-)
+# built node lands by type (schema-derived). The grounding check resolves
+# an artifact `meta/research/{slug}.yaml` to its rendered
+# `{type}/{slug}.md` by stem; slugs are unique across the corpus, so the
+# first match wins.
+_NODE_TYPE_DIRS = tuple(content_dirs())
 
 
 def find_rendered_node(slug):

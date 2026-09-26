@@ -155,12 +155,36 @@ def entity_type_names():
 
 def entity_type_dirs():
     """Set of entity-layer directory names (people, organizations,
-    documents, events, transcripts, media, locations). Convenience
+    documents, events, transcripts, media, locations, foia). Convenience
     for callers that key by directory rather than type name (e.g.,
     ``target_node`` strings parsed from research artifacts)."""
     types = entity_type_names()
     dir_map = content_type_dirs()
     return frozenset(dir_map[t] for t in types if t in dir_map)
+
+
+# Frontmatter fields that carry node-path semantics, keyed by node type.
+# The value (a ``/type/slug`` path, or a list of them) is a node pointer:
+# link_resolution checks its target exists (unbuilt → broken-link
+# registry), associate.py harvests it into ``## Associated Nodes``.
+# Shared so the two consumers can't disagree about which fields point.
+NODE_PATH_FRONTMATTER_FIELDS = {
+    "media":      ["derivation_of"],   # parent media node
+    "transcript": ["derived_from"],    # underlying media or document node
+    "document":   ["released_via"],    # foia node(s) whose release produced it
+}
+
+
+def frontmatter_node_paths(node_type, fm):
+    """Yield every node path set in ``fm`` under the node type's
+    ``NODE_PATH_FRONTMATTER_FIELDS``, normalized to leading-slash form.
+    Accepts a bare string or a list of strings per field."""
+    for field in NODE_PATH_FRONTMATTER_FIELDS.get(node_type, []):
+        value = (fm or {}).get(field)
+        values = value if isinstance(value, list) else [value]
+        for v in values:
+            if isinstance(v, str) and v.strip():
+                yield "/" + v.strip().lstrip("/")
 
 
 def iter_artifacts(entries):

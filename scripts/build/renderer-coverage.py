@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Verify every schema-required section is renderer-producible.
 
-For each content type in ``meta/schema.yaml``'s ``types`` (the nine content
-types — meta / research-artifact / attestation_tier excluded), gather the
+For each content type in ``meta/schema.yaml``'s ``types`` (every type with a
+renderer — meta / research-artifact / attestation_tier excluded), gather the
 COMPLETE set of sections the schema can require for it: the union, in RAW
 ``{topic_display_name}`` placeholder form (no topic substitution), of every
 ``required_sections`` list (across all kinds / archetypes, or the top-level
@@ -50,12 +50,13 @@ from renderers.event import EMITS as EVENT_EMITS  # noqa: E402
 from renderers.transcript import EMITS as TRANSCRIPT_EMITS  # noqa: E402
 from renderers.media import EMITS as MEDIA_EMITS  # noqa: E402
 from renderers.location import EMITS as LOCATION_EMITS  # noqa: E402
+from renderers.foia import EMITS as FOIA_EMITS  # noqa: E402
 from renderers.finding import EMITS as FINDING_EMITS  # noqa: E402
 from renderers.investigation import EMITS as INVESTIGATION_EMITS  # noqa: E402
 
 
-# Renderer ``EMITS`` keyed by content-type name. The nine content types;
-# meta / research-artifact are not content types and carry no renderer.
+# Renderer ``EMITS`` keyed by content-type name — one entry per content
+# type; meta / research-artifact are not content types and carry no renderer.
 RENDERER_EMITS = {
     "document": DOCUMENT_EMITS,
     "person": PERSON_EMITS,
@@ -64,6 +65,7 @@ RENDERER_EMITS = {
     "transcript": TRANSCRIPT_EMITS,
     "media": MEDIA_EMITS,
     "location": LOCATION_EMITS,
+    "foia": FOIA_EMITS,
     "finding": FINDING_EMITS,
     "investigation": INVESTIGATION_EMITS,
 }

@@ -191,10 +191,12 @@ invocation; the relay/contract split holds one level down too.
 3. **`Agent(archive)`** with the (validated) `queued_sources[]`. Read
    `archived[]`.
 4. **Scaffold once, here** *(orchestrator step — not a role)* — only after sourcing has settled the node's
-   classification (person **archetype** / org **kind** / document **form**)
+   classification (person **archetype** / org **kind** / document **form** /
+   foia **kind** + **request_state**)
    and the full source set. Two commands, in order:
    - `python3 scripts/build/new.py {type} --slug {slug} --{archetype|kind|form} … --name "…"`
-     (the literal `archetype` / `kind` / `doc_form` vocabulary for the type is in `meta/schema.yaml`)
+     (the literal `archetype` / `kind` / `doc_form` vocabulary for the type is in `meta/schema.yaml`;
+     a foia node also takes `--request-state`, a document a release produced `--released-via /foia/{slug}`)
    - `python3 scripts/build/research-scaffold.py --target {type}/{slug} --sources {ALL reuse + archived paths}`
      (it writes fresh and cannot append, so every source goes in this one call)
    - then `python3 scripts/build/validate-research.py --phase archive meta/research/{slug}.yaml`

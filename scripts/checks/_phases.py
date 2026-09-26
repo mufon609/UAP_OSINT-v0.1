@@ -117,6 +117,11 @@ CHECK_PHASE = {
     "key_personnel": "link",
     "org_relationships": "link",
     "contracts": "link",
+    "foia_overview": "link",
+    "records_sought": "link",
+    "correspondence": "link",
+    "released_records": "link",
+    "released_via_consistency": "link",  # document released_via ↔ foia released_records
     "ownership_timeline": "link",
     "location_relationships": "link",
     "media_versioning": "link",
@@ -141,6 +146,7 @@ CHECK_PHASE = {
     # they read state that exists only after render: the rendered node
     # body, the full section set, and the global cross-artifact index.
     "status_archetype_kind": "render",
+    "request_state": "render",               # foia request_state vocabulary
     "conditionally_required": "render",
     "required_sections": "render",
     "section_rules": "render",

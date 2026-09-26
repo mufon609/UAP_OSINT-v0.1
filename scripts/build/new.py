@@ -8,6 +8,8 @@ Examples:
   new.py document --kind gov-doc --form testimony --archival-status excerpts-only --slug example-testimony-2024
   new.py location --slug example-site
   new.py investigation --slug example-inquiry --question "Does Acme Widgets house the example materials?"
+  new.py foia --kind foia --request-state acknowledged --slug example-agency-23-f-0001
+  new.py document --kind gov-doc --form memo --released-via /foia/example-agency-23-f-0001 --slug example-release
 
 Reads meta/schema.yaml + meta/templates/{type}.md.
 Writes to {type_dir}/{slug}.md.
@@ -44,6 +46,7 @@ DEFAULT_STATUS = {
     "transcript": "primary-source-confirmed",
     "media": "primary-source-confirmed",
     "location": "active",
+    "foia": "documented",
     "investigation": "open",
 }
 
@@ -94,7 +97,7 @@ def main():
     parser.add_argument("--slug", required=True)
     parser.add_argument("--name", help="Display name (default: humanized slug)")
     parser.add_argument("--archetype", help="Person archetype")
-    parser.add_argument("--kind", help="Organization/document/event/transcript/media kind")
+    parser.add_argument("--kind", help="Organization/document/event/transcript/media/foia kind")
     parser.add_argument("--form", help="Document form (doc_form)")
     parser.add_argument("--status", help="Status (default: type-specific)")
     parser.add_argument("--archival-status", help="Document archival_status — required for doc_form=book, optional otherwise. Values: full-text-archived | excerpts-only | not-archived")
@@ -102,6 +105,8 @@ def main():
     parser.add_argument("--source-medium", help="Transcript source_medium (free-text; e.g., youtube, podcast, broadcast)")
     parser.add_argument("--derived-from", help="Transcript derived_from: path to underlying media/document node")
     parser.add_argument("--question", help="Open question (investigation nodes — frontmatter `question` field)")
+    parser.add_argument("--request-state", help="FOIA request_state (foia nodes — see schema.yaml types.foia.request_state_values)")
+    parser.add_argument("--released-via", help="Document released_via: path to the /foia/ node whose release produced this document")
     parser.add_argument("--force", action="store_true", help="Overwrite existing")
     args = parser.parse_args()
 
@@ -119,7 +124,7 @@ def main():
             sys.exit(f"ERROR: Invalid archetype. Valid: {valid}")
 
     # Validate kind
-    if args.type in ("organization", "document", "event", "transcript", "media"):
+    if args.type in ("organization", "document", "event", "transcript", "media", "foia"):
         if not args.kind:
             sys.exit(f"ERROR: --kind required for {args.type}")
         valid = list(type_spec.get("kinds", {}).keys())
@@ -146,6 +151,21 @@ def main():
 
     if args.type == "investigation" and not args.question:
         sys.exit("ERROR: --question required for investigation")
+
+    if args.type == "foia":
+        if not args.request_state:
+            sys.exit("ERROR: --request-state required for foia")
+        valid_states = type_spec["request_state_values"]
+        if args.request_state not in valid_states:
+            sys.exit(f"ERROR: Invalid --request-state. Valid: {valid_states}")
+    elif args.request_state:
+        sys.exit("ERROR: --request-state only applies to --type foia")
+
+    if args.released_via:
+        if args.type != "document":
+            sys.exit("ERROR: --released-via only applies to --type document")
+        if not re.match(r"^/foia/[^/\s]+$", args.released_via):
+            sys.exit("ERROR: --released-via must be a /foia/{slug} node path")
 
     # Output path
     type_dir = REPO_ROOT / TYPE_DIRS[args.type]
@@ -186,6 +206,7 @@ def main():
         "derived_from": args.derived_from or "",
         "parent_slug": (args.derivation_of.rsplit("/", 1)[-1] if args.derivation_of else ""),
         "question": (args.question or "").replace("'", "''"),
+        "request_state": args.request_state or "",
     }
 
     # Render placeholders
@@ -256,6 +277,13 @@ def main():
         text,
         "DERIVED_FROM",
         f"derived_from: {args.derived_from}" if args.derived_from else None,
+    )
+    # Document: released_via — back-pointer to the /foia/ node whose
+    # release produced this document.
+    text = apply_optional_frontmatter(
+        text,
+        "RELEASED_VIA",
+        f"released_via: {args.released_via}" if args.released_via else None,
     )
 
     out_path.write_text(text)

@@ -144,8 +144,8 @@ class BaseContext:
 
     ``source_to_artifacts`` is the cross-artifact index keyed by source
     path, mapping to the list of entity-type artifacts (people /
-    organizations / documents / events / transcripts / media / locations)
-    that cite that source in their ``primary_sources[]``. Built once at
+    organizations / documents / events / transcripts / media / locations /
+    foia) that cite that source in their ``primary_sources[]``. Built once at
     orchestrator entry by ``load_source_to_artifacts_index()``; consumed
     by the ``finding_source_in_entity_node`` check to enforce the
     three-layer architecture rule that findings duplicate entity-node

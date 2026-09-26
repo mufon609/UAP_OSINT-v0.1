@@ -154,7 +154,7 @@ sole same-tier exception is entity ↔ entity (the navigational fabric).
 
 - **Tier 1 — sources** (`sources/`): referenced *by* nodes; references nothing.
 - **Tier 2 — entity** (person / organization / document / event / transcript /
-  media / location): reference sources + other entity nodes; **never** a
+  media / location / foia): reference sources + other entity nodes; **never** a
   finding or investigation. Entity nodes carry single-source FACTS that may
   name other entities — but a prose or cross-link reference to another entity is
   made only **where the primary source attests the connection**; topical
@@ -209,7 +209,8 @@ An entity reaches `## Associated Nodes` by EITHER of two mechanisms, which
 
 **Which nodes carry the field.** `associated_entities` lives on a node that *is
 itself an ingested primary source* — the node whose source body the rule
-enumerates: a `document`, `transcript`, or `media` node, and an `event`-kind
+enumerates: a `document`, `transcript`, `media`, or `foia` node (a foia node
+ingests its request correspondence), and an `event`-kind
 `hearing` node (which *is* the hearing record — its quotes come from the
 transcript, and it is the sole home for the full-hearing entity union, the
 per-witness transcript nodes carrying only their own slice). It does NOT live on
@@ -381,7 +382,7 @@ The entry point sharing this contract:
 A new **person** or **organization** node is a large free-prose surface
 (the drift-prone types). Only one new such node may be scaffolded per
 session; lighter types (document / event / transcript / media / location /
-finding / investigation) may batch. This is enforced by a hook on the
+foia / finding / investigation) may batch. This is enforced by a hook on the
 scaffolder — do not work around it.
 
 ## Why these roles — capability boundaries, not feedback granularity

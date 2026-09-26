@@ -37,7 +37,7 @@ wipe until these are confirmed.
 ```
 rm -rf meta/research/* meta/topic/working-notes/*
 rm -f  meta/topic/overview.md meta/topic/research-queue.md
-rm -rf people/* organizations/* documents/* events/* transcripts/* media/* locations/* findings/* investigations/*
+rm -rf people/* organizations/* documents/* events/* transcripts/* media/* locations/* foia/* findings/* investigations/*
 rm -rf sources/*/*
 > sources/manifest.yaml
 ```

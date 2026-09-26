@@ -70,6 +70,12 @@ distinction before reading the content.
   provenance, and optional verbatim Key Passages for legible text or
   audible speech.
 - **location** — non-institutional physical sites
+- **foia** — one records request (2 kinds: foia — 5 U.S.C. § 552; mdr —
+  Mandatory Declassification Review), ours or a third party's: requester,
+  agency / component, tracking number, the records sought (with
+  identifiers such as contract PIIDs), every letter that moved it, where
+  it stands (`request_state`), and the `document` nodes its release
+  produced. Every entry is anchored to archived correspondence
 - **finding** — multi-source primary-source patterns that become visible
   only by reading multiple sources together (convergence or divergence
   on a single question)

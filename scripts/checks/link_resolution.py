@@ -25,12 +25,15 @@ node-per-session rule when the stub is a person or org, which is the
 common case) or stubbing references in prose (breaks the cross-
 reference graph the registry depends on).
 
-``_NODE_PATH_FRONTMATTER_FIELDS`` is a small module-level map; promote
-to schema-driven if the list grows past ~5 fields.
+The frontmatter pointer map is ``lib._common.NODE_PATH_FRONTMATTER_FIELDS``
+(shared with associate.py); promote to schema-driven if it grows past ~5
+fields.
 """
 
 import re
 from pathlib import Path
+
+from lib._common import frontmatter_node_paths
 
 # No Issue import — this check yields zero Issues by design. Provenance
 # of broken links is carried in ctx.broken_links (defaultdict(set)).
@@ -43,15 +46,6 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 _LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
 
-# Frontmatter fields that carry node-path semantics. When set on a node
-# of the listed type, the value is checked for target existence the
-# same way body ``[`/path`]`` links are. Promote to schema-driven if
-# the list grows past ~5 fields.
-_NODE_PATH_FRONTMATTER_FIELDS = {
-    "media":      ["derivation_of"],   # parent media node
-    "transcript": ["derived_from"],    # underlying media or document node
-}
-
 
 def _extract_links(text):
     return set(_LINK_PATTERN.findall(text))
@@ -63,13 +57,9 @@ def check(ctx):
     the node's relative path appended to the set of referers. Yields
     no Issues (link resolution is metadata, not a violation)."""
     links = _extract_links(ctx.text)
-    for field in _NODE_PATH_FRONTMATTER_FIELDS.get(ctx.node_type, []):
-        value = ctx.fm.get(field)
-        if value:
-            # Normalize to leading-slash form so the registry key shape
-            # matches body-link entries. Accept both "/type/slug" and
-            # "type/slug" on input.
-            links.add("/" + str(value).lstrip("/"))
+    # Frontmatter pointers, normalized to leading-slash form so the
+    # registry key shape matches body-link entries.
+    links.update(frontmatter_node_paths(ctx.node_type, ctx.fm))
 
     rel_str = str(ctx.rel)
     for link in links:

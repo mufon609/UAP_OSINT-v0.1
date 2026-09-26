@@ -210,8 +210,9 @@ def read_target_kind(node_type, slug):
       event        → hearing | encounter
       transcript   → hearing | other
       organization → gov | gov-contractor | private
+      foia         → foia | mdr
     """
-    if node_type not in ("event", "transcript", "organization"):
+    if node_type not in ("event", "transcript", "organization", "foia"):
         return None
     return _read_target_frontmatter(node_type, slug).get("kind")
 

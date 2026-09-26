@@ -30,7 +30,7 @@ print(os.path.relpath(ap, root))')"
 [ -n "$rel" ] || exit 0
 
 case "$rel" in
-    people/*.md|organizations/*.md|documents/*.md|events/*.md|transcripts/*.md|media/*.md|locations/*.md|findings/*.md|investigations/*.md)
+    people/*.md|organizations/*.md|documents/*.md|events/*.md|transcripts/*.md|media/*.md|locations/*.md|foia/*.md|findings/*.md|investigations/*.md)
         echo "Blocked — $rel is a rendered node body (renderer output)." >&2
         echo "Node bodies are regenerated from the research artifact. Edit" >&2
         echo "meta/research/ instead, then rebuild with build-from-research.py." >&2

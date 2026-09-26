@@ -153,6 +153,7 @@ workflow"). In short:
 @people/{a} @people/{b} — what do they share in common?
 @events/{e} @transcripts/{t} — does the testimony match the event record?
 @findings/{f} — which primary sources back each side of the dispute?
+@foia/{r} — what did this request ask for, where does it stand, and what did its release produce?
 ```
 
 Each node carries an `## Associated Nodes` section, so one @-mentioned

@@ -3,8 +3,11 @@
 Regenerate the '## Associated Nodes' section of a node from body references.
 
 Scans the node body for every [`/path/to/...`] reference (excluding the
-Associated Nodes section itself and self-references), groups by target
-type, and rewrites the section.
+Associated Nodes section itself and self-references), unions the backing
+artifact's ``associated_entities`` and the node's frontmatter node-path
+pointers (``lib._common.NODE_PATH_FRONTMATTER_FIELDS`` — e.g. a document's
+``released_via`` back-pointer to its foia node), groups by target type, and
+rewrites the section.
 
 Usage:
   associate.py PATH            # regenerate one node
@@ -22,9 +25,18 @@ from collections import defaultdict
 # `from lib._common` resolves from this nested location.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from lib._common import REPO_ROOT, content_dirs, RESEARCH_DIR, strict_yaml_load
+from lib._common import (
+    REPO_ROOT,
+    RESEARCH_DIR,
+    content_dirs,
+    content_type_dirs,
+    frontmatter_node_paths,
+    parse_frontmatter,
+    strict_yaml_load,
+)
 
 CONTENT_DIRS = content_dirs()
+DIR_TO_TYPE = {d: t for t, d in content_type_dirs().items()}
 
 # Display order of groups in the Associated Nodes section
 GROUP_ORDER = [
@@ -32,6 +44,7 @@ GROUP_ORDER = [
     "Organizations",
     "Events",
     "Documents",
+    "FOIA Requests",
     "Transcripts",
     "Media",
     "Locations",
@@ -43,6 +56,7 @@ DIR_TO_GROUP = {
     "organizations": "Organizations",
     "events": "Events",
     "documents": "Documents",
+    "foia": "FOIA Requests",
     "transcripts": "Transcripts",
     "media": "Media",
     "locations": "Locations",
@@ -141,6 +155,21 @@ def artifact_associated_entities(node_path, self_id):
     return out
 
 
+def frontmatter_pointer_links(node_path, text, self_id):
+    """Node paths the node's frontmatter points at (a back-pointer such as a
+    document's ``released_via``), so the pointed-at node reaches
+    ``## Associated Nodes`` like a body wrap does. Non-authoritative like
+    the artifact read: an unparseable frontmatter yields the empty set."""
+    rel = node_path.relative_to(REPO_ROOT)
+    node_type = DIR_TO_TYPE.get(rel.parts[0]) if len(rel.parts) > 1 else None
+    fm, _ = parse_frontmatter(text)
+    if not node_type or not isinstance(fm, dict):
+        return set()
+    out = set(frontmatter_node_paths(node_type, fm))
+    out.discard(f"/{self_id}")
+    return out
+
+
 def associate_node(node_path, dry_run=False):
     text = node_path.read_text()
     self_id = str(node_path.relative_to(REPO_ROOT)).removesuffix(".md")
@@ -156,6 +185,7 @@ def associate_node(node_path, dry_run=False):
 
     links = extract_links(scan_text, exclude_self=self_id)
     links |= artifact_associated_entities(node_path, self_id)
+    links |= frontmatter_pointer_links(node_path, text, self_id)
     groups = group_links(links)
     new_section = generate_section(groups)
     new_text = replace_section(text, new_section)

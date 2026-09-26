@@ -173,12 +173,14 @@ sources/
                             are stored here as source material; content
                             nodes live under /documents/)
   social/                   social media post snapshots
+  foia/                     FOIA / MDR request letters and agency correspondence
   transcripts/              downloaded YouTube / broadcast transcripts
   video/                    video-adjacent content
 
 people/ organizations/ documents/ events/ transcripts/
-media/ locations/ findings/ investigations/
-                            content nodes (human-readable narrative)
+media/ locations/ foia/ findings/ investigations/
+                            content nodes (human-readable narrative;
+                            the type list is meta/schema.yaml `types`)
 
 .claude/
   skills/                   invokable workflows — /build, /audit,
@@ -223,7 +225,8 @@ content layer.
 **Forking for a different topic.** Delete `meta/topic/`,
 `meta/research/`, and the contents of `/people/`, `/organizations/`,
 `/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
-`/findings/`, and `/investigations/`, and `sources/{category}/` (keep the
+`/foia/`, `/findings/`, and `/investigations/` (every `path` in
+`meta/schema.yaml` `types`), and `sources/{category}/` (keep the
 directories themselves); empty `sources/manifest.yaml`. Create your own
 `meta/topic/overview.md` — its frontmatter `topic` and `display_name`
 fields drive every UI surface that names the subject (rendered section

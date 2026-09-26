@@ -26,16 +26,22 @@ sources/
   news/                  news-article snapshots (HTML, PDF) — stored as source material;
                          the readable /documents/ node lives elsewhere
   social/                social-media post snapshots (HTML, JSON, image)
+  foia/                  FOIA / MDR request correspondence — the request as sent,
+                         acknowledgments, fee letters, interim / final responses,
+                         appeals (the letters behind a /foia/ node)
   transcripts/           downloaded captions / broadcast transcripts (.md, .txt) + their
                          speaker-attribution siblings (.yaml, -attributed.md)
   video/                 archived video (.mp4) — primary-source footage + speaker-ID source
   photo-identity-log/    baseline face crops + their own manifest.yaml (speaker-ID baselines)
 ```
 
-Six category directories plus the index. The category is **provenance**,
-not topic: a source goes under `government/` because a government body
-published it, under `news/` because an outlet did — regardless of what it
-is about. `photo-identity-log/` is special: it is not a quote source, it
+The category directories plus the index (the tree above is the list).
+The category is **provenance**, not topic: a source goes under
+`government/` because a government body published it, under `news/`
+because an outlet did — regardless of what it is about. `foia/` is the
+one process-defined category: the letters exchanged over a records
+request, whichever side wrote them; the records a release produced are
+government publications and go under `government/`. `photo-identity-log/` is special: it is not a quote source, it
 is the corpus of baseline face crops the transcript speaker-ID gate
 matches against, and it carries its own `manifest.yaml` schema.
 
@@ -113,6 +119,15 @@ Once the bytes are local:
 1. **Register** — `python3 scripts/tools/manifest.py add URL --path … --format … [--extraction-type …] [--transcript-provenance …]`. This is the *only* sanctioned manifest write path (path-uniqueness, archive-status bits, atomic save). Use `--dry-run` first.
 2. **Archive to Wayback** — `python3 scripts/tools/archive.py` submits pending URLs to the Wayback Machine. It is **CDX-first**: if a 200-status snapshot already exists it records that date rather than re-submitting (a fresh Save-Page-Now of a bot-walled origin would just capture the block page). `wayback_skip: true` entries are left alone.
 3. **Extract to read** — `python3 scripts/build/extract-source.py --source {category}/{file}` renders the source to `/tmp/scratch-*.txt` with `--- page N ---` markers. **Every verbatim quote is read from this extracted text, never from training knowledge** — the source-read-first invariant, checked mechanically by `validate.py`.
+
+**Request correspondence (`sources/foia/`).** Register each letter under
+the URL it was obtained from (an agency reading room, a request-tracking
+portal, a third-party requester's posting). A letter with no public URL —
+correspondence received by email or post — needs a stable synthetic URL
+registered with `--wayback-skip` (the same mechanism derived siblings
+use), since Wayback cannot capture it; the local copy is then the only
+archive, so the URL convention should be settled before the first one
+lands.
 
 The archival guarantee is the **local copy**; Wayback is insurance. A
 source is only fully archived at `archive_status: 3` (both).

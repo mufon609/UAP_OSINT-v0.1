@@ -5,7 +5,7 @@ Regenerate a content-node body from its research artifact (Phase II).
 This is the orchestrator. Per-type rendering logic lives in
 ``scripts/build/renderers/`` — one module per node type
 (document / person / event / transcript / media / organization /
-location / finding / investigation), plus ``_common.py`` (shared
+location / foia / finding / investigation), plus ``_common.py`` (shared
 helpers) and ``_universal.py`` (sections shared across types).
 
 The orchestrator handles:
@@ -59,6 +59,7 @@ from renderers.transcript import render_body_transcript
 from renderers.media import render_body_media
 from renderers.organization import render_body_organization
 from renderers.location import render_body_location
+from renderers.foia import render_body_foia
 from renderers.finding import render_body_finding
 from renderers.investigation import render_body_investigation
 
@@ -95,6 +96,8 @@ def render_body(artifact, node_type, fm):
         return render_body_organization(artifact, fm.get("kind"))
     if node_type == "location":
         return render_body_location(artifact, fm)
+    if node_type == "foia":
+        return render_body_foia(artifact, fm.get("kind"), fm)
     if node_type == "finding":
         return render_body_finding(artifact, fm)
     if node_type == "investigation":

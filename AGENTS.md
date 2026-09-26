@@ -16,7 +16,7 @@ layers:
 
 1. **Node layer** (human-readable narrative) — `/people/`,
    `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
-   `/media/`, `/locations/`, `/findings/`, `/investigations/`
+   `/media/`, `/locations/`, `/foia/`, `/findings/`, `/investigations/`
 2. **Research-artifact layer** (machine-readable structured facts) —
    `/meta/research/*.yaml`, one per node; the atomic-claim record backing
    each narrative node
@@ -33,7 +33,7 @@ The fastest way to query these two layers is **node composition** — see
 
 The repository's content is a set of **nodes** — human-readable narrative
 files (`/people/`, `/organizations/`, `/documents/`, `/events/`,
-`/transcripts/`, `/media/`, `/locations/`, `/findings/`,
+`/transcripts/`, `/media/`, `/locations/`, `/foia/`, `/findings/`,
 `/investigations/`). They are a **composable working set**: the fastest
 way to use the corpus is to point the CLI at one or more node files and
 ask a synthesis question.
@@ -42,6 +42,7 @@ ask a synthesis question.
 - `@events/{e} @transcripts/{t} — does the testimony match the event record?`
 - `@findings/{f} — which primary sources back each side of the dispute?`
 - `@organizations/{o} — who are its confirmed personnel, and where else in the corpus do they appear?`
+- `@foia/{r} — what did this request ask for, where does it stand, and which documents did its release produce?`
 
 Each node carries an `## Associated Nodes` section linking the related
 people, organizations, documents, and events — so a single @-mentioned
@@ -135,7 +136,7 @@ If you're doing anything related to this instance's topic, read
 - Verbatim quotes must match source character-for-character; `validate.py` checks this mechanically.
 - Contradictions are preserved, not reconciled.
 - Sworn testimony is a distinct evidentiary fact from the truth of the claim testified to.
-- **One *new* person/organization node per build session** — the synthesis-heavy (large free-prose) types; lighter types (document/event/transcript/media/location/finding/investigation) may scaffold in batches. Limits new-node scaffolding only; edits/audits/rebuilds are unrestricted for any type.
+- **One *new* person/organization node per build session** — the synthesis-heavy (large free-prose) types; lighter types (document/event/transcript/media/location/foia/finding/investigation) may scaffold in batches. Limits new-node scaffolding only; edits/audits/rebuilds are unrestricted for any type.
 - Source-read-first: every node's content traces to a primary source file extracted and read *in the session the content was written*. Not training knowledge.
 
 ---

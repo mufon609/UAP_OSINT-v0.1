@@ -44,9 +44,13 @@ BUILD_STATE_MD = REPO_ROOT / "meta" / "build-state.md"
 # also skipped (the schema is the source of truth for "what's a
 # content-node type").
 _RENDER_ORDER = [
-    "person", "organization", "event", "document",
+    "person", "organization", "event", "document", "foia",
     "transcript", "media", "location", "finding", "investigation",
 ]
+
+# Section-heading overrides where ``dirname.capitalize()`` misreads
+# (an acronym directory). Absent → capitalized directory name.
+_DISPLAY_NAME = {"foia": "FOIA"}
 
 
 def _mode_for(type_spec):
@@ -77,7 +81,7 @@ def _build_node_dirs():
         if "path" not in spec or t not in type_dirs:
             continue
         d = spec["path"]
-        out.append((d, d.capitalize(), _mode_for(spec)))
+        out.append((d, _DISPLAY_NAME.get(d, d.capitalize()), _mode_for(spec)))
     return out
 
 

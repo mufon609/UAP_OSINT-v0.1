@@ -49,6 +49,8 @@ Per-artifact checks (after parse + ResearchContext construction):
   - media_versioning                  — media-conditional
   - key_personnel, org_relationships, contracts
                                        — organization / gov-contractor
+  - foia_overview, records_sought, correspondence, released_records
+                                       — foia-conditional
   - ownership_timeline, top_scope_activity, location_relationships
                                        — location-conditional
   - cross_refs, prose_drift           — whole-artifact
@@ -116,11 +118,13 @@ from checks import closure_path as ck_closure_path
 from checks import contracts as ck_contracts
 from checks import context_extrinsic_url as ck_context_extrinsic_url
 from checks import contradictions as ck_contradictions
+from checks import correspondence as ck_correspondence
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import does_not_establish as ck_does_not_establish
 from checks import entity_no_finding_or_investigation_refs as ck_entity_no_finding_or_investigation_refs
 from checks import extrinsic_authorship as ck_extrinsic_authorship
+from checks import foia_overview as ck_foia_overview
 from checks import establishes as ck_establishes
 from checks import finding_no_finding_refs as ck_finding_no_finding_refs
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
@@ -146,7 +150,9 @@ from checks import prose_drift as ck_prose_drift
 from checks import publication_record as ck_publication_record
 from checks import quote_location_page as ck_quote_location_page
 from checks import quotes as ck_quotes
+from checks import records_sought as ck_records_sought
 from checks import relationships as ck_relationships
+from checks import released_records as ck_released_records
 from checks import resolution_history as ck_resolution_history
 from checks import speaker_attribution_consistency as ck_speaker_attribution_consistency
 from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
@@ -223,7 +229,7 @@ def _discover_target(data):
     fm = _read_target_frontmatter(target_path)
     target_archetype = fm.get("archetype") if target_type == "person" else None
     target_kind = (
-        fm.get("kind") if target_type in ("event", "transcript", "organization") else None
+        fm.get("kind") if target_type in ("event", "transcript", "organization", "foia") else None
     )
     target_derivation_of = fm.get("derivation_of") if target_type == "media" else None
     target_status = fm.get("status")
@@ -287,6 +293,10 @@ _ARTIFACT_CHECKS = [
     ck_key_personnel,
     ck_org_relationships,
     ck_contracts,
+    ck_foia_overview,
+    ck_records_sought,
+    ck_correspondence,
+    ck_released_records,
     ck_ownership_timeline,
     ck_top_scope_activity,
     ck_location_relationships,
