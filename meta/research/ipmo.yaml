@@ -289,7 +289,7 @@ timeline:
 - id: t2
   added_date: '2026-05-02'
   date: '2022-04-25'
-  event: 'IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(A) Sole Source contract; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room.'
+  event: 'IPMO Performance Work Statement dated April 25, 2022; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room.'
   category: contract
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
@@ -305,11 +305,11 @@ timeline:
 - id: t4
   added_date: '2026-05-02'
   date: '2022-06-09'
-  event: 'Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded IPMO Support Services contract HQ003422C0064 ($3,026,577.70 obligated; period of performance June 10, 2022 — June 9, 2023).'
+  event: 'Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded IPMO Support Services contract HQ003422C0064 ($3,026,577.70 obligated; period of performance June 10, 2022 — June 9, 2023); USAspending records the set-aside as "8(A) SOLE SOURCE".'
   category: contract
   source:
     path: government/usaspending-hq003422c0064.txt
-    location: '"date_signed" and "period_of_performance" fields'
+    location: '"date_signed", "period_of_performance", and "type_set_aside_description" fields'
   node_link: /organizations/sancorp-consulting
 - id: t5
   added_date: '2026-05-02'

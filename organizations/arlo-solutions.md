@@ -24,7 +24,7 @@ Arlo Solutions, LLC is a small business of Washington, D.C. founded in 2014 by A
 
 Arlo's principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo's corporate marketing uses the form OUSW(I&S) (Office of the Under Secretary of War for Intelligence and Security), while the federal procurement record (USAspending, GAO B-422985) identified the customer using the OUSD(I&S) form. See Sancorp Consulting ([`/organizations/sancorp-consulting`]) for the Executive Order framework documenting this adoption. According to USAspending records, Arlo has held prime contracts issued by Washington Headquarters Services ([`/organizations/whs`]) to OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093), and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team announced by Arlo on April 18, 2024). On February 14, 2025, WHS established the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo's individual limit. The public GAO B-422985.4 / B-422985.5 decision named three of the four BPA vendors established after the reevaluation (Sancorp, Premier, Arlo); the remaining vendor is not named in the public decision. Comprehensive Approach LLC ([`/organizations/comprehensive-approach-solutions`]) held the September 2024 EXDIR Call Order 1 award before the corrective action; whether Comprehensive Approach is among the four BPA vendors established after the reevaluation is not stated in the public GAO decision. USAspending records four BPAs signed February 14, 2025: HQ003425A0001 to Sancorp, HQ003425A0002 to COMPREHENSIVE APPROACH LLC, HQ003425A0003 to PREMIER ENTERPRISE SOLUTIONS, LLC, and HQ003425A0004 to Arlo. Each is recorded as a MULTIPLE AWARD BPA; of the four, the solicitation number HQ003424R0178 is recorded only on the HQ003425A0004 record. USAspending records base_and_all_options of 856000000.0 on HQ003425A0001, 956000000.0 on HQ003425A0002, and 1856000000.0 on HQ003425A0003. On February 21, 2025, WHS signed BPA Call Order HQ003425F0104 with Arlo for SASP support.
 
-The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting LLC, B-422985.4 / B-422985.5 (June 11, 2025), WHS issued the RFQ on May 23, 2024 under the General Services Administration Federal Supply Schedule Professional Services multiple award schedule contract; nine vendors submitted quotations; in September 2024, WHS established BPAs with, and issued Call Order 1 (EXDIR) to, Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]). Following protests by Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]), the agency announced corrective action: stating it would terminate the BPAs and call orders, reevaluate quotations, and make new award decisions. The reevaluation awarded Call Order 1 (EXDIR) to Premier and Call Order 2 (SASP) to Arlo. Sancorp filed a protest of the reevaluation. The GAO dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had submitted a letter of resignation dated February 7, 2025 with a last official day of February 14, 2025 — before WHS issued the SASP call order — and that Sancorp had failed to advise the agency of the unavailability of the quoted key person, making Sancorp's SASP quotation unacceptable and Sancorp ineligible to challenge the SASP call order. The GAO denied Sancorp's challenges to the EXDIR call order. As of the public GAO record, only the EXDIR (Premier) and SASP (Arlo) call orders had been awarded under the four BPAs; additional call orders under those BPAs are not reflected in the decision. USAspending records a later BPA call under Sancorp's HQ003425A0001: HQ003426FE050, signed January 28, 2026, with 4 offers received. No source cited here records who submitted the four offers on HQ003426FE050, and no source cited here states whether Arlo was an offeror.
+The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting LLC, B-422985.4 / B-422985.5 (June 11, 2025), WHS issued the RFQ on May 23, 2024 under the General Services Administration Federal Supply Schedule Professional Services multiple award schedule contract; nine vendors submitted quotations; in September 2024, WHS established BPAs with, and issued Call Order 1 (EXDIR) to, Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]). Following protests by Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]), the agency announced corrective action: stating it would terminate the BPAs and call orders, reevaluate quotations, and make new award decisions. The reevaluation awarded Call Order 1 (EXDIR) to Premier and Call Order 2 (SASP) to Arlo. The agency summarized the results of the reevaluation for Call Order 2 (SASP) as Technical Outstanding and Past performance Satisfactory Confidence for both Sancorp and Arlo, with a Price of $91,450,294 for Sancorp and $87,748,037 for Arlo; the Source Selection Decision Document ([`/documents/ssdd-hq003424r0178`]) is the record source for the reevaluation results. Sancorp filed a protest of the reevaluation. Arlo, as an intervenor represented by Crowell & Moring LLP ([`/organizations/crowell-moring`]), filed comments along with a request for dismissal of the protest arguments related to the SASP call order. The GAO dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had submitted a letter of resignation dated February 7, 2025 with a last official day of February 14, 2025 — before WHS issued the SASP call order — and that Sancorp had failed to advise the agency of the unavailability of the quoted key person, making Sancorp's SASP quotation unacceptable and Sancorp ineligible to challenge the SASP call order. The GAO denied Sancorp's challenges to the EXDIR call order. As of the public GAO record, only the EXDIR (Premier) and SASP (Arlo) call orders had been awarded under the four BPAs; additional call orders under those BPAs are not reflected in the decision. USAspending records a later BPA call under Sancorp's HQ003425A0001: HQ003426FE050, signed January 28, 2026, with 4 offers received. No source cited here records who submitted the four offers on HQ003426FE050, and no source cited here states whether Arlo was an offeror.
 
 Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services.
 
@@ -366,7 +366,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
-### Mechanics of Sancorp's SASP-call-order loss: Sancorp's proposed staff officer key personnel "X" submitted a resignation letter dated February 7, 2025 (last day February 14, 2025), before WHS issued the SASP call order. Sancorp argued it lacked actual knowledge of X's unavailability; GAO did not accept this defense.
+### Mechanics of Sancorp's SASP-call-order loss: Sancorp's proposed staff officer key personnel "X" submitted a resignation letter dated February 7, 2025 (last day February 14, 2025, per the resignation letter as quoted in q60), before WHS issued the SASP call order. Sancorp argued it lacked actual knowledge of X's unavailability; GAO did not accept this defense.
 
 > In its response, Sancorp confirms that X “resigned from Sancorp in February 2025” and provided a copy of X’s letter of resignation, dated February 7, 2025--before the agency issued the SASP call order at issue. Supp. Comments at 3; exh. B to Supp. Comments. Sancorp nonetheless contends that it did not have an obligation to inform the agency because the firm did not have actual knowledge of X’s unavailability. Supp. Comments at 2-3.
 
@@ -387,6 +387,102 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2025-06-11 |
 | Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
 | Location | DISCUSSION section — disposition of SASP challenges (dismissal ruling) |
+
+---
+
+### Lead-in sentence introducing the two reevaluation results tables (Call Order 1 EXDIR: Sancorp vs. Premier; Call Order 2 SASP: Sancorp vs. Arlo). Attributes the tabulated ratings and prices to the agency (WHS) summary; the sentence that follows the tables cites AR, Tab 45, SSDD at 21, 36 as the record source.
+
+> The agency summarized the results of the reevaluation as follows:
+
+| Field | Value |
+|---|---|
+| Attributed to | Immediately precedes the Call Order 1 (EXDIR) table and then the Call Order 2 (SASP) table; the two tables sit between this sentence and the "AR, Tab 45, Source Selection Decision Document (SSDD) at 21, 36.[3]" paragraph (already quoted as q5). Not contiguous with the SASP table, because the EXDIR table intervenes. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | ¶ The agency summarized the results of the reevaluation as follows: (BACKGROUND section, lead-in to the reevaluation results tables) |
+
+---
+
+### Reevaluation results for Call Order 2 (SASP), as the agency summarized them. The table has two columns, in the order Sancorp then Arlo. Technical: Sancorp Outstanding, Arlo Outstanding. Past performance: Sancorp Satisfactory Confidence, Arlo Satisfactory Confidence. Price: Sancorp $91,450,294, Arlo $87,748,037. Arlo tied Sancorp on both non-price factors and quoted the lower price. The SSA then found Arlo's quotation the best value for the SASP call order (q5).
+
+> Call Order 2 (SASP) Sancorp Arlo Technical Outstanding Outstanding Past performance Satisfactory Confidence Satisfactory Confidence Price $91,450,294 $87,748,037
+
+| Field | Value |
+|---|---|
+| Attributed to | The HTML table cells appear on separate lines in the extracted scratch file, separated by tabs and blank lines. This quote is the same cell sequence with its whitespace collapsed; the verbatim check's normalize_for_compare also collapses whitespace. The span begins at the table's header cell "Call Order 2 (SASP)" and ends at Arlo's price cell. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | BACKGROUND section — reevaluation results table, ¶ Call Order 2 (SASP) (second table, following the Call Order 1 (EXDIR) table) |
+
+---
+
+### Establishes Arlo Solutions, LLC as an intervenor in B-422985.4 / B-422985.5, represented by Crowell & Moring LLP (Olivia L. Lynch, Cherie J. Owen, Emily P. Golchini). Premier Enterprise Solutions, LLC, the other intervenor, was represented by Whitcomb, Selinsky, P.C. (Jonathan D. Perrone, Joshua M. Sather, Timothy J. Turner) and Steele Law Offices, LLC (Sharon O. Steele).
+
+> Olivia L. Lynch, Esq., Cherie J. Owen, Esq., and Emily P. Golchini, Esq., Crowell & Moring LLP, for Arlo Solutions, LLC; and Jonathan D. Perrone, Esq., Joshua M. Sather, Esq., and Timothy J. Turner, Esq., Whitcomb, Selinsky, P.C., and Sharon O. Steele, Esq., Steele Law Offices, LLC, for Premier Enterprise Solutions, LLC, the intervenors.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second line of the counsel block. The line before it names Fox Rothschild LLP (Douglas P. Hibshman, Keeley A. McCarty, Jane Jung Hyoun Han) as counsel for the protester, Sancorp. The lines after it name May Sena and Stephan Piel, Department of Defense, for the agency, and Samantha S. Lee and Peter H. Tran, Office of the General Counsel, GAO. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | Decision header — counsel-of-record block, ¶ Olivia L. Lynch, Esq., Cherie J. Owen, Esq., and Emily P. Golchini, Esq., Crowell & Moring LLP, for Arlo Solutions, LLC |
+
+---
+
+### The SASP solicitation required nine key personnel positions. The one at issue in Arlo's dismissal request is "staff officer (subject matter expert level IV)".
+
+> Here, under the technical factor, the solicitation required offerors to propose individuals for nine key personnel positions including, as relevant here, staff officer (subject matter expert level IV).
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ Here, under the technical factor, the solicitation required offerors to propose individuals for nine key personnel positions |
+
+---
+
+### Sancorp proposed the pseudonymized individual "X" for the staff officer key personnel position. According to X's resume, X joined Sancorp in April 2024 and "currently supports OUSD(I&S)" under an incumbent effort.
+
+> Sancorp proposed an individual who we refer to as “X” for a staff officer key personnel position. AR, Tab 15, Sancorp Technical Quotations at 126. Sancorp submitted X’s resume, which explained that X had joined Sancorp in April 2024 and “currently supports OUSD(I&S)” under an incumbent effort.
+
+| Field | Value |
+|---|---|
+| Attributed to | Later in the same paragraph (not captured here): X signed a letter of commitment (AR, Tab 51, Sancorp BPA Quotation at 12); the evaluators assigned Sancorp's quotation a strength for X's qualifications (AR, Tab 26, Sancorp SASP TEB Report at 11); and Sancorp's SASP technical rating was outstanding. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ Sancorp proposed an individual who we refer to as “X” for a staff officer key personnel position |
+
+---
+
+### Arlo's assertion, as the intervenor, quoted by GAO from Arlo's Request for Dismissal at 4. Citing "public information," Arlo asserted that X left Sancorp in February 2025 to work for another company as an Operations Officer/Research Analyst, which left X unavailable for the key position. The ". . ." ellipsis is in the GAO text; the other company is not named in the source.
+
+> Citing “public information,” the intervenor asserts that in February 2025, X “left the employment of Sancorp and began working for another company . . . as an Operations Officer/Research Analyst, rendering X unavailable to fill the key position for which Sancorp proposed him.” Arlo Req. for Dismissal at 4.
+
+| Field | Value |
+|---|---|
+| Attributed to | In the next sentence, GAO directed Sancorp to respond to the dismissal request (Electronic Protest Docketing System No. 38). Sancorp's response is already captured as q6. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ Citing “public information,” the intervenor asserts |
+
+---
+
+### This is Sancorp's characterization (the protester), as GAO reports it: X "left Sancorp amicably." Sancorp relied on this to argue that it lacked actual knowledge of X's unavailability. It is Sancorp's claim, not GAO's finding and not Arlo's.
+
+> In this connection, the protester asserts that X had “left Sancorp amicably.”
+
+| Field | Value |
+|---|---|
+| Attributed to | The next sentence reports Sancorp's argument that because X "left Sancorp on good terms," Sancorp would have had actual knowledge only if X had withdrawn his letter of commitment. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ Id. at 3 (citing DZSP 21, LLC … ) — sentence "In this connection, the protester asserts" |
+
+---
+
+### GAO's record finding: X submitted a resignation letter on February 7 (2025) and left Sancorp later that month. The letter, Supp. Comments exh. B at 1, states "my last official day will be 14 February 2025." On that basis GAO found that Sancorp had actual knowledge of X's unavailability, which rendered Sancorp's SASP quotation unacceptable (see q7).
+
+> Here, the record reflects that X submitted a letter of resignation on February 7 and subsequently left Sancorp’s employ later that month. Supp. Comments, exh. B at 1 (resignation letter of X stating, “my last official day will be 14 February 2025”).
+
+| Field | Value |
+|---|---|
+| Attributed to | Earlier in the same paragraph, GAO notes that X had signed a letter of commitment in July 2024, when quotations were submitted. 2025-06-11 |
+| Source | [archived source](../sources/government/gao-b-422985-wayback-20250708.html) |
+| Location | DISCUSSION section — Call Order 2 (SASP), Key Personnel, ¶ By contrast, X was--as touted by Sancorp in its quotation--employed by Sancorp |
 
 ---
 
@@ -712,18 +808,23 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2023-08-01 | WHS prime contract HQ003423F0356 awarded ($10,473,111.72 total; "ADMINISTRATIVE, POLICY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES FOR COUNTERINTELLIGENCE, LAW ENFORCEMENT, AND SECURITY" to OUSD(I&S) under GSA MAS 47QTCA21D003B; period 2023-08-01 — 2026-04-30). | contract | government/usaspending-arlo-search.json |  |
 | 2023-08-29 | WHS prime contract HQ003423C0093 awarded ($3,015,826.41 total; "EVENT PLANNING SUPPORT SERVICES" to OUSD(I&S); period 2023-08-29 — 2026-08-28). | contract | government/usaspending-arlo-search.json |  |
 | 2024-04-18 | Arlo announces $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team (HQ003424F0190; $1,474,125.12 obligated per USAspending; period 2024-04-30 — 2026-04-29). | contract | news/arlo-press-cls-vetting-20260503.html |  |
-| 2024-05-23 | WHS issued RFQ HQ003424R0178 under the GSA Federal Supply Schedule — set aside for 8(a) small businesses, sought multiple-award BPAs for technical, administrative, and professional support services to the OUSD(I&S) Enterprise. $856 million good faith estimate amount for all BPAs (aggregate across vendors, not any single vendor's limit). | contract | government/gao-b-422985-wayback-20250708.html |  |
+| 2024-05-23 | WHS issued RFQ HQ003424R0178 ([`/documents/rfq-hq003424r0178`]) under the GSA Federal Supply Schedule — set aside for 8(a) small businesses, sought multiple-award BPAs for technical, administrative, and professional support services to the OUSD(I&S) Enterprise. $856 million good faith estimate amount for all BPAs (aggregate across vendors, not any single vendor's limit). | contract | government/gao-b-422985-wayback-20250708.html |  |
 | 2024-05-23 | Solicitation HQ003424R0178 scoped to SASP and EXDIR support services. | contract | government/gao-b-422985-wayback-20250708.html |  |
 | 2024-09 | WHS established initial BPAs and issued Call Order 1 (EXDIR) to Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]) under HQ003424R0178. Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]) protested. | contract | government/gao-b-422985-wayback-20250708.html |  |
 | 2024-10-16 | GAO dismissed the initial Arlo and Premier protests as academic following WHS's announcement of corrective action — terminating the BPAs and call orders, reevaluating quotations, and making new award decisions. | protest | government/gao-b-422985-wayback-20250708.html |  |
-| 2025-02-07 | Sancorp's proposed staff officer key personnel (referred to as "X" in the GAO decision) submitted a letter of resignation to Sancorp, effective February 14, 2025 — before WHS issued the SASP call order. Per GAO B-422985.4 / B-422985.5, Sancorp did not advise WHS of X's unavailability. | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-02-07 | Sancorp's proposed staff officer (subject matter expert level IV) key person "X" submitted a letter of resignation on February 7, 2025 ([`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]): "my last official day will be 14 February 2025" — before WHS issued the SASP call order (q6, q60). Sancorp did not advise WHS of X's unavailability. | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-02-14 | WHS established BPA HQ003425A0004 (Technical, Administrative, and Professional Support Services to the OUSD(I&S) Enterprise) with Arlo as one of four BPA vendors following the reevaluation under HQ003424R0178; $856 million good faith estimate amount applies across all four BPAs aggregate, not Arlo's individual ceiling; the remaining vendor is not named in the public decision. | contract | government/usaspending-arlo-bpa-hq003425a0004.json |  |
 | 2025-02-14 | USAspending records BPA HQ003425A0001 to SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) of Falls Church, Virginia ([`/locations/falls-church-virginia`]), a MULTIPLE AWARD BPA with date_signed 2025-02-14 — the same date_signed as Arlo's HQ003425A0004. The record carries no solicitation number and does not name Arlo. | contract | government/usaspending-hq003425a0001.txt |  |
 | 2025-02-14 | USAspending records BPA HQ003425A0002 to COMPREHENSIVE APPROACH LLC ([`/organizations/comprehensive-approach-solutions`]) of Fairfax, Virginia ([`/locations/fairfax-virginia`]), a MULTIPLE AWARD BPA with date_signed 2025-02-14. The record carries no solicitation number and does not name Arlo. | contract | government/usaspending-hq003425a0002.txt |  |
 | 2025-02-14 | USAspending records BPA HQ003425A0003 to PREMIER ENTERPRISE SOLUTIONS, LLC ([`/organizations/premier-enterprise-solutions`]) of Upper Marlboro, Maryland ([`/locations/upper-marlboro-maryland`]), a MULTIPLE AWARD BPA with date_signed 2025-02-14. The record carries no solicitation number and does not name Arlo. | contract | government/usaspending-hq003425a0003.txt |  |
 | 2025-02-21 | WHS signed BPA Call Order HQ003425F0104 with Arlo for SASP Call Order 2 ($78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options"). Replaced Sancorp's September 2024 SASP award following the reevaluation. | contract | government/usaspending-arlo-hq003425f0104.json |  |
 | 2025-04-28 | Wayback capture of Arlo's Greenhouse posting "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer": a position with OUSD(I&S) ([`/organizations/ousd-is`]) in the Commonwealth & Partnership Engagement (C&PE) Branch ([`/organizations/ousd-is-cpe`]), serving Australia, Canada, New Zealand, and the United Kingdom; work location Bolling AFB, Washington, D.C. ([`/locations/washington-dc`]). Capture date, not posting date; no contract named. | posting | news/arlo-greenhouse-469-cpe-allied-action-officer-wayback-20250428.html |  |
-| 2025-06-11 | GAO B-422985.4 / B-422985.5 decision: Sancorp's ([`/organizations/sancorp-consulting`]) protest DENIED on the EXDIR call order on the merits and DISMISSED on the SASP call order (Sancorp's proposed staff officer key personnel had resigned prior to SASP call order issuance, rendering Sancorp's SASP quotation unacceptable). | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | GAO ([`/organizations/gao`]) B-422985.4 / B-422985.5 decision ([`/documents/gao-b-422985-4-sancorp-consulting`]): Sancorp's ([`/organizations/sancorp-consulting`]) protest DENIED on EXDIR and DISMISSED on SASP (Sancorp knew its proposed key person had resigned and failed to advise the agency, so its SASP quotation was unacceptable). Signed by Edda Emmanuelli Perez ([`/people/edda-emmanuelli-perez`]), General Counsel. | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | Counsel for the intervenor Arlo Solutions, LLC in GAO B-422985.4 / B-422985.5: Olivia L. Lynch ([`/people/olivia-l-lynch`]), Cherie J. Owen ([`/people/cherie-j-owen`]), and Emily P. Golchini ([`/people/emily-p-golchini`]), Crowell & Moring LLP ([`/organizations/crowell-moring`]) (q55). | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | Counsel for the intervenor Premier Enterprise Solutions, LLC ([`/organizations/premier-enterprise-solutions`]) in GAO B-422985.4 / B-422985.5: Jonathan D. Perrone ([`/people/jonathan-d-perrone`]), Joshua M. Sather ([`/people/joshua-m-sather`]), and Timothy J. Turner ([`/people/timothy-j-turner`]), Whitcomb, Selinsky, P.C. ([`/organizations/whitcomb-selinsky`]), and Sharon O. Steele ([`/people/sharon-o-steele`]), Steele Law Offices, LLC ([`/organizations/steele-law-offices`]) (q55). | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | Counsel for the protester (Sancorp) in GAO B-422985.4 / B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]). | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | Counsel for the agency in GAO B-422985.4 / B-422985.5: May Sena ([`/people/may-sena`]) and Stephan Piel ([`/people/stephan-piel`]), Department of Defense ([`/organizations/dod`]). Samantha S. Lee ([`/people/samantha-s-lee`]) and Peter H. Tran ([`/people/peter-h-tran`]), Office of the General Counsel, GAO ([`/organizations/gao-office-of-general-counsel`]), participated in the preparation of the decision. | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-06-11 | Per the GAO decision, Arlo (intervenor) filed, on a date the decision does not state, a request to dismiss the SASP protest arguments ([`/documents/arlo-request-for-dismissal-b-422985-4`]), citing "public information" that X left Sancorp in February 2025 (q58). X had been proposed in Sancorp's technical quotations ([`/documents/sancorp-technical-quotations-hq003424r0178`]) (q57). The protester asserted X had "left Sancorp amicably" (q59). | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-12-17 | Wayback capture of Arlo's Greenhouse posting "(617) Staff Officer V": "will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]); "This key personnel position serves as a senior-level SME". Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |  |
 | 2026-01-19 | Wayback capture of the same "(617) Staff Officer V" posting, carrying the same AARO-support Position Description sentence. Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html |  |
 | 2026-01-19 | Wayback capture of Arlo's Greenhouse posting "(619) Security Officer IV": "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))" ([`/organizations/aaro`]), Arlington, VA ([`/locations/arlington-virginia`]). Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html |  |
@@ -746,6 +847,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/comprehensive-approach-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/gsa`] | contracting-agency | news/arlo-contract-vehicles-20260503.html |
+| [`/organizations/crowell-moring`] | other | government/gao-b-422985-wayback-20250708.html |
 
 ### Flagged
 
@@ -784,16 +886,35 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 ### People
 
 - [`/people/arlene-wube`]
+- [`/people/cherie-j-owen`]
 - [`/people/christina-pryka`]
+- [`/people/douglas-p-hibshman`]
+- [`/people/edda-emmanuelli-perez`]
+- [`/people/emily-p-golchini`]
+- [`/people/jane-jung-hyoun-han`]
+- [`/people/jonathan-d-perrone`]
+- [`/people/joshua-m-sather`]
+- [`/people/keeley-a-mccarty`]
 - [`/people/lonye-ford`]
+- [`/people/may-sena`]
+- [`/people/olivia-l-lynch`]
+- [`/people/peter-h-tran`]
+- [`/people/samantha-s-lee`]
+- [`/people/sharon-o-steele`]
+- [`/people/stephan-piel`]
+- [`/people/timothy-j-turner`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
 - [`/organizations/comprehensive-approach-solutions`]
 - [`/organizations/congress`]
+- [`/organizations/crowell-moring`]
 - [`/organizations/dcsa`]
 - [`/organizations/dod`]
+- [`/organizations/fox-rothschild`]
+- [`/organizations/gao`]
+- [`/organizations/gao-office-of-general-counsel`]
 - [`/organizations/gsa`]
 - [`/organizations/intelligence-community`]
 - [`/organizations/odni`]
@@ -803,13 +924,21 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/ousd-is-sasp`]
 - [`/organizations/premier-enterprise-solutions`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/steele-law-offices`]
+- [`/organizations/whitcomb-selinsky`]
 - [`/organizations/whs`]
 
 ### Documents
 
+- [`/documents/arlo-request-for-dismissal-b-422985-4`]
 - [`/documents/dod-manual-5105-21`]
 - [`/documents/dod-manual-5205-07`]
+- [`/documents/gao-b-422985-4-sancorp-consulting`]
 - [`/documents/national-defense-strategy`]
+- [`/documents/rfq-hq003424r0178`]
+- [`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]
+- [`/documents/sancorp-technical-quotations-hq003424r0178`]
+- [`/documents/ssdd-hq003424r0178`]
 
 ### Locations
 

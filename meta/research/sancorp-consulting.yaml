@@ -11,7 +11,7 @@ description: 'Sancorp Consulting, LLC is a Falls Church, Virginia ([`/locations/
   Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA''s October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA''s September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc"; its transaction descriptions carry "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from modification P00005, July 10, 2025), HQ003424F0411 ("LABOR" — $11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of Defense for Policy office management and executive support — Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp''s protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions ([`/organizations/arlo-solutions`]) (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025) — Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services; Sancorp''s IPMO ([`/organizations/ipmo`]) prime contracts (HQ003422C0064, HQ003423C0061, HQ003424C0046) and AARO ([`/organizations/aaro`]) prime contracts (HQ003422C0094, HQ003424C0096) are independent of HQ003424R0178 and continued under Sancorp — Sancorp also won W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
 
 
-  Both Sancorp PWSs are publicly available via DoD FOIA channels — the IPMO contract HQ003422C0064 PWS ([`/documents/foia-23-f-0906-sancorp-ipmo-pws`], dated April 25, 2022; FOIA case 23-F-0906) and the AARO contract HQ003422C0094 PWS ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`], dated July 7, 2022; FOIA case 23-F-1114, released to John Greenewald via The Black Vault) — both were issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurements with Sancorp as the awardee. The PWSs share overlapping task scope including Executive Administrative Support, Strategy/Plans/Policy Support, and Operations Support; the IPMO PWS §5.4 tasks the contractor to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments."
+  Both Sancorp PWSs are publicly available via DoD FOIA channels — the IPMO contract HQ003422C0064 PWS ([`/documents/foia-23-f-0906-sancorp-ipmo-pws`], dated April 25, 2022; FOIA case 23-F-0906) and the AARO contract HQ003422C0094 PWS ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`], dated July 7, 2022; FOIA case 23-F-1114, released to John Greenewald via The Black Vault) — and the USAspending award records for both contracts, each naming Sancorp as recipient, record the set-aside as "8(A) SOLE SOURCE". The PWSs share overlapping task scope including Executive Administrative Support, Strategy/Plans/Policy Support, and Operations Support; the IPMO PWS §5.4 tasks the contractor to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments."
 
 
   Sancorp''s public-facing Past Performance page (sancorpconsulting.com) lists 19 prime contracts including the IPMO solicitation HQ003422R0164 ("Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services"), the OUSD(I&S) Counter-Insider Threat Program Office contract HQ003419C0159, the OUSD(I&S) Counterintelligence Analytical Support contract HQ003420C0167, the prime contract HQ003425A0001 (listed as "Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support"), and prime contracts HQ003425FE388 (Office of the Under Secretary of War for Intelligence and Security) and HQ003425FE405 (Office of the Under Secretary of War for Policy). Absent from the public-facing Past Performance list are the Sancorp AARO prime contracts HQ003422C0094 ("AARO Support Services", signed September 1, 2022; established via FOIA 23-F-1114 and USAspending.gov contract records) and HQ003424C0096 (signed August 23, 2024; established via USAspending.gov contract records).
@@ -568,7 +568,7 @@ quotes:
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
     location: 'PWS title block'
-  significance: 'IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). Both PWSs were drafted in the same Washington Headquarters Services Acquisition Directorate template environment as 8(a) sole-source procurements with Sancorp as the awardee. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).'
+  significance: 'IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). The PWS itself states no set-aside; the 8(a) sole-source designation for HQ003422C0064 comes from its USAspending award record (timeline t10). The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).'
   context: 'IPMO Performance Work Statement title block, FOIA 23-F-0906 release'
   statement_date: '2022-04-25'
 - id: q36
@@ -1625,6 +1625,87 @@ quotes:
   significance: 'USAspending HQ003425FE388 period_of_performance, 2026-09-26 capture — start_date 2025-09-14, end_date 2027-09-13, potential_end_date 2029-09-13, last_modified_date 2026-06-16. The 2026-04-30 capture of the same record (government/usaspending-hq003425fe388.txt) carries end_date 2026-09-13 and last_modified_date 2025-09-24.'
   claim_group: 'hq003425fe388-period-of-performance'
   statement_date: '2025-09-11'
+- id: q151
+  added_date: '2026-09-26'
+  text: 'Call Order 2 (SASP) Sancorp Arlo Technical Outstanding Outstanding Past performance Satisfactory Confidence Satisfactory Confidence Price $91,450,294 $87,748,037'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ The agency summarized the results of the reevaluation as follows (second results table, "Call Order 2 (SASP)")'
+  significance: 'GAO decision reevaluation results for Call Order 2 (SASP), per the table''s column order (Sancorp column, then Arlo column): Technical: Sancorp Outstanding, Arlo Outstanding; Past performance: Sancorp Satisfactory Confidence, Arlo Satisfactory Confidence; Price: Sancorp $91,450,294, Arlo $87,748,037.'
+  claim_group: gao-b-422985-reevaluation-results
+  statement_date: '2025-06-11'
+- id: q152
+  added_date: '2026-09-26'
+  text: 'Call Order 1 (EXDIR) Sancorp Premier Technical Good Outstanding Past performance Satisfactory Confidence Satisfactory Confidence Price $99,312,935 $94,819,501'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ The agency summarized the results of the reevaluation as follows (first results table, "Call Order 1 (EXDIR)")'
+  significance: 'GAO decision reevaluation results for Call Order 1 (EXDIR), per the table''s column order (Sancorp column, then Premier column): Technical: Sancorp Good, Premier Outstanding; Past performance: Sancorp Satisfactory Confidence, Premier Satisfactory Confidence; Price: Sancorp $99,312,935, Premier $94,819,501.'
+  claim_group: gao-b-422985-reevaluation-results
+  statement_date: '2025-06-11'
+- id: q153
+  added_date: '2026-09-26'
+  text: 'Douglas P. Hibshman, Esq., Keeley A. McCarty, Esq., and Jane Jung Hyoun Han, Esq., Fox Rothschild LLP, for the protester.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Douglas P. Hibshman, Esq. (counsel-of-record block beneath the decision caption)'
+  significance: 'GAO decision counsel-of-record block: Sancorp (the protester) was represented by Douglas P. Hibshman, Keeley A. McCarty, and Jane Jung Hyoun Han of Fox Rothschild LLP.'
+  claim_group: gao-b-422985-protest-counsel
+  statement_date: '2025-06-11'
+- id: q154
+  added_date: '2026-09-26'
+  text: 'Sancorp proposed an individual who we refer to as “X” for a staff officer key personnel position.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Sancorp proposed an individual who we refer to as “X”'
+  significance: 'GAO decision, SASP key-personnel analysis: Sancorp proposed an individual GAO anonymizes as "X" for a staff officer key personnel position on the SASP call order.'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
+- id: q155
+  added_date: '2026-09-26'
+  text: 'Sancorp submitted X’s resume, which explained that X had joined Sancorp in April 2024 and “currently supports OUSD(I&S)” under an incumbent effort.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Sancorp proposed an individual who we refer to as “X” (sentence "Sancorp submitted X’s resume")'
+  significance: 'GAO decision: X''s resume in Sancorp''s quotation stated X joined Sancorp in April 2024 and "currently supports OUSD(I&S)" under an incumbent effort.'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
+- id: q156
+  added_date: '2026-09-26'
+  text: 'In its response, Sancorp confirms that X “resigned from Sancorp in February 2025” and provided a copy of X’s letter of resignation, dated February 7, 2025--before the agency issued the SASP call order at issue.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ In its response, Sancorp confirms that X “resigned from Sancorp in February 2025”'
+  significance: 'GAO decision: Sancorp confirmed X resigned from Sancorp in February 2025 and produced X''s resignation letter dated February 7, 2025, which predates issuance of the SASP call order.'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
+- id: q157
+  added_date: '2026-09-26'
+  text: 'In this connection, the protester asserts that X had “left Sancorp amicably.”'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Id. at 3 (citing DZSP 21, LLC (sentence "In this connection, the protester asserts")'
+  significance: 'GAO decision, reporting Sancorp''s (the protester''s) position: Sancorp asserted X had "left Sancorp amicably."'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
+- id: q158
+  added_date: '2026-09-26'
+  text: 'Here, the record reflects that X submitted a letter of resignation on February 7 and subsequently left Sancorp’s employ later that month. Supp. Comments, exh. B at 1 (resignation letter of X stating, “my last official day will be 14 February 2025”).'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ By contrast, X was--as touted by Sancorp in its quotation (sentence "Here, the record reflects that X submitted a letter of resignation")'
+  significance: 'GAO decision: X submitted a resignation letter on February 7 and left Sancorp''s employ later that month; the resignation letter states X''s last official day would be 14 February 2025.'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
+- id: q159
+  added_date: '2026-09-26'
+  text: 'Having failed to do so, Sancorp’s quotation was rendered unacceptable and therefore, ineligible for award.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ As our decisions have found, because Sancorp had actual knowledge of the unavailability of X'
+  significance: 'GAO decision: because Sancorp had actual knowledge of X''s unavailability and failed to advise the agency, Sancorp''s SASP quotation was rendered unacceptable and ineligible for award.'
+  claim_group: gao-b-422985-sasp-key-personnel
+  statement_date: '2025-06-11'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-30'
@@ -1828,7 +1909,7 @@ timeline:
 - id: t31
   added_date: '2026-05-01'
   date: '2022-04-25'
-  event: 'IPMO PWS issued by WHS Acquisition Directorate as 8(a) sole-source procurement — "Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO)". Three months before the AARO PWS issued July 7, 2022. Released via FOIA 23-F-0906.'
+  event: 'IPMO PWS dated April 25, 2022 — "Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO)". Three months before the AARO PWS issued July 7, 2022. Released via FOIA 23-F-0906.'
   category: contract
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
@@ -1836,11 +1917,11 @@ timeline:
 - id: t10
   added_date: '2026-04-30'
   date: '2022-06-09'
-  event: 'HQ003422C0064 awarded — IPMO Support Services, $3,026,578.'
+  event: 'HQ003422C0064 awarded — IPMO Support Services, $3,026,578; USAspending records the set-aside as "8(A) SOLE SOURCE".'
   category: contract
   source:
     path: government/usaspending-hq003422c0064.txt
-    location: '"date_signed" field'
+    location: '"date_signed" and "type_set_aside_description" fields'
 - id: t11
   added_date: '2026-04-30'
   date: '2022-07'
@@ -1889,6 +1970,14 @@ timeline:
   source:
     path: government/usaspending-w519tc23f0545.txt
     location: '"date_signed" field'
+- id: t43
+  added_date: '2026-09-26'
+  date: '2024-04'
+  event: 'The individual GAO refers to as "X" — later proposed by Sancorp for a staff officer key personnel position on the SASP call order — joined Sancorp, per X''s resume in Sancorp''s quotation, which states X "currently supports OUSD(I&S)" under an incumbent effort (q154, q155).'
+  category: personnel
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Sancorp proposed an individual who we refer to as “X” (sentence "Sancorp submitted X’s resume")'
 - id: t17
   added_date: '2026-04-30'
   date: '2024-05-31'
@@ -1929,6 +2018,14 @@ timeline:
   source:
     path: government/usaspending-hq003424a0023.txt
     location: '"date_signed" field'
+- id: t44
+  added_date: '2026-09-26'
+  date: '2025-02-07'
+  event: 'X''s letter of resignation from Sancorp, dated February 7, 2025 — before the agency issued the SASP call order; in the protest Sancorp confirms X "resigned from Sancorp in February 2025" (q156, q158).'
+  category: personnel
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ In its response, Sancorp confirms that X “resigned from Sancorp in February 2025”'
 - id: t22
   added_date: '2026-04-30'
   date: '2025-02-14'
@@ -1937,14 +2034,30 @@ timeline:
   source:
     path: government/usaspending-hq003425a0001.txt
     location: '"date_signed" field'
+- id: t45
+  added_date: '2026-09-26'
+  date: '2025-02-14'
+  event: 'X''s last official day at Sancorp, per X''s resignation letter ("my last official day will be 14 February 2025"); GAO: X "subsequently left Sancorp’s employ later that month" (q158). The protester asserts that X had "left Sancorp amicably" (q157).'
+  category: personnel
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ By contrast, X was--as touted by Sancorp in its quotation (sentence "Here, the record reflects that X submitted a letter of resignation")'
 - id: t23
   added_date: '2026-04-30'
   date: '2025-06-11'
-  event: 'GAO B-422985.4, B-422985.5 decision DENIED Sancorp''s protest — EXDIR Call Order 1 awarded to Premier Enterprise Solutions, SASP Call Order 2 awarded to Arlo Solutions.'
+  event: 'GAO B-422985.4, B-422985.5 on Sancorp''s protest under RFQ No. HQ003424R0178 ([`/documents/rfq-hq003424r0178`]): "The protest is denied." Call Order 1 (EXDIR, Premier Enterprise Solutions) challenges denied; SASP call order (Call Order 2, Arlo Solutions) challenges dismissed — Sancorp''s quotation was rendered unacceptable because Sancorp knew key person "X" was unavailable and failed to advise the agency (q154–q159).'
   category: protest
   source:
     path: government/gao-b-422985-wayback-20250708.html
-    location: 'GAO decision date June 11, 2025'
+    location: 'GAO decision date June 11, 2025; digest items 1–2; final paragraph "The protest is denied."'
+- id: t46
+  added_date: '2026-09-26'
+  date: '2025-06-11'
+  event: 'Counsel for the protester (Sancorp) in GAO B-422985.4, B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]) (q153).'
+  category: protest
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Douglas P. Hibshman, Esq. (counsel-of-record block beneath the decision caption)'
 - id: t24
   added_date: '2026-04-30'
   date: '2025-06-30'
@@ -2434,3 +2547,11 @@ org_relationships:
   source:
     path: government/usaspending-hq003425fe174.txt
     location: '"funding_agency" office_agency_name "OUSD(AT & L)", HQ003425FE174'
+- id: or17
+  added_date: '2026-09-26'
+  organization_path: /organizations/fox-rothschild
+  relationship_type: other
+  notes: 'Fox Rothschild LLP, counsel for the protester (Sancorp) in GAO B-422985.4, B-422985.5.'
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: '¶ Douglas P. Hibshman, Esq. (counsel-of-record block beneath the decision caption)'

@@ -389,10 +389,10 @@ Changing `request_state` after creation uses the same path as `status` today
 (`new.py --force`, then re-render). No separate tool is needed unless that path
 proves error-prone.
 
-**Blocks:** building real `foia` nodes.
-**Blocked by:** none.
+**Blocks:** none.
+**Blocked by:** C9 (both released-document nodes need a verified OCR sibling first).
 
-### C9 — Produce the verified OCR sibling for the 23-F-1114 release PDF
+### C9 — Desktop OCR consensus pass: 23-F-1114 release PDF, the IPMO PWS sibling, and a Grusch PPD-19 check
 
 `government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` (117 pages) is an OCR scan
 from p. 4 on, but it has no verified `.txt` sibling and is not flagged `ocr-scan`.
@@ -427,7 +427,33 @@ Then:
 The AARO PWS document node (`documents/blackvault-sancorp-23-f-1114-aaro-pws`)
 quotes this PDF, so it waits on this item.
 
-**Blocks:** building `documents/blackvault-sancorp-23-f-1114-aaro-pws`.
+**Also in this pass: redo the IPMO PWS sibling.**
+`government/foia-23-f-0906-sancorp-ipmo-pws.txt` (the separate
+`…23-F-0906_Performance_Work_Statement.pdf#clean-text-transcription` entry) is
+effectively the raw `pdftotext -layout` output: similarity ≈ 1.0, with only a
+few heading fixes. It still carries OCR errors, e.g. line 2 "April 25,2022",
+line 119 "(T&M)feentrnet.", line 241 "Active IS". The PDF artifact is
+correctly flagged `ocr-scan`, but the sibling was never consensus-verified.
+Its manifest note has been corrected to say so.
+
+- Run `/prepare-ocr-sibling` on `government/foia-23-f-0906-sancorp-ipmo-pws.pdf`,
+  then set the flag.
+- Re-verify the quotes that cite it. `sancorp-consulting` q35 reproduces the
+  "April 25,2022" OCR error; check `ipmo` and `sancorp-consulting` for the rest.
+- The PWS names no issuing office and shows no FOIA case number. Re-check two
+  things against the verified sibling: `ipmo` q6's context naming WHS
+  Acquisition Directorate as the issuer (the PDF's own manifest note says the
+  same), and the "released via FOIA 23-F-0906" wording that `ipmo` t2 and
+  `sancorp-consulting` t31 attribute to the "PWS title block". Re-source them to
+  the release index or the FOIA node where needed.
+
+**Check `government/grusch-ppd-19-procedural-filing.txt`.** It is the only other
+contributor-made (non-consensus) sibling that sits close to raw OCR
+(similarity 0.991). Confirm it against page images, or redo it with consensus.
+All other siblings with a PDF parent diverge from raw OCR the way corrected
+siblings should.
+
+**Blocks:** building `documents/blackvault-sancorp-23-f-1114-aaro-pws` and `documents/foia-23-f-0906-sancorp-ipmo-pws`.
 **Blocked by:** a working PaddleOCR environment (C10, or the maintainer's desktop).
 
 ### C10 — Make the OCR venv isolated and version-pinned
