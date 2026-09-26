@@ -4615,6 +4615,54 @@
     archived_date: '2026-04-28'
     path: news/blackvault-oig-emails-20250401.html
     note: 'Black Vault page for new DoD OIG email releases (April 1 2025): documents the September 12 2023 Kirkpatrick email to ''Stone'' at DoD OIG with body fully redacted under (b)(5) deliberative-process privilege; metadata visible. Black Vault has flagged the sender-imposed deliberative-process footer as legally insufficient and is appealing'
+- url: https://www.theblackvault.com/documentarchive/timeline-post/dod-oig-meets-with-neill-tipton-about-their-evaluation-of-the-dods-actions-regarding-the-unidentified-aerial-phenomena/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    archived_date: '2026-09-26'
+    note: The Black Vault UAP timeline post 'DoD/OIG Meets with Neill Tipton about their "Evaluation of the DoD's Actions Regarding the Unidentified Aerial Phenomena"' (datePublished 2021-10-19T00:00:52+00:00 is the timeline event date, not the writing date; dateModified 2023-07-20T13:58:14+00:00). Cites FOIA DODIG-2023-000021 (embeds the 1-19-2023 email screenshot) and states OSD/JS FOIA 23-F-0377 further confirmed the meeting via the calendar details in Neill Tipton's files; describes Tipton as Director for Defense Intelligence, Collection and Special Programs. Fetched live (HTTP 200) on 2026-09-26. SHA-256 2c286feafd6d23c79302b3d9d480fd06a5caeec4f894727995b13eb8ddb213a0.
+  archive_status: 3
+  wayback_date: '2025-09-10'
+- url: https://www.theblackvault.com/documentarchive/timeline-post/dod-oig-reaches-out-to-neill-tipton-again-about-uap-evaluation/
+  status: archived
+  artifacts:
+  - format: html
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    archived_date: '2026-09-26'
+    note: The Black Vault UAP timeline post 'DoD/OIG Reaches Out To Neill Tipton Again About UAP Evaluation' (datePublished 2023-01-11T00:00:22+00:00 is the timeline event date; dateModified 2023-08-22T12:55:23+00:00). Per FOIA 23-F-0446 (filed by The Black Vault), the DoD OIG reached out to Neill Tipton (described as Director for Defense Intelligence, Collection and Special Programs, OSD/JS) re its UAP evaluation; notes the OIG had already reached out in 2021. Fetched live (HTTP 200) on 2026-09-26. SHA-256 603ce26d9c20065ea18cd2e580c799524daef133b23c76db9b32a719a27c759a.
+  archive_status: 3
+  wayback_date: '2025-09-07'
+- url: https://www.theblackvault.com/documentarchive/wp-content/uploads/2023/01/1-19-2023-8-29-31-AM.jpg
+  status: archived
+  artifacts:
+  - format: image
+    path: government/foia-dodig-2023-000021-oig-email-20211104-bv-excerpt.jpg
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: 'The Black Vault screenshot (1580x995 JPEG, uploaded 2023-01) excerpting DoD OIG FOIA DODIG-2023-000021 release: email from a redacted OIG DoD sender, Sent Thursday, November 4, 2021 12:22 PM, To ''Tipton, Neill T SES OSD OUSD INTEL (USA)'', Subject ''OIG Project No. D2021-DEV0SAN-0116'' (as rendered in the image; differs from the ''D2021-DEVOSN-0116.000'' in the 23-F-0446 OCR layer); body records a meeting with Tipton on October 19, 2021 to discuss the ''Evaluation of the DoD''s Actions Regarding the Unidentified Aerial Phenomena'' ((b)(5) redactions follow); signature block: Office of the Deputy Inspector General for Evaluations, Office of Inspector General, Department of Defense. Excerpt only. Image has no text layer; flagged ocr-scan (needs a verified .txt sibling). Fetched live (HTTP 200) on 2026-09-26. SHA-256 6ae13a985d594c4360a22208da9130deefd39b2ced61932709b6d71746169ef5.'
+  archive_status: 3
+  wayback_date: '2025-11-27'
+- url: https://www.theblackvault.com/documentarchive/wp-content/uploads/2023/07/Screenshot-2023-07-20-065625.png
+  status: archived
+  artifacts:
+  - format: image
+    path: government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: 'The Black Vault screenshot (1388x846 PNG, uploaded 2023-07) excerpting OSD/JS FOIA 23-F-0377 release: Outlook calendar entry, Subject ''DoD OIG Assistant Inspector General Randy Stone'', Start Tue 10/19/2021 10:30 AM, End 11:00 AM, Organizer ''Tipton, Neill T SES OSD OUSD INTEL & SEC (USA)'', required attendees incl. OIG DoD (redacted) and ''Cummings, Matthew C (Matt) SES OSD OUSD INTEL (USA)''; body: meeting with Mr. Tipton and DoD OIG AIG for Space, Intelligence, Engineering, and Oversight Randy Stone re the OIG''s evaluation of DoD Actions Regarding UAP. Excerpt only (not the full release). Image has no text layer; flagged ocr-scan so its text is read from a verified .txt sibling rather than accepted as an unverified image reference. Fetched live (HTTP 200) on 2026-09-26. SHA-256 ff003c4555cf6fa319eedc900c0057cba2c5c23f6ffcf0de0a836829094295a9.'
+  archive_status: 3
+  wayback_date: '2026-07-30'
+- url: https://www.theblackvault.com/documentarchive/wp-content/uploads/2023/08/23-F-0446.pdf
+  status: archived
+  artifacts:
+  - format: pdf
+    path: government/foia-23-f-0446-final-response-tipton-oig-email.pdf
+    archived_date: '2026-09-26'
+    extraction_type: ocr-scan
+    note: 'DoD Freedom of Information Division final response to John Greenewald (The Black Vault), FOIA 23-F-0446 / DODOIG Case# 2023-000420, dated June 22, 2023, signed Stephanie L. Carr, Chief; names Paul M. Plescow, Chief of Staff, AARO (OUSD(I&S)), and Searle Slutzkin, Division Chief FOIA, DODOIG, as Initial Denial Authorities ((b)(6)). Enclosure (p.2): Neill Tipton''s Wed 11 Jan 2023 reply to a DoD OIG program analyst re ''Evaluation of the DoD''s Actions Regarding the Unidentified Aerial Phenomena (Project NO. D2021-DEVOSN-0116.000'', cc Matthew Cummings; p.3 is The Black Vault cover page. MIXED FIDELITY: p.1 is text-native (Acrobat PDFMaker 23 for Word; clean pdftotext); p.2 is a full-page scan image (1240x1754 JPX) whose text layer is OCR output with visible corruption (e.g. ''Depaftment-ef-DefeRse-Offiee'', ''Unclazifiod'', ''rocoivod'', ''l&S'' for I&S) -> flagged ocr-scan; the p.2 enclosure needs a verified .txt sibling before quoting. Fetched live from theblackvault.com (HTTP 200) on 2026-09-26. SHA-256 ee259b1a197c2321bcc8069b84d97f68f7a22acb966c46ecd638b56e4de9b3f2.'
+  archive_status: 3
+  wayback_date: '2026-07-30'
 - url: https://www.theufochronicles.com/2020/04/skinwalker-ranch-original-owner-family-member-speaks.html
   status: archived
   archive_status: 3

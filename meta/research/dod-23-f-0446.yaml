@@ -1,0 +1,237 @@
+id: meta/research/dod-23-f-0446
+type: research-artifact
+target_node: foia/dod-23-f-0446
+status: active
+primary_sources:
+- path: government/whs-foid-foia-log-fy23.xlsx
+  format: xlsx
+- path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+  format: html
+document_intrinsic:
+  requester: John Greenewald (The Black Vault, Inc.)
+  requester_path: /people/john-greenewald
+  agency: Department of Defense
+  agency_path: /organizations/dod
+  component: FOID
+  component_path: /organizations/dod-freedom-of-information-division
+  tracking_number: 23-F-0446
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-09-26'
+  text: "620\t23-F-0446\tGreenewald, John\tThe Black Vault, Inc.\tE-mail\t2023-02-14\t2023-06-22\tGranted / Denied in Part"
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), cells # through Final Disposition'
+  significance: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): tracking number 23-F-0446; requester Greenewald, John; organization The Black Vault, Inc.; received via E-mail on 2023-02-14; closed 2023-06-22; final disposition Granted / Denied in Part.'
+  context: 'Agency-kept FOIA log (WHS FOID FY23 log, sheet FOID_FOIA_Log-FY23); the row is the agency record of the request, not requester correspondence. The quote''s statement date is the log''s Closed Date, 2023-06-22.'
+  claim_group: request-log-row
+  statement_date: '2023-06-22'
+- id: q2
+  added_date: '2026-09-26'
+  text: 'I respectfully request a copy of ALL emails that are to/from (bcc''d or cc''d) the Department of Defense OIG office, and Neill Tipton, Director for Defense Intelligence, Collection and Special Programs.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Request Description cell, opening sentence'
+  significance: 'Records sought, in the requester''s own request text — all email between the DoD OIG and Neill Tipton, identified by his title as Director for Defense Intelligence, Collection and Special Programs'
+  context: 'Request text of requester John Greenewald (The Black Vault, Inc.) as logged in the Request Description cell of the WHS FOID FY23 FOIA log; log Received Date 2023-02-14.'
+  claim_group: records-sought
+  statement_date: '2023-02-14'
+- id: q3
+  added_date: '2026-09-26'
+  text: 'I ask that you include a search of all classified and unclassified systems for responsive records.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Request Description cell, second sentence'
+  significance: 'Requester asks for the search to cover classified as well as unclassified systems'
+  context: 'Request text of requester John Greenewald (The Black Vault, Inc.) as logged in the Request Description cell of the WHS FOID FY23 FOIA log; log Received Date 2023-02-14.'
+  claim_group: search-scope
+  statement_date: '2023-02-14'
+- id: q4
+  added_date: '2026-09-26'
+  text: 'I agree to limit the scope of the search to records dates 1/1/2022 through to the date of processing this request.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Request Description cell, third sentence'
+  significance: 'Requester-set date window — 1 January 2022 through the date of processing'
+  context: 'Request text of requester John Greenewald (The Black Vault, Inc.) as logged in the Request Description cell of the WHS FOID FY23 FOIA log; log Received Date 2023-02-14.'
+  claim_group: search-scope
+  statement_date: '2023-02-14'
+- id: q5
+  added_date: '2026-09-26'
+  text: 'I ask that you conduct the search for all emails, rather than me stipulating keywords, because I believe the responsive material is likely not voluminous, and I would like all emails responsive.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Request Description cell, fourth sentence (immediately preceding the parenthetical date-range clause)'
+  significance: 'Requester declines to supply keywords, asking for all OIG / Tipton email on the stated expectation that the volume is small'
+  context: 'Request text of requester John Greenewald (The Black Vault, Inc.) as logged in the Request Description cell of the WHS FOID FY23 FOIA log; log Received Date 2023-02-14.'
+  claim_group: search-scope
+  statement_date: '2023-02-14'
+- id: q6
+  added_date: '2026-09-26'
+  text: 'DoD/OIG Reaches Out To Neill Tipton Again About UAP Evaluation'
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ DoD/OIG Reaches Out To Neill Tipton Again (post headline)'
+  significance: 'The requester-publisher''s own headline framing the 23-F-0446 release as a second DoD OIG approach to Neill Tipton about the UAP evaluation.'
+  context: 'Headline of The Black Vault UAP-timeline post (bylined John Greenewald, January 11, 2023); the same string is the HTML page title. The byline date is earlier than the 2023-02-14 Received Date the FOID FY23 log gives for 23-F-0446.'
+  claim_group: requester-account-second-reach-out
+- id: q7
+  added_date: '2026-09-26'
+  text: 'According to FOIA case  23-F-0446, filed by The Black Vault, the DoD Office of the Inspector General reached out to Neill Tipton, Director for Defense Intelligence, Collection and Special Programs, as OSD/JS.'
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ According to FOIA case 23-F-0446'
+  significance: 'Identifies FOIA 23-F-0446 as a Black Vault request and states what its release shows: a DoD OIG approach to Neill Tipton, with Tipton''s title as the requester gives it.'
+  context: 'The Black Vault timeline post by John Greenewald (the requester), first body paragraph. The source carries a double space between "case" and "23-F-0446" (preserved verbatim). "as OSD/JS" is the source''s wording.'
+  claim_group: requester-account-release-content
+- id: q8
+  added_date: '2026-09-26'
+  text: 'The email, sent by a person who’s name was redacted, stated that it was in regards to the DoD/OIG’s “Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena.”'
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ The email, sent by a person who’s name was redacted'
+  significance: 'Describes the released record as an email from a redacted-name sender and gives the title of the OIG evaluation it concerned.'
+  context: 'The Black Vault timeline post by John Greenewald (the requester), second body paragraph, first sentence. "who’s" (for "whose") is the source''s spelling, preserved verbatim.'
+  claim_group: requester-account-release-content
+- id: q9
+  added_date: '2026-09-26'
+  text: 'Oddly, the DoD/OIG had already reached out prior in 2021. It is unclear why there was a second reach-out and a likely classified teleconference.'
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ The email, sent by a person who’s name was redacted (sentences 2-3)'
+  significance: 'The requester''s commentary: places the 2023 approach as a second contact after a 2021 one and characterises the follow-up as a likely classified teleconference (the requester''s inference, not a fact the post attributes to the record).'
+  context: 'The Black Vault timeline post by John Greenewald (the requester), second body paragraph, sentences 2-3, directly after the evaluation-title sentence. The body text is followed by a "Continue scrolling for more..." marker.'
+  claim_group: requester-account-second-reach-out
+naming_quirks:
+- id: nq1
+  added_date: '2026-09-26'
+  observed: Greenewald, John
+  canonical: John Greenewald
+  location: 'q1 (FOID FY23 log # 620, Requester Name cell, surname-first)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-09-26'
+  observed: Department of Defense OIG office
+  canonical: DoD Office of the Inspector General
+  location: 'q2 (FOID FY23 log # 620, Request Description cell, opening sentence)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-09-26'
+  observed: DoD/OIG
+  canonical: DoD Office of the Inspector General
+  location: 'q6 (headline), q8 and q9 (second paragraph); the same post uses the canonical form in q7'
+  source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq4
+  added_date: '2026-09-26'
+  observed: Director for Defense Intelligence, Collection and Special Programs
+  canonical: Director for Defense Intelligence (Collection and Special Programs)
+  location: 'q2 (FOID FY23 log # 620, Request Description cell, opening sentence); canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-09-26'
+  observed: Director for Defense Intelligence, Collection and Special Programs
+  canonical: Director for Defense Intelligence (Collection and Special Programs)
+  location: 'q7 (first body paragraph); canonical form as printed in the IPMO Performance Work Statement §1.2 (government/foia-23-f-0906-sancorp-ipmo-pws.pdf)'
+  source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-09-26'
+  observed: OSD/JS
+  canonical: Office of the Secretary of Defense / Joint Staff
+  location: 'q7 ("as OSD/JS"); the post does not expand the abbreviation'
+  source_path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq7
+  added_date: '2026-09-26'
+  observed: FOID
+  canonical: Freedom of Information Division
+  location: 'Sheet title FOID_FOIA_Log-FY23, framed in the q1-q5 location'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+description: 'FOIA case 23-F-0446 is a request by John Greenewald ([`/people/john-greenewald`]) of The Black Vault, Inc. ([`/organizations/the-black-vault`]) for ALL emails to or from the DoD Office of the Inspector General ([`/organizations/dod-inspector-general`]) and Neill Tipton ([`/people/neill-tipton`]), Director for Defense Intelligence (Collection and Special Programs) ([`/organizations/ousd-is-ddi-csp`]). The records sought, the search scope and the date window come from the requester''s own request text, as it appears in the Request Description cell of the Freedom of Information Division ([`/organizations/dod-freedom-of-information-division`]) FOIA log for fiscal year 2023 ([`/documents/whs-foid-foia-log-fy23`]), log # 620. They are the requester''s description, not an agency finding. The requester requests a search of all classified and unclassified systems, and requests all emails rather than keywords, in the belief that the responsive material is likely not voluminous. The log shows the Final Disposition as Granted / Denied in Part.
+
+
+  The Black Vault''s own timeline post on the case, by John Greenewald and filed under January 11, 2023 (a date earlier than the log''s Received Date), is the requester''s account of the release. It says the DoD Office of the Inspector General reached out to Tipton in an email sent by a person whose name was redacted, about the "Evaluation of the DoD''s Actions Regarding the Unidentified Aerial Phenomena" ([`/documents/dod-oig-evaluation-dod-actions-regarding-uap`]). It also says the DoD Office of the Inspector General had already reached out in 2021, and that it is unclear why there was a second reach-out and a likely classified teleconference.'
+associated_entities:
+- /people/john-greenewald
+- /organizations/the-black-vault
+- /people/neill-tipton
+- /organizations/dod-inspector-general
+- /organizations/dod
+- /organizations/ousd-is-ddi-csp
+- /organizations/osd
+- /organizations/joint-staff
+- /organizations/dod-freedom-of-information-division
+- /organizations/whs
+- /documents/whs-foid-foia-log-fy23
+- /documents/dod-oig-evaluation-dod-actions-regarding-uap
+- /documents/foia-23-f-0446-tipton-oig-email
+- /documents/freedom-of-information-act
+timeline:
+- id: t1
+  added_date: '2026-09-26'
+  date: '2021'
+  category: other
+  event: 'The Black Vault post states the DoD Office of the Inspector General had already reached out prior in 2021 (the requester''s account; no month or day given)'
+  node_link: /organizations/dod-inspector-general
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ The email, sent by a person who’s name was redacted (sentence 2)'
+- id: t2
+  added_date: '2026-09-26'
+  date: '2023-01-11'
+  category: other
+  event: 'Date The Black Vault timeline post "DoD/OIG Reaches Out To Neill Tipton Again About UAP Evaluation" by John Greenewald is filed under (its byline date). The post describes what FOIA case 23-F-0446 released, and the log shows that request received 2023-02-14 and closed 2023-06-22, so this is not the date the post was written'
+  node_link: /organizations/the-black-vault
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ DoD/OIG Reaches Out To Neill Tipton Again (post headline, byline line); page metadata article:published_time / datePublished 2023-01-11T00:00:22+00:00'
+- id: t3
+  added_date: '2026-09-26'
+  date: '2023-02-14'
+  category: foia
+  event: 'Request received via E-mail (FOID FY23 log # 620)'
+  node_link: /documents/whs-foid-foia-log-fy23
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Received Mode + Received Date cells'
+- id: t4
+  added_date: '2026-09-26'
+  date: '2023-06-22'
+  category: foia
+  event: 'Request closed with Final Disposition Granted / Denied in Part (FOID FY23 log # 620)'
+  node_link: /documents/whs-foid-foia-log-fy23
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Closed Date + Final Disposition cells'
+- id: t5
+  added_date: '2026-09-26'
+  date: '2023-08-22'
+  category: publication
+  event: 'Last-modified date of The Black Vault timeline post on FOIA case 23-F-0446, per the page metadata'
+  node_link: /organizations/the-black-vault
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: 'page metadata, article:modified_time / dateModified 2023-08-22T12:55:23+00:00'
+records_sought:
+- id: rs1
+  added_date: '2026-09-26'
+  description: 'ALL emails that are to/from (bcc''d or cc''d) the Department of Defense OIG office, and Neill Tipton, Director for Defense Intelligence, Collection and Special Programs, from a search of all classified and unclassified systems (the requester''s own request text)'
+  date_range: '1/1/2022 through to the date of processing this request (requester); Date Range for Record Search: From 1/1/2022 To 2/10/2023 (log)'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), Request Description cell'
+correspondence: []
+released_records:
+- id: rr1
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0446-tipton-oig-email
+  disposition: released-in-part
+  source:
+    path: news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html
+    location: '¶ The email, sent by a person who’s name was redacted (sentence 1); the requester''s account of the released email'

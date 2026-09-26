@@ -1,0 +1,248 @@
+id: meta/research/dod-23-f-0377
+type: research-artifact
+target_node: foia/dod-23-f-0377
+status: active
+primary_sources:
+- path: government/whs-foid-foia-log-fy23.xlsx
+  format: xlsx
+- path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+  format: html
+document_intrinsic:
+  requester: 'Greenewald, John (The Black Vault, Inc.)'
+  requester_path: /people/john-greenewald
+  agency: DoD
+  agency_path: /organizations/dod
+  component: 'OSD/JS FOIA (FOID)'
+  component_path: /organizations/dod-freedom-of-information-division
+  tracking_number: 23-F-0377
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-09-26'
+  text: "518\t23-F-0377\tGreenewald, John\tThe Black Vault, Inc.\tPAL\t2023-01-19\t2023-06-23\tGranted / Denied in Part"
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (Request ID 23-F-0377), cells # through Final Disposition'
+  significance: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): tracking number 23-F-0377; requester Greenewald, John; organization The Black Vault, Inc.; received via PAL on 2023-01-19; closed 2023-06-23; final disposition Granted / Denied in Part.'
+  context: 'Agency-kept FOIA log published in the WHS FOID Reading Room (FOIA_Log folder); the row is the agency record of the request, not requester correspondence.'
+  claim_group: request-log-disposition
+- id: q2
+  added_date: '2026-09-26'
+  text: 'I respectfully request a copy of records (which includes videos/photos), electronic or otherwise, pertaining to a October 19, 2021, meeting between the DoD/OIG and Neill Tipton, OUSD, as revealed in FOIA case DODOIG-2023-000021.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  significance: 'The core ask of 23-F-0377 as recorded in the DoD FOID FY23 log: records of an October 19, 2021 DoD/OIG meeting with Neill Tipton, with the request''s predicate identified as FOIA case DODOIG-2023-000021.'
+  context: 'Request Description cell of the FOID FY23 log row for 23-F-0377 (requester Greenewald, John / The Black Vault, Inc.; received 2023-01-19). The cell reproduces the requester''s first-person request text.'
+  claim_group: request-scope-oig-tipton-meeting
+- id: q3
+  added_date: '2026-09-26'
+  text: 'I attached the pertinent record.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  significance: 'The requester states that the record from FOIA case DODOIG-2023-000021 was attached to the request; the attachment itself is not reproduced in the log.'
+  context: 'Request Description cell of the FOID log row for 23-F-0377 (the requester''s own words, not an agency finding); follows immediately after the sentence naming FOIA case DODOIG-2023-000021.'
+  claim_group: 'oig-tipton-meeting-per-dodoig-2023-000021'
+- id: q4
+  added_date: '2026-09-26'
+  text: 'The meeting was regarding the Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena (Project No. D2021-DEV0SN-0116.000). The email confirming this meeting took place was sent on November 4, 2021.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  significance: 'The requester''s description of the October 19, 2021 meeting: its subject was the DoD OIG evaluation of DoD actions regarding UAP (project number in the log''s form, D2021-DEV0SN-0116.000), and the email confirming it was sent on November 4, 2021.'
+  context: 'Request Description cell of the FOID log row for 23-F-0377 (the requester''s own words, not an agency finding).'
+  claim_group: 'oig-tipton-meeting-per-dodoig-2023-000021'
+- id: q5
+  added_date: '2026-09-26'
+  text: 'I request you include all records, including any additional emails with other parties (even just internal at the OSD/JS and not including DoD/OIG personnel) regarding this meeting, material utilized during the meeting [ie: visuals/PowerPoint/Videos/Photos], memos, and all other records that may pertain.'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  significance: 'The requester''s itemized scope: additional emails (including OSD/JS-internal traffic without DoD/OIG personnel), meeting materials (visuals/PowerPoint/videos/photos), memos, and all other pertinent records.'
+  context: 'Request Description cell of the FOID log row for 23-F-0377 (the requester''s own words, not an agency finding).'
+  claim_group: request-scope-oig-tipton-meeting
+- id: q6
+  added_date: '2026-09-26'
+  text: 'I also ask for a search for all classified and unclassified records. (Date Range for Record Search: From 3/1/2021 To 1/18/2023)'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  significance: 'The requester asks for a search of classified and unclassified records over the date range 3/1/2021 to 1/18/2023.'
+  context: 'Request Description cell of the FOID log row for 23-F-0377 (the requester''s own words, not an agency finding); closing sentences of the cell.'
+  claim_group: request-scope-oig-tipton-meeting
+- id: q7
+  added_date: '2026-09-26'
+  text: 'According to FOIA case DODOIG-2023-000021, filed by The Black Vault, the DoD Office of the Inspector General met with Neill Tipton, Director for Defense Intelligence, Collection and Special Programs.'
+  source:
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    location: '¶ "According to FOIA case DODOIG-2023-000021"'
+  significance: 'The requester (The Black Vault) states that its FOIA case DODOIG-2023-000021 showed the DoD Office of the Inspector General met with Neill Tipton, identified by the title Director for Defense Intelligence, Collection and Special Programs. This OIG-side release is the basis the 23-F-0377 request later cited.'
+  context: 'First paragraph of The Black Vault timeline entry, bylined John Greenewald and filed under the date October 19, 2021 (the timeline event date the post is filed under, not the date it was written; page metadata dateModified 2023-07-20), under the headline "DoD/OIG Meets with Neill Tipton about their “Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena”".'
+  claim_group: 'oig-tipton-meeting-per-dodoig-2023-000021'
+- id: q8
+  added_date: '2026-09-26'
+  text: 'The email, sent by a person who’s name was redacted, stated that it was in regards to the DoD/OIG’s “Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena.”'
+  source:
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    location: '¶ "The email, sent by a person"'
+  significance: 'Describes the OIG-released record as an email from a redacted sender and ties the meeting to the DoD/OIG "Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena".'
+  context: 'Second paragraph of the timeline entry; follows the paragraph attributing the meeting to FOIA case DODOIG-2023-000021.'
+  claim_group: 'oig-tipton-meeting-per-dodoig-2023-000021'
+- id: q9
+  added_date: '2026-09-26'
+  text: 'OSD/JS FOIA Case 23-F-0377 filed by The Black Vault further confirmed this with the release of the actual calendar details in the files of Mr. Neill Tipton.'
+  source:
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    location: '¶ "OSD/JS FOIA Case 23-F-0377"'
+  significance: 'The requester''s account of what 23-F-0377 released: calendar details from Neill Tipton''s files, which it says confirmed the OIG meeting.'
+  context: 'Third and final paragraph of the timeline entry, after the two paragraphs describing the DODOIG-2023-000021 email.'
+  claim_group: '23-f-0377-release-tipton-calendar'
+naming_quirks:
+- id: nq1
+  added_date: '2026-09-26'
+  observed: 'DoD/OIG'
+  canonical: 'DoD Office of the Inspector General'
+  location: 'Request Description cell, log # 518 (quotes q2, q5)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq2
+  added_date: '2026-09-26'
+  observed: 'DoD/OIG'
+  canonical: 'DoD Office of the Inspector General'
+  location: '¶ "The email, sent by a person" (quote q8) and the page headline; the expanded form is in ¶ "According to FOIA case DODOIG-2023-000021" (quote q7)'
+  source_path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq3
+  added_date: '2026-09-26'
+  observed: 'OUSD'
+  canonical: null
+  location: 'Request Description cell, log # 518 (quote q2, "Neill Tipton, OUSD"); neither source on this node states which Under Secretary office; the calendar excerpt (government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png, no verified sibling yet) is the route to resolve it'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: unresolved
+- id: nq4
+  added_date: '2026-09-26'
+  observed: 'OSD/JS'
+  canonical: 'Office of the Secretary of Defense / Joint Staff'
+  location: 'Request Description cell, log # 518 (quote q5, "internal at the OSD/JS")'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+- id: nq5
+  added_date: '2026-09-26'
+  observed: 'FOID'
+  canonical: 'Freedom of Information Division'
+  location: 'sheet title FOID_FOIA_Log-FY23 (named in the q1-q6 location lines)'
+  source_path: government/whs-foid-foia-log-fy23.xlsx
+  resolution: preserve-as-sic-in-quotes
+description: 'FOIA case 23-F-0377 was filed by John Greenewald ([`/people/john-greenewald`]) of The Black Vault ([`/organizations/the-black-vault`]). The FOID ([`/organizations/dod-freedom-of-information-division`]) FOIA log ([`/documents/whs-foid-foia-log-fy23`]) of the DoD ([`/organizations/dod`]) records the request as received via PAL on 2023-01-19 and closed on 2023-06-23, with the Final Disposition Granted / Denied in Part.
+
+
+  In the request text the log records, the requester seeks records pertaining to an October 19, 2021 meeting ([`/events/2021-10-19-dod-oig-tipton-meeting`]) between the DoD/OIG ([`/organizations/dod-inspector-general`]) and Neill Tipton ([`/people/neill-tipton`]), OUSD, as revealed in FOIA case DODOIG-2023-000021 ([`/foia/dodoig-2023-000021`]). The request text names Tipton''s office only as OUSD; neither source states which Under Secretary office it is. The requester states the meeting was regarding the Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena ([`/documents/dod-oig-evaluation-dod-actions-regarding-uap`]) and that the email confirming this meeting took place ([`/documents/foia-dodoig-2023-000021-oig-email-20211104`]) was sent on November 4, 2021. The request covers additional emails, including emails internal at the OSD/JS ([`/organizations/osd`], [`/organizations/joint-staff`]), material utilized during the meeting, and memos, and it seeks a search for all classified and unclassified records. These are the requester''s words, not an agency finding.
+
+
+  The Black Vault timeline entry names Tipton as Director for Defense Intelligence, Collection and Special Programs ([`/organizations/ousd-is-ddi-csp`]). It states that OSD/JS FOIA Case 23-F-0377 further confirmed the meeting with the release of the actual calendar details in the files of Mr. Neill Tipton ([`/documents/foia-23-f-0377-tipton-calendar-20211019`]). That is the requester''s account of the release. The log records the disposition but does not list the records released.'
+associated_entities:
+- /people/john-greenewald
+- /organizations/the-black-vault
+- /people/neill-tipton
+- /organizations/dod-inspector-general
+- /organizations/dod
+- /organizations/osd
+- /organizations/joint-staff
+- /organizations/ousd-is-ddi-csp
+- /organizations/dod-freedom-of-information-division
+- /organizations/whs
+- /foia/dodoig-2023-000021
+- /events/2021-10-19-dod-oig-tipton-meeting
+- /documents/dod-oig-evaluation-dod-actions-regarding-uap
+- /documents/foia-dodoig-2023-000021-oig-email-20211104
+- /documents/foia-23-f-0377-tipton-calendar-20211019
+- /documents/whs-foid-foia-log-fy23
+timeline:
+- id: t1
+  added_date: '2026-09-26'
+  date: '2021-10-19'
+  event: 'Meeting between the DoD/OIG and Neill Tipton, as the request describes it (regarding the Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena)'
+  category: meeting
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  node_link: /events/2021-10-19-dod-oig-tipton-meeting
+- id: t2
+  added_date: '2026-09-26'
+  date: '2021-11-04'
+  event: 'The email confirming the meeting took place was sent, as the request states it'
+  category: correspondence
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+  node_link: /documents/foia-dodoig-2023-000021-oig-email-20211104
+- id: t3
+  added_date: '2026-09-26'
+  date: '2023-01-19'
+  event: 'Request 23-F-0377 received via PAL (FOID log Received Date)'
+  category: foia
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (Request ID 23-F-0377), Received Mode + Received Date cells'
+  node_link: /documents/whs-foid-foia-log-fy23
+- id: t4
+  added_date: '2026-09-26'
+  date: '2023-06-23'
+  event: 'Request closed with Final Disposition Granted / Denied in Part (FOID log # 518)'
+  category: foia
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (Request ID 23-F-0377), Closed Date + Final Disposition cells'
+  node_link: /documents/whs-foid-foia-log-fy23
+- id: t5
+  added_date: '2026-09-26'
+  date: '2023-07-20'
+  event: 'The Black Vault timeline post stating that 23-F-0377 released the calendar details was last modified (page metadata dateModified); the post is filed under the date October 19, 2021'
+  category: other
+  source:
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    location: 'page metadata: article:modified_time / dateModified 2023-07-20T13:58:14+00:00'
+  node_link: /organizations/the-black-vault
+records_sought:
+- id: rs1
+  added_date: '2026-09-26'
+  description: 'Records (which includes videos/photos), electronic or otherwise, pertaining to the October 19, 2021 meeting between the DoD/OIG and Neill Tipton, as revealed in FOIA case DODOIG-2023-000021; the requester states the meeting was regarding the Evaluation of the DoD’s Actions Regarding the Unidentified Aerial Phenomena'
+  identifiers:
+  - scheme: case-number
+    value: 'DODOIG-2023-000021'
+  - scheme: other
+    value: 'D2021-DEV0SN-0116.000'
+  date_range: 'From 3/1/2021 To 1/18/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+- id: rs2
+  added_date: '2026-09-26'
+  description: 'Any additional emails with other parties regarding this meeting, even just internal at the OSD/JS and not including DoD/OIG personnel'
+  date_range: 'From 3/1/2021 To 1/18/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+- id: rs3
+  added_date: '2026-09-26'
+  description: 'Material utilized during the meeting (visuals/PowerPoint/Videos/Photos)'
+  date_range: 'From 3/1/2021 To 1/18/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+- id: rs4
+  added_date: '2026-09-26'
+  description: 'Memos, and all other records that may pertain to this meeting; the requester also seeks a search for all classified and unclassified records'
+  date_range: 'From 3/1/2021 To 1/18/2023'
+  source:
+    path: government/whs-foid-foia-log-fy23.xlsx
+    location: 'sheet FOID_FOIA_Log-FY23, log # 518 (spreadsheet row 519), Request ID 23-F-0377, Request Description'
+correspondence: []
+released_records:
+- id: rr1
+  added_date: '2026-09-26'
+  document_path: /documents/foia-23-f-0377-tipton-calendar-20211019
+  source:
+    path: news/blackvault-timeline-oig-meets-tipton-20211019.html
+    location: '¶ "OSD/JS FOIA Case 23-F-0377" (quote q9; the requester''s account of the release)'

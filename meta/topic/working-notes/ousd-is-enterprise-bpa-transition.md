@@ -181,11 +181,78 @@ Written 2026-09-26.
   - **Row 620, 23-F-0446** (received 2023-02-14, closed 2023-06-22), for all
     emails between the DoD OIG and "Neill Tipton, Director for Defense
     Intelligence, Collection and Special Programs" (2022-01-01 to 2023-02-10).
+  Both are now built as `foia/dod-23-f-0377` and `foia/dod-23-f-0446`. The log
+  cells (tracking number, requester, received/closed dates, disposition) are
+  0377 q1 / 0446 q1. The requester's text is 0377 q2–q6 / 0446 q2–q5.
+- **[E, requester-published]** The Black Vault's timeline posts
+  (`news/blackvault-timeline-oig-meets-tipton-20211019.html`,
+  `news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html`) say:
+  - under DODOIG-2023-000021 the OIG "met with Neill Tipton, Director for
+    Defense Intelligence, Collection and Special Programs" (0377 q7);
+  - 23-F-0377 released "the actual calendar details in the files of Mr.
+    Neill Tipton" (0377 q9);
+  - under 23-F-0446 the OIG "reached out to Neill Tipton … as OSD/JS" about
+    the same evaluation (0446 q7–q8).
+
+  All of this is the requester's account of the releases, not agency text.
+- **[E, unquoted]** The 23-F-0446 final response is p. 1 of
+  `government/foia-23-f-0446-final-response-tipton-oig-email.pdf`. That page is
+  text-native, but the file is flagged `ocr-scan` because p. 2 is a scan, so
+  nothing on it is quoted in a node until BACKLOG C9. The letter says:
+  - FOID wrote on June 22, 2023, signed by Stephanie L. Carr, Chief.
+  - FOID received the request, a January 18, 2023 Privacy Act/FOIA request,
+    from the DoD OIG on February 14, 2023. It was a referral, under OIG case
+    number 2023-000420.
+  - OUSD(I&S) and the DoD OIG reviewed a one-page document and withheld
+    portions under (b)(6).
+  - The Initial Denial Authorities were Paul M. Plescow, "Chief of Staff,
+    All-domain Anomaly Resolution Office (AARO), (OUSD(I&S))", and Searle
+    Slutzkin, the DoD OIG's Division Chief FOIA.
+
+  The log records the same case only as received by "E-mail" on 2023-02-14.
+- **[O]** The agency's own record of the 2021-10-19 meeting is not yet readable
+  here. Two Black Vault screenshots are archived but have no text layer and no
+  verified sibling (BACKLOG C9):
+  - `government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png`, the
+    23-F-0377 calendar entry;
+  - `government/foia-dodig-2023-000021-oig-email-20211104-bv-excerpt.jpg`, the
+    2021-11-04 OIG email.
+
+  The archive role's visual reads, in their manifest notes, say that:
+  - Tipton organized the meeting with OIG Assistant Inspector General Randy
+    Stone;
+  - it concerned the OIG's UAP evaluation;
+  - the email's subject line gives an OIG project number.
+
+  None of this is verified. The project number is printed three ways across the
+  sources: "D2021-DEV0SN-0116.000" in the log, "D2021-DEV0SAN-0116" in the JPG
+  (visual read) and "D2021-DEVOSN-0116.000" in the 0446 OCR layer.
+- **[O]** No found source ties the project to the published report. The
+  archived DODIG-2023-109 unclassified summary
+  (`government/media-defense-gov-dodig-2023-109-unclassified-summary.pdf`) is
+  titled "… Unidentified Anomalous Phenomena", not "Aerial", and prints no
+  project number.
 - **[I]** In October 2021, the official over the directorate that later
   housed IPMO (established 2022-03-01) was OUSD(I&S)'s point of contact for
-  the DoD IG's UAP evaluation. The meeting description is the requester's,
-  citing an OIG release; the agency's own words are not yet in hand.
-  Neill Tipton has no node.
+  the DoD IG's UAP evaluation. The OIG contacted him again in January 2023.
+  By June 2023, AARO's Chief of Staff acted as OUSD(I&S)'s Initial Denial
+  Authority on that correspondence. The IDA wording is verbatim on page 1 of
+  `government/foia-23-f-0446-final-response-tipton-oig-email.pdf`, which
+  has a clean text layer. It can be quoted once C9 produces the file's
+  verified sibling.
+
+  **Two readings of the IDA assignment:**
+  - **(a)** FOIA review usually goes to the component with an interest in
+    the records. On that reading, OUSD(I&S) treated Tipton's correspondence
+    with the IG as within AARO's UAP remit.
+  - **(b)** AARO's Chief of Staff may simply have been a designated IDA for
+    OUSD(I&S) in general, whatever the subject.
+
+  To tell them apart, look at other OUSD(I&S) FOIA responses from 2023: if
+  Plescow signs as IDA on non-UAP records, (b) holds; if only on UAP
+  records, (a). The agency's words for the meeting itself
+  await C9. `people/neill-tipton` is not built: every quotable source about him
+  is still the requester's.
 
 ## 5. What SASP is, from its own hiring [E]
 
@@ -244,6 +311,8 @@ document states it.
    them to `organizations/arlo-solutions` (and a future IEA/EverWatch node)
    (§2). The FPDS termination reason for F0104 P00004 is still to fetch.
 2. The 23-F-0377 and 23-F-0446 releases and OIG release DODOIG-2023-000021:
-   Tipton and the IG UAP evaluation in the agency's own words (§4).
+   Tipton and the IG UAP evaluation in the agency's own words (§4). Partly
+   done: both foia nodes are built. The agency text is archived but waits on
+   the BACKLOG C9 OCR pass.
 3. HQ003424C0046's transaction history and IPMO's post-May-2026 support (§3).
 4. An organizational source linking DDI(C&SP) and the SASP office (§6).

@@ -392,7 +392,7 @@ proves error-prone.
 **Blocks:** none.
 **Blocked by:** C9 (both released-document nodes need a verified OCR sibling first).
 
-### C9 — Desktop OCR consensus pass: 23-F-1114 release PDF, the IPMO PWS sibling, and a Grusch PPD-19 check
+### C9 — Desktop OCR consensus pass: 23-F-1114 release PDF, the IPMO PWS sibling, a Grusch PPD-19 check, and the Tipton / IG-evaluation release files
 
 `government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` (117 pages) is an OCR scan
 from p. 4 on, but it has no verified `.txt` sibling and is not flagged `ocr-scan`.
@@ -453,7 +453,36 @@ contributor-made (non-consensus) sibling that sits close to raw OCR
 All other siblings with a PDF parent diverge from raw OCR the way corrected
 siblings should.
 
-**Blocks:** building `documents/blackvault-sancorp-23-f-1114-aaro-pws` and `documents/foia-23-f-0906-sancorp-ipmo-pws`.
+**Also in this pass: the three Tipton / DoD IG UAP-evaluation release files.**
+They were archived 2026-09-26 and flagged `ocr-scan` in the manifest. None has a
+sibling, so none is cited as a primary source or quoted yet:
+
+- `government/foia-23-f-0446-final-response-tipton-oig-email.pdf` (3 pp.).
+  p. 1 is the FOID final response of June 22, 2023. It is text-native, but
+  the file carries one flag. p. 2 is the released 2023-01-11 Tipton–OIG email.
+  It is a scan, and its OCR layer is corrupt ("l&S", "Unclazifiod").
+- `government/foia-23-f-0377-tipton-calendar-20211019-bv-excerpt.png`. The Black
+  Vault's screenshot of the 23-F-0377 calendar entry for the 2021-10-19 meeting.
+  It has no text layer.
+- `government/foia-dodig-2023-000021-oig-email-20211104-bv-excerpt.jpg`. The
+  Black Vault's screenshot of the 2021-11-04 DoD OIG email released under
+  DODOIG-2023-000021. It has no text layer.
+
+The two images are the first lossy-flagged non-PDF sources.
+`ocr_sibling_presence.py` checks PDFs only, and its docstring says to decide the
+sibling story before extending it. Decide whether `/prepare-ocr-sibling` takes
+single-image sources first. After that:
+
+1. Add the files to `foia/dod-23-f-0446` and `foia/dod-23-f-0377` via
+   `/augment`: the 0446 letter (pages, exemption, IDAs, signer, the DODOIG
+   referral) and the released records.
+2. Reassess `people/neill-tipton`, left unbuilt because the only quotable
+   content was the requester's own descriptions.
+3. Settle the OIG project number. It is printed "D2021-DEV0SAN-0116" in the JPG
+   (visual read), "D2021-DEVOSN-0116.000" in the 0446 OCR layer, and
+   "D2021-DEV0SN-0116.000" in the FOIA log's request text.
+
+**Blocks:** building `documents/blackvault-sancorp-23-f-1114-aaro-pws` and `documents/foia-23-f-0906-sancorp-ipmo-pws`; the release-record additions to `foia/dod-23-f-0377` / `foia/dod-23-f-0446` and the `people/neill-tipton` decision.
 **Blocked by:** a working PaddleOCR environment (C10, or the maintainer's desktop).
 
 ### C10 — Make the OCR venv isolated and version-pinned
