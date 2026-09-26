@@ -392,15 +392,59 @@ proves error-prone.
 **Blocks:** building real `foia` nodes.
 **Blocked by:** none.
 
-### C9 — Fix the gaps the first `foia` builds exposed
+### C9 — Produce the verified OCR sibling for the 23-F-1114 release PDF
 
-Building the first two `foia` nodes exposed defects; one remains open:
+`government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` (117 pages) is an OCR scan
+from p. 4 on, but it has no verified `.txt` sibling and is not flagged `ocr-scan`.
+Its 20 existing quotes were therefore verified against unverified OCR text:
 
-1. **`government/blackvault-sancorp-23-f-1114-aaro-pws.pdf` is not flagged
-   `ocr-scan`,** although pp. 4–117 are an OCR layer. Quotes already drawn from
-   it (AARO and Sancorp nodes) were verified against unverified OCR text.
-   Produce a verified sibling with `/prepare-ocr-sibling`, set the flag, then
-   re-verify the existing quotes via `/augment`.
+- `aaro` q12;
+- `dod-23-f-1114` q1–q13;
+- `sancorp-consulting` q1–q6.
 
-**Blocks:** none.
+The VLM page reads are **done and parked** at
+`.scratch/drafts/ocr-blackvault-sancorp-23-f-1114-aaro-pws/` (115 of 117 pages).
+Pages 25 and 89 were refused by the VLM content filter and need the OCR fill.
+
+**Blocked on the PaddleOCR pass.** PaddleOCR inference segfaults on the ARM64
+maintainer box under every package combination tried, including the
+previously working pair. Run the consensus pass (PaddleOCR + Tesseract) on the
+maintainer's desktop, where it has worked before, from the parked page reads:
+
+    ocr-consensus.py run … --vlm-pages <parked dir> --blocked-pages 25,89
+
+Then:
+
+1. Run the verifier pass and registration per `/prepare-ocr-sibling`, and set
+   `extraction_type: ocr-scan`. Do not set the flag before the sibling exists:
+   on its own it makes `validate-research.py` fail.
+2. Re-verify the 20 quotes via `/augment`. The VLM reads of pp. 5–9 suggest
+   OCR-error fixes are due on `sancorp-consulting` q2–q6 and `aaro` q12. Settle
+   them only against the confirmed sibling.
+3. Re-examine `sancorp-consulting` naming quirks nq3–nq8. They may record
+   OCR garbage as if it were the source's own spelling.
+
+The AARO PWS document node (`documents/blackvault-sancorp-23-f-1114-aaro-pws`)
+quotes this PDF, so it waits on this item.
+
+**Blocks:** building `documents/blackvault-sancorp-23-f-1114-aaro-pws`.
+**Blocked by:** a working PaddleOCR environment (C10, or the maintainer's desktop).
+
+### C10 — Make the OCR venv isolated and version-pinned
+
+`scripts/tools/setup-ocr-consensus.sh` builds `.venv-ocr/` with
+`--system-site-packages`. That only works while the venv's Python matches the
+system Python. After a system Python upgrade, compiled system packages
+(cryptography/cffi, Pillow, kiwisolver, ujson) fail to import under the venv's
+older interpreter.
+
+Rebuild the venv isolated (no `--system-site-packages`) and install everything
+`ocr-consensus.py` needs inside it: `paddlepaddle paddleocr numpy pillow
+pyyaml`. Then pin the versions from a `pip freeze` of an environment where
+inference **actually runs** (import alone is not enough). Separately, find out
+why PaddleOCR inference segfaults on aarch64 with PaddlePaddle 3.2.2 even with
+isolated deps, oneDNN off and single-threaded. Pin a PaddlePaddle build known
+to infer on aarch64, or document that the consensus pass runs off-box.
+
+**Blocks:** C9 on the ARM64 box.
 **Blocked by:** none.

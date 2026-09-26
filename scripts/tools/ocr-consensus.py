@@ -1095,7 +1095,11 @@ def _concat_pages(pages_dir):
 
     Returns ``(base_text, page_starts)`` where ``page_starts[k]`` is the char
     offset at which page ``k+1`` begins."""
-    files = sorted(Path(pages_dir).glob("p*.txt"))
+    # Numeric page order: a lexicographic sort puts p100.txt before p11.txt on
+    # sources past 99 pages.
+    files = sorted((f for f in Path(pages_dir).glob("p*.txt")
+                    if re.fullmatch(r"p\d+", f.stem)),
+                   key=lambda f: int(f.stem[1:]))
     if not files:
         raise SystemExit(f"--vlm-pages: no p*.txt files found in {pages_dir}")
     parts, page_starts, off = [], [], 0
