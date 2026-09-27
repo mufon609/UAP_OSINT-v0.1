@@ -23,7 +23,7 @@ kind: gov
 
 ## Description
 
-The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting's ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)), who is in turn supported by the Director of the IPMO for all influence and perception management related matters.
+The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting's ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)) ([`/organizations/ousd-is-ddi-csp`]), who is in turn supported by the Director of the IPMO for all influence and perception management related matters. In the April 20, 2026 capture of the Organization page of the Office of the Under Secretary of War for Intelligence & Security ([`/organizations/ousd-is`]) website, the office is listed as "Influence and Perceptional Management Office (IPMO)" under the Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]), alongside Strategic Coordination Program Management Office, Special Programs, HUMINT & Sensitive Activities, and National Programs & Policy Support. The PWS (April 25, 2022) and the Organization page (April 20, 2026 capture) each stand as recorded; no source cited here states the relationship between DDI(C&SP) and SASP.
 
 IPMO is tasked with the development of broad thematic influence guidance focused on key adversaries, the promulgation of competitive influence strategies focused on specific defense issues, and the conduct of oversight, governance, and integration related to influence and perception management matters across DoD components. Per the FY 2025 OSD OP-5 budget submission, IPMO is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit America's defense-related strategic interests; its activities include the development of thematic influence guidance and integrated influence strategies; oversight of intelligence support to operations in the information environment; oversight and governance of deception activities; oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities; and management of designated compartmented programs.
 
@@ -49,7 +49,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ## Key Passages
 
-### Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives (q7).
+### Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives.
 
 > The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -73,7 +73,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2023 OSD OP-5 sub-office summary bullet for IPMO — frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet (q16); replaced in FY 2025 by the new "center of gravity" framing (q13) that persists into FY 2026 (q8). Anchors the pre-pivot mission-summary framing.
+### FY 2023 OSD OP-5 sub-office summary bullet for IPMO — frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet; replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing, which persists into the FY 2026 OSD OP-5. Anchors the pre-pivot mission-summary framing.
 
 > The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
@@ -85,7 +85,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### IPMO PWS §1.2 chain-of-command attestation: USD(I&S) supported by DDI(C&SP), in turn supported by Director, IPMO. Primary-source documentation of IPMO's reporting line within OUSD(I&S) — IPMO sits under DDI(C&SP) rather than reporting directly to USD(I&S).
+### IPMO PWS §1.2 (April 2022): USD(I&S) is supported by DDI (Collection and Special Programs), which is supported by the Director of IPMO.
 
 > Among other organizations, the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI (C&SP)), who is supported by the Director of the IPMO for all influence and perception management related matters.
 
@@ -121,7 +121,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046); see timeline t4/t5/t8 and org_relationship or10. Sister aaro node carries the parallel "AARO SUPPORT SERVICES" description-field quote (aaro q13).
+### USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046). The sister aaro node carries the parallel "AARO SUPPORT SERVICES" description field from USAspending.
 
 > "description":"IPMO SUPPORT SERVICES"
 
@@ -145,7 +145,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2024 OSD OP-5 sub-office summary bullet for IPMO — verbatim identical to FY 2023 (q12). Provides direct FY 2024 source attestation for the chronology claim made in q12 significance ("Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet"). Replaced in FY 2025 by the new "center of gravity" framing (q13).
+### FY 2024 OSD OP-5 sub-office summary bullet for IPMO — verbatim identical to the FY 2023 OSD OP-5 bullet, attesting that the FY 2023 wording carried into FY 2024. Replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing.
 
 > The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
@@ -153,7 +153,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 |---|---|
 | Attributed to | OSD OP-5 FY 2024 budget submission, OUSD(I&S) program section, IPMO sub-office summary bullet, 2023 |
 | Source | [archived source](../sources/government/osd-op5-fy24-20260501.pdf) |
-| Location | OUSD(I&S) program section, sub-office cluster, IPMO summary bullet (complete bullet passage; verbatim duplicate of q12 wording) |
+| Location | OUSD(I&S) program section, sub-office cluster, IPMO summary bullet (complete bullet passage; verbatim duplicate of the FY 2023 OSD OP-5 bullet wording) |
 
 ---
 
@@ -208,7 +208,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2025 OSD OP-5 — first appearance of the "center of gravity" mission-summary framing for IPMO. Distinct from FY 2026 (q8) by syntax ("is the" vs "which is the") and country reference ("America's defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.
+### FY 2025 OSD OP-5 — first appearance of the "center of gravity" mission-summary framing for IPMO. Distinct from the FY 2026 OSD OP-5 bullet by syntax ("is the" vs "which is the") and country reference ("America's defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.
 
 > The Influence and Perception Management Office (IPMO) is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit America's defense-related strategic interests. IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities.
 
@@ -216,11 +216,11 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 |---|---|
 | Attributed to | OSD OP-5 FY 2025 budget submission, OUSD(I&S) program section, IPMO sub-office bullet, 2024 |
 | Source | [archived source](../sources/government/osd-op5-fy25-20260501.pdf) |
-| Location | OUSD(I&S) program section, sub-office cluster, IPMO bullet (first two sentences; bullet continues across page break to "...deception activities... management of designated compartmented programs", substantively the same downstream content as q8) |
+| Location | OUSD(I&S) program section, sub-office cluster, IPMO bullet (first two sentences; bullet continues across page break to "...deception activities... management of designated compartmented programs", substantively the same downstream content as the FY 2026 OSD OP-5 bullet) |
 
 ---
 
-### FY 2025 OSD OP-5 — first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO. Distinct from earlier future-tense framing in FY 2023 (q10); FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into FY 2026 (q9).
+### FY 2025 OSD OP-5 — first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO. Distinct from earlier future-tense framing in the FY 2023 OSD OP-5; FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into the FY 2026 OSD OP-5.
 
 > The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -232,7 +232,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Holly's self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO's interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official's surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see nq3).
+### Holly's self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO's interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official's surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see Source-Form Notes).
 
 > "I think the state of this enterprise is weak, quite frankly," James Holly, who leads the defense secretary's year-old Influence and Perception Management Office, told the audience at the SOF Week conference here.
 
@@ -328,7 +328,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" and names IPMO. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 (q38) states that services under contract HQ003424C0046 are concluding.
+### USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" and names IPMO. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 states that services under contract HQ003424C0046 are concluding.
 
 > "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00002","description":"IPMO SUPPORT SERVICES","federal_action_obligation":1003067.52
 
@@ -340,7 +340,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00002 was signed 2025-03-27, the completion date P00001 had set. It moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116 (q38). That link is a date coincidence only; the feed does not name the notice.
+### P00002 was signed 2025-03-27, the completion date P00001 had set. It moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116. That link is a date coincidence only; the feed does not name the notice.
 
 > <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -508,7 +508,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records totalObligatedAmount 5763201.20 (with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20) on HQ003424C0046. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02; timeline t8), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0, q27). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic (nq4).
+### As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records totalObligatedAmount 5763201.20 (with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20) on HQ003424C0046. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic.
 
 > <ns1:totalObligatedAmount>5763201.20</ns1:totalObligatedAmount> <ns1:totalBaseAndExercisedOptionsValue>5763201.20</ns1:totalBaseAndExercisedOptionsValue> <ns1:totalBaseAndAllOptionsValue>5763201.20</ns1:totalBaseAndAllOptionsValue></ns1:totalDollarValues> <ns1:purchaserInformation> <ns1:contractingOfficeAgencyID name="WASHINGTON HEADQUARTERS SERVICES (WHS)" departmentID="9700" departmentName="DEPT OF DEFENSE">97F5</ns1:contractingOfficeAgencyID> <ns1:contractingOfficeID name="WASHINGTON HEADQUARTERS SERVICES" country="USA">HQ0034</ns1:contractingOfficeID> <ns1:fundingRequestingAgencyID name="IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE" departmentID="9700" departmentName="DEPT OF DEFENSE">97AD</ns1:fundingRequestingAgencyID> <ns1:fundingRequestingOfficeID name="OSD OUSD(I)">HQ0208</ns1:fundingRequestingOfficeID>
 
@@ -517,6 +517,18 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | Attributed to | FPDS Atom-feed entry for DEFINITIVE CONTRACT HQ003424C0046 modification P00008 (entry title names SANCORP CONSULTING, LLC as awardee; signedDate 2026-03-04). The span sits between the entry dollarValues block and the foreignFunding element; contiguous lines in the source, unique via the 5763201.20 total. |
 | Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
 | Location | entry modNumber P00008, dollarValues/totalDollarValues through purchaserInformation (fundingRequestingOfficeID) |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): the "Influence and Perceptional Management Office (IPMO)" is listed under the Director for Defense Intelligence, Sensitive Activities & Special Programs (SASP).
+
+> Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) Strategic Coordination Program Management Office Special Programs HUMINT & Sensitive Activities National Programs & Policy Support Influence and Perceptional Management Office (IPMO)
+
+| Field | Value |
+|---|---|
+| Attributed to | OUSD(I&S)/OUSW(I&S) website Organization page (About Us > Organization), org-structure list under the Under Secretary of War for Intelligence & Security banner; the SASP heading is followed by five sub-units in page order, 2026-04-20 |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, "Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP)" list |
 
 ---
 
@@ -555,6 +567,8 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
 | [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt |
 | [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |
+| [`/organizations/ousd-is-sasp`] | parent | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| [`/organizations/ousd-is-ddi-csp`] | parent | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |
 
 ---
 
@@ -566,6 +580,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 |---|---|---|
 | Kimmidge | Kimmage | news/defense-one-sof-week-oie-panel-20240524.html |
 | OSD OUSD(I) | OUSD(I&S) | government/fpds-hq003424c0046.txt |
+| Influence and Perceptional Management Office | Influence and Perception Management Office | government/ousdi-defense-gov-organization-wayback-20260420.html |
 
 ---
 
@@ -590,6 +605,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/osd`]
 - [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
+- [`/organizations/ousd-is-ddi-csp`]
+- [`/organizations/ousd-is-sasp`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
 - [`/organizations/state-dept-gec`]

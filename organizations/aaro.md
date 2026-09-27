@@ -30,7 +30,7 @@ The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 b
 
 Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023 and additionally took on Acting Director duties in December 2023 following Kirkpatrick's departure; his Acting Director duties ended when Kosloski arrived on August 26, 2024, while his Deputy Director departure date is not documented in archived primary sources. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC ([`/organizations/aaroexec`]) to the AARO Executive Council — its mission, per the memorandum, is "to provide oversight and direction to the AARO."
 
-AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) was awarded prime contracts HQ003422C0094 ("AARO Support Services"; period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The HQ003422C0094 Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the HQ003422C0094 Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
+AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Per the Organization page of the OUSD(I&S) website (ousdi.defense.gov), as of the April 20, 2026 capture, AARO is listed under "Direct Report Offices" alongside the OSW Red Team ([`/organizations/osd-red-team`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) was awarded prime contracts HQ003422C0094 ("AARO Support Services"; period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The HQ003422C0094 Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the HQ003422C0094 Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
 
 The HQ003424C0096 award record describes the work as "EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC". Its transaction records carry the description "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from modification P00005 (July 10, 2025) forward; the base award and the P00001 through P00004 descriptions do not carry that label. The HQ003424C0096 period of performance ended on January 31, 2026. No retrieved award record names a Sancorp AARO support contract after HQ003424C0096 as of September 25, 2026; HQ003426FE050 is not confirmed as AARO support. Modification P00007 (May 6, 2026) records a federal action obligation of -$56454.61; the September 25, 2026 award record reports a total obligation of $3415374.79 with the period of performance ending January 31, 2026, and the April 30, 2026 capture of the same record had reported $3471829.4. The funding agency on the record is the Immediate Office of the Secretary of Defense ([`/organizations/osd`]), funding office "OSD OUSD(I)".
 
@@ -572,7 +572,7 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Mellon's account of the HRR Vol I pre-brief mechanism — closed-door, invitation-only press outreach two days before public release on March 8, 2024, with disclosure-attentive outlets like The Debrief excluded. Pairs with FOIA 24-F-0894 evidence (q39 + Sue Gough's standardized "small group" reply to journalist requests) documenting the same invite-only press posture from inside the OSD Public Affairs chain.
+### Mellon's account of the HRR Vol I pre-brief mechanism — closed-door, invitation-only press outreach two days before public release on March 8, 2024, with disclosure-attentive outlets like The Debrief excluded. Pairs with the FOIA 24-F-0894 rollout emails (Sue Gough's standardized "small group" reply to journalist requests) documenting the same invite-only press posture from inside the OSD Public Affairs chain.
 
 > Department of Defense (DoD) Public Affairs sponsored a closed-door pre-brief on the report's findings for a select group of press outlets on an invitation-only basis. Outlets like The Debrief, which closely follow the UAP issue, were excluded. Following the report's release, most of the news agencies that had participated in the pre-brief went on to publish articles that uncritically parroted the report's findings.
 
@@ -584,7 +584,7 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Mellon's institutional observation that HRR Vol I was the first AARO report to Congress without ODNI/DNI sign-off — Avril Haines's Office withheld signature. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (q40 — "Confirming that we're good without any ODNI mention"). Two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
+### Mellon's institutional observation that HRR Vol I was the first AARO report to Congress without ODNI/DNI sign-off — Avril Haines's Office withheld signature. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (the FOIA 24-F-0894 rollout emails — "Confirming that we're good without any ODNI mention"). Two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
 
 > this appears to be the first AARO report submitted to Congress that the Director of National Intelligence (DNI) did not sign off on. I don't know why, but Avril Haines and her Office were quite right not to in this case, having spared themselves considerable embarrassment in the process.
 
@@ -1390,7 +1390,7 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Disclosure Foundation Congressional-action recommendation for a "legislative framework that concretely structures, authorizes, and directs a comprehensive disclosure process" — completing the institutional position published in q52.
+### Disclosure Foundation Congressional-action recommendation for a "legislative framework that concretely structures, authorizes, and directs a comprehensive disclosure process" — completing the institutional position set out in the preceding sentence of the same DefenseScoop article.
 
 > We encourage Congress to support the administration’s intent by enacting a legislative framework that concretely structures, authorizes, and directs a comprehensive disclosure process.
 
@@ -1449,6 +1449,18 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 | Attributed to | NBC News article reporting Trump's Phoenix Turning Point USA remarks plus the formal Defense Department spokesperson statement to NBC News Saturday Apr 18, 2026, 2026-04-18 |
 | Source | [archived source](../sources/news/nbcnews-trump-ufo-files-interesting-documents-20260418.html) |
 | Location | article body, AARO statement paragraphs |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): the All-domain Anomaly Resolution Office is listed under Direct Report Offices, alongside the OSW Red Team.
+
+> Direct Report Offices All-domain Anomaly Resolution Office OSW Red Team
+
+| Field | Value |
+|---|---|
+| Attributed to | Organization chart on the Office of the Under Secretary of War for Intelligence & Security website (ousdi.defense.gov), one unit per line; the Direct Report Offices block follows the DDI (PREM), DDI (SASP), DDI (CL&S) and DDI (OSIP) blocks. The page does not state to whom the Direct Report Offices report. 2026-04-20 |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, Direct Report Offices list |
 
 ---
 
@@ -2379,7 +2391,7 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Closing sentences of the altitude paragraph (continuing the q158 span): civilian pilot altitude estimates of 45,000 to 60,000 feet, many of which AARO resolved as satellite flaring. Context for the satellite-flaring figures reported elsewhere in the report (238 resolved via the new modeling capability, pp. 3 and 12; 44 UAP-related events in the reporting period, p. 9); the report itself does not reconcile the two counts.
+### Closing sentences of the altitude paragraph (continuing the preceding passage from the same paragraph): civilian pilot altitude estimates of 45,000 to 60,000 feet, many of which AARO resolved as satellite flaring. Context for the satellite-flaring figures reported elsewhere in the report (238 resolved via the new modeling capability, pp. 3 and 12; 44 UAP-related events in the reporting period, p. 9); the report itself does not reconcile the two counts.
 
 > Civilian pilot estimates of phenomenon altitudes tended to range from 45,000 to 60,000 feet. However, AARO resolved many of these reports as satellite flaring based on their reported characteristics.
 
@@ -2494,6 +2506,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | (Figure 3) | Figure 2 | government/aaro-fy25-consolidated-annual-report-uap.pdf |
 | Department of War (DoW) | Department of Defense (DoD) | government/aaro-fy25-consolidated-annual-report-uap.pdf |
 | all-domain anomaly resolution office | All-domain Anomaly Resolution Office | government/crec-20260722-house-hr8800-ndaa-fy2027.htm |
+| OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20260420.html |
 
 ---
 

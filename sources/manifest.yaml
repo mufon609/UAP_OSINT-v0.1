@@ -2740,6 +2740,24 @@
     archived_date: '2026-04-22'
     path: news/tothestarsacademy-home-20220120.html
     note: Wayback Machine snapshot (2022-01-20) of To The Stars Academy of Arts and Science homepage. Captures late-state operational site (~17K chars of content — pared-down vs. the ~49K-char 2020 snapshot). News section still references the Oct 2019 Army CCDC CRADA and the April 2020 Rapid Response Display System announcement. Co-Founder attribution to Hal Puthoff (who left ADAM leadership by 2020). Useful for dating post-2020 state transitions and the last-archived period before TTSA's late-2022-onward decline.
+- url: https://web.archive.org/web/20220811213605/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2022-08-11'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20220811.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2022-08-11 (timestamp 20220811213605), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of Defense for Intelligence & Security''; under a ''Directors for Defense Intelligence (DDI)'' heading the page lists four DDI lines: Warfighter Support; Counterintelligence, Law Enforcement & Security; Collection & Special Programs; Intelligence & Security Programs & Resources.'
+  archive_status: 3
+- url: https://web.archive.org/web/20230112180102/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2023-01-12'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20230112.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2023-01-12 (timestamp 20230112180102), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of Defense for Intelligence & Security''; under a ''Directors for Defense Intelligence (DDI)'' heading the page lists four DDI lines: Warfighter Support; Counterintelligence, Law Enforcement & Security; Collection & Special Programs; Intelligence & Security Programs & Resources.'
+  archive_status: 3
 - url: https://web.archive.org/web/20230602091111/https://www.safeaerospace.org/
   status: archived
   archive_status: 3
@@ -2758,6 +2776,15 @@
     archived_date: '2026-04-28'
     path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20231102.html
     note: Wayback Machine snapshot 2023-11-02 of ORNL staff profile for Sean M. Kirkpatrick — earliest known archived capture; predates the Nov 20, 2023 DoD Hicks departure announcement by ~18 days. Original URL https://www.ornl.gov/staff-profile/sean-m-kirkpatrick. Coulthart-cited evidence for the timeline-discrepancy narrative around Kirkpatrick's transition from AARO to ORNL.
+- url: https://web.archive.org/web/20240417002751/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2024-04-17'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20240417.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2024-04-17 (timestamp 20240417002751), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of Defense for Intelligence & Security''; under a ''Directors for Defense Intelligence (DDI)'' heading the page lists four DDI lines: Warfighter Support; Counterintelligence, Law Enforcement & Security; Collection & Special Programs; Intelligence & Security Programs & Resources.'
+  archive_status: 3
 - url: https://web.archive.org/web/20240711150238/https://www.aaro.mil/Portals/136/PDFs/Information%20Papers/ORNL-Synopsis_Analysis_of_a_Metallic_Specimen.pdf
   status: archived
   archive_status: 3
@@ -2857,6 +2884,15 @@
     archived_date: '2026-09-25'
     note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (509) 5.2 Executive Assistant I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660775007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-05-19 (timestamp 20250519014253), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:10:53-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
   archive_status: 3
+- url: https://web.archive.org/web/20250709013255/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2025-07-09'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20250709.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2025-07-09 (timestamp 20250709013255), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of Defense for Intelligence & Security''; under a ''Directors for Defense Intelligence (DDI)'' heading the page lists four DDI lines: Warfighter Support; Counterintelligence, Law Enforcement & Security; Collection & Special Programs; Intelligence & Security Programs & Resources. Neither the Influence and Perceptional Management Office (IPMO) nor the All-domain Anomaly Resolution Office (AARO) appears; ''Direct Report Offices'' lists Chief of Staff, Human Capital Management Office, Congressional Activities, and Special Access Program Central Office.'
+  archive_status: 3
 - url: https://web.archive.org/web/20250712035410/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660661007
   status: archived
   wayback_date: '2025-07-12'
@@ -2901,6 +2937,24 @@
     path: news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html
     archived_date: '2026-09-25'
     note: Arlo Solutions LLC Greenhouse job posting page, title is the literal placeholder 'page_title' (the capture's <title> element was not populated); the posting's on-page heading is 'OUSD(I&S) SASP Incumbent'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4663123007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-08-30 (timestamp 20250830002502), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-26T14:41:01-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20250910141628/https://ousdi.defense.gov/About-Us/Director-for-Defense-Intelligence-DDI/
+  status: archived
+  wayback_date: '2025-09-10'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-ddi-wayback-20250910.html
+    archived_date: '2026-09-27'
+    note: OUSD(I&S)/OUSW(I&S) Directors for Defense Intelligence missions page (ousdi.defense.gov/About-Us/Director-for-Defense-Intelligence-DDI/); bytes are the Wayback Machine raw (id_) capture of 2025-09-10 (timestamp 20250910141628), downloaded 2026-09-27. Page title and heading read 'Directors for War Intelligence (DWI)'; its 'Missions:' list gives one paragraph each for Programs, Resources & Enterprise Management (PREM), Sensitive Activities & Special Programs (SASP), Counterintelligence, Law Enforcement & Security (CL&S), and Operational Support & International Partnership (OSIP), each naming 'The Director for War Intelligence for' that line.
+  archive_status: 3
+- url: https://web.archive.org/web/20250912225943/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2025-09-12'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20250912.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2025-09-12 (timestamp 20250912225943), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of War for Intelligence & Security''; under a ''Director of War Intelligence (DWI)'' heading the page lists four DWI lines: Programs, Resources & Enterprise Management (PREM); Sensitive Activities & Special Programs (SASP); Counterintelligence, Law Enforcement & Security (CL&S); Operational Support & International Partnership (OSIP). Influence and Perceptional Management Office (IPMO) appears under the ''Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)'' heading; All-domain Anomaly Resolution Office appears under ''Direct Report Offices''.'
   archive_status: 3
 - url: https://web.archive.org/web/20260111121806/https://www.theblackvault.com/documentarchive/the-advanced-aviation-threat-identification-program-aatip-dird-report-research/
   status: archived
@@ -3045,6 +3099,15 @@
     path: news/arlo-greenhouse-504-operations-manager-ii-wayback-20260312.html
     archived_date: '2026-09-25'
     note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (504) Operations Manager II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660721007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-03-12 (timestamp 20260312111753), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:09:50-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260420035216/https://ousdi.defense.gov/About-Us/Organization/
+  status: archived
+  wayback_date: '2026-04-20'
+  artifacts:
+  - format: html
+    path: government/ousdi-defense-gov-organization-wayback-20260420.html
+    archived_date: '2026-09-27'
+    note: 'OUSD(I&S)/OUSW(I&S) Organization page (ousdi.defense.gov/About-Us/Organization/); bytes are the Wayback Machine raw (id_) capture of 2026-04-20 (timestamp 20260420035216), downloaded 2026-09-27. Banner reads ''Office of the Under Secretary of War for Intelligence & Security''; under a ''Director for Defense Intelligence (DDI)'' heading the page lists four DDI lines: Programs, Resources & Enterprise Management (PREM); Sensitive Activities & Special Programs (SASP); Counterintelligence, Law Enforcement & Security (CL&S); Operational Support & International Partnership (OSIP). Influence and Perceptional Management Office (IPMO) appears under the ''Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP)'' heading; All-domain Anomaly Resolution Office appears under ''Direct Report Offices''.'
   archive_status: 3
 - url: https://web.archive.org/web/20260514144534/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4601512007
   status: archived

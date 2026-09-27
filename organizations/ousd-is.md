@@ -31,6 +31,8 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
+Per the Organization page of the office's website (ousdi.defense.gov), as of the April 20, 2026 capture, OUSD(I&S) lists a Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]), with five units listed under it: Strategic Coordination Program Management Office; Special Programs; HUMINT & Sensitive Activities; National Programs & Policy Support; and "Influence and Perceptional Management Office (IPMO)" ([`/organizations/ipmo`]). The same page lists the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) and the OSW Red Team ([`/organizations/osd-red-team`]) under Direct Report Offices.
+
 Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at USD(I&S) Moultrie's ([`/people/ronald-moultrie`]) request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick ([`/people/sean-kirkpatrick`]) had several in-person meetings with the undersecretary. In late July 2023, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her.
 
 In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation's provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson's ([`/people/douglas-johnson`]) analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff ([`/people/marik-von-rennenkampff`]) interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
@@ -695,6 +697,30 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
+### OUSD(I&S) Organization page (April 20, 2026 capture): five units are listed under the Director for Defense Intelligence, Sensitive Activities & Special Programs (SASP), the last being the "Influence and Perceptional Management Office (IPMO)".
+
+> Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) Strategic Coordination Program Management Office Special Programs HUMINT & Sensitive Activities National Programs & Policy Support Influence and Perceptional Management Office (IPMO)
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; org structure rendered one unit per line (DDI SASP heading followed by its five sub-units) |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, DDI SASP list |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): the All-domain Anomaly Resolution Office and the OSW Red Team are listed as Direct Report Offices.
+
+> Direct Report Offices All-domain Anomaly Resolution Office OSW Red Team
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; final block of the org structure, after the four DDI blocks |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, Direct Report Offices list |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -750,6 +776,7 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
 | [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
 | [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf |
+| [`/organizations/ousd-is-sasp`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20260420.html |
 
 ---
 
@@ -765,6 +792,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | DEfENSE PENTAGON | DEFENSE PENTAGON | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
 | ovember | November | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | CUl | CUI | government/dodig-2026-047-redacted-secure.pdf |
+| Influence and Perceptional Management Office | Influence and Perception Management Office | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20260420.html |
 
 ---
 
@@ -821,6 +850,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
 - [`/organizations/osd-red-team`]
+- [`/organizations/ousd-is-sasp`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
 

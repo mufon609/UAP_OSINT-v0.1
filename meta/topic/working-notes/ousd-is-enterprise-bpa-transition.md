@@ -280,6 +280,44 @@ are not archived locally: functional intelligence and defense analysis (515,
 and national programs and policy support (508, `…/jobs/4660772007`, same
 capture timestamp).
 
+**[E] The Organization page lists SASP's units.** The OUSD(I&S) Organization
+page (`government/ousdi-defense-gov-organization-wayback-20260420.html`,
+Wayback capture 2026-04-20, lines 247–252; the same list is in
+`government/ousdi-defense-gov-organization-wayback-20250912.html`, lines
+252–257) names five units under "Director for Defense Intelligence (DDI),
+Sensitive Activities & Special Programs (SASP)":
+
+- Strategic Coordination Program Management Office
+- Special Programs
+- HUMINT & Sensitive Activities
+- National Programs & Policy Support
+- "Influence and Perceptional Management Office (IPMO)" (sic)
+
+Several staff lines above match these units:
+
+- The HUMINT & Sensitive Activities Directorate is named by the twelve
+  postings that do not themselves mention SASP (e.g. 499,
+  `news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html`
+  line 3). The page lists "HUMINT & Sensitive Activities" under SASP (line
+  250).
+- The page lists "National Programs & Policy Support" under SASP (line 251).
+  Posting 508 names that line's directorate without naming SASP, and 508 is
+  not archived locally.
+- The influence, deception and perception-management postings match the
+  IPMO line (line 252).
+
+Two lines do not match:
+
+- The "Functional Intelligence & Defense Analysis Directorate" (515) is
+  listed under DDI PREM, not SASP (line 243).
+- The C-WMD postings (510, 512) put the "Counter Proliferation and Weapons
+  of Mass Destruction Directorate within the Sensitive Activities & Special
+  Programs (SASP) Office" (`news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html`
+  line 3). The page lists no WMD unit under SASP. Its only WMD line, "Weapons
+  of Mass Destruction Deterrence", sits under DDI OSIP (line 268).
+
+The two records are recorded side by side, not reconciled.
+
 - special operations support policy
 - HUMINT policy
 - sensitive activities policy
@@ -311,9 +349,39 @@ proximity**:
 - one funding office;
 - a DDI(C&SP) over IPMO who met the IG about its UAP evaluation.
 
-**[O]** Whether IPMO sits under SASP. The DDI(C&SP)/SASP link rests on
-naming ("Special Programs") and overlapping functions; no organizational
-document states it.
+**[E]** IPMO sits under SASP. The OUSD(I&S) Organization page lists
+"Influence and Perceptional Management Office (IPMO)" (sic) under
+"Director for Defense Intelligence (DDI), Sensitive Activities & Special
+Programs (SASP)":
+
+- 2026-04-20 capture: `government/ousdi-defense-gov-organization-wayback-20260420.html`,
+  lines 247 and 252;
+- earliest capture with SASP, 2025-09-12:
+  `government/ousdi-defense-gov-organization-wayback-20250912.html`, lines
+  252 and 257, headed "Director of War Intelligence (DWI)".
+
+The same page lists "All-domain Anomaly Resolution Office" under "Direct
+Report Offices" (2026-04-20 capture, lines 273–274).
+
+**Dating the structure.** The Wayback captures of the same page bracket the
+change:
+
+- Every capture read from 2022-08-11 to 2025-07-09 lists a "Director for
+  Defense Intelligence (Collection & Special Programs)", with Technical
+  Collection, HUMINT & Sensitive Activities and Special Programs under it.
+  None lists IPMO or AARO anywhere. The captures read and archived are
+  `…-wayback-{20220811,20230112,20240417,20250709}.html`; in the 2025-07-09
+  capture the C&SP line is at line 279.
+- C&SP is last seen on 2025-07-09. SASP is first seen on 2025-09-10, on the
+  Directors missions page (`government/ousdi-defense-gov-ddi-wayback-20250910.html`),
+  and on 2025-09-12 on the Organization page.
+- Wayback holds no capture of either page between those dates.
+
+No capture shows both names, and no found source says SASP is C&SP renamed.
+
+**[O]** Whether SASP is C&SP renamed or a new directorate. Both carry
+"Special Programs" and "HUMINT & Sensitive Activities". IPMO was placed
+under DDI(C&SP) in the 2022 PWS, but the C&SP-era page never lists it.
 
 ## 7. Evidence-handling lessons from these sources
 
@@ -340,4 +408,6 @@ document states it.
 3. IPMO's post-May-2026 support (§3). HQ003424C0046's extension history is
    answered from FPDS and ingested on `organizations/ipmo` and
    `organizations/sancorp-consulting`.
-4. An organizational source linking DDI(C&SP) and the SASP office (§6).
+4. Whether SASP is DDI(C&SP) renamed (§6). IPMO's placement under SASP is
+   answered from the OUSD(I&S) Organization page. The captures bracket the
+   change between 2025-07-09 and 2025-09-10, but no source states a rename.
