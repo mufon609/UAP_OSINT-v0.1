@@ -61,6 +61,19 @@
     note: 'ABC News article by Luis Martinez and Steven Beynon (archived byline: ''Luis Martinez and Steven Beynon''; JSON-LD author list and authorsStr ''Luis Martinez, Steven Beynon''), published 2026-05-08 (publishedDate 2026-05-08T21:15:00Z; modifiedDate 2026-06-24T21:26:17Z), ''Pentagon releases declassified UFO files from various federal agencies'' (served h1; URL slug ''pentagon-begins-release-decades-unresolved-ufo-files''). Carries Sean Kirkpatrick''s statement to ABC News on the release. Fetched 2026-09-26 via curl with browser UA; HTML saved as served.'
   archive_status: 3
   wayback_date: '2026-09-09'
+- url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700/
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003419f0506.txt
+    archived_date: '2026-09-26'
+    note: USAspending API award record (GET api/v2/awards/{generated_unique_award_id}; JSON saved as served), fetched 2026-09-26. BPA Call HQ003419F0506, 'ADMINISTRATIVE AND ANALYTICAL SUPPORT', recipient IAN EVAN & ALEXANDER CORP (UEI NSDLRX2E9AM8; parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION), parent BPA HQ003415A0010, signed 2019-08-15, awarding subtier Washington Headquarters Services, funding subtier Immediate Office of the Secretary of Defense (funding office OSD OUSD(I)); total_obligation 51413590.66; base_exercised_options 53349832.34; base_and_all_options 54420971.41; period of performance 2019-08-14 to 2026-05-27 (potential end 2026-05-27); PSC R702, NAICS 541611.
+  - format: txt
+    path: government/usaspending-hq003419f0506-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700, limit 100, page 1, sort action_date asc; JSON saved as served), fetched 2026-09-26. 41 transaction records (0 on 2019-08-15 through P00040 on 2026-04-01); P00003 (2020-04-30) description 'OUSD(I&S)(COLLECTION&SENSITIVE PROGRAMS) ADMINISTRATIVE AND ANALYTICAL SUPPORT'; P00023 (2024-05-24) is the first description naming 'SENSITIVE ACTIVITIES & SPECIAL PROGRAMS'; P00035 through P00040 (2025-07-25 to 2026-04-01) all described 'SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS'; page_metadata hasNext false. POST response - not Wayback-capturable.
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700/
   status: archived
   archive_status: 3
@@ -86,6 +99,19 @@
     archived_date: '2026-09-26'
     note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003425F0105_9700_HQ003425A0003_9700, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26. 10 transaction records (0 on 2025-02-21 through P00009 on 2026-04-14); P00004 (2025-07-25) description names OUSD(I&S) professional, technical and administrative support to the Executive Directorate; P00006 (2025-12-26) exercises an option; page_metadata hasNext false. POST response - not Wayback-capturable.
   archive_status: 1
+- url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700/
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003426fe011.txt
+    archived_date: '2026-09-26'
+    note: USAspending API award record (GET api/v2/awards/{generated_unique_award_id}; JSON saved as served), fetched 2026-09-26. BPA Call HQ003426FE011, 'ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)', recipient ARLO SOLUTIONS L.L.C. (UEI JSRCFJVJM874), parent BPA HQ003425A0004, signed 2026-02-17, awarding subtier Washington Headquarters Services, funding subtier Immediate Office of the Secretary of Defense (funding office OSD OUSD(I)); total_obligation 5694229.63; base_exercised_options 5837895.7; base_and_all_options 59372513.73; period of performance 2026-05-13 to 2026-11-27 (potential end 2030-11-27); PSC R499, NAICS 541611.
+  - format: txt
+    path: government/usaspending-hq003426fe011-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700, limit 100, page 1, sort action_date asc; JSON saved as served), fetched 2026-09-26. 2 transaction records (0 on 2026-02-17 obligating 3500000.0; P00001 on 2026-06-02, action_type D 'CHANGE ORDER', obligating 2194229.63); page_metadata hasNext false. POST response - not Wayback-capturable.
+  archive_status: 3
+  wayback_date: '2026-09-26'
 - url: https://api.usaspending.gov/api/v2/awards/CONT_IDV_HQ003425A0004_9700/
   status: archived
   archive_status: 3
@@ -95,6 +121,10 @@
     archived_date: '2026-05-03'
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     note: USAspending API record for Arlo parent BPA HQ003425A0004 (M total ceiling, signed 2025-02-14, awarded by WHS) - Technical Administrative and Professional Support Services to the OUSD(I&S) Enterprise.
+  - format: txt
+    path: government/usaspending-hq003425a0004-child-awards.txt
+    archived_date: '2026-09-26'
+    note: 'USAspending API IDV child-awards list for BPA HQ003425A0004 (POST api/v2/idvs/awards, body award_id CONT_IDV_HQ003425A0004_9700, type child_awards, limit 100, page 1, sort period_of_performance_start_date desc; JSON saved as served), fetched 2026-09-26. Registered under the A0004 IDV award URL; the POST endpoint differs from the entry URL. 2 child awards: HQ003426FE011 (BPA CALL, SASP description, obligated_amount 5694229.63, period of performance 2026-05-13 to 2026-11-27) and HQ003425F0104 (BPA CALL, ''ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.'', obligated_amount 0.0, period of performance 2025-02-21 to 2026-03-27); page_metadata hasNext false. POST response - not Wayback-capturable.'
 - url: https://api.usaspending.gov/api/v2/search/spending_by_award/
   status: archived
   archive_status: 3

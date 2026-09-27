@@ -17,6 +17,12 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. ([`/lo
   Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services.
 
 
+  USAspending records a second BPA CALL under HQ003425A0004: HQ003426FE011, date_signed 2026-02-17, recipient ARLO SOLUTIONS L.L.C. (UEI JSRCFJVJM874), with the description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" ([`/organizations/ousd-is-sasp`]). The HQ003426FE011 award record records solicitation HQ003424R0178, number_of_offers_received 4, type_set_aside 8A ("8A COMPETED"), base_and_all_options 59372513.73, and total_obligation 5694229.63; the two transaction records listed are the base award (federal_action_obligation 3500000.0) and modification P00001, a CHANGE ORDER on 2026-06-02 (federal_action_obligation 2194229.63). Its period_of_performance has a start_date of 2026-05-13 and an end_date of 2026-11-27, with a potential_end_date of 2030-11-27. Its awarding agency is Washington Headquarters Services and its funding office is "OSD OUSD(I)". Two BPA CALL records are listed by USAspending under HQ003425A0004, HQ003426FE011 and HQ003425F0104, on a single page (hasNext false). Arlo''s March 16, 2026 SASP press statement announced a contract valued at more than $85 million and named no contract number; the HQ003426FE011 base_and_all_options is 59372513.73. Both stand as recorded. No source cited here states a reason for the HQ003425F0104 TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL) action, or states that HQ003426FE011 was issued in place of HQ003425F0104.
+
+
+  In notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]), dated March 11, 2025 (postedDate), Washington Headquarters Services, Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that the incumbent contractor, Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]), is currently performing services under WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025, and an anticipated bridge contract period of performance from March 28, 2025, to July 27, 2025. USAspending records the recipient of HQ003419F0506 as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), with parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION; neither record refers to the other, and both stand as recorded. In the HQ003419F0506 transaction records, modification P00035 (2025-07-25, CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction whose description field is "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS", and every later transaction listed, through P00040 (2026-04-01), has the same description; two 2024 transaction records, P00023 (2024-05-24) and P00024 (2024-07-09), have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". The HQ003419F0506 award record records a period_of_performance end_date of 2026-05-27. Neither the notice nor the HQ003419F0506 records name Arlo.
+
+
   Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer" posting, in the April 28, 2025 capture, states "This position is with the Office of the Under Secretary of Defense for Intelligence and Security - OUSD(I&S), in the Commonwealth & Partnership Engagement (C&PE) Branch" ([`/organizations/ousd-is-cpe`]) and that the position is to meet the needs of "four primary Commonwealth partner nations: Australia, Canada, New Zealand, and the United Kingdom"; its work location is Bolling AFB, Washington, D.C. No contract is named in the (469) posting. The "(617) Staff Officer V" posting, in the Dec. 17, 2025 capture and the January 19, 2026 capture, states "The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]) and "This key personnel position serves as a senior-level SME"; its listed responsibilities include reports and briefings on AARO operations for Congress ([`/organizations/congress`]), working relationships with the Office of the Director of National Intelligence ([`/organizations/odni`]), analysis of intelligence related activities against the National Defense Strategy ([`/documents/national-defense-strategy`]), and Intelligence Community ([`/organizations/intelligence-community`])-wide processes and procedures for reporting of airborne objects of interest including UAP. The "(619) Security Officer IV" posting, in the January 19, 2026 capture, states that the Security Officer IV is responsible for managing "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))"; its listed responsibilities include coordination with the Defense Counterintelligence & Security Agency ([`/organizations/dcsa`]) and compliance with DoD Manual 5205.07 ([`/documents/dod-manual-5205-07`]) and DoD Manual 5105.21 ([`/documents/dod-manual-5105-21`]). Both positions are located in Arlington, VA ([`/locations/arlington-virginia`]). These dates are capture dates; the rendered page displays no posting date. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here. In the February 27, 2026 capture of the Arlo job board, "50 jobs" are listed, including the "OUSW (I&S) SASP Incumbent" job ([`/organizations/ousd-is-sasp`]); neither the (617) nor the (619) position is listed.
 
   '
@@ -62,6 +68,18 @@ primary_sources:
 - path: government/usaspending-hq003426fe050-transactions.txt
   format: txt
 - path: government/usaspending-hq003425f0104-transactions.txt
+  format: txt
+- path: government/samgov-tr011720251116-notice.json
+  format: txt
+- path: government/usaspending-hq003426fe011.txt
+  format: txt
+- path: government/usaspending-hq003426fe011-transactions.txt
+  format: txt
+- path: government/usaspending-hq003425a0004-child-awards.txt
+  format: txt
+- path: government/usaspending-hq003419f0506.txt
+  format: txt
+- path: government/usaspending-hq003419f0506-transactions.txt
   format: txt
 document_intrinsic:
   contracting_agency: Department of Defense / Washington Headquarters Services (WHS); also GSA for vehicles
@@ -796,6 +814,276 @@ quotes:
   significance: 'Recipient address of record: 200 Massachusetts Ave NW, Suite 700, Washington, DC.'
   claim_group: hq003425f0104-award-record
   statement_date: '2025-02-21'
+- id: q75
+  added_date: '2026-09-26'
+  text: '1) Award a short-term sole source extension contract to the incumbent contractor, Booz Allen Hamilton Inc. (BAH) [CAGE Code: 17038; 8283 Greensboro Dr. McLean Virginia 22102-3838, United States]. The Contractor is currently performing services under WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contract is for four months, from March 28, 2025, to July 27, 2025.'
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: 'description[0].body, ¶ "1) Award a short-term sole source extension contract to the incumbent contractor, Booz Allen Hamilton Inc."'
+  significance: 'This SAM.gov notice of intent (TR011720251116) names Booz Allen Hamilton Inc. (BAH) as the incumbent contractor performing services under WHS-AD TEAMS BPA HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025, and gives an anticipated four-month bridge period of performance from March 28, 2025 to July 27, 2025. USAspending records a different recipient for HQ003419F0506 (see the USAspending award record).'
+  context: 'Item 1 of five numbered sole-source extension intents in the notice body; the notice is issued by Washington Headquarters Services, Acquisition Directorate on behalf of OUSD(I&S) I&S Enterprise.'
+  claim_group: hq003419f0506-incumbent-recipient-mismatch
+  statement_date: '2025-03-11'
+- id: q76
+  added_date: '2026-09-26'
+  text: '"postedDate":"2025-03-11T19:51:30.418+00:00"'
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: 'top-level JSON field "postedDate"'
+  significance: 'The notice posted/published date as recorded in the SAM.gov opportunity record.'
+  claim_group: hq003419f0506-incumbent-recipient-mismatch
+  statement_date: '2025-03-11'
+- id: q77
+  added_date: '2026-09-26'
+  text: '"piid":"HQ003426FE011","category":"contract","type":"A","type_description":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","total_obligation":5694229.63'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "piid" / "type_description" / "description" / "total_obligation" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: Award HQ003426FE011 is recorded as type A, type_description "BPA CALL", with the description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" and total_obligation 5694229.63.
+  context: 'API record; total_obligation is cumulative and includes modification P00001 (2026-06-02); award signed 2026-02-17.'
+  claim_group: hq003426fe011-sasp-call-order
+- id: q78
+  added_date: '2026-09-26'
+  text: '"date_signed":"2026-02-17","base_exercised_options":5837895.7,"base_and_all_options":59372513.73'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "date_signed" / "base_exercised_options" / "base_and_all_options" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: HQ003426FE011 records date_signed 2026-02-17, base_exercised_options 5837895.7, and base_and_all_options 59372513.73. Arlo's 2026-03-16 SASP press release states a contract "valued at more than $85 million"; this record's base_and_all_options is 59372513.73. Both figures stand as recorded; neither source addresses the other.
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q79
+  added_date: '2026-09-26'
+  text: '"period_of_performance":{"start_date":"2026-05-13","end_date":"2026-11-27","last_modified_date":"2026-06-02","potential_end_date":"2030-11-27 00:00:00"}'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "period_of_performance" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: 'Period of performance for HQ003426FE011: start_date 2026-05-13, end_date 2026-11-27, potential_end_date 2030-11-27; the record was last modified 2026-06-02.'
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q80
+  added_date: '2026-09-26'
+  text: '"generated_unique_award_id":"CONT_IDV_HQ003425A0004_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0004"'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "parent_award" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: 'Parent award of call order HQ003426FE011: BPA HQ003425A0004 (CONT_IDV_HQ003425A0004_9700), a MULTIPLE AWARD BPA.'
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q81
+  added_date: '2026-09-26'
+  text: '"recipient_name":"ARLO SOLUTIONS L.L.C.","recipient_uei":"JSRCFJVJM874"'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "recipient" object — "recipient_name" / "recipient_uei" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: The recipient of HQ003426FE011 is recorded as "ARLO SOLUTIONS L.L.C.", UEI JSRCFJVJM874.
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q82
+  added_date: '2026-09-26'
+  text: '"funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "funding_agency" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: 'Funding agency for HQ003426FE011: Department of Defense (DOD), subtier Immediate Office of the Secretary of Defense (SECDEF, code 97AD), funding office "OSD OUSD(I)".'
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q83
+  added_date: '2026-09-26'
+  text: '"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "awarding_agency" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: 'Awarding agency for HQ003426FE011: Department of Defense (DOD), subtier Washington Headquarters Services (WHS, code 97F5), awarding office "WASHINGTON HEADQUARTERS SERVICES".'
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q84
+  added_date: '2026-09-26'
+  text: '"solicitation_identifier":"HQ003424R0178","solicitation_procedures":"SP1","number_of_offers_received":"4","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: USAspending API record — "latest_transaction_contract_data" object — solicitation / offers / set-aside fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700
+  significance: HQ003426FE011 records solicitation HQ003424R0178, solicitation_procedures SP1 (described in the same record as "SIMPLIFIED ACQUISITION"), number_of_offers_received "4", extent_competed F (described in the same record as "COMPETED UNDER SAP"), and type_set_aside 8A / "8A COMPETED".
+  claim_group: hq003426fe011-sasp-call-order
+  statement_date: '2026-02-17'
+- id: q85
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003426FE011_0_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2026-02-17","action_type":null,"action_type_description":null,"modification_number":"0","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","federal_action_obligation":3500000.0'
+  source:
+    path: government/usaspending-hq003426fe011-transactions.txt
+    location: 'transaction 0 / base award ("id"/"type_description"/"action_date"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003426FE011_0_HQ003425A0004_0'
+  significance: 'USAspending transaction record for the HQ003426FE011 base award (modification_number "0"): type BPA CALL under parent BPA HQ003425A0004 (per the transaction id), action_date 2026-02-17, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)", federal_action_obligation 3500000.0. The transactions list does not name the recipient; the award-level record (government/usaspending-hq003426fe011.txt) names the recipient as ARLO SOLUTIONS L.L.C.'
+  claim_group: hq003426fe011-transaction-history
+  statement_date: '2026-02-17'
+- id: q86
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2026-06-02","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00001","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","federal_action_obligation":2194229.63'
+  source:
+    path: government/usaspending-hq003426fe011-transactions.txt
+    location: 'transaction P00001 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0'
+  significance: 'Modification P00001 to HQ003426FE011, action_date 2026-06-02, action_type D "CHANGE ORDER", federal_action_obligation 2194229.63; description unchanged from the base award. The two transactions the record lists sum to 5694229.63 (3500000.0 + 2194229.63), matching the award-level total_obligation of 5694229.63 in government/usaspending-hq003426fe011.txt.'
+  claim_group: hq003426fe011-transaction-history
+  statement_date: '2026-06-02'
+- id: q87
+  added_date: '2026-09-26'
+  text: '"page_metadata":{"page":1,"next":null,"previous":null,"hasNext":false,"hasPrevious":false}'
+  source:
+    path: government/usaspending-hq003426fe011-transactions.txt
+    location: 'page_metadata block ("page"/"next"/"hasNext"/"hasPrevious"), head of the HQ003426FE011 transactions response'
+  significance: 'The transactions response is a single page (page 1, hasNext false, hasPrevious false); the two records it lists — modification 0 (2026-02-17) and P00001 (2026-06-02) — are the complete transaction list returned for HQ003426FE011.'
+  claim_group: hq003426fe011-transaction-history
+- id: q88
+  added_date: '2026-09-26'
+  text: '"award_type":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","funding_agency":"Department of Defense","awarding_agency":"Department of Defense","funding_agency_id":1215,"awarding_agency_id":1231,"generated_unique_award_id":"CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700","last_date_to_order":null,"obligated_amount":5694229.63,"period_of_performance_current_end_date":"2026-11-27","period_of_performance_start_date":"2026-05-13","piid":"HQ003426FE011"'
+  source:
+    path: government/usaspending-hq003425a0004-child-awards.txt
+    location: 'USAspending IDV child-awards list — results[0] ("award_type" through "piid"), CONT_IDV_HQ003425A0004_9700'
+  significance: 'Factual: the USAspending child-awards list for IDV CONT_IDV_HQ003425A0004_9700 carries HQ003426FE011 as a child record — award_type "BPA CALL", generated_unique_award_id CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 (placing it under BPA HQ003425A0004), description naming "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" within the "OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY", funding and awarding agency Department of Defense, obligated_amount 5694229.63, period_of_performance_start_date 2026-05-13, period_of_performance_current_end_date 2026-11-27. The child record does not name a recipient.'
+  context: 'First of the two entries in the "results" array of the child_awards response (POST api/v2/idvs/awards/) for IDV CONT_IDV_HQ003425A0004_9700. statement_date omitted: the record is an API list with no statement date; the period_of_performance_start_date (2026-05-13) is carried in the span itself.'
+  claim_group: hq003425a0004-child-awards
+- id: q89
+  added_date: '2026-09-26'
+  text: '"award_type":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.","funding_agency":"Department of Defense","awarding_agency":"Department of Defense","funding_agency_id":1215,"awarding_agency_id":1231,"generated_unique_award_id":"CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700","last_date_to_order":null,"obligated_amount":0.0,"period_of_performance_current_end_date":"2026-03-27","period_of_performance_start_date":"2025-02-21","piid":"HQ003425F0104"'
+  source:
+    path: government/usaspending-hq003425a0004-child-awards.txt
+    location: 'USAspending IDV child-awards list — results[1] ("award_type" through "piid"), CONT_IDV_HQ003425A0004_9700'
+  significance: 'Factual: the same child-awards list carries HQ003425F0104 as the second child record — award_type "BPA CALL", generated_unique_award_id CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700 (placing it under BPA HQ003425A0004), description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.", funding and awarding agency Department of Defense, obligated_amount 0.0 as recorded in this list, period_of_performance_start_date 2025-02-21, period_of_performance_current_end_date 2026-03-27. The child record does not name a recipient.'
+  context: 'Second of the two entries in the "results" array of the child_awards response for IDV CONT_IDV_HQ003425A0004_9700. statement_date omitted (API list record; the period_of_performance_start_date 2025-02-21 is carried in the span itself).'
+  claim_group: hq003425a0004-child-awards
+- id: q90
+  added_date: '2026-09-26'
+  text: '"page_metadata":{"page":1,"next":null,"previous":null,"hasNext":false,"hasPrevious":false}'
+  source:
+    path: government/usaspending-hq003425a0004-child-awards.txt
+    location: 'USAspending IDV child-awards list — page_metadata, CONT_IDV_HQ003425A0004_9700'
+  significance: 'Factual: the child-awards response is a single page (page 1, next null, hasNext false). With the two entries in "results" (HQ003426FE011 and HQ003425F0104), the record lists two child call orders under BPA HQ003425A0004 (single page, hasNext false; as of the 2026-09-26 fetch).'
+  context: 'Trailing "page_metadata" object of the child_awards response for IDV CONT_IDV_HQ003425A0004_9700, immediately after the two-entry "results" array.'
+  claim_group: hq003425a0004-child-awards
+- id: q91
+  added_date: '2026-09-26'
+  text: '"recipient_name":"IAN EVAN & ALEXANDER CORP","recipient_uei":"NSDLRX2E9AM8","recipient_unique_id":null,"parent_recipient_hash":"ed02855e-60d7-2540-e3d7-18fba1dd1316-P","parent_recipient_name":"BOOZ ALLEN HAMILTON HOLDING CORPORATION","parent_recipient_uei":"MBPHTU7Y9S65"'
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "recipient" object — "recipient_name" / "recipient_uei" / "parent_recipient_name" / "parent_recipient_uei" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  significance: 'USAspending records the recipient of HQ003419F0506 as IAN EVAN & ALEXANDER CORP (UEI NSDLRX2E9AM8), with parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (UEI MBPHTU7Y9S65). SAM.gov notice TR011720251116 names Booz Allen Hamilton Inc. as the incumbent on this task order. Both stand as recorded; this record gives no date or mechanism for the recipient/parent relationship.'
+  context: 'API record; the recipient/parent fields carry no date; award signed 2019-08-15.'
+  claim_group: hq003419f0506-incumbent-recipient-mismatch
+- id: q92
+  added_date: '2026-09-26'
+  text: '"piid":"HQ003419F0506","category":"contract","type":"A","type_description":"BPA CALL","description":"ADMINISTRATIVE AND ANALYTICAL SUPPORT"'
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "piid" / "type_description" / "description" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  significance: 'HQ003419F0506 is recorded as a BPA CALL with description "ADMINISTRATIVE AND ANALYTICAL SUPPORT."'
+  claim_group: hq003419f0506-incumbent-order
+  statement_date: '2019-08-15'
+- id: q93
+  added_date: '2026-09-26'
+  text: '"total_obligation":51413590.66,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2019-08-15","base_exercised_options":53349832.34,"base_and_all_options":54420971.41'
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "total_obligation" / "date_signed" / "base_exercised_options" / "base_and_all_options" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  significance: 'HQ003419F0506 date_signed 2019-08-15; total_obligation 51413590.66; base_exercised_options 53349832.34; base_and_all_options 54420971.41.'
+  context: 'API record; total_obligation is cumulative and carries no date of its own; award signed 2019-08-15; record last_modified_date 2026-04-01.'
+  claim_group: hq003419f0506-incumbent-order
+- id: q94
+  added_date: '2026-09-26'
+  text: '"period_of_performance":{"start_date":"2019-08-14","end_date":"2026-05-27","last_modified_date":"2026-04-01","potential_end_date":"2026-05-27 00:00:00"}'
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "period_of_performance" object, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  significance: 'Period of performance for HQ003419F0506: start_date 2019-08-14, end_date 2026-05-27, potential_end_date 2026-05-27; the record was last modified 2026-04-01.'
+  claim_group: hq003419f0506-incumbent-order
+  statement_date: '2026-04-01'
+- id: q95
+  added_date: '2026-09-26'
+  text: '"generated_unique_award_id":"CONT_IDV_HQ003415A0010_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003415A0010"'
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "parent_award" object, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  significance: 'Parent award of HQ003419F0506: BPA HQ003415A0010, a MULTIPLE AWARD BPA.'
+  claim_group: hq003419f0506-incumbent-order
+  statement_date: '2019-08-15'
+- id: q96
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00034_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-17","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00034","description":"TRAVEL INCREASE","federal_action_obligation":0.0'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00034 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00034_HQ003415A0010_0'
+  significance: 'Modification P00034 to HQ003419F0506, action_date 2025-07-17, action_type M "OTHER ADMINISTRATIVE ACTION", federal_action_obligation 0.0; description field "TRAVEL INCREASE". The last transaction the record lists before P00035, whose description field reads "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS". The transactions list does not name the recipient.'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2025-07-17'
+- id: q97
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00035_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-25","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00035","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":1977626.47'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00035 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00035_HQ003415A0010_0'
+  significance: 'Modification P00035 to HQ003419F0506 (a BPA CALL under BPA HQ003415A0010, per the transaction id), action_date 2025-07-25, action_type D "CHANGE ORDER", federal_action_obligation 1977626.47. Its description field reads "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS"; every later transaction the record lists (P00036-P00040) carries the same description. The transactions list does not name the recipient.'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2025-07-25'
+- id: q98
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00036_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-09-02","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00036","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":4127105.22'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00036 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00036_HQ003415A0010_0'
+  significance: 'Modification P00036 to HQ003419F0506, action_date 2025-09-02, action_type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation 4127105.22; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2025-09-02'
+- id: q99
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00037_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-09-16","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00037","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":408182.47'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00037 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00037_HQ003415A0010_0'
+  significance: 'Modification P00037 to HQ003419F0506, action_date 2025-09-16, action_type C "FUNDING ONLY ACTION", federal_action_obligation 408182.47; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2025-09-16'
+- id: q100
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00038_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-12-18","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00038","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":230941.83'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00038 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00038_HQ003415A0010_0'
+  significance: 'Modification P00038 to HQ003419F0506, action_date 2025-12-18, action_type C "FUNDING ONLY ACTION", federal_action_obligation 230941.83; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2025-12-18'
+- id: q101
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2026-03-06","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00039","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":160848.41'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00039 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0'
+  significance: 'Modification P00039 to HQ003419F0506, action_date 2026-03-06, action_type C "FUNDING ONLY ACTION", federal_action_obligation 160848.41; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2026-03-06'
+- id: q102
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00040_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2026-04-01","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00040","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":160848.41'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00040 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00040_HQ003415A0010_0'
+  significance: 'Modification P00040 to HQ003419F0506, action_date 2026-04-01, action_type C "FUNDING ONLY ACTION", federal_action_obligation 160848.41 (the same value as P00039); description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS". The last of the 41 transactions the record lists (page_metadata hasNext false).'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2026-04-01'
+- id: q103
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00023_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2024-05-24","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00023","description":"SENSITIVE ACTIVITIES & SPECIAL PROGRAMS.","federal_action_obligation":0.0'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00023 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00023_HQ003415A0010_0'
+  significance: 'Modification P00023 to HQ003419F0506, action_date 2024-05-24, action_type M "OTHER ADMINISTRATIVE ACTION", federal_action_obligation 0.0; description field "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS." (ampersand form, trailing period), distinct from the exact "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" of P00035-P00040. The transactions list does not name the recipient.'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2024-05-24'
+- id: q104
+  added_date: '2026-09-26'
+  text: '"id":"CONT_TX_9700_9700_HQ003419F0506_P00024_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2024-07-09","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00024","description":"SENSITIVE ACTIVITIES & SPECIAL PROGRAMS SUPPORT SERVICES - MOD TO INCREASE TRAVEL CLIN 5003.","federal_action_obligation":11406.0'
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transaction P00024 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00024_HQ003415A0010_0'
+  significance: 'Modification P00024 to HQ003419F0506, action_date 2024-07-09, action_type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation 11406.0; description field "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS SUPPORT SERVICES - MOD TO INCREASE TRAVEL CLIN 5003." — begins "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS" (ampersand form), distinct from the exact "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" of P00035-P00040. The transactions list does not name the recipient.'
+  claim_group: hq003419f0506-sasp-described-transactions
+  statement_date: '2024-07-09'
 naming_quirks:
 - id: nq1
   observed: VA T4NG2
@@ -842,16 +1130,37 @@ naming_quirks:
 - id: nq7
   observed: 'ARLO SOLUTIONS L.L.C.'
   canonical: 'Arlo Solutions, LLC'
-  location: 'USAspending HQ003425F0104 award record, "recipient" object — "recipient_name" (registry uppercase with "L.L.C."); canonical form per the GAO B-422985.4 / B-422985.5 decision opening paragraph'
+  location: 'USAspending HQ003425F0104 award record, "recipient" object — "recipient_name" (registry uppercase with "L.L.C."); also the USAspending HQ003426FE011 award record, "recipient" object — "recipient_name"; canonical form per the GAO B-422985.4 / B-422985.5 decision opening paragraph'
   source_path: government/usaspending-arlo-hq003425f0104.json
   resolution: preserve-as-sic-in-quotes
   added_date: '2026-09-26'
 - id: nq8
   observed: 'OSD OUSD(I)'
   canonical: null
-  location: 'USAspending HQ003425F0104 award record, "funding_agency" object — "office_agency_name"; no archived source cited here expands "OUSD(I)" or states its relation to OUSD(I&S)'
+  location: 'USAspending HQ003425F0104 award record, "funding_agency" object — "office_agency_name"; also the USAspending HQ003426FE011 award record, "funding_agency" object — "office_agency_name"; no archived source cited here expands "OUSD(I)" or states its relation to OUSD(I&S)'
   source_path: government/usaspending-arlo-hq003425f0104.json
   resolution: unresolved
+  added_date: '2026-09-26'
+- id: nq9
+  observed: 'WHS-AD'
+  canonical: 'Washington Headquarters Services, Acquisition Directorate'
+  location: 'SAM.gov notice TR011720251116, description[0].body item 1 — "WHS-AD TEAMS BPA, HQ003415A0010"; the same notice body spells out "Washington Headquarters Services, Acquisition Directorate"'
+  source_path: government/samgov-tr011720251116-notice.json
+  resolution: preserve-as-sic-in-quotes
+  added_date: '2026-09-26'
+- id: nq10
+  observed: 'BAH'
+  canonical: 'Booz Allen Hamilton Inc.'
+  location: 'SAM.gov notice TR011720251116, description[0].body item 1 — abbreviation defined inline, "Booz Allen Hamilton Inc. (BAH)"'
+  source_path: government/samgov-tr011720251116-notice.json
+  resolution: preserve-as-sic-in-quotes
+  added_date: '2026-09-26'
+- id: nq11
+  observed: 'OUSW(IS)'
+  canonical: 'OUSD(I&S)'
+  location: 'USAspending HQ003426FE011 award record, HQ003426FE011 transaction records, and the HQ003425A0004 list of awards, "description" field — ampersand-less, unspaced "OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)", with the office spelled out "OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY"'
+  source_path: government/usaspending-hq003426fe011.txt
+  resolution: preserve-as-sic-in-quotes
   added_date: '2026-09-26'
 timeline:
 - date: '2014'
@@ -1022,6 +1331,15 @@ timeline:
     location: 'transaction 0 / base award, CONT_TX_9700_9700_HQ003425F0104_0_HQ003425A0004_0'
   id: t33
   added_date: '2026-09-26'
+- date: '2025-03-11'
+  event: 'Notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) from WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) as incumbent on Task Order HQ003419F0506 (WHS-AD TEAMS BPA, HQ003415A0010), services concluding March 27, 2025; bridge period March 28 to July 27, 2025. USAspending records another recipient (q91). Arlo is not named.'
+  category: contract
+  source:
+    path: government/samgov-tr011720251116-notice.json
+    location: 'description[0].body, ¶ "1) Award a short-term sole source extension contract to the incumbent contractor, Booz Allen Hamilton Inc."; top-level "postedDate"'
+  node_link: /documents/samgov-tr011720251116-notice
+  id: t38
+  added_date: '2026-09-26'
 - date: '2025-03-13'
   event: 'USAspending records modification P00001 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q62).'
   category: contract
@@ -1094,6 +1412,14 @@ timeline:
     location: 'Decision header — counsel-of-record block, ¶ May Sena, Esq. and ¶ Samantha S. Lee, Esq.'
   id: t31
   added_date: '2026-09-26'
+- date: '2025-07-25'
+  event: 'HQ003419F0506 modification P00035 (CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction described "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" ([`/organizations/ousd-is-sasp`]), through P00040 (2026-04-01); P00034 is described "TRAVEL INCREASE". 2024 records P00023 (2024-05-24) and P00024 (2024-07-09) have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". No recipient is named (q96–q104).'
+  category: contract
+  source:
+    path: government/usaspending-hq003419f0506-transactions.txt
+    location: 'transactions P00023, P00024, and P00034–P00040 — CONT_TX_9700_9700_HQ003419F0506_P00023_HQ003415A0010_0, CONT_TX_9700_9700_HQ003419F0506_P00024_HQ003415A0010_0, and CONT_TX_9700_9700_HQ003419F0506_P00034_HQ003415A0010_0 through CONT_TX_9700_9700_HQ003419F0506_P00040_HQ003415A0010_0'
+  id: t39
+  added_date: '2026-09-26'
 - date: '2025-07-28'
   event: 'USAspending records modification P00003 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation -6327156.07. Its description field is "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE" ([`/organizations/ousd-is-exdir`]); no reason is stated (q64).'
   category: contract
@@ -1142,6 +1468,14 @@ timeline:
     location: '"generated_unique_award_id" / "date_signed" / "number_of_offers_received" / "recipient" fields, CONT_AWD_HQ003426FE050_9700_HQ003425A0001_9700'
   id: t26
   added_date: '2026-09-26'
+- date: '2026-02-17'
+  event: 'WHS ([`/organizations/whs`]) signed HQ003426FE011, a BPA CALL under HQ003425A0004, recipient ARLO SOLUTIONS L.L.C., described as "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" support ([`/organizations/ousd-is-sasp`]); 4 offers; "8A COMPETED"; base_and_all_options 59372513.73 (q77–q85). USAspending lists two BPA CALL records under HQ003425A0004: HQ003426FE011 and HQ003425F0104 (hasNext false, as of the 2026-09-26 fetch; q88–q90).'
+  category: contract
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: 'USAspending API record — "piid" / "description" / "date_signed" / "base_and_all_options" / "parent_award" / "recipient" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700'
+  id: t40
+  added_date: '2026-09-26'
 - date: '2026-02-27'
   event: 'Wayback capture of the Arlo Solutions LLC Greenhouse job board: "50 jobs", including the "OUSW (I&S) SASP Incumbent" listing ([`/organizations/ousd-is-sasp`]). Neither the (617) nor the (619) requisition is listed in the capture.'
   category: posting
@@ -1158,6 +1492,31 @@ timeline:
     location: Press release dateline
   id: t18
   added_date: '2026-05-03'
+- date: '2026-05-13'
+  event: 'HQ003426FE011 period_of_performance start_date; end_date 2026-11-27, potential_end_date 2030-11-27 (q79).'
+  category: contract
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: 'USAspending API record — "period_of_performance" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700'
+  end_date: '2026-11-27'
+  id: t41
+  added_date: '2026-09-26'
+- date: '2026-05-27'
+  event: 'USAspending records a period_of_performance end_date of 2026-05-27 (potential_end_date 2026-05-27; record last modified 2026-04-01) for HQ003419F0506, a BPA CALL under BPA HQ003415A0010 whose recipient USAspending records as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (q91–q95). The record does not name Arlo.'
+  category: contract
+  source:
+    path: government/usaspending-hq003419f0506.txt
+    location: 'USAspending API record — "period_of_performance" object, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700'
+  id: t42
+  added_date: '2026-09-26'
+- date: '2026-06-02'
+  event: 'USAspending records modification P00001 to HQ003426FE011 as a CHANGE ORDER, federal_action_obligation 2194229.63. The two transactions listed (hasNext false), the base award (3500000.0) and P00001, sum to the award-level total_obligation of 5694229.63. The transaction records do not name the recipient and state no reason for the change order (q86, q87, q77).'
+  category: contract
+  source:
+    path: government/usaspending-hq003426fe011-transactions.txt
+    location: 'transaction P00001, CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0; top-level "page_metadata" object'
+  id: t43
+  added_date: '2026-09-26'
 key_personnel:
 - id: kp1
   added_date: '2026-05-03'
@@ -1287,6 +1646,15 @@ org_relationships:
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: 'USAspending API record — "funding_agency" object (subtier "Immediate Office of the Secretary of Defense", office_agency_name "OSD OUSD(I)"), CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700'
+- id: or13
+  added_date: '2026-09-26'
+  organization_path: /organizations/ousd-is-sasp
+  relationship_type: other
+  flagged: true
+  notes: 'The HQ003426FE011 description field is "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)", with recipient ARLO SOLUTIONS L.L.C.; under the GAO decision, the Call Order 2 awardee will provide services to the Sensitive Activities & Special Programs (SASP) Office. No source cited here states a reason for the HQ003425F0104 TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL) action, or states that HQ003426FE011 was issued in place of HQ003425F0104.'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: 'USAspending API record — "description" field, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700'
 contracts:
 - id: c1
   added_date: '2026-05-03'
@@ -1442,3 +1810,15 @@ contracts:
   source:
     path: news/arlo-contract-vehicles-20260503.html
     location: Contract Vehicles & Schedules — GSA 8(a) Stars III block
+- id: c14
+  added_date: '2026-09-26'
+  contract_number: HQ003426FE011
+  contracting_agency: WHS (BPA Call Order under HQ003425A0004)
+  primary_counterparty_path: /organizations/ousd-is
+  period_start: '2026-05-13'
+  period_end: '2026-11-27'
+  subject: Administrative, Policy, Operations, and Analytic Support Services — OUSD(I&S) Sensitive Activities and Special Programs (SASP)
+  value: '$59,372,513.73 per USAspending field "base_and_all_options" (potential_end_date 2030-11-27); $5,694,229.63 per "total_obligation" (base award $3,500,000.00 + P00001 CHANGE ORDER 2026-06-02 $2,194,229.63). One of two BPA CALL records listed under HQ003425A0004 (hasNext false; as of the 2026-09-26 fetch). Arlo''s March 16, 2026 press release states "more than $85 million" and names no contract number.'
+  source:
+    path: government/usaspending-hq003426fe011.txt
+    location: 'USAspending API record — "piid" / "description" / "total_obligation" / "date_signed" / "base_and_all_options" / "period_of_performance" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700'

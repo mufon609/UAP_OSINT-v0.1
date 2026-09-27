@@ -30,6 +30,10 @@ For HQ003425F0104, five transaction records are listed by USAspending. The base 
 
 Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services.
 
+USAspending records a second BPA CALL under HQ003425A0004: HQ003426FE011, date_signed 2026-02-17, recipient ARLO SOLUTIONS L.L.C. (UEI JSRCFJVJM874), with the description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" ([`/organizations/ousd-is-sasp`]). The HQ003426FE011 award record records solicitation HQ003424R0178, number_of_offers_received 4, type_set_aside 8A ("8A COMPETED"), base_and_all_options 59372513.73, and total_obligation 5694229.63; the two transaction records listed are the base award (federal_action_obligation 3500000.0) and modification P00001, a CHANGE ORDER on 2026-06-02 (federal_action_obligation 2194229.63). Its period_of_performance has a start_date of 2026-05-13 and an end_date of 2026-11-27, with a potential_end_date of 2030-11-27. Its awarding agency is Washington Headquarters Services and its funding office is "OSD OUSD(I)". Two BPA CALL records are listed by USAspending under HQ003425A0004, HQ003426FE011 and HQ003425F0104, on a single page (hasNext false). Arlo's March 16, 2026 SASP press statement announced a contract valued at more than $85 million and named no contract number; the HQ003426FE011 base_and_all_options is 59372513.73. Both stand as recorded. No source cited here states a reason for the HQ003425F0104 TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL) action, or states that HQ003426FE011 was issued in place of HQ003425F0104.
+
+In notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]), dated March 11, 2025 (postedDate), Washington Headquarters Services, Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that the incumbent contractor, Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]), is currently performing services under WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025, and an anticipated bridge contract period of performance from March 28, 2025, to July 27, 2025. USAspending records the recipient of HQ003419F0506 as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), with parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION; neither record refers to the other, and both stand as recorded. In the HQ003419F0506 transaction records, modification P00035 (2025-07-25, CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction whose description field is "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS", and every later transaction listed, through P00040 (2026-04-01), has the same description; two 2024 transaction records, P00023 (2024-05-24) and P00024 (2024-07-09), have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". The HQ003419F0506 award record records a period_of_performance end_date of 2026-05-27. Neither the notice nor the HQ003419F0506 records name Arlo.
+
 Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer" posting, in the April 28, 2025 capture, states "This position is with the Office of the Under Secretary of Defense for Intelligence and Security - OUSD(I&S), in the Commonwealth & Partnership Engagement (C&PE) Branch" ([`/organizations/ousd-is-cpe`]) and that the position is to meet the needs of "four primary Commonwealth partner nations: Australia, Canada, New Zealand, and the United Kingdom"; its work location is Bolling AFB, Washington, D.C. No contract is named in the (469) posting. The "(617) Staff Officer V" posting, in the Dec. 17, 2025 capture and the January 19, 2026 capture, states "The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]) and "This key personnel position serves as a senior-level SME"; its listed responsibilities include reports and briefings on AARO operations for Congress ([`/organizations/congress`]), working relationships with the Office of the Director of National Intelligence ([`/organizations/odni`]), analysis of intelligence related activities against the National Defense Strategy ([`/documents/national-defense-strategy`]), and Intelligence Community ([`/organizations/intelligence-community`])-wide processes and procedures for reporting of airborne objects of interest including UAP. The "(619) Security Officer IV" posting, in the January 19, 2026 capture, states that the Security Officer IV is responsible for managing "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))"; its listed responsibilities include coordination with the Defense Counterintelligence & Security Agency ([`/organizations/dcsa`]) and compliance with DoD Manual 5205.07 ([`/documents/dod-manual-5205-07`]) and DoD Manual 5105.21 ([`/documents/dod-manual-5105-21`]). Both positions are located in Arlington, VA ([`/locations/arlington-virginia`]). These dates are capture dates; the rendered page displays no posting date. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here. In the February 27, 2026 capture of the Arlo job board, "50 jobs" are listed, including the "OUSW (I&S) SASP Incumbent" job ([`/organizations/ousd-is-sasp`]); neither the (617) nor the (619) position is listed.
 
 ---
@@ -55,6 +59,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 ---
 
 ## Key Passages
+
+### HQ003419F0506 is recorded as a BPA CALL with description "ADMINISTRATIVE AND ANALYTICAL SUPPORT."
+
+> "piid":"HQ003419F0506","category":"contract","type":"A","type_description":"BPA CALL","description":"ADMINISTRATIVE AND ANALYTICAL SUPPORT"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2019-08-15 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506.txt) |
+| Location | USAspending API record — "piid" / "type_description" / "description" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700 |
+
+---
+
+### Parent award of HQ003419F0506: BPA HQ003415A0010, a MULTIPLE AWARD BPA.
+
+> "generated_unique_award_id":"CONT_IDV_HQ003415A0010_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003415A0010"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2019-08-15 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506.txt) |
+| Location | USAspending API record — "parent_award" object, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700 |
+
+---
 
 ### Earliest primary-source attestation in the corpus of Arlo's 2014 founding date and SBA 8(a) certified small-business framing. The Company Overview's "trusted advisors of agency leaders" phrasing is the seed of the marketing voice that Arlo's later press releases and corporate web pages expand on (the "data protectors / information confidantes / cybersecurity experts" three-archetype framing appears in those later sources, not in this 2021 Overview).
 
@@ -101,6 +129,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2024-04-18 |
 | Source | [archived source](../sources/news/arlo-press-cls-vetting-20260503.html) |
 | Location | Press release CL&S scope ¶ (April 18, 2024) |
+
+---
+
+### Modification P00023 to HQ003419F0506, action_date 2024-05-24, action_type M "OTHER ADMINISTRATIVE ACTION", federal_action_obligation 0.0; description field "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS." (ampersand form, trailing period), distinct from the exact "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" of P00035-P00040. The transactions list does not name the recipient.
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00023_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2024-05-24","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00023","description":"SENSITIVE ACTIVITIES & SPECIAL PROGRAMS.","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-05-24 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00023 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00023_HQ003415A0010_0 |
+
+---
+
+### Modification P00024 to HQ003419F0506, action_date 2024-07-09, action_type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation 11406.0; description field "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS SUPPORT SERVICES - MOD TO INCREASE TRAVEL CLIN 5003." — begins "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS" (ampersand form), distinct from the exact "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" of P00035-P00040. The transactions list does not name the recipient.
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00024_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2024-07-09","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00024","description":"SENSITIVE ACTIVITIES & SPECIAL PROGRAMS SUPPORT SERVICES - MOD TO INCREASE TRAVEL CLIN 5003.","federal_action_obligation":11406.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-07-09 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00024 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00024_HQ003415A0010_0 |
 
 ---
 
@@ -380,6 +432,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### This SAM.gov notice of intent (TR011720251116) names Booz Allen Hamilton Inc. (BAH) as the incumbent contractor performing services under WHS-AD TEAMS BPA HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025, and gives an anticipated four-month bridge period of performance from March 28, 2025 to July 27, 2025. USAspending records a different recipient for HQ003419F0506 (see the USAspending award record).
+
+> 1) Award a short-term sole source extension contract to the incumbent contractor, Booz Allen Hamilton Inc. (BAH) [CAGE Code: 17038; 8283 Greensboro Dr. McLean Virginia 22102-3838, United States]. The Contractor is currently performing services under WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contract is for four months, from March 28, 2025, to July 27, 2025.
+
+| Field | Value |
+|---|---|
+| Attributed to | Item 1 of five numbered sole-source extension intents in the notice body; the notice is issued by Washington Headquarters Services, Acquisition Directorate on behalf of OUSD(I&S) I&S Enterprise. 2025-03-11 |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | description[0].body, ¶ "1) Award a short-term sole source extension contract to the incumbent contractor, Booz Allen Hamilton Inc." |
+
+---
+
+### The notice posted/published date as recorded in the SAM.gov opportunity record.
+
+> "postedDate":"2025-03-11T19:51:30.418+00:00"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-11 |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | top-level JSON field "postedDate" |
+
+---
+
 ### Modification P00001 to HQ003425F0104, action_date 2025-03-13, action_type M "OTHER ADMINISTRATIVE ACTION", no change in obligation (0.0); description unchanged from the base award.
 
 > "id":"CONT_TX_9700_9700_HQ003425F0104_P00001_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2025-03-13","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00001","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.","federal_action_obligation":0.0
@@ -632,6 +708,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### Modification P00034 to HQ003419F0506, action_date 2025-07-17, action_type M "OTHER ADMINISTRATIVE ACTION", federal_action_obligation 0.0; description field "TRAVEL INCREASE". The last transaction the record lists before P00035, whose description field reads "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS". The transactions list does not name the recipient.
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00034_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-17","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00034","description":"TRAVEL INCREASE","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-17 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00034 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00034_HQ003415A0010_0 |
+
+---
+
+### Modification P00035 to HQ003419F0506 (a BPA CALL under BPA HQ003415A0010, per the transaction id), action_date 2025-07-25, action_type D "CHANGE ORDER", federal_action_obligation 1977626.47. Its description field reads "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS"; every later transaction the record lists (P00036-P00040) carries the same description. The transactions list does not name the recipient.
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00035_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-25","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00035","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":1977626.47
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-25 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00035 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00035_HQ003415A0010_0 |
+
+---
+
 ### Modification P00003 to HQ003425F0104, action_date 2025-07-28, action_type M "OTHER ADMINISTRATIVE ACTION", federal_action_obligation -6327156.07 — a deobligation equal in magnitude to the base-award obligation of 6327156.07. From this transaction on, the record's description field reads "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE" rather than the base-award description.
 
 > "id":"CONT_TX_9700_9700_HQ003425F0104_P00003_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-28","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00003","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":-6327156.07
@@ -653,6 +753,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2025-08-19 |
 | Source | [archived source](../sources/government/usaspending-hq003425f0104-transactions.txt) |
 | Location | transaction P00004 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003425F0104_P00004_HQ003425A0004_0 |
+
+---
+
+### Modification P00036 to HQ003419F0506, action_date 2025-09-02, action_type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation 4127105.22; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00036_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-09-02","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00036","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":4127105.22
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-02 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00036 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00036_HQ003415A0010_0 |
+
+---
+
+### Modification P00037 to HQ003419F0506, action_date 2025-09-16, action_type C "FUNDING ONLY ACTION", federal_action_obligation 408182.47; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00037_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-09-16","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00037","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":408182.47
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-16 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00037 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00037_HQ003415A0010_0 |
 
 ---
 
@@ -713,6 +837,18 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | Listed under "Desired Qualifications". Capture date 2025-12-17; the rendered page text displays no posting date. |
 | Source | [archived source](../sources/news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html) |
 | Location | ¶ Experience with AARO mission |
+
+---
+
+### Modification P00038 to HQ003419F0506, action_date 2025-12-18, action_type C "FUNDING ONLY ACTION", federal_action_obligation 230941.83; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00038_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2025-12-18","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00038","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":230941.83
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-12-18 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00038 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00038_HQ003415A0010_0 |
 
 ---
 
@@ -836,6 +972,102 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### HQ003426FE011 records date_signed 2026-02-17, base_exercised_options 5837895.7, and base_and_all_options 59372513.73. Arlo's 2026-03-16 SASP press release states a contract "valued at more than $85 million"; this record's base_and_all_options is 59372513.73. Both figures stand as recorded; neither source addresses the other.
+
+> "date_signed":"2026-02-17","base_exercised_options":5837895.7,"base_and_all_options":59372513.73
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "date_signed" / "base_exercised_options" / "base_and_all_options" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### Period of performance for HQ003426FE011: start_date 2026-05-13, end_date 2026-11-27, potential_end_date 2030-11-27; the record was last modified 2026-06-02.
+
+> "period_of_performance":{"start_date":"2026-05-13","end_date":"2026-11-27","last_modified_date":"2026-06-02","potential_end_date":"2030-11-27 00:00:00"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "period_of_performance" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### Parent award of call order HQ003426FE011: BPA HQ003425A0004 (CONT_IDV_HQ003425A0004_9700), a MULTIPLE AWARD BPA.
+
+> "generated_unique_award_id":"CONT_IDV_HQ003425A0004_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0004"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "parent_award" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### The recipient of HQ003426FE011 is recorded as "ARLO SOLUTIONS L.L.C.", UEI JSRCFJVJM874.
+
+> "recipient_name":"ARLO SOLUTIONS L.L.C.","recipient_uei":"JSRCFJVJM874"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "recipient" object — "recipient_name" / "recipient_uei" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### Funding agency for HQ003426FE011: Department of Defense (DOD), subtier Immediate Office of the Secretary of Defense (SECDEF, code 97AD), funding office "OSD OUSD(I)".
+
+> "funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "funding_agency" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### Awarding agency for HQ003426FE011: Department of Defense (DOD), subtier Washington Headquarters Services (WHS, code 97F5), awarding office "WASHINGTON HEADQUARTERS SERVICES".
+
+> "awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "awarding_agency" object, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### HQ003426FE011 records solicitation HQ003424R0178, solicitation_procedures SP1 (described in the same record as "SIMPLIFIED ACQUISITION"), number_of_offers_received "4", extent_competed F (described in the same record as "COMPETED UNDER SAP"), and type_set_aside 8A / "8A COMPETED".
+
+> "solicitation_identifier":"HQ003424R0178","solicitation_procedures":"SP1","number_of_offers_received":"4","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "latest_transaction_contract_data" object — solicitation / offers / set-aside fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### USAspending transaction record for the HQ003426FE011 base award (modification_number "0"): type BPA CALL under parent BPA HQ003425A0004 (per the transaction id), action_date 2026-02-17, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)", federal_action_obligation 3500000.0. The transactions list does not name the recipient; the award-level record (government/usaspending-hq003426fe011.txt) names the recipient as ARLO SOLUTIONS L.L.C.
+
+> "id":"CONT_TX_9700_9700_HQ003426FE011_0_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2026-02-17","action_type":null,"action_type_description":null,"modification_number":"0","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","federal_action_obligation":3500000.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-02-17 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011-transactions.txt) |
+| Location | transaction 0 / base award ("id"/"type_description"/"action_date"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003426FE011_0_HQ003425A0004_0 |
+
+---
+
 ### The captured Arlo Greenhouse job board (Wayback capture of 2026-02-27) states a count of 50 jobs; the first listing is the un-numbered "OUSW (I&S) SASP Incumbent" (Arlington, VA) under "Active Incumbent", followed by 49 requisition-numbered listings. Neither "(617)" nor "(619)" nor "AARO" appears anywhere in the capture.
 
 > 50 jobs    Active Incumbent       Job        OUSW (I&S) SASP Incumbent  Arlington, VA
@@ -884,6 +1116,18 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### Modification P00039 to HQ003419F0506, action_date 2026-03-06, action_type C "FUNDING ONLY ACTION", federal_action_obligation 160848.41; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2026-03-06","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00039","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":160848.41
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-03-06 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00039 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0 |
+
+---
+
 ### Arlo's own announcement of a SASP multi-year contract — states scope ("comprehensive administrative, policy, operations, and analytic support services"), customer office (SASP within OUSW(I&S)), and approximate value ("more than $85 million"). The press statement names no contract number; no source ties this figure to a specific PIID. Note: "OUSW(I&S)" is Arlo's post-2025 marketing form; USAspending and GAO records use "OUSD(I&S)".
 
 > Washington, DC  – Arlo Solutions announced today that it has been awarded a multi-year contract valued at more than $85 million to provide comprehensive administrative, policy, operations, and analytic support services to the Sensitive Activities & Special Programs (SASP) office within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
@@ -905,6 +1149,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2026-03-16 |
 | Source | [archived source](../sources/news/arlo-press-85m-sasp-20260503.html) |
 | Location | Press release CEO quote ¶ |
+
+---
+
+### Period of performance for HQ003419F0506: start_date 2019-08-14, end_date 2026-05-27, potential_end_date 2026-05-27; the record was last modified 2026-04-01.
+
+> "period_of_performance":{"start_date":"2019-08-14","end_date":"2026-05-27","last_modified_date":"2026-04-01","potential_end_date":"2026-05-27 00:00:00"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-04-01 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506.txt) |
+| Location | USAspending API record — "period_of_performance" object, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700 |
+
+---
+
+### Modification P00040 to HQ003419F0506, action_date 2026-04-01, action_type C "FUNDING ONLY ACTION", federal_action_obligation 160848.41 (the same value as P00039); description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS". The last of the 41 transactions the record lists (page_metadata hasNext false).
+
+> "id":"CONT_TX_9700_9700_HQ003419F0506_P00040_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2026-04-01","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00040","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":160848.41
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-04-01 |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
+| Location | transaction P00040 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00040_HQ003415A0010_0 |
 
 ---
 
@@ -944,6 +1212,101 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### Modification P00001 to HQ003426FE011, action_date 2026-06-02, action_type D "CHANGE ORDER", federal_action_obligation 2194229.63; description unchanged from the base award. The two transactions the record lists sum to 5694229.63 (3500000.0 + 2194229.63), matching the award-level total_obligation of 5694229.63 in government/usaspending-hq003426fe011.txt.
+
+> "id":"CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2026-06-02","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00001","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","federal_action_obligation":2194229.63
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-06-02 |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011-transactions.txt) |
+| Location | transaction P00001 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0 |
+
+---
+
+### Award HQ003426FE011 is recorded as type A, type_description "BPA CALL", with the description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" and total_obligation 5694229.63.
+
+> "piid":"HQ003426FE011","category":"contract","type":"A","type_description":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","total_obligation":5694229.63
+
+| Field | Value |
+|---|---|
+| Attributed to | API record; total_obligation is cumulative and includes modification P00001 (2026-06-02); award signed 2026-02-17. |
+| Source | [archived source](../sources/government/usaspending-hq003426fe011.txt) |
+| Location | USAspending API record — "piid" / "type_description" / "description" / "total_obligation" fields, CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 |
+
+---
+
+### The transactions response is a single page (page 1, hasNext false, hasPrevious false); the two records it lists — modification 0 (2026-02-17) and P00001 (2026-06-02) — are the complete transaction list returned for HQ003426FE011.
+
+> "page_metadata":{"page":1,"next":null,"previous":null,"hasNext":false,"hasPrevious":false}
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/usaspending-hq003426fe011-transactions.txt) |
+| Location | page_metadata block ("page"/"next"/"hasNext"/"hasPrevious"), head of the HQ003426FE011 transactions response |
+
+---
+
+### Factual: the USAspending child-awards list for IDV CONT_IDV_HQ003425A0004_9700 carries HQ003426FE011 as a child record — award_type "BPA CALL", generated_unique_award_id CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700 (placing it under BPA HQ003425A0004), description naming "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" within the "OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY", funding and awarding agency Department of Defense, obligated_amount 5694229.63, period_of_performance_start_date 2026-05-13, period_of_performance_current_end_date 2026-11-27. The child record does not name a recipient.
+
+> "award_type":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","funding_agency":"Department of Defense","awarding_agency":"Department of Defense","funding_agency_id":1215,"awarding_agency_id":1231,"generated_unique_award_id":"CONT_AWD_HQ003426FE011_9700_HQ003425A0004_9700","last_date_to_order":null,"obligated_amount":5694229.63,"period_of_performance_current_end_date":"2026-11-27","period_of_performance_start_date":"2026-05-13","piid":"HQ003426FE011"
+
+| Field | Value |
+|---|---|
+| Attributed to | First of the two entries in the "results" array of the child_awards response (POST api/v2/idvs/awards/) for IDV CONT_IDV_HQ003425A0004_9700. statement_date omitted: the record is an API list with no statement date; the period_of_performance_start_date (2026-05-13) is carried in the span itself. |
+| Source | [archived source](../sources/government/usaspending-hq003425a0004-child-awards.txt) |
+| Location | USAspending IDV child-awards list — results[0] ("award_type" through "piid"), CONT_IDV_HQ003425A0004_9700 |
+
+---
+
+### Factual: the same child-awards list carries HQ003425F0104 as the second child record — award_type "BPA CALL", generated_unique_award_id CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700 (placing it under BPA HQ003425A0004), description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.", funding and awarding agency Department of Defense, obligated_amount 0.0 as recorded in this list, period_of_performance_start_date 2025-02-21, period_of_performance_current_end_date 2026-03-27. The child record does not name a recipient.
+
+> "award_type":"BPA CALL","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES.","funding_agency":"Department of Defense","awarding_agency":"Department of Defense","funding_agency_id":1215,"awarding_agency_id":1231,"generated_unique_award_id":"CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700","last_date_to_order":null,"obligated_amount":0.0,"period_of_performance_current_end_date":"2026-03-27","period_of_performance_start_date":"2025-02-21","piid":"HQ003425F0104"
+
+| Field | Value |
+|---|---|
+| Attributed to | Second of the two entries in the "results" array of the child_awards response for IDV CONT_IDV_HQ003425A0004_9700. statement_date omitted (API list record; the period_of_performance_start_date 2025-02-21 is carried in the span itself). |
+| Source | [archived source](../sources/government/usaspending-hq003425a0004-child-awards.txt) |
+| Location | USAspending IDV child-awards list — results[1] ("award_type" through "piid"), CONT_IDV_HQ003425A0004_9700 |
+
+---
+
+### Factual: the child-awards response is a single page (page 1, next null, hasNext false). With the two entries in "results" (HQ003426FE011 and HQ003425F0104), the record lists two child call orders under BPA HQ003425A0004 (single page, hasNext false; as of the 2026-09-26 fetch).
+
+> "page_metadata":{"page":1,"next":null,"previous":null,"hasNext":false,"hasPrevious":false}
+
+| Field | Value |
+|---|---|
+| Attributed to | Trailing "page_metadata" object of the child_awards response for IDV CONT_IDV_HQ003425A0004_9700, immediately after the two-entry "results" array. |
+| Source | [archived source](../sources/government/usaspending-hq003425a0004-child-awards.txt) |
+| Location | USAspending IDV child-awards list — page_metadata, CONT_IDV_HQ003425A0004_9700 |
+
+---
+
+### USAspending records the recipient of HQ003419F0506 as IAN EVAN & ALEXANDER CORP (UEI NSDLRX2E9AM8), with parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (UEI MBPHTU7Y9S65). SAM.gov notice TR011720251116 names Booz Allen Hamilton Inc. as the incumbent on this task order. Both stand as recorded; this record gives no date or mechanism for the recipient/parent relationship.
+
+> "recipient_name":"IAN EVAN & ALEXANDER CORP","recipient_uei":"NSDLRX2E9AM8","recipient_unique_id":null,"parent_recipient_hash":"ed02855e-60d7-2540-e3d7-18fba1dd1316-P","parent_recipient_name":"BOOZ ALLEN HAMILTON HOLDING CORPORATION","parent_recipient_uei":"MBPHTU7Y9S65"
+
+| Field | Value |
+|---|---|
+| Attributed to | API record; the recipient/parent fields carry no date; award signed 2019-08-15. |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506.txt) |
+| Location | USAspending API record — "recipient" object — "recipient_name" / "recipient_uei" / "parent_recipient_name" / "parent_recipient_uei" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700 |
+
+---
+
+### HQ003419F0506 date_signed 2019-08-15; total_obligation 51413590.66; base_exercised_options 53349832.34; base_and_all_options 54420971.41.
+
+> "total_obligation":51413590.66,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2019-08-15","base_exercised_options":53349832.34,"base_and_all_options":54420971.41
+
+| Field | Value |
+|---|---|
+| Attributed to | API record; total_obligation is cumulative and carries no date of its own; award signed 2019-08-15; record last_modified_date 2026-04-01. |
+| Source | [archived source](../sources/government/usaspending-hq003419f0506.txt) |
+| Location | USAspending API record — "total_obligation" / "date_signed" / "base_exercised_options" / "base_and_all_options" fields, CONT_AWD_HQ003419F0506_9700_HQ003415A0010_9700 |
+
+---
+
 ## Primary Contracts
 
 | Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
@@ -961,6 +1324,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | HQ003424F0190 | WHS (under GSA MAS 47QTCA21D003B) | 2024-04-30 – 2026-04-29 | $1,474,125.12 obligated; $3.7 million per Arlo press release ceiling | [`/organizations/ousd-is`] | Integrated Vetting Policy & Analytical Support | news/arlo-press-cls-vetting-20260503.html |
 | HQ003425A0004 | WHS | 2025-02-15 – 2030-02-14 | $856,000,000 — good faith estimate amount, aggregate across four BPA vendors. | [`/organizations/ousd-is`] | OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services | government/usaspending-arlo-bpa-hq003425a0004.json |
 | HQ003425F0104 | WHS (BPA Call Order under HQ003425A0004) | 2025-02-21 – 2026-03-27 | $78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 per USAspending field "base_exercised_options"; 0.0 per USAspending field "total_obligation". | [`/organizations/ousd-is`] | SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office | government/usaspending-arlo-hq003425f0104.json |
+| HQ003426FE011 | WHS (BPA Call Order under HQ003425A0004) | 2026-05-13 – 2026-11-27 | $59,372,513.73 per USAspending field "base_and_all_options" (potential_end_date 2030-11-27); $5,694,229.63 per "total_obligation" (base award $3,500,000.00 + P00001 CHANGE ORDER 2026-06-02 $2,194,229.63). One of two BPA CALL records listed under HQ003425A0004 (hasNext false; as of the 2026-09-26 fetch). Arlo's March 16, 2026 press release states "more than $85 million" and names no contract number. | [`/organizations/ousd-is`] | Administrative, Policy, Operations, and Analytic Support Services — OUSD(I&S) Sensitive Activities and Special Programs (SASP) | government/usaspending-hq003426fe011.txt |
 
 ---
 
@@ -989,6 +1353,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2025-02-14 | USAspending records BPA HQ003425A0003 to PREMIER ENTERPRISE SOLUTIONS, LLC ([`/organizations/premier-enterprise-solutions`]) of Upper Marlboro, Maryland ([`/locations/upper-marlboro-maryland`]), a MULTIPLE AWARD BPA with date_signed 2025-02-14. The record carries no solicitation number and does not name Arlo. | contract | government/usaspending-hq003425a0003.txt |  |
 | 2025-02-21 | WHS signed BPA Call Order HQ003425F0104 with Arlo ($78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 per USAspending field "base_exercised_options"; the award record's "total_obligation" field reads 0.0). | contract | government/usaspending-arlo-hq003425f0104.json |  |
 | 2025-02-21 | USAspending transaction record for the HQ003425F0104 base award (modification 0): BPA CALL under BPA HQ003425A0004, federal_action_obligation 6327156.07, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES." The transaction record does not name the recipient (q61). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
+| 2025-03-11 | Notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) from WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) as incumbent on Task Order HQ003419F0506 (WHS-AD TEAMS BPA, HQ003415A0010), services concluding March 27, 2025; bridge period March 28 to July 27, 2025. USAspending records another recipient (q91). Arlo is not named. | contract | government/samgov-tr011720251116-notice.json | [`/documents/samgov-tr011720251116-notice`] |
 | 2025-03-13 | USAspending records modification P00001 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q62). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
 | 2025-04-28 | Wayback capture of Arlo's Greenhouse posting "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer": a position with OUSD(I&S) ([`/organizations/ousd-is`]) in the Commonwealth & Partnership Engagement (C&PE) Branch ([`/organizations/ousd-is-cpe`]), serving Australia, Canada, New Zealand, and the United Kingdom; work location Bolling AFB, Washington, D.C. ([`/locations/washington-dc`]). Capture date, not posting date; no contract named. | posting | news/arlo-greenhouse-469-cpe-allied-action-officer-wayback-20250428.html |  |
 | 2025-06-10 | USAspending records modification P00002 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q63). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
@@ -998,14 +1363,19 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2025-06-11 | Counsel for the protester (Sancorp) in GAO B-422985.4 / B-422985.5: Douglas P. Hibshman ([`/people/douglas-p-hibshman`]), Keeley A. McCarty ([`/people/keeley-a-mccarty`]), and Jane Jung Hyoun Han ([`/people/jane-jung-hyoun-han`]), Fox Rothschild LLP ([`/organizations/fox-rothschild`]). | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-11 | Counsel for the agency in GAO B-422985.4 / B-422985.5: May Sena ([`/people/may-sena`]) and Stephan Piel ([`/people/stephan-piel`]), Department of Defense ([`/organizations/dod`]). Samantha S. Lee ([`/people/samantha-s-lee`]) and Peter H. Tran ([`/people/peter-h-tran`]), Office of the General Counsel, GAO ([`/organizations/gao-office-of-general-counsel`]), participated in the preparation of the decision. | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-11 | Per the GAO decision, Arlo (intervenor) filed, on a date the decision does not state, a request to dismiss the SASP protest arguments ([`/documents/arlo-request-for-dismissal-b-422985-4`]), citing "public information" that X left Sancorp in February 2025 (q58). X had been proposed in Sancorp's technical quotations ([`/documents/sancorp-technical-quotations-hq003424r0178`]) (q57). The protester asserted X had "left Sancorp amicably" (q59). | protest | government/gao-b-422985-wayback-20250708.html |  |
+| 2025-07-25 | HQ003419F0506 modification P00035 (CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction described "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS" ([`/organizations/ousd-is-sasp`]), through P00040 (2026-04-01); P00034 is described "TRAVEL INCREASE". 2024 records P00023 (2024-05-24) and P00024 (2024-07-09) have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". No recipient is named (q96–q104). | contract | government/usaspending-hq003419f0506-transactions.txt |  |
 | 2025-07-28 | USAspending records modification P00003 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation -6327156.07. Its description field is "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE" ([`/organizations/ousd-is-exdir`]); no reason is stated (q64). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
 | 2025-08-19 | USAspending records modification P00004 to HQ003425F0104 as TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL), federal_action_obligation 0.0 — the last transaction listed (page_metadata hasNext false). The record does not state whether the action was complete or partial (q65). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
 | 2025-12-17 | Wayback capture of Arlo's Greenhouse posting "(617) Staff Officer V": "will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]); "This key personnel position serves as a senior-level SME". Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |  |
 | 2026-01-19 | Wayback capture of the same "(617) Staff Officer V" posting, carrying the same AARO-support Position Description sentence. Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-617-staff-officer-v-wayback-20260119.html |  |
 | 2026-01-19 | Wayback capture of Arlo's Greenhouse posting "(619) Security Officer IV": "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))" ([`/organizations/aaro`]), Arlington, VA ([`/locations/arlington-virginia`]). Capture date, not posting date; the posting names no contract. | posting | news/arlo-greenhouse-619-security-officer-iv-wayback-20260119.html |  |
 | 2026-01-28 | USAspending records HQ003426FE050, a BPA CALL under Sancorp's ([`/organizations/sancorp-consulting`]) BPA HQ003425A0001, date_signed 2026-01-28, number_of_offers_received "4"; funding agency Immediate Office of the Secretary of Defense ([`/organizations/osd`]). The record does not name the offerors, Arlo, or AARO. | contract | government/usaspending-hq003426fe050.txt |  |
+| 2026-02-17 | WHS ([`/organizations/whs`]) signed HQ003426FE011, a BPA CALL under HQ003425A0004, recipient ARLO SOLUTIONS L.L.C., described as "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" support ([`/organizations/ousd-is-sasp`]); 4 offers; "8A COMPETED"; base_and_all_options 59372513.73 (q77–q85). USAspending lists two BPA CALL records under HQ003425A0004: HQ003426FE011 and HQ003425F0104 (hasNext false, as of the 2026-09-26 fetch; q88–q90). | contract | government/usaspending-hq003426fe011.txt |  |
 | 2026-02-27 | Wayback capture of the Arlo Solutions LLC Greenhouse job board: "50 jobs", including the "OUSW (I&S) SASP Incumbent" listing ([`/organizations/ousd-is-sasp`]). Neither the (617) nor the (619) requisition is listed in the capture. | posting | news/arlo-greenhouse-board-wayback-20260227.html |  |
 | 2026-03-16 | Arlo Solutions announced that it "has been awarded a multi-year contract valued at more than $85 million" for SASP support, in a press release naming Lonye Ford ([`/people/lonye-ford`]) as CEO. No contract number is named in the press release. | publication | news/arlo-press-85m-sasp-20260503.html |  |
+| 2026-05-13 | HQ003426FE011 period_of_performance start_date; end_date 2026-11-27, potential_end_date 2030-11-27 (q79). | contract | government/usaspending-hq003426fe011.txt |  |
+| 2026-05-27 | USAspending records a period_of_performance end_date of 2026-05-27 (potential_end_date 2026-05-27; record last modified 2026-04-01) for HQ003419F0506, a BPA CALL under BPA HQ003415A0010 whose recipient USAspending records as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (q91–q95). The record does not name Arlo. | contract | government/usaspending-hq003419f0506.txt |  |
+| 2026-06-02 | USAspending records modification P00001 to HQ003426FE011 as a CHANGE ORDER, federal_action_obligation 2194229.63. The two transactions listed (hasNext false), the base award (3500000.0) and P00001, sum to the award-level total_obligation of 5694229.63. The transaction records do not name the recipient and state no reason for the change order (q86, q87, q77). | contract | government/usaspending-hq003426fe011-transactions.txt |  |
 
 ---
 
@@ -1032,6 +1402,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | [`/organizations/aaro`] | contracting-agency | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html | Arlo described a (617) Staff Officer V position and a (619) Security Officer IV position as supporting AARO. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here. |
 | [`/organizations/sancorp-consulting`] | other | government/usaspending-hq003426fe050.txt | No source cited here records who submitted the 4 offers on HQ003426FE050 or whether Arlo was an offeror, and AARO is not named on HQ003426FE050 in any federal record cited here. The same record records "SIMPLIFIED ACQUISITION" and "COMPETED UNDER SAP". HQ003425A0001, HQ003425A0002 and HQ003425A0003 record no solicitation number; of the four BPA records, only HQ003425A0004 records HQ003424R0178 (the HQ003425F0104 call order record also records it). The (617) and (619) positions are not among the 50 jobs on the later board. |
 | [`/organizations/ousd-is-exdir`] | other | government/usaspending-hq003425f0104-transactions.txt | From modification P00003 on, the USAspending description field of HQ003425F0104 is "OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE". Under the GAO decision, the Call Order 1 awardee is to provide services to the I&S Executive Directorate (EXDIR) and the Call Order 2 awardee to the SASP Office. The transaction records do not name the recipient and state no reason for the change; the recipient is named in the HQ003425F0104 award record, whose "recipient_name" field is "ARLO SOLUTIONS L.L.C." and whose "description" field is "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES." |
+| [`/organizations/ousd-is-sasp`] | other | government/usaspending-hq003426fe011.txt | The HQ003426FE011 description field is "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)", with recipient ARLO SOLUTIONS L.L.C.; under the GAO decision, the Call Order 2 awardee will provide services to the Sensitive Activities & Special Programs (SASP) Office. No source cited here states a reason for the HQ003425F0104 TERMINATE FOR CONVENIENCE (COMPLETE OR PARTIAL) action, or states that HQ003426FE011 was issued in place of HQ003425F0104. |
 
 ---
 
@@ -1046,6 +1417,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)) | Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)) | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
 | Unidentified Aerial Phenomena | unidentified anomalous phenomena | news/arlo-greenhouse-617-staff-officer-v-wayback-20251217.html |
 | ARLO SOLUTIONS L.L.C. | Arlo Solutions, LLC | government/usaspending-arlo-hq003425f0104.json |
+| WHS-AD | Washington Headquarters Services, Acquisition Directorate | government/samgov-tr011720251116-notice.json |
+| BAH | Booz Allen Hamilton Inc. | government/samgov-tr011720251116-notice.json |
+| OUSW(IS) | OUSD(I&S) | government/usaspending-hq003426fe011.txt |
 
 ---
 
@@ -1085,6 +1459,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/booz-allen-hamilton`]
 - [`/organizations/comprehensive-approach-solutions`]
 - [`/organizations/congress`]
 - [`/organizations/crowell-moring`]
@@ -1094,6 +1469,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/gao`]
 - [`/organizations/gao-office-of-general-counsel`]
 - [`/organizations/gsa`]
+- [`/organizations/ian-evan-alexander`]
 - [`/organizations/intelligence-community`]
 - [`/organizations/odni`]
 - [`/organizations/osd`]
@@ -1107,6 +1483,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/usaspending-gov`]
 - [`/organizations/whitcomb-selinsky`]
 - [`/organizations/whs`]
+- [`/organizations/whs-acquisition-directorate`]
 
 ### Documents
 
@@ -1116,6 +1493,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/documents/gao-b-422985-4-sancorp-consulting`]
 - [`/documents/national-defense-strategy`]
 - [`/documents/rfq-hq003424r0178`]
+- [`/documents/samgov-tr011720251116-notice`]
 - [`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]
 - [`/documents/sancorp-technical-quotations-hq003424r0178`]
 - [`/documents/ssdd-hq003424r0178`]
@@ -1125,5 +1503,6 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/locations/arlington-virginia`]
 - [`/locations/fairfax-virginia`]
 - [`/locations/falls-church-virginia`]
+- [`/locations/mclean-virginia`]
 - [`/locations/upper-marlboro-maryland`]
 - [`/locations/washington-dc`]

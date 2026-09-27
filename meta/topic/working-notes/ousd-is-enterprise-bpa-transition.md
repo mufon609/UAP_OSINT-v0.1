@@ -98,19 +98,18 @@ Written 2026-09-26.
 
   Its period of performance runs to **2026-05-27**. USAspending records the
   recipient as "IAN EVAN & ALEXANDER CORP"; the March 2025 bridge notice
-  names Booz Allen as the incumbent on the same task order. (Raw USAspending
-  responses, fetched 2026-09-26 and not yet archived in `sources/`:
-  `.scratch/drafts/contractor-postings-20260925/usaspending-sasp/usaspending-award-HQ003419F0506-*.json`
-  and `usaspending-hq003419f0506-transactions-*.json`.)
+  names Booz Allen as the incumbent on the same task order
+  (`government/usaspending-hq003419f0506.txt`,
+  `government/usaspending-hq003419f0506-transactions.txt`).
 - **[E]** SASP was **re-awarded to Arlo** as HQ003426FE011, a child of BPA
   HQ003425A0004. It was signed 2026-02-17; its period of performance is
   2026-05-13 → 2026-11-27, potentially to 2030-11-27; base and all options
   are $59,372,513.73; $5,694,229.63 is obligated. The description reads
   "…OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)". A0004 has
-  exactly two child orders, F0104 and FE011. (Raw:
-  `…/usaspending-sasp/usaspending-award-HQ003426FE011-*.json`,
-  `usaspending-hq003426fe011-transactions-*.json`,
-  `usaspending-idv-children-HQ003425A0004-fixed-*.json`; not yet archived.)
+  exactly two child orders, F0104 and FE011
+  (`government/usaspending-hq003426fe011.txt`,
+  `government/usaspending-hq003426fe011-transactions.txt`,
+  `government/usaspending-hq003425a0004-child-awards.txt`).
 - **[E + I]** The sequence of events:
 
   | Date | Event |
