@@ -361,7 +361,8 @@ Programs (SASP)":
   252 and 257, headed "Director of War Intelligence (DWI)".
 
 The same page lists "All-domain Anomaly Resolution Office" under "Direct
-Report Offices" (2026-04-20 capture, lines 273–274).
+Report Offices" (2026-04-20 capture, lines 273–274; 2025-09-12 capture,
+lines 280–281).
 
 **Dating the structure.** The Wayback captures of the same page bracket the
 change:

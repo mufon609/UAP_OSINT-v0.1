@@ -2,7 +2,7 @@ id: meta/research/ipmo
 type: research-artifact
 target_node: organizations/ipmo
 status: active
-description: 'The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting''s ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)) ([`/organizations/ousd-is-ddi-csp`]), who is in turn supported by the Director of the IPMO for all influence and perception management related matters. In the April 20, 2026 capture of the Organization page of the Office of the Under Secretary of War for Intelligence & Security ([`/organizations/ousd-is`]) website, the office is listed as "Influence and Perceptional Management Office (IPMO)" under the Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]), alongside Strategic Coordination Program Management Office, Special Programs, HUMINT & Sensitive Activities, and National Programs & Policy Support. The PWS (April 25, 2022) and the Organization page (April 20, 2026 capture) each stand as recorded; no source cited here states the relationship between DDI(C&SP) and SASP.
+description: 'The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting''s ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)) ([`/organizations/ousd-is-ddi-csp`]), who is in turn supported by the Director of the IPMO for all influence and perception management related matters. In the September 12, 2025 capture and the April 20, 2026 capture of the Organization page of the Office of the Under Secretary of War for Intelligence & Security ([`/organizations/ousd-is`]) website, the office is listed as "Influence and Perceptional Management Office (IPMO)" under Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]); the list is headed "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)" in the September 12, 2025 capture and "Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP)" in the April 20, 2026 capture. In each capture it is listed alongside Strategic Coordination Program Management Office ([`/organizations/ousd-is-sasp-strategic-coordination-program-management-office`]), Special Programs ([`/organizations/ousd-is-sasp-special-programs`]), HUMINT & Sensitive Activities ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]), and National Programs & Policy Support ([`/organizations/ousd-is-sasp-national-programs-policy-support`]). The PWS (April 25, 2022) and the Organization page (September 12, 2025 capture and April 20, 2026 capture) each stand as recorded; no source cited here states the relationship between DDI(C&SP) and SASP.
 
 
   IPMO is tasked with the development of broad thematic influence guidance focused on key adversaries, the promulgation of competitive influence strategies focused on specific defense issues, and the conduct of oversight, governance, and integration related to influence and perception management matters across DoD components. Per the FY 2025 OSD OP-5 budget submission, IPMO is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit America''s defense-related strategic interests; its activities include the development of thematic influence guidance and integrated influence strategies; oversight of intelligence support to operations in the information environment; oversight and governance of deception activities; oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities; and management of designated compartmented programs.
@@ -51,6 +51,8 @@ primary_sources:
 - path: news/samdaily-fbo-06693814-hq003423c0061.html
   format: html
 - path: news/defense-one-sof-week-oie-panel-20240524.html
+  format: html
+- path: government/ousdi-defense-gov-organization-wayback-20250912.html
   format: html
 - path: government/ousdi-defense-gov-organization-wayback-20260420.html
   format: html
@@ -472,6 +474,16 @@ quotes:
   context: 'OUSD(I&S)/OUSW(I&S) website Organization page (About Us > Organization), org-structure list under the Under Secretary of War for Intelligence & Security banner; the SASP heading is followed by five sub-units in page order'
   claim_group: 'IPMO parent unit within OUSD(I&S)'
   statement_date: '2026-04-20'
+- id: q41
+  added_date: '2026-09-27'
+  text: 'Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP) Strategic Coordination Program Management Office Special Programs HUMINT & Sensitive Activities National Programs & Policy Support Influence and Perceptional Management Office (IPMO)'
+  source:
+    path: government/ousdi-defense-gov-organization-wayback-20250912.html
+    location: 'Organization page, "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)" list'
+  significance: 'OUSD(I&S) Organization page (September 12, 2025 capture): the "Influence and Perceptional Management Office (IPMO)" is listed under the Director of War Intelligence, Sensitive Activities & Special Programs (SASP).'
+  context: 'OUSD(I&S)/OUSW(I&S) website Organization page, Wayback capture of September 12, 2025, org-structure list under the Under Secretary of War for Intelligence & Security banner; the SASP heading is followed by five sub-units in page order'
+  claim_group: 'IPMO parent unit within OUSD(I&S)'
+  statement_date: '2025-09-12'
 naming_quirks:
 - id: nq2
   added_date: '2026-05-02'
@@ -500,6 +512,20 @@ naming_quirks:
   canonical: 'Influence and Perception Management Office'
   location: 'Organization page (April 20, 2026 capture), "Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP)" list, fifth listed unit; the page''s "(IPMO)" acronym matches the canonical form'
   source_path: government/ousdi-defense-gov-organization-wayback-20260420.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq6
+  added_date: '2026-09-27'
+  observed: 'Director of War Intelligence (DWI)'
+  canonical: 'Director for Defense Intelligence (DDI)'
+  location: 'Organization page (September 12, 2025 capture), heading of the "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)" list; the April 20, 2026 capture of the same Organization page uses "Director for Defense Intelligence (DDI)" in this heading'
+  source_path: government/ousdi-defense-gov-organization-wayback-20250912.html
+  resolution: preserve-as-sic-in-quotes
+- id: nq7
+  added_date: '2026-09-27'
+  observed: 'Influence and Perceptional Management Office'
+  canonical: 'Influence and Perception Management Office'
+  location: 'Organization page (September 12, 2025 capture), "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)" list, fifth listed unit; the page''s "(IPMO)" acronym matches the canonical form'
+  source_path: government/ousdi-defense-gov-organization-wayback-20250912.html
   resolution: preserve-as-sic-in-quotes
 timeline:
 - id: t1

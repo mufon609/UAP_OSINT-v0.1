@@ -31,7 +31,11 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
-Per the Organization page of the office's website (ousdi.defense.gov), as of the April 20, 2026 capture, OUSD(I&S) lists a Director for Defense Intelligence (DDI), Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]), with five units listed under it: Strategic Coordination Program Management Office; Special Programs; HUMINT & Sensitive Activities; National Programs & Policy Support; and "Influence and Perceptional Management Office (IPMO)" ([`/organizations/ipmo`]). The same page lists the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) and the OSW Red Team ([`/organizations/osd-red-team`]) under Direct Report Offices.
+In the July 9, 2025 capture of the Organization page of the office's website (ousdi.defense.gov), four Directors for Defense Intelligence are listed, each with its units: Warfighter Support (ISR Operations; CCMD Intelligence Support; Commonwealth & Partner Engagement; Strategy, Policy & Enterprise Assessment); Counterintelligence, Law Enforcement & Security (Personnel Vetting; Counterintelligence & Law Enforcement; PhysSec/OPSEC; Critical Technology Protection; Insider Threat); Collection & Special Programs ([`/organizations/ousd-is-ddi-csp`]) (Technical Collection; HUMINT & Sensitive Activities; Special Programs); and Intelligence & Security Programs & Resources (Battlespace Awareness & Security Programs; ISR Enterprise Capabilities; Military Intelligence Program & Security Resources). The Direct Report Offices listed in that capture are the Chief of Staff, Human Capital Management Office, Congressional Activities, and Special Access Program Central Office ([`/organizations/ousd-is-sapco`]).
+
+The Directors missions page, September 10, 2025 capture, gives one mission for each of four directorates, each headed by a "Director for War Intelligence": Programs, Resources & Enterprise Management (PREM) ([`/organizations/ousd-is-prem`]) provides end-to-end oversight and advocacy for DISE; Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]) oversees, manages, and evaluates new opportunities to drive sensitive activity and special program development; Counterintelligence, Law Enforcement & Security (CL&S) ([`/organizations/ousd-is-cls`]) leads the Defense Security Enterprise (DSE); and Operational Support & International Partnership (OSIP) ([`/organizations/ousd-is-osip`]) is to lead, oversee, and integrate DISE support and equities. In the September 12, 2025 capture of the Organization page, five units are listed under "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)": Strategic Coordination Program Management Office ([`/organizations/ousd-is-sasp-strategic-coordination-program-management-office`]), Special Programs ([`/organizations/ousd-is-sasp-special-programs`]), HUMINT & Sensitive Activities ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]), National Programs & Policy Support ([`/organizations/ousd-is-sasp-national-programs-policy-support`]) and "Influence and Perceptional Management Office (IPMO)" ([`/organizations/ipmo`]); the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) and the OSW Red Team ([`/organizations/osd-red-team`]) are listed under Direct Report Offices.
+
+In the April 20, 2026 capture of the Organization page, the Under Secretary of War for Intelligence & Security, the Deputy Under Secretary of War for Intelligence & Security, and a Director for Defense Intelligence (DDI) are listed, followed by four DDI blocks: Programs, Resources & Enterprise Management (PREM) ([`/organizations/ousd-is-prem`]), with Airborne & Space ISR Directorate (ASID) ([`/organizations/ousd-is-prem-airborne-space-isr-directorate`]), Battlespace Awareness & Security Programs ([`/organizations/ousd-is-prem-battlespace-awareness-security-programs`]), Functional Intelligence & Defense Analysis Directorate ([`/organizations/ousd-is-prem-functional-intelligence-defense-analysis-directorate`]), Infrastructure Architecture and Processing, Exploitation and Dissemination Directorate ([`/organizations/ousd-is-prem-infrastructure-architecture-processing-exploitation-dissemination-directorate`]), and MIP & Security Resource ([`/organizations/ousd-is-prem-mip-security-resource`]); Sensitive Activities & Special Programs (SASP) ([`/organizations/ousd-is-sasp`]), with the same five units by name as the September 12, 2025 capture: Strategic Coordination Program Management Office ([`/organizations/ousd-is-sasp-strategic-coordination-program-management-office`]), Special Programs ([`/organizations/ousd-is-sasp-special-programs`]), HUMINT & Sensitive Activities ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]), National Programs & Policy Support ([`/organizations/ousd-is-sasp-national-programs-policy-support`]) and "Influence and Perceptional Management Office (IPMO)" ([`/organizations/ipmo`]); Counterintelligence, Law Enforcement & Security (CL&S) ([`/organizations/ousd-is-cls`]), with Information & Acquisition Protection ([`/organizations/ousd-is-cls-information-acquisition-protection`]), Integrated Vetting ([`/organizations/ousd-is-cls-integrated-vetting`]), Physical & Operations Security ([`/organizations/ousd-is-cls-physical-operations-security`]), Counterintelligence & Identity Intelligence ([`/organizations/ousd-is-cls-counterintelligence-identity-intelligence`]), and Law Enforcement ([`/organizations/ousd-is-cls-law-enforcement`]); and Operational Support & International Partnership (OSIP) ([`/organizations/ousd-is-osip`]), with Europe, Americas & the Arctic ([`/organizations/ousd-is-osip-europe-americas-arctic`]), Africa & the Near East ([`/organizations/ousd-is-osip-africa-near-east`]), Indo-Pacific ([`/organizations/ousd-is-osip-indo-pacific`]), Global Operations & Integration Directorate ([`/organizations/ousd-is-osip-global-operations-integration-directorate`]), Weapons of Mass Destruction Deterrence ([`/organizations/ousd-is-osip-weapons-of-mass-destruction-deterrence`]), and Global Partnerships Directorate ([`/organizations/ousd-is-osip-global-partnerships-directorate`]). The Direct Report Offices listed in that capture are the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) and the OSW Red Team ([`/organizations/osd-red-team`]).
 
 Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at USD(I&S) Moultrie's ([`/people/ronald-moultrie`]) request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick ([`/people/sean-kirkpatrick`]) had several in-person meetings with the undersecretary. In late July 2023, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her.
 
@@ -599,6 +603,66 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
+### OUSD(I&S) Organization page (July 9, 2025 capture): four units are listed under the Director for Defense Intelligence (Warfighter Support).
+
+> Director for Defense Intelligence (Warfighter Support) ISR Operations CCMD Intelligence Support Commonwealth & Partner Engagement Strategy, Policy & Enterprise Assessment
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-07-09, under the banner "Office of the Under Secretary of Defense for Intelligence & Security"; the four DDI lines are listed under a "Directors for Defense Intelligence (DDI)" heading. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250709.html) |
+| Location | Organization page, "Director for Defense Intelligence (Warfighter Support)" list |
+
+---
+
+### OUSD(I&S) Organization page (July 9, 2025 capture): five units are listed under the Director for Defense Intelligence (Counterintelligence, Law Enforcement & Security).
+
+> Director for Defense Intelligence (Counterintelligence, Law Enforcement & Security) Personnel Vetting Counterintelligence & Law Enforcement PhysSec/OPSEC Critical Technology Protection Insider Threat
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-07-09, under the banner "Office of the Under Secretary of Defense for Intelligence & Security"; the four DDI lines are listed under a "Directors for Defense Intelligence (DDI)" heading. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250709.html) |
+| Location | Organization page, "Director for Defense Intelligence (Counterintelligence, Law Enforcement & Security)" list |
+
+---
+
+### OUSD(I&S) Organization page (July 9, 2025 capture): Technical Collection, HUMINT & Sensitive Activities and Special Programs are listed under the Director for Defense Intelligence (Collection & Special Programs).
+
+> Director for Defense Intelligence (Collection & Special Programs) Technical Collection HUMINT & Sensitive Activities Special Programs
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-07-09, under the banner "Office of the Under Secretary of Defense for Intelligence & Security"; the four DDI lines are listed under a "Directors for Defense Intelligence (DDI)" heading. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250709.html) |
+| Location | Organization page, "Director for Defense Intelligence (Collection & Special Programs)" list |
+
+---
+
+### OUSD(I&S) Organization page (July 9, 2025 capture): three units are listed under the Director for Defense Intelligence (Intelligence & Security Programs & Resources).
+
+> Director for Defense Intelligence (Intelligence & Security Programs & Resources) Battlespace Awareness & Security Programs ISR Enterprise Capabilities Military Intelligence Program & Security Resources
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-07-09, under the banner "Office of the Under Secretary of Defense for Intelligence & Security"; the four DDI lines are listed under a "Directors for Defense Intelligence (DDI)" heading. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250709.html) |
+| Location | Organization page, "Director for Defense Intelligence (Intelligence & Security Programs & Resources)" list |
+
+---
+
+### OUSD(I&S) Organization page (July 9, 2025 capture): the Chief of Staff, Human Capital Management Office, Congressional Activities and Special Access Program Central Office are listed as Direct Report Offices.
+
+> Direct Report Offices Chief of Staff Human Capital Management Office Congressional Activities Special Access Program Central Office
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-07-09, under the banner "Office of the Under Secretary of Defense for Intelligence & Security"; the Direct Report Offices list follows the four DDI lines listed under the "Directors for Defense Intelligence (DDI)" heading. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250709.html) |
+| Location | Organization page, Direct Report Offices list |
+
+---
+
 ### Bradley D. Hansell sworn into the Under Secretary position on July 25, 2025 per the official 2025 USDIS biography
 
 > Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.
@@ -656,6 +720,78 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | Attributed to | war.gov post-EO-14347 institutional biography, 2025-09-06 |
 | Source | [archived source](../sources/government/wargov-hansell-biography.html) |
 | Location | Bradley D. Hansell biography on war.gov |
+
+---
+
+### OUSD(I&S) Directors missions page (September 10, 2025 capture): the Director for War Intelligence for Programs, Resources & Enterprise Management (PREM) provides end-to-end oversight and advocacy for DISE.
+
+> Programs, Resources & Enterprise Management (PREM). The Director for War Intelligence for Programs, Resources & Enterprise Management (DDI/PREM) provides end-to-end oversight and advocacy for DISE to enable timely, accurate, relevant, and secure intelligence support to Defense activities and operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Director for Defense Intelligence (DDI) page, Wayback capture 2025-09-10; the page title and heading read "Directors for War Intelligence (DWI)"; the "Missions:" list carries one mission paragraph per directorate. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-ddi-wayback-20250910.html) |
+| Location | Directors missions page, "Missions:" list, PREM paragraph |
+
+---
+
+### OUSD(I&S) Directors missions page (September 10, 2025 capture): the Director for War Intelligence for Sensitive Activities & Special Programs (SASP) oversees, manages, and evaluates new opportunities to drive sensitive activity and special program development.
+
+> Sensitive Activities & Special Programs (SASP). The Director for War Intelligence for Sensitive Activities & Special Programs (SASP) oversees, manages, and evaluates new opportunities to drive sensitive activity and special program development to ensure innovative options for Defense activities and operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Director for Defense Intelligence (DDI) page, Wayback capture 2025-09-10; the page title and heading read "Directors for War Intelligence (DWI)"; the "Missions:" list carries one mission paragraph per directorate. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-ddi-wayback-20250910.html) |
+| Location | Directors missions page, "Missions:" list, SASP paragraph |
+
+---
+
+### OUSD(I&S) Directors missions page (September 10, 2025 capture): the Director for War Intelligence for Counterintelligence, Law Enforcement, and Security (CL&S) Office leads the Defense Security Enterprise.
+
+> Counterintelligence, Law Enforcement & Security (CL&S). The Director for War Intelligence for Counterintelligence, Law Enforcement, and Security (CL&S) Office leads the Defense Security Enterprise (DSE) in implementing the priorities set forth in the National Defense Strategy (NDS). To effectively address the complex and rapidly evolving threats our adversaries pose, CL&S enables integration between the DSE and the Defense Intelligence Enterprise and with the interagency, industry, partners, and allies.
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Director for Defense Intelligence (DDI) page, Wayback capture 2025-09-10; the page title and heading read "Directors for War Intelligence (DWI)"; the "Missions:" list carries one mission paragraph per directorate. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-ddi-wayback-20250910.html) |
+| Location | Directors missions page, "Missions:" list, CL&S paragraph |
+
+---
+
+### OUSD(I&S) Directors missions page (September 10, 2025 capture): the portfolio of the Director for War Intelligence for Operational Support & International Partnerships (OSIP) is to lead, oversee, and integrate DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.
+
+> Operational Support & International Partnership (OSIP). The Director for War Intelligence for Operational Support & International Partnerships’ (OSIP) portfolio is to lead, oversee, and integrate DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Director for Defense Intelligence (DDI) page, Wayback capture 2025-09-10; the page title and heading read "Directors for War Intelligence (DWI)"; the "Missions:" list carries one mission paragraph per directorate. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-ddi-wayback-20250910.html) |
+| Location | Directors missions page, "Missions:" list, OSIP paragraph |
+
+---
+
+### OUSD(I&S) Organization page (September 12, 2025 capture): five units are listed under the Director of War Intelligence, Sensitive Activities & Special Programs (SASP), the last being the "Influence and Perceptional Management Office (IPMO)".
+
+> Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP) Strategic Coordination Program Management Office Special Programs HUMINT & Sensitive Activities National Programs & Policy Support Influence and Perceptional Management Office (IPMO)
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-09-12, under the banner "Office of the Under Secretary of War for Intelligence & Security"; org structure rendered one unit per line (DWI SASP heading followed by its five sub-units) |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250912.html) |
+| Location | Organization page, "Director of War Intelligence (DWI), Sensitive Activities & Special Programs (SASP)" list |
+
+---
+
+### OUSD(I&S) Organization page (September 12, 2025 capture): the All-domain Anomaly Resolution Office and the OSW Red Team are listed as Direct Report Offices.
+
+> Direct Report Offices All-domain Anomaly Resolution Office OSW Red Team
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2025-09-12, under the banner "Office of the Under Secretary of War for Intelligence & Security"; org structure rendered one unit per line (final block of the org structure, after the DWI blocks) |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250912.html) |
+| Location | Organization page, Direct Report Offices list |
 
 ---
 
@@ -721,6 +857,54 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
+### OUSD(I&S) Organization page (April 20, 2026 capture): the Under Secretary of War for Intelligence & Security, the Deputy Under Secretary and a Director for Defense Intelligence (DDI) are listed above the four DDI blocks.
+
+> Under Secretary of War for Intelligence & Security Deputy Under Secretary of War for Intelligence & Security Director for Defense Intelligence (DDI)
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; org structure rendered one unit per line. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, leadership lines above the DDI blocks |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): five units are listed under the Director for Defense Intelligence, Programs, Resources & Enterprise Management (PREM).
+
+> Director for Defense Intelligence (DDI), Programs, Resources & Enterprise Management (PREM) Airborne & Space ISR Directorate (ASID) Battlespace Awareness & Security Programs Functional Intelligence & Defense Analysis Directorate Infrastructure Architecture and Processing, Exploitation and Dissemination Directorate MIP & Security Resource
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; org structure rendered one unit per line. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, "Director for Defense Intelligence (DDI), Programs, Resources & Enterprise Management (PREM)" list |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): five units are listed under the Director for Defense Intelligence, Counterintelligence, Law Enforcement & Security (CL&S).
+
+> Director for Defense Intelligence (DDI), Counterintelligence, Law Enforcement & Security (CL&S) Information & Acquisition Protection Integrated Vetting Physical & Operations Security Counterintelligence & Identity Intelligence Law Enforcement
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; org structure rendered one unit per line. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, "Director for Defense Intelligence (DDI), Counterintelligence, Law Enforcement & Security (CL&S)" list |
+
+---
+
+### OUSD(I&S) Organization page (April 20, 2026 capture): six units are listed under the Director for Defense Intelligence, Operational Support & International Partnership (OSIP).
+
+> Director for Defense Intelligence (DDI), Operational Support & International Partnership (OSIP) Europe, Americas & the Arctic Africa & the Near East Indo-Pacific Global Operations & Integration Directorate Weapons of Mass Destruction Deterrence Global Partnerships Directorate
+
+| Field | Value |
+|---|---|
+| Attributed to | ousdi.defense.gov About Us > Organization page, Wayback capture 2026-04-20; org structure rendered one unit per line. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20260420.html) |
+| Location | Organization page, "Director for Defense Intelligence (DDI), Operational Support & International Partnership (OSIP)" list |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -777,6 +961,11 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 | [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
 | [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf |
 | [`/organizations/ousd-is-sasp`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| [`/organizations/ousd-is-prem`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| [`/organizations/ousd-is-cls`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| [`/organizations/ousd-is-osip`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| [`/organizations/ousd-is-ddi-csp`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20250709.html |
+| [`/organizations/ousd-is-sapco`] | subsidiary | government/ousdi-defense-gov-organization-wayback-20250709.html |
 
 ---
 
@@ -794,6 +983,11 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | CUl | CUI | government/dodig-2026-047-redacted-secure.pdf |
 | Influence and Perceptional Management Office | Influence and Perception Management Office | government/ousdi-defense-gov-organization-wayback-20260420.html |
 | OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| Director of War Intelligence (DWI) | Director for Defense Intelligence (DDI) | government/ousdi-defense-gov-organization-wayback-20250912.html |
+| Director for War Intelligence | Director for Defense Intelligence | government/ousdi-defense-gov-ddi-wayback-20250910.html |
+| Operational Support & International Partnerships’ | Operational Support & International Partnership | government/ousdi-defense-gov-ddi-wayback-20250910.html |
+| Influence and Perceptional Management Office | Influence and Perception Management Office | government/ousdi-defense-gov-organization-wayback-20250912.html |
+| OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20250912.html |
 
 ---
 
@@ -850,7 +1044,32 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
 - [`/organizations/osd-red-team`]
+- [`/organizations/ousd-is-cls`]
+- [`/organizations/ousd-is-cls-counterintelligence-identity-intelligence`]
+- [`/organizations/ousd-is-cls-information-acquisition-protection`]
+- [`/organizations/ousd-is-cls-integrated-vetting`]
+- [`/organizations/ousd-is-cls-law-enforcement`]
+- [`/organizations/ousd-is-cls-physical-operations-security`]
+- [`/organizations/ousd-is-ddi-csp`]
+- [`/organizations/ousd-is-humint-sensitive-activities-directorate`]
+- [`/organizations/ousd-is-osip`]
+- [`/organizations/ousd-is-osip-africa-near-east`]
+- [`/organizations/ousd-is-osip-europe-americas-arctic`]
+- [`/organizations/ousd-is-osip-global-operations-integration-directorate`]
+- [`/organizations/ousd-is-osip-global-partnerships-directorate`]
+- [`/organizations/ousd-is-osip-indo-pacific`]
+- [`/organizations/ousd-is-osip-weapons-of-mass-destruction-deterrence`]
+- [`/organizations/ousd-is-prem`]
+- [`/organizations/ousd-is-prem-airborne-space-isr-directorate`]
+- [`/organizations/ousd-is-prem-battlespace-awareness-security-programs`]
+- [`/organizations/ousd-is-prem-functional-intelligence-defense-analysis-directorate`]
+- [`/organizations/ousd-is-prem-infrastructure-architecture-processing-exploitation-dissemination-directorate`]
+- [`/organizations/ousd-is-prem-mip-security-resource`]
+- [`/organizations/ousd-is-sapco`]
 - [`/organizations/ousd-is-sasp`]
+- [`/organizations/ousd-is-sasp-national-programs-policy-support`]
+- [`/organizations/ousd-is-sasp-special-programs`]
+- [`/organizations/ousd-is-sasp-strategic-coordination-program-management-office`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
 

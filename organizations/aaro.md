@@ -30,7 +30,7 @@ The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 b
 
 Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023 and additionally took on Acting Director duties in December 2023 following Kirkpatrick's departure; his Acting Director duties ended when Kosloski arrived on August 26, 2024, while his Deputy Director departure date is not documented in archived primary sources. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC ([`/organizations/aaroexec`]) to the AARO Executive Council — its mission, per the memorandum, is "to provide oversight and direction to the AARO."
 
-AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Per the Organization page of the OUSD(I&S) website (ousdi.defense.gov), as of the April 20, 2026 capture, AARO is listed under "Direct Report Offices" alongside the OSW Red Team ([`/organizations/osd-red-team`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) was awarded prime contracts HQ003422C0094 ("AARO Support Services"; period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The HQ003422C0094 Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the HQ003422C0094 Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
+AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Per the Organization page of the OUSD(I&S) website (ousdi.defense.gov), in the September 12, 2025 capture and the April 20, 2026 capture, AARO is listed under "Direct Report Offices", alongside the OSW Red Team ([`/organizations/osd-red-team`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) was awarded prime contracts HQ003422C0094 ("AARO Support Services"; period of performance from August 22, 2022; signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The HQ003422C0094 Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the HQ003422C0094 Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. Kirkpatrick's April 19, 2023 testimony ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) to the Senate Armed Services Subcommittee on Emerging Threats and Capabilities described AARO as currently operating under Title 10 authorities and requested additional authorities including counter-intelligence.
 
 The HQ003424C0096 award record describes the work as "EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC". Its transaction records carry the description "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" from modification P00005 (July 10, 2025) forward; the base award and the P00001 through P00004 descriptions do not carry that label. The HQ003424C0096 period of performance ended on January 31, 2026. No retrieved award record names a Sancorp AARO support contract after HQ003424C0096 as of September 25, 2026; HQ003426FE050 is not confirmed as AARO support. Modification P00007 (May 6, 2026) records a federal action obligation of -$56454.61; the September 25, 2026 award record reports a total obligation of $3415374.79 with the period of performance ending January 31, 2026, and the April 30, 2026 capture of the same record had reported $3471829.4. The funding agency on the record is the Immediate Office of the Secretary of Defense ([`/organizations/osd`]), funding office "OSD OUSD(I)".
 
@@ -977,6 +977,18 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 | Attributed to | FOIA 24-F-0894 cover letter dated August 26, 2025, signed by Pamela Andrews, Chief, FOIA, OSD/JS Freedom of Information Division, 2025-08-26 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
 | Location | Cover letter, ¶3 |
+
+---
+
+### OUSD(I&S) Organization page (September 12, 2025 capture): the All-domain Anomaly Resolution Office is listed under Direct Report Offices, alongside the OSW Red Team.
+
+> Direct Report Offices All-domain Anomaly Resolution Office OSW Red Team
+
+| Field | Value |
+|---|---|
+| Attributed to | Organization page on the Office of the Under Secretary of War for Intelligence & Security website (ousdi.defense.gov), Wayback capture 2025-09-12, one unit per line; the Direct Report Offices block follows the four "Director of War Intelligence (DWI)" blocks (PREM, SASP, CL&S, OSIP). The page does not state to whom the Direct Report Offices report. |
+| Source | [archived source](../sources/government/ousdi-defense-gov-organization-wayback-20250912.html) |
+| Location | Organization page, Direct Report Offices list |
 
 ---
 
@@ -2472,6 +2484,7 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 | [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
 | [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/osd-red-team`] | partner | government/ousdi-defense-gov-organization-wayback-20260420.html |
 
 ### Flagged
 
@@ -2507,6 +2520,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Department of War (DoW) | Department of Defense (DoD) | government/aaro-fy25-consolidated-annual-report-uap.pdf |
 | all-domain anomaly resolution office | All-domain Anomaly Resolution Office | government/crec-20260722-house-hr8800-ndaa-fy2027.htm |
 | OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20260420.html |
+| OSW Red Team | OSD Red Team | government/ousdi-defense-gov-organization-wayback-20250912.html |
 
 ---
 
