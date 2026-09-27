@@ -251,7 +251,8 @@ registry entries. The reuse survey sees only *built* nodes, so an unbuilt stub
 is invisible to it; `scripts/tools/stub-reconcile.py` is the read-only aid that
 closes the gap — `--name "<entity>"` at coinage to find an existing stub to
 reuse (prefer the fullest source-attested form), or the corpus sweep to surface
-candidate duplicate clusters for judgment. It is never a gate: same-surname-
+candidate duplicate clusters for judgment (clusters already ruled in
+`meta/topic/stub-adjudications.yaml` are suppressed on exact membership). It is never a gate: same-surname-
 different-person is legitimate, so it surfaces candidates, never auto-merges.
 
 **Structural-framing entities — look past the substantive prose.** The

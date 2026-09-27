@@ -96,8 +96,11 @@ Audit goals:
    (sweep) and scan its candidate clusters for any slug THIS node coined: if it
    names an entity another artifact already stubbed under a different slug
    (`/people/v-teofilo` vs `/people/vincent-teofilo`), flag it to canonicalize
-   to the fullest source-attested form. A same-surname-different-person cluster
-   (President Ford vs physicist L. H. Ford) is expected noise — leave it.
+   to the fullest source-attested form. Clusters already ruled not-one-entity
+   are suppressed by the adjudication ledger (`meta/topic/stub-adjudications.yaml`);
+   a `RE-SURFACED` cluster is a ruled one whose membership changed — re-judge
+   it. A new same-surname-different-person cluster (President Ford vs physicist
+   L. H. Ford) is not a defect — recommend a source-confirmed ledger entry.
 6. **Cross-node consistency** — claims agree with referenced nodes; a naming
    quirk is tracked consistently across all artifacts citing the same source.
    A cross-node inconsistency is a defect **only if the missing claim is

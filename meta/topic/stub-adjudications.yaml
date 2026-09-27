@@ -1,0 +1,247 @@
+# Stub-reconcile adjudication ledger — the candidate duplicate-stub clusters
+# that `scripts/tools/stub-reconcile.py` surfaces and a contributor has
+# source-confirmed as NOT one entity. The sweep reads this file and suppresses
+# a surfaced cluster ONLY when the cluster's membership exactly equals an
+# entry's `members`. If a stub joins or leaves a ruled cluster, the cluster
+# re-surfaces, flagged against the entry it used to match, for a fresh ruling.
+# Update the entry's `members`, `rationale`, `sources` and `date` when you
+# re-rule it.
+#
+# Topic content: slugs are this instance's content, so the ledger lives under
+# meta/topic/ and is deleted on a fork. If the file is missing, nothing is
+# suppressed.
+#
+# Standing rule: source-confirm each candidate before ruling it, because
+# slug-shape confidence is NOT entity confidence. Where the identity is not
+# obvious from the artifact, confirm it at the source document AND on the web.
+# A real duplicate is never recorded here. Canonicalize it to one slug
+# instead (the fullest source-attested form).
+#
+# Entry fields:
+#   id         stable kebab label (unique)
+#   members    the cluster's full `/type/slug` paths, all of one type (≥ 2)
+#   verdict    distinct    different entities that share slug tokens
+#              part-whole  a component and its parent (or siblings under one
+#                          parent); not duplicates
+#              eponym      a bare-name stub that stands in an eponym
+#                          construction ("Einstein's field equations"), left
+#                          apart from the person's full-name stub
+#              unresolved  identity or containment is not settled by any
+#                          source in hand. Kept as separate slugs, because a
+#                          merge would assert an unsourced answer. Re-rule
+#                          when a source settles it
+#   rationale  one line; what each member names
+#   sources    deciding source path(s), relative to sources/
+#   web        (optional) URL(s) consulted for web confirmation
+#   date       ruling date (YYYY-MM-DD)
+#   surfaced   (optional, default true) false for a ruling on stubs the
+#              sweep's matching rules never cluster (e.g. short-token
+#              anchors such as `whs`); kept as the record, never suppresses
+
+adjudications:
+
+# ── people ──────────────────────────────────────────────────────────────
+
+- id: robinson
+  members: [/people/a-robinson, /people/art-robinson]
+  verdict: distinct
+  rationale: 'a-robinson is A. L. Robinson, the Science writer cited in DIRD-36; art-robinson is the DIRD-06 citation.'
+  sources: [government/dird-36-quantum-tomography-negative-energy-20110111.pdf, government/dird-06-bv-space-access-20100308.pdf]
+  date: '2026-06-20'
+
+- id: einstein
+  members: [/people/albert-einstein, /people/einstein]
+  verdict: eponym
+  rationale: 'DIRD-29''s bare einstein stub stands in eponym constructions ("Einstein''s linearized gravitational field equations"). It is left apart from the albert-einstein person stub.'
+  sources: [government/dird-29-negative-mass-propulsion-2010.pdf]
+  date: '2026-06-20'
+
+- id: miller
+  members: [/people/b-miller, /people/bruce-miller]
+  verdict: distinct
+  rationale: 'DIRD-24''s "Miller, B." is Berndt Müller, co-author of The Structured Vacuum; bruce-miller is the Sandia pulsed-power engineer in DIRD-03.'
+  sources: [government/dird-24-quantum-vacuum-energy-extraction-2010.pdf, government/dird-03-pulsed-hpm-20100128.pdf]
+  date: '2026-06-20'
+
+- id: anderson
+  members: [/people/c-anderson, /people/charles-a-anderson]
+  verdict: distinct
+  rationale: 'c-anderson is a positron-physics citation in DIRD-08; charles-a-anderson is the SRI president.'
+  sources: [government/dird-08-positron-aerospace-propulsion-20100302.pdf, news/sri-international-about-20260515.html]
+  date: '2026-06-20'
+
+- id: carter
+  members: [/people/carter, /people/jimmy-carter]
+  verdict: distinct
+  rationale: 'The JRE #2194 "Carter" is Howard Carter, the archaeologist, in a King Tut analogy; jimmy-carter is the President, named at the 2023-07-26 House hearing.'
+  sources: [transcripts/jre-2194-elizondo-2024-downloaded.md]
+  date: '2026-06-20'
+
+- id: chambers
+  members: [/people/chambers, /people/michael-r-chambers]
+  verdict: distinct
+  rationale: 'Ryder''s "Chambers" [04:44] is Oswald Chambers, a religious writer quoted as "We interpret what we see in the light of what we believe"; michael-r-chambers is Premier''s VP of Service Delivery.'
+  sources: [transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt, news/premier-about-20260926.html]
+  web: ['https://utmost.org/quotes/2309/', 'https://www.azquotes.com/quote/820517']
+  date: '2026-09-27'
+
+- id: brown
+  members: [/people/d-brown, /people/dean-brown]
+  verdict: distinct
+  rationale: 'd-brown is the 1948 FBI agent D. K. Brown in the Project Sign file; dean-brown is the SRI parapsychology associate.'
+  sources: [government/18_6369445_general_1948_vol_1.pdf, government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf]
+  date: '2026-06-20'
+
+- id: daniel
+  members: [/people/daniel, /people/daniel-kimmage]
+  verdict: distinct
+  rationale: 'daniel is Uri Geller''s son (Tablet); daniel-kimmage is the State Department GEC official (IPMO).'
+  sources: [news/tablet-spy-who-bent-a-million-spoons-20260516.html]
+  date: '2026-06-20'
+
+- id: smith
+  members: [/people/david-smith, /people/gerald-smith, /people/smith]
+  verdict: distinct
+  rationale: 'The bare smith stub is the 1948 Project Sign file''s Smith, a surname hub; david-smith (DIRD-07) and gerald-smith (DIRD-08, AATIP list) are different people.'
+  sources: [government/18_6369445_general_1948_vol_1.pdf, government/dird-07-invisibility-cloaking-20100302.pdf, government/dird-08-positron-aerospace-propulsion-20100302.pdf]
+  date: '2026-06-20'
+
+- id: johnson
+  members: [/people/douglas-johnson, /people/johnson, /people/kelly-johnson, /people/ken-johnson]
+  verdict: distinct
+  rationale: 'The bare johnson stub is the 1948 Project Sign file''s Johnson, a surname hub. douglas-johnson (UAPDA / Grusch), kelly-johnson (DIRD-06) and ken-johnson (DIRD-24) are different people.'
+  sources: [government/18_6369445_general_1948_vol_1.pdf, government/dird-06-bv-space-access-20100308.pdf, government/dird-24-quantum-vacuum-energy-extraction-2010.pdf, government/pentagon-uapda-proposed-revisions-202311.pdf]
+  date: '2026-06-20'
+
+- id: sherman
+  members: [/people/gwen-sherman, /people/sherman, /people/terry-sherman]
+  verdict: distinct
+  rationale: 'The bare sherman stub is Maj Gen Sherman, a briefer at the 2024-03-06 SASC drone-incursion briefing (AARO rollout emails); gwen-sherman and terry-sherman are the 1994–1996 Skinwalker Ranch owners.'
+  sources: [government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf, government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf]
+  date: '2026-06-20'
+
+- id: kim
+  members: [/people/h-j-kim, /people/h-kim]
+  verdict: distinct
+  rationale: 'h-j-kim is an IEC-fusion physicist cited in DIRD-09; h-kim is the BCI citation in DIRD-12.'
+  sources: [government/dird-09-iec-fusion-20100310.pdf, government/dird-12-bci-controlling-external-devices-20100323.pdf]
+  date: '2026-06-20'
+
+- id: newton
+  members: [/people/isaac-newton, /people/newton]
+  verdict: eponym
+  rationale: 'DIRD-29''s bare newton stub stands in the eponym construction "Newtonian gravitational field". It is left apart from the isaac-newton person stub.'
+  sources: [government/dird-29-negative-mass-propulsion-2010.pdf]
+  date: '2026-06-20'
+
+- id: jung
+  members: [/people/jane-jung-hyoun-han, /people/jung]
+  verdict: distinct
+  rationale: 'Moderator Lawrence''s "Jung would probably say" [32:16] is Carl Jung, on UFOs as a symbol of the subconscious mind; jane-jung-hyoun-han is Sancorp''s Fox Rothschild counsel in GAO B-422985.4/.5, and "Jung" is her middle name.'
+  sources: [transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt, government/gao-b-422985-wayback-20250708.html]
+  date: '2026-09-27'
+
+- id: ford
+  members: [/people/l-ford, /people/lonye-ford]
+  verdict: distinct
+  rationale: 'l-ford is the physicist L. H. Ford (DIRD-18, DIRD-19); lonye-ford is an Arlo Solutions co-founder. gerald-ford, the President, is a third stub that the sweep does not cluster.'
+  sources: [government/dird-18-traversable-wormholes-20100406.pdf, news/arlo-company-overview-2021-08.pdf]
+  date: '2026-06-20'
+
+- id: morris
+  members: [/people/michael-morris, /people/morris]
+  verdict: distinct
+  rationale: 'DIRD-26''s bare morris stub is the Green/Morris medical case index in the biology DIRD; michael-morris is the wormhole physicist (DIRD-18, -19, -36).'
+  sources: [government/dird-26-field-effects-human-biological-tissues-2010.txt, government/dird-18-traversable-wormholes-20100406.pdf]
+  date: '2026-06-20'
+
+# ── organizations ───────────────────────────────────────────────────────
+
+- id: anp-nepa
+  members: [/organizations/aircraft-nuclear-propulsion, /organizations/nuclear-energy-for-propulsion-of-aircraft]
+  verdict: distinct
+  rationale: 'DIRD-08 names two programs in sequence: the Air Force''s Nuclear Energy for Propulsion of Aircraft program (1946), "disbanded in 1951 in favor of" the joint AEC–Air Force Aircraft Nuclear Propulsion program.'
+  sources: [government/dird-08-positron-aerospace-propulsion-20100302.pdf]
+  date: '2026-06-20'
+
+- id: boeing
+  members: [/organizations/boeing, /organizations/boeing-phantom-works]
+  verdict: part-whole
+  rationale: 'Phantom Works is a Boeing division (DIRD-14).'
+  sources: [government/dird-14-superconductors-gravity-20100323.pdf]
+  date: '2026-06-20'
+
+- id: general-electric
+  members: [/organizations/general-electric, /organizations/pacific-general-electric-company]
+  verdict: distinct
+  rationale: 'general-electric is GE; pacific-general-electric-company is the 1948 Bakersfield utility in the Project Sign file.'
+  sources: [government/18_6369445_general_1948_vol_1.pdf]
+  date: '2026-06-20'
+
+- id: lockheed-martin
+  members: [/organizations/lockheed-martin, /organizations/lockheed-martin-skunk-works, /organizations/lockheed-martin-space-systems-company]
+  verdict: part-whole
+  rationale: 'Skunk Works and Space Systems Company are Lockheed Martin business units.'
+  sources: [government/dird-17-maverick-inventor-20100330.pdf, government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf]
+  date: '2026-06-20'
+
+- id: lucis-trust
+  members: [/organizations/lucis-trust, /organizations/lucis-trust-arcane-school]
+  verdict: part-whole
+  rationale: 'The Ryder talk was hosted by the Lucis Trust Arcane School at its 2017 London conference; the school is a Lucis Trust activity, not a second name for the Trust.'
+  sources: [transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt]
+  date: '2026-06-20'
+
+- id: nasa
+  members: [/organizations/nasa, /organizations/nasa-ames-research-center, /organizations/nasa-glenn-research-center, /organizations/nasa-institute-for-advanced-concepts]
+  verdict: part-whole
+  rationale: 'Ames, Glenn and NIAC are NASA centers and institutes.'
+  sources: [government/dird-33-mhd-air-breathing-propulsion-2010.pdf, government/dird-08-positron-aerospace-propulsion-20100302.pdf]
+  date: '2026-06-20'
+
+- id: ousd-is
+  members: [/organizations/ousd-is, /organizations/ousd-is-cpe, /organizations/ousd-is-cto, /organizations/ousd-is-ddi-csp, /organizations/ousd-is-exdir, /organizations/ousd-is-financial-management-and-accounting, /organizations/ousd-is-front-office, /organizations/ousd-is-humint-sensitive-activities-directorate, /organizations/ousd-is-sapco, /organizations/ousd-is-sasp, /organizations/ousd-is-sasp-cp-wmd-directorate]
+  verdict: part-whole
+  rationale: 'Every member is a named OUSD(I&S) component and no two are one office. SASP contains the CP&WMD Directorate (Arlo 510: "within the SASP Office") and the HUMINT & Sensitive Activities Directorate (the OUSW(I&S) Organization page lists it under DDI SASP). The Front Office is not EXDIR (the Premier Executive Secretariat posting supports the Front Office and names no directorate). DDI(C&SP) vs SASP is an open question (working note ousd-is-enterprise-bpa-transition §6), so they are not merged.'
+  sources: [news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html, government/osd-op5-fy26-wayback-20260201.pdf, news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt, government/gao-b-422985-wayback-20250708.html]
+  web: ['https://web.archive.org/web/20260420035216/https://ousdi.defense.gov/About-Us/Organization/', 'https://web.archive.org/web/20260510044053/https://ousdi.defense.gov/About-Us/Director-for-Defense-Intelligence-DDI/']
+  date: '2026-09-27'
+
+- id: cp-wmd
+  members: [/organizations/cp-wmd, /organizations/ousd-is-sasp-cp-wmd-directorate]
+  verdict: unresolved
+  surfaced: false
+  rationale: 'The FY26 OP-5 funds a "CP/WMD Office" as its own OUSD(I&S) program line, next to IPMO. Arlo 510 names a "Counter Proliferation and Weapons of Mass Destruction Directorate within the SASP Office". The functions overlap, but no source equates the two, and the OUSW(I&S) Organization page lists no CP/WMD unit under SASP (its only WMD unit, "WMD Deterrence", is under OSIP). A merge would assert unsourced SASP containment.'
+  sources: [government/osd-op5-fy26-wayback-20260201.pdf, news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html]
+  web: ['https://web.archive.org/web/20260420035216/https://ousdi.defense.gov/About-Us/Organization/']
+  date: '2026-09-27'
+
+- id: whs
+  members: [/organizations/whs, /organizations/whs-acquisition-directorate, /organizations/whs-eosd]
+  verdict: part-whole
+  surfaced: false
+  rationale: 'WHS (the DoD field activity) contains its Acquisition Directorate, and EOSD (Enterprise Office Secretary of Defense) is a division within WHS AD ("Enterprise Office Secretary of Defense (EOSD) / Washington Headquarters Services (WHS) / Acquisition Directorate (AD)"). Contracting-agency citations name WHS as the awarding agency or WHS AD as the issuing office.'
+  sources: [government/foia-23-f-0905-doc-2-released.txt, government/samgov-tr011720251116-notice.json, government/usaspending-hq003425a0003.txt]
+  web: ['https://www.whs.mil/About-WHS/Directorates/Acquisition-Directorate-AD/']
+  date: '2026-09-27'
+
+- id: university-of-alabama
+  members: [/organizations/university-of-alabama, /organizations/university-of-alabama-huntsville]
+  verdict: part-whole
+  rationale: 'UAH (DIRD-06) and the University of Alabama (DIRD-14) are separate campuses, not one institution.'
+  sources: [government/dird-06-bv-space-access-20100308.pdf, government/dird-14-superconductors-gravity-20100323.pdf]
+  date: '2026-06-20'
+
+- id: washington
+  members: [/organizations/university-of-washington, /organizations/washington-university]
+  verdict: distinct
+  rationale: 'university-of-washington is in Seattle; washington-university is in St. Louis (DIRD-13).'
+  sources: [government/dird-13-warp-drive-extra-dimensions-20100402.pdf, government/dird-16-quantum-entanglement-nonlocality-20100330.pdf]
+  date: '2026-06-20'
+
+- id: us-air-force
+  members: [/organizations/us-air-force, /organizations/us-air-force-academy]
+  verdict: part-whole
+  rationale: 'The Air Force Academy is an Air Force institution (Grusch''s education).'
+  sources: [government/oversight-house-gov-grusch-written-testimony-20230726.pdf]
+  date: '2026-06-20'

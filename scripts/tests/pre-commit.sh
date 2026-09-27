@@ -30,6 +30,7 @@
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
 #      python3 scripts/tools/ocr-consensus.py --selftest
+#      python3 scripts/tools/stub-reconcile.py --selftest
 #                                            — per-script unit selftests on
 #                                              synthetic inputs (no corpus, no
 #                                              OCR engines / video needed)
@@ -161,6 +162,7 @@ steps=(
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'
     $'ocr-consensus --selftest\tpython3 scripts/tools/ocr-consensus.py --selftest'
+    $'stub-reconcile --selftest\tpython3 scripts/tools/stub-reconcile.py --selftest'
     $'validate.py\tpython3 scripts/build/validate.py'
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
     $'validate-speaker-attribution.py\tpython3 scripts/build/validate-speaker-attribution.py --quiet'

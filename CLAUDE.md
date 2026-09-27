@@ -149,6 +149,7 @@ meta/
     research-queue.md       priority investigation queue
     foia-queue.md           FOIA/MDR requests planned but not yet sent
     foia-drafts/            draft request letters (one per slug; the slug becomes the foia node's)
+    stub-adjudications.yaml duplicate-stub clusters ruled not-one-entity (stub-reconcile.py ledger)
     working-notes/          in-progress synthesis docs awaiting integration into content nodes
 
 scripts/
