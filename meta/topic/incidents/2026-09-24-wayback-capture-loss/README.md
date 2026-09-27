@@ -6,7 +6,6 @@ type: meta
 # Incident: Wayback Machine captures lost after indexing (2026-09-24 → 2026-09-25)
 
 **Status:** documented; follow-up decisions open (see "Open questions").
-**Recorded:** 2026-09-25, by the maintainer with Claude Code.
 **Times:** all UTC. `~` marks a time reconstructed from surrounding events
 rather than read from a timestamp; everything else is a Wayback snapshot
 ID, a file-name timestamp, or a clock reading printed during the session.
