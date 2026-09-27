@@ -110,7 +110,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of the 1970 Stanford severance — the specific event marking SRI's transition from Stanford-University-affiliated subsidiary to independent nonprofit. Closes prior gap-list item #8 (1970 Stanford severance circumstances): the live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.
+### SRI's own first-party attestation of the 1970 Stanford severance — the specific event marking SRI's transition from Stanford-University-affiliated subsidiary to independent nonprofit. The live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.
 
 > 1970: Stanford Research Institute becomes independent from Stanford University.
 
@@ -230,7 +230,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
-### SRI's own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and supplies a primary source for the 1977 rename date. The full year-only date is attested; specific within-1977 date not attested.
+### SRI's own first-party attestation of the specific 1977 rename event, a primary source for the 1977 rename date; the specific date within 1977 is not attested.
 
 > 1977: Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change.
 

@@ -408,7 +408,7 @@ quotes:
     location: '1970 entry'
   context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004. Live URL has been removed from the modern sri.com site.'
   statement_date: '1970'
-  significance: 'SRI''s own first-party attestation of the 1970 Stanford severance — the specific event marking SRI''s transition from Stanford-University-affiliated subsidiary to independent nonprofit. Closes prior gap-list item #8 (1970 Stanford severance circumstances): the live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.'
+  significance: 'SRI''s own first-party attestation of the 1970 Stanford severance — the specific event marking SRI''s transition from Stanford-University-affiliated subsidiary to independent nonprofit. The live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.'
 
 - id: q29
   added_date: '2026-05-15'
@@ -419,7 +419,7 @@ quotes:
     location: '1977 entry (rename)'
   context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1977'
-  significance: 'SRI''s own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and supplies a primary source for the 1977 rename date. The full year-only date is attested; specific within-1977 date not attested.'
+  significance: 'SRI''s own first-party attestation of the specific 1977 rename event, a primary source for the 1977 rename date; the specific date within 1977 is not attested.'
 
 - id: q30
   added_date: '2026-05-15'
