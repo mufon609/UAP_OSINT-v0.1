@@ -1,0 +1,84 @@
+SOURCE: Indeed.com company page listing
+URL: https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=5a099a8432110ac5&start=0
+Canonical Indeed job URL: https://www.indeed.com/viewjob?jk=5a099a8432110ac5
+Captured (UTC): 2026-09-25T21:56:00Z
+Company: Premier Enterprise Solutions, LLC
+Title: Data Analyst / Technical Program Consultant III
+Location: Pentagon, DC 20301
+FLAGGED: no — duplicate text of the Washington-DC posting (jk=b80ea1a11264623f); no office named specifically
+
+---- FULL EXTRACTED TEXT ----
+
+Data Analyst/Technical Program Consultant III
+Premier Enterprise Solutions - Pentagon, DC
+Apply with Indeed
+
+Data Analyst / Technical Program Consultant III
+
+Position Overview
+
+Premier Enterprise Solutions is seeking a highly skilled Data Analyst / Technical Program Consultant III to support a federal government customer in the areas of performance assessment, strategic analysis, data analytics, and decision support. The selected candidate will leverage advanced analytical techniques, data visualization tools, and strategic planning methodologies to evaluate organizational effectiveness, assess mission outcomes, and support senior leadership decision-making.
+
+Location
+
+Washington, DC Metropolitan Area (onsite)
+
+Security Clearance
+
+Active TS/SCI Clearance Required
+
+Required Qualifications
+
+Bachelor's degree in Data Analytics, Data Science, Statistics, Computer Science, Business Analytics, Information Systems, or a related field.
+
+Experience
+
+Minimum seven (7) years of experience in data analytics, data visualization, statistical analysis, mission analysis, or performance assessment. Experience supporting federal government, DoD, intelligence, or national security organizations preferred.
+
+Key Responsibilities
+
+Conduct quantitative and qualitative performance assessments across defense intelligence and security enterprises.
+Develop performance reports, strategic assessments, decisional papers, action memoranda, and executive briefings.
+Develop and maintain organizational performance measures and data visualizations.
+Conduct mission analysis, risk assessments, and performance improvement analyses.
+Develop methodologies for organizational and program performance analysis.
+Provide strategic analysis using multi-source data to support decision-making and budgeting cycles.
+Develop strategy implementation guidance aligned with national and defense priorities.
+Track and assess strategy implementation, compliance, and performance.
+
+Technical Skills
+
+Advanced data visualization and dashboard development
+Statistical analysis and predictive analytics
+Python, R, VBA, Java, or similar tools
+Machine Learning (ML) and Natural Language Processing (NLP)
+Executive-level reporting and briefing development
+
+BENEFITS
+
+Premier Enterprise Solutions offer full-time employees a comprehensive and competitive benefits package designed to support their health, well-being, and financial future. Benefits include paid time off (PTO) for vacation, sick leave, and personal days; paid holidays; medical, dental, and vision insurance; company-paid life and accidental deathdismemberment (AD&D) insurance; voluntary life insurance; short- and long-term disability coverage; professional training and development opportunities; and a 401(k)-retirement plan with company matching and immediate vesting.
+
+EEO Statement
+
+It is Premier Enterprise Solution's policy to promote equal employment opportunities. Premier is committed to fostering a workplace where employment decisions are based solely on qualifications, experience, and the ability to perform essential job functions. We adhere to all applicable federal, state, and local laws governing equal employment opportunity.
+
+Benefits:
+401(k)
+Dental insurance
+Health insurance
+Life insurance
+Paid time off
+Vision insurance
+
+Application Question(s):
+Do you have an Active TS/SCI Clearance?
+Do you have a minimum seven (7) years of experience in data analytics, data visualization, statistical analysis, mission analysis, or performance assessment?
+Do you have experience supporting federal government, DoD, intelligence, or national security organizations?
+
+Education:
+Bachelor's (Required)
+
+Ability to Commute:
+Pentagon, DC 20301 (Required)
+
+Work Location: In person

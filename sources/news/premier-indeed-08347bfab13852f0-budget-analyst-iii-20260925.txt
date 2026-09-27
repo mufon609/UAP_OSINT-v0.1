@@ -1,0 +1,68 @@
+SOURCE: Indeed.com company page listing (Premier Enterprise Solutions has no self-hosted ATS; jobs surface only via Indeed employer posting)
+URL: https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=08347bfab13852f0&start=0
+Canonical Indeed job URL (viewjob form): https://www.indeed.com/viewjob?jk=08347bfab13852f0
+Captured (UTC): 2026-09-25T21:56:00Z
+Capture method: claude-in-chrome browser render + get_page_text (curl/WebFetch blocked by Indeed bot-detection / JS-rendered SPA)
+Company: Premier Enterprise Solutions, LLC
+Title: Budget Analyst III
+Location: Pentagon (Onsite)
+FLAGGED: yes — names OUSD(I&S) directly
+
+---- FULL EXTRACTED TEXT ----
+
+Budget Analyst III
+Premier Enterprise Solutions - Washington, DC
+Apply with Indeed
+
+Budget Analyst III
+
+Position Overview
+
+Premier Enterprise Solutions is seeking a highly skilled Budget Analyst to support the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)). This role provides subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
+
+Location
+
+Pentagon (Onsite)
+
+Employment Type
+
+Full-Time
+
+Key Responsibilities
+
+Provide technical advice and analysis supporting appropriations, budget execution, financial management, and acquisition activities.
+Analyze requirements, prioritize resources, and execute appropriated funds.
+Coordinate with OUSD(I&S), OSD, Defense Agencies, and Military Services on budget assessments and estimates.
+Monitor commitments, obligations, expenditures, and reconcile records with WHS and DFAS reports.
+Support closure of unliquidated obligations and execution reviews.
+Prepare PPBE budget exhibits and Congressional Justification Book submissions.
+Input and validate resource data in SNaP, BIRD, and related systems.
+Maintain contract files, modifications, and funding documentation.
+Support CORs with invoicing and funding issues.
+Review acquisition packages and initiate DAI transactions for MIPRs, IAs, and PRs.
+Manage portfolio funding valued at approximately $15M to $30M.
+Review Congressional marks, PBDs, and PDMs and assess impacts.
+Prepare spend plans, execution reports, dashboards, charts, and leadership briefings.
+Respond to recurring and ad hoc financial data calls.
+Support reimbursable Joint Duty Assignment funding requirements.
+
+Required Qualifications
+
+Active Top Secret clearance with SCI eligibility or ability to obtain and maintain required clearance
+Bachelor's degree in Finance, Accounting, Business Administration, Economics, Public Administration, Management, or related field.
+10 years supporting DoD financial management, budgeting, acquisition, or PPBE activities.
+Experience preparing budget exhibits, spend plans, execution reports, and financial metrics.
+Experience supporting acquisition planning, MIPRs, IAs, and PRs.
+Advanced proficiency with Microsoft Excel, PowerPoint, and Word.
+
+Preferred Qualifications
+
+Experience supporting OUSD(I&S), OSD organizations, DAI, CIS, PRCP, SNaP, BIRD, and Congressional Justification Book development.
+
+BENEFITS
+
+Premier Enterprise Solutions offer full-time employees a comprehensive and competitive benefits package designed to support their health, well-being, and financial future. Benefits include paid time off (PTO) for vacation, sick leave, and personal days; paid holidays; medical, dental, and vision insurance; company-paid life and accidental deathdismemberment (AD&D) insurance; voluntary life insurance; short- and long-term disability coverage; professional training and development opportunities; and a 401(k)-retirement plan with company matching and immediate vesting.
+
+EEO Statement
+
+It is Premier Enterprise Solution's policy to promote equal employment opportunities. Premier is committed to fostering a workplace where employment decisions are based solely on qualifications, experience, and the ability to perform essential job functions. We adhere to all applicable federal, state, and local laws governing equal employment opportunity.

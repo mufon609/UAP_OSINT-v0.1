@@ -2812,6 +2812,24 @@
     archived_date: '2026-04-28'
     path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20241222-first-404.html
     note: Wayback Machine snapshot 2024-12-22 of attempted access to ORNL staff profile for Sean M. Kirkpatrick — first known capture redirecting to /page-not-found. Documents the date the staff profile was taken down (between 2024-12-08 last-live and 2024-12-22 first-404; 14-day window).
+- url: https://web.archive.org/web/20250116212435/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4382670007
+  status: archived
+  wayback_date: '2025-01-16'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (183) Budget Analyst IV     at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4382670007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-01-16 (timestamp 20250116212435), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2024-05-23T19:42:47-04:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20250207115452/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4382668007
+  status: archived
+  wayback_date: '2025-02-07'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-182-executive-assistant-iii-wayback-20250207.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (182) Executive Assistant III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4382668007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-02-07 (timestamp 20250207115452), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2024-05-23T19:42:34-04:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
 - url: https://web.archive.org/web/20250228103426/https://tothestars.media/blogs/press-and-news/tts-analysis-on-ornl
   status: archived
   archive_status: 3
@@ -2830,6 +2848,24 @@
     archived_date: '2026-04-22'
     path: news/blackvault-uaptf-charter-foia-release-20250422.html
     note: Wayback Machine snapshot (2025-04-24) of The Black Vault article dated April 22, 2025 announcing the FOIA release of the UAPTF Charter (FOIA case DON-NAVY-2021-003140). Primary-source-adjacent reporting that names Scott Bray as Director, Naval Intelligence Activity and signatory of the September 2020 Charter plus two additional September 23, 2020 NIA memoranda directed to senior intelligence officials in the U.S. Army and U.S. Air Force. The memos document the cross-service structure envisioned for UAPTF and note 'both intelligence and operational directorates as preferred participants.' Companion reporting to the FOIA release package itself (charter PDF already archived at blackvault-uaptf-charter-foia-20250422.pdf).
+- url: https://web.archive.org/web/20250519014253/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660775007
+  status: archived
+  wayback_date: '2025-05-19'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-509-executive-assistant-i-wayback-20250519.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (509) 5.2 Executive Assistant I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660775007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-05-19 (timestamp 20250519014253), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:10:53-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20250712035410/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660661007
+  status: archived
+  wayback_date: '2025-07-12'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-498-executive-assistant-ii-wayback-20250712.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (498) 5.2 Executive Assistant II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660661007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-07-12 (timestamp 20250712035410), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:08:28-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
 - url: https://web.archive.org/web/20250804213236/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
   status: archived
   archive_status: 3
@@ -2839,6 +2875,33 @@
     archived_date: '2026-04-28'
     path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20250804.html
     note: Wayback Machine snapshot 2025-08-04 of attempted access to ORNL staff profile for Sean M. Kirkpatrick — confirms the page remained 404 ~8 months after the takedown captured at 2024-12-22.
+- url: https://web.archive.org/web/20250808115712/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660707007
+  status: archived
+  wayback_date: '2025-08-08'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-502-executive-assistant-iii-wayback-20250808.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (502) 5.2 Executive Assistant III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660707007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-08-08 (timestamp 20250808115712), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:09:14-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20250828101015/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660765007
+  status: archived
+  wayback_date: '2025-08-28'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-507-data-engineer-ii-wayback-20250828.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (507) Data Engineer II  at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660765007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-08-28 (timestamp 20250828101015), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:14:57-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20250830002502/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4663123007
+  status: archived
+  wayback_date: '2025-08-30'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title is the literal placeholder 'page_title' (the capture's <title> element was not populated); the posting's on-page heading is 'OUSD(I&S) SASP Incumbent'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4663123007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2025-08-30 (timestamp 20250830002502), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-26T14:41:01-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
 - url: https://web.archive.org/web/20260111121806/https://www.theblackvault.com/documentarchive/the-advanced-aviation-threat-identification-program-aatip-dird-report-research/
   status: archived
   archive_status: 3
@@ -2857,6 +2920,195 @@
     archived_date: '2026-04-21'
     path: government/safeaerospace-home-20260220.html
     note: Wayback Machine snapshot (2026-02-20) of the Americans for Safe Aerospace home page. Earlier capture of the personnel/advisor card listing that includes Alex Dietrich; companion to the live snapshot at news/safeaerospace-home-20260420.html. Useful for dating the earliest archived appearance of Dietrich's affiliation.
+- url: https://web.archive.org/web/20260227082535/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660729007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-505-budget-analyst-iv-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (505) Budget Analyst IV at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660729007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082535), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:10:25-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082535/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660793007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-511-operations-manager-i-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (511) Operations Manager I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660793007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082535), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:11:19-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082535/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660859007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-516-operations-manager-iii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (516) Operations Manager III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660859007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082535), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:16:22-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660534007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-495-special-operations-support-policy-staff-officer-i-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (495) Special Operations Support Policy Staff Officer I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660534007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:11:42-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660604007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-496-special-operations-support-policy-staff-officer-ii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title is the literal placeholder 'page_title' (the capture's <title> element was not populated); the posting's on-page heading is '(496) Special Operations Support Policy Staff Officer II'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660604007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:12:42-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660616007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-497-humint-policy-staff-officer-ii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (497) HUMINT Policy Staff Officer II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660616007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:13:07-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660655007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (499) Reports and Assessments Staff Officer I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660655007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:13:32-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660662007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-500-sensitive-activities-policy-staff-officer-ii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (500) Sensitive Activities Policy Staff Officer II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660662007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:14:16-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660691007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-501-reports-and-assessments-staff-officer-iii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (501) Reports and Assessments Staff Officer III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660691007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:13:54-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660750007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-506-countering-adversary-defense-industry-staff-officer-ii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (506) Countering Adversary Defense Industry Staff Officer II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660750007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:14:35-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660784007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (510) Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660784007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:16:50-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660800007
+  status: archived
+  wayback_date: '2026-02-27'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-512-c-wmd-staff-officer-ii-wayback-20260227.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (512) Counter-Weapons of Mass Destruction (C-WMD) Staff Officer II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660800007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-02-27 (timestamp 20260227082536), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:17:09-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260306052142/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5049388007
+  status: archived
+  wayback_date: '2026-03-06'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-640-cybersecurity-management-specialist-iv-wayback-20260306.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (640) Cybersecurity Management Specialist IV at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5049388007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-03-06 (timestamp 20260306052142), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-02-10T20:04:24-05:00. Names the U.S. Army Test and Evaluation Command (ATEC) as the organization the posting supports.
+  archive_status: 3
+- url: https://web.archive.org/web/20260312111753/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660721007
+  status: archived
+  wayback_date: '2026-03-12'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-504-operations-manager-ii-wayback-20260312.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (504) Operations Manager II at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660721007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-03-12 (timestamp 20260312111753), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:09:50-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260514144534/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4601512007
+  status: archived
+  wayback_date: '2026-05-14'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (467) HUMINT Policy Staff Officer III  at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4601512007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-05-14 (timestamp 20260514144534), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-04-15T12:16:23-04:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260520043553/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5061438007
+  status: archived
+  wayback_date: '2026-05-20'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-645-executive-facilities-program-advisor-wayback-20260520.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (645) Executive Facilities Program Advisor at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5061438007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-05-20 (timestamp 20260520043553), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-02-24T12:01:38-05:00. Names the National Geospatial-Intelligence Agency (NGA) Security and Installations (SIO) Directorate as the organization the posting supports.
+  archive_status: 3
+- url: https://web.archive.org/web/20260613161957/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5109161007
+  status: archived
+  wayback_date: '2026-06-13'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-666-special-operations-support-policy-staff-officer-iii-wayback-20260613.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (666) Special Operations Support Policy Staff Officer III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5109161007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-06-13 (timestamp 20260613161957), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-04-15T13:28:02-04:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260804182023/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4831332007
+  status: archived
+  wayback_date: '2026-08-04'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-575-counterintelligence-analyst-wayback-20260804.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (575) Counterintelligence Analyst at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4831332007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-08-04 (timestamp 20260804182023), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-08-18T12:32:34-04:00. Names the NOAA Research Security Program as the organization the posting supports.
+  archive_status: 3
+- url: https://web.archive.org/web/20260804182024/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5109179007
+  status: archived
+  wayback_date: '2026-08-04'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-667-sensitive-activities-policy-staff-officer-iii-wayback-20260804.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (667) Sensitive Activities Policy Staff Officer III at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5109179007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-08-04 (timestamp 20260804182024), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-04-15T13:40:13-04:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
+- url: https://web.archive.org/web/20260804182024/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5198531007
+  status: archived
+  wayback_date: '2026-08-04'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-709-program-manager-senior-advisor-research-security-wayback-20260804.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (709) Program Manager and Senior Advisor for Research Security at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/5198531007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-08-04 (timestamp 20260804182024), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2026-07-29T12:48:12-04:00. Names the NOAA Research Security Program as the organization the posting supports.
+  archive_status: 3
+- url: https://web.archive.org/web/20260804182028/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660820007
+  status: archived
+  wayback_date: '2026-08-04'
+  artifacts:
+  - format: html
+    path: news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html
+    archived_date: '2026-09-25'
+    note: Arlo Solutions LLC Greenhouse job posting page, title 'Job Application for (514) Influence, Deception, and Perception Management Activities Staff Officer V at Arlo Solutions LLC'. Live URL https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660820007 is no longer posted; bytes are the Wayback Machine raw (id_) capture of 2026-08-04 (timestamp 20260804182028), downloaded 2026-09-25 (not re-fetched). Embedded job-post JSON published_at 2025-02-24T18:15:42-05:00. Names the OUSD(I&S)/OUSW(I&S) Sensitive Activities & Special Programs (SASP) office or its HUMINT & Sensitive Activities Directorate.
+  archive_status: 3
 - url: https://westexec.com/sean-kirkpatrick/
   status: archived
   archive_status: 3
@@ -2873,6 +3125,15 @@
     path: news/sancorp-adp-req1206-field-ops-sensor-sme-iv-20260925.json
     archived_date: '2026-09-25'
     note: Sancorp Consulting ADP Workforce Now career-center job-requisition API record (JSON, saved as served), fetched 2026-09-25. itemID 9200929679065_1; requisitionTitle 'Field Operations & Sensor Support SME IV/ Action Officer'; clientRequisitionID 1206; ExternalJobID 544829; postDate 2026-09-04.
+  archive_status: 3
+  wayback_date: '2026-09-25'
+- url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions/9201060531053_1?cid=32186ff8-408c-44a6-a407-bfefe4f2d0ad&ccId=19000101_000003&lang=en_US&locale=en_US
+  status: archived
+  artifacts:
+  - format: txt
+    path: news/sancorp-adp-req1257-staff-officer-sme-iii-opsec-20260925.json
+    archived_date: '2026-09-25'
+    note: Sancorp Consulting ADP Workforce Now career-center job-requisition API record (JSON, saved as served), fetched 2026-09-25. itemID 9201060531053_1; requisitionTitle 'Staff Officer SME III - OPSEC'; clientRequisitionID 1257; ExternalJobID 551710; postDate 2026-09-18. The posting description names the Office of the Under Secretary of Defense, Intelligence and Security (OUSD(I&S)) (the ampersand is served double-encoded in the JSON string as \u0026amp;). Wayback capture 20260925213214 exists (CDX 200).
   archive_status: 3
   wayback_date: '2026-09-25'
 - url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions/9201061914753_1?cid=32186ff8-408c-44a6-a407-bfefe4f2d0ad&ccId=19000101_000003&lang=en_US&locale=en_US
@@ -3727,6 +3988,33 @@
     archived_date: '2026-04-30'
     path: government/eo-14347-restoring-department-of-war-20250910.txt
     note: 'Executive Order 14347 of September 5, 2025 — ''Restoring the United States Department of War'' — Federal Register Volume 90 Number 173, published September 10, 2025, pages 43893-43894 (FR Doc No: 2025-17508). Authorizes the secondary title ''Department of War'' for DoD and ''Secretary of War'' for SecDef; statutory references to Department of Defense remain controlling per Sec. 2(e). Primary-source attestation of the rebrand referenced in OUSW(I&S) terminology across Sancorp''s 2025+ contracts (HQ003425FE388 CL&S POABO, HQ003425FE405 Office of the Under Secretary of War for Policy).'
+- url: https://www.fpds.gov/ezsearch/FEEDS/ATOM?FEEDNAME=PUBLIC&q=PIID%3A%22HQ003422C0127%22
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/fpds-hq003422c0127.txt
+    archived_date: '2026-09-27'
+    note: 'FPDS ezSearch public ATOM feed (FEEDNAME=PUBLIC, q=PIID:"HQ003422C0127"; XML saved as served), fetched 2026-09-27 UTC. Page 1 of 2: 10 contract-action entries (modNumber 0, P00001, P00002, P00003, P00004, P00005, P00006, P00007, P00008, P00009); the feed rel=next link points to start=10, whose page (P00010-P00012) is archived separately as government/fpds-hq003422c0127-start10.txt, for 13 actions total. Each entry carries signedDate, effectiveDate, currentCompletionDate and ultimateCompletionDate, and each modification entry (absent on the base award 0) carries reasonForModification — the per-modification period-of-performance end dates that the USAspending transactions list lacks.'
+  archive_status: 3
+  wayback_date: '2026-09-27'
+- url: https://www.fpds.gov/ezsearch/FEEDS/ATOM?FEEDNAME=PUBLIC&q=PIID%3A%22HQ003424C0046%22
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/fpds-hq003424c0046.txt
+    archived_date: '2026-09-27'
+    note: FPDS ezSearch public ATOM feed (FEEDNAME=PUBLIC, q=PIID:"HQ003424C0046"; XML saved as served), fetched 2026-09-27 UTC. 9 contract-action entries (modNumber 0, P00001, P00002, P00003, P00004, P00005, P00006, P00007, P00008); single page (no rel=next link). Each entry carries signedDate, effectiveDate, currentCompletionDate and ultimateCompletionDate, and each modification entry (P00001-P00008; absent on the base award 0) carries reasonForModification — the per-modification period-of-performance end dates that the USAspending transactions list lacks.
+  archive_status: 3
+  wayback_date: '2026-09-27'
+- url: https://www.fpds.gov/ezsearch/FEEDS/ATOM?s=FPDS&FEEDNAME=PUBLIC&VERSION=1.5.3&q=PIID%3A%22HQ003422C0127%22&start=10
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/fpds-hq003422c0127-start10.txt
+    archived_date: '2026-09-27'
+    note: FPDS ezSearch public ATOM feed, page 2 (FEEDNAME=PUBLIC, VERSION=1.5.3, q=PIID:"HQ003422C0127", start=10 — the URL of the rel=next link in the page-1 feed government/fpds-hq003422c0127.txt; XML saved as served), fetched 2026-09-27 UTC. 3 contract-action entries (modNumber P00010, P00011, P00012); rel=last is this page, no rel=next. Each entry carries signedDate, effectiveDate, currentCompletionDate, ultimateCompletionDate and reasonForModification — the per-modification period-of-performance end dates that the USAspending transactions list lacks.
+  archive_status: 3
+  wayback_date: '2026-09-27'
 - url: https://www.gao.gov/assets/gao-21-295.pdf
   status: archived
   archive_status: 3
@@ -3872,6 +4160,78 @@
     archived_date: '2026-04-30'
     path: news/highergov-sancorp-profile-20260430.html
     note: HigherGov public profile for Sancorp Consulting LLC. Fetched 2026-04-30. Confirms UEI GRYKNJ8BGFC8, CAGE 7NZQ9, SBA Certs SDVOSB+VOSB, Falls Church VA HQ. Date Founded July 28, 2016 (matches initial registration). 8(a) Certification Graduated August 26, 2017 → March 11, 2026 (the handoff §3 statement of 'August 26, 2026 8(a) exit date' was incorrect — actual graduation was March 11, 2026). Last Registration July 30, 2025; Registration Activation July 29, 2025; Most Recent Award December 29, 2025.
+- url: https://www.indeed.com/viewjob?jk=08347bfab13852f0
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-08347bfab13852f0-budget-analyst-iii-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Budget Analyst III'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, capture method, company/title/location, and a contributor FLAGGED annotation), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=08347bfab13852f0&start=0); this entry is keyed on the canonical viewjob URL. Posting text names the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=1ef015c123fe3434
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-1ef015c123fe3434-vtc-video-teleconference-center-engineer-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'VTC- Video Teleconference Center Engineer'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, company/title/location, and a contributor FLAGGED annotation; this file has no capture-method line), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=1ef015c123fe3434&start=0); this entry is keyed on the canonical viewjob URL. Posting text does not name OUSD(I&S) or OUSW(I&S) (checked by reading).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=30cb7da64f543b20
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-30cb7da64f543b20-senior-it-project-manager-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Senior IT Project Manager'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, company/title/location, and a contributor FLAGGED annotation; this file has no capture-method line), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=30cb7da64f543b20&start=0); this entry is keyed on the canonical viewjob URL. Posting text does not name OUSD(I&S) or OUSW(I&S) (checked by reading).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=47b7f47186f31223
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Innovation Governance SME Support'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, capture method, company/title/location, and a contributor FLAGGED annotation), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=47b7f47186f31223&start=0); this entry is keyed on the canonical viewjob URL. Posting text names the 'Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S))' Chief Technology Officer, 'OUSW (l&S)' governance forums (sic, lowercase l), and the 'Undersecretary of War for Intelligence and Security'.
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=5a099a8432110ac5
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-5a099a8432110ac5-data-analyst-technical-program-consultant-iii-pentagon-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Data Analyst / Technical Program Consultant III (Pentagon)'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, company/title/location, and a contributor FLAGGED annotation; this file has no capture-method line), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=5a099a8432110ac5&start=0); this entry is keyed on the canonical viewjob URL. Posting text does not name OUSD(I&S) or OUSW(I&S) (checked by reading).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=8cb154420b997c76
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-8cb154420b997c76-it-project-manager-senior-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'IT Project Manager - Senior'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, company/title/location, and a contributor FLAGGED annotation; this file has no capture-method line), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=8cb154420b997c76&start=0); this entry is keyed on the canonical viewjob URL. Posting text does not name OUSD(I&S) or OUSW(I&S) (checked by reading).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=b80ea1a11264623f
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-b80ea1a11264623f-data-analyst-technical-program-consultant-iii-washdc-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Data Analyst / Technical Program Consultant III (Washington, DC)'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, company/title/location, and a contributor FLAGGED annotation; this file has no capture-method line), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=b80ea1a11264623f&start=0); this entry is keyed on the canonical viewjob URL. Posting text does not name OUSD(I&S) or OUSW(I&S) (checked by reading).
+  archive_status: 1
+- url: https://www.indeed.com/viewjob?jk=d41e1123c7b7096c
+  status: archived
+  wayback_skip: true
+  artifacts:
+  - format: txt
+    path: news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt
+    archived_date: '2026-09-25'
+    note: Indeed job posting for Premier Enterprise Solutions, LLC, title 'Executive Secretariat Support'. Captured 2026-09-25T21:56:00Z as browser-rendered page text (claude-in-chrome render + get_page_text) because Indeed blocks curl/WebFetch and Wayback; no original HTML exists and this text is the only copy. The lines above the '---- FULL EXTRACTED TEXT ----' marker are contributor capture metadata (source URL, capture time, capture method, company/title/location, and a contributor FLAGGED annotation), NOT posting text — quote only from below the marker. The header's URL line is the Indeed company-page listing form (https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=d41e1123c7b7096c&start=0); this entry is keyed on the canonical viewjob URL. Posting text names OUSD(I&S) (e.g. the OUSD(I&S) Front Office).
+  archive_status: 1
 - url: https://www.insaonline.org/detail-pages/person/ron-moultrie
   status: archived
   archive_status: 3
@@ -4774,6 +5134,19 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003422c0094.txt
     note: 'USAspending JSON record for Sancorp Consulting LLC AARO contract HQ003422C0094. Description: ''AARO SUPPORT SERVICES''. Total obligation: $4,061,786.51. Signed 2022-09-01 → end 2024-08-31. Awarded by DoD/Washington Headquarters Services. 8(A) SOLE SOURCE; 1 offer received; NAICS 541611. Solicitation: HQ003422R0192. Companion to FOIA 23-F-1114 PWS.'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003422C0127_9700_-NONE-_-NONE-
+  status: archived
+  artifacts:
+  - format: txt
+    path: government/usaspending-hq003422c0127.txt
+    archived_date: '2026-09-26'
+    note: USAspending API award record (api/v2/awards, JSON saved as served), fetched 2026-09-26 US Eastern (2026-09-27 UTC). PIID HQ003422C0127, DEFINITIVE CONTRACT (type D; no parent award); recipient PREMIER ENTERPRISE SOLUTIONS, LLC; description 'PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES'; awarding sub-tier Washington Headquarters Services; date signed 2022-09-28; period of performance 2022-09-28 to 2025-07-27 (potential end 2025-07-27; last modified 2026-05-06); total_obligation 4417617.03.
+  - format: txt
+    path: government/usaspending-hq003422c0127-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003422C0127_9700_-NONE-_-NONE-, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26 US Eastern (2026-09-27 UTC). 13 transaction records (modification numbers in served order 0, P00001, P00002, P00003, P00004, P00005, P00006, P00008, P00007, P00009, P00010, P00011, P00012 — P00007 and P00008 share action_date 2024-09-28 and are served P00008 first); page_metadata hasNext false.
+  archive_status: 3
+  wayback_date: '2023-01-19'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-
   status: archived
   archive_status: 3
@@ -4792,6 +5165,10 @@
     archived_date: '2026-04-30'
     path: government/usaspending-hq003424c0046.txt
     note: 'USAspending JSON record for Sancorp ''Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services'' contract HQ003424C0046. Total obligation: $5,751,921. Signed 2024-05-31 → end 2026-05-27. Awarded by DoD/Washington Headquarters Services. Continuation of HQ003423C0061 (the IPMO-aligned contract chain). Spans the OUSD(I&S) → OUSW(I&S) EO 14347 transition (Sept 2025).'
+  - format: txt
+    path: government/usaspending-hq003424c0046-transactions.txt
+    archived_date: '2026-09-26'
+    note: USAspending API transactions list (POST api/v2/transactions, award_id CONT_AWD_HQ003424C0046_9700_-NONE-_-NONE-, limit 100, sort action_date asc; JSON saved as served), fetched 2026-09-26 US Eastern (2026-09-27 UTC). 9 transaction records (modification numbers 0, P00001, P00002, P00003, P00004, P00005, P00006, P00007, P00008); page_metadata hasNext false.
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE-
   status: archived
   archive_status: 3

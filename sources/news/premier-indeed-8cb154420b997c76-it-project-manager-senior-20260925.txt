@@ -1,0 +1,86 @@
+SOURCE: Indeed.com company page listing
+URL: https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=8cb154420b997c76&start=0
+Canonical Indeed job URL: https://www.indeed.com/viewjob?jk=8cb154420b997c76
+Captured (UTC): 2026-09-25T21:56:00Z
+Company: Premier Enterprise Solutions, LLC
+Title: IT Project Manager - Senior
+Location: Washington, DC 20590
+FLAGGED: no — duplicate/near-duplicate of Senior IT Project Manager posting; no watch-listed office/program terms
+
+---- FULL EXTRACTED TEXT ----
+
+IT Project Manager - Senior
+Premier Enterprise Solutions - Washington, DC
+Apply with Indeed
+
+Senior IT Project Manager
+
+Overview:
+
+Premier Enterprise Solutions is seeking a Senior IT Project Management with at least 10 years of related experience leading enterprise IT projects/programs. The candidate must have strong leadership, deep enterprise IT knowledge, and experience managing cross-functional teams. The PM must balance priorities and coordinate resources to deliver technical projects on time, on schedule and within the cost parameters provided.
+
+This is a full-time, onsite, position located in Washington, DC. Veterans are encouraged to apply.
+
+Responsibilities:
+
+Lead end-to-end delivery of Infrastructure & Operations programs and major projects, ensuring scope, schedule, and quality targets are met.
+Develop and maintain project plans (milestones, dependencies, critical path) and perform resource leveling to optimize delivery in a matrixed environment.
+Coordinate and negotiate resource assignments across functional teams and stakeholders to ensure the right skills are applied to tasks and deadlines are met.
+Facilitate governance and stakeholder meetings; produce concise executive reports, status dashboards, and escalation recommendations.
+Implement and enforce PMO methodologies, standards, change control, release governance, and quality assurance practices.
+Identify, assess, and mitigate risks and issues; own escalation paths and implement contingency or recovery plans as needed.
+Oversee vendor and third-party engagement for operational workstreams.
+Coach and mentor junior project managers, and delivery teams on project management best practices, capacity planning, and cross functional collaboration.
+Track and report KPIs/SLAs and success metrics (e.g., schedule variance, resource utilization, incident/change impact, benefits realization) and drive continuous improvement through lessons learned.
+
+Qualifications:
+
+At least 10 years of proven experience delivering integrated project/program management.
+Bachelor's degree in engineering, computer science, Business Administration or a related discipline.
+Previous ITSM experience with ServiceNow.
+Proven ability to continuously increase efficiency and reduce errors using AI
+Work as a project management consultant by adding strategic value through structured/critical thinking, stakeholder alignment, clear communication, and adaptability
+
+Certifications:
+
+Project Management Professional (PMP)
+ITIL V4
+
+Desired Qualifications:
+
+Experience working in a mixed contractor environment with multiple integrated teams and geographical locations.
+Experience in IT infrastructure and IT disciplines (server, network operations, help desk, etc.)
+Strong customer relations experience including positive and proactive customer engagement to resolve issues and challenges as they arise.
+Excellent oral and written communication skills.
+
+Benefits
+
+Premier Enterprise Solutions offers full-time employees a comprehensive and competitive benefits package designed to support their health, well-being, and financial future. Benefits include paid time off (PTO) for vacation, sick leave, and personal days; paid holidays; medical, dental, and vision insurance; company-paid life and accidental death & dismemberment (AD&D) insurance; voluntary life insurance; short- and long-term disability coverage; professional training and development opportunities; and a 401(k) retirement plan with company matching and immediate vesting.
+
+Equal Employment Opportunity Statement
+
+It is Premier Enterprise Solutions' policy to promote equal employment opportunities. Premier is committed to fostering a workplace where employment decisions are based solely on qualifications, experience, and the ability to perform essential job functions. We adhere to all applicable federal, state, and local laws governing equal employment opportunity.
+
+Benefits:
+401(k)
+401(k) matching
+Dental insurance
+Health insurance
+Life insurance
+Paid time off
+Referral program
+Vision insurance
+
+Application Question(s):
+Do you have at least 10 years of experience delivering integrated project/program management?
+Do you have previous ITSM experience with ServiceNow?
+Do you have experience in IT infrastructure and IT disciplines (server, network operations, help desk, etc.)?
+Do you have experience working in a mixed contractor environment with multiple integrated teams and geographical locations
+
+Education:
+Bachelor's (Required)
+
+Ability to Commute:
+Washington, DC 20590 (Required)
+
+Work Location: In person

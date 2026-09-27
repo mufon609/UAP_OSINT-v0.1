@@ -34,7 +34,9 @@ USAspending records a second BPA CALL under HQ003425A0004: HQ003426FE011, date_s
 
 In notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]), dated March 11, 2025 (postedDate), Washington Headquarters Services, Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that the incumbent contractor, Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]), is currently performing services under WHS-AD TEAMS BPA, HQ003415A0010, Task Order HQ003419F0506, with services concluding on March 27, 2025, and an anticipated bridge contract period of performance from March 28, 2025, to July 27, 2025. USAspending records the recipient of HQ003419F0506 as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), with parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION; neither record refers to the other, and both stand as recorded. In the HQ003419F0506 transaction records, modification P00035 (2025-07-25, CHANGE ORDER, federal_action_obligation 1977626.47) is the first transaction whose description field is "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS", and every later transaction listed, through P00040 (2026-04-01), has the same description; two 2024 transaction records, P00023 (2024-05-24) and P00024 (2024-07-09), have descriptions beginning "SENSITIVE ACTIVITIES & SPECIAL PROGRAMS". The HQ003419F0506 award record records a period_of_performance end_date of 2026-05-27. Neither the notice nor the HQ003419F0506 records name Arlo.
 
-Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer" posting, in the April 28, 2025 capture, states "This position is with the Office of the Under Secretary of Defense for Intelligence and Security - OUSD(I&S), in the Commonwealth & Partnership Engagement (C&PE) Branch" ([`/organizations/ousd-is-cpe`]) and that the position is to meet the needs of "four primary Commonwealth partner nations: Australia, Canada, New Zealand, and the United Kingdom"; its work location is Bolling AFB, Washington, D.C. No contract is named in the (469) posting. The "(617) Staff Officer V" posting, in the Dec. 17, 2025 capture and the January 19, 2026 capture, states "The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]) and "This key personnel position serves as a senior-level SME"; its listed responsibilities include reports and briefings on AARO operations for Congress ([`/organizations/congress`]), working relationships with the Office of the Director of National Intelligence ([`/organizations/odni`]), analysis of intelligence related activities against the National Defense Strategy ([`/documents/national-defense-strategy`]), and Intelligence Community ([`/organizations/intelligence-community`])-wide processes and procedures for reporting of airborne objects of interest including UAP. The "(619) Security Officer IV" posting, in the January 19, 2026 capture, states that the Security Officer IV is responsible for managing "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))"; its listed responsibilities include coordination with the Defense Counterintelligence & Security Agency ([`/organizations/dcsa`]) and compliance with DoD Manual 5205.07 ([`/documents/dod-manual-5205-07`]) and DoD Manual 5105.21 ([`/documents/dod-manual-5105-21`]). Both positions are located in Arlington, VA ([`/locations/arlington-virginia`]). These dates are capture dates; the rendered page displays no posting date. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here. In the February 27, 2026 capture of the Arlo job board, "50 jobs" are listed, including the "OUSW (I&S) SASP Incumbent" job ([`/organizations/ousd-is-sasp`]); neither the (617) nor the (619) position is listed.
+Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer" posting, in the April 28, 2025 capture, states "This position is with the Office of the Under Secretary of Defense for Intelligence and Security - OUSD(I&S), in the Commonwealth & Partnership Engagement (C&PE) Branch" ([`/organizations/ousd-is-cpe`]) and that the position is to meet the needs of "four primary Commonwealth partner nations: Australia, Canada, New Zealand, and the United Kingdom"; its work location is Bolling AFB, Washington, D.C. No contract is named in the (469) posting. The "(617) Staff Officer V" posting, in the Dec. 17, 2025 capture and the January 19, 2026 capture, states "The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S))" ([`/organizations/aaro`]) and "This key personnel position serves as a senior-level SME"; its listed responsibilities include reports and briefings on AARO operations for Congress ([`/organizations/congress`]), working relationships with the Office of the Director of National Intelligence ([`/organizations/odni`]), analysis of intelligence related activities against the National Defense Strategy ([`/documents/national-defense-strategy`]), and Intelligence Community ([`/organizations/intelligence-community`])-wide processes and procedures for reporting of airborne objects of interest including UAP. The "(619) Security Officer IV" posting, in the January 19, 2026 capture, states that the Security Officer IV is responsible for managing "comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))"; its listed responsibilities include coordination with the Defense Counterintelligence & Security Agency ([`/organizations/dcsa`]) and compliance with DoD Manual 5205.07 ([`/documents/dod-manual-5205-07`]) and DoD Manual 5105.21 ([`/documents/dod-manual-5105-21`]). Both positions are located in Arlington, VA ([`/locations/arlington-virginia`]). These dates are capture dates; the rendered page displays no posting date. No contract is named in the (617) or the (619) posting, and Arlo is not named for AARO work in any award record cited here. In the February 27, 2026 capture of the Arlo job board, "50 jobs" are listed, including the "OUSW (I&S) SASP Incumbent" job ([`/organizations/ousd-is-sasp`]); neither the (617) nor the (619) position is listed.
+
+Other Arlo Solutions LLC Greenhouse job posting pages cited here name positions supporting the Sensitive Activities & Special Programs (SASP) office ([`/organizations/ousd-is-sasp`]) of OUSD(I&S) ([`/organizations/ousd-is`]). The "(183) Budget Analyst IV" posting states "This opportunity is contingent upon award" and that the Budget Analyst will work as a contractor to support the Office of the Under Secretary of Defense for Intelligence and Security Sensitive Activities & Special Programs (SASP), with the OUSD(I&S) Financial Management and Accounting (FMA) office ([`/organizations/ousd-is-financial-management-and-accounting`]), to execute the SASP budget. The "OUSD(I&S) SASP Incumbent" posting states "Arlo Solutions has recently been awarded the Office of Under Secretary of Defense for Intelligence & Security (OUSD(I&S)) Sensitive Activities and Special Programs (SASP) contract" and that only current employees serving as incumbents on this contract are eligible to apply; no contract number is named in the posting. SASP is named in the (498), (504), (510), (514), and (516) posting pages: an Executive Assistant II supporting DoD Senior Executives in the SASP Front Office Directorate (498); an Operations Manager II supporting the Sensitive Activities & Special Programs (SASP) Office (504); a Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I supporting the Counter Proliferation and Weapons of Mass Destruction Directorate ([`/organizations/ousd-is-sasp-cp-wmd-directorate`]) within the SASP Office, to provide recommendations on the appropriate Title authorities (e.g., Title 10 ([`/documents/title-10-us-code`]), Title 50 ([`/documents/title-50-us-code`])) (510); an Influence, Deception, and Perception Management Activities Staff Officer V supporting SASP, for DoW influence, deception, and perception management-related operations, activities, and investments, with reports and briefings for Congress ([`/organizations/congress`]) (514); and an Operations Manager III supporting SASP, to oversee and manage daily operations within the Influence and Perception Management Office ([`/organizations/ipmo`]) and to coordinate with the OUSW(I&S) Special Access Program Central Office ([`/organizations/ousd-is-sapco`]), Special Security Office, Joint Staff ([`/organizations/joint-staff`]), and Military Services security offices (516). The "(467) HUMINT Policy Staff Officer III" posting also supports SASP, with liaison to Defense HUMINT Executors (DHE) ([`/organizations/defense-humint-executors`]). The (495) Special Operations Support Policy Staff Officer I, (497) HUMINT Policy Staff Officer II, (499) Reports and Assessments Staff Officer I, (500) Sensitive Activities Policy Staff Officer II, and (506) Countering Adversary Defense Industry Staff Officer II posting pages name the HUMINT & Sensitive Activities Directorate ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)), and SASP is not named in them; the Sensitive Activities Executive Council (SA-EXCON) ([`/organizations/sensitive-activities-executive-council`]) is named in the (499) posting. The (183), (467), (495), (497), (498), (499), (500), (504), (506), (510), (514), and (516) posting pages list the work location as Pentagon, Arlington, VA ([`/locations/pentagon`]). No contract number is named in any of these posting pages.
 
 ---
 
@@ -129,6 +131,42 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2024-04-18 |
 | Source | [archived source](../sources/news/arlo-press-cls-vetting-20260503.html) |
 | Location | Press release CL&S scope ¶ (April 18, 2024) |
+
+---
+
+### The posting states in its own words that the Budget Analyst IV position is contingent upon award.
+
+> **This opportunity is contingent upon award**
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting (183) Budget Analyst IV (job 4382670007), published 2024-05-23 (per embedded published_at) and captured by Wayback 2025-01-16, before the 2025-02-21 award of SASP call order HQ003425F0104 to Arlo. |
+| Source | [archived source](../sources/news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html) |
+| Location | ¶ **This opportunity is contingent upon award** |
+
+---
+
+### Position Overview names the supported office as the "Office of the Under Secretary of Defense for Intelligence and Security Sensitive Activities & Special Programs (SASP)" and the role as contractor support.
+
+> The Budget Analyst will work as a contractor to support the Office of the Under Secretary of Defense for Intelligence and Security Sensitive Activities & Special Programs (SASP).
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting (183) Budget Analyst IV (job 4382670007), published 2024-05-23 (per embedded published_at) and captured by Wayback 2025-01-16, before the 2025-02-21 award of SASP call order HQ003425F0104 to Arlo. |
+| Source | [archived source](../sources/news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html) |
+| Location | ¶ The Budget Analyst will work as a contractor to support the Office |
+
+---
+
+### Defines the budget staff line: executing the SASP budget with the OUSD(I&S) Financial Management and Accounting (FMA) office.
+
+> Work with OUSD(I&S) Financial Management and Accounting (FMA) office to execute the SASP budget.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting (183) Budget Analyst IV (job 4382670007), published 2024-05-23 (per embedded published_at) and captured by Wayback 2025-01-16, before the 2025-02-21 award of SASP call order HQ003425F0104 to Arlo. |
+| Source | [archived source](../sources/news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html) |
+| Location | ¶ Work with OUSD(I&S) Financial Management and Accounting (FMA) office |
 
 ---
 
@@ -429,6 +467,54 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2025-02-21 |
 | Source | [archived source](../sources/government/usaspending-arlo-hq003425f0104.json) |
 | Location | USAspending API record — "recipient" object — "location" sub-object, CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700 |
+
+---
+
+### Arlo names the SASP Front Office Directorate as the unit whose DoD Senior Executives this Executive Assistant II line supports.
+
+> The Executive Assistant (EA) II is a highly skilled administrative professional who provides comprehensive support to DoD Senior Executives in the SASP Front Office Directorate.
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview of Arlo Solutions Greenhouse posting 4660661007, "(498) 5.2 Executive Assistant II" (work location Pentagon, Arlington, VA); published 2025-02-24, captured by the Wayback Machine 2025-07-12. |
+| Source | [archived source](../sources/news/arlo-greenhouse-498-executive-assistant-ii-wayback-20250712.html) |
+| Location | ¶ The Executive Assistant (EA) II is a highly skilled administrative professional |
+
+---
+
+### Title of Arlo Solutions LLC's Greenhouse prospect posting 4663123007, naming the position by the OUSD(I&S) Sensitive Activities and Special Programs (SASP) office and restricting it to that contract's incumbents. The same string is the page's og:title meta value (stored in raw HTML as "OUSD(I&amp;S) SASP Incumbent").
+
+> OUSD(I&S) SASP Incumbent
+
+| Field | Value |
+|---|---|
+| Attributed to | Greenhouse job-board page header of posting 4663123007; location line "Arlington, VA". Post published 2025-02-26 (embedded published_at "2025-02-26T14:41:01-05:00"), five days after the 2025-02-21 award of HQ003425F0104; this Wayback capture is dated 2025-08-30. |
+| Source | [archived source](../sources/news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html) |
+| Location | ¶ OUSD(I&S) SASP Incumbent — posting title header (after "Back to jobs", before "Arlington, VA") |
+
+---
+
+### Arlo Solutions states in its own recruitment posting that it has been awarded the OUSD(I&S) Sensitive Activities and Special Programs (SASP) contract. The posting names no contract number.
+
+> Arlo Solutions has recently been awarded the Office of Under Secretary of Defense for Intelligence & Security (OUSD(I&S)) Sensitive Activities and Special Programs (SASP) contract.
+
+| Field | Value |
+|---|---|
+| Attributed to | First sentence of the posting's "Disclaimer" paragraph, following the Company Summary. Post published 2025-02-26 (embedded published_at "2025-02-26T14:41:01-05:00"), five days after the 2025-02-21 award of HQ003425F0104; this Wayback capture is dated 2025-08-30. |
+| Source | [archived source](../sources/news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html) |
+| Location | ¶ Disclaimer — Arlo Solutions has recently been awarded the Office of Under Secretary of Defense |
+
+---
+
+### Restricts the posting to employees currently serving as incumbents on the SASP contract, i.e. Arlo addresses the existing SASP contract workforce as applicants. The application form correspondingly asks "What is your current role with the incumbent?", "What is your Government Lead's Name?", and "What is the current Team/Division Name?".
+
+> Only current employees serving as incumbents on this contract are eligible to apply for this position
+
+| Field | Value |
+|---|---|
+| Attributed to | Second (closing) sentence of the "Disclaimer" paragraph; the source sentence carries no terminal period. Post published 2025-02-26 (embedded published_at "2025-02-26T14:41:01-05:00"), five days after the 2025-02-21 award of HQ003425F0104; this Wayback capture is dated 2025-08-30. |
+| Source | [archived source](../sources/news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html) |
+| Location | ¶ Disclaimer — Only current employees serving as incumbents on this contract |
 
 ---
 
@@ -1116,6 +1202,258 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### Arlo posting (495) places its Special Operations Support Policy staff line in the HUMINT & Sensitive Activities Directorate of OUSW(I&S), and defines the line as supporting oversight, management, and policy development for sensitive activities and special operations.
+
+> The Special Operations Support Policy Staff Officer II will provide critical support to the HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)). This role involves supporting the oversight, management, and development of policies related to sensitive activities and special operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview of Arlo Greenhouse posting 4660534007, "(495) Special Operations Support Policy Staff Officer I" (Arlington, VA); published 2025-02-24, three days after the 2025-02-21 award of HQ003425F0104; Wayback capture 2026-02-27. The posting title reads "Staff Officer I" while this overview sentence reads "Staff Officer II". |
+| Source | [archived source](../sources/news/arlo-greenhouse-495-special-operations-support-policy-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ The Special Operations Support Policy Staff Officer II will provide critical support |
+
+---
+
+### Defines the special operations support policy function: preparing background and read-ahead material on intelligence and intelligence-related policy, program, and activity support to special operations, including counterterrorism and irregular warfare.
+
+> Gather, synthesize, and prepare background information and read-ahead materials for issues and engagements regarding intelligence and intelligence-related policy, program, and activity support to special operations, including counterterrorism and irregular warfare.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Research and Analysis" item, Arlo Greenhouse posting 4660534007 (published 2025-02-24; captured 2026-02-27). |
+| Source | [archived source](../sources/news/arlo-greenhouse-495-special-operations-support-policy-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ Gather, synthesize, and prepare background information and read-ahead materials |
+
+---
+
+### Defines the line's sensitive-activities policy remit: strategy and policy direction for the coordination, assessment, reporting, and conduct of sensitive activities.
+
+> Support the development, review, and revision of strategy and policy direction for the coordination, assessment, reporting, and conduct of sensitive activities.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Strategy and Policy Implementation" item, Arlo Greenhouse posting 4660534007 (published 2025-02-24; captured 2026-02-27). |
+| Source | [archived source](../sources/news/arlo-greenhouse-495-special-operations-support-policy-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ Support the development, review, and revision of strategy and policy direction |
+
+---
+
+### Arlo's own posting names the supported office as the "HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S))" and defines the role as liaising with key stakeholders, developing policy, and providing oversight for human intelligence operations. The posting names no contract, task order, or contract number, and does not use the words "Sensitive Activities & Special Programs" or "SASP".
+
+> The HUMINT Policy Staff Officer II will support the HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)). This role involves liaising with key stakeholders, developing policy, and providing oversight for human intelligence operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview of Arlo Greenhouse posting "(497) HUMINT Policy Staff Officer II" (posting 4660616007), published 2025-02-24, captured by Wayback 2026-02-27. Rendered-text occurrence (not the embedded JSON). |
+| Source | [archived source](../sources/news/arlo-greenhouse-497-humint-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ The HUMINT Policy Staff Officer II will support the HUMINT & Sensitive Activities Directorate |
+
+---
+
+### Defines the HUMINT policy function's oversight counterparts: Defense HUMINT Executors (DHE) and DoW Components executing human intelligence collection and Military Source Operations.
+
+> Liaise with Defense HUMINT Executors (DHE) and DoW Components executing human intelligence collection and Military Source Operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Liaison and Coordination" block of Arlo Greenhouse posting "(497) HUMINT Policy Staff Officer II", published 2025-02-24, captured by Wayback 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-497-humint-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ Liaise with Defense HUMINT Executors (DHE) |
+
+---
+
+### Names the congressional-reporting function of the HUMINT policy line: staff packages for DoW leadership to respond to Congress for all HUMINT-related Questionable Intelligence Activities and/or Significant/Highly Sensitive Matters.
+
+> Prepare staff packages for DoW leadership to respond to Congress for all HUMINT-related Questionable Intelligence Activities and/or Significant/Highly Sensitive Matters.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Briefing and Reporting" block of Arlo Greenhouse posting "(497) HUMINT Policy Staff Officer II", published 2025-02-24, captured by Wayback 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-497-humint-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ Prepare staff packages for DoW leadership to respond to Congress |
+
+---
+
+### Arlo's own posting places the Reports and Assessments Staff Officer I line in support of the HUMINT & Sensitive Activities Directorate within OUSW(I&S). The posting does not use the words "Sensitive Activities & Special Programs" or "SASP".
+
+> The Reports and Assessments Staff Officer I will support the HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting "(499) Reports and Assessments Staff Officer I" (posting 4660655007), Position Overview; published 2025-02-24, Wayback capture 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ The Reports and Assessments Staff Officer I will support |
+
+---
+
+### The posting names the Sensitive Activities Executive Council (SA-EXCON) and assigns this staff line to coordinate, convene, and facilitate its meetings (agendas, read-ahead material, attendee rosters, meeting minutes).
+
+> Coordinate, convene, and facilitate meetings, working groups, and the Sensitive Activities Executive Council (SA-EXCON) by preparing and disseminating agendas, read-ahead material, attendee rosters, and meeting minutes.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting "(499) Reports and Assessments Staff Officer I" (posting 4660655007), Job Responsibilities, under "Meeting Coordination:"; published 2025-02-24, Wayback capture 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ Coordinate, convene, and facilitate meetings |
+
+---
+
+### Defines the reports-and-assessments function: preparing and staffing DoW quarterly reports and briefings on sensitive activities to Congress and Executive Branch Senior Leaders.
+
+> Prepare and staff DoW quarterly reports and briefings on sensitive activities to Congress and Executive Branch Senior Leaders.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting "(499) Reports and Assessments Staff Officer I" (posting 4660655007), Job Responsibilities, under "Report Preparation and Staffing:"; published 2025-02-24, Wayback capture 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ Prepare and staff DoW quarterly reports |
+
+---
+
+### Arlo's own posting places this staff line in support of the HUMINT & Sensitive Activities Directorate within OUSW(I&S) and defines the function as oversight, policy development, and compliance for sensitive activities and related programs. The posting does not use the words "Sensitive Activities & Special Programs" or "SASP".
+
+> The Sensitive Activities Policy Staff Officer II will support the HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)). This role involves providing oversight, developing policy, and ensuring compliance for sensitive activities and related programs.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting (500) Sensitive Activities Policy Staff Officer II (posting 4660662007), Position Overview; published 2025-02-24, captured by the Wayback Machine 2026-02-27. Work location stated as "Pentagon, Arlington, VA"; clearance "TS/SCI". |
+| Source | [archived source](../sources/news/arlo-greenhouse-500-sensitive-activities-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ The Sensitive Activities Policy Staff Officer II will support |
+
+---
+
+### Defines the oversight function: staff assistance visits and compliance inspections for DoW sensitive activities and support activities.
+
+> Assist leadership in the conduct of oversight and governance, including staff assistance visits and compliance inspections for DoW sensitive activities and support activities.
+
+| Field | Value |
+|---|---|
+| Attributed to | Same posting, Job Responsibilities and/or Success Factors, "Oversight and Governance:" heading; published 2025-02-24, captured 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-500-sensitive-activities-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ Assist leadership in the conduct of oversight and governance |
+
+---
+
+### Defines the reporting function: reports and briefings on DoW sensitive activities and support activities and investments, for Congress and Senior Executive Branch officials.
+
+> Produce and disseminate reports and briefings that detail DoW sensitive activities and support activities and investments for Congress and Senior Executive Branch officials.
+
+| Field | Value |
+|---|---|
+| Attributed to | Same posting, Job Responsibilities and/or Success Factors, "Briefing and Reporting:" heading; published 2025-02-24, captured 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-500-sensitive-activities-policy-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ Produce and disseminate reports and briefings |
+
+---
+
+### Arlo's own posting (requisition 506) places the Countering Adversary Defense Industry Staff Officer II in support of the HUMINT & Sensitive Activities Directorate within OUSW(I&S). The posting names no contract, task order, or office acronym SASP.
+
+> The Countering Adversary Defense Industry Staff Officer II will provide essential support to the HUMINT & Sensitive Activities Directorate within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview, Arlo Solutions LLC Greenhouse posting (506), Arlington, VA; posting published 2025-02-24, preserved in the 2026-02-27 Wayback capture. Work Location stated as "Pentagon, Arlington, VA"; Clearance "TS/SCI". |
+| Source | [archived source](../sources/news/arlo-greenhouse-506-countering-adversary-defense-industry-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ The Countering Adversary Defense Industry Staff Officer II will provide essential support |
+
+---
+
+### Defines the countering-adversary-defense-industry function: data analysis, strategy development, and stakeholder coordination to counter adversary defense industry threats.
+
+> This role involves analyzing data, developing strategies, and coordinating with various stakeholders to counter adversary defense industry threats.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second sentence of the Position Overview, Arlo posting (506); published 2025-02-24, captured 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-506-countering-adversary-defense-industry-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ The Countering Adversary Defense Industry Staff Officer II will provide essential support |
+
+---
+
+### The posting's Project Development and Coordination duty — projects within DoW and across USG enabling multi-INT operations, sensitive operations, and intelligence collection, analysis, and re-integration.
+
+> Develop and coordinate projects within DoW and across USG to enable multi-INT operations, sensitive operations, and opportunities for collection, analysis, and re-integration of intelligence.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities and/or Success Factors, under the "Project Development and Coordination:" heading, Arlo posting (506); published 2025-02-24, captured 2026-02-27. |
+| Source | [archived source](../sources/news/arlo-greenhouse-506-countering-adversary-defense-industry-staff-officer-ii-wayback-20260227.html) |
+| Location | ¶ Develop and coordinate projects within DoW and across USG |
+
+---
+
+### Arlo's posting names a Counter Proliferation and Weapons of Mass Destruction Directorate within the SASP Office, and places SASP under OUSW(I&S).
+
+> The Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I will support the Counter Proliferation and Weapons of Mass Destruction Directorate within the Sensitive Activities & Special Programs (SASP) Office under the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting 4660784007, "(510) Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I" (Alexandria, VA), Position Overview opening sentence; published 2025-02-24, captured 2026-02-27 (Wayback). |
+| Source | [archived source](../sources/news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ The Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I will support |
+
+---
+
+### Defines the C-WMD staff line's function: briefings, reports, and policy recommendations on counterproliferation of chemical, biological, and nuclear weapons.
+
+> This role involves providing comprehensive support in the preparation and coordination of briefings, reports, and policy recommendations related to counterproliferation efforts of chemical, biological, and nuclear weapons.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting 4660784007, "(510) Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I", Position Overview second sentence; published 2025-02-24, captured 2026-02-27 (Wayback). |
+| Source | [archived source](../sources/news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ The Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I will support |
+
+---
+
+### The C-WMD staff line recommends Title authorities, the posting naming Title 10 and Title 50.
+
+> Provide recommendations on the appropriate Title authorities (e.g., Title 10, Title 50) for applications and their use.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting 4660784007, "(510) Counter-Weapons of Mass Destruction (C-WMD) Staff Officer I", Job Responsibilities, "Policy and Framework Development" item; published 2025-02-24, captured 2026-02-27 (Wayback). |
+| Source | [archived source](../sources/news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html) |
+| Location | ¶ Provide recommendations on the appropriate Title authorities |
+
+---
+
+### Arlo posting (516) Operations Manager III names the supported office as the OUSW(I&S) Sensitive Activities & Special Programs (SASP) and states the position is a contractor role supporting it.
+
+> The Operations Manager III will work as a contractor to support the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) Sensitive Activities & Special Programs (SASP).
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting 4660859007 "(516) Operations Manager III", Pentagon, Arlington, VA; published 2025-02-24, Wayback capture 2026-02-27. Position Overview paragraph. |
+| Source | [archived source](../sources/news/arlo-greenhouse-516-operations-manager-iii-wayback-20260227.html) |
+| Location | ¶ The Operations Manager III will work as a contractor to support |
+
+---
+
+### Among the Operations Manager III responsibilities, the (516) posting — which names SASP as the supported office (q135) — lists overseeing and managing daily operations within the Influence and Perception Management Office. The posting does not otherwise describe the relation between the Influence and Perception Management Office and SASP.
+
+> Oversee and manage daily operations within the Influence and Perception Management Office, ensuring alignment with strategic objectives.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting 4660859007 "(516) Operations Manager III"; published 2025-02-24, Wayback capture 2026-02-27. First bullet under "Operational Leadership" in Job Responsibilities and/or Success Factors. |
+| Source | [archived source](../sources/news/arlo-greenhouse-516-operations-manager-iii-wayback-20260227.html) |
+| Location | ¶ Oversee and manage daily operations within the Influence and Perception Management Office |
+
+---
+
+### Names the OUSW(I&S) Special Access Program Central Office, the Special Security Office, the Joint Staff, and the Military Services security offices as the offices the Operations Manager III coordinates with on security-related issues. The (504) Operations Manager II posting lists the same four offices under "Security Coordination:".
+
+> Coordinate with the OUSW(I&S) Special Access Program Central Office, Special Security Office, Joint Staff, and Military Services security offices for guidance and resolution of security-related issues.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Solutions Greenhouse posting 4660859007 "(516) Operations Manager III"; published 2025-02-24, Wayback capture 2026-02-27. Bullet under "Coordination and Management". |
+| Source | [archived source](../sources/news/arlo-greenhouse-516-operations-manager-iii-wayback-20260227.html) |
+| Location | ¶ Coordinate with the OUSW(I&S) Special Access Program Central Office |
+
+---
+
 ### Modification P00039 to HQ003419F0506, action_date 2026-03-06, action_type C "FUNDING ONLY ACTION", federal_action_obligation 160848.41; description field "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS".
 
 > "id":"CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0","type":"A","type_description":"BPA CALL","action_date":"2026-03-06","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00039","description":"SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS","federal_action_obligation":160848.41
@@ -1125,6 +1463,18 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2026-03-06 |
 | Source | [archived source](../sources/government/usaspending-hq003419f0506-transactions.txt) |
 | Location | transaction P00039 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003419F0506_P00039_HQ003415A0010_0 |
+
+---
+
+### Arlo's own Greenhouse posting (504) Operations Manager II places this staff line in the Sensitive Activities & Special Programs (SASP) Office within OUSW(I&S) — the posting's Position Overview names SASP as the supported office.
+
+> The Operations Manager II will provide comprehensive support to the Sensitive Activities & Special Programs (SASP) Office within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview of Arlo Solutions LLC Greenhouse posting 4660721007, "(504) Operations Manager II", work location Pentagon, Arlington, VA; posting published 2025-02-24 (published_at in the page data), rendered text as captured by Wayback on 2026-03-12. |
+| Source | [archived source](../sources/news/arlo-greenhouse-504-operations-manager-ii-wayback-20260312.html) |
+| Location | ¶ The Operations Manager II will provide comprehensive support |
 
 ---
 
@@ -1212,6 +1562,30 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 
 ---
 
+### Arlo Solutions LLC's own Greenhouse posting, requisition (467) HUMINT Policy Staff Officer III, names the supported office as the "Office of the Under Secretary of War for Intelligence and Security Sensitive Activities & Special Programs (SASP)" and states the position is a contractor role supporting it.
+
+> The HUMINT Policy Staff Officer III will work as a contractor to support the Office of the Under Secretary of War for Intelligence and Security Sensitive Activities & Special Programs (SASP).
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting 4601512007, "(467) HUMINT Policy Staff Officer III" (work location Pentagon, Arlington, VA); published 2026-04-15 (embedded published_at "2026-04-15T12:16:23-04:00"); Wayback capture 2026-05-14. Position Overview. |
+| Source | [archived source](../sources/news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html) |
+| Location | ¶ The HUMINT Policy Staff Officer III will work as a contractor |
+
+---
+
+### First listed Job Responsibility of the (467) HUMINT policy staff line: liaison with the Defense HUMINT Executors (source form "HUMIT") and DoW Components that execute human intelligence collection and Military Source Operations, producing reports, briefings, and compliance assessments.
+
+> Expertly Liaise with Defense HUMIT Executors (DHE) and DoW Components executing human intelligence collection and Military Source Operations to collect information, prepare reports, prepare briefings, and provide compliance assessments.
+
+| Field | Value |
+|---|---|
+| Attributed to | Arlo Greenhouse posting 4601512007, "(467) HUMINT Policy Staff Officer III" (work location Pentagon, Arlington, VA); published 2026-04-15 (embedded published_at "2026-04-15T12:16:23-04:00"); Wayback capture 2026-05-14. First item under "Job Responsibilities and/or Success Factors". |
+| Source | [archived source](../sources/news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html) |
+| Location | ¶ Expertly Liaise with Defense HUMIT Executors |
+
+---
+
 ### Modification P00001 to HQ003426FE011, action_date 2026-06-02, action_type D "CHANGE ORDER", federal_action_obligation 2194229.63; description unchanged from the base award. The two transactions the record lists sum to 5694229.63 (3500000.0 + 2194229.63), matching the award-level total_obligation of 5694229.63 in government/usaspending-hq003426fe011.txt.
 
 > "id":"CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0","type":"A","type_description":"BPA CALL","action_date":"2026-06-02","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00001","description":"ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES OFFICE OF THE UNDER SECRETARY OF WAR FOR INTELLIGENCE AND SECURITY OUSW(IS)SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)","federal_action_obligation":2194229.63
@@ -1221,6 +1595,54 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | Attributed to | 2026-06-02 |
 | Source | [archived source](../sources/government/usaspending-hq003426fe011-transactions.txt) |
 | Location | transaction P00001 ("id"/"action_date"/"action_type_description"/"modification_number"/"description"/"federal_action_obligation"), CONT_TX_9700_9700_HQ003426FE011_P00001_HQ003425A0004_0 |
+
+---
+
+### Position Overview of Arlo posting 4660820007 "(514) Influence, Deception, and Perception Management Activities Staff Officer V" — names the supported office as the "Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)) Sensitive Activities & Special Programs (SASP)" and states the position is a contractor role supporting it.
+
+> The Influence, Deception, and Perception Management Activities Staff Officer V will work as a contractor to support the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)) Sensitive Activities & Special Programs (SASP).
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview; posting published 2025-02-24 (embedded published_at "2025-02-24T18:15:42-05:00"); Wayback capture 2026-08-04. The posting pairs the "Under Secretary of War" long form with the OUSD acronym. |
+| Source | [archived source](../sources/news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html) |
+| Location | ¶ The Influence, Deception, and Perception Management Activities Staff Officer V will work as a contractor |
+
+---
+
+### Defines the influence, deception, and perception management staff function: strategies and plans for DoW influence, deception, and perception management-related operations, activities, and investments.
+
+> Develop and implement comprehensive strategies and plans for DoW influence, deception, and perception management-related operations, activities, and investments.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Strategy Development and Implementation" block; posting published 2025-02-24, captured 2026-08-04. |
+| Source | [archived source](../sources/news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html) |
+| Location | ¶ Strategy Development and Implementation: Develop and implement comprehensive strategies and plans for DoW influence |
+
+---
+
+### Defines an oversight role for the (514) staff line — staff assistance visits and compliance inspections for influence, deception, and perception management-related operations.
+
+> Assist leadership in conducting oversight and governance, including staff assistance visits and compliance inspections, for influence, deception, and perception management-related operations.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Oversight and Governance" block; posting published 2025-02-24, captured 2026-08-04. |
+| Source | [archived source](../sources/news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html) |
+| Location | ¶ Oversight and Governance: Assist leadership in conducting oversight and governance |
+
+---
+
+### Defines a congressional-reporting function for the (514) staff line — reports and briefings on these operations for Congress and Senior Executive Branch officials.
+
+> Produce and disseminate detailed reports and briefings on influence, deception, and perception management-related operations for Congress and Senior Executive Branch officials.
+
+| Field | Value |
+|---|---|
+| Attributed to | Job Responsibilities, "Reporting and Communication" block; posting published 2025-02-24, captured 2026-08-04. |
+| Source | [archived source](../sources/news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html) |
+| Location | ¶ Reporting and Communication: Produce and disseminate detailed reports and briefings |
 
 ---
 
@@ -1344,6 +1766,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2024-04-18 | Arlo announces $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team (HQ003424F0190; $1,474,125.12 obligated per USAspending; period 2024-04-30 — 2026-04-29). | contract | news/arlo-press-cls-vetting-20260503.html |  |
 | 2024-05-23 | WHS issued RFQ HQ003424R0178 ([`/documents/rfq-hq003424r0178`]) under the GSA Federal Supply Schedule — set aside for 8(a) small businesses, sought multiple-award BPAs for technical, administrative, and professional support services to the OUSD(I&S) Enterprise. $856 million good faith estimate amount for all BPAs (aggregate across vendors, not any single vendor's limit). | contract | government/gao-b-422985-wayback-20250708.html |  |
 | 2024-05-23 | Solicitation HQ003424R0178 scoped to SASP and EXDIR support services. | contract | government/gao-b-422985-wayback-20250708.html |  |
+| 2024-05-23 | Arlo's Greenhouse posting "(183) Budget Analyst IV" is published (embedded published_at), before the 2025-02-21 signing of HQ003425F0104: "This opportunity is contingent upon award"; the position supports the SASP office ([`/organizations/ousd-is-sasp`]) and executes the SASP budget with the OUSD(I&S) FMA office ([`/organizations/ousd-is-financial-management-and-accounting`]) (q105–q107). | posting | news/arlo-greenhouse-183-budget-analyst-iv-wayback-20250116.html |  |
 | 2024-09 | WHS established initial BPAs and issued Call Order 1 (EXDIR) to Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]) under HQ003424R0178. Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]) protested. | contract | government/gao-b-422985-wayback-20250708.html |  |
 | 2024-10-16 | GAO dismissed the initial Arlo and Premier protests as academic following WHS's announcement of corrective action — terminating the BPAs and call orders, reevaluating quotations, and making new award decisions. | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-02-07 | Sancorp's proposed staff officer (subject matter expert level IV) key person "X" submitted a letter of resignation on February 7, 2025 ([`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]): "my last official day will be 14 February 2025" — before WHS issued the SASP call order (q6, q60). Sancorp did not advise WHS of X's unavailability. | protest | government/gao-b-422985-wayback-20250708.html |  |
@@ -1353,6 +1776,9 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2025-02-14 | USAspending records BPA HQ003425A0003 to PREMIER ENTERPRISE SOLUTIONS, LLC ([`/organizations/premier-enterprise-solutions`]) of Upper Marlboro, Maryland ([`/locations/upper-marlboro-maryland`]), a MULTIPLE AWARD BPA with date_signed 2025-02-14. The record carries no solicitation number and does not name Arlo. | contract | government/usaspending-hq003425a0003.txt |  |
 | 2025-02-21 | WHS signed BPA Call Order HQ003425F0104 with Arlo ($78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 per USAspending field "base_exercised_options"; the award record's "total_obligation" field reads 0.0). | contract | government/usaspending-arlo-hq003425f0104.json |  |
 | 2025-02-21 | USAspending transaction record for the HQ003425F0104 base award (modification 0): BPA CALL under BPA HQ003425A0004, federal_action_obligation 6327156.07, description "ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES." The transaction record does not name the recipient (q61). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
+| 2025-02-24 | Greenhouse postings (498), (504), (510), (514), and (516) carry embedded published_at 2025-02-24. In their Wayback captures ((498) 2025-07-12; (504) 2026-03-12; (510, 516) 2026-02-27; (514) 2026-08-04), they name SASP ([`/organizations/ousd-is-sasp`]), including C-WMD (510), influence, deception, and perception management (514), and Influence and Perception Management Office ([`/organizations/ipmo`]) operations (516) (q117, q124, q128–q137). No contract number is named. | posting | news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html |  |
+| 2025-02-24 | Arlo Greenhouse postings (495), (497), (499), (500), and (506) carry embedded published_at 2025-02-24. In their 2026-02-27 Wayback captures, they name the HUMINT & Sensitive Activities Directorate ([`/organizations/ousd-is-humint-sensitive-activities-directorate`]) within OUSW(I&S) and do not name SASP; (499) names the Sensitive Activities Executive Council (SA-EXCON) ([`/organizations/sensitive-activities-executive-council`]) (q111–q116, q118–q123, q125–q127). No contract number is named. | posting | news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html |  |
+| 2025-02-26 | Arlo Greenhouse posting 4663123007 "OUSD(I&S) SASP Incumbent" carries embedded published_at 2025-02-26. In its 2025-08-30 Wayback capture, it states Arlo "has recently been awarded" the OUSD(I&S) SASP contract ([`/organizations/ousd-is-sasp`]); only current employees serving as incumbents on this contract are eligible to apply (q108–q110). No contract number is named. | posting | news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html |  |
 | 2025-03-11 | Notice of intent TR011720251116 ([`/documents/samgov-tr011720251116-notice`]) from WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names Booz Allen Hamilton Inc. ([`/organizations/booz-allen-hamilton`]) of McLean Virginia ([`/locations/mclean-virginia`]) as incumbent on Task Order HQ003419F0506 (WHS-AD TEAMS BPA, HQ003415A0010), services concluding March 27, 2025; bridge period March 28 to July 27, 2025. USAspending records another recipient (q91). Arlo is not named. | contract | government/samgov-tr011720251116-notice.json | [`/documents/samgov-tr011720251116-notice`] |
 | 2025-03-13 | USAspending records modification P00001 to HQ003425F0104 as OTHER ADMINISTRATIVE ACTION, federal_action_obligation 0.0 (q62). | contract | government/usaspending-hq003425f0104-transactions.txt |  |
 | 2025-04-28 | Wayback capture of Arlo's Greenhouse posting "(469) Commonwealth Partners Mission Integration Office – Allied Action Officer": a position with OUSD(I&S) ([`/organizations/ousd-is`]) in the Commonwealth & Partnership Engagement (C&PE) Branch ([`/organizations/ousd-is-cpe`]), serving Australia, Canada, New Zealand, and the United Kingdom; work location Bolling AFB, Washington, D.C. ([`/locations/washington-dc`]). Capture date, not posting date; no contract named. | posting | news/arlo-greenhouse-469-cpe-allied-action-officer-wayback-20250428.html |  |
@@ -1373,6 +1799,7 @@ Three Arlo Solutions LLC Greenhouse job posting pages are cited here. The "(469)
 | 2026-02-17 | WHS ([`/organizations/whs`]) signed HQ003426FE011, a BPA CALL under HQ003425A0004, recipient ARLO SOLUTIONS L.L.C., described as "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS (SASP)" support ([`/organizations/ousd-is-sasp`]); 4 offers; "8A COMPETED"; base_and_all_options 59372513.73 (q77–q85). USAspending lists two BPA CALL records under HQ003425A0004: HQ003426FE011 and HQ003425F0104 (hasNext false, as of the 2026-09-26 fetch; q88–q90). | contract | government/usaspending-hq003426fe011.txt |  |
 | 2026-02-27 | Wayback capture of the Arlo Solutions LLC Greenhouse job board: "50 jobs", including the "OUSW (I&S) SASP Incumbent" listing ([`/organizations/ousd-is-sasp`]). Neither the (617) nor the (619) requisition is listed in the capture. | posting | news/arlo-greenhouse-board-wayback-20260227.html |  |
 | 2026-03-16 | Arlo Solutions announced that it "has been awarded a multi-year contract valued at more than $85 million" for SASP support, in a press release naming Lonye Ford ([`/people/lonye-ford`]) as CEO. No contract number is named in the press release. | publication | news/arlo-press-85m-sasp-20260503.html |  |
+| 2026-04-15 | Arlo Greenhouse posting "(467) HUMINT Policy Staff Officer III" carries embedded published_at 2026-04-15. In its 2026-05-14 Wayback capture, it names a contractor position supporting SASP ([`/organizations/ousd-is-sasp`]), with liaison to Defense HUMINT Executors ([`/organizations/defense-humint-executors`]) (q138, q139). No contract number is named. | posting | news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html |  |
 | 2026-05-13 | HQ003426FE011 period_of_performance start_date; end_date 2026-11-27, potential_end_date 2030-11-27 (q79). | contract | government/usaspending-hq003426fe011.txt |  |
 | 2026-05-27 | USAspending records a period_of_performance end_date of 2026-05-27 (potential_end_date 2026-05-27; record last modified 2026-04-01) for HQ003419F0506, a BPA CALL under BPA HQ003415A0010 whose recipient USAspending records as IAN EVAN & ALEXANDER CORP ([`/organizations/ian-evan-alexander`]), parent recipient BOOZ ALLEN HAMILTON HOLDING CORPORATION (q91–q95). The record does not name Arlo. | contract | government/usaspending-hq003419f0506.txt |  |
 | 2026-06-02 | USAspending records modification P00001 to HQ003426FE011 as a CHANGE ORDER, federal_action_obligation 2194229.63. The two transactions listed (hasNext false), the base award (3500000.0) and P00001, sum to the award-level total_obligation of 5694229.63. The transaction records do not name the recipient and state no reason for the change order (q86, q87, q77). | contract | government/usaspending-hq003426fe011-transactions.txt |  |
@@ -1420,6 +1847,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | WHS-AD | Washington Headquarters Services, Acquisition Directorate | government/samgov-tr011720251116-notice.json |
 | BAH | Booz Allen Hamilton Inc. | government/samgov-tr011720251116-notice.json |
 | OUSW(IS) | OUSD(I&S) | government/usaspending-hq003426fe011.txt |
+| Office of Under Secretary of Defense for Intelligence & Security | Office of the Under Secretary of Defense for Intelligence and Security | news/arlo-greenhouse-4663123007-ousd-is-sasp-incumbent-wayback-20250830.html |
+| HUMIT | HUMINT | news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html |
+| Office of the Under Secretary of War for Intelligence and Security | Office of the Under Secretary of Defense for Intelligence and Security | news/arlo-greenhouse-467-humint-policy-staff-officer-iii-wayback-20260514.html |
+| DoW | DoD | news/arlo-press-85m-sasp-20260503.html |
 
 ---
 
@@ -1464,6 +1895,7 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/congress`]
 - [`/organizations/crowell-moring`]
 - [`/organizations/dcsa`]
+- [`/organizations/defense-humint-executors`]
 - [`/organizations/dod`]
 - [`/organizations/fox-rothschild`]
 - [`/organizations/gao`]
@@ -1471,14 +1903,21 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/organizations/gsa`]
 - [`/organizations/ian-evan-alexander`]
 - [`/organizations/intelligence-community`]
+- [`/organizations/ipmo`]
+- [`/organizations/joint-staff`]
 - [`/organizations/odni`]
 - [`/organizations/osd`]
 - [`/organizations/ousd-is`]
 - [`/organizations/ousd-is-cpe`]
 - [`/organizations/ousd-is-exdir`]
+- [`/organizations/ousd-is-financial-management-and-accounting`]
+- [`/organizations/ousd-is-humint-sensitive-activities-directorate`]
+- [`/organizations/ousd-is-sapco`]
 - [`/organizations/ousd-is-sasp`]
+- [`/organizations/ousd-is-sasp-cp-wmd-directorate`]
 - [`/organizations/premier-enterprise-solutions`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/sensitive-activities-executive-council`]
 - [`/organizations/steele-law-offices`]
 - [`/organizations/usaspending-gov`]
 - [`/organizations/whitcomb-selinsky`]
@@ -1497,6 +1936,8 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/documents/sancorp-supp-comments-exh-b-x-resignation-letter`]
 - [`/documents/sancorp-technical-quotations-hq003424r0178`]
 - [`/documents/ssdd-hq003424r0178`]
+- [`/documents/title-10-us-code`]
+- [`/documents/title-50-us-code`]
 
 ### Locations
 
@@ -1504,5 +1945,6 @@ Non-canonical forms the cited primary source attests for an entity or name — a
 - [`/locations/fairfax-virginia`]
 - [`/locations/falls-church-virginia`]
 - [`/locations/mclean-virginia`]
+- [`/locations/pentagon`]
 - [`/locations/upper-marlboro-maryland`]
 - [`/locations/washington-dc`]

@@ -26,7 +26,8 @@ Premier Enterprise Solutions, LLC is a small business of Upper Marlboro, Marylan
 Premier holds one of the multiple award blanket purchase agreements that WHS established under request for quotations HQ003424R0178 ([`/documents/rfq-hq003424r0178`]), an 8(a) set-aside for support to the OUSD(I&S) enterprise. In September, WHS first issued call order 1 (EXDIR) to Comprehensive Approach Solutions ([`/organizations/comprehensive-approach-solutions`]). Premier and Arlo Solutions ([`/organizations/arlo-solutions`]) filed protests, the agency advised that it would take corrective action, and the Government Accountability Office ([`/organizations/gao`]) dismissed Premier's protest, B-422985.3 ([`/documents/gao-b-422985-3-premier-enterprise-solutions`]), as academic on October 16, 2024. On reevaluation the source selection authority found that Premier's quotation represented the best value for call order 1, which serves the I&S Executive Directorate ([`/organizations/ousd-is-exdir`]); GAO cited the Source Selection Decision Document ([`/documents/ssdd-hq003424r0178`]) for this finding.
 Sancorp Consulting ([`/organizations/sancorp-consulting`]) filed a protest of the EXDIR call order, challenging the evaluation of its own and Premier's technical quotations. Premier was an intervenor, represented by Jonathan D. Perrone ([`/people/jonathan-d-perrone`]), Joshua M. Sather ([`/people/joshua-m-sather`]) and Timothy J. Turner ([`/people/timothy-j-turner`]) of Whitcomb, Selinsky, P.C. ([`/organizations/whitcomb-selinsky`]), and Sharon O. Steele ([`/people/sharon-o-steele`]) of Steele Law Offices, LLC ([`/organizations/steele-law-offices`]). GAO denied the protest in B-422985.4 and B-422985.5 ([`/documents/gao-b-422985-4-sancorp-consulting`]), finding the technical evaluation reasonable.
 In the award record for BPA HQ003425A0003, the recipient of a MULTIPLE AWARD BPA for support to the OUSD(I&S) Enterprise is Premier. The record for BPA call HQ003425F0105 under it has solicitation identifier HQ003424R0178 and an 8(a) competed set-aside; from modification P00004, its transaction description is professional, technical and administrative support to the Executive Directorate. Both records name the funding office as OSD OUSD(I) under the Immediate Office of the Secretary of Defense ([`/organizations/osd`]). The HQ003425F0105 record has the number of offers received as 1, while the GAO decision states that the agency received quotations from nine vendors and reports technical, past performance and price results for both Sancorp and Premier on call order 1.
-A March 2025 notice of intent ([`/documents/samgov-tr011720251116-notice`]) from the Washington Headquarters Services Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that Premier is the incumbent contractor on contract HQ003422C0127, with services concluding on March 27, 2025, and that the agency intends to award it a short-term, sole source extension. The notice states only an anticipated award; no archived source shows that the extension was awarded. Booz Allen Hamilton ([`/organizations/booz-allen-hamilton`]), Digital Forensics Services ([`/organizations/digital-forensics-services`]) and Sancorp are the other incumbent contractors in the same notice, while the requirements for an Enterprise Blanket Purchase Agreement for OUSD(I&S) were going through the procurement process for award.
+Contract HQ003422C0127, a definitive contract for process improvement, innovation, and training support services, was signed in September 2022 by WHS as an 8(a) sole source award under solicitation HQ003422R0262 ([`/documents/solicitation-hq003422r0262`]), and its funding office is also OSD OUSD(I). A March 2025 notice of intent ([`/documents/samgov-tr011720251116-notice`]) from the Washington Headquarters Services Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) states that Premier is the incumbent contractor on contract HQ003422C0127, with services concluding on March 27, 2025, and that the agency intends to award it a short-term, sole source extension. In the FPDS ([`/organizations/fpds`]) record for HQ003422C0127, modification P00011, a change order signed March 27, 2025, moved the current completion date from March 27, 2025 to July 27, 2025, and the award record for HQ003422C0127 has an end date of July 27, 2025, matching the end of the bridge period in the notice; neither record names the notice. Booz Allen Hamilton ([`/organizations/booz-allen-hamilton`]), Digital Forensics Services ([`/organizations/digital-forensics-services`]) and Sancorp are the other incumbent contractors in the same notice, while the requirements for an Enterprise Blanket Purchase Agreement for OUSD(I&S) were going through the procurement process for award.
+Three Premier job posting pages, with no posting date, name the OUSD(I&S): the Executive Secretariat Support posting names the OUSD(I&S) and its Front Office ([`/organizations/ousd-is-front-office`]), the Budget Analyst III posting is to support the OUSD(I&S), and the Innovation Governance SME posting is for support of the OUSD(I&S) Chief Technology Officer ([`/organizations/ousd-is-cto`]). None of the three names a contract number.
 The company's own website states that it is an SBA ([`/organizations/sba`]) 8(a) certified contractor and a Service-Disabled Veteran-Owned Small Business, with Jacqueline K. Lopez ([`/people/jacqueline-k-lopez`]) as President and Michael R. Lopez ([`/people/michael-r-lopez`]) as Co-founder and COO. According to the website, Veritium Ingenuity ([`/organizations/veritium-ingenuity`]) is a joint venture between ProSphere Tek, Inc. ([`/organizations/prosphere-tek`]) and Premier, and ProSphere is a wholly owned subsidiary of Planned Systems International ([`/organizations/planned-systems-international`]). It states that Premier is a prime contract holder for OASIS+, SeaPort NxG (which the Department of the Navy ([`/organizations/department-of-the-navy`]), Naval Sea Systems Command ([`/organizations/navsea`]) sponsors), 8(a) STARS III and GSA MAS from the General Services Administration ([`/organizations/gsa`]), and eFAST FAA ([`/organizations/faa`]). The website has statements about Premier's work from the Air National Guard ([`/organizations/air-national-guard`]), a Department of Defense Project Director, a TMF ([`/organizations/tmf`]) Project Director and a Veteran Affairs ([`/organizations/va`]) Project Lead, and its Business Designations are SDVOSB, WOSB/EDWOSB and MDOT ([`/organizations/mdot`]) MBE Certification.
 The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDaily ([`/documents/samdaily-fbo-06693814-hq003423c0061`]), states that WHS/AD awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide support services to the IPMO ([`/organizations/ipmo`]), while the Awardee on the same notice is Sancorp Consulting, LLC. The award record for HQ003423C0061, under solicitation HQ003423R0148 ([`/documents/solicitation-hq003423r0148`]), has SANCORP CONSULTING, LLC as recipient, with an address in Falls Church ([`/locations/falls-church-virginia`]), Fairfax County ([`/locations/fairfax-county-virginia`]), Virginia.
 
@@ -59,6 +60,138 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ## Key Passages
 
+### USAspending transaction record for the HQ003422C0127 base award (modification_number "0", type DEFINITIVE CONTRACT), action_date 2022-09-28, action_type null, federal_action_obligation 1061911.68. The description reads "PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES".
+
+> "action_date":"2022-09-28","action_type":null,"action_type_description":null,"modification_number":"0","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":1061911.68
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-28 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction 0 / base award ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### Base award (modification 0) of HQ003422C0127: signed and effective September 28, 2022; current completion date September 27, 2023; ultimate completion date September 27, 2023.
+
+> <ns1:modNumber>0</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2022-09-28 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2023-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-28 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber 0, awardID + relevantContractDates block |
+
+---
+
+### The funding/requesting office on the HQ003422C0127 base award is recorded as "OSD OUSD(I)", office code HQ0208.
+
+> <ns1:fundingRequestingOfficeID name="OSD OUSD(I)">HQ0208</ns1:fundingRequestingOfficeID>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-28 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber 0, element fundingRequestingOfficeID |
+
+---
+
+### Modification P00001, action_date 2022-12-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 53229.6. Its description reads "COS SUPPORT" — the first transaction on the contract whose description differs from the base award's services phrase.
+
+> "action_date":"2022-12-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00001","description":"COS SUPPORT","federal_action_obligation":53229.6
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-12-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00001 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00001, signed December 6, 2022; reason for modification "OTHER ADMINISTRATIVE ACTION". The current completion date stays September 27, 2023. The ultimate completion date is recorded as September 27, 2024 (base award: September 27, 2023).
+
+> <ns1:modNumber>P00001</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2022-12-06 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-12-06 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00001, awardID + relevantContractDates block |
+
+---
+
+### Modification P00002, action_date 2023-01-20, action type C (FUNDING ONLY ACTION), federal_action_obligation 159688.8; description unchanged from the base award.
+
+> "action_date":"2023-01-20","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00002","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":159688.8
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-01-20 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00002 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00002, signed January 20, 2023; reason for modification "FUNDING ONLY ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+
+> <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-01-20 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-01-20 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00002, awardID + relevantContractDates block |
+
+---
+
+### Modification P00003, action_date 2023-03-09, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 84855.36; description unchanged from the base award.
+
+> "action_date":"2023-03-09","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00003","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":84855.36
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-03-09 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00003 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00003, signed March 9, 2023; reason for modification "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+
+> <ns1:modNumber>P00003</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-03-09 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-03-09 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00003, awardID + relevantContractDates block |
+
+---
+
+### Modification P00004, action_date 2023-05-16, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. Its description extends the base services phrase with "FOR CHIEF OF STAFF SUPPORT". The record does not say which organization's Chief of Staff.
+
+> "action_date":"2023-05-16","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES FOR CHIEF OF STAFF SUPPORT","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-05-16 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00004 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00004, signed May 16, 2023; reason for modification "OTHER ADMINISTRATIVE ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+
+> <ns1:modNumber>P00004</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-05-16 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-05-16 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00004, awardID + relevantContractDates block |
+
+---
+
 ### The only Premier-naming passage in the HQ003423C0061 award notice. The Description prose names Premier Enterprise Solutions, LLC as the recipient of the IPMO support-services 8(a) direct award, but the same notice's structured Awardee field names Sancorp Consulting, LLC. The notice contradicts itself and does not attest a Premier IPMO contract.
 
 > Washington Headquarters Services/Acquisition Directorate (WHS/AD) awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO.
@@ -80,6 +213,114 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 | Attributed to | Awardee field of the SAM.gov Award Notice for HQ003423C0061 (Award Amount 4181853.92; Award Date 05/25/2023). 2023-05-25 |
 | Source | [archived source](../sources/news/samdaily-fbo-06693814-hq003423c0061.html) |
 | Location | ¶ Awardee |
+
+---
+
+### Modification P00005, action_date 2023-07-31, action type G (EXERCISE AN OPTION), federal_action_obligation 1642189.03 — the largest single obligation in the transaction list. Description unchanged from the base award.
+
+> "action_date":"2023-07-31","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00005","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":1642189.03
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-07-31 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00005 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00005, signed July 31, 2023; reason for modification "EXERCISE AN OPTION". It moves the current completion date from September 27, 2023 to September 27, 2024. The ultimate completion date is September 27, 2024.
+
+> <ns1:modNumber>P00005</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-07-31 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-07-31 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00005, awardID + relevantContractDates block |
+
+---
+
+### P00006, signed August 29, 2023. Current and ultimate completion dates September 27, 2024 (unchanged).
+
+> <ns1:modNumber>P00006</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-08-29 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2023-08-29 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00006, awardID + relevantContractDates block |
+
+---
+
+### Modification P00008, action_date 2024-09-28, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. P00008's description spells out CHIEF OF STAFF (COS); P00001 and P00011 read "COS SUPPORT". The record does not say which organization's Chief of Staff. P00008 carries the same action_date as P00007 and precedes it in the file's ordering.
+
+> "action_date":"2024-09-28","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00008","description":"PROCESS IMPROVEMENT, INNOVATION AND TRAINING SUPPORT SERVICES FOR THE CHIEF OF STAFF (COS)","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-28 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00008 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### Modification P00007, action_date 2024-09-28, action type G (EXERCISE AN OPTION), federal_action_obligation 750616.7; description unchanged from the base award. This is the second option exercise in the list.
+
+> "action_date":"2024-09-28","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00007","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":750616.7
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-28 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00007 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00007, signed September 28, 2024; reason for modification "EXERCISE AN OPTION". The current completion date is recorded as September 28, 2024, and the ultimate completion date moves from September 27, 2024 to March 27, 2025.
+
+> <ns1:modNumber>P00007</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-28 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-28 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-28 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00007, awardID + relevantContractDates block |
+
+---
+
+### P00008, signed September 28, 2024 (the same day as P00007); reason for modification "OTHER ADMINISTRATIVE ACTION". It moves the current completion date to March 27, 2025. The ultimate completion date is March 27, 2025.
+
+> <ns1:modNumber>P00008</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-28 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-28 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00008, awardID + relevantContractDates block |
+
+---
+
+### Modification P00009, action_date 2025-02-20, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5145.28 (a deobligation). The description is the base services phrase without the comma after "INNOVATION".
+
+> "action_date":"2025-02-20","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00009","description":"PROCESS IMPROVEMENT, INNOVATION AND TRAINING SUPPORT SERVICES","federal_action_obligation":-5145.28
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-02-20 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00009 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00009, signed February 20, 2025; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates March 27, 2025 (unchanged).
+
+> <ns1:modNumber>P00009</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-02-20 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-02-20 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127.txt) |
+| Location | entry modNumber P00009, awardID + relevantContractDates block |
 
 ---
 
@@ -131,6 +372,30 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
+### Modification P00010, action_date 2025-03-11, action type C (FUNDING ONLY ACTION), federal_action_obligation 139955.94; description unchanged from the base award.
+
+> "action_date":"2025-03-11","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00010","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":139955.94
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-11 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00010 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00010, signed March 11, 2025; reason for modification "FUNDING ONLY ACTION". Current and ultimate completion dates are still March 27, 2025. It is the last modification before P00011.
+
+> <ns1:modNumber>P00010</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-11 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-11 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127-start10.txt) |
+| Location | entry modNumber P00010, awardID + relevantContractDates block |
+
+---
+
 ### HQ003425F0105 modification P00001 (2025-03-13): OTHER ADMINISTRATIVE ACTION, zero obligation.
 
 > "action_date":"2025-03-13","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00001","description":"PROFESSIONAL, TECHNICAL & ADMINISTRATIVE SUPPORT SERVICES.","federal_action_obligation":0.0
@@ -140,6 +405,42 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 | Attributed to | 2025-03-13 |
 | Source | [archived source](../sources/government/usaspending-hq003425f0105-transactions.txt) |
 | Location | "results" entry CONT_TX_9700_9700_HQ003425F0105_P00001_HQ003425A0003_0 — "action_date" through "federal_action_obligation" fields |
+
+---
+
+### Modification P00011, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 535315.2, description "COS SUPPORT". It is the only change order in the transaction list. The transaction record carries no period-of-performance dates, so it does not show what period this obligation covers.
+
+> "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00011","description":"COS SUPPORT","federal_action_obligation":535315.2
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00011 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry's competition block (q170) gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.
+
+> <ns1:modNumber>P00011</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127-start10.txt) |
+| Location | entry modNumber P00011, awardID + relevantContractDates block |
+
+---
+
+### The P00011 entry records reason not competed "AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))" and set-aside "8(A) SOLE SOURCE" (extent competed "NOT AVAILABLE FOR COMPETITION", solicitation procedures "ONLY ONE SOURCE"). SAM.gov notice TR011720251116 cites FAR 6.302-1(a)(2)(iii)(A) for the anticipated bridge. Neither record explains the difference.
+
+> <ns1:competition> <ns1:extentCompeted description="NOT AVAILABLE FOR COMPETITION">B</ns1:extentCompeted> <ns1:solicitationProcedures description="ONLY ONE SOURCE">SSS</ns1:solicitationProcedures> <ns1:typeOfSetAside description="8(A) SOLE SOURCE">8AN</ns1:typeOfSetAside> <ns1:typeOfSetAsideSource description="This Action">F</ns1:typeOfSetAsideSource> <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference> <ns1:reasonNotCompeted description="AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))">OTH</ns1:reasonNotCompeted> <ns1:numberOfOffersReceived>1</ns1:numberOfOffersReceived> <ns1:numberOfOffersSource description="This Action">F</ns1:numberOfOffersSource> <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures> <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram> <ns1:A76Action description="NO">N</ns1:A76Action> <ns1:fedBizOpps description="YES">Y</ns1:fedBizOpps> <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside> <ns1:priceEvaluationPercentDifference>0.00</ns1:priceEvaluationPercentDifference></ns1:competition> <ns1:preferencePrograms> <ns1:subcontractPlan description="PLAN NOT REQUIRED">B</ns1:subcontractPlan></ns1:preferencePrograms> <ns1:transactionInformation> <ns1:createdBy>SYREETA.A.DONALD.CIV.HQ0034@MAIL.MIL</ns1:createdBy> <ns1:createdDate>2025-03-27 21:52:14</ns1:createdDate>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127-start10.txt) |
+| Location | entry modNumber P00011, competition block through preferencePrograms and transactionInformation createdBy/createdDate |
 
 ---
 
@@ -815,6 +1116,198 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
+### Identifies HQ003422C0127 as a DEFINITIVE CONTRACT (type D) with no parent vehicle in its award id (-NONE-); description PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES.
+
+> "generated_unique_award_id":"CONT_AWD_HQ003422C0127_9700_-NONE-_-NONE-","piid":"HQ003422C0127","category":"contract","type":"D","type_description":"DEFINITIVE CONTRACT","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "generated_unique_award_id" … "description" |
+
+---
+
+### Award value: total obligation 4417617.03, base and exercised options 4417617.03, base and all options 4418116.87; signed 2022-09-28; no subawards.
+
+> "total_obligation":4417617.03,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2022-09-28","base_exercised_options":4417617.03,"base_and_all_options":4418116.87
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "total_obligation" … "base_and_all_options" |
+
+---
+
+### Solicitation HQ003422R0262; solicitation procedures SSS; one offer received; set-aside 8(A) SOLE SOURCE.
+
+> "solicitation_identifier":"HQ003422R0262","solicitation_procedures":"SSS","number_of_offers_received":"1","extent_competed":"B","type_set_aside":"8AN","type_set_aside_description":"8(A) SOLE SOURCE"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "latest_transaction_contract_data.solicitation_identifier" … "type_set_aside_description" |
+
+---
+
+### Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value (q170). Neither record explains the difference; both are kept as published.
+
+> "solicitation_procedures_description":"ONLY ONE SOURCE","extent_competed_description":"NOT AVAILABLE FOR COMPETITION","other_than_full_and_open":"OTH","other_than_full_and_open_description":"AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "latest_transaction_contract_data.solicitation_procedures_description" … "other_than_full_and_open_description" |
+
+---
+
+### PSC R499 and NAICS 541611 classification of the work.
+
+> "product_or_service_code":"R499","naics":"541611","naics_description":"ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "latest_transaction_contract_data.product_or_service_code" / "naics" / "naics_description" |
+
+---
+
+### PSC description: SUPPORT- PROFESSIONAL: OTHER.
+
+> "product_or_service_description":"SUPPORT- PROFESSIONAL: OTHER"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "latest_transaction_contract_data.product_or_service_description" |
+
+---
+
+### Pricing type: firm fixed price.
+
+> "type_of_contract_pricing_description":"FIRM FIXED PRICE"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "latest_transaction_contract_data.type_of_contract_pricing_description" |
+
+---
+
+### Funding agency for HQ003422C0127: Department of Defense, subtier Immediate Office of the Secretary of Defense (SECDEF); funding office recorded as "OSD OUSD(I)", the same funding office recorded on the HQ003425A0003 BPA and HQ003425F0105 call-order records.
+
+> "funding_agency":{"id":1215,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "funding_agency" |
+
+---
+
+### Awarding agency for HQ003422C0127: Washington Headquarters Services (WHS), Department of Defense.
+
+> "awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "awarding_agency" |
+
+---
+
+### Performance 2022-09-28 to 2025-07-27; potential end 2025-07-27; record last modified 2026-05-06. SAM.gov notice TR011720251116 names Premier as incumbent on HQ003422C0127 with services concluding on March 27, 2025, and announces a bridge from March 28, 2025, to July 27, 2025. The award record's end_date and potential_end_date (2025-07-27) match the bridge end date announced in the notice.
+
+> "period_of_performance":{"start_date":"2022-09-28","end_date":"2025-07-27","last_modified_date":"2026-05-06","potential_end_date":"2025-07-27 00:00:00"}
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "period_of_performance" |
+
+---
+
+### Recipient of HQ003422C0127 is PREMIER ENTERPRISE SOLUTIONS, LLC, UEI SN5KHDCRNDM5; parent recipient is the same entity.
+
+> "recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","recipient_uei":"SN5KHDCRNDM5","recipient_unique_id":null,"parent_recipient_hash":"dec4b805-420d-1eed-8610-17379f5cd80a-P","parent_recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","parent_recipient_uei":"SN5KHDCRNDM5"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "recipient.recipient_name" … "parent_recipient_uei" |
+
+---
+
+### Recipient business categories on the HQ003422C0127 record, including 8(a) Program Participant, Black American Owned Business, Service Disabled Veteran Owned Business, and Woman Owned Business.
+
+> "business_categories":["8(a) Program Participant","Black American Owned Business","Category Business","Corporate Entity Not Tax Exempt","DoT Certified Disadvantaged Business Enterprise","Economically Disadvantaged Women Owned Small Business","Limited Liability Corporation","Minority Owned Business","Self-Certified Small Disadvantaged Business","Service Disabled Veteran Owned Business","Small Business","Special Designations","U.S.-Owned Business","Veteran Owned Business","Woman Owned Business","Women Owned Small Business"]
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "recipient.business_categories" |
+
+---
+
+### Recipient address 9701 APOLLO DRIVE SUITE 410, Upper Marlboro, Prince George's County, Maryland 20774-4791. The HQ003425F0105 award record writes the same street address as "9701 APOLLO DR STE 410".
+
+> "location":{"location_country_code":"USA","country_name":"UNITED STATES","state_code":"MD","state_name":"MARYLAND","city_name":"UPPER MARLBORO","county_code":"033","county_name":"PRINCE GEORGE'S","address_line1":"9701 APOLLO DRIVE SUITE 410","address_line2":null,"address_line3":null,"congressional_code":"04","zip4":"4791","zip5":"20774"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "recipient.location" |
+
+---
+
+### Place of performance Washington, DC 20301-1400.
+
+> "place_of_performance":{"location_country_code":"USA","country_name":"UNITED STATES","county_code":"001","county_name":"DISTRICT OF COLUMBIA","city_name":"WASHINGTON","state_code":"DC","state_name":"DISTRICT OF COLUMBIA","congressional_code":"98","zip4":"1400","zip5":"20301"
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127.txt) |
+| Location | field "place_of_performance" |
+
+---
+
+### Modification P00012, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5000.0 (a deobligation); description unchanged from the base award. It is the last transaction in the list.
+
+> "action_date":"2026-05-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00012","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":-5000.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0127-transactions.txt) |
+| Location | transaction P00012 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003422C0127 |
+
+---
+
+### P00012, signed May 6, 2026; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates stay at July 27, 2025.
+
+> <ns1:modNumber>P00012</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2026-05-06 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-05-06 |
+| Source | [archived source](../sources/government/fpds-hq003422c0127-start10.txt) |
+| Location | entry modNumber P00012, awardID + relevantContractDates block |
+
+---
+
 ### The company's own About page names Michael R. Lopez as Co-founder and COO and quotes him on the founders' principle.
 
 > Premier’s founders envisioned a revolutionary approach to business, rooted in the belief that change starts from within and radiates outward, redefining what it means to serve others and deliver value.  “We live this principle daily, ensuring it’s at the core of everything we do by fostering a culture of dedication and excellence for everyone we serve.” – Michael R. Lopez, Co-founder and COO
@@ -1425,10 +1918,155 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
+### Premier's own posting defines the Executive Secretariat Support function (correspondence control, tasking and tracking, records management, mail/courier, audit program support) and names the OUSD(I&S) first in its customer list.
+
+> Premier Enterprise Solutions is seeking Executive Secretariat Support to provide correspondence control and training; tasking and tracking management; records management, filing and archiving; mail distribution; and courier service; electronic initiatives support; audit program support; and related Executive administrative support. Customer impact is both internal and external, encompassing the OUSD(I&S), Secretary of Defense, Deputy Secretary of Defense, OSD Components, Joint Staff, Combatant Commands, the Military Services, the Executive Branch Agencies, Congress, and the public.
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed posting captured 2026-09-25 as browser-rendered text; posting date not shown. The posting names no contract number. |
+| Source | [archived source](../sources/news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt) |
+| Location | ¶ Premier Enterprise Solutions is seeking Executive Secretariat Support |
+
+---
+
+### Records Management Liaison Support task: the posting states the file system it supports governs paper files and archives for the OUSD(I&S), under Administrative Instruction 15.
+
+> The Executive Secretariat shall support the planning, development, and maintenance of a user-friendly, effective file system compliant with Department regulations. Administrative Instruction 15 (AI 15) will be the basis for the development and governance of paper files and archives for the OUSD(I&S).
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed posting captured 2026-09-25 as browser-rendered text; posting date not shown. Listed under the posting heading "Records Management Liaison Support". |
+| Source | [archived source](../sources/news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt) |
+| Location | ¶ The Executive Secretariat shall support the planning, development, and maintenance |
+
+---
+
+### The posting assigns the role the distribution plan for all OUSD(I&S) outgoing correspondence.
+
+> The Executive Secretariat shall develop and maintain an electronic mail distribution plan for all OUSD(I&S) outgoing correspondence.
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed posting captured 2026-09-25 as browser-rendered text; posting date not shown. Listed under the posting heading "Records Management Liaison Support". |
+| Source | [archived source](../sources/news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt) |
+| Location | ¶ The Executive Secretariat shall develop and maintain an electronic mail distribution plan |
+
+---
+
+### The posting assigns the role physical coverage of the OUSD(I&S) Front Office when its staffing is short.
+
+> The Executive Secretariat will provide physical support coverage to the OUSD(I&S) Front Office during periods where manning is negatively impacted due to outages or limitations of availability for current staff.
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed posting captured 2026-09-25 as browser-rendered text; posting date not shown. Listed under the posting heading "Front Office Support". |
+| Source | [archived source](../sources/news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt) |
+| Location | ¶ The Executive Secretariat will provide physical support coverage |
+
+---
+
+### The posting assigns the role administrative support to the OUSD(I&S) Front Office on specified projects or tasks.
+
+> The Executive Secretariat will provide administrative support to the OUSD(I&S) Front Office on specified projects or tasks
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed posting captured 2026-09-25 as browser-rendered text; posting date not shown. Listed under the posting heading "Front Office Support". The source line carries no terminal period. |
+| Source | [archived source](../sources/news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt) |
+| Location | ¶ The Executive Secretariat will provide administrative support to the OUSD(I&S) Front Office |
+
+---
+
+### Premier's own Budget Analyst III posting (Position Overview) states that the role supports the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)). It defines the function as subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
+
+> Premier Enterprise Solutions is seeking a highly skilled Budget Analyst to support the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)). This role provides subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
+
+| Field | Value |
+|---|---|
+| Attributed to | Position Overview section of the Indeed employer posting "Budget Analyst III", Premier Enterprise Solutions - Washington, DC; location Pentagon (Onsite); Full-Time. No posting date is shown in the capture. The posting names no contract number. |
+| Source | [archived source](../sources/news/premier-indeed-08347bfab13852f0-budget-analyst-iii-20260925.txt) |
+| Location | ¶ Premier Enterprise Solutions is seeking a highly skilled Budget Analyst |
+
+---
+
+### Key Responsibilities item: the Budget Analyst III coordinates with OUSD(I&S), OSD, Defense Agencies, and Military Services on budget assessments and estimates.
+
+> Coordinate with OUSD(I&S), OSD, Defense Agencies, and Military Services on budget assessments and estimates.
+
+| Field | Value |
+|---|---|
+| Attributed to | Key Responsibilities list of the same posting. |
+| Source | [archived source](../sources/news/premier-indeed-08347bfab13852f0-budget-analyst-iii-20260925.txt) |
+| Location | ¶ Coordinate with OUSD(I&S), OSD, Defense Agencies |
+
+---
+
+### Key Responsibilities item that names the PPBE deliverables of the role: budget exhibits and Congressional Justification Book submissions.
+
+> Prepare PPBE budget exhibits and Congressional Justification Book submissions.
+
+| Field | Value |
+|---|---|
+| Attributed to | Key Responsibilities list of the same posting. |
+| Source | [archived source](../sources/news/premier-indeed-08347bfab13852f0-budget-analyst-iii-20260925.txt) |
+| Location | ¶ Prepare PPBE budget exhibits |
+
+---
+
+### Premier Enterprise Solutions recruits an Innovation Governance SME to support the Chief Technology Officer (CTO) of the office the posting names as "Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S))". The long form says "Defense"; the acronym says "OUSW". Both are preserved verbatim.
+
+> Premier Enterprise Solutions is seeking an Innovation Governance SME to provide expert-level advisory support to senior leaders including the support of the Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S)) Chief Technology Officer (CTO).
+
+| Field | Value |
+|---|---|
+| Attributed to | Indeed job posting "Innovation Governance SME Support", Premier Enterprise Solutions, Washington, DC (Onsite); captured 2026-09-25. The posting shows no posting date and names no contract number. |
+| Source | [archived source](../sources/news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt) |
+| Location | ¶ Premier Enterprise Solutions is seeking an Innovation Governance SME |
+
+---
+
+### Role function: trusted advisor to the CTO on accelerating adoption of emerging technologies, with guidance on acquisition strategies and innovation frameworks supporting CJADC2 objectives.
+
+> Innovation Governance SME will serve as a trusted advisor to the CTO, focusing on accelerating the adoption of emerging technologies to enhance mission capabilities. This role involves providing expert guidance on acquisition strategies and innovation frameworks that support Combined Joint All-Domain Command and Control (CJADC2) objectives.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second and third sentences of the posting's opening paragraph; "the CTO" refers back to the OUSW (I&S) Chief Technology Officer named in the first sentence. |
+| Source | [archived source](../sources/news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt) |
+| Location | ¶ Premier Enterprise Solutions is seeking an Innovation Governance SME |
+
+---
+
+### Responsibilities: staff packages and technical mission integration within "DoW" and across the IC and Defense Community; CATMS tasks; executive summaries of OUSW (l&S) governance forums. "OUSW (l&S)" carries a lowercase "l" in place of "I"; the lowercase "executive" sentence start is also verbatim.
+
+> Develop staff packages and integrate technical mission efforts within DoW and across the IC and Defense Community. Respond to CATMS tasks. executive summaries of OUSW (l&S) governance forums.
+
+| Field | Value |
+|---|---|
+| Attributed to | First bullet under "Responsibilities:". |
+| Source | [archived source](../sources/news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt) |
+| Location | ¶ Develop staff packages and integrate technical mission efforts |
+
+---
+
+### Responsibilities: analyze intelligence-related activities against the National Defense Strategy and the priorities of the "Secretary of War and Undersecretary of War for Intelligence and Security"; the posting uses the titles "Secretary of War" and "Undersecretary of War for Intelligence and Security" (with "Undersecretary" as one word).
+
+> Analyze intelligence related activities against the National Defense Strategy and the priorities of the Secretary of War and Undersecretary of War for Intelligence and Security.
+
+| Field | Value |
+|---|---|
+| Attributed to | Second bullet under "Responsibilities:". |
+| Source | [archived source](../sources/news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt) |
+| Location | ¶ Analyze intelligence related activities |
+
+---
+
 ## Primary Contracts
 
 | Contract | Contracting Agency | Period | Signed | Value | Counterparty | Subject | Source |
 |---|---|---|---|---|---|---|---|
+| HQ003422C0127 | WHS | 2022-09-28 – 2025-07-27 | 2022-09-28 | 4417617.03 (total obligation); 4418116.87 (base and all options) | [`/organizations/premier-enterprise-solutions`] | PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES | government/usaspending-hq003422c0127.txt |
 | HQ003425A0003 | WHS | 2025-02-15 – 2030-02-14 | 2025-02-14 | 1856000000.0 (base and all options) | [`/organizations/premier-enterprise-solutions`] | technical, administrative and professional support services | government/usaspending-hq003425a0003.txt |
 | HQ003425F0105 | WHS | 2025-02-21 – 2026-12-27 | 2025-02-21 | 16658158.42 (total obligation); 73719023.85 (base and all options) | [`/organizations/premier-enterprise-solutions`] | professional, technical & administrative support services | government/usaspending-hq003425f0105.txt |
 
@@ -1438,12 +2076,14 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
+| 2022-09-28 | Definitive contract HQ003422C0127 signed with Premier Enterprise Solutions, LLC by Washington Headquarters Services, for process improvement, innovation, and training support services; 8(a) sole source, solicitation HQ003422R0262, one offer received. | contract | government/usaspending-hq003422c0127.txt | [`/documents/solicitation-hq003422r0262`] |
 | 2023-05-25 | SAM.gov award notice for HQ003423C0061 from Washington Headquarters Services: the Description names Premier Enterprise Solutions, LLC as recipient of an 8(a) direct award for support services to the IPMO; the Awardee is Sancorp Consulting, LLC. | contract | news/samdaily-fbo-06693814-hq003423c0061.html | [`/documents/samdaily-fbo-06693814-hq003423c0061`] |
 | 2024-05-23 | WHS issued RFQ HQ003424R0178, an 8(a) set-aside to establish multiple award BPAs for OUSD(I&S) enterprise support services. | contract | government/gao-b-422985-wayback-20250708.html | [`/documents/rfq-hq003424r0178`] |
 | 2024-10-16 | GAO dismissed Premier's protest B-422985.3 of the September call order 1 (EXDIR) award to Comprehensive Approach Solutions as academic, after the agency stated it would terminate the BPAs and call orders and reevaluate quotations. | filing | government/gao-b-422985-wayback-20250708.html | [`/documents/gao-b-422985-3-premier-enterprise-solutions`] |
 | 2025-02-14 | BPA HQ003425A0003 signed with Premier Enterprise Solutions, LLC by Washington Headquarters Services (MULTIPLE AWARD). | contract | government/usaspending-hq003425a0003.txt |  |
 | 2025-02-21 | BPA call HQ003425F0105 under HQ003425A0003 signed, for professional, technical & administrative support services (solicitation HQ003424R0178). | contract | government/usaspending-hq003425f0105.txt |  |
 | 2025-03-11 | WHS Acquisition Directorate notice of intent TR011720251116 names Premier Enterprise Solutions, LLC as incumbent contractor on HQ003422C0127, with services concluding on March 27, 2025, and an anticipated (intended, not attested as awarded) short-term, sole source extension from March 28, 2025, to July 27, 2025. | contract | government/samgov-tr011720251116-notice.json | [`/documents/samgov-tr011720251116-notice`] |
+| 2025-03-27 | HQ003422C0127 modification P00011, a change order (description COS SUPPORT), signed; the FPDS record moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025, the end date of the bridge period announced in notice TR011720251116. The FPDS record does not name the notice. | contract | government/fpds-hq003422c0127-start10.txt | [`/organizations/fpds`] |
 | 2025-06-11 | GAO denied Sancorp Consulting's protest (B-422985.4; B-422985.5) of the orders to Premier and Arlo; Premier was an intervenor. | filing | government/gao-b-422985-wayback-20250708.html | [`/documents/gao-b-422985-4-sancorp-consulting`] |
 | 2025-07-25 | HQ003425F0105 modification P00004, a supplemental agreement for work within scope; its description names professional, technical and administrative support to the Executive Directorate of the Office of the Under Secretary of Defense for Intelligence and Security. | contract | government/usaspending-hq003425f0105-transactions.txt | [`/organizations/ousd-is-exdir`] |
 | 2025-12-26 | HQ003425F0105 modification P00006 exercised an option, obligating 10466026.2. | contract | government/usaspending-hq003425f0105-transactions.txt |  |
@@ -1461,7 +2101,7 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 | [`/organizations/whs-acquisition-directorate`] | contracting-agency | government/samgov-tr011720251116-notice.json |
 | [`/organizations/dod`] | contracting-agency | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/osd`] | funder | government/usaspending-hq003425a0003.txt |
-| [`/organizations/ousd-is`] | other | government/samgov-tr011720251116-notice.json |
+| [`/organizations/ousd-is`] | requiring-office | government/samgov-tr011720251116-notice.json |
 | [`/organizations/ousd-is-exdir`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/sancorp-consulting`] | other | government/gao-b-422985-wayback-20250708.html |
 | [`/organizations/arlo-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
@@ -1475,6 +2115,8 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 | [`/organizations/va`] | other | news/premier-home-20260926.html |
 | [`/organizations/tmf`] | other | news/premier-home-20260926.html |
 | [`/organizations/mdot`] | other | news/premier-home-20260926.html |
+| [`/organizations/ousd-is-cto`] | other | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
+| [`/organizations/ousd-is-front-office`] | other | news/premier-indeed-d41e1123c7b7096c-executive-secretariat-support-20260925.txt |
 
 ### Flagged
 
@@ -1505,6 +2147,11 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | eFast | eFAST | news/premier-about-20260926.html |
 | Managment | Management | news/premier-about-20260926.html |
 | Veteran Affairs | Department of Veterans Affairs | news/premier-home-20260926.html |
+| Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S)) | Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)) | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
+| OUSW (l&S) | OUSD(I&S) | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
+| Undersecretary of War for Intelligence and Security | Under Secretary of Defense for Intelligence and Security | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
+| DoW | DoD | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
+| Secretary of War | Secretary of Defense | news/premier-indeed-47b7f47186f31223-innovation-governance-sme-support-20260925.txt |
 
 ---
 
@@ -1531,6 +2178,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/digital-forensics-services`]
 - [`/organizations/dod`]
 - [`/organizations/faa`]
+- [`/organizations/fpds`]
 - [`/organizations/gao`]
 - [`/organizations/gsa`]
 - [`/organizations/ipmo`]
@@ -1538,7 +2186,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/navsea`]
 - [`/organizations/osd`]
 - [`/organizations/ousd-is`]
+- [`/organizations/ousd-is-cto`]
 - [`/organizations/ousd-is-exdir`]
+- [`/organizations/ousd-is-front-office`]
 - [`/organizations/planned-systems-international`]
 - [`/organizations/prosphere-tek`]
 - [`/organizations/sancorp-consulting`]
@@ -1558,6 +2208,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/documents/rfq-hq003424r0178`]
 - [`/documents/samdaily-fbo-06693814-hq003423c0061`]
 - [`/documents/samgov-tr011720251116-notice`]
+- [`/documents/solicitation-hq003422r0262`]
 - [`/documents/solicitation-hq003423r0148`]
 - [`/documents/ssdd-hq003424r0178`]
 

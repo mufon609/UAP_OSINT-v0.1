@@ -157,10 +157,16 @@ Written 2026-09-26.
   Sancorp's CL&S order FE388 began.
 - **[I, moderate]** CL&S moved from Arlo to Sancorp while SASP moved to Arlo.
   The subject areas match, but no record links the orders.
-- **[O]** IPMO's standalone contract HQ003424C0046 was on the March 2025
+- **[E]** IPMO's standalone contract HQ003424C0046 was on the March 2025
   bridge list, yet its USAspending record runs to **2026-05-27**
-  (`government/usaspending-hq003424c0046.txt`). How was it extended, and what
-  carries IPMO support now?
+  (`government/usaspending-hq003424c0046.txt`). The FPDS record
+  (`government/fpds-hq003424c0046.txt`) shows how: P00002 (signed
+  2025-03-27, change order) moved completion from 2025-03-27 to 2025-07-27,
+  the announced bridge period; P00006 (signed 2025-07-25, change order) moved
+  it to 2026-05-27. The USAspending transactions
+  (`government/usaspending-hq003424c0046-transactions.txt`) describe
+  P00002–P00004 as "IPMO SUPPORT SERVICES". **[O]** What carries IPMO
+  support after 2026-05-27 is still open.
 
 ## 4. IPMO's chain of command meets UAP oversight [E, requester-described]
 
@@ -255,9 +261,24 @@ Written 2026-09-26.
 
 ## 5. What SASP is, from its own hiring [E]
 
-Arlo's SASP postings (177 Wayback captures, summarized in
-`.scratch/drafts/contractor-postings-20260925/arlo-wayback-history/summary.csv`,
-parked under BACKLOG C6) describe these staff lines:
+Arlo's Greenhouse postings for OUSD(I&S) describe these staff lines. The
+24 that name the SASP office or its HUMINT & Sensitive Activities
+Directorate are archived as `news/arlo-greenhouse-{req}-*-wayback-*.html`
+(Wayback raw captures; e.g. `news/arlo-greenhouse-499-reports-and-assessments-staff-officer-i-wayback-20260227.html`
+for SA-EXCON, `news/arlo-greenhouse-510-c-wmd-staff-officer-i-wayback-20260227.html`
+for Title 50, `news/arlo-greenhouse-514-influence-deception-perception-mgmt-staff-officer-v-wayback-20260804.html`),
+and the load-bearing passages are quoted on `organizations/arlo-solutions`.
+Twelve name SASP (182, 183, 467, 498, 502, 504, 505, 510, 512, 514, 516 and
+the "OUSD(I&S) SASP Incumbent" post); the other twelve name only the HUMINT &
+Sensitive Activities Directorate (495–497, 499–501, 506, 507, 509, 511, 666,
+667) and do not themselves say the directorate sits in SASP. The C-WMD
+postings (510, 512) place their directorate "within the Sensitive
+Activities & Special Programs (SASP) Office". Two lines below come from the same 2025-02-24
+requisition batch but name their own OUSW(I&S) directorates, not SASP, and
+are not archived locally: functional intelligence and defense analysis (515,
+`web.archive.org/web/20260227082536/https://job-boards.greenhouse.io/arlosolutionsllc/jobs/4660833007`)
+and national programs and policy support (508, `…/jobs/4660772007`, same
+capture timestamp).
 
 - special operations support policy
 - HUMINT policy
@@ -272,7 +293,10 @@ parked under BACKLOG C6) describe these staff lines:
 
 Several of these roles produce reports for Congress. The influence,
 deception and perception management postings date from 2025-02-24 (job
-4660812007), **three days after F0104's award**. They belong to SASP's own
+4660812007, SME IV, text at
+`meta/topic/incidents/2026-09-24-wayback-capture-loss/evidence/local-copies/job-text/job-4660812007.txt`;
+job 4660820007, SME V, `news/arlo-greenhouse-514-*`), **three days after
+F0104's award**. They belong to SASP's own
 remit and were not a reaction to IPMO's contract ending.
 
 ## 6. What this does not show
@@ -313,5 +337,7 @@ document states it.
    Tipton and the IG UAP evaluation in the agency's own words (§4). Partly
    done: both foia nodes are built. The agency text is archived but waits on
    the BACKLOG C9 OCR pass.
-3. HQ003424C0046's transaction history and IPMO's post-May-2026 support (§3).
+3. IPMO's post-May-2026 support (§3). HQ003424C0046's extension history is
+   answered from FPDS and ingested on `organizations/ipmo` and
+   `organizations/sancorp-consulting`.
 4. An organizational source linking DDI(C&SP) and the SASP office (§6).

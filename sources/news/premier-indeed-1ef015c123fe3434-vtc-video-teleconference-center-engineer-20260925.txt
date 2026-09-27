@@ -1,0 +1,46 @@
+SOURCE: Indeed.com company page listing
+URL: https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=1ef015c123fe3434&start=0
+Canonical Indeed job URL: https://www.indeed.com/viewjob?jk=1ef015c123fe3434
+Captured (UTC): 2026-09-25T21:56:00Z
+Company: Premier Enterprise Solutions, LLC
+Title: VTC- Video Teleconference Center Engineer
+Location: Washington, DC
+FLAGGED: no — names DISA JSP (Defense Information Systems Agency Joint Service Provider) and SCIF/TS-SCI, not any of the watch-listed OUSD(I&S)/EXDIR/SASP/AARO/IPMO terms
+
+---- FULL EXTRACTED TEXT ----
+
+VTC- Video Teleconference Center Engineer
+Premier Enterprise Solutions - Washington, DC
+Apply with Indeed
+
+VTC- Video Teleconference Center Engineer
+
+Overview
+
+Premier Enterprise Solutions is seeking an VTC- Video Teleconference Center Engineer with a minimum of 5-8 years of experience. Preferred experience supporting the Defense Information Systems Agency (DISA) Joint Service Provider (JSP) DISA JSP center.
+
+This is a full- time position located in Washington, DC. Veterans are encouraged to apply.
+
+Educational Requirements:
+
+Must have a Bachelor's degree
+
+Clearance Requirements:
+
+Active TS with sensitive compartmented information (SCI) eligibility
+
+Responsibilities:
+
+Responsible for daily management of site VTC and conference room systems such as scheduling VTC with external sites, problem resolution and configuring rooms to meet requirements for scheduled conferences for users all around the globe
+Perform troubleshooting of VTC and conference room equipment and executes repair or initiates trouble ticket to the appropriate office for support of components and connections external to the site VTC system mostly in SCIF environments.
+Perform routine performance testing to ensure VTC and other conference room equipment computer servers and workstations operate at optimal performance and capacity
+Perform setups, tests, adjustments, operations, and closeout of equipment in support of VTC sessions
+Provide client consulting and training on control, interfaces, and use of the audio/visual and VTC equipment
+
+BENEFITS
+
+Premier Enterprise Solutions offer full-time employees a comprehensive and competitive benefits package designed to support their health, well-being, and financial future. Benefits include paid time off (PTO) for vacation, sick leave, and personal days; paid holidays; medical, dental, and vision insurance; company-paid life and accidental deathdismemberment (AD&D) insurance; voluntary life insurance; short- and long-term disability coverage; professional training and development opportunities; and a 401(k)-retirement plan with company matching and immediate vesting.
+
+EEO Statement
+
+It is Premier Enterprise Solution's policy to promote equal employment opportunities. Premier is committed to fostering a workplace where employment decisions are based solely on qualifications, experience, and the ability to perform essential job functions. We adhere to all applicable federal, state, and local laws governing equal employment opportunity.

@@ -291,16 +291,22 @@ It is the complete timestamped record of every request and response,
 including the SPN result screenshots. It is kept outside the committed
 evidence because it contains the full session context and account
 details, and this repository has a remote. The maintainer froze a copy
-at 2026-09-25T21:04:50Z; it is kept locally, gitignored, at
-`.scratch/drafts/arlo-greenhouse-20260924/session-log-20260925T210450Z.jsonl`:
+at 2026-09-25T21:04:50Z (`session-log-20260925T210450Z.jsonl`), kept
+locally and gitignored in the scratch drafts tree. Its hash:
 
 ```
 SHA-256  8e2312e1a56325d070e6b70a56d2eeb6c3566d7c406e4736c33cdf2d3d369809
 ```
 
 The live log kept growing after that point, since the session was still
-open. The frozen copy covers everything through the drafting of this
+open. The frozen copy covered everything through the drafting of this
 report; the hash applies to that copy, not the live file.
+
+The frozen copy was deleted on 2026-09-26 by maintainer decision. It was
+insurance against a takedown of the Greenhouse postings or their captures,
+and that concern was not borne out. The hash above remains the record of
+what the copy contained; the committed evidence under `evidence/` is
+unaffected.
 
 ---
 

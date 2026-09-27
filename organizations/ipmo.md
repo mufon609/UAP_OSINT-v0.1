@@ -31,7 +31,7 @@ IPMO is comprised of four divisions per the 23-S-3438 IPMO 101 slides (cleared f
 
 The Holly Notre Dame memorandum of May 27, 2022 is the available primary source for IPMO's establishment. Per the NSI Speaker Series page for Holly's October 3, 2023 IPMO 101 Speaker Session, three Secretaries of Defense, under two administrations, signed off on its establishment. No statutory authority appears in the public record — no NDAA section, no codified provision in 10 or 50 U.S.C., and no DoD Directive or DoD Instruction publicly available. The FY 2023 OSD OP-5 budget submission documents "Develop DoD Issuance Charter for Influence and Perception Management Office" as a development measure with FY 2022 target 1 and FY 2023 target N/A.
 
-Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) alongside the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The FY 2024 OSD OP-5 budget submission documented AARO ([`/organizations/aaro`]) — established four months after IPMO under the same parent — alongside IPMO under OUSD(I&S), where AIC now appears. Sancorp Consulting ([`/organizations/sancorp-consulting`]) provides IPMO Support Services under three prime contracts (HQ003422C0064, HQ003423C0061, HQ003424C0046) awarded by Washington Headquarters Services ([`/organizations/whs`]) Acquisition Directorate as 8(A) Sole Source contracts.
+Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) alongside the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The FY 2024 OSD OP-5 budget submission documented AARO ([`/organizations/aaro`]) — established four months after IPMO under the same parent — alongside IPMO under OUSD(I&S), where AIC now appears. Sancorp Consulting ([`/organizations/sancorp-consulting`]) provides IPMO Support Services under three prime contracts (HQ003422C0064, HQ003423C0061, HQ003424C0046) awarded by Washington Headquarters Services ([`/organizations/whs`]) Acquisition Directorate as 8(A) Sole Source contracts. In the FPDS ([`/organizations/fpds`]) record for HQ003424C0046, the base award's current completion date is 2024-09-27; modification P00001, an option exercised on 2024-09-27, extended it to 2025-03-27; modification P00002, a change order signed 2025-03-27, extended it to 2025-07-27; and modification P00006, a change order signed 2025-07-25, extended it to 2026-05-27. Modifications P00002, P00003 and P00004 carry the description IPMO SUPPORT SERVICES.
 
 ---
 
@@ -244,6 +244,54 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
+### USAspending transaction record for HQ003424C0046 base award (modification_number "0"), type DEFINITIVE CONTRACT, action_date 2024-05-31, action_type null, federal_action_obligation 919478.64. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+> "action_date":"2024-05-31","action_type":null,"action_type_description":null,"modification_number":"0","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":919478.64
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-05-31 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction 0 / base award ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### Base award of HQ003424C0046 (modification 0). Signed 2024-05-31, effective 2024-06-10. The current and ultimate completion dates are both 2024-09-27. The base entry has no reasonForModification element because it is the original award. Every entry names SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) as vendor, WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) as contracting office, IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) as funding/requesting agency, and DEPT OF DEFENSE ([`/organizations/dod`]) as agency.
+
+> <ns1:modNumber>0</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-05-31 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-05-31 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber 0, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28. The description field reads "PROFESSIONAL SUPPORT SERVICES" and does not name IPMO.
+
+> "action_date":"2024-09-27","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00001","description":"PROFESSIONAL SUPPORT SERVICES","federal_action_obligation":1504601.28
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-27 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00001 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00001 was signed 2024-09-27, the base completion date. It moved the current and ultimate completion dates from 2024-09-27 (base) to 2025-03-27. Its reasonForModification is "EXERCISE AN OPTION" (code G).
+
+> <ns1:modNumber>P00001</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2024-09-27 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00001, awardID + relevantContractDates block |
+
+---
+
 ### Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO's activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
@@ -268,6 +316,210 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
+### The WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names HQ003424C0046 (Sancorp Consulting ([`/organizations/sancorp-consulting`]), the IPMO-support contract) among the incumbent contracts concluding on March 27, 2025, with an anticipated four-month bridge from March 28, 2025, to July 27, 2025. The notice does not name IPMO; the tie to IPMO rests on other sources that identify HQ003424C0046 as the IPMO-support contract.
+
+> 4) Award a short-term, sole source extension to the incumbent contractor, Sancorp Consulting, LLC [CAGE Code: 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740]. The Contractor is currently performing services under contract HQ003424C0046, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025.
+
+| Field | Value |
+|---|---|
+| Attributed to | Item 4 of five sole-source bridge extensions announced in SAM.gov notice of intent TR011720251116 (postedDate 2025-03-11T19:51:30), issued by Washington Headquarters Services, Acquisition Directorate, on behalf of the OUSD(I&S) I&S Enterprise. |
+| Source | [archived source](../sources/government/samgov-tr011720251116-notice.json) |
+| Location | "description[0].body" field, ¶ 4) (HQ003424C0046) |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" and names IPMO. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 (q38) states that services under contract HQ003424C0046 are concluding.
+
+> "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00002","description":"IPMO SUPPORT SERVICES","federal_action_obligation":1003067.52
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00002 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00002 was signed 2025-03-27, the completion date P00001 had set. It moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116 (q38). That link is a date coincidence only; the feed does not name the notice.
+
+> <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00002, awardID + relevantContractDates block |
+
+---
+
+### The requirement description on P00002 names IPMO: "IPMO SUPPORT SERVICES". P00003 and P00004 carry the same description. The base, P00001 and P00005-P00008 entries carry other descriptions. This quote runs from the "CHANGE ORDER" reason line to the requirement line so that it matches only P00002: P00003 and P00004 have "OTHER ADMINISTRATIVE ACTION" as their reason, and P00005 and P00006 (the other CHANGE ORDER entries) have a different requirement description.
+
+> <ns1:reasonForModification description="CHANGE ORDER">D</ns1:reasonForModification> <ns1:costOrPricingData description="No">N</ns1:costOrPricingData> <ns1:solicitationID>HQ003424R0165</ns1:solicitationID> <ns1:costAccountingStandardsClause description="NOT APPLICABLE EXEMPT FROM CAS">X</ns1:costAccountingStandardsClause> <ns1:descriptionOfContractRequirement>IPMO SUPPORT SERVICES</ns1:descriptionOfContractRequirement>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-03-27 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00002, contractData block, reasonForModification through descriptionOfContractRequirement |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+
+> "action_date":"2025-04-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00003","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-04-10 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00003 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00003 was signed 2025-04-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00002. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+
+> <ns1:modNumber>P00003</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-04-10 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00003, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+
+> "action_date":"2025-04-11","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-04-11 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00004 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00004 was signed 2025-04-11. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00003. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+
+> <ns1:modNumber>P00004</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-11 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-04-11 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00004, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24 (a deobligation). The description field returns to a non-IPMO description, "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" (comma-punctuated, unlike the base award form) and does not name IPMO.
+
+> "action_date":"2025-07-10","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00005","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":-9766.24
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-10 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00005 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00005 was signed 2025-07-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00004, so P00005 did not extend the contract. Its reasonForModification is "CHANGE ORDER" (code D).
+
+> <ns1:modNumber>P00005</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-10 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00005, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+> "action_date":"2025-07-25","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00006","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":501533.76
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-25 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00006 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00006 moved the currentCompletionDate and ultimateCompletionDate from 2025-07-27 (P00005) to 2026-05-27. This is the modification that extended HQ003424C0046 to 2026-05-27. It was signed 2025-07-25, two days before the 2025-07-27 completion date then in force. Its reasonForModification is "CHANGE ORDER" (code D).
+
+> <ns1:modNumber>P00006</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-25 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-07-25 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00006, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+> "action_date":"2025-09-02","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00007","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":1833006.24
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-02 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00007 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00007 was signed 2025-09-02. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00006. Its reasonForModification is "FUNDING ONLY ACTION" (code C).
+
+> <ns1:modNumber>P00007</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-09-02 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-02 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00007, awardID + relevantContractDates block |
+
+---
+
+### USAspending transaction record for HQ003424C0046 modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+> "action_date":"2026-03-04","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00008","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":11280.0
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-03-04 |
+| Source | [archived source](../sources/government/usaspending-hq003424c0046-transactions.txt) |
+| Location | transaction P00008 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046 |
+
+---
+
+### P00008 is the last entry in the feed. It was signed 2026-03-04. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00007. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).
+
+> <ns1:modNumber>P00008</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2026-03-04 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-03-04 |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00008, awardID + relevantContractDates block |
+
+---
+
+### As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records totalObligatedAmount 5763201.20 (with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20) on HQ003424C0046. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02; timeline t8), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0, q27). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic (nq4).
+
+> <ns1:totalObligatedAmount>5763201.20</ns1:totalObligatedAmount> <ns1:totalBaseAndExercisedOptionsValue>5763201.20</ns1:totalBaseAndExercisedOptionsValue> <ns1:totalBaseAndAllOptionsValue>5763201.20</ns1:totalBaseAndAllOptionsValue></ns1:totalDollarValues> <ns1:purchaserInformation> <ns1:contractingOfficeAgencyID name="WASHINGTON HEADQUARTERS SERVICES (WHS)" departmentID="9700" departmentName="DEPT OF DEFENSE">97F5</ns1:contractingOfficeAgencyID> <ns1:contractingOfficeID name="WASHINGTON HEADQUARTERS SERVICES" country="USA">HQ0034</ns1:contractingOfficeID> <ns1:fundingRequestingAgencyID name="IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE" departmentID="9700" departmentName="DEPT OF DEFENSE">97AD</ns1:fundingRequestingAgencyID> <ns1:fundingRequestingOfficeID name="OSD OUSD(I)">HQ0208</ns1:fundingRequestingOfficeID>
+
+| Field | Value |
+|---|---|
+| Attributed to | FPDS Atom-feed entry for DEFINITIVE CONTRACT HQ003424C0046 modification P00008 (entry title names SANCORP CONSULTING, LLC as awardee; signedDate 2026-03-04). The span sits between the entry dollarValues block and the foreignFunding element; contiguous lines in the source, unique via the 5763201.20 total. |
+| Source | [archived source](../sources/government/fpds-hq003424c0046.txt) |
+| Location | entry modNumber P00008, dollarValues/totalDollarValues through purchaserInformation (fundingRequestingOfficeID) |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -280,7 +532,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | 2023-09-27 | IPMO 101 slides (DOPSR case 23-S-3438) cleared for open publication by the DoD Office of Prepublication and Security Review; authored by COL Deitra Trotter ([`/people/deitra-trotter`]) and HON Ronald S. Moultrie ([`/people/ronald-moultrie`]). | publication | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |  |
 | 2023-10-03 | James Holly ([`/people/james-holly`]) delivers IPMO 101 talk at NSI Speaker Series (Boston). Per the NSI page: attests four-division IPMO structure (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities) and that "three Secretaries of Defense, under two administrations, signed off on its establishment." | testimony | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
 | 2024-05-09 | James Holly ([`/people/james-holly`]) co-paneled at the SOF Week 2024 OIE Symposium (Tampa Convention Center) with Daniel Kimmage ([`/people/daniel-kimmage`]) of the State Department Global Engagement Center ([`/organizations/state-dept-gec`]). Per Defense One (May 24, 2024); SOF Week panel video/audio not publicly accessible. | testimony | news/defense-one-sof-week-oie-panel-20240524.html |  |
-| 2024-05-31 | Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded follow-on contract HQ003424C0046 for "Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services" ($5,751,921; period of performance June 10, 2024 — May 27, 2026). | contract | government/usaspending-hq003424c0046.txt | [`/organizations/sancorp-consulting`] |
+| 2024-05-31 | Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded follow-on contract HQ003424C0046 for "Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services"; the USAspending award record (last_modified_date 2025-09-02) gives total obligation $5,751,921 and period of performance June 10, 2024 — May 27, 2026. | contract | government/usaspending-hq003424c0046.txt | [`/organizations/sancorp-consulting`] |
+| 2025-03-27 | FPDS ([`/organizations/fpds`]) modification P00002 to HQ003424C0046, a CHANGE ORDER signed 2025-03-27 with the requirement description "IPMO SUPPORT SERVICES", extended the completion date from 2025-03-27 to 2025-07-27, the same date as the end of the anticipated bridge period in SAM.gov notice TR011720251116 ([`/documents/samgov-tr011720251116-notice`]); the FPDS record does not name the notice. | contract | government/fpds-hq003424c0046.txt | [`/organizations/sancorp-consulting`] |
+| 2025-07-25 | FPDS ([`/organizations/fpds`]) modification P00006 to HQ003424C0046, a CHANGE ORDER signed 2025-07-25, extended the completion date from 2025-07-27 to 2026-05-27; P00007 and P00008 leave it at 2026-05-27. | contract | government/fpds-hq003424c0046.txt | [`/organizations/sancorp-consulting`] |
 
 ---
 
@@ -311,6 +565,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Source Form | Canonical | Source |
 |---|---|---|
 | Kimmidge | Kimmage | news/defense-one-sof-week-oie-panel-20240524.html |
+| OSD OUSD(I) | OUSD(I&S) | government/fpds-hq003424c0046.txt |
 
 ---
 
@@ -330,10 +585,17 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/cp-wmd`]
 - [`/organizations/dmdpo`]
 - [`/organizations/dod`]
+- [`/organizations/fpds`]
 - [`/organizations/le-oversight-compliance-directorate`]
+- [`/organizations/osd`]
 - [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
 - [`/organizations/state-dept-gec`]
 - [`/organizations/whs`]
+- [`/organizations/whs-acquisition-directorate`]
+
+### Documents
+
+- [`/documents/samgov-tr011720251116-notice`]

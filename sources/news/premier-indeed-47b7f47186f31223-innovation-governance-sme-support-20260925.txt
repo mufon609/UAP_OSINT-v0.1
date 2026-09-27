@@ -1,0 +1,55 @@
+SOURCE: Indeed.com company page listing (Premier Enterprise Solutions has no self-hosted ATS; jobs surface only via Indeed employer posting)
+URL: https://www.indeed.com/cmp/Premier-Enterprise-Solutions/jobs?jk=47b7f47186f31223&start=0
+Canonical Indeed job URL (viewjob form): https://www.indeed.com/viewjob?jk=47b7f47186f31223
+Captured (UTC): 2026-09-25T21:56:00Z
+Capture method: claude-in-chrome browser render + get_page_text (curl/WebFetch blocked by Indeed bot-detection / JS-rendered SPA)
+Company: Premier Enterprise Solutions, LLC
+Title: Innovation Governance SME Support
+Location: Washington, DC (Onsite)
+FLAGGED: yes — names "Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S))" CTO; also names "Secretary of War and Undersecretary of War for Intelligence and Security" — corroborates the OUSW(I&S) marketing form documented on Arlo Solutions (organizations/arlo-solutions.md)
+
+---- FULL EXTRACTED TEXT ----
+
+Innovation Governance SME Support
+Premier Enterprise Solutions - Washington, DC
+Apply with Indeed
+
+Innovation Governance SME Support
+
+Location: Washington, DC (Onsite)
+
+Employment Type: Full-Time
+
+Clearance: Active Top Secret with (SCI)
+
+Experience Level: Senior-Level (10+ Years)
+
+Veterans Encouraged to Apply
+
+Premier Enterprise Solutions is seeking an Innovation Governance SME to provide expert-level advisory support to senior leaders including the support of the Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S)) Chief Technology Officer (CTO). Innovation Governance SME will serve as a trusted advisor to the CTO, focusing on accelerating the adoption of emerging technologies to enhance mission capabilities. This role involves providing expert guidance on acquisition strategies and innovation frameworks that support Combined Joint All-Domain Command and Control (CJADC2) objectives. Including Battlespace Awareness and Signals Intelligence as the expertise will be crucial in areas such as Quantum Science and Future Generation Wireless Advanced Materials, Integrated Network Systems-of Systems, Microelectronics, Space Technology, Advanced Computing and Software and Integrated Sensing and Cyber Information Operations Cryptology and Electronic Warfare.
+
+You will contribute to cutting-edge projects that challenge your skills and expand your technical prowess. The role promises an exciting journey where your insights drive impactful solutions and foster professional growth. With a compensation package Based on Experience, you'll be rewarded for your expertise and dedication.
+
+Responsibilities:
+
+Develop staff packages and integrate technical mission efforts within DoW and across the IC and Defense Community. Respond to CATMS tasks. executive summaries of OUSW (l&S) governance forums. Recommendations on policies, standards and governance forums work for the adoption of emerging technologies and assessment of technical partnerships and best practices between DoD components, industry, academia and international allies. Produce 3-5 analytical reports weekly, with critical updates delivered within 24 hours of request.
+Analyze intelligence related activities against the National Defense Strategy and the priorities of the Secretary of War and Undersecretary of War for Intelligence and Security. Provide advisory support and written products related to Government data insights (DOV) oversight acquisition, requirements, and PPBE processes and technical assessments to senior leadership on the feasibility, risks and benefits of emerging technologies. Produce monthly assessments to inform strategic decision-making and resource allocation.
+Develop data analytic tools and specialized dashboards as appropriate. Provide expert guidance in support of the Authoritative Table of Metrics (ATOM) data analytical tool to evaluate the effectiveness of innovation initiatives, and the development of a Visible Integrated Enterprise Workflow (VIEW) dashboards that display ATOM compliance.
+Deliver ATOM and VIEW prototypes within six months start date followed by weekly updates to ensure continuous improvement and alignment with mission objectives.
+
+Required Qualifications
+
+Minimum of 10 years of experience on accelerating the adoption of emerging technologies to enhance mission capabilities.
+Minimum of a Bachelor's degree in Engineering, Computer Science, Business Administration, or a related discipline.
+Must have an Active Top Secret Clearance with SCI.
+Demonstrated experience supporting DoD, OSD, or Intelligence Community (IC) programs.
+Experience providing expert guidance on acquisition strategies and innovation frameworks that support Combined Joint All-Domain Command and Control (CJADC2) objectives.
+Exceptional written and verbal communication skills.
+
+BENEFITS
+
+Premier Enterprise Solutions offer full-time employees a comprehensive and competitive benefits package designed to support their health, well-being, and financial future. Benefits include paid time off (PTO) for vacation, sick leave, and personal days; paid holidays; medical, dental, and vision insurance; company-paid life and accidental deathdismemberment (AD&D) insurance; voluntary life insurance; short- and long-term disability coverage; professional training and development opportunities; and a 401(k)-retirement plan with company matching and immediate vesting.
+
+EEO Statement
+
+It is Premier Enterprise Solution's policy to promote equal employment opportunities. Premier is committed to fostering a workplace where employment decisions are based solely on qualifications, experience, and the ability to perform essential job functions. We adhere to all applicable federal, state, and local laws governing equal employment opportunity.

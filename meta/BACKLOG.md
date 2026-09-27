@@ -294,49 +294,6 @@ count — recount before sweeping; the number drifts).
 **Blocks:** none.
 **Blocked by:** none.
 
-### C6 — Ingest the parked OUSD(I&S) contractor job-posting evidence into `sources/` and the org nodes
-
-Two scratch drafts hold primary-source material on OUSD(I&S) support
-contractors that no node cites yet. Job postings are perishable, and several
-of these are already gone from the live web:
-
-- `.scratch/drafts/contractor-postings-20260925/` contains:
-  - Sancorp's ADP Workforce Now postings, including the "Staff Officer III" that names AARO;
-  - Premier's Indeed postings (Indeed blocks Wayback, so this text is the only capture);
-  - 177 Wayback captures of Arlo's removed Greenhouse postings, with `summary.csv`;
-  - USAspending and FPDS responses for Sancorp's BPA HQ003425A0001 call orders and for HQ003424C0096's modifications.
-  
-  `SHA256SUMS` covers every file.
-- `.scratch/drafts/arlo-greenhouse-20260924/` holds working copies of the Arlo
-  board snapshots, now committed as incident evidence under
-  `meta/topic/incidents/2026-09-24-wayback-capture-loss/`. It also holds the frozen
-  session log, whose SHA-256 that incident record cites. The log stays out of git
-  because it contains account details.
-
-The work:
-
-1. Run the archive role to register the load-bearing postings in `sources/`:
-   - Sancorp's Staff Officer III and Field Operations & Sensor Support SME IV;
-   - Arlo's AARO postings, requisitions 617 and 619;
-   - Arlo's C&PE posting, requisition 469;
-   - a representative set of the SASP-batch postings.
-2. Run `/augment` on `sancorp-consulting`, `aaro` and `arlo-solutions` to add:
-   - call order HQ003426FE050: OUSD(I)-funded, awarded 2026-01-28, four offers, and its description appears verbatim in Sancorp's AARO-naming posting;
-   - call order HQ003425FE174;
-   - HQ003424C0096's AARO-labelled modifications and its final deobligation;
-   - the four BPA numbers (A0001 Sancorp, A0002 Comprehensive Approach, A0003 Premier, A0004 Arlo);
-   - Arlo's Dec 2025 – Jan 2026 AARO key-personnel postings;
-   - the OUSD(I&S) Commonwealth & Partnership Engagement branch.
-3. Keep "FE050 is the AARO follow-on" flagged as an inference until a federal
-   record names AARO on it. The FE050 performance work statement, obtainable by
-   FOIA from WHS, would settle it.
-
-Before closing, decide where the frozen session log lives durably. Then sweep both
-drafts; the committed incident evidence remains the record.
-
-**Blocks:** none.
-**Blocked by:** none.
-
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 
 The `foia` type is in the schema, renderer and validators and is covered by
