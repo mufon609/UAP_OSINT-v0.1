@@ -249,6 +249,32 @@ count — recount before sweeping; the number drifts).
 **Blocks:** none.
 **Blocked by:** none.
 
+### C6 — Catch mixed-speaker transcript quotes at the gate
+
+`scripts/checks/speaker_attribution_consistency.py` accepts a quote if its
+attributed speaker appears *anywhere* in the lines the quote spans (±1).
+That tolerance exists for sub-line caption boundaries: a turn change inside
+one `[MM:SS]` tick, or a narrator lead-in. But it also passes a quote that
+runs through one speaker's turn and into another speaker's whole turn.
+
+A live instance: an 8 News Now passage attributed to Lacatski runs into the
+reporter's next turn ("And your bosses knew that from the beginning…"). Its
+analysis then presents the reporter's words as Lacatski's. Every gate
+passed it. `meta/memory.md` names mixed-speaker quotes as a Phase-1 factual
+error, but nothing enforces that.
+
+1. **Tighten the check.** Error when a quote's span covers at least one
+   full source line inside a sibling turn of a *different* live speaker,
+   beyond the ±1 boundary padding. Keep the sub-line tolerance.
+   foreign-prepared / recitation turns keep their current handling.
+2. **Measure before enforcing.** Run it over the corpus and adjudicate each
+   hit against the attribution sibling. A genuine mixed quote is split into
+   per-speaker quotes (a worker re-extracts; quote text is never retyped).
+   A sibling boundary error goes back through `/prepare-transcript-sibling`.
+   Enable the check as an error only once the corpus is clean.
+3. **Test it.** Add fixture regression cases for both sides: a sub-line
+   boundary that stays tolerated, and a whole-turn crossing that fails.
+
 ### C8 — Close the `foia` node type's open ends before the first real FOIA nodes
 
 The `foia` type is in the schema, renderer and validators and is covered by
