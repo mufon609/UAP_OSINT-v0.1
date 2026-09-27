@@ -17,6 +17,17 @@ that will eventually carry them are pending.
 
 ---
 
+## Citing evidence
+
+Cite a source by its path under `sources/` plus row, section or page, and
+the node that quotes it. Never cite an artifact entry ID (`q7`,
+`0446 q1`): entry IDs are positional, reassigned on merge and rebuild, and
+go stale without warning. The rule is `.claude/skills/build-protocol/SKILL.md`
+"Prose names the source — never an entry ID". No gate reads this
+directory, so keep to it by hand.
+
+---
+
 ## Lifecycle
 
 1. **Living phase.** The file is created at

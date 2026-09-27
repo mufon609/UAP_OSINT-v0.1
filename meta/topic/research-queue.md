@@ -22,6 +22,11 @@ Two backlogs live here, distinguished by origin:
 - **Priority:** High / Medium / Low. **Status:** Pending / In-progress / Blocked.
 - **Active items only.** When a queued item is built, delete its row — git
   log is the build-history record (`git log --diff-filter=A`).
+- **Cite sources, never entry IDs.** Name a node's evidence by source path
+  plus row, section or page, never by an artifact entry ID (`q12`, `a9`,
+  `rr3`). IDs are positional and go stale. The rule is
+  `.claude/skills/build-protocol/SKILL.md` "Prose names the source — never
+  an entry ID".
 - **Investigate before queueing.** Before adding an entry, confirm it meets
   the relevant `meta/schema.yaml` threshold and would launch with
   substantive density (Scope, Evidence, Build dependencies, Density math,
@@ -34,7 +39,7 @@ Two backlogs live here, distinguished by origin:
 
 | Item | Source | Found In | Priority | Status |
 |---|---|---|---|---|
-| Uri Geller Museum opening-date primary source | Old Jaffa museum opening date (currently secondary-only "2021") — would populate affiliation a9 `period_start` | [`/people/uri-geller`] affiliation a9 | Low | Pending |
+| Uri Geller Museum opening-date primary source | Old Jaffa museum opening date (currently secondary-only "2021") — would populate the `period_start` of the Uri Geller Museum affiliation | [`/people/uri-geller`] Uri Geller Museum affiliation | Low | Pending |
 | SASP incumbent: IEA/EverWatch order HQ003419F0506 (under TEAMS BPA HQ003415A0010): **substantially confirmed** | USAspending (`government/usaspending-hq003419f0506.txt`, `government/usaspending-hq003419f0506-transactions.txt`, archived 2026-09-26): F0506's recipient is "IAN EVAN & ALEXANDER CORP"; signed 2019-08-15; performance to 2026-05-27; $51,413,590.66 obligated. Its transactions from P00035 (2025-07-25, CHANGE ORDER) through P00040 (2026-04-01) carry the description "SENSITIVE ACTIVITIES AND SPECIAL PROGRAMS". The archived SAM.gov notice TR011720251116 names Booz Allen as the incumbent on the same task order (recipient mismatch; a corporate acquisition would explain it but is unsourced). **Would complete:** source the IEA → EverWatch → Booz Allen corporate history, and fetch the pre-2025 transactions to see whether F0506 was SASP support from the start. It would then warrant an IEA/EverWatch organization node. Synthesis: working note §2. | Claude-Web thread lead; USAspending ([`/organizations/arlo-solutions`], [`/organizations/ousd-is`]) | High | In-progress |
 | Arlo's SASP call order HQ003425F0104 terminated for convenience vs. Arlo's March 2026 SASP award announcement: **answered; ingested 2026-09-26** | SASP was re-awarded to Arlo as **HQ003426FE011** (a child of BPA HQ003425A0004, which has exactly two child call orders, F0104 and FE011); the FE011 and incumbent F0506 records are archived (`government/usaspending-hq003426fe011.txt`, `-transactions.txt`, `government/usaspending-hq003425a0004-child-awards.txt`, `government/usaspending-hq003419f0506.txt`, `-transactions.txt`) and on the Arlo node. **Remaining:** (1) the FPDS reason-for-modification for F0104's P00004 (FPDS returned its "Site unavailable" maintenance page on 2026-09-26); (2) why Arlo's release says "more than $85 million" against FE011's $59,372,513.73 (recorded side by side, unreconciled). Synthesis: `meta/topic/working-notes/ousd-is-enterprise-bpa-transition.md` §2. | [`/organizations/arlo-solutions`] | High | In-progress |
 | SAM.gov award notice names Premier for HQ003423C0061, which USAspending records as Sancorp's IPMO follow-on | Archived: `news/samdaily-fbo-06693814-hq003423c0061.html` (the SAMDaily republication of the award notice, 2023-05-27) names Premier Enterprise Solutions in its Description, while `government/usaspending-hq003423c0061.txt` gives recipient "SANCORP CONSULTING, LLC". Both are preserved as a contradiction on the Premier node. **Would resolve:** the original SAM.gov award notice record (not the republication) or the FPDS contract action report for HQ003423C0061, which names the awardee by UEI. | [`/organizations/premier-enterprise-solutions`], [`/organizations/sancorp-consulting`], [`/organizations/ipmo`] | Medium | Pending |
@@ -51,7 +56,7 @@ Two backlogs live here, distinguished by origin:
 
 | Item | Source | Found In | Priority | Status |
 |---|---|---|---|---|
-| The five unbuilt 23-F-0906 release documents — build **DD 254 first**, then contract, final RFQ, NDA-NPI, award notification: `/documents/foia-23-f-0906-sancorp-ipmo-{dd254,contract,final-rfq,nda-npi,award-notification}` | Archived under `sources/government/foia-23-f-0906-sancorp-ipmo-*.pdf` (WHS FOIA Reading Room, Contracts; 11 / 29 / 50 / 3 / 1 pp.). All five are `extraction_type: ocr-scan` with no sibling yet — each needs `/prepare-ocr-sibling` before any quote. The DD 254 is where the IPMO contract's (HQ003422C0064) classification and access requirements would become quotable (its block 1a and block 9 were read only off the unverified OCR layer during sourcing) | [`/foia/dod-23-f-0906`] `released_records` rr2–rr6 (attested by the Reading Room index) | Medium | Pending |
+| The five unbuilt 23-F-0906 release documents — build **DD 254 first**, then contract, final RFQ, NDA-NPI, award notification: `/documents/foia-23-f-0906-sancorp-ipmo-{dd254,contract,final-rfq,nda-npi,award-notification}` | Archived under `sources/government/foia-23-f-0906-sancorp-ipmo-*.pdf` (WHS FOIA Reading Room, Contracts; 11 / 29 / 50 / 3 / 1 pp.). All five are `extraction_type: ocr-scan` with no sibling yet — each needs `/prepare-ocr-sibling` before any quote. The DD 254 is where the IPMO contract's (HQ003422C0064) classification and access requirements would become quotable (its block 1a and block 9 were read only off the unverified OCR layer during sourcing) | [`/foia/dod-23-f-0906`] released records for the final RFQ, NDA-NPI, DD 254, award notification and contract (attested by the Reading Room index) | Medium | Pending |
 
 ---
 

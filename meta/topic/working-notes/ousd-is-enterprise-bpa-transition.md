@@ -172,8 +172,8 @@ Written 2026-09-26.
 
 - **[E]** The IPMO PWS §1.2 places IPMO under the Director for Defense
   Intelligence (Collection and Special Programs), DDI(C&SP)
-  (`government/foia-23-f-0906-sancorp-ipmo-pws.pdf`; quoted on `ipmo` as
-  q6/q7, which match the page images). IPMO's remit includes deception,
+  (`government/foia-23-f-0906-sancorp-ipmo-pws.pdf`; its §1.2 and §1.3
+  passages are quoted on `ipmo` and match the page images). IPMO's remit includes deception,
   perception management and "reveal/conceal".
 - **[E, requester-described]** The WHS FOID FY23 FOIA log
   (`government/whs-foid-foia-log-fy23.xlsx`, with its `.txt` sibling)
@@ -186,18 +186,20 @@ Written 2026-09-26.
   - **Row 620, 23-F-0446** (received 2023-02-14, closed 2023-06-22), for all
     emails between the DoD OIG and "Neill Tipton, Director for Defense
     Intelligence, Collection and Special Programs" (2022-01-01 to 2023-02-10).
-  Both are now built as `foia/dod-23-f-0377` and `foia/dod-23-f-0446`. The log
-  cells (tracking number, requester, received/closed dates, disposition) are
-  0377 q1 / 0446 q1. The requester's text is 0377 q2–q6 / 0446 q2–q5.
+  Both are now built as `foia/dod-23-f-0377` and `foia/dod-23-f-0446`. Each
+  node quotes its log row's cells (tracking number, requester,
+  received/closed dates, disposition) and the requester's text from the
+  row's Request Description cell.
 - **[E, requester-published]** The Black Vault's timeline posts
   (`news/blackvault-timeline-oig-meets-tipton-20211019.html`,
   `news/blackvault-timeline-oig-reaches-out-tipton-again-20230111.html`) say:
   - under DODOIG-2023-000021 the OIG "met with Neill Tipton, Director for
-    Defense Intelligence, Collection and Special Programs" (0377 q7);
+    Defense Intelligence, Collection and Special Programs" (quoted on
+    `foia/dod-23-f-0377`);
   - 23-F-0377 released "the actual calendar details in the files of Mr.
-    Neill Tipton" (0377 q9);
+    Neill Tipton" (quoted on `foia/dod-23-f-0377`);
   - under 23-F-0446 the OIG "reached out to Neill Tipton … as OSD/JS" about
-    the same evaluation (0446 q7–q8).
+    the same evaluation (quoted on `foia/dod-23-f-0446`).
 
   All of this is the requester's account of the releases, not agency text.
 - **[E, unquoted]** The 23-F-0446 final response is p. 1 of
