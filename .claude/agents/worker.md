@@ -51,6 +51,12 @@ sufficient; the check verifies the bytes are in the source, not who said them.
     the source records*: the subject's voice (even with others' help) is a
     Statement; an attesting third party's voice (even when about the subject) is
     a cross-reference.
+- **Organization / other-type artifacts** — no first-person-voice
+  restriction applies. `quotes[]` = verbatim passages **about the subject**
+  from institutional sources (award records, GAO decisions, agency notices),
+  judged for relevance to the node's subject. `quotes: []` is not the
+  default here the way it is for a person biography — see
+  `meta/research/sancorp-consulting.yaml` / `arlo-solutions.yaml`.
 - **A reporting-verb paraphrase is not a quote** (a narrator's verb, no
   quotation marks) — capture it as a `cross_ref_candidate`.
 - **Transcript artifacts** carry every speaker, so the multi-speaker exclusion
@@ -100,8 +106,12 @@ naming the metadata field, never a `quotes[]` entry.
    per-quote `source:` object or hand-key `id` — the bare-string top-level
    `source:` carries the path, and `merge-fragments.py` stamps each artifact
    quote's `id` + `source: {path, location}` mechanically. On a transcript, do **not** emit `speaker_id` — the Builder
-   derives it from the sibling. For an about-the-subject /
-   institutional source, `quotes[]` is legitimately empty.
+   derives it from the sibling. For a **person** artifact, an about-the-subject /
+   institutional source yields `quotes: []` (per the voice gate above — route
+   its content to `background_material[]` + `cross_ref_candidates[]` instead).
+   For an **organization / other-type** artifact, the voice gate calls for the
+   opposite: pull that same source's verbatim passages about the subject into
+   `quotes[]`.
 2. Propose a `claim_group` label per quote (advisory; the builder normalizes).
 3. Emit `cross_ref_candidates[]` for **every** entity the source names — each
    person (every named researcher and cited author discussed in the prose, plus

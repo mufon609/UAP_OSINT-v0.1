@@ -281,27 +281,15 @@ corrupt survey aid.
 **Blocks:** none.
 **Blocked by:** none.
 
-### C5 — Close the Wayback-submission gap on the all-internal build branch
+### C5 — Run one slow sweep of the existing `archive_status: 1` entries
 
-The `/build` all-internal branch (every load-bearing source already archived
-in-repo, `gaps: []`) skips the External Investigator and **Archive** roles. The
-Archive role is the only step that submits a source to the Wayback Machine
-(`archive.py --submit`), so a node built entirely from reused in-repo sources is
-**never Wayback-submitted** — its manifest entry stays `archive_status: 1` (local
-copy only). The build pipeline alone never closes this; the only closer today is a
-manual `/archive-sweep` at session end, which is easy to forget — so the gap
-accumulates silently across every all-internal build (the DIRD set, built from the
-in-repo Black Vault mirror, sits this way).
-
-The local `/sources/` copy is the integrity guarantee, so this is not data loss —
-but Wayback submission is the insurance the archival discipline promises, and the
-all-internal branch silently skips it.
-
-Decide where the pipeline closes it — a `/build` finalize step that submits any
-`archive_status: 1` source the build touched, an archive-readiness gate that flags
-unsubmitted sources before finalize, or making the end-of-session `/archive-sweep`
-mechanical rather than discipline — then run one sweep to submit the backlog of
-all-internal-built sources already sitting at `archive_status: 1`.
+The `/build` finalize step (step 8) now Wayback-submits any `archive_status: 1`
+source the build touched, closing the all-internal branch's silent gap (the
+Archive role — the only prior submitter — is skipped on that branch). What
+remains is the one-time backlog predating that step: run one slow sweep
+(`archive.py --submit-path` / `--submit`, strictly sequential, ≥20 s apart) of
+the 166 manifest entries currently sitting at `archive_status: 1` (2026-09-26
+count — recount before sweeping; the number drifts).
 
 **Blocks:** none.
 **Blocked by:** none.
@@ -521,42 +509,6 @@ records. Also decide how a row records an unattested start date:
 `_format_period` already supports an end-only form — so today a contract
 known only by its end date (e.g. a bridge-notice incumbent) cannot be a row
 without inventing a start.
-
-**Blocks:** none.
-**Blocked by:** none.
-
-### C12 — Make `setup-browser-fetch.sh` survive a broken system Playwright
-
-`scripts/tools/setup-browser-fetch.sh` builds `.venv-browser/` with
-`--system-site-packages`, so pip reports the Debian `python3-playwright`
-package as "already satisfied" and installs nothing into the venv. That
-package's bundled Node driver is broken (`python -m playwright install`
-fails with `MODULE_NOT_FOUND`) and the venv gets no `playwright` CLI, so
-the script's browser-download step fails on both paths. What worked:
-`.venv-browser/bin/pip install --ignore-installed playwright`, then
-`.venv-browser/bin/python -m playwright install chromium`. Make the script
-install Playwright into the venv regardless of the system copy (or build the
-venv isolated, alongside C10), and verify by running an actual fetch rather
-than by import.
-
-**Blocks:** none.
-**Blocked by:** none.
-
-### C13 — Scope the Worker's "institutional source → empty `quotes[]`" line to person targets
-
-`.claude/agents/worker.md` step 1 ends "For an about-the-subject /
-institutional source, `quotes[]` is legitimately empty." The sentence
-follows the person-artifact voice gate but is not scoped to it, and Workers
-dispatched on **organization** targets read it inconsistently: on the same
-kind of source (a SAM.gov notice, a Department of War release, a news article
-about the organization) some emit Key Passages about the organization and
-others return `quotes: []`. The built organization artifacts (e.g.
-`meta/research/sancorp-consulting.yaml`, `arlo-solutions.yaml`) quote
-USAspending records and GAO decisions — institutional sources about the
-subject — so corpus practice is the former. State the voice rule per target
-type in `worker.md` (person: the subject's own voice; organization / other
-types: verbatim passages about the subject, judged for relevance), so the
-outcome no longer depends on which reading a Worker picks.
 
 **Blocks:** none.
 **Blocked by:** none.

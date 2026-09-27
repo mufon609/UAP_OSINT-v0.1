@@ -350,7 +350,11 @@ artifact + git. Read only the stub schema for your own role.
 
 - **all-internal** — the internal survey sets `all_internal: true`,
   `gaps: []` → external + archive roles are skipped; the build proceeds from
-  the reused, already-archived sources.
+  the reused, already-archived sources. Skipping the archive role skips only
+  its *new-bytes* work, not the Wayback-submission insurance it would
+  otherwise provide: the `/build` finalize step (step 8) still
+  Wayback-submits any reused source left at `archive_status: 1` (local copy,
+  never submitted) — see [`build` SKILL.md](../build/SKILL.md) step 8.
 
 ### Partial re-entry — skip scaffold, run a minimal role subset
 

@@ -24,7 +24,11 @@ allowed-tools:
    entry unrecoverable before trying the fuzzy-timestamp pull.
 4. **Submit unarchived entries to Wayback:** `python3 scripts/tools/archive.py`
    (rate-limited; leave running, report progress). Distinct from step 3 — this
-   SUBMITS (insurance); step 3 PULLS a dead URL.
+   SUBMITS (insurance); step 3 PULLS a dead URL. This is also the retry
+   backstop for any source a `/build` finalize step (build/SKILL.md step 8)
+   reported as a Save Page Now failure or left unconfirmed — its CDX-first
+   check is the authoritative re-query, so a run here settles those without
+   any special-casing.
 5. **Report:** total entries, newly added, newly submitted, submission failures
    (with code — 403/402/523), orphans needing a decision, `verify-paths`
    failures.

@@ -13,10 +13,11 @@ Reads sources/manifest.yaml. For each entry:
 `wayback_skip` — those URLs cannot be archived, recheck is pointless).
 
 Usage:
-  archive.py                     # check + submit missing
-  archive.py --check-only        # check only; don't submit
-  archive.py --submit URL        # submit a single URL
-  archive.py --recheck-all       # force recheck of confirmed entries
+  archive.py                       # check + submit missing
+  archive.py --check-only          # check only; don't submit
+  archive.py --submit URL          # submit a single URL
+  archive.py --submit-path PATH    # submit by manifest path (resolves -> url)
+  archive.py --recheck-all         # force recheck of confirmed entries
 """
 
 import argparse
@@ -136,6 +137,11 @@ def cmd_submit_one(url):
 
     entries = load_manifest()
     entry = next((e for e in entries if e.get("url") == url), None)
+    if entry is not None and entry.get("wayback_skip"):
+        print(f"Refusing: {url}")
+        print("  Entry is flagged wayback_skip — structurally unarchivable "
+              "(the host also blocks the Internet Archive crawler).")
+        sys.exit(1)
 
     # CDX-first. An existing 200 capture in Wayback IS the archival record —
     # prefer it over a fresh Save Page Now. A fresh submit of a bot-blocked
@@ -180,11 +186,30 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--check-only", action="store_true")
     parser.add_argument("--submit", metavar="URL", help="Submit a single URL")
+    parser.add_argument(
+        "--submit-path", metavar="PATH",
+        help="Submit the manifest entry registered at this local sources/ "
+             "PATH (e.g. government/NAME.pdf) — resolves path -> url first. "
+             "For a caller that only has a source path in hand, such as the "
+             "/build finalize step resubmitting a reused source.")
     parser.add_argument("--recheck-all", action="store_true")
     args = parser.parse_args()
 
     if args.submit:
         cmd_submit_one(args.submit)
+        return
+
+    if args.submit_path:
+        entries = load_manifest()
+        entry = next(
+            (e for e in entries
+             if any(a.get("path") == args.submit_path
+                    for a in e.get("artifacts", []))),
+            None,
+        )
+        if entry is None:
+            sys.exit(f"error: no manifest entry with path {args.submit_path!r}")
+        cmd_submit_one(entry["url"])
         return
 
     entries = load_manifest()

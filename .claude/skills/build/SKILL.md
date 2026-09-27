@@ -15,6 +15,8 @@ allowed-tools:
   - Bash(python3 scripts/tools/ocr-consensus.py *)
   - Bash(python3 scripts/tools/route_failure.py *)
   - Bash(python3 scripts/checks/_phases.py *)
+  - Bash(python3 scripts/tools/archive.py --submit *)
+  - Bash(python3 scripts/tools/archive.py --submit-path *)
 ---
 
 # Build orchestrator
@@ -112,7 +114,8 @@ linked source, the source wins.
   │  auditor                  │  fresh-context cold re-read; the built node only
   └─────────────┬─────────────┘
     ▼
-  health: pass  ▶  build-state.py --update  ▶  user commits (pre-commit gate)
+  health: pass  ▶  build-state.py --update  ▶  Wayback-submit touched
+    archive_status:1 sources  ▶  user commits (pre-commit gate)
 ```
 
 `┌─┐` solid box = an **agent role** (a subagent in `.claude/agents/`).
@@ -130,13 +133,13 @@ linked source, the source wins.
 | 5 | extract | `worker` ×N | the single verbatim boundary; emits fragments | [`agents/worker.md`](../../agents/worker.md) |
 | 6 | synthesize | `builder` | merge → organize → link → render; the prose-drift surface | [`agents/builder.md`](../../agents/builder.md) |
 | 7 | audit | `auditor` | fresh-context cold re-read of the built node | [`agents/auditor.md`](../../agents/auditor.md) |
-| 8 | finalize | — *orchestrator* | refresh build-state; user commits at the gate | step 8 below |
+| 8 | finalize | — *orchestrator* | refresh build-state; Wayback-submit any `archive_status: 1` source the build touched; user commits at the gate | step 8 below |
 
 ### Branches — when the straight line bends
 
 | Branch | Trigger | Effect | Defined in |
 |---|---|---|---|
-| all-internal | survey sets `all_internal: true` / `gaps: []` | skip steps 2–3 (no new bytes); sibling gate + scaffold still run | [`build-protocol`](../build-protocol/SKILL.md) "Orchestration branches" |
+| all-internal | survey sets `all_internal: true` / `gaps: []` | skip steps 2–3 (no new bytes); sibling gate + scaffold still run; step 8 still Wayback-submits any reused source left at `archive_status: 1` | [`build-protocol`](../build-protocol/SKILL.md) "Orchestration branches" |
 | failure routing | builder returns `result: fail` | `route_failure.py` maps check → phase → role; re-enter that role, fix the **data**, rebuild | [`build-protocol`](../build-protocol/SKILL.md) "Fix the data, never the node body" |
 | `/augment` | user-triggered maintenance change | partial re-entry: skip scaffold, enter directly at the role the change needs | [`augment` skill](../augment/SKILL.md) |
 
@@ -272,8 +275,33 @@ invocation; the relay/contract split holds one level down too.
    `health: pass`. A node was added/changed, so refresh the
    build-state snapshot at `meta/build-state.md`
    (`python3 scripts/build/build-state.py --update`) — the
-   build-state gate (`--check`) is otherwise red at commit. Report the built
-   node and a short summary of each role's returned stub. (Stubs are return
+   build-state gate (`--check`) is otherwise red at commit.
+
+   **Close the Wayback-submission gap.** The Archive role is the only step
+   that submits to the Wayback Machine, and the all-internal branch (and any
+   build that reuses already-archived sources) never runs it for those
+   sources — so a reused source can sit at `archive_status: 1` (local copy
+   only) indefinitely; the pipeline alone never closes this. Before
+   reporting, walk every primary source **this build touched** — the archive
+   role's `archived[]` stub (carries `url` directly) plus step‑1's
+   `reusable_sources[]` (path only — resolve each to its manifest entry) —
+   and submit any entry that is `archive_status: 1` and not
+   `wayback_skip: true`:
+   - one at a time, **strictly sequential and ≥20 s apart** — never in
+     parallel (Save Page Now rate-limits);
+   - `python3 scripts/tools/archive.py --submit-path {path}` for a source
+     known only by path (resolves path → manifest `url` first); `--submit
+     {url}` when the stub already carries the URL;
+   - a Save Page Now failure never blocks the build — record which URL
+     failed and why, and leave it for the next `/archive-sweep` to retry
+     (its CDX-first re-check is the authoritative re-query, not this step);
+     an SPN response that didn't redirect to a confirmed snapshot can still
+     have captured the page, so report it as **unconfirmed**, never flatly
+     as "failed".
+
+   Report the built node, a short summary of each role's returned stub, and
+   the Wayback-submission outcome per source touched (submitted /
+   already-confirmed / unconfirmed). (Stubs are return
    values the orchestrator reads as it goes — handoff rules in "Relay, don't
    author" above.)
 

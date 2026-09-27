@@ -116,7 +116,7 @@ notes: |                       # optional, non-normative — "Advisory notes" ab
 slug: {slug}
 worker_kind: pdf
 source: {category}/{file}.pdf
-quotes:                        # verbatim spans BY the subject; legitimately [] for an about-the-subject / institutional source
+quotes:                        # person: verbatim spans BY the subject, legitimately [] for an about-the-subject / institutional source; organization/other: verbatim spans ABOUT the subject from such a source
   - text: "<verbatim span copied from scratch, never typed from memory>"
     location: "<source-shape anchor>"
     # optional: significance, context, claim_group, statement_date,
