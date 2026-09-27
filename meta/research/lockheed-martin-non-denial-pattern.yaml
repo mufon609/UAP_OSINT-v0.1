@@ -28,7 +28,8 @@ quotes:
   source:
     path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
     location: ¶ November 2023 spokesperson quote
-  significance: 'November 2023 Liberation Times direct query to Lockheed Martin asking the company to deny possession and divestment allegations — Lockheed Martin''s spokesperson "declined to issue a denial" and instead deflected to the U.S. government. The first attested moment in the non-denial pattern; recapped by Sharp in his 2025-03-27 article.'
+  significance: 'Liberation Times query (November 2023, recapped March 27, 2025): asked to deny possession and divestment allegations, Lockheed Martin''s spokesperson "declined to issue a denial" and instead deflected to the U.S. government.'
+  analysis: 'This was a direct Liberation Times query to Lockheed Martin asking the company to deny the allegations. The first attested moment in the non-denial pattern; recapped by Sharp in his 2025-03-27 article.'
   context: 'Christopher Sharp, Liberation Times, 2025-03-27 article recapping the November 2023 spokesperson response'
   statement_date: '2023-11'
   attestation_tier: secondary-source
@@ -67,7 +68,8 @@ quotes:
   source:
     path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
     location: ¶ closing of the March 3 2025 outreach inquiries
-  significance: 'Sharp''s closing attestation on the March 3 2025 outreach — Lockheed Martin "refused to respond" to repeated requests covering company involvement in the proposed transfer, current and prior possession of non-human material, and any Ryder records. Most recent attested non-denial moment in the chain.'
+  significance: 'Liberation Times (March 27, 2025): Sharp''s closing attestation is that Lockheed Martin "refused to respond" to repeated requests in the March 3 2025 outreach.'
+  analysis: 'This applies to repeated requests covering company involvement in the proposed transfer, current and prior possession of non-human material, and any Ryder records. Most recent attested non-denial moment in the chain.'
   context: 'Christopher Sharp, Liberation Times, 2025-03-27 article, closing the March 3 2025 outreach section'
   statement_date: '2025-03-27'
   attestation_tier: secondary-source
@@ -80,7 +82,8 @@ quotes:
   source:
     path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
     location: ¶ Gaffney-block summary
-  significance: 'Sharp''s 2024-11-08 reporting publicly aired the allegation that "Lockheed Martin may still possess" the non-human materials — published five days before the November 13 2024 House Oversight hearing. Lockheed Martin did not issue a public denial of this allegation after publication; the absence of denial is contextual evidence supporting the non-denial pattern Sharp later documents explicitly in 2025-03-27.'
+  significance: 'Liberation Times (November 8, 2024): Sharp''s reporting publicly aired the allegation that "Lockheed Martin may still possess" the non-human materials, published five days before the November 13 2024 House Oversight hearing.'
+  analysis: 'Lockheed Martin did not issue a public denial of this allegation after the 2024-11-08 publication; the absence of denial is contextual evidence supporting the non-denial pattern Sharp later documents explicitly in 2025-03-27.'
   context: 'Christopher Sharp, Liberation Times, 2024-11-08 "Witnesses Announced for Landmark UFO Congressional Hearing", Gaffney-block summary'
   statement_date: '2024-11-08'
   attestation_tier: secondary-source

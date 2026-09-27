@@ -310,6 +310,23 @@ def _render_blockquote(text):
     return "\n".join(f"> {ln}" if ln else ">" for ln in reflowed.split("\n"))
 
 
+def _render_passage_head(quote, fallback):
+    """H3 heading + optional analysis paragraph for one passage block.
+
+    ``significance`` is the one-sentence heading ("Source (date):
+    statement"); ``analysis`` carries whatever else the contributor says
+    about the passage — pairings, chronology, caveats — and renders as a
+    plain paragraph between the heading and the blockquote, so any hedge
+    is read before the quote. The single shared helper for every surface
+    that heads a passage with its significance (Key Passages, finding
+    Evidence). Returns the lines up to, not including, the blockquote."""
+    lines = [f"### {quote.get('significance') or fallback}", ""]
+    analysis = (quote.get("analysis") or "").strip()
+    if analysis:
+        lines += [analysis, ""]
+    return lines
+
+
 def _render_statement_block(quote, artifact):
     """Render a single block-quote + verification block pair.
 

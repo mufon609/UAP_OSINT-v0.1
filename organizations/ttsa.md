@@ -192,7 +192,9 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### TTSA's own bio of Elizondo as Director of Global Security & Special Programs — prior service across the U.S. Army, DoD, National Counterintelligence Executive, and DNI, and the "sensitive aerospace threat identification program focusing on unidentified aerial technologies" he ran for nearly a decade.
+### TTSA homepage snapshot (January 8, 2018): TTSA's own bio of Elizondo as Director of Global Security & Special Programs cites prior service across the U.S. Army, DoD, National Counterintelligence Executive, and DNI.
+
+The bio also cites the "sensitive aerospace threat identification program focusing on unidentified aerial technologies" he ran for nearly a decade.
 
 > Luis Elizondo is a career intelligence officer whose experience includes working with the U.S. Army, the Department of Defense, the National Counterintelligence Executive, and the Director of National Intelligence. As a former Special Agent In-Charge, Luis conducted and supervised highly sensitive espionage and terrorism investigations around the world. As an intelligence Case Officer, he ran clandestine source operations throughout Latin America and the Middle East. Most recently, Luis managed the security for certain sensitive portfolios for the US Government as the Director for the National Programs Special Management Staff. For nearly the last decade, Luis also ran a sensitive aerospace threat identification program focusing on unidentified aerial technologies.
 
@@ -252,7 +254,9 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### Primary-source Army-side description of TTSA's role as Collaborator and the scope of the CRADA. OCR artifact preserved verbatim ('metamateiiais').
+### U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): primary-source Army-side description of TTSA's role as Collaborator and the scope of the CRADA.
+
+OCR artifact preserved verbatim ('metamateiiais').
 
 > To the Stars Academy of Arts and Science is a company with materiel and technology Innovations that offer capability advancements for Army ground vehicles. These technology innovations have been acquired, designed, and produced by the Collaborator, leveraging advancements in metamateiiais and quantum physics to push performance gains. The Collaborator will share their Innovations with the Government, who will use its laboratories and resources to characterize the technologies and determine if they have appropriate applications on ground vehicles.
 
@@ -264,7 +268,9 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### Primary-source enumeration of the specific TTSA technologies the U.S. Army committed to test and characterize. OCR artifacts preserved ('struefural metamateriais').
+### U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): primary-source enumeration of the specific TTSA technologies the U.S. Army committed to test and characterize.
+
+OCR artifacts preserved ('struefural metamateriais').
 
 > The Government is interested in a variety of the Collaborator's technologies, such as, but not limited to inertial mass reduction mechanical/struefural metamateriais, electromagnetic metamaterial wave guides, quantum physics, quantum communications, and beamed energy propulsion,
 
@@ -313,7 +319,9 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### CRADA 19-15 — the contracting agency's mailing address, U.S. Army CCDC Ground Vehicle Systems Center, Warren, Michigan. OCR artifact preserved verbatim ('Ml' for 'MI').
+### U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): the contracting agency's mailing address is U.S. Army CCDC Ground Vehicle Systems Center, Warren, Michigan.
+
+OCR artifact preserved verbatim ('Ml' for 'MI').
 
 > CCDC Ground Vehicle Systems Center 6501 E. 11 Mile Road, MS 221 Warren, Ml 48397-5000
 
@@ -361,7 +369,9 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### Primary-source corporate-action date of the name amendment — November 30, 2021 — and the company's own stated reason ("to better reflect the Company's focus on entertainment"). Replaces the imprecise "by 2024" framing used in prior versions of this artifact.
+### TTSA SEC Form 1-K for FY2021 (filed May 2, 2022): the company amended its name on November 30, 2021 "to better reflect the Company's focus on entertainment".
+
+This is the primary-source corporate-action date of the name amendment and the company's own stated reason. Replaces the imprecise "by 2024" framing used in prior versions of this artifact.
 
 > On November 30, 2021, the Company amended its name from "To The Stars Academy Of Arts and Science Inc.," to "To The Stars Inc." in order to better reflect the Company's focus on entertainment.
 

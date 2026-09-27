@@ -676,7 +676,8 @@ entry_lifecycle_fields:
 
 quote_entry:
   required: [text, source]
-  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id, claim_group]
+  optional: [significance, analysis, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id, claim_group]
+  significance_words_max: 40   # significance cap (whitespace-split words); quote_significance_form
   observation_type_values: [direct, relayed]
   attestation_tier_values:
     - sworn-oath           # under-oath congressional testimony
@@ -697,8 +698,18 @@ quote_entry:
   #   the attestation lives in).
   # text: verbatim quote, YAML literal block (|) preserves multi-line
   # source: object with path + location (single source per quote)
-  # significance: short H3 header summarizing why this quote matters;
-  #   renders as the quote's heading above the blockquote. Names sources,
+  # significance: ONE plain sentence, at most significance_words_max
+  #   words, in the form "Source (date): what the passage shows" — e.g.
+  #   "IPMO PWS §1.2 (April 2022): USD(I&S) is supported by DDI (Collection
+  #   and Special Programs), which is supported by the Director of IPMO."
+  #   Renders as the passage's H3 heading on every Key Passages surface
+  #   (document, organization, transcript, media, location, foia) and on
+  #   finding Evidence; artifact-only on person / event (Statements and Key
+  #   Testimony carry no per-quote heading), where the same rule applies.
+  #   Anything more — chronology, pairings with other passages, caveats,
+  #   source-form notes — goes in `analysis`, never a second sentence here.
+  #   Enforced by the quote_significance_form check (sentence count + word
+  #   cap; counts words by whitespace split). Names sources,
   #   never entry ids (every prose field — build-protocol "Prose names the
   #   source — never an entry ID"; the prose-entry-ID checks). When a quote's
   #   evidentiary weight is below the artifact's median (claim-of-record,
@@ -707,6 +718,14 @@ quote_entry:
   #   phrase here so the epistemic framing is read before the quote — e.g.
   #   "Self-attested capacity, contested by the official record" or
   #   "Claim-of-record — secondary-source attestation only".
+  # analysis: optional free prose — the contributor's analysis of the
+  #   passage that does not fit the one-sentence significance: what it
+  #   pairs with, how it moves the chronology, caveats and source-form
+  #   notes. Renders as a plain paragraph between the significance heading
+  #   and the blockquote wherever significance renders (artifact-only on
+  #   person / event, like significance). Names sources, never entry ids.
+  #   Distinct from `context`, which carries circumstance only (venue,
+  #   date, format) and renders as the Attributed-to row.
   # context: where / when / under what circumstances the speaker
   #   made the statement. Composed into the Attributed-to line of
   #   the rendered verification block. Required on person artifacts

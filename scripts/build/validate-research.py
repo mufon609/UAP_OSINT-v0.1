@@ -61,6 +61,9 @@ Per-artifact checks (after parse + ResearchContext construction):
                                          IDs in prose, one dispatch per
                                          owning phase (extract / organize /
                                          link)
+  - quote_significance_form           — whole-artifact; each quote
+                                         significance is one sentence
+                                         within the word cap (extract)
 
 Each check self-gates on target type/archetype/kind so the orchestrator
 runs the full step list against every artifact and the check decides
@@ -158,6 +161,7 @@ from checks import publication_record as ck_publication_record
 from checks import link_prose_entry_ids as ck_link_prose_entry_ids
 from checks import quote_location_page as ck_quote_location_page
 from checks import quote_prose_entry_ids as ck_quote_prose_entry_ids
+from checks import quote_significance_form as ck_quote_significance_form
 from checks import quotes as ck_quotes
 from checks import records_sought as ck_records_sought
 from checks import relationships as ck_relationships
@@ -339,6 +343,7 @@ _ARTIFACT_CHECKS = [
     ck_cross_refs,
     # No internal entry IDs in prose — one dispatch per owning phase
     ck_quote_prose_entry_ids,      # quotes[] prose (extract)
+    ck_quote_significance_form,    # significance = one sentence within the word cap (extract)
     ck_synthesis_prose_entry_ids,  # top-level synthesis prose (organize)
     ck_link_prose_entry_ids,       # structured-entry prose (link)
     ck_associated_entities,  # associated_entities content: shape + prose-wrap superset (presence via iff_section)

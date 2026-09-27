@@ -36,7 +36,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ## Key Passages
 
-### Constitutional preamble — vests authority in the President under the Constitution and the laws of the United States. Standard Executive Order opening.
+### Executive Order 14347, preamble (September 5, 2025): the constitutional preamble vests authority in the President under the Constitution and the laws of the United States.
+
+Standard Executive Order opening.
 
 > By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:
 
@@ -48,7 +50,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 1 (Purpose) pivot sentence — asserts the rename rationale: "peace through strength" via "ability and willingness to fight and win wars." Federal Register typography (LaTeX-style ``...') preserved verbatim.
+### Executive Order 14347, Section 1 (Purpose) (September 5, 2025): the pivot sentence asserts the rename rationale as "peace through strength" via "ability and willingness to fight and win wars."
+
+Federal Register typography (LaTeX-style ``...') preserved verbatim.
 
 > The name ``Department of War,'' more than the current ``Department of Defense,'' ensures peace through strength, as it demonstrates our ability and willingness to fight and win wars on behalf of our Nation at a moment's notice, not just to defend.
 
@@ -72,7 +76,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(b) — institutional secondary title authorization extending 2(a) to the Department of Defense and the Office of the Secretary of Defense as Department of War / Office of the Secretary of War. Source for the "Department of War" / "OUSW" institutional branding.
+### Executive Order 14347, Section 2(b) (September 5, 2025): the Department of Defense and the Office of the Secretary of Defense may be referred to as Department of War / Office of the Secretary of War.
+
+This is an institutional secondary title authorization extending 2(a). Source for the "Department of War" / "OUSW" institutional branding.
 
 > (b) The Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War, respectively, in the contexts described in subsection (a) of this section.
 
@@ -84,7 +90,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(c) — extends the secondary title authorization to subordinate officials, with "Deputy Secretary of War" and "Under Secretary of War" as illustrative corresponding titles. Authorizes the OUSW(I&S) form (Office of the Under Secretary of War for Intelligence and Security) used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 corporate marketing.
+### Executive Order 14347, Section 2(c) (September 5, 2025): the secondary title authorization extends to subordinate officials, with "Deputy Secretary of War" and "Under Secretary of War" as illustrative corresponding titles.
+
+Authorizes the OUSW(I&S) form (Office of the Under Secretary of War for Intelligence and Security) used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 corporate marketing.
 
 > (c) The provisions of this section shall also apply, as appropriate, to subordinate officials within the Department of Defense, who may use corresponding secondary titles such as Deputy Secretary of War or Under Secretary of War in the contexts described in subsection (a) of this section.
 
@@ -96,7 +104,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(e) — statutory-controlling clause. Establishes that the secondary title authorization in 2(a)-(d) does not change the statutory name of the Department; statutory references remain "Department of Defense" / "Secretary of Defense" until changed by an act of Congress. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.
+### Executive Order 14347, Section 2(e) (September 5, 2025): under the statutory-controlling clause, statutory references remain "Department of Defense" / "Secretary of Defense" until changed by an act of Congress.
+
+Establishes that the secondary title authorization in 2(a)-(d) does not change the statutory name of the Department. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.
 
 > (e) Statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
 
@@ -108,7 +118,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(f) — 30-day notification requirement. The Secretary of War (per 2(a)) submits a notification to the President, through the Assistant to the President for National Security Affairs, listing any office, executive department or agency, component, or command that begins using the secondary Department of War designation. Notification is for transmittal to Congress.
+### Executive Order 14347, Section 2(f) (September 5, 2025): a 30-day notification requirement has the Secretary of War notify the President of any office, executive department or agency, component, or command that begins using the secondary Department of War designation.
+
+The Secretary of War (per 2(a)) submits the notification listing them to the President, through the Assistant to the President for National Security Affairs. Notification is for transmittal to Congress.
 
 > (f) Within 30 days of the date of this order, the Secretary of War shall submit to the President, through the Assistant to the President for National Security Affairs, a notification for transmittal to the Congress of any office, executive department or agency, component, or command that begins using a secondary Department of War designation.
 
@@ -120,7 +132,9 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(g) — 60-day permanent-renaming recommendation: proposed legislative and executive actions required to permanently change the Department of Defense to the Department of War. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.
+### Executive Order 14347, Section 2(g) (September 5, 2025): a 60-day permanent-renaming recommendation covers the legislative and executive actions required to permanently change the Department of Defense to the Department of War.
+
+The recommendation concerns proposed legislative and executive actions. Frames the secondary title authorization in 2(a)-(d) as transitional, pending statutory rename.
 
 > (g) Within 60 days of the date of this order, the Secretary of War shall submit to the President, through the Assistant to the President for National Security Affairs, a recommendation on the actions required to permanently change the name of the Department of Defense to the Department of War. This recommendation shall include the proposed legislative and executive actions necessary to accomplish this renaming.
 

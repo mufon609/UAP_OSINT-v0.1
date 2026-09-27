@@ -179,7 +179,8 @@ quotes:
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: CRADA 19-15, Section II, Article A - Project Description
-  significance: Primary-source Army-side description of TTSA's role as Collaborator and the scope of the CRADA. OCR artifact preserved verbatim ('metamateiiais').
+  significance: 'U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): primary-source Army-side description of TTSA''s role as Collaborator and the scope of the CRADA.'
+  analysis: 'OCR artifact preserved verbatim (''metamateiiais'').'
   context: 'U.S. Army CCDC CRADA 19-15 ''Novel and Emerging Technology Exploitation'', effective October 1, 2019'
   statement_date: '2019-10-01'
 - id: q13
@@ -189,7 +190,8 @@ quotes:
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: CRADA 19-15, Article D.1, Government Activity
-  significance: Primary-source enumeration of the specific TTSA technologies the U.S. Army committed to test and characterize. OCR artifacts preserved ('struefural metamateriais').
+  significance: 'U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): primary-source enumeration of the specific TTSA technologies the U.S. Army committed to test and characterize.'
+  analysis: 'OCR artifacts preserved (''struefural metamateriais'').'
   context: 'U.S. Army CCDC CRADA 19-15 ''Novel and Emerging Technology Exploitation'', effective October 1, 2019'
   statement_date: '2019-10-01'
 - id: q14
@@ -412,7 +414,8 @@ quotes:
   source:
     path: government/sec-ttsa-1k-partii-20220502.html
     location: SEC 1-K FY2021, Item 1 and Note 1 to Financial Statements
-  significance: Primary-source corporate-action date of the name amendment — November 30, 2021 — and the company's own stated reason ("to better reflect the Company's focus on entertainment"). Replaces the imprecise "by 2024" framing used in prior versions of this artifact.
+  significance: 'TTSA SEC Form 1-K for FY2021 (filed May 2, 2022): the company amended its name on November 30, 2021 "to better reflect the Company''s focus on entertainment".'
+  analysis: 'This is the primary-source corporate-action date of the name amendment and the company''s own stated reason. Replaces the imprecise "by 2024" framing used in prior versions of this artifact.'
   context: 'SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022'
   statement_date: '2022-05-02'
 - id: q36
@@ -522,7 +525,8 @@ quotes:
   source:
     path: news/tothestarsacademy-home-20180108.html
     location: TTSA 2018 homepage Team section, Luis Elizondo bio
-  significance: TTSA's own bio of Elizondo as Director of Global Security & Special Programs — prior service across the U.S. Army, DoD, National Counterintelligence Executive, and DNI, and the "sensitive aerospace threat identification program focusing on unidentified aerial technologies" he ran for nearly a decade.
+  significance: 'TTSA homepage snapshot (January 8, 2018): TTSA''s own bio of Elizondo as Director of Global Security & Special Programs cites prior service across the U.S. Army, DoD, National Counterintelligence Executive, and DNI.'
+  analysis: 'The bio also cites the "sensitive aerospace threat identification program focusing on unidentified aerial technologies" he ran for nearly a decade.'
   context: 'TTSA homepage snapshot, January 8, 2018 (Team section)'
   statement_date: '2017-12-16'
 - id: q47
@@ -594,7 +598,8 @@ quotes:
   source:
     path: government/army-ttsa-crada-19-15-nete-20191001.pdf
     location: CRADA 19-15, CRADA Administrators (Government) section, mailing address block
-  significance: CRADA 19-15 — the contracting agency's mailing address, U.S. Army CCDC Ground Vehicle Systems Center, Warren, Michigan. OCR artifact preserved verbatim ('Ml' for 'MI').
+  significance: 'U.S. Army CCDC CRADA 19-15 (effective October 1, 2019): the contracting agency''s mailing address is U.S. Army CCDC Ground Vehicle Systems Center, Warren, Michigan.'
+  analysis: 'OCR artifact preserved verbatim (''Ml'' for ''MI'').'
   context: 'U.S. Army CCDC CRADA 19-15 ''Novel and Emerging Technology Exploitation'', effective October 1, 2019'
   statement_date: '2019-10-01'
 - id: q54

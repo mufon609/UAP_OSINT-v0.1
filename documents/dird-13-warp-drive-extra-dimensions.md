@@ -47,7 +47,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Author identity redacted under (b)(6) personal-privacy exemption inside the DIRD itself; preparing organization redacted under (b)(3):10 USC 424. Documents that the DIRD-13 attribution to Obousy is extrinsic, not internal.
+### DIRD #13 title page (April 2, 2010): the author identity is redacted under (b)(6) and the preparing organization under (b)(3):10 USC 424.
+
+The (b)(6) personal-privacy exemption is applied inside the DIRD itself. Documents that the DIRD-13 attribution to Obousy is extrinsic, not internal.
 
 > Prepared by:
 >
@@ -67,7 +69,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Self-identifies DIRD-13 as an AAWSA Program FY 2009 product — the DIA program (later commonly referenced as AAWSAP) under which the DIRDs were commissioned. Bldg 6000, Washington DC 20340-5100 is the DIA HQ mailing address.
+### DIRD #13 Administrative Note (April 2, 2010): the report self-identifies as an AAWSA Program FY 2009 product.
+
+The AAWSA Program that DIRD-13 names is the DIA program (later commonly referenced as AAWSAP) under which the DIRDs were commissioned. Bldg 6000, Washington DC 20340-5100 is the DIA HQ mailing address.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
 
@@ -103,7 +107,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### The paper's central thesis claim — re-derive warp-drive physics from QFT (rather than GR) and obtain a dramatic energy-requirement reduction. Reference 2 is Obousy & Cleaver, the author's own prior paper.
+### DIRD #13 Introduction (April 2, 2010): the paper's central thesis claim is to re-derive warp-drive physics from QFT rather than GR.
+
+Re-deriving from QFT (rather than GR) is claimed to obtain a dramatic energy-requirement reduction. Reference 2 is Obousy & Cleaver, the author's own prior paper.
 
 > Our own research directly addresses this question from a new and unique perspective and introduces a novel paradigm shift in the field of warp drive study (Reference 2). More formally, our work approaches the physics of warp drive from the perspective of quantum field theory; this diverges from the more traditional approach to warp drives, which utilizes the physics of general relativity. One of the improvements the model introduces is a dramatic reduction in the overall energy required to create such a phenomenon.
 
@@ -151,7 +157,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Summarizes the GR-based bottom line: the energy requirement is an enormous negative number even at arbitrarily low sublight speeds. This is the result the QFT-paradigm thesis later claims to reduce by ~8 orders of magnitude.
+### DIRD #13, Section 2.1 (April 2, 2010): under GR the warp-bubble energy requirement is an enormous negative number even at arbitrarily low sublight speeds.
+
+This summarizes the GR-based bottom line. This is the result the QFT-paradigm thesis later claims to reduce by ~8 orders of magnitude.
 
 > The consequence of Equation (2.3) and Table 2 is that if one wants to travel at hyperlight speeds, then the warp bubble energy requirement will be an enormous negative number. And this remains true even if one engineers an arbitrarily low sublight speed warp bubble. Engineering a warp drive bubble is quite daunting given these results.
 
@@ -163,7 +171,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### The DIRD's vivid quantitative reductio of the GR-only warp drive: a 10^6 kg ship in a 50 m bubble achieves v_warp ≤ 5.16 × 10⁻⁶ m/s — slower than a garden snail. Note the visible scan-line minus-sign drops on the exponents preserved verbatim (the sibling's OCR-quirk preservation).
+### DIRD #13, Section 2.1 (April 2, 2010): a 10^6 kg ship in a 50 m bubble achieves v_warp ≤ 5.16 × 10⁻⁶ m/s — slower than a garden snail.
+
+This is the DIRD's vivid quantitative reductio of the GR-only warp drive. Note the visible scan-line minus-sign drops on the exponents preserved verbatim (the sibling's OCR-quirk preservation).
 
 > Equation (2.4) indicates that for any reasonable values of the engineering parameters inside the brackets, v_warp will be absurdly low. This result is due to the intrinsic nonlinearity of the general relativistic field equation. To illustrate this point, the example starship parameters from Table 2 (R = 50 m, Δ ~ 1/σ = 10⁻³ m) are inserted into Equation (2.4) and assume M_ship = 10⁶ kg to find that v_warp ≤ 1.72 × 10 ¹⁴ (or 5.16 × 10 ⁶ m/s). Garden snails can crawl faster than this.
 
@@ -211,7 +221,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### DIRD's physical-significance claim about the Casimir force: not reducible to the four fundamental forces; sourced entirely in vacuum modification. This is the conceptual lever the paper later uses to argue dark-energy density is controllable in principle.
+### DIRD #13, Section 4.1 (April 2, 2010): the Casimir force is not reducible to the four fundamental forces and is sourced entirely in vacuum modification.
+
+This is the DIRD's physical-significance claim about the Casimir force. This is the conceptual lever the paper later uses to argue dark-energy density is controllable in principle.
 
 > This is a profound result in the sense that the origin of this force cannot be traced back to one of the four fundamental forces of nature (gravity, electromagnetism, and the two nuclear forces), but is a force that is entirely due to a modification of the quantum vacuum.
 
@@ -235,7 +247,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Pivot statement — explicitly motivates linking Casimir vacuum energy to dark energy as a stepping stone to warp-drive realization. Sets up Sections 5-6.
+### DIRD #13, Section 4.1 summary (April 2, 2010): the paper explicitly motivates linking Casimir vacuum energy to dark energy as a stepping stone to warp-drive realization.
+
+This is the paper's pivot statement. Sets up Sections 5-6.
 
 > In summary, quantum field theory predicts that the vacuum is an interlaced cobweb of quantum fields which are never strictly at rest, and which exhibit zero-point fluctuations. These fluctuations give rise to real and measurable phenomenon, with the Casimir effect being the most poignant. It seems only natural to attempt to relate the ideas from the previous section regarding a ubiquitous dark energy field to this quantum vacuum energy. If a relationship can be established, one would be a step closer to the technological realization of warp drive.
 
@@ -271,7 +285,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Author's claim of a novel regularization technique on the ADD vacuum potential (yielding Equation 6.2). Self-claimed contribution to the regularization literature.
+### DIRD #13, Section 6 (April 2, 2010): the author claims a novel regularization technique on the ADD vacuum potential, yielding Equation 6.2.
+
+The author's claim is a self-claimed contribution to the regularization literature.
 
 > Our own research focuses upon exploring a new way to handle the infinities arising from Equation (6.1), and after performing a novel regularization it was discovered that:
 
@@ -283,7 +299,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Central claim of Section 6 — by including extra-dimensional vacuum-field contributions and allowing exotic fields in the higher dimension, the theoretical vacuum energy density can be tuned to match observed Λ. The "taming" of the cosmological-constant problem central to the paper's argument.
+### DIRD #13, Section 6 (April 2, 2010): by including extra-dimensional vacuum-field contributions, the theoretical vacuum energy density can be tuned to match observed Λ.
+
+This is the central claim of Section 6, and it also relies on allowing exotic fields in the higher dimension. The "taming" of the cosmological-constant problem central to the paper's argument.
 
 > Our own work (Reference 51, 53) has demonstrated that when the contribution due to the extra-dimensional quantum vacuum fields is included, it is possible to "tune" the theoretical energy density of the universe to agree with experimental observations using extensions of Equation (6.5), provided allowance for certain exotic fields to exist within the higher dimension. Although this may at first appear counterintuitive, one novel feature of the quantum vacuum energy is that it can contribute both positive and negative energy to the vacuum. The sign of the contribution is fundamentally due to the nature of the underlying virtual quantum field. For example, virtual fermionic fields (e.g., electrons) contribute an overall positive energy to the vacuum, whereas virtual bosonic fields contribute an overall negative energy. In this way, certain field combinations allow for energy cancellations. The additional freedom encountered in higher dimensional theories means that it is a fairly straightforward matter to adjust the overall vacuum energy density to agree with the experimentally measured value for the cosmological constant.
 
@@ -307,7 +325,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Quantitative core of the warp-drive proposal: Casimir / vacuum energy scales as 1/R⁴ of the extra-dim radius. The strong leverage (small radius changes → dramatic energy-density swings) the paper exploits as the propulsion mechanism.
+### DIRD #13, Section 7 (April 2, 2010): Casimir / vacuum energy scales as 1/R⁴ of the extra-dim radius, the quantitative core of the warp-drive proposal.
+
+This is the strong leverage (small radius changes → dramatic energy-density swings) the paper exploits as the propulsion mechanism.
 
 > Both our own research and previous work in higher dimensional Casimir energy¹⁶ demonstrate that the magnitude of the vacuum energy is intimately related to the size of the extra dimension. More precisely, the smaller the extra dimension, the greater the Casimir energy (and vice versa: the bigger an extra dimension, the smaller the Casimir energy). In fact, the energy is related to the radius of the higher dimension raised to the fourth power, which means that very small changes in the radius of the extra dimension generate dramatic changes to the vacuum energy density.
 
@@ -355,7 +375,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Originality claim — the variable-radius extra dimension has been studied in string theory (Reference 57 = Giddings) but "has never before been suggested" as a propulsion mechanism. This is the paper's claim to novel contribution.
+### DIRD #13, Section 7.4 (April 2, 2010): the paper claims the variable-radius extra dimension, studied in string theory, "has never before been suggested" as a propulsion mechanism.
+
+Originality claim — the string-theory study cited is Reference 57 = Giddings. This is the paper's claim to novel contribution.
 
 > This formula really expresses the foundation of this novel warp drive concept: that a sufficiently advanced technology with the ability to adjust the radius of the extra dimension locally would be able to locally adjust the expansion and contraction of spacetime around a spacecraft. This asymmetric expansion creates the warp bubble illustrated in Figure 1. The spacecraft would always move within its own light cone and thus would not contradict any law of special relativity. The possibility that the higher dimensional radius might vary from place to place has been explored in the context of string theory (Reference 57), and so is a valid academic pursuit. However, it has never before been suggested that this might facilitate a new and exotic form of propulsion.
 
@@ -367,7 +389,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Quantitative payoff of the QFT paradigm — Table 3 (dimensional-warp) shows energy requirements ~10⁸ × lower than Table 2 (Lobo-Visser GR-warp), with further reduction possible via the thin-shell model. The headline numerical claim of the paper.
+### DIRD #13, Section 7.4 (April 2, 2010): Table 3 (dimensional-warp) shows energy requirements ~10⁸ × lower than Table 2 (Lobo-Visser GR-warp).
+
+This is the quantitative payoff of the QFT paradigm, with further reduction possible via the thin-shell model. The headline numerical claim of the paper.
 
 > Upon comparing Tables 2 and 3, immediately one can see the drastic energy reductions that are apparent when one uses the dimensional warp drive paradigm. The energy requirements are reduced by a factor of 10⁸. This energy is based on a warp bubble that encompasses 100 m³ of space. As discussed earlier, this is a "worst case" scenario, and the energy requirements could be further reduced, perhaps by many orders of magnitude, by utilizing the thin shell model illustrated in Figure 9.
 
@@ -379,7 +403,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Author's own caveat — the 10⁸× improvement notwithstanding, required energies remain "far in excess of those available in the foreseeable future." An important hedge that prevents the paper from reading as a technology-ready claim.
+### DIRD #13, Section 7.4 (April 2, 2010): the author's own caveat is that required energies remain "far in excess of those available in the foreseeable future."
+
+The caveat holds the 10⁸× improvement notwithstanding. An important hedge that prevents the paper from reading as a technology-ready claim.
 
 > These are, perhaps, the most important numerical results of this paper, as they set an upper limit on the energy requirements necessary to generate a warp bubble, and also on the energy requirements necessary to surpass the speed of light. Even though this energy requirement is a vast improvement on the calculations of Visser and Lobo, the energies are still far in excess of those available in the foreseeable future.
 
@@ -391,7 +417,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Proposes a concrete tabletop experimental test — a hypothetical "dark energy laser" (w<-1 output) producing a measurable local-expansion signature on the order of 10⁻⁵ m/s per meter of laser path. The paper's only direct experimental-falsifiability proposal.
+### DIRD #13, Section 7.5 (April 2, 2010): the paper proposes a concrete tabletop experimental test using a hypothetical "dark energy laser" (w<-1 output).
+
+The hypothetical laser would be producing a measurable local-expansion signature on the order of 10⁻⁵ m/s per meter of laser path. The paper's only direct experimental-falsifiability proposal.
 
 > In a handful of labs scattered around the country, petawatt lasers are being built and tested. These are lasers of profound capability, able to generate short laser pulses of intensity >> 10¹⁵ W/m², with peak focused power densities of >> 10²⁷ W/m³, and energy densities of >> 10¹⁶ J/m³. If it were possible to construct an exotic device whose energy output had w < 1, then using calculations identical to those used to generate Table 3, it would seem straightforward to show that the energy density produced by an analogous dark energy laser would translate into a local expansion of space corresponding to v_warp = 10⁻¹³ or ~ 10⁻⁵ m/s for every meter of space that the laser travels. It may be possible to construct an experiment that could measure the modified expansion of space along the length of a laser to test the predictions of this paper.
 
@@ -403,7 +431,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Technology-development sequence statement — (1) deeper dark-energy understanding + lab generation, (2) experimental confirmation that extra dimensions exist. Defines the prerequisite scientific milestones for any warp-drive prototype.
+### DIRD #13, Section 7.6 (April 2, 2010): a warp-drive prototype first needs deeper dark-energy understanding and lab generation, then experimental confirmation that extra dimensions exist.
+
+This technology-development sequence statement defines the prerequisite scientific milestones for any warp-drive prototype.
 
 > Although a practical warp drive could be many years away from realization, there are a number of technological developments that may, in fact, be necessary in order to allow prototype experiments to begin. First, a more complete understanding of dark energy is of paramount importance. As mentioned earlier, dark energy contributes approximately 70 percent of the overall energy density of the universe, and is responsible for the expansion of space. As one acquires deeper understanding of this energy, attempts to generate dark energy in the lab would no doubt be a critical component to a working warp drive.
 >
@@ -417,7 +447,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Most aggressive technological claim of the DIRD — that LHC-Atlas energies might not only probe ADD/RS extra dimensions but "control" their size, enabling "direct control of the local dark energy density." Couples the warp-drive program to a then-current (2009-2010) accelerator capability.
+### DIRD #13, Section 7.6 (April 2, 2010): the DIRD's most aggressive technological claim is that LHC-Atlas energies might "control" extra-dimension size, enabling "direct control of the local dark energy density."
+
+The claim goes beyond LHC-Atlas energies merely being able to probe ADD/RS extra dimensions and their size. Couples the warp-drive program to a then-current (2009-2010) accelerator capability.
 
 > The Atlas experiment at CERN's Large Hadron Collider will have the capability to probe the ADD type extra dimensions up to M_D ~ 8 TeV. In the Randall Sundrum scenario, the hierarchy is explained by the warp factor in the AdS5 bulk geometry. A lower bound can be placed on the lowest KK mass from electroweak precision tests (masses on the order of 1 TeV are allowed). In the Universal Extra Dimension scenario, Tevatron results constrain the compactification scale to M_C > 400 GeV. Because the Atlas experiment will be sensitive to M_C ~ 3 TeV , the estimates in this section indicate that if nature is in fact described by one of these higher dimensional scenarios, then the additional dimensions can be probed.
 >
@@ -443,7 +475,9 @@ Section 2 reviews general relativity warp drive requirements: implementation of 
 
 ---
 
-### Paper's closing rhetorical posture — couches the warp-drive program in Clarke's-Third-Law terms ("may seem like magic"). Establishes the speculative epistemic frame of the document's conclusion.
+### DIRD #13, Section 8 Summary (April 2, 2010): the paper's close couches the warp-drive program in Clarke's-Third-Law terms ("may seem like magic").
+
+This is the paper's closing rhetorical posture. Establishes the speculative epistemic frame of the document's conclusion.
 
 > Modern physics is full of many exciting and marvelously imaginative creations. Because one understands these curiosities, one could potentially harness these elements of nature for one's own technological ends. This is by no means a certainty, but if we may make predictions based on the innovative history of scientific pioneers of the past, then it seems entirely possible that the creative minds of the future may indeed find ways to accomplish what, to us, may seem like magic.
 

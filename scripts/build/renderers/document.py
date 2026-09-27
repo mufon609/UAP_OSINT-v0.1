@@ -11,6 +11,7 @@ import re
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
+    _render_passage_head,
     _source_path,
     sort_by_id,
 )
@@ -170,12 +171,11 @@ def render_key_passages(artifact):
     for q in quotes:
         if not isinstance(q, dict):
             continue
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
         loc = ""
         if isinstance(q.get("source"), dict):
             loc = q["source"].get("location") or ""
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append("| Field | Value |")

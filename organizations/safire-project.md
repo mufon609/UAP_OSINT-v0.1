@@ -94,7 +94,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Childs's stated foundational concept for SAFIRE — distilling the Electric Sun Model to a process between charged plasma and matter at different electrical potential. Page attributes this directly to Childs by name.
+### SAFIRE Project genesis page (2012): Childs's stated foundational concept for SAFIRE is distilling the Electric Sun Model to a process between charged plasma and matter at different electrical potential.
+
+Page attributes this directly to Childs by name.
 
 > Montgomery Childs: "Two years of research has led me to the conclusion that the Electric Sun Model might be boiled down to a fundamental process:     "Charged plasma affecting matter of a different electrical potential.”
 
@@ -130,7 +132,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Childs's official roles per the SAFIRE Project's own corporate team page — Founder of Aureon Energy Ltd., and principal scientist and chief engineer of the SAFIRE Project. Names Mainwaring brothers as the original supporters.
+### SAFIRE Project team page (2012): Childs is Founder of Aureon Energy Ltd., and principal scientist and chief engineer of the SAFIRE Project.
+
+These are Childs's official roles per the SAFIRE Project's own corporate team page. Names Mainwaring brothers as the original supporters.
 
 > MONTGOMERY CHILDS is the Founder of AUREON ENERGY, Ltd., and the principal scientist and chief engineer of the SAFIRE PROJECT. It was Childs who first proposed SAFIRE, and Scott and Bruce Mainwaring who recognized its potential and supported it.
 
@@ -142,7 +146,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Talbott's role as the inviter — Talbott invited Monty to propose his SAFIRE idea at the 2012 EU Conference, the originating venue. Verbatim contains source typo "empircal" preserved per source-form discipline.
+### SAFIRE Project team page (2012): Talbott invited Monty to propose his SAFIRE idea at the 2012 EU Conference, the originating venue.
+
+This is Talbott's role as the inviter. Verbatim contains source typo "empircal" preserved per source-form discipline.
 
 > DAVID TALBOTT recognized in Monty Childs' SAFIRE concept a real and empircal method for testing the Electric Sun model, and so invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference.
 
@@ -166,7 +172,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation of Jan Onderco's SAFIRE tenure and contribution — since 2014, at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. Establishes the 2014 start and the SCADA/data-engine specialization.
+### Aureon Energy team page (2014): Aureon Energy's self-attestation that Jan Onderco has contributed to the SAFIRE project since 2014 at Aurtas International in Mississauga, designing SCADA systems and data transformation engines.
+
+The self-attestation of Jan Onderco's SAFIRE tenure and contribution covers designing and developing SCADA systems and data transformation engines for physics research. Establishes the 2014 start and the SCADA/data-engine specialization.
 
 > Since 2014, Jan has been contributing to the SAFIRE project at Aurtas International in Mississauga, where he designed and developed SCADA systems and data transformation engines for physics research.
 
@@ -178,7 +186,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation that Jason Lickver has been a driving force behind the SAFIRE Team since 2014 and served as Senior Design Engineer on SAFIRE II and III. Establishes the 2014 start and the SAFIRE II/III design-engineer role.
+### Aureon Energy team page (2014): Aureon Energy's self-attestation that Jason Lickver has been a driving force behind the SAFIRE Team since 2014 and served as Senior Design Engineer on SAFIRE II and III.
+
+Establishes the 2014 start and the SAFIRE II/III design-engineer role.
 
 > In addition to his expertise in automation and energy management, Jason has been a driving force behind the SAFIRE Team since 2014, serving as the Senior Design Engineer on SAFIRE II and III while spearheading advancements in design engineering for the project.
 
@@ -274,7 +284,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Project's stated counter-thermonuclear-model finding — that the core of SAFIRE is cooler than its surrounding atmosphere [sic 'atmoshere'], and electron density comparable to the photosphere [sic 'photoshpere'], heliosphere and nuclear bombs. Verbatim preserves source typos.
+### SAFIRE Project Phase Three page (retrieved May 7, 2026): the project's stated counter-thermonuclear-model finding is that the core of SAFIRE is cooler than its surrounding atmosphere [sic 'atmoshere'].
+
+The finding also covers electron density comparable to the photosphere [sic 'photoshpere'], heliosphere and nuclear bombs. Verbatim preserves source typos.
 
 > SAFIRE is generating variations in electron density comparable to the photoshpere, heliosphere and nuclear bombs.     Electrical confinement of high energy photos (photon trapping)     The core of SAFIRE is cooler than its surrounding atmoshere
 
@@ -286,7 +298,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Project's own statement of the research-to-commercial transition — successfully completing the original Electric Sun test mandate and pivoting to commercial plasma reactor production. Verbatim preserves source typo "succesfully" [sic].
+### SAFIRE Project commercialization page (retrieved May 7, 2026): the project's own statement of the research-to-commercial transition, successfully completing the original Electric Sun test mandate and pivoting to commercial plasma reactor production.
+
+Verbatim preserves source typo "succesfully" [sic].
 
 > THE SAFIRE PROJECT succesfully completed its original mandate to test the Electric Sun. The decision was then made to take all the discoveries of the previous six years and employ them in producing a commercial plasma reactor that does not generate radioactive waste.
 
@@ -334,7 +348,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense ([`/organizations/dod`]) as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
+### Aureon Energy team page (retrieved May 7, 2026): Aureon Energy's self-attestation that Paul Anderson works for the United States Department of Defense as a lead scientist on next-generation explosive and propellant systems.
+
+Anderson is Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead; his stated employer is the United States Department of Defense ([`/organizations/dod`]). Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
 
 > Dr. Paul Anderson is a senior physical chemist working for the United States Department of Defense, serving as a lead scientist overseeing and researching the synthesis, formulation, and characterization of next-generation explosive and propellant systems.
 
@@ -346,7 +362,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment"). Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
+### SAFIRE PROJECT Genesis report (self-published, copyright 2017): primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment").
+
+Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
 
 > The Stellar Atmospheric Function in Regulation Experiment (SAFIRE) was initiated. Its objective was to test the Electric Sun model.
 
@@ -358,7 +376,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
+### SAFIRE PROJECT Genesis report (self-published, copyright 2017): the Mainwaring Archive Foundation promised funding for an initial test, to be administered by the International Science Foundation.
+
+Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
 
 > Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation.
 
@@ -370,7 +390,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### SAFIRE Phase II reactor primary dimensions — stainless-steel cylinder four feet in diameter and seven feet long. Self-attested in the Phase Two report.
+### SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE Phase II reactor primary dimensions, a stainless-steel cylinder four feet in diameter and seven feet long.
+
+Self-attested in the Phase Two report.
 
 > The central feature of the experimental apparatus is a stainless-steel cylinder four feet in diameter and seven feet long.
 
@@ -382,7 +404,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### SAFIRE Phase II power supply specification — 200 kW DC. Self-attested in the Phase Two report.
+### SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE Phase II power supply specification of 200 kW DC.
+
+Self-attested in the Phase Two report.
 
 > A power supply capable of producing 200kW of clean, continuous, direct current and voltage was constructed for the project.
 
@@ -394,7 +418,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### SAFIRE engine parts-count attestation (40,000 parts). Self-attested in the Phase Two report.
+### SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE engine parts-count attestation of 40,000 parts.
+
+Self-attested in the Phase Two report.
 
 > The SAFIRE engine is made up of 40,000 parts.
 
@@ -430,7 +456,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Multi-disciplinary core-team role of Leighton MacMillan per the SAFIRE Project's own team page. Verbatim preserves source spelling "millright".
+### SAFIRE Project team page (retrieved May 7, 2026): Leighton MacMillan's multi-disciplinary core-team role, per the SAFIRE Project's own team page.
+
+Verbatim preserves source spelling "millright".
 
 > LEIGHTON MACMILLAN: plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average 'out of the box' science project.
 
@@ -454,7 +482,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role.
+### SAFIRE Project team page (retrieved May 7, 2026): Paul Anderson's core-team chemist role covers Design of Experiments, chemical studies, statistical analysis and modeling.
+
+This is Anderson's role per the SAFIRE Project's own team page. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role.
 
 > PAUL ANDERSON, Ph.D, a chemist by training who works with high energy reactions, manages and oversees the Design of Experiments, chemical studies, and statistical analysis and modeling.
 
@@ -598,7 +628,9 @@ The Electric Sun Model SAFIRE was built to test is part of the Electric Universe
 
 ---
 
-### Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements Anderson's DoD lead-scientist role on the same page.
+### Aureon Energy team page (retrieved May 7, 2026): Aureon Energy's self-attestation of Paul Anderson's credentials, including 4 patents, 18 peer-reviewed publications and a Ph.D. in Physical Chemistry from Northeastern University.
+
+The credentials also include over 40 government technical reports and IEEE and NDIA membership. Complements Anderson's DoD lead-scientist role on the same page.
 
 > Dr. Anderson holds 4 patents and has authored 18 peer-reviewed publications and over 40 government technical reports and proceedings. He is a member of the IEEE and NDIA and holds a Ph.D. in Physical Chemistry from Northeastern University.
 

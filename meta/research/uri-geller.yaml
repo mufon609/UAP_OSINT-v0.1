@@ -654,7 +654,8 @@ quotes:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶9"
-  significance: Geller's self-attestation of the Nature / Stanford Research Institute publication AND of his subsequent FBI / CIA collaboration claims (KGB computer-file erasure, serial-killer tracking, Russian chief negotiator influence at nuclear disarmament negotiations). The most-cited single statement of his post-SRI national-security work
+  significance: 'urigeller.com biography page (retrieved May 16, 2026): Geller''s self-attestation of the Nature / Stanford Research Institute publication and of his subsequent FBI / CIA collaboration claims.'
+  analysis: 'The collaboration claims are KGB computer-file erasure, serial-killer tracking, Russian chief negotiator influence at nuclear disarmament negotiations. The most-cited single statement of his post-SRI national-security work'
   context: Uri Geller's biography page on urigeller.com, ¶9
 
 - id: q6
@@ -689,7 +690,8 @@ quotes:
   source:
     path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
     location: "¶25"
-  significance: Geller's first-person book quote from Mind Medicine (Element Books, 1999) transcribed by Brendan Burton in his November 24, 2007 article — Geller's own framing of "mindpower" as inherited wisdom. Source-form artifacts "form" (for "from") and "out" (for "our") preserved as-source per Brendan Burton's transcription
+  significance: 'Geller''s Mind Medicine (Element Books, 1999), as transcribed by Brendan Burton (November 24, 2007): Geller''s own framing of "mindpower" as inherited wisdom.'
+  analysis: 'Geller''s first-person book quote transcribed by Brendan Burton in his November 24, 2007 article. Source-form artifacts "form" (for "from") and "out" (for "our") preserved as-source per Brendan Burton''s transcription'
   context: 'Brendan Burton article "Uri Geller – UFOs, metal-bending and the PSI war" (November 24, 2007) ¶25 — transcription of Geller''s Mind Medicine (Element Books, 1999)'
 
 - id: q9
@@ -712,7 +714,8 @@ quotes:
   source:
     path: news/urigeller-com-biography-20260516.html
     location: "¶32"
-  significance: Geller's biography page quoting the CIA's verdict from the 2017 declassified release — "convincing and unambiguous". The underlying CIA document carrying this verdict is not currently archived in this repository; this quote is the citation chain entry point
+  significance: 'urigeller.com biography page (retrieved May 16, 2026): Geller''s biography page quoting the CIA''s verdict from the 2017 declassified release — "convincing and unambiguous."'
+  analysis: 'The underlying CIA document carrying this verdict is not currently archived in this repository; this quote is the citation chain entry point'
   context: Uri Geller's biography page on urigeller.com, ¶32 — biography page's quotation of the declassified CIA verdict
 
 - id: q11
@@ -736,7 +739,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Mossad-safe-house+2
-  significance: Geller's first-person Tablet account of the recruitment chain after Yoav Shaham's death — Shaham had spoken to Mossad director Meir Amit and Aman chief Aharon Yariv; Yariv summoned Geller to a Tel Aviv meeting. The "no comment from that point on" framing marks the boundary beyond which Geller declines to describe his asserted Israeli-intelligence work
+  significance: 'Tablet interview, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller''s first-person Tablet account of the recruitment chain after Yoav Shaham''s death.'
+  analysis: 'Shaham had spoken to Mossad director Meir Amit and Aman chief Aharon Yariv; Yariv summoned Geller to a Tel Aviv meeting. The "no comment from that point on" framing marks the boundary beyond which Geller declines to describe his asserted Israeli-intelligence work'
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q13
@@ -748,7 +752,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ FBI-defection
-  significance: Geller's first-person Tablet account of FBI tasking — parties in Long Island, mingling with Russian diplomats, claimed beaming-of-mind to influence defection. Geller-self-claim primary; no FBI-side primary-source corroboration archived in this repository
+  significance: 'Tablet interview, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller''s first-person Tablet account of FBI tasking — parties in Long Island, mingling with Russian diplomats, claimed beaming-of-mind to influence defection.'
+  analysis: 'Geller-self-claim primary; no FBI-side primary-source corroboration archived in this repository'
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q14
@@ -772,7 +777,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ daily-routine
-  significance: Geller's first-person Tablet attestation of present-tense ongoing contact with government agencies as of the 2015 interview — characterized as part of his daily news-monitoring routine. Geller-self-claim primary
+  significance: 'Tablet interview, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller''s first-person Tablet self-claim of present-tense ongoing contact with government agencies as of the 2015 interview.'
+  analysis: 'This first-person attestation is characterized as part of his daily news-monitoring routine. Geller-self-claim primary'
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q16
@@ -797,7 +803,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Carson-humiliation
-  significance: Geller's first-person Tablet recall of his Johnny Carson Tonight Show appearance — the most publicly humiliating moment in his early international career, after Carson conferred with James Randi to set up tamper-proof objects. Geller's reframing of this as a turning point ("there's no such thing as bad publicity") follows in subsequent paragraphs
+  significance: 'Tablet interview, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller''s first-person Tablet recall of his Johnny Carson Tonight Show appearance, the most publicly humiliating moment in his early international career.'
+  analysis: 'The humiliation came after Carson conferred with James Randi to set up tamper-proof objects. Geller''s reframing of this as a turning point ("there''s no such thing as bad publicity") follows in subsequent paragraphs'
   context: 'Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015'
 
 - id: q18
@@ -809,7 +816,8 @@ quotes:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: '¶ Saturday-August-4-firecracker'
-  significance: Geller's verbal response during the first experiment of Saturday August 4, 1973 SRI session — target was a firecracker (dictionary word "fuse"); R. Targ transcribed Geller's response as "a cylinder with noise coming out of it" in his August 13, 1973 CIA cover memo
+  significance: 'R. Targ''s CIA Aug 1973 SRI report on Geller (session of August 4, 1973): Geller''s verbal response in the first experiment, with a firecracker target, was "a cylinder with noise coming out of it."'
+  analysis: 'This was the first experiment of Saturday August 4, 1973 SRI session; the target was a firecracker (dictionary word "fuse"); R. Targ transcribed Geller''s response in his August 13, 1973 CIA cover memo'
   context: 'R. Targ ([`/people/russell-targ`]) transcription of Geller''s verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`]'
 
 - id: q19
@@ -821,7 +829,8 @@ quotes:
   source:
     path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
     location: '¶ Saturday-August-4-grapes'
-  significance: Geller's verbal response during the second experiment of Saturday August 4, 1973 SRI session — target was a bunch of grapes (dictionary word "bunch"); R. Targ transcribed Geller's immediate response as "drops of water coming out of the picture" and noted both target and Geller's rendition had 24 grapes
+  significance: 'R. Targ''s CIA Aug 1973 SRI report on Geller (session of August 4, 1973): Geller''s immediate verbal response in the second experiment, with a grapes target, was "drops of water coming out of the picture."'
+  analysis: 'This was the second experiment of Saturday August 4, 1973 SRI session; the target was a bunch of grapes (dictionary word "bunch"); R. Targ transcribed Geller''s immediate response and noted both target and Geller''s rendition had 24 grapes'
   context: 'R. Targ ([`/people/russell-targ`]) transcription of Geller''s verbal response during the grapes experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`]'
 
 naming_quirks:

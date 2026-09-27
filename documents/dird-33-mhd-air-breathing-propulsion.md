@@ -210,7 +210,9 @@ The document shows Prepared by: (b)(3):10 USC 424 Defense Intelligence Agency an
 
 ---
 
-### Documents the Soviet/Russian origin of the Ajax (Ayaks) concept at Leninetz in 1980s Leningrad — and carries a second authorship signal: one of the survey authors was special guest editor of the Journal of Propulsion and Power special section on weakly ionized gases.
+### DIRD #33 (November 21, 2010), "The Ajax Concept: MHD Bypass": the passage documents the Soviet/Russian origin of the Ajax (Ayaks) concept at Leninetz in 1980s Leningrad.
+
+It also carries a second authorship signal: one of the survey authors was special guest editor of the Journal of Propulsion and Power special section on weakly ionized gases.
 
 > An MHD-assisted propulsion concept that has attracted perhaps the most attention over the last decade or two is known as the Ajax, or Ayaks. The concept, illustrated in Figure 7, originated in the 1980s at Leninetz Scientific & Production Enterprise (now Leninetz Holding Co.) in Leningrad, USSR (now St. Petersburg, Russia). A good overview of the concept and its present status and problems can be found in the recent article23 included in the Special Section of the Journal of Propulsion and Power devoted to weakly ionized gases for propulsion enhancement, with one of the authors of this survey serving as special guest editor.
 

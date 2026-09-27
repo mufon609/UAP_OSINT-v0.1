@@ -183,7 +183,9 @@ Section XII describes another path, nonlinear quantum mechanics: the no-signal "
 
 ---
 
-### Coincidence-free test — if switching the optical fiber routing changes the camera pattern, it would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems. (Source OCR reads "demonstration on" for "demonstration of".)
+### DIRD #16, §VI (March 30, 2010): if switching the optical fiber routing changes the camera pattern, it would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems.
+
+Coincidence-free test. (Source OCR reads "demonstration on" for "demonstration of".)
 
 > If the pattern observed by the camera can indeed be changed by switching the optical fiber routing, then this would constitute a direct demonstration on nonlocal communication. Such an observation would falsify the no-signal theorems mentioned above
 

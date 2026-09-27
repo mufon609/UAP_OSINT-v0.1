@@ -193,7 +193,8 @@ quotes:
   source:
     path: government/dird-36-quantum-tomography-negative-energy-20110111.pdf
     location: 'section "CONCLUSION", paragraph on the time-domain BHD recommendation'
-  significance: 'The first formal recommendation: an R&D program to modify and commercialize a portable time-domain BHD device for mapping negative-energy regions of a pulsed/"AC" negative-energy generator. The "sic" of "in order provide" is preserved.'
+  significance: 'Quantum Tomography DIRD, Conclusion (January 11, 2011): the first formal recommendation is an R&D program to modify and commercialize a portable time-domain BHD device.'
+  analysis: 'The device would be for mapping negative-energy regions of a pulsed/"AC" negative-energy generator. The "sic" of "in order provide" is preserved.'
   context: 'Follows the summary of Hansen et al.''s time-domain BHD; note the source text reads "in order provide" (apparent dropped "to").'
   claim_group: 'recommendations: R&D program for BHD devices'
 - id: q20
@@ -229,7 +230,8 @@ quotes:
   source:
     path: government/dird-36-quantum-tomography-negative-energy-20110111.pdf
     location: 'section "ACKNOWLEDGEMENTS"'
-  significance: 'Names the two contributing academics — Ulf Leonhardt and Piotr Marecki — whose lecture notes, references, and experimental data the report draws on. An authorship-network signal.'
+  significance: 'Quantum Tomography DIRD, Acknowledgements (January 11, 2011): the report names the two contributing academics, Ulf Leonhardt and Piotr Marecki, whose lecture notes, references, and experimental data it draws on.'
+  analysis: 'An authorship-network signal.'
   context: 'The full ACKNOWLEDGEMENTS section (single sentence).'
   claim_group: 'acknowledgements: contributing academics'
 naming_quirks:

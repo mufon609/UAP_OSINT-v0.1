@@ -228,7 +228,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### Frames the utility problem central to the document — the bulk of direct-neural-interface research aims to restore lost limb function, while for a healthy individual a hand movement to control a mechanical device is far more practical, the gap the whole survey assesses
+### DIRD #12 (March 23, 2010), "Control of External Devices": the bulk of direct-neural-interface research aims to restore lost limb function, while for a healthy individual a hand movement is far more practical.
+
+Frames the utility problem central to the document — for a healthy individual a hand movement to control a mechanical device is far more practical, the gap the whole survey assesses
 
 > The bulk of research in direct neural interfaces is toward the goal of restoring mechanical capabilities to those individuals who have either lost limbs or lost control of limbs through central nervous system injury or disease. In these cases it is of obvious utility to produce a system that moves a cursor across screen to select an item over the course of several seconds; however, for a healthy individual, it is far more practical to execute a hand movement to control a mechanical device⁴ to achieve the same goal.
 
@@ -252,7 +254,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### EEG-section finding on commercial dry-electrode consumer devices — the document casts doubt that the Neurosky and Emotiv products measure neural signals at all, given their reliance on facial muscle movement and lack of peer-reviewed support; the source renders the company name both "Emotiv" and "Emotive"
+### DIRD #12 (March 23, 2010), EEG section: the document casts doubt that the Neurosky and Emotiv products measure neural signals at all.
+
+EEG-section finding on commercial dry-electrode consumer devices — doubt cast given their reliance on facial muscle movement and lack of peer-reviewed support; the source renders the company name both "Emotiv" and "Emotive"
 
 > Commercial versions of dry-electrode devices are being released on the market from companies such as Neurosky, OCZ Technology, and Emotiv.⁸ The Neurosky and Emotive systems claim proprietary processing algorithms, lack peer-reviewed literature supporting their claims, and even discuss using facial muscle movement to send signals (References 26, 27), raising doubt about whether neural signals are being measured at all.
 
@@ -468,7 +472,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### Lead finding of the hybrid neuro-robotic section — the lamprey-brain-stem / mobile-robot closed loop demonstrating bidirectional BMI plasticity at specific synapses; the in-source "(References 28, 29)" points to the dry-EEG and alpha-modulation papers rather than the work described, an apparent source mis-citation preserved verbatim
+### DIRD #12 (March 23, 2010), hybrid neuro-robotic section: the lamprey-brain-stem / mobile-robot closed loop is shown demonstrating bidirectional BMI plasticity at specific synapses.
+
+Lead finding of the hybrid neuro-robotic section. The in-source "(References 28, 29)" points to the dry-EEG and alpha-modulation papers rather than the work described, an apparent source mis-citation preserved verbatim
 
 > In one study, Mussa-Ivaldi et al. (References 28, 29) investigated the possibility of using the feedback from a BMI for inducing controlled plastic changes at specific synapses. Figure 12 shows the bidirectional connections between a mobile robotic device and a lamprey brain stem that has been used to investigate the repertoire of operations carried out by neurons in the reticular formation.
 
@@ -492,7 +498,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### Human-trials framing finding — testing BMIs on normal human subjects presents an ethical dilemma, exemplified by an artificial-vision recipient who now admits not understanding the risks; the source renders the given name "Jans Naumann" (the subject is Jens Naumann), preserved verbatim
+### DIRD #12 (March 23, 2010), "Trials Using Human Subjects": testing BMIs on normal human subjects presents an ethical dilemma, exemplified by an artificial-vision recipient who now admits not understanding the risks.
+
+Human-trials framing finding. The source renders the given name "Jans Naumann" (the subject is Jens Naumann), preserved verbatim
 
 > Testing BMIs on normal human subjects presents ethical dilemma since any volunteer outside of the research team itself would likely have difficulty understanding all of the risks involved in neural implantation. Even well-known volunteers such as Jans Naumann now admit they truly did not understand the risks involved and are considering having chronic implants removed.¹⁹
 
@@ -504,7 +512,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### The single normal-healthy-human peripheral-implant trial (2002) — sensation and control achieved through a peripheral array implant in the median nerve, but the nerve-microarray connection lasted 3 months before it deteriorated beyond use, a load-bearing data point for the survey's pessimism on durable invasive interfaces
+### DIRD #12 (March 23, 2010), "Trials Using Human Subjects": in the single normal-healthy-human peripheral-implant trial (2002), the median-nerve connection lasted 3 months before it deteriorated beyond use.
+
+Sensation and control were achieved through a peripheral array implant in the median nerve, but the nerve-microarray connection lasted 3 months before it deteriorated beyond use, a load-bearing data point for the survey's pessimism on durable invasive interfaces
 
 > Finally, one trial utilizing a normal, healthy human self-experimenter in 2002 showed that sensation and control is possible through a peripheral array implant in the median nerve of the left arm. This trial lasted 3 months before the physical connection between the nerve and the microarray deteriorated beyond use. Subsequent examination and testing has revealed no long-term damage at the implant site (Reference 58).
 
@@ -636,7 +646,9 @@ The invasive technologies discussion presents the cochlear implant — the most 
 
 ---
 
-### Closing assessment of the dominant current technology — metal electrode arrays for proximal stimulation are not advancing toward long-duration commercial viability without an unforeseen advance in two-way communication, and the human peripheral-implant trial is judged a non-success; the source grammar "did not shown terrific success" is preserved verbatim
+### DIRD #12 (March 23, 2010), Conclusions: metal electrode arrays for proximal stimulation are not advancing toward long-duration commercial viability without an unforeseen advance in two-way communication.
+
+Closing assessment of the dominant current technology; the human peripheral-implant trial is judged a non-success; the source grammar "did not shown terrific success" is preserved verbatim
 
 > The current state of the art using metal electrode arrays for proximal stimulation and sensing does not appear to be advancing toward long duration viability as a commercial BMI without some unforeseen advance in two-way communication. Peripheral connections show some theoretical promise, but an example of an implant in a human trial did not shown terrific success over several weeks it functioned.
 

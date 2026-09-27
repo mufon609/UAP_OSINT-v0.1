@@ -108,7 +108,13 @@ naming the metadata field, never a `quotes[]` entry.
    quote's `id` + `source: {path, location}` mechanically. A `significance`,
    `context` or `location` names the source (section, page, timestamp), never
    another quote's id — no "(q6)", "see q12", "continues q3" (build-protocol
-   "Prose names the source — never an entry ID"; gated at extract). On a transcript, do **not** emit `speaker_id` — the Builder
+   "Prose names the source — never an entry ID"; gated at extract). A
+   `significance` is one sentence within the word cap
+   (`quote_entry.significance_words_max`), "Source (date): what the passage
+   shows" — it is the passage's heading; anything more
+   (pairings, chronology, caveats) goes in the quote's optional `analysis`
+   (build-protocol "Key Passage headings — one sentence"; gated at extract
+   by `quote_significance_form`). On a transcript, do **not** emit `speaker_id` — the Builder
    derives it from the sibling. For a **person** artifact, an about-the-subject /
    institutional source yields `quotes: []` (per the voice gate above — route
    its content to `background_material[]` + `cross_ref_candidates[]` instead).

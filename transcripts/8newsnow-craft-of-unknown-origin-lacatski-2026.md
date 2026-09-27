@@ -46,7 +46,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ## Key Passages
 
-### Lacatski's direct framing of the AAWSAP work product as 30,000 pages of "analyst photos and information and logs and and sightings, etc., and investigations" and his framing of his prior interviews with Knapp as "top-level view" reductions of the full record. The 30,000-page figure aligns with Lacatski's WEAPONIZED PART 1 attestation that Kelleher reduced 30,000 pages to 7,500 pages then to ~1,200 pages across the four books.
+### 8 News Now segment (April 6, 2026): Lacatski frames the AAWSAP work product as 30,000 pages and his prior interviews with Knapp as "top-level view" reductions of the full record.
+
+Lacatski's direct framing describes the 30,000 pages as "analyst photos and information and logs and and sightings, etc., and investigations." The 30,000-page figure aligns with Lacatski's WEAPONIZED PART 1 attestation that Kelleher reduced 30,000 pages to 7,500 pages then to ~1,200 pages across the four books.
 
 > [0:53] Reducing 30,000 pages of analyst photos and information and logs and and sightings, etc., and investigations, that was a tough job. So, when I first met you, I could only give you a very top-level view of what we had done.
 
@@ -59,7 +61,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ---
 
-### Lacatski's direct attestation of the paranormal-umbrella framing of AAWSAP — the program was designed "to investigate the paranormal as being the umbrella over UFOs right from the get-go" and his DIA superiors "knew that from the beginning." The "umbrella over UFOs" framing inverts the standard public framing that paranormal was a side effect of UFO investigation; Lacatski places paranormal as the structural top layer.
+### 8 News Now segment (April 6, 2026): Lacatski attests the paranormal-umbrella framing of AAWSAP, describing the paranormal as "the umbrella over UFOs."
+
+Lacatski's direct attestation: the program was designed "to investigate the paranormal as being the umbrella over UFOs right from the get-go" and his DIA superiors "knew that from the beginning." The "umbrella over UFOs" framing inverts the standard public framing that paranormal was a side effect of UFO investigation; Lacatski places paranormal as the structural top layer.
 
 > [2:17] to investigate the paranormal as being the umbrella over UFOs right from the get-go. And your bosses knew that from the beginning. They knew it was going to get here.
 
@@ -72,7 +76,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ---
 
-### Lacatski's first-person attestation that AAWSAP "never had a leak" despite his bosses being concerned about leaks from the beginning. Contradicts later public framings that the program was leaky; Lacatski says it was tight.
+### 8 News Now segment (April 6, 2026): Lacatski attests that AAWSAP "never had a leak" despite his bosses being concerned about leaks from the beginning.
+
+This is Lacatski's first-person attestation. Contradicts later public framings that the program was leaky; Lacatski says it was tight.
 
 > [2:28] from the beginning. Uh they were concerned from the beginning about the the leak, but we never had a a leak. Uh not at all.
 
@@ -85,7 +91,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ---
 
-### Lacatski's direct affirmative on-record statement about the AAWSAP finding — "the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes." Documents Lacatski's explicit affirmation that AAWSAP found a positive answer to the existence question on the paranormal-umbrella scope.
+### 8 News Now segment (April 6, 2026): Lacatski's direct affirmative on-record statement about the AAWSAP finding: "the answer is absolutely yes."
+
+The full statement is "the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes." Documents Lacatski's explicit affirmation that AAWSAP found a positive answer to the existence question on the paranormal-umbrella scope.
 
 > [3:26] That's the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes.
 
@@ -98,7 +106,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ---
 
-### Lacatski's direct attestation that the recovered-craft and bodies framing does not by itself answer "where they're from, why they're here, what their plan is" — Lacatski's structural argument for why AAWSAP / Future Visions necessarily extend beyond craft-and-bodies recovery into the paranormal-umbrella scope.
+### 8 News Now segment (April 6, 2026): Lacatski's direct attestation that the recovered-craft and bodies framing does not by itself answer "where they're from, why they're here, what their plan is."
+
+This is Lacatski's structural argument for why AAWSAP / Future Visions necessarily extend beyond craft-and-bodies recovery into the paranormal-umbrella scope.
 
 > [4:12] You could have craft, you could have bodies, it wouldn't necessarily tell you where they're from, why they're here, what their their plan is. Nope, it it wouldn't, and that's part of the of the story.
 
@@ -111,7 +121,9 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 ---
 
-### Lacatski's direct speculative framing in the news segment — "if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards." Documents Lacatski's own framing of the disclosure-process pace as backsliding from a hypothetical observer's perspective.
+### 8 News Now segment (April 6, 2026): Lacatski speculates that an alien intelligence, if there was one, "must be shaking their heads in frustration cuz we move like a snail."
+
+Lacatski's direct speculative framing in the news segment: "if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards." Documents Lacatski's own framing of the disclosure-process pace as backsliding from a hypothetical observer's perspective.
 
 > [4:24] And if What what whatever we really done. In fact, if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards.
 

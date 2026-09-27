@@ -41,7 +41,9 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### Hoyer's own attestation that the Atlantic Test Range Addition line item — the SCIF-bearing structure at Pax River the Pax River SAP-F finding triangulates — was included in the bill at his request. Primary-source corroboration of Elizondo's December 2024 QFR Q7 statement that hangar funding was "allocated at the request of then-Representative Steny Hoyer".
+### Hoyer press release (July 28, 2010): in his own attestation, Hoyer says the Atlantic Test Range Addition at Pax was included in the bill at his request.
+
+Hoyer's own attestation concerns the Atlantic Test Range Addition line item — the SCIF-bearing structure at Pax River the Pax River SAP-F finding triangulates. Primary-source corroboration of Elizondo's December 2024 QFR Q7 statement that hangar funding was "allocated at the request of then-Representative Steny Hoyer".
 
 > The  Atlantic Test Range Addition at Pax was included in this bill at Rep. Hoyer's request.
 
@@ -53,7 +55,9 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### The canonical Atlantic Test Range Addition line item — $10,160,000 — at Naval Air Station, Patuxent River. Authorizes construction of an addition to the existing Atlantic Test Range to house Unmanned Air Vehicle control rooms, intelligence data acquisition laboratory spaces, and Sensitive Compartmented Information Facility areas. The fiscal year, dollar figure, location, and SCIF specification triangulate against Elizondo's December 2024 QFR Q7 description of a ~$10M Pax River SAP-F hangar Hoyer requested — fourteen years earlier, before any UAP framing of the appropriation.
+### Hoyer press release (July 28, 2010): the canonical Atlantic Test Range Addition line item, $10,160,000 at Naval Air Station, Patuxent River, includes Sensitive Compartmented Information Facility areas.
+
+Authorizes construction of an addition to the existing Atlantic Test Range to house Unmanned Air Vehicle control rooms, intelligence data acquisition laboratory spaces, and Sensitive Compartmented Information Facility areas. The fiscal year, dollar figure, location, and SCIF specification triangulate against Elizondo's December 2024 QFR Q7 description of a ~$10M Pax River SAP-F hangar Hoyer requested — fourteen years earlier, before any UAP framing of the appropriation.
 
 > Atlantic Test Range Addition,  Naval Air Station, Patuxent River  – $10,160,000 Funding will be used to construct an addition to the existing Atlantic Test Range, which is the only Naval Test and Evaluation Range on the East Coast, to house new control rooms for Unmanned Air Vehicles, intelligence data acquisition laboratory spaces, as well as Sensitive Compartmented Information Facility areas.
 
@@ -65,7 +69,9 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### BAMS Test and Evaluation Facility line item — a $42,211,000 hangar at Naval Air Station, Patuxent River for the Navy ([`/organizations/us-navy`])'s Broad Area Maritime Surveillance Program. Source-attested context distinguishing the Atlantic Test Range Addition ($10,160,000, SCIF areas) from the BAMS hangar ($42,211,000, Unmanned Air Vehicle hangar) — the press release announces both in the same bill but they are distinct line items at distinct dollar magnitudes.
+### Hoyer press release (July 28, 2010): the BAMS Test and Evaluation Facility line item is a $42,211,000 hangar at Naval Air Station, Patuxent River for the Navy ([`/organizations/us-navy`])'s Broad Area Maritime Surveillance Program.
+
+Source-attested context distinguishing the Atlantic Test Range Addition ($10,160,000, SCIF areas) from the BAMS hangar ($42,211,000, Unmanned Air Vehicle hangar) — the press release announces both in the same bill but they are distinct line items at distinct dollar magnitudes.
 
 > BAMS Test and Evaluation Facility,  Naval Air Station, Patuxent River – $42,211,000 Funding will be used to construct a hangar that will house Unmanned Air Vehicles and provide administrative space, communications rooms, lab spaces, and a mission control system.  This facility will directly support the Navy's Broad Area Maritime Surveillance Program which is critical to ensuring the Navy has persistent maritime Intelligence, Surveillance, and Reconnaissance data collection and dissemination capability.
 
@@ -77,7 +83,9 @@ Congressman Steny H. Hoyer (MD-5) ([`/people/steny-hoyer`]) press release of Jul
 
 ---
 
-### Hoyer's own pull-quote framing the four line items as continued military investment in Pax River and Indian Head. The general framing — military investment in highly valued facilities — gives no UAP-specific or SCIF-specific motivation; the press release attests the SCIF specification as a routine Atlantic Test Range addition feature.
+### Hoyer press release (July 28, 2010): Hoyer's own pull-quote frames the four line items as continued military investment in Pax River and Indian Head, with no UAP-specific or SCIF-specific motivation.
+
+The general framing — military investment in highly valued facilities — gives no UAP-specific or SCIF-specific motivation; the press release attests the SCIF specification as a routine Atlantic Test Range addition feature.
 
 > "The work done at Pax and Indian Head is highly valued by the military, and the continued investment in the facilities reflect that," stated Rep. Hoyer.
 

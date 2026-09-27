@@ -30,6 +30,10 @@
 #                                              prose error from the owning phase's
 #                                              check; source labels, ID-typed
 #                                              pointers, verbatim text stay silent
+#      scripts/tests/test_significance_form.py — multi-sentence / over-cap
+#                                              significance errors; abbreviations
+#                                              and analysis stay silent; analysis
+#                                              renders under the heading
 #   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #      python3 scripts/build/merge-fragments.py --selftest
 #      python3 scripts/build/finalize-attribution.py --selftest
@@ -163,6 +167,7 @@ steps=(
     $'test_image_source_disposition\tpython3 scripts/tests/test_image_source_disposition.py'
     $'test_json_unicode_escapes\tpython3 scripts/tests/test_json_unicode_escapes.py'
     $'test_prose_entry_ids\tpython3 scripts/tests/test_prose_entry_ids.py'
+    $'test_significance_form\tpython3 scripts/tests/test_significance_form.py'
     $'smoke\tpython3 scripts/tests/smoke.py'
     $'merge-fragments --selftest\tpython3 scripts/build/merge-fragments.py --selftest'
     $'finalize-attribution --selftest\tpython3 scripts/build/finalize-attribution.py --selftest'

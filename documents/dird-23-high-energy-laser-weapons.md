@@ -63,7 +63,9 @@ The most significant technical impediment to deployment may have been the large 
 
 ---
 
-### Provenance block; preparing component withheld under (b)(3):10 USC 424 / Defense Intelligence Agency, Author withheld under (b)(6) — authorship is extrinsic (DIA AAWSAP products list → J. Albertine / Directed Technologies). Redaction markers preserved verbatim.
+### DIRD #23 (March 31, 2010), provenance block: the preparing component is withheld under (b)(3):10 USC 424 / Defense Intelligence Agency and the Author withheld under (b)(6).
+
+Authorship is extrinsic (DIA AAWSAP products list → J. Albertine / Directed Technologies). Redaction markers preserved verbatim.
 
 > Prepared by:
 >
@@ -95,7 +97,9 @@ The most significant technical impediment to deployment may have been the large 
 
 ---
 
-### Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld under (b)(3):10 USC 424;(b)(6). Anchors the document to the AAWSAP DIRD corpus. Redaction markers preserved verbatim.
+### DIRD #23 (March 31, 2010), Administrative Note: the program provenance is the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series, with the Program Manager withheld.
+
+Program-provenance: Program Manager withheld under (b)(3):10 USC 424;(b)(6). Anchors the document to the AAWSAP DIRD corpus. Redaction markers preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to (b)(3):10 USC 424;(b)(6) AAWSA Program Manager, Defense Intelligence Agency, (b)(3):10 USC 424 Bldg 6000, Washington, DC 20340-5100.
 

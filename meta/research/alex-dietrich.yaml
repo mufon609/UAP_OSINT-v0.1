@@ -390,7 +390,8 @@ quotes:
   context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
   observation_type: relayed
   statement_date: '2023'
-  significance: "Self-attestation of her November 2004 rank as lieutenant junior grade (LTjg). First of three attestations in this source."
+  significance: 'Somewhere in the Skies podcast (recorded 2023): Dietrich self-attests her November 2004 rank as lieutenant junior grade (LTjg).'
+  analysis: 'Self-attestation of her November 2004 rank. First of three attestations in this source.'
 - id: q17
   claim_group: "Junior Rank And Deference To Fravor"
   added_date: '2026-04-21'
@@ -438,7 +439,8 @@ quotes:
   context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
   observation_type: direct
   statement_date: '2023'
-  significance: "First-person account of how Dietrich acquired visual on the Tic Tac via the disturbed water as anchor point. Auto-caption typo 'turning water' preserved."
+  significance: 'Somewhere in the Skies podcast (recorded 2023): Dietrich''s first-person account of how she acquired visual on the Tic Tac via the disturbed water as anchor point.'
+  analysis: 'Auto-caption typo ''turning water'' preserved.'
 - id: q21
   claim_group: "FLIR Footage And Subsequent Sortie"
   added_date: '2026-04-21'
@@ -450,7 +452,8 @@ quotes:
   context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
   observation_type: direct
   statement_date: '2023'
-  significance: "Dietrich attests she personally viewed the original FLIR tape aboard Nimitz shortly after the encounter; resolution was 'much clearer' than the public release. Auto-caption 'Fleer' for FLIR preserved."
+  significance: 'Somewhere in the Skies podcast (recorded 2023): Dietrich attests she personally viewed the original FLIR tape aboard Nimitz shortly after the encounter, its resolution ''much clearer'' than the public release.'
+  analysis: 'Auto-caption ''Fleer'' for FLIR preserved.'
 - id: q22
   claim_group: "Enigma Labs First Advisor"
   added_date: '2026-04-21'
@@ -486,7 +489,8 @@ quotes:
   context: "Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20)"
   observation_type: relayed
   statement_date: '2025-02-20'
-  significance: "Dietrich's own biographical summary: ROTC commission in 2001, first flight on 9/11, strike fighter pipeline, F-18 Super Hornets off USS Nimitz, VFA-41. Auto-caption typos 'ROC' (for ROTC) and 'Nimttz' preserved."
+  significance: 'Linda Hall Library UAP Scientific Context panel (February 20, 2025): Dietrich''s own biographical summary — ROTC commission in 2001, first flight on 9/11, strike fighter pipeline, F-18 Super Hornets off USS Nimitz, VFA-41.'
+  analysis: 'Auto-caption typos ''ROC'' (for ROTC) and ''Nimttz'' preserved.'
 - id: q25
   claim_group: "Tic Tac Flight Behavior"
   added_date: '2026-04-21'
@@ -534,7 +538,8 @@ quotes:
   context: "Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20)"
   observation_type: direct
   statement_date: '2025-02-20'
-  significance: "Dietrich's first-person time accounting: her own visual was 10-12 seconds while more senior aviators' visual was several minutes. Explains the duration discrepancy between her and Fravor's accounts."
+  significance: 'Linda Hall Library UAP Scientific Context panel Q&A (February 20, 2025): Dietrich says her own visual was 10-12 seconds while more senior aviators'' visual was several minutes.'
+  analysis: 'This is Dietrich''s first-person time accounting. Explains the duration discrepancy between her and Fravor''s accounts.'
 - id: q29
   claim_group: "No Classification Or Secrecy Pressure"
   added_date: '2026-04-21'
@@ -558,7 +563,8 @@ quotes:
   context: "Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31)"
   observation_type: relayed
   statement_date: '2023-08-31'
-  significance: "Dietrich's own summary of her 20-year Navy career structure: 10 years operational pilot/deployed engineer, 10 years academic. Post-retirement move to Boulder."
+  significance: 'Merged podcast Episode 014 with Ryan Graves (August 31, 2023): Dietrich summarizes her 20-year Navy career as 10 years operational pilot/deployed engineer and 10 years academic.'
+  analysis: 'This is Dietrich''s own summary of her 20-year Navy career structure. Post-retirement move to Boulder.'
 - id: q31
   claim_group: "Naval Career And Background"
   added_date: '2026-04-21'
@@ -618,7 +624,8 @@ quotes:
   context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
   observation_type: relayed
   statement_date: '2021-06-16'
-  significance: "Dietrich dates the start of Pentagon contact to about 2009 and describes the 'one-way flow' pattern. Most evidentiarily distinctive passage on her institutional engagement chronology."
+  significance: 'When It Mattered podcast Episode 55 (June 16, 2021): Dietrich dates the start of Pentagon contact to about 2009 and describes the ''one-way flow'' pattern.'
+  analysis: 'Most evidentiarily distinctive passage on her institutional engagement chronology.'
 - id: q36
   claim_group: "Family Lineage"
   added_date: '2026-04-21'
@@ -654,7 +661,8 @@ quotes:
   context: "American Veterans Center interview (recorded 2024-11-09)"
   observation_type: relayed
   statement_date: '2024-11-09'
-  significance: "Dietrich's 2024 re-attestation of her Nov 2004 rank (LTjg) and flight crew composition: Fravor lead with senior lieutenant WSO; Dietrich wingman with lieutenant commander WSO (department head). Auto-caption 'fraver' preserved."
+  significance: 'American Veterans Center interview (November 9, 2024): Dietrich re-attests her November 2004 rank (LTjg) and the flight crew composition of Fravor''s lead aircraft and her own wing aircraft.'
+  analysis: 'Dietrich''s 2024 re-attestation of her Nov 2004 rank (LTjg) and flight crew composition: Fravor lead with senior lieutenant WSO; Dietrich wingman with lieutenant commander WSO (department head). Auto-caption ''fraver'' preserved.'
 - id: q39
   claim_group: "Tic Tac Appearance"
   added_date: '2026-04-21'
@@ -703,7 +711,8 @@ quotes:
   context: "Self-authored op-ed byline in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
-  significance: "Dietrich's own bio summary in her self-authored Debrief op-ed byline — the primary source for her career totals (flight hours, carrier-arrested landings) and combat awards (Combat Air Medal for 206 missions across OIF and OEF; Bronze Star for the 2010 Afghanistan deployment)."
+  significance: 'The Debrief op-ed byline (February 17, 2023): Dietrich''s self-authored bio gives her career totals and combat awards, including a Combat Air Medal for 206 missions and a Bronze Star.'
+  analysis: 'Dietrich''s own bio summary in her self-authored Debrief op-ed byline is the primary source for her career totals (flight hours, carrier-arrested landings) and combat awards (Combat Air Medal for 206 missions across OIF and OEF; Bronze Star for the 2010 Afghanistan deployment).'
 - id: q43
   claim_group: "FLIR Footage And Subsequent Sortie"
   added_date: '2026-04-23'
@@ -715,7 +724,8 @@ quotes:
   context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
   observation_type: relayed
   statement_date: '2023'
-  significance: "Dietrich's own attestation of Chad Underwood's position on the subsequent F/A-18F sortie — Chad was in the back seat, with an unnamed pilot. She distinguishes 'Chad and the back seat' from 'his Pilot'; the framing contradicts NYMag 2019's headline framing of Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' — primary-source disagreement to be documented on the Underwood node when built."
+  significance: 'Somewhere in the Skies podcast (recorded 2023): Dietrich places Chad Underwood in the back seat of the subsequent F/A-18F sortie, with an unnamed pilot.'
+  analysis: 'This is Dietrich''s own attestation of Chad Underwood''s position on the subsequent F/A-18F sortie. She distinguishes ''Chad and the back seat'' from ''his Pilot''; the framing contradicts NYMag 2019''s headline framing of Underwood as ''Navy Pilot Who Filmed the Tic Tac UFO'' — primary-source disagreement to be documented on the Underwood node when built.'
 timeline:
 - id: t1
   added_date: '2026-04-21'

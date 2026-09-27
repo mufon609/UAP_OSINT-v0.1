@@ -189,7 +189,8 @@ quotes:
     source:
       path: government/dird-16-quantum-entanglement-nonlocality-20100330.pdf
       location: '§VI. Nonlocal Communication Versus Signaling, ¶ "If the pattern observed by the camera"'
-    significance: Coincidence-free test — if switching the optical fiber routing changes the camera pattern, it would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems. (Source OCR reads "demonstration on" for "demonstration of".)
+    significance: 'DIRD #16, §VI (March 30, 2010): if switching the optical fiber routing changes the camera pattern, it would constitute a direct demonstration of nonlocal communication and would falsify the no-signal theorems.'
+    analysis: 'Coincidence-free test. (Source OCR reads "demonstration on" for "demonstration of".)'
     statement_date: '2010-03-30'
     claim_group: coincidence_free_ghost_interference_test
   - id: q14

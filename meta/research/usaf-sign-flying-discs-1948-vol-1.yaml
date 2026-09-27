@@ -64,7 +64,8 @@ quotes:
   source:
     path: government/18_6369445_general_1948_vol_1.pdf
     location: 'Routing and Record Sheet, "Flying Discs", Director of Intelligence to Director of Plans and Operations, Comment No. 1, 12 Feb 1948, ¶1'
-  significance: Documents the 30 December 1947 letter instructing Air Materiel Command to stand up the project — the directive that established what became Project SIGN. The typewriter line-wrap "sight-ings" is preserved verbatim.
+  significance: 'USAF Flying Discs file, Routing and Record Sheet (February 12, 1948): the sheet documents the 30 December 1947 letter instructing Air Materiel Command to stand up the project.'
+  analysis: 'Documents the directive that established what became Project SIGN. The typewriter line-wrap "sight-ings" is preserved verbatim.'
   statement_date: '1948-02-12'
 - id: q4
   added_date: '2026-06-08'
@@ -98,7 +99,8 @@ quotes:
   source:
     path: government/18_6369445_general_1948_vol_1.pdf
     location: 'Disposition Form, AFOIR-CO-5 to CSGID, Comment No. 1, 27 Feb 1948, ¶2'
-  significance: Designates Air Materiel Command (Wright-Patterson) as the lead Air Force agency for flying-disc information — the institutional precursor of Project SIGN's organizational home. The source's own mid-sentence capital "Implementing" and the typewriter line-wrap "pheno-mena" are preserved verbatim.
+  significance: 'USAF Flying Discs file, Disposition Form (February 27, 1948): the form designates Air Materiel Command (Wright-Patterson) as the lead Air Force agency for flying-disc information.'
+  analysis: 'This is the institutional precursor of Project SIGN''s organizational home. The source''s own mid-sentence capital "Implementing" and the typewriter line-wrap "pheno-mena" are preserved verbatim.'
   statement_date: '1948-02-27'
 - id: q7
   added_date: '2026-06-08'

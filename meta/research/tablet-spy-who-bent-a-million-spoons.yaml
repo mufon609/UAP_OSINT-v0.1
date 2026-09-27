@@ -79,7 +79,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Mossad-safe-house+2
-  significance: 'Geller''s account of Shaham''s death in the West Bank and the subsequent summons to a Tel Aviv meeting by Aharon Yariv (Aman chief 1964-1972) — primary self-attestation of the recruitment chain Shaham → Meir Amit → Aharon Yariv that Web''s handoff identified as the load-bearing Israeli-intelligence claim from this source'
+  significance: 'Tablet Magazine, "The Spy Who Bent a Million Spoons" (June 3, 2015): in primary self-attestation, Geller recounts Shaham''s death in the West Bank and a subsequent summons to a Tel Aviv meeting by Aharon Yariv.'
+  analysis: 'Aharon Yariv was Aman chief 1964-1972. Geller''s account is primary self-attestation of the recruitment chain Shaham → Meir Amit → Aharon Yariv that Web''s handoff identified as the load-bearing Israeli-intelligence claim from this source'
   statement_date: '2015-06-03'
 - id: q7
   added_date: '2026-05-16'
@@ -115,7 +116,8 @@ quotes:
   source:
     path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
     location: ¶ Golda-Meir-party
-  significance: 'Geller''s account of the encounter with Golda Meir at a general''s house party — Geller asked Meir to draw something in the restroom and reproduce it via telepathy; the encounter that preceded Meir''s next-day Israeli-radio remark that Geller calls the beginning of his career'
+  significance: 'Tablet Magazine, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller''s account of the encounter with Golda Meir at a general''s house party, where he asked Meir to draw something in the restroom and reproduce it via telepathy.'
+  analysis: 'The encounter preceded Meir''s next-day Israeli-radio remark that Geller calls the beginning of his career'
   statement_date: '2015-06-03'
 associated_entities:
 - /documents/1987-nuclear-reduction-treaty

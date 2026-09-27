@@ -616,9 +616,8 @@ quotes:
   source:
     path: government/dird-18-traversable-wormholes-20100406.pdf
     location: 'section "V. Conclusion: The Way Forward" (¶ Going forward toward the demonstration)'
-  significance: 'Section V Conclusion — the “Going forward” research agenda; first item: small amounts
-    of negative energy are already made in the lab, but it is not yet known whether larger amounts can
-    be accessed over the periods, distances, and distributions needed to engineer a traversable wormhole'
+  significance: 'DIRD #18 (April 6, 2010), Section V Conclusion: small amounts of negative energy are already made in the lab, but it is not yet known whether larger amounts can be accessed.'
+  analysis: 'The “Going forward” research agenda; first item: it is not yet known whether larger amounts can be accessed over the periods, distances, and distributions needed to engineer a traversable wormhole'
   statement_date: '2010-04-06'
   claim_group: section-5-conclusion
 - id: q42

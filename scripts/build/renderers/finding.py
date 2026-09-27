@@ -16,6 +16,7 @@ from ._common import (
     SECTION_SEP,
     _compose_attributed_to,
     _render_blockquote,
+    _render_passage_head,
     _wrap_path,
     sort_by_date,
 )
@@ -90,9 +91,8 @@ def render_finding_evidence(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Attestation"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Attestation")
         lines.append(_render_blockquote(text))
         lines.append("")
 

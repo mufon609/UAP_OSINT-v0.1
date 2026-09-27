@@ -49,7 +49,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ## Key Passages
 
-### Lacatski's direct on-record self-attestation as creator and DIA program manager of both AAWSAP and Kona Blue (KBP) — the first time he publicly names himself as the Kona Blue lead in this corpus. Establishes the structural Kona Blue → Lacatski lineage and asserts "Both classified" against alternative internet framings.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's direct on-record self-attestation as creator and DIA program manager of both AAWSAP and Kona Blue (KBP).
+
+This is the first time he publicly names himself as the Kona Blue lead in this corpus. Establishes the structural Kona Blue → Lacatski lineage and asserts "Both classified" against alternative internet framings.
 
 > [2:00] as way of background, I was the creator and DIA program manager of AASAP, the Advanced Aerospace Weapons System Applications Program, and of the follow-on Kona Blue program, KBP. Both classified programs, regardless of what the internet has said in the past. Both classified.
 
@@ -62,7 +64,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's four-book ledger as of November 2025 — Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program (Initial Revelations), New Insights (new), and the future-approved Future Visions. Together: ~1,200 pages of "everything that I have been approved to say." Lacatski says the four books are his complete public-record testimony and would tell Congress "a hundred times more than they're ever going to get from hearings."
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's four-book ledger as of November 2025 together totals ~1,200 pages of "everything that I have been approved to say."
+
+The four books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program (Initial Revelations), New Insights (new), and the future-approved Future Visions. Lacatski says the four books are his complete public-record testimony and would tell Congress "a hundred times more than they're ever going to get from hearings."
 
 > [3:21] They are complete. I I'll tell you in a moment how difficult that was to do, but they are complete. That's everything that I have been approved to say condensed into what will be 1,200 pages. Uh so, those books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program, Initial Revelations, the new book New Insights, and the also approved future book, let's say it's 4 months, 6 months, Future Visions. Now, that is a complete package. That's all I could ever say to the Congress, and they can read it and know a hundred times more than they're ever going to get from hearings.
 
@@ -75,7 +79,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's attestation that the books "factually detail the results of AASAP's day-to-day activities assembled only from official government files at DIA" and "approved for release by the Department of Defense or War." The post-EO-14347 "Department of Defense or War" phrasing is Lacatski's — the only such phrasing in the corpus attributable to a named institutional actor.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's attestation that the books are "assembled only from official government files at DIA" and "approved for release by the Department of Defense or War."
+
+Per Lacatski, the books "factually detail the results of AASAP's day-to-day activities" so assembled. The post-EO-14347 "Department of Defense or War" phrasing is Lacatski's — the only such phrasing in the corpus attributable to a named institutional actor.
 
 > [5:03] Instead, the books factually detail the results of AASAP's day-to-day activities assembled only from official government files at DIA, and approved for release by the Department of Defense or War.
 
@@ -88,7 +94,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's on-record commercial-relationship attestation about book royalties — $0.50/Kindle, $1.50/printed copy; "in this niche market, I am not laughing all the way to the bank." Establishes the per-copy royalty floor for the four-book series; addresses the financial-motivation framing that critics apply to disclosure-era figures.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's on-record commercial-relationship attestation about book royalties: $0.50/Kindle, $1.50/printed copy.
+
+In his words, "in this niche market, I am not laughing all the way to the bank." Establishes the per-copy royalty floor for the four-book series; addresses the financial-motivation framing that critics apply to disclosure-era figures.
 
 > [5:50] If you have the free version of Kindle, I make about 50 cents a book. If you buy a full a full printed copy, I make a dollar 50. And believe me, in this niche market, I am not laughing all the way to the bank. It was a lot of work to basically earn what in the Washington area is minimum wage. I, by the way, would have to be selling 80 books a day to keep up with minimum wage if I had a full-time job at a fast food restaurant.
 
@@ -101,7 +109,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's first-person assertion that he has reported deliberately false documents about AASAP and Kona Blue to the DOD/DOW Inspector General's Office with supporting evidence. The "Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files" framing is the load-bearing claim; the IG reporting establishes a procedural action on Lacatski's part. Sworn-adjacent attestation of disinformation against AAWSAP / Kona Blue.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's first-person, sworn-adjacent assertion that he has reported deliberately false documents about AASAP and Kona Blue to the DOD/DOW Inspector General's Office with supporting evidence.
+
+The "Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files" framing is the load-bearing claim; the IG reporting establishes a procedural action on Lacatski's part. Sworn-adjacent attestation of disinformation against AAWSAP / Kona Blue.
 
 > [8:39] Okay, now, here's a tough statement. I don't suspect, wonder, or harbor any suspicion that false statements have been made to Congress, to the Pentagon, to you, the press, and on the internet. I know they have been. I know it. Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files. This is a surprise. And a first statement, I have reported some, there's a lot of it, some of the false information to the DOD/DOW Inspector General's Office, providing the evidence. I requested that IG take no action against the individuals.
 
@@ -114,7 +124,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's direct attestation that the 2017 New York Times disclosure-breaking story was "totally inaccurate" and that the authors knew his name and position at AATIP yet never contacted him. Washington Post and Politico contacted him only after publication. Establishes the gap between Lacatski's contemporaneous role and the journalistic reconstruction of the program.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's direct attestation that the 2017 New York Times disclosure-breaking story was "totally inaccurate" and that its authors never contacted him.
+
+The authors knew his name and position at AATIP yet never contacted him. Washington Post and Politico contacted him only after publication. Establishes the gap between Lacatski's contemporaneous role and the journalistic reconstruction of the program.
 
 > [9:42] Um the initial reporting, let's go back to the day one, but the New York Times story in 2017 was totally inaccurate. Contrary to what some people claim, the authors knew my name and position at AATIP, yet never attempted to contact me. Likewise, the Washington Post Politico contacted me within hours after the articles were published in the three publications asking for my opinion. They knew my name. They had my phone number.
 
@@ -127,7 +139,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski reading from an AARO email inviting him to a meeting in a secure space — "Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human." Lacatski says he has refused both AARO meeting requests. The "discussions at any level including human" phrase becomes the load-bearing concern: HUMINT cannot be discussed across the lines per Lacatski's ensuing explanation.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski, reading from an AARO email offering "discussions at any level including human" in a secure space, says he has refused both AARO meeting requests.
+
+The email inviting him to a meeting in a secure space reads "Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human." The "discussions at any level including human" phrase becomes the load-bearing concern: HUMINT cannot be discussed across the lines per Lacatski's ensuing explanation.
 
 > [11:43] I have been requested to meet with AARO twice and have refused. The second time I was told and I I I made the grammar a little better so I could read it to you. Holding a meeting with you in a secure space is very easy. Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human Huh? Uh very interested in speaking with you. This is what it the email says
 
@@ -140,7 +154,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's on-record reaction to AARO communicating the DOPSR clearance status of his books — "AARO is reviewing books? Wow." Establishes that AARO had visibility into the DOPSR review of Lacatski's books, which Lacatski frames as suspicious meddling.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski reacts on record to AARO communicating the DOPSR clearance status of his books.
+
+Lacatski's on-record reaction is "AARO is reviewing books? Wow." Establishes that AARO had visibility into the DOPSR review of Lacatski's books, which Lacatski frames as suspicious meddling.
 
 > [13:03] Oh, by the way, you should have received notice last Friday that your DOPSR request completed staffing. That's on the two books, so that's good news. Now, AARO is reviewing books? Wow.
 
@@ -153,7 +169,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's on-record attestation that a former deputy director of AARO disparaged the UAP-paranormal connection in a public interview — said "they were looking for werewolves" and "Kona Blue was established as the home for all these paranormal UFO crap." Lacatski frames this as a "clear violation of not disclosing activities" confidentially discussed and as evidence of AARO's preconception against AAWSAP/Kona Blue.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's on-record attestation that a former deputy director of AARO disparaged the UAP-paranormal connection in a public interview.
+
+The former deputy director said "they were looking for werewolves" and "Kona Blue was established as the home for all these paranormal UFO crap." Lacatski frames this as a "clear violation of not disclosing activities" confidentially discussed and as evidence of AARO's preconception against AAWSAP/Kona Blue.
 
 > [13:31] Three months later, I found out that the former deputy director of AARO was disparaging UAP at paranormal connection, a clear violation of not disclosing activities confident uh confidentially discussed. Now, the interviewer at the time said this is a leading question. DIA's unofficial paranormal ghost hunt program at Skinwalker Ranch where they went rogue. Well, now what if that's not a preconception, I don't know what is. The response from the deputy director they were looking for werewolves. The second response was Kona Blue was established as the home for all these paranormal UFO crap. Now, that's from the deputy director of AARO. Now, that is a very objective view at uh UFOs.
 
@@ -166,7 +184,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's direct framing in his prepared statement — only believe AATIP and Kona Blue information directly from the four books or from Lacatski / Kelleher themselves. Lacatski characterizes the disclosure-era public record as "a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons." Asks "What is so important about AATIP or Kona Blue?"
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's prepared statement tells the public to only believe AATIP and Kona Blue information directly from the four books or from Lacatski / Kelleher themselves.
+
+This is Lacatski's direct framing in his prepared statement. Lacatski characterizes the disclosure-era public record as "a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons." Asks "What is so important about AATIP or Kona Blue?"
 
 > [14:54] Now, remember this is important and it's near the conclusion right here. Only believe AATIP and Kona Blue information directly read by you in the four books. This is to the public. Or if you hear directly statements from myself or Colm Kelleher. Something serious is going on. In my opinion, you all are in the middle of a what I can only describe as a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons. Big question. What is so important about AATIP or Kona Blue?
 
@@ -179,7 +199,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's on-record framing of AARO as a "disinformation campaign" — Corbell offers "completely lying to the American public"; Lacatski moderates to "not completely lying" but "steering the direction of the conversation," characterizing AARO as counterintelligence-style information control rather than outright fabrication. Load-bearing on the AARO-as-counterintelligence framing Lacatski extends throughout PART 1.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's on-record framing of AARO as a "disinformation campaign" that is "not completely lying" but "steering the direction of the conversation."
+
+Corbell offers "completely lying to the American public"; Lacatski moderates to "not completely lying," characterizing AARO as counterintelligence-style information control rather than outright fabrication. Load-bearing on the AARO-as-counterintelligence framing Lacatski extends throughout PART 1.
 
 > [27:09] Now, isn't that great? What did you expect to come out in their review? Any reasonable person said would say or intel analyst or or you know, civilian intel analyst would say, "I'm being ha-having the wool pulled over my eyes." Well, guess what? Arrow's a disinformation campaign you're coming to realize by their public statements and how they're talking about a program that you have knowledge of that they're completely lying to the American public. Well, I wouldn't use the word completely lying. That's not how counterintelligence work. There's some truth. There's some false. But, but you said it very clearly, steering the direction of the conversation.
 
@@ -192,7 +214,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's direct on-record statement that Kona Blue was both a compartment and a program — and is "much more than" either. The "compartment" + "program" distinction is the load-bearing structural framing for Lacatski's ensuing explanation that the program continues regardless of funding state.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's direct on-record statement that Kona Blue was both a compartment and a program — and is "much more than" either.
+
+The "compartment" + "program" distinction is the load-bearing structural framing for Lacatski's ensuing explanation that the program continues regardless of funding state.
 
 > [22:27] Kona Blue is much more than Kona Blue, I can answer that directly, but I can't go into details. Kona Blue was a compartment. It was also a program.
 
@@ -205,7 +229,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's structural attestation that a "program" can persist independent of funding state — "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out." Establishes the framework under which Kona Blue, despite the public DHS narrative of being killed, persists as a structural program.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's structural attestation that a "program" can persist independent of funding state: "A program continues."
+
+The full statement: "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out." Establishes the framework under which Kona Blue, despite the public DHS narrative of being killed, persists as a structural program.
 
 > [23:47] A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out. So, a UFO study program could continue under that name.
 
@@ -218,7 +244,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's direct contradiction of the public narrative that Kona Blue was killed at DHS — "The program was not killed. You can't kill Kona Blue." Lacatski says he is planning a fifth book "after these four" about Kona Blue from his perspective, including his statements made in DHS.
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski's direct contradiction of the public narrative that Kona Blue was killed at DHS: "You can't kill Kona Blue."
+
+In full: "The program was not killed. You can't kill Kona Blue." Lacatski says he is planning a fifth book "after these four" about Kona Blue from his perspective, including his statements made in DHS.
 
 > [25:11] it it was killed right there. Um Yes. Yes, and uh that The program was not killed. You can't kill Kona Blue. At one point in the near future, you'll start seeing it because I suggested to Dr. Kelleher that there be a book after these four, and I want the public to participate because it will be my interpretation and my statements that were made in DHS.
 
@@ -231,7 +259,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Lacatski's "I can't answer that" on whether the United States has a reverse engineering program — restated almost two years after WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]). Lacatski pivots from the reverse-engineering question to the propulsion question: "what in the world is the power supply and the motive force?" — frames his own interest as the question of motive force and where the craft came from "if no terrestrial human nation has made it."
+### WEAPONIZED Part 1 (November 5, 2025): Lacatski says "I can't answer that" on whether the United States has a reverse engineering program, pivoting to the power supply and motive force.
+
+Lacatski's "I can't answer that" is restated almost two years after WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]). Lacatski pivots from the reverse-engineering question to the propulsion question: "what in the world is the power supply and the motive force?" — frames his own interest as the question of motive force and where the craft came from "if no terrestrial human nation has made it."
 
 > [40:01] Do you stand behind that we have a UFO in our possession and that cuz that would mean we have a reverse engineering program on that UFO if you breached the hull. That would answer what everybody wants to know. I can't answer that. It goes beyond what I've been approved to say. And by the way, if you're looking at such a craft, what are you primarily interested in? The craft? The fact that it's empty? Or what in the world is the power supply and the motive force?
 
@@ -257,7 +287,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 ---
 
-### Corbell's direct closing question on whether the craft was "landed, crashed, or gifted to us" — Lacatski does not answer in PART 1; the answer (if any) deferred to PART 2. Captures the three-way framing Corbell uses to structure the question of craft provenance.
+### WEAPONIZED Part 1 (November 5, 2025): Corbell's direct closing question on whether the craft was "landed, crashed, or gifted to us" goes unanswered by Lacatski in PART 1.
+
+Lacatski does not answer in PART 1; the answer (if any) deferred to PART 2. Captures the three-way framing Corbell uses to structure the question of craft provenance.
 
 > [56:29] Was the craft landed, crashed, or gifted to us? Come on, you know the one. Do you know the answer to that?
 

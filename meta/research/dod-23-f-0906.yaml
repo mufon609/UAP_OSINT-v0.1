@@ -92,7 +92,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-request-description.pdf
     location: 'p. 2, ¶2'
-  significance: 'The letter names the May 17, 2023 Intercept report by Ken Klippenstein as the public reporting on the IPMO. The letter gives the article URL on the next line (https://theintercept.com/2023/05/17/pentagon-perception-management-office/).'
+  significance: 'Skvarla FOIA request letter (submitted May 19, 2023): the letter names the May 17, 2023 Intercept report by Ken Klippenstein as the public reporting on the IPMO.'
+  analysis: 'The letter gives the article URL on the next line (https://theintercept.com/2023/05/17/pentagon-perception-management-office/).'
   claim_group: public-interest-justification
   corroborated_by: [q29]
 - id: q7
@@ -110,7 +111,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-request-description.pdf
     location: 'p. 2, ¶3'
-  significance: 'The letter quotes the IPMO mission statement from "a document produced by the office" that the Intercept article covered. It argues public interest because of the work itself and because non-governmental parties such as Sancorp take part in it.'
+  significance: 'Skvarla FOIA request letter (submitted May 19, 2023): the letter quotes the IPMO mission statement from "a document produced by the office" that the Intercept article covered.'
+  analysis: 'It argues public interest because of the work itself and because non-governmental parties such as Sancorp take part in it.'
   context: 'The "[Department of Defense]" in square brackets is the letter''s own editorial insertion inside the quoted passage. "According a document" is reproduced as written (sic).'
   claim_group: public-interest-justification
   corroborated_by: [q31, q32]
@@ -120,7 +122,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-request-description.pdf
     location: 'p. 2, ¶4'
-  significance: 'The requester says release carries no operational risk because Sancorp already lists the contract on its public website. The letter gives the Sancorp-hosted PDF URL on the next lines.'
+  significance: 'Skvarla FOIA request letter (submitted May 19, 2023): the requester says release carries no operational risk because Sancorp already lists the contract on its public website.'
+  analysis: 'The letter gives the Sancorp-hosted PDF URL on the next lines.'
   claim_group: public-interest-justification
   corroborated_by: [q33]
 - id: q10
@@ -147,7 +150,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-request-description.pdf
     location: 'p. 3, ¶1'
-  significance: 'The requester invokes the 20-working-day statutory response window. The agency''s later interim response, citing "unusual circumstances", answers this window.'
+  significance: 'Skvarla FOIA request letter (submitted May 19, 2023): the requester invokes the 20-working-day statutory response window.'
+  analysis: 'The agency''s later interim response, citing "unusual circumstances", answers this window.'
   claim_group: request-framing
 - id: q13
   added_date: '2026-09-26'
@@ -360,7 +364,8 @@ quotes:
   source:
     path: news/muckrock-foia-23-f-0906-wayback-20260430.html
     location: '¶ Please find the interim response attached (05/24/2023 agency message, subject "OSD/JS FOIA 23-F-0906")'
-  significance: Transmits the interim response (signed Jessica Jordan, FOIA Analyst, OSD / JS FOIA Office). Gives the request date as May 21, 2023, whereas the MuckRock communication header shows the request letter sent 05/19/2023 via Portal and the MuckRock "Submitted" field gives May 19, 2023 (the request letter itself carries no date) — a date divergence within the correspondence.
+  significance: 'MuckRock agency message (May 24, 2023): the OSD/JS FOIA Office transmits the interim response and gives the request date as May 21, 2023.'
+  analysis: 'Transmits the interim response (signed Jessica Jordan, FOIA Analyst, OSD / JS FOIA Office). Gives the request date as May 21, 2023, whereas the MuckRock communication header shows the request letter sent 05/19/2023 via Portal and the MuckRock "Submitted" field gives May 19, 2023 (the request letter itself carries no date) — a date divergence within the correspondence.'
   claim_group: agency-processing
 - id: q39
   added_date: '2026-09-26'
@@ -368,7 +373,8 @@ quotes:
   source:
     path: government/whs-foid-foia-log-fy23.xlsx
     location: 'sheet FOID_FOIA_Log-FY23, log # 1244 (Request ID 23-F-0906), cells # through Final Disposition'
-  significance: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): requester Skvarla, Robert; no organization ("-"); received via PAL on 2023-05-22; closed 2023-07-28; final disposition Granted / Denied in Part.'
+  significance: 'WHS FOID FOIA log (FY2023): the row for this request records requester Skvarla, Robert, received via PAL on 2023-05-22, closed 2023-07-28, Granted / Denied in Part.'
+  analysis: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): requester Skvarla, Robert; no organization ("-"); received via PAL on 2023-05-22; closed 2023-07-28; final disposition Granted / Denied in Part.'
   context: 'Agency-kept FOIA log published in the WHS FOID Reading Room (FOIA_Log folder); the row is the agency record of the request, not requester correspondence.'
   claim_group: request-log-disposition
 - id: q40
@@ -395,7 +401,8 @@ quotes:
   source:
     path: government/whs-foid-reading-room-contracts-index.html
     location: 'Contracts file list, ¶ 23-F-0906_A23_Final_RFQ.pdf'
-  significance: 'The WHS FOIA Reading Room "Contracts" list publishes exactly six files under the case number 23-F-0906, contiguous in the list: the Final RFQ, the NDA-NPI, the DD 254 (v2), the Award Notification and the Contract for HQ0034-22-C-0064, and a Performance Work Statement. The file names carry the case number 23-F-0906 and tie the contract number HQ0034-22-C-0064 to the case.'
+  significance: 'WHS FOIA Reading Room "Contracts" list (Wayback capture, May 11, 2026): exactly six files are published under the case number 23-F-0906, tying contract HQ0034-22-C-0064 to the case.'
+  analysis: 'The WHS FOIA Reading Room "Contracts" list publishes exactly six files under the case number 23-F-0906, contiguous in the list: the Final RFQ, the NDA-NPI, the DD 254 (v2), the Award Notification and the Contract for HQ0034-22-C-0064, and a Performance Work Statement. The file names carry the case number 23-F-0906 and tie the contract number HQ0034-22-C-0064 to the case.'
   context: 'Collapsed link index on the WHS Executive Services Directorate Reading Room "Contracts" page (Wayback id_ capture 20260511031049). Each file name is a link to /Portals/54/Documents/FOID/Reading%20Room/Contracts/{file} (href only, not in the extracted text).'
   claim_group: 'released-records-23-f-0906'
 - id: q43
@@ -404,7 +411,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-interim-response.pdf
     location: 'p. 1, ¶2'
-  significance: 'The agency''s stated basis for the delay: it lists the three FOIA unusual-circumstances grounds, (a) records held at a geographically separated facility, (b) potential volume, (c) consultation with other agencies or DoD components, and says at least one applies or would likely apply to this request. It does not say which one.'
+  significance: 'OSD/JS interim response (May 24, 2023): the agency''s stated basis for the delay lists the three FOIA unusual-circumstances grounds without saying which one applies.'
+  analysis: 'The agency lists the three FOIA unusual-circumstances grounds, (a) records held at a geographically separated facility, (b) potential volume, (c) consultation with other agencies or DoD components, and says at least one applies or would likely apply to this request. It does not say which one.'
   context: 'Follows the sentence invoking unusual circumstances and precedes the sentence saying the office does not hold the records of the Office of the Secretary of Defense (OSD) and the Joint Staff (JS) (p. 1, ¶2 of the May 24, 2023 interim response).'
   claim_group: 'unusual-circumstances-delay'
 naming_quirks:

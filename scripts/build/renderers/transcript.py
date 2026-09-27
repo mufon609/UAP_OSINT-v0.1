@@ -12,6 +12,7 @@ import sys
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
+    _render_passage_head,
     _escape_table_cell,
     _render_attribution_block,
     _wrap_path,
@@ -152,7 +153,7 @@ def render_transcript_speakers(artifact):
 def render_transcript_key_passages(artifact):
     """Key Passages section — verbatim block-quote + verification-block
     pairs, one per quote in the artifact. Uses H3 per quote (significance
-    field) like document Key Passages — transcripts typically carry many
+    field, then any `analysis` paragraph — ``_render_passage_head``) like document Key Passages — transcripts typically carry many
     quotes and H3 breaks provide navigability. Sorted by statement_date
     when set; falls through to id-order for undated quotes.
     """
@@ -165,9 +166,8 @@ def render_transcript_key_passages(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))

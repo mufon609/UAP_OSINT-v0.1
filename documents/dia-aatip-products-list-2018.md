@@ -71,7 +71,9 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 
 ---
 
-### List of Attachments, attachments 1-13 — the authoritative roster of AATIP/AAWSAP products with title, producer, and affiliation, including att.5 Dr. Hal Puthoff, EarthTech International (DIRD "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering") and att.12 Dr. Kit Green, Wayne State Univ.
+### DIA letter to the Senate Armed Services Committee, List of Attachments (January 9, 2018): attachments 1-13 give the authoritative roster of AATIP/AAWSAP products with title, producer, and affiliation.
+
+List of Attachments, attachments 1-13 — including att.5 Dr. Hal Puthoff, EarthTech International (DIRD "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering") and att.12 Dr. Kit Green, Wayne State Univ.
 
 > (U) List of Attachments
 >
@@ -109,7 +111,9 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 
 ---
 
-### List of Attachments, attachments 14-25 — including att.14 Dr. Eric Davis, EarthTech International (DIRD "Concepts for Extracting Energy from the Quantum Vacuum"), att.15 the CapNet-excepted "An Introduction to the Statistical Drake Equation", and att.22 Dr. T. Hufnagel, John Hopkins Univ. (DIRD "Metallic Glasses")
+### DIA letter to the Senate Armed Services Committee, List of Attachments (January 9, 2018): attachments 14-25 include Dr. Eric Davis, EarthTech International, and the CapNet-excepted "An Introduction to the Statistical Drake Equation."
+
+List of Attachments, attachments 14-25 — including att.14 Dr. Eric Davis, EarthTech International (DIRD "Concepts for Extracting Energy from the Quantum Vacuum"), att.15 the CapNet-excepted "An Introduction to the Statistical Drake Equation", and att.22 Dr. T. Hufnagel, John Hopkins Univ. (DIRD "Metallic Glasses")
 
 > 14. *Concepts for Extracting Energy from the Quantum Vacuum*, Dr. Eric Davis, EarthTech International (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
 >
@@ -143,7 +147,9 @@ The list and letter are an Enclosure to a later FOIA response that DIA produced 
 
 ---
 
-### List of Attachments, attachments 26-38 — including the three Lockheed Martin products att.26 (Dr. V. Teofilo), att.32 (Dr. S. Macheret), and att.35 (Dr. J. Golightly), att.36 Dr. F. Winterberg, Univ. of Nevada – Reno ("Negative Mass Propulsion" [`/documents/dird-29-negative-mass-propulsion`]), and att.37/38, the SECRET//NOFORN and UNCLASSIFIED//FOR OFFICIAL USE ONLY versions of the same J. Albertine ([`/people/j-albertine`]), Directed Technologies ([`/organizations/directed-technologies`]) report (att.38 [`/documents/dird-23-high-energy-laser-weapons`])
+### DIA letter to the Senate Armed Services Committee, List of Attachments (January 9, 2018): attachments 26-38 include three Lockheed Martin products and SECRET//NOFORN and UNCLASSIFIED//FOR OFFICIAL USE ONLY versions of the same J. Albertine report.
+
+List of Attachments, attachments 26-38 — including the three Lockheed Martin products att.26 (Dr. V. Teofilo), att.32 (Dr. S. Macheret), and att.35 (Dr. J. Golightly), att.36 Dr. F. Winterberg, Univ. of Nevada – Reno ("Negative Mass Propulsion" [`/documents/dird-29-negative-mass-propulsion`]), and att.37/38, the SECRET//NOFORN and UNCLASSIFIED//FOR OFFICIAL USE ONLY versions of the same J. Albertine ([`/people/j-albertine`]), Directed Technologies ([`/organizations/directed-technologies`]) report (att.38 [`/documents/dird-23-high-energy-laser-weapons`])
 
 > 26. *Aneutronic Fusion Propulsion I*, Dr. V. Teofilo, Lockheed Martin (Product is classified UNCLASSIFIED//FOR OFFICIAL USE ONLY)
 >

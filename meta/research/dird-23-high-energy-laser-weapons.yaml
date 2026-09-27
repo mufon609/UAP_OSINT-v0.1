@@ -60,7 +60,8 @@ quotes:
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
     location: 'Prepared by / Author block'
-  significance: 'Provenance block; preparing component withheld under (b)(3):10 USC 424 / Defense Intelligence Agency, Author withheld under (b)(6) — authorship is extrinsic (DIA AAWSAP products list → J. Albertine / Directed Technologies). Redaction markers preserved verbatim.'
+  significance: 'DIRD #23 (March 31, 2010), provenance block: the preparing component is withheld under (b)(3):10 USC 424 / Defense Intelligence Agency and the Author withheld under (b)(6).'
+  analysis: 'Authorship is extrinsic (DIA AAWSAP products list → J. Albertine / Directed Technologies). Redaction markers preserved verbatim.'
   statement_date: '2010-03-31'
 - id: q4
   added_date: '2026-06-07'
@@ -77,7 +78,8 @@ quotes:
   source:
     path: government/dird-23-laser-weapons-20100331.pdf
     location: 'Administrative Note'
-  significance: 'Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld under (b)(3):10 USC 424;(b)(6). Anchors the document to the AAWSAP DIRD corpus. Redaction markers preserved verbatim.'
+  significance: 'DIRD #23 (March 31, 2010), Administrative Note: the program provenance is the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series, with the Program Manager withheld.'
+  analysis: 'Program-provenance: Program Manager withheld under (b)(3):10 USC 424;(b)(6). Anchors the document to the AAWSAP DIRD corpus. Redaction markers preserved verbatim.'
   statement_date: '2010-03-31'
 - id: q6
   added_date: '2026-06-07'

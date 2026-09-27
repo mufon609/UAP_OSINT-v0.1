@@ -178,7 +178,9 @@ The same exotic material point is on the public sworn record in his [`/documents
 
 ---
 
-### Elizondo's on-record claim that "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans" — the same exotic-materials point he places on the public record in his sworn QFR responses ([`/documents/elizondo-qfr-burlison-20241219`]).
+### Joe Rogan Experience #2194 (August 23, 2024): Elizondo's on-record claim that "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans."
+
+It is the same exotic-materials point he places on the public record in his sworn QFR responses ([`/documents/elizondo-qfr-burlison-20241219`]).
 
 > [55:50] when it comes to what the government may or may not have in his possession all I can simply say is that um there is very compelling evidence to suggest that the US government is in abs abolute possession of exotic material that is not made by humans
 

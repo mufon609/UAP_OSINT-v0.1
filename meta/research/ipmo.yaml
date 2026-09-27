@@ -79,7 +79,8 @@ quotes:
   source:
     path: government/notre-dame-ipmo-memo-20220527.pdf
     location: 'p. 1, ¶1 (Notre Dame memo establishment paragraph)'
-  significance: 'Holly Notre Dame memo establishment paragraph — primary public attestation of IPMO''s March 1, 2022 establishment by SecDef and USD(I&S) direction, signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.'
+  significance: 'Holly Notre Dame memo (May 27, 2022): primary public attestation of IPMO''s March 1, 2022 establishment by SecDef and USD(I&S) direction.'
+  analysis: 'The memo''s establishment paragraph is signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.'
   context: 'Notre Dame National Security Innovation Course memorandum, signed by Acting Director James A. Holly'
   statement_date: '2022-05-27'
 - id: q2
@@ -88,7 +89,8 @@ quotes:
   source:
     path: news/nsi-speaker-series-ipmo-holly-20250401.html
     location: 'Speaker Session Summary, ¶1 (October 3, 2023 IPMO 101 talk by James Holly)'
-  significance: 'Primary attestation that three Secretaries of Defense, under two administrations, signed off on IPMO''s establishment, per Holly''s October 3, 2023 NSI Speaker Series IPMO 101 talk. Compensates for the absent establishment instrument by attesting senior-level approval, but does not name the three SecDefs or provide the underlying memoranda.'
+  significance: 'NSI Speaker Series page on Holly''s IPMO 101 talk (October 3, 2023): primary attestation that three Secretaries of Defense, under two administrations, signed off on IPMO''s establishment.'
+  analysis: 'The attestation is per Holly''s October 3, 2023 NSI Speaker Series IPMO 101 talk. Compensates for the absent establishment instrument by attesting senior-level approval, but does not name the three SecDefs or provide the underlying memoranda.'
   context: 'NSI Speaker Series page documenting James Holly''s IPMO 101 talk'
   statement_date: '2023-10-03'
 - id: q3
@@ -110,7 +112,8 @@ quotes:
   source:
     path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
     location: 'Slide 3 — IPMO Core Efforts bullets'
-  significance: 'NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope. DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie. Same Key Passage also registered on /organizations/ousd-is for parent-organization context.'
+  significance: 'NSI 23-S-3438 IPMO 101 slides, slide 3 (October 2023): the IPMO Core Efforts bullets are direct primary-source attestation of the four-division mission scope.'
+  analysis: 'DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie. Same Key Passage also registered on /organizations/ousd-is for parent-organization context.'
   context: 'OUSD(I&S) IPMO 101 presentation slides, DOPSR case 23-S-3438 cleared for open publication'
   statement_date: '2023-10'
 - id: q5
@@ -138,7 +141,8 @@ quotes:
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
     location: 'PWS §1.3 Objectives'
-  significance: 'IPMO mission statement per the IPMO PWS §1.3 Objectives — three core mission elements: (1) thematic influence guidance, (2) competitive influence strategies, (3) gap-filling in policy/oversight/governance/integration. Same mission text recurs verbatim in the FY 2023 OSD OP-5 detailed program description.'
+  significance: 'IPMO PWS §1.3 Objectives (April 25, 2022): IPMO mission statement with three core mission elements — thematic influence guidance, competitive influence strategies, and gap-filling in policy/oversight/governance/integration.'
+  analysis: 'Per the PWS, the elements are (1) thematic influence guidance, (2) competitive influence strategies, (3) gap-filling. Same mission text recurs verbatim in the FY 2023 OSD OP-5 detailed program description.'
   context: 'IPMO Performance Work Statement (FOIA case 23-F-0906), §1.3 Objectives subsection'
   statement_date: '2022-04-25'
 - id: q8
@@ -153,7 +157,8 @@ quotes:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, IPMO bullet'
-  significance: 'Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.'
+  significance: 'OSD OP-5 FY 2026 (July 7, 2025): the current IPMO mission statement characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts.'
+  analysis: 'Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.'
   context: 'OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, OUSD(I&S) program section'
   statement_date: '2025'
 - id: q9
@@ -166,7 +171,8 @@ quotes:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: 'OUSD(I&S) Major Program Title: Influence and Perception Management, detailed program description'
-  significance: 'FY 2026 OSD OP-5 detailed IPMO mission description — present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop"). Confirms IPMO operating posture has stabilized.'
+  significance: 'OSD OP-5 FY 2026 (July 7, 2025): the detailed IPMO mission description is a present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop").'
+  analysis: 'Confirms IPMO operating posture has stabilized.'
   context: 'OSD OP-5 FY 2026 budget submission, IPMO Major Program Title detailed description'
   statement_date: '2025'
 - id: q10
@@ -179,7 +185,8 @@ quotes:
   source:
     path: government/osd-op5-fy23-wayback-20241116.pdf
     location: 'OUSD(I&S) Influence and Perception Management Strategy, Policy, and Oversight detailed program description'
-  significance: 'Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives.'
+  significance: 'OSD OP-5 FY 2023 (2022): the earliest OSD OP-5 IPMO mission statement, in future-tense framing, establishes the original mission framing as IPMO came online in 2022.'
+  analysis: 'The FY 2023 budget submission uses the same mission language as IPMO PWS §1.3 Objectives.'
   context: 'OSD OP-5 FY 2023 budget submission, OUSD(I&S) program section, IPMO detailed description'
   statement_date: '2022'
 - id: q11
@@ -188,7 +195,8 @@ quotes:
   source:
     path: government/osd-op5-fy23-wayback-20241116.pdf
     location: 'OUSD(I&S) Influence and Perception Management Strategy, Policy, and Oversight Measure Description table, charter row'
-  significance: 'FY 2023 OSD OP-5 documents that a "DoD Issuance Charter for IPMO" was a measurable development metric (FY 2022 = 1, FY 2023 = N/A). Establishes that IPMO Charter authoring was scheduled for FY 2022, even though no corresponding DoDD or DoDI is publicly retrievable as of May 2026.'
+  significance: 'OSD OP-5 FY 2023 (2022): the budget documents that a "DoD Issuance Charter for IPMO" was a measurable development metric (FY 2022 = 1, FY 2023 = N/A).'
+  analysis: 'Establishes that IPMO Charter authoring was scheduled for FY 2022, even though no corresponding DoDD or DoDI is publicly retrievable as of May 2026.'
   context: 'OSD OP-5 FY 2023 budget submission, OUSD(I&S) IPMO Strategy, Policy, and Oversight measures table'
   statement_date: '2022'
 - id: q12
@@ -200,7 +208,8 @@ quotes:
   source:
     path: government/osd-op5-fy23-wayback-20241116.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, IPMO summary bullet'
-  significance: 'FY 2023 OSD OP-5 sub-office summary bullet for IPMO — frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet; replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing, which persists into the FY 2026 OSD OP-5. Anchors the pre-pivot mission-summary framing.'
+  significance: 'OSD OP-5 FY 2023 (2022): the IPMO sub-office summary bullet frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities.'
+  analysis: 'The bullet sits in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet; replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing, which persists into the FY 2026 OSD OP-5. Anchors the pre-pivot mission-summary framing.'
   context: 'OSD OP-5 FY 2023 budget submission, OUSD(I&S) program section, IPMO sub-office summary bullet'
   statement_date: '2022'
 - id: q13
@@ -212,7 +221,8 @@ quotes:
   source:
     path: government/osd-op5-fy25-20260501.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, IPMO bullet (first two sentences; bullet continues across page break to "...deception activities... management of designated compartmented programs", substantively the same downstream content as the FY 2026 OSD OP-5 bullet)'
-  significance: 'FY 2025 OSD OP-5 — first appearance of the "center of gravity" mission-summary framing for IPMO. Distinct from the FY 2026 OSD OP-5 bullet by syntax ("is the" vs "which is the") and country reference ("America''s defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.'
+  significance: 'OSD OP-5 FY 2025 (2024): first appearance of the "center of gravity" mission-summary framing for IPMO.'
+  analysis: 'Distinct from the FY 2026 OSD OP-5 bullet by syntax ("is the" vs "which is the") and country reference ("America''s defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.'
   context: 'OSD OP-5 FY 2025 budget submission, OUSD(I&S) program section, IPMO sub-office bullet'
   statement_date: '2024'
 - id: q14
@@ -225,7 +235,8 @@ quotes:
   source:
     path: government/osd-op5-fy25-20260501.pdf
     location: 'OUSD(I&S) Major Program Title: Influence and Perception Management, detailed program description'
-  significance: 'FY 2025 OSD OP-5 — first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO. Distinct from earlier future-tense framing in the FY 2023 OSD OP-5; FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into the FY 2026 OSD OP-5.'
+  significance: 'OSD OP-5 FY 2025 (2024): first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO.'
+  analysis: 'Distinct from earlier future-tense framing in the FY 2023 OSD OP-5; FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into the FY 2026 OSD OP-5.'
   context: 'OSD OP-5 FY 2025 budget submission, OUSD(I&S) Major Program Title: Influence and Perception Management'
   statement_date: '2024'
 - id: q16
@@ -237,7 +248,8 @@ quotes:
   source:
     path: government/osd-op5-fy24-20260501.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, IPMO summary bullet (complete bullet passage; verbatim duplicate of the FY 2023 OSD OP-5 bullet wording)'
-  significance: 'FY 2024 OSD OP-5 sub-office summary bullet for IPMO — verbatim identical to the FY 2023 OSD OP-5 bullet, attesting that the FY 2023 wording carried into FY 2024. Replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing.'
+  significance: 'OSD OP-5 FY 2024 (2023): the IPMO sub-office summary bullet is verbatim identical to the FY 2023 OSD OP-5 bullet, attesting that the FY 2023 wording carried into FY 2024.'
+  analysis: 'Replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing.'
   context: 'OSD OP-5 FY 2024 budget submission, OUSD(I&S) program section, IPMO sub-office summary bullet'
   statement_date: '2023'
 - id: q15
@@ -250,7 +262,8 @@ quotes:
   source:
     path: government/osd-op5-fy24-20260501.pdf
     location: 'OUSD(I&S) program section, sub-office cluster, AARO bullet (complete bullet passage; does not span a page break)'
-  significance: 'FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO''s presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead. Anchors the cluster-membership chronology relevant to the description''s "AARO ... established four months after IPMO under the same parent" framing.'
+  significance: 'OSD OP-5 FY 2024 (2023): the sub-office cluster bullet for AARO attests AARO''s presence as a sister sub-office under OUSD(I&S) alongside IPMO.'
+  analysis: 'This is the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead. Anchors the cluster-membership chronology relevant to the description''s "AARO ... established four months after IPMO under the same parent" framing.'
   context: 'OSD OP-5 FY 2024 budget submission, OUSD(I&S) program section, AARO sub-office bullet'
   statement_date: '2023'
 - id: q17
@@ -260,7 +273,8 @@ quotes:
   source:
     path: news/defense-one-sof-week-oie-panel-20240524.html
     location: 'Defense One article body, opening section (Patrick Tucker byline, May 24, 2024)'
-  significance: 'Holly''s self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO''s interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official''s surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see Source-Form Notes).'
+  significance: 'Defense One (May 24, 2024): Holly told the May 9, 2024 SOF Week OIE Symposium panel at the Tampa Convention Center that the influence enterprise is "weak, quite frankly."'
+  analysis: 'This is Holly''s self-assessment of the U.S. influence-operations enterprise, delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO''s interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official''s surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see Source-Form Notes).'
   context: 'SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center'
   statement_date: '2024-05-09'
 - id: q18
@@ -270,7 +284,8 @@ quotes:
   source:
     path: government/usaspending-hq003422c0064.txt
     location: 'USAspending API record — description field (contract HQ003422C0064)'
-  significance: 'USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046). The sister aaro node carries the parallel "AARO SUPPORT SERVICES" description field from USAspending.'
+  significance: 'USAspending award record for HQ003422C0064 (June 9, 2022): the description field marks the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC.'
+  analysis: 'The recipient is Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046). The sister aaro node carries the parallel "AARO SUPPORT SERVICES" description field from USAspending.'
   context: 'USAspending.gov award record for DoD/WHS contract HQ003422C0064 to Sancorp Consulting, LLC'
   statement_date: '2022-06-09'
 - id: q19
@@ -279,7 +294,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction 0 / base award ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 base award (modification_number "0"), type DEFINITIVE CONTRACT, action_date 2024-05-31, action_type null, federal_action_obligation 919478.64. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (May 31, 2024): the base award''s description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  analysis: 'Base award (modification_number "0"), type DEFINITIVE CONTRACT, action_date 2024-05-31, action_type null, federal_action_obligation 919478.64.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2024-05-31'
 - id: q20
@@ -288,7 +304,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00001 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28. The description field reads "PROFESSIONAL SUPPORT SERVICES" and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (September 27, 2024): modification P00001''s description field reads "PROFESSIONAL SUPPORT SERVICES" and does not name IPMO.'
+  analysis: 'Modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2024-09-27'
 - id: q21
@@ -297,7 +314,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00002 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" and names IPMO. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 states that services under contract HQ003424C0046 are concluding.'
+  significance: 'USAspending transaction record for HQ003424C0046 (March 27, 2025): modification P00002''s description field reads "IPMO SUPPORT SERVICES" and names IPMO.'
+  analysis: 'Modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 states that services under contract HQ003424C0046 are concluding.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-03-27'
 - id: q22
@@ -306,7 +324,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00003 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (April 10, 2025): modification P00003''s description field reads "IPMO SUPPORT SERVICES" and names IPMO.'
+  analysis: 'Modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-04-10'
 - id: q23
@@ -315,7 +334,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00004 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (April 11, 2025): modification P00004''s description field reads "IPMO SUPPORT SERVICES" and names IPMO.'
+  analysis: 'Modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-04-11'
 - id: q24
@@ -324,7 +344,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00005 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24 (a deobligation). The description field returns to a non-IPMO description, "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" (comma-punctuated, unlike the base award form) and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (July 10, 2025): modification P00005 is a deobligation, and its description field returns to a non-IPMO description that does not name IPMO.'
+  analysis: 'Modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" (comma-punctuated, unlike the base award form).'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-07-10'
 - id: q25
@@ -333,7 +354,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00006 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (July 25, 2025): modification P00006''s description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  analysis: 'Modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-07-25'
 - id: q26
@@ -342,7 +364,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00007 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (September 2, 2025): modification P00007''s description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  analysis: 'Modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2025-09-02'
 - id: q27
@@ -351,7 +374,8 @@ quotes:
   source:
     path: government/usaspending-hq003424c0046-transactions.txt
     location: 'transaction P00008 ("action_date"/"action_type"/"modification_number"/"description"/"federal_action_obligation"), HQ003424C0046'
-  significance: 'USAspending transaction record for HQ003424C0046 modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  significance: 'USAspending transaction record for HQ003424C0046 (March 4, 2026): modification P00008''s description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.'
+  analysis: 'Modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0.'
   claim_group: 'HQ003424C0046 modification history'
   statement_date: '2026-03-04'
 - id: q28
@@ -360,7 +384,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber 0, awardID + relevantContractDates block'
-  significance: 'Base award of HQ003424C0046 (modification 0). Signed 2024-05-31, effective 2024-06-10. The current and ultimate completion dates are both 2024-09-27. The base entry has no reasonForModification element because it is the original award. Every entry names SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) as vendor, WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) as contracting office, IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) as funding/requesting agency, and DEPT OF DEFENSE ([`/organizations/dod`]) as agency.'
+  significance: 'FPDS record for HQ003424C0046 (May 31, 2024): the base award (modification 0) was signed 2024-05-31 and effective 2024-06-10, with current and ultimate completion dates both 2024-09-27.'
+  analysis: 'The base entry has no reasonForModification element because it is the original award. Every entry names SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) as vendor, WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) as contracting office, IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) as funding/requesting agency, and DEPT OF DEFENSE ([`/organizations/dod`]) as agency.'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2024-05-31'
 - id: q29
@@ -369,7 +394,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00001, awardID + relevantContractDates block'
-  significance: 'P00001 was signed 2024-09-27, the base completion date. It moved the current and ultimate completion dates from 2024-09-27 (base) to 2025-03-27. Its reasonForModification is "EXERCISE AN OPTION" (code G).'
+  significance: 'FPDS record for HQ003424C0046 (September 27, 2024): modification P00001 moved the current and ultimate completion dates from 2024-09-27 (base) to 2025-03-27.'
+  analysis: 'P00001 was signed 2024-09-27, the base completion date. Its reasonForModification is "EXERCISE AN OPTION" (code G).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2024-09-27'
 - id: q30
@@ -378,7 +404,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00002, awardID + relevantContractDates block'
-  significance: 'P00002 was signed 2025-03-27, the completion date P00001 had set. It moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116. That link is a date coincidence only; the feed does not name the notice.'
+  significance: 'FPDS record for HQ003424C0046 (March 27, 2025): modification P00002 moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27.'
+  analysis: 'P00002 was signed 2025-03-27, the completion date P00001 had set. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116. That link is a date coincidence only; the feed does not name the notice.'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-03-27'
 - id: q31
@@ -387,7 +414,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00003, awardID + relevantContractDates block'
-  significance: 'P00003 was signed 2025-04-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00002. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).'
+  significance: 'FPDS record for HQ003424C0046 (April 10, 2025): under modification P00003 the current and ultimate completion dates stay at 2025-07-27, unchanged from P00002.'
+  analysis: 'P00003 was signed 2025-04-10. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-04-10'
 - id: q32
@@ -396,7 +424,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00004, awardID + relevantContractDates block'
-  significance: 'P00004 was signed 2025-04-11. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00003. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).'
+  significance: 'FPDS record for HQ003424C0046 (April 11, 2025): under modification P00004 the current and ultimate completion dates stay at 2025-07-27, unchanged from P00003.'
+  analysis: 'P00004 was signed 2025-04-11. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-04-11'
 - id: q33
@@ -405,7 +434,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00005, awardID + relevantContractDates block'
-  significance: 'P00005 was signed 2025-07-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00004, so P00005 did not extend the contract. Its reasonForModification is "CHANGE ORDER" (code D).'
+  significance: 'FPDS record for HQ003424C0046 (July 10, 2025): modification P00005 did not extend the contract; the current and ultimate completion dates stay at 2025-07-27, unchanged from P00004.'
+  analysis: 'P00005 was signed 2025-07-10. Its reasonForModification is "CHANGE ORDER" (code D).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-07-10'
 - id: q34
@@ -414,7 +444,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00006, awardID + relevantContractDates block'
-  significance: 'P00006 moved the currentCompletionDate and ultimateCompletionDate from 2025-07-27 (P00005) to 2026-05-27. This is the modification that extended HQ003424C0046 to 2026-05-27. It was signed 2025-07-25, two days before the 2025-07-27 completion date then in force. Its reasonForModification is "CHANGE ORDER" (code D).'
+  significance: 'FPDS record for HQ003424C0046 (July 25, 2025): modification P00006 is the one that extended HQ003424C0046 to 2026-05-27.'
+  analysis: 'P00006 moved the currentCompletionDate and ultimateCompletionDate from 2025-07-27 (P00005) to 2026-05-27. It was signed 2025-07-25, two days before the 2025-07-27 completion date then in force. Its reasonForModification is "CHANGE ORDER" (code D).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-07-25'
 - id: q35
@@ -423,7 +454,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00007, awardID + relevantContractDates block'
-  significance: 'P00007 was signed 2025-09-02. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00006. Its reasonForModification is "FUNDING ONLY ACTION" (code C).'
+  significance: 'FPDS record for HQ003424C0046 (September 2, 2025): under modification P00007 the current and ultimate completion dates stay at 2026-05-27, unchanged from P00006.'
+  analysis: 'P00007 was signed 2025-09-02. Its reasonForModification is "FUNDING ONLY ACTION" (code C).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2025-09-02'
 - id: q36
@@ -432,7 +464,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00008, awardID + relevantContractDates block'
-  significance: 'P00008 is the last entry in the feed. It was signed 2026-03-04. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00007. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).'
+  significance: 'FPDS record for HQ003424C0046 (March 4, 2026): P00008, the last entry in the feed, leaves the current and ultimate completion dates at 2026-05-27, unchanged from P00007.'
+  analysis: 'P00008 was signed 2026-03-04; the completion dates stay at 2026-05-27. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).'
   claim_group: 'HQ003424C0046 period-of-performance extensions (FPDS)'
   statement_date: '2026-03-04'
 - id: q37
@@ -441,7 +474,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00002, contractData block, reasonForModification through descriptionOfContractRequirement'
-  significance: 'The requirement description on P00002 names IPMO: "IPMO SUPPORT SERVICES". P00003 and P00004 carry the same description. The base, P00001 and P00005-P00008 entries carry other descriptions. This quote runs from the "CHANGE ORDER" reason line to the requirement line so that it matches only P00002: P00003 and P00004 have "OTHER ADMINISTRATIVE ACTION" as their reason, and P00005 and P00006 (the other CHANGE ORDER entries) have a different requirement description.'
+  significance: 'FPDS record for HQ003424C0046 (March 27, 2025): the requirement description on P00002 names IPMO as "IPMO SUPPORT SERVICES".'
+  analysis: 'P00003 and P00004 carry the same description. The base, P00001 and P00005-P00008 entries carry other descriptions. This quote runs from the "CHANGE ORDER" reason line to the requirement line so that it matches only P00002: P00003 and P00004 have "OTHER ADMINISTRATIVE ACTION" as their reason, and P00005 and P00006 (the other CHANGE ORDER entries) have a different requirement description.'
   claim_group: 'HQ003424C0046 IPMO requirement description (FPDS)'
   statement_date: '2025-03-27'
 - id: q38
@@ -450,7 +484,8 @@ quotes:
   source:
     path: government/samgov-tr011720251116-notice.json
     location: '"description[0].body" field, ¶ 4) (HQ003424C0046)'
-  significance: 'The WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names HQ003424C0046 (Sancorp Consulting ([`/organizations/sancorp-consulting`]), the IPMO-support contract) among the incumbent contracts concluding on March 27, 2025, with an anticipated four-month bridge from March 28, 2025, to July 27, 2025. The notice does not name IPMO; the tie to IPMO rests on other sources that identify HQ003424C0046 as the IPMO-support contract.'
+  significance: 'SAM.gov notice of intent TR011720251116 (March 11, 2025): WHS names Sancorp''s IPMO-support contract HQ003424C0046 among incumbent contracts concluding on March 27, 2025, with an anticipated four-month bridge.'
+  analysis: 'The WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names HQ003424C0046 (Sancorp Consulting ([`/organizations/sancorp-consulting`]), the IPMO-support contract) among the incumbent contracts; the anticipated bridge runs from March 28, 2025, to July 27, 2025. The notice does not name IPMO; the tie to IPMO rests on other sources that identify HQ003424C0046 as the IPMO-support contract.'
   context: 'Item 4 of five sole-source bridge extensions announced in SAM.gov notice of intent TR011720251116 (postedDate 2025-03-11T19:51:30), issued by Washington Headquarters Services, Acquisition Directorate, on behalf of the OUSD(I&S) I&S Enterprise.'
   claim_group: 'HQ003424C0046 bridge extension (SAM.gov notice TR011720251116)'
   statement_date: '2025-03-11'
@@ -460,7 +495,8 @@ quotes:
   source:
     path: government/fpds-hq003424c0046.txt
     location: 'entry modNumber P00008, dollarValues/totalDollarValues through purchaserInformation (fundingRequestingOfficeID)'
-  significance: 'As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records totalObligatedAmount 5763201.20 (with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20) on HQ003424C0046. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic.'
+  significance: 'FPDS record for HQ003424C0046, P00008 entry (March 4, 2026): FPDS records totalObligatedAmount 5763201.20 on HQ003424C0046, with the base-and-options values also 5763201.20.'
+  analysis: 'As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records this total, with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic.'
   context: 'FPDS Atom-feed entry for DEFINITIVE CONTRACT HQ003424C0046 modification P00008 (entry title names SANCORP CONSULTING, LLC as awardee; signedDate 2026-03-04). The span sits between the entry dollarValues block and the foreignFunding element; contiguous lines in the source, unique via the 5763201.20 total.'
   claim_group: 'HQ003424C0046 funding/requesting office and total obligation (FPDS)'
   statement_date: '2026-03-04'

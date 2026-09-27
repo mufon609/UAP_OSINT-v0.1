@@ -445,7 +445,8 @@ quotes:
   source:
     path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
     location: 'section "Lifting of Large Payloads Into Earth Orbit", ¶1'
-  significance: The Los Alamos parallel (classified November 1970, declassified July 1979) and the shared expendable-laser launch technique — the laser material itself becoming part of the propellant — the alternative-launch detail beyond the author's own 1970/2007 provenance stated earlier in the same ¶1.
+  significance: 'DIRD #11 (March 11, 2010), "Lifting of Large Payloads Into Earth Orbit": a Los Alamos report (classified November 1970, declassified July 1979) shares the expendable-laser launch technique, the laser material becoming part of the propellant.'
+  analysis: 'The Los Alamos parallel and the shared expendable-laser launch technique — the laser material itself becoming part of the propellant — the alternative-launch detail beyond the author''s own 1970/2007 provenance stated earlier in the same ¶1.'
   statement_date: '2010-03-11'
 - id: q-argon-laser-pumping-convergent-shock
   added_date: '2026-05-27'
@@ -555,7 +556,8 @@ quotes:
   source:
     path: government/dird-11-advanced-nuclear-propulsion-20100311.pdf
     location: 'section "Appendix: Conjectured Metastable Superexplosives Formed Under High Pressure for Thermonuclear Ignition", ¶3'
-  significance: The appendix's relevance framing of the conjectured keV chemical superexplosive — an unstable, high-pressure-formed compound that, because an intense X-ray burst is needed to ignite a thermonuclear microexplosion, could replace the argon ion laser as the igniter of a pure fusion bomb.
+  significance: 'DIRD #11 (March 11, 2010), Appendix: the conjectured keV chemical superexplosive could replace the argon ion laser as the igniter of a pure fusion bomb.'
+  analysis: 'The appendix''s relevance framing of the conjectured keV chemical superexplosive — an unstable, high-pressure-formed compound that, because an intense X-ray burst is needed to ignite a thermonuclear microexplosion, could replace the argon ion laser as the igniter.'
   statement_date: '2010-03-11'
 - id: q-appendix-three-pressure-possibilities
   added_date: '2026-05-27'

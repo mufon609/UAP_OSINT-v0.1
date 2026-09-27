@@ -19,7 +19,9 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 ## Evidence
 
-### AARO HRR Vol I top-line finding — frames AARO's headline denial in terms of "reverse-engineering extraterrestrial technology". The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).
+### AARO HRR Vol I Executive Summary, p. 7 (March 8, 2024): the top-line finding frames AARO's headline denial in terms of "reverse-engineering extraterrestrial technology."
+
+The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).
 
 > AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
 
@@ -33,7 +35,9 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 ---
 
-### AARO HRR Vol I Named-Companies denial — names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology". The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).
+### AARO HRR Vol I Executive Summary, p. 8 (March 8, 2024): the Named-Companies denial names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology."
+
+The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).
 
 > executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology.
 
@@ -47,7 +51,9 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 ---
 
-### AARO HRR Vol I CIA-Official denial — names the action-scope of the official's denial as "managed the movement of and experimentation on off-world technology". The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.
+### AARO HRR Vol I Executive Summary, p. 8 (March 8, 2024): the CIA-Official denial names the action-scope of the official's denial as "managed the movement of and experimentation on off-world technology."
+
+The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.
 
 > The named, former CIA official was not involved in the movement of extraterrestrial technology. The same former CIA officer signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology.
 
@@ -61,7 +67,9 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 ---
 
-### Elizondo QFR Q6 — names the action-scope of the allegation as "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that the CIA "opposed". The action verbs are transfer / opposed; the temporal frame is a proposed-and-disapproved past event. Distinct verbs, distinct event from AARO's "ever recovered / possessed / reverse-engineered" denial frame.
+### Elizondo QFR response to Burlison, Q6 (December 19, 2024): Elizondo names the action-scope of the allegation as "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that the CIA "opposed."
+
+The action verbs are transfer / opposed; the temporal frame is a proposed-and-disapproved past event. Distinct verbs, distinct event from AARO's "ever recovered / possessed / reverse-engineered" denial frame.
 
 > Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace.
 

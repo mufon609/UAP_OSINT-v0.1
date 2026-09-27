@@ -92,7 +92,9 @@ On circuits and waveguide miniaturization, the speed of light sets a size limit 
 
 ---
 
-### Provenance block; preparing component withheld [REDACTED: (b)(3):10 USC 424], Author withheld [REDACTED: (b)(6)] — authorship is extrinsic (DIA AAWSAP products list → Dr. G. Shvets / UT-Austin). Bracketed redaction markers preserved verbatim.
+### DIRD #22 (April 6, 2010), provenance block: the preparing component is withheld [REDACTED: (b)(3):10 USC 424] and the Author withheld [REDACTED: (b)(6)].
+
+Authorship is extrinsic (DIA AAWSAP products list → Dr. G. Shvets / UT-Austin). Bracketed redaction markers preserved verbatim.
 
 > Prepared by:
 >
@@ -124,7 +126,9 @@ On circuits and waveguide miniaturization, the speed of light sets a size limit 
 
 ---
 
-### Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld [REDACTED: (b)(3):10 USC 424;(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.
+### DIRD #22 (April 6, 2010), Administrative Note: the program provenance is the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series, with the Program Manager withheld.
+
+Program-provenance: Program Manager withheld [REDACTED: (b)(3):10 USC 424;(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [REDACTED: (b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [REDACTED: (b)(3):10 USC 424;(b)(6)] ., AAWSA Program Manager, Defense Intelligence Agency, ATTN: [REDACTED: (b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
 
@@ -568,7 +572,9 @@ On circuits and waveguide miniaturization, the speed of light sets a size limit 
 
 ---
 
-### The wide-angle-absorber claim — success in designing a true impedance-matched optical metamaterial (Reference 20, the WAPAMIR). Preserves the in-document typo "if course" (for "of course") verbatim per no-correction discipline.
+### DIRD #22 (April 6, 2010), "Metamaterials for Energy Harvesting": the wide-angle-absorber claim is success in designing a true impedance-matched optical metamaterial (Reference 20, the WAPAMIR).
+
+Preserves the in-document typo "if course" (for "of course") verbatim per no-correction discipline.
 
 > The challenge, if course, is to design a true impedance-matched optical metamaterial. Success has been achieved in designing such a metamaterial (Reference 20).
 

@@ -28,7 +28,8 @@ quotes:
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 7'
-  significance: 'AARO HRR Vol I top-line finding — frames AARO''s headline denial in terms of "reverse-engineering extraterrestrial technology". The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).'
+  significance: 'AARO HRR Vol I Executive Summary, p. 7 (March 8, 2024): the top-line finding frames AARO''s headline denial in terms of "reverse-engineering extraterrestrial technology."'
+  analysis: 'The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).'
   context: 'AARO Historical Record Report Volume I Executive Summary top-line finding, March 8, 2024'
   statement_date: '2024-03-08'
   attestation_tier: on-record
@@ -41,7 +42,8 @@ quotes:
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 8, "Named Companies Allegedly Experimenting on Alien Technology" bullet'
-  significance: 'AARO HRR Vol I Named-Companies denial — names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology". The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).'
+  significance: 'AARO HRR Vol I Executive Summary, p. 8 (March 8, 2024): the Named-Companies denial names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology."'
+  analysis: 'The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).'
   context: 'AARO Historical Record Report Volume I Executive Summary p. 8 Named-Companies bullet recording corporate executives'' denials to the Director of AARO'
   statement_date: '2024-03-08'
   attestation_tier: on-record
@@ -54,7 +56,8 @@ quotes:
   source:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 8, "A CIA Official Allegedly Managed UAP Experimentation" bullet'
-  significance: 'AARO HRR Vol I CIA-Official denial — names the action-scope of the official''s denial as "managed the movement of and experimentation on off-world technology". The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.'
+  significance: 'AARO HRR Vol I Executive Summary, p. 8 (March 8, 2024): the CIA-Official denial names the action-scope of the official''s denial as "managed the movement of and experimentation on off-world technology."'
+  analysis: 'The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.'
   context: 'AARO Historical Record Report Volume I Executive Summary p. 8 CIA-Official bullet documenting the named former CIA official''s memo rejecting the interviewee claim'
   statement_date: '2024-03-08'
   attestation_tier: on-record
@@ -67,7 +70,8 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 6, Q6 response'
-  significance: 'Elizondo QFR Q6 — names the action-scope of the allegation as "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that the CIA "opposed". The action verbs are transfer / opposed; the temporal frame is a proposed-and-disapproved past event. Distinct verbs, distinct event from AARO''s "ever recovered / possessed / reverse-engineered" denial frame.'
+  significance: 'Elizondo QFR response to Burlison, Q6 (December 19, 2024): Elizondo names the action-scope of the allegation as "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that the CIA "opposed."'
+  analysis: 'The action verbs are transfer / opposed; the temporal frame is a proposed-and-disapproved past event. Distinct verbs, distinct event from AARO''s "ever recovered / possessed / reverse-engineered" denial frame.'
   context: 'Luis Elizondo Question for the Record response to Rep. Eric Burlison Q6 — confirms the CIA opposed the alleged Lockheed-to-Bigelow transfer'
   statement_date: '2024-12-19'
   attestation_tier: dopsr-cleared

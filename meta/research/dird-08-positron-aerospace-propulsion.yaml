@@ -300,7 +300,8 @@ quotes:
   source:
     path: government/dird-08-positron-aerospace-propulsion-20100302.pdf
     location: 'section "Conclusions", ¶ ("Within 10 years, the 150 µg of positrons ... could be made in 6 months at a cost of $69 million")'
-  significance: 'Cost and timeline (Conclusions) — within 10 years the 150 µg could be made in 6 months at a cost of $69 million; the Positron Costs section instead states $96 million (intra-document contradiction); likened to Lindbergh''s 1927 Spirit of St. Louis flight'
+  significance: 'DIRD #8 (March 2, 2010), Conclusions: within 10 years the 150 µg of positrons could be made in 6 months at a cost of $69 million, contradicting the Positron Costs section''s $96 million.'
+  analysis: 'Cost and timeline (Conclusions); the Positron Costs section instead states $96 million (intra-document contradiction); likened to Lindbergh''s 1927 Spirit of St. Louis flight'
   statement_date: '2010-03-02'
 - id: q-conclusions-storage-engineering
   added_date: '2026-05-26'

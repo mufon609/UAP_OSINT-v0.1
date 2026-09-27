@@ -493,7 +493,8 @@ quotes:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: '¶ "Beyond that, the response I would"'
-  significance: Kirkpatrick states AARO did not play a role in DOD's response to the recent UAP incidents over North America other than initial advice — confirms Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; refers further questions back to the White House
+  significance: 'SASC AARO hearing transcript (April 19, 2023): Kirkpatrick states AARO did not play a role in DOD''s response to the recent UAP incidents over North America other than initial advice.'
+  analysis: 'The statement confirms Gillibrand''s framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; Kirkpatrick refers further questions back to the White House.'
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q29
   speaker_id: s1

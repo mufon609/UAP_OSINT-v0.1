@@ -47,7 +47,9 @@ the broken-link registry surfaces it as a build candidate.
    user to adjudicate. Do not auto-apply drops or moves.
 6. On approval: edit the artifact (drop / consolidate / add `timeline[]` with a
    `[`/path`]` wrap for any future-node entity; fold dropped siblings'
-   `significance`/`context` into the surviving quote), re-render, re-run
+   `significance`/`analysis`/`context` into the surviving quote — the folded
+   analysis goes in `analysis`, the heading stays one sentence per
+   build-protocol "Key Passage headings — one sentence"), re-render, re-run
    `review-coverage.py`. The user commits — the commit hook runs the full
    pre-commit chain at the boundary; no separate manual chain run needed.
 

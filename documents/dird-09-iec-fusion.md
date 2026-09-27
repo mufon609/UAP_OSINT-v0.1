@@ -61,7 +61,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Chacon BAFP conditions — promising Q values require a deep electrostatic well (E0 ~ 100 kV), long enough ion confinement time (θ ~ 0.01), and moderate ion source strength (Ŝmax < 300), with ion injection energy slightly below the potential-well maximum
+### IEC Fusion DIRD, Section IV (March 10, 2010): Chacon BAFP conditions for promising Q values require a deep electrostatic well (E0 ~ 100 kV) and long enough ion confinement time (θ ~ 0.01).
+
+The conditions also require moderate ion source strength (Ŝmax < 300), with ion injection energy slightly below the potential-well maximum.
 
 > These conditions include that the electrostatic well is deep enough (E0 ~ 100 kV); Ion confinement time is long enough (θ ~ 0.01); the ion source strength is moderate (Ŝmax < 300), while the ion injection energy is slightly below the potential-well maximum.
 
@@ -169,7 +171,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Scope limitation — the report largely provides details based on the author's own IEC work over the last decade, and will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology
+### IEC Fusion DIRD, Section I (March 10, 2010): the report largely provides details based on the author's own IEC work over the last decade.
+
+Scope limitation — the report will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology.
 
 > One other limitation of this report is that it largely provides details based on the author's work on IECs over the last decade. Thus it will not do justice to the ongoing work by others, notably at EMC² on the Bussard Polywell device or the advanced gridded IEC neuron/proton source development work at the U of Wisconsin, Kyoto University, and Tokyo Institute of Technology.
 
@@ -241,7 +245,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### IEC basic mechanism — a gridded IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel, with fusion fuel such as deuterium gas fed into a chamber prepared at high vacuum
+### IEC Fusion DIRD, Section I (March 10, 2010): a gridded IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel.
+
+This is the IEC basic mechanism: fusion fuel such as deuterium gas is fed into a chamber prepared at high vacuum.
 
 > As shown, this "gridded" type IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel. The fusion "fuel", e.g. deuterium gas, is first fed into the chamber originally prepared at high vacuum, e.g. 10⁻⁷ Torr.
 
@@ -289,7 +295,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Jet power conversion — over half the energy imparted to the ions by the accelerating grid is funneled into the jet; in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow
+### IEC Fusion DIRD, Section III (March 10, 2010): over half the energy imparted to the ions by the accelerating grid is funneled into the jet.
+
+Jet power conversion — in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow.
 
 > For example, with the device of Figure 3.2b, the input power is about 2 kW with over 1.5 kW being carried out by the jet flow. Consequently, this configuration provides a way to efficiently convert the energy stored by accelerated ions in the symmetric microchannels into a directed beam or jet.
 
@@ -409,7 +417,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### UIUC ion-injected device result — with a recirculation number of roughly 2 and ~50 mA injected current, the measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶, the basis for the proposed p-¹¹B breakeven experiment of Section VI
+### IEC Fusion DIRD, Section I (March 10, 2010): the UIUC ion-injected device's measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶.
+
+The UIUC ion-injected device result was obtained with a recirculation number of roughly 2 and ~50 mA injected current, and is the basis for the proposed p-¹¹B breakeven experiment of Section VI.
 
 > These studies did include differential pumping so that number of recirculating passes, β, by an ion was very low, roughly 2. The injected ion current, I, was about 50 mA. Still, based on measurements of neutrons emitted using deuterium fuel, the Q (fusion energy gain/energy in) was remarkable for such a small device, order of 10⁻⁶. Based on these results, an aggressive p-¹¹B breakeven experiment using this type of IEC is discussed in Section VI.
 
@@ -543,7 +553,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Breakeven gap — best current device results are 5 or 6 orders of magnitude below breakeven energy gain Q, but the IEC can be scaled up in energy gain while keeping a small size because the losses are in velocity space
+### IEC Fusion DIRD, Section VI (March 10, 2010): best current device results are 5 or 6 orders of magnitude below breakeven energy gain Q.
+
+Breakeven gap — but the IEC can be scaled up in energy gain while keeping a small size because the losses are in velocity space.
 
 > However best current device results are 5 or 6 orders of magnitude down in energy gain Q (energy out/ in) from breakeven. Thus it may appear that such a hope is many years off. Fortunately, the IEC can be scaled up in energy gain while keeping a small size since the losses are in velocity space (i.e. via ion upscattering out of the potential well trap).
 
@@ -567,7 +579,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Discharge modes — glow-discharge IEC operation is categorized by three distinct modes, Star, Central Spot, and Halo, each associated with a different potential well structure and neutron production rate; the star mode is distinguished by microchannels or "spokes" radiating from a bright center spot
+### IEC Fusion DIRD, Section I (March 10, 2010): glow-discharge IEC operation is categorized by three distinct modes — Star, Central Spot, and Halo.
+
+Discharge modes — each is associated with a different potential well structure and neutron production rate; the star mode is distinguished by microchannels or "spokes" radiating from a bright center spot.
 
 > "Glow discharge operation of the IECGD is categorized by three distinct discharge "modes": Star, Central Spot, and Halo (illustrated in Figure 1.3). These names are quite descriptive of the visual appearances of the visible light emitted from the discharges. All three modes are reproducible and stable; each is associated with a different potential well structure, hence neutron production rate. The star mode was used extensively in recent experiments. It is distinguished by microchannels or "spokes" radiating outward from a bright center spot (Figure 1.4).
 
@@ -597,7 +611,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Tzonev deep wells — Tzonev et al. found deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A), high perpendicular ion energy spread (3 keV-14 keV), low perpendicular electron energy spread (3 eV), and low radial ion energy spread
+### IEC Fusion DIRD, Section IV (March 10, 2010): Tzonev et al. found deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A).
+
+Tzonev deep wells — the other conditions are high perpendicular ion energy spread (3 keV-14 keV), low perpendicular electron energy spread (3 eV), and low radial ion energy spread.
 
 > Tzonev et al. found that deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A); high perpendicular ion energy spread (3 keV-14 keV); low perpendicular electron energy spread (3 eV), and low radial ion energy spread (0.l eV-0.5 eV).
 
@@ -621,7 +637,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### 12-gun Q scaling — the 12-gun breakeven design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10, predicting a ~10⁸ increase in Q over the prior gun experiment to give Q=1 ("breakeven") for a p-¹¹B plasma
+### IEC Fusion DIRD, Section VI (March 10, 2010): the 12-gun breakeven design, predicting a ~10⁸ increase in Q over the prior gun experiment, would give Q=1 ("breakeven") for a p-¹¹B plasma.
+
+12-gun Q scaling — the design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10.
 
 > The 12 gun breakeven design will provide an increase in β to ~ 1000 due to differential pumping effects, I will increase to 6000 mA (due to multiple pulsed guns), and a will be cut down by 10 due to improvements in focusing both and reduced collisionality. This predicts an increase in Q (compared to prior gun experiment) of ~10⁸, giving Q=1 ("breakeven") as required for a p-¹¹B plasma
 
@@ -633,7 +651,9 @@ The report provides an overview of potential applications — neutron/proton/x-r
 
 ---
 
-### Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out; breakeven in a 100's-of-cc core with 20-25 kW input power using new gun-injected technology seems practical
+### IEC Fusion DIRD, Section VI (March 10, 2010): breakeven in a 100's-of-cc core with 20-25 kW input power using new gun-injected technology seems practical.
+
+Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out.
 
 > Thus in principle, energy breakeven could be demonstrated in the IEC in a very dense plasma "core" occupying only a few cc volume with only a few 100's of watts in and out. This extreme is not currently possible, but use of the new gun injected technology to obtain breakeven in a dense plasma core in the IEC of 100's of cc volume and with 20-25 kW input power seems practical.
 

@@ -21,6 +21,7 @@ from ._common import (
     _escape_table_cell,
     _render_attribution_block,
     _render_blockquote,
+    _render_passage_head,
     _wrap_path,
     sort_by_date,
     sort_by_id,
@@ -208,9 +209,8 @@ def render_foia_key_passages(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))

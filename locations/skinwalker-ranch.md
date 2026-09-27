@@ -181,7 +181,9 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ---
 
-### Garth Myers categorical denial of any paranormal activity during the Myers-era ownership (1933-1994). Countervailing primary-source testimony against the Sherman-era claims.
+### The UFO Chronicles, Garth Myers 2009 interview (April 12, 2020): Garth Myers gives a categorical denial of any paranormal activity during the Myers-era ownership (1933-1994).
+
+Countervailing primary-source testimony against the Sherman-era claims.
 
 > unequivocally that up to 1992 there had never been
 

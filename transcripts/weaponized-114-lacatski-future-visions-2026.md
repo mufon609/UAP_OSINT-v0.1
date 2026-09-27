@@ -57,7 +57,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ## Key Passages
 
-### Lacatski's structural account of his Skinwalker Ranch visit request — sent via "multiple managers approval" at DIA. Establishes the institutional path by which his Ranch investigation was officially sanctioned at DIA — not a personal interest pursued outside the job
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's structural account of his Skinwalker Ranch visit request, sent via "multiple managers approval" at DIA.
+
+Establishes the institutional path by which his Ranch investigation was officially sanctioned at DIA — not a personal interest pursued outside the job.
 
 > [7:39] Skinwalker Ranch came up. Short discussion, and that started it all. I wrote a letter to uh uh with my managers, multiple managers approval, to request to visit Skinwalker Ranch. I wanted to hear the real details. What is really going on? And that's what DIA was interested in.
 
@@ -70,7 +72,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's framing of AAWSAP as kept under cover "even from within my own group" — continuity with the closed-program / closed-stovepipe framing from EP 38 and Mystery Wire. Frames the four books explicitly as "a controlled disclosure of the information that we wanted to put forward with Pentagon approval."
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski frames the four books explicitly as "a controlled disclosure of the information that we wanted to put forward with Pentagon approval."
+
+Lacatski's framing of AAWSAP as kept under cover "even from within my own group" is in continuity with the closed-program / closed-stovepipe framing from EP 38 and Mystery Wire.
 
 > [8:20] And so, everything was under under cover, in a sense, even from within my own group. I just wanted to keep things controlled. And you've seen that up to this day. And the four books, they're a controlled disclosure of the information that we wanted to put forward with Pentagon approval.
 
@@ -83,7 +87,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's structural attestation about Jay Stratton at DIA — Stratton was "part of what we call the air team. He worked on air threats" and was "head of that group." Lacatski was "head of uh the missile threat, enemy missile threat to the United States." Documents the air-team/missile-threat division of labor at DIA during the AAWSAP-pre-AAWSAP period; Stratton was either on assignment to DIA from ONI ([`/organizations/oni`]) or a DIA employee — Lacatski does not know which.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's structural attestation that Jay Stratton was "head of" the DIA air team while Lacatski headed the enemy missile threat group.
+
+Stratton was "part of what we call the air team. He worked on air threats" and was "head of that group." Lacatski was "head of uh the missile threat, enemy missile threat to the United States." Documents the air-team/missile-threat division of labor at DIA during the AAWSAP-pre-AAWSAP period; Stratton was either on assignment to DIA from ONI ([`/organizations/oni`]) or a DIA employee — Lacatski does not know which.
 
 > [9:13] we had uh he was part of what we call the air team. He worked on air threats. And he was I don't know if he was on assignment to DIA from ONI or if he was a DIA uh uh employee at the time. But we also had other members within those teams. He was head of that group. I was head of uh the missile threat, enemy missile threat to the United States.
 
@@ -96,7 +102,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation of the paranormal-umbrella discovery — "I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa." Says "that's what we proved" of the AAWSAP work. The "proved" framing on the paranormal-as-umbrella connection is one of the strongest on-record affirmative claims by Lacatski on what AAWSAP established.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation of the paranormal-umbrella discovery, that "UFOs were under the paranormal umbrella, not vice versa," which he says "that's what we proved."
+
+In full: "I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa." Says "that's what we proved" of the AAWSAP work. The "proved" framing on the paranormal-as-umbrella connection is one of the strongest on-record affirmative claims by Lacatski on what AAWSAP established.
 
 > [11:14] I I I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa or anything like that or totally dissociated. That disturbs me when I read about people who don't believe in the connection cuz if if anything, that's what we proved.
 
@@ -109,7 +117,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation of his Q clearance at DOE and naval reactors work "specifically shielding of new attack submarines." The Q clearance attestation continues from PART 2 ("a Q clearance at deal"); EP 114 adds the substantive content of the work — naval reactor shielding on new attack submarines.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation of his Q clearance at DOE and naval reactors work "specifically shielding of new attack submarines."
+
+The Q clearance attestation continues from PART 2 ("a Q clearance at deal"); EP 114 adds the substantive content of the work — naval reactor shielding on new attack submarines.
 
 > [12:49] And then Uh once I was employed there, I went after the Q clearance. And so, in that regard, I was working on naval reactors, specifically shielding of new attack submarines.
 
@@ -122,7 +132,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation of his pre-AAWSAP classified DOE / DOD work on "a very advanced weapon system" — approved for research at DOD multiple levels "even to the highest" but "was not buildable" at the time. He says in the next exchange "It is buildable now." Documents a previously-undisclosed advanced-weapon-system research thread in Lacatski's pre-AAWSAP career.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation of his pre-AAWSAP classified DOE / DOD work on "a very advanced weapon system" that "was not buildable" at the time.
+
+The work was approved for research at DOD multiple levels "even to the highest" but "was not buildable" at the time. He says in the next exchange "It is buildable now." Documents a previously-undisclosed advanced-weapon-system research thread in Lacatski's pre-AAWSAP career.
 
 > [14:35] I had the clearance at the time and I was doing classified work both with DOE and DOD. And uh we can't talk about that at all. Because and I can tell you because it was a very advanced weapon system that I was working on, very advanced. Wow. And it is Back then, it was approved for research by DOD multiple levels, even to the highest. But was not buildable.
 
@@ -135,7 +147,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation that Kona Blue was "first put into Skinwalkers in the Pentagon as a future program" — Skinwalkers chapter rear-portions structure matches "almost exactly" the program "DHS and DOD released on what Kona Blue was to be." Lacatski affirms the DHS/DOD release on Kona Blue as "correct" but "incomplete" — by omission. Critical structural framing for understanding the official Kona Blue release record.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation that Kona Blue was "first put into Skinwalkers in the Pentagon as a future program," and that the DHS/DOD release is "correct" but "incomplete."
+
+Skinwalkers chapter rear-portions structure matches "almost exactly" the program "DHS and DOD released on what Kona Blue was to be." Lacatski affirms the DHS/DOD release on Kona Blue as "correct" but "incomplete" — by omission. Critical structural framing for understanding the official Kona Blue release record.
 
 > [17:38] No, I mentioned last time on your program the foundation of Kona Blue. Actually, now, your readers can do this. I think both of you are doing it. But if you go through all four of the books you can see the structure that we first put into Skinwalkers in the Pentagon as a future program. You can see that matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I'm saying is it was incomplete. Omission.
 
@@ -161,7 +175,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation that the AAWSAP RFP "was meant to be" obscure — no untrue statement in it — and that DIA deliberately went with "small contractors" Bigelow Aerospace and BAASS so the program "could form it from the ground up" without inheriting structure from a big aerospace company.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation that the AAWSAP RFP "was meant to be" obscure, with no untrue statement in it.
+
+He attests that DIA deliberately went with "small contractors" Bigelow Aerospace and BAASS so the program "could form it from the ground up" without inheriting structure from a big aerospace company.
 
 > [20:20] That's correct. Uh, right from the beginning and we've If people thought that the request for proposal was obscure, well, it was meant to be. But, is there an untrue statement in there? No, that's what we wanted. Uh, and but we were very specific of going with the small contractors because we knew that with a small contractor like, uh, Bigelow Aerospace uh, and an even smaller one, BAASS, their specialized study for this for this contract they could form it from the ground up.
 
@@ -174,7 +190,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct on-record framing of the disclosure status as of April 2026 — "Hey, this is real. You need to do your research, your due diligence. If you expect the government to carry the ball on this, I wouldn't. ... it's wide open." The "wide open" framing is the load-bearing public-record statement from this episode.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct on-record framing of the disclosure status as of April 2026: "Hey, this is real," and "it's wide open."
+
+The fuller statement: "Hey, this is real. You need to do your research, your due diligence. If you expect the government to carry the ball on this, I wouldn't. ... it's wide open." The "wide open" framing is the load-bearing public-record statement from this episode.
 
 > [30:14] We've just opened up the door by saying, "Hey, this is real. You need to do your research, your due diligence. If you expect the the government to to carry the ball on this, I wouldn't. Uh but uh that uh it's wide open.
 
@@ -187,7 +205,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Independently confirms the visit and the structural scale that Elizondo's December 2024 QFR Q7 had attested.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's first-person on-record confirmation that he visited the Pax River Naval Air Station facility, which "was just built."
+
+In his words: "yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Independently confirms the visit and the structural scale that Elizondo's December 2024 QFR Q7 had attested.
 
 > [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough. It You know, there's Memories fade like that when you're looking at a big building. And sometimes, when I look at big buildings, they don't seem quite as big when you're there. But this could have held our probably our largest aircraft in that building. Now, why would it need to at a naval facility? I don't know, because they wouldn't have a need for that, I would think.
 
@@ -200,7 +220,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's rhetorical pivot on the Tic Tac-is-it-ours question — "You think we wouldn't see some evidence of that machine now?" Continues the counterfactual from PART 2 at 36:11 that if Tic Tac were 22-year-old US technology it would be implemented on aircraft today.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's rhetorical pivot on the Tic Tac-is-it-ours question: "You think we wouldn't see some evidence of that machine now?"
+
+Continues the counterfactual from PART 2 at 36:11 that if Tic Tac were 22-year-old US technology it would be implemented on aircraft today.
 
 > [1:00:48] >> Well, I think you're you're you're right asking the right questions. I'm not the right one to answer on some of them, others I am. But what do you think? Do you think that that that such a machine from 20 5 years ago was when it was seen? Not 25 uh 22
 
@@ -213,7 +235,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct on-record statement on Tic Tac — "there were some things that still haven't been released that were classified on the Tic Tac incident." His personal position: "I just can't believe" that the 2004 Tic Tac was a classified US program. Documents Lacatski's evolving framing on whether Tic Tac is US technology — from "not that I'm aware of" in PART 2 to "I just can't believe that" in EP 114.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct on-record statement that "there were some things that still haven't been released that were classified on the Tic Tac incident."
+
+His personal position: "I just can't believe" that the 2004 Tic Tac was a classified US program. Documents Lacatski's evolving framing on whether Tic Tac is US technology — from "not that I'm aware of" in PART 2 to "I just can't believe that" in EP 114.
 
 > [1:02:01] There were some things that still haven't been released that were classified on um on uh the Tic Tac incident. So, I think if I was just Jim of the street, the the Jim public, I I wouldn't believe it if anyone told me that that was a classified program of the US. I I just I just can't believe that.
 
@@ -226,7 +250,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct attestation about the Russian Thread 3 files — translated and approved for DIA distribution and discussion despite Soviet/Russian highly-secret markings. Lacatski contradicts the public framing that AAWSAP was "patterned" after the Thread 3 documents — the Russian files arrived "too late in the program" to pattern anything after; they were under study when AAWSAP was running into "rough waters with the program continuing beyond."
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct attestation that the Russian Thread 3 files arrived "too late in the program" for AAWSAP to be "patterned" after them.
+
+The files were translated and approved for DIA distribution and discussion despite Soviet/Russian highly-secret markings. Lacatski contradicts the public framing that AAWSAP was "patterned" after the Thread 3 documents — the Russian files arrived "too late in the program" to pattern anything after; they were under study when AAWSAP was running into "rough waters with the program continuing beyond."
 
 > [1:03:54] Well, as you know, we trans translated them. Uh we got uh uh distribution and discussion approved by DIA because they were all marked highly secret in Soviet markings. Um Russian markings. Um I would say that we This is contrary to what's out there on the internet, that we patterned our program after these. Well, we received them too late in the program to uh to actually pattern anything after uh the Thread 3 uh uh documents. We were in the process of studying them, and uh that's when uh we were running into rough waters with the program continuing beyond.
 
@@ -239,7 +265,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's framing of the four-book editorial process — he was "the editor" of the 38 different styles that came in and had to convert them to one consistent voice. "I had to read every line and make the corrections." Documents Lacatski's hands-on editorial role across the four-book series.
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's framing of the four-book editorial process: he was "the editor" who converted 38 different styles to one consistent voice.
+
+He was "the editor" of the 38 different styles that came in and had to convert them to one consistent voice. "I had to read every line and make the corrections." Documents Lacatski's hands-on editorial role across the four-book series.
 
 > [16:52] And I I had to understand them. I was the editor. Yeah, cuz we got 38 different styles coming in to that we had to convert to one. So, there was a there was an effort. I had to read every line and make the corrections.
 
@@ -252,7 +280,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Knapp's on-air summary characterization of the co-authored four books' content, put to Lacatski — "These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world." — closing that everything written across the four books "is approved in a sense" (the cleared-for-publication framing). Knapp's words per the verified attribution sibling (turn 652-675), not Lacatski's own attestation; Lacatski's affirmations follow in his ensuing answers.
+### WEAPONIZED Episode 114 (April 8, 2026): Knapp's on-air summary characterization of the co-authored four books' content, put to Lacatski, calls it real and "happening all over the world," not Lacatski's own attestation.
+
+Knapp's summary: "These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world." — closing that everything written across the four books "is approved in a sense" (the cleared-for-publication framing). Knapp's words per the verified attribution sibling (turn 652-675), not Lacatski's own attestation; Lacatski's affirmations follow in his ensuing answers.
 
 > [28:50] Everything that's in these books was thoroughly investigated. All the cases, all the incidents, all the locations, uh, and you know, you you've got some general themes throughout. These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world. And everything that you've written in these four books is approved in a sense.
 
@@ -265,7 +295,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct on-record framing that he is "hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue" — the canonical statement of his ongoing disclosure intent as of April 2026, while acknowledging "can we have all the details? Probably not."
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct on-record framing that he is "hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue."
+
+This is the canonical statement of his ongoing disclosure intent as of April 2026, while acknowledging "can we have all the details? Probably not."
 
 > [29:40] Well, no, I'm hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue. I I I I expected to be able to do that. Uh can we have all the details? Probably not.
 
@@ -278,7 +310,9 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's direct programmatic framing — "that's what needs to be done now with Kona Blue. We need to move ahead." Says lights-in-the-sky and possibly even close-landings collection "isn't going to cut it anymore"; the future program needs to involve "real detail here and acquire that."
+### WEAPONIZED Episode 114 (April 8, 2026): Lacatski's direct programmatic framing that with Kona Blue "We need to move ahead."
+
+In full: "that's what needs to be done now with Kona Blue. We need to move ahead." Says lights-in-the-sky and possibly even close-landings collection "isn't going to cut it anymore"; the future program needs to involve "real detail here and acquire that."
 
 > [23:26] that's what needs to be done now with Kona Blue. We need to move ahead. We're not collecting information on lights in the sky isn't going to cut it anymore. And possibly even not close landings. But, you know, we're going to have to involve ourselves in some real detail here and acquire that.
 

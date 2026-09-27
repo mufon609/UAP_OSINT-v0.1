@@ -273,7 +273,9 @@ There are a number of different techniques available to detect hypersonic object
 
 ---
 
-### The counter-stealth premise of Recommendation #1 — wakes cannot be hidden even when airframes are. In-line endnote marker "Dayton29" preserved verbatim.
+### Hypersonic Tracking DIRD, Recommendation #1 (November 20, 2010): the counter-stealth premise is that wakes cannot be hidden even when airframes are.
+
+In-line endnote marker "Dayton29" preserved verbatim.
 
 > Authors Mark Garnet and Aaron Altman from the University of Dayton29 proposed the development of a database of turbulent wake data for conventional aircraft to allow their identification.  They point out that, although the aircraft may be designed for stealth, their wakes cannot be hidden.
 

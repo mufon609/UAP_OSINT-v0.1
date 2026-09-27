@@ -249,7 +249,8 @@ quotes:
   source:
     path: government/dird-31-hypersonic-detection-tracking-2010.pdf
     location: 'Recommendation #1 - Build a Database of the Wake Characteristics for Existing Aircraft'
-  significance: 'The counter-stealth premise of Recommendation #1 — wakes cannot be hidden even when airframes are. In-line endnote marker "Dayton29" preserved verbatim.'
+  significance: 'Hypersonic Tracking DIRD, Recommendation #1 (November 20, 2010): the counter-stealth premise is that wakes cannot be hidden even when airframes are.'
+  analysis: 'In-line endnote marker "Dayton29" preserved verbatim.'
   context: 'Recommendation #1, citing Garnet and Altman (endnote 29).'
   statement_date: '2010-11-20'
   claim_group: detection-recommendations

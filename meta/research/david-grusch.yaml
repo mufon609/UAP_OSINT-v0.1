@@ -765,7 +765,8 @@ quotes:
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
     location: "[9:15]"
-  significance: Grusch's direct first-person account of access denial. The subsequent reprisal-and-ICIG narration in the same NewsNation segment (lines 228-232) is Coulthart journalistic voice-over, not a Grusch quote, and is excluded here.
+  significance: 'NewsNation Reality Check with Ross Coulthart (June 11, 2023): Grusch''s direct first-person account of access denial.'
+  analysis: 'The subsequent reprisal-and-ICIG narration in the same NewsNation segment (lines 228-232) is Coulthart journalistic voice-over, not a Grusch quote, and is excluded here.'
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
   category: filed-claim
@@ -916,7 +917,8 @@ quotes:
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
     location: "[12:42]"
-  significance: Verbatim source anchor for the "fall of 2019" date attached to the first senior-IC whistleblower contact. Grusch's own JRE framing of the date; supports the 2019 timeline entry.
+  significance: 'Joe Rogan Experience #2065 (November 21, 2023): verbatim source anchor for the "fall of 2019" date attached to the first senior-IC whistleblower contact.'
+  analysis: 'Grusch''s own JRE framing of the date; supports the 2019 timeline entry.'
   context: Joe Rogan Experience
   observation_type: relayed
   category: filed-claim
@@ -1261,7 +1263,8 @@ quotes:
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
     location: "[10:40]"
-  significance: Sol-symposium reiteration — program personnel used 'extraterrestrial'; Grusch skeptical that is sole origin. Parallels JRE statement.
+  significance: 'Sol Foundation Inaugural Symposium closing remarks, Stanford (November 18, 2023): Grusch reiterates that program personnel used ''extraterrestrial'' but is skeptical that is the sole origin.'
+  analysis: 'Sol-symposium reiteration. Parallels JRE statement.'
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
   statement_date: '2023-11-18'
@@ -1545,7 +1548,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Luna, p. 27
-  significance: Sworn datum — Grusch had a classified conversation with Sean Kirkpatrick in April 2022, three months before Kirkpatrick took the AARO helm. Material to AARO-Grusch dispute.
+  significance: 'House Oversight hearing, Q&A with Rep. Luna (July 26, 2023): sworn datum that Grusch had a classified conversation with Sean Kirkpatrick in April 2022, three months before Kirkpatrick took the AARO helm.'
+  analysis: 'Material to AARO-Grusch dispute.'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1647,7 +1651,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Moskowitz, p. 30
-  significance: Rare first-person observational claim — Grusch personally reviewed overhead/strategic/tactical platform imagery that he "could not even explain prosaically." Closest to firsthand in his oral testimony (though of imagery, not phenomena).
+  significance: 'House Oversight hearing, Q&A with Rep. Moskowitz (July 26, 2023): rare first-person observational claim that Grusch personally reviewed imagery he "could not even explain prosaically."'
+  analysis: 'The imagery is overhead/strategic/tactical platform imagery. Closest to firsthand in his oral testimony (though of imagery, not phenomena).'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1714,7 +1719,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burchett, p. 34
-  significance: KEY — Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s. Primary-source attestation for the "nonhuman" terminology preference and for the pre-Roswell start date.
+  significance: 'House Oversight hearing, Q&A with Rep. Burchett (July 26, 2023): Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s.'
+  analysis: 'KEY — Primary-source attestation for the "nonhuman" terminology preference and for the pre-Roswell start date.'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -1771,7 +1777,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "Q&A with Rep. Burchett, p. 35"
-  significance: Grusch attests to an 11½-hour classified testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. Cross-references with his JRE account ("about 11 and a half to 12 hours" of classified testimony).
+  significance: 'House Oversight hearing, Q&A with Rep. Burchett (July 26, 2023): Grusch attests to an 11½-hour classified testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names.'
+  analysis: 'Cross-references with his JRE account ("about 11 and a half to 12 hours" of classified testimony).'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1838,7 +1845,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burlison, p. 40
-  significance: Sworn claim of physical injury to colleagues. Em-dash suspension indicates Burlison interrupted.
+  significance: 'House Oversight hearing, Q&A with Rep. Burlison (July 26, 2023): sworn claim of physical injury to colleagues.'
+  analysis: 'Em-dash suspension indicates Burlison interrupted.'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -1850,7 +1858,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burlison, p. 40
-  significance: Sworn affirmative — physical injury caused both by UAPs and by people within the federal government. Major under-oath claim establishing that Grusch ascribes physical harm to both categories.
+  significance: 'House Oversight hearing, Q&A with Rep. Burlison (July 26, 2023): sworn affirmative that physical injury was caused both by UAPs and by people within the federal government.'
+  analysis: 'Major under-oath claim establishing that Grusch ascribes physical harm to both categories.'
   context: Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -1885,15 +1894,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burlison, p. 40
-  significance: 'Sworn admission — Grusch has NOT personally seen any
-
-    non-human biologics/bodies. Critical epistemic boundary for the
-
-    non-human-biologics claim: primary-source statement establishes
-
-    Grusch''s biologics claim is relayed, not firsthand.
-
-    '
+  significance: 'House Oversight hearing, Q&A with Rep. Burlison (July 26, 2023): sworn admission that Grusch has NOT personally seen any non-human biologics/bodies.'
+  analysis: 'Critical epistemic boundary for the non-human-biologics claim: primary-source statement establishes Grusch''s biologics claim is relayed, not firsthand.'
   context: Oral testimony Q&A (response to "Have you seen any of the bodies?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1915,7 +1917,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "Q&A with Rep. Burlison, p. 40"
-  significance: Grusch's own theoretical framing ("holographic principle") for interdimensional UAP possibility. Explicitly framed as theoretical, not evidenced.
+  significance: 'House Oversight hearing, Q&A with Rep. Burlison (July 26, 2023): Grusch''s own theoretical framing ("holographic principle") for interdimensional UAP possibility.'
+  analysis: 'Explicitly framed as theoretical, not evidenced.'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1937,7 +1940,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 43
-  significance: 'Sworn statement — Grusch has never personally seen a UAP. The answer responds to Rep. Mace''s question about "your experiences with a UAP" (a personal sighting); it does not address whether he has viewed evidence such as the photography and official documentation he says individuals shared with him.'
+  significance: 'House Oversight hearing, Q&A with Rep. Mace (July 26, 2023): sworn statement that Grusch has never personally seen a UAP.'
+  analysis: 'The answer responds to Rep. Mace''s question about "your experiences with a UAP" (a personal sighting); it does not address whether he has viewed evidence such as the photography and official documentation he says individuals shared with him.'
   context: Oral testimony Q&A (response to "when you reported your experiences with a UAP did any of you face any repercussions with your superiors?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -1994,7 +1998,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 44
-  significance: LANDMARK — First sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries." Primary-source attestation for the non-human-biologics claim.
+  significance: 'House Oversight hearing, Q&A with Rep. Mace (July 26, 2023): first sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries."'
+  analysis: 'LANDMARK — Primary-source attestation for the non-human-biologics claim.'
   context: Oral testimony Q&A (response to "do we have the bodies of the pilots who piloted this craft?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -2006,7 +2011,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Mace, p. 44
-  significance: LANDMARK — Sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders. Primary-source attestation for the non-human-biologics claim AND the "nonhuman" terminology preference. Note carefully relayed framing — "assessment of people with direct knowledge."
+  significance: 'House Oversight hearing, Q&A with Rep. Mace (July 26, 2023): sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders.'
+  analysis: 'LANDMARK — Primary-source attestation for the non-human-biologics claim AND the "nonhuman" terminology preference. Note carefully relayed framing — "assessment of people with direct knowledge."'
   context: Oral testimony Q&A (response to "were they human or nonhuman biologics?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   category: filed-claim
@@ -2096,7 +2102,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burchett, p. 48
-  significance: Grusch's sworn account of procedural breakdown — his information couldn't cleanly reach HASC/SASC despite Title 10 equities. Specifically flags PPD-19/ICD-120 bottleneck.
+  significance: 'House Oversight hearing, Q&A with Rep. Burchett (July 26, 2023): Grusch''s sworn account of procedural breakdown — his information couldn''t cleanly reach HASC/SASC despite Title 10 equities.'
+  analysis: 'Specifically flags PPD-19/ICD-120 bottleneck.'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -2152,7 +2159,8 @@ quotes:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: p. 49, Q&A with Rep. Luna
-  significance: Grusch points to the 1971 US-USSR nuclear-war-risk agreement, specifically Article 3 — claims it covers UAP incidents. Cites the George Washington University National Security Archive 2013 declassification. Also claims he sought specific-incident records but "got a wall of silence at the White House."
+  significance: 'House Oversight hearing, Q&A with Rep. Luna, p. 49 (July 26, 2023): Grusch points to the 1971 US-USSR nuclear-war-risk agreement, specifically Article 3, and claims it covers UAP incidents.'
+  analysis: 'Grusch cites the George Washington University National Security Archive 2013 declassification. He also claims he sought specific-incident records but "got a wall of silence at the White House."'
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
   statement_date: '2023-07-26'
@@ -2208,7 +2216,8 @@ quotes:
   source:
     path: news/thedebrief-grusch-2023.html
     location: ¶7 (Kean/Blumenthal quote attribution of Grusch)
-  significance: KEY — Grusch's published characterization of the retrieved material's origin as "non-human intelligence, whether extraterrestrial or unknown origin" with the evidentiary basis cited (vehicle morphologies, material science testing, atomic arrangements, radiological signatures). Primary-source attestation for the "nonhuman" terminology preference — this is Grusch's published terminology preference predating his sworn testimony.
+  significance: 'The Debrief, Kean & Blumenthal (June 5, 2023): Grusch''s published characterization of the retrieved material''s origin as "non-human intelligence, whether extraterrestrial or unknown origin."'
+  analysis: 'KEY — the evidentiary basis cited is vehicle morphologies, material science testing, atomic arrangements, radiological signatures. Primary-source attestation for the "nonhuman" terminology preference — this is Grusch''s published terminology preference predating his sworn testimony.'
   context: The Debrief article by Kean & Blumenthal, published 2023-06-05
   observation_type: relayed
   category: filed-claim
@@ -2232,7 +2241,8 @@ quotes:
   source:
     path: news/thedebrief-grusch-2023.html
     location: ¶15 (Kean/Blumenthal quote attribution of Grusch's DOPSR-cleared statements from April 2023)
-  significance: Shorter-form restatement of the structural-concealment claim, with "SAP/CAP programs" rendered as "secret access programs." Attributed by Kean/Blumenthal to Grusch's April 2023 DOPSR-cleared written statements. Treated as a near-verbatim paraphrase of Grusch's ¶29 quote rather than an independent statement — the specific SAP/CAP acronym in ¶29 is Grusch's, and the ¶15 rendering appears to be the Debrief's editorial simplification of the same thought. Retained to preserve the April 2023 DOPSR-cleared publication footprint.
+  significance: 'The Debrief (June 5, 2023), paraphrasing Grusch''s April 2023 DOPSR-cleared statements: shorter-form restatement of the structural-concealment claim, with "SAP/CAP programs" rendered as "secret access programs."'
+  analysis: 'Attributed by Kean/Blumenthal to Grusch''s April 2023 DOPSR-cleared written statements. Treated as a near-verbatim paraphrase of Grusch''s ¶29 quote rather than an independent statement — the specific SAP/CAP acronym in ¶29 is Grusch''s, and the ¶15 rendering appears to be the Debrief''s editorial simplification of the same thought. Retained to preserve the April 2023 DOPSR-cleared publication footprint.'
   context: DOPSR-cleared Grusch statements (April 2023), as paraphrased/shortened in The Debrief article
   observation_type: relayed
   category: filed-claim
@@ -2353,7 +2363,8 @@ quotes:
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request"
-  significance: Grusch's initial contact to AARO after sustained refusal — contradicts Kirkpatrick's public framing that Grusch "refused to speak." Documents that Grusch did reach out to discuss "conditions and admin items" for an interview.
+  significance: 'Grusch email to AARO, FOIA 24-F-0266 release (November 10, 2023): Grusch''s initial contact to AARO after sustained refusal contradicts Kirkpatrick''s public framing that Grusch "refused to speak."'
+  analysis: 'Documents that Grusch did reach out to discuss "conditions and admin items" for an interview.'
   context: Grusch-AARO correspondence, 2023-11-10
   observation_type: relayed
   statement_date: '2023-11-10'
@@ -2364,7 +2375,8 @@ quotes:
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2023-11-13 12:24 PM from David Grusch (Subject: "Re: Contact Request")'
-  significance: KEY substantive Grusch signed letter — his detailed technical objections to AARO interview terms. Names specific security frameworks (DODI 5205.11, 10 USC 119, DNI CAPCO manual Sec. 4, HCS-Operations Restricted Handling) and asks whether AARO has secured memos from CIA OS/DO for oral-history subjects, from EOP NSC Security Director, OUSD(I&S), and DOE SAPCO/SAPOC. Implies he has testimony that reaches DOE and NSC-level SAPs.
+  significance: 'Grusch reply email to AARO, FOIA 24-F-0266 release (November 13, 2023): substantive signed letter setting out his detailed technical objections to AARO interview terms.'
+  analysis: 'KEY substantive Grusch signed letter. Names specific security frameworks (DODI 5205.11, 10 USC 119, DNI CAPCO manual Sec. 4, HCS-Operations Restricted Handling) and asks whether AARO has secured memos from CIA OS/DO for oral-history subjects, from EOP NSC Security Director, OUSD(I&S), and DOE SAPCO/SAPOC. Implies he has testimony that reaches DOE and NSC-level SAPs.'
   context: Grusch-AARO correspondence, 2023-11-13 — technical objection to AARO's SAPCO-only memo coverage
   observation_type: relayed
   statement_date: '2023-11-13'
@@ -2416,7 +2428,8 @@ quotes:
     location: 'Email dated 2024-01-08 from David Grusch (Subject: "Re:
 
       Contact Request")'
-  significance: Grusch's final-in-release signed response to AARO, continuing to defer interview pending written response to his 19 Nov 23 concerns. Establishes the impasse position through January 2024.
+  significance: 'Grusch reply email to AARO, FOIA 24-F-0266 release (January 8, 2024): Grusch''s final-in-release signed response to AARO, continuing to defer interview pending written response to his 19 Nov 23 concerns.'
+  analysis: 'Establishes the impasse position through January 2024.'
   context: Grusch-AARO correspondence, 2024-01-08
   observation_type: relayed
   statement_date: '2024-01-08'
@@ -2427,7 +2440,8 @@ quotes:
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
     location: Sworn affirmation block at filing conclusion, dated 2022-05-25
-  significance: KEY — Grusch's under-penalty-of-perjury adoption of the entire PPD-19 disclosure body as his own statement. Legally binds every attorney-drafted claim in the filing to Grusch as his sworn statement. Foundational source document for all filed-claim categorization.
+  significance: 'Grusch PPD-19 filing, sworn affirmation (May 25, 2022): Grusch''s under-penalty-of-perjury adoption of the entire PPD-19 disclosure body as his own statement.'
+  analysis: 'KEY — Legally binds every attorney-drafted claim in the filing to Grusch as his sworn statement. Foundational source document for all filed-claim categorization.'
   context: Sworn affirmation, PPD-19 Disclosure of Urgent Concern(s) / Complaint of Reprisal, ICIG, dated 2022-05-25
   observation_type: relayed
   category: filed-claim
@@ -2463,7 +2477,8 @@ quotes:
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
     location: PPD-19 filing ¶5, adopted under oath by Grusch
-  significance: Sworn filed claim documenting the specific retaliation pattern — "numerous adverse security clearance actions" impugning integrity/character/judgment/professionalism/mental health. Names compartmented-access cancellation/delay/denial at multiple IC elements.
+  significance: 'Grusch PPD-19 filing ¶5 (May 25, 2022): sworn filed claim documenting the specific retaliation pattern of "numerous adverse security clearance actions" impugning integrity/character/judgment/professionalism/mental health.'
+  analysis: 'Names compartmented-access cancellation/delay/denial at multiple IC elements.'
   context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25
   observation_type: relayed
   category: filed-claim

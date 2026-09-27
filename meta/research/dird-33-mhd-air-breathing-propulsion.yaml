@@ -179,7 +179,8 @@ quotes:
   source:
     path: government/dird-33-mhd-air-breathing-propulsion-2010.pdf
     location: 'section "The Ajax Concept: MHD Bypass", opening paragraph'
-  significance: 'Documents the Soviet/Russian origin of the Ajax (Ayaks) concept at Leninetz in 1980s Leningrad — and carries a second authorship signal: one of the survey authors was special guest editor of the Journal of Propulsion and Power special section on weakly ionized gases.'
+  significance: 'DIRD #33 (November 21, 2010), "The Ajax Concept: MHD Bypass": the passage documents the Soviet/Russian origin of the Ajax (Ayaks) concept at Leninetz in 1980s Leningrad.'
+  analysis: 'It also carries a second authorship signal: one of the survey authors was special guest editor of the Journal of Propulsion and Power special section on weakly ionized gases.'
   context: 'Opening of the Ajax section; "article23" is the in-line endnote marker for the Kuranov-Korabelnikov 2008 paper, preserved verbatim.'
   claim_group: ajax-mhd-bypass-assessment
   statement_date: '2010-11-21'

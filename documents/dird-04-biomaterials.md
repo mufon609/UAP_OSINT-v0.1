@@ -713,7 +713,9 @@ The document is a review of representative biomaterials and their applications, 
 
 ---
 
-### Silicone exoneration — after reviewing years of evidence, the national Institute of Medicine found connective tissue diseases, cancer, neurological diseases and other systemic conditions no more common in women with breast implants than in women without, and Dow moved out of the medical silicone business
+### DIRD #4, Biomedical Silicones section (January 7, 2010): the national Institute of Medicine found systemic conditions no more common in women with breast implants than in women without.
+
+Silicone exoneration — the finding came after reviewing years of evidence and covered connective tissue diseases, cancer, neurological diseases and other systemic conditions; Dow moved out of the medical silicone business.
 
 > After reviewing years of evidence and research concerning silicone gel-filled breast implants, the national Institute of Medicine found that "evidence suggests diseases or conditions such as connective tissue diseases, cancer, neurological diseases or other systemic complaints or conditions are no more common in women with breast implants than in women without implants." Dow moved out of the medical silicone business and has since been replaced by an array of smaller companies offering specialized silicone products.
 
@@ -725,7 +727,9 @@ The document is a review of representative biomaterials and their applications, 
 
 ---
 
-### Biomaterial-associated infection — biomaterials can become colonized with infection-causing bacteria; some hospital microorganisms are extremely resistant to antibiotic therapy and infections cannot be fully resolved until the biomaterial is removed, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous
+### DIRD #4, Cardiovascular Biomaterials section (January 7, 2010): biomaterials can become colonized with infection-causing bacteria, and infections cannot be fully resolved until the biomaterial is removed.
+
+Biomaterial-associated infection — some hospital microorganisms are extremely resistant to antibiotic therapy, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous.
 
 > In addition to thrombus formation, biomaterials can become colonized with infection-causing bacteria. Some microorganisms found in hospitals are extremely resistant to antibiotic therapy, and infections cannot be fully resolved until the biomaterial is removed. This is particularly a problem with hip and knee implants, where there is poor blood flow near the joint and the body's immune system has limited access. Methicillin-resistant staphylococcus aureus infections are dangerous in these situations.
 
@@ -737,7 +741,9 @@ The document is a review of representative biomaterials and their applications, 
 
 ---
 
-### Summary thesis — existing implant materials are generally based on materials available for more than 20 years, and most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials
+### DIRD #4, Summary and Recommendations (January 7, 2010): existing implant materials are generally based on materials available for more than 20 years.
+
+Summary thesis — most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials.
 
 > Existing materials for implants are generally based on materials that have been available for more than 20 years. Biodegradable materials, particularly the polylactide and glycolide, have a long history of safe and effective use. Building on this solid foundation, most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications. Thus, the markets are expanding for biomaterials, and physicians can look forward to new products that will help speed patient recovery.
 

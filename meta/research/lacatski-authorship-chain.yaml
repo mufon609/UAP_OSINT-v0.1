@@ -30,7 +30,8 @@ quotes:
   source:
     path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
     location: 'top-right corner stamp'
-  significance: 'SD004 page-1 DOPSR clearance stamp content — verbatim authorization "CLEARED For Open Publication Sep 06, 2023" by the DoD Office of Prepublication and Security Review (the attestor for this row); established the document was authorized for open publication on September 6, 2023'
+  significance: 'SD004 page-1 DOPSR clearance stamp (September 6, 2023): the DoD Office of Prepublication and Security Review authorized the document for open publication.'
+  analysis: 'The stamp content is the verbatim authorization "CLEARED For Open Publication Sep 06, 2023" by DOPSR (the attestor for this row); it established the document was authorized for open publication on September 6, 2023.'
   context: 'SD004 page 1, top-right stamp imprint authorizing open publication of the contemporary Q&A content below the stamp'
   statement_date: '2023-09-06'
   attestation_tier: dopsr-cleared
@@ -43,7 +44,8 @@ quotes:
   source:
     path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
     location: 'Q&A content following DOPSR clearance stamp'
-  significance: 'SD004 page-1 Q&A content — the substantive statement that names Lockheed Martin Space Systems Vice President James Ryder as the proposer of an alleged 2011 UAP material divestment plan to AAWSAP leadership. As-published the page does not identify the author.'
+  significance: 'SD004 page 1 Q&A (September 6, 2023): the statement names Lockheed Martin Space Systems Vice President James Ryder as the proposer of an alleged 2011 UAP material divestment plan to AAWSAP leadership.'
+  analysis: 'This is the substantive statement of the SD004 page-1 Q&A content. As-published the page does not identify the author.'
   context: 'SD004 page 1, anonymous-as-published Q&A entered into the November 13, 2024 House Oversight UAP hearing record as Supplemental Document 4'
   statement_date: '2023-09-06'
   attestation_tier: dopsr-cleared
@@ -56,7 +58,8 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 5, Q1 response'
-  significance: 'Elizondo QFR Q1 names James Lacatski as the author of the SD004 page-1 statement cleared by DOPSR and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" — the authorship-identification step that closes the chain'
+  significance: 'Elizondo QFR response to Burlison, Q1 (December 19, 2024): Elizondo names James Lacatski as the author of the SD004 page-1 statement cleared by DOPSR and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)."'
+  analysis: 'This is the authorship-identification step that closes the chain.'
   context: 'Luis Elizondo Question for the Record response to Rep. Eric Burlison''s December 9, 2024 letter; Q1 response identifying the SD004 page-1 author and quoting the verbatim Lacatski text in the next paragraph'
   statement_date: '2024-12-19'
   attestation_tier: dopsr-cleared
@@ -69,7 +72,8 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 5, Q1 response indented quotation, citing Attachment 2'
-  significance: 'Elizondo''s verbatim quotation of the SD004 page-1 Lacatski text in his QFR Q1 response, presented as Attachment 2. Re-attests the Ryder-naming substantive content under Elizondo''s signature with explicit Lacatski authorship attribution — closes the authorship loop by tying the verbatim text to the named author.'
+  significance: 'Elizondo QFR response to Burlison, Q1 (December 19, 2024): Elizondo quotes the SD004 page-1 Lacatski text verbatim, presented as Attachment 2, with explicit Lacatski authorship attribution.'
+  analysis: 'Elizondo''s verbatim quotation re-attests the Ryder-naming substantive content under Elizondo''s signature — closes the authorship loop by tying the verbatim text to the named author.'
   context: 'Elizondo QFR Q1 response, indented-block quotation of Lacatski''s SD004 statement reproduced verbatim with "See Attachment 2" pointer'
   statement_date: '2024-12-19'
   attestation_tier: dopsr-cleared

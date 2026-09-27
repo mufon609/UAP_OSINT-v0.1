@@ -11,6 +11,7 @@ set; canonical / original media omit the section entirely.
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
+    _render_passage_head,
     _escape_table_cell,
     _render_attribution_block,
     _source_path,
@@ -173,7 +174,8 @@ def render_media_key_passages(artifact):
     """Key Passages on media — verbatim speech or visible text. Uses
     the shared `_render_attribution_block` so the flexible source.location
     (timestamp / timestamp+coordinate / spatial-only) flows through.
-    H3 per quote using `significance`. May be empty when the source has
+    H3 per quote using `significance`, then any `analysis` paragraph
+    (``_render_passage_head``). May be empty when the source has
     no extractable speech or visible text."""
     quotes = sort_by_id([
         q for q in (artifact.get("quotes") or []) if isinstance(q, dict)
@@ -188,9 +190,8 @@ def render_media_key_passages(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))

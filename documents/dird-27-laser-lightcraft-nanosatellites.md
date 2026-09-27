@@ -97,7 +97,9 @@ On cost, the system would reduce space launch costs by two to three orders of ma
 
 ---
 
-### Demonstrated experimental basis — the WSMR/HELSTF free-flight tests using the U.S. Army's 10 kW PLVTS infrared CO2 laser, cited as proof of feasibility. "CO2" preserved verbatim (no subscript in this passage of the source).
+### DIRD #27, Chapter 2 (November 1, 2010): the WSMR/HELSTF free-flight tests using the U.S. Army's 10 kW PLVTS infrared CO2 laser are cited as proof of feasibility.
+
+This is the demonstrated experimental basis. "CO2" preserved verbatim (no subscript in this passage of the source).
 
 > Successful tests at the White Sands Missile Range (WSMR) High Energy Laser Systems Test Facility (HELSTF) demonstrated the first passively controlled vertical free flight of an object that was propelled by the U.S. Army's 10 kW Pulsed Laser Vulnerability Test System (PLVTS) infrared CO2 laser.
 
@@ -169,7 +171,9 @@ On cost, the system would reduce space launch costs by two to three orders of ma
 
 ---
 
-### Names the specific near-term laser system — TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas-mixture laser — identified as deployable now. "CO₂" preserved verbatim (subscript form as in the sibling).
+### DIRD #27, Chapter 5 (November 1, 2010): TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas-mixture laser is identified as deployable now.
+
+The passage names the specific near-term laser system. "CO₂" preserved verbatim (subscript form as in the sibling).
 
 > TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas mixture laser is a multi-megawatt-class system that can be implemented now because this technology requires little or no additional R&D.
 
@@ -181,7 +185,9 @@ On cost, the system would reduce space launch costs by two to three orders of ma
 
 ---
 
-### First-person closing recommendation ("This author recommends") — to restart the Air Force X-50LR Lightcraft demonstration program in collaboration with NASA — the only place the redacted author (extrinsically Dr. E. Davis) speaks in his own voice; credits the original X-50LR proposal to Dr. Frank Mead.
+### DIRD #27, Chapter 5 (November 1, 2010): the author's first-person closing recommendation is to restart the Air Force X-50LR Lightcraft demonstration program in collaboration with NASA.
+
+The quote's "This author recommends" is the only place the redacted author (extrinsically Dr. E. Davis) speaks in his own voice; the recommendation credits the original X-50LR proposal to Dr. Frank Mead.
 
 > This author recommends that the Department of Defense, in collaboration with NASA, return laser Lightcraft propulsion R&D to the United States and restart the space launch test flight demonstration program of the Air Force X-50LR Lightcraft, which was originally proposed by Dr. Frank Mead [34].
 

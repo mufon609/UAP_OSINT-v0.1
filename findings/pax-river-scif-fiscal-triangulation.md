@@ -47,7 +47,9 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 
 ---
 
-### The funding sentence from Elizondo's QFR Q7 as quoted verbatim by Liberation Times. The same sentence in the QFR PDF crosses a page break (p. 6 to p. 7) and the pdftotext extract embeds a "3" page-number artifact mid-sentence; Liberation Times reproduces the sentence intact. Attests "approximately $10 million" and Hoyer as requesting Representative — the two fiscal-data fields that triangulate against Hoyer's 2010 press release fourteen years earlier.
+### Liberation Times (March 6, 2026), quoting Elizondo's QFR Q7 verbatim: the funding sentence attests "approximately $10 million" and Hoyer as requesting Representative.
+
+This is the funding sentence from Elizondo's QFR Q7 as quoted verbatim by Liberation Times. The same sentence in the QFR PDF crosses a page break (p. 6 to p. 7) and the pdftotext extract embeds a "3" page-number artifact mid-sentence; Liberation Times reproduces the sentence intact. These are the two fiscal-data fields that triangulate against Hoyer's 2010 press release fourteen years earlier.
 
 > I was informed that funding for the hangar, approximately $10 million, was allocated at the request of then-Representative Steny Hoyer.
 
@@ -89,7 +91,9 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 
 ---
 
-### Lacatski's first-person attestation that he personally visited the Pax River facility while it was just built — fourth independent primary source on the structure, distinct from the Hoyer fiscal record, Elizondo's post-hoc QFR description, and the Burlison / Liberation Times 2026 visit reporting. Lacatski ran AAWSAP at DIA until December 2010 (WEAPONIZED EP 38); the visit itself is undated, and was not attested in this finding before the 2026-04-08 EP 114 disclosure.
+### WEAPONIZED EP 114 (April 8, 2026): in a first-person attestation, Lacatski says he personally visited the Pax River facility while it was just built.
+
+Lacatski's attestation is the fourth independent primary source on the structure, distinct from the Hoyer fiscal record, Elizondo's post-hoc QFR description, and the Burlison / Liberation Times 2026 visit reporting. Lacatski ran AAWSAP at DIA until December 2010 (WEAPONIZED EP 38); the visit itself is undated, and was not attested in this finding before the 2026-04-08 EP 114 disclosure.
 
 > [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough.
 

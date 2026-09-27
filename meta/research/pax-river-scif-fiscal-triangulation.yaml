@@ -58,7 +58,8 @@ quotes:
   source:
     path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
     location: ¶ Elizondo written-testimony quotation
-  significance: 'The funding sentence from Elizondo''s QFR Q7 as quoted verbatim by Liberation Times. The same sentence in the QFR PDF crosses a page break (p. 6 to p. 7) and the pdftotext extract embeds a "3" page-number artifact mid-sentence; Liberation Times reproduces the sentence intact. Attests "approximately $10 million" and Hoyer as requesting Representative — the two fiscal-data fields that triangulate against Hoyer''s 2010 press release fourteen years earlier.'
+  significance: 'Liberation Times (March 6, 2026), quoting Elizondo''s QFR Q7 verbatim: the funding sentence attests "approximately $10 million" and Hoyer as requesting Representative.'
+  analysis: 'This is the funding sentence from Elizondo''s QFR Q7 as quoted verbatim by Liberation Times. The same sentence in the QFR PDF crosses a page break (p. 6 to p. 7) and the pdftotext extract embeds a "3" page-number artifact mid-sentence; Liberation Times reproduces the sentence intact. These are the two fiscal-data fields that triangulate against Hoyer''s 2010 press release fourteen years earlier.'
   context: 'Christopher Sharp, Liberation Times, March 6, 2026 quoting Elizondo''s December 19, 2024 Question for the Record response verbatim; Sharp''s lead-in: "Elizondo wrote that the hangar had been allocated at the request of then-Representative Steny Hoyer, who represented Maryland''s 5th congressional district"'
   statement_date: '2026-03-06'
   attestation_tier: secondary-source
@@ -97,7 +98,8 @@ quotes:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[33:51]–[34:05]'
-  significance: 'Lacatski''s first-person attestation that he personally visited the Pax River facility while it was just built — fourth independent primary source on the structure, distinct from the Hoyer fiscal record, Elizondo''s post-hoc QFR description, and the Burlison / Liberation Times 2026 visit reporting. Lacatski ran AAWSAP at DIA until December 2010 (WEAPONIZED EP 38); the visit itself is undated, and was not attested in this finding before the 2026-04-08 EP 114 disclosure.'
+  significance: 'WEAPONIZED EP 114 (April 8, 2026): in a first-person attestation, Lacatski says he personally visited the Pax River facility while it was just built.'
+  analysis: 'Lacatski''s attestation is the fourth independent primary source on the structure, distinct from the Hoyer fiscal record, Elizondo''s post-hoc QFR description, and the Burlison / Liberation Times 2026 visit reporting. Lacatski ran AAWSAP at DIA until December 2010 (WEAPONIZED EP 38); the visit itself is undated, and was not attested in this finding before the 2026-04-08 EP 114 disclosure.'
   context: 'Lacatski ([`/people/james-lacatski`]) on WEAPONIZED EP 114 ([`/transcripts/weaponized-114-lacatski-future-visions-2026`]), 2026-04-08; responding to Corbell question about Pax River. Lacatski further says the structure "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?"'
   statement_date: '2026-04-08'
   attestation_tier: on-record

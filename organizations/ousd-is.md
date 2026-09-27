@@ -456,7 +456,9 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
-### NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities). DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie.
+### IPMO 101 slides, NSI 23-S-3438 (October 2023): slide 3 lists IPMO Core Efforts across four divisions: Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities.
+
+This is direct primary-source attestation of the four-division mission scope. DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie.
 
 > • Integrated Influence: Develop and promulgate tailored thematic influence guidance focused on key adversaries and specific U.S. defense issues
 > • Perception Management: Develop and execute policy, oversight, and governance related to DoD perception management (reveal/conceal of defense capabilities) programs and activities
@@ -759,7 +761,9 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
-### OUSD(I&S) Directors missions page (September 10, 2025 capture): the portfolio of the Director for War Intelligence for Operational Support & International Partnerships (OSIP) is to lead, oversee, and integrate DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.
+### OUSD(I&S) Directors missions page (September 10, 2025 capture): the portfolio of the OSIP Director for War Intelligence is to lead, oversee, and integrate DISE support and equities.
+
+The Director for War Intelligence for Operational Support & International Partnerships (OSIP) portfolio covers DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.
 
 > Operational Support & International Partnership (OSIP). The Director for War Intelligence for Operational Support & International Partnerships’ (OSIP) portfolio is to lead, oversee, and integrate DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.
 

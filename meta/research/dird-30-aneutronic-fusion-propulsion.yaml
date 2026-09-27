@@ -31,7 +31,8 @@ quotes:
   source:
     path: government/dird-30-aneutronic-fusion-propulsion-2010.pdf
     location: 'Administrative Notes'
-  significance: 'Provenance statement placing the document as a FY2010 AAWSA Program advanced technology report under DIA — the institutional sponsorship anchor. The face spells the program "(AAWSA) Program" (no trailing "P"); the (b)(3):10 USC 424 redaction is preserved verbatim.'
+  significance: 'DIRD #30 (November 1, 2010), Administrative Notes: the provenance statement places the document as a FY2010 AAWSA Program advanced technology report under DIA.'
+  analysis: 'Provenance statement placing the document as a FY2010 AAWSA Program advanced technology report under DIA — the institutional sponsorship anchor. The face spells the program "(AAWSA) Program" (no trailing "P"); the (b)(3):10 USC 424 redaction is preserved verbatim.'
   context: 'Administrative Notes block on the title-verso (printed folio i) page.'
   statement_date: '2010-11-01'
   claim_group: aawsa-program-provenance

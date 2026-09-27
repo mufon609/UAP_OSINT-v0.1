@@ -86,7 +86,8 @@ quotes:
   source:
     path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
     location: 'Chapter 2, "History of the Lightcraft Technology Demonstration Program"'
-  significance: Demonstrated experimental basis — the WSMR/HELSTF free-flight tests using the U.S. Army's 10 kW PLVTS infrared CO2 laser, cited as proof of feasibility. "CO2" preserved verbatim (no subscript in this passage of the source).
+  significance: 'DIRD #27, Chapter 2 (November 1, 2010): the WSMR/HELSTF free-flight tests using the U.S. Army''s 10 kW PLVTS infrared CO2 laser are cited as proof of feasibility.'
+  analysis: 'This is the demonstrated experimental basis. "CO2" preserved verbatim (no subscript in this passage of the source).'
   statement_date: '2010-11-01'
 - id: q7
   added_date: '2026-06-07'
@@ -146,7 +147,8 @@ quotes:
   source:
     path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
     location: 'Chapter 5: Conclusion'
-  significance: Names the specific near-term laser system — TEXTRON Systems Corporation's proposed 10 MW electron gun-driven CO₂/gas-mixture laser — identified as deployable now. "CO₂" preserved verbatim (subscript form as in the sibling).
+  significance: 'DIRD #27, Chapter 5 (November 1, 2010): TEXTRON Systems Corporation''s proposed 10 MW electron gun-driven CO₂/gas-mixture laser is identified as deployable now.'
+  analysis: 'The passage names the specific near-term laser system. "CO₂" preserved verbatim (subscript form as in the sibling).'
   statement_date: '2010-11-01'
 - id: q13
   added_date: '2026-06-07'
@@ -155,7 +157,8 @@ quotes:
   source:
     path: government/dird-27-laser-lightcraft-nanosatellites-2010.pdf
     location: 'Chapter 5: Conclusion, closing paragraph'
-  significance: First-person closing recommendation ("This author recommends") — to restart the Air Force X-50LR Lightcraft demonstration program in collaboration with NASA — the only place the redacted author (extrinsically Dr. E. Davis) speaks in his own voice; credits the original X-50LR proposal to Dr. Frank Mead.
+  significance: 'DIRD #27, Chapter 5 (November 1, 2010): the author''s first-person closing recommendation is to restart the Air Force X-50LR Lightcraft demonstration program in collaboration with NASA.'
+  analysis: 'The quote''s "This author recommends" is the only place the redacted author (extrinsically Dr. E. Davis) speaks in his own voice; the recommendation credits the original X-50LR proposal to Dr. Frank Mead.'
   statement_date: '2010-11-01'
 naming_quirks:
 - id: nq1

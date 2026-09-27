@@ -11,6 +11,7 @@ import sys
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
+    _render_passage_head,
     _format_period,
     _render_attribution_block,
     _wrap_path,
@@ -240,8 +241,9 @@ def render_org_key_personnel(artifact):
 
 def render_org_key_passages(artifact):
     """Key Passages section — verbatim excerpts from primary sources
-    ABOUT the organization. Each passage: H3 (significance) + block-
-    quote + per-quote verification block. Uses the same shape as
+    ABOUT the organization. Each passage: H3 (significance) + optional
+    analysis paragraph + blockquote + per-quote verification block
+    (``_render_passage_head``). Uses the same shape as
     transcript Key Passages — per-quote source attribution so orgs
     can draw from multiple primary sources. Sorted by statement_date
     when set; falls through to id-order."""
@@ -254,9 +256,8 @@ def render_org_key_passages(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))

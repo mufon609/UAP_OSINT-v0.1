@@ -42,7 +42,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ## Key Passages
 
-### Lucis Trust moderator opens the talk by stating its topic verbatim — "fairies, devas, and unidentified aerial phenomena" — and pointedly contrasting the speaker's available framings ("a Druid from Glastonbury or a Lockheed guy"). Establishes Ryder's Lockheed Martin Space Systems VP institutional identity as the talk's framing from second 15; the talk is a venue where a Lockheed-credentialled physicist speaks publicly on UAP through theosophical lenses.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): the moderator opens by stating the topic as "fairies, devas, and unidentified aerial phenomena" and introducing Ryder as "a Lockheed guy."
+
+The Lucis Trust moderator opens the talk by stating its topic verbatim and pointedly contrasting the speaker's available framings ("a Druid from Glastonbury or a Lockheed guy"). Establishes Ryder's Lockheed Martin Space Systems VP institutional identity as the talk's framing from second 15; the talk is a venue where a Lockheed-credentialled physicist speaks publicly on UAP through theosophical lenses.
 
 > [00:00] Right, so, we're very pleased to have with us somebody to talk about fairies, devas, and unidentified aerial phenomena. We had to go for either a Druid from Glastonbury or a Lockheed guy. And we've gone for the latter.
 
@@ -55,7 +57,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### The moderator establishes the talk's theosophical framework — "the dissipation of the etheric veils, and astral phenomena and etheric phenomena is becoming more and more prevalent" — explicitly Alice Bailey / Ageless Wisdom terminology. Ryder is named as preferring "dissipation" over "rending" as the descriptor of what is happening to the veils between physical and subtle planes.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): the moderator frames the talk's theosophical premise as "the dissipation of the etheric veils," naming Ryder as preferring "dissipation" over "rending."
+
+The moderator establishes the talk's theosophical framework — "the dissipation of the etheric veils, and astral phenomena and etheric phenomena is becoming more and more prevalent" — explicitly Alice Bailey / Ageless Wisdom terminology. Ryder is named as preferring "dissipation" over "rending" as the descriptor of what is happening to the veils between physical and subtle planes.
 
 > [03:26] So, to start off with, we want to go into the fact that as the veils are now starting to be rendered or dissipated, I think you prefer that term, don't you, the dissipation of the etheric veils, and astral phenomena and etheric phenomena is becoming more and more prevalent, and of course, with the aid of current technology, we're starting to capture some of this.
 
@@ -68,7 +72,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder distinguishes UFO from UAP terminology and explains his preference for UAP — "I feel like we've already made the question before we actually ask the question." Notable for Ryder using "UAP" terminology in June 2017 — predating mainstream public adoption of the Pentagon-coined term (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder distinguishes UFO from UAP terminology and explains his preference for UAP.
+
+In his words: "I feel like we've already made the question before we actually ask the question." Notable for Ryder using "UAP" terminology in June 2017 — predating mainstream public adoption of the Pentagon-coined term (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.
 
 > [05:47] And what I mean by that, from apparitions to what people call fairies, to angels, the little people, the violin, and so forth, and now, of course, we have the traditional term almost of UFOs. I use UAPs because a UFO is an unexplained flying object. But a UAP is unexplained aerial phenomena. And they're definitely aerial in that we see them above the ground. And they're phenomena because, hm, what's that? But I don't like UFOs so much. Because it assumes that they're manned by some creatures from a different planet or star. So I feel like we've already made the question before we actually ask the question.
 
@@ -81,7 +87,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder explicates the talk title — "rending means to disintegrate that veil of separation" — and frames the central question as whether the veil between "devas and fairies and mankind" is dissipating in the contemporary period. The veil-between-planes framework is core Alice Bailey terminology operationalised on UAP discourse. "Vail" is Ryder's own spelling pronunciation captured by whisper.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder explicates the talk title: "rending means to disintegrate that veil of separation."
+
+Ryder frames the central question as whether the veil between "devas and fairies and mankind" is dissipating in the contemporary period. The veil-between-planes framework is core Alice Bailey terminology operationalised on UAP discourse. "Vail" is Ryder's own spelling pronunciation captured by whisper.
 
 > [06:50] But Vail, if you look it up in a good dictionary, is a deceptive appearance. Or a masking layer. If you think about much that's been talked about the last two days, you can most certainly think of that. It's related to the word cloak. A cloak is an encompassing veil to exclude interruption or interference between levels of energy. And rending means to disintegrate that veil of separation. And a question, of course, in history, and especially now, as we search the sciences and what they're learning, are we in fact seeing the disintegration of that? And is that veil between what we call devas and fairies and mankind separating to be more clear?
 
@@ -94,7 +102,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder's prehistoric-cave-art-as-UAP-record claim — Chauvet and Dordogne cave paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder's prehistoric-cave-art-as-UAP-record claim, that Chauvet and Dordogne cave paintings show "your first UFO 42,000 years ago."
+
+Ryder claims the Chauvet and Dordogne cave paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.
 
 > [11:01] In the lower, the top there, there are lots of beings. I don't know what to call them. I can't call them humans. There's lots of beings, things, look like alive. They have eyes and noses. They sure look like some of the space people you see in UFOs sometimes. You'll see more of those. And below that, there are all these drawings, and if you're a UFO enthusiast of that type, there's your first UFO 42,000 years ago. Lights and all.
 
@@ -107,7 +117,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### The moderator Lawrence's explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. Lawrence advances the theory and turns to Ryder to judge it ("Shall I throw that theory away?"); Ryder endorses it ("No, you won't throw that theory away").
+### Lucis Trust Rending of the Veils talk (June 10, 2017): the moderator Lawrence advances a devic-causation framing of crop circles and Ryder endorses it ("No, you won't throw that theory away").
+
+Lawrence's explicit devic-causation framing of crop circles: "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. Lawrence advances the theory and turns to Ryder to judge it ("Shall I throw that theory away?").
 
 > [35:55] So when we actually look at fractal patterns, which are very common in nature, then you would expect the same electrical occurrences to follow the same kind of geometry in nature as, for instance, the snowflake, which is beautifully geometrical. And remembering that earlier, as we discussed that electricity is alive, that still makes it a very exciting prospect because we see the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity. But on the whole, because they have an inherent geometrical pattern, they are building divas and carry within them the geometrical pattern for the part of the plan that they're working with under various guiding forces. As they pass through the Earth and have effects on the physical plane, they are electrical in nature, so they are going to cause burning patterns, perhaps.
 
@@ -120,7 +132,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### The most explicit Alice Bailey reference in the talk — "the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." Both "violet devas" and "reappearance of the Christ" are specific Bailey categories (Bailey 1948 "The Reappearance of the Christ"). Ryder's prior off-talk attestation of "violet orbs" with "internal spinning motion" is invoked by the moderator and tied to a Bailey eschatological framework on tape.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): the moderator ties Ryder's prior attestation of "violet orbs" to "the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ."
+
+This is the most explicit Alice Bailey reference in the talk. Both "violet devas" and "reappearance of the Christ" are specific Bailey categories (Bailey 1948 "The Reappearance of the Christ"). Ryder's prior off-talk attestation of "violet orbs" with "internal spinning motion" is invoked by the moderator and tied to a Bailey eschatological framework on tape.
 
 > [39:18] You also mentioned to me in the past about violet orbs, and that they had an internal spinning motion, which I think is particularly interesting in light of the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ.
 
@@ -133,7 +147,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder's most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever's happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times."
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder claims abductions occur under continuous camera surveillance in locked rooms with no detected physical movement.
+
+This is Ryder's most direct non-physical-phenomenon claim: "Whatever's happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times."
 
 > [50:00] Interestingly enough, people who have been moved out of their rooms and flown out the window, women who've gone through that, have actually been investigated in sealed rooms where they go to bed and sleep and the room is locked from the outside. There are no windows in it. There are no doors in it. And they have cameras on them all the time. And those people do experience what I just described while in the room and the cameras and all of the sound pickups show nothing happened in the room except she snored or he snored that night. So whatever's happening is not happening physically. And it's also been shown that those same descriptions go back 25 to 30,000 years, certainly back to Roman times.
 
@@ -146,7 +162,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder's explicit Vallée Magonia framing — names Jacques Vallée as "one of the great explorers in this field" and summarises his thesis on record: "the UFOs are not objects nor flying ... they appear." Establishes Ryder's ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The off-record-feeling "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" sentence is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder names Jacques Vallée as "one of the great explorers in this field" and summarises his thesis: "the UFOs are not objects nor flying ... they appear."
+
+This is Ryder's explicit Vallée Magonia framing, summarised on record. Establishes Ryder's ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The off-record-feeling "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" sentence is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.
 
 > [50:46] In fact, if I could summarize on UFOs a few comments that one of the great explorers in this field is Jacques Vallee, who is actually an American. He's actually an astrophysicist and he studied this for a long time. And some of the senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets. And as he summarized, the UFOs are not objects nor flying. It's an unidentified flying object. But they're not an object and it's not flying because an object is something that I can hit. You know, the light beam is not an object. But you can't do that. And they're not flying because you never actually see them flying. They appear. So you go, you have a... That's why I use UAPs. It's an aerial, it's a phenomena, and it's unexplained. But it isn't flying and it's not an object.
 
@@ -159,7 +177,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### A mixed exchange on a Russian/American-jets UAP encounter — the moderator raises it as an incident "perhaps classified... which is now released," and Ryder elaborates ("what he's referring to, there is an incident... where the US fighters and the Russian fighters chased after the same object... there have been many, many chases of these objects, which when you get close, they're just not there"). The "I wouldn't say it was or wasn't" non-denial on the classification sits at the speaker boundary and is not resolvable from the label-less transcript — the passage is attributed to both. Establishes the UAP behavioural signature (objects "just not there" on close approach) on record.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): a mixed moderator–Ryder exchange on a Russian/American-jets UAP encounter describes objects that, "when you get close, they're just not there."
+
+The moderator raises it as an incident "perhaps classified... which is now released," and Ryder elaborates ("what he's referring to, there is an incident... where the US fighters and the Russian fighters chased after the same object... there have been many, many chases of these objects, which when you get close, they're just not there"). The "I wouldn't say it was or wasn't" non-denial on the classification sits at the speaker boundary and is not resolvable from the label-less transcript — the passage is attributed to both. Establishes the UAP behavioural signature (objects "just not there" on close approach) on record.
 
 > [53:28] Another example is Russian and American jets scrambling to the air, chasing objects on what was perhaps classified information, which is now released. It was classified. I wouldn't say it was or wasn't. But the very aerial dynamics that they displayed was not really possible within our... It is not. What he's referring to, there is an incident some years ago where the US fighters and the Russian fighters chased after the same object from different directions. And when they got close by, it wasn't there except the other plane showed up, which was not a good day. Unfortunately, nobody was hurt. There have been many, many chases of these objects, which when you get close, they're just not there.
 
@@ -172,7 +192,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### A mixed exchange — the moderator asks whether the upper-atmosphere sprites and dwarves discovered by fighter pilots are recent ("the widening of the rents") or perennial, offering the duality "clearly DIVA activity. Or EM, if you're a hard-nosed physicist"; Ryder answers "Well, same difference, yeah" and continues ("what Lauren's asking is..."). Frames the equivalence of theosophical and electromagnetic readings of the same phenomena — the talk's core ontological move — with Ryder affirming "same difference" rather than choosing one frame over the other.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): in a mixed exchange, the moderator offers DIVA activity or EM as readings of upper-atmosphere sprites, and Ryder answers "Well, same difference, yeah."
+
+The moderator asks whether the upper-atmosphere sprites and dwarves discovered by fighter pilots are recent ("the widening of the rents") or perennial, offering the duality "clearly DIVA activity. Or EM, if you're a hard-nosed physicist"; Ryder continues ("what Lauren's asking is..."). Frames the equivalence of theosophical and electromagnetic readings of the same phenomena — the talk's core ontological move — with Ryder affirming "same difference" rather than choosing one frame over the other.
 
 > [54:21] Well, anyway, they've started to discover these sprites and dwarves and flashes of light above thunderstorms from fighter pilots. Do you think that's a recent phenomena that's happening because of the widening of the rents or do you think it's always happened? I mean, it's clearly DIVA activity. Or EM, if you're a hard-nosed physicist. Well, same difference, yeah.
 
@@ -185,7 +207,9 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### The closing synthesis — Ryder bridges ancient deva and fairy iconography (narrow eyes, slightly angled, narrow chin; 30,000-40,000 years old + Roman times) with modern Graham Hancock-style ayahuasca-induced visions in South America and contemporary "grey alien" archetypes. The Vallée Magonia thesis applied to the canonical grey-alien iconography. Closing question — "what are we really dealing with when we see these kinds of things?" — is the talk's thesis question.
+### Lucis Trust Rending of the Veils talk (June 10, 2017): Ryder's closing synthesis bridges ancient deva and fairy iconography with Hancock-style ayahuasca visions and contemporary "grey alien" archetypes.
+
+The ancient deva and fairy iconography has narrow eyes, slightly angled, and a narrow chin, 30,000-40,000 years old + Roman times; the visions are modern Graham Hancock-style ayahuasca-induced visions in South America. The Vallée Magonia thesis applied to the canonical grey-alien iconography. Closing question — "what are we really dealing with when we see these kinds of things?" — is the talk's thesis question.
 
 > [60:00] The top one is a drawing by a person who specializes in drawing pictures of devas and fairies. And he studied the history of it and realized they're always drawn with narrow eyes, slightly angled, and a narrow chin. And that goes back 30,000, 40,000 years in the Roman times and so forth. And this is a drawing by a person who went through Dr. Hancock, a drug-induced dream with the South American peoples, to see devas. And to his shock, this is what he saw. And he says, excuse my penmanship, I'm not an artist. But he drew the same thing. And this one is from another artist who has spent their life studying the devas. And this is what they see, that same kind of shape. So it's certainly bringing up the question, what are we really dealing with when we see these kinds of things?
 

@@ -33,7 +33,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ## Key Passages
 
-### Opening of Elizondo's response letter — establishes the document as Elizondo's response to the November 13, 2024 hearing QFR posed by Rep. Eric Burlison on December 9, 2024. UNCLASSIFIED-level responses; Attachment 1 is the eleven-question response.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): the opening establishes the document as Elizondo's response to the November 13, 2024 hearing QFR posed by Rep. Eric Burlison on December 9, 2024.
+
+Opening of Elizondo's response letter. UNCLASSIFIED-level responses; Attachment 1 is the eleven-question response.
 
 > SUBJECT: Responses to Questions for the Record at the Hearing “Unidentified Anomalous Phenomena: “Exposing the Truth”
 >
@@ -49,7 +51,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 — Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors. Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues on p. 5.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in Q1, Elizondo confirms recovered non-human-origin material is held by U.S. government or defense contractors.
+
+Frames his AATIP role and attests AATIP/AAWSAP engaged senior aerospace-company executives who claimed recovered "exotic material" not made by any U.S. or foreign source. The response continues on p. 5.
 
 > 1. Question: “Does any branch of the United States government, or defense contractors (aerospace and otherwise), possess technology derived from a non-human source?”
 >
@@ -63,7 +67,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): the Q1 continuation says the senior aerospace-company executives initially agreed to allow AATIP/AAWSAP to take custody of the material.
+
+Q1 response continuation: the senior aerospace-company executives who claimed recovered "exotic material" initially agreed to allow AATIP/AAWSAP to take custody of the material. Split at the p. 4 / p. 5 page boundary per the page-spanning-quote convention; the custody-agreement clause is the load-bearing half for the initial-transfer narrative.
 
 > indicated that they could no longer glean additional insight from such material, they initially agreed to allow AATIP/AAWSAP to take custody of the material.
 
@@ -75,7 +81,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): the Q1 response names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement.
+
+The Q1 response quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.
 
 > Confirmation of this may be inferred from an official DoD Office of Prepublication and Security Review (“DOPSR”) document, dated September 6, 2023. This document authorized the release of a statement by Dr. James Lacatski, the former Director of the Advanced Aerospace Weapon System Application Program (“AAWSAP”). The statement, marked ‘Cleared for Open Publication,’ reads in part:
 >
@@ -89,7 +97,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q4 (a) — Elizondo confirms awareness of "several incidents" where U.S. military and Defense Contract companies recovered craft/vehicles of non-human origin, including biological specimens recovered from such crashes. The strongest single statement on the craft-and-biologics record in this QFR; Elizondo's sworn response to a written congressional question.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in Q4 (a), Elizondo confirms awareness of "several incidents" where U.S. military and Defense Contract companies recovered craft/vehicles of non-human origin.
+
+The recovered craft/vehicles of non-human origin reported are described as including biological specimens recovered from such crashes. The strongest single statement on the craft-and-biologics record in this QFR; Elizondo's sworn response to a written congressional question.
 
 > 4. Question: “Are you aware of any evidence or indication that the United States military, or defense contractors, have recovered craft of non-human origin?”
 >
@@ -107,7 +117,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q4 closing paragraph — Elizondo attests a ~2004 White House-sponsored conversation involving AAWSAP and AATIP scientists deliberating whether the U.S. public was prepared for UAP acknowledgement. The decision was reportedly made — after ~one week — not to disclose. Single-source attestation of a 2004-era pre-disclosure deliberation by White House-sponsored UAP scientists.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in single-source attestation, Elizondo describes a ~2004 White House-sponsored conversation of AAWSAP and AATIP scientists that reportedly decided not to disclose UAP.
+
+Q4 closing paragraph — Elizondo attests a ~2004 White House-sponsored conversation involving AAWSAP and AATIP scientists deliberating whether the U.S. public was prepared for UAP acknowledgement. The decision was reportedly made — after ~one week — not to disclose. Single-source attestation of a 2004-era pre-disclosure deliberation by White House-sponsored UAP scientists.
 
 > Several key scientists associated with both AAWSAP and AATIP were part of a conversation, sponsored by the White House in approximately 2004, to determine if the U.S. public was prepared for the acknowledgement of UAP by the U.S. Government. After approximately one week of deliberations, the decision was made that the U.S. Government should not disclose any UAP-related information to the public.
 
@@ -119,7 +131,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested is "opposed the transfer".
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in Q6, Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace.
+
+The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested is "opposed the transfer".
 
 > 6. Question: “Are you aware of the recent claim made by journalist Christopher Sharp regarding Bigelow Aerospace, Lockheed Martin, and the CIA allegedly blocking the transfer of materials of advanced, non-human origin?
 >
@@ -133,7 +147,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues across the p. 6 / p. 7 break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is not quoted here.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in Q7, Elizondo names the Patuxent River SAP-F hangar, purpose-built to meet Special Access Program Facility requirements at any classification level.
+
+Elizondo names the Patuxent River SAP-F hangar specifically. The Q7 response continues across the p. 6 / p. 7 break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is not quoted here.
 
 > Response: Yes. I can confirm that specific facilities were identified to enable Bigelow Aerospace to acquire and securely store recovered UAP materials as the new custodian, following their transfer from Lockheed Martin. These facilities included locations in the Las Vegas area and a newly built hangar at the Patuxent River Naval Air Station (“PAX”). Specifically, the PAX River hangar was designed to facilitate the transfer of future materials via air and river. The hangar was purpose-built to meet the requirements of a Special Access Program Facility (“SAP-F”) and was capable of accommodating materials at any classification level.
 
@@ -145,7 +161,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q9 — Elizondo confirms CIA passive resistance and U.S. Air Force ([`/organizations/us-air-force`]) active suppression campaigns against UAP inquiries during his AATIP tenure. Narrows the institutional opposition the Lockheed-to-Bigelow transfer encountered (Q6) to two specific agencies and characterizes each: CIA passive, Air Force active.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024), Q9: Elizondo confirms CIA passive resistance and U.S. Air Force ([`/organizations/us-air-force`]) active suppression campaigns against UAP inquiries during his AATIP tenure.
+
+Narrows the institutional opposition the Lockheed-to-Bigelow transfer encountered (Q6) to two specific agencies and characterizes each: CIA passive, Air Force active.
 
 > 9. Question: “Were you aware of any efforts by the CIA to block the transfer of UAP-related materials or information during tenure at AATIP?
 >
@@ -159,7 +177,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q10 opening — Elizondo's sworn attestation of retaliation against UAP-transparency advocates: security-clearance suspension/revocation efforts, direct threats to safety and to family safety, "administrative terrorism" framing. Establishes on-the-record context for the broader institutional resistance pattern Elizondo and others have described.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): the Q10 opening is Elizondo's sworn attestation of retaliation against UAP-transparency advocates, framed as "administrative terrorism."
+
+The attested retaliation includes security-clearance suspension/revocation efforts, direct threats to safety and to family safety, and the "administrative terrorism" framing. Establishes on-the-record context for the broader institutional resistance pattern Elizondo and others have described.
 
 > Response: Yes. Many of my former colleagues and I have faced retaliation for our public advocacy for UAP transparency. This has included efforts to suspend or revoke our security clearances, as well as direct threats to our safety and that of our families. Some elements within the DoD and the Intelligence Community (“IC”) have engaged in what can only be described as 'administrative terrorism' to deter individuals with security clearances from raising this issue.
 
@@ -171,7 +191,9 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q11 — Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in Q1 / Q7 names the program as the destination context but not as the funding source for the transfer itself.
+### Elizondo QFR response to Rep. Burlison (December 19, 2024): in Q11, Elizondo states the $22M AAWSAP/AATIP funding went to programmatic needs and that thirty-seven academic studies were published as DIRDs.
+
+Elizondo states the $22M AAWSAP/AATIP funding was directed to programmatic needs: academic studies on advanced physics concepts, civilian personnel and contractors, field research. Thirty-seven academic studies were published as Defense Intelligence Reference Documents (DIRDs). Distinguishes the $22M programmatic envelope from any earmark for the alleged Lockheed-to-Bigelow transfer; the transfer narrative in Q1 / Q7 names the program as the destination context but not as the funding source for the transfer itself.
 
 > Response: The $22 million dollars that funded AAWSAP/AATIP was directed to a variety of programmatic needs, including commissioning academic studies on advanced physics concepts, funding civilian personnel and contractors, and conducting field research. As a result, thirty-seven of these academic studies were published as Defense Intelligence Agency Defense Intelligence Reference Documents (“DIRDs”). See Attachment 3 for a complete list of published DIRDs.
 

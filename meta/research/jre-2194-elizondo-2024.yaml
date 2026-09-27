@@ -265,7 +265,8 @@ quotes:
   source:
     path: transcripts/jre-2194-elizondo-2024-downloaded.md
     location: '[55:50]'
-  significance: 'Elizondo''s on-record claim that "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans" — the same exotic-materials point he places on the public record in his sworn QFR responses ([`/documents/elizondo-qfr-burlison-20241219`]).'
+  significance: 'Joe Rogan Experience #2194 (August 23, 2024): Elizondo''s on-record claim that "there is very compelling evidence to suggest that the US government is in absolute possession of exotic material that is not made by humans."'
+  analysis: 'It is the same exotic-materials point he places on the public record in his sworn QFR responses ([`/documents/elizondo-qfr-burlison-20241219`]).'
   context: 'Luis Elizondo on The Joe Rogan Experience #2194, on what the US government possesses'
 - id: q12
   speaker_id: s2

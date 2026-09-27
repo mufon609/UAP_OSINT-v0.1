@@ -19,7 +19,9 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ## Evidence
 
-### November 2023 Liberation Times direct query to Lockheed Martin asking the company to deny possession and divestment allegations — Lockheed Martin's spokesperson "declined to issue a denial" and instead deflected to the U.S. government. The first attested moment in the non-denial pattern; recapped by Sharp in his 2025-03-27 article.
+### Liberation Times query (November 2023, recapped March 27, 2025): asked to deny possession and divestment allegations, Lockheed Martin's spokesperson "declined to issue a denial" and instead deflected to the U.S. government.
+
+This was a direct Liberation Times query to Lockheed Martin asking the company to deny the allegations. The first attested moment in the non-denial pattern; recapped by Sharp in his 2025-03-27 article.
 
 > In November 2023, Liberation Times asked Lockheed Martin whether it could deny allegations that it possesses materials of unknown or non-human origin and had attempted to divest itself of such materials. A company spokesperson declined to issue a denial, instead stating: "Questions about UAPs are best addressed by the U.S. government."
 
@@ -33,7 +35,9 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ---
 
-### Sharp's 2024-11-08 reporting publicly aired the allegation that "Lockheed Martin may still possess" the non-human materials — published five days before the November 13 2024 House Oversight hearing. Lockheed Martin did not issue a public denial of this allegation after publication; the absence of denial is contextual evidence supporting the non-denial pattern Sharp later documents explicitly in 2025-03-27.
+### Liberation Times (November 8, 2024): Sharp's reporting publicly aired the allegation that "Lockheed Martin may still possess" the non-human materials, published five days before the November 13 2024 House Oversight hearing.
+
+Lockheed Martin did not issue a public denial of this allegation after the 2024-11-08 publication; the absence of denial is contextual evidence supporting the non-denial pattern Sharp later documents explicitly in 2025-03-27.
 
 > Liberation Times understands that the transfer was blocked by Gaffney, as the CIA's Directorate of Technology remains the original custodian of the alleged non-human materials, which Lockheed Martin may still possess to this day.
 
@@ -75,7 +79,9 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ---
 
-### Sharp's closing attestation on the March 3 2025 outreach — Lockheed Martin "refused to respond" to repeated requests covering company involvement in the proposed transfer, current and prior possession of non-human material, and any Ryder records. Most recent attested non-denial moment in the chain.
+### Liberation Times (March 27, 2025): Sharp's closing attestation is that Lockheed Martin "refused to respond" to repeated requests in the March 3 2025 outreach.
+
+This applies to repeated requests covering company involvement in the proposed transfer, current and prior possession of non-human material, and any Ryder records. Most recent attested non-denial moment in the chain.
 
 > Despite repeated requests for comment, Lockheed Martin has refused to respond.
 

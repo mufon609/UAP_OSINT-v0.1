@@ -55,7 +55,9 @@ _No personnel attested in primary sources to date._
 
 ## Key Passages
 
-### USAspending HQ003419C0159 description field — Strengthening Insider Threat Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,127,203.20, date_signed 2019-09-20, solicitation HQ003419R0183.
+### USAspending award record HQ003419C0159 (September 20, 2019): the description field reads Strengthening Insider Threat Support Services.
+
+Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,127,203.20, date_signed 2019-09-20, solicitation HQ003419R0183.
 
 > STRENGTHENING INSIDER THREAT SUPPORT SERVICES
 
@@ -67,7 +69,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003420C0066 description field — Artificial Intelligence Engineering & Computer Support Services (source elides the space around "&"). Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,880,863.65, date_signed 2020-03-31, solicitation HQ003420R0138.
+### USAspending award record HQ003420C0066 (March 31, 2020): the description field reads Artificial Intelligence Engineering & Computer Support Services.
+
+The source elides the space around "&". Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,880,863.65, date_signed 2020-03-31, solicitation HQ003420R0138.
 
 > ARTIFICIAL INTELLIGENCE ENGINEERING&COMPUTER SUPPORT SERVICES
 
@@ -79,7 +83,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003420C0167 description field — Analytic Studies Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $1,504,844.80, date_signed 2020-09-25, solicitation HQ003420R0377.
+### USAspending award record HQ003420C0167 (September 25, 2020): the description field reads Analytic Studies Support Services.
+
+Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $1,504,844.80, date_signed 2020-09-25, solicitation HQ003420R0377.
 
 > ANALYTIC STUDIES SUPPORT SERVICES
 
@@ -127,7 +133,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). The PWS itself states no set-aside; the 8(a) sole-source designation for HQ003422C0064 comes from its USAspending award record. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).
+### IPMO Performance Work Statement title block (April 25, 2022): establishes the IPMO PWS issue date, three months before the AARO PWS issue date of July 7, 2022.
+
+The AARO PWS issue date is per the FOIA 23-F-1114 release for AARO contract HQ003422C0094. The PWS itself states no set-aside; the 8(a) sole-source designation for HQ003422C0064 comes from its USAspending award record. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).
 
 > PERFORMANCE WORK STATEMENT (PWS) April 25,2022 Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO) Office of the Under Secretary of Defense for Intelligence and Security
 
@@ -139,7 +147,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### IPMO PWS §5.4 contractor scope verbatim — Sancorp as prime contractor is contractually tasked to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments". This is substantive policy-development scope (not merely administrative support) inside the OUSD(I&S) Influence and Perception Management Office. The same PWS task description on the AARO contract (HQ003422C0094 §5.3 per FOIA 23-F-1114) tasks Sancorp on Strategy, Plans, and Policy Support for AARO. Same prime contractor with strategy/plans/policy contractual scope inside both the OUSD(I&S) influence-and-perception-management office and the OUSD(I&S) UAP-investigation office during the same spring/summer 2022 contracting window.
+### IPMO PWS §5.4 (April 25, 2022): Sancorp as prime contractor is tasked to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy" for DoD influence, deception, and perception management.
+
+IPMO PWS §5.4 contractor scope verbatim — Sancorp as prime contractor is contractually tasked to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments". This is substantive policy-development scope (not merely administrative support) inside the OUSD(I&S) Influence and Perception Management Office. The same PWS task description on the AARO contract (HQ003422C0094 §5.3 per FOIA 23-F-1114) tasks Sancorp on Strategy, Plans, and Policy Support for AARO. Same prime contractor with strategy/plans/policy contractual scope inside both the OUSD(I&S) influence-and-perception-management office and the OUSD(I&S) UAP-investigation office during the same spring/summer 2022 contracting window.
 
 > Assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments.
 
@@ -175,7 +185,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003422C0064 description field — IPMO Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,026,577.70, date_signed 2022-06-09, solicitation HQ003422R0164.
+### USAspending award record HQ003422C0064 (June 9, 2022): the description field reads IPMO Support Services.
+
+Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $3,026,577.70, date_signed 2022-06-09, solicitation HQ003422R0164.
 
 > IPMO SUPPORT SERVICES
 
@@ -187,7 +199,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### AARO contract SF 33 header — Contract HQ003422C0094, Solicitation HQ003422R0192, Type Negotiated RFP, Date Issued July 7, 2022. Issued by WHS Acquisition Directorate (DODAAC HQ0034), 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.
+### AARO contract SF 33 header (July 7, 2022): Contract HQ003422C0094, Solicitation HQ003422R0192, Type Negotiated RFP, issued by the WHS Acquisition Directorate.
+
+Date Issued July 7, 2022. Issued by WHS Acquisition Directorate (DODAAC HQ0034), 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.
 
 > 2. CONTRACT NO.: HQ003422C0094
 > 3. SOLICITATION NO.: HQ003422R0192
@@ -293,7 +307,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### AARO contract Section I clause DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD — names the Small Business Administration as the prime contractor under the SBA-DoD Partnership Agreement, with the Richmond District Office (400 N 8th Street, Suite 1150, Richmond VA 23219) as the cognizant SBA district office.
+### AARO contract Section I clause DFARS 252.219-7009 (September 1, 2022): the SECTION 8(A) DIRECT AWARD clause names the Small Business Administration as the prime contractor.
+
+The clause names the Small Business Administration as the prime contractor under the SBA-DoD Partnership Agreement, with the Richmond District Office (400 N 8th Street, Suite 1150, Richmond VA 23219) as the cognizant SBA district office.
 
 > 252.219-7009     SECTION 8(A) DIRECT AWARD (OCT 2018)
 >
@@ -333,7 +349,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### AARO contract SF 33 Block 15A NAME AND ADDRESS OF OFFEROR — Code 7NZQ9, address 3235 Valley Ln, Falls Church VA 22044-1740. Block 15B telephone 404-840-9330. Block 15A second line is (b)(6)-redacted.
+### AARO contract SF 33 Block 15A (September 1, 2022): the offeror is Sancorp Consulting, Code 7NZQ9, at 3235 Valley Ln, Falls Church VA 22044-1740.
+
+Block 15A is NAME AND ADDRESS OF OFFEROR. Block 15B telephone 404-840-9330. Block 15A second line is (b)(6)-redacted.
 
 > 15A. NAME AND ADDRESS OF OFFEROR: CODE: 7NZQ9 SANCORP CONSULTING (b)(6) 3235 VALLEY LN FALLS CHURCH VA 22044-1740
 >
@@ -347,7 +365,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003422C0094 description field — AARO Support Services. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,061,786.51, date_signed 2022-09-01, solicitation HQ003422R0192.
+### USAspending award record HQ003422C0094 (September 1, 2022): the description field reads AARO Support Services.
+
+Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, total_obligation $4,061,786.51, date_signed 2022-09-01, solicitation HQ003422R0192.
 
 > AARO SUPPORT SERVICES
 
@@ -359,7 +379,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003422C0094 awarding_agency object — toptier Department of Defense (code 097), subtier Washington Headquarters Services (code 97F5, abbreviation WHS). Documentary basis for WHS as the issuing subtier agency; the object does not name OUSD(I&S). The same WHS subtier issues the AARO, IPMO, CIT, and Counterintelligence Analytical prime contracts.
+### USAspending award record HQ003422C0094 (September 1, 2022): the awarding_agency object names toptier Department of Defense and subtier Washington Headquarters Services, not OUSD(I&S).
+
+The object gives toptier Department of Defense (code 097), subtier Washington Headquarters Services (code 97F5, abbreviation WHS). Documentary basis for WHS as the issuing subtier agency; the object does not name OUSD(I&S). The same WHS subtier issues the AARO, IPMO, CIT, and Counterintelligence Analytical prime contracts.
 
 > "toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"}
 
@@ -371,7 +393,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### The AARO Support Services contract (HQ003422C0094, "AARO SUPPORT SERVICES") lists funding office "OSD OUSD(I)" under subtier "Immediate Office of the Secretary of Defense". The archived USAspending records for Sancorp awards HQ003419C0159, HQ003420C0167, HQ003422C0064, HQ003423C0061, HQ003424A0023, HQ003424C0046, HQ003424C0096, HQ003425A0001, HQ003425FE388, and HQ003426FE050 list the same "OSD OUSD(I)" funding office; the HQ003418C0123 record lists a different funding office.
+### USAspending award record HQ003422C0094 (September 1, 2022): the AARO Support Services contract lists funding office "OSD OUSD(I)" under subtier Immediate Office of the Secretary of Defense.
+
+The contract's description reads "AARO SUPPORT SERVICES". The archived USAspending records for Sancorp awards HQ003419C0159, HQ003420C0167, HQ003422C0064, HQ003423C0061, HQ003424A0023, HQ003424C0046, HQ003424C0096, HQ003425A0001, HQ003425FE388, and HQ003426FE050 list the same "OSD OUSD(I)" funding office; the HQ003418C0123 record lists a different funding office.
 
 > "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
 
@@ -395,7 +419,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending W519TC23F0545 description field — CDAO Algorithmic Warfare and Public Affairs support; technical writer and graphic designer support for the CDAO. Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship.
+### USAspending award record W519TC23F0545 (September 25, 2023): the description field says the task order covers CDAO Algorithmic Warfare and Public Affairs support, providing technical writer and graphic designer support for the CDAO.
+
+Type DELIVERY ORDER, awarding subtier Department of the Army, parent IDV W519TC23G0042 (BOA), total_obligation $1,592,695.20, date_signed 2023-09-25. Customer org basis for the CDAO relationship.
 
 > THE PURPOSE OF THIS ACTION IS FULFILL CDAO'S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLIC AFFAIRS SUPPORT. THIS TASK ORDER PROVIDES TECHNICAL WRITER AND GRAPHIC DESIGNER SUPPORT FOR THE CDAO.
 
@@ -407,7 +433,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for the HQ003424C0046 base award (modification_number "0", type DEFINITIVE CONTRACT), action_date 2024-05-31, action_type null, federal_action_obligation 919478.64. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES".
+### USAspending transaction record for the HQ003424C0046 base award (May 31, 2024): the description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES".
+
+Base award (modification_number "0", type DEFINITIVE CONTRACT), action_date 2024-05-31, action_type null, federal_action_obligation 919478.64.
 
 > "action_date":"2024-05-31","action_type":null,"action_type_description":null,"modification_number":"0","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":919478.64
 
@@ -419,7 +447,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Base award (modification 0) of HQ003424C0046 to SANCORP CONSULTING, LLC. Signed 2024-05-31, effective 2024-06-10, with current and ultimate completion both 2024-09-27. The base entry carries no reasonForModification element.
+### FPDS record for HQ003424C0046, modification 0 (May 31, 2024): the base award was signed 2024-05-31, effective 2024-06-10, with current and ultimate completion both 2024-09-27.
+
+Base award (modification 0) of HQ003424C0046 to SANCORP CONSULTING, LLC. The base entry carries no reasonForModification element.
 
 > <ns1:modNumber>0</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-05-31 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -431,7 +461,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003424F0411 description field — "LABOR" (the only scope text the record carries). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $11,214,090.66, date_signed 2024-07-23, solicitation HQ003424Q0020. Per Sancorp Past Performance the customers are OASD Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.
+### USAspending award record HQ003424F0411 (July 23, 2024): the description field reads "LABOR", the only scope text the record carries.
+
+Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $11,214,090.66, date_signed 2024-07-23, solicitation HQ003424Q0020. Per Sancorp Past Performance the customers are OASD Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.
 
 > LABOR
 
@@ -443,7 +475,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003424C0096 description field (2026-04-30 capture) — Exec. Admin, Ops, Policy & PPBE Sppt Svc; AARO label on transaction records from P00005. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, date_signed 2024-08-23, solicitation HQ003424R0324. Total obligation is $3,415,374.79 per the 2026-09-25 award record; this 2026-04-30 capture reported $3,471,829.40, and the difference equals the -$56,454.61 obligation of modification P00007 (2026-05-06).
+### USAspending award record HQ003424C0096 (August 23, 2024; captured April 30, 2026): the description field carries no AARO label, which appears on transaction records from P00005.
+
+In the 2026-04-30 capture the description field reads Exec. Admin, Ops, Policy & PPBE Sppt Svc; the AARO label is on transaction records from P00005. Type DEFINITIVE CONTRACT, awarding subtier Washington Headquarters Services, date_signed 2024-08-23, solicitation HQ003424R0324. Total obligation is $3,415,374.79 per the 2026-09-25 award record; this 2026-04-30 capture reported $3,471,829.40, and the difference equals the -$56,454.61 obligation of modification P00007 (2026-05-06).
 
 > EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC
 
@@ -455,7 +489,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003424C0096 award record, 2026-09-25 capture — total_obligation $3,415,374.79, base_exercised_options $3,415,374.79, base_and_all_options $3,415,374.79, date_signed 2024-08-23. The 2026-04-30 capture of the same record (government/usaspending-hq003424c0096.txt) carries total_obligation $3,471,829.40.
+### USAspending award record HQ003424C0096 (August 23, 2024; captured September 25, 2026): total_obligation, base_exercised_options and base_and_all_options are each $3,415,374.79.
+
+In the 2026-09-25 capture: total_obligation $3,415,374.79, base_exercised_options $3,415,374.79, base_and_all_options $3,415,374.79, date_signed 2024-08-23. The 2026-04-30 capture of the same record (government/usaspending-hq003424c0096.txt) carries total_obligation $3,471,829.40.
 
 > "total_obligation":3415374.79,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2024-08-23","base_exercised_options":3415374.79,"base_and_all_options":3415374.79
 
@@ -503,7 +539,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003424C0096 description field, 2026-09-25 capture — "EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC"; type DEFINITIVE CONTRACT. Unchanged from the 2026-04-30 capture.
+### USAspending award record HQ003424C0096 (August 23, 2024; captured September 25, 2026): the description field is unchanged from the April 30, 2026 capture.
+
+In the 2026-09-25 capture the description field reads "EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC"; type DEFINITIVE CONTRACT. Unchanged from the 2026-04-30 capture.
 
 > "description":"EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC"
 
@@ -515,7 +553,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### GAO B-422985 decision procedural-history subsection — initial September 2024 awards: Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions to Call Order 1 (EXDIR), Sancorp to Call Order 2 (SASP). Arlo and Premier filed protests, agency took corrective action, terminated the BPAs and call orders, and reevaluated.
+### GAO decision B-422985.4, B-422985.5 (June 11, 2025): in September 2024 WHS issued Call Order 1 (EXDIR) to Comprehensive Approach Solutions and Call Order 2 (SASP) to Sancorp.
+
+The GAO B-422985 decision procedural-history subsection records the initial September 2024 awards: Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions to Call Order 1 (EXDIR), Sancorp to Call Order 2 (SASP). Arlo and Premier filed protests, agency took corrective action, terminated the BPAs and call orders, and reevaluated.
 
 > In September, WHS established a BPA with, and issued call order 1 (EXDIR) to, Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions. COS/MOL at 5. At the same time, WHS established a BPA with, and issued call order 2 (SASP) to, Sancorp. Id. Following notification of the awards, Arlo and Premier filed protests with our Office, challenging the agency’s evaluation and award decisions.
 
@@ -527,7 +567,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003424A0023 description field — Technical, Administrative and Professional Support Services to OUSD(I&S) Enterprise. Type BPA (IDV vehicle, $0 obligation; obligation flows through call orders), awarding subtier Washington Headquarters Services, date_signed 2024-09-18.
+### USAspending award record HQ003424A0023 (September 18, 2024): the BPA description field reads Technical, Administrative and Professional Support Services to OUSD(I&S) Enterprise.
+
+Type BPA (IDV vehicle, $0 obligation; obligation flows through call orders), awarding subtier Washington Headquarters Services, date_signed 2024-09-18.
 
 > TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD)(I&S) ENTERPRISE
 
@@ -539,7 +581,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28. The description field reads "PROFESSIONAL SUPPORT SERVICES", differing from the base-award description.
+### USAspending transaction record for HQ003424C0046 modification P00001 (September 27, 2024): the option exercise's description field reads "PROFESSIONAL SUPPORT SERVICES", differing from the base-award description.
+
+The record gives action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28.
 
 > "action_date":"2024-09-27","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00001","description":"PROFESSIONAL SUPPORT SERVICES","federal_action_obligation":1504601.28
 
@@ -551,7 +595,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00001 was signed 2024-09-27, the base-award completion date. It moves current and ultimate completion from 2024-09-27 to 2025-03-27. Its reasonForModification is "EXERCISE AN OPTION" (code G).
+### FPDS record for HQ003424C0046, modification P00001 (September 27, 2024): the option exercise moves current and ultimate completion from 2024-09-27 to 2025-03-27.
+
+P00001 was signed 2024-09-27, the base-award completion date. Its reasonForModification is "EXERCISE AN OPTION" (code G).
 
 > <ns1:modNumber>P00001</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -563,7 +609,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0096 modification P00002, action_date 2024-10-28, action type M (OTHER ADMINISTRATIVE ACTION). The description field reads "EXECUTIVE ADMINISTRATION, OPERATIONS, POLICY & PLANNING, PROGRAMMING, BUDGET & EXECUTION SUPPORT SERVICES" and does not carry the AARO label.
+### USAspending transaction record for HQ003424C0096 modification P00002 (October 28, 2024): the description does not carry the AARO label.
+
+The record gives action_date 2024-10-28, action type M (OTHER ADMINISTRATIVE ACTION). The description field reads "EXECUTIVE ADMINISTRATION, OPERATIONS, POLICY & PLANNING, PROGRAMMING, BUDGET & EXECUTION SUPPORT SERVICES" and does not carry the AARO label.
 
 > "action_date":"2024-10-28","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00002","description":"EXECUTIVE ADMINISTRATION, OPERATIONS, POLICY & PLANNING, PROGRAMMING, BUDGET & EXECUTION SUPPORT SERVICES"
 
@@ -575,7 +623,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### OSD OP-5 FY 2026 budget — IPMO program description: OUSD(I&S) center of gravity for influence activities; activities include thematic influence guidance, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
+### OSD OP-5 FY 2026 budget (2025): the IPMO program description calls IPMO the OUSD(I&S) center of gravity for influence activities.
+
+IPMO's activities include thematic influence guidance, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO’s activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
@@ -587,7 +637,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0096 modification P00003, action_date 2025-01-22, action type G (EXERCISE AN OPTION), federal_action_obligation 1232491.2. The description field lists administrative, security, policy, analytic, knowledge management, legislative affairs, public affairs, reporting, and PPBE support services and does not carry the AARO label.
+### USAspending transaction record for HQ003424C0096 modification P00003 (January 22, 2025): the option exercise's description lists administrative through PPBE support services and does not carry the AARO label.
+
+The record gives action_date 2025-01-22, action type G (EXERCISE AN OPTION), federal_action_obligation 1232491.2. The description field lists administrative, security, policy, analytic, knowledge management, legislative affairs, public affairs, reporting, and PPBE support services and does not carry the AARO label.
 
 > "action_date":"2025-01-22","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00003","description":"ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES.","federal_action_obligation":1232491.2
 
@@ -599,7 +651,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425A0001 description field — Technical, Analytical, Administrative, and Professional Program Support Services. Type BPA (IDV vehicle, $0 obligation), awarding subtier Washington Headquarters Services, date_signed 2025-02-14. Parent BPA of the archived call orders HQ003425FE174, HQ003425FE388 and HQ003426FE050; the description does not name a requiring office.
+### USAspending award record HQ003425A0001 (February 14, 2025): the BPA description field reads Technical, Analytical, Administrative, and Professional Program Support Services and names no requiring office.
+
+Type BPA (IDV vehicle, $0 obligation), awarding subtier Washington Headquarters Services, date_signed 2025-02-14. Parent BPA of the archived call orders HQ003425FE174, HQ003425FE388 and HQ003426FE050; the description does not name a requiring office.
 
 > TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.
 
@@ -635,7 +689,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### BPA HQ003425A0002 date_signed 2025-02-14 with base_and_all_options 956000000.0 ($956M ceiling) and total_obligation 0.0 (IDV vehicle; obligation flows through orders). The date_signed is the same 2025-02-14 recorded for Sancorp's HQ003425A0001.
+### USAspending award record HQ003425A0002 (February 14, 2025): BPA HQ003425A0002 was signed 2025-02-14 with base_and_all_options 956000000.0, a $956M ceiling.
+
+Total_obligation is 0.0 (IDV vehicle; obligation flows through orders). The date_signed is the same 2025-02-14 recorded for Sancorp's HQ003425A0001.
 
 > "date_signed":"2025-02-14","base_exercised_options":null,"base_and_all_options":956000000.0
 
@@ -719,7 +775,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425A0003 description field — Technical, Administrative and Professional Support Services to the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)) Enterprise. Source form carries an unbalanced parenthesis, "(OUSD (I&S) ENTERPRISE".
+### USAspending award record HQ003425A0003 (February 14, 2025): the BPA description field reads Technical, Administrative and Professional Support Services to the OUSD(I&S) Enterprise.
+
+The description names the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)) Enterprise. Source form carries an unbalanced parenthesis, "(OUSD (I&S) ENTERPRISE".
 
 > "description":"TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD (I&S) ENTERPRISE"
 
@@ -755,7 +813,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425A0003 recipient — PREMIER ENTERPRISE SOLUTIONS, LLC (UEI SN5KHDCRNDM5), which is also its own parent recipient. Sancorp Consulting is not named anywhere in this record.
+### USAspending award record HQ003425A0003 (February 14, 2025): the recipient is PREMIER ENTERPRISE SOLUTIONS, LLC, and Sancorp Consulting is not named anywhere in this record.
+
+Recipient PREMIER ENTERPRISE SOLUTIONS, LLC (UEI SN5KHDCRNDM5), which is also its own parent recipient.
 
 > "recipient":{"recipient_hash":"dec4b805-420d-1eed-8610-17379f5cd80a-C","recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","recipient_uei":"SN5KHDCRNDM5","recipient_unique_id":null,"parent_recipient_hash":"dec4b805-420d-1eed-8610-17379f5cd80a-P","parent_recipient_name":"PREMIER ENTERPRISE SOLUTIONS, LLC","parent_recipient_uei":"SN5KHDCRNDM5"
 
@@ -803,7 +863,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Factual: the funding_agency block of the USAspending IDV record for BPA HQ003425A0001 (date_signed 2025-02-14; recipient "SANCORP CONSULTING, LLC") names the funding subtier as the Immediate Office of the Secretary of Defense (SECDEF, code 97AD) and the funding office as "OSD OUSD(I)"; the record names no requiring office below that level.
+### USAspending award record HQ003425A0001 (February 14, 2025): the funding_agency block names the Immediate Office of the Secretary of Defense as funding subtier and "OSD OUSD(I)" as funding office.
+
+Factual: the funding_agency block of the USAspending IDV record for BPA HQ003425A0001 (date_signed 2025-02-14; recipient "SANCORP CONSULTING, LLC") names the funding subtier as the Immediate Office of the Secretary of Defense (SECDEF, code 97AD) and the funding office as "OSD OUSD(I)"; the record names no requiring office below that level.
 
 > "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
 
@@ -827,7 +889,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Names Sancorp Consulting, LLC (CAGE 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740) as an incumbent OUSD(I&S) support contractor under contract HQ003424C0046 (services concluding March 27, 2025) and announces an intended four-month sole-source bridge extension, March 28 to July 27, 2025, under FAR 6.302-1(a)(2)(iii)(A).
+### SAM.gov notice TR011720251116 (March 11, 2025): names Sancorp Consulting, LLC as incumbent under HQ003424C0046 and announces an intended four-month sole-source bridge extension, March 28 to July 27, 2025.
+
+The notice names Sancorp Consulting, LLC (CAGE 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740) as an incumbent OUSD(I&S) support contractor under contract HQ003424C0046 (services concluding March 27, 2025); the bridge is to be awarded under FAR 6.302-1(a)(2)(iii)(A).
 
 > 4) Award a short-term, sole source extension to the incumbent contractor, Sancorp Consulting, LLC [CAGE Code: 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740]. The Contractor is currently performing services under contract HQ003424C0046, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025. The anticipated award will be made under the authority of Federal Acquisition Regulation (FAR) 6.302-1(a)(2)(iii)(A), Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements.
 
@@ -839,7 +903,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### States the service scope of the five incumbents including Sancorp (technical, administrative and professional support services to OUSD(I&S) Enterprise requirements) and that an OUSD(I&S) Enterprise Blanket Purchase Agreement had been established with requirements then in procurement for award — the stated reason for the short-term bridges.
+### SAM.gov notice TR011720251116 (March 11, 2025): the five incumbents including Sancorp provide technical, administrative and professional support services to OUSD(I&S) Enterprise requirements.
+
+The notice states that an OUSD(I&S) Enterprise Blanket Purchase Agreement had been established with requirements then in procurement for award — the stated reason for the short-term bridges. The service scope statement covers all five incumbents.
 
 > These Contractors are required to provide technical, administrative and professional support services to the OUSD(I&amp;S) Enterprise requirements. Currently, the Government has established an Enterprise Blanket Purchase Agreement for OUSD (I&amp;S), and the requirements are going through the procurement process for award.
 
@@ -851,7 +917,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" -- the first transaction on this contract whose description names IPMO. The action_date 2025-03-27 is the same date on which SAM.gov notice TR011720251116 states HQ003424C0046 was concluding; this transaction record carries no period-of-performance end date.
+### USAspending transaction record for HQ003424C0046 modification P00002 (March 27, 2025): the change order is the first transaction on this contract whose description names IPMO.
+
+The record gives action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES". The action_date 2025-03-27 is the same date on which SAM.gov notice TR011720251116 states HQ003424C0046 was concluding; this transaction record carries no period-of-performance end date.
 
 > "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00002","description":"IPMO SUPPORT SERVICES","federal_action_obligation":1003067.52
 
@@ -863,7 +931,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00002 moves current and ultimate completion from 2025-03-27 to 2025-07-27 and was signed 2025-03-27. Its reasonForModification is "CHANGE ORDER" (code D). Its signing date, 2025-03-27, is the date on which SAM.gov notice TR011720251116 states services under HQ003424C0046 are concluding; its new completion date, 2025-07-27, is the end of the notice's anticipated March 28 to July 27, 2025 bridge period. This is a date match only: the FPDS feed does not name the notice.
+### FPDS record for HQ003424C0046, modification P00002 (March 27, 2025): the change order moves current and ultimate completion from 2025-03-27 to 2025-07-27.
+
+P00002 was signed 2025-03-27. Its reasonForModification is "CHANGE ORDER" (code D). Its signing date, 2025-03-27, is the date on which SAM.gov notice TR011720251116 states services under HQ003424C0046 are concluding; its new completion date, 2025-07-27, is the end of the notice's anticipated March 28 to July 27, 2025 bridge period. This is a date match only: the FPDS feed does not name the notice.
 
 > <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -875,7 +945,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES".
+### USAspending transaction record for HQ003424C0046 modification P00003 (April 10, 2025): the description field reads "IPMO SUPPORT SERVICES".
+
+The record gives action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0.
 
 > "action_date":"2025-04-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00003","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
 
@@ -887,7 +959,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00003 was signed 2025-04-10. Current and ultimate completion stay at 2025-07-27 (unchanged from P00002). Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+### FPDS record for HQ003424C0046, modification P00003 (April 10, 2025): current and ultimate completion stay at 2025-07-27, unchanged from P00002.
+
+P00003 was signed 2025-04-10. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
 
 > <ns1:modNumber>P00003</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -899,7 +973,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" -- the last transaction on this contract with that description.
+### USAspending transaction record for HQ003424C0046 modification P00004 (April 11, 2025): the last transaction on this contract whose description reads "IPMO SUPPORT SERVICES".
+
+The record gives action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" -- the last transaction on this contract with that description.
 
 > "action_date":"2025-04-11","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
 
@@ -911,7 +987,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00004 was signed 2025-04-11. Current and ultimate completion stay at 2025-07-27 (unchanged). Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+### FPDS record for HQ003424C0046, modification P00004 (April 11, 2025): current and ultimate completion stay at 2025-07-27 (unchanged).
+
+P00004 was signed 2025-04-11. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
 
 > <ns1:modNumber>P00004</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-11 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -923,7 +1001,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0096 modification P00004, action_date 2025-04-21, action type M (OTHER ADMINISTRATIVE ACTION). The description field adds "OPERATIONS" and "(PPBE)" relative to P00003 and does not carry the AARO label; it is the last modification before the label appears.
+### USAspending transaction record for HQ003424C0096 modification P00004 (April 21, 2025): the description adds "OPERATIONS" and "(PPBE)" and is the last modification before the AARO label appears.
+
+The record gives action_date 2025-04-21, action type M (OTHER ADMINISTRATIVE ACTION). The description field adds "OPERATIONS" and "(PPBE)" relative to P00003 and does not carry the AARO label; it is the last modification before the label appears.
 
 > "action_date":"2025-04-21","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, OPERATIONS, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING, AND EXECUTION (PPBE) SUPPORT."
 
@@ -1091,7 +1171,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE174 description field — Technical, Analytical, Administrative, and Professional Program Support Services. Same description string as the parent BPA HQ003425A0001 record.
+### USAspending award record HQ003425FE174 (June 20, 2025): the description field reads Technical, Analytical, Administrative, and Professional Program Support Services, the same string as its parent BPA.
+
+Same description string as the parent BPA HQ003425A0001 record.
 
 > TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.
 
@@ -1115,7 +1197,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE174 parent_award object — parent IDV HQ003425A0001 (CONT_IDV_HQ003425A0001_9700), idv_type_description BPA, multiple_or_single_aw_desc MULTIPLE AWARD. HQ003425FE388 is also recorded under parent HQ003425A0001.
+### USAspending award record HQ003425FE174 (June 20, 2025): the parent_award object names parent IDV HQ003425A0001, a MULTIPLE AWARD BPA.
+
+Parent IDV HQ003425A0001 (CONT_IDV_HQ003425A0001_9700), idv_type_description BPA, multiple_or_single_aw_desc MULTIPLE AWARD. HQ003425FE388 is also recorded under parent HQ003425A0001.
 
 > "generated_unique_award_id":"CONT_IDV_HQ003425A0001_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0001"
 
@@ -1259,7 +1343,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending W912CL25CA005 description field — USSOUTHCOM Support to Special Technical Operations contract scope, including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception, and Intelligence Planning. 8(A) Sole Source per latest_transaction_contract_data.
+### USAspending award record W912CL25CA005 (June 30, 2025): the description field gives the USSOUTHCOM Support to Special Technical Operations contract scope, including Special Access Programs and Military Deception.
+
+The scope includes Special Access Programs, Alternative and Compensatory Control Measures, Military Deception, and Intelligence Planning. 8(A) Sole Source per latest_transaction_contract_data.
 
 > USSOUTHCOM SHALL PROVIDE SERVICES TO SPECIAL TECHNICAL OPERATIONS (STO) INCLUDING SUPPORT TO SPECIAL ACCESS PROGRAMS (SAP), ALTERNATIVE AND COMPENSATORY CONTROL MEASURES, MILITARY DECEPTION (MILDEC) AND INTELLIGENCE PLANNING AND ACTIVITIES.
 
@@ -1271,7 +1357,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0096 modification P00005, action_date 2025-07-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. First of the contract's transaction records whose description begins "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)"; the earlier records (base award and P00001-P00004) do not carry that label.
+### USAspending transaction record for HQ003424C0096 modification P00005 (July 10, 2025): the first of the contract's transaction records whose description begins "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)".
+
+The record gives action_date 2025-07-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The earlier records (base award and P00001-P00004) do not carry that label.
 
 > "action_date":"2025-07-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00005","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES"
 
@@ -1283,7 +1371,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24 (a de-obligation). The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" -- the first transaction after P00002-P00004 whose description no longer names IPMO; it differs from the base-award description only in punctuation ("POLICY, OPERATIONS, AND" vs. "POLICY OPERATIONS AND").
+### USAspending transaction record for HQ003424C0046 modification P00005 (July 10, 2025): the first transaction after P00002-P00004 whose description no longer names IPMO.
+
+The record gives action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24 (a de-obligation). The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES"; it differs from the base-award description only in punctuation ("POLICY, OPERATIONS, AND" vs. "POLICY OPERATIONS AND").
 
 > "action_date":"2025-07-10","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00005","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":-9766.24
 
@@ -1295,7 +1385,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00005 was signed 2025-07-10. Current and ultimate completion stay at 2025-07-27 (unchanged). Its reasonForModification is "CHANGE ORDER" (code D).
+### FPDS record for HQ003424C0046, modification P00005 (July 10, 2025): current and ultimate completion stay at 2025-07-27 (unchanged).
+
+P00005 was signed 2025-07-10. Its reasonForModification is "CHANGE ORDER" (code D).
 
 > <ns1:modNumber>P00005</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1307,7 +1399,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for modification P00001 of BPA call HQ003425FE174 (parent BPA HQ003425A0001): action_date 2025-07-24, action type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation -947553.46 (a de-obligation). The description names the requiring office as OASD(ST) and the work as policy and oversight support for DoD ST programs, non-personal service.
+### USAspending transaction record for HQ003425FE174 modification P00001 (July 24, 2025): the description names OASD(ST) as the requiring office, for policy and oversight support of DoD ST programs.
+
+Modification P00001 of BPA call HQ003425FE174 (parent BPA HQ003425A0001): action_date 2025-07-24, action type B "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", federal_action_obligation -947553.46 (a de-obligation). The description names the requiring office as OASD(ST) and the work as policy and oversight support for DoD ST programs, non-personal service.
 
 > "id":"CONT_TX_9700_9700_HQ003425FE174_P00001_HQ003425A0001_0","type":"A","type_description":"BPA CALL","action_date":"2025-07-24","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00001","description":"THE OASD(ST) REQUIRES ANALYTICAL, TECHNICAL, ADMINISTRATIVE, AND PROGRAMMATIC SUPPORT AND ENABLE THE OASD TO PROVIDE POLICY AND OVERSIGHT OF THE DOD ST PROGRAMS AND CONDUCT ANALYSIS, STUDIES, AND PROVIDE TECHNICAL SUPPORT. NON-PERSONAL SERVICE.","federal_action_obligation":-947553.46
 
@@ -1319,7 +1413,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
+### USAspending transaction record for HQ003424C0046 modification P00006 (July 25, 2025): the change order obligates 501533.76 under the Specialized and Sensitive support services description.
+
+The record gives action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
 
 > "action_date":"2025-07-25","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00006","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":501533.76
 
@@ -1331,7 +1427,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Completion moves from 2025-07-27 (P00005) to 2026-05-27. P00006 is the modification that extended HQ003424C0046 to 2026-05-27, and it was signed 2025-07-25. Its reasonForModification is "CHANGE ORDER" (code D).
+### FPDS record for HQ003424C0046, modification P00006 (July 25, 2025): the change order extended HQ003424C0046, moving completion from 2025-07-27 to 2026-05-27.
+
+Completion moves from 2025-07-27 (P00005) to 2026-05-27. P00006 is the modification that extended HQ003424C0046 to 2026-05-27, and it was signed 2025-07-25. Its reasonForModification is "CHANGE ORDER" (code D).
 
 > <ns1:modNumber>P00006</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-25 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1367,7 +1465,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
+### USAspending transaction record for HQ003424C0046 modification P00007 (September 2, 2025): the funding-only action obligates 1833006.24 under the Specialized and Sensitive support services description.
+
+The record gives action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
 
 > "action_date":"2025-09-02","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00007","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":1833006.24
 
@@ -1379,7 +1479,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00007 was signed 2025-09-02. Current and ultimate completion stay at 2026-05-27 (unchanged). Its reasonForModification is "FUNDING ONLY ACTION" (code C).
+### FPDS record for HQ003424C0046, modification P00007 (September 2, 2025): current and ultimate completion stay at 2026-05-27 (unchanged).
+
+P00007 was signed 2025-09-02. Its reasonForModification is "FUNDING ONLY ACTION" (code C).
 
 > <ns1:modNumber>P00007</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-09-02 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1429,7 +1531,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### EO 14347 Section 2(b) — authorizes the Department of Defense and the Office of the Secretary of Defense to be referred to as the Department of War and the Office of the Secretary of War in the contexts described in Sec. 2(a) (official correspondence, public communications, ceremonial contexts, non-statutory documents).
+### EO 14347 Section 2(b) (September 5, 2025): the Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War.
+
+Section 2(b) authorizes these secondary names in the contexts described in Sec. 2(a) (official correspondence, public communications, ceremonial contexts, non-statutory documents).
 
 > (b) The Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War, respectively, in the contexts described in subsection (a) of this section.
 
@@ -1441,7 +1545,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### EO 14347 Section 2(c) — extends the Sec. 2 secondary-title provisions, as appropriate, to subordinate officials within the Department of Defense, who may use corresponding secondary titles such as "Deputy Secretary of War" or "Under Secretary of War" in the contexts described in Sec. 2(a).
+### EO 14347 Section 2(c) (September 5, 2025): subordinate officials within the Department of Defense may use corresponding secondary titles such as "Deputy Secretary of War" or "Under Secretary of War".
+
+Section 2(c) extends the Sec. 2 secondary-title provisions, as appropriate, to subordinate officials within the Department of Defense, in the contexts described in Sec. 2(a).
 
 > (c) The provisions of this section shall also apply, as appropriate, to subordinate officials within the Department of Defense, who may use corresponding secondary titles such as Deputy Secretary of War or Under Secretary of War in the contexts described in subsection (a) of this section.
 
@@ -1453,7 +1559,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE388 description field — Policy, Operations, Analytic and Business Operations (POABO) Support Services to Counterintelligence, Law Enforcement and Security (CLS). Type BPA CALL, awarding subtier Washington Headquarters Services, parent IDV HQ003425A0001, total_obligation $3,746,273.44 in this 2026-04-30 capture ($6,666,866.85 per the 2026-09-26 award record), date_signed 2025-09-11, solicitation HQ003425QE111. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Intelligence and Security.
+### USAspending award record HQ003425FE388 (September 11, 2025): per the description field, the call order provides Policy, Operations, Analytic and Business Operations (POABO) Support Services to Counterintelligence, Law Enforcement and Security (CLS).
+
+Type BPA CALL, awarding subtier Washington Headquarters Services, parent IDV HQ003425A0001, total_obligation $3,746,273.44 in this 2026-04-30 capture ($6,666,866.85 per the 2026-09-26 award record), date_signed 2025-09-11, solicitation HQ003425QE111. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Intelligence and Security.
 
 > THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE POLICY, OPERATIONS, ANALYTIC AND BUSINESS OPERATIONS (POABO) SUPPORT SERVICES TO THE COUNTERINTELLIGENCE, LAW ENFORCEMENT AND SECURITY (CLS).
 
@@ -1477,7 +1585,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE388 award record, 2026-09-26 capture — total_obligation $6,666,866.85, base_exercised_options $7,114,402.88, base_and_all_options $13,857,326.08, date_signed 2025-09-11. The 2026-04-30 capture of the same record (government/usaspending-hq003425fe388.txt) carries total_obligation $3,746,273.44.
+### USAspending award record HQ003425FE388 (September 11, 2025; captured September 26, 2026): total_obligation is $6,666,866.85 against base_and_all_options of $13,857,326.08.
+
+In the 2026-09-26 capture: total_obligation $6,666,866.85, base_exercised_options $7,114,402.88, base_and_all_options $13,857,326.08, date_signed 2025-09-11. The 2026-04-30 capture of the same record (government/usaspending-hq003425fe388.txt) carries total_obligation $3,746,273.44.
 
 > "total_obligation":6666866.85,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2025-09-11","base_exercised_options":7114402.88,"base_and_all_options":13857326.08
 
@@ -1489,7 +1599,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE388 period_of_performance, 2026-09-26 capture — start_date 2025-09-14, end_date 2027-09-13, potential_end_date 2029-09-13, last_modified_date 2026-06-16. The 2026-04-30 capture of the same record (government/usaspending-hq003425fe388.txt) carries end_date 2026-09-13 and last_modified_date 2025-09-24.
+### USAspending award record HQ003425FE388 (September 11, 2025; captured September 26, 2026): the period_of_performance runs 2025-09-14 to 2027-09-13, with potential_end_date 2029-09-13.
+
+In the 2026-09-26 capture: start_date 2025-09-14, end_date 2027-09-13, potential_end_date 2029-09-13, last_modified_date 2026-06-16. The 2026-04-30 capture of the same record (government/usaspending-hq003425fe388.txt) carries end_date 2026-09-13 and last_modified_date 2025-09-24.
 
 > "period_of_performance":{"start_date":"2025-09-14","end_date":"2027-09-13","last_modified_date":"2026-06-16","potential_end_date":"2029-09-13 00:00:00"}
 
@@ -1501,7 +1613,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003425FE405 description field — Office Management and Executive Support Services (OMESS) to the Office of the Under Secretary of Defense for Policy (OUSD(P)). Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $8,410,282.72, date_signed 2025-09-30. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy.
+### USAspending award record HQ003425FE405 (September 30, 2025): per the description field, the order provides Office Management and Executive Support Services (OMESS) to the Office of the Under Secretary of Defense for Policy (OUSD(P)).
+
+Type DELIVERY ORDER, awarding subtier Washington Headquarters Services, parent IDV 47QRAA22D00C4, total_obligation $8,410,282.72, date_signed 2025-09-30. Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy.
 
 > THIS IS A NON-PERSONAL SERVICES CONTRACT TO PROVIDE OFFICE MANAGEMENT AND EXECUTIVE SUPPORT SERVICES (OMESS) TO THE OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR POLICY (OUSD(P)).
 
@@ -1513,7 +1627,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ085926FG471 description field — Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order. Type DELIVERY ORDER, awarding subtier Missile Defense Agency, parent IDV HQ085926DG304, total_obligation $500.00, date_signed 2025-12-19, solicitation HQ085925RE001.
+### USAspending award record HQ085926FG471 (December 19, 2025): the description field reads Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order.
+
+Type DELIVERY ORDER, awarding subtier Missile Defense Agency, parent IDV HQ085926DG304, total_obligation $500.00, date_signed 2025-12-19, solicitation HQ085925RE001.
 
 > SCALABLE HOMELAND INNOVATIVE ENTERPRISE LAYERED DEFENSE (SHIELD) INITIAL ORDER.
 
@@ -1525,7 +1641,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ085926FG471 awarding_agency object — toptier Department of Defense (code 097), subtier Missile Defense Agency (code 97JC, abbreviation MDA). Documentary basis for MDA as the awarding subtier / customer of the SHIELD initial order.
+### USAspending award record HQ085926FG471 (December 19, 2025): the awarding_agency object names subtier Missile Defense Agency as the awarding subtier and customer of the SHIELD initial order.
+
+The object gives toptier Department of Defense (code 097), subtier Missile Defense Agency (code 97JC, abbreviation MDA). Documentary basis for MDA as the awarding subtier / customer of the SHIELD initial order.
 
 > "toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Missile Defense Agency","code":"97JC","abbreviation":"MDA"}
 
@@ -1537,7 +1655,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Factual grounding: CRS In Focus IF10523 states that Congress redesignated the USD(I) position as USD(I&S) in the FY2020 NDAA (Section 1621 of P.L. 116-92). This supports reading the USAspending funding-office string "OSD OUSD(I)" as the pre-redesignation name of OUSD(I&S). The award records themselves do not expand the abbreviation.
+### CRS In Focus IF10523 (updated January 16, 2026): Congress redesignated the USD(I) position as USD(I&S) in the FY2020 NDAA (Section 1621 of P.L. 116-92).
+
+Factual grounding: CRS In Focus IF10523 states the redesignation. This supports reading the USAspending funding-office string "OSD OUSD(I)" as the pre-redesignation name of OUSD(I&S). The award records themselves do not expand the abbreviation.
 
 > Congress redesignated the position of Under Secretary of Defense for Intelligence (USD(I)) as the Under Secretary of Defense for Intelligence and Security in the National Defense Authorization Act (NDAA) for Fiscal Year 2020 (Section 1621 of P.L. 116-92).
 
@@ -1549,7 +1669,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending HQ003426FE050 description field — Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services. The award record itself does not name the requiring office; the only office-level attribution in the record is the funding office "OSD OUSD(I)" (see the funding_agency quote).
+### USAspending award record HQ003426FE050 (January 28, 2026): the description field reads Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services, naming no requiring office.
+
+The award record itself does not name the requiring office; the only office-level attribution in the record is the funding office "OSD OUSD(I)" (see the funding_agency quote).
 
 > ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES
 
@@ -1669,7 +1791,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003426FE050 base award (modification_number "0"), action_date 2026-01-28, action_type null, type BPA CALL, federal_action_obligation 2064311.0. The description field reads "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES" and does not name AARO or any requiring office.
+### USAspending transaction record for the HQ003426FE050 base award (January 28, 2026): the description names neither AARO nor any requiring office.
+
+Base award (modification_number "0"), action_date 2026-01-28, action_type null, type BPA CALL, federal_action_obligation 2064311.0. The description field reads "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES" and does not name AARO or any requiring office.
 
 > "action_date":"2026-01-28","action_type":null,"action_type_description":null,"modification_number":"0","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":2064311.0
 
@@ -1681,7 +1805,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0 -- the latest transaction in this file. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
+### USAspending transaction record for HQ003424C0046 modification P00008 (March 4, 2026): the latest transaction in this file, a supplemental agreement for work within scope obligating 11280.0.
+
+The record gives action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES".
 
 > "action_date":"2026-03-04","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00008","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":11280.0
 
@@ -1693,7 +1819,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### P00008 is the latest entry in the archived feed and was signed 2026-03-04. Current and ultimate completion stay at 2026-05-27 (unchanged). Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).
+### FPDS record for HQ003424C0046, modification P00008 (March 4, 2026): current and ultimate completion stay at 2026-05-27 (unchanged) in the latest entry of the archived feed.
+
+P00008 is the latest entry in the archived feed and was signed 2026-03-04. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).
 
 > <ns1:modNumber>P00008</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2026-03-04 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1757,7 +1885,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Sancorp Past Performance — HQ003425FE388 contract listing identifies the customer as Office of the Under Secretary of War for Intelligence and Security. The underlying USAspending record for HQ003425FE388 separately describes the work as supporting Counterintelligence, Law Enforcement and Security (CL&S); Sancorp's public-facing Past Performance page is the source attesting the OUSW(I&S) form.
+### Sancorp Past Performance page (captured April 30, 2026): the HQ003425FE388 contract listing identifies the customer as the Office of the Under Secretary of War for Intelligence and Security.
+
+The underlying USAspending record for HQ003425FE388 separately describes the work as supporting Counterintelligence, Law Enforcement and Security (CL&S); Sancorp's public-facing Past Performance page is the source attesting the OUSW(I&S) form.
 
 > Office of the Under Secretary of War for Intelligence and Security, Policy, Operations, Analytic and Business Operations Support Services (Prime Contract) HQ003425FE388
 
@@ -1769,7 +1899,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Sancorp Past Performance — HQ003425A0001 contract listing identifies the customer as the Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support. The USAspending BPA record for HQ003425A0001 lists funding office "OSD OUSD(I)" and names no requiring office; Sancorp's public-facing Past Performance page is the source attesting the OASD(S&T) customer form.
+### Sancorp Past Performance page (captured April 30, 2026): the HQ003425A0001 contract listing identifies the customer as the Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support.
+
+The USAspending BPA record for HQ003425A0001 lists funding office "OSD OUSD(I)" and names no requiring office; Sancorp's public-facing Past Performance page is the source attesting the OASD(S&T) customer form.
 
 > Office of the Assistant Secretary of Defense for Science & Technology Programs and Operations Support (Prime Contract) HQ003425A0001
 
@@ -1781,7 +1913,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003424C0096 modification P00007, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -56454.61 (a negative obligation), under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description. It is the latest of the 8 transaction records in the file.
+### USAspending transaction record for HQ003424C0096 modification P00007 (May 6, 2026): a -56454.61 negative obligation is recorded under the AARO description, the latest of the file's 8 transaction records.
+
+The record gives action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -56454.61 (a negative obligation), under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description. It is the latest of the 8 transaction records in the file.
 
 > "action_date":"2026-05-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00007","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES","federal_action_obligation":-56454.61
 
@@ -1793,7 +1927,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003426FE050 modification P00002, action_date 2026-05-07, action type G (EXERCISE AN OPTION), federal_action_obligation 1700000.0. The description field is unchanged from the base award and does not name AARO or any requiring office.
+### USAspending transaction record for HQ003426FE050 modification P00002 (May 7, 2026): the option exercise leaves the description unchanged from the base award, naming neither AARO nor any requiring office.
+
+The record gives action_date 2026-05-07, action type G (EXERCISE AN OPTION), federal_action_obligation 1700000.0. The description field is unchanged from the base award and does not name AARO or any requiring office.
 
 > "action_date":"2026-05-07","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00002","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":1700000.0
 
@@ -1805,7 +1941,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### USAspending transaction record for HQ003426FE050 modification P00004, action_date 2026-06-04, action type C (FUNDING ONLY ACTION), federal_action_obligation 142521.2; the latest of the five transaction records returned (base award, P00001-P00004). All five records carry the identical description "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES"; none of the five transaction descriptions names AARO (the file contains no "AARO" or "ANOMALY" string) or any requiring office.
+### USAspending transaction record for HQ003426FE050 modification P00004 (June 4, 2026): the latest of five transaction records, none of whose descriptions names AARO or any requiring office.
+
+The record gives action_date 2026-06-04, action type C (FUNDING ONLY ACTION), federal_action_obligation 142521.2; the latest of the five transaction records returned (base award, P00001-P00004). All five records carry the identical description "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES"; none of the five transaction descriptions names AARO (the file contains no "AARO" or "ANOMALY" string) or any requiring office.
 
 > "action_date":"2026-06-04","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":142521.2
 
@@ -1817,7 +1955,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Sancorp's own job requisition (req 1258, Staff Officer III) describes the position's work as Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting cites no contract number.
+### Sancorp job requisition 1258, Staff Officer III (August 10, 2026): the position supports Research, Development, Test & Evaluation Activities within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO).
+
+Sancorp's own job requisition (req 1258, Staff Officer III) describes the position's work as Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting cites no contract number.
 
 > SANCORP is seeking a Staff Officer III to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test &amp; Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&amp;S)) All-Domain Anomaly Resolution Office (AARO).
 
@@ -2009,7 +2149,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Requisition 1260 (Budget Analyst III) uses the same Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services phrase in direct support to Research, Development, Test & Evaluation Activities within OUSW(I&S); it names OUSW(I&S) only, does not name AARO, and cites no contract number.
+### Sancorp job requisition 1260, Budget Analyst III (August 14, 2026): the position supports Research, Development, Test & Evaluation Activities within OUSW(I&S), naming neither AARO nor a contract number.
+
+Requisition 1260 (Budget Analyst III) uses the same Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services phrase in direct support to Research, Development, Test & Evaluation Activities within OUSW(I&S); it names OUSW(I&S) only, does not name AARO, and cites no contract number.
 
 > SANCORP is seeking a Budget Analyst III to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test &amp; Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&amp;S)).
 
@@ -2081,7 +2223,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### The description opens with the numbered heading "5.2.3", pairing "Staff Officer SME IV" with the title "Field Operations & Sensor Support SME IV/ Action Officer". The record does not state what document the 5.2.3 numbering refers to.
+### Sancorp job requisition 1206 (September 4, 2026): the description opens with the numbered heading "5.2.3", pairing "Staff Officer SME IV" with "Field Operations & Sensor Support SME IV/ Action Officer".
+
+The heading pairs "Staff Officer SME IV" with the title "Field Operations & Sensor Support SME IV/ Action Officer". The record does not state what document the 5.2.3 numbering refers to.
 
 > 5.2.3 Staff Officer SME IV/Field Operations &amp; Sensor Support SME IV/ Action Officer
 
@@ -2093,7 +2237,9 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### Sancorp states the position provides "Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services" in direct support to Research, Development, Test & Evaluation Activities within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)). The requiring office named is OUSW(I&S) only; the record does not name AARO. The body calls the role "Staff Officer SME IV" while the requisitionTitle is "Field Operations & Sensor Support SME IV/ Action Officer".
+### Sancorp job requisition 1206 (September 4, 2026): the Staff Officer SME IV position supports Research, Development, Test & Evaluation Activities within OUSW(I&S), and the record does not name AARO.
+
+Sancorp states the position provides "Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services" in direct support to Research, Development, Test & Evaluation Activities within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)). The requiring office named is OUSW(I&S) only; the record does not name AARO. The body calls the role "Staff Officer SME IV" while the requisitionTitle is "Field Operations & Sensor Support SME IV/ Action Officer".
 
 > SANCORP is seeking a Staff Officer SME IV to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test &amp; Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&amp;S)).
 

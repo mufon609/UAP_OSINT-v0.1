@@ -59,7 +59,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ## Key Passages
 
-### Lacatski's opening response to Corbell's recurring "was it given to us, gifted to us, or a crash" question — he restates the structural reason he can't answer, and frames the same restrictions as applying to other witnesses before Congress even behind closed doors. Closed doors "don't really matter" in answering the underlying question per Corbell's follow-up.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski restates the structural reason he can't answer Corbell's craft-provenance question and says the same restrictions apply to other witnesses before Congress.
+
+This is Lacatski's opening response to Corbell's recurring "was it given to us, gifted to us, or a crash" question; he frames the same restrictions as applying to other witnesses before Congress even behind closed doors. Closed doors "don't really matter" in answering the underlying question per Corbell's follow-up.
 
 > [1:12] you're going to get people mad at me for not answering when they know in advance and so do you that I can't answer. And neither could they and neither could some of the people who are are going before Congress. They're putting pretty tight restrictions on on it if they do go if they do go behind closed doors.
 
@@ -72,7 +74,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's relative-technology framing — the recovered craft makes "Initial Revelations" (Inside the US Government Covert UFO Program) book technology "look primitive"; characterizes it as "very advanced and with worldwide repercussions." Establishes the qualitative gap Lacatski himself attests between the book's discussed technology and the craft he affirms exists.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's relative-technology framing characterizes the recovered craft as "very advanced and with worldwide repercussions."
+
+The recovered craft makes "Initial Revelations" (Inside the US Government Covert UFO Program) book technology "look primitive." Establishes the qualitative gap Lacatski himself attests between the book's discussed technology and the craft he affirms exists.
 
 > [2:12] To means it it uh it's very advanced and that's all I can say. Very very advanced and with worldwide repercussions.
 
@@ -85,7 +89,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's direct on-record reframing of his disclosure stance — "they are my disclosure and they are the public's disclosure remember the public paid $22 million for the information." Notable shift from his PART 1 "am I a disclosure advocate the answer is no" — the books-as-disclosure framing positions the published material itself as the disclosure act. 99% of AAWSAP-resulting information is "releasable" per Lacatski.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct on-record reframing of his disclosure stance: the books "are my disclosure and they are the public's disclosure."
+
+He adds: "remember the public paid $22 million for the information." Notable shift from his PART 1 "am I a disclosure advocate the answer is no" — the books-as-disclosure framing positions the published material itself as the disclosure act. 99% of AAWSAP-resulting information is "releasable" per Lacatski.
 
 > [2:59] in my opinion yes they are they they are the my disclosure and they are the public's disclosure remember the public paid $22 million for the information uh the resulting information from OAP is uh for the most well for for 99% is releasable
 
@@ -98,7 +104,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's most specific Kona Blue characterization to date — "Kona Blue was a compartment reputed to be for recovered technology" plus "Kona Blue the program" first described in Skinwalkers at the Pentagon via the private-investment-of-money structure. Lacatski affirms AAWSAP is not going to be repeated.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's most specific Kona Blue characterization to date: "Kona Blue was a compartment reputed to be for recovered technology," plus "Kona Blue the program."
+
+The program was first described in Skinwalkers at the Pentagon via the private-investment-of-money structure. Lacatski affirms AAWSAP is not going to be repeated.
 
 > [6:25] As I said, Kona Blue was a compartment reputed to be for uh uh recovered technology. Okay. And then there's Kona Blue the program which was in essence first described in uh and I'm pointing up to a book sitting up there skinwalkers at the Pentagon
 
@@ -111,7 +119,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's direct non-denial of pre-AAWSAP legacy UAP program involvement — "I can't speak to that." Asked twice whether he would deny it; he says only "I can't speak about that." Documents Lacatski's only other attested clearance ("Q clearance at deal" — likely Q clearance at DOE) and the structural refusal to deny pre-AAWSAP legacy program read-in. The "deal" auto-caption likely renders "DOE" (Department of Energy) — Q clearance is the DOE counterpart to a Top Secret clearance.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct non-denial of pre-AAWSAP legacy UAP program involvement: "I can't speak to that."
+
+Asked twice whether he would deny it; he says only "I can't speak about that." Documents Lacatski's only other attested clearance ("Q clearance at deal" — likely Q clearance at DOE) and the structural refusal to deny pre-AAWSAP legacy program read-in. The "deal" auto-caption likely renders "DOE" (Department of Energy) — Q clearance is the DOE counterpart to a Top Secret clearance.
 
 > [19:53] I can't speak to that. The only other clearance I had was uh, uh, a Q clearance at deal.
 
@@ -124,7 +134,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's named-witnesses listing of who is structurally blocked from talking to Congress without compartment read-in: David Grush ([`/people/david-grusch`]; auto-caption rendering of Grusch) and Dylan Borland ([`/people/dylan-borland`]) — "everybody that has a knowledge in these special access programs." Establishes the institutional blocker on closed-door briefings as a generalizable problem rather than Lacatski-specific.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski names David Grush and Dylan Borland among those structurally blocked from talking to Congress without compartment read-in.
+
+Lacatski's named-witnesses listing: David Grush ([`/people/david-grusch`]; auto-caption rendering of Grusch) and Dylan Borland ([`/people/dylan-borland`]) — "everybody that has a knowledge in these special access programs." Establishes the institutional blocker on closed-door briefings as a generalizable problem rather than Lacatski-specific.
 
 > [20:50] Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements, which is a very difficult thing. That's why some of the closed door briefings haven't happened because they wouldn't be they wouldn't progress anything.
 
@@ -137,7 +149,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's exact non-answer pattern on the NHI-contact-at-government-level question — refuses both the substantive question and the meta-question of whether he knows the answer. Documents that Lacatski's "I can't make a statement" extends to whether he has the relevant knowledge.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's exact non-answer pattern on the NHI-contact-at-government-level question refuses both the substantive question and the meta-question of whether he knows the answer.
+
+Documents that Lacatski's "I can't make a statement" extends to whether he has the relevant knowledge.
 
 > [21:21] I can't make a statement on that.
 
@@ -150,7 +164,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's direct attribution of the false documents inserted into AAWSAP / DIA / DoD records as "deliberate" rather than mistaken — "deliberate false information put in there. Deliberate." Lacatski names the counterintelligence technique of "confusion for the sake of confusion" and asks "what was the purpose when other things counted." Extends the PART 1 disinformation framing.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct attribution of the false documents inserted into AAWSAP / DIA / DoD records as "deliberate" rather than mistaken.
+
+In his words: "deliberate false information put in there. Deliberate." Lacatski names the counterintelligence technique of "confusion for the sake of confusion" and asks "what was the purpose when other things counted." Extends the PART 1 disinformation framing.
 
 > [24:14] I'm going to have to say that I think it was deliberate false information put in there. Deliberate uh dist. Again, I I the public's going to your listeners uh are going to have to weigh in on that because I don't want them to burden on you because I'll have probably a thousand opinions. But why? What was the purpose when other things counted? Is it simply confusion for the sake of confusion? That is a a counterintel technique.
 
@@ -163,7 +179,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's direct response to whether the 2004 Tic Tac is US technology — "No, it's not. I mean, I don't know that officially, but there are other things that were not discussed in the full descriptions that occurred that would have that implemented on aircraft. If we had that technology" — the counterfactual argument: if it had been US technology, it would be on aircraft 21 years later, and it is not. Establishes "the very first case that OAP investigated" as the Tic Tac.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct response on whether the 2004 Tic Tac is US technology — "No, it's not" — argues that if it were, it would be on aircraft 21 years later.
+
+The full response: "No, it's not. I mean, I don't know that officially, but there are other things that were not discussed in the full descriptions that occurred that would have that implemented on aircraft. If we had that technology" — the counterfactual argument: if it had been US technology, it would be on aircraft 21 years later, and it is not. Establishes "the very first case that OAP investigated" as the Tic Tac.
 
 > [36:11] it's not. I mean, I don't know that officially, but there are other things that were not uh not discussed in the full descriptions that occurred that uh uh would have that implemented on aircraft. If if if if we had that technology,
 
@@ -176,7 +194,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Jeremy's closing of the Tic Tac question, "the tic tac is not Loheed Martin. Definitively, the tic tac is not Loheed Martin technology from 2004" — Lacatski's response: "not that I'm aware of." Auto-caption renders Lockheed as "Loheed" — see naming_quirks. Establishes Lacatski's "not that I'm aware of" on whether Tic Tac is Lockheed Martin technology, the closest the corpus comes on this specific question.
+### WEAPONIZED Part 2 (November 11, 2025): pressed on whether the Tic Tac is Lockheed Martin technology from 2004, Lacatski answers "not that I'm aware of."
+
+Jeremy's closing of the Tic Tac question, "the tic tac is not Loheed Martin. Definitively, the tic tac is not Loheed Martin technology from 2004" — Lacatski's response: "not that I'm aware of." Auto-caption renders Lockheed as "Loheed" — see naming_quirks. Establishes Lacatski's "not that I'm aware of" on whether Tic Tac is Lockheed Martin technology, the closest the corpus comes on this specific question.
 
 > [37:10] not that I'm aware of.
 
@@ -189,7 +209,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's on-record opinion on 3I/ATLAS as a possible non-natural object — "doubtful." Frames the visiting-an-alien-civilization-in-a-rock framing as "pre-Star Trek pre-enterprise" — his rocket-scientist-and-propulsion-expert opinion. Documents Lacatski's assessment of the Avi Loeb-framed extraterrestrial-comet hypothesis as unconvincing.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's on-record opinion on 3I/ATLAS as a possible non-natural object: "doubtful."
+
+He frames the visiting-an-alien-civilization-in-a-rock framing as "pre-Star Trek pre-enterprise" — his rocket-scientist-and-propulsion-expert opinion. Documents Lacatski's assessment of the Avi Loeb-framed extraterrestrial-comet hypothesis as unconvincing.
 
 > [38:14] My opinion is people are going to criticize me either way, but I think it's doubtful. It's almost like something we would do Star Treky like pre-star Trek pre-enterprise. It's just like really you're going to coast the universe and a big rock.
 
@@ -202,7 +224,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's first-person framing of his own ranch encounters — "mild" and "a neutrality to it," not the severity others experienced. Documents that Lacatski has had his own encounters which he will describe in the future. Notable shift from third-person institutional-actor narration to first-person experience.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's first-person framing of his own ranch encounters as "mild" with "a neutrality to it," not the severity others experienced.
+
+Documents that Lacatski has had his own encounters which he will describe in the future. Notable shift from third-person institutional-actor narration to first-person experience.
 
 > [47:25] Uh to the severity no one else that everyone else had. No, no. And and any encounters which I will describe in the future have been uh mild to I wouldn't say pleasant. It's just been mild. It's just a neutrality to it.
 
@@ -215,7 +239,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's first-person "man in black sighting" attestation — "during Kona Blue, not during Oset"; he frames it as "no way anyone could pull this off as a counterintelligence operation"; "not a sighting of a person, but clearly a strange event." Important temporal anchor: places the MIB event squarely in the Kona Blue period (post-AAWSAP) and not during AAWSAP itself.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's first-person "man in black sighting" attestation places the event "during Kona Blue, not during Oset."
+
+He frames it as "no way anyone could pull this off as a counterintelligence operation"; "not a sighting of a person, but clearly a strange event." Important temporal anchor: places the MIB event squarely in the Kona Blue period (post-AAWSAP) and not during AAWSAP itself.
 
 > [47:48] One hint. I had I had a firm no way anyone could pull this off as a counter inelligence operation. my own man in black sighting, but not a sighting of a person, but clearly clearly a strange event. And this was during Kona Blue, not during Oset. Everything else seemed to happen in right after Osap. There were there were a lot of things happening and closing down the project that I put in the in the book.
 
@@ -228,7 +254,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's description of the MIB image — a man in black suit, white shirt, black shoes and tie, black hat illustration on "a full blank page" with two words below: "Join us." Encountered on the express train from Union Station during Kona Blue. The illustration-on-newspaper detail is distinctive — not a person but a printed image presented to him deliberately.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's description of the MIB image: a man in black suit and black hat illustration on "a full blank page" with two words below, "Join us."
+
+The illustration shows a man in black suit, white shirt, black shoes and tie, black hat. Encountered on the express train from Union Station during Kona Blue. The illustration-on-newspaper detail is distinctive — not a person but a printed image presented to him deliberately.
 
 > [49:47] I look over and there's a man in black on a full blank page. A traditional typical always illustrated this way man in black suit, white uh shirt, black shoes and tie, shiny black shoes in the picture and a black hat. Who in Washington wears a black hat like that? and had two words, two words below him. Join us.
 
@@ -241,7 +269,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### George frames Senator Reid's "race-is-still-on" thesis and Jay Stratton's ([`/people/jay-stratton`]) "you can't tell your friends without telling your enemies" framing; Lacatski affirms "I agree with it's still on." Documents Lacatski's direct on-record agreement that the technology-recovery race with adversary nations is ongoing as of November 2025.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct on-record agreement that the technology-recovery race with adversary nations is ongoing: "I agree with it's still on."
+
+George frames Senator Reid's "race-is-still-on" thesis and Jay Stratton's ([`/people/jay-stratton`]) "you can't tell your friends without telling your enemies" framing; Lacatski affirms. Documents Lacatski's agreement as of November 2025.
 
 > [1:04:25] >> Well I agree with it's still on. I don't know how that's for people the younger people to figure out how do you balance it because for me I'm out of it now in regard to participating so I can't advise anybody but I can state it's going to be very difficult job if the breakthrough technology is as dramatic as it appears
 
@@ -254,7 +284,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's direct first-person attestation on recovered bodies / biologics — "I know nothing about that right now." Documents the structural limit on Lacatski's knowledge of the biologics-recovery question that Jeremy has been pursuing. Coupled with "we need those people" — younger scientists with medical degrees and clearances to be read in.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's direct first-person attestation on recovered bodies / biologics: "I know nothing about that right now."
+
+Documents the structural limit on Lacatski's knowledge of the biologics-recovery question that Jeremy has been pursuing. Coupled with "we need those people" — younger scientists with medical degrees and clearances to be read in.
 
 > [1:07:26] like you know Jeremy's recovered bodies. Uh I know nothing about that right now, but we need you know we need those people. Initial revelations was a tough read. I know that.
 
@@ -267,7 +299,9 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 ---
 
-### Lacatski's clarification that Kona Blue is "much more than going and getting what some have described as 60 year old parts" — a direct rebuttal of public framings that Kona Blue was about acquiring legacy crash-debris material. Lacatski says he knows "what the exchange parameters were" and "what was promised on all sides" — exchange-parameters framing implies a multi-party transaction structure for Kona Blue rather than simple material recovery.
+### WEAPONIZED Part 2 (November 11, 2025): Lacatski's clarification that Kona Blue is "much more than going and getting what some have described as 60 year old parts."
+
+This is a direct rebuttal of public framings that Kona Blue was about acquiring legacy crash-debris material. Lacatski says he knows "what the exchange parameters were" and "what was promised on all sides" — exchange-parameters framing implies a multi-party transaction structure for Kona Blue rather than simple material recovery.
 
 > [1:10:17] >> you're not going to be yet. We need to define what is in Kona blue. And let me tell you, it's much more than going and getting what some have described as 60 year old parts. No, it's much more than that. And and I'm I I can say I know what the exchange parameters were and I know what was promised on all sides. And I mean there was also the the money side.
 

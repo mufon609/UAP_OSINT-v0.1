@@ -63,8 +63,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: title-page Prepared-by / Authors block
-    significance: Author identity redacted under (b)(6) personal-privacy exemption inside the DIRD itself; preparing organization
-      redacted under (b)(3):10 USC 424. Documents that the DIRD-13 attribution to Obousy is extrinsic, not internal.
+    significance: 'DIRD #13 title page (April 2, 2010): the author identity is redacted under (b)(6) and the preparing organization under (b)(3):10 USC 424.'
+    analysis: 'The (b)(6) personal-privacy exemption is applied inside the DIRD itself. Documents that the DIRD-13 attribution to Obousy is extrinsic, not internal.'
     statement_date: '2010-04-02'
     claim_group: document_identity
   - id: q3
@@ -76,8 +76,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Administrative Note
-    significance: Self-identifies DIRD-13 as an AAWSA Program FY 2009 product — the DIA program (later commonly referenced
-      as AAWSAP) under which the DIRDs were commissioned. Bldg 6000, Washington DC 20340-5100 is the DIA HQ mailing address.
+    significance: 'DIRD #13 Administrative Note (April 2, 2010): the report self-identifies as an AAWSA Program FY 2009 product.'
+    analysis: 'The AAWSA Program that DIRD-13 names is the DIA program (later commonly referenced as AAWSAP) under which the DIRDs were commissioned. Bldg 6000, Washington DC 20340-5100 is the DIA HQ mailing address.'
     statement_date: '2010-04-02'
     claim_group: program_identity
   - id: q4
@@ -117,8 +117,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Introduction, paradigm-shift paragraph
-    significance: The paper's central thesis claim — re-derive warp-drive physics from QFT (rather than GR) and obtain a dramatic
-      energy-requirement reduction. Reference 2 is Obousy & Cleaver, the author's own prior paper.
+    significance: 'DIRD #13 Introduction (April 2, 2010): the paper''s central thesis claim is to re-derive warp-drive physics from QFT rather than GR.'
+    analysis: 'Re-deriving from QFT (rather than GR) is claimed to obtain a dramatic energy-requirement reduction. Reference 2 is Obousy & Cleaver, the author''s own prior paper.'
     statement_date: '2010-04-02'
     claim_group: thesis_framing
   - id: q7
@@ -175,8 +175,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 2.1 Warp Drive Requirements, post-Equation-(2.3) paragraph
-    significance: 'Summarizes the GR-based bottom line: the energy requirement is an enormous negative number even at arbitrarily
-      low sublight speeds. This is the result the QFT-paradigm thesis later claims to reduce by ~8 orders of magnitude.'
+    significance: 'DIRD #13, Section 2.1 (April 2, 2010): under GR the warp-bubble energy requirement is an enormous negative number even at arbitrarily low sublight speeds.'
+    analysis: 'This summarizes the GR-based bottom line. This is the result the QFT-paradigm thesis later claims to reduce by ~8 orders of magnitude.'
     statement_date: '2010-04-02'
     claim_group: warp_requirements
   - id: q11
@@ -189,9 +189,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 2.1 Warp Drive Requirements, garden-snail illustration paragraph
-    significance: 'The DIRD''s vivid quantitative reductio of the GR-only warp drive: a 10^6 kg ship in a 50 m bubble achieves
-      v_warp ≤ 5.16 × 10⁻⁶ m/s — slower than a garden snail. Note the visible scan-line minus-sign drops on the exponents
-      preserved verbatim (the sibling''s OCR-quirk preservation).'
+    significance: 'DIRD #13, Section 2.1 (April 2, 2010): a 10^6 kg ship in a 50 m bubble achieves v_warp ≤ 5.16 × 10⁻⁶ m/s — slower than a garden snail.'
+    analysis: 'This is the DIRD''s vivid quantitative reductio of the GR-only warp drive. Note the visible scan-line minus-sign drops on the exponents preserved verbatim (the sibling''s OCR-quirk preservation).'
     statement_date: '2010-04-02'
     claim_group: warp_requirements
   - id: q12
@@ -240,9 +239,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 4.1 The Casimir Effect, post-Equation-(4.2) paragraph
-    significance: 'DIRD''s physical-significance claim about the Casimir force: not reducible to the four fundamental forces;
-      sourced entirely in vacuum modification. This is the conceptual lever the paper later uses to argue dark-energy density
-      is controllable in principle.'
+    significance: 'DIRD #13, Section 4.1 (April 2, 2010): the Casimir force is not reducible to the four fundamental forces and is sourced entirely in vacuum modification.'
+    analysis: 'This is the DIRD''s physical-significance claim about the Casimir force. This is the conceptual lever the paper later uses to argue dark-energy density is controllable in principle.'
     statement_date: '2010-04-02'
     claim_group: casimir_mechanism
   - id: q16
@@ -268,8 +266,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 4.1 The Casimir Effect, closing summary paragraph
-    significance: Pivot statement — explicitly motivates linking Casimir vacuum energy to dark energy as a stepping stone
-      to warp-drive realization. Sets up Sections 5-6.
+    significance: 'DIRD #13, Section 4.1 summary (April 2, 2010): the paper explicitly motivates linking Casimir vacuum energy to dark energy as a stepping stone to warp-drive realization.'
+    analysis: 'This is the paper''s pivot statement. Sets up Sections 5-6.'
     statement_date: '2010-04-02'
     claim_group: casimir_mechanism
   - id: q18
@@ -309,8 +307,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 6 Dark Energy as a Higher Dimensional Artifact, novel-regularization claim
-    significance: Author's claim of a novel regularization technique on the ADD vacuum potential (yielding Equation 6.2).
-      Self-claimed contribution to the regularization literature.
+    significance: 'DIRD #13, Section 6 (April 2, 2010): the author claims a novel regularization technique on the ADD vacuum potential, yielding Equation 6.2.'
+    analysis: 'The author''s claim is a self-claimed contribution to the regularization literature.'
     statement_date: '2010-04-02'
     claim_group: qft_contribution
   - id: q21
@@ -328,9 +326,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 6 Dark Energy as a Higher Dimensional Artifact, tuning-dark-energy paragraph
-    significance: Central claim of Section 6 — by including extra-dimensional vacuum-field contributions and allowing exotic
-      fields in the higher dimension, the theoretical vacuum energy density can be tuned to match observed Λ. The "taming"
-      of the cosmological-constant problem central to the paper's argument.
+    significance: 'DIRD #13, Section 6 (April 2, 2010): by including extra-dimensional vacuum-field contributions, the theoretical vacuum energy density can be tuned to match observed Λ.'
+    analysis: 'This is the central claim of Section 6, and it also relies on allowing exotic fields in the higher dimension. The "taming" of the cosmological-constant problem central to the paper''s argument.'
     statement_date: '2010-04-02'
     claim_group: dark_energy_mechanism
   - id: q22
@@ -359,8 +356,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7 Warp Drive and Higher Dimensional Manipulation, opening radius-fourth-power paragraph
-    significance: 'Quantitative core of the warp-drive proposal: Casimir / vacuum energy scales as 1/R⁴ of the extra-dim radius.
-      The strong leverage (small radius changes → dramatic energy-density swings) the paper exploits as the propulsion mechanism.'
+    significance: 'DIRD #13, Section 7 (April 2, 2010): Casimir / vacuum energy scales as 1/R⁴ of the extra-dim radius, the quantitative core of the warp-drive proposal.'
+    analysis: 'This is the strong leverage (small radius changes → dramatic energy-density swings) the paper exploits as the propulsion mechanism.'
     statement_date: '2010-04-02'
     claim_group: warp_drive_mechanism
   - id: q24
@@ -413,8 +410,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.4 Elementary Warp Drive Calculations, foundation-of-novel-concept paragraph
-    significance: Originality claim — the variable-radius extra dimension has been studied in string theory (Reference 57
-      = Giddings) but "has never before been suggested" as a propulsion mechanism. This is the paper's claim to novel contribution.
+    significance: 'DIRD #13, Section 7.4 (April 2, 2010): the paper claims the variable-radius extra dimension, studied in string theory, "has never before been suggested" as a propulsion mechanism.'
+    analysis: 'Originality claim — the string-theory study cited is Reference 57 = Giddings. This is the paper''s claim to novel contribution.'
     statement_date: '2010-04-02'
     claim_group: research_provenance
   - id: q27
@@ -427,9 +424,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.4 Elementary Warp Drive Calculations, energy-reduction-factor paragraph
-    significance: Quantitative payoff of the QFT paradigm — Table 3 (dimensional-warp) shows energy requirements ~10⁸ × lower
-      than Table 2 (Lobo-Visser GR-warp), with further reduction possible via the thin-shell model. The headline numerical
-      claim of the paper.
+    significance: 'DIRD #13, Section 7.4 (April 2, 2010): Table 3 (dimensional-warp) shows energy requirements ~10⁸ × lower than Table 2 (Lobo-Visser GR-warp).'
+    analysis: 'This is the quantitative payoff of the QFT paradigm, with further reduction possible via the thin-shell model. The headline numerical claim of the paper.'
     statement_date: '2010-04-02'
     claim_group: energy_requirements
   - id: q28
@@ -441,9 +437,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.4 Elementary Warp Drive Calculations, energy-still-far-in-excess paragraph
-    significance: Author's own caveat — the 10⁸× improvement notwithstanding, required energies remain "far in excess of those
-      available in the foreseeable future." An important hedge that prevents the paper from reading as a technology-ready
-      claim.
+    significance: 'DIRD #13, Section 7.4 (April 2, 2010): the author''s own caveat is that required energies remain "far in excess of those available in the foreseeable future."'
+    analysis: 'The caveat holds the 10⁸× improvement notwithstanding. An important hedge that prevents the paper from reading as a technology-ready claim.'
     statement_date: '2010-04-02'
     claim_group: energy_requirements
   - id: q29
@@ -459,9 +454,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.5 Future Experiments, dark-energy-laser proposal paragraph
-    significance: Proposes a concrete tabletop experimental test — a hypothetical "dark energy laser" (w<-1 output) producing
-      a measurable local-expansion signature on the order of 10⁻⁵ m/s per meter of laser path. The paper's only direct experimental-falsifiability
-      proposal.
+    significance: 'DIRD #13, Section 7.5 (April 2, 2010): the paper proposes a concrete tabletop experimental test using a hypothetical "dark energy laser" (w<-1 output).'
+    analysis: 'The hypothetical laser would be producing a measurable local-expansion signature on the order of 10⁻⁵ m/s per meter of laser path. The paper''s only direct experimental-falsifiability proposal.'
     statement_date: '2010-04-02'
     claim_group: experimental_tests
   - id: q30
@@ -473,8 +467,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.6 The Development of the Technology, prerequisites paragraphs
-    significance: Technology-development sequence statement — (1) deeper dark-energy understanding + lab generation, (2) experimental
-      confirmation that extra dimensions exist. Defines the prerequisite scientific milestones for any warp-drive prototype.
+    significance: 'DIRD #13, Section 7.6 (April 2, 2010): a warp-drive prototype first needs deeper dark-energy understanding and lab generation, then experimental confirmation that extra dimensions exist.'
+    analysis: 'This technology-development sequence statement defines the prerequisite scientific milestones for any warp-drive prototype.'
     statement_date: '2010-04-02'
     claim_group: tech_development
   - id: q31
@@ -486,9 +480,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 7.6 The Development of the Technology, LHC-Atlas probe paragraphs
-    significance: Most aggressive technological claim of the DIRD — that LHC-Atlas energies might not only probe ADD/RS extra
-      dimensions but "control" their size, enabling "direct control of the local dark energy density." Couples the warp-drive
-      program to a then-current (2009-2010) accelerator capability.
+    significance: 'DIRD #13, Section 7.6 (April 2, 2010): the DIRD''s most aggressive technological claim is that LHC-Atlas energies might "control" extra-dimension size, enabling "direct control of the local dark energy density."'
+    analysis: 'The claim goes beyond LHC-Atlas energies merely being able to probe ADD/RS extra dimensions and their size. Couples the warp-drive program to a then-current (2009-2010) accelerator capability.'
     statement_date: '2010-04-02'
     claim_group: tech_development
   - id: q32
@@ -513,8 +506,8 @@ quotes:
     source:
       path: government/dird-13-warp-drive-extra-dimensions-20100402.pdf
       location: Section 8 Summary, closing paragraph
-    significance: Paper's closing rhetorical posture — couches the warp-drive program in Clarke's-Third-Law terms ("may seem
-      like magic"). Establishes the speculative epistemic frame of the document's conclusion.
+    significance: 'DIRD #13, Section 8 Summary (April 2, 2010): the paper''s close couches the warp-drive program in Clarke''s-Third-Law terms ("may seem like magic").'
+    analysis: 'This is the paper''s closing rhetorical posture. Establishes the speculative epistemic frame of the document''s conclusion.'
     statement_date: '2010-04-02'
     claim_group: summary
 naming_quirks:

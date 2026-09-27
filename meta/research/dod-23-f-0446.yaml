@@ -23,7 +23,8 @@ quotes:
   source:
     path: government/whs-foid-foia-log-fy23.xlsx
     location: 'sheet FOID_FOIA_Log-FY23, log # 620 (Request ID 23-F-0446), cells # through Final Disposition'
-  significance: 'The FOID FY2023 log row for this request (TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition): tracking number 23-F-0446; requester Greenewald, John; organization The Black Vault, Inc.; received via E-mail on 2023-02-14; closed 2023-06-22; final disposition Granted / Denied in Part.'
+  significance: 'WHS FOID FY23 FOIA log (closed June 22, 2023): the row for 23-F-0446 records requester Greenewald, John (The Black Vault, Inc.), received by E-mail 2023-02-14, final disposition Granted / Denied in Part.'
+  analysis: 'The FOID FY2023 log row for this request sits in TAB-separated cells under the header columns #, Request ID, Requester Name, Organization, Received Mode, Received Date, Closed Date, Final Disposition: tracking number 23-F-0446; requester Greenewald, John; organization The Black Vault, Inc.; received via E-mail on 2023-02-14; closed 2023-06-22; final disposition Granted / Denied in Part.'
   context: 'Agency-kept FOIA log (WHS FOID FY23 log, sheet FOID_FOIA_Log-FY23); the row is the agency record of the request, not requester correspondence. The quote''s statement date is the log''s Closed Date, 2023-06-22.'
   claim_group: request-log-row
   statement_date: '2023-06-22'

@@ -123,7 +123,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk ''The Garment of God'', published in a Lucis Trust Bi annual letter under the title ''Science is our meditation on the nature of the universe''. This is the closing sentence of the published excerpt, delivered approximately one month before Ryder''s death.'
     statement_date: '2018-04-28'
-    significance: 'Final published Ryder-byline statement on the role of science. Closing line of the edited transcript excerpt; Ryder died approximately one month after the original April 28-29, 2018 New York conference talk.'
+    significance: 'Lucis Trust Bi annual letter excerpt of Ryder''s talk (April 28, 2018): final published Ryder-byline statement on the role of science.'
+    analysis: 'Closing line of the edited transcript excerpt; Ryder died approximately one month after the original April 28-29, 2018 New York conference talk.'
   - id: q4
     claim_group: "Lockheed Martin Spacecraft Leadership"
     added_date: '2026-05-07'
@@ -135,7 +136,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'' (London, May 2015; YouTube DUgMd8ic2ig).'
     statement_date: '2015-05'
-    significance: 'First-person Ryder primary attestation that IBEX (Interstellar Boundary Explorer, NASA Small Explorer mission launched October 2008) was developed in his Lockheed Martin Advanced Technology Center lab. Documents direct R&D leadership of a NASA spacecraft program by name. Auto-caption renders ''IBEX'' as ''ibx''.'
+    significance: 'Ryder''s "Soul Is Light" talk, London (May 2015): first-person Ryder primary attestation that IBEX was developed in his Lockheed Martin Advanced Technology Center lab.'
+    analysis: 'IBEX is the Interstellar Boundary Explorer, NASA Small Explorer mission launched October 2008. Documents direct R&D leadership of a NASA spacecraft program by name. Auto-caption renders ''IBEX'' as ''ibx''.'
   - id: q5
     claim_group: "Lockheed Martin Spacecraft Leadership"
     added_date: '2026-05-07'
@@ -147,7 +149,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'', referencing the May 2015 Nature publication on the matter halo around the Andromeda galaxy and the spacecraft instrumentation behind that observation.'
     statement_date: '2015-05'
-    significance: 'First-person Ryder primary attestation that his company (Lockheed Martin Space Systems Company) built the spacecraft instruments behind the May 2015 Andromeda matter-halo Nature publication and that he personally oversaw the program. A second on-camera attestation of his Lockheed Martin Space Systems Vice President / ATC role beyond the IVS leadership page text.'
+    significance: 'Ryder''s "Soul Is Light" talk, London (May 2015): first-person Ryder primary attestation that his company built the spacecraft instruments behind the May 2015 Andromeda matter-halo Nature publication.'
+    analysis: 'His company is Lockheed Martin Space Systems Company, and he says he personally oversaw the program. A second on-camera attestation of his Lockheed Martin Space Systems Vice President / ATC role beyond the IVS leadership page text.'
   - id: q6
     claim_group: "Friendship with Hal Puthoff"
     added_date: '2026-05-07'
@@ -159,7 +162,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?''.'
     statement_date: '2015-05'
-    significance: 'First-person Ryder attestation of personal friendship with Hal Puthoff, naming Puthoff on camera as ''my friend dr put off''. Confirms the Ryder-Puthoff durable scientific friendship. Auto-caption renders ''Puthoff'' as ''put off''.'
+    significance: 'Ryder''s "Soul Is Light" talk, London (May 2015): first-person Ryder attestation of personal friendship with Hal Puthoff, naming Puthoff on camera as ''my friend dr put off''.'
+    analysis: 'Confirms the Ryder-Puthoff durable scientific friendship. Auto-caption renders ''Puthoff'' as ''put off''.'
   - id: q7
     claim_group: "Government Psychic Research History"
     added_date: '2026-05-07'
@@ -171,7 +175,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'', section on consciousness research and government psychic-research history. Auto-caption renders ''telepathy'' as ''leprosy''.'
     statement_date: '2015-05'
-    significance: 'First-person Ryder on-record acknowledgment that governments have investigated telepathy for covertly accessing other people, framed as a known historical fact rather than speculation. Auto-caption renders ''telepathy'' as ''leprosy''.'
+    significance: 'Ryder''s "Soul Is Light" talk, London (May 2015): first-person Ryder on-record acknowledgment that governments have investigated telepathy for covertly accessing other people.'
+    analysis: 'The acknowledgment is framed as a known historical fact rather than speculation. Auto-caption renders ''telepathy'' as ''leprosy''.'
   - id: q8
     claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
@@ -183,7 +188,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God: Esoterically and Scientifically'' (April 28-29, 2018), section on telepathy and remote viewing research history.'
     statement_date: '2018-04-28'
-    significance: 'First-person Ryder primary attestation of a direct supervisory relationship with Russell Targ at Lockheed: ''dr targ who''s worked for me for years''. The on-camera caption ''it''s fun being able to say these things'' lands at this moment, indicating Ryder is acknowledging the relationship publicly for the first time. Auto-caption renders ''Puthoff'' as ''pothos''.'
+    significance: 'Ryder''s "Garment of God" talk, New York (April 28, 2018): first-person Ryder primary attestation of a direct supervisory relationship with Russell Targ at Lockheed.'
+    analysis: 'Ryder says ''dr targ who''s worked for me for years''. The on-camera caption ''it''s fun being able to say these things'' lands at this moment, indicating Ryder is acknowledging the relationship publicly for the first time. Auto-caption renders ''Puthoff'' as ''pothos''.'
   - id: q9
     claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
@@ -195,7 +201,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God: Esoterically and Scientifically'' (April 28-29, 2018), introducing his reference list which includes the ''ESP Wars: East and West'' book.'
     statement_date: '2018-04-28'
-    significance: 'First-person Ryder narration of the internal Lockheed Martin lineage of the ''ESP Wars: East and West'' declassified-psychic-research book project. Establishes: (1) the book was assembled during Ryder''s LMSSC Vice President tenure, (2) Russell Targ ''had a lot of input'', (3) Hal Puthoff (auto-captioned ''thought of'') was involved, (4) Ryder''s daughter also works at Lockheed Martin, (5) a current Lockheed Martin colleague routed the published copy to Ryder via his daughter. Direct primary attestation of the LMSSC-internal psychic-research declassification chain.'
+    significance: 'Ryder''s "Garment of God" talk, New York (April 28, 2018): first-person Ryder narration of the internal Lockheed Martin lineage of the ''ESP Wars: East and West'' declassified-psychic-research book project.'
+    analysis: 'Establishes: (1) the book was assembled during Ryder''s LMSSC Vice President tenure, (2) Russell Targ ''had a lot of input'', (3) Hal Puthoff (auto-captioned ''thought of'') was involved, (4) Ryder''s daughter also works at Lockheed Martin, (5) a current Lockheed Martin colleague routed the published copy to Ryder via his daughter. Direct primary attestation of the LMSSC-internal psychic-research declassification chain.'
   - id: q10
     claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
@@ -207,7 +214,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', clarifying the assembly date of the ''ESP Wars'' book.'
     statement_date: '2018-04-28'
-    significance: 'Ryder dates the ESP Wars book assembly to 2009, two years before his February 2011 retirement. Cross-anchors with the IVS leadership page period (May 2005 - February 2011) and confirms Ryder''s VP-tenure overlap with the book project.'
+    significance: 'Ryder''s "Garment of God" talk, New York (April 28, 2018): Ryder dates the ESP Wars book assembly to 2009, two years before his February 2011 retirement.'
+    analysis: 'Cross-anchors with the IVS leadership page period (May 2005 - February 2011) and confirms Ryder''s VP-tenure overlap with the book project.'
   - id: q11
     claim_group: "Friendship with Hal Puthoff"
     corroborated_by: [q6]
@@ -220,7 +228,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', discussing alternative gravity theories. The ''second one'' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as ''my good buddy'' (line 39:12).'
     statement_date: '2018-04-28'
-    significance: 'First-person Ryder primary attestation that Hal Puthoff is ''my good buddy'' (line 39:12 of source) and that Puthoff''s vacuum-polarization gravity paper was accepted in the Journal of Physics. Confirms the durable Ryder-Puthoff friendship in 2018, three years after the 2015 talk reference.'
+    significance: 'Ryder''s "Garment of God" talk, New York (April 28, 2018): first-person Ryder primary attestation that Hal Puthoff is ''my good buddy'' and that Puthoff''s vacuum-polarization gravity paper was accepted in the Journal of Physics.'
+    analysis: 'The ''my good buddy'' phrase is at line 39:12 of source. Confirms the durable Ryder-Puthoff friendship in 2018, three years after the 2015 talk reference.'
   - id: q12
     claim_group: "Government Psychic Research History"
     added_date: '2026-05-07'
@@ -232,7 +241,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', section on Cold War ESP and psychic research funding history.'
     statement_date: '2018-04-28'
-    significance: 'Ryder''s first-person framing of the Cold War U.S./USSR asymmetry in psychic research funding: in the U.S. ESP work had to be hidden, in the USSR it was openly funded. Provides Ryder''s personal historical framing of the ''ESP Wars'' book context.'
+    significance: 'Ryder''s "Garment of God" talk, New York (April 28, 2018): Ryder''s first-person framing of the Cold War U.S./USSR asymmetry in psychic research funding.'
+    analysis: 'In the U.S. ESP work had to be hidden, in the USSR it was openly funded. Provides Ryder''s personal historical framing of the ''ESP Wars'' book context.'
   - id: q13
     claim_group: "UAP Terminology and Ontology"
     added_date: '2026-05-17'
@@ -244,7 +254,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust Arcane School Conference London talk ''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence ([`/people/lawrence-lucis-trust-moderator`]) opening question about whether there is a rise in unexplained phenomena.'
     statement_date: '2017-06-10'
-    significance: 'Ryder explicitly chooses Pentagon-coined "UAP" terminology over "UFO" — "I feel like we''ve already made the question before we actually ask the question." Notable for predating mainstream public adoption of "UAP" terminology by approximately four years (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder explicitly chooses Pentagon-coined "UAP" terminology over "UFO", saying "I feel like we''ve already made the question before we actually ask the question."'
+    analysis: 'Notable for predating mainstream public adoption of "UAP" terminology by approximately four years (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.'
   - id: q14
     claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
@@ -256,7 +267,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust Arcane School Conference London talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), explicating the talk title and framing the central question.'
     statement_date: '2017-06-10'
-    significance: 'Ryder explicates the talk title — "rending means to disintegrate that veil of separation" — and frames the central question as whether the veil between "devas and fairies and mankind" is dissipating. The veil-between-planes framework is core Ageless Wisdom terminology operationalised on UAP discourse. "Vail" is Ryder''s own spelling pronunciation captured by whisper.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder explicates the talk title, "rending means to disintegrate that veil of separation," and asks whether the veil between "devas and fairies and mankind" is dissipating.'
+    analysis: 'He frames the central question as whether that veil is dissipating. The veil-between-planes framework is core Ageless Wisdom terminology operationalised on UAP discourse. "Vail" is Ryder''s own spelling pronunciation captured by whisper.'
   - id: q15
     claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
@@ -268,7 +280,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old.'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s prehistoric-cave-art-as-UAP-record claim — Chauvet and Dordogne cave paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder''s prehistoric-cave-art-as-UAP-record claim that Chauvet and Dordogne cave paintings depict beings like "space people" and "your first UFO 42,000 years ago."'
+    analysis: 'The paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.'
   - id: q16
     claim_group: "Non-Physical Nature of the Phenomenon"
     added_date: '2026-05-17'
@@ -280,7 +293,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense.'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever''s happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." Ryder''s public on-record statement that the phenomenon is not physical pre-dates by seven years the public allegation that named him as proposer of a Lockheed-Bigelow physical-material transfer.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder''s most direct non-physical-phenomenon claim is that abductions occur under continuous camera surveillance in locked rooms with no detected physical movement.'
+    analysis: '"Whatever''s happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." Ryder''s public on-record statement that the phenomenon is not physical pre-dates by seven years the public allegation that named him as proposer of a Lockheed-Bigelow physical-material transfer.'
   - id: q17
     claim_group: "UAP Terminology and Ontology"
     added_date: '2026-05-17'
@@ -292,7 +306,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) summarising the UFO phenomenon by citing Jacques Vallee ([`/people/jacques-vallee`]).'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s explicit Vallée framing — names Jacques Vallée ([`/people/jacques-vallee`]) as "one of the great explorers in this field" and summarises his thesis on record: "the UFOs are not objects nor flying ... they appear." Establishes Ryder''s ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The aside "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder names Jacques Vallée ([`/people/jacques-vallee`]) as "one of the great explorers in this field" and summarises his thesis that "the UFOs are not objects nor flying."'
+    analysis: 'Ryder''s explicit Vallée framing summarises the thesis on record: "the UFOs are not objects nor flying ... they appear." Establishes Ryder''s ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The aside "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.'
   - id: q18
     claim_group: "Classification Non-Denial"
     added_date: '2026-05-17'
@@ -304,7 +319,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence''s framing of a Russian and American jets incident as "classified information, which is now released. It was classified."'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s on-record sidestep of an incident the moderator described as "classified information, which is now released" — "I wouldn''t say it was or wasn''t." The classification non-denial is notable structurally — the moderator''s framing is "now released"; Ryder declines to confirm or deny the classification of the incident.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder''s on-record sidestep of an incident the moderator described as "classified information, which is now released" — "I wouldn''t say it was or wasn''t."'
+    analysis: 'The classification non-denial is notable structurally — the moderator''s framing is "now released"; Ryder declines to confirm or deny the classification of the incident.'
   - id: q19
     claim_group: "Non-Physical Nature of the Phenomenon"
     added_date: '2026-05-17'
@@ -316,7 +332,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), continuing the discussion of the Russian and American jets incident at [53:28] where US fighters and Russian fighters chased the same object from different directions.'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s apparent-firsthand framing of the UAP behavioural signature — "many, many chases of these objects, which when you get close, they''re just not there." Couples with his classification non-denial to document Ryder speaking with familiarity about a class of incidents the moderator described as classified.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder''s apparent-firsthand framing of the UAP behavioural signature — "many, many chases of these objects, which when you get close, they''re just not there."'
+    analysis: 'Couples with his classification non-denial to document Ryder speaking with familiarity about a class of incidents the moderator described as classified.'
   - id: q20
     claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
@@ -328,7 +345,8 @@ quotes:
     observation_type: relayed
     context: 'Ryder''s 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), closing slide before the meditation break — three drawings (an artist of devas/fairies, a Graham Hancock ([`/people/graham-hancock`])-ayahuasca participant, a lifelong deva researcher) compared.'
     statement_date: '2017-06-10'
-    significance: 'Ryder''s closing synthesis — bridges ancient deva and fairy iconography (narrow eyes, slightly angled, narrow chin; 30,000-40,000 years old + Roman times) with modern Graham Hancock ([`/people/graham-hancock`])-style ayahuasca-induced visions in South America. The Vallée framework applied to canonical "grey alien" iconography. Closing question — "what are we really dealing with when we see these kinds of things?" — is the talk''s thesis question.'
+    significance: 'Ryder''s "Rending of the Veils" talk, London (June 10, 2017): Ryder''s closing synthesis bridges ancient deva and fairy iconography with modern ayahuasca-induced visions in South America.'
+    analysis: 'The ancient iconography is narrow eyes, slightly angled, narrow chin (30,000-40,000 years old + Roman times); the modern visions are Graham Hancock ([`/people/graham-hancock`])-style. The Vallée framework applied to canonical "grey alien" iconography. Closing question — "what are we really dealing with when we see these kinds of things?" — is the talk''s thesis question.'
 naming_quirks:
   - id: nq1
     added_date: '2026-05-07'

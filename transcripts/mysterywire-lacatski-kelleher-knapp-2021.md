@@ -42,7 +42,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ## Key Passages
 
-### Lacatski's direct on-record response to the DoD spokesperson framing that AAWSAP "had nothing to do with UFOs" — Lacatski says the program was completely UFO-related, explains the Statement of Objectives RFP format that obscured the program's content to anyone reading only the contract without the underlying Bigelow Aerospace Advanced Space Studies (BAASS) proposal, and points to the BAASS proposal's explicit mention of a "worldwide database of advanced aerospace vehicles" among its topics
+### Mystery Wire interview (October 12, 2021): Lacatski says the program was completely UFO-related, answering the DoD spokesperson framing that AAWSAP "had nothing to do with UFOs."
+
+In this direct on-record response, Lacatski explains the Statement of Objectives RFP format that obscured the program's content to anyone reading only the contract without the underlying Bigelow Aerospace Advanced Space Studies (BAASS) proposal, and points to the BAASS proposal's explicit mention of a "worldwide database of advanced aerospace vehicles" among its topics.
 
 > [0:39] it was completely ufo related the reason you haven't seen the documentation is we use the statement of objectives format for the request for proposal that is insufficient for anyone examining the contents of the contract they must have the proposal now within the proposal and in this case it was from bigelow aerospace advanced space studies it's clearly mentioned among the topics a worldwide database of advanced aerospace vehicles there can be no ambiguity here this was being proposed as a ufo project
 
@@ -55,7 +57,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Lacatski's deliverables claim — over 100 documents required to be reported to DIA were UFO-related; the AAWSAP database is "probably the largest UFO database that exists in the world" and is "currently being used by the US military" as of October 2021. Closes with the categorical affirmation "so yes it was completely a ufo project."
+### Mystery Wire interview (October 12, 2021): Lacatski's deliverables claim that over 100 documents required to be reported to DIA were UFO-related, closing with "so yes it was completely a ufo project."
+
+Per Lacatski, the AAWSAP database is "probably the largest UFO database that exists in the world" and is "currently being used by the US military" as of October 2021. He closes with the categorical affirmation quoted above.
 
 > [1:24] now if you want to look at the tail end of the project you'll find over a hundred documents required to be reported to the defense intelligence agency that were ufo related in part of course i mean they were large very large documents and you also have uh you know technical studies and you have that database probably the largest ufo database that exists in the world and is currently being used by the us military so yes it was completely a ufo project
 
@@ -68,7 +72,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Lacatski's structural distinction between AAWSAP (DIA, $22M, main contract + subcontracts, military and civilian UFO coverage, "massive database") and AATIP (Pentagon, zero-funded, no contract, specific military encounters with film). Resolves the long-running NYT-2017-vs-actual-funding-trail confusion by attesting the two programs as substantively distinct organizations with the AATIP name as a nickname used "for certain security reasons" detailed in the book. Auto-caption typos preserved verbatim (atip / asap / osap / atep / "a tip").
+### Mystery Wire interview (October 12, 2021): Lacatski's structural distinction between AAWSAP (DIA, $22M, main contract + subcontracts) and AATIP (Pentagon, zero-funded, no contract), with AATIP as a nickname.
+
+AAWSAP had military and civilian UFO coverage and a "massive database"; AATIP covered specific military encounters with film. Resolves the long-running NYT-2017-vs-actual-funding-trail confusion by attesting the two programs as substantively distinct organizations with the AATIP name as a nickname used "for certain security reasons" detailed in the book. Auto-caption typos preserved verbatim (atip / asap / osap / atep / "a tip").
 
 > [2:22] yes the name atip was a nickname for asap for certain security reasons that we've put into the book but the difference between osap with the nickname atep at dia and a tip at the pentagon is quite distinct asap had 22 million dollars of funding it covered military and civilian ufos yielding a massive database it also had a main contract and subcontracts now a tip in the pentagon as described in the articles was basically zero funded looked at specific military ufo encounters and very important ones because they had film and it had no contract
 
@@ -81,7 +87,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Lacatski's security-posture attestation — AAWSAP was "not an official SAP but a closed program"; within his own DIA office only leadership knew the contract was being run; staff had "no idea whatsoever" the program existed. Frames the AAWSAP/AATIP press confusion as a consequence of compartmentation rather than deliberate misdirection. Direct first-person attestation by the program's named director.
+### Mystery Wire interview (October 12, 2021): Lacatski's security-posture attestation that AAWSAP was "not an official SAP but a closed program" whose existence his own DIA office staff did not know.
+
+Within his own DIA office only leadership knew the contract was being run; staff had "no idea whatsoever" the program existed. Frames the AAWSAP/AATIP press confusion as a consequence of compartmentation rather than deliberate misdirection. Direct first-person attestation by the program's named director.
 
 > [3:19] so getting back to how did this mix-up occur i think it it's it's not deliberate it's not due to to to authors to television personalities etc it's the fact we were running not an official sap but a closed program i can tell you for a fact that within my own office they did not know except leadership that this contract was being run they had no idea whatsoever our security was that tight
 
@@ -94,7 +102,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Kelleher's program-timeline attestation — AAWSAP ran September 2008 to late 2010 (24-month contract); Kelleher hired November 2008; ~300 telephone interviews + ~100 face-to-face interviews between November 2008 and April 2009 to recruit "ufo focused investigators." Establishes the program's date bounds and recruitment intensity directly from the BAASS program manager.
+### Mystery Wire interview (October 12, 2021): Kelleher's program-timeline attestation that AAWSAP ran September 2008 to late 2010 and that he was hired November 2008.
+
+The 24-month contract saw ~300 telephone interviews + ~100 face-to-face interviews between November 2008 and April 2009 to recruit "ufo focused investigators." Establishes the program's date bounds and recruitment intensity directly from the BAASS program manager.
 
 > [4:26] well i was hired in uh november of 2008. the asap program ran from september 2008 to late 2010 so one of the first tasks that i had on coming on board was to put together a team of uh ufo focused investigators as quickly as possible so i was thinking back on this and between november 2008 and probably april 2009 i personally conducted about 300 telephone interviews in an attempt to recruit different people for different positions at ossap and in addition i i did at least 100 face-to-face interviews in my office in that period of time
 
@@ -107,7 +117,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Kelleher's BAASS team-composition attestation — PhD-level physics and biology scientists, master's-level scientists, technicians, database analysts, military intelligence personnel, security officers, plus a 20-year AFOSI veteran as program manager. Establishes the staffing profile of the BAASS organization that executed AAWSAP under DIA's contract.
+### Mystery Wire interview (October 12, 2021): Kelleher's BAASS team-composition attestation lists PhD-level and master's-level scientists, technicians, database analysts, military intelligence personnel and security officers.
+
+The PhD-level scientists were in physics and biology, plus a 20-year AFOSI veteran as program manager. Establishes the staffing profile of the BAASS organization that executed AAWSAP under DIA's contract.
 
 > [5:30] phd level scientists uh that would include physics and biology master's level scientists technicians we also looked for database analysts and uh military intelligence personnel who had a long uh history investigative background and of course we also were looking for a lot of security officers because security was a big issue interestingly one of our program managers was um a 20-year veteran of the air force office of special investigations also known as afosi
 
@@ -120,7 +132,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Kelleher's team-size + scope attestation — by May 2009 BAASS had a team of approximately 50 people; the 24-month contract included security infrastructure (facility security clearances "sufficient for inspections"), hiring and training, plus execution of multiple programs side by side. Frames the operational scope as "pretty extraordinary" for a 24-month government contract.
+### Mystery Wire interview (October 12, 2021): Kelleher's team-size + scope attestation that by May 2009 BAASS had a team of approximately 50 people.
+
+The 24-month contract included security infrastructure (facility security clearances "sufficient for inspections"), hiring and training, plus execution of multiple programs side by side. Frames the operational scope as "pretty extraordinary" for a 24-month government contract.
 
 > [6:29] i think by the end of may of 2009 we had a team of about 50 50 people and george when you considered that that you know this was a 24-month contract so not only were we uh putting together the security infrastructure of this uh of this large organization and that included facility security clearances getting everything up to you know to a level that was sufficient for um inspections but hiring these people training all of these different people and then we executed uh multiple programs side by side and all of this happened in a 24-month period
 
@@ -133,7 +147,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Kelleher's attestation about Lacatski's Washington D.C. role — Lacatski's input "in washington dc and greasing the wheels" enabled BAASS to assemble a large organization "focused only on ufo investigations." Statement BY Kelleher ABOUT Lacatski's program-director function; quotes by Kelleher about Lacatski belong on Kelleher's own (unbuilt) person artifact and as a cross-reference on Lacatski's structured surfaces — captured here for transcript completeness.
+### Mystery Wire interview (October 12, 2021): Kelleher attests that Lacatski's input "in washington dc and greasing the wheels" enabled BAASS to assemble a large organization "focused only on ufo investigations."
+
+This is Kelleher's attestation about Lacatski's Washington D.C. role. Statement BY Kelleher ABOUT Lacatski's program-director function; quotes by Kelleher about Lacatski belong on Kelleher's own (unbuilt) person artifact and as a cross-reference on Lacatski's structured surfaces — captured here for transcript completeness.
 
 > [7:36] dr lakatsky's input in washington dc and greasing the wheels to make all of this happen i'm putting together a pretty large organization that was focused only on ufo investigations that was the key
 
@@ -146,7 +162,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Lacatski on the 14-month DoD pre-publication review process — "public release authority" obtained after rewrites and removals; constant communication with DoD reviewers framed as "very pleasant." Direct attestation that "Skinwalkers at the Pentagon" passed an official DoD release-authority review (auto-caption renders "got" as "gut").
+### Mystery Wire interview (October 12, 2021): Lacatski's direct attestation that "Skinwalkers at the Pentagon" passed an official DoD release-authority review after the 14-month pre-publication process.
+
+"Public release authority" was obtained after rewrites and removals; constant communication with DoD reviewers is framed as "very pleasant." (auto-caption renders "got" as "gut").
 
 > [13:30] well i'm glad that we finally gut public release authority and and frankly i understood all of their concerns uh what we had to rewrite in the book and what we had to remove and put in i wasn't really sweating it because i was almost in constant communication with them very pleasant
 
@@ -159,7 +177,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Lacatski extends the DoD-review account — pandemic-era off-site processing through secure channels handling the book "as if it had maybe top secret sci information in it" even though "it didn't"; multi-organization transfer for review and approval. Establishes the procedural shape of the pre-publication review process while attesting the book itself contained no TS/SCI material (per Lacatski).
+### Mystery Wire interview (October 12, 2021): Lacatski extends the DoD-review account, attesting the book was processed "as if it had maybe top secret sci information in it" even though "it didn't."
+
+The account covers pandemic-era off-site processing through secure channels handling the book that way, and multi-organization transfer for review and approval. Establishes the procedural shape of the pre-publication review process while attesting the book itself contained no TS/SCI material (per Lacatski).
 
 > [13:59] people i was dealing with and i understood their situation during the pandemic they were working off-site but they had to process it through secure channels because you don't know what's in the book until so they had to process it as if it had maybe top secret sci information in it uh of course it didn't but nevertheless they had to handle it that way they had to go into work transfer to various organizations for their review and approval but it eventually occurred and i'm glad we got that uh approval for release
 
@@ -172,7 +192,9 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ---
 
-### Kelleher's closing role-summary — Lacatski "driving force in Washington D.C.", Kelleher "day-to-day manager in Las Vegas" — codifies the two-author program-leadership division for the AAWSAP/BAASS operation. Statement BY Kelleher ABOUT Lacatski's program function; book co-authorship attestation in source.
+### Mystery Wire interview (October 12, 2021): Kelleher's closing role-summary calls Lacatski the "driving force in Washington D.C." and himself the "day-to-day manager in Las Vegas."
+
+The summary codifies the two-author program-leadership division for the AAWSAP/BAASS operation. Statement BY Kelleher ABOUT Lacatski's program function; book co-authorship attestation in source.
 
 > [15:59] um i think it's about time that the entire story of ossop is being told and you know dr lykotsky was the driving force in in washington dc and i was the day-to-day manager in las vegas so i think between the two of us we've come up with a pretty good summary of what what the whole program looked like
 

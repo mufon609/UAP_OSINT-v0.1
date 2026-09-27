@@ -85,7 +85,8 @@ quotes:
     path: news/sri-international-about-20260515.html
     location: '¶1'
   context: 'SRI International ''About'' page (sri.com/about/), retrieved 2026-05-15 — institutional tagline'
-  significance: 'SRI''s first-party self-characterization as an independent nonprofit R&D institute in Silicon Valley. The most concise statement of institutional identity available on the sri.com About page.'
+  significance: 'SRI About page (retrieved May 15, 2026): SRI''s first-party self-characterization as an independent nonprofit R&D institute in Silicon Valley.'
+  analysis: 'The most concise statement of institutional identity available on the sri.com About page.'
 
 - id: q2
   added_date: '2026-05-15'
@@ -95,7 +96,8 @@ quotes:
     path: news/sri-international-about-20260515.html
     location: '¶4'
   context: 'SRI International ''About'' page (sri.com/about/), retrieved 2026-05-15 — institutional anchor paragraph'
-  significance: 'Foundational SRI self-attestation establishing the four institutional milestones: 1946 founding (as Stanford Research Institute), 1970 independence, 1987 Sarnoff Corp. acquisition, 2023 PARC acquisition. Also attests current scale (1,500 researchers and professional staff) and customer base (government and commercial).'
+  significance: 'SRI About page (retrieved May 15, 2026): SRI''s first-party self-attestation of its 1946 founding as Stanford Research Institute, 1970 independence, 1987 Sarnoff Corp. acquisition and 2023 PARC acquisition.'
+  analysis: 'Foundational SRI self-attestation establishing the four institutional milestones. Also attests current scale (1,500 researchers and professional staff) and customer base (government and commercial).'
 
 - id: q3
   added_date: '2026-05-15'
@@ -105,7 +107,8 @@ quotes:
     path: news/sri-international-timeline-of-innovation-20260515.html
     location: '¶2'
   context: 'SRI International ''Interactive Timeline of Innovation'' page (sri.com/timeline-of-innovation/), retrieved 2026-05-15 — anchor paragraph'
-  significance: 'Tightens the sri.com About-page founding attestation by explicitly naming "Stanford University" as the 1946 founder. Also tightens the PARC acquisition to "received as a donation" (PARC was a 2023 donation, not a purchase). Independent corroboration of the 1987 Sarnoff acquisition and 1970 independence facts attested there.'
+  significance: 'SRI Timeline of Innovation page (retrieved May 15, 2026): SRI''s first-party timeline names "Stanford University" as its 1946 founder and says PARC was "received as a donation" in 2023.'
+  analysis: 'Tightens the sri.com About-page founding attestation by explicitly naming the 1946 founder. Also tightens the PARC acquisition (PARC was a 2023 donation, not a purchase). Independent corroboration of the 1987 Sarnoff acquisition and 1970 independence facts attested there.'
 
 - id: q4
   added_date: '2026-05-15'
@@ -115,7 +118,8 @@ quotes:
     path: news/espresearch-russell-targ-snapshot.html
     location: '¶2'
   context: 'Russell Targ''s ESP Research website (espresearch.com homepage), retrieved 2026-05-07 — Targ self-attestation'
-  significance: 'Targ''s first-party self-attestation of the Stanford Research Institute parapsychology investigation in the 1970s and 1980s, cofounded by Targ. Co-cofounder Harold E. Puthoff established via the 1974 Nature paper byline.'
+  significance: 'Russell Targ''s ESP Research website (retrieved May 7, 2026): Targ''s first-party self-attestation that he cofounded the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s.'
+  analysis: 'This is Targ''s self-attestation of the SRI parapsychology investigation. Co-cofounder Harold E. Puthoff established via the 1974 Nature paper byline.'
 
 - id: q5
   added_date: '2026-05-15'
@@ -125,7 +129,8 @@ quotes:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶1'
   context: 'International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703)'
-  significance: 'Third-party (IRVA) biographical attestation that characterizes SRI as "a research and development think tank in Menlo Park, California" — independent corroboration of the sri.com institutional-shape attestation and frames the SRI investigation explicitly as "remote viewing". Names three peer-reviewed publication venues for the SRI program''s output (Nature, IEEE Proceedings, AAAS Proceedings).'
+  significance: 'IRVA speaker biography of Russell Targ (Wayback capture, January 23, 2025): third-party (IRVA) attestation that characterizes SRI as "a research and development think tank in Menlo Park, California".'
+  analysis: 'This biographical attestation is independent corroboration of the sri.com institutional-shape attestation and frames the SRI investigation explicitly as "remote viewing". Names three peer-reviewed publication venues for the SRI program''s output (Nature, IEEE Proceedings, AAAS Proceedings).'
 
 - id: q6
   added_date: '2026-05-15'
@@ -136,7 +141,8 @@ quotes:
     location: '¶1'
   context: 'Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — author affiliation block from the Nature article landing page'
   statement_date: '1974-10-18'
-  significance: 'Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com; the Nature byline corroborates Puthoff at SRI alongside Targ).'
+  significance: 'Nature 251 author-affiliation block (October 18, 1974): the peer-reviewed byline places Targ and Puthoff at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025.'
+  analysis: 'Establishes that the SRI parapsychology investigation operated out of that laboratory — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com; the Nature byline corroborates Puthoff at SRI alongside Targ).'
 
 - id: q7
   added_date: '2026-05-15'
@@ -180,7 +186,8 @@ quotes:
     location: 'final ¶'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   statement_date: '1977'
-  significance: 'CIA primary-source attestation that the SRI parapsychology investigation had drawn sufficient attention from the Soviet intelligence community by November 1976 to prompt DCI George Bush to request a briefing on CIA''s parapsychology investigations. Anchors a lower-bound for the SRI program''s active period (continued at least through Nov 1976).'
+  significance: 'Kress, CIA Studies in Intelligence (Winter 1977): in November 1976 official Soviets questioning Puthoff and Targ at SRI prompted DCI George Bush to request a briefing on CIA''s parapsychology investigations.'
+  analysis: 'CIA primary-source attestation that the SRI parapsychology investigation had drawn sufficient attention from the Soviet intelligence community by November 1976 to prompt the briefing request. Anchors a lower-bound for the SRI program''s active period (continued at least through Nov 1976).'
 
 - id: q11
   added_date: '2026-05-15'
@@ -191,7 +198,8 @@ quotes:
     location: '¶ "In the early 1970''s, U.S. researchers"'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI. Source-form artifact: the hyphenated form "SRI-International" appears here (DIA''s own document) where the canonical form is "SRI International" — preserved as-source.'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): early-1970s remote viewing research at SRI-International, Menlo Park, came to the attention of the CIA, which then provided the initial CIA funding to SRI.'
+  analysis: 'DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research. Source-form artifact: the hyphenated form "SRI-International" appears here (DIA''s own document) where the canonical form is "SRI International" — preserved as-source.'
 
 - id: q12
   added_date: '2026-05-15'
@@ -202,7 +210,8 @@ quotes:
     location: '¶ "The effort at SRI was discontinued"'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park, CA. Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document). Source-form artifact: the DIA document writes "Systems Applications International Corporation" — a documented writing error against the canonical company name "Science Applications International Corporation" — preserved as-source.'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): DIA attests the 1990 termination of the SRI International parapsychology investigation and its immediate FY 1991 Congressional re-establishment of the research at SAIC in Menlo Park, CA.'
+  analysis: 'DIA institutional attestation; the document names the successor as Systems Applications International Corporation (SAIC). Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document). Source-form artifact: the DIA document writes "Systems Applications International Corporation" — a documented writing error against the canonical company name "Science Applications International Corporation" — preserved as-source.'
 
 - id: q13
   added_date: '2026-05-15'
@@ -213,7 +222,8 @@ quotes:
     location: '¶ "For the past eleven years, a"'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Section on SRI Studies in Remote Viewing: A Program Review'
   statement_date: '1993-04-30'
-  significance: 'DIA characterization of the SRI program leadership: "headed by Dr. H. Puthoff" over the eleven-year window referenced. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Kress 1977 corroborates Puthoff''s broader role at SRI (two laser physicists who re-awakened CIA research in parapsychology, alongside Targ) but does not specifically characterize Puthoff as program leader; AIR 1995 attests the 1973-1988 experimental scale (154 experiments, 26,000+ trials, 227 subjects) but does not separately attest Puthoff''s program-leadership role.'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): DIA characterizes the SRI program as "headed by Dr. H. Puthoff" over the eleven-year window referenced.'
+  analysis: 'This is DIA''s characterization of the SRI program leadership. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Kress 1977 corroborates Puthoff''s broader role at SRI (two laser physicists who re-awakened CIA research in parapsychology, alongside Targ) but does not specifically characterize Puthoff as program leader; AIR 1995 attests the 1973-1988 experimental scale (154 experiments, 26,000+ trials, 227 subjects) but does not separately attest Puthoff''s program-leadership role.'
 
 - id: q14
   added_date: '2026-05-15'
@@ -224,7 +234,8 @@ quotes:
     location: 'p. 34, ¶1'
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.2 (The Early Scientific Effort at SRI)'
   statement_date: '1995-09-29'
-  significance: 'Independent government-commissioned AIR evaluation (prepared at CIA''s request at the end of the Stargate Project) describes the 1974-1975 SRI controlled experiments and cites Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two—Research Report, Stanford Research Institute Final Report, Dec. 1, 1975" — the foundational SRI internal report from the parapsychology investigation.'
+  significance: 'AIR remote-viewing evaluation (September 29, 1995): the independent government-commissioned AIR review describes the 1974-1975 SRI controlled experiments and cites Puthoff and Targ (1975).'
+  analysis: 'The evaluation was prepared at CIA''s request at the end of the Stargate Project. The cited work is "Perceptual Augmentation Techniques: Part Two—Research Report, Stanford Research Institute Final Report, Dec. 1, 1975" — the foundational SRI internal report from the parapsychology investigation.'
 
 - id: q15
   added_date: '2026-05-15'
@@ -235,7 +246,8 @@ quotes:
     location: 'p. 35, ¶1'
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
   statement_date: '1995-09-29'
-  significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Direction of Dr. Edwin May from mid-1970s per AIR Section 3 preamble.'
+  significance: 'AIR remote-viewing evaluation (September 29, 1995): AIR''s review of the 1988 SRI internal program analysis counts 154 experiments, over 26,000 individual trials and 227 total subjects across 1973-1988.'
+  analysis: 'The 1988 analysis is May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)"; the review establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span. Direction of Dr. Edwin May from mid-1970s per AIR Section 3 preamble.'
 
 - id: q16
   added_date: '2026-05-15'
@@ -246,7 +258,8 @@ quotes:
     location: '¶ "Interest was translated into action when"'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described by AIR 1995. The "third sensitive subject" framing implies first and second exist: Kress describes the magnetometer subject and a later second subject without naming either; Targ''s IRVA 2002 retrospective names Ingo Swann as the 1972 subject.'
+  significance: 'Kress, CIA Studies in Intelligence (Winter 1977): Pat Price became available at SRI as the third sensitive subject "About this time", and the remote viewing experiments began in earnest.'
+  analysis: 'CIA primary-source attestation of Pat Price at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described by AIR 1995. The "third sensitive subject" framing implies first and second exist: Kress describes the magnetometer subject and a later second subject without naming either; Targ''s IRVA 2002 retrospective names Ingo Swann as the 1972 subject.'
 
 - id: q17
   added_date: '2026-05-15'
@@ -256,7 +269,8 @@ quotes:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2002 talk abstract'
   context: 'Russell Targ, IRVA 2002 talk abstract "The Real ''Real X-Files'': Remote viewing at Stanford Research Institute" (archived on the IRVA speaker biography page)'
-  significance: 'Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).'
+  significance: 'Russell Targ, IRVA talk abstract (2002): Targ''s first-person retrospective names Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects.'
+  analysis: 'Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 on Price, this passage anchors both names (Price/Swann as foundational SRI subjects) to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).'
 
 - id: q18
   added_date: '2026-05-15'
@@ -266,7 +280,8 @@ quotes:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
   context: 'Russell Targ, IRVA 2009 talk abstract "A Tribute to Hella Hammid: The First Woman Remote Viewer, Part 2" (archived on the IRVA speaker biography page)'
-  significance: 'Targ first-person retrospective attesting Hella Hammid''s ten-year SRI tenure (1974–1984) as the CIA-requested "control" subject brought in to supplement Pat Price and Ingo Swann. Anchors Hammid''s SRI involvement to 1974 (two years after the program''s 1972 start). Corroborates the Swann + Price foundational-subject pair named in his IRVA 2002 abstract.'
+  significance: 'Russell Targ, IRVA talk abstract (2009): Targ''s first-person retrospective attesting Hella Hammid''s ten-year SRI tenure (1974–1984) as the CIA-requested "control" subject brought in to supplement Pat Price and Ingo Swann.'
+  analysis: 'Anchors Hammid''s SRI involvement to 1974 (two years after the program''s 1972 start). Corroborates the Swann + Price foundational-subject pair named in his IRVA 2002 abstract.'
 
 - id: q19
   added_date: '2026-05-15'
@@ -277,7 +292,8 @@ quotes:
     location: '¶ "By October, 1972, I was the"'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977; footnote 4 cites the contract: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)"'
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of the formalization of the August 1972 $874 demonstration contract into OTS Contract 8473 — a $50,000 expanded effort dated 1 October 1972 — and of Kress himself becoming Project Officer by October 1972 due to his physics background. Footnote 4 of the Kress paper carries the contract citation: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)". Anchors the Contract 8473 timeline entry to a primary-source citation.'
+  significance: 'Kress, CIA Studies in Intelligence (Winter 1977): by October 1972 Kress was Project Officer and OTS funded a $50,000 expanded effort in parapsychology under Contract 8473.'
+  analysis: 'CIA primary-source attestation of the formalization of the August 1972 $874 demonstration contract into OTS Contract 8473 — a $50,000 expanded effort dated 1 October 1972 — and of Kress himself becoming Project Officer by October 1972 due to his physics background. Footnote 4 of the Kress paper carries the contract citation: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)". Anchors the Contract 8473 timeline entry to a primary-source citation.'
 
 - id: q20
   added_date: '2026-05-15'
@@ -288,7 +304,8 @@ quotes:
     location: 'Abstract, ¶1'
   context: 'Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — abstract body'
   statement_date: '1974-10-18'
-  significance: 'Peer-reviewed Targ + Puthoff statement of the SRI parapsychology investigation''s evidentiary claim — the existence of perceptual modalities through which individuals obtain environmental information not presented to any known sense, studyable under laboratory conditions. Adds methodological framing to the Nature author-affiliation attestation.'
+  significance: 'Nature 251 abstract (October 18, 1974): peer-reviewed Targ and Puthoff statement claiming perceptual modalities through which individuals obtain environmental information not presented to any known sense.'
+  analysis: 'This is the SRI parapsychology investigation''s evidentiary claim — the existence of such modalities studyable under laboratory conditions. Adds methodological framing to the Nature author-affiliation attestation.'
 
 - id: q21
   added_date: '2026-05-15'
@@ -299,7 +316,8 @@ quotes:
     location: 'p. 33, ¶2'
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.1 (Early Operational Successes and Evaluation)'
   statement_date: '1995-09-29'
-  significance: 'AIR independent evaluation describing one of the three apparent operational successes in the early days of the SRI parapsychology program — the "West Virginia Site" remote-viewing identification of an underground secret facility that set off a security investigation to determine the source of the leaked codewords and personnel names. AIR Section 3.1 cites Puthoff and Targ (1975) as the source; methodological caveats are discussed in the same section.'
+  significance: 'AIR remote-viewing evaluation (September 29, 1995): AIR''s independent evaluation describing the "West Virginia Site" case, in which two remote viewers purportedly identified an underground secret facility.'
+  analysis: 'One of the three apparent operational successes in the early days of the SRI parapsychology program: the remote-viewing identification of the facility set off a security investigation to determine the source of the leaked codewords and personnel names. AIR Section 3.1 cites Puthoff and Targ (1975) as the source; methodological caveats are discussed in the same section.'
 
 - id: q22
   added_date: '2026-05-15'
@@ -310,7 +328,8 @@ quotes:
     location: 'p. 35, ¶2'
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
   statement_date: '1995-09-29'
-  significance: 'AIR independent evaluation''s headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments: the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.'
+  significance: 'AIR remote-viewing evaluation (September 29, 1995): the headline statistical finding of the 1988 SRI internal analysis of 1973-1988 experiments was an overall p-value less than 10-20.'
+  analysis: 'The AIR independent evaluation reports the finding as motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.'
 
 - id: q12b
   added_date: '2026-05-15'
@@ -321,7 +340,8 @@ quotes:
     location: '¶ "Then funding was discontinued in 1975;"'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from the early-1970s SRI remote viewing paragraph'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional attestation of the 1975 CIA-funding-discontinuation date for the SRI parapsychology investigation, and of the post-1975 funding chain — "DIA and some of DIA''s service support elements with occasional support from various R&D organizations" (the service support elements include the Air Force Foreign Technology Division and Army INSCOM, per Section III''s later detail attesting "HQDA/INSCOM established a small unit" late 1970s, transferred to DIA 1986 as the SUN STREAK SAP).'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): after funding was discontinued in 1975, SRI remote-viewing investigation was funded by DIA and some of DIA''s service support elements.'
+  analysis: 'DIA institutional attestation of the 1975 CIA-funding-discontinuation date for the SRI parapsychology investigation, and of the post-1975 funding chain — "DIA and some of DIA''s service support elements with occasional support from various R&D organizations" (the service support elements include the Air Force Foreign Technology Division and Army INSCOM, per Section III''s later detail attesting "HQDA/INSCOM established a small unit" late 1970s, transferred to DIA 1986 as the SUN STREAK SAP).'
 
 - id: q12c
   added_date: '2026-05-15'
@@ -332,7 +352,8 @@ quotes:
     location: 'Figure 1 (KEY US RESEARCH EFFORTS table)'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Figure 1 (KEY US RESEARCH EFFORTS table) row entry for SRI International'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.'
+  significance: 'DIA Star Gate Project overview, Figure 1 (April 30, 1993): the KEY US RESEARCH EFFORTS table dates the SRI International program window to 1970-1990.'
+  analysis: 'DIA institutional primary-source attestation of the program window. Anchors the program-level outer bound to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset.'
 
 - id: q23
   added_date: '2026-05-15'
@@ -342,7 +363,8 @@ quotes:
     path: news/sri-international-timeline-of-innovation-20260515.html
     location: '¶3'
   context: 'SRI International ''Interactive Timeline of Innovation'' page (sri.com/timeline-of-innovation/), retrieved 2026-05-15 — framing paragraph for the decade-by-decade index'
-  significance: 'SRI''s first-party framing of its institutional R&D legacy — nine IEEE Milestones (industry-standard third-party recognition of historically-significant technical contributions) anchor the breadth claim. Frames the pages 1-7 decade index of SRI projects spanning 1940s-2020s.'
+  significance: 'SRI Timeline of Innovation page (retrieved May 15, 2026): SRI''s first-party framing of its institutional R&D legacy cites nine IEEE Milestones among its awards.'
+  analysis: 'The nine IEEE Milestones (industry-standard third-party recognition of historically-significant technical contributions) anchor the breadth claim. Frames the pages 1-7 decade index of SRI projects spanning 1940s-2020s.'
 
 - id: q24
   added_date: '2026-05-15'
@@ -352,7 +374,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Organization summary'
   context: 'ProPublica Nonprofit Explorer page for SRI International, EIN 94-1160950, retrieved 2026-05-15. Data attributed by ProPublica to IRS Form 990 filings.'
-  significance: 'IRS-sourced attestation that SRI became tax-exempt in March 1949 — three years after the 1946 founding. Tightens the founding-to-tax-exempt-status timeline beyond the sri.com self-attestation. ProPublica aggregates from IRS Form 990 data.'
+  significance: 'ProPublica Nonprofit Explorer (retrieved May 15, 2026): IRS-sourced attestation that SRI became tax-exempt in March 1949, three years after the 1946 founding.'
+  analysis: 'Tightens the founding-to-tax-exempt-status timeline beyond the sri.com self-attestation. ProPublica aggregates from IRS Form 990 data.'
 
 - id: q25
   added_date: '2026-05-15'
@@ -365,7 +388,8 @@ quotes:
     location: 'Details, Going concern flag block'
   context: 'ProPublica Nonprofit Explorer page for SRI International, EIN 94-1160950, retrieved 2026-05-15 — Details section reporting the FY2024 independent-audit finding'
   statement_date: '2025-11-12'
-  significance: 'Substantive financial-health attestation: SRI''s FY2024 independent audit identified a going-concern flag — substantial doubt about the organization''s ability to meet financial obligations and continue operating. ProPublica sources this from the Federal Audit Clearinghouse-deposited audit accompanying the FY2024 Form 990 (filed November 12, 2025). First-time financial-stress attestation in the archived corpus.'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): SRI''s FY2024 independent audit identified a going-concern flag — substantial doubt about the organization''s ability to continue operating.'
+  analysis: 'Substantive financial-health attestation: the flag records doubt about SRI''s ability to meet financial obligations. ProPublica sources this from the Federal Audit Clearinghouse-deposited audit accompanying the FY2024 Form 990 (filed November 12, 2025). First-time financial-stress attestation in the archived corpus.'
 
 - id: q26
   added_date: '2026-05-15'
@@ -381,7 +405,8 @@ quotes:
     location: 'Fiscal Year Ending Dec. 2024, Extracted Financial Data'
   context: 'ProPublica Nonprofit Explorer extracted financial data for SRI International FY2024 (per Form 990 filed November 12, 2025); EIN 94-1160950'
   statement_date: '2025-11-12'
-  significance: 'IRS-sourced attestation of SRI International FY2024 institutional scale: revenue $437.9M, expenses $433.2M, net income $4.8M. Anchors current-scale claims at field-precise granularity (the sri.com About page attests only staff, patent, spin-off, project counts; this is the first dollar-figure attestation in the corpus).'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): IRS-sourced SRI International FY2024 revenue $437.9M, expenses $433.2M, net income $4.8M.'
+  analysis: 'Attests FY2024 institutional scale. Anchors current-scale claims at field-precise granularity (the sri.com About page attests only staff, patent, spin-off, project counts; this is the first dollar-figure attestation in the corpus).'
 
 - id: q27
   added_date: '2026-05-15'
@@ -397,7 +422,8 @@ quotes:
     location: 'Fiscal Year Ending Dec. 2024, Assets/Debt'
   context: 'ProPublica Nonprofit Explorer extracted financial data for SRI International FY2024 (per Form 990 filed November 12, 2025)'
   statement_date: '2025-11-12'
-  significance: 'IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The cause of the going-concern flag is not attested in the archived sources — the balance-sheet numbers alone do not establish it.'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): IRS-sourced SRI International FY2024 balance-sheet position of total assets $409.6M, total liabilities $231.6M, net assets $178.0M.'
+  analysis: 'This is a balance-sheet attestation. The cause of the going-concern flag is not attested in the archived sources — the balance-sheet numbers alone do not establish it.'
 
 - id: q28
   added_date: '2026-05-15'
@@ -408,7 +434,8 @@ quotes:
     location: '1970 entry'
   context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004. Live URL has been removed from the modern sri.com site.'
   statement_date: '1970'
-  significance: 'SRI''s own first-party attestation of the 1970 Stanford severance — the specific event marking SRI''s transition from Stanford-University-affiliated subsidiary to independent nonprofit. The live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.'
+  significance: 'SRI history page, 1970s (2004 Wayback capture): SRI''s own first-party attestation that in 1970 Stanford Research Institute became independent from Stanford University.'
+  analysis: 'This is the 1970 Stanford severance — the specific event marking SRI''s transition from Stanford-University-affiliated subsidiary to independent nonprofit. The live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.'
 
 - id: q29
   added_date: '2026-05-15'
@@ -430,7 +457,8 @@ quotes:
     location: '1946 entry'
   context: 'SRI International''s 2004-era ''History of SRI International, 1940s'' page (sri.com/about/history/1940.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1946'
-  significance: 'SRI''s own first-party attestation of the 1946 founding events: Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the sri.com founding-year-only attestations with specific institutional steps. Specific within-1946 date for incorporation not attested.'
+  significance: 'SRI history page, 1940s (2004 Wayback capture): SRI''s own first-party attestation of the 1946 founding events, from trustee approval and incorporation to nonprofit status and eleven Stanford-elected directors.'
+  analysis: 'Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the sri.com founding-year-only attestations with specific institutional steps. Specific within-1946 date for incorporation not attested.'
 
 - id: q31
   added_date: '2026-05-15'
@@ -441,7 +469,8 @@ quotes:
     location: '1968 entry (Engelbart)'
   context: 'SRI International''s 2004-era ''History of SRI International, 1960s'' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1968'
-  significance: 'SRI''s own first-party attestation of Douglas Engelbart''s December 1968 personal computing demonstration at the Fall Joint Computer Conference — historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the sri.com Timeline computer-mouse claim. Specific December date not attested on this page.'
+  significance: 'SRI history page, 1960s (2004 Wayback capture): SRI''s own first-party attestation of Douglas Engelbart''s 1968 personal computing demonstration at the Fall Joint Computer Conference.'
+  analysis: 'The December 1968 demonstration is historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the sri.com Timeline computer-mouse claim. Specific December date not attested on this page.'
 
 - id: q32
   added_date: '2026-05-15'
@@ -452,7 +481,8 @@ quotes:
     location: '1969 entry (ARPANET)'
   context: 'SRI International''s 2004-era ''History of SRI International, 1960s'' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004'
   statement_date: '1969'
-  significance: 'SRI''s own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI''s ARPANET role to a more specific event than the sri.com Timeline entry. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.'
+  significance: 'SRI history page, 1960s (2004 Wayback capture): SRI''s own first-party attestation that SRI was the recipient of the first ARPANET login in 1969.'
+  analysis: 'The login is the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors SRI''s ARPANET role to a more specific event than the sri.com Timeline entry. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.'
 
 - id: q33
   added_date: '2026-05-15'
@@ -464,7 +494,8 @@ quotes:
     path: news/sri-international-about-20260515.html
     location: 'Stat block (13,000+ Patents / 50+ Spin-off companies / 500+ R&D projects)'
   context: 'SRI International ''About'' page (sri.com/about/), retrieved 2026-05-15 — institutional-scale stat block following the David Parekh CEO quote'
-  significance: 'SRI''s first-party attestation of three institutional-scale metrics — 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Anchors the description''s reference to these figures (previously sourced to the page in token-pool only).'
+  significance: 'SRI About page (retrieved May 15, 2026): SRI''s first-party attestation of 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year.'
+  analysis: 'These are three institutional-scale metrics. Anchors the description''s reference to these figures (previously sourced to the page in token-pool only).'
 
 - id: q34
   added_date: '2026-05-15'
@@ -476,7 +507,8 @@ quotes:
     location: 'Board of Directors section, Steven Walker entry'
   context: 'SRI International ''Our People'' page (sri.com/board-of-directors/), retrieved 2026-05-15 — current Board of Directors listing'
   statement_date: '2024-01-18'
-  significance: 'SRI''s own first-party attestation that Steven Walker joined SRI''s board (page listing date January 18, 2024). The Walker addition is institutionally significant for the UAP-research corpus — Walker''s page bio names "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director", both load-bearing entities (Targ''s Lockheed retirement; DARPA''s ARPANET / AAWSAP / IPMO contract chains).'
+  significance: 'SRI Board of Directors page (January 18, 2024 listing): SRI''s own first-party attestation that Steven Walker joined SRI''s board.'
+  analysis: 'The page listing date is January 18, 2024. The Walker addition is institutionally significant for the UAP-research corpus — Walker''s page bio names "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director", both load-bearing entities (Targ''s Lockheed retirement; DARPA''s ARPANET / AAWSAP / IPMO contract chains).'
 
 - id: q35
   added_date: '2026-05-15'
@@ -486,7 +518,8 @@ quotes:
     path: news/sri-com-board-of-directors-20260515.html
     location: 'Board of Directors section, Steven Walker bio descriptor'
   context: 'SRI International ''Our People'' page (sri.com/board-of-directors/), retrieved 2026-05-15 — bio descriptor for board member Steven Walker'
-  significance: 'SRI''s own attestation of Steven Walker''s prior roles at Lockheed Martin (VP/CTO, retired) and DARPA (former director). Cross-references Lockheed Martin and DARPA as load-bearing entities in the corpus.'
+  significance: 'SRI Board of Directors page (retrieved May 15, 2026): SRI''s own attestation of Steven Walker''s prior roles at Lockheed Martin (VP/CTO, retired) and DARPA (former director).'
+  analysis: 'Cross-references Lockheed Martin and DARPA as load-bearing entities in the corpus.'
 
 - id: q36
   added_date: '2026-05-17'
@@ -497,7 +530,8 @@ quotes:
     location: '¶ "H. E. Puthoff; Stanford Research Institute;"'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8.'
   statement_date: '1972-06-27'
-  significance: 'CIA primary-source attestation of K. Green ([`/people/kit-green`]) at OSI as the earliest named CIA-side recipient of Puthoff''s June 27, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green''s OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973.'
+  significance: 'Kress, CIA Studies in Intelligence (Winter 1977): a bibliographic footnote attests Puthoff''s June 27, 1972 letter from Stanford Research Institute to K. Green at OSI.'
+  analysis: 'CIA primary-source attestation of K. Green ([`/people/kit-green`]) at OSI as the earliest named CIA-side recipient of the letter — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green''s OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973.'
 
 - id: q37
   added_date: '2026-05-17'
@@ -507,7 +541,8 @@ quotes:
     path: government/solfoundation-vallee-people-page-20260517.html
     location: '¶2'
   context: 'Sol Foundation ''People'' page for Jacques Vallée ([`/people/jacques-vallee`]) — thesolfoundation.org/people/jacques-vallee-3/, retrieved 2026-05-17. Page-attributed Sol role: Emeritus Advisor.'
-  significance: 'Sol Foundation institutional attestation of Jacques Vallée as a staff engineer at SRI''s Augmentation Research Center (ARC) under Douglas Engelbart, working on the ARPANET network information center. Identifies Vallée''s SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ — same parent institution, different division. Sol page does not attest specific years of Vallée''s ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol''s descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division''s historical name. Preserved verbatim per source-form-preservation discipline.'
+  significance: 'Sol Foundation Jacques Vallée page (retrieved May 16, 2026): Sol Foundation institutional attestation of Vallée as a staff engineer at SRI''s Augmentation Research Center under Douglas Engelbart, working on the ARPANET network information center.'
+  analysis: 'Identifies Vallée''s SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ — same parent institution, different division. Sol page does not attest specific years of Vallée''s ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol''s descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division''s historical name. Preserved verbatim per source-form-preservation discipline.'
 
 - id: q38
   added_date: '2026-05-22'
@@ -517,7 +552,8 @@ quotes:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
   context: 'Russell Targ, IRVA 2009 talk abstract "A Tribute to Hella Hammid: The First Woman Remote Viewer, Part 2" (archived on the IRVA speaker biography page)'
-  significance: 'Targ first-person attestation of Hella Hammid''s pre-SRI profession — a distinguished LIFE magazine photographer — establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure the same abstract attests. Complements its CIA-requested control-subject passage with the photographer descriptor it lacks.'
+  significance: 'Russell Targ, IRVA talk abstract (2009): Targ''s first-person attestation that Hella Hammid''s pre-SRI profession was distinguished LIFE magazine photographer.'
+  analysis: 'Establishing the occupational background of the SRI remote-viewing "control" subject whose ten-year SRI tenure the same abstract attests. Complements its CIA-requested control-subject passage with the photographer descriptor it lacks.'
 
 - id: q39
   added_date: '2026-05-22'
@@ -527,7 +563,8 @@ quotes:
     path: news/sri-com-about-history-1960s-wayback-2004.html
     location: '1968 entry (Anderson presidency)'
   statement_date: '1968'
-  significance: 'SRI''s own first-party attestation of Charles A. Anderson''s 1968 elevation to the SRI presidency, from the 2004-era SRI history page. Anchors the Anderson presidency entries. Succeeded by William F. Miller in 1979. Specific within-1968 date not attested.'
+  significance: 'SRI history page, 1960s (2004 Wayback capture): SRI''s own first-party attestation of Charles A. Anderson''s 1968 elevation to the SRI presidency.'
+  analysis: 'The entry comes from the 2004-era SRI history page. Anchors the Anderson presidency entries. Succeeded by William F. Miller in 1979. Specific within-1968 date not attested.'
 
 - id: q40
   added_date: '2026-05-22'
@@ -537,7 +574,8 @@ quotes:
     path: news/sri-com-about-history-1970s-wayback-2004.html
     location: '1979 entry (Miller presidency)'
   statement_date: '1979'
-  significance: 'SRI''s own first-party attestation of William F. Miller''s 1979 elevation to the SRI presidency, succeeding Charles A. Anderson, from the 2004-era SRI history page. Anchors the Miller presidency entries. Specific within-1979 date not attested.'
+  significance: 'SRI history page, 1970s (2004 Wayback capture): SRI''s own first-party attestation of William F. Miller''s 1979 elevation to the SRI presidency, succeeding Charles A. Anderson.'
+  analysis: 'The entry comes from the 2004-era SRI history page. Anchors the Miller presidency entries. Specific within-1979 date not attested.'
 
 - id: q41
   added_date: '2026-05-22'
@@ -547,7 +585,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2023'
   statement_date: '2023-02-01'
-  significance: 'IRS-sourced (via ProPublica) attestation of Ellen Ochoa''s SRI board membership with a February 1, 2023 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors her board entry.'
+  significance: 'ProPublica, FY2023 Form 990 officer listing (February 1, 2023): IRS-sourced attestation of Ellen Ochoa''s SRI board membership with a February 1, 2023 start date.'
+  analysis: 'From the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2023, via ProPublica. The only ProPublica board entry in this corpus carrying an explicit per-person board start date. Anchors her board entry.'
 
 - id: q42
   added_date: '2026-05-22'
@@ -557,7 +596,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
   statement_date: '2025-11-12'
-  significance: 'IRS-sourced (via ProPublica) attestation of Ellen Pawlikowski as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors her board entry; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): IRS-sourced attestation of Ellen Pawlikowski as an SRI board member in the fiscal year ending Dec. 2024 officer listing.'
+  analysis: 'From the Form 990 Compensation/Key Employees/Officers listing, via ProPublica. Anchors her board entry; ProPublica also lists Pawlikowski for the fiscal years ending Dec. 2023 and Dec. 2022. Specific board start date not attested on the ProPublica page.'
 
 - id: q43
   added_date: '2026-05-22'
@@ -567,7 +607,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
   statement_date: '2025-11-12'
-  significance: 'IRS-sourced (via ProPublica) attestation of John J. Young Jr. as an SRI board member, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors his board entry; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): IRS-sourced attestation of John J. Young Jr. as an SRI board member in the fiscal year ending Dec. 2024 officer listing.'
+  analysis: 'From the Form 990 Compensation/Key Employees/Officers listing, via ProPublica. Anchors his board entry; ProPublica also lists Young for the fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021. Specific board start date not attested on the ProPublica page.'
 
 - id: q44
   added_date: '2026-05-22'
@@ -577,7 +618,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
   statement_date: '2025-11-12'
-  significance: 'IRS-sourced (via ProPublica) attestation of John P. McIntire as SRI Chief Legal Officer, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024 (filed November 12, 2025). Anchors his officer entry. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.'
+  significance: 'ProPublica, FY2024 Form 990 data (filed November 12, 2025): IRS-sourced attestation of John P. McIntire as SRI Chief Legal Officer in the fiscal year ending Dec. 2024 officer listing.'
+  analysis: 'From the Form 990 Compensation/Key Employees/Officers listing, via ProPublica. Anchors his officer entry. ProPublica renders the name as "John Mcintire" in the FY2024 section and "John P Mcintire" in earlier sections — a minor middle-initial variation across IRS Form 990 filings; the FY2024 verbatim form is preserved here. Specific role start date not attested on the ProPublica page.'
 
 - id: q45
   added_date: '2026-05-22'
@@ -587,7 +629,8 @@ quotes:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
   statement_date: '2024-01-19'
-  significance: 'IRS-sourced (via ProPublica) attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date, from the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors his officer entry.'
+  significance: 'ProPublica, FY2024 Form 990 officer listing (January 19, 2024): IRS-sourced attestation of Suresh Sunderrajan as SRI Chief Financial Officer with a January 19, 2024 start date.'
+  analysis: 'From the Form 990 Compensation/Key Employees/Officers listing for the fiscal year ending Dec. 2024, via ProPublica. ProPublica lists Sunderrajan as "President, Commercialization" for the fiscal year ending Dec. 2023 — the prior role before the CFO transition. Anchors his officer entry.'
 
 naming_quirks:
 

@@ -1146,7 +1146,8 @@ quotes:
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: "p. 1, ¶2"
-  significance: AARO bio lead — establishes the 'asked by USD(I&S)' selection narrative + 'Dr. K' alias used by AARO staff
+  significance: 'DoD biography of Kirkpatrick (July 20, 2022): the AARO bio lead establishes the ''asked by USD(I&S)'' selection narrative and the alias his AARO staff use.'
+  analysis: 'The bio lead also establishes the ''Dr. K'' alias used by AARO staff.'
   context: Official Department of Defense biography released at AARO establishment
 - id: q2
   claim_group: "New-Start Organizations Career Framing"
@@ -1186,7 +1187,8 @@ quotes:
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
     location: '¶ "I should also state clearly for"'
-  significance: The most-cited single line from Kirkpatrick's tenure. The institutional NHI-avoidance script preserved nearly verbatim by his successor Jon Kosloski
+  significance: 'SASC Emerging Threats and Capabilities subcommittee AARO hearing (April 19, 2023): the most-cited single line from Kirkpatrick''s tenure.'
+  analysis: 'The institutional NHI-avoidance script preserved nearly verbatim by his successor Jon Kosloski'
   context: Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing
 - id: q5
   claim_group: "AARO Mission, Structure and Authorities"
@@ -1512,7 +1514,8 @@ quotes:
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
     location: ¶ Kirkpatrick reply to alien-visitation Q
-  significance: Kirkpatrick's own concise response to the alien-visitation question following USD(I&S) Moultrie's longer 'holdings to date' negation. Original v1 of this entry quoted Moultrie's words ('holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that') misattributed to Kirkpatrick AND with the leading negation 'I have not seen anything in those' stripped (audit 2.2 — corrected 2026-04-29).
+  significance: 'Moultrie and Kirkpatrick AARO media roundtable (December 16, 2022): Kirkpatrick''s own concise response to the alien-visitation question following USD(I&S) Moultrie''s longer ''holdings to date'' negation.'
+  analysis: 'Original v1 of this entry quoted Moultrie''s words (''holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that'') misattributed to Kirkpatrick AND with the leading negation ''I have not seen anything in those'' stripped (audit 2.2 — corrected 2026-04-29).'
   context: Kirkpatrick reply at the USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO
 - id: q30
   claim_group: "Departure and Self-Assessment"
@@ -1538,7 +1541,8 @@ quotes:
   source:
     path: news/douglas-johnson-uapda-pentagon-rewrite-20240724.html
     location: ¶ Kirkpatrick interview quotes
-  significance: Kirkpatrick's July 2024 institutional-defense credit-claim regarding the OUSD(I&S) November 2023 UAP Disclosure Act rewrite. Per the same source, Kirkpatrick separately confirmed in email that the institutional defense was not directed by the White House, EOP, NSC, or any higher authority — locating the institutional defense within OUSD(I&S) on its own institutional account
+  significance: 'Douglas Johnson Mirador analysis citing Marik von Rennenkampff''s interview (July 17, 2024): Kirkpatrick''s institutional-defense credit-claim regarding the OUSD(I&S) November 2023 UAP Disclosure Act rewrite.'
+  analysis: 'The credit-claim dates to July 2024. Per the same source, Kirkpatrick separately confirmed in email that the institutional defense was not directed by the White House, EOP, NSC, or any higher authority — locating the institutional defense within OUSD(I&S) on its own institutional account'
   context: Marik von Rennenkampff interview, cited in Douglas Johnson Mirador analysis
 - id: q32
   claim_group: "Departure and Self-Assessment"
@@ -1577,7 +1581,8 @@ quotes:
   source:
     path: news/nssa-shelton-kirkpatrick-sda-20241105.pdf
     location: ¶1 bullet
-  significance: Lead bullet of NSSA Moorman Center paper co-authored with Gen. (Ret.) William L. Shelton
+  significance: 'NSSA Moorman Center Occasional Paper on space domain awareness (November 5, 2024): lead bullet of the paper Kirkpatrick co-authored with William Shelton.'
+  analysis: 'Lead bullet of NSSA Moorman Center paper co-authored with Gen. (Ret.) William L. Shelton'
   context: NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue'
 - id: q35
   claim_group: "Space Domain Awareness Papers"
@@ -1603,7 +1608,8 @@ quotes:
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: '¶ "All of that is both absurd"'
-  significance: Kirkpatrick's verbatim characterization of Mellon's framing of the Grusch matter during the June 11-13 2023 Signal exchange released under FOIA 24-F-0266 — first surfaces Kirkpatrick's contemporaneous private posture toward both Mellon and the Grusch claims, complementing his post-July-2023 LinkedIn-and-Politico public characterization of the Grusch hearing as 'insulting'
+  significance: 'Kirkpatrick–Mellon Signal exchange, FOIA 24-F-0266 release (June 13, 2023): Kirkpatrick calls Mellon''s framing of the Grusch matter "both absurd and false."'
+  analysis: 'Kirkpatrick''s verbatim characterization of Mellon''s framing of the Grusch matter during the June 11-13 2023 Signal exchange released under FOIA 24-F-0266 — first surfaces Kirkpatrick''s contemporaneous private posture toward both Mellon and the Grusch claims, complementing his post-July-2023 LinkedIn-and-Politico public characterization of the Grusch hearing as ''insulting'''
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis)
 - id: q37
   claim_group: "Mellon Signal Exchange"
@@ -1616,7 +1622,8 @@ quotes:
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: '¶ "And yes, you are defending and"'
-  significance: Kirkpatrick's self-described AARO role as 'defending and adjudicating' — his own contemporaneous framing of the AARO posture, surfaced via the FOIA 24-F-0266 release; previously paraphrased on this node only in Credibility Notes prose, restored here to Statements per the statements-only convention
+  significance: 'Kirkpatrick–Mellon Signal exchange, FOIA 24-F-0266 release (June 13, 2023): Kirkpatrick''s self-described AARO role as ''defending and adjudicating'' — his own contemporaneous framing of the AARO posture.'
+  analysis: 'Surfaced via the FOIA 24-F-0266 release; previously paraphrased on this node only in Credibility Notes prose, restored here to Statements per the statements-only convention'
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO
 - id: q38
   claim_group: "AARO Selection and Appointment"
@@ -1655,7 +1662,8 @@ quotes:
   source:
     path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
     location: ¶ Greenstreet split-screen interview
-  significance: Kirkpatrick's verbatim response to journalist Steven Greenstreet's question about the April 19 2018 SSCI/SASC Skinwalker briefing — frames himself as 'an independent outside reviewer'. Brandon Fugal's May 9 2024 X post photograph and the DoD's June 22 2024 written confirmation to Liberation Times that Kirkpatrick attended the briefing both contradict the 'outside reviewer' framing (audit 3.4 — the photograph shows Kirkpatrick at the head of the table while Fugal's team presented; Fugal's account states Kirkpatrick told attendees they 'already know' the reality of the UFO phenomenon).
+  significance: 'Greenstreet split-screen interview, transcribed by Unknown Country (May 8, 2024): Kirkpatrick frames himself as ''an independent outside reviewer'' at the April 19 2018 SSCI/SASC Skinwalker briefing.'
+  analysis: 'Kirkpatrick''s verbatim response to journalist Steven Greenstreet''s question about the briefing. Brandon Fugal''s May 9 2024 X post photograph and the DoD''s June 22 2024 written confirmation to Liberation Times that Kirkpatrick attended the briefing both contradict the ''outside reviewer'' framing (audit 3.4 — the photograph shows Kirkpatrick at the head of the table while Fugal''s team presented; Fugal''s account states Kirkpatrick told attendees they ''already know'' the reality of the UFO phenomenon).'
   context: Greenstreet split-screen interview, transcribed in the June 12 2024 Unknown Country article
 - id: q41
   claim_group: "2018 Skinwalker Ranch Briefing and Pre-AARO Involvement"
@@ -1666,7 +1674,8 @@ quotes:
   source:
     path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
     location: '¶ "While being interviewed by New York Post reporter-turned-UFO-debunker Steven Greenstreet on May 8"'
-  significance: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
+  significance: 'Greenstreet interview, as paraphrased by Unknown Country (May 8, 2024): Kirkpatrick''s verbatim phrase denying that he did "perform any duties regarding UFOs or paranormal phenomena" before AARO.'
+  analysis: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
   context: Greenstreet interview May 8 2024, paraphrased with embedded verbatim phrases in Unknown Country article June 12 2024 — Kirkpatrick denying pre-AARO UAP duties
 - id: q42
   claim_group: "Historical Record Report Volume 1"
@@ -1679,7 +1688,8 @@ quotes:
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
     location: 'Doc 6, Wirkkala 2024-03-06 10:21'
-  significance: 'FOIA 24-F-0894 documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
+  significance: 'Wirkkala read-out in FOIA 24-F-0894 (March 6, 2024): documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report.'
+  analysis: 'The two briefings were Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
   context: 'Wirkkala read-out summary in FOIA 24-F-0894 documenting Kirkpatrick co-presenting two AARO Historical Record Report briefings on Capitol Hill three months after his December 1, 2023 official AARO departure'
 - id: q43
   claim_group: "No Evidence of Aliens or Recovered Technology"
@@ -1690,7 +1700,8 @@ quotes:
   source:
     path: news/fortune-kirkpatrick-linkedin-insulting-20230729.html
     location: 'Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023'
-  significance: 'Verbatim Kirkpatrick LinkedIn statement (July 28, 2023, in personal capacity) issued two days after David Grusch''s House Oversight testimony. The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
+  significance: 'Kirkpatrick LinkedIn post, via Fortune (July 28, 2023): verbatim Kirkpatrick statement, in personal capacity, issued two days after David Grusch''s House Oversight testimony.'
+  analysis: 'The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
   context: 'Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage'
 - id: q44
   added_date: '2026-09-26'
@@ -1797,7 +1808,8 @@ quotes:
   source:
     path: news/abcnews-pentagon-begins-release-ufo-files-kirkpatrick-statement-20260508.html
     location: '¶ “There’s nothing unexpected in the release'
-  significance: 'Kirkpatrick''s on-record assessment, as former AARO head, of the May 8, 2026 Pentagon UAP-files release: that it contains "nothing unexpected" and, absent analysis or context, will fuel speculation, conspiracy and "arm-chair pseudoscience" — a post-tenure public position on the disclosure effort.'
+  significance: 'ABC News (May 8, 2026): Kirkpatrick, as former AARO head, says the Pentagon UAP-files release contains "nothing unexpected" and will fuel "arm-chair pseudoscience."'
+  analysis: 'Kirkpatrick''s on-record assessment, as former AARO head, of the May 8, 2026 Pentagon UAP-files release: that it contains "nothing unexpected" and, absent analysis or context, will fuel speculation, conspiracy and "arm-chair pseudoscience" — a post-tenure public position on the disclosure effort.'
   context: 'Statement to ABC News, quoted in the ABC News article "Pentagon releases declassified UFO files from various federal agencies" by Luis Martinez and Steven Beynon (May 8, 2026), reacting to the Pentagon''s May 8, 2026 release of declassified UAP files. The article identifies Kirkpatrick as "the former head of the Pentagon''s All-domain Anomaly Resolution Office".'
   claim_group: "2026 UFO Files Release Commentary"
   statement_date: '2026-05-08'

@@ -73,7 +73,9 @@ Three positron-powered rockets are investigated for a manned Mars mission: a sol
 
 ---
 
-### Cost and timeline (Conclusions) — within 10 years the 150 µg could be made in 6 months at a cost of $69 million; the Positron Costs section instead states $96 million (intra-document contradiction); likened to Lindbergh's 1927 Spirit of St. Louis flight
+### DIRD #8 (March 2, 2010), Conclusions: within 10 years the 150 µg of positrons could be made in 6 months at a cost of $69 million, contradicting the Positron Costs section's $96 million.
+
+Cost and timeline (Conclusions); the Positron Costs section instead states $96 million (intra-document contradiction); likened to Lindbergh's 1927 Spirit of St. Louis flight
 
 > Within 10 years, the 150 µg of positrons required for a globe-encircling, nonstop turbojet flight could be made in 6 months at a cost of $69 million. This first-ever antimatter voyage, approximately 90 years after Lindbergh's 1927 Spirit of St. Louis transatlantic flight, would stir the public's imagination and eventually lead to positron-powered exploration of the solar system in the 21st century.
 

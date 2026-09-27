@@ -199,6 +199,13 @@ In order, with a check after each (build-protocol → run
      q40", "timeline t16", "affiliation a2". Rule and exemptions:
      build-protocol "Prose names the source — never an entry ID"; gated at
      organize and link.
+   - **Key Passage headings — one sentence.** Each quote's `significance` is
+     one sentence within the word cap (`quote_entry.significance_words_max`),
+     "Source (date): what the passage shows". When you normalize the Worker's quotes, move any second sentence
+     — pairings with other passages, chronology, caveats, source-form notes —
+     into the quote's `analysis`, keeping every assertion; never drop one.
+     Rule: build-protocol "Key Passage headings — one sentence"; gated at
+     extract (`quote_significance_form`).
    - → `validate-research.py --phase organize meta/research/{slug}.yaml`
 2. **Link.** Normalize **every** worker cross-ref candidate into a canonical
    `[`/path`]` link — in the structured field it belongs to (`relationships` /

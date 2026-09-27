@@ -404,7 +404,9 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 ---
 
-### Kirkpatrick states AARO did not play a role in DOD's response to the recent UAP incidents over North America other than initial advice — confirms Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; refers further questions back to the White House
+### SASC AARO hearing transcript (April 19, 2023): Kirkpatrick states AARO did not play a role in DOD's response to the recent UAP incidents over North America other than initial advice.
+
+The statement confirms Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; Kirkpatrick refers further questions back to the White House.
 
 > Beyond that, the response I would have to -- I would have to refer you back to the White House for the decision on how they did the response. We did not play a role in what you would respond other than that initial advice on what we are seeing and how we are seeing it.
 

@@ -353,7 +353,9 @@ The paper discussed the critical technologies required to build a working HPM so
 
 ---
 
-### Damage physics — semiconductor junctions fail when junction temperatures exceed 600° Kelvin; the threshold power for damage varies as 1/t for pulses shorter than 100 nanoseconds, as 1/t^1/2 between 100 nanoseconds and 10 microseconds, and as a constant power for pulses longer than 10 microseconds — the quantitative basis of the HPM threat model.
+### DIRD #3 (January 28, 2010), Summary: semiconductor junctions fail when junction temperatures exceed 600° Kelvin, and the threshold power for damage varies with pulse duration.
+
+Damage physics — the threshold power for damage varies as 1/t for pulses shorter than 100 nanoseconds, as 1/t^1/2 between 100 nanoseconds and 10 microseconds, and as a constant power for pulses longer than 10 microseconds — the quantitative basis of the HPM threat model.
 
 > Failures in semiconductors owing to thermal effects occur when junction temperatures are raised above 600° Kelvin. Since thermal energy diffuses through the semiconductor, failure mechanisms depend on the microwave pulse duration. If the pulse duration is short compared with thermal diffusion times, then the temperature increases in proportion to the deposited energy. Pulse durations (t) shorter than about 100 nanoseconds fall into this regime, and the threshold power for damage varies as 1/t. Experimental testing has shown that for pulse durations between 100 nanoseconds and 10 microseconds, the power required for damage scales as 1/t^1/2. And for pulses longer than 10 microseconds, a steady state in which the thermal diffusion rate equals the rate of energy deposition and temperature is proportional to power, resulting in a constant power requirement for damage. In this case, the power requirement scales as t. The consequence of these scaling factors is that short pulses require very high power but little energy, while very long pulses require large amounts of energy but little power. This analysis results in a vast range of HPM sources capable of damaging semiconductor devices.
 
@@ -377,7 +379,9 @@ The paper discussed the critical technologies required to build a working HPM so
 
 ---
 
-### Switching-research attribution — the most promising semiconductor-switch developments rest on physics pioneered by I. V. Grekhov and colleagues at the Ioffe Physical-Technical Institute in St. Petersburg, with whom the AFRL and the University of New Mexico collaborate on delayed breakdown devices, silicon avalanche shapers, and drift step recovery diodes.
+### DIRD #3 (January 28, 2010), "SOLID-STATE SWITCHING": the most promising semiconductor-switch developments rest on physics pioneered by I. V. Grekhov and colleagues at the Ioffe Physical-Technical Institute in St. Petersburg.
+
+Switching-research attribution — the AFRL and the University of New Mexico collaborate with Grekhov on delayed breakdown devices, silicon avalanche shapers, and drift step recovery diodes.
 
 > The most promising new developments in semiconductor switches today are based on physics pioneered by I. V. Grekhov and colleagues at the Ioffe Physical-Technical Institute in St. Petersburg. The AFRL is currently collaborating with Dr. Grekhov and the University of New Mexico in studies of delayed breakdown devices, silicon avalanche shapers, and drift step recovery diodes in efforts to improve the performance of these devices.
 

@@ -79,7 +79,8 @@ quotes:
   source:
     path: government/dird-22-metamaterials-aerospace-20100406.pdf
     location: 'Prepared by / Author block'
-  significance: 'Provenance block; preparing component withheld [REDACTED: (b)(3):10 USC 424], Author withheld [REDACTED: (b)(6)] — authorship is extrinsic (DIA AAWSAP products list → Dr. G. Shvets / UT-Austin). Bracketed redaction markers preserved verbatim.'
+  significance: 'DIRD #22 (April 6, 2010), provenance block: the preparing component is withheld [REDACTED: (b)(3):10 USC 424] and the Author withheld [REDACTED: (b)(6)].'
+  analysis: 'Authorship is extrinsic (DIA AAWSAP products list → Dr. G. Shvets / UT-Austin). Bracketed redaction markers preserved verbatim.'
   statement_date: '2010-04-06'
 - id: q6
   added_date: '2026-06-07'
@@ -96,7 +97,8 @@ quotes:
   source:
     path: government/dird-22-metamaterials-aerospace-20100406.pdf
     location: 'Administrative Note'
-  significance: 'Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld [REDACTED: (b)(3):10 USC 424;(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.'
+  significance: 'DIRD #22 (April 6, 2010), Administrative Note: the program provenance is the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series, with the Program Manager withheld.'
+  analysis: 'Program-provenance: Program Manager withheld [REDACTED: (b)(3):10 USC 424;(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.'
   statement_date: '2010-04-06'
 - id: q8
   added_date: '2026-06-07'
@@ -429,7 +431,8 @@ quotes:
   source:
     path: government/dird-22-metamaterials-aerospace-20100406.pdf
     location: 'Metamaterials for Energy Harvesting'
-  significance: The wide-angle-absorber claim — success in designing a true impedance-matched optical metamaterial (Reference 20, the WAPAMIR). Preserves the in-document typo "if course" (for "of course") verbatim per no-correction discipline.
+  significance: 'DIRD #22 (April 6, 2010), "Metamaterials for Energy Harvesting": the wide-angle-absorber claim is success in designing a true impedance-matched optical metamaterial (Reference 20, the WAPAMIR).'
+  analysis: 'Preserves the in-document typo "if course" (for "of course") verbatim per no-correction discipline.'
   statement_date: '2010-04-06'
 - id: q45
   added_date: '2026-06-07'

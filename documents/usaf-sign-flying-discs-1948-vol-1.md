@@ -64,7 +64,9 @@ Other pages concern German tailless aircraft, relating the Horten brothers to th
 
 ---
 
-### Documents the 30 December 1947 letter instructing Air Materiel Command to stand up the project — the directive that established what became Project SIGN. The typewriter line-wrap "sight-ings" is preserved verbatim.
+### USAF Flying Discs file, Routing and Record Sheet (February 12, 1948): the sheet documents the 30 December 1947 letter instructing Air Materiel Command to stand up the project.
+
+Documents the directive that established what became Project SIGN. The typewriter line-wrap "sight-ings" is preserved verbatim.
 
 > By letter from this Headquarters, dated 30 December 1947 with subject as above, the Commanding General, Air Materiel Command is instructed to "set up a project whose purpose is to collect, collate, evaluate and distribute to interested government agencies and contractors all information concerning sight-ings and phenomena in the atmosphere which can be construed to be of concern to the national security".
 
@@ -100,7 +102,9 @@ Other pages concern German tailless aircraft, relating the Horten brothers to th
 
 ---
 
-### Designates Air Materiel Command (Wright-Patterson) as the lead Air Force agency for flying-disc information — the institutional precursor of Project SIGN's organizational home. The source's own mid-sentence capital "Implementing" and the typewriter line-wrap "pheno-mena" are preserved verbatim.
+### USAF Flying Discs file, Disposition Form (February 27, 1948): the form designates Air Materiel Command (Wright-Patterson) as the lead Air Force agency for flying-disc information.
+
+This is the institutional precursor of Project SIGN's organizational home. The source's own mid-sentence capital "Implementing" and the typewriter line-wrap "pheno-mena" are preserved verbatim.
 
 > In Implementing this policy the Air Materiel Command has been designated the Air Force agency to collect, collate, evaluate and distribute to interested government agencies and contractors all information concerning sightings and pheno-mena in the atmosphere which can be construed to be of concern to the national security.
 

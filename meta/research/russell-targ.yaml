@@ -75,7 +75,8 @@ quotes:
     location: '¶2'
   context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
   observation_type: relayed
-  significance: 'Targ''s own self-attestation of three roles: laser pioneer, Stanford Research Institute psychic-abilities investigation cofounder, and active period 1970s-1980s. Primary-source anchor for Targ''s SRI Stargate-precursor cofounder role (the 1974 Nature paper provides peer-reviewed corroboration via the Targ + Puthoff byline).'
+  significance: 'Targ''s ESP Research website (retrieved May 7, 2026): Targ self-attests as a laser pioneer and cofounder of the Stanford Research Institute psychic-abilities investigation in the 1970s and 1980s.'
+  analysis: 'Targ''s own self-attestation of three roles: laser pioneer, Stanford Research Institute psychic-abilities investigation cofounder, and active period 1970s-1980s. Primary-source anchor for Targ''s SRI Stargate-precursor cofounder role (the 1974 Nature paper provides peer-reviewed corroboration via the Targ + Puthoff byline).'
 
 - id: q2
   claim_group: "Lockheed Martin Laser Career"
@@ -88,7 +89,8 @@ quotes:
     location: '¶2'
   context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
   observation_type: relayed
-  significance: 'Targ''s own self-attestation of his Lockheed Martin career outcome (retirement as senior staff scientist) and characterization of his Lockheed-era work (laser technology for peaceful applications). Independent peer-reviewed corroboration of the Lockheed Martin role from the 1991 and 1996 Applied Optics author affiliations; the retirement date itself is not attested in archived sources.'
+  significance: 'Targ''s ESP Research website (retrieved May 7, 2026): Targ self-attests his retirement from Lockheed Martin as a senior staff scientist developing laser technology for peaceful applications.'
+  analysis: 'Targ''s own self-attestation of his Lockheed Martin career outcome (retirement as senior staff scientist) and characterization of his Lockheed-era work. Independent peer-reviewed corroboration of the Lockheed Martin role from the 1991 and 1996 Applied Optics author affiliations; the retirement date itself is not attested in archived sources.'
 
 - id: q3
   claim_group: "Nature 1974 Sensory-Shielding Findings"
@@ -101,7 +103,8 @@ quotes:
   context: 'Abstract of Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025'
   observation_type: relayed
   statement_date: '1974-10-18'
-  significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Targ''s Stanford Research Institute cofounder role (the role Targ self-attests on his ESP Research site). The paper''s author affiliation places Targ at the Electronics and Bioengineering Laboratory, SRI, Menlo Park as of the 11 March 1974 manuscript receipt date.'
+  significance: 'Targ and Puthoff, Nature 251 abstract (October 18, 1974): the co-authored peer-reviewed report presents SRI results suggesting perceptual modalities through which information not presented to any known sense is obtained.'
+  analysis: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Targ''s Stanford Research Institute cofounder role (the role Targ self-attests on his ESP Research site). The paper''s author affiliation places Targ at the Electronics and Bioengineering Laboratory, SRI, Menlo Park as of the 11 March 1974 manuscript receipt date.'
 
 - id: q4
   claim_group: "Book Catalogue"
@@ -114,7 +117,8 @@ quotes:
     location: '¶2'
   context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
   observation_type: relayed
-  significance: 'Targ''s own self-attestation of his authored and co-authored book catalogue (two recent solo / lead-authored works and five co-authored works), and his broader self-described roles beyond physicist and author (editor, publisher, songwriter, producer, teacher). Primary-source anchor for the book catalogue; specific publication years are not attested on the espresearch homepage.'
+  significance: 'Targ''s ESP Research website (retrieved May 7, 2026): Targ self-attests his authored and co-authored book catalogue and his self-described roles beyond physicist and author.'
+  analysis: 'Targ''s own self-attestation covers two recent solo / lead-authored works and five co-authored works, and his broader self-described roles (editor, publisher, songwriter, producer, teacher). Primary-source anchor for the book catalogue; specific publication years are not attested on the espresearch homepage.'
 
 - id: q5
   claim_group: "SRI Psychic-Research Cofounder Role"
@@ -126,7 +130,8 @@ quotes:
     location: '¶1'
   context: 'International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703)'
   observation_type: relayed
-  significance: 'Third-party (IRVA) biographical attestation corroborating Targ''s espresearch.com self-attestation of laser-pioneer + SRI psychic-abilities cofounder role, and adding new primary-source-attested facts: (a) the SRI work was published in Nature, IEEE Proceedings, and AAAS Proceedings — the Nature 1974 paper is one of those publications; (b) explicit framing of the SRI work as ''remote viewing''.'
+  significance: 'IRVA speaker biography (Wayback capture, January 23, 2025): the third-party bio corroborates Targ''s laser-pioneer and SRI psychic-abilities cofounder role and frames the SRI work as ''remote viewing''.'
+  analysis: 'Third-party (IRVA) biographical attestation corroborating Targ''s espresearch.com self-attestation of laser-pioneer + SRI psychic-abilities cofounder role, and adding new primary-source-attested facts: (a) the SRI work was published in Nature, IEEE Proceedings, and AAAS Proceedings — the Nature 1974 paper is one of those publications; (b) explicit framing of the SRI work as ''remote viewing''.'
 
 - id: q6
   claim_group: "Education and Soviet Academy Engagement"
@@ -138,7 +143,8 @@ quotes:
     location: '¶2'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  significance: 'IRVA bio attests Targ''s educational background (Queens College BS Physics + Columbia University graduate work in physics), two NASA awards for laser inventions, and a specific Cold-War-era engagement with the USSR Academy of Science (1983 and 1984 remote-viewing demonstrations). None of these facts are attested on the espresearch.com homepage.'
+  significance: 'IRVA speaker biography (Wayback capture, January 23, 2025): the bio attests Targ''s physics education, two NASA awards for laser inventions, and 1983 and 1984 remote-viewing demonstrations for the USSR Academy of Science.'
+  analysis: 'IRVA bio attests Targ''s educational background (Queens College BS Physics + Columbia University graduate work in physics), two NASA awards for laser inventions, and a specific Cold-War-era engagement with the USSR Academy of Science (1983 and 1984 remote-viewing demonstrations). None of these facts are attested on the espresearch.com homepage.'
 
 - id: q7
   claim_group: "Book Catalogue"
@@ -150,7 +156,8 @@ quotes:
     location: '¶3'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  significance: 'IRVA bio adds publication-year and co-author detail to the book catalogue Targ self-attests on espresearch.com. Specific corroboration: Mind Reach co-author E. Harold Puthoff, 1977 (reprint 2005); Miracles of Mind co-author Jane Katra, 1998; Limitless Mind 2004; Do You See What I See (autobiography) 2008. Specific divergence: IRVA lists Mind Reach co-author as ''E. Harold Puthoff'' while the 1974 Nature paper byline uses ''HAROLD PUTHOFF'' — same person, formal vs middle-initial style. Mind Reach''s subtitle differs slightly between sources (espresearch: ''Scientists Look at Psychic Abilities''; IRVA: ''Scientists Look at Psychic Ability'' — singular vs plural ''Ability'').'
+  significance: 'IRVA speaker biography (Wayback capture, January 23, 2025): the bio adds publication years and co-authors to Targ''s self-attested book catalogue, with minor divergences in name style and subtitle.'
+  analysis: 'IRVA bio adds publication-year and co-author detail to the book catalogue Targ self-attests on espresearch.com. Specific corroboration: Mind Reach co-author E. Harold Puthoff, 1977 (reprint 2005); Miracles of Mind co-author Jane Katra, 1998; Limitless Mind 2004; Do You See What I See (autobiography) 2008. Specific divergence: IRVA lists Mind Reach co-author as ''E. Harold Puthoff'' while the 1974 Nature paper byline uses ''HAROLD PUTHOFF'' — same person, formal vs middle-initial style. Mind Reach''s subtitle differs slightly between sources (espresearch: ''Scientists Look at Psychic Abilities''; IRVA: ''Scientists Look at Psychic Ability'' — singular vs plural ''Ability'').'
 
 - id: q8
   claim_group: "Lockheed Martin Laser Career"
@@ -162,7 +169,8 @@ quotes:
     location: '¶4'
   context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
   observation_type: relayed
-  significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter).'
+  significance: 'IRVA speaker biography (Wayback capture, January 23, 2025): the bio attests Targ''s 1997 Lockheed retirement and his senior-staff-scientist work on airborne laser systems for windshear and air turbulence detection.'
+  analysis: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter).'
 
 - id: q9
   claim_group: "SRI Psychic-Research Cofounder Role"
@@ -175,7 +183,8 @@ quotes:
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8)'
   observation_type: relayed
   statement_date: '1977'
-  significance: 'Foundational CIA primary-source attestation of Targ as one of the two laser physicists (alongside Harold E. Puthoff) who re-awakened CIA research in parapsychology. Kress, a CIA Operations Officer in the Office of Technical Service (OTS), characterizes Targ as the experimentalist counterpart to Puthoff''s theoretician role and attests Targ''s long-standing avocational interest in parapsychology. Corroborates Targ''s espresearch.com self-attestation and the IRVA bio of the SRI cofounder role from CIA''s own institutional record.'
+  significance: 'Kress, Studies in Intelligence (1977): CIA''s own record names Targ and Harold E. Puthoff as the two laser physicists who re-awakened CIA research in parapsychology.'
+  analysis: 'This is a foundational CIA primary-source attestation of Targ as one of the two laser physicists (alongside Harold E. Puthoff) who re-awakened CIA research in parapsychology. Kress, a CIA Operations Officer in the Office of Technical Service (OTS), characterizes Targ as the experimentalist counterpart to Puthoff''s theoretician role and attests Targ''s long-standing avocational interest in parapsychology. Corroborates Targ''s espresearch.com self-attestation and the IRVA bio of the SRI cofounder role from CIA''s own institutional record.'
 
 - id: q10
   claim_group: "CIA Engagement and Contracts at SRI"
@@ -188,7 +197,8 @@ quotes:
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   observation_type: relayed
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of the specific April 1972 Targ-CIA Office of Scientific Intelligence meeting that initiated CIA''s engagement with the SRI parapsychology investigation, and of Targ as having "recently joined the Stanford Research Institute (SRI)" as of that meeting. The 1972 SRI-join attestation anchors the 1972 start of Targ''s SRI affiliation and of his SRI psychic-abilities investigation role. The Kress paper also names the CIA sub-offices that managed the Targ contracts: Office of Scientific Intelligence (OSI), Office of Research and Development (ORD), and Office of Technical Service (OTS).'
+  significance: 'Kress, Studies in Intelligence (1977): Targ, having "recently joined the Stanford Research Institute (SRI)", met CIA Office of Scientific Intelligence personnel in April 1972, initiating CIA''s engagement with the SRI investigation.'
+  analysis: 'CIA primary-source attestation of the specific April 1972 Targ-CIA Office of Scientific Intelligence meeting that initiated CIA''s engagement with the SRI parapsychology investigation, and of Targ''s SRI join as of that meeting. The 1972 SRI-join attestation anchors the 1972 start of Targ''s SRI affiliation and of his SRI psychic-abilities investigation role. The Kress paper also names the CIA sub-offices that managed the Targ contracts: Office of Scientific Intelligence (OSI), Office of Research and Development (ORD), and Office of Technical Service (OTS).'
 
 - id: q11
   claim_group: "CIA Engagement and Contracts at SRI"
@@ -201,7 +211,8 @@ quotes:
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   observation_type: relayed
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of the first formal CIA contract with Targ and Puthoff at SRI: a $874 OTS project-officer contract in August 1972 for a demonstration with the previously-described magnetometer subject. This is the inception of the CIA-funded SRI parapsychology investigation; subsequent expansion (Kress footnote 4: OTS Contract 8473, 1 October 1972 $50,000 expanded effort; February 1974 joint OTS/ORD program) flowed from this initial $874 demonstration contract.'
+  significance: 'Kress, Studies in Intelligence (1977): the first formal CIA contract with Targ and Puthoff at SRI was a $874 OTS project-officer contract in August 1972 for a demonstration.'
+  analysis: 'CIA primary-source attestation; the demonstration was with the previously-described magnetometer subject. This is the inception of the CIA-funded SRI parapsychology investigation; subsequent expansion (Kress footnote 4: OTS Contract 8473, 1 October 1972 $50,000 expanded effort; February 1974 joint OTS/ORD program) flowed from this initial $874 demonstration contract.'
 
 - id: q12
   claim_group: "CIA Engagement and Contracts at SRI"
@@ -214,7 +225,8 @@ quotes:
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   observation_type: relayed
   statement_date: '1977'
-  significance: 'CIA primary-source attestation that Targ was still actively engaged with the SRI parapsychology investigation as of November 1976, and that the SRI work drew enough attention from the Soviet intelligence community to prompt DCI George Bush to request a briefing on CIA''s parapsychology investigations. Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976) — Targ remained at SRI at least four years after the April 1972 join the same paper attests.'
+  significance: 'Kress, Studies in Intelligence (1977): in November 1976 DCI George Bush requested a briefing on CIA''s parapsychology investigations after learning Soviets were questioning Puthoff and Targ at SRI.'
+  analysis: 'CIA primary-source attestation that Targ was still actively engaged with the SRI parapsychology investigation as of November 1976, and that the SRI work drew enough attention from the Soviet intelligence community to prompt the request. Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976) — Targ remained at SRI at least four years after the April 1972 join the same paper attests.'
 
 - id: q13
   claim_group: "CIA-DIA Funding of the SRI Remote-Viewing Program"
@@ -227,7 +239,8 @@ quotes:
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2'
   observation_type: relayed
   statement_date: '1993-04-30'
-  significance: 'DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI for continuing that research. Quote scope is bounded to page 10 of the source (the page-10/11 break interrupts the source''s continuation about 1975 funding discontinuation and subsequent DIA funding — that sequence is described in credibility_notes per the same Stargate Overview Section III).'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): DIA attests the early-1970s SRI International remote viewing research and the initial CIA funding to SRI for continuing that research.'
+  analysis: 'DIA institutional primary-source attestation. Quote scope is bounded to page 10 of the source (the page-10/11 break interrupts the source''s continuation about 1975 funding discontinuation and subsequent DIA funding — that sequence is described in credibility_notes per the same Stargate Overview Section III).'
 
 - id: q14
   claim_group: "CIA-DIA Funding of the SRI Remote-Viewing Program"
@@ -240,7 +253,8 @@ quotes:
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993'
   observation_type: relayed
   statement_date: '1993-04-30'
-  significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park. Anchors the outer bound of the SRI program window: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" in the KEY US RESEARCH EFFORTS table. Targ''s individual SRI-tenure end is not attested by this source — only the program''s end at SRI.'
+  significance: 'DIA Star Gate Project overview (April 30, 1993): the SRI International investigation was discontinued in 1990, and FY 1991 Congressional direction re-established the research at SAIC in Menlo Park.'
+  analysis: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park. Anchors the outer bound of the SRI program window: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" in the KEY US RESEARCH EFFORTS table. Targ''s individual SRI-tenure end is not attested by this source — only the program''s end at SRI.'
 
 - id: q15
   claim_group: "SRI Program Scope and Evaluation"
@@ -253,7 +267,8 @@ quotes:
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.2 (The Early Scientific Effort at SRI)'
   observation_type: relayed
   statement_date: '1995-09-29'
-  significance: 'Independent government-commissioned evaluation (AIR, prepared at CIA''s request at the end of the Stargate Project) describes the 1974-1975 SRI controlled experiments and the results reported by Puthoff and Targ (1975) — the foundational SRI internal report co-authored by Targ. The AIR bibliography (p. 3-30) lists the cited reference as "Puthoff, Harold E. and Russell Targ (1975). ''Perceptual Augmentation Techniques: Part Two—Research Report,'' Stanford Research Institute Final Report, Dec. 1, 1975."'
+  significance: 'AIR evaluation of remote viewing (September 29, 1995): the independent government-commissioned evaluation describes the 1974-1975 SRI controlled experiments and the results reported by Puthoff and Targ (1975).'
+  analysis: 'Independent government-commissioned evaluation (AIR, prepared at CIA''s request at the end of the Stargate Project); Puthoff and Targ (1975) is the foundational SRI internal report co-authored by Targ. The AIR bibliography (p. 3-30) lists the cited reference as "Puthoff, Harold E. and Russell Targ (1975). ''Perceptual Augmentation Techniques: Part Two—Research Report,'' Stanford Research Institute Final Report, Dec. 1, 1975."'
 
 - id: q16
   claim_group: "SRI Program Scope and Evaluation"
@@ -266,7 +281,8 @@ quotes:
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
   observation_type: relayed
   statement_date: '1995-09-29'
-  significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Targ as SRI cofounder is the institutional context for this program; the 1973 start anchors the time-frame from CIA / SRI internal documentation.'
+  significance: 'AIR evaluation of remote viewing (September 29, 1995): AIR reviews the 1988 SRI internal analysis of the 1973-1988 program — 154 experiments and over 26,000 individual trials.'
+  analysis: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Targ as SRI cofounder is the institutional context for this program; the 1973 start anchors the time-frame from CIA / SRI internal documentation.'
 
 - id: q17
   claim_group: "SRI Experimental Methodology and Controls"
@@ -292,7 +308,8 @@ quotes:
   context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
   observation_type: relayed
   statement_date: '1973-08-13'
-  significance: 'Targ-authored "convincing and unambiguous manner" conclusion — the load-bearing primary-source statement that downstream Geller-biography accounts (and the urigeller.com biography page) invoke as the SRI / CIA endorsement of Geller. Targ is the sole author of this cover memo, so this is Targ''s own primary-source conclusion on the Aug 1973 SRI experiments.'
+  significance: 'Targ''s cover memo on Uri Geller at SRI (August 13, 1973): Targ, the memo''s sole author, concludes Geller demonstrated paranormal perceptual ability in a "convincing and unambiguous manner".'
+  analysis: 'This Targ-authored conclusion is the load-bearing primary-source statement that downstream Geller-biography accounts (and the urigeller.com biography page) invoke as the SRI / CIA endorsement of Geller. Targ is the sole author of this cover memo, so this is Targ''s own primary-source conclusion on the Aug 1973 SRI experiments.'
 
 - id: q19
   claim_group: "SRI Experimental Methodology and Controls"
@@ -305,7 +322,8 @@ quotes:
   context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
   observation_type: relayed
   statement_date: '1973-08-13'
-  significance: 'Targ-authored protocol-controls attestation — the one-way intercom, sensory-leakage examination, and no-defect framing that Targ documents at the procedural-rigor end of the Aug 1973 SRI Geller report. Counterweight to subsequent skeptical critiques (Maddox 1974 editorial, Randi accounts) that the SRI protocols admitted sensory cueing.'
+  significance: 'Targ''s cover memo on Uri Geller at SRI (August 13, 1973): Targ reports that examination of the shielded room and protocol found no sensory leakage and no protocol defect.'
+  analysis: 'Targ-authored protocol-controls attestation — the one-way intercom, sensory-leakage examination, and no-defect framing that Targ documents at the procedural-rigor end of the Aug 1973 SRI Geller report. Counterweight to subsequent skeptical critiques (Maddox 1974 editorial, Randi accounts) that the SRI protocols admitted sensory cueing.'
 
 - id: q20
   claim_group: "1973 SRI Subject-Experiment Findings"
@@ -318,7 +336,8 @@ quotes:
   context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
   observation_type: relayed
   statement_date: '1973-08-13'
-  significance: 'Targ-authored mechanism-hypothesis framing — Targ explicitly identifies two competing mechanisms (clairvoyance vs telepathy) that the Aug 1973 computer-stored-target experiments cannot distinguish. Important methodological framing: Targ acknowledges the experiments do not adjudicate between mechanisms even when they appear to demonstrate perceptual ability.'
+  significance: 'Targ''s cover memo on Uri Geller at SRI (August 13, 1973): Targ says the computer-stored-target experiments cannot distinguish clairvoyance from telepathy as the mechanism.'
+  analysis: 'Targ-authored mechanism-hypothesis framing — Targ explicitly identifies two competing mechanisms (clairvoyance vs telepathy) that the Aug 1973 computer-stored-target experiments cannot distinguish. Important methodological framing: Targ acknowledges the experiments do not adjudicate between mechanisms even when they appear to demonstrate perceptual ability.'
 
 - id: q21
   claim_group: "CIA Engagement and Contracts at SRI"
@@ -331,7 +350,8 @@ quotes:
   context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
   observation_type: relayed
   statement_date: '1973-02-22'
-  significance: 'Targ-co-authored Section A introduction enumerating the contract 1471(S)73 tasks Targ co-conducted: Tasks 1+2 with Ingo Swann (two-week field measurement program, 14-28 August 1972); Task 3 with Uri Geller (nine-day field measurement program within December 1, 1972 to January 15, 1973). Primary-source attestation of Targ''s involvement with both Swann and Geller as CIA-contract SRI consultants during the foundational 1972 / late-1972 window.'
+  significance: 'Puthoff–Targ progress report on Contract 1471(S)73 (February 22, 1973): the Section A introduction enumerates Tasks 1 and 2 with Ingo Swann in August 1972 and Task 3 with Uri Geller in late 1972.'
+  analysis: 'Targ-co-authored Section A introduction enumerating the contract 1471(S)73 tasks Targ co-conducted: Tasks 1+2 with Ingo Swann (two-week field measurement program, 14-28 August 1972); Task 3 with Uri Geller (nine-day field measurement program within December 1, 1972 to January 15, 1973). Primary-source attestation of Targ''s involvement with both Swann and Geller as CIA-contract SRI consultants during the foundational 1972 / late-1972 window.'
 
 - id: q22
   claim_group: "SRI Experimental Methodology and Controls"
@@ -344,7 +364,8 @@ quotes:
   context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
   observation_type: relayed
   statement_date: '1973-02-22'
-  significance: 'Targ-co-authored statement of the hoax-exclusion methodological stance — the contemporaneous Puthoff-Targ acknowledgment that a subject will hoax if given an opportunity, and their corresponding experimenter-control-and-cheatproof-design principle. Important Targ-co-authored counterweight to subsequent skeptical critiques framing the SRI protocols as naive.'
+  significance: 'Puthoff–Targ progress report on Contract 1471(S)73 (February 22, 1973): Puthoff and Targ state that a subject will hoax if given an opportunity, so experiments must be under experimenter control.'
+  analysis: 'Targ-co-authored statement of the hoax-exclusion methodological stance — the contemporaneous Puthoff-Targ acknowledgment that a subject will hoax if given an opportunity, and their corresponding experimenter-control-and-cheatproof-design principle. Important Targ-co-authored counterweight to subsequent skeptical critiques framing the SRI protocols as naive.'
 
 - id: q23
   claim_group: "1973 SRI Subject-Experiment Findings"
@@ -357,7 +378,8 @@ quotes:
   context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
   observation_type: relayed
   statement_date: '1973-02-22'
-  significance: 'Targ-co-authored Section IV Summary conclusion on Tasks 1-3 data (Swann + Geller): "extraordinary human functioning" framing + acknowledgment that fraud-exposure efforts have also failed. Contemporaneous-to-the-engagement Targ statement contrasting with Targ''s 2007 retrospective ("six weeks in 1973") — see the Credibility Notes for the duration-divergence analysis.'
+  significance: 'Puthoff–Targ progress report on Contract 1471(S)73 (February 22, 1973): the Section IV Summary says the Swann and Geller data point to "extraordinary human functioning" and that fraud-exposure efforts have also failed.'
+  analysis: 'Targ-co-authored Section IV Summary conclusion on Tasks 1-3 data (Swann + Geller): "extraordinary human functioning" framing + acknowledgment that fraud-exposure efforts have also failed. Contemporaneous-to-the-engagement Targ statement contrasting with Targ''s 2007 retrospective ("six weeks in 1973") — see the Credibility Notes for the duration-divergence analysis.'
 
 - id: q24
   claim_group: "Nature 1974 Sensory-Shielding Findings"
@@ -372,7 +394,8 @@ quotes:
   context: 'Dr. Harold E. Puthoff and Russell Targ co-authored "Information transmission under conditions of sensory shielding", Nature 251, 602-607, 18 October 1974 [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror CIA-RDP96-00787R000100220001-8)'
   observation_type: relayed
   statement_date: '1974-10-18'
-  significance: 'Targ-co-authored formal conclusion of the 1974 Nature paper — the public-record "a channel exists" framing of the SRI parapsychology investigation that downstream Geller-bio accounts invoke as the Nature endorsement. Complements the Nature paper abstract from the news/HTML source by adding the conclusion from the CIA-mirrored full text now archived as a primary source.'
+  significance: 'Puthoff and Targ, Nature 251, CIA-mirrored full text (October 18, 1974): the paper''s formal conclusion is that "a channel exists" for obtaining remote-location information by an unidentified perceptual modality.'
+  analysis: 'Targ-co-authored formal conclusion of the 1974 Nature paper — the public-record "a channel exists" framing of the SRI parapsychology investigation that downstream Geller-bio accounts invoke as the Nature endorsement. Complements the Nature paper abstract from the news/HTML source by adding the conclusion from the CIA-mirrored full text now archived as a primary source.'
 
 - id: q25
   claim_group: "Lockheed Martin Laser Career"
@@ -390,7 +413,8 @@ quotes:
   context: 'Author affiliation byline of Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, ''Coherent lidar airborne windshear sensor: performance evaluation'', Applied Optics 30 (15), 2013–2026 (1991), DOI 10.1364/AO.30.002013'
   observation_type: relayed
   statement_date: '1991-05-20'
-  significance: 'Peer-reviewed primary-source author-affiliation byline placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, as of the 1991 Applied Optics paper — the earliest archived primary attestation of Targ at the Palo Alto Lockheed site and the 1991 start anchor for Targ''s Lockheed affiliation and laser-research role. Independent of Targ''s espresearch.com self-attestation and the IRVA bio: an in-paper byline in Targ''s own published voice, corroborating the Lockheed senior-staff-scientist career outcome those biographical sources describe.'
+  significance: 'Applied Optics author byline (May 20, 1991): the peer-reviewed byline places Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto.'
+  analysis: 'Peer-reviewed primary-source author-affiliation byline placing Targ at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, as of the 1991 Applied Optics paper — the earliest archived primary attestation of Targ at the Palo Alto Lockheed site and the 1991 start anchor for Targ''s Lockheed affiliation and laser-research role. Independent of Targ''s espresearch.com self-attestation and the IRVA bio: an in-paper byline in Targ''s own published voice, corroborating the Lockheed senior-staff-scientist career outcome those biographical sources describe.'
 
 - id: q26
   claim_group: "Geller SRI Tenure — Retrospective Account"
@@ -403,7 +427,8 @@ quotes:
   context: 'Russell Targ quotation in the November 24, 2007 Brendan Burton piece ''Uri Geller – UFOs, metal-bending and the PSI war'' on urigeller.com; the ¶7 lead-in reads "I asked Russel Targ to comment on his experiences resulting from the SRI experiments" (Burton''s prose uses the single-l typo "Russel")'
   observation_type: relayed
   statement_date: '2007-11-24'
-  significance: 'Targ''s own retrospective characterization of Geller''s SRI tenure, given in 2007 — the "six weeks in 1973" recollection that exceeds Targ''s contemporaneous CIA-archived records of the same engagement (a nine-day Geller field measurement program in late 1972 per the Feb 1973 contract progress report and an eight-day session 4-11 August 1973 per the Aug 1973 SRI Geller report Targ sole-authored — roughly 17 documented days). The recollection-versus-record divergence is the load-bearing contradiction the Credibility Notes carry. The same statement also records Targ''s retrospective metal-bending position: Geller bent no metal under acceptably controlled conditions at SRI.'
+  significance: 'Brendan Burton piece on urigeller.com (November 24, 2007): Targ''s retrospective recollection that Geller was at SRI "six weeks in 1973" exceeds his contemporaneous records of roughly 17 documented days.'
+  analysis: 'Targ''s own retrospective characterization of Geller''s SRI tenure, given in 2007 — the "six weeks in 1973" recollection that exceeds Targ''s contemporaneous CIA-archived records of the same engagement (a nine-day Geller field measurement program in late 1972 per the Feb 1973 contract progress report and an eight-day session 4-11 August 1973 per the Aug 1973 SRI Geller report Targ sole-authored — roughly 17 documented days). The recollection-versus-record divergence is the load-bearing contradiction the Credibility Notes carry. The same statement also records Targ''s retrospective metal-bending position: Geller bent no metal under acceptably controlled conditions at SRI.'
 
 naming_quirks:
 - id: nq1

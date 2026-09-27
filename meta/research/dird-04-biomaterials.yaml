@@ -301,7 +301,8 @@ quotes:
   source:
     path: government/dird-04-biomaterials-20100107.pdf
     location: 'section "Biomedical Silicones - Polydimethylsiloxanes", ¶ ("After reviewing years of evidence... national Institute of Medicine...")'
-  significance: Silicone exoneration — after reviewing years of evidence, the national Institute of Medicine found connective tissue diseases, cancer, neurological diseases and other systemic conditions no more common in women with breast implants than in women without, and Dow moved out of the medical silicone business
+  significance: 'DIRD #4, Biomedical Silicones section (January 7, 2010): the national Institute of Medicine found systemic conditions no more common in women with breast implants than in women without.'
+  analysis: 'Silicone exoneration — the finding came after reviewing years of evidence and covered connective tissue diseases, cancer, neurological diseases and other systemic conditions; Dow moved out of the medical silicone business.'
   statement_date: '2010-01-07'
 - id: q22
   added_date: '2026-05-24'
@@ -534,7 +535,8 @@ quotes:
   source:
     path: government/dird-04-biomaterials-20100107.pdf
     location: 'section "Cardiovascular Biomaterials", ¶ ("In addition to thrombus formation, biomaterials can become colonized...")'
-  significance: Biomaterial-associated infection — biomaterials can become colonized with infection-causing bacteria; some hospital microorganisms are extremely resistant to antibiotic therapy and infections cannot be fully resolved until the biomaterial is removed, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous
+  significance: 'DIRD #4, Cardiovascular Biomaterials section (January 7, 2010): biomaterials can become colonized with infection-causing bacteria, and infections cannot be fully resolved until the biomaterial is removed.'
+  analysis: 'Biomaterial-associated infection — some hospital microorganisms are extremely resistant to antibiotic therapy, a particular problem with hip and knee implants where methicillin-resistant staphylococcus aureus infections are dangerous.'
   statement_date: '2010-01-07'
 - id: q42
   added_date: '2026-05-24'
@@ -696,7 +698,8 @@ quotes:
   source:
     path: government/dird-04-biomaterials-20100107.pdf
     location: 'section "Summary and Recommendations", ¶ ("Existing materials for implants are generally based on materials...")'
-  significance: Summary thesis — existing implant materials are generally based on materials available for more than 20 years, and most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials
+  significance: 'DIRD #4, Summary and Recommendations (January 7, 2010): existing implant materials are generally based on materials available for more than 20 years.'
+  analysis: 'Summary thesis — most of the innovation is occurring in devising new ways to embody the materials and apply them to new applications, so the markets are expanding for biomaterials.'
   statement_date: '2010-01-07'
 cited_works: NONE
 naming_quirks:

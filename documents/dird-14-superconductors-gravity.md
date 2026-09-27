@@ -144,7 +144,9 @@ The Conclusion: although the payoff of the discovery of a superconductor-mediate
 
 ---
 
-### The author's first-person account of his own 2003 replication (Reference 35 = Hathaway, Cleveland, and Bao) — a null result, described as the closest published replication of the original. Anchors the extrinsic-authorship chain to Hathaway via the self-citation.
+### DIRD #14, Historical Timeline (March 23, 2010): the author's first-person account of his own 2003 Podkletnov replication reports a null result, described as the closest published replication of the original.
+
+The replication is Reference 35 = Hathaway, Cleveland, and Bao. Anchors the extrinsic-authorship chain to Hathaway via the self-citation.
 
 > Our own version of the Podkletnov spinning disk experiment was completed in late 2001 and published in 2003 (Reference 35) showing a null result. It represented—and still represents—the closest published replication of the original Podkletnov experiment.
 
@@ -156,7 +158,9 @@ The Conclusion: although the payoff of the discovery of a superconductor-mediate
 
 ---
 
-### The Tajmar 2006 positive claim (gravitomagnetic field within a factor of 1.5 of prediction) set against Eric Davis's critique that the Cooper-pair-mass basis is too uncertain to support the mass anomaly — a clean statement of the experiment-vs-critique tension running through the timeline.
+### DIRD #14, Historical Timeline (March 23, 2010): the Tajmar 2006 positive claim (gravitomagnetic field within a factor of 1.5 of prediction) is set against Eric Davis's critique.
+
+Davis's critique is that the Cooper-pair-mass basis is too uncertain to support the mass anomaly — a clean statement of the experiment-vs-critique tension running through the timeline.
 
 > They claimed to have found the expected large gravitomagnetic field as detected by nearby accelerometers that matched to within a factor of 1.5 of their theoretical results. Eric Davis at the Institute for Advanced Studies in Austin has raised serious concerns about the theoretical basis for the claim. Davis contends (Reference 45) that the basis for calculating the Cooper pair mass is still so fraught with uncertainties as to leave Tajmar's mass anomaly unfounded.
 

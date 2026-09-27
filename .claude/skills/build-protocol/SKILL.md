@@ -178,6 +178,31 @@ names its anchor.
   passage: find the passage meant, check the claim against it, and correct the
   data — not just the wording.
 
+## Key Passage headings — one sentence
+
+A quote's `significance` is the heading a reader sees above the passage. It is
+**one plain sentence within the word cap** (`quote_entry.significance_words_max`
+in `meta/schema-research-artifact.yaml`, counted by whitespace split), in the form **"Source (date): what the passage
+shows"** — e.g. "IPMO PWS §1.2 (April 2022): USD(I&S) is supported by DDI
+(Collection and Special Programs), which is supported by the Director of
+IPMO." Everything else said about the passage — what it pairs with, how it
+moves the chronology, caveats, source-form notes — goes in the quote's
+`analysis`, which renders as a paragraph between the heading and the
+blockquote.
+
+- **Why.** A heading that runs to a paragraph stops working as a heading:
+  the reader cannot scan the Key Passages, and the analysis reads as a label.
+- **Move, never drop.** Splitting a long significance keeps every assertion:
+  what leaves the heading lands in `analysis`. A hedge the reader must see
+  before the quote ("self-attested", "secondary-source only") stays in the
+  heading sentence or opens the `analysis`, which renders above the quote.
+- **Applies everywhere.** Every artifact type, person and event included
+  (their significance is artifact-only today); `analysis` names sources,
+  never entry IDs, like every prose field.
+- **Enforced** by `quote_significance_form` (extract): errors on a
+  significance of more than one sentence or over the cap. The "Source
+  (date):" form is a contributor rule the check does not parse.
+
 ## Tier linking contract — references run downward (check before you link)
 
 Four tiers; a node references only *lower* tiers, never a greater one. The

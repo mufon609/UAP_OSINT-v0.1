@@ -166,7 +166,7 @@ def split_paragraphs(text):
 def collect_artifact_text(data):
     """Pool all free-form text fields from the artifact into one blob.
 
-    Captures: quote text + significance + context, entity name +
+    Captures: quote text + significance + analysis + context, entity name +
     wrap_path + context_summary, top-level prose fields, and every
     string value within entry lists. Used for the capitalized-token
     gap check — anything the contributor has already typed somewhere
@@ -178,7 +178,7 @@ def collect_artifact_text(data):
     for q in data.get("quotes") or []:
         if not isinstance(q, dict):
             continue
-        for key in ("text", "significance", "context"):
+        for key in ("text", "significance", "analysis", "context"):
             val = q.get(key)
             if isinstance(val, str):
                 parts.append(val)

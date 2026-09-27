@@ -133,7 +133,9 @@ The Conclusion presents the question of where the space infrastructure is forty 
 
 ---
 
-### Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7)
+### Space Access DIRD, Introduction (March 8, 2010): Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue.
+
+Hardware-not-technology framing — the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7.
 
 > veterans responded, "It was not a technology issue; it was a hardware issue."
 

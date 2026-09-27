@@ -244,7 +244,8 @@ quotes:
   source:
     path: government/dird-06-bv-space-access-20100308.pdf
     location: 'section "Introduction", ¶ continued ("It was not a technology issue; it was a hardware issue")'
-  significance: Hardware-not-technology framing — Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue (the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7)
+  significance: 'Space Access DIRD, Introduction (March 8, 2010): Aerospace Corporation veterans, asked about space access, responded that it was not a technology issue but a hardware issue.'
+  analysis: 'Hardware-not-technology framing — the lead-in clause "When asked about space access at the time, a group of Aerospace Corporation" closes p. 6; this verbatim portion opens p. 7.'
   statement_date: '2010-03-08'
 - id: q-intro-x15-end-of-aircraft-to-space
   added_date: '2026-05-25'

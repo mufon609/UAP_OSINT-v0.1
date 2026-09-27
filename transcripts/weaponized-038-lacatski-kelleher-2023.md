@@ -50,7 +50,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ## Key Passages
 
-### Lacatski's first-person attestation that AAWSAP was "basically created between myself and Senator Reed [Reid] at the defense intelligence agency" — a $22M program with 5-year capability completed in 2 years; "test of various components of a UFO UAP paranormal research program"; "included all aspects of both UFOs and the Paranormal in relationship to UFOs." Establishes Lacatski's first-person claim as program co-creator.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's first-person attestation that AAWSAP was "basically created between myself and Senator Reed [Reid] at the defense intelligence agency."
+
+Per Lacatski, it was a $22M program with 5-year capability completed in 2 years; "test of various components of a UFO UAP paranormal research program"; "included all aspects of both UFOs and the Paranormal in relationship to UFOs." Establishes Lacatski's first-person claim as program co-creator.
 
 > [1:51] well the advanced Aerospace weapon system applications program was uh uh basically created between myself and Senator Reed at the defense intelligence agency uh it was a $22 million program uh it had the capability of going five years we completed our objectives in two years uh you might say it was test of various components of a UFO UAP paranormal research program right from the beginning it included all aspects of both UFOs and the Paranormal in relationship to to UFOs
 
@@ -63,7 +65,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the procedural framing he uses at 0:46 of the 2021 Mystery Wire interview [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`].
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP.
+
+Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the procedural framing he uses at 0:46 of the 2021 Mystery Wire interview [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`].
 
 > [3:19] not to uh Bob Bigelow's bass created specifically and that was so important to DIA specifically to address our needs in this program and when I say needs we used a new method of putting out this request for proposal we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it and that's how this program was created and had specifically all the right components
 
@@ -76,7 +80,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski on the origin of the AATIP name — he did not create the name; "someone in Congress put secret on the program name" in the funding notification; he wanted a different name to avoid security crossways. Reed's letter asking for special access program is referenced. Documents the operational mechanics of the AATIP-name introduction.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski on the origin of the AATIP name: he did not create it, and "someone in Congress put secret on the program name" in the funding notification.
+
+He wanted a different name to avoid security crossways. Reed's letter asking for special access program is referenced. Documents the operational mechanics of the AATIP-name introduction.
 
 > [5:21] exactly and we we stated that clearly in in skinwalkers at the Pentagon we want to clarify the record now we're giving the details of the record now the thing is is a tip the name itself uh I did not create that name but it was created for a specific reason and I don't think that's ever been printed it was done yes in Senator Reed's letter asking for special Access program that's been out in the press for what five years now but where did the need for a different name come from it came from which took me by surprise when I saw the funding someone in other words the notification of funding that yes Dia was getting this money it was in on a piece of paper that had highly classified programs listed on the rest of the paper and someone in Congress put secret on the program name and it its very abbreviated contents that were on that document I did not want to get us Crossways with any security considerations I wanted a different name
 
@@ -89,7 +95,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's identification of who he believes created the AATIP name — "who we called Axel Rod or perhaps luel isad or perhaps some of their cohorts and maybe all of them" — the "luel isad" auto-caption rendering most plausibly aligns with "Lue Elizondo" given Elizondo's named role in AATIP (compare line 46 "Lou alzando"). Lacatski explains the AAWSAP name was load-bearing at DIA because "assap routed the money to the defense warning office of Dia period it had to be that name."
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski identifies who he believes created the AATIP name and explains the AAWSAP name was load-bearing at DIA.
+
+Lacatski's identification of who he believes created the AATIP name: "who we called Axel Rod or perhaps luel isad or perhaps some of their cohorts and maybe all of them" — the "luel isad" auto-caption rendering most plausibly aligns with "Lue Elizondo" given Elizondo's named role in AATIP (compare line 46 "Lou alzando"). Lacatski explains the AAWSAP name was load-bearing at DIA because "assap routed the money to the defense warning office of Dia period it had to be that name."
 
 > [6:43] now I believe that who we called Axel Rod or perhaps luel isad or perhaps some of their cohorts and maybe all of them came up with the name atip that name would have been a great problem for for Dia because assap routed the money to the defense warning office of Dia period it had to be that name so the contract may have been called that too uh because that's what we put at the at the at the open uh solicitation that can still be found on the internet
 
@@ -102,7 +110,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski on Elizondo ("Lou") handling AATIP — "I was not prived because it was mainly spun up as I was getting ready to retire." Lacatski's stated retirement date is 2016. References were "electronically specifically scanned in electronically at DIA" when he left; cannot speak to what happened post-2016. Establishes the structural separation between AAWSAP (Lacatski) and AATIP (Elizondo) per Lacatski's first-person account.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski on Elizondo ("Lou") handling AATIP: "I was not prived because it was mainly spun up as I was getting ready to retire."
+
+Lacatski's stated retirement date is 2016. References were "electronically specifically scanned in electronically at DIA" when he left; cannot speak to what happened post-2016. Establishes the structural separation between AAWSAP (Lacatski) and AATIP (Elizondo) per Lacatski's first-person account.
 
 > [7:32] but that's where the name atip came from atip was something that was necessary to be uh proceeded with on Military cases Lou handled that I was not prived because it was mainly spun up as I was getting ready to retire I will say this though that when I left all of our references were electronically specifically scanned in electronically at DIA now I can't say what happened in the year since I retired in 2016 it could have been that they're purged but they weren't physical records
 
@@ -115,7 +125,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### The centerpiece of the interview — Corbell reads verbatim from chapter 9 of the book the 2011 Capitol building meeting where Lacatski posed the "craft of unknown origin" question to a US senator and agency under secretary. Lacatski affirms "the wording that you read is correct" and confirms the meeting happened and "it's true yes." Establishes the on-record affirmation by Lacatski (the named director of AAWSAP) that the meeting occurred — separate from the truth of the underlying claim (which is sworn-claim equivalent in Lacatski's voice but not independently corroborated).
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski affirms on record that the 2011 Capitol building meeting in chapter 9, where he posed the "craft of unknown origin" question, happened: "it's true yes."
+
+This is the centerpiece of the interview — Corbell reads verbatim from chapter 9 of the book the 2011 Capitol building meeting where Lacatski posed the question to a US senator and agency under secretary. Lacatski affirms "the wording that you read is correct" and confirms the meeting happened. Establishes the on-record affirmation by Lacatski (the named director of AAWSAP) that the meeting occurred — separate from the truth of the underlying claim (which is sworn-claim equivalent in Lacatski's voice but not independently corroborated).
 
 > [14:42] going to read you something beginning of chapter 9 at the conclusion of a 2011 meeting in the Capitol building with a US senator and an agency under secretary latsky the only one of the books authors present posed a question but this this is where it gets good he stated meaning you Dr latsky that the United States was in possession of a craft of Unknown Origin and had successfully gained access to its interior this craft had a streamlined configuration suitable for aerodynamic flight but no intakes exhaust wings or control surfaces in fact it appeared not to have an engine fuel tanks or fuel now there's a next part which I'll read in a minute but what this is is you're officially allowed to tell us that the United States government has in its possession a craft of Unknown Origin and you are able to access the inside is that correct the wording that you're you read is correct ah you're going beyond the wording no I'm not I'm not I'm asking you did that meeting happen and is it true and it's true yes
 
@@ -128,7 +140,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's direct on-record affirmation — "yes you I was allowed to tell you." First-person attestation by the former AAWSAP program director that he was officially permitted to make the craft-of-unknown-origin statement in the 2011 Capitol meeting. Sworn-statement-adjacent on-record affirmation; not independently verified beyond Lacatski's account.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's direct on-record affirmation, not independently verified, that he was allowed to make the craft statement: "yes you I was allowed to tell you."
+
+First-person attestation by the former AAWSAP program director that he was officially permitted to make the craft-of-unknown-origin statement in the 2011 Capitol meeting. Sworn-statement-adjacent on-record affirmation; not independently verified beyond Lacatski's account.
 
 > [15:55] you're telling us you told us because you were allowed to tell us that our government has a UFO in its possession and has been able to access the inside of it right yes you I was allowed to tell you let me show the back of the book this is I know I know hold up George translate George
 
@@ -141,7 +155,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's security framing for refusing to go beyond the book's wording — "adversary competitor" listening, possible adversary employees in the contractor space ("hopefully not in Gia but in the contractor part"). The "Assam" reference (auto-caption of AAWSAP) confirms the program was historically targeted by adversary monitoring per Lacatski. Closes with the standing security frame: "we can't say anything more than what we've been approved to say."
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's security framing for refusing to go beyond the book's wording: "we can't say anything more than what we've been approved to say."
+
+He cites an "adversary competitor" listening and possible adversary employees in the contractor space ("hopefully not in Gia but in the contractor part"). The "Assam" reference (auto-caption of AAWSAP) confirms the program was historically targeted by adversary monitoring per Lacatski. Closes with the standing security frame quoted above.
 
 > [16:52] it's it makes it described in here here look primitive why why is it delicate why is this topic that the United States government has a UFO in its possession and we've been reverse engineering it you've done admitted it why is it delicate the the details you you I'm old school I'll use the term I won't use the term adversary competitor as as the as the way we describe we are surrounded maybe not surrounded but hopefully uh not so by our enemies and our enemies you can be sure they're listening to this show right now you can be sure that they were monitoring Assam you can be sure that perhaps they had employees hopefully not in Gia but in the contractor part that was we're giving out information for I am I am I know that so the thing is is we can't say anything more than what we've been approved to say
 
@@ -154,7 +170,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's "I can't answer that" non-answer pattern, and the substantive attestation about the 38 DIRD papers — "we solicited the input for the topics for the 38 papers from Air Force intelligence CIA Naval intelligence and Ground Intelligence; those are the topics they chose to do; but they were completely legitimate at the time and pretty close to state-of-the-art right now." Documents the inter-agency origin of the DIRD topic list and Lacatski's framing of the DIRDs as state-of-the-art. The "real answer" to why the DIRDs exist would "floor people" — Lacatski declines to give it.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski says the topics for the 38 DIRD papers were solicited from Air Force intelligence, CIA, Naval intelligence and Ground Intelligence, but gives an "I can't answer that" non-answer on why.
+
+Lacatski's "I can't answer that" non-answer pattern sits beside the substantive attestation about the 38 DIRD papers — "we solicited the input for the topics for the 38 papers from Air Force intelligence CIA Naval intelligence and Ground Intelligence; those are the topics they chose to do; but they were completely legitimate at the time and pretty close to state-of-the-art right now." Documents the inter-agency origin of the DIRD topic list and Lacatski's framing of the DIRDs as state-of-the-art. The "real answer" to why the DIRDs exist would "floor people" — Lacatski declines to give it.
 
 > [20:38] why one of the questions that you posed to us just now was why was the program started okay you can't answer that but another question you're saying people should ask is why did you do all the the defense intelligence reference documents so can you answer that why did you do all those defense intelligence reference documents and the answer is no I can't answer that because that that would that that would be an answer that would just uh floor people really yes the the real answer and and by the way I I I I I I don't know whether there's ever been real criticism but there kind of has by the nature of some of these topics uh we solicited the input for the topics for the 38 papers from uh from Air Force intelligence CIA uh Naval intelligence and uh uh Ground Intelligence that those are the topics they chose to do but they were completely legitimate at the time and by the way they're pretty close to state-of-the-art right now
 
@@ -167,7 +185,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's on-record position on David Grusch's allegations — "what he's saying is credible," "it's reasonable what he's saying" regarding reverse engineering and biologicals; but Lacatski "never witnessed any what I would consider illegal activities I saw security procedures that are Paramount but not illegal activities so I don't concur with that." Distinguishes credible from witnessed; affirms Grusch's reverse-engineering and biologicals claims as "reasonable" without first-person attestation. Auto-caption "colum" preserved for Colm Kelleher per naming_quirks.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's on-record position on David Grusch's allegations: "what he's saying is credible," though Lacatski "never witnessed" what he would consider illegal activities.
+
+Lacatski says "it's reasonable what he's saying" regarding reverse engineering and biologicals; but Lacatski "never witnessed any what I would consider illegal activities I saw security procedures that are Paramount but not illegal activities so I don't concur with that." Distinguishes credible from witnessed; affirms Grusch's reverse-engineering and biologicals claims as "reasonable" without first-person attestation. Auto-caption "colum" preserved for Colm Kelleher per naming_quirks.
 
 > [31:44] conversation and I said I don't have a comment what he's saying is credible now let me do say one thing that I never witnessed and I don't know if colum ever witnessed this but I never saw any what I would consider illegal activities I saw security procedures that are Paramount but not illegal activities so I I I don't concur with that but it's reasonable what he's saying and that's what I told okay it's reasonable it's reasonable that we have UFOs we're reverse engineering that there are Biologicals Associated we didn't cover Biologicals because I I can't say anything about that
 
@@ -180,7 +200,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's "can't answer that" non-answer when Corbell asks whether Lacatski personally saw the craft. Lacatski refuses to say either yes or no — "I could say no and it still not be the truth." Documents the asymmetric-non-answer pattern: a "no" would itself be a security-controlled answer rather than a factual one. Auto-caption "grush" / "Callum" for Grusch / Colm preserved per naming_quirks.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's "can't answer that" non-answer when Corbell asks whether he personally saw the craft: "I could say no and it still not be the truth."
+
+Lacatski refuses to say either yes or no. Documents the asymmetric-non-answer pattern: a "no" would itself be a security-controlled answer rather than a factual one. Auto-caption "grush" / "Callum" for Grusch / Colm preserved per naming_quirks.
 
 > [33:44] so let me ask you this though the big the big question with David grush was they're like well he didn't see a UFO now you're in a meeting in the Capital Hill and you're telling them we have a UFO we've gotten inside of it did you see it yourself can't answer that okay but if the answer was no you could answer that right uh no that that comes goes back to something that occurred uh a similar question very similar to your question it wasn't asked by you but it was asked to Callum and he said we found no smoking gun that is the standard answer we're to give is so I could say no and it still not be the truth so the thing is is security is Paramount we follow the rules
 
@@ -193,7 +215,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's "closed stovepipe" attestation that only "the director of analysis and my office Chief and of course division Chief knew about this program."
+
+The full statement ends "no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
 
 > [49:20] emphasiz something I said on my first and only interview it was a close osed program it operated very similar to a sap the director the director of analysis and my office Chief and of course division Chief knew about this program no one else did now I was also protected by the stove pipe nature of that I did not have to D address political type questions I I I was insulated but but they were too they there was no one else people in the surrounding cubicles didn't know nothing was purposely being hid it was a closed stovepipe system and it needed to be it needed to be operated that way
 
@@ -206,7 +230,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Kelleher clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts. (Kelleher per the verified attribution sibling, turn 1122-1146 — the BAASS-side contract timeline; previously hand-keyed to Lacatski.)
+### WEAPONIZED Episode 38 (October 16, 2023): Kelleher clarifies that AAWSAP funding stopped September 2010 and that the 2011 Capitol meeting and DHS engagement occurred after AAWSAP officially terminated.
+
+Kelleher clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts. (Kelleher per the verified attribution sibling, turn 1122-1146 — the BAASS-side contract timeline; previously hand-keyed to Lacatski.)
 
 > [51:59] well I can tell you George that as you know um those events in 2011 occurred after the the oap program was shut down so o assap was officially sort of stopped in terms of funding being received um in September of 2010 uh by December member of 2010 we had a 90-day no cost extension and at that stage the program was over there was a lot of interaction between different departments and different agencies subsequent to that regarding additional funding what you are referencing in the Skin Walkers at the Pentagon occurred after the oap program officially was terminated and it would it involved a lot of negotiation and back and forth between different organizations one of those organizations that we uh worked with was DHS as it says in that book and those those elements within DHS did their own version of due diligence
 
@@ -219,7 +245,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's direct on-record position — "am I a disclosure Advocate the answer is no." The difference between him and disclosure advocates "is security." Plus a structural attestation about why contractors hang on to technology — heavy investment of contractor capital + stockholders' money in research makes technology hard to pry loose. Lacatski "came from the contractor world in the first half of my career" — establishes his contractor-side experience.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski's direct on-record position — "am I a disclosure Advocate the answer is no" — with the difference being "security."
+
+The difference between him and disclosure advocates "is security." Plus a structural attestation about why contractors hang on to technology — heavy investment of contractor capital + stockholders' money in research makes technology hard to pry loose. Lacatski "came from the contractor world in the first half of my career" — establishes his contractor-side experience.
 
 > [1:21:01] CRA am I a disclosure Advocate the answer is no what's the difference in your mind difference is security you know there's certain things oh and and now now if if if this involves Security Plus because having come from the contractor world in the and the first half of my career I can say if there's heavy investment of contractor Capital there overhead money into Technologies and they've been given these Technologies they're going to hang on to them it's just like hey wait a minute uh We've invested a lot of our personal resources into research and that can apply to every topic it's going to be difficult to pry loose technology when something's been given over and a private company has invested their money their stockholders money into research
 
@@ -232,7 +260,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Lacatski's first-person statement that he is "not going out there and interviewing with everybody to say what I really feel" — only saying "what's been approved." Establishes a structural distinction between Lacatski's media discipline and other disclosure-era figures (Elizondo, Grusch) who have given numerous unscripted public interviews. Self-attests media restraint as deliberate.
+### WEAPONIZED Episode 38 (October 16, 2023): Lacatski self-attests deliberate media restraint: he is "not going out there and interviewing with everybody to say what I really feel," only saying "what's been approved."
+
+This is Lacatski's first-person statement. Establishes a structural distinction between Lacatski's media discipline and other disclosure-era figures (Elizondo, Grusch) who have given numerous unscripted public interviews. Self-attests media restraint as deliberate.
 
 > [1:22:34] okay so you are trying to convey that to the American proper way I'm not I'm not going out there and and and uh and interviewing with uh everybody uh to say what I really feel uh no it was hard to get you to do this I mean I can testify you're not understand why people hang up on me when I say you can offer me all of this but I'm not going to say anything more than what's been approved
 
@@ -245,7 +275,9 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ---
 
-### Corbell's closing recap of the centerpiece craft-of-unknown-origin passage from the book and Lacatski's direct response — "you see I'm not speaking at all I'm not going beyond what it was what you read from the book." Lacatski's structural position; he affirms the book's content as written but refuses to extend or speak beyond it in spoken interview. Critical for parsing Lacatski's evidentiary footprint — the book is the on-record statement; the interview only affirms what the book already states.
+### WEAPONIZED Episode 38 (October 16, 2023): after Corbell's closing recap of the craft-of-unknown-origin passage, Lacatski says "I'm not going beyond what it was what you read from the book."
+
+Corbell's closing recap of the centerpiece passage from the book draws Lacatski's direct response — "you see I'm not speaking at all I'm not going beyond what it was what you read from the book." Lacatski's structural position; he affirms the book's content as written but refuses to extend or speak beyond it in spoken interview. Critical for parsing Lacatski's evidentiary footprint — the book is the on-record statement; the interview only affirms what the book already states.
 
 > [1:45:32] of your uh Dr lat of your kind of depth within the intelligence agency the defense intelligence agency and within the UFO program that you ran for the defense intelligence agency that stated and I quote the United States was in possession of a craft of unknown origin and had successfully gained access to its interior interior so you personally know about a UFO that we got access inside of I have to assume Dr laty that you've seen this bad boy you don't got to answer me but I'm going to make that assumption unless you tell me otherwise um you also say that this craft had a streamline configuration suitable for aerodynamic flight but no intakes exhaust wings or control surfaces so if I had to take some something away from all this you just made the admission that our government is reverse engineering if we got inside of it we're reverse engineering UFOs you see I'm not speaking at all I'm not going beyond what it was what you read from the book
 

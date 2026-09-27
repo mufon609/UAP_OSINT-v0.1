@@ -517,7 +517,8 @@ quotes:
   source:
     path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
     location: 'Slide 3 — IPMO Core Efforts bullets'
-  significance: 'NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities). DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie.'
+  significance: 'IPMO 101 slides, NSI 23-S-3438 (October 2023): slide 3 lists IPMO Core Efforts across four divisions: Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities.'
+  analysis: 'This is direct primary-source attestation of the four-division mission scope. DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie.'
   context: 'OUSD(I&S) IPMO 101 presentation slides, DOPSR case 23-S-3438 cleared for open publication September 27, 2023'
   statement_date: '2023-10'
 - id: q38
@@ -766,7 +767,8 @@ quotes:
   source:
     path: government/ousdi-defense-gov-ddi-wayback-20250910.html
     location: 'Directors missions page, "Missions:" list, OSIP paragraph'
-  significance: 'OUSD(I&S) Directors missions page (September 10, 2025 capture): the portfolio of the Director for War Intelligence for Operational Support & International Partnerships (OSIP) is to lead, oversee, and integrate DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.'
+  significance: 'OUSD(I&S) Directors missions page (September 10, 2025 capture): the portfolio of the OSIP Director for War Intelligence is to lead, oversee, and integrate DISE support and equities.'
+  analysis: 'The Director for War Intelligence for Operational Support & International Partnerships (OSIP) portfolio covers DISE support and equities related to regional/global defense strategy and policy, military operations, and international partnerships.'
   context: 'ousdi.defense.gov About Us > Director for Defense Intelligence (DDI) page, Wayback capture 2025-09-10; the page title and heading read "Directors for War Intelligence (DWI)"; the "Missions:" list carries one mission paragraph per directorate.'
   claim_group: 'OUSD(I&S) directorate missions (Directors missions page, 2025-09-10 capture)'
   statement_date: '2025-09-10'

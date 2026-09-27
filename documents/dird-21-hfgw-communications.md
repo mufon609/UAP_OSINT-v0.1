@@ -80,7 +80,9 @@ Beyond communications, the report holds that the most stunning advances will pro
 
 ---
 
-### Provenance block; preparing component withheld [(b)(3):10 USC 424], Author withheld [(b)(6)] — authorship is extrinsic (DIA AAWSAP products list → Dr. Robert M L Baker, Jr. / GravWave). Bracketed redaction markers preserved verbatim.
+### HFGW Communications DIRD, author block (April 6, 2010): the preparing component is withheld [(b)(3):10 USC 424] and the Author withheld [(b)(6)].
+
+This is the provenance block; authorship is extrinsic (DIA AAWSAP products list → Dr. Robert M L Baker, Jr. / GravWave). Bracketed redaction markers preserved verbatim.
 
 > Prepared by:
 >
@@ -112,7 +114,9 @@ Beyond communications, the report holds that the most stunning advances will pro
 
 ---
 
-### Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld [(b)(3):10 USC 424:(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.
+### HFGW Communications DIRD, Administrative Note (April 6, 2010): the report belongs to the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series.
+
+Program-provenance: Program Manager withheld [(b)(3):10 USC 424:(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424:(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
 

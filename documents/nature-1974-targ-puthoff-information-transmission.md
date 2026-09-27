@@ -163,7 +163,9 @@ Puthoff and Targ conclude that a channel exists whereby information about a remo
 
 ---
 
-### Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).
+### Targ and Puthoff, Nature (October 1974), acknowledgements: the paper names the Foundation for Parasensory Investigation as sponsor and thanks Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences.
+
+Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).
 
 > This research was sponsored by The Foundation for Parasensory Investiga-tion, New York City. We thank Mrs. Judith Skutch, Dr. Edgar D. Mitchell of the Institute of Noetic Sciences
 

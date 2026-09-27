@@ -138,7 +138,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section I. IEC Background and Basics", ¶ ("this ''gridded'' type IEC has a spherical mesh grid")'
-  significance: IEC basic mechanism — a gridded IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel, with fusion fuel such as deuterium gas fed into a chamber prepared at high vacuum
+  significance: 'IEC Fusion DIRD, Section I (March 10, 2010): a gridded IEC has a spherical mesh grid suspended on a high voltage feed-through in the center of a metal vacuum vessel.'
+  analysis: 'This is the IEC basic mechanism: fusion fuel such as deuterium gas is fed into a chamber prepared at high vacuum.'
   statement_date: '2010-03-10'
 - id: q-lawson-criterion
   added_date: '2026-05-26'
@@ -215,7 +216,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section I. IEC Background and Basics" — "IEC Background", ¶5'
-  significance: Scope limitation — the report largely provides details based on the author's own IEC work over the last decade, and will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology
+  significance: 'IEC Fusion DIRD, Section I (March 10, 2010): the report largely provides details based on the author''s own IEC work over the last decade.'
+  analysis: 'Scope limitation — the report will not do justice to ongoing work at EMC² on the Bussard Polywell or gridded IEC source work at Wisconsin, Kyoto, and Tokyo Institute of Technology.'
   statement_date: '2010-03-10'
 - id: q-star-mode-modes
   added_date: '2026-05-26'
@@ -230,7 +232,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section I. IEC Background and Basics" — "IEC Basics", ¶'
-  significance: 'Discharge modes — glow-discharge IEC operation is categorized by three distinct modes, Star, Central Spot, and Halo, each associated with a different potential well structure and neutron production rate; the star mode is distinguished by microchannels or "spokes" radiating from a bright center spot'
+  significance: 'IEC Fusion DIRD, Section I (March 10, 2010): glow-discharge IEC operation is categorized by three distinct modes — Star, Central Spot, and Halo.'
+  analysis: 'Discharge modes — each is associated with a different potential well structure and neutron production rate; the star mode is distinguished by microchannels or "spokes" radiating from a bright center spot.'
   statement_date: '2010-03-10'
 - id: q-miley-ion-injected-q-value
   added_date: '2026-05-26'
@@ -244,7 +247,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section I. IEC Background and Basics" — "Miley''s \"Ion Injected\" Device", ¶'
-  significance: 'UIUC ion-injected device result — with a recirculation number of roughly 2 and ~50 mA injected current, the measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶, the basis for the proposed p-¹¹B breakeven experiment of Section VI'
+  significance: 'IEC Fusion DIRD, Section I (March 10, 2010): the UIUC ion-injected device''s measured Q (fusion energy gain/energy in) using deuterium fuel was order of 10⁻⁶.'
+  analysis: 'The UIUC ion-injected device result was obtained with a recirculation number of roughly 2 and ~50 mA injected current, and is the basis for the proposed p-¹¹B breakeven experiment of Section VI.'
   statement_date: '2010-03-10'
 - id: q-hirsch-record-neutron-rate
   added_date: '2026-05-26'
@@ -351,7 +355,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section III. Other Geometries" — "Description of the IEC Jet Thruster", ¶'
-  significance: 'Jet power conversion — over half the energy imparted to the ions by the accelerating grid is funneled into the jet; in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow'
+  significance: 'IEC Fusion DIRD, Section III (March 10, 2010): over half the energy imparted to the ions by the accelerating grid is funneled into the jet.'
+  analysis: 'Jet power conversion — in the example device the input power is about 2 kW with over 1.5 kW carried out by the jet flow.'
   statement_date: '2010-03-10'
 - id: q-daiec-description
   added_date: '2026-05-26'
@@ -422,7 +427,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section IV. IEC Theory", ¶ ("These conditions include that the electrostatic well is deep enough")'
-  significance: 'Chacon BAFP conditions — promising Q values require a deep electrostatic well (E0 ~ 100 kV), long enough ion confinement time (θ ~ 0.01), and moderate ion source strength (Ŝmax < 300), with ion injection energy slightly below the potential-well maximum'
+  significance: 'IEC Fusion DIRD, Section IV (March 10, 2010): Chacon BAFP conditions for promising Q values require a deep electrostatic well (E0 ~ 100 kV) and long enough ion confinement time (θ ~ 0.01).'
+  analysis: 'The conditions also require moderate ion source strength (Ŝmax < 300), with ion injection energy slightly below the potential-well maximum.'
   statement_date: '2010-03-10'
 - id: q-parabolic-well-larger-q
   added_date: '2026-05-26'
@@ -440,7 +446,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section IV. IEC Theory" — "Tzonev et al. – Deep Well Study", ¶ ("deep double electrostatic potential wells can occur at high ion and electron currents")'
-  significance: 'Tzonev deep wells — Tzonev et al. found deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A), high perpendicular ion energy spread (3 keV-14 keV), low perpendicular electron energy spread (3 eV), and low radial ion energy spread'
+  significance: 'IEC Fusion DIRD, Section IV (March 10, 2010): Tzonev et al. found deep double electrostatic potential wells can occur at high ion and electron currents (30 A-60 A).'
+  analysis: 'Tzonev deep wells — the other conditions are high perpendicular ion energy spread (3 keV-14 keV), low perpendicular electron energy spread (3 eV), and low radial ion energy spread.'
   statement_date: '2010-03-10'
 - id: q-tzonev-summary-encouraging
   added_date: '2026-05-26'
@@ -566,7 +573,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section VI. Possible Next Step Breakeven Experiment", ¶1'
-  significance: 'Breakeven gap — best current device results are 5 or 6 orders of magnitude below breakeven energy gain Q, but the IEC can be scaled up in energy gain while keeping a small size because the losses are in velocity space'
+  significance: 'IEC Fusion DIRD, Section VI (March 10, 2010): best current device results are 5 or 6 orders of magnitude below breakeven energy gain Q.'
+  analysis: 'Breakeven gap — but the IEC can be scaled up in energy gain while keeping a small size because the losses are in velocity space.'
   statement_date: '2010-03-10'
 - id: q-vi-breakeven-small-core
   added_date: '2026-05-26'
@@ -575,7 +583,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section VI. Possible Next Step Breakeven Experiment" — "Demonstration of Net Energy Gain using IEC Aneutronic Fusion", ¶'
-  significance: 'Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out; breakeven in a 100''s-of-cc core with 20-25 kW input power using new gun-injected technology seems practical'
+  significance: 'IEC Fusion DIRD, Section VI (March 10, 2010): breakeven in a 100''s-of-cc core with 20-25 kW input power using new gun-injected technology seems practical.'
+  analysis: 'Breakeven core scale — in principle energy breakeven could be demonstrated in a dense plasma core of a few cc with a few hundred watts in and out.'
   statement_date: '2010-03-10'
 - id: q-vi-p11b-lawson-requirement
   added_date: '2026-05-26'
@@ -593,7 +602,8 @@ quotes:
   source:
     path: government/dird-09-iec-fusion-20100310.pdf
     location: 'section "Section VI. Possible Next Step Breakeven Experiment" — "Proposed Breakeven Experiment", ¶ ("The 12 gun breakeven design will provide an increase in β to ~ 1000")'
-  significance: '12-gun Q scaling — the 12-gun breakeven design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10, predicting a ~10⁸ increase in Q over the prior gun experiment to give Q=1 ("breakeven") for a p-¹¹B plasma'
+  significance: 'IEC Fusion DIRD, Section VI (March 10, 2010): the 12-gun breakeven design, predicting a ~10⁸ increase in Q over the prior gun experiment, would give Q=1 ("breakeven") for a p-¹¹B plasma.'
+  analysis: '12-gun Q scaling — the design increases β to ~1000, I to 6000 mA, and reduces core radius a by 10.'
   statement_date: '2010-03-10'
 - id: q-vi-hydrogen-simulation
   added_date: '2026-05-26'

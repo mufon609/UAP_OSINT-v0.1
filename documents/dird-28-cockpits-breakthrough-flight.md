@@ -40,7 +40,9 @@ The human-machine interface chapter applies human-factors lessons, with one exce
 
 ## Key Passages
 
-### AAWSA Program provenance — self-identifies the document as an FY 2009 product of DIA's Advanced Aerospace Weapon System Applications (AAWSA) Program, the program-of-origin marker shared across the DIRD series; the preparing-component redaction ((b)(3):10 USC 424) is preserved verbatim. The cover series-block gives 01 November 2010 / ICOD 8 July 2010 / DIA-08-1011-002 while the Administrative Notes give the production year as FY 2009, both preserved sic.
+### DIRD #28, Administrative Notes (November 1, 2010): the document self-identifies as an FY 2009 product of DIA's Advanced Aerospace Weapon System Applications (AAWSA) Program.
+
+AAWSA Program provenance — the program-of-origin marker shared across the DIRD series; the preparing-component redaction ((b)(3):10 USC 424) is preserved verbatim. The cover series-block gives 01 November 2010 / ICOD 8 July 2010 / DIA-08-1011-002 while the Administrative Notes give the production year as FY 2009, both preserved sic.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program.
 

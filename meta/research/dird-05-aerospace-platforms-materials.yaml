@@ -209,7 +209,8 @@ quotes:
   source:
     path: government/dird-05-bv-aerospace-platforms-materials-20100112.pdf
     location: 'section "LAUNCH VEHICLES" (GE90 PMC fan blades)'
-  significance: Recurring cost thesis — high-performance, high-value structures are cost-intensive rather than technology-dependent (drawn from the GE90 PMC fan-blade example); the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.11/p.12 boundary, quoted to the p.11 page edge
+  significance: 'DIRD #5 (January 12, 2010), "LAUNCH VEHICLES": the recurring cost thesis, drawn from the GE90 PMC fan-blade example, holds that high-performance, high-value structures are cost-intensive rather than technology-dependent.'
+  analysis: 'Recurring cost thesis; the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.11/p.12 boundary, quoted to the p.11 page edge'
   statement_date: '2010-01-12'
 - id: q16
   added_date: '2026-05-24'

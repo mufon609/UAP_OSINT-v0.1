@@ -31,10 +31,8 @@ quotes:
   source:
     path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
     location: 'Front matter, "Prepared by" block'
-  significance: >-
-    Establishes the document's provenance — one of the FY 2010 AAWSA Program advanced-technology
-    reports (the DIRD series), prepared by the DIA. The (b)(3):10 USC 424 and (b)(6) redactions
-    mark the program manager / author identities withheld under statute.
+  significance: 'DIRD #37 (November 1, 2010), front matter: the document is one of the FY 2010 AAWSA Program advanced-technology reports (the DIRD series), prepared by the DIA.'
+  analysis: 'Establishes the document''s provenance. The (b)(3):10 USC 424 and (b)(6) redactions mark the program manager / author identities withheld under statute.'
   context: >-
     Front-matter authorship block on the title-verso page, beneath "Prepared by: Defense Intelligence Agency."
   claim_group: provenance-aawsa-program
@@ -387,9 +385,8 @@ quotes:
   source:
     path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
     location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
-  significance: >-
-    The DOE program-mapping finding — the $421M FY2010 fusion budget under the Office of Fusion Energy
-    Sciences, concentrated at Princeton Plasma Physics Lab, MIT, and General Atomics. Names multiple institutions.
+  significance: 'DIRD #37 (November 1, 2010), "U.S. DOE PROGRAMS": the $421M FY2010 fusion budget under the Office of Fusion Energy Sciences is concentrated at Princeton Plasma Physics Lab, MIT, and General Atomics.'
+  analysis: 'The DOE program-mapping finding. Names multiple institutions.'
   context: >-
     Chapter 5 U.S. DOE Programs section, opening the recent-developments survey.
   claim_group: section-finding-doe-programs
@@ -420,8 +417,8 @@ quotes:
   source:
     path: government/dird-37-aneutronic-fusion-propulsion-ii-2010.pdf
     location: 'Chapter 5, section "U.S. DOE PROGRAMS"'
-  significance: >-
-    Maps the remaining DOE technology funding — $135M to ITER, the NIF funded by NNSA for nuclear-weapons simulation, and NNSA Magneto Target Fusion at Sandia and Lawrence Berkeley National Labs. Dense with institution references.
+  significance: 'DIRD #37 (November 1, 2010), "U.S. DOE PROGRAMS": the remaining DOE technology funding includes $135M to ITER and NIF funded by NNSA for nuclear-weapons simulation.'
+  analysis: 'Maps the remaining DOE technology funding — $135M to ITER, the NIF funded by NNSA for nuclear-weapons simulation, and NNSA Magneto Target Fusion at Sandia and Lawrence Berkeley National Labs. Dense with institution references.'
   context: >-
     Chapter 5 U.S. DOE Programs section, closing the program-funding breakdown.
   claim_group: section-finding-doe-programs

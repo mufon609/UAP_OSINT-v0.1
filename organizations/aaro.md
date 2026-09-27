@@ -116,7 +116,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ## Key Passages
 
-### The USAspending record for contract HQ003422C0064 ("IPMO SUPPORT SERVICES"; recipient "SANCORP CONSULTING, LLC"; date_signed 2022-06-09) lists the funding subtier as the Immediate Office of the Secretary of Defense (SECDEF, code 97AD) and the funding office as "OSD OUSD(I)", the same funding office string that appears on the HQ003424C0096 and HQ003426FE050 records. The HQ003422C0064 record does not name AARO; the funding office is therefore not specific to AARO.
+### USAspending award record for HQ003422C0064 (signed June 9, 2022): the Sancorp IPMO support contract carries the same "OSD OUSD(I)" funding office as HQ003424C0096 and HQ003426FE050, so that office is not AARO-specific.
+
+The USAspending record for contract HQ003422C0064 ("IPMO SUPPORT SERVICES"; recipient "SANCORP CONSULTING, LLC"; date_signed 2022-06-09) lists the funding subtier as the Immediate Office of the Secretary of Defense (SECDEF, code 97AD) and the funding office as "OSD OUSD(I)", the same funding office string that appears on the HQ003424C0096 and HQ003426FE050 records. The HQ003422C0064 record does not name AARO; the funding office is therefore not specific to AARO.
 
 > "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
 
@@ -188,7 +190,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Hicks AARO establishment memo (July 15, 2022) — directive to the Secretary of the Navy to disestablish the UAPTF no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
+### Hicks AARO establishment memo (July 15, 2022): the Secretary of the Navy is directed to disestablish the UAPTF and transfer its data, analysis, and other relevant material to the AARO.
+
+The directive is to disestablish the UAPTF no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
 
 > Consistent with section 1683 of the NDAA for FY 2022, I also direct the Secretary of the Navy to disestablish the Unidentified Aerial Phenomena Task Force (UAPTF) no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
 
@@ -272,7 +276,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Statutory mandate (codifying NDAA FY23 § 6802 / IAA FY23 § 6802) directing AARO's Historical Record Report to itemize "any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities."
+### 50 U.S.C. § 3373(j)(2)(B)(ii)(III) (December 23, 2022): the statute directs AARO's Historical Record Report to itemize "any efforts to obfuscate, manipulate public opinion, hide" or give incorrect UAP information.
+
+This is the statutory mandate (codifying NDAA FY23 § 6802 / IAA FY23 § 6802) directing the report to itemize "any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities."
 
 > (III) any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities.
 
@@ -284,7 +290,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### FY 2024 OSD OP-5 budget submission (released March 20, 2023) names the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" with mission language essentially identical to AARO's 50 U.S.C. § 3373 statutory carveout — same mission text that the FY 2025 and FY 2026 budget submissions later attribute to "Advanced Intelligence Capabilities (AIC)". Anchors the FY24-vs-FY25 budget-document name change.
+### OSD OP-5 FY 2024 budget estimates (March 20, 2023): the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" carries mission language essentially identical to AARO's 50 U.S.C. § 3373 statutory carveout.
+
+The FY 2024 OSD OP-5 budget submission (released March 20, 2023) names the sub-office with the same mission text that the FY 2025 and FY 2026 budget submissions later attribute to "Advanced Intelligence Capabilities (AIC)". Anchors the FY24-vs-FY25 budget-document name change.
 
 > All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
 
@@ -296,7 +304,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### DefenseScoop exclusive (Brandi Vincent, August 30, 2023) reporting that AARO's operational reporting line transitioned from OUSD(I&S) (USD(I&S) Moultrie) to direct Deputy Secretary of Defense (Hicks) oversight in late July 2023 — within days of the July 26, 2023 House Oversight UAP hearing. Co-anchored with the website-launch announcement.
+### DefenseScoop exclusive (August 30, 2023): Deputy Defense Secretary Kathleen Hicks moved to personally oversee AARO, and a new UAP reporting website will soon launch.
+
+Brandi Vincent's reporting is that AARO's operational reporting line transitioned from OUSD(I&S) (USD(I&S) Moultrie) to direct Deputy Secretary of Defense (Hicks) oversight in late July 2023 — within days of the July 26, 2023 House Oversight UAP hearing. Co-anchored with the website-launch announcement.
 
 > Deputy Defense Secretary Kathleen Hicks recently moved to personally oversee the Pentagon’s unidentified anomalous phenomena (UAP) investigation team formally known as the All-domain Anomaly Resolution Office, DefenseScoop has exclusively learned. And a new website will soon be launched where incidents can be reported.
 
@@ -308,7 +318,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Specific attestation that Kirkpatrick was repositioned to report directly to the Deputy Secretary of Defense — clarifying the operational reporting-chain change. Per 50 U.S.C. § 3373, AARO's statutory operational reporting line is to DEPSECDEF and PDDNI; the late-July 2023 transition gave that statutory structure operational effect.
+### DefenseScoop (August 30, 2023): Kirkpatrick was repositioned to report directly to Deputy Secretary of Defense Hicks, who now holds regular meetings with him.
+
+This is the specific attestation clarifying the operational reporting-chain change. Per 50 U.S.C. § 3373, AARO's statutory operational reporting line is to DEPSECDEF and PDDNI; the late-July 2023 transition gave that statutory structure operational effect.
 
 > Hicks now holds regular meetings with AARO’s inaugural director, Sean Kirkpatrick — who she’s also repositioned to report directly to her.
 
@@ -320,7 +332,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Documents OUSD(I&S) Front Office / AARO operational friction during the November 2022 – April 2023 period — the AARO website-launch package was iterated bi-weekly between OUSD(I&S) Front Office and AARO under USD(I&S) Moultrie's direct review. Establishes the operational tension that preceded Hicks's late-July 2023 direct-oversight transition.
+### DefenseScoop (August 30, 2023): between November 2022 and April 2023 the AARO website-launch package moved between the OUSD(I&S) front office and AARO at least every other week under Moultrie's review.
+
+Documents OUSD(I&S) Front Office / AARO operational friction during the November 2022 – April 2023 period — the package was iterated bi-weekly under USD(I&S) Moultrie's direct review. Establishes the operational tension that preceded Hicks's late-July 2023 direct-oversight transition.
 
 > Between November 2022 and April 2023, that submitted package moved back and forth between the I&S front office and AARO at least every other week. At Moultrie’s request, AARO regularly responded to questions, made edits and re-coordinated the memo. And Kirkpatrick also had several in-person meetings with the undersecretary.
 
@@ -344,7 +358,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### FY 2025 OSD OP-5 budget submission (released March 11, 2024) is the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)" — narrows the budget-document rename window to between FY24 OP-5 (March 20, 2023) and FY25 OP-5 (March 11, 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.
+### OSD OP-5 FY 2025 budget estimates (March 11, 2024): the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)".
+
+The FY 2025 OSD OP-5 budget submission (released March 11, 2024) narrows the budget-document rename window to between FY24 OP-5 (March 20, 2023) and FY25 OP-5 (March 11, 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.
 
 > Advanced Intelligence Capabilities (AIC) synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
 
@@ -356,7 +372,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Pentagon spokesperson Sue Gough's standardized reply to multiple journalist requests (Scientific American, Washington Examiner, YLE Finland) for press-engagement access to Acting AARO Director Tim Phillips around the AARO HRR Vol I release. Documents the invite-only press-rollout posture; substantive media access was declined in favor of a single small invite-only briefing on March 8, 2024.
+### FOIA 24-F-0894 rollout emails (February 14, 2024): Sue Gough's standardized reply to journalists keeps media engagement with AARO's acting director "to a small group."
+
+Pentagon spokesperson Sue Gough sent this standardized reply to multiple journalist requests (Scientific American, Washington Examiner, YLE Finland) for press-engagement access to Acting AARO Director Tim Phillips around the AARO HRR Vol I release. Documents the invite-only press-rollout posture; substantive media access was declined in favor of a single small invite-only briefing on March 8, 2024.
 
 > Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group.
 
@@ -368,7 +386,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Pentagon spokesperson Sue Gough (OSD/PA) to ODNI counterpart on March 5, 2024 — internal coordination on whether to mention DNI/ODNI in the AARO Historical Record Report Volume I rollout press release. Gough explicitly references AARO's statutory dual reporting line (Director, AARO reports to PDDNI per 50 U.S.C. § 3373) as the question warranting check.
+### FOIA 24-F-0894 rollout emails (March 5, 2024): Sue Gough asks ODNI whether to mention DNI/ODNI in the HRR Vol I press release, since the AARO Director also reports to PDDNI.
+
+Pentagon spokesperson Sue Gough (OSD/PA) wrote to an ODNI counterpart — internal coordination on whether to mention DNI/ODNI in the AARO Historical Record Report Volume I rollout press release. Gough explicitly references AARO's statutory dual reporting line (Director, AARO reports to PDDNI per 50 U.S.C. § 3373) as the question warranting check.
 
 > Question 2 — I’m working on the press release today. Do you want DNI/ODNI mentioned? Unlike the annual UAP report, the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check.
 
@@ -380,7 +400,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### ODNI counterpart's confirmation reply to Gough — the public AARO HRR Vol I rollout was framed as DoD-only, with the omission of ODNI agreed to bilaterally by ODNI's own public-affairs office (sender redacted under (b)(3) 50 USC § 3024(i)/(m), the ODNI sources-and-methods exemption). Anchors the operational PA-coordination shape of the rollout, as distinct from a unilateral DoD framing decision.
+### FOIA 24-F-0894 rollout emails (March 5, 2024): the ODNI counterpart's reply confirms to Gough that the HRR Vol I rollout is "good without any ODNI mention."
+
+This confirmation reply shows the public AARO HRR Vol I rollout was framed as DoD-only, with the omission of ODNI agreed to bilaterally by ODNI's own public-affairs office (sender redacted under (b)(3) 50 USC § 3024(i)/(m), the ODNI sources-and-methods exemption). Anchors the operational PA-coordination shape of the rollout, as distinct from a unilateral DoD framing decision.
 
 > Confirming that we're good without any ODNI mention
 
@@ -392,7 +414,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Pentagon spokesperson Sue Gough (OSD/PA) to David A. Kozik (Director Congressional Activities, OUSD(I&S)) on March 6, 2024 — explicit institutional position that AARO's portfolio should not be expanded to include small unmanned aircraft systems (sUAS) cataloging despite Sen. Gillibrand's same-day request at the SASC briefing on JBLE drone incursions. Sent at 1:45 PM with "Importance: High" flag.
+### FOIA 24-F-0894 rollout emails (March 6, 2024): Sue Gough tells OUSD(I&S)'s David Kozik, flagged "Importance: High", that sUAS should not be added to AARO's portfolio.
+
+Pentagon spokesperson Sue Gough (OSD/PA) wrote to David A. Kozik (Director Congressional Activities, OUSD(I&S)) — explicit institutional position that AARO's portfolio should not be expanded to include small unmanned aircraft systems (sUAS) cataloging despite Sen. Gillibrand's same-day request at the SASC briefing on JBLE drone incursions. Sent at 1:45 PM with "Importance: High" flag.
 
 > Flagging for you in case you haven't heard. We do not want to see sUAS added to AARO's portfolio!
 
@@ -404,7 +428,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Lane A. Bodian (Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs) summary of the SASC member briefing on the December 2023 JBLE drone incursions, given by PTDO ASD Becky Zimmerman (HD&HA), RADM Spedero (Joint Staff), and Maj Gen Sherman (USAF). Documents Sen. Gillibrand's on-the-record position — "sUAS should be catalogued by AARO" — that Gough and Kozik subsequently contested in their March 6-7 2024 internal exchange. The 14 senators in attendance included Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly.
+### FOIA 24-F-0894 rollout emails (March 6, 2024): Lane Bodian's summary of the SASC briefing on the JBLE drone incursions records Sen. Gillibrand's view that sUAS should be catalogued by AARO.
+
+Lane A. Bodian (Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs) summarized the SASC member briefing on the December 2023 JBLE drone incursions, given by PTDO ASD Becky Zimmerman (HD&HA), RADM Spedero (Joint Staff), and Maj Gen Sherman (USAF). Documents Sen. Gillibrand's on-the-record position — "sUAS should be catalogued by AARO" — that Gough and Kozik subsequently contested in their March 6-7 2024 internal exchange. The 14 senators in attendance included Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly.
 
 > There was an animated response by Sen. Gillibrand to a comment by Ms. Zimmerman regarding there not being a DoD-wide database for cataloging UAS incursions. Sen. Gillibrand believes sUAS should be catalogued by AARO. Ms. Zimmerman briefly mentioned stand-up of the SIG C-UXS during this exchange.
 
@@ -416,7 +442,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Heather King (SES, immediate Secretary of Defense office) email on March 6, 2024 — the Deputy Secretary of Defense (Hicks) office's direct staff connected the Joint Base Langley-Eustis December 2023 drone incursion story (Breaking Defense reporting) to the AARO Historical Record Report Vol I rollout in DoD's own internal correspondence on the day of the rollout briefings. King requested a readout of the AARO Hill engagements.
+### FOIA 24-F-0894 rollout emails (March 6, 2024): Heather King relays the Deputy's flag that the Langley topic in Breaking Defense may be connected to the AARO rollout and requests a readout.
+
+Heather King (SES, immediate Secretary of Defense office) email: the Deputy Secretary of Defense (Hicks) office's direct staff connected the Joint Base Langley-Eustis December 2023 drone incursion story (Breaking Defense reporting) to the AARO Historical Record Report Vol I rollout in DoD's own internal correspondence on the day of the rollout briefings. King requested a readout of the AARO Hill engagements.
 
 > Following up from Unders a bit ago - the Deputy asked us to flag for you that the Langley topic re: Breaking Defense may be connected to the AARO rollout that occurred this week. Understand there were hill briefings on UAP led by Tim Phillips (Acting Director of AARO). Now that those hill briefings have occurred, there may be more individuals who are tracking Langley. She asked that we flag for you all and that you get a readout of those hill engagements.
 
@@ -428,7 +456,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Rheanne E. Wirkkala (Assistant Secretary of Defense for Legislative Affairs) read-out documents that Acting Director Tim Phillips and a third (b)(6)-redacted presenter were joined by Dr. Sean Kirkpatrick in TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — three months after Kirkpatrick's December 1, 2023 official AARO departure. Briefings were Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530).
+### FOIA 24-F-0894 rollout emails (March 6, 2024): Wirkkala's read-out says Acting Director Tim Phillips was joined by Dr. Sean Kirkpatrick in two classified Hill briefings on the Historical Record Report.
+
+Rheanne E. Wirkkala (Assistant Secretary of Defense for Legislative Affairs) read-out documents that Acting Director Tim Phillips and a third (b)(6)-redacted presenter were joined by Dr. Sean Kirkpatrick in TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — three months after Kirkpatrick's December 1, 2023 official AARO departure. Briefings were Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530).
 
 > Mr. Tim Phillips, Acting Director AARO, and (b)(6) were joined by Dr. Sean Kirkpatrick in a compartmented brief and a TS//SCI brief to staff on the findings of the Historical Record Report
 
@@ -440,7 +470,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Hill staff at the AARO HRR Compartmented Annex briefing (1300-1400, March 6, 2024) explicitly asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" — committee-staff request to AARO at the SCI level for narrative-shaping work product, attested in DoD legislative-affairs correspondence.
+### FOIA 24-F-0894 rollout emails (March 6, 2024): at the HRR Compartmented Annex briefing, Hill staff asked AARO for recommendations for countering inaccurate or misleading narratives related to UAP.
+
+Hill staff at the AARO HRR Compartmented Annex briefing (1300-1400, March 6, 2024) explicitly asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" — committee-staff request to AARO at the SCI level for narrative-shaping work product, attested in DoD legislative-affairs correspondence.
 
 > At the end of the session, staff asked for perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review.
 
@@ -452,7 +484,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### David A. Kozik (Director Congressional Activities, OUSD(I&S)) reply to Gough on March 7, 2024 — establishes OUSD(I&S)'s institutional position that AARO has a coordinating but not lead role in counter-sUAS efforts, and attributes the Sen. Gillibrand "lead role" framing to a "prep failure on our part for ASD HD&HA" (Becky Zimmerman) at the prior-day SASC briefing. Confirms operational coordination between AARO Public Affairs (Gough) and OUSD(I&S) Congressional Activities (Kozik) on AARO's Hill-facing scope.
+### FOIA 24-F-0894 rollout emails (March 7, 2024): OUSD(I&S)'s David Kozik replies that AARO should have a coordinating role in cUAS efforts but should not be the lead.
+
+David A. Kozik (Director Congressional Activities, OUSD(I&S)) reply to Gough establishes OUSD(I&S)'s institutional position that AARO has a coordinating but not lead role in counter-sUAS efforts, and attributes the Sen. Gillibrand "lead role" framing to a "prep failure on our part for ASD HD&HA" (Becky Zimmerman) at the prior-day SASC briefing. Confirms operational coordination between AARO Public Affairs (Gough) and OUSD(I&S) Congressional Activities (Kozik) on AARO's Hill-facing scope.
 
 > Thanks Sue—yeah, there's a bit of challenge here. AARO absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead. The problem is, the rest of DoD doesn't always think to include them even in the coordinating role—or forgets to mention that they're part of the team when they're engaging certain members of Congress who are convinced they must be part of the team.
 
@@ -488,7 +522,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HRR Vol I documents Kona Blue — proposed DHS UAP recovery and reverse-engineering Special Access Program. AARO's framing identifies it as proposed by the AAWSAP/AATIP cohort after DIA cancelled their program in 2012; never approved by DHS
+### AARO HRR Vol I (March 8, 2024): KONA BLUE, a proposed DHS UAP recovery and reverse-engineering Special Access Program, traces its origins to the DIA-managed AAWSAP/AATIP program.
+
+HRR Vol I documents Kona Blue as a proposal; AARO's framing identifies it as proposed by the AAWSAP/AATIP cohort after DIA cancelled their program in 2012; never approved by DHS.
 
 > KONA BLUE was brought to AARO’s attention by interviewees who claimed that it was a sensitive DHS compartment to cover up the retrieval and exploitation of “non-human biologics.”114 KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program, which was funded through a special appropriation and executed by its primary contractor, a private sector organization.
 
@@ -524,7 +560,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HRR Vol I — AARO's commitment to publish Vol II "in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023" (codified in IAA FY 2023, Section 6802(j), with a 540-day deadline from December 23 2022 enactment, i.e., approximately June 15, 2024 — the deadline that HRR Vol I (March 8, 2024) had already satisfied for the Section 6802(j) "a written report" requirement). As of February 25, 2026 DefenseScoop coverage attests Vol II remains unpublished — approximately 20 months past the June 15, 2024 date AARO drew from Section 6802 for the Vol II commitment.
+### AARO HRR Vol I (March 8, 2024): AARO commits to publish Volume II by the date established in Section 6802 of the FY 2023 NDAA, analyzing information acquired after Volume I.
+
+The commitment is to publish Vol II "in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023" (codified in IAA FY 2023, Section 6802(j), with a 540-day deadline from December 23 2022 enactment, i.e., approximately June 15, 2024 — the deadline that HRR Vol I (March 8, 2024) had already satisfied for the Section 6802(j) "a written report" requirement). As of February 25, 2026 DefenseScoop coverage attests Vol II remains unpublished — approximately 20 months past the June 15, 2024 date AARO drew from Section 6802 for the Vol II commitment.
 
 > AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023 (FY23); Volume II will provide analysis of information acquired by AARO after the date of the publication of Volume I.
 
@@ -536,7 +574,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HRR Vol I quotes Section 6802(j) of NDAA FY 2023 verbatim — 540-day statutory deadline for the Historical Record Report. The IAA FY 2023 was enacted as part of P.L. 117-263 (NDAA FY2023) on December 23, 2022, making the Section 6802(j) deadline approximately mid-June 2024.
+### AARO HRR Vol I Scope section (March 8, 2024): the report quotes Section 6802(j) of the FY 2023 NDAA verbatim, setting a 540-day statutory deadline for the Historical Record Report.
+
+HRR Vol I quotes Section 6802(j) of NDAA FY 2023 verbatim. The IAA FY 2023 was enacted as part of P.L. 117-263 (NDAA FY2023) on December 23, 2022, making the Section 6802(j) deadline approximately mid-June 2024.
 
 > This HR2 is provided by DoD in response to a requirement established in the National Defense Authorization Act (NDAA) for FY 2023, Section 6802(j), which states: “Not later than 540 days after the date of the enactment of the Intelligence Authorization Act for Fiscal Year 2023, the Director of the Office shall submit to the congressional defense committees, the congressional intelligence committees and the congressional leadership a written report detailing the historical record of the United States Government relating to unidentified anomalous phenomena.”
 
@@ -548,7 +588,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Christopher Mellon's verbatim critique of HRR Vol I in his own ~16,500-word April 12, 2024 Debrief essay — the primary source for the "most error-ridden and unsatisfactory government report" rebuttal that Shellenberger's November 13, 2024 House Oversight written testimony quotes secondhand. Carries Mellon's full graduate-thesis-failing-grade framing of the report's research and interpretation quality. Mellon's authority rests on his prior service as Deputy Assistant Secretary of Defense for Intelligence.
+### Christopher Mellon in The Debrief (April 12, 2024): Mellon calls HRR Vol I "the most error-ridden and unsatisfactory government report" he can recall, one that would fail as a graduate thesis.
+
+This is Mellon's verbatim critique of HRR Vol I in his own ~16,500-word April 12, 2024 Debrief essay — the primary source for the "most error-ridden and unsatisfactory government report" rebuttal that Shellenberger's November 13, 2024 House Oversight written testimony quotes secondhand. Carries Mellon's full graduate-thesis-failing-grade framing of the report's research and interpretation quality. Mellon's authority rests on his prior service as Deputy Assistant Secretary of Defense for Intelligence.
 
 > Third, this is the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service. We all make mistakes, but this report is an outlier in terms of inaccuracies and errors. Were I reviewing this as a graduate student's thesis it would receive a failing grade for failing to understand the assignment, sloppy and inadequate research, and flawed interpretation of the data.
 
@@ -560,7 +602,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Mellon's most consequential single observation about HRR Vol I — that AARO's founding catalyst event (the 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`])) is omitted entirely from AARO's own historical record of US Government UAP involvement. The Nimitz incidents were the primary trigger for the legislative chain that led to AARO's establishment via NDAA FY22 § 1683; their absence from the HRR is structurally significant.
+### Christopher Mellon in The Debrief (April 12, 2024): Mellon says HRR Vol I omits the 2004 Nimitz UAP incidents, the events that led to AARO's own establishment.
+
+This is Mellon's most consequential single observation about HRR Vol I — that AARO's founding catalyst event (the 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`])) is omitted entirely from AARO's own historical record of US Government UAP involvement. The Nimitz incidents were the primary trigger for the legislative chain that led to AARO's establishment via NDAA FY22 § 1683; their absence from the HRR is structurally significant.
 
 > AARO certainly knows about the 2004 Nimitz UAP incidents, which were the primary events that led to the current sea change in attitude to UFOs and UAP, leading to the establishment of AARO itself. AARO just inexplicably and unbelievably chooses not to mention the Nimitz anywhere in its Historical Report.
 
@@ -572,7 +616,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Mellon's account of the HRR Vol I pre-brief mechanism — closed-door, invitation-only press outreach two days before public release on March 8, 2024, with disclosure-attentive outlets like The Debrief excluded. Pairs with the FOIA 24-F-0894 rollout emails (Sue Gough's standardized "small group" reply to journalist requests) documenting the same invite-only press posture from inside the OSD Public Affairs chain.
+### Christopher Mellon in The Debrief (April 12, 2024): Mellon says DoD Public Affairs held a closed-door, invitation-only press pre-brief on HRR Vol I that excluded The Debrief.
+
+This is Mellon's account of the HRR Vol I pre-brief mechanism — closed-door, invitation-only press outreach two days before public release on March 8, 2024, with disclosure-attentive outlets like The Debrief excluded. Pairs with the FOIA 24-F-0894 rollout emails (Sue Gough's standardized "small group" reply to journalist requests) documenting the same invite-only press posture from inside the OSD Public Affairs chain.
 
 > Department of Defense (DoD) Public Affairs sponsored a closed-door pre-brief on the report's findings for a select group of press outlets on an invitation-only basis. Outlets like The Debrief, which closely follow the UAP issue, were excluded. Following the report's release, most of the news agencies that had participated in the pre-brief went on to publish articles that uncritically parroted the report's findings.
 
@@ -584,7 +630,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Mellon's institutional observation that HRR Vol I was the first AARO report to Congress without ODNI/DNI sign-off — Avril Haines's Office withheld signature. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (the FOIA 24-F-0894 rollout emails — "Confirming that we're good without any ODNI mention"). Two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
+### Christopher Mellon in The Debrief (April 12, 2024): Mellon observes that HRR Vol I appears to be the first AARO report to Congress without DNI sign-off.
+
+Mellon's institutional observation: HRR Vol I was the first AARO report to Congress without ODNI/DNI sign-off — Avril Haines's Office withheld signature. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (the FOIA 24-F-0894 rollout emails — "Confirming that we're good without any ODNI mention"). Two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
 
 > this appears to be the first AARO report submitted to Congress that the Director of National Intelligence (DNI) did not sign off on. I don't know why, but Avril Haines and her Office were quite right not to in this case, having spared themselves considerable embarrassment in the process.
 
@@ -656,7 +704,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Gallaudet first-person account of an "hours-long influence operation" by then-acting AARO director and senior staff intended to convince him of the validity of HRR Vol I, question well-known UAP reports including the USS Nimitz tic-tac encounter, and disparage former government authorities. Most concrete public-record disclosure-side critique attestation against AARO institutional conduct.
+### Gallaudet House Oversight written testimony (November 13, 2024): a first-person account of an "hours-long influence operation" by the then-acting AARO director and senior staff.
+
+Gallaudet says the operation was intended to convince him of the validity of HRR Vol I, question well-known UAP reports including the USS Nimitz tic-tac encounter, and disparage former government authorities. Most concrete public-record disclosure-side critique attestation against AARO institutional conduct.
 
 > I say this as a first-hand witness to such disinformation. During a meeting with the then acting AARO director and his senior staff earlier this year, I was the object of an hours-long influence operation which attempted to convince me of the validity of the severely flawed historical records report, question well known UAP reports such as the U.S.S. Nimitz “tic tac” encounter, and disparage several former government authorities who have published and spoken publicly about their knowledge of U.S. government UAP programs.
 
@@ -764,7 +814,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Kosloski case resolution — Puerto Rico 2013 transmedium case assessed as a pair of balloons or sky lanterns floating over the airport at 7 knots, descending to 200 meters; the apparent transmedium behavior was an infrared-imaging artifact when water temperature matched object temperature
+### Kosloski SASC testimony (November 19, 2024): AARO assessed the Puerto Rico object as likely a pair of balloons or sky lanterns floating over the airport at about 7 knots, descending to about 200 meters.
+
+This is Kosloski's case resolution of the Puerto Rico 2013 transmedium case, assessed as a pair of balloons or sky lanterns floating over the airport at 7 knots, descending to 200 meters; the apparent transmedium behavior was an infrared-imaging artifact when water temperature matched object temperature.
 
 > So we assessed that the object, likely a pair of balloons or sky lanterns, was floating at about 7 knots over the airport and descending to about 200 meters.
 
@@ -776,7 +828,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Kosloski case resolution — GOFAST (2017 publicly released video) assessed with high confidence as an object at approximately 13,000 feet altitude rather than close to the water; apparent fast motion is parallax / a trick of the eye when a high-altitude object is imaged from a closer-altitude platform
+### Kosloski SASC testimony (November 19, 2024): AARO assessed with high confidence that the GOFAST object was not close to the water but closer to 13,000 feet.
+
+This is Kosloski's case resolution of GOFAST (2017 publicly released video), assessed with high confidence as an object at approximately 13,000 feet altitude rather than close to the water; apparent fast motion is parallax / a trick of the eye when a high-altitude object is imaged from a closer-altitude platform.
 
 > The GOFAST captured the public attention and congressional attention when it was made public in 2017. It looks like an object flying very fast over the water, very close to the water. Through a very careful geospatial intelligence analysis, using trigonometry, we assessed with high confidence that the object is not actually close to the water but is rather closer to 13,000 feet.
 
@@ -836,7 +890,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.
+### Kosloski SASC Statement for the Record (November 19, 2024): the new Director states that AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.
+
+This is a load-bearing positional claim from the new Director in the Kosloski Nov 19 2024 SASC SFR. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.
 
 > It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.
 
@@ -848,7 +904,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO's official slide-deck attestation of the Mt. Etna 2018 case finding — "approximately 170 kilometers from the volcano" — at moderate confidence. CONTRADICTS Kosloski's oral testimony in the SASC stenographic transcript ("170 meters away from the plume"). Both are primary sources from the same hearing day; the slide deck was prepared the night before the hearing (created Nov 18, 2024 5:24 PM EST).
+### AARO SASC hearing slide deck (November 19, 2024): the Mt. Etna 2018 object is assessed at moderate confidence as a balloon about 170 kilometers from the volcano, contradicting Kosloski's oral testimony.
+
+This is AARO's official slide-deck attestation of the Mt. Etna case finding — "approximately 170 kilometers from the volcano" — at moderate confidence. CONTRADICTS Kosloski's oral testimony in the SASC stenographic transcript ("170 meters away from the plume"). Both are primary sources from the same hearing day; the slide deck was prepared the night before the hearing (created Nov 18, 2024 5:24 PM EST).
 
 > Findings: AARO, in coordination with IC and S&T partners, assesses with moderate confidence that the object was a balloon drifting with the wind approximately 170 kilometers from the volcano.
 
@@ -860,7 +918,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO Puerto Rico Object finding — "high confidence" assessment that the UAP did not demonstrate any anomalous speeds or flight characteristics; two distinct objects, motion-parallax explanation for high-speed perception, traveled at wind speed (3.6 m/s) over land in a straight line, descending to ~200 meters.
+### AARO SASC hearing slide deck (November 19, 2024): AARO assesses with high confidence that the Puerto Rico UAP did not demonstrate any anomalous speeds or flight characteristics.
+
+The AARO Puerto Rico Object finding is a "high confidence" assessment; it also sets out two distinct objects, motion-parallax explanation for high-speed perception, traveled at wind speed (3.6 m/s) over land in a straight line, descending to ~200 meters.
 
 > Findings: AARO, in coordination with Intelligence Community (IC) and Science and Technology (S&T) partners assess with high confidence that the UAP did not demonstrate any anomalous speeds or flight characteristics.
 
@@ -884,7 +944,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### DOD attestation of AARO's Full Operational Capability declaration, dated Oct. 1, 2024 — the start of FY 2025. Public disclosure made on December 5, 2024 by DefenseScoop ahead of Director Kosloski's December 6, 2024 closed-door briefing with the House Oversight and Accountability Committee.
+### DefenseScoop (December 5, 2024): DOD spokesperson Sue Gough attests that AARO reached Full Operational Capability as of October 1, 2024.
+
+This is the DOD attestation of AARO's Full Operational Capability declaration, dated Oct. 1, 2024 — the start of FY 2025. Public disclosure made on December 5, 2024 by DefenseScoop ahead of Director Kosloski's December 6, 2024 closed-door briefing with the House Oversight and Accountability Committee.
 
 > “AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission,” DOD spokesperson Sue Gough told DefenseScoop on Thursday.
 
@@ -908,7 +970,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00004, action_date 2025-04-21, action type M (OTHER ADMINISTRATIVE ACTION). This is the last transaction record before P00005, and its description does not carry the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" label.
+### USAspending transactions for HQ003424C0096 (April 21, 2025): modification P00004, the last transaction record before P00005, does not carry the AARO label in its description.
+
+USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00004, action_date 2025-04-21, action type M (OTHER ADMINISTRATIVE ACTION). Its description does not carry the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" label.
 
 > "action_date":"2025-04-21","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, OPERATIONS, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING, AND EXECUTION (PPBE) SUPPORT."
 
@@ -920,7 +984,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO Volume II preview reporting (Wall Street Journal, June 6, 2025) — verbatim attestation that a now-retired Air Force colonel confessed to AARO investigators in 2023 that he had doctored flying-saucer photos in the 1980s as a cover for F-117 stealth-fighter testing at Area 51. Documents an AARO investigative-interview output: a primary-source disinformation confession.
+### Wall Street Journal (June 6, 2025): AARO Volume II preview reporting says a now-retired officer confessed to Pentagon investigators in 2023 that photos were doctored as a ruse to protect Area 51 stealth-fighter development.
+
+The article gives a verbatim attestation that a now-retired Air Force colonel confessed to AARO investigators in 2023 that he had doctored flying-saucer photos in the 1980s as a cover for F-117 stealth-fighter testing at Area 51. Documents an AARO investigative-interview output: a primary-source disinformation confession.
 
 > The photos were doctored, the now-retired officer confessed to the Pentagon investigators in 2023. The whole exercise was a ruse to protect what was really going on at Area 51: The Air Force was using the site to develop top-secret stealth fighters, viewed as a critical edge against the Soviet Union.
 
@@ -932,7 +998,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO Volume II preview reporting (Wall Street Journal, June 6, 2025) — verbatim description of the "Yankee Blue" induction briefings at Air Force classified programs, in which new commanders were handed a doctored "antigravity maneuvering vehicle" photo and told the program was reverse-engineering the craft. Per the WSJ, Kirkpatrick found the practice had begun decades before, prompting a defense-secretary's-office memo across the service in spring 2023 ordering the practice to stop. Documents an AARO Volume II finding that connects historical Air Force disinformation practice to the public UFO mythology AARO is statutorily charged with investigating.
+### Wall Street Journal (June 6, 2025): AARO Volume II preview reporting describes the "Yankee Blue" induction briefings, in which new Air Force classified-program commanders were shown a fake flying-saucer photo.
+
+The WSJ gives a verbatim description of the "Yankee Blue" induction briefings at Air Force classified programs, in which new commanders were handed a doctored "antigravity maneuvering vehicle" photo and told the program was reverse-engineering the craft. Per the WSJ, Kirkpatrick found the practice had begun decades before, prompting a defense-secretary's-office memo across the service in spring 2023 ordering the practice to stop. Documents an AARO Volume II finding that connects historical Air Force disinformation practice to the public UFO mythology AARO is statutorily charged with investigating.
 
 > For decades, certain new commanders of the Air Force's most classified programs, as part of their induction briefings, would be handed a piece of paper with a photo of what looked like a flying saucer. The craft was described as an antigravity maneuvering vehicle. The officers were told that the program they were joining, dubbed Yankee Blue, was part of an effort to reverse-engineer the technology on the craft. They were told never to mention it again. Many never learned it was fake. Kirkpatrick found the practice had begun decades before, and appeared to continue still. The defense secretary's office sent a memo out across the service in the spring of 2023 ordering the practice to stop immediately, but the damage was done.
 
@@ -944,7 +1012,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00005, action_date 2025-07-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. It is the first of the contract's 8 transaction records whose description begins "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)"; the base award and P00001-P00004 descriptions do not carry that label. From this modification on, the federal record describes the contract's support services under the AARO name.
+### USAspending transactions for HQ003424C0096 (July 10, 2025): modification P00005 is the first of the contract's 8 transaction records whose description begins "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)".
+
+USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00005, action_date 2025-07-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The base award and P00001-P00004 descriptions do not carry that label. From this modification on, the federal record describes the contract's support services under the AARO name.
 
 > "action_date":"2025-07-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00005","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES"
 
@@ -968,7 +1038,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### FOIA 24-F-0894 cover letter (August 26, 2025) attesting five Initial Denial Authorities signed off on the 14-page release — Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.
+### FOIA 24-F-0894 cover letter (August 26, 2025): five Initial Denial Authorities, spanning OSD components and ODNI, signed off on the 14-page release.
+
+The cover letter, attesting the five IDAs, names: Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.
 
 > The personnel listed below, in their capacity as an Initial Denial Authority, have determined that the pages contained information exempt from mandatory public release.
 
@@ -992,7 +1064,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Arlo Solutions LLC posted, on its Greenhouse job board, a position it described as supporting AARO; the posting places AARO under OUSD(I&S). The posting names no contract number or contract vehicle. 2025-12-17 is the Wayback capture date; the rendered page text displays no posting date.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): the posting places the AARO-support position under OUSD(I&S).
+
+Arlo Solutions LLC posted, on its Greenhouse job board, a position it described as supporting AARO. The posting names no contract number or contract vehicle. 2025-12-17 is the Wayback capture date; the rendered page text displays no posting date.
 
 > The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)).
 
@@ -1004,7 +1078,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### The posting describes the AARO-support role as a "key personnel position"; it names no contract number. Wayback capture date 2025-12-17.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): the posting describes the AARO-support role as a "key personnel position".
+
+The posting names no contract number. Wayback capture date 2025-12-17.
 
 > This key personnel position serves as a senior-level SME responsible for providing advanced technical knowledge and analysis of highly specialized applications and operational environments for AARO operations, activities, and investments.
 
@@ -1016,7 +1092,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Posted responsibility for cataloging and curating UAP incident reporting, including multi-platform sensor data at multiple classification levels. Wayback capture date 2025-12-17.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): a posted responsibility is cataloging and curating UAP incident reporting, including multi-platform sensor data at multiple classification levels.
+
+Wayback capture date 2025-12-17.
 
 > Provide technical expertise, advice, and support required to ensure that UAP incident reporting is appropriately cataloged, stored, curated, and maintained, to include sensor data from multiple platforms and data at multiple classification levels.
 
@@ -1028,7 +1106,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Posted responsibility for reports and briefings on AARO operations, activities and investments for Congress and senior Executive Branch officials. Wayback capture date 2025-12-17.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): a posted responsibility is reports and briefings on AARO operations, activities and investments for Congress and senior Executive Branch officials.
+
+Wayback capture date 2025-12-17.
 
 > Support the daily production, coordination, and dissemination of reports and briefings that detail AARO operations, activities and investments for Congress and Senior Executive Branch officials.
 
@@ -1040,7 +1120,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Names the offices the posted staff officer is to work with (the OUSW(I&S) Special Access Program Central Office, the Special Security Office, ODNI, and the Combat Support Agencies). Wayback capture date 2025-12-17.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): the posting names the offices the staff officer is to work with, including the OUSW(I&S) Special Access Program Central Office and ODNI.
+
+The posted staff officer is to work with the OUSW(I&S) Special Access Program Central Office, the Special Security Office, ODNI, and the Combat Support Agencies. Wayback capture date 2025-12-17.
 
 > Develop and establish positive working relationships with the OUSW(I&S) Special Access Program Central Office, the Special Security Office, the Office of the Director of National Intelligence, and the Combat Support Agencies.
 
@@ -1052,7 +1134,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Listed as a desired (not minimum) qualification. The posting expands UAP as "Unidentified Aerial Phenomena". Wayback capture date 2025-12-17.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): experience with the AARO mission and UAP research is listed as a desired (not minimum) qualification.
+
+The posting expands UAP as "Unidentified Aerial Phenomena". Wayback capture date 2025-12-17.
 
 > Experience with AARO mission and Unidentified Aerial Phenomena (UAP) research activities
 
@@ -1064,7 +1148,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Strategic Program Development and Analysis", analysis of intelligence-related activities against the National Defense Strategy and the priorities of the Secretary of War and Under Secretary of War for Intelligence and Security.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): the AARO-support role includes analyzing intelligence-related activities against the National Defense Strategy and the Secretary of War's priorities.
+
+Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Strategic Program Development and Analysis", analysis of intelligence-related activities against the National Defense Strategy and the priorities of the Secretary of War and Under Secretary of War for Intelligence and Security.
 
 > Analyze intelligence related activities against the National Defense Strategy and the priorities of the Secretary of War and Under Secretary of War for Intelligence and Security Technical Advisory and Guidance.
 
@@ -1076,7 +1162,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Policy and Procedural Development", support for DOW and Intelligence Community-wide processes and procedures for operational and intelligence reporting of airborne objects of interest including UAP.
+### Arlo Solutions Staff Officer V posting (Wayback capture, December 17, 2025): the AARO-support role supports DOW and Intelligence Community-wide processes for operational and intelligence reporting of airborne objects of interest including UAP.
+
+Arlo Solutions' (617) Staff Officer V posting text for the position it describes as supporting AARO lists, under "Policy and Procedural Development", support for DOW and Intelligence Community-wide processes and procedures for this reporting.
 
 > Support development of DOW and Intelligence Community-wide processes and procedures to enable operational and intelligence reporting of airborne objects of interest including UAP.
 
@@ -1112,7 +1200,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### The same AARO-support posting text is present in the 2026-01-19 Wayback capture: the position is stated to support AARO under OUSD(I&S). The posting names no contract number; 2026-01-19 is the Wayback capture date.
+### Arlo Solutions Staff Officer V posting (Wayback capture, January 19, 2026): the same posting text places the position under OUSD(I&S) in support of AARO.
+
+The same AARO-support posting text is present in the 2026-01-19 Wayback capture: the position is stated to support AARO under OUSD(I&S). The posting names no contract number; 2026-01-19 is the Wayback capture date.
 
 > The Staff Officer V will support the All-Domain Anomaly Resolution Office (AARO) under the Office of the Under Secretary of War for Intelligence and Security (OUSD(I&S)).
 
@@ -1124,7 +1214,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### An Arlo Solutions LLC job posting (Greenhouse, "(619) Security Officer IV", Arlington, VA) describes the role as providing security support for AARO and places AARO within OUSW(I&S). The posting names no contract number or vehicle.
+### Arlo Solutions Security Officer IV posting (Wayback capture, January 19, 2026): the role provides security support for AARO, which the posting places within OUSW(I&S).
+
+An Arlo Solutions LLC job posting (Greenhouse, "(619) Security Officer IV", Arlington, VA) describes the role as providing security support for AARO. The posting names no contract number or vehicle.
 
 > The Security Officer IV serves as the primary security professional responsible for managing comprehensive security support for the All-Domain Anomaly Resolution Office (AARO) within the Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)).
 
@@ -1184,7 +1276,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Arlo Solutions LLC's (619) Security Officer IV posting (Greenhouse job board; Wayback capture date 2026-01-19) lists, under the "Personnel Security" responsibilities of a role the posting describes as providing security support for AARO, coordination with the Defense Counterintelligence & Security Agency (DCSA) on personnel clearance matters.
+### Arlo Solutions Security Officer IV posting (Wayback capture, January 19, 2026): the AARO security role's personnel-security duties include coordinating with DCSA on personnel clearance matters.
+
+Arlo Solutions LLC's (619) Security Officer IV posting (Greenhouse job board; Wayback capture date 2026-01-19) lists, under the "Personnel Security" responsibilities of a role the posting describes as providing security support for AARO, coordination with the Defense Counterintelligence & Security Agency (DCSA) on personnel clearance matters.
 
 > Coordinate with Defense Counterintelligence & Security Agency (DCSA) on personnel clearance matters.
 
@@ -1208,7 +1302,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending award record for HQ003426FE050 (a BPA call order to SANCORP CONSULTING, LLC) describes the work as Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services. The record does not name AARO or any requiring office; the only office-level attribution it carries is the funding office "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the Sancorp BPA call order describes support services but does not name AARO or any requiring office.
+
+The USAspending award record for HQ003426FE050 (a BPA call order to SANCORP CONSULTING, LLC) describes the work as Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services. The record does not name AARO or any requiring office; the only office-level attribution it carries is the funding office "OSD OUSD(I)".
 
 > ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES
 
@@ -1220,7 +1316,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003426FE050 date_signed 2026-01-28; total_obligation $5,317,041.31; base_exercised_options $6,444,156.68; base_and_all_options $20,115,030.67; subaward_count 0. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): total_obligation $5,317,041.31, base_exercised_options $6,444,156.68, and base_and_all_options $20,115,030.67.
+
+The record shows date_signed 2026-01-28 and subaward_count 0. The record does not name AARO or any requiring office below "OSD OUSD(I)".
 
 > "total_obligation":5317041.31,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2026-01-28","base_exercised_options":6444156.68,"base_and_all_options":20115030.67
 
@@ -1232,7 +1330,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003426FE050 period of performance: start 2026-01-28, current end 2027-07-31, potential end 2030-07-31; record last modified 2026-06-04. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the period of performance runs from start 2026-01-28 to a current end of 2027-07-31, with potential end 2030-07-31.
+
+The record was last modified 2026-06-04. The record does not name AARO or any requiring office below "OSD OUSD(I)".
 
 > "period_of_performance":{"start_date":"2026-01-28","end_date":"2027-07-31","last_modified_date":"2026-06-04","potential_end_date":"2030-07-31 00:00:00"}
 
@@ -1244,7 +1344,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003426FE050 funding agency: subtier Immediate Office of the Secretary of Defense (code 97AD, abbreviation SECDEF), funding office "OSD OUSD(I)". This is the most specific office attribution in the record; it does not name AARO or any requiring office below "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the funding office is "OSD OUSD(I)", under the Immediate Office of the Secretary of Defense (97AD, SECDEF).
+
+HQ003426FE050 funding agency: subtier Immediate Office of the Secretary of Defense (code 97AD, abbreviation SECDEF), funding office "OSD OUSD(I)". This is the most specific office attribution in the record; it does not name AARO or any requiring office below "OSD OUSD(I)".
 
 > "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"
 
@@ -1256,7 +1358,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003426FE050 competition data: number_of_offers_received 4; extent_competed code F; set-aside type 8A, described as 8A COMPETED; solicitation_procedures code SP1. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): competition data show 4 offers received, extent_competed code F, and set-aside type 8A, described as 8A COMPETED.
+
+The number_of_offers_received is 4 and the solicitation_procedures code is SP1. The record does not name AARO or any requiring office below "OSD OUSD(I)".
 
 > "solicitation_procedures":"SP1","number_of_offers_received":"4","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"
 
@@ -1268,7 +1372,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003426FE050 recipient is SANCORP CONSULTING, LLC, UEI GRYKNJ8BGFC8. The record does not name AARO or any requiring office below "OSD OUSD(I)".
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the recipient is SANCORP CONSULTING, LLC, UEI GRYKNJ8BGFC8.
+
+The record does not name AARO or any requiring office below "OSD OUSD(I)".
 
 > "recipient_name":"SANCORP CONSULTING, LLC","recipient_uei":"GRYKNJ8BGFC8"
 
@@ -1280,7 +1386,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending record identifies HQ003426FE050 as a contract of type A, BPA CALL (a call order against a blanket purchase agreement). The award record does not name AARO.
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the record identifies HQ003426FE050 as a contract of type A, BPA CALL (a call order against a blanket purchase agreement).
+
+The award record does not name AARO.
 
 > "piid":"HQ003426FE050","category":"contract","type":"A","type_description":"BPA CALL"
 
@@ -1292,7 +1400,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Parent award of HQ003426FE050 is IDV HQ003425A0001, a BPA described as MULTIPLE AWARD. The award record does not name AARO.
+### USAspending award record for HQ003426FE050 (signed January 28, 2026): the parent award is IDV HQ003425A0001, a BPA described as MULTIPLE AWARD.
+
+The award record does not name AARO.
 
 > "generated_unique_award_id":"CONT_IDV_HQ003425A0001_9700","idv_type_description":"BPA","multiple_or_single_aw_desc":"MULTIPLE AWARD","piid":"HQ003425A0001"
 
@@ -1304,7 +1414,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending transaction record for HQ003426FE050 base award (modification_number "0"), type BPA CALL, action_date 2026-01-28, action_type null, federal_action_obligation 2064311.0. The description field reads "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES" and does not name AARO or any requiring office.
+### USAspending transactions for HQ003426FE050 (January 28, 2026): the base award obligated 2064311.0 under a support-services description that does not name AARO or any requiring office.
+
+USAspending transaction record for HQ003426FE050 base award (modification_number "0"), type BPA CALL, action_date 2026-01-28, action_type null, federal_action_obligation 2064311.0. The description field reads "ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES" and does not name AARO or any requiring office.
 
 > "action_date":"2026-01-28","action_type":null,"action_type_description":null,"modification_number":"0","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":2064311.0
 
@@ -1316,7 +1428,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### February 19, 2026 Truth Social post by President Donald J. Trump (@realDonaldTrump) directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". This is the underlying directive that DefenseScoop's February 25, 2026 coverage referenced as the "forthcoming" UAP-disclosure executive order Secretary of War Pete Hegseth committed to comply with.
+### Trump Truth Social post (February 19, 2026): the President directs the Secretary of War and other agencies to begin identifying and releasing Government files on alien and extraterrestrial life, UAP, and UFOs.
+
+President Donald J. Trump (@realDonaldTrump) posted, directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". This is the underlying directive that DefenseScoop's February 25, 2026 coverage referenced as the "forthcoming" UAP-disclosure executive order Secretary of War Pete Hegseth committed to comply with.
 
 > Based on the tremendous interest shown, I will be directing the Secretary of War, and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters. GOD BLESS AMERICA!
 
@@ -1340,7 +1454,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Pentagon spokesperson Sue Gough caseload statement to DefenseScoop (Feb 25, 2026) — AARO examining over 2,000 UAP cases; ~1,000 reports retained in the AARO Active Archive pending sufficient data. Caseload grew by at least 400 since the late-2024 public update of more than 1,600 reports.
+### DefenseScoop (February 25, 2026): Pentagon spokesperson Sue Gough says AARO is examining over 2,000 UAP cases, with about 1,000 reports retained in its Active Archive pending sufficient data.
+
+Gough's caseload statement to DefenseScoop (Feb 25, 2026): AARO examining over 2,000 UAP cases; ~1,000 reports retained in the AARO Active Archive pending sufficient data. Caseload grew by at least 400 since the late-2024 public update of more than 1,600 reports.
 
 > In response to questions from DefenseScoop Wednesday, Pentagon spokesperson Sue Gough said that "AARO has been examining over 2,000 UAP cases."
 >
@@ -1366,7 +1482,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Disclosure Foundation Executive Director Jordan Flowers' direct AARO-institutional-conduct critique — "By failing to meet its statutory obligations, AARO has not helped its image." Most explicit civil-society critique from the disclosure-coalition organization whose board chair is former Deputy Assistant Secretary of Defense Christopher Mellon.
+### DefenseScoop (February 25, 2026): Disclosure Foundation Executive Director Jordan Flowers says "By failing to meet its statutory obligations, AARO has not helped its image."
+
+This is Flowers' direct AARO-institutional-conduct critique. Most explicit civil-society critique from the disclosure-coalition organization whose board chair is former Deputy Assistant Secretary of Defense Christopher Mellon.
 
 > Trust is earned. And if AARO wants to earn the public’s trust, then it should move expeditiously to release its trove of unclassified videos and photos. By failing to meet its statutory obligations, AARO has not helped its image
 
@@ -1414,7 +1532,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### House Oversight Task Force on the Declassification of Federal Secrets formal Congressional attestation that whistleblowers told the Task Force that AARO possesses additional video records of potential UAP sightings — the predicate for the Task Force's March 31, 2026 request for 46 enumerated UAP video files.
+### Luna letter to Hegseth (March 31, 2026): the House Oversight Task Force attests that whistleblowers told it AARO possesses additional video records of potential UAP sightings.
+
+This formal Congressional attestation from the House Oversight Task Force on the Declassification of Federal Secrets is the predicate for the Task Force's March 31, 2026 request for 46 enumerated UAP video files.
 
 > Whistleblowers informed the Task Force that AARO possesses additional video records of potential UAP sightings. To continue its investigation, the Task Force requests certain video files related to UAP sightings.
 
@@ -1450,7 +1570,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Defense Department spokesperson statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law.
+### NBC News (April 18, 2026): a Defense Department spokesperson statement says AARO is working with the White House and federal agencies to consolidate UAP records and transfer them to the National Archives.
+
+This is the AARO disclosure-coordination statement to NBC News (Apr 18, 2026): working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law.
 
 > A spokesperson for the Defense Department said in a statement to NBC News Saturday that its All-domain Anomaly Resolution Office (AARO) is "working in close coordination with the White House and across federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information."
 >
@@ -1476,7 +1598,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00007, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -56454.61 (a negative obligation), under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description. It is the latest of the 8 transaction records in the file.
+### USAspending transactions for HQ003424C0096 (May 6, 2026): modification P00007, the latest of the 8 transaction records, carries a negative obligation of -56454.61 under the AARO-labeled description.
+
+USAspending transaction record for Sancorp Consulting contract HQ003424C0096 modification P00007, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -56454.61 (a negative obligation), under the "OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)" description. It is the latest of the 8 transaction records in the file.
 
 > "action_date":"2026-05-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00007","description":"OUSDIS ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO) ADMINISTRATIVE, SECURITY, POLICY, ANALYTIC, KNOWLEDGE MANAGEMENT, LEGISLATIVE AFFAIRS, PUBLIC AFFAIRS, REPORTING, AND PLANNING, PROGRAMMING, BUDGETING AND EXECUTION SUPPORT SERVICES","federal_action_obligation":-56454.61
 
@@ -1488,7 +1612,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### USAspending transaction record for HQ003426FE050 modification P00004 (the latest of the five transaction records), action_date 2026-06-04, action type C (FUNDING ONLY ACTION), federal_action_obligation 142521.2. The description field is unchanged from the base award. None of the five transaction descriptions (base award 0, P00001, P00002, P00003, P00004) names AARO or any requiring office; all five carry the identical description string.
+### USAspending transactions for HQ003426FE050 (June 4, 2026): modification P00004, a funding-only action of 142521.2, keeps the base-award description, and none of the five transaction descriptions names AARO.
+
+USAspending transaction record for HQ003426FE050 modification P00004 (the latest of the five transaction records), action_date 2026-06-04, action type C (FUNDING ONLY ACTION), federal_action_obligation 142521.2. The description field is unchanged from the base award. None of the five transaction descriptions (base award 0, P00001, P00002, P00003, P00004) names AARO or any requiring office; all five carry the identical description string.
 
 > "action_date":"2026-06-04","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00004","description":"ADMINISTRATIVE, ANALYTIC, SCIENTIFIC, INFORMATION TECHNOLOGY AND SUBJECT MATTER EXPERTISE SUPPORT SERVICES","federal_action_obligation":142521.2
 
@@ -1500,7 +1626,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### House-adopted statutory text (Amendment No. 315 to H.R. 8800, carried in amendments en bloc No. 5) directing the proposed UAP Records Review Board to brief AARO, or any successor office established by law, on the Controlled Disclosure Campaign Plan, its classified appendix, and postponed disclosures; identifies AARO by its establishment authority, sec. 1683 of the FY2022 NDAA (50 U.S.C. 3373).
+### Congressional Record, House (July 22, 2026): House-adopted Amendment No. 315 to H.R. 8800 directs the proposed UAP Records Review Board to brief AARO, or any successor office, on the Controlled Disclosure Campaign Plan.
+
+This is House-adopted statutory text (carried in amendments en bloc No. 5) directing the Review Board to brief AARO, or any successor office established by law, on the Controlled Disclosure Campaign Plan, its classified appendix, and postponed disclosures; identifies AARO by its establishment authority, sec. 1683 of the FY2022 NDAA (50 U.S.C. 3373).
 
 > (6) Briefing the all-domain anomaly resolution office.--Coincident with the provision in paragraph (5), if not accomplished earlier under paragraph (4), the Review Board shall brief the All-domain Anomaly Resolution Office established pursuant to section 1683 of the National Defense Authorization Act for Fiscal Year 2022 (50 U.S.C. 3373), or any successor Office established by law, on the Controlled Disclosure Campaign Plan, classified appendix, and postponed disclosures.
 
@@ -1512,7 +1640,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### House-adopted statutory text assigning AARO (or its successor designated by Act of Congress) a continuing post-Review-Board role: develop standardized UAP declassification guidance for all UAP records generated after the Review Board terminates, consistent with the Controlled Disclosure Campaign Plan; paragraph (1) keeps the non-Review-Board provisions in force until the Archivist certifies all UAP records public.
+### Congressional Record, House (July 22, 2026): House-adopted Amendment No. 315 assigns AARO, or its successor designated by Act of Congress, to develop standardized UAP declassification guidance for records generated after the Review Board terminates.
+
+This is House-adopted statutory text assigning AARO a continuing post-Review-Board role: develop standardized UAP declassification guidance for all UAP records generated after the Review Board terminates, consistent with the Controlled Disclosure Campaign Plan; paragraph (1) keeps the non-Review-Board provisions in force until the Archivist certifies all UAP records public.
 
 > (b) Other Provisions.--(1) The remaining provisions of this subtitle shall continue in effect until such time as the Archivist certifies to the President and Congress that all unidentified anomalous phenomena records have been made available to the public in accordance with this subtitle. (2) In facilitation of the provision in paragraph (1), the All-domain Anomaly Resolution Office established pursuant to section 1683 of the National Defense Authorization Act for Fiscal Year 2022 (50 U.S.C. 3373), or its successor as subsequently designated by Act of Congress, shall develop standardized unidentified anomalous phenomena declassification guidance applicable to any and all unidentified anomalous phenomena records generated by originating bodies subsequent to termination of the Review Board consistent with the requirements and intent of the Controlled Disclosure Campaign Plan with respect to unidentified anomalous phenomena records originated prior to Review Board termination.
 
@@ -1536,7 +1666,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Records that amendments en bloc No. 5 — and so amendment No. 315 with its two AARO provisions — were agreed to in the Committee of the Whole on July 22, 2026. This is adoption of the amendment only: the same day the Committee rose having come to no resolution on H.R. 8800, so the Record does not show passage of the bill.
+### Congressional Record, House (July 22, 2026): amendments en bloc No. 5, including Amendment No. 315 with its two AARO provisions, were agreed to in the Committee of the Whole.
+
+The Acting Chair's disposition records that result. This is adoption of the amendment only: the same day the Committee rose having come to no resolution on H.R. 8800, so the Record does not show passage of the bill.
 
 > The Acting CHAIR. The question is on the amendments en bloc offered by the gentleman from Alabama (Mr. Rogers). The en bloc amendments were agreed to.
 
@@ -1668,7 +1800,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### TIME narration reporting that the White House set up the UAP Science Advisory Council, led by Avi Loeb. This is the body that, in Loeb's quote in the next paragraph, he was "tasked to create" for the White House, AARO, the DNI, the FBI, and related agencies.
+### TIME (August 6, 2026): TIME narration reports that the White House set up the UAP Science Advisory Council, led by Avi Loeb.
+
+This is TIME's own reporting, not a quote. This is the body that, in Loeb's quote in the next paragraph, he was "tasked to create" for the White House, AARO, the DNI, the FBI, and related agencies.
 
 > At about the same time, the White House established the UAP Science Advisory Council, a body led by Harvard astrophysicist and cosmologist Avi Loeb to study the national-security risks posed by UAPs.
 
@@ -1680,7 +1814,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Avi Loeb, chair of the White House UAP Science Advisory Council, names AARO as one of the agencies his panel was set up to connect, alongside the White House, the Director of National Intelligence, and the FBI. This is Loeb's voice as quoted by TIME, not AARO's. It supports the claim that Loeb "was tasked to create a panel for the White House, AARO, the Director of National Intelligence, the FBI".
+### TIME (August 6, 2026): Avi Loeb, chair of the White House UAP Science Advisory Council, names AARO as one of the agencies his panel was set up to connect.
+
+Loeb names AARO alongside the White House, the Director of National Intelligence, and the FBI. This is Loeb's voice as quoted by TIME, not AARO's. It supports the claim that Loeb "was tasked to create a panel for the White House, AARO, the Director of National Intelligence, the FBI".
 
 > “I was tasked to create a panel for the White House, AARO, the Director of National Intelligence, the FBI, and related agencies, so that all of these organizations are in contact [about UAPs],” says Loeb.
 
@@ -1692,7 +1828,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### A TIME image caption identifying Sean Kirkpatrick as AARO director on April 19, 2023. It reports that he shared a video of a silver, orb-like object and that he described "metallic orbs" as the most common UAP type, reported "all over the world". It is AARO's characterization as relayed by TIME.
+### TIME image caption (August 6, 2026): as relayed by TIME, AARO director Sean Kirkpatrick shared an orb video on April 19, 2023 and called "metallic orbs" the most common UAP type.
+
+A TIME image caption identifying Sean Kirkpatrick as AARO director on April 19, 2023. It reports that he shared a video of a silver, orb-like object and that he described "metallic orbs" as the most common UAP type, reported "all over the world". It is AARO's characterization as relayed by TIME.
 
 > On April 19, 2023, Sean Kirkpatrick, director of the All-domain Anomaly Resolution Office (AARO), shared a video that depicts an apparent silver, orblike object crossing a video sensor’s field of view. Kirkpatrick said the “metallic orbs” are the most common type of UAP and are reported from “all over the world.”
 
@@ -1704,7 +1842,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Sancorp Consulting job requisition 1258 (Staff Officer III) describes the position as providing Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services "in direct support to Research, Development, Test & Evaluation Activities" within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting names no contract number.
+### Sancorp job requisition 1258 (posted August 10, 2026): the Staff Officer III provides support services "in direct support to Research, Development, Test & Evaluation Activities" within OUSW(I&S) AARO.
+
+Sancorp Consulting job requisition 1258 (Staff Officer III) describes the position as providing Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services within OUSW(I&S) All-Domain Anomaly Resolution Office (AARO). The posting names no contract number.
 
 > SANCORP is seeking a Staff Officer III to provide Administrative, Analytic, Scientific, Information Technology and Subject Matter Expertise Support Services in direct support to Research, Development, Test & Evaluation Activities within Office of the Under Secretary of War for Intelligence and Security (OUSW(I&S)) All-Domain Anomaly Resolution Office (AARO).
 
@@ -1836,7 +1976,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Disclosure Foundation Executive Director Jordan Flowers, to DefenseScoop, says "binding law" protects individuals who share information with AARO and now PURSUE against lawsuit, prosecution, and retaliation "regardless of an NDA" — the protection attaches to the individuals who share information, not to AARO or PURSUE; this is the one passage in the article that names AARO alongside the new PURSUE pathway as a place individuals share information.
+### DefenseScoop (September 14, 2026): Disclosure Foundation Executive Director Jordan Flowers says "binding law" protects individuals who share information with AARO and now PURSUE "regardless of an NDA".
+
+Flowers, to DefenseScoop, says the protection is against lawsuit, prosecution, and retaliation. The protection attaches to the individuals who share information, not to AARO or PURSUE; this is the one passage in the article that names AARO alongside the new PURSUE pathway as a place individuals share information.
 
 > Binding law protects individuals who share information with AARO and now PURSUE against lawsuit, prosecution, and retaliation regardless of an NDA — or any other restraint
 
@@ -1848,7 +1990,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### The article's only description of what AARO does: an information-gathering body that investigates the Pentagon's UAP caseload and synchronizes military data sharing with other parts of the federal government. The article assigns AARO no role in the PURSUE disclosure pathway or the waiver, and this sentence is its whole account of AARO's function. It backs the timeline's "names no AARO role in PURSUE" framing.
+### DefenseScoop (September 14, 2026): the article's only description of AARO is an information-gathering body that investigates the Pentagon's UAP caseload and synchronizes military data sharing with other parts of the federal government.
+
+The article assigns AARO no role in the PURSUE disclosure pathway or the waiver, and this sentence is its whole account of AARO's function. It backs the timeline's "names no AARO role in PURSUE" framing.
 
 > It operates as an information-gathering body that investigates the Pentagon’s ever-growing caseload of UAP incidents and synchronizes military data sharing with other parts of the federal government.
 
@@ -1860,7 +2004,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### In the 2026-09-25 capture of the HQ003424C0096 award record, total obligation, base-exercised-options, and base-and-all-options each read $3,415,374.79 (date signed 2024-08-23). The earlier 2026-04-30 capture (government/usaspending-hq003424c0096.txt) recorded a total of $3,471,829.40; the two captures differ by $56,454.61.
+### USAspending award record for HQ003424C0096 (September 25, 2026 capture): total obligation, base-exercised-options, and base-and-all-options each read $3,415,374.79.
+
+In the 2026-09-25 capture of the award record, the date signed is 2024-08-23. The earlier 2026-04-30 capture (government/usaspending-hq003424c0096.txt) recorded a total of $3,471,829.40; the two captures differ by $56,454.61.
 
 > "total_obligation":3415374.79,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2024-08-23","base_exercised_options":3415374.79,"base_and_all_options":3415374.79
 
@@ -1896,7 +2042,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### HQ003424C0096 funding office is "OSD OUSD(I)" (funding subtier: Immediate Office of the Secretary of Defense, 97AD / SECDEF); the awarding subtier and office are Washington Headquarters Services (97F5 / WHS). Both sit under the Department of Defense.
+### USAspending award record for HQ003424C0096 (September 25, 2026 capture): the funding office is "OSD OUSD(I)" and the awarding subtier and office are Washington Headquarters Services.
+
+Funding subtier: Immediate Office of the Secretary of Defense, 97AD / SECDEF; awarding subtier and office: Washington Headquarters Services (97F5 / WHS). Both sit under the Department of Defense.
 
 > "subtier_agency":{"name":"Immediate Office of the Secretary of Defense","code":"97AD","abbreviation":"SECDEF"},"office_agency_name":"OSD OUSD(I)"},"awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}
 
@@ -2139,7 +2287,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Morphology distribution: spheroidal objects 40 percent and lights 33 percent. The in-text figure reference (Figure 3) does not match the morphology chart, which is captioned Figure 2 on p. 8.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): spheroidal objects (40 percent) and lights (33 percent) were the most reported UAP morphologies.
+
+This is the morphology distribution. The in-text figure reference (Figure 3) does not match the morphology chart, which is captioned Figure 2 on p. 8.
 
 > Reporting trends for UAP morphologies remain consistent with historical patterns. In incidents where reporters provided a description of the phenomenon’s distinct visual characteristics, lights (33 percent) and spheroidal objects (40 percent) were the most reported morphologies (Figure 3).
 
@@ -2194,7 +2344,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Two reports of electronic/avionic interference attributed to UAP near an operational aircraft; no determination yet. Section IV.E (p. 10, ¶2) restates this in near-identical words.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): two reports attributed electronic or avionic interference to UAP near an operational aircraft, with no determination yet.
+
+The report describes two reports of electronic/avionic interference attributed to UAP near an operational aircraft. Section IV.E (p. 10, ¶2) restates this in near-identical words.
 
 > Two UAP reports described electronic or avionic interference as attributable to UAP in proximity to an operational aircraft. AARO has not yet rendered a determination on whether, and to what extent, the reported effects are attributable to UAP.
 
@@ -2205,7 +2357,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO acknowledges narrative reports near national-security sites that suggest performance beyond the known state of the art. It says they would be a 'currently unmitigated threat vector' if validated, though no technical data accompanied them.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): AARO acknowledges narrative reports near national-security sites that suggest performance beyond the known state of the art.
+
+It says they would be a 'currently unmitigated threat vector' if validated, though no technical data accompanied them.
 
 > AARO received and analyzed several reports describing UAP in or near national security sites or critical infrastructure. Some narrative reports were suggestive of phenomena whose performance characteristics exceed the known state-of-the-art within a given domain. No technical data accompanied these reports. If validated, the attendant phenomena underlying these reports may represent a currently unmitigated threat vector.
 
@@ -2216,7 +2370,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### 50 UAS incidents near nuclear sites reported through the Administrator for Nuclear Security and NRC Chairman, up from 18 in FY2024. None were reported as UAP.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): 50 UAS incidents near nuclear sites were reported through the Administrator for Nuclear Security and NRC Chairman, up from 18 in FY2024.
+
+None were reported as UAP.
 
 > AARO received 50 reports from the Administrator for Nuclear Security and Chairman of the Nuclear Regulatory Commission regarding unmanned aerial systems (UAS) incidents near U.S. nuclear infrastructure, weapons, and launch sites, a 177.8 percent increase over the 18 reported in AARO’s FY 2024 annual report. None of these incidents were reported as UAP.
 
@@ -2238,7 +2394,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### AARO's FY2025 position that no evidence suggests any USG or private entity has captured or exploited UAP-derived materials. It is also developing a formal handling process for such materials.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): no evidence suggests any USG or private entity has captured or exploited UAP-derived materials.
+
+This is AARO's FY2025 position. It is also developing a formal handling process for such materials.
 
 > To date, no evidence suggests that a USG or private entity has ever captured or exploited UAP-derived materials. AARO is currently developing a formalized process for handling UAP-derived materials by an appropriate line organization, should such materials ever come into the possession of the USG. AARO’s development process draws on established USG capabilities and operating procedures governing the recovery of foreign materiel.
 
@@ -2403,7 +2561,9 @@ On September 14, 2026, per DefenseScoop (Brandi Vincent), the Pentagon issued a 
 
 ---
 
-### Closing sentences of the altitude paragraph (continuing the preceding passage from the same paragraph): civilian pilot altitude estimates of 45,000 to 60,000 feet, many of which AARO resolved as satellite flaring. Context for the satellite-flaring figures reported elsewhere in the report (238 resolved via the new modeling capability, pp. 3 and 12; 44 UAP-related events in the reporting period, p. 9); the report itself does not reconcile the two counts.
+### AARO FY2025 annual UAP report (information cut-off May 30, 2025): civilian pilot altitude estimates ran 45,000 to 60,000 feet, and AARO resolved many of these reports as satellite flaring.
+
+These are the closing sentences of the altitude paragraph (continuing the preceding passage from the same paragraph). Context for the satellite-flaring figures reported elsewhere in the report (238 resolved via the new modeling capability, pp. 3 and 12; 44 UAP-related events in the reporting period, p. 9); the report itself does not reconcile the two counts.
 
 > Civilian pilot estimates of phenomenon altitudes tended to range from 45,000 to 60,000 feet. However, AARO resolved many of these reports as satellite flaring based on their reported characteristics.
 

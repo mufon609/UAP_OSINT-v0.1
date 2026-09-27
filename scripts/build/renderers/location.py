@@ -11,6 +11,7 @@ from lib._common import load_topic
 from ._common import (
     SECTION_SEP,
     _render_blockquote,
+    _render_passage_head,
     _format_period,
     _render_attribution_block,
     _wrap_path,
@@ -183,7 +184,8 @@ def render_top_scope_activity(artifact):
 def render_location_key_passages(artifact):
     """Key Passages section — verbatim excerpts from primary sources
     ABOUT the location. Mirrors render_org_key_passages pattern. H3
-    per quote using `significance` field; block-quote text + per-quote
+    per quote using `significance` field, then any `analysis` paragraph
+    (``_render_passage_head``); block-quote text + per-quote
     verification block. Sorted by `statement_date` with natural-sort
     tie-break on id."""
     quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
@@ -195,9 +197,8 @@ def render_location_key_passages(artifact):
 
     blocks = []
     for q in quotes:
-        h3 = q.get("significance") or "Passage"
         text = (q.get("text") or "").rstrip("\n")
-        lines = [f"### {h3}", ""]
+        lines = _render_passage_head(q, "Passage")
         lines.append(_render_blockquote(text))
         lines.append("")
         lines.append(_render_attribution_block(q, artifact))

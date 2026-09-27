@@ -533,7 +533,9 @@ What is exotic about this matter is that it must have negative energy density an
 
 ---
 
-### Section V Conclusion — the “Going forward” research agenda; first item: small amounts of negative energy are already made in the lab, but it is not yet known whether larger amounts can be accessed over the periods, distances, and distributions needed to engineer a traversable wormhole
+### DIRD #18 (April 6, 2010), Section V Conclusion: small amounts of negative energy are already made in the lab, but it is not yet known whether larger amounts can be accessed.
+
+The “Going forward” research agenda; first item: it is not yet known whether larger amounts can be accessed over the periods, distances, and distributions needed to engineer a traversable wormhole
 
 > Going forward toward the demonstration of a traversable wormhole will require the following:
 >

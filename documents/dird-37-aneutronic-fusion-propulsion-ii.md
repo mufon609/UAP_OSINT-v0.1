@@ -35,7 +35,9 @@ The future technology development of aneutronic fusion propulsion will initially
 
 ## Key Passages
 
-### Establishes the document's provenance — one of the FY 2010 AAWSA Program advanced-technology reports (the DIRD series), prepared by the DIA. The (b)(3):10 USC 424 and (b)(6) redactions mark the program manager / author identities withheld under statute.
+### DIRD #37 (November 1, 2010), front matter: the document is one of the FY 2010 AAWSA Program advanced-technology reports (the DIRD series), prepared by the DIA.
+
+Establishes the document's provenance. The (b)(3):10 USC 424 and (b)(6) redactions mark the program manager / author identities withheld under statute.
 
 > This product is one of a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapons System Applications (AAWSA) Program.
 
@@ -323,7 +325,9 @@ The future technology development of aneutronic fusion propulsion will initially
 
 ---
 
-### The DOE program-mapping finding — the $421M FY2010 fusion budget under the Office of Fusion Energy Sciences, concentrated at Princeton Plasma Physics Lab, MIT, and General Atomics. Names multiple institutions.
+### DIRD #37 (November 1, 2010), "U.S. DOE PROGRAMS": the $421M FY2010 fusion budget under the Office of Fusion Energy Sciences is concentrated at Princeton Plasma Physics Lab, MIT, and General Atomics.
+
+The DOE program-mapping finding. Names multiple institutions.
 
 > The current U.S. Department of Energy fusion program is administered by the Office of Fusion Energy Sciences (http://www.science.doe.gov/ofes/). The FY2010 budget was $421 million, with over half devoted to tokomak plasma physics and experimental facilities at Princeton Plasma Physics Lab, MIT, and General Atomics.
 
@@ -347,7 +351,9 @@ The future technology development of aneutronic fusion propulsion will initially
 
 ---
 
-### Maps the remaining DOE technology funding — $135M to ITER, the NIF funded by NNSA for nuclear-weapons simulation, and NNSA Magneto Target Fusion at Sandia and Lawrence Berkeley National Labs. Dense with institution references.
+### DIRD #37 (November 1, 2010), "U.S. DOE PROGRAMS": the remaining DOE technology funding includes $135M to ITER and NIF funded by NNSA for nuclear-weapons simulation.
+
+Maps the remaining DOE technology funding — $135M to ITER, the NIF funded by NNSA for nuclear-weapons simulation, and NNSA Magneto Target Fusion at Sandia and Lawrence Berkeley National Labs. Dense with institution references.
 
 > Technology development funding is directed toward tokomak-related reactors with $135 million contributed to ITER. The National Ignition Test Facility is funded by DOE's National Nuclear Security Administration and is dedicated for nuclear weapons simulation. The NNSA-funded research also includes Magneto Target Fusion experiments at Sandia and Lawrence Berkeley National Labs.
 

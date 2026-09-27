@@ -49,7 +49,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ## Key Passages
 
-### Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives.
+### OSD OP-5 FY 2023 (2022): the earliest OSD OP-5 IPMO mission statement, in future-tense framing, establishes the original mission framing as IPMO came online in 2022.
+
+The FY 2023 budget submission uses the same mission language as IPMO PWS §1.3 Objectives.
 
 > The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -61,7 +63,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2023 OSD OP-5 documents that a "DoD Issuance Charter for IPMO" was a measurable development metric (FY 2022 = 1, FY 2023 = N/A). Establishes that IPMO Charter authoring was scheduled for FY 2022, even though no corresponding DoDD or DoDI is publicly retrievable as of May 2026.
+### OSD OP-5 FY 2023 (2022): the budget documents that a "DoD Issuance Charter for IPMO" was a measurable development metric (FY 2022 = 1, FY 2023 = N/A).
+
+Establishes that IPMO Charter authoring was scheduled for FY 2022, even though no corresponding DoDD or DoDI is publicly retrievable as of May 2026.
 
 > Develop DoD Issuance Charter for Influence and Perception Management Office.
 
@@ -73,7 +77,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2023 OSD OP-5 sub-office summary bullet for IPMO — frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet; replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing, which persists into the FY 2026 OSD OP-5. Anchors the pre-pivot mission-summary framing.
+### OSD OP-5 FY 2023 (2022): the IPMO sub-office summary bullet frames IPMO as supporting National Defense Strategy requirements for integrating and coordinating influence-related operational capabilities.
+
+The bullet sits in the great-power-competition context. Same wording carried verbatim into the FY 2024 OSD OP-5 sub-office bullet; replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing, which persists into the FY 2026 OSD OP-5. Anchors the pre-pivot mission-summary framing.
 
 > The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
@@ -97,7 +103,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### IPMO mission statement per the IPMO PWS §1.3 Objectives — three core mission elements: (1) thematic influence guidance, (2) competitive influence strategies, (3) gap-filling in policy/oversight/governance/integration. Same mission text recurs verbatim in the FY 2023 OSD OP-5 detailed program description.
+### IPMO PWS §1.3 Objectives (April 25, 2022): IPMO mission statement with three core mission elements — thematic influence guidance, competitive influence strategies, and gap-filling in policy/oversight/governance/integration.
+
+Per the PWS, the elements are (1) thematic influence guidance, (2) competitive influence strategies, (3) gap-filling. Same mission text recurs verbatim in the FY 2023 OSD OP-5 detailed program description.
 
 > The IPMO will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -109,7 +117,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Holly Notre Dame memo establishment paragraph — primary public attestation of IPMO's March 1, 2022 establishment by SecDef and USD(I&S) direction, signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.
+### Holly Notre Dame memo (May 27, 2022): primary public attestation of IPMO's March 1, 2022 establishment by SecDef and USD(I&S) direction.
+
+The memo's establishment paragraph is signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.
 
 > On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception Management Office (IPMO) was established. Among other things, the IPMO is tasked with the development of broad thematic messaging guidance and specific strategies for the execution of DoD activities designed to influence foreign defense-related decision-makers to behave in a manner beneficial to U.S. interests.
 
@@ -121,7 +131,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending HQ003422C0064 description field — the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046). The sister aaro node carries the parallel "AARO SUPPORT SERVICES" description field from USAspending.
+### USAspending award record for HQ003422C0064 (June 9, 2022): the description field marks the first IPMO Support Services contract, awarded to Sancorp Consulting, LLC.
+
+The recipient is Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) ("recipient_name":"SANCORP CONSULTING, LLC"). $3,026,577.70 obligated; signed 2022-06-09; awarded by DoD/Washington Headquarters Services ("name":"Washington Headquarters Services"); set aside as 8(A) Sole Source ("type_set_aside_description":"8(A) SOLE SOURCE"). First of the three sequential IPMO Support Services awards to Sancorp (HQ003422C0064 / HQ003423C0061 / HQ003424C0046). The sister aaro node carries the parallel "AARO SUPPORT SERVICES" description field from USAspending.
 
 > "description":"IPMO SUPPORT SERVICES"
 
@@ -133,7 +145,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO's presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead. Anchors the cluster-membership chronology relevant to the description's "AARO ... established four months after IPMO under the same parent" framing.
+### OSD OP-5 FY 2024 (2023): the sub-office cluster bullet for AARO attests AARO's presence as a sister sub-office under OUSD(I&S) alongside IPMO.
+
+This is the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead. Anchors the cluster-membership chronology relevant to the description's "AARO ... established four months after IPMO under the same parent" framing.
 
 > All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
 
@@ -145,7 +159,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2024 OSD OP-5 sub-office summary bullet for IPMO — verbatim identical to the FY 2023 OSD OP-5 bullet, attesting that the FY 2023 wording carried into FY 2024. Replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing.
+### OSD OP-5 FY 2024 (2023): the IPMO sub-office summary bullet is verbatim identical to the FY 2023 OSD OP-5 bullet, attesting that the FY 2023 wording carried into FY 2024.
+
+Replaced in the FY 2025 OSD OP-5 by the new "center of gravity" framing.
 
 > The Influence and Perception Management Office provides necessary support to National Defense Strategy requirements for integrating, coordinating, and increasing the agility to more effectively leverage and employ a broad scope of operational capabilities to address the current strategic environment of great power competition.
 
@@ -157,7 +173,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope. DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie. Same Key Passage also registered on /organizations/ousd-is for parent-organization context.
+### NSI 23-S-3438 IPMO 101 slides, slide 3 (October 2023): the IPMO Core Efforts bullets are direct primary-source attestation of the four-division mission scope.
+
+DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie. Same Key Passage also registered on /organizations/ousd-is for parent-organization context.
 
 > • Integrated Influence: Develop and promulgate tailored thematic influence guidance focused on key adversaries and specific U.S. defense issues
 > • Perception Management: Develop and execute policy, oversight, and governance related to DoD perception management (reveal/conceal of defense capabilities) programs and activities
@@ -172,7 +190,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Primary attestation that three Secretaries of Defense, under two administrations, signed off on IPMO's establishment, per Holly's October 3, 2023 NSI Speaker Series IPMO 101 talk. Compensates for the absent establishment instrument by attesting senior-level approval, but does not name the three SecDefs or provide the underlying memoranda.
+### NSI Speaker Series page on Holly's IPMO 101 talk (October 3, 2023): primary attestation that three Secretaries of Defense, under two administrations, signed off on IPMO's establishment.
+
+The attestation is per Holly's October 3, 2023 NSI Speaker Series IPMO 101 talk. Compensates for the absent establishment instrument by attesting senior-level approval, but does not name the three SecDefs or provide the underlying memoranda.
 
 > During the years of IPMO's creation, three Secretaries of Defense, under two administrations, signed off on its establishment, underscoring the need for this kind of office.
 
@@ -208,7 +228,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2025 OSD OP-5 — first appearance of the "center of gravity" mission-summary framing for IPMO. Distinct from the FY 2026 OSD OP-5 bullet by syntax ("is the" vs "which is the") and country reference ("America's defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.
+### OSD OP-5 FY 2025 (2024): first appearance of the "center of gravity" mission-summary framing for IPMO.
+
+Distinct from the FY 2026 OSD OP-5 bullet by syntax ("is the" vs "which is the") and country reference ("America's defense-related strategic interests" vs "U.S. defense-related strategic interests"). Establishes that the framing emerged in FY 2025, not FY 2026. Quote truncated at the operational-framing sentence to avoid spanning a mid-bullet page break.
 
 > The Influence and Perception Management Office (IPMO) is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit America's defense-related strategic interests. IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities.
 
@@ -220,7 +242,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2025 OSD OP-5 — first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO. Distinct from earlier future-tense framing in the FY 2023 OSD OP-5; FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into the FY 2026 OSD OP-5.
+### OSD OP-5 FY 2025 (2024): first appearance of the present-tense detailed program description framing ("serves... develops... promulgates... fills") for IPMO.
+
+Distinct from earlier future-tense framing in the FY 2023 OSD OP-5; FY 2024 detailed program description retains the FY 2023 future-tense wording verbatim, so the present-tense pivot is a FY 2025 event. Same wording carried into the FY 2026 OSD OP-5.
 
 > The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -232,7 +256,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Holly's self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO's interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official's surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see Source-Form Notes).
+### Defense One (May 24, 2024): Holly told the May 9, 2024 SOF Week OIE Symposium panel at the Tampa Convention Center that the influence enterprise is "weak, quite frankly."
+
+This is Holly's self-assessment of the U.S. influence-operations enterprise, delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO's interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official's surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see Source-Form Notes).
 
 > "I think the state of this enterprise is weak, quite frankly," James Holly, who leads the defense secretary's year-old Influence and Perception Management Office, told the audience at the SOF Week conference here.
 
@@ -244,7 +270,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 base award (modification_number "0"), type DEFINITIVE CONTRACT, action_date 2024-05-31, action_type null, federal_action_obligation 919478.64. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (May 31, 2024): the base award's description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+Base award (modification_number "0"), type DEFINITIVE CONTRACT, action_date 2024-05-31, action_type null, federal_action_obligation 919478.64.
 
 > "action_date":"2024-05-31","action_type":null,"action_type_description":null,"modification_number":"0","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY OPERATIONS AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":919478.64
 
@@ -256,7 +284,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Base award of HQ003424C0046 (modification 0). Signed 2024-05-31, effective 2024-06-10. The current and ultimate completion dates are both 2024-09-27. The base entry has no reasonForModification element because it is the original award. Every entry names SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) as vendor, WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) as contracting office, IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) as funding/requesting agency, and DEPT OF DEFENSE ([`/organizations/dod`]) as agency.
+### FPDS record for HQ003424C0046 (May 31, 2024): the base award (modification 0) was signed 2024-05-31 and effective 2024-06-10, with current and ultimate completion dates both 2024-09-27.
+
+The base entry has no reasonForModification element because it is the original award. Every entry names SANCORP CONSULTING, LLC ([`/organizations/sancorp-consulting`]) as vendor, WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) as contracting office, IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) as funding/requesting agency, and DEPT OF DEFENSE ([`/organizations/dod`]) as agency.
 
 > <ns1:modNumber>0</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-05-31 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -268,7 +298,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28. The description field reads "PROFESSIONAL SUPPORT SERVICES" and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (September 27, 2024): modification P00001's description field reads "PROFESSIONAL SUPPORT SERVICES" and does not name IPMO.
+
+Modification P00001, action_date 2024-09-27, action type G (EXERCISE AN OPTION), federal_action_obligation 1504601.28.
 
 > "action_date":"2024-09-27","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00001","description":"PROFESSIONAL SUPPORT SERVICES","federal_action_obligation":1504601.28
 
@@ -280,7 +312,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00001 was signed 2024-09-27, the base completion date. It moved the current and ultimate completion dates from 2024-09-27 (base) to 2025-03-27. Its reasonForModification is "EXERCISE AN OPTION" (code G).
+### FPDS record for HQ003424C0046 (September 27, 2024): modification P00001 moved the current and ultimate completion dates from 2024-09-27 (base) to 2025-03-27.
+
+P00001 was signed 2024-09-27, the base completion date. Its reasonForModification is "EXERCISE AN OPTION" (code G).
 
 > <ns1:modNumber>P00001</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -292,7 +326,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.
+### OSD OP-5 FY 2026 (July 7, 2025): the current IPMO mission statement characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts.
+
+Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO's activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
@@ -304,7 +340,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### FY 2026 OSD OP-5 detailed IPMO mission description — present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop"). Confirms IPMO operating posture has stabilized.
+### OSD OP-5 FY 2026 (July 7, 2025): the detailed IPMO mission description is a present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop").
+
+Confirms IPMO operating posture has stabilized.
 
 > The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
 
@@ -316,7 +354,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### The WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names HQ003424C0046 (Sancorp Consulting ([`/organizations/sancorp-consulting`]), the IPMO-support contract) among the incumbent contracts concluding on March 27, 2025, with an anticipated four-month bridge from March 28, 2025, to July 27, 2025. The notice does not name IPMO; the tie to IPMO rests on other sources that identify HQ003424C0046 as the IPMO-support contract.
+### SAM.gov notice of intent TR011720251116 (March 11, 2025): WHS names Sancorp's IPMO-support contract HQ003424C0046 among incumbent contracts concluding on March 27, 2025, with an anticipated four-month bridge.
+
+The WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) names HQ003424C0046 (Sancorp Consulting ([`/organizations/sancorp-consulting`]), the IPMO-support contract) among the incumbent contracts; the anticipated bridge runs from March 28, 2025, to July 27, 2025. The notice does not name IPMO; the tie to IPMO rests on other sources that identify HQ003424C0046 as the IPMO-support contract.
 
 > 4) Award a short-term, sole source extension to the incumbent contractor, Sancorp Consulting, LLC [CAGE Code: 7NZQ9; 3235 Valley Lane, Falls Church, VA 22044-1740]. The Contractor is currently performing services under contract HQ003424C0046, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025.
 
@@ -328,7 +368,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The description field reads "IPMO SUPPORT SERVICES" and names IPMO. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 states that services under contract HQ003424C0046 are concluding.
+### USAspending transaction record for HQ003424C0046 (March 27, 2025): modification P00002's description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+
+Modification P00002, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 1003067.52. The action_date 2025-03-27 is the same date as March 27, 2025, the date on which SAM.gov notice TR011720251116 states that services under contract HQ003424C0046 are concluding.
 
 > "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00002","description":"IPMO SUPPORT SERVICES","federal_action_obligation":1003067.52
 
@@ -340,7 +382,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00002 was signed 2025-03-27, the completion date P00001 had set. It moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116. That link is a date coincidence only; the feed does not name the notice.
+### FPDS record for HQ003424C0046 (March 27, 2025): modification P00002 moved the current and ultimate completion dates from 2025-03-27 (P00001) to 2025-07-27.
+
+P00002 was signed 2025-03-27, the completion date P00001 had set. Its reasonForModification is "CHANGE ORDER" (code D). The 2025-03-27 signing date matches the March 27, 2025 date on which the notice states services are concluding, and the new 2025-07-27 end date matches the July 27, 2025 end of the anticipated bridge period, in SAM.gov notice TR011720251116. That link is a date coincidence only; the feed does not name the notice.
 
 > <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -352,7 +396,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### The requirement description on P00002 names IPMO: "IPMO SUPPORT SERVICES". P00003 and P00004 carry the same description. The base, P00001 and P00005-P00008 entries carry other descriptions. This quote runs from the "CHANGE ORDER" reason line to the requirement line so that it matches only P00002: P00003 and P00004 have "OTHER ADMINISTRATIVE ACTION" as their reason, and P00005 and P00006 (the other CHANGE ORDER entries) have a different requirement description.
+### FPDS record for HQ003424C0046 (March 27, 2025): the requirement description on P00002 names IPMO as "IPMO SUPPORT SERVICES".
+
+P00003 and P00004 carry the same description. The base, P00001 and P00005-P00008 entries carry other descriptions. This quote runs from the "CHANGE ORDER" reason line to the requirement line so that it matches only P00002: P00003 and P00004 have "OTHER ADMINISTRATIVE ACTION" as their reason, and P00005 and P00006 (the other CHANGE ORDER entries) have a different requirement description.
 
 > <ns1:reasonForModification description="CHANGE ORDER">D</ns1:reasonForModification> <ns1:costOrPricingData description="No">N</ns1:costOrPricingData> <ns1:solicitationID>HQ003424R0165</ns1:solicitationID> <ns1:costAccountingStandardsClause description="NOT APPLICABLE EXEMPT FROM CAS">X</ns1:costAccountingStandardsClause> <ns1:descriptionOfContractRequirement>IPMO SUPPORT SERVICES</ns1:descriptionOfContractRequirement>
 
@@ -364,7 +410,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+### USAspending transaction record for HQ003424C0046 (April 10, 2025): modification P00003's description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+
+Modification P00003, action_date 2025-04-10, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0.
 
 > "action_date":"2025-04-10","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00003","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
 
@@ -376,7 +424,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00003 was signed 2025-04-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00002. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+### FPDS record for HQ003424C0046 (April 10, 2025): under modification P00003 the current and ultimate completion dates stay at 2025-07-27, unchanged from P00002.
+
+P00003 was signed 2025-04-10. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
 
 > <ns1:modNumber>P00003</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -388,7 +438,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+### USAspending transaction record for HQ003424C0046 (April 11, 2025): modification P00004's description field reads "IPMO SUPPORT SERVICES" and names IPMO.
+
+Modification P00004, action_date 2025-04-11, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0.
 
 > "action_date":"2025-04-11","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"IPMO SUPPORT SERVICES","federal_action_obligation":0.0
 
@@ -400,7 +452,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00004 was signed 2025-04-11. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00003. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
+### FPDS record for HQ003424C0046 (April 11, 2025): under modification P00004 the current and ultimate completion dates stay at 2025-07-27, unchanged from P00003.
+
+P00004 was signed 2025-04-11. Its reasonForModification is "OTHER ADMINISTRATIVE ACTION" (code M).
 
 > <ns1:modNumber>P00004</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-04-11 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -412,7 +466,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24 (a deobligation). The description field returns to a non-IPMO description, "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" (comma-punctuated, unlike the base award form) and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (July 10, 2025): modification P00005 is a deobligation, and its description field returns to a non-IPMO description that does not name IPMO.
+
+Modification P00005, action_date 2025-07-10, action type D (CHANGE ORDER), federal_action_obligation -9766.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" (comma-punctuated, unlike the base award form).
 
 > "action_date":"2025-07-10","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00005","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":-9766.24
 
@@ -424,7 +480,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00005 was signed 2025-07-10. The current and ultimate completion dates stay at 2025-07-27, unchanged from P00004, so P00005 did not extend the contract. Its reasonForModification is "CHANGE ORDER" (code D).
+### FPDS record for HQ003424C0046 (July 10, 2025): modification P00005 did not extend the contract; the current and ultimate completion dates stay at 2025-07-27, unchanged from P00004.
+
+P00005 was signed 2025-07-10. Its reasonForModification is "CHANGE ORDER" (code D).
 
 > <ns1:modNumber>P00005</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-10 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -436,7 +494,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (July 25, 2025): modification P00006's description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+Modification P00006, action_date 2025-07-25, action type D (CHANGE ORDER), federal_action_obligation 501533.76.
 
 > "action_date":"2025-07-25","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00006","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":501533.76
 
@@ -448,7 +508,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00006 moved the currentCompletionDate and ultimateCompletionDate from 2025-07-27 (P00005) to 2026-05-27. This is the modification that extended HQ003424C0046 to 2026-05-27. It was signed 2025-07-25, two days before the 2025-07-27 completion date then in force. Its reasonForModification is "CHANGE ORDER" (code D).
+### FPDS record for HQ003424C0046 (July 25, 2025): modification P00006 is the one that extended HQ003424C0046 to 2026-05-27.
+
+P00006 moved the currentCompletionDate and ultimateCompletionDate from 2025-07-27 (P00005) to 2026-05-27. It was signed 2025-07-25, two days before the 2025-07-27 completion date then in force. Its reasonForModification is "CHANGE ORDER" (code D).
 
 > <ns1:modNumber>P00006</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-07-25 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -460,7 +522,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (September 2, 2025): modification P00007's description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+Modification P00007, action_date 2025-09-02, action type C (FUNDING ONLY ACTION), federal_action_obligation 1833006.24.
 
 > "action_date":"2025-09-02","action_type":"C","action_type_description":"FUNDING ONLY ACTION","modification_number":"P00007","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":1833006.24
 
@@ -472,7 +536,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00007 was signed 2025-09-02. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00006. Its reasonForModification is "FUNDING ONLY ACTION" (code C).
+### FPDS record for HQ003424C0046 (September 2, 2025): under modification P00007 the current and ultimate completion dates stay at 2026-05-27, unchanged from P00006.
+
+P00007 was signed 2025-09-02. Its reasonForModification is "FUNDING ONLY ACTION" (code C).
 
 > <ns1:modNumber>P00007</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-09-02 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -496,7 +562,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### USAspending transaction record for HQ003424C0046 modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0. The description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+### USAspending transaction record for HQ003424C0046 (March 4, 2026): modification P00008's description field reads "SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES" and does not name IPMO.
+
+Modification P00008, action_date 2026-03-04, action type B (SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE), federal_action_obligation 11280.0.
 
 > "action_date":"2026-03-04","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00008","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES","federal_action_obligation":11280.0
 
@@ -508,7 +576,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### P00008 is the last entry in the feed. It was signed 2026-03-04. The current and ultimate completion dates stay at 2026-05-27, unchanged from P00007. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).
+### FPDS record for HQ003424C0046 (March 4, 2026): P00008, the last entry in the feed, leaves the current and ultimate completion dates at 2026-05-27, unchanged from P00007.
+
+P00008 was signed 2026-03-04; the completion dates stay at 2026-05-27. Its reasonForModification is "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE" (code B).
 
 > <ns1:modNumber>P00008</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2026-03-04 00:00:00</ns1:signedDate> <ns1:effectiveDate>2024-06-10 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2026-05-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2026-05-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -520,7 +590,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
-### As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records totalObligatedAmount 5763201.20 (with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20) on HQ003424C0046. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic.
+### FPDS record for HQ003424C0046, P00008 entry (March 4, 2026): FPDS records totalObligatedAmount 5763201.20 on HQ003424C0046, with the base-and-options values also 5763201.20.
+
+As of P00008 (signed 2026-03-04), FPDS ([`/organizations/fpds`]) records this total, with totalBaseAndExercisedOptionsValue and totalBaseAndAllOptionsValue also 5763201.20. This total is later than the USAspending award record snapshot (last_modified_date 2025-09-02), whose total_obligation is 5751921.2; the P00008 entry has obligatedAmount 11280.00 (USAspending P00008 federal_action_obligation 11280.0). The contracting office is WASHINGTON HEADQUARTERS SERVICES ([`/organizations/whs`]) (HQ0034; agency 97F5, WASHINGTON HEADQUARTERS SERVICES (WHS), DEPT OF DEFENSE ([`/organizations/dod`])). The funding/requesting agency is IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE ([`/organizations/osd`]) (97AD), and the funding/requesting office is "OSD OUSD(I)" ([`/organizations/ousd-is`]) (HQ0208); the source form is preserved as sic.
 
 > <ns1:totalObligatedAmount>5763201.20</ns1:totalObligatedAmount> <ns1:totalBaseAndExercisedOptionsValue>5763201.20</ns1:totalBaseAndExercisedOptionsValue> <ns1:totalBaseAndAllOptionsValue>5763201.20</ns1:totalBaseAndAllOptionsValue></ns1:totalDollarValues> <ns1:purchaserInformation> <ns1:contractingOfficeAgencyID name="WASHINGTON HEADQUARTERS SERVICES (WHS)" departmentID="9700" departmentName="DEPT OF DEFENSE">97F5</ns1:contractingOfficeAgencyID> <ns1:contractingOfficeID name="WASHINGTON HEADQUARTERS SERVICES" country="USA">HQ0034</ns1:contractingOfficeID> <ns1:fundingRequestingAgencyID name="IMMEDIATE OFFICE OF THE SECRETARY OF DEFENSE" departmentID="9700" departmentName="DEPT OF DEFENSE">97AD</ns1:fundingRequestingAgencyID> <ns1:fundingRequestingOfficeID name="OSD OUSD(I)">HQ0208</ns1:fundingRequestingOfficeID>
 

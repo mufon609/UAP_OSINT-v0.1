@@ -82,7 +82,8 @@ quotes:
   source:
     path: government/dird-21-hfgw-communications-20100406.pdf
     location: 'Prepared by / Author block'
-  significance: Provenance block; preparing component withheld [(b)(3):10 USC 424], Author withheld [(b)(6)] — authorship is extrinsic (DIA AAWSAP products list → Dr. Robert M L Baker, Jr. / GravWave). Bracketed redaction markers preserved verbatim.
+  significance: 'HFGW Communications DIRD, author block (April 6, 2010): the preparing component is withheld [(b)(3):10 USC 424] and the Author withheld [(b)(6)].'
+  analysis: 'This is the provenance block; authorship is extrinsic (DIA AAWSAP products list → Dr. Robert M L Baker, Jr. / GravWave). Bracketed redaction markers preserved verbatim.'
   statement_date: '2010-04-06'
 - id: q5
   added_date: '2026-06-06'
@@ -99,7 +100,8 @@ quotes:
   source:
     path: government/dird-21-hfgw-communications-20100406.pdf
     location: 'Administrative Note'
-  significance: 'Program-provenance: FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series; Program Manager withheld [(b)(3):10 USC 424:(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.'
+  significance: 'HFGW Communications DIRD, Administrative Note (April 6, 2010): the report belongs to the FY 2009 DIA Advanced Aerospace Weapon System Applications (AAWSA) Program series.'
+  analysis: 'Program-provenance: Program Manager withheld [(b)(3):10 USC 424:(b)(6)]. Anchors the document to the AAWSAP DIRD corpus. Bracketed redaction markers preserved verbatim.'
   statement_date: '2010-04-06'
 - id: q7
   added_date: '2026-06-06'

@@ -52,7 +52,9 @@ The military has been interested in the assessment of the state of readiness of 
 
 ---
 
-### Provenance block; preparing entity withheld [(b)(3):10 USC 424], Author withheld [(b)(6)] — attribution is extrinsic (DIA AAWSA products list → Dr. Bruce Towe, University of Arizona). Bracketed redaction markers preserved verbatim.
+### DIRD #20 (March 31, 2010), provenance block: the preparing entity is withheld [(b)(3):10 USC 424] and the Author withheld [(b)(6)].
+
+Attribution is extrinsic (DIA AAWSA products list → Dr. Bruce Towe, University of Arizona). Bracketed redaction markers preserved verbatim.
 
 > Prepared by:
 >
@@ -84,7 +86,9 @@ The military has been interested in the assessment of the state of readiness of 
 
 ---
 
-### Program-provenance: FY 2009 DIA AAWSA Program series; Program Manager withheld [(b)(3):10 USC 424;(b)(6)]. Bracketed redaction markers preserved verbatim.
+### DIRD #20 (March 31, 2010), Administrative Note: the program provenance is the FY 2009 DIA AAWSA Program series, with the Program Manager withheld [(b)(3):10 USC 424;(b)(6)].
+
+Program-provenance. Bracketed redaction markers preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2009 under the Defense Intelligence Agency, [(b)(3):10 USC 424] Advanced Aerospace Weapon System Applications (AAWSA) Program. Comments or questions pertaining to this document should be addressed to [(b)(3):10 USC 424;(b)(6)], AAWSA Program Manager, Defense Intelligence Agency, ATTN: [(b)(3):10 USC 424] Bldg 6000, Washington, DC 20340-5100.
 

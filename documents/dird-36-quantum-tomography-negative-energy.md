@@ -253,7 +253,9 @@ The Balanced Homodyne Systems section introduces two experimental approaches. Th
 
 ---
 
-### The first formal recommendation: an R&D program to modify and commercialize a portable time-domain BHD device for mapping negative-energy regions of a pulsed/"AC" negative-energy generator. The "sic" of "in order provide" is preserved.
+### Quantum Tomography DIRD, Conclusion (January 11, 2011): the first formal recommendation is an R&D program to modify and commercialize a portable time-domain BHD device.
+
+The device would be for mapping negative-energy regions of a pulsed/"AC" negative-energy generator. The "sic" of "in order provide" is preserved.
 
 > We recommend that a research and development program be implemented to modify the design and operation of the time-domain BHD device in order provide this important data. It will be necessary to develop and commercialize a portable time-domain BHD device for the purpose of detecting, measuring, and spatially mapping the sub-vacuum (negative) energy regions produced by a putative pulsed (or "AC") negative energy generator that might be used for engineering the spacetime surrounding an aerospace platform for propulsion purposes.
 
@@ -301,7 +303,9 @@ The Balanced Homodyne Systems section introduces two experimental approaches. Th
 
 ---
 
-### Names the two contributing academics — Ulf Leonhardt and Piotr Marecki — whose lecture notes, references, and experimental data the report draws on. An authorship-network signal.
+### Quantum Tomography DIRD, Acknowledgements (January 11, 2011): the report names the two contributing academics, Ulf Leonhardt and Piotr Marecki, whose lecture notes, references, and experimental data it draws on.
+
+An authorship-network signal.
 
 > The author would like to thank Professors Ulf Leonhardt and Piotr Marecki for contributing their lecture notes, references, and experimental data to the contents of this report.
 

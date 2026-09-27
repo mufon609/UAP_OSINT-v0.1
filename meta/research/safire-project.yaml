@@ -76,7 +76,8 @@ quotes:
   source:
     path: news/safireproject-genesis-snapshot.html
     location: '¶4'
-  significance: Childs's stated foundational concept for SAFIRE — distilling the Electric Sun Model to a process between charged plasma and matter at different electrical potential. Page attributes this directly to Childs by name.
+  significance: 'SAFIRE Project genesis page (2012): Childs''s stated foundational concept for SAFIRE is distilling the Electric Sun Model to a process between charged plasma and matter at different electrical potential.'
+  analysis: 'Page attributes this directly to Childs by name.'
   context: 'SAFIRE Project corporate genesis page; quote attributed verbatim to Montgomery Childs'
   statement_date: '2012'
 - id: q3
@@ -106,7 +107,8 @@ quotes:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶3'
-  significance: Childs's official roles per the SAFIRE Project's own corporate team page — Founder of Aureon Energy Ltd., and principal scientist and chief engineer of the SAFIRE Project. Names Mainwaring brothers as the original supporters.
+  significance: 'SAFIRE Project team page (2012): Childs is Founder of Aureon Energy Ltd., and principal scientist and chief engineer of the SAFIRE Project.'
+  analysis: 'These are Childs''s official roles per the SAFIRE Project''s own corporate team page. Names Mainwaring brothers as the original supporters.'
   context: 'SAFIRE Project corporate team page, safireproject.com/about-us/team.html'
   statement_date: '2012'
 - id: q6
@@ -125,7 +127,8 @@ quotes:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶17'
-  significance: Talbott's role as the inviter — Talbott invited Monty to propose his SAFIRE idea at the 2012 EU Conference, the originating venue. Verbatim contains source typo "empircal" preserved per source-form discipline.
+  significance: 'SAFIRE Project team page (2012): Talbott invited Monty to propose his SAFIRE idea at the 2012 EU Conference, the originating venue.'
+  analysis: 'This is Talbott''s role as the inviter. Verbatim contains source typo "empircal" preserved per source-form discipline.'
   context: 'SAFIRE Project corporate team page'
   statement_date: '2012'
 - id: q8
@@ -153,7 +156,8 @@ quotes:
   source:
     path: news/safireproject-phase-three-snapshot.html
     location: '¶7'
-  significance: Project's stated counter-thermonuclear-model finding — that the core of SAFIRE is cooler than its surrounding atmosphere [sic 'atmoshere'], and electron density comparable to the photosphere [sic 'photoshpere'], heliosphere and nuclear bombs. Verbatim preserves source typos.
+  significance: 'SAFIRE Project Phase Three page (retrieved May 7, 2026): the project''s stated counter-thermonuclear-model finding is that the core of SAFIRE is cooler than its surrounding atmosphere [sic ''atmoshere''].'
+  analysis: 'The finding also covers electron density comparable to the photosphere [sic ''photoshpere''], heliosphere and nuclear bombs. Verbatim preserves source typos.'
   context: 'SAFIRE Project Phase Three page, stated discoveries section'
 - id: q11
   added_date: '2026-05-07'
@@ -172,7 +176,8 @@ quotes:
   source:
     path: news/safireproject-commercialization-snapshot.html
     location: '¶3'
-  significance: Project's own statement of the research-to-commercial transition — successfully completing the original Electric Sun test mandate and pivoting to commercial plasma reactor production. Verbatim preserves source typo "succesfully" [sic].
+  significance: 'SAFIRE Project commercialization page (retrieved May 7, 2026): the project''s own statement of the research-to-commercial transition, successfully completing the original Electric Sun test mandate and pivoting to commercial plasma reactor production.'
+  analysis: 'Verbatim preserves source typo "succesfully" [sic].'
   context: 'SAFIRE Project commercialization page'
 - id: q13
   added_date: '2026-05-07'
@@ -208,7 +213,8 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: '¶8'
-  significance: Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense ([`/organizations/dod`]) as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
+  significance: 'Aureon Energy team page (retrieved May 7, 2026): Aureon Energy''s self-attestation that Paul Anderson works for the United States Department of Defense as a lead scientist on next-generation explosive and propellant systems.'
+  analysis: 'Anderson is Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead; his stated employer is the United States Department of Defense ([`/organizations/dod`]). Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.'
   context: 'Aureon Energy corporate team page'
 - id: q17
   added_date: '2026-05-07'
@@ -239,7 +245,8 @@ quotes:
   source:
     path: news/safireproject-genesis-report-20180223.pdf
     location: 'p. 10'
-  significance: Primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment"). Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
+  significance: 'SAFIRE PROJECT Genesis report (self-published, copyright 2017): primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment").'
+  analysis: 'Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.'
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published; cover photo dated June 15, 2016'
 - id: q20
   added_date: '2026-05-07'
@@ -250,7 +257,8 @@ quotes:
   source:
     path: news/safireproject-genesis-report-20180223.pdf
     location: 'p. 10'
-  significance: Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
+  significance: 'SAFIRE PROJECT Genesis report (self-published, copyright 2017): the Mainwaring Archive Foundation promised funding for an initial test, to be administered by the International Science Foundation.'
+  analysis: 'Primary-source attestation of the project''s funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.'
   context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published'
 - id: q21
   added_date: '2026-05-07'
@@ -285,7 +293,8 @@ quotes:
   source:
     path: news/safireproject-phase-two-report.pdf
     location: 'p. 3'
-  significance: SAFIRE Phase II reactor primary dimensions — stainless-steel cylinder four feet in diameter and seven feet long. Self-attested in the Phase Two report.
+  significance: 'SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE Phase II reactor primary dimensions, a stainless-steel cylinder four feet in diameter and seven feet long.'
+  analysis: 'Self-attested in the Phase Two report.'
   context: 'SAFIRE PROJECT Phase Two report'
 - id: q24
   added_date: '2026-05-07'
@@ -296,7 +305,8 @@ quotes:
   source:
     path: news/safireproject-phase-two-report.pdf
     location: 'p. 14'
-  significance: SAFIRE Phase II power supply specification — 200 kW DC. Self-attested in the Phase Two report.
+  significance: 'SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE Phase II power supply specification of 200 kW DC.'
+  analysis: 'Self-attested in the Phase Two report.'
   context: 'SAFIRE PROJECT Phase Two report'
 - id: q25
   added_date: '2026-05-07'
@@ -305,7 +315,8 @@ quotes:
   source:
     path: news/safireproject-phase-two-report.pdf
     location: 'p. 19'
-  significance: SAFIRE engine parts-count attestation (40,000 parts). Self-attested in the Phase Two report.
+  significance: 'SAFIRE PROJECT Phase Two report (copyright 2017): self-attested SAFIRE engine parts-count attestation of 40,000 parts.'
+  analysis: 'Self-attested in the Phase Two report.'
   context: 'SAFIRE PROJECT Phase Two report'
 - id: q26
   added_date: '2026-05-22'
@@ -332,7 +343,8 @@ quotes:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶7'
-  significance: Multi-disciplinary core-team role of Leighton MacMillan per the SAFIRE Project's own team page. Verbatim preserves source spelling "millright".
+  significance: 'SAFIRE Project team page (retrieved May 7, 2026): Leighton MacMillan''s multi-disciplinary core-team role, per the SAFIRE Project''s own team page.'
+  analysis: 'Verbatim preserves source spelling "millright".'
   context: 'SAFIRE Project corporate team page, core team listing'
 - id: q29
   added_date: '2026-05-22'
@@ -350,7 +362,8 @@ quotes:
   source:
     path: news/safireproject-team-snapshot.html
     location: '¶10'
-  significance: Core-team chemist role of Paul Anderson per the SAFIRE Project's own team page — Design of Experiments, chemical studies, statistical analysis and modeling. Complements the Aureon-page attestation of Anderson's DoD lead-scientist role.
+  significance: 'SAFIRE Project team page (retrieved May 7, 2026): Paul Anderson''s core-team chemist role covers Design of Experiments, chemical studies, statistical analysis and modeling.'
+  analysis: 'This is Anderson''s role per the SAFIRE Project''s own team page. Complements the Aureon-page attestation of Anderson''s DoD lead-scientist role.'
   context: 'SAFIRE Project corporate team page, core team listing'
 - id: q31
   added_date: '2026-05-22'
@@ -460,7 +473,8 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: 'Jan Onderco bio ¶'
-  significance: Aureon Energy's self-attestation of Jan Onderco's SAFIRE tenure and contribution — since 2014, at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. Establishes the 2014 start and the SCADA/data-engine specialization.
+  significance: 'Aureon Energy team page (2014): Aureon Energy''s self-attestation that Jan Onderco has contributed to the SAFIRE project since 2014 at Aurtas International in Mississauga, designing SCADA systems and data transformation engines.'
+  analysis: 'The self-attestation of Jan Onderco''s SAFIRE tenure and contribution covers designing and developing SCADA systems and data transformation engines for physics research. Establishes the 2014 start and the SCADA/data-engine specialization.'
   context: 'Aureon Energy corporate team page, Jan Onderco senior-scientist bio'
   statement_date: '2014'
 - id: q43
@@ -470,7 +484,8 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: 'Jason Lickver bio ¶'
-  significance: Aureon Energy's self-attestation that Jason Lickver has been a driving force behind the SAFIRE Team since 2014 and served as Senior Design Engineer on SAFIRE II and III. Establishes the 2014 start and the SAFIRE II/III design-engineer role.
+  significance: 'Aureon Energy team page (2014): Aureon Energy''s self-attestation that Jason Lickver has been a driving force behind the SAFIRE Team since 2014 and served as Senior Design Engineer on SAFIRE II and III.'
+  analysis: 'Establishes the 2014 start and the SAFIRE II/III design-engineer role.'
   context: 'Aureon Energy corporate team page, Jason Lickver VP-engineering bio'
   statement_date: '2014'
 - id: q44
@@ -489,7 +504,8 @@ quotes:
   source:
     path: news/aureonenergy-team-snapshot.html
     location: 'Paul Anderson bio ¶'
-  significance: Aureon Energy's self-attestation of Paul Anderson's credentials — 4 patents, 18 peer-reviewed publications, over 40 government technical reports, IEEE and NDIA membership, and a Ph.D. in Physical Chemistry from Northeastern University. Complements Anderson's DoD lead-scientist role on the same page.
+  significance: 'Aureon Energy team page (retrieved May 7, 2026): Aureon Energy''s self-attestation of Paul Anderson''s credentials, including 4 patents, 18 peer-reviewed publications and a Ph.D. in Physical Chemistry from Northeastern University.'
+  analysis: 'The credentials also include over 40 government technical reports and IEEE and NDIA membership. Complements Anderson''s DoD lead-scientist role on the same page.'
   context: 'Aureon Energy corporate team page, Dr. Paul Anderson VP-experiments bio'
 - id: q46
   added_date: '2026-05-22'

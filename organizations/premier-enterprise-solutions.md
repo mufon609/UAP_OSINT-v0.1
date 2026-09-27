@@ -60,7 +60,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ## Key Passages
 
-### USAspending transaction record for the HQ003422C0127 base award (modification_number "0", type DEFINITIVE CONTRACT), action_date 2022-09-28, action_type null, federal_action_obligation 1061911.68. The description reads "PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES".
+### USAspending transaction record for HQ003422C0127 (September 28, 2022): the base award obligated 1061911.68, and the description reads "PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES".
+
+The base award is modification_number "0", type DEFINITIVE CONTRACT, with action_date 2022-09-28, action_type null, and federal_action_obligation 1061911.68.
 
 > "action_date":"2022-09-28","action_type":null,"action_type_description":null,"modification_number":"0","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":1061911.68
 
@@ -96,7 +98,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00001, action_date 2022-12-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 53229.6. Its description reads "COS SUPPORT" — the first transaction on the contract whose description differs from the base award's services phrase.
+### USAspending transactions for HQ003422C0127 (December 6, 2022): modification P00001 is the first transaction on the contract whose description, "COS SUPPORT", differs from the base award's services phrase.
+
+Modification P00001 has action_date 2022-12-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 53229.6. Its description reads "COS SUPPORT".
 
 > "action_date":"2022-12-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00001","description":"COS SUPPORT","federal_action_obligation":53229.6
 
@@ -108,7 +112,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00001, signed December 6, 2022; reason for modification "OTHER ADMINISTRATIVE ACTION". The current completion date stays September 27, 2023. The ultimate completion date is recorded as September 27, 2024 (base award: September 27, 2023).
+### FPDS record for HQ003422C0127 (December 6, 2022): in modification P00001 the current completion date stays September 27, 2023 and the ultimate completion date is recorded as September 27, 2024.
+
+P00001 was signed December 6, 2022; reason for modification "OTHER ADMINISTRATIVE ACTION". The ultimate completion date on the base award was September 27, 2023.
 
 > <ns1:modNumber>P00001</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2022-12-06 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -132,7 +138,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00002, signed January 20, 2023; reason for modification "FUNDING ONLY ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+### FPDS record for HQ003422C0127 (January 20, 2023): modification P00002, a "FUNDING ONLY ACTION", leaves both completion dates unchanged.
+
+P00002 was signed January 20, 2023; reason for modification "FUNDING ONLY ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
 
 > <ns1:modNumber>P00002</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-01-20 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -156,7 +164,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00003, signed March 9, 2023; reason for modification "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+### FPDS record for HQ003422C0127 (March 9, 2023): modification P00003, a "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE", leaves both completion dates unchanged.
+
+P00003 was signed March 9, 2023; reason for modification "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
 
 > <ns1:modNumber>P00003</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-03-09 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -168,7 +178,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00004, action_date 2023-05-16, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. Its description extends the base services phrase with "FOR CHIEF OF STAFF SUPPORT". The record does not say which organization's Chief of Staff.
+### USAspending transactions for HQ003422C0127 (May 16, 2023): modification P00004's description extends the base services phrase with "FOR CHIEF OF STAFF SUPPORT".
+
+Modification P00004 has action_date 2023-05-16, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The record does not say which organization's Chief of Staff.
 
 > "action_date":"2023-05-16","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00004","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES FOR CHIEF OF STAFF SUPPORT","federal_action_obligation":0.0
 
@@ -180,7 +192,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00004, signed May 16, 2023; reason for modification "OTHER ADMINISTRATIVE ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
+### FPDS record for HQ003422C0127 (May 16, 2023): modification P00004, an "OTHER ADMINISTRATIVE ACTION", leaves both completion dates unchanged.
+
+P00004 was signed May 16, 2023; reason for modification "OTHER ADMINISTRATIVE ACTION". Current completion date September 27, 2023 and ultimate completion date September 27, 2024 (both unchanged).
 
 > <ns1:modNumber>P00004</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-05-16 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2023-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -192,7 +206,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### The only Premier-naming passage in the HQ003423C0061 award notice. The Description prose names Premier Enterprise Solutions, LLC as the recipient of the IPMO support-services 8(a) direct award, but the same notice's structured Awardee field names Sancorp Consulting, LLC. The notice contradicts itself and does not attest a Premier IPMO contract.
+### SAM.gov award notice for HQ003423C0061 (May 25, 2023): the Description prose names Premier Enterprise Solutions, LLC for the IPMO 8(a) direct award, but the notice's own Awardee field names Sancorp Consulting, LLC.
+
+This is the only Premier-naming passage in the HQ003423C0061 award notice. The Description prose names Premier Enterprise Solutions, LLC as the recipient of the IPMO support-services 8(a) direct award, but the same notice's structured Awardee field names Sancorp Consulting, LLC. The notice contradicts itself and does not attest a Premier IPMO contract.
 
 > Washington Headquarters Services/Acquisition Directorate (WHS/AD) awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO.
 
@@ -216,7 +232,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00005, action_date 2023-07-31, action type G (EXERCISE AN OPTION), federal_action_obligation 1642189.03 — the largest single obligation in the transaction list. Description unchanged from the base award.
+### USAspending transactions for HQ003422C0127 (July 31, 2023): modification P00005 exercises an option with federal_action_obligation 1642189.03, the largest single obligation in the transaction list.
+
+Modification P00005 has action_date 2023-07-31, action type G (EXERCISE AN OPTION). Description unchanged from the base award.
 
 > "action_date":"2023-07-31","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00005","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":1642189.03
 
@@ -228,7 +246,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00005, signed July 31, 2023; reason for modification "EXERCISE AN OPTION". It moves the current completion date from September 27, 2023 to September 27, 2024. The ultimate completion date is September 27, 2024.
+### FPDS record for HQ003422C0127 (July 31, 2023): modification P00005 exercises an option and moves the current completion date from September 27, 2023 to September 27, 2024.
+
+P00005 was signed July 31, 2023; reason for modification "EXERCISE AN OPTION". The ultimate completion date is September 27, 2024.
 
 > <ns1:modNumber>P00005</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-07-31 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -240,7 +260,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00006, signed August 29, 2023. Current and ultimate completion dates September 27, 2024 (unchanged).
+### FPDS record for HQ003422C0127 (August 29, 2023): modification P00006 leaves the current and ultimate completion dates at September 27, 2024.
+
+P00006 was signed August 29, 2023. Current and ultimate completion dates September 27, 2024 (unchanged).
 
 > <ns1:modNumber>P00006</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2023-08-29 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2024-09-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -252,7 +274,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00008, action_date 2024-09-28, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. P00008's description spells out CHIEF OF STAFF (COS); P00001 and P00011 read "COS SUPPORT". The record does not say which organization's Chief of Staff. P00008 carries the same action_date as P00007 and precedes it in the file's ordering.
+### USAspending transactions for HQ003422C0127 (September 28, 2024): modification P00008's description spells out CHIEF OF STAFF (COS), where P00001 and P00011 read "COS SUPPORT".
+
+Modification P00008 has action_date 2024-09-28, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation 0.0. The record does not say which organization's Chief of Staff. P00008 carries the same action_date as P00007 and precedes it in the file's ordering.
 
 > "action_date":"2024-09-28","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00008","description":"PROCESS IMPROVEMENT, INNOVATION AND TRAINING SUPPORT SERVICES FOR THE CHIEF OF STAFF (COS)","federal_action_obligation":0.0
 
@@ -264,7 +288,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00007, action_date 2024-09-28, action type G (EXERCISE AN OPTION), federal_action_obligation 750616.7; description unchanged from the base award. This is the second option exercise in the list.
+### USAspending transactions for HQ003422C0127 (September 28, 2024): modification P00007, the second option exercise in the list, obligates 750616.7.
+
+Modification P00007 has action_date 2024-09-28, action type G (EXERCISE AN OPTION), federal_action_obligation 750616.7; description unchanged from the base award.
 
 > "action_date":"2024-09-28","action_type":"G","action_type_description":"EXERCISE AN OPTION","modification_number":"P00007","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":750616.7
 
@@ -276,7 +302,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00007, signed September 28, 2024; reason for modification "EXERCISE AN OPTION". The current completion date is recorded as September 28, 2024, and the ultimate completion date moves from September 27, 2024 to March 27, 2025.
+### FPDS record for HQ003422C0127 (September 28, 2024): modification P00007 exercises an option and moves the ultimate completion date from September 27, 2024 to March 27, 2025.
+
+P00007 was signed September 28, 2024; reason for modification "EXERCISE AN OPTION". The current completion date is recorded as September 28, 2024.
 
 > <ns1:modNumber>P00007</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-28 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2024-09-28 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -288,7 +316,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00008, signed September 28, 2024 (the same day as P00007); reason for modification "OTHER ADMINISTRATIVE ACTION". It moves the current completion date to March 27, 2025. The ultimate completion date is March 27, 2025.
+### FPDS record for HQ003422C0127 (September 28, 2024): modification P00008, signed the same day as P00007, moves the current completion date to March 27, 2025.
+
+P00008 was signed September 28, 2024 (the same day as P00007); reason for modification "OTHER ADMINISTRATIVE ACTION". The ultimate completion date is March 27, 2025.
 
 > <ns1:modNumber>P00008</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2024-09-28 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -300,7 +330,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00009, action_date 2025-02-20, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5145.28 (a deobligation). The description is the base services phrase without the comma after "INNOVATION".
+### USAspending transactions for HQ003422C0127 (February 20, 2025): modification P00009 is a deobligation of -5145.28.
+
+Modification P00009 has action_date 2025-02-20, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5145.28. The description is the base services phrase without the comma after "INNOVATION".
 
 > "action_date":"2025-02-20","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00009","description":"PROCESS IMPROVEMENT, INNOVATION AND TRAINING SUPPORT SERVICES","federal_action_obligation":-5145.28
 
@@ -312,7 +344,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00009, signed February 20, 2025; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates March 27, 2025 (unchanged).
+### FPDS record for HQ003422C0127 (February 20, 2025): modification P00009 leaves the current and ultimate completion dates at March 27, 2025.
+
+P00009 was signed February 20, 2025; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates March 27, 2025 (unchanged).
 
 > <ns1:modNumber>P00009</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-02-20 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -336,7 +370,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### WHS names Premier Enterprise Solutions, LLC as incumbent on HQ003422C0127 and announces a four-month sole-source bridge (March 28 to July 27, 2025) under FAR 6.302-1. The notice also records the firm's CAGE code (6RM79) and its Upper Marlboro, MD address.
+### SAM.gov notice TR011720251116 (March 11, 2025): WHS names Premier Enterprise Solutions, LLC as incumbent on HQ003422C0127 and announces a four-month sole-source bridge (March 28 to July 27, 2025) under FAR 6.302-1.
+
+The notice also records the firm's CAGE code (6RM79) and its Upper Marlboro, MD address.
 
 > 5) Award a short-term, sole source extension to the incumbent contractor, Premier Enterprise Solutions, LLC [CAGE Code: 6RM79; 9701 Apollo Drive, Ste 410, Upper Marlboro, MD 20774-4791]. The Contractor is currently performing services under contract HQ003422C0127, with services concluding on March 27, 2025. The anticipated period of performance for the bridge contracts is for four months, from March 28, 2025, to July 27, 2025. The anticipated award will be made under the authority of Federal Acquisition Regulation (FAR) 6.302-1(a)(2)(iii)(A), Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements.
 
@@ -348,7 +384,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### States the scope of work Premier and the other four incumbents perform for OUSD(I&S): technical, administrative and professional support services. It also frames the bridges as interim, pending award under a newly established OUSD(I&S) Enterprise Blanket Purchase Agreement.
+### SAM.gov notice TR011720251116 (March 11, 2025): Premier and the other four incumbents perform technical, administrative and professional support services for OUSD(I&S).
+
+The notice states the scope of work Premier and the other four incumbents perform for OUSD(I&S). It also frames the bridges as interim, pending award under a newly established OUSD(I&S) Enterprise Blanket Purchase Agreement.
 
 > These Contractors are required to provide technical, administrative and professional support services to the OUSD(I&amp;S) Enterprise requirements. Currently, the Government has established an Enterprise Blanket Purchase Agreement for OUSD (I&amp;S), and the requirements are going through the procurement process for award.
 
@@ -384,7 +422,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00010, signed March 11, 2025; reason for modification "FUNDING ONLY ACTION". Current and ultimate completion dates are still March 27, 2025. It is the last modification before P00011.
+### FPDS record for HQ003422C0127 (March 11, 2025): modification P00010, a "FUNDING ONLY ACTION" and the last modification before P00011, keeps both completion dates at March 27, 2025.
+
+P00010 was signed March 11, 2025; reason for modification "FUNDING ONLY ACTION". Current and ultimate completion dates are still March 27, 2025.
 
 > <ns1:modNumber>P00010</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-11 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-03-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-03-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -408,7 +448,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00011, action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 535315.2, description "COS SUPPORT". It is the only change order in the transaction list. The transaction record carries no period-of-performance dates, so it does not show what period this obligation covers.
+### USAspending transactions for HQ003422C0127 (March 27, 2025): modification P00011, the only change order in the transaction list, obligates 535315.2 for "COS SUPPORT".
+
+Modification P00011 has action_date 2025-03-27, action type D (CHANGE ORDER), federal_action_obligation 535315.2, description "COS SUPPORT". The transaction record carries no period-of-performance dates, so it does not show what period this obligation covers.
 
 > "action_date":"2025-03-27","action_type":"D","action_type_description":"CHANGE ORDER","modification_number":"P00011","description":"COS SUPPORT","federal_action_obligation":535315.2
 
@@ -420,7 +462,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00011, signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". It moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025. The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry's competition block gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.
+### FPDS record for HQ003422C0127 (March 27, 2025): change order P00011 moves the current and ultimate completion dates from March 27, 2025 to July 27, 2025, matching the end of the sole-source extension in notice TR011720251116.
+
+P00011 was signed March 27, 2025 (the prior completion date); reason for modification "CHANGE ORDER". The new end date coincides with the end of the sole-source extension announced in SAM.gov notice TR011720251116. The P00011 entry does not reference notice TR011720251116; the link rests only on the matching dates. The entry's competition block gives the not-competed authority as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)) with set-aside 8(A) SOLE SOURCE, while the notice states that the anticipated bridge award will be made under FAR 6.302-1(a)(2)(iii)(A). The records disagree on the stated authority; neither record explains the difference.
 
 > <ns1:modNumber>P00011</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2025-03-27 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -432,7 +476,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### The P00011 entry records reason not competed "AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))" and set-aside "8(A) SOLE SOURCE" (extent competed "NOT AVAILABLE FOR COMPETITION", solicitation procedures "ONLY ONE SOURCE"). SAM.gov notice TR011720251116 cites FAR 6.302-1(a)(2)(iii)(A) for the anticipated bridge. Neither record explains the difference.
+### FPDS record for HQ003422C0127 (March 27, 2025): the P00011 entry records reason not competed "AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))" and set-aside "8(A) SOLE SOURCE".
+
+The entry also records extent competed "NOT AVAILABLE FOR COMPETITION" and solicitation procedures "ONLY ONE SOURCE". SAM.gov notice TR011720251116 cites FAR 6.302-1(a)(2)(iii)(A) for the anticipated bridge. Neither record explains the difference.
 
 > <ns1:competition> <ns1:extentCompeted description="NOT AVAILABLE FOR COMPETITION">B</ns1:extentCompeted> <ns1:solicitationProcedures description="ONLY ONE SOURCE">SSS</ns1:solicitationProcedures> <ns1:typeOfSetAside description="8(A) SOLE SOURCE">8AN</ns1:typeOfSetAside> <ns1:typeOfSetAsideSource description="This Action">F</ns1:typeOfSetAsideSource> <ns1:evaluatedPreference description="NO PREFERENCE USED">NONE</ns1:evaluatedPreference> <ns1:reasonNotCompeted description="AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))">OTH</ns1:reasonNotCompeted> <ns1:numberOfOffersReceived>1</ns1:numberOfOffersReceived> <ns1:numberOfOffersSource description="This Action">F</ns1:numberOfOffersSource> <ns1:commercialItemAcquisitionProcedures description="COMMERCIAL PRODUCTS/SERVICES PROCEDURES NOT USED">D</ns1:commercialItemAcquisitionProcedures> <ns1:commercialItemTestProgram description="NO">N</ns1:commercialItemTestProgram> <ns1:A76Action description="NO">N</ns1:A76Action> <ns1:fedBizOpps description="YES">Y</ns1:fedBizOpps> <ns1:localAreaSetAside description="NO">N</ns1:localAreaSetAside> <ns1:priceEvaluationPercentDifference>0.00</ns1:priceEvaluationPercentDifference></ns1:competition> <ns1:preferencePrograms> <ns1:subcontractPlan description="PLAN NOT REQUIRED">B</ns1:subcontractPlan></ns1:preferencePrograms> <ns1:transactionInformation> <ns1:createdBy>SYREETA.A.DONALD.CIV.HQ0034@MAIL.MIL</ns1:createdBy> <ns1:createdDate>2025-03-27 21:52:14</ns1:createdDate>
 
@@ -480,7 +526,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Aggregate estimate across all BPAs under the RFQ, not a Premier-specific value. The USAspending record for Premier's BPA HQ003425A0003 separately records base_and_all_options of 1856000000.0; the two figures carry different labels and neither source relates one to the other.
+### GAO decision B-422985.4/.5 (June 11, 2025): the "good faith estimate amount" of $856 million is an aggregate estimate across all BPAs under the RFQ, not a Premier-specific value.
+
+The USAspending record for Premier's BPA HQ003425A0003 separately records base_and_all_options of 1856000000.0; the two figures carry different labels and neither source relates one to the other.
 
 > The “good faith estimate amount” for all BPAs is $856 million.
 
@@ -624,7 +672,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### GAO records that WHS received quotations from nine vendors under RFQ HQ003424R0178 by the July 17 deadline. This conflicts with the HQ003425F0105 USAspending award record, which reports number_of_offers_received "1" for the same solicitation.
+### GAO decision B-422985.4/.5 (June 11, 2025): GAO records nine vendor quotations under RFQ HQ003424R0178 by the July 17 deadline, which conflicts with the one offer USAspending reports.
+
+WHS received quotations from nine vendors under the RFQ. This conflicts with the HQ003425F0105 USAspending award record, which reports number_of_offers_received "1" for the same solicitation.
 
 > The agency received quotations from nine vendors by the July 17, deadline for receipt of quotations. Contracting Officer’s Statement and Memorandum of Law (COS/MOL) at 5.
 
@@ -648,7 +698,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### HQ003425F0105 modification P00004 (2025-07-25): SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE, obligation 177411.83. First transaction whose description names the customer: OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE. Every later transaction carries the same description.
+### USAspending transactions for HQ003425F0105 (July 25, 2025): modification P00004, a SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE with obligation 177411.83, is the first transaction whose description names the customer.
+
+The modification is dated 2025-07-25. The description reads: OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY, PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE. Every later transaction carries the same description.
 
 > "action_date":"2025-07-25","action_type":"B","action_type_description":"SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE","modification_number":"P00004","description":"OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY  PROFESSIONAL, TECHNICAL AND ADMINISTRATIVE SUPPORT TO THE EXECUTIVE DIRECTORATE","federal_action_obligation":177411.83
 
@@ -696,7 +748,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Stated purpose of the BPA: technical, administrative and professional support services to the OUSD(I&S) Enterprise. The source description carries an unbalanced parenthesis ("(OUSD (I&S) ENTERPRISE"), preserved verbatim.
+### USAspending record for BPA HQ003425A0003 (February 12, 2026): the stated purpose of the BPA is technical, administrative and professional support services to the OUSD(I&S) Enterprise.
+
+The source description carries an unbalanced parenthesis ("(OUSD (I&S) ENTERPRISE"), preserved verbatim.
 
 > "description":"TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE & SECURITY (OUSD (I&S) ENTERPRISE"
 
@@ -708,7 +762,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### BPA signed 2025-02-14; base_and_all_options recorded as 1856000000.0; total_obligation on the BPA record itself 0.0; no subawards. The record does not say whether the base-and-all-options figure is a per-vendor ceiling or an aggregate. The GAO decision in B-422985.4/.5 separately gives a "good faith estimate amount" of $856 million for all BPAs under RFQ HQ003424R0178; the two figures carry different labels, neither source relates one to the other, and they are not treated as a contradiction.
+### USAspending record for BPA HQ003425A0003 (February 12, 2026): the BPA was signed 2025-02-14, with base_and_all_options recorded as 1856000000.0, total_obligation 0.0 and no subawards.
+
+The total_obligation of 0.0 is on the BPA record itself. The record does not say whether the base-and-all-options figure is a per-vendor ceiling or an aggregate. The GAO decision in B-422985.4/.5 separately gives a "good faith estimate amount" of $856 million for all BPAs under RFQ HQ003424R0178; the two figures carry different labels, neither source relates one to the other, and they are not treated as a contradiction.
 
 > "total_obligation":0.0,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2025-02-14","base_exercised_options":null,"base_and_all_options":1856000000.0
 
@@ -828,7 +884,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Business categories recorded for Premier: 8(a) Program Participant; Black American Owned; DoT Certified Disadvantaged Business Enterprise; Economically Disadvantaged Women Owned Small Business; LLC; Minority Owned; Self-Certified Small Disadvantaged Business; Service Disabled Veteran Owned; Small Business; U.S.-Owned; Veteran Owned; Woman Owned; Women Owned Small Business.
+### USAspending record for BPA HQ003425A0003 (February 12, 2026): the business categories recorded for Premier include 8(a) Program Participant, Service Disabled Veteran Owned, and Women Owned Small Business.
+
+Business categories recorded for Premier: 8(a) Program Participant; Black American Owned; DoT Certified Disadvantaged Business Enterprise; Economically Disadvantaged Women Owned Small Business; LLC; Minority Owned; Self-Certified Small Disadvantaged Business; Service Disabled Veteran Owned; Small Business; U.S.-Owned; Veteran Owned; Woman Owned; Women Owned Small Business.
 
 > "business_categories":["8(a) Program Participant","Black American Owned Business","Category Business","Corporate Entity Not Tax Exempt","DoT Certified Disadvantaged Business Enterprise","Economically Disadvantaged Women Owned Small Business","Limited Liability Corporation","Minority Owned Business","Self-Certified Small Disadvantaged Business","Service Disabled Veteran Owned Business","Small Business","Special Designations","U.S.-Owned Business","Veteran Owned Business","Woman Owned Business","Women Owned Small Business"]
 
@@ -948,7 +1006,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Solicitation HQ003424R0178; one offer received; 8(a) competed set-aside. The GAO decision in B-422985.4/.5 states that the agency received quotations from nine vendors under the same RFQ and reports reevaluation results for Sancorp and Premier on call order 1; neither source explains the difference, and both are kept as published.
+### USAspending award record for HQ003425F0105 (April 23, 2026): solicitation HQ003424R0178 shows one offer received and an 8(a) competed set-aside.
+
+The GAO decision in B-422985.4/.5 states that the agency received quotations from nine vendors under the same RFQ and reports reevaluation results for Sancorp and Premier on call order 1; neither source explains the difference, and both are kept as published.
 
 > "solicitation_identifier":"HQ003424R0178","solicitation_procedures":"SP1","number_of_offers_received":"1","extent_competed":"F","type_set_aside":"8A","type_set_aside_description":"8A COMPETED"
 
@@ -1152,7 +1212,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)). SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value. Neither record explains the difference; both are kept as published.
+### USAspending award record for HQ003422C0127 (May 6, 2026): awarded as ONLY ONE SOURCE, NOT AVAILABLE FOR COMPETITION, with the other-than-full-and-open authority recorded as AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)).
+
+SAM.gov notice TR011720251116 states that the anticipated bridge extension of HQ003422C0127 will be made under FAR 6.302-1(a)(2)(iii)(A). This record gives AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I)), and the FPDS entry for P00011 gives the same FAR 6.302-5(A)(2)(I) value. Neither record explains the difference; both are kept as published.
 
 > "solicitation_procedures_description":"ONLY ONE SOURCE","extent_competed_description":"NOT AVAILABLE FOR COMPETITION","other_than_full_and_open":"OTH","other_than_full_and_open_description":"AUTHORIZED BY STATUTE (FAR 6.302-5(A)(2)(I))"
 
@@ -1224,7 +1286,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Performance 2022-09-28 to 2025-07-27; potential end 2025-07-27; record last modified 2026-05-06. SAM.gov notice TR011720251116 names Premier as incumbent on HQ003422C0127 with services concluding on March 27, 2025, and announces a bridge from March 28, 2025, to July 27, 2025. The award record's end_date and potential_end_date (2025-07-27) match the bridge end date announced in the notice.
+### USAspending award record for HQ003422C0127 (May 6, 2026): performance runs 2022-09-28 to 2025-07-27, matching the bridge end date announced in SAM.gov notice TR011720251116.
+
+The potential end is 2025-07-27; the record was last modified 2026-05-06. SAM.gov notice TR011720251116 names Premier as incumbent on HQ003422C0127 with services concluding on March 27, 2025, and announces a bridge from March 28, 2025, to July 27, 2025. The award record's end_date and potential_end_date (2025-07-27) match the bridge end date announced in the notice.
 
 > "period_of_performance":{"start_date":"2022-09-28","end_date":"2025-07-27","last_modified_date":"2026-05-06","potential_end_date":"2025-07-27 00:00:00"}
 
@@ -1260,7 +1324,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Recipient address 9701 APOLLO DRIVE SUITE 410, Upper Marlboro, Prince George's County, Maryland 20774-4791. The HQ003425F0105 award record writes the same street address as "9701 APOLLO DR STE 410".
+### USAspending award record for HQ003422C0127 (May 6, 2026): the recipient address is 9701 APOLLO DRIVE SUITE 410, Upper Marlboro, Prince George's County, Maryland 20774-4791.
+
+The HQ003425F0105 award record writes the same street address as "9701 APOLLO DR STE 410".
 
 > "location":{"location_country_code":"USA","country_name":"UNITED STATES","state_code":"MD","state_name":"MARYLAND","city_name":"UPPER MARLBORO","county_code":"033","county_name":"PRINCE GEORGE'S","address_line1":"9701 APOLLO DRIVE SUITE 410","address_line2":null,"address_line3":null,"congressional_code":"04","zip4":"4791","zip5":"20774"
 
@@ -1284,7 +1350,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Modification P00012, action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5000.0 (a deobligation); description unchanged from the base award. It is the last transaction in the list.
+### USAspending transactions for HQ003422C0127 (May 6, 2026): modification P00012, the last transaction in the list, is a deobligation of -5000.0.
+
+Modification P00012 has action_date 2026-05-06, action type M (OTHER ADMINISTRATIVE ACTION), federal_action_obligation -5000.0; description unchanged from the base award.
 
 > "action_date":"2026-05-06","action_type":"M","action_type_description":"OTHER ADMINISTRATIVE ACTION","modification_number":"P00012","description":"PROCESS IMPROVEMENT, INNOVATION, AND TRAINING SUPPORT SERVICES","federal_action_obligation":-5000.0
 
@@ -1296,7 +1364,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### P00012, signed May 6, 2026; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates stay at July 27, 2025.
+### FPDS record for HQ003422C0127 (May 6, 2026): modification P00012 keeps the current and ultimate completion dates at July 27, 2025.
+
+P00012 was signed May 6, 2026; reason for modification "OTHER ADMINISTRATIVE ACTION". Current and ultimate completion dates stay at July 27, 2025.
 
 > <ns1:modNumber>P00012</ns1:modNumber> <ns1:transactionNumber>0</ns1:transactionNumber></ns1:awardContractID></ns1:awardID> <ns1:relevantContractDates> <ns1:signedDate>2026-05-06 00:00:00</ns1:signedDate> <ns1:effectiveDate>2022-09-28 00:00:00</ns1:effectiveDate> <ns1:currentCompletionDate>2025-07-27 00:00:00</ns1:currentCompletionDate> <ns1:ultimateCompletionDate>2025-07-27 00:00:00</ns1:ultimateCompletionDate></ns1:relevantContractDates>
 
@@ -1600,7 +1670,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Four OASIS+ contract numbers across SB, WOSB, SDVOSB, and 8(a) pools; qualified in the Management and Advisory domain. Also self-attests SBA WOSB, SDVOSB, and 8(a) certifications.
+### Premier's About page (captured September 26, 2026): self-attested list of four OASIS+ contract numbers across SB, WOSB, SDVOSB, and 8(a) pools, qualified in the Management and Advisory domain.
+
+The page also self-attests SBA WOSB, SDVOSB, and 8(a) certifications.
 
 > Premier was awarded four separate OASIS+ MACs and qualified in the Management and Advisory (M&A) domain.    Small Business (SB): 47QRCA25DSD70  SBA-Certified Women-Owned Small Business (WOSB): 47QRCA24DW247  SBA-Certified Service-Disabled Veteran-Owned Small Business (SDVOSB): 47QRCA24DV299  SBA-Certified 8(a) Small Business (8a): 47QRCA25DA083
 
@@ -1714,7 +1786,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### The USAspending award record for PIID HQ003423C0061 names SANCORP CONSULTING, LLC (UEI GRYKNJ8BGFC8) as recipient, with the same entity as parent recipient. It agrees with the Awardee field of the SAM.gov award notice for HQ003423C0061 and contradicts that notice's Description prose, which names Premier Enterprise Solutions, LLC. This record does not name Premier anywhere.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): the recipient is SANCORP CONSULTING, LLC (UEI GRYKNJ8BGFC8), and the record does not name Premier anywhere.
+
+The record gives the same entity as parent recipient. It agrees with the Awardee field of the SAM.gov award notice for HQ003423C0061 and contradicts that notice's Description prose, which names Premier Enterprise Solutions, LLC.
 
 > "recipient_name":"SANCORP CONSULTING, LLC","recipient_uei":"GRYKNJ8BGFC8","recipient_unique_id":null,"parent_recipient_hash":"153a11b0-8299-0b9d-ae16-ca5cfde7d7fc-P","parent_recipient_name":"SANCORP CONSULTING, LLC","parent_recipient_uei":"GRYKNJ8BGFC8"
 
@@ -1725,7 +1799,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Award identity: PIID HQ003423C0061, a definitive contract with no parent vehicle. Its description repeats the service title in the SAM.gov notice Description (specialized and sensitive administrative, policy, operations, and analytic support services). The record does not name the IPMO.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): the award identity is a definitive contract with no parent vehicle, described as specialized and sensitive administrative, policy, operations, and analytic support services.
+
+Its description repeats the service title in the SAM.gov notice Description. The record does not name the IPMO.
 
 > "generated_unique_award_id":"CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-","piid":"HQ003423C0061","category":"contract","type":"D","type_description":"DEFINITIVE CONTRACT","description":"SPECIALIZED AND SENSITIVE ADMINISTRATIVE, POLICY, OPERATIONS, AND ANALYTIC SUPPORT SERVICES"
 
@@ -1736,7 +1812,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Solicitation HQ003423R0148 is the same solicitation number the SAM.gov award notice for HQ003423C0061 carries, which ties this record to that notice. One offer received; 8(a) sole source, consistent with the notice's "8(a) direct award" wording.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): solicitation HQ003423R0148, one offer received, 8(a) sole source.
+
+Solicitation HQ003423R0148 is the same solicitation number the SAM.gov award notice for HQ003423C0061 carries, which ties this record to that notice. One offer received; 8(a) sole source, consistent with the notice's "8(a) direct award" wording.
 
 > "solicitation_identifier":"HQ003423R0148","solicitation_procedures":"SSS","number_of_offers_received":"1","extent_competed":"B","type_set_aside":"8AN","type_set_aside_description":"8(A) SOLE SOURCE"
 
@@ -1758,7 +1836,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Signed 2023-05-25, the same date as the notice's Award Date. Total obligation and base-and-all-options are both 3021082.38; no subawards; total_account_obligation -380379.82. The SAM.gov notice's Award Amount is 4181853.92, a figure this record does not show.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): signed 2023-05-25, the same date as the notice's Award Date, with total obligation 3021082.38.
+
+Total obligation and base-and-all-options are both 3021082.38; no subawards; total_account_obligation -380379.82. The SAM.gov notice's Award Amount is 4181853.92, a figure this record does not show.
 
 > "total_obligation":3021082.38,"subaward_count":0,"total_subaward_amount":null,"date_signed":"2023-05-25","base_exercised_options":3021082.38,"base_and_all_options":3021082.38,"total_account_outlay":0.0,"total_account_obligation":-380379.82
 
@@ -1791,7 +1871,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Awarding agency for HQ003423C0061: Department of Defense, subtier and office Washington Headquarters Services (WHS). This is the contracting office named in the SAM.gov notice.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): the awarding agency is Department of Defense, with subtier and office Washington Headquarters Services (WHS).
+
+This is the contracting office named in the SAM.gov notice.
 
 > "awarding_agency":{"id":1231,"has_agency_page":true,"toptier_agency":{"name":"Department of Defense","code":"097","abbreviation":"DOD","slug":"department-of-defense"},"subtier_agency":{"name":"Washington Headquarters Services","code":"97F5","abbreviation":"WHS"},"office_agency_name":"WASHINGTON HEADQUARTERS SERVICES"}
 
@@ -1802,7 +1884,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Recipient address: 3235 Valley Ln, Falls Church, Fairfax County, Virginia 22044-1740. It matches the "VA 22044-1740" in the SAM.gov notice's Awardee field, not Premier's Upper Marlboro, Maryland address.
+### USAspending award record for PIID HQ003423C0061 (last modified July 16, 2025): the recipient address is 3235 Valley Ln, Falls Church, Fairfax County, Virginia 22044-1740.
+
+It matches the "VA 22044-1740" in the SAM.gov notice's Awardee field, not Premier's Upper Marlboro, Maryland address.
 
 > "location":{"location_country_code":"USA","country_name":"UNITED STATES","state_code":"VA","state_name":"VIRGINIA","city_name":"FALLS CHURCH","county_code":"059","county_name":"FAIRFAX","address_line1":"3235 VALLEY LN","address_line2":null,"address_line3":null,"congressional_code":"08","zip4":"1740","zip5":"22044"
 
@@ -1846,7 +1930,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier publishes on its own homepage a testimonial it attributes to "Air National Guard". This is a self-attested client relationship. No individual is named, and the page gives no contract, date or corroboration.
+### Premier homepage (captured September 26, 2026): Premier publishes on its own homepage a self-attested testimonial it attributes to "Air National Guard".
+
+This is a self-attested client relationship. No individual is named, and the page gives no contract, date or corroboration.
 
 > "I send sincere gratitude for the professional support, exemplary performance and dedication of the Premier Team. The team meticulously assisted to ensure accuracy, completion and timely submission." Air National Guard
 
@@ -1858,7 +1944,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier publishes a testimonial it attributes to a "Department of Defense" "Project Director". This is a self-attested client relationship. No individual or component is named.
+### Premier homepage (captured September 26, 2026): Premier publishes a self-attested testimonial it attributes to a "Department of Defense" "Project Director".
+
+This is a self-attested client relationship. No individual or component is named.
 
 > "I could not be happier with the team and the product produced, despite being early on departures. I am very appreciative of the caliber of people you hire." Department of Defense Project Director
 
@@ -1870,7 +1958,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier publishes a testimonial it attributes to a "TMF" "Project Director". "TMF" and "NPIs" are not expanded anywhere on the page, so they are kept in source form.
+### Premier homepage (captured September 26, 2026): Premier publishes a testimonial it attributes to a "TMF" "Project Director" reporting "51% bi-directional engagement of NPIs".
+
+"TMF" and "NPIs" are not expanded anywhere on the page, so they are kept in source form.
 
 > “We are up to 51% bi-directional engagement of NPIs, which is outstanding! We really appreciate the work Premier is doing for us.” TMF Project Director
 
@@ -1882,7 +1972,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier publishes a testimonial from an unnamed "Large Telecommunications Industry Partner". The partner says Premier supports "my customer", which describes a teaming or subcontract arrangement. The partner is not identified.
+### Premier homepage (captured September 26, 2026): Premier publishes a testimonial from an unnamed "Large Telecommunications Industry Partner" saying Premier supports "my customer".
+
+The partner says Premier supports "my customer", which describes a teaming or subcontract arrangement. The partner is not identified.
 
 > "Premier Enterprise Solutions, LLC is a professional, loyal business partner providing superior service. I am proud to have them directly interface with and support my customer." Large Telecommunications Industry Partner
 
@@ -1894,7 +1986,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier publishes a testimonial it attributes to a "Veteran Affairs" "Project Lead". This is a self-attested client relationship. The page uses the source form "Veteran Affairs" and never writes "Veterans Affairs".
+### Premier homepage (captured September 26, 2026): Premier publishes a self-attested testimonial it attributes to a "Veteran Affairs" "Project Lead".
+
+This is a self-attested client relationship. The page uses the source form "Veteran Affairs" and never writes "Veterans Affairs".
 
 > "My Functionals have expressed how ‘crazy smart’ you guys are and appreciate what you are bringing to the table…  so Thank You!!!!” Veteran Affairs Project Lead
 
@@ -1906,7 +2000,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### In its own voice, the company lists three business designations: SDVOSB, WOSB/EDWOSB, and "MDOT MBE Certification". The page does not expand MDOT.
+### Premier homepage (captured September 26, 2026): in its own voice, the company lists three business designations: SDVOSB, WOSB/EDWOSB, and "MDOT MBE Certification".
+
+The page does not expand MDOT.
 
 > Business Designations SDVOSB WOSB/EDWOSB MDOT MBE Certification
 
@@ -1978,7 +2074,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier's own Budget Analyst III posting (Position Overview) states that the role supports the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)). It defines the function as subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
+### Premier's Indeed posting "Budget Analyst III" (captured September 25, 2026): the role supports the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)).
+
+Premier's own Budget Analyst III posting (Position Overview) states this. It defines the function as subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
 
 > Premier Enterprise Solutions is seeking a highly skilled Budget Analyst to support the Office of the Under Secretary of Defense for Intelligence & Security (OUSD(I&S)). This role provides subject matter expertise in PPBE, financial management, budget formulation, budget execution, acquisition support, and resource management.
 
@@ -2014,7 +2112,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Premier Enterprise Solutions recruits an Innovation Governance SME to support the Chief Technology Officer (CTO) of the office the posting names as "Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S))". The long form says "Defense"; the acronym says "OUSW". Both are preserved verbatim.
+### Premier's Indeed posting "Innovation Governance SME Support" (captured September 25, 2026): Premier Enterprise Solutions recruits an Innovation Governance SME to support the Chief Technology Officer (CTO) of "OUSW (I&S)".
+
+The posting names the office as "Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S))". The long form says "Defense"; the acronym says "OUSW". Both are preserved verbatim.
 
 > Premier Enterprise Solutions is seeking an Innovation Governance SME to provide expert-level advisory support to senior leaders including the support of the Office of the Under Secretary of Defense for Intelligence & Security (OUSW (I&S)) Chief Technology Officer (CTO).
 
@@ -2038,7 +2138,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Responsibilities: staff packages and technical mission integration within "DoW" and across the IC and Defense Community; CATMS tasks; executive summaries of OUSW (l&S) governance forums. "OUSW (l&S)" carries a lowercase "l" in place of "I"; the lowercase "executive" sentence start is also verbatim.
+### Premier's Indeed posting "Innovation Governance SME Support" (captured September 25, 2026): responsibilities include staff packages and technical mission integration within "DoW" and across the IC and Defense Community.
+
+Responsibilities also include CATMS tasks and executive summaries of OUSW (l&S) governance forums. "OUSW (l&S)" carries a lowercase "l" in place of "I"; the lowercase "executive" sentence start is also verbatim.
 
 > Develop staff packages and integrate technical mission efforts within DoW and across the IC and Defense Community. Respond to CATMS tasks. executive summaries of OUSW (l&S) governance forums.
 
@@ -2050,7 +2152,9 @@ The Description in a SAM.gov award notice for HQ003423C0061, published in SAMDai
 
 ---
 
-### Responsibilities: analyze intelligence-related activities against the National Defense Strategy and the priorities of the "Secretary of War and Undersecretary of War for Intelligence and Security"; the posting uses the titles "Secretary of War" and "Undersecretary of War for Intelligence and Security" (with "Undersecretary" as one word).
+### Premier's Indeed posting "Innovation Governance SME Support" (captured September 25, 2026): responsibilities: analyze intelligence-related activities against the National Defense Strategy and the priorities of the "Secretary of War and Undersecretary of War for Intelligence and Security".
+
+The posting uses the titles "Secretary of War" and "Undersecretary of War for Intelligence and Security" (with "Undersecretary" as one word).
 
 > Analyze intelligence related activities against the National Defense Strategy and the priorities of the Secretary of War and Undersecretary of War for Intelligence and Security.
 

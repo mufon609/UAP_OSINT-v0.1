@@ -94,7 +94,9 @@ Other things in the article: Geller's role in knocking out radar stations ahead 
 
 ---
 
-### Geller's account of Shaham's death in the West Bank and the subsequent summons to a Tel Aviv meeting by Aharon Yariv (Aman chief 1964-1972) — primary self-attestation of the recruitment chain Shaham → Meir Amit → Aharon Yariv that Web's handoff identified as the load-bearing Israeli-intelligence claim from this source
+### Tablet Magazine, "The Spy Who Bent a Million Spoons" (June 3, 2015): in primary self-attestation, Geller recounts Shaham's death in the West Bank and a subsequent summons to a Tel Aviv meeting by Aharon Yariv.
+
+Aharon Yariv was Aman chief 1964-1972. Geller's account is primary self-attestation of the recruitment chain Shaham → Meir Amit → Aharon Yariv that Web's handoff identified as the load-bearing Israeli-intelligence claim from this source
 
 > And Shaham promised more, but before Geller finished his IDF service, Shaham, a commander in the paratroopers, was killed in the West Bank. "That shattered me," Geller said. "I knew that I had lost my chance. But what I didn't know was that he had spoken with intelligence chiefs Meir Amit and Aharon Yariv about me. Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on."
 
@@ -142,7 +144,9 @@ Other things in the article: Geller's role in knocking out radar stations ahead 
 
 ---
 
-### Geller's account of the encounter with Golda Meir at a general's house party — Geller asked Meir to draw something in the restroom and reproduce it via telepathy; the encounter that preceded Meir's next-day Israeli-radio remark that Geller calls the beginning of his career
+### Tablet Magazine, "The Spy Who Bent a Million Spoons" (June 3, 2015): Geller's account of the encounter with Golda Meir at a general's house party, where he asked Meir to draw something in the restroom and reproduce it via telepathy.
+
+The encounter preceded Meir's next-day Israeli-radio remark that Geller calls the beginning of his career
 
 > I walked up to her and handed her a marker. I told her 'Golda, go to the restroom, close the door, draw something, don't show it to anyone, get out, look in my eyes, and I'll draw it.' I'm the only person who ever sent the prime minister to the toilet!
 

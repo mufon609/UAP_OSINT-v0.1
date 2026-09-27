@@ -33,7 +33,9 @@ The focus of this study is on aneutronic fusion propulsion, and integral to the 
 
 ## Key Passages
 
-### Provenance statement placing the document as a FY2010 AAWSA Program advanced technology report under DIA — the institutional sponsorship anchor. The face spells the program "(AAWSA) Program" (no trailing "P"); the (b)(3):10 USC 424 redaction is preserved verbatim.
+### DIRD #30 (November 1, 2010), Administrative Notes: the provenance statement places the document as a FY2010 AAWSA Program advanced technology report under DIA.
+
+Provenance statement placing the document as a FY2010 AAWSA Program advanced technology report under DIA — the institutional sponsorship anchor. The face spells the program "(AAWSA) Program" (no trailing "P"); the (b)(3):10 USC 424 redaction is preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program.
 

@@ -35,7 +35,9 @@ Non-baryonic cold dark matter tends to accumulate near the center of galaxies, p
 
 ## Key Passages
 
-### The document's thesis statement — asserts negative masses exist and are ubiquitous but "imprisoned" by positive masses, and that propulsion use turns on a technical means of freeing them. Frames the whole monograph's propulsion claim.
+### DIRD #29 (January 3, 2011), Summary: the thesis statement asserts negative masses exist but are "imprisoned" by positive masses, and that propulsion use turns on a technical means of freeing them.
+
+The document's thesis statement — asserts negative masses exist and are ubiquitous but "imprisoned" by positive masses. Frames the whole monograph's propulsion claim.
 
 > It is easy to prove that there are negative masses all around us, albeit hidden behind positive masses. But their use for propulsion by reducing the inertia of matter, for example in the limit of macroscopic bodies with zero rest mass, depends on a technical solution to free them from their imprisonment by positive masses.
 
@@ -59,7 +61,9 @@ Non-baryonic cold dark matter tends to accumulate near the center of galaxies, p
 
 ---
 
-### The document's central operational proposal — boring a tunnel through the Moon with thermonuclear shape charges to mine accumulated negative matter, asserted to "revolutionize interstellar space flight." The load-bearing applied claim.
+### DIRD #29 (January 3, 2011), Summary: the document's central operational proposal is boring a tunnel through the Moon with thermonuclear shape charges to mine accumulated negative matter.
+
+The proposal is asserted to "revolutionize interstellar space flight." The load-bearing applied claim.
 
 > Now it just happens that the center of the moon is a potential well, not too deep that it cannot be reached by making a tunnel through the moon, not possible for the deeper potential well of the earth, where the temperature and pressure are too high. Making a tunnel through the moon, provided there is a good supply of negative mass, could revolutionize interstellar space flight. A sequence of thermonuclear shape charges would be required to make such a tunnel technically feasible.
 
@@ -95,7 +99,9 @@ Non-baryonic cold dark matter tends to accumulate near the center of galaxies, p
 
 ---
 
-### First-person authorial footnote — the author recounts personally meeting Hermann Bondi in 1993 and challenging Bondi's negative-mass dipole solution. Establishes the author's voice and his direct engagement with Bondi's work (the byline is redacted (b)(6); this footnote is the author speaking in first person).
+### DIRD #29 (January 3, 2011), section 2 footnote: in a first-person authorial footnote, the author recounts personally meeting Hermann Bondi in 1993 and challenging Bondi's negative-mass dipole solution.
+
+Establishes the author's voice and his direct engagement with Bondi's work (the byline is redacted (b)(6); this footnote is the author speaking in first person).
 
 > The author had the pleasure to meet Prof. Bondi on a common flight from Graz, Austria in 1993 (we both are members of an academy which had a meeting in that year in Graz), and ask him how his solution can be correct since it does not include the field of the positive gravitational field mass of a mass dipole.
 
@@ -107,7 +113,9 @@ Non-baryonic cold dark matter tends to accumulate near the center of galaxies, p
 
 ---
 
-### The document's bottom-line conclusion — rejects the Forward-style runaway mass-dipole drive as unlikely, redirecting to the ultra-light-matter route. The self-citation "(but also see Winterberg [17])" reveals authorship.
+### DIRD #29 (January 3, 2011), Conclusion: the bottom-line conclusion rejects the Forward-style runaway mass-dipole drive as unlikely, redirecting to the ultra-light-matter route.
+
+The document's bottom-line conclusion. The self-citation "(but also see Winterberg [17])" reveals authorship.
 
 > The purpose of this study is the question as to whether negative mass might exist, and if negative mass propulsion is possible at all. It is unlikely to be possible in the fashion speculated by Forward [13] (but also see Winterberg [17]), where a negative mass is chasing a positive mass without the expenditure of any energy.
 
@@ -131,7 +139,9 @@ Non-baryonic cold dark matter tends to accumulate near the center of galaxies, p
 
 ---
 
-### Provenance statement placing the document in the FY2010 AAWSAP DIRD series under DIA — the institutional sponsorship anchor. Redaction (b)(3):10 USC 424 preserved verbatim.
+### DIRD #29 (January 3, 2011), Administrative Notes: the provenance statement places the document in the FY2010 AAWSAP DIRD series under DIA.
+
+Provenance statement placing the document in the FY2010 AAWSAP DIRD series under DIA — the institutional sponsorship anchor. Redaction (b)(3):10 USC 424 preserved verbatim.
 
 > This product is one in a series of advanced technology reports produced in FY 2010 under the Defense Intelligence Agency, (b)(3):10 USC 424 Advanced Aerospace Weapon System Applications (AAWSA) Program.
 

@@ -35,7 +35,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ## Key Passages
 
-### Document title — establishes the markup as OUSD(I&S) "Informal views" on Division G of S. 2226 (the FY24 NDAA Senate bill which carried the Schumer-Rounds UAPDA as Division G). The "informal views" framing positions the document as an executive-branch review submitted to congressional negotiators, not a formal legislative response.
+### OUSD(I&S) UAPDA markup (November 2023): the document title establishes the markup as OUSD(I&S) "Informal views" on Division G of S. 2226.
+
+S. 2226 is the FY24 NDAA Senate bill which carried the Schumer-Rounds UAPDA as Division G. The "informal views" framing positions the document as an executive-branch review submitted to congressional negotiators, not a formal legislative response.
 
 > Informal views on S. 2226 Division G: Unidentified Anomalous Phenomena Disclosure.
 
@@ -47,7 +49,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### Author attribution — establishes OUSD(I&S) as the reviewing office. The same office that established IPMO (March 1, 2022) and AARO (July 15, 2022) is the authorial body for this UAPDA review.
+### OUSD(I&S) UAPDA markup (November 2023): the author attribution establishes OUSD(I&S) as the reviewing office.
+
+The same office that established IPMO (March 1, 2022) and AARO (July 15, 2022) is the authorial body for this UAPDA review.
 
 > Reviewed by: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
 
@@ -71,7 +75,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### NHI statutory definition at §9003(13) — preserved verbatim from the Schumer-Rounds Senate-passed text without strikethrough or insertion markup. OUSD(I&S) did not narrow the NHI legal scope; the rewrite restructures the disclosure mechanism (Review Board → AARO; senior-agency withdrawal authority; unclassified-only restriction) while leaving the origin-agnostic NHI definition intact. Structural anchor for the legal-scope-preservation observation in the IPMO/AARO structural-coupling investigation.
+### OUSD(I&S) UAPDA markup (November 2023): the NHI statutory definition at §9003(13) is preserved verbatim from the Schumer-Rounds Senate-passed text without strikethrough or insertion markup.
+
+OUSD(I&S) did not narrow the NHI legal scope; the rewrite restructures the disclosure mechanism (Review Board → AARO; senior-agency withdrawal authority; unclassified-only restriction) while leaving the origin-agnostic NHI definition intact. Structural anchor for the legal-scope-preservation observation in the IPMO/AARO structural-coupling investigation.
 
 > (13) NON-HUMAN INTELLIGENCE.—The term ''non-human intelligence'' means any sentient intelligent non-human lifeform regardless of nature or ultimate origin that may be presumed responsible for unidentified anomalous phenomena or of which the Federal Government has become aware.
 
@@ -83,7 +89,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9002(a)(1) Findings declaration — "confirmed" inserted before "unidentified anomalous phenomena" gates the entire framework to AARO-confirmed records (since AARO is the entity that does the confirming per the rewrite's downstream substitutions). The original Schumer-Rounds finding read "All Federal Government records related to unidentified anomalous phenomena"; the OUSD(I&S) markup adds "confirmed" — narrowing the disclosure scope while preserving the surface declarative text. Same insertion pattern repeats throughout the markup.
+### OUSD(I&S) UAPDA markup (November 2023): in the §9002(a)(1) Findings declaration, "confirmed" inserted before "unidentified anomalous phenomena" gates the entire framework to AARO-confirmed records.
+
+The gating reaches AARO-confirmed records since AARO is the entity that does the confirming per the rewrite's downstream substitutions. The original Schumer-Rounds finding read "All Federal Government records related to unidentified anomalous phenomena"; the OUSD(I&S) markup adds "confirmed" — narrowing the disclosure scope while preserving the surface declarative text. Same insertion pattern repeats throughout the markup.
 
 > (1) All Federal Government records related to confirmed unidentified anomalous phenomena should be preserved and centralized for historical and Federal Government purposes.
 
@@ -95,7 +103,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9004(a)(1)(C) Collection scope — "all unclassified" inserted to restrict the UAP Records Collection to unclassified U.S. Government, Government-provided, or Government-funded agency records. The original Schumer-Rounds text covered the full Collection without classification restriction; the OUSD(I&S) markup excludes classified records from the disclosure framework entirely. Combined with the §9006(3) Senior Agency Official withdrawal authority, classified records exit the framework at two points.
+### OUSD(I&S) UAPDA markup (November 2023): in the §9004(a)(1)(C) Collection scope, "all unclassified" is inserted to restrict the UAP Records Collection to unclassified records.
+
+The restriction covers unclassified U.S. Government, Government-provided, or Government-funded agency records. The original Schumer-Rounds text covered the full Collection without classification restriction; the OUSD(I&S) markup excludes classified records from the disclosure framework entirely. Combined with the §9006(3) Senior Agency Official withdrawal authority, classified records exit the framework at two points.
 
 > (C) The Collection shall consist of record copies of all unclassified U.S. Government, Government provided, or Government funded agency records following their transfer to the National Archives relating to unidentified anomalous phenomena, or technologies of unknown origin, and non-human intelligence
 
@@ -107,7 +117,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9005(b)(1) Custody and review — typical track-changes substitution pattern visible across the markup. The §9005(b)(1) head reads (verbatim): "(1) the Review Board All-domain Anomaly Resolution Office requires requests the physical transfer of the records..." — "Review Board" struck through, "All-domain Anomaly Resolution Office" inserted; "requires" struck through, "requests" inserted. Routes review-and-transfer authority through AARO instead of the independent UAP Records Review Board, and weakens the imperative ("requires" → "requests") on physical transfer of records. The Review Board → AARO substitution recurs at §9005(c)(2)(H) and elsewhere throughout the markup; AARO becomes the gatekeeper for disclosure decisions.
+### OUSD(I&S) UAPDA markup (November 2023): the §9005(b)(1) Custody and review clause substitutes "All-domain Anomaly Resolution Office" for "Review Board" and "requests" for "requires."
+
+Typical track-changes substitution pattern visible across the markup. The §9005(b)(1) head reads (verbatim): "(1) the Review Board All-domain Anomaly Resolution Office requires requests the physical transfer of the records..." — "Review Board" struck through, "All-domain Anomaly Resolution Office" inserted; "requires" struck through, "requests" inserted. Routes review-and-transfer authority through AARO instead of the independent UAP Records Review Board, and weakens the imperative ("requires" → "requests") on physical transfer of records. The Review Board → AARO substitution recurs at §9005(c)(2)(H) and elsewhere throughout the markup; AARO becomes the gatekeeper for disclosure decisions.
 
 > the physical transfer of the records for purposes of conducting an independent and impartial review and such transfer is approved by the head of the Government office with custody;
 
@@ -119,7 +131,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9005(c)(2)(H) Intermediating layer — "via the All-domain Anomaly Resolution Office" inserted to route agency transmissions to ODNI through AARO. The original Schumer-Rounds text had agencies serve the Review Board directly; the OUSD(I&S) markup inserts AARO as the intermediating layer between any originating agency and the disclosure framework. Combined with the §9005(b)(1) Review Board → AARO substitution, AARO sits both as the gatekeeper and as the routing intermediary.
+### OUSD(I&S) UAPDA markup (November 2023): at §9005(c)(2)(H), "via the All-domain Anomaly Resolution Office" is inserted to route agency transmissions to ODNI through AARO.
+
+Intermediating layer. The original Schumer-Rounds text had agencies serve the Review Board directly; the OUSD(I&S) markup inserts AARO as the intermediating layer between any originating agency and the disclosure framework. Combined with the §9005(b)(1) Review Board → AARO substitution, AARO sits both as the gatekeeper and as the routing intermediary.
 
 > Director of National Intelligence via the All-domain Anomaly Resolution Office any additional information and records
 
@@ -131,7 +145,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9006(2) Privacy exemption — replaces the Schumer-Rounds personal-privacy postponement language ("reveal the name or identity of a living person who provided confidential information to the Federal Government and would pose a substantial risk of harm to that person") with the broader Privacy Act of 1974 (5 U.S.C. § 552a). The Privacy Act provides considerably broader privacy exemption authority than the original "named-source-with-substantial-risk-of-harm" standard — broadening the privacy exemption considerably.
+### OUSD(I&S) UAPDA markup (November 2023): the §9006(2) Privacy exemption replaces the Schumer-Rounds personal-privacy postponement language with the broader Privacy Act of 1974 (5 U.S.C. § 552a).
+
+The replaced Schumer-Rounds language read "reveal the name or identity of a living person who provided confidential information to the Federal Government and would pose a substantial risk of harm to that person". The Privacy Act provides considerably broader privacy exemption authority than the original "named-source-with-substantial-risk-of-harm" standard — broadening the privacy exemption considerably.
 
 > (2) the public disclosure of the unidentified anomalous phenomena record would violate the Privacy Act of 1974, as amended, 5 U.S.C. § 552a.
 
@@ -143,7 +159,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9006(3) Senior Agency Official withdrawal authority — newly-inserted section with no counterpart in the Schumer-Rounds Senate-passed text. Allows Senior Agency Officials designated under E.O. 13526 or successor Orders to withdraw records from the disclosure framework upon a determination that the record is "both not related to unidentified anomalous phenomena and properly classified". Single largest structural carveout in the markup — combined with §9004(a)(1)(C) "all unclassified" restriction, classified records can exit the framework either by exclusion (Collection scope) or by senior-official withdrawal.
+### OUSD(I&S) UAPDA markup (November 2023): the newly-inserted §9006(3) lets Senior Agency Officials withdraw records "both not related to unidentified anomalous phenomena and properly classified."
+
+§9006(3) Senior Agency Official withdrawal authority — newly-inserted section with no counterpart in the Schumer-Rounds Senate-passed text. Allows Senior Agency Officials designated under E.O. 13526 or successor Orders to withdraw records from the disclosure framework upon a determination that the record is "both not related to unidentified anomalous phenomena and properly classified". Single largest structural carveout in the markup — combined with §9004(a)(1)(C) "all unclassified" restriction, classified records can exit the framework either by exclusion (Collection scope) or by senior-official withdrawal.
 
 > (3) WITHDRAWAL OF RECORDS – Senior Agency Officials designated in accordance with E.O. 13526 or any successor Orders may withdraw records in the collection that are determined to be both not related to unidentified anomalous phenomena and properly classified. The Senior Agency Official must notify the congressional defense and intelligence committees 60 days before each record is withdrawn.
 
@@ -155,7 +173,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9010(a) Eminent domain provision — track-changes weakening of the federal authority over private non-human intelligence material. The §9010(a) head reads (verbatim): "EXERCISE OF EMINENT DOMAIN.—The It is the sense of Congress that the Federal Government shall should exercise eminent domain appropriately over any and all recovered..." — "The" struck through, "It is the sense of Congress that the" inserted (changes substantive directive to non-binding sense-of-Congress framing); "shall" struck through, "should" inserted (changes mandatory to advisory). The original Schumer-Rounds text directed federal eminent domain over non-human intelligence material as a binding provision; the OUSD(I&S) markup demotes it to advisory sense-of-Congress language.
+### OUSD(I&S) UAPDA markup (November 2023): the §9010(a) Eminent domain provision is weakened by track changes from a binding directive ("shall") to advisory sense-of-Congress language ("should").
+
+Track-changes weakening of the federal authority over private non-human intelligence material. The §9010(a) head reads (verbatim): "EXERCISE OF EMINENT DOMAIN.—The It is the sense of Congress that the Federal Government shall should exercise eminent domain appropriately over any and all recovered..." — "The" struck through, "It is the sense of Congress that the" inserted (changes substantive directive to non-binding sense-of-Congress framing); "shall" struck through, "should" inserted (changes mandatory to advisory). The original Schumer-Rounds text directed federal eminent domain over non-human intelligence material as a binding provision; the OUSD(I&S) markup demotes it to advisory sense-of-Congress language.
 
 > exercise eminent domain appropriately over any and all recovered technologies of unknown origin and biological evidence of non-human intelligence that may be controlled by private persons or entities in the territory of the United States in the interests of the public good.
 
@@ -167,7 +187,9 @@ Per Douglas Johnson's ([`/people/douglas-johnson`]) July 24, 2024 Ghost analysis
 
 ---
 
-### §9005(e) Transmission requirement — track-changes weakening of the agency-head transmission obligation to the National Archives. "shall" struck through, "should" inserted in the head of the provision applying to "Each head of a Government office". The original Schumer-Rounds text required ("shall") agency heads to transmit unidentified anomalous phenomena records to the Archivist; the OUSD(I&S) markup demotes the obligation to advisory ("should"). Same shall→should weakening pattern as §9010(a) eminent domain — both lower the imperative on disclosure-pipeline transmission.
+### OUSD(I&S) UAPDA markup (November 2023): the §9005(e) Transmission requirement is weakened by track changes, "shall" struck through and "should" inserted for "Each head of a Government office."
+
+Track-changes weakening of the agency-head transmission obligation to the National Archives, in the head of the provision applying to "Each head of a Government office". The original Schumer-Rounds text required ("shall") agency heads to transmit unidentified anomalous phenomena records to the Archivist; the OUSD(I&S) markup demotes the obligation to advisory ("should"). Same shall→should weakening pattern as §9010(a) eminent domain — both lower the imperative on disclosure-pipeline transmission.
 
 > (e) TRANSMISSION TO THE NATIONAL ARCHIVES.— Each head of a Government office shall should—
 

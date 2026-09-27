@@ -94,6 +94,7 @@ CHECK_PHASE = {
     "ocr_sibling_presence": "extract",  # ocr-scan / extraction-lossy PDF ⇒ verified sibling + stamped content_block
     "quote_ocr_corroboration": "extract",  # quoted sibling-backed PDF ⇒ fresh quote_corroboration stamp (corroborate-quotes)
     "quote_prose_entry_ids": "extract",  # no entry IDs in quotes[] prose (significance / context / location)
+    "quote_significance_form": "extract",  # significance = one sentence, within the word cap; analysis moves to `analysis`
 
     # organize (role 5) — free-prose synthesis (incl. claim-group quote organization)
     "top_scope_activity": "organize",

@@ -19,7 +19,9 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 ## Evidence
 
-### SD004 page-1 DOPSR clearance stamp content — verbatim authorization "CLEARED For Open Publication Sep 06, 2023" by the DoD Office of Prepublication and Security Review (the attestor for this row); established the document was authorized for open publication on September 6, 2023
+### SD004 page-1 DOPSR clearance stamp (September 6, 2023): the DoD Office of Prepublication and Security Review authorized the document for open publication.
+
+The stamp content is the verbatim authorization "CLEARED For Open Publication Sep 06, 2023" by DOPSR (the attestor for this row); it established the document was authorized for open publication on September 6, 2023.
 
 > CLEARED For Open Publication Sep 06, 2023
 
@@ -33,7 +35,9 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 ---
 
-### SD004 page-1 Q&A content — the substantive statement that names Lockheed Martin Space Systems Vice President James Ryder as the proposer of an alleged 2011 UAP material divestment plan to AAWSAP leadership. As-published the page does not identify the author.
+### SD004 page 1 Q&A (September 6, 2023): the statement names Lockheed Martin Space Systems Vice President James Ryder as the proposer of an alleged 2011 UAP material divestment plan to AAWSAP leadership.
+
+This is the substantive statement of the SD004 page-1 Q&A content. As-published the page does not identify the author.
 
 > The $22M allocated for DIA AAWSAP, after speaking to multiple individuals on the program, was originally intended to SCIF-out Bigelow Aerospace Facilities in Las Vegas due to a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President Dr. James Ryder (now deceased).
 
@@ -47,7 +51,9 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 ---
 
-### Elizondo QFR Q1 names James Lacatski as the author of the SD004 page-1 statement cleared by DOPSR and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" — the authorship-identification step that closes the chain
+### Elizondo QFR response to Burlison, Q1 (December 19, 2024): Elizondo names James Lacatski as the author of the SD004 page-1 statement cleared by DOPSR and identifies him as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)."
+
+This is the authorship-identification step that closes the chain.
 
 > Confirmation of this may be inferred from an official DoD Office of Prepublication and Security Review ("DOPSR") document, dated September 6, 2023. This document authorized the release of a statement by Dr. James Lacatski, the former Director of the Advanced Aerospace Weapon System Application Program ("AAWSAP").
 
@@ -61,7 +67,9 @@ SD004 ([`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`]) page 1, publi
 
 ---
 
-### Elizondo's verbatim quotation of the SD004 page-1 Lacatski text in his QFR Q1 response, presented as Attachment 2. Re-attests the Ryder-naming substantive content under Elizondo's signature with explicit Lacatski authorship attribution — closes the authorship loop by tying the verbatim text to the named author.
+### Elizondo QFR response to Burlison, Q1 (December 19, 2024): Elizondo quotes the SD004 page-1 Lacatski text verbatim, presented as Attachment 2, with explicit Lacatski authorship attribution.
+
+Elizondo's verbatim quotation re-attests the Ryder-naming substantive content under Elizondo's signature — closes the authorship loop by tying the verbatim text to the named author.
 
 > The 22M allocated for DIA AAWSAP, after speaking to multiple individuals on the program, was originally intended to SCIF-out Bigelow Aerospace facilities in Las Vegas due to a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President, Dr. James Ryder, (now deceased).
 

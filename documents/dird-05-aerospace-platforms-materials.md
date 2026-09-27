@@ -223,7 +223,9 @@ Among propulsion systems, only reusable rocket engines are considered, as they h
 
 ---
 
-### Recurring cost thesis — high-performance, high-value structures are cost-intensive rather than technology-dependent (drawn from the GE90 PMC fan-blade example); the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.11/p.12 boundary, quoted to the p.11 page edge
+### DIRD #5 (January 12, 2010), "LAUNCH VEHICLES": the recurring cost thesis, drawn from the GE90 PMC fan-blade example, holds that high-performance, high-value structures are cost-intensive rather than technology-dependent.
+
+Recurring cost thesis; the sentence continues "not technology dependent but are cost intensive, no matter what technology is employed to meet the requirements" across the p.11/p.12 boundary, quoted to the p.11 page edge
 
 > This example supports the unwritten rule that the pathways leading to high-performance, high-value structures typically are
 

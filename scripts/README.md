@@ -145,6 +145,17 @@ exempt fields: ID-typed pointers (`superseded_by` / `contradicted_by` /
 stamps, and paths / URLs / link wraps. Rule owner: build-protocol "Prose
 names the source — never an entry ID".
 
+**Significance-form check** — `quote_significance_form` (extract),
+dispatched by `validate-research.py`. ERRORS on a quote `significance` (the
+Key Passage heading) of more than one sentence or over
+`quote_entry.significance_words_max` whitespace-split words, on every
+artifact type. The heading is one sentence, "Source (date): what the
+passage shows"; everything else goes in the quote's `analysis`, which the
+renderers print as a paragraph between heading and blockquote. The splitter
+reads a period after a known abbreviation, an initial or a dotted acronym
+(`U.S.`, `Dr.`, `H. E.`, `e.g.`) as no break. Rule owner: build-protocol
+"Key Passage headings — one sentence".
+
 ---
 
 ## Tests — `scripts/tests/`
@@ -156,6 +167,7 @@ names the source — never an entry ID".
 | `skills-check.sh` | Lint for the `.claude/` toolkit surface (skills, subagents, settings): frontmatter shape (`description:` on every SKILL.md, `name:`+`description:` on every agent), topic-neutrality (no skill/agent body hard-codes this instance's topic token — read dynamically from `meta/topic/overview.md`, so `.claude/` survives `/fork-init`), and `settings.json` validity. |
 | `test_stopwords.py` | `STOPWORDS` shape + content-word regression test. |
 | `test_prose_entry_ids.py` | Prose-entry-ID checks regression test (fixtures only): pre-fix corpus prose — IDs in a significance, a location's "(q97, q98)", a cross-artifact "vc2", a slug id — errors from exactly the owning phase's check; source labels ("Q7", "H5120", "H1"), ID-typed pointer fields, verbatim payload, `primary_sources` stamps, and paths / URLs / wraps stay silent. |
+| `test_significance_form.py` | Significance-form check + passage-head renderer regression test (fixtures only): pre-fix corpus significances — a five-sentence panel heading, a two-sentence title-page heading, a 41-word sentence — error; abbreviations / initials / dotted acronyms, exactly the cap, and a long `analysis` stay silent; `analysis` renders between the heading and the blockquote. |
 | `test_json_unicode_escapes.py` | `.json` source-reader regression test: `&amp;` decodes to `&`, surrogate pairs decode, an escaped backslash (`\\u0026`) and all other JSON escapes/syntax stay literal, `.txt` is read raw. |
 | `smoke.py` | Fixture-based `new.py` + validator smoke tests (single-process; `ProcessPoolExecutor` over fork). |
 | `file-size-check.sh` | Warn 50MB / error 100MB on git-tracked files (per `meta/sources-access.md` large-file discipline). |

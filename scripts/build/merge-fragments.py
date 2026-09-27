@@ -31,7 +31,7 @@ Fragment file shape (one per source; the worker stub carries its path):
   quotes:                     # may be [] (about-the-subject source)
     - text: "<verbatim>"
       location: "<source-shape anchor>"
-      # optional: significance, context, claim_group, statement_date,
+      # optional: significance, analysis, context, claim_group, statement_date,
       #           observation_type, category
   cited_works: NONE | IGNORED | [{citation_key, author, citation_verbatim,
                                   location, year?, title?}, ...]
@@ -78,7 +78,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import content_type_dirs, load_schema
 from checks._research_utils import evaluate_required_when, evaluate_optional_when
 
-QUOTE_OPTIONAL = ("significance", "context", "claim_group", "statement_date",
+QUOTE_OPTIONAL = ("significance", "analysis", "context", "claim_group", "statement_date",
                   "observation_type", "category")
 CITED_REQUIRED = ("citation_key", "author", "citation_verbatim", "location")
 CITED_OPTIONAL = ("year", "title")
