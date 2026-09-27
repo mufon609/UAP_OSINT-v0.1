@@ -279,10 +279,12 @@ def cluster(slugs):
 
 
 def _name_to_slug_tokens(name):
-    """Normalize a free-text person name to slug tokens: lowercase, drop
-    honorifics + periods/commas, kebab the rest. 'Dr. V. Teofilo' → ['v',
-    'teofilo']."""
-    cleaned = re.sub(r"[.,]", " ", name.lower())
+    """Normalize a free-text person/org name to slug tokens: lowercase, drop
+    honorifics and every punctuation mark (slugs are alphanumeric kebab),
+    kebab the rest. 'Dr. V. Teofilo' → ['v', 'teofilo']; 'HUMINT &
+    Sensitive Activities' → ['humint', 'sensitive', 'activities']."""
+    cleaned = re.sub(r"['’]", "", name.lower())
+    cleaned = re.sub(r"[^\w\s\-]|_", " ", cleaned)
     toks = [t for t in re.split(r"[\s\-]+", cleaned) if t]
     toks = [t for t in toks if t not in _HONORIFICS]
     return toks
@@ -551,6 +553,17 @@ def run_selftest():
             failures.append(f"missing ledger: expected 3 shown / 0 "
                             f"suppressed, got {len(shown0)} / {len(sup0)}")
 
+        # Name normalization drops punctuation, so an '&' in a source name
+        # still matches the stub coined without it.
+        for name, want in (("HUMINT & Sensitive Activities",
+                            ["humint", "sensitive", "activities"]),
+                           ("Dr. V. Teofilo", ["v", "teofilo"]),
+                           ("O’Brien (OSD)", ["obrien", "osd"])):
+            got = _name_to_slug_tokens(name)
+            if got != want:
+                failures.append(f"name tokens: {name!r} → {got}, "
+                                f"expected {want}")
+
         # Malformed ledger → LedgerError, never silent suppression.
         lp.write_text(ledger_text.replace("verdict: distinct",
                                           "verdict: same", 1))
@@ -567,7 +580,7 @@ def run_selftest():
         return 1
     print("stub-reconcile selftest: ok (exact-match suppression, "
           "re-surfacing on changed membership, missing ledger, "
-          "malformed ledger)")
+          "name punctuation, malformed ledger)")
     return 0
 
 
